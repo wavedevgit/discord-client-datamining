@@ -66,7 +66,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var3 = _closure1_slot3;
         var2 = var3.useCallback;
         var1 = function() { // Environment: var0
-            _fun81037: for (var _fun81037_ip = 0;;) switch (_fun81037_ip) {
+            _fun81935: for (var _fun81935_ip = 0;;) switch (_fun81935_ip) {
                 case 0:
                     var1 = _closure1_slot5;
                     var0 = var1.getCurrentUser;
@@ -76,23 +76,23 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var8 = undefined;
                     var1 = undefined;
                     if (var3) {
-                        _fun81037_ip = 35;
-                        continue _fun81037
+                        _fun81935_ip = 35;
+                        continue _fun81935
                     }
                 case 29:
                     var1 = var2.verified;
                 case 35:
                     var0 = var0 != var1;
                     if (!var0) {
-                        _fun81037_ip = 45;
-                        continue _fun81037
+                        _fun81935_ip = 45;
+                        continue _fun81935
                     }
                 case 42:
                     var0 = var1;
                 case 45:
                     if (var0) {
-                        _fun81037_ip = 187;
-                        continue _fun81037
+                        _fun81935_ip = 187;
+                        continue _fun81935
                     }
                 case 51:
                     var2 = _closure1_slot1;
@@ -135,14 +135,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.usePreNavigationAction = var7;
     var7 = function() {
-        _fun81038: for (var _fun81038_ip = 0;;) switch (_fun81038_ip) {
+        _fun81936: for (var _fun81936_ip = 0;;) switch (_fun81936_ip) {
             case 0:
                 var2 = _closure1_slot4;
                 var1 = var2.hasFetchedCredentials;
                 var1 = var1.bind(var2)();
                 if (var1) {
-                    _fun81038_ip = 52;
-                    continue _fun81038
+                    _fun81936_ip = 52;
+                    continue _fun81936
                 }
             case 20:
                 var3 = _closure1_slot0;
@@ -215,4 +215,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 7826, 1621, 7103, 660, 3998, 1234, 4571, 566, 9818, 10116, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 7554, 1621, 7091, 660, 3998, 1235, 4571, 566, 9057, 10214, 2]);

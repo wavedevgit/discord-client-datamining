@@ -12,19 +12,19 @@ import kotlin.jvm.internal.Intrinsics;
 public final class k {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final a f50560d = new a(null);
+    public static final a f51128d = new a(null);
 
     /* renamed from: e  reason: collision with root package name */
-    private static final ConcurrentHashMap f50561e = new ConcurrentHashMap();
+    private static final ConcurrentHashMap f51129e = new ConcurrentHashMap();
 
     /* renamed from: a  reason: collision with root package name */
-    private final PlatformBitmapFactory f50562a;
+    private final PlatformBitmapFactory f51130a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final int f50563b;
+    private final int f51131b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final int f50564c;
+    private final int f51132c;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class a {
@@ -34,9 +34,9 @@ public final class k {
 
         public final void a(Date until) {
             Intrinsics.checkNotNullParameter(until, "until");
-            synchronized (k.f50561e) {
+            synchronized (k.f51129e) {
                 try {
-                    ConcurrentHashMap concurrentHashMap = k.f50561e;
+                    ConcurrentHashMap concurrentHashMap = k.f51129e;
                     LinkedHashMap linkedHashMap = new LinkedHashMap();
                     for (Map.Entry entry : concurrentHashMap.entrySet()) {
                         if (((m) entry.getValue()).b().compareTo(until) < 0) {
@@ -45,9 +45,9 @@ public final class k {
                     }
                     for (Map.Entry entry2 : linkedHashMap.entrySet()) {
                         ((m) entry2.getValue()).a().clear();
-                        k.f50561e.remove(entry2.getKey());
+                        k.f51129e.remove(entry2.getKey());
                     }
-                    Unit unit = Unit.f31988a;
+                    Unit unit = Unit.f32556a;
                 } catch (Throwable th2) {
                     throw th2;
                 }
@@ -57,7 +57,7 @@ public final class k {
         public final void b(String cacheKey, j frameLoader) {
             Intrinsics.checkNotNullParameter(cacheKey, "cacheKey");
             Intrinsics.checkNotNullParameter(frameLoader, "frameLoader");
-            k.f50561e.put(cacheKey, new m(frameLoader, new Date()));
+            k.f51129e.put(cacheKey, new m(frameLoader, new Date()));
         }
 
         private a() {
@@ -66,24 +66,24 @@ public final class k {
 
     public k(PlatformBitmapFactory platformBitmapFactory, int i10, int i11) {
         Intrinsics.checkNotNullParameter(platformBitmapFactory, "platformBitmapFactory");
-        this.f50562a = platformBitmapFactory;
-        this.f50563b = i10;
-        this.f50564c = i11;
+        this.f51130a = platformBitmapFactory;
+        this.f51131b = i10;
+        this.f51132c = i11;
     }
 
     public final j b(String cacheKey, q9.c bitmapFrameRenderer, p9.d animationInformation) {
         Intrinsics.checkNotNullParameter(cacheKey, "cacheKey");
         Intrinsics.checkNotNullParameter(bitmapFrameRenderer, "bitmapFrameRenderer");
         Intrinsics.checkNotNullParameter(animationInformation, "animationInformation");
-        ConcurrentHashMap concurrentHashMap = f50561e;
+        ConcurrentHashMap concurrentHashMap = f51129e;
         synchronized (concurrentHashMap) {
             m mVar = (m) concurrentHashMap.get(cacheKey);
             if (mVar != null) {
                 concurrentHashMap.remove(cacheKey);
                 return mVar.a();
             }
-            Unit unit = Unit.f31988a;
-            return new g(this.f50562a, bitmapFrameRenderer, new t9.c(this.f50563b), animationInformation, this.f50564c);
+            Unit unit = Unit.f32556a;
+            return new g(this.f51130a, bitmapFrameRenderer, new t9.c(this.f51131b), animationInformation, this.f51132c);
         }
     }
 }

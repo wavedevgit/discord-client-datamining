@@ -37,7 +37,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/safety_common/SafetyToastsUtils.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0, arg1, arg2() {
-        _fun52576: for (var _fun52576_ip = 0;;) switch (_fun52576_ip) {
+        _fun52606: for (var _fun52606_ip = 0;;) switch (_fun52606_ip) {
             case 0:
                 var2 = arg0;
                 var4 = _closure1_slot4;
@@ -59,8 +59,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var1 == var9;
                 var4 = undefined;
                 if (var3) {
-                    _fun52576_ip = 85;
-                    continue _fun52576
+                    _fun52606_ip = 85;
+                    continue _fun52606
                 }
             case 80:
                 var4 = var9.guild_id;
@@ -68,16 +68,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var1 == var9;
                 var3 = undefined;
                 if (var10) {
-                    _fun52576_ip = 99;
-                    continue _fun52576
+                    _fun52606_ip = 99;
+                    continue _fun52606
                 }
             case 94:
                 var3 = var9.id;
             case 99:
                 var4 = var7.bind(var8)(var4, var3, var6);
                 if (!(var1 == var4)) {
-                    _fun52576_ip = 141;
-                    continue _fun52576
+                    _fun52606_ip = 141;
+                    continue _fun52606
                 }
             case 110:
                 var3 = _closure1_slot1;
@@ -91,92 +91,92 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = _closure1_slot5;
                 var1 = var1.IGNORE_SUCCESS;
                 if (!(var1 !== var2)) {
-                    _fun52576_ip = 1236;
-                    continue _fun52576
+                    _fun52606_ip = 1242;
+                    continue _fun52606
                 }
             case 158:
                 var1 = _closure1_slot5;
                 var1 = var1.UNIGNORE_SUCCESS;
                 if (!(var1 !== var2)) {
-                    _fun52576_ip = 1170;
-                    continue _fun52576
+                    _fun52606_ip = 1175;
+                    continue _fun52606
                 }
             case 175:
                 var1 = _closure1_slot5;
                 var1 = var1.BLOCK_SUCCESS;
                 if (!(var1 !== var2)) {
-                    _fun52576_ip = 1104;
-                    continue _fun52576
+                    _fun52606_ip = 1108;
+                    continue _fun52606
                 }
             case 192:
                 var1 = _closure1_slot5;
                 var1 = var1.UNBLOCK_SUCCESS;
                 if (!(var1 !== var2)) {
-                    _fun52576_ip = 1038;
-                    continue _fun52576
+                    _fun52606_ip = 1041;
+                    continue _fun52606
                 }
             case 209:
                 var1 = _closure1_slot5;
                 var1 = var1.MUTE_SUCCESS;
                 if (!(var1 !== var2)) {
-                    _fun52576_ip = 972;
-                    continue _fun52576
+                    _fun52606_ip = 974;
+                    continue _fun52606
                 }
             case 226:
                 var1 = _closure1_slot5;
                 var1 = var1.UNMUTE_SUCCESS;
                 if (!(var1 !== var2)) {
-                    _fun52576_ip = 906;
-                    continue _fun52576
+                    _fun52606_ip = 907;
+                    continue _fun52606
                 }
             case 243:
                 var1 = _closure1_slot5;
                 var1 = var1.REPORT_SUCCESS;
                 if (!(var1 !== var2)) {
-                    _fun52576_ip = 840;
-                    continue _fun52576
+                    _fun52606_ip = 840;
+                    continue _fun52606
                 }
             case 260:
                 var1 = _closure1_slot5;
                 var1 = var1.TIGGER_PAWTECT_ERROR;
                 if (!(var1 !== var2)) {
-                    _fun52576_ip = 783;
-                    continue _fun52576
+                    _fun52606_ip = 783;
+                    continue _fun52606
                 }
             case 277:
                 var1 = _closure1_slot5;
                 var1 = var1.TIGGER_PAWTECT_VERIFIED;
                 if (!(var1 !== var2)) {
-                    _fun52576_ip = 654;
-                    continue _fun52576
+                    _fun52606_ip = 654;
+                    continue _fun52606
                 }
             case 294:
                 var1 = _closure1_slot5;
                 var1 = var1.GENERIC_ERROR;
                 if (!(var1 !== var2)) {
-                    _fun52576_ip = 595;
-                    continue _fun52576
+                    _fun52606_ip = 595;
+                    continue _fun52606
                 }
             case 311:
                 var1 = _closure1_slot5;
                 var1 = var1.REPORT_TO_MOD_SUCCESS;
                 if (!(var1 !== var2)) {
-                    _fun52576_ip = 534;
-                    continue _fun52576
+                    _fun52606_ip = 534;
+                    continue _fun52606
                 }
             case 328:
                 var1 = _closure1_slot5;
                 var1 = var1.SAFETY_FEEDBACK_SUCCESS;
                 if (!(var1 !== var2)) {
-                    _fun52576_ip = 475;
-                    continue _fun52576
+                    _fun52606_ip = 475;
+                    continue _fun52606
                 }
             case 345:
                 var1 = _closure1_slot5;
                 var1 = var1.EXISTING_USER_AGE_GATE_SUCCESS;
                 if (!(var1 !== var2)) {
-                    _fun52576_ip = 416;
-                    continue _fun52576
+                    _fun52606_ip = 416;
+                    continue _fun52606
                 }
             case 359:
                 var6 = _closure1_slot0;
@@ -307,7 +307,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1.username = var4;
                 var1 = var3.bind(var6)(var2, var1);
                 return var1;
-            case 906:
+            case 907:
                 var2 = _closure1_slot0;
                 var7 = _closure1_slot2;
                 var1 = 5;
@@ -323,7 +323,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1.username = var4;
                 var1 = var3.bind(var6)(var2, var1);
                 return var1;
-            case 972:
+            case 974:
                 var2 = _closure1_slot0;
                 var7 = _closure1_slot2;
                 var1 = 5;
@@ -339,7 +339,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1.username = var4;
                 var1 = var3.bind(var6)(var2, var1);
                 return var1;
-            case 1038:
+            case 1041:
                 var2 = _closure1_slot0;
                 var7 = _closure1_slot2;
                 var1 = 5;
@@ -355,7 +355,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1.username = var4;
                 var1 = var3.bind(var6)(var2, var1);
                 return var1;
-            case 1104:
+            case 1108:
                 var2 = _closure1_slot0;
                 var7 = _closure1_slot2;
                 var1 = 5;
@@ -371,7 +371,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1.username = var4;
                 var1 = var3.bind(var6)(var2, var1);
                 return var1;
-            case 1170:
+            case 1175:
                 var2 = _closure1_slot0;
                 var7 = _closure1_slot2;
                 var1 = 5;
@@ -387,7 +387,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1.username = var4;
                 var1 = var3.bind(var6)(var2, var1);
                 return var1;
-            case 1236:
+            case 1242:
                 var1 = _closure1_slot0;
                 var6 = _closure1_slot2;
                 var0 = 5;
@@ -407,4 +407,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getSafetyToastTypeContent = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1372, 1621, 5997, 3956, 3237, 1234, 4559, 1988, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1372, 1621, 5976, 3956, 3240, 1235, 4559, 1991, 2]);

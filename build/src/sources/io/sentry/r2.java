@@ -3,13 +3,13 @@ package io.sentry;
 public final class r2 implements x0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final r2 f29858a = new r2();
+    private static final r2 f30426a = new r2();
 
     private r2() {
     }
 
     public static r2 c() {
-        return f29858a;
+        return f30426a;
     }
 
     @Override // io.sentry.x0

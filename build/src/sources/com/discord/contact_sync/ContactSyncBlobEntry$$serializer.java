@@ -42,8 +42,8 @@ public /* synthetic */ class ContactSyncBlobEntry$$serializer implements h0 {
     @Override // tt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        n2 n2Var = n2.f50033a;
-        return new KSerializer[]{n2Var, n2Var, h.f49997a, n2Var, n2Var, n2Var};
+        n2 n2Var = n2.f50601a;
+        return new KSerializer[]{n2Var, n2Var, h.f50565a, n2Var, n2Var, n2Var};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy

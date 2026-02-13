@@ -20,16 +20,16 @@ import tt.p0;
 public final class d implements KSerializer {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final d f43184a = new d();
+    public static final d f43752a = new d();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final Lazy f43185b = l.a(o.f6082e, a.f43186d);
+    private static final Lazy f43753b = l.a(o.f6082e, a.f43754d);
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     static final class a extends Lambda implements Function0 {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final a f43186d = new a();
+        public static final a f43754d = new a();
 
         /* JADX INFO: Access modifiers changed from: package-private */
         /* renamed from: pt.d$a$a  reason: collision with other inner class name */
@@ -37,7 +37,7 @@ public final class d implements KSerializer {
         public static final class C0596a extends Lambda implements Function1 {
 
             /* renamed from: d  reason: collision with root package name */
-            public static final C0596a f43187d = new C0596a();
+            public static final C0596a f43755d = new C0596a();
 
             C0596a() {
                 super(1);
@@ -45,13 +45,13 @@ public final class d implements KSerializer {
 
             public final void a(st.a buildClassSerialDescriptor) {
                 Intrinsics.checkNotNullParameter(buildClassSerialDescriptor, "$this$buildClassSerialDescriptor");
-                buildClassSerialDescriptor.a("days", p0.f50049a.getDescriptor(), CollectionsKt.l(), false);
+                buildClassSerialDescriptor.a("days", p0.f50617a.getDescriptor(), CollectionsKt.l(), false);
             }
 
             @Override // kotlin.jvm.functions.Function1
             public /* bridge */ /* synthetic */ Object invoke(Object obj) {
                 a((st.a) obj);
-                return Unit.f31988a;
+                return Unit.f32556a;
             }
         }
 
@@ -62,7 +62,7 @@ public final class d implements KSerializer {
         @Override // kotlin.jvm.functions.Function0
         /* renamed from: a */
         public final SerialDescriptor invoke() {
-            return st.j.c("kotlinx.datetime.DayBased", new SerialDescriptor[0], C0596a.f43187d);
+            return st.j.c("kotlinx.datetime.DayBased", new SerialDescriptor[0], C0596a.f43755d);
         }
     }
 
@@ -78,12 +78,12 @@ public final class d implements KSerializer {
         kotlinx.serialization.encoding.c b10 = decoder.b(descriptor);
         boolean z10 = true;
         if (b10.p()) {
-            i10 = b10.i(f43184a.getDescriptor(), 0);
+            i10 = b10.i(f43752a.getDescriptor(), 0);
         } else {
             i10 = 0;
             boolean z11 = false;
             while (true) {
-                d dVar = f43184a;
+                d dVar = f43752a;
                 int o10 = b10.o(dVar.getDescriptor());
                 if (o10 != -1) {
                     if (o10 == 0) {
@@ -99,7 +99,7 @@ public final class d implements KSerializer {
                 }
             }
         }
-        Unit unit = Unit.f31988a;
+        Unit unit = Unit.f32556a;
         b10.c(descriptor);
         if (z10) {
             return new c.C0437c(i10);
@@ -114,12 +114,12 @@ public final class d implements KSerializer {
         Intrinsics.checkNotNullParameter(value, "value");
         SerialDescriptor descriptor = getDescriptor();
         CompositeEncoder b10 = encoder.b(descriptor);
-        b10.w(f43184a.getDescriptor(), 0, value.d());
+        b10.w(f43752a.getDescriptor(), 0, value.d());
         b10.c(descriptor);
     }
 
     @Override // kotlinx.serialization.KSerializer, qt.o, kotlinx.serialization.DeserializationStrategy
     public SerialDescriptor getDescriptor() {
-        return (SerialDescriptor) f43185b.getValue();
+        return (SerialDescriptor) f43753b.getValue();
     }
 }

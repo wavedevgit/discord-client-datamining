@@ -84,13 +84,13 @@ public final class AppManifest {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final /* synthetic */ KSerializer _childSerializers$_anonymous_() {
-        n2 n2Var = n2.f50033a;
+        n2 n2Var = n2.f50601a;
         return new u0(n2Var, n2Var);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final /* synthetic */ KSerializer _childSerializers$_anonymous_$0() {
-        n2 n2Var = n2.f50033a;
+        n2 n2Var = n2.f50601a;
         return new u0(n2Var, n2Var);
     }
 

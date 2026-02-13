@@ -9,31 +9,31 @@ public class d0 extends jf.a {
     public static final Parcelable.Creator<d0> CREATOR = new f1();
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f54633d;
+    private final int f55201d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final short f54634e;
+    private final short f55202e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final short f54635i;
+    private final short f55203i;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public d0(int i10, short s10, short s11) {
-        this.f54633d = i10;
-        this.f54634e = s10;
-        this.f54635i = s11;
+        this.f55201d = i10;
+        this.f55202e = s10;
+        this.f55203i = s11;
     }
 
     public short b() {
-        return this.f54634e;
+        return this.f55202e;
     }
 
     public short c() {
-        return this.f54635i;
+        return this.f55203i;
     }
 
     public int d() {
-        return this.f54633d;
+        return this.f55201d;
     }
 
     public boolean equals(Object obj) {
@@ -41,14 +41,14 @@ public class d0 extends jf.a {
             return false;
         }
         d0 d0Var = (d0) obj;
-        if (this.f54633d != d0Var.f54633d || this.f54634e != d0Var.f54634e || this.f54635i != d0Var.f54635i) {
+        if (this.f55201d != d0Var.f55201d || this.f55202e != d0Var.f55202e || this.f55203i != d0Var.f55203i) {
             return false;
         }
         return true;
     }
 
     public int hashCode() {
-        return hf.o.b(Integer.valueOf(this.f54633d), Short.valueOf(this.f54634e), Short.valueOf(this.f54635i));
+        return hf.o.b(Integer.valueOf(this.f55201d), Short.valueOf(this.f55202e), Short.valueOf(this.f55203i));
     }
 
     @Override // android.os.Parcelable

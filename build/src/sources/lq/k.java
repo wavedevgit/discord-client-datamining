@@ -5,23 +5,23 @@ import kotlin.jvm.internal.Intrinsics;
 public final class k {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Object f35986a;
+    private final Object f36554a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final j f35987b;
+    private final j f36555b;
 
     public k(Object screen, j transition) {
         Intrinsics.checkNotNullParameter(screen, "screen");
         Intrinsics.checkNotNullParameter(transition, "transition");
-        this.f35986a = screen;
-        this.f35987b = transition;
+        this.f36554a = screen;
+        this.f36555b = transition;
     }
 
     public final Object a() {
-        return this.f35986a;
+        return this.f36554a;
     }
 
     public final j b() {
-        return this.f35987b;
+        return this.f36555b;
     }
 }

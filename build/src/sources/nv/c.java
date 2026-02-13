@@ -8,13 +8,13 @@ import nv.e;
 public final class c implements cv.b, e {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final c f38383a = new c();
+    public static final c f38951a = new c();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     static final class a extends Lambda implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final a f38384d = new a();
+        public static final a f38952d = new a();
 
         a() {
             super(2);
@@ -60,7 +60,7 @@ public final class c implements cv.b, e {
 
     @Override // cv.b
     public Object f(Object obj, Object obj2) {
-        return Boolean.valueOf(e(mw.a.c(obj), a.f38384d));
+        return Boolean.valueOf(e(mw.a.c(obj), a.f38952d));
     }
 
     @Override // dv.b

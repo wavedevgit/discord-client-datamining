@@ -9,10 +9,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = var3.registerAsset;
     var1 = {
         '__packager_asset': true,
-        'httpServerLocation': '/assets/modules/go_live/web/modal',
+        'httpServerLocation': '/assets/.cache/intl/bW9kdWxlcy9nb19saXZlL3dlYi9tb2RhbA==',
         'scales': null,
-        'hash': 'ed2d8fe97766d4a2f5b989342f5a9c25',
-        'name': 'GoLiveModal.compiled.messages',
+        'hash': '002ffb582a482dbdfa009056768ad71d',
+        'name': 'vi.messages.002ffb582a482dbdfa009056768ad71d.compiled.messages',
         'type': 'jsona'
     };
     var4 = [1];
@@ -21,4 +21,4 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = module;
     var1.exports = var2;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1239]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1240]);

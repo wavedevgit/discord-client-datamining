@@ -16,7 +16,7 @@ import kotlin.jvm.internal.Intrinsics;
 public abstract class c {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Map f56531a = o0.m(v.a("com.android.inputmethod.latin", v.a(Integer.valueOf(com.reactnativekeyboardcontroller.c.f18459a), Integer.valueOf(com.reactnativekeyboardcontroller.c.f18459a))), v.a("com.google.android.inputmethod.latin", v.a(Integer.valueOf(com.reactnativekeyboardcontroller.c.f18461c), Integer.valueOf(com.reactnativekeyboardcontroller.c.f18460b))), v.a("com.touchtype.swiftkey", v.a(Integer.valueOf(com.reactnativekeyboardcontroller.c.f18467i), Integer.valueOf(com.reactnativekeyboardcontroller.c.f18466h))), v.a("com.google.android.googlequicksearchbox", v.a(Integer.valueOf(com.reactnativekeyboardcontroller.c.f18463e), Integer.valueOf(com.reactnativekeyboardcontroller.c.f18462d))), v.a("com.google.android.tts", v.a(Integer.valueOf(com.reactnativekeyboardcontroller.c.f18463e), Integer.valueOf(com.reactnativekeyboardcontroller.c.f18462d))), v.a("ru.yandex.androidkeyboard", v.a(Integer.valueOf(com.reactnativekeyboardcontroller.c.f18469k), Integer.valueOf(com.reactnativekeyboardcontroller.c.f18468j))), v.a("com.samsung.android.honeyboard", v.a(Integer.valueOf(com.reactnativekeyboardcontroller.c.f18465g), Integer.valueOf(com.reactnativekeyboardcontroller.c.f18464f))));
+    private static final Map f57099a = o0.m(v.a("com.android.inputmethod.latin", v.a(Integer.valueOf(com.reactnativekeyboardcontroller.c.f18459a), Integer.valueOf(com.reactnativekeyboardcontroller.c.f18459a))), v.a("com.google.android.inputmethod.latin", v.a(Integer.valueOf(com.reactnativekeyboardcontroller.c.f18461c), Integer.valueOf(com.reactnativekeyboardcontroller.c.f18460b))), v.a("com.touchtype.swiftkey", v.a(Integer.valueOf(com.reactnativekeyboardcontroller.c.f18467i), Integer.valueOf(com.reactnativekeyboardcontroller.c.f18466h))), v.a("com.google.android.googlequicksearchbox", v.a(Integer.valueOf(com.reactnativekeyboardcontroller.c.f18463e), Integer.valueOf(com.reactnativekeyboardcontroller.c.f18462d))), v.a("com.google.android.tts", v.a(Integer.valueOf(com.reactnativekeyboardcontroller.c.f18463e), Integer.valueOf(com.reactnativekeyboardcontroller.c.f18462d))), v.a("ru.yandex.androidkeyboard", v.a(Integer.valueOf(com.reactnativekeyboardcontroller.c.f18469k), Integer.valueOf(com.reactnativekeyboardcontroller.c.f18468j))), v.a("com.samsung.android.honeyboard", v.a(Integer.valueOf(com.reactnativekeyboardcontroller.c.f18465g), Integer.valueOf(com.reactnativekeyboardcontroller.c.f18464f))));
 
     public static final a a(Context context, int i10) {
         Intrinsics.checkNotNullParameter(context, "<this>");
@@ -33,9 +33,9 @@ public abstract class c {
         Intrinsics.checkNotNullParameter(themedReactContext, "<this>");
         String a10 = om.a.a(themedReactContext);
         boolean c10 = om.a.c(themedReactContext);
-        sm.a aVar = sm.a.f48172a;
+        sm.a aVar = sm.a.f48740a;
         sm.a.c(aVar, "Skins", "Current IME: " + a10, null, 4, null);
-        Pair pair = (Pair) f56531a.get(a10);
+        Pair pair = (Pair) f57099a.get(a10);
         if (pair == null) {
             pair = v.a(Integer.valueOf(com.reactnativekeyboardcontroller.c.f18461c), Integer.valueOf(com.reactnativekeyboardcontroller.c.f18460b));
         }

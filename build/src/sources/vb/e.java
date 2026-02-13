@@ -3,14 +3,14 @@ package vb;
 public abstract class e {
 
     /* renamed from: a  reason: collision with root package name */
-    public long f51428a;
+    public long f51996a;
 
     /* renamed from: b  reason: collision with root package name */
-    public long f51429b;
+    public long f51997b;
 
     /* renamed from: c  reason: collision with root package name */
-    public long f51430c;
+    public long f51998c;
 
     /* renamed from: d  reason: collision with root package name */
-    public long f51431d;
+    public long f51999d;
 }

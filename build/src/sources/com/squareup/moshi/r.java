@@ -25,7 +25,7 @@ public final class r implements Source {
     static final ByteString f18842w = ByteString.h("*");
 
     /* renamed from: x  reason: collision with root package name */
-    static final ByteString f18843x = ByteString.f40593p;
+    static final ByteString f18843x = ByteString.f41161p;
 
     /* renamed from: d  reason: collision with root package name */
     private final BufferedSource f18844d;

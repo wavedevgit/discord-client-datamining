@@ -43,8 +43,8 @@ public /* synthetic */ class CtaButton$$serializer implements h0 {
     @Override // tt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        n2 n2Var = n2.f50033a;
-        p0 p0Var = p0.f50049a;
+        n2 n2Var = n2.f50601a;
+        p0 p0Var = p0.f50617a;
         return new KSerializer[]{n2Var, a.u(p0Var), a.u(p0Var), a.u(n2Var)};
     }
 
@@ -62,9 +62,9 @@ public /* synthetic */ class CtaButton$$serializer implements h0 {
         String str3 = null;
         if (b10.p()) {
             String m10 = b10.m(serialDescriptor, 0);
-            p0 p0Var = p0.f50049a;
+            p0 p0Var = p0.f50617a;
             str = m10;
-            str2 = (String) b10.n(serialDescriptor, 3, n2.f50033a, null);
+            str2 = (String) b10.n(serialDescriptor, 3, n2.f50601a, null);
             num2 = (Integer) b10.n(serialDescriptor, 2, p0Var, null);
             num = (Integer) b10.n(serialDescriptor, 1, p0Var, null);
             i10 = 15;
@@ -82,15 +82,15 @@ public /* synthetic */ class CtaButton$$serializer implements h0 {
                     str3 = b10.m(serialDescriptor, 0);
                     i11 |= 1;
                 } else if (o10 == 1) {
-                    num3 = (Integer) b10.n(serialDescriptor, 1, p0.f50049a, num3);
+                    num3 = (Integer) b10.n(serialDescriptor, 1, p0.f50617a, num3);
                     i11 |= 2;
                 } else if (o10 == 2) {
-                    num4 = (Integer) b10.n(serialDescriptor, 2, p0.f50049a, num4);
+                    num4 = (Integer) b10.n(serialDescriptor, 2, p0.f50617a, num4);
                     i11 |= 4;
                 } else if (o10 != 3) {
                     throw new b0(o10);
                 } else {
-                    str4 = (String) b10.n(serialDescriptor, 3, n2.f50033a, str4);
+                    str4 = (String) b10.n(serialDescriptor, 3, n2.f50601a, str4);
                     i11 |= 8;
                 }
             }

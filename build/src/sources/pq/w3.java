@@ -19,7 +19,7 @@ public abstract class w3 {
     public /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final /* synthetic */ int[] f43133a;
+        public static final /* synthetic */ int[] f43701a;
 
         static {
             int[] iArr = new int[LocalImage.Image.values().length];
@@ -135,7 +135,7 @@ public abstract class w3 {
                 iArr[LocalImage.Image.REUSABLE_PERSONA_LOGO.ordinal()] = 28;
             } catch (NoSuchFieldError unused28) {
             }
-            f43133a = iArr;
+            f43701a = iArr;
         }
     }
 
@@ -159,7 +159,7 @@ public abstract class w3 {
             Intrinsics.checkNotNull(c10);
             return c10;
         }
-        final int dimension = (int) uiComponentHelper.a().getResources().getDimension(tp.c.f49780e);
+        final int dimension = (int) uiComponentHelper.a().getResources().getDimension(tp.c.f50348e);
         final dq.f c11 = dq.f.c(uiComponentHelper.b());
         c11.f21862b.setImageResource(i11);
         uiComponentHelper.d(new Function0() { // from class: pq.o3
@@ -179,7 +179,7 @@ public abstract class w3 {
         ThemeableLottieAnimationView lottieView = eVar.f21860b;
         Intrinsics.checkNotNullExpressionValue(lottieView, "lottieView");
         uq.g.c(lottieView, localImage.getStyles(), strArr, strArr2, new String[0]);
-        return Unit.f31988a;
+        return Unit.f32556a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -190,7 +190,7 @@ public abstract class w3 {
         if (layoutParams != null) {
             layoutParams.height = i10;
             imageView.setLayoutParams(layoutParams);
-            return Unit.f31988a;
+            return Unit.f32556a;
         }
         throw new NullPointerException("null cannot be cast to non-null type android.view.ViewGroup.LayoutParams");
     }
@@ -203,11 +203,11 @@ public abstract class w3 {
         Intrinsics.checkNotNullParameter(uiComponentHelper, "uiComponentHelper");
         Intrinsics.checkNotNullParameter(config, "config");
         Context a10 = uiComponentHelper.a();
-        final int dimension = (int) a10.getResources().getDimension(tp.c.f49776a);
-        final int dimension2 = (int) a10.getResources().getDimension(tp.c.f49779d);
+        final int dimension = (int) a10.getResources().getDimension(tp.c.f50344a);
+        final int dimension2 = (int) a10.getResources().getDimension(tp.c.f50347d);
         LocalImage.Attributes attributes = config.getAttributes();
         LocalImage.Image imageKey = attributes != null ? attributes.getImageKey() : null;
-        switch (imageKey == null ? -1 : a.f43133a[imageKey.ordinal()]) {
+        switch (imageKey == null ? -1 : a.f43701a[imageKey.ordinal()]) {
             case -1:
                 eVar = null;
                 break;
@@ -699,7 +699,7 @@ public abstract class w3 {
                 break;
             case ChatViewRecyclerTypes.EPHEMERAL_INDICATION /* 18 */:
                 final dq.e c32 = dq.e.c(uiComponentHelper.b());
-                c32.f21860b.setImageResource(nq.d.f38244a);
+                c32.f21860b.setImageResource(nq.d.f38812a);
                 if (config.getStyles() != null) {
                     ThemeableLottieAnimationView lottieView9 = c32.f21860b;
                     Intrinsics.checkNotNullExpressionValue(lottieView9, "lottieView");
@@ -747,7 +747,7 @@ public abstract class w3 {
                 break;
             case 28:
                 dq.e c33 = dq.e.c(uiComponentHelper.b());
-                c33.f21860b.setImageResource(nq.d.f38248e);
+                c33.f21860b.setImageResource(nq.d.f38816e);
                 eVar = c33;
                 if (config.getStyles() != null) {
                     ThemeableLottieAnimationView lottieView10 = c33.f21860b;
@@ -769,7 +769,7 @@ public abstract class w3 {
         ThemeableLottieAnimationView lottieView = eVar.f21860b;
         Intrinsics.checkNotNullExpressionValue(lottieView, "lottieView");
         uq.g.c(lottieView, localImage.getStyles(), new String[]{"#02214F"}, new String[]{"#AA84FF", "#F2EAFF"}, new String[]{"#FFFFFF"});
-        return Unit.f31988a;
+        return Unit.f32556a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -782,7 +782,7 @@ public abstract class w3 {
                 ((ConstraintLayout.LayoutParams) layoutParams).V = 0.5f;
             }
             lottieView.setLayoutParams(layoutParams);
-            return Unit.f31988a;
+            return Unit.f32556a;
         }
         throw new NullPointerException("null cannot be cast to non-null type android.view.ViewGroup.LayoutParams");
     }
@@ -797,7 +797,7 @@ public abstract class w3 {
         ThemeableLottieAnimationView lottieView = eVar.f21860b;
         Intrinsics.checkNotNullExpressionValue(lottieView, "lottieView");
         uq.g.c(lottieView, localImage.getStyles(), new String[]{"#02214F"}, new String[]{"#AA84FF"}, new String[0]);
-        return Unit.f31988a;
+        return Unit.f32556a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -808,7 +808,7 @@ public abstract class w3 {
         if (layoutParams != null) {
             layoutParams.height = i10;
             imageView.setLayoutParams(layoutParams);
-            return Unit.f31988a;
+            return Unit.f32556a;
         }
         throw new NullPointerException("null cannot be cast to non-null type android.view.ViewGroup.LayoutParams");
     }
@@ -818,7 +818,7 @@ public abstract class w3 {
         ThemeableLottieAnimationView lottieView = eVar.f21860b;
         Intrinsics.checkNotNullExpressionValue(lottieView, "lottieView");
         uq.g.c(lottieView, localImage.getStyles(), new String[]{"#190051"}, new String[]{"#AA84FF"}, new String[0]);
-        return Unit.f31988a;
+        return Unit.f32556a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -829,7 +829,7 @@ public abstract class w3 {
         if (layoutParams != null) {
             layoutParams.height = i10;
             imageView.setLayoutParams(layoutParams);
-            return Unit.f31988a;
+            return Unit.f32556a;
         }
         throw new NullPointerException("null cannot be cast to non-null type android.view.ViewGroup.LayoutParams");
     }
@@ -839,7 +839,7 @@ public abstract class w3 {
         ThemeableLottieAnimationView lottieView = eVar.f21860b;
         Intrinsics.checkNotNullExpressionValue(lottieView, "lottieView");
         uq.g.c(lottieView, localImage.getStyles(), new String[]{"#190051"}, new String[]{"#AA84FF"}, new String[0]);
-        return Unit.f31988a;
+        return Unit.f32556a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -850,7 +850,7 @@ public abstract class w3 {
         if (layoutParams != null) {
             layoutParams.height = i10;
             imageView.setLayoutParams(layoutParams);
-            return Unit.f31988a;
+            return Unit.f32556a;
         }
         throw new NullPointerException("null cannot be cast to non-null type android.view.ViewGroup.LayoutParams");
     }
@@ -860,7 +860,7 @@ public abstract class w3 {
         ThemeableLottieAnimationView lottieView = eVar.f21860b;
         Intrinsics.checkNotNullExpressionValue(lottieView, "lottieView");
         uq.g.c(lottieView, localImage.getStyles(), new String[]{"#190051"}, new String[]{"#AA84FF"}, new String[0]);
-        return Unit.f31988a;
+        return Unit.f32556a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -871,7 +871,7 @@ public abstract class w3 {
         if (layoutParams != null) {
             layoutParams.height = i10;
             imageView.setLayoutParams(layoutParams);
-            return Unit.f31988a;
+            return Unit.f32556a;
         }
         throw new NullPointerException("null cannot be cast to non-null type android.view.ViewGroup.LayoutParams");
     }
@@ -881,7 +881,7 @@ public abstract class w3 {
         ThemeableLottieAnimationView lottieView = eVar.f21860b;
         Intrinsics.checkNotNullExpressionValue(lottieView, "lottieView");
         uq.g.c(lottieView, localImage.getStyles(), new String[]{"#4C4293"}, new String[]{"#B5B5CC"}, new String[0]);
-        return Unit.f31988a;
+        return Unit.f32556a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -892,7 +892,7 @@ public abstract class w3 {
         if (layoutParams != null) {
             layoutParams.height = i10;
             imageView.setLayoutParams(layoutParams);
-            return Unit.f31988a;
+            return Unit.f32556a;
         }
         throw new NullPointerException("null cannot be cast to non-null type android.view.ViewGroup.LayoutParams");
     }
@@ -905,7 +905,7 @@ public abstract class w3 {
         if (layoutParams != null) {
             layoutParams.height = i10;
             imageView.setLayoutParams(layoutParams);
-            return Unit.f31988a;
+            return Unit.f32556a;
         }
         throw new NullPointerException("null cannot be cast to non-null type android.view.ViewGroup.LayoutParams");
     }
@@ -915,7 +915,7 @@ public abstract class w3 {
         ThemeableLottieAnimationView lottieView = eVar.f21860b;
         Intrinsics.checkNotNullExpressionValue(lottieView, "lottieView");
         uq.g.c(lottieView, localImage.getStyles(), new String[]{"#190051", "#02214F"}, new String[]{"#AA84FF"}, new String[]{"#AA84FF"});
-        return Unit.f31988a;
+        return Unit.f32556a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -926,7 +926,7 @@ public abstract class w3 {
         if (layoutParams != null) {
             layoutParams.height = i10;
             imageView.setLayoutParams(layoutParams);
-            return Unit.f31988a;
+            return Unit.f32556a;
         }
         throw new NullPointerException("null cannot be cast to non-null type android.view.ViewGroup.LayoutParams");
     }
@@ -936,7 +936,7 @@ public abstract class w3 {
         ThemeableLottieAnimationView lottieView = eVar.f21860b;
         Intrinsics.checkNotNullExpressionValue(lottieView, "lottieView");
         uq.g.c(lottieView, localImage.getStyles(), new String[]{"#190052"}, new String[]{"#F1EBFF", "#8552FF"}, new String[]{"#FFFFFF"});
-        return Unit.f31988a;
+        return Unit.f32556a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -944,7 +944,7 @@ public abstract class w3 {
         eVar.f21860b.setRepeatMode(1);
         eVar.f21860b.setRepeatCount(-1);
         eVar.f21860b.playAnimation();
-        return Unit.f31988a;
+        return Unit.f32556a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -957,7 +957,7 @@ public abstract class w3 {
                 ((ConstraintLayout.LayoutParams) layoutParams).V = 0.5f;
             }
             lottieView.setLayoutParams(layoutParams);
-            return Unit.f31988a;
+            return Unit.f32556a;
         }
         throw new NullPointerException("null cannot be cast to non-null type android.view.ViewGroup.LayoutParams");
     }
@@ -967,7 +967,7 @@ public abstract class w3 {
         ThemeableLottieAnimationView lottieView = eVar.f21860b;
         Intrinsics.checkNotNullExpressionValue(lottieView, "lottieView");
         uq.g.c(lottieView, localImage.getStyles(), new String[]{"#02214F", "#190051"}, new String[]{"#E5E5EA"}, new String[0]);
-        return Unit.f31988a;
+        return Unit.f32556a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -975,7 +975,7 @@ public abstract class w3 {
         ThemeableLottieAnimationView lottieView = eVar.f21860b;
         Intrinsics.checkNotNullExpressionValue(lottieView, "lottieView");
         uq.g.c(lottieView, localImage.getStyles(), new String[]{"#280087"}, new String[0], new String[0]);
-        return Unit.f31988a;
+        return Unit.f32556a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -988,7 +988,7 @@ public abstract class w3 {
                 ((ConstraintLayout.LayoutParams) layoutParams).V = 0.5f;
             }
             lottieView.setLayoutParams(layoutParams);
-            return Unit.f31988a;
+            return Unit.f32556a;
         }
         throw new NullPointerException("null cannot be cast to non-null type android.view.ViewGroup.LayoutParams");
     }
@@ -998,7 +998,7 @@ public abstract class w3 {
         ThemeableLottieAnimationView lottieView = eVar.f21860b;
         Intrinsics.checkNotNullExpressionValue(lottieView, "lottieView");
         uq.g.c(lottieView, localImage.getStyles(), new String[]{"#280087", "#322A7E"}, new String[]{"#CBB1FF"}, new String[]{"#F1EBFF"});
-        return Unit.f31988a;
+        return Unit.f32556a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -1006,7 +1006,7 @@ public abstract class w3 {
         eVar.f21860b.setRepeatMode(1);
         eVar.f21860b.setRepeatCount(-1);
         eVar.f21860b.playAnimation();
-        return Unit.f31988a;
+        return Unit.f32556a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -1014,7 +1014,7 @@ public abstract class w3 {
         ThemeableLottieAnimationView lottieView = eVar.f21860b;
         Intrinsics.checkNotNullExpressionValue(lottieView, "lottieView");
         uq.g.c(lottieView, localImage.getStyles(), new String[]{"#190051"}, new String[]{"#AA84FF", "#F2EAFF"}, new String[]{"#FFFFFF"});
-        return Unit.f31988a;
+        return Unit.f32556a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -1022,7 +1022,7 @@ public abstract class w3 {
         ThemeableLottieAnimationView lottieView = eVar.f21860b;
         Intrinsics.checkNotNullExpressionValue(lottieView, "lottieView");
         uq.g.c(lottieView, localImage.getStyles(), new String[]{"#280087", "#322A7E"}, new String[]{"#CBB1FF"}, new String[]{"#F1EBFF"});
-        return Unit.f31988a;
+        return Unit.f32556a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -1030,7 +1030,7 @@ public abstract class w3 {
         eVar.f21860b.setRepeatMode(1);
         eVar.f21860b.setRepeatCount(-1);
         eVar.f21860b.playAnimation();
-        return Unit.f31988a;
+        return Unit.f32556a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -1038,7 +1038,7 @@ public abstract class w3 {
         ThemeableLottieAnimationView lottieView = eVar.f21860b;
         Intrinsics.checkNotNullExpressionValue(lottieView, "lottieView");
         uq.g.c(lottieView, localImage.getStyles(), new String[]{"#280087", "#322A7E"}, new String[]{"#CBB1FF"}, new String[]{"#F1EBFF"});
-        return Unit.f31988a;
+        return Unit.f32556a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -1046,7 +1046,7 @@ public abstract class w3 {
         eVar.f21860b.setRepeatMode(1);
         eVar.f21860b.setRepeatCount(-1);
         eVar.f21860b.playAnimation();
-        return Unit.f31988a;
+        return Unit.f32556a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -1054,7 +1054,7 @@ public abstract class w3 {
         ThemeableLottieAnimationView lottieView = eVar.f21860b;
         Intrinsics.checkNotNullExpressionValue(lottieView, "lottieView");
         uq.g.c(lottieView, localImage.getStyles(), new String[]{"#280087", "#322A7E"}, new String[]{"#CBB1FF"}, new String[]{"#F1EBFF"});
-        return Unit.f31988a;
+        return Unit.f32556a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -1062,7 +1062,7 @@ public abstract class w3 {
         eVar.f21860b.setRepeatMode(1);
         eVar.f21860b.setRepeatCount(-1);
         eVar.f21860b.playAnimation();
-        return Unit.f31988a;
+        return Unit.f32556a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -1070,7 +1070,7 @@ public abstract class w3 {
         ThemeableLottieAnimationView lottieView = eVar.f21860b;
         Intrinsics.checkNotNullExpressionValue(lottieView, "lottieView");
         uq.g.c(lottieView, localImage.getStyles(), new String[]{"#280087", "#322A7E"}, new String[]{"#CBB1FF"}, new String[]{"#F1EBFF"});
-        return Unit.f31988a;
+        return Unit.f32556a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -1078,7 +1078,7 @@ public abstract class w3 {
         eVar.f21860b.setRepeatMode(1);
         eVar.f21860b.setRepeatCount(-1);
         eVar.f21860b.playAnimation();
-        return Unit.f31988a;
+        return Unit.f32556a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -1089,7 +1089,7 @@ public abstract class w3 {
         if (layoutParams != null) {
             layoutParams.height = (int) bq.h.a(44.0d);
             lottieView.setLayoutParams(layoutParams);
-            return Unit.f31988a;
+            return Unit.f32556a;
         }
         throw new NullPointerException("null cannot be cast to non-null type android.view.ViewGroup.LayoutParams");
     }
@@ -1102,7 +1102,7 @@ public abstract class w3 {
         if (layoutParams != null) {
             layoutParams.height = i10;
             imageView.setLayoutParams(layoutParams);
-            return Unit.f31988a;
+            return Unit.f32556a;
         }
         throw new NullPointerException("null cannot be cast to non-null type android.view.ViewGroup.LayoutParams");
     }

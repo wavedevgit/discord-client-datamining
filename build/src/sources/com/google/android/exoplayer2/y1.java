@@ -80,7 +80,7 @@ public final class y1 {
     }
 
     private static boolean e(AudioManager audioManager, int i10) {
-        if (oe.w0.f39038a >= 23) {
+        if (oe.w0.f39606a >= 23) {
             return audioManager.isStreamMute(i10);
         }
         if (f(audioManager, i10) == 0) {
@@ -115,7 +115,7 @@ public final class y1 {
     }
 
     public int d() {
-        if (oe.w0.f39038a >= 28) {
+        if (oe.w0.f39606a >= 28) {
             return this.f14224d.getStreamMinVolume(this.f14226f);
         }
         return 0;

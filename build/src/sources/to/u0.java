@@ -8,7 +8,7 @@ import kotlin.jvm.internal.Intrinsics;
 public abstract class u0 {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final a f49670a = new a(null);
+    public static final a f50238a = new a(null);
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -22,7 +22,7 @@ public abstract class u0 {
 
         public final Set b(i0 governmentIdCameraScreenViewFactory) {
             Intrinsics.checkNotNullParameter(governmentIdCameraScreenViewFactory, "governmentIdCameraScreenViewFactory");
-            return kotlin.collections.x0.i(p0.f49610f, governmentIdCameraScreenViewFactory, g1.f49200f, s1.f49640d, kn.c.f31931q, lq.n.f35988i, uo.f0.f50831d);
+            return kotlin.collections.x0.i(p0.f50178f, governmentIdCameraScreenViewFactory, g1.f49768f, s1.f50208d, kn.c.f32499q, lq.n.f36556i, uo.f0.f51399d);
         }
 
         private a() {
@@ -30,10 +30,10 @@ public abstract class u0 {
     }
 
     public static final Set a() {
-        return f49670a.a();
+        return f50238a.a();
     }
 
     public static final Set b(i0 i0Var) {
-        return f49670a.b(i0Var);
+        return f50238a.b(i0Var);
     }
 }

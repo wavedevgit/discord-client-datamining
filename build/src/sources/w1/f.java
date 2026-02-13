@@ -10,18 +10,18 @@ public abstract class f {
     private static class a implements Executor {
 
         /* renamed from: d  reason: collision with root package name */
-        private final Handler f52100d;
+        private final Handler f52668d;
 
         a(Handler handler) {
-            this.f52100d = (Handler) b2.e.g(handler);
+            this.f52668d = (Handler) b2.e.g(handler);
         }
 
         @Override // java.util.concurrent.Executor
         public void execute(Runnable runnable) {
-            if (this.f52100d.post((Runnable) b2.e.g(runnable))) {
+            if (this.f52668d.post((Runnable) b2.e.g(runnable))) {
                 return;
             }
-            throw new RejectedExecutionException(this.f52100d + " is shutting down");
+            throw new RejectedExecutionException(this.f52668d + " is shutting down");
         }
     }
 

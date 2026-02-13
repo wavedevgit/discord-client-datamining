@@ -66,7 +66,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.parseRoom = var3;
     var1 = function arg0() {
-        _fun96827: for (var _fun96827_ip = 0;;) switch (_fun96827_ip) {
+        _fun96841: for (var _fun96841_ip = 0;;) switch (_fun96841_ip) {
             case 0:
                 var2 = arg0;
                 var3 = _closure1_slot0;
@@ -78,8 +78,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.HavenSoundKeys;
                 var1 = var1.RADIO;
                 if (!(var1 !== var2)) {
-                    _fun96827_ip = 240;
-                    continue _fun96827
+                    _fun96841_ip = 240;
+                    continue _fun96841
                 }
             case 46:
                 var3 = _closure1_slot0;
@@ -89,8 +89,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.HavenSoundKeys;
                 var1 = var1.ENVIRONMENT;
                 if (!(var1 !== var2)) {
-                    _fun96827_ip = 179;
-                    continue _fun96827
+                    _fun96841_ip = 179;
+                    continue _fun96841
                 }
             case 79:
                 var3 = _closure1_slot0;
@@ -100,8 +100,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.HavenSoundKeys;
                 var1 = var1.CAMPFIRE;
                 if (!(var1 !== var2)) {
-                    _fun96827_ip = 118;
-                    continue _fun96827
+                    _fun96841_ip = 118;
+                    continue _fun96841
                 }
             case 112:
                 var1 = '';
@@ -155,4 +155,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getHavenSoundControlName = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [12583, 1234, 2568, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [12573, 1235, 2571, 2]);

@@ -1,34 +1,55 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun8453: for (var _fun8453_ip = 0;;) switch (_fun8453_ip) {
-        case 0:
-            var1 = require;
-            var0 = dependencyMap;
-        case 6: // try_start_0
-            var2 = var0;
-            var0 = 0;
-            var0 = var2[var0];
-            var4 = undefined;
-            var2 = var1.bind(var4)(var0);
-            var0 = global;
-            var1 = var0.Object;
-            var0 = 'defineProperty';
-            var0 = var2.bind(var4)(var1, var0);
-            var3 = {};
-            var2 = '';
-            var1 = {};
-            var1 = var0.bind(var4)(var3, var2, var1);
-        case 55: // try_end0
-            var1 = var0;
-            _fun8453_ip = 64;
-            continue _fun8453;
-        case 60: // catch_target0
-            CatchBlockStart(arg_register = 0);
-            var1 = undefined;
-        case 64:
-            var0 = module;
-            var0.exports = var1;
-            var0 = undefined;
-            return var0;
-    }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [697]);
+    var1 = require;
+    var _closure1_slot0 = var1;
+    var1 = dependencyMap;
+    var _closure1_slot1 = var1;
+    var1 = function arg0, arg1, arg2() {
+        _fun8457: for (var _fun8457_ip = 0;;) switch (_fun8457_ip) {
+            case 0:
+                var4 = arg0;
+                var3 = arg1;
+                var5 = arg2;
+                var0 = '__proto__';
+                if (!(var0 == var3)) {
+                    _fun8457_ip = 44;
+                    continue _fun8457
+                }
+            case 17:
+                var7 = _closure1_slot0;
+                var1 = _closure1_slot1;
+                var6 = 0;
+                var1 = var1[var6];
+                var2 = undefined;
+                var1 = var7.bind(var2)(var1);
+                if (var1) {
+                    _fun8457_ip = 50;
+                    continue _fun8457
+                }
+            case 44:
+                var4[var3] = var5;
+                _fun8457_ip = 90;
+                continue _fun8457;
+            case 50:
+                var1 = _closure1_slot0;
+                var0 = _closure1_slot1;
+                var0 = var0[var6];
+                var1 = var1.bind(var2)(var0);
+                var0 = {
+                    'configurable': true,
+                    'enumerable': true,
+                    'value': null,
+                    'writable': true
+                };
+                var0.value = var5;
+                var0 = var1.bind(var2)(var4, var3, var0);
+            case 90:
+                var0 = undefined;
+                return var0;
+        }
+    };
+    var0 = arg4;
+    var0.exports = var1;
+    var0 = undefined;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [788]);

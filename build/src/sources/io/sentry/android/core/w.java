@@ -13,56 +13,56 @@ import java.util.regex.Pattern;
 public final class w implements io.sentry.t0 {
 
     /* renamed from: h  reason: collision with root package name */
-    private final ILogger f28617h;
+    private final ILogger f29185h;
 
     /* renamed from: a  reason: collision with root package name */
-    private long f28610a = 0;
+    private long f29178a = 0;
 
     /* renamed from: b  reason: collision with root package name */
-    private long f28611b = 0;
+    private long f29179b = 0;
 
     /* renamed from: c  reason: collision with root package name */
-    private long f28612c = 1;
+    private long f29180c = 1;
 
     /* renamed from: d  reason: collision with root package name */
-    private long f28613d = 1;
+    private long f29181d = 1;
 
     /* renamed from: e  reason: collision with root package name */
-    private final long f28614e = 1000000000;
+    private final long f29182e = 1000000000;
 
     /* renamed from: f  reason: collision with root package name */
-    private double f28615f = 1.0E9d / 1;
+    private double f29183f = 1.0E9d / 1;
 
     /* renamed from: g  reason: collision with root package name */
-    private final File f28616g = new File("/proc/self/stat");
+    private final File f29184g = new File("/proc/self/stat");
 
     /* renamed from: i  reason: collision with root package name */
-    private boolean f28618i = false;
+    private boolean f29186i = false;
 
     /* renamed from: j  reason: collision with root package name */
-    private final Pattern f28619j = Pattern.compile("[\n\t\r ]");
+    private final Pattern f29187j = Pattern.compile("[\n\t\r ]");
 
     public w(ILogger iLogger) {
-        this.f28617h = (ILogger) io.sentry.util.y.c(iLogger, "Logger is required.");
+        this.f29185h = (ILogger) io.sentry.util.y.c(iLogger, "Logger is required.");
     }
 
     private long e() {
         String str;
         try {
-            str = io.sentry.util.i.c(this.f28616g);
+            str = io.sentry.util.i.c(this.f29184g);
         } catch (IOException e10) {
-            this.f28618i = false;
-            this.f28617h.b(SentryLevel.WARNING, "Unable to read /proc/self/stat file. Disabling cpu collection.", e10);
+            this.f29186i = false;
+            this.f29185h.b(SentryLevel.WARNING, "Unable to read /proc/self/stat file. Disabling cpu collection.", e10);
             str = null;
         }
         if (str != null) {
-            String[] split = this.f28619j.split(str.trim());
+            String[] split = this.f29187j.split(str.trim());
             try {
                 long parseLong = Long.parseLong(split[13]);
                 long parseLong2 = Long.parseLong(split[14]);
-                return (long) ((parseLong + parseLong2 + Long.parseLong(split[15]) + Long.parseLong(split[16])) * this.f28615f);
+                return (long) ((parseLong + parseLong2 + Long.parseLong(split[15]) + Long.parseLong(split[16])) * this.f29183f);
             } catch (ArrayIndexOutOfBoundsException | NumberFormatException e11) {
-                this.f28617h.b(SentryLevel.ERROR, "Error parsing /proc/self/stat file.", e11);
+                this.f29185h.b(SentryLevel.ERROR, "Error parsing /proc/self/stat file.", e11);
             }
         }
         return 0L;
@@ -70,23 +70,23 @@ public final class w implements io.sentry.t0 {
 
     @Override // io.sentry.t0
     public void c() {
-        this.f28618i = true;
-        this.f28612c = Os.sysconf(OsConstants._SC_CLK_TCK);
-        this.f28613d = Os.sysconf(OsConstants._SC_NPROCESSORS_CONF);
-        this.f28615f = 1.0E9d / this.f28612c;
-        this.f28611b = e();
+        this.f29186i = true;
+        this.f29180c = Os.sysconf(OsConstants._SC_CLK_TCK);
+        this.f29181d = Os.sysconf(OsConstants._SC_NPROCESSORS_CONF);
+        this.f29183f = 1.0E9d / this.f29180c;
+        this.f29179b = e();
     }
 
     @Override // io.sentry.t0
     public void d(k3 k3Var) {
-        if (!this.f28618i) {
+        if (!this.f29186i) {
             return;
         }
         long elapsedRealtimeNanos = SystemClock.elapsedRealtimeNanos();
-        long j10 = elapsedRealtimeNanos - this.f28610a;
-        this.f28610a = elapsedRealtimeNanos;
+        long j10 = elapsedRealtimeNanos - this.f29178a;
+        this.f29178a = elapsedRealtimeNanos;
         long e10 = e();
-        this.f28611b = e10;
-        k3Var.e(Double.valueOf((((e10 - this.f28611b) / j10) / this.f28613d) * 100.0d));
+        this.f29179b = e10;
+        k3Var.e(Double.valueOf((((e10 - this.f29179b) / j10) / this.f29181d) * 100.0d));
     }
 }

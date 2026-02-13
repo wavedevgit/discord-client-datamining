@@ -12,7 +12,7 @@ public abstract class j {
     public /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final /* synthetic */ int[] f31558a;
+        public static final /* synthetic */ int[] f32126a;
 
         static {
             int[] iArr = new int[h5.h.values().length];
@@ -24,7 +24,7 @@ public abstract class j {
                 iArr[h5.h.f26198e.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
-            f31558a = iArr;
+            f32126a = iArr;
         }
     }
 
@@ -64,7 +64,7 @@ public abstract class j {
         if (cVar instanceof c.a) {
             return ((c.a) cVar).f26186a;
         }
-        int i10 = a.f31558a[hVar.ordinal()];
+        int i10 = a.f32126a[hVar.ordinal()];
         if (i10 != 1) {
             if (i10 == 2) {
                 return Float.MAX_VALUE;

@@ -94,7 +94,7 @@ public final class b implements GestureDetector.OnGestureListener {
         @Override // kotlin.jvm.functions.Function1
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             a((c.a) obj);
-            return Unit.f31988a;
+            return Unit.f32556a;
         }
     }
 
@@ -121,7 +121,7 @@ public final class b implements GestureDetector.OnGestureListener {
             @Override // kotlin.jvm.functions.Function1
             public /* bridge */ /* synthetic */ Object invoke(Object obj) {
                 a((c.a) obj);
-                return Unit.f31988a;
+                return Unit.f32556a;
             }
         }
 
@@ -160,7 +160,7 @@ public final class b implements GestureDetector.OnGestureListener {
         @Override // kotlin.jvm.functions.Function1
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             a((c.a) obj);
-            return Unit.f31988a;
+            return Unit.f32556a;
         }
     }
 
@@ -182,7 +182,7 @@ public final class b implements GestureDetector.OnGestureListener {
         this.f8340i = matrixController;
         GestureDetector gestureDetector = new GestureDetector(context, this);
         gestureDetector.setOnDoubleTapListener(null);
-        Unit unit = Unit.f31988a;
+        Unit unit = Unit.f32556a;
         this.f8341o = gestureDetector;
         this.f8342p = new OverScroller(context);
         this.f8343q = new b.C0304b();

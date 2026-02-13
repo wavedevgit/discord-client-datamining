@@ -3,5 +3,5 @@ package ys;
 public abstract class k {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final dt.e0 f55798a = new dt.e0("RESUME_TOKEN");
+    public static final dt.e0 f56366a = new dt.e0("RESUME_TOKEN");
 }

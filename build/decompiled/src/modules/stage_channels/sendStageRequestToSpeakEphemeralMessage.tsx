@@ -115,4 +115,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.sendStageRequestToSpeakEphemeralMessage = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 806, 21, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 807, 21, 2]);

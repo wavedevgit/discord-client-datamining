@@ -11,34 +11,34 @@ public final class Variance {
     public static final Variance OUT_VARIANCE = new Variance("OUT_VARIANCE", 2, "out", false, true, 1);
 
     /* renamed from: p  reason: collision with root package name */
-    private static final /* synthetic */ Variance[] f34621p;
+    private static final /* synthetic */ Variance[] f35189p;
 
     /* renamed from: q  reason: collision with root package name */
-    private static final /* synthetic */ EnumEntries f34622q;
+    private static final /* synthetic */ EnumEntries f35190q;
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f34623d;
+    private final String f35191d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final boolean f34624e;
+    private final boolean f35192e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final boolean f34625i;
+    private final boolean f35193i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final int f34626o;
+    private final int f35194o;
 
     static {
         Variance[] a10 = a();
-        f34621p = a10;
-        f34622q = hs.a.a(a10);
+        f35189p = a10;
+        f35190q = hs.a.a(a10);
     }
 
     private Variance(String str, int i10, String str2, boolean z10, boolean z11, int i11) {
-        this.f34623d = str2;
-        this.f34624e = z10;
-        this.f34625i = z11;
-        this.f34626o = i11;
+        this.f35191d = str2;
+        this.f35192e = z10;
+        this.f35193i = z11;
+        this.f35194o = i11;
     }
 
     private static final /* synthetic */ Variance[] a() {
@@ -50,21 +50,21 @@ public final class Variance {
     }
 
     public static Variance[] values() {
-        return (Variance[]) f34621p.clone();
+        return (Variance[]) f35189p.clone();
     }
 
     public final boolean getAllowsOutPosition() {
-        return this.f34625i;
+        return this.f35193i;
     }
 
     @NotNull
     public final String getLabel() {
-        return this.f34623d;
+        return this.f35191d;
     }
 
     @Override // java.lang.Enum
     @NotNull
     public String toString() {
-        return this.f34623d;
+        return this.f35191d;
     }
 }

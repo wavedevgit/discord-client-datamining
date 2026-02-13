@@ -6,31 +6,31 @@ import kotlin.jvm.internal.Intrinsics;
 public class t0 extends a {
 
     /* renamed from: e  reason: collision with root package name */
-    private final y f51956e;
+    private final y f52524e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final char[] f51957f;
+    private final char[] f52525f;
 
     /* renamed from: g  reason: collision with root package name */
-    protected int f51958g;
+    protected int f52526g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final d f51959h;
+    private final d f52527h;
 
     public t0(y reader, char[] buffer) {
         Intrinsics.checkNotNullParameter(reader, "reader");
         Intrinsics.checkNotNullParameter(buffer, "buffer");
-        this.f51956e = reader;
-        this.f51957f = buffer;
-        this.f51958g = IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
-        this.f51959h = new d(buffer);
+        this.f52524e = reader;
+        this.f52525f = buffer;
+        this.f52526g = IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+        this.f52527h = new d(buffer);
         U(0);
     }
 
     private final void U(int i10) {
         char[] b10 = D().b();
         if (i10 != 0) {
-            int i11 = this.f51871a;
+            int i11 = this.f52439a;
             kotlin.collections.i.g(b10, b10, 0, i11, i11 + i10);
         }
         int length = D().length();
@@ -38,15 +38,15 @@ public class t0 extends a {
             if (i10 == length) {
                 break;
             }
-            int a10 = this.f51956e.a(b10, i10, length - i10);
+            int a10 = this.f52524e.a(b10, i10, length - i10);
             if (a10 == -1) {
                 D().f(i10);
-                this.f51958g = -1;
+                this.f52526g = -1;
                 break;
             }
             i10 += a10;
         }
-        this.f51871a = 0;
+        this.f52439a = 0;
     }
 
     @Override // vt.a
@@ -60,9 +60,9 @@ public class t0 extends a {
         if (i10 < D().length()) {
             return i10;
         }
-        this.f51871a = i10;
+        this.f52439a = i10;
         u();
-        if (this.f51871a == 0 && D().length() != 0) {
+        if (this.f52439a == 0 && D().length() != 0) {
             return 0;
         }
         return -1;
@@ -72,7 +72,7 @@ public class t0 extends a {
     public int K() {
         int I;
         char charAt;
-        int i10 = this.f51871a;
+        int i10 = this.f52439a;
         while (true) {
             I = I(i10);
             if (I == -1 || !((charAt = D().charAt(I)) == ' ' || charAt == '\n' || charAt == '\r' || charAt == '\t')) {
@@ -80,7 +80,7 @@ public class t0 extends a {
             }
             i10 = I + 1;
         }
-        this.f51871a = I;
+        this.f52439a = I;
         return I;
     }
 
@@ -93,7 +93,7 @@ public class t0 extends a {
     @Override // vt.a
     /* renamed from: S */
     public d D() {
-        return this.f51959h;
+        return this.f52527h;
     }
 
     public int T(char c10, int i10) {
@@ -109,7 +109,7 @@ public class t0 extends a {
     }
 
     public final void V() {
-        j.f51907c.c(this.f51957f);
+        j.f52475c.c(this.f52525f);
     }
 
     @Override // vt.a
@@ -122,18 +122,18 @@ public class t0 extends a {
     @Override // vt.a
     public boolean e() {
         u();
-        int i10 = this.f51871a;
+        int i10 = this.f52439a;
         while (true) {
             int I = I(i10);
             if (I != -1) {
                 char charAt = D().charAt(I);
                 if (charAt != ' ' && charAt != '\n' && charAt != '\r' && charAt != '\t') {
-                    this.f51871a = I;
+                    this.f52439a = I;
                     return E(charAt);
                 }
                 i10 = I + 1;
             } else {
-                this.f51871a = I;
+                this.f52439a = I;
                 return false;
             }
         }
@@ -142,22 +142,22 @@ public class t0 extends a {
     @Override // vt.a
     public String i() {
         l('\"');
-        int i10 = this.f51871a;
+        int i10 = this.f52439a;
         int T = T('\"', i10);
         if (T == -1) {
             int I = I(i10);
             if (I != -1) {
-                return p(D(), this.f51871a, I);
+                return p(D(), this.f52439a, I);
             }
             a.z(this, (byte) 1, false, 2, null);
             throw new as.h();
         }
         for (int i11 = i10; i11 < T; i11++) {
             if (D().charAt(i11) == '\\') {
-                return p(D(), this.f51871a, i11);
+                return p(D(), this.f52439a, i11);
             }
         }
-        this.f51871a = T + 1;
+        this.f52439a = T + 1;
         return L(i10, T);
     }
 
@@ -165,19 +165,19 @@ public class t0 extends a {
     public byte j() {
         u();
         d D = D();
-        int i10 = this.f51871a;
+        int i10 = this.f52439a;
         while (true) {
             int I = I(i10);
             if (I != -1) {
                 int i11 = I + 1;
                 byte a10 = b.a(D.charAt(I));
                 if (a10 != 3) {
-                    this.f51871a = i11;
+                    this.f52439a = i11;
                     return a10;
                 }
                 i10 = i11;
             } else {
-                this.f51871a = I;
+                this.f52439a = I;
                 return (byte) 10;
             }
         }
@@ -187,14 +187,14 @@ public class t0 extends a {
     public void l(char c10) {
         u();
         d D = D();
-        int i10 = this.f51871a;
+        int i10 = this.f52439a;
         while (true) {
             int I = I(i10);
             if (I != -1) {
                 int i11 = I + 1;
                 char charAt = D.charAt(I);
                 if (charAt != ' ' && charAt != '\n' && charAt != '\r' && charAt != '\t') {
-                    this.f51871a = i11;
+                    this.f52439a = i11;
                     if (charAt == c10) {
                         return;
                     }
@@ -202,7 +202,7 @@ public class t0 extends a {
                 }
                 i10 = i11;
             } else {
-                this.f51871a = I;
+                this.f52439a = I;
                 Q(c10);
                 return;
             }
@@ -211,8 +211,8 @@ public class t0 extends a {
 
     @Override // vt.a
     public void u() {
-        int length = D().length() - this.f51871a;
-        if (length > this.f51958g) {
+        int length = D().length() - this.f52439a;
+        if (length > this.f52526g) {
             return;
         }
         U(length);

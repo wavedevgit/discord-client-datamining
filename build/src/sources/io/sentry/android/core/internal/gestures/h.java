@@ -12,19 +12,19 @@ import io.sentry.l8;
 public final class h extends j {
 
     /* renamed from: e  reason: collision with root package name */
-    private final Window.Callback f28301e;
+    private final Window.Callback f28869e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final g f28302i;
+    private final g f28870i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final GestureDetectorCompat f28303o;
+    private final GestureDetectorCompat f28871o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final k7 f28304p;
+    private final k7 f28872p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final b f28305q;
+    private final b f28873q;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     class a implements b {
@@ -44,25 +44,25 @@ public final class h extends j {
     }
 
     private void b(MotionEvent motionEvent) {
-        this.f28303o.a(motionEvent);
+        this.f28871o.a(motionEvent);
         if (motionEvent.getActionMasked() == 1) {
-            this.f28302i.k(motionEvent);
+            this.f28870i.k(motionEvent);
         }
     }
 
     public Window.Callback a() {
-        return this.f28301e;
+        return this.f28869e;
     }
 
     public void c() {
-        this.f28302i.m(l8.CANCELLED);
+        this.f28870i.m(l8.CANCELLED);
     }
 
     @Override // io.sentry.android.core.internal.gestures.j, android.view.Window.Callback
     public boolean dispatchTouchEvent(MotionEvent motionEvent) {
         if (motionEvent != null) {
             try {
-                b(this.f28305q.a(motionEvent));
+                b(this.f28873q.a(motionEvent));
             } finally {
                 try {
                 } finally {
@@ -74,10 +74,10 @@ public final class h extends j {
 
     h(Window.Callback callback, GestureDetectorCompat gestureDetectorCompat, g gVar, k7 k7Var, b bVar) {
         super(callback);
-        this.f28301e = callback;
-        this.f28302i = gVar;
-        this.f28304p = k7Var;
-        this.f28303o = gestureDetectorCompat;
-        this.f28305q = bVar;
+        this.f28869e = callback;
+        this.f28870i = gVar;
+        this.f28872p = k7Var;
+        this.f28871o = gestureDetectorCompat;
+        this.f28873q = bVar;
     }
 }

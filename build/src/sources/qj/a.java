@@ -3,17 +3,17 @@ package qj;
 final class a extends f {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f45427a;
+    private final String f45995a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f45428b;
+    private final String f45996b;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public a(String str, String str2) {
         if (str != null) {
-            this.f45427a = str;
+            this.f45995a = str;
             if (str2 != null) {
-                this.f45428b = str2;
+                this.f45996b = str2;
                 return;
             }
             throw new NullPointerException("Null version");
@@ -23,12 +23,12 @@ final class a extends f {
 
     @Override // qj.f
     public String b() {
-        return this.f45427a;
+        return this.f45995a;
     }
 
     @Override // qj.f
     public String c() {
-        return this.f45428b;
+        return this.f45996b;
     }
 
     public boolean equals(Object obj) {
@@ -37,7 +37,7 @@ final class a extends f {
         }
         if (obj instanceof f) {
             f fVar = (f) obj;
-            if (this.f45427a.equals(fVar.b()) && this.f45428b.equals(fVar.c())) {
+            if (this.f45995a.equals(fVar.b()) && this.f45996b.equals(fVar.c())) {
                 return true;
             }
         }
@@ -45,10 +45,10 @@ final class a extends f {
     }
 
     public int hashCode() {
-        return ((this.f45427a.hashCode() ^ 1000003) * 1000003) ^ this.f45428b.hashCode();
+        return ((this.f45995a.hashCode() ^ 1000003) * 1000003) ^ this.f45996b.hashCode();
     }
 
     public String toString() {
-        return "LibraryVersion{libraryName=" + this.f45427a + ", version=" + this.f45428b + "}";
+        return "LibraryVersion{libraryName=" + this.f45995a + ", version=" + this.f45996b + "}";
     }
 }

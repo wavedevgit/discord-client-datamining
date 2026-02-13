@@ -10,52 +10,52 @@ import java.util.concurrent.ConcurrentMap;
 public final class k0 {
 
     /* renamed from: k  reason: collision with root package name */
-    private static final cu.i f37610k;
+    private static final cu.i f38178k;
 
     /* renamed from: l  reason: collision with root package name */
-    private static final ConcurrentMap f37611l;
+    private static final ConcurrentMap f38179l;
 
     /* renamed from: m  reason: collision with root package name */
-    private static final w[] f37612m;
+    private static final w[] f38180m;
 
     /* renamed from: n  reason: collision with root package name */
-    private static final w[] f37613n;
+    private static final w[] f38181n;
 
     /* renamed from: o  reason: collision with root package name */
-    private static final Set f37614o;
+    private static final Set f38182o;
 
     /* renamed from: p  reason: collision with root package name */
-    private static final long f37615p;
+    private static final long f38183p;
 
     /* renamed from: a  reason: collision with root package name */
-    private final cu.p f37616a;
+    private final cu.p f38184a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Locale f37617b;
+    private final Locale f38185b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final zt.e f37618c;
+    private final zt.e f38186c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final char f37619d;
+    private final char f38187d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final String f37620e;
+    private final String f38188e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final w f37621f;
+    private final w f38189f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final boolean f37622g;
+    private final boolean f38190g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final boolean f37623h;
+    private final boolean f38191h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final String f37624i;
+    private final String f38192i;
 
     /* renamed from: j  reason: collision with root package name */
-    private final String f37625j;
+    private final String f38193j;
 
     static {
         cu.i iVar = null;
@@ -70,37 +70,37 @@ public final class k0 {
         if (iVar == null) {
             iVar = cu.i.f21168a;
         }
-        f37610k = iVar;
-        f37611l = new ConcurrentHashMap();
-        f fVar = f.f37429o;
-        f fVar2 = f.f37431q;
-        f fVar3 = f.f37433s;
-        g gVar = g.f37466d;
-        g gVar2 = g.f37467e;
-        g gVar3 = g.f37468i;
-        w[] wVarArr = {fVar, fVar2, f.f37432r, fVar3, gVar, gVar2, gVar3};
-        f37612m = wVarArr;
-        f37613n = new w[]{fVar, fVar2, fVar3, gVar, gVar2, gVar3};
+        f38178k = iVar;
+        f38179l = new ConcurrentHashMap();
+        f fVar = f.f37997o;
+        f fVar2 = f.f37999q;
+        f fVar3 = f.f38001s;
+        g gVar = g.f38034d;
+        g gVar2 = g.f38035e;
+        g gVar3 = g.f38036i;
+        w[] wVarArr = {fVar, fVar2, f.f38000r, fVar3, gVar, gVar2, gVar3};
+        f38180m = wVarArr;
+        f38181n = new w[]{fVar, fVar2, fVar3, gVar, gVar2, gVar3};
         HashSet hashSet = new HashSet();
         Collections.addAll(hashSet, wVarArr);
-        hashSet.add(g.f37471q);
-        f37614o = Collections.unmodifiableSet(hashSet);
-        f37615p = 63072000L;
+        hashSet.add(g.f38039q);
+        f38182o = Collections.unmodifiableSet(hashSet);
+        f38183p = 63072000L;
     }
 
     private k0(Locale locale, zt.e eVar, char c10, String str, w wVar, boolean z10, boolean z11, String str2, String str3) {
         if (wVar != null) {
             if (eVar != null) {
-                this.f37616a = cu.p.f(locale, cu.k.CARDINALS);
-                this.f37617b = locale;
-                this.f37618c = eVar;
-                this.f37619d = c10;
-                this.f37621f = wVar;
-                this.f37620e = str;
-                this.f37622g = z10;
-                this.f37623h = z11;
-                this.f37624i = str2;
-                this.f37625j = str3;
+                this.f38184a = cu.p.f(locale, cu.k.CARDINALS);
+                this.f38185b = locale;
+                this.f38186c = eVar;
+                this.f38187d = c10;
+                this.f38189f = wVar;
+                this.f38188e = str;
+                this.f38190g = z10;
+                this.f38191h = z11;
+                this.f38192i = str2;
+                this.f38193j = str3;
                 return;
             }
             throw new NullPointerException("Missing reference clock.");
@@ -109,12 +109,12 @@ public final class k0 {
     }
 
     public static k0 b(Locale locale) {
-        ConcurrentMap concurrentMap = f37611l;
+        ConcurrentMap concurrentMap = f38179l;
         k0 k0Var = (k0) concurrentMap.get(locale);
         if (k0Var == null) {
-            q0 q0Var = q0.f37665e;
-            cu.i iVar = f37610k;
-            k0 k0Var2 = new k0(locale, q0Var, iVar.f(locale), iVar.e(locale), g.f37468i, false, false, null, null);
+            q0 q0Var = q0.f38233e;
+            cu.i iVar = f38178k;
+            k0 k0Var2 = new k0(locale, q0Var, iVar.f(locale), iVar.e(locale), g.f38036i, false, false, null, null);
             k0 k0Var3 = (k0) concurrentMap.putIfAbsent(locale, k0Var2);
             if (k0Var3 != null) {
                 return k0Var3;
@@ -125,7 +125,7 @@ public final class k0 {
     }
 
     public Locale a() {
-        return this.f37617b;
+        return this.f38185b;
     }
 
     public String c() {

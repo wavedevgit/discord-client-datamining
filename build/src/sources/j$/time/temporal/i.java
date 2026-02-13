@@ -8,7 +8,7 @@ public enum i implements p {
     
 
     /* renamed from: a  reason: collision with root package name */
-    public final String f30615a;
+    public final String f31183a;
 
     static {
         Duration.r(31556952L, 0);
@@ -16,14 +16,14 @@ public enum i implements p {
     }
 
     i(String str) {
-        this.f30615a = str;
+        this.f31183a = str;
     }
 
     @Override // j$.time.temporal.p
     public final k r(k kVar, long j10) {
-        int i10 = c.f30611a[ordinal()];
+        int i10 = c.f31179a[ordinal()];
         if (i10 == 1) {
-            h hVar = j.f30618c;
+            h hVar = j.f31186c;
             return kVar.b(Math.addExact(kVar.g(hVar), j10), hVar);
         } else if (i10 == 2) {
             return kVar.h(j10 / 256, b.YEARS).h((j10 % 256) * 3, b.MONTHS);
@@ -34,6 +34,6 @@ public enum i implements p {
 
     @Override // java.lang.Enum
     public final String toString() {
-        return this.f30615a;
+        return this.f31183a;
     }
 }

@@ -6,10 +6,10 @@ import kotlin.jvm.internal.Intrinsics;
 public final class m0 implements z {
 
     /* renamed from: a  reason: collision with root package name */
-    private char[] f51924a = h.f51900c.d();
+    private char[] f52492a = h.f52468c.d();
 
     /* renamed from: b  reason: collision with root package name */
-    private int f51925b;
+    private int f52493b;
 
     private final void d(int i10, int i11, String str) {
         int i12;
@@ -21,47 +21,47 @@ public final class m0 implements z {
                 byte b10 = c1.a()[charAt];
                 if (b10 == 0) {
                     i12 = f10 + 1;
-                    this.f51924a[f10] = charAt;
+                    this.f52492a[f10] = charAt;
                 } else {
                     if (b10 == 1) {
                         String str2 = c1.b()[charAt];
                         Intrinsics.checkNotNull(str2);
                         int f11 = f(f10, str2.length());
-                        str2.getChars(0, str2.length(), this.f51924a, f11);
+                        str2.getChars(0, str2.length(), this.f52492a, f11);
                         i11 = f11 + str2.length();
-                        this.f51925b = i11;
+                        this.f52493b = i11;
                     } else {
-                        char[] cArr = this.f51924a;
+                        char[] cArr = this.f52492a;
                         cArr[f10] = '\\';
                         cArr[f10 + 1] = (char) b10;
                         i11 = f10 + 2;
-                        this.f51925b = i11;
+                        this.f52493b = i11;
                     }
                     i10++;
                 }
             } else {
                 i12 = f10 + 1;
-                this.f51924a[f10] = charAt;
+                this.f52492a[f10] = charAt;
             }
             i11 = i12;
             i10++;
         }
         int f12 = f(i11, 1);
-        this.f51924a[f12] = '\"';
-        this.f51925b = f12 + 1;
+        this.f52492a[f12] = '\"';
+        this.f52493b = f12 + 1;
     }
 
     private final void e(int i10) {
-        f(this.f51925b, i10);
+        f(this.f52493b, i10);
     }
 
     private final int f(int i10, int i11) {
         int i12 = i11 + i10;
-        char[] cArr = this.f51924a;
+        char[] cArr = this.f52492a;
         if (cArr.length <= i12) {
             char[] copyOf = Arrays.copyOf(cArr, kotlin.ranges.d.d(i12, i10 * 2));
             Intrinsics.checkNotNullExpressionValue(copyOf, "copyOf(...)");
-            this.f51924a = copyOf;
+            this.f52492a = copyOf;
         }
         return i10;
     }
@@ -69,9 +69,9 @@ public final class m0 implements z {
     @Override // vt.z
     public void a(char c10) {
         e(1);
-        char[] cArr = this.f51924a;
-        int i10 = this.f51925b;
-        this.f51925b = i10 + 1;
+        char[] cArr = this.f52492a;
+        int i10 = this.f52493b;
+        this.f52493b = i10 + 1;
         cArr[i10] = c10;
     }
 
@@ -79,8 +79,8 @@ public final class m0 implements z {
     public void b(String text) {
         Intrinsics.checkNotNullParameter(text, "text");
         e(text.length() + 2);
-        char[] cArr = this.f51924a;
-        int i10 = this.f51925b;
+        char[] cArr = this.f52492a;
+        int i10 = this.f52493b;
         int i11 = i10 + 1;
         cArr[i10] = '\"';
         int length = text.length();
@@ -94,7 +94,7 @@ public final class m0 implements z {
             }
         }
         cArr[i12] = '\"';
-        this.f51925b = i12 + 1;
+        this.f52493b = i12 + 1;
     }
 
     @Override // vt.z
@@ -105,16 +105,16 @@ public final class m0 implements z {
             return;
         }
         e(length);
-        text.getChars(0, text.length(), this.f51924a, this.f51925b);
-        this.f51925b += length;
+        text.getChars(0, text.length(), this.f52492a, this.f52493b);
+        this.f52493b += length;
     }
 
     public void g() {
-        h.f51900c.c(this.f51924a);
+        h.f52468c.c(this.f52492a);
     }
 
     public String toString() {
-        return new String(this.f51924a, 0, this.f51925b);
+        return new String(this.f52492a, 0, this.f52493b);
     }
 
     @Override // vt.z

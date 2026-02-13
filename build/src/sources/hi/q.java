@@ -3,17 +3,17 @@ package hi;
 final class q extends j {
 
     /* renamed from: e  reason: collision with root package name */
-    final /* synthetic */ s f27360e;
+    final /* synthetic */ s f27928e;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public q(s sVar) {
-        this.f27360e = sVar;
+        this.f27928e = sVar;
     }
 
     @Override // hi.j
     public final void a() {
-        t.o(this.f27360e.f27361d);
-        this.f27360e.f27361d.f27375m = null;
-        this.f27360e.f27361d.f27369g = false;
+        t.o(this.f27928e.f27929d);
+        this.f27928e.f27929d.f27943m = null;
+        this.f27928e.f27929d.f27937g = false;
     }
 }

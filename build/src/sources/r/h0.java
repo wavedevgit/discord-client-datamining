@@ -22,20 +22,20 @@ public class h0 extends g0 {
 
     @Override // r.b0.a
     public void a(s.p pVar) {
-        j0.c(this.f45812a, pVar);
+        j0.c(this.f46380a, pVar);
         g.c cVar = new g.c(pVar.a(), pVar.e());
         List c10 = pVar.c();
-        Handler handler = ((j0.a) b2.e.g((j0.a) this.f45813b)).f45814a;
+        Handler handler = ((j0.a) b2.e.g((j0.a) this.f46381b)).f46382a;
         s.i b10 = pVar.b();
         try {
             if (b10 != null) {
                 InputConfiguration inputConfiguration = (InputConfiguration) b10.a();
                 b2.e.g(inputConfiguration);
-                this.f45812a.createReprocessableCaptureSessionByConfigurations(inputConfiguration, s.p.h(c10), cVar, handler);
+                this.f46380a.createReprocessableCaptureSessionByConfigurations(inputConfiguration, s.p.h(c10), cVar, handler);
             } else if (pVar.d() == 1) {
-                this.f45812a.createConstrainedHighSpeedCaptureSession(j0.d(c10), cVar, handler);
+                this.f46380a.createConstrainedHighSpeedCaptureSession(j0.d(c10), cVar, handler);
             } else {
-                this.f45812a.createCaptureSessionByOutputConfigurations(s.p.h(c10), cVar, handler);
+                this.f46380a.createCaptureSessionByOutputConfigurations(s.p.h(c10), cVar, handler);
             }
         } catch (CameraAccessException e10) {
             throw f.e(e10);

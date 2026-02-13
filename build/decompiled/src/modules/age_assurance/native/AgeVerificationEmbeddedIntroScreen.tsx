@@ -29,31 +29,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 2;
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
-    var7 = var3.jsx;
-    var _closure1_slot4 = var7;
+    var6 = var3.jsx;
+    var _closure1_slot4 = var6;
     var3 = var3.jsxs;
     var _closure1_slot5 = var3;
     var3 = 3;
     var3 = var5[var3];
-    var8 = var4.bind(var0)(var3);
-    var6 = var8.createStyles;
+    var7 = var4.bind(var0)(var3);
+    var6 = var7.createStyles;
     var3 = {};
-    var9 = {};
-    var10 = 'center';
-    var9.textAlign = var10;
-    var3.header = var9;
-    var3 = var6.bind(var8)(var3);
+    var8 = {};
+    var9 = 'center';
+    var8.textAlign = var9;
+    var3.header = var8;
+    var3 = var6.bind(var7)(var3);
     var _closure1_slot6 = var3;
-    var3 = 4;
-    var3 = var5[var3];
-    var3 = var4.bind(var0)(var3);
-    var6 = var3.ShieldSpotIllustration;
-    var3 = {
-        'height': 100,
-        'width': 177
-    };
-    var3 = var7.bind(var0)(var6, var3);
-    var _closure1_slot7 = var3;
     var3 = 15;
     var3 = var5[var3];
     var5 = var4.bind(var0)(var3);
@@ -62,7 +52,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
         var0 = arg0;
-        var4 = var0.onClose;
+        var5 = var0.onClose;
         var10 = var0.modalSessionId;
         var2 = var0.classificationId;
         var20 = var0.entryPoint;
@@ -71,33 +61,33 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var17 = var0.bind(var3)();
         var9 = _closure1_slot0;
         var12 = _closure1_slot2;
-        var0 = 5;
+        var0 = 4;
         var0 = var12[var0];
         var1 = var9.bind(var3)(var0);
         var0 = var1.useIsSuspendedUser;
         var19 = var0.bind(var1)();
         var1 = _closure1_slot1;
-        var0 = 6;
+        var0 = 5;
         var0 = var12[var0];
         var1 = var1.bind(var3)(var0);
         var0 = {};
-        var0.onClose = var4;
+        var0.onClose = var5;
         var0.classificationId = var2;
         var0 = var1.bind(var3)(var0);
         var11 = var0.ageVerificationMethods;
         var2 = _closure1_slot4;
-        var0 = 7;
+        var0 = 6;
         var0 = var12[var0];
         var0 = var9.bind(var3)(var0);
         var1 = var0.ModalScreen;
         var0 = {};
         var6 = _closure1_slot5;
-        var4 = 8;
+        var4 = 7;
         var4 = var12[var4];
         var4 = var9.bind(var3)(var4);
         var5 = var4.ModalContent;
         var4 = {};
-        var7 = 9;
+        var7 = 8;
         var7 = var12[var7];
         var7 = var9.bind(var3)(var7);
         var8 = var7.Stack;
@@ -106,7 +96,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             'justify': 'center',
             'spacing': 8
         };
-        var14 = _closure1_slot7;
+        var13 = 9;
+        var13 = var12[var13];
+        var13 = var9.bind(var3)(var13);
+        var14 = var13.ShieldSpotIllustration;
+        var13 = {
+            'height': 100,
+            'width': 177
+        };
+        var14 = var2.bind(var3)(var14, var13);
         var13 = new Array(3);
         var13[0] = var14;
         var14 = 10;
@@ -183,4 +181,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 660, 33, 1297, 6030, 6017, 6525, 6528, 6529, 4086, 3938, 4254, 6009, 1686, 6530, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 660, 33, 1297, 5999, 6511, 6514, 6515, 4086, 6021, 3938, 4254, 5991, 1689, 6516, 2]);

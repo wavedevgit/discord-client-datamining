@@ -89,7 +89,7 @@ public final class i extends kotlinx.coroutines.m implements CoroutineStackFrame
 
     public final void o(CoroutineContext coroutineContext, Object obj) {
         this.f21885q = obj;
-        this.f35049i = 1;
+        this.f35617i = 1;
         this.f21883o.w1(coroutineContext, this);
     }
 
@@ -98,14 +98,14 @@ public final class i extends kotlinx.coroutines.m implements CoroutineStackFrame
         Object b10 = ys.t.b(obj);
         if (j.d(this.f21883o, getContext())) {
             this.f21885q = b10;
-            this.f35049i = 0;
+            this.f35617i = 0;
             j.c(this.f21883o, getContext(), this);
             return;
         }
-        ys.p0 b11 = l1.f55800a.b();
+        ys.p0 b11 = l1.f56368a.b();
         if (b11.m2()) {
             this.f21885q = b10;
-            this.f35049i = 0;
+            this.f35617i = 0;
             b11.c2(this);
             return;
         }
@@ -114,7 +114,7 @@ public final class i extends kotlinx.coroutines.m implements CoroutineStackFrame
             CoroutineContext context = getContext();
             Object i10 = l0.i(context, this.f21886r);
             this.f21884p.resumeWith(obj);
-            Unit unit = Unit.f31988a;
+            Unit unit = Unit.f32556a;
             l0.f(context, i10);
             do {
             } while (b11.u2());

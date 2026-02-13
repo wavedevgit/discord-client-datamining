@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = dependencyMap;
     var _closure1_slot1 = var1;
     var1 = function arg0, arg1, arg2() {
-        _fun32683: for (var _fun32683_ip = 0;;) switch (_fun32683_ip) {
+        _fun32713: for (var _fun32713_ip = 0;;) switch (_fun32713_ip) {
             case 0:
                 var2 = arg0;
                 var1 = arg1;
@@ -13,116 +13,116 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var3 = var2.constructor;
                 var0 = '[object ArrayBuffer]';
                 if (!(var0 !== var1)) {
-                    _fun32683_ip = 417;
-                    continue _fun32683
+                    _fun32713_ip = 417;
+                    continue _fun32713
                 }
             case 25:
                 var0 = '[object Boolean]';
                 if (!(var0 !== var1)) {
-                    _fun32683_ip = 392;
-                    continue _fun32683
+                    _fun32713_ip = 392;
+                    continue _fun32713
                 }
             case 36:
                 var0 = '[object Date]';
                 if (!(var0 !== var1)) {
-                    _fun32683_ip = 392;
-                    continue _fun32683
+                    _fun32713_ip = 392;
+                    continue _fun32713
                 }
             case 47:
                 var0 = '[object DataView]';
                 if (!(var0 !== var1)) {
-                    _fun32683_ip = 359;
-                    continue _fun32683
+                    _fun32713_ip = 359;
+                    continue _fun32713
                 }
             case 58:
                 var0 = '[object Float32Array]';
                 if (!(var0 !== var1)) {
-                    _fun32683_ip = 326;
-                    continue _fun32683
+                    _fun32713_ip = 326;
+                    continue _fun32713
                 }
             case 69:
                 var0 = '[object Float64Array]';
                 if (!(var0 !== var1)) {
-                    _fun32683_ip = 326;
-                    continue _fun32683
+                    _fun32713_ip = 326;
+                    continue _fun32713
                 }
             case 80:
                 var0 = '[object Int8Array]';
                 if (!(var0 !== var1)) {
-                    _fun32683_ip = 326;
-                    continue _fun32683
+                    _fun32713_ip = 326;
+                    continue _fun32713
                 }
             case 91:
                 var0 = '[object Int16Array]';
                 if (!(var0 !== var1)) {
-                    _fun32683_ip = 326;
-                    continue _fun32683
+                    _fun32713_ip = 326;
+                    continue _fun32713
                 }
             case 102:
                 var0 = '[object Int32Array]';
                 if (!(var0 !== var1)) {
-                    _fun32683_ip = 326;
-                    continue _fun32683
+                    _fun32713_ip = 326;
+                    continue _fun32713
                 }
             case 113:
                 var0 = '[object Uint8Array]';
                 if (!(var0 !== var1)) {
-                    _fun32683_ip = 326;
-                    continue _fun32683
+                    _fun32713_ip = 326;
+                    continue _fun32713
                 }
             case 124:
                 var0 = '[object Uint8ClampedArray]';
                 if (!(var0 !== var1)) {
-                    _fun32683_ip = 326;
-                    continue _fun32683
+                    _fun32713_ip = 326;
+                    continue _fun32713
                 }
             case 135:
                 var0 = '[object Uint16Array]';
                 if (!(var0 !== var1)) {
-                    _fun32683_ip = 326;
-                    continue _fun32683
+                    _fun32713_ip = 326;
+                    continue _fun32713
                 }
             case 146:
                 var0 = '[object Uint32Array]';
                 if (!(var0 !== var1)) {
-                    _fun32683_ip = 326;
-                    continue _fun32683
+                    _fun32713_ip = 326;
+                    continue _fun32713
                 }
             case 157:
                 var0 = '[object Map]';
                 if (!(var0 !== var1)) {
-                    _fun32683_ip = 304;
-                    continue _fun32683
+                    _fun32713_ip = 304;
+                    continue _fun32713
                 }
             case 168:
                 var0 = '[object Set]';
                 if (!(var0 !== var1)) {
-                    _fun32683_ip = 304;
-                    continue _fun32683
+                    _fun32713_ip = 304;
+                    continue _fun32713
                 }
             case 179:
                 var0 = '[object Number]';
                 if (!(var0 !== var1)) {
-                    _fun32683_ip = 279;
-                    continue _fun32683
+                    _fun32713_ip = 279;
+                    continue _fun32713
                 }
             case 187:
                 var0 = '[object String]';
                 if (!(var0 !== var1)) {
-                    _fun32683_ip = 279;
-                    continue _fun32683
+                    _fun32713_ip = 279;
+                    continue _fun32713
                 }
             case 195:
                 var0 = '[object RegExp]';
                 if (!(var0 !== var1)) {
-                    _fun32683_ip = 247;
-                    continue _fun32683
+                    _fun32713_ip = 247;
+                    continue _fun32713
                 }
             case 203:
                 var0 = '[object Symbol]';
                 if (!(var0 !== var1)) {
-                    _fun32683_ip = 215;
-                    continue _fun32683
+                    _fun32713_ip = 215;
+                    continue _fun32713
                 }
             case 211:
                 var0 = undefined;

@@ -49,8 +49,8 @@ public /* synthetic */ class GiftEmbed$Resolved$Invalid$$serializer implements h
     @Override // tt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        n2 n2Var = n2.f50033a;
-        p0 p0Var = p0.f50049a;
+        n2 n2Var = n2.f50601a;
+        p0 p0Var = p0.f50617a;
         return new KSerializer[]{n2Var, p0Var, p0Var, p0Var, n2Var, n2Var, p0Var, n2Var, p0Var, p0Var};
     }
 

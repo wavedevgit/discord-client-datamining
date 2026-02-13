@@ -7,7 +7,7 @@ import kotlin.jvm.internal.Intrinsics;
 public final class f implements cv.b, o {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final f f30452a = new f();
+    public static final f f31020a = new f();
 
     private f() {
     }

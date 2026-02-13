@@ -7,20 +7,20 @@ import kotlin.text.Charsets;
 public final class a0 implements y {
 
     /* renamed from: a  reason: collision with root package name */
-    private final l f51875a;
+    private final l f52443a;
 
     public a0(InputStream stream) {
         Intrinsics.checkNotNullParameter(stream, "stream");
-        this.f51875a = new l(stream, Charsets.UTF_8);
+        this.f52443a = new l(stream, Charsets.UTF_8);
     }
 
     @Override // vt.y
     public int a(char[] buffer, int i10, int i11) {
         Intrinsics.checkNotNullParameter(buffer, "buffer");
-        return this.f51875a.d(buffer, i10, i11);
+        return this.f52443a.d(buffer, i10, i11);
     }
 
     public final void b() {
-        this.f51875a.e();
+        this.f52443a.e();
     }
 }

@@ -20,17 +20,20 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 1;
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
-    var8 = var3.View;
+    var3 = var3.View;
+    var _closure1_slot0 = var3;
     var3 = 2;
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
-    var7 = var3.jsx;
-    var3 = {};
-    var3 = var7.bind(var0)(var8, var3);
-    var _closure1_slot0 = var3;
+    var3 = var3.jsx;
+    var _closure1_slot1 = var3;
     var3 = var6.memo;
     var1 = function() {
-        var0 = _closure1_slot0;
+        var3 = _closure1_slot1;
+        var2 = _closure1_slot0;
+        var1 = undefined;
+        var0 = {};
+        var0 = var3.bind(var1)(var2, var0);
         return var0;
     };
     var1 = var3.bind(var6)(var1);

@@ -13,10 +13,10 @@ import java.util.concurrent.ConcurrentHashMap;
 public final class e0 implements w1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private String[] f29668d;
+    private String[] f30236d;
 
     /* renamed from: e  reason: collision with root package name */
-    private Map f29669e;
+    private Map f30237e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements m1 {
@@ -39,7 +39,7 @@ public final class e0 implements w1 {
                     if (list != null) {
                         String[] strArr = new String[list.size()];
                         list.toArray(strArr);
-                        e0Var.f29668d = strArr;
+                        e0Var.f30236d = strArr;
                     }
                 }
             }
@@ -53,7 +53,7 @@ public final class e0 implements w1 {
     }
 
     public void b(Map map) {
-        this.f29669e = map;
+        this.f30237e = map;
     }
 
     public boolean equals(Object obj) {
@@ -61,25 +61,25 @@ public final class e0 implements w1 {
             return true;
         }
         if (obj != null && e0.class == obj.getClass()) {
-            return Arrays.equals(this.f29668d, ((e0) obj).f29668d);
+            return Arrays.equals(this.f30236d, ((e0) obj).f30236d);
         }
         return false;
     }
 
     public int hashCode() {
-        return Arrays.hashCode(this.f29668d);
+        return Arrays.hashCode(this.f30236d);
     }
 
     @Override // io.sentry.w1
     public void serialize(f3 f3Var, ILogger iLogger) {
         f3Var.u();
-        if (this.f29668d != null) {
-            f3Var.e("active_profiles").j(iLogger, this.f29668d);
+        if (this.f30236d != null) {
+            f3Var.e("active_profiles").j(iLogger, this.f30236d);
         }
-        Map map = this.f29669e;
+        Map map = this.f30237e;
         if (map != null) {
             for (String str : map.keySet()) {
-                Object obj = this.f29669e.get(str);
+                Object obj = this.f30237e.get(str);
                 f3Var.e(str);
                 f3Var.j(iLogger, obj);
             }
@@ -88,7 +88,7 @@ public final class e0 implements w1 {
     }
 
     public e0(e0 e0Var) {
-        this.f29668d = e0Var.f29668d;
-        this.f29669e = io.sentry.util.c.b(e0Var.f29669e);
+        this.f30236d = e0Var.f30236d;
+        this.f30237e = io.sentry.util.c.b(e0Var.f30237e);
     }
 }

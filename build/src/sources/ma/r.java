@@ -8,28 +8,28 @@ public abstract class r {
     class a implements x {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ s f36205a;
+        final /* synthetic */ s f36773a;
 
         a(s sVar) {
-            this.f36205a = sVar;
+            this.f36773a = sVar;
         }
 
         @Override // ma.x
         /* renamed from: d */
         public void a(CacheKey cacheKey) {
-            this.f36205a.i(cacheKey);
+            this.f36773a.i(cacheKey);
         }
 
         @Override // ma.x
         /* renamed from: e */
         public void b(CacheKey cacheKey) {
-            this.f36205a.f(cacheKey);
+            this.f36773a.f(cacheKey);
         }
 
         @Override // ma.x
         /* renamed from: f */
         public void c(CacheKey cacheKey) {
-            this.f36205a.d(cacheKey);
+            this.f36773a.d(cacheKey);
         }
     }
 

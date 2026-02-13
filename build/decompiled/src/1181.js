@@ -1,374 +1,205 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = exports;
-    var2 = require;
-    var _closure1_slot0 = var2;
-    var2 = dependencyMap;
-    var _closure1_slot1 = var2;
-    var2 = global;
-    var6 = var2.Object;
-    var5 = var6.defineProperty;
-    var4 = {};
-    var3 = true;
-    var4.value = var3;
-    var3 = '__esModule';
-    var3 = var5.bind(var6)(var1, var3, var4);
-    var2 = var2.WeakMap;
-    var3 = var2.prototype;
-    var3 = Object.create(var3, {
-        constructor: {
-            value: var2
-        }
-    });
-    var10 = var3;
-    var2 = new var10[var2](var9);
-    var2 = var2 instanceof Object ? var2 : var3;
-    var _closure1_slot2 = var2;
-    var0 = function arg0() {
-        _fun12868: for (var _fun12868_ip = 0;;) switch (_fun12868_ip) {
+    var5 = metroImportDefault;
+    var2 = exports;
+    var6 = dependencyMap;
+    var0 = require;
+    var _closure1_slot0 = var0;
+    var _closure1_slot1 = var6;
+    var3 = function() {
+        _fun12864: for (var _fun12864_ip = 0;;) switch (_fun12864_ip) {
             case 0:
-                var4 = arg0;
-                var _closure2_slot0 = var4;
-                var3 = _closure1_slot2;
-                var2 = var3.has;
-                var2 = var2.bind(var3)(var4);
-                if (var2) {
-                    _fun12868_ip = 309;
-                    continue _fun12868
-                }
-            case 32:
-                var5 = _closure1_slot2;
-                var3 = var5.set;
-                var2 = true;
-                var2 = var3.bind(var5)(var4, var2);
-                var3 = _closure1_slot0;
-                var5 = _closure1_slot1;
+                var4 = undefined;
+                var3 = undefined;
+                var2 = _closure1_slot4;
+                var0 = arguments.length;
                 var1 = 0;
-                var6 = var5[var1];
-                var2 = undefined;
-                var9 = var3.bind(var2)(var6);
-                var8 = var9.fillTyped;
-                var7 = 'setUser';
-                var6 = function(arg0) { // Environment: var0
-                    var1 = arg0;
-                    var _closure3_slot0 = var1;
-                    var0 = function(arg0) { // Environment: var0
-                        var3 = arg0;
-                        var2 = _closure1_slot0;
-                        var1 = _closure1_slot1;
-                        var0 = 1;
-                        var1 = var1[var0];
-                        var0 = undefined;
-                        var0 = var2.bind(var0)(var1);
-                        var1 = var0.NATIVE;
-                        var0 = var1.setUser;
-                        var0 = var0.bind(var1)(var3);
-                        var2 = _closure3_slot0;
-                        var1 = var2.call;
-                        var0 = _closure2_slot0;
-                        var0 = var1.bind(var2)(var0, var3);
-                        return var0;
-                    };
-                    return var0;
-                };
-                var6 = var8.bind(var9)(var4, var7, var6);
-                var6 = var5[var1];
-                var9 = var3.bind(var2)(var6);
-                var8 = var9.fillTyped;
-                var7 = 'setTag';
-                var6 = function(arg0) { // Environment: var0
-                    var1 = arg0;
-                    var _closure3_slot0 = var1;
-                    var0 = function(arg0, arg1) { // Environment: var0
-                        var4 = arg0;
-                        var3 = arg1;
-                        var6 = _closure1_slot0;
-                        var7 = _closure1_slot1;
-                        var0 = 1;
-                        var1 = var7[var0];
-                        var5 = undefined;
-                        var1 = var6.bind(var5)(var1);
-                        var2 = var1.NATIVE;
-                        var1 = var2.setTag;
-                        var0 = var7[var0];
-                        var0 = var6.bind(var5)(var0);
-                        var5 = var0.NATIVE;
-                        var0 = var5.primitiveProcessor;
-                        var0 = var0.bind(var5)(var3);
-                        var0 = var1.bind(var2)(var4, var0);
-                        var2 = _closure3_slot0;
-                        var1 = var2.call;
-                        var0 = _closure2_slot0;
-                        var0 = var1.bind(var2)(var0, var4, var3);
-                        return var0;
-                    };
-                    return var0;
-                };
-                var6 = var8.bind(var9)(var4, var7, var6);
-                var6 = var5[var1];
-                var9 = var3.bind(var2)(var6);
-                var8 = var9.fillTyped;
-                var7 = 'setTags';
-                var6 = function(arg0) { // Environment: var0
-                    var1 = arg0;
-                    var _closure3_slot0 = var1;
-                    var0 = function(arg0) { // Environment: var0
-                        var3 = arg0;
-                        var _closure4_slot0 = var3;
-                        var1 = global;
-                        var2 = var1.Object;
-                        var1 = var2.keys;
-                        var2 = var1.bind(var2)(var3);
-                        var1 = var2.forEach;
-                        var0 = function(arg0) { // Environment: var0
-                            var4 = arg0;
-                            var5 = _closure1_slot0;
-                            var6 = _closure1_slot1;
-                            var1 = 1;
-                            var2 = var6[var1];
-                            var0 = undefined;
-                            var2 = var5.bind(var0)(var2);
-                            var3 = var2.NATIVE;
-                            var2 = var3.setTag;
-                            var1 = var6[var1];
-                            var1 = var5.bind(var0)(var1);
-                            var6 = var1.NATIVE;
-                            var5 = var6.primitiveProcessor;
-                            var1 = _closure4_slot0;
-                            var1 = var1[var4];
-                            var1 = var5.bind(var6)(var1);
-                            var1 = var2.bind(var3)(var4, var1);
-                            return var0;
-                        };
-                        var0 = var1.bind(var2)(var0);
-                        var2 = _closure3_slot0;
-                        var1 = var2.call;
-                        var0 = _closure2_slot0;
-                        var0 = var1.bind(var2)(var0, var3);
-                        return var0;
-                    };
-                    return var0;
-                };
-                var6 = var8.bind(var9)(var4, var7, var6);
-                var6 = var5[var1];
-                var9 = var3.bind(var2)(var6);
-                var8 = var9.fillTyped;
-                var7 = 'setExtras';
-                var6 = function(arg0) { // Environment: var0
-                    var1 = arg0;
-                    var _closure3_slot0 = var1;
-                    var0 = function(arg0) { // Environment: var0
-                        var3 = arg0;
-                        var _closure4_slot0 = var3;
-                        var1 = global;
-                        var2 = var1.Object;
-                        var1 = var2.keys;
-                        var2 = var1.bind(var2)(var3);
-                        var1 = var2.forEach;
-                        var0 = function(arg0) { // Environment: var0
-                            var4 = arg0;
-                            var2 = _closure1_slot0;
-                            var1 = _closure1_slot1;
-                            var0 = 1;
-                            var1 = var1[var0];
-                            var0 = undefined;
-                            var1 = var2.bind(var0)(var1);
-                            var3 = var1.NATIVE;
-                            var2 = var3.setExtra;
-                            var1 = _closure4_slot0;
-                            var1 = var1[var4];
-                            var1 = var2.bind(var3)(var4, var1);
-                            return var0;
-                        };
-                        var0 = var1.bind(var2)(var0);
-                        var2 = _closure3_slot0;
-                        var1 = var2.call;
-                        var0 = _closure2_slot0;
-                        var0 = var1.bind(var2)(var0, var3);
-                        return var0;
-                    };
-                    return var0;
-                };
-                var6 = var8.bind(var9)(var4, var7, var6);
-                var6 = var5[var1];
-                var9 = var3.bind(var2)(var6);
-                var8 = var9.fillTyped;
-                var7 = 'setExtra';
-                var6 = function(arg0) { // Environment: var0
-                    var1 = arg0;
-                    var _closure3_slot0 = var1;
-                    var0 = function(arg0, arg1) { // Environment: var0
-                        var4 = arg0;
-                        var3 = arg1;
-                        var2 = _closure1_slot0;
-                        var1 = _closure1_slot1;
-                        var0 = 1;
-                        var1 = var1[var0];
-                        var0 = undefined;
-                        var0 = var2.bind(var0)(var1);
-                        var1 = var0.NATIVE;
-                        var0 = var1.setExtra;
-                        var0 = var0.bind(var1)(var4, var3);
-                        var2 = _closure3_slot0;
-                        var1 = var2.call;
-                        var0 = _closure2_slot0;
-                        var0 = var1.bind(var2)(var0, var4, var3);
-                        return var0;
-                    };
-                    return var0;
-                };
-                var6 = var8.bind(var9)(var4, var7, var6);
-                var6 = var5[var1];
-                var9 = var3.bind(var2)(var6);
-                var8 = var9.fillTyped;
-                var7 = 'addBreadcrumb';
-                var6 = function(arg0) { // Environment: var0
-                    var1 = arg0;
-                    var _closure3_slot0 = var1;
-                    var0 = function(arg0, arg1) { // Environment: var0
-                        _fun12882: for (var _fun12882_ip = 0;;) switch (_fun12882_ip) {
-                            case 0:
-                                var6 = arg0;
-                                var0 = global;
-                                var3 = var0.Object;
-                                var2 = var3.assign;
-                                var4 = var0.Object;
-                                var1 = var4.assign;
-                                var0 = {};
-                                var1 = var1.bind(var4)(var0, var6);
-                                var0 = {};
-                                var4 = var6.level;
-                                if (var4) {
-                                    _fun12882_ip = 77;
-                                    continue _fun12882
-                                }
-                            case 46:
-                                var8 = _closure1_slot0;
-                                var7 = _closure1_slot1;
-                                var5 = 2;
-                                var7 = var7[var5];
-                                var5 = undefined;
-                                var5 = var8.bind(var5)(var7);
-                                var4 = var5.DEFAULT_BREADCRUMB_LEVEL;
-                            case 77:
-                                var0.level = var4;
-                                var7 = var6.data;
-                                var4 = undefined;
-                                var5 = undefined;
-                                if (!var7) {
-                                    _fun12882_ip = 133;
-                                    continue _fun12882
-                                }
-                            case 94:
-                                var8 = _closure1_slot0;
-                                var9 = _closure1_slot1;
-                                var7 = 3;
-                                var7 = var9[var7];
-                                var8 = var8.bind(var4)(var7);
-                                var7 = var8.convertToNormalizedObject;
-                                var6 = var6.data;
-                                var5 = var7.bind(var8)(var6);
-                            case 133:
-                                var0.data = var5;
-                                var6 = var2.bind(var3)(var1, var0);
-                                var5 = _closure3_slot0;
-                                var3 = var5.call;
-                                var2 = _closure2_slot0;
-                                var1 = arg1;
-                                var1 = var3.bind(var5)(var2, var6, var1);
-                                var1 = var2.getLastBreadcrumb;
-                                var3 = var1.bind(var2)();
-                                var2 = _closure1_slot0;
-                                var5 = _closure1_slot1;
-                                if (var3) {
-                                    _fun12882_ip = 232;
-                                    continue _fun12882
-                                }
-                            case 196:
-                                var1 = 4;
-                                var1 = var5[var1];
-                                var1 = var2.bind(var4)(var1);
-                                var7 = var1.logger;
-                                var6 = var7.warn;
-                                var1 = '[ScopeSync] Last created breadcrumb is undefined. Skipping sync to native.';
-                                var1 = var6.bind(var7)(var1);
-                                _fun12882_ip = 261;
-                                continue _fun12882;
-                            case 232:
-                                var1 = 1;
-                                var1 = var5[var1];
-                                var1 = var2.bind(var4)(var1);
-                                var2 = var1.NATIVE;
-                                var1 = var2.addBreadcrumb;
-                                var1 = var1.bind(var2)(var3);
-                            case 261:
-                                var0 = _closure2_slot0;
-                                return var0;
-                        }
-                    };
-                    return var0;
-                };
-                var6 = var8.bind(var9)(var4, var7, var6);
-                var6 = var5[var1];
-                var9 = var3.bind(var2)(var6);
-                var8 = var9.fillTyped;
-                var7 = 'clearBreadcrumbs';
-                var6 = function(arg0) { // Environment: var0
-                    var1 = arg0;
-                    var _closure3_slot0 = var1;
-                    var0 = function() { // Environment: var0
-                        var2 = _closure1_slot0;
-                        var1 = _closure1_slot1;
-                        var0 = 1;
-                        var1 = var1[var0];
-                        var0 = undefined;
-                        var0 = var2.bind(var0)(var1);
-                        var1 = var0.NATIVE;
-                        var0 = var1.clearBreadcrumbs;
-                        var0 = var0.bind(var1)();
-                        var2 = _closure3_slot0;
-                        var1 = var2.call;
-                        var0 = _closure2_slot0;
-                        var0 = var1.bind(var2)(var0);
-                        return var0;
-                    };
-                    return var0;
-                };
-                var6 = var8.bind(var9)(var4, var7, var6);
-                var1 = var5[var1];
-                var3 = var3.bind(var2)(var1);
-                var2 = var3.fillTyped;
-                var1 = 'setContext';
-                var0 = function(arg0) { // Environment: var0
-                    var1 = arg0;
-                    var _closure3_slot0 = var1;
-                    var0 = function(arg0, arg1) { // Environment: var0
-                        var4 = arg0;
-                        var3 = arg1;
-                        var2 = _closure1_slot0;
-                        var1 = _closure1_slot1;
-                        var0 = 1;
-                        var1 = var1[var0];
-                        var0 = undefined;
-                        var0 = var2.bind(var0)(var1);
-                        var1 = var0.NATIVE;
-                        var0 = var1.setContext;
-                        var0 = var0.bind(var1)(var4, var3);
-                        var2 = _closure3_slot0;
-                        var1 = var2.call;
-                        var0 = _closure2_slot0;
-                        var0 = var1.bind(var2)(var0, var4, var3);
-                        return var0;
-                    };
-                    return var0;
-                };
-                var0 = var2.bind(var3)(var4, var1, var0);
-            case 309:
-                var0 = undefined;
+                if (!(var0 > var1)) {
+                    _fun12864_ip = 28;
+                    continue _fun12864
+                }
+            case 20:
+                var0 = arguments[var1];
+                if (!(var4 === var0)) {
+                    _fun12864_ip = 32;
+                    continue _fun12864
+                }
+            case 28:
+                var0 = {};
+                _fun12864_ip = 36;
+                continue _fun12864;
+            case 32:
+                var0 = arguments[var1];
+            case 36:
+                var1 = var2.prototype;
+                var1 = Object.create(var1, {
+                    constructor: {
+                        value: var2
+                    }
+                });
+                var6 = var1;
+                var5 = var0;
+                var0 = new var6[var2](var5, var4);
+                var0 = var0 instanceof Object ? var0 : var1;
                 return var0;
         }
     };
-    var1.enableSyncToNative = var0;
+    var _closure1_slot5 = var3;
+    var0 = global;
+    var8 = var0.Object;
+    var7 = var8.defineProperty;
+    var4 = {};
+    var0 = true;
+    var4.value = var0;
+    var0 = '__esModule';
+    var0 = var7.bind(var8)(var2, var0, var4);
+    var0 = 0;
+    var4 = var6[var0];
     var0 = undefined;
+    var4 = var5.bind(var0)(var4);
+    var _closure1_slot2 = var4;
+    var4 = 1;
+    var4 = var6[var4];
+    var4 = var5.bind(var0)(var4);
+    var _closure1_slot3 = var4;
+    var4 = function() { // Environment: var1
+        var3 = _closure1_slot3;
+        var2 = function() {
+            _fun12866: for (var _fun12866_ip = 0;;) switch (_fun12866_ip) {
+                case 0:
+                    var2 = this;
+                    var0 = undefined;
+                    var4 = undefined;
+                    var1 = arguments.length;
+                    var3 = 0;
+                    if (!(var1 > var3)) {
+                        _fun12866_ip = 24;
+                        continue _fun12866
+                    }
+                case 16:
+                    var1 = arguments[var3];
+                    if (!(var0 === var1)) {
+                        _fun12866_ip = 28;
+                        continue _fun12866
+                    }
+                case 24:
+                    var1 = {};
+                    _fun12866_ip = 32;
+                    continue _fun12866;
+                case 28:
+                    var1 = arguments[var3];
+                case 32:
+                    var5 = _closure1_slot2;
+                    var4 = _closure2_slot0;
+                    var4 = var5.bind(var0)(var2, var4);
+                    var4 = _closure1_slot0;
+                    var5 = _closure1_slot1;
+                    var3 = 2;
+                    var3 = var5[var3];
+                    var4 = var4.bind(var0)(var3);
+                    var3 = var4.makePromiseBuffer;
+                    var1 = var1.bufferSize;
+                    if (var1) {
+                        _fun12866_ip = 90;
+                        continue _fun12866
+                    }
+                case 87:
+                    var1 = 30;
+                case 90:
+                    var1 = var3.bind(var4)(var1);
+                    var2._buffer = var1;
+                    return var0;
+            }
+        };
+        var _closure2_slot0 = var2;
+        var0 = {};
+        var1 = 'send';
+        var0.key = var1;
+        var1 = function arg0() {
+            var1 = arg0;
+            var _closure3_slot0 = var1;
+            var1 = this;
+            var3 = var1._buffer;
+            var2 = var3.add;
+            var1 = function() { // Environment: var0
+                var2 = _closure1_slot0;
+                var1 = _closure1_slot1;
+                var0 = 3;
+                var1 = var1[var0];
+                var0 = undefined;
+                var0 = var2.bind(var0)(var1);
+                var2 = var0.NATIVE;
+                var1 = var2.sendEnvelope;
+                var0 = _closure3_slot0;
+                var0 = var1.bind(var2)(var0);
+                return var0;
+            };
+            var2 = var2.bind(var3)(var1);
+            var1 = var2.then;
+            var0 = function() { // Environment: var0
+                var0 = {};
+                return var0;
+            };
+            var0 = var1.bind(var2)(var0);
+            return var0;
+        };
+        var0.value = var1;
+        var1 = new Array(2);
+        var1[0] = var0;
+        var0 = {};
+        var5 = 'flush';
+        var0.key = var5;
+        var4 = function arg0() {
+            var0 = this;
+            var2 = var0._buffer;
+            var1 = var2.drain;
+            var0 = arg0;
+            var0 = var1.bind(var2)(var0);
+            return var0;
+        };
+        var0.value = var4;
+        var1[1] = var0;
+        var0 = undefined;
+        var0 = var3.bind(var0)(var2, var1);
+        return var0;
+    };
+    var4 = var4.bind(var0)();
+    var _closure1_slot4 = var4;
+    var5 = 30;
+    var2.DEFAULT_BUFFER_SIZE = var5;
+    var2.NativeTransport = var4;
+    var2.makeNativeTransport = var3;
+    var1 = function arg0() {
+        _fun12871: for (var _fun12871_ip = 0;;) switch (_fun12871_ip) {
+            case 0:
+                var0 = arg0;
+                var1 = var0.enableNative;
+                var0 = null;
+                if (!var1) {
+                    _fun12871_ip = 64;
+                    continue _fun12871
+                }
+            case 14:
+                var5 = _closure1_slot0;
+                var4 = _closure1_slot1;
+                var2 = 3;
+                var4 = var4[var2];
+                var2 = undefined;
+                var2 = var5.bind(var2)(var4);
+                var4 = var2.NATIVE;
+                var2 = var4.isNativeAvailable;
+                var2 = var2.bind(var4)();
+                var0 = null;
+                if (!var2) {
+                    _fun12871_ip = 64;
+                    continue _fun12871
+                }
+            case 60:
+                var0 = _closure1_slot5;
+            case 64:
+                return var0;
+        }
+    };
+    var2.makeNativeTransportFactory = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1153, 998, 1012, 1011, 1131]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 818, 999]);

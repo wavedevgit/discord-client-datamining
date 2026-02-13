@@ -24,123 +24,125 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/tokens/native/SemanticColorContext.native.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun27429: for (var _fun27429_ip = 0;;) switch (_fun27429_ip) {
+        _fun27456: for (var _fun27456_ip = 0;;) switch (_fun27456_ip) {
             case 0:
                 var0 = arg0;
-                var2 = _closure1_slot0;
-                var4 = _closure1_slot2;
+                var3 = _closure1_slot0;
+                var5 = _closure1_slot2;
                 var1 = 3;
-                var1 = var4[var1];
-                var13 = undefined;
-                var3 = var2.bind(var13)(var1);
-                var1 = var3.getGradientThemeFromFlags;
-                var8 = var1.bind(var3)(var0);
-                var7 = var0.contrast;
-                var3 = var0.saturation;
-                var5 = var0.primaryColor;
-                var1 = 4;
-                var1 = var4[var1];
-                var4 = var2.bind(var13)(var1);
-                var2 = var4.getGradientThemeMetadata;
-                var1 = var0.gradient;
-                var1 = var2.bind(var4)(var8, var1);
-                var4 = null;
-                if (!(var4 != var5)) {
-                    _fun27429_ip = 322;
-                    continue _fun27429
+                var1 = var5[var1];
+                var14 = undefined;
+                var2 = var3.bind(var14)(var1);
+                var1 = var2.getGradientThemeFromFlags;
+                var9 = var1.bind(var2)(var0);
+                var8 = var0.contrast;
+                var4 = var0.saturation;
+                var6 = var0.primaryColor;
+                var1 = var0.enabledExperiments;
+                var2 = 4;
+                var2 = var5[var2];
+                var5 = var3.bind(var14)(var2);
+                var3 = var5.getGradientThemeMetadata;
+                var2 = var0.gradient;
+                var2 = var3.bind(var5)(var9, var2);
+                var5 = null;
+                if (!(var5 != var6)) {
+                    _fun27456_ip = 328;
+                    continue _fun27456
                 }
-            case 96:
-                var12 = var0.theme;
-                var2 = var0.primaryColor;
-                var11 = var0.secondaryColor;
-                var8 = var4 == var2;
+            case 102:
+                var13 = var0.theme;
+                var3 = var0.primaryColor;
+                var12 = var0.secondaryColor;
+                var9 = var5 == var3;
                 var0 = null;
-                if (var8) {
-                    _fun27429_ip = 319;
-                    continue _fun27429
+                if (var9) {
+                    _fun27456_ip = 325;
+                    continue _fun27456
                 }
-            case 126:
-                var10 = _closure1_slot0;
-                var14 = _closure1_slot2;
-                var8 = 0;
-                var9 = var14[var8];
-                var15 = var10.bind(var13)(var9);
-                var9 = var15.int2hex;
-                var9 = var9.bind(var15)(var2);
-                var8 = var14[var8];
-                var10 = var10.bind(var13)(var8);
-                var8 = var10.int2hex;
-                if (!(var4 != var11)) {
-                    _fun27429_ip = 178;
-                    continue _fun27429
-                }
-            case 175:
-                var2 = var11;
-            case 178:
-                var8 = var8.bind(var10)(var2);
-                var10 = _closure1_slot1;
-                var14 = _closure1_slot2;
-                var2 = 1;
-                var2 = var14[var2];
-                var2 = var10.bind(var13)(var2);
-                var11 = var2.bind(var13)(var9);
-                var10 = var11.mix;
-                var2 = 0.5;
-                var10 = var10.bind(var11)(var8, var2);
-                var2 = var10.hex;
-                var10 = var2.bind(var10)();
-                var2 = {};
+            case 132:
                 var11 = _closure1_slot0;
-                var6 = 2;
-                var6 = var14[var6];
-                var11 = var11.bind(var13)(var6);
-                var6 = var11.isThemeLight;
-                var11 = var6.bind(var11)(var12);
-                var6 = 'dark';
-                if (!var11) {
-                    _fun27429_ip = 280;
-                    continue _fun27429
+                var15 = _closure1_slot2;
+                var9 = 0;
+                var10 = var15[var9];
+                var16 = var11.bind(var14)(var10);
+                var10 = var16.int2hex;
+                var10 = var10.bind(var16)(var3);
+                var9 = var15[var9];
+                var11 = var11.bind(var14)(var9);
+                var9 = var11.int2hex;
+                if (!(var5 != var12)) {
+                    _fun27456_ip = 184;
+                    continue _fun27456
                 }
-            case 276:
-                var6 = 'light';
-            case 280:
-                var2.theme = var6;
-                var6 = {};
-                var6['gradient.start'] = var9;
-                var6['gradient.mid'] = var10;
-                var6['gradient.end'] = var8;
-                var6['gradient.primary'] = var9;
-                var6['gradient.secondary'] = var8;
-                var2.colors = var6;
-                var0 = var2;
-            case 319:
-                var1 = var0;
-            case 322:
+            case 181:
+                var3 = var12;
+            case 184:
+                var9 = var9.bind(var11)(var3);
+                var11 = _closure1_slot1;
+                var15 = _closure1_slot2;
+                var3 = 1;
+                var3 = var15[var3];
+                var3 = var11.bind(var14)(var3);
+                var12 = var3.bind(var14)(var10);
+                var11 = var12.mix;
+                var3 = 0.5;
+                var11 = var11.bind(var12)(var9, var3);
+                var3 = var11.hex;
+                var11 = var3.bind(var11)();
+                var3 = {};
+                var12 = _closure1_slot0;
+                var7 = 2;
+                var7 = var15[var7];
+                var12 = var12.bind(var14)(var7);
+                var7 = var12.isThemeLight;
+                var12 = var7.bind(var12)(var13);
+                var7 = 'dark';
+                if (!var12) {
+                    _fun27456_ip = 286;
+                    continue _fun27456
+                }
+            case 282:
+                var7 = 'light';
+            case 286:
+                var3.theme = var7;
+                var7 = {};
+                var7['gradient.start'] = var10;
+                var7['gradient.mid'] = var11;
+                var7['gradient.end'] = var9;
+                var7['gradient.primary'] = var10;
+                var7['gradient.secondary'] = var9;
+                var3.colors = var7;
+                var0 = var3;
+            case 325:
+                var2 = var0;
+            case 328:
                 var0 = {};
-                var8 = var4 != var5;
-                var2 = 1;
-                var6 = var2;
-                if (var8) {
-                    _fun27429_ip = 340;
-                    continue _fun27429
+                var9 = var5 != var6;
+                var3 = 1;
+                var7 = var3;
+                if (var9) {
+                    _fun27456_ip = 346;
+                    continue _fun27456
                 }
-            case 337:
-                var6 = var7;
-            case 340:
-                var0.contrast = var6;
-                var4 = var4 != var5;
-                if (var4) {
-                    _fun27429_ip = 355;
-                    continue _fun27429
+            case 343:
+                var7 = var8;
+            case 346:
+                var0.contrast = var7;
+                var5 = var5 != var6;
+                if (var5) {
+                    _fun27456_ip = 361;
+                    continue _fun27456
                 }
-            case 352:
-                var2 = var3;
-            case 355:
-                var0.saturation = var2;
-                var0.gradient = var1;
+            case 358:
+                var3 = var4;
+            case 361:
+                var0.saturation = var3;
+                var0.gradient = var2;
+                var0.enabledExperiments = var1;
                 return var0;
         }
     };
     var2.getSemanticColorContextFromThemeContext = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [668, 669, 3155, 3160, 3197, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [668, 669, 3158, 3163, 3200, 2]);

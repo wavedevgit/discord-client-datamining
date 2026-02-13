@@ -10,13 +10,13 @@ import mv.c;
 public final class d implements cv.b, c {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final d f36669a = new d();
+    public static final d f37237a = new d();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     static final class a extends Lambda implements Function1 {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final a f36670d = new a();
+        public static final a f37238d = new a();
 
         a() {
             super(1);
@@ -39,6 +39,6 @@ public final class d implements cv.b, c {
 
     @Override // cv.b
     public Object f(Object obj, Object obj2) {
-        return a(obj, a.f36670d);
+        return a(obj, a.f37238d);
     }
 }

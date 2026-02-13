@@ -42,8 +42,8 @@ public /* synthetic */ class CustomEmojiContentNode$$serializer implements h0 {
     @Override // tt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        n2 n2Var = n2.f50033a;
-        return new KSerializer[]{z0.f50107a, n2Var, n2Var, n2Var, tt.h.f49997a};
+        n2 n2Var = n2.f50601a;
+        return new KSerializer[]{z0.f50675a, n2Var, n2Var, n2Var, tt.h.f50565a};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy

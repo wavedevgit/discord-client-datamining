@@ -5,7 +5,7 @@ import bj.c;
 final class vb implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final vb f39746a = new vb();
+    static final vb f40314a = new vb();
 
     static {
         c.b a10 = bj.c.a("x");

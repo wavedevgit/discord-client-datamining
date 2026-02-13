@@ -49,8 +49,8 @@ public /* synthetic */ class SectionComponent$$serializer implements h0 {
     public final KSerializer[] childSerializers() {
         Lazy[] lazyArr;
         lazyArr = SectionComponent.$childSerializers;
-        n2 n2Var = n2.f50033a;
-        return new KSerializer[]{p0.f50049a, n2Var, rt.a.u(n2Var), lazyArr[3].getValue(), SectionAccessory.Serializer.INSTANCE};
+        n2 n2Var = n2.f50601a;
+        return new KSerializer[]{p0.f50617a, n2Var, rt.a.u(n2Var), lazyArr[3].getValue(), SectionAccessory.Serializer.INSTANCE};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -72,7 +72,7 @@ public /* synthetic */ class SectionComponent$$serializer implements h0 {
             String m10 = b10.m(serialDescriptor, 1);
             list = (List) b10.y(serialDescriptor, 3, (DeserializationStrategy) lazyArr[3].getValue(), null);
             sectionAccessory = (SectionAccessory) b10.y(serialDescriptor, 4, SectionAccessory.Serializer.INSTANCE, null);
-            str2 = (String) b10.n(serialDescriptor, 2, n2.f50033a, null);
+            str2 = (String) b10.n(serialDescriptor, 2, n2.f50601a, null);
             i11 = 31;
             str = m10;
         } else {
@@ -94,7 +94,7 @@ public /* synthetic */ class SectionComponent$$serializer implements h0 {
                     str3 = b10.m(serialDescriptor, 1);
                     i12 |= 2;
                 } else if (o10 == 2) {
-                    str4 = (String) b10.n(serialDescriptor, 2, n2.f50033a, str4);
+                    str4 = (String) b10.n(serialDescriptor, 2, n2.f50601a, str4);
                     i12 |= 4;
                 } else if (o10 == 3) {
                     list2 = (List) b10.y(serialDescriptor, 3, (DeserializationStrategy) lazyArr[3].getValue(), list2);

@@ -8,23 +8,23 @@ import java.util.Iterator;
 public class c extends p {
 
     /* renamed from: k  reason: collision with root package name */
-    ArrayList f35423k;
+    ArrayList f35991k;
 
     /* renamed from: l  reason: collision with root package name */
-    private int f35424l;
+    private int f35992l;
 
     public c(ConstraintWidget constraintWidget, int i10) {
         super(constraintWidget);
-        this.f35423k = new ArrayList();
-        this.f35491f = i10;
+        this.f35991k = new ArrayList();
+        this.f36059f = i10;
         q();
     }
 
     private void q() {
         ConstraintWidget constraintWidget;
         int S;
-        ConstraintWidget constraintWidget2 = this.f35487b;
-        ConstraintWidget L = constraintWidget2.L(this.f35491f);
+        ConstraintWidget constraintWidget2 = this.f36055b;
+        ConstraintWidget L = constraintWidget2.L(this.f36059f);
         while (true) {
             ConstraintWidget constraintWidget3 = L;
             constraintWidget = constraintWidget2;
@@ -32,52 +32,52 @@ public class c extends p {
             if (constraintWidget2 == null) {
                 break;
             }
-            L = constraintWidget2.L(this.f35491f);
+            L = constraintWidget2.L(this.f36059f);
         }
-        this.f35487b = constraintWidget;
-        this.f35423k.add(constraintWidget.N(this.f35491f));
-        ConstraintWidget J = constraintWidget.J(this.f35491f);
+        this.f36055b = constraintWidget;
+        this.f35991k.add(constraintWidget.N(this.f36059f));
+        ConstraintWidget J = constraintWidget.J(this.f36059f);
         while (J != null) {
-            this.f35423k.add(J.N(this.f35491f));
-            J = J.J(this.f35491f);
+            this.f35991k.add(J.N(this.f36059f));
+            J = J.J(this.f36059f);
         }
-        Iterator it = this.f35423k.iterator();
+        Iterator it = this.f35991k.iterator();
         while (it.hasNext()) {
             p pVar = (p) it.next();
-            int i10 = this.f35491f;
+            int i10 = this.f36059f;
             if (i10 == 0) {
-                pVar.f35487b.f2399c = this;
+                pVar.f36055b.f2399c = this;
             } else if (i10 == 1) {
-                pVar.f35487b.f2401d = this;
+                pVar.f36055b.f2401d = this;
             }
         }
-        if (this.f35491f == 0 && ((ConstraintWidgetContainer) this.f35487b.K()).R1() && this.f35423k.size() > 1) {
-            ArrayList arrayList = this.f35423k;
-            this.f35487b = ((p) arrayList.get(arrayList.size() - 1)).f35487b;
+        if (this.f36059f == 0 && ((ConstraintWidgetContainer) this.f36055b.K()).R1() && this.f35991k.size() > 1) {
+            ArrayList arrayList = this.f35991k;
+            this.f36055b = ((p) arrayList.get(arrayList.size() - 1)).f36055b;
         }
-        if (this.f35491f == 0) {
-            S = this.f35487b.z();
+        if (this.f36059f == 0) {
+            S = this.f36055b.z();
         } else {
-            S = this.f35487b.S();
+            S = this.f36055b.S();
         }
-        this.f35424l = S;
+        this.f35992l = S;
     }
 
     private ConstraintWidget r() {
-        for (int i10 = 0; i10 < this.f35423k.size(); i10++) {
-            p pVar = (p) this.f35423k.get(i10);
-            if (pVar.f35487b.V() != 8) {
-                return pVar.f35487b;
+        for (int i10 = 0; i10 < this.f35991k.size(); i10++) {
+            p pVar = (p) this.f35991k.get(i10);
+            if (pVar.f36055b.V() != 8) {
+                return pVar.f36055b;
             }
         }
         return null;
     }
 
     private ConstraintWidget s() {
-        for (int size = this.f35423k.size() - 1; size >= 0; size--) {
-            p pVar = (p) this.f35423k.get(size);
-            if (pVar.f35487b.V() != 8) {
-                return pVar.f35487b;
+        for (int size = this.f35991k.size() - 1; size >= 0; size--) {
+            p pVar = (p) this.f35991k.get(size);
+            if (pVar.f36055b.V() != 8) {
+                return pVar.f36055b;
             }
         }
         return null;
@@ -87,7 +87,7 @@ public class c extends p {
         r1 = r1 - r9;
      */
     /* JADX WARN: Code restructure failed: missing block: B:58:0x00d4, code lost:
-        if (r3.f35443j != false) goto L69;
+        if (r3.f36011j != false) goto L69;
      */
     @Override // l1.p, l1.d
     /*
@@ -105,17 +105,17 @@ public class c extends p {
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // l1.p
     public void d() {
-        Iterator it = this.f35423k.iterator();
+        Iterator it = this.f35991k.iterator();
         while (it.hasNext()) {
             ((p) it.next()).d();
         }
-        int size = this.f35423k.size();
+        int size = this.f35991k.size();
         if (size < 1) {
             return;
         }
-        ConstraintWidget constraintWidget = ((p) this.f35423k.get(0)).f35487b;
-        ConstraintWidget constraintWidget2 = ((p) this.f35423k.get(size - 1)).f35487b;
-        if (this.f35491f == 0) {
+        ConstraintWidget constraintWidget = ((p) this.f35991k.get(0)).f36055b;
+        ConstraintWidget constraintWidget2 = ((p) this.f35991k.get(size - 1)).f36055b;
+        if (this.f36059f == 0) {
             androidx.constraintlayout.core.widgets.d dVar = constraintWidget.O;
             androidx.constraintlayout.core.widgets.d dVar2 = constraintWidget2.Q;
             f i10 = i(dVar, 0);
@@ -125,7 +125,7 @@ public class c extends p {
                 f10 = r10.O.f();
             }
             if (i10 != null) {
-                b(this.f35493h, i10, f10);
+                b(this.f36061h, i10, f10);
             }
             f i11 = i(dVar2, 0);
             int f11 = dVar2.f();
@@ -134,7 +134,7 @@ public class c extends p {
                 f11 = s10.Q.f();
             }
             if (i11 != null) {
-                b(this.f35494i, i11, -f11);
+                b(this.f36062i, i11, -f11);
             }
         } else {
             androidx.constraintlayout.core.widgets.d dVar3 = constraintWidget.P;
@@ -146,7 +146,7 @@ public class c extends p {
                 f12 = r11.P.f();
             }
             if (i12 != null) {
-                b(this.f35493h, i12, f12);
+                b(this.f36061h, i12, f12);
             }
             f i13 = i(dVar4, 1);
             int f13 = dVar4.f();
@@ -155,25 +155,25 @@ public class c extends p {
                 f13 = s11.R.f();
             }
             if (i13 != null) {
-                b(this.f35494i, i13, -f13);
+                b(this.f36062i, i13, -f13);
             }
         }
-        this.f35493h.f35434a = this;
-        this.f35494i.f35434a = this;
+        this.f36061h.f36002a = this;
+        this.f36062i.f36002a = this;
     }
 
     @Override // l1.p
     public void e() {
-        for (int i10 = 0; i10 < this.f35423k.size(); i10++) {
-            ((p) this.f35423k.get(i10)).e();
+        for (int i10 = 0; i10 < this.f35991k.size(); i10++) {
+            ((p) this.f35991k.get(i10)).e();
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // l1.p
     public void f() {
-        this.f35488c = null;
-        Iterator it = this.f35423k.iterator();
+        this.f36056c = null;
+        Iterator it = this.f35991k.iterator();
         while (it.hasNext()) {
             ((p) it.next()).f();
         }
@@ -181,11 +181,11 @@ public class c extends p {
 
     @Override // l1.p
     public long j() {
-        int size = this.f35423k.size();
+        int size = this.f35991k.size();
         long j10 = 0;
         for (int i10 = 0; i10 < size; i10++) {
-            p pVar = (p) this.f35423k.get(i10);
-            j10 = j10 + pVar.f35493h.f35439f + pVar.j() + pVar.f35494i.f35439f;
+            p pVar = (p) this.f35991k.get(i10);
+            j10 = j10 + pVar.f36061h.f36007f + pVar.j() + pVar.f36062i.f36007f;
         }
         return j10;
     }
@@ -193,9 +193,9 @@ public class c extends p {
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // l1.p
     public boolean m() {
-        int size = this.f35423k.size();
+        int size = this.f35991k.size();
         for (int i10 = 0; i10 < size; i10++) {
-            if (!((p) this.f35423k.get(i10)).m()) {
+            if (!((p) this.f35991k.get(i10)).m()) {
                 return false;
             }
         }
@@ -205,13 +205,13 @@ public class c extends p {
     public String toString() {
         String str;
         StringBuilder sb2 = new StringBuilder("ChainRun ");
-        if (this.f35491f == 0) {
+        if (this.f36059f == 0) {
             str = "horizontal : ";
         } else {
             str = "vertical : ";
         }
         sb2.append(str);
-        Iterator it = this.f35423k.iterator();
+        Iterator it = this.f35991k.iterator();
         while (it.hasNext()) {
             sb2.append("<");
             sb2.append((p) it.next());

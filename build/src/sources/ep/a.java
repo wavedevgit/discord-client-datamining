@@ -36,39 +36,39 @@ public abstract class a {
         static {
             int[] iArr = new int[d0.d.values().length];
             try {
-                iArr[d0.d.f49038d.ordinal()] = 1;
+                iArr[d0.d.f49606d.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                iArr[d0.d.f49039e.ordinal()] = 2;
+                iArr[d0.d.f49607e.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                iArr[d0.d.f49040i.ordinal()] = 3;
+                iArr[d0.d.f49608i.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
             f23050a = iArr;
             int[] iArr2 = new int[d0.a.values().length];
             try {
-                iArr2[d0.a.f49023d.ordinal()] = 1;
+                iArr2[d0.a.f49591d.ordinal()] = 1;
             } catch (NoSuchFieldError unused4) {
             }
             try {
-                iArr2[d0.a.f49024e.ordinal()] = 2;
+                iArr2[d0.a.f49592e.ordinal()] = 2;
             } catch (NoSuchFieldError unused5) {
             }
             try {
-                iArr2[d0.a.f49025i.ordinal()] = 3;
+                iArr2[d0.a.f49593i.ordinal()] = 3;
             } catch (NoSuchFieldError unused6) {
             }
             f23051b = iArr2;
             int[] iArr3 = new int[a1.a.values().length];
             try {
-                iArr3[a1.a.f52966e.ordinal()] = 1;
+                iArr3[a1.a.f53534e.ordinal()] = 1;
             } catch (NoSuchFieldError unused7) {
             }
             try {
-                iArr3[a1.a.f52967i.ordinal()] = 2;
+                iArr3[a1.a.f53535i.ordinal()] = 2;
             } catch (NoSuchFieldError unused8) {
             }
             f23052c = iArr3;
@@ -102,29 +102,29 @@ public abstract class a {
         if (i10 != 1) {
             if (i10 != 2) {
                 if (i10 == 3) {
-                    dVar = e.d.f55751i;
+                    dVar = e.d.f56319i;
                 } else {
                     throw new as.p();
                 }
             } else {
-                dVar = e.d.f55750e;
+                dVar = e.d.f56318e;
             }
         } else {
-            dVar = e.d.f55749d;
+            dVar = e.d.f56317d;
         }
         int i11 = C0311a.f23051b[d0Var.g2().ordinal()];
         if (i11 != 1) {
             if (i11 != 2) {
                 if (i11 == 3) {
-                    aVar = e.a.f55744i;
+                    aVar = e.a.f56312i;
                 } else {
                     throw new as.p();
                 }
             } else {
-                aVar = e.a.f55742d;
+                aVar = e.a.f56310d;
             }
         } else {
-            aVar = e.a.f55743e;
+            aVar = e.a.f56311e;
         }
         ArrayList arrayList = new ArrayList();
         for (to.c0 c0Var : d0Var.m2()) {
@@ -147,12 +147,12 @@ public abstract class a {
             int i10 = C0311a.f23052c[a1Var.b().ordinal()];
             if (i10 != 1) {
                 if (i10 == 2) {
-                    aVar = f.a.f55756d;
+                    aVar = f.a.f56324d;
                 } else {
                     throw new as.p();
                 }
             } else {
-                aVar = f.a.f55757e;
+                aVar = f.a.f56325e;
             }
             return new yq.f(aVar, new File(a1Var.a()));
         }

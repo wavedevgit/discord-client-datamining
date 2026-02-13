@@ -6,52 +6,52 @@ import xh.e;
 final class m extends e.a {
 
     /* renamed from: a  reason: collision with root package name */
-    private Integer f54784a;
+    private Integer f55352a;
 
     /* renamed from: b  reason: collision with root package name */
-    private Integer f54785b;
+    private Integer f55353b;
 
     /* renamed from: c  reason: collision with root package name */
-    private Integer f54786c;
+    private Integer f55354c;
 
     /* renamed from: d  reason: collision with root package name */
-    private Date f54787d;
+    private Date f55355d;
 
     /* renamed from: e  reason: collision with root package name */
-    private String f54788e;
+    private String f55356e;
 
     @Override // xh.e.a
     public final e a() {
-        return new o(this.f54784a, this.f54785b, this.f54786c, this.f54787d, this.f54788e, null);
+        return new o(this.f55352a, this.f55353b, this.f55354c, this.f55355d, this.f55356e, null);
     }
 
     @Override // xh.e.a
     public final e.a b(Integer num) {
-        this.f54785b = num;
+        this.f55353b = num;
         return this;
     }
 
     @Override // xh.e.a
     public final e.a c(Integer num) {
-        this.f54786c = num;
+        this.f55354c = num;
         return this;
     }
 
     @Override // xh.e.a
     public final e.a d(String str) {
-        this.f54788e = str;
+        this.f55356e = str;
         return this;
     }
 
     @Override // xh.e.a
     public final e.a e(Date date) {
-        this.f54787d = date;
+        this.f55355d = date;
         return this;
     }
 
     @Override // xh.e.a
     public final e.a f(Integer num) {
-        this.f54784a = num;
+        this.f55352a = num;
         return this;
     }
 }

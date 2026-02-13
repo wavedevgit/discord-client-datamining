@@ -8,24 +8,24 @@ import ff.d;
 public abstract class b extends d {
 
     /* renamed from: k  reason: collision with root package name */
-    private static final a.g f54609k;
+    private static final a.g f55177k;
 
     /* renamed from: l  reason: collision with root package name */
-    private static final a.AbstractC0316a f54610l;
+    private static final a.AbstractC0316a f55178l;
 
     /* renamed from: m  reason: collision with root package name */
-    private static final ff.a f54611m;
+    private static final ff.a f55179m;
 
     static {
         a.g gVar = new a.g();
-        f54609k = gVar;
+        f55177k = gVar;
         c cVar = new c();
-        f54610l = cVar;
-        f54611m = new ff.a("SmsRetriever.API", cVar, gVar);
+        f55178l = cVar;
+        f55179m = new ff.a("SmsRetriever.API", cVar, gVar);
     }
 
     public b(Context context) {
-        super(context, f54611m, a.d.f23724g, d.a.f23736c);
+        super(context, f55179m, a.d.f23724g, d.a.f23736c);
     }
 
     public abstract Task C();

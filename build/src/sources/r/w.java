@@ -11,27 +11,27 @@ import r.g;
 public class w implements g.a {
 
     /* renamed from: a  reason: collision with root package name */
-    final CameraCaptureSession f45867a;
+    final CameraCaptureSession f46435a;
 
     /* renamed from: b  reason: collision with root package name */
-    final Object f45868b;
+    final Object f46436b;
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static class a {
 
         /* renamed from: a  reason: collision with root package name */
-        final Handler f45869a;
+        final Handler f46437a;
 
         a(Handler handler) {
-            this.f45869a = handler;
+            this.f46437a = handler;
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public w(CameraCaptureSession cameraCaptureSession, Object obj) {
-        this.f45867a = (CameraCaptureSession) b2.e.g(cameraCaptureSession);
-        this.f45868b = obj;
+        this.f46435a = (CameraCaptureSession) b2.e.g(cameraCaptureSession);
+        this.f46436b = obj;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -41,16 +41,16 @@ public class w implements g.a {
 
     @Override // r.g.a
     public CameraCaptureSession a() {
-        return this.f45867a;
+        return this.f46435a;
     }
 
     @Override // r.g.a
     public int b(List list, Executor executor, CameraCaptureSession.CaptureCallback captureCallback) {
-        return this.f45867a.captureBurst(list, new g.b(executor, captureCallback), ((a) this.f45868b).f45869a);
+        return this.f46435a.captureBurst(list, new g.b(executor, captureCallback), ((a) this.f46436b).f46437a);
     }
 
     @Override // r.g.a
     public int c(CaptureRequest captureRequest, Executor executor, CameraCaptureSession.CaptureCallback captureCallback) {
-        return this.f45867a.setRepeatingRequest(captureRequest, new g.b(executor, captureCallback), ((a) this.f45868b).f45869a);
+        return this.f46435a.setRepeatingRequest(captureRequest, new g.b(executor, captureCallback), ((a) this.f46436b).f46437a);
     }
 }

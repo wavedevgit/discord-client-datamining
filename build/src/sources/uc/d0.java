@@ -5,27 +5,27 @@ import com.facebook.react.views.text.internal.span.SetSpanOperation;
 public final class d0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final byte[] f50638a;
+    private final byte[] f51206a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final int f50639b;
+    private final int f51207b;
 
     /* renamed from: c  reason: collision with root package name */
-    private int f50640c;
+    private int f51208c;
 
     /* renamed from: d  reason: collision with root package name */
-    private int f50641d;
+    private int f51209d;
 
     public d0(byte[] bArr) {
-        this.f50638a = bArr;
-        this.f50639b = bArr.length;
+        this.f51206a = bArr;
+        this.f51207b = bArr.length;
     }
 
     private void a() {
         boolean z10;
         int i10;
-        int i11 = this.f50640c;
-        if (i11 >= 0 && (i11 < (i10 = this.f50639b) || (i11 == i10 && this.f50641d == 0))) {
+        int i11 = this.f51208c;
+        if (i11 >= 0 && (i11 < (i10 = this.f51207b) || (i11 == i10 && this.f51209d == 0))) {
             z10 = true;
         } else {
             z10 = false;
@@ -34,12 +34,12 @@ public final class d0 {
     }
 
     public int b() {
-        return (this.f50640c * 8) + this.f50641d;
+        return (this.f51208c * 8) + this.f51209d;
     }
 
     public boolean c() {
         boolean z10;
-        if ((((this.f50638a[this.f50640c] & 255) >> this.f50641d) & 1) == 1) {
+        if ((((this.f51206a[this.f51208c] & 255) >> this.f51209d) & 1) == 1) {
             z10 = true;
         } else {
             z10 = false;
@@ -49,12 +49,12 @@ public final class d0 {
     }
 
     public int d(int i10) {
-        int i11 = this.f50640c;
-        int min = Math.min(i10, 8 - this.f50641d);
+        int i11 = this.f51208c;
+        int min = Math.min(i10, 8 - this.f51209d);
         int i12 = i11 + 1;
-        int i13 = ((this.f50638a[i11] & 255) >> this.f50641d) & (SetSpanOperation.SPAN_MAX_PRIORITY >> (8 - min));
+        int i13 = ((this.f51206a[i11] & 255) >> this.f51209d) & (SetSpanOperation.SPAN_MAX_PRIORITY >> (8 - min));
         while (min < i10) {
-            i13 |= (this.f50638a[i12] & 255) << min;
+            i13 |= (this.f51206a[i12] & 255) << min;
             min += 8;
             i12++;
         }
@@ -65,13 +65,13 @@ public final class d0 {
 
     public void e(int i10) {
         int i11 = i10 / 8;
-        int i12 = this.f50640c + i11;
-        this.f50640c = i12;
-        int i13 = this.f50641d + (i10 - (i11 * 8));
-        this.f50641d = i13;
+        int i12 = this.f51208c + i11;
+        this.f51208c = i12;
+        int i13 = this.f51209d + (i10 - (i11 * 8));
+        this.f51209d = i13;
         if (i13 > 7) {
-            this.f50640c = i12 + 1;
-            this.f50641d = i13 - 8;
+            this.f51208c = i12 + 1;
+            this.f51209d = i13 - 8;
         }
         a();
     }

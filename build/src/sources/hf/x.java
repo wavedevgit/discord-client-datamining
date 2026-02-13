@@ -6,32 +6,32 @@ import ff.a;
 public class x implements a.d {
 
     /* renamed from: e  reason: collision with root package name */
-    public static final x f27334e = a().a();
+    public static final x f27902e = a().a();
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f27335d;
+    private final String f27903d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private String f27336a;
+        private String f27904a;
 
         /* synthetic */ a(z zVar) {
         }
 
         public x a() {
-            return new x(this.f27336a, null);
+            return new x(this.f27904a, null);
         }
 
         public a b(String str) {
-            this.f27336a = str;
+            this.f27904a = str;
             return this;
         }
     }
 
     /* synthetic */ x(String str, a0 a0Var) {
-        this.f27335d = str;
+        this.f27903d = str;
     }
 
     public static a a() {
@@ -40,7 +40,7 @@ public class x implements a.d {
 
     public final Bundle b() {
         Bundle bundle = new Bundle();
-        String str = this.f27335d;
+        String str = this.f27903d;
         if (str != null) {
             bundle.putString("api", str);
         }
@@ -54,10 +54,10 @@ public class x implements a.d {
         if (!(obj instanceof x)) {
             return false;
         }
-        return o.a(this.f27335d, ((x) obj).f27335d);
+        return o.a(this.f27903d, ((x) obj).f27903d);
     }
 
     public final int hashCode() {
-        return o.b(this.f27335d);
+        return o.b(this.f27903d);
     }
 }

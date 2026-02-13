@@ -10,7 +10,7 @@ import tt.f2;
 public final class e extends f2 implements KSerializer {
 
     /* renamed from: c  reason: collision with root package name */
-    public static final e f35092c = new e();
+    public static final e f35660c = new e();
 
     private e() {
         super(rt.a.E(FloatCompanionObject.INSTANCE));

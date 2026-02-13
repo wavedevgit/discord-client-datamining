@@ -7,9 +7,9 @@ import rg.w3;
 public final /* synthetic */ class t {
 
     /* renamed from: a  reason: collision with root package name */
-    public final /* synthetic */ d f27409a;
+    public final /* synthetic */ d f27977a;
 
     public final lj a(Object obj, int i10, jd jdVar) {
-        return this.f27409a.k((w3) obj, i10, jdVar);
+        return this.f27977a.k((w3) obj, i10, jdVar);
     }
 }

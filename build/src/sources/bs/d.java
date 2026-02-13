@@ -602,7 +602,7 @@ public final class d implements Map, Serializable, KMutableMap {
         Object[] objArr;
         if (i10 >= 0) {
             if (i10 > v()) {
-                int e10 = kotlin.collections.d.f32022d.e(v(), i10);
+                int e10 = kotlin.collections.d.f32590d.e(v(), i10);
                 this.f7491d = bs.c.e(this.f7491d, e10);
                 Object[] objArr2 = this.f7492e;
                 if (objArr2 != null) {

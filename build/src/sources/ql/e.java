@@ -9,21 +9,21 @@ import rl.e;
 public class e implements b {
 
     /* renamed from: a  reason: collision with root package name */
-    private MediaCodec f45462a;
+    private MediaCodec f46030a;
 
     /* renamed from: c  reason: collision with root package name */
-    private boolean f45464c;
+    private boolean f46032c;
 
     /* renamed from: b  reason: collision with root package name */
-    private boolean f45463b = true;
+    private boolean f46031b = true;
 
     /* renamed from: d  reason: collision with root package name */
-    private final MediaCodec.BufferInfo f45465d = new MediaCodec.BufferInfo();
+    private final MediaCodec.BufferInfo f46033d = new MediaCodec.BufferInfo();
 
     private void i() {
-        if (!this.f45464c) {
-            this.f45462a.start();
-            this.f45464c = true;
+        if (!this.f46032c) {
+            this.f46030a.start();
+            this.f46032c = true;
         }
     }
 
@@ -32,36 +32,36 @@ public class e implements b {
         if (i10 < 0) {
             return null;
         }
-        return new c(i10, this.f45462a.getInputBuffer(i10), null);
+        return new c(i10, this.f46030a.getInputBuffer(i10), null);
     }
 
     @Override // ql.b
     public int b(long j10) {
-        return this.f45462a.dequeueOutputBuffer(this.f45465d, j10);
+        return this.f46030a.dequeueOutputBuffer(this.f46033d, j10);
     }
 
     @Override // ql.b
     public int c(long j10) {
-        return this.f45462a.dequeueInputBuffer(j10);
+        return this.f46030a.dequeueInputBuffer(j10);
     }
 
     @Override // ql.b
     public Surface createInputSurface() {
-        return this.f45462a.createInputSurface();
+        return this.f46030a.createInputSurface();
     }
 
     @Override // ql.b
     public void d(c cVar) {
-        MediaCodec mediaCodec = this.f45462a;
-        int i10 = cVar.f45455a;
-        MediaCodec.BufferInfo bufferInfo = cVar.f45457c;
+        MediaCodec mediaCodec = this.f46030a;
+        int i10 = cVar.f46023a;
+        MediaCodec.BufferInfo bufferInfo = cVar.f46025c;
         mediaCodec.queueInputBuffer(i10, bufferInfo.offset, bufferInfo.size, bufferInfo.presentationTimeUs, bufferInfo.flags);
     }
 
     @Override // ql.b
     public c e(int i10) {
         if (i10 >= 0) {
-            return new c(i10, this.f45462a.getOutputBuffer(i10), this.f45465d);
+            return new c(i10, this.f46030a.getOutputBuffer(i10), this.f46033d);
         }
         return null;
     }
@@ -78,24 +78,24 @@ public class e implements b {
             }
         }
         MediaCodec e10 = zl.c.e(mediaFormat, null, true, e.a.ENCODER_NOT_FOUND, e.a.ENCODER_FORMAT_NOT_FOUND, e.a.ENCODER_CONFIGURATION_ERROR);
-        this.f45462a = e10;
+        this.f46030a = e10;
         if (e10 == null) {
             z10 = true;
         } else {
             z10 = false;
         }
-        this.f45463b = z10;
+        this.f46031b = z10;
     }
 
     @Override // ql.b
     public void g() {
-        this.f45462a.signalEndOfInputStream();
+        this.f46030a.signalEndOfInputStream();
     }
 
     @Override // ql.b
     public String getName() {
         try {
-            return this.f45462a.getName();
+            return this.f46030a.getName();
         } catch (IllegalStateException e10) {
             throw new rl.e(e.a.CODEC_IN_RELEASED_STATE, e10);
         }
@@ -103,24 +103,24 @@ public class e implements b {
 
     @Override // ql.b
     public MediaFormat getOutputFormat() {
-        return this.f45462a.getOutputFormat();
+        return this.f46030a.getOutputFormat();
     }
 
     @Override // ql.b
     public void h(int i10) {
-        this.f45462a.releaseOutputBuffer(i10, false);
+        this.f46030a.releaseOutputBuffer(i10, false);
     }
 
     @Override // ql.b
     public boolean isRunning() {
-        return this.f45464c;
+        return this.f46032c;
     }
 
     @Override // ql.b
     public void release() {
-        if (!this.f45463b) {
-            this.f45462a.release();
-            this.f45463b = true;
+        if (!this.f46031b) {
+            this.f46030a.release();
+            this.f46031b = true;
         }
     }
 
@@ -135,9 +135,9 @@ public class e implements b {
 
     @Override // ql.b
     public void stop() {
-        if (this.f45464c) {
-            this.f45462a.stop();
-            this.f45464c = false;
+        if (this.f46032c) {
+            this.f46030a.stop();
+            this.f46032c = false;
         }
     }
 }

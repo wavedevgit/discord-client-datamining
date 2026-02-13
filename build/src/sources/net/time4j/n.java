@@ -13,50 +13,50 @@ public final class n extends bu.a implements Serializable {
     private static final bu.j0 B;
 
     /* renamed from: i  reason: collision with root package name */
-    private static final char f37629i;
+    private static final char f38197i;
 
     /* renamed from: o  reason: collision with root package name */
-    private static final n f37630o;
+    private static final n f38198o;
 
     /* renamed from: p  reason: collision with root package name */
-    private static final a f37631p;
+    private static final a f38199p;
 
     /* renamed from: q  reason: collision with root package name */
-    private static final a f37632q;
+    private static final a f38200q;
 
     /* renamed from: r  reason: collision with root package name */
-    private static final a f37633r;
+    private static final a f38201r;
 
     /* renamed from: s  reason: collision with root package name */
-    private static final a f37634s;
+    private static final a f38202s;
     private static final long serialVersionUID = -6321211763598951499L;
 
     /* renamed from: t  reason: collision with root package name */
-    private static final a f37635t;
+    private static final a f38203t;
 
     /* renamed from: u  reason: collision with root package name */
-    private static final a f37636u;
+    private static final a f38204u;
 
     /* renamed from: v  reason: collision with root package name */
-    private static final Comparator f37637v;
+    private static final Comparator f38205v;
 
     /* renamed from: w  reason: collision with root package name */
-    public static bu.d0 f37638w;
+    public static bu.d0 f38206w;
 
     /* renamed from: x  reason: collision with root package name */
-    public static bu.d0 f37639x;
+    public static bu.d0 f38207x;
 
     /* renamed from: y  reason: collision with root package name */
-    public static bu.d0 f37640y;
+    public static bu.d0 f38208y;
 
     /* renamed from: z  reason: collision with root package name */
-    private static final bu.j0 f37641z;
+    private static final bu.j0 f38209z;
 
     /* renamed from: d  reason: collision with root package name */
-    private final transient List f37642d;
+    private final transient List f38210d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final transient boolean f37643e;
+    private final transient boolean f38211e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a extends cu.w {
@@ -83,32 +83,32 @@ public final class n extends bu.a implements Serializable {
                                             if (c10 != 's') {
                                                 switch (c10) {
                                                     case 'C':
-                                                        return f.f37427e;
+                                                        return f.f37995e;
                                                     case 'D':
-                                                        return f.f37433s;
+                                                        return f.f38001s;
                                                     case 'E':
-                                                        return f.f37428i;
+                                                        return f.f37996i;
                                                     default:
                                                         throw new IllegalArgumentException("Unsupported pattern symbol: " + c10);
                                                 }
                                             }
-                                            return g.f37468i;
+                                            return g.f38036i;
                                         }
-                                        return g.f37467e;
+                                        return g.f38035e;
                                     }
-                                    return g.f37466d;
+                                    return g.f38034d;
                                 }
-                                return g.f37471q;
+                                return g.f38039q;
                             }
-                            return f.f37429o;
+                            return f.f37997o;
                         }
-                        return f.f37432r;
+                        return f.f38000r;
                     }
-                    return f.f37430p;
+                    return f.f37998p;
                 }
-                return f.f37431q;
+                return f.f37999q;
             }
-            return f.f37426d;
+            return f.f37994d;
         }
     }
 
@@ -131,36 +131,36 @@ public final class n extends bu.a implements Serializable {
         } else {
             c10 = ',';
         }
-        f37629i = c10;
-        f37630o = new n();
-        f37631p = e(true, false);
-        f37632q = e(true, true);
-        f37633r = e(false, false);
-        f37634s = e(false, true);
-        f37635t = f(true);
-        f37636u = f(false);
-        f37637v = p0.a();
-        f37638w = p0.m();
-        f37639x = p0.h();
-        f37640y = p0.j();
-        f fVar = f.f37429o;
-        f fVar2 = f.f37431q;
-        f fVar3 = f.f37433s;
-        f37641z = g(fVar, fVar2, fVar3);
-        A = g(g.f37466d, g.f37467e, g.f37468i, g.f37471q);
-        B = g(f.f(), f.f37432r, fVar3);
+        f38197i = c10;
+        f38198o = new n();
+        f38199p = e(true, false);
+        f38200q = e(true, true);
+        f38201r = e(false, false);
+        f38202s = e(false, true);
+        f38203t = f(true);
+        f38204u = f(false);
+        f38205v = p0.a();
+        f38206w = p0.m();
+        f38207x = p0.h();
+        f38208y = p0.j();
+        f fVar = f.f37997o;
+        f fVar2 = f.f37999q;
+        f fVar3 = f.f38001s;
+        f38209z = g(fVar, fVar2, fVar3);
+        A = g(g.f38034d, g.f38035e, g.f38036i, g.f38039q);
+        B = g(f.f(), f.f38000r, fVar3);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public n(List list, boolean z10) {
         boolean isEmpty = list.isEmpty();
         if (isEmpty) {
-            this.f37642d = Collections.EMPTY_LIST;
+            this.f38210d = Collections.EMPTY_LIST;
         } else {
-            Collections.sort(list, f37637v);
-            this.f37642d = Collections.unmodifiableList(list);
+            Collections.sort(list, f38205v);
+            this.f38210d = Collections.unmodifiableList(list);
         }
-        this.f37643e = !isEmpty && z10;
+        this.f38211e = !isEmpty && z10;
     }
 
     private int d() {
@@ -206,7 +206,7 @@ public final class n extends bu.a implements Serializable {
     }
 
     public static n j() {
-        return f37630o;
+        return f38198o;
     }
 
     /* JADX WARN: Removed duplicated region for block: B:113:0x01e1  */
@@ -232,7 +232,7 @@ public final class n extends bu.a implements Serializable {
 
     @Override // bu.l0
     public List a() {
-        return this.f37642d;
+        return this.f38210d;
     }
 
     public boolean c(w wVar) {
@@ -240,9 +240,9 @@ public final class n extends bu.a implements Serializable {
             return false;
         }
         boolean h10 = h(wVar);
-        int size = this.f37642d.size();
+        int size = this.f38210d.size();
         for (int i10 = 0; i10 < size; i10++) {
-            l0.a aVar = (l0.a) this.f37642d.get(i10);
+            l0.a aVar = (l0.a) this.f38210d.get(i10);
             w wVar2 = (w) aVar.b();
             if (wVar2.equals(wVar) || (h10 && h(wVar2))) {
                 if (aVar.a() <= 0) {
@@ -261,7 +261,7 @@ public final class n extends bu.a implements Serializable {
         }
         if (obj instanceof n) {
             n nVar = (n) n.class.cast(obj);
-            if (this.f37643e == nVar.f37643e && a().equals(nVar.a())) {
+            if (this.f38211e == nVar.f38211e && a().equals(nVar.a())) {
                 return true;
             }
         }
@@ -270,14 +270,14 @@ public final class n extends bu.a implements Serializable {
 
     public int hashCode() {
         int hashCode = a().hashCode();
-        if (this.f37643e) {
+        if (this.f38211e) {
             return 0;
         }
         return hashCode;
     }
 
     public boolean i() {
-        return this.f37643e;
+        return this.f38211e;
     }
 
     public String toString() {
@@ -285,7 +285,7 @@ public final class n extends bu.a implements Serializable {
     }
 
     private n() {
-        this.f37642d = Collections.EMPTY_LIST;
-        this.f37643e = false;
+        this.f38210d = Collections.EMPTY_LIST;
+        this.f38211e = false;
     }
 }

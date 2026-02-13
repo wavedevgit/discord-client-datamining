@@ -11,16 +11,16 @@ import kotlin.jvm.internal.Intrinsics;
 public final class d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f36056a;
+    private final String f36624a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Map f36057b;
+    private final Map f36625b;
 
     public d(String scheme, Map authParams) {
         String str;
         Intrinsics.checkNotNullParameter(scheme, "scheme");
         Intrinsics.checkNotNullParameter(authParams, "authParams");
-        this.f36056a = scheme;
+        this.f36624a = scheme;
         LinkedHashMap linkedHashMap = new LinkedHashMap();
         for (Map.Entry entry : authParams.entrySet()) {
             String str2 = (String) entry.getKey();
@@ -37,11 +37,11 @@ public final class d {
         }
         Map unmodifiableMap = Collections.unmodifiableMap(linkedHashMap);
         Intrinsics.checkNotNullExpressionValue(unmodifiableMap, "unmodifiableMap<String?, String>(newAuthParams)");
-        this.f36057b = unmodifiableMap;
+        this.f36625b = unmodifiableMap;
     }
 
     public final Charset a() {
-        String str = (String) this.f36057b.get("charset");
+        String str = (String) this.f36625b.get("charset");
         if (str != null) {
             try {
                 Charset forName = Charset.forName(str);
@@ -56,17 +56,17 @@ public final class d {
     }
 
     public final String b() {
-        return (String) this.f36057b.get("realm");
+        return (String) this.f36625b.get("realm");
     }
 
     public final String c() {
-        return this.f36056a;
+        return this.f36624a;
     }
 
     public boolean equals(Object obj) {
         if (obj instanceof d) {
             d dVar = (d) obj;
-            if (Intrinsics.areEqual(dVar.f36056a, this.f36056a) && Intrinsics.areEqual(dVar.f36057b, this.f36057b)) {
+            if (Intrinsics.areEqual(dVar.f36624a, this.f36624a) && Intrinsics.areEqual(dVar.f36625b, this.f36625b)) {
                 return true;
             }
             return false;
@@ -75,10 +75,10 @@ public final class d {
     }
 
     public int hashCode() {
-        return ((899 + this.f36056a.hashCode()) * 31) + this.f36057b.hashCode();
+        return ((899 + this.f36624a.hashCode()) * 31) + this.f36625b.hashCode();
     }
 
     public String toString() {
-        return this.f36056a + " authParams=" + this.f36057b;
+        return this.f36624a + " authParams=" + this.f36625b;
     }
 }

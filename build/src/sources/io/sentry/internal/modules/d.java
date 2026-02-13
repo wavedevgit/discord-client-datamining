@@ -14,28 +14,28 @@ import java.util.TreeMap;
 public abstract class d implements b {
 
     /* renamed from: d  reason: collision with root package name */
-    private static final Charset f29397d = Charset.forName("UTF-8");
+    private static final Charset f29965d = Charset.forName("UTF-8");
 
     /* renamed from: a  reason: collision with root package name */
-    protected final ILogger f29398a;
+    protected final ILogger f29966a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final io.sentry.util.a f29399b = new io.sentry.util.a();
+    private final io.sentry.util.a f29967b = new io.sentry.util.a();
 
     /* renamed from: c  reason: collision with root package name */
-    private volatile Map f29400c = null;
+    private volatile Map f29968c = null;
 
     public d(ILogger iLogger) {
-        this.f29398a = iLogger;
+        this.f29966a = iLogger;
     }
 
     @Override // io.sentry.internal.modules.b
     public Map a() {
-        if (this.f29400c == null) {
-            a1 a10 = this.f29399b.a();
+        if (this.f29968c == null) {
+            a1 a10 = this.f29967b.a();
             try {
-                if (this.f29400c == null) {
-                    this.f29400c = b();
+                if (this.f29968c == null) {
+                    this.f29968c = b();
                 }
                 if (a10 != null) {
                     a10.close();
@@ -51,7 +51,7 @@ public abstract class d implements b {
                 throw th2;
             }
         }
-        return this.f29400c;
+        return this.f29968c;
     }
 
     protected abstract Map b();
@@ -60,13 +60,13 @@ public abstract class d implements b {
     public Map c(InputStream inputStream) {
         TreeMap treeMap = new TreeMap();
         try {
-            BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream, f29397d));
+            BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream, f29965d));
             try {
                 for (String readLine = bufferedReader.readLine(); readLine != null; readLine = bufferedReader.readLine()) {
                     int lastIndexOf = readLine.lastIndexOf(58);
                     treeMap.put(readLine.substring(0, lastIndexOf), readLine.substring(lastIndexOf + 1));
                 }
-                this.f29398a.c(SentryLevel.DEBUG, "Extracted %d modules from resources.", Integer.valueOf(treeMap.size()));
+                this.f29966a.c(SentryLevel.DEBUG, "Extracted %d modules from resources.", Integer.valueOf(treeMap.size()));
                 bufferedReader.close();
                 return treeMap;
             } catch (Throwable th2) {
@@ -78,10 +78,10 @@ public abstract class d implements b {
                 throw th2;
             }
         } catch (IOException e10) {
-            this.f29398a.b(SentryLevel.ERROR, "Error extracting modules.", e10);
+            this.f29966a.b(SentryLevel.ERROR, "Error extracting modules.", e10);
             return treeMap;
         } catch (RuntimeException e11) {
-            this.f29398a.a(SentryLevel.ERROR, e11, "%s file is malformed.", "sentry-external-modules.txt");
+            this.f29966a.a(SentryLevel.ERROR, e11, "%s file is malformed.", "sentry-external-modules.txt");
             return treeMap;
         }
     }

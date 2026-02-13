@@ -25,10 +25,10 @@ public abstract /* synthetic */ class i {
 
     public static /* synthetic */ g0 b(CoroutineScope coroutineScope, CoroutineContext coroutineContext, c0 c0Var, Function2 function2, int i10, Object obj) {
         if ((i10 & 1) != 0) {
-            coroutineContext = kotlin.coroutines.e.f32062d;
+            coroutineContext = kotlin.coroutines.e.f32630d;
         }
         if ((i10 & 2) != 0) {
-            c0Var = c0.f55783d;
+            c0Var = c0.f56351d;
         }
         return g.a(coroutineScope, coroutineContext, c0Var, function2);
     }
@@ -49,10 +49,10 @@ public abstract /* synthetic */ class i {
 
     public static /* synthetic */ Job d(CoroutineScope coroutineScope, CoroutineContext coroutineContext, c0 c0Var, Function2 function2, int i10, Object obj) {
         if ((i10 & 1) != 0) {
-            coroutineContext = kotlin.coroutines.e.f32062d;
+            coroutineContext = kotlin.coroutines.e.f32630d;
         }
         if ((i10 & 2) != 0) {
-            c0Var = c0.f55783d;
+            c0Var = c0.f56351d;
         }
         return g.c(coroutineScope, coroutineContext, c0Var, function2);
     }
@@ -66,7 +66,7 @@ public abstract /* synthetic */ class i {
             dt.a0 a0Var = new dt.a0(j10, continuation);
             d12 = et.b.d(a0Var, a0Var, function2);
         } else {
-            d.b bVar = kotlin.coroutines.d.f32060j;
+            d.b bVar = kotlin.coroutines.d.f32628j;
             if (Intrinsics.areEqual(j10.m(bVar), context.m(bVar))) {
                 u1 u1Var = new u1(j10, continuation);
                 CoroutineContext context2 = u1Var.getContext();

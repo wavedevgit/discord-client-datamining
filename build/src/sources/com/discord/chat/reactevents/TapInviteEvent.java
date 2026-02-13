@@ -70,7 +70,7 @@ public final class TapInviteEvent implements ReactEvent {
     public static final /* synthetic */ void write$Self$chat_release(TapInviteEvent tapInviteEvent, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
         compositeEncoder.y(serialDescriptor, 0, tapInviteEvent.messageId);
         compositeEncoder.w(serialDescriptor, 1, tapInviteEvent.index);
-        h hVar = h.f49997a;
+        h hVar = h.f50565a;
         compositeEncoder.o(serialDescriptor, 2, hVar, tapInviteEvent.primary);
         compositeEncoder.o(serialDescriptor, 3, hVar, tapInviteEvent.secondary);
     }

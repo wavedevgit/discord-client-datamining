@@ -32,22 +32,22 @@ public class ValueParameterDescriptorImpl extends VariableDescriptorImpl impleme
     public static final Companion Companion = new Companion(null);
 
     /* renamed from: q  reason: collision with root package name */
-    private final int f32556q;
+    private final int f33124q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final boolean f32557r;
+    private final boolean f33125r;
 
     /* renamed from: s  reason: collision with root package name */
-    private final boolean f32558s;
+    private final boolean f33126s;
 
     /* renamed from: t  reason: collision with root package name */
-    private final boolean f32559t;
+    private final boolean f33127t;
 
     /* renamed from: u  reason: collision with root package name */
-    private final KotlinType f32560u;
+    private final KotlinType f33128u;
 
     /* renamed from: v  reason: collision with root package name */
-    private final ValueParameterDescriptor f32561v;
+    private final ValueParameterDescriptor f33129v;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class Companion {
@@ -76,7 +76,7 @@ public class ValueParameterDescriptorImpl extends VariableDescriptorImpl impleme
     public static final class WithDestructuringDeclaration extends ValueParameterDescriptorImpl {
 
         /* renamed from: w  reason: collision with root package name */
-        private final Lazy f32562w;
+        private final Lazy f33130w;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public WithDestructuringDeclaration(@NotNull CallableDescriptor containingDeclaration, ValueParameterDescriptor valueParameterDescriptor, int i10, @NotNull Annotations annotations, @NotNull Name name, @NotNull KotlinType outType, boolean z10, boolean z11, boolean z12, KotlinType kotlinType, @NotNull SourceElement source, @NotNull Function0<? extends List<? extends VariableDescriptor>> destructuringVariables) {
@@ -87,7 +87,7 @@ public class ValueParameterDescriptorImpl extends VariableDescriptorImpl impleme
             Intrinsics.checkNotNullParameter(outType, "outType");
             Intrinsics.checkNotNullParameter(source, "source");
             Intrinsics.checkNotNullParameter(destructuringVariables, "destructuringVariables");
-            this.f32562w = l.b(destructuringVariables);
+            this.f33130w = l.b(destructuringVariables);
         }
 
         /* JADX INFO: Access modifiers changed from: private */
@@ -115,7 +115,7 @@ public class ValueParameterDescriptorImpl extends VariableDescriptorImpl impleme
 
         @NotNull
         public final List<VariableDescriptor> getDestructuringVariables() {
-            return (List) this.f32562w.getValue();
+            return (List) this.f33130w.getValue();
         }
     }
 
@@ -128,17 +128,17 @@ public class ValueParameterDescriptorImpl extends VariableDescriptorImpl impleme
         Intrinsics.checkNotNullParameter(name, "name");
         Intrinsics.checkNotNullParameter(outType, "outType");
         Intrinsics.checkNotNullParameter(source, "source");
-        this.f32556q = i10;
-        this.f32557r = z10;
-        this.f32558s = z11;
-        this.f32559t = z12;
-        this.f32560u = kotlinType;
+        this.f33124q = i10;
+        this.f33125r = z10;
+        this.f33126s = z11;
+        this.f33127t = z12;
+        this.f33128u = kotlinType;
         if (valueParameterDescriptor == null) {
             valueParameterDescriptor2 = this;
         } else {
             valueParameterDescriptor2 = valueParameterDescriptor;
         }
-        this.f32561v = valueParameterDescriptor2;
+        this.f33129v = valueParameterDescriptor2;
     }
 
     @NotNull
@@ -172,7 +172,7 @@ public class ValueParameterDescriptorImpl extends VariableDescriptorImpl impleme
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.ValueParameterDescriptor
     public boolean declaresDefaultValue() {
-        if (this.f32557r) {
+        if (this.f33125r) {
             CallableDescriptor containingDeclaration = getContainingDeclaration();
             Intrinsics.checkNotNull(containingDeclaration, "null cannot be cast to non-null type org.jetbrains.kotlin.descriptors.CallableMemberDescriptor");
             if (((CallableMemberDescriptor) containingDeclaration).getKind().isReal()) {
@@ -189,7 +189,7 @@ public class ValueParameterDescriptorImpl extends VariableDescriptorImpl impleme
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.ValueParameterDescriptor
     public int getIndex() {
-        return this.f32556q;
+        return this.f33124q;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.impl.VariableDescriptorImpl, kotlin.reflect.jvm.internal.impl.descriptors.CallableDescriptor
@@ -207,7 +207,7 @@ public class ValueParameterDescriptorImpl extends VariableDescriptorImpl impleme
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.ValueParameterDescriptor
     public KotlinType getVarargElementType() {
-        return this.f32560u;
+        return this.f33128u;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.DeclarationDescriptorWithVisibility
@@ -220,7 +220,7 @@ public class ValueParameterDescriptorImpl extends VariableDescriptorImpl impleme
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.ValueParameterDescriptor
     public boolean isCrossinline() {
-        return this.f32558s;
+        return this.f33126s;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.VariableDescriptor
@@ -230,7 +230,7 @@ public class ValueParameterDescriptorImpl extends VariableDescriptorImpl impleme
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.ValueParameterDescriptor
     public boolean isNoinline() {
-        return this.f32559t;
+        return this.f33127t;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.VariableDescriptor
@@ -265,7 +265,7 @@ public class ValueParameterDescriptorImpl extends VariableDescriptorImpl impleme
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.impl.VariableDescriptorImpl, kotlin.reflect.jvm.internal.impl.descriptors.impl.DeclarationDescriptorNonRootImpl, kotlin.reflect.jvm.internal.impl.descriptors.impl.DeclarationDescriptorImpl, kotlin.reflect.jvm.internal.impl.descriptors.DeclarationDescriptor
     @NotNull
     public ValueParameterDescriptor getOriginal() {
-        ValueParameterDescriptor valueParameterDescriptor = this.f32561v;
+        ValueParameterDescriptor valueParameterDescriptor = this.f33129v;
         return valueParameterDescriptor == this ? this : valueParameterDescriptor.getOriginal();
     }
 }

@@ -115,7 +115,7 @@ public final class a0 implements l {
 
     @Override // gd.l
     public ByteBuffer getInputBuffer(int i10) {
-        if (w0.f39038a >= 21) {
+        if (w0.f39606a >= 21) {
             return this.f25434a.getInputBuffer(i10);
         }
         return ((ByteBuffer[]) w0.j(this.f25435b))[i10];
@@ -123,7 +123,7 @@ public final class a0 implements l {
 
     @Override // gd.l
     public ByteBuffer getOutputBuffer(int i10) {
-        if (w0.f39038a >= 21) {
+        if (w0.f39606a >= 21) {
             return this.f25434a.getOutputBuffer(i10);
         }
         return ((ByteBuffer[]) w0.j(this.f25436c))[i10];
@@ -139,7 +139,7 @@ public final class a0 implements l {
         int dequeueOutputBuffer;
         do {
             dequeueOutputBuffer = this.f25434a.dequeueOutputBuffer(bufferInfo, 0L);
-            if (dequeueOutputBuffer == -3 && w0.f39038a < 21) {
+            if (dequeueOutputBuffer == -3 && w0.f39606a < 21) {
                 this.f25436c = this.f25434a.getOutputBuffers();
                 continue;
             }
@@ -171,7 +171,7 @@ public final class a0 implements l {
 
     private a0(MediaCodec mediaCodec) {
         this.f25434a = mediaCodec;
-        if (w0.f39038a < 21) {
+        if (w0.f39606a < 21) {
             this.f25435b = mediaCodec.getInputBuffers();
             this.f25436c = mediaCodec.getOutputBuffers();
         }

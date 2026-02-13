@@ -1,13 +1,36 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = dependencyMap;
-    var0 = 0;
-    var2 = var1[var0];
     var1 = require;
+    var _closure1_slot0 = var1;
+    var1 = dependencyMap;
+    var _closure1_slot1 = var1;
+    var1 = function arg0, arg1() {
+        _fun8451: for (var _fun8451_ip = 0;;) switch (_fun8451_ip) {
+            case 0:
+                var5 = arg0;
+                var0 = var5;
+                if (!var0) {
+                    _fun8451_ip = 55;
+                    continue _fun8451
+                }
+            case 9:
+                var2 = _closure1_slot0;
+                var6 = _closure1_slot1;
+                var1 = 0;
+                var1 = var6[var1];
+                var4 = undefined;
+                var3 = var2.bind(var4)(var1);
+                var1 = 1;
+                var1 = var6[var1];
+                var2 = var2.bind(var4)(var1);
+                var1 = arg1;
+                var0 = var3.bind(var4)(var5, var1, var2);
+            case 55:
+                return var0;
+        }
+    };
+    var0 = arg4;
+    var0.exports = var1;
     var0 = undefined;
-    var1 = var1.bind(var0)(var2);
-    var2 = var1.bind(var0)();
-    var1 = module;
-    var1.exports = var2;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [785]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [785, 767]);

@@ -84,7 +84,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot9 = var3;
     var4 = var7.memo;
     var1 = function arg0() {
-        _fun47313: for (var _fun47313_ip = 0;;) switch (_fun47313_ip) {
+        _fun47478: for (var _fun47478_ip = 0;;) switch (_fun47478_ip) {
             case 0:
                 var5 = _closure1_slot3;
                 var6 = var5.useMemo;
@@ -169,13 +169,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var10.bind(var11)(var4);
                 var10 = _closure1_slot5;
                 if (var4) {
-                    _fun47313_ip = 381;
-                    continue _fun47313
+                    _fun47478_ip = 381;
+                    continue _fun47478
                 }
             case 373:
                 var4 = var10.COLLAPSED;
-                _fun47313_ip = 387;
-                continue _fun47313;
+                _fun47478_ip = 387;
+                continue _fun47478;
             case 381:
                 var4 = var10.SOFT_DISMISSED;
             case 387:
@@ -275,4 +275,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.QuestDockGestureContext = var3;
     var2.QuestDockGestureContextProvider = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 5280, 5257, 5282, 33, 5284, 1464, 5252, 3717, 5281, 1568, 5285, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 5310, 5287, 5312, 33, 5314, 1464, 5282, 3717, 5311, 1568, 5315, 2]);

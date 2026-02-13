@@ -26,17 +26,17 @@ import org.jetbrains.annotations.NotNull;
 public final class e {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Map f28016a;
+    private final Map f28584a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final hn.f f28017b;
+    private final hn.f f28585b;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class b extends Lambda implements Function1 {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final b f28019d = new b();
+        public static final b f28587d = new b();
 
         b() {
             super(1);
@@ -52,27 +52,27 @@ public final class e {
 
     public e(Map viewStates) {
         Intrinsics.checkNotNullParameter(viewStates, "viewStates");
-        this.f28016a = viewStates;
-        this.f28017b = new hn.f();
+        this.f28584a = viewStates;
+        this.f28585b = new hn.f();
     }
 
     private final void e(Collection collection) {
-        CollectionsKt.I(this.f28016a.keySet(), x0.j(this.f28016a.keySet(), collection));
-        this.f28017b.j(collection);
+        CollectionsKt.I(this.f28584a.keySet(), x0.j(this.f28584a.keySet(), collection));
+        this.f28585b.j(collection);
     }
 
     public final void a(String key, u3.f parentOwner) {
         Intrinsics.checkNotNullParameter(key, "key");
         Intrinsics.checkNotNullParameter(parentOwner, "parentOwner");
-        this.f28017b.f(key, parentOwner);
+        this.f28585b.f(key, parentOwner);
     }
 
     public final void b() {
-        this.f28017b.g();
+        this.f28585b.g();
     }
 
     public final Map c() {
-        return this.f28016a;
+        return this.f28584a;
     }
 
     public final void d(Collection retaining) {
@@ -87,8 +87,8 @@ public final class e {
 
     public final void f(a from) {
         Intrinsics.checkNotNullParameter(from, "from");
-        this.f28016a.clear();
-        this.f28016a.putAll(from.a());
+        this.f28584a.clear();
+        this.f28584a.putAll(from.a());
     }
 
     public final a g() {
@@ -101,10 +101,10 @@ public final class e {
         Intrinsics.checkNotNullParameter(retainedRenderings, "retainedRenderings");
         Intrinsics.checkNotNullParameter(newView, "newView");
         b10 = f.b(newView);
-        Set a02 = k.a0(k.R(CollectionsKt.b0(retainedRenderings), b.f28019d));
+        Set a02 = k.a0(k.R(CollectionsKt.b0(retainedRenderings), b.f28587d));
         if (retainedRenderings.size() == a02.size()) {
-            this.f28017b.h(newView, b10);
-            g gVar = (g) this.f28016a.remove(b10);
+            this.f28585b.h(newView, b10);
+            g gVar = (g) this.f28584a.remove(b10);
             if (gVar != null) {
                 newView.restoreHierarchyState(gVar.a());
             }
@@ -119,7 +119,7 @@ public final class e {
                     Map c10 = c();
                     Pair a10 = v.a(b11, new g(b11, sparseArray));
                     c10.put(a10.c(), a10.d());
-                    this.f28017b.m(b11);
+                    this.f28585b.m(b11);
                 }
             }
             e(x0.m(a02, b10));
@@ -134,7 +134,7 @@ public final class e {
         public static final C0383a CREATOR = new C0383a(null);
 
         /* renamed from: d  reason: collision with root package name */
-        private final Map f28018d;
+        private final Map f28586d;
 
         /* renamed from: in.e$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
@@ -162,11 +162,11 @@ public final class e {
 
         public a(e viewStateCache) {
             Intrinsics.checkNotNullParameter(viewStateCache, "viewStateCache");
-            this.f28018d = o0.w(viewStateCache.c());
+            this.f28586d = o0.w(viewStateCache.c());
         }
 
         public final Map a() {
-            return this.f28018d;
+            return this.f28586d;
         }
 
         @Override // android.os.Parcelable
@@ -177,14 +177,14 @@ public final class e {
         @Override // android.os.Parcelable
         public void writeToParcel(Parcel out, int i10) {
             Intrinsics.checkNotNullParameter(out, "out");
-            out.writeMap(this.f28018d);
+            out.writeMap(this.f28586d);
         }
 
         public a(Parcel source) {
             Intrinsics.checkNotNullParameter(source, "source");
             LinkedHashMap linkedHashMap = new LinkedHashMap();
             source.readMap(TypeIntrinsics.asMutableMap(linkedHashMap), e.class.getClassLoader());
-            this.f28018d = o0.w(linkedHashMap);
+            this.f28586d = o0.w(linkedHashMap);
         }
     }
 

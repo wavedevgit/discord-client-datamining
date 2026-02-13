@@ -26,7 +26,7 @@ public abstract class a1 {
     public static final class a implements Function1 {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final a f42883d = new a();
+        public static final a f43451d = new a();
 
         @Override // kotlin.jvm.functions.Function1
         /* renamed from: a */
@@ -42,7 +42,7 @@ public abstract class a1 {
         Intrinsics.checkNotNullParameter(config, "config");
         final sq.c c10 = sq.c.c(uiComponentHelper.b());
         String b10 = inputConfirmationCodeComponent.b().b();
-        final List o10 = CollectionsKt.o(c10.f48202b.getEditText(), c10.f48205e.getEditText(), c10.f48207g.getEditText(), c10.f48204d.getEditText());
+        final List o10 = CollectionsKt.o(c10.f48770b.getEditText(), c10.f48773e.getEditText(), c10.f48775g.getEditText(), c10.f48772d.getEditText());
         for (IndexedValue indexedValue : CollectionsKt.n1(o10)) {
             int a10 = indexedValue.a();
             final EditText editText = (EditText) indexedValue.b();
@@ -99,7 +99,7 @@ public abstract class a1 {
         Context context;
         Intrinsics.checkNotNullParameter(newText, "newText");
         gn.t b10 = inputConfirmationCodeComponent.b();
-        rq.a aVar = rq.a.f47736a;
+        rq.a aVar = rq.a.f48304a;
         ConstraintLayout root = cVar.getRoot();
         Intrinsics.checkNotNullExpressionValue(root, "getRoot(...)");
         b10.c(aVar.a(root));
@@ -114,30 +114,30 @@ public abstract class a1 {
             editText3.requestFocus();
         } else if (!StringsKt.k0(newText)) {
             inputConfirmationCodeComponent.f().b().invoke();
-            EditText editText4 = cVar.f48204d.getEditText();
+            EditText editText4 = cVar.f48772d.getEditText();
             if (editText4 != null && (context = editText4.getContext()) != null) {
                 bq.f.d(context);
             }
-            EditText editText5 = cVar.f48204d.getEditText();
+            EditText editText5 = cVar.f48772d.getEditText();
             if (editText5 != null) {
                 editText5.clearFocus();
             }
         }
-        return Unit.f31988a;
+        return Unit.f32556a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit h(EditText editText) {
         editText.requestFocus();
         editText.setSelection(editText.length());
-        return Unit.f31988a;
+        return Unit.f32556a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit i(sq.c cVar, InputConfirmationCode inputConfirmationCode) {
         ConstraintLayout root = cVar.getRoot();
         Intrinsics.checkNotNullExpressionValue(root, "getRoot(...)");
-        Sequence<TextInputLayout> F = kotlin.sequences.k.F(androidx.core.view.o0.a(root), a.f42883d);
+        Sequence<TextInputLayout> F = kotlin.sequences.k.F(androidx.core.view.o0.a(root), a.f43451d);
         Intrinsics.checkNotNull(F, "null cannot be cast to non-null type kotlin.sequences.Sequence<R of kotlin.sequences.SequencesKt___SequencesKt.filterIsInstance>");
         for (TextInputLayout textInputLayout : F) {
             InputTextBasedComponentStyle styles = inputConfirmationCode.getStyles();
@@ -145,7 +145,7 @@ public abstract class a1 {
                 uq.a0.k(textInputLayout, styles);
             }
         }
-        return Unit.f31988a;
+        return Unit.f32556a;
     }
 
     private static final void j(String str, List list) {

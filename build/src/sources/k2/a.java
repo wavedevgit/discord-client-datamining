@@ -77,7 +77,7 @@ public abstract class a {
         }
         String str = null;
         if (StringsKt.P(errorType, "androidx.credentials.TYPE_CREATE_PUBLIC_KEY_CREDENTIAL_DOM_EXCEPTION", false, 2, null)) {
-            b.a aVar = j2.b.f30809p;
+            b.a aVar = j2.b.f31377p;
             if (charSequence != null) {
                 str = charSequence.toString();
             }
@@ -122,7 +122,7 @@ public abstract class a {
         }
         String str = null;
         if (StringsKt.P(errorType, "androidx.credentials.TYPE_GET_PUBLIC_KEY_CREDENTIAL_DOM_EXCEPTION", false, 2, null)) {
-            e.a aVar = j2.e.f30814p;
+            e.a aVar = j2.e.f31382p;
             if (charSequence != null) {
                 str = charSequence.toString();
             }

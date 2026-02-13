@@ -107,6 +107,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.BILLING_SUBSCRIPTION_GROUP_USER_ON_GIFT_SUBSCRIPTION = var10;
     var7 = 'BILLING_SUBSCRIPTION_GROUP_USER_ON_GIFT_SUBSCRIPTION';
     var1[var10] = var7;
+    var10 = 100136;
+    var1.BILLING_SUBSCRIPTION_GROUP_USER_HAS_MOBILE_SUBSCRIPTION = var10;
+    var7 = 'BILLING_SUBSCRIPTION_GROUP_USER_HAS_MOBILE_SUBSCRIPTION';
+    var1[var10] = var7;
     var10 = 100137;
     var1.BILLING_SUBSCRIPTION_GROUP_USER_INVALID_SUBSCRIPTION = var10;
     var7 = 'BILLING_SUBSCRIPTION_GROUP_USER_INVALID_SUBSCRIPTION';
@@ -163,4 +167,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.PremiumGroupInviteState = var3;
     var2.PremiumGroupAPIErrorCodes = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 1686, 1234, 2438, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 1689, 1235, 2441, 2]);

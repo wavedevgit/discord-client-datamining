@@ -5,7 +5,7 @@ import kotlin.coroutines.CoroutineContext;
 public final class h0 extends CoroutineDispatcher {
 
     /* renamed from: i  reason: collision with root package name */
-    public static final h0 f35043i = new h0();
+    public static final h0 f35611i = new h0();
 
     private h0() {
     }
@@ -17,9 +17,9 @@ public final class h0 extends CoroutineDispatcher {
 
     @Override // kotlinx.coroutines.CoroutineDispatcher
     public void b1(CoroutineContext coroutineContext, Runnable runnable) {
-        i0 i0Var = (i0) coroutineContext.m(i0.f35044i);
+        i0 i0Var = (i0) coroutineContext.m(i0.f35612i);
         if (i0Var != null) {
-            i0Var.f35045e = true;
+            i0Var.f35613e = true;
             return;
         }
         throw new UnsupportedOperationException("Dispatchers.Unconfined.dispatch function can only be used by the yield function. If you wrap Unconfined dispatcher in your code, make sure you properly delegate isDispatchNeeded and dispatch calls.");

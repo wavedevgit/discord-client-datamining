@@ -8,7 +8,7 @@ import kotlin.coroutines.CoroutineContext;
 public final class u1 extends dt.a0 {
 
     /* renamed from: p  reason: collision with root package name */
-    private final ThreadLocal f55827p;
+    private final ThreadLocal f56395p;
     private volatile boolean threadLocalIsSet;
 
     /* JADX WARN: Illegal instructions before constructor call */
@@ -19,7 +19,7 @@ public final class u1 extends dt.a0 {
     public u1(kotlin.coroutines.CoroutineContext r3, kotlin.coroutines.Continuation r4) {
         /*
             r2 = this;
-            ys.v1 r0 = ys.v1.f55831d
+            ys.v1 r0 = ys.v1.f56399d
             kotlin.coroutines.CoroutineContext$Element r1 = r3.m(r0)
             if (r1 != 0) goto Ld
             kotlin.coroutines.CoroutineContext r0 = r3.O0(r0)
@@ -30,9 +30,9 @@ public final class u1 extends dt.a0 {
             r2.<init>(r0, r4)
             java.lang.ThreadLocal r0 = new java.lang.ThreadLocal
             r0.<init>()
-            r2.f55827p = r0
+            r2.f56395p = r0
             kotlin.coroutines.CoroutineContext r4 = r4.getContext()
-            kotlin.coroutines.d$b r0 = kotlin.coroutines.d.f32060j
+            kotlin.coroutines.d$b r0 = kotlin.coroutines.d.f32628j
             kotlin.coroutines.CoroutineContext$Element r4 = r4.m(r0)
             boolean r4 = r4 instanceof kotlinx.coroutines.CoroutineDispatcher
             if (r4 != 0) goto L31
@@ -48,11 +48,11 @@ public final class u1 extends dt.a0 {
 
     private final void e1() {
         if (this.threadLocalIsSet) {
-            Pair pair = (Pair) this.f55827p.get();
+            Pair pair = (Pair) this.f56395p.get();
             if (pair != null) {
                 dt.l0.f((CoroutineContext) pair.a(), pair.b());
             }
-            this.f55827p.remove();
+            this.f56395p.remove();
         }
     }
 
@@ -69,7 +69,7 @@ public final class u1 extends dt.a0 {
         }
         try {
             this.f21868o.resumeWith(a10);
-            Unit unit = Unit.f31988a;
+            Unit unit = Unit.f32556a;
             if (u1Var != null && !u1Var.d1()) {
                 return;
             }
@@ -89,17 +89,17 @@ public final class u1 extends dt.a0 {
 
     public final boolean d1() {
         boolean z10;
-        if (this.threadLocalIsSet && this.f55827p.get() == null) {
+        if (this.threadLocalIsSet && this.f56395p.get() == null) {
             z10 = true;
         } else {
             z10 = false;
         }
-        this.f55827p.remove();
+        this.f56395p.remove();
         return !z10;
     }
 
     public final void g1(CoroutineContext coroutineContext, Object obj) {
         this.threadLocalIsSet = true;
-        this.f55827p.set(as.v.a(coroutineContext, obj));
+        this.f56395p.set(as.v.a(coroutineContext, obj));
     }
 }

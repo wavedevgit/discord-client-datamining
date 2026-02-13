@@ -39,7 +39,7 @@ public /* synthetic */ class LinkContextData$BindGuildMenu$$serializer implement
     @Override // tt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        return new KSerializer[]{n2.f50033a, rt.a.u(tt.h.f49997a), rt.a.u(LinkContextData$BindGuildMenu$MessageReference$$serializer.INSTANCE)};
+        return new KSerializer[]{n2.f50601a, rt.a.u(tt.h.f50565a), rt.a.u(LinkContextData$BindGuildMenu$MessageReference$$serializer.INSTANCE)};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -56,7 +56,7 @@ public /* synthetic */ class LinkContextData$BindGuildMenu$$serializer implement
         if (b10.p()) {
             str = b10.m(serialDescriptor, 0);
             messageReference = (LinkContextData.BindGuildMenu.MessageReference) b10.n(serialDescriptor, 2, LinkContextData$BindGuildMenu$MessageReference$$serializer.INSTANCE, null);
-            bool = (Boolean) b10.n(serialDescriptor, 1, tt.h.f49997a, null);
+            bool = (Boolean) b10.n(serialDescriptor, 1, tt.h.f50565a, null);
             i10 = 7;
         } else {
             boolean z10 = true;
@@ -71,7 +71,7 @@ public /* synthetic */ class LinkContextData$BindGuildMenu$$serializer implement
                     str2 = b10.m(serialDescriptor, 0);
                     i11 |= 1;
                 } else if (o10 == 1) {
-                    bool2 = (Boolean) b10.n(serialDescriptor, 1, tt.h.f49997a, bool2);
+                    bool2 = (Boolean) b10.n(serialDescriptor, 1, tt.h.f50565a, bool2);
                     i11 |= 2;
                 } else if (o10 != 2) {
                     throw new b0(o10);

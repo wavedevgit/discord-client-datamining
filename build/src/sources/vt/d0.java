@@ -8,10 +8,10 @@ import kotlinx.serialization.descriptors.SerialDescriptor;
 public final class d0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final tt.z f51886a;
+    private final tt.z f52454a;
 
     /* renamed from: b  reason: collision with root package name */
-    private boolean f51887b;
+    private boolean f52455b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     /* synthetic */ class a extends FunctionReferenceImpl implements Function2 {
@@ -32,7 +32,7 @@ public final class d0 {
 
     public d0(SerialDescriptor descriptor) {
         Intrinsics.checkNotNullParameter(descriptor, "descriptor");
-        this.f51886a = new tt.z(descriptor, new a(this));
+        this.f52454a = new tt.z(descriptor, new a(this));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -43,19 +43,19 @@ public final class d0 {
         } else {
             z10 = false;
         }
-        this.f51887b = z10;
+        this.f52455b = z10;
         return z10;
     }
 
     public final boolean b() {
-        return this.f51887b;
+        return this.f52455b;
     }
 
     public final void c(int i10) {
-        this.f51886a.a(i10);
+        this.f52454a.a(i10);
     }
 
     public final int d() {
-        return this.f51886a.d();
+        return this.f52454a.d();
     }
 }

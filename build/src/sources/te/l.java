@@ -6,7 +6,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 final class l implements ThreadFactory {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final AtomicInteger f48775a = new AtomicInteger();
+    private static final AtomicInteger f49343a = new AtomicInteger();
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public /* synthetic */ l(k kVar) {
@@ -14,7 +14,7 @@ final class l implements ThreadFactory {
 
     @Override // java.util.concurrent.ThreadFactory
     public final Thread newThread(Runnable runnable) {
-        int incrementAndGet = f48775a.incrementAndGet();
+        int incrementAndGet = f49343a.incrementAndGet();
         StringBuilder sb2 = new StringBuilder(23);
         sb2.append("measurement-");
         sb2.append(incrementAndGet);

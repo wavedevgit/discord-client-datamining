@@ -6,45 +6,45 @@ import kotlin.jvm.internal.Intrinsics;
 public final class n extends d2 {
 
     /* renamed from: a  reason: collision with root package name */
-    private char[] f50029a;
+    private char[] f50597a;
 
     /* renamed from: b  reason: collision with root package name */
-    private int f50030b;
+    private int f50598b;
 
     public n(char[] bufferWithData) {
         Intrinsics.checkNotNullParameter(bufferWithData, "bufferWithData");
-        this.f50029a = bufferWithData;
-        this.f50030b = bufferWithData.length;
+        this.f50597a = bufferWithData;
+        this.f50598b = bufferWithData.length;
         b(10);
     }
 
     @Override // tt.d2
     public void b(int i10) {
-        char[] cArr = this.f50029a;
+        char[] cArr = this.f50597a;
         if (cArr.length < i10) {
             char[] copyOf = Arrays.copyOf(cArr, kotlin.ranges.d.d(i10, cArr.length * 2));
             Intrinsics.checkNotNullExpressionValue(copyOf, "copyOf(...)");
-            this.f50029a = copyOf;
+            this.f50597a = copyOf;
         }
     }
 
     @Override // tt.d2
     public int d() {
-        return this.f50030b;
+        return this.f50598b;
     }
 
     public final void e(char c10) {
         d2.c(this, 0, 1, null);
-        char[] cArr = this.f50029a;
+        char[] cArr = this.f50597a;
         int d10 = d();
-        this.f50030b = d10 + 1;
+        this.f50598b = d10 + 1;
         cArr[d10] = c10;
     }
 
     @Override // tt.d2
     /* renamed from: f */
     public char[] a() {
-        char[] copyOf = Arrays.copyOf(this.f50029a, d());
+        char[] copyOf = Arrays.copyOf(this.f50597a, d());
         Intrinsics.checkNotNullExpressionValue(copyOf, "copyOf(...)");
         return copyOf;
     }

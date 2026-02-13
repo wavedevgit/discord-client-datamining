@@ -46,7 +46,7 @@ public final class ContentInventoryEntryClickable {
 
     public static final /* synthetic */ void write$Self$chat_release(ContentInventoryEntryClickable contentInventoryEntryClickable, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
         if (compositeEncoder.z(serialDescriptor, 0) || contentInventoryEntryClickable.ariaDescription != null) {
-            compositeEncoder.o(serialDescriptor, 0, n2.f50033a, contentInventoryEntryClickable.ariaDescription);
+            compositeEncoder.o(serialDescriptor, 0, n2.f50601a, contentInventoryEntryClickable.ariaDescription);
         }
     }
 

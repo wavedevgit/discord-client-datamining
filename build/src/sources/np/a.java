@@ -7,31 +7,31 @@ import kotlin.enums.EnumEntries;
 public final class a {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final a f38207d = new a("Debug", 0);
+    public static final a f38775d = new a("Debug", 0);
 
     /* renamed from: e  reason: collision with root package name */
-    public static final a f38208e = new a("Warning", 1);
+    public static final a f38776e = new a("Warning", 1);
 
     /* renamed from: i  reason: collision with root package name */
-    public static final a f38209i = new a("Error", 2);
+    public static final a f38777i = new a("Error", 2);
 
     /* renamed from: o  reason: collision with root package name */
-    private static final /* synthetic */ a[] f38210o;
+    private static final /* synthetic */ a[] f38778o;
 
     /* renamed from: p  reason: collision with root package name */
-    private static final /* synthetic */ EnumEntries f38211p;
+    private static final /* synthetic */ EnumEntries f38779p;
 
     static {
         a[] a10 = a();
-        f38210o = a10;
-        f38211p = hs.a.a(a10);
+        f38778o = a10;
+        f38779p = hs.a.a(a10);
     }
 
     private a(String str, int i10) {
     }
 
     private static final /* synthetic */ a[] a() {
-        return new a[]{f38207d, f38208e, f38209i};
+        return new a[]{f38775d, f38776e, f38777i};
     }
 
     public static a valueOf(String str) {
@@ -39,6 +39,6 @@ public final class a {
     }
 
     public static a[] values() {
-        return (a[]) f38210o.clone();
+        return (a[]) f38778o.clone();
     }
 }

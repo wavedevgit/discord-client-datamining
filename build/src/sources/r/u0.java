@@ -8,7 +8,7 @@ import x.y0;
 abstract class u0 implements s0.a {
 
     /* renamed from: a  reason: collision with root package name */
-    final StreamConfigurationMap f45866a;
+    final StreamConfigurationMap f46434a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     static class a {
@@ -19,18 +19,18 @@ abstract class u0 implements s0.a {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public u0(StreamConfigurationMap streamConfigurationMap) {
-        this.f45866a = streamConfigurationMap;
+        this.f46434a = streamConfigurationMap;
     }
 
     @Override // r.s0.a
     public StreamConfigurationMap a() {
-        return this.f45866a;
+        return this.f46434a;
     }
 
     @Override // r.s0.a
     public int[] c() {
         try {
-            return this.f45866a.getOutputFormats();
+            return this.f46434a.getOutputFormats();
         } catch (IllegalArgumentException | NullPointerException e10) {
             y0.m("StreamConfigurationMapCompatBaseImpl", "Failed to get output formats from StreamConfigurationMap", e10);
             return null;
@@ -39,6 +39,6 @@ abstract class u0 implements s0.a {
 
     @Override // r.s0.a
     public Size[] d(int i10) {
-        return a.a(this.f45866a, i10);
+        return a.a(this.f46434a, i10);
     }
 }

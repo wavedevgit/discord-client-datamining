@@ -26,7 +26,7 @@ public class NetInfoModule extends ReactContextBaseJavaModule implements a.Inter
     @ReactMethod
     public void addListener(String str) {
         this.numberOfListeners++;
-        this.mConnectivityReceiver.f27997e = true;
+        this.mConnectivityReceiver.f28565e = true;
     }
 
     @ReactMethod
@@ -49,7 +49,7 @@ public class NetInfoModule extends ReactContextBaseJavaModule implements a.Inter
     public void invalidate() {
         this.mAmazonConnectivityChecker.k();
         this.mConnectivityReceiver.j();
-        this.mConnectivityReceiver.f27997e = false;
+        this.mConnectivityReceiver.f28565e = false;
     }
 
     @Override // com.reactnativecommunity.netinfo.a.InterfaceC0212a
@@ -67,7 +67,7 @@ public class NetInfoModule extends ReactContextBaseJavaModule implements a.Inter
         int intValue = this.numberOfListeners - num.intValue();
         this.numberOfListeners = intValue;
         if (intValue == 0) {
-            this.mConnectivityReceiver.f27997e = false;
+            this.mConnectivityReceiver.f28565e = false;
         }
     }
 }

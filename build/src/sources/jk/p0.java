@@ -3,19 +3,19 @@ package jk;
 abstract class p0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final n0 f31138a = c();
+    private static final n0 f31706a = c();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final n0 f31139b = new o0();
+    private static final n0 f31707b = new o0();
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static n0 a() {
-        return f31138a;
+        return f31706a;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static n0 b() {
-        return f31139b;
+        return f31707b;
     }
 
     private static n0 c() {

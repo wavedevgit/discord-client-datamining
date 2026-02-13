@@ -14,19 +14,19 @@ import java.util.Objects;
 public final class LocalDate implements j$.time.temporal.k, j$.time.temporal.l, ChronoLocalDate, Serializable {
 
     /* renamed from: a  reason: collision with root package name */
-    public final int f30483a;
+    public final int f31051a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final short f30484b;
+    public final short f31052b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final short f30485c;
+    public final short f31053c;
     public static final LocalDate MIN = of(-999999999, 1, 1);
     public static final LocalDate MAX = of(999999999, 12, 31);
 
     @Override // j$.time.chrono.ChronoLocalDate
     public final j$.time.chrono.j f() {
-        return j$.time.chrono.k.f30519a;
+        return j$.time.chrono.k.f31087a;
     }
 
     public static LocalDate of(int i10, int i11, int i12) {
@@ -39,7 +39,7 @@ public final class LocalDate implements j$.time.temporal.k, j$.time.temporal.l, 
             if (i11 != 2) {
                 i13 = (i11 == 4 || i11 == 6 || i11 == 9 || i11 == 11) ? 30 : 31;
             } else {
-                j$.time.chrono.k kVar = j$.time.chrono.k.f30519a;
+                j$.time.chrono.k kVar = j$.time.chrono.k.f31087a;
                 if (j$.time.chrono.k.w(j10)) {
                     i13 = 29;
                 }
@@ -58,14 +58,14 @@ public final class LocalDate implements j$.time.temporal.k, j$.time.temporal.l, 
         long j10 = i10;
         j$.time.temporal.a.YEAR.E(j10);
         j$.time.temporal.a.DAY_OF_YEAR.E(i11);
-        j$.time.chrono.k kVar = j$.time.chrono.k.f30519a;
+        j$.time.chrono.k kVar = j$.time.chrono.k.f31087a;
         boolean w10 = j$.time.chrono.k.w(j10);
         if (i11 == 366 && !w10) {
             throw new DateTimeException("Invalid date 'DayOfYear 366' as '" + i10 + "' is not a leap year");
         }
         Month w11 = Month.w(((i11 - 1) / 31) + 1);
         if (i11 > (w11.t(w10) + w11.r(w10)) - 1) {
-            w11 = Month.f30496a[((((int) 1) + 12) + w11.ordinal()) % 12];
+            w11 = Month.f31064a[((((int) 1) + 12) + w11.ordinal()) % 12];
         }
         return new LocalDate(i10, w11.ordinal() + 1, (i11 - w11.r(w10)) + 1);
     }
@@ -90,12 +90,12 @@ public final class LocalDate implements j$.time.temporal.k, j$.time.temporal.l, 
         int i11 = ((i10 * 5) + 2) / 153;
         long j16 = j14 + j11 + (i11 / 10);
         j$.time.temporal.a aVar = j$.time.temporal.a.YEAR;
-        return new LocalDate(aVar.f30608b.a(j16, aVar), ((i11 + 2) % 12) + 1, (i10 - (((i11 * 306) + 5) / 10)) + 1);
+        return new LocalDate(aVar.f31176b.a(j16, aVar), ((i11 + 2) % 12) + 1, (i10 - (((i11 * 306) + 5) / 10)) + 1);
     }
 
     public static LocalDate t(TemporalAccessor temporalAccessor) {
         Objects.requireNonNull(temporalAccessor, "temporal");
-        LocalDate localDate = (LocalDate) temporalAccessor.a(o.f30625f);
+        LocalDate localDate = (LocalDate) temporalAccessor.a(o.f31193f);
         if (localDate != null) {
             return localDate;
         }
@@ -110,7 +110,7 @@ public final class LocalDate implements j$.time.temporal.k, j$.time.temporal.l, 
 
     public static LocalDate I(int i10, int i11, int i12) {
         if (i11 == 2) {
-            j$.time.chrono.k kVar = j$.time.chrono.k.f30519a;
+            j$.time.chrono.k kVar = j$.time.chrono.k.f31087a;
             i12 = Math.min(i12, j$.time.chrono.k.w((long) i10) ? 29 : 28);
         } else if (i11 == 4 || i11 == 6 || i11 == 9 || i11 == 11) {
             i12 = Math.min(i12, 30);
@@ -119,9 +119,9 @@ public final class LocalDate implements j$.time.temporal.k, j$.time.temporal.l, 
     }
 
     public LocalDate(int i10, int i11, int i12) {
-        this.f30483a = i10;
-        this.f30484b = (short) i11;
-        this.f30485c = (short) i12;
+        this.f31051a = i10;
+        this.f31052b = (short) i11;
+        this.f31053c = (short) i12;
     }
 
     @Override // j$.time.temporal.TemporalAccessor
@@ -130,9 +130,9 @@ public final class LocalDate implements j$.time.temporal.k, j$.time.temporal.l, 
         if (nVar instanceof j$.time.temporal.a) {
             j$.time.temporal.a aVar = (j$.time.temporal.a) nVar;
             if (aVar.isDateBased()) {
-                int i11 = c.f30509a[aVar.ordinal()];
+                int i11 = c.f31077a[aVar.ordinal()];
                 if (i11 == 1) {
-                    short s10 = this.f30484b;
+                    short s10 = this.f31052b;
                     if (s10 != 2) {
                         i10 = (s10 == 4 || s10 == 6 || s10 == 9 || s10 == 11) ? 30 : 31;
                     } else {
@@ -144,7 +144,7 @@ public final class LocalDate implements j$.time.temporal.k, j$.time.temporal.l, 
                 } else if (i11 == 3) {
                     return r.e(1L, (getMonth() != Month.FEBRUARY || B()) ? 5L : 4L);
                 } else if (i11 != 4) {
-                    return aVar.f30608b;
+                    return aVar.f31176b;
                 } else {
                     return getYear() <= 0 ? r.e(1L, 1000000000L) : r.e(1L, 999999999L);
                 }
@@ -171,26 +171,26 @@ public final class LocalDate implements j$.time.temporal.k, j$.time.temporal.l, 
             if (nVar != j$.time.temporal.a.PROLEPTIC_MONTH) {
                 return w(nVar);
             }
-            return ((this.f30483a * 12) + this.f30484b) - 1;
+            return ((this.f31051a * 12) + this.f31052b) - 1;
         }
         return nVar.B(this);
     }
 
     public final int w(n nVar) {
-        switch (c.f30509a[((j$.time.temporal.a) nVar).ordinal()]) {
+        switch (c.f31077a[((j$.time.temporal.a) nVar).ordinal()]) {
             case 1:
-                return this.f30485c;
+                return this.f31053c;
             case 2:
                 return x();
             case 3:
-                return ((this.f30485c - 1) / 7) + 1;
+                return ((this.f31053c - 1) / 7) + 1;
             case 4:
-                int i10 = this.f30483a;
+                int i10 = this.f31051a;
                 return i10 >= 1 ? i10 : 1 - i10;
             case 5:
                 return getDayOfWeek().r();
             case 6:
-                return ((this.f30485c - 1) % 7) + 1;
+                return ((this.f31053c - 1) % 7) + 1;
             case 7:
                 return ((x() - 1) % 7) + 1;
             case 8:
@@ -198,36 +198,36 @@ public final class LocalDate implements j$.time.temporal.k, j$.time.temporal.l, 
             case 9:
                 return ((x() - 1) / 7) + 1;
             case 10:
-                return this.f30484b;
+                return this.f31052b;
             case 11:
                 throw new DateTimeException("Invalid field 'ProlepticMonth' for get() method, use getLong() instead");
             case 12:
-                return this.f30483a;
+                return this.f31051a;
             case 13:
-                return this.f30483a >= 1 ? 1 : 0;
+                return this.f31051a >= 1 ? 1 : 0;
             default:
                 throw new DateTimeException("Unsupported field: " + nVar);
         }
     }
 
     public int getYear() {
-        return this.f30483a;
+        return this.f31051a;
     }
 
     public int getMonthValue() {
-        return this.f30484b;
+        return this.f31052b;
     }
 
     public Month getMonth() {
-        return Month.w(this.f30484b);
+        return Month.w(this.f31052b);
     }
 
     public int getDayOfMonth() {
-        return this.f30485c;
+        return this.f31053c;
     }
 
     public final int x() {
-        return (getMonth().r(B()) + this.f30485c) - 1;
+        return (getMonth().r(B()) + this.f31053c) - 1;
     }
 
     public DayOfWeek getDayOfWeek() {
@@ -235,8 +235,8 @@ public final class LocalDate implements j$.time.temporal.k, j$.time.temporal.l, 
     }
 
     public final boolean B() {
-        j$.time.chrono.k kVar = j$.time.chrono.k.f30519a;
-        return j$.time.chrono.k.w(this.f30483a);
+        j$.time.chrono.k kVar = j$.time.chrono.k.f31087a;
+        return j$.time.chrono.k.w(this.f31051a);
     }
 
     @Override // j$.time.chrono.ChronoLocalDate
@@ -254,23 +254,23 @@ public final class LocalDate implements j$.time.temporal.k, j$.time.temporal.l, 
         if (nVar instanceof j$.time.temporal.a) {
             j$.time.temporal.a aVar = (j$.time.temporal.a) nVar;
             aVar.E(j10);
-            switch (c.f30509a[aVar.ordinal()]) {
+            switch (c.f31077a[aVar.ordinal()]) {
                 case 1:
                     int i10 = (int) j10;
-                    if (this.f30485c != i10) {
-                        return of(this.f30483a, this.f30484b, i10);
+                    if (this.f31053c != i10) {
+                        return of(this.f31051a, this.f31052b, i10);
                     }
                     break;
                 case 2:
                     int i11 = (int) j10;
                     if (x() != i11) {
-                        return C(this.f30483a, i11);
+                        return C(this.f31051a, i11);
                     }
                     break;
                 case 3:
                     return G(j10 - m(j$.time.temporal.a.ALIGNED_WEEK_OF_MONTH));
                 case 4:
-                    if (this.f30483a < 1) {
+                    if (this.f31051a < 1) {
                         j10 = 1 - j10;
                     }
                     return L((int) j10);
@@ -286,18 +286,18 @@ public final class LocalDate implements j$.time.temporal.k, j$.time.temporal.l, 
                     return G(j10 - m(j$.time.temporal.a.ALIGNED_WEEK_OF_YEAR));
                 case 10:
                     int i12 = (int) j10;
-                    if (this.f30484b != i12) {
+                    if (this.f31052b != i12) {
                         j$.time.temporal.a.MONTH_OF_YEAR.E(i12);
-                        return I(this.f30483a, i12, this.f30485c);
+                        return I(this.f31051a, i12, this.f31053c);
                     }
                     break;
                 case 11:
-                    return plusMonths(j10 - (((this.f30483a * 12) + this.f30484b) - 1));
+                    return plusMonths(j10 - (((this.f31051a * 12) + this.f31052b) - 1));
                 case 12:
                     return L((int) j10);
                 case 13:
                     if (m(j$.time.temporal.a.ERA) != j10) {
-                        return L(1 - this.f30483a);
+                        return L(1 - this.f31051a);
                     }
                     break;
                 default:
@@ -309,18 +309,18 @@ public final class LocalDate implements j$.time.temporal.k, j$.time.temporal.l, 
     }
 
     public final LocalDate L(int i10) {
-        if (this.f30483a == i10) {
+        if (this.f31051a == i10) {
             return this;
         }
         j$.time.temporal.a.YEAR.E(i10);
-        return I(i10, this.f30484b, this.f30485c);
+        return I(i10, this.f31052b, this.f31053c);
     }
 
     @Override // j$.time.chrono.ChronoLocalDate
     public final ChronoLocalDate u(h hVar) {
         if (hVar != null) {
             long j10 = 0;
-            return plusMonths((12 * j10) + j10).F(hVar.f30598a);
+            return plusMonths((12 * j10) + j10).F(hVar.f31166a);
         }
         Objects.requireNonNull(hVar, "amountToAdd");
         return (LocalDate) hVar.a(this);
@@ -330,7 +330,7 @@ public final class LocalDate implements j$.time.temporal.k, j$.time.temporal.l, 
     /* renamed from: E */
     public final LocalDate p(long j10, p pVar) {
         if (pVar instanceof j$.time.temporal.b) {
-            switch (c.f30510b[((j$.time.temporal.b) pVar).ordinal()]) {
+            switch (c.f31078b[((j$.time.temporal.b) pVar).ordinal()]) {
                 case 1:
                     return F(j10);
                 case 2:
@@ -360,16 +360,16 @@ public final class LocalDate implements j$.time.temporal.k, j$.time.temporal.l, 
             return this;
         }
         j$.time.temporal.a aVar = j$.time.temporal.a.YEAR;
-        return I(aVar.f30608b.a(this.f30483a + j10, aVar), this.f30484b, this.f30485c);
+        return I(aVar.f31176b.a(this.f31051a + j10, aVar), this.f31052b, this.f31053c);
     }
 
     public LocalDate plusMonths(long j10) {
         if (j10 == 0) {
             return this;
         }
-        long j11 = (this.f30483a * 12) + (this.f30484b - 1) + j10;
+        long j11 = (this.f31051a * 12) + (this.f31052b - 1) + j10;
         j$.time.temporal.a aVar = j$.time.temporal.a.YEAR;
-        return I(aVar.f30608b.a(Math.floorDiv(j11, 12L), aVar), ((int) Math.floorMod(j11, 12L)) + 1, this.f30485c);
+        return I(aVar.f31176b.a(Math.floorDiv(j11, 12L), aVar), ((int) Math.floorMod(j11, 12L)) + 1, this.f31053c);
     }
 
     public final LocalDate G(long j10) {
@@ -382,7 +382,7 @@ public final class LocalDate implements j$.time.temporal.k, j$.time.temporal.l, 
 
     @Override // j$.time.temporal.TemporalAccessor
     public final Object a(TemporalQuery temporalQuery) {
-        return temporalQuery == o.f30625f ? this : super.a(temporalQuery);
+        return temporalQuery == o.f31193f ? this : super.a(temporalQuery);
     }
 
     @Override // j$.time.chrono.ChronoLocalDate
@@ -393,15 +393,15 @@ public final class LocalDate implements j$.time.temporal.k, j$.time.temporal.l, 
     @Override // j$.time.chrono.ChronoLocalDate
     public long toEpochDay() {
         long j10;
-        long j11 = this.f30483a;
-        long j12 = this.f30484b;
+        long j11 = this.f31051a;
+        long j12 = this.f31052b;
         long j13 = 365 * j11;
         if (j11 >= 0) {
             j10 = ((j11 + 399) / 400) + (((3 + j11) / 4) - ((99 + j11) / 100)) + j13;
         } else {
             j10 = j13 - ((j11 / (-400)) + ((j11 / (-4)) - (j11 / (-100))));
         }
-        long j14 = (((367 * j12) - 362) / 12) + j10 + (this.f30485c - 1);
+        long j14 = (((367 * j12) - 362) / 12) + j10 + (this.f31053c - 1);
         if (j12 > 2) {
             j14 = !B() ? j14 - 2 : j14 - 1;
         }
@@ -417,10 +417,10 @@ public final class LocalDate implements j$.time.temporal.k, j$.time.temporal.l, 
     }
 
     public final int r(LocalDate localDate) {
-        int i10 = this.f30483a - localDate.f30483a;
+        int i10 = this.f31051a - localDate.f31051a;
         if (i10 == 0) {
-            int i11 = this.f30484b - localDate.f30484b;
-            return i11 == 0 ? this.f30485c - localDate.f30485c : i11;
+            int i11 = this.f31052b - localDate.f31052b;
+            return i11 == 0 ? this.f31053c - localDate.f31053c : i11;
         }
         return i10;
     }
@@ -435,15 +435,15 @@ public final class LocalDate implements j$.time.temporal.k, j$.time.temporal.l, 
 
     @Override // j$.time.chrono.ChronoLocalDate
     public int hashCode() {
-        int i10 = this.f30483a;
-        return (((i10 << 11) + (this.f30484b << 6)) + this.f30485c) ^ (i10 & (-2048));
+        int i10 = this.f31051a;
+        return (((i10 << 11) + (this.f31052b << 6)) + this.f31053c) ^ (i10 & (-2048));
     }
 
     @Override // j$.time.chrono.ChronoLocalDate
     public String toString() {
-        int i10 = this.f30483a;
-        short s10 = this.f30484b;
-        short s11 = this.f30485c;
+        int i10 = this.f31051a;
+        short s10 = this.f31052b;
+        short s11 = this.f31053c;
         int abs = Math.abs(i10);
         StringBuilder sb2 = new StringBuilder(10);
         if (abs >= 1000) {

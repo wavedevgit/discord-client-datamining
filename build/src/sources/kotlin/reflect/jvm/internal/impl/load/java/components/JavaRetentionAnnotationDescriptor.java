@@ -21,17 +21,17 @@ import org.jetbrains.annotations.NotNull;
 public final class JavaRetentionAnnotationDescriptor extends JavaAnnotationDescriptor {
 
     /* renamed from: h  reason: collision with root package name */
-    static final /* synthetic */ KProperty[] f32791h = {Reflection.property1(new PropertyReference1Impl(JavaRetentionAnnotationDescriptor.class, "allValueArguments", "getAllValueArguments()Ljava/util/Map;", 0))};
+    static final /* synthetic */ KProperty[] f33359h = {Reflection.property1(new PropertyReference1Impl(JavaRetentionAnnotationDescriptor.class, "allValueArguments", "getAllValueArguments()Ljava/util/Map;", 0))};
 
     /* renamed from: g  reason: collision with root package name */
-    private final NotNullLazyValue f32792g;
+    private final NotNullLazyValue f33360g;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public JavaRetentionAnnotationDescriptor(@NotNull JavaAnnotation annotation, @NotNull LazyJavaResolverContext c10) {
         super(c10, annotation, StandardNames.FqNames.retention);
         Intrinsics.checkNotNullParameter(annotation, "annotation");
         Intrinsics.checkNotNullParameter(c10, "c");
-        this.f32792g = c10.getStorageManager().createLazyValue(new d(this));
+        this.f33360g = c10.getStorageManager().createLazyValue(new d(this));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -52,6 +52,6 @@ public final class JavaRetentionAnnotationDescriptor extends JavaAnnotationDescr
     @Override // kotlin.reflect.jvm.internal.impl.load.java.components.JavaAnnotationDescriptor, kotlin.reflect.jvm.internal.impl.descriptors.annotations.AnnotationDescriptor
     @NotNull
     public Map<Name, ConstantValue<?>> getAllValueArguments() {
-        return (Map) StorageKt.getValue(this.f32792g, this, f32791h[0]);
+        return (Map) StorageKt.getValue(this.f33360g, this, f33359h[0]);
     }
 }

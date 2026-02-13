@@ -5,7 +5,7 @@ import bj.c;
 final class k6 implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final k6 f46932a = new k6();
+    static final k6 f47500a = new k6();
 
     static {
         c.b a10 = bj.c.a("supportedFormats");

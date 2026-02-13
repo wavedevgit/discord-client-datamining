@@ -62,7 +62,7 @@ public final class PollMedia {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final /* synthetic */ KSerializer _childSerializers$_anonymous_() {
-        return new w0(n2.f50033a);
+        return new w0(n2.f50601a);
     }
 
     /* JADX WARN: Multi-variable type inference failed */
@@ -85,7 +85,7 @@ public final class PollMedia {
     public static final /* synthetic */ void write$Self$chat_release(PollMedia pollMedia, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
         Lazy[] lazyArr = $childSerializers;
         if (compositeEncoder.z(serialDescriptor, 0) || pollMedia.text != null) {
-            compositeEncoder.o(serialDescriptor, 0, n2.f50033a, pollMedia.text);
+            compositeEncoder.o(serialDescriptor, 0, n2.f50601a, pollMedia.text);
         }
         if (compositeEncoder.z(serialDescriptor, 1) || !Intrinsics.areEqual(pollMedia.attachmentIds, x0.d())) {
             compositeEncoder.k(serialDescriptor, 1, (qt.o) lazyArr[1].getValue(), pollMedia.attachmentIds);
@@ -94,7 +94,7 @@ public final class PollMedia {
             compositeEncoder.o(serialDescriptor, 2, PollMediaEmoji$$serializer.INSTANCE, pollMedia.emoji);
         }
         if (compositeEncoder.z(serialDescriptor, 3) || pollMedia.stickerId != null) {
-            compositeEncoder.o(serialDescriptor, 3, z0.f50107a, pollMedia.stickerId);
+            compositeEncoder.o(serialDescriptor, 3, z0.f50675a, pollMedia.stickerId);
         }
     }
 

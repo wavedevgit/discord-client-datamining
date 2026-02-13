@@ -228,15 +228,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var1 = var0.length;
                     var0 = 1;
                     if (!(var0 === var1)) {
-                        _fun6057_ip = 52;
+                        _fun6057_ip = 51;
                         continue _fun6057
                     }
-                case 27:
+                case 26:
                     var2 = _closure1_slot8;
                     var1 = var2._initializeGestureState;
                     var0 = _closure2_slot2;
                     var0 = var1.bind(var2)(var0);
-                case 52:
+                case 51:
                     var2 = _closure2_slot2;
                     var0 = var4.touchHistory;
                     var0 = var0.numberActiveTouches;
@@ -246,15 +246,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var0 = null;
                     var0 = var0 != var2;
                     if (!var0) {
-                        _fun6057_ip = 116;
+                        _fun6057_ip = 115;
                         continue _fun6057
                     }
-                case 96:
+                case 95:
                     var3 = _closure2_slot0;
                     var2 = var3.onStartShouldSetPanResponderCapture;
                     var1 = _closure2_slot2;
                     var0 = var2.bind(var3)(var4, var1);
-                case 116:
+                case 115:
                     return var0;
             }
         };

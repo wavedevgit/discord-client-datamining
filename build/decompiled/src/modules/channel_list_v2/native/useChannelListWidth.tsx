@@ -29,7 +29,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/channel_list_v2/native/useChannelListWidth.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function() {
-        _fun93493: for (var _fun93493_ip = 0;;) switch (_fun93493_ip) {
+        _fun93535: for (var _fun93535_ip = 0;;) switch (_fun93535_ip) {
             case 0:
                 var6 = _closure1_slot0;
                 var7 = _closure1_slot2;
@@ -58,14 +58,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1 - var0;
                 var0 = 0;
                 if (!var5) {
-                    _fun93493_ip = 126;
-                    continue _fun93493
+                    _fun93535_ip = 126;
+                    continue _fun93535
                 }
             case 117:
                 var0 = 0;
                 if (var3) {
-                    _fun93493_ip = 126;
-                    continue _fun93493
+                    _fun93535_ip = 126;
+                    continue _fun93535
                 }
             case 122:
                 var0 = _closure1_slot3;
@@ -76,7 +76,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var3;
     var1 = function() {
-        _fun93494: for (var _fun93494_ip = 0;;) switch (_fun93494_ip) {
+        _fun93536: for (var _fun93536_ip = 0;;) switch (_fun93536_ip) {
             case 0:
                 var5 = _closure1_slot0;
                 var6 = _closure1_slot2;
@@ -99,8 +99,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1 - var0;
                 var0 = 0;
                 if (!var3) {
-                    _fun93494_ip = 94;
-                    continue _fun93494
+                    _fun93536_ip = 94;
+                    continue _fun93536
                 }
             case 90:
                 var0 = _closure1_slot3;
@@ -111,4 +111,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getChannelListWidth = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [9152, 9834, 3919, 670, 5251, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [8861, 9898, 3919, 670, 5281, 2]);

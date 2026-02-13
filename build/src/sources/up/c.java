@@ -7,16 +7,16 @@ import kotlin.jvm.internal.Intrinsics;
 public final class c {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final a f50883d = new a(null);
+    public static final a f51451d = new a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private boolean f50884a;
+    private boolean f51452a;
 
     /* renamed from: b  reason: collision with root package name */
-    private b f50885b = b.f50889e;
+    private b f51453b = b.f51457e;
 
     /* renamed from: c  reason: collision with root package name */
-    private boolean f50886c = true;
+    private boolean f51454c = true;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -26,19 +26,19 @@ public final class c {
         public /* synthetic */ class C0700a {
 
             /* renamed from: a  reason: collision with root package name */
-            public static final /* synthetic */ int[] f50887a;
+            public static final /* synthetic */ int[] f51455a;
 
             static {
                 int[] iArr = new int[b.values().length];
                 try {
-                    iArr[b.f50888d.ordinal()] = 1;
+                    iArr[b.f51456d.ordinal()] = 1;
                 } catch (NoSuchFieldError unused) {
                 }
                 try {
-                    iArr[b.f50889e.ordinal()] = 2;
+                    iArr[b.f51457e.ordinal()] = 2;
                 } catch (NoSuchFieldError unused2) {
                 }
-                f50887a = iArr;
+                f51455a = iArr;
             }
         }
 
@@ -48,7 +48,7 @@ public final class c {
 
         public final String a(b bVar) {
             Intrinsics.checkNotNullParameter(bVar, "<this>");
-            int i10 = C0700a.f50887a[bVar.ordinal()];
+            int i10 = C0700a.f51455a[bVar.ordinal()];
             if (i10 != 1) {
                 if (i10 == 2) {
                     return "passed";
@@ -68,28 +68,28 @@ public final class c {
     public static final class b {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final b f50888d = new b("Failed", 0);
+        public static final b f51456d = new b("Failed", 0);
 
         /* renamed from: e  reason: collision with root package name */
-        public static final b f50889e = new b("Passed", 1);
+        public static final b f51457e = new b("Passed", 1);
 
         /* renamed from: i  reason: collision with root package name */
-        private static final /* synthetic */ b[] f50890i;
+        private static final /* synthetic */ b[] f51458i;
 
         /* renamed from: o  reason: collision with root package name */
-        private static final /* synthetic */ EnumEntries f50891o;
+        private static final /* synthetic */ EnumEntries f51459o;
 
         static {
             b[] a10 = a();
-            f50890i = a10;
-            f50891o = hs.a.a(a10);
+            f51458i = a10;
+            f51459o = hs.a.a(a10);
         }
 
         private b(String str, int i10) {
         }
 
         private static final /* synthetic */ b[] a() {
-            return new b[]{f50888d, f50889e};
+            return new b[]{f51456d, f51457e};
         }
 
         public static b valueOf(String str) {
@@ -97,7 +97,7 @@ public final class c {
         }
 
         public static b[] values() {
-            return (b[]) f50890i.clone();
+            return (b[]) f51458i.clone();
         }
     }
 
@@ -106,57 +106,57 @@ public final class c {
     public /* synthetic */ class C0701c {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final /* synthetic */ int[] f50892a;
+        public static final /* synthetic */ int[] f51460a;
 
         static {
             int[] iArr = new int[b.values().length];
             try {
-                iArr[b.f50888d.ordinal()] = 1;
+                iArr[b.f51456d.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                iArr[b.f50889e.ordinal()] = 2;
+                iArr[b.f51457e.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
-            f50892a = iArr;
+            f51460a = iArr;
         }
     }
 
     public final b a() {
-        return this.f50885b;
+        return this.f51453b;
     }
 
     public final boolean b() {
-        if (this.f50884a && this.f50886c) {
+        if (this.f51452a && this.f51454c) {
             return true;
         }
         return false;
     }
 
     public final boolean c() {
-        return this.f50884a;
+        return this.f51452a;
     }
 
     public final void d(boolean z10) {
-        this.f50884a = z10;
+        this.f51452a = z10;
     }
 
     public final void e(boolean z10) {
-        this.f50886c = z10;
+        this.f51454c = z10;
     }
 
     public final void f() {
         b bVar;
-        int i10 = C0701c.f50892a[this.f50885b.ordinal()];
+        int i10 = C0701c.f51460a[this.f51453b.ordinal()];
         if (i10 != 1) {
             if (i10 == 2) {
-                bVar = b.f50888d;
+                bVar = b.f51456d;
             } else {
                 throw new as.p();
             }
         } else {
-            bVar = b.f50889e;
+            bVar = b.f51457e;
         }
-        this.f50885b = bVar;
+        this.f51453b = bVar;
     }
 }

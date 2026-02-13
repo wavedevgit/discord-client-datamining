@@ -33044,35 +33044,35 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var1.defaultPrevented = var0;
                         var2 = var1.nativeEvent;
                         if (!var2) {
-                            _fun3838_ip = 79;
+                            _fun3838_ip = 78;
                             continue _fun3838
                         }
-                    case 20:
+                    case 19:
                         var0 = var2.preventDefault;
                         if (var0) {
-                            _fun3838_ip = 56;
+                            _fun3838_ip = 55;
                             continue _fun3838
                         }
-                    case 29:
+                    case 28:
                         var0 = var2.returnValue;
                         var3 = 'unknown';
                         var0 = typeof var0;
                         if (!(var3 !== var0)) {
-                            _fun3838_ip = 66;
+                            _fun3838_ip = 65;
                             continue _fun3838
                         }
-                    case 46:
+                    case 45:
                         var0 = false;
                         var2.returnValue = var0;
-                        _fun3838_ip = 66;
+                        _fun3838_ip = 65;
                         continue _fun3838;
-                    case 56:
+                    case 55:
                         var0 = var2.preventDefault;
                         var0 = var0.bind(var2)();
-                    case 66:
+                    case 65:
                         var0 = _closure1_slot195;
                         var1.isDefaultPrevented = var0;
-                    case 79:
+                    case 78:
                         var0 = undefined;
                         return var0;
                 }
@@ -33084,35 +33084,35 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var1 = this;
                         var2 = var1.nativeEvent;
                         if (!var2) {
-                            _fun3839_ip = 71;
+                            _fun3839_ip = 70;
                             continue _fun3839
                         }
-                    case 12:
+                    case 11:
                         var0 = var2.stopPropagation;
                         if (var0) {
-                            _fun3839_ip = 48;
+                            _fun3839_ip = 47;
                             continue _fun3839
                         }
-                    case 21:
+                    case 20:
                         var0 = var2.cancelBubble;
                         var3 = 'unknown';
                         var0 = typeof var0;
                         if (!(var3 !== var0)) {
-                            _fun3839_ip = 58;
+                            _fun3839_ip = 57;
                             continue _fun3839
                         }
-                    case 38:
+                    case 37:
                         var0 = true;
                         var2.cancelBubble = var0;
-                        _fun3839_ip = 58;
+                        _fun3839_ip = 57;
                         continue _fun3839;
-                    case 48:
+                    case 47:
                         var0 = var2.stopPropagation;
                         var0 = var0.bind(var2)();
-                    case 58:
+                    case 57:
                         var0 = _closure1_slot195;
                         var1.isPropagationStopped = var0;
-                    case 71:
+                    case 70:
                         var0 = undefined;
                         return var0;
                 }

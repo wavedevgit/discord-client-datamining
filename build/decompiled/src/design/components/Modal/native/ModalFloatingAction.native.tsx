@@ -65,7 +65,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/Modal/native/ModalFloatingAction.native.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function arg0() {
-        _fun87253: for (var _fun87253_ip = 0;;) switch (_fun87253_ip) {
+        _fun73637: for (var _fun73637_ip = 0;;) switch (_fun73637_ip) {
             case 0:
                 var3 = arg0;
                 var6 = var3.isVisible;
@@ -94,8 +94,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var9.useSharedValue;
                 var0 = 0;
                 if (!var6) {
-                    _fun87253_ip = 109;
-                    continue _fun87253
+                    _fun73637_ip = 109;
+                    continue _fun73637
                 }
             case 106:
                 var0 = 1;
@@ -124,7 +124,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12[0] = var6;
                 var12[1] = var16;
                 var10 = function() { // Environment: var2
-                    _fun87254: for (var _fun87254_ip = 0;;) switch (_fun87254_ip) {
+                    _fun73638: for (var _fun73638_ip = 0;;) switch (_fun73638_ip) {
                         case 0:
                             var3 = _closure2_slot2;
                             var2 = var3.set;
@@ -138,8 +138,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var4 = _closure2_slot0;
                             var5 = 0;
                             if (!var4) {
-                                _fun87254_ip = 54;
-                                continue _fun87254
+                                _fun73638_ip = 54;
+                                continue _fun73638
                             }
                         case 51:
                             var5 = 1;
@@ -161,7 +161,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12 = var18.bind(var3)(var10);
                 var10 = var12.useAnimatedStyle;
                 var2 = function() {
-                    _fun87255: for (var _fun87255_ip = 0;;) switch (_fun87255_ip) {
+                    _fun73639: for (var _fun73639_ip = 0;;) switch (_fun73639_ip) {
                         case 0:
                             var0 = {};
                             var5 = _closure1_slot0;
@@ -192,8 +192,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var3 = _closure2_slot3;
                             var1 = 0;
                             if (!var3) {
-                                _fun87255_ip = 146;
-                                continue _fun87255
+                                _fun73639_ip = 146;
+                                continue _fun73639
                             }
                         case 136:
                             var1 = 0.999999;
@@ -241,8 +241,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.style = var4;
                 var4 = 'none';
                 if (!var6) {
-                    _fun87253_ip = 389;
-                    continue _fun87253
+                    _fun73637_ip = 389;
+                    continue _fun73637
                 }
             case 385:
                 var4 = 'auto';
@@ -309,4 +309,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.ModalFloatingActionSpacer = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 3717, 3167, 1568, 4087, 4093, 4104, 669, 11239, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 3717, 3170, 1568, 4087, 4093, 4104, 669, 9247, 2]);

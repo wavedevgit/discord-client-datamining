@@ -13,16 +13,16 @@ public final class h5 implements k5, v, e0 {
     public static final Parcelable.Creator<h5> CREATOR = new a();
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f42959d;
+    private final String f43527d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final JsonLogicBoolean f42960e;
+    private final JsonLogicBoolean f43528e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final JsonLogicBoolean f42961i;
+    private final JsonLogicBoolean f43529i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final List f42962o;
+    private final List f43530o;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements Parcelable.Creator {
@@ -42,15 +42,15 @@ public final class h5 implements k5, v, e0 {
 
     public h5(String name, JsonLogicBoolean jsonLogicBoolean, JsonLogicBoolean jsonLogicBoolean2) {
         Intrinsics.checkNotNullParameter(name, "name");
-        this.f42959d = name;
-        this.f42960e = jsonLogicBoolean;
-        this.f42961i = jsonLogicBoolean2;
-        this.f42962o = new ArrayList();
+        this.f43527d = name;
+        this.f43528e = jsonLogicBoolean;
+        this.f43529i = jsonLogicBoolean2;
+        this.f43530o = new ArrayList();
     }
 
     @Override // pq.e0
     public List d() {
-        return this.f42962o;
+        return this.f43530o;
     }
 
     @Override // android.os.Parcelable
@@ -66,7 +66,7 @@ public final class h5 implements k5, v, e0 {
             return false;
         }
         h5 h5Var = (h5) obj;
-        if (Intrinsics.areEqual(this.f42959d, h5Var.f42959d) && Intrinsics.areEqual(this.f42960e, h5Var.f42960e) && Intrinsics.areEqual(this.f42961i, h5Var.f42961i)) {
+        if (Intrinsics.areEqual(this.f43527d, h5Var.f43527d) && Intrinsics.areEqual(this.f43528e, h5Var.f43528e) && Intrinsics.areEqual(this.f43529i, h5Var.f43529i)) {
             return true;
         }
         return false;
@@ -74,23 +74,23 @@ public final class h5 implements k5, v, e0 {
 
     @Override // pq.v
     public JsonLogicBoolean getDisabled() {
-        return this.f42961i;
+        return this.f43529i;
     }
 
     @Override // pq.e0
     public JsonLogicBoolean getHidden() {
-        return this.f42960e;
+        return this.f43528e;
     }
 
     @Override // pq.k5
     public String getName() {
-        return this.f42959d;
+        return this.f43527d;
     }
 
     public int hashCode() {
         int hashCode;
-        int hashCode2 = this.f42959d.hashCode() * 31;
-        JsonLogicBoolean jsonLogicBoolean = this.f42960e;
+        int hashCode2 = this.f43527d.hashCode() * 31;
+        JsonLogicBoolean jsonLogicBoolean = this.f43528e;
         int i10 = 0;
         if (jsonLogicBoolean == null) {
             hashCode = 0;
@@ -98,7 +98,7 @@ public final class h5 implements k5, v, e0 {
             hashCode = jsonLogicBoolean.hashCode();
         }
         int i11 = (hashCode2 + hashCode) * 31;
-        JsonLogicBoolean jsonLogicBoolean2 = this.f42961i;
+        JsonLogicBoolean jsonLogicBoolean2 = this.f43529i;
         if (jsonLogicBoolean2 != null) {
             i10 = jsonLogicBoolean2.hashCode();
         }
@@ -106,18 +106,18 @@ public final class h5 implements k5, v, e0 {
     }
 
     public String toString() {
-        String str = this.f42959d;
-        JsonLogicBoolean jsonLogicBoolean = this.f42960e;
-        JsonLogicBoolean jsonLogicBoolean2 = this.f42961i;
+        String str = this.f43527d;
+        JsonLogicBoolean jsonLogicBoolean = this.f43528e;
+        JsonLogicBoolean jsonLogicBoolean2 = this.f43529i;
         return "TitleComponent(name=" + str + ", hidden=" + jsonLogicBoolean + ", disabled=" + jsonLogicBoolean2 + ")";
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel dest, int i10) {
         Intrinsics.checkNotNullParameter(dest, "dest");
-        dest.writeString(this.f42959d);
-        dest.writeParcelable(this.f42960e, i10);
-        dest.writeParcelable(this.f42961i, i10);
+        dest.writeString(this.f43527d);
+        dest.writeParcelable(this.f43528e, i10);
+        dest.writeParcelable(this.f43529i, i10);
     }
 
     /* JADX WARN: Illegal instructions before constructor call */

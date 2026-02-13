@@ -73,34 +73,34 @@ public final class KClassValue extends ConstantValue<Value> {
         public static final class LocalClass extends Value {
 
             /* renamed from: a  reason: collision with root package name */
-            private final KotlinType f34132a;
+            private final KotlinType f34700a;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             public LocalClass(@NotNull KotlinType type) {
                 super(null);
                 Intrinsics.checkNotNullParameter(type, "type");
-                this.f34132a = type;
+                this.f34700a = type;
             }
 
             public boolean equals(Object obj) {
                 if (this == obj) {
                     return true;
                 }
-                return (obj instanceof LocalClass) && Intrinsics.areEqual(this.f34132a, ((LocalClass) obj).f34132a);
+                return (obj instanceof LocalClass) && Intrinsics.areEqual(this.f34700a, ((LocalClass) obj).f34700a);
             }
 
             @NotNull
             public final KotlinType getType() {
-                return this.f34132a;
+                return this.f34700a;
             }
 
             public int hashCode() {
-                return this.f34132a.hashCode();
+                return this.f34700a.hashCode();
             }
 
             @NotNull
             public String toString() {
-                return "LocalClass(type=" + this.f34132a + ')';
+                return "LocalClass(type=" + this.f34700a + ')';
             }
         }
 
@@ -108,43 +108,43 @@ public final class KClassValue extends ConstantValue<Value> {
         public static final class NormalClass extends Value {
 
             /* renamed from: a  reason: collision with root package name */
-            private final ClassLiteralValue f34133a;
+            private final ClassLiteralValue f34701a;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             public NormalClass(@NotNull ClassLiteralValue value) {
                 super(null);
                 Intrinsics.checkNotNullParameter(value, "value");
-                this.f34133a = value;
+                this.f34701a = value;
             }
 
             public boolean equals(Object obj) {
                 if (this == obj) {
                     return true;
                 }
-                return (obj instanceof NormalClass) && Intrinsics.areEqual(this.f34133a, ((NormalClass) obj).f34133a);
+                return (obj instanceof NormalClass) && Intrinsics.areEqual(this.f34701a, ((NormalClass) obj).f34701a);
             }
 
             public final int getArrayDimensions() {
-                return this.f34133a.getArrayNestedness();
+                return this.f34701a.getArrayNestedness();
             }
 
             @NotNull
             public final ClassId getClassId() {
-                return this.f34133a.getClassId();
+                return this.f34701a.getClassId();
             }
 
             @NotNull
             public final ClassLiteralValue getValue() {
-                return this.f34133a;
+                return this.f34701a;
             }
 
             public int hashCode() {
-                return this.f34133a.hashCode();
+                return this.f34701a.hashCode();
             }
 
             @NotNull
             public String toString() {
-                return "NormalClass(value=" + this.f34133a + ')';
+                return "NormalClass(value=" + this.f34701a + ')';
             }
         }
 

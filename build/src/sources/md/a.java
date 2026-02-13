@@ -10,16 +10,16 @@ public final class a extends i {
     public static final Parcelable.Creator<a> CREATOR = new C0514a();
 
     /* renamed from: e  reason: collision with root package name */
-    public final String f36287e;
+    public final String f36855e;
 
     /* renamed from: i  reason: collision with root package name */
-    public final String f36288i;
+    public final String f36856i;
 
     /* renamed from: o  reason: collision with root package name */
-    public final int f36289o;
+    public final int f36857o;
 
     /* renamed from: p  reason: collision with root package name */
-    public final byte[] f36290p;
+    public final byte[] f36858p;
 
     /* renamed from: md.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
@@ -42,10 +42,10 @@ public final class a extends i {
 
     public a(String str, String str2, int i10, byte[] bArr) {
         super("APIC");
-        this.f36287e = str;
-        this.f36288i = str2;
-        this.f36289o = i10;
-        this.f36290p = bArr;
+        this.f36855e = str;
+        this.f36856i = str2;
+        this.f36857o = i10;
+        this.f36858p = bArr;
     }
 
     public boolean equals(Object obj) {
@@ -54,7 +54,7 @@ public final class a extends i {
         }
         if (obj != null && a.class == obj.getClass()) {
             a aVar = (a) obj;
-            if (this.f36289o == aVar.f36289o && w0.c(this.f36287e, aVar.f36287e) && w0.c(this.f36288i, aVar.f36288i) && Arrays.equals(this.f36290p, aVar.f36290p)) {
+            if (this.f36857o == aVar.f36857o && w0.c(this.f36855e, aVar.f36855e) && w0.c(this.f36856i, aVar.f36856i) && Arrays.equals(this.f36858p, aVar.f36858p)) {
                 return true;
             }
         }
@@ -63,13 +63,13 @@ public final class a extends i {
 
     @Override // com.google.android.exoplayer2.metadata.Metadata.b
     public void f1(MediaMetadata.b bVar) {
-        bVar.I(this.f36290p, this.f36289o);
+        bVar.I(this.f36858p, this.f36857o);
     }
 
     public int hashCode() {
         int i10;
-        int i11 = (527 + this.f36289o) * 31;
-        String str = this.f36287e;
+        int i11 = (527 + this.f36857o) * 31;
+        String str = this.f36855e;
         int i12 = 0;
         if (str != null) {
             i10 = str.hashCode();
@@ -77,31 +77,31 @@ public final class a extends i {
             i10 = 0;
         }
         int i13 = (i11 + i10) * 31;
-        String str2 = this.f36288i;
+        String str2 = this.f36856i;
         if (str2 != null) {
             i12 = str2.hashCode();
         }
-        return ((i13 + i12) * 31) + Arrays.hashCode(this.f36290p);
+        return ((i13 + i12) * 31) + Arrays.hashCode(this.f36858p);
     }
 
     @Override // md.i
     public String toString() {
-        return this.f36315d + ": mimeType=" + this.f36287e + ", description=" + this.f36288i;
+        return this.f36883d + ": mimeType=" + this.f36855e + ", description=" + this.f36856i;
     }
 
     @Override // android.os.Parcelable
     public void writeToParcel(Parcel parcel, int i10) {
-        parcel.writeString(this.f36287e);
-        parcel.writeString(this.f36288i);
-        parcel.writeInt(this.f36289o);
-        parcel.writeByteArray(this.f36290p);
+        parcel.writeString(this.f36855e);
+        parcel.writeString(this.f36856i);
+        parcel.writeInt(this.f36857o);
+        parcel.writeByteArray(this.f36858p);
     }
 
     a(Parcel parcel) {
         super("APIC");
-        this.f36287e = (String) w0.j(parcel.readString());
-        this.f36288i = parcel.readString();
-        this.f36289o = parcel.readInt();
-        this.f36290p = (byte[]) w0.j(parcel.createByteArray());
+        this.f36855e = (String) w0.j(parcel.readString());
+        this.f36856i = parcel.readString();
+        this.f36857o = parcel.readInt();
+        this.f36858p = (byte[]) w0.j(parcel.createByteArray());
     }
 }

@@ -14,68 +14,68 @@ import java.util.NoSuchElementException;
 public final class d implements Closeable, Iterable {
 
     /* renamed from: x  reason: collision with root package name */
-    private static final byte[] f29158x = new byte[RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT];
+    private static final byte[] f29726x = new byte[RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT];
 
     /* renamed from: d  reason: collision with root package name */
-    RandomAccessFile f29159d;
+    RandomAccessFile f29727d;
 
     /* renamed from: e  reason: collision with root package name */
-    final File f29160e;
+    final File f29728e;
 
     /* renamed from: o  reason: collision with root package name */
-    long f29162o;
+    long f29730o;
 
     /* renamed from: p  reason: collision with root package name */
-    int f29163p;
+    int f29731p;
 
     /* renamed from: q  reason: collision with root package name */
-    b f29164q;
+    b f29732q;
 
     /* renamed from: r  reason: collision with root package name */
-    private b f29165r;
+    private b f29733r;
 
     /* renamed from: u  reason: collision with root package name */
-    private final boolean f29168u;
+    private final boolean f29736u;
 
     /* renamed from: v  reason: collision with root package name */
-    private final int f29169v;
+    private final int f29737v;
 
     /* renamed from: w  reason: collision with root package name */
-    boolean f29170w;
+    boolean f29738w;
 
     /* renamed from: i  reason: collision with root package name */
-    final int f29161i = 32;
+    final int f29729i = 32;
 
     /* renamed from: s  reason: collision with root package name */
-    private final byte[] f29166s = new byte[32];
+    private final byte[] f29734s = new byte[32];
 
     /* renamed from: t  reason: collision with root package name */
-    int f29167t = 0;
+    int f29735t = 0;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        final File f29171a;
+        final File f29739a;
 
         /* renamed from: b  reason: collision with root package name */
-        boolean f29172b = true;
+        boolean f29740b = true;
 
         /* renamed from: c  reason: collision with root package name */
-        int f29173c = -1;
+        int f29741c = -1;
 
         public a(File file) {
             if (file != null) {
-                this.f29171a = file;
+                this.f29739a = file;
                 return;
             }
             throw new NullPointerException("file == null");
         }
 
         public d a() {
-            RandomAccessFile H0 = d.H0(this.f29171a);
+            RandomAccessFile H0 = d.H0(this.f29739a);
             try {
-                return new d(this.f29171a, H0, this.f29172b, this.f29173c);
+                return new d(this.f29739a, H0, this.f29740b, this.f29741c);
             } catch (Throwable th2) {
                 H0.close();
                 throw th2;
@@ -83,7 +83,7 @@ public final class d implements Closeable, Iterable {
         }
 
         public a b(int i10) {
-            this.f29173c = i10;
+            this.f29741c = i10;
             return this;
         }
     }
@@ -93,21 +93,21 @@ public final class d implements Closeable, Iterable {
     public static final class b {
 
         /* renamed from: c  reason: collision with root package name */
-        static final b f29174c = new b(0, 0);
+        static final b f29742c = new b(0, 0);
 
         /* renamed from: a  reason: collision with root package name */
-        final long f29175a;
+        final long f29743a;
 
         /* renamed from: b  reason: collision with root package name */
-        final int f29176b;
+        final int f29744b;
 
         b(long j10, int i10) {
-            this.f29175a = j10;
-            this.f29176b = i10;
+            this.f29743a = j10;
+            this.f29744b = i10;
         }
 
         public String toString() {
-            return b.class.getSimpleName() + "[position=" + this.f29175a + ", length=" + this.f29176b + "]";
+            return b.class.getSimpleName() + "[position=" + this.f29743a + ", length=" + this.f29744b + "]";
         }
     }
 
@@ -115,21 +115,21 @@ public final class d implements Closeable, Iterable {
     private final class c implements Iterator {
 
         /* renamed from: d  reason: collision with root package name */
-        int f29177d = 0;
+        int f29745d = 0;
 
         /* renamed from: e  reason: collision with root package name */
-        private long f29178e;
+        private long f29746e;
 
         /* renamed from: i  reason: collision with root package name */
-        int f29179i;
+        int f29747i;
 
         c() {
-            this.f29178e = d.this.f29164q.f29175a;
-            this.f29179i = d.this.f29167t;
+            this.f29746e = d.this.f29732q.f29743a;
+            this.f29747i = d.this.f29735t;
         }
 
         private void a() {
-            if (d.this.f29167t == this.f29179i) {
+            if (d.this.f29735t == this.f29747i) {
                 return;
             }
             throw new ConcurrentModificationException();
@@ -138,24 +138,24 @@ public final class d implements Closeable, Iterable {
         @Override // java.util.Iterator
         /* renamed from: b */
         public byte[] next() {
-            if (!d.this.f29170w) {
+            if (!d.this.f29738w) {
                 a();
                 if (!d.this.isEmpty()) {
-                    int i10 = this.f29177d;
+                    int i10 = this.f29745d;
                     d dVar = d.this;
-                    if (i10 < dVar.f29163p) {
+                    if (i10 < dVar.f29731p) {
                         try {
                             try {
-                                b O0 = dVar.O0(this.f29178e);
-                                byte[] bArr = new byte[O0.f29176b];
-                                long Y1 = d.this.Y1(O0.f29175a + 4);
-                                this.f29178e = Y1;
-                                if (!d.this.z1(Y1, bArr, 0, O0.f29176b)) {
-                                    this.f29177d = d.this.f29163p;
-                                    return d.f29158x;
+                                b O0 = dVar.O0(this.f29746e);
+                                byte[] bArr = new byte[O0.f29744b];
+                                long Y1 = d.this.Y1(O0.f29743a + 4);
+                                this.f29746e = Y1;
+                                if (!d.this.z1(Y1, bArr, 0, O0.f29744b)) {
+                                    this.f29745d = d.this.f29731p;
+                                    return d.f29726x;
                                 }
-                                this.f29178e = d.this.Y1(O0.f29175a + 4 + O0.f29176b);
-                                this.f29177d++;
+                                this.f29746e = d.this.Y1(O0.f29743a + 4 + O0.f29744b);
+                                this.f29745d++;
                                 return bArr;
                             } catch (IOException e10) {
                                 throw ((Error) d.Q(e10));
@@ -164,8 +164,8 @@ public final class d implements Closeable, Iterable {
                             throw ((Error) d.Q(e11));
                         } catch (OutOfMemoryError unused) {
                             d.this.w1();
-                            this.f29177d = d.this.f29163p;
-                            return d.f29158x;
+                            this.f29745d = d.this.f29731p;
+                            return d.f29726x;
                         }
                     }
                     throw new NoSuchElementException();
@@ -177,9 +177,9 @@ public final class d implements Closeable, Iterable {
 
         @Override // java.util.Iterator
         public boolean hasNext() {
-            if (!d.this.f29170w) {
+            if (!d.this.f29738w) {
                 a();
-                if (this.f29177d != d.this.f29163p) {
+                if (this.f29745d != d.this.f29731p) {
                     return true;
                 }
                 return false;
@@ -191,11 +191,11 @@ public final class d implements Closeable, Iterable {
         public void remove() {
             a();
             if (!d.this.isEmpty()) {
-                if (this.f29177d == 1) {
+                if (this.f29745d == 1) {
                     try {
                         d.this.b1();
-                        this.f29179i = d.this.f29167t;
-                        this.f29177d--;
+                        this.f29747i = d.this.f29735t;
+                        this.f29745d--;
                         return;
                     } catch (IOException e10) {
                         throw ((Error) d.Q(e10));
@@ -208,26 +208,26 @@ public final class d implements Closeable, Iterable {
     }
 
     d(File file, RandomAccessFile randomAccessFile, boolean z10, int i10) {
-        this.f29160e = file;
-        this.f29159d = randomAccessFile;
-        this.f29168u = z10;
-        this.f29169v = i10;
+        this.f29728e = file;
+        this.f29727d = randomAccessFile;
+        this.f29736u = z10;
+        this.f29737v = i10;
         S0();
     }
 
     private void B1(long j10, byte[] bArr, int i10, int i11) {
         long Y1 = Y1(j10);
-        long j11 = this.f29162o;
+        long j11 = this.f29730o;
         if (i11 + Y1 <= j11) {
-            this.f29159d.seek(Y1);
-            this.f29159d.write(bArr, i10, i11);
+            this.f29727d.seek(Y1);
+            this.f29727d.write(bArr, i10, i11);
             return;
         }
         int i12 = (int) (j11 - Y1);
-        this.f29159d.seek(Y1);
-        this.f29159d.write(bArr, i10, i12);
-        this.f29159d.seek(32L);
-        this.f29159d.write(bArr, i10 + i12, i11 - i12);
+        this.f29727d.seek(Y1);
+        this.f29727d.write(bArr, i10, i12);
+        this.f29727d.seek(32L);
+        this.f29727d.write(bArr, i10 + i12, i11 - i12);
     }
 
     private void C(long j10) {
@@ -236,17 +236,17 @@ public final class d implements Closeable, Iterable {
         long j13 = j10 + 4;
         long a12 = a1();
         if (a12 < j13) {
-            long j14 = this.f29162o;
+            long j14 = this.f29730o;
             do {
                 a12 += j14;
                 j14 <<= 1;
             } while (a12 < j13);
             E1(j14);
-            b bVar = this.f29165r;
-            long Y1 = Y1(bVar.f29175a + 4 + bVar.f29176b);
-            if (Y1 <= this.f29164q.f29175a) {
-                FileChannel channel = this.f29159d.getChannel();
-                channel.position(this.f29162o);
+            b bVar = this.f29733r;
+            long Y1 = Y1(bVar.f29743a + 4 + bVar.f29744b);
+            if (Y1 <= this.f29732q.f29743a) {
+                FileChannel channel = this.f29727d.getChannel();
+                channel.position(this.f29730o);
                 j11 = Y1 - 32;
                 if (channel.transferTo(32L, j11, channel) != j11) {
                     throw new AssertionError("Copied insufficient number of bytes!");
@@ -254,27 +254,27 @@ public final class d implements Closeable, Iterable {
             } else {
                 j11 = 0;
             }
-            long j15 = this.f29165r.f29175a;
-            long j16 = this.f29164q.f29175a;
+            long j15 = this.f29733r.f29743a;
+            long j16 = this.f29732q.f29743a;
             if (j15 < j16) {
-                long j17 = (this.f29162o + j15) - 32;
-                a2(j14, this.f29163p, j16, j17);
-                this.f29165r = new b(j17, this.f29165r.f29176b);
+                long j17 = (this.f29730o + j15) - 32;
+                a2(j14, this.f29731p, j16, j17);
+                this.f29733r = new b(j17, this.f29733r.f29744b);
                 j12 = j14;
             } else {
-                a2(j14, this.f29163p, j16, j15);
+                a2(j14, this.f29731p, j16, j15);
                 j12 = j14;
             }
-            this.f29162o = j12;
-            if (this.f29168u) {
+            this.f29730o = j12;
+            if (this.f29736u) {
                 x1(32L, j11);
             }
         }
     }
 
     private void E1(long j10) {
-        this.f29159d.setLength(j10);
-        this.f29159d.getChannel().force(true);
+        this.f29727d.setLength(j10);
+        this.f29727d.getChannel().force(true);
     }
 
     static RandomAccessFile H0(File file) {
@@ -303,34 +303,34 @@ public final class d implements Closeable, Iterable {
     }
 
     private long P1() {
-        if (this.f29163p == 0) {
+        if (this.f29731p == 0) {
             return 32L;
         }
-        b bVar = this.f29165r;
-        long j10 = bVar.f29175a;
-        long j11 = this.f29164q.f29175a;
+        b bVar = this.f29733r;
+        long j10 = bVar.f29743a;
+        long j11 = this.f29732q.f29743a;
         if (j10 >= j11) {
-            return (j10 - j11) + 4 + bVar.f29176b + 32;
+            return (j10 - j11) + 4 + bVar.f29744b + 32;
         }
-        return (((j10 + 4) + bVar.f29176b) + this.f29162o) - j11;
+        return (((j10 + 4) + bVar.f29744b) + this.f29730o) - j11;
     }
 
     private void S0() {
-        this.f29159d.seek(0L);
-        this.f29159d.readFully(this.f29166s);
-        this.f29162o = Z0(this.f29166s, 4);
-        this.f29163p = V0(this.f29166s, 12);
-        long Z0 = Z0(this.f29166s, 16);
-        long Z02 = Z0(this.f29166s, 24);
-        if (this.f29162o <= this.f29159d.length()) {
-            if (this.f29162o > 32) {
-                this.f29164q = O0(Z0);
-                this.f29165r = O0(Z02);
+        this.f29727d.seek(0L);
+        this.f29727d.readFully(this.f29734s);
+        this.f29730o = Z0(this.f29734s, 4);
+        this.f29731p = V0(this.f29734s, 12);
+        long Z0 = Z0(this.f29734s, 16);
+        long Z02 = Z0(this.f29734s, 24);
+        if (this.f29730o <= this.f29727d.length()) {
+            if (this.f29730o > 32) {
+                this.f29732q = O0(Z0);
+                this.f29733r = O0(Z02);
                 return;
             }
-            throw new IOException("File is corrupt; length stored in header (" + this.f29162o + ") is invalid.");
+            throw new IOException("File is corrupt; length stored in header (" + this.f29730o + ") is invalid.");
         }
-        throw new IOException("File is truncated. Expected length: " + this.f29162o + ", Actual length: " + this.f29159d.length());
+        throw new IOException("File is truncated. Expected length: " + this.f29730o + ", Actual length: " + this.f29727d.length());
     }
 
     private static int V0(byte[] bArr, int i10) {
@@ -342,17 +342,17 @@ public final class d implements Closeable, Iterable {
     }
 
     private long a1() {
-        return this.f29162o - P1();
+        return this.f29730o - P1();
     }
 
     private void a2(long j10, int i10, long j11, long j12) {
-        this.f29159d.seek(0L);
-        c2(this.f29166s, 0, -2147483647);
-        f2(this.f29166s, 4, j10);
-        c2(this.f29166s, 12, i10);
-        f2(this.f29166s, 16, j11);
-        f2(this.f29166s, 24, j12);
-        this.f29159d.write(this.f29166s, 0, 32);
+        this.f29727d.seek(0L);
+        c2(this.f29734s, 0, -2147483647);
+        f2(this.f29734s, 4, j10);
+        c2(this.f29734s, 12, i10);
+        f2(this.f29734s, 16, j11);
+        f2(this.f29734s, 24, j12);
+        this.f29727d.write(this.f29734s, 0, 32);
     }
 
     private static void c2(byte[] bArr, int i10, int i11) {
@@ -375,16 +375,16 @@ public final class d implements Closeable, Iterable {
 
     /* JADX INFO: Access modifiers changed from: private */
     public void w1() {
-        this.f29159d.close();
-        this.f29160e.delete();
-        this.f29159d = H0(this.f29160e);
+        this.f29727d.close();
+        this.f29728e.delete();
+        this.f29727d = H0(this.f29728e);
         S0();
     }
 
     private void x1(long j10, long j11) {
         long j12 = j10;
         while (j11 > 0) {
-            byte[] bArr = f29158x;
+            byte[] bArr = f29726x;
             int min = (int) Math.min(j11, bArr.length);
             B1(j12, bArr, 0, min);
             long j13 = min;
@@ -394,7 +394,7 @@ public final class d implements Closeable, Iterable {
     }
 
     public boolean L0() {
-        if (this.f29169v == -1 || size() != this.f29169v) {
+        if (this.f29737v == -1 || size() != this.f29737v) {
             return false;
         }
         return true;
@@ -402,16 +402,16 @@ public final class d implements Closeable, Iterable {
 
     b O0(long j10) {
         if (j10 == 0) {
-            return b.f29174c;
+            return b.f29742c;
         }
-        if (!z1(j10, this.f29166s, 0, 4)) {
-            return b.f29174c;
+        if (!z1(j10, this.f29734s, 0, 4)) {
+            return b.f29742c;
         }
-        return new b(j10, V0(this.f29166s, 0));
+        return new b(j10, V0(this.f29734s, 0));
     }
 
     long Y1(long j10) {
-        long j11 = this.f29162o;
+        long j11 = this.f29730o;
         if (j10 < j11) {
             return j10;
         }
@@ -423,21 +423,21 @@ public final class d implements Closeable, Iterable {
     }
 
     public void clear() {
-        if (!this.f29170w) {
+        if (!this.f29738w) {
             a2(4096L, 0, 0L, 0L);
-            if (this.f29168u) {
-                this.f29159d.seek(32L);
-                this.f29159d.write(f29158x, 0, 4064);
+            if (this.f29736u) {
+                this.f29727d.seek(32L);
+                this.f29727d.write(f29726x, 0, 4064);
             }
-            this.f29163p = 0;
-            b bVar = b.f29174c;
-            this.f29164q = bVar;
-            this.f29165r = bVar;
-            if (this.f29162o > 4096) {
+            this.f29731p = 0;
+            b bVar = b.f29742c;
+            this.f29732q = bVar;
+            this.f29733r = bVar;
+            if (this.f29730o > 4096) {
                 E1(4096L);
             }
-            this.f29162o = 4096L;
-            this.f29167t++;
+            this.f29730o = 4096L;
+            this.f29735t++;
             return;
         }
         throw new IllegalStateException("closed");
@@ -445,46 +445,46 @@ public final class d implements Closeable, Iterable {
 
     @Override // java.io.Closeable, java.lang.AutoCloseable
     public void close() {
-        this.f29170w = true;
-        this.f29159d.close();
+        this.f29738w = true;
+        this.f29727d.close();
     }
 
     public void f1(int i10) {
         if (i10 >= 0) {
             if (i10 != 0) {
-                if (i10 == this.f29163p) {
+                if (i10 == this.f29731p) {
                     clear();
                     return;
                 } else if (!isEmpty()) {
-                    if (i10 <= this.f29163p) {
-                        b bVar = this.f29164q;
-                        long j10 = bVar.f29175a;
-                        int i11 = bVar.f29176b;
+                    if (i10 <= this.f29731p) {
+                        b bVar = this.f29732q;
+                        long j10 = bVar.f29743a;
+                        int i11 = bVar.f29744b;
                         long j11 = 0;
                         int i12 = 0;
                         long j12 = j10;
                         while (i12 < i10) {
                             j11 += i11 + 4;
                             long Y1 = Y1(j12 + 4 + i11);
-                            if (z1(Y1, this.f29166s, 0, 4)) {
-                                i11 = V0(this.f29166s, 0);
+                            if (z1(Y1, this.f29734s, 0, 4)) {
+                                i11 = V0(this.f29734s, 0);
                                 i12++;
                                 j12 = Y1;
                             } else {
                                 return;
                             }
                         }
-                        a2(this.f29162o, this.f29163p - i10, j12, this.f29165r.f29175a);
-                        this.f29163p -= i10;
-                        this.f29167t++;
-                        this.f29164q = new b(j12, i11);
-                        if (this.f29168u) {
+                        a2(this.f29730o, this.f29731p - i10, j12, this.f29733r.f29743a);
+                        this.f29731p -= i10;
+                        this.f29735t++;
+                        this.f29732q = new b(j12, i11);
+                        if (this.f29736u) {
                             x1(j10, j11);
                             return;
                         }
                         return;
                     }
-                    throw new IllegalArgumentException("Cannot remove more elements (" + i10 + ") than present in queue (" + this.f29163p + ").");
+                    throw new IllegalArgumentException("Cannot remove more elements (" + i10 + ") than present in queue (" + this.f29731p + ").");
                 } else {
                     throw new NoSuchElementException();
                 }
@@ -495,7 +495,7 @@ public final class d implements Closeable, Iterable {
     }
 
     public boolean isEmpty() {
-        if (this.f29163p == 0) {
+        if (this.f29731p == 0) {
             return true;
         }
         return false;
@@ -512,7 +512,7 @@ public final class d implements Closeable, Iterable {
         long j10;
         if (bArr != null) {
             if ((i10 | i11) >= 0 && i11 <= bArr.length - i10) {
-                if (!this.f29170w) {
+                if (!this.f29738w) {
                     if (L0()) {
                         b1();
                     }
@@ -521,23 +521,23 @@ public final class d implements Closeable, Iterable {
                     if (isEmpty) {
                         Y1 = 32;
                     } else {
-                        Y1 = Y1(this.f29165r.f29175a + 4 + bVar.f29176b);
+                        Y1 = Y1(this.f29733r.f29743a + 4 + bVar.f29744b);
                     }
                     b bVar2 = new b(Y1, i11);
-                    c2(this.f29166s, 0, i11);
-                    B1(bVar2.f29175a, this.f29166s, 0, 4);
-                    B1(bVar2.f29175a + 4, bArr, i10, i11);
+                    c2(this.f29734s, 0, i11);
+                    B1(bVar2.f29743a, this.f29734s, 0, 4);
+                    B1(bVar2.f29743a + 4, bArr, i10, i11);
                     if (isEmpty) {
-                        j10 = bVar2.f29175a;
+                        j10 = bVar2.f29743a;
                     } else {
-                        j10 = this.f29164q.f29175a;
+                        j10 = this.f29732q.f29743a;
                     }
-                    a2(this.f29162o, this.f29163p + 1, j10, bVar2.f29175a);
-                    this.f29165r = bVar2;
-                    this.f29163p++;
-                    this.f29167t++;
+                    a2(this.f29730o, this.f29731p + 1, j10, bVar2.f29743a);
+                    this.f29733r = bVar2;
+                    this.f29731p++;
+                    this.f29735t++;
                     if (isEmpty) {
-                        this.f29164q = bVar2;
+                        this.f29732q = bVar2;
                         return;
                     }
                     return;
@@ -550,27 +550,27 @@ public final class d implements Closeable, Iterable {
     }
 
     public int size() {
-        return this.f29163p;
+        return this.f29731p;
     }
 
     public String toString() {
-        return "QueueFile{file=" + this.f29160e + ", zero=" + this.f29168u + ", length=" + this.f29162o + ", size=" + this.f29163p + ", first=" + this.f29164q + ", last=" + this.f29165r + '}';
+        return "QueueFile{file=" + this.f29728e + ", zero=" + this.f29736u + ", length=" + this.f29730o + ", size=" + this.f29731p + ", first=" + this.f29732q + ", last=" + this.f29733r + '}';
     }
 
     boolean z1(long j10, byte[] bArr, int i10, int i11) {
         try {
             long Y1 = Y1(j10);
-            long j11 = this.f29162o;
+            long j11 = this.f29730o;
             if (i11 + Y1 <= j11) {
-                this.f29159d.seek(Y1);
-                this.f29159d.readFully(bArr, i10, i11);
+                this.f29727d.seek(Y1);
+                this.f29727d.readFully(bArr, i10, i11);
                 return true;
             }
             int i12 = (int) (j11 - Y1);
-            this.f29159d.seek(Y1);
-            this.f29159d.readFully(bArr, i10, i12);
-            this.f29159d.seek(32L);
-            this.f29159d.readFully(bArr, i10 + i12, i11 - i12);
+            this.f29727d.seek(Y1);
+            this.f29727d.readFully(bArr, i10, i12);
+            this.f29727d.seek(32L);
+            this.f29727d.readFully(bArr, i10 + i12, i11 - i12);
             return true;
         } catch (EOFException unused) {
             w1();

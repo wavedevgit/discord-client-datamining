@@ -10,7 +10,7 @@ import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Executor;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
-/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 public abstract class m {
     public static Object a(Task task) {
         hf.q.j();
@@ -104,7 +104,7 @@ public abstract class m {
     }
 
     private static void j(Task task, q qVar) {
-        Executor executor = l.f56450b;
+        Executor executor = l.f57018b;
         task.f(executor, qVar);
         task.d(executor, qVar);
         task.a(executor, qVar);

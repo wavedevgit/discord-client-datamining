@@ -28,38 +28,29 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 2;
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
-    var8 = var3.jsx;
-    var _closure1_slot4 = var8;
+    var7 = var3.jsx;
+    var _closure1_slot4 = var7;
     var3 = var3.jsxs;
     var _closure1_slot5 = var3;
     var3 = 3;
     var3 = var5[var3];
-    var9 = var4.bind(var0)(var3);
-    var7 = var9.createStyles;
+    var8 = var4.bind(var0)(var3);
+    var7 = var8.createStyles;
     var3 = {};
-    var10 = {
+    var9 = {
         'justifyContent': 'center',
         'alignItems': 'center',
         'top': '10%'
     };
-    var3.container = var10;
-    var10 = {
+    var3.container = var9;
+    var9 = {
         'textAlign': 'center',
         'marginTop': 16,
         'width': '75%'
     };
-    var3.text = var10;
-    var3 = var7.bind(var9)(var3);
+    var3.text = var9;
+    var3 = var7.bind(var8)(var3);
     var _closure1_slot6 = var3;
-    var3 = 4;
-    var3 = var5[var3];
-    var3 = var4.bind(var0)(var3);
-    var7 = var3.NoResultsAlt;
-    var3 = {};
-    var9 = 'contain';
-    var3.resizeMode = var9;
-    var3 = var8.bind(var0)(var7, var3);
-    var _closure1_slot7 = var3;
     var3 = var6.memo;
     var1 = function(arg0) { // Environment: var1
         var1 = arg0;
@@ -68,14 +59,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = _closure1_slot6;
         var3 = undefined;
         var9 = var1.bind(var3)();
-        var4 = _closure1_slot2;
-        var2 = var4.useEffect;
+        var5 = _closure1_slot2;
+        var2 = var5.useEffect;
         var1 = new Array(1);
         var1[0] = var8;
         var0 = function() { // Environment: var0
             var2 = _closure1_slot0;
             var1 = _closure1_slot1;
-            var0 = 5;
+            var0 = 4;
             var1 = var1[var0];
             var0 = undefined;
             var1 = var2.bind(var0)(var1);
@@ -86,18 +77,25 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var1 = var3.bind(var4)(var2, var1);
             return var0;
         };
-        var0 = var2.bind(var4)(var0, var1);
+        var0 = var2.bind(var5)(var0, var1);
         var2 = _closure1_slot5;
         var1 = _closure1_slot3;
         var0 = {};
-        var4 = var9.container;
-        var0.style = var4;
-        var6 = _closure1_slot7;
-        var4 = new Array(2);
-        var4[0] = var6;
+        var5 = var9.container;
+        var0.style = var5;
         var7 = _closure1_slot4;
         var6 = _closure1_slot0;
         var10 = _closure1_slot1;
+        var4 = 5;
+        var4 = var10[var4];
+        var4 = var6.bind(var3)(var4);
+        var5 = var4.NoResultsAlt;
+        var4 = {};
+        var11 = 'contain';
+        var4.resizeMode = var11;
+        var5 = var7.bind(var3)(var5, var4);
+        var4 = new Array(2);
+        var4[0] = var5;
         var5 = 6;
         var5 = var10[var5];
         var5 = var6.bind(var3)(var5);
@@ -124,4 +122,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 8278, 3162, 3938, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 3165, 8205, 3938, 2]);

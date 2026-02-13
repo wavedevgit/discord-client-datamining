@@ -9,25 +9,25 @@ import org.jetbrains.annotations.NotNull;
 public final class TypeVariance {
 
     /* renamed from: e  reason: collision with root package name */
-    private static final /* synthetic */ TypeVariance[] f34722e;
+    private static final /* synthetic */ TypeVariance[] f35290e;
 
     /* renamed from: i  reason: collision with root package name */
-    private static final /* synthetic */ EnumEntries f34723i;
+    private static final /* synthetic */ EnumEntries f35291i;
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f34724d;
+    private final String f35292d;
     public static final TypeVariance IN = new TypeVariance("IN", 0, "in");
     public static final TypeVariance OUT = new TypeVariance("OUT", 1, "out");
     public static final TypeVariance INV = new TypeVariance("INV", 2, "");
 
     static {
         TypeVariance[] a10 = a();
-        f34722e = a10;
-        f34723i = a.a(a10);
+        f35290e = a10;
+        f35291i = a.a(a10);
     }
 
     private TypeVariance(String str, int i10, String str2) {
-        this.f34724d = str2;
+        this.f35292d = str2;
     }
 
     private static final /* synthetic */ TypeVariance[] a() {
@@ -39,12 +39,12 @@ public final class TypeVariance {
     }
 
     public static TypeVariance[] values() {
-        return (TypeVariance[]) f34722e.clone();
+        return (TypeVariance[]) f35290e.clone();
     }
 
     @Override // java.lang.Enum
     @NotNull
     public String toString() {
-        return this.f34724d;
+        return this.f35292d;
     }
 }

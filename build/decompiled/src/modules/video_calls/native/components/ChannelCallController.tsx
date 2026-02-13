@@ -33,7 +33,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var3.jsx;
     var _closure1_slot5 = var3;
     var3 = function arg0() {
-        _fun91817: for (var _fun91817_ip = 0;;) switch (_fun91817_ip) {
+        _fun70067: for (var _fun70067_ip = 0;;) switch (_fun70067_ip) {
             case 0:
                 var0 = arg0;
                 var5 = var0.channel;
@@ -47,13 +47,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var5.isPrivate;
                 var2 = var2.bind(var5)();
                 if (!var2) {
-                    _fun91817_ip = 54;
-                    continue _fun91817
+                    _fun70067_ip = 54;
+                    continue _fun70067
                 }
             case 51:
                 if (var0) {
-                    _fun91817_ip = 76;
-                    continue _fun91817
+                    _fun70067_ip = 76;
+                    continue _fun70067
                 }
             case 54:
                 var3 = _closure1_slot5;
@@ -61,8 +61,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = {};
                 var0.channel = var5;
                 var0 = var3.bind(var4)(var2, var0);
-                _fun91817_ip = 112;
-                continue _fun91817;
+                _fun70067_ip = 112;
+                continue _fun70067;
             case 76:
                 var3 = _closure1_slot5;
                 var2 = _closure1_slot1;
@@ -79,7 +79,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot6 = var3;
     var3 = function arg0() {
-        _fun91818: for (var _fun91818_ip = 0;;) switch (_fun91818_ip) {
+        _fun70068: for (var _fun70068_ip = 0;;) switch (_fun70068_ip) {
             case 0:
                 var0 = arg0;
                 var6 = var0.channel;
@@ -92,8 +92,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var0.bind(var4)(var6);
                 var0 = null;
                 if (!(var0 == var5)) {
-                    _fun91818_ip = 66;
-                    continue _fun91818
+                    _fun70068_ip = 66;
+                    continue _fun70068
                 }
             case 44:
                 var3 = _closure1_slot5;
@@ -101,8 +101,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = {};
                 var0.channel = var6;
                 var0 = var3.bind(var4)(var2, var0);
-                _fun91818_ip = 113;
-                continue _fun91818;
+                _fun70068_ip = 113;
+                continue _fun70068;
             case 66:
                 var3 = _closure1_slot5;
                 var2 = _closure1_slot0;
@@ -178,15 +178,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/video_calls/native/components/ChannelCallController.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun91821: for (var _fun91821_ip = 0;;) switch (_fun91821_ip) {
+        _fun70071: for (var _fun70071_ip = 0;;) switch (_fun70071_ip) {
             case 0:
                 var0 = arg0;
                 var1 = var0.channel;
                 var0 = null;
                 var2 = var0 == var1;
                 if (var2) {
-                    _fun91821_ip = 42;
-                    continue _fun91821
+                    _fun70071_ip = 42;
+                    continue _fun70071
                 }
             case 17:
                 var4 = _closure1_slot5;
@@ -201,4 +201,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 660, 33, 7924, 11897, 7925, 11830, 795, 4308, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 660, 33, 7943, 8761, 7944, 8672, 796, 4308, 2]);

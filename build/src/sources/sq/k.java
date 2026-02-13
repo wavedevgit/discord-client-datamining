@@ -10,22 +10,22 @@ import com.google.android.material.textfield.TextInputLayout;
 public final class k implements ViewBinding {
 
     /* renamed from: a  reason: collision with root package name */
-    private final TextInputLayout f48255a;
+    private final TextInputLayout f48823a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final TextInputEditText f48256b;
+    public final TextInputEditText f48824b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final TextInputLayout f48257c;
+    public final TextInputLayout f48825c;
 
     private k(TextInputLayout textInputLayout, TextInputEditText textInputEditText, TextInputLayout textInputLayout2) {
-        this.f48255a = textInputLayout;
-        this.f48256b = textInputEditText;
-        this.f48257c = textInputLayout2;
+        this.f48823a = textInputLayout;
+        this.f48824b = textInputEditText;
+        this.f48825c = textInputLayout2;
     }
 
     public static k a(View view) {
-        int i10 = nq.e.f38299z;
+        int i10 = nq.e.f38867z;
         TextInputEditText textInputEditText = (TextInputEditText) e4.a.a(view, i10);
         if (textInputEditText != null) {
             TextInputLayout textInputLayout = (TextInputLayout) view;
@@ -39,7 +39,7 @@ public final class k implements ViewBinding {
     }
 
     public static k d(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z10) {
-        View inflate = layoutInflater.inflate(nq.f.f38312l, viewGroup, false);
+        View inflate = layoutInflater.inflate(nq.f.f38880l, viewGroup, false);
         if (z10) {
             viewGroup.addView(inflate);
         }
@@ -49,6 +49,6 @@ public final class k implements ViewBinding {
     @Override // androidx.viewbinding.ViewBinding
     /* renamed from: b */
     public TextInputLayout getRoot() {
-        return this.f48255a;
+        return this.f48823a;
     }
 }

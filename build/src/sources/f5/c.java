@@ -63,14 +63,14 @@ public final class c {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final CacheControl c(c cVar) {
-        return CacheControl.f40217n.b(cVar.f23583f);
+        return CacheControl.f40785n.b(cVar.f23583f);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final MediaType d(c cVar) {
         String c10 = cVar.f23583f.c("Content-Type");
         if (c10 != null) {
-            return MediaType.f40298e.c(c10);
+            return MediaType.f40866e.c(c10);
         }
         return null;
     }

@@ -3,7 +3,7 @@
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var2 = exports;
     var3 = function arg0() {
-        _fun13527: for (var _fun13527_ip = 0;;) switch (_fun13527_ip) {
+        _fun13532: for (var _fun13532_ip = 0;;) switch (_fun13532_ip) {
             case 0:
                 var1 = _closure1_slot1;
                 var0 = undefined;
@@ -11,16 +11,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = null;
                 var1 = var4 == var3;
                 if (var1) {
-                    _fun13527_ip = 32;
-                    continue _fun13527
+                    _fun13532_ip = 32;
+                    continue _fun13532
                 }
             case 22:
                 var2 = var3.reportEvent;
                 var1 = var4 == var2;
             case 32:
                 if (var1) {
-                    _fun13527_ip = 49;
-                    continue _fun13527
+                    _fun13532_ip = 49;
+                    continue _fun13532
                 }
             case 35:
                 var2 = var3.reportEvent;
@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot0 = var3;
     var0 = function() {
-        _fun13528: for (var _fun13528_ip = 0;;) switch (_fun13528_ip) {
+        _fun13533: for (var _fun13533_ip = 0;;) switch (_fun13533_ip) {
             case 0:
                 var1 = global;
                 var2 = var1.window;
@@ -40,8 +40,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = typeof var2;
                 var0 = null;
                 if (!(var3 !== var2)) {
-                    _fun13528_ip = 32;
-                    continue _fun13528
+                    _fun13533_ip = 32;
+                    continue _fun13533
                 }
             case 20:
                 var1 = var1.window;
@@ -86,7 +86,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.logFluxAction = var4;
     var2.reportEvent = var3;
     var3 = function arg0() {
-        _fun13530: for (var _fun13530_ip = 0;;) switch (_fun13530_ip) {
+        _fun13535: for (var _fun13535_ip = 0;;) switch (_fun13535_ip) {
             case 0:
                 var1 = _closure1_slot1;
                 var0 = undefined;
@@ -94,16 +94,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = null;
                 var1 = var4 == var3;
                 if (var1) {
-                    _fun13530_ip = 32;
-                    continue _fun13530
+                    _fun13535_ip = 32;
+                    continue _fun13535
                 }
             case 22:
                 var2 = var3.notifyStoreCreated;
                 var1 = var4 == var2;
             case 32:
                 if (var1) {
-                    _fun13530_ip = 56;
-                    continue _fun13530
+                    _fun13535_ip = 56;
+                    continue _fun13535
                 }
             case 35:
                 var2 = var3.notifyStoreCreated;
@@ -117,7 +117,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.notifyStoreCreated = var3;
     var1 = function arg0() {
-        _fun13531: for (var _fun13531_ip = 0;;) switch (_fun13531_ip) {
+        _fun13536: for (var _fun13536_ip = 0;;) switch (_fun13536_ip) {
             case 0:
                 var1 = _closure1_slot1;
                 var0 = undefined;
@@ -125,16 +125,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = null;
                 var1 = var4 == var3;
                 if (var1) {
-                    _fun13531_ip = 32;
-                    continue _fun13531
+                    _fun13536_ip = 32;
+                    continue _fun13536
                 }
             case 22:
                 var2 = var3.notifyStoreChange;
                 var1 = var4 == var2;
             case 32:
                 if (var1) {
-                    _fun13531_ip = 56;
-                    continue _fun13531
+                    _fun13536_ip = 56;
+                    continue _fun13536
                 }
             case 35:
                 var2 = var3.notifyStoreChange;

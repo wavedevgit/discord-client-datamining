@@ -57,7 +57,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/user_settings/native/premium_marketing/Header.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun82247: for (var _fun82247_ip = 0;;) switch (_fun82247_ip) {
+        _fun92910: for (var _fun92910_ip = 0;;) switch (_fun92910_ip) {
             case 0:
                 var0 = arg0;
                 var7 = var0.style;
@@ -107,15 +107,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = _closure1_slot1;
                 var13 = _closure1_slot2;
                 if (var8) {
-                    _fun82247_ip = 211;
-                    continue _fun82247
+                    _fun92910_ip = 211;
+                    continue _fun92910
                 }
             case 197:
                 var8 = 9;
                 var8 = var13[var8];
                 var8 = var11.bind(var3)(var8);
-                _fun82247_ip = 223;
-                continue _fun82247;
+                _fun92910_ip = 223;
+                continue _fun92910;
             case 211:
                 var10 = 8;
                 var10 = var13[var10];
@@ -158,4 +158,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 3247, 5426, 1234, 3207, 10493, 10494, 3938, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 3250, 4709, 1235, 3210, 12065, 12066, 3938, 2]);

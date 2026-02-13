@@ -6,34 +6,34 @@ import com.google.android.exoplayer2.upstream.DataSource;
 public abstract class a extends n {
 
     /* renamed from: k  reason: collision with root package name */
-    public final long f48680k;
+    public final long f49248k;
 
     /* renamed from: l  reason: collision with root package name */
-    public final long f48681l;
+    public final long f49249l;
 
     /* renamed from: m  reason: collision with root package name */
-    private c f48682m;
+    private c f49250m;
 
     /* renamed from: n  reason: collision with root package name */
-    private int[] f48683n;
+    private int[] f49251n;
 
     public a(DataSource dataSource, com.google.android.exoplayer2.upstream.a aVar, Format format, int i10, Object obj, long j10, long j11, long j12, long j13, long j14) {
         super(dataSource, aVar, format, i10, obj, j10, j11, j14);
-        this.f48680k = j12;
-        this.f48681l = j13;
+        this.f49248k = j12;
+        this.f49249l = j13;
     }
 
     public final int i(int i10) {
-        return ((int[]) oe.a.i(this.f48683n))[i10];
+        return ((int[]) oe.a.i(this.f49251n))[i10];
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     public final c j() {
-        return (c) oe.a.i(this.f48682m);
+        return (c) oe.a.i(this.f49250m);
     }
 
     public void k(c cVar) {
-        this.f48682m = cVar;
-        this.f48683n = cVar.a();
+        this.f49250m = cVar;
+        this.f49251n = cVar.a();
     }
 }

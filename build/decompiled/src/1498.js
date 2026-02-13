@@ -17,15 +17,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var1 = arg0;
         var _closure2_slot0 = var1;
         var0 = function() { // Environment: var0
-            _fun17172: for (var _fun17172_ip = 0;;) switch (_fun17172_ip) {
+            _fun17178: for (var _fun17178_ip = 0;;) switch (_fun17178_ip) {
                 case 0:
                     var3 = undefined;
                     var0 = undefined;
                     var1 = 0;
                     var0 = arguments[var1];
                     if (!(var3 === var0)) {
-                        _fun17172_ip = 72;
-                        continue _fun17172
+                        _fun17178_ip = 72;
+                        continue _fun17178
                     }
                 case 14:
                     var0 = {};

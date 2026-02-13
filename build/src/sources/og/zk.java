@@ -3,16 +3,16 @@ package og;
 public abstract class zk {
 
     /* renamed from: a  reason: collision with root package name */
-    private static xk f40079a;
+    private static xk f40647a;
 
     public static synchronized nk a(fk fkVar) {
         nk nkVar;
         synchronized (zk.class) {
             try {
-                if (f40079a == null) {
-                    f40079a = new xk(null);
+                if (f40647a == null) {
+                    f40647a = new xk(null);
                 }
-                nkVar = (nk) f40079a.b(fkVar);
+                nkVar = (nk) f40647a.b(fkVar);
             } catch (Throwable th2) {
                 throw th2;
             }

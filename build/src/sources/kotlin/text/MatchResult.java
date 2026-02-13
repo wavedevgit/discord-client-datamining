@@ -19,15 +19,15 @@ public interface MatchResult {
     public static final class b {
 
         /* renamed from: a  reason: collision with root package name */
-        private final MatchResult f34910a;
+        private final MatchResult f35478a;
 
         public b(MatchResult match) {
             Intrinsics.checkNotNullParameter(match, "match");
-            this.f34910a = match;
+            this.f35478a = match;
         }
 
         public final MatchResult a() {
-            return this.f34910a;
+            return this.f35478a;
         }
     }
 

@@ -21,112 +21,89 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var4.defineIntegration;
     var1 = function() { // Environment: var1
         var0 = {};
-        var1 = 'BrowserSession';
+        var1 = 'HttpContext';
         var0.name = var1;
-        var1 = function() {
-            _fun11017: for (var _fun11017_ip = 0;;) switch (_fun11017_ip) {
+        var1 = function arg0() {
+            _fun11019: for (var _fun11019_ip = 0;;) switch (_fun11019_ip) {
                 case 0:
-                    var3 = _closure1_slot0;
-                    var2 = _closure1_slot1;
-                    var0 = 1;
-                    var2 = var2[var0];
+                    var2 = arg0;
+                    var5 = _closure1_slot0;
+                    var0 = _closure1_slot1;
+                    var4 = 1;
+                    var3 = var0[var4];
                     var0 = undefined;
-                    var2 = var3.bind(var0)(var2);
-                    var2 = var2.WINDOW;
-                    var2 = var2.document;
-                    if (!(var0 === var2)) {
-                        _fun11017_ip = 116;
-                        continue _fun11017
+                    var3 = var5.bind(var0)(var3);
+                    var3 = var3.WINDOW;
+                    var3 = var3.navigator;
+                    if (var3) {
+                        _fun11019_ip = 109;
+                        continue _fun11019
                     }
-                case 41:
-                    var3 = _closure1_slot0;
-                    var4 = _closure1_slot1;
-                    var2 = 2;
-                    var2 = var4[var2];
-                    var2 = var3.bind(var0)(var2);
-                    var2 = var2.DEBUG_BUILD;
-                    if (!var2) {
-                        _fun11017_ip = 204;
-                        continue _fun11017
-                    }
-                case 73:
-                    var3 = _closure1_slot0;
-                    var4 = _closure1_slot1;
-                    var2 = 0;
-                    var2 = var4[var2];
-                    var2 = var3.bind(var0)(var2);
-                    var4 = var2.debug;
-                    var3 = var4.warn;
-                    var2 = 'Using the `browserSessionIntegration` in non-browser environments is not supported.';
-                    var2 = var3.bind(var4)(var2);
-                    _fun11017_ip = 204;
-                    continue _fun11017;
-                case 116:
-                    var2 = _closure1_slot0;
+                case 43:
+                    var5 = _closure1_slot0;
                     var3 = _closure1_slot1;
-                    var1 = 0;
-                    var4 = var3[var1];
-                    var6 = var2.bind(var0)(var4);
-                    var5 = var6.startSession;
-                    var4 = {};
-                    var7 = true;
-                    var4.ignoreDuration = var7;
-                    var4 = var5.bind(var6)(var4);
-                    var1 = var3[var1];
-                    var4 = var2.bind(var0)(var1);
-                    var1 = var4.captureSession;
-                    var1 = var1.bind(var4)();
-                    var1 = 3;
-                    var1 = var3[var1];
-                    var3 = var2.bind(var0)(var1);
-                    var2 = var3.addHistoryInstrumentationHandler;
-                    var1 = function(arg0) { // Environment: var1
-                        _fun11018: for (var _fun11018_ip = 0;;) switch (_fun11018_ip) {
-                            case 0:
-                                var0 = arg0;
-                                var3 = var0.from;
-                                var2 = var0.to;
-                                var0 = undefined;
-                                var1 = var0 !== var3;
-                                if (!var1) {
-                                    _fun11018_ip = 26;
-                                    continue _fun11018
-                                }
-                            case 22:
-                                var1 = var3 !== var2;
-                            case 26:
-                                if (!var1) {
-                                    _fun11018_ip = 90;
-                                    continue _fun11018
-                                }
-                            case 29:
-                                var2 = _closure1_slot0;
-                                var3 = _closure1_slot1;
-                                var1 = 0;
-                                var4 = var3[var1];
-                                var6 = var2.bind(var0)(var4);
-                                var5 = var6.startSession;
-                                var4 = {};
-                                var7 = true;
-                                var4.ignoreDuration = var7;
-                                var4 = var5.bind(var6)(var4);
-                                var1 = var3[var1];
-                                var2 = var2.bind(var0)(var1);
-                                var1 = var2.captureSession;
-                                var1 = var1.bind(var2)();
-                            case 90:
-                                return var0;
-                        }
-                    };
-                    var1 = var2.bind(var3)(var1);
-                case 204:
+                    var3 = var3[var4];
+                    var3 = var5.bind(var0)(var3);
+                    var3 = var3.WINDOW;
+                    var3 = var3.location;
+                    if (var3) {
+                        _fun11019_ip = 109;
+                        continue _fun11019
+                    }
+                case 74:
+                    var5 = _closure1_slot0;
+                    var3 = _closure1_slot1;
+                    var3 = var3[var4];
+                    var3 = var5.bind(var0)(var3);
+                    var3 = var3.WINDOW;
+                    var3 = var3.document;
+                    if (!var3) {
+                        _fun11019_ip = 232;
+                        continue _fun11019
+                    }
+                case 109:
+                    var3 = _closure1_slot0;
+                    var1 = _closure1_slot1;
+                    var1 = var1[var4];
+                    var3 = var3.bind(var0)(var1);
+                    var1 = var3.getHttpRequestData;
+                    var7 = var1.bind(var3)();
+                    var3 = global;
+                    var8 = var3.Object;
+                    var6 = var8.assign;
+                    var5 = var7.headers;
+                    var1 = var2.request;
+                    var4 = null;
+                    var9 = var4 == var1;
+                    var4 = undefined;
+                    if (var9) {
+                        _fun11019_ip = 178;
+                        continue _fun11019
+                    }
+                case 172:
+                    var4 = var1.headers;
+                case 178:
+                    var1 = {};
+                    var1 = var6.bind(var8)(var1, var5, var4);
+                    var6 = var3.Object;
+                    var5 = var6.assign;
+                    var11 = var2.request;
+                    var3 = {};
+                    var3.headers = var1;
+                    var13 = {};
+                    var14 = var6;
+                    var12 = var7;
+                    var10 = var3;
+                    var1 = var14[var5](var13, var12, var11, var10, var9);
+                    var2.request = var1;
+                case 232:
                     return var0;
             }
         };
-        var0.setupOnce = var1;
+        var0.preprocessEvent = var1;
         return var0;
     };
     var1 = var3.bind(var4)(var1);
-    var2.browserSessionIntegration = var1;
+    var2.httpContextIntegration = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [817, 1025, 1073, 1030]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [818, 1026]);

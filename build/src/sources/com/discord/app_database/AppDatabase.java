@@ -36,7 +36,7 @@ public final class AppDatabase {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit initializeAppDatabase$lambda$0(Context context) {
         INSTANCE.initializeAppDatabaseAsync(context);
-        return Unit.f31988a;
+        return Unit.f32556a;
     }
 
     private final void initializeAppDatabaseAsync(Context context) {
@@ -72,7 +72,7 @@ public final class AppDatabase {
                 String guildVersions = DiscordMobileApi.getGuildVersions(databaseName, "guild_versions");
                 String guildVersions2 = DiscordMobileApi.getGuildVersions(databaseName, "non_guild_versions");
                 String guildVersions3 = DiscordMobileApi.getGuildVersions(databaseName, "force_resync_version");
-                Json.a aVar = Json.f35100d;
+                Json.a aVar = Json.f35668d;
                 Intrinsics.checkNotNull(guildVersions);
                 aVar.a();
                 GuildVersion[] guildVersionArr = (GuildVersion[]) aVar.b(new i2(Reflection.getOrCreateKotlinClass(GuildVersion.class), GuildVersion.Companion.serializer()), guildVersions);

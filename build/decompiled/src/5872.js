@@ -1,108 +1,58 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun51778: for (var _fun51778_ip = 0;;) switch (_fun51778_ip) {
-        case 0:
-            var11 = require;
-            var4 = metroImportDefault;
-            var2 = exports;
-            var5 = dependencyMap;
-            var0 = global;
-            var6 = var0.Object;
-            var3 = var6.defineProperty;
-            var1 = {};
-            var0 = true;
-            var1.value = var0;
-            var0 = '__esModule';
-            var0 = var3.bind(var6)(var2, var0, var1);
-            var0 = 0;
-            var1 = var5[var0];
-            var0 = undefined;
-            var3 = var11.bind(var0)(var1);
-            var1 = new Array(2);
-            var1[0] = var3;
-            var3 = 1;
-            var3 = var5[var3];
-            var3 = var11.bind(var0)(var3);
-            var1[1] = var3;
-            var6 = 2;
-            var3 = var5[var6];
-            var9 = var11.bind(var0)(var3);
-            for (var3 in var9)
-                case 101: {
-                    case 110: var13 = var3;
-                    var12 = var5[var6];
-                    var12 = var11.bind(var0)(var12);
-                    var12 = var12[var13];
-                    var2[var13] = var12;
-                    _fun51778_ip = 101;
-                    continue _fun51778;
+    var2 = exports;
+    var3 = dependencyMap;
+    var0 = metroImportDefault;
+    var _closure1_slot0 = var0;
+    var _closure1_slot1 = var3;
+    var0 = global;
+    var6 = var0.Object;
+    var5 = var6.defineProperty;
+    var4 = {};
+    var0 = true;
+    var4.value = var0;
+    var0 = '__esModule';
+    var0 = var5.bind(var6)(var2, var0, var4);
+    var0 = 0;
+    var4 = var3[var0];
+    var3 = metroImportAll;
+    var0 = undefined;
+    var3 = var3.bind(var0)(var4);
+    var _closure1_slot2 = var3;
+    var1 = function() {
+        _fun51850: for (var _fun51850_ip = 0;;) switch (_fun51850_ip) {
+            case 0:
+                var3 = _closure1_slot2;
+                var2 = var3.useContext;
+                var4 = _closure1_slot0;
+                var1 = _closure1_slot1;
+                var0 = 1;
+                var0 = var1[var0];
+                var1 = undefined;
+                var0 = var4.bind(var1)(var0);
+                var0 = var2.bind(var3)(var0);
+                if (!(var1 !== var0)) {
+                    _fun51850_ip = 46;
+                    continue _fun51850
                 }
-        case 132:
-            var3 = 3;
-            var3 = var5[var3];
-            var3 = var4.bind(var0)(var3);
-            var2.Background = var3;
-            var3 = 4;
-            var3 = var5[var3];
-            var3 = var4.bind(var0)(var3);
-            var2.getDefaultHeaderHeight = var3;
-            var3 = 5;
-            var3 = var5[var3];
-            var3 = var4.bind(var0)(var3);
-            var2.getHeaderTitle = var3;
-            var3 = 6;
-            var3 = var5[var3];
-            var3 = var4.bind(var0)(var3);
-            var2.Header = var3;
-            var3 = 7;
-            var3 = var5[var3];
-            var3 = var4.bind(var0)(var3);
-            var2.HeaderBackButton = var3;
-            var3 = 8;
-            var3 = var5[var3];
-            var3 = var4.bind(var0)(var3);
-            var2.HeaderBackContext = var3;
-            var3 = 9;
-            var3 = var5[var3];
-            var3 = var4.bind(var0)(var3);
-            var2.HeaderBackground = var3;
-            var3 = 10;
-            var3 = var5[var3];
-            var3 = var4.bind(var0)(var3);
-            var2.HeaderHeightContext = var3;
-            var3 = 11;
-            var3 = var5[var3];
-            var3 = var4.bind(var0)(var3);
-            var2.HeaderShownContext = var3;
-            var3 = 12;
-            var3 = var5[var3];
-            var3 = var4.bind(var0)(var3);
-            var2.HeaderTitle = var3;
-            var3 = 13;
-            var3 = var5[var3];
-            var3 = var4.bind(var0)(var3);
-            var2.useHeaderHeight = var3;
-            var3 = 14;
-            var3 = var5[var3];
-            var3 = var4.bind(var0)(var3);
-            var2.MissingIcon = var3;
-            var3 = 15;
-            var3 = var5[var3];
-            var3 = var4.bind(var0)(var3);
-            var2.PlatformPressable = var3;
-            var3 = 16;
-            var3 = var5[var3];
-            var3 = var4.bind(var0)(var3);
-            var2.ResourceSavingView = var3;
-            var3 = 17;
-            var3 = var5[var3];
-            var3 = var4.bind(var0)(var3);
-            var2.SafeAreaProviderCompat = var3;
-            var3 = 18;
-            var3 = var5[var3];
-            var3 = var4.bind(var0)(var3);
-            var2.Screen = var3;
-            var2.Assets = var1;
-            return var0;
-    }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5873, 5874, 5875, 5876, 5877, 5878, 5879, 5884, 5888, 5883, 5889, 5880, 5882, 5890, 5891, 5887, 5892, 5893, 5894]);
+            case 44:
+                return var0;
+            case 46:
+                var0 = global;
+                var2 = var0.Error;
+                var0 = var2.prototype;
+                var1 = Object.create(var0, {
+                    constructor: {
+                        value: var2
+                    }
+                });
+                var5 = "Couldn't find the header height. Are you inside a screen in a navigator with a header?";
+                var6 = var1;
+                var0 = new var6[var2](var5, var4);
+                var0 = var0 instanceof Object ? var0 : var1;
+                throw var0;
+        }
+    };
+    var2.default = var1;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 5871]);

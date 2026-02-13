@@ -23,13 +23,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var10 = 1;
     var3 = var5[var10];
     var3 = var4.bind(var0)(var3);
-    var8 = var3.StyleSheet;
-    var3 = 2;
-    var3 = var5[var3];
-    var3 = var4.bind(var0)(var3);
     var3 = var3.jsx;
     var _closure1_slot3 = var3;
-    var7 = var8.create;
+    var3 = 2;
+    var3 = var5[var3];
+    var8 = var4.bind(var0)(var3);
+    var7 = var8.createStyles;
     var3 = {};
     var9 = {};
     var9.flex = var10;
@@ -46,43 +45,43 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot6 = var3;
     var3 = var6.memo;
     var1 = function(arg0) { // Environment: var1
-        _fun46851: for (var _fun46851_ip = 0;;) switch (_fun46851_ip) {
+        _fun47012: for (var _fun47012_ip = 0;;) switch (_fun47012_ip) {
             case 0:
                 var1 = arg0;
-                var18 = var1.animatedIndex;
-                var _closure2_slot0 = var18;
-                var15 = var1.opacity;
+                var19 = var1.animatedIndex;
+                var _closure2_slot0 = var19;
+                var16 = var1.opacity;
                 var4 = undefined;
-                if (!(var15 === var4)) {
-                    _fun46851_ip = 29;
-                    continue _fun46851
+                if (!(var16 === var4)) {
+                    _fun47012_ip = 29;
+                    continue _fun47012
                 }
             case 26:
-                var15 = 1;
+                var16 = 1;
             case 29:
-                var _closure2_slot1 = var15;
-                var16 = var1.appearsOnIndex;
-                if (!(var16 === var4)) {
-                    _fun46851_ip = 45;
-                    continue _fun46851
+                var _closure2_slot1 = var16;
+                var17 = var1.appearsOnIndex;
+                if (!(var17 === var4)) {
+                    _fun47012_ip = 45;
+                    continue _fun47012
                 }
             case 43:
-                var16 = 0;
+                var17 = 0;
             case 45:
-                var _closure2_slot2 = var16;
-                var17 = var1.disappearsOnIndex;
-                if (!(var17 === var4)) {
-                    _fun46851_ip = 65;
-                    continue _fun46851
+                var _closure2_slot2 = var17;
+                var18 = var1.disappearsOnIndex;
+                if (!(var18 === var4)) {
+                    _fun47012_ip = 65;
+                    continue _fun47012
                 }
             case 59:
-                var17 = -1;
+                var18 = -1;
             case 65:
-                var _closure2_slot3 = var17;
+                var _closure2_slot3 = var18;
                 var3 = var1.pressBehavior;
                 if (!(var3 === var4)) {
-                    _fun46851_ip = 83;
-                    continue _fun46851
+                    _fun47012_ip = 83;
+                    continue _fun47012
                 }
             case 79:
                 var3 = 'close';
@@ -96,33 +95,37 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var _closure2_slot8 = var4;
                 var _closure2_slot9 = var4;
                 var _closure2_slot10 = var4;
+                var _closure2_slot11 = var4;
+                var2 = _closure1_slot4;
+                var8 = var2.bind(var4)();
+                _closure2_slot7 = var8;
                 var2 = _closure1_slot0;
                 var5 = _closure1_slot1;
                 var7 = 3;
                 var7 = var5[var7];
-                var8 = var2.bind(var4)(var7);
-                var7 = var8.useBottomSheet;
-                var7 = var7.bind(var8)();
-                var10 = var7.snapToIndex;
-                _closure2_slot7 = var10;
-                var9 = var7.close;
-                _closure2_slot8 = var9;
+                var9 = var2.bind(var4)(var7);
+                var7 = var9.useBottomSheet;
+                var7 = var7.bind(var9)();
+                var12 = var7.snapToIndex;
+                _closure2_slot8 = var12;
+                var10 = var7.close;
+                _closure2_slot9 = var10;
                 var11 = _closure1_slot2;
-                var8 = var11.useCallback;
+                var9 = var11.useCallback;
                 var7 = new Array(5);
-                var7[0] = var10;
-                var7[1] = var9;
-                var7[2] = var17;
+                var7[0] = var12;
+                var7[1] = var10;
+                var7[2] = var18;
                 var7[3] = var3;
                 var7[4] = var6;
                 var6 = function() { // Environment: var0
-                    _fun46852: for (var _fun46852_ip = 0;;) switch (_fun46852_ip) {
+                    _fun47013: for (var _fun47013_ip = 0;;) switch (_fun47013_ip) {
                         case 0:
                             var2 = _closure2_slot5;
                             var1 = null;
                             if (!(var1 != var2)) {
-                                _fun46852_ip = 23;
-                                continue _fun46852
+                                _fun47013_ip = 23;
+                                continue _fun47013
                             }
                         case 13:
                             var2 = _closure2_slot5;
@@ -132,40 +135,40 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var2 = _closure2_slot4;
                             var1 = 'close';
                             if (!(var1 !== var2)) {
-                                _fun46852_ip = 96;
-                                continue _fun46852
+                                _fun47013_ip = 96;
+                                continue _fun47013
                             }
                         case 35:
                             var2 = _closure2_slot4;
                             var1 = 'collapse';
                             if (!(var1 !== var2)) {
-                                _fun46852_ip = 79;
-                                continue _fun46852
+                                _fun47013_ip = 79;
+                                continue _fun47013
                             }
                         case 47:
                             var1 = _closure2_slot4;
                             var2 = 'number';
                             var1 = typeof var1;
                             if (!(var2 === var1)) {
-                                _fun46852_ip = 106;
-                                continue _fun46852
+                                _fun47013_ip = 106;
+                                continue _fun47013
                             }
                         case 62:
-                            var3 = _closure2_slot7;
+                            var3 = _closure2_slot8;
                             var2 = _closure2_slot4;
                             var1 = undefined;
                             var1 = var3.bind(var1)(var2);
-                            _fun46852_ip = 106;
-                            continue _fun46852;
+                            _fun47013_ip = 106;
+                            continue _fun47013;
                         case 79:
-                            var3 = _closure2_slot7;
+                            var3 = _closure2_slot8;
                             var2 = _closure2_slot3;
                             var1 = undefined;
                             var1 = var3.bind(var1)(var2);
-                            _fun46852_ip = 106;
-                            continue _fun46852;
+                            _fun47013_ip = 106;
+                            continue _fun47013;
                         case 96:
-                            var1 = _closure2_slot8;
+                            var1 = _closure2_slot9;
                             var0 = undefined;
                             var0 = var1.bind(var0)();
                         case 106:
@@ -173,15 +176,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             return var0;
                     }
                 };
-                var9 = var8.bind(var11)(var6, var7);
-                _closure2_slot9 = var9;
+                var9 = var9.bind(var11)(var6, var7);
+                _closure2_slot10 = var9;
                 var7 = 4;
                 var6 = var5[var7];
                 var6 = var2.bind(var4)(var6);
-                var8 = var6.Gesture;
-                var6 = var8.Tap;
-                var10 = var6.bind(var8)();
-                var8 = var10.onEnd;
+                var10 = var6.Gesture;
+                var6 = var10.Tap;
+                var12 = var6.bind(var10)();
+                var10 = var12.onEnd;
                 var6 = function() {
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot1;
@@ -190,28 +193,28 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = undefined;
                     var3 = var2.bind(var0)(var1);
                     var2 = var3.runOnJS;
-                    var1 = _closure2_slot9;
+                    var1 = _closure2_slot10;
                     var1 = var2.bind(var3)(var1);
                     var1 = var1.bind(var0)();
                     return var0;
                 };
-                var12 = {};
-                var19 = 5;
-                var14 = var5[var19];
-                var14 = var2.bind(var4)(var14);
-                var14 = var14.runOnJS;
-                var12.runOnJS = var14;
-                var12.handleOnPress = var9;
-                var6.__closure = var12;
-                var12 = 3995467602852.0;
-                var6.__workletHash = var12;
-                var12 = _closure1_slot5;
-                var6.__initData = var12;
-                var6 = var8.bind(var10)(var6);
-                var8 = var5[var19];
-                var12 = var2.bind(var4)(var8);
-                var10 = var12.useAnimatedStyle;
-                var8 = function() {
+                var14 = {};
+                var20 = 5;
+                var15 = var5[var20];
+                var15 = var2.bind(var4)(var15);
+                var15 = var15.runOnJS;
+                var14.runOnJS = var15;
+                var14.handleOnPress = var9;
+                var6.__closure = var14;
+                var14 = 3995467602852.0;
+                var6.__workletHash = var14;
+                var14 = _closure1_slot5;
+                var6.__initData = var14;
+                var6 = var10.bind(var12)(var6);
+                var10 = var5[var20];
+                var14 = var2.bind(var4)(var10);
+                var12 = var14.useAnimatedStyle;
+                var10 = function() {
                     var0 = {};
                     var3 = _closure1_slot0;
                     var2 = _closure1_slot1;
@@ -237,34 +240,36 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0.opacity = var1;
                     return var0;
                 };
-                var14 = {};
-                var19 = var5[var19];
-                var19 = var2.bind(var4)(var19);
-                var19 = var19.interpolate;
-                var14.interpolate = var19;
-                var14.animatedIndex = var18;
-                var14.disappearsOnIndex = var17;
-                var14.appearsOnIndex = var16;
-                var14.opacity = var15;
-                var8.__closure = var14;
-                var14 = 1140766381376.0;
-                var8.__workletHash = var14;
-                var14 = _closure1_slot6;
-                var8.__initData = var14;
-                var12 = var10.bind(var12)(var8);
-                _closure2_slot10 = var12;
+                var15 = {};
+                var20 = var5[var20];
+                var20 = var2.bind(var4)(var20);
+                var20 = var20.interpolate;
+                var15.interpolate = var20;
+                var15.animatedIndex = var19;
+                var15.disappearsOnIndex = var18;
+                var15.appearsOnIndex = var17;
+                var15.opacity = var16;
+                var10.__closure = var15;
+                var15 = 1140766381376.0;
+                var10.__workletHash = var15;
+                var15 = _closure1_slot6;
+                var10.__initData = var15;
+                var12 = var12.bind(var14)(var10);
+                _closure2_slot11 = var12;
                 var10 = var11.useMemo;
-                var8 = new Array(2);
-                var8[0] = var13;
-                var8[1] = var12;
+                var14 = var8.container;
+                var8 = new Array(3);
+                var8[0] = var14;
+                var8[1] = var13;
+                var8[2] = var12;
                 var0 = function() { // Environment: var0
-                    var0 = _closure1_slot4;
-                    var1 = var0.container;
+                    var0 = _closure2_slot7;
+                    var2 = var0.container;
                     var0 = new Array(3);
-                    var0[0] = var1;
+                    var0[0] = var2;
                     var2 = _closure2_slot6;
                     var0[1] = var2;
-                    var1 = _closure2_slot10;
+                    var1 = _closure2_slot11;
                     var0[2] = var1;
                     return var0;
                 };
@@ -284,10 +289,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var8.bind(var4)(var5, var0);
                 var0 = var5;
                 if (!(var2 !== var3)) {
-                    _fun46851_ip = 562;
-                    continue _fun46851
+                    _fun47012_ip = 587;
+                    continue _fun47012
                 }
-            case 518:
+            case 543:
                 var3 = _closure1_slot3;
                 var2 = _closure1_slot0;
                 var1 = _closure1_slot1;
@@ -298,7 +303,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1.gesture = var6;
                 var1.children = var5;
                 var0 = var3.bind(var4)(var2, var1);
-            case 562:
+            case 587:
                 return var0;
         }
     };
@@ -311,4 +316,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.BottomSheetBackdrop = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 4909, 4937, 3717, 4077, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 1297, 4940, 4968, 3717, 4077, 2]);

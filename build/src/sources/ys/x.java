@@ -18,7 +18,7 @@ public abstract class x {
         }
         final Ref.ObjectRef objectRef = new Ref.ObjectRef();
         objectRef.element = coroutineContext2;
-        kotlin.coroutines.e eVar = kotlin.coroutines.e.f32062d;
+        kotlin.coroutines.e eVar = kotlin.coroutines.e.f32630d;
         CoroutineContext coroutineContext3 = (CoroutineContext) coroutineContext.a1(eVar, new Function2() { // from class: ys.v
             @Override // kotlin.jvm.functions.Function2
             public final Object invoke(Object obj, Object obj2) {
@@ -82,7 +82,7 @@ public abstract class x {
 
     public static final CoroutineContext k(CoroutineScope coroutineScope, CoroutineContext coroutineContext) {
         CoroutineContext d10 = d(coroutineScope.getCoroutineContext(), coroutineContext, true);
-        if (d10 != m0.a() && d10.m(kotlin.coroutines.d.f32060j) == null) {
+        if (d10 != m0.a() && d10.m(kotlin.coroutines.d.f32628j) == null) {
             return d10.O0(m0.a());
         }
         return d10;
@@ -98,7 +98,7 @@ public abstract class x {
     }
 
     public static final u1 m(Continuation continuation, CoroutineContext coroutineContext, Object obj) {
-        if (!(continuation instanceof CoroutineStackFrame) || coroutineContext.m(v1.f55831d) == null) {
+        if (!(continuation instanceof CoroutineStackFrame) || coroutineContext.m(v1.f56399d) == null) {
             return null;
         }
         u1 l10 = l((CoroutineStackFrame) continuation);

@@ -5,14 +5,14 @@ import wp.a1;
 public final class c1 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final lr.h f53029a;
+    private final lr.h f53597a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final lr.h f53030b;
+    private final lr.h f53598b;
 
     public c1(lr.h hVar, lr.h hVar2) {
-        this.f53029a = hVar;
-        this.f53030b = hVar2;
+        this.f53597a = hVar;
+        this.f53598b = hVar2;
     }
 
     public static c1 a(lr.h hVar, lr.h hVar2) {
@@ -24,6 +24,6 @@ public final class c1 {
     }
 
     public b1 b(a1.b bVar, boolean z10) {
-        return c((fo.w0) this.f53029a.get(), bVar, z10, (gq.c) this.f53030b.get());
+        return c((fo.w0) this.f53597a.get(), bVar, z10, (gq.c) this.f53598b.get());
     }
 }

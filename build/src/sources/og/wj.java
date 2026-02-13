@@ -3,17 +3,17 @@ package og;
 public final class wj {
 
     /* renamed from: a  reason: collision with root package name */
-    private final i1 f39781a;
+    private final i1 f40349a;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public /* synthetic */ wj(uj ujVar, vj vjVar) {
         i1 i1Var;
-        i1Var = ujVar.f39722a;
-        this.f39781a = i1Var;
+        i1Var = ujVar.f40290a;
+        this.f40349a = i1Var;
     }
 
     public final i1 a() {
-        return this.f39781a;
+        return this.f40349a;
     }
 
     public final boolean equals(Object obj) {
@@ -23,10 +23,10 @@ public final class wj {
         if (!(obj instanceof wj)) {
             return false;
         }
-        return hf.o.a(this.f39781a, ((wj) obj).f39781a);
+        return hf.o.a(this.f40349a, ((wj) obj).f40349a);
     }
 
     public final int hashCode() {
-        return hf.o.b(this.f39781a);
+        return hf.o.b(this.f40349a);
     }
 }

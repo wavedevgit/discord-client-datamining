@@ -11,31 +11,31 @@ import oe.q;
 public final class x {
 
     /* renamed from: a  reason: collision with root package name */
-    private final e f39053a;
+    private final e f39621a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final u f39054b;
+    private final u f39622b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final b f39055c;
+    private final b f39623c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final CopyOnWriteArraySet f39056d;
+    private final CopyOnWriteArraySet f39624d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final ArrayDeque f39057e;
+    private final ArrayDeque f39625e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final ArrayDeque f39058f;
+    private final ArrayDeque f39626f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final Object f39059g;
+    private final Object f39627g;
 
     /* renamed from: h  reason: collision with root package name */
-    private boolean f39060h;
+    private boolean f39628h;
 
     /* renamed from: i  reason: collision with root package name */
-    private boolean f39061i;
+    private boolean f39629i;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public interface a {
@@ -52,45 +52,45 @@ public final class x {
     public static final class c {
 
         /* renamed from: a  reason: collision with root package name */
-        public final Object f39062a;
+        public final Object f39630a;
 
         /* renamed from: b  reason: collision with root package name */
-        private q.b f39063b = new q.b();
+        private q.b f39631b = new q.b();
 
         /* renamed from: c  reason: collision with root package name */
-        private boolean f39064c;
+        private boolean f39632c;
 
         /* renamed from: d  reason: collision with root package name */
-        private boolean f39065d;
+        private boolean f39633d;
 
         public c(Object obj) {
-            this.f39062a = obj;
+            this.f39630a = obj;
         }
 
         public void a(int i10, a aVar) {
-            if (!this.f39065d) {
+            if (!this.f39633d) {
                 if (i10 != -1) {
-                    this.f39063b.a(i10);
+                    this.f39631b.a(i10);
                 }
-                this.f39064c = true;
-                aVar.invoke(this.f39062a);
+                this.f39632c = true;
+                aVar.invoke(this.f39630a);
             }
         }
 
         public void b(b bVar) {
-            if (!this.f39065d && this.f39064c) {
-                q e10 = this.f39063b.e();
-                this.f39063b = new q.b();
-                this.f39064c = false;
-                bVar.a(this.f39062a, e10);
+            if (!this.f39633d && this.f39632c) {
+                q e10 = this.f39631b.e();
+                this.f39631b = new q.b();
+                this.f39632c = false;
+                bVar.a(this.f39630a, e10);
             }
         }
 
         public void c(b bVar) {
-            this.f39065d = true;
-            if (this.f39064c) {
-                this.f39064c = false;
-                bVar.a(this.f39062a, this.f39063b.e());
+            this.f39633d = true;
+            if (this.f39632c) {
+                this.f39632c = false;
+                bVar.a(this.f39630a, this.f39631b.e());
             }
         }
 
@@ -99,13 +99,13 @@ public final class x {
                 return true;
             }
             if (obj != null && c.class == obj.getClass()) {
-                return this.f39062a.equals(((c) obj).f39062a);
+                return this.f39630a.equals(((c) obj).f39630a);
             }
             return false;
         }
 
         public int hashCode() {
-            return this.f39062a.hashCode();
+            return this.f39630a.hashCode();
         }
     }
 
@@ -122,10 +122,10 @@ public final class x {
 
     /* JADX INFO: Access modifiers changed from: private */
     public boolean g(Message message) {
-        Iterator it = this.f39056d.iterator();
+        Iterator it = this.f39624d.iterator();
         while (it.hasNext()) {
-            ((c) it.next()).b(this.f39055c);
-            if (this.f39054b.b(0)) {
+            ((c) it.next()).b(this.f39623c);
+            if (this.f39622b.b(0)) {
                 return true;
             }
         }
@@ -134,10 +134,10 @@ public final class x {
 
     private void l() {
         boolean z10;
-        if (!this.f39061i) {
+        if (!this.f39629i) {
             return;
         }
-        if (Thread.currentThread() == this.f39054b.f().getThread()) {
+        if (Thread.currentThread() == this.f39622b.f().getThread()) {
             z10 = true;
         } else {
             z10 = false;
@@ -147,12 +147,12 @@ public final class x {
 
     public void c(Object obj) {
         oe.a.e(obj);
-        synchronized (this.f39059g) {
+        synchronized (this.f39627g) {
             try {
-                if (this.f39060h) {
+                if (this.f39628h) {
                     return;
                 }
-                this.f39056d.add(new c(obj));
+                this.f39624d.add(new c(obj));
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -160,27 +160,27 @@ public final class x {
     }
 
     public x d(Looper looper, e eVar, b bVar) {
-        return new x(this.f39056d, looper, eVar, bVar, this.f39061i);
+        return new x(this.f39624d, looper, eVar, bVar, this.f39629i);
     }
 
     public x e(Looper looper, b bVar) {
-        return d(looper, this.f39053a, bVar);
+        return d(looper, this.f39621a, bVar);
     }
 
     public void f() {
         l();
-        if (!this.f39058f.isEmpty()) {
-            if (!this.f39054b.b(0)) {
-                u uVar = this.f39054b;
+        if (!this.f39626f.isEmpty()) {
+            if (!this.f39622b.b(0)) {
+                u uVar = this.f39622b;
                 uVar.k(uVar.a(0));
             }
-            boolean isEmpty = this.f39057e.isEmpty();
-            this.f39057e.addAll(this.f39058f);
-            this.f39058f.clear();
+            boolean isEmpty = this.f39625e.isEmpty();
+            this.f39625e.addAll(this.f39626f);
+            this.f39626f.clear();
             if (isEmpty) {
-                while (!this.f39057e.isEmpty()) {
-                    ((Runnable) this.f39057e.peekFirst()).run();
-                    this.f39057e.removeFirst();
+                while (!this.f39625e.isEmpty()) {
+                    ((Runnable) this.f39625e.peekFirst()).run();
+                    this.f39625e.removeFirst();
                 }
             }
         }
@@ -188,8 +188,8 @@ public final class x {
 
     public void h(final int i10, final a aVar) {
         l();
-        final CopyOnWriteArraySet copyOnWriteArraySet = new CopyOnWriteArraySet(this.f39056d);
-        this.f39058f.add(new Runnable() { // from class: oe.w
+        final CopyOnWriteArraySet copyOnWriteArraySet = new CopyOnWriteArraySet(this.f39624d);
+        this.f39626f.add(new Runnable() { // from class: oe.w
             @Override // java.lang.Runnable
             public final void run() {
                 x.a(copyOnWriteArraySet, i10, aVar);
@@ -199,24 +199,24 @@ public final class x {
 
     public void i() {
         l();
-        synchronized (this.f39059g) {
-            this.f39060h = true;
+        synchronized (this.f39627g) {
+            this.f39628h = true;
         }
-        Iterator it = this.f39056d.iterator();
+        Iterator it = this.f39624d.iterator();
         while (it.hasNext()) {
-            ((c) it.next()).c(this.f39055c);
+            ((c) it.next()).c(this.f39623c);
         }
-        this.f39056d.clear();
+        this.f39624d.clear();
     }
 
     public void j(Object obj) {
         l();
-        Iterator it = this.f39056d.iterator();
+        Iterator it = this.f39624d.iterator();
         while (it.hasNext()) {
             c cVar = (c) it.next();
-            if (cVar.f39062a.equals(obj)) {
-                cVar.c(this.f39055c);
-                this.f39056d.remove(cVar);
+            if (cVar.f39630a.equals(obj)) {
+                cVar.c(this.f39623c);
+                this.f39624d.remove(cVar);
             }
         }
     }
@@ -227,13 +227,13 @@ public final class x {
     }
 
     private x(CopyOnWriteArraySet copyOnWriteArraySet, Looper looper, e eVar, b bVar, boolean z10) {
-        this.f39053a = eVar;
-        this.f39056d = copyOnWriteArraySet;
-        this.f39055c = bVar;
-        this.f39059g = new Object();
-        this.f39057e = new ArrayDeque();
-        this.f39058f = new ArrayDeque();
-        this.f39054b = eVar.c(looper, new Handler.Callback() { // from class: oe.v
+        this.f39621a = eVar;
+        this.f39624d = copyOnWriteArraySet;
+        this.f39623c = bVar;
+        this.f39627g = new Object();
+        this.f39625e = new ArrayDeque();
+        this.f39626f = new ArrayDeque();
+        this.f39622b = eVar.c(looper, new Handler.Callback() { // from class: oe.v
             @Override // android.os.Handler.Callback
             public final boolean handleMessage(Message message) {
                 boolean g10;
@@ -241,6 +241,6 @@ public final class x {
                 return g10;
             }
         });
-        this.f39061i = z10;
+        this.f39629i = z10;
     }
 }

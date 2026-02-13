@@ -5,10 +5,10 @@ import android.net.Uri;
 public class x0 extends mc.l0 {
 
     /* renamed from: i  reason: collision with root package name */
-    public final Uri f46519i;
+    public final Uri f47087i;
 
     public x0(String str, Uri uri) {
         super(str, null, false, 1);
-        this.f46519i = uri;
+        this.f47087i = uri;
     }
 }

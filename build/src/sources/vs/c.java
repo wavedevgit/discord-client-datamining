@@ -7,20 +7,20 @@ import kotlin.jvm.functions.Function0;
 public class c implements Function0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Class f51828d;
+    private final Class f52396d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Map f51829e;
+    private final Map f52397e;
 
     public c(Class cls, Map map) {
-        this.f51828d = cls;
-        this.f51829e = map;
+        this.f52396d = cls;
+        this.f52397e = map;
     }
 
     @Override // kotlin.jvm.functions.Function0
     public Object invoke() {
         String l10;
-        l10 = f.l(this.f51828d, this.f51829e);
+        l10 = f.l(this.f52396d, this.f52397e);
         return l10;
     }
 }

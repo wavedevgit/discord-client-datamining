@@ -14,14 +14,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot3 = var0;
     var7 = function() {
-        _fun30053: for (var _fun30053_ip = 0;;) switch (_fun30053_ip) {
+        _fun30084: for (var _fun30084_ip = 0;;) switch (_fun30084_ip) {
             case 0:
                 var1 = _closure1_slot3;
                 var0 = undefined;
                 var1 = var1.bind(var0)();
                 if (var1) {
-                    _fun30053_ip = 45;
-                    continue _fun30053
+                    _fun30084_ip = 45;
+                    continue _fun30084
                 }
             case 16:
                 var4 = _closure1_slot2;
@@ -99,29 +99,29 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/gateway/PostConnectionCallbackStore.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun30057: for (var _fun30057_ip = 0;;) switch (_fun30057_ip) {
+        _fun30088: for (var _fun30088_ip = 0;;) switch (_fun30088_ip) {
             case 0:
                 var2 = arg0;
                 var3 = _closure1_slot1;
                 var1 = var3.isConnectedOrOverlay;
                 var1 = var1.bind(var3)();
                 if (!var1) {
-                    _fun30057_ip = 47;
-                    continue _fun30057
+                    _fun30088_ip = 47;
+                    continue _fun30088
                 }
             case 23:
                 var1 = _closure1_slot3;
                 var3 = undefined;
                 var1 = var1.bind(var3)();
                 if (var1) {
-                    _fun30057_ip = 47;
-                    continue _fun30057
+                    _fun30088_ip = 47;
+                    continue _fun30088
                 }
             case 36:
                 var1 = _closure1_slot4;
                 var1 = var1.bind(var3)(var2);
-                _fun30057_ip = 61;
-                continue _fun30057;
+                _fun30088_ip = 61;
+                continue _fun30088;
             case 47:
                 var1 = _closure1_slot2;
                 var0 = var1.push;
@@ -133,4 +133,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.addPostConnectionCallback = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3470, 3471, 806, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3471, 3472, 807, 2]);

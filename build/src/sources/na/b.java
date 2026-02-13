@@ -7,45 +7,45 @@ import com.facebook.imagepipeline.common.ImageDecodeOptions;
 public class b {
 
     /* renamed from: a  reason: collision with root package name */
-    private int f37003a = 100;
+    private int f37571a = 100;
 
     /* renamed from: b  reason: collision with root package name */
-    private int f37004b = Integer.MAX_VALUE;
+    private int f37572b = Integer.MAX_VALUE;
 
     /* renamed from: c  reason: collision with root package name */
-    private boolean f37005c;
+    private boolean f37573c;
 
     /* renamed from: d  reason: collision with root package name */
-    private boolean f37006d;
+    private boolean f37574d;
 
     /* renamed from: e  reason: collision with root package name */
-    private boolean f37007e;
+    private boolean f37575e;
 
     /* renamed from: f  reason: collision with root package name */
-    private boolean f37008f;
+    private boolean f37576f;
 
     /* renamed from: g  reason: collision with root package name */
-    private boolean f37009g;
+    private boolean f37577g;
 
     /* renamed from: h  reason: collision with root package name */
-    private Bitmap.Config f37010h;
+    private Bitmap.Config f37578h;
 
     /* renamed from: i  reason: collision with root package name */
-    private Bitmap.Config f37011i;
+    private Bitmap.Config f37579i;
 
     /* renamed from: j  reason: collision with root package name */
-    private ra.c f37012j;
+    private ra.c f37580j;
 
     /* renamed from: k  reason: collision with root package name */
-    private ColorSpace f37013k;
+    private ColorSpace f37581k;
 
     /* renamed from: l  reason: collision with root package name */
-    private boolean f37014l;
+    private boolean f37582l;
 
     public b() {
         Bitmap.Config config = Bitmap.Config.ARGB_8888;
-        this.f37010h = config;
-        this.f37011i = config;
+        this.f37578h = config;
+        this.f37579i = config;
     }
 
     public ImageDecodeOptions a() {
@@ -53,11 +53,11 @@ public class b {
     }
 
     public Bitmap.Config b() {
-        return this.f37011i;
+        return this.f37579i;
     }
 
     public Bitmap.Config c() {
-        return this.f37010h;
+        return this.f37578h;
     }
 
     public bb.a d() {
@@ -65,42 +65,42 @@ public class b {
     }
 
     public ColorSpace e() {
-        return this.f37013k;
+        return this.f37581k;
     }
 
     public ra.c f() {
-        return this.f37012j;
+        return this.f37580j;
     }
 
     public boolean g() {
-        return this.f37008f;
+        return this.f37576f;
     }
 
     public boolean h() {
-        return this.f37005c;
+        return this.f37573c;
     }
 
     public boolean i() {
-        return this.f37014l;
+        return this.f37582l;
     }
 
     public boolean j() {
-        return this.f37009g;
+        return this.f37577g;
     }
 
     public int k() {
-        return this.f37004b;
+        return this.f37572b;
     }
 
     public int l() {
-        return this.f37003a;
+        return this.f37571a;
     }
 
     public boolean m() {
-        return this.f37007e;
+        return this.f37575e;
     }
 
     public boolean n() {
-        return this.f37006d;
+        return this.f37574d;
     }
 }

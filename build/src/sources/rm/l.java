@@ -3,42 +3,42 @@ package rm;
 public final class l {
 
     /* renamed from: a  reason: collision with root package name */
-    private final int f47504a;
+    private final int f48072a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final int f47505b;
+    private final int f48073b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final int f47506c;
+    private final int f48074c;
 
     /* renamed from: d  reason: collision with root package name */
-    private boolean f47507d;
+    private boolean f48075d;
 
     public l(int i10, int i11, int i12, boolean z10) {
-        this.f47504a = i10;
-        this.f47505b = i11;
-        this.f47506c = i12;
-        this.f47507d = z10;
+        this.f48072a = i10;
+        this.f48073b = i11;
+        this.f48074c = i12;
+        this.f48075d = z10;
     }
 
     public final int a() {
-        return this.f47505b;
+        return this.f48073b;
     }
 
     public final int b() {
-        return this.f47506c;
+        return this.f48074c;
     }
 
     public final boolean c() {
-        return this.f47507d;
+        return this.f48075d;
     }
 
     public final int d() {
-        return this.f47504a;
+        return this.f48072a;
     }
 
     public final void e(boolean z10) {
-        this.f47507d = z10;
+        this.f48075d = z10;
     }
 
     public boolean equals(Object obj) {
@@ -49,21 +49,21 @@ public final class l {
             return false;
         }
         l lVar = (l) obj;
-        if (this.f47504a == lVar.f47504a && this.f47505b == lVar.f47505b && this.f47506c == lVar.f47506c && this.f47507d == lVar.f47507d) {
+        if (this.f48072a == lVar.f48072a && this.f48073b == lVar.f48073b && this.f48074c == lVar.f48074c && this.f48075d == lVar.f48075d) {
             return true;
         }
         return false;
     }
 
     public int hashCode() {
-        return (((((Integer.hashCode(this.f47504a) * 31) + Integer.hashCode(this.f47505b)) * 31) + Integer.hashCode(this.f47506c)) * 31) + Boolean.hashCode(this.f47507d);
+        return (((((Integer.hashCode(this.f48072a) * 31) + Integer.hashCode(this.f48073b)) * 31) + Integer.hashCode(this.f48074c)) * 31) + Boolean.hashCode(this.f48075d);
     }
 
     public String toString() {
-        int i10 = this.f47504a;
-        int i11 = this.f47505b;
-        int i12 = this.f47506c;
-        boolean z10 = this.f47507d;
+        int i10 = this.f48072a;
+        int i11 = this.f48073b;
+        int i12 = this.f48074c;
+        boolean z10 = this.f48075d;
         return "KeyboardAnimationCallbackConfig(persistentInsetTypes=" + i10 + ", deferredInsetTypes=" + i11 + ", dispatchMode=" + i12 + ", hasTranslucentNavigationBar=" + z10 + ")";
     }
 }

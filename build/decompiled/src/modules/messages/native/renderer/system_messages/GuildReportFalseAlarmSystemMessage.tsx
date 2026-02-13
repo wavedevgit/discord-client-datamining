@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/messages/native/renderer/system_messages/GuildReportFalseAlarmSystemMessage.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun56544: for (var _fun56544_ip = 0;;) switch (_fun56544_ip) {
+        _fun56579: for (var _fun56579_ip = 0;;) switch (_fun56579_ip) {
             case 0:
                 var7 = arg0;
                 var14 = var7.message;
@@ -80,32 +80,32 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = 'username';
                 var1 = null;
                 if (!(var6 === var10)) {
-                    _fun56544_ip = 231;
-                    continue _fun56544
+                    _fun56579_ip = 232;
+                    continue _fun56579
                 }
-            case 228:
+            case 229:
                 var1 = var9;
-            case 231:
+            case 232:
                 var0.linkColor = var1;
                 var0.roleColor = var9;
                 var1 = null;
                 if (!var15) {
-                    _fun56544_ip = 249;
-                    continue _fun56544
+                    _fun56579_ip = 250;
+                    continue _fun56579
                 }
-            case 246:
+            case 247:
                 var1 = var11;
-            case 249:
+            case 250:
                 var0.roleColors = var1;
                 var1 = 'dot';
                 var1 = var1 === var10;
                 if (!var1) {
-                    _fun56544_ip = 269;
-                    continue _fun56544
+                    _fun56579_ip = 270;
+                    continue _fun56579
                 }
-            case 265:
+            case 266:
                 var1 = var4 != var9;
-            case 269:
+            case 270:
                 var0.shouldShowRoleDot = var1;
                 var1 = var14.channel_id;
                 var0.messageChannelId = var1;
@@ -156,12 +156,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var4 != var3;
                 var4 = null;
                 if (!var5) {
-                    _fun56544_ip = 491;
-                    continue _fun56544
+                    _fun56579_ip = 492;
+                    continue _fun56579
                 }
-            case 488:
+            case 489:
                 var4 = var3;
-            case 491:
+            case 492:
                 var3 = 'usernameColor';
                 var0[var3] = var4;
                 var7 = _closure1_slot0;
@@ -191,4 +191,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.createGuildReportFalseAlarmSystemMessage = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1372, 6762, 6770, 6844, 6771, 6845, 6772, 1234, 1418, 1417, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1372, 6744, 6752, 6826, 6753, 6827, 6754, 1235, 1418, 1417, 2]);

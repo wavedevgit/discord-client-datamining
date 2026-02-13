@@ -89,13 +89,13 @@ public final class PortalFromNativeContextManager {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit addPortal$lambda$0(View it) {
         Intrinsics.checkNotNullParameter(it, "it");
-        return Unit.f31988a;
+        return Unit.f32556a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit addPortal$lambda$1(View it) {
         Intrinsics.checkNotNullParameter(it, "it");
-        return Unit.f31988a;
+        return Unit.f32556a;
     }
 
     /* JADX WARN: Multi-variable type inference failed */

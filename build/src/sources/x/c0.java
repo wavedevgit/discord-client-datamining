@@ -3,10 +3,10 @@ package x;
 public final class c0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private boolean f54029a;
+    private boolean f54597a;
 
     private c0(boolean z10) {
-        this.f54029a = z10;
+        this.f54597a = z10;
     }
 
     public static c0 a(boolean z10) {

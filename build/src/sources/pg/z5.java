@@ -5,16 +5,16 @@ import bj.c;
 final class z5 implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final z5 f42712a = new z5();
+    static final z5 f43280a = new z5();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final bj.c f42713b;
+    private static final bj.c f43281b;
 
     static {
         c.b a10 = bj.c.a("modelLanguage");
         f fVar = new f();
         fVar.a(1);
-        f42713b = a10.b(fVar.b()).a();
+        f43281b = a10.b(fVar.b()).a();
     }
 
     private z5() {

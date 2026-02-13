@@ -33,7 +33,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/premium/powerups/hooks/useGuildPowerupTier3OverrideConfig.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun102870: for (var _fun102870_ip = 0;;) switch (_fun102870_ip) {
+        _fun102994: for (var _fun102994_ip = 0;;) switch (_fun102994_ip) {
             case 0:
                 var1 = arg0;
                 var _closure2_slot0 = var1;
@@ -48,7 +48,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = new Array(1);
                 var1[0] = var5;
                 var0 = function() { // Environment: var0
-                    _fun102871: for (var _fun102871_ip = 0;;) switch (_fun102871_ip) {
+                    _fun102995: for (var _fun102995_ip = 0;;) switch (_fun102995_ip) {
                         case 0:
                             var3 = _closure1_slot3;
                             var2 = var3.getGuild;
@@ -58,8 +58,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var3 = var1 == var2;
                             var1 = undefined;
                             if (var3) {
-                                _fun102871_ip = 61;
-                                continue _fun102871
+                                _fun102995_ip = 61;
+                                continue _fun102995
                             }
                         case 35:
                             var3 = var2.features;
@@ -75,16 +75,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var0 = var3.bind(var4)(var1, var0);
                 if (var0) {
-                    _fun102870_ip = 83;
-                    continue _fun102870
+                    _fun102994_ip = 83;
+                    continue _fun102994
                 }
             case 67:
                 var0 = {
                     'shouldShow': false,
                     'text': ''
                 };
-                _fun102870_ip = 158;
-                continue _fun102870;
+                _fun102994_ip = 158;
+                continue _fun102994;
             case 83:
                 var1 = {};
                 var3 = true;
@@ -110,4 +110,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1410, 660, 566, 1234, 1892, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1410, 660, 566, 1235, 1895, 2]);

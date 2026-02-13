@@ -3,5 +3,5 @@ package is;
 public abstract class b {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final a f30422a = new ks.a();
+    public static final a f30990a = new ks.a();
 }

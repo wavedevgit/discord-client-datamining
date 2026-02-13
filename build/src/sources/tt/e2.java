@@ -6,17 +6,17 @@ import kotlinx.serialization.descriptors.SerialDescriptor;
 public final class e2 extends x0 {
 
     /* renamed from: c  reason: collision with root package name */
-    private final String f49984c;
+    private final String f50552c;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public e2(SerialDescriptor primitive) {
         super(primitive, null);
         Intrinsics.checkNotNullParameter(primitive, "primitive");
-        this.f49984c = primitive.h() + "Array";
+        this.f50552c = primitive.h() + "Array";
     }
 
     @Override // kotlinx.serialization.descriptors.SerialDescriptor
     public String h() {
-        return this.f49984c;
+        return this.f50552c;
     }
 }

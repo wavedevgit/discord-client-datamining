@@ -7,32 +7,32 @@ public interface a {
     public static final class C0451a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final double f31974a;
+        private final double f32542a;
 
         public C0451a(double d10) {
-            this.f31974a = d10;
+            this.f32542a = d10;
         }
 
         public final double a() {
-            return this.f31974a;
+            return this.f32542a;
         }
 
         public boolean equals(Object obj) {
             if (this == obj) {
                 return true;
             }
-            if ((obj instanceof C0451a) && Double.compare(this.f31974a, ((C0451a) obj).f31974a) == 0) {
+            if ((obj instanceof C0451a) && Double.compare(this.f32542a, ((C0451a) obj).f32542a) == 0) {
                 return true;
             }
             return false;
         }
 
         public int hashCode() {
-            return Double.hashCode(this.f31974a);
+            return Double.hashCode(this.f32542a);
         }
 
         public String toString() {
-            double d10 = this.f31974a;
+            double d10 = this.f32542a;
             return "CameraStats(averageRotation=" + d10 + ")";
         }
     }

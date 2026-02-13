@@ -7,45 +7,45 @@ import java.util.Map;
 final class j implements Iterator {
 
     /* renamed from: d  reason: collision with root package name */
-    Map.Entry f44577d;
+    Map.Entry f45145d;
 
     /* renamed from: e  reason: collision with root package name */
-    final /* synthetic */ Iterator f44578e;
+    final /* synthetic */ Iterator f45146e;
 
     /* renamed from: i  reason: collision with root package name */
-    final /* synthetic */ k f44579i;
+    final /* synthetic */ k f45147i;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public j(k kVar, Iterator it) {
-        this.f44579i = kVar;
-        this.f44578e = it;
+        this.f45147i = kVar;
+        this.f45146e = it;
     }
 
     @Override // java.util.Iterator
     public final boolean hasNext() {
-        return this.f44578e.hasNext();
+        return this.f45146e.hasNext();
     }
 
     @Override // java.util.Iterator
     public final Object next() {
-        Map.Entry entry = (Map.Entry) this.f44578e.next();
-        this.f44577d = entry;
+        Map.Entry entry = (Map.Entry) this.f45146e.next();
+        this.f45145d = entry;
         return entry.getKey();
     }
 
     @Override // java.util.Iterator
     public final void remove() {
         boolean z10;
-        if (this.f44577d != null) {
+        if (this.f45145d != null) {
             z10 = true;
         } else {
             z10 = false;
         }
         c.d(z10, "no calls to next() since the last call to remove()");
-        Collection collection = (Collection) this.f44577d.getValue();
-        this.f44578e.remove();
-        q.l(this.f44579i.f44620e, collection.size());
+        Collection collection = (Collection) this.f45145d.getValue();
+        this.f45146e.remove();
+        q.l(this.f45147i.f45188e, collection.size());
         collection.clear();
-        this.f44577d = null;
+        this.f45145d = null;
     }
 }

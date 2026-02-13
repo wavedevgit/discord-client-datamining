@@ -9,32 +9,32 @@ public final class p extends a implements c0, cu.l, eu.e {
     private static final long serialVersionUID = 2055272540517425102L;
 
     /* renamed from: o  reason: collision with root package name */
-    private final transient Class f37655o;
+    private final transient Class f38223o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final transient Enum f37656p;
+    private final transient Enum f38224p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final transient Enum f37657q;
+    private final transient Enum f38225q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final transient int f37658r;
+    private final transient int f38226r;
 
     /* renamed from: s  reason: collision with root package name */
-    private final transient char f37659s;
+    private final transient char f38227s;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public p(String str, Class cls, Enum r32, Enum r42, int i10, char c10) {
         super(str);
-        this.f37655o = cls;
-        this.f37656p = r32;
-        this.f37657q = r42;
-        this.f37658r = i10;
-        this.f37659s = c10;
+        this.f38223o = cls;
+        this.f38224p = r32;
+        this.f38225q = r42;
+        this.f38226r = i10;
+        this.f38227s = c10;
     }
 
     private cu.s G(Locale locale, cu.v vVar, cu.m mVar) {
-        switch (this.f37658r) {
+        switch (this.f38226r) {
             case 101:
                 return cu.b.d(locale).l(vVar, mVar);
             case 102:
@@ -72,18 +72,18 @@ public final class p extends a implements c0, cu.l, eu.e {
     @Override // bu.p
     /* renamed from: H */
     public Enum f() {
-        return this.f37657q;
+        return this.f38225q;
     }
 
     @Override // bu.p
     /* renamed from: I */
     public Enum B() {
-        return this.f37656p;
+        return this.f38224p;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int J() {
-        return this.f37658r;
+        return this.f38226r;
     }
 
     public int K(Enum r12) {
@@ -136,7 +136,7 @@ public final class p extends a implements c0, cu.l, eu.e {
 
     @Override // bu.e, bu.p
     public char d() {
-        return this.f37659s;
+        return this.f38227s;
     }
 
     @Override // eu.e
@@ -146,7 +146,7 @@ public final class p extends a implements c0, cu.l, eu.e {
 
     @Override // bu.p
     public Class getType() {
-        return this.f37655o;
+        return this.f38223o;
     }
 
     @Override // cu.l

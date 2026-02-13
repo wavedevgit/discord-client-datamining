@@ -5,30 +5,30 @@ import bj.c;
 final class x4 implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final x4 f42650a = new x4();
+    static final x4 f43218a = new x4();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final bj.c f42651b;
+    private static final bj.c f43219b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final bj.c f42652c;
+    private static final bj.c f43220c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final bj.c f42653d;
+    private static final bj.c f43221d;
 
     static {
         c.b a10 = bj.c.a("options");
         f fVar = new f();
         fVar.a(1);
-        f42651b = a10.b(fVar.b()).a();
+        f43219b = a10.b(fVar.b()).a();
         c.b a11 = bj.c.a("errorCode");
         f fVar2 = new f();
         fVar2.a(2);
-        f42652c = a11.b(fVar2.b()).a();
+        f43220c = a11.b(fVar2.b()).a();
         c.b a12 = bj.c.a("durationMs");
         f fVar3 = new f();
         fVar3.a(3);
-        f42653d = a12.b(fVar3.b()).a();
+        f43221d = a12.b(fVar3.b()).a();
     }
 
     private x4() {

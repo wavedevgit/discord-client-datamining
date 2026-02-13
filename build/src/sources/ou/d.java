@@ -47,49 +47,49 @@ public final class d implements Closeable, Flushable {
     private final e F;
 
     /* renamed from: d */
-    private final uu.a f41274d;
+    private final uu.a f41842d;
 
     /* renamed from: e */
-    private final File f41275e;
+    private final File f41843e;
 
     /* renamed from: i */
-    private final int f41276i;
+    private final int f41844i;
 
     /* renamed from: o */
-    private final int f41277o;
+    private final int f41845o;
 
     /* renamed from: p */
-    private long f41278p;
+    private long f41846p;
 
     /* renamed from: q */
-    private final File f41279q;
+    private final File f41847q;
 
     /* renamed from: r */
-    private final File f41280r;
+    private final File f41848r;
 
     /* renamed from: s */
-    private final File f41281s;
+    private final File f41849s;
 
     /* renamed from: t */
-    private long f41282t;
+    private long f41850t;
 
     /* renamed from: u */
-    private BufferedSink f41283u;
+    private BufferedSink f41851u;
 
     /* renamed from: v */
-    private final LinkedHashMap f41284v;
+    private final LinkedHashMap f41852v;
 
     /* renamed from: w */
-    private int f41285w;
+    private int f41853w;
 
     /* renamed from: x */
-    private boolean f41286x;
+    private boolean f41854x;
 
     /* renamed from: y */
-    private boolean f41287y;
+    private boolean f41855y;
 
     /* renamed from: z */
-    private boolean f41288z;
+    private boolean f41856z;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a {
@@ -105,73 +105,73 @@ public final class d implements Closeable, Flushable {
     public final class b {
 
         /* renamed from: a */
-        private final c f41289a;
+        private final c f41857a;
 
         /* renamed from: b */
-        private final boolean[] f41290b;
+        private final boolean[] f41858b;
 
         /* renamed from: c */
-        private boolean f41291c;
+        private boolean f41859c;
 
         /* renamed from: d */
-        final /* synthetic */ d f41292d;
+        final /* synthetic */ d f41860d;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
         public static final class a extends Lambda implements Function1 {
 
             /* renamed from: d */
-            final /* synthetic */ d f41293d;
+            final /* synthetic */ d f41861d;
 
             /* renamed from: e */
-            final /* synthetic */ b f41294e;
+            final /* synthetic */ b f41862e;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             a(d dVar, b bVar) {
                 super(1);
-                this.f41293d = dVar;
-                this.f41294e = bVar;
+                this.f41861d = dVar;
+                this.f41862e = bVar;
             }
 
             public final void a(IOException it) {
                 Intrinsics.checkNotNullParameter(it, "it");
-                d dVar = this.f41293d;
-                b bVar = this.f41294e;
+                d dVar = this.f41861d;
+                b bVar = this.f41862e;
                 synchronized (dVar) {
                     bVar.c();
-                    Unit unit = Unit.f31988a;
+                    Unit unit = Unit.f32556a;
                 }
             }
 
             @Override // kotlin.jvm.functions.Function1
             public /* bridge */ /* synthetic */ Object invoke(Object obj) {
                 a((IOException) obj);
-                return Unit.f31988a;
+                return Unit.f32556a;
             }
         }
 
         public b(d dVar, c entry) {
             boolean[] zArr;
             Intrinsics.checkNotNullParameter(entry, "entry");
-            this.f41292d = dVar;
-            this.f41289a = entry;
+            this.f41860d = dVar;
+            this.f41857a = entry;
             if (entry.g()) {
                 zArr = null;
             } else {
                 zArr = new boolean[dVar.F0()];
             }
-            this.f41290b = zArr;
+            this.f41858b = zArr;
         }
 
         public final void a() {
-            d dVar = this.f41292d;
+            d dVar = this.f41860d;
             synchronized (dVar) {
                 try {
-                    if (!this.f41291c) {
-                        if (Intrinsics.areEqual(this.f41289a.b(), this)) {
+                    if (!this.f41859c) {
+                        if (Intrinsics.areEqual(this.f41857a.b(), this)) {
                             dVar.C(this, false);
                         }
-                        this.f41291c = true;
-                        Unit unit = Unit.f31988a;
+                        this.f41859c = true;
+                        Unit unit = Unit.f32556a;
                     } else {
                         throw new IllegalStateException("Check failed.");
                     }
@@ -182,15 +182,15 @@ public final class d implements Closeable, Flushable {
         }
 
         public final void b() {
-            d dVar = this.f41292d;
+            d dVar = this.f41860d;
             synchronized (dVar) {
                 try {
-                    if (!this.f41291c) {
-                        if (Intrinsics.areEqual(this.f41289a.b(), this)) {
+                    if (!this.f41859c) {
+                        if (Intrinsics.areEqual(this.f41857a.b(), this)) {
                             dVar.C(this, true);
                         }
-                        this.f41291c = true;
-                        Unit unit = Unit.f31988a;
+                        this.f41859c = true;
+                        Unit unit = Unit.f32556a;
                     } else {
                         throw new IllegalStateException("Check failed.");
                     }
@@ -201,37 +201,37 @@ public final class d implements Closeable, Flushable {
         }
 
         public final void c() {
-            if (Intrinsics.areEqual(this.f41289a.b(), this)) {
-                if (this.f41292d.f41287y) {
-                    this.f41292d.C(this, false);
+            if (Intrinsics.areEqual(this.f41857a.b(), this)) {
+                if (this.f41860d.f41855y) {
+                    this.f41860d.C(this, false);
                 } else {
-                    this.f41289a.q(true);
+                    this.f41857a.q(true);
                 }
             }
         }
 
         public final c d() {
-            return this.f41289a;
+            return this.f41857a;
         }
 
         public final boolean[] e() {
-            return this.f41290b;
+            return this.f41858b;
         }
 
         public final Sink f(int i10) {
-            d dVar = this.f41292d;
+            d dVar = this.f41860d;
             synchronized (dVar) {
-                if (!this.f41291c) {
-                    if (!Intrinsics.areEqual(this.f41289a.b(), this)) {
+                if (!this.f41859c) {
+                    if (!Intrinsics.areEqual(this.f41857a.b(), this)) {
                         return x.b();
                     }
-                    if (!this.f41289a.g()) {
-                        boolean[] zArr = this.f41290b;
+                    if (!this.f41857a.g()) {
+                        boolean[] zArr = this.f41858b;
                         Intrinsics.checkNotNull(zArr);
                         zArr[i10] = true;
                     }
                     try {
-                        return new ou.e(dVar.E0().f((File) this.f41289a.c().get(i10)), new a(dVar, this));
+                        return new ou.e(dVar.E0().f((File) this.f41857a.c().get(i10)), new a(dVar, this));
                     } catch (FileNotFoundException unused) {
                         return x.b();
                     }
@@ -245,68 +245,68 @@ public final class d implements Closeable, Flushable {
     public final class c {
 
         /* renamed from: a */
-        private final String f41295a;
+        private final String f41863a;
 
         /* renamed from: b */
-        private final long[] f41296b;
+        private final long[] f41864b;
 
         /* renamed from: c */
-        private final List f41297c;
+        private final List f41865c;
 
         /* renamed from: d */
-        private final List f41298d;
+        private final List f41866d;
 
         /* renamed from: e */
-        private boolean f41299e;
+        private boolean f41867e;
 
         /* renamed from: f */
-        private boolean f41300f;
+        private boolean f41868f;
 
         /* renamed from: g */
-        private b f41301g;
+        private b f41869g;
 
         /* renamed from: h */
-        private int f41302h;
+        private int f41870h;
 
         /* renamed from: i */
-        private long f41303i;
+        private long f41871i;
 
         /* renamed from: j */
-        final /* synthetic */ d f41304j;
+        final /* synthetic */ d f41872j;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
         public static final class a extends k {
 
             /* renamed from: d */
-            private boolean f41305d;
+            private boolean f41873d;
 
             /* renamed from: e */
-            final /* synthetic */ d f41306e;
+            final /* synthetic */ d f41874e;
 
             /* renamed from: i */
-            final /* synthetic */ c f41307i;
+            final /* synthetic */ c f41875i;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             a(Source source, d dVar, c cVar) {
                 super(source);
-                this.f41306e = dVar;
-                this.f41307i = cVar;
+                this.f41874e = dVar;
+                this.f41875i = cVar;
             }
 
             @Override // av.k, okio.Source, java.io.Closeable, java.lang.AutoCloseable
             public void close() {
                 super.close();
-                if (!this.f41305d) {
-                    this.f41305d = true;
-                    d dVar = this.f41306e;
-                    c cVar = this.f41307i;
+                if (!this.f41873d) {
+                    this.f41873d = true;
+                    d dVar = this.f41874e;
+                    c cVar = this.f41875i;
                     synchronized (dVar) {
                         try {
                             cVar.n(cVar.f() - 1);
                             if (cVar.f() == 0 && cVar.i()) {
                                 dVar.a1(cVar);
                             }
-                            Unit unit = Unit.f31988a;
+                            Unit unit = Unit.f32556a;
                         } catch (Throwable th2) {
                             throw th2;
                         }
@@ -317,20 +317,20 @@ public final class d implements Closeable, Flushable {
 
         public c(d dVar, String key) {
             Intrinsics.checkNotNullParameter(key, "key");
-            this.f41304j = dVar;
-            this.f41295a = key;
-            this.f41296b = new long[dVar.F0()];
-            this.f41297c = new ArrayList();
-            this.f41298d = new ArrayList();
+            this.f41872j = dVar;
+            this.f41863a = key;
+            this.f41864b = new long[dVar.F0()];
+            this.f41865c = new ArrayList();
+            this.f41866d = new ArrayList();
             StringBuilder sb2 = new StringBuilder(key);
             sb2.append('.');
             int length = sb2.length();
             int F0 = dVar.F0();
             for (int i10 = 0; i10 < F0; i10++) {
                 sb2.append(i10);
-                this.f41297c.add(new File(this.f41304j.C0(), sb2.toString()));
+                this.f41865c.add(new File(this.f41872j.C0(), sb2.toString()));
                 sb2.append(".tmp");
-                this.f41298d.add(new File(this.f41304j.C0(), sb2.toString()));
+                this.f41866d.add(new File(this.f41872j.C0(), sb2.toString()));
                 sb2.setLength(length);
             }
         }
@@ -340,61 +340,61 @@ public final class d implements Closeable, Flushable {
         }
 
         private final Source k(int i10) {
-            Source e10 = this.f41304j.E0().e((File) this.f41297c.get(i10));
-            if (this.f41304j.f41287y) {
+            Source e10 = this.f41872j.E0().e((File) this.f41865c.get(i10));
+            if (this.f41872j.f41855y) {
                 return e10;
             }
-            this.f41302h++;
-            return new a(e10, this.f41304j, this);
+            this.f41870h++;
+            return new a(e10, this.f41872j, this);
         }
 
         public final List a() {
-            return this.f41297c;
+            return this.f41865c;
         }
 
         public final b b() {
-            return this.f41301g;
+            return this.f41869g;
         }
 
         public final List c() {
-            return this.f41298d;
+            return this.f41866d;
         }
 
         public final String d() {
-            return this.f41295a;
+            return this.f41863a;
         }
 
         public final long[] e() {
-            return this.f41296b;
+            return this.f41864b;
         }
 
         public final int f() {
-            return this.f41302h;
+            return this.f41870h;
         }
 
         public final boolean g() {
-            return this.f41299e;
+            return this.f41867e;
         }
 
         public final long h() {
-            return this.f41303i;
+            return this.f41871i;
         }
 
         public final boolean i() {
-            return this.f41300f;
+            return this.f41868f;
         }
 
         public final void l(b bVar) {
-            this.f41301g = bVar;
+            this.f41869g = bVar;
         }
 
         public final void m(List strings) {
             Intrinsics.checkNotNullParameter(strings, "strings");
-            if (strings.size() == this.f41304j.F0()) {
+            if (strings.size() == this.f41872j.F0()) {
                 try {
                     int size = strings.size();
                     for (int i10 = 0; i10 < size; i10++) {
-                        this.f41296b[i10] = Long.parseLong((String) strings.get(i10));
+                        this.f41864b[i10] = Long.parseLong((String) strings.get(i10));
                     }
                     return;
                 } catch (NumberFormatException unused) {
@@ -407,45 +407,45 @@ public final class d implements Closeable, Flushable {
         }
 
         public final void n(int i10) {
-            this.f41302h = i10;
+            this.f41870h = i10;
         }
 
         public final void o(boolean z10) {
-            this.f41299e = z10;
+            this.f41867e = z10;
         }
 
         public final void p(long j10) {
-            this.f41303i = j10;
+            this.f41871i = j10;
         }
 
         public final void q(boolean z10) {
-            this.f41300f = z10;
+            this.f41868f = z10;
         }
 
         public final C0580d r() {
-            d dVar = this.f41304j;
-            if (mu.e.f36664h && !Thread.holdsLock(dVar)) {
+            d dVar = this.f41872j;
+            if (mu.e.f37232h && !Thread.holdsLock(dVar)) {
                 throw new AssertionError("Thread " + Thread.currentThread().getName() + " MUST hold lock on " + dVar);
-            } else if (!this.f41299e) {
+            } else if (!this.f41867e) {
                 return null;
             } else {
-                if (!this.f41304j.f41287y && (this.f41301g != null || this.f41300f)) {
+                if (!this.f41872j.f41855y && (this.f41869g != null || this.f41868f)) {
                     return null;
                 }
                 ArrayList<Source> arrayList = new ArrayList();
-                long[] jArr = (long[]) this.f41296b.clone();
+                long[] jArr = (long[]) this.f41864b.clone();
                 try {
-                    int F0 = this.f41304j.F0();
+                    int F0 = this.f41872j.F0();
                     for (int i10 = 0; i10 < F0; i10++) {
                         arrayList.add(k(i10));
                     }
-                    return new C0580d(this.f41304j, this.f41295a, this.f41303i, arrayList, jArr);
+                    return new C0580d(this.f41872j, this.f41863a, this.f41871i, arrayList, jArr);
                 } catch (FileNotFoundException unused) {
                     for (Source source : arrayList) {
                         mu.e.m(source);
                     }
                     try {
-                        this.f41304j.a1(this);
+                        this.f41872j.a1(this);
                     } catch (IOException unused2) {
                     }
                     return null;
@@ -455,7 +455,7 @@ public final class d implements Closeable, Flushable {
 
         public final void s(BufferedSink writer) {
             Intrinsics.checkNotNullParameter(writer, "writer");
-            for (long j10 : this.f41296b) {
+            for (long j10 : this.f41864b) {
                 writer.writeByte(32).W0(j10);
             }
         }
@@ -466,44 +466,44 @@ public final class d implements Closeable, Flushable {
     public final class C0580d implements Closeable {
 
         /* renamed from: d */
-        private final String f41308d;
+        private final String f41876d;
 
         /* renamed from: e */
-        private final long f41309e;
+        private final long f41877e;
 
         /* renamed from: i */
-        private final List f41310i;
+        private final List f41878i;
 
         /* renamed from: o */
-        private final long[] f41311o;
+        private final long[] f41879o;
 
         /* renamed from: p */
-        final /* synthetic */ d f41312p;
+        final /* synthetic */ d f41880p;
 
         public C0580d(d dVar, String key, long j10, List sources, long[] lengths) {
             Intrinsics.checkNotNullParameter(key, "key");
             Intrinsics.checkNotNullParameter(sources, "sources");
             Intrinsics.checkNotNullParameter(lengths, "lengths");
-            this.f41312p = dVar;
-            this.f41308d = key;
-            this.f41309e = j10;
-            this.f41310i = sources;
-            this.f41311o = lengths;
+            this.f41880p = dVar;
+            this.f41876d = key;
+            this.f41877e = j10;
+            this.f41878i = sources;
+            this.f41879o = lengths;
         }
 
         public final b a() {
-            return this.f41312p.J(this.f41308d, this.f41309e);
+            return this.f41880p.J(this.f41876d, this.f41877e);
         }
 
         @Override // java.io.Closeable, java.lang.AutoCloseable
         public void close() {
-            for (Source source : this.f41310i) {
+            for (Source source : this.f41878i) {
                 mu.e.m(source);
             }
         }
 
         public final Source h(int i10) {
-            return (Source) this.f41310i.get(i10);
+            return (Source) this.f41878i.get(i10);
         }
     }
 
@@ -519,7 +519,7 @@ public final class d implements Closeable, Flushable {
         public long f() {
             d dVar = d.this;
             synchronized (dVar) {
-                if (!dVar.f41288z || dVar.z0()) {
+                if (!dVar.f41856z || dVar.z0()) {
                     return -1L;
                 }
                 try {
@@ -530,11 +530,11 @@ public final class d implements Closeable, Flushable {
                 try {
                     if (dVar.H0()) {
                         dVar.V0();
-                        dVar.f41285w = 0;
+                        dVar.f41853w = 0;
                     }
                 } catch (IOException unused2) {
                     dVar.C = true;
-                    dVar.f41283u = x.c(x.b());
+                    dVar.f41851u = x.c(x.b());
                 }
                 return -1L;
             }
@@ -552,8 +552,8 @@ public final class d implements Closeable, Flushable {
         public final void a(IOException it) {
             Intrinsics.checkNotNullParameter(it, "it");
             d dVar = d.this;
-            if (!mu.e.f36664h || Thread.holdsLock(dVar)) {
-                d.this.f41286x = true;
+            if (!mu.e.f37232h || Thread.holdsLock(dVar)) {
+                d.this.f41854x = true;
                 return;
             }
             throw new AssertionError("Thread " + Thread.currentThread().getName() + " MUST hold lock on " + dVar);
@@ -562,7 +562,7 @@ public final class d implements Closeable, Flushable {
         @Override // kotlin.jvm.functions.Function1
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             a((IOException) obj);
-            return Unit.f31988a;
+            return Unit.f32556a;
         }
     }
 
@@ -570,19 +570,19 @@ public final class d implements Closeable, Flushable {
         Intrinsics.checkNotNullParameter(fileSystem, "fileSystem");
         Intrinsics.checkNotNullParameter(directory, "directory");
         Intrinsics.checkNotNullParameter(taskRunner, "taskRunner");
-        this.f41274d = fileSystem;
-        this.f41275e = directory;
-        this.f41276i = i10;
-        this.f41277o = i11;
-        this.f41278p = j10;
-        this.f41284v = new LinkedHashMap(0, 0.75f, true);
+        this.f41842d = fileSystem;
+        this.f41843e = directory;
+        this.f41844i = i10;
+        this.f41845o = i11;
+        this.f41846p = j10;
+        this.f41852v = new LinkedHashMap(0, 0.75f, true);
         this.E = taskRunner.i();
-        this.F = new e(mu.e.f36665i + " Cache");
+        this.F = new e(mu.e.f37233i + " Cache");
         if (j10 > 0) {
             if (i11 > 0) {
-                this.f41279q = new File(directory, H);
-                this.f41280r = new File(directory, I);
-                this.f41281s = new File(directory, J);
+                this.f41847q = new File(directory, H);
+                this.f41848r = new File(directory, I);
+                this.f41849s = new File(directory, J);
                 return;
             }
             throw new IllegalArgumentException("valueCount <= 0");
@@ -591,37 +591,37 @@ public final class d implements Closeable, Flushable {
     }
 
     public final boolean H0() {
-        int i10 = this.f41285w;
-        if (i10 >= 2000 && i10 >= this.f41284v.size()) {
+        int i10 = this.f41853w;
+        if (i10 >= 2000 && i10 >= this.f41852v.size()) {
             return true;
         }
         return false;
     }
 
     private final BufferedSink L0() {
-        return x.c(new ou.e(this.f41274d.c(this.f41279q), new f()));
+        return x.c(new ou.e(this.f41842d.c(this.f41847q), new f()));
     }
 
     private final void N0() {
-        this.f41274d.h(this.f41280r);
-        Iterator it = this.f41284v.values().iterator();
+        this.f41842d.h(this.f41848r);
+        Iterator it = this.f41852v.values().iterator();
         while (it.hasNext()) {
             Object next = it.next();
             Intrinsics.checkNotNullExpressionValue(next, "i.next()");
             c cVar = (c) next;
             int i10 = 0;
             if (cVar.b() == null) {
-                int i11 = this.f41277o;
+                int i11 = this.f41845o;
                 while (i10 < i11) {
-                    this.f41282t += cVar.e()[i10];
+                    this.f41850t += cVar.e()[i10];
                     i10++;
                 }
             } else {
                 cVar.l(null);
-                int i12 = this.f41277o;
+                int i12 = this.f41845o;
                 while (i10 < i12) {
-                    this.f41274d.h((File) cVar.a().get(i10));
-                    this.f41274d.h((File) cVar.c().get(i10));
+                    this.f41842d.h((File) cVar.a().get(i10));
+                    this.f41842d.h((File) cVar.c().get(i10));
                     i10++;
                 }
                 it.remove();
@@ -630,27 +630,27 @@ public final class d implements Closeable, Flushable {
     }
 
     private final void O0() {
-        BufferedSource d10 = x.d(this.f41274d.e(this.f41279q));
+        BufferedSource d10 = x.d(this.f41842d.e(this.f41847q));
         try {
             String J0 = d10.J0();
             String J02 = d10.J0();
             String J03 = d10.J0();
             String J04 = d10.J0();
             String J05 = d10.J0();
-            if (Intrinsics.areEqual(K, J0) && Intrinsics.areEqual(L, J02) && Intrinsics.areEqual(String.valueOf(this.f41276i), J03) && Intrinsics.areEqual(String.valueOf(this.f41277o), J04) && J05.length() <= 0) {
+            if (Intrinsics.areEqual(K, J0) && Intrinsics.areEqual(L, J02) && Intrinsics.areEqual(String.valueOf(this.f41844i), J03) && Intrinsics.areEqual(String.valueOf(this.f41845o), J04) && J05.length() <= 0) {
                 int i10 = 0;
                 while (true) {
                     try {
                         S0(d10.J0());
                         i10++;
                     } catch (EOFException unused) {
-                        this.f41285w = i10 - this.f41284v.size();
+                        this.f41853w = i10 - this.f41852v.size();
                         if (!d10.p1()) {
                             V0();
                         } else {
-                            this.f41283u = L0();
+                            this.f41851u = L0();
                         }
-                        Unit unit = Unit.f31988a;
+                        Unit unit = Unit.f32556a;
                         ls.c.a(d10, null);
                         return;
                     }
@@ -686,17 +686,17 @@ public final class d implements Closeable, Flushable {
                 Intrinsics.checkNotNullExpressionValue(substring, "this as java.lang.String).substring(startIndex)");
                 String str2 = Q;
                 if (h02 == str2.length() && StringsKt.P(str, str2, false, 2, null)) {
-                    this.f41284v.remove(substring);
+                    this.f41852v.remove(substring);
                     return;
                 }
             } else {
                 substring = str.substring(i10, h03);
                 Intrinsics.checkNotNullExpressionValue(substring, "this as java.lang.String…ing(startIndex, endIndex)");
             }
-            c cVar = (c) this.f41284v.get(substring);
+            c cVar = (c) this.f41852v.get(substring);
             if (cVar == null) {
                 cVar = new c(this, substring);
-                this.f41284v.put(substring, cVar);
+                this.f41852v.put(substring, cVar);
             }
             if (h03 != -1) {
                 String str3 = O;
@@ -729,7 +729,7 @@ public final class d implements Closeable, Flushable {
     }
 
     private final boolean b1() {
-        for (c toEvict : this.f41284v.values()) {
+        for (c toEvict : this.f41852v.values()) {
             if (!toEvict.i()) {
                 Intrinsics.checkNotNullExpressionValue(toEvict, "toEvict");
                 a1(toEvict);
@@ -757,12 +757,12 @@ public final class d implements Closeable, Flushable {
         c d10 = editor.d();
         if (Intrinsics.areEqual(d10.b(), editor)) {
             if (z10 && !d10.g()) {
-                int i10 = this.f41277o;
+                int i10 = this.f41845o;
                 for (int i11 = 0; i11 < i10; i11++) {
                     boolean[] e10 = editor.e();
                     Intrinsics.checkNotNull(e10);
                     if (e10[i11]) {
-                        if (!this.f41274d.b((File) d10.c().get(i11))) {
+                        if (!this.f41842d.b((File) d10.c().get(i11))) {
                             editor.a();
                             return;
                         }
@@ -772,20 +772,20 @@ public final class d implements Closeable, Flushable {
                     }
                 }
             }
-            int i12 = this.f41277o;
+            int i12 = this.f41845o;
             for (int i13 = 0; i13 < i12; i13++) {
                 File file = (File) d10.c().get(i13);
                 if (z10 && !d10.i()) {
-                    if (this.f41274d.b(file)) {
+                    if (this.f41842d.b(file)) {
                         File file2 = (File) d10.a().get(i13);
-                        this.f41274d.g(file, file2);
+                        this.f41842d.g(file, file2);
                         long j10 = d10.e()[i13];
-                        long d11 = this.f41274d.d(file2);
+                        long d11 = this.f41842d.d(file2);
                         d10.e()[i13] = d11;
-                        this.f41282t = (this.f41282t - j10) + d11;
+                        this.f41850t = (this.f41850t - j10) + d11;
                     }
                 } else {
-                    this.f41274d.h(file);
+                    this.f41842d.h(file);
                 }
             }
             d10.l(null);
@@ -793,16 +793,16 @@ public final class d implements Closeable, Flushable {
                 a1(d10);
                 return;
             }
-            this.f41285w++;
-            BufferedSink bufferedSink = this.f41283u;
+            this.f41853w++;
+            BufferedSink bufferedSink = this.f41851u;
             Intrinsics.checkNotNull(bufferedSink);
             if (!d10.g() && !z10) {
-                this.f41284v.remove(d10.d());
+                this.f41852v.remove(d10.d());
                 bufferedSink.q0(Q).writeByte(32);
                 bufferedSink.q0(d10.d());
                 bufferedSink.writeByte(10);
                 bufferedSink.flush();
-                if (this.f41282t <= this.f41278p || H0()) {
+                if (this.f41850t <= this.f41846p || H0()) {
                     pu.d.j(this.E, this.F, 0L, 2, null);
                 }
                 return;
@@ -818,7 +818,7 @@ public final class d implements Closeable, Flushable {
                 d10.p(j11);
             }
             bufferedSink.flush();
-            if (this.f41282t <= this.f41278p) {
+            if (this.f41850t <= this.f41846p) {
             }
             pu.d.j(this.E, this.F, 0L, 2, null);
             return;
@@ -827,48 +827,48 @@ public final class d implements Closeable, Flushable {
     }
 
     public final File C0() {
-        return this.f41275e;
+        return this.f41843e;
     }
 
     public final uu.a E0() {
-        return this.f41274d;
+        return this.f41842d;
     }
 
     public final int F0() {
-        return this.f41277o;
+        return this.f41845o;
     }
 
     public final synchronized void G0() {
         try {
-            if (mu.e.f36664h && !Thread.holdsLock(this)) {
+            if (mu.e.f37232h && !Thread.holdsLock(this)) {
                 throw new AssertionError("Thread " + Thread.currentThread().getName() + " MUST hold lock on " + this);
             }
-            if (this.f41288z) {
+            if (this.f41856z) {
                 return;
             }
-            if (this.f41274d.b(this.f41281s)) {
-                if (this.f41274d.b(this.f41279q)) {
-                    this.f41274d.h(this.f41281s);
+            if (this.f41842d.b(this.f41849s)) {
+                if (this.f41842d.b(this.f41847q)) {
+                    this.f41842d.h(this.f41849s);
                 } else {
-                    this.f41274d.g(this.f41281s, this.f41279q);
+                    this.f41842d.g(this.f41849s, this.f41847q);
                 }
             }
-            this.f41287y = mu.e.F(this.f41274d, this.f41281s);
-            if (this.f41274d.b(this.f41279q)) {
+            this.f41855y = mu.e.F(this.f41842d, this.f41849s);
+            if (this.f41842d.b(this.f41847q)) {
                 try {
                     O0();
                     N0();
-                    this.f41288z = true;
+                    this.f41856z = true;
                     return;
                 } catch (IOException e10) {
-                    vu.h g10 = vu.h.f52016a.g();
-                    g10.k("DiskLruCache " + this.f41275e + " is corrupt: " + e10.getMessage() + ", removing", 5, e10);
+                    vu.h g10 = vu.h.f52584a.g();
+                    g10.k("DiskLruCache " + this.f41843e + " is corrupt: " + e10.getMessage() + ", removing", 5, e10);
                     I();
                     this.A = false;
                 }
             }
             V0();
-            this.f41288z = true;
+            this.f41856z = true;
         } catch (Throwable th2) {
             throw th2;
         }
@@ -876,7 +876,7 @@ public final class d implements Closeable, Flushable {
 
     public final void I() {
         close();
-        this.f41274d.a(this.f41275e);
+        this.f41842d.a(this.f41843e);
     }
 
     public final synchronized b J(String key, long j10) {
@@ -885,7 +885,7 @@ public final class d implements Closeable, Flushable {
         G0();
         z();
         w1(key);
-        c cVar = (c) this.f41284v.get(key);
+        c cVar = (c) this.f41852v.get(key);
         if (j10 != M && (cVar == null || cVar.h() != j10)) {
             return null;
         }
@@ -901,16 +901,16 @@ public final class d implements Closeable, Flushable {
             return null;
         }
         if (!this.B && !this.C) {
-            BufferedSink bufferedSink = this.f41283u;
+            BufferedSink bufferedSink = this.f41851u;
             Intrinsics.checkNotNull(bufferedSink);
             bufferedSink.q0(P).writeByte(32).q0(key).writeByte(10);
             bufferedSink.flush();
-            if (this.f41286x) {
+            if (this.f41854x) {
                 return null;
             }
             if (cVar == null) {
                 cVar = new c(this, key);
-                this.f41284v.put(key, cVar);
+                this.f41852v.put(key, cVar);
             }
             b bVar2 = new b(this, cVar);
             cVar.l(bVar2);
@@ -922,17 +922,17 @@ public final class d implements Closeable, Flushable {
 
     public final synchronized void V0() {
         try {
-            BufferedSink bufferedSink = this.f41283u;
+            BufferedSink bufferedSink = this.f41851u;
             if (bufferedSink != null) {
                 bufferedSink.close();
             }
-            BufferedSink c10 = x.c(this.f41274d.f(this.f41280r));
+            BufferedSink c10 = x.c(this.f41842d.f(this.f41848r));
             c10.q0(K).writeByte(10);
             c10.q0(L).writeByte(10);
-            c10.W0(this.f41276i).writeByte(10);
-            c10.W0(this.f41277o).writeByte(10);
+            c10.W0(this.f41844i).writeByte(10);
+            c10.W0(this.f41845o).writeByte(10);
             c10.writeByte(10);
-            for (c cVar : this.f41284v.values()) {
+            for (c cVar : this.f41852v.values()) {
                 if (cVar.b() != null) {
                     c10.q0(P).writeByte(32);
                     c10.q0(cVar.d());
@@ -944,15 +944,15 @@ public final class d implements Closeable, Flushable {
                     c10.writeByte(10);
                 }
             }
-            Unit unit = Unit.f31988a;
+            Unit unit = Unit.f32556a;
             ls.c.a(c10, null);
-            if (this.f41274d.b(this.f41279q)) {
-                this.f41274d.g(this.f41279q, this.f41281s);
+            if (this.f41842d.b(this.f41847q)) {
+                this.f41842d.g(this.f41847q, this.f41849s);
             }
-            this.f41274d.g(this.f41280r, this.f41279q);
-            this.f41274d.h(this.f41281s);
-            this.f41283u = L0();
-            this.f41286x = false;
+            this.f41842d.g(this.f41848r, this.f41847q);
+            this.f41842d.h(this.f41849s);
+            this.f41851u = L0();
+            this.f41854x = false;
             this.C = false;
         } catch (Throwable th2) {
             throw th2;
@@ -964,7 +964,7 @@ public final class d implements Closeable, Flushable {
         G0();
         z();
         w1(key);
-        c cVar = (c) this.f41284v.get(key);
+        c cVar = (c) this.f41852v.get(key);
         if (cVar == null) {
             return null;
         }
@@ -972,8 +972,8 @@ public final class d implements Closeable, Flushable {
         if (r10 == null) {
             return null;
         }
-        this.f41285w++;
-        BufferedSink bufferedSink = this.f41283u;
+        this.f41853w++;
+        BufferedSink bufferedSink = this.f41851u;
         Intrinsics.checkNotNull(bufferedSink);
         bufferedSink.q0(R).writeByte(32).q0(key).writeByte(10);
         if (H0()) {
@@ -987,12 +987,12 @@ public final class d implements Closeable, Flushable {
         G0();
         z();
         w1(key);
-        c cVar = (c) this.f41284v.get(key);
+        c cVar = (c) this.f41852v.get(key);
         if (cVar == null) {
             return false;
         }
         boolean a12 = a1(cVar);
-        if (a12 && this.f41282t <= this.f41278p) {
+        if (a12 && this.f41850t <= this.f41846p) {
             this.B = false;
         }
         return a12;
@@ -1001,8 +1001,8 @@ public final class d implements Closeable, Flushable {
     public final boolean a1(c entry) {
         BufferedSink bufferedSink;
         Intrinsics.checkNotNullParameter(entry, "entry");
-        if (!this.f41287y) {
-            if (entry.f() > 0 && (bufferedSink = this.f41283u) != null) {
+        if (!this.f41855y) {
+            if (entry.f() > 0 && (bufferedSink = this.f41851u) != null) {
                 bufferedSink.q0(P);
                 bufferedSink.writeByte(32);
                 bufferedSink.q0(entry.d());
@@ -1018,21 +1018,21 @@ public final class d implements Closeable, Flushable {
         if (b10 != null) {
             b10.c();
         }
-        int i10 = this.f41277o;
+        int i10 = this.f41845o;
         for (int i11 = 0; i11 < i10; i11++) {
-            this.f41274d.h((File) entry.a().get(i11));
-            this.f41282t -= entry.e()[i11];
+            this.f41842d.h((File) entry.a().get(i11));
+            this.f41850t -= entry.e()[i11];
             entry.e()[i11] = 0;
         }
-        this.f41285w++;
-        BufferedSink bufferedSink2 = this.f41283u;
+        this.f41853w++;
+        BufferedSink bufferedSink2 = this.f41851u;
         if (bufferedSink2 != null) {
             bufferedSink2.q0(Q);
             bufferedSink2.writeByte(32);
             bufferedSink2.q0(entry.d());
             bufferedSink2.writeByte(10);
         }
-        this.f41284v.remove(entry.d());
+        this.f41852v.remove(entry.d());
         if (H0()) {
             pu.d.j(this.E, this.F, 0L, 2, null);
         }
@@ -1044,8 +1044,8 @@ public final class d implements Closeable, Flushable {
         c[] cVarArr;
         b b10;
         try {
-            if (this.f41288z && !this.A) {
-                Collection values = this.f41284v.values();
+            if (this.f41856z && !this.A) {
+                Collection values = this.f41852v.values();
                 Intrinsics.checkNotNullExpressionValue(values, "lruEntries.values");
                 for (c cVar : (c[]) values.toArray(new c[0])) {
                     if (cVar.b() != null && (b10 = cVar.b()) != null) {
@@ -1053,10 +1053,10 @@ public final class d implements Closeable, Flushable {
                     }
                 }
                 f1();
-                BufferedSink bufferedSink = this.f41283u;
+                BufferedSink bufferedSink = this.f41851u;
                 Intrinsics.checkNotNull(bufferedSink);
                 bufferedSink.close();
-                this.f41283u = null;
+                this.f41851u = null;
                 this.A = true;
                 return;
             }
@@ -1067,7 +1067,7 @@ public final class d implements Closeable, Flushable {
     }
 
     public final void f1() {
-        while (this.f41282t > this.f41278p) {
+        while (this.f41850t > this.f41846p) {
             if (!b1()) {
                 return;
             }
@@ -1077,12 +1077,12 @@ public final class d implements Closeable, Flushable {
 
     @Override // java.io.Flushable
     public synchronized void flush() {
-        if (!this.f41288z) {
+        if (!this.f41856z) {
             return;
         }
         z();
         f1();
-        BufferedSink bufferedSink = this.f41283u;
+        BufferedSink bufferedSink = this.f41851u;
         Intrinsics.checkNotNull(bufferedSink);
         bufferedSink.flush();
     }

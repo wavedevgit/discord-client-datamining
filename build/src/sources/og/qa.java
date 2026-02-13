@@ -5,7 +5,7 @@ import bj.c;
 final class qa implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final qa f39609a = new qa();
+    static final qa f40177a = new qa();
 
     static {
         c.b a10 = bj.c.a("confidence");

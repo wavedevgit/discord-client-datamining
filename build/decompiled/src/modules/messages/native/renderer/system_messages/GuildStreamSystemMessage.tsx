@@ -29,7 +29,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/messages/native/renderer/system_messages/GuildStreamSystemMessage.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun56456: for (var _fun56456_ip = 0;;) switch (_fun56456_ip) {
+        _fun56491: for (var _fun56491_ip = 0;;) switch (_fun56491_ip) {
             case 0:
                 var3 = arg0;
                 var8 = var3.message;
@@ -38,8 +38,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var8.messageReference;
                 var13 = null;
                 if (!(var13 == var0)) {
-                    _fun56456_ip = 34;
-                    continue _fun56456
+                    _fun56491_ip = 34;
+                    continue _fun56491
                 }
             case 32:
                 var0 = {};
@@ -81,32 +81,32 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var17 = 'username';
                 var11 = null;
                 if (!(var17 === var14)) {
-                    _fun56456_ip = 203;
-                    continue _fun56456
+                    _fun56491_ip = 204;
+                    continue _fun56491
                 }
-            case 200:
+            case 201:
                 var11 = var12;
-            case 203:
+            case 204:
                 var0.linkColor = var11;
                 var0.roleColor = var12;
                 var11 = null;
                 if (!var16) {
-                    _fun56456_ip = 221;
-                    continue _fun56456
+                    _fun56491_ip = 222;
+                    continue _fun56491
                 }
-            case 218:
+            case 219:
                 var11 = var15;
-            case 221:
+            case 222:
                 var0.roleColors = var11;
                 var11 = 'dot';
                 var11 = var11 === var14;
                 if (!var11) {
-                    _fun56456_ip = 241;
-                    continue _fun56456
+                    _fun56491_ip = 242;
+                    continue _fun56491
                 }
-            case 237:
+            case 238:
                 var11 = var13 != var12;
-            case 241:
+            case 242:
                 var0.shouldShowRoleDot = var11;
                 var8 = var8.channel_id;
                 var0.messageChannelId = var8;
@@ -138,10 +138,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var6.bind(var2)(var5);
                 var5 = var5.t;
                 if (var4) {
-                    _fun56456_ip = 414;
-                    continue _fun56456
+                    _fun56491_ip = 415;
+                    continue _fun56491
                 }
-            case 375:
+            case 376:
                 var6 = var5.dMmbGk;
                 var4 = {};
                 var20 = var4;
@@ -150,9 +150,9 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = 'onJoinStream';
                 var4[var11] = var12;
                 var4 = var7.bind(var8)(var6, var4);
-                _fun56456_ip = 449;
-                continue _fun56456;
-            case 414:
+                _fun56491_ip = 450;
+                continue _fun56491;
+            case 415:
                 var6 = var5.FP7rUI;
                 var5 = {};
                 var20 = var5;
@@ -161,7 +161,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = 'duration';
                 var5[var9] = var10;
                 var4 = var7.bind(var8)(var6, var5);
-            case 449:
+            case 450:
                 var0.content = var4;
                 var4 = _closure1_slot1;
                 var5 = _closure1_slot2;
@@ -176,4 +176,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.createGuildStreamSystemMessage = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3503, 6777, 6770, 6771, 1234, 6772, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3503, 6759, 6752, 6753, 1235, 6754, 2]);

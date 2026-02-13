@@ -19,79 +19,79 @@ import x.w1;
 public final class w1 {
 
     /* renamed from: p  reason: collision with root package name */
-    public static final Range f54203p = m2.f165a;
+    public static final Range f54771p = m2.f165a;
 
     /* renamed from: a  reason: collision with root package name */
-    private final Object f54204a = new Object();
+    private final Object f54772a = new Object();
 
     /* renamed from: b  reason: collision with root package name */
-    private final Size f54205b;
+    private final Size f54773b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final z f54206c;
+    private final z f54774c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Range f54207d;
+    private final Range f54775d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final a0.e0 f54208e;
+    private final a0.e0 f54776e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final boolean f54209f;
+    private final boolean f54777f;
 
     /* renamed from: g  reason: collision with root package name */
-    final ListenableFuture f54210g;
+    final ListenableFuture f54778g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final c.a f54211h;
+    private final c.a f54779h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final ListenableFuture f54212i;
+    private final ListenableFuture f54780i;
 
     /* renamed from: j  reason: collision with root package name */
-    private final c.a f54213j;
+    private final c.a f54781j;
 
     /* renamed from: k  reason: collision with root package name */
-    private final c.a f54214k;
+    private final c.a f54782k;
 
     /* renamed from: l  reason: collision with root package name */
-    private final a0.w0 f54215l;
+    private final a0.w0 f54783l;
 
     /* renamed from: m  reason: collision with root package name */
-    private h f54216m;
+    private h f54784m;
 
     /* renamed from: n  reason: collision with root package name */
-    private i f54217n;
+    private i f54785n;
 
     /* renamed from: o  reason: collision with root package name */
-    private Executor f54218o;
+    private Executor f54786o;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     class a implements d0.c {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ c.a f54219a;
+        final /* synthetic */ c.a f54787a;
 
         /* renamed from: b  reason: collision with root package name */
-        final /* synthetic */ ListenableFuture f54220b;
+        final /* synthetic */ ListenableFuture f54788b;
 
         a(c.a aVar, ListenableFuture listenableFuture) {
-            this.f54219a = aVar;
-            this.f54220b = listenableFuture;
+            this.f54787a = aVar;
+            this.f54788b = listenableFuture;
         }
 
         @Override // d0.c
         /* renamed from: a */
         public void onSuccess(Void r22) {
-            b2.e.i(this.f54219a.c(null));
+            b2.e.i(this.f54787a.c(null));
         }
 
         @Override // d0.c
         public void onFailure(Throwable th2) {
             if (th2 instanceof f) {
-                b2.e.i(this.f54220b.cancel(false));
+                b2.e.i(this.f54788b.cancel(false));
             } else {
-                b2.e.i(this.f54219a.c(null));
+                b2.e.i(this.f54787a.c(null));
             }
         }
     }
@@ -104,7 +104,7 @@ public final class w1 {
 
         @Override // a0.w0
         protected ListenableFuture o() {
-            return w1.this.f54210g;
+            return w1.this.f54778g;
         }
     }
 
@@ -112,34 +112,34 @@ public final class w1 {
     class c implements d0.c {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ ListenableFuture f54223a;
+        final /* synthetic */ ListenableFuture f54791a;
 
         /* renamed from: b  reason: collision with root package name */
-        final /* synthetic */ c.a f54224b;
+        final /* synthetic */ c.a f54792b;
 
         /* renamed from: c  reason: collision with root package name */
-        final /* synthetic */ String f54225c;
+        final /* synthetic */ String f54793c;
 
         c(ListenableFuture listenableFuture, c.a aVar, String str) {
-            this.f54223a = listenableFuture;
-            this.f54224b = aVar;
-            this.f54225c = str;
+            this.f54791a = listenableFuture;
+            this.f54792b = aVar;
+            this.f54793c = str;
         }
 
         @Override // d0.c
         /* renamed from: a */
         public void onSuccess(Surface surface) {
-            d0.n.t(this.f54223a, this.f54224b);
+            d0.n.t(this.f54791a, this.f54792b);
         }
 
         @Override // d0.c
         public void onFailure(Throwable th2) {
             if (th2 instanceof CancellationException) {
-                c.a aVar = this.f54224b;
-                b2.e.i(aVar.f(new f(this.f54225c + " cancelled.", th2)));
+                c.a aVar = this.f54792b;
+                b2.e.i(aVar.f(new f(this.f54793c + " cancelled.", th2)));
                 return;
             }
-            this.f54224b.c(null);
+            this.f54792b.c(null);
         }
     }
 
@@ -147,26 +147,26 @@ public final class w1 {
     class d implements d0.c {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ Consumer f54227a;
+        final /* synthetic */ Consumer f54795a;
 
         /* renamed from: b  reason: collision with root package name */
-        final /* synthetic */ Surface f54228b;
+        final /* synthetic */ Surface f54796b;
 
         d(Consumer consumer, Surface surface) {
-            this.f54227a = consumer;
-            this.f54228b = surface;
+            this.f54795a = consumer;
+            this.f54796b = surface;
         }
 
         @Override // d0.c
         /* renamed from: a */
         public void onSuccess(Void r32) {
-            this.f54227a.accept(g.c(0, this.f54228b));
+            this.f54795a.accept(g.c(0, this.f54796b));
         }
 
         @Override // d0.c
         public void onFailure(Throwable th2) {
             b2.e.j(th2 instanceof f, "Camera surface session should only fail with request cancellation. Instead failed due to:\n" + th2);
-            this.f54227a.accept(g.c(1, this.f54228b));
+            this.f54795a.accept(g.c(1, this.f54796b));
         }
     }
 
@@ -213,11 +213,11 @@ public final class w1 {
     }
 
     public w1(Size size, a0.e0 e0Var, boolean z10, z zVar, Range range, Runnable runnable) {
-        this.f54205b = size;
-        this.f54208e = e0Var;
-        this.f54209f = z10;
-        this.f54206c = zVar;
-        this.f54207d = range;
+        this.f54773b = size;
+        this.f54776e = e0Var;
+        this.f54777f = z10;
+        this.f54774c = zVar;
+        this.f54775d = range;
         final String str = "SurfaceRequest[size: " + size + ", id: " + hashCode() + "]";
         final AtomicReference atomicReference = new AtomicReference(null);
         ListenableFuture a10 = androidx.concurrent.futures.c.a(new c.InterfaceC0026c() { // from class: x.s1
@@ -227,7 +227,7 @@ public final class w1 {
             }
         });
         c.a aVar = (c.a) b2.e.g((c.a) atomicReference.get());
-        this.f54214k = aVar;
+        this.f54782k = aVar;
         final AtomicReference atomicReference2 = new AtomicReference(null);
         ListenableFuture a11 = androidx.concurrent.futures.c.a(new c.InterfaceC0026c() { // from class: x.t1
             @Override // androidx.concurrent.futures.c.InterfaceC0026c
@@ -235,7 +235,7 @@ public final class w1 {
                 return w1.h(atomicReference2, str, aVar2);
             }
         });
-        this.f54212i = a11;
+        this.f54780i = a11;
         d0.n.j(a11, new a(aVar, a10), c0.a.a());
         final AtomicReference atomicReference3 = new AtomicReference(null);
         ListenableFuture a12 = androidx.concurrent.futures.c.a(new c.InterfaceC0026c() { // from class: x.u1
@@ -244,19 +244,19 @@ public final class w1 {
                 return w1.c(atomicReference3, str, aVar2);
             }
         });
-        this.f54210g = a12;
-        this.f54211h = (c.a) b2.e.g((c.a) atomicReference3.get());
+        this.f54778g = a12;
+        this.f54779h = (c.a) b2.e.g((c.a) atomicReference3.get());
         b bVar = new b(size, 34);
-        this.f54215l = bVar;
+        this.f54783l = bVar;
         ListenableFuture k10 = bVar.k();
         d0.n.j(a12, new c(k10, (c.a) b2.e.g((c.a) atomicReference2.get()), str), c0.a.a());
         k10.a(new Runnable() { // from class: x.v1
             @Override // java.lang.Runnable
             public final void run() {
-                w1.this.f54210g.cancel(true);
+                w1.this.f54778g.cancel(true);
             }
         }, c0.a.a());
-        this.f54213j = p(c0.a.a(), runnable);
+        this.f54781j = p(c0.a.a(), runnable);
     }
 
     public static /* synthetic */ Object b(AtomicReference atomicReference, String str, c.a aVar) {
@@ -292,46 +292,46 @@ public final class w1 {
     }
 
     public void j(Executor executor, Runnable runnable) {
-        this.f54214k.a(runnable, executor);
+        this.f54782k.a(runnable, executor);
     }
 
     public void k() {
-        synchronized (this.f54204a) {
-            this.f54217n = null;
-            this.f54218o = null;
+        synchronized (this.f54772a) {
+            this.f54785n = null;
+            this.f54786o = null;
         }
     }
 
     public a0.e0 l() {
-        return this.f54208e;
+        return this.f54776e;
     }
 
     public a0.w0 m() {
-        return this.f54215l;
+        return this.f54783l;
     }
 
     public z n() {
-        return this.f54206c;
+        return this.f54774c;
     }
 
     public Size o() {
-        return this.f54205b;
+        return this.f54773b;
     }
 
     public boolean q() {
         v();
-        return this.f54213j.c(null);
+        return this.f54781j.c(null);
     }
 
     public boolean r() {
-        return this.f54209f;
+        return this.f54777f;
     }
 
     public void s(final Surface surface, Executor executor, final Consumer consumer) {
-        if (!this.f54211h.c(surface) && !this.f54210g.isCancelled()) {
-            b2.e.i(this.f54210g.isDone());
+        if (!this.f54779h.c(surface) && !this.f54778g.isCancelled()) {
+            b2.e.i(this.f54778g.isDone());
             try {
-                this.f54210g.get();
+                this.f54778g.get();
                 executor.execute(new Runnable() { // from class: x.p1
                     @Override // java.lang.Runnable
                     public final void run() {
@@ -349,15 +349,15 @@ public final class w1 {
                 return;
             }
         }
-        d0.n.j(this.f54212i, new d(consumer, surface), executor);
+        d0.n.j(this.f54780i, new d(consumer, surface), executor);
     }
 
     public void t(Executor executor, final i iVar) {
         final h hVar;
-        synchronized (this.f54204a) {
-            this.f54217n = iVar;
-            this.f54218o = executor;
-            hVar = this.f54216m;
+        synchronized (this.f54772a) {
+            this.f54785n = iVar;
+            this.f54786o = executor;
+            hVar = this.f54784m;
         }
         if (hVar != null) {
             executor.execute(new Runnable() { // from class: x.o1
@@ -372,10 +372,10 @@ public final class w1 {
     public void u(final h hVar) {
         final i iVar;
         Executor executor;
-        synchronized (this.f54204a) {
-            this.f54216m = hVar;
-            iVar = this.f54217n;
-            executor = this.f54218o;
+        synchronized (this.f54772a) {
+            this.f54784m = hVar;
+            iVar = this.f54785n;
+            executor = this.f54786o;
         }
         if (iVar != null && executor != null) {
             executor.execute(new Runnable() { // from class: x.r1
@@ -388,7 +388,7 @@ public final class w1 {
     }
 
     public boolean v() {
-        return this.f54211h.f(new w0.b("Surface request will not complete."));
+        return this.f54779h.f(new w0.b("Surface request will not complete."));
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -396,16 +396,16 @@ public final class w1 {
     public class e implements d0.c {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ Runnable f54230a;
+        final /* synthetic */ Runnable f54798a;
 
         e(Runnable runnable) {
-            this.f54230a = runnable;
+            this.f54798a = runnable;
         }
 
         @Override // d0.c
         /* renamed from: a */
         public void onSuccess(Void r12) {
-            this.f54230a.run();
+            this.f54798a.run();
         }
 
         @Override // d0.c

@@ -5,56 +5,22 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = dependencyMap;
     var _closure1_slot1 = var1;
     var1 = function arg0() {
-        _fun29103: for (var _fun29103_ip = 0;;) switch (_fun29103_ip) {
-            case 0:
-                var5 = _closure1_slot0;
-                var6 = _closure1_slot1;
-                var0 = 0;
-                var2 = var6[var0];
-                var4 = undefined;
-                var3 = var5.bind(var4)(var2);
-                var2 = arg0;
-                var3 = var3.bind(var4)(var2);
-                var2 = 1;
-                var2 = var6[var2];
-                var2 = var5.bind(var4)(var2);
-                var2 = var2.bind(var4)(var3);
-                if (!var2) {
-                    _fun29103_ip = 120;
-                    continue _fun29103
-                }
-            case 52:
-                if (!(var0 !== var3)) {
-                    _fun29103_ip = 120;
-                    continue _fun29103
-                }
-            case 56:
-                var2 = _closure1_slot0;
-                var5 = _closure1_slot1;
-                var1 = 2;
-                var1 = var5[var1];
-                var1 = var2.bind(var4)(var1);
-                var3 = var1.bind(var4)(var3);
-                var1 = 3;
-                var1 = var5[var1];
-                var2 = var2.bind(var4)(var1);
-                var1 = 4294967296.0;
-                var2 = var2.bind(var4)(var3, var1);
-                var1 = 0;
-                if (!(var1 !== var2)) {
-                    _fun29103_ip = 118;
-                    continue _fun29103
-                }
-            case 115:
-                var1 = var2;
-            case 118:
-                return var1;
-            case 120:
-                return var0;
-        }
+        var2 = arg0;
+        var3 = _closure1_slot0;
+        var4 = _closure1_slot1;
+        var0 = 0;
+        var0 = var4[var0];
+        var1 = undefined;
+        var0 = var3.bind(var1)(var0);
+        var0 = var0.bind(var1)(var2);
+        var0 = 1;
+        var0 = var4[var0];
+        var0 = var3.bind(var1)(var0);
+        var0 = var0.bind(var1)(var2);
+        return var0;
     };
     var0 = arg4;
     var0.exports = var1;
     var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3377, 3394, 3395, 3397]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3377, 526]);

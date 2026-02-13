@@ -36,7 +36,7 @@ public abstract class c {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit c(e eVar) {
         eVar.i();
-        return Unit.f31988a;
+        return Unit.f32556a;
     }
 
     public static final TextWatcher d(EditText editText, Function1 action) {
@@ -64,23 +64,23 @@ public abstract class c {
                 arrayList.add(0, aVar);
                 return aVar;
             }
-            sm.a.f(sm.a.f48172a, editText.getClass().getSimpleName(), "Can not attach listener because `fieldValue` does not belong to `ArrayList<TextWatcher>`", null, 4, null);
+            sm.a.f(sm.a.f48740a, editText.getClass().getSimpleName(), "Can not attach listener because `fieldValue` does not belong to `ArrayList<TextWatcher>`", null, 4, null);
             return aVar;
         } catch (ClassCastException e10) {
-            sm.a aVar2 = sm.a.f48172a;
+            sm.a aVar2 = sm.a.f48740a;
             String simpleName = editText.getClass().getSimpleName();
             String message = e10.getMessage();
             sm.a.f(aVar2, simpleName, "Can not attach listener because casting failed: " + message, null, 4, null);
             return aVar;
         } catch (IllegalArgumentException e11) {
-            sm.a aVar3 = sm.a.f48172a;
+            sm.a aVar3 = sm.a.f48740a;
             String simpleName2 = editText.getClass().getSimpleName();
             String message2 = e11.getMessage();
             sm.a.f(aVar3, simpleName2, "Can not attach listener to be the first in the list: " + message2 + ". Attaching to the end...", null, 4, null);
             editText.addTextChangedListener(aVar);
             return aVar;
         } catch (NoSuchFieldException e12) {
-            sm.a aVar4 = sm.a.f48172a;
+            sm.a aVar4 = sm.a.f48740a;
             String simpleName3 = editText.getClass().getSimpleName();
             String message3 = e12.getMessage();
             sm.a.f(aVar4, simpleName3, "Can not attach listener because field `mListeners` not found: " + message3 + ". Attaching to the end...", null, 4, null);
@@ -152,14 +152,14 @@ public abstract class c {
     public static final class a implements TextWatcher {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ Ref.ObjectRef f40620d;
+        final /* synthetic */ Ref.ObjectRef f41188d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ Function1 f40621e;
+        final /* synthetic */ Function1 f41189e;
 
         a(Ref.ObjectRef objectRef, Function1 function1) {
-            this.f40620d = objectRef;
-            this.f40621e = function1;
+            this.f41188d = objectRef;
+            this.f41189e = function1;
         }
 
         /* JADX WARN: Multi-variable type inference failed */
@@ -167,9 +167,9 @@ public abstract class c {
         @Override // android.text.TextWatcher
         public void onTextChanged(CharSequence charSequence, int i10, int i11, int i12) {
             ?? valueOf = String.valueOf(charSequence);
-            if (!Intrinsics.areEqual((Object) valueOf, this.f40620d.element)) {
-                this.f40620d.element = valueOf;
-                this.f40621e.invoke(valueOf);
+            if (!Intrinsics.areEqual((Object) valueOf, this.f41188d.element)) {
+                this.f41188d.element = valueOf;
+                this.f41189e.invoke(valueOf);
             }
         }
 

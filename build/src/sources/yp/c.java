@@ -29,52 +29,52 @@ import wp.d2;
 public final class c implements o<b> {
 
     /* renamed from: b  reason: collision with root package name */
-    private final Context f55686b;
+    private final Context f56254b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final String f55687c;
+    private final String f56255c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f55688d;
+    private final String f56256d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final d2 f55689e;
+    private final d2 f56257e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final List f55690f;
+    private final List f56258f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final yp.a f55691g;
+    private final yp.a f56259g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final String f55692h;
+    private final String f56260h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final String f55693i;
+    private final String f56261i;
 
     /* renamed from: j  reason: collision with root package name */
-    private final String f55694j;
+    private final String f56262j;
 
     /* renamed from: k  reason: collision with root package name */
-    private final cq.a f55695k;
+    private final cq.a f56263k;
 
     /* renamed from: l  reason: collision with root package name */
-    private final so.a f55696l;
+    private final so.a f56264l;
 
     /* renamed from: m  reason: collision with root package name */
-    private final hq.a f55697m;
+    private final hq.a f56265m;
 
     /* renamed from: n  reason: collision with root package name */
-    private final String f55698n;
+    private final String f56266n;
 
     /* renamed from: o  reason: collision with root package name */
-    private final v f55699o;
+    private final v f56267o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final ko.a f55700p;
+    private final ko.a f56268p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final long f55701q;
+    private final long f56269q;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public interface a {
@@ -88,35 +88,35 @@ public final class c implements o<b> {
         public static final class a extends b {
 
             /* renamed from: a  reason: collision with root package name */
-            private final InternalErrorInfo f55702a;
+            private final InternalErrorInfo f56270a;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             public a(InternalErrorInfo cause) {
                 super(null);
                 Intrinsics.checkNotNullParameter(cause, "cause");
-                this.f55702a = cause;
+                this.f56270a = cause;
             }
 
             public final InternalErrorInfo a() {
-                return this.f55702a;
+                return this.f56270a;
             }
 
             public boolean equals(Object obj) {
                 if (this == obj) {
                     return true;
                 }
-                if ((obj instanceof a) && Intrinsics.areEqual(this.f55702a, ((a) obj).f55702a)) {
+                if ((obj instanceof a) && Intrinsics.areEqual(this.f56270a, ((a) obj).f56270a)) {
                     return true;
                 }
                 return false;
             }
 
             public int hashCode() {
-                return this.f55702a.hashCode();
+                return this.f56270a.hashCode();
             }
 
             public String toString() {
-                InternalErrorInfo internalErrorInfo = this.f55702a;
+                InternalErrorInfo internalErrorInfo = this.f56270a;
                 return "Error(cause=" + internalErrorInfo + ")";
             }
         }
@@ -126,7 +126,7 @@ public final class c implements o<b> {
         public static final class C0780b extends b {
 
             /* renamed from: a  reason: collision with root package name */
-            public static final C0780b f55703a = new C0780b();
+            public static final C0780b f56271a = new C0780b();
 
             private C0780b() {
                 super(null);
@@ -146,13 +146,13 @@ public final class c implements o<b> {
     static final class C0781c extends k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        Object f55704d;
+        Object f56272d;
 
         /* renamed from: e  reason: collision with root package name */
-        int f55705e;
+        int f56273e;
 
         /* renamed from: i  reason: collision with root package name */
-        private /* synthetic */ Object f55706i;
+        private /* synthetic */ Object f56274i;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         /* renamed from: yp.c$c$a */
@@ -160,24 +160,24 @@ public final class c implements o<b> {
         public static final class a extends k implements Function1 {
 
             /* renamed from: d  reason: collision with root package name */
-            int f55708d;
+            int f56276d;
 
             /* renamed from: e  reason: collision with root package name */
-            final /* synthetic */ c f55709e;
+            final /* synthetic */ c f56277e;
 
             /* renamed from: i  reason: collision with root package name */
-            final /* synthetic */ List f55710i;
+            final /* synthetic */ List f56278i;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             a(c cVar, List list, Continuation continuation) {
                 super(1, continuation);
-                this.f55709e = cVar;
-                this.f55710i = list;
+                this.f56277e = cVar;
+                this.f56278i = list;
             }
 
             @Override // kotlin.coroutines.jvm.internal.a
             public final Continuation create(Continuation continuation) {
-                return new a(this.f55709e, this.f55710i, continuation);
+                return new a(this.f56277e, this.f56278i, continuation);
             }
 
             /* JADX WARN: Code restructure failed: missing block: B:13:0x0041, code lost:
@@ -195,7 +195,7 @@ public final class c implements o<b> {
                 /*
                     r5 = this;
                     java.lang.Object r0 = gs.b.f()
-                    int r1 = r5.f55708d
+                    int r1 = r5.f56276d
                     r2 = 2
                     r3 = 1
                     if (r1 == 0) goto L1e
@@ -213,16 +213,16 @@ public final class c implements o<b> {
                     goto L44
                 L1e:
                     kotlin.c.b(r6)
-                    yp.c r6 = r5.f55709e
+                    yp.c r6 = r5.f56277e
                     so.a r6 = yp.c.f(r6)
                     boolean r6 = r6.b()
                     if (r6 == 0) goto L47
-                    yp.c r6 = r5.f55709e
+                    yp.c r6 = r5.f56277e
                     so.a r6 = yp.c.f(r6)
-                    yp.c r1 = r5.f55709e
+                    yp.c r1 = r5.f56277e
                     java.lang.String r1 = yp.c.o(r1)
-                    java.util.List r2 = r5.f55710i
-                    r5.f55708d = r3
+                    java.util.List r2 = r5.f56278i
+                    r5.f56276d = r3
                     java.lang.Object r6 = r6.a(r1, r2, r5)
                     if (r6 != r0) goto L44
                     goto L63
@@ -230,14 +230,14 @@ public final class c implements o<b> {
                     fw.z r6 = (fw.z) r6
                     return r6
                 L47:
-                    yp.c r6 = r5.f55709e
+                    yp.c r6 = r5.f56277e
                     yp.a r6 = yp.c.n(r6)
-                    yp.c r1 = r5.f55709e
+                    yp.c r1 = r5.f56277e
                     java.lang.String r1 = yp.c.o(r1)
-                    yp.c r3 = r5.f55709e
+                    yp.c r3 = r5.f56277e
                     java.lang.String r3 = yp.c.k(r3)
-                    java.util.List r4 = r5.f55710i
-                    r5.f55708d = r2
+                    java.util.List r4 = r5.f56278i
+                    r5.f56276d = r2
                     java.lang.Object r6 = r6.a(r1, r3, r4, r5)
                     if (r6 != r0) goto L64
                 L63:
@@ -251,7 +251,7 @@ public final class c implements o<b> {
 
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Continuation continuation) {
-                return ((a) create(continuation)).invokeSuspend(Unit.f31988a);
+                return ((a) create(continuation)).invokeSuspend(Unit.f32556a);
             }
         }
 
@@ -260,32 +260,32 @@ public final class c implements o<b> {
         public /* synthetic */ class b {
 
             /* renamed from: a  reason: collision with root package name */
-            public static final /* synthetic */ int[] f55711a;
+            public static final /* synthetic */ int[] f56279a;
 
             /* renamed from: b  reason: collision with root package name */
-            public static final /* synthetic */ int[] f55712b;
+            public static final /* synthetic */ int[] f56280b;
 
             static {
                 int[] iArr = new int[a1.b.values().length];
                 try {
-                    iArr[a1.b.f52971d.ordinal()] = 1;
+                    iArr[a1.b.f53539d.ordinal()] = 1;
                 } catch (NoSuchFieldError unused) {
                 }
                 try {
-                    iArr[a1.b.f52972e.ordinal()] = 2;
+                    iArr[a1.b.f53540e.ordinal()] = 2;
                 } catch (NoSuchFieldError unused2) {
                 }
                 try {
-                    iArr[a1.b.f52973i.ordinal()] = 3;
+                    iArr[a1.b.f53541i.ordinal()] = 3;
                 } catch (NoSuchFieldError unused3) {
                 }
-                f55711a = iArr;
+                f56279a = iArr;
                 int[] iArr2 = new int[v.b.values().length];
                 try {
                     iArr2[v.b.f24138i.ordinal()] = 1;
                 } catch (NoSuchFieldError unused4) {
                 }
-                f55712b = iArr2;
+                f56280b = iArr2;
             }
         }
 
@@ -296,7 +296,7 @@ public final class c implements o<b> {
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
             C0781c c0781c = new C0781c(continuation);
-            c0781c.f55706i = obj;
+            c0781c.f56274i = obj;
             return c0781c;
         }
 
@@ -328,7 +328,7 @@ public final class c implements o<b> {
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(FlowCollector flowCollector, Continuation continuation) {
-            return ((C0781c) create(flowCollector, continuation)).invokeSuspend(Unit.f31988a);
+            return ((C0781c) create(flowCollector, continuation)).invokeSuspend(Unit.f32556a);
         }
     }
 
@@ -347,22 +347,22 @@ public final class c implements o<b> {
         Intrinsics.checkNotNullParameter(imageHelper, "imageHelper");
         Intrinsics.checkNotNullParameter(cameraProperties, "cameraProperties");
         Intrinsics.checkNotNullParameter(cameraStatsManager, "cameraStatsManager");
-        this.f55686b = context;
-        this.f55687c = sessionToken;
-        this.f55688d = inquiryId;
-        this.f55689e = selfieType;
-        this.f55690f = selfies;
-        this.f55691g = service;
-        this.f55692h = fromStep;
-        this.f55693i = fromComponent;
-        this.f55694j = fieldKeySelfie;
-        this.f55695k = dataCollector;
-        this.f55696l = fallbackModeManager;
-        this.f55697m = imageHelper;
-        this.f55698n = str;
-        this.f55699o = cameraProperties;
-        this.f55700p = cameraStatsManager;
-        this.f55701q = j10;
+        this.f56254b = context;
+        this.f56255c = sessionToken;
+        this.f56256d = inquiryId;
+        this.f56257e = selfieType;
+        this.f56258f = selfies;
+        this.f56259g = service;
+        this.f56260h = fromStep;
+        this.f56261i = fromComponent;
+        this.f56262j = fieldKeySelfie;
+        this.f56263k = dataCollector;
+        this.f56264l = fallbackModeManager;
+        this.f56265m = imageHelper;
+        this.f56266n = str;
+        this.f56267o = cameraProperties;
+        this.f56268p = cameraStatsManager;
+        this.f56269q = j10;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -377,13 +377,13 @@ public final class c implements o<b> {
         for (Object obj2 : arrayList) {
             linkedHashMap.put(((a1.c) obj2).d(), obj2);
         }
-        aVar.b(new yp.b(this.f55692h, (a1) linkedHashMap.get(a1.b.f52971d), (a1) linkedHashMap.get(a1.b.f52972e), (a1) linkedHashMap.get(a1.b.f52973i)));
+        aVar.b(new yp.b(this.f56260h, (a1) linkedHashMap.get(a1.b.f53539d), (a1) linkedHashMap.get(a1.b.f53540e), (a1) linkedHashMap.get(a1.b.f53541i)));
     }
 
     @Override // en.o
     public boolean a(o otherWorker) {
         Intrinsics.checkNotNullParameter(otherWorker, "otherWorker");
-        if ((otherWorker instanceof c) && Intrinsics.areEqual(this.f55687c, ((c) otherWorker).f55687c)) {
+        if ((otherWorker instanceof c) && Intrinsics.areEqual(this.f56255c, ((c) otherWorker).f56255c)) {
             return true;
         }
         return false;

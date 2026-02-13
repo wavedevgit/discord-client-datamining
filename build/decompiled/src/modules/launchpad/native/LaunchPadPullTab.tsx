@@ -2,11 +2,11 @@
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var4 = require;
-    var12 = metroImportDefault;
+    var11 = metroImportDefault;
     var2 = exports;
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
-    var _closure1_slot1 = var12;
+    var _closure1_slot1 = var11;
     var _closure1_slot2 = var5;
     var0 = global;
     var7 = var0.Object;
@@ -21,8 +21,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = metroImportAll;
     var0 = undefined;
     var6 = var3.bind(var0)(var6);
-    var11 = 1;
-    var3 = var5[var11];
+    var10 = 1;
+    var3 = var5[var10];
     var3 = var4.bind(var0)(var3);
     var3 = var3.Pressable;
     var _closure1_slot3 = var3;
@@ -31,10 +31,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var0)(var3);
     var7 = var3.LAUNCH_PAD_MARGIN;
     var _closure1_slot4 = var7;
-    var15 = var3.LAUNCH_PAD_PULL_TAB_BORDER_RADIUS;
-    var _closure1_slot5 = var15;
-    var13 = var3.LAUNCH_PAD_PULL_TAB_HEIGHT;
-    var _closure1_slot6 = var13;
+    var14 = var3.LAUNCH_PAD_PULL_TAB_BORDER_RADIUS;
+    var _closure1_slot5 = var14;
+    var12 = var3.LAUNCH_PAD_PULL_TAB_HEIGHT;
+    var _closure1_slot6 = var12;
     var7 = var3.LAUNCH_PAD_PULL_TAB_HIT_SLOP;
     var _closure1_slot7 = var7;
     var7 = var3.LAUNCH_PAD_PULL_TAB_MINIMIZED_OFFSET;
@@ -43,7 +43,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot9 = var7;
     var7 = var3.LAUNCH_PAD_PULL_TAB_SCALE_OFFSET;
     var _closure1_slot10 = var7;
-    var14 = var3.LAUNCH_PAD_PULL_TAB_WIDTH;
+    var13 = var3.LAUNCH_PAD_PULL_TAB_WIDTH;
     var3 = var3.LAUNCH_PAD_SPRING_CONFIG;
     var _closure1_slot11 = var3;
     var3 = 3;
@@ -54,48 +54,48 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 4;
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
-    var8 = var3.jsx;
-    var _closure1_slot13 = var8;
+    var3 = var3.jsx;
+    var _closure1_slot13 = var3;
     var3 = 5;
     var3 = var5[var3];
-    var9 = var4.bind(var0)(var3);
-    var7 = var9.createStyles;
+    var8 = var4.bind(var0)(var3);
+    var7 = var8.createStyles;
     var3 = {};
-    var10 = {
+    var9 = {
         'position': 'absolute',
         'right': 0
     };
-    var10.width = var14;
-    var10.height = var13;
-    var10.borderTopLeftRadius = var15;
-    var10.borderBottomLeftRadius = var15;
-    var10.borderWidth = var11;
-    var10.borderTopWidth = var11;
-    var11 = 'rgba(0, 0, 0, 0.08)';
-    var10.borderColor = var11;
-    var11 = 6;
-    var15 = var5[var11];
-    var15 = var12.bind(var0)(var15);
-    var15 = var15.shadows;
-    var18 = var15.SHADOW_MOBILE_NAVIGATOR_X;
-    var19 = var10;
-    var15 = copyDataProperties(var19, var18);
-    var3.pullTab = var10;
-    var10 = {};
-    var10.width = var14;
-    var10.height = var13;
-    var13 = 'center';
-    var10.justifyContent = var13;
-    var10.alignItems = var13;
-    var3.pullTabButton = var10;
-    var10 = {};
-    var11 = var5[var11];
-    var11 = var12.bind(var0)(var11);
-    var11 = var11.colors;
-    var11 = var11.BACKGROUND_BASE_LOW;
-    var10.color = var11;
-    var3.launchPad = var10;
-    var3 = var7.bind(var9)(var3);
+    var9.width = var13;
+    var9.height = var12;
+    var9.borderTopLeftRadius = var14;
+    var9.borderBottomLeftRadius = var14;
+    var9.borderWidth = var10;
+    var9.borderTopWidth = var10;
+    var10 = 'rgba(0, 0, 0, 0.08)';
+    var9.borderColor = var10;
+    var10 = 6;
+    var14 = var5[var10];
+    var14 = var11.bind(var0)(var14);
+    var14 = var14.shadows;
+    var17 = var14.SHADOW_MOBILE_NAVIGATOR_X;
+    var18 = var9;
+    var14 = copyDataProperties(var18, var17);
+    var3.pullTab = var9;
+    var9 = {};
+    var9.width = var13;
+    var9.height = var12;
+    var12 = 'center';
+    var9.justifyContent = var12;
+    var9.alignItems = var12;
+    var3.pullTabButton = var9;
+    var9 = {};
+    var10 = var5[var10];
+    var10 = var11.bind(var0)(var10);
+    var10 = var10.colors;
+    var10 = var10.BACKGROUND_BASE_LOW;
+    var9.color = var10;
+    var3.launchPad = var9;
+    var3 = var7.bind(var8)(var3);
     var _closure1_slot14 = var3;
     var3 = {};
     var7 = 'function LaunchPadPullTabTsx1(){const{keyboardHeight}=this.__closure;return keyboardHeight.get();}';
@@ -109,20 +109,11 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = 'function LaunchPadPullTabTsx3(){const{isMinimized,gestureState,LAUNCH_PAD_PULL_TAB_MINIMIZED_OFFSET,interpolate,launchPadSharedState,windowDimensions,launchPadPullTabState,LAUNCH_PAD_PULL_TAB_BORDER_RADIUS,interpolateColor,LAUNCH_PAD_MARGIN,backgroundColorTabBar,backgroundColorLaunchPad,withSpring,LAUNCH_PAD_SPRING_CONFIG}=this.__closure;let translateX=isMinimized.get()&&!gestureState.get().active?LAUNCH_PAD_PULL_TAB_MINIMIZED_OFFSET:interpolate(launchPadSharedState.get(),[0,1],[0,-(windowDimensions.get().width-16)]);if(launchPadSharedState.get()>0.9){translateX=-windowDimensions.get().width;}else if(gestureState.get().active){if(gestureState.get().requiresPop){translateX+=gestureState.get().positionOffsetX*0.3;}else{translateX-=4;}}const translateY=launchPadPullTabState.get().position;const borderRadius=launchPadSharedState.get()<=0&&!gestureState.get().active?0:LAUNCH_PAD_PULL_TAB_BORDER_RADIUS;const backgroundColor=interpolateColor(launchPadSharedState.get()*windowDimensions.get().width,[0,LAUNCH_PAD_MARGIN],[backgroundColorTabBar,backgroundColorLaunchPad]);return{transform:[{translateX:withSpring(translateX,LAUNCH_PAD_SPRING_CONFIG)},{translateY:withSpring(translateY,LAUNCH_PAD_SPRING_CONFIG)},{scale:withSpring(launchPadPullTabState.get().scale,LAUNCH_PAD_SPRING_CONFIG)}],borderTopRightRadius:withSpring(borderRadius,LAUNCH_PAD_SPRING_CONFIG),borderBottomRightRadius:withSpring(borderRadius,LAUNCH_PAD_SPRING_CONFIG),backgroundColor:backgroundColor};}';
     var3.code = var7;
     var _closure1_slot17 = var3;
-    var3 = 10;
-    var3 = var5[var3];
-    var3 = var4.bind(var0)(var3);
-    var7 = var3.ChannelListMagnifyingGlassIcon;
-    var3 = {};
-    var9 = 'xs';
-    var3.size = var9;
-    var3 = var8.bind(var0)(var7, var3);
-    var _closure1_slot18 = var3;
     var3 = var6.memo;
     var1 = function arg0() {
         var0 = arg0;
-        var11 = var0.launchPadSharedState;
-        var _closure2_slot0 = var11;
+        var12 = var0.launchPadSharedState;
+        var _closure2_slot0 = var12;
         var4 = var0.launchPadPullTabState;
         var _closure2_slot1 = var4;
         var18 = var0.gestureState;
@@ -132,17 +123,17 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = _closure1_slot14;
         var3 = undefined;
         var10 = var0.bind(var3)();
-        var14 = _closure1_slot0;
-        var9 = _closure1_slot2;
-        var0 = 11;
-        var0 = var9[var0];
-        var2 = var14.bind(var3)(var0);
+        var7 = _closure1_slot0;
+        var8 = _closure1_slot2;
+        var0 = 10;
+        var0 = var8[var0];
+        var2 = var7.bind(var3)(var0);
         var0 = var2.useTabBarStyles;
         var0 = var0.bind(var2)();
-        var8 = _closure1_slot1;
+        var9 = _closure1_slot1;
         var2 = 9;
-        var2 = var9[var2];
-        var2 = var8.bind(var3)(var2);
+        var2 = var8[var2];
+        var2 = var9.bind(var3)(var2);
         var17 = var2.bind(var3)();
         var _closure2_slot4 = var17;
         var2 = var10.launchPad;
@@ -151,27 +142,27 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = var0.tabBar;
         var16 = var0.backgroundColor;
         var _closure2_slot6 = var16;
-        var0 = 12;
-        var0 = var9[var0];
-        var2 = var8.bind(var3)(var0);
+        var0 = 11;
+        var0 = var8[var0];
+        var2 = var9.bind(var3)(var0);
         var0 = {};
-        var0.launchPadSharedState = var11;
+        var0.launchPadSharedState = var12;
         var0.launchPadPullTabState = var4;
         var19 = var2.bind(var3)(var0);
         var _closure2_slot7 = var19;
         var0 = 8;
-        var2 = var9[var0];
-        var12 = var14.bind(var3)(var2);
-        var5 = var12.useAnimatedStyle;
+        var2 = var8[var0];
+        var13 = var7.bind(var3)(var2);
+        var5 = var13.useAnimatedStyle;
         var2 = function() {
-            _fun110593: for (var _fun110593_ip = 0;;) switch (_fun110593_ip) {
+            _fun110625: for (var _fun110625_ip = 0;;) switch (_fun110625_ip) {
                 case 0:
                     var1 = _closure2_slot7;
                     var0 = var1.get;
                     var0 = var0.bind(var1)();
                     if (!var0) {
-                        _fun110593_ip = 50;
-                        continue _fun110593
+                        _fun110625_ip = 50;
+                        continue _fun110625
                     }
                 case 19:
                     var1 = _closure2_slot2;
@@ -179,13 +170,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = var0.bind(var1)();
                     var0 = var0.active;
                     if (var0) {
-                        _fun110593_ip = 50;
-                        continue _fun110593
+                        _fun110625_ip = 50;
+                        continue _fun110625
                     }
                 case 41:
                     var2 = _closure1_slot8;
-                    _fun110593_ip = 153;
-                    continue _fun110593;
+                    _fun110625_ip = 153;
+                    continue _fun110625;
                 case 50:
                     var3 = _closure1_slot0;
                     var1 = _closure1_slot2;
@@ -214,8 +205,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = var0.bind(var1)();
                     var0 = 0.9;
                     if (!(!(var1 > var0))) {
-                        _fun110593_ip = 278;
-                        continue _fun110593
+                        _fun110625_ip = 278;
+                        continue _fun110625
                     }
                 case 180:
                     var1 = _closure2_slot2;
@@ -224,8 +215,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = var0.active;
                     var12 = var2;
                     if (!var0) {
-                        _fun110593_ip = 299;
-                        continue _fun110593
+                        _fun110625_ip = 299;
+                        continue _fun110625
                     }
                 case 205:
                     var1 = _closure2_slot2;
@@ -233,14 +224,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = var0.bind(var1)();
                     var0 = var0.requiresPop;
                     if (var0) {
-                        _fun110593_ip = 236;
-                        continue _fun110593
+                        _fun110625_ip = 236;
+                        continue _fun110625
                     }
                 case 227:
                     var0 = 4;
                     var0 = var2 - var0;
-                    _fun110593_ip = 273;
-                    continue _fun110593;
+                    _fun110625_ip = 273;
+                    continue _fun110625;
                 case 236:
                     var3 = _closure2_slot2;
                     var1 = var3.get;
@@ -251,8 +242,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = var2 + var1;
                 case 273:
                     var12 = var0;
-                    _fun110593_ip = 299;
-                    continue _fun110593;
+                    _fun110625_ip = 299;
+                    continue _fun110625;
                 case 278:
                     var1 = _closure2_slot4;
                     var0 = var1.get;
@@ -269,8 +260,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = var0.bind(var1)();
                     var5 = 0;
                     if (!(var0 <= var5)) {
-                        _fun110593_ip = 360;
-                        continue _fun110593
+                        _fun110625_ip = 360;
+                        continue _fun110625
                     }
                 case 336:
                     var1 = _closure2_slot2;
@@ -279,8 +270,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = var0.active;
                     var5 = 0;
                     if (!var0) {
-                        _fun110593_ip = 367;
-                        continue _fun110593
+                        _fun110625_ip = 367;
+                        continue _fun110625
                     }
                 case 360:
                     var5 = _closure1_slot5;
@@ -311,7 +302,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = var8.bind(var9)(var2, var1, var0);
                     var0 = {};
                     var9 = {};
-                    var2 = 13;
+                    var2 = 12;
                     var8 = var7[var2];
                     var11 = var6.bind(var3)(var8);
                     var8 = var11.withSpring;
@@ -353,43 +344,43 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
             }
         };
-        var13 = {};
-        var13.isMinimized = var19;
-        var13.gestureState = var18;
+        var14 = {};
+        var14.isMinimized = var19;
+        var14.gestureState = var18;
         var18 = _closure1_slot8;
-        var13.LAUNCH_PAD_PULL_TAB_MINIMIZED_OFFSET = var18;
-        var18 = var9[var0];
-        var18 = var14.bind(var3)(var18);
+        var14.LAUNCH_PAD_PULL_TAB_MINIMIZED_OFFSET = var18;
+        var18 = var8[var0];
+        var18 = var7.bind(var3)(var18);
         var18 = var18.interpolate;
-        var13.interpolate = var18;
-        var13.launchPadSharedState = var11;
-        var13.windowDimensions = var17;
-        var13.launchPadPullTabState = var4;
+        var14.interpolate = var18;
+        var14.launchPadSharedState = var12;
+        var14.windowDimensions = var17;
+        var14.launchPadPullTabState = var4;
         var17 = _closure1_slot5;
-        var13.LAUNCH_PAD_PULL_TAB_BORDER_RADIUS = var17;
-        var17 = var9[var0];
-        var17 = var14.bind(var3)(var17);
+        var14.LAUNCH_PAD_PULL_TAB_BORDER_RADIUS = var17;
+        var17 = var8[var0];
+        var17 = var7.bind(var3)(var17);
         var17 = var17.interpolateColor;
-        var13.interpolateColor = var17;
+        var14.interpolateColor = var17;
         var17 = _closure1_slot4;
-        var13.LAUNCH_PAD_MARGIN = var17;
-        var13.backgroundColorTabBar = var16;
-        var13.backgroundColorLaunchPad = var15;
-        var15 = 13;
-        var15 = var9[var15];
-        var15 = var14.bind(var3)(var15);
+        var14.LAUNCH_PAD_MARGIN = var17;
+        var14.backgroundColorTabBar = var16;
+        var14.backgroundColorLaunchPad = var15;
+        var15 = 12;
+        var15 = var8[var15];
+        var15 = var7.bind(var3)(var15);
         var15 = var15.withSpring;
-        var13.withSpring = var15;
+        var14.withSpring = var15;
         var15 = _closure1_slot11;
-        var13.LAUNCH_PAD_SPRING_CONFIG = var15;
-        var2.__closure = var13;
-        var13 = 17461120174889.0;
-        var2.__workletHash = var13;
-        var13 = _closure1_slot17;
-        var2.__initData = var13;
-        var5 = var5.bind(var12)(var2);
+        var14.LAUNCH_PAD_SPRING_CONFIG = var15;
+        var2.__closure = var14;
+        var14 = 17461120174889.0;
+        var2.__workletHash = var14;
+        var14 = _closure1_slot17;
+        var2.__initData = var14;
+        var5 = var5.bind(var13)(var2);
         var2 = {};
-        var2.launchPadSharedState = var11;
+        var2.launchPadSharedState = var12;
         var2.launchPadPullTabState = var4;
         var2.updaters = var1;
         var1 = function arg0() {
@@ -432,7 +423,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var6 = _closure1_slot15;
             var2.__initData = var6;
             var1 = function arg0, arg1() {
-                _fun110596: for (var _fun110596_ip = 0;;) switch (_fun110596_ip) {
+                _fun110628: for (var _fun110628_ip = 0;;) switch (_fun110628_ip) {
                     case 0:
                         var2 = arg0;
                         var1 = arg1;
@@ -441,31 +432,31 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var4 = var3.bind(var4)();
                         var3 = 0;
                         if (!(var3 !== var4)) {
-                            _fun110596_ip = 50;
-                            continue _fun110596
+                            _fun110628_ip = 50;
+                            continue _fun110628
                         }
                     case 28:
                         var6 = _closure3_slot2;
                         var5 = var6.setLaunchPadPullTabMinimized;
                         var4 = false;
                         var4 = var5.bind(var6)(var4);
-                        _fun110596_ip = 470;
-                        continue _fun110596;
+                        _fun110628_ip = 470;
+                        continue _fun110628;
                     case 50:
                         var4 = null;
                         if (!(var4 != var1)) {
-                            _fun110596_ip = 470;
-                            continue _fun110596
+                            _fun110628_ip = 470;
+                            continue _fun110628
                         }
                     case 59:
                         if (!(var2 !== var1)) {
-                            _fun110596_ip = 470;
-                            continue _fun110596
+                            _fun110628_ip = 470;
+                            continue _fun110628
                         }
                     case 66:
                         if (!(!(var2 < var1))) {
-                            _fun110596_ip = 311;
-                            continue _fun110596
+                            _fun110628_ip = 311;
+                            continue _fun110628
                         }
                     case 73:
                         var6 = _closure3_slot2;
@@ -476,8 +467,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var5 = var6.get;
                         var5 = var5.bind(var6)();
                         if (!(var4 != var5)) {
-                            _fun110596_ip = 123;
-                            continue _fun110596
+                            _fun110628_ip = 123;
+                            continue _fun110628
                         }
                     case 107:
                         var7 = _closure3_slot4;
@@ -513,15 +504,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var5 = var7 - var5;
                         var9 = 0;
                         if (!(!(var5 > var6))) {
-                            _fun110596_ip = 242;
-                            continue _fun110596
+                            _fun110628_ip = 242;
+                            continue _fun110628
                         }
                     case 238:
                         var9 = var6 - var5;
                     case 242:
                         if (!(var9 > var3)) {
-                            _fun110596_ip = 470;
-                            continue _fun110596
+                            _fun110628_ip = 470;
+                            continue _fun110628
                         }
                     case 249:
                         var8 = _closure3_slot2;
@@ -536,12 +527,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var5 = var5.offset;
                         var5 = var5 + var9;
                         var5 = var7.bind(var8)(var6, var5);
-                        _fun110596_ip = 470;
-                        continue _fun110596;
+                        _fun110628_ip = 470;
+                        continue _fun110628;
                     case 311:
                         if (!(var3 === var2)) {
-                            _fun110596_ip = 332;
-                            continue _fun110596
+                            _fun110628_ip = 332;
+                            continue _fun110628
                         }
                     case 315:
                         var6 = _closure3_slot2;
@@ -553,8 +544,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var3 = var5.get;
                         var3 = var3.bind(var5)();
                         if (!(var4 == var3)) {
-                            _fun110596_ip = 363;
-                            continue _fun110596
+                            _fun110628_ip = 363;
+                            continue _fun110628
                         }
                     case 349:
                         var5 = _closure3_slot4;
@@ -565,8 +556,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var3 = var5.get;
                         var3 = var3.bind(var5)();
                         if (!(var4 != var3)) {
-                            _fun110596_ip = 383;
-                            continue _fun110596
+                            _fun110628_ip = 383;
+                            continue _fun110628
                         }
                     case 380:
                         var1 = var3;
@@ -623,35 +614,35 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         };
         var1 = var1.bind(var3)(var2);
         var2 = _closure1_slot13;
-        var0 = var9[var0];
-        var0 = var8.bind(var3)(var0);
+        var0 = var8[var0];
+        var0 = var9.bind(var3)(var0);
         var1 = var0.View;
         var0 = {};
-        var11 = var10.pullTab;
+        var12 = var10.pullTab;
         var4 = new Array(2);
-        var4[0] = var11;
+        var4[0] = var12;
         var4[1] = var5;
         var0.style = var4;
         var5 = _closure1_slot3;
         var4 = {};
-        var11 = 'button';
-        var4.accessibilityRole = var11;
-        var11 = 14;
-        var12 = var9[var11];
-        var12 = var14.bind(var3)(var12);
-        var13 = var12.intl;
-        var12 = var13.string;
-        var11 = var9[var11];
-        var11 = var14.bind(var3)(var11);
-        var11 = var11.t;
-        var11 = var11.yTnIfb;
-        var11 = var12.bind(var13)(var11);
-        var4.accessibilityLabel = var11;
+        var12 = 'button';
+        var4.accessibilityRole = var12;
+        var12 = 13;
+        var13 = var8[var12];
+        var13 = var7.bind(var3)(var13);
+        var14 = var13.intl;
+        var13 = var14.string;
+        var12 = var8[var12];
+        var12 = var7.bind(var3)(var12);
+        var12 = var12.t;
+        var12 = var12.yTnIfb;
+        var12 = var13.bind(var14)(var12);
+        var4.accessibilityLabel = var12;
         var11 = _closure1_slot7;
         var4.hitSlop = var11;
         var10 = var10.pullTabButton;
         var4.style = var10;
-        var7 = function() {
+        var6 = function() {
             var2 = _closure2_slot3;
             var1 = var2.setLaunchPadPullTabScale;
             var0 = _closure1_slot9;
@@ -659,12 +650,19 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var0 = undefined;
             return var0;
         };
-        var4.onTouchStart = var7;
-        var7 = 15;
-        var7 = var9[var7];
-        var7 = var8.bind(var3)(var7);
-        var4.onPress = var7;
-        var6 = _closure1_slot18;
+        var4.onTouchStart = var6;
+        var6 = 14;
+        var6 = var8[var6];
+        var6 = var9.bind(var3)(var6);
+        var4.onPress = var6;
+        var6 = 15;
+        var6 = var8[var6];
+        var6 = var7.bind(var3)(var6);
+        var7 = var6.ChannelListMagnifyingGlassIcon;
+        var6 = {};
+        var8 = 'xs';
+        var6.size = var8;
+        var6 = var2.bind(var3)(var7, var6);
         var4.children = var6;
         var4 = var2.bind(var3)(var5, var4);
         var0.children = var4;
@@ -680,4 +678,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 9806, 9535, 33, 1297, 671, 14213, 3717, 13068, 10983, 13672, 14215, 4087, 1234, 14168, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 9875, 11649, 33, 1297, 671, 14206, 3717, 13076, 13671, 14208, 4087, 1235, 14160, 11140, 2]);

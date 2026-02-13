@@ -11,17 +11,17 @@ import st.l;
 public final class b0 extends a2 {
 
     /* renamed from: m  reason: collision with root package name */
-    private final st.k f49960m;
+    private final st.k f50528m;
 
     /* renamed from: n  reason: collision with root package name */
-    private final Lazy f49961n;
+    private final Lazy f50529n;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public b0(final String name, final int i10) {
         super(name, null, i10, 2, null);
         Intrinsics.checkNotNullParameter(name, "name");
-        this.f49960m = k.b.f48379a;
-        this.f49961n = as.l.b(new Function0() { // from class: tt.a0
+        this.f50528m = k.b.f48947a;
+        this.f50529n = as.l.b(new Function0() { // from class: tt.a0
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 SerialDescriptor[] A;
@@ -35,13 +35,13 @@ public final class b0 extends a2 {
     public static final SerialDescriptor[] A(int i10, String str, b0 b0Var) {
         SerialDescriptor[] serialDescriptorArr = new SerialDescriptor[i10];
         for (int i11 = 0; i11 < i10; i11++) {
-            serialDescriptorArr[i11] = st.j.e(str + '.' + b0Var.e(i11), l.d.f48383a, new SerialDescriptor[0], null, 8, null);
+            serialDescriptorArr[i11] = st.j.e(str + '.' + b0Var.e(i11), l.d.f48951a, new SerialDescriptor[0], null, 8, null);
         }
         return serialDescriptorArr;
     }
 
     private final SerialDescriptor[] B() {
-        return (SerialDescriptor[]) this.f49961n.getValue();
+        return (SerialDescriptor[]) this.f50529n.getValue();
     }
 
     @Override // tt.a2
@@ -53,7 +53,7 @@ public final class b0 extends a2 {
             return false;
         }
         SerialDescriptor serialDescriptor = (SerialDescriptor) obj;
-        if (serialDescriptor.getKind() == k.b.f48379a && Intrinsics.areEqual(h(), serialDescriptor.h()) && Intrinsics.areEqual(u1.a(this), u1.a(serialDescriptor))) {
+        if (serialDescriptor.getKind() == k.b.f48947a && Intrinsics.areEqual(h(), serialDescriptor.h()) && Intrinsics.areEqual(u1.a(this), u1.a(serialDescriptor))) {
             return true;
         }
         return false;
@@ -66,7 +66,7 @@ public final class b0 extends a2 {
 
     @Override // tt.a2, kotlinx.serialization.descriptors.SerialDescriptor
     public st.k getKind() {
-        return this.f49960m;
+        return this.f50528m;
     }
 
     @Override // tt.a2

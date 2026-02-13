@@ -84,17 +84,17 @@ public final class BuildOverrideCookieMeta {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final /* synthetic */ KSerializer _childSerializers$_anonymous_() {
-        return new tt.f(n2.f50033a);
+        return new tt.f(n2.f50601a);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final /* synthetic */ KSerializer _childSerializers$_anonymous_$0() {
-        return new tt.f(n2.f50033a);
+        return new tt.f(n2.f50601a);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final /* synthetic */ KSerializer _childSerializers$_anonymous_$1() {
-        return new u0(n2.f50033a, p0.f50049a);
+        return new u0(n2.f50601a, p0.f50617a);
     }
 
     public static /* synthetic */ BuildOverrideCookieMeta copy$default(BuildOverrideCookieMeta buildOverrideCookieMeta, String str, String str2, List list, List list2, Boolean bool, Map map, int i10, Object obj) {
@@ -127,10 +127,10 @@ public final class BuildOverrideCookieMeta {
     public static final /* synthetic */ void write$Self$bundle_updater_release(BuildOverrideCookieMeta buildOverrideCookieMeta, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
         Lazy[] lazyArr = $childSerializers;
         if (compositeEncoder.z(serialDescriptor, 0) || buildOverrideCookieMeta.expiresAt != null) {
-            compositeEncoder.o(serialDescriptor, 0, n2.f50033a, buildOverrideCookieMeta.expiresAt);
+            compositeEncoder.o(serialDescriptor, 0, n2.f50601a, buildOverrideCookieMeta.expiresAt);
         }
         if (compositeEncoder.z(serialDescriptor, 1) || buildOverrideCookieMeta.releaseChannel != null) {
-            compositeEncoder.o(serialDescriptor, 1, n2.f50033a, buildOverrideCookieMeta.releaseChannel);
+            compositeEncoder.o(serialDescriptor, 1, n2.f50601a, buildOverrideCookieMeta.releaseChannel);
         }
         if (compositeEncoder.z(serialDescriptor, 2) || buildOverrideCookieMeta.validForUserIds != null) {
             compositeEncoder.o(serialDescriptor, 2, (qt.o) lazyArr[2].getValue(), buildOverrideCookieMeta.validForUserIds);
@@ -139,7 +139,7 @@ public final class BuildOverrideCookieMeta {
             compositeEncoder.o(serialDescriptor, 3, (qt.o) lazyArr[3].getValue(), buildOverrideCookieMeta.allowedVersions);
         }
         if (compositeEncoder.z(serialDescriptor, 4) || buildOverrideCookieMeta.allowLoggedOut != null) {
-            compositeEncoder.o(serialDescriptor, 4, tt.h.f49997a, buildOverrideCookieMeta.allowLoggedOut);
+            compositeEncoder.o(serialDescriptor, 4, tt.h.f50565a, buildOverrideCookieMeta.allowLoggedOut);
         }
         if (compositeEncoder.z(serialDescriptor, 5) || buildOverrideCookieMeta.experiments != null) {
             compositeEncoder.o(serialDescriptor, 5, (qt.o) lazyArr[5].getValue(), buildOverrideCookieMeta.experiments);

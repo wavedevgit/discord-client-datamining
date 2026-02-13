@@ -3,14 +3,14 @@ package vt;
 public abstract class b {
     public static final byte a(char c10) {
         if (c10 < '~') {
-            return k.f51914c[c10];
+            return k.f52482c[c10];
         }
         return (byte) 0;
     }
 
     public static final char b(int i10) {
         if (i10 < 117) {
-            return k.f51913b[i10];
+            return k.f52481b[i10];
         }
         return (char) 0;
     }

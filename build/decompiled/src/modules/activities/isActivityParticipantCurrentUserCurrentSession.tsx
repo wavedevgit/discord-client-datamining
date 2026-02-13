@@ -25,14 +25,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/activities/isActivityParticipantCurrentUserCurrentSession.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun97307: for (var _fun97307_ip = 0;;) switch (_fun97307_ip) {
+        _fun97321: for (var _fun97321_ip = 0;;) switch (_fun97321_ip) {
             case 0:
                 var2 = arg0;
                 var3 = arguments[1];
                 var5 = undefined;
                 if (!(var3 === var5)) {
-                    _fun97307_ip = 19;
-                    continue _fun97307
+                    _fun97321_ip = 19;
+                    continue _fun97321
                 }
             case 12:
                 var3 = _closure1_slot0;
@@ -44,24 +44,24 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var2.userId;
                 var0 = var0 === var1;
                 if (!var0) {
-                    _fun97307_ip = 92;
-                    continue _fun97307
+                    _fun97321_ip = 92;
+                    continue _fun97321
                 }
             case 51:
                 var4 = var2.sessionId;
                 var1 = null;
                 var1 = var1 == var4;
                 if (var1) {
-                    _fun97307_ip = 76;
-                    continue _fun97307
+                    _fun97321_ip = 76;
+                    continue _fun97321
                 }
             case 66:
                 var4 = var2.sessionId;
                 var1 = var5 === var4;
             case 76:
                 if (var1) {
-                    _fun97307_ip = 89;
-                    continue _fun97307
+                    _fun97321_ip = 89;
+                    continue _fun97321
                 }
             case 79:
                 var2 = var2.sessionId;
@@ -74,4 +74,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.isActivityParticipantCurrentUserCurrentSession = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1216, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1217, 2]);

@@ -10,10 +10,10 @@ import kotlinx.serialization.encoding.Encoder;
 public final class w2 implements KSerializer {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final w2 f50085a = new w2();
+    public static final w2 f50653a = new w2();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final SerialDescriptor f50086b = n0.a("kotlin.UByte", rt.a.B(ByteCompanionObject.INSTANCE));
+    private static final SerialDescriptor f50654b = n0.a("kotlin.UByte", rt.a.B(ByteCompanionObject.INSTANCE));
 
     private w2() {
     }
@@ -35,7 +35,7 @@ public final class w2 implements KSerializer {
 
     @Override // kotlinx.serialization.KSerializer, qt.o, kotlinx.serialization.DeserializationStrategy
     public SerialDescriptor getDescriptor() {
-        return f50086b;
+        return f50654b;
     }
 
     @Override // qt.o

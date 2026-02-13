@@ -18,26 +18,26 @@ import ys.w1;
 public class i {
 
     /* renamed from: c  reason: collision with root package name */
-    private static final /* synthetic */ AtomicReferenceFieldUpdater f27678c = AtomicReferenceFieldUpdater.newUpdater(i.class, Object.class, "head$volatile");
+    private static final /* synthetic */ AtomicReferenceFieldUpdater f28246c = AtomicReferenceFieldUpdater.newUpdater(i.class, Object.class, "head$volatile");
 
     /* renamed from: d  reason: collision with root package name */
-    private static final /* synthetic */ AtomicLongFieldUpdater f27679d = AtomicLongFieldUpdater.newUpdater(i.class, "deqIdx$volatile");
+    private static final /* synthetic */ AtomicLongFieldUpdater f28247d = AtomicLongFieldUpdater.newUpdater(i.class, "deqIdx$volatile");
 
     /* renamed from: e  reason: collision with root package name */
-    private static final /* synthetic */ AtomicReferenceFieldUpdater f27680e = AtomicReferenceFieldUpdater.newUpdater(i.class, Object.class, "tail$volatile");
+    private static final /* synthetic */ AtomicReferenceFieldUpdater f28248e = AtomicReferenceFieldUpdater.newUpdater(i.class, Object.class, "tail$volatile");
 
     /* renamed from: f  reason: collision with root package name */
-    private static final /* synthetic */ AtomicLongFieldUpdater f27681f = AtomicLongFieldUpdater.newUpdater(i.class, "enqIdx$volatile");
+    private static final /* synthetic */ AtomicLongFieldUpdater f28249f = AtomicLongFieldUpdater.newUpdater(i.class, "enqIdx$volatile");
 
     /* renamed from: g  reason: collision with root package name */
-    private static final /* synthetic */ AtomicIntegerFieldUpdater f27682g = AtomicIntegerFieldUpdater.newUpdater(i.class, "_availablePermits$volatile");
+    private static final /* synthetic */ AtomicIntegerFieldUpdater f28250g = AtomicIntegerFieldUpdater.newUpdater(i.class, "_availablePermits$volatile");
     private volatile /* synthetic */ int _availablePermits$volatile;
 
     /* renamed from: a  reason: collision with root package name */
-    private final int f27683a;
+    private final int f28251a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Function3 f27684b;
+    private final Function3 f28252b;
     private volatile /* synthetic */ long deqIdx$volatile;
     private volatile /* synthetic */ long enqIdx$volatile;
     private volatile /* synthetic */ Object head$volatile;
@@ -48,7 +48,7 @@ public class i {
     public /* synthetic */ class a extends FunctionReferenceImpl implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final a f27685d = new a();
+        public static final a f28253d = new a();
 
         a() {
             super(2, k.class, "createSegment", "createSegment(JLkotlinx/coroutines/sync/SemaphoreSegment;)Lkotlinx/coroutines/sync/SemaphoreSegment;", 1);
@@ -69,7 +69,7 @@ public class i {
     public /* synthetic */ class b extends FunctionReferenceImpl implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final b f27686d = new b();
+        public static final b f28254d = new b();
 
         b() {
             super(2, k.class, "createSegment", "createSegment(JLkotlinx/coroutines/sync/SemaphoreSegment;)Lkotlinx/coroutines/sync/SemaphoreSegment;", 1);
@@ -86,14 +86,14 @@ public class i {
     }
 
     public i(int i10, int i11) {
-        this.f27683a = i10;
+        this.f28251a = i10;
         if (i10 > 0) {
             if (i11 >= 0 && i11 <= i10) {
                 l lVar = new l(0L, null, 2);
                 this.head$volatile = lVar;
                 this.tail$volatile = lVar;
                 this._availablePermits$volatile = i10 - i11;
-                this.f27684b = new Function3() { // from class: ht.h
+                this.f28252b = new Function3() { // from class: ht.h
                     @Override // kotlin.jvm.functions.Function3
                     public final Object invoke(Object obj, Object obj2, Object obj3) {
                         Unit q10;
@@ -121,7 +121,7 @@ public class i {
             if (B == gs.b.f()) {
                 return B;
             }
-            return Unit.f31988a;
+            return Unit.f32556a;
         } catch (Throwable th2) {
             b10.P();
             throw th2;
@@ -131,10 +131,10 @@ public class i {
     /* JADX INFO: Access modifiers changed from: private */
     public final boolean h(w1 w1Var) {
         Object c10;
-        l lVar = (l) f27680e.get(this);
-        long andIncrement = f27681f.getAndIncrement(this);
-        a aVar = a.f27685d;
-        AtomicReferenceFieldUpdater atomicReferenceFieldUpdater = f27680e;
+        l lVar = (l) f28248e.get(this);
+        long andIncrement = f28249f.getAndIncrement(this);
+        a aVar = a.f28253d;
+        AtomicReferenceFieldUpdater atomicReferenceFieldUpdater = f28248e;
         long h10 = andIncrement / k.h();
         loop0: while (true) {
             c10 = dt.b.c(lVar, h10, aVar);
@@ -167,9 +167,9 @@ public class i {
         if (at.l.a(lVar2.v(), h11, k.g(), k.i())) {
             if (w1Var instanceof CancellableContinuation) {
                 Intrinsics.checkNotNull(w1Var, "null cannot be cast to non-null type kotlinx.coroutines.CancellableContinuation<kotlin.Unit>");
-                ((CancellableContinuation) w1Var).r(Unit.f31988a, this.f27684b);
+                ((CancellableContinuation) w1Var).r(Unit.f32556a, this.f28252b);
             } else if (w1Var instanceof gt.l) {
-                ((gt.l) w1Var).d(Unit.f31988a);
+                ((gt.l) w1Var).d(Unit.f32556a);
             } else {
                 throw new IllegalStateException(("unexpected: " + w1Var).toString());
             }
@@ -181,39 +181,39 @@ public class i {
     private final void i() {
         int i10;
         do {
-            i10 = f27682g.get(this);
-            if (i10 <= this.f27683a) {
+            i10 = f28250g.get(this);
+            if (i10 <= this.f28251a) {
                 return;
             }
-        } while (!f27682g.compareAndSet(this, i10, this.f27683a));
+        } while (!f28250g.compareAndSet(this, i10, this.f28251a));
     }
 
     private final int j() {
         int andDecrement;
         do {
-            andDecrement = f27682g.getAndDecrement(this);
-        } while (andDecrement > this.f27683a);
+            andDecrement = f28250g.getAndDecrement(this);
+        } while (andDecrement > this.f28251a);
         return andDecrement;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit q(i iVar, Throwable th2, Unit unit, CoroutineContext coroutineContext) {
         iVar.release();
-        return Unit.f31988a;
+        return Unit.f32556a;
     }
 
     private final boolean s(Object obj) {
         if (obj instanceof CancellableContinuation) {
             Intrinsics.checkNotNull(obj, "null cannot be cast to non-null type kotlinx.coroutines.CancellableContinuation<kotlin.Unit>");
             CancellableContinuation cancellableContinuation = (CancellableContinuation) obj;
-            Object w10 = cancellableContinuation.w(Unit.f31988a, null, this.f27684b);
+            Object w10 = cancellableContinuation.w(Unit.f32556a, null, this.f28252b);
             if (w10 != null) {
                 cancellableContinuation.A(w10);
                 return true;
             }
             return false;
         } else if (obj instanceof gt.l) {
-            return ((gt.l) obj).e(this, Unit.f31988a);
+            return ((gt.l) obj).e(this, Unit.f32556a);
         } else {
             throw new IllegalStateException(("unexpected: " + obj).toString());
         }
@@ -221,11 +221,11 @@ public class i {
 
     private final boolean t() {
         Object c10;
-        l lVar = (l) f27678c.get(this);
-        long andIncrement = f27679d.getAndIncrement(this);
+        l lVar = (l) f28246c.get(this);
+        long andIncrement = f28247d.getAndIncrement(this);
         long h10 = andIncrement / k.h();
-        b bVar = b.f27686d;
-        AtomicReferenceFieldUpdater atomicReferenceFieldUpdater = f27678c;
+        b bVar = b.f28254d;
+        AtomicReferenceFieldUpdater atomicReferenceFieldUpdater = f28246c;
         loop0: while (true) {
             c10 = dt.b.c(lVar, h10, bVar);
             if (c0.c(c10)) {
@@ -271,13 +271,13 @@ public class i {
 
     public final Object a(Continuation continuation) {
         if (j() > 0) {
-            return Unit.f31988a;
+            return Unit.f32556a;
         }
         Object g10 = g(continuation);
         if (g10 == gs.b.f()) {
             return g10;
         }
-        return Unit.f31988a;
+        return Unit.f32556a;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
@@ -288,22 +288,22 @@ public class i {
                 return;
             }
         }
-        cancellableContinuation.r(Unit.f31988a, this.f27684b);
+        cancellableContinuation.r(Unit.f32556a, this.f28252b);
     }
 
     public final int k() {
-        return Math.max(f27682g.get(this), 0);
+        return Math.max(f28250g.get(this), 0);
     }
 
     public final boolean r() {
         while (true) {
-            int i10 = f27682g.get(this);
-            if (i10 > this.f27683a) {
+            int i10 = f28250g.get(this);
+            if (i10 > this.f28251a) {
                 i();
             } else if (i10 <= 0) {
                 return false;
             } else {
-                if (f27682g.compareAndSet(this, i10, i10 - 1)) {
+                if (f28250g.compareAndSet(this, i10, i10 - 1)) {
                     return true;
                 }
             }
@@ -312,14 +312,14 @@ public class i {
 
     public final void release() {
         do {
-            int andIncrement = f27682g.getAndIncrement(this);
-            if (andIncrement < this.f27683a) {
+            int andIncrement = f28250g.getAndIncrement(this);
+            if (andIncrement < this.f28251a) {
                 if (andIncrement >= 0) {
                     return;
                 }
             } else {
                 i();
-                throw new IllegalStateException(("The number of released permits cannot be greater than " + this.f27683a).toString());
+                throw new IllegalStateException(("The number of released permits cannot be greater than " + this.f28251a).toString());
             }
         } while (!t());
     }

@@ -3,49 +3,49 @@ package he;
 final class e {
 
     /* renamed from: a  reason: collision with root package name */
-    public final String f27146a;
+    public final String f27714a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final float f27147b;
+    public final float f27715b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final float f27148c;
+    public final float f27716c;
 
     /* renamed from: d  reason: collision with root package name */
-    public final int f27149d;
+    public final int f27717d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final int f27150e;
+    public final int f27718e;
 
     /* renamed from: f  reason: collision with root package name */
-    public final float f27151f;
+    public final float f27719f;
 
     /* renamed from: g  reason: collision with root package name */
-    public final float f27152g;
+    public final float f27720g;
 
     /* renamed from: h  reason: collision with root package name */
-    public final int f27153h;
+    public final int f27721h;
 
     /* renamed from: i  reason: collision with root package name */
-    public final float f27154i;
+    public final float f27722i;
 
     /* renamed from: j  reason: collision with root package name */
-    public final int f27155j;
+    public final int f27723j;
 
     public e(String str) {
         this(str, -3.4028235E38f, -3.4028235E38f, Integer.MIN_VALUE, Integer.MIN_VALUE, -3.4028235E38f, -3.4028235E38f, Integer.MIN_VALUE, -3.4028235E38f, Integer.MIN_VALUE);
     }
 
     public e(String str, float f10, float f11, int i10, int i11, float f12, float f13, int i12, float f14, int i13) {
-        this.f27146a = str;
-        this.f27147b = f10;
-        this.f27148c = f11;
-        this.f27149d = i10;
-        this.f27150e = i11;
-        this.f27151f = f12;
-        this.f27152g = f13;
-        this.f27153h = i12;
-        this.f27154i = f14;
-        this.f27155j = i13;
+        this.f27714a = str;
+        this.f27715b = f10;
+        this.f27716c = f11;
+        this.f27717d = i10;
+        this.f27718e = i11;
+        this.f27719f = f12;
+        this.f27720g = f13;
+        this.f27721h = i12;
+        this.f27722i = f14;
+        this.f27723j = i13;
     }
 }

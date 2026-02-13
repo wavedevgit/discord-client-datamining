@@ -7,31 +7,31 @@ import kotlin.enums.EnumEntries;
 public final class h1 {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final h1 f53106d = new h1("Center", 0);
+    public static final h1 f53674d = new h1("Center", 0);
 
     /* renamed from: e  reason: collision with root package name */
-    public static final h1 f53107e = new h1("Left", 1);
+    public static final h1 f53675e = new h1("Left", 1);
 
     /* renamed from: i  reason: collision with root package name */
-    public static final h1 f53108i = new h1("Right", 2);
+    public static final h1 f53676i = new h1("Right", 2);
 
     /* renamed from: o  reason: collision with root package name */
-    private static final /* synthetic */ h1[] f53109o;
+    private static final /* synthetic */ h1[] f53677o;
 
     /* renamed from: p  reason: collision with root package name */
-    private static final /* synthetic */ EnumEntries f53110p;
+    private static final /* synthetic */ EnumEntries f53678p;
 
     static {
         h1[] a10 = a();
-        f53109o = a10;
-        f53110p = hs.a.a(a10);
+        f53677o = a10;
+        f53678p = hs.a.a(a10);
     }
 
     private h1(String str, int i10) {
     }
 
     private static final /* synthetic */ h1[] a() {
-        return new h1[]{f53106d, f53107e, f53108i};
+        return new h1[]{f53674d, f53675e, f53676i};
     }
 
     public static h1 valueOf(String str) {
@@ -39,6 +39,6 @@ public final class h1 {
     }
 
     public static h1[] values() {
-        return (h1[]) f53109o.clone();
+        return (h1[]) f53677o.clone();
     }
 }

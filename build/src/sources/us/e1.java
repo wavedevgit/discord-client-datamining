@@ -7,20 +7,20 @@ import kotlin.reflect.jvm.internal.impl.descriptors.FunctionDescriptor;
 public class e1 implements Function0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final h1 f51030d;
+    private final h1 f51598d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final String f51031e;
+    private final String f51599e;
 
     public e1(h1 h1Var, String str) {
-        this.f51030d = h1Var;
-        this.f51031e = str;
+        this.f51598d = h1Var;
+        this.f51599e = str;
     }
 
     @Override // kotlin.jvm.functions.Function0
     public Object invoke() {
         FunctionDescriptor R;
-        R = h1.R(this.f51030d, this.f51031e);
+        R = h1.R(this.f51598d, this.f51599e);
         return R;
     }
 }

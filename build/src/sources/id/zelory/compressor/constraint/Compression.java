@@ -8,14 +8,14 @@ import rr.a;
 public final class Compression {
 
     /* renamed from: a  reason: collision with root package name */
-    private final List f27923a = new ArrayList();
+    private final List f28491a = new ArrayList();
 
     public final void a(a constraint) {
         Intrinsics.checkParameterIsNotNull(constraint, "constraint");
-        this.f27923a.add(constraint);
+        this.f28491a.add(constraint);
     }
 
     public final List b() {
-        return this.f27923a;
+        return this.f28491a;
     }
 }

@@ -39,9 +39,9 @@ public abstract class r0 {
         Intrinsics.checkNotNullParameter(binding, "binding");
         Intrinsics.checkNotNullParameter(config, "config");
         Context a10 = uiComponentHelper.a();
-        binding.f48247b.setChecked(inputCheckboxComponent.a().b());
-        binding.f48247b.setClickable(false);
-        binding.f48247b.setFocusable(false);
+        binding.f48815b.setChecked(inputCheckboxComponent.a().b());
+        binding.f48815b.setClickable(false);
+        binding.f48815b.setFocusable(false);
         InputCheckbox.Attributes attributes = config.getAttributes();
         String str2 = null;
         if (attributes != null) {
@@ -50,26 +50,26 @@ public abstract class r0 {
             str = null;
         }
         if (str != null && !StringsKt.k0(str)) {
-            binding.f48250e.setVisibility(0);
-            TextView checkboxLabel = binding.f48250e;
+            binding.f48818e.setVisibility(0);
+            TextView checkboxLabel = binding.f48818e;
             Intrinsics.checkNotNullExpressionValue(checkboxLabel, "checkboxLabel");
             qq.f.d(checkboxLabel, str);
         } else {
-            binding.f48250e.setVisibility(8);
+            binding.f48818e.setVisibility(8);
         }
         InputCheckbox.Attributes attributes2 = config.getAttributes();
         if (attributes2 != null) {
             str2 = attributes2.getDescriptionText();
         }
         if (str2 != null && !StringsKt.k0(str2)) {
-            binding.f48248c.setVisibility(0);
-            TextView checkboxDescription = binding.f48248c;
+            binding.f48816c.setVisibility(0);
+            TextView checkboxDescription = binding.f48816c;
             Intrinsics.checkNotNullExpressionValue(checkboxDescription, "checkboxDescription");
             qq.f.d(checkboxDescription, str2);
         } else {
-            binding.f48248c.setVisibility(8);
+            binding.f48816c.setVisibility(8);
         }
-        binding.f48247b.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() { // from class: pq.o0
+        binding.f48815b.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() { // from class: pq.o0
             @Override // android.widget.CompoundButton.OnCheckedChangeListener
             public final void onCheckedChanged(CompoundButton compoundButton, boolean z10) {
                 r0.f(InputCheckboxComponent.this, compoundButton, z10);
@@ -83,7 +83,7 @@ public abstract class r0 {
         });
         InputCheckbox.InputCheckboxComponentStyle styles = config.getStyles();
         if (styles != null && (textColorHighlight = styles.getTextColorHighlight()) != null && (base = textColorHighlight.getBase()) != null && (base2 = base.getBase()) != null && (value = base2.getValue()) != null) {
-            binding.f48247b.setButtonTintList(new ColorStateList(new int[][]{new int[]{-16842910}, new int[]{-16842912}, new int[]{16842912}}, new int[]{r1.c.l(bq.s.d(a10, bh.b.f6741j, null, false, 6, null), (int) (q1.j.h(a10.getResources(), bh.d.L) * ((float) SetSpanOperation.SPAN_MAX_PRIORITY))), bq.s.d(a10, bh.b.f6741j, null, false, 6, null), value.intValue()}));
+            binding.f48815b.setButtonTintList(new ColorStateList(new int[][]{new int[]{-16842910}, new int[]{-16842912}, new int[]{16842912}}, new int[]{r1.c.l(bq.s.d(a10, bh.b.f6741j, null, false, 6, null), (int) (q1.j.h(a10.getResources(), bh.d.L) * ((float) SetSpanOperation.SPAN_MAX_PRIORITY))), bq.s.d(a10, bh.b.f6741j, null, false, 6, null), value.intValue()}));
         }
         uiComponentHelper.d(new Function0() { // from class: pq.q0
             @Override // kotlin.jvm.functions.Function0
@@ -106,7 +106,7 @@ public abstract class r0 {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void g(sq.i iVar, View view) {
-        iVar.f48247b.toggle();
+        iVar.f48815b.toggle();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -116,31 +116,31 @@ public abstract class r0 {
         TextBasedComponentStyle textBasedStyle;
         InputCheckbox.InputCheckboxComponentStyle styles = inputCheckbox.getStyles();
         if (styles != null && (textBasedStyle = styles.getTextBasedStyle()) != null) {
-            TextView checkboxLabel = iVar.f48250e;
+            TextView checkboxLabel = iVar.f48818e;
             Intrinsics.checkNotNullExpressionValue(checkboxLabel, "checkboxLabel");
             uq.f0.n(checkboxLabel, textBasedStyle, null, 2, null);
         }
         InputCheckbox.InputCheckboxComponentStyle styles2 = inputCheckbox.getStyles();
         if (styles2 != null && (descriptionTextStyle = styles2.getDescriptionTextStyle()) != null) {
-            TextView checkboxDescription = iVar.f48248c;
+            TextView checkboxDescription = iVar.f48816c;
             Intrinsics.checkNotNullExpressionValue(checkboxDescription, "checkboxDescription");
             uq.f0.n(checkboxDescription, descriptionTextStyle, null, 2, null);
         }
         InputCheckbox.InputCheckboxComponentStyle styles3 = inputCheckbox.getStyles();
         if (styles3 != null && (errorTextStyle = styles3.getErrorTextStyle()) != null) {
-            TextView checkboxError = iVar.f48249d;
+            TextView checkboxError = iVar.f48817d;
             Intrinsics.checkNotNullExpressionValue(checkboxError, "checkboxError");
             uq.f0.n(checkboxError, errorTextStyle, null, 2, null);
         }
-        TextView checkboxLabel2 = iVar.f48250e;
+        TextView checkboxLabel2 = iVar.f48818e;
         Intrinsics.checkNotNullExpressionValue(checkboxLabel2, "checkboxLabel");
         ViewGroup.LayoutParams layoutParams = checkboxLabel2.getLayoutParams();
         if (layoutParams != null) {
             ConstraintLayout.LayoutParams layoutParams2 = (ConstraintLayout.LayoutParams) layoutParams;
-            TextView checkboxLabel3 = iVar.f48250e;
+            TextView checkboxLabel3 = iVar.f48818e;
             Intrinsics.checkNotNullExpressionValue(checkboxLabel3, "checkboxLabel");
             int a10 = lq.p.a(checkboxLabel3);
-            TextView checkboxDescription2 = iVar.f48248c;
+            TextView checkboxDescription2 = iVar.f48816c;
             Intrinsics.checkNotNullExpressionValue(checkboxDescription2, "checkboxDescription");
             int a11 = a10 + lq.p.a(checkboxDescription2);
             if (a11 != 0) {
@@ -151,7 +151,7 @@ public abstract class r0 {
                 }
             }
             checkboxLabel2.setLayoutParams(layoutParams2);
-            return Unit.f31988a;
+            return Unit.f32556a;
         }
         throw new NullPointerException("null cannot be cast to non-null type androidx.constraintlayout.widget.ConstraintLayout.LayoutParams");
     }

@@ -8,26 +8,26 @@ import java.util.concurrent.Executor;
 public final class e implements li.f {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Context f36492a;
+    private final Context f37060a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final ki.f f36493b;
+    private final ki.f f37061b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final g f36494c;
+    private final g f37062c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Executor f36495d;
+    private final Executor f37063d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final ki.t f36496e;
+    private final ki.t f37064e;
 
     public e(Context context, Executor executor, g gVar, ki.f fVar, ki.t tVar) {
-        this.f36492a = context;
-        this.f36493b = fVar;
-        this.f36494c = gVar;
-        this.f36495d = executor;
-        this.f36496e = tVar;
+        this.f37060a = context;
+        this.f37061b = fVar;
+        this.f37062c = gVar;
+        this.f37063d = executor;
+        this.f37064e = tVar;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -46,7 +46,7 @@ public final class e implements li.f {
     /* JADX INFO: Access modifiers changed from: package-private */
     public static /* bridge */ /* synthetic */ void d(e eVar, li.d dVar) {
         try {
-            if (!ki.a.e(f0.a(eVar.f36492a))) {
+            if (!ki.a.e(f0.a(eVar.f37060a))) {
                 Log.e("SplitCompat", "Emulating splits failed.");
                 dVar.b(-12);
                 return;
@@ -78,7 +78,7 @@ public final class e implements li.f {
     @Override // li.f
     public final void a(List list, li.d dVar) {
         if (ki.a.f()) {
-            this.f36495d.execute(new d(this, list, dVar));
+            this.f37063d.execute(new d(this, list, dVar));
             return;
         }
         throw new IllegalStateException("Ingestion should only be called in SplitCompat mode.");

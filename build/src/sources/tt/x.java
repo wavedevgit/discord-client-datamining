@@ -10,10 +10,10 @@ import st.e;
 public final class x implements KSerializer {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final x f50087a = new x();
+    public static final x f50655a = new x();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final SerialDescriptor f50088b = new g2("kotlin.Double", e.d.f48364a);
+    private static final SerialDescriptor f50656b = new g2("kotlin.Double", e.d.f48932a);
 
     private x() {
     }
@@ -32,7 +32,7 @@ public final class x implements KSerializer {
 
     @Override // kotlinx.serialization.KSerializer, qt.o, kotlinx.serialization.DeserializationStrategy
     public SerialDescriptor getDescriptor() {
-        return f50088b;
+        return f50656b;
     }
 
     @Override // qt.o

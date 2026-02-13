@@ -92,7 +92,7 @@ public final class r1 {
     public static r1 k(ke.r rVar) {
         Timeline timeline = Timeline.f12582d;
         r.b bVar = f13378t;
-        return new r1(timeline, bVar, -9223372036854775807L, 0L, 1, null, false, rd.w0.f46510o, rVar, qi.s.t(), bVar, false, 0, PlaybackParameters.f12550o, 0L, 0L, 0L, 0L, false);
+        return new r1(timeline, bVar, -9223372036854775807L, 0L, 1, null, false, rd.w0.f47078o, rVar, qi.s.t(), bVar, false, 0, PlaybackParameters.f12550o, 0L, 0L, 0L, 0L, false);
     }
 
     public static r.b l() {

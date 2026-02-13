@@ -2,7 +2,7 @@ package kotlin.reflect;
 
 import java.util.Collection;
 import java.util.List;
-/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public interface KClass extends KDeclarationContainer, b, d {
     Collection getMembers();
 

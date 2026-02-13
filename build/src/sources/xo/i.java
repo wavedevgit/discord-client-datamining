@@ -16,55 +16,55 @@ import to.n4;
 public final class i implements ViewBinding {
 
     /* renamed from: a  reason: collision with root package name */
-    private final CoordinatorLayout f55052a;
+    private final CoordinatorLayout f55620a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final LinearLayout f55053b;
+    public final LinearLayout f55621b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final Button f55054c;
+    public final Button f55622c;
 
     /* renamed from: d  reason: collision with root package name */
-    public final TextInputLayout f55055d;
+    public final TextInputLayout f55623d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final TextView f55056e;
+    public final TextView f55624e;
 
     /* renamed from: f  reason: collision with root package name */
-    public final TextInputLayout f55057f;
+    public final TextInputLayout f55625f;
 
     /* renamed from: g  reason: collision with root package name */
-    public final TextView f55058g;
+    public final TextView f55626g;
 
     /* renamed from: h  reason: collision with root package name */
-    public final Pi2NavigationBar f55059h;
+    public final Pi2NavigationBar f55627h;
 
     /* renamed from: i  reason: collision with root package name */
-    public final TextView f55060i;
+    public final TextView f55628i;
 
     private i(CoordinatorLayout coordinatorLayout, LinearLayout linearLayout, Button button, TextInputLayout textInputLayout, TextView textView, TextInputLayout textInputLayout2, TextView textView2, Pi2NavigationBar pi2NavigationBar, TextView textView3) {
-        this.f55052a = coordinatorLayout;
-        this.f55053b = linearLayout;
-        this.f55054c = button;
-        this.f55055d = textInputLayout;
-        this.f55056e = textView;
-        this.f55057f = textInputLayout2;
-        this.f55058g = textView2;
-        this.f55059h = pi2NavigationBar;
-        this.f55060i = textView3;
+        this.f55620a = coordinatorLayout;
+        this.f55621b = linearLayout;
+        this.f55622c = button;
+        this.f55623d = textInputLayout;
+        this.f55624e = textView;
+        this.f55625f = textInputLayout2;
+        this.f55626g = textView2;
+        this.f55627h = pi2NavigationBar;
+        this.f55628i = textView3;
     }
 
     public static i a(View view) {
-        int i10 = m4.f49405t;
+        int i10 = m4.f49973t;
         LinearLayout linearLayout = (LinearLayout) e4.a.a(view, i10);
         if (linearLayout != null) {
-            i10 = m4.f49407u;
+            i10 = m4.f49975u;
             Button button = (Button) e4.a.a(view, i10);
             if (button != null) {
-                i10 = m4.f49409v;
+                i10 = m4.f49977v;
                 TextInputLayout textInputLayout = (TextInputLayout) e4.a.a(view, i10);
                 if (textInputLayout != null) {
-                    i10 = m4.f49411w;
+                    i10 = m4.f49979w;
                     TextView textView = (TextView) e4.a.a(view, i10);
                     if (textView != null) {
                         i10 = m4.L;
@@ -92,7 +92,7 @@ public final class i implements ViewBinding {
     }
 
     public static i c(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z10) {
-        View inflate = layoutInflater.inflate(n4.f49546j, viewGroup, false);
+        View inflate = layoutInflater.inflate(n4.f50114j, viewGroup, false);
         if (z10) {
             viewGroup.addView(inflate);
         }
@@ -102,6 +102,6 @@ public final class i implements ViewBinding {
     @Override // androidx.viewbinding.ViewBinding
     /* renamed from: b */
     public CoordinatorLayout getRoot() {
-        return this.f55052a;
+        return this.f55620a;
     }
 }

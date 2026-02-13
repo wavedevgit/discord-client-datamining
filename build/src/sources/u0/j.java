@@ -7,29 +7,29 @@ import kotlin.jvm.internal.Intrinsics;
 public class j implements Cloneable {
 
     /* renamed from: d  reason: collision with root package name */
-    public /* synthetic */ boolean f50374d;
+    public /* synthetic */ boolean f50942d;
 
     /* renamed from: e  reason: collision with root package name */
-    public /* synthetic */ long[] f50375e;
+    public /* synthetic */ long[] f50943e;
 
     /* renamed from: i  reason: collision with root package name */
-    public /* synthetic */ Object[] f50376i;
+    public /* synthetic */ Object[] f50944i;
 
     /* renamed from: o  reason: collision with root package name */
-    public /* synthetic */ int f50377o;
+    public /* synthetic */ int f50945o;
 
     public j() {
         this(0, 1, null);
     }
 
     public void a() {
-        int i10 = this.f50377o;
-        Object[] objArr = this.f50376i;
+        int i10 = this.f50945o;
+        Object[] objArr = this.f50944i;
         for (int i11 = 0; i11 < i10; i11++) {
             objArr[i11] = null;
         }
-        this.f50377o = 0;
-        this.f50374d = false;
+        this.f50945o = 0;
+        this.f50942d = false;
     }
 
     /* renamed from: b */
@@ -37,8 +37,8 @@ public class j implements Cloneable {
         Object clone = super.clone();
         Intrinsics.checkNotNull(clone, "null cannot be cast to non-null type androidx.collection.LongSparseArray<E of androidx.collection.LongSparseArray>");
         j jVar = (j) clone;
-        jVar.f50375e = (long[]) this.f50375e.clone();
-        jVar.f50376i = (Object[]) this.f50376i.clone();
+        jVar.f50943e = (long[]) this.f50943e.clone();
+        jVar.f50944i = (Object[]) this.f50944i.clone();
         return jVar;
     }
 
@@ -51,12 +51,12 @@ public class j implements Cloneable {
 
     public Object d(long j10) {
         Object obj;
-        int b10 = v0.a.b(this.f50375e, this.f50377o, j10);
+        int b10 = v0.a.b(this.f50943e, this.f50945o, j10);
         if (b10 >= 0) {
-            Object obj2 = this.f50376i[b10];
-            obj = k.f50378a;
+            Object obj2 = this.f50944i[b10];
+            obj = k.f50946a;
             if (obj2 != obj) {
-                return this.f50376i[b10];
+                return this.f50944i[b10];
             }
             return null;
         }
@@ -65,14 +65,14 @@ public class j implements Cloneable {
 
     public int e(long j10) {
         Object obj;
-        if (this.f50374d) {
-            int i10 = this.f50377o;
-            long[] jArr = this.f50375e;
-            Object[] objArr = this.f50376i;
+        if (this.f50942d) {
+            int i10 = this.f50945o;
+            long[] jArr = this.f50943e;
+            Object[] objArr = this.f50944i;
             int i11 = 0;
             for (int i12 = 0; i12 < i10; i12++) {
                 Object obj2 = objArr[i12];
-                obj = k.f50378a;
+                obj = k.f50946a;
                 if (obj2 != obj) {
                     if (i12 != i11) {
                         jArr[i11] = jArr[i12];
@@ -82,16 +82,16 @@ public class j implements Cloneable {
                     i11++;
                 }
             }
-            this.f50374d = false;
-            this.f50377o = i11;
+            this.f50942d = false;
+            this.f50945o = i11;
         }
-        return v0.a.b(this.f50375e, this.f50377o, j10);
+        return v0.a.b(this.f50943e, this.f50945o, j10);
     }
 
     public long f(int i10) {
         boolean z10;
         Object obj;
-        if (i10 >= 0 && i10 < this.f50377o) {
+        if (i10 >= 0 && i10 < this.f50945o) {
             z10 = true;
         } else {
             z10 = false;
@@ -99,14 +99,14 @@ public class j implements Cloneable {
         if (!z10) {
             v0.d.a("Expected index to be within 0..size()-1, but was " + i10);
         }
-        if (this.f50374d) {
-            int i11 = this.f50377o;
-            long[] jArr = this.f50375e;
-            Object[] objArr = this.f50376i;
+        if (this.f50942d) {
+            int i11 = this.f50945o;
+            long[] jArr = this.f50943e;
+            Object[] objArr = this.f50944i;
             int i12 = 0;
             for (int i13 = 0; i13 < i11; i13++) {
                 Object obj2 = objArr[i13];
-                obj = k.f50378a;
+                obj = k.f50946a;
                 if (obj2 != obj) {
                     if (i13 != i12) {
                         jArr[i12] = jArr[i13];
@@ -116,39 +116,39 @@ public class j implements Cloneable {
                     i12++;
                 }
             }
-            this.f50374d = false;
-            this.f50377o = i12;
+            this.f50942d = false;
+            this.f50945o = i12;
         }
-        return this.f50375e[i10];
+        return this.f50943e[i10];
     }
 
     public void g(long j10, Object obj) {
         Object obj2;
         Object obj3;
-        int b10 = v0.a.b(this.f50375e, this.f50377o, j10);
+        int b10 = v0.a.b(this.f50943e, this.f50945o, j10);
         if (b10 >= 0) {
-            this.f50376i[b10] = obj;
+            this.f50944i[b10] = obj;
             return;
         }
         int i10 = ~b10;
-        if (i10 < this.f50377o) {
-            Object obj4 = this.f50376i[i10];
-            obj3 = k.f50378a;
+        if (i10 < this.f50945o) {
+            Object obj4 = this.f50944i[i10];
+            obj3 = k.f50946a;
             if (obj4 == obj3) {
-                this.f50375e[i10] = j10;
-                this.f50376i[i10] = obj;
+                this.f50943e[i10] = j10;
+                this.f50944i[i10] = obj;
                 return;
             }
         }
-        if (this.f50374d) {
-            int i11 = this.f50377o;
-            long[] jArr = this.f50375e;
+        if (this.f50942d) {
+            int i11 = this.f50945o;
+            long[] jArr = this.f50943e;
             if (i11 >= jArr.length) {
-                Object[] objArr = this.f50376i;
+                Object[] objArr = this.f50944i;
                 int i12 = 0;
                 for (int i13 = 0; i13 < i11; i13++) {
                     Object obj5 = objArr[i13];
-                    obj2 = k.f50378a;
+                    obj2 = k.f50946a;
                     if (obj5 != obj2) {
                         if (i13 != i12) {
                             jArr[i12] = jArr[i13];
@@ -158,46 +158,46 @@ public class j implements Cloneable {
                         i12++;
                     }
                 }
-                this.f50374d = false;
-                this.f50377o = i12;
-                i10 = ~v0.a.b(this.f50375e, i12, j10);
+                this.f50942d = false;
+                this.f50945o = i12;
+                i10 = ~v0.a.b(this.f50943e, i12, j10);
             }
         }
-        int i14 = this.f50377o;
-        if (i14 >= this.f50375e.length) {
+        int i14 = this.f50945o;
+        if (i14 >= this.f50943e.length) {
             int f10 = v0.a.f(i14 + 1);
-            long[] copyOf = Arrays.copyOf(this.f50375e, f10);
+            long[] copyOf = Arrays.copyOf(this.f50943e, f10);
             Intrinsics.checkNotNullExpressionValue(copyOf, "copyOf(...)");
-            this.f50375e = copyOf;
-            Object[] copyOf2 = Arrays.copyOf(this.f50376i, f10);
+            this.f50943e = copyOf;
+            Object[] copyOf2 = Arrays.copyOf(this.f50944i, f10);
             Intrinsics.checkNotNullExpressionValue(copyOf2, "copyOf(...)");
-            this.f50376i = copyOf2;
+            this.f50944i = copyOf2;
         }
-        int i15 = this.f50377o;
+        int i15 = this.f50945o;
         if (i15 - i10 != 0) {
-            long[] jArr2 = this.f50375e;
+            long[] jArr2 = this.f50943e;
             int i16 = i10 + 1;
             kotlin.collections.i.j(jArr2, jArr2, i16, i10, i15);
-            Object[] objArr2 = this.f50376i;
-            kotlin.collections.i.k(objArr2, objArr2, i16, i10, this.f50377o);
+            Object[] objArr2 = this.f50944i;
+            kotlin.collections.i.k(objArr2, objArr2, i16, i10, this.f50945o);
         }
-        this.f50375e[i10] = j10;
-        this.f50376i[i10] = obj;
-        this.f50377o++;
+        this.f50943e[i10] = j10;
+        this.f50944i[i10] = obj;
+        this.f50945o++;
     }
 
     public void h(long j10) {
         Object obj;
         Object obj2;
-        int b10 = v0.a.b(this.f50375e, this.f50377o, j10);
+        int b10 = v0.a.b(this.f50943e, this.f50945o, j10);
         if (b10 >= 0) {
-            Object obj3 = this.f50376i[b10];
-            obj = k.f50378a;
+            Object obj3 = this.f50944i[b10];
+            obj = k.f50946a;
             if (obj3 != obj) {
-                Object[] objArr = this.f50376i;
-                obj2 = k.f50378a;
+                Object[] objArr = this.f50944i;
+                obj2 = k.f50946a;
                 objArr[b10] = obj2;
-                this.f50374d = true;
+                this.f50942d = true;
             }
         }
     }
@@ -205,26 +205,26 @@ public class j implements Cloneable {
     public void j(int i10) {
         Object obj;
         Object obj2;
-        Object obj3 = this.f50376i[i10];
-        obj = k.f50378a;
+        Object obj3 = this.f50944i[i10];
+        obj = k.f50946a;
         if (obj3 != obj) {
-            Object[] objArr = this.f50376i;
-            obj2 = k.f50378a;
+            Object[] objArr = this.f50944i;
+            obj2 = k.f50946a;
             objArr[i10] = obj2;
-            this.f50374d = true;
+            this.f50942d = true;
         }
     }
 
     public int k() {
         Object obj;
-        if (this.f50374d) {
-            int i10 = this.f50377o;
-            long[] jArr = this.f50375e;
-            Object[] objArr = this.f50376i;
+        if (this.f50942d) {
+            int i10 = this.f50945o;
+            long[] jArr = this.f50943e;
+            Object[] objArr = this.f50944i;
             int i11 = 0;
             for (int i12 = 0; i12 < i10; i12++) {
                 Object obj2 = objArr[i12];
-                obj = k.f50378a;
+                obj = k.f50946a;
                 if (obj2 != obj) {
                     if (i12 != i11) {
                         jArr[i11] = jArr[i12];
@@ -234,16 +234,16 @@ public class j implements Cloneable {
                     i11++;
                 }
             }
-            this.f50374d = false;
-            this.f50377o = i11;
+            this.f50942d = false;
+            this.f50945o = i11;
         }
-        return this.f50377o;
+        return this.f50945o;
     }
 
     public Object l(int i10) {
         boolean z10;
         Object obj;
-        if (i10 >= 0 && i10 < this.f50377o) {
+        if (i10 >= 0 && i10 < this.f50945o) {
             z10 = true;
         } else {
             z10 = false;
@@ -251,14 +251,14 @@ public class j implements Cloneable {
         if (!z10) {
             v0.d.a("Expected index to be within 0..size()-1, but was " + i10);
         }
-        if (this.f50374d) {
-            int i11 = this.f50377o;
-            long[] jArr = this.f50375e;
-            Object[] objArr = this.f50376i;
+        if (this.f50942d) {
+            int i11 = this.f50945o;
+            long[] jArr = this.f50943e;
+            Object[] objArr = this.f50944i;
             int i12 = 0;
             for (int i13 = 0; i13 < i11; i13++) {
                 Object obj2 = objArr[i13];
-                obj = k.f50378a;
+                obj = k.f50946a;
                 if (obj2 != obj) {
                     if (i13 != i12) {
                         jArr[i12] = jArr[i13];
@@ -268,19 +268,19 @@ public class j implements Cloneable {
                     i12++;
                 }
             }
-            this.f50374d = false;
-            this.f50377o = i12;
+            this.f50942d = false;
+            this.f50945o = i12;
         }
-        return this.f50376i[i10];
+        return this.f50944i[i10];
     }
 
     public String toString() {
         if (k() <= 0) {
             return "{}";
         }
-        StringBuilder sb2 = new StringBuilder(this.f50377o * 28);
+        StringBuilder sb2 = new StringBuilder(this.f50945o * 28);
         sb2.append('{');
-        int i10 = this.f50377o;
+        int i10 = this.f50945o;
         for (int i11 = 0; i11 < i10; i11++) {
             if (i11 > 0) {
                 sb2.append(", ");
@@ -302,13 +302,13 @@ public class j implements Cloneable {
 
     public j(int i10) {
         if (i10 == 0) {
-            this.f50375e = v0.a.f51314b;
-            this.f50376i = v0.a.f51315c;
+            this.f50943e = v0.a.f51882b;
+            this.f50944i = v0.a.f51883c;
             return;
         }
         int f10 = v0.a.f(i10);
-        this.f50375e = new long[f10];
-        this.f50376i = new Object[f10];
+        this.f50943e = new long[f10];
+        this.f50944i = new Object[f10];
     }
 
     public /* synthetic */ j(int i10, int i11, DefaultConstructorMarker defaultConstructorMarker) {

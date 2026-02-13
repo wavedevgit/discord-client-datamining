@@ -22,14 +22,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/main_tabs_v2/native/getChannelDetailsFromRoute.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun99320: for (var _fun99320_ip = 0;;) switch (_fun99320_ip) {
+        _fun99334: for (var _fun99334_ip = 0;;) switch (_fun99334_ip) {
             case 0:
                 var4 = arg0;
                 var2 = arguments[1];
                 var3 = undefined;
                 if (!(var2 === var3)) {
-                    _fun99320_ip = 14;
-                    continue _fun99320
+                    _fun99334_ip = 14;
+                    continue _fun99334
                 }
             case 12:
                 var2 = false;
@@ -43,13 +43,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.bind(var5)(var4);
                 var5 = null;
                 if (!(var5 == var1)) {
-                    _fun99320_ip = 173;
-                    continue _fun99320
+                    _fun99334_ip = 173;
+                    continue _fun99334
                 }
             case 53:
                 if (var2) {
-                    _fun99320_ip = 70;
-                    continue _fun99320
+                    _fun99334_ip = 70;
+                    continue _fun99334
                 }
             case 56:
                 var2 = new Array(2);
@@ -64,22 +64,22 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var2.coerceGuildsRoute;
                 var4 = var0.bind(var2)(var4);
                 if (!(var5 == var4)) {
-                    _fun99320_ip = 116;
-                    continue _fun99320
+                    _fun99334_ip = 116;
+                    continue _fun99334
                 }
             case 102:
                 var0 = new Array(2);
                 var0[0] = var3;
                 var0[1] = var3;
-                _fun99320_ip = 171;
-                continue _fun99320;
+                _fun99334_ip = 171;
+                continue _fun99334;
             case 116:
                 var2 = var4.params;
                 var7 = var5 == var2;
                 var6 = undefined;
                 if (var7) {
-                    _fun99320_ip = 136;
-                    continue _fun99320
+                    _fun99334_ip = 136;
+                    continue _fun99334
                 }
             case 131:
                 var6 = var2.guildId;
@@ -90,8 +90,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var5 == var4;
                 var3 = undefined;
                 if (var5) {
-                    _fun99320_ip = 164;
-                    continue _fun99320
+                    _fun99334_ip = 164;
+                    continue _fun99334
                 }
             case 159:
                 var3 = var4.channelId;

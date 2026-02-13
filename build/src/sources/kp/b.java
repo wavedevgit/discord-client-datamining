@@ -8,7 +8,7 @@ public abstract class b {
     public /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final /* synthetic */ int[] f35124a;
+        public static final /* synthetic */ int[] f35692a;
 
         static {
             int[] iArr = new int[ep.f.values().length];
@@ -20,13 +20,13 @@ public abstract class b {
                 iArr[ep.f.f23087e.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
-            f35124a = iArr;
+            f35692a = iArr;
         }
     }
 
     public static final String a(ep.f fVar) {
         Intrinsics.checkNotNullParameter(fVar, "<this>");
-        int i10 = a.f35124a[fVar.ordinal()];
+        int i10 = a.f35692a[fVar.ordinal()];
         if (i10 != 1) {
             if (i10 == 2) {
                 return "sandbox";

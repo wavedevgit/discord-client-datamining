@@ -8,7 +8,7 @@ import java.util.Locale;
 class e implements t, Serializable {
 
     /* renamed from: d  reason: collision with root package name */
-    static final e f37319d = new e();
+    static final e f37887d = new e();
     private static final long serialVersionUID = -4211396220263977858L;
 
     e() {
@@ -69,7 +69,7 @@ class e implements t, Serializable {
     }
 
     protected Object readResolve() {
-        return f37319d;
+        return f37887d;
     }
 
     @Override // cu.t

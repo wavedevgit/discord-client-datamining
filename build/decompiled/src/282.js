@@ -700,84 +700,84 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                 var2 = arg0;
                                 var3 = null;
                                 if (!(var3 != var2)) {
-                                    _fun4425_ip = 47;
+                                    _fun4425_ip = 46;
                                     continue _fun4425
                                 }
                             case 9:
                                 var4 = var2.nativeEvent;
                                 if (!(var3 != var4)) {
-                                    _fun4425_ip = 47;
+                                    _fun4425_ip = 46;
                                     continue _fun4425
                                 }
-                            case 19:
+                            case 18:
                                 var0 = var4.hasOwnProperty;
                                 if (!(var3 != var0)) {
-                                    _fun4425_ip = 47;
+                                    _fun4425_ip = 46;
                                     continue _fun4425
                                 }
-                            case 29:
+                            case 28:
                                 var1 = var4.hasOwnProperty;
                                 var0 = 'pointerType';
                                 var0 = var1.bind(var4)(var0);
                                 if (var0) {
-                                    _fun4425_ip = 143;
+                                    _fun4425_ip = 142;
                                     continue _fun4425
                                 }
-                            case 47:
+                            case 46:
                                 var0 = var3 == var2;
                                 var1 = undefined;
                                 var4 = undefined;
                                 if (var0) {
-                                    _fun4425_ip = 64;
+                                    _fun4425_ip = 63;
                                     continue _fun4425
                                 }
-                            case 58:
+                            case 57:
                                 var4 = var2.currentTarget;
-                            case 64:
+                            case 63:
                                 var5 = var3 == var2;
                                 var0 = undefined;
                                 if (var5) {
-                                    _fun4425_ip = 79;
+                                    _fun4425_ip = 78;
                                     continue _fun4425
                                 }
-                            case 73:
+                            case 72:
                                 var0 = var2.target;
-                            case 79:
+                            case 78:
                                 if (!(var4 !== var0)) {
-                                    _fun4425_ip = 99;
+                                    _fun4425_ip = 98;
                                     continue _fun4425
                                 }
-                            case 83:
+                            case 82:
                                 if (!(var3 != var2)) {
-                                    _fun4425_ip = 143;
+                                    _fun4425_ip = 142;
                                     continue _fun4425
                                 }
-                            case 87:
+                            case 86:
                                 var0 = var2.stopPropagation;
                                 var0 = var0.bind(var2)();
-                                _fun4425_ip = 143;
+                                _fun4425_ip = 142;
                                 continue _fun4425;
-                            case 99:
+                            case 98:
                                 var0 = _closure3_slot0;
                                 var4 = var0._config;
                                 var0 = var4.onPress;
                                 var5 = var4.disabled;
                                 var3 = var3 != var0;
                                 if (!var3) {
-                                    _fun4425_ip = 135;
+                                    _fun4425_ip = 134;
                                     continue _fun4425
                                 }
-                            case 129:
+                            case 128:
                                 var4 = true;
                                 var3 = var4 !== var5;
-                            case 135:
+                            case 134:
                                 if (!var3) {
-                                    _fun4425_ip = 143;
+                                    _fun4425_ip = 142;
                                     continue _fun4425
                                 }
-                            case 138:
+                            case 137:
                                 var0 = var0.bind(var1)(var2);
-                            case 143:
+                            case 142:
                                 var0 = undefined;
                                 return var0;
                         }
@@ -980,10 +980,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var1 = var1.timestamp;
                     var3 = null;
                     if (!(var3 != var1)) {
-                        _fun4430_ip = 78;
+                        _fun4430_ip = 77;
                         continue _fun4430
                     }
-                case 37:
+                case 36:
                     var7 = _closure1_slot1;
                     var4 = _closure1_slot2;
                     var1 = 3;
@@ -1002,7 +1002,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         return var0;
                     };
                     var0 = var1.bind(var4)(var0);
-                case 78:
+                case 77:
                     var4 = var2._touchState;
                     var0 = _closure1_slot5;
                     var8 = var0[var4];
@@ -1010,27 +1010,27 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var0 = undefined;
                     var1 = undefined;
                     if (var9) {
-                        _fun4430_ip = 110;
+                        _fun4430_ip = 109;
                         continue _fun4430
                     }
-                case 106:
+                case 105:
                     var1 = var8[var6];
-                case 110:
+                case 109:
                     var8 = var2._responderID;
                     var8 = var3 == var8;
                     if (!var8) {
-                        _fun4430_ip = 131;
+                        _fun4430_ip = 130;
                         continue _fun4430
                     }
-                case 123:
+                case 122:
                     var9 = 'RESPONDER_RELEASE';
                     var8 = var9 === var6;
-                case 131:
+                case 130:
                     if (var8) {
-                        _fun4430_ip = 260;
+                        _fun4430_ip = 259;
                         continue _fun4430
                     }
-                case 137:
+                case 136:
                     var8 = _closure1_slot1;
                     var9 = _closure1_slot2;
                     var7 = 4;
@@ -1038,24 +1038,24 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var9 = var8.bind(var0)(var7);
                     var8 = var3 != var1;
                     if (!var8) {
-                        _fun4430_ip = 172;
+                        _fun4430_ip = 171;
                         continue _fun4430
                     }
-                case 164:
+                case 163:
                     var3 = 'ERROR';
                     var8 = var3 !== var1;
-                case 172:
+                case 171:
                     var3 = var2._responderID;
                     var7 = '<<host component>>';
                     var10 = 'number';
                     var3 = typeof var3;
                     if (!(var10 === var3)) {
-                        _fun4430_ip = 201;
+                        _fun4430_ip = 200;
                         continue _fun4430
                     }
-                case 195:
+                case 194:
                     var7 = var2._responderID;
-                case 201:
+                case 200:
                     var14 = 'Pressability: Invalid signal `%s` for state `%s` on responder: %s';
                     var16 = undefined;
                     var15 = var8;
@@ -1064,10 +1064,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var11 = var7;
                     var3 = var16[var9](var15, var14, var13, var12, var11, var10);
                     if (!(var4 !== var1)) {
-                        _fun4430_ip = 260;
+                        _fun4430_ip = 259;
                         continue _fun4430
                     }
-                case 229:
+                case 228:
                     var3 = var2._performTransitionSideEffects;
                     var16 = var2;
                     var15 = var4;
@@ -1076,7 +1076,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var12 = var5;
                     var3 = var16[var3](var15, var14, var13, var12, var11);
                     var2._touchState = var1;
-                case 260:
+                case 259:
                     return var0;
             }
         };
@@ -1832,40 +1832,40 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = var1.touches;
                 var3 = null;
                 if (!(var3 != var2)) {
-                    _fun4445_ip = 38;
+                    _fun4445_ip = 37;
                     continue _fun4445
                 }
-            case 27:
+            case 26:
                 var5 = var2.length;
                 var1 = 0;
                 if (!(!(var5 > var1))) {
-                    _fun4445_ip = 67;
+                    _fun4445_ip = 65;
                     continue _fun4445
                 }
-            case 38:
+            case 37:
                 if (!(var3 != var4)) {
-                    _fun4445_ip = 53;
+                    _fun4445_ip = 52;
                     continue _fun4445
                 }
-            case 42:
+            case 41:
                 var5 = var4.length;
                 var3 = 0;
                 if (!(!(var5 > var3))) {
-                    _fun4445_ip = 61;
+                    _fun4445_ip = 59;
                     continue _fun4445
                 }
-            case 53:
+            case 52:
                 var0 = var0.nativeEvent;
-                _fun4445_ip = 65;
+                _fun4445_ip = 63;
                 continue _fun4445;
-            case 61:
+            case 59:
                 var0 = var4[var3];
-            case 65:
-                _fun4445_ip = 71;
+            case 63:
+                _fun4445_ip = 69;
                 continue _fun4445;
-            case 67:
+            case 65:
                 var0 = var2[var1];
-            case 71:
+            case 69:
                 return var0;
         }
     };

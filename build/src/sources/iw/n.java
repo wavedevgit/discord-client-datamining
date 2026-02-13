@@ -6,24 +6,24 @@ import kotlin.jvm.internal.Intrinsics;
 final class n {
 
     /* renamed from: a  reason: collision with root package name */
-    private String f30463a;
+    private String f31031a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final List f30464b;
+    private final List f31032b;
 
     public n(String text, List delimiters) {
         Intrinsics.checkNotNullParameter(text, "text");
         Intrinsics.checkNotNullParameter(delimiters, "delimiters");
-        this.f30463a = text;
-        this.f30464b = delimiters;
+        this.f31031a = text;
+        this.f31032b = delimiters;
     }
 
     public final List a() {
-        return this.f30464b;
+        return this.f31032b;
     }
 
     public final String b() {
-        return this.f30463a;
+        return this.f31031a;
     }
 
     public boolean equals(Object obj) {
@@ -34,19 +34,19 @@ final class n {
             return false;
         }
         n nVar = (n) obj;
-        if (Intrinsics.areEqual(this.f30463a, nVar.f30463a) && Intrinsics.areEqual(this.f30464b, nVar.f30464b)) {
+        if (Intrinsics.areEqual(this.f31031a, nVar.f31031a) && Intrinsics.areEqual(this.f31032b, nVar.f31032b)) {
             return true;
         }
         return false;
     }
 
     public int hashCode() {
-        return (this.f30463a.hashCode() * 31) + this.f30464b.hashCode();
+        return (this.f31031a.hashCode() * 31) + this.f31032b.hashCode();
     }
 
     public String toString() {
-        String str = this.f30463a;
-        List list = this.f30464b;
+        String str = this.f31031a;
+        List list = this.f31032b;
         return "SplitArguments(text=" + str + ", delimiters=" + list + ")";
     }
 }

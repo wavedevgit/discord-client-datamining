@@ -15,46 +15,46 @@ import x4.k;
 public final class b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final List f51329a;
+    private final List f51897a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final List f51330b;
+    private final List f51898b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final List f51331c;
+    private final List f51899c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final List f51332d;
+    private final List f51900d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final List f51333e;
+    private final List f51901e;
 
     public /* synthetic */ b(List list, List list2, List list3, List list4, List list5, DefaultConstructorMarker defaultConstructorMarker) {
         this(list, list2, list3, list4, list5);
     }
 
     public final List a() {
-        return this.f51333e;
+        return this.f51901e;
     }
 
     public final List b() {
-        return this.f51332d;
+        return this.f51900d;
     }
 
     public final List c() {
-        return this.f51329a;
+        return this.f51897a;
     }
 
     public final List d() {
-        return this.f51331c;
+        return this.f51899c;
     }
 
     public final List e() {
-        return this.f51330b;
+        return this.f51898b;
     }
 
     public final String f(Object obj, m mVar) {
-        List list = this.f51331c;
+        List list = this.f51899c;
         int size = list.size();
         for (int i10 = 0; i10 < size; i10++) {
             Pair pair = (Pair) list.get(i10);
@@ -71,7 +71,7 @@ public final class b {
     }
 
     public final Object g(Object obj, m mVar) {
-        List list = this.f51330b;
+        List list = this.f51898b;
         int size = list.size();
         for (int i10 = 0; i10 < size; i10++) {
             Pair pair = (Pair) list.get(i10);
@@ -92,9 +92,9 @@ public final class b {
     }
 
     public final Pair i(l lVar, m mVar, h hVar, int i10) {
-        int size = this.f51333e.size();
+        int size = this.f51901e.size();
         while (i10 < size) {
-            k a10 = ((k.a) this.f51333e.get(i10)).a(lVar, mVar, hVar);
+            k a10 = ((k.a) this.f51901e.get(i10)).a(lVar, mVar, hVar);
             if (a10 != null) {
                 return v.a(a10, Integer.valueOf(i10));
             }
@@ -104,9 +104,9 @@ public final class b {
     }
 
     public final Pair j(Object obj, m mVar, h hVar, int i10) {
-        int size = this.f51332d.size();
+        int size = this.f51900d.size();
         while (i10 < size) {
-            Pair pair = (Pair) this.f51332d.get(i10);
+            Pair pair = (Pair) this.f51900d.get(i10);
             h.a aVar = (h.a) pair.a();
             if (((Class) pair.b()).isAssignableFrom(obj.getClass())) {
                 Intrinsics.checkNotNull(aVar, "null cannot be cast to non-null type coil.fetch.Fetcher.Factory<kotlin.Any>");
@@ -121,77 +121,77 @@ public final class b {
     }
 
     private b(List list, List list2, List list3, List list4, List list5) {
-        this.f51329a = list;
-        this.f51330b = list2;
-        this.f51331c = list3;
-        this.f51332d = list4;
-        this.f51333e = list5;
+        this.f51897a = list;
+        this.f51898b = list2;
+        this.f51899c = list3;
+        this.f51900d = list4;
+        this.f51901e = list5;
     }
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final List f51334a;
+        private final List f51902a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final List f51335b;
+        private final List f51903b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final List f51336c;
+        private final List f51904c;
 
         /* renamed from: d  reason: collision with root package name */
-        private final List f51337d;
+        private final List f51905d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final List f51338e;
+        private final List f51906e;
 
         public a() {
-            this.f51334a = new ArrayList();
-            this.f51335b = new ArrayList();
-            this.f51336c = new ArrayList();
-            this.f51337d = new ArrayList();
-            this.f51338e = new ArrayList();
+            this.f51902a = new ArrayList();
+            this.f51903b = new ArrayList();
+            this.f51904c = new ArrayList();
+            this.f51905d = new ArrayList();
+            this.f51906e = new ArrayList();
         }
 
         public final a a(h.a aVar, Class cls) {
-            this.f51337d.add(v.a(aVar, cls));
+            this.f51905d.add(v.a(aVar, cls));
             return this;
         }
 
         public final a b(c5.b bVar, Class cls) {
-            this.f51336c.add(v.a(bVar, cls));
+            this.f51904c.add(v.a(bVar, cls));
             return this;
         }
 
         public final a c(d5.d dVar, Class cls) {
-            this.f51335b.add(v.a(dVar, cls));
+            this.f51903b.add(v.a(dVar, cls));
             return this;
         }
 
         public final a d(k.a aVar) {
-            this.f51338e.add(aVar);
+            this.f51906e.add(aVar);
             return this;
         }
 
         public final b e() {
-            return new b(k5.c.a(this.f51334a), k5.c.a(this.f51335b), k5.c.a(this.f51336c), k5.c.a(this.f51337d), k5.c.a(this.f51338e), null);
+            return new b(k5.c.a(this.f51902a), k5.c.a(this.f51903b), k5.c.a(this.f51904c), k5.c.a(this.f51905d), k5.c.a(this.f51906e), null);
         }
 
         public final List f() {
-            return this.f51338e;
+            return this.f51906e;
         }
 
         public final List g() {
-            return this.f51337d;
+            return this.f51905d;
         }
 
         public a(b bVar) {
-            this.f51334a = CollectionsKt.j1(bVar.c());
-            this.f51335b = CollectionsKt.j1(bVar.e());
-            this.f51336c = CollectionsKt.j1(bVar.d());
-            this.f51337d = CollectionsKt.j1(bVar.b());
-            this.f51338e = CollectionsKt.j1(bVar.a());
+            this.f51902a = CollectionsKt.j1(bVar.c());
+            this.f51903b = CollectionsKt.j1(bVar.e());
+            this.f51904c = CollectionsKt.j1(bVar.d());
+            this.f51905d = CollectionsKt.j1(bVar.b());
+            this.f51906e = CollectionsKt.j1(bVar.a());
         }
     }
 

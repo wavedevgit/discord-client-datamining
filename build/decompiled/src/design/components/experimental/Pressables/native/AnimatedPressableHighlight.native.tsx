@@ -1,7 +1,7 @@
 // design/components/experimental/Pressables/native/AnimatedPressableHighlight.native.tsx
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun44520: for (var _fun44520_ip = 0;;) switch (_fun44520_ip) {
+    _fun44676: for (var _fun44676_ip = 0;;) switch (_fun44676_ip) {
         case 0:
             var4 = require;
             var6 = metroImportDefault;
@@ -50,8 +50,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var1 = var6.isAndroid;
             var1 = var1.bind(var6)();
             if (var1) {
-                _fun44520_ip = 198;
-                continue _fun44520
+                _fun44676_ip = 198;
+                continue _fun44676
             }
         case 191:
             var1 = function arg0() {
@@ -98,11 +98,11 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var2.bind(var3)(var1, var0);
                 return var0;
             };
-            _fun44520_ip = 203;
-            continue _fun44520;
+            _fun44676_ip = 203;
+            continue _fun44676;
         case 198:
             var1 = function arg0() {
-                _fun44521: for (var _fun44521_ip = 0;;) switch (_fun44521_ip) {
+                _fun44677: for (var _fun44677_ip = 0;;) switch (_fun44677_ip) {
                     case 0:
                         var3 = arg0;
                         var5 = var3.children;
@@ -138,15 +138,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var10 = var8 == var9;
                         var8 = undefined;
                         if (var10) {
-                            _fun44521_ip = 142;
-                            continue _fun44521
+                            _fun44677_ip = 142;
+                            continue _fun44677
                         }
                     case 136:
                         var8 = var9.cornerRadius;
                     case 142:
                         var2[1] = var8;
                         var1 = function() { // Environment: var1
-                            _fun44522: for (var _fun44522_ip = 0;;) switch (_fun44522_ip) {
+                            _fun44678: for (var _fun44678_ip = 0;;) switch (_fun44678_ip) {
                                 case 0:
                                     var0 = {};
                                     var2 = _closure2_slot1;
@@ -157,8 +157,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                     var4 = var1 == var3;
                                     var2 = undefined;
                                     if (var4) {
-                                        _fun44522_ip = 40;
-                                        continue _fun44522
+                                        _fun44678_ip = 40;
+                                        continue _fun44678
                                     }
                                 case 34:
                                     var2 = var3.cornerRadius;
@@ -166,8 +166,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                     var3 = var1 != var2;
                                     var1 = 12;
                                     if (!var3) {
-                                        _fun44522_ip = 53;
-                                        continue _fun44522
+                                        _fun44678_ip = 53;
+                                        continue _fun44678
                                     }
                                 case 50:
                                     var1 = var2;
@@ -200,4 +200,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2.AnimatedPressableHighlight = var1;
             return var0;
     }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 3717, 4880, 4882, 3153, 671, 478, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 3717, 4909, 4911, 3156, 671, 478, 2]);

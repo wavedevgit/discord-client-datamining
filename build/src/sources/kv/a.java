@@ -8,7 +8,7 @@ import kv.c;
 public final class a implements cv.b, c {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final a f35350a = new a();
+    public static final a f35918a = new a();
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* renamed from: kv.a$a  reason: collision with other inner class name */
@@ -16,7 +16,7 @@ public final class a implements cv.b, c {
     public static final class C0486a extends Lambda implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final C0486a f35351d = new C0486a();
+        public static final C0486a f35919d = new C0486a();
 
         C0486a() {
             super(2);
@@ -78,6 +78,6 @@ public final class a implements cv.b, c {
     @Override // cv.b
     /* renamed from: i */
     public Boolean f(Object obj, Object obj2) {
-        return Boolean.valueOf(!h(obj, C0486a.f35351d));
+        return Boolean.valueOf(!h(obj, C0486a.f35919d));
     }
 }

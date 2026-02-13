@@ -107,20 +107,20 @@ public final class k extends FrameLayout implements SubtitleView.a {
     }
 
     private static String d(le.b bVar) {
-        int i10 = bVar.f35721d;
+        int i10 = bVar.f36289d;
         if (i10 != 1) {
             if (i10 != 2) {
                 if (i10 != 3) {
                     if (i10 != 4) {
                         return "unset";
                     }
-                    return w0.D("-0.05em -0.05em 0.15em %s", com.google.android.exoplayer2.ui.b.b(bVar.f35722e));
+                    return w0.D("-0.05em -0.05em 0.15em %s", com.google.android.exoplayer2.ui.b.b(bVar.f36290e));
                 }
-                return w0.D("0.06em 0.08em 0.15em %s", com.google.android.exoplayer2.ui.b.b(bVar.f35722e));
+                return w0.D("0.06em 0.08em 0.15em %s", com.google.android.exoplayer2.ui.b.b(bVar.f36290e));
             }
-            return w0.D("0.1em 0.12em 0.15em %s", com.google.android.exoplayer2.ui.b.b(bVar.f35722e));
+            return w0.D("0.1em 0.12em 0.15em %s", com.google.android.exoplayer2.ui.b.b(bVar.f36290e));
         }
-        return w0.D("1px 1px 0 %1$s, 1px -1px 0 %1$s, -1px 1px 0 %1$s, -1px -1px 0 %1$s", com.google.android.exoplayer2.ui.b.b(bVar.f35722e));
+        return w0.D("1px 1px 0 %1$s, 1px -1px 0 %1$s, -1px 1px 0 %1$s, -1px -1px 0 %1$s", com.google.android.exoplayer2.ui.b.b(bVar.f36290e));
     }
 
     private String e(int i10, float f10) {
@@ -229,7 +229,7 @@ public final class k extends FrameLayout implements SubtitleView.a {
     public k(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
         this.f13976i = Collections.EMPTY_LIST;
-        this.f13977o = le.b.f35717g;
+        this.f13977o = le.b.f36285g;
         this.f13978p = 0.0533f;
         this.f13979q = 0;
         this.f13980r = 0.08f;

@@ -27,7 +27,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/premium/native/hooks/usePremiumProductPricingString.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0, arg1() {
-        _fun60541: for (var _fun60541_ip = 0;;) switch (_fun60541_ip) {
+        _fun75452: for (var _fun75452_ip = 0;;) switch (_fun75452_ip) {
             case 0:
                 var4 = _closure1_slot0;
                 var5 = _closure1_slot1;
@@ -63,24 +63,24 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = null;
                 var3 = var0 == var2;
                 if (var3) {
-                    _fun60541_ip = 127;
-                    continue _fun60541
+                    _fun75452_ip = 129;
+                    continue _fun75452
                 }
-            case 121:
+            case 123:
                 var1 = var2.priceString;
-            case 127:
+            case 129:
                 var2 = var0 != var1;
                 var0 = '$...';
                 if (!var2) {
-                    _fun60541_ip = 143;
-                    continue _fun60541
+                    _fun75452_ip = 145;
+                    continue _fun75452
                 }
-            case 140:
+            case 142:
                 var0 = var1;
-            case 143:
+            case 145:
                 return var0;
         }
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [4617, 3111, 4614, 566, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [4615, 3114, 4612, 566, 2]);

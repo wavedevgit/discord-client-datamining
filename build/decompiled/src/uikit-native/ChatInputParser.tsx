@@ -130,7 +130,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var4.bind(var5)(var3, var1);
                 var1 = var3.map;
                 var0 = function(arg0) { // Environment: var0
-                    _fun89334: for (var _fun89334_ip = 0;;) switch (_fun89334_ip) {
+                    _fun90534: for (var _fun90534_ip = 0;;) switch (_fun90534_ip) {
                         case 0:
                             var1 = arg0;
                             var0 = _closure4_slot0;
@@ -138,14 +138,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var2 = 'function';
                             var0 = typeof var0;
                             if (!(var2 !== var0)) {
-                                _fun89334_ip = 39;
-                                continue _fun89334
+                                _fun90534_ip = 39;
+                                continue _fun90534
                             }
                         case 27:
                             var0 = _closure4_slot0;
                             var3 = var0.deleteNodeOnBackspace;
-                            _fun89334_ip = 54;
-                            continue _fun89334;
+                            _fun90534_ip = 54;
+                            continue _fun90534;
                         case 39:
                             var4 = _closure4_slot0;
                             var0 = var4.deleteNodeOnBackspace;
@@ -155,14 +155,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var0 = var0.editDisabled;
                             var0 = typeof var0;
                             if (!(var2 !== var0)) {
-                                _fun89334_ip = 83;
-                                continue _fun89334
+                                _fun90534_ip = 83;
+                                continue _fun90534
                             }
                         case 71:
                             var0 = _closure4_slot0;
                             var2 = var0.editDisabled;
-                            _fun89334_ip = 98;
-                            continue _fun89334;
+                            _fun90534_ip = 98;
+                            continue _fun90534;
                         case 83:
                             var4 = _closure4_slot0;
                             var0 = var4.editDisabled;
@@ -177,8 +177,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var6 = var4 == var6;
                             var4 = undefined;
                             if (var6) {
-                                _fun89334_ip = 143;
-                                continue _fun89334
+                                _fun90534_ip = 143;
+                                continue _fun90534
                             }
                         case 129:
                             var6 = _closure4_slot0;
@@ -217,7 +217,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var7.bind(var8)(var6);
     var2.default = var5;
     var4 = function(arg0) { // Environment: var4
-        _fun89335: for (var _fun89335_ip = 0;;) switch (_fun89335_ip) {
+        _fun90535: for (var _fun90535_ip = 0;;) switch (_fun90535_ip) {
             case 0:
                 var2 = arg0;
                 var7 = var2.backgroundColor;
@@ -239,15 +239,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var4 != var7;
                 var2 = null;
                 if (!var0) {
-                    _fun89335_ip = 101;
-                    continue _fun89335
+                    _fun90535_ip = 101;
+                    continue _fun90535
                 }
             case 64:
                 var0 = var4 != var3;
                 var2 = null;
                 if (!var0) {
-                    _fun89335_ip = 101;
-                    continue _fun89335
+                    _fun90535_ip = 101;
+                    continue _fun90535
                 }
             case 73:
                 var0 = {};

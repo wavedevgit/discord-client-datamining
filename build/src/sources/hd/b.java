@@ -6,7 +6,7 @@ import md.h;
 public interface b {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final b f27106a = new a();
+    public static final b f27674a = new a();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     class a implements b {

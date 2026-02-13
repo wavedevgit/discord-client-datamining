@@ -1,52 +1,44 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun22968: for (var _fun22968_ip = 0;;) switch (_fun22968_ip) {
+    _fun22987: for (var _fun22987_ip = 0;;) switch (_fun22987_ip) {
         case 0:
             var1 = exports;
             var0 = global;
-            var5 = var0.Object;
-            var4 = var5.defineProperty;
+            var4 = var0.Object;
+            var3 = var4.defineProperty;
             var2 = {};
             var0 = true;
             var2.value = var0;
             var0 = '__esModule';
-            var0 = var4.bind(var5)(var1, var0, var2);
-            var0 = function arg0() {
-                var0 = _closure1_slot0;
-                var3 = var0.default;
-                var2 = undefined;
-                var1 = {};
-                var0 = arg0;
-                var0 = var3.bind(var2)(var1, var0);
-                return var0;
-            };
-            var1.default = var0;
-            var2 = arg6;
-            var0 = 0;
-            var4 = var2[var0];
-            var2 = arg1;
+            var0 = var3.bind(var4)(var1, var0, var2);
             var0 = undefined;
-            var5 = var2.bind(var0)(var4);
-            if (!var5) {
-                _fun22968_ip = 82;
-                continue _fun22968
+            var1.default = var0;
+            var3 = dependencyMap;
+            var2 = 0;
+            var3 = var3[var2];
+            var2 = require;
+            var4 = var2.bind(var0)(var3);
+            if (!var4) {
+                _fun22987_ip = 75;
+                continue _fun22987
             }
-        case 70:
-            var4 = var5.__esModule;
-            var2 = var5;
-            if (var4) {
-                _fun22968_ip = 91;
-                continue _fun22968
-            }
-        case 82:
-            var4 = {};
-            var4.default = var5;
+        case 63:
+            var3 = var4.__esModule;
             var2 = var4;
-        case 91:
-            var _closure1_slot0 = var2;
+            if (var3) {
+                _fun22987_ip = 84;
+                continue _fun22987
+            }
+        case 75:
+            var3 = {};
+            var3.default = var4;
+            var2 = var3;
+        case 84:
+            var2 = var2.default;
+            var1.default = var2;
             var2 = var1.default;
-            var1 = arg4;
+            var1 = module;
             var1.exports = var2;
             return var0;
     }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [2825]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1692]);

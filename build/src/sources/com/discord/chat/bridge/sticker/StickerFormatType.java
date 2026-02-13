@@ -60,7 +60,7 @@ public final class StickerFormatType {
         @Override // kotlinx.serialization.KSerializer, qt.o, kotlinx.serialization.DeserializationStrategy
         @NotNull
         public SerialDescriptor getDescriptor() {
-            return j.b("StickerFormatType", e.f.f48366a);
+            return j.b("StickerFormatType", e.f.f48934a);
         }
 
         @Override // kotlinx.serialization.DeserializationStrategy

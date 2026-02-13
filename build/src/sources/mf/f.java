@@ -8,27 +8,27 @@ import java.util.concurrent.Executor;
 public final class f {
 
     /* renamed from: a  reason: collision with root package name */
-    private final List f36447a;
+    private final List f37015a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Executor f36448b;
+    private final Executor f37016b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final List f36449a = new ArrayList();
+        private final List f37017a = new ArrayList();
 
         /* renamed from: b  reason: collision with root package name */
-        private Executor f36450b;
+        private Executor f37018b;
 
         public a a(ff.f fVar) {
-            this.f36449a.add(fVar);
+            this.f37017a.add(fVar);
             return this;
         }
 
         public f b() {
-            return new f(this.f36449a, null, this.f36450b, true, null);
+            return new f(this.f37017a, null, this.f37018b, true, null);
         }
     }
 
@@ -38,8 +38,8 @@ public final class f {
         if (executor != null) {
             q.m(aVar, "Listener must not be null when listener executor is set.");
         }
-        this.f36447a = list;
-        this.f36448b = executor;
+        this.f37015a = list;
+        this.f37016b = executor;
     }
 
     public static a d() {
@@ -47,7 +47,7 @@ public final class f {
     }
 
     public List a() {
-        return this.f36447a;
+        return this.f37015a;
     }
 
     public mf.a b() {
@@ -55,6 +55,6 @@ public final class f {
     }
 
     public Executor c() {
-        return this.f36448b;
+        return this.f37016b;
     }
 }

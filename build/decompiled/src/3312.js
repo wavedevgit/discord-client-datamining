@@ -5,28 +5,34 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = dependencyMap;
     var _closure1_slot1 = var1;
     var1 = function arg0() {
-        _fun28379: for (var _fun28379_ip = 0;;) switch (_fun28379_ip) {
+        _fun28440: for (var _fun28440_ip = 0;;) switch (_fun28440_ip) {
             case 0:
-                var2 = arg0;
-                var5 = 0;
+                var2 = _closure1_slot0;
+                var1 = _closure1_slot1;
                 var0 = 0;
-                if (!var2) {
-                    _fun28379_ip = 66;
-                    continue _fun28379
-                }
-            case 10:
-                var6 = _closure1_slot0;
-                var7 = _closure1_slot1;
-                var1 = var7[var5];
-                var4 = undefined;
-                var3 = var6.bind(var4)(var1);
+                var1 = var1[var0];
+                var3 = undefined;
+                var2 = var2.bind(var3)(var1);
+                var1 = arg0;
+                var3 = var2.bind(var3)(var1);
                 var1 = 1;
-                var1 = var7[var1];
-                var1 = var6.bind(var4)(var1);
-                var2 = var1.bind(var4)(var2);
-                var1 = 4294967295.0;
-                var0 = var3.bind(var4)(var2, var5, var1);
-            case 66:
+                var2 = var3 % var1;
+                var1 = var3 == var3;
+                if (!var1) {
+                    _fun28440_ip = 59;
+                    continue _fun28440
+                }
+            case 46:
+                var1 = var3;
+                if (!var2) {
+                    _fun28440_ip = 56;
+                    continue _fun28440
+                }
+            case 52:
+                var1 = var3 - var2;
+            case 56:
+                var0 = var1;
+            case 59:
                 return var0;
         }
     };
@@ -34,4 +40,4 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0.exports = var1;
     var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3313, 3309]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3313]);

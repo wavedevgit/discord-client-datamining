@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
     var0 = function arg0() {
-        _fun56521: for (var _fun56521_ip = 0;;) switch (_fun56521_ip) {
+        _fun56556: for (var _fun56556_ip = 0;;) switch (_fun56556_ip) {
             case 0:
                 var11 = arg0;
                 var1 = var11.hasFlag;
@@ -17,16 +17,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.EPHEMERAL;
                 var0 = var1.bind(var11)(var0);
                 if (!var0) {
-                    _fun56521_ip = 49;
-                    continue _fun56521
+                    _fun56556_ip = 49;
+                    continue _fun56556
                 }
             case 30:
                 var1 = var11.type;
                 var0 = _closure1_slot8;
                 var0 = var0.STAGE_RAISE_HAND;
                 if (!(var1 !== var0)) {
-                    _fun56521_ip = 53;
-                    continue _fun56521
+                    _fun56556_ip = 53;
+                    continue _fun56556
                 }
             case 49:
                 var0 = undefined;
@@ -115,7 +115,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/messages/native/renderer/system_messages/StageRaiseHandSystemMessage.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun56522: for (var _fun56522_ip = 0;;) switch (_fun56522_ip) {
+        _fun56557: for (var _fun56557_ip = 0;;) switch (_fun56557_ip) {
             case 0:
                 var3 = arg0;
                 var6 = var3.message;
@@ -173,16 +173,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var12 == var4;
                 var8 = undefined;
                 if (var0) {
-                    _fun56522_ip = 264;
-                    continue _fun56522
+                    _fun56557_ip = 264;
+                    continue _fun56557
                 }
             case 243:
                 var0 = var4.voiceState;
                 var14 = var12 == var0;
                 var8 = undefined;
                 if (var14) {
-                    _fun56522_ip = 264;
-                    continue _fun56522
+                    _fun56557_ip = 264;
+                    continue _fun56557
                 }
             case 258:
                 var8 = var0.requestToSpeakTimestamp;
@@ -190,8 +190,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var14 = var12 != var8;
                 var0 = 0;
                 if (!var14) {
-                    _fun56522_ip = 276;
-                    continue _fun56522
+                    _fun56557_ip = 276;
+                    continue _fun56557
                 }
             case 273:
                 var0 = var8;
@@ -210,15 +210,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.bind(var8)();
                 var0 = var7 === var0;
                 if (!var5) {
-                    _fun56522_ip = 367;
-                    continue _fun56522
+                    _fun56557_ip = 367;
+                    continue _fun56557
                 }
             case 316:
                 var8 = var12 == var4;
                 var7 = undefined;
                 if (var8) {
-                    _fun56522_ip = 331;
-                    continue _fun56522
+                    _fun56557_ip = 331;
+                    continue _fun56557
                 }
             case 325:
                 var7 = var4.rtsState;
@@ -233,8 +233,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var7 === var4;
             case 367:
                 if (!var5) {
-                    _fun56522_ip = 373;
-                    continue _fun56522
+                    _fun56557_ip = 373;
+                    continue _fun56557
                 }
             case 370:
                 var5 = var0;
@@ -267,21 +267,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var17 = 'username';
                 var15 = null;
                 if (!(var17 === var18)) {
-                    _fun56522_ip = 498;
-                    continue _fun56522
+                    _fun56557_ip = 499;
+                    continue _fun56557
                 }
-            case 495:
+            case 496:
                 var15 = var16;
-            case 498:
+            case 499:
                 var11.linkColor = var15;
                 var12 = null;
                 if (!var14) {
-                    _fun56522_ip = 511;
-                    continue _fun56522
+                    _fun56557_ip = 512;
+                    continue _fun56557
                 }
-            case 508:
+            case 509:
                 var12 = var13;
-            case 511:
+            case 512:
                 var11.roleColors = var12;
                 var12 = var6.channel_id;
                 var11.messageChannelId = var12;
@@ -318,4 +318,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.createStageRaiseHandSystemMessage = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [4251, 1372, 3093, 660, 1234, 1686, 6770, 21, 4244, 6771, 6772, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [4251, 1372, 3096, 660, 1235, 1689, 6752, 21, 4244, 6753, 6754, 2]);

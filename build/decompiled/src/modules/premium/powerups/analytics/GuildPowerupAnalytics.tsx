@@ -79,4 +79,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useLogPowerupModalOpened = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 660, 795, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 660, 796, 2]);

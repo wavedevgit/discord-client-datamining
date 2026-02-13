@@ -14,16 +14,16 @@ public final class m implements Comparator, Parcelable {
     public static final Parcelable.Creator<m> CREATOR = new a();
 
     /* renamed from: d  reason: collision with root package name */
-    private final b[] f48025d;
+    private final b[] f48593d;
 
     /* renamed from: e  reason: collision with root package name */
-    private int f48026e;
+    private int f48594e;
 
     /* renamed from: i  reason: collision with root package name */
-    public final String f48027i;
+    public final String f48595i;
 
     /* renamed from: o  reason: collision with root package name */
-    public final int f48028o;
+    public final int f48596o;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     class a implements Parcelable.Creator {
@@ -48,19 +48,19 @@ public final class m implements Comparator, Parcelable {
         public static final Parcelable.Creator<b> CREATOR = new a();
 
         /* renamed from: d  reason: collision with root package name */
-        private int f48029d;
+        private int f48597d;
 
         /* renamed from: e  reason: collision with root package name */
-        public final UUID f48030e;
+        public final UUID f48598e;
 
         /* renamed from: i  reason: collision with root package name */
-        public final String f48031i;
+        public final String f48599i;
 
         /* renamed from: o  reason: collision with root package name */
-        public final String f48032o;
+        public final String f48600o;
 
         /* renamed from: p  reason: collision with root package name */
-        public final byte[] f48033p;
+        public final byte[] f48601p;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
         class a implements Parcelable.Creator {
@@ -85,25 +85,25 @@ public final class m implements Comparator, Parcelable {
         }
 
         public boolean a(b bVar) {
-            if (c() && !bVar.c() && d(bVar.f48030e)) {
+            if (c() && !bVar.c() && d(bVar.f48598e)) {
                 return true;
             }
             return false;
         }
 
         public b b(byte[] bArr) {
-            return new b(this.f48030e, this.f48031i, this.f48032o, bArr);
+            return new b(this.f48598e, this.f48599i, this.f48600o, bArr);
         }
 
         public boolean c() {
-            if (this.f48033p != null) {
+            if (this.f48601p != null) {
                 return true;
             }
             return false;
         }
 
         public boolean d(UUID uuid) {
-            if (!mc.d.f36226a.equals(this.f48030e) && !uuid.equals(this.f48030e)) {
+            if (!mc.d.f36794a.equals(this.f48598e) && !uuid.equals(this.f48598e)) {
                 return false;
             }
             return true;
@@ -122,7 +122,7 @@ public final class m implements Comparator, Parcelable {
                 return true;
             }
             b bVar = (b) obj;
-            if (!w0.c(this.f48031i, bVar.f48031i) || !w0.c(this.f48032o, bVar.f48032o) || !w0.c(this.f48030e, bVar.f48030e) || !Arrays.equals(this.f48033p, bVar.f48033p)) {
+            if (!w0.c(this.f48599i, bVar.f48599i) || !w0.c(this.f48600o, bVar.f48600o) || !w0.c(this.f48598e, bVar.f48598e) || !Arrays.equals(this.f48601p, bVar.f48601p)) {
                 return false;
             }
             return true;
@@ -130,40 +130,40 @@ public final class m implements Comparator, Parcelable {
 
         public int hashCode() {
             int hashCode;
-            if (this.f48029d == 0) {
-                int hashCode2 = this.f48030e.hashCode() * 31;
-                String str = this.f48031i;
+            if (this.f48597d == 0) {
+                int hashCode2 = this.f48598e.hashCode() * 31;
+                String str = this.f48599i;
                 if (str == null) {
                     hashCode = 0;
                 } else {
                     hashCode = str.hashCode();
                 }
-                this.f48029d = ((((hashCode2 + hashCode) * 31) + this.f48032o.hashCode()) * 31) + Arrays.hashCode(this.f48033p);
+                this.f48597d = ((((hashCode2 + hashCode) * 31) + this.f48600o.hashCode()) * 31) + Arrays.hashCode(this.f48601p);
             }
-            return this.f48029d;
+            return this.f48597d;
         }
 
         @Override // android.os.Parcelable
         public void writeToParcel(Parcel parcel, int i10) {
-            parcel.writeLong(this.f48030e.getMostSignificantBits());
-            parcel.writeLong(this.f48030e.getLeastSignificantBits());
-            parcel.writeString(this.f48031i);
-            parcel.writeString(this.f48032o);
-            parcel.writeByteArray(this.f48033p);
+            parcel.writeLong(this.f48598e.getMostSignificantBits());
+            parcel.writeLong(this.f48598e.getLeastSignificantBits());
+            parcel.writeString(this.f48599i);
+            parcel.writeString(this.f48600o);
+            parcel.writeByteArray(this.f48601p);
         }
 
         public b(UUID uuid, String str, String str2, byte[] bArr) {
-            this.f48030e = (UUID) oe.a.e(uuid);
-            this.f48031i = str;
-            this.f48032o = (String) oe.a.e(str2);
-            this.f48033p = bArr;
+            this.f48598e = (UUID) oe.a.e(uuid);
+            this.f48599i = str;
+            this.f48600o = (String) oe.a.e(str2);
+            this.f48601p = bArr;
         }
 
         b(Parcel parcel) {
-            this.f48030e = new UUID(parcel.readLong(), parcel.readLong());
-            this.f48031i = parcel.readString();
-            this.f48032o = (String) w0.j(parcel.readString());
-            this.f48033p = parcel.createByteArray();
+            this.f48598e = new UUID(parcel.readLong(), parcel.readLong());
+            this.f48599i = parcel.readString();
+            this.f48600o = (String) w0.j(parcel.readString());
+            this.f48601p = parcel.createByteArray();
         }
     }
 
@@ -173,7 +173,7 @@ public final class m implements Comparator, Parcelable {
 
     private static boolean b(ArrayList arrayList, int i10, UUID uuid) {
         for (int i11 = 0; i11 < i10; i11++) {
-            if (((b) arrayList.get(i11)).f48030e.equals(uuid)) {
+            if (((b) arrayList.get(i11)).f48598e.equals(uuid)) {
                 return true;
             }
         }
@@ -186,8 +186,8 @@ public final class m implements Comparator, Parcelable {
         b[] bVarArr2;
         ArrayList arrayList = new ArrayList();
         if (mVar != null) {
-            str = mVar.f48027i;
-            for (b bVar : mVar.f48025d) {
+            str = mVar.f48595i;
+            for (b bVar : mVar.f48593d) {
                 if (bVar.c()) {
                     arrayList.add(bVar);
                 }
@@ -197,11 +197,11 @@ public final class m implements Comparator, Parcelable {
         }
         if (mVar2 != null) {
             if (str == null) {
-                str = mVar2.f48027i;
+                str = mVar2.f48595i;
             }
             int size = arrayList.size();
-            for (b bVar2 : mVar2.f48025d) {
-                if (bVar2.c() && !b(arrayList, size, bVar2.f48030e)) {
+            for (b bVar2 : mVar2.f48593d) {
+                if (bVar2.c() && !b(arrayList, size, bVar2.f48598e)) {
                     arrayList.add(bVar2);
                 }
             }
@@ -215,21 +215,21 @@ public final class m implements Comparator, Parcelable {
     @Override // java.util.Comparator
     /* renamed from: a */
     public int compare(b bVar, b bVar2) {
-        UUID uuid = mc.d.f36226a;
-        if (uuid.equals(bVar.f48030e)) {
-            if (uuid.equals(bVar2.f48030e)) {
+        UUID uuid = mc.d.f36794a;
+        if (uuid.equals(bVar.f48598e)) {
+            if (uuid.equals(bVar2.f48598e)) {
                 return 0;
             }
             return 1;
         }
-        return bVar.f48030e.compareTo(bVar2.f48030e);
+        return bVar.f48598e.compareTo(bVar2.f48598e);
     }
 
     public m c(String str) {
-        if (w0.c(this.f48027i, str)) {
+        if (w0.c(this.f48595i, str)) {
             return this;
         }
-        return new m(str, false, this.f48025d);
+        return new m(str, false, this.f48593d);
     }
 
     @Override // android.os.Parcelable
@@ -244,7 +244,7 @@ public final class m implements Comparator, Parcelable {
         }
         if (obj != null && m.class == obj.getClass()) {
             m mVar = (m) obj;
-            if (w0.c(this.f48027i, mVar.f48027i) && Arrays.equals(this.f48025d, mVar.f48025d)) {
+            if (w0.c(this.f48595i, mVar.f48595i) && Arrays.equals(this.f48593d, mVar.f48593d)) {
                 return true;
             }
         }
@@ -253,43 +253,43 @@ public final class m implements Comparator, Parcelable {
 
     public int hashCode() {
         int hashCode;
-        if (this.f48026e == 0) {
-            String str = this.f48027i;
+        if (this.f48594e == 0) {
+            String str = this.f48595i;
             if (str == null) {
                 hashCode = 0;
             } else {
                 hashCode = str.hashCode();
             }
-            this.f48026e = (hashCode * 31) + Arrays.hashCode(this.f48025d);
+            this.f48594e = (hashCode * 31) + Arrays.hashCode(this.f48593d);
         }
-        return this.f48026e;
+        return this.f48594e;
     }
 
     public b o(int i10) {
-        return this.f48025d[i10];
+        return this.f48593d[i10];
     }
 
     public m p(m mVar) {
         boolean z10;
         String str;
-        String str2 = this.f48027i;
-        if (str2 != null && (str = mVar.f48027i) != null && !TextUtils.equals(str2, str)) {
+        String str2 = this.f48595i;
+        if (str2 != null && (str = mVar.f48595i) != null && !TextUtils.equals(str2, str)) {
             z10 = false;
         } else {
             z10 = true;
         }
         oe.a.g(z10);
-        String str3 = this.f48027i;
+        String str3 = this.f48595i;
         if (str3 == null) {
-            str3 = mVar.f48027i;
+            str3 = mVar.f48595i;
         }
-        return new m(str3, (b[]) w0.O0(this.f48025d, mVar.f48025d));
+        return new m(str3, (b[]) w0.O0(this.f48593d, mVar.f48593d));
     }
 
     @Override // android.os.Parcelable
     public void writeToParcel(Parcel parcel, int i10) {
-        parcel.writeString(this.f48027i);
-        parcel.writeTypedArray(this.f48025d, 0);
+        parcel.writeString(this.f48595i);
+        parcel.writeTypedArray(this.f48593d, 0);
     }
 
     public m(String str, List list) {
@@ -305,17 +305,17 @@ public final class m implements Comparator, Parcelable {
     }
 
     private m(String str, boolean z10, b... bVarArr) {
-        this.f48027i = str;
+        this.f48595i = str;
         bVarArr = z10 ? (b[]) bVarArr.clone() : bVarArr;
-        this.f48025d = bVarArr;
-        this.f48028o = bVarArr.length;
+        this.f48593d = bVarArr;
+        this.f48596o = bVarArr.length;
         Arrays.sort(bVarArr, this);
     }
 
     m(Parcel parcel) {
-        this.f48027i = parcel.readString();
+        this.f48595i = parcel.readString();
         b[] bVarArr = (b[]) w0.j((b[]) parcel.createTypedArray(b.CREATOR));
-        this.f48025d = bVarArr;
-        this.f48028o = bVarArr.length;
+        this.f48593d = bVarArr;
+        this.f48596o = bVarArr.length;
     }
 }

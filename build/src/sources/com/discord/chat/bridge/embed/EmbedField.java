@@ -62,10 +62,10 @@ public final class EmbedField {
 
     public static final /* synthetic */ void write$Self$chat_release(EmbedField embedField, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
         if (compositeEncoder.z(serialDescriptor, 0) || embedField.rawName != null) {
-            compositeEncoder.o(serialDescriptor, 0, n2.f50033a, embedField.rawName);
+            compositeEncoder.o(serialDescriptor, 0, n2.f50601a, embedField.rawName);
         }
         if (compositeEncoder.z(serialDescriptor, 1) || embedField.rawValue != null) {
-            compositeEncoder.o(serialDescriptor, 1, n2.f50033a, embedField.rawValue);
+            compositeEncoder.o(serialDescriptor, 1, n2.f50601a, embedField.rawValue);
         }
         if (compositeEncoder.z(serialDescriptor, 2) || embedField.name != null) {
             compositeEncoder.o(serialDescriptor, 2, StructurableTextSerializer.INSTANCE, embedField.name);

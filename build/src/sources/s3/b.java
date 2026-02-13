@@ -5,14 +5,14 @@ import x3.g;
 public abstract class b {
 
     /* renamed from: a  reason: collision with root package name */
-    public final int f47825a;
+    public final int f48393a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final int f47826b;
+    public final int f48394b;
 
     public b(int i10, int i11) {
-        this.f47825a = i10;
-        this.f47826b = i11;
+        this.f48393a = i10;
+        this.f48394b = i11;
     }
 
     public abstract void a(g gVar);

@@ -17,8 +17,8 @@ public final class R {
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class color {
-        public static int catalyst_logbox_background = 0x7f0600e8;
-        public static int catalyst_redbox_background = 0x7f0600e9;
+        public static int catalyst_logbox_background = 0x7f060119;
+        public static int catalyst_redbox_background = 0x7f06011a;
 
         private color() {
         }
@@ -27,10 +27,10 @@ public final class R {
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class drawable {
         public static int ic_resume = 0x7f0802ac;
-        public static int paused_in_debugger_background = 0x7f0806e6;
-        public static int paused_in_debugger_dialog_background = 0x7f0806e7;
-        public static int redbox_top_border_background = 0x7f080735;
-        public static int ripple_effect = 0x7f080736;
+        public static int paused_in_debugger_background = 0x7f0806e2;
+        public static int paused_in_debugger_dialog_background = 0x7f0806e3;
+        public static int redbox_top_border_background = 0x7f080731;
+        public static int ripple_effect = 0x7f080732;
 
         private drawable() {
         }

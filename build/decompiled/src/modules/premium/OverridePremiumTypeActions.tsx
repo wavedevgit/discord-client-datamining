@@ -27,7 +27,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/premium/OverridePremiumTypeActions.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function(arg0, arg1) { // Environment: var1
-        _fun86413: for (var _fun86413_ip = 0;;) switch (_fun86413_ip) {
+        _fun87327: for (var _fun87327_ip = 0;;) switch (_fun87327_ip) {
             case 0:
                 var4 = arg1;
                 var5 = _closure1_slot0;
@@ -45,8 +45,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var5.bind(var6)(var2);
                 var2 = null;
                 if (!(var2 == var4)) {
-                    _fun86413_ip = 77;
-                    continue _fun86413
+                    _fun87327_ip = 77;
+                    continue _fun87327
                 }
             case 64:
                 var6 = _closure1_slot2;
@@ -54,8 +54,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var5.bind(var6)();
             case 77:
                 if (!(var2 != var4)) {
-                    _fun86413_ip = 124;
-                    continue _fun86413
+                    _fun87327_ip = 124;
+                    continue _fun87327
                 }
             case 81:
                 var2 = _closure1_slot0;
@@ -91,4 +91,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.updateClientCreatedAtOverride = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1621, 806, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1621, 807, 2]);

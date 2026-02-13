@@ -6,11 +6,11 @@ public final class e implements lr.d {
     private static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final e f31278a = new e();
+        static final e f31846a = new e();
     }
 
     public static e a() {
-        return a.f31278a;
+        return a.f31846a;
     }
 
     public static d c() {

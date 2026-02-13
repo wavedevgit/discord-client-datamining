@@ -14,17 +14,17 @@ public final class n1 extends g2 implements kotlin.reflect.h {
     public static final class a extends j2.d implements h.a {
 
         /* renamed from: u  reason: collision with root package name */
-        private final n1 f51108u;
+        private final n1 f51676u;
 
         public a(n1 property) {
             Intrinsics.checkNotNullParameter(property, "property");
-            this.f51108u = property;
+            this.f51676u = property;
         }
 
         @Override // kotlin.reflect.KProperty.a
         /* renamed from: P */
         public n1 a() {
-            return this.f51108u;
+            return this.f51676u;
         }
 
         public void Q(Object obj, Object obj2, Object obj3) {
@@ -34,7 +34,7 @@ public final class n1 extends g2 implements kotlin.reflect.h {
         @Override // kotlin.jvm.functions.Function3
         public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2, Object obj3) {
             Q(obj, obj2, obj3);
-            return Unit.f31988a;
+            return Unit.f32556a;
         }
     }
 

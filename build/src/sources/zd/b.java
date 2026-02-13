@@ -27,7 +27,7 @@ import zd.a;
 public class b implements k.a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final XmlPullParserFactory f56387a;
+    private final XmlPullParserFactory f56955a;
 
     /* renamed from: zd.b$b  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
@@ -42,13 +42,13 @@ public class b implements k.a {
     public static class c extends a {
 
         /* renamed from: e  reason: collision with root package name */
-        private boolean f56392e;
+        private boolean f56960e;
 
         /* renamed from: f  reason: collision with root package name */
-        private UUID f56393f;
+        private UUID f56961f;
 
         /* renamed from: g  reason: collision with root package name */
-        private byte[] f56394g;
+        private byte[] f56962g;
 
         public c(a aVar, String str) {
             super(aVar, str, "Protection");
@@ -87,8 +87,8 @@ public class b implements k.a {
 
         @Override // zd.b.a
         public Object b() {
-            UUID uuid = this.f56393f;
-            return new a.C0799a(uuid, l.a(uuid, this.f56394g), q(this.f56394g));
+            UUID uuid = this.f56961f;
+            return new a.C0799a(uuid, l.a(uuid, this.f56962g), q(this.f56962g));
         }
 
         @Override // zd.b.a
@@ -99,22 +99,22 @@ public class b implements k.a {
         @Override // zd.b.a
         public void h(XmlPullParser xmlPullParser) {
             if ("ProtectionHeader".equals(xmlPullParser.getName())) {
-                this.f56392e = false;
+                this.f56960e = false;
             }
         }
 
         @Override // zd.b.a
         public void n(XmlPullParser xmlPullParser) {
             if ("ProtectionHeader".equals(xmlPullParser.getName())) {
-                this.f56392e = true;
-                this.f56393f = UUID.fromString(s(xmlPullParser.getAttributeValue(null, "SystemID")));
+                this.f56960e = true;
+                this.f56961f = UUID.fromString(s(xmlPullParser.getAttributeValue(null, "SystemID")));
             }
         }
 
         @Override // zd.b.a
         public void o(XmlPullParser xmlPullParser) {
-            if (this.f56392e) {
-                this.f56394g = Base64.decode(xmlPullParser.getText(), 0);
+            if (this.f56960e) {
+                this.f56962g = Base64.decode(xmlPullParser.getText(), 0);
             }
         }
     }
@@ -124,7 +124,7 @@ public class b implements k.a {
     public static class d extends a {
 
         /* renamed from: e  reason: collision with root package name */
-        private Format f56395e;
+        private Format f56963e;
 
         public d(a aVar, String str) {
             super(aVar, str, "QualityLevel");
@@ -177,7 +177,7 @@ public class b implements k.a {
 
         @Override // zd.b.a
         public Object b() {
-            return this.f56395e;
+            return this.f56963e;
         }
 
         @Override // zd.b.a
@@ -216,7 +216,7 @@ public class b implements k.a {
             } else {
                 bVar.M("application/mp4");
             }
-            this.f56395e = bVar.U(xmlPullParser.getAttributeValue(null, "Index")).W((String) c("Name")).g0(r10).I(k(xmlPullParser, "Bitrate")).X((String) c("Language")).G();
+            this.f56963e = bVar.U(xmlPullParser.getAttributeValue(null, "Index")).W((String) c("Name")).g0(r10).I(k(xmlPullParser, "Bitrate")).X((String) c("Language")).G();
         }
     }
 
@@ -225,87 +225,87 @@ public class b implements k.a {
     public static class e extends a {
 
         /* renamed from: e  reason: collision with root package name */
-        private final List f56396e;
+        private final List f56964e;
 
         /* renamed from: f  reason: collision with root package name */
-        private int f56397f;
+        private int f56965f;
 
         /* renamed from: g  reason: collision with root package name */
-        private int f56398g;
+        private int f56966g;
 
         /* renamed from: h  reason: collision with root package name */
-        private long f56399h;
+        private long f56967h;
 
         /* renamed from: i  reason: collision with root package name */
-        private long f56400i;
+        private long f56968i;
 
         /* renamed from: j  reason: collision with root package name */
-        private long f56401j;
+        private long f56969j;
 
         /* renamed from: k  reason: collision with root package name */
-        private int f56402k;
+        private int f56970k;
 
         /* renamed from: l  reason: collision with root package name */
-        private boolean f56403l;
+        private boolean f56971l;
 
         /* renamed from: m  reason: collision with root package name */
-        private a.C0799a f56404m;
+        private a.C0799a f56972m;
 
         public e(a aVar, String str) {
             super(aVar, str, "SmoothStreamingMedia");
-            this.f56402k = -1;
-            this.f56404m = null;
-            this.f56396e = new LinkedList();
+            this.f56970k = -1;
+            this.f56972m = null;
+            this.f56964e = new LinkedList();
         }
 
         @Override // zd.b.a
         public void a(Object obj) {
             boolean z10;
             if (obj instanceof a.b) {
-                this.f56396e.add((a.b) obj);
+                this.f56964e.add((a.b) obj);
             } else if (obj instanceof a.C0799a) {
-                if (this.f56404m == null) {
+                if (this.f56972m == null) {
                     z10 = true;
                 } else {
                     z10 = false;
                 }
                 oe.a.g(z10);
-                this.f56404m = (a.C0799a) obj;
+                this.f56972m = (a.C0799a) obj;
             }
         }
 
         @Override // zd.b.a
         public Object b() {
-            int size = this.f56396e.size();
+            int size = this.f56964e.size();
             a.b[] bVarArr = new a.b[size];
-            this.f56396e.toArray(bVarArr);
-            if (this.f56404m != null) {
-                a.C0799a c0799a = this.f56404m;
-                m mVar = new m(new m.b(c0799a.f56368a, "video/mp4", c0799a.f56369b));
+            this.f56964e.toArray(bVarArr);
+            if (this.f56972m != null) {
+                a.C0799a c0799a = this.f56972m;
+                m mVar = new m(new m.b(c0799a.f56936a, "video/mp4", c0799a.f56937b));
                 for (int i10 = 0; i10 < size; i10++) {
                     a.b bVar = bVarArr[i10];
-                    int i11 = bVar.f56371a;
+                    int i11 = bVar.f56939a;
                     if (i11 == 2 || i11 == 1) {
-                        Format[] formatArr = bVar.f56380j;
+                        Format[] formatArr = bVar.f56948j;
                         for (int i12 = 0; i12 < formatArr.length; i12++) {
                             formatArr[i12] = formatArr[i12].b().O(mVar).G();
                         }
                     }
                 }
             }
-            return new zd.a(this.f56397f, this.f56398g, this.f56399h, this.f56400i, this.f56401j, this.f56402k, this.f56403l, this.f56404m, bVarArr);
+            return new zd.a(this.f56965f, this.f56966g, this.f56967h, this.f56968i, this.f56969j, this.f56970k, this.f56971l, this.f56972m, bVarArr);
         }
 
         @Override // zd.b.a
         public void n(XmlPullParser xmlPullParser) {
-            this.f56397f = k(xmlPullParser, "MajorVersion");
-            this.f56398g = k(xmlPullParser, "MinorVersion");
-            this.f56399h = j(xmlPullParser, "TimeScale", 10000000L);
-            this.f56400i = l(xmlPullParser, "Duration");
-            this.f56401j = j(xmlPullParser, "DVRWindowLength", 0L);
-            this.f56402k = i(xmlPullParser, "LookaheadCount", -1);
-            this.f56403l = g(xmlPullParser, "IsLive", false);
-            p("TimeScale", Long.valueOf(this.f56399h));
+            this.f56965f = k(xmlPullParser, "MajorVersion");
+            this.f56966g = k(xmlPullParser, "MinorVersion");
+            this.f56967h = j(xmlPullParser, "TimeScale", 10000000L);
+            this.f56968i = l(xmlPullParser, "Duration");
+            this.f56969j = j(xmlPullParser, "DVRWindowLength", 0L);
+            this.f56970k = i(xmlPullParser, "LookaheadCount", -1);
+            this.f56971l = g(xmlPullParser, "IsLive", false);
+            p("TimeScale", Long.valueOf(this.f56967h));
         }
     }
 
@@ -314,105 +314,105 @@ public class b implements k.a {
     public static class f extends a {
 
         /* renamed from: e  reason: collision with root package name */
-        private final String f56405e;
+        private final String f56973e;
 
         /* renamed from: f  reason: collision with root package name */
-        private final List f56406f;
+        private final List f56974f;
 
         /* renamed from: g  reason: collision with root package name */
-        private int f56407g;
+        private int f56975g;
 
         /* renamed from: h  reason: collision with root package name */
-        private String f56408h;
+        private String f56976h;
 
         /* renamed from: i  reason: collision with root package name */
-        private long f56409i;
+        private long f56977i;
 
         /* renamed from: j  reason: collision with root package name */
-        private String f56410j;
+        private String f56978j;
 
         /* renamed from: k  reason: collision with root package name */
-        private String f56411k;
+        private String f56979k;
 
         /* renamed from: l  reason: collision with root package name */
-        private int f56412l;
+        private int f56980l;
 
         /* renamed from: m  reason: collision with root package name */
-        private int f56413m;
+        private int f56981m;
 
         /* renamed from: n  reason: collision with root package name */
-        private int f56414n;
+        private int f56982n;
 
         /* renamed from: o  reason: collision with root package name */
-        private int f56415o;
+        private int f56983o;
 
         /* renamed from: p  reason: collision with root package name */
-        private String f56416p;
+        private String f56984p;
 
         /* renamed from: q  reason: collision with root package name */
-        private ArrayList f56417q;
+        private ArrayList f56985q;
 
         /* renamed from: r  reason: collision with root package name */
-        private long f56418r;
+        private long f56986r;
 
         public f(a aVar, String str) {
             super(aVar, str, "StreamIndex");
-            this.f56405e = str;
-            this.f56406f = new LinkedList();
+            this.f56973e = str;
+            this.f56974f = new LinkedList();
         }
 
         private void q(XmlPullParser xmlPullParser) {
             int s10 = s(xmlPullParser);
-            this.f56407g = s10;
+            this.f56975g = s10;
             p("Type", Integer.valueOf(s10));
-            if (this.f56407g == 3) {
-                this.f56408h = m(xmlPullParser, "Subtype");
+            if (this.f56975g == 3) {
+                this.f56976h = m(xmlPullParser, "Subtype");
             } else {
-                this.f56408h = xmlPullParser.getAttributeValue(null, "Subtype");
+                this.f56976h = xmlPullParser.getAttributeValue(null, "Subtype");
             }
-            p("Subtype", this.f56408h);
+            p("Subtype", this.f56976h);
             String attributeValue = xmlPullParser.getAttributeValue(null, "Name");
-            this.f56410j = attributeValue;
+            this.f56978j = attributeValue;
             p("Name", attributeValue);
-            this.f56411k = m(xmlPullParser, "Url");
-            this.f56412l = i(xmlPullParser, "MaxWidth", -1);
-            this.f56413m = i(xmlPullParser, "MaxHeight", -1);
-            this.f56414n = i(xmlPullParser, "DisplayWidth", -1);
-            this.f56415o = i(xmlPullParser, "DisplayHeight", -1);
+            this.f56979k = m(xmlPullParser, "Url");
+            this.f56980l = i(xmlPullParser, "MaxWidth", -1);
+            this.f56981m = i(xmlPullParser, "MaxHeight", -1);
+            this.f56982n = i(xmlPullParser, "DisplayWidth", -1);
+            this.f56983o = i(xmlPullParser, "DisplayHeight", -1);
             String attributeValue2 = xmlPullParser.getAttributeValue(null, "Language");
-            this.f56416p = attributeValue2;
+            this.f56984p = attributeValue2;
             p("Language", attributeValue2);
             long i10 = i(xmlPullParser, "TimeScale", -1);
-            this.f56409i = i10;
+            this.f56977i = i10;
             if (i10 == -1) {
-                this.f56409i = ((Long) c("TimeScale")).longValue();
+                this.f56977i = ((Long) c("TimeScale")).longValue();
             }
-            this.f56417q = new ArrayList();
+            this.f56985q = new ArrayList();
         }
 
         private void r(XmlPullParser xmlPullParser) {
-            int size = this.f56417q.size();
+            int size = this.f56985q.size();
             long j10 = j(xmlPullParser, "t", -9223372036854775807L);
             int i10 = 1;
             if (j10 == -9223372036854775807L) {
                 if (size == 0) {
                     j10 = 0;
-                } else if (this.f56418r != -1) {
-                    j10 = this.f56418r + ((Long) this.f56417q.get(size - 1)).longValue();
+                } else if (this.f56986r != -1) {
+                    j10 = this.f56986r + ((Long) this.f56985q.get(size - 1)).longValue();
                 } else {
                     throw l0.c("Unable to infer start time", null);
                 }
             }
-            this.f56417q.add(Long.valueOf(j10));
-            this.f56418r = j(xmlPullParser, "d", -9223372036854775807L);
+            this.f56985q.add(Long.valueOf(j10));
+            this.f56986r = j(xmlPullParser, "d", -9223372036854775807L);
             long j11 = j(xmlPullParser, "r", 1L);
-            if (j11 > 1 && this.f56418r == -9223372036854775807L) {
+            if (j11 > 1 && this.f56986r == -9223372036854775807L) {
                 throw l0.c("Repeated chunk with unspecified duration", null);
             }
             while (true) {
                 long j12 = i10;
                 if (j12 < j11) {
-                    this.f56417q.add(Long.valueOf((this.f56418r * j12) + j10));
+                    this.f56985q.add(Long.valueOf((this.f56986r * j12) + j10));
                     i10++;
                 } else {
                     return;
@@ -440,15 +440,15 @@ public class b implements k.a {
         @Override // zd.b.a
         public void a(Object obj) {
             if (obj instanceof Format) {
-                this.f56406f.add((Format) obj);
+                this.f56974f.add((Format) obj);
             }
         }
 
         @Override // zd.b.a
         public Object b() {
-            Format[] formatArr = new Format[this.f56406f.size()];
-            this.f56406f.toArray(formatArr);
-            return new a.b(this.f56405e, this.f56411k, this.f56407g, this.f56408h, this.f56409i, this.f56410j, this.f56412l, this.f56413m, this.f56414n, this.f56415o, this.f56416p, formatArr, this.f56417q, this.f56418r);
+            Format[] formatArr = new Format[this.f56974f.size()];
+            this.f56974f.toArray(formatArr);
+            return new a.b(this.f56973e, this.f56979k, this.f56975g, this.f56976h, this.f56977i, this.f56978j, this.f56980l, this.f56981m, this.f56982n, this.f56983o, this.f56984p, formatArr, this.f56985q, this.f56986r);
         }
 
         @Override // zd.b.a
@@ -468,7 +468,7 @@ public class b implements k.a {
 
     public b() {
         try {
-            this.f56387a = XmlPullParserFactory.newInstance();
+            this.f56955a = XmlPullParserFactory.newInstance();
         } catch (XmlPullParserException e10) {
             throw new RuntimeException("Couldn't create XmlPullParserFactory instance", e10);
         }
@@ -478,7 +478,7 @@ public class b implements k.a {
     /* renamed from: b */
     public zd.a a(Uri uri, InputStream inputStream) {
         try {
-            XmlPullParser newPullParser = this.f56387a.newPullParser();
+            XmlPullParser newPullParser = this.f56955a.newPullParser();
             newPullParser.setInput(inputStream, null);
             return (zd.a) new e(null, uri.toString()).f(newPullParser);
         } catch (XmlPullParserException e10) {
@@ -491,21 +491,21 @@ public class b implements k.a {
     public static abstract class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final String f56388a;
+        private final String f56956a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final String f56389b;
+        private final String f56957b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final a f56390c;
+        private final a f56958c;
 
         /* renamed from: d  reason: collision with root package name */
-        private final List f56391d = new LinkedList();
+        private final List f56959d = new LinkedList();
 
         public a(a aVar, String str, String str2) {
-            this.f56390c = aVar;
-            this.f56388a = str;
-            this.f56389b = str2;
+            this.f56958c = aVar;
+            this.f56956a = str;
+            this.f56957b = str2;
         }
 
         private a e(a aVar, String str, String str2) {
@@ -524,13 +524,13 @@ public class b implements k.a {
         protected abstract Object b();
 
         protected final Object c(String str) {
-            for (int i10 = 0; i10 < this.f56391d.size(); i10++) {
-                Pair pair = (Pair) this.f56391d.get(i10);
+            for (int i10 = 0; i10 < this.f56959d.size(); i10++) {
+                Pair pair = (Pair) this.f56959d.get(i10);
                 if (((String) pair.first).equals(str)) {
                     return pair.second;
                 }
             }
-            a aVar = this.f56390c;
+            a aVar = this.f56958c;
             if (aVar == null) {
                 return null;
             }
@@ -565,7 +565,7 @@ public class b implements k.a {
                         }
                     } else {
                         String name2 = xmlPullParser.getName();
-                        if (this.f56389b.equals(name2)) {
+                        if (this.f56957b.equals(name2)) {
                             n(xmlPullParser);
                             z10 = true;
                         } else if (z10) {
@@ -574,7 +574,7 @@ public class b implements k.a {
                             } else if (d(name2)) {
                                 n(xmlPullParser);
                             } else {
-                                a e10 = e(this, name2, this.f56388a);
+                                a e10 = e(this, name2, this.f56956a);
                                 if (e10 == null) {
                                     i10 = 1;
                                 } else {
@@ -657,7 +657,7 @@ public class b implements k.a {
         protected abstract void n(XmlPullParser xmlPullParser);
 
         protected final void p(String str, Object obj) {
-            this.f56391d.add(Pair.create(str, obj));
+            this.f56959d.add(Pair.create(str, obj));
         }
 
         protected void a(Object obj) {

@@ -13,158 +13,149 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.value = var2;
     var2 = '__esModule';
     var2 = var4.bind(var5)(var1, var2, var3);
-    var2 = function arg0() {
-        _fun12333: for (var _fun12333_ip = 0;;) switch (_fun12333_ip) {
-            case 0:
-                var4 = arg0;
-                var0 = undefined;
-                if (var4) {
-                    _fun12333_ip = 10;
-                    continue _fun12333
-                }
-            case 8:
-                return var0;
-            case 10:
-                var2 = global;
-                var3 = var2.parseInt;
-                var1 = 10;
-                var1 = var3.bind(var0)(var4, var1);
-                var2 = var2.isNaN;
-                var2 = var2.bind(var0)(var1);
-                var0 = undefined;
-                if (var2) {
-                    _fun12333_ip = 46;
-                    continue _fun12333
-                }
-            case 43:
-                var0 = var1;
-            case 46:
-                return var0;
-        }
-    };
-    var1.parseContentLengthHeader = var2;
-    var0 = function arg0() {
-        _fun12334: for (var _fun12334_ip = 0;;) switch (_fun12334_ip) {
+    var0 = function arg0, arg1() {
+        _fun12336: for (var _fun12336_ip = 0;;) switch (_fun12336_ip) {
             case 0:
                 var1 = arg0;
-                var0 = var1;
-                if (!var1) {
-                    _fun12334_ip = 299;
-                    continue _fun12334
+                var0 = arg1;
+                var3 = var1.category;
+                var2 = 'xhr';
+                if (!(var2 === var3)) {
+                    _fun12336_ip = 376;
+                    continue _fun12336
                 }
-            case 12: // try_start_0
-                var1 = var0;
-                var2 = 'string';
-                var1 = typeof var1;
-                if (!(var2 !== var1)) {
-                    _fun12334_ip = 255;
-                    continue _fun12334
+            case 23:
+                if (!var0) {
+                    _fun12336_ip = 376;
+                    continue _fun12336
                 }
             case 29:
-                var3 = var0;
-                var1 = global;
-                var2 = var1.URLSearchParams;
-                var2 = var3 instanceof var2;
-                if (var2) {
-                    _fun12334_ip = 201;
-                    continue _fun12334
+                var2 = var0.xhr;
+                if (!var2) {
+                    _fun12336_ip = 376;
+                    continue _fun12336
                 }
-            case 50:
-                var3 = var0;
-                var2 = var1.FormData;
-                var2 = var3 instanceof var2;
-                var3 = var0;
-                if (var2) {
-                    _fun12334_ip = 121;
-                    continue _fun12334
+            case 41:
+                var4 = global;
+                var3 = var4.Date;
+                var2 = var3.now;
+                var2 = var2.bind(var3)();
+                var9 = var0.startTimestamp;
+                var5 = undefined;
+                if (!(var5 === var9)) {
+                    _fun12336_ip = 73;
+                    continue _fun12336
                 }
-            case 69:
-                var2 = var1.Blob;
-                var4 = var3 instanceof var2;
-                var2 = var0;
-                if (var4) {
-                    _fun12334_ip = 114;
-                    continue _fun12334
+            case 70:
+                var9 = var2;
+            case 73:
+                var8 = var0.endTimestamp;
+                if (!(var5 === var8)) {
+                    _fun12336_ip = 86;
+                    continue _fun12336
                 }
-            case 85:
-                var4 = var1.ArrayBuffer;
-                var4 = var2 instanceof var4;
-                if (var4) {
-                    _fun12334_ip = 103;
-                    continue _fun12334
+            case 83:
+                var8 = var2;
+            case 86:
+                var6 = var0.input;
+                var12 = var0.xhr;
+                var3 = _closure1_slot0;
+                var0 = _closure1_slot1;
+                var10 = 0;
+                var0 = var0[var10];
+                var3 = var3.bind(var5)(var0);
+                var0 = var3.getBodySize;
+                var7 = var0.bind(var3)(var6);
+                var0 = var12.getResponseHeader;
+                var11 = 'content-length';
+                var0 = var0.bind(var12)(var11);
+                if (var0) {
+                    _fun12336_ip = 256;
+                    continue _fun12336
                 }
-            case 98: // try_end0
-                _fun12334_ip = 299;
-                continue _fun12334;
-            case 103: // try_start_1
-                var4 = var0;
-                var4 = var4.byteLength;
-            case 112: // try_end1
-                return var4;
-            case 114: // try_start_2
-                var2 = var2.size;
-            case 119: // try_end2
-                return var2;
-            case 121: // try_start_3
-                var1 = var1.URLSearchParams;
-                var2 = var1.prototype;
-                var2 = Object.create(var2, {
-                    constructor: {
-                        value: var1
-                    }
-                });
-                var7 = var2;
+            case 149:
+                var13 = var12.response;
+                var6 = var12.responseType;
+                var0 = var13;
+                var3 = var6;
+            case 167: // try_start_0
                 var6 = var3;
-                var1 = new var7[var1](var6, var5);
-                var2 = var1 instanceof Object ? var1 : var2;
-                var1 = var2.toString;
-                var3 = var1.bind(var2)();
-                var4 = _closure1_slot0;
-                var2 = _closure1_slot1;
-                var1 = 0;
-                var2 = var2[var1];
-                var1 = undefined;
-                var2 = var4.bind(var1)(var2);
-                var1 = var2.encodeUTF8;
-                var1 = var1.bind(var2)(var3);
-                var1 = var1.length;
-            case 199: // try_end3
-                return var1;
-            case 201: // try_start_4
+                var3 = 'json';
+                if (!(var3 === var6)) {
+                    _fun12336_ip = 198;
+                    continue _fun12336
+                }
+            case 178:
+                var3 = var0;
+                if (!var3) {
+                    _fun12336_ip = 198;
+                    continue _fun12336
+                }
+            case 184:
+                var3 = var0;
+                var6 = 'object';
+                var3 = typeof var3;
+                if (!(var6 !== var3)) {
+                    _fun12336_ip = 203;
+                    continue _fun12336
+                }
+            case 198:
+                var6 = var0;
+                _fun12336_ip = 220;
+                continue _fun12336;
+            case 203:
+                var13 = var4.JSON;
+                var3 = var13.stringify;
+                var6 = var3.bind(var13)(var0);
+            case 220:
                 var3 = _closure1_slot0;
-                var2 = _closure1_slot1;
-                var1 = 0;
-                var2 = var2[var1];
-                var1 = undefined;
-                var3 = var3.bind(var1)(var2);
-                var2 = var3.encodeUTF8;
-                var4 = var0;
-                var1 = var4.toString;
-                var1 = var1.bind(var4)();
-                var1 = var2.bind(var3)(var1);
-                var1 = var1.length;
-            case 253: // try_end4
-                return var1;
-            case 255: // try_start_5
+                var0 = _closure1_slot1;
+                var0 = var0[var10];
+                var3 = var3.bind(var5)(var0);
+                var0 = var3.getBodySize;
+                var0 = var0.bind(var3)(var6);
+            case 248: // try_end0
+                _fun12336_ip = 254;
+                continue _fun12336;
+            case 250: // catch_target0
+                CatchBlockStart(arg_register = 3);
+                var0 = undefined;
+            case 254:
+                _fun12336_ip = 295;
+                continue _fun12336;
+            case 256:
+                var6 = _closure1_slot0;
+                var3 = _closure1_slot1;
+                var3 = var3[var10];
+                var10 = var6.bind(var5)(var3);
+                var6 = var10.parseContentLengthHeader;
+                var3 = var12.getResponseHeader;
+                var3 = var3.bind(var12)(var11);
+                var0 = var6.bind(var10)(var3);
+            case 295:
                 var3 = _closure1_slot0;
-                var2 = _closure1_slot1;
-                var1 = 0;
-                var2 = var2[var1];
-                var1 = undefined;
-                var2 = var3.bind(var1)(var2);
-                var1 = var2.encodeUTF8;
-                var0 = var1.bind(var2)(var0);
-                var0 = var0.length;
-            case 295: // try_end5
-                return var0;
-            case 297: // catch_target0 // catch_target1 // catch_target2 // catch_target3 // catch_target4 // catch_target5
-                CatchBlockStart(arg_register = 0);
-            case 299:
+                var6 = _closure1_slot1;
+                var2 = 1;
+                var2 = var6[var2];
+                var3 = var3.bind(var5)(var2);
+                var2 = var3.dropUndefinedKeys;
+                var6 = var4.Object;
+                var5 = var6.assign;
+                var4 = {};
+                var4.start_timestamp = var9;
+                var4.end_timestamp = var8;
+                var4.request_body_size = var7;
+                var4.response_body_size = var0;
+                var0 = var1.data;
+                var0 = var5.bind(var6)(var4, var0);
+                var0 = var2.bind(var3)(var0);
+                var1.data = var0;
+            case 376:
                 var0 = undefined;
                 return var0;
         }
     };
-    var1.getBodySize = var0;
+    var1.enrichXhrBreadcrumbsForMobileReplay = var0;
     var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1001]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1129, 818]);

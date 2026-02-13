@@ -10,16 +10,16 @@ import kotlin.jvm.internal.Intrinsics;
 public final class g {
 
     /* renamed from: a  reason: collision with root package name */
-    private final f f36125a = new f();
+    private final f f36693a = new f();
 
     /* renamed from: b  reason: collision with root package name */
-    private final Map f36126b = new LinkedHashMap();
+    private final Map f36694b = new LinkedHashMap();
 
     /* renamed from: c  reason: collision with root package name */
-    private final Set f36127c = new LinkedHashSet();
+    private final Set f36695c = new LinkedHashSet();
 
     /* renamed from: d  reason: collision with root package name */
-    private volatile boolean f36128d;
+    private volatile boolean f36696d;
 
     /* JADX INFO: Access modifiers changed from: private */
     public final void f(AutoCloseable autoCloseable) {
@@ -36,31 +36,31 @@ public final class g {
         AutoCloseable autoCloseable;
         Intrinsics.checkNotNullParameter(key, "key");
         Intrinsics.checkNotNullParameter(closeable, "closeable");
-        if (this.f36128d) {
+        if (this.f36696d) {
             f(closeable);
             return;
         }
-        synchronized (this.f36125a) {
-            autoCloseable = (AutoCloseable) this.f36126b.put(key, closeable);
+        synchronized (this.f36693a) {
+            autoCloseable = (AutoCloseable) this.f36694b.put(key, closeable);
         }
         f(autoCloseable);
     }
 
     public final void e() {
-        if (this.f36128d) {
+        if (this.f36696d) {
             return;
         }
-        this.f36128d = true;
-        synchronized (this.f36125a) {
+        this.f36696d = true;
+        synchronized (this.f36693a) {
             try {
-                for (AutoCloseable autoCloseable : this.f36126b.values()) {
+                for (AutoCloseable autoCloseable : this.f36694b.values()) {
                     f(autoCloseable);
                 }
-                for (AutoCloseable autoCloseable2 : this.f36127c) {
+                for (AutoCloseable autoCloseable2 : this.f36695c) {
                     f(autoCloseable2);
                 }
-                this.f36127c.clear();
-                Unit unit = Unit.f31988a;
+                this.f36695c.clear();
+                Unit unit = Unit.f32556a;
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -70,8 +70,8 @@ public final class g {
     public final AutoCloseable g(String key) {
         AutoCloseable autoCloseable;
         Intrinsics.checkNotNullParameter(key, "key");
-        synchronized (this.f36125a) {
-            autoCloseable = (AutoCloseable) this.f36126b.get(key);
+        synchronized (this.f36693a) {
+            autoCloseable = (AutoCloseable) this.f36694b.get(key);
         }
         return autoCloseable;
     }

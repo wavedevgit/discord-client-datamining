@@ -1,119 +1,98 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var0 = global;
-    var3 = var0.IntlMessageFormat;
-    var2 = var3.__addLocaleData;
-    var1 = {};
-    var4 = 'ro';
-    var1.locale = var4;
-    var4 = function arg0, arg1() {
-        _fun112869: for (var _fun112869_ip = 0;;) switch (_fun112869_ip) {
+    var2 = var0.IntlMessageFormat;
+    var1 = var2.__addLocaleData;
+    var0 = {};
+    var3 = 'hi';
+    var0.locale = var3;
+    var3 = function arg0, arg1() {
+        _fun112918: for (var _fun112918_ip = 0;;) switch (_fun112918_ip) {
             case 0:
-                var2 = arg0;
-                var3 = global;
-                var0 = var3.String;
-                var7 = undefined;
-                var4 = var0.bind(var7)(var2);
-                var1 = var4.split;
-                var0 = '.';
-                var0 = var1.bind(var4)(var0);
-                var1 = 1;
-                var4 = var0[var1];
-                var4 = !var4;
-                var6 = var3.Number;
-                var3 = 0;
-                var5 = var0[var3];
-                var5 = var6.bind(var7)(var5);
-                var6 = var5 == var2;
-                if (!var6) {
-                    _fun112869_ip = 86;
-                    continue _fun112869
-                }
-            case 66:
-                var7 = var0[var3];
-                var5 = var7.slice;
-                var0 = -2;
-                var6 = var5.bind(var7)(var0);
-            case 86:
+                var5 = arg0;
                 var0 = arg1;
                 if (var0) {
-                    _fun112869_ip = 156;
-                    continue _fun112869
+                    _fun112918_ip = 44;
+                    continue _fun112918
                 }
-            case 92:
-                if (!(var1 == var2)) {
-                    _fun112869_ip = 103;
-                    continue _fun112869
+            case 9:
+                var0 = 0;
+                var1 = var5 >= var0;
+                var2 = 'other';
+                var0 = var2;
+                if (!var1) {
+                    _fun112918_ip = 42;
+                    continue _fun112918
                 }
-            case 96:
+            case 25:
+                var1 = 1;
+                var1 = var5 <= var1;
+                var0 = var2;
+                if (!var1) {
+                    _fun112918_ip = 42;
+                    continue _fun112918
+                }
+            case 38:
                 var0 = 'one';
-                if (var4) {
-                    _fun112869_ip = 154;
-                    continue _fun112869
-                }
-            case 103:
-                if (!var4) {
-                    _fun112869_ip = 147;
-                    continue _fun112869
-                }
-            case 106:
-                if (!(var3 != var2)) {
-                    _fun112869_ip = 147;
-                    continue _fun112869
-                }
-            case 110:
-                var4 = var1 != var2;
-                var5 = 'other';
-                var3 = var5;
-                if (!var4) {
-                    _fun112869_ip = 151;
-                    continue _fun112869
-                }
-            case 124:
-                var4 = var6 >= var1;
-                var3 = var5;
-                if (!var4) {
-                    _fun112869_ip = 151;
-                    continue _fun112869
-                }
-            case 134:
-                var4 = 19;
-                var4 = var6 <= var4;
-                var3 = var5;
-                if (!var4) {
-                    _fun112869_ip = 151;
-                    continue _fun112869
-                }
-            case 147:
-                var3 = 'few';
-            case 151:
-                var0 = var3;
-            case 154:
-                _fun112869_ip = 174;
-                continue _fun112869;
-            case 156:
-                var2 = var1 == var2;
-                var1 = 'other';
-                if (!var2) {
-                    _fun112869_ip = 171;
-                    continue _fun112869
-                }
-            case 167:
+            case 42:
+                _fun112918_ip = 134;
+                continue _fun112918;
+            case 44:
+                var1 = 1;
+                var2 = var1 == var5;
                 var1 = 'one';
-            case 171:
+                if (var2) {
+                    _fun112918_ip = 131;
+                    continue _fun112918
+                }
+            case 58:
+                var2 = 2;
+                var3 = var2 == var5;
+                var4 = 'two';
+                var2 = var4;
+                if (var3) {
+                    _fun112918_ip = 128;
+                    continue _fun112918
+                }
+            case 77:
+                var3 = 3;
+                var3 = var3 == var5;
+                var2 = var4;
+                if (var3) {
+                    _fun112918_ip = 128;
+                    continue _fun112918
+                }
+            case 90:
+                var3 = 4;
+                var4 = var3 == var5;
+                var3 = 'few';
+                if (var4) {
+                    _fun112918_ip = 125;
+                    continue _fun112918
+                }
+            case 104:
+                var4 = 6;
+                var5 = var4 == var5;
+                var4 = 'other';
+                if (!var5) {
+                    _fun112918_ip = 122;
+                    continue _fun112918
+                }
+            case 118:
+                var4 = 'many';
+            case 122:
+                var3 = var4;
+            case 125:
+                var2 = var3;
+            case 128:
+                var1 = var2;
+            case 131:
                 var0 = var1;
-            case 174:
+            case 134:
                 return var0;
         }
     };
-    var1.pluralRuleFunction = var4;
-    var1 = var2.bind(var3)(var1);
-    var2 = var0.IntlMessageFormat;
-    var1 = var2.__addLocaleData;
-    var0 = {
-        'locale': 'ro-MD',
-        'parentLocale': 'ro'
-    };
+    var0.pluralRuleFunction = var3;
     var0 = var1.bind(var2)(var0);
     var0 = undefined;
     return var0;

@@ -70,34 +70,34 @@ public final class a implements ViewBinding {
 
     public static a a(View view) {
         View a10;
-        int i10 = f1.f56656d;
+        int i10 = f1.f57224d;
         ConstraintLayout constraintLayout = (ConstraintLayout) e4.a.a(view, i10);
         if (constraintLayout != null) {
-            i10 = f1.f56658f;
+            i10 = f1.f57226f;
             FrameLayout frameLayout = (FrameLayout) e4.a.a(view, i10);
             if (frameLayout != null) {
-                i10 = f1.f56659g;
+                i10 = f1.f57227g;
                 MaterialDivider materialDivider = (MaterialDivider) e4.a.a(view, i10);
                 if (materialDivider != null) {
-                    i10 = f1.f56660h;
+                    i10 = f1.f57228h;
                     LinearLayout linearLayout = (LinearLayout) e4.a.a(view, i10);
                     if (linearLayout != null) {
-                        i10 = f1.f56661i;
+                        i10 = f1.f57229i;
                         CoordinatorLayout coordinatorLayout = (CoordinatorLayout) e4.a.a(view, i10);
-                        if (coordinatorLayout != null && (a10 = e4.a.a(view, (i10 = f1.f56662j))) != null) {
-                            i10 = f1.f56664l;
+                        if (coordinatorLayout != null && (a10 = e4.a.a(view, (i10 = f1.f57230j))) != null) {
+                            i10 = f1.f57232l;
                             NestedScrollView nestedScrollView = (NestedScrollView) e4.a.a(view, i10);
                             if (nestedScrollView != null) {
-                                i10 = f1.f56665m;
+                                i10 = f1.f57233m;
                                 Pi2NavigationBar pi2NavigationBar = (Pi2NavigationBar) e4.a.a(view, i10);
                                 if (pi2NavigationBar != null) {
-                                    i10 = f1.f56666n;
+                                    i10 = f1.f57234n;
                                     ShadowedNestedScrollView shadowedNestedScrollView = (ShadowedNestedScrollView) e4.a.a(view, i10);
                                     if (shadowedNestedScrollView != null) {
-                                        i10 = f1.f56667o;
+                                        i10 = f1.f57235o;
                                         ConstraintLayout constraintLayout2 = (ConstraintLayout) e4.a.a(view, i10);
                                         if (constraintLayout2 != null) {
-                                            i10 = f1.f56674v;
+                                            i10 = f1.f57242v;
                                             FrameLayout frameLayout2 = (FrameLayout) e4.a.a(view, i10);
                                             if (frameLayout2 != null) {
                                                 return new a((CoordinatorLayout) view, constraintLayout, frameLayout, materialDivider, linearLayout, coordinatorLayout, a10, nestedScrollView, pi2NavigationBar, shadowedNestedScrollView, constraintLayout2, frameLayout2);
@@ -119,7 +119,7 @@ public final class a implements ViewBinding {
     }
 
     public static a d(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z10) {
-        View inflate = layoutInflater.inflate(g1.f56702a, viewGroup, false);
+        View inflate = layoutInflater.inflate(g1.f57270a, viewGroup, false);
         if (z10) {
             viewGroup.addView(inflate);
         }

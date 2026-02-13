@@ -8,22 +8,22 @@ import java.util.RandomAccess;
 public abstract class u {
 
     /* renamed from: a  reason: collision with root package name */
-    static final Charset f31161a = Charset.forName("US-ASCII");
+    static final Charset f31729a = Charset.forName("US-ASCII");
 
     /* renamed from: b  reason: collision with root package name */
-    static final Charset f31162b = Charset.forName("UTF-8");
+    static final Charset f31730b = Charset.forName("UTF-8");
 
     /* renamed from: c  reason: collision with root package name */
-    static final Charset f31163c = Charset.forName("ISO-8859-1");
+    static final Charset f31731c = Charset.forName("ISO-8859-1");
 
     /* renamed from: d  reason: collision with root package name */
-    public static final byte[] f31164d;
+    public static final byte[] f31732d;
 
     /* renamed from: e  reason: collision with root package name */
-    public static final ByteBuffer f31165e;
+    public static final ByteBuffer f31733e;
 
     /* renamed from: f  reason: collision with root package name */
-    public static final g f31166f;
+    public static final g f31734f;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public interface a {
@@ -41,9 +41,9 @@ public abstract class u {
 
     static {
         byte[] bArr = new byte[0];
-        f31164d = bArr;
-        f31165e = ByteBuffer.wrap(bArr);
-        f31166f = g.h(bArr);
+        f31732d = bArr;
+        f31733e = ByteBuffer.wrap(bArr);
+        f31734f = g.h(bArr);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -96,6 +96,6 @@ public abstract class u {
     }
 
     public static String i(byte[] bArr) {
-        return new String(bArr, f31162b);
+        return new String(bArr, f31730b);
     }
 }

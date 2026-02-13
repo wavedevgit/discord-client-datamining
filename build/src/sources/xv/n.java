@@ -16,114 +16,114 @@ import java.util.regex.Pattern;
 public class n implements bw.a {
 
     /* renamed from: i  reason: collision with root package name */
-    private static final Pattern f55225i = Pattern.compile("^[!\"#\\$%&'\\(\\)\\*\\+,\\-\\./:;<=>\\?@\\[\\\\\\]\\^_`\\{\\|\\}~\\p{Pc}\\p{Pd}\\p{Pe}\\p{Pf}\\p{Pi}\\p{Po}\\p{Ps}]");
+    private static final Pattern f55793i = Pattern.compile("^[!\"#\\$%&'\\(\\)\\*\\+,\\-\\./:;<=>\\?@\\[\\\\\\]\\^_`\\{\\|\\}~\\p{Pc}\\p{Pd}\\p{Pe}\\p{Pf}\\p{Pi}\\p{Po}\\p{Ps}]");
 
     /* renamed from: j  reason: collision with root package name */
-    private static final Pattern f55226j = Pattern.compile("^(?:<[A-Za-z][A-Za-z0-9-]*(?:\\s+[a-zA-Z_:][a-zA-Z0-9:._-]*(?:\\s*=\\s*(?:[^\"'=<>`\\x00-\\x20]+|'[^']*'|\"[^\"]*\"))?)*\\s*/?>|</[A-Za-z][A-Za-z0-9-]*\\s*[>]|<!---->|<!--(?:-?[^>-])(?:-?[^-])*-->|[<][?].*?[?][>]|<![A-Z]+\\s+[^>]*>|<!\\[CDATA\\[[\\s\\S]*?\\]\\]>)", 2);
+    private static final Pattern f55794j = Pattern.compile("^(?:<[A-Za-z][A-Za-z0-9-]*(?:\\s+[a-zA-Z_:][a-zA-Z0-9:._-]*(?:\\s*=\\s*(?:[^\"'=<>`\\x00-\\x20]+|'[^']*'|\"[^\"]*\"))?)*\\s*/?>|</[A-Za-z][A-Za-z0-9-]*\\s*[>]|<!---->|<!--(?:-?[^>-])(?:-?[^-])*-->|[<][?].*?[?][>]|<![A-Z]+\\s+[^>]*>|<!\\[CDATA\\[[\\s\\S]*?\\]\\]>)", 2);
 
     /* renamed from: k  reason: collision with root package name */
-    private static final Pattern f55227k = Pattern.compile("^[!\"#$%&'()*+,./:;<=>?@\\[\\\\\\]^_`{|}~-]");
+    private static final Pattern f55795k = Pattern.compile("^[!\"#$%&'()*+,./:;<=>?@\\[\\\\\\]^_`{|}~-]");
 
     /* renamed from: l  reason: collision with root package name */
-    private static final Pattern f55228l = Pattern.compile("^&(?:#x[a-f0-9]{1,6}|#[0-9]{1,7}|[a-z][a-z0-9]{1,31});", 2);
+    private static final Pattern f55796l = Pattern.compile("^&(?:#x[a-f0-9]{1,6}|#[0-9]{1,7}|[a-z][a-z0-9]{1,31});", 2);
 
     /* renamed from: m  reason: collision with root package name */
-    private static final Pattern f55229m = Pattern.compile("`+");
+    private static final Pattern f55797m = Pattern.compile("`+");
 
     /* renamed from: n  reason: collision with root package name */
-    private static final Pattern f55230n = Pattern.compile("^`+");
+    private static final Pattern f55798n = Pattern.compile("^`+");
 
     /* renamed from: o  reason: collision with root package name */
-    private static final Pattern f55231o = Pattern.compile("^<([a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*)>");
+    private static final Pattern f55799o = Pattern.compile("^<([a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*)>");
 
     /* renamed from: p  reason: collision with root package name */
-    private static final Pattern f55232p = Pattern.compile("^<[a-zA-Z][a-zA-Z0-9.+-]{1,31}:[^<>\u0000- ]*>");
+    private static final Pattern f55800p = Pattern.compile("^<[a-zA-Z][a-zA-Z0-9.+-]{1,31}:[^<>\u0000- ]*>");
 
     /* renamed from: q  reason: collision with root package name */
-    private static final Pattern f55233q = Pattern.compile("^ *(?:\n *)?");
+    private static final Pattern f55801q = Pattern.compile("^ *(?:\n *)?");
 
     /* renamed from: r  reason: collision with root package name */
-    private static final Pattern f55234r = Pattern.compile("^[\\p{Zs}\t\r\n\f]");
+    private static final Pattern f55802r = Pattern.compile("^[\\p{Zs}\t\r\n\f]");
 
     /* renamed from: s  reason: collision with root package name */
-    private static final Pattern f55235s = Pattern.compile("\\s+");
+    private static final Pattern f55803s = Pattern.compile("\\s+");
 
     /* renamed from: t  reason: collision with root package name */
-    private static final Pattern f55236t = Pattern.compile(" *$");
+    private static final Pattern f55804t = Pattern.compile(" *$");
 
     /* renamed from: a  reason: collision with root package name */
-    private final BitSet f55237a;
+    private final BitSet f55805a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final BitSet f55238b;
+    private final BitSet f55806b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Map f55239c;
+    private final Map f55807c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final bw.b f55240d;
+    private final bw.b f55808d;
 
     /* renamed from: e  reason: collision with root package name */
-    private String f55241e;
+    private String f55809e;
 
     /* renamed from: f  reason: collision with root package name */
-    private int f55242f;
+    private int f55810f;
 
     /* renamed from: g  reason: collision with root package name */
-    private f f55243g;
+    private f f55811g;
 
     /* renamed from: h  reason: collision with root package name */
-    private e f55244h;
+    private e f55812h;
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static class a {
 
         /* renamed from: a  reason: collision with root package name */
-        final int f55245a;
+        final int f55813a;
 
         /* renamed from: b  reason: collision with root package name */
-        final boolean f55246b;
+        final boolean f55814b;
 
         /* renamed from: c  reason: collision with root package name */
-        final boolean f55247c;
+        final boolean f55815c;
 
         a(int i10, boolean z10, boolean z11) {
-            this.f55245a = i10;
-            this.f55247c = z10;
-            this.f55246b = z11;
+            this.f55813a = i10;
+            this.f55815c = z10;
+            this.f55814b = z11;
         }
     }
 
     public n(bw.b bVar) {
         Map f10 = f(bVar.b());
-        this.f55239c = f10;
+        this.f55807c = f10;
         BitSet e10 = e(f10.keySet());
-        this.f55238b = e10;
-        this.f55237a = g(e10);
-        this.f55240d = bVar;
+        this.f55806b = e10;
+        this.f55805a = g(e10);
+        this.f55808d = bVar;
     }
 
     private aw.r A() {
-        int i10 = this.f55242f;
-        int length = this.f55241e.length();
+        int i10 = this.f55810f;
+        int length = this.f55809e.length();
         while (true) {
-            int i11 = this.f55242f;
-            if (i11 == length || this.f55237a.get(this.f55241e.charAt(i11))) {
+            int i11 = this.f55810f;
+            if (i11 == length || this.f55805a.get(this.f55809e.charAt(i11))) {
                 break;
             }
-            this.f55242f++;
+            this.f55810f++;
         }
-        int i12 = this.f55242f;
+        int i12 = this.f55810f;
         if (i10 != i12) {
-            return M(this.f55241e, i10, i12);
+            return M(this.f55809e, i10, i12);
         }
         return null;
     }
 
     private char B() {
-        if (this.f55242f < this.f55241e.length()) {
-            return this.f55241e.charAt(this.f55242f);
+        if (this.f55810f < this.f55809e.length()) {
+            return this.f55809e.charAt(this.f55810f);
         }
         return (char) 0;
     }
@@ -131,24 +131,24 @@ public class n implements bw.a {
     private void C(f fVar) {
         boolean z10;
         HashMap hashMap = new HashMap();
-        f fVar2 = this.f55243g;
+        f fVar2 = this.f55811g;
         while (fVar2 != null) {
-            f fVar3 = fVar2.f55188e;
+            f fVar3 = fVar2.f55756e;
             if (fVar3 == fVar) {
                 break;
             }
             fVar2 = fVar3;
         }
         while (fVar2 != null) {
-            char c10 = fVar2.f55185b;
-            dw.a aVar = (dw.a) this.f55239c.get(Character.valueOf(c10));
-            if (fVar2.f55187d && aVar != null) {
+            char c10 = fVar2.f55753b;
+            dw.a aVar = (dw.a) this.f55807c.get(Character.valueOf(c10));
+            if (fVar2.f55755d && aVar != null) {
                 char c11 = aVar.c();
-                f fVar4 = fVar2.f55188e;
+                f fVar4 = fVar2.f55756e;
                 int i10 = 0;
                 boolean z11 = false;
                 while (fVar4 != null && fVar4 != fVar && fVar4 != hashMap.get(Character.valueOf(c10))) {
-                    if (fVar4.f55186c && fVar4.f55185b == c11) {
+                    if (fVar4.f55754c && fVar4.f55753b == c11) {
                         i10 = aVar.d(fVar4, fVar2);
                         z11 = true;
                         if (i10 > 0) {
@@ -156,43 +156,43 @@ public class n implements bw.a {
                             break;
                         }
                     }
-                    fVar4 = fVar4.f55188e;
+                    fVar4 = fVar4.f55756e;
                 }
                 z10 = z11;
                 z11 = false;
                 if (!z11) {
                     if (!z10) {
-                        hashMap.put(Character.valueOf(c10), fVar2.f55188e);
-                        if (!fVar2.f55186c) {
+                        hashMap.put(Character.valueOf(c10), fVar2.f55756e);
+                        if (!fVar2.f55754c) {
                             F(fVar2);
                         }
                     }
-                    fVar2 = fVar2.f55189f;
+                    fVar2 = fVar2.f55757f;
                 } else {
-                    w wVar = fVar4.f55184a;
-                    w wVar2 = fVar2.f55184a;
-                    fVar4.f55190g -= i10;
-                    fVar2.f55190g -= i10;
+                    w wVar = fVar4.f55752a;
+                    w wVar2 = fVar2.f55752a;
+                    fVar4.f55758g -= i10;
+                    fVar2.f55758g -= i10;
                     wVar.n(wVar.m().substring(0, wVar.m().length() - i10));
                     wVar2.n(wVar2.m().substring(0, wVar2.m().length() - i10));
                     G(fVar4, fVar2);
                     k(wVar, wVar2);
                     aVar.e(wVar, wVar2, i10);
-                    if (fVar4.f55190g == 0) {
+                    if (fVar4.f55758g == 0) {
                         E(fVar4);
                     }
-                    if (fVar2.f55190g == 0) {
-                        f fVar5 = fVar2.f55189f;
+                    if (fVar2.f55758g == 0) {
+                        f fVar5 = fVar2.f55757f;
                         E(fVar2);
                         fVar2 = fVar5;
                     }
                 }
             } else {
-                fVar2 = fVar2.f55189f;
+                fVar2 = fVar2.f55757f;
             }
         }
         while (true) {
-            f fVar6 = this.f55243g;
+            f fVar6 = this.f55811g;
             if (fVar6 != null && fVar6 != fVar) {
                 F(fVar6);
             } else {
@@ -202,20 +202,20 @@ public class n implements bw.a {
     }
 
     private void D(f fVar) {
-        f fVar2 = fVar.f55188e;
+        f fVar2 = fVar.f55756e;
         if (fVar2 != null) {
-            fVar2.f55189f = fVar.f55189f;
+            fVar2.f55757f = fVar.f55757f;
         }
-        f fVar3 = fVar.f55189f;
+        f fVar3 = fVar.f55757f;
         if (fVar3 == null) {
-            this.f55243g = fVar2;
+            this.f55811g = fVar2;
         } else {
-            fVar3.f55188e = fVar2;
+            fVar3.f55756e = fVar2;
         }
     }
 
     private void E(f fVar) {
-        fVar.f55184a.l();
+        fVar.f55752a.l();
         D(fVar);
     }
 
@@ -224,16 +224,16 @@ public class n implements bw.a {
     }
 
     private void G(f fVar, f fVar2) {
-        f fVar3 = fVar2.f55188e;
+        f fVar3 = fVar2.f55756e;
         while (fVar3 != null && fVar3 != fVar) {
-            f fVar4 = fVar3.f55188e;
+            f fVar4 = fVar3.f55756e;
             F(fVar3);
             fVar3 = fVar4;
         }
     }
 
     private void H() {
-        this.f55244h = this.f55244h.f55180d;
+        this.f55812h = this.f55812h.f55748d;
     }
 
     private a J(dw.a aVar, char c10) {
@@ -242,30 +242,30 @@ public class n implements bw.a {
         boolean z11;
         boolean z12;
         boolean z13;
-        int i10 = this.f55242f;
+        int i10 = this.f55810f;
         boolean z14 = false;
         int i11 = 0;
         while (B() == c10) {
             i11++;
-            this.f55242f++;
+            this.f55810f++;
         }
         if (i11 < aVar.b()) {
-            this.f55242f = i10;
+            this.f55810f = i10;
             return null;
         }
         String str = ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE;
         if (i10 == 0) {
             substring = ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE;
         } else {
-            substring = this.f55241e.substring(i10 - 1, i10);
+            substring = this.f55809e.substring(i10 - 1, i10);
         }
         char B = B();
         if (B != 0) {
             str = String.valueOf(B);
         }
-        Pattern pattern = f55225i;
+        Pattern pattern = f55793i;
         boolean matches = pattern.matcher(substring).matches();
-        Pattern pattern2 = f55234r;
+        Pattern pattern2 = f55802r;
         boolean matches2 = pattern2.matcher(substring).matches();
         boolean matches3 = pattern.matcher(str).matches();
         boolean matches4 = pattern2.matcher(str).matches();
@@ -299,12 +299,12 @@ public class n implements bw.a {
             }
             z13 = z12;
         }
-        this.f55242f = i10;
+        this.f55810f = i10;
         return new a(i11, z13, z14);
     }
 
     private void K() {
-        h(f55233q);
+        h(f55801q);
     }
 
     private w L(String str) {
@@ -316,11 +316,11 @@ public class n implements bw.a {
     }
 
     private void b(e eVar) {
-        e eVar2 = this.f55244h;
+        e eVar2 = this.f55812h;
         if (eVar2 != null) {
-            eVar2.f55183g = true;
+            eVar2.f55751g = true;
         }
-        this.f55244h = eVar;
+        this.f55812h = eVar;
     }
 
     private static void c(char c10, dw.a aVar, Map map) {
@@ -390,15 +390,15 @@ public class n implements bw.a {
     }
 
     private String h(Pattern pattern) {
-        if (this.f55242f >= this.f55241e.length()) {
+        if (this.f55810f >= this.f55809e.length()) {
             return null;
         }
-        Matcher matcher = pattern.matcher(this.f55241e);
-        matcher.region(this.f55242f, this.f55241e.length());
+        Matcher matcher = pattern.matcher(this.f55809e);
+        matcher.region(this.f55810f, this.f55809e.length());
         if (!matcher.find()) {
             return null;
         }
-        this.f55242f = matcher.end();
+        this.f55810f = matcher.end();
         return matcher.group();
     }
 
@@ -457,14 +457,14 @@ public class n implements bw.a {
     }
 
     private aw.r m() {
-        String h10 = h(f55231o);
+        String h10 = h(f55799o);
         if (h10 != null) {
             String substring = h10.substring(1, h10.length() - 1);
             aw.n nVar = new aw.n("mailto:" + substring, null);
             nVar.b(new w(substring));
             return nVar;
         }
-        String h11 = h(f55232p);
+        String h11 = h(f55800p);
         if (h11 == null) {
             return null;
         }
@@ -475,21 +475,21 @@ public class n implements bw.a {
     }
 
     private aw.r n() {
-        this.f55242f++;
+        this.f55810f++;
         if (B() == '\n') {
             aw.h hVar = new aw.h();
-            this.f55242f++;
+            this.f55810f++;
             return hVar;
         }
-        if (this.f55242f < this.f55241e.length()) {
-            Pattern pattern = f55227k;
-            String str = this.f55241e;
-            int i10 = this.f55242f;
+        if (this.f55810f < this.f55809e.length()) {
+            Pattern pattern = f55795k;
+            String str = this.f55809e;
+            int i10 = this.f55810f;
             if (pattern.matcher(str.substring(i10, i10 + 1)).matches()) {
-                String str2 = this.f55241e;
-                int i11 = this.f55242f;
+                String str2 = this.f55809e;
+                int i11 = this.f55810f;
                 w M = M(str2, i11, i11 + 1);
-                this.f55242f++;
+                this.f55810f++;
                 return M;
             }
         }
@@ -498,20 +498,20 @@ public class n implements bw.a {
 
     private aw.r o() {
         String h10;
-        String h11 = h(f55230n);
+        String h11 = h(f55798n);
         if (h11 == null) {
             return null;
         }
-        int i10 = this.f55242f;
+        int i10 = this.f55810f;
         do {
-            h10 = h(f55229m);
+            h10 = h(f55797m);
             if (h10 == null) {
-                this.f55242f = i10;
+                this.f55810f = i10;
                 return L(h11);
             }
         } while (!h10.equals(h11));
         aw.d dVar = new aw.d();
-        String replace = this.f55241e.substring(i10, this.f55242f - h11.length()).replace('\n', ' ');
+        String replace = this.f55809e.substring(i10, this.f55810f - h11.length()).replace('\n', ' ');
         if (replace.length() >= 3 && replace.charAt(0) == ' ' && replace.charAt(replace.length() - 1) == ' ' && zv.d.e(replace)) {
             replace = replace.substring(1, replace.length() - 1);
         }
@@ -520,12 +520,12 @@ public class n implements bw.a {
     }
 
     private aw.r p() {
-        int i10 = this.f55242f;
-        this.f55242f = i10 + 1;
+        int i10 = this.f55810f;
+        this.f55810f = i10 + 1;
         if (B() == '[') {
-            this.f55242f++;
+            this.f55810f++;
             w L = L("![");
-            b(e.a(L, i10 + 1, this.f55244h, this.f55243g));
+            b(e.a(L, i10 + 1, this.f55812h, this.f55811g));
             return L;
         }
         return L("!");
@@ -550,24 +550,24 @@ public class n implements bw.a {
         if (J == null) {
             return null;
         }
-        int i10 = J.f55245a;
-        int i11 = this.f55242f;
+        int i10 = J.f55813a;
+        int i11 = this.f55810f;
         int i12 = i11 + i10;
-        this.f55242f = i12;
-        w M = M(this.f55241e, i11, i12);
-        f fVar = new f(M, c10, J.f55247c, J.f55246b, this.f55243g);
-        this.f55243g = fVar;
-        fVar.f55190g = i10;
-        fVar.f55191h = i10;
-        f fVar2 = fVar.f55188e;
+        this.f55810f = i12;
+        w M = M(this.f55809e, i11, i12);
+        f fVar = new f(M, c10, J.f55815c, J.f55814b, this.f55811g);
+        this.f55811g = fVar;
+        fVar.f55758g = i10;
+        fVar.f55759h = i10;
+        f fVar2 = fVar.f55756e;
         if (fVar2 != null) {
-            fVar2.f55189f = fVar;
+            fVar2.f55757f = fVar;
         }
         return M;
     }
 
     private aw.r s() {
-        String h10 = h(f55228l);
+        String h10 = h(f55796l);
         if (h10 != null) {
             return L(zv.b.a(h10));
         }
@@ -575,7 +575,7 @@ public class n implements bw.a {
     }
 
     private aw.r t() {
-        String h10 = h(f55226j);
+        String h10 = h(f55794j);
         if (h10 != null) {
             aw.k kVar = new aw.k();
             kVar.m(h10);
@@ -606,8 +606,8 @@ public class n implements bw.a {
                                     y10 = q();
                                     break;
                                 default:
-                                    if (this.f55238b.get(B)) {
-                                        y10 = r((dw.a) this.f55239c.get(Character.valueOf(B)), B);
+                                    if (this.f55806b.get(B)) {
+                                        y10 = r((dw.a) this.f55807c.get(Character.valueOf(B)), B);
                                         break;
                                     } else {
                                         y10 = A();
@@ -635,43 +635,43 @@ public class n implements bw.a {
         if (y10 != null) {
             return y10;
         }
-        this.f55242f++;
+        this.f55810f++;
         return L(String.valueOf(B));
     }
 
     private String v() {
         String substring;
-        int a10 = zv.c.a(this.f55241e, this.f55242f);
+        int a10 = zv.c.a(this.f55809e, this.f55810f);
         if (a10 == -1) {
             return null;
         }
         if (B() == '<') {
-            substring = this.f55241e.substring(this.f55242f + 1, a10 - 1);
+            substring = this.f55809e.substring(this.f55810f + 1, a10 - 1);
         } else {
-            substring = this.f55241e.substring(this.f55242f, a10);
+            substring = this.f55809e.substring(this.f55810f, a10);
         }
-        this.f55242f = a10;
+        this.f55810f = a10;
         return zv.a.e(substring);
     }
 
     private String x() {
-        int d10 = zv.c.d(this.f55241e, this.f55242f);
+        int d10 = zv.c.d(this.f55809e, this.f55810f);
         if (d10 == -1) {
             return null;
         }
-        String substring = this.f55241e.substring(this.f55242f + 1, d10 - 1);
-        this.f55242f = d10;
+        String substring = this.f55809e.substring(this.f55810f + 1, d10 - 1);
+        this.f55810f = d10;
         return zv.a.e(substring);
     }
 
     private aw.r y(aw.r rVar) {
         int i10;
-        this.f55242f++;
+        this.f55810f++;
         if (rVar instanceof w) {
             w wVar = (w) rVar;
             if (wVar.m().endsWith(" ")) {
                 String m10 = wVar.m();
-                Matcher matcher = f55236t.matcher(m10);
+                Matcher matcher = f55804t.matcher(m10);
                 if (matcher.find()) {
                     i10 = matcher.end() - matcher.start();
                 } else {
@@ -690,18 +690,18 @@ public class n implements bw.a {
     }
 
     private aw.r z() {
-        int i10 = this.f55242f;
-        this.f55242f = i10 + 1;
+        int i10 = this.f55810f;
+        this.f55810f = i10 + 1;
         w L = L("[");
-        b(e.b(L, i10, this.f55244h, this.f55243g));
+        b(e.b(L, i10, this.f55812h, this.f55811g));
         return L;
     }
 
     void I(String str) {
-        this.f55241e = str;
-        this.f55242f = 0;
-        this.f55243g = null;
-        this.f55244h = null;
+        this.f55809e = str;
+        this.f55810f = 0;
+        this.f55811g = null;
+        this.f55812h = null;
     }
 
     @Override // bw.a
@@ -721,12 +721,12 @@ public class n implements bw.a {
     }
 
     int w() {
-        if (this.f55242f < this.f55241e.length() && this.f55241e.charAt(this.f55242f) == '[') {
-            int i10 = this.f55242f + 1;
-            int c10 = zv.c.c(this.f55241e, i10);
+        if (this.f55810f < this.f55809e.length() && this.f55809e.charAt(this.f55810f) == '[') {
+            int i10 = this.f55810f + 1;
+            int c10 = zv.c.c(this.f55809e, i10);
             int i11 = c10 - i10;
-            if (c10 != -1 && i11 <= 999 && c10 < this.f55241e.length() && this.f55241e.charAt(c10) == ']') {
-                this.f55242f = c10 + 1;
+            if (c10 != -1 && i11 <= 999 && c10 < this.f55809e.length() && this.f55809e.charAt(c10) == ']') {
+                this.f55810f = c10 + 1;
                 return i11 + 2;
             }
         }

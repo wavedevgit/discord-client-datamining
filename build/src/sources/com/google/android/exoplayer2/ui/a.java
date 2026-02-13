@@ -98,7 +98,7 @@ public final class a extends View implements SubtitleView.a {
         this.f13932e = Collections.EMPTY_LIST;
         this.f13933i = 0;
         this.f13934o = 0.0533f;
-        this.f13935p = le.b.f35717g;
+        this.f13935p = le.b.f36285g;
         this.f13936q = 0.08f;
     }
 }

@@ -40,8 +40,8 @@ public /* synthetic */ class LinkContextData$BindJumpToMessage$$serializer imple
     @Override // tt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        KSerializer u10 = rt.a.u(tt.h.f49997a);
-        n2 n2Var = n2.f50033a;
+        KSerializer u10 = rt.a.u(tt.h.f50565a);
+        n2 n2Var = n2.f50601a;
         return new KSerializer[]{n2Var, u10, n2Var, n2Var};
     }
 
@@ -63,7 +63,7 @@ public /* synthetic */ class LinkContextData$BindJumpToMessage$$serializer imple
             str = m10;
             str3 = b10.m(serialDescriptor, 3);
             str2 = m11;
-            bool = (Boolean) b10.n(serialDescriptor, 1, tt.h.f49997a, null);
+            bool = (Boolean) b10.n(serialDescriptor, 1, tt.h.f50565a, null);
             i10 = 15;
         } else {
             boolean z10 = true;
@@ -79,7 +79,7 @@ public /* synthetic */ class LinkContextData$BindJumpToMessage$$serializer imple
                     str4 = b10.m(serialDescriptor, 0);
                     i11 |= 1;
                 } else if (o10 == 1) {
-                    bool2 = (Boolean) b10.n(serialDescriptor, 1, tt.h.f49997a, bool2);
+                    bool2 = (Boolean) b10.n(serialDescriptor, 1, tt.h.f50565a, bool2);
                     i11 |= 2;
                 } else if (o10 == 2) {
                     str5 = b10.m(serialDescriptor, 2);

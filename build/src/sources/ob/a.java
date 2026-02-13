@@ -3,13 +3,13 @@ package ob;
 public abstract class a {
 
     /* renamed from: a  reason: collision with root package name */
-    private static b f38766a;
+    private static b f39334a;
 
     public static void a(b bVar) {
         synchronized (a.class) {
             try {
-                if (f38766a == null) {
-                    f38766a = bVar;
+                if (f39334a == null) {
+                    f39334a = bVar;
                 } else {
                     throw new IllegalStateException("Cannot re-initialize NativeLoader.");
                 }
@@ -28,7 +28,7 @@ public abstract class a {
     public static boolean c() {
         boolean z10;
         synchronized (a.class) {
-            if (f38766a != null) {
+            if (f39334a != null) {
                 z10 = true;
             } else {
                 z10 = false;
@@ -44,7 +44,7 @@ public abstract class a {
     public static boolean e(String str, int i10) {
         b bVar;
         synchronized (a.class) {
-            bVar = f38766a;
+            bVar = f39334a;
             if (bVar == null) {
                 throw new IllegalStateException("NativeLoader has not been initialized.  To use standard native library loading, call NativeLoader.init(new SystemDelegate()).");
             }

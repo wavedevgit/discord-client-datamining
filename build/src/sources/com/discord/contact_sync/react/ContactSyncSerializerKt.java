@@ -66,7 +66,7 @@ public final class ContactSyncSerializerKt {
                     return serializeHasContactPermissionsResult$lambda$0;
                 }
             }, null, 4, null));
-            return Unit.f31988a;
+            return Unit.f32556a;
         }
         return null;
     }
@@ -90,9 +90,9 @@ public final class ContactSyncSerializerKt {
         Intrinsics.checkNotNullParameter(callback, "callback");
         try {
             Map<String, ContactSyncBlobEntry> contactsMap = ContactSyncProvider.INSTANCE.getContactsMap(reactContext);
-            Json.a aVar = Json.f35100d;
+            Json.a aVar = Json.f35668d;
             aVar.a();
-            String c10 = aVar.c(new u0(n2.f50033a, ContactSyncBlobEntry.Companion.serializer()), contactsMap);
+            String c10 = aVar.c(new u0(n2.f50601a, ContactSyncBlobEntry.Companion.serializer()), contactsMap);
             Collection<ContactSyncBlobEntry> values = contactsMap.values();
             ArrayList arrayList = new ArrayList(CollectionsKt.w(values, 10));
             for (ContactSyncBlobEntry contactSyncBlobEntry : values) {

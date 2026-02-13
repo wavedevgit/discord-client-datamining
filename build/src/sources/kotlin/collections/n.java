@@ -25,15 +25,15 @@ public class n extends l {
     public static final class a implements Iterable, KMappedMarker {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ Object[] f32040d;
+        final /* synthetic */ Object[] f32608d;
 
         public a(Object[] objArr) {
-            this.f32040d = objArr;
+            this.f32608d = objArr;
         }
 
         @Override // java.lang.Iterable
         public Iterator iterator() {
-            return ArrayIteratorKt.iterator(this.f32040d);
+            return ArrayIteratorKt.iterator(this.f32608d);
         }
     }
 
@@ -41,15 +41,15 @@ public class n extends l {
     public static final class b implements Sequence {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ Object[] f32041a;
+        final /* synthetic */ Object[] f32609a;
 
         public b(Object[] objArr) {
-            this.f32041a = objArr;
+            this.f32609a = objArr;
         }
 
         @Override // kotlin.sequences.Sequence
         public Iterator iterator() {
-            return ArrayIteratorKt.iterator(this.f32041a);
+            return ArrayIteratorKt.iterator(this.f32609a);
         }
     }
 

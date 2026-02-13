@@ -7,10 +7,10 @@ import ys.z0;
 public final class x extends z0 {
 
     /* renamed from: p  reason: collision with root package name */
-    private final Function1 f35068p;
+    private final Function1 f35636p;
 
     public x(Function1 function1) {
-        this.f35068p = function1;
+        this.f35636p = function1;
     }
 
     @Override // ys.z0
@@ -20,6 +20,6 @@ public final class x extends z0 {
 
     @Override // ys.z0
     public void w(Throwable th2) {
-        this.f35068p.invoke(th2);
+        this.f35636p.invoke(th2);
     }
 }

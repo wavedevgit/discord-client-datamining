@@ -1,7 +1,7 @@
 package kotlin.random;
 
 import java.util.Random;
-/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public abstract class a extends c {
     @Override // kotlin.random.c
     public int b(int i10) {

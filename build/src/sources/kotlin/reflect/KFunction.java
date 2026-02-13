@@ -1,7 +1,7 @@
 package kotlin.reflect;
 
 import kotlin.Function;
-/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public interface KFunction extends KCallable, Function {
     boolean isExternal();
 

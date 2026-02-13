@@ -19,43 +19,43 @@ public final class j extends b implements w1 {
     private Map C;
 
     /* renamed from: i  reason: collision with root package name */
-    private String f30004i;
+    private String f30572i;
 
     /* renamed from: o  reason: collision with root package name */
-    private int f30005o;
+    private int f30573o;
 
     /* renamed from: p  reason: collision with root package name */
-    private long f30006p;
+    private long f30574p;
 
     /* renamed from: q  reason: collision with root package name */
-    private long f30007q;
+    private long f30575q;
 
     /* renamed from: r  reason: collision with root package name */
-    private String f30008r;
+    private String f30576r;
 
     /* renamed from: s  reason: collision with root package name */
-    private String f30009s;
+    private String f30577s;
 
     /* renamed from: t  reason: collision with root package name */
-    private int f30010t;
+    private int f30578t;
 
     /* renamed from: u  reason: collision with root package name */
-    private int f30011u;
+    private int f30579u;
 
     /* renamed from: v  reason: collision with root package name */
-    private int f30012v;
+    private int f30580v;
 
     /* renamed from: w  reason: collision with root package name */
-    private String f30013w;
+    private String f30581w;
 
     /* renamed from: x  reason: collision with root package name */
-    private int f30014x;
+    private int f30582x;
 
     /* renamed from: y  reason: collision with root package name */
-    private int f30015y;
+    private int f30583y;
 
     /* renamed from: z  reason: collision with root package name */
-    private int f30016z;
+    private int f30584z;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements m1 {
@@ -76,7 +76,7 @@ public final class j extends b implements w1 {
                         if (r12 == null) {
                             r12 = "";
                         }
-                        jVar.f30004i = r12;
+                        jVar.f30572i = r12;
                     }
                 } else {
                     d(jVar, e3Var, iLogger);
@@ -172,45 +172,45 @@ public final class j extends b implements w1 {
                 String str = "";
                 switch (c10) {
                     case 0:
-                        jVar.f30007q = e3Var.nextLong();
+                        jVar.f30575q = e3Var.nextLong();
                         break;
                     case 1:
-                        jVar.f30005o = e3Var.nextInt();
+                        jVar.f30573o = e3Var.nextInt();
                         break;
                     case 2:
                         Integer l12 = e3Var.l1();
                         if (l12 != null) {
                             i10 = l12.intValue();
                         }
-                        jVar.f30010t = i10;
+                        jVar.f30578t = i10;
                         break;
                     case 3:
                         String r12 = e3Var.r1();
                         if (r12 != null) {
                             str = r12;
                         }
-                        jVar.f30009s = str;
+                        jVar.f30577s = str;
                         break;
                     case 4:
                         Integer l13 = e3Var.l1();
                         if (l13 != null) {
                             i10 = l13.intValue();
                         }
-                        jVar.f30012v = i10;
+                        jVar.f30580v = i10;
                         break;
                     case 5:
                         Integer l14 = e3Var.l1();
                         if (l14 != null) {
                             i10 = l14.intValue();
                         }
-                        jVar.f30016z = i10;
+                        jVar.f30584z = i10;
                         break;
                     case 6:
                         Integer l15 = e3Var.l1();
                         if (l15 != null) {
                             i10 = l15.intValue();
                         }
-                        jVar.f30015y = i10;
+                        jVar.f30583y = i10;
                         break;
                     case 7:
                         Long n12 = e3Var.n1();
@@ -219,35 +219,35 @@ public final class j extends b implements w1 {
                         } else {
                             longValue = n12.longValue();
                         }
-                        jVar.f30006p = longValue;
+                        jVar.f30574p = longValue;
                         break;
                     case '\b':
                         Integer l16 = e3Var.l1();
                         if (l16 != null) {
                             i10 = l16.intValue();
                         }
-                        jVar.f30011u = i10;
+                        jVar.f30579u = i10;
                         break;
                     case '\t':
                         Integer l17 = e3Var.l1();
                         if (l17 != null) {
                             i10 = l17.intValue();
                         }
-                        jVar.f30014x = i10;
+                        jVar.f30582x = i10;
                         break;
                     case '\n':
                         String r13 = e3Var.r1();
                         if (r13 != null) {
                             str = r13;
                         }
-                        jVar.f30008r = str;
+                        jVar.f30576r = str;
                         break;
                     case 11:
                         String r14 = e3Var.r1();
                         if (r14 != null) {
                             str = r14;
                         }
-                        jVar.f30013w = str;
+                        jVar.f30581w = str;
                         break;
                     default:
                         if (concurrentHashMap == null) {
@@ -290,15 +290,15 @@ public final class j extends b implements w1 {
 
     public j() {
         super(c.Custom);
-        this.f30008r = "h264";
-        this.f30009s = "mp4";
-        this.f30013w = "constant";
-        this.f30004i = MediaStreamTrack.VIDEO_TRACK_KIND;
+        this.f30576r = "h264";
+        this.f30577s = "mp4";
+        this.f30581w = "constant";
+        this.f30572i = MediaStreamTrack.VIDEO_TRACK_KIND;
     }
 
     private void t(f3 f3Var, ILogger iLogger) {
         f3Var.u();
-        f3Var.e("tag").f(this.f30004i);
+        f3Var.e("tag").f(this.f30572i);
         f3Var.e("payload");
         u(f3Var, iLogger);
         Map map = this.C;
@@ -314,18 +314,18 @@ public final class j extends b implements w1 {
 
     private void u(f3 f3Var, ILogger iLogger) {
         f3Var.u();
-        f3Var.e("segmentId").b(this.f30005o);
-        f3Var.e("size").b(this.f30006p);
-        f3Var.e("duration").b(this.f30007q);
-        f3Var.e("encoding").f(this.f30008r);
-        f3Var.e("container").f(this.f30009s);
-        f3Var.e("height").b(this.f30010t);
-        f3Var.e("width").b(this.f30011u);
-        f3Var.e("frameCount").b(this.f30012v);
-        f3Var.e("frameRate").b(this.f30014x);
-        f3Var.e("frameRateType").f(this.f30013w);
-        f3Var.e(ViewProps.LEFT).b(this.f30015y);
-        f3Var.e(ViewProps.TOP).b(this.f30016z);
+        f3Var.e("segmentId").b(this.f30573o);
+        f3Var.e("size").b(this.f30574p);
+        f3Var.e("duration").b(this.f30575q);
+        f3Var.e("encoding").f(this.f30576r);
+        f3Var.e("container").f(this.f30577s);
+        f3Var.e("height").b(this.f30578t);
+        f3Var.e("width").b(this.f30579u);
+        f3Var.e("frameCount").b(this.f30580v);
+        f3Var.e("frameRate").b(this.f30582x);
+        f3Var.e("frameRateType").f(this.f30581w);
+        f3Var.e(ViewProps.LEFT).b(this.f30583y);
+        f3Var.e(ViewProps.TOP).b(this.f30584z);
         Map map = this.B;
         if (map != null) {
             for (String str : map.keySet()) {
@@ -338,7 +338,7 @@ public final class j extends b implements w1 {
     }
 
     public void A(int i10) {
-        this.f30015y = i10;
+        this.f30583y = i10;
     }
 
     public void B(Map map) {
@@ -346,15 +346,15 @@ public final class j extends b implements w1 {
     }
 
     public void C(int i10) {
-        this.f30005o = i10;
+        this.f30573o = i10;
     }
 
     public void D(long j10) {
-        this.f30006p = j10;
+        this.f30574p = j10;
     }
 
     public void E(int i10) {
-        this.f30016z = i10;
+        this.f30584z = i10;
     }
 
     public void F(Map map) {
@@ -362,7 +362,7 @@ public final class j extends b implements w1 {
     }
 
     public void G(int i10) {
-        this.f30011u = i10;
+        this.f30579u = i10;
     }
 
     @Override // io.sentry.rrweb.b
@@ -374,7 +374,7 @@ public final class j extends b implements w1 {
             return false;
         }
         j jVar = (j) obj;
-        if (this.f30005o == jVar.f30005o && this.f30006p == jVar.f30006p && this.f30007q == jVar.f30007q && this.f30010t == jVar.f30010t && this.f30011u == jVar.f30011u && this.f30012v == jVar.f30012v && this.f30014x == jVar.f30014x && this.f30015y == jVar.f30015y && this.f30016z == jVar.f30016z && y.a(this.f30004i, jVar.f30004i) && y.a(this.f30008r, jVar.f30008r) && y.a(this.f30009s, jVar.f30009s) && y.a(this.f30013w, jVar.f30013w)) {
+        if (this.f30573o == jVar.f30573o && this.f30574p == jVar.f30574p && this.f30575q == jVar.f30575q && this.f30578t == jVar.f30578t && this.f30579u == jVar.f30579u && this.f30580v == jVar.f30580v && this.f30582x == jVar.f30582x && this.f30583y == jVar.f30583y && this.f30584z == jVar.f30584z && y.a(this.f30572i, jVar.f30572i) && y.a(this.f30576r, jVar.f30576r) && y.a(this.f30577s, jVar.f30577s) && y.a(this.f30581w, jVar.f30581w)) {
             return true;
         }
         return false;
@@ -382,7 +382,7 @@ public final class j extends b implements w1 {
 
     @Override // io.sentry.rrweb.b
     public int hashCode() {
-        return y.b(Integer.valueOf(super.hashCode()), this.f30004i, Integer.valueOf(this.f30005o), Long.valueOf(this.f30006p), Long.valueOf(this.f30007q), this.f30008r, this.f30009s, Integer.valueOf(this.f30010t), Integer.valueOf(this.f30011u), Integer.valueOf(this.f30012v), this.f30013w, Integer.valueOf(this.f30014x), Integer.valueOf(this.f30015y), Integer.valueOf(this.f30016z));
+        return y.b(Integer.valueOf(super.hashCode()), this.f30572i, Integer.valueOf(this.f30573o), Long.valueOf(this.f30574p), Long.valueOf(this.f30575q), this.f30576r, this.f30577s, Integer.valueOf(this.f30578t), Integer.valueOf(this.f30579u), Integer.valueOf(this.f30580v), this.f30581w, Integer.valueOf(this.f30582x), Integer.valueOf(this.f30583y), Integer.valueOf(this.f30584z));
     }
 
     @Override // io.sentry.w1
@@ -407,18 +407,18 @@ public final class j extends b implements w1 {
     }
 
     public void w(long j10) {
-        this.f30007q = j10;
+        this.f30575q = j10;
     }
 
     public void x(int i10) {
-        this.f30012v = i10;
+        this.f30580v = i10;
     }
 
     public void y(int i10) {
-        this.f30014x = i10;
+        this.f30582x = i10;
     }
 
     public void z(int i10) {
-        this.f30010t = i10;
+        this.f30578t = i10;
     }
 }

@@ -6,7 +6,7 @@ import kotlin.jvm.internal.Reflection;
 public final class b extends b0 {
 
     /* renamed from: b  reason: collision with root package name */
-    public static final b f35165b = new b();
+    public static final b f35733b = new b();
 
     private b() {
         super(Reflection.getOrCreateKotlinClass(a.class));

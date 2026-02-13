@@ -20,20 +20,20 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = 'modules/messages/getDisplayFilename.tsx';
     var1 = var3.bind(var4)(var1);
     var1 = function arg0() {
-        _fun56827: for (var _fun56827_ip = 0;;) switch (_fun56827_ip) {
+        _fun56862: for (var _fun56862_ip = 0;;) switch (_fun56862_ip) {
             case 0:
                 var0 = arg0;
                 var1 = var0.title;
                 var2 = null;
                 if (!(var2 != var1)) {
-                    _fun56827_ip = 24;
-                    continue _fun56827
+                    _fun56862_ip = 24;
+                    continue _fun56862
                 }
             case 14:
                 var1 = var0.filename;
                 if (!(var2 == var1)) {
-                    _fun56827_ip = 32;
-                    continue _fun56827
+                    _fun56862_ip = 32;
+                    continue _fun56862
                 }
             case 24:
                 var1 = var0.filename;
@@ -47,8 +47,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var4 > var1;
                 var1 = '';
                 if (!var2) {
-                    _fun56827_ip = 83;
-                    continue _fun56827
+                    _fun56862_ip = 83;
+                    continue _fun56862
                 }
             case 66:
                 var3 = var0.filename;

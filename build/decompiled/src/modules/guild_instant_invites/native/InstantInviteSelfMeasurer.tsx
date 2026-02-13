@@ -25,7 +25,6 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 1;
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
-    var8 = var3.StyleSheet;
     var3 = var3.View;
     var _closure1_slot4 = var3;
     var3 = 2;
@@ -33,7 +32,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var0)(var3);
     var3 = var3.jsx;
     var _closure1_slot5 = var3;
-    var7 = var8.create;
+    var3 = 3;
+    var3 = var5[var3];
+    var8 = var4.bind(var0)(var3);
+    var7 = var8.createStyles;
     var3 = {};
     var9 = {
         'position': 'absolute',
@@ -44,30 +46,32 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot6 = var3;
     var3 = var6.memo;
     var1 = function arg0() {
-        _fun109454: for (var _fun109454_ip = 0;;) switch (_fun109454_ip) {
+        _fun109642: for (var _fun109642_ip = 0;;) switch (_fun109642_ip) {
             case 0:
                 var1 = arg0;
-                var7 = var1.containerStyle;
+                var9 = var1.containerStyle;
                 var8 = var1.item;
-                var9 = var1.onMeasured;
-                var _closure2_slot0 = var9;
+                var10 = var1.onMeasured;
+                var _closure2_slot0 = var10;
                 var6 = var1.type;
                 var3 = undefined;
                 if (!(var6 === var3)) {
-                    _fun109454_ip = 41;
-                    continue _fun109454
+                    _fun109642_ip = 41;
+                    continue _fun109642
                 }
             case 37:
                 var6 = 'height';
             case 41:
                 var _closure2_slot1 = var6;
+                var1 = _closure1_slot6;
+                var7 = var1.bind(var3)();
                 var4 = _closure1_slot3;
                 var2 = var4.useCallback;
                 var1 = new Array(2);
-                var1[0] = var9;
+                var1[0] = var10;
                 var1[1] = var6;
                 var0 = function(arg0) { // Environment: var0
-                    _fun109455: for (var _fun109455_ip = 0;;) switch (_fun109455_ip) {
+                    _fun109643: for (var _fun109643_ip = 0;;) switch (_fun109643_ip) {
                         case 0:
                             var0 = arg0;
                             var0 = var0.nativeEvent;
@@ -76,16 +80,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var3 = _closure2_slot1;
                             var1 = 'height';
                             if (!(var1 !== var3)) {
-                                _fun109455_ip = 41;
-                                continue _fun109455
+                                _fun109643_ip = 40;
+                                continue _fun109643
                             }
-                        case 34:
+                        case 33:
                             var1 = var0.width;
-                            _fun109455_ip = 46;
-                            continue _fun109455;
-                        case 41:
+                            _fun109643_ip = 45;
+                            continue _fun109643;
+                        case 40:
                             var1 = var0.height;
-                        case 46:
+                        case 45:
                             var0 = undefined;
                             var1 = var2.bind(var0)(var1);
                             return var0;
@@ -103,8 +107,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     'accessible': false
                 };
                 var6 = new Array(2);
-                var6[0] = var7;
-                var7 = _closure1_slot6;
+                var6[0] = var9;
                 var7 = var7.container;
                 var6[1] = var7;
                 var0.style = var6;
@@ -112,14 +115,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var8.type;
                 var4 = 'invite';
                 if (!(var4 !== var6)) {
-                    _fun109454_ip = 199;
-                    continue _fun109454
+                    _fun109642_ip = 203;
+                    continue _fun109642
                 }
-            case 150:
+            case 154:
                 var7 = _closure1_slot5;
                 var6 = _closure1_slot0;
                 var9 = _closure1_slot2;
-                var4 = 3;
+                var4 = 4;
                 var4 = var9[var4];
                 var4 = var6.bind(var3)(var4);
                 var6 = var4.LinkedChannelInvite;
@@ -127,27 +130,27 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var8.data;
                 var4.channel = var9;
                 var4 = var7.bind(var3)(var6, var4);
-                _fun109454_ip = 241;
-                continue _fun109454;
-            case 199:
+                _fun109642_ip = 245;
+                continue _fun109642;
+            case 203:
                 var7 = _closure1_slot5;
                 var6 = _closure1_slot1;
                 var9 = _closure1_slot2;
-                var5 = 3;
+                var5 = 4;
                 var5 = var9[var5];
                 var6 = var6.bind(var3)(var5);
                 var5 = {};
                 var8 = var8.data;
                 var5.invite = var8;
                 var4 = var7.bind(var3)(var6, var5);
-            case 241:
+            case 245:
                 var0.children = var4;
                 var0 = var2.bind(var3)(var1, var0);
                 return var0;
         }
     };
     var1 = var3.bind(var6)(var1);
-    var3 = 4;
+    var3 = 5;
     var3 = var5[var3];
     var5 = var4.bind(var0)(var3);
     var4 = var5.fileFinishedImporting;
@@ -155,4 +158,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 8984, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 9197, 2]);

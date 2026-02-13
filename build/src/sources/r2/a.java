@@ -15,14 +15,14 @@ import kotlin.jvm.internal.Intrinsics;
 public abstract class a {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final c f45915a = new c(null);
+    public static final c f46483a = new c(null);
 
     /* renamed from: r2.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class C0621a {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final C0622a f45916a = new C0622a(null);
+        public static final C0622a f46484a = new C0622a(null);
 
         /* renamed from: r2.a$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
@@ -60,7 +60,7 @@ public abstract class a {
     public static final class b {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final C0623a f45917a = new C0623a(null);
+        public static final C0623a f46485a = new C0623a(null);
 
         /* renamed from: r2.a$b$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
@@ -106,17 +106,17 @@ public abstract class a {
         public final m a(Intent intent) {
             Intrinsics.checkNotNullParameter(intent, "intent");
             if (Build.VERSION.SDK_INT >= 34) {
-                return b.f45917a.a(intent);
+                return b.f46485a.a(intent);
             }
-            return C0621a.f45916a.a(intent);
+            return C0621a.f46484a.a(intent);
         }
 
         public final d0 b(Intent intent) {
             Intrinsics.checkNotNullParameter(intent, "intent");
             if (Build.VERSION.SDK_INT >= 34) {
-                return b.f45917a.b(intent);
+                return b.f46485a.b(intent);
             }
-            return C0621a.f45916a.b(intent);
+            return C0621a.f46484a.b(intent);
         }
 
         private c() {

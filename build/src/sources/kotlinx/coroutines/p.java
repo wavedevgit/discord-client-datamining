@@ -7,15 +7,15 @@ import ys.w0;
 public final class p implements w0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final boolean f35052d;
+    private final boolean f35620d;
 
     public p(boolean z10) {
-        this.f35052d = z10;
+        this.f35620d = z10;
     }
 
     @Override // ys.w0
     public boolean a() {
-        return this.f35052d;
+        return this.f35620d;
     }
 
     @Override // ys.w0

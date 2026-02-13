@@ -9,7 +9,7 @@ import net.time4j.b0;
 class g implements t, Serializable {
 
     /* renamed from: d  reason: collision with root package name */
-    static final g f37332d = new g();
+    static final g f37900d = new g();
     private static final long serialVersionUID = -5874268477318061153L;
 
     g() {
@@ -80,7 +80,7 @@ class g implements t, Serializable {
     }
 
     protected Object readResolve() {
-        return f37332d;
+        return f37900d;
     }
 
     @Override // cu.t

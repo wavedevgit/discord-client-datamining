@@ -150,10 +150,10 @@ public final class MentionableSelectComponent extends SearchableSelectComponent 
         compositeEncoder.k(serialDescriptor, 2, ActionComponentState.Serializer.INSTANCE, mentionableSelectComponent.getState());
         compositeEncoder.y(serialDescriptor, 3, mentionableSelectComponent.getCustomId());
         if (compositeEncoder.z(serialDescriptor, 4) || mentionableSelectComponent.getPlaceholder() != null) {
-            compositeEncoder.o(serialDescriptor, 4, n2.f50033a, mentionableSelectComponent.getPlaceholder());
+            compositeEncoder.o(serialDescriptor, 4, n2.f50601a, mentionableSelectComponent.getPlaceholder());
         }
         if (compositeEncoder.z(serialDescriptor, 5) || mentionableSelectComponent.getAccessibilityLabel() != null) {
-            compositeEncoder.o(serialDescriptor, 5, n2.f50033a, mentionableSelectComponent.getAccessibilityLabel());
+            compositeEncoder.o(serialDescriptor, 5, n2.f50601a, mentionableSelectComponent.getAccessibilityLabel());
         }
         compositeEncoder.w(serialDescriptor, 6, mentionableSelectComponent.getMinValues());
         compositeEncoder.w(serialDescriptor, 7, mentionableSelectComponent.getMaxValues());

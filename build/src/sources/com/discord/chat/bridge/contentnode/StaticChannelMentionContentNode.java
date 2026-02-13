@@ -95,7 +95,7 @@ public final class StaticChannelMentionContentNode extends MentionContentNode {
             compositeEncoder.o(serialDescriptor, 1, GuildId$$serializer.INSTANCE, staticChannelMentionContentNode.guildId);
         }
         if (compositeEncoder.z(serialDescriptor, 2) || staticChannelMentionContentNode.itemId != null) {
-            compositeEncoder.o(serialDescriptor, 2, n2.f50033a, staticChannelMentionContentNode.itemId);
+            compositeEncoder.o(serialDescriptor, 2, n2.f50601a, staticChannelMentionContentNode.itemId);
         }
         compositeEncoder.k(serialDescriptor, 3, (qt.o) lazyArr[3].getValue(), staticChannelMentionContentNode.getContent());
     }

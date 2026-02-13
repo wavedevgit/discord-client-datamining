@@ -26,7 +26,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = function() { // Environment: var1
         var3 = _closure1_slot3;
         var2 = function arg0, arg1() {
-            _fun33738: for (var _fun33738_ip = 0;;) switch (_fun33738_ip) {
+            _fun33768: for (var _fun33768_ip = 0;;) switch (_fun33768_ip) {
                 case 0:
                     var4 = arg0;
                     var2 = this;
@@ -49,8 +49,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var1 = var1.SensorType;
                     var1 = var1.ROTATION;
                     if (!(var4 !== var1)) {
-                        _fun33738_ip = 142;
-                        continue _fun33738
+                        _fun33768_ip = 142;
+                        continue _fun33768
                     }
                 case 95:
                     var4 = _closure1_slot0;
@@ -66,8 +66,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         'interfaceOrientation': 0
                     };
                     var1 = var4.bind(var5)(var1);
-                    _fun33738_ip = 187;
-                    continue _fun33738;
+                    _fun33768_ip = 187;
+                    continue _fun33768;
                 case 142:
                     var4 = _closure1_slot0;
                     var5 = _closure1_slot1;
@@ -96,7 +96,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var1 = 'register';
         var0.key = var1;
         var1 = function arg0() {
-            _fun33739: for (var _fun33739_ip = 0;;) switch (_fun33739_ip) {
+            _fun33769: for (var _fun33769_ip = 0;;) switch (_fun33769_ip) {
                 case 0:
                     var0 = this;
                     var2 = var0.config;
@@ -114,8 +114,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var3 = 'auto';
                     var4 = var1;
                     if (!(var3 !== var8)) {
-                        _fun33739_ip = 80;
-                        continue _fun33739
+                        _fun33769_ip = 80;
+                        continue _fun33769
                     }
                 case 74:
                     var4 = var2.interval;
@@ -139,15 +139,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var5 = 'isRunning';
         var0.key = var5;
         var5 = function() {
-            _fun33740: for (var _fun33740_ip = 0;;) switch (_fun33740_ip) {
+            _fun33770: for (var _fun33770_ip = 0;;) switch (_fun33770_ip) {
                 case 0:
                     var1 = this;
                     var2 = var1.sensorId;
                     var0 = -1;
                     var0 = var0 !== var2;
                     if (!var0) {
-                        _fun33740_ip = 34;
-                        continue _fun33740
+                        _fun33770_ip = 34;
+                        continue _fun33770
                     }
                 case 22:
                     var2 = var1.sensorId;
@@ -185,15 +185,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var5 = 'unregister';
         var0.key = var5;
         var4 = function() {
-            _fun33743: for (var _fun33743_ip = 0;;) switch (_fun33743_ip) {
+            _fun33773: for (var _fun33773_ip = 0;;) switch (_fun33773_ip) {
                 case 0:
                     var1 = this;
                     var2 = var1.sensorId;
                     var0 = null;
                     var2 = var0 !== var2;
                     if (!var2) {
-                        _fun33743_ip = 34;
-                        continue _fun33743
+                        _fun33773_ip = 34;
+                        continue _fun33773
                     }
                 case 18:
                     var4 = var1.sensorId;
@@ -201,8 +201,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var2 = var3 !== var4;
                 case 34:
                     if (!var2) {
-                        _fun33743_ip = 85;
-                        continue _fun33743
+                        _fun33773_ip = 85;
+                        continue _fun33773
                     }
                 case 37:
                     var4 = _closure1_slot0;

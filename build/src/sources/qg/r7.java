@@ -6,51 +6,51 @@ import com.facebook.react.devsupport.StackTraceHelper;
 final class r7 implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final r7 f44913a = new r7();
+    static final r7 f45481a = new r7();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final bj.c f44914b;
+    private static final bj.c f45482b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final bj.c f44915c;
+    private static final bj.c f45483c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final bj.c f44916d;
+    private static final bj.c f45484d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final bj.c f44917e;
+    private static final bj.c f45485e;
 
     /* renamed from: f  reason: collision with root package name */
-    private static final bj.c f44918f;
+    private static final bj.c f45486f;
 
     /* renamed from: g  reason: collision with root package name */
-    private static final bj.c f44919g;
+    private static final bj.c f45487g;
 
     static {
         c.b a10 = bj.c.a("pipelineNamespace");
         s1 s1Var = new s1();
         s1Var.a(1);
-        f44914b = a10.b(s1Var.b()).a();
+        f45482b = a10.b(s1Var.b()).a();
         c.b a11 = bj.c.a(StackTraceHelper.NAME_KEY);
         s1 s1Var2 = new s1();
         s1Var2.a(2);
-        f44915c = a11.b(s1Var2.b()).a();
+        f45483c = a11.b(s1Var2.b()).a();
         c.b a12 = bj.c.a("clientLibraryName");
         s1 s1Var3 = new s1();
         s1Var3.a(3);
-        f44916d = a12.b(s1Var3.b()).a();
+        f45484d = a12.b(s1Var3.b()).a();
         c.b a13 = bj.c.a("clientLibraryVersion");
         s1 s1Var4 = new s1();
         s1Var4.a(4);
-        f44917e = a13.b(s1Var4.b()).a();
+        f45485e = a13.b(s1Var4.b()).a();
         c.b a14 = bj.c.a("minClientLibraryVersion");
         s1 s1Var5 = new s1();
         s1Var5.a(5);
-        f44918f = a14.b(s1Var5.b()).a();
+        f45486f = a14.b(s1Var5.b()).a();
         c.b a15 = bj.c.a("maxClientLibraryVersion");
         s1 s1Var6 = new s1();
         s1Var6.a(6);
-        f44919g = a15.b(s1Var6.b()).a();
+        f45487g = a15.b(s1Var6.b()).a();
     }
 
     private r7() {

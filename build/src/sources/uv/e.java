@@ -10,21 +10,21 @@ import uv.a;
 public abstract class e {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Object f51304a = new Object();
+    private static final Object f51872a = new Object();
 
     /* renamed from: b  reason: collision with root package name */
-    private static Context f51305b;
+    private static Context f51873b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static Bundle f51306c;
+    private static Bundle f51874c;
 
     private static Bundle a(Context context) {
         Bundle bundle;
         ServiceInfo serviceInfo;
         Bundle bundle2;
         Context applicationContext = context.getApplicationContext();
-        synchronized (f51304a) {
-            if (applicationContext != f51305b) {
+        synchronized (f51872a) {
+            if (applicationContext != f51873b) {
                 rv.a a10 = rv.a.a("CronetManifest#getMetaData fetching info");
                 try {
                     serviceInfo = applicationContext.getPackageManager().getServiceInfo(new ComponentName(applicationContext, "android.net.http.MetaDataHolder"), 787072);
@@ -34,13 +34,13 @@ public abstract class e {
                 if (serviceInfo == null || (bundle2 = serviceInfo.metaData) == null) {
                     bundle2 = new Bundle();
                 }
-                f51306c = bundle2;
-                f51305b = applicationContext;
+                f51874c = bundle2;
+                f51873b = applicationContext;
                 if (a10 != null) {
                     a10.close();
                 }
             }
-            bundle = f51306c;
+            bundle = f51874c;
         }
         return bundle;
     }

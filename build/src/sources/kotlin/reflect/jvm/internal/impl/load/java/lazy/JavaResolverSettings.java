@@ -4,13 +4,13 @@ import org.jetbrains.annotations.NotNull;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public interface JavaResolverSettings {
     @NotNull
-    public static final Companion Companion = Companion.f32846a;
+    public static final Companion Companion = Companion.f33414a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class Companion {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ Companion f32846a = new Companion();
+        static final /* synthetic */ Companion f33414a = new Companion();
 
         private Companion() {
         }

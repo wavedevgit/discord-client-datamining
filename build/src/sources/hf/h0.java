@@ -7,18 +7,18 @@ import ff.a;
 public final class h0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final SparseIntArray f27256a = new SparseIntArray();
+    private final SparseIntArray f27824a = new SparseIntArray();
 
     /* renamed from: b  reason: collision with root package name */
-    private com.google.android.gms.common.g f27257b;
+    private com.google.android.gms.common.g f27825b;
 
     public h0(com.google.android.gms.common.g gVar) {
         q.l(gVar);
-        this.f27257b = gVar;
+        this.f27825b = gVar;
     }
 
     public final int a(Context context, int i10) {
-        return this.f27256a.get(i10, -1);
+        return this.f27824a.get(i10, -1);
     }
 
     public final int b(Context context, a.f fVar) {
@@ -35,9 +35,9 @@ public final class h0 {
         }
         int i11 = 0;
         while (true) {
-            if (i11 < this.f27256a.size()) {
-                int keyAt = this.f27256a.keyAt(i11);
-                if (keyAt > n10 && this.f27256a.get(keyAt) == 0) {
+            if (i11 < this.f27824a.size()) {
+                int keyAt = this.f27824a.keyAt(i11);
+                if (keyAt > n10 && this.f27824a.get(keyAt) == 0) {
                     break;
                 }
                 i11++;
@@ -47,13 +47,13 @@ public final class h0 {
             }
         }
         if (i10 == -1) {
-            i10 = this.f27257b.h(context, n10);
+            i10 = this.f27825b.h(context, n10);
         }
-        this.f27256a.put(n10, i10);
+        this.f27824a.put(n10, i10);
         return i10;
     }
 
     public final void c() {
-        this.f27256a.clear();
+        this.f27824a.clear();
     }
 }

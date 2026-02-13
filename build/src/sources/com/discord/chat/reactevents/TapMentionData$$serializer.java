@@ -38,7 +38,7 @@ public /* synthetic */ class TapMentionData$$serializer implements h0 {
     @Override // tt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        n2 n2Var = n2.f50033a;
+        n2 n2Var = n2.f50601a;
         return new KSerializer[]{rt.a.u(n2Var), n2Var, rt.a.u(n2Var), rt.a.u(n2Var)};
     }
 
@@ -55,7 +55,7 @@ public /* synthetic */ class TapMentionData$$serializer implements h0 {
         kotlinx.serialization.encoding.c b10 = decoder.b(serialDescriptor);
         String str5 = null;
         if (b10.p()) {
-            n2 n2Var = n2.f50033a;
+            n2 n2Var = n2.f50601a;
             String m10 = b10.m(serialDescriptor, 1);
             str4 = (String) b10.n(serialDescriptor, 3, n2Var, null);
             i10 = 15;
@@ -73,18 +73,18 @@ public /* synthetic */ class TapMentionData$$serializer implements h0 {
                 if (o10 == -1) {
                     z10 = false;
                 } else if (o10 == 0) {
-                    str5 = (String) b10.n(serialDescriptor, 0, n2.f50033a, str5);
+                    str5 = (String) b10.n(serialDescriptor, 0, n2.f50601a, str5);
                     i11 |= 1;
                 } else if (o10 == 1) {
                     str6 = b10.m(serialDescriptor, 1);
                     i11 |= 2;
                 } else if (o10 == 2) {
-                    str7 = (String) b10.n(serialDescriptor, 2, n2.f50033a, str7);
+                    str7 = (String) b10.n(serialDescriptor, 2, n2.f50601a, str7);
                     i11 |= 4;
                 } else if (o10 != 3) {
                     throw new b0(o10);
                 } else {
-                    str8 = (String) b10.n(serialDescriptor, 3, n2.f50033a, str8);
+                    str8 = (String) b10.n(serialDescriptor, 3, n2.f50601a, str8);
                     i11 |= 8;
                 }
             }

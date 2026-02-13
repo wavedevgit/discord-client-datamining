@@ -78,11 +78,11 @@ public final class Subtitle {
 
     public static final /* synthetic */ void write$Self$chat_release(Subtitle subtitle, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
         if (compositeEncoder.z(serialDescriptor, 0) || subtitle.badgeUrl != null) {
-            compositeEncoder.o(serialDescriptor, 0, n2.f50033a, subtitle.badgeUrl);
+            compositeEncoder.o(serialDescriptor, 0, n2.f50601a, subtitle.badgeUrl);
         }
         compositeEncoder.y(serialDescriptor, 1, subtitle.text);
         if (compositeEncoder.z(serialDescriptor, 2) || subtitle.ariaDescription != null) {
-            compositeEncoder.o(serialDescriptor, 2, n2.f50033a, subtitle.ariaDescription);
+            compositeEncoder.o(serialDescriptor, 2, n2.f50601a, subtitle.ariaDescription);
         }
         if (compositeEncoder.z(serialDescriptor, 3) || subtitle.clickable != null) {
             compositeEncoder.o(serialDescriptor, 3, ContentInventoryEntryClickable$$serializer.INSTANCE, subtitle.clickable);

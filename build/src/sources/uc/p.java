@@ -6,7 +6,7 @@ import java.util.Map;
 public interface p {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final p f50687a = new p() { // from class: uc.o
+    public static final p f51255a = new p() { // from class: uc.o
         @Override // uc.p
         public final k[] b() {
             return p.c();

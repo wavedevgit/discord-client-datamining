@@ -10,10 +10,10 @@ public final class l implements Parcelable {
     public static final Parcelable.Creator<l> CREATOR = new a();
 
     /* renamed from: d  reason: collision with root package name */
-    private final u f40789d;
+    private final u f41357d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final b3 f40790e;
+    private final b3 f41358e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements Parcelable.Creator {
@@ -34,16 +34,16 @@ public final class l implements Parcelable {
     public l(u documentStartPage, b3 uploadOptionsDialog) {
         Intrinsics.checkNotNullParameter(documentStartPage, "documentStartPage");
         Intrinsics.checkNotNullParameter(uploadOptionsDialog, "uploadOptionsDialog");
-        this.f40789d = documentStartPage;
-        this.f40790e = uploadOptionsDialog;
+        this.f41357d = documentStartPage;
+        this.f41358e = uploadOptionsDialog;
     }
 
     public final u a() {
-        return this.f40789d;
+        return this.f41357d;
     }
 
     public final b3 b() {
-        return this.f40790e;
+        return this.f41358e;
     }
 
     @Override // android.os.Parcelable
@@ -54,7 +54,7 @@ public final class l implements Parcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel dest, int i10) {
         Intrinsics.checkNotNullParameter(dest, "dest");
-        this.f40789d.writeToParcel(dest, i10);
-        this.f40790e.writeToParcel(dest, i10);
+        this.f41357d.writeToParcel(dest, i10);
+        this.f41358e.writeToParcel(dest, i10);
     }
 }

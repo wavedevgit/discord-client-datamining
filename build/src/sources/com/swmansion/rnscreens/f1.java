@@ -433,7 +433,7 @@ public final class f1 extends ReactViewGroup {
         if (f1Var.f19147t && (screenStackFragment = f1Var.getScreenStackFragment()) != null && (d02 = screenStackFragment.d0()) != null) {
             d02.q0();
         }
-        return Unit.f31988a;
+        return Unit.f32556a;
     }
 
     private final void w(Event event) {

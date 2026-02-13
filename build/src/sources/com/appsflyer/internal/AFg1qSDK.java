@@ -1339,13 +1339,13 @@ public final class AFg1qSDK implements AFg1rSDK {
                     AFLogger.afDebugLog("Skip 'af' payload as deeplink was found by path");
                 } else {
                     try {
-                        Result.a aVar = Result.f31985e;
+                        Result.a aVar = Result.f32553e;
                         JSONObject jSONObject = new JSONObject(str);
                         jSONObject.put("isPush", "true");
                         map.put("af_deeplink", jSONObject.toString());
-                        b10 = Result.b(Unit.f31988a);
+                        b10 = Result.b(Unit.f32556a);
                     } catch (Throwable th2) {
-                        Result.a aVar2 = Result.f31985e;
+                        Result.a aVar2 = Result.f32553e;
                         b10 = Result.b(kotlin.c.a(th2));
                     }
                     Throwable e10 = Result.e(b10);

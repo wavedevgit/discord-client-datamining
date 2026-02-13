@@ -6,7 +6,7 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 final class s implements p {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final a f31580a = new a(null);
+    public static final a f32148a = new a(null);
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a {
@@ -23,7 +23,7 @@ final class s implements p {
 
     @Override // k5.p
     public boolean a() {
-        return o.f31569a.b(null);
+        return o.f32137a.b(null);
     }
 
     @Override // k5.p

@@ -49,7 +49,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = _closure2_slot0;
                 var0 = undefined;
                 var1 = function(arg0) { // Environment: var1
-                    _fun56872: for (var _fun56872_ip = 0;;) switch (_fun56872_ip) {
+                    _fun56907: for (var _fun56907_ip = 0;;) switch (_fun56907_ip) {
                         case 0:
                             var4 = arg0;
                             var3 = _closure3_slot2;
@@ -61,8 +61,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1 = undefined;
                             var0 = undefined;
                             if (var5) {
-                                _fun56872_ip = 45;
-                                continue _fun56872
+                                _fun56907_ip = 45;
+                                continue _fun56907
                             }
                         case 37:
                             var5 = _closure3_slot1;
@@ -128,7 +128,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var3 = _closure2_slot0;
             var2 = var3.forEach;
             var1 = function(arg0) { // Environment: var1
-                _fun56875: for (var _fun56875_ip = 0;;) switch (_fun56875_ip) {
+                _fun56910: for (var _fun56910_ip = 0;;) switch (_fun56910_ip) {
                     case 0:
                         var2 = arg0;
                         var1 = _closure3_slot0;
@@ -136,8 +136,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var1 = var1[var2];
                         var3 = null;
                         if (!(var3 != var1)) {
-                            _fun56875_ip = 34;
-                            continue _fun56875
+                            _fun56910_ip = 34;
+                            continue _fun56910
                         }
                     case 26:
                         var0 = _closure3_slot1;
@@ -165,7 +165,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2 = undefined;
         var1 = var4.bind(var2)(var1);
         var0 = function(arg0) { // Environment: var0
-            _fun56877: for (var _fun56877_ip = 0;;) switch (_fun56877_ip) {
+            _fun56912: for (var _fun56912_ip = 0;;) switch (_fun56912_ip) {
                 case 0:
                     var0 = arg0;
                     var1 = var0.pollsByChannelId;
@@ -173,8 +173,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = var1[var0];
                     var1 = null;
                     if (!(var1 == var0)) {
-                        _fun56877_ip = 33;
-                        continue _fun56877
+                        _fun56912_ip = 33;
+                        continue _fun56912
                     }
                 case 26:
                     var0 = _closure1_slot3;
@@ -200,7 +200,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2 = _closure1_slot4;
             var1 = var2.setState;
             var0 = function(arg0) { // Environment: var0
-                _fun56880: for (var _fun56880_ip = 0;;) switch (_fun56880_ip) {
+                _fun56915: for (var _fun56915_ip = 0;;) switch (_fun56915_ip) {
                     case 0:
                         var0 = arg0;
                         var3 = var0.pollsByChannelId;
@@ -211,8 +211,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var6 = var3[var1];
                         var1 = null;
                         if (!(var1 == var6)) {
-                            _fun56880_ip = 47;
-                            continue _fun56880
+                            _fun56915_ip = 47;
+                            continue _fun56915
                         }
                     case 40:
                         var6 = _closure1_slot3;
@@ -274,7 +274,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2 = _closure1_slot4;
             var1 = var2.setState;
             var0 = function(arg0) { // Environment: var0
-                _fun56884: for (var _fun56884_ip = 0;;) switch (_fun56884_ip) {
+                _fun56919: for (var _fun56919_ip = 0;;) switch (_fun56919_ip) {
                     case 0:
                         var0 = arg0;
                         var5 = var0.pollsByChannelId;
@@ -284,8 +284,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var0 = var5[var0];
                         var1 = null;
                         if (!(var1 == var0)) {
-                            _fun56884_ip = 36;
-                            continue _fun56884
+                            _fun56919_ip = 36;
+                            continue _fun56919
                         }
                     case 34:
                         var0 = {};
@@ -334,7 +334,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.updatePollState = var3;
     var1 = function arg0, arg1() {
-        _fun56886: for (var _fun56886_ip = 0;;) switch (_fun56886_ip) {
+        _fun56921: for (var _fun56921_ip = 0;;) switch (_fun56921_ip) {
             case 0:
                 var1 = _closure1_slot4;
                 var0 = var1.getState;
@@ -346,8 +346,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var0 == var2;
                 var0 = undefined;
                 if (var1) {
-                    _fun56886_ip = 48;
-                    continue _fun56886
+                    _fun56921_ip = 48;
+                    continue _fun56921
                 }
             case 41:
                 var1 = arg1;
@@ -358,4 +358,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getPollState = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [797, 802, 628, 21, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [798, 803, 628, 21, 2]);

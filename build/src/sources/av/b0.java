@@ -47,7 +47,7 @@ public final class b0 implements Sink {
         okio.b.b(source.size(), 0L, j10);
         while (j10 > 0) {
             this.f6224e.f();
-            g0 g0Var = source.f40581d;
+            g0 g0Var = source.f41149d;
             Intrinsics.checkNotNull(g0Var);
             int min = (int) Math.min(j10, g0Var.f6264c - g0Var.f6263b);
             this.f6223d.write(g0Var.f6262a, g0Var.f6263b, min);
@@ -56,7 +56,7 @@ public final class b0 implements Sink {
             j10 -= j11;
             source.L0(source.size() - j11);
             if (g0Var.f6263b == g0Var.f6264c) {
-                source.f40581d = g0Var.b();
+                source.f41149d = g0Var.b();
                 h0.b(g0Var);
             }
         }

@@ -2,124 +2,14 @@
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var4 = require;
-    var11 = metroImportDefault;
+    var10 = metroImportDefault;
     var2 = exports;
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
-    var _closure1_slot1 = var11;
+    var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
-    var0 = global;
-    var7 = var0.Object;
-    var6 = var7.defineProperty;
-    var3 = {};
-    var0 = true;
-    var3.value = var0;
-    var0 = '__esModule';
-    var0 = var6.bind(var7)(var2, var0, var3);
-    var0 = 0;
-    var3 = var5[var0];
-    var0 = undefined;
-    var3 = var11.bind(var0)(var3);
-    var _closure1_slot3 = var3;
-    var13 = 1;
-    var6 = var5[var13];
-    var3 = metroImportAll;
-    var3 = var3.bind(var0)(var6);
-    var _closure1_slot4 = var3;
-    var3 = 2;
-    var3 = var5[var3];
-    var3 = var4.bind(var0)(var3);
-    var6 = var3.TouchableOpacity;
-    var _closure1_slot5 = var6;
-    var6 = var3.View;
-    var _closure1_slot6 = var6;
-    var12 = var3.StyleSheet;
-    var3 = 3;
-    var3 = var5[var3];
-    var3 = var4.bind(var0)(var3);
-    var3 = var3.ContentDismissActionType;
-    var _closure1_slot7 = var3;
-    var3 = 4;
-    var3 = var5[var3];
-    var3 = var4.bind(var0)(var3);
-    var7 = var3.jsx;
-    var _closure1_slot8 = var7;
-    var6 = var3.Fragment;
-    var _closure1_slot9 = var6;
-    var3 = var3.jsxs;
-    var _closure1_slot10 = var3;
-    var3 = 5;
-    var3 = var5[var3];
-    var8 = var4.bind(var0)(var3);
-    var6 = var8.createStyles;
-    var3 = {};
-    var9 = {};
-    var17 = var12.absoluteFillObject;
-    var18 = var9;
-    var10 = copyDataProperties(var18, var17);
-    var10 = 6;
-    var14 = var5[var10];
-    var14 = var11.bind(var0)(var14);
-    var14 = var14.colors;
-    var15 = var14.BLACK;
-    var14 = 'backgroundColor';
-    var9[var14] = var15;
-    var14 = 7;
-    var14 = var5[var14];
-    var14 = var4.bind(var0)(var14);
-    var15 = var14.BACKDROP_OPACITY;
-    var14 = 'opacity';
-    var9[var14] = var15;
-    var3.background = var9;
-    var9 = {};
-    var17 = var12.absoluteFillObject;
-    var18 = var9;
-    var12 = copyDataProperties(var18, var17);
-    var12 = 'flex';
-    var9[var12] = var13;
-    var13 = 'center';
-    var12 = 'alignItems';
-    var9[var12] = var13;
-    var12 = 'justifyContent';
-    var9[var12] = var13;
-    var3.fill = var9;
-    var9 = {
-        'position': 'absolute',
-        'bottom': 48,
-        'zIndex': 1
-    };
-    var3.dismissTextContainer = var9;
-    var9 = {
-        'backgroundColor': null,
-        'borderRadius': null,
-        'position': 'absolute',
-        'bottom': 4294966696,
-        'height': 700,
-        'width': 700
-    };
-    var12 = var5[var10];
-    var12 = var11.bind(var0)(var12);
-    var12 = var12.colors;
-    var12 = var12.BACKGROUND_SURFACE_HIGHEST;
-    var9.backgroundColor = var12;
-    var10 = var5[var10];
-    var10 = var11.bind(var0)(var10);
-    var10 = var10.radii;
-    var10 = var10.round;
-    var9.borderRadius = var10;
-    var3.dismissTextBackground = var9;
-    var3 = var6.bind(var8)(var3);
-    var _closure1_slot11 = var3;
-    var3 = {};
-    var6 = "function BurstReactionAnimationContainerTsx1(){const{animationData,showAnimation,withTiming,runOnJS,handleComponentFinish}=this.__closure;if(animationData==null){return{opacity:0};}if(!showAnimation){return{opacity:withTiming(0,{duration:300},'respect-motion-settings',function(finished){if(finished)runOnJS(handleComponentFinish)();})};}return{opacity:withTiming(1,{duration:300})};}";
-    var3.code = var6;
-    var _closure1_slot12 = var3;
-    var3 = {};
-    var6 = 'function BurstReactionAnimationContainerTsx2(finished){const{runOnJS,handleComponentFinish}=this.__closure;if(finished)runOnJS(handleComponentFinish)();}';
-    var3.code = var6;
-    var _closure1_slot13 = var3;
-    var6 = function() {
-        _fun110268: for (var _fun110268_ip = 0;;) switch (_fun110268_ip) {
+    var0 = function() {
+        _fun110297: for (var _fun110297_ip = 0;;) switch (_fun110297_ip) {
             case 0:
                 var9 = function() {
                     var2 = _closure2_slot2;
@@ -130,7 +20,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var _closure2_slot6 = var9;
                 var0 = function arg0() {
-                    _fun110270: for (var _fun110270_ip = 0;;) switch (_fun110270_ip) {
+                    _fun110299: for (var _fun110299_ip = 0;;) switch (_fun110299_ip) {
                         case 0:
                             var1 = arg0;
                             var3 = _closure2_slot4;
@@ -139,8 +29,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var2 = var3.bind(var0)(var2);
                             var2 = null;
                             if (!(var2 != var1)) {
-                                _fun110270_ip = 29;
-                                continue _fun110270
+                                _fun110299_ip = 29;
+                                continue _fun110299
                             }
                         case 25:
                             var1 = var1.bind(var0)();
@@ -242,13 +132,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var11.bind(var4)(var2);
                 var3 = var7.useAnimatedStyle;
                 var2 = function() {
-                    _fun110274: for (var _fun110274_ip = 0;;) switch (_fun110274_ip) {
+                    _fun110303: for (var _fun110303_ip = 0;;) switch (_fun110303_ip) {
                         case 0:
                             var1 = _closure2_slot1;
                             var0 = null;
                             if (!(var0 != var1)) {
-                                _fun110274_ip = 188;
-                                continue _fun110274
+                                _fun110303_ip = 188;
+                                continue _fun110303
                             }
                         case 16:
                             var2 = _closure2_slot3;
@@ -264,17 +154,17 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var6 = 300;
                             var3.duration = var6;
                             if (var2) {
-                                _fun110274_ip = 170;
-                                continue _fun110274
+                                _fun110303_ip = 170;
+                                continue _fun110303
                             }
                         case 67:
                             var6 = function arg0() {
-                                _fun110275: for (var _fun110275_ip = 0;;) switch (_fun110275_ip) {
+                                _fun110304: for (var _fun110304_ip = 0;;) switch (_fun110304_ip) {
                                     case 0:
                                         var0 = arg0;
                                         if (!var0) {
-                                            _fun110275_ip = 52;
-                                            continue _fun110275
+                                            _fun110304_ip = 52;
+                                            continue _fun110304
                                         }
                                     case 6:
                                         var2 = _closure1_slot0;
@@ -313,16 +203,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var0 = var16[var4](var15, var14, var13, var12, var11);
                             var1.opacity = var0;
                             var0 = var1;
-                            _fun110274_ip = 186;
-                            continue _fun110274;
+                            _fun110303_ip = 186;
+                            continue _fun110303;
                         case 170:
                             var2 = 1;
                             var2 = var4.bind(var5)(var2, var3);
                             var1.opacity = var2;
                             var0 = var1;
                         case 186:
-                            _fun110274_ip = 199;
-                            continue _fun110274;
+                            _fun110303_ip = 199;
+                            continue _fun110303;
                         case 188:
                             var1 = {};
                             var2 = 0;
@@ -354,8 +244,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var _closure2_slot5 = var2;
                 var1 = var0 == var1;
                 if (var1) {
-                    _fun110268_ip = 384;
-                    continue _fun110268
+                    _fun110297_ip = 384;
+                    continue _fun110297
                 }
             case 300:
                 var3 = _closure1_slot8;
@@ -375,7 +265,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6[0] = var7;
                 var1.contentTypes = var6;
                 var5 = function arg0() {
-                    _fun110276: for (var _fun110276_ip = 0;;) switch (_fun110276_ip) {
+                    _fun110305: for (var _fun110305_ip = 0;;) switch (_fun110305_ip) {
                         case 0:
                             var0 = arg0;
                             var12 = var0.visibleContent;
@@ -446,8 +336,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var17 = _closure2_slot3;
                             var15 = null;
                             if (!var17) {
-                                _fun110276_ip = 333;
-                                continue _fun110276
+                                _fun110305_ip = 333;
+                                continue _fun110305
                             }
                         case 239:
                             var20 = _closure1_slot8;
@@ -492,8 +382,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var11 = var11.SUPER_REACTIONS_MOBILE_FULLSCREEN_TAP_TO_DISMISS;
                             var11 = var12 === var11;
                             if (!var11) {
-                                _fun110276_ip = 559;
-                                continue _fun110276
+                                _fun110305_ip = 559;
+                                continue _fun110305
                             }
                         case 389:
                             var14 = _closure1_slot10;
@@ -552,9 +442,117 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
         }
     };
+    var _closure1_slot14 = var0;
+    var0 = global;
+    var7 = var0.Object;
+    var6 = var7.defineProperty;
     var3 = {};
-    var3 = var7.bind(var0)(var6, var3);
-    var _closure1_slot14 = var3;
+    var0 = true;
+    var3.value = var0;
+    var0 = '__esModule';
+    var0 = var6.bind(var7)(var2, var0, var3);
+    var0 = 0;
+    var3 = var5[var0];
+    var0 = undefined;
+    var3 = var10.bind(var0)(var3);
+    var _closure1_slot3 = var3;
+    var12 = 1;
+    var6 = var5[var12];
+    var3 = arg3;
+    var3 = var3.bind(var0)(var6);
+    var _closure1_slot4 = var3;
+    var3 = 2;
+    var3 = var5[var3];
+    var3 = var4.bind(var0)(var3);
+    var6 = var3.TouchableOpacity;
+    var _closure1_slot5 = var6;
+    var6 = var3.View;
+    var _closure1_slot6 = var6;
+    var11 = var3.StyleSheet;
+    var3 = 3;
+    var3 = var5[var3];
+    var3 = var4.bind(var0)(var3);
+    var3 = var3.ContentDismissActionType;
+    var _closure1_slot7 = var3;
+    var3 = 4;
+    var3 = var5[var3];
+    var3 = var4.bind(var0)(var3);
+    var6 = var3.jsx;
+    var _closure1_slot8 = var6;
+    var6 = var3.Fragment;
+    var _closure1_slot9 = var6;
+    var3 = var3.jsxs;
+    var _closure1_slot10 = var3;
+    var3 = 5;
+    var3 = var5[var3];
+    var7 = var4.bind(var0)(var3);
+    var6 = var7.createStyles;
+    var3 = {};
+    var8 = {};
+    var16 = var11.absoluteFillObject;
+    var17 = var8;
+    var9 = copyDataProperties(var17, var16);
+    var9 = 6;
+    var13 = var5[var9];
+    var13 = var10.bind(var0)(var13);
+    var13 = var13.colors;
+    var14 = var13.BLACK;
+    var13 = 'backgroundColor';
+    var8[var13] = var14;
+    var13 = 7;
+    var13 = var5[var13];
+    var13 = var4.bind(var0)(var13);
+    var14 = var13.BACKDROP_OPACITY;
+    var13 = 'opacity';
+    var8[var13] = var14;
+    var3.background = var8;
+    var8 = {};
+    var16 = var11.absoluteFillObject;
+    var17 = var8;
+    var11 = copyDataProperties(var17, var16);
+    var11 = 'flex';
+    var8[var11] = var12;
+    var12 = 'center';
+    var11 = 'alignItems';
+    var8[var11] = var12;
+    var11 = 'justifyContent';
+    var8[var11] = var12;
+    var3.fill = var8;
+    var8 = {
+        'position': 'absolute',
+        'bottom': 48,
+        'zIndex': 1
+    };
+    var3.dismissTextContainer = var8;
+    var8 = {
+        'backgroundColor': null,
+        'borderRadius': null,
+        'position': 'absolute',
+        'bottom': 4294966696,
+        'height': 700,
+        'width': 700
+    };
+    var11 = var5[var9];
+    var11 = var10.bind(var0)(var11);
+    var11 = var11.colors;
+    var11 = var11.BACKGROUND_SURFACE_HIGHEST;
+    var8.backgroundColor = var11;
+    var9 = var5[var9];
+    var9 = var10.bind(var0)(var9);
+    var9 = var9.radii;
+    var9 = var9.round;
+    var8.borderRadius = var9;
+    var3.dismissTextBackground = var8;
+    var3 = var6.bind(var7)(var3);
+    var _closure1_slot11 = var3;
+    var3 = {};
+    var6 = "function BurstReactionAnimationContainerTsx1(){const{animationData,showAnimation,withTiming,runOnJS,handleComponentFinish}=this.__closure;if(animationData==null){return{opacity:0};}if(!showAnimation){return{opacity:withTiming(0,{duration:300},'respect-motion-settings',function(finished){if(finished)runOnJS(handleComponentFinish)();})};}return{opacity:withTiming(1,{duration:300})};}";
+    var3.code = var6;
+    var _closure1_slot12 = var3;
+    var3 = {};
+    var6 = 'function BurstReactionAnimationContainerTsx2(finished){const{runOnJS,handleComponentFinish}=this.__closure;if(finished)runOnJS(handleComponentFinish)();}';
+    var3.code = var6;
+    var _closure1_slot13 = var3;
     var3 = 20;
     var3 = var5[var3];
     var5 = var4.bind(var0)(var3);
@@ -578,11 +576,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = var5.themes;
         var5 = var5.DARKER;
         var0.theme = var5;
-        var4 = _closure1_slot14;
+        var6 = _closure1_slot8;
+        var5 = _closure1_slot14;
+        var4 = {};
+        var4 = var6.bind(var2)(var5, var4);
         var0.children = var4;
         var0 = var3.bind(var2)(var1, var0);
         return var0;
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 1369, 33, 1297, 671, 6649, 3280, 3281, 806, 3717, 4103, 6517, 1358, 4025, 6690, 3938, 1234, 3161, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 1369, 33, 1297, 671, 6631, 3283, 3284, 807, 3717, 4103, 6016, 1358, 4025, 6672, 3938, 1235, 3164, 2]);

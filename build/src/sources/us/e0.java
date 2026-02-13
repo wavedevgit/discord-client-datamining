@@ -8,16 +8,16 @@ import us.w0;
 public class e0 implements Function0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final w0 f51029d;
+    private final w0 f51597d;
 
     public e0(w0 w0Var) {
-        this.f51029d = w0Var;
+        this.f51597d = w0Var;
     }
 
     @Override // kotlin.jvm.functions.Function0
     public Object invoke() {
         Collection F;
-        F = w0.a.F(this.f51029d);
+        F = w0.a.F(this.f51597d);
         return F;
     }
 }

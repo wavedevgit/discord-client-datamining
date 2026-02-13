@@ -22,7 +22,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'utils/StylesheetUtils.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0, arg1, arg2() {
-        _fun44428: for (var _fun44428_ip = 0;;) switch (_fun44428_ip) {
+        _fun44588: for (var _fun44588_ip = 0;;) switch (_fun44588_ip) {
             case 0:
                 var5 = 2;
                 var2 = copyRestArgs(var5);
@@ -52,8 +52,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0[var1];
                 var1 = null;
                 if (!(var1 == var0)) {
-                    _fun44428_ip = 69;
-                    continue _fun44428
+                    _fun44588_ip = 69;
+                    continue _fun44588
                 }
             case 65:
                 var1 = undefined;

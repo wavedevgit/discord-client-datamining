@@ -7,10 +7,10 @@ import qp.o;
 public final class q implements o.a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final p f45604a;
+    private final p f46172a;
 
     q(p pVar) {
-        this.f45604a = pVar;
+        this.f46172a = pVar;
     }
 
     public static lr.h b(p pVar) {
@@ -19,6 +19,6 @@ public final class q implements o.a {
 
     @Override // qp.o.a
     public o a(String str, b bVar, m mVar, List list, StepStyles.UiStepStyle uiStepStyle, Integer num) {
-        return this.f45604a.b(str, bVar, mVar, list, uiStepStyle, num);
+        return this.f46172a.b(str, bVar, mVar, list, uiStepStyle, num);
     }
 }

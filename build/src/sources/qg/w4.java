@@ -5,30 +5,30 @@ import bj.c;
 final class w4 implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final w4 f45052a = new w4();
+    static final w4 f45620a = new w4();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final bj.c f45053b;
+    private static final bj.c f45621b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final bj.c f45054c;
+    private static final bj.c f45622c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final bj.c f45055d;
+    private static final bj.c f45623d;
 
     static {
         c.b a10 = bj.c.a("inferenceCommonLogEvent");
         s1 s1Var = new s1();
         s1Var.a(1);
-        f45053b = a10.b(s1Var.b()).a();
+        f45621b = a10.b(s1Var.b()).a();
         c.b a11 = bj.c.a("options");
         s1 s1Var2 = new s1();
         s1Var2.a(2);
-        f45054c = a11.b(s1Var2.b()).a();
+        f45622c = a11.b(s1Var2.b()).a();
         c.b a12 = bj.c.a("imageInfo");
         s1 s1Var3 = new s1();
         s1Var3.a(3);
-        f45055d = a12.b(s1Var3.b()).a();
+        f45623d = a12.b(s1Var3.b()).a();
     }
 
     private w4() {

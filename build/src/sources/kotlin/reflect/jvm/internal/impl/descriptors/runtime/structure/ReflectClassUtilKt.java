@@ -42,33 +42,33 @@ import os.o;
 public final class ReflectClassUtilKt {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final List f32609a;
+    private static final List f33177a;
 
     /* renamed from: b  reason: collision with root package name */
-    private static final Map f32610b;
+    private static final Map f33178b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final Map f32611c;
+    private static final Map f33179c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final Map f32612d;
+    private static final Map f33180d;
 
     static {
         int i10 = 0;
         List o10 = CollectionsKt.o(Reflection.getOrCreateKotlinClass(Boolean.TYPE), Reflection.getOrCreateKotlinClass(Byte.TYPE), Reflection.getOrCreateKotlinClass(Character.TYPE), Reflection.getOrCreateKotlinClass(Double.TYPE), Reflection.getOrCreateKotlinClass(Float.TYPE), Reflection.getOrCreateKotlinClass(Integer.TYPE), Reflection.getOrCreateKotlinClass(Long.TYPE), Reflection.getOrCreateKotlinClass(Short.TYPE));
-        f32609a = o10;
+        f33177a = o10;
         List<KClass> list = o10;
         ArrayList arrayList = new ArrayList(CollectionsKt.w(list, 10));
         for (KClass kClass : list) {
             arrayList.add(v.a(ns.a.c(kClass), ns.a.d(kClass)));
         }
-        f32610b = o0.u(arrayList);
-        List<KClass> list2 = f32609a;
+        f33178b = o0.u(arrayList);
+        List<KClass> list2 = f33177a;
         ArrayList arrayList2 = new ArrayList(CollectionsKt.w(list2, 10));
         for (KClass kClass2 : list2) {
             arrayList2.add(v.a(ns.a.d(kClass2), ns.a.c(kClass2)));
         }
-        f32611c = o0.u(arrayList2);
+        f33179c = o0.u(arrayList2);
         List o11 = CollectionsKt.o(Function0.class, Function1.class, Function2.class, Function3.class, Function4.class, Function5.class, Function6.class, n.class, Function8.class, o.class, os.a.class, os.b.class, os.c.class, os.d.class, os.e.class, f.class, g.class, h.class, i.class, j.class, k.class, l.class, m.class);
         ArrayList arrayList3 = new ArrayList(CollectionsKt.w(o11, 10));
         for (Object obj : o11) {
@@ -79,7 +79,7 @@ public final class ReflectClassUtilKt {
             arrayList3.add(v.a((Class) obj, Integer.valueOf(i10)));
             i10 = i11;
         }
-        f32612d = o0.u(arrayList3);
+        f33180d = o0.u(arrayList3);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -205,7 +205,7 @@ public final class ReflectClassUtilKt {
 
     public static final Integer getFunctionClassArity(@NotNull Class<?> cls) {
         Intrinsics.checkNotNullParameter(cls, "<this>");
-        return (Integer) f32612d.get(cls);
+        return (Integer) f33180d.get(cls);
     }
 
     @NotNull
@@ -220,12 +220,12 @@ public final class ReflectClassUtilKt {
             Intrinsics.checkNotNullExpressionValue(actualTypeArguments, "getActualTypeArguments(...)");
             return kotlin.collections.i.R0(actualTypeArguments);
         }
-        return kotlin.sequences.k.Y(kotlin.sequences.k.L(kotlin.sequences.k.q(type, a.f32648d), b.f32649d));
+        return kotlin.sequences.k.Y(kotlin.sequences.k.L(kotlin.sequences.k.q(type, a.f33216d), b.f33217d));
     }
 
     public static final Class<?> getPrimitiveByWrapper(@NotNull Class<?> cls) {
         Intrinsics.checkNotNullParameter(cls, "<this>");
-        return (Class) f32610b.get(cls);
+        return (Class) f33178b.get(cls);
     }
 
     @NotNull
@@ -242,7 +242,7 @@ public final class ReflectClassUtilKt {
 
     public static final Class<?> getWrapperByPrimitive(@NotNull Class<?> cls) {
         Intrinsics.checkNotNullParameter(cls, "<this>");
-        return (Class) f32611c.get(cls);
+        return (Class) f33179c.get(cls);
     }
 
     public static final boolean isEnumClassOrSpecializedEnumEntryClass(@NotNull Class<?> cls) {

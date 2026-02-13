@@ -178,7 +178,7 @@ public final class SheetDetents {
     }
 
     public final int h(int i10) {
-        return p.f42844a.a(i10, d());
+        return p.f43412a.a(i10, d());
     }
 
     public final int i(int i10) {
@@ -202,7 +202,7 @@ public final class SheetDetents {
     }
 
     public final int k(int i10) {
-        return p.f42844a.c(i10, d());
+        return p.f43412a.c(i10, d());
     }
 
     public final double l() {

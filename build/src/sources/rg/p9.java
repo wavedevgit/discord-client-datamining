@@ -5,7 +5,7 @@ import bj.c;
 final class p9 implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final p9 f47060a = new p9();
+    static final p9 f47628a = new p9();
 
     static {
         c.b a10 = bj.c.a("isFaceMeshEnabled");

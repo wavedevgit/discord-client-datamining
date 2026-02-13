@@ -54,12 +54,12 @@ public abstract class g extends e {
                     return f10;
                 }
             }
-            return Unit.f31988a;
+            return Unit.f32556a;
         }
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(FlowCollector flowCollector, Continuation continuation) {
-            return ((a) create(flowCollector, continuation)).invokeSuspend(Unit.f31988a);
+            return ((a) create(flowCollector, continuation)).invokeSuspend(Unit.f32556a);
         }
     }
 
@@ -77,22 +77,22 @@ public abstract class g extends e {
                 if (q10 == gs.b.f()) {
                     return q10;
                 }
-                return Unit.f31988a;
+                return Unit.f32556a;
             }
-            d.b bVar = kotlin.coroutines.d.f32060j;
+            d.b bVar = kotlin.coroutines.d.f32628j;
             if (Intrinsics.areEqual(j10.m(bVar), context.m(bVar))) {
                 Object p10 = gVar.p(flowCollector, j10, continuation);
                 if (p10 == gs.b.f()) {
                     return p10;
                 }
-                return Unit.f31988a;
+                return Unit.f32556a;
             }
         }
         Object collect = super.collect(flowCollector, continuation);
         if (collect == gs.b.f()) {
             return collect;
         }
-        return Unit.f31988a;
+        return Unit.f32556a;
     }
 
     static /* synthetic */ Object o(g gVar, ProducerScope producerScope, Continuation continuation) {
@@ -100,7 +100,7 @@ public abstract class g extends e {
         if (q10 == gs.b.f()) {
             return q10;
         }
-        return Unit.f31988a;
+        return Unit.f32556a;
     }
 
     private final Object p(FlowCollector flowCollector, CoroutineContext coroutineContext, Continuation continuation) {

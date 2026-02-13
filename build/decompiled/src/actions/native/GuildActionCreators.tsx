@@ -9,14 +9,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var7;
     var3 = function arg0, arg1() {
-        _fun117265: for (var _fun117265_ip = 0;;) switch (_fun117265_ip) {
+        _fun116649: for (var _fun116649_ip = 0;;) switch (_fun116649_ip) {
             case 0:
                 var4 = arg1;
                 var1 = var4.length;
                 var0 = 0;
                 if (!(!(var1 <= var0))) {
-                    _fun117265_ip = 153;
-                    continue _fun117265
+                    _fun116649_ip = 153;
+                    continue _fun116649
                 }
             case 17:
                 var2 = function() {
@@ -69,14 +69,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1 = function arg0, arg1() {
-        _fun117267: for (var _fun117267_ip = 0;;) switch (_fun117267_ip) {
+        _fun116651: for (var _fun116651_ip = 0;;) switch (_fun116651_ip) {
             case 0:
                 var4 = arg1;
                 var1 = var4.length;
                 var0 = 0;
                 if (!(!(var1 <= var0))) {
-                    _fun117267_ip = 153;
-                    continue _fun117267
+                    _fun116651_ip = 153;
+                    continue _fun116651
                 }
             case 17:
                 var2 = function() {
@@ -155,4 +155,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.batchChannelUpdate = var3;
     var2.batchRoleUpdate = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 806, 507, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 807, 507, 2]);

@@ -13,25 +13,25 @@ import kotlin.jvm.internal.Lambda;
 public final class u {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final u f28968a = new u();
+    public static final u f29536a = new u();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final Lazy f28969b;
+    private static final Lazy f29537b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final Lazy f28970c;
+    private static final Lazy f29538c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final Lazy f28971d;
+    private static final Lazy f29539d;
 
     /* renamed from: e  reason: collision with root package name */
-    public static final int f28972e;
+    public static final int f29540e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     static final class a extends Lambda implements Function0 {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final a f28973d = new a();
+        public static final a f29541d = new a();
 
         a() {
             super(0);
@@ -40,7 +40,7 @@ public final class u {
         @Override // kotlin.jvm.functions.Function0
         /* renamed from: a */
         public final Field invoke() {
-            Class c10 = u.f28968a.c();
+            Class c10 = u.f29536a.c();
             if (c10 != null) {
                 Field declaredField = c10.getDeclaredField("mViews");
                 declaredField.setAccessible(true);
@@ -54,7 +54,7 @@ public final class u {
     static final class b extends Lambda implements Function0 {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final b f28974d = new b();
+        public static final b f29542d = new b();
 
         b() {
             super(0);
@@ -76,7 +76,7 @@ public final class u {
     static final class c extends Lambda implements Function0 {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final c f28975d = new c();
+        public static final c f29543d = new c();
 
         c() {
             super(0);
@@ -85,7 +85,7 @@ public final class u {
         @Override // kotlin.jvm.functions.Function0
         public final Object invoke() {
             Method method;
-            Class c10 = u.f28968a.c();
+            Class c10 = u.f29536a.c();
             if (c10 == null || (method = c10.getMethod("getInstance", null)) == null) {
                 return null;
             }
@@ -95,26 +95,26 @@ public final class u {
 
     static {
         as.o oVar = as.o.f6083i;
-        f28969b = as.l.a(oVar, b.f28974d);
-        f28970c = as.l.a(oVar, c.f28975d);
-        f28971d = as.l.a(oVar, a.f28973d);
-        f28972e = 8;
+        f29537b = as.l.a(oVar, b.f29542d);
+        f29538c = as.l.a(oVar, c.f29543d);
+        f29539d = as.l.a(oVar, a.f29541d);
+        f29540e = 8;
     }
 
     private u() {
     }
 
     private final Field b() {
-        return (Field) f28971d.getValue();
+        return (Field) f29539d.getValue();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public final Class c() {
-        return (Class) f28969b.getValue();
+        return (Class) f29537b.getValue();
     }
 
     private final Object d() {
-        return f28970c.getValue();
+        return f29538c.getValue();
     }
 
     public final void e(Function1 swap) {
@@ -122,7 +122,7 @@ public final class u {
         Intrinsics.checkNotNullParameter(swap, "swap");
         try {
             Object d10 = d();
-            if (d10 != null && (b10 = f28968a.b()) != null) {
+            if (d10 != null && (b10 = f29536a.b()) != null) {
                 Object obj = b10.get(d10);
                 Intrinsics.checkNotNull(obj, "null cannot be cast to non-null type java.util.ArrayList<android.view.View>{ kotlin.collections.TypeAliasesKt.ArrayList<android.view.View> }");
                 b10.set(d10, swap.invoke((ArrayList) obj));

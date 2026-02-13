@@ -19,56 +19,56 @@ import kotlin.jvm.internal.Intrinsics;
 public final class g {
 
     /* renamed from: a  reason: collision with root package name */
-    private final View f47473a;
+    private final View f48041a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final ReactViewGroup f47474b;
+    private final ReactViewGroup f48042b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final ThemedReactContext f47475c;
+    private final ThemedReactContext f48043c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f47476d;
+    private final int f48044d;
 
     /* renamed from: e  reason: collision with root package name */
-    private EditText f47477e;
+    private EditText f48045e;
 
     /* renamed from: f  reason: collision with root package name */
-    private nm.b f47478f;
+    private nm.b f48046f;
 
     /* renamed from: g  reason: collision with root package name */
-    private TextWatcher f47479g;
+    private TextWatcher f48047g;
 
     /* renamed from: h  reason: collision with root package name */
-    private Function0 f47480h;
+    private Function0 f48048h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final View.OnLayoutChangeListener f47481i;
+    private final View.OnLayoutChangeListener f48049i;
 
     /* renamed from: j  reason: collision with root package name */
-    private final Function1 f47482j;
+    private final Function1 f48050j;
 
     /* renamed from: k  reason: collision with root package name */
-    private final Function6 f47483k;
+    private final Function6 f48051k;
 
     /* renamed from: l  reason: collision with root package name */
-    private final ViewTreeObserver.OnGlobalFocusChangeListener f47484l;
+    private final ViewTreeObserver.OnGlobalFocusChangeListener f48052l;
 
     public g(View view, ReactViewGroup eventPropagationView, ThemedReactContext themedReactContext) {
         Intrinsics.checkNotNullParameter(view, "view");
         Intrinsics.checkNotNullParameter(eventPropagationView, "eventPropagationView");
-        this.f47473a = view;
-        this.f47474b = eventPropagationView;
-        this.f47475c = themedReactContext;
-        this.f47476d = UIManagerHelper.getSurfaceId(view);
-        this.f47478f = h.a();
-        this.f47481i = new View.OnLayoutChangeListener() { // from class: rm.b
+        this.f48041a = view;
+        this.f48042b = eventPropagationView;
+        this.f48043c = themedReactContext;
+        this.f48044d = UIManagerHelper.getSurfaceId(view);
+        this.f48046f = h.a();
+        this.f48049i = new View.OnLayoutChangeListener() { // from class: rm.b
             @Override // android.view.View.OnLayoutChangeListener
             public final void onLayoutChange(View view2, int i10, int i11, int i12, int i13, int i14, int i15, int i16, int i17) {
                 g.j(g.this, view2, i10, i11, i12, i13, i14, i15, i16, i17);
             }
         };
-        this.f47482j = new Function1() { // from class: rm.c
+        this.f48050j = new Function1() { // from class: rm.c
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Object obj) {
                 Unit m10;
@@ -76,7 +76,7 @@ public final class g {
                 return m10;
             }
         };
-        this.f47483k = new Function6() { // from class: rm.d
+        this.f48051k = new Function6() { // from class: rm.d
             @Override // kotlin.jvm.functions.Function6
             public final Object invoke(Object obj, Object obj2, Object obj3, Object obj4, Object obj5, Object obj6) {
                 Unit k10;
@@ -84,7 +84,7 @@ public final class g {
                 return k10;
             }
         };
-        this.f47484l = new ViewTreeObserver.OnGlobalFocusChangeListener() { // from class: rm.e
+        this.f48052l = new ViewTreeObserver.OnGlobalFocusChangeListener() { // from class: rm.e
             @Override // android.view.ViewTreeObserver.OnGlobalFocusChangeListener
             public final void onGlobalFocusChanged(View view2, View view3) {
                 g.h(g.this, view2, view3);
@@ -93,9 +93,9 @@ public final class g {
     }
 
     private final void g(nm.b bVar) {
-        if (!Intrinsics.areEqual(bVar, this.f47478f)) {
-            this.f47478f = bVar;
-            om.g.a(this.f47475c, this.f47474b.getId(), new nm.a(this.f47476d, this.f47474b.getId(), bVar));
+        if (!Intrinsics.areEqual(bVar, this.f48046f)) {
+            this.f48046f = bVar;
+            om.g.a(this.f48043c, this.f48042b.getId(), new nm.a(this.f48044d, this.f48042b.getId(), bVar));
         }
     }
 
@@ -103,13 +103,13 @@ public final class g {
     public static final void h(g gVar, View view, View view2) {
         View view3 = null;
         if (view2 == null || view != null) {
-            EditText editText = gVar.f47477e;
+            EditText editText = gVar.f48045e;
             if (editText != null) {
-                editText.removeOnLayoutChangeListener(gVar.f47481i);
+                editText.removeOnLayoutChangeListener(gVar.f48049i);
             }
-            final EditText editText2 = gVar.f47477e;
+            final EditText editText2 = gVar.f48045e;
             if (editText2 != null) {
-                final TextWatcher textWatcher = gVar.f47479g;
+                final TextWatcher textWatcher = gVar.f48047g;
                 editText2.post(new Runnable() { // from class: rm.f
                     @Override // java.lang.Runnable
                     public final void run() {
@@ -117,32 +117,32 @@ public final class g {
                     }
                 });
             }
-            Function0 function0 = gVar.f47480h;
+            Function0 function0 = gVar.f48048h;
             if (function0 != null) {
                 function0.invoke();
             }
-            gVar.f47477e = null;
+            gVar.f48045e = null;
         }
         if (view2 instanceof EditText) {
             EditText editText3 = (EditText) view2;
-            gVar.f47477e = editText3;
-            editText3.addOnLayoutChangeListener(gVar.f47481i);
+            gVar.f48045e = editText3;
+            editText3.addOnLayoutChangeListener(gVar.f48049i);
             gVar.l();
-            gVar.f47479g = om.c.d(editText3, gVar.f47482j);
-            gVar.f47480h = om.c.b(editText3, gVar.f47483k);
-            xm.a.f54933a.c(editText3);
-            xm.c cVar = xm.c.f54936a;
-            ThemedReactContext themedReactContext = gVar.f47475c;
+            gVar.f48047g = om.c.d(editText3, gVar.f48050j);
+            gVar.f48048h = om.c.b(editText3, gVar.f48051k);
+            xm.a.f55501a.c(editText3);
+            xm.c cVar = xm.c.f55504a;
+            ThemedReactContext themedReactContext = gVar.f48043c;
             if (themedReactContext != null) {
                 view3 = om.f.b(themedReactContext);
             }
             List g10 = cVar.g(view3);
             int indexOf = g10.indexOf(view2);
-            ThemedReactContext themedReactContext2 = gVar.f47475c;
+            ThemedReactContext themedReactContext2 = gVar.f48043c;
             WritableMap createMap = Arguments.createMap();
             createMap.putInt("current", indexOf);
             createMap.putInt("count", g10.size());
-            Unit unit = Unit.f31988a;
+            Unit unit = Unit.f32556a;
             Intrinsics.checkNotNullExpressionValue(createMap, "apply(...)");
             om.g.b(themedReactContext2, "KeyboardController::focusDidSet", createMap);
         }
@@ -163,25 +163,25 @@ public final class g {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit k(g gVar, int i10, int i11, double d10, double d11, double d12, double d13) {
-        EditText editText = gVar.f47477e;
+        EditText editText = gVar.f48045e;
         if (editText == null) {
-            return Unit.f31988a;
+            return Unit.f32556a;
         }
         gVar.l();
-        om.g.a(gVar.f47475c, gVar.f47474b.getId(), new nm.c(gVar.f47476d, gVar.f47474b.getId(), new nm.d(editText.getId(), d10, d11, d12, d13, i10, i11)));
-        return Unit.f31988a;
+        om.g.a(gVar.f48043c, gVar.f48042b.getId(), new nm.c(gVar.f48044d, gVar.f48042b.getId(), new nm.d(editText.getId(), d10, d11, d12, d13, i10, i11)));
+        return Unit.f32556a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit m(g gVar, String text) {
         Intrinsics.checkNotNullParameter(text, "text");
         gVar.l();
-        om.g.a(gVar.f47475c, gVar.f47474b.getId(), new nm.e(gVar.f47476d, gVar.f47474b.getId(), text));
-        return Unit.f31988a;
+        om.g.a(gVar.f48043c, gVar.f48042b.getId(), new nm.e(gVar.f48044d, gVar.f48042b.getId(), text));
+        return Unit.f32556a;
     }
 
     public final void l() {
-        EditText editText = this.f47477e;
+        EditText editText = this.f48045e;
         if (editText == null) {
             return;
         }

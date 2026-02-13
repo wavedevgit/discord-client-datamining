@@ -67,7 +67,7 @@ public abstract /* synthetic */ class y {
 
     public static final Source h(File file) {
         Intrinsics.checkNotNullParameter(file, "<this>");
-        return new p(new FileInputStream(file), Timeout.f40598e);
+        return new p(new FileInputStream(file), Timeout.f41166e);
     }
 
     public static final Source i(InputStream inputStream) {

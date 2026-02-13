@@ -6,13 +6,13 @@ import java.io.IOException;
 public class h extends IOException {
 
     /* renamed from: d  reason: collision with root package name */
-    private final File f36012d;
+    private final File f36580d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final File f36013e;
+    private final File f36581e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final String f36014i;
+    private final String f36582i;
 
     /* JADX WARN: Illegal instructions before constructor call */
     /*
@@ -26,9 +26,9 @@ public class h extends IOException {
             kotlin.jvm.internal.Intrinsics.checkNotNullParameter(r2, r0)
             java.lang.String r0 = ls.d.a(r2, r3, r4)
             r1.<init>(r0)
-            r1.f36012d = r2
-            r1.f36013e = r3
-            r1.f36014i = r4
+            r1.f36580d = r2
+            r1.f36581e = r3
+            r1.f36582i = r4
             return
         */
         throw new UnsupportedOperationException("Method not decompiled: ls.h.<init>(java.io.File, java.io.File, java.lang.String):void");

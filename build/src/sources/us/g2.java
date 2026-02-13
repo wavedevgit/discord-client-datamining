@@ -12,23 +12,23 @@ public class g2 extends j2 implements kotlin.reflect.k {
     private final Lazy A;
 
     /* renamed from: z  reason: collision with root package name */
-    private final Lazy f51043z;
+    private final Lazy f51611z;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a extends j2.c implements k.a {
 
         /* renamed from: u  reason: collision with root package name */
-        private final g2 f51044u;
+        private final g2 f51612u;
 
         public a(g2 property) {
             Intrinsics.checkNotNullParameter(property, "property");
-            this.f51044u = property;
+            this.f51612u = property;
         }
 
         @Override // kotlin.reflect.KProperty.a
         /* renamed from: P */
         public g2 a() {
-            return this.f51044u;
+            return this.f51612u;
         }
 
         @Override // kotlin.jvm.functions.Function2
@@ -44,7 +44,7 @@ public class g2 extends j2 implements kotlin.reflect.k {
         Intrinsics.checkNotNullParameter(name, "name");
         Intrinsics.checkNotNullParameter(signature, "signature");
         as.o oVar = as.o.f6082e;
-        this.f51043z = as.l.a(oVar, new e2(this));
+        this.f51611z = as.l.a(oVar, new e2(this));
         this.A = as.l.a(oVar, new f2(this));
     }
 
@@ -65,7 +65,7 @@ public class g2 extends j2 implements kotlin.reflect.k {
     @Override // kotlin.reflect.KProperty
     /* renamed from: Y */
     public a getGetter() {
-        return (a) this.f51043z.getValue();
+        return (a) this.f51611z.getValue();
     }
 
     @Override // kotlin.reflect.k
@@ -84,7 +84,7 @@ public class g2 extends j2 implements kotlin.reflect.k {
         Intrinsics.checkNotNullParameter(container, "container");
         Intrinsics.checkNotNullParameter(descriptor, "descriptor");
         as.o oVar = as.o.f6082e;
-        this.f51043z = as.l.a(oVar, new e2(this));
+        this.f51611z = as.l.a(oVar, new e2(this));
         this.A = as.l.a(oVar, new f2(this));
     }
 }

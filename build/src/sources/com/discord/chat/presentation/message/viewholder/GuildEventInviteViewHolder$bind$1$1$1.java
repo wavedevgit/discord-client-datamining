@@ -20,7 +20,7 @@ public /* synthetic */ class GuildEventInviteViewHolder$bind$1$1$1 extends Funct
     @Override // kotlin.jvm.functions.Function2
     public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2) {
         m726invokentcYbpo(((MessageId) obj).m1093unboximpl(), (LinkContentNode) obj2);
-        return Unit.f31988a;
+        return Unit.f32556a;
     }
 
     /* renamed from: invoke-ntcYbpo  reason: not valid java name */

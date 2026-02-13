@@ -189,10 +189,10 @@ public final class l extends FrameLayout implements com.swmansion.rnscreens.gamm
             ScreenStack a10;
             FrameLayout frameLayout = l.this.f19244q;
             com.swmansion.rnscreens.gamma.tabs.e currentFocusedTab = l.this.getCurrentFocusedTab();
-            if (currentFocusedTab.x().getShouldUseRepeatedTabSelectionPopToRootSpecialEffect() && (a10 = un.f.f50811a.a(frameLayout)) != null && a10.popToRoot()) {
+            if (currentFocusedTab.x().getShouldUseRepeatedTabSelectionPopToRootSpecialEffect() && (a10 = un.f.f51379a.a(frameLayout)) != null && a10.popToRoot()) {
                 return true;
             }
-            if (!currentFocusedTab.x().getShouldUseRepeatedTabSelectionScrollToTopSpecialEffect() || (b10 = un.f.f50811a.b(frameLayout)) == null || b10.getScrollY() <= 0) {
+            if (!currentFocusedTab.x().getShouldUseRepeatedTabSelectionScrollToTopSpecialEffect() || (b10 = un.f.f51379a.b(frameLayout)) == null || b10.getScrollY() <= 0) {
                 return false;
             }
             b10.smoothScrollTo(b10.getScrollX(), 0);
@@ -551,13 +551,13 @@ public final class l extends FrameLayout implements com.swmansion.rnscreens.gamm
         this.f19243p = cVar;
         FrameLayout frameLayout = new FrameLayout(reactContext);
         frameLayout.setLayoutParams(new FrameLayout.LayoutParams(-1, -1));
-        frameLayout.setId(un.g.f50812a.a());
+        frameLayout.setId(un.g.f51380a.a());
         this.f19244q = frameLayout;
         ArrayList arrayList = new ArrayList();
         this.f19247t = arrayList;
         this.f19251x = new com.swmansion.rnscreens.gamma.tabs.p(contextThemeWrapper, cVar, arrayList);
         this.f19252y = new com.swmansion.rnscreens.gamma.tabs.n(cVar, arrayList);
-        kotlin.properties.a aVar = kotlin.properties.a.f32075a;
+        kotlin.properties.a aVar = kotlin.properties.a.f32643a;
         this.f19253z = new k(null, this);
         this.A = new C0231l(null, this);
         this.B = new m(Boolean.TRUE, this);
@@ -1042,7 +1042,7 @@ public final class l extends FrameLayout implements com.swmansion.rnscreens.gamm
         int id2 = getId();
         eVar.a("TabsHost", "TabsHost [" + id2 + "] attached to window");
         super.onAttachedToWindow();
-        FragmentManager a10 = un.b.f50809a.a(this);
+        FragmentManager a10 = un.b.f51377a.a(this);
         if (a10 != null) {
             this.f19246s = a10;
             b bVar = this.f19240e;

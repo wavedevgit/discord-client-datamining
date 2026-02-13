@@ -15,15 +15,15 @@ public abstract class a {
     class C0657a implements d {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ File f48412a;
+        final /* synthetic */ File f48980a;
 
         C0657a(File file) {
-            this.f48412a = file;
+            this.f48980a = file;
         }
 
         @Override // sv.a.d
         public FileChannel h() {
-            return new FileInputStream(this.f48412a).getChannel();
+            return new FileInputStream(this.f48980a).getChannel();
         }
     }
 
@@ -31,19 +31,19 @@ public abstract class a {
     class b implements d {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ ParcelFileDescriptor f48413a;
+        final /* synthetic */ ParcelFileDescriptor f48981a;
 
         b(ParcelFileDescriptor parcelFileDescriptor) {
-            this.f48413a = parcelFileDescriptor;
+            this.f48981a = parcelFileDescriptor;
         }
 
         @Override // sv.a.d
         public FileChannel h() {
-            if (this.f48413a.getStatSize() != -1) {
-                return new ParcelFileDescriptor.AutoCloseInputStream(this.f48413a).getChannel();
+            if (this.f48981a.getStatSize() != -1) {
+                return new ParcelFileDescriptor.AutoCloseInputStream(this.f48981a).getChannel();
             }
-            this.f48413a.close();
-            String valueOf = String.valueOf(this.f48413a);
+            this.f48981a.close();
+            String valueOf = String.valueOf(this.f48981a);
             throw new IllegalArgumentException("Not a file: " + valueOf);
         }
     }
@@ -53,24 +53,24 @@ public abstract class a {
     public static final class c extends UploadDataProvider {
 
         /* renamed from: d  reason: collision with root package name */
-        private final ByteBuffer f48414d;
+        private final ByteBuffer f48982d;
 
         @Override // org.chromium.net.UploadDataProvider
         public long getLength() {
-            return this.f48414d.limit();
+            return this.f48982d.limit();
         }
 
         @Override // org.chromium.net.UploadDataProvider
         public void read(UploadDataSink uploadDataSink, ByteBuffer byteBuffer) {
             if (byteBuffer.hasRemaining()) {
-                if (byteBuffer.remaining() >= this.f48414d.remaining()) {
-                    byteBuffer.put(this.f48414d);
+                if (byteBuffer.remaining() >= this.f48982d.remaining()) {
+                    byteBuffer.put(this.f48982d);
                 } else {
-                    int limit = this.f48414d.limit();
-                    ByteBuffer byteBuffer2 = this.f48414d;
+                    int limit = this.f48982d.limit();
+                    ByteBuffer byteBuffer2 = this.f48982d;
                     ByteBuffer byteBuffer3 = (ByteBuffer) byteBuffer2.limit(byteBuffer2.position() + byteBuffer.remaining());
-                    byteBuffer.put(this.f48414d);
-                    ByteBuffer byteBuffer4 = (ByteBuffer) this.f48414d.limit(limit);
+                    byteBuffer.put(this.f48982d);
+                    ByteBuffer byteBuffer4 = (ByteBuffer) this.f48982d.limit(limit);
                 }
                 uploadDataSink.onReadSucceeded(false);
                 return;
@@ -80,12 +80,12 @@ public abstract class a {
 
         @Override // org.chromium.net.UploadDataProvider
         public void rewind(UploadDataSink uploadDataSink) {
-            ByteBuffer byteBuffer = (ByteBuffer) this.f48414d.position(0);
+            ByteBuffer byteBuffer = (ByteBuffer) this.f48982d.position(0);
             uploadDataSink.onRewindSucceeded();
         }
 
         private c(ByteBuffer byteBuffer) {
-            this.f48414d = byteBuffer;
+            this.f48982d = byteBuffer;
         }
     }
 
@@ -99,31 +99,31 @@ public abstract class a {
     private static final class e extends UploadDataProvider {
 
         /* renamed from: d  reason: collision with root package name */
-        private volatile FileChannel f48415d;
+        private volatile FileChannel f48983d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final d f48416e;
+        private final d f48984e;
 
         /* renamed from: i  reason: collision with root package name */
-        private final Object f48417i;
+        private final Object f48985i;
 
         private FileChannel a() {
-            if (this.f48415d == null) {
-                synchronized (this.f48417i) {
+            if (this.f48983d == null) {
+                synchronized (this.f48985i) {
                     try {
-                        if (this.f48415d == null) {
-                            this.f48415d = this.f48416e.h();
+                        if (this.f48983d == null) {
+                            this.f48983d = this.f48984e.h();
                         }
                     } finally {
                     }
                 }
             }
-            return this.f48415d;
+            return this.f48983d;
         }
 
         @Override // org.chromium.net.UploadDataProvider, java.io.Closeable, java.lang.AutoCloseable
         public void close() {
-            FileChannel fileChannel = this.f48415d;
+            FileChannel fileChannel = this.f48983d;
             if (fileChannel != null) {
                 fileChannel.close();
             }
@@ -159,8 +159,8 @@ public abstract class a {
         }
 
         private e(d dVar) {
-            this.f48417i = new Object();
-            this.f48416e = dVar;
+            this.f48985i = new Object();
+            this.f48984e = dVar;
         }
     }
 

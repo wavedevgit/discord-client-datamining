@@ -10,7 +10,7 @@ import tt.w;
 public final class d extends f2 implements KSerializer {
 
     /* renamed from: c  reason: collision with root package name */
-    public static final d f35091c = new d();
+    public static final d f35659c = new d();
 
     private d() {
         super(rt.a.D(DoubleCompanionObject.INSTANCE));

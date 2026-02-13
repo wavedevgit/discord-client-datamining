@@ -23,18 +23,17 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var3.bind(var0)(var7);
     var3 = 1;
     var3 = var5[var3];
-    var3 = var4.bind(var0)(var3);
-    var7 = var3.StyleSheet;
-    var3 = 2;
-    var3 = var5[var3];
     var3 = var6.bind(var0)(var3);
     var _closure1_slot3 = var3;
-    var3 = 3;
+    var3 = 2;
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
     var3 = var3.jsx;
     var _closure1_slot4 = var3;
-    var6 = var7.create;
+    var3 = 3;
+    var3 = var5[var3];
+    var7 = var4.bind(var0)(var3);
+    var6 = var7.createStyles;
     var3 = {};
     var8 = {};
     var9 = '100%';
@@ -49,24 +48,24 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/messages/native/burst_reactions/BurstReactionAnimation.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun55228: for (var _fun55228_ip = 0;;) switch (_fun55228_ip) {
+        _fun55263: for (var _fun55263_ip = 0;;) switch (_fun55263_ip) {
             case 0:
-                var6 = arg0;
-                var12 = var6.channelId;
-                var13 = var6.messageId;
-                var14 = var6.emoji;
-                var11 = var6.isFullscreen;
-                var2 = var6.onComplete;
-                var5 = var6.withFadeOut;
+                var3 = arg0;
+                var13 = var3.channelId;
+                var14 = var3.messageId;
+                var15 = var3.emoji;
+                var12 = var3.isFullscreen;
+                var10 = var3.onComplete;
+                var5 = var3.withFadeOut;
                 var4 = undefined;
                 if (!(var5 === var4)) {
-                    _fun55228_ip = 45;
-                    continue _fun55228
+                    _fun55263_ip = 45;
+                    continue _fun55263
                 }
             case 43:
                 var5 = true;
             case 45:
-                var3 = {
+                var2 = {
                     'channelId': 0,
                     'messageId': 0,
                     'emoji': 0,
@@ -75,103 +74,104 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     'withFadeOut': 0
                 };
                 var0 = null;
+                var18 = var2;
+                var17 = null;
+                var1 = silentSetPrototypeOf(var18, var17);
+                var18 = {};
                 var17 = var3;
-                var16 = null;
-                var1 = silentSetPrototypeOf(var17, var16);
-                var17 = {};
-                var16 = var6;
-                var15 = var3;
-                var7 = copyDataProperties(var17, var16, var15);
+                var16 = var2;
+                var7 = copyDataProperties(var18, var17, var16);
+                var2 = _closure1_slot5;
+                var8 = var2.bind(var4)();
                 var3 = _closure1_slot0;
                 var9 = _closure1_slot2;
-                var1 = 4;
-                var1 = var9[var1];
-                var10 = var3.bind(var4)(var1);
-                var6 = var10.useBurstReactionAnimationSource;
-                var1 = {};
-                var1.emoji = var14;
-                var1.messageId = var13;
-                var1.channelId = var12;
-                var1.isFullscreen = var11;
-                var6 = var6.bind(var10)(var1);
-                var1 = 5;
-                var1 = var9[var1];
-                var10 = var3.bind(var4)(var1);
-                var9 = var10.useStateFromStores;
-                var1 = _closure1_slot3;
+                var2 = 4;
+                var2 = var9[var2];
+                var11 = var3.bind(var4)(var2);
+                var6 = var11.useBurstReactionAnimationSource;
+                var2 = {};
+                var2.emoji = var15;
+                var2.messageId = var14;
+                var2.channelId = var13;
+                var2.isFullscreen = var12;
+                var6 = var6.bind(var11)(var2);
+                var2 = 5;
+                var2 = var9[var2];
+                var11 = var3.bind(var4)(var2);
+                var9 = var11.useStateFromStores;
+                var2 = _closure1_slot3;
                 var3 = new Array(1);
-                var3[0] = var1;
-                var1 = function() { // Environment: var1
+                var3[0] = var2;
+                var2 = function() { // Environment: var2
                     var0 = _closure1_slot3;
                     var0 = var0.useReducedMotion;
                     return var0;
                 };
-                var9 = var9.bind(var10)(var3, var1);
+                var9 = var9.bind(var11)(var3, var2);
                 if (!(var0 != var6)) {
-                    _fun55228_ip = 331;
-                    continue _fun55228
+                    _fun55263_ip = 335;
+                    continue _fun55263
                 }
-            case 185:
+            case 193:
                 var3 = _closure1_slot1;
-                var11 = _closure1_slot2;
+                var12 = _closure1_slot2;
                 if (var5) {
-                    _fun55228_ip = 205;
-                    continue _fun55228
+                    _fun55263_ip = 213;
+                    continue _fun55263
                 }
-            case 196:
-                var1 = 7;
-                var1 = var11[var1];
-                _fun55228_ip = 212;
-                continue _fun55228;
-            case 205:
-                var10 = 6;
-                var1 = var11[var10];
-            case 212:
-                var3 = var3.bind(var4)(var1);
-                var1 = {};
+            case 204:
+                var2 = 7;
+                var2 = var12[var2];
+                _fun55263_ip = 220;
+                continue _fun55263;
+            case 213:
+                var11 = 6;
+                var2 = var12[var11];
+            case 220:
+                var3 = var3.bind(var4)(var2);
+                var2 = {};
                 if (var5) {
-                    _fun55228_ip = 232;
-                    continue _fun55228
+                    _fun55263_ip = 240;
+                    continue _fun55263
                 }
-            case 222:
-                var1.onAnimationFinish = var2;
-                var5 = var1;
-                _fun55228_ip = 240;
-                continue _fun55228;
-            case 232:
-                var1.onComplete = var2;
-                var5 = var1;
+            case 230:
+                var2.onAnimationFinish = var10;
+                var5 = var2;
+                _fun55263_ip = 248;
+                continue _fun55263;
             case 240:
+                var2.onComplete = var10;
+                var5 = var2;
+            case 248:
                 var2 = _closure1_slot4;
                 var1 = {};
-                var8 = _closure1_slot5;
                 var8 = var8.content;
                 var1.style = var8;
                 var8 = false;
                 var1.loop = var8;
                 var8 = 1.2;
                 if (!var9) {
-                    _fun55228_ip = 289;
-                    continue _fun55228
+                    _fun55263_ip = 293;
+                    continue _fun55263
                 }
-            case 279:
+            case 283:
                 var8 = 0.5;
-            case 289:
+            case 293:
                 var1.speed = var8;
-                var17 = var1;
-                var16 = var7;
-                var7 = copyDataProperties(var17, var16);
-                var17 = var1;
-                var16 = var5;
-                var5 = copyDataProperties(var17, var16);
+                var18 = var1;
+                var17 = var7;
+                var7 = copyDataProperties(var18, var17);
+                var18 = var1;
+                var17 = var5;
+                var5 = copyDataProperties(var18, var17);
                 var5 = 'source';
                 var1[var5] = var6;
                 var1 = var2.bind(var4)(var3, var1);
                 return var1;
-            case 331:
+            case 335:
                 return var0;
         }
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1298, 33, 6649, 566, 6691, 6692, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1298, 33, 1297, 6631, 566, 6673, 6674, 2]);

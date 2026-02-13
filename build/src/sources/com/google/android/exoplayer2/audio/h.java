@@ -107,7 +107,7 @@ final class h {
 
     public h(a aVar) {
         this.f12864a = (a) oe.a.e(aVar);
-        if (w0.f39038a >= 18) {
+        if (w0.f39606a >= 18) {
             try {
                 this.f12877n = AudioTrack.class.getMethod("getLatency", null);
             } catch (NoSuchMethodException unused) {
@@ -212,7 +212,7 @@ final class h {
     }
 
     private static boolean n(int i10) {
-        if (w0.f39038a < 23) {
+        if (w0.f39606a < 23) {
             if (i10 == 5 || i10 == 6) {
                 return true;
             }
@@ -242,7 +242,7 @@ final class h {
                 }
                 playbackHeadPosition += this.f12885v;
             }
-            if (w0.f39038a <= 29) {
+            if (w0.f39606a <= 29) {
                 if (playbackHeadPosition == 0 && this.f12883t > 0 && playState == 3) {
                     if (this.f12889z == -9223372036854775807L) {
                         this.f12889z = j10;

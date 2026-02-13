@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
     var0 = function arg0, arg1() {
-        _fun67130: for (var _fun67130_ip = 0;;) switch (_fun67130_ip) {
+        _fun65841: for (var _fun65841_ip = 0;;) switch (_fun65841_ip) {
             case 0:
                 var3 = arg0;
                 var0 = arg1;
@@ -16,8 +16,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var0 == var3;
                 var0 = undefined;
                 if (var2) {
-                    _fun67130_ip = 40;
-                    continue _fun67130
+                    _fun65841_ip = 40;
+                    continue _fun65841
                 }
             case 23:
                 var2 = var3.find;
@@ -69,7 +69,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = new Array(1);
         var1[0] = var6;
         var0 = function() { // Environment: var0
-            _fun67133: for (var _fun67133_ip = 0;;) switch (_fun67133_ip) {
+            _fun65844: for (var _fun65844_ip = 0;;) switch (_fun65844_ip) {
                 case 0:
                     var2 = _closure1_slot2;
                     var1 = var2.getGuildScheduledEvent;
@@ -79,15 +79,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var3 = var1 == var2;
                     var0 = undefined;
                     if (var3) {
-                        _fun67133_ip = 42;
-                        continue _fun67133
+                        _fun65844_ip = 42;
+                        continue _fun65844
                     }
                 case 36:
                     var0 = var2.guild_scheduled_event_exceptions;
                 case 42:
                     if (!(var1 == var0)) {
-                        _fun67133_ip = 50;
-                        continue _fun67133
+                        _fun65844_ip = 50;
+                        continue _fun65844
                     }
                 case 46:
                     var0 = new Array(0);
@@ -102,7 +102,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var3;
     var1 = function arg0, arg1() {
-        _fun67134: for (var _fun67134_ip = 0;;) switch (_fun67134_ip) {
+        _fun65845: for (var _fun65845_ip = 0;;) switch (_fun65845_ip) {
             case 0:
                 var3 = _closure1_slot3;
                 var2 = _closure1_slot2;
@@ -114,15 +114,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = undefined;
                 var1 = undefined;
                 if (var5) {
-                    _fun67134_ip = 44;
-                    continue _fun67134
+                    _fun65845_ip = 44;
+                    continue _fun65845
                 }
             case 38:
                 var1 = var4.guild_scheduled_event_exceptions;
             case 44:
                 if (!(var0 == var1)) {
-                    _fun67134_ip = 52;
-                    continue _fun67134
+                    _fun65845_ip = 52;
+                    continue _fun65845
                 }
             case 48:
                 var1 = new Array(0);
@@ -134,4 +134,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getEventException = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3331, 566, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3334, 566, 2]);

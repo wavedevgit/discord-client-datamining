@@ -317,7 +317,7 @@ public class MaterialButton extends androidx.appcompat.widget.e implements Check
                 f();
             }
             if (this.J) {
-                this.P.u(Math.min(this.M, this.L.e(getDrawableState()).f48930a.a(getWidth())));
+                this.P.u(Math.min(this.M, this.L.e(getDrawableState()).f49498a.a(getWidth())));
                 if (z10) {
                     this.P.A();
                 }

@@ -21,10 +21,10 @@ public interface k extends IInterface {
         private static class C0628a implements k {
 
             /* renamed from: c  reason: collision with root package name */
-            private IBinder f45991c;
+            private IBinder f46559c;
 
             C0628a(IBinder iBinder) {
-                this.f45991c = iBinder;
+                this.f46559c = iBinder;
             }
 
             @Override // r3.k
@@ -35,7 +35,7 @@ public interface k extends IInterface {
                     obtain.writeInterfaceToken("androidx.room.IMultiInstanceInvalidationService");
                     obtain.writeStrongInterface(jVar);
                     obtain.writeString(str);
-                    this.f45991c.transact(1, obtain, obtain2, 0);
+                    this.f46559c.transact(1, obtain, obtain2, 0);
                     obtain2.readException();
                     return obtain2.readInt();
                 } finally {
@@ -51,7 +51,7 @@ public interface k extends IInterface {
                     obtain.writeInterfaceToken("androidx.room.IMultiInstanceInvalidationService");
                     obtain.writeInt(i10);
                     obtain.writeStringArray(strArr);
-                    this.f45991c.transact(3, obtain, null, 1);
+                    this.f46559c.transact(3, obtain, null, 1);
                 } finally {
                     obtain.recycle();
                 }
@@ -59,7 +59,7 @@ public interface k extends IInterface {
 
             @Override // android.os.IInterface
             public IBinder asBinder() {
-                return this.f45991c;
+                return this.f46559c;
             }
         }
 

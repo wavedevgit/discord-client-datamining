@@ -29,10 +29,10 @@ import java.util.concurrent.ConcurrentHashMap;
 public class c implements w1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final ConcurrentHashMap f29637d = new ConcurrentHashMap();
+    private final ConcurrentHashMap f30205d = new ConcurrentHashMap();
 
     /* renamed from: e  reason: collision with root package name */
-    protected final io.sentry.util.a f29638e = new io.sentry.util.a();
+    protected final io.sentry.util.a f30206e = new io.sentry.util.a();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements m1 {
@@ -186,18 +186,18 @@ public class c implements w1 {
         if (obj == null) {
             return false;
         }
-        return this.f29637d.containsKey(obj);
+        return this.f30205d.containsKey(obj);
     }
 
     public Set b() {
-        return this.f29637d.entrySet();
+        return this.f30205d.entrySet();
     }
 
     public Object c(Object obj) {
         if (obj == null) {
             return null;
         }
-        return this.f29637d.get(obj);
+        return this.f30205d.get(obj);
     }
 
     public io.sentry.protocol.a d() {
@@ -210,7 +210,7 @@ public class c implements w1 {
 
     public boolean equals(Object obj) {
         if (obj != null && (obj instanceof c)) {
-            return this.f29637d.equals(((c) obj).f29637d);
+            return this.f30205d.equals(((c) obj).f30205d);
         }
         return false;
     }
@@ -228,7 +228,7 @@ public class c implements w1 {
     }
 
     public int hashCode() {
-        return this.f29637d.hashCode();
+        return this.f30205d.hashCode();
     }
 
     public z i() {
@@ -240,7 +240,7 @@ public class c implements w1 {
     }
 
     public Enumeration k() {
-        return this.f29637d.keys();
+        return this.f30205d.keys();
     }
 
     public Object l(String str, Object obj) {
@@ -248,23 +248,23 @@ public class c implements w1 {
             return null;
         }
         if (obj == null) {
-            return this.f29637d.remove(str);
+            return this.f30205d.remove(str);
         }
-        return this.f29637d.put(str, obj);
+        return this.f30205d.put(str, obj);
     }
 
     public void m(c cVar) {
         if (cVar == null) {
             return;
         }
-        this.f29637d.putAll(cVar.f29637d);
+        this.f30205d.putAll(cVar.f30205d);
     }
 
     public Object n(Object obj) {
         if (obj == null) {
             return null;
         }
-        return this.f29637d.remove(obj);
+        return this.f30205d.remove(obj);
     }
 
     public void o(io.sentry.protocol.a aVar) {
@@ -315,7 +315,7 @@ public class c implements w1 {
     }
 
     public void w(p pVar) {
-        a1 a10 = this.f29638e.a();
+        a1 a10 = this.f30206e.a();
         try {
             l("response", pVar);
             if (a10 != null) {

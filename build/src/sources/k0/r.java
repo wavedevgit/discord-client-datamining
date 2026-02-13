@@ -18,45 +18,45 @@ import x.y0;
 public class r {
 
     /* renamed from: a  reason: collision with root package name */
-    final p0 f31473a;
+    final p0 f32041a;
 
     /* renamed from: b  reason: collision with root package name */
-    final e0 f31474b;
+    final e0 f32042b;
 
     /* renamed from: c  reason: collision with root package name */
-    final e0 f31475c;
+    final e0 f32043c;
 
     /* renamed from: d  reason: collision with root package name */
-    private c f31476d;
+    private c f32044d;
 
     /* renamed from: e  reason: collision with root package name */
-    private b f31477e;
+    private b f32045e;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public class a implements d0.c {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ l0 f31478a;
+        final /* synthetic */ l0 f32046a;
 
         a(l0 l0Var) {
-            this.f31478a = l0Var;
+            this.f32046a = l0Var;
         }
 
         @Override // d0.c
         /* renamed from: a */
         public void onSuccess(l1 l1Var) {
             b2.e.g(l1Var);
-            r.this.f31473a.a(l1Var);
+            r.this.f32041a.a(l1Var);
         }
 
         @Override // d0.c
         public void onFailure(Throwable th2) {
-            if (this.f31478a.s() == 2 && (th2 instanceof CancellationException)) {
+            if (this.f32046a.s() == 2 && (th2 instanceof CancellationException)) {
                 y0.a("DualSurfaceProcessorNode", "Downstream VideoCapture failed to provide Surface.");
                 return;
             }
-            y0.m("DualSurfaceProcessorNode", "Downstream node failed to provide Surface. Target: " + u0.a(this.f31478a.s()), th2);
+            y0.m("DualSurfaceProcessorNode", "Downstream node failed to provide Surface. Target: " + u0.a(this.f32046a.s()), th2);
         }
     }
 
@@ -78,13 +78,13 @@ public class r {
     }
 
     public r(e0 e0Var, e0 e0Var2, p0 p0Var) {
-        this.f31474b = e0Var;
-        this.f31475c = e0Var2;
-        this.f31473a = p0Var;
+        this.f32042b = e0Var;
+        this.f32043c = e0Var2;
+        this.f32041a = p0Var;
     }
 
     public static /* synthetic */ void a(r rVar) {
-        c cVar = rVar.f31476d;
+        c cVar = rVar.f32044d;
         if (cVar != null) {
             for (V v10 : cVar.values()) {
                 v10.i();
@@ -130,7 +130,7 @@ public class r {
     }
 
     private void f(e0 e0Var, l0 l0Var, Map map, boolean z10) {
-        this.f31473a.b(l0Var.l(e0Var, z10));
+        this.f32041a.b(l0Var.l(e0Var, z10));
     }
 
     private l0 h(l0 l0Var, l0.f fVar) {
@@ -154,7 +154,7 @@ public class r {
     }
 
     public void d() {
-        this.f31473a.release();
+        this.f32041a.release();
         b0.p.d(new Runnable() { // from class: k0.p
             @Override // java.lang.Runnable
             public final void run() {
@@ -165,16 +165,16 @@ public class r {
 
     public c g(b bVar) {
         b0.p.a();
-        this.f31477e = bVar;
-        this.f31476d = new c();
-        l0 b10 = this.f31477e.b();
-        l0 c10 = this.f31477e.c();
-        for (d dVar : this.f31477e.a()) {
-            this.f31476d.put(dVar, h(b10, dVar.a()));
+        this.f32045e = bVar;
+        this.f32044d = new c();
+        l0 b10 = this.f32045e.b();
+        l0 c10 = this.f32045e.c();
+        for (d dVar : this.f32045e.a()) {
+            this.f32044d.put(dVar, h(b10, dVar.a()));
         }
-        f(this.f31474b, b10, this.f31476d, true);
-        f(this.f31475c, c10, this.f31476d, false);
-        e(this.f31474b, this.f31475c, b10, c10, this.f31476d);
-        return this.f31476d;
+        f(this.f32042b, b10, this.f32044d, true);
+        f(this.f32043c, c10, this.f32044d, false);
+        e(this.f32042b, this.f32043c, b10, c10, this.f32044d);
+        return this.f32044d;
     }
 }

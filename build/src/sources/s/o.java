@@ -7,11 +7,11 @@ import s.j;
 abstract class o implements j.a {
 
     /* renamed from: a  reason: collision with root package name */
-    final Object f47799a;
+    final Object f48367a;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public o(Object obj) {
-        this.f47799a = obj;
+        this.f48367a = obj;
     }
 
     @Override // s.j.a
@@ -30,14 +30,14 @@ abstract class o implements j.a {
         if (!(obj instanceof o)) {
             return false;
         }
-        return Objects.equals(this.f47799a, ((o) obj).f47799a);
+        return Objects.equals(this.f48367a, ((o) obj).f48367a);
     }
 
     @Override // s.j.a
     public abstract Surface getSurface();
 
     public int hashCode() {
-        return this.f47799a.hashCode();
+        return this.f48367a.hashCode();
     }
 
     abstract boolean i();

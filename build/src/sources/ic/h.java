@@ -6,10 +6,10 @@ import javax.inject.Provider;
 public final class h implements cc.b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Provider f27863a;
+    private final Provider f28431a;
 
     public h(Provider provider) {
-        this.f27863a = provider;
+        this.f28431a = provider;
     }
 
     public static h a(Provider provider) {
@@ -23,6 +23,6 @@ public final class h implements cc.b {
     @Override // javax.inject.Provider
     /* renamed from: b */
     public String get() {
-        return c((Context) this.f27863a.get());
+        return c((Context) this.f28431a.get());
     }
 }

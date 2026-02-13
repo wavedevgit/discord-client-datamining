@@ -59,337 +59,337 @@ final class k8 implements bj.d {
     private static final bj.c Z0;
 
     /* renamed from: a  reason: collision with root package name */
-    static final k8 f39336a = new k8();
+    static final k8 f39904a = new k8();
 
     /* renamed from: a0  reason: collision with root package name */
-    private static final bj.c f39337a0;
+    private static final bj.c f39905a0;
 
     /* renamed from: a1  reason: collision with root package name */
-    private static final bj.c f39338a1;
+    private static final bj.c f39906a1;
 
     /* renamed from: b  reason: collision with root package name */
-    private static final bj.c f39339b;
+    private static final bj.c f39907b;
 
     /* renamed from: b0  reason: collision with root package name */
-    private static final bj.c f39340b0;
+    private static final bj.c f39908b0;
 
     /* renamed from: b1  reason: collision with root package name */
-    private static final bj.c f39341b1;
+    private static final bj.c f39909b1;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final bj.c f39342c;
+    private static final bj.c f39910c;
 
     /* renamed from: c0  reason: collision with root package name */
-    private static final bj.c f39343c0;
+    private static final bj.c f39911c0;
 
     /* renamed from: c1  reason: collision with root package name */
-    private static final bj.c f39344c1;
+    private static final bj.c f39912c1;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final bj.c f39345d;
+    private static final bj.c f39913d;
 
     /* renamed from: d0  reason: collision with root package name */
-    private static final bj.c f39346d0;
+    private static final bj.c f39914d0;
 
     /* renamed from: d1  reason: collision with root package name */
-    private static final bj.c f39347d1;
+    private static final bj.c f39915d1;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final bj.c f39348e;
+    private static final bj.c f39916e;
 
     /* renamed from: e0  reason: collision with root package name */
-    private static final bj.c f39349e0;
+    private static final bj.c f39917e0;
 
     /* renamed from: e1  reason: collision with root package name */
-    private static final bj.c f39350e1;
+    private static final bj.c f39918e1;
 
     /* renamed from: f  reason: collision with root package name */
-    private static final bj.c f39351f;
+    private static final bj.c f39919f;
 
     /* renamed from: f0  reason: collision with root package name */
-    private static final bj.c f39352f0;
+    private static final bj.c f39920f0;
 
     /* renamed from: f1  reason: collision with root package name */
-    private static final bj.c f39353f1;
+    private static final bj.c f39921f1;
 
     /* renamed from: g  reason: collision with root package name */
-    private static final bj.c f39354g;
+    private static final bj.c f39922g;
 
     /* renamed from: g0  reason: collision with root package name */
-    private static final bj.c f39355g0;
+    private static final bj.c f39923g0;
 
     /* renamed from: g1  reason: collision with root package name */
-    private static final bj.c f39356g1;
+    private static final bj.c f39924g1;
 
     /* renamed from: h  reason: collision with root package name */
-    private static final bj.c f39357h;
+    private static final bj.c f39925h;
 
     /* renamed from: h0  reason: collision with root package name */
-    private static final bj.c f39358h0;
+    private static final bj.c f39926h0;
 
     /* renamed from: h1  reason: collision with root package name */
-    private static final bj.c f39359h1;
+    private static final bj.c f39927h1;
 
     /* renamed from: i  reason: collision with root package name */
-    private static final bj.c f39360i;
+    private static final bj.c f39928i;
 
     /* renamed from: i0  reason: collision with root package name */
-    private static final bj.c f39361i0;
+    private static final bj.c f39929i0;
 
     /* renamed from: i1  reason: collision with root package name */
-    private static final bj.c f39362i1;
+    private static final bj.c f39930i1;
 
     /* renamed from: j  reason: collision with root package name */
-    private static final bj.c f39363j;
+    private static final bj.c f39931j;
 
     /* renamed from: j0  reason: collision with root package name */
-    private static final bj.c f39364j0;
+    private static final bj.c f39932j0;
 
     /* renamed from: j1  reason: collision with root package name */
-    private static final bj.c f39365j1;
+    private static final bj.c f39933j1;
 
     /* renamed from: k  reason: collision with root package name */
-    private static final bj.c f39366k;
+    private static final bj.c f39934k;
 
     /* renamed from: k0  reason: collision with root package name */
-    private static final bj.c f39367k0;
+    private static final bj.c f39935k0;
 
     /* renamed from: k1  reason: collision with root package name */
-    private static final bj.c f39368k1;
+    private static final bj.c f39936k1;
 
     /* renamed from: l  reason: collision with root package name */
-    private static final bj.c f39369l;
+    private static final bj.c f39937l;
 
     /* renamed from: l0  reason: collision with root package name */
-    private static final bj.c f39370l0;
+    private static final bj.c f39938l0;
 
     /* renamed from: l1  reason: collision with root package name */
-    private static final bj.c f39371l1;
+    private static final bj.c f39939l1;
 
     /* renamed from: m  reason: collision with root package name */
-    private static final bj.c f39372m;
+    private static final bj.c f39940m;
 
     /* renamed from: m0  reason: collision with root package name */
-    private static final bj.c f39373m0;
+    private static final bj.c f39941m0;
 
     /* renamed from: m1  reason: collision with root package name */
-    private static final bj.c f39374m1;
+    private static final bj.c f39942m1;
 
     /* renamed from: n  reason: collision with root package name */
-    private static final bj.c f39375n;
+    private static final bj.c f39943n;
 
     /* renamed from: n0  reason: collision with root package name */
-    private static final bj.c f39376n0;
+    private static final bj.c f39944n0;
 
     /* renamed from: n1  reason: collision with root package name */
-    private static final bj.c f39377n1;
+    private static final bj.c f39945n1;
 
     /* renamed from: o  reason: collision with root package name */
-    private static final bj.c f39378o;
+    private static final bj.c f39946o;
 
     /* renamed from: o0  reason: collision with root package name */
-    private static final bj.c f39379o0;
+    private static final bj.c f39947o0;
 
     /* renamed from: o1  reason: collision with root package name */
-    private static final bj.c f39380o1;
+    private static final bj.c f39948o1;
 
     /* renamed from: p  reason: collision with root package name */
-    private static final bj.c f39381p;
+    private static final bj.c f39949p;
 
     /* renamed from: p0  reason: collision with root package name */
-    private static final bj.c f39382p0;
+    private static final bj.c f39950p0;
 
     /* renamed from: p1  reason: collision with root package name */
-    private static final bj.c f39383p1;
+    private static final bj.c f39951p1;
 
     /* renamed from: q  reason: collision with root package name */
-    private static final bj.c f39384q;
+    private static final bj.c f39952q;
 
     /* renamed from: q0  reason: collision with root package name */
-    private static final bj.c f39385q0;
+    private static final bj.c f39953q0;
 
     /* renamed from: q1  reason: collision with root package name */
-    private static final bj.c f39386q1;
+    private static final bj.c f39954q1;
 
     /* renamed from: r  reason: collision with root package name */
-    private static final bj.c f39387r;
+    private static final bj.c f39955r;
 
     /* renamed from: r0  reason: collision with root package name */
-    private static final bj.c f39388r0;
+    private static final bj.c f39956r0;
 
     /* renamed from: r1  reason: collision with root package name */
-    private static final bj.c f39389r1;
+    private static final bj.c f39957r1;
 
     /* renamed from: s  reason: collision with root package name */
-    private static final bj.c f39390s;
+    private static final bj.c f39958s;
 
     /* renamed from: s0  reason: collision with root package name */
-    private static final bj.c f39391s0;
+    private static final bj.c f39959s0;
 
     /* renamed from: s1  reason: collision with root package name */
-    private static final bj.c f39392s1;
+    private static final bj.c f39960s1;
 
     /* renamed from: t  reason: collision with root package name */
-    private static final bj.c f39393t;
+    private static final bj.c f39961t;
 
     /* renamed from: t0  reason: collision with root package name */
-    private static final bj.c f39394t0;
+    private static final bj.c f39962t0;
 
     /* renamed from: t1  reason: collision with root package name */
-    private static final bj.c f39395t1;
+    private static final bj.c f39963t1;
 
     /* renamed from: u  reason: collision with root package name */
-    private static final bj.c f39396u;
+    private static final bj.c f39964u;
 
     /* renamed from: u0  reason: collision with root package name */
-    private static final bj.c f39397u0;
+    private static final bj.c f39965u0;
 
     /* renamed from: u1  reason: collision with root package name */
-    private static final bj.c f39398u1;
+    private static final bj.c f39966u1;
 
     /* renamed from: v  reason: collision with root package name */
-    private static final bj.c f39399v;
+    private static final bj.c f39967v;
 
     /* renamed from: v0  reason: collision with root package name */
-    private static final bj.c f39400v0;
+    private static final bj.c f39968v0;
 
     /* renamed from: v1  reason: collision with root package name */
-    private static final bj.c f39401v1;
+    private static final bj.c f39969v1;
 
     /* renamed from: w  reason: collision with root package name */
-    private static final bj.c f39402w;
+    private static final bj.c f39970w;
 
     /* renamed from: w0  reason: collision with root package name */
-    private static final bj.c f39403w0;
+    private static final bj.c f39971w0;
 
     /* renamed from: w1  reason: collision with root package name */
-    private static final bj.c f39404w1;
+    private static final bj.c f39972w1;
 
     /* renamed from: x  reason: collision with root package name */
-    private static final bj.c f39405x;
+    private static final bj.c f39973x;
 
     /* renamed from: x0  reason: collision with root package name */
-    private static final bj.c f39406x0;
+    private static final bj.c f39974x0;
 
     /* renamed from: x1  reason: collision with root package name */
-    private static final bj.c f39407x1;
+    private static final bj.c f39975x1;
 
     /* renamed from: y  reason: collision with root package name */
-    private static final bj.c f39408y;
+    private static final bj.c f39976y;
 
     /* renamed from: y0  reason: collision with root package name */
-    private static final bj.c f39409y0;
+    private static final bj.c f39977y0;
 
     /* renamed from: y1  reason: collision with root package name */
-    private static final bj.c f39410y1;
+    private static final bj.c f39978y1;
 
     /* renamed from: z  reason: collision with root package name */
-    private static final bj.c f39411z;
+    private static final bj.c f39979z;
 
     /* renamed from: z0  reason: collision with root package name */
-    private static final bj.c f39412z0;
+    private static final bj.c f39980z0;
 
     static {
         c.b a10 = bj.c.a("systemInfo");
         l2 l2Var = new l2();
         l2Var.a(1);
-        f39339b = a10.b(l2Var.b()).a();
+        f39907b = a10.b(l2Var.b()).a();
         c.b a11 = bj.c.a("eventName");
         l2 l2Var2 = new l2();
         l2Var2.a(2);
-        f39342c = a11.b(l2Var2.b()).a();
+        f39910c = a11.b(l2Var2.b()).a();
         c.b a12 = bj.c.a("isThickClient");
         l2 l2Var3 = new l2();
         l2Var3.a(37);
-        f39345d = a12.b(l2Var3.b()).a();
+        f39913d = a12.b(l2Var3.b()).a();
         c.b a13 = bj.c.a("clientType");
         l2 l2Var4 = new l2();
         l2Var4.a(61);
-        f39348e = a13.b(l2Var4.b()).a();
+        f39916e = a13.b(l2Var4.b()).a();
         c.b a14 = bj.c.a("modelDownloadLogEvent");
         l2 l2Var5 = new l2();
         l2Var5.a(3);
-        f39351f = a14.b(l2Var5.b()).a();
+        f39919f = a14.b(l2Var5.b()).a();
         c.b a15 = bj.c.a("customModelLoadLogEvent");
         l2 l2Var6 = new l2();
         l2Var6.a(20);
-        f39354g = a15.b(l2Var6.b()).a();
+        f39922g = a15.b(l2Var6.b()).a();
         c.b a16 = bj.c.a("customModelInferenceLogEvent");
         l2 l2Var7 = new l2();
         l2Var7.a(4);
-        f39357h = a16.b(l2Var7.b()).a();
+        f39925h = a16.b(l2Var7.b()).a();
         c.b a17 = bj.c.a("customModelCreateLogEvent");
         l2 l2Var8 = new l2();
         l2Var8.a(29);
-        f39360i = a17.b(l2Var8.b()).a();
+        f39928i = a17.b(l2Var8.b()).a();
         c.b a18 = bj.c.a("onDeviceFaceDetectionLogEvent");
         l2 l2Var9 = new l2();
         l2Var9.a(5);
-        f39363j = a18.b(l2Var9.b()).a();
+        f39931j = a18.b(l2Var9.b()).a();
         c.b a19 = bj.c.a("onDeviceFaceLoadLogEvent");
         l2 l2Var10 = new l2();
         l2Var10.a(59);
-        f39366k = a19.b(l2Var10.b()).a();
+        f39934k = a19.b(l2Var10.b()).a();
         c.b a20 = bj.c.a("onDeviceTextDetectionLogEvent");
         l2 l2Var11 = new l2();
         l2Var11.a(6);
-        f39369l = a20.b(l2Var11.b()).a();
+        f39937l = a20.b(l2Var11.b()).a();
         c.b a21 = bj.c.a("onDeviceTextDetectionLoadLogEvent");
         l2 l2Var12 = new l2();
         l2Var12.a(79);
-        f39372m = a21.b(l2Var12.b()).a();
+        f39940m = a21.b(l2Var12.b()).a();
         c.b a22 = bj.c.a("onDeviceBarcodeDetectionLogEvent");
         l2 l2Var13 = new l2();
         l2Var13.a(7);
-        f39375n = a22.b(l2Var13.b()).a();
+        f39943n = a22.b(l2Var13.b()).a();
         c.b a23 = bj.c.a("onDeviceBarcodeLoadLogEvent");
         l2 l2Var14 = new l2();
         l2Var14.a(58);
-        f39378o = a23.b(l2Var14.b()).a();
+        f39946o = a23.b(l2Var14.b()).a();
         c.b a24 = bj.c.a("onDeviceImageLabelCreateLogEvent");
         l2 l2Var15 = new l2();
         l2Var15.a(48);
-        f39381p = a24.b(l2Var15.b()).a();
+        f39949p = a24.b(l2Var15.b()).a();
         c.b a25 = bj.c.a("onDeviceImageLabelLoadLogEvent");
         l2 l2Var16 = new l2();
         l2Var16.a(49);
-        f39384q = a25.b(l2Var16.b()).a();
+        f39952q = a25.b(l2Var16.b()).a();
         c.b a26 = bj.c.a("onDeviceImageLabelDetectionLogEvent");
         l2 l2Var17 = new l2();
         l2Var17.a(18);
-        f39387r = a26.b(l2Var17.b()).a();
+        f39955r = a26.b(l2Var17.b()).a();
         c.b a27 = bj.c.a("onDeviceObjectCreateLogEvent");
         l2 l2Var18 = new l2();
         l2Var18.a(26);
-        f39390s = a27.b(l2Var18.b()).a();
+        f39958s = a27.b(l2Var18.b()).a();
         c.b a28 = bj.c.a("onDeviceObjectLoadLogEvent");
         l2 l2Var19 = new l2();
         l2Var19.a(27);
-        f39393t = a28.b(l2Var19.b()).a();
+        f39961t = a28.b(l2Var19.b()).a();
         c.b a29 = bj.c.a("onDeviceObjectInferenceLogEvent");
         l2 l2Var20 = new l2();
         l2Var20.a(28);
-        f39396u = a29.b(l2Var20.b()).a();
+        f39964u = a29.b(l2Var20.b()).a();
         c.b a30 = bj.c.a("onDevicePoseDetectionLogEvent");
         l2 l2Var21 = new l2();
         l2Var21.a(44);
-        f39399v = a30.b(l2Var21.b()).a();
+        f39967v = a30.b(l2Var21.b()).a();
         c.b a31 = bj.c.a("onDeviceSegmentationLogEvent");
         l2 l2Var22 = new l2();
         l2Var22.a(45);
-        f39402w = a31.b(l2Var22.b()).a();
+        f39970w = a31.b(l2Var22.b()).a();
         c.b a32 = bj.c.a("onDeviceSmartReplyLogEvent");
         l2 l2Var23 = new l2();
         l2Var23.a(19);
-        f39405x = a32.b(l2Var23.b()).a();
+        f39973x = a32.b(l2Var23.b()).a();
         c.b a33 = bj.c.a("onDeviceLanguageIdentificationLogEvent");
         l2 l2Var24 = new l2();
         l2Var24.a(21);
-        f39408y = a33.b(l2Var24.b()).a();
+        f39976y = a33.b(l2Var24.b()).a();
         c.b a34 = bj.c.a("onDeviceTranslationLogEvent");
         l2 l2Var25 = new l2();
         l2Var25.a(22);
-        f39411z = a34.b(l2Var25.b()).a();
+        f39979z = a34.b(l2Var25.b()).a();
         c.b a35 = bj.c.a("cloudFaceDetectionLogEvent");
         l2 l2Var26 = new l2();
         l2Var26.a(8);
@@ -497,107 +497,107 @@ final class k8 implements bj.d {
         c.b a61 = bj.c.a("inputImageConstructionLogEvent");
         l2 l2Var52 = new l2();
         l2Var52.a(50);
-        f39337a0 = a61.b(l2Var52.b()).a();
+        f39905a0 = a61.b(l2Var52.b()).a();
         c.b a62 = bj.c.a("leakedHandleEvent");
         l2 l2Var53 = new l2();
         l2Var53.a(51);
-        f39340b0 = a62.b(l2Var53.b()).a();
+        f39908b0 = a62.b(l2Var53.b()).a();
         c.b a63 = bj.c.a("cameraSourceLogEvent");
         l2 l2Var54 = new l2();
         l2Var54.a(52);
-        f39343c0 = a63.b(l2Var54.b()).a();
+        f39911c0 = a63.b(l2Var54.b()).a();
         c.b a64 = bj.c.a("imageLabelOptionalModuleLogEvent");
         l2 l2Var55 = new l2();
         l2Var55.a(53);
-        f39346d0 = a64.b(l2Var55.b()).a();
+        f39914d0 = a64.b(l2Var55.b()).a();
         c.b a65 = bj.c.a("languageIdentificationOptionalModuleLogEvent");
         l2 l2Var56 = new l2();
         l2Var56.a(54);
-        f39349e0 = a65.b(l2Var56.b()).a();
+        f39917e0 = a65.b(l2Var56.b()).a();
         c.b a66 = bj.c.a("faceDetectionOptionalModuleLogEvent");
         l2 l2Var57 = new l2();
         l2Var57.a(60);
-        f39352f0 = a66.b(l2Var57.b()).a();
+        f39920f0 = a66.b(l2Var57.b()).a();
         c.b a67 = bj.c.a("documentDetectionOptionalModuleLogEvent");
         l2 l2Var58 = new l2();
         l2Var58.a(85);
-        f39355g0 = a67.b(l2Var58.b()).a();
+        f39923g0 = a67.b(l2Var58.b()).a();
         c.b a68 = bj.c.a("documentCroppingOptionalModuleLogEvent");
         l2 l2Var59 = new l2();
         l2Var59.a(86);
-        f39358h0 = a68.b(l2Var59.b()).a();
+        f39926h0 = a68.b(l2Var59.b()).a();
         c.b a69 = bj.c.a("documentEnhancementOptionalModuleLogEvent");
         l2 l2Var60 = new l2();
         l2Var60.a(87);
-        f39361i0 = a69.b(l2Var60.b()).a();
+        f39929i0 = a69.b(l2Var60.b()).a();
         c.b a70 = bj.c.a("nlClassifierOptionalModuleLogEvent");
         l2 l2Var61 = new l2();
         l2Var61.a(55);
-        f39364j0 = a70.b(l2Var61.b()).a();
+        f39932j0 = a70.b(l2Var61.b()).a();
         c.b a71 = bj.c.a("nlClassifierClientLibraryLogEvent");
         l2 l2Var62 = new l2();
         l2Var62.a(56);
-        f39367k0 = a71.b(l2Var62.b()).a();
+        f39935k0 = a71.b(l2Var62.b()).a();
         c.b a72 = bj.c.a("accelerationAllowlistLogEvent");
         l2 l2Var63 = new l2();
         l2Var63.a(57);
-        f39370l0 = a72.b(l2Var63.b()).a();
+        f39938l0 = a72.b(l2Var63.b()).a();
         c.b a73 = bj.c.a("toxicityDetectionCreateEvent");
         l2 l2Var64 = new l2();
         l2Var64.a(62);
-        f39373m0 = a73.b(l2Var64.b()).a();
+        f39941m0 = a73.b(l2Var64.b()).a();
         c.b a74 = bj.c.a("toxicityDetectionLoadEvent");
         l2 l2Var65 = new l2();
         l2Var65.a(63);
-        f39376n0 = a74.b(l2Var65.b()).a();
+        f39944n0 = a74.b(l2Var65.b()).a();
         c.b a75 = bj.c.a("toxicityDetectionInferenceEvent");
         l2 l2Var66 = new l2();
         l2Var66.a(64);
-        f39379o0 = a75.b(l2Var66.b()).a();
+        f39947o0 = a75.b(l2Var66.b()).a();
         c.b a76 = bj.c.a("barcodeDetectionOptionalModuleLogEvent");
         l2 l2Var67 = new l2();
         l2Var67.a(65);
-        f39382p0 = a76.b(l2Var67.b()).a();
+        f39950p0 = a76.b(l2Var67.b()).a();
         c.b a77 = bj.c.a("customImageLabelOptionalModuleLogEvent");
         l2 l2Var68 = new l2();
         l2Var68.a(66);
-        f39385q0 = a77.b(l2Var68.b()).a();
+        f39953q0 = a77.b(l2Var68.b()).a();
         c.b a78 = bj.c.a("codeScannerScanApiEvent");
         l2 l2Var69 = new l2();
         l2Var69.a(67);
-        f39388r0 = a78.b(l2Var69.b()).a();
+        f39956r0 = a78.b(l2Var69.b()).a();
         c.b a79 = bj.c.a("codeScannerOptionalModuleEvent");
         l2 l2Var70 = new l2();
         l2Var70.a(68);
-        f39391s0 = a79.b(l2Var70.b()).a();
+        f39959s0 = a79.b(l2Var70.b()).a();
         c.b a80 = bj.c.a("onDeviceExplicitContentCreateLogEvent");
         l2 l2Var71 = new l2();
         l2Var71.a(70);
-        f39394t0 = a80.b(l2Var71.b()).a();
+        f39962t0 = a80.b(l2Var71.b()).a();
         c.b a81 = bj.c.a("onDeviceExplicitContentLoadLogEvent");
         l2 l2Var72 = new l2();
         l2Var72.a(71);
-        f39397u0 = a81.b(l2Var72.b()).a();
+        f39965u0 = a81.b(l2Var72.b()).a();
         c.b a82 = bj.c.a("onDeviceExplicitContentInferenceLogEvent");
         l2 l2Var73 = new l2();
         l2Var73.a(72);
-        f39400v0 = a82.b(l2Var73.b()).a();
+        f39968v0 = a82.b(l2Var73.b()).a();
         c.b a83 = bj.c.a("aggregatedOnDeviceExplicitContentLogEvent");
         l2 l2Var74 = new l2();
         l2Var74.a(73);
-        f39403w0 = a83.b(l2Var74.b()).a();
+        f39971w0 = a83.b(l2Var74.b()).a();
         c.b a84 = bj.c.a("onDeviceFaceMeshCreateLogEvent");
         l2 l2Var75 = new l2();
         l2Var75.a(74);
-        f39406x0 = a84.b(l2Var75.b()).a();
+        f39974x0 = a84.b(l2Var75.b()).a();
         c.b a85 = bj.c.a("onDeviceFaceMeshLoadLogEvent");
         l2 l2Var76 = new l2();
         l2Var76.a(75);
-        f39409y0 = a85.b(l2Var76.b()).a();
+        f39977y0 = a85.b(l2Var76.b()).a();
         c.b a86 = bj.c.a("onDeviceFaceMeshLogEvent");
         l2 l2Var77 = new l2();
         l2Var77.a(76);
-        f39412z0 = a86.b(l2Var77.b()).a();
+        f39980z0 = a86.b(l2Var77.b()).a();
         c.b a87 = bj.c.a("aggregatedOnDeviceFaceMeshLogEvent");
         l2 l2Var78 = new l2();
         l2Var78.a(77);
@@ -705,103 +705,103 @@ final class k8 implements bj.d {
         c.b a113 = bj.c.a("lowLightAutoExposureComputationEvent");
         l2 l2Var104 = new l2();
         l2Var104.a(107);
-        f39338a1 = a113.b(l2Var104.b()).a();
+        f39906a1 = a113.b(l2Var104.b()).a();
         c.b a114 = bj.c.a("lowLightFrameProcessEvent");
         l2 l2Var105 = new l2();
         l2Var105.a(108);
-        f39341b1 = a114.b(l2Var105.b()).a();
+        f39909b1 = a114.b(l2Var105.b()).a();
         c.b a115 = bj.c.a("lowLightSceneDetectionEvent");
         l2 l2Var106 = new l2();
         l2Var106.a(109);
-        f39344c1 = a115.b(l2Var106.b()).a();
+        f39912c1 = a115.b(l2Var106.b()).a();
         c.b a116 = bj.c.a("onDeviceStainRemovalLogEvent");
         l2 l2Var107 = new l2();
         l2Var107.a(110);
-        f39347d1 = a116.b(l2Var107.b()).a();
+        f39915d1 = a116.b(l2Var107.b()).a();
         c.b a117 = bj.c.a("aggregatedOnDeviceStainRemovalLogEvent");
         l2 l2Var108 = new l2();
         l2Var108.a(111);
-        f39350e1 = a117.b(l2Var108.b()).a();
+        f39918e1 = a117.b(l2Var108.b()).a();
         c.b a118 = bj.c.a("stainRemovalOptionalModuleLogEvent");
         l2 l2Var109 = new l2();
         l2Var109.a(112);
-        f39353f1 = a118.b(l2Var109.b()).a();
+        f39921f1 = a118.b(l2Var109.b()).a();
         c.b a119 = bj.c.a("onDeviceShadowRemovalLogEvent");
         l2 l2Var110 = new l2();
         l2Var110.a(113);
-        f39356g1 = a119.b(l2Var110.b()).a();
+        f39924g1 = a119.b(l2Var110.b()).a();
         c.b a120 = bj.c.a("aggregatedOnDeviceShadowRemovalLogEvent");
         l2 l2Var111 = new l2();
         l2Var111.a(MediaEngine.MAX_SUPPORTED_PROTOCOL_VERSION);
-        f39359h1 = a120.b(l2Var111.b()).a();
+        f39927h1 = a120.b(l2Var111.b()).a();
         c.b a121 = bj.c.a("shadowRemovalOptionalModuleLogEvent");
         l2 l2Var112 = new l2();
         l2Var112.a(115);
-        f39362i1 = a121.b(l2Var112.b()).a();
+        f39930i1 = a121.b(l2Var112.b()).a();
         c.b a122 = bj.c.a("onDeviceDigitalInkSegmentationLogEvent");
         l2 l2Var113 = new l2();
         l2Var113.a(116);
-        f39365j1 = a122.b(l2Var113.b()).a();
+        f39933j1 = a122.b(l2Var113.b()).a();
         c.b a123 = bj.c.a("onDeviceDocumentScannerStartLogEvent");
         l2 l2Var114 = new l2();
         l2Var114.a(117);
-        f39368k1 = a123.b(l2Var114.b()).a();
+        f39936k1 = a123.b(l2Var114.b()).a();
         c.b a124 = bj.c.a("onDeviceDocumentScannerFinishLogEvent");
         l2 l2Var115 = new l2();
         l2Var115.a(118);
-        f39371l1 = a124.b(l2Var115.b()).a();
+        f39939l1 = a124.b(l2Var115.b()).a();
         c.b a125 = bj.c.a("onDeviceDocumentScannerUiStartLogEvent");
         l2 l2Var116 = new l2();
         l2Var116.a(119);
-        f39374m1 = a125.b(l2Var116.b()).a();
+        f39942m1 = a125.b(l2Var116.b()).a();
         c.b a126 = bj.c.a("onDeviceDocumentScannerUiFinishLogEvent");
         l2 l2Var117 = new l2();
         l2Var117.a(120);
-        f39377n1 = a126.b(l2Var117.b()).a();
+        f39945n1 = a126.b(l2Var117.b()).a();
         c.b a127 = bj.c.a("documentScannerUiOptionalModuleSessionStartLogEvent");
         l2 l2Var118 = new l2();
         l2Var118.a(121);
-        f39380o1 = a127.b(l2Var118.b()).a();
+        f39948o1 = a127.b(l2Var118.b()).a();
         c.b a128 = bj.c.a("documentScannerUiOptionalModuleSessionFinishLogEvent");
         l2 l2Var119 = new l2();
         l2Var119.a(122);
-        f39383p1 = a128.b(l2Var119.b()).a();
+        f39951p1 = a128.b(l2Var119.b()).a();
         c.b a129 = bj.c.a("onDeviceDocumentScannerUiCreateLogEvent");
         l2 l2Var120 = new l2();
         l2Var120.a(123);
-        f39386q1 = a129.b(l2Var120.b()).a();
+        f39954q1 = a129.b(l2Var120.b()).a();
         c.b a130 = bj.c.a("onDeviceSubjectSegmentationCreateLogEvent");
         l2 l2Var121 = new l2();
         l2Var121.a(124);
-        f39389r1 = a130.b(l2Var121.b()).a();
+        f39957r1 = a130.b(l2Var121.b()).a();
         c.b a131 = bj.c.a("onDeviceSubjectSegmentationLoadLogEvent");
         l2 l2Var122 = new l2();
         l2Var122.a(125);
-        f39392s1 = a131.b(l2Var122.b()).a();
+        f39960s1 = a131.b(l2Var122.b()).a();
         c.b a132 = bj.c.a("onDeviceSubjectSegmentationInferenceLogEvent");
         l2 l2Var123 = new l2();
         l2Var123.a(126);
-        f39395t1 = a132.b(l2Var123.b()).a();
+        f39963t1 = a132.b(l2Var123.b()).a();
         c.b a133 = bj.c.a("aggregatedOnDeviceSubjectSegmentationLogEvent");
         l2 l2Var124 = new l2();
         l2Var124.a(127);
-        f39398u1 = a133.b(l2Var124.b()).a();
+        f39966u1 = a133.b(l2Var124.b()).a();
         c.b a134 = bj.c.a("subjectSegmentationOptionalModuleLogEvent");
         l2 l2Var125 = new l2();
         l2Var125.a(IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT);
-        f39401v1 = a134.b(l2Var125.b()).a();
+        f39969v1 = a134.b(l2Var125.b()).a();
         c.b a135 = bj.c.a("documentScannerUiModuleScreenViewEvent");
         l2 l2Var126 = new l2();
         l2Var126.a(129);
-        f39404w1 = a135.b(l2Var126.b()).a();
+        f39972w1 = a135.b(l2Var126.b()).a();
         c.b a136 = bj.c.a("documentScannerUiModuleScreenClickEvent");
         l2 l2Var127 = new l2();
         l2Var127.a(130);
-        f39407x1 = a136.b(l2Var127.b()).a();
+        f39975x1 = a136.b(l2Var127.b()).a();
         c.b a137 = bj.c.a("documentScannerUiModuleScreenErrorEvent");
         l2 l2Var128 = new l2();
         l2Var128.a(131);
-        f39410y1 = a137.b(l2Var128.b()).a();
+        f39978y1 = a137.b(l2Var128.b()).a();
     }
 
     private k8() {
@@ -811,31 +811,31 @@ final class k8 implements bj.d {
     public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
         bf bfVar = (bf) obj;
         bj.e eVar = (bj.e) obj2;
-        eVar.e(f39339b, bfVar.g());
-        eVar.e(f39342c, bfVar.c());
-        eVar.e(f39345d, null);
-        eVar.e(f39348e, bfVar.b());
-        eVar.e(f39351f, null);
-        eVar.e(f39354g, null);
-        eVar.e(f39357h, null);
-        eVar.e(f39360i, null);
-        eVar.e(f39363j, null);
-        eVar.e(f39366k, null);
-        eVar.e(f39369l, null);
-        eVar.e(f39372m, null);
-        eVar.e(f39375n, bfVar.d());
-        eVar.e(f39378o, bfVar.e());
-        eVar.e(f39381p, null);
-        eVar.e(f39384q, null);
-        eVar.e(f39387r, null);
-        eVar.e(f39390s, null);
-        eVar.e(f39393t, null);
-        eVar.e(f39396u, null);
-        eVar.e(f39399v, null);
-        eVar.e(f39402w, null);
-        eVar.e(f39405x, null);
-        eVar.e(f39408y, null);
-        eVar.e(f39411z, null);
+        eVar.e(f39907b, bfVar.g());
+        eVar.e(f39910c, bfVar.c());
+        eVar.e(f39913d, null);
+        eVar.e(f39916e, bfVar.b());
+        eVar.e(f39919f, null);
+        eVar.e(f39922g, null);
+        eVar.e(f39925h, null);
+        eVar.e(f39928i, null);
+        eVar.e(f39931j, null);
+        eVar.e(f39934k, null);
+        eVar.e(f39937l, null);
+        eVar.e(f39940m, null);
+        eVar.e(f39943n, bfVar.d());
+        eVar.e(f39946o, bfVar.e());
+        eVar.e(f39949p, null);
+        eVar.e(f39952q, null);
+        eVar.e(f39955r, null);
+        eVar.e(f39958s, null);
+        eVar.e(f39961t, null);
+        eVar.e(f39964u, null);
+        eVar.e(f39967v, null);
+        eVar.e(f39970w, null);
+        eVar.e(f39973x, null);
+        eVar.e(f39976y, null);
+        eVar.e(f39979z, null);
         eVar.e(A, null);
         eVar.e(B, null);
         eVar.e(C, null);
@@ -862,32 +862,32 @@ final class k8 implements bj.d {
         eVar.e(X, null);
         eVar.e(Y, null);
         eVar.e(Z, null);
-        eVar.e(f39337a0, null);
-        eVar.e(f39340b0, null);
-        eVar.e(f39343c0, null);
-        eVar.e(f39346d0, null);
-        eVar.e(f39349e0, null);
-        eVar.e(f39352f0, null);
-        eVar.e(f39355g0, null);
-        eVar.e(f39358h0, null);
-        eVar.e(f39361i0, null);
-        eVar.e(f39364j0, null);
-        eVar.e(f39367k0, null);
-        eVar.e(f39370l0, null);
-        eVar.e(f39373m0, null);
-        eVar.e(f39376n0, null);
-        eVar.e(f39379o0, null);
-        eVar.e(f39382p0, null);
-        eVar.e(f39385q0, null);
-        eVar.e(f39388r0, null);
-        eVar.e(f39391s0, null);
-        eVar.e(f39394t0, null);
-        eVar.e(f39397u0, null);
-        eVar.e(f39400v0, null);
-        eVar.e(f39403w0, null);
-        eVar.e(f39406x0, null);
-        eVar.e(f39409y0, null);
-        eVar.e(f39412z0, null);
+        eVar.e(f39905a0, null);
+        eVar.e(f39908b0, null);
+        eVar.e(f39911c0, null);
+        eVar.e(f39914d0, null);
+        eVar.e(f39917e0, null);
+        eVar.e(f39920f0, null);
+        eVar.e(f39923g0, null);
+        eVar.e(f39926h0, null);
+        eVar.e(f39929i0, null);
+        eVar.e(f39932j0, null);
+        eVar.e(f39935k0, null);
+        eVar.e(f39938l0, null);
+        eVar.e(f39941m0, null);
+        eVar.e(f39944n0, null);
+        eVar.e(f39947o0, null);
+        eVar.e(f39950p0, null);
+        eVar.e(f39953q0, null);
+        eVar.e(f39956r0, null);
+        eVar.e(f39959s0, null);
+        eVar.e(f39962t0, null);
+        eVar.e(f39965u0, null);
+        eVar.e(f39968v0, null);
+        eVar.e(f39971w0, null);
+        eVar.e(f39974x0, null);
+        eVar.e(f39977y0, null);
+        eVar.e(f39980z0, null);
         eVar.e(A0, null);
         eVar.e(B0, null);
         eVar.e(C0, null);
@@ -914,30 +914,30 @@ final class k8 implements bj.d {
         eVar.e(X0, null);
         eVar.e(Y0, null);
         eVar.e(Z0, bfVar.f());
-        eVar.e(f39338a1, null);
-        eVar.e(f39341b1, null);
-        eVar.e(f39344c1, null);
-        eVar.e(f39347d1, null);
-        eVar.e(f39350e1, null);
-        eVar.e(f39353f1, null);
-        eVar.e(f39356g1, null);
-        eVar.e(f39359h1, null);
-        eVar.e(f39362i1, null);
-        eVar.e(f39365j1, null);
-        eVar.e(f39368k1, null);
-        eVar.e(f39371l1, null);
-        eVar.e(f39374m1, null);
-        eVar.e(f39377n1, null);
-        eVar.e(f39380o1, null);
-        eVar.e(f39383p1, null);
-        eVar.e(f39386q1, null);
-        eVar.e(f39389r1, null);
-        eVar.e(f39392s1, null);
-        eVar.e(f39395t1, null);
-        eVar.e(f39398u1, null);
-        eVar.e(f39401v1, null);
-        eVar.e(f39404w1, null);
-        eVar.e(f39407x1, null);
-        eVar.e(f39410y1, null);
+        eVar.e(f39906a1, null);
+        eVar.e(f39909b1, null);
+        eVar.e(f39912c1, null);
+        eVar.e(f39915d1, null);
+        eVar.e(f39918e1, null);
+        eVar.e(f39921f1, null);
+        eVar.e(f39924g1, null);
+        eVar.e(f39927h1, null);
+        eVar.e(f39930i1, null);
+        eVar.e(f39933j1, null);
+        eVar.e(f39936k1, null);
+        eVar.e(f39939l1, null);
+        eVar.e(f39942m1, null);
+        eVar.e(f39945n1, null);
+        eVar.e(f39948o1, null);
+        eVar.e(f39951p1, null);
+        eVar.e(f39954q1, null);
+        eVar.e(f39957r1, null);
+        eVar.e(f39960s1, null);
+        eVar.e(f39963t1, null);
+        eVar.e(f39966u1, null);
+        eVar.e(f39969v1, null);
+        eVar.e(f39972w1, null);
+        eVar.e(f39975x1, null);
+        eVar.e(f39978y1, null);
     }
 }

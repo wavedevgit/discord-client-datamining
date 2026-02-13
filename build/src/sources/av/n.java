@@ -61,7 +61,7 @@ public final class n extends j implements Sink {
     public void u0(Buffer source, long j10) {
         Intrinsics.checkNotNullParameter(source, "source");
         okio.b.b(source.size(), 0L, j10);
-        g0 g0Var = source.f40581d;
+        g0 g0Var = source.f41149d;
         Intrinsics.checkNotNull(g0Var);
         long j11 = 0;
         while (j11 < j10) {

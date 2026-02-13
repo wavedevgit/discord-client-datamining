@@ -86,7 +86,7 @@ public class BackStackContainer extends FrameLayout {
                 @Override // kotlin.jvm.functions.Function2
                 public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2) {
                     a((in.c) obj, (a0) obj2);
-                    return Unit.f31988a;
+                    return Unit.f32556a;
                 }
             }
 
@@ -101,7 +101,7 @@ public class BackStackContainer extends FrameLayout {
                 Intrinsics.checkNotNullParameter(initialEnv, "initialEnv");
                 Intrinsics.checkNotNullParameter(context, "context");
                 BackStackContainer backStackContainer = new BackStackContainer(context, null, 0, 0, 14, null);
-                backStackContainer.setId(jn.a.f31206c);
+                backStackContainer.setId(jn.a.f31774c);
                 backStackContainer.setLayoutParams(new ViewGroup.LayoutParams(-1, -1));
                 g0.a(backStackContainer, initialRendering, initialEnv, new C0226a(backStackContainer));
                 return backStackContainer;
@@ -160,7 +160,7 @@ public class BackStackContainer extends FrameLayout {
     public static final void d(View view, Function0 doStart) {
         Intrinsics.checkNotNullParameter(view, "view");
         Intrinsics.checkNotNullParameter(doStart, "doStart");
-        d.a.e(d.f27464h, view, null, 2, null);
+        d.a.e(d.f28032h, view, null, 2, null);
         doStart.invoke();
     }
 
@@ -178,8 +178,8 @@ public class BackStackContainer extends FrameLayout {
             addView(newView);
             return;
         }
-        View findViewById = view.findViewById(jn.a.f31204a);
-        View findViewById2 = newView.findViewById(jn.a.f31204a);
+        View findViewById = view.findViewById(jn.a.f31772a);
+        View findViewById2 = newView.findViewById(jn.a.f31772a);
         if (findViewById != null && findViewById2 != null) {
             view = findViewById;
         } else {
@@ -210,7 +210,7 @@ public class BackStackContainer extends FrameLayout {
         } else {
             aVar = in.a.Other;
         }
-        a0 c11 = newViewEnvironment.c(v.a(in.a.f28007d, aVar));
+        a0 c11 = newViewEnvironment.c(v.a(in.a.f28575d, aVar));
         in.c d10 = newRendering.d(c.f18946d);
         View currentView = getCurrentView();
         if (currentView != null) {
@@ -253,7 +253,7 @@ public class BackStackContainer extends FrameLayout {
             }
         }
         b(currentView, c13, z10);
-        if (currentView != null && (c10 = d.f27464h.c(currentView)) != null) {
+        if (currentView != null && (c10 = d.f28032h.c(currentView)) != null) {
             c10.f();
         }
         this.f18942e = d10;
@@ -263,7 +263,7 @@ public class BackStackContainer extends FrameLayout {
     protected void onAttachedToWindow() {
         Object c10;
         super.onAttachedToWindow();
-        u3.f c11 = hn.c.f27463a.c(this);
+        u3.f c11 = hn.c.f28031a.c(this);
         g.a aVar = g.f25811a;
         j0 d10 = k0.d(this);
         if (d10 == null) {
@@ -297,7 +297,7 @@ public class BackStackContainer extends FrameLayout {
         if (bVar != null) {
             this.f18941d.f(bVar.a());
             super.onRestoreInstanceState(((b) state).getSuperState());
-            unit = Unit.f31988a;
+            unit = Unit.f32556a;
         }
         if (unit == null) {
             super.onRestoreInstanceState(super.onSaveInstanceState());

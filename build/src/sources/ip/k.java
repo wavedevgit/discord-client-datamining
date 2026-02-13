@@ -6,10 +6,10 @@ import java.util.List;
 public final class k {
 
     /* renamed from: a  reason: collision with root package name */
-    private final lr.h f30388a;
+    private final lr.h f30956a;
 
     public k(lr.h hVar) {
-        this.f30388a = hVar;
+        this.f30956a = hVar;
     }
 
     public static k a(lr.h hVar) {
@@ -21,6 +21,6 @@ public final class k {
     }
 
     public com.withpersona.sdk2.inquiry.internal.fallbackmode.i b(List list, String str) {
-        return c(list, str, (b0) this.f30388a.get());
+        return c(list, str, (b0) this.f30956a.get());
     }
 }

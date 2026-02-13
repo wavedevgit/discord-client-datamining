@@ -3,28 +3,28 @@ package kk;
 public final class l extends i {
 
     /* renamed from: c  reason: collision with root package name */
-    private final byte[] f31858c;
+    private final byte[] f32426c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f31859d;
+    private final int f32427d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final int f31860e;
+    private final int f32428e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final int f31861f;
+    private final int f32429f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final int f31862g;
+    private final int f32430g;
 
     public l(byte[] bArr, int i10, int i11, int i12, int i13, int i14, int i15, boolean z10) {
         super(i14, i15);
         if (i12 + i14 <= i10 && i13 + i15 <= i11) {
-            this.f31858c = bArr;
-            this.f31859d = i10;
-            this.f31860e = i11;
-            this.f31861f = i12;
-            this.f31862g = i13;
+            this.f32426c = bArr;
+            this.f32427d = i10;
+            this.f32428e = i11;
+            this.f32429f = i12;
+            this.f32430g = i13;
             if (z10) {
                 h(i14, i15);
                 return;
@@ -35,8 +35,8 @@ public final class l extends i {
     }
 
     private void h(int i10, int i11) {
-        byte[] bArr = this.f31858c;
-        int i12 = (this.f31862g * this.f31859d) + this.f31861f;
+        byte[] bArr = this.f32426c;
+        int i12 = (this.f32430g * this.f32427d) + this.f32429f;
         int i13 = 0;
         while (i13 < i11) {
             int i14 = (i10 / 2) + i12;
@@ -50,7 +50,7 @@ public final class l extends i {
                 i15--;
             }
             i13++;
-            i12 += this.f31859d;
+            i12 += this.f32427d;
         }
     }
 
@@ -58,20 +58,20 @@ public final class l extends i {
     public byte[] b() {
         int d10 = d();
         int a10 = a();
-        int i10 = this.f31859d;
-        if (d10 == i10 && a10 == this.f31860e) {
-            return this.f31858c;
+        int i10 = this.f32427d;
+        if (d10 == i10 && a10 == this.f32428e) {
+            return this.f32426c;
         }
         int i11 = d10 * a10;
         byte[] bArr = new byte[i11];
-        int i12 = (this.f31862g * i10) + this.f31861f;
+        int i12 = (this.f32430g * i10) + this.f32429f;
         if (d10 == i10) {
-            System.arraycopy(this.f31858c, i12, bArr, 0, i11);
+            System.arraycopy(this.f32426c, i12, bArr, 0, i11);
             return bArr;
         }
         for (int i13 = 0; i13 < a10; i13++) {
-            System.arraycopy(this.f31858c, i12, bArr, i13 * d10, d10);
-            i12 += this.f31859d;
+            System.arraycopy(this.f32426c, i12, bArr, i13 * d10, d10);
+            i12 += this.f32427d;
         }
         return bArr;
     }
@@ -83,7 +83,7 @@ public final class l extends i {
             if (bArr == null || bArr.length < d10) {
                 bArr = new byte[d10];
             }
-            System.arraycopy(this.f31858c, ((i10 + this.f31862g) * this.f31859d) + this.f31861f, bArr, 0, d10);
+            System.arraycopy(this.f32426c, ((i10 + this.f32430g) * this.f32427d) + this.f32429f, bArr, 0, d10);
             return bArr;
         }
         throw new IllegalArgumentException("Requested row is outside the image: " + i10);

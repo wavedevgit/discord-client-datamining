@@ -14,73 +14,73 @@ import java.util.concurrent.Executor;
 final class i1 implements ServiceConnection, l1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Map f27265d;
+    private final Map f27833d;
 
     /* renamed from: e  reason: collision with root package name */
-    private int f27266e;
+    private int f27834e;
 
     /* renamed from: i  reason: collision with root package name */
-    private boolean f27267i;
+    private boolean f27835i;
 
     /* renamed from: o  reason: collision with root package name */
-    private IBinder f27268o;
+    private IBinder f27836o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final h1 f27269p;
+    private final h1 f27837p;
 
     /* renamed from: q  reason: collision with root package name */
-    private ComponentName f27270q;
+    private ComponentName f27838q;
 
     /* renamed from: r  reason: collision with root package name */
-    final /* synthetic */ k1 f27271r;
+    final /* synthetic */ k1 f27839r;
 
     public i1(k1 k1Var, h1 h1Var) {
         Objects.requireNonNull(k1Var);
-        this.f27271r = k1Var;
-        this.f27269p = h1Var;
-        this.f27265d = new HashMap();
-        this.f27266e = 2;
+        this.f27839r = k1Var;
+        this.f27837p = h1Var;
+        this.f27833d = new HashMap();
+        this.f27834e = 2;
     }
 
     public final void a(String str) {
-        h1 h1Var = this.f27269p;
-        k1 k1Var = this.f27271r;
+        h1 h1Var = this.f27837p;
+        k1 k1Var = this.f27839r;
         k1Var.h().removeMessages(1, h1Var);
         k1Var.i().c(k1Var.g(), this);
-        this.f27267i = false;
-        this.f27266e = 2;
+        this.f27835i = false;
+        this.f27834e = 2;
     }
 
     public final void b(ServiceConnection serviceConnection, ServiceConnection serviceConnection2, String str) {
-        this.f27265d.put(serviceConnection, serviceConnection2);
+        this.f27833d.put(serviceConnection, serviceConnection2);
     }
 
     public final void c(ServiceConnection serviceConnection, String str) {
-        this.f27265d.remove(serviceConnection);
+        this.f27833d.remove(serviceConnection);
     }
 
     public final boolean d() {
-        return this.f27267i;
+        return this.f27835i;
     }
 
     public final int e() {
-        return this.f27266e;
+        return this.f27834e;
     }
 
     public final boolean f(ServiceConnection serviceConnection) {
-        return this.f27265d.containsKey(serviceConnection);
+        return this.f27833d.containsKey(serviceConnection);
     }
 
     public final boolean g() {
-        return this.f27265d.isEmpty();
+        return this.f27833d.isEmpty();
     }
 
     public final IBinder h() {
-        return this.f27268o;
+        return this.f27836o;
     }
 
     public final ComponentName i() {
-        return this.f27270q;
+        return this.f27838q;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -90,27 +90,27 @@ final class i1 implements ServiceConnection, l1 {
         Context g10;
         h1 h1Var;
         try {
-            Intent a10 = w0.a(this.f27271r.g(), this.f27269p);
-            this.f27266e = 3;
+            Intent a10 = w0.a(this.f27839r.g(), this.f27837p);
+            this.f27834e = 3;
             StrictMode.VmPolicy a11 = com.google.android.gms.common.util.r.a();
             try {
-                k1Var = this.f27271r;
+                k1Var = this.f27839r;
                 i10 = k1Var.i();
                 g10 = k1Var.g();
-                h1Var = this.f27269p;
+                h1Var = this.f27837p;
             } catch (Throwable th2) {
                 th = th2;
             }
             try {
                 boolean d10 = i10.d(g10, str, a10, this, 4225, executor);
-                this.f27267i = d10;
+                this.f27835i = d10;
                 if (d10) {
                     k1Var.h().sendMessageDelayed(k1Var.h().obtainMessage(1, h1Var), k1Var.j());
                     com.google.android.gms.common.b bVar = com.google.android.gms.common.b.f14465q;
                     StrictMode.setVmPolicy(a11);
                     return bVar;
                 }
-                this.f27266e = 2;
+                this.f27834e = 2;
                 try {
                     k1Var.i().c(k1Var.g(), this);
                 } catch (IllegalArgumentException unused) {
@@ -125,7 +125,7 @@ final class i1 implements ServiceConnection, l1 {
                 throw th4;
             }
         } catch (u0 e10) {
-            return e10.f27332d;
+            return e10.f27900d;
         }
     }
 
@@ -136,16 +136,16 @@ final class i1 implements ServiceConnection, l1 {
 
     @Override // android.content.ServiceConnection
     public final void onServiceConnected(ComponentName componentName, IBinder iBinder) {
-        k1 k1Var = this.f27271r;
+        k1 k1Var = this.f27839r;
         synchronized (k1Var.f()) {
             try {
-                k1Var.h().removeMessages(1, this.f27269p);
-                this.f27268o = iBinder;
-                this.f27270q = componentName;
-                for (ServiceConnection serviceConnection : this.f27265d.values()) {
+                k1Var.h().removeMessages(1, this.f27837p);
+                this.f27836o = iBinder;
+                this.f27838q = componentName;
+                for (ServiceConnection serviceConnection : this.f27833d.values()) {
                     serviceConnection.onServiceConnected(componentName, iBinder);
                 }
-                this.f27266e = 1;
+                this.f27834e = 1;
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -154,16 +154,16 @@ final class i1 implements ServiceConnection, l1 {
 
     @Override // android.content.ServiceConnection
     public final void onServiceDisconnected(ComponentName componentName) {
-        k1 k1Var = this.f27271r;
+        k1 k1Var = this.f27839r;
         synchronized (k1Var.f()) {
             try {
-                k1Var.h().removeMessages(1, this.f27269p);
-                this.f27268o = null;
-                this.f27270q = componentName;
-                for (ServiceConnection serviceConnection : this.f27265d.values()) {
+                k1Var.h().removeMessages(1, this.f27837p);
+                this.f27836o = null;
+                this.f27838q = componentName;
+                for (ServiceConnection serviceConnection : this.f27833d.values()) {
                     serviceConnection.onServiceDisconnected(componentName);
                 }
-                this.f27266e = 2;
+                this.f27834e = 2;
             } catch (Throwable th2) {
                 throw th2;
             }

@@ -7,16 +7,16 @@ import kotlin.reflect.jvm.internal.impl.descriptors.impl.ValueParameterDescripto
 class j implements Function0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final ValueParameterDescriptorImpl.WithDestructuringDeclaration f32577d;
+    private final ValueParameterDescriptorImpl.WithDestructuringDeclaration f33145d;
 
     public j(ValueParameterDescriptorImpl.WithDestructuringDeclaration withDestructuringDeclaration) {
-        this.f32577d = withDestructuringDeclaration;
+        this.f33145d = withDestructuringDeclaration;
     }
 
     @Override // kotlin.jvm.functions.Function0
     public Object invoke() {
         List c10;
-        c10 = ValueParameterDescriptorImpl.WithDestructuringDeclaration.c(this.f32577d);
+        c10 = ValueParameterDescriptorImpl.WithDestructuringDeclaration.c(this.f33145d);
         return c10;
     }
 }

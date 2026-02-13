@@ -27,7 +27,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/guild_products/GuildProductsExperimentUtils.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function arg0, arg1() {
-        _fun50447: for (var _fun50447_ip = 0;;) switch (_fun50447_ip) {
+        _fun50554: for (var _fun50554_ip = 0;;) switch (_fun50554_ip) {
             case 0:
                 var3 = arg0;
                 var2 = _closure1_slot0;
@@ -41,8 +41,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = {};
                 var5 = null;
                 if (!(var5 == var3)) {
-                    _fun50447_ip = 52;
-                    continue _fun50447
+                    _fun50554_ip = 52;
+                    continue _fun50554
                 }
             case 48:
                 var3 = _closure1_slot2;
@@ -57,7 +57,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useGuildEligibleForGuildProducts = var3;
     var1 = function arg0, arg1() {
-        _fun50448: for (var _fun50448_ip = 0;;) switch (_fun50448_ip) {
+        _fun50555: for (var _fun50555_ip = 0;;) switch (_fun50555_ip) {
             case 0:
                 var3 = arg0;
                 var2 = _closure1_slot0;
@@ -71,8 +71,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = {};
                 var5 = null;
                 if (!(var5 == var3)) {
-                    _fun50448_ip = 52;
-                    continue _fun50448
+                    _fun50555_ip = 52;
+                    continue _fun50555
                 }
             case 48:
                 var3 = _closure1_slot2;

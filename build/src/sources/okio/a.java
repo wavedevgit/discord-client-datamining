@@ -8,15 +8,15 @@ import okio.ByteString;
 public abstract class a {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final byte[] f40602a;
+    private static final byte[] f41170a;
 
     /* renamed from: b  reason: collision with root package name */
-    private static final byte[] f40603b;
+    private static final byte[] f41171b;
 
     static {
-        ByteString.a aVar = ByteString.f40592o;
-        f40602a = aVar.g("ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/").l();
-        f40603b = aVar.g("ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_").l();
+        ByteString.a aVar = ByteString.f41160o;
+        f41170a = aVar.g("ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/").l();
+        f41171b = aVar.g("ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_").l();
     }
 
     public static final byte[] a(String str) {
@@ -128,7 +128,7 @@ public abstract class a {
 
     public static /* synthetic */ String c(byte[] bArr, byte[] bArr2, int i10, Object obj) {
         if ((i10 & 1) != 0) {
-            bArr2 = f40602a;
+            bArr2 = f41170a;
         }
         return b(bArr, bArr2);
     }

@@ -164,7 +164,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.getAutoArchiveOptions = var4;
     var2.getAutoArchiveDurations = var3;
     var3 = function arg0() {
-        _fun65908: for (var _fun65908_ip = 0;;) switch (_fun65908_ip) {
+        _fun62009: for (var _fun62009_ip = 0;;) switch (_fun62009_ip) {
             case 0:
                 var4 = arg0;
                 var _closure2_slot0 = var4;
@@ -184,17 +184,17 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var2 == var5;
                 var0 = undefined;
                 if (var6) {
-                    _fun65908_ip = 55;
-                    continue _fun65908
+                    _fun62009_ip = 53;
+                    continue _fun62009
                 }
-            case 50:
+            case 48:
                 var0 = var5.label;
-            case 55:
+            case 53:
                 if (!(var2 == var0)) {
-                    _fun65908_ip = 104;
-                    continue _fun65908
+                    _fun62009_ip = 102;
+                    continue _fun62009
                 }
-            case 59:
+            case 57:
                 var2 = _closure1_slot1;
                 var5 = _closure1_slot2;
                 var1 = 4;
@@ -205,27 +205,27 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2.bind(var3)(var4, var1);
                 var1 = var2.humanize;
                 var0 = var1.bind(var2)();
-            case 104:
+            case 102:
                 return var0;
         }
     };
     var2.getAutoArchiveDurationText = var3;
     var1 = function arg0, arg1() {
-        _fun65910: for (var _fun65910_ip = 0;;) switch (_fun65910_ip) {
+        _fun62011: for (var _fun62011_ip = 0;;) switch (_fun62011_ip) {
             case 0:
                 var3 = arg0;
                 var0 = arg1;
                 var1 = null;
                 if (!(var1 == var0)) {
-                    _fun65910_ip = 30;
-                    continue _fun65910
+                    _fun62011_ip = 30;
+                    continue _fun62011
                 }
             case 12:
                 var4 = var1 == var3;
                 var2 = undefined;
                 if (var4) {
-                    _fun65910_ip = 27;
-                    continue _fun65910
+                    _fun62011_ip = 27;
+                    continue _fun62011
                 }
             case 21:
                 var2 = var3.defaultAutoArchiveDuration;
@@ -233,8 +233,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var2;
             case 30:
                 if (!(var1 == var0)) {
-                    _fun65910_ip = 41;
-                    continue _fun65910
+                    _fun62011_ip = 41;
+                    continue _fun62011
                 }
             case 34:
                 var0 = _closure1_slot3;
@@ -244,4 +244,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getAutoArchiveDuration = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1233, 667, 1234, 3541, 3047, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1234, 667, 1235, 3541, 3050, 2]);

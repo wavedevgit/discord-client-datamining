@@ -362,7 +362,7 @@ public class FloatingActionButton extends q implements mh.a, o, CoordinatorLayou
         }
         vh.a aVar = (vh.a) parcelable;
         super.onRestoreInstanceState(aVar.a());
-        this.A.d((Bundle) e.g((Bundle) aVar.f51619i.get("expandableWidgetHelper")));
+        this.A.d((Bundle) e.g((Bundle) aVar.f52187i.get("expandableWidgetHelper")));
     }
 
     @Override // android.view.View
@@ -372,7 +372,7 @@ public class FloatingActionButton extends q implements mh.a, o, CoordinatorLayou
             onSaveInstanceState = new Bundle();
         }
         vh.a aVar = new vh.a(onSaveInstanceState);
-        aVar.f51619i.put("expandableWidgetHelper", this.A.e());
+        aVar.f52187i.put("expandableWidgetHelper", this.A.e());
         return aVar;
     }
 
@@ -803,7 +803,7 @@ public class FloatingActionButton extends q implements mh.a, o, CoordinatorLayou
             ch.g r7 = ch.g.b(r0, r12, r7)
             int r8 = bh.l.f7015g2
             ch.g r8 = ch.g.b(r0, r12, r8)
-            th.d r9 = th.l.f48835m
+            th.d r9 = th.l.f49403m
             th.l$b r0 = th.l.g(r0, r1, r3, r4, r9)
             th.l r0 = r0.m()
             int r4 = bh.l.f6985d2

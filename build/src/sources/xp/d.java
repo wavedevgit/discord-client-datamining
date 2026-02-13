@@ -10,10 +10,10 @@ import wp.x0;
 public final class d implements ViewBinding {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ConstraintLayout f55115a;
+    private final ConstraintLayout f55683a;
 
     private d(ConstraintLayout constraintLayout) {
-        this.f55115a = constraintLayout;
+        this.f55683a = constraintLayout;
     }
 
     public static d a(View view) {
@@ -24,7 +24,7 @@ public final class d implements ViewBinding {
     }
 
     public static d c(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z10) {
-        View inflate = layoutInflater.inflate(x0.f53516d, viewGroup, false);
+        View inflate = layoutInflater.inflate(x0.f54084d, viewGroup, false);
         if (z10) {
             viewGroup.addView(inflate);
         }
@@ -34,6 +34,6 @@ public final class d implements ViewBinding {
     @Override // androidx.viewbinding.ViewBinding
     /* renamed from: b */
     public ConstraintLayout getRoot() {
-        return this.f55115a;
+        return this.f55683a;
     }
 }

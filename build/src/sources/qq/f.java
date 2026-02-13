@@ -21,7 +21,7 @@ import pq.l5;
 public abstract class f {
 
     /* renamed from: a  reason: collision with root package name */
-    private static sr.e f45626a;
+    private static sr.e f46194a;
 
     public static final k5 a(List list, KClass type, Function1 predicate) {
         k5 a10;
@@ -45,8 +45,8 @@ public abstract class f {
 
     public static final Drawable b(Context context, int i10, int i11) {
         Intrinsics.checkNotNullParameter(context, "context");
-        int c10 = androidx.core.content.a.c(context, tp.b.f49773a);
-        int c11 = androidx.core.content.a.c(context, tp.b.f49774b);
+        int c10 = androidx.core.content.a.c(context, tp.b.f50341a);
+        int c11 = androidx.core.content.a.c(context, tp.b.f50342b);
         double d10 = r1.c.d(i10, c10);
         double d11 = r1.c.d(i10, c11);
         float a10 = (float) bq.h.a(8.0d);
@@ -61,10 +61,10 @@ public abstract class f {
     }
 
     private static final sr.e c(Context context) {
-        sr.e eVar = f45626a;
+        sr.e eVar = f46194a;
         if (eVar == null) {
             sr.e b10 = sr.e.b(context);
-            f45626a = b10;
+            f46194a = b10;
             Intrinsics.checkNotNullExpressionValue(b10, "also(...)");
             return b10;
         }

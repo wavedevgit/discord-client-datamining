@@ -22,24 +22,24 @@ import z1.g;
 class l extends r {
 
     /* renamed from: b  reason: collision with root package name */
-    private static Class f45897b = null;
+    private static Class f46465b = null;
 
     /* renamed from: c  reason: collision with root package name */
-    private static Constructor f45898c = null;
+    private static Constructor f46466c = null;
 
     /* renamed from: d  reason: collision with root package name */
-    private static Method f45899d = null;
+    private static Method f46467d = null;
 
     /* renamed from: e  reason: collision with root package name */
-    private static Method f45900e = null;
+    private static Method f46468e = null;
 
     /* renamed from: f  reason: collision with root package name */
-    private static boolean f45901f = false;
+    private static boolean f46469f = false;
 
     private static boolean i(Object obj, String str, int i10, boolean z10) {
         l();
         try {
-            return ((Boolean) f45899d.invoke(obj, str, Integer.valueOf(i10), Boolean.valueOf(z10))).booleanValue();
+            return ((Boolean) f46467d.invoke(obj, str, Integer.valueOf(i10), Boolean.valueOf(z10))).booleanValue();
         } catch (IllegalAccessException | InvocationTargetException e10) {
             throw new RuntimeException(e10);
         }
@@ -48,9 +48,9 @@ class l extends r {
     private static Typeface j(Object obj) {
         l();
         try {
-            Object newInstance = Array.newInstance(f45897b, 1);
+            Object newInstance = Array.newInstance(f46465b, 1);
             Array.set(newInstance, 0, obj);
-            return (Typeface) f45900e.invoke(null, newInstance);
+            return (Typeface) f46468e.invoke(null, newInstance);
         } catch (IllegalAccessException | InvocationTargetException e10) {
             throw new RuntimeException(e10);
         }
@@ -71,10 +71,10 @@ class l extends r {
         Method method;
         Class<?> cls;
         Method method2;
-        if (f45901f) {
+        if (f46469f) {
             return;
         }
-        f45901f = true;
+        f46469f = true;
         Constructor<?> constructor = null;
         try {
             cls = Class.forName("android.graphics.FontFamily");
@@ -88,16 +88,16 @@ class l extends r {
             cls = null;
             method2 = null;
         }
-        f45898c = constructor;
-        f45897b = cls;
-        f45899d = method2;
-        f45900e = method;
+        f46466c = constructor;
+        f46465b = cls;
+        f46467d = method2;
+        f46468e = method;
     }
 
     private static Object m() {
         l();
         try {
-            return f45898c.newInstance(null);
+            return f46466c.newInstance(null);
         } catch (IllegalAccessException | InstantiationException | InvocationTargetException e10) {
             throw new RuntimeException(e10);
         }

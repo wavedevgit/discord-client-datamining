@@ -11,22 +11,22 @@ import com.google.android.material.checkbox.MaterialCheckBox;
 public final class q implements ViewBinding {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ConstraintLayout f48280a;
+    private final ConstraintLayout f48848a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final MaterialCheckBox f48281b;
+    public final MaterialCheckBox f48849b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final TextView f48282c;
+    public final TextView f48850c;
 
     private q(ConstraintLayout constraintLayout, MaterialCheckBox materialCheckBox, TextView textView) {
-        this.f48280a = constraintLayout;
-        this.f48281b = materialCheckBox;
-        this.f48282c = textView;
+        this.f48848a = constraintLayout;
+        this.f48849b = materialCheckBox;
+        this.f48850c = textView;
     }
 
     public static q a(View view) {
-        int i10 = nq.e.f38277o;
+        int i10 = nq.e.f38845o;
         MaterialCheckBox materialCheckBox = (MaterialCheckBox) e4.a.a(view, i10);
         if (materialCheckBox != null) {
             i10 = nq.e.V;
@@ -39,7 +39,7 @@ public final class q implements ViewBinding {
     }
 
     public static q c(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z10) {
-        View inflate = layoutInflater.inflate(nq.f.f38318r, viewGroup, false);
+        View inflate = layoutInflater.inflate(nq.f.f38886r, viewGroup, false);
         if (z10) {
             viewGroup.addView(inflate);
         }
@@ -49,6 +49,6 @@ public final class q implements ViewBinding {
     @Override // androidx.viewbinding.ViewBinding
     /* renamed from: b */
     public ConstraintLayout getRoot() {
-        return this.f48280a;
+        return this.f48848a;
     }
 }

@@ -8,20 +8,20 @@ import kotlin.reflect.jvm.internal.impl.types.SimpleType;
 public class f implements Function0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final JvmBuiltInsCustomizer f32267d;
+    private final JvmBuiltInsCustomizer f32835d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final StorageManager f32268e;
+    private final StorageManager f32836e;
 
     public f(JvmBuiltInsCustomizer jvmBuiltInsCustomizer, StorageManager storageManager) {
-        this.f32267d = jvmBuiltInsCustomizer;
-        this.f32268e = storageManager;
+        this.f32835d = jvmBuiltInsCustomizer;
+        this.f32836e = storageManager;
     }
 
     @Override // kotlin.jvm.functions.Function0
     public Object invoke() {
         SimpleType j10;
-        j10 = JvmBuiltInsCustomizer.j(this.f32267d, this.f32268e);
+        j10 = JvmBuiltInsCustomizer.j(this.f32835d, this.f32836e);
         return j10;
     }
 }

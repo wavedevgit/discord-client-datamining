@@ -10,16 +10,16 @@ public final class a implements Metadata.b {
     public static final Parcelable.Creator<a> CREATOR = new C0528a();
 
     /* renamed from: d  reason: collision with root package name */
-    public final String f37161d;
+    public final String f37729d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final byte[] f37162e;
+    public final byte[] f37730e;
 
     /* renamed from: i  reason: collision with root package name */
-    public final int f37163i;
+    public final int f37731i;
 
     /* renamed from: o  reason: collision with root package name */
-    public final int f37164o;
+    public final int f37732o;
 
     /* renamed from: nd.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
@@ -55,7 +55,7 @@ public final class a implements Metadata.b {
         }
         if (obj != null && a.class == obj.getClass()) {
             a aVar = (a) obj;
-            if (this.f37161d.equals(aVar.f37161d) && Arrays.equals(this.f37162e, aVar.f37162e) && this.f37163i == aVar.f37163i && this.f37164o == aVar.f37164o) {
+            if (this.f37729d.equals(aVar.f37729d) && Arrays.equals(this.f37730e, aVar.f37730e) && this.f37731i == aVar.f37731i && this.f37732o == aVar.f37732o) {
                 return true;
             }
         }
@@ -63,47 +63,47 @@ public final class a implements Metadata.b {
     }
 
     public int hashCode() {
-        return ((((((527 + this.f37161d.hashCode()) * 31) + Arrays.hashCode(this.f37162e)) * 31) + this.f37163i) * 31) + this.f37164o;
+        return ((((((527 + this.f37729d.hashCode()) * 31) + Arrays.hashCode(this.f37730e)) * 31) + this.f37731i) * 31) + this.f37732o;
     }
 
     public String toString() {
         String E;
-        int i10 = this.f37164o;
+        int i10 = this.f37732o;
         if (i10 != 1) {
             if (i10 != 23) {
                 if (i10 != 67) {
-                    E = w0.k1(this.f37162e);
+                    E = w0.k1(this.f37730e);
                 } else {
-                    E = String.valueOf(w0.l1(this.f37162e));
+                    E = String.valueOf(w0.l1(this.f37730e));
                 }
             } else {
-                E = String.valueOf(w0.j1(this.f37162e));
+                E = String.valueOf(w0.j1(this.f37730e));
             }
         } else {
-            E = w0.E(this.f37162e);
+            E = w0.E(this.f37730e);
         }
-        return "mdta: key=" + this.f37161d + ", value=" + E;
+        return "mdta: key=" + this.f37729d + ", value=" + E;
     }
 
     @Override // android.os.Parcelable
     public void writeToParcel(Parcel parcel, int i10) {
-        parcel.writeString(this.f37161d);
-        parcel.writeByteArray(this.f37162e);
-        parcel.writeInt(this.f37163i);
-        parcel.writeInt(this.f37164o);
+        parcel.writeString(this.f37729d);
+        parcel.writeByteArray(this.f37730e);
+        parcel.writeInt(this.f37731i);
+        parcel.writeInt(this.f37732o);
     }
 
     public a(String str, byte[] bArr, int i10, int i11) {
-        this.f37161d = str;
-        this.f37162e = bArr;
-        this.f37163i = i10;
-        this.f37164o = i11;
+        this.f37729d = str;
+        this.f37730e = bArr;
+        this.f37731i = i10;
+        this.f37732o = i11;
     }
 
     private a(Parcel parcel) {
-        this.f37161d = (String) w0.j(parcel.readString());
-        this.f37162e = (byte[]) w0.j(parcel.createByteArray());
-        this.f37163i = parcel.readInt();
-        this.f37164o = parcel.readInt();
+        this.f37729d = (String) w0.j(parcel.readString());
+        this.f37730e = (byte[]) w0.j(parcel.createByteArray());
+        this.f37731i = parcel.readInt();
+        this.f37732o = parcel.readInt();
     }
 }

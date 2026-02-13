@@ -36,7 +36,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.isThemeLight = var3;
     var1 = function arg0() {
-        _fun27484: for (var _fun27484_ip = 0;;) switch (_fun27484_ip) {
+        _fun27511: for (var _fun27511_ip = 0;;) switch (_fun27511_ip) {
             case 0:
                 var1 = arg0;
                 var5 = _closure1_slot0;
@@ -48,8 +48,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2.ThemeTypes;
                 var2 = var2.DARK;
                 if (!(var2 !== var1)) {
-                    _fun27484_ip = 113;
-                    continue _fun27484
+                    _fun27511_ip = 113;
+                    continue _fun27511
                 }
             case 43:
                 var5 = _closure1_slot0;
@@ -59,8 +59,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2.ThemeTypes;
                 var2 = var2.MIDNIGHT;
                 if (!(var2 !== var1)) {
-                    _fun27484_ip = 113;
-                    continue _fun27484
+                    _fun27511_ip = 113;
+                    continue _fun27511
                 }
             case 76:
                 var2 = _closure1_slot0;
@@ -70,8 +70,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.ThemeTypes;
                 var0 = var0.DARKER;
                 if (!(var0 !== var1)) {
-                    _fun27484_ip = 113;
-                    continue _fun27484
+                    _fun27511_ip = 113;
+                    continue _fun27511
                 }
             case 109:
                 var0 = false;

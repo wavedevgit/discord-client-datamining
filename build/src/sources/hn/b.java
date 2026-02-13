@@ -12,39 +12,39 @@ import kotlin.jvm.internal.Intrinsics;
 public final class b implements d, LifecycleOwner, View.OnAttachStateChangeListener, m {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Function1 f27457d;
+    private final Function1 f28025d;
 
     /* renamed from: e  reason: collision with root package name */
-    private View f27458e;
+    private View f28026e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final LifecycleRegistry f27459i;
+    private final LifecycleRegistry f28027i;
 
     /* renamed from: o  reason: collision with root package name */
-    private boolean f27460o;
+    private boolean f28028o;
 
     /* renamed from: p  reason: collision with root package name */
-    private Lifecycle f27461p;
+    private Lifecycle f28029p;
 
     /* renamed from: q  reason: collision with root package name */
-    private boolean f27462q;
+    private boolean f28030q;
 
     public b(Function1 findParentLifecycle, boolean z10) {
         LifecycleRegistry g10;
         Intrinsics.checkNotNullParameter(findParentLifecycle, "findParentLifecycle");
-        this.f27457d = findParentLifecycle;
+        this.f28025d = findParentLifecycle;
         if (z10) {
             g10 = new LifecycleRegistry(this);
         } else {
             g10 = LifecycleRegistry.g(this);
             Intrinsics.checkNotNullExpressionValue(g10, "createUnsafe(this)");
         }
-        this.f27459i = g10;
+        this.f28027i = g10;
     }
 
     public static /* synthetic */ void b(b bVar, boolean z10, int i10, Object obj) {
         if ((i10 & 1) != 0) {
-            View view = bVar.f27458e;
+            View view = bVar.f28026e;
             if (view == null) {
                 z10 = false;
             } else {
@@ -56,32 +56,32 @@ public final class b implements d, LifecycleOwner, View.OnAttachStateChangeListe
 
     public final void a(boolean z10) {
         Lifecycle.State b10;
-        Lifecycle lifecycle = this.f27461p;
+        Lifecycle lifecycle = this.f28029p;
         if (lifecycle == null) {
             b10 = null;
         } else {
             b10 = lifecycle.b();
         }
-        Lifecycle.State b11 = this.f27459i.b();
+        Lifecycle.State b11 = this.f28027i.b();
         Intrinsics.checkNotNullExpressionValue(b11, "localLifecycle.currentState");
         Lifecycle.State state = Lifecycle.State.f4553d;
-        if (b11 != state && !this.f27460o) {
-            LifecycleRegistry lifecycleRegistry = this.f27459i;
-            if (this.f27462q && !z10) {
+        if (b11 != state && !this.f28028o) {
+            LifecycleRegistry lifecycleRegistry = this.f28027i;
+            if (this.f28030q && !z10) {
                 b10 = state;
             } else if (b10 == null && b11 != (b10 = Lifecycle.State.f4554e)) {
                 throw new AssertionError("Must have a parent lifecycle after attaching and until being destroyed.");
             }
             if (b10 == state) {
-                this.f27460o = true;
-                Lifecycle lifecycle2 = this.f27461p;
+                this.f28028o = true;
+                Lifecycle lifecycle2 = this.f28029p;
                 if (lifecycle2 != null) {
                     lifecycle2.d(this);
                 }
-                this.f27461p = null;
-                View view = this.f27458e;
+                this.f28029p = null;
+                View view = this.f28026e;
                 if (view != null) {
-                    this.f27458e = null;
+                    this.f28026e = null;
                     view.removeOnAttachStateChangeListener(this);
                 }
                 Lifecycle.State state2 = Lifecycle.State.f4554e;
@@ -94,20 +94,20 @@ public final class b implements d, LifecycleOwner, View.OnAttachStateChangeListe
             lifecycleRegistry.o(state);
             return;
         }
-        this.f27458e = null;
+        this.f28026e = null;
     }
 
     @Override // hn.d
     public void f() {
-        if (!this.f27462q) {
-            this.f27462q = true;
+        if (!this.f28030q) {
+            this.f28030q = true;
             b(this, false, 1, null);
         }
     }
 
     @Override // androidx.lifecycle.LifecycleOwner
     public Lifecycle getLifecycle() {
-        return this.f27459i;
+        return this.f28027i;
     }
 
     @Override // androidx.lifecycle.m
@@ -120,16 +120,16 @@ public final class b implements d, LifecycleOwner, View.OnAttachStateChangeListe
     @Override // android.view.View.OnAttachStateChangeListener
     public void onViewAttachedToWindow(View v10) {
         Intrinsics.checkNotNullParameter(v10, "v");
-        if (this.f27459i.b() != Lifecycle.State.f4553d && !this.f27460o) {
-            this.f27458e = v10;
-            Lifecycle lifecycle = this.f27461p;
-            Lifecycle lifecycle2 = (Lifecycle) this.f27457d.invoke(v10);
-            this.f27461p = lifecycle2;
+        if (this.f28027i.b() != Lifecycle.State.f4553d && !this.f28028o) {
+            this.f28026e = v10;
+            Lifecycle lifecycle = this.f28029p;
+            Lifecycle lifecycle2 = (Lifecycle) this.f28025d.invoke(v10);
+            this.f28029p = lifecycle2;
             if (lifecycle2 != lifecycle) {
                 if (lifecycle != null) {
                     lifecycle.d(this);
                 }
-                Lifecycle lifecycle3 = this.f27461p;
+                Lifecycle lifecycle3 = this.f28029p;
                 if (lifecycle3 != null) {
                     lifecycle3.a(this);
                 }

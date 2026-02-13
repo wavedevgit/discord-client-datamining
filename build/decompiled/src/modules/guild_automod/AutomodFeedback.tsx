@@ -100,7 +100,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.RaidAlertType = var5;
     var2.RaidResolutionType = var4;
     var3 = function arg0() {
-        _fun40996: for (var _fun40996_ip = 0;;) switch (_fun40996_ip) {
+        _fun41026: for (var _fun41026_ip = 0;;) switch (_fun41026_ip) {
             case 0:
                 var3 = arg0;
                 var2 = var3.includes;
@@ -108,8 +108,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.LEGITIMATE_ACTIVITY;
                 var0 = var2.bind(var3)(var0);
                 if (var0) {
-                    _fun40996_ip = 107;
-                    continue _fun40996
+                    _fun41026_ip = 107;
+                    continue _fun41026
                 }
             case 29:
                 var2 = var3.includes;
@@ -117,8 +117,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.DM_SPAM;
                 var0 = var2.bind(var3)(var0);
                 if (var0) {
-                    _fun40996_ip = 95;
-                    continue _fun40996
+                    _fun41026_ip = 95;
+                    continue _fun41026
                 }
             case 52:
                 var2 = var3.includes;
@@ -127,24 +127,24 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var2.bind(var3)(var0);
                 var2 = _closure1_slot3;
                 if (var0) {
-                    _fun40996_ip = 87;
-                    continue _fun40996
+                    _fun41026_ip = 87;
+                    continue _fun41026
                 }
             case 79:
                 var0 = var2.OTHER;
-                _fun40996_ip = 93;
-                continue _fun40996;
+                _fun41026_ip = 93;
+                continue _fun41026;
             case 87:
                 var0 = var2.JOIN_RAID;
             case 93:
-                _fun40996_ip = 105;
-                continue _fun40996;
+                _fun41026_ip = 105;
+                continue _fun41026;
             case 95:
                 var2 = _closure1_slot3;
                 var0 = var2.DM_SPAM;
             case 105:
-                _fun40996_ip = 117;
-                continue _fun40996;
+                _fun41026_ip = 117;
+                continue _fun41026;
             case 107:
                 var1 = _closure1_slot3;
                 var0 = var1.LEGITIMATE_ACTIVITY;
@@ -155,4 +155,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.getMostImportantRaidResolutionType = var3;
     var2.RaidLockdownFeedbackType = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1234, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1235, 2]);

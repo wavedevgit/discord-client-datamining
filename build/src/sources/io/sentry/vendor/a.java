@@ -10,10 +10,10 @@ public abstract class a {
     public static abstract class AbstractC0410a {
 
         /* renamed from: a  reason: collision with root package name */
-        public byte[] f30180a;
+        public byte[] f30748a;
 
         /* renamed from: b  reason: collision with root package name */
-        public int f30181b;
+        public int f30749b;
 
         AbstractC0410a() {
         }
@@ -24,42 +24,42 @@ public abstract class a {
     public static class b extends AbstractC0410a {
 
         /* renamed from: f  reason: collision with root package name */
-        private static final int[] f30182f = {-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 62, -1, -1, -1, 63, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, -1, -1, -1, -2, -1, -1, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, -1, -1, -1, -1, -1, -1, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1};
+        private static final int[] f30750f = {-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 62, -1, -1, -1, 63, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, -1, -1, -1, -2, -1, -1, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, -1, -1, -1, -1, -1, -1, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1};
 
         /* renamed from: g  reason: collision with root package name */
-        private static final int[] f30183g = {-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 62, -1, -1, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, -1, -1, -1, -2, -1, -1, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, -1, -1, -1, -1, 63, -1, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1};
+        private static final int[] f30751g = {-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 62, -1, -1, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, -1, -1, -1, -2, -1, -1, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, -1, -1, -1, -1, 63, -1, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1};
 
         /* renamed from: c  reason: collision with root package name */
-        private int f30184c;
+        private int f30752c;
 
         /* renamed from: d  reason: collision with root package name */
-        private int f30185d;
+        private int f30753d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final int[] f30186e;
+        private final int[] f30754e;
 
         public b(int i10, byte[] bArr) {
             int[] iArr;
-            this.f30180a = bArr;
+            this.f30748a = bArr;
             if ((i10 & 8) == 0) {
-                iArr = f30182f;
+                iArr = f30750f;
             } else {
-                iArr = f30183g;
+                iArr = f30751g;
             }
-            this.f30186e = iArr;
-            this.f30184c = 0;
-            this.f30185d = 0;
+            this.f30754e = iArr;
+            this.f30752c = 0;
+            this.f30753d = 0;
         }
 
         public boolean a(byte[] bArr, int i10, int i11, boolean z10) {
-            int i12 = this.f30184c;
+            int i12 = this.f30752c;
             if (i12 == 6) {
                 return false;
             }
             int i13 = i11 + i10;
-            int i14 = this.f30185d;
-            byte[] bArr2 = this.f30180a;
-            int[] iArr = this.f30186e;
+            int i14 = this.f30753d;
+            byte[] bArr2 = this.f30748a;
+            int[] iArr = this.f30754e;
             int i15 = 0;
             int i16 = i14;
             int i17 = i12;
@@ -89,13 +89,13 @@ public abstract class a {
                             if (i17 != 3) {
                                 if (i17 != 4) {
                                     if (i17 == 5 && i21 != -1) {
-                                        this.f30184c = 6;
+                                        this.f30752c = 6;
                                         return false;
                                     }
                                 } else if (i21 == -2) {
                                     i17++;
                                 } else if (i21 != -1) {
-                                    this.f30184c = 6;
+                                    this.f30752c = 6;
                                     return false;
                                 }
                             } else if (i21 >= 0) {
@@ -112,7 +112,7 @@ public abstract class a {
                                 i15 += 2;
                                 i17 = 5;
                             } else if (i21 != -1) {
-                                this.f30184c = 6;
+                                this.f30752c = 6;
                                 return false;
                             }
                         } else {
@@ -122,7 +122,7 @@ public abstract class a {
                                     i15++;
                                     i17 = 4;
                                 } else if (i21 != -1) {
-                                    this.f30184c = 6;
+                                    this.f30752c = 6;
                                     return false;
                                 }
                             }
@@ -131,7 +131,7 @@ public abstract class a {
                     } else {
                         if (i21 < 0) {
                             if (i21 != -1) {
-                                this.f30184c = 6;
+                                this.f30752c = 6;
                                 return false;
                             }
                         }
@@ -142,7 +142,7 @@ public abstract class a {
                 } else {
                     if (i21 < 0) {
                         if (i21 != -1) {
-                            this.f30184c = 6;
+                            this.f30752c = 6;
                             return false;
                         }
                     }
@@ -152,15 +152,15 @@ public abstract class a {
                 i18 = i20;
             }
             if (!z10) {
-                this.f30184c = i17;
-                this.f30185d = i16;
-                this.f30181b = i15;
+                this.f30752c = i17;
+                this.f30753d = i16;
+                this.f30749b = i15;
                 return true;
             } else if (i17 != 1) {
                 if (i17 != 2) {
                     if (i17 != 3) {
                         if (i17 == 4) {
-                            this.f30184c = 6;
+                            this.f30752c = 6;
                             return false;
                         }
                     } else {
@@ -173,11 +173,11 @@ public abstract class a {
                     bArr2[i15] = (byte) (i16 >> 4);
                     i15++;
                 }
-                this.f30184c = i17;
-                this.f30181b = i15;
+                this.f30752c = i17;
+                this.f30749b = i15;
                 return true;
             } else {
-                this.f30184c = 6;
+                this.f30752c = 6;
                 return false;
             }
         }
@@ -188,65 +188,65 @@ public abstract class a {
     public static class c extends AbstractC0410a {
 
         /* renamed from: j  reason: collision with root package name */
-        private static final byte[] f30187j = {65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 43, 47};
+        private static final byte[] f30755j = {65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 43, 47};
 
         /* renamed from: k  reason: collision with root package name */
-        private static final byte[] f30188k = {65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 45, 95};
+        private static final byte[] f30756k = {65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 45, 95};
 
         /* renamed from: c  reason: collision with root package name */
-        private final byte[] f30189c;
+        private final byte[] f30757c;
 
         /* renamed from: d  reason: collision with root package name */
-        int f30190d;
+        int f30758d;
 
         /* renamed from: e  reason: collision with root package name */
-        private int f30191e;
+        private int f30759e;
 
         /* renamed from: f  reason: collision with root package name */
-        public final boolean f30192f;
+        public final boolean f30760f;
 
         /* renamed from: g  reason: collision with root package name */
-        public final boolean f30193g;
+        public final boolean f30761g;
 
         /* renamed from: h  reason: collision with root package name */
-        public final boolean f30194h;
+        public final boolean f30762h;
 
         /* renamed from: i  reason: collision with root package name */
-        private final byte[] f30195i;
+        private final byte[] f30763i;
 
         public c(int i10, byte[] bArr) {
             boolean z10;
             boolean z11;
             byte[] bArr2;
             int i11;
-            this.f30180a = bArr;
+            this.f30748a = bArr;
             if ((i10 & 1) == 0) {
                 z10 = true;
             } else {
                 z10 = false;
             }
-            this.f30192f = z10;
+            this.f30760f = z10;
             if ((i10 & 2) == 0) {
                 z11 = true;
             } else {
                 z11 = false;
             }
-            this.f30193g = z11;
-            this.f30194h = (i10 & 4) != 0;
+            this.f30761g = z11;
+            this.f30762h = (i10 & 4) != 0;
             if ((i10 & 8) == 0) {
-                bArr2 = f30187j;
+                bArr2 = f30755j;
             } else {
-                bArr2 = f30188k;
+                bArr2 = f30756k;
             }
-            this.f30195i = bArr2;
-            this.f30189c = new byte[2];
-            this.f30190d = 0;
+            this.f30763i = bArr2;
+            this.f30757c = new byte[2];
+            this.f30758d = 0;
             if (z11) {
                 i11 = 19;
             } else {
                 i11 = -1;
             }
-            this.f30191e = i11;
+            this.f30759e = i11;
         }
 
         public boolean a(byte[] bArr, int i10, int i11, boolean z10) {
@@ -259,18 +259,18 @@ public abstract class a {
             byte b12;
             int i16;
             int i17;
-            byte[] bArr2 = this.f30195i;
-            byte[] bArr3 = this.f30180a;
-            int i18 = this.f30191e;
+            byte[] bArr2 = this.f30763i;
+            byte[] bArr3 = this.f30748a;
+            int i18 = this.f30759e;
             int i19 = i11 + i10;
-            int i20 = this.f30190d;
+            int i20 = this.f30758d;
             char c10 = 2;
             int i21 = 0;
             if (i20 != 1) {
                 if (i20 == 2 && (i17 = i10 + 1) <= i19) {
-                    byte[] bArr4 = this.f30189c;
+                    byte[] bArr4 = this.f30757c;
                     i13 = ((bArr4[1] & 255) << 8) | ((bArr4[0] & 255) << 16) | (bArr[i10] & 255);
-                    this.f30190d = 0;
+                    this.f30758d = 0;
                     i12 = i17;
                 }
                 i12 = i10;
@@ -278,8 +278,8 @@ public abstract class a {
             } else {
                 if (i10 + 2 <= i19) {
                     i12 = i10 + 2;
-                    i13 = (bArr[i10 + 1] & 255) | ((this.f30189c[0] & 255) << 16) | ((bArr[i10] & 255) << 8);
-                    this.f30190d = 0;
+                    i13 = (bArr[i10 + 1] & 255) | ((this.f30757c[0] & 255) << 16) | ((bArr[i10] & 255) << 8);
+                    this.f30758d = 0;
                 }
                 i12 = i10;
                 i13 = -1;
@@ -291,7 +291,7 @@ public abstract class a {
                 bArr3[3] = bArr2[i13 & 63];
                 i18--;
                 if (i18 == 0) {
-                    if (this.f30194h) {
+                    if (this.f30762h) {
                         bArr3[4] = 13;
                         i16 = 5;
                     } else {
@@ -320,7 +320,7 @@ public abstract class a {
                 int i24 = i14 + 4;
                 i18--;
                 if (i18 == 0) {
-                    if (this.f30194h) {
+                    if (this.f30762h) {
                         bArr3[i24] = 13;
                         i24 = i14 + 5;
                     }
@@ -336,26 +336,26 @@ public abstract class a {
                 }
             }
             if (z10) {
-                int i25 = this.f30190d;
+                int i25 = this.f30758d;
                 if (i12 - i25 == i19 - 1) {
                     if (i25 > 0) {
-                        b12 = this.f30189c[0];
+                        b12 = this.f30757c[0];
                         i21 = 1;
                     } else {
                         b12 = bArr[i12];
                     }
                     int i26 = (b12 & 255) << 4;
-                    this.f30190d = i25 - i21;
+                    this.f30758d = i25 - i21;
                     bArr3[i14] = bArr2[(i26 >> 6) & 63];
                     int i27 = i14 + 2;
                     bArr3[i14 + 1] = bArr2[i26 & 63];
-                    if (this.f30192f) {
+                    if (this.f30760f) {
                         bArr3[i27] = 61;
                         i27 = i14 + 4;
                         bArr3[i14 + 3] = 61;
                     }
-                    if (this.f30193g) {
-                        if (this.f30194h) {
+                    if (this.f30761g) {
+                        if (this.f30762h) {
                             bArr3[i27] = 13;
                             i27++;
                         }
@@ -367,7 +367,7 @@ public abstract class a {
                     }
                 } else if (i12 - i25 == i19 - 2) {
                     if (i25 > 1) {
-                        b10 = this.f30189c[0];
+                        b10 = this.f30757c[0];
                         i21 = 1;
                     } else {
                         byte b13 = bArr[i12];
@@ -376,23 +376,23 @@ public abstract class a {
                     }
                     int i28 = (b10 & 255) << 10;
                     if (i25 > 0) {
-                        b11 = this.f30189c[i21];
+                        b11 = this.f30757c[i21];
                         i21++;
                     } else {
                         b11 = bArr[i12];
                     }
                     int i29 = i28 | ((b11 & 255) << 2);
-                    this.f30190d = i25 - i21;
+                    this.f30758d = i25 - i21;
                     bArr3[i14] = bArr2[(i29 >> 12) & 63];
                     bArr3[i14 + 1] = bArr2[(i29 >> 6) & 63];
                     int i30 = i14 + 3;
                     bArr3[i14 + 2] = bArr2[i29 & 63];
-                    if (this.f30192f) {
+                    if (this.f30760f) {
                         bArr3[i30] = 61;
                         i30 = i14 + 4;
                     }
-                    if (this.f30193g) {
-                        if (this.f30194h) {
+                    if (this.f30761g) {
+                        if (this.f30762h) {
                             bArr3[i30] = 13;
                             i30++;
                         }
@@ -402,8 +402,8 @@ public abstract class a {
                     } else {
                         i14 = i30;
                     }
-                } else if (this.f30193g && i14 > 0 && i18 != 19) {
-                    if (this.f30194h) {
+                } else if (this.f30761g && i14 > 0 && i18 != 19) {
+                    if (this.f30762h) {
                         bArr3[i14] = 13;
                         i14++;
                     }
@@ -412,21 +412,21 @@ public abstract class a {
                     i14 = i15;
                 }
             } else if (i12 == i19 - 1) {
-                byte[] bArr5 = this.f30189c;
-                int i31 = this.f30190d;
-                this.f30190d = i31 + 1;
+                byte[] bArr5 = this.f30757c;
+                int i31 = this.f30758d;
+                this.f30758d = i31 + 1;
                 bArr5[i31] = bArr[i12];
             } else if (i12 == i19 - 2) {
-                byte[] bArr6 = this.f30189c;
-                int i32 = this.f30190d;
+                byte[] bArr6 = this.f30757c;
+                int i32 = this.f30758d;
                 int i33 = i32 + 1;
-                this.f30190d = i33;
+                this.f30758d = i33;
                 bArr6[i32] = bArr[i12];
-                this.f30190d = i32 + 2;
+                this.f30758d = i32 + 2;
                 bArr6[i33] = bArr[i12 + 1];
             }
-            this.f30181b = i14;
-            this.f30191e = i18;
+            this.f30749b = i14;
+            this.f30759e = i18;
             return true;
         }
     }
@@ -442,8 +442,8 @@ public abstract class a {
     public static byte[] c(byte[] bArr, int i10, int i11, int i12) {
         b bVar = new b(i12, new byte[(i11 * 3) / 4]);
         if (bVar.a(bArr, i10, i11, true)) {
-            int i13 = bVar.f30181b;
-            byte[] bArr2 = bVar.f30180a;
+            int i13 = bVar.f30749b;
+            byte[] bArr2 = bVar.f30748a;
             if (i13 == bArr2.length) {
                 return bArr2;
             }
@@ -462,7 +462,7 @@ public abstract class a {
         c cVar = new c(i12, null);
         int i13 = (i11 / 3) * 4;
         int i14 = 2;
-        if (cVar.f30192f) {
+        if (cVar.f30760f) {
             if (i11 % 3 > 0) {
                 i13 += 4;
             }
@@ -476,16 +476,16 @@ public abstract class a {
                 i13 += 2;
             }
         }
-        if (cVar.f30193g && i11 > 0) {
+        if (cVar.f30761g && i11 > 0) {
             int i16 = ((i11 - 1) / 57) + 1;
-            if (!cVar.f30194h) {
+            if (!cVar.f30762h) {
                 i14 = 1;
             }
             i13 += i16 * i14;
         }
-        cVar.f30180a = new byte[i13];
+        cVar.f30748a = new byte[i13];
         cVar.a(bArr, i10, i11, true);
-        return cVar.f30180a;
+        return cVar.f30748a;
     }
 
     public static String f(byte[] bArr, int i10) {

@@ -6,46 +6,46 @@ import kotlin.jvm.internal.Intrinsics;
 public final class v implements h, ot.c {
 
     /* renamed from: a  reason: collision with root package name */
-    private Integer f35311a;
+    private Integer f35879a;
 
     /* renamed from: b  reason: collision with root package name */
-    private Integer f35312b;
+    private Integer f35880b;
 
     /* renamed from: c  reason: collision with root package name */
-    private Integer f35313c;
+    private Integer f35881c;
 
     /* renamed from: d  reason: collision with root package name */
-    private Integer f35314d;
+    private Integer f35882d;
 
     /* renamed from: e  reason: collision with root package name */
-    private Integer f35315e;
+    private Integer f35883e;
 
     public v(Integer num, Integer num2, Integer num3, Integer num4, Integer num5) {
-        this.f35311a = num;
-        this.f35312b = num2;
-        this.f35313c = num3;
-        this.f35314d = num4;
-        this.f35315e = num5;
+        this.f35879a = num;
+        this.f35880b = num2;
+        this.f35881c = num3;
+        this.f35882d = num4;
+        this.f35883e = num5;
     }
 
     @Override // kt.h
     public Integer A() {
-        return this.f35315e;
+        return this.f35883e;
     }
 
     @Override // kt.h
     public void B(Integer num) {
-        this.f35311a = num;
+        this.f35879a = num;
     }
 
     @Override // kt.h
     public Integer C() {
-        return this.f35312b;
+        return this.f35880b;
     }
 
     @Override // kt.h
     public void E(Integer num) {
-        this.f35314d = num;
+        this.f35882d = num;
     }
 
     @Override // ot.c
@@ -103,12 +103,12 @@ public final class v implements h, ot.c {
 
     @Override // kt.h
     public Integer f() {
-        return this.f35311a;
+        return this.f35879a;
     }
 
     @Override // kt.h
     public Integer g() {
-        return this.f35313c;
+        return this.f35881c;
     }
 
     public int hashCode() {
@@ -154,12 +154,12 @@ public final class v implements h, ot.c {
 
     @Override // kt.h
     public Integer k() {
-        return this.f35314d;
+        return this.f35882d;
     }
 
     @Override // kt.h
     public void o(Integer num) {
-        this.f35315e = num;
+        this.f35883e = num;
     }
 
     public String toString() {
@@ -194,12 +194,12 @@ public final class v implements h, ot.c {
 
     @Override // kt.h
     public void v(Integer num) {
-        this.f35312b = num;
+        this.f35880b = num;
     }
 
     @Override // kt.h
     public void y(Integer num) {
-        this.f35313c = num;
+        this.f35881c = num;
     }
 
     public /* synthetic */ v(Integer num, Integer num2, Integer num3, Integer num4, Integer num5, int i10, DefaultConstructorMarker defaultConstructorMarker) {

@@ -6,18 +6,18 @@ import android.util.Log;
 public final class r implements Runnable {
 
     /* renamed from: d  reason: collision with root package name */
-    final /* synthetic */ a f31773d;
+    final /* synthetic */ a f32341d;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public r(a aVar) {
-        this.f31773d = aVar;
+        this.f32341d = aVar;
     }
 
     @Override // java.lang.Runnable
     public final void run() {
         f fVar;
         try {
-            fVar = this.f31773d.f31745a;
+            fVar = this.f32341d.f32313a;
             fVar.k();
         } catch (Exception e10) {
             Log.e("SplitCompat", "Failed to cleanup splitcompat storage", e10);

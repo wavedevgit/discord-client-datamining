@@ -46,9 +46,9 @@ public /* synthetic */ class ReferralEmbed$Resolving$$serializer implements h0 {
     @Override // tt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        n2 n2Var = n2.f50033a;
+        n2 n2Var = n2.f50601a;
         KSerializer u10 = a.u(n2Var);
-        p0 p0Var = p0.f50049a;
+        p0 p0Var = p0.f50617a;
         return new KSerializer[]{n2Var, p0Var, p0Var, p0Var, u10, p0Var, p0Var};
     }
 
@@ -76,7 +76,7 @@ public /* synthetic */ class ReferralEmbed$Resolving$$serializer implements h0 {
             i10 = b10.i(serialDescriptor, 6);
             i11 = i19;
             i12 = i18;
-            str = (String) b10.n(serialDescriptor, 4, n2.f50033a, null);
+            str = (String) b10.n(serialDescriptor, 4, n2.f50601a, null);
             i13 = i17;
             i14 = i16;
             i15 = 127;
@@ -113,7 +113,7 @@ public /* synthetic */ class ReferralEmbed$Resolving$$serializer implements h0 {
                         i24 |= 8;
                         break;
                     case 4:
-                        str4 = (String) b10.n(serialDescriptor, 4, n2.f50033a, str4);
+                        str4 = (String) b10.n(serialDescriptor, 4, n2.f50601a, str4);
                         i24 |= 16;
                         break;
                     case 5:

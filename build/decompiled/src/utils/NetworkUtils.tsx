@@ -36,7 +36,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             }
         });
         var3 = function(arg0) { // Environment: var0
-            _fun16705: for (var _fun16705_ip = 0;;) switch (_fun16705_ip) {
+            _fun16711: for (var _fun16711_ip = 0;;) switch (_fun16711_ip) {
                 case 0:
                     var1 = arg0;
                     var6 = _closure1_slot0;
@@ -49,8 +49,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var4 = var6.isOnline;
                     var4 = var4.bind(var6)();
                     if (var4) {
-                        _fun16705_ip = 118;
-                        continue _fun16705
+                        _fun16711_ip = 118;
+                        continue _fun16711
                     }
                 case 47:
                     var6 = _closure1_slot2;
@@ -58,8 +58,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var4 = var4.bind(var6)(var1);
                     var4 = _closure1_slot3;
                     if (var4) {
-                        _fun16705_ip = 116;
-                        continue _fun16705
+                        _fun16711_ip = 116;
+                        continue _fun16711
                     }
                 case 68:
                     var4 = true;

@@ -22,14 +22,14 @@ import okhttp3.Response;
 public final class a implements lu.a {
 
     /* renamed from: d  reason: collision with root package name */
-    private final h f38377d;
+    private final h f38945d;
 
     /* renamed from: nu.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public /* synthetic */ class C0540a {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final /* synthetic */ int[] f38378a;
+        public static final /* synthetic */ int[] f38946a;
 
         static {
             int[] iArr = new int[Proxy.Type.values().length];
@@ -37,13 +37,13 @@ public final class a implements lu.a {
                 iArr[Proxy.Type.DIRECT.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
-            f38378a = iArr;
+            f38946a = iArr;
         }
     }
 
     public a(h defaultDns) {
         Intrinsics.checkNotNullParameter(defaultDns, "defaultDns");
-        this.f38377d = defaultDns;
+        this.f38945d = defaultDns;
     }
 
     private final InetAddress b(Proxy proxy, HttpUrl httpUrl, h hVar) {
@@ -52,7 +52,7 @@ public final class a implements lu.a {
         if (type == null) {
             i10 = -1;
         } else {
-            i10 = C0540a.f38378a[type.ordinal()];
+            i10 = C0540a.f38946a[type.ordinal()];
         }
         if (i10 == 1) {
             return (InetAddress) CollectionsKt.o0(hVar.lookup(httpUrl.i()));
@@ -87,7 +87,7 @@ public final class a implements lu.a {
         for (d dVar : y10) {
             if (StringsKt.A("Basic", dVar.c(), true)) {
                 if (kVar == null || (a10 = kVar.a()) == null || (hVar = a10.c()) == null) {
-                    hVar = this.f38377d;
+                    hVar = this.f38945d;
                 }
                 if (z10) {
                     SocketAddress address = proxy.address();
@@ -119,6 +119,6 @@ public final class a implements lu.a {
     }
 
     public /* synthetic */ a(h hVar, int i10, DefaultConstructorMarker defaultConstructorMarker) {
-        this((i10 & 1) != 0 ? h.f36061b : hVar);
+        this((i10 & 1) != 0 ? h.f36629b : hVar);
     }
 }

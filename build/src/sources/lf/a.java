@@ -7,16 +7,16 @@ import java.util.Locale;
 public class a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f35812a;
+    private final String f36380a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f35813b;
+    private final String f36381b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final i f35814c;
+    private final i f36382c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f35815d;
+    private final int f36383d;
 
     public a(String str, String... strArr) {
         String sb2;
@@ -34,35 +34,35 @@ public class a {
             sb3.append("] ");
             sb2 = sb3.toString();
         }
-        this.f35813b = sb2;
-        this.f35812a = str;
-        this.f35814c = new i(str);
+        this.f36381b = sb2;
+        this.f36380a = str;
+        this.f36382c = new i(str);
         int i10 = 2;
-        while (i10 <= 7 && !Log.isLoggable(this.f35812a, i10)) {
+        while (i10 <= 7 && !Log.isLoggable(this.f36380a, i10)) {
             i10++;
         }
-        this.f35815d = i10;
+        this.f36383d = i10;
     }
 
     public void a(String str, Object... objArr) {
         if (d(3)) {
-            Log.d(this.f35812a, c(str, objArr));
+            Log.d(this.f36380a, c(str, objArr));
         }
     }
 
     public void b(String str, Object... objArr) {
-        Log.e(this.f35812a, c(str, objArr));
+        Log.e(this.f36380a, c(str, objArr));
     }
 
     protected String c(String str, Object... objArr) {
         if (objArr != null && objArr.length > 0) {
             str = String.format(Locale.US, str, objArr);
         }
-        return this.f35813b.concat(str);
+        return this.f36381b.concat(str);
     }
 
     public boolean d(int i10) {
-        if (this.f35815d <= i10) {
+        if (this.f36383d <= i10) {
             return true;
         }
         return false;

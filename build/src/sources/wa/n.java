@@ -7,12 +7,12 @@ import kotlin.jvm.internal.Intrinsics;
 public final class n implements d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Set f52417a;
+    private final Set f52985a;
 
     public n() {
         Set b10 = p8.l.b();
         Intrinsics.checkNotNullExpressionValue(b10, "newIdentityHashSet(...)");
-        this.f52417a = b10;
+        this.f52985a = b10;
     }
 
     @Override // s8.f
@@ -20,7 +20,7 @@ public final class n implements d {
     public Bitmap get(int i10) {
         Bitmap createBitmap = Bitmap.createBitmap(1, (int) Math.ceil(i10 / 2.0d), Bitmap.Config.RGB_565);
         Intrinsics.checkNotNullExpressionValue(createBitmap, "createBitmap(...)");
-        this.f52417a.add(createBitmap);
+        this.f52985a.add(createBitmap);
         return createBitmap;
     }
 
@@ -28,7 +28,7 @@ public final class n implements d {
     /* renamed from: h */
     public void release(Bitmap value) {
         Intrinsics.checkNotNullParameter(value, "value");
-        this.f52417a.remove(value);
+        this.f52985a.remove(value);
         value.recycle();
     }
 }

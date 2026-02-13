@@ -4,22 +4,22 @@ package ig;
 public final class a0 extends d0 {
 
     /* renamed from: s  reason: collision with root package name */
-    final /* synthetic */ x f27935s;
+    final /* synthetic */ x f28503s;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public a0(e0 e0Var, CharSequence charSequence, x xVar) {
         super(e0Var, charSequence);
-        this.f27935s = xVar;
+        this.f28503s = xVar;
     }
 
     @Override // ig.d0
     final int c(int i10) {
-        CharSequence charSequence = this.f27943i;
+        CharSequence charSequence = this.f28511i;
         int length = charSequence.length();
         z.c(i10, length, "index");
         while (i10 < length) {
-            if (this.f27935s.a(charSequence.charAt(i10))) {
+            if (this.f28503s.a(charSequence.charAt(i10))) {
                 return i10;
             }
             i10++;

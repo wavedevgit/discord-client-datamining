@@ -27,7 +27,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/collectibles/hooks/useProductDisableState.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Environment: var1
-        _fun71304: for (var _fun71304_ip = 0;;) switch (_fun71304_ip) {
+        _fun88115: for (var _fun88115_ip = 0;;) switch (_fun88115_ip) {
             case 0:
                 var1 = _closure1_slot0;
                 var2 = _closure1_slot1;
@@ -40,7 +40,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = new Array(1);
                 var4[0] = var0;
                 var0 = function() { // Environment: var0
-                    _fun71305: for (var _fun71305_ip = 0;;) switch (_fun71305_ip) {
+                    _fun88116: for (var _fun88116_ip = 0;;) switch (_fun88116_ip) {
                         case 0:
                             var1 = _closure1_slot2;
                             var0 = var1.getPremiumSubscription;
@@ -49,8 +49,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var2 = var1 == var0;
                             var1 = undefined;
                             if (var2) {
-                                _fun71305_ip = 34;
-                                continue _fun71305
+                                _fun88116_ip = 34;
+                                continue _fun88116
                             }
                         case 28:
                             var1 = var0.isPurchasedExternally;
@@ -68,23 +68,23 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var0.PREMIUM_TIER_2_3_DAY;
                 var0 = arg0;
                 if (!(var0 !== var1)) {
-                    _fun71304_ip = 104;
-                    continue _fun71304
+                    _fun88115_ip = 104;
+                    continue _fun88115
                 }
             case 88:
                 var0 = {
                     'isDisabled': false,
                     'disabledReason': null
                 };
-                _fun71304_ip = 181;
-                continue _fun71304;
+                _fun88115_ip = 181;
+                continue _fun88115;
             case 104:
                 var1 = {};
                 var1.isDisabled = var4;
                 var2 = null;
                 if (!var4) {
-                    _fun71304_ip = 173;
-                    continue _fun71304
+                    _fun88115_ip = 173;
+                    continue _fun88115
                 }
             case 116:
                 var6 = _closure1_slot0;
@@ -108,4 +108,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useProductDisableState = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3119, 566, 1625, 1234, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3122, 566, 1625, 1235, 2]);

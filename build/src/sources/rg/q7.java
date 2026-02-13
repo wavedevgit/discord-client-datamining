@@ -5,7 +5,7 @@ import bj.c;
 final class q7 implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final q7 f47087a = new q7();
+    static final q7 f47655a = new q7();
 
     static {
         c.b a10 = bj.c.a("identifyLanguageConfidenceThreshold");

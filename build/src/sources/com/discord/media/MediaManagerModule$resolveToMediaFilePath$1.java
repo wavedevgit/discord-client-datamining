@@ -87,7 +87,7 @@ final class MediaManagerModule$resolveToMediaFilePath$1 extends k implements Fun
                 boolean z12 = this.$useOriginalIfSmaller;
                 EncodingConfig encodingConfig = this.$encodingConfig;
                 promise = this.$promise;
-                Result.a aVar = Result.f31985e;
+                Result.a aVar = Result.f32553e;
                 mediaResolver2 = mediaManagerModule.mediaResolver;
                 this.L$0 = promise;
                 this.label = 1;
@@ -97,9 +97,9 @@ final class MediaManagerModule$resolveToMediaFilePath$1 extends k implements Fun
                 }
             }
             promise.resolve(((Uri) resolveToUri$media_release).toString());
-            b10 = Result.b(Unit.f31988a);
+            b10 = Result.b(Unit.f32556a);
         } catch (Throwable th2) {
-            Result.a aVar2 = Result.f31985e;
+            Result.a aVar2 = Result.f32553e;
             b10 = Result.b(c.a(th2));
         }
         Promise promise3 = this.$promise;
@@ -118,11 +118,11 @@ final class MediaManagerModule$resolveToMediaFilePath$1 extends k implements Fun
             CrashReporting.captureException$default(crashReporting, e10, false, 2, null);
             promise3.reject(e10);
         }
-        return Unit.f31988a;
+        return Unit.f32556a;
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((MediaManagerModule$resolveToMediaFilePath$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
+        return ((MediaManagerModule$resolveToMediaFilePath$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32556a);
     }
 }

@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/activities/useDispatchOpenActivity.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun66591: for (var _fun66591_ip = 0;;) switch (_fun66591_ip) {
+        _fun65302: for (var _fun65302_ip = 0;;) switch (_fun65302_ip) {
             case 0:
                 var0 = arg0;
                 var5 = var0.connectedEmbeddedActivity;
@@ -39,8 +39,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2 == var5;
                 var6 = undefined;
                 if (var2) {
-                    _fun66591_ip = 37;
-                    continue _fun66591
+                    _fun65302_ip = 37;
+                    continue _fun65302
                 }
             case 32:
                 var6 = var5.applicationId;
@@ -52,22 +52,22 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2[0] = var6;
                 var2[1] = var5;
                 var1 = function() { // Environment: var1
-                    _fun66592: for (var _fun66592_ip = 0;;) switch (_fun66592_ip) {
+                    _fun65303: for (var _fun65303_ip = 0;;) switch (_fun65303_ip) {
                         case 0:
                             var0 = _closure2_slot0;
                             var2 = null;
                             var0 = var2 != var0;
                             if (!var0) {
-                                _fun66592_ip = 24;
-                                continue _fun66592
+                                _fun65303_ip = 24;
+                                continue _fun65303
                             }
                         case 16:
                             var1 = _closure2_slot1;
                             var0 = var2 != var1;
                         case 24:
                             if (!var0) {
-                                _fun66592_ip = 93;
-                                continue _fun66592
+                                _fun65303_ip = 93;
+                                continue _fun65303
                             }
                         case 27:
                             var2 = _closure1_slot0;
@@ -97,4 +97,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 806, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 807, 2]);

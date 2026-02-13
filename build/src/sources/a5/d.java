@@ -100,7 +100,7 @@ public final class d implements h {
                 throw new IllegalStateException(("Unable to open '" + this.f390a + "'.").toString());
             }
         }
-        return new l(u.g(x.d(x.k(inputStream)), this.f391b.g(), new x4.g(this.f390a)), contentResolver.getType(this.f390a), x4.h.f54346i);
+        return new l(u.g(x.d(x.k(inputStream)), this.f391b.g(), new x4.g(this.f390a)), contentResolver.getType(this.f390a), x4.h.f54914i);
     }
 
     public final boolean b(Uri uri) {

@@ -27,33 +27,33 @@ import java.util.Iterator;
 public abstract class c {
 
     /* renamed from: p  reason: collision with root package name */
-    protected static final Charset f29119p = Charset.forName("UTF-8");
+    protected static final Charset f29687p = Charset.forName("UTF-8");
 
     /* renamed from: d  reason: collision with root package name */
-    protected k7 f29120d;
+    protected k7 f29688d;
 
     /* renamed from: e  reason: collision with root package name */
-    protected final io.sentry.util.r f29121e = new io.sentry.util.r(new r.a() { // from class: io.sentry.cache.a
+    protected final io.sentry.util.r f29689e = new io.sentry.util.r(new r.a() { // from class: io.sentry.cache.a
         @Override // io.sentry.util.r.a
         public final Object a() {
             b1 serializer;
-            serializer = c.this.f29120d.getSerializer();
+            serializer = c.this.f29688d.getSerializer();
             return serializer;
         }
     });
 
     /* renamed from: i  reason: collision with root package name */
-    protected final File f29122i;
+    protected final File f29690i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final int f29123o;
+    private final int f29691o;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public c(k7 k7Var, String str, int i10) {
         y.c(str, "Directory is required.");
-        this.f29120d = (k7) y.c(k7Var, "SentryOptions is required.");
-        this.f29122i = new File(str);
-        this.f29123o = i10;
+        this.f29688d = (k7) y.c(k7Var, "SentryOptions is required.");
+        this.f29690i = new File(str);
+        this.f29691o = i10;
     }
 
     private l5 d(l5 l5Var, l6 l6Var) {
@@ -104,7 +104,7 @@ public abstract class c {
         z7 o10;
         l5 l11 = l(file);
         if (l11 != null && i(l11)) {
-            this.f29120d.getClientReportRecorder().b(io.sentry.clientreport.f.CACHE_OVERFLOW, l11);
+            this.f29688d.getClientReportRecorder().b(io.sentry.clientreport.f.CACHE_OVERFLOW, l11);
             z7 e10 = e(l11);
             if (e10 != null && j(e10) && (g10 = e10.g()) != null && g10.booleanValue()) {
                 int length = fileArr.length;
@@ -122,16 +122,16 @@ public abstract class c {
                             if (g(l6Var2) && (o10 = o(l6Var2)) != null && j(o10)) {
                                 Boolean g11 = o10.g();
                                 if (g11 != null && g11.booleanValue()) {
-                                    this.f29120d.getLogger().c(SentryLevel.ERROR, "Session %s has 2 times the init flag.", e10.j());
+                                    this.f29688d.getLogger().c(SentryLevel.ERROR, "Session %s has 2 times the init flag.", e10.j());
                                     return;
                                 } else if (e10.j() != null && e10.j().equals(o10.j())) {
                                     o10.n();
                                     try {
-                                        l6Var = l6.G((b1) this.f29121e.a(), o10);
+                                        l6Var = l6.G((b1) this.f29689e.a(), o10);
                                         it.remove();
                                         break;
                                     } catch (IOException e11) {
-                                        this.f29120d.getLogger().a(SentryLevel.ERROR, e11, "Failed to create new envelope item for the session %s", e10.j());
+                                        this.f29688d.getLogger().a(SentryLevel.ERROR, e11, "Failed to create new envelope item for the session %s", e10.j());
                                     }
                                 }
                             }
@@ -147,7 +147,7 @@ public abstract class c {
             l5 d10 = d(l10, l6Var);
             long lastModified = file2.lastModified();
             if (!file2.delete()) {
-                this.f29120d.getLogger().c(SentryLevel.WARNING, "File can't be deleted: %s", file2.getAbsolutePath());
+                this.f29688d.getLogger().c(SentryLevel.WARNING, "File can't be deleted: %s", file2.getAbsolutePath());
             }
             q(d10, file2, lastModified);
             return;
@@ -157,23 +157,23 @@ public abstract class c {
     private l5 l(File file) {
         try {
             BufferedInputStream bufferedInputStream = new BufferedInputStream(new FileInputStream(file));
-            l5 d10 = ((b1) this.f29121e.a()).d(bufferedInputStream);
+            l5 d10 = ((b1) this.f29689e.a()).d(bufferedInputStream);
             bufferedInputStream.close();
             return d10;
         } catch (IOException e10) {
-            this.f29120d.getLogger().b(SentryLevel.ERROR, "Failed to deserialize the envelope.", e10);
+            this.f29688d.getLogger().b(SentryLevel.ERROR, "Failed to deserialize the envelope.", e10);
             return null;
         }
     }
 
     private z7 o(l6 l6Var) {
         try {
-            BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(new ByteArrayInputStream(l6Var.I()), f29119p));
-            z7 z7Var = (z7) ((b1) this.f29121e.a()).c(bufferedReader, z7.class);
+            BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(new ByteArrayInputStream(l6Var.I()), f29687p));
+            z7 z7Var = (z7) ((b1) this.f29689e.a()).c(bufferedReader, z7.class);
             bufferedReader.close();
             return z7Var;
         } catch (Throwable th2) {
-            this.f29120d.getLogger().b(SentryLevel.ERROR, "Failed to deserialize the session.", th2);
+            this.f29688d.getLogger().b(SentryLevel.ERROR, "Failed to deserialize the session.", th2);
             return null;
         }
     }
@@ -181,11 +181,11 @@ public abstract class c {
     private void q(l5 l5Var, File file, long j10) {
         try {
             FileOutputStream fileOutputStream = new FileOutputStream(file);
-            ((b1) this.f29121e.a()).b(l5Var, fileOutputStream);
+            ((b1) this.f29689e.a()).b(l5Var, fileOutputStream);
             file.setLastModified(j10);
             fileOutputStream.close();
         } catch (Throwable th2) {
-            this.f29120d.getLogger().b(SentryLevel.ERROR, "Failed to serialize the new envelope to the disk.", th2);
+            this.f29688d.getLogger().b(SentryLevel.ERROR, "Failed to serialize the new envelope to the disk.", th2);
         }
     }
 
@@ -204,26 +204,26 @@ public abstract class c {
 
     /* JADX INFO: Access modifiers changed from: protected */
     public boolean f() {
-        if (this.f29122i.isDirectory() && this.f29122i.canWrite() && this.f29122i.canRead()) {
+        if (this.f29690i.isDirectory() && this.f29690i.canWrite() && this.f29690i.canRead()) {
             return true;
         }
-        this.f29120d.getLogger().c(SentryLevel.ERROR, "The directory for caching files is inaccessible.: %s", this.f29122i.getAbsolutePath());
+        this.f29688d.getLogger().c(SentryLevel.ERROR, "The directory for caching files is inaccessible.: %s", this.f29690i.getAbsolutePath());
         return false;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     public void p(File[] fileArr) {
         int length = fileArr.length;
-        if (length >= this.f29123o) {
-            this.f29120d.getLogger().c(SentryLevel.WARNING, "Cache folder if full (respecting maxSize). Rotating files", new Object[0]);
-            int i10 = (length - this.f29123o) + 1;
+        if (length >= this.f29691o) {
+            this.f29688d.getLogger().c(SentryLevel.WARNING, "Cache folder if full (respecting maxSize). Rotating files", new Object[0]);
+            int i10 = (length - this.f29691o) + 1;
             r(fileArr);
             File[] fileArr2 = (File[]) Arrays.copyOfRange(fileArr, i10, length);
             for (int i11 = 0; i11 < i10; i11++) {
                 File file = fileArr[i11];
                 k(file, fileArr2);
                 if (!file.delete()) {
-                    this.f29120d.getLogger().c(SentryLevel.WARNING, "File can't be deleted: %s", file.getAbsolutePath());
+                    this.f29688d.getLogger().c(SentryLevel.WARNING, "File can't be deleted: %s", file.getAbsolutePath());
                 }
             }
         }

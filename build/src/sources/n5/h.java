@@ -20,111 +20,111 @@ import o5.a;
 public class h implements e, a.b, k {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f36879a;
+    private final String f37447a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final boolean f36880b;
+    private final boolean f37448b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final u5.b f36881c;
+    private final u5.b f37449c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final u0.j f36882d = new u0.j();
+    private final u0.j f37450d = new u0.j();
 
     /* renamed from: e  reason: collision with root package name */
-    private final u0.j f36883e = new u0.j();
+    private final u0.j f37451e = new u0.j();
 
     /* renamed from: f  reason: collision with root package name */
-    private final Path f36884f;
+    private final Path f37452f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final Paint f36885g;
+    private final Paint f37453g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final RectF f36886h;
+    private final RectF f37454h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final List f36887i;
+    private final List f37455i;
 
     /* renamed from: j  reason: collision with root package name */
-    private final t5.g f36888j;
+    private final t5.g f37456j;
 
     /* renamed from: k  reason: collision with root package name */
-    private final o5.a f36889k;
+    private final o5.a f37457k;
 
     /* renamed from: l  reason: collision with root package name */
-    private final o5.a f36890l;
+    private final o5.a f37458l;
 
     /* renamed from: m  reason: collision with root package name */
-    private final o5.a f36891m;
+    private final o5.a f37459m;
 
     /* renamed from: n  reason: collision with root package name */
-    private final o5.a f36892n;
+    private final o5.a f37460n;
 
     /* renamed from: o  reason: collision with root package name */
-    private o5.a f36893o;
+    private o5.a f37461o;
 
     /* renamed from: p  reason: collision with root package name */
-    private o5.q f36894p;
+    private o5.q f37462p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final com.airbnb.lottie.n f36895q;
+    private final com.airbnb.lottie.n f37463q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final int f36896r;
+    private final int f37464r;
 
     /* renamed from: s  reason: collision with root package name */
-    private o5.a f36897s;
+    private o5.a f37465s;
 
     /* renamed from: t  reason: collision with root package name */
-    float f36898t;
+    float f37466t;
 
     /* renamed from: u  reason: collision with root package name */
-    private o5.c f36899u;
+    private o5.c f37467u;
 
     public h(com.airbnb.lottie.n nVar, l5.i iVar, u5.b bVar, t5.e eVar) {
         Path path = new Path();
-        this.f36884f = path;
-        this.f36885g = new m5.a(1);
-        this.f36886h = new RectF();
-        this.f36887i = new ArrayList();
-        this.f36898t = 0.0f;
-        this.f36881c = bVar;
-        this.f36879a = eVar.f();
-        this.f36880b = eVar.i();
-        this.f36895q = nVar;
-        this.f36888j = eVar.e();
+        this.f37452f = path;
+        this.f37453g = new m5.a(1);
+        this.f37454h = new RectF();
+        this.f37455i = new ArrayList();
+        this.f37466t = 0.0f;
+        this.f37449c = bVar;
+        this.f37447a = eVar.f();
+        this.f37448b = eVar.i();
+        this.f37463q = nVar;
+        this.f37456j = eVar.e();
         path.setFillType(eVar.c());
-        this.f36896r = (int) (iVar.d() / 32.0f);
+        this.f37464r = (int) (iVar.d() / 32.0f);
         o5.a a10 = eVar.d().a();
-        this.f36889k = a10;
+        this.f37457k = a10;
         a10.a(this);
         bVar.i(a10);
         o5.a a11 = eVar.g().a();
-        this.f36890l = a11;
+        this.f37458l = a11;
         a11.a(this);
         bVar.i(a11);
         o5.a a12 = eVar.h().a();
-        this.f36891m = a12;
+        this.f37459m = a12;
         a12.a(this);
         bVar.i(a12);
         o5.a a13 = eVar.b().a();
-        this.f36892n = a13;
+        this.f37460n = a13;
         a13.a(this);
         bVar.i(a13);
         if (bVar.x() != null) {
             o5.d a14 = bVar.x().a().a();
-            this.f36897s = a14;
+            this.f37465s = a14;
             a14.a(this);
-            bVar.i(this.f36897s);
+            bVar.i(this.f37465s);
         }
         if (bVar.z() != null) {
-            this.f36899u = new o5.c(this, bVar, bVar.z());
+            this.f37467u = new o5.c(this, bVar, bVar.z());
         }
     }
 
     private int[] g(int[] iArr) {
-        o5.q qVar = this.f36894p;
+        o5.q qVar = this.f37462p;
         if (qVar != null) {
             Integer[] numArr = (Integer[]) qVar.h();
             int i10 = 0;
@@ -146,9 +146,9 @@ public class h implements e, a.b, k {
 
     private int i() {
         int i10;
-        int round = Math.round(this.f36891m.f() * this.f36896r);
-        int round2 = Math.round(this.f36892n.f() * this.f36896r);
-        int round3 = Math.round(this.f36889k.f() * this.f36896r);
+        int round = Math.round(this.f37459m.f() * this.f37464r);
+        int round2 = Math.round(this.f37460n.f() * this.f37464r);
+        int round3 = Math.round(this.f37457k.f() * this.f37464r);
         if (round != 0) {
             i10 = 527 * round;
         } else {
@@ -165,27 +165,27 @@ public class h implements e, a.b, k {
 
     private LinearGradient j() {
         long i10 = i();
-        LinearGradient linearGradient = (LinearGradient) this.f36882d.d(i10);
+        LinearGradient linearGradient = (LinearGradient) this.f37450d.d(i10);
         if (linearGradient != null) {
             return linearGradient;
         }
-        PointF pointF = (PointF) this.f36891m.h();
-        PointF pointF2 = (PointF) this.f36892n.h();
-        t5.d dVar = (t5.d) this.f36889k.h();
+        PointF pointF = (PointF) this.f37459m.h();
+        PointF pointF2 = (PointF) this.f37460n.h();
+        t5.d dVar = (t5.d) this.f37457k.h();
         LinearGradient linearGradient2 = new LinearGradient(pointF.x, pointF.y, pointF2.x, pointF2.y, g(dVar.d()), dVar.e(), Shader.TileMode.CLAMP);
-        this.f36882d.g(i10, linearGradient2);
+        this.f37450d.g(i10, linearGradient2);
         return linearGradient2;
     }
 
     private RadialGradient k() {
         long i10 = i();
-        RadialGradient radialGradient = (RadialGradient) this.f36883e.d(i10);
+        RadialGradient radialGradient = (RadialGradient) this.f37451e.d(i10);
         if (radialGradient != null) {
             return radialGradient;
         }
-        PointF pointF = (PointF) this.f36891m.h();
-        PointF pointF2 = (PointF) this.f36892n.h();
-        t5.d dVar = (t5.d) this.f36889k.h();
+        PointF pointF = (PointF) this.f37459m.h();
+        PointF pointF2 = (PointF) this.f37460n.h();
+        t5.d dVar = (t5.d) this.f37457k.h();
         int[] g10 = g(dVar.d());
         float[] e10 = dVar.e();
         float f10 = pointF.x;
@@ -195,13 +195,13 @@ public class h implements e, a.b, k {
             hypot = 0.001f;
         }
         RadialGradient radialGradient2 = new RadialGradient(f10, f11, hypot, g10, e10, Shader.TileMode.CLAMP);
-        this.f36883e.g(i10, radialGradient2);
+        this.f37451e.g(i10, radialGradient2);
         return radialGradient2;
     }
 
     @Override // o5.a.b
     public void a() {
-        this.f36895q.invalidateSelf();
+        this.f37463q.invalidateSelf();
     }
 
     @Override // n5.c
@@ -209,7 +209,7 @@ public class h implements e, a.b, k {
         for (int i10 = 0; i10 < list2.size(); i10++) {
             c cVar = (c) list2.get(i10);
             if (cVar instanceof m) {
-                this.f36887i.add((m) cVar);
+                this.f37455i.add((m) cVar);
             }
         }
     }
@@ -221,55 +221,55 @@ public class h implements e, a.b, k {
         o5.c cVar4;
         o5.c cVar5;
         o5.c cVar6;
-        if (obj == b0.f35549d) {
-            this.f36890l.o(cVar);
+        if (obj == b0.f36117d) {
+            this.f37458l.o(cVar);
         } else if (obj == b0.K) {
-            o5.a aVar = this.f36893o;
+            o5.a aVar = this.f37461o;
             if (aVar != null) {
-                this.f36881c.H(aVar);
+                this.f37449c.H(aVar);
             }
             if (cVar == null) {
-                this.f36893o = null;
+                this.f37461o = null;
                 return;
             }
             o5.q qVar = new o5.q(cVar);
-            this.f36893o = qVar;
+            this.f37461o = qVar;
             qVar.a(this);
-            this.f36881c.i(this.f36893o);
+            this.f37449c.i(this.f37461o);
         } else if (obj == b0.L) {
-            o5.q qVar2 = this.f36894p;
+            o5.q qVar2 = this.f37462p;
             if (qVar2 != null) {
-                this.f36881c.H(qVar2);
+                this.f37449c.H(qVar2);
             }
             if (cVar == null) {
-                this.f36894p = null;
+                this.f37462p = null;
                 return;
             }
-            this.f36882d.a();
-            this.f36883e.a();
+            this.f37450d.a();
+            this.f37451e.a();
             o5.q qVar3 = new o5.q(cVar);
-            this.f36894p = qVar3;
+            this.f37462p = qVar3;
             qVar3.a(this);
-            this.f36881c.i(this.f36894p);
-        } else if (obj == b0.f35555j) {
-            o5.a aVar2 = this.f36897s;
+            this.f37449c.i(this.f37462p);
+        } else if (obj == b0.f36123j) {
+            o5.a aVar2 = this.f37465s;
             if (aVar2 != null) {
                 aVar2.o(cVar);
                 return;
             }
             o5.q qVar4 = new o5.q(cVar);
-            this.f36897s = qVar4;
+            this.f37465s = qVar4;
             qVar4.a(this);
-            this.f36881c.i(this.f36897s);
-        } else if (obj == b0.f35550e && (cVar6 = this.f36899u) != null) {
+            this.f37449c.i(this.f37465s);
+        } else if (obj == b0.f36118e && (cVar6 = this.f37467u) != null) {
             cVar6.c(cVar);
-        } else if (obj == b0.G && (cVar5 = this.f36899u) != null) {
+        } else if (obj == b0.G && (cVar5 = this.f37467u) != null) {
             cVar5.f(cVar);
-        } else if (obj == b0.H && (cVar4 = this.f36899u) != null) {
+        } else if (obj == b0.H && (cVar4 = this.f37467u) != null) {
             cVar4.d(cVar);
-        } else if (obj == b0.I && (cVar3 = this.f36899u) != null) {
+        } else if (obj == b0.I && (cVar3 = this.f37467u) != null) {
             cVar3.e(cVar);
-        } else if (obj == b0.J && (cVar2 = this.f36899u) != null) {
+        } else if (obj == b0.J && (cVar2 = this.f37467u) != null) {
             cVar2.g(cVar);
         }
     }
@@ -281,59 +281,59 @@ public class h implements e, a.b, k {
 
     @Override // n5.e
     public void f(RectF rectF, Matrix matrix, boolean z10) {
-        this.f36884f.reset();
-        for (int i10 = 0; i10 < this.f36887i.size(); i10++) {
-            this.f36884f.addPath(((m) this.f36887i.get(i10)).t(), matrix);
+        this.f37452f.reset();
+        for (int i10 = 0; i10 < this.f37455i.size(); i10++) {
+            this.f37452f.addPath(((m) this.f37455i.get(i10)).t(), matrix);
         }
-        this.f36884f.computeBounds(rectF, false);
+        this.f37452f.computeBounds(rectF, false);
         rectF.set(rectF.left - 1.0f, rectF.top - 1.0f, rectF.right + 1.0f, rectF.bottom + 1.0f);
     }
 
     @Override // n5.c
     public String getName() {
-        return this.f36879a;
+        return this.f37447a;
     }
 
     @Override // n5.e
     public void h(Canvas canvas, Matrix matrix, int i10) {
         Shader k10;
-        if (!this.f36880b) {
+        if (!this.f37448b) {
             if (l5.e.h()) {
                 l5.e.b("GradientFillContent#draw");
             }
-            this.f36884f.reset();
-            for (int i11 = 0; i11 < this.f36887i.size(); i11++) {
-                this.f36884f.addPath(((m) this.f36887i.get(i11)).t(), matrix);
+            this.f37452f.reset();
+            for (int i11 = 0; i11 < this.f37455i.size(); i11++) {
+                this.f37452f.addPath(((m) this.f37455i.get(i11)).t(), matrix);
             }
-            this.f36884f.computeBounds(this.f36886h, false);
-            if (this.f36888j == t5.g.LINEAR) {
+            this.f37452f.computeBounds(this.f37454h, false);
+            if (this.f37456j == t5.g.LINEAR) {
                 k10 = j();
             } else {
                 k10 = k();
             }
             k10.setLocalMatrix(matrix);
-            this.f36885g.setShader(k10);
-            o5.a aVar = this.f36893o;
+            this.f37453g.setShader(k10);
+            o5.a aVar = this.f37461o;
             if (aVar != null) {
-                this.f36885g.setColorFilter((ColorFilter) aVar.h());
+                this.f37453g.setColorFilter((ColorFilter) aVar.h());
             }
-            o5.a aVar2 = this.f36897s;
+            o5.a aVar2 = this.f37465s;
             if (aVar2 != null) {
                 float floatValue = ((Float) aVar2.h()).floatValue();
                 if (floatValue == 0.0f) {
-                    this.f36885g.setMaskFilter(null);
-                } else if (floatValue != this.f36898t) {
-                    this.f36885g.setMaskFilter(new BlurMaskFilter(floatValue, BlurMaskFilter.Blur.NORMAL));
+                    this.f37453g.setMaskFilter(null);
+                } else if (floatValue != this.f37466t) {
+                    this.f37453g.setMaskFilter(new BlurMaskFilter(floatValue, BlurMaskFilter.Blur.NORMAL));
                 }
-                this.f36898t = floatValue;
+                this.f37466t = floatValue;
             }
-            int intValue = (int) ((((i10 / 255.0f) * ((Integer) this.f36890l.h()).intValue()) / 100.0f) * 255.0f);
-            this.f36885g.setAlpha(y5.i.c(intValue, 0, SetSpanOperation.SPAN_MAX_PRIORITY));
-            o5.c cVar = this.f36899u;
+            int intValue = (int) ((((i10 / 255.0f) * ((Integer) this.f37458l.h()).intValue()) / 100.0f) * 255.0f);
+            this.f37453g.setAlpha(y5.i.c(intValue, 0, SetSpanOperation.SPAN_MAX_PRIORITY));
+            o5.c cVar = this.f37467u;
             if (cVar != null) {
-                cVar.b(this.f36885g, matrix, y5.j.l(i10, intValue));
+                cVar.b(this.f37453g, matrix, y5.j.l(i10, intValue));
             }
-            canvas.drawPath(this.f36884f, this.f36885g);
+            canvas.drawPath(this.f37452f, this.f37453g);
             if (l5.e.h()) {
                 l5.e.c("GradientFillContent#draw");
             }

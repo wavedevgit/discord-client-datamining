@@ -8,14 +8,14 @@ import to.c4;
 public final class b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final h f56554a;
+    private final h f57122a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final h f56555b;
+    private final h f57123b;
 
     public b(h hVar, h hVar2) {
-        this.f56554a = hVar;
-        this.f56555b = hVar2;
+        this.f57122a = hVar;
+        this.f57123b = hVar2;
     }
 
     public static b a(h hVar, h hVar2) {
@@ -27,6 +27,6 @@ public final class b {
     }
 
     public a b(c4.e eVar) {
-        return c((Context) this.f56554a.get(), (f0) this.f56555b.get(), eVar);
+        return c((Context) this.f57122a.get(), (f0) this.f57123b.get(), eVar);
     }
 }

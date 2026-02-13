@@ -19,7 +19,7 @@ public final class RLottieUtils {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit init$lambda$0() {
         INSTANCE.initAsync();
-        return Unit.f31988a;
+        return Unit.f32556a;
     }
 
     private final void initAsync() {

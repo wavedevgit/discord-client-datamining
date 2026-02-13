@@ -19,7 +19,7 @@ public /* synthetic */ class ActivityRichPresenceInviteEmbedViewHolder$bind$16 e
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Object invoke(Object obj) {
         invoke((SoundmojiContentNode) obj);
-        return Unit.f31988a;
+        return Unit.f32556a;
     }
 
     public final void invoke(SoundmojiContentNode p02) {

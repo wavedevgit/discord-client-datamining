@@ -10,20 +10,20 @@ import kotlin.text.StringsKt;
 public final class q implements cv.b, o {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final q f30466a = new q();
+    public static final q f31034a = new q();
 
     private q() {
     }
 
     private final String a(r rVar) {
         s b10 = rVar.b();
-        if (Intrinsics.areEqual(b10, s.c.f30472a)) {
+        if (Intrinsics.areEqual(b10, s.c.f31040a)) {
             return StringsKt.n1(rVar.c(), rVar.a());
         }
-        if (Intrinsics.areEqual(b10, s.b.f30471a)) {
+        if (Intrinsics.areEqual(b10, s.b.f31039a)) {
             return StringsKt.m1(rVar.c(), rVar.a());
         }
-        if (Intrinsics.areEqual(b10, s.a.f30470a)) {
+        if (Intrinsics.areEqual(b10, s.a.f31038a)) {
             return StringsKt.l1(rVar.c(), rVar.a());
         }
         throw new as.p();
@@ -32,18 +32,18 @@ public final class q implements cv.b, o {
     private final r b(List list) {
         Object b10;
         try {
-            Result.a aVar = Result.f31985e;
+            Result.a aVar = Result.f32553e;
             Object obj = list.get(0);
             Intrinsics.checkNotNull(obj, "null cannot be cast to non-null type kotlin.String");
             Object obj2 = list.get(1);
             Intrinsics.checkNotNull(obj2, "null cannot be cast to non-null type kotlin.String");
             char w12 = StringsKt.w1((String) obj2);
-            q qVar = f30466a;
+            q qVar = f31034a;
             Object obj3 = list.get(2);
             Intrinsics.checkNotNull(obj3, "null cannot be cast to non-null type kotlin.String");
             b10 = Result.b(new r((String) obj, w12, qVar.c((String) obj3)));
         } catch (Throwable th2) {
-            Result.a aVar2 = Result.f31985e;
+            Result.a aVar2 = Result.f32553e;
             b10 = Result.b(kotlin.c.a(th2));
         }
         if (Result.e(b10) == null) {
@@ -58,13 +58,13 @@ public final class q implements cv.b, o {
             if (hashCode != 100571) {
                 if (hashCode != 109757538) {
                     if (hashCode == 2144573977 && str.equals("bothEnds")) {
-                        return s.a.f30470a;
+                        return s.a.f31038a;
                     }
                 } else if (str.equals(ViewProps.START)) {
-                    return s.c.f30472a;
+                    return s.c.f31040a;
                 }
             } else if (str.equals(ViewProps.END)) {
-                return s.b.f30471a;
+                return s.b.f31039a;
             }
         }
         throw new IllegalStateException("Invalid TrimMode value");

@@ -6,6 +6,6 @@ import kotlin.jvm.internal.Intrinsics;
 public abstract class s0 {
     public static final void a(View view, q0 q0Var) {
         Intrinsics.checkNotNullParameter(view, "<this>");
-        view.setTag(l3.a.f35510a, q0Var);
+        view.setTag(l3.a.f36078a, q0Var);
     }
 }

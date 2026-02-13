@@ -12,52 +12,52 @@ import java.util.ArrayList;
 public class f implements s0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Context f36252a;
+    private final Context f36820a;
 
     /* renamed from: e  reason: collision with root package name */
-    private boolean f36256e;
+    private boolean f36824e;
 
     /* renamed from: g  reason: collision with root package name */
-    private boolean f36258g;
+    private boolean f36826g;
 
     /* renamed from: h  reason: collision with root package name */
-    private boolean f36259h;
+    private boolean f36827h;
 
     /* renamed from: i  reason: collision with root package name */
-    private boolean f36260i;
+    private boolean f36828i;
 
     /* renamed from: b  reason: collision with root package name */
-    private final gd.j f36253b = new gd.j();
+    private final gd.j f36821b = new gd.j();
 
     /* renamed from: c  reason: collision with root package name */
-    private int f36254c = 0;
+    private int f36822c = 0;
 
     /* renamed from: d  reason: collision with root package name */
-    private long f36255d = 5000;
+    private long f36823d = 5000;
 
     /* renamed from: f  reason: collision with root package name */
-    private gd.t f36257f = gd.t.f25545a;
+    private gd.t f36825f = gd.t.f25545a;
 
     public f(Context context) {
-        this.f36252a = context;
+        this.f36820a = context;
     }
 
     @Override // mc.s0
     public v1[] a(Handler handler, pe.y yVar, com.google.android.exoplayer2.audio.e eVar, ae.m mVar, hd.d dVar) {
         Handler handler2;
         ArrayList arrayList = new ArrayList();
-        h(this.f36252a, this.f36254c, this.f36257f, this.f36256e, handler, yVar, this.f36255d, arrayList);
-        com.google.android.exoplayer2.audio.f c10 = c(this.f36252a, this.f36258g, this.f36259h, this.f36260i);
+        h(this.f36820a, this.f36822c, this.f36825f, this.f36824e, handler, yVar, this.f36823d, arrayList);
+        com.google.android.exoplayer2.audio.f c10 = c(this.f36820a, this.f36826g, this.f36827h, this.f36828i);
         if (c10 != null) {
             handler2 = handler;
-            b(this.f36252a, this.f36254c, this.f36257f, this.f36256e, c10, handler2, eVar, arrayList);
+            b(this.f36820a, this.f36822c, this.f36825f, this.f36824e, c10, handler2, eVar, arrayList);
         } else {
             handler2 = handler;
         }
-        g(this.f36252a, mVar, handler2.getLooper(), this.f36254c, arrayList);
-        e(this.f36252a, dVar, handler2.getLooper(), this.f36254c, arrayList);
-        d(this.f36252a, this.f36254c, arrayList);
-        f(this.f36252a, handler2, this.f36254c, arrayList);
+        g(this.f36820a, mVar, handler2.getLooper(), this.f36822c, arrayList);
+        e(this.f36820a, dVar, handler2.getLooper(), this.f36822c, arrayList);
+        d(this.f36820a, this.f36822c, arrayList);
+        f(this.f36820a, handler2, this.f36822c, arrayList);
         return (v1[]) arrayList.toArray(new v1[0]);
     }
 
@@ -209,21 +209,21 @@ public class f implements s0 {
     }
 
     public f i() {
-        this.f36253b.b();
+        this.f36821b.b();
         return this;
     }
 
     protected l.b j() {
-        return this.f36253b;
+        return this.f36821b;
     }
 
     public f k(boolean z10) {
-        this.f36256e = z10;
+        this.f36824e = z10;
         return this;
     }
 
     public f l(int i10) {
-        this.f36254c = i10;
+        this.f36822c = i10;
         return this;
     }
 

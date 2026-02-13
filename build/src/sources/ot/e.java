@@ -5,10 +5,10 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 public abstract class e {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Integer f41197a;
+    private final Integer f41765a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f41198b;
+    private final String f41766b;
 
     public /* synthetic */ e(Integer num, String str, DefaultConstructorMarker defaultConstructorMarker) {
         this(num, str);
@@ -17,15 +17,15 @@ public abstract class e {
     public abstract g a(Object obj, CharSequence charSequence, int i10, int i11);
 
     public Integer b() {
-        return this.f41197a;
+        return this.f41765a;
     }
 
     public final String c() {
-        return this.f41198b;
+        return this.f41766b;
     }
 
     private e(Integer num, String str) {
-        this.f41197a = num;
-        this.f41198b = str;
+        this.f41765a = num;
+        this.f41766b = str;
     }
 }

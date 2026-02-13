@@ -7,10 +7,10 @@ import java.lang.ref.WeakReference;
 public class k {
 
     /* renamed from: a  reason: collision with root package name */
-    private final WeakReference f51808a;
+    private final WeakReference f52376a;
 
     public k(TextView textView) {
-        this.f51808a = new WeakReference(textView);
+        this.f52376a = new WeakReference(textView);
     }
 
     public static void a(Spannable spannable, TextView textView) {

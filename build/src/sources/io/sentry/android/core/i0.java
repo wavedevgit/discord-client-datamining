@@ -23,55 +23,55 @@ import java.util.concurrent.TimeUnit;
 public class i0 {
 
     /* renamed from: b  reason: collision with root package name */
-    private final File f28250b;
+    private final File f28818b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final int f28251c;
+    private final int f28819c;
 
     /* renamed from: f  reason: collision with root package name */
-    private String f28254f;
+    private String f28822f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final io.sentry.android.core.internal.util.c0 f28255g;
+    private final io.sentry.android.core.internal.util.c0 f28823g;
 
     /* renamed from: l  reason: collision with root package name */
-    private final io.sentry.z0 f28260l;
+    private final io.sentry.z0 f28828l;
 
     /* renamed from: m  reason: collision with root package name */
-    private final ILogger f28261m;
+    private final ILogger f28829m;
 
     /* renamed from: a  reason: collision with root package name */
-    private long f28249a = 0;
+    private long f28817a = 0;
 
     /* renamed from: d  reason: collision with root package name */
-    private Future f28252d = null;
+    private Future f28820d = null;
 
     /* renamed from: e  reason: collision with root package name */
-    private File f28253e = null;
+    private File f28821e = null;
 
     /* renamed from: h  reason: collision with root package name */
-    private final ArrayDeque f28256h = new ArrayDeque();
+    private final ArrayDeque f28824h = new ArrayDeque();
 
     /* renamed from: i  reason: collision with root package name */
-    private final ArrayDeque f28257i = new ArrayDeque();
+    private final ArrayDeque f28825i = new ArrayDeque();
 
     /* renamed from: j  reason: collision with root package name */
-    private final ArrayDeque f28258j = new ArrayDeque();
+    private final ArrayDeque f28826j = new ArrayDeque();
 
     /* renamed from: k  reason: collision with root package name */
-    private final Map f28259k = new HashMap();
+    private final Map f28827k = new HashMap();
 
     /* renamed from: n  reason: collision with root package name */
-    private volatile boolean f28262n = false;
+    private volatile boolean f28830n = false;
 
     /* renamed from: o  reason: collision with root package name */
-    protected final io.sentry.util.a f28263o = new io.sentry.util.a();
+    protected final io.sentry.util.a f28831o = new io.sentry.util.a();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     class a implements c0.b {
 
         /* renamed from: a  reason: collision with root package name */
-        float f28264a = 0.0f;
+        float f28832a = 0.0f;
 
         a() {
         }
@@ -79,16 +79,16 @@ public class i0 {
         @Override // io.sentry.android.core.internal.util.c0.b
         public void e(long j10, long j11, long j12, long j13, boolean z10, boolean z11, float f10) {
             long h10 = new c7().h();
-            long nanoTime = ((j11 - System.nanoTime()) + SystemClock.elapsedRealtimeNanos()) - i0.this.f28249a;
+            long nanoTime = ((j11 - System.nanoTime()) + SystemClock.elapsedRealtimeNanos()) - i0.this.f28817a;
             if (nanoTime >= 0) {
                 if (z11) {
-                    i0.this.f28258j.addLast(new io.sentry.profilemeasurements.b(Long.valueOf(nanoTime), Long.valueOf(j12), h10));
+                    i0.this.f28826j.addLast(new io.sentry.profilemeasurements.b(Long.valueOf(nanoTime), Long.valueOf(j12), h10));
                 } else if (z10) {
-                    i0.this.f28257i.addLast(new io.sentry.profilemeasurements.b(Long.valueOf(nanoTime), Long.valueOf(j12), h10));
+                    i0.this.f28825i.addLast(new io.sentry.profilemeasurements.b(Long.valueOf(nanoTime), Long.valueOf(j12), h10));
                 }
-                if (f10 != this.f28264a) {
-                    this.f28264a = f10;
-                    i0.this.f28256h.addLast(new io.sentry.profilemeasurements.b(Long.valueOf(nanoTime), Float.valueOf(f10), h10));
+                if (f10 != this.f28832a) {
+                    this.f28832a = f10;
+                    i0.this.f28824h.addLast(new io.sentry.profilemeasurements.b(Long.valueOf(nanoTime), Float.valueOf(f10), h10));
                 }
             }
         }
@@ -98,26 +98,26 @@ public class i0 {
     public static class b {
 
         /* renamed from: a  reason: collision with root package name */
-        public final long f28266a;
+        public final long f28834a;
 
         /* renamed from: b  reason: collision with root package name */
-        public final long f28267b;
+        public final long f28835b;
 
         /* renamed from: c  reason: collision with root package name */
-        public final File f28268c;
+        public final File f28836c;
 
         /* renamed from: d  reason: collision with root package name */
-        public final Map f28269d;
+        public final Map f28837d;
 
         /* renamed from: e  reason: collision with root package name */
-        public final boolean f28270e;
+        public final boolean f28838e;
 
         public b(long j10, long j11, boolean z10, File file, Map map) {
-            this.f28266a = j10;
-            this.f28268c = file;
-            this.f28267b = j11;
-            this.f28269d = map;
-            this.f28270e = z10;
+            this.f28834a = j10;
+            this.f28836c = file;
+            this.f28835b = j11;
+            this.f28837d = map;
+            this.f28838e = z10;
         }
     }
 
@@ -125,31 +125,31 @@ public class i0 {
     public static class c {
 
         /* renamed from: a  reason: collision with root package name */
-        public final long f28271a;
+        public final long f28839a;
 
         /* renamed from: b  reason: collision with root package name */
-        public final long f28272b;
+        public final long f28840b;
 
         /* renamed from: c  reason: collision with root package name */
-        public final Date f28273c;
+        public final Date f28841c;
 
         public c(long j10, long j11, Date date) {
-            this.f28271a = j10;
-            this.f28272b = j11;
-            this.f28273c = date;
+            this.f28839a = j10;
+            this.f28840b = j11;
+            this.f28841c = date;
         }
     }
 
     public i0(String str, int i10, io.sentry.android.core.internal.util.c0 c0Var, io.sentry.z0 z0Var, ILogger iLogger) {
-        this.f28250b = new File((String) io.sentry.util.y.c(str, "TracesFilesDirPath is required"));
-        this.f28251c = i10;
-        this.f28261m = (ILogger) io.sentry.util.y.c(iLogger, "Logger is required");
-        this.f28260l = z0Var;
-        this.f28255g = (io.sentry.android.core.internal.util.c0) io.sentry.util.y.c(c0Var, "SentryFrameMetricsCollector is required");
+        this.f28818b = new File((String) io.sentry.util.y.c(str, "TracesFilesDirPath is required"));
+        this.f28819c = i10;
+        this.f28829m = (ILogger) io.sentry.util.y.c(iLogger, "Logger is required");
+        this.f28828l = z0Var;
+        this.f28823g = (io.sentry.android.core.internal.util.c0) io.sentry.util.y.c(c0Var, "SentryFrameMetricsCollector is required");
     }
 
     private void i(List list) {
-        long elapsedRealtimeNanos = (SystemClock.elapsedRealtimeNanos() - this.f28249a) - TimeUnit.MILLISECONDS.toNanos(System.currentTimeMillis());
+        long elapsedRealtimeNanos = (SystemClock.elapsedRealtimeNanos() - this.f28817a) - TimeUnit.MILLISECONDS.toNanos(System.currentTimeMillis());
         if (list != null) {
             ArrayDeque arrayDeque = new ArrayDeque(list.size());
             ArrayDeque arrayDeque2 = new ArrayDeque(list.size());
@@ -179,26 +179,26 @@ public class i0 {
                 }
             }
             if (!arrayDeque3.isEmpty()) {
-                this.f28259k.put("cpu_usage", new io.sentry.profilemeasurements.a("percent", arrayDeque3));
+                this.f28827k.put("cpu_usage", new io.sentry.profilemeasurements.a("percent", arrayDeque3));
             }
             if (!arrayDeque.isEmpty()) {
-                this.f28259k.put("memory_footprint", new io.sentry.profilemeasurements.a("byte", arrayDeque));
+                this.f28827k.put("memory_footprint", new io.sentry.profilemeasurements.a("byte", arrayDeque));
             }
             if (!arrayDeque2.isEmpty()) {
-                this.f28259k.put("memory_native_footprint", new io.sentry.profilemeasurements.a("byte", arrayDeque2));
+                this.f28827k.put("memory_native_footprint", new io.sentry.profilemeasurements.a("byte", arrayDeque2));
             }
         }
     }
 
     public void f() {
-        io.sentry.a1 a10 = this.f28263o.a();
+        io.sentry.a1 a10 = this.f28831o.a();
         try {
-            Future future = this.f28252d;
+            Future future = this.f28820d;
             if (future != null) {
                 future.cancel(true);
-                this.f28252d = null;
+                this.f28820d = null;
             }
-            if (this.f28262n) {
+            if (this.f28830n) {
                 g(true, null);
             }
             if (a10 != null) {
@@ -217,43 +217,43 @@ public class i0 {
     }
 
     public b g(boolean z10, List list) {
-        io.sentry.a1 a10 = this.f28263o.a();
+        io.sentry.a1 a10 = this.f28831o.a();
         try {
-            if (!this.f28262n) {
-                this.f28261m.c(SentryLevel.WARNING, "Profiler not running", new Object[0]);
+            if (!this.f28830n) {
+                this.f28829m.c(SentryLevel.WARNING, "Profiler not running", new Object[0]);
                 if (a10 != null) {
                     a10.close();
                 }
                 return null;
             }
             Debug.stopMethodTracing();
-            this.f28262n = false;
-            this.f28255g.m(this.f28254f);
+            this.f28830n = false;
+            this.f28823g.m(this.f28822f);
             long elapsedRealtimeNanos = SystemClock.elapsedRealtimeNanos();
             long elapsedCpuTime = Process.getElapsedCpuTime();
-            if (this.f28253e == null) {
-                this.f28261m.c(SentryLevel.ERROR, "Trace file does not exists", new Object[0]);
+            if (this.f28821e == null) {
+                this.f28829m.c(SentryLevel.ERROR, "Trace file does not exists", new Object[0]);
                 if (a10 != null) {
                     a10.close();
                 }
                 return null;
             }
-            if (!this.f28257i.isEmpty()) {
-                this.f28259k.put("slow_frame_renders", new io.sentry.profilemeasurements.a("nanosecond", this.f28257i));
+            if (!this.f28825i.isEmpty()) {
+                this.f28827k.put("slow_frame_renders", new io.sentry.profilemeasurements.a("nanosecond", this.f28825i));
             }
-            if (!this.f28258j.isEmpty()) {
-                this.f28259k.put("frozen_frame_renders", new io.sentry.profilemeasurements.a("nanosecond", this.f28258j));
+            if (!this.f28826j.isEmpty()) {
+                this.f28827k.put("frozen_frame_renders", new io.sentry.profilemeasurements.a("nanosecond", this.f28826j));
             }
-            if (!this.f28256h.isEmpty()) {
-                this.f28259k.put("screen_frame_rates", new io.sentry.profilemeasurements.a("hz", this.f28256h));
+            if (!this.f28824h.isEmpty()) {
+                this.f28827k.put("screen_frame_rates", new io.sentry.profilemeasurements.a("hz", this.f28824h));
             }
             i(list);
-            Future future = this.f28252d;
+            Future future = this.f28820d;
             if (future != null) {
                 future.cancel(true);
-                this.f28252d = null;
+                this.f28820d = null;
             }
-            b bVar = new b(elapsedRealtimeNanos, elapsedCpuTime, z10, this.f28253e, this.f28259k);
+            b bVar = new b(elapsedRealtimeNanos, elapsedCpuTime, z10, this.f28821e, this.f28827k);
             if (a10 != null) {
                 a10.close();
             }
@@ -272,37 +272,37 @@ public class i0 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public boolean h() {
-        return this.f28262n;
+        return this.f28830n;
     }
 
     public c j() {
-        io.sentry.a1 a10 = this.f28263o.a();
+        io.sentry.a1 a10 = this.f28831o.a();
         try {
-            int i10 = this.f28251c;
+            int i10 = this.f28819c;
             if (i10 == 0) {
-                this.f28261m.c(SentryLevel.WARNING, "Disabling profiling because intervaUs is set to %d", Integer.valueOf(i10));
+                this.f28829m.c(SentryLevel.WARNING, "Disabling profiling because intervaUs is set to %d", Integer.valueOf(i10));
                 if (a10 != null) {
                     a10.close();
                 }
                 return null;
-            } else if (this.f28262n) {
-                this.f28261m.c(SentryLevel.WARNING, "Profiling has already started...", new Object[0]);
+            } else if (this.f28830n) {
+                this.f28829m.c(SentryLevel.WARNING, "Profiling has already started...", new Object[0]);
                 if (a10 != null) {
                     a10.close();
                 }
                 return null;
             } else {
-                File file = this.f28250b;
-                this.f28253e = new File(file, x7.a() + ".trace");
-                this.f28259k.clear();
-                this.f28256h.clear();
-                this.f28257i.clear();
-                this.f28258j.clear();
-                this.f28254f = this.f28255g.l(new a());
+                File file = this.f28818b;
+                this.f28821e = new File(file, x7.a() + ".trace");
+                this.f28827k.clear();
+                this.f28824h.clear();
+                this.f28825i.clear();
+                this.f28826j.clear();
+                this.f28822f = this.f28823g.l(new a());
                 try {
-                    io.sentry.z0 z0Var = this.f28260l;
+                    io.sentry.z0 z0Var = this.f28828l;
                     if (z0Var != null) {
-                        this.f28252d = z0Var.c(new Runnable() { // from class: io.sentry.android.core.h0
+                        this.f28820d = z0Var.c(new Runnable() { // from class: io.sentry.android.core.h0
                             @Override // java.lang.Runnable
                             public final void run() {
                                 i0.this.g(true, null);
@@ -310,14 +310,14 @@ public class i0 {
                         }, 30000L);
                     }
                 } catch (RejectedExecutionException e10) {
-                    this.f28261m.b(SentryLevel.ERROR, "Failed to call the executor. Profiling will not be automatically finished. Did you call Sentry.close()?", e10);
+                    this.f28829m.b(SentryLevel.ERROR, "Failed to call the executor. Profiling will not be automatically finished. Did you call Sentry.close()?", e10);
                 }
-                this.f28249a = SystemClock.elapsedRealtimeNanos();
+                this.f28817a = SystemClock.elapsedRealtimeNanos();
                 Date d10 = io.sentry.k.d();
                 long elapsedCpuTime = Process.getElapsedCpuTime();
-                Debug.startMethodTracingSampling(this.f28253e.getPath(), 3000000, this.f28251c);
-                this.f28262n = true;
-                c cVar = new c(this.f28249a, elapsedCpuTime, d10);
+                Debug.startMethodTracingSampling(this.f28821e.getPath(), 3000000, this.f28819c);
+                this.f28830n = true;
+                c cVar = new c(this.f28817a, elapsedCpuTime, d10);
                 if (a10 != null) {
                     a10.close();
                 }

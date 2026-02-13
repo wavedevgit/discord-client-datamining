@@ -6,20 +6,20 @@ import kotlin.jvm.internal.Intrinsics;
 public final class f {
 
     /* renamed from: a  reason: collision with root package name */
-    private final qu.g f36058a;
+    private final qu.g f36626a;
 
     public f(qu.g delegate) {
         Intrinsics.checkNotNullParameter(delegate, "delegate");
-        this.f36058a = delegate;
+        this.f36626a = delegate;
     }
 
     public final qu.g a() {
-        return this.f36058a;
+        return this.f36626a;
     }
 
     /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
     public f(int i10, long j10, TimeUnit timeUnit) {
-        this(new qu.g(pu.e.f43216i, i10, j10, timeUnit));
+        this(new qu.g(pu.e.f43784i, i10, j10, timeUnit));
         Intrinsics.checkNotNullParameter(timeUnit, "timeUnit");
     }
 

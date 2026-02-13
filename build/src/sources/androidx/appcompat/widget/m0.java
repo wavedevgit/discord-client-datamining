@@ -124,7 +124,7 @@ public final class m0 {
     private void c(Context context) {
         if (!this.f1897f) {
             this.f1897f = true;
-            Drawable i10 = i(context, i.a.f27733a);
+            Drawable i10 = i(context, i.a.f28301a);
             if (i10 != null && p(i10)) {
                 return;
             }

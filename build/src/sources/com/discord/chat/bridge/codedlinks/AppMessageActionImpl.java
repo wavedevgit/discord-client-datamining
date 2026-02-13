@@ -72,7 +72,7 @@ public final class AppMessageActionImpl implements AppMessageEmbedAction {
         compositeEncoder.y(serialDescriptor, 0, appMessageActionImpl.getId());
         compositeEncoder.y(serialDescriptor, 1, appMessageActionImpl.getLabel());
         if (compositeEncoder.z(serialDescriptor, 2) || appMessageActionImpl.getDisabled() != null) {
-            compositeEncoder.o(serialDescriptor, 2, h.f49997a, appMessageActionImpl.getDisabled());
+            compositeEncoder.o(serialDescriptor, 2, h.f50565a, appMessageActionImpl.getDisabled());
         }
     }
 

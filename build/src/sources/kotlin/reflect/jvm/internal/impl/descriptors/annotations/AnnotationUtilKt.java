@@ -23,36 +23,36 @@ import org.jetbrains.annotations.NotNull;
 public final class AnnotationUtilKt {
 
     /* renamed from: a */
-    private static final Name f32328a;
+    private static final Name f32896a;
 
     /* renamed from: b */
-    private static final Name f32329b;
+    private static final Name f32897b;
 
     /* renamed from: c */
-    private static final Name f32330c;
+    private static final Name f32898c;
 
     /* renamed from: d */
-    private static final Name f32331d;
+    private static final Name f32899d;
 
     /* renamed from: e */
-    private static final Name f32332e;
+    private static final Name f32900e;
 
     static {
         Name identifier = Name.identifier("message");
         Intrinsics.checkNotNullExpressionValue(identifier, "identifier(...)");
-        f32328a = identifier;
+        f32896a = identifier;
         Name identifier2 = Name.identifier("replaceWith");
         Intrinsics.checkNotNullExpressionValue(identifier2, "identifier(...)");
-        f32329b = identifier2;
+        f32897b = identifier2;
         Name identifier3 = Name.identifier("level");
         Intrinsics.checkNotNullExpressionValue(identifier3, "identifier(...)");
-        f32330c = identifier3;
+        f32898c = identifier3;
         Name identifier4 = Name.identifier("expression");
         Intrinsics.checkNotNullExpressionValue(identifier4, "identifier(...)");
-        f32331d = identifier4;
+        f32899d = identifier4;
         Name identifier5 = Name.identifier("imports");
         Intrinsics.checkNotNullExpressionValue(identifier5, "identifier(...)");
-        f32332e = identifier5;
+        f32900e = identifier5;
     }
 
     public static final KotlinType b(KotlinBuiltIns kotlinBuiltIns, ModuleDescriptor module) {
@@ -68,11 +68,11 @@ public final class AnnotationUtilKt {
         Intrinsics.checkNotNullParameter(message, "message");
         Intrinsics.checkNotNullParameter(replaceWith, "replaceWith");
         Intrinsics.checkNotNullParameter(level, "level");
-        BuiltInAnnotationDescriptor builtInAnnotationDescriptor = new BuiltInAnnotationDescriptor(kotlinBuiltIns, StandardNames.FqNames.replaceWith, o0.m(v.a(f32331d, new StringValue(replaceWith)), v.a(f32332e, new ArrayValue(CollectionsKt.l(), new a(kotlinBuiltIns)))), false, 8, null);
+        BuiltInAnnotationDescriptor builtInAnnotationDescriptor = new BuiltInAnnotationDescriptor(kotlinBuiltIns, StandardNames.FqNames.replaceWith, o0.m(v.a(f32899d, new StringValue(replaceWith)), v.a(f32900e, new ArrayValue(CollectionsKt.l(), new a(kotlinBuiltIns)))), false, 8, null);
         FqName fqName = StandardNames.FqNames.deprecated;
-        Pair a10 = v.a(f32328a, new StringValue(message));
-        Pair a11 = v.a(f32329b, new AnnotationValue(builtInAnnotationDescriptor));
-        Name name = f32330c;
+        Pair a10 = v.a(f32896a, new StringValue(message));
+        Pair a11 = v.a(f32897b, new AnnotationValue(builtInAnnotationDescriptor));
+        Name name = f32898c;
         ClassId classId = ClassId.Companion.topLevel(StandardNames.FqNames.deprecationLevel);
         Name identifier = Name.identifier(level);
         Intrinsics.checkNotNullExpressionValue(identifier, "identifier(...)");

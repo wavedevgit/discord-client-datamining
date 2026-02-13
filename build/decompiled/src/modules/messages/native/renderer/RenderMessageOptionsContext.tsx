@@ -39,6 +39,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         'inlineAttachmentMedia': true,
         'animateEmoji': true,
         'gifAutoPlay': false,
+        'timestampHourCycle': 0,
         'renderCodedLinks': true,
         'renderGiftCode': true,
         'renderActivityInstanceEmbed': true,

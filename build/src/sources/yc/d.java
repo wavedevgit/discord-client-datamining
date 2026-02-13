@@ -11,19 +11,19 @@ import uc.j;
 final class d extends e {
 
     /* renamed from: b  reason: collision with root package name */
-    private long f55515b;
+    private long f56083b;
 
     /* renamed from: c  reason: collision with root package name */
-    private long[] f55516c;
+    private long[] f56084c;
 
     /* renamed from: d  reason: collision with root package name */
-    private long[] f55517d;
+    private long[] f56085d;
 
     public d() {
         super(new j());
-        this.f55515b = -9223372036854775807L;
-        this.f55516c = new long[0];
-        this.f55517d = new long[0];
+        this.f56083b = -9223372036854775807L;
+        this.f56084c = new long[0];
+        this.f56085d = new long[0];
     }
 
     private static Boolean g(h0 h0Var) {
@@ -135,7 +135,7 @@ final class d extends e {
         if (obj instanceof Double) {
             double doubleValue = ((Double) obj).doubleValue();
             if (doubleValue > 0.0d) {
-                this.f55515b = (long) (doubleValue * 1000000.0d);
+                this.f56083b = (long) (doubleValue * 1000000.0d);
             }
         }
         Object obj2 = k10.get("keyframes");
@@ -147,17 +147,17 @@ final class d extends e {
                 List list = (List) obj3;
                 List list2 = (List) obj4;
                 int size = list2.size();
-                this.f55516c = new long[size];
-                this.f55517d = new long[size];
+                this.f56084c = new long[size];
+                this.f56085d = new long[size];
                 for (int i10 = 0; i10 < size; i10++) {
                     Object obj5 = list.get(i10);
                     Object obj6 = list2.get(i10);
                     if ((obj6 instanceof Double) && (obj5 instanceof Double)) {
-                        this.f55516c[i10] = (long) (((Double) obj6).doubleValue() * 1000000.0d);
-                        this.f55517d[i10] = ((Double) obj5).longValue();
+                        this.f56084c[i10] = (long) (((Double) obj6).doubleValue() * 1000000.0d);
+                        this.f56085d[i10] = ((Double) obj5).longValue();
                     } else {
-                        this.f55516c = new long[0];
-                        this.f55517d = new long[0];
+                        this.f56084c = new long[0];
+                        this.f56085d = new long[0];
                         break;
                     }
                 }
@@ -167,14 +167,14 @@ final class d extends e {
     }
 
     public long d() {
-        return this.f55515b;
+        return this.f56083b;
     }
 
     public long[] e() {
-        return this.f55517d;
+        return this.f56085d;
     }
 
     public long[] f() {
-        return this.f55516c;
+        return this.f56084c;
     }
 }

@@ -2398,8 +2398,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7.category = var9;
     var14 = var8.DARK;
     var13 = {
-        'raw': 'TRANSPARENT',
-        'opacity': 0
+        'raw': 'WHITE',
+        'opacity': 0.03
     };
     var7[var14] = var13;
     var14 = var8.LIGHT;

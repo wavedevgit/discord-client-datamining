@@ -7,34 +7,34 @@ import kotlin.jvm.internal.Intrinsics;
 public final class a extends b {
 
     /* renamed from: e  reason: collision with root package name */
-    private final float f40630e;
+    private final float f41198e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final float f40631f;
+    private final float f41199f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final float f40632g;
+    private final float f41200g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final float f40633h;
+    private final float f41201h;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public a(nn.b handler) {
         super(handler);
         Intrinsics.checkNotNullParameter(handler, "handler");
-        this.f40630e = handler.L();
-        this.f40631f = handler.M();
-        this.f40632g = handler.J();
-        this.f40633h = handler.K();
+        this.f41198e = handler.L();
+        this.f41199f = handler.M();
+        this.f41200g = handler.J();
+        this.f41201h = handler.K();
     }
 
     @Override // on.b
     public void a(WritableMap eventData) {
         Intrinsics.checkNotNullParameter(eventData, "eventData");
         super.a(eventData);
-        eventData.putDouble("x", PixelUtil.toDIPFromPixel(this.f40630e));
-        eventData.putDouble("y", PixelUtil.toDIPFromPixel(this.f40631f));
-        eventData.putDouble("absoluteX", PixelUtil.toDIPFromPixel(this.f40632g));
-        eventData.putDouble("absoluteY", PixelUtil.toDIPFromPixel(this.f40633h));
+        eventData.putDouble("x", PixelUtil.toDIPFromPixel(this.f41198e));
+        eventData.putDouble("y", PixelUtil.toDIPFromPixel(this.f41199f));
+        eventData.putDouble("absoluteX", PixelUtil.toDIPFromPixel(this.f41200g));
+        eventData.putDouble("absoluteY", PixelUtil.toDIPFromPixel(this.f41201h));
     }
 }

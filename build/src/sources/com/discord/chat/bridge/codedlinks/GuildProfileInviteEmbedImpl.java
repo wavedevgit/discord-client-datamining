@@ -417,45 +417,45 @@ public final class GuildProfileInviteEmbedImpl extends CodedLinkEmbed implements
     public static final /* synthetic */ void write$Self$chat_release(GuildProfileInviteEmbedImpl guildProfileInviteEmbedImpl, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
         Lazy[] lazyArr = $childSerializers;
         if (compositeEncoder.z(serialDescriptor, 0) || guildProfileInviteEmbedImpl.getAcceptLabelBackgroundColor() != null) {
-            compositeEncoder.o(serialDescriptor, 0, p0.f50049a, guildProfileInviteEmbedImpl.getAcceptLabelBackgroundColor());
+            compositeEncoder.o(serialDescriptor, 0, p0.f50617a, guildProfileInviteEmbedImpl.getAcceptLabelBackgroundColor());
         }
         if (compositeEncoder.z(serialDescriptor, 1) || guildProfileInviteEmbedImpl.getAcceptLabelBorderColor() != null) {
-            compositeEncoder.o(serialDescriptor, 1, p0.f50049a, guildProfileInviteEmbedImpl.getAcceptLabelBorderColor());
+            compositeEncoder.o(serialDescriptor, 1, p0.f50617a, guildProfileInviteEmbedImpl.getAcceptLabelBorderColor());
         }
         if (compositeEncoder.z(serialDescriptor, 2) || guildProfileInviteEmbedImpl.getAcceptLabelColor() != null) {
-            compositeEncoder.o(serialDescriptor, 2, p0.f50049a, guildProfileInviteEmbedImpl.getAcceptLabelColor());
+            compositeEncoder.o(serialDescriptor, 2, p0.f50617a, guildProfileInviteEmbedImpl.getAcceptLabelColor());
         }
         if (compositeEncoder.z(serialDescriptor, 3) || guildProfileInviteEmbedImpl.getAcceptLabelText() != null) {
-            compositeEncoder.o(serialDescriptor, 3, n2.f50033a, guildProfileInviteEmbedImpl.getAcceptLabelText());
+            compositeEncoder.o(serialDescriptor, 3, n2.f50601a, guildProfileInviteEmbedImpl.getAcceptLabelText());
         }
         if (compositeEncoder.z(serialDescriptor, 4) || guildProfileInviteEmbedImpl.getBodyTextColor() != null) {
-            compositeEncoder.o(serialDescriptor, 4, p0.f50049a, guildProfileInviteEmbedImpl.getBodyTextColor());
+            compositeEncoder.o(serialDescriptor, 4, p0.f50617a, guildProfileInviteEmbedImpl.getBodyTextColor());
         }
         if (compositeEncoder.z(serialDescriptor, 5) || guildProfileInviteEmbedImpl.getBodyText() != null) {
-            compositeEncoder.o(serialDescriptor, 5, n2.f50033a, guildProfileInviteEmbedImpl.getBodyText());
+            compositeEncoder.o(serialDescriptor, 5, n2.f50601a, guildProfileInviteEmbedImpl.getBodyText());
         }
         compositeEncoder.w(serialDescriptor, 6, guildProfileInviteEmbedImpl.getBackgroundColor());
         compositeEncoder.w(serialDescriptor, 7, guildProfileInviteEmbedImpl.getBorderColor());
         if (compositeEncoder.z(serialDescriptor, 8) || guildProfileInviteEmbedImpl.getCanBeAccepted() != null) {
-            compositeEncoder.o(serialDescriptor, 8, h.f49997a, guildProfileInviteEmbedImpl.getCanBeAccepted());
+            compositeEncoder.o(serialDescriptor, 8, h.f50565a, guildProfileInviteEmbedImpl.getCanBeAccepted());
         }
         if (compositeEncoder.z(serialDescriptor, 9) || guildProfileInviteEmbedImpl.getEmbedCanBeTapped() != null) {
-            compositeEncoder.o(serialDescriptor, 9, h.f49997a, guildProfileInviteEmbedImpl.getEmbedCanBeTapped());
+            compositeEncoder.o(serialDescriptor, 9, h.f50565a, guildProfileInviteEmbedImpl.getEmbedCanBeTapped());
         }
         compositeEncoder.w(serialDescriptor, 10, guildProfileInviteEmbedImpl.getHeaderColor());
-        n2 n2Var = n2.f50033a;
+        n2 n2Var = n2.f50601a;
         compositeEncoder.o(serialDescriptor, 11, n2Var, guildProfileInviteEmbedImpl.getHeaderText());
         if (compositeEncoder.z(serialDescriptor, 12) || guildProfileInviteEmbedImpl.getResolvingGradientEnd() != null) {
-            compositeEncoder.o(serialDescriptor, 12, p0.f50049a, guildProfileInviteEmbedImpl.getResolvingGradientEnd());
+            compositeEncoder.o(serialDescriptor, 12, p0.f50617a, guildProfileInviteEmbedImpl.getResolvingGradientEnd());
         }
         if (compositeEncoder.z(serialDescriptor, 13) || guildProfileInviteEmbedImpl.getResolvingGradientStart() != null) {
-            compositeEncoder.o(serialDescriptor, 13, p0.f50049a, guildProfileInviteEmbedImpl.getResolvingGradientStart());
+            compositeEncoder.o(serialDescriptor, 13, p0.f50617a, guildProfileInviteEmbedImpl.getResolvingGradientStart());
         }
         if (compositeEncoder.z(serialDescriptor, 14) || guildProfileInviteEmbedImpl.getSplashHasRadialGradient() != null) {
-            compositeEncoder.o(serialDescriptor, 14, h.f49997a, guildProfileInviteEmbedImpl.getSplashHasRadialGradient());
+            compositeEncoder.o(serialDescriptor, 14, h.f50565a, guildProfileInviteEmbedImpl.getSplashHasRadialGradient());
         }
         if (compositeEncoder.z(serialDescriptor, 15) || guildProfileInviteEmbedImpl.getSplashOpacity() != null) {
-            compositeEncoder.o(serialDescriptor, 15, p0.f50049a, guildProfileInviteEmbedImpl.getSplashOpacity());
+            compositeEncoder.o(serialDescriptor, 15, p0.f50617a, guildProfileInviteEmbedImpl.getSplashOpacity());
         }
         if (compositeEncoder.z(serialDescriptor, 16) || guildProfileInviteEmbedImpl.getSplashUrl() != null) {
             compositeEncoder.o(serialDescriptor, 16, n2Var, guildProfileInviteEmbedImpl.getSplashUrl());
@@ -467,13 +467,13 @@ public final class GuildProfileInviteEmbedImpl extends CodedLinkEmbed implements
             compositeEncoder.o(serialDescriptor, 18, n2Var, guildProfileInviteEmbedImpl.getSubtitle());
         }
         if (compositeEncoder.z(serialDescriptor, 19) || guildProfileInviteEmbedImpl.getSubtitleColor() != null) {
-            compositeEncoder.o(serialDescriptor, 19, p0.f50049a, guildProfileInviteEmbedImpl.getSubtitleColor());
+            compositeEncoder.o(serialDescriptor, 19, p0.f50617a, guildProfileInviteEmbedImpl.getSubtitleColor());
         }
         if (compositeEncoder.z(serialDescriptor, 20) || guildProfileInviteEmbedImpl.getThumbnailBackgroundColor() != null) {
-            compositeEncoder.o(serialDescriptor, 20, p0.f50049a, guildProfileInviteEmbedImpl.getThumbnailBackgroundColor());
+            compositeEncoder.o(serialDescriptor, 20, p0.f50617a, guildProfileInviteEmbedImpl.getThumbnailBackgroundColor());
         }
         if (compositeEncoder.z(serialDescriptor, 21) || guildProfileInviteEmbedImpl.getThumbnailCornerRadius() != null) {
-            compositeEncoder.o(serialDescriptor, 21, p0.f50049a, guildProfileInviteEmbedImpl.getThumbnailCornerRadius());
+            compositeEncoder.o(serialDescriptor, 21, p0.f50617a, guildProfileInviteEmbedImpl.getThumbnailCornerRadius());
         }
         if (compositeEncoder.z(serialDescriptor, 22) || guildProfileInviteEmbedImpl.getThumbnailText() != null) {
             compositeEncoder.o(serialDescriptor, 22, n2Var, guildProfileInviteEmbedImpl.getThumbnailText());
@@ -482,7 +482,7 @@ public final class GuildProfileInviteEmbedImpl extends CodedLinkEmbed implements
             compositeEncoder.o(serialDescriptor, 23, n2Var, guildProfileInviteEmbedImpl.getThumbnailUrl());
         }
         if (compositeEncoder.z(serialDescriptor, 24) || guildProfileInviteEmbedImpl.getTitleColor() != null) {
-            compositeEncoder.o(serialDescriptor, 24, p0.f50049a, guildProfileInviteEmbedImpl.getTitleColor());
+            compositeEncoder.o(serialDescriptor, 24, p0.f50617a, guildProfileInviteEmbedImpl.getTitleColor());
         }
         if (compositeEncoder.z(serialDescriptor, 25) || guildProfileInviteEmbedImpl.getTitleText() != null) {
             compositeEncoder.o(serialDescriptor, 25, n2Var, guildProfileInviteEmbedImpl.getTitleText());

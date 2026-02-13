@@ -135,7 +135,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.subscribeGuild = var4;
     var2.subscribeChannel = var3;
     var1 = function arg0() {
-        _fun68838: for (var _fun68838_ip = 0;;) switch (_fun68838_ip) {
+        _fun62490: for (var _fun62490_ip = 0;;) switch (_fun62490_ip) {
             case 0:
                 var2 = arg0;
                 var4 = var2.guildId;
@@ -145,13 +145,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2.rowHeight;
                 var _closure2_slot0 = var2;
                 var6 = function arg0() {
-                    _fun68839: for (var _fun68839_ip = 0;;) switch (_fun68839_ip) {
+                    _fun62491: for (var _fun62491_ip = 0;;) switch (_fun62491_ip) {
                         case 0:
                             var1 = arguments[1];
                             var0 = undefined;
                             if (!(var1 === var0)) {
-                                _fun68839_ip = 11;
-                                continue _fun68839
+                                _fun62491_ip = 11;
+                                continue _fun62491
                             }
                         case 9:
                             var1 = 0;
@@ -207,16 +207,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = 0;
                 var13 = var9;
                 if (!(var13 > var1)) {
-                    _fun68838_ip = 130;
-                    continue _fun68838
+                    _fun62490_ip = 126;
+                    continue _fun62490
                 }
-            case 106:
+            case 102:
                 var5 = global;
                 var8 = var5.Math;
                 var5 = var8.max;
                 var1 = var7.bind(var0)(var1);
                 var13 = var5.bind(var8)(var1, var9);
-            case 130:
+            case 126:
                 var1 = global;
                 var12 = var1.Math;
                 var11 = var12.floor;
@@ -233,16 +233,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var5.MINIMUM_RANGE;
                 var5 = var8 * var5;
                 if (!(var5 <= var6)) {
-                    _fun68838_ip = 214;
-                    continue _fun68838
+                    _fun62490_ip = 210;
+                    continue _fun62490
                 }
-            case 205:
+            case 201:
                 var5 = var7.bind(var0)(var5);
                 if (var5 <= var6) {
-                    _fun68838_ip = 205;
-                    continue _fun68838
+                    _fun62490_ip = 201;
+                    continue _fun62490
                 }
-            case 214:
+            case 210:
                 var1 = _closure1_slot3;
                 var1 = var1.bind(var0)(var4, var3, var2);
                 return var0;
@@ -250,4 +250,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.subscribeChannelDimensions = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [806, 5734, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [807, 5734, 2]);

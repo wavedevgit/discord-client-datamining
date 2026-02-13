@@ -50,4 +50,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = 'PremiumUpsellActionSheetKey';
     var2.PREMIUM_UPSELL_ACTION_SHEET_KEY = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3279, 8057, 1307, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3282, 7679, 1307, 2]);

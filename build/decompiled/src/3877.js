@@ -34,7 +34,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var3 instanceof Object ? var3 : var4;
     var _closure1_slot2 = var3;
     var1 = function arg0() {
-        _fun35026: for (var _fun35026_ip = 0;;) switch (_fun35026_ip) {
+        _fun35056: for (var _fun35056_ip = 0;;) switch (_fun35056_ip) {
             case 0:
                 var6 = arg0;
                 var4 = undefined;
@@ -44,8 +44,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = 1;
                 var3 = var3 > var0;
                 if (!var3) {
-                    _fun35026_ip = 34;
-                    continue _fun35026
+                    _fun35056_ip = 34;
+                    continue _fun35056
                 }
             case 26:
                 var5 = arguments[var0];
@@ -53,8 +53,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             case 34:
                 var5 = !var3;
                 if (!var3) {
-                    _fun35026_ip = 44;
-                    continue _fun35026
+                    _fun35056_ip = 44;
+                    continue _fun35056
                 }
             case 40:
                 var5 = arguments[var0];

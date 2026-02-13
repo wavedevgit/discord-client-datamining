@@ -22,50 +22,50 @@ public final class a0 extends f {
     private b F;
 
     /* renamed from: v  reason: collision with root package name */
-    private final boolean f46261v;
+    private final boolean f46829v;
 
     /* renamed from: w  reason: collision with root package name */
-    private final boolean f46262w;
+    private final boolean f46830w;
 
     /* renamed from: x  reason: collision with root package name */
-    private final r[] f46263x;
+    private final r[] f46831x;
 
     /* renamed from: y  reason: collision with root package name */
-    private final Timeline[] f46264y;
+    private final Timeline[] f46832y;
 
     /* renamed from: z  reason: collision with root package name */
-    private final ArrayList f46265z;
+    private final ArrayList f46833z;
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class a extends l {
 
         /* renamed from: r  reason: collision with root package name */
-        private final long[] f46266r;
+        private final long[] f46834r;
 
         /* renamed from: s  reason: collision with root package name */
-        private final long[] f46267s;
+        private final long[] f46835s;
 
         public a(Timeline timeline, Map map) {
             super(timeline);
             int t10 = timeline.t();
-            this.f46267s = new long[timeline.t()];
+            this.f46835s = new long[timeline.t()];
             Timeline.d dVar = new Timeline.d();
             for (int i10 = 0; i10 < t10; i10++) {
-                this.f46267s[i10] = timeline.r(i10, dVar).f12617y;
+                this.f46835s[i10] = timeline.r(i10, dVar).f12617y;
             }
             int m10 = timeline.m();
-            this.f46266r = new long[m10];
+            this.f46834r = new long[m10];
             Timeline.b bVar = new Timeline.b();
             for (int i11 = 0; i11 < m10; i11++) {
                 timeline.k(i11, bVar, true);
                 long longValue = ((Long) oe.a.e((Long) map.get(bVar.f12594e))).longValue();
-                long[] jArr = this.f46266r;
+                long[] jArr = this.f46834r;
                 longValue = longValue == Long.MIN_VALUE ? bVar.f12596o : longValue;
                 jArr[i11] = longValue;
                 long j10 = bVar.f12596o;
                 if (j10 != -9223372036854775807L) {
-                    long[] jArr2 = this.f46267s;
+                    long[] jArr2 = this.f46835s;
                     int i12 = bVar.f12595i;
                     jArr2[i12] = jArr2[i12] - (j10 - longValue);
                 }
@@ -75,7 +75,7 @@ public final class a0 extends f {
         @Override // rd.l, com.google.android.exoplayer2.Timeline
         public Timeline.b k(int i10, Timeline.b bVar, boolean z10) {
             super.k(i10, bVar, z10);
-            bVar.f12596o = this.f46266r[i10];
+            bVar.f12596o = this.f46834r[i10];
             return bVar;
         }
 
@@ -83,7 +83,7 @@ public final class a0 extends f {
         public Timeline.d s(int i10, Timeline.d dVar, long j10) {
             long j11;
             super.s(i10, dVar, j10);
-            long j12 = this.f46267s[i10];
+            long j12 = this.f46835s[i10];
             dVar.f12617y = j12;
             if (j12 != -9223372036854775807L) {
                 long j13 = dVar.f12616x;
@@ -103,10 +103,10 @@ public final class a0 extends f {
     public static final class b extends IOException {
 
         /* renamed from: d  reason: collision with root package name */
-        public final int f46268d;
+        public final int f46836d;
 
         public b(int i10) {
-            this.f46268d = i10;
+            this.f46836d = i10;
         }
     }
 
@@ -117,10 +117,10 @@ public final class a0 extends f {
     private void K() {
         Timeline.b bVar = new Timeline.b();
         for (int i10 = 0; i10 < this.D; i10++) {
-            long j10 = -this.f46264y[0].j(i10, bVar).q();
+            long j10 = -this.f46832y[0].j(i10, bVar).q();
             int i11 = 1;
             while (true) {
-                Timeline[] timelineArr = this.f46264y;
+                Timeline[] timelineArr = this.f46832y;
                 if (i11 < timelineArr.length) {
                     this.E[i10][i11] = j10 - (-timelineArr[i11].j(i10, bVar).q());
                     i11++;
@@ -136,7 +136,7 @@ public final class a0 extends f {
             int i11 = 0;
             long j10 = Long.MIN_VALUE;
             while (true) {
-                timelineArr = this.f46264y;
+                timelineArr = this.f46832y;
                 if (i11 >= timelineArr.length) {
                     break;
                 }
@@ -161,8 +161,8 @@ public final class a0 extends f {
     @Override // rd.f, rd.a
     public void B(me.c0 c0Var) {
         super.B(c0Var);
-        for (int i10 = 0; i10 < this.f46263x.length; i10++) {
-            J(Integer.valueOf(i10), this.f46263x[i10]);
+        for (int i10 = 0; i10 < this.f46831x.length; i10++) {
+            J(Integer.valueOf(i10), this.f46831x[i10]);
         }
     }
 
@@ -170,11 +170,11 @@ public final class a0 extends f {
     @Override // rd.f, rd.a
     public void D() {
         super.D();
-        Arrays.fill(this.f46264y, (Object) null);
+        Arrays.fill(this.f46832y, (Object) null);
         this.D = -1;
         this.F = null;
-        this.f46265z.clear();
-        Collections.addAll(this.f46265z, this.f46263x);
+        this.f46833z.clear();
+        Collections.addAll(this.f46833z, this.f46831x);
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
@@ -199,16 +199,16 @@ public final class a0 extends f {
                 return;
             }
             if (this.E.length == 0) {
-                this.E = (long[][]) Array.newInstance(Long.TYPE, this.D, this.f46264y.length);
+                this.E = (long[][]) Array.newInstance(Long.TYPE, this.D, this.f46832y.length);
             }
-            this.f46265z.remove(rVar);
-            this.f46264y[num.intValue()] = timeline;
-            if (this.f46265z.isEmpty()) {
-                if (this.f46261v) {
+            this.f46833z.remove(rVar);
+            this.f46832y[num.intValue()] = timeline;
+            if (this.f46833z.isEmpty()) {
+                if (this.f46829v) {
                     K();
                 }
-                a aVar = this.f46264y[0];
-                if (this.f46262w) {
+                a aVar = this.f46832y[0];
+                if (this.f46830w) {
                     N();
                     aVar = new a(aVar, this.B);
                 }
@@ -219,7 +219,7 @@ public final class a0 extends f {
 
     @Override // rd.r
     public void a(p pVar) {
-        if (this.f46262w) {
+        if (this.f46830w) {
             d dVar = (d) pVar;
             Iterator it = this.C.a().iterator();
             while (true) {
@@ -232,12 +232,12 @@ public final class a0 extends f {
                     break;
                 }
             }
-            pVar = dVar.f46273d;
+            pVar = dVar.f46841d;
         }
         z zVar = (z) pVar;
         int i10 = 0;
         while (true) {
-            r[] rVarArr = this.f46263x;
+            r[] rVarArr = this.f46831x;
             if (i10 < rVarArr.length) {
                 rVarArr[i10].a(zVar.a(i10));
                 i10++;
@@ -249,7 +249,7 @@ public final class a0 extends f {
 
     @Override // rd.r
     public MediaItem d() {
-        r[] rVarArr = this.f46263x;
+        r[] rVarArr = this.f46831x;
         if (rVarArr.length > 0) {
             return rVarArr[0].d();
         }
@@ -258,16 +258,16 @@ public final class a0 extends f {
 
     @Override // rd.r
     public p f(r.b bVar, me.b bVar2, long j10) {
-        int length = this.f46263x.length;
+        int length = this.f46831x.length;
         p[] pVarArr = new p[length];
-        int f10 = this.f46264y[0].f(bVar.f46438a);
+        int f10 = this.f46832y[0].f(bVar.f47006a);
         for (int i10 = 0; i10 < length; i10++) {
-            pVarArr[i10] = this.f46263x[i10].f(bVar.c(this.f46264y[i10].q(f10)), bVar2, j10 - this.E[f10][i10]);
+            pVarArr[i10] = this.f46831x[i10].f(bVar.c(this.f46832y[i10].q(f10)), bVar2, j10 - this.E[f10][i10]);
         }
         z zVar = new z(this.A, this.E[f10], pVarArr);
-        if (this.f46262w) {
-            d dVar = new d(zVar, true, 0L, ((Long) oe.a.e((Long) this.B.get(bVar.f46438a))).longValue());
-            this.C.put(bVar.f46438a, dVar);
+        if (this.f46830w) {
+            d dVar = new d(zVar, true, 0L, ((Long) oe.a.e((Long) this.B.get(bVar.f47006a))).longValue());
+            this.C.put(bVar.f47006a, dVar);
             return dVar;
         }
         return zVar;
@@ -292,13 +292,13 @@ public final class a0 extends f {
     }
 
     public a0(boolean z10, boolean z11, h hVar, r... rVarArr) {
-        this.f46261v = z10;
-        this.f46262w = z11;
-        this.f46263x = rVarArr;
+        this.f46829v = z10;
+        this.f46830w = z11;
+        this.f46831x = rVarArr;
         this.A = hVar;
-        this.f46265z = new ArrayList(Arrays.asList(rVarArr));
+        this.f46833z = new ArrayList(Arrays.asList(rVarArr));
         this.D = -1;
-        this.f46264y = new Timeline[rVarArr.length];
+        this.f46832y = new Timeline[rVarArr.length];
         this.E = new long[0];
         this.B = new HashMap();
         this.C = qi.c0.a().a().e();

@@ -10,10 +10,10 @@ public final class b4 implements Parcelable {
     public static final Parcelable.Creator<b4> CREATOR = new a();
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f42894d;
+    private final String f43462d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final String f42895e;
+    private final String f43463e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements Parcelable.Creator {
@@ -34,12 +34,12 @@ public final class b4 implements Parcelable {
     public b4(String text, String value) {
         Intrinsics.checkNotNullParameter(text, "text");
         Intrinsics.checkNotNullParameter(value, "value");
-        this.f42894d = text;
-        this.f42895e = value;
+        this.f43462d = text;
+        this.f43463e = value;
     }
 
     public final String a() {
-        return this.f42895e;
+        return this.f43463e;
     }
 
     @Override // android.os.Parcelable
@@ -55,30 +55,30 @@ public final class b4 implements Parcelable {
             return false;
         }
         b4 b4Var = (b4) obj;
-        if (Intrinsics.areEqual(this.f42894d, b4Var.f42894d) && Intrinsics.areEqual(this.f42895e, b4Var.f42895e)) {
+        if (Intrinsics.areEqual(this.f43462d, b4Var.f43462d) && Intrinsics.areEqual(this.f43463e, b4Var.f43463e)) {
             return true;
         }
         return false;
     }
 
     public final String getText() {
-        return this.f42894d;
+        return this.f43462d;
     }
 
     public int hashCode() {
-        return (this.f42894d.hashCode() * 31) + this.f42895e.hashCode();
+        return (this.f43462d.hashCode() * 31) + this.f43463e.hashCode();
     }
 
     public String toString() {
-        String str = this.f42894d;
-        String str2 = this.f42895e;
+        String str = this.f43462d;
+        String str2 = this.f43463e;
         return "Option(text=" + str + ", value=" + str2 + ")";
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel dest, int i10) {
         Intrinsics.checkNotNullParameter(dest, "dest");
-        dest.writeString(this.f42894d);
-        dest.writeString(this.f42895e);
+        dest.writeString(this.f43462d);
+        dest.writeString(this.f43463e);
     }
 }

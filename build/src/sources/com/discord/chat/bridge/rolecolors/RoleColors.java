@@ -70,10 +70,10 @@ public final class RoleColors {
     public static final /* synthetic */ void write$Self$chat_release(RoleColors roleColors, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
         compositeEncoder.w(serialDescriptor, 0, roleColors.primaryColor);
         if (compositeEncoder.z(serialDescriptor, 1) || roleColors.secondaryColor != null) {
-            compositeEncoder.o(serialDescriptor, 1, p0.f50049a, roleColors.secondaryColor);
+            compositeEncoder.o(serialDescriptor, 1, p0.f50617a, roleColors.secondaryColor);
         }
         if (compositeEncoder.z(serialDescriptor, 2) || roleColors.tertiaryColor != null) {
-            compositeEncoder.o(serialDescriptor, 2, p0.f50049a, roleColors.tertiaryColor);
+            compositeEncoder.o(serialDescriptor, 2, p0.f50617a, roleColors.tertiaryColor);
         }
     }
 

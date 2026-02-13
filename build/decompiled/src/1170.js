@@ -13,104 +13,141 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.value = var2;
     var2 = '__esModule';
     var2 = var4.bind(var5)(var1, var2, var3);
-    var2 = 'PrimitiveTagIntegration';
-    var1.INTEGRATION_NAME = var2;
     var0 = function() {
-        var0 = {};
-        var2 = 'PrimitiveTagIntegration';
-        var0.name = var2;
-        var2 = function arg0() {
-            var3 = arg0;
-            var2 = var3.on;
-            var1 = 'beforeSendEvent';
-            var0 = function(arg0) { // Environment: var0
-                _fun12768: for (var _fun12768_ip = 0;;) switch (_fun12768_ip) {
-                    case 0:
-                        var1 = arg0;
-                        var _closure4_slot0 = var1;
-                        var2 = var1.tags;
-                        if (!var2) {
-                            _fun12768_ip = 57;
-                            continue _fun12768
-                        }
-                    case 18:
-                        var2 = global;
-                        var3 = var2.Object;
-                        var2 = var3.keys;
-                        var1 = var1.tags;
-                        var2 = var2.bind(var3)(var1);
-                        var1 = var2.forEach;
-                        var0 = function(arg0) { // Environment: var0
-                            var3 = arg0;
-                            var1 = _closure4_slot0;
-                            var2 = var1.tags;
-                            var5 = _closure1_slot0;
-                            var4 = _closure1_slot1;
-                            var0 = 0;
-                            var4 = var4[var0];
-                            var0 = undefined;
-                            var5 = var5.bind(var0)(var4);
-                            var4 = var5.PrimitiveToString;
-                            var1 = var1.tags;
-                            var1 = var1[var3];
-                            var1 = var4.bind(var5)(var1);
-                            var2[var3] = var1;
-                            return var0;
-                        };
-                        var0 = var1.bind(var2)(var0);
-                    case 57:
-                        var0 = undefined;
-                        return var0;
+        _fun12769: for (var _fun12769_ip = 0;;) switch (_fun12769_ip) {
+            case 0:
+                var3 = undefined;
+                var0 = undefined;
+                var1 = arguments.length;
+                var10 = 0;
+                if (!(var1 > var10)) {
+                    _fun12769_ip = 21;
+                    continue _fun12769
                 }
-            };
-            var0 = var2.bind(var3)(var1, var0);
-            var0 = undefined;
-            return var0;
-        };
-        var0.setup = var2;
-        var1 = function() {
-            _fun12770: for (var _fun12770_ip = 0;;) switch (_fun12770_ip) {
-                case 0:
-                    var4 = _closure1_slot0;
-                    var0 = _closure1_slot1;
-                    var3 = 1;
-                    var2 = var0[var3];
-                    var0 = undefined;
-                    var2 = var4.bind(var0)(var2);
-                    var2 = var2.NATIVE;
-                    var2 = var2.enableNative;
-                    if (!var2) {
-                        _fun12770_ip = 81;
-                        continue _fun12770
-                    }
-                case 40:
-                    var2 = _closure1_slot0;
-                    var1 = _closure1_slot1;
-                    var1 = var1[var3];
-                    var1 = var2.bind(var0)(var1);
-                    var3 = var1.NATIVE;
-                    var2 = var3._setPrimitiveProcessor;
-                    var1 = function(arg0) { // Environment: var1
-                        var2 = _closure1_slot0;
-                        var1 = _closure1_slot1;
-                        var0 = 0;
-                        var1 = var1[var0];
-                        var0 = undefined;
-                        var2 = var2.bind(var0)(var1);
-                        var1 = var2.PrimitiveToString;
-                        var0 = arg0;
-                        var0 = var1.bind(var2)(var0);
-                        return var0;
-                    };
-                    var1 = var2.bind(var3)(var1);
-                case 81:
-                    return var0;
-            }
-        };
-        var0.afterAllSetup = var1;
-        return var0;
+            case 13:
+                var1 = arguments[var10];
+                if (!(var3 === var1)) {
+                    _fun12769_ip = 25;
+                    continue _fun12769
+                }
+            case 21:
+                var6 = {};
+                _fun12769_ip = 29;
+                continue _fun12769;
+            case 25:
+                var6 = arguments[var10];
+            case 29:
+                var0 = global;
+                var5 = var0.Object;
+                var4 = var5.assign;
+                var2 = var0.Object;
+                var1 = var2.assign;
+                var0 = {
+                    'xhr': true,
+                    'console': true,
+                    'sentry': true
+                };
+                var2 = var1.bind(var2)(var0, var6);
+                var1 = {};
+                var0 = var6.fetch;
+                var7 = null;
+                var8 = var6;
+                if (!(var7 !== var0)) {
+                    _fun12769_ip = 90;
+                    continue _fun12769
+                }
+            case 86:
+                if (!(var3 === var0)) {
+                    _fun12769_ip = 126;
+                    continue _fun12769
+                }
+            case 90:
+                var9 = _closure1_slot0;
+                var6 = _closure1_slot1;
+                var6 = var6[var10];
+                var9 = var9.bind(var3)(var6);
+                var6 = var9.isWeb;
+                var6 = var6.bind(var9)();
+                var6 = !var6;
+                var0 = !var6;
+            case 126:
+                var1.fetch = var0;
+                var9 = _closure1_slot0;
+                var6 = _closure1_slot1;
+                var6 = var6[var10];
+                var9 = var9.bind(var3)(var6);
+                var6 = var9.isWeb;
+                var6 = var6.bind(var9)();
+                var9 = !var6;
+                var6 = !var9;
+                if (var9) {
+                    _fun12769_ip = 196;
+                    continue _fun12769
+                }
+            case 170:
+                var11 = var8.dom;
+                var9 = var7 === var11;
+                if (var9) {
+                    _fun12769_ip = 187;
+                    continue _fun12769
+                }
+            case 183:
+                var9 = var3 === var11;
+            case 187:
+                if (var9) {
+                    _fun12769_ip = 193;
+                    continue _fun12769
+                }
+            case 190:
+                var9 = var11;
+            case 193:
+                var6 = var9;
+            case 196:
+                var1.dom = var6;
+                var9 = _closure1_slot0;
+                var6 = _closure1_slot1;
+                var6 = var6[var10];
+                var9 = var9.bind(var3)(var6);
+                var6 = var9.isWeb;
+                var6 = var6.bind(var9)();
+                var9 = !var6;
+                var6 = !var9;
+                if (var9) {
+                    _fun12769_ip = 263;
+                    continue _fun12769
+                }
+            case 237:
+                var8 = var8.history;
+                var7 = var7 === var8;
+                if (var7) {
+                    _fun12769_ip = 254;
+                    continue _fun12769
+                }
+            case 250:
+                var7 = var3 === var8;
+            case 254:
+                if (var7) {
+                    _fun12769_ip = 260;
+                    continue _fun12769
+                }
+            case 257:
+                var7 = var8;
+            case 260:
+                var6 = var7;
+            case 263:
+                var1.history = var6;
+                var2 = var4.bind(var5)(var2, var1);
+                var1 = _closure1_slot0;
+                var4 = _closure1_slot1;
+                var0 = 1;
+                var0 = var4[var0];
+                var1 = var1.bind(var3)(var0);
+                var0 = var1.breadcrumbsIntegration;
+                var0 = var0.bind(var1)(var2);
+                return var0;
+        }
     };
-    var1.primitiveTagIntegration = var0;
+    var1.breadcrumbsIntegration = var0;
     var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1171, 998]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1000, 1022]);

@@ -10,58 +10,58 @@ import java.util.Map;
 public final class g extends h {
 
     /* renamed from: n  reason: collision with root package name */
-    public static final g f54552n;
+    public static final g f55120n;
 
     /* renamed from: d  reason: collision with root package name */
-    public final List f54553d;
+    public final List f55121d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final List f54554e;
+    public final List f55122e;
 
     /* renamed from: f  reason: collision with root package name */
-    public final List f54555f;
+    public final List f55123f;
 
     /* renamed from: g  reason: collision with root package name */
-    public final List f54556g;
+    public final List f55124g;
 
     /* renamed from: h  reason: collision with root package name */
-    public final List f54557h;
+    public final List f55125h;
 
     /* renamed from: i  reason: collision with root package name */
-    public final List f54558i;
+    public final List f55126i;
 
     /* renamed from: j  reason: collision with root package name */
-    public final Format f54559j;
+    public final Format f55127j;
 
     /* renamed from: k  reason: collision with root package name */
-    public final List f54560k;
+    public final List f55128k;
 
     /* renamed from: l  reason: collision with root package name */
-    public final Map f54561l;
+    public final Map f55129l;
 
     /* renamed from: m  reason: collision with root package name */
-    public final List f54562m;
+    public final List f55130m;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        public final Uri f54563a;
+        public final Uri f55131a;
 
         /* renamed from: b  reason: collision with root package name */
-        public final Format f54564b;
+        public final Format f55132b;
 
         /* renamed from: c  reason: collision with root package name */
-        public final String f54565c;
+        public final String f55133c;
 
         /* renamed from: d  reason: collision with root package name */
-        public final String f54566d;
+        public final String f55134d;
 
         public a(Uri uri, Format format, String str, String str2) {
-            this.f54563a = uri;
-            this.f54564b = format;
-            this.f54565c = str;
-            this.f54566d = str2;
+            this.f55131a = uri;
+            this.f55132b = format;
+            this.f55133c = str;
+            this.f55134d = str2;
         }
     }
 
@@ -69,30 +69,30 @@ public final class g extends h {
     public static final class b {
 
         /* renamed from: a  reason: collision with root package name */
-        public final Uri f54567a;
+        public final Uri f55135a;
 
         /* renamed from: b  reason: collision with root package name */
-        public final Format f54568b;
+        public final Format f55136b;
 
         /* renamed from: c  reason: collision with root package name */
-        public final String f54569c;
+        public final String f55137c;
 
         /* renamed from: d  reason: collision with root package name */
-        public final String f54570d;
+        public final String f55138d;
 
         /* renamed from: e  reason: collision with root package name */
-        public final String f54571e;
+        public final String f55139e;
 
         /* renamed from: f  reason: collision with root package name */
-        public final String f54572f;
+        public final String f55140f;
 
         public b(Uri uri, Format format, String str, String str2, String str3, String str4) {
-            this.f54567a = uri;
-            this.f54568b = format;
-            this.f54569c = str;
-            this.f54570d = str2;
-            this.f54571e = str3;
-            this.f54572f = str4;
+            this.f55135a = uri;
+            this.f55136b = format;
+            this.f55137c = str;
+            this.f55138d = str2;
+            this.f55139e = str3;
+            this.f55140f = str4;
         }
 
         public static b b(Uri uri) {
@@ -100,38 +100,38 @@ public final class g extends h {
         }
 
         public b a(Format format) {
-            return new b(this.f54567a, format, this.f54569c, this.f54570d, this.f54571e, this.f54572f);
+            return new b(this.f55135a, format, this.f55137c, this.f55138d, this.f55139e, this.f55140f);
         }
     }
 
     static {
         List list = Collections.EMPTY_LIST;
-        f54552n = new g("", list, list, list, list, list, list, null, list, false, Collections.EMPTY_MAP, list);
+        f55120n = new g("", list, list, list, list, list, list, null, list, false, Collections.EMPTY_MAP, list);
     }
 
     public g(String str, List list, List list2, List list3, List list4, List list5, List list6, Format format, List list7, boolean z10, Map map, List list8) {
         super(str, list, z10);
         List list9;
-        this.f54553d = Collections.unmodifiableList(f(list2, list3, list4, list5, list6));
-        this.f54554e = Collections.unmodifiableList(list2);
-        this.f54555f = Collections.unmodifiableList(list3);
-        this.f54556g = Collections.unmodifiableList(list4);
-        this.f54557h = Collections.unmodifiableList(list5);
-        this.f54558i = Collections.unmodifiableList(list6);
-        this.f54559j = format;
+        this.f55121d = Collections.unmodifiableList(f(list2, list3, list4, list5, list6));
+        this.f55122e = Collections.unmodifiableList(list2);
+        this.f55123f = Collections.unmodifiableList(list3);
+        this.f55124g = Collections.unmodifiableList(list4);
+        this.f55125h = Collections.unmodifiableList(list5);
+        this.f55126i = Collections.unmodifiableList(list6);
+        this.f55127j = format;
         if (list7 != null) {
             list9 = Collections.unmodifiableList(list7);
         } else {
             list9 = null;
         }
-        this.f54560k = list9;
-        this.f54561l = Collections.unmodifiableMap(map);
-        this.f54562m = Collections.unmodifiableList(list8);
+        this.f55128k = list9;
+        this.f55129l = Collections.unmodifiableMap(map);
+        this.f55130m = Collections.unmodifiableList(list8);
     }
 
     private static void b(List list, List list2) {
         for (int i10 = 0; i10 < list.size(); i10++) {
-            Uri uri = ((a) list.get(i10)).f54563a;
+            Uri uri = ((a) list.get(i10)).f55131a;
             if (uri != null && !list2.contains(uri)) {
                 list2.add(uri);
             }
@@ -146,7 +146,7 @@ public final class g extends h {
             while (true) {
                 if (i12 < list2.size()) {
                     qd.c cVar = (qd.c) list2.get(i12);
-                    if (cVar.f44031e == i10 && cVar.f44032i == i11) {
+                    if (cVar.f44599e == i10 && cVar.f44600i == i11) {
                         arrayList.add(obj);
                         break;
                     }
@@ -166,7 +166,7 @@ public final class g extends h {
     private static List f(List list, List list2, List list3, List list4, List list5) {
         ArrayList arrayList = new ArrayList();
         for (int i10 = 0; i10 < list.size(); i10++) {
-            Uri uri = ((b) list.get(i10)).f54567a;
+            Uri uri = ((b) list.get(i10)).f55135a;
             if (!arrayList.contains(uri)) {
                 arrayList.add(uri);
             }
@@ -181,10 +181,10 @@ public final class g extends h {
     @Override // qd.a
     /* renamed from: c */
     public g a(List list) {
-        String str = this.f54573a;
-        List list2 = this.f54574b;
-        List d10 = d(this.f54554e, 0, list);
+        String str = this.f55141a;
+        List list2 = this.f55142b;
+        List d10 = d(this.f55122e, 0, list);
         List list3 = Collections.EMPTY_LIST;
-        return new g(str, list2, d10, list3, d(this.f54556g, 1, list), d(this.f54557h, 2, list), list3, this.f54559j, this.f54560k, this.f54575c, this.f54561l, this.f54562m);
+        return new g(str, list2, d10, list3, d(this.f55124g, 1, list), d(this.f55125h, 2, list), list3, this.f55127j, this.f55128k, this.f55143c, this.f55129l, this.f55130m);
     }
 }

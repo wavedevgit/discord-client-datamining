@@ -1,157 +1,175 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun22224: for (var _fun22224_ip = 0;;) switch (_fun22224_ip) {
-        case 0:
-            var1 = exports;
-            var0 = global;
-            var4 = var0.Object;
-            var3 = var4.defineProperty;
-            var2 = {};
-            var0 = true;
-            var2.value = var0;
-            var0 = '__esModule';
-            var0 = var3.bind(var4)(var1, var0, var2);
-            var0 = undefined;
-            var1.default = var0;
-            var3 = dependencyMap;
-            var2 = 0;
-            var3 = var3[var2];
-            var2 = require;
-            var4 = var2.bind(var0)(var3);
-            if (!var4) {
-                _fun22224_ip = 77;
-                continue _fun22224
-            }
-        case 65:
-            var2 = var4.__esModule;
-            var3 = var4;
-            if (var2) {
-                _fun22224_ip = 86;
-                continue _fun22224
-            }
-        case 77:
-            var2 = {};
-            var2.default = var4;
-            var3 = var2;
-        case 86:
-            var2 = {};
-            var4 = function arg0, arg1() {
-                var0 = global;
-                var2 = var0.Number;
-                var1 = undefined;
+    var1 = exports;
+    var0 = global;
+    var5 = var0.Object;
+    var4 = var5.defineProperty;
+    var3 = {};
+    var0 = true;
+    var3.value = var0;
+    var0 = '__esModule';
+    var0 = var4.bind(var5)(var1, var0, var3);
+    var0 = undefined;
+    var1.default = var0;
+    var3 = {};
+    var4 = {
+        'one': 'minder dan een seconde',
+        'other': 'minder dan {{count}} seconden'
+    };
+    var3.lessThanXSeconds = var4;
+    var4 = {
+        'one': '1 seconde',
+        'other': '{{count}} seconden'
+    };
+    var3.xSeconds = var4;
+    var4 = 'een halve minuut';
+    var3.halfAMinute = var4;
+    var4 = {
+        'one': 'minder dan een minuut',
+        'other': 'minder dan {{count}} minuten'
+    };
+    var3.lessThanXMinutes = var4;
+    var4 = {
+        'one': 'een minuut',
+        'other': '{{count}} minuten'
+    };
+    var3.xMinutes = var4;
+    var4 = {
+        'one': 'ongeveer 1 uur',
+        'other': 'ongeveer {{count}} uur'
+    };
+    var3.aboutXHours = var4;
+    var4 = {
+        'one': '1 uur',
+        'other': '{{count}} uur'
+    };
+    var3.xHours = var4;
+    var4 = {
+        'one': '1 dag',
+        'other': '{{count}} dagen'
+    };
+    var3.xDays = var4;
+    var4 = {
+        'one': 'ongeveer 1 week',
+        'other': 'ongeveer {{count}} weken'
+    };
+    var3.aboutXWeeks = var4;
+    var4 = {
+        'one': '1 week',
+        'other': '{{count}} weken'
+    };
+    var3.xWeeks = var4;
+    var4 = {
+        'one': 'ongeveer 1 maand',
+        'other': 'ongeveer {{count}} maanden'
+    };
+    var3.aboutXMonths = var4;
+    var4 = {
+        'one': '1 maand',
+        'other': '{{count}} maanden'
+    };
+    var3.xMonths = var4;
+    var4 = {
+        'one': 'ongeveer 1 jaar',
+        'other': 'ongeveer {{count}} jaar'
+    };
+    var3.aboutXYears = var4;
+    var4 = {
+        'one': '1 jaar',
+        'other': '{{count}} jaar'
+    };
+    var3.xYears = var4;
+    var4 = {
+        'one': 'meer dan 1 jaar',
+        'other': 'meer dan {{count}} jaar'
+    };
+    var3.overXYears = var4;
+    var4 = {
+        'one': 'bijna 1 jaar',
+        'other': 'bijna {{count}} jaar'
+    };
+    var3.almostXYears = var4;
+    var _closure1_slot0 = var3;
+    var2 = function arg0, arg1, arg2() {
+        _fun22247: for (var _fun22247_ip = 0;;) switch (_fun22247_ip) {
+            case 0:
+                var7 = arg1;
+                var1 = arg2;
+                var2 = _closure1_slot0;
                 var0 = arg0;
-                var1 = var2.bind(var1)(var0);
-                var0 = 'e';
-                var0 = var1 + var0;
-                return var0;
-            };
-            var2.ordinalNumber = var4;
-            var6 = var3.default;
-            var4 = {};
-            var5 = {};
-            var8 = ['v.C.', 'n.C.'];
-            var5.narrow = var8;
-            var8 = ['v.Chr.', 'n.Chr.'];
-            var5.abbreviated = var8;
-            var8 = ['voor Christus', 'na Christus'];
-            var5.wide = var8;
-            var4.values = var5;
-            var5 = 'wide';
-            var4.defaultWidth = var5;
-            var4 = var6.bind(var0)(var4);
-            var2.era = var4;
-            var6 = var3.default;
-            var4 = {};
-            var8 = {};
-            var9 = ['1', '2', '3', '4'];
-            var8.narrow = var9;
-            var9 = ['K1', 'K2', 'K3', 'K4'];
-            var8.abbreviated = var9;
-            var9 = ['1e kwartaal', '2e kwartaal', '3e kwartaal', '4e kwartaal'];
-            var8.wide = var9;
-            var4.values = var8;
-            var4.defaultWidth = var5;
-            var7 = function arg0() {
-                var1 = arg0;
+                var2 = var2[var0];
+                var4 = 'string';
+                var0 = typeof var2;
+                var3 = var2;
+                if (!(var4 !== var0)) {
+                    _fun22247_ip = 90;
+                    continue _fun22247
+                }
+            case 34:
                 var0 = 1;
-                var0 = var1 - var0;
+                if (!(var0 !== var7)) {
+                    _fun22247_ip = 81;
+                    continue _fun22247
+                }
+            case 41:
+                var6 = var2.other;
+                var5 = var6.replace;
+                var0 = global;
+                var4 = var0.String;
+                var0 = undefined;
+                var4 = var4.bind(var0)(var7);
+                var0 = '{{count}}';
+                var0 = var5.bind(var6)(var0, var4);
+                _fun22247_ip = 87;
+                continue _fun22247;
+            case 81:
+                var0 = var2.one;
+            case 87:
+                var3 = var0;
+            case 90:
+                var2 = null;
+                var0 = var3;
+                if (!(var2 != var1)) {
+                    _fun22247_ip = 157;
+                    continue _fun22247
+                }
+            case 99:
+                var2 = var1.addSuffix;
+                var0 = var3;
+                if (!var2) {
+                    _fun22247_ip = 157;
+                    continue _fun22247
+                }
+            case 111:
+                var2 = var1.comparison;
+                if (!var2) {
+                    _fun22247_ip = 132;
+                    continue _fun22247
+                }
+            case 120:
+                var2 = var1.comparison;
+                var1 = 0;
+                if (!(!(var2 > var1))) {
+                    _fun22247_ip = 144;
+                    continue _fun22247
+                }
+            case 132:
+                var1 = ' geleden';
+                var1 = var3 + var1;
+                _fun22247_ip = 154;
+                continue _fun22247;
+            case 144:
+                var2 = 'over ';
+                var1 = var2 + var3;
+            case 154:
+                var0 = var1;
+            case 157:
                 return var0;
-            };
-            var4.argumentCallback = var7;
-            var4 = var6.bind(var0)(var4);
-            var2.quarter = var4;
-            var6 = var3.default;
-            var4 = {};
-            var7 = {};
-            var8 = ['J', 'F', 'M', 'A', 'M', 'J', 'J', 'A', 'S', 'O', 'N', 'D'];
-            var7.narrow = var8;
-            var8 = ['jan.', 'feb.', 'mrt.', 'apr.', 'mei', 'jun.', 'jul.', 'aug.', 'sep.', 'okt.', 'nov.', 'dec.'];
-            var7.abbreviated = var8;
-            var8 = ['januari', 'februari', 'maart', 'april', 'mei', 'juni', 'juli', 'augustus', 'september', 'oktober', 'november', 'december'];
-            var7.wide = var8;
-            var4.values = var7;
-            var4.defaultWidth = var5;
-            var4 = var6.bind(var0)(var4);
-            var2.month = var4;
-            var6 = var3.default;
-            var4 = {};
-            var7 = {};
-            var8 = ['Z', 'M', 'D', 'W', 'D', 'V', 'Z'];
-            var7.narrow = var8;
-            var8 = ['zo', 'ma', 'di', 'wo', 'do', 'vr', 'za'];
-            var7.short = var8;
-            var8 = ['zon', 'maa', 'din', 'woe', 'don', 'vri', 'zat'];
-            var7.abbreviated = var8;
-            var8 = ['zondag', 'maandag', 'dinsdag', 'woensdag', 'donderdag', 'vrijdag', 'zaterdag'];
-            var7.wide = var8;
-            var4.values = var7;
-            var4.defaultWidth = var5;
-            var4 = var6.bind(var0)(var4);
-            var2.day = var4;
-            var4 = var3.default;
-            var3 = {};
-            var6 = {};
-            var7 = {
-                'am': 'AM',
-                'pm': 'PM',
-                'midnight': 'middernacht',
-                'noon': 'het middaguur',
-                'morning': "'s ochtends",
-                'afternoon': "'s middags",
-                'evening': "'s avonds",
-                'night': "'s nachts"
-            };
-            var6.narrow = var7;
-            var7 = {
-                'am': 'AM',
-                'pm': 'PM',
-                'midnight': 'middernacht',
-                'noon': 'het middaguur',
-                'morning': "'s ochtends",
-                'afternoon': "'s middags",
-                'evening': "'s avonds",
-                'night': "'s nachts"
-            };
-            var6.abbreviated = var7;
-            var7 = {
-                'am': 'AM',
-                'pm': 'PM',
-                'midnight': 'middernacht',
-                'noon': 'het middaguur',
-                'morning': "'s ochtends",
-                'afternoon': "'s middags",
-                'evening': "'s avonds",
-                'night': "'s nachts"
-            };
-            var6.wide = var7;
-            var3.values = var6;
-            var3.defaultWidth = var5;
-            var3 = var4.bind(var0)(var3);
-            var2.dayPeriod = var3;
-            var1.default = var2;
-            var2 = var1.default;
-            var1 = arg4;
-            var1.exports = var2;
-            return var0;
-    }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1695]);
+        }
+    };
+    var1.default = var2;
+    var2 = var1.default;
+    var1 = arg4;
+    var1.exports = var2;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, []);

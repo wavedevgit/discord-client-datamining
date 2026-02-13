@@ -14,10 +14,10 @@ import ys.u1;
 public abstract class m extends ft.h {
 
     /* renamed from: i  reason: collision with root package name */
-    public int f35049i;
+    public int f35617i;
 
     public m(int i10) {
-        this.f35049i = i10;
+        this.f35617i = i10;
     }
 
     public void d(Object obj, Throwable th2) {
@@ -35,7 +35,7 @@ public abstract class m extends ft.h {
         if (rVar == null) {
             return null;
         }
-        return rVar.f55817a;
+        return rVar.f56385a;
     }
 
     public Object j(Object obj) {
@@ -68,22 +68,22 @@ public abstract class m extends ft.h {
             CoroutineContext context2 = continuation.getContext();
             Object l10 = l();
             Throwable i11 = i(l10);
-            if (i11 == null && k0.b(this.f35049i)) {
-                job = (Job) context2.m(Job.f34997k);
+            if (i11 == null && k0.b(this.f35617i)) {
+                job = (Job) context2.m(Job.f35565k);
             }
             if (job != null && !job.a()) {
                 CancellationException I = job.I();
                 d(l10, I);
-                Result.a aVar = Result.f31985e;
+                Result.a aVar = Result.f32553e;
                 continuation.resumeWith(Result.b(kotlin.c.a(I)));
             } else if (i11 != null) {
-                Result.a aVar2 = Result.f31985e;
+                Result.a aVar2 = Result.f32553e;
                 continuation.resumeWith(Result.b(kotlin.c.a(i11)));
             } else {
-                Result.a aVar3 = Result.f31985e;
+                Result.a aVar3 = Result.f32553e;
                 continuation.resumeWith(Result.b(j(l10)));
             }
-            Unit unit = Unit.f31988a;
+            Unit unit = Unit.f32556a;
             if (u1Var == null || u1Var.d1()) {
                 l0.f(context, i10);
             }

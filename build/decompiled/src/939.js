@@ -1,341 +1,370 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var6 = require;
+    var4 = require;
     var2 = exports;
-    var7 = dependencyMap;
-    var _closure1_slot0 = var6;
-    var _closure1_slot1 = var7;
+    var3 = dependencyMap;
+    var _closure1_slot0 = var4;
+    var _closure1_slot1 = var3;
+    var0 = function arg0, arg1() {
+        _fun9769: for (var _fun9769_ip = 0;;) switch (_fun9769_ip) {
+            case 0:
+                var5 = arg0;
+                var4 = arg1;
+                var0 = var5;
+                if (!var4) {
+                    _fun9769_ip = 42;
+                    continue _fun9769
+                }
+            case 12:
+                var1 = global;
+                var1 = var1.HermesInternal;
+                var3 = var1.concat;
+                var2 = '';
+                var1 = ' ';
+                var0 = var3.bind(var2)(var5, var1, var4);
+            case 42:
+                return var0;
+        }
+    };
+    var _closure1_slot3 = var0;
+    var0 = function arg0() {
+        _fun9770: for (var _fun9770_ip = 0;;) switch (_fun9770_ip) {
+            case 0:
+                var1 = arg0;
+                var0 = 'request';
+                if (!(var0 !== var1)) {
+                    _fun9770_ip = 137;
+                    continue _fun9770
+                }
+            case 14:
+                var0 = 'notification-incoming';
+                if (!(var0 !== var1)) {
+                    _fun9770_ip = 89;
+                    continue _fun9770
+                }
+            case 24:
+                var3 = undefined;
+                var0 = 'notification-outgoing';
+                var8 = undefined;
+                var7 = undefined;
+                if (!(var0 === var1)) {
+                    _fun9770_ip = 183;
+                    continue _fun9770
+                }
+            case 43:
+                var2 = _closure1_slot0;
+                var4 = _closure1_slot1;
+                var0 = 1;
+                var1 = var4[var0];
+                var1 = var2.bind(var3)(var1);
+                var8 = var1.MCP_NOTIFICATION_SERVER_TO_CLIENT_OP_VALUE;
+                var0 = var4[var0];
+                var0 = var2.bind(var3)(var0);
+                var7 = var0.MCP_NOTIFICATION_ORIGIN_VALUE;
+                _fun9770_ip = 183;
+                continue _fun9770;
+            case 89:
+                var3 = _closure1_slot0;
+                var4 = _closure1_slot1;
+                var0 = 1;
+                var1 = var4[var0];
+                var2 = undefined;
+                var1 = var3.bind(var2)(var1);
+                var8 = var1.MCP_NOTIFICATION_CLIENT_TO_SERVER_OP_VALUE;
+                var0 = var4[var0];
+                var0 = var3.bind(var2)(var0);
+                var7 = var0.MCP_NOTIFICATION_ORIGIN_VALUE;
+                _fun9770_ip = 183;
+                continue _fun9770;
+            case 137:
+                var3 = _closure1_slot0;
+                var4 = _closure1_slot1;
+                var0 = 1;
+                var1 = var4[var0];
+                var2 = undefined;
+                var1 = var3.bind(var2)(var1);
+                var8 = var1.MCP_SERVER_OP_VALUE;
+                var0 = var4[var0];
+                var0 = var3.bind(var2)(var0);
+                var7 = var0.MCP_FUNCTION_ORIGIN_VALUE;
+            case 183:
+                var4 = _closure1_slot2;
+                var5 = _closure1_slot0;
+                var6 = _closure1_slot1;
+                var0 = 2;
+                var1 = var6[var0];
+                var3 = undefined;
+                var1 = var5.bind(var3)(var1);
+                var2 = var1.SEMANTIC_ATTRIBUTE_SENTRY_OP;
+                var1 = {};
+                var2 = var4.bind(var3)(var1, var2, var8);
+                var1 = var6[var0];
+                var1 = var5.bind(var3)(var1);
+                var1 = var1.SEMANTIC_ATTRIBUTE_SENTRY_ORIGIN;
+                var2 = var4.bind(var3)(var2, var1, var7);
+                var0 = var6[var0];
+                var0 = var5.bind(var3)(var0);
+                var1 = var0.SEMANTIC_ATTRIBUTE_SENTRY_SOURCE;
+                var0 = 1;
+                var0 = var6[var0];
+                var0 = var5.bind(var3)(var0);
+                var0 = var0.MCP_ROUTE_SOURCE_VALUE;
+                var0 = var4.bind(var3)(var2, var1, var0);
+                return var0;
+        }
+    };
+    var _closure1_slot4 = var0;
+    var0 = function arg0() {
+        _fun9771: for (var _fun9771_ip = 0;;) switch (_fun9771_ip) {
+            case 0:
+                var0 = arg0;
+                var8 = var0.type;
+                var15 = var0.message;
+                var11 = var0.transport;
+                var10 = var0.extra;
+                var3 = var0.callback;
+                var16 = var15.method;
+                var14 = var15.params;
+                var0 = 'request';
+                var5 = var16;
+                if (!(var0 === var8)) {
+                    _fun9771_ip = 115;
+                    continue _fun9771
+                }
+            case 54:
+                var2 = _closure1_slot3;
+                var4 = _closure1_slot0;
+                var1 = _closure1_slot1;
+                var0 = 3;
+                var0 = var1[var0];
+                var1 = undefined;
+                var6 = var4.bind(var1)(var0);
+                var4 = var6.extractTargetInfo;
+                var0 = var14;
+                if (var0) {
+                    _fun9771_ip = 97;
+                    continue _fun9771
+                }
+            case 95:
+                var0 = {};
+            case 97:
+                var0 = var4.bind(var6)(var16, var0);
+                var0 = var0.target;
+                var5 = var2.bind(var1)(var16, var0);
+            case 115:
+                var1 = global;
+                var13 = var1.Object;
+                var12 = var13.assign;
+                var6 = _closure1_slot0;
+                var7 = _closure1_slot1;
+                var2 = 4;
+                var4 = var7[var2];
+                var2 = undefined;
+                var9 = var6.bind(var2)(var4);
+                var4 = var9.buildTransportAttributes;
+                var11 = var4.bind(var9)(var11, var10);
+                var10 = _closure1_slot2;
+                var4 = 1;
+                var4 = var7[var4];
+                var4 = var6.bind(var2)(var4);
+                var9 = var4.MCP_METHOD_NAME_ATTRIBUTE;
+                var4 = {};
+                var10 = var10.bind(var2)(var4, var9, var16);
+                var4 = 5;
+                var4 = var7[var4];
+                var9 = var6.bind(var2)(var4);
+                var4 = var9.buildTypeSpecificAttributes;
+                var18 = var4.bind(var9)(var8, var15, var14);
+                var4 = _closure1_slot4;
+                var17 = var4.bind(var2)(var8);
+                var21 = {};
+                var22 = var13;
+                var20 = var11;
+                var19 = var10;
+                var8 = var22[var12](var21, var20, var19, var18, var17, var16);
+                var4 = 6;
+                var4 = var7[var4];
+                var6 = var6.bind(var2)(var4);
+                var4 = var6.getClient;
+                var7 = var4.bind(var6)();
+                var4 = var1.Boolean;
+                var1 = null;
+                var6 = var1 == var7;
+                var1 = undefined;
+                if (var6) {
+                    _fun9771_ip = 300;
+                    continue _fun9771
+                }
+            case 284:
+                var6 = var7.getOptions;
+                var6 = var6.bind(var7)();
+                var1 = var6.sendDefaultPii;
+            case 300:
+                var7 = var4.bind(var2)(var1);
+                var1 = _closure1_slot0;
+                var6 = _closure1_slot1;
+                var0 = 7;
+                var0 = var6[var0];
+                var4 = var1.bind(var2)(var0);
+                var0 = var4.filterMcpPiiFromSpanData;
+                var4 = var0.bind(var4)(var8, var7);
+                var0 = 8;
+                var0 = var6[var0];
+                var2 = var1.bind(var2)(var0);
+                var1 = var2.startSpan;
+                var0 = {};
+                var0.name = var5;
+                var5 = true;
+                var0.forceTransaction = var5;
+                var0.attributes = var4;
+                var0 = var1.bind(var2)(var0, var3);
+                return var0;
+        }
+    };
+    var _closure1_slot5 = var0;
     var0 = 0;
-    var3 = var7[var0];
+    var3 = var3[var0];
     var0 = undefined;
-    var3 = var6.bind(var0)(var3);
+    var3 = var4.bind(var0)(var3);
     var _closure1_slot2 = var3;
-    var3 = 1;
-    var3 = var7[var3];
-    var3 = var6.bind(var0)(var3);
-    var _closure1_slot3 = var3;
     var3 = global;
-    var8 = var3.Object;
-    var5 = var8.defineProperty;
+    var6 = var3.Object;
+    var5 = var6.defineProperty;
     var3 = var3.Symbol;
     var4 = var3.toStringTag;
     var3 = {};
-    var9 = 'Module';
-    var3.value = var9;
-    var3 = var5.bind(var8)(var2, var4, var3);
-    var3 = {};
-    var4 = {
-        'targetField': 'name',
-        'targetAttribute': null,
-        'captureArguments': true,
-        'argumentsField': 'arguments'
-    };
-    var5 = 2;
-    var8 = var7[var5];
-    var8 = var6.bind(var0)(var8);
-    var8 = var8.MCP_TOOL_NAME_ATTRIBUTE;
-    var4.targetAttribute = var8;
-    var3['tools/call'] = var4;
-    var4 = {
-        'targetField': 'uri',
-        'targetAttribute': null,
-        'captureUri': true
-    };
-    var8 = 'uri';
-    var9 = var7[var5];
-    var9 = var6.bind(var0)(var9);
-    var9 = var9.MCP_RESOURCE_URI_ATTRIBUTE;
-    var4.targetAttribute = var9;
-    var3['resources/read'] = var4;
-    var4 = {};
-    var4.targetField = var8;
-    var9 = var7[var5];
-    var9 = var6.bind(var0)(var9);
-    var9 = var9.MCP_RESOURCE_URI_ATTRIBUTE;
-    var4.targetAttribute = var9;
-    var3['resources/subscribe'] = var4;
-    var4 = {};
-    var4.targetField = var8;
-    var8 = var7[var5];
-    var8 = var6.bind(var0)(var8);
-    var8 = var8.MCP_RESOURCE_URI_ATTRIBUTE;
-    var4.targetAttribute = var8;
-    var3['resources/unsubscribe'] = var4;
-    var4 = {
-        'targetField': 'name',
-        'targetAttribute': null,
-        'captureName': true,
-        'captureArguments': true,
-        'argumentsField': 'arguments'
-    };
-    var5 = var7[var5];
-    var5 = var6.bind(var0)(var5);
-    var5 = var5.MCP_PROMPT_NAME_ATTRIBUTE;
-    var4.targetAttribute = var5;
-    var3['prompts/get'] = var4;
-    var _closure1_slot4 = var3;
-    var3 = function arg0, arg1() {
-        _fun9771: for (var _fun9771_ip = 0;;) switch (_fun9771_ip) {
+    var7 = 'Module';
+    var3.value = var7;
+    var3 = var5.bind(var6)(var2, var4, var3);
+    var3 = function arg0, arg1, arg2() {
+        _fun9772: for (var _fun9772_ip = 0;;) switch (_fun9772_ip) {
             case 0:
-                var1 = arg1;
-                var2 = _closure1_slot4;
-                var0 = arg0;
-                var2 = var2[var0];
-                if (var2) {
-                    _fun9771_ip = 31;
-                    continue _fun9771
-                }
-            case 20:
-                var0 = {};
-                var4 = {};
-                var0.attributes = var4;
-                return var0;
-            case 31:
-                var0 = var2.targetField;
-                var6 = undefined;
-                var5 = undefined;
-                if (!var0) {
-                    _fun9771_ip = 88;
-                    continue _fun9771
-                }
-            case 44:
-                var0 = null;
-                var4 = var0 == var1;
-                var0 = undefined;
-                if (var4) {
-                    _fun9771_ip = 65;
-                    continue _fun9771
-                }
-            case 55:
-                var4 = var2.targetField;
-                var0 = var1[var4];
-            case 65:
-                var4 = 'string';
-                var0 = typeof var0;
-                var5 = undefined;
-                if (!(var4 === var0)) {
-                    _fun9771_ip = 88;
-                    continue _fun9771
-                }
-            case 78:
-                var0 = var2.targetField;
-                var5 = var1[var0];
-            case 88:
-                var0 = {};
-                var0.target = var5;
-                if (!var5) {
-                    _fun9771_ip = 107;
-                    continue _fun9771
-                }
-            case 98:
-                var1 = var2.targetAttribute;
+                var15 = arg0;
+                var10 = var15.method;
+                var14 = var15.params;
+                var2 = _closure1_slot3;
+                var3 = _closure1_slot0;
+                var4 = _closure1_slot1;
+                var1 = 3;
+                var1 = var4[var1];
+                var4 = undefined;
+                var5 = var3.bind(var4)(var1);
+                var3 = var5.extractTargetInfo;
+                var1 = var14;
                 if (var1) {
-                    _fun9771_ip = 111;
-                    continue _fun9771
+                    _fun9772_ip = 58;
+                    continue _fun9772
                 }
-            case 107:
+            case 56:
                 var1 = {};
-                _fun9771_ip = 130;
-                continue _fun9771;
-            case 111:
-                var4 = _closure1_slot3;
-                var3 = var2.targetAttribute;
+            case 58:
+                var1 = var3.bind(var5)(var10, var1);
+                var1 = var1.target;
+                var6 = var2.bind(var4)(var10, var1);
+                var1 = global;
+                var13 = var1.Object;
+                var12 = var13.assign;
+                var3 = _closure1_slot0;
+                var7 = _closure1_slot1;
+                var2 = 4;
+                var2 = var7[var2];
+                var9 = var3.bind(var4)(var2);
+                var8 = var9.buildTransportAttributes;
+                var5 = arg1;
+                var2 = arg2;
+                var11 = var8.bind(var9)(var5, var2);
+                var9 = _closure1_slot2;
+                var5 = 1;
+                var2 = var7[var5];
+                var2 = var3.bind(var4)(var2);
+                var8 = var2.MCP_METHOD_NAME_ATTRIBUTE;
                 var2 = {};
-                var1 = var4.bind(var6)(var2, var3, var5);
-            case 130:
+                var10 = var9.bind(var4)(var2, var8, var10);
+                var2 = 5;
+                var2 = var7[var2];
+                var9 = var3.bind(var4)(var2);
+                var2 = var9.buildTypeSpecificAttributes;
+                var8 = 'request';
+                var17 = var2.bind(var9)(var8, var15, var14);
+                var2 = _closure1_slot4;
+                var16 = var2.bind(var4)(var8);
+                var20 = {};
+                var21 = var13;
+                var19 = var11;
+                var18 = var10;
+                var8 = var21[var12](var20, var19, var18, var17, var16, var15);
+                var2 = 6;
+                var2 = var7[var2];
+                var3 = var3.bind(var4)(var2);
+                var2 = var3.getClient;
+                var7 = var2.bind(var3)();
+                var2 = var1.Boolean;
+                var1 = null;
+                var3 = var1 == var7;
+                var1 = undefined;
+                if (var3) {
+                    _fun9772_ip = 266;
+                    continue _fun9772
+                }
+            case 250:
+                var3 = var7.getOptions;
+                var3 = var3.bind(var7)();
+                var1 = var3.sendDefaultPii;
+            case 266:
+                var7 = var2.bind(var4)(var1);
+                var3 = _closure1_slot0;
+                var2 = _closure1_slot1;
+                var0 = 7;
+                var0 = var2[var0];
+                var1 = var3.bind(var4)(var0);
+                var0 = var1.filterMcpPiiFromSpanData;
+                var1 = var0.bind(var1)(var8, var7);
+                var0 = {};
+                var0.name = var6;
+                var2 = var2[var5];
+                var2 = var3.bind(var4)(var2);
+                var2 = var2.MCP_SERVER_OP_VALUE;
+                var0.op = var2;
+                var2 = true;
+                var0.forceTransaction = var2;
                 var0.attributes = var1;
                 return var0;
         }
     };
-    var2.extractTargetInfo = var3;
-    var1 = function arg0, arg1() {
-        _fun9772: for (var _fun9772_ip = 0;;) switch (_fun9772_ip) {
-            case 0:
-                var1 = arg1;
-                var0 = {};
-                var4 = _closure1_slot4;
-                var3 = arg0;
-                var3 = var4[var3];
-                if (var3) {
-                    _fun9772_ip = 27;
-                    continue _fun9772
-                }
-            case 22:
-                var4 = var0;
-                return var4;
-            case 27:
-                var4 = var3.captureArguments;
-                if (!var4) {
-                    _fun9772_ip = 263;
-                    continue _fun9772
-                }
-            case 39:
-                var4 = var3.argumentsField;
-                if (!var4) {
-                    _fun9772_ip = 263;
-                    continue _fun9772
-                }
-            case 51:
-                var4 = null;
-                if (!(var4 != var1)) {
-                    _fun9772_ip = 263;
-                    continue _fun9772
-                }
-            case 60:
-                var5 = var3.argumentsField;
-                var5 = var1[var5];
-                if (!var5) {
-                    _fun9772_ip = 263;
-                    continue _fun9772
-                }
-            case 76:
-                var5 = var3.argumentsField;
-                var6 = var1[var5];
-                var7 = 'object';
-                var5 = typeof var6;
-                if (!(var7 === var5)) {
-                    _fun9772_ip = 263;
-                    continue _fun9772
-                }
-            case 100:
-                if (!(var4 !== var6)) {
-                    _fun9772_ip = 263;
-                    continue _fun9772
-                }
-            case 107:
-                var12 = global;
-                var5 = var12.Object;
-                var4 = var5.entries;
-                var4 = var4.bind(var5)(var6);
-                var11 = var4;
-                var5 = var11[Symbol.iterator];
-                var11 = var5().next;
-                var10 = undefined;
-                var9 = 2;
-                var8 = 0;
-                var7 = 1;
-                var6 = '';
-                var4 = '.';
-            case 150:
-                var14 = var11().value;
-                var13 = var5;
-                if (!(var13 !== var10)) {
-                    _fun9772_ip = 263;
-                    continue _fun9772
-                }
-            case 161: // try_start_0
-                var13 = _closure1_slot2;
-                var13 = var13.bind(var10)(var14, var9);
-                var14 = var13[var8];
-                var17 = var13[var7];
-                var15 = var0;
-                var16 = _closure1_slot0;
-                var13 = _closure1_slot1;
-                var13 = var13[var9];
-                var13 = var16.bind(var10)(var13);
-                var16 = var13.MCP_REQUEST_ARGUMENT;
-                var13 = var14.toLowerCase;
-                var14 = var13.bind(var14)();
-                var13 = var12.HermesInternal;
-                var13 = var13.concat;
-                var14 = var13.bind(var6)(var16, var4, var14);
-                var16 = var12.JSON;
-                var13 = var16.stringify;
-                var13 = var13.bind(var16)(var17);
-                var15[var14] = var13;
-            case 254: // try_end0
-                _fun9772_ip = 150;
-                continue _fun9772;
-            case 256: // catch_target0
-                CatchBlockStart(arg_register = 4);
-                var5.return();
-                throw var4;
-            case 263:
-                var4 = var3.captureUri;
-                if (!var4) {
-                    _fun9772_ip = 278;
-                    continue _fun9772
-                }
-            case 272:
-                var5 = null;
-                var4 = var5 != var1;
-            case 278:
-                if (!var4) {
-                    _fun9772_ip = 286;
-                    continue _fun9772
-                }
-            case 281:
-                var4 = var1.uri;
-            case 286:
-                if (!var4) {
-                    _fun9772_ip = 375;
-                    continue _fun9772
-                }
-            case 289:
-                var6 = var0;
-                var7 = _closure1_slot0;
-                var5 = _closure1_slot1;
-                var4 = 2;
-                var5 = var5[var4];
-                var4 = undefined;
-                var4 = var7.bind(var4)(var5);
-                var9 = var4.MCP_REQUEST_ARGUMENT;
-                var4 = global;
-                var5 = var4.HermesInternal;
-                var8 = var5.concat;
-                var7 = '';
-                var5 = '.uri';
-                var5 = var8.bind(var7)(var9, var5);
-                var8 = var4.JSON;
-                var7 = var8.stringify;
-                var4 = var1.uri;
-                var4 = var7.bind(var8)(var4);
-                var6[var5] = var4;
-            case 375:
-                var3 = var3.captureName;
-                if (!var3) {
-                    _fun9772_ip = 390;
-                    continue _fun9772
-                }
-            case 384:
-                var4 = null;
-                var3 = var4 != var1;
-            case 390:
-                if (!var3) {
-                    _fun9772_ip = 398;
-                    continue _fun9772
-                }
-            case 393:
-                var3 = var1.name;
-            case 398:
-                if (!var3) {
-                    _fun9772_ip = 487;
-                    continue _fun9772
-                }
-            case 401:
-                var3 = var0;
-                var5 = _closure1_slot0;
-                var4 = _closure1_slot1;
-                var2 = 2;
-                var4 = var4[var2];
-                var2 = undefined;
-                var2 = var5.bind(var2)(var4);
-                var7 = var2.MCP_REQUEST_ARGUMENT;
-                var4 = global;
-                var2 = var4.HermesInternal;
-                var6 = var2.concat;
-                var5 = '';
-                var2 = '.name';
-                var2 = var6.bind(var5)(var7, var2);
-                var5 = var4.JSON;
-                var4 = var5.stringify;
-                var1 = var1.name;
-                var1 = var4.bind(var5)(var1);
-                var3[var2] = var1;
-            case 487:
-                return var0;
-        }
+    var2.buildMcpServerSpanConfig = var3;
+    var3 = function arg0, arg1, arg2, arg3() {
+        var2 = _closure1_slot5;
+        var1 = {};
+        var0 = 'notification-incoming';
+        var1.type = var0;
+        var0 = arg0;
+        var1.message = var0;
+        var0 = arg1;
+        var1.transport = var0;
+        var0 = arg2;
+        var1.extra = var0;
+        var0 = arg3;
+        var1.callback = var0;
+        var0 = undefined;
+        var0 = var2.bind(var0)(var1);
+        return var0;
     };
-    var2.getRequestArguments = var1;
+    var2.createMcpNotificationSpan = var3;
+    var1 = function arg0, arg1, arg2() {
+        var2 = _closure1_slot5;
+        var1 = {};
+        var0 = 'notification-outgoing';
+        var1.type = var0;
+        var0 = arg0;
+        var1.message = var0;
+        var0 = arg1;
+        var1.transport = var0;
+        var0 = arg2;
+        var1.callback = var0;
+        var0 = undefined;
+        var0 = var2.bind(var0)(var1);
+        return var0;
+    };
+    var2.createMcpOutgoingNotificationSpan = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 77, 937]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [77, 938, 839, 940, 936, 941, 848, 942, 865]);

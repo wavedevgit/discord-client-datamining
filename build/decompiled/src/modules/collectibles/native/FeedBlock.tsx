@@ -113,7 +113,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/collectibles/native/FeedBlock.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun87546: for (var _fun87546_ip = 0;;) switch (_fun87546_ip) {
+        _fun89121: for (var _fun89121_ip = 0;;) switch (_fun89121_ip) {
             case 0:
                 var1 = arg0;
                 var5 = var1.feedBlock;
@@ -252,8 +252,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5[0] = var6;
                 var6 = !var11;
                 if (var11) {
-                    _fun87546_ip = 505;
-                    continue _fun87546
+                    _fun89121_ip = 505;
+                    continue _fun89121
                 }
             case 397:
                 var19 = _closure1_slot9;
@@ -348,8 +348,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8[1] = var12;
                 var13 = _closure1_slot9;
                 if (var11) {
-                    _fun87546_ip = 889;
-                    continue _fun87546
+                    _fun89121_ip = 889;
+                    continue _fun89121
                 }
             case 801:
                 var11 = _closure1_slot4;
@@ -357,8 +357,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var17 = _closure1_slot0;
                 var18 = _closure1_slot2;
                 if (var9) {
-                    _fun87546_ip = 849;
-                    continue _fun87546
+                    _fun89121_ip = 849;
+                    continue _fun89121
                 }
             case 818:
                 var9 = 22;
@@ -368,8 +368,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var14.feedFooterImage;
                 var12.style = var9;
                 var9 = var12;
-                _fun87546_ip = 878;
-                continue _fun87546;
+                _fun89121_ip = 878;
+                continue _fun89121;
             case 849:
                 var15 = 21;
                 var15 = var18[var15];
@@ -380,12 +380,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var12;
             case 878:
                 var9 = var13.bind(var3)(var11, var9);
-                _fun87546_ip = 1053;
-                continue _fun87546;
+                _fun89121_ip = 1053;
+                continue _fun89121;
             case 889:
                 if (var10) {
-                    _fun87546_ip = 998;
-                    continue _fun87546
+                    _fun89121_ip = 998;
+                    continue _fun89121
                 }
             case 892:
                 var11 = _closure1_slot0;
@@ -418,8 +418,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12 = var15.bind(var3)(var12);
                 var10.poster = var12;
                 var10 = var13.bind(var3)(var11, var10);
-                _fun87546_ip = 1050;
-                continue _fun87546;
+                _fun89121_ip = 1050;
+                continue _fun89121;
             case 998:
                 var12 = _closure1_slot4;
                 var11 = {};
@@ -448,4 +448,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1298, 3198, 3284, 33, 1297, 671, 566, 3207, 11283, 11274, 4603, 5639, 4852, 1234, 4090, 11288, 11292, 7633, 11293, 11294, 11295, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1298, 3201, 3287, 33, 1297, 671, 566, 3210, 11523, 11515, 4603, 5639, 4883, 1235, 4090, 11527, 11531, 8914, 11532, 11533, 11534, 2]);

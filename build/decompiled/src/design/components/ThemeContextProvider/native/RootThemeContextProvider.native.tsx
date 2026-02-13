@@ -37,115 +37,118 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/ThemeContextProvider/native/RootThemeContextProvider.native.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function arg0() {
-        _fun44438: for (var _fun44438_ip = 0;;) switch (_fun44438_ip) {
+        _fun44598: for (var _fun44598_ip = 0;;) switch (_fun44598_ip) {
             case 0:
                 var0 = arg0;
                 var4 = var0.children;
-                var16 = var0.theme;
+                var17 = var0.theme;
                 var3 = undefined;
-                if (!(var16 === var3)) {
-                    _fun44438_ip = 35;
-                    continue _fun44438
+                if (!(var17 === var3)) {
+                    _fun44598_ip = 35;
+                    continue _fun44598
                 }
             case 22:
                 var2 = _closure1_slot3;
-                var16 = var2.DARK;
+                var17 = var2.DARK;
             case 35:
-                var _closure2_slot0 = var16;
-                var15 = var0.primaryColor;
-                if (!(var15 === var3)) {
-                    _fun44438_ip = 51;
-                    continue _fun44438
+                var _closure2_slot0 = var17;
+                var16 = var0.primaryColor;
+                if (!(var16 === var3)) {
+                    _fun44598_ip = 51;
+                    continue _fun44598
                 }
             case 49:
-                var15 = null;
+                var16 = null;
             case 51:
-                var _closure2_slot1 = var15;
-                var14 = var0.secondaryColor;
-                if (!(var14 === var3)) {
-                    _fun44438_ip = 67;
-                    continue _fun44438
+                var _closure2_slot1 = var16;
+                var15 = var0.secondaryColor;
+                if (!(var15 === var3)) {
+                    _fun44598_ip = 67;
+                    continue _fun44598
                 }
             case 65:
-                var14 = null;
+                var15 = null;
             case 67:
-                var _closure2_slot2 = var14;
-                var13 = var0.gradient;
-                if (!(var13 === var3)) {
-                    _fun44438_ip = 83;
-                    continue _fun44438
+                var _closure2_slot2 = var15;
+                var14 = var0.gradient;
+                if (!(var14 === var3)) {
+                    _fun44598_ip = 83;
+                    continue _fun44598
                 }
             case 81:
-                var13 = null;
+                var14 = null;
             case 83:
-                var _closure2_slot3 = var13;
-                var12 = var0.flags;
-                if (!(var12 === var3)) {
-                    _fun44438_ip = 98;
-                    continue _fun44438
+                var _closure2_slot3 = var14;
+                var13 = var0.flags;
+                if (!(var13 === var3)) {
+                    _fun44598_ip = 98;
+                    continue _fun44598
                 }
             case 96:
-                var12 = 0;
+                var13 = 0;
             case 98:
-                var _closure2_slot4 = var12;
-                var11 = var0.contrast;
-                if (!(var11 === var3)) {
-                    _fun44438_ip = 115;
-                    continue _fun44438
+                var _closure2_slot4 = var13;
+                var12 = var0.contrast;
+                if (!(var12 === var3)) {
+                    _fun44598_ip = 115;
+                    continue _fun44598
                 }
             case 112:
-                var11 = 1;
+                var12 = 1;
             case 115:
-                var _closure2_slot5 = var11;
-                var10 = var0.saturation;
-                if (!(var10 === var3)) {
-                    _fun44438_ip = 132;
-                    continue _fun44438
+                var _closure2_slot5 = var12;
+                var11 = var0.saturation;
+                if (!(var11 === var3)) {
+                    _fun44598_ip = 132;
+                    continue _fun44598
                 }
             case 129:
-                var10 = 1;
+                var11 = 1;
             case 132:
-                var _closure2_slot6 = var10;
+                var _closure2_slot6 = var11;
+                var10 = var0.enabledExperiments;
+                var _closure2_slot7 = var10;
                 var9 = var0.density;
                 if (!(var9 === var3)) {
-                    _fun44438_ip = 150;
-                    continue _fun44438
+                    _fun44598_ip = 160;
+                    continue _fun44598
                 }
-            case 146:
+            case 156:
                 var9 = 'compact';
-            case 150:
-                var _closure2_slot7 = var9;
+            case 160:
+                var _closure2_slot8 = var9;
                 var8 = var0.disableAdaptiveTheme;
                 if (!(var8 === var3)) {
-                    _fun44438_ip = 166;
-                    continue _fun44438
+                    _fun44598_ip = 176;
+                    continue _fun44598
                 }
-            case 164:
+            case 174:
                 var8 = false;
-            case 166:
-                var _closure2_slot8 = var8;
+            case 176:
+                var _closure2_slot9 = var8;
                 var7 = var0.reduceAdaptiveTheme;
                 if (!(var7 === var3)) {
-                    _fun44438_ip = 182;
-                    continue _fun44438
+                    _fun44598_ip = 192;
+                    continue _fun44598
                 }
-            case 180:
+            case 190:
                 var7 = false;
-            case 182:
-                var _closure2_slot9 = var7;
+            case 192:
+                var _closure2_slot10 = var7;
                 var6 = _closure1_slot2;
                 var5 = var6.useMemo;
-                var2 = new Array(10);
-                var2[0] = var16;
-                var2[1] = var15;
-                var2[2] = var14;
-                var2[3] = var13;
-                var2[4] = var12;
-                var2[5] = var11;
-                var2[6] = var10;
-                var2[7] = var9;
-                var2[8] = var8;
-                var2[9] = var7;
+                var2 = new Array(11);
+                var2[0] = var17;
+                var2[1] = var16;
+                var2[2] = var15;
+                var2[3] = var14;
+                var2[4] = var13;
+                var2[5] = var12;
+                var2[6] = var11;
+                var2[7] = var10;
+                var2[8] = var9;
+                var2[9] = var8;
+                var2[10] = var7;
                 var1 = function() { // Environment: var1
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot1;
@@ -170,10 +173,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var4 = _closure2_slot6;
                     var0.saturation = var4;
                     var4 = _closure2_slot7;
-                    var0.density = var4;
+                    var0.enabledExperiments = var4;
                     var4 = _closure2_slot8;
+                    var0.density = var4;
+                    var4 = _closure2_slot9;
                     var0.disableAdaptiveTheme = var4;
-                    var3 = _closure2_slot9;
+                    var3 = _closure2_slot10;
                     var0.reduceAdaptiveTheme = var3;
                     var0 = var1.bind(var2)(var0);
                     return var0;
@@ -245,4 +250,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.DisableCustomTheme = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 483, 33, 3161, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 483, 33, 3164, 2]);

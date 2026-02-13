@@ -1,9 +1,10 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var0 = global;
-    var0 = var0.Array;
-    var1 = var0.isArray;
-    var0 = module;
+    var1 = function arg0() {
+        var0 = arg0;
+        return var0;
+    };
+    var0 = arg4;
     var0.exports = var1;
     var0 = undefined;
     return var0;

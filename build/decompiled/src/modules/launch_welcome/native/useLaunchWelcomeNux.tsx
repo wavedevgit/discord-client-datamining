@@ -80,4 +80,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useLaunchWelcomeNuxVisible = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 629, 802, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 629, 803, 2]);

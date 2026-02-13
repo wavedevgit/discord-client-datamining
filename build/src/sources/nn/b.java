@@ -45,13 +45,13 @@ public final class b extends d {
     public static final class C0536b extends d.c {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final a f38004d = new a(null);
+        public static final a f38572d = new a(null);
 
         /* renamed from: b  reason: collision with root package name */
-        private final Class f38005b = b.class;
+        private final Class f38573b = b.class;
 
         /* renamed from: c  reason: collision with root package name */
-        private final String f38006c = "FlingGestureHandler";
+        private final String f38574c = "FlingGestureHandler";
 
         /* renamed from: nn.b$b$a */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
@@ -66,12 +66,12 @@ public final class b extends d {
 
         @Override // nn.d.c
         public String d() {
-            return this.f38006c;
+            return this.f38574c;
         }
 
         @Override // nn.d.c
         public Class e() {
-            return this.f38005b;
+            return this.f38573b;
         }
 
         /* JADX INFO: Access modifiers changed from: protected */
@@ -104,7 +104,7 @@ public final class b extends d {
     }
 
     static {
-        k kVar = k.f38085a;
+        k kVar = k.f38653a;
         X = kVar.a(30.0d);
         Y = kVar.a(60.0d);
     }
@@ -150,7 +150,7 @@ public final class b extends d {
         boolean z11;
         boolean z12;
         V0(this.V, motionEvent);
-        c0.a aVar = c0.f38017f;
+        c0.a aVar = c0.f38585f;
         VelocityTracker velocityTracker = this.V;
         Intrinsics.checkNotNull(velocityTracker);
         c0 b10 = aVar.b(velocityTracker);
@@ -199,7 +199,7 @@ public final class b extends d {
     }
 
     private static final boolean c1(b bVar, c0 c0Var, int i10, double d10) {
-        if ((bVar.P & i10) == i10 && c0Var.l(c0.f38017f.a(i10), d10)) {
+        if ((bVar.P & i10) == i10 && c0Var.l(c0.f38585f.a(i10), d10)) {
             return true;
         }
         return false;

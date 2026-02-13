@@ -12,10 +12,10 @@ public class a extends is.a {
         @NotNull
 
         /* renamed from: a  reason: collision with root package name */
-        public static final C0436a f31319a = new C0436a();
+        public static final C0436a f31887a = new C0436a();
 
         /* renamed from: b  reason: collision with root package name */
-        public static final Integer f31320b;
+        public static final Integer f31888b;
 
         static {
             Integer num;
@@ -30,13 +30,13 @@ public class a extends is.a {
                 if (num != null && num.intValue() > 0) {
                     num2 = num;
                 }
-                f31320b = num2;
+                f31888b = num2;
             }
             num = null;
             if (num != null) {
                 num2 = num;
             }
-            f31320b = num2;
+            f31888b = num2;
         }
 
         private C0436a() {
@@ -44,7 +44,7 @@ public class a extends is.a {
     }
 
     private final boolean c(int i10) {
-        Integer num = C0436a.f31320b;
+        Integer num = C0436a.f31888b;
         if (num != null && num.intValue() < i10) {
             return false;
         }

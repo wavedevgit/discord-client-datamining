@@ -55,9 +55,9 @@ final class w0 {
         this.f14195j = qVar;
         this.f14196k = o1Var;
         r.b bVar2 = x0Var.f14202a;
-        this.f14187b = bVar2.f46438a;
+        this.f14187b = bVar2.f47006a;
         this.f14191f = x0Var;
-        this.f14198m = rd.w0.f46510o;
+        this.f14198m = rd.w0.f47078o;
         this.f14199n = rVar;
         this.f14188c = new rd.m0[w1VarArr.length];
         this.f14193h = new boolean[w1VarArr.length];
@@ -92,9 +92,9 @@ final class w0 {
             int i10 = 0;
             while (true) {
                 ke.r rVar = this.f14199n;
-                if (i10 < rVar.f31723a) {
+                if (i10 < rVar.f32291a) {
                     boolean c10 = rVar.c(i10);
-                    com.google.android.exoplayer2.trackselection.g gVar = this.f14199n.f31725c[i10];
+                    com.google.android.exoplayer2.trackselection.g gVar = this.f14199n.f32293c[i10];
                     if (c10 && gVar != null) {
                         gVar.disable();
                     }
@@ -126,9 +126,9 @@ final class w0 {
             int i10 = 0;
             while (true) {
                 ke.r rVar = this.f14199n;
-                if (i10 < rVar.f31723a) {
+                if (i10 < rVar.f32291a) {
                     boolean c10 = rVar.c(i10);
-                    com.google.android.exoplayer2.trackselection.g gVar = this.f14199n.f31725c[i10];
+                    com.google.android.exoplayer2.trackselection.g gVar = this.f14199n.f32293c[i10];
                     if (c10 && gVar != null) {
                         gVar.enable();
                     }
@@ -150,7 +150,7 @@ final class w0 {
     private static void u(o1 o1Var, rd.p pVar) {
         try {
             if (pVar instanceof rd.d) {
-                o1Var.y(((rd.d) pVar).f46273d);
+                o1Var.y(((rd.d) pVar).f46841d);
             } else {
                 o1Var.y(pVar);
             }
@@ -179,7 +179,7 @@ final class w0 {
         int i10 = 0;
         while (true) {
             boolean z12 = true;
-            if (i10 >= rVar.f31723a) {
+            if (i10 >= rVar.f32291a) {
                 break;
             }
             boolean[] zArr2 = this.f14193h;
@@ -193,7 +193,7 @@ final class w0 {
         f();
         this.f14199n = rVar;
         h();
-        long r10 = this.f14186a.r(rVar.f31725c, this.f14193h, this.f14188c, zArr, j10);
+        long r10 = this.f14186a.r(rVar.f32293c, this.f14193h, this.f14188c, zArr, j10);
         c(this.f14188c);
         this.f14190e = false;
         int i11 = 0;
@@ -206,7 +206,7 @@ final class w0 {
                         this.f14190e = true;
                     }
                 } else {
-                    if (rVar.f31725c[i11] == null) {
+                    if (rVar.f32293c[i11] == null) {
                         z11 = true;
                     } else {
                         z11 = false;
@@ -310,7 +310,7 @@ final class w0 {
     public ke.r v(float f10, Timeline timeline) {
         com.google.android.exoplayer2.trackselection.g[] gVarArr;
         ke.r j10 = this.f14195j.j(this.f14194i, n(), this.f14191f.f14202a, timeline);
-        for (com.google.android.exoplayer2.trackselection.g gVar : j10.f31725c) {
+        for (com.google.android.exoplayer2.trackselection.g gVar : j10.f32293c) {
             if (gVar != null) {
                 gVar.g(f10);
             }

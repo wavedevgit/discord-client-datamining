@@ -128,7 +128,7 @@ public abstract class LinkContextData {
                 compositeEncoder.k(serialDescriptor, 0, MessageId$$serializer.INSTANCE, MessageId.m1084boximpl(dismissedMessage.f9263id));
                 compositeEncoder.k(serialDescriptor, 1, ChannelId$$serializer.INSTANCE, ChannelId.m1058boximpl(dismissedMessage.channelId));
                 if (compositeEncoder.z(serialDescriptor, 2) || dismissedMessage.loggingName != null) {
-                    compositeEncoder.o(serialDescriptor, 2, n2.f50033a, dismissedMessage.loggingName);
+                    compositeEncoder.o(serialDescriptor, 2, n2.f50601a, dismissedMessage.loggingName);
                 }
                 compositeEncoder.k(serialDescriptor, 3, LinkContextData$BindDismissMessage$DismissedMessageAuthor$$serializer.INSTANCE, dismissedMessage.author);
             }
@@ -710,7 +710,7 @@ public abstract class LinkContextData {
             LinkContext.write$Self(bindInsertText, compositeEncoder, serialDescriptor);
             compositeEncoder.y(serialDescriptor, 2, bindInsertText.text);
             if (compositeEncoder.z(serialDescriptor, 3) || bindInsertText.addSpace != null) {
-                compositeEncoder.o(serialDescriptor, 3, tt.h.f49997a, bindInsertText.addSpace);
+                compositeEncoder.o(serialDescriptor, 3, tt.h.f50565a, bindInsertText.addSpace);
             }
         }
 
@@ -849,7 +849,7 @@ public abstract class LinkContextData {
                 }
                 compositeEncoder.y(serialDescriptor, 3, applicationStream.streamType);
                 if (compositeEncoder.z(serialDescriptor, 4) || applicationStream.discoverable != null) {
-                    compositeEncoder.o(serialDescriptor, 4, tt.h.f49997a, applicationStream.discoverable);
+                    compositeEncoder.o(serialDescriptor, 4, tt.h.f50565a, applicationStream.discoverable);
                 }
             }
 
@@ -1218,7 +1218,7 @@ public abstract class LinkContextData {
             LinkContext.write$Self(bindOpenGdmCustomizeActionSheet, compositeEncoder, serialDescriptor);
             compositeEncoder.y(serialDescriptor, 2, bindOpenGdmCustomizeActionSheet.messageChannelId);
             if (compositeEncoder.z(serialDescriptor, 3) || bindOpenGdmCustomizeActionSheet.linkColor != null) {
-                compositeEncoder.o(serialDescriptor, 3, p0.f50049a, bindOpenGdmCustomizeActionSheet.linkColor);
+                compositeEncoder.o(serialDescriptor, 3, p0.f50617a, bindOpenGdmCustomizeActionSheet.linkColor);
             }
         }
 
@@ -1528,7 +1528,7 @@ public abstract class LinkContextData {
         public static final /* synthetic */ void write$Self$chat_release(BindOpenRoleSubscriptionOverview bindOpenRoleSubscriptionOverview, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
             LinkContext.write$Self(bindOpenRoleSubscriptionOverview, compositeEncoder, serialDescriptor);
             compositeEncoder.y(serialDescriptor, 2, bindOpenRoleSubscriptionOverview.guildId);
-            n2 n2Var = n2.f50033a;
+            n2 n2Var = n2.f50601a;
             compositeEncoder.o(serialDescriptor, 3, n2Var, bindOpenRoleSubscriptionOverview.messageId);
             compositeEncoder.o(serialDescriptor, 4, n2Var, bindOpenRoleSubscriptionOverview.channelId);
             compositeEncoder.o(serialDescriptor, 5, n2Var, bindOpenRoleSubscriptionOverview.roleSubscriptionListingId);
@@ -1762,7 +1762,7 @@ public abstract class LinkContextData {
             LinkContext.write$Self(bindOpenUrl, compositeEncoder, serialDescriptor);
             compositeEncoder.y(serialDescriptor, 2, bindOpenUrl.url);
             if (compositeEncoder.z(serialDescriptor, 3) || bindOpenUrl.linkColor != null) {
-                compositeEncoder.o(serialDescriptor, 3, p0.f50049a, bindOpenUrl.linkColor);
+                compositeEncoder.o(serialDescriptor, 3, p0.f50617a, bindOpenUrl.linkColor);
             }
         }
 
@@ -2298,19 +2298,19 @@ public abstract class LinkContextData {
             LinkContext.write$Self(bindUserMenu, compositeEncoder, serialDescriptor);
             compositeEncoder.k(serialDescriptor, 2, UserId$$serializer.INSTANCE, UserId.m1136boximpl(bindUserMenu.userId));
             if (compositeEncoder.z(serialDescriptor, 3) || bindUserMenu.colorString != null) {
-                compositeEncoder.o(serialDescriptor, 3, p0.f50049a, bindUserMenu.colorString);
+                compositeEncoder.o(serialDescriptor, 3, p0.f50617a, bindUserMenu.colorString);
             }
             if (compositeEncoder.z(serialDescriptor, 4) || bindUserMenu.linkColor != null) {
-                compositeEncoder.o(serialDescriptor, 4, p0.f50049a, bindUserMenu.linkColor);
+                compositeEncoder.o(serialDescriptor, 4, p0.f50617a, bindUserMenu.linkColor);
             }
             if (compositeEncoder.z(serialDescriptor, 5) || bindUserMenu.roleColor != null) {
-                compositeEncoder.o(serialDescriptor, 5, p0.f50049a, bindUserMenu.roleColor);
+                compositeEncoder.o(serialDescriptor, 5, p0.f50617a, bindUserMenu.roleColor);
             }
             if (compositeEncoder.z(serialDescriptor, 6) || bindUserMenu.roleColors != null) {
                 compositeEncoder.o(serialDescriptor, 6, RoleColors$$serializer.INSTANCE, bindUserMenu.roleColors);
             }
             if (compositeEncoder.z(serialDescriptor, 7) || bindUserMenu.shouldShowRoleDot != null) {
-                compositeEncoder.o(serialDescriptor, 7, tt.h.f49997a, bindUserMenu.shouldShowRoleDot);
+                compositeEncoder.o(serialDescriptor, 7, tt.h.f50565a, bindUserMenu.shouldShowRoleDot);
             }
             if (compositeEncoder.z(serialDescriptor, 8) || bindUserMenu.messageChannelId != null) {
                 compositeEncoder.o(serialDescriptor, 8, ChannelId$$serializer.INSTANCE, bindUserMenu.messageChannelId);
@@ -2562,7 +2562,7 @@ public abstract class LinkContextData {
                 compositeEncoder.k(serialDescriptor, 0, MessageId$$serializer.INSTANCE, MessageId.m1084boximpl(surveyMessage.f9264id));
                 compositeEncoder.k(serialDescriptor, 1, ChannelId$$serializer.INSTANCE, ChannelId.m1058boximpl(surveyMessage.channelId));
                 if (compositeEncoder.z(serialDescriptor, 2) || surveyMessage.loggingName != null) {
-                    compositeEncoder.o(serialDescriptor, 2, n2.f50033a, surveyMessage.loggingName);
+                    compositeEncoder.o(serialDescriptor, 2, n2.f50601a, surveyMessage.loggingName);
                 }
             }
 
@@ -2685,7 +2685,7 @@ public abstract class LinkContextData {
             LinkContext.write$Self(bindUserSurvey, compositeEncoder, serialDescriptor);
             compositeEncoder.k(serialDescriptor, 2, LinkContextData$BindUserSurvey$SurveyMessage$$serializer.INSTANCE, bindUserSurvey.message);
             if (compositeEncoder.z(serialDescriptor, 3) || bindUserSurvey.notificationType != null) {
-                compositeEncoder.o(serialDescriptor, 3, n2.f50033a, bindUserSurvey.notificationType);
+                compositeEncoder.o(serialDescriptor, 3, n2.f50601a, bindUserSurvey.notificationType);
             }
         }
 
@@ -2818,7 +2818,7 @@ public abstract class LinkContextData {
         public static final /* synthetic */ void write$Self(LinkContext linkContext, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
             compositeEncoder.y(serialDescriptor, 0, linkContext.action);
             if (compositeEncoder.z(serialDescriptor, 1) || linkContext.medium != null) {
-                compositeEncoder.o(serialDescriptor, 1, tt.h.f49997a, linkContext.medium);
+                compositeEncoder.o(serialDescriptor, 1, tt.h.f50565a, linkContext.medium);
             }
         }
 
@@ -2889,7 +2889,7 @@ public abstract class LinkContextData {
             @Override // kotlinx.serialization.KSerializer, qt.o, kotlinx.serialization.DeserializationStrategy
             @NotNull
             public SerialDescriptor getDescriptor() {
-                return st.j.b("LinkUrl", e.i.f48369a);
+                return st.j.b("LinkUrl", e.i.f48937a);
             }
 
             @Override // kotlinx.serialization.DeserializationStrategy

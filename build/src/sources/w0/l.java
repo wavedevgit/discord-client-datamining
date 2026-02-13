@@ -8,30 +8,30 @@ import ys.z;
 public final class l implements ys.z {
 
     /* renamed from: d  reason: collision with root package name */
-    private final CoroutineContext f52075d;
+    private final CoroutineContext f52643d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Function2 f52076e;
+    private final Function2 f52644e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final CoroutineScope f52077i;
+    private final CoroutineScope f52645i;
 
     public l(CoroutineContext coroutineContext, Function2 function2) {
         CoroutineContext coroutineContext2;
-        this.f52075d = coroutineContext;
-        this.f52076e = function2;
-        if (coroutineContext.m(z0.a.f55999d) != null) {
+        this.f52643d = coroutineContext;
+        this.f52644e = function2;
+        if (coroutineContext.m(z0.a.f56567d) != null) {
             coroutineContext2 = this;
         } else {
-            coroutineContext2 = kotlin.coroutines.e.f32062d;
+            coroutineContext2 = kotlin.coroutines.e.f32630d;
         }
-        this.f52077i = kotlinx.coroutines.i.a(coroutineContext.O0(coroutineContext2));
+        this.f52645i = kotlinx.coroutines.i.a(coroutineContext.O0(coroutineContext2));
     }
 
     @Override // ys.z
     public void N0(CoroutineContext coroutineContext, Throwable th2) {
-        android.support.v4.media.session.b.a(coroutineContext.m(z0.a.f55999d));
-        ys.z zVar = (ys.z) this.f52075d.m(ys.z.f55836n);
+        android.support.v4.media.session.b.a(coroutineContext.m(z0.a.f56567d));
+        ys.z zVar = (ys.z) this.f52643d.m(ys.z.f56404n);
         if (zVar != null) {
             zVar.N0(coroutineContext, th2);
             return;
@@ -56,7 +56,7 @@ public final class l implements ys.z {
 
     @Override // kotlin.coroutines.CoroutineContext.Element
     public CoroutineContext.b getKey() {
-        return ys.z.f55836n;
+        return ys.z.f56404n;
     }
 
     @Override // kotlin.coroutines.CoroutineContext.Element, kotlin.coroutines.CoroutineContext

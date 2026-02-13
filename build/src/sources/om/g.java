@@ -29,7 +29,7 @@ public abstract class g {
         if (themedReactContext != null && (reactApplicationContext = themedReactContext.getReactApplicationContext()) != null && (rCTDeviceEventEmitter = (DeviceEventManagerModule.RCTDeviceEventEmitter) reactApplicationContext.getJSModule(DeviceEventManagerModule.RCTDeviceEventEmitter.class)) != null) {
             rCTDeviceEventEmitter.emit(event, params);
         }
-        sm.a.c(sm.a.f48172a, "ThemedReactContext", event, null, 4, null);
+        sm.a.c(sm.a.f48740a, "ThemedReactContext", event, null, 4, null);
     }
 
     public static final String c(ThemedReactContext themedReactContext) {

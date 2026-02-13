@@ -5,37 +5,37 @@ import bj.c;
 final class a2 implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final a2 f41744a = new a2();
+    static final a2 f42312a = new a2();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final bj.c f41745b;
+    private static final bj.c f42313b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final bj.c f41746c;
+    private static final bj.c f42314c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final bj.c f41747d;
+    private static final bj.c f42315d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final bj.c f41748e;
+    private static final bj.c f42316e;
 
     static {
         c.b a10 = bj.c.a("durationMs");
         f fVar = new f();
         fVar.a(1);
-        f41745b = a10.b(fVar.b()).a();
+        f42313b = a10.b(fVar.b()).a();
         c.b a11 = bj.c.a("detectorOptions");
         f fVar2 = new f();
         fVar2.a(2);
-        f41746c = a11.b(fVar2.b()).a();
+        f42314c = a11.b(fVar2.b()).a();
         c.b a12 = bj.c.a("eventType");
         f fVar3 = new f();
         fVar3.a(3);
-        f41747d = a12.b(fVar3.b()).a();
+        f42315d = a12.b(fVar3.b()).a();
         c.b a13 = bj.c.a("errorCode");
         f fVar4 = new f();
         fVar4.a(4);
-        f41748e = a13.b(fVar4.b()).a();
+        f42316e = a13.b(fVar4.b()).a();
     }
 
     private a2() {

@@ -54,48 +54,48 @@ import okio.Source;
 public abstract class e {
 
     /* renamed from: a */
-    public static final byte[] f36657a;
+    public static final byte[] f37225a;
 
     /* renamed from: b */
-    public static final Headers f36658b = Headers.f40274e.i(new String[0]);
+    public static final Headers f37226b = Headers.f40842e.i(new String[0]);
 
     /* renamed from: c */
-    public static final ResponseBody f36659c;
+    public static final ResponseBody f37227c;
 
     /* renamed from: d */
-    public static final RequestBody f36660d;
+    public static final RequestBody f37228d;
 
     /* renamed from: e */
-    private static final a0 f36661e;
+    private static final a0 f37229e;
 
     /* renamed from: f */
-    public static final TimeZone f36662f;
+    public static final TimeZone f37230f;
 
     /* renamed from: g */
-    private static final Regex f36663g;
+    private static final Regex f37231g;
 
     /* renamed from: h */
-    public static final boolean f36664h;
+    public static final boolean f37232h;
 
     /* renamed from: i */
-    public static final String f36665i;
+    public static final String f37233i;
 
     static {
         byte[] bArr = new byte[0];
-        f36657a = bArr;
-        f36659c = ResponseBody.Companion.i(ResponseBody.Companion, bArr, null, 1, null);
-        f36660d = RequestBody.Companion.p(RequestBody.Companion, bArr, null, 0, 0, 7, null);
+        f37225a = bArr;
+        f37227c = ResponseBody.Companion.i(ResponseBody.Companion, bArr, null, 1, null);
+        f37228d = RequestBody.Companion.p(RequestBody.Companion, bArr, null, 0, 0, 7, null);
         a0.a aVar = a0.f6218o;
-        ByteString.a aVar2 = ByteString.f40592o;
-        f36661e = aVar.d(aVar2.e("efbbbf"), aVar2.e("feff"), aVar2.e("fffe"), aVar2.e("0000ffff"), aVar2.e("ffff0000"));
+        ByteString.a aVar2 = ByteString.f41160o;
+        f37229e = aVar.d(aVar2.e("efbbbf"), aVar2.e("feff"), aVar2.e("fffe"), aVar2.e("0000ffff"), aVar2.e("ffff0000"));
         TimeZone timeZone = DesugarTimeZone.getTimeZone("GMT");
         Intrinsics.checkNotNull(timeZone);
-        f36662f = timeZone;
-        f36663g = new Regex("([0-9a-fA-F]*:[0-9a-fA-F:.]*)|([\\d.]+)");
-        f36664h = false;
+        f37230f = timeZone;
+        f37231g = new Regex("([0-9a-fA-F]*:[0-9a-fA-F:.]*)|([\\d.]+)");
+        f37232h = false;
         String name = OkHttpClient.class.getName();
         Intrinsics.checkNotNullExpressionValue(name, "OkHttpClient::class.java.name");
-        f36665i = StringsKt.D0(StringsKt.B0(name, "okhttp3."), "Client");
+        f37233i = StringsKt.D0(StringsKt.B0(name, "okhttp3."), "Client");
     }
 
     public static /* synthetic */ int A(String str, int i10, int i11, int i12, Object obj) {
@@ -182,7 +182,7 @@ public abstract class e {
                 ls.c.a(f10, null);
                 return true;
             } catch (IOException unused) {
-                Unit unit = Unit.f31988a;
+                Unit unit = Unit.f32556a;
                 ls.c.a(f10, null);
                 aVar.h(file);
                 return false;
@@ -239,18 +239,18 @@ public abstract class e {
     public static final Charset J(BufferedSource bufferedSource, Charset charset) {
         Intrinsics.checkNotNullParameter(bufferedSource, "<this>");
         Intrinsics.checkNotNullParameter(charset, "default");
-        int T1 = bufferedSource.T1(f36661e);
+        int T1 = bufferedSource.T1(f37229e);
         if (T1 != -1) {
             if (T1 != 0) {
                 if (T1 != 1) {
                     if (T1 != 2) {
                         if (T1 != 3) {
                             if (T1 == 4) {
-                                return Charsets.f34900a.b();
+                                return Charsets.f35468a.b();
                             }
                             throw new AssertionError();
                         }
-                        return Charsets.f34900a.a();
+                        return Charsets.f35468a.a();
                     }
                     Charset UTF_16LE = StandardCharsets.UTF_16LE;
                     Intrinsics.checkNotNullExpressionValue(UTF_16LE, "UTF_16LE");
@@ -383,7 +383,7 @@ public abstract class e {
         } else {
             i10 = httpUrl.i();
         }
-        if (!z10 && httpUrl.o() == HttpUrl.f40277k.c(httpUrl.s())) {
+        if (!z10 && httpUrl.o() == HttpUrl.f40845k.c(httpUrl.s())) {
             return i10;
         }
         return i10 + ':' + httpUrl.o();
@@ -513,7 +513,7 @@ public abstract class e {
 
     public static final boolean i(String str) {
         Intrinsics.checkNotNullParameter(str, "<this>");
-        return f36663g.i(str);
+        return f37231g.i(str);
     }
 
     public static final boolean j(HttpUrl httpUrl, HttpUrl other) {

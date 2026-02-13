@@ -1,83 +1,140 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var1 = exports;
-    var0 = global;
-    var4 = var0.Object;
-    var3 = var4.defineProperty;
-    var0 = var0.Symbol;
-    var2 = var0.toStringTag;
-    var0 = {};
-    var5 = 'Module';
-    var0.value = var5;
-    var0 = var3.bind(var4)(var1, var2, var0);
-    var0 = 'client.address';
-    var1.CLIENT_ADDRESS_ATTRIBUTE = var0;
-    var0 = 'client.port';
-    var1.CLIENT_PORT_ATTRIBUTE = var0;
-    var0 = 'auto.function.mcp_server';
-    var1.MCP_FUNCTION_ORIGIN_VALUE = var0;
-    var0 = 'mcp.logging.data_type';
-    var1.MCP_LOGGING_DATA_TYPE_ATTRIBUTE = var0;
-    var0 = 'mcp.logging.level';
-    var1.MCP_LOGGING_LEVEL_ATTRIBUTE = var0;
-    var0 = 'mcp.logging.logger';
-    var1.MCP_LOGGING_LOGGER_ATTRIBUTE = var0;
-    var0 = 'mcp.logging.message';
-    var1.MCP_LOGGING_MESSAGE_ATTRIBUTE = var0;
-    var0 = 'mcp.method.name';
-    var1.MCP_METHOD_NAME_ATTRIBUTE = var0;
-    var0 = 'mcp.notification.client_to_server';
-    var1.MCP_NOTIFICATION_CLIENT_TO_SERVER_OP_VALUE = var0;
-    var0 = 'auto.mcp.notification';
-    var1.MCP_NOTIFICATION_ORIGIN_VALUE = var0;
-    var0 = 'mcp.notification.server_to_client';
-    var1.MCP_NOTIFICATION_SERVER_TO_CLIENT_OP_VALUE = var0;
-    var0 = 'mcp.prompt.name';
-    var1.MCP_PROMPT_NAME_ATTRIBUTE = var0;
-    var0 = 'mcp.prompt.result.description';
-    var1.MCP_PROMPT_RESULT_DESCRIPTION_ATTRIBUTE = var0;
-    var0 = 'mcp.prompt.result.message_content';
-    var1.MCP_PROMPT_RESULT_MESSAGE_CONTENT_ATTRIBUTE = var0;
-    var0 = 'mcp.prompt.result.message_count';
-    var1.MCP_PROMPT_RESULT_MESSAGE_COUNT_ATTRIBUTE = var0;
-    var0 = 'mcp.prompt.result';
-    var1.MCP_PROMPT_RESULT_PREFIX = var0;
-    var0 = 'mcp.protocol.version';
-    var1.MCP_PROTOCOL_VERSION_ATTRIBUTE = var0;
-    var0 = 'mcp.request.argument';
-    var1.MCP_REQUEST_ARGUMENT = var0;
-    var0 = 'mcp.request.id';
-    var1.MCP_REQUEST_ID_ATTRIBUTE = var0;
-    var0 = 'mcp.resource.uri';
-    var1.MCP_RESOURCE_URI_ATTRIBUTE = var0;
-    var0 = 'route';
-    var1.MCP_ROUTE_SOURCE_VALUE = var0;
-    var0 = 'mcp.server.name';
-    var1.MCP_SERVER_NAME_ATTRIBUTE = var0;
-    var0 = 'mcp.server';
-    var1.MCP_SERVER_OP_VALUE = var0;
-    var0 = 'mcp.server.title';
-    var1.MCP_SERVER_TITLE_ATTRIBUTE = var0;
-    var0 = 'mcp.server.version';
-    var1.MCP_SERVER_VERSION_ATTRIBUTE = var0;
-    var0 = 'mcp.session.id';
-    var1.MCP_SESSION_ID_ATTRIBUTE = var0;
-    var0 = 'mcp.tool.name';
-    var1.MCP_TOOL_NAME_ATTRIBUTE = var0;
-    var0 = 'mcp.tool.result.content';
-    var1.MCP_TOOL_RESULT_CONTENT_ATTRIBUTE = var0;
-    var0 = 'mcp.tool.result.content_count';
-    var1.MCP_TOOL_RESULT_CONTENT_COUNT_ATTRIBUTE = var0;
-    var0 = 'mcp.tool.result.is_error';
-    var1.MCP_TOOL_RESULT_IS_ERROR_ATTRIBUTE = var0;
-    var0 = 'mcp.tool.result';
-    var1.MCP_TOOL_RESULT_PREFIX = var0;
-    var0 = 'mcp.transport';
-    var1.MCP_TRANSPORT_ATTRIBUTE = var0;
-    var0 = 'network.protocol.version';
-    var1.NETWORK_PROTOCOL_VERSION_ATTRIBUTE = var0;
-    var0 = 'network.transport';
-    var1.NETWORK_TRANSPORT_ATTRIBUTE = var0;
+    var2 = global;
+    var6 = var2.Object;
+    var5 = var6.defineProperty;
+    var3 = var2.Symbol;
+    var4 = var3.toStringTag;
+    var3 = {};
+    var7 = 'Module';
+    var3.value = var7;
+    var3 = var5.bind(var6)(var1, var4, var3);
+    var2 = var2.WeakMap;
+    var3 = var2.prototype;
+    var3 = Object.create(var3, {
+        constructor: {
+            value: var2
+        }
+    });
+    var11 = var3;
+    var2 = new var11[var2](var10);
+    var2 = var2 instanceof Object ? var2 : var3;
+    var _closure1_slot0 = var2;
+    var2 = function arg0() {
+        var2 = _closure1_slot0;
+        var1 = var2.delete;
+        var0 = arg0;
+        var0 = var1.bind(var2)(var0);
+        var0 = undefined;
+        return var0;
+    };
+    var1.cleanupSessionDataForTransport = var2;
+    var2 = function arg0() {
+        _fun9762: for (var _fun9762_ip = 0;;) switch (_fun9762_ip) {
+            case 0:
+                var2 = _closure1_slot0;
+                var1 = var2.get;
+                var0 = arg0;
+                var1 = var1.bind(var2)(var0);
+                var0 = null;
+                var2 = var0 == var1;
+                var0 = undefined;
+                if (var2) {
+                    _fun9762_ip = 37;
+                    continue _fun9762
+                }
+            case 31:
+                var0 = var1.clientInfo;
+            case 37:
+                return var0;
+        }
+    };
+    var1.getClientInfoForTransport = var2;
+    var2 = function arg0() {
+        _fun9763: for (var _fun9763_ip = 0;;) switch (_fun9763_ip) {
+            case 0:
+                var2 = _closure1_slot0;
+                var1 = var2.get;
+                var0 = arg0;
+                var1 = var1.bind(var2)(var0);
+                var0 = null;
+                var2 = var0 == var1;
+                var0 = undefined;
+                if (var2) {
+                    _fun9763_ip = 37;
+                    continue _fun9763
+                }
+            case 31:
+                var0 = var1.protocolVersion;
+            case 37:
+                return var0;
+        }
+    };
+    var1.getProtocolVersionForTransport = var2;
+    var2 = function arg0() {
+        var2 = _closure1_slot0;
+        var1 = var2.get;
+        var0 = arg0;
+        var0 = var1.bind(var2)(var0);
+        return var0;
+    };
+    var1.getSessionDataForTransport = var2;
+    var2 = function arg0, arg1() {
+        _fun9765: for (var _fun9765_ip = 0;;) switch (_fun9765_ip) {
+            case 0:
+                var3 = arg0;
+                var0 = var3.sessionId;
+                if (!var0) {
+                    _fun9765_ip = 33;
+                    continue _fun9765
+                }
+            case 12:
+                var2 = _closure1_slot0;
+                var1 = var2.set;
+                var0 = arg1;
+                var0 = var1.bind(var2)(var3, var0);
+            case 33:
+                var0 = undefined;
+                return var0;
+        }
+    };
+    var1.storeSessionDataForTransport = var2;
+    var0 = function arg0, arg1() {
+        _fun9766: for (var _fun9766_ip = 0;;) switch (_fun9766_ip) {
+            case 0:
+                var3 = arg0;
+                var0 = var3.sessionId;
+                if (!var0) {
+                    _fun9766_ip = 74;
+                    continue _fun9766
+                }
+            case 12:
+                var2 = _closure1_slot0;
+                var1 = var2.get;
+                var7 = var1.bind(var2)(var3);
+                if (var7) {
+                    _fun9766_ip = 34;
+                    continue _fun9766
+                }
+            case 32:
+                var7 = {};
+            case 34:
+                var2 = _closure1_slot0;
+                var1 = var2.set;
+                var0 = global;
+                var6 = var0.Object;
+                var5 = var6.assign;
+                var4 = {};
+                var0 = arg1;
+                var0 = var5.bind(var6)(var4, var7, var0);
+                var0 = var1.bind(var2)(var3, var0);
+            case 74:
+                var0 = undefined;
+                return var0;
+        }
+    };
+    var1.updateSessionDataForTransport = var0;
     var0 = undefined;
     return var0;
 })(undefined, undefined, undefined, undefined, undefined, undefined, []);

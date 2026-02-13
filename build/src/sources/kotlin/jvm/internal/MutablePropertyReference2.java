@@ -3,7 +3,7 @@ package kotlin.jvm.internal;
 import kotlin.reflect.KCallable;
 import kotlin.reflect.h;
 import kotlin.reflect.k;
-/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public abstract class MutablePropertyReference2 extends MutablePropertyReference implements h {
     public MutablePropertyReference2() {
     }

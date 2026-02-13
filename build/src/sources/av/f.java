@@ -52,7 +52,7 @@ public abstract class f implements Closeable {
                 f fVar = this.f6246d;
                 fVar.f6244i--;
                 if (this.f6246d.f6244i == 0 && this.f6246d.f6243e) {
-                    Unit unit = Unit.f31988a;
+                    Unit unit = Unit.f32556a;
                     n10.unlock();
                     this.f6246d.p();
                 }
@@ -76,7 +76,7 @@ public abstract class f implements Closeable {
 
         @Override // okio.Source
         public Timeout timeout() {
-            return Timeout.f40598e;
+            return Timeout.f41166e;
         }
     }
 
@@ -98,7 +98,7 @@ public abstract class f implements Closeable {
                 int s10 = s(j13, S0.f6262a, S0.f6264c, (int) Math.min(j12 - j13, 8192 - i10));
                 if (s10 == -1) {
                     if (S0.f6263b == S0.f6264c) {
-                        buffer.f40581d = S0.b();
+                        buffer.f41149d = S0.b();
                         h0.b(S0);
                     }
                     if (j10 == j13) {
@@ -144,7 +144,7 @@ public abstract class f implements Closeable {
             if (this.f6244i != 0) {
                 return;
             }
-            Unit unit = Unit.f31988a;
+            Unit unit = Unit.f32556a;
             reentrantLock.unlock();
             p();
         } finally {
@@ -165,7 +165,7 @@ public abstract class f implements Closeable {
         reentrantLock.lock();
         try {
             if (!this.f6243e) {
-                Unit unit = Unit.f31988a;
+                Unit unit = Unit.f32556a;
                 reentrantLock.unlock();
                 return y();
             }

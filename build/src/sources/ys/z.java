@@ -6,7 +6,7 @@ import kotlin.jvm.functions.Function2;
 public interface z extends CoroutineContext.Element {
 
     /* renamed from: n  reason: collision with root package name */
-    public static final b f55836n = b.f55837d;
+    public static final b f56404n = b.f56405d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a {
@@ -31,7 +31,7 @@ public interface z extends CoroutineContext.Element {
     public static final class b implements CoroutineContext.b {
 
         /* renamed from: d  reason: collision with root package name */
-        static final /* synthetic */ b f55837d = new b();
+        static final /* synthetic */ b f56405d = new b();
 
         private b() {
         }

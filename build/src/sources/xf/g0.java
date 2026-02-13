@@ -7,26 +7,26 @@ public final class g0 extends jf.a {
     public static final Parcelable.Creator<g0> CREATOR = new h0();
 
     /* renamed from: d  reason: collision with root package name */
-    private final long f54646d;
+    private final long f55214d;
 
     public g0(long j10) {
-        this.f54646d = ((Long) hf.q.l(Long.valueOf(j10))).longValue();
+        this.f55214d = ((Long) hf.q.l(Long.valueOf(j10))).longValue();
     }
 
     public final boolean equals(Object obj) {
-        if (!(obj instanceof g0) || this.f54646d != ((g0) obj).f54646d) {
+        if (!(obj instanceof g0) || this.f55214d != ((g0) obj).f55214d) {
             return false;
         }
         return true;
     }
 
     public final int hashCode() {
-        return hf.o.b(Long.valueOf(this.f54646d));
+        return hf.o.b(Long.valueOf(this.f55214d));
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i10) {
-        long j10 = this.f54646d;
+        long j10 = this.f55214d;
         int a10 = jf.c.a(parcel);
         jf.c.o(parcel, 1, j10);
         jf.c.b(parcel, a10);

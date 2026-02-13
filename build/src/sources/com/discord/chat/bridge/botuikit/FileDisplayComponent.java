@@ -134,7 +134,7 @@ public final class FileDisplayComponent extends Component implements Spoilerable
             r0 = 5
             boolean r3 = r7.isSpoiler
             r8.x(r9, r0, r3)
-            tt.n2 r0 = tt.n2.f50033a
+            tt.n2 r0 = tt.n2.f50601a
             java.lang.String r3 = r7.spoilerDescription
             r4 = 6
             r8.o(r9, r4, r0, r3)
@@ -170,7 +170,7 @@ public final class FileDisplayComponent extends Component implements Spoilerable
             java.lang.Void r1 = r7.m271getObscureOrNull()
             if (r1 == 0) goto L72
         L69:
-            tt.k1 r1 = tt.k1.f50016a
+            tt.k1 r1 = tt.k1.f50584a
             java.lang.Void r7 = r7.m271getObscureOrNull()
             r8.o(r9, r0, r1, r7)
         L72:

@@ -13,28 +13,28 @@ public final class q5 implements h {
     public static final Parcelable.Creator<q5> CREATOR = new a();
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f43074d;
+    private final String f43642d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final JsonLogicBoolean f43075e;
+    private final JsonLogicBoolean f43643e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final JsonLogicBoolean f43076i;
+    private final JsonLogicBoolean f43644i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final String f43077o;
+    private final String f43645o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final Integer f43078p;
+    private final Integer f43646p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final String f43079q;
+    private final String f43647q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final List f43080r;
+    private final List f43648r;
 
     /* renamed from: s  reason: collision with root package name */
-    private boolean f43081s;
+    private boolean f43649s;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements Parcelable.Creator {
@@ -64,27 +64,27 @@ public final class q5 implements h {
 
     public q5(String name, JsonLogicBoolean jsonLogicBoolean, JsonLogicBoolean jsonLogicBoolean2, String str, Integer num, String str2) {
         Intrinsics.checkNotNullParameter(name, "name");
-        this.f43074d = name;
-        this.f43075e = jsonLogicBoolean;
-        this.f43076i = jsonLogicBoolean2;
-        this.f43077o = str;
-        this.f43078p = num;
-        this.f43079q = str2;
-        this.f43080r = new ArrayList();
+        this.f43642d = name;
+        this.f43643e = jsonLogicBoolean;
+        this.f43644i = jsonLogicBoolean2;
+        this.f43645o = str;
+        this.f43646p = num;
+        this.f43647q = str2;
+        this.f43648r = new ArrayList();
     }
 
     @Override // pq.h
     public boolean G0() {
-        return this.f43081s;
+        return this.f43649s;
     }
 
     public final String a() {
-        return this.f43079q;
+        return this.f43647q;
     }
 
     @Override // pq.e0
     public List d() {
-        return this.f43080r;
+        return this.f43648r;
     }
 
     @Override // android.os.Parcelable
@@ -94,43 +94,43 @@ public final class q5 implements h {
 
     @Override // pq.h
     public String getAutoSubmitCountdownText() {
-        return this.f43077o;
+        return this.f43645o;
     }
 
     @Override // pq.h
     public Integer getAutoSubmitIntervalSeconds() {
-        return this.f43078p;
+        return this.f43646p;
     }
 
     @Override // pq.v
     public JsonLogicBoolean getDisabled() {
-        return this.f43076i;
+        return this.f43644i;
     }
 
     @Override // pq.e0
     public JsonLogicBoolean getHidden() {
-        return this.f43075e;
+        return this.f43643e;
     }
 
     @Override // pq.h, pq.k5
     public String getName() {
-        return this.f43074d;
+        return this.f43642d;
     }
 
     @Override // pq.h, pq.j2
     public void n(boolean z10) {
-        this.f43081s = z10;
+        this.f43649s = z10;
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel dest, int i10) {
         int intValue;
         Intrinsics.checkNotNullParameter(dest, "dest");
-        dest.writeString(this.f43074d);
-        dest.writeParcelable(this.f43075e, i10);
-        dest.writeParcelable(this.f43076i, i10);
-        dest.writeString(this.f43077o);
-        Integer num = this.f43078p;
+        dest.writeString(this.f43642d);
+        dest.writeParcelable(this.f43643e, i10);
+        dest.writeParcelable(this.f43644i, i10);
+        dest.writeString(this.f43645o);
+        Integer num = this.f43646p;
         if (num == null) {
             intValue = 0;
         } else {
@@ -138,7 +138,7 @@ public final class q5 implements h {
             intValue = num.intValue();
         }
         dest.writeInt(intValue);
-        dest.writeString(this.f43079q);
+        dest.writeString(this.f43647q);
     }
 
     /* JADX WARN: Illegal instructions before constructor call */

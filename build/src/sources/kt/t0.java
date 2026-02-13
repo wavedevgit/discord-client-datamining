@@ -6,10 +6,10 @@ import kotlin.jvm.internal.Intrinsics;
 final class t0 extends mt.z {
 
     /* renamed from: f  reason: collision with root package name */
-    private final h0 f35308f;
+    private final h0 f35876f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final boolean f35309g;
+    private final boolean f35877g;
 
     public /* synthetic */ t0(h0 h0Var, boolean z10, int i10, DefaultConstructorMarker defaultConstructorMarker) {
         this(h0Var, (i10 & 2) != 0 ? false : z10);
@@ -18,7 +18,7 @@ final class t0 extends mt.z {
     public boolean equals(Object obj) {
         if (obj instanceof t0) {
             t0 t0Var = (t0) obj;
-            if (this.f35308f == t0Var.f35308f && this.f35309g == t0Var.f35309g) {
+            if (this.f35876f == t0Var.f35876f && this.f35877g == t0Var.f35877g) {
                 return true;
             }
             return false;
@@ -27,14 +27,14 @@ final class t0 extends mt.z {
     }
 
     public int hashCode() {
-        return (this.f35308f.hashCode() * 31) + Boolean.hashCode(this.f35309g);
+        return (this.f35876f.hashCode() * 31) + Boolean.hashCode(this.f35877g);
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public t0(h0 padding, boolean z10) {
-        super(i.f35205a.d(), Integer.valueOf(padding != h0.f35201e ? 1 : 4), null, padding == h0.f35202i ? 4 : null, 4);
+        super(i.f35773a.d(), Integer.valueOf(padding != h0.f35769e ? 1 : 4), null, padding == h0.f35770i ? 4 : null, 4);
         Intrinsics.checkNotNullParameter(padding, "padding");
-        this.f35308f = padding;
-        this.f35309g = z10;
+        this.f35876f = padding;
+        this.f35877g = z10;
     }
 }

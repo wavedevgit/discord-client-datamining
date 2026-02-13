@@ -5,7 +5,7 @@ import bj.c;
 final class fb implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final fb f46663a = new fb();
+    static final fb f47231a = new fb();
 
     static {
         c.b a10 = bj.c.a("stageId");

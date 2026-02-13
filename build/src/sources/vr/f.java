@@ -11,34 +11,34 @@ import android.text.style.MetricAffectingSpan;
 public class f extends MetricAffectingSpan implements LeadingMarginSpan {
 
     /* renamed from: d  reason: collision with root package name */
-    private final tr.c f51794d;
+    private final tr.c f52362d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Rect f51795e = h.b();
+    private final Rect f52363e = h.b();
 
     /* renamed from: i  reason: collision with root package name */
-    private final Paint f51796i = h.a();
+    private final Paint f52364i = h.a();
 
     /* renamed from: o  reason: collision with root package name */
-    private final int f51797o;
+    private final int f52365o;
 
     public f(tr.c cVar, int i10) {
-        this.f51794d = cVar;
-        this.f51797o = i10;
+        this.f52362d = cVar;
+        this.f52365o = i10;
     }
 
     private void a(TextPaint textPaint) {
-        this.f51794d.e(textPaint, this.f51797o);
+        this.f52362d.e(textPaint, this.f52365o);
     }
 
     @Override // android.text.style.LeadingMarginSpan
     public void drawLeadingMargin(Canvas canvas, Paint paint, int i10, int i11, int i12, int i13, int i14, CharSequence charSequence, int i15, int i16, boolean z10, Layout layout) {
         int i17;
-        int i18 = this.f51797o;
+        int i18 = this.f52365o;
         if ((i18 == 1 || i18 == 2) && zr.c.a(i16, charSequence, this)) {
-            this.f51796i.set(paint);
-            this.f51794d.d(this.f51796i);
-            float strokeWidth = this.f51796i.getStrokeWidth();
+            this.f52364i.set(paint);
+            this.f52362d.d(this.f52364i);
+            float strokeWidth = this.f52364i.getStrokeWidth();
             if (strokeWidth > 0.0f) {
                 int i19 = (int) ((i14 - strokeWidth) + 0.5f);
                 if (i11 > 0) {
@@ -47,8 +47,8 @@ public class f extends MetricAffectingSpan implements LeadingMarginSpan {
                     i17 = i10;
                     i10 -= canvas.getWidth();
                 }
-                this.f51795e.set(i10, i19, i17, i14);
-                canvas.drawRect(this.f51795e, this.f51796i);
+                this.f52363e.set(i10, i19, i17, i14);
+                canvas.drawRect(this.f52363e, this.f52364i);
             }
         }
     }

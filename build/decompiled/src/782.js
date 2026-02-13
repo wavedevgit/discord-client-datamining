@@ -1,23 +1,25 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = require;
-    var _closure1_slot0 = var1;
-    var1 = dependencyMap;
-    var _closure1_slot1 = var1;
     var1 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
         var0 = function(arg0) { // Environment: var0
-            var1 = _closure1_slot0;
-            var2 = _closure1_slot1;
-            var0 = 0;
-            var0 = var2[var0];
-            var3 = undefined;
-            var2 = var1.bind(var3)(var0);
-            var1 = _closure2_slot0;
-            var0 = arg0;
-            var0 = var2.bind(var3)(var0, var1);
-            return var0;
+            _fun8446: for (var _fun8446_ip = 0;;) switch (_fun8446_ip) {
+                case 0:
+                    var2 = arg0;
+                    var0 = null;
+                    var1 = var0 == var2;
+                    var0 = undefined;
+                    if (var1) {
+                        _fun8446_ip = 25;
+                        continue _fun8446
+                    }
+                case 14:
+                    var1 = _closure2_slot0;
+                    var0 = var2[var1];
+                case 25:
+                    return var0;
+            }
         };
         return var0;
     };
@@ -25,4 +27,4 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0.exports = var1;
     var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [687]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, []);

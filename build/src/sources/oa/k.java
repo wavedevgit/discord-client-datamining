@@ -8,10 +8,10 @@ import k8.f;
 public class k implements o {
 
     /* renamed from: a  reason: collision with root package name */
-    private l f38695a;
+    private l f39263a;
 
     public k(l lVar) {
-        this.f38695a = lVar;
+        this.f39263a = lVar;
     }
 
     private static k8.f b(DiskCacheConfig diskCacheConfig, k8.e eVar) {
@@ -24,6 +24,6 @@ public class k implements o {
 
     @Override // oa.o
     public k8.j a(DiskCacheConfig diskCacheConfig) {
-        return b(diskCacheConfig, this.f38695a.a(diskCacheConfig));
+        return b(diskCacheConfig, this.f39263a.a(diskCacheConfig));
     }
 }

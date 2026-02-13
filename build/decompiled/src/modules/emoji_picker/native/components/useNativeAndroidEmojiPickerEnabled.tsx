@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/emoji_picker/native/components/useNativeAndroidEmojiPickerEnabled.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function() {
-        _fun73877: for (var _fun73877_ip = 0;;) switch (_fun73877_ip) {
+        _fun74571: for (var _fun74571_ip = 0;;) switch (_fun74571_ip) {
             case 0:
                 var2 = _closure1_slot0;
                 var3 = _closure1_slot2;
@@ -39,8 +39,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var2.isAndroid;
                 var0 = var0.bind(var2)();
                 if (!var0) {
-                    _fun73877_ip = 89;
-                    continue _fun73877
+                    _fun74571_ip = 89;
+                    continue _fun74571
                 }
             case 38:
                 var3 = _closure1_slot1;
@@ -61,4 +61,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1216, 478, 1664, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1217, 478, 1667, 2]);

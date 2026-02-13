@@ -5,37 +5,37 @@ import bj.c;
 final class k4 implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final k4 f44626a = new k4();
+    static final k4 f45194a = new k4();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final bj.c f44627b;
+    private static final bj.c f45195b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final bj.c f44628c;
+    private static final bj.c f45196c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final bj.c f44629d;
+    private static final bj.c f45197d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final bj.c f44630e;
+    private static final bj.c f45198e;
 
     static {
         c.b a10 = bj.c.a("durationMs");
         s1 s1Var = new s1();
         s1Var.a(1);
-        f44627b = a10.b(s1Var.b()).a();
+        f45195b = a10.b(s1Var.b()).a();
         c.b a11 = bj.c.a("detectorOptions");
         s1 s1Var2 = new s1();
         s1Var2.a(2);
-        f44628c = a11.b(s1Var2.b()).a();
+        f45196c = a11.b(s1Var2.b()).a();
         c.b a12 = bj.c.a("eventType");
         s1 s1Var3 = new s1();
         s1Var3.a(3);
-        f44629d = a12.b(s1Var3.b()).a();
+        f45197d = a12.b(s1Var3.b()).a();
         c.b a13 = bj.c.a("errorCode");
         s1 s1Var4 = new s1();
         s1Var4.a(4);
-        f44630e = a13.b(s1Var4.b()).a();
+        f45198e = a13.b(s1Var4.b()).a();
     }
 
     private k4() {

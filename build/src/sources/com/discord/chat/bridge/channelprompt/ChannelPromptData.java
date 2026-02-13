@@ -75,25 +75,25 @@ public final class ChannelPromptData {
 
     public static final /* synthetic */ void write$Self$chat_release(ChannelPromptData channelPromptData, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
         if (compositeEncoder.z(serialDescriptor, 0) || channelPromptData.cameraButtonIcon != null) {
-            compositeEncoder.o(serialDescriptor, 0, n2.f50033a, channelPromptData.cameraButtonIcon);
+            compositeEncoder.o(serialDescriptor, 0, n2.f50601a, channelPromptData.cameraButtonIcon);
         }
         if (compositeEncoder.z(serialDescriptor, 1) || channelPromptData.gifButtonIcon != null) {
-            compositeEncoder.o(serialDescriptor, 1, n2.f50033a, channelPromptData.gifButtonIcon);
+            compositeEncoder.o(serialDescriptor, 1, n2.f50601a, channelPromptData.gifButtonIcon);
         }
         if (compositeEncoder.z(serialDescriptor, 2) || channelPromptData.emojiButtonIcon != null) {
-            compositeEncoder.o(serialDescriptor, 2, n2.f50033a, channelPromptData.emojiButtonIcon);
+            compositeEncoder.o(serialDescriptor, 2, n2.f50601a, channelPromptData.emojiButtonIcon);
         }
         if (compositeEncoder.z(serialDescriptor, 3) || channelPromptData.gamingStatsButtonText != null) {
-            compositeEncoder.o(serialDescriptor, 3, n2.f50033a, channelPromptData.gamingStatsButtonText);
+            compositeEncoder.o(serialDescriptor, 3, n2.f50601a, channelPromptData.gamingStatsButtonText);
         }
         if (compositeEncoder.z(serialDescriptor, 4) || channelPromptData.cameraButtonText != null) {
-            compositeEncoder.o(serialDescriptor, 4, n2.f50033a, channelPromptData.cameraButtonText);
+            compositeEncoder.o(serialDescriptor, 4, n2.f50601a, channelPromptData.cameraButtonText);
         }
         if (compositeEncoder.z(serialDescriptor, 5) || channelPromptData.gifButtonText != null) {
-            compositeEncoder.o(serialDescriptor, 5, n2.f50033a, channelPromptData.gifButtonText);
+            compositeEncoder.o(serialDescriptor, 5, n2.f50601a, channelPromptData.gifButtonText);
         }
         if (compositeEncoder.z(serialDescriptor, 6) || channelPromptData.emojiButtonText != null) {
-            compositeEncoder.o(serialDescriptor, 6, n2.f50033a, channelPromptData.emojiButtonText);
+            compositeEncoder.o(serialDescriptor, 6, n2.f50601a, channelPromptData.emojiButtonText);
         }
     }
 

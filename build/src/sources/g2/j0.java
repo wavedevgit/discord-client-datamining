@@ -38,7 +38,7 @@ public final class j0 extends h {
     private j0(String str, Bundle bundle) {
         super("androidx.credentials.TYPE_RESTORE_CREDENTIAL", bundle);
         this.f24680d = str;
-        if (!k2.c.f31480a.a(str)) {
+        if (!k2.c.f32048a.a(str)) {
             throw new IllegalArgumentException("authenticationResponseJson must not be empty, and must be a valid JSON");
         }
     }

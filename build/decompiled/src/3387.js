@@ -1,69 +1,166 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun29125: for (var _fun29125_ip = 0;;) switch (_fun29125_ip) {
-        case 0:
-            var3 = require;
-            var2 = dependencyMap;
-            var _closure1_slot0 = var3;
-            var _closure1_slot1 = var2;
-            var0 = 0;
-            var2 = var2[var0];
-            var0 = undefined;
-            var3 = var3.bind(var0)(var2);
-            var2 = 'String.prototype.replace';
-            var2 = var3.bind(var0)(var2);
-            var _closure1_slot2 = var2;
-            var4 = /^\s$/;
-            var3 = var4.test;
-            var2 = '\u180e';
-            var2 = var3.bind(var4)(var2);
-            if (var2) {
-                _fun29125_ip = 93;
-                continue _fun29125
-            }
-        case 77:
-            var3 = /^[\x09\x0A\x0B\x0C\x0D\x20\xA0\u1680\u2000\u2001\u2002\u2003\u2004\u2005\u2006\u2007\u2008\u2009\u200A\u202F\u205F\u3000\u2028\u2029\uFEFF]+/;
-            _fun29125_ip = 107;
-            continue _fun29125;
-        case 93:
-            var3 = /^[\x09\x0A\x0B\x0C\x0D\x20\xA0\u1680\u180E\u2000\u2001\u2002\u2003\u2004\u2005\u2006\u2007\u2008\u2009\u200A\u202F\u205F\u3000\u2028\u2029\uFEFF]+/;
-        case 107:
-            var _closure1_slot3 = var3;
-            if (var2) {
-                _fun29125_ip = 130;
-                continue _fun29125
-            }
-        case 114:
-            var2 = /[\x09\x0A\x0B\x0C\x0D\x20\xA0\u1680\u2000\u2001\u2002\u2003\u2004\u2005\u2006\u2007\u2008\u2009\u200A\u202F\u205F\u3000\u2028\u2029\uFEFF]+$/;
-            _fun29125_ip = 144;
-            continue _fun29125;
-        case 130:
-            var2 = /[\x09\x0A\x0B\x0C\x0D\x20\xA0\u1680\u180E\u2000\u2001\u2002\u2003\u2004\u2005\u2006\u2007\u2008\u2009\u200A\u202F\u205F\u3000\u2028\u2029\uFEFF]+$/;
-        case 144:
-            var _closure1_slot4 = var2;
-            var2 = function() {
-                var3 = _closure1_slot0;
+    var4 = require;
+    var5 = dependencyMap;
+    var _closure1_slot0 = var4;
+    var _closure1_slot1 = var5;
+    var2 = 0;
+    var3 = var5[var2];
+    var0 = undefined;
+    var6 = var4.bind(var0)(var3);
+    var3 = '%RegExp%';
+    var8 = var6.bind(var0)(var3);
+    var2 = var5[var2];
+    var3 = var4.bind(var0)(var2);
+    var2 = '%parseInt%';
+    var2 = var3.bind(var0)(var2);
+    var _closure1_slot2 = var2;
+    var2 = 1;
+    var2 = var5[var2];
+    var3 = var4.bind(var0)(var2);
+    var2 = 'String.prototype.slice';
+    var2 = var3.bind(var0)(var2);
+    var _closure1_slot3 = var2;
+    var2 = 2;
+    var3 = var5[var2];
+    var6 = var4.bind(var0)(var3);
+    var3 = /^0b[01]+$/i;
+    var3 = var6.bind(var0)(var3);
+    var _closure1_slot4 = var3;
+    var3 = var5[var2];
+    var6 = var4.bind(var0)(var3);
+    var3 = /^0o[0-7]+$/i;
+    var3 = var6.bind(var0)(var3);
+    var _closure1_slot5 = var3;
+    var3 = var5[var2];
+    var6 = var4.bind(var0)(var3);
+    var3 = /^[-+]0x[0-9a-f]+$/i;
+    var3 = var6.bind(var0)(var3);
+    var _closure1_slot6 = var3;
+    var7 = ['\x85', '\u200b', ''];
+    var6 = var7.join;
+    var3 = '';
+    var6 = var6.bind(var7)(var3);
+    var3 = '[';
+    var7 = var3 + var6;
+    var3 = var8.prototype;
+    var6 = Object.create(var3, {
+        constructor: {
+            value: var8
+        }
+    });
+    var3 = ']';
+    var10 = var7 + var3;
+    var9 = 'g';
+    var11 = var6;
+    var3 = new var11[var8](var10, var9, var8);
+    var3 = var3 instanceof Object ? var3 : var6;
+    var2 = var5[var2];
+    var2 = var4.bind(var0)(var2);
+    var2 = var2.bind(var0)(var3);
+    var _closure1_slot7 = var2;
+    var2 = function arg0() {
+        _fun29187: for (var _fun29187_ip = 0;;) switch (_fun29187_ip) {
+            case 0:
+                var4 = arg0;
+                var1 = 'string';
+                var0 = typeof var4;
+                if (!(var1 === var0)) {
+                    _fun29187_ip = 187;
+                    continue _fun29187
+                }
+            case 17:
+                var1 = _closure1_slot4;
+                var3 = undefined;
+                var1 = var1.bind(var3)(var4);
+                if (var1) {
+                    _fun29187_ip = 159;
+                    continue _fun29187
+                }
+            case 37:
+                var1 = _closure1_slot5;
+                var1 = var1.bind(var3)(var4);
+                if (var1) {
+                    _fun29187_ip = 128;
+                    continue _fun29187
+                }
+            case 49:
+                var1 = _closure1_slot7;
+                var1 = var1.bind(var3)(var4);
+                if (var1) {
+                    _fun29187_ip = 118;
+                    continue _fun29187
+                }
+            case 61:
+                var1 = _closure1_slot6;
+                var1 = var1.bind(var3)(var4);
+                if (var1) {
+                    _fun29187_ip = 118;
+                    continue _fun29187
+                }
+            case 73:
+                var2 = _closure1_slot0;
                 var5 = _closure1_slot1;
-                var1 = 1;
+                var1 = 4;
                 var1 = var5[var1];
-                var4 = undefined;
-                var2 = var3.bind(var4)(var1);
+                var1 = var2.bind(var3)(var1);
+                var5 = var1.bind(var3)(var4);
+                if (!(var5 === var4)) {
+                    _fun29187_ip = 107;
+                    continue _fun29187
+                }
+            case 102:
+                var1 = var4 - 0;
+                _fun29187_ip = 116;
+                continue _fun29187;
+            case 107:
+                var2 = _closure1_slot8;
+                var1 = var2.bind(var3)(var5);
+            case 116:
+                return var1;
+            case 118:
+                var1 = global;
+                var1 = var1.NaN;
+                return var1;
+            case 128:
+                var5 = _closure1_slot2;
+                var2 = _closure1_slot3;
                 var1 = 2;
-                var1 = var5[var1];
-                var3 = var3.bind(var4)(var1);
-                var1 = this;
-                var1 = var3.bind(var4)(var1);
-                var5 = var2.bind(var4)(var1);
-                var3 = _closure1_slot2;
-                var1 = _closure1_slot3;
-                var2 = '';
-                var1 = var3.bind(var4)(var5, var1, var2);
-                var0 = _closure1_slot4;
-                var0 = var3.bind(var4)(var1, var0, var2);
+                var2 = var2.bind(var3)(var4, var1);
+                var1 = 8;
+                var1 = var5.bind(var3)(var2, var1);
+                var1 = var1 - 0;
+                return var1;
+            case 159:
+                var2 = _closure1_slot2;
+                var0 = _closure1_slot3;
+                var1 = 2;
+                var0 = var0.bind(var3)(var4, var1);
+                var0 = var2.bind(var3)(var0, var1);
+                var0 = var0 - 0;
                 return var0;
-            };
-            var1 = arg4;
-            var1.exports = var2;
-            return var0;
-    }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [551, 3388, 3374]);
+            case 187:
+                var2 = _closure1_slot0;
+                var1 = _closure1_slot1;
+                var0 = 3;
+                var1 = var1[var0];
+                var0 = undefined;
+                var2 = var2.bind(var0)(var1);
+                var0 = var2.prototype;
+                var1 = Object.create(var0, {
+                    constructor: {
+                        value: var2
+                    }
+                });
+                var7 = 'Assertion failed: `argument` is not a String';
+                var8 = var1;
+                var0 = new var8[var2](var7, var6);
+                var0 = var0 instanceof Object ? var0 : var1;
+                throw var0;
+        }
+    };
+    var _closure1_slot8 = var2;
+    var1 = arg4;
+    var1.exports = var2;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [517, 551, 1395, 518, 3388]);

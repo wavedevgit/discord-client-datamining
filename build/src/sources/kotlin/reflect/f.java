@@ -2,10 +2,10 @@ package kotlin.reflect;
 
 import kotlin.jvm.functions.Function1;
 import kotlin.reflect.e;
-/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public interface f extends j, e {
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public interface a extends e.a, Function1 {
     }
 

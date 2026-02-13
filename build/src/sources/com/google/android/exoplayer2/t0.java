@@ -437,8 +437,8 @@ public final class t0 implements Handler.Callback, p.a, q.a, o1.d, i.a, s1.a {
         r.b E = this.D.E(timeline, n10.first, 0L);
         long longValue = ((Long) n10.second).longValue();
         if (E.b()) {
-            timeline.l(E.f46438a, this.f13614w);
-            if (E.f46440c == this.f13614w.n(E.f46439b)) {
+            timeline.l(E.f47006a, this.f13614w);
+            if (E.f47008c == this.f13614w.n(E.f47007b)) {
                 j10 = this.f13614w.j();
             }
             longValue = j10;
@@ -673,7 +673,7 @@ public final class t0 implements Handler.Callback, p.a, q.a, o1.d, i.a, s1.a {
                                     p1(timeline2, bVar, timeline6, bVar3, j11, false);
                                     if (z11 || j10 != this.I.f13381c) {
                                         r1 r1Var2 = this.I;
-                                        Object obj = r1Var2.f13380b.f46438a;
+                                        Object obj = r1Var2.f13380b.f47006a;
                                         Timeline timeline7 = r1Var2.f13379a;
                                         if (z11 && z10 && !timeline7.u() && !timeline7.l(obj, this.f13614w).f12598q) {
                                             j12 = j10;
@@ -743,7 +743,7 @@ public final class t0 implements Handler.Callback, p.a, q.a, o1.d, i.a, s1.a {
                     timeline4 = timeline3;
                 } else {
                     r1 r1Var4 = this.I;
-                    Object obj2 = r1Var4.f13380b.f46438a;
+                    Object obj2 = r1Var4.f13380b.f47006a;
                     Timeline timeline9 = r1Var4.f13379a;
                     if (z11 && z10 && !timeline9.u() && !timeline9.l(obj2, this.f13614w).f12598q) {
                         z13 = true;
@@ -891,7 +891,7 @@ public final class t0 implements Handler.Callback, p.a, q.a, o1.d, i.a, s1.a {
         if (this.E.t()) {
             w0 r10 = this.D.r();
             if (r10 == null) {
-                n10 = rd.w0.f46510o;
+                n10 = rd.w0.f47078o;
             } else {
                 n10 = r10.n();
             }
@@ -900,7 +900,7 @@ public final class t0 implements Handler.Callback, p.a, q.a, o1.d, i.a, s1.a {
             } else {
                 o10 = r10.o();
             }
-            List w10 = w(o10.f31725c);
+            List w10 = w(o10.f32293c);
             if (r10 != null) {
                 x0 x0Var = r10.f14191f;
                 if (x0Var.f14204c != j11) {
@@ -912,7 +912,7 @@ public final class t0 implements Handler.Callback, p.a, q.a, o1.d, i.a, s1.a {
             list = w10;
         } else {
             if (!bVar.equals(this.I.f13380b)) {
-                w0Var2 = rd.w0.f46510o;
+                w0Var2 = rd.w0.f47078o;
                 rVar2 = this.f13607p;
                 list2 = qi.s.t();
             }
@@ -973,13 +973,13 @@ public final class t0 implements Handler.Callback, p.a, q.a, o1.d, i.a, s1.a {
     }
 
     private static boolean P(boolean z10, r.b bVar, long j10, r.b bVar2, Timeline.b bVar3, long j11) {
-        if (!z10 && j10 == j11 && bVar.f46438a.equals(bVar2.f46438a)) {
-            if (bVar.b() && bVar3.u(bVar.f46439b)) {
-                if (bVar3.k(bVar.f46439b, bVar.f46440c) == 4 || bVar3.k(bVar.f46439b, bVar.f46440c) == 2) {
+        if (!z10 && j10 == j11 && bVar.f47006a.equals(bVar2.f47006a)) {
+            if (bVar.b() && bVar3.u(bVar.f47007b)) {
+                if (bVar3.k(bVar.f47007b, bVar.f47008c) == 4 || bVar3.k(bVar.f47007b, bVar.f47008c) == 2) {
                     return false;
                 }
                 return true;
-            } else if (bVar2.b() && bVar3.u(bVar2.f46439b)) {
+            } else if (bVar2.b() && bVar3.u(bVar2.f47007b)) {
                 return true;
             }
         }
@@ -1054,7 +1054,7 @@ public final class t0 implements Handler.Callback, p.a, q.a, o1.d, i.a, s1.a {
     private static boolean T(r1 r1Var, Timeline.b bVar) {
         r.b bVar2 = r1Var.f13380b;
         Timeline timeline = r1Var.f13379a;
-        if (!timeline.u() && !timeline.l(bVar2.f46438a, bVar).f12598q) {
+        if (!timeline.u() && !timeline.l(bVar2.f47006a, bVar).f12598q) {
             return false;
         }
         return true;
@@ -1138,11 +1138,11 @@ public final class t0 implements Handler.Callback, p.a, q.a, o1.d, i.a, s1.a {
                 V();
             }
             w0 w0Var = (w0) oe.a.e(this.D.b());
-            if (this.I.f13380b.f46438a.equals(w0Var.f14191f.f14202a.f46438a)) {
+            if (this.I.f13380b.f47006a.equals(w0Var.f14191f.f14202a.f47006a)) {
                 r.b bVar = this.I.f13380b;
-                if (bVar.f46439b == -1) {
+                if (bVar.f47007b == -1) {
                     r.b bVar2 = w0Var.f14191f.f14202a;
-                    if (bVar2.f46439b == -1 && bVar.f46442e != bVar2.f46442e) {
+                    if (bVar2.f47007b == -1 && bVar.f47010e != bVar2.f47010e) {
                         z10 = true;
                         x0 x0Var = w0Var.f14191f;
                         r.b bVar3 = x0Var.f14202a;
@@ -1192,8 +1192,8 @@ public final class t0 implements Handler.Callback, p.a, q.a, o1.d, i.a, s1.a {
                                 } else {
                                     z10 = false;
                                 }
-                                mc.r0 r0Var = o10.f31724b[i11];
-                                mc.r0 r0Var2 = o11.f31724b[i11];
+                                mc.r0 r0Var = o10.f32292b[i11];
+                                mc.r0 r0Var2 = o11.f32292b[i11];
                                 if (!c12 || !r0Var2.equals(r0Var) || z10) {
                                     K0(this.f13603d[i11], c10.m());
                                 }
@@ -1276,7 +1276,7 @@ public final class t0 implements Handler.Callback, p.a, q.a, o1.d, i.a, s1.a {
     private void d0() {
         com.google.android.exoplayer2.trackselection.g[] gVarArr;
         for (w0 r10 = this.D.r(); r10 != null; r10 = r10.j()) {
-            for (com.google.android.exoplayer2.trackselection.g gVar : r10.o().f31725c) {
+            for (com.google.android.exoplayer2.trackselection.g gVar : r10.o().f32293c) {
                 if (gVar != null) {
                     gVar.i();
                 }
@@ -1311,7 +1311,7 @@ public final class t0 implements Handler.Callback, p.a, q.a, o1.d, i.a, s1.a {
     private void e0(boolean z10) {
         com.google.android.exoplayer2.trackselection.g[] gVarArr;
         for (w0 r10 = this.D.r(); r10 != null; r10 = r10.j()) {
-            for (com.google.android.exoplayer2.trackselection.g gVar : r10.o().f31725c) {
+            for (com.google.android.exoplayer2.trackselection.g gVar : r10.o().f32293c) {
                 if (gVar != null) {
                     gVar.m(z10);
                 }
@@ -1330,7 +1330,7 @@ public final class t0 implements Handler.Callback, p.a, q.a, o1.d, i.a, s1.a {
     private void f0() {
         com.google.android.exoplayer2.trackselection.g[] gVarArr;
         for (w0 r10 = this.D.r(); r10 != null; r10 = r10.j()) {
-            for (com.google.android.exoplayer2.trackselection.g gVar : r10.o().f31725c) {
+            for (com.google.android.exoplayer2.trackselection.g gVar : r10.o().f32293c) {
                 if (gVar != null) {
                     gVar.s();
                 }
@@ -1387,7 +1387,7 @@ public final class t0 implements Handler.Callback, p.a, q.a, o1.d, i.a, s1.a {
 
     private boolean g1(Timeline timeline, r.b bVar) {
         if (!bVar.b() && !timeline.u()) {
-            timeline.r(timeline.l(bVar.f46438a, this.f13614w).f12595i, this.f13613v);
+            timeline.r(timeline.l(bVar.f47006a, this.f13614w).f12595i, this.f13613v);
             if (this.f13613v.g()) {
                 Timeline.d dVar = this.f13613v;
                 if (dVar.f12612t && dVar.f12609q != -9223372036854775807L) {
@@ -1498,7 +1498,7 @@ public final class t0 implements Handler.Callback, p.a, q.a, o1.d, i.a, s1.a {
     }
 
     private void m1(r.b bVar, rd.w0 w0Var, ke.r rVar) {
-        this.f13608q.f(this.I.f13379a, bVar, this.f13603d, w0Var, rVar.f31725c);
+        this.f13608q.f(this.I.f13379a, bVar, this.f13603d, w0Var, rVar.f32293c);
     }
 
     private void n() {
@@ -1543,7 +1543,7 @@ public final class t0 implements Handler.Callback, p.a, q.a, o1.d, i.a, s1.a {
                     }
                     if (!o10.c(i10) || z10) {
                         if (!v1Var.r()) {
-                            v1Var.j(y(o10.f31725c[i10]), s10.f14188c[i10], s10.m(), s10.l());
+                            v1Var.j(y(o10.f32293c[i10]), s10.f14188c[i10], s10.m(), s10.l());
                         } else if (v1Var.d()) {
                             p(v1Var);
                         } else {
@@ -1696,15 +1696,15 @@ public final class t0 implements Handler.Callback, p.a, q.a, o1.d, i.a, s1.a {
             }
             return;
         }
-        timeline.r(timeline.l(bVar.f46438a, this.f13614w).f12595i, this.f13613v);
+        timeline.r(timeline.l(bVar.f47006a, this.f13614w).f12595i, this.f13613v);
         this.F.a((MediaItem.g) oe.w0.j(this.f13613v.f12614v));
         if (j10 != -9223372036854775807L) {
-            this.F.e(z(timeline, bVar.f46438a, j10));
+            this.F.e(z(timeline, bVar.f47006a, j10));
             return;
         }
         Object obj2 = this.f13613v.f12604d;
         if (!timeline2.u()) {
-            obj = timeline2.r(timeline2.l(bVar2.f46438a, this.f13614w).f12595i, this.f13613v).f12604d;
+            obj = timeline2.r(timeline2.l(bVar2.f47006a, this.f13614w).f12595i, this.f13613v).f12604d;
         } else {
             obj = null;
         }
@@ -1735,7 +1735,7 @@ public final class t0 implements Handler.Callback, p.a, q.a, o1.d, i.a, s1.a {
     private void q1(float f10) {
         com.google.android.exoplayer2.trackselection.g[] gVarArr;
         for (w0 r10 = this.D.r(); r10 != null; r10 = r10.j()) {
-            for (com.google.android.exoplayer2.trackselection.g gVar : r10.o().f31725c) {
+            for (com.google.android.exoplayer2.trackselection.g gVar : r10.o().f32293c) {
                 if (gVar != null) {
                     gVar.g(f10);
                 }
@@ -1756,8 +1756,8 @@ public final class t0 implements Handler.Callback, p.a, q.a, o1.d, i.a, s1.a {
                 z11 = false;
             }
             ke.r o10 = s10.o();
-            mc.r0 r0Var = o10.f31724b[i10];
-            Format[] y10 = y(o10.f31725c[i10]);
+            mc.r0 r0Var = o10.f32292b[i10];
+            Format[] y10 = y(o10.f32293c[i10]);
             if (e1() && this.I.f13383e == 3) {
                 z12 = true;
             } else {
@@ -1964,7 +1964,7 @@ public final class t0 implements Handler.Callback, p.a, q.a, o1.d, i.a, s1.a {
 
     private long x() {
         r1 r1Var = this.I;
-        return z(r1Var.f13379a, r1Var.f13380b.f46438a, r1Var.f13396r);
+        return z(r1Var.f13379a, r1Var.f13380b.f47006a, r1Var.f13396r);
     }
 
     private static g x0(Timeline timeline, r1 r1Var, h hVar, z0 z0Var, int i10, boolean z10, Timeline.d dVar, Timeline.b bVar) {
@@ -1990,7 +1990,7 @@ public final class t0 implements Handler.Callback, p.a, q.a, o1.d, i.a, s1.a {
             return new g(r1.l(), 0L, -9223372036854775807L, false, true, false);
         }
         r.b bVar3 = r1Var.f13380b;
-        Object obj = bVar3.f46438a;
+        Object obj = bVar3.f47006a;
         boolean T = T(r1Var, bVar);
         if (!r1Var.f13380b.b() && !T) {
             j10 = r1Var.f13396r;
@@ -2053,8 +2053,8 @@ public final class t0 implements Handler.Callback, p.a, q.a, o1.d, i.a, s1.a {
                 i11 = timeline.l(obj, bVar).f12595i;
                 obj = obj;
             } else if (T) {
-                r1Var.f13379a.l(bVar3.f46438a, bVar);
-                if (r1Var.f13379a.r(bVar.f12595i, dVar).f12618z == r1Var.f13379a.f(bVar3.f46438a)) {
+                r1Var.f13379a.l(bVar3.f47006a, bVar);
+                if (r1Var.f13379a.r(bVar.f12595i, dVar).f12618z == r1Var.f13379a.f(bVar3.f47006a)) {
                     Pair n10 = timeline.n(dVar, bVar, timeline.l(obj, bVar).f12595i, bVar.q() + j15);
                     obj = n10.first;
                     j12 = ((Long) n10.second).longValue();
@@ -2092,13 +2092,13 @@ public final class t0 implements Handler.Callback, p.a, q.a, o1.d, i.a, s1.a {
             j13 = j12;
         }
         r.b E = z0Var.E(timeline2, obj, j12);
-        int i14 = E.f46442e;
-        if (i14 != -1 && ((i13 = bVar3.f46442e) == -1 || i14 < i13)) {
+        int i14 = E.f47010e;
+        if (i14 != -1 && ((i13 = bVar3.f47010e) == -1 || i14 < i13)) {
             z15 = false;
         } else {
             z15 = true;
         }
-        if (bVar3.f46438a.equals(obj) && !bVar3.b() && !E.b() && z15) {
+        if (bVar3.f47006a.equals(obj) && !bVar3.b() && !E.b() && z15) {
             z19 = true;
         }
         r.b bVar4 = E;
@@ -2110,8 +2110,8 @@ public final class t0 implements Handler.Callback, p.a, q.a, o1.d, i.a, s1.a {
             if (bVar4.equals(bVar3)) {
                 j12 = r1Var.f13396r;
             } else {
-                timeline2.l(bVar4.f46438a, bVar2);
-                if (bVar4.f46440c == bVar2.n(bVar4.f46439b)) {
+                timeline2.l(bVar4.f47006a, bVar2);
+                if (bVar4.f47008c == bVar2.n(bVar4.f47007b)) {
                     j14 = bVar2.j();
                 } else {
                     j14 = 0;
@@ -2430,16 +2430,16 @@ public final class t0 implements Handler.Callback, p.a, q.a, o1.d, i.a, s1.a {
             j1(true, false);
             this.I = this.I.f(i12);
         } catch (mc.l0 e12) {
-            int i13 = e12.f36265e;
+            int i13 = e12.f36833e;
             if (i13 == 1) {
-                if (e12.f36264d) {
+                if (e12.f36832d) {
                     i10 = 3001;
                 } else {
                     i10 = 3003;
                 }
             } else {
                 if (i13 == 4) {
-                    if (e12.f36264d) {
+                    if (e12.f36832d) {
                         i10 = 3002;
                     } else {
                         i10 = 3004;
@@ -2450,11 +2450,11 @@ public final class t0 implements Handler.Callback, p.a, q.a, o1.d, i.a, s1.a {
             i11 = i10;
             G(e12, i11);
         } catch (me.m e13) {
-            G(e13, e13.f36377d);
+            G(e13, e13.f36945d);
         } catch (rd.b e14) {
             G(e14, RNCWebViewManager.COMMAND_CLEAR_HISTORY);
         } catch (n.a e15) {
-            G(e15, e15.f48034d);
+            G(e15, e15.f48602d);
         } catch (IOException e16) {
             G(e16, 2000);
         }

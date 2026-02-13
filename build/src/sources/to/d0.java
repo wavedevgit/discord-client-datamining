@@ -18,19 +18,19 @@ public interface d0 extends Parcelable {
     public static final class a {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final a f49023d = new C0667a("AUTO", 0);
+        public static final a f49591d = new C0667a("AUTO", 0);
 
         /* renamed from: e  reason: collision with root package name */
-        public static final a f49024e = new b("MANUAL", 1);
+        public static final a f49592e = new b("MANUAL", 1);
 
         /* renamed from: i  reason: collision with root package name */
-        public static final a f49025i = new c("UPLOAD", 2);
+        public static final a f49593i = new c("UPLOAD", 2);
 
         /* renamed from: o  reason: collision with root package name */
-        private static final /* synthetic */ a[] f49026o;
+        private static final /* synthetic */ a[] f49594o;
 
         /* renamed from: p  reason: collision with root package name */
-        private static final /* synthetic */ EnumEntries f49027p;
+        private static final /* synthetic */ EnumEntries f49595p;
 
         /* renamed from: to.d0$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
@@ -71,8 +71,8 @@ public interface d0 extends Parcelable {
 
         static {
             a[] a10 = a();
-            f49026o = a10;
-            f49027p = hs.a.a(a10);
+            f49594o = a10;
+            f49595p = hs.a.a(a10);
         }
 
         public /* synthetic */ a(String str, int i10, DefaultConstructorMarker defaultConstructorMarker) {
@@ -80,7 +80,7 @@ public interface d0 extends Parcelable {
         }
 
         private static final /* synthetic */ a[] a() {
-            return new a[]{f49023d, f49024e, f49025i};
+            return new a[]{f49591d, f49592e, f49593i};
         }
 
         public static a valueOf(String str) {
@@ -88,7 +88,7 @@ public interface d0 extends Parcelable {
         }
 
         public static a[] values() {
-            return (a[]) f49026o.clone();
+            return (a[]) f49594o.clone();
         }
 
         private a(String str, int i10) {
@@ -101,16 +101,16 @@ public interface d0 extends Parcelable {
         public static final Parcelable.Creator<c> CREATOR = new a();
 
         /* renamed from: d  reason: collision with root package name */
-        private final List f49034d;
+        private final List f49602d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final d f49035e;
+        private final d f49603e;
 
         /* renamed from: i  reason: collision with root package name */
-        private final String f49036i;
+        private final String f49604i;
 
         /* renamed from: o  reason: collision with root package name */
-        private final a f49037o;
+        private final a f49605o;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         public static final class a implements Parcelable.Creator {
@@ -138,15 +138,15 @@ public interface d0 extends Parcelable {
             Intrinsics.checkNotNullParameter(side, "side");
             Intrinsics.checkNotNullParameter(idClassKey, "idClassKey");
             Intrinsics.checkNotNullParameter(captureMethod, "captureMethod");
-            this.f49034d = frames;
-            this.f49035e = side;
-            this.f49036i = idClassKey;
-            this.f49037o = captureMethod;
+            this.f49602d = frames;
+            this.f49603e = side;
+            this.f49604i = idClassKey;
+            this.f49605o = captureMethod;
         }
 
         @Override // to.d0
         public d V0() {
-            return this.f49035e;
+            return this.f49603e;
         }
 
         @Override // android.os.Parcelable
@@ -162,7 +162,7 @@ public interface d0 extends Parcelable {
                 return false;
             }
             c cVar = (c) obj;
-            if (Intrinsics.areEqual(this.f49034d, cVar.f49034d) && this.f49035e == cVar.f49035e && Intrinsics.areEqual(this.f49036i, cVar.f49036i) && this.f49037o == cVar.f49037o) {
+            if (Intrinsics.areEqual(this.f49602d, cVar.f49602d) && this.f49603e == cVar.f49603e && Intrinsics.areEqual(this.f49604i, cVar.f49604i) && this.f49605o == cVar.f49605o) {
                 return true;
             }
             return false;
@@ -170,42 +170,42 @@ public interface d0 extends Parcelable {
 
         @Override // to.d0
         public a g2() {
-            return this.f49037o;
+            return this.f49605o;
         }
 
         public int hashCode() {
-            return (((((this.f49034d.hashCode() * 31) + this.f49035e.hashCode()) * 31) + this.f49036i.hashCode()) * 31) + this.f49037o.hashCode();
+            return (((((this.f49602d.hashCode() * 31) + this.f49603e.hashCode()) * 31) + this.f49604i.hashCode()) * 31) + this.f49605o.hashCode();
         }
 
         @Override // to.d0
         public List m2() {
-            return this.f49034d;
+            return this.f49602d;
         }
 
         public String toString() {
-            List list = this.f49034d;
-            d dVar = this.f49035e;
-            String str = this.f49036i;
-            a aVar = this.f49037o;
+            List list = this.f49602d;
+            d dVar = this.f49603e;
+            String str = this.f49604i;
+            a aVar = this.f49605o;
             return "GovernmentIdVideo(frames=" + list + ", side=" + dVar + ", idClassKey=" + str + ", captureMethod=" + aVar + ")";
         }
 
         @Override // to.d0
         public String w1() {
-            return this.f49036i;
+            return this.f49604i;
         }
 
         @Override // android.os.Parcelable
         public final void writeToParcel(Parcel dest, int i10) {
             Intrinsics.checkNotNullParameter(dest, "dest");
-            List<c0> list = this.f49034d;
+            List<c0> list = this.f49602d;
             dest.writeInt(list.size());
             for (c0 c0Var : list) {
                 c0Var.writeToParcel(dest, i10);
             }
-            dest.writeString(this.f49035e.name());
-            dest.writeString(this.f49036i);
-            dest.writeString(this.f49037o.name());
+            dest.writeString(this.f49603e.name());
+            dest.writeString(this.f49604i);
+            dest.writeString(this.f49605o.name());
         }
     }
 
@@ -215,31 +215,31 @@ public interface d0 extends Parcelable {
     public static final class d {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final d f49038d = new d("FRONT", 0);
+        public static final d f49606d = new d("FRONT", 0);
 
         /* renamed from: e  reason: collision with root package name */
-        public static final d f49039e = new d("BACK", 1);
+        public static final d f49607e = new d("BACK", 1);
 
         /* renamed from: i  reason: collision with root package name */
-        public static final d f49040i = new d("FRONT_AND_BACK", 2);
+        public static final d f49608i = new d("FRONT_AND_BACK", 2);
 
         /* renamed from: o  reason: collision with root package name */
-        private static final /* synthetic */ d[] f49041o;
+        private static final /* synthetic */ d[] f49609o;
 
         /* renamed from: p  reason: collision with root package name */
-        private static final /* synthetic */ EnumEntries f49042p;
+        private static final /* synthetic */ EnumEntries f49610p;
 
         static {
             d[] a10 = a();
-            f49041o = a10;
-            f49042p = hs.a.a(a10);
+            f49609o = a10;
+            f49610p = hs.a.a(a10);
         }
 
         private d(String str, int i10) {
         }
 
         private static final /* synthetic */ d[] a() {
-            return new d[]{f49038d, f49039e, f49040i};
+            return new d[]{f49606d, f49607e, f49608i};
         }
 
         public static d valueOf(String str) {
@@ -247,7 +247,7 @@ public interface d0 extends Parcelable {
         }
 
         public static d[] values() {
-            return (d[]) f49041o.clone();
+            return (d[]) f49609o.clone();
         }
     }
 
@@ -265,22 +265,22 @@ public interface d0 extends Parcelable {
         public static final Parcelable.Creator<b> CREATOR = new a();
 
         /* renamed from: d  reason: collision with root package name */
-        private final List f49028d;
+        private final List f49596d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final d f49029e;
+        private final d f49597e;
 
         /* renamed from: i  reason: collision with root package name */
-        private final String f49030i;
+        private final String f49598i;
 
         /* renamed from: o  reason: collision with root package name */
-        private final a f49031o;
+        private final a f49599o;
 
         /* renamed from: p  reason: collision with root package name */
-        private final RawExtraction f49032p;
+        private final RawExtraction f49600p;
 
         /* renamed from: q  reason: collision with root package name */
-        private final k0 f49033q;
+        private final k0 f49601q;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         public static final class a implements Parcelable.Creator {
@@ -322,32 +322,32 @@ public interface d0 extends Parcelable {
             Intrinsics.checkNotNullParameter(side, "side");
             Intrinsics.checkNotNullParameter(idClassKey, "idClassKey");
             Intrinsics.checkNotNullParameter(captureMethod, "captureMethod");
-            this.f49028d = frames;
-            this.f49029e = side;
-            this.f49030i = idClassKey;
-            this.f49031o = captureMethod;
-            this.f49032p = rawExtraction;
-            this.f49033q = k0Var;
+            this.f49596d = frames;
+            this.f49597e = side;
+            this.f49598i = idClassKey;
+            this.f49599o = captureMethod;
+            this.f49600p = rawExtraction;
+            this.f49601q = k0Var;
         }
 
         public static /* synthetic */ b b(b bVar, List list, d dVar, String str, a aVar, RawExtraction rawExtraction, k0 k0Var, int i10, Object obj) {
             if ((i10 & 1) != 0) {
-                list = bVar.f49028d;
+                list = bVar.f49596d;
             }
             if ((i10 & 2) != 0) {
-                dVar = bVar.f49029e;
+                dVar = bVar.f49597e;
             }
             if ((i10 & 4) != 0) {
-                str = bVar.f49030i;
+                str = bVar.f49598i;
             }
             if ((i10 & 8) != 0) {
-                aVar = bVar.f49031o;
+                aVar = bVar.f49599o;
             }
             if ((i10 & 16) != 0) {
-                rawExtraction = bVar.f49032p;
+                rawExtraction = bVar.f49600p;
             }
             if ((i10 & 32) != 0) {
-                k0Var = bVar.f49033q;
+                k0Var = bVar.f49601q;
             }
             RawExtraction rawExtraction2 = rawExtraction;
             k0 k0Var2 = k0Var;
@@ -356,7 +356,7 @@ public interface d0 extends Parcelable {
 
         @Override // to.d0
         public d V0() {
-            return this.f49029e;
+            return this.f49597e;
         }
 
         public final b a(List frames, d side, String idClassKey, a captureMethod, RawExtraction rawExtraction, k0 k0Var) {
@@ -368,11 +368,11 @@ public interface d0 extends Parcelable {
         }
 
         public final k0 c() {
-            return this.f49033q;
+            return this.f49601q;
         }
 
         public final RawExtraction d() {
-            return this.f49032p;
+            return this.f49600p;
         }
 
         @Override // android.os.Parcelable
@@ -388,7 +388,7 @@ public interface d0 extends Parcelable {
                 return false;
             }
             b bVar = (b) obj;
-            if (Intrinsics.areEqual(this.f49028d, bVar.f49028d) && this.f49029e == bVar.f49029e && Intrinsics.areEqual(this.f49030i, bVar.f49030i) && this.f49031o == bVar.f49031o && Intrinsics.areEqual(this.f49032p, bVar.f49032p) && Intrinsics.areEqual(this.f49033q, bVar.f49033q)) {
+            if (Intrinsics.areEqual(this.f49596d, bVar.f49596d) && this.f49597e == bVar.f49597e && Intrinsics.areEqual(this.f49598i, bVar.f49598i) && this.f49599o == bVar.f49599o && Intrinsics.areEqual(this.f49600p, bVar.f49600p) && Intrinsics.areEqual(this.f49601q, bVar.f49601q)) {
                 return true;
             }
             return false;
@@ -396,13 +396,13 @@ public interface d0 extends Parcelable {
 
         @Override // to.d0
         public a g2() {
-            return this.f49031o;
+            return this.f49599o;
         }
 
         public int hashCode() {
             int hashCode;
-            int hashCode2 = ((((((this.f49028d.hashCode() * 31) + this.f49029e.hashCode()) * 31) + this.f49030i.hashCode()) * 31) + this.f49031o.hashCode()) * 31;
-            RawExtraction rawExtraction = this.f49032p;
+            int hashCode2 = ((((((this.f49596d.hashCode() * 31) + this.f49597e.hashCode()) * 31) + this.f49598i.hashCode()) * 31) + this.f49599o.hashCode()) * 31;
+            RawExtraction rawExtraction = this.f49600p;
             int i10 = 0;
             if (rawExtraction == null) {
                 hashCode = 0;
@@ -410,7 +410,7 @@ public interface d0 extends Parcelable {
                 hashCode = rawExtraction.hashCode();
             }
             int i11 = (hashCode2 + hashCode) * 31;
-            k0 k0Var = this.f49033q;
+            k0 k0Var = this.f49601q;
             if (k0Var != null) {
                 i10 = k0Var.hashCode();
             }
@@ -419,43 +419,43 @@ public interface d0 extends Parcelable {
 
         @Override // to.d0
         public List m2() {
-            return this.f49028d;
+            return this.f49596d;
         }
 
         public String toString() {
-            List list = this.f49028d;
-            d dVar = this.f49029e;
-            String str = this.f49030i;
-            a aVar = this.f49031o;
-            RawExtraction rawExtraction = this.f49032p;
-            k0 k0Var = this.f49033q;
+            List list = this.f49596d;
+            d dVar = this.f49597e;
+            String str = this.f49598i;
+            a aVar = this.f49599o;
+            RawExtraction rawExtraction = this.f49600p;
+            k0 k0Var = this.f49601q;
             return "GovernmentIdImage(frames=" + list + ", side=" + dVar + ", idClassKey=" + str + ", captureMethod=" + aVar + ", rawExtraction=" + rawExtraction + ", idDetails=" + k0Var + ")";
         }
 
         @Override // to.d0
         public String w1() {
-            return this.f49030i;
+            return this.f49598i;
         }
 
         @Override // android.os.Parcelable
         public final void writeToParcel(Parcel dest, int i10) {
             Intrinsics.checkNotNullParameter(dest, "dest");
-            List<c0> list = this.f49028d;
+            List<c0> list = this.f49596d;
             dest.writeInt(list.size());
             for (c0 c0Var : list) {
                 c0Var.writeToParcel(dest, i10);
             }
-            dest.writeString(this.f49029e.name());
-            dest.writeString(this.f49030i);
-            dest.writeString(this.f49031o.name());
-            RawExtraction rawExtraction = this.f49032p;
+            dest.writeString(this.f49597e.name());
+            dest.writeString(this.f49598i);
+            dest.writeString(this.f49599o.name());
+            RawExtraction rawExtraction = this.f49600p;
             if (rawExtraction == null) {
                 dest.writeInt(0);
             } else {
                 dest.writeInt(1);
                 rawExtraction.writeToParcel(dest, i10);
             }
-            k0 k0Var = this.f49033q;
+            k0 k0Var = this.f49601q;
             if (k0Var == null) {
                 dest.writeInt(0);
                 return;

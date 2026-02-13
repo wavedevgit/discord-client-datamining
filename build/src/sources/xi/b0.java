@@ -4,7 +4,7 @@ package xi;
 public class b0 implements ij.b {
 
     /* renamed from: c  reason: collision with root package name */
-    private static final ij.a f54796c = new ij.a() { // from class: xi.z
+    private static final ij.a f55364c = new ij.a() { // from class: xi.z
         @Override // ij.a
         public final void a(ij.b bVar) {
             b0.b(bVar);
@@ -12,7 +12,7 @@ public class b0 implements ij.b {
     };
 
     /* renamed from: d  reason: collision with root package name */
-    private static final ij.b f54797d = new ij.b() { // from class: xi.a0
+    private static final ij.b f55365d = new ij.b() { // from class: xi.a0
         @Override // ij.b
         public final Object get() {
             return b0.a();
@@ -20,14 +20,14 @@ public class b0 implements ij.b {
     };
 
     /* renamed from: a  reason: collision with root package name */
-    private ij.a f54798a;
+    private ij.a f55366a;
 
     /* renamed from: b  reason: collision with root package name */
-    private volatile ij.b f54799b;
+    private volatile ij.b f55367b;
 
     private b0(ij.a aVar, ij.b bVar) {
-        this.f54798a = aVar;
-        this.f54799b = bVar;
+        this.f55366a = aVar;
+        this.f55367b = bVar;
     }
 
     public static /* synthetic */ Object a() {
@@ -39,17 +39,17 @@ public class b0 implements ij.b {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static b0 c() {
-        return new b0(f54796c, f54797d);
+        return new b0(f55364c, f55365d);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void d(ij.b bVar) {
         ij.a aVar;
-        if (this.f54799b == f54797d) {
+        if (this.f55367b == f55365d) {
             synchronized (this) {
-                aVar = this.f54798a;
-                this.f54798a = null;
-                this.f54799b = bVar;
+                aVar = this.f55366a;
+                this.f55366a = null;
+                this.f55367b = bVar;
             }
             aVar.a(bVar);
             return;
@@ -59,6 +59,6 @@ public class b0 implements ij.b {
 
     @Override // ij.b
     public Object get() {
-        return this.f54799b.get();
+        return this.f55367b.get();
     }
 }

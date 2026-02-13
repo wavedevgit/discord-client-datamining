@@ -16,10 +16,10 @@ public abstract class i2 {
     public /* synthetic */ class a {
 
         /* renamed from: a */
-        public static final /* synthetic */ int[] f42972a;
+        public static final /* synthetic */ int[] f43540a;
 
         /* renamed from: b */
-        public static final /* synthetic */ int[] f42973b;
+        public static final /* synthetic */ int[] f43541b;
 
         static {
             int[] iArr = new int[InputText.InputType.values().length];
@@ -35,7 +35,7 @@ public abstract class i2 {
                 iArr[InputText.InputType.NUMBER_PAD.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
-            f42972a = iArr;
+            f43540a = iArr;
             int[] iArr2 = new int[InputText.AutofillHint.values().length];
             try {
                 iArr2[InputText.AutofillHint.NAME.ordinal()] = 1;
@@ -77,7 +77,7 @@ public abstract class i2 {
                 iArr2[InputText.AutofillHint.POSTAL_CODE.ordinal()] = 10;
             } catch (NoSuchFieldError unused13) {
             }
-            f42973b = iArr2;
+            f43541b = iArr2;
         }
     }
 
@@ -88,23 +88,23 @@ public abstract class i2 {
         Intrinsics.checkNotNullParameter(config, "config");
         Intrinsics.checkNotNullParameter(textController, "textController");
         final sq.o c10 = sq.o.c(uiComponentHelper.b());
-        TextInputEditText editText = c10.f48268b;
+        TextInputEditText editText = c10.f48836b;
         Intrinsics.checkNotNullExpressionValue(editText, "editText");
         gn.u.b(textController, editText);
         InputText.Attributes attributes = config.getAttributes();
         if (attributes != null) {
             String label = attributes.getLabel();
             if (label != null) {
-                c10.f48269c.setHint(label);
+                c10.f48837c.setHint(label);
             }
             String placeholder = attributes.getPlaceholder();
             if (placeholder != null) {
-                c10.f48269c.setPlaceholderText(placeholder);
-                TextInputLayout inputLayout = c10.f48269c;
+                c10.f48837c.setPlaceholderText(placeholder);
+                TextInputLayout inputLayout = c10.f48837c;
                 Intrinsics.checkNotNullExpressionValue(inputLayout, "inputLayout");
                 lq.o.a(inputLayout);
             }
-            c10.f48268b.setInputType(e(attributes.getInputType()));
+            c10.f48836b.setInputType(e(attributes.getInputType()));
             if (Build.VERSION.SDK_INT >= 26) {
                 InputText.AutofillHint autofillHint = attributes.getAutofillHint();
                 if (autofillHint != null) {
@@ -112,7 +112,7 @@ public abstract class i2 {
                 } else {
                     str = null;
                 }
-                c10.f48269c.setAutofillHints(new String[]{str});
+                c10.f48837c.setAutofillHints(new String[]{str});
             }
         }
         uiComponentHelper.d(new Function0() { // from class: pq.h2
@@ -138,15 +138,15 @@ public abstract class i2 {
     public static final Unit d(InputText inputText, sq.o oVar) {
         InputTextBasedComponentStyle styles = inputText.getStyles();
         if (styles != null) {
-            TextInputLayout inputLayout = oVar.f48269c;
+            TextInputLayout inputLayout = oVar.f48837c;
             Intrinsics.checkNotNullExpressionValue(inputLayout, "inputLayout");
             uq.a0.k(inputLayout, styles);
         }
-        return Unit.f31988a;
+        return Unit.f32556a;
     }
 
     private static final int e(InputText.InputType inputType) {
-        int i10 = a.f42972a[inputType.ordinal()];
+        int i10 = a.f43540a[inputType.ordinal()];
         if (i10 == 1) {
             return 1;
         }
@@ -160,7 +160,7 @@ public abstract class i2 {
     }
 
     private static final String f(InputText.AutofillHint autofillHint) {
-        switch (a.f42973b[autofillHint.ordinal()]) {
+        switch (a.f43541b[autofillHint.ordinal()]) {
             case 1:
                 return "personName";
             case 2:

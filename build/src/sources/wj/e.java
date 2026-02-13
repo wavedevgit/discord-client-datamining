@@ -6,18 +6,18 @@ import java.util.Map;
 public abstract class e {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Map f52781a = new HashMap();
+    private final Map f53349a = new HashMap();
 
     protected abstract Object a(Object obj);
 
     public Object b(Object obj) {
-        synchronized (this.f52781a) {
+        synchronized (this.f53349a) {
             try {
-                if (this.f52781a.containsKey(obj)) {
-                    return this.f52781a.get(obj);
+                if (this.f53349a.containsKey(obj)) {
+                    return this.f53349a.get(obj);
                 }
                 Object a10 = a(obj);
-                this.f52781a.put(obj, a10);
+                this.f53349a.put(obj, a10);
                 return a10;
             } catch (Throwable th2) {
                 throw th2;

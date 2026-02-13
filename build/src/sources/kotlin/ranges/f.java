@@ -5,7 +5,7 @@ import kotlin.jvm.internal.Intrinsics;
 import kotlin.ranges.a;
 import kotlin.ranges.b;
 /* JADX INFO: Access modifiers changed from: package-private */
-/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public class f extends e {
     public static double b(double d10, double d11) {
         return d10 < d11 ? d11 : d10;
@@ -115,7 +115,7 @@ public class f extends e {
     }
 
     public static a p(int i10, int i11) {
-        return a.f32082o.a(i10, i11, -1);
+        return a.f32650o.a(i10, i11, -1);
     }
 
     public static int q(IntRange intRange, kotlin.random.c random) {
@@ -130,7 +130,7 @@ public class f extends e {
 
     public static a r(a aVar) {
         Intrinsics.checkNotNullParameter(aVar, "<this>");
-        return a.f32082o.a(aVar.e(), aVar.d(), -aVar.f());
+        return a.f32650o.a(aVar.e(), aVar.d(), -aVar.f());
     }
 
     public static a s(a aVar, int i10) {
@@ -142,7 +142,7 @@ public class f extends e {
             z10 = false;
         }
         e.a(z10, Integer.valueOf(i10));
-        a.C0453a c0453a = a.f32082o;
+        a.C0453a c0453a = a.f32650o;
         int d10 = aVar.d();
         int e10 = aVar.e();
         if (aVar.f() <= 0) {
@@ -160,7 +160,7 @@ public class f extends e {
             z10 = false;
         }
         e.a(z10, Long.valueOf(j10));
-        b.a aVar = b.f32086o;
+        b.a aVar = b.f32654o;
         long d10 = bVar.d();
         long e10 = bVar.e();
         if (bVar.f() <= 0) {
@@ -171,21 +171,21 @@ public class f extends e {
 
     public static IntRange u(int i10, int i11) {
         if (i11 <= Integer.MIN_VALUE) {
-            return IntRange.f32080p.a();
+            return IntRange.f32648p.a();
         }
         return new IntRange(i10, i11 - 1);
     }
 
     public static c v(int i10, long j10) {
         if (j10 <= Long.MIN_VALUE) {
-            return c.f32090p.a();
+            return c.f32658p.a();
         }
         return new c(i10, j10 - 1);
     }
 
     public static c w(long j10, long j11) {
         if (j11 <= Long.MIN_VALUE) {
-            return c.f32090p.a();
+            return c.f32658p.a();
         }
         return new c(j10, j11 - 1);
     }

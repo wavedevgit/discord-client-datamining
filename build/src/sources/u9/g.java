@@ -29,79 +29,79 @@ import u9.l;
 public final class g implements j {
 
     /* renamed from: n  reason: collision with root package name */
-    public static final b f50543n = new b(null);
+    public static final b f51111n = new b(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final PlatformBitmapFactory f50544a;
+    private final PlatformBitmapFactory f51112a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final q9.c f50545b;
+    private final q9.c f51113b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final t9.c f50546c;
+    private final t9.c f51114c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final p9.d f50547d;
+    private final p9.d f51115d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final int f50548e;
+    private final int f51116e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final int f50549f;
+    private final int f51117f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final ConcurrentHashMap f50550g;
+    private final ConcurrentHashMap f51118g;
 
     /* renamed from: h  reason: collision with root package name */
-    private volatile int f50551h;
+    private volatile int f51119h;
 
     /* renamed from: i  reason: collision with root package name */
-    private volatile boolean f50552i;
+    private volatile boolean f51120i;
 
     /* renamed from: j  reason: collision with root package name */
-    private final h f50553j;
+    private final h f51121j;
 
     /* renamed from: k  reason: collision with root package name */
-    private int f50554k;
+    private int f51122k;
 
     /* renamed from: l  reason: collision with root package name */
-    private Map f50555l;
+    private Map f51123l;
 
     /* renamed from: m  reason: collision with root package name */
-    private Set f50556m;
+    private Set f51124m;
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final CloseableReference f50557a;
+        private final CloseableReference f51125a;
 
         /* renamed from: b  reason: collision with root package name */
-        private boolean f50558b;
+        private boolean f51126b;
 
         public a(CloseableReference bitmapRef) {
             Intrinsics.checkNotNullParameter(bitmapRef, "bitmapRef");
-            this.f50557a = bitmapRef;
+            this.f51125a = bitmapRef;
         }
 
         public final CloseableReference a() {
-            return this.f50557a;
+            return this.f51125a;
         }
 
         public final boolean b() {
-            if (!this.f50558b && this.f50557a.z0()) {
+            if (!this.f51126b && this.f51125a.z0()) {
                 return true;
             }
             return false;
         }
 
         public final void c() {
-            CloseableReference.z(this.f50557a);
+            CloseableReference.z(this.f51125a);
         }
 
         public final void d(boolean z10) {
-            this.f50558b = z10;
+            this.f51126b = z10;
         }
     }
 
@@ -120,20 +120,20 @@ public final class g implements j {
         Intrinsics.checkNotNullParameter(bitmapFrameRenderer, "bitmapFrameRenderer");
         Intrinsics.checkNotNullParameter(fpsCompressor, "fpsCompressor");
         Intrinsics.checkNotNullParameter(animationInformation, "animationInformation");
-        this.f50544a = platformBitmapFactory;
-        this.f50545b = bitmapFrameRenderer;
-        this.f50546c = fpsCompressor;
-        this.f50547d = animationInformation;
-        this.f50548e = i10;
+        this.f51112a = platformBitmapFactory;
+        this.f51113b = bitmapFrameRenderer;
+        this.f51114c = fpsCompressor;
+        this.f51115d = animationInformation;
+        this.f51116e = i10;
         int d10 = kotlin.ranges.d.d((k(l()) * i10) / 1000, 1);
-        this.f50549f = d10;
-        this.f50550g = new ConcurrentHashMap();
-        this.f50553j = new h(l().a());
-        this.f50554k = -1;
-        this.f50555l = o0.i();
-        this.f50556m = x0.d();
+        this.f51117f = d10;
+        this.f51118g = new ConcurrentHashMap();
+        this.f51121j = new h(l().a());
+        this.f51122k = -1;
+        this.f51123l = o0.i();
+        this.f51124m = x0.d();
         d(k(l()));
-        this.f50551h = (int) (d10 * 0.5f);
+        this.f51119h = (int) (d10 * 0.5f);
     }
 
     private final void f(CloseableReference closeableReference) {
@@ -147,19 +147,19 @@ public final class g implements j {
         CloseableReference closeableReference;
         CloseableReference a10;
         ArrayList<Number> arrayList = new ArrayList();
-        for (Object obj : this.f50553j.d(i10, this.f50549f)) {
-            if (this.f50556m.contains(Integer.valueOf(((Number) obj).intValue()))) {
+        for (Object obj : this.f51121j.d(i10, this.f51117f)) {
+            if (this.f51124m.contains(Integer.valueOf(((Number) obj).intValue()))) {
                 arrayList.add(obj);
             }
         }
         Set l12 = CollectionsKt.l1(arrayList);
-        Set keySet = this.f50550g.keySet();
+        Set keySet = this.f51118g.keySet();
         Intrinsics.checkNotNullExpressionValue(keySet, "<get-keys>(...)");
         ArrayDeque arrayDeque = new ArrayDeque(x0.j(keySet, l12));
         for (Number number : arrayList) {
             int intValue2 = number.intValue();
-            if (this.f50550g.get(Integer.valueOf(intValue2)) == null) {
-                int i14 = this.f50554k;
+            if (this.f51118g.get(Integer.valueOf(intValue2)) == null) {
+                int i14 = this.f51122k;
                 int i15 = -1;
                 if (i14 != -1 && !l12.contains(Integer.valueOf(i14))) {
                     return false;
@@ -168,14 +168,14 @@ public final class g implements j {
                 if (num != null) {
                     i15 = num.intValue();
                 }
-                a aVar = (a) this.f50550g.get(Integer.valueOf(i15));
+                a aVar = (a) this.f51118g.get(Integer.valueOf(i15));
                 if (aVar != null && (a10 = aVar.a()) != null) {
                     closeableReference = a10.m();
                 } else {
                     closeableReference = null;
                 }
                 if (closeableReference == null) {
-                    CloseableReference a11 = this.f50544a.a(i11, i12);
+                    CloseableReference a11 = this.f51112a.a(i11, i12);
                     Intrinsics.checkNotNullExpressionValue(a11, "createBitmap(...)");
                     aVar = new a(a11);
                     closeableReference = aVar.a().clone();
@@ -183,22 +183,22 @@ public final class g implements j {
                 aVar.d(true);
                 try {
                     o(closeableReference, intValue2, i11, i12);
-                    Unit unit = Unit.f31988a;
+                    Unit unit = Unit.f32556a;
                     ls.c.a(closeableReference, null);
-                    this.f50550g.remove(Integer.valueOf(i15));
+                    this.f51118g.remove(Integer.valueOf(i15));
                     aVar.d(false);
-                    this.f50550g.put(Integer.valueOf(intValue2), aVar);
+                    this.f51118g.put(Integer.valueOf(intValue2), aVar);
                 } finally {
                 }
             }
         }
         if (arrayList.isEmpty()) {
-            intValue = (int) (this.f50549f * 0.5f);
+            intValue = (int) (this.f51117f * 0.5f);
         } else {
             int size = arrayList.size();
             intValue = ((Number) arrayList.get(kotlin.ranges.d.m((int) (size * 0.5f), 0, size - 1))).intValue();
         }
-        this.f50551h = intValue;
+        this.f51119h = intValue;
         return true;
     }
 
@@ -211,14 +211,14 @@ public final class g implements j {
 
     private final u9.a i(int i10) {
         u9.a aVar;
-        Iterator it = new IntRange(0, this.f50553j.b()).iterator();
+        Iterator it = new IntRange(0, this.f51121j.b()).iterator();
         do {
             aVar = null;
             if (!it.hasNext()) {
                 break;
             }
-            int a10 = this.f50553j.a(i10 - ((m0) it).nextInt());
-            a aVar2 = (a) this.f50550g.get(Integer.valueOf(a10));
+            int a10 = this.f51121j.a(i10 - ((m0) it).nextInt());
+            a aVar2 = (a) this.f51118g.get(Integer.valueOf(a10));
             if (aVar2 != null) {
                 if (!aVar2.b()) {
                     aVar2 = null;
@@ -239,10 +239,10 @@ public final class g implements j {
         if (i11 != null) {
             CloseableReference clone = i11.a().clone();
             Intrinsics.checkNotNullExpressionValue(clone, "clone(...)");
-            this.f50554k = i11.h();
-            return new l(clone, l.a.f50568e);
+            this.f51122k = i11.h();
+            return new l(clone, l.a.f51136e);
         }
-        return new l(null, l.a.f50569i);
+        return new l(null, l.a.f51137i);
     }
 
     private final int k(p9.d dVar) {
@@ -250,11 +250,11 @@ public final class g implements j {
     }
 
     private final void m(final int i10, final int i11) {
-        if (this.f50552i) {
+        if (this.f51120i) {
             return;
         }
-        this.f50552i = true;
-        t9.b.f48636a.b(new Runnable() { // from class: u9.f
+        this.f51120i = true;
+        t9.b.f49204a.b(new Runnable() { // from class: u9.f
             @Override // java.lang.Runnable
             public final void run() {
                 g.n(g.this, i10, i11);
@@ -269,8 +269,8 @@ public final class g implements j {
             g gVar = this$0;
             int i12 = i10;
             int i13 = i11;
-            if (h(gVar, kotlin.ranges.d.d(this$0.f50554k, 0), i12, i13, 0, 8, null)) {
-                gVar.f50552i = false;
+            if (h(gVar, kotlin.ranges.d.d(this$0.f51122k, 0), i12, i13, 0, 8, null)) {
+                gVar.f51120i = false;
                 return;
             }
             this$0 = gVar;
@@ -293,7 +293,7 @@ public final class g implements j {
                     Iterator it = new IntRange(h10 + 1, i10).iterator();
                     while (it.hasNext()) {
                         int nextInt = ((m0) it).nextInt();
-                        q9.c cVar = this.f50545b;
+                        q9.c cVar = this.f51113b;
                         Object J2 = closeableReference.J();
                         Intrinsics.checkNotNullExpressionValue(J2, "get(...)");
                         cVar.a(nextInt, (Bitmap) J2);
@@ -301,7 +301,7 @@ public final class g implements j {
                     ls.c.a(m10, null);
                     return;
                 }
-                Unit unit = Unit.f31988a;
+                Unit unit = Unit.f32556a;
                 ls.c.a(m10, null);
             } catch (Throwable th2) {
                 try {
@@ -316,7 +316,7 @@ public final class g implements j {
         Iterator it2 = new IntRange(0, i10).iterator();
         while (it2.hasNext()) {
             int nextInt2 = ((m0) it2).nextInt();
-            q9.c cVar2 = this.f50545b;
+            q9.c cVar2 = this.f51113b;
             Object J3 = closeableReference.J();
             Intrinsics.checkNotNullExpressionValue(J3, "get(...)");
             cVar2.a(nextInt2, (Bitmap) J3);
@@ -346,19 +346,19 @@ public final class g implements j {
 
     @Override // u9.j
     public l c(int i10, int i11, int i12) {
-        Integer num = (Integer) this.f50555l.get(Integer.valueOf(i10));
+        Integer num = (Integer) this.f51123l.get(Integer.valueOf(i10));
         if (num != null) {
             int intValue = num.intValue();
-            this.f50554k = intValue;
-            a aVar = (a) this.f50550g.get(num);
+            this.f51122k = intValue;
+            a aVar = (a) this.f51118g.get(num);
             if (aVar == null || !aVar.b()) {
                 aVar = null;
             }
             if (aVar != null) {
-                if (this.f50553j.c(this.f50551h, intValue, this.f50549f)) {
+                if (this.f51121j.c(this.f51119h, intValue, this.f51117f)) {
                     m(i11, i12);
                 }
-                return new l(aVar.a().clone(), l.a.f50567d);
+                return new l(aVar.a().clone(), l.a.f51135d);
             }
             m(i11, i12);
             return j(intValue);
@@ -368,23 +368,23 @@ public final class g implements j {
 
     @Override // u9.j
     public void clear() {
-        Collection<a> values = this.f50550g.values();
+        Collection<a> values = this.f51118g.values();
         Intrinsics.checkNotNullExpressionValue(values, "<get-values>(...)");
         for (a aVar : values) {
             aVar.c();
         }
-        this.f50550g.clear();
-        this.f50554k = -1;
+        this.f51118g.clear();
+        this.f51122k = -1;
     }
 
     @Override // u9.j
     public void d(int i10) {
-        Map a10 = this.f50546c.a(l().j() * kotlin.ranges.d.d(l().b(), 1), l().a(), kotlin.ranges.d.i(i10, k(l())));
-        this.f50555l = a10;
-        this.f50556m = CollectionsKt.l1(a10.values());
+        Map a10 = this.f51114c.a(l().j() * kotlin.ranges.d.d(l().b(), 1), l().a(), kotlin.ranges.d.i(i10, k(l())));
+        this.f51123l = a10;
+        this.f51124m = CollectionsKt.l1(a10.values());
     }
 
     public p9.d l() {
-        return this.f50547d;
+        return this.f51115d;
     }
 }

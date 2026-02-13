@@ -97,7 +97,7 @@ public final class ChatInputNodeStyle {
     public static final /* synthetic */ void write$Self$chat_input_release(ChatInputNodeStyle chatInputNodeStyle, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
         Lazy[] lazyArr = $childSerializers;
         if (compositeEncoder.z(serialDescriptor, 0) || chatInputNodeStyle.fontSize != null) {
-            compositeEncoder.o(serialDescriptor, 0, p0.f50049a, chatInputNodeStyle.fontSize);
+            compositeEncoder.o(serialDescriptor, 0, p0.f50617a, chatInputNodeStyle.fontSize);
         }
         compositeEncoder.w(serialDescriptor, 1, chatInputNodeStyle.color);
         compositeEncoder.o(serialDescriptor, 2, BackgroundStyle$$serializer.INSTANCE, chatInputNodeStyle.backgroundStyle);

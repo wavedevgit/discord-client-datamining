@@ -29,46 +29,46 @@ import kotlin.jvm.internal.Lambda;
 public final class e implements k {
 
     /* renamed from: a  reason: collision with root package name */
-    private final io.sentry.android.replay.b f28915a;
+    private final io.sentry.android.replay.b f29483a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final r f28916b;
+    private final r f29484b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final k7 f28917c;
+    private final k7 f29485c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final s f28918d;
+    private final s f29486d;
 
     /* renamed from: e  reason: collision with root package name */
-    private volatile Bitmap f28919e;
+    private volatile Bitmap f29487e;
 
     /* renamed from: f  reason: collision with root package name */
-    private AtomicReference f28920f;
+    private AtomicReference f29488f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final io.sentry.util.a f28921g;
+    private final io.sentry.util.a f29489g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final Lazy f28922h;
+    private final Lazy f29490h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final AtomicBoolean f28923i;
+    private final AtomicBoolean f29491i;
 
     /* renamed from: j  reason: collision with root package name */
-    private final l f28924j;
+    private final l f29492j;
 
     /* renamed from: k  reason: collision with root package name */
-    private final AtomicBoolean f28925k;
+    private final AtomicBoolean f29493k;
 
     /* renamed from: l  reason: collision with root package name */
-    private final SurfaceTexture f28926l;
+    private final SurfaceTexture f29494l;
 
     /* renamed from: m  reason: collision with root package name */
-    private final Surface f28927m;
+    private final Surface f29495m;
 
     /* renamed from: n  reason: collision with root package name */
-    private final Runnable f28928n;
+    private final Runnable f29496n;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     static final class a extends Lambda implements Function0 {
@@ -81,7 +81,7 @@ public final class e implements k {
         public final Matrix invoke() {
             Matrix matrix = new Matrix();
             e eVar = e.this;
-            matrix.preScale(eVar.f28918d.e(), eVar.f28918d.f());
+            matrix.preScale(eVar.f29486d.e(), eVar.f29486d.f());
             return matrix;
         }
     }
@@ -90,22 +90,22 @@ public final class e implements k {
         Intrinsics.checkNotNullParameter(executor, "executor");
         Intrinsics.checkNotNullParameter(options, "options");
         Intrinsics.checkNotNullParameter(config, "config");
-        this.f28915a = executor;
-        this.f28916b = rVar;
-        this.f28917c = options;
-        this.f28918d = config;
-        this.f28920f = new AtomicReference(null);
-        this.f28921g = new io.sentry.util.a();
-        this.f28922h = as.l.a(o.f6083i, new a());
-        this.f28923i = new AtomicBoolean(false);
-        this.f28924j = new l();
-        this.f28925k = new AtomicBoolean(false);
+        this.f29483a = executor;
+        this.f29484b = rVar;
+        this.f29485c = options;
+        this.f29486d = config;
+        this.f29488f = new AtomicReference(null);
+        this.f29489g = new io.sentry.util.a();
+        this.f29490h = as.l.a(o.f6083i, new a());
+        this.f29491i = new AtomicBoolean(false);
+        this.f29492j = new l();
+        this.f29493k = new AtomicBoolean(false);
         SurfaceTexture a10 = io.sentry.android.replay.screenshot.a.a(false);
         a10.setDefaultBufferSize(config.d(), config.c());
-        this.f28926l = a10;
-        this.f28927m = new Surface(a10);
+        this.f29494l = a10;
+        this.f29495m = new Surface(a10);
         p.a("ReplayCanvasStrategy");
-        this.f28928n = new Runnable() { // from class: io.sentry.android.replay.screenshot.b
+        this.f29496n = new Runnable() { // from class: io.sentry.android.replay.screenshot.b
             @Override // java.lang.Runnable
             public final void run() {
                 e.j(e.this);
@@ -115,98 +115,98 @@ public final class e implements k {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void h(e eVar) {
-        Bitmap bitmap = eVar.f28919e;
+        Bitmap bitmap = eVar.f29487e;
         if (bitmap != null) {
             synchronized (bitmap) {
                 try {
                     if (!bitmap.isRecycled()) {
                         bitmap.recycle();
                     }
-                    Unit unit = Unit.f31988a;
+                    Unit unit = Unit.f32556a;
                 } catch (Throwable th2) {
                     throw th2;
                 }
             }
         }
-        eVar.f28927m.release();
-        eVar.f28926l.release();
+        eVar.f29495m.release();
+        eVar.f29494l.release();
     }
 
     private final Matrix i() {
-        return (Matrix) this.f28922h.getValue();
+        return (Matrix) this.f29490h.getValue();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void j(final e eVar) {
-        if (eVar.f28925k.get()) {
-            eVar.f28917c.getLogger().c(SentryLevel.DEBUG, "Canvas Strategy already closed, skipping picture render", new Object[0]);
+        if (eVar.f29493k.get()) {
+            eVar.f29485c.getLogger().c(SentryLevel.DEBUG, "Canvas Strategy already closed, skipping picture render", new Object[0]);
             return;
         }
-        Picture picture = (Picture) eVar.f28920f.getAndSet(null);
+        Picture picture = (Picture) eVar.f29488f.getAndSet(null);
         if (picture == null) {
             return;
         }
         try {
-            Canvas lockHardwareCanvas = eVar.f28927m.lockHardwareCanvas();
+            Canvas lockHardwareCanvas = eVar.f29495m.lockHardwareCanvas();
             lockHardwareCanvas.drawColor(-16777216, PorterDuff.Mode.CLEAR);
             picture.draw(lockHardwareCanvas);
-            eVar.f28927m.unlockCanvasAndPost(lockHardwareCanvas);
-            if (eVar.f28919e == null) {
-                a1 a10 = eVar.f28921g.a();
-                if (eVar.f28919e == null) {
-                    eVar.f28919e = Bitmap.createBitmap(eVar.f28918d.d(), eVar.f28918d.c(), Bitmap.Config.ARGB_8888);
+            eVar.f29495m.unlockCanvasAndPost(lockHardwareCanvas);
+            if (eVar.f29487e == null) {
+                a1 a10 = eVar.f29489g.a();
+                if (eVar.f29487e == null) {
+                    eVar.f29487e = Bitmap.createBitmap(eVar.f29486d.d(), eVar.f29486d.c(), Bitmap.Config.ARGB_8888);
                 }
-                Unit unit = Unit.f31988a;
+                Unit unit = Unit.f32556a;
                 ms.a.a(a10, null);
             }
-            if (eVar.f28925k.get()) {
-                eVar.f28917c.getLogger().c(SentryLevel.DEBUG, "Canvas Strategy already closed, skipping pixel copy request", new Object[0]);
+            if (eVar.f29493k.get()) {
+                eVar.f29485c.getLogger().c(SentryLevel.DEBUG, "Canvas Strategy already closed, skipping pixel copy request", new Object[0]);
                 return;
             }
-            Surface surface = eVar.f28927m;
-            Bitmap bitmap = eVar.f28919e;
+            Surface surface = eVar.f29495m;
+            Bitmap bitmap = eVar.f29487e;
             Intrinsics.checkNotNull(bitmap);
             PixelCopy.request(surface, bitmap, new PixelCopy.OnPixelCopyFinishedListener() { // from class: io.sentry.android.replay.screenshot.d
                 @Override // android.view.PixelCopy.OnPixelCopyFinishedListener
                 public final void onPixelCopyFinished(int i10) {
                     e.k(e.this, i10);
                 }
-            }, eVar.f28915a.m());
+            }, eVar.f29483a.m());
         } catch (Throwable th2) {
-            eVar.f28917c.getLogger().b(SentryLevel.ERROR, "Canvas Strategy: picture render failed", th2);
-            eVar.f28923i.set(false);
+            eVar.f29485c.getLogger().b(SentryLevel.ERROR, "Canvas Strategy: picture render failed", th2);
+            eVar.f29491i.set(false);
         }
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void k(e eVar, int i10) {
         r rVar;
-        if (eVar.f28925k.get()) {
-            eVar.f28917c.getLogger().c(SentryLevel.DEBUG, "CanvasStrategy is closed, ignoring capture result", new Object[0]);
+        if (eVar.f29493k.get()) {
+            eVar.f29485c.getLogger().c(SentryLevel.DEBUG, "CanvasStrategy is closed, ignoring capture result", new Object[0]);
         } else if (i10 == 0) {
-            eVar.f28923i.set(true);
-            Bitmap bitmap = eVar.f28919e;
-            if (bitmap != null && !bitmap.isRecycled() && (rVar = eVar.f28916b) != null) {
+            eVar.f29491i.set(true);
+            Bitmap bitmap = eVar.f29487e;
+            if (bitmap != null && !bitmap.isRecycled() && (rVar = eVar.f29484b) != null) {
                 rVar.m(bitmap);
             }
         } else {
-            ILogger logger = eVar.f28917c.getLogger();
+            ILogger logger = eVar.f29485c.getLogger();
             SentryLevel sentryLevel = SentryLevel.ERROR;
             logger.c(sentryLevel, "Canvas Strategy: PixelCopy failed with code " + i10, new Object[0]);
-            eVar.f28923i.set(false);
+            eVar.f29491i.set(false);
         }
     }
 
     @Override // io.sentry.android.replay.screenshot.k
     public boolean a() {
-        return this.f28923i.get();
+        return this.f29491i.get();
     }
 
     @Override // io.sentry.android.replay.screenshot.k
     public void b() {
         Bitmap bitmap;
         r rVar;
-        if (a() && (bitmap = this.f28919e) != null && !bitmap.isRecycled() && (rVar = this.f28916b) != null) {
+        if (a() && (bitmap = this.f29487e) != null && !bitmap.isRecycled() && (rVar = this.f29484b) != null) {
             rVar.m(bitmap);
         }
     }
@@ -214,31 +214,31 @@ public final class e implements k {
     @Override // io.sentry.android.replay.screenshot.k
     public void c(View root) {
         Intrinsics.checkNotNullParameter(root, "root");
-        if (!this.f28925k.get()) {
+        if (!this.f29493k.get()) {
             Picture picture = new Picture();
-            Canvas beginRecording = picture.beginRecording(this.f28918d.d(), this.f28918d.c());
+            Canvas beginRecording = picture.beginRecording(this.f29486d.d(), this.f29486d.c());
             Intrinsics.checkNotNullExpressionValue(beginRecording, "beginRecording(...)");
-            this.f28924j.e(beginRecording);
-            this.f28924j.setMatrix(i());
-            root.draw(this.f28924j);
+            this.f29492j.e(beginRecording);
+            this.f29492j.setMatrix(i());
+            root.draw(this.f29492j);
             picture.endRecording();
-            if (!this.f28925k.get()) {
-                this.f28920f.set(picture);
-                l(this.f28915a.m(), new io.sentry.android.replay.util.j("screenshot_recorder.canvas", this.f28928n));
+            if (!this.f29493k.get()) {
+                this.f29488f.set(picture);
+                l(this.f29483a.m(), new io.sentry.android.replay.util.j("screenshot_recorder.canvas", this.f29496n));
             }
         }
     }
 
     @Override // io.sentry.android.replay.screenshot.k
     public void close() {
-        this.f28925k.set(true);
-        l(this.f28915a.m(), new io.sentry.android.replay.util.j("CanvasStrategy.close", new Runnable() { // from class: io.sentry.android.replay.screenshot.c
+        this.f29493k.set(true);
+        l(this.f29483a.m(), new io.sentry.android.replay.util.j("CanvasStrategy.close", new Runnable() { // from class: io.sentry.android.replay.screenshot.c
             @Override // java.lang.Runnable
             public final void run() {
                 e.h(e.this);
             }
         }));
-        this.f28920f.getAndSet(null);
+        this.f29488f.getAndSet(null);
     }
 
     public final void l(Handler handler, io.sentry.android.replay.util.j runnable) {
@@ -247,7 +247,7 @@ public final class e implements k {
         try {
             handler.post(runnable);
         } catch (Throwable th2) {
-            ILogger logger = this.f28917c.getLogger();
+            ILogger logger = this.f29485c.getLogger();
             SentryLevel sentryLevel = SentryLevel.ERROR;
             logger.b(sentryLevel, "Canvas Strategy: failed to post runnable " + runnable.a(), th2);
         }

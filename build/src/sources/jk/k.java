@@ -4,18 +4,18 @@ package jk;
 public abstract class k {
 
     /* renamed from: a  reason: collision with root package name */
-    static final Class f31105a = c();
+    static final Class f31673a = c();
 
     public static l a() {
         l b10 = b("getEmptyRegistry");
         if (b10 != null) {
             return b10;
         }
-        return l.f31109d;
+        return l.f31677d;
     }
 
     private static final l b(String str) {
-        Class cls = f31105a;
+        Class cls = f31673a;
         if (cls == null) {
             return null;
         }

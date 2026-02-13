@@ -6,10 +6,10 @@ import ys.w0;
 final class u implements w0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final d1 f35064d;
+    private final d1 f35632d;
 
     public u(d1 d1Var) {
-        this.f35064d = d1Var;
+        this.f35632d = d1Var;
     }
 
     @Override // ys.w0
@@ -19,7 +19,7 @@ final class u implements w0 {
 
     @Override // ys.w0
     public d1 b() {
-        return this.f35064d;
+        return this.f35632d;
     }
 
     public String toString() {

@@ -5,30 +5,30 @@ import bj.c;
 final class v4 implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final v4 f42551a = new v4();
+    static final v4 f43119a = new v4();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final bj.c f42552b;
+    private static final bj.c f43120b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final bj.c f42553c;
+    private static final bj.c f43121c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final bj.c f42554d;
+    private static final bj.c f43122d;
 
     static {
         c.b a10 = bj.c.a("maxLabels");
         f fVar = new f();
         fVar.a(1);
-        f42552b = a10.b(fVar.b()).a();
+        f43120b = a10.b(fVar.b()).a();
         c.b a11 = bj.c.a("confidenceThreshold");
         f fVar2 = new f();
         fVar2.a(2);
-        f42553c = a11.b(fVar2.b()).a();
+        f43121c = a11.b(fVar2.b()).a();
         c.b a12 = bj.c.a("customLocalModelOptions");
         f fVar3 = new f();
         fVar3.a(3);
-        f42554d = a12.b(fVar3.b()).a();
+        f43122d = a12.b(fVar3.b()).a();
     }
 
     private v4() {

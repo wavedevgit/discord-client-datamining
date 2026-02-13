@@ -11,39 +11,39 @@ import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.KTypeBase;
 import kotlin.sequences.Sequence;
 import kotlin.text.StringsKt;
-/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public abstract class p {
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final /* synthetic */ int[] f34837a;
+        public static final /* synthetic */ int[] f35405a;
 
         static {
             int[] iArr = new int[m.values().length];
             try {
-                iArr[m.f34828e.ordinal()] = 1;
+                iArr[m.f35396e.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                iArr[m.f34827d.ordinal()] = 2;
+                iArr[m.f35395d.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                iArr[m.f34829i.ordinal()] = 3;
+                iArr[m.f35397i.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
-            f34837a = iArr;
+            f35405a = iArr;
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public /* synthetic */ class b extends FunctionReferenceImpl implements Function1 {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final b f34838d = new b();
+        public static final b f35406d = new b();
 
         b() {
             super(1, Class.class, "getComponentType", "getComponentType()Ljava/lang/Class;", 0);
@@ -85,7 +85,7 @@ public abstract class p {
                         if (a10 == null) {
                             i10 = -1;
                         } else {
-                            i10 = a.f34837a[a10.ordinal()];
+                            i10 = a.f35405a[a10.ordinal()];
                         }
                         if (i10 != -1 && i10 != 1) {
                             if (i10 != 2 && i10 != 3) {
@@ -156,11 +156,11 @@ public abstract class p {
     private static final Type g(KTypeProjection kTypeProjection) {
         m d10 = kTypeProjection.d();
         if (d10 == null) {
-            return q.f34839i.a();
+            return q.f35407i.a();
         }
         KType c10 = kTypeProjection.c();
         Intrinsics.checkNotNull(c10);
-        int i10 = a.f34837a[d10.ordinal()];
+        int i10 = a.f35405a[d10.ordinal()];
         if (i10 != 1) {
             if (i10 != 2) {
                 if (i10 == 3) {
@@ -178,7 +178,7 @@ public abstract class p {
         if (type instanceof Class) {
             Class cls = (Class) type;
             if (cls.isArray()) {
-                Sequence q10 = kotlin.sequences.k.q(type, b.f34838d);
+                Sequence q10 = kotlin.sequences.k.q(type, b.f35406d);
                 return ((Class) kotlin.sequences.k.Q(q10)).getName() + StringsKt.F("[]", kotlin.sequences.k.C(q10));
             }
             String name = cls.getName();

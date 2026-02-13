@@ -5,7 +5,7 @@ import bj.c;
 final class za implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final za f40051a = new za();
+    static final za f40619a = new za();
 
     static {
         c.b a10 = bj.c.a("detectorMode");

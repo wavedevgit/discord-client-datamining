@@ -12,19 +12,19 @@ import kotlin.jvm.internal.Intrinsics;
 public final class p {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final a f47512d = new a(null);
+    public static final a f48080d = new a(null);
 
     /* renamed from: e  reason: collision with root package name */
-    private static int f47513e = -1;
+    private static int f48081e = -1;
 
     /* renamed from: a  reason: collision with root package name */
-    private final ThemedReactContext f47514a;
+    private final ThemedReactContext f48082a;
 
     /* renamed from: b  reason: collision with root package name */
-    private rm.a f47515b = new rm.a(0.0d, 0.0d);
+    private rm.a f48083b = new rm.a(0.0d, 0.0d);
 
     /* renamed from: c  reason: collision with root package name */
-    private ViewTreeObserver.OnGlobalLayoutListener f47516c;
+    private ViewTreeObserver.OnGlobalLayoutListener f48084c;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -37,7 +37,7 @@ public final class p {
     }
 
     public p(ThemedReactContext themedReactContext) {
-        this.f47514a = themedReactContext;
+        this.f48082a = themedReactContext;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -48,13 +48,13 @@ public final class p {
     private final void e(ViewGroup viewGroup) {
         if (viewGroup != null) {
             rm.a aVar = new rm.a(om.d.a(viewGroup.getWidth()), om.d.a(viewGroup.getHeight()));
-            if (!Intrinsics.areEqual(aVar, this.f47515b)) {
-                this.f47515b = aVar;
-                ThemedReactContext themedReactContext = this.f47514a;
+            if (!Intrinsics.areEqual(aVar, this.f48083b)) {
+                this.f48083b = aVar;
+                ThemedReactContext themedReactContext = this.f48082a;
                 WritableMap createMap = Arguments.createMap();
                 createMap.putDouble("height", aVar.a());
                 createMap.putDouble("width", aVar.b());
-                Unit unit = Unit.f31988a;
+                Unit unit = Unit.f32556a;
                 Intrinsics.checkNotNullExpressionValue(createMap, "apply(...)");
                 om.g.b(themedReactContext, "KeyboardController::windowDidResize", createMap);
             }
@@ -63,19 +63,19 @@ public final class p {
 
     public final void b() {
         ViewTreeObserver viewTreeObserver;
-        ThemedReactContext themedReactContext = this.f47514a;
-        if (themedReactContext != null && f47513e != themedReactContext.hashCode()) {
-            f47513e = this.f47514a.hashCode();
-            final ViewGroup a10 = om.f.a(this.f47514a);
+        ThemedReactContext themedReactContext = this.f48082a;
+        if (themedReactContext != null && f48081e != themedReactContext.hashCode()) {
+            f48081e = this.f48082a.hashCode();
+            final ViewGroup a10 = om.f.a(this.f48082a);
             e(a10);
-            this.f47516c = new ViewTreeObserver.OnGlobalLayoutListener() { // from class: rm.o
+            this.f48084c = new ViewTreeObserver.OnGlobalLayoutListener() { // from class: rm.o
                 @Override // android.view.ViewTreeObserver.OnGlobalLayoutListener
                 public final void onGlobalLayout() {
                     p.c(p.this, a10);
                 }
             };
             if (a10 != null && (viewTreeObserver = a10.getViewTreeObserver()) != null) {
-                viewTreeObserver.addOnGlobalLayoutListener(this.f47516c);
+                viewTreeObserver.addOnGlobalLayoutListener(this.f48084c);
             }
         }
     }
@@ -83,9 +83,9 @@ public final class p {
     public final void d() {
         ViewGroup a10;
         ViewTreeObserver viewTreeObserver;
-        ThemedReactContext themedReactContext = this.f47514a;
+        ThemedReactContext themedReactContext = this.f48082a;
         if (themedReactContext != null && (a10 = om.f.a(themedReactContext)) != null && (viewTreeObserver = a10.getViewTreeObserver()) != null) {
-            viewTreeObserver.removeOnGlobalLayoutListener(this.f47516c);
+            viewTreeObserver.removeOnGlobalLayoutListener(this.f48084c);
         }
     }
 }

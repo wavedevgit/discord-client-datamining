@@ -24,7 +24,7 @@ public abstract class o1 {
         EditText editText2;
         Intrinsics.checkNotNullParameter(textInputLayout, "<this>");
         Intrinsics.checkNotNullParameter(newState, "newState");
-        Object tag = textInputLayout.getTag(nq.e.f38252b0);
+        Object tag = textInputLayout.getTag(nq.e.f38820b0);
         TextWatcher textWatcher = null;
         if (tag instanceof y3) {
             y3Var = (y3) tag;
@@ -34,7 +34,7 @@ public abstract class o1 {
         if (Intrinsics.areEqual(y3Var, newState)) {
             return;
         }
-        textInputLayout.setTag(nq.e.f38252b0, newState);
+        textInputLayout.setTag(nq.e.f38820b0, newState);
         CharSequence d10 = newState.d();
         if (d10 != null && (editText2 = textInputLayout.getEditText()) != null) {
             editText2.setText(d10);
@@ -50,7 +50,7 @@ public abstract class o1 {
         }
         if (Intrinsics.areEqual(newState.e(), Boolean.TRUE) && (b10 = newState.b()) != null) {
             textInputLayout.setEndIconMode(-1);
-            textInputLayout.setEndIconDrawable(androidx.core.content.a.e(textInputLayout.getContext(), nq.d.f38247d));
+            textInputLayout.setEndIconDrawable(androidx.core.content.a.e(textInputLayout.getContext(), nq.d.f38815d));
             textInputLayout.setEndIconContentDescription(textInputLayout.getContext().getString(tp.e.R));
             EditText editText3 = textInputLayout.getEditText();
             if (editText3 != null) {
@@ -63,7 +63,7 @@ public abstract class o1 {
                 }
             });
         }
-        Object tag2 = textInputLayout.getTag(nq.e.f38266i0);
+        Object tag2 = textInputLayout.getTag(nq.e.f38834i0);
         if (tag2 instanceof z3) {
             textWatcher = (z3) tag2;
         }
@@ -77,7 +77,7 @@ public abstract class o1 {
             if (editText4 != null) {
                 editText4.addTextChangedListener(z3Var);
             }
-            textInputLayout.setTag(nq.e.f38266i0, z3Var);
+            textInputLayout.setTag(nq.e.f38834i0, z3Var);
         }
     }
 
@@ -107,9 +107,9 @@ public abstract class o1 {
         }
         Context context = textInputLayout.getContext();
         if (z10) {
-            i10 = nq.d.f38246c;
+            i10 = nq.d.f38814c;
         } else {
-            i10 = nq.d.f38247d;
+            i10 = nq.d.f38815d;
         }
         textInputLayout.setEndIconDrawable(androidx.core.content.a.e(context, i10));
     }
@@ -120,7 +120,7 @@ public abstract class o1 {
         int i10 = 0;
         for (int i11 = 0; i11 < str.length(); i11++) {
             char charAt = str.charAt(i11);
-            x3 a10 = x3.f43146a.a(charAt);
+            x3 a10 = x3.f43714a.a(charAt);
             while (true) {
                 if (i10 < editable.length()) {
                     char charAt2 = editable.charAt(i10);
@@ -206,6 +206,6 @@ public abstract class o1 {
             Intrinsics.checkNotNullExpressionValue(root, "getRoot(...)");
             uq.a0.k(root, styles);
         }
-        return Unit.f31988a;
+        return Unit.f32556a;
     }
 }

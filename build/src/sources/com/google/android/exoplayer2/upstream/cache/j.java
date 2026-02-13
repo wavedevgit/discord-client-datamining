@@ -93,7 +93,7 @@ final class j extends ne.c {
     }
 
     public j f(File file, long j10) {
-        oe.a.g(this.f37181o);
-        return new j(this.f37178d, this.f37179e, this.f37180i, j10, file);
+        oe.a.g(this.f37749o);
+        return new j(this.f37746d, this.f37747e, this.f37748i, j10, file);
     }
 }

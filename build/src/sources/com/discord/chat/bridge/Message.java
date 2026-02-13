@@ -336,7 +336,7 @@ public final class Message extends MessageBase {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final /* synthetic */ KSerializer _childSerializers$_anonymous_$7() {
-        return new f(n2.f50033a);
+        return new f(n2.f50601a);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -409,34 +409,34 @@ public final class Message extends MessageBase {
             compositeEncoder.E(serialDescriptor, 7, message.flags);
         }
         if (compositeEncoder.z(serialDescriptor, 8) || message.edited != null) {
-            compositeEncoder.o(serialDescriptor, 8, n2.f50033a, message.edited);
+            compositeEncoder.o(serialDescriptor, 8, n2.f50601a, message.edited);
         }
         if (compositeEncoder.z(serialDescriptor, 9) || message.editedColor != null) {
-            compositeEncoder.o(serialDescriptor, 9, p0.f50049a, message.editedColor);
+            compositeEncoder.o(serialDescriptor, 9, p0.f50617a, message.editedColor);
         }
         if (compositeEncoder.z(serialDescriptor, 10) || message._constrainedWidth != null) {
-            compositeEncoder.o(serialDescriptor, 10, g0.f49993a, message._constrainedWidth);
+            compositeEncoder.o(serialDescriptor, 10, g0.f50561a, message._constrainedWidth);
         }
         if (compositeEncoder.z(serialDescriptor, 11) || message.textColor != null) {
-            compositeEncoder.o(serialDescriptor, 11, p0.f50049a, message.textColor);
+            compositeEncoder.o(serialDescriptor, 11, p0.f50617a, message.textColor);
         }
         if (compositeEncoder.z(serialDescriptor, 12) || message.linkColor != null) {
-            compositeEncoder.o(serialDescriptor, 12, p0.f50049a, message.linkColor);
+            compositeEncoder.o(serialDescriptor, 12, p0.f50617a, message.linkColor);
         }
         if (compositeEncoder.z(serialDescriptor, 13) || message.timestamp != null) {
-            compositeEncoder.o(serialDescriptor, 13, n2.f50033a, message.timestamp);
+            compositeEncoder.o(serialDescriptor, 13, n2.f50601a, message.timestamp);
         }
         if (compositeEncoder.z(serialDescriptor, 14) || message.timestampColor != null) {
-            compositeEncoder.o(serialDescriptor, 14, p0.f50049a, message.timestampColor);
+            compositeEncoder.o(serialDescriptor, 14, p0.f50617a, message.timestampColor);
         }
         if (compositeEncoder.z(serialDescriptor, 15) || message.username != null) {
-            compositeEncoder.o(serialDescriptor, 15, n2.f50033a, message.username);
+            compositeEncoder.o(serialDescriptor, 15, n2.f50601a, message.username);
         }
         if (compositeEncoder.z(serialDescriptor, 16) || message.usernameColor != null) {
-            compositeEncoder.o(serialDescriptor, 16, p0.f50049a, message.usernameColor);
+            compositeEncoder.o(serialDescriptor, 16, p0.f50617a, message.usernameColor);
         }
         if (compositeEncoder.z(serialDescriptor, 17) || message.roleColor != null) {
-            compositeEncoder.o(serialDescriptor, 17, p0.f50049a, message.roleColor);
+            compositeEncoder.o(serialDescriptor, 17, p0.f50617a, message.roleColor);
         }
         if (compositeEncoder.z(serialDescriptor, 18) || message.roleColors != null) {
             compositeEncoder.o(serialDescriptor, 18, RoleColors$$serializer.INSTANCE, message.roleColors);
@@ -448,13 +448,13 @@ public final class Message extends MessageBase {
             compositeEncoder.x(serialDescriptor, 20, message.shouldShowRoleOnName);
         }
         if (compositeEncoder.z(serialDescriptor, 21) || message.colorString != null) {
-            compositeEncoder.o(serialDescriptor, 21, p0.f50049a, message.colorString);
+            compositeEncoder.o(serialDescriptor, 21, p0.f50617a, message.colorString);
         }
         if (compositeEncoder.z(serialDescriptor, 22) || message.avatarURL != null) {
-            compositeEncoder.o(serialDescriptor, 22, n2.f50033a, message.avatarURL);
+            compositeEncoder.o(serialDescriptor, 22, n2.f50601a, message.avatarURL);
         }
         if (compositeEncoder.z(serialDescriptor, 23) || message.avatarDecorationURL != null) {
-            compositeEncoder.o(serialDescriptor, 23, n2.f50033a, message.avatarDecorationURL);
+            compositeEncoder.o(serialDescriptor, 23, n2.f50601a, message.avatarDecorationURL);
         }
         if (compositeEncoder.z(serialDescriptor, 24) || message.embeds != null) {
             compositeEncoder.o(serialDescriptor, 24, (qt.o) lazyArr[24].getValue(), message.embeds);
@@ -463,7 +463,7 @@ public final class Message extends MessageBase {
             compositeEncoder.o(serialDescriptor, 25, (qt.o) lazyArr[25].getValue(), message.attachments);
         }
         if (compositeEncoder.z(serialDescriptor, 26) || message.attachmentsOpacity != null) {
-            compositeEncoder.o(serialDescriptor, 26, g0.f49993a, message.attachmentsOpacity);
+            compositeEncoder.o(serialDescriptor, 26, g0.f50561a, message.attachmentsOpacity);
         }
         if (compositeEncoder.z(serialDescriptor, 27) || message.content != null) {
             compositeEncoder.o(serialDescriptor, 27, StructurableTextSerializer.INSTANCE, message.content);
@@ -491,13 +491,13 @@ public final class Message extends MessageBase {
         }
         compositeEncoder.x(serialDescriptor, 35, message.mentioned);
         if (compositeEncoder.z(serialDescriptor, 36) || message.gifAutoPlay != null) {
-            compositeEncoder.o(serialDescriptor, 36, h.f49997a, message.gifAutoPlay);
+            compositeEncoder.o(serialDescriptor, 36, h.f50565a, message.gifAutoPlay);
         }
         if (compositeEncoder.z(serialDescriptor, 37) || message.animateEmoji != null) {
-            compositeEncoder.o(serialDescriptor, 37, h.f49997a, message.animateEmoji);
+            compositeEncoder.o(serialDescriptor, 37, h.f50565a, message.animateEmoji);
         }
         if (compositeEncoder.z(serialDescriptor, 38) || message.showLinkDecorations != null) {
-            compositeEncoder.o(serialDescriptor, 38, h.f49997a, message.showLinkDecorations);
+            compositeEncoder.o(serialDescriptor, 38, h.f50565a, message.showLinkDecorations);
         }
         if (compositeEncoder.z(serialDescriptor, 39) || message.referencedMessage != null) {
             compositeEncoder.o(serialDescriptor, 39, ReferencedMessageSerializer.INSTANCE, message.referencedMessage);
@@ -509,28 +509,28 @@ public final class Message extends MessageBase {
             compositeEncoder.o(serialDescriptor, 41, (qt.o) lazyArr[41].getValue(), message.components);
         }
         if (compositeEncoder.z(serialDescriptor, 42) || message.communicationDisabled != null) {
-            compositeEncoder.o(serialDescriptor, 42, h.f49997a, message.communicationDisabled);
+            compositeEncoder.o(serialDescriptor, 42, h.f50565a, message.communicationDisabled);
         }
         if (compositeEncoder.z(serialDescriptor, 43) || message.tagText != null) {
-            compositeEncoder.o(serialDescriptor, 43, n2.f50033a, message.tagText);
+            compositeEncoder.o(serialDescriptor, 43, n2.f50601a, message.tagText);
         }
         if (compositeEncoder.z(serialDescriptor, 44) || message.tagVerified != null) {
-            compositeEncoder.o(serialDescriptor, 44, h.f49997a, message.tagVerified);
+            compositeEncoder.o(serialDescriptor, 44, h.f50565a, message.tagVerified);
         }
         if (compositeEncoder.z(serialDescriptor, 45) || message.tagTextColor != null) {
-            compositeEncoder.o(serialDescriptor, 45, p0.f50049a, message.tagTextColor);
+            compositeEncoder.o(serialDescriptor, 45, p0.f50617a, message.tagTextColor);
         }
         if (compositeEncoder.z(serialDescriptor, 46) || message.tagBackgroundColor != null) {
-            compositeEncoder.o(serialDescriptor, 46, p0.f50049a, message.tagBackgroundColor);
+            compositeEncoder.o(serialDescriptor, 46, p0.f50617a, message.tagBackgroundColor);
         }
         if (compositeEncoder.z(serialDescriptor, 47) || message.tagType != null) {
-            compositeEncoder.o(serialDescriptor, 47, n2.f50033a, message.tagType);
+            compositeEncoder.o(serialDescriptor, 47, n2.f50601a, message.tagType);
         }
         if (compositeEncoder.z(serialDescriptor, 48) || message.tagIconUrl != null) {
-            compositeEncoder.o(serialDescriptor, 48, n2.f50033a, message.tagIconUrl);
+            compositeEncoder.o(serialDescriptor, 48, n2.f50601a, message.tagIconUrl);
         }
         if (compositeEncoder.z(serialDescriptor, 49) || message.opTagText != null) {
-            compositeEncoder.o(serialDescriptor, 49, n2.f50033a, message.opTagText);
+            compositeEncoder.o(serialDescriptor, 49, n2.f50601a, message.opTagText);
         }
         if (compositeEncoder.z(serialDescriptor, 50) || message.ephemeralIndication != null) {
             compositeEncoder.o(serialDescriptor, 50, EphemeralIndication$$serializer.INSTANCE, message.ephemeralIndication);
@@ -542,49 +542,49 @@ public final class Message extends MessageBase {
             compositeEncoder.o(serialDescriptor, 52, InteractionStatus$$serializer.INSTANCE, message.interactionStatus);
         }
         if (compositeEncoder.z(serialDescriptor, 53) || !Intrinsics.areEqual(message.useAttachmentGridLayout, Boolean.FALSE)) {
-            compositeEncoder.o(serialDescriptor, 53, h.f49997a, message.useAttachmentGridLayout);
+            compositeEncoder.o(serialDescriptor, 53, h.f50565a, message.useAttachmentGridLayout);
         }
         if (compositeEncoder.z(serialDescriptor, 54) || !Intrinsics.areEqual(message.useAttachmentUploadPreview, Boolean.FALSE)) {
-            compositeEncoder.o(serialDescriptor, 54, h.f49997a, message.useAttachmentUploadPreview);
+            compositeEncoder.o(serialDescriptor, 54, h.f50565a, message.useAttachmentUploadPreview);
         }
         if (compositeEncoder.z(serialDescriptor, 55) || !Intrinsics.areEqual(message.isCurrentUserMessageAuthor, Boolean.FALSE)) {
-            compositeEncoder.o(serialDescriptor, 55, h.f49997a, message.isCurrentUserMessageAuthor);
+            compositeEncoder.o(serialDescriptor, 55, h.f50565a, message.isCurrentUserMessageAuthor);
         }
         if (compositeEncoder.z(serialDescriptor, 56) || message.obscureLearnMoreLabel != null) {
-            compositeEncoder.o(serialDescriptor, 56, n2.f50033a, message.obscureLearnMoreLabel);
+            compositeEncoder.o(serialDescriptor, 56, n2.f50601a, message.obscureLearnMoreLabel);
         }
         if (compositeEncoder.z(serialDescriptor, 57) || !Intrinsics.areEqual(message.usingGradientTheme, Boolean.FALSE)) {
-            compositeEncoder.o(serialDescriptor, 57, h.f49997a, message.usingGradientTheme);
+            compositeEncoder.o(serialDescriptor, 57, h.f50565a, message.usingGradientTheme);
         }
         if (compositeEncoder.z(serialDescriptor, 58) || message.title != null) {
-            compositeEncoder.o(serialDescriptor, 58, n2.f50033a, message.title);
+            compositeEncoder.o(serialDescriptor, 58, n2.f50601a, message.title);
         }
         if (compositeEncoder.z(serialDescriptor, 59) || message.description != null) {
-            compositeEncoder.o(serialDescriptor, 59, n2.f50033a, message.description);
+            compositeEncoder.o(serialDescriptor, 59, n2.f50601a, message.description);
         }
         if (compositeEncoder.z(serialDescriptor, 60) || message.avatarURLs != null) {
             compositeEncoder.o(serialDescriptor, 60, (qt.o) lazyArr[60].getValue(), message.avatarURLs);
         }
         if (compositeEncoder.z(serialDescriptor, 61) || message.isCallActive != null) {
-            compositeEncoder.o(serialDescriptor, 61, h.f49997a, message.isCallActive);
+            compositeEncoder.o(serialDescriptor, 61, h.f50565a, message.isCallActive);
         }
         if (compositeEncoder.z(serialDescriptor, 62) || message.missed != null) {
-            compositeEncoder.o(serialDescriptor, 62, h.f49997a, message.missed);
+            compositeEncoder.o(serialDescriptor, 62, h.f50565a, message.missed);
         }
         if (compositeEncoder.z(serialDescriptor, 63) || message.rawMilliseconds != null) {
-            compositeEncoder.o(serialDescriptor, 63, z0.f50107a, message.rawMilliseconds);
+            compositeEncoder.o(serialDescriptor, 63, z0.f50675a, message.rawMilliseconds);
         }
         if (compositeEncoder.z(serialDescriptor, 64) || message.sticker != null) {
             compositeEncoder.o(serialDescriptor, 64, Sticker$$serializer.INSTANCE, message.sticker);
         }
         if (compositeEncoder.z(serialDescriptor, 65) || message.stickerLabel != null) {
-            compositeEncoder.o(serialDescriptor, 65, n2.f50033a, message.stickerLabel);
+            compositeEncoder.o(serialDescriptor, 65, n2.f50601a, message.stickerLabel);
         }
         if (compositeEncoder.z(serialDescriptor, 66) || message.buttonLabel != null) {
-            compositeEncoder.o(serialDescriptor, 66, n2.f50033a, message.buttonLabel);
+            compositeEncoder.o(serialDescriptor, 66, n2.f50601a, message.buttonLabel);
         }
         if (compositeEncoder.z(serialDescriptor, 67) || message.showInviteToSpeakButton != null) {
-            compositeEncoder.o(serialDescriptor, 67, h.f49997a, message.showInviteToSpeakButton);
+            compositeEncoder.o(serialDescriptor, 67, h.f50565a, message.showInviteToSpeakButton);
         }
         if (compositeEncoder.z(serialDescriptor, 68) || message.activityRichPresenceInviteEmbed != null) {
             compositeEncoder.o(serialDescriptor, 68, ActivityRichPresenceInviteEmbed$$serializer.INSTANCE, message.activityRichPresenceInviteEmbed);
@@ -611,7 +611,7 @@ public final class Message extends MessageBase {
             compositeEncoder.o(serialDescriptor, 75, GiftEmbedSerializer.INSTANCE, message.referralTrialOffer);
         }
         if (compositeEncoder.z(serialDescriptor, 76) || message.totalMonthsSubscribed != null) {
-            compositeEncoder.o(serialDescriptor, 76, p0.f50049a, message.totalMonthsSubscribed);
+            compositeEncoder.o(serialDescriptor, 76, p0.f50617a, message.totalMonthsSubscribed);
         }
         if (compositeEncoder.z(serialDescriptor, 77) || message.postPreviewEmbeds != null) {
             compositeEncoder.o(serialDescriptor, 77, (qt.o) lazyArr[77].getValue(), message.postPreviewEmbeds);
@@ -635,25 +635,25 @@ public final class Message extends MessageBase {
             compositeEncoder.o(serialDescriptor, 83, CtaButton$$serializer.INSTANCE, message.ctaButton);
         }
         if (compositeEncoder.z(serialDescriptor, 84) || message.audioAttachmentBackgroundColor != null) {
-            compositeEncoder.o(serialDescriptor, 84, p0.f50049a, message.audioAttachmentBackgroundColor);
+            compositeEncoder.o(serialDescriptor, 84, p0.f50617a, message.audioAttachmentBackgroundColor);
         }
         if (compositeEncoder.z(serialDescriptor, 85) || message.forwardInfo != null) {
             compositeEncoder.o(serialDescriptor, 85, ForwardInfo$$serializer.INSTANCE, message.forwardInfo);
         }
         if (compositeEncoder.z(serialDescriptor, 86) || message.showInlineForwardButton != null) {
-            compositeEncoder.o(serialDescriptor, 86, h.f49997a, message.showInlineForwardButton);
+            compositeEncoder.o(serialDescriptor, 86, h.f50565a, message.showInlineForwardButton);
         }
         if (compositeEncoder.z(serialDescriptor, 87) || message.clanTagGuildId != null) {
             compositeEncoder.o(serialDescriptor, 87, GuildId$$serializer.INSTANCE, message.clanTagGuildId);
         }
         if (compositeEncoder.z(serialDescriptor, 88) || message.clanTag != null) {
-            compositeEncoder.o(serialDescriptor, 88, n2.f50033a, message.clanTag);
+            compositeEncoder.o(serialDescriptor, 88, n2.f50601a, message.clanTag);
         }
         if (compositeEncoder.z(serialDescriptor, 89) || message.clanBadgeUrl != null) {
-            compositeEncoder.o(serialDescriptor, 89, n2.f50033a, message.clanBadgeUrl);
+            compositeEncoder.o(serialDescriptor, 89, n2.f50601a, message.clanBadgeUrl);
         }
         if (compositeEncoder.z(serialDescriptor, 90) || message.gameApplicationId != null) {
-            compositeEncoder.o(serialDescriptor, 90, n2.f50033a, message.gameApplicationId);
+            compositeEncoder.o(serialDescriptor, 90, n2.f50601a, message.gameApplicationId);
         }
         if (compositeEncoder.z(serialDescriptor, 91) || message.isAnnouncementChannel) {
             compositeEncoder.x(serialDescriptor, 91, message.isAnnouncementChannel);

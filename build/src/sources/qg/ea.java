@@ -3,50 +3,50 @@ package qg;
 public final class ea {
 
     /* renamed from: a  reason: collision with root package name */
-    private hc f44419a;
+    private hc f44987a;
 
     /* renamed from: b  reason: collision with root package name */
-    private da f44420b;
+    private da f44988b;
 
     /* renamed from: c  reason: collision with root package name */
-    private ba f44421c;
+    private ba f44989c;
 
     /* renamed from: d  reason: collision with root package name */
-    private wa f44422d;
+    private wa f44990d;
 
     /* renamed from: e  reason: collision with root package name */
-    private za f44423e;
+    private za f44991e;
 
     /* renamed from: f  reason: collision with root package name */
-    private s2 f44424f;
+    private s2 f44992f;
 
     public final ea d(s2 s2Var) {
-        this.f44424f = s2Var;
+        this.f44992f = s2Var;
         return this;
     }
 
     public final ea e(ba baVar) {
-        this.f44421c = baVar;
+        this.f44989c = baVar;
         return this;
     }
 
     public final ea f(da daVar) {
-        this.f44420b = daVar;
+        this.f44988b = daVar;
         return this;
     }
 
     public final ea g(wa waVar) {
-        this.f44422d = waVar;
+        this.f44990d = waVar;
         return this;
     }
 
     public final ea h(za zaVar) {
-        this.f44423e = zaVar;
+        this.f44991e = zaVar;
         return this;
     }
 
     public final ea i(hc hcVar) {
-        this.f44419a = hcVar;
+        this.f44987a = hcVar;
         return this;
     }
 

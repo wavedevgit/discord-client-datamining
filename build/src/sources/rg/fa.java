@@ -5,7 +5,7 @@ import bj.c;
 final class fa implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final fa f46662a = new fa();
+    static final fa f47230a = new fa();
 
     static {
         c.b a10 = bj.c.a("detectorOptions");

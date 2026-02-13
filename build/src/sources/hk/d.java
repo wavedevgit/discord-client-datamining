@@ -25,25 +25,25 @@ import rg.zj;
 public class d extends wj.f {
 
     /* renamed from: i  reason: collision with root package name */
-    static boolean f27379i = true;
+    static boolean f27947i = true;
 
     /* renamed from: d  reason: collision with root package name */
-    private final o f27381d;
+    private final o f27949d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final xj f27382e;
+    private final xj f27950e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final zj f27383f;
+    private final zj f27951f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final gk.d f27384g;
+    private final gk.d f27952g;
 
     /* renamed from: j  reason: collision with root package name */
-    private static final dk.d f27380j = dk.d.b();
+    private static final dk.d f27948j = dk.d.b();
 
     /* renamed from: h  reason: collision with root package name */
-    private static final wj.n f27378h = new wj.n();
+    private static final wj.n f27946h = new wj.n();
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* JADX WARN: Illegal instructions before constructor call */
@@ -62,20 +62,20 @@ public class d extends wj.f {
             if (r0 != r1) goto L10
             goto L13
         L10:
-            wj.n r0 = hk.d.f27378h
+            wj.n r0 = hk.d.f27946h
             goto L18
         L13:
             wj.n r0 = new wj.n
             r0.<init>()
         L18:
             r2.<init>(r0)
-            r2.f27382e = r3
-            r2.f27381d = r4
+            r2.f27950e = r3
+            r2.f27949d = r4
             wj.i r3 = wj.i.c()
             android.content.Context r3 = r3.b()
             rg.zj r3 = rg.zj.a(r3)
-            r2.f27383f = r3
-            r2.f27384g = r5
+            r2.f27951f = r3
+            r2.f27952g = r5
             return
         */
         throw new UnsupportedOperationException("Method not decompiled: hk.d.<init>(rg.xj, hk.o, gk.d):void");
@@ -83,7 +83,7 @@ public class d extends wj.f {
 
     private final void m(final ie ieVar, long j10, final ck.a aVar) {
         final long elapsedRealtime = SystemClock.elapsedRealtime() - j10;
-        this.f27382e.f(new wj() { // from class: hk.s
+        this.f27950e.f(new wj() { // from class: hk.s
             @Override // rg.wj
             public final lj zza() {
                 return d.this.j(elapsedRealtime, ieVar, aVar);
@@ -91,15 +91,15 @@ public class d extends wj.f {
         }, je.ON_DEVICE_TEXT_DETECT);
         u3 u3Var = new u3();
         u3Var.a(ieVar);
-        u3Var.b(Boolean.valueOf(f27379i));
+        u3Var.b(Boolean.valueOf(f27947i));
         th thVar = new th();
-        thVar.a(a.a(this.f27384g.h()));
+        thVar.a(a.a(this.f27952g.h()));
         u3Var.c(thVar.c());
         final w3 d10 = u3Var.d();
         final t tVar = new t(this);
         final je jeVar = je.AGGREGATED_ON_DEVICE_TEXT_DETECTION;
         Executor d11 = wj.g.d();
-        final xj xjVar = this.f27382e;
+        final xj xjVar = this.f27950e;
         d11.execute(new Runnable() { // from class: rg.vj
             @Override // java.lang.Runnable
             public final void run() {
@@ -107,18 +107,18 @@ public class d extends wj.f {
             }
         });
         long currentTimeMillis = System.currentTimeMillis();
-        this.f27383f.c(this.f27384g.e(), ieVar.zza(), currentTimeMillis - elapsedRealtime, currentTimeMillis);
+        this.f27951f.c(this.f27952g.e(), ieVar.zza(), currentTimeMillis - elapsedRealtime, currentTimeMillis);
     }
 
     @Override // wj.k
     public final synchronized void b() {
-        this.f27381d.zzb();
+        this.f27949d.zzb();
     }
 
     @Override // wj.k
     public final synchronized void d() {
-        f27379i = true;
-        this.f27381d.a();
+        f27947i = true;
+        this.f27949d.a();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -129,12 +129,12 @@ public class d extends wj.f {
         vd vdVar = new vd();
         vdVar.c(Long.valueOf(j10));
         vdVar.d(ieVar);
-        vdVar.e(Boolean.valueOf(f27379i));
+        vdVar.e(Boolean.valueOf(f27947i));
         Boolean bool = Boolean.TRUE;
         vdVar.a(bool);
         vdVar.b(bool);
         phVar.d(vdVar.f());
-        dk.d dVar = f27380j;
+        dk.d dVar = f27948j;
         int c10 = dVar.c(aVar);
         int d10 = dVar.d(aVar);
         od odVar = new od();
@@ -163,11 +163,11 @@ public class d extends wj.f {
         odVar.b(Integer.valueOf(d10));
         phVar.c(odVar.d());
         th thVar = new th();
-        thVar.a(a.a(this.f27384g.h()));
+        thVar.a(a.a(this.f27952g.h()));
         phVar.e(thVar.c());
         rh f10 = phVar.f();
         ke keVar = new ke();
-        if (this.f27384g.d()) {
+        if (this.f27952g.d()) {
             heVar = he.TYPE_THICK;
         } else {
             heVar = he.TYPE_THIN;
@@ -181,7 +181,7 @@ public class d extends wj.f {
     public final /* synthetic */ lj k(w3 w3Var, int i10, jd jdVar) {
         he heVar;
         ke keVar = new ke();
-        if (this.f27384g.d()) {
+        if (this.f27952g.d()) {
             heVar = he.TYPE_THICK;
         } else {
             heVar = he.TYPE_THIN;
@@ -202,9 +202,9 @@ public class d extends wj.f {
         gk.a c10;
         long elapsedRealtime = SystemClock.elapsedRealtime();
         try {
-            c10 = this.f27381d.c(aVar);
+            c10 = this.f27949d.c(aVar);
             m(ie.NO_ERROR, elapsedRealtime, aVar);
-            f27379i = false;
+            f27947i = false;
         } catch (sj.a e10) {
             if (e10.a() == 14) {
                 ieVar = ie.MODEL_NOT_DOWNLOADED;

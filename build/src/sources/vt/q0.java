@@ -15,26 +15,26 @@ import kotlinx.serialization.json.JsonPrimitive;
 public final class q0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final vt.a f51938a;
+    private final vt.a f52506a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final boolean f51939b;
+    private final boolean f52507b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final boolean f51940c;
+    private final boolean f52508c;
 
     /* renamed from: d  reason: collision with root package name */
-    private int f51941d;
+    private int f52509d;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a extends kotlin.coroutines.jvm.internal.j implements Function3 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f51942d;
+        int f52510d;
 
         /* renamed from: e  reason: collision with root package name */
-        private /* synthetic */ Object f51943e;
+        private /* synthetic */ Object f52511e;
 
         a(Continuation continuation) {
             super(3, continuation);
@@ -43,7 +43,7 @@ public final class q0 {
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
             Object f10 = gs.b.f();
-            int i10 = this.f51942d;
+            int i10 = this.f52510d;
             if (i10 != 0) {
                 if (i10 == 1) {
                     kotlin.c.b(obj);
@@ -52,8 +52,8 @@ public final class q0 {
                 }
             } else {
                 kotlin.c.b(obj);
-                as.b bVar = (as.b) this.f51943e;
-                byte G = q0.this.f51938a.G();
+                as.b bVar = (as.b) this.f52511e;
+                byte G = q0.this.f52506a.G();
                 if (G == 1) {
                     return q0.this.j(true);
                 }
@@ -62,7 +62,7 @@ public final class q0 {
                 }
                 if (G == 6) {
                     q0 q0Var = q0.this;
-                    this.f51942d = 1;
+                    this.f52510d = 1;
                     obj = q0Var.h(bVar, this);
                     if (obj == f10) {
                         return f10;
@@ -70,7 +70,7 @@ public final class q0 {
                 } else if (G == 8) {
                     return q0.this.f();
                 } else {
-                    vt.a.x(q0.this.f51938a, "Can't begin reading element, unexpected token", 0, null, 6, null);
+                    vt.a.x(q0.this.f52506a, "Can't begin reading element, unexpected token", 0, null, 6, null);
                     throw new as.h();
                 }
             }
@@ -81,8 +81,8 @@ public final class q0 {
         /* renamed from: j */
         public final Object invoke(as.b bVar, Unit unit, Continuation continuation) {
             a aVar = new a(continuation);
-            aVar.f51943e = bVar;
-            return aVar.invokeSuspend(Unit.f31988a);
+            aVar.f52511e = bVar;
+            return aVar.invokeSuspend(Unit.f32556a);
         }
     }
 
@@ -91,22 +91,22 @@ public final class q0 {
     public static final class b extends kotlin.coroutines.jvm.internal.d {
 
         /* renamed from: d  reason: collision with root package name */
-        Object f51945d;
+        Object f52513d;
 
         /* renamed from: e  reason: collision with root package name */
-        Object f51946e;
+        Object f52514e;
 
         /* renamed from: i  reason: collision with root package name */
-        Object f51947i;
+        Object f52515i;
 
         /* renamed from: o  reason: collision with root package name */
-        Object f51948o;
+        Object f52516o;
 
         /* renamed from: p  reason: collision with root package name */
-        /* synthetic */ Object f51949p;
+        /* synthetic */ Object f52517p;
 
         /* renamed from: r  reason: collision with root package name */
-        int f51951r;
+        int f52519r;
 
         b(Continuation continuation) {
             super(continuation);
@@ -114,8 +114,8 @@ public final class q0 {
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
-            this.f51949p = obj;
-            this.f51951r |= Integer.MIN_VALUE;
+            this.f52517p = obj;
+            this.f52519r |= Integer.MIN_VALUE;
             return q0.this.h(null, this);
         }
     }
@@ -123,28 +123,28 @@ public final class q0 {
     public q0(ut.d configuration, vt.a lexer) {
         Intrinsics.checkNotNullParameter(configuration, "configuration");
         Intrinsics.checkNotNullParameter(lexer, "lexer");
-        this.f51938a = lexer;
-        this.f51939b = configuration.q();
-        this.f51940c = configuration.d();
+        this.f52506a = lexer;
+        this.f52507b = configuration.q();
+        this.f52508c = configuration.d();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public final JsonElement f() {
         boolean z10;
-        byte j10 = this.f51938a.j();
-        if (this.f51938a.G() != 4) {
+        byte j10 = this.f52506a.j();
+        if (this.f52506a.G() != 4) {
             ArrayList arrayList = new ArrayList();
-            while (this.f51938a.e()) {
+            while (this.f52506a.e()) {
                 arrayList.add(e());
-                j10 = this.f51938a.j();
+                j10 = this.f52506a.j();
                 if (j10 != 4) {
-                    vt.a aVar = this.f51938a;
+                    vt.a aVar = this.f52506a;
                     if (j10 == 9) {
                         z10 = true;
                     } else {
                         z10 = false;
                     }
-                    int i10 = aVar.f51871a;
+                    int i10 = aVar.f52439a;
                     if (!z10) {
                         vt.a.x(aVar, "Expected end of the array or comma", i10, null, 4, null);
                         throw new as.h();
@@ -152,23 +152,23 @@ public final class q0 {
                 }
             }
             if (j10 == 8) {
-                this.f51938a.k((byte) 9);
+                this.f52506a.k((byte) 9);
             } else if (j10 == 4) {
-                if (this.f51940c) {
-                    this.f51938a.k((byte) 9);
+                if (this.f52508c) {
+                    this.f52506a.k((byte) 9);
                 } else {
-                    g0.g(this.f51938a, "array");
+                    g0.g(this.f52506a, "array");
                     throw new as.h();
                 }
             }
             return new JsonArray(arrayList);
         }
-        vt.a.x(this.f51938a, "Unexpected leading comma", 0, null, 6, null);
+        vt.a.x(this.f52506a, "Unexpected leading comma", 0, null, 6, null);
         throw new as.h();
     }
 
     private final JsonElement g() {
-        return (JsonElement) kotlin.a.b(new as.a(new a(null)), Unit.f31988a);
+        return (JsonElement) kotlin.a.b(new as.a(new a(null)), Unit.f32556a);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -194,51 +194,51 @@ public final class q0 {
 
     private final JsonElement i() {
         String o10;
-        byte k10 = this.f51938a.k((byte) 6);
-        if (this.f51938a.G() != 4) {
+        byte k10 = this.f52506a.k((byte) 6);
+        if (this.f52506a.G() != 4) {
             LinkedHashMap linkedHashMap = new LinkedHashMap();
             while (true) {
-                if (!this.f51938a.e()) {
+                if (!this.f52506a.e()) {
                     break;
                 }
-                if (this.f51939b) {
-                    o10 = this.f51938a.q();
+                if (this.f52507b) {
+                    o10 = this.f52506a.q();
                 } else {
-                    o10 = this.f51938a.o();
+                    o10 = this.f52506a.o();
                 }
-                this.f51938a.k((byte) 5);
+                this.f52506a.k((byte) 5);
                 linkedHashMap.put(o10, e());
-                k10 = this.f51938a.j();
+                k10 = this.f52506a.j();
                 if (k10 != 4) {
                     if (k10 != 7) {
-                        vt.a.x(this.f51938a, "Expected end of the object or comma", 0, null, 6, null);
+                        vt.a.x(this.f52506a, "Expected end of the object or comma", 0, null, 6, null);
                         throw new as.h();
                     }
                 }
             }
             if (k10 == 6) {
-                this.f51938a.k((byte) 7);
+                this.f52506a.k((byte) 7);
             } else if (k10 == 4) {
-                if (this.f51940c) {
-                    this.f51938a.k((byte) 7);
+                if (this.f52508c) {
+                    this.f52506a.k((byte) 7);
                 } else {
-                    g0.h(this.f51938a, null, 1, null);
+                    g0.h(this.f52506a, null, 1, null);
                     throw new as.h();
                 }
             }
             return new JsonObject(linkedHashMap);
         }
-        vt.a.x(this.f51938a, "Unexpected leading comma", 0, null, 6, null);
+        vt.a.x(this.f52506a, "Unexpected leading comma", 0, null, 6, null);
         throw new as.h();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public final JsonPrimitive j(boolean z10) {
         String q10;
-        if (!this.f51939b && z10) {
-            q10 = this.f51938a.o();
+        if (!this.f52507b && z10) {
+            q10 = this.f52506a.o();
         } else {
-            q10 = this.f51938a.q();
+            q10 = this.f52506a.q();
         }
         String str = q10;
         if (!z10 && Intrinsics.areEqual(str, "null")) {
@@ -249,7 +249,7 @@ public final class q0 {
 
     public final JsonElement e() {
         JsonElement i10;
-        byte G = this.f51938a.G();
+        byte G = this.f52506a.G();
         if (G == 1) {
             return j(true);
         }
@@ -257,19 +257,19 @@ public final class q0 {
             return j(false);
         }
         if (G == 6) {
-            int i11 = this.f51941d + 1;
-            this.f51941d = i11;
+            int i11 = this.f52509d + 1;
+            this.f52509d = i11;
             if (i11 == 200) {
                 i10 = g();
             } else {
                 i10 = i();
             }
-            this.f51941d--;
+            this.f52509d--;
             return i10;
         } else if (G == 8) {
             return f();
         } else {
-            vt.a.x(this.f51938a, "Cannot read Json element because of unexpected " + vt.b.c(G), 0, null, 6, null);
+            vt.a.x(this.f52506a, "Cannot read Json element because of unexpected " + vt.b.c(G), 0, null, 6, null);
             throw new as.h();
         }
     }

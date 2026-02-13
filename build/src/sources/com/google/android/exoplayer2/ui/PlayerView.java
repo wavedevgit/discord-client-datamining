@@ -340,12 +340,12 @@ public class PlayerView extends FrameLayout {
         if (playerControlView != null && this.f13900y) {
             if (playerControlView.getVisibility() == 0) {
                 if (this.I) {
-                    str = getResources().getString(m.f35764a);
+                    str = getResources().getString(m.f36332a);
                 }
                 setContentDescription(str);
                 return;
             }
-            setContentDescription(getResources().getString(m.f35768e));
+            setContentDescription(getResources().getString(m.f36336e));
             return;
         }
         setContentDescription(null);
@@ -440,13 +440,13 @@ public class PlayerView extends FrameLayout {
     }
 
     private static void q(Context context, Resources resources, ImageView imageView) {
-        imageView.setImageDrawable(w0.W(context, resources, le.i.f35735f));
-        imageView.setBackgroundColor(resources.getColor(le.h.f35729a));
+        imageView.setImageDrawable(w0.W(context, resources, le.i.f36303f));
+        imageView.setBackgroundColor(resources.getColor(le.h.f36297a));
     }
 
     private static void r(Context context, Resources resources, ImageView imageView) {
-        imageView.setImageDrawable(w0.W(context, resources, le.i.f35735f));
-        imageView.setBackgroundColor(resources.getColor(le.h.f35729a, null));
+        imageView.setImageDrawable(w0.W(context, resources, le.i.f36303f));
+        imageView.setBackgroundColor(resources.getColor(le.h.f36297a, null));
     }
 
     private void t() {
@@ -888,7 +888,7 @@ public class PlayerView extends FrameLayout {
             this.f13897v = null;
             this.f13898w = null;
             ImageView imageView = new ImageView(context);
-            if (w0.f39038a >= 23) {
+            if (w0.f39606a >= 23) {
                 r(context, getResources(), imageView);
             } else {
                 q(context, getResources(), imageView);
@@ -896,7 +896,7 @@ public class PlayerView extends FrameLayout {
             addView(imageView);
             return;
         }
-        int i18 = l.f35763c;
+        int i18 = l.f36331c;
         if (attributeSet != null) {
             TypedArray obtainStyledAttributes = context.getTheme().obtainStyledAttributes(attributeSet, n.H, i10, 0);
             try {
@@ -947,12 +947,12 @@ public class PlayerView extends FrameLayout {
         }
         LayoutInflater.from(context).inflate(i18, this);
         setDescendantFocusability(262144);
-        AspectRatioFrameLayout aspectRatioFrameLayout = (AspectRatioFrameLayout) findViewById(le.j.f35739d);
+        AspectRatioFrameLayout aspectRatioFrameLayout = (AspectRatioFrameLayout) findViewById(le.j.f36307d);
         this.f13888e = aspectRatioFrameLayout;
         if (aspectRatioFrameLayout != null) {
             B(aspectRatioFrameLayout, i12);
         }
-        View findViewById = findViewById(le.j.f35756u);
+        View findViewById = findViewById(le.j.f36324u);
         this.f13889i = findViewById;
         if (findViewById != null && z15) {
             findViewById.setBackgroundColor(i15);
@@ -963,7 +963,7 @@ public class PlayerView extends FrameLayout {
                 this.f13890o = new TextureView(context);
             } else if (i14 == 3) {
                 try {
-                    int i22 = qe.l.f44088x;
+                    int i22 = qe.l.f44656x;
                     this.f13890o = (View) qe.l.class.getConstructor(Context.class).newInstance(context);
                     z17 = true;
                     this.f13890o.setLayoutParams(layoutParams);
@@ -978,7 +978,7 @@ public class PlayerView extends FrameLayout {
                 this.f13890o = new SurfaceView(context);
             } else {
                 try {
-                    int i23 = pe.j.f41666e;
+                    int i23 = pe.j.f42234e;
                     this.f13890o = (View) pe.j.class.getConstructor(Context.class).newInstance(context);
                 } catch (Exception e11) {
                     throw new IllegalStateException("video_decoder_gl_surface_view requires an ExoPlayer dependency", e11);
@@ -995,33 +995,33 @@ public class PlayerView extends FrameLayout {
             z16 = false;
         }
         this.f13891p = z16;
-        this.f13897v = (FrameLayout) findViewById(le.j.f35736a);
-        this.f13898w = (FrameLayout) findViewById(le.j.f35746k);
-        ImageView imageView2 = (ImageView) findViewById(le.j.f35737b);
+        this.f13897v = (FrameLayout) findViewById(le.j.f36304a);
+        this.f13898w = (FrameLayout) findViewById(le.j.f36314k);
+        ImageView imageView2 = (ImageView) findViewById(le.j.f36305b);
         this.f13892q = imageView2;
         this.A = z13 && imageView2 != null;
         if (i16 != 0) {
             this.B = androidx.core.content.a.e(getContext(), i16);
         }
-        SubtitleView subtitleView = (SubtitleView) findViewById(le.j.f35757v);
+        SubtitleView subtitleView = (SubtitleView) findViewById(le.j.f36325v);
         this.f13893r = subtitleView;
         if (subtitleView != null) {
             subtitleView.d();
             subtitleView.e();
         }
-        View findViewById2 = findViewById(le.j.f35738c);
+        View findViewById2 = findViewById(le.j.f36306c);
         this.f13894s = findViewById2;
         if (findViewById2 != null) {
             findViewById2.setVisibility(8);
         }
         this.C = i13;
-        TextView textView = (TextView) findViewById(le.j.f35743h);
+        TextView textView = (TextView) findViewById(le.j.f36311h);
         this.f13895t = textView;
         if (textView != null) {
             textView.setVisibility(8);
         }
-        PlayerControlView playerControlView = (PlayerControlView) findViewById(le.j.f35740e);
-        View findViewById3 = findViewById(le.j.f35741f);
+        PlayerControlView playerControlView = (PlayerControlView) findViewById(le.j.f36308e);
+        View findViewById3 = findViewById(le.j.f36309f);
         if (playerControlView != null) {
             this.f13896u = playerControlView;
             i17 = 0;
@@ -1029,7 +1029,7 @@ public class PlayerView extends FrameLayout {
             i17 = 0;
             PlayerControlView playerControlView2 = new PlayerControlView(context, null, 0, attributeSet);
             this.f13896u = playerControlView2;
-            playerControlView2.setId(le.j.f35740e);
+            playerControlView2.setId(le.j.f36308e);
             playerControlView2.setLayoutParams(findViewById3.getLayoutParams());
             ViewGroup viewGroup = (ViewGroup) findViewById3.getParent();
             int indexOfChild = viewGroup.indexOfChild(findViewById3);

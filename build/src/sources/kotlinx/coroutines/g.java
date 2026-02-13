@@ -6,10 +6,10 @@ import ys.z0;
 public final class g extends z0 implements ys.n {
 
     /* renamed from: p  reason: collision with root package name */
-    public final ys.o f35035p;
+    public final ys.o f35603p;
 
     public g(ys.o oVar) {
-        this.f35035p = oVar;
+        this.f35603p = oVar;
     }
 
     @Override // ys.n
@@ -29,6 +29,6 @@ public final class g extends z0 implements ys.n {
 
     @Override // ys.z0
     public void w(Throwable th2) {
-        this.f35035p.J(u());
+        this.f35603p.J(u());
     }
 }

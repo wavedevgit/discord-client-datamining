@@ -13,10 +13,10 @@ import kotlinx.serialization.encoding.c;
 public abstract class d1 extends a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final KSerializer f49979a;
+    private final KSerializer f50547a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final KSerializer f49980b;
+    private final KSerializer f50548b;
 
     public /* synthetic */ d1(KSerializer kSerializer, KSerializer kSerializer2, DefaultConstructorMarker defaultConstructorMarker) {
         this(kSerializer, kSerializer2);
@@ -26,11 +26,11 @@ public abstract class d1 extends a {
     public abstract SerialDescriptor getDescriptor();
 
     public final KSerializer m() {
-        return this.f49979a;
+        return this.f50547a;
     }
 
     public final KSerializer n() {
-        return this.f49980b;
+        return this.f50548b;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
@@ -68,7 +68,7 @@ public abstract class d1 extends a {
         Object c10;
         Intrinsics.checkNotNullParameter(decoder, "decoder");
         Intrinsics.checkNotNullParameter(builder, "builder");
-        Object c11 = c.a.c(decoder, getDescriptor(), i10, this.f49979a, null, 8, null);
+        Object c11 = c.a.c(decoder, getDescriptor(), i10, this.f50547a, null, 8, null);
         if (z10) {
             i11 = decoder.o(getDescriptor());
             if (i11 != i10 + 1) {
@@ -78,10 +78,10 @@ public abstract class d1 extends a {
             i11 = i10 + 1;
         }
         int i12 = i11;
-        if (builder.containsKey(c11) && !(this.f49980b.getDescriptor().getKind() instanceof st.e)) {
-            c10 = decoder.y(getDescriptor(), i12, this.f49980b, kotlin.collections.o0.j(builder, c11));
+        if (builder.containsKey(c11) && !(this.f50548b.getDescriptor().getKind() instanceof st.e)) {
+            c10 = decoder.y(getDescriptor(), i12, this.f50548b, kotlin.collections.o0.j(builder, c11));
         } else {
-            c10 = c.a.c(decoder, getDescriptor(), i12, this.f49980b, null, 8, null);
+            c10 = c.a.c(decoder, getDescriptor(), i12, this.f50548b, null, 8, null);
         }
         builder.put(c11, c10);
     }
@@ -108,7 +108,7 @@ public abstract class d1 extends a {
 
     private d1(KSerializer kSerializer, KSerializer kSerializer2) {
         super(null);
-        this.f49979a = kSerializer;
-        this.f49980b = kSerializer2;
+        this.f50547a = kSerializer;
+        this.f50548b = kSerializer2;
     }
 }

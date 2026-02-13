@@ -418,7 +418,7 @@ public abstract class m0 {
         try {
             CertificateFactory certificateFactory = CertificateFactory.getInstance("X.509");
             try {
-                byteBuffer = i0Var.f36507a;
+                byteBuffer = i0Var.f37075a;
                 ByteBuffer f10 = f(byteBuffer);
                 int i10 = 0;
                 while (f10.hasRemaining()) {
@@ -431,10 +431,10 @@ public abstract class m0 {
                 }
                 if (i10 > 0) {
                     if (!hashMap.isEmpty()) {
-                        j10 = i0Var.f36508b;
-                        j11 = i0Var.f36509c;
-                        j12 = i0Var.f36510d;
-                        byteBuffer2 = i0Var.f36511e;
+                        j10 = i0Var.f37076b;
+                        j11 = i0Var.f37077c;
+                        j12 = i0Var.f37078d;
+                        byteBuffer2 = i0Var.f37079e;
                         h(hashMap, fileChannel, j10, j11, j12, byteBuffer2);
                         return (X509Certificate[][]) arrayList.toArray(new X509Certificate[arrayList.size()]);
                     }

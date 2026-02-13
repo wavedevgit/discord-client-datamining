@@ -3,20 +3,20 @@ package ys;
 public final class l1 {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final l1 f55800a = new l1();
+    public static final l1 f56368a = new l1();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final ThreadLocal f55801b = dt.m0.a(new dt.e0("ThreadLocalEventLoop"));
+    private static final ThreadLocal f56369b = dt.m0.a(new dt.e0("ThreadLocalEventLoop"));
 
     private l1() {
     }
 
     public final p0 a() {
-        return (p0) f55801b.get();
+        return (p0) f56369b.get();
     }
 
     public final p0 b() {
-        ThreadLocal threadLocal = f55801b;
+        ThreadLocal threadLocal = f56369b;
         p0 p0Var = (p0) threadLocal.get();
         if (p0Var == null) {
             p0 a10 = q0.a();
@@ -27,10 +27,10 @@ public final class l1 {
     }
 
     public final void c() {
-        f55801b.set(null);
+        f56369b.set(null);
     }
 
     public final void d(p0 p0Var) {
-        f55801b.set(p0Var);
+        f56369b.set(p0Var);
     }
 }

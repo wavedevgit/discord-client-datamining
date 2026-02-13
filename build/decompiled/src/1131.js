@@ -1,211 +1,156 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun12354: for (var _fun12354_ip = 0;;) switch (_fun12354_ip) {
-        case 0:
-            var5 = require;
-            var10 = exports;
-            var6 = dependencyMap;
-            var _closure1_slot0 = var5;
-            var _closure1_slot1 = var10;
-            var _closure1_slot2 = var6;
-            var3 = global;
-            var7 = var3.Object;
-            var4 = var7.defineProperty;
-            var0 = var3.Symbol;
-            var2 = var0.toStringTag;
-            var0 = {};
-            var8 = 'Module';
-            var0.value = var8;
-            var0 = var4.bind(var7)(var10, var2, var0);
-            var0 = 0;
-            var2 = var6[var0];
+    var2 = exports;
+    var3 = dependencyMap;
+    var0 = require;
+    var _closure1_slot0 = var0;
+    var _closure1_slot1 = var3;
+    var0 = global;
+    var6 = var0.Object;
+    var5 = var6.defineProperty;
+    var4 = {};
+    var0 = true;
+    var4.value = var0;
+    var0 = '__esModule';
+    var0 = var5.bind(var6)(var2, var0, var4);
+    var0 = 0;
+    var4 = var3[var0];
+    var3 = metroImportDefault;
+    var0 = undefined;
+    var3 = var3.bind(var0)(var4);
+    var _closure1_slot2 = var3;
+    var3 = function() {
+        var0 = {};
+        var2 = 'Replay';
+        var0.name = var2;
+        var2 = function() {
             var0 = undefined;
-            var2 = var5.bind(var0)(var2);
-            var2 = var2.init;
-            var10.init = var2;
-            var2 = 1;
-            var4 = var6[var2];
-            var4 = var5.bind(var0)(var4);
-            var4 = var4.captureReactException;
-            var10.captureReactException = var4;
-            var2 = var6[var2];
-            var2 = var5.bind(var0)(var2);
-            var2 = var2.reactErrorHandler;
-            var10.reactErrorHandler = var2;
-            var2 = 2;
-            var4 = var6[var2];
-            var4 = var5.bind(var0)(var4);
-            var4 = var4.Profiler;
-            var10.Profiler = var4;
-            var4 = var6[var2];
-            var4 = var5.bind(var0)(var4);
-            var4 = var4.useProfiler;
-            var10.useProfiler = var4;
-            var2 = var6[var2];
-            var2 = var5.bind(var0)(var2);
-            var2 = var2.withProfiler;
-            var10.withProfiler = var2;
-            var2 = 3;
-            var4 = var6[var2];
-            var4 = var5.bind(var0)(var4);
-            var4 = var4.ErrorBoundary;
-            var10.ErrorBoundary = var4;
-            var2 = var6[var2];
-            var2 = var5.bind(var0)(var2);
-            var2 = var2.withErrorBoundary;
-            var10.withErrorBoundary = var2;
-            var2 = 4;
-            var2 = var6[var2];
-            var2 = var5.bind(var0)(var2);
-            var2 = var2.createReduxEnhancer;
-            var10.createReduxEnhancer = var2;
-            var2 = 5;
-            var2 = var6[var2];
-            var2 = var5.bind(var0)(var2);
-            var2 = var2.reactRouterV3BrowserTracingIntegration;
-            var10.reactRouterV3BrowserTracingIntegration = var2;
-            var2 = 6;
-            var2 = var6[var2];
-            var2 = var5.bind(var0)(var2);
-            var2 = var2.tanstackRouterBrowserTracingIntegration;
-            var10.tanstackRouterBrowserTracingIntegration = var2;
-            var2 = 7;
-            var4 = var6[var2];
-            var4 = var5.bind(var0)(var4);
-            var4 = var4.reactRouterV4BrowserTracingIntegration;
-            var10.reactRouterV4BrowserTracingIntegration = var4;
-            var4 = var6[var2];
-            var4 = var5.bind(var0)(var4);
-            var4 = var4.reactRouterV5BrowserTracingIntegration;
-            var10.reactRouterV5BrowserTracingIntegration = var4;
-            var2 = var6[var2];
-            var2 = var5.bind(var0)(var2);
-            var2 = var2.withSentryRouting;
-            var10.withSentryRouting = var2;
-            var2 = 8;
-            var4 = var6[var2];
-            var4 = var5.bind(var0)(var4);
-            var4 = var4.reactRouterV6BrowserTracingIntegration;
-            var10.reactRouterV6BrowserTracingIntegration = var4;
-            var4 = var6[var2];
-            var4 = var5.bind(var0)(var4);
-            var4 = var4.withSentryReactRouterV6Routing;
-            var10.withSentryReactRouterV6Routing = var4;
-            var4 = var6[var2];
-            var4 = var5.bind(var0)(var4);
-            var4 = var4.wrapCreateBrowserRouterV6;
-            var10.wrapCreateBrowserRouterV6 = var4;
-            var4 = var6[var2];
-            var4 = var5.bind(var0)(var4);
-            var4 = var4.wrapCreateMemoryRouterV6;
-            var10.wrapCreateMemoryRouterV6 = var4;
-            var2 = var6[var2];
-            var2 = var5.bind(var0)(var2);
-            var2 = var2.wrapUseRoutesV6;
-            var10.wrapUseRoutesV6 = var2;
-            var2 = 9;
-            var4 = var6[var2];
-            var4 = var5.bind(var0)(var4);
-            var4 = var4.reactRouterV7BrowserTracingIntegration;
-            var10.reactRouterV7BrowserTracingIntegration = var4;
-            var4 = var6[var2];
-            var4 = var5.bind(var0)(var4);
-            var4 = var4.withSentryReactRouterV7Routing;
-            var10.withSentryReactRouterV7Routing = var4;
-            var4 = var6[var2];
-            var4 = var5.bind(var0)(var4);
-            var4 = var4.wrapCreateBrowserRouterV7;
-            var10.wrapCreateBrowserRouterV7 = var4;
-            var4 = var6[var2];
-            var4 = var5.bind(var0)(var4);
-            var4 = var4.wrapCreateMemoryRouterV7;
-            var10.wrapCreateMemoryRouterV7 = var4;
-            var2 = var6[var2];
-            var2 = var5.bind(var0)(var2);
-            var2 = var2.wrapUseRoutesV7;
-            var10.wrapUseRoutesV7 = var2;
-            var2 = var3.Object;
-            var2 = var2.prototype;
-            var8 = var2.hasOwnProperty;
-            var7 = var8.call;
-            var2 = 10;
-            var4 = var6[var2];
-            var4 = var5.bind(var0)(var4);
-            var9 = '__proto__';
-            var4 = var7.bind(var8)(var4, var9);
-            if (!var4) {
-                _fun12354_ip = 680;
-                continue _fun12354
-            }
-        case 649:
-            var7 = var3.Object;
-            var7 = var7.prototype;
-            var8 = var7.hasOwnProperty;
-            var7 = var8.call;
-            var7 = var7.bind(var8)(var10, var9);
-            var4 = !var7;
-        case 680:
-            if (!var4) {
-                _fun12354_ip = 728;
-                continue _fun12354
-            }
-        case 683:
-            var8 = var3.Object;
-            var7 = var8.defineProperty;
-            var4 = {};
-            var11 = true;
-            var4.enumerable = var11;
-            var11 = var6[var2];
-            var11 = var5.bind(var0)(var11);
-            var11 = var11.__proto__;
-            var4.value = var11;
-            var4 = var7.bind(var8)(var10, var9, var4);
-        case 728:
-            var4 = var3.Object;
-            var3 = var4.keys;
-            var2 = var6[var2];
-            var2 = var5.bind(var0)(var2);
-            var3 = var3.bind(var4)(var2);
-            var2 = var3.forEach;
-            var1 = function(arg0) { // Environment: var1
-                _fun12355: for (var _fun12355_ip = 0;;) switch (_fun12355_ip) {
-                    case 0:
-                        var2 = arg0;
-                        var0 = 'default';
-                        var0 = var0 === var2;
-                        if (var0) {
-                            _fun12355_ip = 51;
-                            continue _fun12355
-                        }
-                    case 14:
-                        var1 = global;
-                        var1 = var1.Object;
-                        var1 = var1.prototype;
-                        var4 = var1.hasOwnProperty;
-                        var3 = var4.call;
-                        var1 = _closure1_slot1;
-                        var0 = var3.bind(var4)(var1, var2);
-                    case 51:
-                        if (var0) {
-                            _fun12355_ip = 91;
-                            continue _fun12355
-                        }
-                    case 54:
-                        var1 = _closure1_slot1;
-                        var4 = _closure1_slot0;
-                        var3 = _closure1_slot2;
-                        var0 = 10;
-                        var3 = var3[var0];
-                        var0 = undefined;
-                        var0 = var4.bind(var0)(var3);
-                        var0 = var0[var2];
-                        var1[var2] = var0;
-                    case 91:
-                        var0 = undefined;
-                        return var0;
-                }
-            };
-            var1 = var2.bind(var3)(var1);
             return var0;
-    }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1132, 1133, 1134, 1140, 1142, 1143, 1144, 1145, 1146, 1150, 1021]);
+        };
+        var0.start = var2;
+        var2 = function() {
+            var0 = undefined;
+            return var0;
+        };
+        var0.startBuffering = var2;
+        var2 = function() {
+            var0 = global;
+            var1 = var0.Promise;
+            var0 = var1.resolve;
+            var0 = var0.bind(var1)();
+            return var0;
+        };
+        var0.stop = var2;
+        var2 = function() {
+            var0 = global;
+            var1 = var0.Promise;
+            var0 = var1.resolve;
+            var0 = var0.bind(var1)();
+            return var0;
+        };
+        var0.flush = var2;
+        var2 = function() {
+            var0 = undefined;
+            return var0;
+        };
+        var0.getReplayId = var2;
+        var1 = function() {
+            var0 = undefined;
+            return var0;
+        };
+        var0.getRecordingMode = var1;
+        return var0;
+    };
+    var _closure1_slot3 = var3;
+    var1 = function() {
+        _fun12358: for (var _fun12358_ip = 0;;) switch (_fun12358_ip) {
+            case 0:
+                var2 = undefined;
+                var1 = undefined;
+                var3 = arguments.length;
+                var0 = 0;
+                if (!(var3 > var0)) {
+                    _fun12358_ip = 21;
+                    continue _fun12358
+                }
+            case 13:
+                var3 = arguments[var0];
+                if (!(var2 === var3)) {
+                    _fun12358_ip = 25;
+                    continue _fun12358
+                }
+            case 21:
+                var8 = {};
+                _fun12358_ip = 29;
+                continue _fun12358;
+            case 25:
+                var8 = arguments[var0];
+            case 29:
+                var3 = _closure1_slot0;
+                var4 = _closure1_slot1;
+                var0 = 1;
+                var0 = var4[var0];
+                var3 = var3.bind(var2)(var0);
+                var0 = var3.notWeb;
+                var0 = var0.bind(var3)();
+                if (var0) {
+                    _fun12358_ip = 235;
+                    continue _fun12358
+                }
+            case 68:
+                var3 = _closure1_slot0;
+                var4 = _closure1_slot1;
+                var0 = 2;
+                var0 = var4[var0];
+                var4 = var3.bind(var2)(var0);
+                var3 = var4.replayIntegration;
+                var0 = global;
+                var7 = var0.Object;
+                var6 = var7.assign;
+                var9 = var0.Object;
+                var5 = var9.assign;
+                var0 = {};
+                var5 = var5.bind(var9)(var0, var8);
+                var0 = {};
+                var11 = ['.sentry-react-native-mask'];
+                var10 = var11.concat;
+                var12 = _closure1_slot2;
+                var9 = var8.mask;
+                if (var9) {
+                    _fun12358_ip = 160;
+                    continue _fun12358
+                }
+            case 156:
+                var9 = new Array(0);
+            case 160:
+                var9 = var12.bind(var2)(var9);
+                var9 = var10.bind(var11)(var9);
+                var0.mask = var9;
+                var10 = ['.sentry-react-native-unmask:not(.sentry-react-native-mask *) > *'];
+                var9 = var10.concat;
+                var11 = _closure1_slot2;
+                var8 = var8.unmask;
+                if (var8) {
+                    _fun12358_ip = 207;
+                    continue _fun12358
+                }
+            case 203:
+                var8 = new Array(0);
+            case 207:
+                var8 = var11.bind(var2)(var8);
+                var8 = var9.bind(var10)(var8);
+                var0.unmask = var8;
+                var0 = var6.bind(var7)(var5, var0);
+                var0 = var3.bind(var4)(var0);
+                _fun12358_ip = 243;
+                continue _fun12358;
+            case 235:
+                var1 = _closure1_slot3;
+                var0 = var1.bind(var2)();
+            case 243:
+                return var0;
+        }
+    };
+    var2.browserReplayIntegration = var1;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [65, 1000, 1132]);

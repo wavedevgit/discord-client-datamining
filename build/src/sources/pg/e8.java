@@ -224,14 +224,14 @@ public enum e8 implements h {
     
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f41977d;
+    private final int f42545d;
 
     e8(int i10) {
-        this.f41977d = i10;
+        this.f42545d = i10;
     }
 
     @Override // pg.h
     public final int zza() {
-        return this.f41977d;
+        return this.f42545d;
     }
 }

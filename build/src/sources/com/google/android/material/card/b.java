@@ -145,9 +145,9 @@ public class b {
         hVar.T(materialCardView.getContext());
         hVar.l0(-12303292);
         l.b w10 = hVar.J().w();
-        TypedArray obtainStyledAttributes = materialCardView.getContext().obtainStyledAttributes(attributeSet, d.f48422a, i10, c.f48421a);
-        if (obtainStyledAttributes.hasValue(d.f48426e)) {
-            w10.o(obtainStyledAttributes.getDimension(d.f48426e, 0.0f));
+        TypedArray obtainStyledAttributes = materialCardView.getContext().obtainStyledAttributes(attributeSet, d.f48990a, i10, c.f48989a);
+        if (obtainStyledAttributes.hasValue(d.f48994e)) {
+            w10.o(obtainStyledAttributes.getDimension(d.f48994e, 0.0f));
         }
         this.f15452d = new h();
         W(w10.m());

@@ -6,11 +6,11 @@ import java.util.List;
 public class k extends g {
 
     /* renamed from: i  reason: collision with root package name */
-    private final PointF f38622i;
+    private final PointF f39190i;
 
     public k(List list) {
         super(list);
-        this.f38622i = new PointF();
+        this.f39190i = new PointF();
     }
 
     @Override // o5.a
@@ -25,20 +25,20 @@ public class k extends g {
     public PointF j(z5.a aVar, float f10, float f11, float f12) {
         Object obj;
         PointF pointF;
-        Object obj2 = aVar.f56093b;
-        if (obj2 != null && (obj = aVar.f56094c) != null) {
+        Object obj2 = aVar.f56661b;
+        if (obj2 != null && (obj = aVar.f56662c) != null) {
             PointF pointF2 = (PointF) obj2;
             PointF pointF3 = (PointF) obj;
-            z5.c cVar = this.f38587e;
-            if (cVar != null && (pointF = (PointF) cVar.b(aVar.f56098g, aVar.f56099h.floatValue(), pointF2, pointF3, f10, e(), f())) != null) {
+            z5.c cVar = this.f39155e;
+            if (cVar != null && (pointF = (PointF) cVar.b(aVar.f56666g, aVar.f56667h.floatValue(), pointF2, pointF3, f10, e(), f())) != null) {
                 return pointF;
             }
-            PointF pointF4 = this.f38622i;
+            PointF pointF4 = this.f39190i;
             float f13 = pointF2.x;
             float f14 = f13 + (f11 * (pointF3.x - f13));
             float f15 = pointF2.y;
             pointF4.set(f14, f15 + (f12 * (pointF3.y - f15)));
-            return this.f38622i;
+            return this.f39190i;
         }
         throw new IllegalStateException("Missing values for keyframe.");
     }

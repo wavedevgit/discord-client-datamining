@@ -12,7 +12,7 @@ import net.time4j.tz.q;
 public abstract class l implements m, Serializable {
 
     /* renamed from: d  reason: collision with root package name */
-    static final String f37774d = System.getProperty("line.separator");
+    static final String f38342d = System.getProperty("line.separator");
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static long f(int i10) {

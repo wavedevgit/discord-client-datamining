@@ -7,22 +7,22 @@ import java.util.concurrent.atomic.AtomicInteger;
 public final class h extends e {
 
     /* renamed from: e  reason: collision with root package name */
-    final /* synthetic */ zg.k f48097e;
+    final /* synthetic */ zg.k f48665e;
 
     /* renamed from: i  reason: collision with root package name */
-    final /* synthetic */ e f48098i;
+    final /* synthetic */ e f48666i;
 
     /* renamed from: o  reason: collision with root package name */
-    final /* synthetic */ o f48099o;
+    final /* synthetic */ o f48667o;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public h(o oVar, zg.k kVar, zg.k kVar2, e eVar) {
         super(kVar);
-        this.f48097e = kVar2;
-        this.f48098i = eVar;
+        this.f48665e = kVar2;
+        this.f48666i = eVar;
         Objects.requireNonNull(oVar);
-        this.f48099o = oVar;
+        this.f48667o = oVar;
     }
 
     @Override // sg.e
@@ -30,17 +30,17 @@ public final class h extends e {
         Object obj;
         AtomicInteger atomicInteger;
         d dVar;
-        o oVar = this.f48099o;
-        obj = oVar.f48111f;
+        o oVar = this.f48667o;
+        obj = oVar.f48679f;
         synchronized (obj) {
             try {
-                o.o(oVar, this.f48097e);
-                atomicInteger = oVar.f48116k;
+                o.o(oVar, this.f48665e);
+                atomicInteger = oVar.f48684k;
                 if (atomicInteger.getAndIncrement() > 0) {
-                    dVar = oVar.f48107b;
+                    dVar = oVar.f48675b;
                     dVar.c("Already connected to the service.", new Object[0]);
                 }
-                o.q(oVar, this.f48098i);
+                o.q(oVar, this.f48666i);
             } catch (Throwable th2) {
                 throw th2;
             }

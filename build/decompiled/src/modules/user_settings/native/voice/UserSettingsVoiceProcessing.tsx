@@ -2,11 +2,11 @@
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var8 = require;
-    var10 = metroImportDefault;
+    var7 = metroImportDefault;
     var2 = exports;
     var9 = dependencyMap;
     var _closure1_slot0 = var8;
-    var _closure1_slot1 = var10;
+    var _closure1_slot1 = var7;
     var _closure1_slot2 = var9;
     var5 = function arg0() {
         var3 = _closure1_slot1;
@@ -27,7 +27,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = var3.bind(var4)(var1, var2);
         return var0;
     };
-    var _closure1_slot13 = var5;
+    var _closure1_slot10 = var5;
     var4 = function arg0() {
         var3 = _closure1_slot1;
         var2 = _closure1_slot2;
@@ -47,7 +47,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = var3.bind(var4)(var1, var2);
         return var0;
     };
-    var _closure1_slot14 = var4;
+    var _closure1_slot11 = var4;
     var3 = function arg0() {
         var5 = arg0;
         var0 = _closure1_slot9;
@@ -84,58 +84,173 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = var3.bind(var4)(var1, var2);
         return var0;
     };
-    var _closure1_slot15 = var3;
-    var0 = global;
-    var11 = var0.Object;
-    var7 = var11.defineProperty;
-    var1 = {};
-    var0 = true;
-    var1.value = var0;
-    var0 = '__esModule';
-    var0 = var7.bind(var11)(var2, var0, var1);
-    var0 = 0;
-    var7 = var9[var0];
-    var1 = arg3;
-    var0 = undefined;
-    var1 = var1.bind(var0)(var7);
-    var1 = 1;
-    var1 = var9[var1];
-    var1 = var10.bind(var0)(var1);
-    var _closure1_slot3 = var1;
-    var1 = 2;
-    var1 = var9[var1];
-    var1 = var8.bind(var0)(var1);
-    var7 = var1.AnalyticsPages;
-    var _closure1_slot4 = var7;
-    var1 = var1.AnalyticsSections;
-    var _closure1_slot5 = var1;
-    var1 = 3;
-    var1 = var9[var1];
-    var1 = var8.bind(var0)(var1);
-    var11 = var1.jsx;
-    var _closure1_slot6 = var11;
-    var7 = var1.jsxs;
-    var _closure1_slot7 = var7;
-    var1 = var1.Fragment;
-    var _closure1_slot8 = var1;
-    var1 = {};
-    var7 = 'NONE';
-    var1.NONE = var7;
-    var7 = 'STANDARD';
-    var1.STANDARD = var7;
-    var7 = 'KRISP';
-    var1.KRISP = var7;
-    var _closure1_slot9 = var1;
-    var7 = 5;
-    var7 = var9[var7];
-    var10 = var10.bind(var0)(var7);
-    var7 = {};
-    var7 = var11.bind(var0)(var10, var7);
-    var _closure1_slot10 = var7;
-    var10 = function() {
+    var _closure1_slot12 = var3;
+    var0 = function() {
+        _fun85280: for (var _fun85280_ip = 0;;) switch (_fun85280_ip) {
+            case 0:
+                var15 = _closure1_slot0;
+                var8 = _closure1_slot2;
+                var0 = 5;
+                var0 = var8[var0];
+                var3 = undefined;
+                var4 = var15.bind(var3)(var0);
+                var2 = var4.useStateFromStoresObject;
+                var0 = _closure1_slot3;
+                var1 = new Array(1);
+                var1[0] = var0;
+                var0 = function() { // Environment: var0
+                    var0 = {};
+                    var3 = _closure1_slot3;
+                    var2 = var3.getNoiseSuppression;
+                    var2 = var2.bind(var3)();
+                    var0.noiseSuppression = var2;
+                    var2 = _closure1_slot3;
+                    var1 = var2.getNoiseCancellation;
+                    var1 = var1.bind(var2)();
+                    var0.noiseCancellation = var1;
+                    return var0;
+                };
+                var0 = var2.bind(var4)(var1, var0);
+                var2 = var0.noiseCancellation;
+                var1 = var0.noiseSuppression;
+                var0 = _closure1_slot9;
+                if (var2) {
+                    _fun85280_ip = 96;
+                    continue _fun85280
+                }
+            case 77:
+                if (var1) {
+                    _fun85280_ip = 88;
+                    continue _fun85280
+                }
+            case 80:
+                var7 = var0.NONE;
+                _fun85280_ip = 94;
+                continue _fun85280;
+            case 88:
+                var7 = var0.STANDARD;
+            case 94:
+                _fun85280_ip = 102;
+                continue _fun85280;
+            case 96:
+                var7 = var0.KRISP;
+            case 102:
+                var2 = _closure1_slot7;
+                var1 = _closure1_slot8;
+                var0 = {};
+                var4 = 6;
+                var4 = var8[var4];
+                var4 = var15.bind(var3)(var4);
+                var6 = var4.TableRadioGroup;
+                var4 = {};
+                var4.value = var7;
+                var7 = _closure1_slot12;
+                var4.onChange = var7;
+                var12 = 7;
+                var7 = var8[var12];
+                var7 = var15.bind(var3)(var7);
+                var10 = var7.intl;
+                var9 = var10.string;
+                var7 = var8[var12];
+                var7 = var15.bind(var3)(var7);
+                var7 = var7.t;
+                var7 = var7.t8Qhib;
+                var7 = var9.bind(var10)(var7);
+                var4.title = var7;
+                var7 = var8[var12];
+                var7 = var15.bind(var3)(var7);
+                var10 = var7.intl;
+                var9 = var10.string;
+                var7 = var8[var12];
+                var7 = var15.bind(var3)(var7);
+                var7 = var7.t;
+                var7 = var7.najZCV;
+                var7 = var9.bind(var10)(var7);
+                var4.description = var7;
+                var11 = _closure1_slot6;
+                var9 = 8;
+                var7 = var8[var9];
+                var7 = var15.bind(var3)(var7);
+                var10 = var7.TableRadioRow;
+                var7 = {};
+                var13 = _closure1_slot9;
+                var13 = var13.KRISP;
+                var7.value = var13;
+                var13 = var8[var12];
+                var13 = var15.bind(var3)(var13);
+                var16 = var13.intl;
+                var14 = var16.string;
+                var13 = var8[var12];
+                var13 = var15.bind(var3)(var13);
+                var13 = var13.t;
+                var13 = var13.rdoNzt;
+                var13 = var14.bind(var16)(var13);
+                var7.label = var13;
+                var10 = var11.bind(var3)(var10, var7);
+                var7 = new Array(3);
+                var7[0] = var10;
+                var13 = _closure1_slot6;
+                var10 = var8[var9];
+                var10 = var15.bind(var3)(var10);
+                var11 = var10.TableRadioRow;
+                var10 = {};
+                var14 = _closure1_slot9;
+                var14 = var14.STANDARD;
+                var10.value = var14;
+                var14 = var8[var12];
+                var14 = var15.bind(var3)(var14);
+                var17 = var14.intl;
+                var16 = var17.string;
+                var14 = var8[var12];
+                var14 = var15.bind(var3)(var14);
+                var14 = var14.t;
+                var14 = var14.qXeYHw;
+                var14 = var16.bind(var17)(var14);
+                var10.label = var14;
+                var10 = var13.bind(var3)(var11, var10);
+                var7[1] = var10;
+                var11 = _closure1_slot6;
+                var9 = var8[var9];
+                var9 = var15.bind(var3)(var9);
+                var10 = var9.TableRadioRow;
+                var9 = {};
+                var13 = _closure1_slot9;
+                var13 = var13.NONE;
+                var9.value = var13;
+                var13 = var8[var12];
+                var13 = var15.bind(var3)(var13);
+                var14 = var13.intl;
+                var13 = var14.string;
+                var12 = var8[var12];
+                var12 = var15.bind(var3)(var12);
+                var12 = var12.t;
+                var12 = var12.wkYAlz;
+                var12 = var13.bind(var14)(var12);
+                var9.label = var12;
+                var9 = var11.bind(var3)(var10, var9);
+                var7[2] = var9;
+                var4.children = var7;
+                var6 = var2.bind(var3)(var6, var4);
+                var4 = new Array(2);
+                var4[0] = var6;
+                var7 = _closure1_slot6;
+                var6 = _closure1_slot1;
+                var5 = 9;
+                var5 = var8[var5];
+                var6 = var6.bind(var3)(var5);
+                var5 = {};
+                var5 = var7.bind(var3)(var6, var5);
+                var4[1] = var5;
+                var0.children = var4;
+                var0 = var2.bind(var3)(var1, var0);
+                return var0;
+        }
+    };
+    var _closure1_slot13 = var0;
+    var0 = function() {
         var9 = _closure1_slot0;
         var10 = _closure1_slot2;
-        var1 = 6;
+        var1 = 5;
         var1 = var10[var1];
         var3 = undefined;
         var6 = var9.bind(var3)(var1);
@@ -159,7 +274,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = var9.bind(var3)(var0);
         var1 = var0.TableSwitchRow;
         var0 = {};
-        var6 = 8;
+        var6 = 7;
         var7 = var10[var6];
         var7 = var9.bind(var3)(var7);
         var11 = var7.intl;
@@ -182,19 +297,19 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0.subLabel = var6;
         var0.value = var5;
         var4 = function arg0() {
-            _fun84192: for (var _fun84192_ip = 0;;) switch (_fun84192_ip) {
+            _fun85284: for (var _fun85284_ip = 0;;) switch (_fun85284_ip) {
                 case 0:
-                    var2 = _closure1_slot15;
+                    var2 = _closure1_slot12;
                     var0 = _closure1_slot9;
                     var1 = arg0;
                     if (var1) {
-                        _fun84192_ip = 25;
-                        continue _fun84192
+                        _fun85284_ip = 25;
+                        continue _fun85284
                     }
                 case 17:
                     var1 = var0.NONE;
-                    _fun84192_ip = 31;
-                    continue _fun84192;
+                    _fun85284_ip = 31;
+                    continue _fun85284;
                 case 25:
                     var1 = var0.STANDARD;
                 case 31:
@@ -207,167 +322,48 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = var2.bind(var3)(var1, var0);
         return var0;
     };
-    var7 = {};
-    var7 = var11.bind(var0)(var10, var7);
-    var _closure1_slot11 = var7;
-    var10 = function() {
-        _fun84188: for (var _fun84188_ip = 0;;) switch (_fun84188_ip) {
-            case 0:
-                var14 = _closure1_slot0;
-                var15 = _closure1_slot2;
-                var0 = 6;
-                var0 = var15[var0];
-                var3 = undefined;
-                var4 = var14.bind(var3)(var0);
-                var2 = var4.useStateFromStoresObject;
-                var0 = _closure1_slot3;
-                var1 = new Array(1);
-                var1[0] = var0;
-                var0 = function() { // Environment: var0
-                    var0 = {};
-                    var3 = _closure1_slot3;
-                    var2 = var3.getNoiseSuppression;
-                    var2 = var2.bind(var3)();
-                    var0.noiseSuppression = var2;
-                    var2 = _closure1_slot3;
-                    var1 = var2.getNoiseCancellation;
-                    var1 = var1.bind(var2)();
-                    var0.noiseCancellation = var1;
-                    return var0;
-                };
-                var0 = var2.bind(var4)(var1, var0);
-                var2 = var0.noiseCancellation;
-                var1 = var0.noiseSuppression;
-                var0 = _closure1_slot9;
-                if (var2) {
-                    _fun84188_ip = 96;
-                    continue _fun84188
-                }
-            case 77:
-                if (var1) {
-                    _fun84188_ip = 88;
-                    continue _fun84188
-                }
-            case 80:
-                var7 = var0.NONE;
-                _fun84188_ip = 94;
-                continue _fun84188;
-            case 88:
-                var7 = var0.STANDARD;
-            case 94:
-                _fun84188_ip = 102;
-                continue _fun84188;
-            case 96:
-                var7 = var0.KRISP;
-            case 102:
-                var2 = _closure1_slot7;
-                var1 = _closure1_slot8;
-                var0 = {};
-                var4 = 7;
-                var4 = var15[var4];
-                var4 = var14.bind(var3)(var4);
-                var6 = var4.TableRadioGroup;
-                var4 = {};
-                var4.value = var7;
-                var7 = _closure1_slot15;
-                var4.onChange = var7;
-                var11 = 8;
-                var7 = var15[var11];
-                var7 = var14.bind(var3)(var7);
-                var9 = var7.intl;
-                var8 = var9.string;
-                var7 = var15[var11];
-                var7 = var14.bind(var3)(var7);
-                var7 = var7.t;
-                var7 = var7.t8Qhib;
-                var7 = var8.bind(var9)(var7);
-                var4.title = var7;
-                var7 = var15[var11];
-                var7 = var14.bind(var3)(var7);
-                var9 = var7.intl;
-                var8 = var9.string;
-                var7 = var15[var11];
-                var7 = var14.bind(var3)(var7);
-                var7 = var7.t;
-                var7 = var7.najZCV;
-                var7 = var8.bind(var9)(var7);
-                var4.description = var7;
-                var10 = _closure1_slot6;
-                var8 = 9;
-                var7 = var15[var8];
-                var7 = var14.bind(var3)(var7);
-                var9 = var7.TableRadioRow;
-                var7 = {};
-                var12 = _closure1_slot9;
-                var12 = var12.KRISP;
-                var7.value = var12;
-                var12 = var15[var11];
-                var12 = var14.bind(var3)(var12);
-                var16 = var12.intl;
-                var13 = var16.string;
-                var12 = var15[var11];
-                var12 = var14.bind(var3)(var12);
-                var12 = var12.t;
-                var12 = var12.rdoNzt;
-                var12 = var13.bind(var16)(var12);
-                var7.label = var12;
-                var9 = var10.bind(var3)(var9, var7);
-                var7 = new Array(3);
-                var7[0] = var9;
-                var12 = _closure1_slot6;
-                var9 = var15[var8];
-                var9 = var14.bind(var3)(var9);
-                var10 = var9.TableRadioRow;
-                var9 = {};
-                var13 = _closure1_slot9;
-                var13 = var13.STANDARD;
-                var9.value = var13;
-                var13 = var15[var11];
-                var13 = var14.bind(var3)(var13);
-                var17 = var13.intl;
-                var16 = var17.string;
-                var13 = var15[var11];
-                var13 = var14.bind(var3)(var13);
-                var13 = var13.t;
-                var13 = var13.qXeYHw;
-                var13 = var16.bind(var17)(var13);
-                var9.label = var13;
-                var9 = var12.bind(var3)(var10, var9);
-                var7[1] = var9;
-                var10 = _closure1_slot6;
-                var8 = var15[var8];
-                var8 = var14.bind(var3)(var8);
-                var9 = var8.TableRadioRow;
-                var8 = {};
-                var12 = _closure1_slot9;
-                var12 = var12.NONE;
-                var8.value = var12;
-                var12 = var15[var11];
-                var12 = var14.bind(var3)(var12);
-                var13 = var12.intl;
-                var12 = var13.string;
-                var11 = var15[var11];
-                var11 = var14.bind(var3)(var11);
-                var11 = var11.t;
-                var11 = var11.wkYAlz;
-                var11 = var12.bind(var13)(var11);
-                var8.label = var11;
-                var8 = var10.bind(var3)(var9, var8);
-                var7[2] = var8;
-                var4.children = var7;
-                var6 = var2.bind(var3)(var6, var4);
-                var4 = new Array(2);
-                var4[0] = var6;
-                var5 = _closure1_slot10;
-                var4[1] = var5;
-                var0.children = var4;
-                var0 = var2.bind(var3)(var1, var0);
-                return var0;
-        }
-    };
-    var7 = {};
-    var7 = var11.bind(var0)(var10, var7);
-    var _closure1_slot12 = var7;
+    var _closure1_slot14 = var0;
+    var0 = global;
+    var11 = var0.Object;
+    var10 = var11.defineProperty;
+    var1 = {};
+    var0 = true;
+    var1.value = var0;
+    var0 = '__esModule';
+    var0 = var10.bind(var11)(var2, var0, var1);
+    var0 = 0;
+    var10 = var9[var0];
+    var1 = arg3;
+    var0 = undefined;
+    var1 = var1.bind(var0)(var10);
+    var1 = 1;
+    var1 = var9[var1];
+    var1 = var7.bind(var0)(var1);
+    var _closure1_slot3 = var1;
+    var1 = 2;
+    var1 = var9[var1];
+    var1 = var8.bind(var0)(var1);
+    var7 = var1.AnalyticsPages;
+    var _closure1_slot4 = var7;
+    var1 = var1.AnalyticsSections;
+    var _closure1_slot5 = var1;
+    var1 = 3;
+    var1 = var9[var1];
+    var1 = var8.bind(var0)(var1);
+    var7 = var1.jsx;
+    var _closure1_slot6 = var7;
+    var7 = var1.jsxs;
+    var _closure1_slot7 = var7;
+    var1 = var1.Fragment;
+    var _closure1_slot8 = var1;
+    var1 = {};
+    var7 = 'NONE';
+    var1.NONE = var7;
+    var7 = 'STANDARD';
+    var1.STANDARD = var7;
+    var7 = 'KRISP';
+    var1.KRISP = var7;
+    var _closure1_slot9 = var1;
     var7 = 12;
     var7 = var9[var7];
     var9 = var8.bind(var0)(var7);
@@ -375,11 +371,11 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = 'modules/user_settings/native/voice/UserSettingsVoiceProcessing.tsx';
     var7 = var8.bind(var9)(var7);
     var6 = function() {
-        _fun84193: for (var _fun84193_ip = 0;;) switch (_fun84193_ip) {
+        _fun85285: for (var _fun85285_ip = 0;;) switch (_fun85285_ip) {
             case 0:
                 var22 = _closure1_slot0;
                 var18 = _closure1_slot2;
-                var0 = 6;
+                var0 = 5;
                 var0 = var18[var0];
                 var3 = undefined;
                 var4 = var22.bind(var3)(var0);
@@ -432,7 +428,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var22.bind(var3)(var4);
                 var7 = var4.TableRowGroup;
                 var4 = {};
-                var19 = 8;
+                var19 = 7;
                 var8 = var18[var19];
                 var8 = var22.bind(var3)(var8);
                 var12 = var8.intl;
@@ -460,31 +456,37 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var18 = var20.bind(var21)(var18);
                 var8.label = var18;
                 var8.value = var17;
-                var17 = _closure1_slot14;
+                var17 = _closure1_slot11;
                 var8.onValueChange = var17;
                 var12 = var15.bind(var3)(var12, var8);
                 var8 = new Array(2);
                 var8[0] = var12;
                 var12 = !var6;
                 if (!var12) {
-                    _fun84193_ip = 288;
-                    continue _fun84193
+                    _fun85285_ip = 300;
+                    continue _fun85285
                 }
             case 284:
-                var12 = _closure1_slot11;
-            case 288:
+                var18 = _closure1_slot6;
+                var17 = _closure1_slot14;
+                var15 = {};
+                var12 = var18.bind(var3)(var17, var15);
+            case 300:
                 var8[1] = var12;
                 var4.children = var8;
                 var7 = var2.bind(var3)(var7, var4);
                 var4 = new Array(3);
                 var4[0] = var7;
                 if (!var6) {
-                    _fun84193_ip = 317;
-                    continue _fun84193
+                    _fun85285_ip = 341;
+                    continue _fun85285
                 }
-            case 313:
-                var6 = _closure1_slot12;
-            case 317:
+            case 325:
+                var12 = _closure1_slot6;
+                var8 = _closure1_slot13;
+                var7 = {};
+                var6 = var12.bind(var3)(var8, var7);
+            case 341:
                 var4[1] = var6;
                 var7 = _closure1_slot7;
                 var21 = _closure1_slot0;
@@ -519,16 +521,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var17 = var18.bind(var20)(var17);
                 var8.subLabel = var17;
                 var8.value = var16;
-                var16 = _closure1_slot13;
+                var16 = _closure1_slot10;
                 var8.onValueChange = var16;
                 var12 = var15.bind(var3)(var12, var8);
                 var8 = new Array(2);
                 var8[0] = var12;
                 if (!var9) {
-                    _fun84193_ip = 649;
-                    continue _fun84193
+                    _fun85285_ip = 673;
+                    continue _fun85285
                 }
-            case 501:
+            case 525:
                 var12 = _closure1_slot6;
                 var18 = _closure1_slot0;
                 var15 = _closure1_slot2;
@@ -574,7 +576,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var10.onValueChange = var13;
                 var9 = var12.bind(var3)(var11, var10);
-            case 649:
+            case 673:
                 var8[1] = var9;
                 var5.children = var8;
                 var5 = var7.bind(var3)(var6, var5);
@@ -590,4 +592,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.handleNoiseSuppressionChange = var3;
     var2.NoiseSuppressionOpt = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 3473, 660, 33, 8573, 10701, 566, 5481, 1234, 5480, 5344, 5343, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 3474, 660, 33, 8268, 566, 5482, 1235, 5481, 8543, 5476, 5423, 2]);

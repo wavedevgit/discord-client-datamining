@@ -11,14 +11,14 @@ import java.util.Map;
 public class e {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Map f37184a = new HashMap();
+    private final Map f37752a = new HashMap();
 
     /* renamed from: b  reason: collision with root package name */
-    private final List f37185b = new ArrayList();
+    private final List f37753b = new ArrayList();
 
     private e a(String str, Object obj) {
-        this.f37184a.put((String) oe.a.e(str), oe.a.e(obj));
-        this.f37185b.remove(str);
+        this.f37752a.put((String) oe.a.e(str), oe.a.e(obj));
+        this.f37753b.remove(str);
         return this;
     }
 
@@ -34,7 +34,7 @@ public class e {
     }
 
     public Map b() {
-        HashMap hashMap = new HashMap(this.f37184a);
+        HashMap hashMap = new HashMap(this.f37752a);
         for (Map.Entry entry : hashMap.entrySet()) {
             Object value = entry.getValue();
             if (value instanceof byte[]) {
@@ -46,12 +46,12 @@ public class e {
     }
 
     public List c() {
-        return Collections.unmodifiableList(new ArrayList(this.f37185b));
+        return Collections.unmodifiableList(new ArrayList(this.f37753b));
     }
 
     public e d(String str) {
-        this.f37185b.add(str);
-        this.f37184a.remove(str);
+        this.f37753b.add(str);
+        this.f37752a.remove(str);
         return this;
     }
 

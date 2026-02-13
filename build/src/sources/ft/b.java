@@ -42,7 +42,7 @@ public final class b extends s implements Executor {
 
     @Override // java.util.concurrent.Executor
     public void execute(Runnable runnable) {
-        b1(kotlin.coroutines.e.f32062d, runnable);
+        b1(kotlin.coroutines.e.f32630d, runnable);
     }
 
     @Override // kotlinx.coroutines.CoroutineDispatcher

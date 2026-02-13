@@ -5,7 +5,7 @@ import bj.c;
 final class tb implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final tb f47165a = new tb();
+    static final tb f47733a = new tb();
 
     static {
         c.b a10 = bj.c.a("errorCode");

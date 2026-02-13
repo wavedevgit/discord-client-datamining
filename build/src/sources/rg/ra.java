@@ -5,7 +5,7 @@ import bj.c;
 final class ra implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final ra f47107a = new ra();
+    static final ra f47675a = new ra();
 
     static {
         c.b a10 = bj.c.a("confidence");

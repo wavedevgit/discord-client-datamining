@@ -5,16 +5,16 @@ import com.facebook.react.fabric.mounting.mountitems.IntBufferBatchMountItem;
 public final class i0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private byte[] f38959a;
+    private byte[] f39527a;
 
     /* renamed from: b  reason: collision with root package name */
-    private int f38960b;
+    private int f39528b;
 
     /* renamed from: c  reason: collision with root package name */
-    private int f38961c;
+    private int f39529c;
 
     /* renamed from: d  reason: collision with root package name */
-    private int f38962d;
+    private int f39530d;
 
     public i0(byte[] bArr, int i10, int i11) {
         i(bArr, i10, i11);
@@ -23,8 +23,8 @@ public final class i0 {
     private void a() {
         boolean z10;
         int i10;
-        int i11 = this.f38961c;
-        if (i11 >= 0 && (i11 < (i10 = this.f38960b) || (i11 == i10 && this.f38962d == 0))) {
+        int i11 = this.f39529c;
+        if (i11 >= 0 && (i11 < (i10 = this.f39528b) || (i11 == i10 && this.f39530d == 0))) {
             z10 = true;
         } else {
             z10 = false;
@@ -46,8 +46,8 @@ public final class i0 {
     }
 
     private boolean j(int i10) {
-        if (2 <= i10 && i10 < this.f38960b) {
-            byte[] bArr = this.f38959a;
+        if (2 <= i10 && i10 < this.f39528b) {
+            byte[] bArr = this.f39527a;
             if (bArr[i10] == 3 && bArr[i10 - 2] == 0 && bArr[i10 - 1] == 0) {
                 return true;
             }
@@ -57,24 +57,24 @@ public final class i0 {
     }
 
     public boolean b(int i10) {
-        int i11 = this.f38961c;
+        int i11 = this.f39529c;
         int i12 = i10 / 8;
         int i13 = i11 + i12;
-        int i14 = (this.f38962d + i10) - (i12 * 8);
+        int i14 = (this.f39530d + i10) - (i12 * 8);
         if (i14 > 7) {
             i13++;
             i14 -= 8;
         }
         while (true) {
             i11++;
-            if (i11 > i13 || i13 >= this.f38960b) {
+            if (i11 > i13 || i13 >= this.f39528b) {
                 break;
             } else if (j(i11)) {
                 i13++;
                 i11 += 2;
             }
         }
-        int i15 = this.f38960b;
+        int i15 = this.f39528b;
         if (i13 < i15) {
             return true;
         }
@@ -86,19 +86,19 @@ public final class i0 {
 
     public boolean c() {
         boolean z10;
-        int i10 = this.f38961c;
-        int i11 = this.f38962d;
+        int i10 = this.f39529c;
+        int i11 = this.f39530d;
         int i12 = 0;
-        while (this.f38961c < this.f38960b && !d()) {
+        while (this.f39529c < this.f39528b && !d()) {
             i12++;
         }
-        if (this.f38961c == this.f38960b) {
+        if (this.f39529c == this.f39528b) {
             z10 = true;
         } else {
             z10 = false;
         }
-        this.f38961c = i10;
-        this.f38962d = i11;
+        this.f39529c = i10;
+        this.f39530d = i11;
         if (z10 || !b((i12 * 2) + 1)) {
             return false;
         }
@@ -107,7 +107,7 @@ public final class i0 {
 
     public boolean d() {
         boolean z10;
-        if ((this.f38959a[this.f38961c] & (IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT >> this.f38962d)) != 0) {
+        if ((this.f39527a[this.f39529c] & (IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT >> this.f39530d)) != 0) {
             z10 = true;
         } else {
             z10 = false;
@@ -119,33 +119,33 @@ public final class i0 {
     public int e(int i10) {
         int i11;
         int i12;
-        this.f38962d += i10;
+        this.f39530d += i10;
         int i13 = 0;
         while (true) {
-            i11 = this.f38962d;
+            i11 = this.f39530d;
             i12 = 2;
             if (i11 <= 8) {
                 break;
             }
             int i14 = i11 - 8;
-            this.f38962d = i14;
-            byte[] bArr = this.f38959a;
-            int i15 = this.f38961c;
+            this.f39530d = i14;
+            byte[] bArr = this.f39527a;
+            int i15 = this.f39529c;
             i13 |= (bArr[i15] & 255) << i14;
             if (!j(i15 + 1)) {
                 i12 = 1;
             }
-            this.f38961c = i15 + i12;
+            this.f39529c = i15 + i12;
         }
-        byte[] bArr2 = this.f38959a;
-        int i16 = this.f38961c;
+        byte[] bArr2 = this.f39527a;
+        int i16 = this.f39529c;
         int i17 = ((-1) >>> (32 - i10)) & (i13 | ((bArr2[i16] & 255) >> (8 - i11)));
         if (i11 == 8) {
-            this.f38962d = 0;
+            this.f39530d = 0;
             if (!j(i16 + 1)) {
                 i12 = 1;
             }
-            this.f38961c = i16 + i12;
+            this.f39529c = i16 + i12;
         }
         a();
         return i17;
@@ -167,44 +167,44 @@ public final class i0 {
     }
 
     public void i(byte[] bArr, int i10, int i11) {
-        this.f38959a = bArr;
-        this.f38961c = i10;
-        this.f38960b = i11;
-        this.f38962d = 0;
+        this.f39527a = bArr;
+        this.f39529c = i10;
+        this.f39528b = i11;
+        this.f39530d = 0;
         a();
     }
 
     public void k() {
         int i10 = 1;
-        int i11 = this.f38962d + 1;
-        this.f38962d = i11;
+        int i11 = this.f39530d + 1;
+        this.f39530d = i11;
         if (i11 == 8) {
-            this.f38962d = 0;
-            int i12 = this.f38961c;
+            this.f39530d = 0;
+            int i12 = this.f39529c;
             if (j(i12 + 1)) {
                 i10 = 2;
             }
-            this.f38961c = i12 + i10;
+            this.f39529c = i12 + i10;
         }
         a();
     }
 
     public void l(int i10) {
-        int i11 = this.f38961c;
+        int i11 = this.f39529c;
         int i12 = i10 / 8;
         int i13 = i11 + i12;
-        this.f38961c = i13;
-        int i14 = this.f38962d + (i10 - (i12 * 8));
-        this.f38962d = i14;
+        this.f39529c = i13;
+        int i14 = this.f39530d + (i10 - (i12 * 8));
+        this.f39530d = i14;
         if (i14 > 7) {
-            this.f38961c = i13 + 1;
-            this.f38962d = i14 - 8;
+            this.f39529c = i13 + 1;
+            this.f39530d = i14 - 8;
         }
         while (true) {
             i11++;
-            if (i11 <= this.f38961c) {
+            if (i11 <= this.f39529c) {
                 if (j(i11)) {
-                    this.f38961c++;
+                    this.f39529c++;
                     i11 += 2;
                 }
             } else {

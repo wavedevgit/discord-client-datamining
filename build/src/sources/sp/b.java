@@ -16,65 +16,65 @@ import rp.n1;
 public final class b implements ViewBinding {
 
     /* renamed from: a  reason: collision with root package name */
-    private final CoordinatorLayout f48178a;
+    private final CoordinatorLayout f48746a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final FrameLayout f48179b;
+    public final FrameLayout f48747b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final ConstraintLayout f48180c;
+    public final ConstraintLayout f48748c;
 
     /* renamed from: d  reason: collision with root package name */
-    public final Flow f48181d;
+    public final Flow f48749d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final TextView f48182e;
+    public final TextView f48750e;
 
     /* renamed from: f  reason: collision with root package name */
-    public final Button f48183f;
+    public final Button f48751f;
 
     /* renamed from: g  reason: collision with root package name */
-    public final Button f48184g;
+    public final Button f48752g;
 
     /* renamed from: h  reason: collision with root package name */
-    public final View f48185h;
+    public final View f48753h;
 
     /* renamed from: i  reason: collision with root package name */
-    public final TextView f48186i;
+    public final TextView f48754i;
 
     private b(CoordinatorLayout coordinatorLayout, FrameLayout frameLayout, ConstraintLayout constraintLayout, Flow flow, TextView textView, Button button, Button button2, View view, TextView textView2) {
-        this.f48178a = coordinatorLayout;
-        this.f48179b = frameLayout;
-        this.f48180c = constraintLayout;
-        this.f48181d = flow;
-        this.f48182e = textView;
-        this.f48183f = button;
-        this.f48184g = button2;
-        this.f48185h = view;
-        this.f48186i = textView2;
+        this.f48746a = coordinatorLayout;
+        this.f48747b = frameLayout;
+        this.f48748c = constraintLayout;
+        this.f48749d = flow;
+        this.f48750e = textView;
+        this.f48751f = button;
+        this.f48752g = button2;
+        this.f48753h = view;
+        this.f48754i = textView2;
     }
 
     public static b a(View view) {
         View a10;
-        int i10 = m1.f47663a;
+        int i10 = m1.f48231a;
         FrameLayout frameLayout = (FrameLayout) e4.a.a(view, i10);
         if (frameLayout != null) {
-            i10 = m1.f47664b;
+            i10 = m1.f48232b;
             ConstraintLayout constraintLayout = (ConstraintLayout) e4.a.a(view, i10);
             if (constraintLayout != null) {
-                i10 = m1.f47665c;
+                i10 = m1.f48233c;
                 Flow flow = (Flow) e4.a.a(view, i10);
                 if (flow != null) {
-                    i10 = m1.f47666d;
+                    i10 = m1.f48234d;
                     TextView textView = (TextView) e4.a.a(view, i10);
                     if (textView != null) {
-                        i10 = m1.f47667e;
+                        i10 = m1.f48235e;
                         Button button = (Button) e4.a.a(view, i10);
                         if (button != null) {
-                            i10 = m1.f47668f;
+                            i10 = m1.f48236f;
                             Button button2 = (Button) e4.a.a(view, i10);
-                            if (button2 != null && (a10 = e4.a.a(view, (i10 = m1.f47669g))) != null) {
-                                i10 = m1.f47670h;
+                            if (button2 != null && (a10 = e4.a.a(view, (i10 = m1.f48237g))) != null) {
+                                i10 = m1.f48238h;
                                 TextView textView2 = (TextView) e4.a.a(view, i10);
                                 if (textView2 != null) {
                                     return new b((CoordinatorLayout) view, frameLayout, constraintLayout, flow, textView, button, button2, a10, textView2);
@@ -89,7 +89,7 @@ public final class b implements ViewBinding {
     }
 
     public static b c(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z10) {
-        View inflate = layoutInflater.inflate(n1.f47674b, viewGroup, false);
+        View inflate = layoutInflater.inflate(n1.f48242b, viewGroup, false);
         if (z10) {
             viewGroup.addView(inflate);
         }
@@ -99,6 +99,6 @@ public final class b implements ViewBinding {
     @Override // androidx.viewbinding.ViewBinding
     /* renamed from: b */
     public CoordinatorLayout getRoot() {
-        return this.f48178a;
+        return this.f48746a;
     }
 }

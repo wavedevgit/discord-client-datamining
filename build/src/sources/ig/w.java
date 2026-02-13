@@ -3,7 +3,7 @@ package ig;
 final class w extends v {
 
     /* renamed from: b  reason: collision with root package name */
-    static final x f27969b = new w();
+    static final x f28537b = new w();
 
     private w() {
         super("CharMatcher.none()");

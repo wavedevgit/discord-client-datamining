@@ -87,8 +87,8 @@ public final class LongPressMessageEvent implements ReactEvent {
         compositeEncoder.y(serialDescriptor, 1, longPressMessageEvent.channelId);
         compositeEncoder.w(serialDescriptor, 2, longPressMessageEvent.mediaIndex);
         compositeEncoder.y(serialDescriptor, 3, longPressMessageEvent.mediaType);
-        compositeEncoder.o(serialDescriptor, 4, n2.f50033a, longPressMessageEvent.componentId);
-        compositeEncoder.o(serialDescriptor, 5, p0.f50049a, longPressMessageEvent.componentMediaIndex);
+        compositeEncoder.o(serialDescriptor, 4, n2.f50601a, longPressMessageEvent.componentId);
+        compositeEncoder.o(serialDescriptor, 5, p0.f50617a, longPressMessageEvent.componentMediaIndex);
     }
 
     @NotNull

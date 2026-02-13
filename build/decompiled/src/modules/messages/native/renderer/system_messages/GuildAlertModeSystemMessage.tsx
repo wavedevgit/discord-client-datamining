@@ -42,7 +42,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.bind(var6)(var4);
     var2.resolveAlertModeColors = var3;
     var3 = function arg0() {
-        _fun56528: for (var _fun56528_ip = 0;;) switch (_fun56528_ip) {
+        _fun56563: for (var _fun56563_ip = 0;;) switch (_fun56563_ip) {
             case 0:
                 var7 = arg0;
                 var14 = var7.message;
@@ -91,32 +91,32 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = 'username';
                 var1 = null;
                 if (!(var6 === var10)) {
-                    _fun56528_ip = 217;
-                    continue _fun56528
+                    _fun56563_ip = 218;
+                    continue _fun56563
                 }
-            case 214:
+            case 215:
                 var1 = var9;
-            case 217:
+            case 218:
                 var0.linkColor = var1;
                 var0.roleColor = var9;
                 var1 = null;
                 if (!var15) {
-                    _fun56528_ip = 235;
-                    continue _fun56528
+                    _fun56563_ip = 236;
+                    continue _fun56563
                 }
-            case 232:
+            case 233:
                 var1 = var11;
-            case 235:
+            case 236:
                 var0.roleColors = var1;
                 var1 = 'dot';
                 var1 = var1 === var10;
                 if (!var1) {
-                    _fun56528_ip = 255;
-                    continue _fun56528
+                    _fun56563_ip = 256;
+                    continue _fun56563
                 }
-            case 251:
+            case 252:
                 var1 = var4 != var9;
-            case 255:
+            case 256:
                 var0.shouldShowRoleDot = var1;
                 var1 = var14.channel_id;
                 var0.messageChannelId = var1;
@@ -126,10 +126,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var14.content;
                 var0 = '';
                 if (!(var0 !== var1)) {
-                    _fun56528_ip = 385;
-                    continue _fun56528
+                    _fun56563_ip = 386;
+                    continue _fun56563
                 }
-            case 295:
+            case 296:
                 var1 = global;
                 var11 = var1.Date;
                 var19 = var14.content;
@@ -155,7 +155,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     'minute': '2-digit'
                 };
                 var0 = var11.bind(var15)(var9, var1);
-            case 385:
+            case 386:
                 var13.time = var0;
                 var9 = _closure1_slot1;
                 var11 = _closure1_slot2;
@@ -201,12 +201,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var4 != var3;
                 var4 = null;
                 if (!var5) {
-                    _fun56528_ip = 585;
-                    continue _fun56528
+                    _fun56563_ip = 586;
+                    continue _fun56563
                 }
-            case 582:
+            case 583:
                 var4 = var3;
-            case 585:
+            case 586:
                 var3 = 'usernameColor';
                 var0[var3] = var4;
                 var7 = _closure1_slot0;
@@ -236,7 +236,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.createGuildAlertModeEnabledSystemMessage = var3;
     var1 = function arg0() {
-        _fun56529: for (var _fun56529_ip = 0;;) switch (_fun56529_ip) {
+        _fun56564: for (var _fun56564_ip = 0;;) switch (_fun56564_ip) {
             case 0:
                 var7 = arg0;
                 var12 = var7.message;
@@ -281,32 +281,32 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = 'username';
                 var1 = null;
                 if (!(var6 === var10)) {
-                    _fun56529_ip = 198;
-                    continue _fun56529
+                    _fun56564_ip = 199;
+                    continue _fun56564
                 }
-            case 195:
+            case 196:
                 var1 = var9;
-            case 198:
+            case 199:
                 var0.linkColor = var1;
                 var0.roleColor = var9;
                 var1 = null;
                 if (!var14) {
-                    _fun56529_ip = 216;
-                    continue _fun56529
+                    _fun56564_ip = 217;
+                    continue _fun56564
                 }
-            case 213:
+            case 214:
                 var1 = var11;
-            case 216:
+            case 217:
                 var0.roleColors = var1;
                 var1 = 'dot';
                 var1 = var1 === var10;
                 if (!var1) {
-                    _fun56529_ip = 236;
-                    continue _fun56529
+                    _fun56564_ip = 237;
+                    continue _fun56564
                 }
-            case 232:
+            case 233:
                 var1 = var4 != var9;
-            case 236:
+            case 237:
                 var0.shouldShowRoleDot = var1;
                 var1 = var12.channel_id;
                 var0.messageChannelId = var1;
@@ -357,12 +357,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var4 != var3;
                 var4 = null;
                 if (!var5) {
-                    _fun56529_ip = 458;
-                    continue _fun56529
+                    _fun56564_ip = 459;
+                    continue _fun56564
                 }
-            case 455:
+            case 456:
                 var4 = var3;
-            case 458:
+            case 459:
                 var3 = 'usernameColor';
                 var0[var3] = var4;
                 var7 = _closure1_slot0;
@@ -392,4 +392,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.createGuildAlertModeDisabledSystemMessage = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1372, 1297, 671, 6762, 6770, 6771, 1234, 6845, 6772, 1418, 1417, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1372, 1297, 671, 6744, 6752, 6753, 1235, 6827, 6754, 1418, 1417, 2]);

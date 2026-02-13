@@ -40,8 +40,8 @@ public /* synthetic */ class AppMessageActionImpl$$serializer implements h0 {
     @Override // tt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        KSerializer u10 = rt.a.u(h.f49997a);
-        n2 n2Var = n2.f50033a;
+        KSerializer u10 = rt.a.u(h.f50565a);
+        n2 n2Var = n2.f50601a;
         return new KSerializer[]{n2Var, n2Var, u10};
     }
 
@@ -60,7 +60,7 @@ public /* synthetic */ class AppMessageActionImpl$$serializer implements h0 {
             String m10 = b10.m(serialDescriptor, 0);
             String m11 = b10.m(serialDescriptor, 1);
             str = m10;
-            bool = (Boolean) b10.n(serialDescriptor, 2, h.f49997a, null);
+            bool = (Boolean) b10.n(serialDescriptor, 2, h.f50565a, null);
             str2 = m11;
             i10 = 7;
         } else {
@@ -81,7 +81,7 @@ public /* synthetic */ class AppMessageActionImpl$$serializer implements h0 {
                 } else if (o10 != 2) {
                     throw new b0(o10);
                 } else {
-                    bool2 = (Boolean) b10.n(serialDescriptor, 2, h.f49997a, bool2);
+                    bool2 = (Boolean) b10.n(serialDescriptor, 2, h.f50565a, bool2);
                     i11 |= 4;
                 }
             }

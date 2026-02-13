@@ -15,10 +15,10 @@ public abstract class r {
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        public t f50689a;
+        public t f51257a;
 
         public a(t tVar) {
-            this.f50689a = tVar;
+            this.f51257a = tVar;
         }
     }
 
@@ -49,7 +49,7 @@ public abstract class r {
         if (z10) {
             aVar = null;
         } else {
-            aVar = md.h.f36310b;
+            aVar = md.h.f36878b;
         }
         Metadata a10 = new w().a(lVar, aVar);
         if (a10 == null || a10.e() == 0) {
@@ -69,27 +69,27 @@ public abstract class r {
     public static boolean e(l lVar, a aVar) {
         lVar.e();
         g0 g0Var = new g0(new byte[4]);
-        lVar.n(g0Var.f38947a, 0, 4);
+        lVar.n(g0Var.f39515a, 0, 4);
         boolean g10 = g0Var.g();
         int h10 = g0Var.h(7);
         int h11 = g0Var.h(24) + 4;
         if (h10 == 0) {
-            aVar.f50689a = h(lVar);
+            aVar.f51257a = h(lVar);
             return g10;
         }
-        t tVar = aVar.f50689a;
+        t tVar = aVar.f51257a;
         if (tVar != null) {
             if (h10 == 3) {
-                aVar.f50689a = tVar.b(g(lVar, h11));
+                aVar.f51257a = tVar.b(g(lVar, h11));
                 return g10;
             } else if (h10 == 4) {
-                aVar.f50689a = tVar.c(j(lVar, h11));
+                aVar.f51257a = tVar.c(j(lVar, h11));
                 return g10;
             } else if (h10 == 6) {
                 h0 h0Var = new h0(h11);
                 lVar.readFully(h0Var.e(), 0, h11);
                 h0Var.V(4);
-                aVar.f50689a = tVar.a(qi.s.u(kd.a.a(h0Var)));
+                aVar.f51257a = tVar.a(qi.s.u(kd.a.a(h0Var)));
                 return g10;
             } else {
                 lVar.k(h11);
@@ -151,6 +151,6 @@ public abstract class r {
         h0 h0Var = new h0(i10);
         lVar.readFully(h0Var.e(), 0, i10);
         h0Var.V(4);
-        return Arrays.asList(e0.i(h0Var, false, false).f50650b);
+        return Arrays.asList(e0.i(h0Var, false, false).f51218b);
     }
 }

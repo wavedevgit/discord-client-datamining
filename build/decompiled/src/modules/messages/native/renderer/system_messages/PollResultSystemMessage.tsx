@@ -39,7 +39,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/messages/native/renderer/system_messages/PollResultSystemMessage.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun56552: for (var _fun56552_ip = 0;;) switch (_fun56552_ip) {
+        _fun56587: for (var _fun56587_ip = 0;;) switch (_fun56587_ip) {
             case 0:
                 var5 = arg0;
                 var1 = _closure1_slot1;
@@ -55,15 +55,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var1.bind(var4)(var0);
                 var0 = null;
                 if (!(var0 != var6)) {
-                    _fun56552_ip = 1116;
-                    continue _fun56552
+                    _fun56587_ip = 1117;
+                    continue _fun56587
                 }
             case 59:
                 var1 = var5.message;
                 var1 = var1.messageReference;
                 if (!(var0 != var1)) {
-                    _fun56552_ip = 1114;
-                    continue _fun56552
+                    _fun56587_ip = 1115;
+                    continue _fun56587
                 }
             case 77:
                 var8 = var5.message;
@@ -98,32 +98,32 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var14 = 'username';
                 var7 = null;
                 if (!(var14 === var11)) {
-                    _fun56552_ip = 229;
-                    continue _fun56552
+                    _fun56587_ip = 230;
+                    continue _fun56587
                 }
-            case 226:
+            case 227:
                 var7 = var10;
-            case 229:
+            case 230:
                 var1.linkColor = var7;
                 var1.roleColor = var10;
                 var7 = null;
                 if (!var13) {
-                    _fun56552_ip = 247;
-                    continue _fun56552
+                    _fun56587_ip = 248;
+                    continue _fun56587
                 }
-            case 244:
+            case 245:
                 var7 = var12;
-            case 247:
+            case 248:
                 var1.roleColors = var7;
                 var7 = 'dot';
                 var7 = var7 === var11;
                 if (!var7) {
-                    _fun56552_ip = 267;
-                    continue _fun56552
+                    _fun56587_ip = 268;
+                    continue _fun56587
                 }
-            case 263:
+            case 264:
                 var7 = var0 != var10;
-            case 267:
+            case 268:
                 var1.shouldShowRoleDot = var7;
                 var7 = var8.channel_id;
                 var1.messageChannelId = var7;
@@ -145,10 +145,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9.titleOnClick = var1;
                 var1 = var6.totalVotes;
                 if (!(var3 !== var1)) {
-                    _fun56552_ip = 964;
-                    continue _fun56552
+                    _fun56587_ip = 965;
+                    continue _fun56587
                 }
-            case 374:
+            case 375:
                 var1 = global;
                 var8 = var1.Math;
                 var7 = var8.round;
@@ -165,23 +165,23 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = var7.bind(var3)(var8, var1);
                 var1 = var6.victorAnswerId;
                 if (!(var0 != var1)) {
-                    _fun56552_ip = 882;
-                    continue _fun56552
+                    _fun56587_ip = 883;
+                    continue _fun56587
                 }
-            case 453:
+            case 454:
                 var12 = new Array(0);
                 var14 = var6.victorEmoji;
                 if (!(var0 != var14)) {
-                    _fun56552_ip = 733;
-                    continue _fun56552
+                    _fun56587_ip = 734;
+                    continue _fun56587
                 }
-            case 470:
+            case 471:
                 var1 = var14.id;
                 if (!(var0 == var1)) {
-                    _fun56552_ip = 557;
-                    continue _fun56552
+                    _fun56587_ip = 558;
+                    continue _fun56587
                 }
-            case 479:
+            case 480:
                 var3 = var12.push;
                 var1 = {};
                 var7 = 'emoji';
@@ -199,9 +199,9 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var14.name;
                 var1.surrogate = var7;
                 var1 = var3.bind(var12)(var1);
-                _fun56552_ip = 709;
-                continue _fun56552;
-            case 557:
+                _fun56587_ip = 710;
+                continue _fun56587;
+            case 558:
                 var3 = var12.push;
                 var1 = {};
                 var7 = var14.id;
@@ -237,14 +237,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var8.bind(var10)(var7);
                 var1.frozenSrc = var7;
                 var1 = var3.bind(var12)(var1);
-            case 709:
+            case 710:
                 var3 = var12.push;
                 var1 = {
                     'type': 'text',
                     'content': ' '
                 };
                 var1 = var3.bind(var12)(var1);
-            case 733:
+            case 734:
                 var3 = var12.push;
                 var1 = {};
                 var7 = 'text';
@@ -278,9 +278,9 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = 'percentage';
                 var1[var8] = var11;
                 var3 = var6.bind(var7)(var3, var1);
-                _fun56552_ip = 1069;
-                continue _fun56552;
-            case 882:
+                _fun56587_ip = 1070;
+                continue _fun56587;
+            case 883:
                 var6 = _closure1_slot0;
                 var10 = _closure1_slot2;
                 var1 = 3;
@@ -299,9 +299,9 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = 'percentage';
                 var1[var10] = var11;
                 var3 = var7.bind(var8)(var6, var1);
-                _fun56552_ip = 1069;
-                continue _fun56552;
-            case 964:
+                _fun56587_ip = 1070;
+                continue _fun56587;
+            case 965:
                 var6 = _closure1_slot0;
                 var10 = _closure1_slot2;
                 var1 = 3;
@@ -327,7 +327,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = 'sadEmojiHook';
                 var1[var9] = var10;
                 var3 = var7.bind(var8)(var6, var1);
-            case 1069:
+            case 1070:
                 var1 = {};
                 var6 = _closure1_slot1;
                 var7 = _closure1_slot2;
@@ -340,12 +340,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = 'content';
                 var1[var2] = var3;
                 return var1;
-            case 1114:
+            case 1115:
                 return var0;
-            case 1116:
+            case 1117:
                 return var0;
         }
     };
     var2.createPollResultSystemMessage = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1624, 6770, 6771, 1234, 1417, 3106, 6857, 6772, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1624, 6752, 6753, 1235, 1417, 3109, 6839, 6754, 2]);

@@ -22,56 +22,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 1;
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
-    var7 = var3.jsx;
-    var3 = 2;
-    var3 = var5[var3];
-    var3 = var4.bind(var0)(var3);
-    var6 = var3.ScreenIcon;
-    var3 = {};
-    var8 = 'xs';
-    var3.size = var8;
-    var3 = var7.bind(var0)(var6, var3);
+    var3 = var3.jsx;
     var _closure1_slot2 = var3;
-    var3 = 3;
-    var3 = var5[var3];
-    var3 = var4.bind(var0)(var3);
-    var6 = var3.XboxNeutralIcon;
-    var3 = {};
-    var3.size = var8;
-    var3 = var7.bind(var0)(var6, var3);
-    var _closure1_slot3 = var3;
-    var3 = 4;
-    var3 = var5[var3];
-    var3 = var4.bind(var0)(var3);
-    var6 = var3.PlaystationNeutralIcon;
-    var3 = {};
-    var3.size = var8;
-    var3 = var7.bind(var0)(var6, var3);
-    var _closure1_slot4 = var3;
-    var3 = 5;
-    var3 = var5[var3];
-    var3 = var4.bind(var0)(var3);
-    var6 = var3.NintendoSwitchNeutralIcon;
-    var3 = {};
-    var3.size = var8;
-    var3 = var7.bind(var0)(var6, var3);
-    var _closure1_slot5 = var3;
-    var3 = 6;
-    var3 = var5[var3];
-    var3 = var4.bind(var0)(var3);
-    var6 = var3.MobilePhoneIcon;
-    var3 = {};
-    var3.size = var8;
-    var3 = var7.bind(var0)(var6, var3);
-    var _closure1_slot6 = var3;
-    var3 = 7;
-    var3 = var5[var3];
-    var3 = var4.bind(var0)(var3);
-    var6 = var3.AppleNeutralIcon;
-    var3 = {};
-    var3.size = var8;
-    var3 = var7.bind(var0)(var6, var3);
-    var _closure1_slot7 = var3;
     var3 = 9;
     var3 = var5[var3];
     var5 = var4.bind(var0)(var3);
@@ -79,100 +31,160 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/game_update/native/GameUpdatePlatformIcon.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun118848: for (var _fun118848_ip = 0;;) switch (_fun118848_ip) {
+        _fun118872: for (var _fun118872_ip = 0;;) switch (_fun118872_ip) {
             case 0:
                 var0 = arg0;
                 var2 = var0.platform;
-                var3 = _closure1_slot0;
+                var4 = _closure1_slot0;
                 var1 = _closure1_slot1;
-                var5 = 8;
+                var5 = 2;
                 var1 = var1[var5];
-                var4 = undefined;
-                var1 = var3.bind(var4)(var1);
+                var3 = undefined;
+                var1 = var4.bind(var3)(var1);
                 var1 = var1.PlatformType;
                 var1 = var1.DESKTOP;
                 if (!(var1 !== var2)) {
-                    _fun118848_ip = 258;
-                    continue _fun118848
+                    _fun118872_ip = 471;
+                    continue _fun118872
                 }
             case 53:
-                var3 = _closure1_slot0;
+                var4 = _closure1_slot0;
                 var1 = _closure1_slot1;
                 var1 = var1[var5];
-                var1 = var3.bind(var4)(var1);
+                var1 = var4.bind(var3)(var1);
                 var1 = var1.PlatformType;
                 var1 = var1.XBOX;
                 if (!(var1 !== var2)) {
-                    _fun118848_ip = 252;
-                    continue _fun118848
+                    _fun118872_ip = 423;
+                    continue _fun118872
                 }
             case 89:
-                var3 = _closure1_slot0;
+                var4 = _closure1_slot0;
                 var1 = _closure1_slot1;
                 var1 = var1[var5];
-                var1 = var3.bind(var4)(var1);
+                var1 = var4.bind(var3)(var1);
                 var1 = var1.PlatformType;
                 var1 = var1.PLAYSTATION;
                 if (!(var1 !== var2)) {
-                    _fun118848_ip = 246;
-                    continue _fun118848
+                    _fun118872_ip = 375;
+                    continue _fun118872
                 }
             case 125:
-                var3 = _closure1_slot0;
+                var4 = _closure1_slot0;
                 var1 = _closure1_slot1;
                 var1 = var1[var5];
-                var1 = var3.bind(var4)(var1);
+                var1 = var4.bind(var3)(var1);
                 var1 = var1.PlatformType;
                 var1 = var1.NINTENDO;
                 if (!(var1 !== var2)) {
-                    _fun118848_ip = 240;
-                    continue _fun118848
+                    _fun118872_ip = 327;
+                    continue _fun118872
                 }
-            case 158:
-                var3 = _closure1_slot0;
+            case 161:
+                var4 = _closure1_slot0;
                 var1 = _closure1_slot1;
                 var1 = var1[var5];
-                var1 = var3.bind(var4)(var1);
+                var1 = var4.bind(var3)(var1);
                 var1 = var1.PlatformType;
                 var1 = var1.ANDROID;
                 if (!(var1 !== var2)) {
-                    _fun118848_ip = 234;
-                    continue _fun118848
+                    _fun118872_ip = 279;
+                    continue _fun118872
                 }
-            case 191:
-                var3 = _closure1_slot0;
+            case 194:
+                var4 = _closure1_slot0;
                 var1 = _closure1_slot1;
                 var1 = var1[var5];
-                var1 = var3.bind(var4)(var1);
+                var1 = var4.bind(var3)(var1);
                 var1 = var1.PlatformType;
                 var1 = var1.IOS;
                 if (!(var1 !== var2)) {
-                    _fun118848_ip = 228;
-                    continue _fun118848
+                    _fun118872_ip = 231;
+                    continue _fun118872
                 }
-            case 224:
+            case 227:
                 var1 = null;
                 return var1;
-            case 228:
-                var1 = _closure1_slot7;
+            case 231:
+                var4 = _closure1_slot2;
+                var2 = _closure1_slot0;
+                var5 = _closure1_slot1;
+                var1 = 8;
+                var1 = var5[var1];
+                var1 = var2.bind(var3)(var1);
+                var2 = var1.AppleNeutralIcon;
+                var1 = {};
+                var5 = 'xs';
+                var1.size = var5;
+                var1 = var4.bind(var3)(var2, var1);
                 return var1;
-            case 234:
-                var1 = _closure1_slot6;
+            case 279:
+                var4 = _closure1_slot2;
+                var2 = _closure1_slot0;
+                var5 = _closure1_slot1;
+                var1 = 7;
+                var1 = var5[var1];
+                var1 = var2.bind(var3)(var1);
+                var2 = var1.MobilePhoneIcon;
+                var1 = {};
+                var5 = 'xs';
+                var1.size = var5;
+                var1 = var4.bind(var3)(var2, var1);
                 return var1;
-            case 240:
-                var1 = _closure1_slot5;
+            case 327:
+                var4 = _closure1_slot2;
+                var2 = _closure1_slot0;
+                var5 = _closure1_slot1;
+                var1 = 6;
+                var1 = var5[var1];
+                var1 = var2.bind(var3)(var1);
+                var2 = var1.NintendoSwitchNeutralIcon;
+                var1 = {};
+                var5 = 'xs';
+                var1.size = var5;
+                var1 = var4.bind(var3)(var2, var1);
                 return var1;
-            case 246:
-                var1 = _closure1_slot4;
+            case 375:
+                var4 = _closure1_slot2;
+                var2 = _closure1_slot0;
+                var5 = _closure1_slot1;
+                var1 = 5;
+                var1 = var5[var1];
+                var1 = var2.bind(var3)(var1);
+                var2 = var1.PlaystationNeutralIcon;
+                var1 = {};
+                var5 = 'xs';
+                var1.size = var5;
+                var1 = var4.bind(var3)(var2, var1);
                 return var1;
-            case 252:
-                var1 = _closure1_slot3;
+            case 423:
+                var4 = _closure1_slot2;
+                var2 = _closure1_slot0;
+                var5 = _closure1_slot1;
+                var1 = 4;
+                var1 = var5[var1];
+                var1 = var2.bind(var3)(var1);
+                var2 = var1.XboxNeutralIcon;
+                var1 = {};
+                var5 = 'xs';
+                var1.size = var5;
+                var1 = var4.bind(var3)(var2, var1);
                 return var1;
-            case 258:
-                var0 = _closure1_slot2;
+            case 471:
+                var2 = _closure1_slot2;
+                var1 = _closure1_slot0;
+                var4 = _closure1_slot1;
+                var0 = 3;
+                var0 = var4[var0];
+                var0 = var1.bind(var3)(var0);
+                var1 = var0.ScreenIcon;
+                var0 = {};
+                var4 = 'xs';
+                var0.size = var4;
+                var0 = var2.bind(var3)(var1, var0);
                 return var0;
         }
     };
     var2.GameUpdatePlatformIcon = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 10407, 10621, 10619, 15143, 10410, 15145, 7666, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 7889, 10576, 10791, 10789, 15134, 10578, 15136, 2]);

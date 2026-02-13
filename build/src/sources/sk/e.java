@@ -6,69 +6,69 @@ import kk.g;
 public final class e {
 
     /* renamed from: h  reason: collision with root package name */
-    private static final e[] f48157h = a();
+    private static final e[] f48725h = a();
 
     /* renamed from: a  reason: collision with root package name */
-    private final int f48158a;
+    private final int f48726a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final int f48159b;
+    private final int f48727b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final int f48160c;
+    private final int f48728c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f48161d;
+    private final int f48729d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final int f48162e;
+    private final int f48730e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final c f48163f;
+    private final c f48731f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final int f48164g;
+    private final int f48732g;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class b {
 
         /* renamed from: a  reason: collision with root package name */
-        private final int f48165a;
+        private final int f48733a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final int f48166b;
+        private final int f48734b;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         public int a() {
-            return this.f48165a;
+            return this.f48733a;
         }
 
         /* JADX INFO: Access modifiers changed from: package-private */
         public int b() {
-            return this.f48166b;
+            return this.f48734b;
         }
 
         private b(int i10, int i11) {
-            this.f48165a = i10;
-            this.f48166b = i11;
+            this.f48733a = i10;
+            this.f48734b = i11;
         }
     }
 
     private e(int i10, int i11, int i12, int i13, int i14, c cVar) {
         b[] a10;
-        this.f48158a = i10;
-        this.f48159b = i11;
-        this.f48160c = i12;
-        this.f48161d = i13;
-        this.f48162e = i14;
-        this.f48163f = cVar;
+        this.f48726a = i10;
+        this.f48727b = i11;
+        this.f48728c = i12;
+        this.f48729d = i13;
+        this.f48730e = i14;
+        this.f48731f = cVar;
         int b10 = cVar.b();
         int i15 = 0;
         for (b bVar : cVar.a()) {
             i15 += bVar.a() * (bVar.b() + b10);
         }
-        this.f48164g = i15;
+        this.f48732g = i15;
     }
 
     private static e[] a() {
@@ -78,8 +78,8 @@ public final class e {
     public static e h(int i10, int i11) {
         e[] eVarArr;
         if ((i10 & 1) == 0 && (i11 & 1) == 0) {
-            for (e eVar : f48157h) {
-                if (eVar.f48159b == i10 && eVar.f48160c == i11) {
+            for (e eVar : f48725h) {
+                if (eVar.f48727b == i10 && eVar.f48728c == i11) {
                     return eVar;
                 }
             }
@@ -89,36 +89,36 @@ public final class e {
     }
 
     public int b() {
-        return this.f48162e;
+        return this.f48730e;
     }
 
     public int c() {
-        return this.f48161d;
+        return this.f48729d;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public c d() {
-        return this.f48163f;
+        return this.f48731f;
     }
 
     public int e() {
-        return this.f48160c;
+        return this.f48728c;
     }
 
     public int f() {
-        return this.f48159b;
+        return this.f48727b;
     }
 
     public int g() {
-        return this.f48164g;
+        return this.f48732g;
     }
 
     public int i() {
-        return this.f48158a;
+        return this.f48726a;
     }
 
     public String toString() {
-        return String.valueOf(this.f48158a);
+        return String.valueOf(this.f48726a);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -126,29 +126,29 @@ public final class e {
     public static final class c {
 
         /* renamed from: a  reason: collision with root package name */
-        private final int f48167a;
+        private final int f48735a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final b[] f48168b;
+        private final b[] f48736b;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         public b[] a() {
-            return this.f48168b;
+            return this.f48736b;
         }
 
         /* JADX INFO: Access modifiers changed from: package-private */
         public int b() {
-            return this.f48167a;
+            return this.f48735a;
         }
 
         private c(int i10, b bVar) {
-            this.f48167a = i10;
-            this.f48168b = new b[]{bVar};
+            this.f48735a = i10;
+            this.f48736b = new b[]{bVar};
         }
 
         private c(int i10, b bVar, b bVar2) {
-            this.f48167a = i10;
-            this.f48168b = new b[]{bVar, bVar2};
+            this.f48735a = i10;
+            this.f48736b = new b[]{bVar, bVar2};
         }
     }
 }

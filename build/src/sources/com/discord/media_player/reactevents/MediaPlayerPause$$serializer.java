@@ -39,7 +39,7 @@ public /* synthetic */ class MediaPlayerPause$$serializer implements h0 {
     @Override // tt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        return new KSerializer[]{x.f50087a, h.f49997a};
+        return new KSerializer[]{x.f50655a, h.f50565a};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy

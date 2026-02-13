@@ -8,23 +8,23 @@ import oe.w0;
 public final class v {
 
     /* renamed from: c  reason: collision with root package name */
-    private static final Pattern f50707c = Pattern.compile("^ [0-9a-fA-F]{8} ([0-9a-fA-F]{8}) ([0-9a-fA-F]{8})");
+    private static final Pattern f51275c = Pattern.compile("^ [0-9a-fA-F]{8} ([0-9a-fA-F]{8}) ([0-9a-fA-F]{8})");
 
     /* renamed from: a  reason: collision with root package name */
-    public int f50708a = -1;
+    public int f51276a = -1;
 
     /* renamed from: b  reason: collision with root package name */
-    public int f50709b = -1;
+    public int f51277b = -1;
 
     private boolean b(String str) {
-        Matcher matcher = f50707c.matcher(str);
+        Matcher matcher = f51275c.matcher(str);
         if (matcher.find()) {
             try {
                 int parseInt = Integer.parseInt((String) w0.j(matcher.group(1)), 16);
                 int parseInt2 = Integer.parseInt((String) w0.j(matcher.group(2)), 16);
                 if (parseInt > 0 || parseInt2 > 0) {
-                    this.f50708a = parseInt;
-                    this.f50709b = parseInt2;
+                    this.f51276a = parseInt;
+                    this.f51277b = parseInt2;
                     return true;
                 }
                 return false;
@@ -36,7 +36,7 @@ public final class v {
     }
 
     public boolean a() {
-        if (this.f50708a != -1 && this.f50709b != -1) {
+        if (this.f51276a != -1 && this.f51277b != -1) {
             return true;
         }
         return false;
@@ -47,12 +47,12 @@ public final class v {
             Metadata.b d10 = metadata.d(i10);
             if (d10 instanceof md.e) {
                 md.e eVar = (md.e) d10;
-                if ("iTunSMPB".equals(eVar.f36304i) && b(eVar.f36305o)) {
+                if ("iTunSMPB".equals(eVar.f36872i) && b(eVar.f36873o)) {
                     return true;
                 }
             } else if (d10 instanceof md.j) {
                 md.j jVar = (md.j) d10;
-                if ("com.apple.iTunes".equals(jVar.f36316e) && "iTunSMPB".equals(jVar.f36317i) && b(jVar.f36318o)) {
+                if ("com.apple.iTunes".equals(jVar.f36884e) && "iTunSMPB".equals(jVar.f36885i) && b(jVar.f36886o)) {
                     return true;
                 }
             } else {
@@ -68,8 +68,8 @@ public final class v {
         if (i11 <= 0 && i12 <= 0) {
             return false;
         }
-        this.f50708a = i11;
-        this.f50709b = i12;
+        this.f51276a = i11;
+        this.f51277b = i12;
         return true;
     }
 }

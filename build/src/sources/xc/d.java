@@ -19,7 +19,7 @@ import uc.z;
 public final class d implements k {
 
     /* renamed from: o  reason: collision with root package name */
-    public static final p f54464o = new p() { // from class: xc.c
+    public static final p f55032o = new p() { // from class: xc.c
         @Override // uc.p
         public final k[] b() {
             return d.b();
@@ -27,46 +27,46 @@ public final class d implements k {
     };
 
     /* renamed from: a  reason: collision with root package name */
-    private final byte[] f54465a;
+    private final byte[] f55033a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final h0 f54466b;
+    private final h0 f55034b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final boolean f54467c;
+    private final boolean f55035c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final q.a f54468d;
+    private final q.a f55036d;
 
     /* renamed from: e  reason: collision with root package name */
-    private m f54469e;
+    private m f55037e;
 
     /* renamed from: f  reason: collision with root package name */
-    private b0 f54470f;
+    private b0 f55038f;
 
     /* renamed from: g  reason: collision with root package name */
-    private int f54471g;
+    private int f55039g;
 
     /* renamed from: h  reason: collision with root package name */
-    private Metadata f54472h;
+    private Metadata f55040h;
 
     /* renamed from: i  reason: collision with root package name */
-    private t f54473i;
+    private t f55041i;
 
     /* renamed from: j  reason: collision with root package name */
-    private int f54474j;
+    private int f55042j;
 
     /* renamed from: k  reason: collision with root package name */
-    private int f54475k;
+    private int f55043k;
 
     /* renamed from: l  reason: collision with root package name */
-    private b f54476l;
+    private b f55044l;
 
     /* renamed from: m  reason: collision with root package name */
-    private int f54477m;
+    private int f55045m;
 
     /* renamed from: n  reason: collision with root package name */
-    private long f54478n;
+    private long f55046n;
 
     public d() {
         this(0);
@@ -78,22 +78,22 @@ public final class d implements k {
 
     private long e(h0 h0Var, boolean z10) {
         boolean z11;
-        oe.a.e(this.f54473i);
+        oe.a.e(this.f55041i);
         int f10 = h0Var.f();
         while (f10 <= h0Var.g() - 16) {
             h0Var.U(f10);
-            if (q.d(h0Var, this.f54473i, this.f54475k, this.f54468d)) {
+            if (q.d(h0Var, this.f55041i, this.f55043k, this.f55036d)) {
                 h0Var.U(f10);
-                return this.f54468d.f50688a;
+                return this.f55036d.f51256a;
             }
             f10++;
         }
         if (z10) {
-            while (f10 <= h0Var.g() - this.f54474j) {
+            while (f10 <= h0Var.g() - this.f55042j) {
                 h0Var.U(f10);
                 boolean z12 = false;
                 try {
-                    z11 = q.d(h0Var, this.f54473i, this.f54475k, this.f54468d);
+                    z11 = q.d(h0Var, this.f55041i, this.f55043k, this.f55036d);
                 } catch (IndexOutOfBoundsException unused) {
                     z11 = false;
                 }
@@ -102,7 +102,7 @@ public final class d implements k {
                 }
                 if (z12) {
                     h0Var.U(f10);
-                    return this.f54468d.f50688a;
+                    return this.f55036d.f51256a;
                 }
                 f10++;
             }
@@ -114,121 +114,121 @@ public final class d implements k {
     }
 
     private void f(l lVar) {
-        this.f54475k = r.b(lVar);
-        ((m) w0.j(this.f54469e)).j(g(lVar.getPosition(), lVar.getLength()));
-        this.f54471g = 5;
+        this.f55043k = r.b(lVar);
+        ((m) w0.j(this.f55037e)).j(g(lVar.getPosition(), lVar.getLength()));
+        this.f55039g = 5;
     }
 
     private z g(long j10, long j11) {
-        oe.a.e(this.f54473i);
-        t tVar = this.f54473i;
-        if (tVar.f50702k != null) {
+        oe.a.e(this.f55041i);
+        t tVar = this.f55041i;
+        if (tVar.f51270k != null) {
             return new s(tVar, j10);
         }
-        if (j11 != -1 && tVar.f50701j > 0) {
-            b bVar = new b(tVar, this.f54475k, j10, j11);
-            this.f54476l = bVar;
+        if (j11 != -1 && tVar.f51269j > 0) {
+            b bVar = new b(tVar, this.f55043k, j10, j11);
+            this.f55044l = bVar;
             return bVar.b();
         }
         return new z.b(tVar.f());
     }
 
     private void i(l lVar) {
-        byte[] bArr = this.f54465a;
+        byte[] bArr = this.f55033a;
         lVar.n(bArr, 0, bArr.length);
         lVar.e();
-        this.f54471g = 2;
+        this.f55039g = 2;
     }
 
     private void j() {
-        ((b0) w0.j(this.f54470f)).a((this.f54478n * 1000000) / ((t) w0.j(this.f54473i)).f50696e, 1, this.f54477m, 0, null);
+        ((b0) w0.j(this.f55038f)).a((this.f55046n * 1000000) / ((t) w0.j(this.f55041i)).f51264e, 1, this.f55045m, 0, null);
     }
 
     private int k(l lVar, y yVar) {
         boolean z10;
-        oe.a.e(this.f54470f);
-        oe.a.e(this.f54473i);
-        b bVar = this.f54476l;
+        oe.a.e(this.f55038f);
+        oe.a.e(this.f55041i);
+        b bVar = this.f55044l;
         if (bVar != null && bVar.d()) {
-            return this.f54476l.c(lVar, yVar);
+            return this.f55044l.c(lVar, yVar);
         }
-        if (this.f54478n == -1) {
-            this.f54478n = q.i(lVar, this.f54473i);
+        if (this.f55046n == -1) {
+            this.f55046n = q.i(lVar, this.f55041i);
             return 0;
         }
-        int g10 = this.f54466b.g();
+        int g10 = this.f55034b.g();
         if (g10 < 32768) {
-            int read = lVar.read(this.f54466b.e(), g10, PeerConnection.PORTALLOCATOR_ENABLE_ANY_ADDRESS_PORTS - g10);
+            int read = lVar.read(this.f55034b.e(), g10, PeerConnection.PORTALLOCATOR_ENABLE_ANY_ADDRESS_PORTS - g10);
             if (read == -1) {
                 z10 = true;
             } else {
                 z10 = false;
             }
             if (!z10) {
-                this.f54466b.T(g10 + read);
-            } else if (this.f54466b.a() == 0) {
+                this.f55034b.T(g10 + read);
+            } else if (this.f55034b.a() == 0) {
                 j();
                 return -1;
             }
         } else {
             z10 = false;
         }
-        int f10 = this.f54466b.f();
-        int i10 = this.f54477m;
-        int i11 = this.f54474j;
+        int f10 = this.f55034b.f();
+        int i10 = this.f55045m;
+        int i11 = this.f55042j;
         if (i10 < i11) {
-            h0 h0Var = this.f54466b;
+            h0 h0Var = this.f55034b;
             h0Var.V(Math.min(i11 - i10, h0Var.a()));
         }
-        long e10 = e(this.f54466b, z10);
-        int f11 = this.f54466b.f() - f10;
-        this.f54466b.U(f10);
-        this.f54470f.e(this.f54466b, f11);
-        this.f54477m += f11;
+        long e10 = e(this.f55034b, z10);
+        int f11 = this.f55034b.f() - f10;
+        this.f55034b.U(f10);
+        this.f55038f.e(this.f55034b, f11);
+        this.f55045m += f11;
         if (e10 != -1) {
             j();
-            this.f54477m = 0;
-            this.f54478n = e10;
+            this.f55045m = 0;
+            this.f55046n = e10;
         }
-        if (this.f54466b.a() < 16) {
-            int a10 = this.f54466b.a();
-            System.arraycopy(this.f54466b.e(), this.f54466b.f(), this.f54466b.e(), 0, a10);
-            this.f54466b.U(0);
-            this.f54466b.T(a10);
+        if (this.f55034b.a() < 16) {
+            int a10 = this.f55034b.a();
+            System.arraycopy(this.f55034b.e(), this.f55034b.f(), this.f55034b.e(), 0, a10);
+            this.f55034b.U(0);
+            this.f55034b.T(a10);
         }
         return 0;
     }
 
     private void l(l lVar) {
-        this.f54472h = r.d(lVar, !this.f54467c);
-        this.f54471g = 1;
+        this.f55040h = r.d(lVar, !this.f55035c);
+        this.f55039g = 1;
     }
 
     private void m(l lVar) {
-        r.a aVar = new r.a(this.f54473i);
+        r.a aVar = new r.a(this.f55041i);
         boolean z10 = false;
         while (!z10) {
             z10 = r.e(lVar, aVar);
-            this.f54473i = (t) w0.j(aVar.f50689a);
+            this.f55041i = (t) w0.j(aVar.f51257a);
         }
-        oe.a.e(this.f54473i);
-        this.f54474j = Math.max(this.f54473i.f50694c, 6);
-        ((b0) w0.j(this.f54470f)).c(this.f54473i.g(this.f54465a, this.f54472h));
-        this.f54471g = 4;
+        oe.a.e(this.f55041i);
+        this.f55042j = Math.max(this.f55041i.f51262c, 6);
+        ((b0) w0.j(this.f55038f)).c(this.f55041i.g(this.f55033a, this.f55040h));
+        this.f55039g = 4;
     }
 
     private void n(l lVar) {
         r.i(lVar);
-        this.f54471g = 3;
+        this.f55039g = 3;
     }
 
     @Override // uc.k
     public void a(long j10, long j11) {
         long j12 = 0;
         if (j10 == 0) {
-            this.f54471g = 0;
+            this.f55039g = 0;
         } else {
-            b bVar = this.f54476l;
+            b bVar = this.f55044l;
             if (bVar != null) {
                 bVar.h(j11);
             }
@@ -236,15 +236,15 @@ public final class d implements k {
         if (j11 != 0) {
             j12 = -1;
         }
-        this.f54478n = j12;
-        this.f54477m = 0;
-        this.f54466b.Q(0);
+        this.f55046n = j12;
+        this.f55045m = 0;
+        this.f55034b.Q(0);
     }
 
     @Override // uc.k
     public void c(m mVar) {
-        this.f54469e = mVar;
-        this.f54470f = mVar.c(0, 1);
+        this.f55037e = mVar;
+        this.f55038f = mVar.c(0, 1);
         mVar.q();
     }
 
@@ -256,7 +256,7 @@ public final class d implements k {
 
     @Override // uc.k
     public int h(l lVar, y yVar) {
-        int i10 = this.f54471g;
+        int i10 = this.f55039g;
         if (i10 != 0) {
             if (i10 != 1) {
                 if (i10 != 2) {
@@ -284,11 +284,11 @@ public final class d implements k {
     }
 
     public d(int i10) {
-        this.f54465a = new byte[42];
-        this.f54466b = new h0(new byte[PeerConnection.PORTALLOCATOR_ENABLE_ANY_ADDRESS_PORTS], 0);
-        this.f54467c = (i10 & 1) != 0;
-        this.f54468d = new q.a();
-        this.f54471g = 0;
+        this.f55033a = new byte[42];
+        this.f55034b = new h0(new byte[PeerConnection.PORTALLOCATOR_ENABLE_ANY_ADDRESS_PORTS], 0);
+        this.f55035c = (i10 & 1) != 0;
+        this.f55036d = new q.a();
+        this.f55039g = 0;
     }
 
     @Override // uc.k

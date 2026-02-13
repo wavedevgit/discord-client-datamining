@@ -5,7 +5,7 @@ import bj.c;
 final class da implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final da f39159a = new da();
+    static final da f39727a = new da();
 
     static {
         c.b a10 = bj.c.a("isFaceMeshEnabled");

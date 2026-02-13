@@ -38,7 +38,7 @@ public /* synthetic */ class TapAppMessageEmbedData$$serializer implements h0 {
     @Override // tt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        n2 n2Var = n2.f50033a;
+        n2 n2Var = n2.f50601a;
         return new KSerializer[]{n2Var, n2Var, n2Var, n2Var};
     }
 

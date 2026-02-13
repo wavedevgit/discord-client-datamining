@@ -108,7 +108,7 @@ public final class SectionComponent extends BaseLayoutComponent {
         compositeEncoder.w(serialDescriptor, 0, sectionComponent.getType());
         compositeEncoder.y(serialDescriptor, 1, sectionComponent.getId());
         if (compositeEncoder.z(serialDescriptor, 2) || sectionComponent.getErrorText() != null) {
-            compositeEncoder.o(serialDescriptor, 2, n2.f50033a, sectionComponent.getErrorText());
+            compositeEncoder.o(serialDescriptor, 2, n2.f50601a, sectionComponent.getErrorText());
         }
         compositeEncoder.k(serialDescriptor, 3, (qt.o) lazyArr[3].getValue(), sectionComponent.components);
         compositeEncoder.k(serialDescriptor, 4, SectionAccessory.Serializer.INSTANCE, sectionComponent.accessory);

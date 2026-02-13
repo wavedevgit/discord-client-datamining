@@ -14,13 +14,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var3 = _closure1_slot3;
         var2 = function*() { // Environment: var2
             var0 = function*() { // Original name: ?anon_0_, environment: var0
-                _fun36748: for (var _fun36748_ip = 0;;) switch (_fun36748_ip) {
+                _fun36778: for (var _fun36778_ip = 0;;) switch (_fun36778_ip) {
                     case 0:
                         StartGenerator();
                         ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
                         if (var1) {
-                            _fun36748_ip = 102;
-                            continue _fun36748
+                            _fun36778_ip = 102;
+                            continue _fun36778
                         }
                     case 7:
                         var3 = _closure1_slot0;
@@ -63,8 +63,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     case 90:
                         ResumeGenerator(result_out_reg = 1, return_bool_out_reg = 3);
                         if (var3) {
-                            _fun36748_ip = 99;
-                            continue _fun36748
+                            _fun36778_ip = 99;
+                            continue _fun36778
                         }
                     case 96:
                         return var2;
@@ -166,4 +166,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.fetchGameMentionSettings = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 660, 507, 806, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 660, 507, 807, 2]);

@@ -12,141 +12,59 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = function arg0() {
         var1 = arg0;
         var _closure2_slot0 = var1;
-        var0 = function(arg0, arg1) { // Environment: var0
-            _fun19313: for (var _fun19313_ip = 0;;) switch (_fun19313_ip) {
+        var0 = function() { // Environment: var0
+            _fun19332: for (var _fun19332_ip = 0;;) switch (_fun19332_ip) {
                 case 0:
-                    var4 = arg0;
-                    var0 = arg1;
-                    var6 = null;
-                    var1 = var6 != var0;
-                    var3 = 'standalone';
-                    var2 = var3;
-                    if (!var1) {
-                        _fun19313_ip = 53;
-                        continue _fun19313
+                    var3 = undefined;
+                    var2 = undefined;
+                    var0 = arguments.length;
+                    var1 = 0;
+                    if (!(var0 > var1)) {
+                        _fun19332_ip = 21;
+                        continue _fun19332
                     }
-                case 22:
-                    var1 = var0.context;
-                    var2 = var3;
-                    if (!var1) {
-                        _fun19313_ip = 53;
-                        continue _fun19313
+                case 13:
+                    var0 = arguments[var1];
+                    if (!(var3 === var0)) {
+                        _fun19332_ip = 25;
+                        continue _fun19332
                     }
-                case 33:
-                    var1 = global;
-                    var5 = var1.String;
-                    var3 = var0.context;
-                    var1 = undefined;
-                    var2 = var5.bind(var1)(var3);
-                case 53:
-                    var1 = 'formatting';
-                    if (!(var1 === var2)) {
-                        _fun19313_ip = 79;
-                        continue _fun19313
-                    }
-                case 63:
-                    var1 = _closure2_slot0;
-                    var1 = var1.formattingValues;
-                    if (var1) {
-                        _fun19313_ip = 167;
-                        continue _fun19313
-                    }
-                case 79:
-                    var1 = _closure2_slot0;
-                    var5 = var1.defaultWidth;
-                    if (!(var6 != var0)) {
-                        _fun19313_ip = 104;
-                        continue _fun19313
-                    }
-                case 96:
+                case 21:
+                    var0 = {};
+                    _fun19332_ip = 29;
+                    continue _fun19332;
+                case 25:
+                    var0 = arguments[var1];
+                case 29:
                     var1 = var0.width;
                     if (var1) {
-                        _fun19313_ip = 116;
-                        continue _fun19313
+                        _fun19332_ip = 52;
+                        continue _fun19332
                     }
-                case 104:
+                case 37:
                     var1 = _closure2_slot0;
-                    var7 = var1.defaultWidth;
-                    _fun19313_ip = 136;
-                    continue _fun19313;
-                case 116:
+                    var2 = var1.defaultWidth;
+                    _fun19332_ip = 70;
+                    continue _fun19332;
+                case 52:
                     var1 = global;
-                    var9 = var1.String;
-                    var8 = var0.width;
-                    var1 = undefined;
-                    var7 = var9.bind(var1)(var8);
-                case 136:
-                    var1 = _closure2_slot0;
-                    var1 = var1.values;
-                    var1 = var1[var7];
-                    if (var1) {
-                        _fun19313_ip = 165;
-                        continue _fun19313
-                    }
-                case 152:
-                    var3 = _closure2_slot0;
-                    var3 = var3.values;
-                    var1 = var3[var5];
-                case 165:
-                    _fun19313_ip = 262;
-                    continue _fun19313;
-                case 167:
-                    var3 = _closure2_slot0;
-                    var3 = var3.defaultFormattingWidth;
-                    if (var3) {
-                        _fun19313_ip = 190;
-                        continue _fun19313
-                    }
-                case 180:
-                    var5 = _closure2_slot0;
-                    var3 = var5.defaultWidth;
-                case 190:
-                    var5 = var3;
-                    if (!(var6 != var0)) {
-                        _fun19313_ip = 228;
-                        continue _fun19313
-                    }
-                case 197:
-                    var6 = var0.width;
-                    var5 = var3;
-                    if (!var6) {
-                        _fun19313_ip = 228;
-                        continue _fun19313
-                    }
-                case 208:
-                    var6 = global;
-                    var7 = var6.String;
-                    var6 = var0.width;
-                    var0 = undefined;
-                    var5 = var7.bind(var0)(var6);
-                case 228:
+                    var1 = var1.String;
+                    var0 = var0.width;
+                    var2 = var1.bind(var3)(var0);
+                case 70:
                     var0 = _closure2_slot0;
-                    var0 = var0.formattingValues;
-                    var0 = var0[var5];
+                    var0 = var0.formats;
+                    var0 = var0[var2];
                     if (var0) {
-                        _fun19313_ip = 259;
-                        continue _fun19313
+                        _fun19332_ip = 110;
+                        continue _fun19332
                     }
-                case 245:
-                    var2 = _closure2_slot0;
-                    var2 = var2.formattingValues;
-                    var0 = var2[var3];
-                case 259:
-                    var1 = var0;
-                case 262:
-                    var0 = _closure2_slot0;
-                    var3 = var0.argumentCallback;
-                    var0 = var4;
-                    if (!var3) {
-                        _fun19313_ip = 296;
-                        continue _fun19313
-                    }
-                case 281:
-                    var3 = _closure2_slot0;
-                    var2 = var3.argumentCallback;
-                    var0 = var2.bind(var3)(var4);
-                case 296:
-                    var0 = var1[var0];
+                case 90:
+                    var1 = _closure2_slot0;
+                    var2 = var1.formats;
+                    var1 = var1.defaultWidth;
+                    var0 = var2[var1];
+                case 110:
                     return var0;
             }
         };

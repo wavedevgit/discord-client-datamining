@@ -11,13 +11,13 @@ public final class b implements Parcelable {
     public static final Parcelable.Creator<b> CREATOR = new a();
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f45535d;
+    private final String f46103d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Date f45536e;
+    private final Date f46104e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final Date f45537i;
+    private final Date f46105i;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements Parcelable.Creator {
@@ -39,9 +39,9 @@ public final class b implements Parcelable {
         Intrinsics.checkNotNullParameter(passportNumber, "passportNumber");
         Intrinsics.checkNotNullParameter(expirationDate, "expirationDate");
         Intrinsics.checkNotNullParameter(dateOfBirth, "dateOfBirth");
-        this.f45535d = passportNumber;
-        this.f45536e = expirationDate;
-        this.f45537i = dateOfBirth;
+        this.f46103d = passportNumber;
+        this.f46104e = expirationDate;
+        this.f46105i = dateOfBirth;
     }
 
     @Override // android.os.Parcelable
@@ -57,28 +57,28 @@ public final class b implements Parcelable {
             return false;
         }
         b bVar = (b) obj;
-        if (Intrinsics.areEqual(this.f45535d, bVar.f45535d) && Intrinsics.areEqual(this.f45536e, bVar.f45536e) && Intrinsics.areEqual(this.f45537i, bVar.f45537i)) {
+        if (Intrinsics.areEqual(this.f46103d, bVar.f46103d) && Intrinsics.areEqual(this.f46104e, bVar.f46104e) && Intrinsics.areEqual(this.f46105i, bVar.f46105i)) {
             return true;
         }
         return false;
     }
 
     public int hashCode() {
-        return (((this.f45535d.hashCode() * 31) + this.f45536e.hashCode()) * 31) + this.f45537i.hashCode();
+        return (((this.f46103d.hashCode() * 31) + this.f46104e.hashCode()) * 31) + this.f46105i.hashCode();
     }
 
     public String toString() {
-        String str = this.f45535d;
-        Date date = this.f45536e;
-        Date date2 = this.f45537i;
+        String str = this.f46103d;
+        Date date = this.f46104e;
+        Date date2 = this.f46105i;
         return "MrzKey(passportNumber=" + str + ", expirationDate=" + date + ", dateOfBirth=" + date2 + ")";
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel dest, int i10) {
         Intrinsics.checkNotNullParameter(dest, "dest");
-        dest.writeString(this.f45535d);
-        dest.writeSerializable(this.f45536e);
-        dest.writeSerializable(this.f45537i);
+        dest.writeString(this.f46103d);
+        dest.writeSerializable(this.f46104e);
+        dest.writeSerializable(this.f46105i);
     }
 }

@@ -61,7 +61,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = 'initialize';
         var0.key = var1;
         var1 = function() {
-            _fun83248: for (var _fun83248_ip = 0;;) switch (_fun83248_ip) {
+            _fun84346: for (var _fun84346_ip = 0;;) switch (_fun84346_ip) {
                 case 0:
                     var1 = this;
                 case 3: // try_start_0
@@ -91,8 +91,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = 'MobileMuxWrapper initialized successfully';
                     var0 = var2.bind(var3)(var0);
                 case 102: // try_end0
-                    _fun83248_ip = 138;
-                    continue _fun83248;
+                    _fun84346_ip = 138;
+                    continue _fun84346;
                 case 104: // catch_target0
                     CatchBlockStart(arg_register = 4);
                     var3 = _closure1_slot4;
@@ -113,14 +113,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = 'updatePlayheadTime';
         var0.key = var5;
         var5 = function arg0() {
-            _fun83249: for (var _fun83249_ip = 0;;) switch (_fun83249_ip) {
+            _fun84347: for (var _fun84347_ip = 0;;) switch (_fun84347_ip) {
                 case 0:
                     var0 = this;
                     var2 = var0.muxIntegration;
                     var0 = null;
                     if (!(var0 != var2)) {
-                        _fun83249_ip = 29;
-                        continue _fun83249
+                        _fun84347_ip = 29;
+                        continue _fun84347
                     }
                 case 15:
                     var1 = var2.updatePlayheadTime;
@@ -137,14 +137,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = 'updateVideoDimensions';
         var0.key = var5;
         var5 = function arg0, arg1() {
-            _fun83250: for (var _fun83250_ip = 0;;) switch (_fun83250_ip) {
+            _fun84348: for (var _fun84348_ip = 0;;) switch (_fun84348_ip) {
                 case 0:
                     var0 = this;
                     var3 = var0.muxIntegration;
                     var0 = null;
                     if (!(var0 != var3)) {
-                        _fun83250_ip = 33;
-                        continue _fun83250
+                        _fun84348_ip = 33;
+                        continue _fun84348
                     }
                 case 15:
                     var2 = var3.updateVideoDimensions;
@@ -162,14 +162,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = 'updateVideoSourceDimensions';
         var0.key = var5;
         var5 = function arg0, arg1() {
-            _fun83251: for (var _fun83251_ip = 0;;) switch (_fun83251_ip) {
+            _fun84349: for (var _fun84349_ip = 0;;) switch (_fun84349_ip) {
                 case 0:
                     var0 = this;
                     var3 = var0.muxIntegration;
                     var0 = null;
                     if (!(var0 != var3)) {
-                        _fun83251_ip = 33;
-                        continue _fun83251
+                        _fun84349_ip = 33;
+                        continue _fun84349
                     }
                 case 15:
                     var2 = var3.updateVideoSourceDimensions;
@@ -187,14 +187,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = 'updateVideoSource';
         var0.key = var5;
         var5 = function arg0, arg1, arg2() {
-            _fun83252: for (var _fun83252_ip = 0;;) switch (_fun83252_ip) {
+            _fun84350: for (var _fun84350_ip = 0;;) switch (_fun84350_ip) {
                 case 0:
                     var0 = this;
                     var4 = var0.muxIntegration;
                     var0 = null;
                     if (!(var0 != var4)) {
-                        _fun83252_ip = 37;
-                        continue _fun83252
+                        _fun84350_ip = 37;
+                        continue _fun84350
                     }
                 case 15:
                     var3 = var4.updateVideoSource;
@@ -213,14 +213,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = 'updatePlayerState';
         var0.key = var5;
         var5 = function arg0, arg1() {
-            _fun83253: for (var _fun83253_ip = 0;;) switch (_fun83253_ip) {
+            _fun84351: for (var _fun84351_ip = 0;;) switch (_fun84351_ip) {
                 case 0:
                     var0 = this;
                     var3 = var0.muxIntegration;
                     var0 = null;
                     if (!(var0 != var3)) {
-                        _fun83253_ip = 33;
-                        continue _fun83253
+                        _fun84351_ip = 33;
+                        continue _fun84351
                     }
                 case 15:
                     var2 = var3.updatePlayerState;
@@ -238,14 +238,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = 'onLoadStart';
         var0.key = var5;
         var5 = function() {
-            _fun83254: for (var _fun83254_ip = 0;;) switch (_fun83254_ip) {
+            _fun84352: for (var _fun84352_ip = 0;;) switch (_fun84352_ip) {
                 case 0:
                     var0 = this;
                     var1 = var0.muxIntegration;
                     var0 = null;
                     if (!(var0 != var1)) {
-                        _fun83254_ip = 27;
-                        continue _fun83254
+                        _fun84352_ip = 27;
+                        continue _fun84352
                     }
                 case 15:
                     var0 = var1.emitLoadStart;
@@ -261,14 +261,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = 'onLoad';
         var0.key = var5;
         var5 = function arg0() {
-            _fun83255: for (var _fun83255_ip = 0;;) switch (_fun83255_ip) {
+            _fun84353: for (var _fun84353_ip = 0;;) switch (_fun84353_ip) {
                 case 0:
                     var0 = this;
                     var2 = var0.muxIntegration;
                     var0 = null;
                     if (!(var0 != var2)) {
-                        _fun83255_ip = 31;
-                        continue _fun83255
+                        _fun84353_ip = 31;
+                        continue _fun84353
                     }
                 case 15:
                     var1 = var2.emitLoad;
@@ -285,14 +285,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = 'onPlay';
         var0.key = var5;
         var5 = function() {
-            _fun83256: for (var _fun83256_ip = 0;;) switch (_fun83256_ip) {
+            _fun84354: for (var _fun84354_ip = 0;;) switch (_fun84354_ip) {
                 case 0:
                     var0 = this;
                     var1 = var0.muxIntegration;
                     var0 = null;
                     if (!(var0 != var1)) {
-                        _fun83256_ip = 27;
-                        continue _fun83256
+                        _fun84354_ip = 27;
+                        continue _fun84354
                     }
                 case 15:
                     var0 = var1.emitPlay;
@@ -308,14 +308,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = 'onPause';
         var0.key = var5;
         var5 = function() {
-            _fun83257: for (var _fun83257_ip = 0;;) switch (_fun83257_ip) {
+            _fun84355: for (var _fun84355_ip = 0;;) switch (_fun84355_ip) {
                 case 0:
                     var0 = this;
                     var1 = var0.muxIntegration;
                     var0 = null;
                     if (!(var0 != var1)) {
-                        _fun83257_ip = 27;
-                        continue _fun83257
+                        _fun84355_ip = 27;
+                        continue _fun84355
                     }
                 case 15:
                     var0 = var1.emitPause;
@@ -331,14 +331,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = 'onPlaying';
         var0.key = var5;
         var5 = function() {
-            _fun83258: for (var _fun83258_ip = 0;;) switch (_fun83258_ip) {
+            _fun84356: for (var _fun84356_ip = 0;;) switch (_fun84356_ip) {
                 case 0:
                     var0 = this;
                     var1 = var0.muxIntegration;
                     var0 = null;
                     if (!(var0 != var1)) {
-                        _fun83258_ip = 25;
-                        continue _fun83258
+                        _fun84356_ip = 25;
+                        continue _fun84356
                     }
                 case 15:
                     var0 = var1.emitPlaying;
@@ -354,14 +354,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = 'onCanPlay';
         var0.key = var5;
         var5 = function() {
-            _fun83259: for (var _fun83259_ip = 0;;) switch (_fun83259_ip) {
+            _fun84357: for (var _fun84357_ip = 0;;) switch (_fun84357_ip) {
                 case 0:
                     var0 = this;
                     var1 = var0.muxIntegration;
                     var0 = null;
                     if (!(var0 != var1)) {
-                        _fun83259_ip = 25;
-                        continue _fun83259
+                        _fun84357_ip = 25;
+                        continue _fun84357
                     }
                 case 15:
                     var0 = var1.emitCanPlay;
@@ -377,21 +377,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = 'onSeek';
         var0.key = var5;
         var5 = function() {
-            _fun83260: for (var _fun83260_ip = 0;;) switch (_fun83260_ip) {
+            _fun84358: for (var _fun84358_ip = 0;;) switch (_fun84358_ip) {
                 case 0:
                     var1 = this;
                     var _closure3_slot0 = var1;
                     var2 = var1.muxIntegration;
                     var3 = null;
                     if (!(var3 != var2)) {
-                        _fun83260_ip = 119;
-                        continue _fun83260
+                        _fun84358_ip = 119;
+                        continue _fun84358
                     }
                 case 21:
                     var2 = var1.seekingEmitted;
                     if (var2) {
-                        _fun83260_ip = 56;
-                        continue _fun83260
+                        _fun84358_ip = 56;
+                        continue _fun84358
                     }
                 case 30:
                     var4 = var1.muxIntegration;
@@ -402,8 +402,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 case 56:
                     var2 = var1.seekTimeout;
                     if (!(var3 != var2)) {
-                        _fun83260_ip = 87;
-                        continue _fun83260
+                        _fun84358_ip = 87;
+                        continue _fun84358
                     }
                 case 66:
                     var2 = global;
@@ -416,14 +416,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var4 = var2.setTimeout;
                     var3 = undefined;
                     var2 = function() { // Environment: var0
-                        _fun83261: for (var _fun83261_ip = 0;;) switch (_fun83261_ip) {
+                        _fun84359: for (var _fun84359_ip = 0;;) switch (_fun84359_ip) {
                             case 0:
                                 var1 = _closure3_slot0;
                                 var3 = var1.muxIntegration;
                                 var1 = null;
                                 if (!(var1 != var3)) {
-                                    _fun83261_ip = 31;
-                                    continue _fun83261
+                                    _fun84359_ip = 31;
+                                    continue _fun84359
                                 }
                             case 19:
                                 var2 = var3.emitSeeked;
@@ -451,14 +451,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = 'onEnd';
         var0.key = var5;
         var5 = function() {
-            _fun83262: for (var _fun83262_ip = 0;;) switch (_fun83262_ip) {
+            _fun84360: for (var _fun84360_ip = 0;;) switch (_fun84360_ip) {
                 case 0:
                     var1 = this;
                     var3 = var1.muxIntegration;
                     var0 = null;
                     if (!(var0 != var3)) {
-                        _fun83262_ip = 27;
-                        continue _fun83262
+                        _fun84360_ip = 27;
+                        continue _fun84360
                     }
                 case 15:
                     var2 = var3.emitEnded;
@@ -466,8 +466,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 case 27:
                     var1 = var1.muxIntegration;
                     if (!(var0 != var1)) {
-                        _fun83262_ip = 47;
-                        continue _fun83262
+                        _fun84360_ip = 47;
+                        continue _fun84360
                     }
                 case 37:
                     var0 = var1.destroy;
@@ -483,14 +483,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = 'onError';
         var0.key = var5;
         var5 = function arg0() {
-            _fun83263: for (var _fun83263_ip = 0;;) switch (_fun83263_ip) {
+            _fun84361: for (var _fun84361_ip = 0;;) switch (_fun84361_ip) {
                 case 0:
                     var0 = this;
                     var2 = var0.muxIntegration;
                     var0 = null;
                     if (!(var0 != var2)) {
-                        _fun83263_ip = 31;
-                        continue _fun83263
+                        _fun84361_ip = 31;
+                        continue _fun84361
                     }
                 case 15:
                     var1 = var2.emitError;
@@ -507,7 +507,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = 'onProgress';
         var0.key = var5;
         var5 = function arg0() {
-            _fun83264: for (var _fun83264_ip = 0;;) switch (_fun83264_ip) {
+            _fun84362: for (var _fun84362_ip = 0;;) switch (_fun84362_ip) {
                 case 0:
                     var0 = this;
                     var2 = var0.updatePlayheadTime;
@@ -516,8 +516,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = var0.muxIntegration;
                     var0 = null;
                     if (!(var0 != var1)) {
-                        _fun83264_ip = 41;
-                        continue _fun83264
+                        _fun84362_ip = 41;
+                        continue _fun84362
                     }
                 case 29:
                     var0 = var1.emitTimeUpdate;
@@ -533,20 +533,20 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = 'onBuffer';
         var0.key = var5;
         var5 = function arg0() {
-            _fun83265: for (var _fun83265_ip = 0;;) switch (_fun83265_ip) {
+            _fun84363: for (var _fun84363_ip = 0;;) switch (_fun84363_ip) {
                 case 0:
                     var1 = this;
                     var0 = arg0;
                     if (var0) {
-                        _fun83265_ip = 77;
-                        continue _fun83265
+                        _fun84363_ip = 77;
+                        continue _fun84363
                     }
                 case 9:
                     var3 = var1.muxIntegration;
                     var0 = null;
                     if (!(var0 != var3)) {
-                        _fun83265_ip = 31;
-                        continue _fun83265
+                        _fun84363_ip = 31;
+                        continue _fun84363
                     }
                 case 21:
                     var2 = var3.emitCanPlay;
@@ -555,22 +555,22 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var4 = var1.muxIntegration;
                     var2 = var0 != var4;
                     if (!var2) {
-                        _fun83265_ip = 54;
-                        continue _fun83265
+                        _fun84363_ip = 54;
+                        continue _fun84363
                     }
                 case 44:
                     var3 = var4.hasPlayStarted;
                     var2 = var3.bind(var4)();
                 case 54:
                     if (!var2) {
-                        _fun83265_ip = 77;
-                        continue _fun83265
+                        _fun84363_ip = 77;
+                        continue _fun84363
                     }
                 case 57:
                     var1 = var1.muxIntegration;
                     if (!(var0 != var1)) {
-                        _fun83265_ip = 77;
-                        continue _fun83265
+                        _fun84363_ip = 77;
+                        continue _fun84363
                     }
                 case 67:
                     var0 = var1.emitPlaying;
@@ -586,14 +586,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = 'onReadyForDisplay';
         var0.key = var5;
         var5 = function() {
-            _fun83266: for (var _fun83266_ip = 0;;) switch (_fun83266_ip) {
+            _fun84364: for (var _fun84364_ip = 0;;) switch (_fun84364_ip) {
                 case 0:
                     var1 = this;
                     var3 = var1.muxIntegration;
                     var0 = null;
                     if (!(var0 != var3)) {
-                        _fun83266_ip = 25;
-                        continue _fun83266
+                        _fun84364_ip = 25;
+                        continue _fun84364
                     }
                 case 15:
                     var2 = var3.emitPlayerReady;
@@ -602,22 +602,22 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var4 = var1.muxIntegration;
                     var2 = var0 != var4;
                     if (!var2) {
-                        _fun83266_ip = 48;
-                        continue _fun83266
+                        _fun84364_ip = 48;
+                        continue _fun84364
                     }
                 case 38:
                     var3 = var4.hasPlayStarted;
                     var2 = var3.bind(var4)();
                 case 48:
                     if (!var2) {
-                        _fun83266_ip = 71;
-                        continue _fun83266
+                        _fun84364_ip = 71;
+                        continue _fun84364
                     }
                 case 51:
                     var1 = var1.muxIntegration;
                     if (!(var0 != var1)) {
-                        _fun83266_ip = 71;
-                        continue _fun83266
+                        _fun84364_ip = 71;
+                        continue _fun84364
                     }
                 case 61:
                     var0 = var1.emitPlaying;
@@ -633,7 +633,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = 'onVideoTrackChange';
         var0.key = var5;
         var5 = function arg0, arg1() {
-            _fun83267: for (var _fun83267_ip = 0;;) switch (_fun83267_ip) {
+            _fun84365: for (var _fun84365_ip = 0;;) switch (_fun84365_ip) {
                 case 0:
                     var2 = arg1;
                     var1 = arg0;
@@ -649,15 +649,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = var1.bind(var2)(var0);
                     var1 = null;
                     if (!(var1 != var0)) {
-                        _fun83267_ip = 79;
-                        continue _fun83267
+                        _fun84365_ip = 79;
+                        continue _fun84365
                     }
                 case 35:
                     var2 = this;
                     var4 = var2.muxIntegration;
                     if (!(var1 != var4)) {
-                        _fun83267_ip = 79;
-                        continue _fun83267
+                        _fun84365_ip = 79;
+                        continue _fun84365
                     }
                 case 48:
                     var3 = var4.emitRenditionChange;
@@ -676,7 +676,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = 'destroy';
         var0.key = var5;
         var5 = function() {
-            _fun83269: for (var _fun83269_ip = 0;;) switch (_fun83269_ip) {
+            _fun84367: for (var _fun84367_ip = 0;;) switch (_fun84367_ip) {
                 case 0:
                     var2 = this;
                     var0 = undefined;
@@ -685,8 +685,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var4 = var2.seekTimeout;
                     var1 = null;
                     if (!(var1 != var4)) {
-                        _fun83269_ip = 44;
-                        continue _fun83269
+                        _fun84367_ip = 44;
+                        continue _fun84367
                     }
                 case 19:
                     var4 = global;
@@ -698,8 +698,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var4 = var2.muxIntegration;
                     var3 = var4;
                     if (!(var1 != var4)) {
-                        _fun83269_ip = 70;
-                        continue _fun83269
+                        _fun84367_ip = 70;
+                        continue _fun84367
                     }
                 case 57:
                     var4 = var3;
@@ -708,8 +708,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 case 70:
                     var2.muxIntegration = var1;
                 case 76: // try_end0
-                    _fun83269_ip = 104;
-                    continue _fun83269;
+                    _fun84367_ip = 104;
+                    continue _fun84367;
                 case 78: // catch_target0
                     CatchBlockStart(arg_register = 4);
                     var3 = _closure1_slot4;
@@ -726,7 +726,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = 'getSessionId';
         var0.key = var5;
         var5 = function() {
-            _fun83270: for (var _fun83270_ip = 0;;) switch (_fun83270_ip) {
+            _fun84368: for (var _fun84368_ip = 0;;) switch (_fun84368_ip) {
                 case 0:
                     var0 = this;
                     var3 = var0.muxIntegration;
@@ -734,8 +734,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = var0 == var3;
                     var1 = undefined;
                     if (var2) {
-                        _fun83270_ip = 30;
-                        continue _fun83270
+                        _fun84368_ip = 30;
+                        continue _fun84368
                     }
                 case 20:
                     var2 = var3.getSessionId;
@@ -744,8 +744,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = var0 != var1;
                     var0 = null;
                     if (!var2) {
-                        _fun83270_ip = 42;
-                        continue _fun83270
+                        _fun84368_ip = 42;
+                        continue _fun84368
                     }
                 case 39:
                     var0 = var1;
@@ -780,4 +780,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.MobileMuxWrapper = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 4, 10586, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 4, 10752, 2]);

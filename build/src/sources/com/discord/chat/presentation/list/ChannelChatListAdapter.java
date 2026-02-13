@@ -129,7 +129,7 @@ public final class ChannelChatListAdapter extends BaseChatListAdapter {
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 Unit unit;
-                unit = Unit.f31988a;
+                unit = Unit.f32556a;
                 return unit;
             }
         } : function04);
@@ -395,7 +395,7 @@ public final class ChannelChatListAdapter extends BaseChatListAdapter {
     }
 
     public static final Unit setItems$lambda$4(boolean z10) {
-        return Unit.f31988a;
+        return Unit.f32556a;
     }
 
     /* JADX WARN: Multi-variable type inference failed */
@@ -511,7 +511,7 @@ public final class ChannelChatListAdapter extends BaseChatListAdapter {
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 Unit unit;
-                unit = Unit.f31988a;
+                unit = Unit.f32556a;
                 return unit;
             }
         }, null, 16, null);

@@ -30,26 +30,26 @@ import up.c;
 public final class p implements gn.k {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final a f50913d = new a(null);
+    public static final a f51481d = new a(null);
 
     /* renamed from: b  reason: collision with root package name */
-    private final vp.b f50914b;
+    private final vp.b f51482b;
 
     /* renamed from: c  reason: collision with root package name */
-    private Dialog f50915c;
+    private Dialog f51483c;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements c0 {
 
         /* renamed from: a  reason: collision with root package name */
-        private final /* synthetic */ c0 f50916a;
+        private final /* synthetic */ c0 f51484a;
 
         /* renamed from: up.p$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         /* synthetic */ class C0702a extends FunctionReferenceImpl implements Function3 {
 
             /* renamed from: d  reason: collision with root package name */
-            public static final C0702a f50917d = new C0702a();
+            public static final C0702a f51485d = new C0702a();
 
             C0702a() {
                 super(3, vp.b.class, "inflate", "inflate(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Z)Lcom/withpersona/sdk2/inquiry/sandbox/databinding/Pi2SandboxOverlayBinding;", 0);
@@ -70,7 +70,7 @@ public final class p implements gn.k {
         /* synthetic */ class b extends FunctionReferenceImpl implements Function1 {
 
             /* renamed from: d  reason: collision with root package name */
-            public static final b f50918d = new b();
+            public static final b f51486d = new b();
 
             b() {
                 super(1, p.class, "<init>", "<init>(Lcom/withpersona/sdk2/inquiry/sandbox/databinding/Pi2SandboxOverlayBinding;)V", 0);
@@ -94,43 +94,43 @@ public final class p implements gn.k {
             Intrinsics.checkNotNullParameter(initialRendering, "initialRendering");
             Intrinsics.checkNotNullParameter(initialViewEnvironment, "initialViewEnvironment");
             Intrinsics.checkNotNullParameter(contextForNewView, "contextForNewView");
-            return this.f50916a.a(initialRendering, initialViewEnvironment, contextForNewView, viewGroup);
+            return this.f51484a.a(initialRendering, initialViewEnvironment, contextForNewView, viewGroup);
         }
 
         @Override // gn.c0
         public KClass getType() {
-            return this.f50916a.getType();
+            return this.f51484a.getType();
         }
 
         private a() {
             k.a aVar = gn.k.f25849a;
-            this.f50916a = new z(Reflection.getOrCreateKotlinClass(i.class), C0702a.f50917d, b.f50918d);
+            this.f51484a = new z(Reflection.getOrCreateKotlinClass(i.class), C0702a.f51485d, b.f51486d);
         }
     }
 
     public p(vp.b binding) {
         Intrinsics.checkNotNullParameter(binding, "binding");
-        this.f50914b = binding;
+        this.f51482b = binding;
     }
 
     private final void h(final i iVar, Context context) {
-        if (this.f50915c != null) {
+        if (this.f51483c != null) {
             return;
         }
         final Dialog dialog = new Dialog(context, bh.k.f6931f);
         vp.a c10 = vp.a.c(LayoutInflater.from(dialog.getContext()));
         Intrinsics.checkNotNullExpressionValue(c10, "inflate(...)");
         dialog.setContentView(c10.getRoot());
-        c10.f51739c.setTitle("Sandbox options");
-        c10.f51739c.setNavigationIcon(bq.l.f7388u);
-        c10.f51739c.setNavigationOnClickListener(new View.OnClickListener() { // from class: up.m
+        c10.f52307c.setTitle("Sandbox options");
+        c10.f52307c.setNavigationIcon(bq.l.f7388u);
+        c10.f52307c.setNavigationOnClickListener(new View.OnClickListener() { // from class: up.m
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
                 p.i(dialog, view);
             }
         });
-        c10.f51738b.setChecked(iVar.e());
-        c10.f51738b.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() { // from class: up.n
+        c10.f52306b.setChecked(iVar.e());
+        c10.f52306b.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() { // from class: up.n
             @Override // android.widget.CompoundButton.OnCheckedChangeListener
             public final void onCheckedChanged(CompoundButton compoundButton, boolean z10) {
                 p.j(i.this, compoundButton, z10);
@@ -146,7 +146,7 @@ public final class p implements gn.k {
                 p.k(p.this, dialogInterface);
             }
         });
-        this.f50915c = dialog;
+        this.f51483c = dialog;
         dialog.show();
     }
 
@@ -162,14 +162,14 @@ public final class p implements gn.k {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void k(p pVar, DialogInterface dialogInterface) {
-        pVar.f50915c = null;
+        pVar.f51483c = null;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void m(i iVar, vp.b bVar, View view) {
         iVar.c().invoke();
-        String a10 = c.f50883d.a((c.b) iVar.a().invoke());
-        Toast.makeText(bVar.f51742c.getRootView().getContext(), "Setting the debug flag to: " + a10, 0).show();
+        String a10 = c.f51451d.a((c.b) iVar.a().invoke());
+        Toast.makeText(bVar.f52310c.getRootView().getContext(), "Setting the debug flag to: " + a10, 0).show();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -184,14 +184,14 @@ public final class p implements gn.k {
         Intrinsics.checkNotNullParameter(insets, "insets");
         Insets g10 = insets.g(WindowInsetsCompat.p.h());
         Intrinsics.checkNotNullExpressionValue(g10, "getInsetsIgnoringVisibility(...)");
-        FloatingActionButton floatingActionButton = pVar.f50914b.f51742c;
+        FloatingActionButton floatingActionButton = pVar.f51482b.f52310c;
         Intrinsics.checkNotNullExpressionValue(floatingActionButton, "floatingActionButton");
         ViewGroup.LayoutParams layoutParams = floatingActionButton.getLayoutParams();
         if (layoutParams != null) {
             CoordinatorLayout.f fVar = (CoordinatorLayout.f) layoutParams;
             ((ViewGroup.MarginLayoutParams) fVar).bottomMargin = (int) (g10.f3307d + bq.h.c(16.0d));
             floatingActionButton.setLayoutParams(fVar);
-            return Unit.f31988a;
+            return Unit.f32556a;
         }
         throw new NullPointerException("null cannot be cast to non-null type androidx.coordinatorlayout.widget.CoordinatorLayout.LayoutParams");
     }
@@ -201,15 +201,15 @@ public final class p implements gn.k {
     public void a(final i rendering, a0 viewEnvironment) {
         Intrinsics.checkNotNullParameter(rendering, "rendering");
         Intrinsics.checkNotNullParameter(viewEnvironment, "viewEnvironment");
-        final vp.b bVar = this.f50914b;
+        final vp.b bVar = this.f51482b;
         final Context context = bVar.getRoot().getContext();
-        bVar.f51742c.setOnClickListener(new View.OnClickListener() { // from class: up.j
+        bVar.f52310c.setOnClickListener(new View.OnClickListener() { // from class: up.j
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
                 p.m(i.this, bVar, view);
             }
         });
-        bVar.f51742c.setOnLongClickListener(new View.OnLongClickListener() { // from class: up.k
+        bVar.f52310c.setOnLongClickListener(new View.OnLongClickListener() { // from class: up.k
             @Override // android.view.View.OnLongClickListener
             public final boolean onLongClick(View view) {
                 boolean n10;
@@ -217,7 +217,7 @@ public final class p implements gn.k {
                 return n10;
             }
         });
-        FloatingActionButton floatingActionButton = bVar.f51742c;
+        FloatingActionButton floatingActionButton = bVar.f52310c;
         Intrinsics.checkNotNullExpressionValue(floatingActionButton, "floatingActionButton");
         lq.f.g(floatingActionButton, new Function1() { // from class: up.l
             @Override // kotlin.jvm.functions.Function1
@@ -227,6 +227,6 @@ public final class p implements gn.k {
                 return o10;
             }
         });
-        bVar.f51741b.c(rendering.b(), viewEnvironment);
+        bVar.f52309b.c(rendering.b(), viewEnvironment);
     }
 }

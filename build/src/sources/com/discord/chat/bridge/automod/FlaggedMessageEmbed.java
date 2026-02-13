@@ -90,21 +90,21 @@ public final class FlaggedMessageEmbed {
             compositeEncoder.o(serialDescriptor, 4, StructurableTextSerializer.INSTANCE, flaggedMessageEmbed.content);
         }
         if (compositeEncoder.z(serialDescriptor, 5) || flaggedMessageEmbed.channelName != null) {
-            compositeEncoder.o(serialDescriptor, 5, n2.f50033a, flaggedMessageEmbed.channelName);
+            compositeEncoder.o(serialDescriptor, 5, n2.f50601a, flaggedMessageEmbed.channelName);
         }
         if (compositeEncoder.z(serialDescriptor, 6) || flaggedMessageEmbed.username != null) {
-            compositeEncoder.o(serialDescriptor, 6, n2.f50033a, flaggedMessageEmbed.username);
+            compositeEncoder.o(serialDescriptor, 6, n2.f50601a, flaggedMessageEmbed.username);
         }
         compositeEncoder.w(serialDescriptor, 7, flaggedMessageEmbed.usernameColor);
         if (compositeEncoder.z(serialDescriptor, 8) || flaggedMessageEmbed.roleColor != null) {
-            compositeEncoder.o(serialDescriptor, 8, p0.f50049a, flaggedMessageEmbed.roleColor);
+            compositeEncoder.o(serialDescriptor, 8, p0.f50617a, flaggedMessageEmbed.roleColor);
         }
         compositeEncoder.x(serialDescriptor, 9, flaggedMessageEmbed.shouldShowRoleDot);
         if (compositeEncoder.z(serialDescriptor, 10) || flaggedMessageEmbed.avatarURL != null) {
-            compositeEncoder.o(serialDescriptor, 10, n2.f50033a, flaggedMessageEmbed.avatarURL);
+            compositeEncoder.o(serialDescriptor, 10, n2.f50601a, flaggedMessageEmbed.avatarURL);
         }
         if (compositeEncoder.z(serialDescriptor, 11) || !Intrinsics.areEqual(flaggedMessageEmbed.communicationDisabled, Boolean.FALSE)) {
-            compositeEncoder.o(serialDescriptor, 11, h.f49997a, flaggedMessageEmbed.communicationDisabled);
+            compositeEncoder.o(serialDescriptor, 11, h.f50565a, flaggedMessageEmbed.communicationDisabled);
         }
     }
 

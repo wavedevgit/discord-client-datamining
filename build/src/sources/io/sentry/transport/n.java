@@ -3,13 +3,13 @@ package io.sentry.transport;
 public final class n implements p {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final p f30088a = new n();
+    private static final p f30656a = new n();
 
     private n() {
     }
 
     public static p b() {
-        return f30088a;
+        return f30656a;
     }
 
     @Override // io.sentry.transport.p

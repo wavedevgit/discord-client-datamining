@@ -3,42 +3,42 @@ package og;
 public final class c3 {
 
     /* renamed from: a */
-    private xe f39138a;
+    private xe f39706a;
 
     /* renamed from: b */
-    private Boolean f39139b;
+    private Boolean f39707b;
 
     /* renamed from: c */
-    private wj f39140c;
+    private wj f39708c;
 
     /* renamed from: d */
-    private i1 f39141d;
+    private i1 f39709d;
 
     /* renamed from: e */
-    private i1 f39142e;
+    private i1 f39710e;
 
     public final c3 c(i1 i1Var) {
-        this.f39141d = i1Var;
+        this.f39709d = i1Var;
         return this;
     }
 
     public final c3 d(i1 i1Var) {
-        this.f39142e = i1Var;
+        this.f39710e = i1Var;
         return this;
     }
 
     public final c3 e(xe xeVar) {
-        this.f39138a = xeVar;
+        this.f39706a = xeVar;
         return this;
     }
 
     public final c3 f(Boolean bool) {
-        this.f39139b = bool;
+        this.f39707b = bool;
         return this;
     }
 
     public final c3 g(wj wjVar) {
-        this.f39140c = wjVar;
+        this.f39708c = wjVar;
         return this;
     }
 

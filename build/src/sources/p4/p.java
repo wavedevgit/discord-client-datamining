@@ -8,10 +8,10 @@ import java.util.List;
 public final class p implements o {
 
     /* renamed from: a  reason: collision with root package name */
-    private final r3.u f41434a;
+    private final r3.u f42002a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final r3.i f41435b;
+    private final r3.i f42003b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     class a extends r3.i {
@@ -41,8 +41,8 @@ public final class p implements o {
     }
 
     public p(r3.u uVar) {
-        this.f41434a = uVar;
-        this.f41435b = new a(uVar);
+        this.f42002a = uVar;
+        this.f42003b = new a(uVar);
     }
 
     public static List c() {
@@ -58,8 +58,8 @@ public final class p implements o {
         } else {
             i10.i1(1, str);
         }
-        this.f41434a.d();
-        Cursor b10 = t3.b.b(this.f41434a, i10, false, null);
+        this.f42002a.d();
+        Cursor b10 = t3.b.b(this.f42002a, i10, false, null);
         try {
             ArrayList arrayList = new ArrayList(b10.getCount());
             while (b10.moveToNext()) {
@@ -79,13 +79,13 @@ public final class p implements o {
 
     @Override // p4.o
     public void b(n nVar) {
-        this.f41434a.d();
-        this.f41434a.e();
+        this.f42002a.d();
+        this.f42002a.e();
         try {
-            this.f41435b.j(nVar);
-            this.f41434a.A();
+            this.f42003b.j(nVar);
+            this.f42002a.A();
         } finally {
-            this.f41434a.i();
+            this.f42002a.i();
         }
     }
 }

@@ -6,10 +6,10 @@ import rd.u0;
 public final class k extends b {
 
     /* renamed from: h  reason: collision with root package name */
-    private final int f31711h;
+    private final int f32279h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final Object f31712i;
+    private final Object f32280i;
 
     public k(u0 u0Var, int i10, int i11) {
         this(u0Var, i10, i11, 0, null);
@@ -22,18 +22,18 @@ public final class k extends b {
 
     @Override // com.google.android.exoplayer2.trackselection.g
     public Object h() {
-        return this.f31712i;
+        return this.f32280i;
     }
 
     @Override // com.google.android.exoplayer2.trackselection.g
     public int r() {
-        return this.f31711h;
+        return this.f32279h;
     }
 
     public k(u0 u0Var, int i10, int i11, int i12, Object obj) {
         super(u0Var, new int[]{i10}, i11);
-        this.f31711h = i12;
-        this.f31712i = obj;
+        this.f32279h = i12;
+        this.f32280i = obj;
     }
 
     @Override // com.google.android.exoplayer2.trackselection.g

@@ -6,18 +6,18 @@ import ys.n0;
 final class n implements n0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Future f35050d;
+    private final Future f35618d;
 
     public n(Future future) {
-        this.f35050d = future;
+        this.f35618d = future;
     }
 
     @Override // ys.n0
     public void dispose() {
-        this.f35050d.cancel(false);
+        this.f35618d.cancel(false);
     }
 
     public String toString() {
-        return "DisposableFutureHandle[" + this.f35050d + ']';
+        return "DisposableFutureHandle[" + this.f35618d + ']';
     }
 }

@@ -5,7 +5,7 @@ import bj.c;
 final class ta implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final ta f39680a = new ta();
+    static final ta f40248a = new ta();
 
     static {
         c.b a10 = bj.c.a("identifiedLanguages");

@@ -5,30 +5,30 @@ import bj.c;
 final class e8 implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final e8 f44409a = new e8();
+    static final e8 f44977a = new e8();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final bj.c f44410b;
+    private static final bj.c f44978b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final bj.c f44411c;
+    private static final bj.c f44979c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final bj.c f44412d;
+    private static final bj.c f44980d;
 
     static {
         c.b a10 = bj.c.a("numSamples");
         s1 s1Var = new s1();
         s1Var.a(1);
-        f44410b = a10.b(s1Var.b()).a();
+        f44978b = a10.b(s1Var.b()).a();
         c.b a11 = bj.c.a("errorCode");
         s1 s1Var2 = new s1();
         s1Var2.a(2);
-        f44411c = a11.b(s1Var2.b()).a();
+        f44979c = a11.b(s1Var2.b()).a();
         c.b a12 = bj.c.a("metricResults");
         s1 s1Var3 = new s1();
         s1Var3.a(3);
-        f44412d = a12.b(s1Var3.b()).a();
+        f44980d = a12.b(s1Var3.b()).a();
     }
 
     private e8() {

@@ -6,7 +6,7 @@ import android.util.Rational;
 public abstract class c1 {
 
     /* renamed from: a  reason: collision with root package name */
-    private Rational f54030a;
+    private Rational f54598a;
 
     public c1() {
         this(null);
@@ -24,15 +24,15 @@ public abstract class c1 {
 
     public final b1 c(float f10, float f11, float f12) {
         PointF a10 = a(f10, f11);
-        return new b1(a10.x, a10.y, f12, this.f54030a);
+        return new b1(a10.x, a10.y, f12, this.f54598a);
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     public void e(Rational rational) {
-        this.f54030a = rational;
+        this.f54598a = rational;
     }
 
     public c1(Rational rational) {
-        this.f54030a = rational;
+        this.f54598a = rational;
     }
 }

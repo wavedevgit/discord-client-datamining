@@ -5,23 +5,23 @@ import bj.c;
 final class k6 implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final k6 f44638a = new k6();
+    static final k6 f45206a = new k6();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final bj.c f44639b;
+    private static final bj.c f45207b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final bj.c f44640c;
+    private static final bj.c f45208c;
 
     static {
         c.b a10 = bj.c.a("inferenceCommonLogEvent");
         s1 s1Var = new s1();
         s1Var.a(1);
-        f44639b = a10.b(s1Var.b()).a();
+        f45207b = a10.b(s1Var.b()).a();
         c.b a11 = bj.c.a("imageInfo");
         s1 s1Var2 = new s1();
         s1Var2.a(2);
-        f44640c = a11.b(s1Var2.b()).a();
+        f45208c = a11.b(s1Var2.b()).a();
     }
 
     private k6() {

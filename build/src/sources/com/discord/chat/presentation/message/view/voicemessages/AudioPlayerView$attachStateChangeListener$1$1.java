@@ -62,7 +62,7 @@ public final class AudioPlayerView$attachStateChangeListener$1$1 extends kotlin.
                         audioPlayerViewState3 = audioPlayerView3.state;
                         audioPlayerView3.toggleDurationEmitter(audioPlayerViewState3.shouldEmitDuration$chat_release());
                     }
-                    return Unit.f31988a;
+                    return Unit.f32556a;
                 }
             };
             this.label = 1;
@@ -70,11 +70,11 @@ public final class AudioPlayerView$attachStateChangeListener$1$1 extends kotlin.
                 return f10;
             }
         }
-        return Unit.f31988a;
+        return Unit.f32556a;
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((AudioPlayerView$attachStateChangeListener$1$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
+        return ((AudioPlayerView$attachStateChangeListener$1$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32556a);
     }
 }

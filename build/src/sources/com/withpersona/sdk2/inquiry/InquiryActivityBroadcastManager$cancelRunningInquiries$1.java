@@ -49,11 +49,11 @@ public final class InquiryActivityBroadcastManager$cancelRunningInquiries$1 exte
                 return f10;
             }
         }
-        return Unit.f31988a;
+        return Unit.f32556a;
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((InquiryActivityBroadcastManager$cancelRunningInquiries$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
+        return ((InquiryActivityBroadcastManager$cancelRunningInquiries$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32556a);
     }
 }

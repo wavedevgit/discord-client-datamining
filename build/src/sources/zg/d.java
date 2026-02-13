@@ -1,7 +1,7 @@
 package zg;
 
 import com.google.android.gms.tasks.Task;
-/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 public final class d extends IllegalStateException {
     private d(String str, Throwable th2) {
         super(str, th2);

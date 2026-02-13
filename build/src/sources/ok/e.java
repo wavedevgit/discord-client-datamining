@@ -5,107 +5,107 @@ import java.util.List;
 public final class e {
 
     /* renamed from: a  reason: collision with root package name */
-    private final byte[] f40179a;
+    private final byte[] f40747a;
 
     /* renamed from: b  reason: collision with root package name */
-    private int f40180b;
+    private int f40748b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final String f40181c;
+    private final String f40749c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final List f40182d;
+    private final List f40750d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final String f40183e;
+    private final String f40751e;
 
     /* renamed from: f  reason: collision with root package name */
-    private Integer f40184f;
+    private Integer f40752f;
 
     /* renamed from: g  reason: collision with root package name */
-    private Integer f40185g;
+    private Integer f40753g;
 
     /* renamed from: h  reason: collision with root package name */
-    private Object f40186h;
+    private Object f40754h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final int f40187i;
+    private final int f40755i;
 
     /* renamed from: j  reason: collision with root package name */
-    private final int f40188j;
+    private final int f40756j;
 
     /* renamed from: k  reason: collision with root package name */
-    private final int f40189k;
+    private final int f40757k;
 
     public e(byte[] bArr, String str, List list, String str2) {
         this(bArr, str, list, str2, -1, -1, 0);
     }
 
     public List a() {
-        return this.f40182d;
+        return this.f40750d;
     }
 
     public String b() {
-        return this.f40183e;
+        return this.f40751e;
     }
 
     public Integer c() {
-        return this.f40185g;
+        return this.f40753g;
     }
 
     public Integer d() {
-        return this.f40184f;
+        return this.f40752f;
     }
 
     public int e() {
-        return this.f40180b;
+        return this.f40748b;
     }
 
     public Object f() {
-        return this.f40186h;
+        return this.f40754h;
     }
 
     public byte[] g() {
-        return this.f40179a;
+        return this.f40747a;
     }
 
     public int h() {
-        return this.f40187i;
+        return this.f40755i;
     }
 
     public int i() {
-        return this.f40188j;
+        return this.f40756j;
     }
 
     public int j() {
-        return this.f40189k;
+        return this.f40757k;
     }
 
     public String k() {
-        return this.f40181c;
+        return this.f40749c;
     }
 
     public boolean l() {
-        if (this.f40187i >= 0 && this.f40188j >= 0) {
+        if (this.f40755i >= 0 && this.f40756j >= 0) {
             return true;
         }
         return false;
     }
 
     public void m(Integer num) {
-        this.f40185g = num;
+        this.f40753g = num;
     }
 
     public void n(Integer num) {
-        this.f40184f = num;
+        this.f40752f = num;
     }
 
     public void o(int i10) {
-        this.f40180b = i10;
+        this.f40748b = i10;
     }
 
     public void p(Object obj) {
-        this.f40186h = obj;
+        this.f40754h = obj;
     }
 
     public e(byte[] bArr, String str, List list, String str2, int i10) {
@@ -113,13 +113,13 @@ public final class e {
     }
 
     public e(byte[] bArr, String str, List list, String str2, int i10, int i11, int i12) {
-        this.f40179a = bArr;
-        this.f40180b = bArr == null ? 0 : bArr.length * 8;
-        this.f40181c = str;
-        this.f40182d = list;
-        this.f40183e = str2;
-        this.f40187i = i11;
-        this.f40188j = i10;
-        this.f40189k = i12;
+        this.f40747a = bArr;
+        this.f40748b = bArr == null ? 0 : bArr.length * 8;
+        this.f40749c = str;
+        this.f40750d = list;
+        this.f40751e = str2;
+        this.f40755i = i11;
+        this.f40756j = i10;
+        this.f40757k = i12;
     }
 }

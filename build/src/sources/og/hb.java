@@ -5,7 +5,7 @@ import bj.c;
 final class hb implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final hb f39260a = new hb();
+    static final hb f39828a = new hb();
 
     static {
         c.b a10 = bj.c.a("userSelectedArea");

@@ -2,11 +2,11 @@
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var5 = require;
-    var14 = metroImportDefault;
+    var13 = metroImportDefault;
     var2 = exports;
     var6 = dependencyMap;
     var _closure1_slot0 = var5;
-    var _closure1_slot1 = var14;
+    var _closure1_slot1 = var13;
     var _closure1_slot2 = var6;
     var1 = function() {
         var0 = _closure1_slot11;
@@ -63,6 +63,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = var2.bind(var3)(var1, var0);
         return var0;
     };
+    var _closure1_slot14 = var1;
     var0 = global;
     var8 = var0.Object;
     var7 = var8.defineProperty;
@@ -71,120 +72,117 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4.value = var0;
     var0 = '__esModule';
     var0 = var7.bind(var8)(var2, var0, var4);
-    var8 = 0;
-    var7 = var6[var8];
+    var7 = 0;
+    var8 = var6[var7];
     var4 = arg3;
     var0 = undefined;
-    var4 = var4.bind(var0)(var7);
+    var4 = var4.bind(var0)(var8);
     var _closure1_slot3 = var4;
     var4 = 1;
     var4 = var6[var4];
     var4 = var5.bind(var0)(var4);
-    var7 = var4.View;
-    var _closure1_slot4 = var7;
+    var8 = var4.View;
+    var _closure1_slot4 = var8;
     var4 = var4.ScrollView;
     var _closure1_slot5 = var4;
-    var12 = 2;
-    var4 = var6[var12];
+    var11 = 2;
+    var4 = var6[var11];
     var4 = var5.bind(var0)(var4);
-    var7 = var4.CREATE_GUILD_SMALL_SCREEN_MAX_HEIGHT;
-    var _closure1_slot6 = var7;
+    var8 = var4.CREATE_GUILD_SMALL_SCREEN_MAX_HEIGHT;
+    var _closure1_slot6 = var8;
     var4 = var4.CreateGuildModalStates;
     var _closure1_slot7 = var4;
     var4 = 3;
     var4 = var6[var4];
     var4 = var5.bind(var0)(var4);
-    var7 = var4.jsx;
-    var _closure1_slot8 = var7;
-    var9 = var4.jsxs;
-    var _closure1_slot9 = var9;
+    var8 = var4.jsx;
+    var _closure1_slot8 = var8;
+    var8 = var4.jsxs;
+    var _closure1_slot9 = var8;
     var4 = var4.Fragment;
     var _closure1_slot10 = var4;
     var4 = 4;
     var4 = var6[var4];
-    var10 = var5.bind(var0)(var4);
-    var9 = var10.createStyles;
+    var9 = var5.bind(var0)(var4);
+    var8 = var9.createStyles;
     var4 = {};
-    var11 = {};
-    var11.flexGrow = var12;
-    var13 = 5;
-    var15 = var6[var13];
-    var15 = var14.bind(var0)(var15);
-    var15 = var15.spacing;
-    var15 = var15.PX_24;
-    var11.minHeight = var15;
-    var4.growSpacing = var11;
-    var11 = {};
-    var11.flexGrow = var12;
-    var12 = var6[var13];
-    var12 = var14.bind(var0)(var12);
-    var12 = var12.spacing;
-    var12 = var12.PX_16;
-    var11.paddingHorizontal = var12;
-    var12 = var6[var13];
-    var12 = var14.bind(var0)(var12);
-    var12 = var12.spacing;
-    var12 = var12.PX_16;
-    var11.paddingBottom = var12;
-    var4.container = var11;
-    var11 = {};
-    var12 = var6[var13];
-    var12 = var14.bind(var0)(var12);
-    var12 = var12.radii;
-    var12 = var12.lg;
-    var11.borderRadius = var12;
-    var4.textInput = var11;
-    var11 = {
+    var10 = {};
+    var10.flexGrow = var11;
+    var12 = 5;
+    var14 = var6[var12];
+    var14 = var13.bind(var0)(var14);
+    var14 = var14.spacing;
+    var14 = var14.PX_24;
+    var10.minHeight = var14;
+    var4.growSpacing = var10;
+    var10 = {};
+    var10.flexGrow = var11;
+    var11 = var6[var12];
+    var11 = var13.bind(var0)(var11);
+    var11 = var11.spacing;
+    var11 = var11.PX_16;
+    var10.paddingHorizontal = var11;
+    var11 = var6[var12];
+    var11 = var13.bind(var0)(var11);
+    var11 = var11.spacing;
+    var11 = var11.PX_16;
+    var10.paddingBottom = var11;
+    var4.container = var10;
+    var10 = {};
+    var11 = var6[var12];
+    var11 = var13.bind(var0)(var11);
+    var11 = var11.radii;
+    var11 = var11.lg;
+    var10.borderRadius = var11;
+    var4.textInput = var10;
+    var10 = {
         'height': 1,
         'flexGrow': 2
     };
-    var12 = var6[var13];
-    var12 = var14.bind(var0)(var12);
-    var12 = var12.colors;
-    var12 = var12.BORDER_SUBTLE;
-    var11.backgroundColor = var12;
-    var4.innerSeparator = var11;
-    var12 = 'center';
-    var11 = {
+    var11 = var6[var12];
+    var11 = var13.bind(var0)(var11);
+    var11 = var11.colors;
+    var11 = var11.BORDER_SUBTLE;
+    var10.backgroundColor = var11;
+    var4.innerSeparator = var10;
+    var11 = 'center';
+    var10 = {
         'paddingVertical': 12,
         'flexDirection': 'row',
         'justifyContent': 'center',
         'alignItems': 'center'
     };
-    var4.separator = var11;
-    var11 = {
+    var4.separator = var10;
+    var10 = {
         'textAlign': 'center',
         'marginHorizontal': null,
         'textTransform': 'uppercase'
     };
-    var13 = var6[var13];
-    var13 = var14.bind(var0)(var13);
-    var13 = var13.spacing;
-    var13 = var13.PX_8;
-    var11.marginHorizontal = var13;
-    var4.orText = var11;
-    var11 = {};
-    var11.textAlign = var12;
-    var4.header = var11;
-    var12 = 8;
-    var11 = {
+    var12 = var6[var12];
+    var12 = var13.bind(var0)(var12);
+    var12 = var12.spacing;
+    var12 = var12.PX_8;
+    var10.marginHorizontal = var12;
+    var4.orText = var10;
+    var10 = {};
+    var10.textAlign = var11;
+    var4.header = var10;
+    var11 = 8;
+    var10 = {
         'textAlign': 'center',
         'marginTop': 8,
         'marginBottom': 32
     };
-    var4.description = var11;
-    var11 = {};
-    var11.marginTop = var12;
-    var4.exampleText = var11;
-    var4 = var9.bind(var10)(var4);
+    var4.description = var10;
+    var10 = {};
+    var10.marginTop = var11;
+    var4.exampleText = var10;
+    var4 = var8.bind(var9)(var4);
     var _closure1_slot11 = var4;
     var4 = ['https://discord.gg/hTKzmak', 'hTKzmak', 'https://discord.gg/wumpus-friends'];
     var _closure1_slot12 = var4;
-    var4 = var4[var8];
+    var4 = var4[var7];
     var _closure1_slot13 = var4;
-    var4 = {};
-    var4 = var7.bind(var0)(var1, var4);
-    var _closure1_slot14 = var4;
     var4 = 13;
     var4 = var6[var4];
     var6 = var5.bind(var0)(var4);
@@ -192,7 +190,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'uikit-native/modals/JoinServer.tsx';
     var4 = var5.bind(var6)(var4);
     var3 = function arg0() {
-        _fun63468: for (var _fun63468_ip = 0;;) switch (_fun63468_ip) {
+        _fun61503: for (var _fun61503_ip = 0;;) switch (_fun61503_ip) {
             case 0:
                 var0 = arg0;
                 var21 = var0.error;
@@ -262,8 +260,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var8 <= var7;
                 var8 = null;
                 if (var7) {
-                    _fun63468_ip = 503;
-                    continue _fun63468
+                    _fun61503_ip = 503;
+                    continue _fun61503
                 }
             case 261:
                 var11 = _closure1_slot9;
@@ -476,7 +474,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11.onPress = var18;
                 var11 = var15.bind(var3)(var14, var11);
                 var8[1] = var11;
-                var11 = _closure1_slot14;
+                var15 = _closure1_slot8;
+                var14 = _closure1_slot14;
+                var11 = {};
+                var11 = var15.bind(var3)(var14, var11);
                 var8[2] = var11;
                 var11 = _closure1_slot8;
                 var9 = var17[var9];
@@ -520,4 +521,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var3;
     var2.OrSeparator = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 7809, 33, 1297, 671, 3938, 1234, 4871, 1469, 1464, 5959, 4090, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 7603, 33, 1297, 671, 3938, 1235, 4900, 1469, 1464, 5941, 4090, 2]);

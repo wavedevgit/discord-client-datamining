@@ -22,13 +22,13 @@ import to.f5;
 public final class i0 implements gn.c0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final /* synthetic */ gn.f f49313a;
+    private final /* synthetic */ gn.f f49881a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final fo.f0 f49314b;
+    private final fo.f0 f49882b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final fo.t f49315c;
+    private final fo.t f49883c;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
@@ -46,7 +46,7 @@ public final class i0 implements gn.c0 {
         @Override // kotlin.jvm.functions.Function2
         public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2) {
             a((f5.b) obj, (gn.a0) obj2);
-            return Unit.f31988a;
+            return Unit.f32556a;
         }
     }
 
@@ -54,36 +54,36 @@ public final class i0 implements gn.c0 {
     public static final class b implements fo.y {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ xo.b f49316a;
+        final /* synthetic */ xo.b f49884a;
 
         /* renamed from: b  reason: collision with root package name */
-        final /* synthetic */ f5.b f49317b;
+        final /* synthetic */ f5.b f49885b;
 
         /* renamed from: c  reason: collision with root package name */
-        final /* synthetic */ fo.t f49318c;
+        final /* synthetic */ fo.t f49886c;
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ fo.f0 f49319d;
+        final /* synthetic */ fo.f0 f49887d;
 
         b(xo.b bVar, f5.b bVar2, fo.t tVar, fo.f0 f0Var) {
-            this.f49316a = bVar;
-            this.f49317b = bVar2;
-            this.f49318c = tVar;
-            this.f49319d = f0Var;
+            this.f49884a = bVar;
+            this.f49885b = bVar2;
+            this.f49886c = tVar;
+            this.f49887d = f0Var;
         }
 
         @Override // fo.y
         public void a() {
-            PreviewView previewView = this.f49316a.f54977y;
+            PreviewView previewView = this.f49884a.f55545y;
             Intrinsics.checkNotNullExpressionValue(previewView, "previewView");
-            this.f49318c.f(previewView, t.a.f24108e, this.f49319d, true, this.f49317b.x());
+            this.f49886c.f(previewView, t.a.f24108e, this.f49887d, true, this.f49885b.x());
         }
     }
 
     public i0(final fo.f0 governmentIdFeed, final fo.t cameraPreview) {
         Intrinsics.checkNotNullParameter(governmentIdFeed, "governmentIdFeed");
         Intrinsics.checkNotNullParameter(cameraPreview, "cameraPreview");
-        this.f49313a = new gn.f(Reflection.getOrCreateKotlinClass(f5.b.class), new Function4() { // from class: to.h0
+        this.f49881a = new gn.f(Reflection.getOrCreateKotlinClass(f5.b.class), new Function4() { // from class: to.h0
             @Override // kotlin.jvm.functions.Function4
             public final Object invoke(Object obj, Object obj2, Object obj3, Object obj4) {
                 View c10;
@@ -91,8 +91,8 @@ public final class i0 implements gn.c0 {
                 return c10;
             }
         });
-        this.f49314b = governmentIdFeed;
-        this.f49315c = cameraPreview;
+        this.f49882b = governmentIdFeed;
+        this.f49883c = cameraPreview;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -107,25 +107,25 @@ public final class i0 implements gn.c0 {
             context2 = context;
         }
         xo.b c10 = xo.b.c(LayoutInflater.from(context2).cloneInContext(context));
-        if (initialRendering.G() != lo.a.f35950e && initialRendering.G() != lo.a.f35949d) {
+        if (initialRendering.G() != lo.a.f36518e && initialRendering.G() != lo.a.f36517d) {
             z.a h10 = initialRendering.h();
-            PreviewView previewView = c10.f54977y;
+            PreviewView previewView = c10.f55545y;
             Intrinsics.checkNotNullExpressionValue(previewView, "previewView");
             aVar = h10.a(tVar, previewView, new b(c10, initialRendering, tVar, f0Var));
             f0Var2 = f0Var;
         } else {
             Context applicationContext = context.getApplicationContext();
             Intrinsics.checkNotNullExpressionValue(applicationContext, "getApplicationContext(...)");
-            ho.m b10 = ho.j.b(applicationContext, ho.n.f27615e);
+            ho.m b10 = ho.j.b(applicationContext, ho.n.f28183e);
             if (b10 == null) {
                 initialRendering.x().invoke(new fo.s0());
-                Camera2PreviewView camera2Preview = c10.f54955c;
+                Camera2PreviewView camera2Preview = c10.f55523c;
                 Intrinsics.checkNotNullExpressionValue(camera2Preview, "camera2Preview");
                 f0Var2 = f0Var;
                 aVar = new fo.r0(camera2Preview);
             } else {
                 g.a g10 = initialRendering.g();
-                Camera2PreviewView camera2Preview2 = c10.f54955c;
+                Camera2PreviewView camera2Preview2 = c10.f55523c;
                 Intrinsics.checkNotNullExpressionValue(camera2Preview2, "camera2Preview");
                 lo.a G = initialRendering.G();
                 initialRendering.H();
@@ -148,11 +148,11 @@ public final class i0 implements gn.c0 {
         Intrinsics.checkNotNullParameter(initialRendering, "initialRendering");
         Intrinsics.checkNotNullParameter(initialViewEnvironment, "initialViewEnvironment");
         Intrinsics.checkNotNullParameter(contextForNewView, "contextForNewView");
-        return this.f49313a.a(initialRendering, initialViewEnvironment, contextForNewView, viewGroup);
+        return this.f49881a.a(initialRendering, initialViewEnvironment, contextForNewView, viewGroup);
     }
 
     @Override // gn.c0
     public KClass getType() {
-        return this.f49313a.getType();
+        return this.f49881a.getType();
     }
 }

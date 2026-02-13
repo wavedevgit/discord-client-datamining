@@ -96,7 +96,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = 'modules/payments/native/NativeGiftContext.tsx';
     var5 = var6.bind(var7)(var5);
     var4 = function arg0() {
-        _fun60469: for (var _fun60469_ip = 0;;) switch (_fun60469_ip) {
+        _fun75379: for (var _fun75379_ip = 0;;) switch (_fun75379_ip) {
             case 0:
                 var0 = arg0;
                 var17 = var0.basePurchaseAnalytics;
@@ -150,8 +150,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var3.useState;
                 var6 = null;
                 if (!(var6 == var7)) {
-                    _fun60469_ip = 234;
-                    continue _fun60469
+                    _fun75379_ip = 234;
+                    continue _fun75379
                 }
             case 224:
                 var9 = _closure1_slot11;
@@ -170,8 +170,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = _closure1_slot5;
                 var2 = var3.useState;
                 if (!(var6 == var8)) {
-                    _fun60469_ip = 296;
-                    continue _fun60469
+                    _fun75379_ip = 296;
+                    continue _fun75379
                 }
             case 286:
                 var10 = _closure1_slot12;
@@ -282,8 +282,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = _closure1_slot13;
                 var7 = var7[var3];
                 if (!(var6 != var7)) {
-                    _fun60469_ip = 1463;
-                    continue _fun60469
+                    _fun75379_ip = 1474;
+                    continue _fun75379
                 }
             case 773:
                 var30 = var7.skuId;
@@ -319,13 +319,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 _closure2_slot30 = var10;
                 var6 = var6 != var10;
                 if (!var6) {
-                    _fun60469_ip = 903;
-                    continue _fun60469
+                    _fun75379_ip = 905;
+                    continue _fun75379
                 }
-            case 894:
+            case 896:
                 var7 = var10.length;
                 var6 = var7 > var27;
-            case 903:
+            case 905:
                 _closure2_slot31 = var6;
                 var27 = _closure1_slot0;
                 var7 = _closure1_slot2;
@@ -336,15 +336,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var27 = new Array(1);
                 var27[0] = var7;
                 var7 = function() { // Environment: var1
-                    _fun60471: for (var _fun60471_ip = 0;;) switch (_fun60471_ip) {
+                    _fun75381: for (var _fun75381_ip = 0;;) switch (_fun75381_ip) {
                         case 0:
                             var2 = _closure2_slot1;
                             var0 = null;
                             var2 = var0 != var2;
                             var0 = undefined;
                             if (!var2) {
-                                _fun60471_ip = 40;
-                                continue _fun60471
+                                _fun75381_ip = 40;
+                                continue _fun75381
                             }
                         case 18:
                             var3 = _closure1_slot8;
@@ -366,7 +366,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var32.selectedGiftingPromotionReward = var9;
                 var32.premiumType = var25;
                 var7 = function arg0() {
-                    _fun60472: for (var _fun60472_ip = 0;;) switch (_fun60472_ip) {
+                    _fun75382: for (var _fun75382_ip = 0;;) switch (_fun75382_ip) {
                         case 0:
                             var1 = arg0;
                             var9 = var1.giftStyle;
@@ -393,8 +393,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var11 = var8 == var10;
                             var9 = undefined;
                             if (var11) {
-                                _fun60472_ip = 119;
-                                continue _fun60472
+                                _fun75382_ip = 119;
+                                continue _fun75382
                             }
                         case 114:
                             var9 = var10.id;
@@ -403,8 +403,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var11 = var8 == var10;
                             var9 = undefined;
                             if (var11) {
-                                _fun60472_ip = 137;
-                                continue _fun60472
+                                _fun75382_ip = 137;
+                                continue _fun75382
                             }
                         case 132:
                             var9 = var10.surrogates;
@@ -413,8 +413,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var8 = var8 == var7;
                             var6 = undefined;
                             if (var8) {
-                                _fun60472_ip = 156;
-                                continue _fun60472
+                                _fun75382_ip = 156;
+                                continue _fun75382
                             }
                         case 150:
                             var6 = var7.soundId;
@@ -423,7 +423,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1[6] = var5;
                             var1[7] = var4;
                             var0 = function() { // Environment: var0
-                                _fun60473: for (var _fun60473_ip = 0;;) switch (_fun60473_ip) {
+                                _fun75383: for (var _fun75383_ip = 0;;) switch (_fun75383_ip) {
                                     case 0:
                                         var0 = {};
                                         var1 = _closure3_slot0;
@@ -437,8 +437,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                         var5 = var3 == var1;
                                         var4 = undefined;
                                         if (var5) {
-                                            _fun60473_ip = 56;
-                                            continue _fun60473
+                                            _fun75383_ip = 56;
+                                            continue _fun75383
                                         }
                                     case 47:
                                         var5 = _closure3_slot3;
@@ -449,8 +449,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                         var5 = var3 == var4;
                                         var4 = undefined;
                                         if (var5) {
-                                            _fun60473_ip = 83;
-                                            continue _fun60473
+                                            _fun75383_ip = 83;
+                                            continue _fun75383
                                         }
                                     case 74:
                                         var5 = _closure3_slot3;
@@ -461,8 +461,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                         var4 = var3 == var4;
                                         var1 = undefined;
                                         if (var4) {
-                                            _fun60473_ip = 111;
-                                            continue _fun60473
+                                            _fun75383_ip = 111;
+                                            continue _fun75383
                                         }
                                     case 101:
                                         var4 = _closure3_slot4;
@@ -471,21 +471,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                         var0.sound_id = var1;
                                         var1 = _closure3_slot5;
                                         if (!(var3 != var1)) {
-                                            _fun60473_ip = 145;
-                                            continue _fun60473
+                                            _fun75383_ip = 145;
+                                            continue _fun75383
                                         }
                                     case 124:
                                         var3 = _closure3_slot6;
                                         var1 = _closure1_slot11;
                                         var1 = var1.TIER_2;
                                         if (!(var3 !== var1)) {
-                                            _fun60473_ip = 151;
-                                            continue _fun60473
+                                            _fun75383_ip = 151;
+                                            continue _fun75383
                                         }
                                     case 145:
                                         var1 = new Array(0);
-                                        _fun60473_ip = 166;
-                                        continue _fun60473;
+                                        _fun75383_ip = 166;
+                                        continue _fun75383;
                                     case 151:
                                         var3 = _closure3_slot5;
                                         var2 = new Array(1);
@@ -507,13 +507,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var33 = new Array(1);
                 var33[0] = var12;
                 var12 = function() { // Environment: var1
-                    _fun60474: for (var _fun60474_ip = 0;;) switch (_fun60474_ip) {
+                    _fun75384: for (var _fun75384_ip = 0;;) switch (_fun75384_ip) {
                         case 0:
                             var1 = _closure2_slot20;
                             var2 = null;
                             if (!(var2 != var1)) {
-                                _fun60474_ip = 166;
-                                continue _fun60474
+                                _fun75384_ip = 166;
+                                continue _fun75384
                             }
                         case 16:
                             var4 = _closure1_slot1;
@@ -560,12 +560,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12[0] = var9;
                 var12[1] = var6;
                 var6 = function() { // Environment: var1
-                    _fun60475: for (var _fun60475_ip = 0;;) switch (_fun60475_ip) {
+                    _fun75385: for (var _fun75385_ip = 0;;) switch (_fun75385_ip) {
                         case 0:
                             var0 = _closure2_slot31;
                             if (!var0) {
-                                _fun60475_ip = 99;
-                                continue _fun60475
+                                _fun75385_ip = 99;
+                                continue _fun75385
                             }
                         case 10:
                             var2 = _closure1_slot8;
@@ -584,8 +584,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var7 = null;
                             var7 = var7 == var6;
                             if (var7) {
-                                _fun60475_ip = 79;
-                                continue _fun60475
+                                _fun75385_ip = 79;
+                                continue _fun75385
                             }
                         case 74:
                             var5 = var6.id;
@@ -600,221 +600,451 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     }
                 };
                 var6 = var33.bind(var7)(var6, var12);
-                var12 = {};
-                var6 = var29.order;
-                var12.order = var6;
-                var12.planId = var3;
-                var12.isPurchasing = var18;
-                var12.premiumType = var25;
-                var12.planInterval = var24;
-                var12.setPremiumType = var15;
-                var12.setPlanInterval = var14;
-                var12.setError = var2;
-                var6 = function arg0() {
-                    _fun60476: for (var _fun60476_ip = 0;;) switch (_fun60476_ip) {
-                        case 0:
-                            var0 = arg0;
-                            var3 = var0.order;
-                            var11 = var0.planId;
-                            var _closure3_slot0 = var11;
-                            var10 = var0.isPurchasing;
-                            var _closure3_slot1 = var10;
-                            var9 = var0.premiumType;
-                            var _closure3_slot2 = var9;
-                            var8 = var0.planInterval;
-                            var _closure3_slot3 = var8;
-                            var7 = var0.setPremiumType;
-                            var _closure3_slot4 = var7;
-                            var6 = var0.setPlanInterval;
-                            var _closure3_slot5 = var6;
-                            var5 = var0.setError;
-                            var _closure3_slot6 = var5;
-                            var0 = undefined;
-                            var _closure3_slot9 = var0;
-                            var _closure3_slot10 = var0;
-                            var _closure3_slot11 = var0;
-                            var14 = _closure1_slot5;
-                            var12 = var14.useRef;
-                            var4 = null;
-                            var12 = var12.bind(var14)(var4);
-                            var _closure3_slot7 = var12;
-                            var13 = var14.useRef;
-                            var12 = {};
-                            var12.premiumType = var9;
-                            var12.planInterval = var8;
-                            var12 = var13.bind(var14)(var12);
-                            var _closure3_slot8 = var12;
-                            var12 = var4 == var3;
-                            var14 = undefined;
-                            if (var12) {
-                                _fun60476_ip = 158;
-                                continue _fun60476
-                            }
-                        case 153:
-                            var14 = var3.id;
-                        case 158:
-                            _closure3_slot9 = var14;
-                            var12 = var4 == var3;
-                            var13 = undefined;
-                            if (var12) {
-                                _fun60476_ip = 206;
-                                continue _fun60476
-                            }
-                        case 171:
-                            var15 = var3.order_line_items;
-                            var12 = var4 == var15;
-                            var13 = undefined;
-                            if (var12) {
-                                _fun60476_ip = 206;
-                                continue _fun60476
-                            }
-                        case 186:
-                            var12 = 0;
-                            var12 = var15[var12];
-                            var15 = var4 == var12;
-                            var13 = undefined;
-                            if (var15) {
-                                _fun60476_ip = 206;
-                                continue _fun60476
-                            }
-                        case 201:
-                            var13 = var12.id;
-                        case 206:
-                            _closure3_slot10 = var13;
-                            var15 = var4 == var3;
-                            var12 = undefined;
-                            if (var15) {
-                                _fun60476_ip = 255;
-                                continue _fun60476
-                            }
-                        case 219:
-                            var15 = var3.order_line_items;
-                            var3 = var4 == var15;
-                            var12 = undefined;
-                            if (var3) {
-                                _fun60476_ip = 255;
-                                continue _fun60476
-                            }
-                        case 234:
-                            var3 = 0;
-                            var3 = var15[var3];
-                            var4 = var4 == var3;
-                            var12 = undefined;
-                            if (var4) {
-                                _fun60476_ip = 255;
-                                continue _fun60476
-                            }
-                        case 249:
-                            var12 = var3.sku_id;
-                        case 255:
-                            _closure3_slot11 = var12;
-                            var4 = _closure1_slot5;
-                            var3 = var4.useEffect;
-                            var2 = new Array(10);
-                            var2[0] = var14;
-                            var2[1] = var13;
-                            var2[2] = var12;
-                            var2[3] = var11;
-                            var2[4] = var10;
-                            var2[5] = var9;
-                            var2[6] = var8;
-                            var2[7] = var7;
-                            var2[8] = var6;
-                            var2[9] = var5;
-                            var1 = function() { // Environment: var1
-                                _fun60477: for (var _fun60477_ip = 0;;) switch (_fun60477_ip) {
-                                    case 0:
-                                        var1 = _closure3_slot9;
-                                        var3 = null;
-                                        var1 = var3 == var1;
-                                        if (var1) {
-                                            _fun60477_ip = 26;
-                                            continue _fun60477
+                var6 = {};
+                var12 = var29.order;
+                var6.order = var12;
+                var12 = var29.revision;
+                var6.revision = var12;
+                var12 = var29.setRevision;
+                var6.setRevision = var12;
+                var6.planId = var3;
+                var6.giftInfoOptions = var32;
+                var6.isPurchasing = var18;
+                var6.premiumType = var25;
+                var6.planInterval = var24;
+                var6.setPremiumType = var15;
+                var6.setPlanInterval = var14;
+                var6.setError = var2;
+                var2 = function arg0() {
+                    var1 = arg0;
+                    var14 = var1.order;
+                    var _closure3_slot0 = var14;
+                    var13 = var1.revision;
+                    var _closure3_slot1 = var13;
+                    var5 = var1.setRevision;
+                    var _closure3_slot2 = var5;
+                    var12 = var1.planId;
+                    var _closure3_slot3 = var12;
+                    var11 = var1.giftInfoOptions;
+                    var _closure3_slot4 = var11;
+                    var10 = var1.isPurchasing;
+                    var _closure3_slot5 = var10;
+                    var9 = var1.premiumType;
+                    var _closure3_slot6 = var9;
+                    var8 = var1.planInterval;
+                    var _closure3_slot7 = var8;
+                    var7 = var1.setPremiumType;
+                    var _closure3_slot8 = var7;
+                    var6 = var1.setPlanInterval;
+                    var _closure3_slot9 = var6;
+                    var4 = var1.setError;
+                    var _closure3_slot10 = var4;
+                    var3 = _closure1_slot5;
+                    var2 = var3.useRef;
+                    var1 = {
+                        'planId': null,
+                        'planSelection': null,
+                        'giftInfo': null
+                    };
+                    var15 = {};
+                    var15.premiumType = var9;
+                    var15.planInterval = var8;
+                    var1.planSelection = var15;
+                    var1 = var2.bind(var3)(var1);
+                    var _closure3_slot11 = var1;
+                    var2 = var3.useRef;
+                    var1 = false;
+                    var1 = var2.bind(var3)(var1);
+                    var _closure3_slot12 = var1;
+                    var2 = var3.useEffect;
+                    var1 = new Array(11);
+                    var1[0] = var14;
+                    var1[1] = var13;
+                    var1[2] = var12;
+                    var1[3] = var11;
+                    var1[4] = var10;
+                    var1[5] = var9;
+                    var1[6] = var8;
+                    var1[7] = var7;
+                    var1[8] = var6;
+                    var1[9] = var5;
+                    var1[10] = var4;
+                    var0 = function() { // Environment: var0
+                        _fun75387: for (var _fun75387_ip = 0;;) switch (_fun75387_ip) {
+                            case 0:
+                                var0 = _closure3_slot0;
+                                var5 = null;
+                                var3 = var5 == var0;
+                                var0 = undefined;
+                                var4 = undefined;
+                                if (var3) {
+                                    _fun75387_ip = 31;
+                                    continue _fun75387
+                                }
+                            case 22:
+                                var3 = _closure3_slot0;
+                                var4 = var3.id;
+                            case 31:
+                                var _closure4_slot0 = var4;
+                                var3 = _closure3_slot0;
+                                var6 = var5 == var3;
+                                var3 = undefined;
+                                if (var6) {
+                                    _fun75387_ip = 87;
+                                    continue _fun75387
+                                }
+                            case 48:
+                                var6 = _closure3_slot0;
+                                var7 = var6.order_line_items;
+                                var6 = var5 == var7;
+                                var3 = undefined;
+                                if (var6) {
+                                    _fun75387_ip = 87;
+                                    continue _fun75387
+                                }
+                            case 67:
+                                var6 = 0;
+                                var6 = var7[var6];
+                                var7 = var5 == var6;
+                                var3 = undefined;
+                                if (var7) {
+                                    _fun75387_ip = 87;
+                                    continue _fun75387
+                                }
+                            case 82:
+                                var3 = var6.id;
+                            case 87:
+                                var _closure4_slot1 = var3;
+                                var6 = _closure3_slot0;
+                                var7 = var5 == var6;
+                                var6 = undefined;
+                                if (var7) {
+                                    _fun75387_ip = 144;
+                                    continue _fun75387
+                                }
+                            case 104:
+                                var7 = _closure3_slot0;
+                                var8 = var7.order_line_items;
+                                var7 = var5 == var8;
+                                var6 = undefined;
+                                if (var7) {
+                                    _fun75387_ip = 144;
+                                    continue _fun75387
+                                }
+                            case 123:
+                                var7 = 0;
+                                var7 = var8[var7];
+                                var8 = var5 == var7;
+                                var6 = undefined;
+                                if (var8) {
+                                    _fun75387_ip = 144;
+                                    continue _fun75387
+                                }
+                            case 138:
+                                var6 = var7.sku_id;
+                            case 144:
+                                var7 = _closure3_slot0;
+                                var8 = var5 == var7;
+                                var7 = undefined;
+                                if (var8) {
+                                    _fun75387_ip = 197;
+                                    continue _fun75387
+                                }
+                            case 157:
+                                var8 = _closure3_slot0;
+                                var9 = var8.order_line_items;
+                                var8 = var5 == var9;
+                                var7 = undefined;
+                                if (var8) {
+                                    _fun75387_ip = 197;
+                                    continue _fun75387
+                                }
+                            case 176:
+                                var8 = 0;
+                                var8 = var9[var8];
+                                var9 = var5 == var8;
+                                var7 = undefined;
+                                if (var9) {
+                                    _fun75387_ip = 197;
+                                    continue _fun75387
+                                }
+                            case 191:
+                                var7 = var8.subscription_plan_id;
+                            case 197:
+                                var8 = var5 != var7;
+                                var9 = null;
+                                if (!var8) {
+                                    _fun75387_ip = 209;
+                                    continue _fun75387
+                                }
+                            case 206:
+                                var9 = var7;
+                            case 209:
+                                var7 = _closure3_slot0;
+                                var7 = var5 != var7;
+                                if (!var7) {
+                                    _fun75387_ip = 239;
+                                    continue _fun75387
+                                }
+                            case 220:
+                                var8 = _closure3_slot11;
+                                var8 = var8.current;
+                                var8 = var8.planId;
+                                var7 = var5 == var8;
+                            case 239:
+                                if (!var7) {
+                                    _fun75387_ip = 272;
+                                    continue _fun75387
+                                }
+                            case 242:
+                                var7 = _closure3_slot11;
+                                var8 = var7.current;
+                                var8.planId = var9;
+                                var8 = var7.current;
+                                var7 = _closure3_slot4;
+                                var8.giftInfo = var7;
+                            case 272:
+                                if (!(var5 != var4)) {
+                                    _fun75387_ip = 523;
+                                    continue _fun75387
+                                }
+                            case 279:
+                                if (!(var5 != var3)) {
+                                    _fun75387_ip = 523;
+                                    continue _fun75387
+                                }
+                            case 286:
+                                var3 = _closure3_slot1;
+                                if (!(var5 != var3)) {
+                                    _fun75387_ip = 523;
+                                    continue _fun75387
+                                }
+                            case 297:
+                                var3 = _closure3_slot5;
+                                if (var3) {
+                                    _fun75387_ip = 523;
+                                    continue _fun75387
+                                }
+                            case 307:
+                                var3 = _closure3_slot12;
+                                var3 = var3.current;
+                                if (var3) {
+                                    _fun75387_ip = 523;
+                                    continue _fun75387
+                                }
+                            case 322:
+                                var3 = _closure3_slot11;
+                                var3 = var3.current;
+                                var4 = var3.planId;
+                                var3 = _closure3_slot3;
+                                var4 = var4 !== var3;
+                                if (!var4) {
+                                    _fun75387_ip = 392;
+                                    continue _fun75387
+                                }
+                            case 348:
+                                var3 = var5 == var6;
+                                if (var3) {
+                                    _fun75387_ip = 389;
+                                    continue _fun75387
+                                }
+                            case 355:
+                                var8 = _closure1_slot13;
+                                var7 = _closure3_slot3;
+                                var7 = var8[var7];
+                                var8 = var5 == var7;
+                                var5 = undefined;
+                                if (var8) {
+                                    _fun75387_ip = 385;
+                                    continue _fun75387
+                                }
+                            case 379:
+                                var5 = var7.skuId;
+                            case 385:
+                                var3 = var5 === var6;
+                            case 389:
+                                var4 = var3;
+                            case 392:
+                                var _closure4_slot2 = var4;
+                                var3 = _closure3_slot11;
+                                var3 = var3.current;
+                                var5 = var3.giftInfo;
+                                var3 = _closure3_slot4;
+                                var3 = var5 !== var3;
+                                var _closure4_slot3 = var3;
+                                if (var4) {
+                                    _fun75387_ip = 429;
+                                    continue _fun75387
+                                }
+                            case 426:
+                                if (!var3) {
+                                    _fun75387_ip = 523;
+                                    continue _fun75387
+                                }
+                            case 429:
+                                var3 = false;
+                                var _closure4_slot4 = var3;
+                                var4 = _closure3_slot12;
+                                var3 = true;
+                                var4.current = var3;
+                                var2 = _closure3_slot1;
+                                var _closure4_slot5 = var2;
+                                var3 = _closure1_slot3;
+                                var2 = function*() { // Environment: var1
+                                    var0 = function*() { // Original name: ?anon_0_, environment: var0
+                                        _fun75389: for (var _fun75389_ip = 0;;) switch (_fun75389_ip) {
+                                            case 0:
+                                                StartGenerator();
+                                                ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 2);
+                                                if (var2) {
+                                                    _fun75389_ip = 466;
+                                                    continue _fun75389
+                                                }
+                                            case 10:
+                                                var3 = _closure4_slot2;
+                                                if (!var3) {
+                                                    _fun75389_ip = 180;
+                                                    continue _fun75389
+                                                }
+                                            case 23: // try_start_0
+                                                var4 = _closure1_slot0;
+                                                var5 = _closure1_slot2;
+                                                var3 = 12;
+                                                var3 = var5[var3];
+                                                var6 = undefined;
+                                                var7 = var4.bind(var6)(var3);
+                                                var5 = var7.patchOrderLineItem;
+                                                var3 = {};
+                                                var4 = _closure4_slot0;
+                                                var3.orderId = var4;
+                                                var4 = _closure4_slot1;
+                                                var3.orderLineItemId = var4;
+                                                var8 = _closure3_slot3;
+                                                var3.subscriptionPlanId = var8;
+                                                var8 = _closure4_slot5;
+                                                var3.expectedRevision = var8;
+                                                var3 = var5.bind(var7)(var3);
+                                                SaveGenerator(address = 104);
+                                            case 102:
+                                                return var3;
+                                            case 104:
+                                                ResumeGenerator(result_out_reg = 3, return_bool_out_reg = 5);
+                                                if (var5) {
+                                                    _fun75389_ip = 391;
+                                                    continue _fun75389
+                                                }
+                                            case 113:
+                                                _closure4_slot5 = var3;
+                                                var5 = _closure3_slot11;
+                                                var8 = var5.current;
+                                                var7 = _closure3_slot3;
+                                                var8.planId = var7;
+                                                var7 = var5.current;
+                                                var5 = {};
+                                                var8 = _closure3_slot6;
+                                                var5.premiumType = var8;
+                                                var8 = _closure3_slot7;
+                                                var5.planInterval = var8;
+                                                var7.planSelection = var5;
+                                                var5 = _closure3_slot2;
+                                                var4 = _closure4_slot5;
+                                                var4 = var5.bind(var6)(var4);
+                                            case 180: // try_end0
+                                                var4 = _closure4_slot3;
+                                                if (!var4) {
+                                                    _fun75389_ip = 383;
+                                                    continue _fun75389
+                                                }
+                                            case 190:
+                                                var5 = _closure1_slot0;
+                                                var6 = _closure1_slot2;
+                                                var4 = 12;
+                                                var4 = var6[var4];
+                                                var7 = undefined;
+                                                var8 = var5.bind(var7)(var4);
+                                                var6 = var8.updateOrder;
+                                                var4 = {};
+                                                var5 = _closure4_slot0;
+                                                var4.orderId = var5;
+                                                var9 = {};
+                                                var10 = _closure3_slot4;
+                                                var11 = var10.recipient_id;
+                                                var9.recipient_id = var11;
+                                                var11 = var10.gift_style;
+                                                var9.gift_style = var11;
+                                                var11 = var10.emoji_id;
+                                                var9.emoji_id = var11;
+                                                var11 = var10.emoji_name;
+                                                var9.emoji_name = var11;
+                                                var11 = var10.sound_id;
+                                                var9.sound_id = var11;
+                                                var11 = var10.reward_sku_ids;
+                                                var9.reward_sku_ids = var11;
+                                                var10 = var10.custom_message;
+                                                var9.custom_message_contents = var10;
+                                                var4.giftInfo = var9;
+                                                var9 = _closure4_slot5;
+                                                var4.expectedRevision = var9;
+                                                var4 = var6.bind(var8)(var4);
+                                                SaveGenerator(address = 341);
+                                            case 339:
+                                                return var4;
+                                            case 341:
+                                                ResumeGenerator(result_out_reg = 4, return_bool_out_reg = 6);
+                                                if (var6) {
+                                                    _fun75389_ip = 388;
+                                                    continue _fun75389
+                                                }
+                                            case 347:
+                                                _closure4_slot5 = var4;
+                                                var6 = _closure3_slot11;
+                                                var8 = var6.current;
+                                                var6 = _closure3_slot4;
+                                                var8.giftInfo = var6;
+                                                var6 = _closure3_slot2;
+                                                var5 = _closure4_slot5;
+                                                var5 = var6.bind(var7)(var5);
+                                            case 383:
+                                                var5 = undefined;
+                                                return var5;
+                                            case 388:
+                                                return var4;
+                                            case 391:
+                                                return var3;
+                                            case 394: // catch_target0
+                                                CatchBlockStart(arg_register = 1);
+                                                var2 = _closure4_slot4;
+                                                if (var2) {
+                                                    _fun75389_ip = 464;
+                                                    continue _fun75389
+                                                }
+                                            case 403:
+                                                var6 = _closure3_slot8;
+                                                var2 = _closure3_slot11;
+                                                var4 = var2.current;
+                                                var4 = var4.planSelection;
+                                                var5 = var4.premiumType;
+                                                var4 = undefined;
+                                                var5 = var6.bind(var4)(var5);
+                                                var3 = _closure3_slot9;
+                                                var2 = var2.current;
+                                                var2 = var2.planSelection;
+                                                var2 = var2.planInterval;
+                                                var2 = var3.bind(var4)(var2);
+                                            case 464:
+                                                throw var1;
+                                            case 466:
+                                                return var0;
                                         }
-                                    case 18:
-                                        var2 = _closure3_slot10;
-                                        var1 = var3 == var2;
-                                    case 26:
-                                        if (var1) {
-                                            _fun60477_ip = 33;
-                                            continue _fun60477
-                                        }
-                                    case 29:
-                                        var1 = _closure3_slot1;
-                                    case 33:
-                                        if (var1) {
-                                            _fun60477_ip = 207;
-                                            continue _fun60477
-                                        }
-                                    case 39:
-                                        var1 = _closure3_slot7;
-                                        var2 = var1.current;
-                                        var1 = _closure3_slot0;
-                                        if (!(var2 !== var1)) {
-                                            _fun60477_ip = 207;
-                                            continue _fun60477
-                                        }
-                                    case 59:
-                                        var1 = _closure3_slot11;
-                                        var1 = var3 != var1;
-                                        if (!var1) {
-                                            _fun60477_ip = 108;
-                                            continue _fun60477
-                                        }
-                                    case 70:
-                                        var5 = _closure1_slot13;
-                                        var2 = _closure3_slot0;
-                                        var2 = var5[var2];
-                                        var5 = var3 == var2;
-                                        var3 = undefined;
-                                        if (var5) {
-                                            _fun60477_ip = 100;
-                                            continue _fun60477
-                                        }
-                                    case 94:
-                                        var3 = var2.skuId;
-                                    case 100:
-                                        var2 = _closure3_slot11;
-                                        var1 = var3 !== var2;
-                                    case 108:
-                                        if (var1) {
-                                            _fun60477_ip = 207;
-                                            continue _fun60477
-                                        }
-                                    case 111:
-                                        var3 = _closure1_slot0;
-                                        var2 = _closure1_slot2;
-                                        var1 = 12;
-                                        var2 = var2[var1];
-                                        var1 = undefined;
-                                        var3 = var3.bind(var1)(var2);
-                                        var2 = var3.patchOrderLineItem;
-                                        var1 = {};
-                                        var5 = _closure3_slot9;
-                                        var1.orderId = var5;
-                                        var5 = _closure3_slot10;
-                                        var1.orderLineItemId = var5;
-                                        var4 = _closure3_slot0;
-                                        var1.subscriptionPlanId = var4;
-                                        var3 = var2.bind(var3)(var1);
-                                        var2 = var3.then;
-                                        var1 = function() { // Environment: var0
-                                            var1 = _closure3_slot7;
-                                            var0 = _closure3_slot0;
-                                            var1.current = var0;
-                                            var1 = _closure3_slot8;
-                                            var0 = {};
-                                            var3 = _closure3_slot2;
-                                            var0.premiumType = var3;
-                                            var2 = _closure3_slot3;
-                                            var0.planInterval = var2;
-                                            var1.current = var0;
-                                            var0 = undefined;
-                                            return var0;
-                                        };
-                                        var2 = var2.bind(var3)(var1);
-                                        var1 = var2.catch;
-                                        var0 = function(arg0) { // Environment: var0
+                                    };
+                                    return var0;
+                                };
+                                var2 = var3.bind(var0)(var2);
+                                var4 = var2.bind(var0)();
+                                var3 = var4.catch;
+                                var2 = function(arg0) { // Environment: var1
+                                    _fun75390: for (var _fun75390_ip = 0;;) switch (_fun75390_ip) {
+                                        case 0:
                                             var2 = arg0;
                                             var3 = _closure1_slot0;
                                             var1 = _closure1_slot2;
@@ -825,202 +1055,64 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                             var6 = var7.captureBillingException;
                                             var5 = {};
                                             var1 = {};
-                                            var3 = 'NativeGiftContext_patchOrderLineItem';
+                                            var3 = 'NativeGiftContext_syncOrder';
                                             var1.source = var3;
                                             var5.tags = var1;
                                             var8 = {};
-                                            var3 = _closure3_slot9;
-                                            var8.orderId = var3;
-                                            var3 = _closure3_slot10;
-                                            var8.orderLineItemId = var3;
-                                            var3 = _closure3_slot0;
-                                            var8.planId = var3;
+                                            var1 = _closure4_slot0;
+                                            var8.orderId = var1;
+                                            var9 = _closure3_slot3;
+                                            var8.planId = var9;
+                                            var9 = _closure4_slot2;
+                                            var8.needsPlanSync = var9;
+                                            var9 = _closure4_slot3;
+                                            var8.needsGiftSync = var9;
                                             var5.extra = var8;
                                             var5 = var6.bind(var7)(var2, var5);
-                                            var6 = _closure1_slot15;
-                                            var5 = var6.error;
-                                            var4 = {};
-                                            var4.error = var2;
-                                            var7 = _closure3_slot9;
-                                            var4.orderId = var7;
-                                            var7 = _closure3_slot10;
-                                            var4.orderLineItemId = var7;
-                                            var4.planId = var3;
-                                            var3 = 'Failed to update draft order';
-                                            var3 = var5.bind(var6)(var3, var4);
-                                            var5 = _closure3_slot4;
-                                            var3 = _closure3_slot8;
-                                            var4 = var3.current;
-                                            var4 = var4.premiumType;
-                                            var4 = var5.bind(var0)(var4);
-                                            var4 = _closure3_slot5;
-                                            var3 = var3.current;
-                                            var3 = var3.planInterval;
-                                            var3 = var4.bind(var0)(var3);
-                                            var1 = _closure3_slot6;
+                                            var7 = _closure1_slot15;
+                                            var6 = var7.error;
+                                            var5 = {};
+                                            var5.error = var2;
+                                            var4 = _closure4_slot0;
+                                            var5.orderId = var4;
+                                            var4 = 'Failed to sync order';
+                                            var4 = var6.bind(var7)(var4, var5);
+                                            var3 = _closure4_slot4;
+                                            if (var3) {
+                                                _fun75390_ip = 164;
+                                                continue _fun75390
+                                            }
+                                        case 155:
+                                            var1 = _closure3_slot10;
                                             var1 = var1.bind(var0)(var2);
+                                        case 164:
                                             return var0;
-                                        };
-                                        var0 = var1.bind(var2)(var0);
-                                    case 207:
-                                        var0 = undefined;
-                                        return var0;
-                                }
-                            };
-                            var1 = var3.bind(var4)(var1, var2);
-                            return var0;
-                    }
-                };
-                var6 = var6.bind(var4)(var12);
-                var6 = {};
-                var12 = var29.order;
-                var6.order = var12;
-                var6.giftInfoOptions = var32;
-                var6.isPurchasing = var18;
-                var6.setError = var2;
-                var2 = function arg0() {
-                    _fun60480: for (var _fun60480_ip = 0;;) switch (_fun60480_ip) {
-                        case 0:
-                            var0 = arg0;
-                            var3 = var0.order;
-                            var7 = var0.giftInfoOptions;
-                            var _closure3_slot0 = var7;
-                            var6 = var0.isPurchasing;
-                            var _closure3_slot1 = var6;
-                            var5 = var0.setError;
-                            var _closure3_slot2 = var5;
-                            var0 = undefined;
-                            var _closure3_slot4 = var0;
-                            var9 = _closure1_slot5;
-                            var8 = var9.useRef;
-                            var4 = null;
-                            var8 = var8.bind(var9)(var4);
-                            var _closure3_slot3 = var8;
-                            var4 = var4 == var3;
-                            var8 = undefined;
-                            if (var4) {
-                                _fun60480_ip = 84;
-                                continue _fun60480
-                            }
-                        case 79:
-                            var8 = var3.id;
-                        case 84:
-                            _closure3_slot4 = var8;
-                            var4 = _closure1_slot5;
-                            var3 = var4.useEffect;
-                            var2 = new Array(4);
-                            var2[0] = var8;
-                            var2[1] = var7;
-                            var2[2] = var6;
-                            var2[3] = var5;
-                            var1 = function() { // Environment: var1
-                                _fun60481: for (var _fun60481_ip = 0;;) switch (_fun60481_ip) {
-                                    case 0:
-                                        var2 = _closure3_slot4;
-                                        var1 = null;
-                                        var1 = var1 == var2;
-                                        if (var1) {
-                                            _fun60481_ip = 22;
-                                            continue _fun60481
-                                        }
-                                    case 18:
-                                        var1 = _closure3_slot1;
-                                    case 22:
-                                        if (var1) {
-                                            _fun60481_ip = 42;
-                                            continue _fun60481
-                                        }
-                                    case 25:
-                                        var2 = _closure3_slot3;
-                                        var3 = var2.current;
-                                        var2 = _closure3_slot0;
-                                        var1 = var3 === var2;
-                                    case 42:
-                                        if (var1) {
-                                            _fun60481_ip = 214;
-                                            continue _fun60481
-                                        }
-                                    case 48:
-                                        var3 = _closure1_slot0;
-                                        var2 = _closure1_slot2;
-                                        var1 = 12;
-                                        var2 = var2[var1];
-                                        var1 = undefined;
-                                        var3 = var3.bind(var1)(var2);
-                                        var2 = var3.updateOrder;
-                                        var1 = {};
-                                        var4 = _closure3_slot4;
-                                        var1.orderId = var4;
-                                        var4 = {};
-                                        var5 = _closure3_slot0;
-                                        var6 = var5.recipient_id;
-                                        var4.recipient_id = var6;
-                                        var6 = var5.gift_style;
-                                        var4.gift_style = var6;
-                                        var6 = var5.emoji_id;
-                                        var4.emoji_id = var6;
-                                        var6 = var5.emoji_name;
-                                        var4.emoji_name = var6;
-                                        var6 = var5.sound_id;
-                                        var4.sound_id = var6;
-                                        var6 = var5.reward_sku_ids;
-                                        var4.reward_sku_ids = var6;
-                                        var5 = var5.custom_message;
-                                        var4.custom_message_contents = var5;
-                                        var1.giftInfo = var4;
-                                        var3 = var2.bind(var3)(var1);
-                                        var2 = var3.then;
-                                        var1 = function() { // Environment: var0
-                                            var1 = _closure3_slot3;
-                                            var0 = _closure3_slot0;
-                                            var1.current = var0;
-                                            var0 = undefined;
-                                            return var0;
-                                        };
-                                        var2 = var2.bind(var3)(var1);
-                                        var1 = var2.catch;
-                                        var0 = function(arg0) { // Environment: var0
-                                            var2 = arg0;
-                                            var4 = _closure1_slot0;
-                                            var1 = _closure1_slot2;
-                                            var0 = 13;
-                                            var1 = var1[var0];
-                                            var0 = undefined;
-                                            var6 = var4.bind(var0)(var1);
-                                            var5 = var6.captureBillingException;
-                                            var4 = {};
-                                            var1 = {};
-                                            var7 = 'NativeGiftContext_updateOrder';
-                                            var1.source = var7;
-                                            var4.tags = var1;
-                                            var7 = {};
-                                            var8 = _closure3_slot4;
-                                            var7.orderId = var8;
-                                            var8 = _closure3_slot0;
-                                            var7.giftInfoOptions = var8;
-                                            var4.extra = var7;
-                                            var4 = var5.bind(var6)(var2, var4);
-                                            var6 = _closure1_slot15;
-                                            var5 = var6.error;
-                                            var4 = {};
-                                            var4.error = var2;
-                                            var3 = _closure3_slot4;
-                                            var4.orderId = var3;
-                                            var3 = 'Failed to update order with gift customization';
-                                            var3 = var5.bind(var6)(var3, var4);
-                                            var1 = _closure3_slot2;
-                                            var1 = var1.bind(var0)(var2);
-                                            return var0;
-                                        };
-                                        var0 = var1.bind(var2)(var0);
-                                    case 214:
-                                        var0 = undefined;
-                                        return var0;
-                                }
-                            };
-                            var1 = var3.bind(var4)(var1, var2);
-                            return var0;
-                    }
+                                    }
+                                };
+                                var4 = var3.bind(var4)(var2);
+                                var3 = var4.finally;
+                                var2 = function() { // Environment: var1
+                                    var1 = _closure3_slot12;
+                                    var0 = false;
+                                    var1.current = var0;
+                                    var0 = undefined;
+                                    return var0;
+                                };
+                                var2 = var3.bind(var4)(var2);
+                                var1 = function() { // Environment: var1
+                                    var0 = true;
+                                    _closure4_slot4 = var0;
+                                    var0 = undefined;
+                                    return var0;
+                                };
+                                return var1;
+                            case 523:
+                                return var0;
+                        }
+                    };
+                    var0 = var2.bind(var3)(var0, var1);
+                    var0 = undefined;
+                    return var0;
                 };
                 var2 = var2.bind(var4)(var6);
                 var12 = var7.useCallback;
@@ -1030,7 +1122,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = arg0;
                     var _closure3_slot0 = var0;
                     var0 = function arg0() {
-                        _fun60485: for (var _fun60485_ip = 0;;) switch (_fun60485_ip) {
+                        _fun75394: for (var _fun75394_ip = 0;;) switch (_fun75394_ip) {
                             case 0:
                                 var3 = _closure1_slot7;
                                 var1 = var3.createFromServer;
@@ -1040,8 +1132,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var4 = var3.subscriptionPlanId;
                                 var1 = _closure2_slot25;
                                 if (!(var4 === var1)) {
-                                    _fun60485_ip = 116;
-                                    continue _fun60485
+                                    _fun75394_ip = 116;
+                                    continue _fun75394
                                 }
                             case 44:
                                 var1 = _closure2_slot17;
@@ -1050,8 +1142,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var5 = _closure3_slot0;
                                 var3 = null;
                                 if (!(var3 != var5)) {
-                                    _fun60485_ip = 76;
-                                    continue _fun60485
+                                    _fun75394_ip = 76;
+                                    continue _fun75394
                                 }
                             case 68:
                                 var3 = _closure3_slot0;
@@ -1085,13 +1177,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = undefined;
                     var1 = function*(arg0) { // Environment: var0
                         var0 = function*(arg0) { // Original name: ?anon_0_, environment: var0
-                            _fun60488: for (var _fun60488_ip = 0;;) switch (_fun60488_ip) {
+                            _fun75397: for (var _fun75397_ip = 0;;) switch (_fun75397_ip) {
                                 case 0:
                                     StartGenerator();
                                     ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
                                     if (var1) {
-                                        _fun60488_ip = 353;
-                                        continue _fun60488
+                                        _fun75397_ip = 353;
+                                        continue _fun75397
                                     }
                                 case 10:
                                     var4 = _closure1_slot1;
@@ -1111,16 +1203,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                     var2 = var4.isAndroid;
                                     var2 = var2.bind(var4)();
                                     if (var2) {
-                                        _fun60488_ip = 350;
-                                        continue _fun60488
+                                        _fun75397_ip = 350;
+                                        continue _fun75397
                                     }
                                 case 86:
                                     var4 = _closure2_slot24;
                                     var5 = var4.orderId;
                                     var4 = null;
                                     if (!(var4 != var5)) {
-                                        _fun60488_ip = 350;
-                                        continue _fun60488
+                                        _fun75397_ip = 350;
+                                        continue _fun75397
                                     }
                                 case 108: // try_start_0
                                     var7 = _closure1_slot15;
@@ -1148,12 +1240,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 case 201:
                                     ResumeGenerator(result_out_reg = 4, return_bool_out_reg = 5);
                                     if (var5) {
-                                        _fun60488_ip = 212;
-                                        continue _fun60488
+                                        _fun75397_ip = 212;
+                                        continue _fun75397
                                     }
                                 case 207: // try_end0
-                                    _fun60488_ip = 350;
-                                    continue _fun60488;
+                                    _fun75397_ip = 350;
+                                    continue _fun75397;
                                 case 212:
                                     return var4;
                                 case 215: // catch_target0
@@ -1259,7 +1351,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var29.orderId;
                 var6[8] = var2;
                 var2 = function(arg0) { // Environment: var1
-                    _fun60491: for (var _fun60491_ip = 0;;) switch (_fun60491_ip) {
+                    _fun75400: for (var _fun75400_ip = 0;;) switch (_fun75400_ip) {
                         case 0:
                             var1 = _closure2_slot19;
                             var0 = undefined;
@@ -1277,18 +1369,18 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1 = var2.isAndroid;
                             var1 = var1.bind(var2)();
                             if (!var1) {
-                                _fun60491_ip = 117;
-                                continue _fun60491
+                                _fun75400_ip = 119;
+                                continue _fun75400
                             }
                         case 70:
                             var8 = function arg0() {
-                                _fun60492: for (var _fun60492_ip = 0;;) switch (_fun60492_ip) {
+                                _fun75401: for (var _fun75401_ip = 0;;) switch (_fun75401_ip) {
                                     case 0:
                                         var3 = arg0;
                                         var0 = var3.isActivePurchase;
                                         if (!var0) {
-                                            _fun60492_ip = 98;
-                                            continue _fun60492
+                                            _fun75401_ip = 98;
+                                            continue _fun75401
                                         }
                                     case 12:
                                         var4 = _closure1_slot1;
@@ -1305,8 +1397,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                         var1 = _closure1_slot10;
                                         var1 = var1.OK;
                                         if (!(var3 !== var1)) {
-                                            _fun60492_ip = 98;
-                                            continue _fun60492
+                                            _fun75401_ip = 98;
+                                            continue _fun75401
                                         }
                                     case 82:
                                         var1 = _closure2_slot36;
@@ -1326,7 +1418,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var2 = var7.subscribe;
                             var1 = 'GPLAY_UPDATE_PURCHASE_STATE';
                             var1 = var2.bind(var7)(var1, var8);
-                        case 117:
+                        case 119:
                             var2 = _closure2_slot3;
                             var7 = _closure1_slot0;
                             var8 = _closure1_slot2;
@@ -1355,13 +1447,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var6 = _closure1_slot3;
                             var5 = function*() { // Environment: var4
                                 var0 = function*() { // Original name: ?anon_0_, environment: var0
-                                    _fun60494: for (var _fun60494_ip = 0;;) switch (_fun60494_ip) {
+                                    _fun75403: for (var _fun75403_ip = 0;;) switch (_fun75403_ip) {
                                         case 0:
                                             StartGenerator();
                                             ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
                                             if (var1) {
-                                                _fun60494_ip = 44;
-                                                continue _fun60494
+                                                _fun75403_ip = 44;
+                                                continue _fun75403
                                             }
                                         case 7:
                                             var3 = _closure2_slot35;
@@ -1374,8 +1466,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                         case 32:
                                             ResumeGenerator(result_out_reg = 1, return_bool_out_reg = 2);
                                             if (var2) {
-                                                _fun60494_ip = 41;
-                                                continue _fun60494
+                                                _fun75403_ip = 41;
+                                                continue _fun75403
                                             }
                                         case 38:
                                             return var1;
@@ -1532,7 +1624,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.children = var5;
                 var0 = var2.bind(var4)(var1, var0);
                 return var0;
-            case 1463:
+            case 1474:
                 var0 = global;
                 var2 = var0.Error;
                 var0 = var0.HermesInternal;
@@ -1555,4 +1647,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.useNativeGiftContext = var3;
     var2.useForwardedNativeGiftContext = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 57, 31, 7272, 6959, 1621, 660, 4618, 1623, 33, 3, 7469, 7304, 3127, 7470, 1234, 7472, 3111, 4614, 7268, 566, 7473, 3933, 795, 806, 478, 7146, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 57, 31, 7160, 6942, 1621, 660, 4616, 1623, 33, 3, 9485, 7192, 3130, 9486, 1235, 9488, 3114, 4612, 7156, 566, 9489, 3933, 796, 807, 478, 7187, 2]);

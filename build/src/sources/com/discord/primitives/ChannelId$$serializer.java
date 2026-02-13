@@ -34,7 +34,7 @@ public /* synthetic */ class ChannelId$$serializer implements h0 {
     @Override // tt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        return new KSerializer[]{z0.f50107a};
+        return new KSerializer[]{z0.f50675a};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy

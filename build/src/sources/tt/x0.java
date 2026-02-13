@@ -11,10 +11,10 @@ import st.l;
 public abstract class x0 implements SerialDescriptor {
 
     /* renamed from: a  reason: collision with root package name */
-    private final SerialDescriptor f50089a;
+    private final SerialDescriptor f50657a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final int f50090b;
+    private final int f50658b;
 
     public /* synthetic */ x0(SerialDescriptor serialDescriptor, DefaultConstructorMarker defaultConstructorMarker) {
         this(serialDescriptor);
@@ -37,7 +37,7 @@ public abstract class x0 implements SerialDescriptor {
 
     @Override // kotlinx.serialization.descriptors.SerialDescriptor
     public int d() {
-        return this.f50090b;
+        return this.f50658b;
     }
 
     @Override // kotlinx.serialization.descriptors.SerialDescriptor
@@ -53,7 +53,7 @@ public abstract class x0 implements SerialDescriptor {
             return false;
         }
         x0 x0Var = (x0) obj;
-        if (Intrinsics.areEqual(this.f50089a, x0Var.f50089a) && Intrinsics.areEqual(h(), x0Var.h())) {
+        if (Intrinsics.areEqual(this.f50657a, x0Var.f50657a) && Intrinsics.areEqual(h(), x0Var.h())) {
             return true;
         }
         return false;
@@ -70,7 +70,7 @@ public abstract class x0 implements SerialDescriptor {
     @Override // kotlinx.serialization.descriptors.SerialDescriptor
     public SerialDescriptor g(int i10) {
         if (i10 >= 0) {
-            return this.f50089a;
+            return this.f50657a;
         }
         throw new IllegalArgumentException(("Illegal index " + i10 + ", " + h() + " expects only non-negative indices").toString());
     }
@@ -82,11 +82,11 @@ public abstract class x0 implements SerialDescriptor {
 
     @Override // kotlinx.serialization.descriptors.SerialDescriptor
     public st.k getKind() {
-        return l.b.f48381a;
+        return l.b.f48949a;
     }
 
     public int hashCode() {
-        return (this.f50089a.hashCode() * 31) + h().hashCode();
+        return (this.f50657a.hashCode() * 31) + h().hashCode();
     }
 
     @Override // kotlinx.serialization.descriptors.SerialDescriptor
@@ -103,11 +103,11 @@ public abstract class x0 implements SerialDescriptor {
     }
 
     public String toString() {
-        return h() + '(' + this.f50089a + ')';
+        return h() + '(' + this.f50657a + ')';
     }
 
     private x0(SerialDescriptor serialDescriptor) {
-        this.f50089a = serialDescriptor;
-        this.f50090b = 1;
+        this.f50657a = serialDescriptor;
+        this.f50658b = 1;
     }
 }

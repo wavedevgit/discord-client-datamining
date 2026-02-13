@@ -3,13 +3,13 @@
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var2 = exports;
     var0 = function() {
-        _fun30527: for (var _fun30527_ip = 0;;) switch (_fun30527_ip) {
+        _fun30558: for (var _fun30558_ip = 0;;) switch (_fun30558_ip) {
             case 0:
                 var1 = _closure1_slot0;
                 var0 = null;
                 if (!(var0 != var1)) {
-                    _fun30527_ip = 17;
-                    continue _fun30527
+                    _fun30558_ip = 17;
+                    continue _fun30558
                 }
             case 13:
                 var0 = undefined;
@@ -88,7 +88,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.setProcessPriority = var3;
     var3 = function() {
-        _fun30532: for (var _fun30532_ip = 0;;) switch (_fun30532_ip) {
+        _fun30563: for (var _fun30563_ip = 0;;) switch (_fun30563_ip) {
             case 0:
                 var2 = _closure1_slot3;
                 var0 = undefined;
@@ -96,16 +96,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = _closure1_slot1;
                 var0 = null;
                 if (!(var0 == var2)) {
-                    _fun30532_ip = 43;
-                    continue _fun30532
+                    _fun30563_ip = 43;
+                    continue _fun30563
                 }
             case 23:
                 var2 = _closure1_slot0;
                 var0 = var2.getVoiceEngine;
                 var0 = var0.bind(var2)();
                 var _closure1_slot1 = var0;
-                _fun30532_ip = 47;
-                continue _fun30532;
+                _fun30563_ip = 47;
+                continue _fun30563;
             case 43:
                 var0 = _closure1_slot1;
             case 47:
@@ -114,7 +114,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getVoiceEngine = var3;
     var1 = function() {
-        _fun30533: for (var _fun30533_ip = 0;;) switch (_fun30533_ip) {
+        _fun30564: for (var _fun30564_ip = 0;;) switch (_fun30564_ip) {
             case 0:
                 var2 = _closure1_slot3;
                 var0 = undefined;
@@ -122,16 +122,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = _closure1_slot2;
                 var0 = null;
                 if (!(var0 == var2)) {
-                    _fun30533_ip = 43;
-                    continue _fun30533
+                    _fun30564_ip = 43;
+                    continue _fun30564
                 }
             case 23:
                 var2 = _closure1_slot0;
                 var0 = var2.getVoiceFilters;
                 var0 = var0.bind(var2)();
                 var _closure1_slot2 = var0;
-                _fun30533_ip = 47;
-                continue _fun30533;
+                _fun30564_ip = 47;
+                continue _fun30564;
             case 43:
                 var0 = _closure1_slot2;
             case 47:

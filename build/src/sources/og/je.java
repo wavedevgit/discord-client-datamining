@@ -5,42 +5,42 @@ import kotlin.jvm.internal.LongCompanionObject;
 public final class je {
 
     /* renamed from: a  reason: collision with root package name */
-    private Long f39306a;
+    private Long f39874a;
 
     /* renamed from: b  reason: collision with root package name */
-    private xe f39307b;
+    private xe f39875b;
 
     /* renamed from: c  reason: collision with root package name */
-    private Boolean f39308c;
+    private Boolean f39876c;
 
     /* renamed from: d  reason: collision with root package name */
-    private Boolean f39309d;
+    private Boolean f39877d;
 
     /* renamed from: e  reason: collision with root package name */
-    private Boolean f39310e;
+    private Boolean f39878e;
 
     public final je a(Boolean bool) {
-        this.f39309d = bool;
+        this.f39877d = bool;
         return this;
     }
 
     public final je b(Boolean bool) {
-        this.f39310e = bool;
+        this.f39878e = bool;
         return this;
     }
 
     public final je c(Long l10) {
-        this.f39306a = Long.valueOf(l10.longValue() & LongCompanionObject.MAX_VALUE);
+        this.f39874a = Long.valueOf(l10.longValue() & LongCompanionObject.MAX_VALUE);
         return this;
     }
 
     public final je d(xe xeVar) {
-        this.f39307b = xeVar;
+        this.f39875b = xeVar;
         return this;
     }
 
     public final je e(Boolean bool) {
-        this.f39308c = bool;
+        this.f39876c = bool;
         return this;
     }
 

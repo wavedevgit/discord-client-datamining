@@ -54,15 +54,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/app_launcher/native/screens/search/SearchBarBottomBorder.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun108373: for (var _fun108373_ip = 0;;) switch (_fun108373_ip) {
+        _fun108394: for (var _fun108394_ip = 0;;) switch (_fun108394_ip) {
             case 0:
                 var1 = arg0;
                 var5 = var1.key;
                 var11 = var1.triggerScrollHeight;
                 var4 = undefined;
                 if (!(var11 === var4)) {
-                    _fun108373_ip = 25;
-                    continue _fun108373
+                    _fun108394_ip = 25;
+                    continue _fun108394
                 }
             case 22:
                 var11 = 1;
@@ -111,7 +111,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var12.bind(var4)(var7);
                 var7 = var9.useAnimatedStyle;
                 var0 = function() {
-                    _fun108376: for (var _fun108376_ip = 0;;) switch (_fun108376_ip) {
+                    _fun108397: for (var _fun108397_ip = 0;;) switch (_fun108397_ip) {
                         case 0:
                             var0 = {};
                             var3 = _closure1_slot0;
@@ -128,8 +128,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var5 = var5 > var2;
                             var2 = 0;
                             if (!var5) {
-                                _fun108376_ip = 64;
-                                continue _fun108376
+                                _fun108397_ip = 64;
+                                continue _fun108397
                             }
                         case 61:
                             var2 = 1;

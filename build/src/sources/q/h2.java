@@ -9,10 +9,10 @@ import android.content.Context;
 public final class h2 implements a0.y2 {
 
     /* renamed from: b  reason: collision with root package name */
-    final e3 f43380b;
+    final e3 f43948b;
 
     public h2(Context context) {
-        this.f43380b = e3.c(context);
+        this.f43948b = e3.c(context);
     }
 
     @Override // a0.y2
@@ -22,21 +22,21 @@ public final class h2 implements a0.y2 {
         i2.b bVar2 = new i2.b();
         bVar2.x(s4.b(bVar, i10));
         Z.V(a0.x2.f317t, bVar2.o());
-        Z.V(a0.x2.f319v, g2.f43363a);
+        Z.V(a0.x2.f319v, g2.f43931a);
         p0.a aVar = new p0.a();
         aVar.t(s4.a(bVar, i10));
         Z.V(a0.x2.f318u, aVar.h());
         r0.a aVar2 = a0.x2.f320w;
         if (bVar == y2.b.IMAGE_CAPTURE) {
-            obj = x3.f43692c;
+            obj = x3.f44260c;
         } else {
-            obj = u0.f43624a;
+            obj = u0.f44192a;
         }
         Z.V(aVar2, obj);
         if (bVar == y2.b.PREVIEW) {
-            Z.V(a0.i1.f90p, this.f43380b.f());
+            Z.V(a0.i1.f90p, this.f43948b.f());
         }
-        Z.V(a0.i1.f85k, Integer.valueOf(this.f43380b.d(true).getRotation()));
+        Z.V(a0.i1.f85k, Integer.valueOf(this.f43948b.d(true).getRotation()));
         if (bVar == y2.b.VIDEO_CAPTURE || bVar == y2.b.STREAM_SHARING) {
             Z.V(a0.x2.f323z, Boolean.TRUE);
         }

@@ -73,13 +73,13 @@ import kotlin.text.StringsKt;
 public abstract class j3 {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final FqName f51081a = new FqName("kotlin.jvm.JvmStatic");
+    private static final FqName f51649a = new FqName("kotlin.jvm.JvmStatic");
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final /* synthetic */ int[] f51082a;
+        public static final /* synthetic */ int[] f51650a;
 
         static {
             int[] iArr = new int[PrimitiveType.values().length];
@@ -115,7 +115,7 @@ public abstract class j3 {
                 iArr[PrimitiveType.DOUBLE.ordinal()] = 8;
             } catch (NoSuchFieldError unused8) {
             }
-            f51082a = iArr;
+            f51650a = iArr;
         }
     }
 
@@ -135,7 +135,7 @@ public abstract class j3 {
         }
         PrimitiveType primitiveArrayElementType = KotlinBuiltIns.getPrimitiveArrayElementType(type);
         int i10 = 0;
-        switch (primitiveArrayElementType == null ? -1 : a.f51082a[primitiveArrayElementType.ordinal()]) {
+        switch (primitiveArrayElementType == null ? -1 : a.f51650a[primitiveArrayElementType.ordinal()]) {
             case -1:
                 if (KotlinBuiltIns.isArray(type)) {
                     KotlinType type2 = ((TypeProjection) CollectionsKt.Q0(type.getArguments())).getType();
@@ -452,7 +452,7 @@ public abstract class j3 {
     }
 
     public static final FqName j() {
-        return f51081a;
+        return f51649a;
     }
 
     public static final boolean k(KType kType) {
@@ -626,18 +626,18 @@ public abstract class j3 {
     public static final KVisibility r(DescriptorVisibility descriptorVisibility) {
         Intrinsics.checkNotNullParameter(descriptorVisibility, "<this>");
         if (Intrinsics.areEqual(descriptorVisibility, DescriptorVisibilities.PUBLIC)) {
-            return KVisibility.f32097d;
+            return KVisibility.f32665d;
         }
         if (Intrinsics.areEqual(descriptorVisibility, DescriptorVisibilities.PROTECTED)) {
-            return KVisibility.f32098e;
+            return KVisibility.f32666e;
         }
         if (Intrinsics.areEqual(descriptorVisibility, DescriptorVisibilities.INTERNAL)) {
-            return KVisibility.f32099i;
+            return KVisibility.f32667i;
         }
         if (!Intrinsics.areEqual(descriptorVisibility, DescriptorVisibilities.PRIVATE) && !Intrinsics.areEqual(descriptorVisibility, DescriptorVisibilities.PRIVATE_TO_THIS)) {
             return null;
         }
-        return KVisibility.f32100o;
+        return KVisibility.f32668o;
     }
 
     private static final Object s(ConstantValue constantValue, ClassLoader classLoader) {

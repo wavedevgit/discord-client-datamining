@@ -3,28 +3,28 @@ package ve;
 public final class f {
 
     /* renamed from: a  reason: collision with root package name */
-    protected Boolean f51574a;
+    protected Boolean f52142a;
 
     /* renamed from: b  reason: collision with root package name */
-    protected String f51575b;
+    protected String f52143b;
 
     public f() {
-        this.f51574a = Boolean.FALSE;
+        this.f52142a = Boolean.FALSE;
     }
 
     public final f a(String str) {
-        this.f51575b = str;
+        this.f52143b = str;
         return this;
     }
 
     public f(g gVar) {
         boolean z10;
         String str;
-        this.f51574a = Boolean.FALSE;
+        this.f52142a = Boolean.FALSE;
         g.b(gVar);
-        z10 = gVar.f51578e;
-        this.f51574a = Boolean.valueOf(z10);
-        str = gVar.f51579i;
-        this.f51575b = str;
+        z10 = gVar.f52146e;
+        this.f52142a = Boolean.valueOf(z10);
+        str = gVar.f52147i;
+        this.f52143b = str;
     }
 }

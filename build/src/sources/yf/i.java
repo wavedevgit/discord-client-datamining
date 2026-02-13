@@ -10,10 +10,10 @@ import org.jetbrains.annotations.NotNull;
 public final class i extends jf.a {
 
     /* renamed from: d  reason: collision with root package name */
-    private final PendingIntent f55539d;
+    private final PendingIntent f56107d;
 
     /* renamed from: e  reason: collision with root package name */
-    public static final a f55538e = new a(null);
+    public static final a f56106e = new a(null);
     @NotNull
     public static final Parcelable.Creator<i> CREATOR = new j();
 
@@ -29,11 +29,11 @@ public final class i extends jf.a {
 
     public i(PendingIntent pendingIntent) {
         Intrinsics.checkNotNullParameter(pendingIntent, "pendingIntent");
-        this.f55539d = pendingIntent;
+        this.f56107d = pendingIntent;
     }
 
     public final PendingIntent b() {
-        return this.f55539d;
+        return this.f56107d;
     }
 
     @Override // android.os.Parcelable

@@ -53,12 +53,12 @@ public /* synthetic */ class MediaPlayFinishedAnalytics$$serializer implements h
     @Override // tt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        n2 n2Var = n2.f50033a;
+        n2 n2Var = n2.f50601a;
         KSerializer u10 = a.u(n2Var);
         KSerializer u11 = a.u(n2Var);
-        z0 z0Var = z0.f50107a;
-        p0 p0Var = p0.f50049a;
-        return new KSerializer[]{z0Var, z0Var, p0Var, p0Var, z0Var, u10, g0.f49993a, u11, p0Var, p0Var, z0Var, z0Var};
+        z0 z0Var = z0.f50675a;
+        p0 p0Var = p0.f50617a;
+        return new KSerializer[]{z0Var, z0Var, p0Var, p0Var, z0Var, u10, g0.f50561a, u11, p0Var, p0Var, z0Var, z0Var};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -87,7 +87,7 @@ public /* synthetic */ class MediaPlayFinishedAnalytics$$serializer implements h
             i10 = b10.i(serialDescriptor, 2);
             int i16 = b10.i(serialDescriptor, 3);
             long f13 = b10.f(serialDescriptor, 4);
-            n2 n2Var = n2.f50033a;
+            n2 n2Var = n2.f50601a;
             float u10 = b10.u(serialDescriptor, 6);
             int i17 = b10.i(serialDescriptor, 8);
             int i18 = b10.i(serialDescriptor, 9);
@@ -152,7 +152,7 @@ public /* synthetic */ class MediaPlayFinishedAnalytics$$serializer implements h
                         i15 = 10;
                         break;
                     case 5:
-                        str4 = (String) b10.n(serialDescriptor, 5, n2.f50033a, str4);
+                        str4 = (String) b10.n(serialDescriptor, 5, n2.f50601a, str4);
                         i19 |= 32;
                         i15 = 10;
                         break;
@@ -162,7 +162,7 @@ public /* synthetic */ class MediaPlayFinishedAnalytics$$serializer implements h
                         i15 = 10;
                         break;
                     case 7:
-                        str3 = (String) b10.n(serialDescriptor, 7, n2.f50033a, str3);
+                        str3 = (String) b10.n(serialDescriptor, 7, n2.f50601a, str3);
                         i19 |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
                         i15 = 10;
                         break;

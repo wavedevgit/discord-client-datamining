@@ -47,7 +47,7 @@ public /* synthetic */ class AutoModerationContext$$serializer implements h0 {
     @Override // tt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        n2 n2Var = n2.f50033a;
+        n2 n2Var = n2.f50601a;
         return new KSerializer[]{n2Var, n2Var, a.u(n2Var), a.u(n2Var), a.u(n2Var), n2Var, n2Var, FlaggedMessageEmbed$$serializer.INSTANCE, a.u(AutoModerationNotification$$serializer.INSTANCE)};
     }
 
@@ -72,7 +72,7 @@ public /* synthetic */ class AutoModerationContext$$serializer implements h0 {
         if (b10.p()) {
             String m10 = b10.m(serialDescriptor, 0);
             String m11 = b10.m(serialDescriptor, 1);
-            n2 n2Var = n2.f50033a;
+            n2 n2Var = n2.f50601a;
             String m12 = b10.m(serialDescriptor, 5);
             String m13 = b10.m(serialDescriptor, 6);
             str2 = m10;
@@ -113,17 +113,17 @@ public /* synthetic */ class AutoModerationContext$$serializer implements h0 {
                         i11 = 7;
                         break;
                     case 2:
-                        str11 = (String) b10.n(serialDescriptor, 2, n2.f50033a, str11);
+                        str11 = (String) b10.n(serialDescriptor, 2, n2.f50601a, str11);
                         i12 |= 4;
                         i11 = 7;
                         break;
                     case 3:
-                        str12 = (String) b10.n(serialDescriptor, 3, n2.f50033a, str12);
+                        str12 = (String) b10.n(serialDescriptor, 3, n2.f50601a, str12);
                         i12 |= 8;
                         i11 = 7;
                         continue;
                     case 4:
-                        str9 = (String) b10.n(serialDescriptor, 4, n2.f50033a, str9);
+                        str9 = (String) b10.n(serialDescriptor, 4, n2.f50601a, str9);
                         i12 |= 16;
                         break;
                     case 5:

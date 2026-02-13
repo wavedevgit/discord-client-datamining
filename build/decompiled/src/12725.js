@@ -1,63 +1,63 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun97502: for (var _fun97502_ip = 0;;) switch (_fun97502_ip) {
+    _fun97538: for (var _fun97538_ip = 0;;) switch (_fun97538_ip) {
         case 0:
-            var0 = global;
-            var2 = var0.document;
-            var3 = 'object';
-            var2 = typeof var2;
-            var2 = var3 === var2;
-            if (!var2) {
-                _fun97502_ip = 36;
-                continue _fun97502
-            }
-        case 24:
-            var0 = var0.document;
-            var2 = var0.all;
-        case 36:
-            var _closure1_slot0 = var2;
+            var5 = require;
+            var6 = dependencyMap;
+            var _closure1_slot0 = var5;
+            var _closure1_slot1 = var6;
+            var4 = 0;
+            var2 = var6[var4];
             var0 = undefined;
-            if (!(var0 === var2)) {
-                _fun97502_ip = 50;
-                continue _fun97502
+            var7 = var5.bind(var0)(var2);
+            var3 = 1;
+            var2 = var6[var3];
+            var2 = var5.bind(var0)(var2);
+            var2 = var2.document;
+            var2 = var7.bind(var0)(var2);
+            if (!var2) {
+                _fun97538_ip = 90;
+                continue _fun97538
             }
-        case 46:
-            if (!(var0 === var2)) {
-                _fun97502_ip = 59;
-                continue _fun97502
-            }
-        case 50:
+        case 55:
+            var4 = var6[var4];
+            var4 = var5.bind(var0)(var4);
+            var3 = var6[var3];
+            var3 = var5.bind(var0)(var3);
+            var3 = var3.document;
+            var3 = var3.createElement;
+            var2 = var4.bind(var0)(var3);
+        case 90:
+            var _closure1_slot2 = var2;
             var2 = function(arg0) { // Environment: var1
-                var1 = 'function';
-                var0 = arg0;
-                var0 = typeof var0;
-                var0 = var1 === var0;
-                return var0;
-            };
-            _fun97502_ip = 66;
-            continue _fun97502;
-        case 59:
-            var2 = function(arg0) { // Environment: var1
-                _fun97503: for (var _fun97503_ip = 0;;) switch (_fun97503_ip) {
+                _fun97539: for (var _fun97539_ip = 0;;) switch (_fun97539_ip) {
                     case 0:
-                        var2 = arg0;
-                        var1 = 'function';
-                        var0 = typeof var2;
-                        var0 = var1 === var0;
+                        var0 = _closure1_slot2;
                         if (var0) {
-                            _fun97503_ip = 28;
-                            continue _fun97503
+                            _fun97539_ip = 14;
+                            continue _fun97539
                         }
-                    case 17:
-                        var1 = _closure1_slot0;
-                        var0 = var2 === var1;
-                    case 28:
+                    case 10:
+                        var0 = {};
+                        _fun97539_ip = 56;
+                        continue _fun97539;
+                    case 14:
+                        var3 = _closure1_slot0;
+                        var2 = _closure1_slot1;
+                        var1 = 1;
+                        var2 = var2[var1];
+                        var1 = undefined;
+                        var1 = var3.bind(var1)(var2);
+                        var3 = var1.document;
+                        var2 = var3.createElement;
+                        var1 = arg0;
+                        var0 = var2.bind(var3)(var1);
+                    case 56:
                         return var0;
                 }
             };
-        case 66:
             var1 = arg4;
             var1.exports = var2;
             return var0;
     }
-})(undefined, undefined, undefined, undefined, undefined, undefined, []);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [12714, 12689]);

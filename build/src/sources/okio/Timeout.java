@@ -8,19 +8,19 @@ import kotlin.jvm.internal.Intrinsics;
 public class Timeout {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final b f40597d = new b(null);
+    public static final b f41165d = new b(null);
 
     /* renamed from: e  reason: collision with root package name */
-    public static final Timeout f40598e = new a();
+    public static final Timeout f41166e = new a();
 
     /* renamed from: a  reason: collision with root package name */
-    private boolean f40599a;
+    private boolean f41167a;
 
     /* renamed from: b  reason: collision with root package name */
-    private long f40600b;
+    private long f41168b;
 
     /* renamed from: c  reason: collision with root package name */
-    private long f40601c;
+    private long f41169c;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a extends Timeout {
@@ -54,35 +54,35 @@ public class Timeout {
     }
 
     public Timeout a() {
-        this.f40599a = false;
+        this.f41167a = false;
         return this;
     }
 
     public Timeout b() {
-        this.f40601c = 0L;
+        this.f41169c = 0L;
         return this;
     }
 
     public long c() {
-        if (this.f40599a) {
-            return this.f40600b;
+        if (this.f41167a) {
+            return this.f41168b;
         }
         throw new IllegalStateException("No deadline");
     }
 
     public Timeout d(long j10) {
-        this.f40599a = true;
-        this.f40600b = j10;
+        this.f41167a = true;
+        this.f41168b = j10;
         return this;
     }
 
     public boolean e() {
-        return this.f40599a;
+        return this.f41167a;
     }
 
     public void f() {
         if (!Thread.currentThread().isInterrupted()) {
-            if (this.f40599a && this.f40600b - System.nanoTime() <= 0) {
+            if (this.f41167a && this.f41168b - System.nanoTime() <= 0) {
                 throw new InterruptedIOException("deadline reached");
             }
             return;
@@ -93,13 +93,13 @@ public class Timeout {
     public Timeout g(long j10, TimeUnit unit) {
         Intrinsics.checkNotNullParameter(unit, "unit");
         if (j10 >= 0) {
-            this.f40601c = unit.toNanos(j10);
+            this.f41169c = unit.toNanos(j10);
             return this;
         }
         throw new IllegalArgumentException(("timeout < 0: " + j10).toString());
     }
 
     public long h() {
-        return this.f40601c;
+        return this.f41169c;
     }
 }

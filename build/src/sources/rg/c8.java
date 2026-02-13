@@ -5,7 +5,7 @@ import bj.c;
 final class c8 implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final c8 f46611a = new c8();
+    static final c8 f47179a = new c8();
 
     static {
         c.b a10 = bj.c.a("eventType");

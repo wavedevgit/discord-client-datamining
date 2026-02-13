@@ -1,179 +1,202 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = exports;
-    var0 = global;
-    var5 = var0.Object;
-    var4 = var5.defineProperty;
-    var3 = {};
-    var0 = true;
-    var3.value = var0;
-    var0 = '__esModule';
-    var0 = var4.bind(var5)(var1, var0, var3);
-    var0 = undefined;
-    var1.default = var0;
-    var3 = {
-        'about': 'körülbelül',
-        'over': 'több mint',
-        'almost': 'majdnem',
-        'lessthan': 'kevesebb mint'
-    };
-    var _closure1_slot0 = var3;
-    var3 = {
-        'xseconds': ' másodperc',
-        'halfaminute': 'fél perc',
-        'xminutes': ' perc',
-        'xhours': ' óra',
-        'xdays': ' nap',
-        'xweeks': ' hét',
-        'xmonths': ' hónap',
-        'xyears': ' év'
-    };
-    var _closure1_slot1 = var3;
-    var3 = {};
-    var4 = {
-        '-1': ' másodperccel ezelőtt',
-        1: ' másodperc múlva',
-        0: ' másodperce'
-    };
-    var3.xseconds = var4;
-    var4 = {
-        '-1': 'fél perccel ezelőtt',
-        1: 'fél perc múlva',
-        0: 'fél perce'
-    };
-    var3.halfaminute = var4;
-    var4 = {
-        '-1': ' perccel ezelőtt',
-        1: ' perc múlva',
-        0: ' perce'
-    };
-    var3.xminutes = var4;
-    var4 = {
-        '-1': ' órával ezelőtt',
-        1: ' óra múlva',
-        0: ' órája'
-    };
-    var3.xhours = var4;
-    var4 = {
-        '-1': ' nappal ezelőtt',
-        1: ' nap múlva',
-        0: ' napja'
-    };
-    var3.xdays = var4;
-    var4 = {
-        '-1': ' héttel ezelőtt',
-        1: ' hét múlva',
-        0: ' hete'
-    };
-    var3.xweeks = var4;
-    var4 = {
-        '-1': ' hónappal ezelőtt',
-        1: ' hónap múlva',
-        0: ' hónapja'
-    };
-    var3.xmonths = var4;
-    var4 = {
-        '-1': ' évvel ezelőtt',
-        1: ' év múlva',
-        0: ' éve'
-    };
-    var3.xyears = var4;
-    var _closure1_slot2 = var3;
-    var2 = function arg0, arg1, arg2() {
-        _fun22140: for (var _fun22140_ip = 0;;) switch (_fun22140_ip) {
-            case 0:
-                var5 = arg0;
-                var0 = arg2;
-                var2 = var5.match;
-                var1 = /about|over|almost|lessthan/i;
-                var3 = var2.bind(var5)(var1);
-                var6 = var5;
-                if (!var3) {
-                    _fun22140_ip = 58;
-                    continue _fun22140
-                }
-            case 37:
-                var4 = var5.replace;
-                var1 = 0;
-                var2 = var3[var1];
-                var1 = '';
-                var6 = var4.bind(var5)(var2, var1);
-            case 58:
-                var5 = null;
-                var4 = var5 == var0;
+    _fun22157: for (var _fun22157_ip = 0;;) switch (_fun22157_ip) {
+        case 0:
+            var1 = exports;
+            var0 = global;
+            var4 = var0.Object;
+            var3 = var4.defineProperty;
+            var2 = {};
+            var0 = true;
+            var2.value = var0;
+            var0 = '__esModule';
+            var0 = var3.bind(var4)(var1, var0, var2);
+            var0 = undefined;
+            var1.default = var0;
+            var3 = dependencyMap;
+            var2 = 0;
+            var3 = var3[var2];
+            var2 = require;
+            var4 = var2.bind(var0)(var3);
+            if (!var4) {
+                _fun22157_ip = 77;
+                continue _fun22157
+            }
+        case 65:
+            var2 = var4.__esModule;
+            var3 = var4;
+            if (var2) {
+                _fun22157_ip = 86;
+                continue _fun22157
+            }
+        case 77:
+            var2 = {};
+            var2.default = var4;
+            var3 = var2;
+        case 86:
+            var2 = {};
+            var4 = function arg0, arg1() {
+                var0 = global;
+                var2 = var0.Number;
                 var1 = undefined;
-                if (var4) {
-                    _fun22140_ip = 75;
-                    continue _fun22140
-                }
-            case 69:
-                var1 = var0.addSuffix;
-            case 75:
-                var4 = var6.toLowerCase;
-                var4 = var4.bind(var6)();
-                var5 = var5 == var0;
-                var2 = undefined;
-                if (var5) {
-                    _fun22140_ip = 100;
-                    continue _fun22140
-                }
-            case 94:
-                var2 = var0.comparison;
-            case 100:
-                if (var2) {
-                    _fun22140_ip = 105;
-                    continue _fun22140
-                }
-            case 103:
-                var2 = 0;
-            case 105:
-                var0 = true;
-                if (!(var0 !== var1)) {
-                    _fun22140_ip = 124;
-                    continue _fun22140
-                }
-            case 111:
-                var0 = _closure1_slot1;
-                var1 = var0[var4];
-                _fun22140_ip = 139;
-                continue _fun22140;
-            case 124:
-                var0 = _closure1_slot2;
-                var0 = var0[var4];
-                var1 = var0[var2];
-            case 139:
-                var0 = 'halfaminute';
-                var2 = var1;
-                if (!(var0 !== var4)) {
-                    _fun22140_ip = 157;
-                    continue _fun22140
-                }
-            case 150:
-                var0 = arg1;
-                var2 = var0 + var1;
-            case 157:
-                var0 = var2;
-                if (!var3) {
-                    _fun22140_ip = 204;
-                    continue _fun22140
-                }
-            case 163:
-                var1 = 0;
-                var3 = var3[var1];
-                var1 = var3.toLowerCase;
-                var3 = var1.bind(var3)();
-                var1 = _closure1_slot0;
-                var3 = var1[var3];
-                var1 = ' ';
-                var1 = var3 + var1;
-                var0 = var1 + var2;
-            case 204:
+                var0 = arg0;
+                var1 = var2.bind(var1)(var0);
+                var0 = '.';
+                var0 = var1 + var0;
                 return var0;
-        }
-    };
-    var1.default = var2;
-    var2 = var1.default;
-    var1 = arg4;
-    var1.exports = var2;
-    return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, []);
+            };
+            var2.ordinalNumber = var4;
+            var6 = var3.default;
+            var4 = {};
+            var5 = {};
+            var8 = ['pr.n.e.', 'AD'];
+            var5.narrow = var8;
+            var8 = ['pr. Kr.', 'po. Kr.'];
+            var5.abbreviated = var8;
+            var8 = ['Prije Krista', 'Poslije Krista'];
+            var5.wide = var8;
+            var4.values = var5;
+            var5 = 'wide';
+            var4.defaultWidth = var5;
+            var4 = var6.bind(var0)(var4);
+            var2.era = var4;
+            var6 = var3.default;
+            var4 = {};
+            var8 = {};
+            var9 = ['1.', '2.', '3.', '4.'];
+            var8.narrow = var9;
+            var9 = ['1. kv.', '2. kv.', '3. kv.', '4. kv.'];
+            var8.abbreviated = var9;
+            var9 = ['1. kvartal', '2. kvartal', '3. kvartal', '4. kvartal'];
+            var8.wide = var9;
+            var4.values = var8;
+            var4.defaultWidth = var5;
+            var7 = function arg0() {
+                var1 = arg0;
+                var0 = 1;
+                var0 = var1 - var0;
+                return var0;
+            };
+            var4.argumentCallback = var7;
+            var4 = var6.bind(var0)(var4);
+            var2.quarter = var4;
+            var6 = var3.default;
+            var4 = {};
+            var7 = {};
+            var8 = ['1.', '2.', '3.', '4.', '5.', '6.', '7.', '8.', '9.', '10.', '11.', '12.'];
+            var7.narrow = var8;
+            var8 = ['sij', 'velj', 'ožu', 'tra', 'svi', 'lip', 'srp', 'kol', 'ruj', 'lis', 'stu', 'pro'];
+            var7.abbreviated = var8;
+            var8 = ['siječanj', 'veljača', 'ožujak', 'travanj', 'svibanj', 'lipanj', 'srpanj', 'kolovoz', 'rujan', 'listopad', 'studeni', 'prosinac'];
+            var7.wide = var8;
+            var4.values = var7;
+            var4.defaultWidth = var5;
+            var7 = {};
+            var8 = ['1.', '2.', '3.', '4.', '5.', '6.', '7.', '8.', '9.', '10.', '11.', '12.'];
+            var7.narrow = var8;
+            var8 = ['sij', 'velj', 'ožu', 'tra', 'svi', 'lip', 'srp', 'kol', 'ruj', 'lis', 'stu', 'pro'];
+            var7.abbreviated = var8;
+            var8 = ['siječnja', 'veljače', 'ožujka', 'travnja', 'svibnja', 'lipnja', 'srpnja', 'kolovoza', 'rujna', 'listopada', 'studenog', 'prosinca'];
+            var7.wide = var8;
+            var4.formattingValues = var7;
+            var4.defaultFormattingWidth = var5;
+            var4 = var6.bind(var0)(var4);
+            var2.month = var4;
+            var6 = var3.default;
+            var4 = {};
+            var7 = {};
+            var8 = ['N', 'P', 'U', 'S', 'Č', 'P', 'S'];
+            var7.narrow = var8;
+            var8 = ['ned', 'pon', 'uto', 'sri', 'čet', 'pet', 'sub'];
+            var7.short = var8;
+            var8 = ['ned', 'pon', 'uto', 'sri', 'čet', 'pet', 'sub'];
+            var7.abbreviated = var8;
+            var8 = ['nedjelja', 'ponedjeljak', 'utorak', 'srijeda', 'četvrtak', 'petak', 'subota'];
+            var7.wide = var8;
+            var4.values = var7;
+            var4.defaultWidth = var5;
+            var4 = var6.bind(var0)(var4);
+            var2.day = var4;
+            var4 = var3.default;
+            var3 = {};
+            var6 = {};
+            var7 = {
+                'am': 'AM',
+                'pm': 'PM',
+                'midnight': 'ponoć',
+                'noon': 'podne',
+                'morning': 'ujutro',
+                'afternoon': 'popodne',
+                'evening': 'navečer',
+                'night': 'noću'
+            };
+            var6.narrow = var7;
+            var7 = {
+                'am': 'AM',
+                'pm': 'PM',
+                'midnight': 'ponoć',
+                'noon': 'podne',
+                'morning': 'ujutro',
+                'afternoon': 'popodne',
+                'evening': 'navečer',
+                'night': 'noću'
+            };
+            var6.abbreviated = var7;
+            var7 = {
+                'am': 'AM',
+                'pm': 'PM',
+                'midnight': 'ponoć',
+                'noon': 'podne',
+                'morning': 'ujutro',
+                'afternoon': 'poslije podne',
+                'evening': 'navečer',
+                'night': 'noću'
+            };
+            var6.wide = var7;
+            var3.values = var6;
+            var3.defaultWidth = var5;
+            var6 = {};
+            var7 = {
+                'am': 'AM',
+                'pm': 'PM',
+                'midnight': 'ponoć',
+                'noon': 'podne',
+                'morning': 'ujutro',
+                'afternoon': 'popodne',
+                'evening': 'navečer',
+                'night': 'noću'
+            };
+            var6.narrow = var7;
+            var7 = {
+                'am': 'AM',
+                'pm': 'PM',
+                'midnight': 'ponoć',
+                'noon': 'podne',
+                'morning': 'ujutro',
+                'afternoon': 'popodne',
+                'evening': 'navečer',
+                'night': 'noću'
+            };
+            var6.abbreviated = var7;
+            var7 = {
+                'am': 'AM',
+                'pm': 'PM',
+                'midnight': 'ponoć',
+                'noon': 'podne',
+                'morning': 'ujutro',
+                'afternoon': 'poslije podne',
+                'evening': 'navečer',
+                'night': 'noću'
+            };
+            var6.wide = var7;
+            var3.formattingValues = var6;
+            var3.defaultFormattingWidth = var5;
+            var3 = var4.bind(var0)(var3);
+            var2.dayPeriod = var3;
+            var1.default = var2;
+            var2 = var1.default;
+            var1 = arg4;
+            var1.exports = var2;
+            return var0;
+    }
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1698]);

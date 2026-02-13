@@ -23,30 +23,30 @@ import kotlin.reflect.m;
 import us.t2;
 import us.x0;
 import us.x2;
-/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public abstract class d {
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final /* synthetic */ int[] f48348a;
+        public static final /* synthetic */ int[] f48916a;
 
         static {
             int[] iArr = new int[m.values().length];
             try {
-                iArr[m.f34827d.ordinal()] = 1;
+                iArr[m.f35395d.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                iArr[m.f34828e.ordinal()] = 2;
+                iArr[m.f35396e.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                iArr[m.f34829i.ordinal()] = 3;
+                iArr[m.f35397i.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
-            f48348a = iArr;
+            f48916a = iArr;
         }
     }
 
@@ -75,7 +75,7 @@ public abstract class d {
             if (d10 == null) {
                 i10 = -1;
             } else {
-                i10 = a.f48348a[d10.ordinal()];
+                i10 = a.f48916a[d10.ordinal()];
             }
             if (i10 != -1) {
                 if (i10 != 1) {

@@ -24,16 +24,16 @@ public abstract class z {
     public /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final /* synthetic */ int[] f49740a;
+        public static final /* synthetic */ int[] f50308a;
 
         /* renamed from: b  reason: collision with root package name */
-        public static final /* synthetic */ int[] f49741b;
+        public static final /* synthetic */ int[] f50309b;
 
         /* renamed from: c  reason: collision with root package name */
-        public static final /* synthetic */ int[] f49742c;
+        public static final /* synthetic */ int[] f50310c;
 
         /* renamed from: d  reason: collision with root package name */
-        public static final /* synthetic */ int[] f49743d;
+        public static final /* synthetic */ int[] f50311d;
 
         static {
             int[] iArr = new int[CapturePageConfig.RuleType.values().length];
@@ -57,7 +57,7 @@ public abstract class z {
                 iArr[CapturePageConfig.RuleType.TEXT_EXTRACTION.ordinal()] = 5;
             } catch (NoSuchFieldError unused5) {
             }
-            f49740a = iArr;
+            f50308a = iArr;
             int[] iArr2 = new int[CapturePageConfig.OverlayLocalIcon.values().length];
             try {
                 iArr2[CapturePageConfig.OverlayLocalIcon.BARCODE.ordinal()] = 1;
@@ -83,7 +83,7 @@ public abstract class z {
                 iArr2[CapturePageConfig.OverlayLocalIcon.EMPTY.ordinal()] = 6;
             } catch (NoSuchFieldError unused11) {
             }
-            f49741b = iArr2;
+            f50309b = iArr2;
             int[] iArr3 = new int[Id.IdLocalIcon.values().length];
             try {
                 iArr3[Id.IdLocalIcon.WORLD.ordinal()] = 1;
@@ -101,34 +101,34 @@ public abstract class z {
                 iArr3[Id.IdLocalIcon.HOUSE.ordinal()] = 4;
             } catch (NoSuchFieldError unused15) {
             }
-            f49742c = iArr3;
+            f50310c = iArr3;
             int[] iArr4 = new int[c4.e.values().length];
             try {
-                iArr4[c4.e.f49014o.ordinal()] = 1;
+                iArr4[c4.e.f49582o.ordinal()] = 1;
             } catch (NoSuchFieldError unused16) {
             }
             try {
-                iArr4[c4.e.f49015p.ordinal()] = 2;
+                iArr4[c4.e.f49583p.ordinal()] = 2;
             } catch (NoSuchFieldError unused17) {
             }
             try {
-                iArr4[c4.e.f49017r.ordinal()] = 3;
+                iArr4[c4.e.f49585r.ordinal()] = 3;
             } catch (NoSuchFieldError unused18) {
             }
             try {
-                iArr4[c4.e.f49016q.ordinal()] = 4;
+                iArr4[c4.e.f49584q.ordinal()] = 4;
             } catch (NoSuchFieldError unused19) {
             }
             try {
-                iArr4[c4.e.f49018s.ordinal()] = 5;
+                iArr4[c4.e.f49586s.ordinal()] = 5;
             } catch (NoSuchFieldError unused20) {
             }
-            f49743d = iArr4;
+            f50311d = iArr4;
         }
     }
 
     private static final c4.a a(c4.e eVar) {
-        int i10 = a.f49743d[eVar.ordinal()];
+        int i10 = a.f50311d[eVar.ordinal()];
         if (i10 != 1) {
             if (i10 != 2) {
                 if (i10 != 3) {
@@ -152,32 +152,32 @@ public abstract class z {
     }
 
     private static final f5.d c(ap.e eVar, c4.e eVar2, String str) {
-        if (eVar2 == c4.e.f49017r) {
-            return f5.d.a.f49162d;
+        if (eVar2 == c4.e.f49585r) {
+            return f5.d.a.f49730d;
         }
-        if (eVar2 == c4.e.f49018s) {
-            return f5.d.f.f49168d;
+        if (eVar2 == c4.e.f49586s) {
+            return f5.d.f.f49736d;
         }
         ap.e eVar3 = ap.e.f5944i;
-        if (eVar == eVar3 && eVar2 == c4.e.f49015p && Intrinsics.areEqual(str, "US")) {
-            return f5.d.a.f49162d;
+        if (eVar == eVar3 && eVar2 == c4.e.f49583p && Intrinsics.areEqual(str, "US")) {
+            return f5.d.a.f49730d;
         }
         if (eVar == ap.e.f5951u) {
-            return f5.d.e.f49167d;
+            return f5.d.e.f49735d;
         }
         if (eVar == ap.e.D) {
-            return f5.d.e.f49167d;
+            return f5.d.e.f49735d;
         }
         if (eVar == eVar3) {
-            return f5.d.C0670d.f49166d;
+            return f5.d.C0670d.f49734d;
         }
         if (eVar == ap.e.f5945o) {
-            return f5.d.C0670d.f49166d;
+            return f5.d.C0670d.f49734d;
         }
         if (eVar == ap.e.f5953w) {
-            return f5.d.C0670d.f49166d;
+            return f5.d.C0670d.f49734d;
         }
-        return f5.d.f.f49168d;
+        return f5.d.f.f49736d;
     }
 
     private static final boolean d(CapturePageConfig.RuleSet ruleSet) {
@@ -210,7 +210,7 @@ public abstract class z {
         if (type == null) {
             i10 = -1;
         } else {
-            i10 = a.f49740a[type.ordinal()];
+            i10 = a.f50308a[type.ordinal()];
         }
         if (i10 != -1) {
             if (i10 != 1) {
@@ -332,26 +332,26 @@ public abstract class z {
         if (overlayFallback == null) {
             i10 = -1;
         } else {
-            i10 = a.f49741b[overlayFallback.ordinal()];
+            i10 = a.f50309b[overlayFallback.ordinal()];
         }
         switch (i10) {
             case -1:
-                return f5.d.f.f49168d;
+                return f5.d.f.f49736d;
             case 0:
             default:
                 throw new as.p();
             case 1:
-                return f5.d.a.f49162d;
+                return f5.d.a.f49730d;
             case 2:
-                return f5.d.e.f49167d;
+                return f5.d.e.f49735d;
             case 3:
-                return f5.d.C0670d.f49166d;
+                return f5.d.C0670d.f49734d;
             case 4:
-                return f5.d.a.f49162d;
+                return f5.d.a.f49730d;
             case 5:
-                return f5.d.b.f49163d;
+                return f5.d.b.f49731d;
             case 6:
-                return f5.d.f.f49168d;
+                return f5.d.f.f49736d;
         }
     }
 
@@ -359,7 +359,7 @@ public abstract class z {
         Boolean bool;
         Boolean bool2;
         CapturePageConfig capturePageConfig;
-        a.C0698a c0698a = uo.a.f50815o;
+        a.C0698a c0698a = uo.a.f51383o;
         c4.c cVar = null;
         if (autoClassificationConfig != null) {
             bool = autoClassificationConfig.isEnabled();
@@ -372,7 +372,7 @@ public abstract class z {
             bool2 = null;
         }
         if (autoClassificationConfig != null && (capturePageConfig = autoClassificationConfig.getCapturePageConfig()) != null) {
-            cVar = h(capturePageConfig, c4.e.f49014o, ap.e.M, "", j10);
+            cVar = h(capturePageConfig, c4.e.f49582o, ap.e.M, "", j10);
         }
         return c0698a.b(bool, bool2, cVar);
     }
@@ -412,24 +412,24 @@ public abstract class z {
         if (idLocalIcon == null) {
             i10 = -1;
         } else {
-            i10 = a.f49742c[idLocalIcon.ordinal()];
+            i10 = a.f50310c[idLocalIcon.ordinal()];
         }
         if (i10 != -1) {
             if (i10 != 1) {
                 if (i10 != 2) {
                     if (i10 != 3) {
                         if (i10 == 4) {
-                            return g4.f49300o;
+                            return g4.f49868o;
                         }
                         throw new as.p();
                     }
-                    return g4.f49299i;
+                    return g4.f49867i;
                 }
-                return g4.f49298e;
+                return g4.f49866e;
             }
-            return g4.f49297d;
+            return g4.f49865d;
         }
-        return g4.f49298e;
+        return g4.f49866e;
     }
 
     public static final c4 o(Id id2, String countryCode, long j10) {
@@ -457,7 +457,7 @@ public abstract class z {
         List<String> requiresSides = id2.getRequiresSides();
         ArrayList<c4.c> arrayList = new ArrayList(CollectionsKt.w(requiresSides, 10));
         for (String str2 : requiresSides) {
-            c4.e a11 = c4.e.f49012e.a(str2);
+            c4.e a11 = c4.e.f49580e.a(str2);
             if (a11 == null || (h10 = h((CapturePageConfig) linkedHashMap.get(str2), a11, a10, (str = countryCode), (j11 = j10))) == null) {
                 return null;
             }

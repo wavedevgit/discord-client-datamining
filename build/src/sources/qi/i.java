@@ -11,40 +11,40 @@ public abstract class i {
     public static class a extends AbstractCollection {
 
         /* renamed from: d  reason: collision with root package name */
-        final Collection f45333d;
+        final Collection f45901d;
 
         /* renamed from: e  reason: collision with root package name */
-        final pi.n f45334e;
+        final pi.n f45902e;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         public a(Collection collection, pi.n nVar) {
-            this.f45333d = collection;
-            this.f45334e = nVar;
+            this.f45901d = collection;
+            this.f45902e = nVar;
         }
 
         @Override // java.util.AbstractCollection, java.util.Collection
         public boolean add(Object obj) {
-            pi.m.d(this.f45334e.apply(obj));
-            return this.f45333d.add(obj);
+            pi.m.d(this.f45902e.apply(obj));
+            return this.f45901d.add(obj);
         }
 
         @Override // java.util.AbstractCollection, java.util.Collection
         public boolean addAll(Collection collection) {
             for (Object obj : collection) {
-                pi.m.d(this.f45334e.apply(obj));
+                pi.m.d(this.f45902e.apply(obj));
             }
-            return this.f45333d.addAll(collection);
+            return this.f45901d.addAll(collection);
         }
 
         @Override // java.util.AbstractCollection, java.util.Collection
         public void clear() {
-            v.f(this.f45333d, this.f45334e);
+            v.f(this.f45901d, this.f45902e);
         }
 
         @Override // java.util.AbstractCollection, java.util.Collection
         public boolean contains(Object obj) {
-            if (i.c(this.f45333d, obj)) {
-                return this.f45334e.apply(obj);
+            if (i.c(this.f45901d, obj)) {
+                return this.f45902e.apply(obj);
             }
             return false;
         }
@@ -56,17 +56,17 @@ public abstract class i {
 
         @Override // java.util.AbstractCollection, java.util.Collection
         public boolean isEmpty() {
-            return !v.a(this.f45333d, this.f45334e);
+            return !v.a(this.f45901d, this.f45902e);
         }
 
         @Override // java.util.AbstractCollection, java.util.Collection, java.lang.Iterable
         public Iterator iterator() {
-            return w.g(this.f45333d.iterator(), this.f45334e);
+            return w.g(this.f45901d.iterator(), this.f45902e);
         }
 
         @Override // java.util.AbstractCollection, java.util.Collection
         public boolean remove(Object obj) {
-            if (contains(obj) && this.f45333d.remove(obj)) {
+            if (contains(obj) && this.f45901d.remove(obj)) {
                 return true;
             }
             return false;
@@ -74,11 +74,11 @@ public abstract class i {
 
         @Override // java.util.AbstractCollection, java.util.Collection
         public boolean removeAll(Collection collection) {
-            Iterator it = this.f45333d.iterator();
+            Iterator it = this.f45901d.iterator();
             boolean z10 = false;
             while (it.hasNext()) {
                 Object next = it.next();
-                if (this.f45334e.apply(next) && collection.contains(next)) {
+                if (this.f45902e.apply(next) && collection.contains(next)) {
                     it.remove();
                     z10 = true;
                 }
@@ -88,11 +88,11 @@ public abstract class i {
 
         @Override // java.util.AbstractCollection, java.util.Collection
         public boolean retainAll(Collection collection) {
-            Iterator it = this.f45333d.iterator();
+            Iterator it = this.f45901d.iterator();
             boolean z10 = false;
             while (it.hasNext()) {
                 Object next = it.next();
-                if (this.f45334e.apply(next) && !collection.contains(next)) {
+                if (this.f45902e.apply(next) && !collection.contains(next)) {
                     it.remove();
                     z10 = true;
                 }
@@ -103,8 +103,8 @@ public abstract class i {
         @Override // java.util.AbstractCollection, java.util.Collection
         public int size() {
             int i10 = 0;
-            for (Object obj : this.f45333d) {
-                if (this.f45334e.apply(obj)) {
+            for (Object obj : this.f45901d) {
+                if (this.f45902e.apply(obj)) {
                     i10++;
                 }
             }

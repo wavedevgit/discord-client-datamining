@@ -5,19 +5,19 @@ import hf.q;
 public class a extends Exception {
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f48135d;
+    private final int f48703d;
 
     public a(String str, int i10) {
         super(q.g(str, "Provided message must not be empty."));
-        this.f48135d = i10;
+        this.f48703d = i10;
     }
 
     public int a() {
-        return this.f48135d;
+        return this.f48703d;
     }
 
     public a(String str, int i10, Throwable th2) {
         super(q.g(str, "Provided message must not be empty."), th2);
-        this.f48135d = i10;
+        this.f48703d = i10;
     }
 }

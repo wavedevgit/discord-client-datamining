@@ -9,10 +9,10 @@ import qi.s;
 final class g implements a {
 
     /* renamed from: a  reason: collision with root package name */
-    public final Format f52534a;
+    public final Format f53102a;
 
     public g(Format format) {
-        this.f52534a = format;
+        this.f53102a = format;
     }
 
     private static String a(int i10) {

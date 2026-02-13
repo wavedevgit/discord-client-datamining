@@ -11,19 +11,19 @@ import java.util.Properties;
 public final class e {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f29203a;
+    private final String f29771a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final ILogger f29204b;
+    private final ILogger f29772b;
 
     public e(String str, ILogger iLogger) {
-        this.f29203a = str;
-        this.f29204b = iLogger;
+        this.f29771a = str;
+        this.f29772b = iLogger;
     }
 
     public Properties a() {
         try {
-            File file = new File(this.f29203a.trim());
+            File file = new File(this.f29771a.trim());
             if (file.isFile() && file.canRead()) {
                 BufferedInputStream bufferedInputStream = new BufferedInputStream(new FileInputStream(file));
                 Properties properties = new Properties();
@@ -32,13 +32,13 @@ public final class e {
                 return properties;
             }
             if (!file.isFile()) {
-                this.f29204b.c(SentryLevel.ERROR, "Failed to load Sentry configuration since it is not a file or does not exist: %s", this.f29203a);
+                this.f29772b.c(SentryLevel.ERROR, "Failed to load Sentry configuration since it is not a file or does not exist: %s", this.f29771a);
             } else if (!file.canRead()) {
-                this.f29204b.c(SentryLevel.ERROR, "Failed to load Sentry configuration since it is not readable: %s", this.f29203a);
+                this.f29772b.c(SentryLevel.ERROR, "Failed to load Sentry configuration since it is not readable: %s", this.f29771a);
             }
             return null;
         } catch (Throwable th2) {
-            this.f29204b.a(SentryLevel.ERROR, th2, "Failed to load Sentry configuration from file: %s", this.f29203a);
+            this.f29772b.a(SentryLevel.ERROR, th2, "Failed to load Sentry configuration from file: %s", this.f29771a);
             return null;
         }
     }

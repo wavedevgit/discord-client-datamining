@@ -10,59 +10,59 @@ public final class i extends jf.a {
     public static final Parcelable.Creator<i> CREATOR = new u();
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f52735d;
+    private final String f53303d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final String f52736e;
+    private final String f53304e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final String f52737i;
+    private final String f53305i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final String f52738o;
+    private final String f53306o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final Uri f52739p;
+    private final Uri f53307p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final String f52740q;
+    private final String f53308q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final String f52741r;
+    private final String f53309r;
 
     /* renamed from: s  reason: collision with root package name */
-    private final String f52742s;
+    private final String f53310s;
 
     /* renamed from: t  reason: collision with root package name */
-    private final xf.q f52743t;
+    private final xf.q f53311t;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public i(String str, String str2, String str3, String str4, Uri uri, String str5, String str6, String str7, xf.q qVar) {
-        this.f52735d = (String) hf.q.l(str);
-        this.f52736e = str2;
-        this.f52737i = str3;
-        this.f52738o = str4;
-        this.f52739p = uri;
-        this.f52740q = str5;
-        this.f52741r = str6;
-        this.f52742s = str7;
-        this.f52743t = qVar;
+        this.f53303d = (String) hf.q.l(str);
+        this.f53304e = str2;
+        this.f53305i = str3;
+        this.f53306o = str4;
+        this.f53307p = uri;
+        this.f53308q = str5;
+        this.f53309r = str6;
+        this.f53310s = str7;
+        this.f53311t = qVar;
     }
 
     public String b() {
-        return this.f52736e;
+        return this.f53304e;
     }
 
     public String c() {
-        return this.f52738o;
+        return this.f53306o;
     }
 
     public String d() {
-        return this.f52737i;
+        return this.f53305i;
     }
 
     public String e() {
-        return this.f52741r;
+        return this.f53309r;
     }
 
     public boolean equals(Object obj) {
@@ -70,34 +70,34 @@ public final class i extends jf.a {
             return false;
         }
         i iVar = (i) obj;
-        if (!hf.o.a(this.f52735d, iVar.f52735d) || !hf.o.a(this.f52736e, iVar.f52736e) || !hf.o.a(this.f52737i, iVar.f52737i) || !hf.o.a(this.f52738o, iVar.f52738o) || !hf.o.a(this.f52739p, iVar.f52739p) || !hf.o.a(this.f52740q, iVar.f52740q) || !hf.o.a(this.f52741r, iVar.f52741r) || !hf.o.a(this.f52742s, iVar.f52742s) || !hf.o.a(this.f52743t, iVar.f52743t)) {
+        if (!hf.o.a(this.f53303d, iVar.f53303d) || !hf.o.a(this.f53304e, iVar.f53304e) || !hf.o.a(this.f53305i, iVar.f53305i) || !hf.o.a(this.f53306o, iVar.f53306o) || !hf.o.a(this.f53307p, iVar.f53307p) || !hf.o.a(this.f53308q, iVar.f53308q) || !hf.o.a(this.f53309r, iVar.f53309r) || !hf.o.a(this.f53310s, iVar.f53310s) || !hf.o.a(this.f53311t, iVar.f53311t)) {
             return false;
         }
         return true;
     }
 
     public String f() {
-        return this.f52735d;
+        return this.f53303d;
     }
 
     public String g() {
-        return this.f52740q;
+        return this.f53308q;
     }
 
     public int hashCode() {
-        return hf.o.b(this.f52735d, this.f52736e, this.f52737i, this.f52738o, this.f52739p, this.f52740q, this.f52741r, this.f52742s, this.f52743t);
+        return hf.o.b(this.f53303d, this.f53304e, this.f53305i, this.f53306o, this.f53307p, this.f53308q, this.f53309r, this.f53310s, this.f53311t);
     }
 
     public String i() {
-        return this.f52742s;
+        return this.f53310s;
     }
 
     public Uri j() {
-        return this.f52739p;
+        return this.f53307p;
     }
 
     public xf.q k() {
-        return this.f52743t;
+        return this.f53311t;
     }
 
     @Override // android.os.Parcelable

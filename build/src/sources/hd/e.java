@@ -7,7 +7,7 @@ public abstract class e implements a {
     @Override // hd.a
     public final Metadata a(c cVar) {
         boolean z10;
-        ByteBuffer byteBuffer = (ByteBuffer) oe.a.e(cVar.f46230i);
+        ByteBuffer byteBuffer = (ByteBuffer) oe.a.e(cVar.f46798i);
         if (byteBuffer.position() == 0 && byteBuffer.hasArray() && byteBuffer.arrayOffset() == 0) {
             z10 = true;
         } else {

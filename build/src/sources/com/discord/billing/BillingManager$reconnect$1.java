@@ -42,13 +42,13 @@ public final class BillingManager$reconnect$1 extends kotlin.coroutines.jvm.inte
             billingManager$billingClientStateListener$1 = this.this$0.billingClientStateListener;
             billingClient.l(billingManager$billingClientStateListener$1);
             this.this$0.updateConnectionState(BillingManager.ConnectionState.CONNECTING);
-            return Unit.f31988a;
+            return Unit.f32556a;
         }
         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
     }
 
     @Override // kotlin.jvm.functions.Function1
     public final Object invoke(Continuation<? super Unit> continuation) {
-        return ((BillingManager$reconnect$1) create(continuation)).invokeSuspend(Unit.f31988a);
+        return ((BillingManager$reconnect$1) create(continuation)).invokeSuspend(Unit.f32556a);
     }
 }

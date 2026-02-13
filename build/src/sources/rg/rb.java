@@ -5,7 +5,7 @@ import bj.c;
 final class rb implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final rb f47108a = new rb();
+    static final rb f47676a = new rb();
 
     static {
         c.b a10 = bj.c.a("isForegroundConfidenceMaskEnabled");

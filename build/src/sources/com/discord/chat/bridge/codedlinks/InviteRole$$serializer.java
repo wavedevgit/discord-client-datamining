@@ -45,8 +45,8 @@ public /* synthetic */ class InviteRole$$serializer implements h0 {
     @NotNull
     public final KSerializer[] childSerializers() {
         KSerializer u10 = rt.a.u(RoleIcon$$serializer.INSTANCE);
-        n2 n2Var = n2.f50033a;
-        return new KSerializer[]{n2Var, n2Var, p0.f50049a, u10};
+        n2 n2Var = n2.f50601a;
+        return new KSerializer[]{n2Var, n2Var, p0.f50617a, u10};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy

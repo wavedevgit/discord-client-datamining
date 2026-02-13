@@ -60,7 +60,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/voice_calls/native/action_sheet/JoinVoiceChannelButton.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun92069: for (var _fun92069_ip = 0;;) switch (_fun92069_ip) {
+        _fun92227: for (var _fun92227_ip = 0;;) switch (_fun92227_ip) {
             case 0:
                 var2 = arg0;
                 var1 = var2.channel;
@@ -105,15 +105,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var6.eIi3Om;
                 var6 = var8.bind(var10)(var6);
                 if (var7) {
-                    _fun92069_ip = 217;
-                    continue _fun92069
+                    _fun92227_ip = 217;
+                    continue _fun92227
                 }
             case 153:
                 var7 = var6;
                 var8 = false;
                 if (!var2) {
-                    _fun92069_ip = 271;
-                    continue _fun92069
+                    _fun92227_ip = 271;
+                    continue _fun92227
                 }
             case 161:
                 var11 = _closure1_slot0;
@@ -128,8 +128,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2.TVBCKZ;
                 var7 = var6.bind(var10)(var2);
                 var8 = true;
-                _fun92069_ip = 271;
-                continue _fun92069;
+                _fun92227_ip = 271;
+                continue _fun92227;
             case 217:
                 var11 = _closure1_slot0;
                 var2 = _closure1_slot3;
@@ -194,4 +194,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 3093, 660, 33, 1297, 11748, 566, 1234, 1582, 4237, 4849, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 3096, 660, 33, 1297, 8502, 566, 1235, 1582, 4237, 4880, 2]);

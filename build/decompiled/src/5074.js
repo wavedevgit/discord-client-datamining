@@ -1,282 +1,302 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun45521: for (var _fun45521_ip = 0;;) switch (_fun45521_ip) {
-        case 0:
-            var3 = require;
-            var5 = metroImportDefault;
-            var2 = exports;
-            var4 = dependencyMap;
-            var0 = global;
-            var7 = var0.Object;
-            var6 = var7.defineProperty;
-            var1 = {};
-            var0 = true;
-            var1.value = var0;
-            var0 = '__esModule';
-            var0 = var6.bind(var7)(var2, var0, var1);
-            var0 = 0;
-            var1 = var4[var0];
-            var0 = undefined;
-            var1 = var3.bind(var0)(var1);
-            var1 = var1.Platform;
-            var1 = 1;
-            var1 = var4[var1];
-            var6 = var3.bind(var0)(var1);
-            var1 = var6.isNewArch;
-            var1 = var1.bind(var6)();
-            if (!var1) {
-                _fun45521_ip = 90;
-                continue _fun45521
+    var5 = require;
+    var7 = metroImportDefault;
+    var2 = exports;
+    var6 = dependencyMap;
+    var _closure1_slot0 = var5;
+    var _closure1_slot1 = var7;
+    var _closure1_slot2 = var6;
+    var0 = ['nativeGestureRef', 'refreshControlGestureRef', 'style', 'children'];
+    var _closure1_slot3 = var0;
+    var0 = global;
+    var8 = var0.Object;
+    var4 = var8.defineProperty;
+    var3 = {};
+    var0 = true;
+    var3.value = var0;
+    var0 = '__esModule';
+    var0 = var4.bind(var8)(var2, var0, var3);
+    var0 = 0;
+    var3 = var6[var0];
+    var0 = undefined;
+    var3 = var7.bind(var0)(var3);
+    var _closure1_slot4 = var3;
+    var3 = 1;
+    var3 = var6[var3];
+    var3 = var7.bind(var0)(var3);
+    var _closure1_slot5 = var3;
+    var4 = 2;
+    var3 = var6[var4];
+    var3 = var5.bind(var0)(var3);
+    var8 = var3.useMemo;
+    var _closure1_slot6 = var8;
+    var3 = var3.memo;
+    var4 = var6[var4];
+    var4 = var7.bind(var0)(var4);
+    var4 = 3;
+    var4 = var6[var4];
+    var4 = var5.bind(var0)(var4);
+    var4 = var4.jsx;
+    var _closure1_slot7 = var4;
+    var1 = function arg0() {
+        var5 = arg0;
+        var18 = var5.nativeGestureRef;
+        var _closure2_slot0 = var18;
+        var1 = var5.refreshControlGestureRef;
+        var _closure2_slot1 = var1;
+        var6 = var5.style;
+        var12 = var5.children;
+        var4 = _closure1_slot5;
+        var2 = _closure1_slot3;
+        var3 = undefined;
+        var11 = var4.bind(var3)(var5, var2);
+        var5 = _closure1_slot0;
+        var9 = _closure1_slot2;
+        var2 = 4;
+        var4 = var9[var2];
+        var8 = var5.bind(var3)(var4);
+        var4 = var8.useBottomSheetInternal;
+        var4 = var4.bind(var8)();
+        var15 = var4.enableContentPanningGesture;
+        var _closure2_slot2 = var15;
+        var19 = var4.simultaneousHandlers;
+        var _closure2_slot3 = var19;
+        var8 = var4.waitFor;
+        var _closure2_slot4 = var8;
+        var17 = var4.activeOffsetX;
+        var _closure2_slot5 = var17;
+        var16 = var4.activeOffsetY;
+        var _closure2_slot6 = var16;
+        var14 = var4.failOffsetX;
+        var _closure2_slot7 = var14;
+        var13 = var4.failOffsetY;
+        var _closure2_slot8 = var13;
+        var2 = var9[var2];
+        var4 = var5.bind(var3)(var2);
+        var2 = var4.useBottomSheetGestureHandlers;
+        var2 = var2.bind(var4)();
+        var4 = var2.contentPanGestureHandler;
+        var _closure2_slot9 = var4;
+        var2 = _closure1_slot6;
+        var10 = new Array(3);
+        var10[0] = var19;
+        var10[1] = var18;
+        var10[2] = var1;
+        var1 = function() { // Environment: var0
+            _fun45578: for (var _fun45578_ip = 0;;) switch (_fun45578_ip) {
+                case 0:
+                    var0 = new Array(0);
+                    var2 = _closure2_slot0;
+                    if (!var2) {
+                        _fun45578_ip = 28;
+                        continue _fun45578
+                    }
+                case 14:
+                    var3 = var0.push;
+                    var2 = _closure2_slot0;
+                    var2 = var3.bind(var0)(var2);
+                case 28:
+                    var2 = _closure2_slot1;
+                    if (!var2) {
+                        _fun45578_ip = 49;
+                        continue _fun45578
+                    }
+                case 35:
+                    var3 = var0.push;
+                    var2 = _closure2_slot1;
+                    var2 = var3.bind(var0)(var2);
+                case 49:
+                    var2 = _closure2_slot3;
+                    if (!var2) {
+                        _fun45578_ip = 126;
+                        continue _fun45578
+                    }
+                case 56:
+                    var2 = global;
+                    var4 = var2.Array;
+                    var3 = var4.isArray;
+                    var2 = _closure2_slot3;
+                    var2 = var3.bind(var4)(var2);
+                    var3 = var0.push;
+                    if (var2) {
+                        _fun45578_ip = 97;
+                        continue _fun45578
+                    }
+                case 86:
+                    var2 = _closure2_slot3;
+                    var2 = var3.bind(var0)(var2);
+                    _fun45578_ip = 126;
+                    continue _fun45578;
+                case 97:
+                    var2 = var3.apply;
+                    var5 = _closure1_slot4;
+                    var4 = _closure2_slot3;
+                    var1 = undefined;
+                    var1 = var5.bind(var1)(var4);
+                    var1 = var2.bind(var3)(var0, var1);
+                case 126:
+                    return var0;
             }
-        case 88:
-            var1 = false;
-        case 90:
-            if (var1) {
-                _fun45521_ip = 113;
-                continue _fun45521
+        };
+        var10 = var2.bind(var3)(var1, var10);
+        var _closure2_slot10 = var10;
+        var1 = new Array(11);
+        var1[0] = var17;
+        var1[1] = var16;
+        var1[2] = var15;
+        var1[3] = var14;
+        var1[4] = var13;
+        var1[5] = var10;
+        var1[6] = var8;
+        var8 = var4.handleOnChange;
+        var1[7] = var8;
+        var8 = var4.handleOnEnd;
+        var1[8] = var8;
+        var8 = var4.handleOnFinalize;
+        var1[9] = var8;
+        var4 = var4.handleOnStart;
+        var1[10] = var4;
+        var0 = function() { // Environment: var0
+            _fun45579: for (var _fun45579_ip = 0;;) switch (_fun45579_ip) {
+                case 0:
+                    var2 = _closure1_slot0;
+                    var1 = _closure1_slot2;
+                    var0 = 5;
+                    var1 = var1[var0];
+                    var0 = undefined;
+                    var0 = var2.bind(var0)(var1);
+                    var1 = var0.Gesture;
+                    var0 = var1.Pan;
+                    var3 = var0.bind(var1)();
+                    var2 = var3.enabled;
+                    var0 = _closure2_slot2;
+                    var2 = var2.bind(var3)(var0);
+                    var0 = var2.shouldCancelWhenOutside;
+                    var3 = false;
+                    var2 = var0.bind(var2)(var3);
+                    var0 = var2.runOnJS;
+                    var4 = var0.bind(var2)(var3);
+                    var3 = var4.onStart;
+                    var0 = _closure2_slot9;
+                    var2 = var0.handleOnStart;
+                    var4 = var3.bind(var4)(var2);
+                    var3 = var4.onChange;
+                    var2 = var0.handleOnChange;
+                    var4 = var3.bind(var4)(var2);
+                    var3 = var4.onEnd;
+                    var2 = var0.handleOnEnd;
+                    var3 = var3.bind(var4)(var2);
+                    var2 = var3.onFinalize;
+                    var0 = var0.handleOnFinalize;
+                    var4 = var2.bind(var3)(var0);
+                    var0 = _closure2_slot4;
+                    var3 = var4;
+                    if (!var0) {
+                        _fun45579_ip = 178;
+                        continue _fun45579
+                    }
+                case 163:
+                    var2 = var4.requireExternalGestureToFail;
+                    var0 = _closure2_slot4;
+                    var3 = var2.bind(var4)(var0);
+                case 178:
+                    var0 = _closure2_slot10;
+                    var4 = var3;
+                    if (!var0) {
+                        _fun45579_ip = 203;
+                        continue _fun45579
+                    }
+                case 188:
+                    var2 = var3.simultaneousWithExternalGesture;
+                    var0 = _closure2_slot10;
+                    var4 = var2.bind(var3)(var0);
+                case 203:
+                    var0 = _closure2_slot5;
+                    var3 = var4;
+                    if (!var0) {
+                        _fun45579_ip = 228;
+                        continue _fun45579
+                    }
+                case 213:
+                    var2 = var4.activeOffsetX;
+                    var0 = _closure2_slot5;
+                    var3 = var2.bind(var4)(var0);
+                case 228:
+                    var0 = _closure2_slot6;
+                    var4 = var3;
+                    if (!var0) {
+                        _fun45579_ip = 253;
+                        continue _fun45579
+                    }
+                case 238:
+                    var2 = var3.activeOffsetY;
+                    var0 = _closure2_slot6;
+                    var4 = var2.bind(var3)(var0);
+                case 253:
+                    var0 = _closure2_slot7;
+                    var3 = var4;
+                    if (!var0) {
+                        _fun45579_ip = 278;
+                        continue _fun45579
+                    }
+                case 263:
+                    var2 = var4.failOffsetX;
+                    var0 = _closure2_slot7;
+                    var3 = var2.bind(var4)(var0);
+                case 278:
+                    var2 = _closure2_slot8;
+                    var0 = var3;
+                    if (!var2) {
+                        _fun45579_ip = 303;
+                        continue _fun45579
+                    }
+                case 288:
+                    var2 = var3.failOffsetY;
+                    var1 = _closure2_slot8;
+                    var0 = var2.bind(var3)(var1);
+                case 303:
+                    return var0;
             }
-        case 93:
-            var6 = 3;
-            var6 = var4[var6];
-            var6 = var3.bind(var0)(var6);
-            var10 = var6.FlashList;
-            _fun45521_ip = 131;
-            continue _fun45521;
-        case 113:
-            var6 = 2;
-            var6 = var4[var6];
-            var6 = var3.bind(var0)(var6);
-            var10 = var6.FlashList;
-        case 131:
-            if (var1) {
-                _fun45521_ip = 154;
-                continue _fun45521
-            }
-        case 134:
-            var6 = 5;
-            var6 = var4[var6];
-            var6 = var3.bind(var0)(var6);
-            var9 = var6.useBenchmark;
-            _fun45521_ip = 172;
-            continue _fun45521;
-        case 154:
-            var6 = 4;
-            var6 = var4[var6];
-            var6 = var3.bind(var0)(var6);
-            var9 = var6.useBenchmark;
-        case 172:
-            if (var1) {
-                _fun45521_ip = 195;
-                continue _fun45521
-            }
-        case 175:
-            var6 = 7;
-            var6 = var4[var6];
-            var6 = var3.bind(var0)(var6);
-            var8 = var6.MasonryFlashList;
-            _fun45521_ip = 213;
-            continue _fun45521;
-        case 195:
-            var6 = 6;
-            var6 = var4[var6];
-            var6 = var3.bind(var0)(var6);
-            var8 = var6.MasonryFlashListV2;
-        case 213:
-            if (var1) {
-                _fun45521_ip = 236;
-                continue _fun45521
-            }
-        case 216:
-            var6 = 9;
-            var6 = var4[var6];
-            var6 = var3.bind(var0)(var6);
-            var7 = var6.JSFPSMonitor;
-            _fun45521_ip = 254;
-            continue _fun45521;
-        case 236:
-            var6 = 8;
-            var6 = var4[var6];
-            var6 = var3.bind(var0)(var6);
-            var7 = var6.JSFPSMonitor;
-        case 254:
-            if (var1) {
-                _fun45521_ip = 277;
-                continue _fun45521
-            }
-        case 257:
-            var6 = 11;
-            var6 = var4[var6];
-            var6 = var3.bind(var0)(var6);
-            var6 = var6.autoScroll;
-            _fun45521_ip = 295;
-            continue _fun45521;
-        case 277:
-            var11 = 10;
-            var11 = var4[var11];
-            var11 = var3.bind(var0)(var11);
-            var6 = var11.autoScroll;
-        case 295:
-            if (var1) {
-                _fun45521_ip = 318;
-                continue _fun45521
-            }
-        case 298:
-            var1 = 11;
-            var1 = var4[var1];
-            var1 = var3.bind(var0)(var1);
-            var1 = var1.Cancellable;
-            _fun45521_ip = 336;
-            continue _fun45521;
-        case 318:
-            var11 = 10;
-            var11 = var4[var11];
-            var11 = var3.bind(var0)(var11);
-            var1 = var11.Cancellable;
-        case 336:
-            var2.FlashList = var10;
-            var10 = 3;
-            var10 = var4[var10];
-            var10 = var3.bind(var0)(var10);
-            var10 = var10.FlashList;
-            var2.FlashListV1 = var10;
-            var10 = 12;
-            var11 = var4[var10];
-            var11 = var3.bind(var0)(var11);
-            var11 = var11.ContentStyle;
-            var2.ContentStyle = var11;
-            var11 = var4[var10];
-            var11 = var3.bind(var0)(var11);
-            var11 = var11.ListRenderItem;
-            var2.ListRenderItem = var11;
-            var11 = var4[var10];
-            var11 = var3.bind(var0)(var11);
-            var11 = var11.ListRenderItemInfo;
-            var2.ListRenderItemInfo = var11;
-            var11 = var4[var10];
-            var11 = var3.bind(var0)(var11);
-            var11 = var11.RenderTarget;
-            var2.RenderTarget = var11;
-            var10 = var4[var10];
-            var10 = var3.bind(var0)(var10);
-            var10 = var10.RenderTargetOptions;
-            var2.RenderTargetOptions = var10;
-            var10 = 13;
-            var11 = var4[var10];
-            var11 = var3.bind(var0)(var11);
-            var11 = var11.useOnNativeBlankAreaEvents;
-            var2.useOnNativeBlankAreaEvents = var11;
-            var11 = var4[var10];
-            var11 = var3.bind(var0)(var11);
-            var11 = var11.BlankAreaEventHandler;
-            var2.BlankAreaEventHandler = var11;
-            var10 = var4[var10];
-            var10 = var3.bind(var0)(var10);
-            var10 = var10.BlankAreaEvent;
-            var2.BlankAreaEvent = var10;
-            var2.useBenchmark = var9;
-            var9 = 14;
-            var9 = var4[var9];
-            var9 = var3.bind(var0)(var9);
-            var9 = var9.useDataMultiplier;
-            var2.useDataMultiplier = var9;
-            var9 = 15;
-            var10 = var4[var9];
-            var10 = var3.bind(var0)(var10);
-            var10 = var10.useFlatListBenchmark;
-            var2.useFlatListBenchmark = var10;
-            var9 = var4[var9];
-            var9 = var3.bind(var0)(var9);
-            var9 = var9.FlatListBenchmarkParams;
-            var2.FlatListBenchmarkParams = var9;
-            var9 = 16;
-            var10 = var4[var9];
-            var10 = var3.bind(var0)(var10);
-            var10 = var10.useBlankAreaTracker;
-            var2.useBlankAreaTracker = var10;
-            var10 = var4[var9];
-            var10 = var3.bind(var0)(var10);
-            var10 = var10.BlankAreaTrackerResult;
-            var2.BlankAreaTrackerResult = var10;
-            var9 = var4[var9];
-            var9 = var3.bind(var0)(var9);
-            var9 = var9.BlankAreaTrackerConfig;
-            var2.BlankAreaTrackerConfig = var9;
-            var2.MasonryFlashList = var8;
-            var8 = 7;
-            var9 = var4[var8];
-            var9 = var3.bind(var0)(var9);
-            var9 = var9.MasonryFlashListProps;
-            var2.MasonryFlashListProps = var9;
-            var9 = var4[var8];
-            var9 = var3.bind(var0)(var9);
-            var9 = var9.MasonryFlashListScrollEvent;
-            var2.MasonryFlashListScrollEvent = var9;
-            var9 = var4[var8];
-            var9 = var3.bind(var0)(var9);
-            var9 = var9.MasonryFlashListRef;
-            var2.MasonryFlashListRef = var9;
-            var9 = var4[var8];
-            var9 = var3.bind(var0)(var9);
-            var9 = var9.MasonryListItem;
-            var2.MasonryListItem = var9;
-            var9 = var4[var8];
-            var9 = var3.bind(var0)(var9);
-            var9 = var9.MasonryListRenderItem;
-            var2.MasonryListRenderItem = var9;
-            var8 = var4[var8];
-            var8 = var3.bind(var0)(var8);
-            var8 = var8.MasonryListRenderItemInfo;
-            var2.MasonryListRenderItemInfo = var8;
-            var2.JSFPSMonitor = var7;
-            var7 = 9;
-            var7 = var4[var7];
-            var7 = var3.bind(var0)(var7);
-            var7 = var7.JSFPSResult;
-            var2.JSFPSResult = var7;
-            var2.autoScroll = var6;
-            var2.Cancellable = var1;
-            var1 = 17;
-            var1 = var4[var1];
-            var1 = var5.bind(var0)(var1);
-            var2.ViewToken = var1;
-            var1 = 18;
-            var1 = var4[var1];
-            var1 = var5.bind(var0)(var1);
-            var2.CellContainer = var1;
-            var1 = 19;
-            var1 = var4[var1];
-            var1 = var3.bind(var0)(var1);
-            var1 = var1.useLayoutState;
-            var2.useLayoutState = var1;
-            var1 = 20;
-            var1 = var4[var1];
-            var1 = var3.bind(var0)(var1);
-            var1 = var1.useRecyclingState;
-            var2.useRecyclingState = var1;
-            var1 = 21;
-            var1 = var4[var1];
-            var1 = var3.bind(var0)(var1);
-            var1 = var1.useMappingHelper;
-            var2.useMappingHelper = var1;
-            var1 = 22;
-            var1 = var4[var1];
-            var1 = var3.bind(var0)(var1);
-            var1 = var1.useFlashListContext;
-            var2.useFlashListContext = var1;
-            var1 = 23;
-            var5 = var4[var1];
-            var5 = var3.bind(var0)(var5);
-            var5 = var5.LayoutCommitObserver;
-            var2.LayoutCommitObserver = var5;
-            var1 = var4[var1];
-            var1 = var3.bind(var0)(var1);
-            var1 = var1.LayoutCommitObserverProps;
-            var2.LayoutCommitObserverProps = var1;
-            var1 = 24;
-            var1 = var4[var1];
-            var1 = var3.bind(var0)(var1);
-            var1 = var1.FlashListRef;
-            var2.FlashListRef = var1;
-            return var0;
-    }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 5075, 5076, 5136, 5204, 5195, 5208, 5202, 5206, 5198, 5205, 5197, 5143, 5140, 5200, 5201, 5196, 5203, 5142, 5094, 5209, 5210, 5095, 5211, 5212]);
+        };
+        var8 = var2.bind(var3)(var0, var1);
+        var2 = _closure1_slot7;
+        var0 = 5;
+        var0 = var9[var0];
+        var0 = var5.bind(var3)(var0);
+        var1 = var0.GestureDetector;
+        var0 = {};
+        var0.gesture = var8;
+        var4 = 6;
+        var4 = var9[var4];
+        var4 = var5.bind(var3)(var4);
+        var4 = var4.BottomSheetDraggableContext;
+        var5 = var4.Provider;
+        var4 = {};
+        var4.value = var8;
+        var8 = _closure1_slot1;
+        var7 = 7;
+        var7 = var9[var7];
+        var7 = var8.bind(var3)(var7);
+        var7 = var7.View;
+        var8 = global;
+        var10 = var8.Object;
+        var9 = var10.assign;
+        var8 = {};
+        var8.style = var6;
+        var6 = {};
+        var6.children = var12;
+        var6 = var9.bind(var10)(var8, var11, var6);
+        var6 = var2.bind(var3)(var7, var6);
+        var4.children = var6;
+        var4 = var2.bind(var3)(var5, var4);
+        var0.children = var4;
+        var0 = var2.bind(var3)(var1, var0);
+        return var0;
+    };
+    var1 = var3.bind(var0)(var1);
+    var3 = 'BottomSheetDraggableView';
+    var1.displayName = var3;
+    var2.default = var1;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [65, 29, 31, 33, 4945, 4968, 4952, 3718]);

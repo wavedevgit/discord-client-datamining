@@ -59,12 +59,12 @@ public final class TypeUtilsKt {
 
     public static final boolean containsTypeAliasParameters(@NotNull KotlinType kotlinType) {
         Intrinsics.checkNotNullParameter(kotlinType, "<this>");
-        return contains(kotlinType, b.f34743d);
+        return contains(kotlinType, b.f35311d);
     }
 
     public static final boolean containsTypeParameter(@NotNull KotlinType kotlinType) {
         Intrinsics.checkNotNullParameter(kotlinType, "<this>");
-        return TypeUtils.contains(kotlinType, a.f34742d);
+        return TypeUtils.contains(kotlinType, a.f35310d);
     }
 
     @NotNull
@@ -422,11 +422,11 @@ public final class TypeUtilsKt {
 
     public static final boolean requiresTypeAliasExpansion(@NotNull KotlinType kotlinType) {
         Intrinsics.checkNotNullParameter(kotlinType, "<this>");
-        return contains(kotlinType, c.f34744d);
+        return contains(kotlinType, c.f35312d);
     }
 
     public static final boolean shouldBeUpdated(KotlinType kotlinType) {
-        if (kotlinType != null && !contains(kotlinType, d.f34745d)) {
+        if (kotlinType != null && !contains(kotlinType, d.f35313d)) {
             return false;
         }
         return true;

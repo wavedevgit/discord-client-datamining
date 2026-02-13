@@ -137,7 +137,7 @@ public final class BSDiff {
         try {
             try {
                 INSTANCE.bspatchStreamingInner(randomAccessFile, inputStream, bufferedInputStream, bufferedInputStream2, bufferedInputStream3, bufferedOutputStream);
-                Unit unit = Unit.f31988a;
+                Unit unit = Unit.f32556a;
                 try {
                     c.a(bufferedOutputStream, null);
                     c.a(bufferedInputStream3, null);

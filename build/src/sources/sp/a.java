@@ -9,10 +9,10 @@ import rp.n1;
 public final class a implements ViewBinding {
 
     /* renamed from: a  reason: collision with root package name */
-    private final View f48177a;
+    private final View f48745a;
 
     private a(View view) {
-        this.f48177a = view;
+        this.f48745a = view;
     }
 
     public static a a(View view) {
@@ -23,7 +23,7 @@ public final class a implements ViewBinding {
     }
 
     public static a b(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z10) {
-        View inflate = layoutInflater.inflate(n1.f47673a, viewGroup, false);
+        View inflate = layoutInflater.inflate(n1.f48241a, viewGroup, false);
         if (z10) {
             viewGroup.addView(inflate);
         }
@@ -32,6 +32,6 @@ public final class a implements ViewBinding {
 
     @Override // androidx.viewbinding.ViewBinding
     public View getRoot() {
-        return this.f48177a;
+        return this.f48745a;
     }
 }

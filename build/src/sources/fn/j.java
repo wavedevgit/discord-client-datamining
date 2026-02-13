@@ -147,7 +147,7 @@ public final class j implements CoroutineScope, f.b, t.c {
         @Override // kotlin.jvm.functions.Function2
         /* renamed from: j */
         public final Object invoke(r rVar, Continuation continuation) {
-            return ((d) create(rVar, continuation)).invokeSuspend(Unit.f31988a);
+            return ((d) create(rVar, continuation)).invokeSuspend(Unit.f32556a);
         }
     }
 
@@ -161,7 +161,7 @@ public final class j implements CoroutineScope, f.b, t.c {
         this.f23907e = emitOutputToParent;
         this.f23908i = cVar;
         this.f23909o = interceptor;
-        this.f23910p = baseContext.O0(z.a((Job) baseContext.m(Job.f34997k))).O0(new b0(id2.toString()));
+        this.f23910p = baseContext.O0(z.a((Job) baseContext.m(Job.f35565k))).O0(new b0(id2.toString()));
         this.f23911q = dVar == null ? 0L : dVar.a();
         this.f23912r = new h(mVar == null ? null : mVar.a(), getCoroutineContext(), new c(this), this, interceptor, dVar);
         this.f23913s = new fn.a();
@@ -192,7 +192,7 @@ public final class j implements CoroutineScope, f.b, t.c {
 
     private final g f(String str, Function2 function2) {
         Job d10;
-        d10 = ys.i.d(kotlinx.coroutines.i.j(this, new b0("sideEffect[" + str + "] for " + this.f23906d)), null, c0.f55784e, function2, 1, null);
+        d10 = ys.i.d(kotlinx.coroutines.i.j(this, new b0("sideEffect[" + str + "] for " + this.f23906d)), null, c0.f56352e, function2, 1, null);
         return new g(str, d10);
     }
 

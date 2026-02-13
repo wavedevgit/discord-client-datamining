@@ -50,8 +50,8 @@ public /* synthetic */ class ForumPostActions$$serializer implements h0 {
     @Override // tt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        n2 n2Var = n2.f50033a;
-        return new KSerializer[]{p0.f50049a, h.f49997a, a.u(n2Var), n2Var, a.u(n2Var), n2Var, a.u(MessageReaction$$serializer.INSTANCE), a.u(PostSharePrompt$$serializer.INSTANCE)};
+        n2 n2Var = n2.f50601a;
+        return new KSerializer[]{p0.f50617a, h.f50565a, a.u(n2Var), n2Var, a.u(n2Var), n2Var, a.u(MessageReaction$$serializer.INSTANCE), a.u(PostSharePrompt$$serializer.INSTANCE)};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -74,7 +74,7 @@ public /* synthetic */ class ForumPostActions$$serializer implements h0 {
         if (b10.p()) {
             i10 = b10.i(serialDescriptor, 0);
             boolean C = b10.C(serialDescriptor, 1);
-            n2 n2Var = n2.f50033a;
+            n2 n2Var = n2.f50601a;
             String m10 = b10.m(serialDescriptor, 3);
             String m11 = b10.m(serialDescriptor, 5);
             postSharePrompt = (PostSharePrompt) b10.n(serialDescriptor, 7, PostSharePrompt$$serializer.INSTANCE, null);
@@ -112,14 +112,14 @@ public /* synthetic */ class ForumPostActions$$serializer implements h0 {
                         i12 = 7;
                     case 2:
                         c10 = 2;
-                        str5 = (String) b10.n(serialDescriptor, 2, n2.f50033a, str5);
+                        str5 = (String) b10.n(serialDescriptor, 2, n2.f50601a, str5);
                         i13 |= 4;
                         i12 = 7;
                     case 3:
                         str6 = b10.m(serialDescriptor, 3);
                         i13 |= 8;
                     case 4:
-                        str7 = (String) b10.n(serialDescriptor, 4, n2.f50033a, str7);
+                        str7 = (String) b10.n(serialDescriptor, 4, n2.f50601a, str7);
                         i13 |= 16;
                     case 5:
                         str8 = b10.m(serialDescriptor, 5);

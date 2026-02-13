@@ -5,10 +5,10 @@ import kotlin.jvm.internal.Intrinsics;
 public final class e {
 
     /* renamed from: a  reason: collision with root package name */
-    private final b f38237a;
+    private final b f38805a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f38238b;
+    private final String f38806b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public interface a {
@@ -18,12 +18,12 @@ public final class e {
     public e(b logger, String subsystem) {
         Intrinsics.checkNotNullParameter(logger, "logger");
         Intrinsics.checkNotNullParameter(subsystem, "subsystem");
-        this.f38237a = logger;
-        this.f38238b = subsystem;
+        this.f38805a = logger;
+        this.f38806b = subsystem;
     }
 
     public final void a(String message) {
         Intrinsics.checkNotNullParameter(message, "message");
-        this.f38237a.f(this.f38238b, np.a.f38209i, message);
+        this.f38805a.f(this.f38806b, np.a.f38777i, message);
     }
 }

@@ -151,7 +151,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/user_settings/native/design_system/UserSettingsDesignSystemBackdrop.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function() {
-        _fun87201: for (var _fun87201_ip = 0;;) switch (_fun87201_ip) {
+        _fun88804: for (var _fun88804_ip = 0;;) switch (_fun88804_ip) {
             case 0:
                 var12 = function() {
                     var2 = _closure2_slot1;
@@ -189,7 +189,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var6.bind(var3)(var1);
                 var1 = var2.useAnimatedStyle;
                 var0 = function() {
-                    _fun87203: for (var _fun87203_ip = 0;;) switch (_fun87203_ip) {
+                    _fun88806: for (var _fun88806_ip = 0;;) switch (_fun88806_ip) {
                         case 0:
                             var0 = {};
                             var3 = _closure1_slot0;
@@ -202,8 +202,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var2 = _closure2_slot0;
                             var3 = 0;
                             if (!var2) {
-                                _fun87203_ip = 47;
-                                continue _fun87203
+                                _fun88806_ip = 47;
+                                continue _fun88806
                             }
                         case 44:
                             var3 = 1;
@@ -291,8 +291,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = new Array(2);
                 var4[0] = var6;
                 if (!var5) {
-                    _fun87201_ip = 654;
-                    continue _fun87201
+                    _fun88804_ip = 654;
+                    continue _fun88804
                 }
             case 419:
                 var8 = _closure1_slot6;
@@ -357,4 +357,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 33, 1297, 4878, 4086, 3938, 4090, 3717, 4087, 4093, 4071, 4077, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 33, 1297, 4907, 4086, 3938, 4090, 3717, 4087, 4093, 4071, 4077, 2]);

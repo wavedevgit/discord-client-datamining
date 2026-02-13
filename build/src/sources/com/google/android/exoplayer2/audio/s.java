@@ -19,7 +19,7 @@ final class s extends i {
     private int f13041l;
 
     /* renamed from: m  reason: collision with root package name */
-    private byte[] f13042m = w0.f39043f;
+    private byte[] f13042m = w0.f39611f;
 
     /* renamed from: n  reason: collision with root package name */
     private int f13043n;
@@ -115,7 +115,7 @@ final class s extends i {
 
     @Override // com.google.android.exoplayer2.audio.i
     protected void k() {
-        this.f13042m = w0.f39043f;
+        this.f13042m = w0.f39611f;
     }
 
     public long m() {

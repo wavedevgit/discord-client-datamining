@@ -137,13 +137,13 @@ public final class ChannelMentionContentNode extends MentionContentNode {
         Lazy[] lazyArr = $childSerializers;
         compositeEncoder.y(serialDescriptor, 0, channelMentionContentNode.channelId);
         if (compositeEncoder.z(serialDescriptor, 1) || channelMentionContentNode.guildId != null) {
-            compositeEncoder.o(serialDescriptor, 1, n2.f50033a, channelMentionContentNode.guildId);
+            compositeEncoder.o(serialDescriptor, 1, n2.f50601a, channelMentionContentNode.guildId);
         }
         if (compositeEncoder.z(serialDescriptor, 2) || channelMentionContentNode.messageId != null) {
-            compositeEncoder.o(serialDescriptor, 2, n2.f50033a, channelMentionContentNode.messageId);
+            compositeEncoder.o(serialDescriptor, 2, n2.f50601a, channelMentionContentNode.messageId);
         }
         if (compositeEncoder.z(serialDescriptor, 3) || channelMentionContentNode.originalLink != null) {
-            compositeEncoder.o(serialDescriptor, 3, n2.f50033a, channelMentionContentNode.originalLink);
+            compositeEncoder.o(serialDescriptor, 3, n2.f50601a, channelMentionContentNode.originalLink);
         }
         if (compositeEncoder.z(serialDescriptor, 4) || channelMentionContentNode.inContent != null) {
             compositeEncoder.o(serialDescriptor, 4, (qt.o) lazyArr[4].getValue(), channelMentionContentNode.inContent);

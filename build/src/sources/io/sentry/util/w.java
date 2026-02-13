@@ -19,11 +19,11 @@ import java.util.TimeZone;
 public final class w implements e3 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Deque f30156d;
+    private final Deque f30724d;
 
     public w(Map map) {
         ArrayDeque arrayDeque = new ArrayDeque();
-        this.f30156d = arrayDeque;
+        this.f30724d = arrayDeque;
         arrayDeque.addLast(new AbstractMap.SimpleEntry(null, map));
     }
 
@@ -36,7 +36,7 @@ public final class w implements e3 {
     }
 
     private Object i(ILogger iLogger, m1 m1Var) {
-        Map.Entry entry = (Map.Entry) this.f30156d.peekLast();
+        Map.Entry entry = (Map.Entry) this.f30724d.peekLast();
         if (entry == null) {
             return null;
         }
@@ -44,7 +44,7 @@ public final class w implements e3 {
         if (m1Var != null && iLogger != null) {
             return m1Var.a(this, iLogger);
         }
-        this.f30156d.removeLast();
+        this.f30724d.removeLast();
         return value;
     }
 
@@ -54,8 +54,8 @@ public final class w implements e3 {
 
     @Override // io.sentry.e3
     public void D() {
-        if (this.f30156d.size() > 1) {
-            this.f30156d.removeLast();
+        if (this.f30724d.size() > 1) {
+            this.f30724d.removeLast();
         }
     }
 
@@ -100,7 +100,7 @@ public final class w implements e3 {
 
     @Override // java.io.Closeable, java.lang.AutoCloseable
     public void close() {
-        this.f30156d.clear();
+        this.f30724d.clear();
     }
 
     @Override // io.sentry.e3
@@ -114,7 +114,7 @@ public final class w implements e3 {
 
     @Override // io.sentry.e3
     public boolean hasNext() {
-        return !this.f30156d.isEmpty();
+        return !this.f30724d.isEmpty();
     }
 
     @Override // io.sentry.e3
@@ -207,7 +207,7 @@ public final class w implements e3 {
 
     @Override // io.sentry.e3
     public String o0() {
-        Map.Entry entry = (Map.Entry) this.f30156d.peekLast();
+        Map.Entry entry = (Map.Entry) this.f30724d.peekLast();
         if (entry != null && entry.getKey() != null) {
             return (String) entry.getKey();
         }
@@ -216,10 +216,10 @@ public final class w implements e3 {
 
     @Override // io.sentry.e3
     public io.sentry.vendor.gson.stream.b peek() {
-        if (this.f30156d.isEmpty()) {
+        if (this.f30724d.isEmpty()) {
             return io.sentry.vendor.gson.stream.b.END_DOCUMENT;
         }
-        Map.Entry entry = (Map.Entry) this.f30156d.peekLast();
+        Map.Entry entry = (Map.Entry) this.f30724d.peekLast();
         if (entry == null) {
             return io.sentry.vendor.gson.stream.b.END_DOCUMENT;
         }
@@ -288,13 +288,13 @@ public final class w implements e3 {
 
     @Override // io.sentry.e3
     public void u() {
-        Map.Entry entry = (Map.Entry) this.f30156d.removeLast();
+        Map.Entry entry = (Map.Entry) this.f30724d.removeLast();
         if (entry != null) {
             Object value = entry.getValue();
             if (value instanceof Map) {
-                this.f30156d.addLast(new AbstractMap.SimpleEntry(null, io.sentry.vendor.gson.stream.b.END_OBJECT));
+                this.f30724d.addLast(new AbstractMap.SimpleEntry(null, io.sentry.vendor.gson.stream.b.END_OBJECT));
                 for (Map.Entry entry2 : ((Map) value).entrySet()) {
-                    this.f30156d.addLast(entry2);
+                    this.f30724d.addLast(entry2);
                 }
                 return;
             }
@@ -314,8 +314,8 @@ public final class w implements e3 {
 
     @Override // io.sentry.e3
     public void v() {
-        if (this.f30156d.size() > 1) {
-            this.f30156d.removeLast();
+        if (this.f30724d.size() > 1) {
+            this.f30724d.removeLast();
         }
     }
 
@@ -326,14 +326,14 @@ public final class w implements e3 {
 
     @Override // io.sentry.e3
     public void x() {
-        Map.Entry entry = (Map.Entry) this.f30156d.removeLast();
+        Map.Entry entry = (Map.Entry) this.f30724d.removeLast();
         if (entry != null) {
             Object value = entry.getValue();
             if (value instanceof List) {
-                this.f30156d.addLast(new AbstractMap.SimpleEntry(null, io.sentry.vendor.gson.stream.b.END_ARRAY));
+                this.f30724d.addLast(new AbstractMap.SimpleEntry(null, io.sentry.vendor.gson.stream.b.END_ARRAY));
                 List list = (List) value;
                 for (int size = list.size() - 1; size >= 0; size--) {
-                    this.f30156d.addLast(new AbstractMap.SimpleEntry(null, list.get(size)));
+                    this.f30724d.addLast(new AbstractMap.SimpleEntry(null, list.get(size)));
                 }
                 return;
             }

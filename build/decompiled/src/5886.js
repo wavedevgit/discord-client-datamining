@@ -1,101 +1,66 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun51804: for (var _fun51804_ip = 0;;) switch (_fun51804_ip) {
-        case 0:
-            var7 = require;
-            var12 = exports;
-            var8 = dependencyMap;
-            var5 = var7;
-            var2 = var12;
-            var4 = var8;
-            var0 = undefined;
-            var3 = undefined;
-            var6 = ['children'];
-            var _closure1_slot0 = var6;
-            var6 = global;
-            var11 = var6.Object;
-            var10 = var11.defineProperty;
-            var9 = {};
-            var6 = true;
-            var9.value = var6;
-            var6 = '__esModule';
-            var6 = var10.bind(var11)(var12, var6, var9);
-            var6 = 0;
-            var9 = var8[var6];
-            var6 = metroImportDefault;
-            var6 = var6.bind(var0)(var9);
-            var _closure1_slot2 = var6;
-            var6 = 1;
-            var9 = var8[var6];
-            var6 = metroImportAll;
-            var6 = var6.bind(var0)(var9);
-            var6 = 2;
-            var6 = var8[var6];
-            var6 = var7.bind(var0)(var6);
-            var3 = var6.UIManager;
-            var6 = 3;
-            var6 = var8[var6];
-            var6 = var7.bind(var0)(var6);
-            var6 = var6.jsx;
-            var _closure1_slot3 = var6;
-        case 142: // try_start_0
-            var6 = var4;
-            var4 = 4;
-            var4 = var6[var4];
-            var4 = var5.bind(var0)(var4);
-            var4 = var4.default;
-            var _closure1_slot1 = var4;
-        case 166: // try_end0
-            _fun51804_ip = 170;
-            continue _fun51804;
-        case 168: // catch_target0
-            CatchBlockStart(arg_register = 4);
-        case 170:
-            var5 = var3;
-            var4 = var5.getViewManagerConfig;
-            var3 = 'RNCMaskedView';
-            var4 = var4.bind(var5)(var3);
-            var3 = null;
-            var3 = var3 != var4;
-            var _closure1_slot4 = var3;
-            var1 = function arg0() {
-                _fun51805: for (var _fun51805_ip = 0;;) switch (_fun51805_ip) {
-                    case 0:
-                        var5 = arg0;
-                        var1 = var5.children;
-                        var3 = _closure1_slot2;
-                        var0 = _closure1_slot0;
-                        var4 = undefined;
-                        var8 = var3.bind(var4)(var5, var0);
-                        var3 = _closure1_slot4;
-                        var0 = var1;
-                        if (!var3) {
-                            _fun51805_ip = 89;
-                            continue _fun51805
-                        }
-                    case 37:
-                        var3 = _closure1_slot1;
-                        var0 = var1;
-                        if (!var3) {
-                            _fun51805_ip = 89;
-                            continue _fun51805
-                        }
-                    case 47:
-                        var3 = _closure1_slot3;
-                        var2 = _closure1_slot1;
-                        var5 = global;
-                        var7 = var5.Object;
-                        var6 = var7.assign;
-                        var5 = {};
-                        var5.children = var1;
-                        var1 = {};
-                        var1 = var6.bind(var7)(var1, var8, var5);
-                        var0 = var3.bind(var4)(var2, var1);
-                    case 89:
-                        return var0;
+    var1 = exports;
+    var2 = metroImportDefault;
+    var _closure1_slot0 = var2;
+    var2 = dependencyMap;
+    var _closure1_slot1 = var2;
+    var2 = global;
+    var5 = var2.Object;
+    var4 = var5.defineProperty;
+    var3 = {};
+    var2 = true;
+    var3.value = var2;
+    var2 = '__esModule';
+    var2 = var4.bind(var5)(var1, var2, var3);
+    var0 = function arg0, arg1() {
+        _fun51944: for (var _fun51944_ip = 0;;) switch (_fun51944_ip) {
+            case 0:
+                var0 = arg0;
+                var4 = arg1;
+                var3 = _closure1_slot0;
+                var2 = _closure1_slot1;
+                var1 = 0;
+                var1 = var2[var1];
+                var2 = undefined;
+                var1 = var3.bind(var2)(var1);
+                var1 = var1.bind(var2)(var4);
+                var3 = 'vertical';
+                if (!(var3 !== var4)) {
+                    _fun51944_ip = 84;
+                    continue _fun51944
                 }
-            };
-            var2.default = var1;
-            return var0;
-    }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [29, 31, 27, 33, 5855]);
+            case 43:
+                var3 = 'vertical-inverted';
+                if (!(var3 !== var4)) {
+                    _fun51944_ip = 84;
+                    continue _fun51944
+                }
+            case 53:
+                var3 = 'horizontal';
+                if (!(var3 !== var4)) {
+                    _fun51944_ip = 73;
+                    continue _fun51944
+                }
+            case 61:
+                var3 = 'horizontal-inverted';
+                if (!(var3 !== var4)) {
+                    _fun51944_ip = 73;
+                    continue _fun51944
+                }
+            case 71:
+                return var2;
+            case 73:
+                var2 = var0.width;
+                var2 = var2 * var1;
+                return var2;
+            case 84:
+                var0 = var0.height;
+                var0 = var0 * var1;
+                return var0;
+        }
+    };
+    var1.default = var0;
+    var0 = undefined;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5885]);

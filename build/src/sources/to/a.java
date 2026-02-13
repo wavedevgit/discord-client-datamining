@@ -10,22 +10,22 @@ public abstract class a {
         Intrinsics.checkNotNullParameter(capturePage, "<this>");
         Intrinsics.checkNotNullParameter(idClass, "idClass");
         Intrinsics.checkNotNullParameter(side, "side");
-        if (idClass == ap.e.f5951u && side == c4.e.f49014o) {
+        if (idClass == ap.e.f5951u && side == c4.e.f49582o) {
             RemoteImage passportFrontPictograph = capturePage.getPassportFrontPictograph();
             if (passportFrontPictograph == null) {
                 return capturePage.getIdFrontPictograph();
             }
             return passportFrontPictograph;
-        } else if (side == c4.e.f49014o) {
+        } else if (side == c4.e.f49582o) {
             return capturePage.getIdFrontPictograph();
         } else {
-            if (side == c4.e.f49015p) {
+            if (side == c4.e.f49583p) {
                 return capturePage.getIdBackPictograph();
             }
-            if (side == c4.e.f49018s) {
+            if (side == c4.e.f49586s) {
                 return capturePage.getPassportSignaturePictograph();
             }
-            if (side == c4.e.f49017r) {
+            if (side == c4.e.f49585r) {
                 return capturePage.getBarcodePdf417Pictograph();
             }
             return null;

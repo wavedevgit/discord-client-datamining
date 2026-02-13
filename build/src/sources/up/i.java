@@ -7,50 +7,50 @@ import kotlin.jvm.internal.Intrinsics;
 public final class i {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Object f50899a;
+    private final Object f51467a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Function0 f50900b;
+    private final Function0 f51468b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Function0 f50901c;
+    private final Function0 f51469c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final boolean f50902d;
+    private final boolean f51470d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Function1 f50903e;
+    private final Function1 f51471e;
 
     public i(Object mainScreen, Function0 onFabClick, Function0 getCurrentForcedStatus, boolean z10, Function1 onSimulateGovIdNfcChanged) {
         Intrinsics.checkNotNullParameter(mainScreen, "mainScreen");
         Intrinsics.checkNotNullParameter(onFabClick, "onFabClick");
         Intrinsics.checkNotNullParameter(getCurrentForcedStatus, "getCurrentForcedStatus");
         Intrinsics.checkNotNullParameter(onSimulateGovIdNfcChanged, "onSimulateGovIdNfcChanged");
-        this.f50899a = mainScreen;
-        this.f50900b = onFabClick;
-        this.f50901c = getCurrentForcedStatus;
-        this.f50902d = z10;
-        this.f50903e = onSimulateGovIdNfcChanged;
+        this.f51467a = mainScreen;
+        this.f51468b = onFabClick;
+        this.f51469c = getCurrentForcedStatus;
+        this.f51470d = z10;
+        this.f51471e = onSimulateGovIdNfcChanged;
     }
 
     public final Function0 a() {
-        return this.f50901c;
+        return this.f51469c;
     }
 
     public final Object b() {
-        return this.f50899a;
+        return this.f51467a;
     }
 
     public final Function0 c() {
-        return this.f50900b;
+        return this.f51468b;
     }
 
     public final Function1 d() {
-        return this.f50903e;
+        return this.f51471e;
     }
 
     public final boolean e() {
-        return this.f50902d;
+        return this.f51470d;
     }
 
     public boolean equals(Object obj) {
@@ -61,22 +61,22 @@ public final class i {
             return false;
         }
         i iVar = (i) obj;
-        if (Intrinsics.areEqual(this.f50899a, iVar.f50899a) && Intrinsics.areEqual(this.f50900b, iVar.f50900b) && Intrinsics.areEqual(this.f50901c, iVar.f50901c) && this.f50902d == iVar.f50902d && Intrinsics.areEqual(this.f50903e, iVar.f50903e)) {
+        if (Intrinsics.areEqual(this.f51467a, iVar.f51467a) && Intrinsics.areEqual(this.f51468b, iVar.f51468b) && Intrinsics.areEqual(this.f51469c, iVar.f51469c) && this.f51470d == iVar.f51470d && Intrinsics.areEqual(this.f51471e, iVar.f51471e)) {
             return true;
         }
         return false;
     }
 
     public int hashCode() {
-        return (((((((this.f50899a.hashCode() * 31) + this.f50900b.hashCode()) * 31) + this.f50901c.hashCode()) * 31) + Boolean.hashCode(this.f50902d)) * 31) + this.f50903e.hashCode();
+        return (((((((this.f51467a.hashCode() * 31) + this.f51468b.hashCode()) * 31) + this.f51469c.hashCode()) * 31) + Boolean.hashCode(this.f51470d)) * 31) + this.f51471e.hashCode();
     }
 
     public String toString() {
-        Object obj = this.f50899a;
-        Function0 function0 = this.f50900b;
-        Function0 function02 = this.f50901c;
-        boolean z10 = this.f50902d;
-        Function1 function1 = this.f50903e;
+        Object obj = this.f51467a;
+        Function0 function0 = this.f51468b;
+        Function0 function02 = this.f51469c;
+        boolean z10 = this.f51470d;
+        Function1 function1 = this.f51471e;
         return "SandboxScreen(mainScreen=" + obj + ", onFabClick=" + function0 + ", getCurrentForcedStatus=" + function02 + ", simulateGovIdNfc=" + z10 + ", onSimulateGovIdNfcChanged=" + function1 + ")";
     }
 }

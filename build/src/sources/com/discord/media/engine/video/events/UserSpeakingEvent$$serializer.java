@@ -41,8 +41,8 @@ public /* synthetic */ class UserSpeakingEvent$$serializer implements h0 {
     @Override // tt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        p0 p0Var = p0.f50049a;
-        return new KSerializer[]{p0Var, n2.f50033a, p0Var, g0.f49993a};
+        p0 p0Var = p0.f50617a;
+        return new KSerializer[]{p0Var, n2.f50601a, p0Var, g0.f50561a};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy

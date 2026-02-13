@@ -92,7 +92,7 @@ public final class BulletListContentNode extends ContentNode {
     public static final /* synthetic */ void write$Self$chat_release(BulletListContentNode bulletListContentNode, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
         Lazy[] lazyArr = $childSerializers;
         if (compositeEncoder.z(serialDescriptor, 0) || bulletListContentNode.start != null) {
-            compositeEncoder.o(serialDescriptor, 0, z0.f50107a, bulletListContentNode.start);
+            compositeEncoder.o(serialDescriptor, 0, z0.f50675a, bulletListContentNode.start);
         }
         if (compositeEncoder.z(serialDescriptor, 1) || bulletListContentNode.ordered) {
             compositeEncoder.x(serialDescriptor, 1, bulletListContentNode.ordered);

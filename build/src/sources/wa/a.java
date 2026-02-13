@@ -9,13 +9,13 @@ import java.nio.ByteBuffer;
 public class a implements q, Closeable {
 
     /* renamed from: d  reason: collision with root package name */
-    private SharedMemory f52387d;
+    private SharedMemory f52955d;
 
     /* renamed from: e  reason: collision with root package name */
-    private ByteBuffer f52388e;
+    private ByteBuffer f52956e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final long f52389i;
+    private final long f52957i;
 
     public a(int i10) {
         boolean z10;
@@ -27,9 +27,9 @@ public class a implements q, Closeable {
         p8.j.b(Boolean.valueOf(z10));
         try {
             SharedMemory create = SharedMemory.create("AshmemMemoryChunk", i10);
-            this.f52387d = create;
-            this.f52388e = create.mapReadWrite();
-            this.f52389i = System.identityHashCode(this);
+            this.f52955d = create;
+            this.f52956e = create.mapReadWrite();
+            this.f52957i = System.identityHashCode(this);
         } catch (ErrnoException e10) {
             throw new RuntimeException("Fail to create AshmemMemory", e10);
         }
@@ -39,13 +39,13 @@ public class a implements q, Closeable {
         if (qVar instanceof a) {
             p8.j.i(!isClosed());
             p8.j.i(!qVar.isClosed());
-            p8.j.g(this.f52388e);
+            p8.j.g(this.f52956e);
             p8.j.g(qVar.r());
             r.b(i10, qVar.getSize(), i11, i12, getSize());
-            this.f52388e.position(i10);
+            this.f52956e.position(i10);
             qVar.r().position(i11);
             byte[] bArr = new byte[i12];
-            this.f52388e.get(bArr, 0, i12);
+            this.f52956e.get(bArr, 0, i12);
             qVar.r().put(bArr, 0, i12);
             return;
         }
@@ -67,8 +67,8 @@ public class a implements q, Closeable {
             z11 = false;
         }
         p8.j.b(Boolean.valueOf(z11));
-        p8.j.g(this.f52388e);
-        return this.f52388e.get(i10);
+        p8.j.g(this.f52956e);
+        return this.f52956e.get(i10);
     }
 
     @Override // wa.q
@@ -78,23 +78,23 @@ public class a implements q, Closeable {
 
     @Override // wa.q
     public long a() {
-        return this.f52389i;
+        return this.f52957i;
     }
 
     @Override // wa.q, java.io.Closeable, java.lang.AutoCloseable
     public synchronized void close() {
         try {
             if (!isClosed()) {
-                SharedMemory sharedMemory = this.f52387d;
+                SharedMemory sharedMemory = this.f52955d;
                 if (sharedMemory != null) {
                     sharedMemory.close();
                 }
-                ByteBuffer byteBuffer = this.f52388e;
+                ByteBuffer byteBuffer = this.f52956e;
                 if (byteBuffer != null) {
                     SharedMemory.unmap(byteBuffer);
                 }
-                this.f52388e = null;
-                this.f52387d = null;
+                this.f52956e = null;
+                this.f52955d = null;
             }
         } catch (Throwable th2) {
             throw th2;
@@ -103,19 +103,19 @@ public class a implements q, Closeable {
 
     @Override // wa.q
     public int getSize() {
-        p8.j.g(this.f52387d);
-        return this.f52387d.getSize();
+        p8.j.g(this.f52955d);
+        return this.f52955d.getSize();
     }
 
     @Override // wa.q
     public synchronized int h(int i10, byte[] bArr, int i11, int i12) {
         int a10;
         p8.j.g(bArr);
-        p8.j.g(this.f52388e);
+        p8.j.g(this.f52956e);
         a10 = r.a(i10, i12, getSize());
         r.b(i10, bArr.length, i11, a10, getSize());
-        this.f52388e.position(i10);
-        this.f52388e.put(bArr, i11, a10);
+        this.f52956e.position(i10);
+        this.f52956e.put(bArr, i11, a10);
         return a10;
     }
 
@@ -144,8 +144,8 @@ public class a implements q, Closeable {
     @Override // wa.q
     public synchronized boolean isClosed() {
         boolean z10;
-        if (this.f52388e != null) {
-            if (this.f52387d != null) {
+        if (this.f52956e != null) {
+            if (this.f52955d != null) {
                 z10 = false;
             }
         }
@@ -157,16 +157,16 @@ public class a implements q, Closeable {
     public synchronized int q(int i10, byte[] bArr, int i11, int i12) {
         int a10;
         p8.j.g(bArr);
-        p8.j.g(this.f52388e);
+        p8.j.g(this.f52956e);
         a10 = r.a(i10, i12, getSize());
         r.b(i10, bArr.length, i11, a10, getSize());
-        this.f52388e.position(i10);
-        this.f52388e.get(bArr, i11, a10);
+        this.f52956e.position(i10);
+        this.f52956e.get(bArr, i11, a10);
         return a10;
     }
 
     @Override // wa.q
     public ByteBuffer r() {
-        return this.f52388e;
+        return this.f52956e;
     }
 }

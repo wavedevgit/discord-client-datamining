@@ -5,7 +5,7 @@ import bj.c;
 final class j8 implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final j8 f46770a = new j8();
+    static final j8 f47338a = new j8();
 
     static {
         c.b a10 = bj.c.a("sampledSegmentations");

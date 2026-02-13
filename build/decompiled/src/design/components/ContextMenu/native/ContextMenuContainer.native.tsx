@@ -33,7 +33,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var0)(var3);
     var6 = var3.Keyboard;
     var _closure1_slot4 = var6;
-    var7 = var3.StyleSheet;
+    var8 = var3.StyleSheet;
     var3 = var3.View;
     var _closure1_slot5 = var3;
     var3 = 2;
@@ -41,17 +41,20 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var0)(var3);
     var3 = var3.jsx;
     var _closure1_slot6 = var3;
-    var6 = var7.create;
+    var3 = 3;
+    var3 = var5[var3];
+    var7 = var4.bind(var0)(var3);
+    var6 = var7.createStyles;
     var3 = {};
-    var8 = {};
-    var12 = var7.absoluteFillObject;
-    var13 = var8;
-    var9 = copyDataProperties(var13, var12);
-    var10 = 99999;
-    var9 = 'zIndex';
-    var8[var9] = var10;
-    var3.overlayView = var8;
-    var8 = var7.absoluteFillObject;
+    var9 = {};
+    var13 = var8.absoluteFillObject;
+    var14 = var9;
+    var10 = copyDataProperties(var14, var13);
+    var11 = 99999;
+    var10 = 'zIndex';
+    var9[var10] = var11;
+    var3.overlayView = var9;
+    var8 = var8.absoluteFillObject;
     var3.wrapperView = var8;
     var3 = var6.bind(var7)(var3);
     var _closure1_slot7 = var3;
@@ -66,7 +69,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = _closure1_slot6;
         var1 = _closure1_slot0;
         var2 = _closure1_slot2;
-        var0 = 3;
+        var0 = 4;
         var0 = var2[var0];
         var3 = undefined;
         var0 = var1.bind(var3)(var0);
@@ -83,62 +86,65 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var _closure1_slot10 = var3;
-    var3 = 8;
+    var3 = 9;
     var3 = var5[var3];
     var5 = var4.bind(var0)(var3);
     var4 = var5.fileFinishedImporting;
     var3 = 'design/components/ContextMenu/native/ContextMenuContainer.native.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function() {
-        _fun46940: for (var _fun46940_ip = 0;;) switch (_fun46940_ip) {
+        _fun47100: for (var _fun47100_ip = 0;;) switch (_fun47100_ip) {
             case 0:
-                var2 = _closure1_slot0;
-                var3 = _closure1_slot2;
-                var1 = 4;
-                var1 = var3[var1];
+                var1 = _closure1_slot7;
                 var3 = undefined;
+                var7 = var1.bind(var3)();
+                var _closure2_slot0 = var7;
+                var2 = _closure1_slot0;
+                var5 = _closure1_slot2;
+                var1 = 5;
+                var1 = var5[var1];
                 var2 = var2.bind(var3)(var1);
                 var1 = var2.useActiveContextMenu;
                 var6 = var1.bind(var2)();
                 var2 = null;
                 if (!(var2 == var6)) {
-                    _fun46940_ip = 49;
-                    continue _fun46940
+                    _fun47100_ip = 61;
+                    continue _fun47100
                 }
-            case 43:
+            case 55:
                 var5 = _closure1_slot8;
-                _fun46940_ip = 60;
-                continue _fun46940;
-            case 49:
+                _fun47100_ip = 72;
+                continue _fun47100;
+            case 61:
                 var1 = new Array(1);
                 var1[0] = var6;
                 var5 = var1;
-            case 60:
-                var7 = var2 == var6;
+            case 72:
+                var8 = var2 == var6;
                 var1 = undefined;
-                if (var7) {
-                    _fun46940_ip = 75;
-                    continue _fun46940
+                if (var8) {
+                    _fun47100_ip = 87;
+                    continue _fun47100
                 }
-            case 69:
+            case 81:
                 var1 = var6.requestClose;
-            case 75:
+            case 87:
                 if (!(var2 == var1)) {
-                    _fun46940_ip = 83;
-                    continue _fun46940
+                    _fun47100_ip = 95;
+                    continue _fun47100
                 }
-            case 79:
+            case 91:
                 var1 = _closure1_slot9;
-            case 83:
-                var _closure2_slot0 = var1;
+            case 95:
+                var _closure2_slot1 = var1;
                 var6 = _closure1_slot3;
-                var8 = var6.useEffect;
-                var7 = function() { // Environment: var0
+                var9 = var6.useEffect;
+                var8 = function() { // Environment: var0
                     var4 = _closure1_slot4;
                     var3 = var4.addListener;
                     var5 = _closure1_slot0;
                     var2 = _closure1_slot2;
-                    var1 = 4;
+                    var1 = 5;
                     var2 = var2[var1];
                     var1 = undefined;
                     var1 = var5.bind(var1)(var2);
@@ -156,62 +162,66 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var2 = new Array(0);
-                var2 = var8.bind(var6)(var7, var2);
-                var7 = var6.useCallback;
+                var2 = var9.bind(var6)(var8, var2);
+                var8 = var6.useCallback;
                 var2 = new Array(1);
                 var2[0] = var1;
                 var1 = function() { // Environment: var0
-                    var2 = _closure2_slot0;
+                    var2 = _closure2_slot1;
                     var0 = undefined;
                     var1 = true;
                     var1 = var2.bind(var0)(var1);
                     return var0;
                 };
-                var7 = var7.bind(var6)(var1, var2);
-                var _closure2_slot1 = var7;
+                var8 = var8.bind(var6)(var1, var2);
+                var _closure2_slot2 = var8;
                 var2 = var6.useCallback;
-                var1 = new Array(1);
-                var1[0] = var7;
+                var1 = new Array(3);
+                var1[0] = var8;
+                var8 = var7.overlayView;
+                var1[1] = var8;
+                var7 = var7.wrapperView;
+                var1[2] = var7;
                 var0 = function(arg0, arg1) { // Environment: var0
-                    _fun46944: for (var _fun46944_ip = 0;;) switch (_fun46944_ip) {
+                    _fun47104: for (var _fun47104_ip = 0;;) switch (_fun47104_ip) {
                         case 0:
                             var3 = _closure1_slot6;
                             var1 = _closure1_slot1;
                             var2 = _closure1_slot2;
-                            var0 = 5;
+                            var0 = 6;
                             var0 = var2[var0];
                             var2 = undefined;
                             var1 = var1.bind(var2)(var0);
                             var0 = {};
-                            var4 = _closure1_slot7;
+                            var4 = _closure2_slot0;
                             var4 = var4.overlayView;
                             var0.style = var4;
                             var5 = _closure1_slot5;
                             var4 = {};
                             var7 = arg1;
-                            var9 = var7.length;
+                            var10 = var7.length;
                             var7 = 'auto';
                             var8 = 0;
-                            if (!(var8 === var9)) {
-                                _fun46944_ip = 73;
-                                continue _fun46944
+                            if (!(var8 === var10)) {
+                                _fun47104_ip = 76;
+                                continue _fun47104
                             }
-                        case 69:
+                        case 72:
                             var7 = 'none';
-                        case 73:
+                        case 76:
                             var4.pointerEvents = var7;
-                            var7 = _closure1_slot7;
+                            var7 = _closure2_slot0;
                             var7 = var7.wrapperView;
                             var4.style = var7;
                             var8 = _closure1_slot6;
                             var7 = _closure1_slot0;
-                            var9 = _closure1_slot2;
-                            var6 = 6;
-                            var6 = var9[var6];
+                            var10 = _closure1_slot2;
+                            var6 = 7;
+                            var6 = var10[var6];
                             var6 = var7.bind(var2)(var6);
                             var7 = var6.Dialog;
                             var6 = {};
-                            var9 = _closure2_slot1;
+                            var9 = _closure2_slot2;
                             var6.onDismiss = var9;
                             var9 = arg0;
                             var6.children = var9;
@@ -227,7 +237,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = _closure1_slot6;
                 var1 = _closure1_slot0;
                 var7 = _closure1_slot2;
-                var0 = 7;
+                var0 = 8;
                 var0 = var7[var0];
                 var0 = var1.bind(var3)(var0);
                 var1 = var0.TransitionGroup;
@@ -244,4 +254,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.ContextMenuContainer = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 5244, 5246, 4025, 4071, 4023, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 5274, 5276, 4025, 4071, 4023, 2]);

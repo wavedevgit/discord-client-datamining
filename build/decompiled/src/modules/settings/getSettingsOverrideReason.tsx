@@ -7,21 +7,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
     var3 = function arg0() {
-        _fun84588: for (var _fun84588_ip = 0;;) switch (_fun84588_ip) {
+        _fun85677: for (var _fun85677_ip = 0;;) switch (_fun85677_ip) {
             case 0:
                 var2 = arg0;
                 var1 = _closure1_slot3;
                 var1 = var1.REDUCED_MOTION;
                 if (!(var1 !== var2)) {
-                    _fun84588_ip = 99;
-                    continue _fun84588
+                    _fun85677_ip = 99;
+                    continue _fun85677
                 }
             case 20:
                 var1 = _closure1_slot3;
                 var1 = var1.REDUCED_MOTION_STICKERS;
                 if (!(var1 !== var2)) {
-                    _fun84588_ip = 38;
-                    continue _fun84588
+                    _fun85677_ip = 38;
+                    continue _fun85677
                 }
             case 34:
                 var1 = undefined;
@@ -114,4 +114,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useSettingsOverrideReason = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1349, 1351, 1234, 566, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1349, 1351, 1235, 566, 2]);

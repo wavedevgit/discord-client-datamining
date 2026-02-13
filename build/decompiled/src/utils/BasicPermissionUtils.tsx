@@ -71,7 +71,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = 'asBigFlag';
         var0.key = var5;
         var1 = function arg0() {
-            _fun24951: for (var _fun24951_ip = 0;;) switch (_fun24951_ip) {
+            _fun24978: for (var _fun24978_ip = 0;;) switch (_fun24978_ip) {
                 case 0:
                     var1 = arg0;
                     var0 = this;
@@ -81,8 +81,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = var0.cache;
                     var2 = var3.bind(var4)(var2, var1);
                     if (var2) {
-                        _fun24951_ip = 81;
-                        continue _fun24951
+                        _fun24978_ip = 81;
+                        continue _fun24978
                     }
                 case 35:
                     var3 = var0.cache;

@@ -11,8 +11,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         '__packager_asset': true,
         'httpServerLocation': '/assets/.cache/intl/bW9kdWxlcw==',
         'scales': null,
-        'hash': '9e1c7ec6e2feef116655dd0ffe070aec',
-        'name': 'nl.messages.9e1c7ec6e2feef116655dd0ffe070aec.compiled.messages',
+        'hash': 'a457124373a9c6ecc9142346687602ae',
+        'name': 'ja.messages.a457124373a9c6ecc9142346687602ae.compiled.messages',
         'type': 'jsona'
     };
     var4 = [1];
@@ -21,4 +21,4 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = module;
     var1.exports = var2;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1239]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1240]);

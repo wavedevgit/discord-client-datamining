@@ -29,23 +29,23 @@ public abstract class CronetProvider {
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        public CronetProvider f41092a;
+        public CronetProvider f41660a;
 
         /* renamed from: b  reason: collision with root package name */
-        public a.b f41093b;
+        public a.b f41661b;
 
         a() {
         }
 
         public boolean equals(Object obj) {
-            if ((obj instanceof a) && this.f41092a.equals(((a) obj).f41092a)) {
+            if ((obj instanceof a) && this.f41660a.equals(((a) obj).f41660a)) {
                 return true;
             }
             return false;
         }
 
         public int hashCode() {
-            return this.f41092a.hashCode();
+            return this.f41660a.hashCode();
         }
     }
 
@@ -79,8 +79,8 @@ public abstract class CronetProvider {
         try {
             Constructor constructor = context.getClassLoader().loadClass(str).asSubclass(CronetProvider.class).getConstructor(Context.class);
             a aVar = new a();
-            aVar.f41092a = (CronetProvider) constructor.newInstance(context);
-            aVar.f41093b = bVar;
+            aVar.f41660a = (CronetProvider) constructor.newInstance(context);
+            aVar.f41661b = bVar;
             set.add(aVar);
             return true;
         } catch (ClassNotFoundException e10) {
@@ -116,7 +116,7 @@ public abstract class CronetProvider {
     public static List<CronetProvider> getAllProviders(Context context) {
         ArrayList arrayList = new ArrayList();
         for (a aVar : getAllProviderInfos(context)) {
-            arrayList.add(aVar.f41092a);
+            arrayList.add(aVar.f41660a);
         }
         return Collections.unmodifiableList(arrayList);
     }

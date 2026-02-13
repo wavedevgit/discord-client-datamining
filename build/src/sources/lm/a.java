@@ -15,35 +15,35 @@ import kotlin.text.Charsets;
 public final class a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Uri f35901a;
+    private final Uri f36469a;
 
     /* renamed from: b  reason: collision with root package name */
-    private String f35902b;
+    private String f36470b;
 
     /* renamed from: c  reason: collision with root package name */
-    private Long f35903c;
+    private Long f36471c;
 
     /* renamed from: d  reason: collision with root package name */
-    private String f35904d;
+    private String f36472d;
 
     /* renamed from: e  reason: collision with root package name */
-    private String f35905e;
+    private String f36473e;
 
     /* renamed from: f  reason: collision with root package name */
-    private String[] f35906f;
+    private String[] f36474f;
 
     /* renamed from: g  reason: collision with root package name */
-    private String f35907g;
+    private String f36475g;
 
     /* renamed from: h  reason: collision with root package name */
-    private String f35908h;
+    private String f36476h;
 
     /* renamed from: i  reason: collision with root package name */
-    private Boolean f35909i;
+    private Boolean f36477i;
 
     public a(Uri forUri) {
         Intrinsics.checkNotNullParameter(forUri, "forUri");
-        this.f35901a = forUri;
+        this.f36469a = forUri;
     }
 
     private final ReadableMap d() {
@@ -51,14 +51,14 @@ public final class a {
         String str;
         WritableMap createMap = Arguments.createMap();
         Intrinsics.checkNotNullExpressionValue(createMap, "createMap(...)");
-        createMap.putString(StackTraceHelper.NAME_KEY, this.f35902b);
-        createMap.putString("uri", this.f35901a.toString());
-        if (this.f35903c != null) {
+        createMap.putString(StackTraceHelper.NAME_KEY, this.f36470b);
+        createMap.putString("uri", this.f36469a.toString());
+        if (this.f36471c != null) {
             createMap.putDouble("size", l10.longValue());
         } else {
             createMap.putNull("size");
         }
-        String str2 = this.f35904d;
+        String str2 = this.f36472d;
         String str3 = null;
         if (str2 != null) {
             str = str2.toLowerCase(Locale.ROOT);
@@ -67,13 +67,13 @@ public final class a {
             str = null;
         }
         createMap.putString("type", str);
-        String str4 = this.f35904d;
+        String str4 = this.f36472d;
         if (str4 != null) {
             str3 = str4.toLowerCase(Locale.ROOT);
             Intrinsics.checkNotNullExpressionValue(str3, "toLowerCase(...)");
         }
         createMap.putString("nativeType", str3);
-        String[] strArr = this.f35906f;
+        String[] strArr = this.f36474f;
         if (strArr != null) {
             WritableArray createArray = Arguments.createArray();
             Intrinsics.checkNotNullExpressionValue(createArray, "createArray(...)");
@@ -89,14 +89,14 @@ public final class a {
         } else {
             createMap.putNull("convertibleToMimeTypes");
         }
-        createMap.putString("error", this.f35905e);
-        Boolean bool = this.f35909i;
+        createMap.putString("error", this.f36473e);
+        Boolean bool = this.f36477i;
         if (bool != null) {
             createMap.putBoolean("isVirtual", bool.booleanValue());
         } else {
             createMap.putNull("isVirtual");
         }
-        String str6 = this.f35907g;
+        String str6 = this.f36475g;
         if (str6 != null) {
             byte[] bytes = str6.getBytes(Charsets.UTF_8);
             Intrinsics.checkNotNullExpressionValue(bytes, "getBytes(...)");
@@ -105,7 +105,7 @@ public final class a {
             createMap.putString("bookmark", encodeToString);
             return createMap;
         }
-        String str7 = this.f35908h;
+        String str7 = this.f36476h;
         if (str7 != null) {
             createMap.putString("bookmarkStatus", "error");
             createMap.putString("bookmarkError", str7);
@@ -115,12 +115,12 @@ public final class a {
 
     public final a a(Uri bookmark) {
         Intrinsics.checkNotNullParameter(bookmark, "bookmark");
-        this.f35907g = bookmark.toString();
+        this.f36475g = bookmark.toString();
         return this;
     }
 
     public final a b(String str) {
-        this.f35908h = str;
+        this.f36476h = str;
         return this;
     }
 
@@ -129,43 +129,43 @@ public final class a {
     }
 
     public final Uri e() {
-        return this.f35901a;
+        return this.f36469a;
     }
 
     public final boolean f() {
-        if (this.f35904d != null) {
+        if (this.f36472d != null) {
             return true;
         }
         return false;
     }
 
     public final a g(String str) {
-        this.f35905e = str;
+        this.f36473e = str;
         return this;
     }
 
     public final a h(String str) {
-        this.f35904d = str;
+        this.f36472d = str;
         return this;
     }
 
     public final a i(String str) {
-        this.f35902b = str;
+        this.f36470b = str;
         return this;
     }
 
     public final a j(String[] strArr) {
-        this.f35906f = strArr;
+        this.f36474f = strArr;
         return this;
     }
 
     public final a k(Long l10) {
-        this.f35903c = l10;
+        this.f36471c = l10;
         return this;
     }
 
     public final a l(boolean z10) {
-        this.f35909i = Boolean.valueOf(z10);
+        this.f36477i = Boolean.valueOf(z10);
         return this;
     }
 }

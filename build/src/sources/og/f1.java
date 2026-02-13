@@ -22,7 +22,7 @@ public final class f1 extends b1 {
     }
 
     public final i1 g() {
-        this.f39107c = true;
-        return i1.g(this.f39105a, this.f39106b);
+        this.f39675c = true;
+        return i1.g(this.f39673a, this.f39674b);
     }
 }

@@ -33,30 +33,30 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'uikit-native/SpoilerIcon.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun89029: for (var _fun89029_ip = 0;;) switch (_fun89029_ip) {
+        _fun90048: for (var _fun90048_ip = 0;;) switch (_fun90048_ip) {
             case 0:
                 var2 = arg0;
                 var11 = var2.width;
                 var3 = undefined;
                 if (!(var11 === var3)) {
-                    _fun89029_ip = 17;
-                    continue _fun89029
+                    _fun90048_ip = 17;
+                    continue _fun90048
                 }
             case 14:
                 var11 = 24;
             case 17:
                 var10 = var2.height;
                 if (!(var10 === var3)) {
-                    _fun89029_ip = 29;
-                    continue _fun89029
+                    _fun90048_ip = 29;
+                    continue _fun90048
                 }
             case 26:
                 var10 = 24;
             case 29:
                 var8 = var2.color;
                 if (!(var8 === var3)) {
-                    _fun89029_ip = 44;
-                    continue _fun89029
+                    _fun90048_ip = 44;
+                    continue _fun90048
                 }
             case 38:
                 var8 = 'currentColor';

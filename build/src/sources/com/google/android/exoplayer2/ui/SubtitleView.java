@@ -87,21 +87,21 @@ public final class SubtitleView extends FrameLayout {
 
     private float getUserCaptionFontScale() {
         CaptioningManager captioningManager;
-        if (w0.f39038a < 19 || isInEditMode() || (captioningManager = (CaptioningManager) getContext().getSystemService("captioning")) == null || !captioningManager.isEnabled()) {
+        if (w0.f39606a < 19 || isInEditMode() || (captioningManager = (CaptioningManager) getContext().getSystemService("captioning")) == null || !captioningManager.isEnabled()) {
             return 1.0f;
         }
         return captioningManager.getFontScale();
     }
 
     private le.b getUserCaptionStyle() {
-        if (w0.f39038a >= 19 && !isInEditMode()) {
+        if (w0.f39606a >= 19 && !isInEditMode()) {
             CaptioningManager captioningManager = (CaptioningManager) getContext().getSystemService("captioning");
             if (captioningManager != null && captioningManager.isEnabled()) {
                 return le.b.a(captioningManager.getUserStyle());
             }
-            return le.b.f35717g;
+            return le.b.f36285g;
         }
-        return le.b.f35717g;
+        return le.b.f36285g;
     }
 
     private <T extends View & a> void setView(T t10) {
@@ -178,7 +178,7 @@ public final class SubtitleView extends FrameLayout {
     public SubtitleView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
         this.f13905d = Collections.EMPTY_LIST;
-        this.f13906e = le.b.f35717g;
+        this.f13906e = le.b.f36285g;
         this.f13907i = 0;
         this.f13908o = 0.0533f;
         this.f13909p = 0.08f;

@@ -8,19 +8,19 @@ import java.util.Map;
 final class n implements z {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Map f37343d;
+    private final Map f37911d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final bu.p f37344e;
+    private final bu.p f37912e;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public n(bu.k kVar, bu.p pVar) {
-        this.f37343d = Collections.singletonMap("calendrical", kVar);
-        this.f37344e = pVar;
+        this.f37911d = Collections.singletonMap("calendrical", kVar);
+        this.f37912e = pVar;
     }
 
     private bu.k b(bu.q qVar) {
-        return (bu.k) this.f37343d.get("calendrical");
+        return (bu.k) this.f37911d.get("calendrical");
     }
 
     private static Integer j(long j10) {
@@ -63,20 +63,20 @@ final class n implements z {
     /* renamed from: e */
     public Integer m(bu.q qVar) {
         bu.k b10 = b(qVar);
-        return j(b10.c(((bu.q) b10.b(b10.a())).C(this.f37344e, 1)));
+        return j(b10.c(((bu.q) b10.b(b10.a())).C(this.f37912e, 1)));
     }
 
     @Override // bu.z
     /* renamed from: f */
     public Integer q(bu.q qVar) {
         bu.k b10 = b(qVar);
-        return j(b10.c(((bu.q) b10.b(b10.d())).C(this.f37344e, 1)));
+        return j(b10.c(((bu.q) b10.b(b10.d())).C(this.f37912e, 1)));
     }
 
     @Override // bu.z
     /* renamed from: g */
     public Integer y(bu.q qVar) {
-        return j(b(qVar).c(qVar.C(this.f37344e, 1)));
+        return j(b(qVar).c(qVar.C(this.f37912e, 1)));
     }
 
     @Override // bu.z

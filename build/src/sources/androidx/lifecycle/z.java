@@ -162,12 +162,12 @@ public abstract class z {
                                     return f10;
                                 }
                             }
-                            return Unit.f31988a;
+                            return Unit.f32556a;
                         }
 
                         @Override // kotlin.jvm.functions.Function2
                         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-                            return ((C0058a) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
+                            return ((C0058a) create(coroutineScope, continuation)).invokeSuspend(Unit.f32556a);
                         }
                     }
 
@@ -245,9 +245,9 @@ public abstract class z {
                         L54:
                             r0 = r7
                         L55:
-                            kotlin.Unit r7 = kotlin.Unit.f31988a     // Catch: java.lang.Throwable -> L17
+                            kotlin.Unit r7 = kotlin.Unit.f32556a     // Catch: java.lang.Throwable -> L17
                             r0.c(r4)
-                            kotlin.Unit r7 = kotlin.Unit.f31988a
+                            kotlin.Unit r7 = kotlin.Unit.f32556a
                             return r7
                         L5d:
                             r0 = move-exception
@@ -263,7 +263,7 @@ public abstract class z {
 
                     @Override // kotlin.jvm.functions.Function2
                     public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-                        return ((C0057a) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
+                        return ((C0057a) create(coroutineScope, continuation)).invokeSuspend(Unit.f32556a);
                     }
                 }
 
@@ -298,8 +298,8 @@ public abstract class z {
                     }
                     if (event == Lifecycle.a.ON_DESTROY) {
                         CancellableContinuation cancellableContinuation = this.f4720p;
-                        Result.a aVar = Result.f31985e;
-                        cancellableContinuation.resumeWith(Result.b(Unit.f31988a));
+                        Result.a aVar = Result.f32553e;
+                        cancellableContinuation.resumeWith(Result.b(Unit.f32556a));
                     }
                 }
             }
@@ -366,7 +366,7 @@ public abstract class z {
                     androidx.lifecycle.Lifecycle$State r14 = r14.b()
                     androidx.lifecycle.Lifecycle$State r1 = androidx.lifecycle.Lifecycle.State.f4553d
                     if (r14 != r1) goto L47
-                    kotlin.Unit r14 = kotlin.Unit.f31988a
+                    kotlin.Unit r14 = kotlin.Unit.f32556a
                     return r14
                 L47:
                     kotlin.jvm.internal.Ref$ObjectRef r6 = new kotlin.jvm.internal.Ref$ObjectRef
@@ -427,7 +427,7 @@ public abstract class z {
                     androidx.lifecycle.Lifecycle r0 = r13.f4712s
                     r0.d(r14)
                 Lbd:
-                    kotlin.Unit r14 = kotlin.Unit.f31988a
+                    kotlin.Unit r14 = kotlin.Unit.f32556a
                     return r14
                 Lc0:
                     T r0 = r4.element
@@ -448,7 +448,7 @@ public abstract class z {
 
             @Override // kotlin.jvm.functions.Function2
             public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-                return ((C0055a) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
+                return ((C0055a) create(coroutineScope, continuation)).invokeSuspend(Unit.f32556a);
             }
         }
 
@@ -487,25 +487,25 @@ public abstract class z {
                     return f10;
                 }
             }
-            return Unit.f31988a;
+            return Unit.f32556a;
         }
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((a) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
+            return ((a) create(coroutineScope, continuation)).invokeSuspend(Unit.f32556a);
         }
     }
 
     public static final Object a(Lifecycle lifecycle, Lifecycle.State state, Function2 function2, Continuation continuation) {
         if (state != Lifecycle.State.f4554e) {
             if (lifecycle.b() == Lifecycle.State.f4553d) {
-                return Unit.f31988a;
+                return Unit.f32556a;
             }
             Object g10 = kotlinx.coroutines.i.g(new a(lifecycle, state, function2, null), continuation);
             if (g10 == gs.b.f()) {
                 return g10;
             }
-            return Unit.f31988a;
+            return Unit.f32556a;
         }
         throw new IllegalArgumentException("repeatOnLifecycle cannot start work with the INITIALIZED lifecycle state.");
     }
@@ -515,6 +515,6 @@ public abstract class z {
         if (a10 == gs.b.f()) {
             return a10;
         }
-        return Unit.f31988a;
+        return Unit.f32556a;
     }
 }

@@ -9,9 +9,9 @@ public final class j0 extends f0 {
 
     public final j0 a(Object obj) {
         obj.getClass();
-        int i10 = this.f46652b;
+        int i10 = this.f47220b;
         int i11 = i10 + 1;
-        Object[] objArr = this.f46651a;
+        Object[] objArr = this.f47219a;
         int length = objArr.length;
         if (length < i11) {
             int i12 = length + (length >> 1) + 1;
@@ -22,21 +22,21 @@ public final class j0 extends f0 {
             if (i12 < 0) {
                 i12 = Integer.MAX_VALUE;
             }
-            this.f46651a = Arrays.copyOf(objArr, i12);
-            this.f46653c = false;
-        } else if (this.f46653c) {
-            this.f46651a = (Object[]) objArr.clone();
-            this.f46653c = false;
+            this.f47219a = Arrays.copyOf(objArr, i12);
+            this.f47221c = false;
+        } else if (this.f47221c) {
+            this.f47219a = (Object[]) objArr.clone();
+            this.f47221c = false;
         }
-        Object[] objArr2 = this.f46651a;
-        int i13 = this.f46652b;
-        this.f46652b = i13 + 1;
+        Object[] objArr2 = this.f47219a;
+        int i13 = this.f47220b;
+        this.f47220b = i13 + 1;
         objArr2[i13] = obj;
         return this;
     }
 
     public final m0 b() {
-        this.f46653c = true;
-        return m0.g(this.f46651a, this.f46652b);
+        this.f47221c = true;
+        return m0.g(this.f47219a, this.f47220b);
     }
 }

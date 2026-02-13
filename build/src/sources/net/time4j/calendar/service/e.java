@@ -14,23 +14,23 @@ public abstract class e extends d implements l, t {
     private static final long serialVersionUID = -2452569351302286113L;
 
     /* renamed from: o  reason: collision with root package name */
-    private final transient Class f37415o;
+    private final transient Class f37983o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final transient String f37416p;
+    private final transient String f37984p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final transient v f37417q;
+    private final transient v f37985q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final transient v f37418r;
+    private final transient v f37986r;
 
     public e(String str, Class cls, Class cls2, char c10) {
         super(str, cls, c10, N(c10));
-        this.f37415o = cls2;
-        this.f37416p = H(cls);
-        this.f37417q = null;
-        this.f37418r = null;
+        this.f37983o = cls2;
+        this.f37984p = H(cls);
+        this.f37985q = null;
+        this.f37986r = null;
     }
 
     private static String H(Class cls) {
@@ -59,7 +59,7 @@ public abstract class e extends d implements l, t {
             if (K()) {
                 return c10.b(vVar);
             }
-            return c10.n(name(), this.f37415o, new String[0]);
+            return c10.n(name(), this.f37983o, new String[0]);
         }
     }
 
@@ -68,9 +68,9 @@ public abstract class e extends d implements l, t {
             if (M()) {
                 return "iso8601";
             }
-            return this.f37416p;
+            return this.f37984p;
         }
-        return (String) dVar.b(cu.a.f21110b, this.f37416p);
+        return (String) dVar.b(cu.a.f21110b, this.f37984p);
     }
 
     protected boolean J(o oVar) {
@@ -135,7 +135,7 @@ public abstract class e extends d implements l, t {
 
     @Override // bu.p
     public Class getType() {
-        return this.f37415o;
+        return this.f37983o;
     }
 
     @Override // cu.l

@@ -11,44 +11,44 @@ import tu.n;
 public final class d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final g f45697a;
+    private final g f46265a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final okhttp3.a f45698b;
+    private final okhttp3.a f46266b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final e f45699c;
+    private final e f46267c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final okhttp3.e f45700d;
+    private final okhttp3.e f46268d;
 
     /* renamed from: e  reason: collision with root package name */
-    private j.b f45701e;
+    private j.b f46269e;
 
     /* renamed from: f  reason: collision with root package name */
-    private j f45702f;
+    private j f46270f;
 
     /* renamed from: g  reason: collision with root package name */
-    private int f45703g;
+    private int f46271g;
 
     /* renamed from: h  reason: collision with root package name */
-    private int f45704h;
+    private int f46272h;
 
     /* renamed from: i  reason: collision with root package name */
-    private int f45705i;
+    private int f46273i;
 
     /* renamed from: j  reason: collision with root package name */
-    private k f45706j;
+    private k f46274j;
 
     public d(g connectionPool, okhttp3.a address, e call, okhttp3.e eventListener) {
         Intrinsics.checkNotNullParameter(connectionPool, "connectionPool");
         Intrinsics.checkNotNullParameter(address, "address");
         Intrinsics.checkNotNullParameter(call, "call");
         Intrinsics.checkNotNullParameter(eventListener, "eventListener");
-        this.f45697a = connectionPool;
-        this.f45698b = address;
-        this.f45699c = call;
-        this.f45700d = eventListener;
+        this.f46265a = connectionPool;
+        this.f46266b = address;
+        this.f46267c = call;
+        this.f46268d = eventListener;
     }
 
     /* JADX WARN: Removed duplicated region for block: B:56:0x012c  */
@@ -78,8 +78,8 @@ public final class d {
                 return b10;
             }
             b10.z();
-            if (this.f45706j == null) {
-                j.b bVar = this.f45701e;
+            if (this.f46274j == null) {
+                j.b bVar = this.f46269e;
                 boolean z14 = true;
                 if (bVar != null) {
                     z12 = bVar.b();
@@ -89,7 +89,7 @@ public final class d {
                 if (z12) {
                     continue;
                 } else {
-                    j jVar = this.f45702f;
+                    j jVar = this.f46270f;
                     if (jVar != null) {
                         z14 = jVar.a();
                     }
@@ -108,14 +108,14 @@ public final class d {
 
     private final k f() {
         f l10;
-        if (this.f45703g > 1 || this.f45704h > 1 || this.f45705i > 0 || (l10 = this.f45699c.l()) == null) {
+        if (this.f46271g > 1 || this.f46272h > 1 || this.f46273i > 0 || (l10 = this.f46267c.l()) == null) {
             return null;
         }
         synchronized (l10) {
             if (l10.q() != 0) {
                 return null;
             }
-            if (!mu.e.j(l10.A().a().l(), this.f45698b.l())) {
+            if (!mu.e.j(l10.A().a().l(), this.f46266b.l())) {
                 return null;
             }
             return l10.A();
@@ -147,24 +147,24 @@ public final class d {
     }
 
     public final okhttp3.a d() {
-        return this.f45698b;
+        return this.f46266b;
     }
 
     public final boolean e() {
         j jVar;
-        if (this.f45703g == 0 && this.f45704h == 0 && this.f45705i == 0) {
+        if (this.f46271g == 0 && this.f46272h == 0 && this.f46273i == 0) {
             return false;
         }
-        if (this.f45706j != null) {
+        if (this.f46274j != null) {
             return true;
         }
         k f10 = f();
         if (f10 != null) {
-            this.f45706j = f10;
+            this.f46274j = f10;
             return true;
         }
-        j.b bVar = this.f45701e;
-        if ((bVar != null && bVar.b()) || (jVar = this.f45702f) == null) {
+        j.b bVar = this.f46269e;
+        if ((bVar != null && bVar.b()) || (jVar = this.f46270f) == null) {
             return true;
         }
         return jVar.a();
@@ -172,7 +172,7 @@ public final class d {
 
     public final boolean g(HttpUrl url) {
         Intrinsics.checkNotNullParameter(url, "url");
-        HttpUrl l10 = this.f45698b.l();
+        HttpUrl l10 = this.f46266b.l();
         if (url.o() == l10.o() && Intrinsics.areEqual(url.i(), l10.i())) {
             return true;
         }
@@ -181,13 +181,13 @@ public final class d {
 
     public final void h(IOException e10) {
         Intrinsics.checkNotNullParameter(e10, "e");
-        this.f45706j = null;
-        if ((e10 instanceof n) && ((n) e10).f50295d == tu.b.REFUSED_STREAM) {
-            this.f45703g++;
+        this.f46274j = null;
+        if ((e10 instanceof n) && ((n) e10).f50863d == tu.b.REFUSED_STREAM) {
+            this.f46271g++;
         } else if (e10 instanceof tu.a) {
-            this.f45704h++;
+            this.f46272h++;
         } else {
-            this.f45705i++;
+            this.f46273i++;
         }
     }
 }

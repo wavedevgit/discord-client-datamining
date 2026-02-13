@@ -26,7 +26,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var0)(var3);
     var6 = var3.Pressable;
     var _closure1_slot3 = var6;
-    var7 = var3.StyleSheet;
+    var9 = var3.StyleSheet;
     var3 = var3.View;
     var _closure1_slot4 = var3;
     var10 = 2;
@@ -38,10 +38,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot6 = var3;
     var3 = 3;
     var3 = var5[var3];
-    var8 = var4.bind(var0)(var3);
-    var6 = var8.createStyles;
+    var7 = var4.bind(var0)(var3);
+    var6 = var7.createStyles;
     var3 = {};
-    var9 = {
+    var8 = {
         'aspectRatio': 1,
         'borderWidth': 1,
         'borderRadius': null,
@@ -53,28 +53,24 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var13 = var12.bind(var0)(var13);
     var13 = var13.radii;
     var13 = var13.lg;
-    var9.borderRadius = var13;
+    var8.borderRadius = var13;
     var11 = var5[var11];
     var11 = var12.bind(var0)(var11);
     var11 = var11.colors;
     var11 = var11.BORDER_SUBTLE;
-    var9.borderColor = var11;
-    var3.card = var9;
+    var8.borderColor = var11;
+    var3.card = var8;
     var11 = 'center';
-    var9 = {
+    var8 = {
         'width': '100%',
         'height': '100%',
         'justifyContent': 'center',
         'alignItems': 'center',
         'overflow': 'hidden'
     };
-    var3.cardContent = var9;
-    var3 = var6.bind(var8)(var3);
-    var _closure1_slot7 = var3;
-    var6 = var7.create;
-    var3 = {};
+    var3.cardContent = var8;
     var8 = {};
-    var15 = var7.absoluteFillObject;
+    var15 = var9.absoluteFillObject;
     var16 = var8;
     var9 = copyDataProperties(var16, var15);
     var9 = 'justifyContent';
@@ -96,7 +92,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8.opacity = var9;
     var3.ownedCard = var8;
     var3 = var6.bind(var7)(var3);
-    var _closure1_slot8 = var3;
+    var _closure1_slot7 = var3;
     var3 = 8;
     var3 = var5[var3];
     var5 = var4.bind(var0)(var3);
@@ -104,7 +100,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/wishlists/native/WishlistItemCardBase.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun71033: for (var _fun71033_ip = 0;;) switch (_fun71033_ip) {
+        _fun87802: for (var _fun87802_ip = 0;;) switch (_fun87802_ip) {
             case 0:
                 var0 = arg0;
                 var8 = var0.onPress;
@@ -114,8 +110,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = var0.isOwned;
                 var4 = undefined;
                 if (!(var11 === var4)) {
-                    _fun71033_ip = 39;
-                    continue _fun71033
+                    _fun87802_ip = 39;
+                    continue _fun87802
                 }
             case 37:
                 var11 = false;
@@ -134,8 +130,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var0 != var2;
                 var9 = 170;
                 if (!var3) {
-                    _fun71033_ip = 101;
-                    continue _fun71033
+                    _fun87802_ip = 101;
+                    continue _fun87802
                 }
             case 98:
                 var9 = var2;
@@ -143,8 +139,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13 = _closure1_slot5;
                 var5 = _closure1_slot4;
                 var2 = {};
-                var3 = _closure1_slot8;
-                var3 = var3.ownedOverlay;
+                var3 = var6.ownedOverlay;
                 var2.style = var3;
                 var3 = 'none';
                 var2.pointerEvents = var3;
@@ -195,13 +190,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = {};
                 var15 = var11;
                 if (!var11) {
-                    _fun71033_ip = 334;
-                    continue _fun71033
+                    _fun87802_ip = 326;
+                    continue _fun87802
                 }
-            case 324:
-                var16 = _closure1_slot8;
-                var15 = var16.ownedCard;
-            case 334:
+            case 320:
+                var15 = var6.ownedCard;
+            case 326:
                 var10.style = var15;
                 var14 = var14.bind(var4)();
                 var10.children = var14;
@@ -209,20 +203,20 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = new Array(2);
                 var10[0] = var13;
                 if (!var11) {
-                    _fun71033_ip = 366;
-                    continue _fun71033
+                    _fun87802_ip = 358;
+                    continue _fun87802
                 }
-            case 363:
+            case 355:
                 var11 = var12;
-            case 366:
+            case 358:
                 var10[1] = var11;
                 var2.children = var10;
                 var5 = var3.bind(var4)(var5, var2);
                 if (!(var0 != var8)) {
-                    _fun71033_ip = 469;
-                    continue _fun71033
+                    _fun87802_ip = 461;
+                    continue _fun87802
                 }
-            case 384:
+            case 376:
                 var3 = _closure1_slot5;
                 var2 = _closure1_slot3;
                 var0 = {};
@@ -239,18 +233,18 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.accessibilityElementsHidden = var7;
                 var8 = 'auto';
                 if (!var7) {
-                    _fun71033_ip = 452;
-                    continue _fun71033
+                    _fun87802_ip = 444;
+                    continue _fun87802
                 }
-            case 446:
+            case 438:
                 var8 = 'no-hide-descendants';
-            case 452:
+            case 444:
                 var0.importantForAccessibility = var8;
                 var0.children = var5;
                 var0 = var3.bind(var4)(var2, var0);
-                _fun71033_ip = 540;
-                continue _fun71033;
-            case 469:
+                _fun87802_ip = 532;
+                continue _fun87802;
+            case 461:
                 var3 = _closure1_slot5;
                 var2 = _closure1_slot4;
                 var1 = {};
@@ -264,19 +258,19 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1.accessibilityElementsHidden = var7;
                 var6 = 'auto';
                 if (!var7) {
-                    _fun71033_ip = 525;
-                    continue _fun71033
+                    _fun87802_ip = 517;
+                    continue _fun87802
                 }
-            case 519:
+            case 511:
                 var6 = 'no-hide-descendants';
-            case 525:
+            case 517:
                 var1.importantForAccessibility = var6;
                 var1.children = var5;
                 var0 = var3.bind(var4)(var2, var1);
-            case 540:
+            case 532:
                 return var0;
         }
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 8829, 8653, 1234, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 11336, 8343, 1235, 2]);

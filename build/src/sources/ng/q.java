@@ -4,21 +4,21 @@ package ng;
 public final class q extends i {
 
     /* renamed from: r  reason: collision with root package name */
-    static final i f37882r = new q(null, new Object[0], 0);
+    static final i f38450r = new q(null, new Object[0], 0);
 
     /* renamed from: o  reason: collision with root package name */
-    private final transient Object f37883o;
+    private final transient Object f38451o;
 
     /* renamed from: p  reason: collision with root package name */
-    final transient Object[] f37884p;
+    final transient Object[] f38452p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final transient int f37885q;
+    private final transient int f38453q;
 
     private q(Object obj, Object[] objArr, int i10) {
-        this.f37883o = obj;
-        this.f37884p = objArr;
-        this.f37885q = i10;
+        this.f38451o = obj;
+        this.f38452p = objArr;
+        this.f38453q = i10;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -60,17 +60,17 @@ public final class q extends i {
 
     @Override // ng.i
     final c a() {
-        return new p(this.f37884p, 1, this.f37885q);
+        return new p(this.f38452p, 1, this.f38453q);
     }
 
     @Override // ng.i
     final j d() {
-        return new n(this, this.f37884p, 0, this.f37885q);
+        return new n(this, this.f38452p, 0, this.f38453q);
     }
 
     @Override // ng.i
     final j e() {
-        return new o(this, new p(this.f37884p, 0, this.f37885q));
+        return new o(this, new p(this.f38452p, 0, this.f38453q));
     }
 
     /* JADX WARN: Removed duplicated region for block: B:41:0x009e A[RETURN] */
@@ -89,8 +89,8 @@ public final class q extends i {
             r10 = r0
             goto L9c
         L6:
-            int r1 = r9.f37885q
-            java.lang.Object[] r2 = r9.f37884p
+            int r1 = r9.f38453q
+            java.lang.Object[] r2 = r9.f38452p
             r3 = 1
             if (r1 != r3) goto L20
             r1 = 0
@@ -102,7 +102,7 @@ public final class q extends i {
             java.util.Objects.requireNonNull(r10)
             goto L9c
         L20:
-            java.lang.Object r1 = r9.f37883o
+            java.lang.Object r1 = r9.f38451o
             if (r1 != 0) goto L25
             goto L3
         L25:
@@ -189,6 +189,6 @@ public final class q extends i {
 
     @Override // java.util.Map
     public final int size() {
-        return this.f37885q;
+        return this.f38453q;
     }
 }

@@ -20,7 +20,7 @@ public /* synthetic */ class EmbeddedActivityInviteViewHolder$bind$1$1 extends F
     @Override // kotlin.jvm.functions.Function2
     public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2) {
         m723invokentcYbpo(((MessageId) obj).m1093unboximpl(), (LinkContentNode) obj2);
-        return Unit.f31988a;
+        return Unit.f32556a;
     }
 
     /* renamed from: invoke-ntcYbpo  reason: not valid java name */

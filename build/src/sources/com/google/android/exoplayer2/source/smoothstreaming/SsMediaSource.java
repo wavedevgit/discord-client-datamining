@@ -142,25 +142,25 @@ public final class SsMediaSource extends rd.a implements j.b {
         }
         long j11 = Long.MIN_VALUE;
         long j12 = Long.MAX_VALUE;
-        for (a.b bVar : this.K.f56365f) {
-            if (bVar.f56381k > 0) {
+        for (a.b bVar : this.K.f56933f) {
+            if (bVar.f56949k > 0) {
                 j12 = Math.min(j12, bVar.e(0));
-                j11 = Math.max(j11, bVar.e(bVar.f56381k - 1) + bVar.c(bVar.f56381k - 1));
+                j11 = Math.max(j11, bVar.e(bVar.f56949k - 1) + bVar.c(bVar.f56949k - 1));
             }
         }
         if (j12 == LongCompanionObject.MAX_VALUE) {
-            if (this.K.f56363d) {
+            if (this.K.f56931d) {
                 j10 = -9223372036854775807L;
             } else {
                 j10 = 0;
             }
             zd.a aVar = this.K;
-            boolean z10 = aVar.f56363d;
+            boolean z10 = aVar.f56931d;
             p0Var = new p0(j10, 0L, 0L, 0L, true, z10, z10, aVar, this.f13563v);
         } else {
             zd.a aVar2 = this.K;
-            if (aVar2.f56363d) {
-                long j13 = aVar2.f56367h;
+            if (aVar2.f56931d) {
+                long j13 = aVar2.f56935h;
                 if (j13 != -9223372036854775807L && j13 > 0) {
                     j12 = Math.max(j12, j11 - j13);
                 }
@@ -172,7 +172,7 @@ public final class SsMediaSource extends rd.a implements j.b {
                 }
                 p0Var = new p0(-9223372036854775807L, j15, j14, K0, true, true, true, this.K, this.f13563v);
             } else {
-                long j16 = aVar2.f56366g;
+                long j16 = aVar2.f56934g;
                 if (j16 == -9223372036854775807L) {
                     j16 = j11 - j12;
                 }
@@ -184,7 +184,7 @@ public final class SsMediaSource extends rd.a implements j.b {
     }
 
     private void J() {
-        if (!this.K.f56363d) {
+        if (!this.K.f56931d) {
             return;
         }
         this.L.postDelayed(new Runnable() { // from class: yd.a
@@ -310,7 +310,7 @@ public final class SsMediaSource extends rd.a implements j.b {
     }
 
     private SsMediaSource(MediaItem mediaItem, zd.a aVar, DataSource.Factory factory, k.a aVar2, b.a aVar3, h hVar, me.g gVar, v vVar, i iVar, long j10) {
-        oe.a.g(aVar == null || !aVar.f56363d);
+        oe.a.g(aVar == null || !aVar.f56931d);
         this.f13563v = mediaItem;
         MediaItem.h hVar2 = (MediaItem.h) oe.a.e(mediaItem.f12343e);
         this.f13562u = hVar2;

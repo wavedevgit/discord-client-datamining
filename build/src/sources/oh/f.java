@@ -15,52 +15,52 @@ import androidx.activity.BackEventCompat;
 public class f extends oh.a {
 
     /* renamed from: g  reason: collision with root package name */
-    private final float f40096g;
+    private final float f40664g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final float f40097h;
+    private final float f40665h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final float f40098i;
+    private final float f40666i;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     class a extends AnimatorListenerAdapter {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ boolean f40099a;
+        final /* synthetic */ boolean f40667a;
 
         /* renamed from: b  reason: collision with root package name */
-        final /* synthetic */ int f40100b;
+        final /* synthetic */ int f40668b;
 
         a(boolean z10, int i10) {
-            this.f40099a = z10;
-            this.f40100b = i10;
+            this.f40667a = z10;
+            this.f40668b = i10;
         }
 
         @Override // android.animation.AnimatorListenerAdapter, android.animation.Animator.AnimatorListener
         public void onAnimationEnd(Animator animator) {
-            f.this.f40081b.setTranslationX(0.0f);
-            f.this.k(0.0f, this.f40099a, this.f40100b);
+            f.this.f40649b.setTranslationX(0.0f);
+            f.this.k(0.0f, this.f40667a, this.f40668b);
         }
     }
 
     public f(View view) {
         super(view);
         Resources resources = view.getResources();
-        this.f40096g = resources.getDimension(bh.d.f6812t);
-        this.f40097h = resources.getDimension(bh.d.f6810s);
-        this.f40098i = resources.getDimension(bh.d.f6814u);
+        this.f40664g = resources.getDimension(bh.d.f6812t);
+        this.f40665h = resources.getDimension(bh.d.f6810s);
+        this.f40666i = resources.getDimension(bh.d.f6814u);
     }
 
     private boolean g(int i10, int i11) {
-        if ((Gravity.getAbsoluteGravity(i10, this.f40081b.getLayoutDirection()) & i11) == i11) {
+        if ((Gravity.getAbsoluteGravity(i10, this.f40649b.getLayoutDirection()) & i11) == i11) {
             return true;
         }
         return false;
     }
 
     private int i(boolean z10) {
-        ViewGroup.LayoutParams layoutParams = this.f40081b.getLayoutParams();
+        ViewGroup.LayoutParams layoutParams = this.f40649b.getLayoutParams();
         if (layoutParams instanceof ViewGroup.MarginLayoutParams) {
             ViewGroup.MarginLayoutParams marginLayoutParams = (ViewGroup.MarginLayoutParams) layoutParams;
             if (z10) {
@@ -76,15 +76,15 @@ public class f extends oh.a {
             return;
         }
         AnimatorSet animatorSet = new AnimatorSet();
-        animatorSet.playTogether(ObjectAnimator.ofFloat(this.f40081b, View.SCALE_X, 1.0f), ObjectAnimator.ofFloat(this.f40081b, View.SCALE_Y, 1.0f));
-        View view = this.f40081b;
+        animatorSet.playTogether(ObjectAnimator.ofFloat(this.f40649b, View.SCALE_X, 1.0f), ObjectAnimator.ofFloat(this.f40649b, View.SCALE_Y, 1.0f));
+        View view = this.f40649b;
         if (view instanceof ViewGroup) {
             ViewGroup viewGroup = (ViewGroup) view;
             for (int i10 = 0; i10 < viewGroup.getChildCount(); i10++) {
                 animatorSet.playTogether(ObjectAnimator.ofFloat(viewGroup.getChildAt(i10), View.SCALE_Y, 1.0f));
             }
         }
-        animatorSet.setDuration(this.f40084e);
+        animatorSet.setDuration(this.f40652e);
         animatorSet.start();
     }
 
@@ -96,8 +96,8 @@ public class f extends oh.a {
             z10 = false;
         }
         boolean g10 = g(i10, 3);
-        float width = (this.f40081b.getWidth() * this.f40081b.getScaleX()) + i(g10);
-        View view = this.f40081b;
+        float width = (this.f40649b.getWidth() * this.f40649b.getScaleX()) + i(g10);
+        View view = this.f40649b;
         Property property = View.TRANSLATION_X;
         if (g10) {
             width = -width;
@@ -107,7 +107,7 @@ public class f extends oh.a {
             ofFloat.addUpdateListener(animatorUpdateListener);
         }
         ofFloat.setInterpolator(new h3.b());
-        ofFloat.setDuration(ch.a.c(this.f40082c, this.f40083d, backEventCompat.a()));
+        ofFloat.setDuration(ch.a.c(this.f40650c, this.f40651d, backEventCompat.a()));
         ofFloat.addListener(new a(z10, i10));
         if (animatorListener != null) {
             ofFloat.addListener(animatorListener);
@@ -131,16 +131,16 @@ public class f extends oh.a {
         } else {
             z11 = false;
         }
-        int width = this.f40081b.getWidth();
-        int height = this.f40081b.getHeight();
+        int width = this.f40649b.getWidth();
+        int height = this.f40649b.getHeight();
         float f13 = width;
         if (f13 > 0.0f) {
             float f14 = height;
             if (f14 > 0.0f) {
-                float f15 = this.f40096g / f13;
-                float f16 = this.f40097h / f13;
-                float f17 = this.f40098i / f14;
-                View view = this.f40081b;
+                float f15 = this.f40664g / f13;
+                float f16 = this.f40665h / f13;
+                float f17 = this.f40666i / f14;
+                View view = this.f40649b;
                 if (g10) {
                     f13 = 0.0f;
                 }
@@ -152,9 +152,9 @@ public class f extends oh.a {
                 float f18 = a11 + 1.0f;
                 float a12 = 1.0f - ch.a.a(0.0f, f17, a10);
                 if (!Float.isNaN(f18) && !Float.isNaN(a12)) {
-                    this.f40081b.setScaleX(f18);
-                    this.f40081b.setScaleY(a12);
-                    View view2 = this.f40081b;
+                    this.f40649b.setScaleX(f18);
+                    this.f40649b.setScaleY(a12);
+                    View view2 = this.f40649b;
                     if (view2 instanceof ViewGroup) {
                         ViewGroup viewGroup = (ViewGroup) view2;
                         for (int i12 = 0; i12 < viewGroup.getChildCount(); i12++) {

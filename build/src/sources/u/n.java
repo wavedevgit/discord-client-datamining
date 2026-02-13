@@ -10,21 +10,21 @@ import x.y0;
 public class n {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f50324a;
+    private final String f50892a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final ExtraSupportedOutputSizeQuirk f50325b = (ExtraSupportedOutputSizeQuirk) androidx.camera.camera2.internal.compat.quirk.b.b(ExtraSupportedOutputSizeQuirk.class);
+    private final ExtraSupportedOutputSizeQuirk f50893b = (ExtraSupportedOutputSizeQuirk) androidx.camera.camera2.internal.compat.quirk.b.b(ExtraSupportedOutputSizeQuirk.class);
 
     /* renamed from: c  reason: collision with root package name */
-    private final e f50326c;
+    private final e f50894c;
 
     public n(String str) {
-        this.f50324a = str;
-        this.f50326c = new e(str);
+        this.f50892a = str;
+        this.f50894c = new e(str);
     }
 
     private void a(List list, int i10) {
-        ExtraSupportedOutputSizeQuirk extraSupportedOutputSizeQuirk = this.f50325b;
+        ExtraSupportedOutputSizeQuirk extraSupportedOutputSizeQuirk = this.f50893b;
         if (extraSupportedOutputSizeQuirk != null) {
             Size[] c10 = extraSupportedOutputSizeQuirk.c(i10);
             if (c10.length > 0) {
@@ -34,7 +34,7 @@ public class n {
     }
 
     private void c(List list, int i10) {
-        List a10 = this.f50326c.a(i10);
+        List a10 = this.f50894c.a(i10);
         if (a10.isEmpty()) {
             return;
         }

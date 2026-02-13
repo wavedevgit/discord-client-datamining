@@ -15,61 +15,61 @@ import u9.l;
 public final class e {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final e f50531a;
+    public static final e f51099a;
 
     /* renamed from: b  reason: collision with root package name */
-    private static final AtomicInteger f50532b;
+    private static final AtomicInteger f51100b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final AtomicInteger f50533c;
+    private static final AtomicInteger f51101c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final AtomicInteger f50534d;
+    private static final AtomicInteger f51102d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final ConcurrentHashMap f50535e;
+    private static final ConcurrentHashMap f51103e;
 
     /* renamed from: f  reason: collision with root package name */
-    private static final Lazy f50536f;
+    private static final Lazy f51104f;
 
     /* renamed from: g  reason: collision with root package name */
-    private static final Runnable f50537g;
+    private static final Runnable f51105g;
 
     /* renamed from: h  reason: collision with root package name */
-    private static final Runnable f50538h;
+    private static final Runnable f51106h;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final /* synthetic */ int[] f50539a;
+        public static final /* synthetic */ int[] f51107a;
 
         static {
             int[] iArr = new int[l.a.values().length];
             try {
-                iArr[l.a.f50567d.ordinal()] = 1;
+                iArr[l.a.f51135d.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                iArr[l.a.f50568e.ordinal()] = 2;
+                iArr[l.a.f51136e.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                iArr[l.a.f50569i.ordinal()] = 3;
+                iArr[l.a.f51137i.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
-            f50539a = iArr;
+            f51107a = iArr;
         }
     }
 
     static {
         e eVar = new e();
-        f50531a = eVar;
-        f50532b = new AtomicInteger(0);
-        f50533c = new AtomicInteger(0);
-        f50534d = new AtomicInteger(0);
-        f50535e = new ConcurrentHashMap();
-        f50536f = as.l.b(new Function0() { // from class: u9.b
+        f51099a = eVar;
+        f51100b = new AtomicInteger(0);
+        f51101c = new AtomicInteger(0);
+        f51102d = new AtomicInteger(0);
+        f51103e = new ConcurrentHashMap();
+        f51104f = as.l.b(new Function0() { // from class: u9.b
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 Handler g10;
@@ -83,14 +83,14 @@ public final class e {
                 e.d();
             }
         };
-        f50537g = runnable;
+        f51105g = runnable;
         Runnable runnable2 = new Runnable() { // from class: u9.d
             @Override // java.lang.Runnable
             public final void run() {
                 e.e();
             }
         };
-        f50538h = runnable2;
+        f51106h = runnable2;
         eVar.f().post(runnable);
         eVar.f().post(runnable2);
     }
@@ -100,37 +100,37 @@ public final class e {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void d() {
-        float andSet = f50532b.getAndSet(0);
-        float andSet2 = f50533c.getAndSet(0);
-        float andSet3 = f50534d.getAndSet(0);
+        float andSet = f51100b.getAndSet(0);
+        float andSet2 = f51101c.getAndSet(0);
+        float andSet3 = f51102d.getAndSet(0);
         float f10 = andSet + andSet2 + andSet3;
         if (f10 > 0.0f) {
             float f11 = andSet / f10;
             float f12 = andSet3 / f10;
             if (andSet2 / f10 <= 0.25f && f12 <= 0.1f) {
                 if (f11 > 0.98f) {
-                    for (Map.Entry entry : f50535e.entrySet()) {
-                        f50531a.k((i) entry.getKey(), ((Number) entry.getValue()).intValue());
+                    for (Map.Entry entry : f51103e.entrySet()) {
+                        f51099a.k((i) entry.getKey(), ((Number) entry.getValue()).intValue());
                     }
                 }
             } else {
-                for (Map.Entry entry2 : f50535e.entrySet()) {
-                    f50531a.k((i) entry2.getKey(), -((Number) entry2.getValue()).intValue());
+                for (Map.Entry entry2 : f51103e.entrySet()) {
+                    f51099a.k((i) entry2.getKey(), -((Number) entry2.getValue()).intValue());
                 }
             }
-            f50535e.clear();
+            f51103e.clear();
         }
-        f50531a.j();
+        f51099a.j();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void e() {
-        k.f50560d.a(new Date(System.currentTimeMillis() - 10000));
-        f50531a.i();
+        k.f51128d.a(new Date(System.currentTimeMillis() - 10000));
+        f51099a.i();
     }
 
     private final Handler f() {
-        return (Handler) f50536f.getValue();
+        return (Handler) f51104f.getValue();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -141,11 +141,11 @@ public final class e {
     }
 
     private final boolean i() {
-        return f().postDelayed(f50538h, 10000L);
+        return f().postDelayed(f51106h, 10000L);
     }
 
     private final boolean j() {
-        return f().postDelayed(f50537g, 2000L);
+        return f().postDelayed(f51105g, 2000L);
     }
 
     private final void k(i iVar, int i10) {
@@ -158,22 +158,22 @@ public final class e {
     public final void h(i animation, l frameResult) {
         Intrinsics.checkNotNullParameter(animation, "animation");
         Intrinsics.checkNotNullParameter(frameResult, "frameResult");
-        ConcurrentHashMap concurrentHashMap = f50535e;
+        ConcurrentHashMap concurrentHashMap = f51103e;
         if (!concurrentHashMap.contains(animation)) {
             concurrentHashMap.put(animation, Integer.valueOf((int) (animation.c() * 0.2f)));
         }
-        int i10 = a.f50539a[frameResult.b().ordinal()];
+        int i10 = a.f51107a[frameResult.b().ordinal()];
         if (i10 != 1) {
             if (i10 != 2) {
                 if (i10 == 3) {
-                    f50534d.incrementAndGet();
+                    f51102d.incrementAndGet();
                     return;
                 }
                 throw new p();
             }
-            f50533c.incrementAndGet();
+            f51101c.incrementAndGet();
             return;
         }
-        f50532b.incrementAndGet();
+        f51100b.incrementAndGet();
     }
 }

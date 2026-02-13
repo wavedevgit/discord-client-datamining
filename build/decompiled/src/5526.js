@@ -10,14 +10,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = '__esModule';
     var0 = var3.bind(var4)(var1, var0, var2);
     var0 = function arg0() {
-        _fun48906: for (var _fun48906_ip = 0;;) switch (_fun48906_ip) {
+        _fun49013: for (var _fun49013_ip = 0;;) switch (_fun49013_ip) {
             case 0:
                 var4 = arg0;
                 var1 = 'string';
                 var0 = typeof var4;
                 if (!(var1 === var0)) {
-                    _fun48906_ip = 42;
-                    continue _fun48906
+                    _fun49013_ip = 42;
+                    continue _fun49013
                 }
             case 14:
                 var0 = var4.trim;
@@ -26,13 +26,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = '%';
                 var0 = var1.bind(var2)(var0);
                 if (var0) {
-                    _fun48906_ip = 47;
-                    continue _fun48906
+                    _fun49013_ip = 47;
+                    continue _fun49013
                 }
             case 42:
                 var0 = var4 - 0;
-                _fun48906_ip = 76;
-                continue _fun48906;
+                _fun49013_ip = 76;
+                continue _fun49013;
             case 47:
                 var3 = var4.slice;
                 var2 = 0;
@@ -50,14 +50,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var4 = var0;
                 var0 = var2;
                 if (var3) {
-                    _fun48906_ip = 129;
-                    continue _fun48906
+                    _fun49013_ip = 129;
+                    continue _fun49013
                 }
             case 103:
                 var0 = var2;
                 if (!(!(var4 > var0))) {
-                    _fun48906_ip = 129;
-                    continue _fun48906
+                    _fun49013_ip = 129;
+                    continue _fun49013
                 }
             case 110:
                 var3 = var1.Math;

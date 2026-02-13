@@ -31,26 +31,26 @@ import wp.x5;
 public final class l1 implements gn.k {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final a f53168d = new a(null);
+    public static final a f53736d = new a(null);
 
     /* renamed from: b  reason: collision with root package name */
-    private final xp.e f53169b;
+    private final xp.e f53737b;
 
     /* renamed from: c  reason: collision with root package name */
-    private View f53170c;
+    private View f53738c;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements gn.c0 {
 
         /* renamed from: a  reason: collision with root package name */
-        private final /* synthetic */ gn.c0 f53171a;
+        private final /* synthetic */ gn.c0 f53739a;
 
         /* renamed from: wp.l1$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         /* synthetic */ class C0742a extends FunctionReferenceImpl implements Function3 {
 
             /* renamed from: d  reason: collision with root package name */
-            public static final C0742a f53172d = new C0742a();
+            public static final C0742a f53740d = new C0742a();
 
             C0742a() {
                 super(3, xp.e.class, "inflate", "inflate(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Z)Lcom/withpersona/sdk2/inquiry/selfie/databinding/Pi2SelfieInstructionsBinding;", 0);
@@ -71,7 +71,7 @@ public final class l1 implements gn.k {
         /* synthetic */ class b extends FunctionReferenceImpl implements Function1 {
 
             /* renamed from: d  reason: collision with root package name */
-            public static final b f53173d = new b();
+            public static final b f53741d = new b();
 
             b() {
                 super(1, l1.class, "<init>", "<init>(Lcom/withpersona/sdk2/inquiry/selfie/databinding/Pi2SelfieInstructionsBinding;)V", 0);
@@ -95,23 +95,23 @@ public final class l1 implements gn.k {
             Intrinsics.checkNotNullParameter(initialRendering, "initialRendering");
             Intrinsics.checkNotNullParameter(initialViewEnvironment, "initialViewEnvironment");
             Intrinsics.checkNotNullParameter(contextForNewView, "contextForNewView");
-            return this.f53171a.a(initialRendering, initialViewEnvironment, contextForNewView, viewGroup);
+            return this.f53739a.a(initialRendering, initialViewEnvironment, contextForNewView, viewGroup);
         }
 
         @Override // gn.c0
         public KClass getType() {
-            return this.f53171a.getType();
+            return this.f53739a.getType();
         }
 
         private a() {
             k.a aVar = gn.k.f25849a;
-            this.f53171a = new gn.z(Reflection.getOrCreateKotlinClass(x5.d.b.class), C0742a.f53172d, b.f53173d);
+            this.f53739a = new gn.z(Reflection.getOrCreateKotlinClass(x5.d.b.class), C0742a.f53740d, b.f53741d);
         }
     }
 
     public l1(xp.e binding) {
         Intrinsics.checkNotNullParameter(binding, "binding");
-        this.f53169b = binding;
+        this.f53737b = binding;
         ScrollView root = binding.getRoot();
         Intrinsics.checkNotNullExpressionValue(root, "getRoot(...)");
         lq.f.d(root, false, false, false, false, 15, null);
@@ -120,47 +120,47 @@ public final class l1 implements gn.k {
     private final void e(StepStyles.SelfieStepStyle selfieStepStyle, gn.a0 a0Var) {
         TextBasedComponentStyle titleStyleValue = selfieStepStyle.getTitleStyleValue();
         if (titleStyleValue != null) {
-            TextView textView = this.f53169b.f55128m;
-            textView.setPadding(textView.getPaddingLeft(), 0, this.f53169b.f55128m.getPaddingRight(), 0);
-            TextView textviewSelfieStartTitle = this.f53169b.f55128m;
+            TextView textView = this.f53737b.f55696m;
+            textView.setPadding(textView.getPaddingLeft(), 0, this.f53737b.f55696m.getPaddingRight(), 0);
+            TextView textviewSelfieStartTitle = this.f53737b.f55696m;
             Intrinsics.checkNotNullExpressionValue(textviewSelfieStartTitle, "textviewSelfieStartTitle");
             uq.f0.n(textviewSelfieStartTitle, titleStyleValue, null, 2, null);
         }
         TextBasedComponentStyle textStyleValue = selfieStepStyle.getTextStyleValue();
         if (textStyleValue != null) {
-            TextView textView2 = this.f53169b.f55127l;
-            textView2.setPadding(textView2.getPaddingLeft(), 0, this.f53169b.f55127l.getPaddingRight(), 0);
-            TextView textviewSelfieStartBody = this.f53169b.f55127l;
+            TextView textView2 = this.f53737b.f55695l;
+            textView2.setPadding(textView2.getPaddingLeft(), 0, this.f53737b.f55695l.getPaddingRight(), 0);
+            TextView textviewSelfieStartBody = this.f53737b.f55695l;
             Intrinsics.checkNotNullExpressionValue(textviewSelfieStartBody, "textviewSelfieStartBody");
             uq.f0.n(textviewSelfieStartBody, textStyleValue, null, 2, null);
         }
         TextBasedComponentStyle disclaimerStyleValue = selfieStepStyle.getDisclaimerStyleValue();
         if (disclaimerStyleValue != null) {
-            TextView textView3 = this.f53169b.f55126k;
-            textView3.setPadding(textView3.getPaddingLeft(), 0, this.f53169b.f55126k.getPaddingRight(), 0);
-            TextView textviewSelfieDisclosure = this.f53169b.f55126k;
+            TextView textView3 = this.f53737b.f55694k;
+            textView3.setPadding(textView3.getPaddingLeft(), 0, this.f53737b.f55694k.getPaddingRight(), 0);
+            TextView textviewSelfieDisclosure = this.f53737b.f55694k;
             Intrinsics.checkNotNullExpressionValue(textviewSelfieDisclosure, "textviewSelfieDisclosure");
             uq.f0.n(textviewSelfieDisclosure, disclaimerStyleValue, null, 2, null);
         }
         Integer backgroundColorValue = selfieStepStyle.getBackgroundColorValue();
         if (backgroundColorValue != null) {
             int intValue = backgroundColorValue.intValue();
-            this.f53169b.getRoot().setBackgroundColor(intValue);
+            this.f53737b.getRoot().setBackgroundColor(intValue);
             kq.c.a(a0Var, intValue);
         }
-        Context context = this.f53169b.getRoot().getContext();
+        Context context = this.f53737b.getRoot().getContext();
         Intrinsics.checkNotNullExpressionValue(context, "getContext(...)");
         Drawable a10 = wq.c.a(selfieStepStyle, context);
         if (a10 != null) {
-            this.f53169b.getRoot().setBackground(a10);
+            this.f53737b.getRoot().setBackground(a10);
         }
         Integer headerButtonColorValue = selfieStepStyle.getHeaderButtonColorValue();
         if (headerButtonColorValue != null) {
-            this.f53169b.f55122g.setControlsColor(headerButtonColorValue.intValue());
+            this.f53737b.f55690g.setControlsColor(headerButtonColorValue.intValue());
         }
         ButtonSubmitComponentStyle buttonPrimaryStyleValue = selfieStepStyle.getButtonPrimaryStyleValue();
         if (buttonPrimaryStyleValue != null) {
-            Button startButton = this.f53169b.f55125j;
+            Button startButton = this.f53737b.f55693j;
             Intrinsics.checkNotNullExpressionValue(startButton, "startButton");
             uq.e.f(startButton, buttonPrimaryStyleValue, false, false, 6, null);
         }
@@ -174,38 +174,38 @@ public final class l1 implements gn.k {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit h(x5.d.b bVar) {
         bVar.d().invoke();
-        return Unit.f31988a;
+        return Unit.f32556a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit i(x5.d.b bVar) {
         bVar.e().invoke();
-        return Unit.f31988a;
+        return Unit.f32556a;
     }
 
     private final void j(StepStyles.SelfieStepStyle selfieStepStyle) {
         if (selfieStepStyle != null) {
-            ThemeableLottieAnimationView instructionAnimation = this.f53169b.f55120e;
+            ThemeableLottieAnimationView instructionAnimation = this.f53737b.f55688e;
             Intrinsics.checkNotNullExpressionValue(instructionAnimation, "instructionAnimation");
             uq.g.c(instructionAnimation, selfieStepStyle.getSelfieStartIconStyle(), new String[]{"#022050"}, new String[]{"#AA85FF"}, new String[]{"#DBCCFF"});
             return;
         }
-        ThemeableLottieAnimationView themeableLottieAnimationView = this.f53169b.f55120e;
+        ThemeableLottieAnimationView themeableLottieAnimationView = this.f53737b.f55688e;
         int parseColor = Color.parseColor("#022050");
-        Context context = this.f53169b.getRoot().getContext();
+        Context context = this.f53737b.getRoot().getContext();
         Intrinsics.checkNotNullExpressionValue(context, "getContext(...)");
         themeableLottieAnimationView.I(parseColor, bq.s.d(context, bh.b.f6745l, null, false, 6, null));
-        ThemeableLottieAnimationView themeableLottieAnimationView2 = this.f53169b.f55120e;
+        ThemeableLottieAnimationView themeableLottieAnimationView2 = this.f53737b.f55688e;
         int parseColor2 = Color.parseColor("#AA85FF");
-        Context context2 = this.f53169b.getRoot().getContext();
+        Context context2 = this.f53737b.getRoot().getContext();
         Intrinsics.checkNotNullExpressionValue(context2, "getContext(...)");
         themeableLottieAnimationView2.I(parseColor2, bq.s.d(context2, bh.b.f6747m, null, false, 6, null));
-        Context context3 = this.f53169b.getRoot().getContext();
+        Context context3 = this.f53737b.getRoot().getContext();
         Intrinsics.checkNotNullExpressionValue(context3, "getContext(...)");
         int d10 = bq.s.d(context3, bh.b.f6747m, null, false, 6, null);
-        Context context4 = this.f53169b.getRoot().getContext();
+        Context context4 = this.f53737b.getRoot().getContext();
         Intrinsics.checkNotNullExpressionValue(context4, "getContext(...)");
-        this.f53169b.f55120e.I(Color.parseColor("#DBCCFF"), r1.c.c(d10, bq.s.d(context4, bh.b.f6751o, null, false, 6, null), 0.66f));
+        this.f53737b.f55688e.I(Color.parseColor("#DBCCFF"), r1.c.c(d10, bq.s.d(context4, bh.b.f6751o, null, false, 6, null), 0.66f));
     }
 
     @Override // gn.k
@@ -213,19 +213,19 @@ public final class l1 implements gn.k {
     public void a(final x5.d.b rendering, gn.a0 viewEnvironment) {
         Intrinsics.checkNotNullParameter(rendering, "rendering");
         Intrinsics.checkNotNullParameter(viewEnvironment, "viewEnvironment");
-        xp.e eVar = this.f53169b;
+        xp.e eVar = this.f53737b;
         Context context = eVar.getRoot().getContext();
         Intrinsics.checkNotNullExpressionValue(context, "getContext(...)");
-        Integer f10 = bq.s.f(context, tp.a.f49772t, null, false, 6, null);
+        Integer f10 = bq.s.f(context, tp.a.f50340t, null, false, 6, null);
         if (f10 != null) {
-            this.f53169b.f55119d.setImageResource(f10.intValue());
-            this.f53169b.f55119d.setVisibility(0);
+            this.f53737b.f55687d.setImageResource(f10.intValue());
+            this.f53737b.f55687d.setVisibility(0);
         }
-        eVar.f55128m.setText(rendering.j());
-        eVar.f55127l.setText(rendering.g());
-        sr.e.b(eVar.f55126k.getContext()).c(eVar.f55126k, rendering.a());
-        eVar.f55125j.setText(rendering.h());
-        eVar.f55125j.setOnClickListener(new View.OnClickListener() { // from class: wp.i1
+        eVar.f55696m.setText(rendering.j());
+        eVar.f55695l.setText(rendering.g());
+        sr.e.b(eVar.f55694k.getContext()).c(eVar.f55694k, rendering.a());
+        eVar.f55693j.setText(rendering.h());
+        eVar.f55693j.setOnClickListener(new View.OnClickListener() { // from class: wp.i1
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
                 l1.g(x5.d.b.this, view);
@@ -248,25 +248,25 @@ public final class l1 implements gn.k {
                 return i10;
             }
         };
-        Pi2NavigationBar navigationBar = eVar.f55122g;
+        Pi2NavigationBar navigationBar = eVar.f55690g;
         Intrinsics.checkNotNullExpressionValue(navigationBar, "navigationBar");
         ScrollView root = eVar.getRoot();
         Intrinsics.checkNotNullExpressionValue(root, "getRoot(...)");
         jq.e.b(c10, function0, function02, navigationBar, root);
-        Context context2 = this.f53169b.getRoot().getContext();
+        Context context2 = this.f53737b.getRoot().getContext();
         Intrinsics.checkNotNullExpressionValue(context2, "getContext(...)");
-        Integer f11 = bq.s.f(context2, tp.a.f49767o, null, false, 6, null);
+        Integer f11 = bq.s.f(context2, tp.a.f50335o, null, false, 6, null);
         if (rendering.b() != null) {
-            if (this.f53170c == null) {
+            if (this.f53738c == null) {
                 RemoteImage b10 = rendering.b();
-                ConstraintLayout nestedUiContainer = eVar.f55123h;
+                ConstraintLayout nestedUiContainer = eVar.f55691h;
                 Intrinsics.checkNotNullExpressionValue(nestedUiContainer, "nestedUiContainer");
-                this.f53170c = wq.b.c(b10, nestedUiContainer, false, 2, null);
-                eVar.f55120e.setVisibility(8);
+                this.f53738c = wq.b.c(b10, nestedUiContainer, false, 2, null);
+                eVar.f55688e.setVisibility(8);
             }
         } else if (f11 != null) {
-            eVar.f55120e.setAnimation(f11.intValue());
-            eVar.f55120e.v();
+            eVar.f55688e.setAnimation(f11.intValue());
+            eVar.f55688e.v();
         } else {
             j(rendering.i());
         }

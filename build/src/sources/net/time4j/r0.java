@@ -3,7 +3,7 @@ package net.time4j;
 final class r0 extends bu.e implements v0 {
 
     /* renamed from: d  reason: collision with root package name */
-    static final r0 f37671d = new r0();
+    static final r0 f38239d = new r0();
     private static final long serialVersionUID = -3712256393866098916L;
 
     private r0() {
@@ -11,7 +11,7 @@ final class r0 extends bu.e implements v0 {
     }
 
     private Object readResolve() {
-        return f37671d;
+        return f38239d;
     }
 
     @Override // bu.p
@@ -38,7 +38,7 @@ final class r0 extends bu.e implements v0 {
     @Override // bu.p
     /* renamed from: G */
     public g0 B() {
-        return g0.f37482x;
+        return g0.f38050x;
     }
 
     @Override // bu.p

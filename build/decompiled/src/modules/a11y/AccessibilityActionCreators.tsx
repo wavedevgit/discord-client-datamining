@@ -59,13 +59,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.setFontSize = var3;
     var3 = function() {
-        _fun84601: for (var _fun84601_ip = 0;;) switch (_fun84601_ip) {
+        _fun85690: for (var _fun85690_ip = 0;;) switch (_fun85690_ip) {
             case 0:
                 var4 = arguments[0];
                 var0 = undefined;
                 if (!(var4 === var0)) {
-                    _fun84601_ip = 11;
-                    continue _fun84601
+                    _fun85690_ip = 11;
+                    continue _fun85690
                 }
             case 9:
                 var4 = null;
@@ -311,7 +311,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.setSaturation = var3;
     var3 = function arg0() {
-        _fun84615: for (var _fun84615_ip = 0;;) switch (_fun84615_ip) {
+        _fun85704: for (var _fun85704_ip = 0;;) switch (_fun85704_ip) {
             case 0:
                 var3 = _closure1_slot2;
                 var2 = var3.useReducedMotion;
@@ -330,13 +330,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var5.bind(var6)(var4);
                 var3 = var3.useReducedMotion;
                 if (var2) {
-                    _fun84615_ip = 192;
-                    continue _fun84615
+                    _fun85704_ip = 192;
+                    continue _fun85704
                 }
             case 72:
                 if (!var3) {
-                    _fun84615_ip = 192;
-                    continue _fun84615
+                    _fun85704_ip = 192;
+                    continue _fun85704
                 }
             case 75:
                 var5 = _closure1_slot0;
@@ -366,19 +366,19 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7.reasonKey = var8;
                 var4.animateStickers = var7;
                 var4 = var5.bind(var6)(var4);
-                _fun84615_ip = 246;
-                continue _fun84615;
+                _fun85704_ip = 246;
+                continue _fun85704;
             case 192:
                 if (!var2) {
-                    _fun84615_ip = 198;
-                    continue _fun84615
+                    _fun85704_ip = 198;
+                    continue _fun85704
                 }
             case 195:
                 var2 = !var3;
             case 198:
                 if (!var2) {
-                    _fun84615_ip = 246;
-                    continue _fun84615
+                    _fun85704_ip = 246;
+                    continue _fun85704
                 }
             case 201:
                 var2 = _closure1_slot0;
@@ -625,4 +625,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.setHDRDynamicRange = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1298, 660, 1351, 1352, 806, 795, 8062, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1298, 660, 1351, 1352, 807, 796, 7684, 2]);

@@ -82,13 +82,13 @@ public final class CtaButton {
     public static final /* synthetic */ void write$Self$chat_release(CtaButton ctaButton, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
         compositeEncoder.y(serialDescriptor, 0, ctaButton.text);
         if (compositeEncoder.z(serialDescriptor, 1) || ctaButton.textColor != null) {
-            compositeEncoder.o(serialDescriptor, 1, p0.f50049a, ctaButton.textColor);
+            compositeEncoder.o(serialDescriptor, 1, p0.f50617a, ctaButton.textColor);
         }
         if (compositeEncoder.z(serialDescriptor, 2) || ctaButton.backgroundColor != null) {
-            compositeEncoder.o(serialDescriptor, 2, p0.f50049a, ctaButton.backgroundColor);
+            compositeEncoder.o(serialDescriptor, 2, p0.f50617a, ctaButton.backgroundColor);
         }
         if (compositeEncoder.z(serialDescriptor, 3) || ctaButton.callback != null) {
-            compositeEncoder.o(serialDescriptor, 3, n2.f50033a, ctaButton.callback);
+            compositeEncoder.o(serialDescriptor, 3, n2.f50601a, ctaButton.callback);
         }
     }
 

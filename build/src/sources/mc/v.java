@@ -3,11 +3,11 @@ package mc;
 public final class v extends RuntimeException {
 
     /* renamed from: d  reason: collision with root package name */
-    public final int f36281d;
+    public final int f36849d;
 
     public v(int i10) {
         super(a(i10));
-        this.f36281d = i10;
+        this.f36849d = i10;
     }
 
     private static String a(int i10) {

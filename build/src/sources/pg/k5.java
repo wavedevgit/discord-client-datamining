@@ -5,44 +5,44 @@ import bj.c;
 final class k5 implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final k5 f42166a = new k5();
+    static final k5 f42734a = new k5();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final bj.c f42167b;
+    private static final bj.c f42735b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final bj.c f42168c;
+    private static final bj.c f42736c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final bj.c f42169d;
+    private static final bj.c f42737d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final bj.c f42170e;
+    private static final bj.c f42738e;
 
     /* renamed from: f  reason: collision with root package name */
-    private static final bj.c f42171f;
+    private static final bj.c f42739f;
 
     static {
         c.b a10 = bj.c.a("detectorMode");
         f fVar = new f();
         fVar.a(1);
-        f42167b = a10.b(fVar.b()).a();
+        f42735b = a10.b(fVar.b()).a();
         c.b a11 = bj.c.a("personDetectionMode");
         f fVar2 = new f();
         fVar2.a(2);
-        f42168c = a11.b(fVar2.b()).a();
+        f42736c = a11.b(fVar2.b()).a();
         c.b a12 = bj.c.a("landmarkDetectionMode");
         f fVar3 = new f();
         fVar3.a(3);
-        f42169d = a12.b(fVar3.b()).a();
+        f42737d = a12.b(fVar3.b()).a();
         c.b a13 = bj.c.a("preferredHardwareConfigs");
         f fVar4 = new f();
         fVar4.a(4);
-        f42170e = a13.b(fVar4.b()).a();
+        f42738e = a13.b(fVar4.b()).a();
         c.b a14 = bj.c.a("runConfig");
         f fVar5 = new f();
         fVar5.a(5);
-        f42171f = a14.b(fVar5.b()).a();
+        f42739f = a14.b(fVar5.b()).a();
     }
 
     private k5() {

@@ -13,10 +13,10 @@ import org.jetbrains.annotations.NotNull;
 public final class d extends ViewGroup implements ReactCompoundViewGroup, ReactPointerEventsView {
 
     /* renamed from: e  reason: collision with root package name */
-    public static final a f42803e = new a(null);
+    public static final a f43371e = new a(null);
 
     /* renamed from: d  reason: collision with root package name */
-    private final i f42804d;
+    private final i f43372d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -33,7 +33,7 @@ public final class d extends ViewGroup implements ReactCompoundViewGroup, ReactP
         super(context);
         Intrinsics.checkNotNullParameter(context, "context");
         Intrinsics.checkNotNullParameter(pointerEventsProxy, "pointerEventsProxy");
-        this.f42804d = pointerEventsProxy;
+        this.f43372d = pointerEventsProxy;
         pointerEventsProxy.a(new h(this));
         setBackgroundColor(-16777216);
         setAlpha(f10);
@@ -46,7 +46,7 @@ public final class d extends ViewGroup implements ReactCompoundViewGroup, ReactP
     @Override // com.facebook.react.uimanager.ReactPointerEventsView
     @NotNull
     public PointerEvents getPointerEvents() {
-        return this.f42804d.getPointerEvents();
+        return this.f43372d.getPointerEvents();
     }
 
     @Override // com.facebook.react.uimanager.ReactCompoundViewGroup
@@ -57,7 +57,7 @@ public final class d extends ViewGroup implements ReactCompoundViewGroup, ReactP
     @Override // android.view.ViewGroup, android.view.View
     protected void onDetachedFromWindow() {
         super.onDetachedFromWindow();
-        this.f42804d.a(null);
+        this.f43372d.a(null);
     }
 
     @Override // android.view.View

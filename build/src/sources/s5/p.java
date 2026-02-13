@@ -6,21 +6,21 @@ import java.util.List;
 abstract class p implements o {
 
     /* renamed from: a  reason: collision with root package name */
-    final List f47857a;
+    final List f48425a;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public p(List list) {
-        this.f47857a = list;
+        this.f48425a = list;
     }
 
     @Override // s5.o
     public List b() {
-        return this.f47857a;
+        return this.f48425a;
     }
 
     @Override // s5.o
     public boolean isStatic() {
-        if (this.f47857a.isEmpty() || (this.f47857a.size() == 1 && ((z5.a) this.f47857a.get(0)).i())) {
+        if (this.f48425a.isEmpty() || (this.f48425a.size() == 1 && ((z5.a) this.f48425a.get(0)).i())) {
             return true;
         }
         return false;
@@ -28,9 +28,9 @@ abstract class p implements o {
 
     public String toString() {
         StringBuilder sb2 = new StringBuilder();
-        if (!this.f47857a.isEmpty()) {
+        if (!this.f48425a.isEmpty()) {
             sb2.append("values=");
-            sb2.append(Arrays.toString(this.f47857a.toArray()));
+            sb2.append(Arrays.toString(this.f48425a.toArray()));
         }
         return sb2.toString();
     }

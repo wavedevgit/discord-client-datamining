@@ -17,7 +17,7 @@ public class e extends a implements s8.a {
         Intrinsics.checkNotNullParameter(memoryTrimmableRegistry, "memoryTrimmableRegistry");
         Intrinsics.checkNotNullParameter(poolParams, "poolParams");
         Intrinsics.checkNotNullParameter(poolStatsTracker, "poolStatsTracker");
-        SparseIntArray sparseIntArray = poolParams.f52468c;
+        SparseIntArray sparseIntArray = poolParams.f53036c;
         if (sparseIntArray != null) {
             this.f11250k = new int[sparseIntArray.size()];
             int size = sparseIntArray.size();

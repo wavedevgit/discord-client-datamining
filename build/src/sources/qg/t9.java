@@ -5,42 +5,42 @@ import kotlin.jvm.internal.LongCompanionObject;
 public final class t9 {
 
     /* renamed from: a  reason: collision with root package name */
-    private Long f44988a;
+    private Long f45556a;
 
     /* renamed from: b  reason: collision with root package name */
-    private ca f44989b;
+    private ca f45557b;
 
     /* renamed from: c  reason: collision with root package name */
-    private Boolean f44990c;
+    private Boolean f45558c;
 
     /* renamed from: d  reason: collision with root package name */
-    private Boolean f44991d;
+    private Boolean f45559d;
 
     /* renamed from: e  reason: collision with root package name */
-    private Boolean f44992e;
+    private Boolean f45560e;
 
     public final t9 a(Boolean bool) {
-        this.f44991d = bool;
+        this.f45559d = bool;
         return this;
     }
 
     public final t9 b(Boolean bool) {
-        this.f44992e = bool;
+        this.f45560e = bool;
         return this;
     }
 
     public final t9 c(Long l10) {
-        this.f44988a = Long.valueOf(l10.longValue() & LongCompanionObject.MAX_VALUE);
+        this.f45556a = Long.valueOf(l10.longValue() & LongCompanionObject.MAX_VALUE);
         return this;
     }
 
     public final t9 d(ca caVar) {
-        this.f44989b = caVar;
+        this.f45557b = caVar;
         return this;
     }
 
     public final t9 e(Boolean bool) {
-        this.f44990c = bool;
+        this.f45558c = bool;
         return this;
     }
 

@@ -10,29 +10,29 @@ import java.util.Set;
 public abstract class a implements e {
 
     /* renamed from: i  reason: collision with root package name */
-    private static final Set f48640i = new HashSet(Arrays.asList("encoded_size", "encoded_width", "encoded_height", "uri_source", "image_format", "bitmap_config", "is_rounded", "non_fatal_decode_error", "original_url", "modified_url", "image_color_space"));
+    private static final Set f49208i = new HashSet(Arrays.asList("encoded_size", "encoded_width", "encoded_height", "uri_source", "image_format", "bitmap_config", "is_rounded", "non_fatal_decode_error", "original_url", "modified_url", "image_color_space"));
 
     /* renamed from: d  reason: collision with root package name */
-    private Map f48641d = new HashMap();
+    private Map f49209d = new HashMap();
 
     /* renamed from: e  reason: collision with root package name */
-    private ImageInfo f48642e;
+    private ImageInfo f49210e;
 
     @Override // ta.e
     public ImageInfo E() {
-        if (this.f48642e == null) {
-            this.f48642e = new m(getWidth(), getHeight(), w(), J1(), getExtras());
+        if (this.f49210e == null) {
+            this.f49210e = new m(getWidth(), getHeight(), w(), J1(), getExtras());
         }
-        return this.f48642e;
+        return this.f49210e;
     }
 
     @Override // z9.a
     public void J(Map map) {
         if (map != null) {
-            for (String str : f48640i) {
+            for (String str : f49208i) {
                 Object obj = map.get(str);
                 if (obj != null) {
-                    this.f48641d.put(str, obj);
+                    this.f49209d.put(str, obj);
                 }
             }
         }
@@ -40,18 +40,18 @@ public abstract class a implements e {
 
     @Override // ta.e
     public o J1() {
-        return n.f48672d;
+        return n.f49240d;
     }
 
     @Override // ta.l, z9.a
     public Map getExtras() {
-        return this.f48641d;
+        return this.f49209d;
     }
 
     @Override // z9.a
     public void p(String str, Object obj) {
-        if (f48640i.contains(str)) {
-            this.f48641d.put(str, obj);
+        if (f49208i.contains(str)) {
+            this.f49209d.put(str, obj);
         }
     }
 

@@ -11,18 +11,18 @@ public abstract class d0 {
     private static class a extends c {
 
         /* renamed from: r  reason: collision with root package name */
-        transient pi.r f45323r;
+        transient pi.r f45891r;
 
         a(Map map, pi.r rVar) {
             super(map);
-            this.f45323r = (pi.r) pi.m.j(rVar);
+            this.f45891r = (pi.r) pi.m.j(rVar);
         }
 
         /* JADX INFO: Access modifiers changed from: protected */
         @Override // qi.d
         /* renamed from: B */
         public List r() {
-            return (List) this.f45323r.get();
+            return (List) this.f45891r.get();
         }
 
         @Override // qi.f

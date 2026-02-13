@@ -22,16 +22,16 @@ import tt.g1;
 public abstract class c extends g1 implements ut.f {
 
     /* renamed from: c  reason: collision with root package name */
-    private final Json f51878c;
+    private final Json f52446c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final JsonElement f51879d;
+    private final JsonElement f52447d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final String f51880e;
+    private final String f52448e;
 
     /* renamed from: f  reason: collision with root package name */
-    protected final ut.d f51881f;
+    protected final ut.d f52449f;
 
     public /* synthetic */ c(Json json, JsonElement jsonElement, String str, DefaultConstructorMarker defaultConstructorMarker) {
         this(json, jsonElement, str);
@@ -104,7 +104,7 @@ public abstract class c extends g1 implements ut.f {
 
     /* JADX INFO: Access modifiers changed from: protected */
     public final String C0() {
-        return this.f51880e;
+        return this.f52448e;
     }
 
     @Override // tt.q2, kotlinx.serialization.encoding.Decoder
@@ -162,12 +162,12 @@ public abstract class c extends g1 implements ut.f {
         Intrinsics.checkNotNullParameter(descriptor, "descriptor");
         JsonElement p02 = p0();
         st.k kind = descriptor.getKind();
-        if (!Intrinsics.areEqual(kind, l.b.f48381a) && !(kind instanceof st.d)) {
-            if (Intrinsics.areEqual(kind, l.c.f48382a)) {
+        if (!Intrinsics.areEqual(kind, l.b.f48949a) && !(kind instanceof st.d)) {
+            if (Intrinsics.areEqual(kind, l.c.f48950a)) {
                 Json d10 = d();
                 SerialDescriptor a10 = f1.a(descriptor.g(0), d10.a());
                 st.k kind2 = a10.getKind();
-                if (!(kind2 instanceof st.e) && !Intrinsics.areEqual(kind2, k.b.f48379a)) {
+                if (!(kind2 instanceof st.e) && !Intrinsics.areEqual(kind2, k.b.f48947a)) {
                     if (d10.e().c()) {
                         Json d11 = d();
                         String h10 = descriptor.h();
@@ -188,7 +188,7 @@ public abstract class c extends g1 implements ut.f {
             Json d13 = d();
             String h12 = descriptor.h();
             if (p02 instanceof JsonObject) {
-                return new n0(d13, (JsonObject) p02, this.f51880e, null, 8, null);
+                return new n0(d13, (JsonObject) p02, this.f52448e, null, 8, null);
             }
             throw g0.e(-1, "Expected " + Reflection.getOrCreateKotlinClass(JsonObject.class).getSimpleName() + ", but had " + Reflection.getOrCreateKotlinClass(p02.getClass()).getSimpleName() + " as the serialized body of " + h12 + " at element: " + l0(), p02.toString());
         }
@@ -207,7 +207,7 @@ public abstract class c extends g1 implements ut.f {
 
     @Override // ut.f
     public Json d() {
-        return this.f51878c;
+        return this.f52446c;
     }
 
     @Override // ut.f
@@ -241,7 +241,7 @@ public abstract class c extends g1 implements ut.f {
         if (b0() != null) {
             return super.q(descriptor);
         }
-        return new k0(d(), D0(), this.f51880e).q(descriptor);
+        return new k0(d(), D0(), this.f52448e).q(descriptor);
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
@@ -449,9 +449,9 @@ public abstract class c extends g1 implements ut.f {
     }
 
     private c(Json json, JsonElement jsonElement, String str) {
-        this.f51878c = json;
-        this.f51879d = jsonElement;
-        this.f51880e = str;
-        this.f51881f = d().e();
+        this.f52446c = json;
+        this.f52447d = jsonElement;
+        this.f52448e = str;
+        this.f52449f = d().e();
     }
 }

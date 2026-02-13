@@ -6,11 +6,11 @@ import ff.a;
 public abstract class a {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final a.g f51580a;
+    public static final a.g f52148a;
 
     static {
         a.g gVar = new a.g();
-        f51580a = gVar;
+        f52148a = gVar;
         new ff.a("Fido.U2F_ZERO_PARTY_API", new com.google.android.gms.internal.fido.b(), gVar);
     }
 

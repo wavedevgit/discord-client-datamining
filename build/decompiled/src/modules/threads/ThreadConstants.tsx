@@ -158,4 +158,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.FORUM_POST_CREATION_UPLOAD_ERRORS = var3;
     var2.FORUM_POST_CREATION_AUTOMOD_ERRORS = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 1234, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 1235, 2]);

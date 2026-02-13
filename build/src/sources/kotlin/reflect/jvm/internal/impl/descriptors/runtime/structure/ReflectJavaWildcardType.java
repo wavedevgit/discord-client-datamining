@@ -16,36 +16,36 @@ import org.jetbrains.annotations.NotNull;
 public final class ReflectJavaWildcardType extends ReflectJavaType implements JavaWildcardType {
 
     /* renamed from: a  reason: collision with root package name */
-    private final WildcardType f32645a;
+    private final WildcardType f33213a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Collection f32646b;
+    private final Collection f33214b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final boolean f32647c;
+    private final boolean f33215c;
 
     public ReflectJavaWildcardType(@NotNull WildcardType reflectType) {
         Intrinsics.checkNotNullParameter(reflectType, "reflectType");
-        this.f32645a = reflectType;
-        this.f32646b = CollectionsKt.l();
+        this.f33213a = reflectType;
+        this.f33214b = CollectionsKt.l();
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.runtime.structure.ReflectJavaType
     /* renamed from: a */
     public WildcardType getReflectType() {
-        return this.f32645a;
+        return this.f33213a;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.load.java.structure.JavaAnnotationOwner
     @NotNull
     public Collection<JavaAnnotation> getAnnotations() {
-        return this.f32646b;
+        return this.f33214b;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.load.java.structure.JavaAnnotationOwner
     public boolean isDeprecatedInJavaDoc() {
-        return this.f32647c;
+        return this.f33215c;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.load.java.structure.JavaWildcardType

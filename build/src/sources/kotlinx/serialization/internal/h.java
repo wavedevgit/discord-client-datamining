@@ -10,7 +10,7 @@ import tt.l2;
 public final class h extends f2 implements KSerializer {
 
     /* renamed from: c  reason: collision with root package name */
-    public static final h f35095c = new h();
+    public static final h f35663c = new h();
 
     private h() {
         super(rt.a.H(ShortCompanionObject.INSTANCE));

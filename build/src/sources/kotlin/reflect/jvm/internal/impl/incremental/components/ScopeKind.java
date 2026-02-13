@@ -8,17 +8,17 @@ import kotlin.enums.EnumEntries;
 public final class ScopeKind {
 
     /* renamed from: d  reason: collision with root package name */
-    private static final /* synthetic */ ScopeKind[] f32658d;
+    private static final /* synthetic */ ScopeKind[] f33226d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final /* synthetic */ EnumEntries f32659e;
+    private static final /* synthetic */ EnumEntries f33227e;
     public static final ScopeKind PACKAGE = new ScopeKind("PACKAGE", 0);
     public static final ScopeKind CLASSIFIER = new ScopeKind("CLASSIFIER", 1);
 
     static {
         ScopeKind[] a10 = a();
-        f32658d = a10;
-        f32659e = a.a(a10);
+        f33226d = a10;
+        f33227e = a.a(a10);
     }
 
     private ScopeKind(String str, int i10) {
@@ -33,6 +33,6 @@ public final class ScopeKind {
     }
 
     public static ScopeKind[] values() {
-        return (ScopeKind[]) f32658d.clone();
+        return (ScopeKind[]) f33226d.clone();
     }
 }

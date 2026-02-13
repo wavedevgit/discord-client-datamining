@@ -2,11 +2,11 @@
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var4 = require;
-    var12 = metroImportDefault;
+    var11 = metroImportDefault;
     var2 = exports;
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
-    var _closure1_slot1 = var12;
+    var _closure1_slot1 = var11;
     var _closure1_slot2 = var5;
     var0 = global;
     var7 = var0.Object;
@@ -16,8 +16,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.value = var0;
     var0 = '__esModule';
     var0 = var6.bind(var7)(var2, var0, var3);
-    var10 = 0;
-    var6 = var5[var10];
+    var9 = 0;
+    var6 = var5[var9];
     var3 = metroImportAll;
     var0 = undefined;
     var3 = var3.bind(var0)(var6);
@@ -32,38 +32,38 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var0)(var3);
     var6 = var3.MEDIA_NUM_COLUMNS;
     var _closure1_slot5 = var6;
-    var11 = var3.SEARCH_LIST_SECTION_TOP_PADDING;
+    var10 = var3.SEARCH_LIST_SECTION_TOP_PADDING;
     var6 = var3.MEDIA_ITEM_GAP_WIDTH;
     var _closure1_slot6 = var6;
-    var13 = var3.SEARCH_LIST_HORIZONTAL_PADDING;
+    var12 = var3.SEARCH_LIST_HORIZONTAL_PADDING;
     var3 = 3;
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
-    var7 = var3.jsx;
-    var _closure1_slot7 = var7;
+    var6 = var3.jsx;
+    var _closure1_slot7 = var6;
     var3 = var3.jsxs;
     var _closure1_slot8 = var3;
     var3 = 4;
     var3 = var5[var3];
-    var8 = var4.bind(var0)(var3);
-    var6 = var8.createStyles;
+    var7 = var4.bind(var0)(var3);
+    var6 = var7.createStyles;
     var3 = {};
-    var9 = {
+    var8 = {
         'zIndex': 1,
         'position': 'absolute',
         'width': '100%'
     };
-    var3.container = var9;
-    var9 = {};
-    var14 = 'relative';
-    var9.position = var14;
-    var9.paddingHorizontal = var13;
-    var3.recentsContainer = var9;
-    var9 = {};
-    var13 = 'row';
-    var9.flexDirection = var13;
-    var3.row = var9;
-    var9 = {
+    var3.container = var8;
+    var8 = {};
+    var13 = 'relative';
+    var8.position = var13;
+    var8.paddingHorizontal = var12;
+    var3.recentsContainer = var8;
+    var8 = {};
+    var12 = 'row';
+    var8.flexDirection = var12;
+    var3.row = var8;
+    var8 = {
         'flex': 1,
         'display': 'flex',
         'flexDirection': 'row',
@@ -73,33 +73,26 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         'paddingTop': null,
         'paddingBottom': 8
     };
-    var9.paddingTop = var11;
-    var3.section = var9;
-    var9 = {};
-    var11 = 5;
-    var13 = var5[var11];
-    var13 = var12.bind(var0)(var13);
-    var13 = var13.radii;
-    var13 = var13.xs;
-    var9.borderRadius = var13;
-    var11 = var5[var11];
-    var11 = var12.bind(var0)(var11);
-    var11 = var11.colors;
-    var11 = var11.BORDER_SUBTLE;
-    var9.backgroundColor = var11;
-    var3.sectionItem = var9;
-    var9 = {};
-    var9.opacity = var10;
-    var3.sectionText = var9;
-    var3 = var6.bind(var8)(var3);
+    var8.paddingTop = var10;
+    var3.section = var8;
+    var8 = {};
+    var10 = 5;
+    var12 = var5[var10];
+    var12 = var11.bind(var0)(var12);
+    var12 = var12.radii;
+    var12 = var12.xs;
+    var8.borderRadius = var12;
+    var10 = var5[var10];
+    var10 = var11.bind(var0)(var10);
+    var10 = var10.colors;
+    var10 = var10.BORDER_SUBTLE;
+    var8.backgroundColor = var10;
+    var3.sectionItem = var8;
+    var8 = {};
+    var8.opacity = var9;
+    var3.sectionText = var8;
+    var3 = var6.bind(var7)(var3);
     var _closure1_slot9 = var3;
-    var3 = 9;
-    var3 = var5[var3];
-    var3 = var4.bind(var0)(var3);
-    var6 = var3.MediaVerticalSeparator;
-    var3 = {};
-    var3 = var7.bind(var0)(var6, var3);
-    var _closure1_slot10 = var3;
     var3 = 14;
     var3 = var5[var3];
     var5 = var4.bind(var0)(var3);
@@ -163,7 +156,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = function() { // Environment: var5
             var3 = _closure1_slot0;
             var2 = _closure1_slot2;
-            var1 = 10;
+            var1 = 9;
             var2 = var2[var1];
             var1 = undefined;
             var3 = var3.bind(var1)(var2);
@@ -183,7 +176,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = function() { // Environment: var5
             var3 = _closure1_slot0;
             var2 = _closure1_slot2;
-            var1 = 10;
+            var1 = 9;
             var2 = var2[var1];
             var1 = undefined;
             var3 = var3.bind(var1)(var2);
@@ -226,7 +219,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var8 = {};
         var9 = var14.sectionItem;
         var8.style = var9;
-        var11 = 11;
+        var11 = 10;
         var9 = var17[var11];
         var9 = var16.bind(var3)(var9);
         var12 = var9.Text;
@@ -239,7 +232,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         };
         var13 = var14.sectionText;
         var9.style = var13;
-        var13 = 12;
+        var13 = 11;
         var15 = var17[var13];
         var15 = var16.bind(var3)(var15);
         var19 = var15.intl;
@@ -287,7 +280,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4[0] = var6;
         var6 = var7.map;
         var5 = function(arg0, arg1) { // Environment: var5
-            _fun106045: for (var _fun106045_ip = 0;;) switch (_fun106045_ip) {
+            _fun106073: for (var _fun106073_ip = 0;;) switch (_fun106073_ip) {
                 case 0:
                     var11 = arg0;
                     var4 = arg1;
@@ -317,7 +310,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var0.height = var5;
                         var0.width = var5;
                         var6 = _closure1_slot0;
-                        var5 = 13;
+                        var5 = 12;
                         var5 = var7[var5];
                         var7 = var6.bind(var2)(var5);
                         var6 = var7.getMediaGridItemStyles;
@@ -350,12 +343,20 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var6 = var8 - var6;
                     var6 = var4 < var6;
                     if (!var6) {
-                        _fun106045_ip = 122;
-                        continue _fun106045
+                        _fun106073_ip = 156;
+                        continue _fun106073
                     }
                 case 118:
-                    var6 = _closure1_slot10;
-                case 122:
+                    var9 = _closure1_slot7;
+                    var8 = _closure1_slot0;
+                    var10 = _closure1_slot2;
+                    var7 = 13;
+                    var7 = var10[var7];
+                    var7 = var8.bind(var0)(var7);
+                    var8 = var7.MediaVerticalSeparator;
+                    var7 = {};
+                    var6 = var9.bind(var0)(var8, var7);
+                case 156:
                     var5[1] = var6;
                     var1.children = var5;
                     var0 = var3.bind(var0)(var2, var1, var4);
@@ -370,4 +371,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.RecentsMediaGridPlaceholder = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 7722, 33, 1297, 671, 13785, 3717, 13787, 13788, 22, 3938, 1234, 11422, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 8975, 33, 1297, 671, 13777, 3717, 13779, 22, 3938, 1235, 11718, 13780, 2]);

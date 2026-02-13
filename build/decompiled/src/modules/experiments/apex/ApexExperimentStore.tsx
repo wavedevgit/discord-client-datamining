@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var8;
     var _closure1_slot2 = var6;
     var0 = function() {
-        _fun13209: for (var _fun13209_ip = 0;;) switch (_fun13209_ip) {
+        _fun13214: for (var _fun13214_ip = 0;;) switch (_fun13214_ip) {
             case 0:
             case 2: // try_start_0
                 var1 = global;
@@ -30,8 +30,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = !var1;
                 var _closure2_slot0 = var1;
             case 70: // try_end0
-                _fun13209_ip = 74;
-                continue _fun13209;
+                _fun13214_ip = 74;
+                continue _fun13214;
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
@@ -89,7 +89,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var1.ExperimentAssignment;
     var3 = function(arg0) { // Environment: var3
         var3 = function() {
-            _fun13213: for (var _fun13213_ip = 0;;) switch (_fun13213_ip) {
+            _fun13218: for (var _fun13218_ip = 0;;) switch (_fun13218_ip) {
                 case 0:
                     var4 = this;
                     var0 = _closure1_slot3;
@@ -240,14 +240,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = _closure1_slot9;
                     var0 = var0.bind(var3)();
                     if (var0) {
-                        _fun13213_ip = 267;
-                        continue _fun13213
+                        _fun13218_ip = 267;
+                        continue _fun13218
                     }
                 case 254:
                     var0 = var8.apply;
                     var0 = var0.bind(var8)(var4, var9);
-                    _fun13213_ip = 301;
-                    continue _fun13213;
+                    _fun13218_ip = 301;
+                    continue _fun13218;
                 case 267:
                     var6 = global;
                     var7 = var6.Reflect;
@@ -324,15 +324,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var5 = var0.guilds;
             var4 = var5.reduce;
             var2 = function(arg0, arg1) { // Environment: var1
-                _fun13231: for (var _fun13231_ip = 0;;) switch (_fun13231_ip) {
+                _fun13236: for (var _fun13236_ip = 0;;) switch (_fun13236_ip) {
                     case 0:
                         var0 = arg0;
                         var1 = arg1;
                         var3 = var1.experiments;
                         var2 = null;
                         if (!(var2 != var3)) {
-                            _fun13231_ip = 33;
-                            continue _fun13231
+                            _fun13236_ip = 33;
+                            continue _fun13236
                         }
                     case 18:
                         var2 = var1.id;
@@ -355,7 +355,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var6 = 'handleGuildCreate';
         var4.key = var6;
         var5 = function arg0() {
-            _fun13232: for (var _fun13232_ip = 0;;) switch (_fun13232_ip) {
+            _fun13237: for (var _fun13237_ip = 0;;) switch (_fun13237_ip) {
                 case 0:
                     var0 = arg0;
                     var2 = this;
@@ -363,8 +363,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var3 = var1.experiments;
                     var1 = null;
                     if (!(var1 != var3)) {
-                        _fun13232_ip = 53;
-                        continue _fun13232
+                        _fun13237_ip = 53;
+                        continue _fun13237
                     }
                 case 23:
                     var1 = {};
@@ -403,4 +403,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var3;
     var2.ExperimentAssignment = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 15, 17, 18, 1212, 1216, 806, 795, 1592, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 15, 17, 18, 1213, 1217, 807, 796, 1592, 2]);

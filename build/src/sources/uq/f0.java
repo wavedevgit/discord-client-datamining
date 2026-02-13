@@ -25,10 +25,10 @@ public abstract class f0 {
     public /* synthetic */ class a {
 
         /* renamed from: a */
-        public static final /* synthetic */ int[] f50936a;
+        public static final /* synthetic */ int[] f51504a;
 
         /* renamed from: b */
-        public static final /* synthetic */ int[] f50937b;
+        public static final /* synthetic */ int[] f51505b;
 
         static {
             int[] iArr = new int[StyleElements.FontWeight.values().length];
@@ -52,7 +52,7 @@ public abstract class f0 {
                 iArr[StyleElements.FontWeight.HEAVY.ordinal()] = 5;
             } catch (NoSuchFieldError unused5) {
             }
-            f50936a = iArr;
+            f51504a = iArr;
             int[] iArr2 = new int[StyleElements.PositionType.values().length];
             try {
                 iArr2[StyleElements.PositionType.START.ordinal()] = 1;
@@ -66,12 +66,12 @@ public abstract class f0 {
                 iArr2[StyleElements.PositionType.END.ordinal()] = 3;
             } catch (NoSuchFieldError unused8) {
             }
-            f50937b = iArr2;
+            f51505b = iArr2;
         }
     }
 
     private static final int d(StyleElements.FontWeight fontWeight) {
-        int i10 = a.f50936a[fontWeight.ordinal()];
+        int i10 = a.f51504a[fontWeight.ordinal()];
         if (i10 != 1) {
             if (i10 != 2) {
                 if (i10 != 3) {
@@ -102,7 +102,7 @@ public abstract class f0 {
         Intrinsics.checkNotNullParameter(textView, "<this>");
         Intrinsics.checkNotNullParameter(justification, "justification");
         int gravity = textView.getGravity() & 112;
-        int i10 = a.f50937b[justification.ordinal()];
+        int i10 = a.f51505b[justification.ordinal()];
         int i11 = 1;
         if (i10 != 1) {
             if (i10 != 2) {
@@ -130,7 +130,7 @@ public abstract class f0 {
         if (Build.VERSION.SDK_INT >= 29) {
             e(textView, fontWeight);
         }
-        vq.a a11 = vq.a.f51743a.a();
+        vq.a a11 = vq.a.f52311a.a();
         Map d10 = a11.d();
         LinkedHashMap linkedHashMap = new LinkedHashMap();
         for (Map.Entry entry : d10.entrySet()) {
@@ -162,7 +162,7 @@ public abstract class f0 {
         Intrinsics.checkNotNullParameter(it, "it");
         textView.setTypeface(it);
         function1.invoke(it);
-        return Unit.f31988a;
+        return Unit.f32556a;
     }
 
     public static final void i(final TextView textView, String str, final StyleElements.FontWeight fontWeight, Function1 onRemoteFontDownloaded) {
@@ -204,14 +204,14 @@ public abstract class f0 {
             if (Build.VERSION.SDK_INT >= 29) {
                 e(textView, fontWeight);
             }
-            return Unit.f31988a;
+            return Unit.f32556a;
         }
         return null;
     }
 
     public static final Unit l(Typeface it) {
         Intrinsics.checkNotNullParameter(it, "it");
-        return Unit.f31988a;
+        return Unit.f32556a;
     }
 
     public static final void m(TextView textView, TextViewStyle styles, Set excludedStyleElements) {
@@ -252,7 +252,7 @@ public abstract class f0 {
             }
             Double lineHeightValue = styles.getLineHeightValue();
             if (lineHeightValue != null) {
-                if (excludedStyleElements.contains(b0.f50919d)) {
+                if (excludedStyleElements.contains(b0.f51487d)) {
                     lineHeightValue = null;
                 }
                 if (lineHeightValue != null) {

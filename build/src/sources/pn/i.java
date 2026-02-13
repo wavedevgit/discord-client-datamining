@@ -6,20 +6,20 @@ import com.facebook.react.uimanager.ReactPointerEventsView;
 public final class i implements ReactPointerEventsView {
 
     /* renamed from: d  reason: collision with root package name */
-    private h f42819d;
+    private h f43387d;
 
     public i(h hVar) {
-        this.f42819d = hVar;
+        this.f43387d = hVar;
     }
 
     public final void a(h hVar) {
-        this.f42819d = hVar;
+        this.f43387d = hVar;
     }
 
     @Override // com.facebook.react.uimanager.ReactPointerEventsView
     public PointerEvents getPointerEvents() {
         PointerEvents pointerEvents;
-        h hVar = this.f42819d;
+        h hVar = this.f43387d;
         if (hVar != null && (pointerEvents = hVar.getPointerEvents()) != null) {
             return pointerEvents;
         }

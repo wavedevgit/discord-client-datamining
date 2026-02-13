@@ -7,20 +7,20 @@ import us.u1;
 public class r1 implements Function0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final u1.a f51135d;
+    private final u1.a f51703d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final u1 f51136e;
+    private final u1 f51704e;
 
     public r1(u1.a aVar, u1 u1Var) {
-        this.f51135d = aVar;
-        this.f51136e = u1Var;
+        this.f51703d = aVar;
+        this.f51704e = u1Var;
     }
 
     @Override // kotlin.jvm.functions.Function0
     public Object invoke() {
         Class q10;
-        q10 = u1.a.q(this.f51135d, this.f51136e);
+        q10 = u1.a.q(this.f51703d, this.f51704e);
         return q10;
     }
 }

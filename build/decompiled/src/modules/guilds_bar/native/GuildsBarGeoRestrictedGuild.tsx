@@ -24,19 +24,18 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot3 = var6;
     var3 = 1;
     var3 = var5[var3];
-    var3 = var4.bind(var0)(var3);
-    var10 = var3.StyleSheet;
-    var3 = 2;
-    var3 = var5[var3];
     var8 = var4.bind(var0)(var3);
     var3 = var8.GUILD_ITEM_BADGE_SIZE;
     var12 = var8.GUILD_ITEM_SIZE;
-    var8 = 3;
+    var8 = 2;
     var8 = var5[var8];
     var8 = var4.bind(var0)(var8);
     var8 = var8.jsx;
     var _closure1_slot4 = var8;
-    var9 = var10.create;
+    var8 = 3;
+    var8 = var5[var8];
+    var10 = var4.bind(var0)(var8);
+    var9 = var10.createStyles;
     var8 = {};
     var11 = {};
     var11.width = var12;
@@ -66,36 +65,38 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot6 = var3;
     var3 = var6.memo;
     var1 = function arg0() {
-        _fun101681: for (var _fun101681_ip = 0;;) switch (_fun101681_ip) {
+        _fun101803: for (var _fun101803_ip = 0;;) switch (_fun101803_ip) {
             case 0:
                 var0 = arg0;
-                var10 = var0.restrictedGuild;
-                var _closure2_slot0 = var10;
+                var11 = var0.restrictedGuild;
+                var _closure2_slot0 = var11;
+                var0 = _closure1_slot5;
+                var3 = undefined;
+                var8 = var0.bind(var3)();
                 var4 = _closure1_slot0;
                 var2 = _closure1_slot2;
                 var0 = 5;
                 var2 = var2[var0];
-                var3 = undefined;
-                var5 = var4.bind(var3)(var2);
-                var4 = var5.useGuildsBarAnimatedWrapperStyles;
+                var6 = var4.bind(var3)(var2);
+                var4 = var6.useGuildsBarAnimatedWrapperStyles;
                 var2 = true;
-                var11 = var4.bind(var5)(var2, var2);
-                var2 = var10.icon;
+                var12 = var4.bind(var6)(var2, var2);
+                var2 = var11.icon;
                 var4 = null;
                 var2 = var4 != var2;
                 var9 = null;
                 if (!var2) {
-                    _fun101681_ip = 111;
-                    continue _fun101681
+                    _fun101803_ip = 119;
+                    continue _fun101803
                 }
-            case 70:
-                var5 = _closure1_slot1;
-                var6 = _closure1_slot2;
+            case 78:
+                var6 = _closure1_slot1;
+                var7 = _closure1_slot2;
                 var2 = 6;
-                var2 = var6[var2];
-                var7 = var5.bind(var3)(var2);
-                var6 = var7.getAnimatableSourceWithFallback;
-                var5 = false;
+                var2 = var7[var2];
+                var10 = var6.bind(var3)(var2);
+                var7 = var10.getAnimatableSourceWithFallback;
+                var6 = false;
                 var2 = function(arg0) { // Environment: var1
                     var1 = _closure1_slot1;
                     var8 = _closure1_slot2;
@@ -126,15 +127,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = var1.bind(var2)(var0);
                     return var0;
                 };
-                var9 = var6.bind(var7)(var5, var2);
-            case 111:
-                var6 = _closure1_slot3;
-                var5 = var6.useMemo;
-                var7 = var10.id;
+                var9 = var7.bind(var10)(var6, var2);
+            case 119:
+                var7 = _closure1_slot3;
+                var6 = var7.useMemo;
+                var10 = var11.id;
                 var2 = new Array(2);
-                var2[0] = var7;
-                var7 = var10.name;
-                var2[1] = var7;
+                var2[0] = var10;
+                var10 = var11.name;
+                var2[1] = var10;
                 var1 = function() { // Environment: var1
                     var0 = {};
                     var1 = function() {
@@ -202,12 +203,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0.onPress = var1;
                     return var0;
                 };
-                var5 = var5.bind(var6)(var1, var2);
+                var6 = var6.bind(var7)(var1, var2);
                 var2 = _closure1_slot4;
-                var6 = _closure1_slot1;
-                var7 = _closure1_slot2;
-                var0 = var7[var0];
-                var1 = var6.bind(var3)(var0);
+                var7 = _closure1_slot1;
+                var10 = _closure1_slot2;
+                var0 = var10[var0];
+                var1 = var7.bind(var3)(var0);
                 var0 = {
                     'selected': false,
                     'unread': false,
@@ -216,58 +217,57 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     'label': null,
                     'isDragTarget': false
                 };
-                var0.styles = var11;
-                var11 = var10.name;
-                var0.label = var11;
-                var0.config = var5;
-                var5 = _closure1_slot6;
-                var0.cutouts = var5;
+                var0.styles = var12;
+                var12 = var11.name;
+                var0.label = var12;
+                var0.config = var6;
+                var6 = _closure1_slot6;
+                var0.cutouts = var6;
                 var0.overState = var3;
-                var5 = 11;
-                var5 = var7[var5];
-                var11 = var6.bind(var3)(var5);
-                var5 = {};
-                var12 = _closure1_slot5;
-                var12 = var12.geoRestrictedBadge;
-                var5.style = var12;
-                var5 = var2.bind(var3)(var11, var5);
-                var0.externalChildren = var5;
-                var5 = 12;
-                var5 = var7[var5];
-                var6 = var6.bind(var3)(var5);
-                var5 = {};
-                var7 = var10.id;
-                var5.guildId = var7;
-                var5 = var2.bind(var3)(var6, var5);
-                var0.expandedChildren = var5;
+                var6 = 11;
+                var6 = var10[var6];
+                var12 = var7.bind(var3)(var6);
+                var6 = {};
+                var13 = var8.geoRestrictedBadge;
+                var6.style = var13;
+                var6 = var2.bind(var3)(var12, var6);
+                var0.externalChildren = var6;
+                var6 = 12;
+                var6 = var10[var6];
+                var7 = var7.bind(var3)(var6);
+                var6 = {};
+                var10 = var11.id;
+                var6.guildId = var10;
+                var6 = var2.bind(var3)(var7, var6);
+                var0.expandedChildren = var6;
                 if (!(var4 == var9)) {
-                    _fun101681_ip = 388;
-                    continue _fun101681
+                    _fun101803_ip = 392;
+                    continue _fun101803
                 }
-            case 302:
-                var6 = _closure1_slot4;
-                var5 = _closure1_slot1;
-                var11 = _closure1_slot2;
-                var7 = 7;
-                var4 = var11[var7];
-                var5 = var5.bind(var3)(var4);
+            case 306:
+                var7 = _closure1_slot4;
+                var6 = _closure1_slot1;
+                var12 = _closure1_slot2;
+                var10 = 7;
+                var4 = var12[var10];
+                var6 = var6.bind(var3)(var4);
                 var4 = {
                     'value': null,
                     'selected': false,
                     'animate': false
                 };
-                var10 = var10.name;
-                var4.value = var10;
-                var10 = _closure1_slot0;
-                var7 = var11[var7];
-                var7 = var10.bind(var3)(var7);
-                var7 = var7.GuildIconSizes;
-                var7 = var7.LARGE;
-                var4.size = var7;
-                var4 = var6.bind(var3)(var5, var4);
-                _fun101681_ip = 445;
-                continue _fun101681;
-            case 388:
+                var11 = var11.name;
+                var4.value = var11;
+                var11 = _closure1_slot0;
+                var10 = var12[var10];
+                var10 = var11.bind(var3)(var10);
+                var10 = var10.GuildIconSizes;
+                var10 = var10.LARGE;
+                var4.size = var10;
+                var4 = var7.bind(var3)(var6, var4);
+                _fun101803_ip = 445;
+                continue _fun101803;
+            case 392:
                 var7 = _closure1_slot4;
                 var6 = _closure1_slot1;
                 var10 = _closure1_slot2;
@@ -276,7 +276,6 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var6.bind(var3)(var5);
                 var5 = {};
                 var5.source = var9;
-                var8 = _closure1_slot5;
                 var8 = var8.guildIcon;
                 var5.style = var8;
                 var8 = 0;
@@ -297,4 +296,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 13166, 33, 13173, 13167, 1417, 7356, 3998, 1234, 8284, 13218, 13199, 5426, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 13180, 33, 1297, 13194, 13191, 1417, 7453, 3998, 1235, 8212, 13230, 13220, 4709, 2]);

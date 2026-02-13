@@ -7,7 +7,7 @@ import uc.b0;
 abstract class e {
 
     /* renamed from: a  reason: collision with root package name */
-    protected final b0 f55518a;
+    protected final b0 f56086a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class a extends l0 {
@@ -18,7 +18,7 @@ abstract class e {
 
     /* JADX INFO: Access modifiers changed from: protected */
     public e(b0 b0Var) {
-        this.f55518a = b0Var;
+        this.f56086a = b0Var;
     }
 
     public final boolean a(h0 h0Var, long j10) {

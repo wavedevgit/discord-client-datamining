@@ -1,63 +1,63 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun95003: for (var _fun95003_ip = 0;;) switch (_fun95003_ip) {
-        case 0:
-            var3 = module;
-            var0 = {
-                8: 'backspace',
-                9: 'tab',
-                13: 'enter',
-                16: 'shift',
-                17: 'ctrl',
-                18: 'alt',
-                20: 'capslock',
-                27: 'esc',
-                32: 'space',
-                33: 'pageup',
-                34: 'pagedown',
-                35: 'end',
-                36: 'home',
-                37: 'left',
-                38: 'up',
-                39: 'right',
-                40: 'down',
-                45: 'ins',
-                46: 'del',
-                91: 'meta',
-                93: 'meta',
-                187: 'plus',
-                189: 'minus',
-                224: 'meta'
-            };
-            var3.exports = var0;
-            var8 = 1;
-            var7 = 111;
-            var6 = 'f';
-            var2 = 96;
-            var1 = 9;
-            var4 = 20;
-        case 42:
-            var10 = var3.exports;
-            var9 = var7 + var8;
-            var0 = var6 + var8;
-            var10[var9] = var0;
-            var8 = var8 + 1;
-            var0 = 0;
-            if (var8 < var4) {
-                _fun95003_ip = 42;
-                continue _fun95003
-            }
-        case 68:
-            var5 = var3.exports;
-            var4 = var0 + var2;
-            var5[var4] = var0;
-            var0 = var0 + 1;
-            if (var0 <= var1) {
-                _fun95003_ip = 68;
-                continue _fun95003
-            }
-        case 88:
-            var0 = undefined;
-            return var0;
-    }
-})(undefined, undefined, undefined, undefined, undefined, undefined, []);
+    var1 = require;
+    var _closure1_slot0 = var1;
+    var1 = dependencyMap;
+    var _closure1_slot1 = var1;
+    var1 = function() { // Environment: var0
+        _fun95033: for (var _fun95033_ip = 0;;) switch (_fun95033_ip) {
+            case 0:
+                var0 = this;
+                var0 = var0.constructor;
+                var1 = var0.REVERSE_MAP;
+                if (var1) {
+                    _fun95033_ip = 122;
+                    continue _fun95033
+                }
+            case 17:
+                var1 = {};
+                var0.REVERSE_MAP = var1;
+                var3 = _closure1_slot0;
+                var2 = _closure1_slot1;
+                var1 = 0;
+                var2 = var2[var1];
+                var1 = undefined;
+                var4 = var3.bind(var1)(var2);
+                var7 = var4;
+                var2 = 112;
+                var1 = 95;
+                for (var3 in var7)
+                    case 66: {
+                        case 75: var11 = var3;
+                        var9 = var11 > var1;
+                        if (!var9) {
+                            _fun95033_ip = 89;
+                            continue _fun95033
+                        }
+                        case 85: var9 = var11 < var2;
+                        case 89: if (var9) {
+                            _fun95033_ip = 66;
+                            continue _fun95033
+                        }
+                        case 92: var9 = var4.hasOwnProperty;
+                        var9 = var9.bind(var4)(var11);
+                        if (!var9) {
+                            _fun95033_ip = 66;
+                            continue _fun95033
+                        }
+                        case 106: var10 = var0.REVERSE_MAP;
+                        var9 = var4[var11];
+                        var10[var9] = var11;
+                        _fun95033_ip = 66;
+                        continue _fun95033;
+                    }
+            case 122:
+                var0 = var0.REVERSE_MAP;
+                return var0;
+        }
+    };
+    var0 = arg4;
+    var0.exports = var1;
+    var0 = undefined;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [12420]);

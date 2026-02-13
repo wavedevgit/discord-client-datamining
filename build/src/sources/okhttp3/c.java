@@ -63,217 +63,217 @@ public final class c {
     public static final c Z0;
 
     /* renamed from: a0  reason: collision with root package name */
-    public static final c f40462a0;
+    public static final c f41030a0;
 
     /* renamed from: a1  reason: collision with root package name */
-    public static final c f40463a1;
+    public static final c f41031a1;
 
     /* renamed from: b  reason: collision with root package name */
-    public static final b f40464b;
+    public static final b f41032b;
 
     /* renamed from: b0  reason: collision with root package name */
-    public static final c f40465b0;
+    public static final c f41033b0;
 
     /* renamed from: b1  reason: collision with root package name */
-    public static final c f40466b1;
+    public static final c f41034b1;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final Comparator f40467c;
+    private static final Comparator f41035c;
 
     /* renamed from: c0  reason: collision with root package name */
-    public static final c f40468c0;
+    public static final c f41036c0;
 
     /* renamed from: c1  reason: collision with root package name */
-    public static final c f40469c1;
+    public static final c f41037c1;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final Map f40470d;
+    private static final Map f41038d;
 
     /* renamed from: d0  reason: collision with root package name */
-    public static final c f40471d0;
+    public static final c f41039d0;
 
     /* renamed from: d1  reason: collision with root package name */
-    public static final c f40472d1;
+    public static final c f41040d1;
 
     /* renamed from: e  reason: collision with root package name */
-    public static final c f40473e;
+    public static final c f41041e;
 
     /* renamed from: e0  reason: collision with root package name */
-    public static final c f40474e0;
+    public static final c f41042e0;
 
     /* renamed from: e1  reason: collision with root package name */
-    public static final c f40475e1;
+    public static final c f41043e1;
 
     /* renamed from: f  reason: collision with root package name */
-    public static final c f40476f;
+    public static final c f41044f;
 
     /* renamed from: f0  reason: collision with root package name */
-    public static final c f40477f0;
+    public static final c f41045f0;
 
     /* renamed from: f1  reason: collision with root package name */
-    public static final c f40478f1;
+    public static final c f41046f1;
 
     /* renamed from: g  reason: collision with root package name */
-    public static final c f40479g;
+    public static final c f41047g;
 
     /* renamed from: g0  reason: collision with root package name */
-    public static final c f40480g0;
+    public static final c f41048g0;
 
     /* renamed from: g1  reason: collision with root package name */
-    public static final c f40481g1;
+    public static final c f41049g1;
 
     /* renamed from: h  reason: collision with root package name */
-    public static final c f40482h;
+    public static final c f41050h;
 
     /* renamed from: h0  reason: collision with root package name */
-    public static final c f40483h0;
+    public static final c f41051h0;
 
     /* renamed from: h1  reason: collision with root package name */
-    public static final c f40484h1;
+    public static final c f41052h1;
 
     /* renamed from: i  reason: collision with root package name */
-    public static final c f40485i;
+    public static final c f41053i;
 
     /* renamed from: i0  reason: collision with root package name */
-    public static final c f40486i0;
+    public static final c f41054i0;
 
     /* renamed from: i1  reason: collision with root package name */
-    public static final c f40487i1;
+    public static final c f41055i1;
 
     /* renamed from: j  reason: collision with root package name */
-    public static final c f40488j;
+    public static final c f41056j;
 
     /* renamed from: j0  reason: collision with root package name */
-    public static final c f40489j0;
+    public static final c f41057j0;
 
     /* renamed from: j1  reason: collision with root package name */
-    public static final c f40490j1;
+    public static final c f41058j1;
 
     /* renamed from: k  reason: collision with root package name */
-    public static final c f40491k;
+    public static final c f41059k;
 
     /* renamed from: k0  reason: collision with root package name */
-    public static final c f40492k0;
+    public static final c f41060k0;
 
     /* renamed from: k1  reason: collision with root package name */
-    public static final c f40493k1;
+    public static final c f41061k1;
 
     /* renamed from: l  reason: collision with root package name */
-    public static final c f40494l;
+    public static final c f41062l;
 
     /* renamed from: l0  reason: collision with root package name */
-    public static final c f40495l0;
+    public static final c f41063l0;
 
     /* renamed from: l1  reason: collision with root package name */
-    public static final c f40496l1;
+    public static final c f41064l1;
 
     /* renamed from: m  reason: collision with root package name */
-    public static final c f40497m;
+    public static final c f41065m;
 
     /* renamed from: m0  reason: collision with root package name */
-    public static final c f40498m0;
+    public static final c f41066m0;
 
     /* renamed from: m1  reason: collision with root package name */
-    public static final c f40499m1;
+    public static final c f41067m1;
 
     /* renamed from: n  reason: collision with root package name */
-    public static final c f40500n;
+    public static final c f41068n;
 
     /* renamed from: n0  reason: collision with root package name */
-    public static final c f40501n0;
+    public static final c f41069n0;
 
     /* renamed from: n1  reason: collision with root package name */
-    public static final c f40502n1;
+    public static final c f41070n1;
 
     /* renamed from: o  reason: collision with root package name */
-    public static final c f40503o;
+    public static final c f41071o;
 
     /* renamed from: o0  reason: collision with root package name */
-    public static final c f40504o0;
+    public static final c f41072o0;
 
     /* renamed from: o1  reason: collision with root package name */
-    public static final c f40505o1;
+    public static final c f41073o1;
 
     /* renamed from: p  reason: collision with root package name */
-    public static final c f40506p;
+    public static final c f41074p;
 
     /* renamed from: p0  reason: collision with root package name */
-    public static final c f40507p0;
+    public static final c f41075p0;
 
     /* renamed from: p1  reason: collision with root package name */
-    public static final c f40508p1;
+    public static final c f41076p1;
 
     /* renamed from: q  reason: collision with root package name */
-    public static final c f40509q;
+    public static final c f41077q;
 
     /* renamed from: q0  reason: collision with root package name */
-    public static final c f40510q0;
+    public static final c f41078q0;
 
     /* renamed from: q1  reason: collision with root package name */
-    public static final c f40511q1;
+    public static final c f41079q1;
 
     /* renamed from: r  reason: collision with root package name */
-    public static final c f40512r;
+    public static final c f41080r;
 
     /* renamed from: r0  reason: collision with root package name */
-    public static final c f40513r0;
+    public static final c f41081r0;
 
     /* renamed from: r1  reason: collision with root package name */
-    public static final c f40514r1;
+    public static final c f41082r1;
 
     /* renamed from: s  reason: collision with root package name */
-    public static final c f40515s;
+    public static final c f41083s;
 
     /* renamed from: s0  reason: collision with root package name */
-    public static final c f40516s0;
+    public static final c f41084s0;
 
     /* renamed from: s1  reason: collision with root package name */
-    public static final c f40517s1;
+    public static final c f41085s1;
 
     /* renamed from: t  reason: collision with root package name */
-    public static final c f40518t;
+    public static final c f41086t;
 
     /* renamed from: t0  reason: collision with root package name */
-    public static final c f40519t0;
+    public static final c f41087t0;
 
     /* renamed from: u  reason: collision with root package name */
-    public static final c f40520u;
+    public static final c f41088u;
 
     /* renamed from: u0  reason: collision with root package name */
-    public static final c f40521u0;
+    public static final c f41089u0;
 
     /* renamed from: v  reason: collision with root package name */
-    public static final c f40522v;
+    public static final c f41090v;
 
     /* renamed from: v0  reason: collision with root package name */
-    public static final c f40523v0;
+    public static final c f41091v0;
 
     /* renamed from: w  reason: collision with root package name */
-    public static final c f40524w;
+    public static final c f41092w;
 
     /* renamed from: w0  reason: collision with root package name */
-    public static final c f40525w0;
+    public static final c f41093w0;
 
     /* renamed from: x  reason: collision with root package name */
-    public static final c f40526x;
+    public static final c f41094x;
 
     /* renamed from: x0  reason: collision with root package name */
-    public static final c f40527x0;
+    public static final c f41095x0;
 
     /* renamed from: y  reason: collision with root package name */
-    public static final c f40528y;
+    public static final c f41096y;
 
     /* renamed from: y0  reason: collision with root package name */
-    public static final c f40529y0;
+    public static final c f41097y0;
 
     /* renamed from: z  reason: collision with root package name */
-    public static final c f40530z;
+    public static final c f41098z;
 
     /* renamed from: z0  reason: collision with root package name */
-    public static final c f40531z0;
+    public static final c f41099z0;
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f40532a;
+    private final String f41100a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a implements Comparator {
@@ -317,7 +317,7 @@ public final class c {
         /* JADX INFO: Access modifiers changed from: private */
         public final c d(String str, int i10) {
             c cVar = new c(str, null);
-            c.f40470d.put(str, cVar);
+            c.f41038d.put(str, cVar);
             return cVar;
         }
 
@@ -345,13 +345,13 @@ public final class c {
             c cVar;
             try {
                 Intrinsics.checkNotNullParameter(javaName, "javaName");
-                cVar = (c) c.f40470d.get(javaName);
+                cVar = (c) c.f41038d.get(javaName);
                 if (cVar == null) {
-                    cVar = (c) c.f40470d.get(e(javaName));
+                    cVar = (c) c.f41038d.get(e(javaName));
                     if (cVar == null) {
                         cVar = new c(javaName, null);
                     }
-                    c.f40470d.put(javaName, cVar);
+                    c.f41038d.put(javaName, cVar);
                 }
             } catch (Throwable th2) {
                 throw th2;
@@ -360,7 +360,7 @@ public final class c {
         }
 
         public final Comparator c() {
-            return c.f40467c;
+            return c.f41035c;
         }
 
         private b() {
@@ -369,31 +369,31 @@ public final class c {
 
     static {
         b bVar = new b(null);
-        f40464b = bVar;
-        f40467c = new a();
-        f40470d = new LinkedHashMap();
-        f40473e = bVar.d("SSL_RSA_WITH_NULL_MD5", 1);
-        f40476f = bVar.d("SSL_RSA_WITH_NULL_SHA", 2);
-        f40479g = bVar.d("SSL_RSA_EXPORT_WITH_RC4_40_MD5", 3);
-        f40482h = bVar.d("SSL_RSA_WITH_RC4_128_MD5", 4);
-        f40485i = bVar.d("SSL_RSA_WITH_RC4_128_SHA", 5);
-        f40488j = bVar.d("SSL_RSA_EXPORT_WITH_DES40_CBC_SHA", 8);
-        f40491k = bVar.d("SSL_RSA_WITH_DES_CBC_SHA", 9);
-        f40494l = bVar.d("SSL_RSA_WITH_3DES_EDE_CBC_SHA", 10);
-        f40497m = bVar.d("SSL_DHE_DSS_EXPORT_WITH_DES40_CBC_SHA", 17);
-        f40500n = bVar.d("SSL_DHE_DSS_WITH_DES_CBC_SHA", 18);
-        f40503o = bVar.d("SSL_DHE_DSS_WITH_3DES_EDE_CBC_SHA", 19);
-        f40506p = bVar.d("SSL_DHE_RSA_EXPORT_WITH_DES40_CBC_SHA", 20);
-        f40509q = bVar.d("SSL_DHE_RSA_WITH_DES_CBC_SHA", 21);
-        f40512r = bVar.d("SSL_DHE_RSA_WITH_3DES_EDE_CBC_SHA", 22);
-        f40515s = bVar.d("SSL_DH_anon_EXPORT_WITH_RC4_40_MD5", 23);
-        f40518t = bVar.d("SSL_DH_anon_WITH_RC4_128_MD5", 24);
-        f40520u = bVar.d("SSL_DH_anon_EXPORT_WITH_DES40_CBC_SHA", 25);
-        f40522v = bVar.d("SSL_DH_anon_WITH_DES_CBC_SHA", 26);
-        f40524w = bVar.d("SSL_DH_anon_WITH_3DES_EDE_CBC_SHA", 27);
-        f40526x = bVar.d("TLS_KRB5_WITH_DES_CBC_SHA", 30);
-        f40528y = bVar.d("TLS_KRB5_WITH_3DES_EDE_CBC_SHA", 31);
-        f40530z = bVar.d("TLS_KRB5_WITH_RC4_128_SHA", 32);
+        f41032b = bVar;
+        f41035c = new a();
+        f41038d = new LinkedHashMap();
+        f41041e = bVar.d("SSL_RSA_WITH_NULL_MD5", 1);
+        f41044f = bVar.d("SSL_RSA_WITH_NULL_SHA", 2);
+        f41047g = bVar.d("SSL_RSA_EXPORT_WITH_RC4_40_MD5", 3);
+        f41050h = bVar.d("SSL_RSA_WITH_RC4_128_MD5", 4);
+        f41053i = bVar.d("SSL_RSA_WITH_RC4_128_SHA", 5);
+        f41056j = bVar.d("SSL_RSA_EXPORT_WITH_DES40_CBC_SHA", 8);
+        f41059k = bVar.d("SSL_RSA_WITH_DES_CBC_SHA", 9);
+        f41062l = bVar.d("SSL_RSA_WITH_3DES_EDE_CBC_SHA", 10);
+        f41065m = bVar.d("SSL_DHE_DSS_EXPORT_WITH_DES40_CBC_SHA", 17);
+        f41068n = bVar.d("SSL_DHE_DSS_WITH_DES_CBC_SHA", 18);
+        f41071o = bVar.d("SSL_DHE_DSS_WITH_3DES_EDE_CBC_SHA", 19);
+        f41074p = bVar.d("SSL_DHE_RSA_EXPORT_WITH_DES40_CBC_SHA", 20);
+        f41077q = bVar.d("SSL_DHE_RSA_WITH_DES_CBC_SHA", 21);
+        f41080r = bVar.d("SSL_DHE_RSA_WITH_3DES_EDE_CBC_SHA", 22);
+        f41083s = bVar.d("SSL_DH_anon_EXPORT_WITH_RC4_40_MD5", 23);
+        f41086t = bVar.d("SSL_DH_anon_WITH_RC4_128_MD5", 24);
+        f41088u = bVar.d("SSL_DH_anon_EXPORT_WITH_DES40_CBC_SHA", 25);
+        f41090v = bVar.d("SSL_DH_anon_WITH_DES_CBC_SHA", 26);
+        f41092w = bVar.d("SSL_DH_anon_WITH_3DES_EDE_CBC_SHA", 27);
+        f41094x = bVar.d("TLS_KRB5_WITH_DES_CBC_SHA", 30);
+        f41096y = bVar.d("TLS_KRB5_WITH_3DES_EDE_CBC_SHA", 31);
+        f41098z = bVar.d("TLS_KRB5_WITH_RC4_128_SHA", 32);
         A = bVar.d("TLS_KRB5_WITH_DES_CBC_MD5", 34);
         B = bVar.d("TLS_KRB5_WITH_3DES_EDE_CBC_MD5", 35);
         C = bVar.d("TLS_KRB5_WITH_RC4_128_MD5", 36);
@@ -420,32 +420,32 @@ public final class c {
         X = bVar.d("TLS_DHE_DSS_WITH_AES_256_CBC_SHA256", 106);
         Y = bVar.d("TLS_DHE_RSA_WITH_AES_256_CBC_SHA256", 107);
         Z = bVar.d("TLS_DH_anon_WITH_AES_128_CBC_SHA256", 108);
-        f40462a0 = bVar.d("TLS_DH_anon_WITH_AES_256_CBC_SHA256", 109);
-        f40465b0 = bVar.d("TLS_RSA_WITH_CAMELLIA_256_CBC_SHA", 132);
-        f40468c0 = bVar.d("TLS_DHE_DSS_WITH_CAMELLIA_256_CBC_SHA", 135);
-        f40471d0 = bVar.d("TLS_DHE_RSA_WITH_CAMELLIA_256_CBC_SHA", 136);
-        f40474e0 = bVar.d("TLS_PSK_WITH_RC4_128_SHA", 138);
-        f40477f0 = bVar.d("TLS_PSK_WITH_3DES_EDE_CBC_SHA", 139);
-        f40480g0 = bVar.d("TLS_PSK_WITH_AES_128_CBC_SHA", 140);
-        f40483h0 = bVar.d("TLS_PSK_WITH_AES_256_CBC_SHA", 141);
-        f40486i0 = bVar.d("TLS_RSA_WITH_SEED_CBC_SHA", 150);
-        f40489j0 = bVar.d("TLS_RSA_WITH_AES_128_GCM_SHA256", 156);
-        f40492k0 = bVar.d("TLS_RSA_WITH_AES_256_GCM_SHA384", 157);
-        f40495l0 = bVar.d("TLS_DHE_RSA_WITH_AES_128_GCM_SHA256", 158);
-        f40498m0 = bVar.d("TLS_DHE_RSA_WITH_AES_256_GCM_SHA384", 159);
-        f40501n0 = bVar.d("TLS_DHE_DSS_WITH_AES_128_GCM_SHA256", 162);
-        f40504o0 = bVar.d("TLS_DHE_DSS_WITH_AES_256_GCM_SHA384", 163);
-        f40507p0 = bVar.d("TLS_DH_anon_WITH_AES_128_GCM_SHA256", 166);
-        f40510q0 = bVar.d("TLS_DH_anon_WITH_AES_256_GCM_SHA384", 167);
-        f40513r0 = bVar.d("TLS_EMPTY_RENEGOTIATION_INFO_SCSV", SetSpanOperation.SPAN_MAX_PRIORITY);
-        f40516s0 = bVar.d("TLS_FALLBACK_SCSV", 22016);
-        f40519t0 = bVar.d("TLS_ECDH_ECDSA_WITH_NULL_SHA", 49153);
-        f40521u0 = bVar.d("TLS_ECDH_ECDSA_WITH_RC4_128_SHA", 49154);
-        f40523v0 = bVar.d("TLS_ECDH_ECDSA_WITH_3DES_EDE_CBC_SHA", 49155);
-        f40525w0 = bVar.d("TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA", 49156);
-        f40527x0 = bVar.d("TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA", 49157);
-        f40529y0 = bVar.d("TLS_ECDHE_ECDSA_WITH_NULL_SHA", 49158);
-        f40531z0 = bVar.d("TLS_ECDHE_ECDSA_WITH_RC4_128_SHA", 49159);
+        f41030a0 = bVar.d("TLS_DH_anon_WITH_AES_256_CBC_SHA256", 109);
+        f41033b0 = bVar.d("TLS_RSA_WITH_CAMELLIA_256_CBC_SHA", 132);
+        f41036c0 = bVar.d("TLS_DHE_DSS_WITH_CAMELLIA_256_CBC_SHA", 135);
+        f41039d0 = bVar.d("TLS_DHE_RSA_WITH_CAMELLIA_256_CBC_SHA", 136);
+        f41042e0 = bVar.d("TLS_PSK_WITH_RC4_128_SHA", 138);
+        f41045f0 = bVar.d("TLS_PSK_WITH_3DES_EDE_CBC_SHA", 139);
+        f41048g0 = bVar.d("TLS_PSK_WITH_AES_128_CBC_SHA", 140);
+        f41051h0 = bVar.d("TLS_PSK_WITH_AES_256_CBC_SHA", 141);
+        f41054i0 = bVar.d("TLS_RSA_WITH_SEED_CBC_SHA", 150);
+        f41057j0 = bVar.d("TLS_RSA_WITH_AES_128_GCM_SHA256", 156);
+        f41060k0 = bVar.d("TLS_RSA_WITH_AES_256_GCM_SHA384", 157);
+        f41063l0 = bVar.d("TLS_DHE_RSA_WITH_AES_128_GCM_SHA256", 158);
+        f41066m0 = bVar.d("TLS_DHE_RSA_WITH_AES_256_GCM_SHA384", 159);
+        f41069n0 = bVar.d("TLS_DHE_DSS_WITH_AES_128_GCM_SHA256", 162);
+        f41072o0 = bVar.d("TLS_DHE_DSS_WITH_AES_256_GCM_SHA384", 163);
+        f41075p0 = bVar.d("TLS_DH_anon_WITH_AES_128_GCM_SHA256", 166);
+        f41078q0 = bVar.d("TLS_DH_anon_WITH_AES_256_GCM_SHA384", 167);
+        f41081r0 = bVar.d("TLS_EMPTY_RENEGOTIATION_INFO_SCSV", SetSpanOperation.SPAN_MAX_PRIORITY);
+        f41084s0 = bVar.d("TLS_FALLBACK_SCSV", 22016);
+        f41087t0 = bVar.d("TLS_ECDH_ECDSA_WITH_NULL_SHA", 49153);
+        f41089u0 = bVar.d("TLS_ECDH_ECDSA_WITH_RC4_128_SHA", 49154);
+        f41091v0 = bVar.d("TLS_ECDH_ECDSA_WITH_3DES_EDE_CBC_SHA", 49155);
+        f41093w0 = bVar.d("TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA", 49156);
+        f41095x0 = bVar.d("TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA", 49157);
+        f41097y0 = bVar.d("TLS_ECDHE_ECDSA_WITH_NULL_SHA", 49158);
+        f41099z0 = bVar.d("TLS_ECDHE_ECDSA_WITH_RC4_128_SHA", 49159);
         A0 = bVar.d("TLS_ECDHE_ECDSA_WITH_3DES_EDE_CBC_SHA", 49160);
         B0 = bVar.d("TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA", 49161);
         C0 = bVar.d("TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA", 49162);
@@ -472,25 +472,25 @@ public final class c {
         X0 = bVar.d("TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384", 49192);
         Y0 = bVar.d("TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256", 49193);
         Z0 = bVar.d("TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384", 49194);
-        f40463a1 = bVar.d("TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256", 49195);
-        f40466b1 = bVar.d("TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384", 49196);
-        f40469c1 = bVar.d("TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256", 49197);
-        f40472d1 = bVar.d("TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384", 49198);
-        f40475e1 = bVar.d("TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256", 49199);
-        f40478f1 = bVar.d("TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384", 49200);
-        f40481g1 = bVar.d("TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256", 49201);
-        f40484h1 = bVar.d("TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384", 49202);
-        f40487i1 = bVar.d("TLS_ECDHE_PSK_WITH_AES_128_CBC_SHA", 49205);
-        f40490j1 = bVar.d("TLS_ECDHE_PSK_WITH_AES_256_CBC_SHA", 49206);
-        f40493k1 = bVar.d("TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256", 52392);
-        f40496l1 = bVar.d("TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256", 52393);
-        f40499m1 = bVar.d("TLS_DHE_RSA_WITH_CHACHA20_POLY1305_SHA256", 52394);
-        f40502n1 = bVar.d("TLS_ECDHE_PSK_WITH_CHACHA20_POLY1305_SHA256", 52396);
-        f40505o1 = bVar.d("TLS_AES_128_GCM_SHA256", 4865);
-        f40508p1 = bVar.d("TLS_AES_256_GCM_SHA384", 4866);
-        f40511q1 = bVar.d("TLS_CHACHA20_POLY1305_SHA256", 4867);
-        f40514r1 = bVar.d("TLS_AES_128_CCM_SHA256", 4868);
-        f40517s1 = bVar.d("TLS_AES_128_CCM_8_SHA256", 4869);
+        f41031a1 = bVar.d("TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256", 49195);
+        f41034b1 = bVar.d("TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384", 49196);
+        f41037c1 = bVar.d("TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256", 49197);
+        f41040d1 = bVar.d("TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384", 49198);
+        f41043e1 = bVar.d("TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256", 49199);
+        f41046f1 = bVar.d("TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384", 49200);
+        f41049g1 = bVar.d("TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256", 49201);
+        f41052h1 = bVar.d("TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384", 49202);
+        f41055i1 = bVar.d("TLS_ECDHE_PSK_WITH_AES_128_CBC_SHA", 49205);
+        f41058j1 = bVar.d("TLS_ECDHE_PSK_WITH_AES_256_CBC_SHA", 49206);
+        f41061k1 = bVar.d("TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256", 52392);
+        f41064l1 = bVar.d("TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256", 52393);
+        f41067m1 = bVar.d("TLS_DHE_RSA_WITH_CHACHA20_POLY1305_SHA256", 52394);
+        f41070n1 = bVar.d("TLS_ECDHE_PSK_WITH_CHACHA20_POLY1305_SHA256", 52396);
+        f41073o1 = bVar.d("TLS_AES_128_GCM_SHA256", 4865);
+        f41076p1 = bVar.d("TLS_AES_256_GCM_SHA384", 4866);
+        f41079q1 = bVar.d("TLS_CHACHA20_POLY1305_SHA256", 4867);
+        f41082r1 = bVar.d("TLS_AES_128_CCM_SHA256", 4868);
+        f41085s1 = bVar.d("TLS_AES_128_CCM_8_SHA256", 4869);
     }
 
     public /* synthetic */ c(String str, DefaultConstructorMarker defaultConstructorMarker) {
@@ -498,14 +498,14 @@ public final class c {
     }
 
     public final String c() {
-        return this.f40532a;
+        return this.f41100a;
     }
 
     public String toString() {
-        return this.f40532a;
+        return this.f41100a;
     }
 
     private c(String str) {
-        this.f40532a = str;
+        this.f41100a = str;
     }
 }

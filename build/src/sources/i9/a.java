@@ -5,7 +5,7 @@ import android.os.Looper;
 public abstract class a {
 
     /* renamed from: a  reason: collision with root package name */
-    private static a f27795a;
+    private static a f28363a;
 
     /* renamed from: i9.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
@@ -17,10 +17,10 @@ public abstract class a {
         a aVar;
         synchronized (a.class) {
             try {
-                if (f27795a == null) {
-                    f27795a = new b();
+                if (f28363a == null) {
+                    f28363a = new b();
                 }
-                aVar = f27795a;
+                aVar = f28363a;
             } catch (Throwable th2) {
                 throw th2;
             }

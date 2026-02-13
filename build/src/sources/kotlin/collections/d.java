@@ -15,7 +15,7 @@ public abstract class d extends kotlin.collections.b implements List, KMappedMar
     @NotNull
 
     /* renamed from: d  reason: collision with root package name */
-    public static final a f32022d = new a(null);
+    public static final a f32590d = new a(null);
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -105,22 +105,22 @@ public abstract class d extends kotlin.collections.b implements List, KMappedMar
     public class b implements Iterator, KMappedMarker {
 
         /* renamed from: d  reason: collision with root package name */
-        private int f32023d;
+        private int f32591d;
 
         public b() {
         }
 
         protected final int a() {
-            return this.f32023d;
+            return this.f32591d;
         }
 
         protected final void b(int i10) {
-            this.f32023d = i10;
+            this.f32591d = i10;
         }
 
         @Override // java.util.Iterator
         public boolean hasNext() {
-            if (this.f32023d < d.this.size()) {
+            if (this.f32591d < d.this.size()) {
                 return true;
             }
             return false;
@@ -130,8 +130,8 @@ public abstract class d extends kotlin.collections.b implements List, KMappedMar
         public Object next() {
             if (hasNext()) {
                 d dVar = d.this;
-                int i10 = this.f32023d;
-                this.f32023d = i10 + 1;
+                int i10 = this.f32591d;
+                this.f32591d = i10 + 1;
                 return dVar.get(i10);
             }
             throw new NoSuchElementException();
@@ -147,7 +147,7 @@ public abstract class d extends kotlin.collections.b implements List, KMappedMar
     private class c extends b implements ListIterator, KMappedMarker {
         public c(int i10) {
             super();
-            d.f32022d.c(i10, d.this.size());
+            d.f32590d.c(i10, d.this.size());
             b(i10);
         }
 
@@ -195,31 +195,31 @@ public abstract class d extends kotlin.collections.b implements List, KMappedMar
     private static final class C0452d extends d implements RandomAccess {
 
         /* renamed from: e  reason: collision with root package name */
-        private final d f32026e;
+        private final d f32594e;
 
         /* renamed from: i  reason: collision with root package name */
-        private final int f32027i;
+        private final int f32595i;
 
         /* renamed from: o  reason: collision with root package name */
-        private int f32028o;
+        private int f32596o;
 
         public C0452d(d list, int i10, int i11) {
             Intrinsics.checkNotNullParameter(list, "list");
-            this.f32026e = list;
-            this.f32027i = i10;
-            d.f32022d.d(i10, i11, list.size());
-            this.f32028o = i11 - i10;
+            this.f32594e = list;
+            this.f32595i = i10;
+            d.f32590d.d(i10, i11, list.size());
+            this.f32596o = i11 - i10;
         }
 
         @Override // kotlin.collections.b
         public int c() {
-            return this.f32028o;
+            return this.f32596o;
         }
 
         @Override // kotlin.collections.d, java.util.List
         public Object get(int i10) {
-            d.f32022d.b(i10, this.f32028o);
-            return this.f32026e.get(this.f32027i + i10);
+            d.f32590d.b(i10, this.f32596o);
+            return this.f32594e.get(this.f32595i + i10);
         }
     }
 
@@ -241,14 +241,14 @@ public abstract class d extends kotlin.collections.b implements List, KMappedMar
         if (!(obj instanceof List)) {
             return false;
         }
-        return f32022d.f(this, (Collection) obj);
+        return f32590d.f(this, (Collection) obj);
     }
 
     public abstract Object get(int i10);
 
     @Override // java.util.Collection, java.util.List
     public int hashCode() {
-        return f32022d.g(this);
+        return f32590d.g(this);
     }
 
     public int indexOf(Object obj) {

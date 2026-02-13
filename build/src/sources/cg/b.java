@@ -36,7 +36,7 @@ public final class b extends g {
     @Override // hf.c, ff.a.f
     public final boolean h() {
         hf.d h02 = h0();
-        if (!TextUtils.isEmpty(h02.b()) && !h02.e(ve.b.f51570a).isEmpty()) {
+        if (!TextUtils.isEmpty(h02.b()) && !h02.e(ve.b.f52138a).isEmpty()) {
             return true;
         }
         return false;

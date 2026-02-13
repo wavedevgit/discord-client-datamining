@@ -3,22 +3,22 @@ package jk;
 abstract class d {
 
     /* renamed from: a  reason: collision with root package name */
-    private static boolean f30995a;
+    private static boolean f31563a;
 
     /* renamed from: b  reason: collision with root package name */
-    private static final Class f30996b = a("libcore.io.Memory");
+    private static final Class f31564b = a("libcore.io.Memory");
 
     /* renamed from: c  reason: collision with root package name */
-    private static final boolean f30997c;
+    private static final boolean f31565c;
 
     static {
         boolean z10;
-        if (!f30995a && a("org.robolectric.Robolectric") != null) {
+        if (!f31563a && a("org.robolectric.Robolectric") != null) {
             z10 = true;
         } else {
             z10 = false;
         }
-        f30997c = z10;
+        f31565c = z10;
     }
 
     private static Class a(String str) {
@@ -31,13 +31,13 @@ abstract class d {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static Class b() {
-        return f30996b;
+        return f31564b;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static boolean c() {
-        if (!f30995a) {
-            if (f30996b == null || f30997c) {
+        if (!f31563a) {
+            if (f31564b == null || f31565c) {
                 return false;
             }
             return true;

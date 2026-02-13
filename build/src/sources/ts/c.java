@@ -16,7 +16,7 @@ import us.j2;
 import us.j3;
 import us.t2;
 import vs.h;
-/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public abstract class c {
     public static final Constructor a(KFunction kFunction) {
         Member member;

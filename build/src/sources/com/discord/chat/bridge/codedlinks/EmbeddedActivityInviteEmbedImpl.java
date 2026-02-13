@@ -233,7 +233,7 @@ public final class EmbeddedActivityInviteEmbedImpl extends CodedLinkEmbed implem
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final /* synthetic */ KSerializer _childSerializers$_anonymous_() {
-        return new f(n2.f50033a);
+        return new f(n2.f50601a);
     }
 
     public static /* synthetic */ EmbeddedActivityInviteEmbedImpl copy$default(EmbeddedActivityInviteEmbedImpl embeddedActivityInviteEmbedImpl, int i10, int i11, int i12, String str, InviteType inviteType, Integer num, Integer num2, Integer num3, String str2, String str3, Integer num4, Boolean bool, Boolean bool2, Integer num5, Integer num6, Boolean bool3, Integer num7, String str4, String str5, String str6, Integer num8, Integer num9, Integer num10, String str7, String str8, Integer num11, String str9, List list, CodedLinkExtendedType codedLinkExtendedType, AnnotatedStructurableText annotatedStructurableText, String str10, boolean z10, int i13, Object obj) {
@@ -373,19 +373,19 @@ public final class EmbeddedActivityInviteEmbedImpl extends CodedLinkEmbed implem
         compositeEncoder.w(serialDescriptor, 0, embeddedActivityInviteEmbedImpl.getBackgroundColor());
         compositeEncoder.w(serialDescriptor, 1, embeddedActivityInviteEmbedImpl.getBorderColor());
         compositeEncoder.w(serialDescriptor, 2, embeddedActivityInviteEmbedImpl.getHeaderColor());
-        n2 n2Var = n2.f50033a;
+        n2 n2Var = n2.f50601a;
         compositeEncoder.o(serialDescriptor, 3, n2Var, embeddedActivityInviteEmbedImpl.getHeaderText());
         if (compositeEncoder.z(serialDescriptor, 4) || embeddedActivityInviteEmbedImpl.getType() != null) {
             compositeEncoder.o(serialDescriptor, 4, InviteType.Serializer.INSTANCE, embeddedActivityInviteEmbedImpl.getType());
         }
         if (compositeEncoder.z(serialDescriptor, 5) || embeddedActivityInviteEmbedImpl.getAcceptLabelBackgroundColor() != null) {
-            compositeEncoder.o(serialDescriptor, 5, p0.f50049a, embeddedActivityInviteEmbedImpl.getAcceptLabelBackgroundColor());
+            compositeEncoder.o(serialDescriptor, 5, p0.f50617a, embeddedActivityInviteEmbedImpl.getAcceptLabelBackgroundColor());
         }
         if (compositeEncoder.z(serialDescriptor, 6) || embeddedActivityInviteEmbedImpl.getAcceptLabelBorderColor() != null) {
-            compositeEncoder.o(serialDescriptor, 6, p0.f50049a, embeddedActivityInviteEmbedImpl.getAcceptLabelBorderColor());
+            compositeEncoder.o(serialDescriptor, 6, p0.f50617a, embeddedActivityInviteEmbedImpl.getAcceptLabelBorderColor());
         }
         if (compositeEncoder.z(serialDescriptor, 7) || embeddedActivityInviteEmbedImpl.getAcceptLabelColor() != null) {
-            compositeEncoder.o(serialDescriptor, 7, p0.f50049a, embeddedActivityInviteEmbedImpl.getAcceptLabelColor());
+            compositeEncoder.o(serialDescriptor, 7, p0.f50617a, embeddedActivityInviteEmbedImpl.getAcceptLabelColor());
         }
         if (compositeEncoder.z(serialDescriptor, 8) || embeddedActivityInviteEmbedImpl.getAcceptLabelText() != null) {
             compositeEncoder.o(serialDescriptor, 8, n2Var, embeddedActivityInviteEmbedImpl.getAcceptLabelText());
@@ -394,25 +394,25 @@ public final class EmbeddedActivityInviteEmbedImpl extends CodedLinkEmbed implem
             compositeEncoder.o(serialDescriptor, 9, n2Var, embeddedActivityInviteEmbedImpl.getBodyText());
         }
         if (compositeEncoder.z(serialDescriptor, 10) || embeddedActivityInviteEmbedImpl.getBodyTextColor() != null) {
-            compositeEncoder.o(serialDescriptor, 10, p0.f50049a, embeddedActivityInviteEmbedImpl.getBodyTextColor());
+            compositeEncoder.o(serialDescriptor, 10, p0.f50617a, embeddedActivityInviteEmbedImpl.getBodyTextColor());
         }
         if (compositeEncoder.z(serialDescriptor, 11) || embeddedActivityInviteEmbedImpl.getCanBeAccepted() != null) {
-            compositeEncoder.o(serialDescriptor, 11, h.f49997a, embeddedActivityInviteEmbedImpl.getCanBeAccepted());
+            compositeEncoder.o(serialDescriptor, 11, h.f50565a, embeddedActivityInviteEmbedImpl.getCanBeAccepted());
         }
         if (compositeEncoder.z(serialDescriptor, 12) || embeddedActivityInviteEmbedImpl.getEmbedCanBeTapped() != null) {
-            compositeEncoder.o(serialDescriptor, 12, h.f49997a, embeddedActivityInviteEmbedImpl.getEmbedCanBeTapped());
+            compositeEncoder.o(serialDescriptor, 12, h.f50565a, embeddedActivityInviteEmbedImpl.getEmbedCanBeTapped());
         }
         if (compositeEncoder.z(serialDescriptor, 13) || embeddedActivityInviteEmbedImpl.getResolvingGradientEnd() != null) {
-            compositeEncoder.o(serialDescriptor, 13, p0.f50049a, embeddedActivityInviteEmbedImpl.getResolvingGradientEnd());
+            compositeEncoder.o(serialDescriptor, 13, p0.f50617a, embeddedActivityInviteEmbedImpl.getResolvingGradientEnd());
         }
         if (compositeEncoder.z(serialDescriptor, 14) || embeddedActivityInviteEmbedImpl.getResolvingGradientStart() != null) {
-            compositeEncoder.o(serialDescriptor, 14, p0.f50049a, embeddedActivityInviteEmbedImpl.getResolvingGradientStart());
+            compositeEncoder.o(serialDescriptor, 14, p0.f50617a, embeddedActivityInviteEmbedImpl.getResolvingGradientStart());
         }
         if (compositeEncoder.z(serialDescriptor, 15) || embeddedActivityInviteEmbedImpl.getSplashHasRadialGradient() != null) {
-            compositeEncoder.o(serialDescriptor, 15, h.f49997a, embeddedActivityInviteEmbedImpl.getSplashHasRadialGradient());
+            compositeEncoder.o(serialDescriptor, 15, h.f50565a, embeddedActivityInviteEmbedImpl.getSplashHasRadialGradient());
         }
         if (compositeEncoder.z(serialDescriptor, 16) || embeddedActivityInviteEmbedImpl.getSplashOpacity() != null) {
-            compositeEncoder.o(serialDescriptor, 16, p0.f50049a, embeddedActivityInviteEmbedImpl.getSplashOpacity());
+            compositeEncoder.o(serialDescriptor, 16, p0.f50617a, embeddedActivityInviteEmbedImpl.getSplashOpacity());
         }
         if (compositeEncoder.z(serialDescriptor, 17) || embeddedActivityInviteEmbedImpl.getSplashUrl() != null) {
             compositeEncoder.o(serialDescriptor, 17, n2Var, embeddedActivityInviteEmbedImpl.getSplashUrl());
@@ -424,13 +424,13 @@ public final class EmbeddedActivityInviteEmbedImpl extends CodedLinkEmbed implem
             compositeEncoder.o(serialDescriptor, 19, n2Var, embeddedActivityInviteEmbedImpl.getSubtitle());
         }
         if (compositeEncoder.z(serialDescriptor, 20) || embeddedActivityInviteEmbedImpl.getSubtitleColor() != null) {
-            compositeEncoder.o(serialDescriptor, 20, p0.f50049a, embeddedActivityInviteEmbedImpl.getSubtitleColor());
+            compositeEncoder.o(serialDescriptor, 20, p0.f50617a, embeddedActivityInviteEmbedImpl.getSubtitleColor());
         }
         if (compositeEncoder.z(serialDescriptor, 21) || embeddedActivityInviteEmbedImpl.getThumbnailBackgroundColor() != null) {
-            compositeEncoder.o(serialDescriptor, 21, p0.f50049a, embeddedActivityInviteEmbedImpl.getThumbnailBackgroundColor());
+            compositeEncoder.o(serialDescriptor, 21, p0.f50617a, embeddedActivityInviteEmbedImpl.getThumbnailBackgroundColor());
         }
         if (compositeEncoder.z(serialDescriptor, 22) || embeddedActivityInviteEmbedImpl.getThumbnailCornerRadius() != null) {
-            compositeEncoder.o(serialDescriptor, 22, p0.f50049a, embeddedActivityInviteEmbedImpl.getThumbnailCornerRadius());
+            compositeEncoder.o(serialDescriptor, 22, p0.f50617a, embeddedActivityInviteEmbedImpl.getThumbnailCornerRadius());
         }
         if (compositeEncoder.z(serialDescriptor, 23) || embeddedActivityInviteEmbedImpl.getThumbnailText() != null) {
             compositeEncoder.o(serialDescriptor, 23, n2Var, embeddedActivityInviteEmbedImpl.getThumbnailText());
@@ -439,7 +439,7 @@ public final class EmbeddedActivityInviteEmbedImpl extends CodedLinkEmbed implem
             compositeEncoder.o(serialDescriptor, 24, n2Var, embeddedActivityInviteEmbedImpl.getThumbnailUrl());
         }
         if (compositeEncoder.z(serialDescriptor, 25) || embeddedActivityInviteEmbedImpl.getTitleColor() != null) {
-            compositeEncoder.o(serialDescriptor, 25, p0.f50049a, embeddedActivityInviteEmbedImpl.getTitleColor());
+            compositeEncoder.o(serialDescriptor, 25, p0.f50617a, embeddedActivityInviteEmbedImpl.getTitleColor());
         }
         if (compositeEncoder.z(serialDescriptor, 26) || embeddedActivityInviteEmbedImpl.getTitleText() != null) {
             compositeEncoder.o(serialDescriptor, 26, n2Var, embeddedActivityInviteEmbedImpl.getTitleText());

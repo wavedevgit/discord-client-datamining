@@ -1,6 +1,6 @@
 package ps;
 /* JADX INFO: Access modifiers changed from: package-private */
-/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public class c extends b {
     public static int a(long j10) {
         return Long.signum(j10);

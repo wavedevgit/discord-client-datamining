@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
     var1 = function arg0() {
-        _fun77269: for (var _fun77269_ip = 0;;) switch (_fun77269_ip) {
+        _fun72960: for (var _fun72960_ip = 0;;) switch (_fun72960_ip) {
             case 0:
                 var3 = arg0;
                 var2 = var3.filter;
@@ -25,8 +25,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = 0;
                 var0 = var2 > var0;
                 if (!var0) {
-                    _fun77269_ip = 54;
-                    continue _fun77269
+                    _fun72960_ip = 54;
+                    continue _fun72960
                 }
             case 36:
                 var2 = var3.every;
@@ -75,7 +75,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/self_mod/inappropriate_conversation/InappropriateConversationUtils.tsx';
     var4 = var5.bind(var6)(var4);
     var4 = function() {
-        _fun77272: for (var _fun77272_ip = 0;;) switch (_fun77272_ip) {
+        _fun72963: for (var _fun72963_ip = 0;;) switch (_fun72963_ip) {
             case 0:
                 var2 = _closure1_slot3;
                 var1 = var2.getCurrentUser;
@@ -85,8 +85,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = undefined;
                 var3 = undefined;
                 if (var2) {
-                    _fun77272_ip = 39;
-                    continue _fun77272
+                    _fun72963_ip = 39;
+                    continue _fun72963
                 }
             case 29:
                 var2 = var5.isStaff;
@@ -100,24 +100,24 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var1 == var5;
                 var3 = undefined;
                 if (var6) {
-                    _fun77272_ip = 90;
-                    continue _fun77272
+                    _fun72963_ip = 90;
+                    continue _fun72963
                 }
             case 70:
                 var5 = var5.inappropriateConversationWarnings;
                 var6 = var1 == var5;
                 var3 = undefined;
                 if (var6) {
-                    _fun77272_ip = 90;
-                    continue _fun77272
+                    _fun72963_ip = 90;
+                    continue _fun72963
                 }
             case 85:
                 var3 = var5.value;
             case 90:
                 var1 = var1 == var3;
                 if (var1) {
-                    _fun77272_ip = 100;
-                    continue _fun77272
+                    _fun72963_ip = 100;
+                    continue _fun72963
                 }
             case 97:
                 var1 = var3;
@@ -130,15 +130,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var3.getUserIsTeen;
                 var0 = var0.bind(var3)();
                 if (var0) {
-                    _fun77272_ip = 136;
-                    continue _fun77272
+                    _fun72963_ip = 136;
+                    continue _fun72963
                 }
             case 133:
                 var0 = var2;
             case 136:
                 if (!var0) {
-                    _fun77272_ip = 142;
-                    continue _fun77272
+                    _fun72963_ip = 142;
+                    continue _fun72963
                 }
             case 139:
                 var0 = var1;
@@ -148,7 +148,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getSafetyAlertsSettingOrDefault = var4;
     var4 = function arg0() {
-        _fun77273: for (var _fun77273_ip = 0;;) switch (_fun77273_ip) {
+        _fun72964: for (var _fun72964_ip = 0;;) switch (_fun72964_ip) {
             case 0:
                 var3 = function arg0() {
                     var2 = _closure1_slot4;
@@ -182,8 +182,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.length;
                 var2 = 0;
                 if (!(!(var1 > var2))) {
-                    _fun77273_ip = 84;
-                    continue _fun77273
+                    _fun72964_ip = 84;
+                    continue _fun72964
                 }
             case 47:
                 var1 = var3.filter;
@@ -199,8 +199,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = 1;
                 var0 = null;
                 if (!(var3 === var4)) {
-                    _fun77273_ip = 82;
-                    continue _fun77273
+                    _fun72964_ip = 82;
+                    continue _fun72964
                 }
             case 78:
                 var0 = var1[var2];
@@ -213,15 +213,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getInappropriateConversationTakeoverForChannel = var4;
     var3 = function arg0() {
-        _fun77278: for (var _fun77278_ip = 0;;) switch (_fun77278_ip) {
+        _fun72969: for (var _fun72969_ip = 0;;) switch (_fun72969_ip) {
             case 0:
                 var1 = arg0;
                 var2 = var1.safetyWarnings;
                 var0 = null;
                 var0 = var0 != var2;
                 if (!var0) {
-                    _fun77278_ip = 38;
-                    continue _fun77278
+                    _fun72969_ip = 38;
+                    continue _fun72969
                 }
             case 18:
                 var3 = _closure1_slot6;
@@ -235,4 +235,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.shouldShowInappropriateConversationTakeoverForChannelRecord = var3;
     var2.shouldShowTakeoverForWarnings = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1310, 1621, 8973, 9753, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1310, 1621, 9072, 9116, 2]);

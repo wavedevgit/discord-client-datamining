@@ -78,10 +78,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = new Array(3);
     var8[0] = var12;
     var12 = {};
-    var13 = 200;
+    var13 = 300;
     var12.order = var13;
     var13 = function() {
-        _fun81109: for (var _fun81109_ip = 0;;) switch (_fun81109_ip) {
+        _fun82007: for (var _fun82007_ip = 0;;) switch (_fun82007_ip) {
             case 0:
                 var1 = _closure1_slot4;
                 var0 = var1.getCurrentUser;
@@ -90,8 +90,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var1 == var0;
                 var1 = undefined;
                 if (var2) {
-                    _fun81109_ip = 33;
-                    continue _fun81109
+                    _fun82007_ip = 33;
+                    continue _fun82007
                 }
             case 27:
                 var1 = var0.nsfwAllowed;
@@ -103,43 +103,35 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var12.predicate = var13;
     var13 = 8;
-    var14 = var6[var13];
-    var14 = var5.bind(var0)(var14);
-    var14 = var14.SensitiveContentFiltersTeenNotice;
-    var12.Component = var14;
+    var13 = var6[var13];
+    var13 = var5.bind(var0)(var13);
+    var13 = var13.SensitiveContentFiltersTeenNotice;
+    var12.Component = var13;
     var8[1] = var12;
     var12 = {};
-    var14 = 300;
+    var14 = 200;
     var12.order = var14;
-    var14 = function() {
-        _fun81110: for (var _fun81110_ip = 0;;) switch (_fun81110_ip) {
+    var13 = function() {
+        _fun82008: for (var _fun82008_ip = 0;;) switch (_fun82008_ip) {
             case 0:
-                var4 = _closure1_slot0;
-                var5 = _closure1_slot1;
+                var5 = _closure1_slot0;
+                var6 = _closure1_slot1;
                 var0 = 9;
-                var0 = var5[var0];
+                var0 = var6[var0];
                 var3 = undefined;
-                var6 = var4.bind(var3)(var0);
-                var2 = var6.getIsGidgetPawtectEnabled;
-                var0 = 'SensitiveContentFiltersNotice';
-                var2 = var2.bind(var6)(var0);
+                var4 = var5.bind(var3)(var0);
+                var2 = var4.isFeatureAgeGated;
                 var0 = 10;
-                var0 = var5[var0];
-                var4 = var4.bind(var3)(var0);
-                var0 = var4.hasTeenDefaults;
-                var0 = var0.bind(var4)();
-                if (var0) {
-                    _fun81110_ip = 70;
-                    continue _fun81110
-                }
-            case 67:
-                var0 = var2;
-            case 70:
+                var0 = var6[var0];
+                var0 = var5.bind(var3)(var0);
+                var0 = var0.AgeGatedFeature;
+                var0 = var0.REACTIVE_CHECK;
+                var0 = var2.bind(var4)(var0);
                 if (!var0) {
-                    _fun81110_ip = 106;
-                    continue _fun81110
+                    _fun82008_ip = 96;
+                    continue _fun82008
                 }
-            case 73:
+            case 63:
                 var2 = _closure1_slot0;
                 var4 = _closure1_slot1;
                 var1 = 11;
@@ -148,15 +140,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var2.isAgeVerified;
                 var1 = var1.bind(var2)();
                 var0 = !var1;
-            case 106:
+            case 96:
                 return var0;
         }
     };
-    var12.predicate = var14;
-    var13 = var6[var13];
-    var13 = var5.bind(var0)(var13);
-    var13 = var13.SensitiveContentFiltersAgeVerificationNotice;
-    var12.Component = var13;
+    var12.predicate = var13;
+    var13 = 12;
+    var15 = var6[var13];
+    var15 = var9.bind(var0)(var15);
+    var12.Component = var15;
     var8[2] = var12;
     var4.SENSITIVE_CONTENT_FILTERS = var8;
     var12 = {};
@@ -168,8 +160,48 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = var6[var7];
     var8 = var9.bind(var0)(var8);
     var12.Component = var8;
-    var8 = new Array(1);
+    var8 = new Array(2);
     var8[0] = var12;
+    var12 = {};
+    var12.order = var14;
+    var14 = function() {
+        _fun82009: for (var _fun82009_ip = 0;;) switch (_fun82009_ip) {
+            case 0:
+                var5 = _closure1_slot0;
+                var6 = _closure1_slot1;
+                var0 = 9;
+                var0 = var6[var0];
+                var3 = undefined;
+                var4 = var5.bind(var3)(var0);
+                var2 = var4.isFeatureAgeGated;
+                var0 = 10;
+                var0 = var6[var0];
+                var0 = var5.bind(var3)(var0);
+                var0 = var0.AgeGatedFeature;
+                var0 = var0.REACTIVE_CHECK;
+                var0 = var2.bind(var4)(var0);
+                if (!var0) {
+                    _fun82009_ip = 96;
+                    continue _fun82009
+                }
+            case 63:
+                var2 = _closure1_slot0;
+                var4 = _closure1_slot1;
+                var1 = 11;
+                var1 = var4[var1];
+                var2 = var2.bind(var3)(var1);
+                var1 = var2.isAgeVerified;
+                var1 = var1.bind(var2)();
+                var0 = !var1;
+            case 96:
+                return var0;
+        }
+    };
+    var12.predicate = var14;
+    var13 = var6[var13];
+    var13 = var9.bind(var0)(var13);
+    var12.Component = var13;
+    var8[1] = var12;
     var4.CONTENT_AND_SOCIAL = var8;
     var8 = {};
     var8.order = var11;
@@ -184,14 +216,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7[0] = var8;
     var4.DATA_AND_PRIVACY = var7;
     var _closure1_slot7 = var4;
-    var4 = 12;
+    var4 = 13;
     var4 = var6[var4];
     var6 = var5.bind(var0)(var4);
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/user_settings/native/privacy_and_safety/SettingsScreenNotices.tsx';
     var4 = var5.bind(var6)(var4);
     var3 = function arg0() {
-        _fun81111: for (var _fun81111_ip = 0;;) switch (_fun81111_ip) {
+        _fun82010: for (var _fun82010_ip = 0;;) switch (_fun82010_ip) {
             case 0:
                 var1 = arg0;
                 var7 = var1.screen;
@@ -204,7 +236,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = new Array(1);
                 var2[0] = var7;
                 var0 = function() { // Environment: var0
-                    _fun81112: for (var _fun81112_ip = 0;;) switch (_fun81112_ip) {
+                    _fun82011: for (var _fun82011_ip = 0;;) switch (_fun82011_ip) {
                         case 0:
                             var2 = _closure1_slot7;
                             var1 = _closure2_slot0;
@@ -238,8 +270,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1 = 0;
                             var0 = null;
                             if (!(var1 !== var3)) {
-                                _fun81112_ip = 89;
-                                continue _fun81112
+                                _fun82011_ip = 89;
+                                continue _fun82011
                             }
                         case 85:
                             var0 = var2[var1];
@@ -251,8 +283,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = null;
                 var2 = var0 == var6;
                 if (var2) {
-                    _fun81111_ip = 106;
-                    continue _fun81111
+                    _fun82010_ip = 106;
+                    continue _fun82010
                 }
             case 67:
                 var3 = _closure1_slot5;
@@ -271,4 +303,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var3;
     var2.SettingsScreen = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1621, 33, 1297, 671, 4665, 10270, 10271, 4283, 4284, 4254, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1621, 33, 1297, 671, 4662, 10422, 10423, 4284, 4306, 4254, 10424, 2]);

@@ -125,7 +125,7 @@ public final class ChatScrollPositionEvent implements ReactEvent {
         compositeEncoder.x(serialDescriptor, 5, chatScrollPositionEvent.shouldShowJumpToPresent);
         compositeEncoder.x(serialDescriptor, 6, chatScrollPositionEvent.isFirstMessageVisible);
         compositeEncoder.w(serialDescriptor, 7, chatScrollPositionEvent.firstVisibleMessageIndex);
-        x xVar = x.f50087a;
+        x xVar = x.f50655a;
         compositeEncoder.o(serialDescriptor, 8, xVar, chatScrollPositionEvent.firstVisibleMessagePercentVisible);
         compositeEncoder.w(serialDescriptor, 9, chatScrollPositionEvent.lastVisibleMessageIndex);
         compositeEncoder.o(serialDescriptor, 10, xVar, chatScrollPositionEvent.lastVisibleMessagePercentVisible);

@@ -25,7 +25,7 @@ public abstract class d {
     private static final ByteString f7856e;
 
     static {
-        ByteString.a aVar = ByteString.f40592o;
+        ByteString.a aVar = ByteString.f41160o;
         f7852a = aVar.g("/");
         f7853b = aVar.g("\\");
         f7854c = aVar.g("/\\");
@@ -210,7 +210,7 @@ public abstract class d {
                         arrayList.add(h12);
                     }
                 }
-            } else if (!Intrinsics.areEqual(h12, f7855d) && !Intrinsics.areEqual(h12, ByteString.f40593p)) {
+            } else if (!Intrinsics.areEqual(h12, f7855d) && !Intrinsics.areEqual(h12, ByteString.f41161p)) {
                 arrayList.add(h12);
             }
         }

@@ -8,24 +8,24 @@ import wj.a;
 final class r extends PhantomReference implements a.InterfaceC0737a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Set f52832a;
+    private final Set f53400a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Runnable f52833b;
+    private final Runnable f53401b;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public /* synthetic */ r(Object obj, ReferenceQueue referenceQueue, Set set, Runnable runnable, q qVar) {
         super(obj, referenceQueue);
-        this.f52832a = set;
-        this.f52833b = runnable;
+        this.f53400a = set;
+        this.f53401b = runnable;
     }
 
     @Override // wj.a.InterfaceC0737a
     public final void a() {
-        if (!this.f52832a.remove(this)) {
+        if (!this.f53400a.remove(this)) {
             return;
         }
         clear();
-        this.f52833b.run();
+        this.f53401b.run();
     }
 }

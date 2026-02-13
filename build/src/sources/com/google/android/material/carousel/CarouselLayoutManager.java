@@ -562,7 +562,7 @@ public class CarouselLayoutManager extends RecyclerView.LayoutManager implements
         if (attributeSet != null) {
             TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, bh.l.L0);
             h0(obtainStyledAttributes.getInt(bh.l.M0, 0));
-            setOrientation(obtainStyledAttributes.getInt(q3.d.f43902b, 0));
+            setOrientation(obtainStyledAttributes.getInt(q3.d.f44470b, 0));
             obtainStyledAttributes.recycle();
         }
     }

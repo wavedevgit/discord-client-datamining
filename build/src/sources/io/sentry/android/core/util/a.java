@@ -5,10 +5,10 @@ import android.content.Context;
 public final class a {
 
     /* renamed from: a  reason: collision with root package name */
-    private volatile Object f28589a = null;
+    private volatile Object f29157a = null;
 
     /* renamed from: b  reason: collision with root package name */
-    private final InterfaceC0384a f28590b;
+    private final InterfaceC0384a f29158b;
 
     /* renamed from: io.sentry.android.core.util.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
@@ -17,20 +17,20 @@ public final class a {
     }
 
     public a(InterfaceC0384a interfaceC0384a) {
-        this.f28590b = interfaceC0384a;
+        this.f29158b = interfaceC0384a;
     }
 
     public Object a(Context context) {
-        if (this.f28589a == null) {
+        if (this.f29157a == null) {
             synchronized (this) {
                 try {
-                    if (this.f28589a == null) {
-                        this.f28589a = this.f28590b.a(context);
+                    if (this.f29157a == null) {
+                        this.f29157a = this.f29158b.a(context);
                     }
                 } finally {
                 }
             }
         }
-        return this.f28589a;
+        return this.f29157a;
     }
 }

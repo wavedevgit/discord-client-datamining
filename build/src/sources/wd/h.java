@@ -10,7 +10,7 @@ import oe.s0;
 public interface h {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final h f52583a = new d();
+    public static final h f53151a = new d();
 
     j a(Uri uri, Format format, List list, s0 s0Var, Map map, uc.l lVar, t1 t1Var);
 }

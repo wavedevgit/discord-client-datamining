@@ -123,7 +123,7 @@ public final class StringSelectComponent extends SelectComponent {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final /* synthetic */ KSerializer _childSerializers$_anonymous_$1() {
-        return new tt.f(p0.f50049a);
+        return new tt.f(p0.f50617a);
     }
 
     public static /* synthetic */ StringSelectComponent copy$default(StringSelectComponent stringSelectComponent, int i10, String str, ActionComponentState actionComponentState, String str2, String str3, String str4, int i11, int i12, boolean z10, List list, List list2, int i13, Object obj) {
@@ -181,10 +181,10 @@ public final class StringSelectComponent extends SelectComponent {
         compositeEncoder.k(serialDescriptor, 2, ActionComponentState.Serializer.INSTANCE, stringSelectComponent.getState());
         compositeEncoder.y(serialDescriptor, 3, stringSelectComponent.getCustomId());
         if (compositeEncoder.z(serialDescriptor, 4) || stringSelectComponent.getPlaceholder() != null) {
-            compositeEncoder.o(serialDescriptor, 4, n2.f50033a, stringSelectComponent.getPlaceholder());
+            compositeEncoder.o(serialDescriptor, 4, n2.f50601a, stringSelectComponent.getPlaceholder());
         }
         if (compositeEncoder.z(serialDescriptor, 5) || stringSelectComponent.getAccessibilityLabel() != null) {
-            compositeEncoder.o(serialDescriptor, 5, n2.f50033a, stringSelectComponent.getAccessibilityLabel());
+            compositeEncoder.o(serialDescriptor, 5, n2.f50601a, stringSelectComponent.getAccessibilityLabel());
         }
         compositeEncoder.w(serialDescriptor, 6, stringSelectComponent.getMinValues());
         compositeEncoder.w(serialDescriptor, 7, stringSelectComponent.getMaxValues());

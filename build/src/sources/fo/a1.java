@@ -362,7 +362,7 @@ public final class a1 {
         Intrinsics.checkNotNullParameter(image, "image");
         j0 e10 = m0.e(image);
         if (e10 == null) {
-            return new jo.c(null, jo.b.f31216t, 0, false, false, false, 0.0f, null);
+            return new jo.c(null, jo.b.f31784t, 0, false, false, false, 0.0f, null);
         }
         return f(e10);
     }
@@ -389,10 +389,10 @@ public final class a1 {
             List list = (List) zg.m.a(e10);
             List list2 = (List) e10.l();
             if (list2.isEmpty()) {
-                return new jo.c(null, jo.b.f31213q, list2.size(), false, false, false, 0.0f, k10);
+                return new jo.c(null, jo.b.f31781q, list2.size(), false, false, false, 0.0f, k10);
             }
             if (list2.size() > 1) {
-                return new jo.c(null, jo.b.f31211o, list2.size(), false, false, false, 0.0f, k10);
+                return new jo.c(null, jo.b.f31779o, list2.size(), false, false, false, 0.0f, k10);
             }
             Intrinsics.checkNotNull(list2);
             ek.a aVar = (ek.a) CollectionsKt.o0(list2);
@@ -407,20 +407,20 @@ public final class a1 {
             boolean p10 = p(a12, j10);
             float c11 = aVar.c();
             if (q10) {
-                bVar = jo.b.f31209e;
+                bVar = jo.b.f31777e;
             } else if (r10) {
-                bVar = jo.b.f31210i;
+                bVar = jo.b.f31778i;
             } else if (!p10) {
-                bVar = jo.b.f31208d;
+                bVar = jo.b.f31776d;
             } else {
                 if (-10.0f < c11 && c11 < 10.0f) {
                     Intrinsics.checkNotNull(aVar);
                     if (!o(aVar, j10)) {
-                        bVar = jo.b.f31208d;
+                        bVar = jo.b.f31776d;
                     } else {
                         c cVar2 = this.f23967c;
                         if (cVar2 != c.f23976d && cVar2 != c.f23979o) {
-                            bVar = jo.b.f31214r;
+                            bVar = jo.b.f31782r;
                         } else {
                             c10 = c(imageToAnalyze, b.f23971d);
                             y0Var = c10;
@@ -430,7 +430,7 @@ public final class a1 {
                 } else if (c11 < -15.0f) {
                     c cVar3 = this.f23967c;
                     if (cVar3 != c.f23978i && cVar3 != c.f23979o) {
-                        bVar = jo.b.f31214r;
+                        bVar = jo.b.f31782r;
                     } else {
                         c10 = c(imageToAnalyze, b.f23973i);
                         y0Var = c10;
@@ -439,14 +439,14 @@ public final class a1 {
                 } else if (15.0f < c11) {
                     c cVar4 = this.f23967c;
                     if (cVar4 != c.f23977e && cVar4 != c.f23979o) {
-                        bVar = jo.b.f31214r;
+                        bVar = jo.b.f31782r;
                     } else {
                         c10 = c(imageToAnalyze, b.f23972e);
                         y0Var = c10;
                         bVar2 = null;
                     }
                 } else {
-                    bVar = jo.b.f31214r;
+                    bVar = jo.b.f31782r;
                 }
                 return new jo.c(y0Var, bVar2, list2.size(), q10, r10, p10, c11, k10);
             }
@@ -454,7 +454,7 @@ public final class a1 {
             y0Var = null;
             return new jo.c(y0Var, bVar2, list2.size(), q10, r10, p10, c11, k10);
         } catch (ExecutionException unused) {
-            return new jo.c(null, jo.b.f31215s, 0, false, false, false, 0.0f, k10);
+            return new jo.c(null, jo.b.f31783s, 0, false, false, false, 0.0f, k10);
         }
     }
 

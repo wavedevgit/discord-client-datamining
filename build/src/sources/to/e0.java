@@ -22,22 +22,22 @@ import to.d0;
 public final class e0 implements en.o<Result> {
 
     /* renamed from: b  reason: collision with root package name */
-    private final Context f49052b;
+    private final Context f49620b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final fo.f0 f49053c;
+    private final fo.f0 f49621c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final gq.c f49054d;
+    private final gq.c f49622d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final c4.e f49055e;
+    private final c4.e f49623e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final String f49056f;
+    private final String f49624f;
 
     /* renamed from: g  reason: collision with root package name */
-    private ap.a f49057g;
+    private ap.a f49625g;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public interface a {
@@ -48,7 +48,7 @@ public final class e0 implements en.o<Result> {
     public /* synthetic */ class b {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final /* synthetic */ int[] f49058a;
+        public static final /* synthetic */ int[] f49626a;
 
         static {
             int[] iArr = new int[t0.c.values().length];
@@ -60,7 +60,7 @@ public final class e0 implements en.o<Result> {
                 iArr[t0.c.f24128e.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
-            f49058a = iArr;
+            f49626a = iArr;
         }
     }
 
@@ -68,29 +68,29 @@ public final class e0 implements en.o<Result> {
     public static final class c implements Flow {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ Flow f49059d;
+        final /* synthetic */ Flow f49627d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ e0 f49060e;
+        final /* synthetic */ e0 f49628e;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         public static final class a implements FlowCollector {
 
             /* renamed from: d  reason: collision with root package name */
-            final /* synthetic */ FlowCollector f49061d;
+            final /* synthetic */ FlowCollector f49629d;
 
             /* renamed from: e  reason: collision with root package name */
-            final /* synthetic */ e0 f49062e;
+            final /* synthetic */ e0 f49630e;
 
             /* renamed from: to.e0$c$a$a  reason: collision with other inner class name */
             /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
             public static final class C0668a extends kotlin.coroutines.jvm.internal.d {
 
                 /* renamed from: d  reason: collision with root package name */
-                /* synthetic */ Object f49063d;
+                /* synthetic */ Object f49631d;
 
                 /* renamed from: e  reason: collision with root package name */
-                int f49064e;
+                int f49632e;
 
                 public C0668a(Continuation continuation) {
                     super(continuation);
@@ -98,15 +98,15 @@ public final class e0 implements en.o<Result> {
 
                 @Override // kotlin.coroutines.jvm.internal.a
                 public final Object invokeSuspend(Object obj) {
-                    this.f49063d = obj;
-                    this.f49064e |= Integer.MIN_VALUE;
+                    this.f49631d = obj;
+                    this.f49632e |= Integer.MIN_VALUE;
                     return a.this.emit(null, this);
                 }
             }
 
             public a(FlowCollector flowCollector, e0 e0Var) {
-                this.f49061d = flowCollector;
-                this.f49062e = e0Var;
+                this.f49629d = flowCollector;
+                this.f49630e = e0Var;
             }
 
             /* JADX WARN: Removed duplicated region for block: B:10:0x0023  */
@@ -123,20 +123,20 @@ public final class e0 implements en.o<Result> {
                     if (r0 == 0) goto L13
                     r0 = r8
                     to.e0$c$a$a r0 = (to.e0.c.a.C0668a) r0
-                    int r1 = r0.f49064e
+                    int r1 = r0.f49632e
                     r2 = -2147483648(0xffffffff80000000, float:-0.0)
                     r3 = r1 & r2
                     if (r3 == 0) goto L13
                     int r1 = r1 - r2
-                    r0.f49064e = r1
+                    r0.f49632e = r1
                     goto L18
                 L13:
                     to.e0$c$a$a r0 = new to.e0$c$a$a
                     r0.<init>(r8)
                 L18:
-                    java.lang.Object r8 = r0.f49063d
+                    java.lang.Object r8 = r0.f49631d
                     java.lang.Object r1 = gs.b.f()
-                    int r2 = r0.f49064e
+                    int r2 = r0.f49632e
                     r3 = 1
                     if (r2 == 0) goto L31
                     if (r2 != r3) goto L29
@@ -149,7 +149,7 @@ public final class e0 implements en.o<Result> {
                     throw r7
                 L31:
                     kotlin.c.b(r8)
-                    kotlinx.coroutines.flow.FlowCollector r8 = r6.f49061d
+                    kotlinx.coroutines.flow.FlowCollector r8 = r6.f49629d
                     kotlin.Result r7 = (kotlin.Result) r7
                     java.lang.Object r7 = r7.j()
                     java.lang.Throwable r2 = kotlin.Result.e(r7)
@@ -160,20 +160,20 @@ public final class e0 implements en.o<Result> {
                     fo.t0$b r7 = (fo.t0.b) r7
                     fo.h0 r2 = r7.e()
                     if (r2 == 0) goto L74
-                    to.e0 r4 = r6.f49062e
+                    to.e0 r4 = r6.f49630e
                     ap.a r5 = to.e0.c(r4)
                     ap.a r2 = ap.b.b(r5, r2)
                     to.e0.d(r4, r2)
-                    to.e0 r2 = r6.f49062e
+                    to.e0 r2 = r6.f49630e
                     ap.a r2 = to.e0.c(r2)
                     boolean r2 = ap.b.a(r2)
                     if (r2 == 0) goto L7f
-                    to.e0 r2 = r6.f49062e
+                    to.e0 r2 = r6.f49630e
                     java.lang.Object r7 = to.e0.b(r2, r7)
                     kotlin.Result r7 = kotlin.Result.a(r7)
                     goto L8d
                 L74:
-                    to.e0 r2 = r6.f49062e
+                    to.e0 r2 = r6.f49630e
                     java.lang.Object r7 = to.e0.b(r2, r7)
                     kotlin.Result r7 = kotlin.Result.a(r7)
                     goto L8d
@@ -186,12 +186,12 @@ public final class e0 implements en.o<Result> {
                     kotlin.Result r7 = kotlin.Result.a(r7)
                 L8d:
                     if (r7 == 0) goto L98
-                    r0.f49064e = r3
+                    r0.f49632e = r3
                     java.lang.Object r7 = r8.emit(r7, r0)
                     if (r7 != r1) goto L98
                     return r1
                 L98:
-                    kotlin.Unit r7 = kotlin.Unit.f31988a
+                    kotlin.Unit r7 = kotlin.Unit.f32556a
                     return r7
                 */
                 throw new UnsupportedOperationException("Method not decompiled: to.e0.c.a.emit(java.lang.Object, kotlin.coroutines.Continuation):java.lang.Object");
@@ -199,17 +199,17 @@ public final class e0 implements en.o<Result> {
         }
 
         public c(Flow flow, e0 e0Var) {
-            this.f49059d = flow;
-            this.f49060e = e0Var;
+            this.f49627d = flow;
+            this.f49628e = e0Var;
         }
 
         @Override // kotlinx.coroutines.flow.Flow
         public Object collect(FlowCollector flowCollector, Continuation continuation) {
-            Object collect = this.f49059d.collect(new a(flowCollector, this.f49060e), continuation);
+            Object collect = this.f49627d.collect(new a(flowCollector, this.f49628e), continuation);
             if (collect == gs.b.f()) {
                 return collect;
             }
-            return Unit.f31988a;
+            return Unit.f32556a;
         }
     }
 
@@ -219,41 +219,41 @@ public final class e0 implements en.o<Result> {
         Intrinsics.checkNotNullParameter(sdkFilesManager, "sdkFilesManager");
         Intrinsics.checkNotNullParameter(side, "side");
         Intrinsics.checkNotNullParameter(idClassKey, "idClassKey");
-        this.f49052b = context;
-        this.f49053c = governmentIdFeed;
-        this.f49054d = sdkFilesManager;
-        this.f49055e = side;
-        this.f49056f = idClassKey;
-        this.f49057g = new ap.a(null, 1, null);
+        this.f49620b = context;
+        this.f49621c = governmentIdFeed;
+        this.f49622d = sdkFilesManager;
+        this.f49623e = side;
+        this.f49624f = idClassKey;
+        this.f49625g = new ap.a(null, 1, null);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public final Object e(t0.b bVar) {
         d0.d dVar;
         try {
-            String absolutePath = r0.a(bVar.b(), this.f49054d).getAbsolutePath();
+            String absolutePath = r0.a(bVar.b(), this.f49622d).getAbsolutePath();
             Intrinsics.checkNotNullExpressionValue(absolutePath, "getAbsolutePath(...)");
             List e10 = CollectionsKt.e(new c0(absolutePath, null, 2, null));
-            int i10 = b.f49058a[bVar.f().ordinal()];
+            int i10 = b.f49626a[bVar.f().ordinal()];
             if (i10 != 1) {
                 if (i10 == 2) {
-                    dVar = d0.d.f49039e;
+                    dVar = d0.d.f49607e;
                 } else {
                     throw new as.p();
                 }
             } else {
-                dVar = d0.d.f49038d;
+                dVar = d0.d.f49606d;
             }
-            String str = this.f49056f;
+            String str = this.f49624f;
             RawExtraction rawExtraction = null;
-            d0.a aVar = d0.a.f49023d;
+            d0.a aVar = d0.a.f49591d;
             fo.g c10 = bVar.c();
             if (c10 != null) {
                 rawExtraction = q4.a(c10);
             }
             return Result.b(new d0.b(e10, dVar, str, aVar, rawExtraction, f(bVar)));
         } catch (IOException e11) {
-            Result.a aVar2 = Result.f31985e;
+            Result.a aVar2 = Result.f32553e;
             return Result.b(kotlin.c.a(e11));
         }
     }
@@ -274,7 +274,7 @@ public final class e0 implements en.o<Result> {
     @Override // en.o
     public boolean a(en.o otherWorker) {
         Intrinsics.checkNotNullParameter(otherWorker, "otherWorker");
-        if ((otherWorker instanceof e0) && ((e0) otherWorker).f49055e == this.f49055e) {
+        if ((otherWorker instanceof e0) && ((e0) otherWorker).f49623e == this.f49623e) {
             return true;
         }
         return false;
@@ -288,27 +288,27 @@ public final class e0 implements en.o<Result> {
             return false;
         }
         e0 e0Var = (e0) obj;
-        if (Intrinsics.areEqual(this.f49052b, e0Var.f49052b) && Intrinsics.areEqual(this.f49053c, e0Var.f49053c) && Intrinsics.areEqual(this.f49054d, e0Var.f49054d) && this.f49055e == e0Var.f49055e && Intrinsics.areEqual(this.f49056f, e0Var.f49056f)) {
+        if (Intrinsics.areEqual(this.f49620b, e0Var.f49620b) && Intrinsics.areEqual(this.f49621c, e0Var.f49621c) && Intrinsics.areEqual(this.f49622d, e0Var.f49622d) && this.f49623e == e0Var.f49623e && Intrinsics.areEqual(this.f49624f, e0Var.f49624f)) {
             return true;
         }
         return false;
     }
 
     public int hashCode() {
-        return (((((((this.f49052b.hashCode() * 31) + this.f49053c.hashCode()) * 31) + this.f49054d.hashCode()) * 31) + this.f49055e.hashCode()) * 31) + this.f49056f.hashCode();
+        return (((((((this.f49620b.hashCode() * 31) + this.f49621c.hashCode()) * 31) + this.f49622d.hashCode()) * 31) + this.f49623e.hashCode()) * 31) + this.f49624f.hashCode();
     }
 
     @Override // en.o
     public Flow run() {
-        return new c(this.f49053c, this);
+        return new c(this.f49621c, this);
     }
 
     public String toString() {
-        Context context = this.f49052b;
-        fo.f0 f0Var = this.f49053c;
-        gq.c cVar = this.f49054d;
-        c4.e eVar = this.f49055e;
-        String str = this.f49056f;
+        Context context = this.f49620b;
+        fo.f0 f0Var = this.f49621c;
+        gq.c cVar = this.f49622d;
+        c4.e eVar = this.f49623e;
+        String str = this.f49624f;
         return "GovernmentIdAnalyzeWorker(context=" + context + ", governmentIdFeed=" + f0Var + ", sdkFilesManager=" + cVar + ", side=" + eVar + ", idClassKey=" + str + ")";
     }
 }

@@ -73,7 +73,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.useValue = var8;
     var8 = function arg0() {
-        _fun84733: for (var _fun84733_ip = 0;;) switch (_fun84733_ip) {
+        _fun85822: for (var _fun85822_ip = 0;;) switch (_fun85822_ip) {
             case 0:
                 var2 = _closure1_slot0;
                 var1 = _closure1_slot1;
@@ -85,8 +85,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = 'no-preference';
                 var4 = arg0;
                 if (!var4) {
-                    _fun84733_ip = 47;
-                    continue _fun84733
+                    _fun85822_ip = 47;
+                    continue _fun85822
                 }
             case 43:
                 var1 = 'reduce';
@@ -108,15 +108,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = new Array(1);
         var1[0] = var0;
         var0 = function() { // Environment: var0
-            _fun84735: for (var _fun84735_ip = 0;;) switch (_fun84735_ip) {
+            _fun85824: for (var _fun85824_ip = 0;;) switch (_fun85824_ip) {
                 case 0:
                     var0 = _closure1_slot3;
                     var2 = var0.active;
                     var5 = undefined;
                     var0 = undefined;
                     if (!var2) {
-                        _fun84735_ip = 77;
-                        continue _fun84735
+                        _fun85824_ip = 77;
+                        continue _fun85824
                     }
                 case 20:
                     var4 = _closure1_slot0;
@@ -168,4 +168,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1298, 1299, 7103, 566, 10792, 9818, 1234, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1298, 1299, 7091, 566, 10956, 9057, 1235, 2]);

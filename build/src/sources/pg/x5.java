@@ -5,23 +5,23 @@ import bj.c;
 final class x5 implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final x5 f42654a = new x5();
+    static final x5 f43222a = new x5();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final bj.c f42655b;
+    private static final bj.c f43223b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final bj.c f42656c;
+    private static final bj.c f43224c;
 
     static {
         c.b a10 = bj.c.a("stageId");
         f fVar = new f();
         fVar.a(1);
-        f42655b = a10.b(fVar.b()).a();
+        f43223b = a10.b(fVar.b()).a();
         c.b a11 = bj.c.a("device");
         f fVar2 = new f();
         fVar2.a(2);
-        f42656c = a11.b(fVar2.b()).a();
+        f43224c = a11.b(fVar2.b()).a();
     }
 
     private x5() {

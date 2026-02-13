@@ -5,7 +5,7 @@ import java.util.Set;
 public abstract class pc extends la implements Set {
 
     /* renamed from: e  reason: collision with root package name */
-    private transient mc f42336e;
+    private transient mc f42904e;
 
     @Override // java.util.Collection, java.util.Set
     public final boolean equals(Object obj) {
@@ -28,10 +28,10 @@ public abstract class pc extends la implements Set {
     }
 
     public final mc f() {
-        mc mcVar = this.f42336e;
+        mc mcVar = this.f42904e;
         if (mcVar == null) {
             mc g10 = g();
-            this.f42336e = g10;
+            this.f42904e = g10;
             return g10;
         }
         return mcVar;

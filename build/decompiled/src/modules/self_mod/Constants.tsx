@@ -158,4 +158,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = 'SAFETY_TOOLS_UNIGNORED_USER_CONFIRMED';
     var2.SAFETY_TOOLS_UNIGNORED_USER_TOAST_KEY = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1234, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1235, 2]);

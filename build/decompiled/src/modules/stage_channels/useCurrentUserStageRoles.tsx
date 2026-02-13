@@ -31,15 +31,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/stage_channels/useCurrentUserStageRoles.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun67136: for (var _fun67136_ip = 0;;) switch (_fun67136_ip) {
+        _fun65847: for (var _fun65847_ip = 0;;) switch (_fun65847_ip) {
             case 0:
                 var6 = arg0;
                 var5 = arguments[1];
                 var _closure2_slot0 = var6;
                 var4 = undefined;
                 if (!(var5 === var4)) {
-                    _fun67136_ip = 20;
-                    continue _fun67136
+                    _fun65847_ip = 20;
+                    continue _fun65847
                 }
             case 18:
                 var5 = false;
@@ -76,4 +76,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1216, 4252, 566, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1217, 4252, 566, 2]);

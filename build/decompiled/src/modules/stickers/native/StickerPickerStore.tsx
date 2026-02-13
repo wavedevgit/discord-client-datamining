@@ -39,14 +39,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = _closure2_slot0;
                 var0 = undefined;
                 var1 = function(arg0) { // Environment: var1
-                    _fun74483: for (var _fun74483_ip = 0;;) switch (_fun74483_ip) {
+                    _fun75004: for (var _fun75004_ip = 0;;) switch (_fun75004_ip) {
                         case 0:
                             var0 = arg0;
                             var3 = var0.packToScrollTo;
                             var1 = _closure3_slot0;
                             if (!(var3 !== var1)) {
-                                _fun74483_ip = 34;
-                                continue _fun74483
+                                _fun75004_ip = 34;
+                                continue _fun75004
                             }
                         case 20:
                             var1 = {};
@@ -75,4 +75,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.useStickerPickerStore = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [629, 802, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [629, 803, 2]);

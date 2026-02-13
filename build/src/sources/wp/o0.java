@@ -24,13 +24,13 @@ import wp.x5;
 public final class o0 implements gn.c0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final /* synthetic */ gn.f f53260a;
+    private final /* synthetic */ gn.f f53828a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final fo.t f53261b;
+    private final fo.t f53829b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final fo.w0 f53262c;
+    private final fo.w0 f53830c;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
@@ -48,7 +48,7 @@ public final class o0 implements gn.c0 {
         @Override // kotlin.jvm.functions.Function2
         public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2) {
             a((x5.d.c) obj, (gn.a0) obj2);
-            return Unit.f31988a;
+            return Unit.f32556a;
         }
     }
 
@@ -56,39 +56,39 @@ public final class o0 implements gn.c0 {
     public static final class b implements fo.y {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ xp.a f53263a;
+        final /* synthetic */ xp.a f53831a;
 
         /* renamed from: b  reason: collision with root package name */
-        final /* synthetic */ fo.t f53264b;
+        final /* synthetic */ fo.t f53832b;
 
         /* renamed from: c  reason: collision with root package name */
-        final /* synthetic */ fo.w0 f53265c;
+        final /* synthetic */ fo.w0 f53833c;
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ x5.d.c f53266d;
+        final /* synthetic */ x5.d.c f53834d;
 
         b(xp.a aVar, fo.t tVar, fo.w0 w0Var, x5.d.c cVar) {
-            this.f53263a = aVar;
-            this.f53264b = tVar;
-            this.f53265c = w0Var;
-            this.f53266d = cVar;
+            this.f53831a = aVar;
+            this.f53832b = tVar;
+            this.f53833c = w0Var;
+            this.f53834d = cVar;
         }
 
         /* JADX INFO: Access modifiers changed from: private */
         public static final Unit c(x5.d.c cVar, fo.k it) {
             Intrinsics.checkNotNullParameter(it, "it");
             cVar.h().invoke(it);
-            return Unit.f31988a;
+            return Unit.f32556a;
         }
 
         @Override // fo.y
         public void a() {
-            PreviewView previewviewSelfieCamera = this.f53263a.f55078k;
+            PreviewView previewviewSelfieCamera = this.f53831a.f55646k;
             Intrinsics.checkNotNullExpressionValue(previewviewSelfieCamera, "previewviewSelfieCamera");
             t.a aVar = t.a.f24107d;
-            fo.t tVar = this.f53264b;
-            fo.w0 w0Var = this.f53265c;
-            final x5.d.c cVar = this.f53266d;
+            fo.t tVar = this.f53832b;
+            fo.w0 w0Var = this.f53833c;
+            final x5.d.c cVar = this.f53834d;
             tVar.f(previewviewSelfieCamera, aVar, w0Var, true, new Function1() { // from class: wp.p0
                 @Override // kotlin.jvm.functions.Function1
                 public final Object invoke(Object obj) {
@@ -103,7 +103,7 @@ public final class o0 implements gn.c0 {
     public o0(final fo.t cameraPreview, final fo.w0 selfieDirectionFeed) {
         Intrinsics.checkNotNullParameter(cameraPreview, "cameraPreview");
         Intrinsics.checkNotNullParameter(selfieDirectionFeed, "selfieDirectionFeed");
-        this.f53260a = new gn.f(Reflection.getOrCreateKotlinClass(x5.d.c.class), new Function4() { // from class: wp.n0
+        this.f53828a = new gn.f(Reflection.getOrCreateKotlinClass(x5.d.c.class), new Function4() { // from class: wp.n0
             @Override // kotlin.jvm.functions.Function4
             public final Object invoke(Object obj, Object obj2, Object obj3, Object obj4) {
                 View c10;
@@ -111,8 +111,8 @@ public final class o0 implements gn.c0 {
                 return c10;
             }
         });
-        this.f53261b = cameraPreview;
-        this.f53262c = selfieDirectionFeed;
+        this.f53829b = cameraPreview;
+        this.f53830c = selfieDirectionFeed;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -127,19 +127,19 @@ public final class o0 implements gn.c0 {
             context2 = context;
         }
         xp.a c10 = xp.a.c(LayoutInflater.from(context2).cloneInContext(context));
-        if (initialRendering.n() != lo.a.f35951i) {
+        if (initialRendering.n() != lo.a.f36519i) {
             Context applicationContext = context.getApplicationContext();
             Intrinsics.checkNotNullExpressionValue(applicationContext, "getApplicationContext(...)");
-            ho.m b10 = ho.j.b(applicationContext, ho.n.f27614d);
+            ho.m b10 = ho.j.b(applicationContext, ho.n.f28182d);
             if (b10 == null) {
                 initialRendering.h().invoke(new fo.s0());
-                Camera2PreviewView camera2Preview = c10.f55070c;
+                Camera2PreviewView camera2Preview = c10.f55638c;
                 Intrinsics.checkNotNullExpressionValue(camera2Preview, "camera2Preview");
                 a10 = new fo.r0(camera2Preview);
                 w0Var2 = w0Var;
             } else {
                 g.a b11 = initialRendering.b();
-                Camera2PreviewView camera2Preview2 = c10.f55070c;
+                Camera2PreviewView camera2Preview2 = c10.f55638c;
                 Intrinsics.checkNotNullExpressionValue(camera2Preview2, "camera2Preview");
                 lo.a valueOf = lo.a.valueOf(initialRendering.n().toString());
                 initialRendering.o();
@@ -149,7 +149,7 @@ public final class o0 implements gn.c0 {
         } else {
             w0Var2 = w0Var;
             z.a c11 = initialRendering.c();
-            PreviewView previewviewSelfieCamera = c10.f55078k;
+            PreviewView previewviewSelfieCamera = c10.f55646k;
             Intrinsics.checkNotNullExpressionValue(previewviewSelfieCamera, "previewviewSelfieCamera");
             a10 = c11.a(tVar, previewviewSelfieCamera, new b(c10, tVar, w0Var2, initialRendering));
         }
@@ -168,11 +168,11 @@ public final class o0 implements gn.c0 {
         Intrinsics.checkNotNullParameter(initialRendering, "initialRendering");
         Intrinsics.checkNotNullParameter(initialViewEnvironment, "initialViewEnvironment");
         Intrinsics.checkNotNullParameter(contextForNewView, "contextForNewView");
-        return this.f53260a.a(initialRendering, initialViewEnvironment, contextForNewView, viewGroup);
+        return this.f53828a.a(initialRendering, initialViewEnvironment, contextForNewView, viewGroup);
     }
 
     @Override // gn.c0
     public KClass getType() {
-        return this.f53260a.getType();
+        return this.f53828a.getType();
     }
 }

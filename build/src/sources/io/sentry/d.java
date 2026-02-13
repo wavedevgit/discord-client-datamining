@@ -11,43 +11,43 @@ import java.util.concurrent.ConcurrentHashMap;
 public final class d {
 
     /* renamed from: i  reason: collision with root package name */
-    static final Integer f29205i = 8192;
+    static final Integer f29773i = 8192;
 
     /* renamed from: j  reason: collision with root package name */
-    static final Integer f29206j = 64;
+    static final Integer f29774j = 64;
 
     /* renamed from: k  reason: collision with root package name */
-    private static final c f29207k = new c();
+    private static final c f29775k = new c();
 
     /* renamed from: a  reason: collision with root package name */
-    private final ConcurrentHashMap f29208a;
+    private final ConcurrentHashMap f29776a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final io.sentry.util.a f29209b;
+    private final io.sentry.util.a f29777b;
 
     /* renamed from: c  reason: collision with root package name */
-    private Double f29210c;
+    private Double f29778c;
 
     /* renamed from: d  reason: collision with root package name */
-    private Double f29211d;
+    private Double f29779d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final String f29212e;
+    private final String f29780e;
 
     /* renamed from: f  reason: collision with root package name */
-    private boolean f29213f;
+    private boolean f29781f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final boolean f29214g;
+    private final boolean f29782g;
 
     /* renamed from: h  reason: collision with root package name */
-    final ILogger f29215h;
+    final ILogger f29783h;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class b {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final List f29216a = Arrays.asList("sentry-trace_id", "sentry-public_key", "sentry-release", "sentry-user_id", "sentry-environment", "sentry-transaction", "sentry-sample_rate", "sentry-sample_rand", "sentry-sampled", "sentry-replay_id");
+        public static final List f29784a = Arrays.asList("sentry-trace_id", "sentry-public_key", "sentry-release", "sentry-user_id", "sentry-environment", "sentry-transaction", "sentry-sample_rate", "sentry-sample_rand", "sentry-sampled", "sentry-replay_id");
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -86,7 +86,7 @@ public final class d {
         dVar.D(null);
         dVar.B(null);
         Object c10 = e5Var.C().c("replay_id");
-        if (c10 != null && !c10.toString().equals(io.sentry.protocol.x.f29799e.toString())) {
+        if (c10 != null && !c10.toString().equals(io.sentry.protocol.x.f30367e.toString())) {
             dVar.A(c10.toString());
             e5Var.C().n("replay_id");
         }
@@ -119,7 +119,7 @@ public final class d {
         if (!io.sentry.util.c0.h(d10, false)) {
             return null;
         }
-        return ((DecimalFormat) f29207k.get()).format(d10);
+        return ((DecimalFormat) f29775k.get()).format(d10);
     }
 
     private static Boolean v(s8 s8Var) {
@@ -135,13 +135,13 @@ public final class d {
 
     public void B(Double d10) {
         if (q()) {
-            this.f29211d = d10;
+            this.f29779d = d10;
         }
     }
 
     public void C(Double d10) {
         if (q()) {
-            this.f29210c = d10;
+            this.f29778c = d10;
         }
     }
 
@@ -176,7 +176,7 @@ public final class d {
         y(k7Var.retrieveParsedDsn().a());
         z(k7Var.getRelease());
         x(k7Var.getEnvironment());
-        if (!io.sentry.protocol.x.f29799e.equals(K)) {
+        if (!io.sentry.protocol.x.f30367e.equals(K)) {
             A(K.toString());
         }
         F(null);
@@ -193,7 +193,7 @@ public final class d {
             str = null;
         }
         F(str);
-        if (xVar2 != null && !io.sentry.protocol.x.f29799e.equals(xVar2)) {
+        if (xVar2 != null && !io.sentry.protocol.x.f30367e.equals(xVar2)) {
             A(xVar2.toString());
         }
         C(t(s8Var));
@@ -225,18 +225,18 @@ public final class d {
     }
 
     public void a(Double d10) {
-        this.f29210c = d10;
+        this.f29778c = d10;
     }
 
     public void b() {
-        this.f29213f = false;
+        this.f29781f = false;
     }
 
     public String d(String str) {
         if (str == null) {
             return null;
         }
-        return (String) this.f29208a.get(str);
+        return (String) this.f29776a.get(str);
     }
 
     public String e() {
@@ -256,11 +256,11 @@ public final class d {
     }
 
     public Double i() {
-        return this.f29211d;
+        return this.f29779d;
     }
 
     public Double j() {
-        return this.f29210c;
+        return this.f29778c;
     }
 
     public String k() {
@@ -277,12 +277,12 @@ public final class d {
 
     public Map n() {
         ConcurrentHashMap concurrentHashMap = new ConcurrentHashMap();
-        a1 a10 = this.f29209b.a();
+        a1 a10 = this.f29777b.a();
         try {
-            for (Map.Entry entry : this.f29208a.entrySet()) {
+            for (Map.Entry entry : this.f29776a.entrySet()) {
                 String str = (String) entry.getKey();
                 String str2 = (String) entry.getValue();
-                if (!b.f29216a.contains(str) && str2 != null) {
+                if (!b.f29784a.contains(str) && str2 != null) {
                     concurrentHashMap.put(str.replaceFirst("sentry-", ""), str2);
                 }
             }
@@ -307,19 +307,19 @@ public final class d {
     }
 
     public boolean q() {
-        return this.f29213f;
+        return this.f29781f;
     }
 
     public boolean r() {
-        return this.f29214g;
+        return this.f29782g;
     }
 
     public void w(String str, String str2) {
-        if (this.f29213f) {
+        if (this.f29781f) {
             if (str2 == null) {
-                this.f29208a.remove(str);
+                this.f29776a.remove(str);
             } else {
-                this.f29208a.put(str, str2);
+                this.f29776a.put(str, str2);
             }
         }
     }
@@ -337,13 +337,13 @@ public final class d {
     }
 
     public d(ConcurrentHashMap concurrentHashMap, Double d10, Double d11, String str, boolean z10, boolean z11, ILogger iLogger) {
-        this.f29209b = new io.sentry.util.a();
-        this.f29208a = concurrentHashMap;
-        this.f29210c = d10;
-        this.f29211d = d11;
-        this.f29215h = iLogger;
-        this.f29212e = str;
-        this.f29213f = z10;
-        this.f29214g = z11;
+        this.f29777b = new io.sentry.util.a();
+        this.f29776a = concurrentHashMap;
+        this.f29778c = d10;
+        this.f29779d = d11;
+        this.f29783h = iLogger;
+        this.f29780e = str;
+        this.f29781f = z10;
+        this.f29782g = z11;
     }
 }

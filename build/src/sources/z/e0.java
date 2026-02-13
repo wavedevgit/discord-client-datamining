@@ -10,14 +10,14 @@ import java.util.concurrent.Executor;
 public class e0 implements j1 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final j1 f55875a;
+    private final j1 f56443a;
 
     /* renamed from: b  reason: collision with root package name */
-    private p0 f55876b;
+    private p0 f56444b;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public e0(j1 j1Var) {
-        this.f55875a = j1Var;
+        this.f56443a = j1Var;
     }
 
     public static /* synthetic */ void a(e0 e0Var, j1.a aVar, j1 j1Var) {
@@ -30,38 +30,38 @@ public class e0 implements j1 {
         if (nVar == null) {
             return null;
         }
-        if (this.f55876b == null) {
+        if (this.f56444b == null) {
             a10 = q2.b();
         } else {
-            a10 = q2.a(new Pair(this.f55876b.i(), this.f55876b.h().get(0)));
+            a10 = q2.a(new Pair(this.f56444b.i(), this.f56444b.h().get(0)));
         }
-        this.f55876b = null;
+        this.f56444b = null;
         return new androidx.camera.core.r(nVar, new Size(nVar.getWidth(), nVar.getHeight()), new e0.c(new n0.k(a10, nVar.E().a())));
     }
 
     @Override // a0.j1
     public androidx.camera.core.n b() {
-        return j(this.f55875a.b());
+        return j(this.f56443a.b());
     }
 
     @Override // a0.j1
     public int c() {
-        return this.f55875a.c();
+        return this.f56443a.c();
     }
 
     @Override // a0.j1
     public void close() {
-        this.f55875a.close();
+        this.f56443a.close();
     }
 
     @Override // a0.j1
     public void d() {
-        this.f55875a.d();
+        this.f56443a.d();
     }
 
     @Override // a0.j1
     public void e(final j1.a aVar, Executor executor) {
-        this.f55875a.e(new j1.a() { // from class: z.d0
+        this.f56443a.e(new j1.a() { // from class: z.d0
             @Override // a0.j1.a
             public final void a(j1 j1Var) {
                 e0.a(e0.this, aVar, j1Var);
@@ -71,43 +71,43 @@ public class e0 implements j1 {
 
     @Override // a0.j1
     public int f() {
-        return this.f55875a.f();
+        return this.f56443a.f();
     }
 
     @Override // a0.j1
     public androidx.camera.core.n g() {
-        return j(this.f55875a.g());
+        return j(this.f56443a.g());
     }
 
     @Override // a0.j1
     public int getHeight() {
-        return this.f55875a.getHeight();
+        return this.f56443a.getHeight();
     }
 
     @Override // a0.j1
     public Surface getSurface() {
-        return this.f55875a.getSurface();
+        return this.f56443a.getSurface();
     }
 
     @Override // a0.j1
     public int getWidth() {
-        return this.f55875a.getWidth();
+        return this.f56443a.getWidth();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void h(p0 p0Var) {
         boolean z10;
-        if (this.f55876b == null) {
+        if (this.f56444b == null) {
             z10 = true;
         } else {
             z10 = false;
         }
         b2.e.j(z10, "Pending request should be null");
-        this.f55876b = p0Var;
+        this.f56444b = p0Var;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void i() {
-        this.f55876b = null;
+        this.f56444b = null;
     }
 }

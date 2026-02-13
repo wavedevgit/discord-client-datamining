@@ -3,31 +3,31 @@ package vb;
 public abstract class d {
 
     /* renamed from: a  reason: collision with root package name */
-    public boolean f51419a;
+    public boolean f51987a;
 
     /* renamed from: b  reason: collision with root package name */
-    public int f51420b;
+    public int f51988b;
 
     /* renamed from: c  reason: collision with root package name */
-    public long f51421c;
+    public long f51989c;
 
     /* renamed from: d  reason: collision with root package name */
-    public long f51422d;
+    public long f51990d;
 
     /* renamed from: e  reason: collision with root package name */
-    public int f51423e;
+    public int f51991e;
 
     /* renamed from: f  reason: collision with root package name */
-    public int f51424f;
+    public int f51992f;
 
     /* renamed from: g  reason: collision with root package name */
-    public int f51425g;
+    public int f51993g;
 
     /* renamed from: h  reason: collision with root package name */
-    public int f51426h;
+    public int f51994h;
 
     /* renamed from: i  reason: collision with root package name */
-    public int f51427i;
+    public int f51995i;
 
     public abstract c a(long j10, int i10);
 

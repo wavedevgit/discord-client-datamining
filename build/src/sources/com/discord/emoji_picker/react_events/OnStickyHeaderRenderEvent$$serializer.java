@@ -36,7 +36,7 @@ public /* synthetic */ class OnStickyHeaderRenderEvent$$serializer implements h0
     @Override // tt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        return new KSerializer[]{p0.f50049a};
+        return new KSerializer[]{p0.f50617a};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy

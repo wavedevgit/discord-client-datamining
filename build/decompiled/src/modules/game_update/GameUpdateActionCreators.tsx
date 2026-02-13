@@ -14,14 +14,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var3 = _closure1_slot3;
         var2 = function*(arg0, arg1) { // Environment: var2
             var0 = function*(arg0, arg1) { // Original name: ?anon_0_, environment: var0
-                _fun118813: for (var _fun118813_ip = 0;;) switch (_fun118813_ip) {
+                _fun118834: for (var _fun118834_ip = 0;;) switch (_fun118834_ip) {
                     case 0:
                         StartGenerator();
                         var9 = arg1;
                         ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
                         if (var1) {
-                            _fun118813_ip = 374;
-                            continue _fun118813
+                            _fun118834_ip = 374;
+                            continue _fun118834
                         }
                     case 13:
                         var8 = arg0;
@@ -62,8 +62,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     case 143:
                         ResumeGenerator(result_out_reg = 3, return_bool_out_reg = 5);
                         if (var5) {
-                            _fun118813_ip = 319;
-                            continue _fun118813
+                            _fun118834_ip = 319;
+                            continue _fun118834
                         }
                     case 152:
                         var7 = _closure1_slot1;
@@ -101,8 +101,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var5.update = var9;
                         var5 = var7.bind(var8)(var5);
                     case 317: // try_end0
-                        _fun118813_ip = 371;
-                        continue _fun118813;
+                        _fun118834_ip = 371;
+                        continue _fun118834;
                     case 319:
                         return var3;
                     case 322: // catch_target0
@@ -172,4 +172,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.fetchGameUpdate = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 660, 806, 507, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 660, 807, 507, 2]);

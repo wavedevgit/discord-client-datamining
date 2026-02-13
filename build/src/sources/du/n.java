@@ -81,7 +81,7 @@ public final class n implements h {
         ConcurrentMap concurrentMap = f22090u;
         String str = (String) concurrentMap.get(locale);
         if (str == null) {
-            str = net.time4j.tz.p.f37786v.q(locale);
+            str = net.time4j.tz.p.f38354v.q(locale);
             String str2 = (String) concurrentMap.putIfAbsent(locale, str);
             if (str2 != null) {
                 return str2;
@@ -261,7 +261,7 @@ public final class n implements h {
                     } else {
                         int l10 = l(charSequence, length, f10, locale, booleanValue2);
                         if (l10 > 0) {
-                            tVar.I(b0.TIMEZONE_OFFSET, net.time4j.tz.p.f37786v);
+                            tVar.I(b0.TIMEZONE_OFFSET, net.time4j.tz.p.f38354v);
                             sVar.l(f10 + l10);
                             return;
                         }
@@ -278,7 +278,7 @@ public final class n implements h {
                             i14 = l(charSequence, length, f10, locale, booleanValue2);
                         }
                         if (i14 > 0) {
-                            tVar.I(b0.TIMEZONE_OFFSET, net.time4j.tz.p.f37786v);
+                            tVar.I(b0.TIMEZONE_OFFSET, net.time4j.tz.p.f38354v);
                             sVar.l(f10 + i14);
                             return;
                         }

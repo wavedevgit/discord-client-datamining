@@ -3,23 +3,23 @@ package og;
 final class bl extends dl {
 
     /* renamed from: a  reason: collision with root package name */
-    private final float f39132a;
+    private final float f39700a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final float f39133b;
+    private final float f39701b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final float f39134c;
+    private final float f39702c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final float f39135d;
+    private final float f39703d;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public bl(float f10, float f11, float f12, float f13, float f14) {
-        this.f39132a = f10;
-        this.f39133b = f11;
-        this.f39134c = f12;
-        this.f39135d = f13;
+        this.f39700a = f10;
+        this.f39701b = f11;
+        this.f39702c = f12;
+        this.f39703d = f13;
     }
 
     @Override // og.dl
@@ -29,22 +29,22 @@ final class bl extends dl {
 
     @Override // og.dl
     final float b() {
-        return this.f39134c;
+        return this.f39702c;
     }
 
     @Override // og.dl
     final float c() {
-        return this.f39132a;
+        return this.f39700a;
     }
 
     @Override // og.dl
     final float d() {
-        return this.f39135d;
+        return this.f39703d;
     }
 
     @Override // og.dl
     final float e() {
-        return this.f39133b;
+        return this.f39701b;
     }
 
     public final boolean equals(Object obj) {
@@ -53,7 +53,7 @@ final class bl extends dl {
         }
         if (obj instanceof dl) {
             dl dlVar = (dl) obj;
-            if (Float.floatToIntBits(this.f39132a) == Float.floatToIntBits(dlVar.c()) && Float.floatToIntBits(this.f39133b) == Float.floatToIntBits(dlVar.e()) && Float.floatToIntBits(this.f39134c) == Float.floatToIntBits(dlVar.b()) && Float.floatToIntBits(this.f39135d) == Float.floatToIntBits(dlVar.d())) {
+            if (Float.floatToIntBits(this.f39700a) == Float.floatToIntBits(dlVar.c()) && Float.floatToIntBits(this.f39701b) == Float.floatToIntBits(dlVar.e()) && Float.floatToIntBits(this.f39702c) == Float.floatToIntBits(dlVar.b()) && Float.floatToIntBits(this.f39703d) == Float.floatToIntBits(dlVar.d())) {
                 int floatToIntBits = Float.floatToIntBits(0.0f);
                 dlVar.a();
                 if (floatToIntBits == Float.floatToIntBits(0.0f)) {
@@ -65,10 +65,10 @@ final class bl extends dl {
     }
 
     public final int hashCode() {
-        return ((((((((Float.floatToIntBits(this.f39132a) ^ 1000003) * 1000003) ^ Float.floatToIntBits(this.f39133b)) * 1000003) ^ Float.floatToIntBits(this.f39134c)) * 1000003) ^ Float.floatToIntBits(this.f39135d)) * 1000003) ^ Float.floatToIntBits(0.0f);
+        return ((((((((Float.floatToIntBits(this.f39700a) ^ 1000003) * 1000003) ^ Float.floatToIntBits(this.f39701b)) * 1000003) ^ Float.floatToIntBits(this.f39702c)) * 1000003) ^ Float.floatToIntBits(this.f39703d)) * 1000003) ^ Float.floatToIntBits(0.0f);
     }
 
     public final String toString() {
-        return "PredictedArea{xMin=" + this.f39132a + ", yMin=" + this.f39133b + ", xMax=" + this.f39134c + ", yMax=" + this.f39135d + ", confidenceScore=0.0}";
+        return "PredictedArea{xMin=" + this.f39700a + ", yMin=" + this.f39701b + ", xMax=" + this.f39702c + ", yMax=" + this.f39703d + ", confidenceScore=0.0}";
     }
 }

@@ -33,12 +33,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 3;
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
-    var7 = var3.jsx;
-    var _closure1_slot5 = var7;
+    var3 = var3.jsx;
+    var _closure1_slot5 = var3;
     var3 = 4;
     var3 = var5[var3];
-    var9 = var4.bind(var0)(var3);
-    var8 = var9.createStyles;
+    var7 = var4.bind(var0)(var3);
+    var6 = var7.createStyles;
     var3 = function() { // Environment: var1
         var0 = {};
         var1 = {};
@@ -47,14 +47,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0.channelInfoContainer = var1;
         return var0;
     };
-    var3 = var8.bind(var9)(var3);
+    var3 = var6.bind(var7)(var3);
     var _closure1_slot6 = var3;
-    var3 = 5;
-    var3 = var5[var3];
-    var6 = var6.bind(var0)(var3);
-    var3 = {};
-    var3 = var7.bind(var0)(var6, var3);
-    var _closure1_slot7 = var3;
     var3 = 10;
     var3 = var5[var3];
     var5 = var4.bind(var0)(var3);
@@ -62,7 +56,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/guild_sidebar/native/ChannelBadge.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun103167: for (var _fun103167_ip = 0;;) switch (_fun103167_ip) {
+        _fun103291: for (var _fun103291_ip = 0;;) switch (_fun103291_ip) {
             case 0:
                 var1 = arg0;
                 var8 = var1.mentionCount;
@@ -75,7 +69,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var2.bind(var4)();
                 var3 = _closure1_slot0;
                 var9 = _closure1_slot2;
-                var2 = 6;
+                var2 = 5;
                 var2 = var9[var2];
                 var10 = var3.bind(var4)(var2);
                 var9 = var10.useStateFromStores;
@@ -90,47 +84,47 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13 = var9.bind(var10)(var3, var2);
                 var2 = null;
                 if (!(var2 != var8)) {
-                    _fun103167_ip = 113;
-                    continue _fun103167
+                    _fun103291_ip = 113;
+                    continue _fun103291
                 }
             case 104:
                 var3 = 0;
                 if (!(!(var8 > var3))) {
-                    _fun103167_ip = 300;
-                    continue _fun103167
+                    _fun103291_ip = 324;
+                    continue _fun103291
                 }
             case 113:
                 if (var0) {
-                    _fun103167_ip = 264;
-                    continue _fun103167
+                    _fun103291_ip = 264;
+                    continue _fun103291
                 }
             case 119:
                 var3 = var2 != var1;
                 var0 = null;
                 if (!var3) {
-                    _fun103167_ip = 262;
-                    continue _fun103167
+                    _fun103291_ip = 262;
+                    continue _fun103291
                 }
             case 131:
                 var0 = null;
                 if (var1) {
-                    _fun103167_ip = 262;
-                    continue _fun103167
+                    _fun103291_ip = 262;
+                    continue _fun103291
                 }
             case 139:
                 var1 = var2 != var14;
                 var0 = null;
                 if (!var1) {
-                    _fun103167_ip = 262;
-                    continue _fun103167
+                    _fun103291_ip = 262;
+                    continue _fun103291
                 }
             case 148:
                 var1 = 0;
                 var1 = var14 > var1;
                 var0 = null;
                 if (!var1) {
-                    _fun103167_ip = 262;
-                    continue _fun103167
+                    _fun103291_ip = 262;
+                    continue _fun103291
                 }
             case 159:
                 var3 = _closure1_slot5;
@@ -158,21 +152,27 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1.children = var9;
                 var0 = var3.bind(var4)(var2, var1);
             case 262:
-                _fun103167_ip = 298;
-                continue _fun103167;
+                _fun103291_ip = 322;
+                continue _fun103291;
             case 264:
                 var3 = _closure1_slot5;
                 var2 = _closure1_slot3;
                 var1 = {};
                 var9 = var6.channelInfoContainer;
                 var1.style = var9;
-                var9 = _closure1_slot7;
+                var10 = _closure1_slot1;
+                var11 = _closure1_slot2;
+                var9 = 7;
+                var9 = var11[var9];
+                var10 = var10.bind(var4)(var9);
+                var9 = {};
+                var9 = var3.bind(var4)(var10, var9);
                 var1.children = var9;
                 var0 = var3.bind(var4)(var2, var1);
-            case 298:
-                _fun103167_ip = 368;
-                continue _fun103167;
-            case 300:
+            case 322:
+                _fun103291_ip = 392;
+                continue _fun103291;
+            case 324:
                 var3 = _closure1_slot5;
                 var2 = _closure1_slot3;
                 var1 = {};
@@ -180,7 +180,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1.style = var6;
                 var6 = _closure1_slot1;
                 var9 = _closure1_slot2;
-                var5 = 7;
+                var5 = 6;
                 var5 = var9[var5];
                 var6 = var6.bind(var4)(var5);
                 var5 = {};
@@ -189,10 +189,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var3.bind(var4)(var6, var5);
                 var1.children = var5;
                 var0 = var3.bind(var4)(var2, var1);
-            case 368:
+            case 392:
                 return var0;
         }
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1687, 33, 1297, 11418, 632, 13452, 3938, 1604, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1690, 33, 1297, 632, 13463, 11715, 3938, 1604, 2]);

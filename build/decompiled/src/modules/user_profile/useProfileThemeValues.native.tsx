@@ -57,13 +57,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1[0] = var5;
         var1[1] = var4;
         var0 = function() { // Environment: var0
-            _fun48598: for (var _fun48598_ip = 0;;) switch (_fun48598_ip) {
+            _fun48690: for (var _fun48690_ip = 0;;) switch (_fun48690_ip) {
                 case 0:
                     var1 = _closure2_slot0;
                     var0 = null;
                     if (!(var0 != var1)) {
-                        _fun48598_ip = 341;
-                        continue _fun48598
+                        _fun48690_ip = 341;
+                        continue _fun48690
                     }
                 case 16:
                     var6 = {};
@@ -115,8 +115,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var5 = var4.DARK;
                     var4 = 0.12;
                     if (!(var7 === var5)) {
-                        _fun48598_ip = 269;
-                        continue _fun48598
+                        _fun48690_ip = 269;
+                        continue _fun48690
                     }
                 case 259:
                     var4 = 0.24;
@@ -145,4 +145,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useProfileThemeValues = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1298, 632, 671, 808, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1298, 632, 671, 809, 2]);

@@ -32,19 +32,19 @@ public final class TypeParameterUpperBoundEraser {
     public static final Companion Companion = new Companion(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final ErasureProjectionComputer f34602a;
+    private final ErasureProjectionComputer f35170a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final TypeParameterErasureOptions f34603b;
+    private final TypeParameterErasureOptions f35171b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final LockBasedStorageManager f34604c;
+    private final LockBasedStorageManager f35172c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Lazy f34605d;
+    private final Lazy f35173d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final MemoizedFunctionToNotNull f34606e;
+    private final MemoizedFunctionToNotNull f35174e;
 
     @SourceDebugExtension({"SMAP\nTypeParameterUpperBoundEraser.kt\nKotlin\n*S Kotlin\n*F\n+ 1 TypeParameterUpperBoundEraser.kt\norg/jetbrains/kotlin/types/TypeParameterUpperBoundEraser$Companion\n+ 2 TypeUtils.kt\norg/jetbrains/kotlin/types/typeUtil/TypeUtilsKt\n+ 3 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,158:1\n245#2,14:159\n260#2:177\n1563#3:173\n1634#3,3:174\n*S KotlinDebug\n*F\n+ 1 TypeParameterUpperBoundEraser.kt\norg/jetbrains/kotlin/types/TypeParameterUpperBoundEraser$Companion\n*L\n140#1:159,14\n140#1:177\n140#1:173\n140#1:174,3\n*E\n"})
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
@@ -154,24 +154,24 @@ public final class TypeParameterUpperBoundEraser {
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final TypeParameterDescriptor f34607a;
+        private final TypeParameterDescriptor f35175a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final ErasureTypeAttributes f34608b;
+        private final ErasureTypeAttributes f35176b;
 
         public a(TypeParameterDescriptor typeParameter, ErasureTypeAttributes typeAttr) {
             Intrinsics.checkNotNullParameter(typeParameter, "typeParameter");
             Intrinsics.checkNotNullParameter(typeAttr, "typeAttr");
-            this.f34607a = typeParameter;
-            this.f34608b = typeAttr;
+            this.f35175a = typeParameter;
+            this.f35176b = typeAttr;
         }
 
         public final ErasureTypeAttributes a() {
-            return this.f34608b;
+            return this.f35176b;
         }
 
         public final TypeParameterDescriptor b() {
-            return this.f34607a;
+            return this.f35175a;
         }
 
         public boolean equals(Object obj) {
@@ -179,33 +179,33 @@ public final class TypeParameterUpperBoundEraser {
                 return false;
             }
             a aVar = (a) obj;
-            if (!Intrinsics.areEqual(aVar.f34607a, this.f34607a) || !Intrinsics.areEqual(aVar.f34608b, this.f34608b)) {
+            if (!Intrinsics.areEqual(aVar.f35175a, this.f35175a) || !Intrinsics.areEqual(aVar.f35176b, this.f35176b)) {
                 return false;
             }
             return true;
         }
 
         public int hashCode() {
-            int hashCode = this.f34607a.hashCode();
-            return hashCode + (hashCode * 31) + this.f34608b.hashCode();
+            int hashCode = this.f35175a.hashCode();
+            return hashCode + (hashCode * 31) + this.f35176b.hashCode();
         }
 
         public String toString() {
-            return "DataToEraseUpperBound(typeParameter=" + this.f34607a + ", typeAttr=" + this.f34608b + ')';
+            return "DataToEraseUpperBound(typeParameter=" + this.f35175a + ", typeAttr=" + this.f35176b + ')';
         }
     }
 
     public TypeParameterUpperBoundEraser(@NotNull ErasureProjectionComputer projectionComputer, @NotNull TypeParameterErasureOptions options) {
         Intrinsics.checkNotNullParameter(projectionComputer, "projectionComputer");
         Intrinsics.checkNotNullParameter(options, "options");
-        this.f34602a = projectionComputer;
-        this.f34603b = options;
+        this.f35170a = projectionComputer;
+        this.f35171b = options;
         LockBasedStorageManager lockBasedStorageManager = new LockBasedStorageManager("Type parameter upper bound erasure results");
-        this.f34604c = lockBasedStorageManager;
-        this.f34605d = as.l.b(new v(this));
+        this.f35172c = lockBasedStorageManager;
+        this.f35173d = as.l.b(new v(this));
         MemoizedFunctionToNotNull createMemoizedFunction = lockBasedStorageManager.createMemoizedFunction(new w(this));
         Intrinsics.checkNotNullExpressionValue(createMemoizedFunction, "createMemoizedFunction(...)");
-        this.f34606e = createMemoizedFunction;
+        this.f35174e = createMemoizedFunction;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -242,7 +242,7 @@ public final class TypeParameterUpperBoundEraser {
                 computeProjection = TypeUtils.makeStarProjection(typeParameterDescriptor2, erasureTypeAttributes);
                 Intrinsics.checkNotNullExpressionValue(computeProjection, "makeStarProjection(...)");
             } else {
-                computeProjection = this.f34602a.computeProjection(typeParameterDescriptor2, erasureTypeAttributes, this, getErasedUpperBound(typeParameterDescriptor2, erasureTypeAttributes.withNewVisitedTypeParameter(typeParameterDescriptor)));
+                computeProjection = this.f35170a.computeProjection(typeParameterDescriptor2, erasureTypeAttributes, this, getErasedUpperBound(typeParameterDescriptor2, erasureTypeAttributes.withNewVisitedTypeParameter(typeParameterDescriptor)));
             }
             Pair a10 = as.v.a(typeParameterDescriptor2.getTypeConstructor(), computeProjection);
             linkedHashMap.put(a10.c(), a10.d());
@@ -253,7 +253,7 @@ public final class TypeParameterUpperBoundEraser {
         Intrinsics.checkNotNullExpressionValue(upperBounds, "getUpperBounds(...)");
         Set h10 = h(create, upperBounds, erasureTypeAttributes);
         if (!h10.isEmpty()) {
-            if (!this.f34603b.getIntersectUpperBounds()) {
+            if (!this.f35171b.getIntersectUpperBounds()) {
                 if (h10.size() == 1) {
                     return (KotlinType) CollectionsKt.P0(h10);
                 }
@@ -270,7 +270,7 @@ public final class TypeParameterUpperBoundEraser {
     }
 
     private final ErrorType g() {
-        return (ErrorType) this.f34605d.getValue();
+        return (ErrorType) this.f35173d.getValue();
     }
 
     private final Set h(TypeSubstitutor typeSubstitutor, List list, ErasureTypeAttributes erasureTypeAttributes) {
@@ -280,7 +280,7 @@ public final class TypeParameterUpperBoundEraser {
             KotlinType kotlinType = (KotlinType) it.next();
             ClassifierDescriptor mo1201getDeclarationDescriptor = kotlinType.getConstructor().mo1201getDeclarationDescriptor();
             if (mo1201getDeclarationDescriptor instanceof ClassDescriptor) {
-                b10.add(Companion.replaceArgumentsOfUpperBound(kotlinType, typeSubstitutor, erasureTypeAttributes.getVisitedTypeParameters(), this.f34603b.getLeaveNonTypeParameterTypes()));
+                b10.add(Companion.replaceArgumentsOfUpperBound(kotlinType, typeSubstitutor, erasureTypeAttributes.getVisitedTypeParameters(), this.f35171b.getLeaveNonTypeParameterTypes()));
             } else if (mo1201getDeclarationDescriptor instanceof TypeParameterDescriptor) {
                 Set<TypeParameterDescriptor> visitedTypeParameters = erasureTypeAttributes.getVisitedTypeParameters();
                 if (visitedTypeParameters != null && visitedTypeParameters.contains(mo1201getDeclarationDescriptor)) {
@@ -291,7 +291,7 @@ public final class TypeParameterUpperBoundEraser {
                     b10.addAll(h(typeSubstitutor, upperBounds, erasureTypeAttributes));
                 }
             }
-            if (!this.f34603b.getIntersectUpperBounds()) {
+            if (!this.f35171b.getIntersectUpperBounds()) {
                 break;
             }
         }
@@ -302,7 +302,7 @@ public final class TypeParameterUpperBoundEraser {
     public final KotlinType getErasedUpperBound(@NotNull TypeParameterDescriptor typeParameter, @NotNull ErasureTypeAttributes typeAttr) {
         Intrinsics.checkNotNullParameter(typeParameter, "typeParameter");
         Intrinsics.checkNotNullParameter(typeAttr, "typeAttr");
-        Object invoke = this.f34606e.invoke(new a(typeParameter, typeAttr));
+        Object invoke = this.f35174e.invoke(new a(typeParameter, typeAttr));
         Intrinsics.checkNotNullExpressionValue(invoke, "invoke(...)");
         return (KotlinType) invoke;
     }

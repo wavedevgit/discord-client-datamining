@@ -86,12 +86,12 @@ public final class KvMessageEntry {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final /* synthetic */ KSerializer _childSerializers$_anonymous_() {
-        return new f(y.f51262a);
+        return new f(y.f51830a);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final /* synthetic */ KSerializer _childSerializers$_anonymous_$0() {
-        return new f(y.f51262a);
+        return new f(y.f51830a);
     }
 
     /* renamed from: copy-kA7ecXY$default  reason: not valid java name */
@@ -138,7 +138,7 @@ public final class KvMessageEntry {
         Lazy[] lazyArr = $childSerializers;
         compositeEncoder.k(serialDescriptor, 0, (qt.o) lazyArr[0].getValue(), kvMessageEntry.members);
         compositeEncoder.k(serialDescriptor, 1, (qt.o) lazyArr[1].getValue(), kvMessageEntry.users);
-        compositeEncoder.k(serialDescriptor, 2, y.f51262a, kvMessageEntry.message);
+        compositeEncoder.k(serialDescriptor, 2, y.f51830a, kvMessageEntry.message);
         compositeEncoder.k(serialDescriptor, 3, MessageId$$serializer.INSTANCE, MessageId.m1084boximpl(kvMessageEntry.f10247id));
         compositeEncoder.k(serialDescriptor, 4, ChannelId$$serializer.INSTANCE, ChannelId.m1058boximpl(kvMessageEntry.channelId));
     }

@@ -51,7 +51,7 @@ public final class TapAttachmentLinkData implements ReactEvent {
 
     public static final /* synthetic */ void write$Self$chat_release(TapAttachmentLinkData tapAttachmentLinkData, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
         if (compositeEncoder.z(serialDescriptor, 0) || tapAttachmentLinkData.attachmentUrl != null) {
-            compositeEncoder.o(serialDescriptor, 0, n2.f50033a, tapAttachmentLinkData.attachmentUrl);
+            compositeEncoder.o(serialDescriptor, 0, n2.f50601a, tapAttachmentLinkData.attachmentUrl);
         }
     }
 

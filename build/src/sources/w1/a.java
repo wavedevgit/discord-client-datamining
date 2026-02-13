@@ -9,7 +9,7 @@ final class a {
     @NotNull
 
     /* renamed from: a  reason: collision with root package name */
-    public static final a f52095a = new a();
+    public static final a f52663a = new a();
 
     private a() {
     }

@@ -3,26 +3,26 @@ package t5;
 public class m implements c {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f48572a;
+    private final String f49140a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final s5.b f48573b;
+    private final s5.b f49141b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final s5.b f48574c;
+    private final s5.b f49142c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final s5.n f48575d;
+    private final s5.n f49143d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final boolean f48576e;
+    private final boolean f49144e;
 
     public m(String str, s5.b bVar, s5.b bVar2, s5.n nVar, boolean z10) {
-        this.f48572a = str;
-        this.f48573b = bVar;
-        this.f48574c = bVar2;
-        this.f48575d = nVar;
-        this.f48576e = z10;
+        this.f49140a = str;
+        this.f49141b = bVar;
+        this.f49142c = bVar2;
+        this.f49143d = nVar;
+        this.f49144e = z10;
     }
 
     @Override // t5.c
@@ -31,22 +31,22 @@ public class m implements c {
     }
 
     public s5.b b() {
-        return this.f48573b;
+        return this.f49141b;
     }
 
     public String c() {
-        return this.f48572a;
+        return this.f49140a;
     }
 
     public s5.b d() {
-        return this.f48574c;
+        return this.f49142c;
     }
 
     public s5.n e() {
-        return this.f48575d;
+        return this.f49143d;
     }
 
     public boolean f() {
-        return this.f48576e;
+        return this.f49144e;
     }
 }

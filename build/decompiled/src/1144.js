@@ -2,73 +2,195 @@
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var4 = require;
     var2 = exports;
-    var5 = dependencyMap;
+    var3 = dependencyMap;
     var _closure1_slot0 = var4;
-    var _closure1_slot1 = var5;
-    var0 = function arg0() {
-        _fun12447: for (var _fun12447_ip = 0;;) switch (_fun12447_ip) {
-            case 0:
-                var2 = arg0;
-                var0 = {};
-                if (var2) {
-                    _fun12447_ip = 12;
-                    continue _fun12447
-                }
-            case 10:
-                return var0;
-            case 12:
-                var _closure2_slot0 = var0;
-                var3 = global;
-                var4 = var3.Object;
-                var3 = var4.entries;
-                var2 = var2.params;
-                var3 = var3.bind(var4)(var2);
-                var2 = var3.forEach;
-                var1 = function(arg0) { // Environment: var1
-                    var3 = _closure1_slot2;
-                    var0 = undefined;
-                    var2 = arg0;
-                    var1 = 2;
-                    var2 = var3.bind(var0)(var2, var1);
-                    var1 = 0;
-                    var5 = var2[var1];
-                    var1 = 1;
-                    var3 = var2[var1];
-                    var6 = _closure2_slot0;
-                    var1 = global;
-                    var4 = var1.HermesInternal;
-                    var7 = var4.concat;
-                    var4 = 'url.path.params.';
-                    var4 = var7.bind(var4)(var5);
-                    var6[var4] = var3;
-                    var6 = _closure2_slot0;
-                    var4 = var1.HermesInternal;
-                    var7 = var4.concat;
-                    var4 = 'url.path.parameter.';
-                    var4 = var7.bind(var4)(var5);
-                    var6[var4] = var3;
+    var _closure1_slot1 = var3;
+    var0 = function arg0, arg1, arg2, arg3() {
+        var0 = arg1;
+        var2 = arg3;
+        var _closure2_slot0 = var2;
+        var2 = var0.pathname;
+        var _closure2_slot1 = var2;
+        var3 = {};
+        var3.location = var0;
+        var0 = arg0;
+        var3.routes = var0;
+        var2 = arg2;
+        var0 = undefined;
+        var1 = function(arg0, arg1, arg2) { // Environment: var1
+            _fun12442: for (var _fun12442_ip = 0;;) switch (_fun12442_ip) {
+                case 0:
+                    var0 = arg2;
+                    var1 = arg0;
+                    if (var1) {
+                        _fun12442_ip = 101;
+                        continue _fun12442
+                    }
+                case 9:
+                    if (!var0) {
+                        _fun12442_ip = 101;
+                        continue _fun12442
+                    }
+                case 12:
+                    var1 = var0.routes;
+                    if (var1) {
+                        _fun12442_ip = 25;
+                        continue _fun12442
+                    }
+                case 21:
+                    var1 = new Array(0);
+                case 25:
+                    var0 = function arg0() {
+                        _fun12443: for (var _fun12443_ip = 0;;) switch (_fun12443_ip) {
+                            case 0:
+                                var3 = arg0;
+                                var1 = global;
+                                var2 = var1.Array;
+                                var1 = var2.isArray;
+                                var1 = var1.bind(var2)(var3);
+                                if (!var1) {
+                                    _fun12443_ip = 160;
+                                    continue _fun12443
+                                }
+                            case 29:
+                                var1 = var3.length;
+                                var7 = 0;
+                                if (!(var7 !== var1)) {
+                                    _fun12443_ip = 160;
+                                    continue _fun12443
+                                }
+                            case 40:
+                                var2 = var3.filter;
+                                var1 = function(arg0) { // Environment: var0
+                                    var0 = arg0;
+                                    var0 = var0.path;
+                                    var0 = !var0;
+                                    var0 = !var0;
+                                    return var0;
+                                };
+                                var3 = var2.bind(var3)(var1);
+                                var2 = var3.length;
+                                var1 = 1;
+                                var6 = var2 - var1;
+                                var5 = -1;
+                                var4 = '/';
+                                var1 = null;
+                                var2 = var5;
+                                if (!(var6 >= var7)) {
+                                    _fun12443_ip = 127;
+                                    continue _fun12443
+                                }
+                            case 86:
+                                var8 = var3[var6];
+                                var9 = var8.path;
+                                if (!(var1 != var9)) {
+                                    _fun12443_ip = 117;
+                                    continue _fun12443
+                                }
+                            case 100:
+                                var8 = var9.startsWith;
+                                var8 = var8.bind(var9)(var4);
+                                var2 = var6;
+                                if (var8) {
+                                    _fun12443_ip = 127;
+                                    continue _fun12443
+                                }
+                            case 117:
+                                var6 = var6 - 1;
+                                var2 = var5;
+                                if (var6 >= var7) {
+                                    _fun12443_ip = 86;
+                                    continue _fun12443
+                                }
+                            case 127:
+                                var1 = var3.slice;
+                                var3 = var1.bind(var3)(var2);
+                                var2 = var3.reduce;
+                                var1 = function(arg0, arg1) { // Environment: var0
+                                    _fun12445: for (var _fun12445_ip = 0;;) switch (_fun12445_ip) {
+                                        case 0:
+                                            var3 = arg0;
+                                            var0 = arg1;
+                                            var4 = var0.path;
+                                            var1 = '/';
+                                            var2 = var4;
+                                            if (!(var1 !== var3)) {
+                                                _fun12445_ip = 52;
+                                                continue _fun12445
+                                            }
+                                        case 23:
+                                            var0 = '';
+                                            var2 = var4;
+                                            if (!(var0 !== var3)) {
+                                                _fun12445_ip = 52;
+                                                continue _fun12445
+                                            }
+                                        case 34:
+                                            var0 = global;
+                                            var0 = var0.HermesInternal;
+                                            var0 = var0.concat;
+                                            var2 = var0.bind(var1)(var4);
+                                        case 52:
+                                            var0 = global;
+                                            var0 = var0.HermesInternal;
+                                            var1 = var0.concat;
+                                            var0 = '';
+                                            var0 = var1.bind(var0)(var3, var2);
+                                            return var0;
+                                    }
+                                };
+                                var0 = '';
+                                var0 = var2.bind(var3)(var1, var0);
+                                return var0;
+                            case 160:
+                                var0 = '';
+                                return var0;
+                        }
+                    };
+                    var3 = undefined;
+                    var2 = var0.bind(var3)(var1);
+                    var1 = var2.length;
+                    var0 = 0;
+                    if (!(var0 !== var1)) {
+                        _fun12442_ip = 83;
+                        continue _fun12442
+                    }
+                case 50:
+                    var0 = '/*';
+                    if (!(var0 !== var2)) {
+                        _fun12442_ip = 83;
+                        continue _fun12442
+                    }
+                case 60:
+                    var1 = _closure2_slot0;
+                    _closure2_slot1 = var2;
+                    var0 = 'route';
+                    var0 = var1.bind(var3)(var2, var0);
+                    _fun12442_ip = 99;
+                    continue _fun12442;
+                case 83:
                     var2 = _closure2_slot0;
-                    var1 = var1.HermesInternal;
-                    var4 = var1.concat;
-                    var1 = 'params.';
-                    var1 = var4.bind(var1)(var5);
-                    var2[var1] = var3;
+                    var1 = _closure2_slot1;
+                    var0 = var2.bind(var3)(var1);
+                case 99:
                     return var0;
-                };
-                var1 = var2.bind(var3)(var1);
-                return var0;
-        }
+                case 101:
+                    var2 = _closure2_slot0;
+                    var1 = _closure2_slot1;
+                    var0 = undefined;
+                    var0 = var2.bind(var0)(var1);
+                    return var0;
+            }
+        };
+        var1 = var2.bind(var0)(var3, var1);
+        return var0;
     };
-    var _closure1_slot4 = var0;
+    var _closure1_slot3 = var0;
     var0 = 0;
-    var3 = var5[var0];
+    var3 = var3[var0];
     var0 = undefined;
     var3 = var4.bind(var0)(var3);
     var _closure1_slot2 = var3;
-    var3 = 1;
-    var3 = var5[var3];
-    var3 = var4.bind(var0)(var3);
-    var _closure1_slot3 = var3;
     var3 = global;
     var6 = var3.Object;
     var5 = var6.defineProperty;
@@ -79,35 +201,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.value = var7;
     var3 = var5.bind(var6)(var2, var4, var3);
     var1 = function arg0() {
-        _fun12449: for (var _fun12449_ip = 0;;) switch (_fun12449_ip) {
+        _fun12446: for (var _fun12446_ip = 0;;) switch (_fun12446_ip) {
             case 0:
-                var2 = undefined;
-                var4 = undefined;
-                var3 = arguments.length;
-                var1 = 1;
-                if (!(var3 > var1)) {
-                    _fun12449_ip = 24;
-                    continue _fun12449
-                }
-            case 16:
-                var3 = arguments[var1];
-                if (!(var2 === var3)) {
-                    _fun12449_ip = 28;
-                    continue _fun12449
-                }
-            case 24:
-                var3 = {};
-                _fun12449_ip = 32;
-                continue _fun12449;
-            case 28:
-                var3 = arguments[var1];
-            case 32:
-                var1 = arg0;
-                var _closure2_slot0 = var1;
+                var3 = arg0;
                 var4 = _closure1_slot0;
-                var5 = _closure1_slot1;
-                var1 = 2;
-                var1 = var5[var1];
+                var2 = _closure1_slot1;
+                var1 = 1;
+                var1 = var2[var1];
+                var2 = undefined;
                 var6 = var4.bind(var2)(var1);
                 var5 = var6.browserTracingIntegration;
                 var1 = global;
@@ -115,301 +216,245 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var8 = var9.assign;
                 var7 = {};
                 var4 = {
-                    'instrumentNavigation': false,
-                    'instrumentPageLoad': false
+                    'instrumentPageLoad': false,
+                    'instrumentNavigation': false
                 };
                 var4 = var8.bind(var9)(var7, var3, var4);
                 var4 = var5.bind(var6)(var4);
-                var _closure2_slot1 = var4;
+                var _closure2_slot0 = var4;
+                var5 = var3.history;
+                var _closure2_slot1 = var5;
+                var5 = var3.routes;
+                var _closure2_slot2 = var5;
+                var5 = var3.match;
+                var _closure2_slot3 = var5;
                 var6 = var3.instrumentPageLoad;
                 var5 = var2 === var6;
                 if (var5) {
-                    _fun12449_ip = 125;
-                    continue _fun12449
+                    _fun12446_ip = 123;
+                    continue _fun12446
                 }
-            case 122:
+            case 120:
                 var5 = var6;
-            case 125:
-                var _closure2_slot2 = var5;
+            case 123:
+                var _closure2_slot4 = var5;
                 var3 = var3.instrumentNavigation;
                 var2 = var2 === var3;
                 if (var2) {
-                    _fun12449_ip = 145;
-                    continue _fun12449
+                    _fun12446_ip = 143;
+                    continue _fun12446
                 }
-            case 142:
+            case 140:
                 var2 = var3;
-            case 145:
-                var _closure2_slot3 = var2;
+            case 143:
+                var _closure2_slot5 = var2;
                 var3 = var1.Object;
                 var2 = var3.assign;
                 var1 = {};
                 var0 = function arg0() {
-                    _fun12450: for (var _fun12450_ip = 0;;) switch (_fun12450_ip) {
+                    _fun12447: for (var _fun12447_ip = 0;;) switch (_fun12447_ip) {
                         case 0:
-                            var6 = arg0;
-                            var _closure3_slot0 = var6;
-                            var3 = _closure2_slot1;
-                            var0 = var3.afterAllSetup;
-                            var0 = var0.bind(var3)(var6);
-                            var4 = _closure1_slot0;
-                            var0 = _closure1_slot1;
-                            var5 = 2;
-                            var3 = var0[var5];
-                            var0 = undefined;
-                            var3 = var4.bind(var0)(var3);
+                            var4 = arg0;
+                            var _closure3_slot0 = var4;
+                            var3 = _closure2_slot0;
+                            var2 = var3.afterAllSetup;
+                            var2 = var2.bind(var3)(var4);
+                            var2 = _closure2_slot4;
+                            if (!var2) {
+                                _fun12447_ip = 70;
+                                continue _fun12447
+                            }
+                        case 34:
+                            var5 = _closure1_slot0;
+                            var4 = _closure1_slot1;
+                            var3 = 1;
+                            var4 = var4[var3];
+                            var3 = undefined;
+                            var3 = var5.bind(var3)(var4);
                             var3 = var3.WINDOW;
-                            var8 = var3.location;
-                            var3 = _closure2_slot2;
-                            if (!var3) {
-                                _fun12450_ip = 345;
-                                continue _fun12450
+                            var2 = var3.location;
+                        case 70:
+                            if (!var2) {
+                                _fun12447_ip = 135;
+                                continue _fun12447
                             }
                         case 73:
-                            if (!var8) {
-                                _fun12450_ip = 345;
-                                continue _fun12450
-                            }
-                        case 79:
-                            var11 = _closure2_slot0;
-                            var10 = var11.matchRoutes;
-                            var9 = var8.pathname;
-                            var3 = _closure2_slot0;
-                            var12 = var3.options;
-                            var4 = var12.parseSearch;
-                            var3 = var8.search;
-                            var4 = var4.bind(var12)(var3);
-                            var3 = {
-                                'preload': false,
-                                'throwOnError': false
-                            };
-                            var4 = var10.bind(var11)(var9, var4, var3);
-                            var9 = var4.length;
-                            var3 = 1;
-                            var3 = var9 - var3;
-                            var11 = var4[var3];
-                            var4 = _closure1_slot0;
-                            var3 = _closure1_slot1;
-                            var3 = var3[var5];
-                            var5 = var4.bind(var0)(var3);
-                            var4 = var5.startBrowserTracingPageLoadSpan;
-                            var3 = {};
-                            if (var11) {
-                                _fun12450_ip = 190;
-                                continue _fun12450
-                            }
-                        case 182:
-                            var8 = var8.pathname;
-                            _fun12450_ip = 196;
-                            continue _fun12450;
-                        case 190:
-                            var8 = var11.routeId;
-                        case 196:
-                            var3.name = var8;
-                            var8 = global;
-                            var10 = var8.Object;
-                            var9 = var10.assign;
-                            var14 = _closure1_slot3;
-                            var12 = _closure1_slot0;
-                            var15 = _closure1_slot1;
-                            var8 = 3;
-                            var13 = var15[var8];
-                            var13 = var12.bind(var0)(var13);
-                            var17 = var13.SEMANTIC_ATTRIBUTE_SENTRY_OP;
-                            var16 = {};
-                            var13 = 'pageload';
-                            var17 = var14.bind(var0)(var16, var17, var13);
-                            var13 = var15[var8];
-                            var13 = var12.bind(var0)(var13);
-                            var16 = var13.SEMANTIC_ATTRIBUTE_SENTRY_ORIGIN;
-                            var13 = 'auto.pageload.react.tanstack_router';
-                            var13 = var14.bind(var0)(var17, var16, var13);
-                            var8 = var15[var8];
-                            var8 = var12.bind(var0)(var8);
-                            var12 = var8.SEMANTIC_ATTRIBUTE_SENTRY_SOURCE;
-                            var8 = 'url';
-                            if (!var11) {
-                                _fun12450_ip = 312;
-                                continue _fun12450
-                            }
-                        case 308:
-                            var8 = 'route';
-                        case 312:
-                            var8 = var14.bind(var0)(var13, var12, var8);
-                            var7 = _closure1_slot4;
-                            var7 = var7.bind(var0)(var11);
-                            var7 = var9.bind(var10)(var8, var7);
-                            var3.attributes = var7;
-                            var3 = var4.bind(var5)(var6, var3);
-                        case 345:
-                            var3 = _closure2_slot3;
-                            if (!var3) {
-                                _fun12450_ip = 379;
-                                continue _fun12450
-                            }
-                        case 352:
-                            var4 = _closure2_slot0;
-                            var3 = var4.subscribe;
-                            var2 = 'onBeforeNavigate';
-                            var1 = function(arg0) { // Environment: var1
-                                _fun12451: for (var _fun12451_ip = 0;;) switch (_fun12451_ip) {
+                            var7 = _closure1_slot3;
+                            var6 = _closure2_slot2;
+                            var3 = _closure1_slot0;
+                            var4 = _closure1_slot1;
+                            var2 = 1;
+                            var2 = var4[var2];
+                            var5 = undefined;
+                            var2 = var3.bind(var5)(var2);
+                            var2 = var2.WINDOW;
+                            var10 = var2.location;
+                            var9 = _closure2_slot3;
+                            var8 = function(arg0) { // Environment: var0
+                                _fun12448: for (var _fun12448_ip = 0;;) switch (_fun12448_ip) {
                                     case 0:
-                                        var3 = arg0;
-                                        var0 = var3.toLocation;
-                                        var4 = var0.state;
-                                        var5 = var3.fromLocation;
-                                        var0 = null;
-                                        var6 = var0 == var5;
                                         var0 = undefined;
-                                        var1 = undefined;
-                                        if (var6) {
-                                            _fun12451_ip = 40;
-                                            continue _fun12451
+                                        var2 = undefined;
+                                        var3 = arguments.length;
+                                        var1 = 1;
+                                        var3 = var3 > var1;
+                                        var4 = 'url';
+                                        var8 = var4;
+                                        if (!var3) {
+                                            _fun12448_ip = 39;
+                                            continue _fun12448
+                                        }
+                                    case 24:
+                                        var3 = arguments[var1];
+                                        var8 = var4;
+                                        if (!(var0 !== var3)) {
+                                            _fun12448_ip = 39;
+                                            continue _fun12448
                                         }
                                     case 35:
-                                        var1 = var5.state;
-                                    case 40:
-                                        if (!(var4 !== var1)) {
-                                            _fun12451_ip = 344;
-                                            continue _fun12451
-                                        }
-                                    case 47:
-                                        var7 = _closure2_slot0;
-                                        var6 = var7.matchRoutes;
-                                        var4 = var3.toLocation;
-                                        var5 = var4.pathname;
-                                        var3 = var3.toLocation;
-                                        var4 = var3.search;
-                                        var3 = {
-                                            'preload': false,
-                                            'throwOnError': false
-                                        };
-                                        var4 = var6.bind(var7)(var5, var4, var3);
-                                        var5 = var4.length;
-                                        var3 = 1;
-                                        var3 = var5 - var3;
-                                        var11 = var4[var3];
-                                        var4 = _closure1_slot0;
-                                        var5 = _closure1_slot1;
-                                        var3 = 2;
-                                        var6 = var5[var3];
-                                        var6 = var4.bind(var0)(var6);
-                                        var6 = var6.WINDOW;
-                                        var8 = var6.location;
-                                        var3 = var5[var3];
-                                        var6 = var4.bind(var0)(var3);
-                                        var5 = var6.startBrowserTracingNavigationSpan;
-                                        var4 = _closure3_slot0;
-                                        var3 = {};
-                                        if (var11) {
-                                            _fun12451_ip = 186;
-                                            continue _fun12451
-                                        }
-                                    case 178:
-                                        var8 = var8.pathname;
-                                        _fun12451_ip = 192;
-                                        continue _fun12451;
-                                    case 186:
-                                        var8 = var11.routeId;
-                                    case 192:
-                                        var3.name = var8;
-                                        var10 = _closure1_slot3;
-                                        var8 = _closure1_slot0;
-                                        var12 = _closure1_slot1;
-                                        var7 = 3;
-                                        var9 = var12[var7];
-                                        var9 = var8.bind(var0)(var9);
-                                        var14 = var9.SEMANTIC_ATTRIBUTE_SENTRY_OP;
-                                        var13 = {};
-                                        var9 = 'navigation';
-                                        var14 = var10.bind(var0)(var13, var14, var9);
-                                        var9 = var12[var7];
-                                        var9 = var8.bind(var0)(var9);
-                                        var13 = var9.SEMANTIC_ATTRIBUTE_SENTRY_ORIGIN;
-                                        var9 = 'auto.navigation.react.tanstack_router';
-                                        var9 = var10.bind(var0)(var14, var13, var9);
-                                        var7 = var12[var7];
-                                        var7 = var8.bind(var0)(var7);
-                                        var8 = var7.SEMANTIC_ATTRIBUTE_SENTRY_SOURCE;
-                                        var7 = 'url';
-                                        if (!var11) {
-                                            _fun12451_ip = 293;
-                                            continue _fun12451
-                                        }
-                                    case 289:
-                                        var7 = 'route';
-                                    case 293:
-                                        var7 = var10.bind(var0)(var9, var8, var7);
-                                        var3.attributes = var7;
-                                        var3 = var5.bind(var6)(var4, var3);
-                                        var _closure4_slot0 = var3;
-                                        var5 = _closure2_slot0;
-                                        var4 = var5.subscribe;
-                                        var3 = 'onResolved';
-                                        var1 = function(arg0) { // Environment: var2
-                                            _fun12452: for (var _fun12452_ip = 0;;) switch (_fun12452_ip) {
-                                                case 0:
-                                                    var1 = arg0;
-                                                    var3 = _closure4_slot1;
-                                                    var0 = undefined;
-                                                    var3 = var3.bind(var0)();
-                                                    var3 = _closure4_slot0;
-                                                    if (!var3) {
-                                                        _fun12452_ip = 193;
-                                                        continue _fun12452
-                                                    }
-                                                case 26:
-                                                    var6 = _closure2_slot0;
-                                                    var5 = var6.matchRoutes;
-                                                    var3 = var1.toLocation;
-                                                    var4 = var3.pathname;
-                                                    var1 = var1.toLocation;
-                                                    var3 = var1.search;
-                                                    var1 = {
-                                                        'preload': false,
-                                                        'throwOnError': false
-                                                    };
-                                                    var3 = var5.bind(var6)(var4, var3, var1);
-                                                    var4 = var3.length;
-                                                    var1 = 1;
-                                                    var1 = var4 - var1;
-                                                    var4 = var3[var1];
-                                                    if (!var4) {
-                                                        _fun12452_ip = 193;
-                                                        continue _fun12452
-                                                    }
-                                                case 99:
-                                                    var5 = _closure4_slot0;
-                                                    var3 = var5.updateName;
-                                                    var1 = var4.routeId;
-                                                    var1 = var3.bind(var5)(var1);
-                                                    var7 = _closure4_slot0;
-                                                    var6 = var7.setAttribute;
-                                                    var5 = _closure1_slot0;
-                                                    var8 = _closure1_slot1;
-                                                    var3 = 3;
-                                                    var3 = var8[var3];
-                                                    var3 = var5.bind(var0)(var3);
-                                                    var5 = var3.SEMANTIC_ATTRIBUTE_SENTRY_SOURCE;
-                                                    var3 = 'route';
-                                                    var3 = var6.bind(var7)(var5, var3);
-                                                    var3 = _closure4_slot0;
-                                                    var2 = var3.setAttributes;
-                                                    var1 = _closure1_slot4;
-                                                    var1 = var1.bind(var0)(var4);
-                                                    var1 = var2.bind(var3)(var1);
-                                                case 193:
-                                                    return var0;
-                                            }
-                                        };
-                                        var1 = var4.bind(var5)(var3, var1);
-                                        var _closure4_slot1 = var1;
-                                    case 344:
+                                        var8 = arguments[var1];
+                                    case 39:
+                                        var9 = _closure1_slot0;
+                                        var10 = _closure1_slot1;
+                                        var1 = var10[var1];
+                                        var4 = var9.bind(var0)(var1);
+                                        var3 = var4.startBrowserTracingPageLoadSpan;
+                                        var2 = _closure3_slot0;
+                                        var1 = {};
+                                        var6 = arg0;
+                                        var1.name = var6;
+                                        var7 = _closure1_slot2;
+                                        var5 = 2;
+                                        var6 = var10[var5];
+                                        var6 = var9.bind(var0)(var6);
+                                        var12 = var6.SEMANTIC_ATTRIBUTE_SENTRY_OP;
+                                        var11 = {};
+                                        var6 = 'pageload';
+                                        var12 = var7.bind(var0)(var11, var12, var6);
+                                        var6 = var10[var5];
+                                        var6 = var9.bind(var0)(var6);
+                                        var11 = var6.SEMANTIC_ATTRIBUTE_SENTRY_ORIGIN;
+                                        var6 = 'auto.pageload.react.reactrouter_v3';
+                                        var6 = var7.bind(var0)(var12, var11, var6);
+                                        var5 = var10[var5];
+                                        var5 = var9.bind(var0)(var5);
+                                        var5 = var5.SEMANTIC_ATTRIBUTE_SENTRY_SOURCE;
+                                        var5 = var7.bind(var0)(var6, var5, var8);
+                                        var1.attributes = var5;
+                                        var1 = var3.bind(var4)(var2, var1);
                                         return var0;
                                 }
                             };
-                            var1 = var3.bind(var4)(var2, var1);
-                        case 379:
+                            var12 = undefined;
+                            var11 = var6;
+                            var2 = var12[var7](var11, var10, var9, var8, var7);
+                        case 135:
+                            var2 = _closure2_slot5;
+                            if (!var2) {
+                                _fun12447_ip = 152;
+                                continue _fun12447
+                            }
+                        case 142:
+                            var3 = _closure2_slot1;
+                            var2 = var3.listen;
+                        case 152:
+                            if (!var2) {
+                                _fun12447_ip = 175;
+                                continue _fun12447
+                            }
+                        case 155:
+                            var2 = _closure2_slot1;
+                            var1 = var2.listen;
+                            var0 = function(arg0) { // Environment: var0
+                                _fun12449: for (var _fun12449_ip = 0;;) switch (_fun12449_ip) {
+                                    case 0:
+                                        var5 = arg0;
+                                        var1 = var5.action;
+                                        var0 = 'PUSH';
+                                        var0 = var0 !== var1;
+                                        if (!var0) {
+                                            _fun12449_ip = 32;
+                                            continue _fun12449
+                                        }
+                                    case 19:
+                                        var2 = var5.action;
+                                        var1 = 'POP';
+                                        var0 = var1 !== var2;
+                                    case 32:
+                                        if (var0) {
+                                            _fun12449_ip = 69;
+                                            continue _fun12449
+                                        }
+                                    case 35:
+                                        var4 = _closure1_slot3;
+                                        var9 = _closure2_slot2;
+                                        var7 = _closure2_slot3;
+                                        var10 = undefined;
+                                        var6 = function(arg0) { // Environment: var0
+                                            _fun12450: for (var _fun12450_ip = 0;;) switch (_fun12450_ip) {
+                                                case 0:
+                                                    var0 = undefined;
+                                                    var2 = undefined;
+                                                    var3 = arguments.length;
+                                                    var1 = 1;
+                                                    var3 = var3 > var1;
+                                                    var4 = 'url';
+                                                    var8 = var4;
+                                                    if (!var3) {
+                                                        _fun12450_ip = 39;
+                                                        continue _fun12450
+                                                    }
+                                                case 24:
+                                                    var3 = arguments[var1];
+                                                    var8 = var4;
+                                                    if (!(var0 !== var3)) {
+                                                        _fun12450_ip = 39;
+                                                        continue _fun12450
+                                                    }
+                                                case 35:
+                                                    var8 = arguments[var1];
+                                                case 39:
+                                                    var9 = _closure1_slot0;
+                                                    var10 = _closure1_slot1;
+                                                    var1 = var10[var1];
+                                                    var4 = var9.bind(var0)(var1);
+                                                    var3 = var4.startBrowserTracingNavigationSpan;
+                                                    var2 = _closure3_slot0;
+                                                    var1 = {};
+                                                    var6 = arg0;
+                                                    var1.name = var6;
+                                                    var7 = _closure1_slot2;
+                                                    var5 = 2;
+                                                    var6 = var10[var5];
+                                                    var6 = var9.bind(var0)(var6);
+                                                    var12 = var6.SEMANTIC_ATTRIBUTE_SENTRY_OP;
+                                                    var11 = {};
+                                                    var6 = 'navigation';
+                                                    var12 = var7.bind(var0)(var11, var12, var6);
+                                                    var6 = var10[var5];
+                                                    var6 = var9.bind(var0)(var6);
+                                                    var11 = var6.SEMANTIC_ATTRIBUTE_SENTRY_ORIGIN;
+                                                    var6 = 'auto.navigation.react.reactrouter_v3';
+                                                    var6 = var7.bind(var0)(var12, var11, var6);
+                                                    var5 = var10[var5];
+                                                    var5 = var9.bind(var0)(var5);
+                                                    var5 = var5.SEMANTIC_ATTRIBUTE_SENTRY_SOURCE;
+                                                    var5 = var7.bind(var0)(var6, var5, var8);
+                                                    var1.attributes = var5;
+                                                    var1 = var3.bind(var4)(var2, var1);
+                                                    return var0;
+                                            }
+                                        };
+                                        var8 = var5;
+                                        var0 = var10[var4](var9, var8, var7, var6, var5);
+                                    case 69:
+                                        var0 = undefined;
+                                        return var0;
+                                }
+                            };
+                            var0 = var1.bind(var2)(var0);
+                        case 175:
+                            var0 = undefined;
                             return var0;
                     }
                 };
@@ -419,6 +464,6 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
         }
     };
-    var2.tanstackRouterBrowserTracingIntegration = var1;
+    var2.reactRouterV3BrowserTracingIntegration = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 77, 1021, 817]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [77, 1022, 818]);

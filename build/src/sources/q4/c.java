@@ -11,13 +11,13 @@ import k4.q;
 public class c implements Runnable {
 
     /* renamed from: i  reason: collision with root package name */
-    private static final String f43921i = k4.m.i("EnqueueRunnable");
+    private static final String f44489i = k4.m.i("EnqueueRunnable");
 
     /* renamed from: d  reason: collision with root package name */
-    private final c0 f43922d;
+    private final c0 f44490d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final androidx.work.impl.q f43923e;
+    private final androidx.work.impl.q f44491e;
 
     public c(c0 c0Var) {
         this(c0Var, new androidx.work.impl.q());
@@ -52,7 +52,7 @@ public class c implements Runnable {
                     z10 |= e(c0Var2);
                 } else {
                     k4.m e11 = k4.m.e();
-                    String str = f43921i;
+                    String str = f44489i;
                     e11.k(str, "Already enqueued work ids (" + TextUtils.join(", ", c0Var2.c()) + ")");
                 }
             }
@@ -61,12 +61,12 @@ public class c implements Runnable {
     }
 
     public boolean a() {
-        p0 g10 = this.f43922d.g();
+        p0 g10 = this.f44490d.g();
         WorkDatabase p10 = g10.p();
         p10.e();
         try {
-            d.a(p10, g10.i(), this.f43922d);
-            boolean e10 = e(this.f43922d);
+            d.a(p10, g10.i(), this.f44490d);
+            boolean e10 = e(this.f44490d);
             p10.A();
             return e10;
         } finally {
@@ -75,33 +75,33 @@ public class c implements Runnable {
     }
 
     public k4.q d() {
-        return this.f43923e;
+        return this.f44491e;
     }
 
     public void f() {
-        p0 g10 = this.f43922d.g();
+        p0 g10 = this.f44490d.g();
         androidx.work.impl.z.f(g10.i(), g10.p(), g10.n());
     }
 
     @Override // java.lang.Runnable
     public void run() {
         try {
-            if (!this.f43922d.h()) {
+            if (!this.f44490d.h()) {
                 if (a()) {
-                    m.c(this.f43922d.g().h(), RescheduleReceiver.class, true);
+                    m.c(this.f44490d.g().h(), RescheduleReceiver.class, true);
                     f();
                 }
-                this.f43923e.a(k4.q.f31527a);
+                this.f44491e.a(k4.q.f32095a);
                 return;
             }
-            throw new IllegalStateException("WorkContinuation has cycles (" + this.f43922d + ")");
+            throw new IllegalStateException("WorkContinuation has cycles (" + this.f44490d + ")");
         } catch (Throwable th2) {
-            this.f43923e.a(new q.b.a(th2));
+            this.f44491e.a(new q.b.a(th2));
         }
     }
 
     public c(c0 c0Var, androidx.work.impl.q qVar) {
-        this.f43922d = c0Var;
-        this.f43923e = qVar;
+        this.f44490d = c0Var;
+        this.f44491e = qVar;
     }
 }

@@ -5,51 +5,51 @@ import android.graphics.PointF;
 public class a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final PointF f46127a;
+    private final PointF f46695a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final PointF f46128b;
+    private final PointF f46696b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final PointF f46129c;
+    private final PointF f46697c;
 
     public a() {
-        this.f46127a = new PointF();
-        this.f46128b = new PointF();
-        this.f46129c = new PointF();
+        this.f46695a = new PointF();
+        this.f46696b = new PointF();
+        this.f46697c = new PointF();
     }
 
     public PointF a() {
-        return this.f46127a;
+        return this.f46695a;
     }
 
     public PointF b() {
-        return this.f46128b;
+        return this.f46696b;
     }
 
     public PointF c() {
-        return this.f46129c;
+        return this.f46697c;
     }
 
     public void d(float f10, float f11) {
-        this.f46127a.set(f10, f11);
+        this.f46695a.set(f10, f11);
     }
 
     public void e(float f10, float f11) {
-        this.f46128b.set(f10, f11);
+        this.f46696b.set(f10, f11);
     }
 
     public void f(float f10, float f11) {
-        this.f46129c.set(f10, f11);
+        this.f46697c.set(f10, f11);
     }
 
     public String toString() {
-        return String.format("v=%.2f,%.2f cp1=%.2f,%.2f cp2=%.2f,%.2f", Float.valueOf(this.f46129c.x), Float.valueOf(this.f46129c.y), Float.valueOf(this.f46127a.x), Float.valueOf(this.f46127a.y), Float.valueOf(this.f46128b.x), Float.valueOf(this.f46128b.y));
+        return String.format("v=%.2f,%.2f cp1=%.2f,%.2f cp2=%.2f,%.2f", Float.valueOf(this.f46697c.x), Float.valueOf(this.f46697c.y), Float.valueOf(this.f46695a.x), Float.valueOf(this.f46695a.y), Float.valueOf(this.f46696b.x), Float.valueOf(this.f46696b.y));
     }
 
     public a(PointF pointF, PointF pointF2, PointF pointF3) {
-        this.f46127a = pointF;
-        this.f46128b = pointF2;
-        this.f46129c = pointF3;
+        this.f46695a = pointF;
+        this.f46696b = pointF2;
+        this.f46697c = pointF3;
     }
 }

@@ -41,8 +41,8 @@ public /* synthetic */ class FirstFrameCallbackEvent$$serializer implements h0 {
     @Override // tt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        n2 n2Var = n2.f50033a;
-        return new KSerializer[]{p0.f50049a, n2Var, z0.f50107a, n2Var};
+        n2 n2Var = n2.f50601a;
+        return new KSerializer[]{p0.f50617a, n2Var, z0.f50675a, n2Var};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy

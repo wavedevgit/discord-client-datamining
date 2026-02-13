@@ -25,15 +25,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/activities/utils/isOnMetaQuest.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun69083: for (var _fun69083_ip = 0;;) switch (_fun69083_ip) {
+        _fun63118: for (var _fun63118_ip = 0;;) switch (_fun63118_ip) {
             case 0:
                 var0 = arg0;
                 var1 = null;
                 var2 = var1 == var0;
                 var1 = undefined;
                 if (var2) {
-                    _fun69083_ip = 20;
-                    continue _fun69083
+                    _fun63118_ip = 20;
+                    continue _fun63118
                 }
             case 14:
                 var1 = var0.platform;

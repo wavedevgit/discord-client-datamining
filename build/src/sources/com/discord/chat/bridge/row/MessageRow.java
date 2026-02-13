@@ -154,26 +154,26 @@ public final class MessageRow extends Row {
         compositeEncoder.w(serialDescriptor, 0, messageRow.getIndex());
         compositeEncoder.k(serialDescriptor, 1, ChangeType.Serializer.INSTANCE, messageRow.getChangeType());
         if (compositeEncoder.z(serialDescriptor, 2) || messageRow.jumped != null) {
-            compositeEncoder.o(serialDescriptor, 2, h.f49997a, messageRow.jumped);
+            compositeEncoder.o(serialDescriptor, 2, h.f50565a, messageRow.jumped);
         }
         compositeEncoder.k(serialDescriptor, 3, MessageSerializer.INSTANCE, messageRow.message);
         if (compositeEncoder.z(serialDescriptor, 4) || messageRow.canAddNewReactions != null) {
-            compositeEncoder.o(serialDescriptor, 4, h.f49997a, messageRow.canAddNewReactions);
+            compositeEncoder.o(serialDescriptor, 4, h.f50565a, messageRow.canAddNewReactions);
         }
         if (compositeEncoder.z(serialDescriptor, 5) || messageRow.addNewReactionAccessibilityLabel != null) {
-            compositeEncoder.o(serialDescriptor, 5, n2.f50033a, messageRow.addNewReactionAccessibilityLabel);
+            compositeEncoder.o(serialDescriptor, 5, n2.f50601a, messageRow.addNewReactionAccessibilityLabel);
         }
         if (compositeEncoder.z(serialDescriptor, 6) || messageRow.reactionsTheme != null) {
             compositeEncoder.o(serialDescriptor, 6, ReactionsTheme$$serializer.INSTANCE, messageRow.reactionsTheme);
         }
         if (compositeEncoder.z(serialDescriptor, 7) || messageRow.showReplyButton != null) {
-            compositeEncoder.o(serialDescriptor, 7, h.f49997a, messageRow.showReplyButton);
+            compositeEncoder.o(serialDescriptor, 7, h.f50565a, messageRow.showReplyButton);
         }
         if (compositeEncoder.z(serialDescriptor, 8) || messageRow.renderContentOnly) {
             compositeEncoder.x(serialDescriptor, 8, messageRow.renderContentOnly);
         }
         if (compositeEncoder.z(serialDescriptor, 9) || messageRow.reactTag != null) {
-            compositeEncoder.o(serialDescriptor, 9, p0.f50049a, messageRow.reactTag);
+            compositeEncoder.o(serialDescriptor, 9, p0.f50617a, messageRow.reactTag);
         }
         if (compositeEncoder.z(serialDescriptor, 10) || messageRow.truncation != null) {
             compositeEncoder.o(serialDescriptor, 10, Truncation$$serializer.INSTANCE, messageRow.truncation);

@@ -5,21 +5,21 @@ import x4.r;
 public final class v extends r.a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f54378a;
+    private final String f54946a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final int f54379b;
+    private final int f54947b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final int f54380c;
+    private final int f54948c;
 
     public v(String str, int i10, int i11) {
-        this.f54378a = str;
-        this.f54379b = i10;
-        this.f54380c = i11;
+        this.f54946a = str;
+        this.f54947b = i10;
+        this.f54948c = i11;
     }
 
     public final int a() {
-        return this.f54380c;
+        return this.f54948c;
     }
 }

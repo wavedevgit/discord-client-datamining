@@ -1,82 +1,68 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var8 = require;
     var1 = exports;
-    var9 = dependencyMap;
-    var6 = function arg0() {
-        _fun22069: for (var _fun22069_ip = 0;;) switch (_fun22069_ip) {
+    var0 = global;
+    var5 = var0.Object;
+    var4 = var5.defineProperty;
+    var3 = {};
+    var0 = true;
+    var3.value = var0;
+    var0 = '__esModule';
+    var0 = var4.bind(var5)(var1, var0, var3);
+    var0 = undefined;
+    var1.default = var0;
+    var3 = {
+        'lastWeek': null,
+        'yesterday': "'χθες στις' p",
+        'today': "'σήμερα στις' p",
+        'tomorrow': "'αύριο στις' p",
+        'nextWeek': "eeee 'στις' p",
+        'other': 'P'
+    };
+    var4 = function arg0() {
+        _fun22086: for (var _fun22086_ip = 0;;) switch (_fun22086_ip) {
             case 0:
-                var2 = arg0;
-                if (!var2) {
-                    _fun22069_ip = 18;
-                    continue _fun22069
+                var1 = arg0;
+                var0 = var1.getUTCDay;
+                var2 = var0.bind(var1)();
+                var0 = "'την προηγούμενη' eeee 'στις' p";
+                var1 = 6;
+                if (!(var1 === var2)) {
+                    _fun22086_ip = 32;
+                    continue _fun22086
                 }
-            case 6:
-                var1 = var2.__esModule;
-                var0 = var2;
-                if (var1) {
-                    _fun22069_ip = 27;
-                    continue _fun22069
-                }
-            case 18:
-                var1 = {};
-                var1.default = var2;
-                var0 = var1;
-            case 27:
+            case 26:
+                var0 = "'το προηγούμενο' eeee 'στις' p";
+            case 32:
                 return var0;
         }
     };
-    var0 = global;
-    var4 = var0.Object;
-    var3 = var4.defineProperty;
-    var2 = {};
-    var0 = true;
-    var2.value = var0;
-    var0 = '__esModule';
-    var0 = var3.bind(var4)(var1, var0, var2);
-    var0 = undefined;
-    var1.default = var0;
-    var2 = 0;
-    var2 = var9[var2];
-    var2 = var8.bind(var0)(var2);
-    var7 = var6.bind(var0)(var2);
-    var2 = 1;
-    var2 = var9[var2];
-    var2 = var8.bind(var0)(var2);
-    var5 = var6.bind(var0)(var2);
-    var2 = 2;
-    var2 = var9[var2];
-    var2 = var8.bind(var0)(var2);
-    var4 = var6.bind(var0)(var2);
-    var2 = 3;
-    var2 = var9[var2];
-    var2 = var8.bind(var0)(var2);
-    var3 = var6.bind(var0)(var2);
-    var2 = 4;
-    var2 = var9[var2];
-    var2 = var8.bind(var0)(var2);
-    var6 = var6.bind(var0)(var2);
-    var2 = {};
-    var8 = 'en-GB';
-    var2.code = var8;
-    var7 = var7.default;
-    var2.formatDistance = var7;
-    var6 = var6.default;
-    var2.formatLong = var6;
-    var5 = var5.default;
-    var2.formatRelative = var5;
-    var4 = var4.default;
-    var2.localize = var4;
-    var3 = var3.default;
-    var2.match = var3;
-    var3 = {
-        'weekStartsOn': 1,
-        'firstWeekContainsDate': 4
+    var3.lastWeek = var4;
+    var _closure1_slot0 = var3;
+    var2 = function arg0, arg1() {
+        _fun22087: for (var _fun22087_ip = 0;;) switch (_fun22087_ip) {
+            case 0:
+                var1 = _closure1_slot0;
+                var0 = arg0;
+                var3 = var1[var0];
+                var2 = 'function';
+                var1 = typeof var3;
+                var0 = var3;
+                if (!(var2 === var1)) {
+                    _fun22087_ip = 38;
+                    continue _fun22087
+                }
+            case 28:
+                var2 = undefined;
+                var1 = arg1;
+                var0 = var3.bind(var2)(var1);
+            case 38:
+                return var0;
+        }
     };
-    var2.options = var3;
     var1.default = var2;
     var2 = var1.default;
     var1 = arg4;
     var1.exports = var2;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1690, 1693, 1694, 1696, 2608]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, []);

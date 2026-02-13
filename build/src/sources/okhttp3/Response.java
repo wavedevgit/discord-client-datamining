@@ -11,65 +11,65 @@ import okhttp3.Headers;
 public final class Response implements Closeable {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Request f40385d;
+    private final Request f40953d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final j f40386e;
+    private final j f40954e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final String f40387i;
+    private final String f40955i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final int f40388o;
+    private final int f40956o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final g f40389p;
+    private final g f40957p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final Headers f40390q;
+    private final Headers f40958q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final ResponseBody f40391r;
+    private final ResponseBody f40959r;
 
     /* renamed from: s  reason: collision with root package name */
-    private final Response f40392s;
+    private final Response f40960s;
 
     /* renamed from: t  reason: collision with root package name */
-    private final Response f40393t;
+    private final Response f40961t;
 
     /* renamed from: u  reason: collision with root package name */
-    private final Response f40394u;
+    private final Response f40962u;
 
     /* renamed from: v  reason: collision with root package name */
-    private final long f40395v;
+    private final long f40963v;
 
     /* renamed from: w  reason: collision with root package name */
-    private final long f40396w;
+    private final long f40964w;
 
     /* renamed from: x  reason: collision with root package name */
-    private final qu.c f40397x;
+    private final qu.c f40965x;
 
     /* renamed from: y  reason: collision with root package name */
-    private CacheControl f40398y;
+    private CacheControl f40966y;
 
     public Response(Request request, j protocol, String message, int i10, g gVar, Headers headers, ResponseBody responseBody, Response response, Response response2, Response response3, long j10, long j11, qu.c cVar) {
         Intrinsics.checkNotNullParameter(request, "request");
         Intrinsics.checkNotNullParameter(protocol, "protocol");
         Intrinsics.checkNotNullParameter(message, "message");
         Intrinsics.checkNotNullParameter(headers, "headers");
-        this.f40385d = request;
-        this.f40386e = protocol;
-        this.f40387i = message;
-        this.f40388o = i10;
-        this.f40389p = gVar;
-        this.f40390q = headers;
-        this.f40391r = responseBody;
-        this.f40392s = response;
-        this.f40393t = response2;
-        this.f40394u = response3;
-        this.f40395v = j10;
-        this.f40396w = j11;
-        this.f40397x = cVar;
+        this.f40953d = request;
+        this.f40954e = protocol;
+        this.f40955i = message;
+        this.f40956o = i10;
+        this.f40957p = gVar;
+        this.f40958q = headers;
+        this.f40959r = responseBody;
+        this.f40960s = response;
+        this.f40961t = response2;
+        this.f40962u = response3;
+        this.f40963v = j10;
+        this.f40964w = j11;
+        this.f40965x = cVar;
     }
 
     public static /* synthetic */ String Z(Response response, String str, String str2, int i10, Object obj) {
@@ -80,11 +80,11 @@ public final class Response implements Closeable {
     }
 
     public final qu.c C() {
-        return this.f40397x;
+        return this.f40965x;
     }
 
     public final boolean C0() {
-        int i10 = this.f40388o;
+        int i10 = this.f40956o;
         if (i10 == 307 || i10 == 308) {
             return true;
         }
@@ -100,11 +100,11 @@ public final class Response implements Closeable {
     }
 
     public final String E0() {
-        return this.f40387i;
+        return this.f40955i;
     }
 
     public final Response F0() {
-        return this.f40392s;
+        return this.f40960s;
     }
 
     public final a G0() {
@@ -112,11 +112,11 @@ public final class Response implements Closeable {
     }
 
     public final Response H0() {
-        return this.f40394u;
+        return this.f40962u;
     }
 
     public final g I() {
-        return this.f40389p;
+        return this.f40957p;
     }
 
     public final String J(String name) {
@@ -125,20 +125,20 @@ public final class Response implements Closeable {
     }
 
     public final j L0() {
-        return this.f40386e;
+        return this.f40954e;
     }
 
     public final long N0() {
-        return this.f40396w;
+        return this.f40964w;
     }
 
     public final Request O0() {
-        return this.f40385d;
+        return this.f40953d;
     }
 
     public final String Q(String name, String str) {
         Intrinsics.checkNotNullParameter(name, "name");
-        String c10 = this.f40390q.c(name);
+        String c10 = this.f40958q.c(name);
         if (c10 == null) {
             return str;
         }
@@ -146,16 +146,16 @@ public final class Response implements Closeable {
     }
 
     public final long S0() {
-        return this.f40395v;
+        return this.f40963v;
     }
 
     public final ResponseBody a() {
-        return this.f40391r;
+        return this.f40959r;
     }
 
     @Override // java.io.Closeable, java.lang.AutoCloseable
     public void close() {
-        ResponseBody responseBody = this.f40391r;
+        ResponseBody responseBody = this.f40959r;
         if (responseBody != null) {
             responseBody.close();
             return;
@@ -164,15 +164,15 @@ public final class Response implements Closeable {
     }
 
     public final int h() {
-        return this.f40388o;
+        return this.f40956o;
     }
 
     public final Headers i() {
-        return this.f40390q;
+        return this.f40958q;
     }
 
     public final boolean isSuccessful() {
-        int i10 = this.f40388o;
+        int i10 = this.f40956o;
         if (200 > i10 || i10 >= 300) {
             return false;
         }
@@ -180,35 +180,35 @@ public final class Response implements Closeable {
     }
 
     public final Request m() {
-        return this.f40385d;
+        return this.f40953d;
     }
 
     public final ResponseBody n() {
-        return this.f40391r;
+        return this.f40959r;
     }
 
     public final CacheControl p() {
-        CacheControl cacheControl = this.f40398y;
+        CacheControl cacheControl = this.f40966y;
         if (cacheControl == null) {
-            CacheControl b10 = CacheControl.f40217n.b(this.f40390q);
-            this.f40398y = b10;
+            CacheControl b10 = CacheControl.f40785n.b(this.f40958q);
+            this.f40966y = b10;
             return b10;
         }
         return cacheControl;
     }
 
     public final Response s() {
-        return this.f40393t;
+        return this.f40961t;
     }
 
     public String toString() {
-        return "Response{protocol=" + this.f40386e + ", code=" + this.f40388o + ", message=" + this.f40387i + ", url=" + this.f40385d.n() + '}';
+        return "Response{protocol=" + this.f40954e + ", code=" + this.f40956o + ", message=" + this.f40955i + ", url=" + this.f40953d.n() + '}';
     }
 
     public final List y() {
         String str;
-        Headers headers = this.f40390q;
-        int i10 = this.f40388o;
+        Headers headers = this.f40958q;
+        int i10 = this.f40956o;
         if (i10 != 401) {
             if (i10 != 407) {
                 return CollectionsKt.l();
@@ -221,58 +221,58 @@ public final class Response implements Closeable {
     }
 
     public final int z() {
-        return this.f40388o;
+        return this.f40956o;
     }
 
     public final Headers z0() {
-        return this.f40390q;
+        return this.f40958q;
     }
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private Request f40399a;
+        private Request f40967a;
 
         /* renamed from: b  reason: collision with root package name */
-        private j f40400b;
+        private j f40968b;
 
         /* renamed from: c  reason: collision with root package name */
-        private int f40401c;
+        private int f40969c;
 
         /* renamed from: d  reason: collision with root package name */
-        private String f40402d;
+        private String f40970d;
 
         /* renamed from: e  reason: collision with root package name */
-        private g f40403e;
+        private g f40971e;
 
         /* renamed from: f  reason: collision with root package name */
-        private Headers.a f40404f;
+        private Headers.a f40972f;
 
         /* renamed from: g  reason: collision with root package name */
-        private ResponseBody f40405g;
+        private ResponseBody f40973g;
 
         /* renamed from: h  reason: collision with root package name */
-        private Response f40406h;
+        private Response f40974h;
 
         /* renamed from: i  reason: collision with root package name */
-        private Response f40407i;
+        private Response f40975i;
 
         /* renamed from: j  reason: collision with root package name */
-        private Response f40408j;
+        private Response f40976j;
 
         /* renamed from: k  reason: collision with root package name */
-        private long f40409k;
+        private long f40977k;
 
         /* renamed from: l  reason: collision with root package name */
-        private long f40410l;
+        private long f40978l;
 
         /* renamed from: m  reason: collision with root package name */
-        private qu.c f40411m;
+        private qu.c f40979m;
 
         public a() {
-            this.f40401c = -1;
-            this.f40404f = new Headers.a();
+            this.f40969c = -1;
+            this.f40972f = new Headers.a();
         }
 
         private final void e(Response response) {
@@ -303,25 +303,25 @@ public final class Response implements Closeable {
         public a a(String name, String value) {
             Intrinsics.checkNotNullParameter(name, "name");
             Intrinsics.checkNotNullParameter(value, "value");
-            this.f40404f.a(name, value);
+            this.f40972f.a(name, value);
             return this;
         }
 
         public a b(ResponseBody responseBody) {
-            this.f40405g = responseBody;
+            this.f40973g = responseBody;
             return this;
         }
 
         public Response c() {
-            int i10 = this.f40401c;
+            int i10 = this.f40969c;
             if (i10 >= 0) {
-                Request request = this.f40399a;
+                Request request = this.f40967a;
                 if (request != null) {
-                    j jVar = this.f40400b;
+                    j jVar = this.f40968b;
                     if (jVar != null) {
-                        String str = this.f40402d;
+                        String str = this.f40970d;
                         if (str != null) {
-                            return new Response(request, jVar, str, i10, this.f40403e, this.f40404f.f(), this.f40405g, this.f40406h, this.f40407i, this.f40408j, this.f40409k, this.f40410l, this.f40411m);
+                            return new Response(request, jVar, str, i10, this.f40971e, this.f40972f.f(), this.f40973g, this.f40974h, this.f40975i, this.f40976j, this.f40977k, this.f40978l, this.f40979m);
                         }
                         throw new IllegalStateException("message == null");
                     }
@@ -329,103 +329,103 @@ public final class Response implements Closeable {
                 }
                 throw new IllegalStateException("request == null");
             }
-            throw new IllegalStateException(("code < 0: " + this.f40401c).toString());
+            throw new IllegalStateException(("code < 0: " + this.f40969c).toString());
         }
 
         public a d(Response response) {
             f("cacheResponse", response);
-            this.f40407i = response;
+            this.f40975i = response;
             return this;
         }
 
         public a g(int i10) {
-            this.f40401c = i10;
+            this.f40969c = i10;
             return this;
         }
 
         public final int h() {
-            return this.f40401c;
+            return this.f40969c;
         }
 
         public a i(g gVar) {
-            this.f40403e = gVar;
+            this.f40971e = gVar;
             return this;
         }
 
         public a j(String name, String value) {
             Intrinsics.checkNotNullParameter(name, "name");
             Intrinsics.checkNotNullParameter(value, "value");
-            this.f40404f.j(name, value);
+            this.f40972f.j(name, value);
             return this;
         }
 
         public a k(Headers headers) {
             Intrinsics.checkNotNullParameter(headers, "headers");
-            this.f40404f = headers.g();
+            this.f40972f = headers.g();
             return this;
         }
 
         public final void l(qu.c deferredTrailers) {
             Intrinsics.checkNotNullParameter(deferredTrailers, "deferredTrailers");
-            this.f40411m = deferredTrailers;
+            this.f40979m = deferredTrailers;
         }
 
         public a m(String message) {
             Intrinsics.checkNotNullParameter(message, "message");
-            this.f40402d = message;
+            this.f40970d = message;
             return this;
         }
 
         public a n(Response response) {
             f("networkResponse", response);
-            this.f40406h = response;
+            this.f40974h = response;
             return this;
         }
 
         public a o(Response response) {
             e(response);
-            this.f40408j = response;
+            this.f40976j = response;
             return this;
         }
 
         public a p(j protocol) {
             Intrinsics.checkNotNullParameter(protocol, "protocol");
-            this.f40400b = protocol;
+            this.f40968b = protocol;
             return this;
         }
 
         public a q(long j10) {
-            this.f40410l = j10;
+            this.f40978l = j10;
             return this;
         }
 
         public a r(Request request) {
             Intrinsics.checkNotNullParameter(request, "request");
-            this.f40399a = request;
+            this.f40967a = request;
             return this;
         }
 
         public a s(long j10) {
-            this.f40409k = j10;
+            this.f40977k = j10;
             return this;
         }
 
         public a(Response response) {
             Intrinsics.checkNotNullParameter(response, "response");
-            this.f40401c = -1;
-            this.f40399a = response.O0();
-            this.f40400b = response.L0();
-            this.f40401c = response.z();
-            this.f40402d = response.E0();
-            this.f40403e = response.I();
-            this.f40404f = response.z0().g();
-            this.f40405g = response.n();
-            this.f40406h = response.F0();
-            this.f40407i = response.s();
-            this.f40408j = response.H0();
-            this.f40409k = response.S0();
-            this.f40410l = response.N0();
-            this.f40411m = response.C();
+            this.f40969c = -1;
+            this.f40967a = response.O0();
+            this.f40968b = response.L0();
+            this.f40969c = response.z();
+            this.f40970d = response.E0();
+            this.f40971e = response.I();
+            this.f40972f = response.z0().g();
+            this.f40973g = response.n();
+            this.f40974h = response.F0();
+            this.f40975i = response.s();
+            this.f40976j = response.H0();
+            this.f40977k = response.S0();
+            this.f40978l = response.N0();
+            this.f40979m = response.C();
         }
     }
 }

@@ -500,15 +500,15 @@ public abstract class b {
                 uc.n.a(z18, null);
                 h0Var.U(f13 + 8);
                 pe.a b10 = pe.a.b(h0Var);
-                list2 = b10.f41549a;
-                eVar2.f8057c = b10.f41550b;
+                list2 = b10.f42117a;
+                eVar2.f8057c = b10.f42118b;
                 if (!z19) {
-                    f12 = b10.f41556h;
+                    f12 = b10.f42124h;
                 }
-                str6 = b10.f41557i;
-                i20 = b10.f41553e;
-                i21 = b10.f41554f;
-                i22 = b10.f41555g;
+                str6 = b10.f42125i;
+                i20 = b10.f42121e;
+                i21 = b10.f42122f;
+                i22 = b10.f42123g;
                 str4 = "video/avc";
             } else if (q11 == 1752589123) {
                 if (str == null) {
@@ -519,15 +519,15 @@ public abstract class b {
                 uc.n.a(z17, null);
                 h0Var.U(f13 + 8);
                 pe.f a10 = pe.f.a(h0Var);
-                list2 = a10.f41591a;
-                eVar2.f8057c = a10.f41592b;
+                list2 = a10.f42159a;
+                eVar2.f8057c = a10.f42160b;
                 if (!z19) {
-                    f12 = a10.f41598h;
+                    f12 = a10.f42166h;
                 }
-                str6 = a10.f41599i;
-                i20 = a10.f41595e;
-                i21 = a10.f41596f;
-                i22 = a10.f41597g;
+                str6 = a10.f42167i;
+                i20 = a10.f42163e;
+                i21 = a10.f42164f;
+                i22 = a10.f42165g;
                 str4 = "video/hevc";
             } else {
                 if (q11 == 1685480259 || q11 == 1685485123) {
@@ -541,7 +541,7 @@ public abstract class b {
                     i19 = i29;
                     pe.d a11 = pe.d.a(h0Var);
                     if (a11 != null) {
-                        str6 = a11.f41576c;
+                        str6 = a11.f42144c;
                         str = "video/dolby-vision";
                     }
                 } else {
@@ -1560,8 +1560,8 @@ public abstract class b {
                 long X03 = w0.X0(j18 - jArr[i13], oVar.f8173f.K, oVar.f8170c);
                 long X04 = w0.X0(j17 - X02, oVar.f8173f.K, oVar.f8170c);
                 if ((X03 != j10 || X04 != j10) && X03 <= 2147483647L && X04 <= 2147483647L) {
-                    vVar.f50708a = (int) X03;
-                    vVar.f50709b = (int) X04;
+                    vVar.f51276a = (int) X03;
+                    vVar.f51277b = (int) X04;
                     w0.Z0(jArr, 1000000L, oVar.f8170c);
                     return new r(oVar, jArr9, iArr13, i18, jArr, iArr2, w0.X0(oVar.f8175h[i13], 1000000L, oVar.f8171d));
                 }

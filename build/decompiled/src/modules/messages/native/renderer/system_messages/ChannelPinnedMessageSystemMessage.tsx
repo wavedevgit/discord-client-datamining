@@ -24,7 +24,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/messages/native/renderer/system_messages/ChannelPinnedMessageSystemMessage.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun56152: for (var _fun56152_ip = 0;;) switch (_fun56152_ip) {
+        _fun56187: for (var _fun56187_ip = 0;;) switch (_fun56187_ip) {
             case 0:
                 var3 = arg0;
                 var9 = var3.message;
@@ -71,32 +71,32 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var16 = 'username';
                 var10 = null;
                 if (!(var16 === var13)) {
-                    _fun56152_ip = 208;
-                    continue _fun56152
+                    _fun56187_ip = 209;
+                    continue _fun56187
                 }
-            case 205:
+            case 206:
                 var10 = var12;
-            case 208:
+            case 209:
                 var8.linkColor = var10;
                 var8.roleColor = var12;
                 var10 = null;
                 if (!var15) {
-                    _fun56152_ip = 226;
-                    continue _fun56152
+                    _fun56187_ip = 227;
+                    continue _fun56187
                 }
-            case 223:
+            case 224:
                 var10 = var14;
-            case 226:
+            case 227:
                 var8.roleColors = var10;
                 var10 = 'dot';
                 var10 = var10 === var13;
                 if (!var10) {
-                    _fun56152_ip = 246;
-                    continue _fun56152
+                    _fun56187_ip = 247;
+                    continue _fun56187
                 }
-            case 242:
+            case 243:
                 var10 = var11 != var12;
-            case 246:
+            case 247:
                 var8.shouldShowRoleDot = var10;
                 var10 = var9.channel_id;
                 var8.messageChannelId = var10;
@@ -126,4 +126,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.createChannelPinnedMessageSystemMessage = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6770, 6771, 1234, 6772, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6752, 6753, 1235, 6754, 2]);

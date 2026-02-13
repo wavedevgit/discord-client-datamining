@@ -1,6 +1,6 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun35492: for (var _fun35492_ip = 0;;) switch (_fun35492_ip) {
+    _fun35522: for (var _fun35522_ip = 0;;) switch (_fun35522_ip) {
         case 0:
             var2 = exports;
             var4 = global;
@@ -22,12 +22,12 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             if (!var5) {
-                _fun35492_ip = 73;
-                continue _fun35492
+                _fun35522_ip = 73;
+                continue _fun35522
             }
         case 68:
             var3 = function arg0() {
-                _fun35494: for (var _fun35494_ip = 0;;) switch (_fun35494_ip) {
+                _fun35524: for (var _fun35524_ip = 0;;) switch (_fun35524_ip) {
                     case 0:
                         var1 = arg0;
                         var5 = var1.component;
@@ -36,15 +36,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var _closure2_slot0 = var6;
                         var1 = _closure1_slot0;
                         if (!var1) {
-                            _fun35494_ip = 229;
-                            continue _fun35494
+                            _fun35524_ip = 229;
+                            continue _fun35524
                         }
                     case 40:
                         var2 = 'object';
                         var1 = typeof var6;
                         if (!(var2 !== var1)) {
-                            _fun35494_ip = 90;
-                            continue _fun35494
+                            _fun35524_ip = 90;
+                            continue _fun35524
                         }
                     case 51:
                         var1 = null;
@@ -52,8 +52,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var3 = '';
                         var2 = var3;
                         if (!var1) {
-                            _fun35494_ip = 70;
-                            continue _fun35494
+                            _fun35524_ip = 70;
+                            continue _fun35524
                         }
                     case 67:
                         var2 = var6;
@@ -62,8 +62,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var1 = var1.HermesInternal;
                         var1 = var1.concat;
                         var3 = var1.bind(var3)(var2);
-                        _fun35494_ip = 139;
-                        continue _fun35494;
+                        _fun35524_ip = 139;
+                        continue _fun35524;
                     case 90:
                         var1 = global;
                         var2 = var1.Object;
@@ -116,12 +116,12 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var4 = var4.bind(var5)(var3);
             var2.print = var3;
             var1 = function() {
-                _fun35496: for (var _fun35496_ip = 0;;) switch (_fun35496_ip) {
+                _fun35526: for (var _fun35526_ip = 0;;) switch (_fun35526_ip) {
                     case 0:
                         var0 = _closure1_slot1;
                         if (var0) {
-                            _fun35496_ip = 36;
-                            continue _fun35496
+                            _fun35526_ip = 36;
+                            continue _fun35526
                         }
                     case 10:
                         var0 = global;
@@ -129,8 +129,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var2 = var3.warn;
                         var0 = '[Portal] could not enable logging on production!';
                         var0 = var2.bind(var3)(var0);
-                        _fun35496_ip = 42;
-                        continue _fun35496;
+                        _fun35526_ip = 42;
+                        continue _fun35526;
                     case 36:
                         var0 = true;
                         _closure1_slot0 = var0;

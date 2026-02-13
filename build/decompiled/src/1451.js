@@ -31,14 +31,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var2._currentInternetReachabilityCheckHandler = var3;
         var2._currentTimeoutHandle = var3;
         var3 = function(arg0) { // Environment: var1
-            _fun16769: for (var _fun16769_ip = 0;;) switch (_fun16769_ip) {
+            _fun16775: for (var _fun16775_ip = 0;;) switch (_fun16775_ip) {
                 case 0:
                     var0 = arg0;
                     var2 = _closure2_slot0;
                     var2 = var2._isInternetReachable;
                     if (!(var2 !== var0)) {
-                        _fun16769_ip = 47;
-                        continue _fun16769
+                        _fun16775_ip = 47;
+                        continue _fun16775
                     }
                 case 20:
                     var2 = _closure2_slot0;
@@ -53,14 +53,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         };
         var2._setIsInternetReachable = var3;
         var3 = function(arg0) { // Environment: var1
-            _fun16770: for (var _fun16770_ip = 0;;) switch (_fun16770_ip) {
+            _fun16776: for (var _fun16776_ip = 0;;) switch (_fun16776_ip) {
                 case 0:
                     var1 = _closure2_slot0;
                     var1 = var1._currentInternetReachabilityCheckHandler;
                     var3 = null;
                     if (!(var3 !== var1)) {
-                        _fun16770_ip = 45;
-                        continue _fun16770
+                        _fun16776_ip = 45;
+                        continue _fun16776
                     }
                 case 19:
                     var1 = _closure2_slot0;
@@ -72,8 +72,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var1 = _closure2_slot0;
                     var1 = var1._currentTimeoutHandle;
                     if (!(var3 !== var1)) {
-                        _fun16770_ip = 90;
-                        continue _fun16770
+                        _fun16776_ip = 90;
+                        continue _fun16776
                     }
                 case 59:
                     var1 = global;
@@ -86,8 +86,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 case 90:
                     var1 = arg0;
                     if (!var1) {
-                        _fun16770_ip = 119;
-                        continue _fun16770
+                        _fun16776_ip = 119;
+                        continue _fun16776
                     }
                 case 96:
                     var1 = _closure2_slot0;
@@ -95,22 +95,22 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var1 = var2.reachabilityShouldRun;
                     var1 = var1.bind(var2)();
                     if (var1) {
-                        _fun16770_ip = 138;
-                        continue _fun16770
+                        _fun16776_ip = 138;
+                        continue _fun16776
                     }
                 case 119:
                     var4 = _closure2_slot0;
                     var2 = var4._setIsInternetReachable;
                     var1 = false;
                     var1 = var2.bind(var4)(var1);
-                    _fun16770_ip = 186;
-                    continue _fun16770;
+                    _fun16776_ip = 186;
+                    continue _fun16776;
                 case 138:
                     var1 = _closure2_slot0;
                     var1 = var1._isInternetReachable;
                     if (var1) {
-                        _fun16770_ip = 166;
-                        continue _fun16770
+                        _fun16776_ip = 166;
+                        continue _fun16776
                     }
                 case 151:
                     var2 = _closure2_slot0;
@@ -236,7 +236,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var4 = var3.bind(var4)(var2);
             var3 = var4.then;
             var2 = function(arg0) { // Environment: var1
-                _fun16778: for (var _fun16778_ip = 0;;) switch (_fun16778_ip) {
+                _fun16784: for (var _fun16784_ip = 0;;) switch (_fun16784_ip) {
                     case 0:
                         var1 = _closure2_slot0;
                         var3 = var1._setIsInternetReachable;
@@ -246,13 +246,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var1 = _closure2_slot0;
                         var1 = var1._configuration;
                         if (var2) {
-                            _fun16778_ip = 48;
-                            continue _fun16778
+                            _fun16784_ip = 48;
+                            continue _fun16784
                         }
                     case 40:
                         var4 = var1.reachabilityShortTimeout;
-                        _fun16778_ip = 54;
-                        continue _fun16778;
+                        _fun16784_ip = 54;
+                        continue _fun16784;
                     case 48:
                         var4 = var1.reachabilityLongTimeout;
                     case 54:
@@ -269,19 +269,19 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var4 = var3.bind(var4)(var2);
             var3 = var4.catch;
             var2 = function(arg0) { // Environment: var1
-                _fun16779: for (var _fun16779_ip = 0;;) switch (_fun16779_ip) {
+                _fun16785: for (var _fun16785_ip = 0;;) switch (_fun16785_ip) {
                     case 0:
                         var1 = arg0;
                         var0 = 'canceled';
                         if (!(var0 !== var1)) {
-                            _fun16779_ip = 98;
-                            continue _fun16779
+                            _fun16785_ip = 98;
+                            continue _fun16785
                         }
                     case 11:
                         var0 = 'timedout';
                         if (!(var0 === var1)) {
-                            _fun16779_ip = 36;
-                            continue _fun16779
+                            _fun16785_ip = 36;
+                            continue _fun16785
                         }
                     case 19:
                         var1 = _closure3_slot1;
@@ -300,8 +300,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var0 = undefined;
                         var0 = var4.bind(var0)(var3, var2);
                         var1._currentTimeoutHandle = var0;
-                        _fun16779_ip = 115;
-                        continue _fun16779;
+                        _fun16785_ip = 115;
+                        continue _fun16785;
                     case 98:
                         var1 = _closure3_slot1;
                         var0 = var1.abort;
@@ -338,31 +338,31 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         };
         var2._checkInternetReachability = var3;
         var3 = function(arg0) { // Environment: var1
-            _fun16782: for (var _fun16782_ip = 0;;) switch (_fun16782_ip) {
+            _fun16788: for (var _fun16788_ip = 0;;) switch (_fun16788_ip) {
                 case 0:
                     var0 = arg0;
                     var1 = var0.isInternetReachable;
                     var2 = 'boolean';
                     var1 = typeof var1;
                     if (!(var2 === var1)) {
-                        _fun16782_ip = 42;
-                        continue _fun16782
+                        _fun16788_ip = 42;
+                        continue _fun16788
                     }
                 case 20:
                     var2 = _closure2_slot0;
                     var2 = var2._configuration;
                     var2 = var2.useNativeReachability;
                     if (var2) {
-                        _fun16782_ip = 68;
-                        continue _fun16782
+                        _fun16788_ip = 68;
+                        continue _fun16788
                     }
                 case 42:
                     var4 = _closure2_slot0;
                     var3 = var4._setExpectsConnection;
                     var2 = var0.isConnected;
                     var2 = var3.bind(var4)(var2);
-                    _fun16782_ip = 89;
-                    continue _fun16782;
+                    _fun16788_ip = 89;
+                    continue _fun16788;
                 case 68:
                     var2 = _closure2_slot0;
                     var1 = var2._setIsInternetReachable;
@@ -381,14 +381,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         };
         var2.currentState = var3;
         var1 = function() { // Environment: var1
-            _fun16784: for (var _fun16784_ip = 0;;) switch (_fun16784_ip) {
+            _fun16790: for (var _fun16790_ip = 0;;) switch (_fun16790_ip) {
                 case 0:
                     var1 = _closure2_slot0;
                     var2 = var1._currentInternetReachabilityCheckHandler;
                     var1 = null;
                     if (!(var1 !== var2)) {
-                        _fun16784_ip = 45;
-                        continue _fun16784
+                        _fun16790_ip = 45;
+                        continue _fun16790
                     }
                 case 19:
                     var2 = _closure2_slot0;
@@ -400,8 +400,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var2 = _closure2_slot0;
                     var2 = var2._currentTimeoutHandle;
                     if (!(var1 !== var2)) {
-                        _fun16784_ip = 90;
-                        continue _fun16784
+                        _fun16790_ip = 90;
+                        continue _fun16790
                     }
                 case 59:
                     var2 = global;

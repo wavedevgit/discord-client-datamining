@@ -22,40 +22,40 @@ import java.util.concurrent.atomic.AtomicInteger;
 public final class t {
 
     /* renamed from: o */
-    private static final Map f27362o = new HashMap();
+    private static final Map f27930o = new HashMap();
 
     /* renamed from: a */
-    private final Context f27363a;
+    private final Context f27931a;
 
     /* renamed from: b */
-    private final i f27364b;
+    private final i f27932b;
 
     /* renamed from: g */
-    private boolean f27369g;
+    private boolean f27937g;
 
     /* renamed from: h */
-    private final Intent f27370h;
+    private final Intent f27938h;
 
     /* renamed from: l */
-    private ServiceConnection f27374l;
+    private ServiceConnection f27942l;
 
     /* renamed from: m */
-    private IInterface f27375m;
+    private IInterface f27943m;
 
     /* renamed from: n */
-    private final gi.h f27376n;
+    private final gi.h f27944n;
 
     /* renamed from: d */
-    private final List f27366d = new ArrayList();
+    private final List f27934d = new ArrayList();
 
     /* renamed from: e */
-    private final Set f27367e = new HashSet();
+    private final Set f27935e = new HashSet();
 
     /* renamed from: f */
-    private final Object f27368f = new Object();
+    private final Object f27936f = new Object();
 
     /* renamed from: j */
-    private final IBinder.DeathRecipient f27372j = new IBinder.DeathRecipient() { // from class: hi.l
+    private final IBinder.DeathRecipient f27940j = new IBinder.DeathRecipient() { // from class: hi.l
         @Override // android.os.IBinder.DeathRecipient
         public final void binderDied() {
             t.h(t.this);
@@ -63,80 +63,80 @@ public final class t {
     };
 
     /* renamed from: k */
-    private final AtomicInteger f27373k = new AtomicInteger(0);
+    private final AtomicInteger f27941k = new AtomicInteger(0);
 
     /* renamed from: c */
-    private final String f27365c = "com.google.android.finsky.inappreviewservice.InAppReviewService";
+    private final String f27933c = "com.google.android.finsky.inappreviewservice.InAppReviewService";
 
     /* renamed from: i */
-    private final WeakReference f27371i = new WeakReference(null);
+    private final WeakReference f27939i = new WeakReference(null);
 
     public t(Context context, i iVar, String str, Intent intent, gi.h hVar, o oVar, byte[] bArr) {
-        this.f27363a = context;
-        this.f27364b = iVar;
-        this.f27370h = intent;
-        this.f27376n = hVar;
+        this.f27931a = context;
+        this.f27932b = iVar;
+        this.f27938h = intent;
+        this.f27944n = hVar;
     }
 
     public static /* synthetic */ void h(t tVar) {
-        tVar.f27364b.d("reportBinderDeath", new Object[0]);
-        android.support.v4.media.session.b.a(tVar.f27371i.get());
-        tVar.f27364b.d("%s : Binder has died.", tVar.f27365c);
-        for (j jVar : tVar.f27366d) {
+        tVar.f27932b.d("reportBinderDeath", new Object[0]);
+        android.support.v4.media.session.b.a(tVar.f27939i.get());
+        tVar.f27932b.d("%s : Binder has died.", tVar.f27933c);
+        for (j jVar : tVar.f27934d) {
             jVar.c(tVar.s());
         }
-        tVar.f27366d.clear();
+        tVar.f27934d.clear();
         tVar.t();
     }
 
     public static /* bridge */ /* synthetic */ void m(t tVar, j jVar) {
-        if (tVar.f27375m == null && !tVar.f27369g) {
-            tVar.f27364b.d("Initiate binding to the service.", new Object[0]);
-            tVar.f27366d.add(jVar);
+        if (tVar.f27943m == null && !tVar.f27937g) {
+            tVar.f27932b.d("Initiate binding to the service.", new Object[0]);
+            tVar.f27934d.add(jVar);
             s sVar = new s(tVar, null);
-            tVar.f27374l = sVar;
-            tVar.f27369g = true;
-            if (!tVar.f27363a.bindService(tVar.f27370h, sVar, 1)) {
-                tVar.f27364b.d("Failed to bind to the service.", new Object[0]);
-                tVar.f27369g = false;
-                for (j jVar2 : tVar.f27366d) {
+            tVar.f27942l = sVar;
+            tVar.f27937g = true;
+            if (!tVar.f27931a.bindService(tVar.f27938h, sVar, 1)) {
+                tVar.f27932b.d("Failed to bind to the service.", new Object[0]);
+                tVar.f27937g = false;
+                for (j jVar2 : tVar.f27934d) {
                     jVar2.c(new u());
                 }
-                tVar.f27366d.clear();
+                tVar.f27934d.clear();
             }
-        } else if (tVar.f27369g) {
-            tVar.f27364b.d("Waiting to bind to the service.", new Object[0]);
-            tVar.f27366d.add(jVar);
+        } else if (tVar.f27937g) {
+            tVar.f27932b.d("Waiting to bind to the service.", new Object[0]);
+            tVar.f27934d.add(jVar);
         } else {
             jVar.run();
         }
     }
 
     public static /* bridge */ /* synthetic */ void n(t tVar) {
-        tVar.f27364b.d("linkToDeath", new Object[0]);
+        tVar.f27932b.d("linkToDeath", new Object[0]);
         try {
-            tVar.f27375m.asBinder().linkToDeath(tVar.f27372j, 0);
+            tVar.f27943m.asBinder().linkToDeath(tVar.f27940j, 0);
         } catch (RemoteException e10) {
-            tVar.f27364b.c(e10, "linkToDeath failed", new Object[0]);
+            tVar.f27932b.c(e10, "linkToDeath failed", new Object[0]);
         }
     }
 
     public static /* bridge */ /* synthetic */ void o(t tVar) {
-        tVar.f27364b.d("unlinkToDeath", new Object[0]);
-        tVar.f27375m.asBinder().unlinkToDeath(tVar.f27372j, 0);
+        tVar.f27932b.d("unlinkToDeath", new Object[0]);
+        tVar.f27943m.asBinder().unlinkToDeath(tVar.f27940j, 0);
     }
 
     private final RemoteException s() {
-        return new RemoteException(String.valueOf(this.f27365c).concat(" : Binder has died."));
+        return new RemoteException(String.valueOf(this.f27933c).concat(" : Binder has died."));
     }
 
     public final void t() {
-        synchronized (this.f27368f) {
+        synchronized (this.f27936f) {
             try {
-                for (zg.k kVar : this.f27367e) {
+                for (zg.k kVar : this.f27935e) {
                     kVar.d(s());
                 }
-                this.f27367e.clear();
+                this.f27935e.clear();
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -145,15 +145,15 @@ public final class t {
 
     public final Handler c() {
         Handler handler;
-        Map map = f27362o;
+        Map map = f27930o;
         synchronized (map) {
             try {
-                if (!map.containsKey(this.f27365c)) {
-                    HandlerThread handlerThread = new HandlerThread(this.f27365c, 10);
+                if (!map.containsKey(this.f27933c)) {
+                    HandlerThread handlerThread = new HandlerThread(this.f27933c, 10);
                     handlerThread.start();
-                    map.put(this.f27365c, new Handler(handlerThread.getLooper()));
+                    map.put(this.f27933c, new Handler(handlerThread.getLooper()));
                 }
-                handler = (Handler) map.get(this.f27365c);
+                handler = (Handler) map.get(this.f27933c);
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -162,12 +162,12 @@ public final class t {
     }
 
     public final IInterface e() {
-        return this.f27375m;
+        return this.f27943m;
     }
 
     public final void p(j jVar, final zg.k kVar) {
-        synchronized (this.f27368f) {
-            this.f27367e.add(kVar);
+        synchronized (this.f27936f) {
+            this.f27935e.add(kVar);
             kVar.a().addOnCompleteListener(new OnCompleteListener() { // from class: hi.k
                 @Override // com.google.android.gms.tasks.OnCompleteListener
                 public final void onComplete(Task task) {
@@ -175,10 +175,10 @@ public final class t {
                 }
             });
         }
-        synchronized (this.f27368f) {
+        synchronized (this.f27936f) {
             try {
-                if (this.f27373k.getAndIncrement() > 0) {
-                    this.f27364b.a("Already connected to the service.", new Object[0]);
+                if (this.f27941k.getAndIncrement() > 0) {
+                    this.f27932b.a("Already connected to the service.", new Object[0]);
                 }
             } catch (Throwable th2) {
                 throw th2;
@@ -188,19 +188,19 @@ public final class t {
     }
 
     public final /* synthetic */ void q(zg.k kVar, Task task) {
-        synchronized (this.f27368f) {
-            this.f27367e.remove(kVar);
+        synchronized (this.f27936f) {
+            this.f27935e.remove(kVar);
         }
     }
 
     public final void r(zg.k kVar) {
-        synchronized (this.f27368f) {
-            this.f27367e.remove(kVar);
+        synchronized (this.f27936f) {
+            this.f27935e.remove(kVar);
         }
-        synchronized (this.f27368f) {
+        synchronized (this.f27936f) {
             try {
-                if (this.f27373k.get() > 0 && this.f27373k.decrementAndGet() > 0) {
-                    this.f27364b.d("Leaving the connection open for other ongoing calls.", new Object[0]);
+                if (this.f27941k.get() > 0 && this.f27941k.decrementAndGet() > 0) {
+                    this.f27932b.d("Leaving the connection open for other ongoing calls.", new Object[0]);
                     return;
                 }
                 c().post(new n(this));

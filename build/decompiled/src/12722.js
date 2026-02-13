@@ -1,44 +1,39 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun97496: for (var _fun97496_ip = 0;;) switch (_fun97496_ip) {
+    _fun97531: for (var _fun97531_ip = 0;;) switch (_fun97531_ip) {
         case 0:
-            var3 = require;
-            var2 = dependencyMap;
+            var0 = global;
+            var0 = var0.Function;
+            var0 = var0.prototype;
+            var3 = var0.call;
             var _closure1_slot0 = var3;
-            var _closure1_slot1 = var2;
+            var2 = dependencyMap;
             var0 = 0;
-            var2 = var2[var0];
+            var4 = var2[var0];
+            var2 = require;
             var0 = undefined;
-            var3 = var3.bind(var0)(var2);
-            var2 = {};
-            var2 = var2.hasOwnProperty;
-            var2 = var3.bind(var0)(var2);
-            var _closure1_slot2 = var2;
-            var2 = global;
-            var2 = var2.Object;
-            var2 = var2.hasOwn;
+            var2 = var2.bind(var0)(var4);
             if (var2) {
-                _fun97496_ip = 70;
-                continue _fun97496
+                _fun97531_ip = 55;
+                continue _fun97531
             }
-        case 63:
-            var2 = function arg0, arg1() {
-                var3 = _closure1_slot2;
-                var1 = _closure1_slot0;
-                var2 = _closure1_slot1;
-                var0 = 1;
-                var0 = var2[var0];
-                var2 = undefined;
-                var1 = var1.bind(var2)(var0);
-                var0 = arg0;
-                var1 = var1.bind(var2)(var0);
-                var0 = arg1;
-                var0 = var3.bind(var2)(var1, var0);
+        case 46:
+            var2 = function() { // Environment: var1
+                var0 = undefined;
+                var2 = _closure1_slot0;
+                var1 = var2.apply;
+                var0 = arguments;
+                var0 = var1.bind(var2)(var2, var0);
                 return var0;
             };
-        case 70:
+            _fun97531_ip = 65;
+            continue _fun97531;
+        case 55:
+            var1 = var3.bind;
+            var2 = var1.bind(var3)(var3);
+        case 65:
             var1 = arg4;
             var1.exports = var2;
             return var0;
     }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [12706, 12723]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [12697]);

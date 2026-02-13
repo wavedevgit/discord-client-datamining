@@ -9,62 +9,51 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2.value = var1;
     var1 = '__esModule';
     var1 = var3.bind(var4)(var0, var1, var2);
-    var1 = function arg0() {
-        _fun21998: for (var _fun21998_ip = 0;;) switch (_fun21998_ip) {
+    var1 = function arg0, arg1() {
+        _fun22017: for (var _fun22017_ip = 0;;) switch (_fun22017_ip) {
             case 0:
-                var1 = arg0;
-                var0 = null;
-                if (!(var0 !== var1)) {
-                    _fun21998_ip = 96;
-                    continue _fun21998
-                }
-            case 9:
-                var0 = true;
-                if (!(var0 !== var1)) {
-                    _fun21998_ip = 96;
-                    continue _fun21998
+                var4 = arg0;
+                var1 = arg1;
+                var0 = var1.length;
+                if (!(!(var0 < var4))) {
+                    _fun22017_ip = 19;
+                    continue _fun22017
                 }
             case 15:
-                var0 = false;
-                if (!(var0 !== var1)) {
-                    _fun21998_ip = 96;
-                    continue _fun21998
-                }
-            case 21:
-                var2 = global;
-                var0 = var2.Number;
-                var3 = undefined;
-                var0 = var0.bind(var3)(var1);
-                var1 = var2.isNaN;
-                var1 = var1.bind(var3)(var0);
-                if (var1) {
-                    _fun21998_ip = 94;
-                    continue _fun21998
-                }
-            case 50:
-                var1 = 0;
-                if (!(!(var0 < var1))) {
-                    _fun21998_ip = 75;
-                    continue _fun21998
-                }
-            case 56:
-                var3 = var2.Math;
-                var1 = var3.floor;
-                var1 = var1.bind(var3)(var0);
-                _fun21998_ip = 92;
-                continue _fun21998;
-            case 75:
-                var3 = var2.Math;
-                var2 = var3.ceil;
-                var1 = var2.bind(var3)(var0);
-            case 92:
-                return var1;
-            case 94:
+                var0 = undefined;
                 return var0;
-            case 96:
+            case 19:
                 var0 = global;
-                var0 = var0.NaN;
-                return var0;
+                var2 = var0.TypeError;
+                var0 = ' argument';
+                var3 = var4 + var0;
+                var0 = 1;
+                var4 = var4 > var0;
+                var0 = '';
+                if (!var4) {
+                    _fun22017_ip = 55;
+                    continue _fun22017
+                }
+            case 51:
+                var0 = 's';
+            case 55:
+                var1 = var1.length;
+                var3 = var3 + var0;
+                var0 = ' required, but only ';
+                var0 = var3 + var0;
+                var3 = var0 + var1;
+                var0 = var2.prototype;
+                var1 = Object.create(var0, {
+                    constructor: {
+                        value: var2
+                    }
+                });
+                var0 = ' present';
+                var5 = var3 + var0;
+                var6 = var1;
+                var0 = new var6[var2](var5, var4);
+                var0 = var0 instanceof Object ? var0 : var1;
+                throw var0;
         }
     };
     var0.default = var1;

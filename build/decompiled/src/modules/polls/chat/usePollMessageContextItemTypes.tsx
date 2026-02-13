@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/polls/chat/usePollMessageContextItemTypes.tsx';
     var4 = var5.bind(var6)(var4);
     var3 = function arg0() {
-        _fun78795: for (var _fun78795_ip = 0;;) switch (_fun78795_ip) {
+        _fun78822: for (var _fun78822_ip = 0;;) switch (_fun78822_ip) {
             case 0:
                 var3 = arg0;
                 var4 = _closure1_slot0;
@@ -58,14 +58,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var3.isPoll;
                 var1 = var1.bind(var3)();
                 if (!var1) {
-                    _fun78795_ip = 169;
-                    continue _fun78795
+                    _fun78822_ip = 169;
+                    continue _fun78822
                 }
             case 79:
                 var1 = null;
                 if (!(var1 != var2)) {
-                    _fun78795_ip = 169;
-                    continue _fun78795
+                    _fun78822_ip = 169;
+                    continue _fun78822
                 }
             case 85:
                 var1 = new Array(0);
@@ -78,8 +78,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var5.bind(var6)(var2);
                 var2 = !var2;
                 if (!var2) {
-                    _fun78795_ip = 144;
-                    continue _fun78795
+                    _fun78822_ip = 144;
+                    continue _fun78822
                 }
             case 129:
                 var3 = var3.author;
@@ -87,8 +87,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var3 === var4;
             case 144:
                 if (!var2) {
-                    _fun78795_ip = 167;
-                    continue _fun78795
+                    _fun78822_ip = 167;
+                    continue _fun78822
                 }
             case 147:
                 var3 = var1.push;
@@ -105,4 +105,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var3;
     var2.PollMessageContextItemTypes = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1216, 566, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1217, 566, 2]);

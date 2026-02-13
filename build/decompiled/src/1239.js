@@ -1,25 +1,24 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var3 = require;
-    var2 = exports;
-    var4 = dependencyMap;
-    var0 = global;
-    var6 = var0.Object;
-    var5 = var6.defineProperty;
-    var1 = {};
-    var0 = true;
-    var1.value = var0;
-    var0 = '__esModule';
-    var0 = var5.bind(var6)(var2, var0, var1);
-    var1 = 0;
-    var5 = var4[var1];
+    var1 = dependencyMap;
+    var0 = 0;
+    var2 = var1[var0];
+    var1 = require;
     var0 = undefined;
-    var5 = var3.bind(var0)(var5);
-    var5 = var5.registerAsset;
-    var2.registerAsset = var5;
-    var1 = var4[var1];
-    var1 = var3.bind(var0)(var1);
-    var1 = var1.getAssetByID;
-    var2.getAssetByID = var1;
+    var3 = var1.bind(var0)(var2);
+    var2 = var3.registerAsset;
+    var1 = {
+        '__packager_asset': true,
+        'httpServerLocation': '/assets/.cache/intl/aW50bA==',
+        'scales': null,
+        'hash': 'f38fdc7ea5d424371ab0f5d75502f88c',
+        'name': 'bg.messages.f38fdc7ea5d424371ab0f5d75502f88c.compiled.messages',
+        'type': 'jsona'
+    };
+    var4 = [1];
+    var1.scales = var4;
+    var2 = var2.bind(var3)(var1);
+    var1 = module;
+    var1.exports = var2;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [93]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1240]);

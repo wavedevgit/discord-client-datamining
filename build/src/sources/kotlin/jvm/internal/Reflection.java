@@ -18,7 +18,7 @@ import kotlin.reflect.k;
 import kotlin.reflect.l;
 import kotlin.reflect.m;
 import us.a3;
-/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public class Reflection {
     private static final KClass[] EMPTY_K_CLASS_ARRAY;
     static final String REFLECTION_NOT_AVAILABLE = " (Kotlin reflection is not available)";

@@ -9,106 +9,106 @@ public final class je extends jf.a {
     public static final Parcelable.Creator<je> CREATOR = new ke();
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f44609d;
+    private final int f45177d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Rect f44610e;
+    private final Rect f45178e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final float f44611i;
+    private final float f45179i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final float f44612o;
+    private final float f45180o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final float f44613p;
+    private final float f45181p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final float f44614q;
+    private final float f45182q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final float f44615r;
+    private final float f45183r;
 
     /* renamed from: s  reason: collision with root package name */
-    private final float f44616s;
+    private final float f45184s;
 
     /* renamed from: t  reason: collision with root package name */
-    private final float f44617t;
+    private final float f45185t;
 
     /* renamed from: u  reason: collision with root package name */
-    private final List f44618u;
+    private final List f45186u;
 
     /* renamed from: v  reason: collision with root package name */
-    private final List f44619v;
+    private final List f45187v;
 
     public je(int i10, Rect rect, float f10, float f11, float f12, float f13, float f14, float f15, float f16, List list, List list2) {
-        this.f44609d = i10;
-        this.f44610e = rect;
-        this.f44611i = f10;
-        this.f44612o = f11;
-        this.f44613p = f12;
-        this.f44614q = f13;
-        this.f44615r = f14;
-        this.f44616s = f15;
-        this.f44617t = f16;
-        this.f44618u = list;
-        this.f44619v = list2;
+        this.f45177d = i10;
+        this.f45178e = rect;
+        this.f45179i = f10;
+        this.f45180o = f11;
+        this.f45181p = f12;
+        this.f45182q = f13;
+        this.f45183r = f14;
+        this.f45184s = f15;
+        this.f45185t = f16;
+        this.f45186u = list;
+        this.f45187v = list2;
     }
 
     public final float b() {
-        return this.f44614q;
+        return this.f45182q;
     }
 
     public final float c() {
-        return this.f44612o;
+        return this.f45180o;
     }
 
     public final float d() {
-        return this.f44615r;
+        return this.f45183r;
     }
 
     public final float e() {
-        return this.f44611i;
+        return this.f45179i;
     }
 
     public final float f() {
-        return this.f44616s;
+        return this.f45184s;
     }
 
     public final float g() {
-        return this.f44613p;
+        return this.f45181p;
     }
 
     public final int i() {
-        return this.f44609d;
+        return this.f45177d;
     }
 
     public final Rect j() {
-        return this.f44610e;
+        return this.f45178e;
     }
 
     public final List k() {
-        return this.f44619v;
+        return this.f45187v;
     }
 
     public final List l() {
-        return this.f44618u;
+        return this.f45186u;
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i10) {
         int a10 = jf.c.a(parcel);
-        jf.c.l(parcel, 1, this.f44609d);
-        jf.c.q(parcel, 2, this.f44610e, i10, false);
-        jf.c.j(parcel, 3, this.f44611i);
-        jf.c.j(parcel, 4, this.f44612o);
-        jf.c.j(parcel, 5, this.f44613p);
-        jf.c.j(parcel, 6, this.f44614q);
-        jf.c.j(parcel, 7, this.f44615r);
-        jf.c.j(parcel, 8, this.f44616s);
-        jf.c.j(parcel, 9, this.f44617t);
-        jf.c.w(parcel, 10, this.f44618u, false);
-        jf.c.w(parcel, 11, this.f44619v, false);
+        jf.c.l(parcel, 1, this.f45177d);
+        jf.c.q(parcel, 2, this.f45178e, i10, false);
+        jf.c.j(parcel, 3, this.f45179i);
+        jf.c.j(parcel, 4, this.f45180o);
+        jf.c.j(parcel, 5, this.f45181p);
+        jf.c.j(parcel, 6, this.f45182q);
+        jf.c.j(parcel, 7, this.f45183r);
+        jf.c.j(parcel, 8, this.f45184s);
+        jf.c.j(parcel, 9, this.f45185t);
+        jf.c.w(parcel, 10, this.f45186u, false);
+        jf.c.w(parcel, 11, this.f45187v, false);
         jf.c.b(parcel, a10);
     }
 }

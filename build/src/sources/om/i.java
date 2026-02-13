@@ -11,7 +11,7 @@ import kotlin.jvm.internal.Intrinsics;
 public abstract class i {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final int[] f40629a = new int[2];
+    private static final int[] f41197a = new int[2];
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements View.OnAttachStateChangeListener {
@@ -36,12 +36,12 @@ public abstract class i {
         Intrinsics.checkNotNullParameter(rect, "rect");
         if (view.isAttachedToWindow()) {
             rect.set(0, 0, view.getWidth(), view.getHeight());
-            int[] iArr = f40629a;
+            int[] iArr = f41197a;
             view.getLocationInWindow(iArr);
             rect.offset(iArr[0], iArr[1]);
             return;
         }
-        sm.a.f(sm.a.f48172a, "View.copyBoundsInWindow", "Can not copy bounds as view is not attached to window", null, 4, null);
+        sm.a.f(sm.a.f48740a, "View.copyBoundsInWindow", "Can not copy bounds as view is not attached to window", null, 4, null);
     }
 
     public static final int[] b(View view) {

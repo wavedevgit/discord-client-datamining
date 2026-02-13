@@ -7,46 +7,46 @@ public final class p8 extends jf.a {
     public static final Parcelable.Creator<p8> CREATOR = new ql();
 
     /* renamed from: d  reason: collision with root package name */
-    public tc f39573d;
+    public tc f40141d;
 
     /* renamed from: e  reason: collision with root package name */
-    public String f39574e;
+    public String f40142e;
 
     /* renamed from: i  reason: collision with root package name */
-    public String f39575i;
+    public String f40143i;
 
     /* renamed from: o  reason: collision with root package name */
-    public ud[] f39576o;
+    public ud[] f40144o;
 
     /* renamed from: p  reason: collision with root package name */
-    public ra[] f39577p;
+    public ra[] f40145p;
 
     /* renamed from: q  reason: collision with root package name */
-    public String[] f39578q;
+    public String[] f40146q;
 
     /* renamed from: r  reason: collision with root package name */
-    public m5[] f39579r;
+    public m5[] f40147r;
 
     public p8(tc tcVar, String str, String str2, ud[] udVarArr, ra[] raVarArr, String[] strArr, m5[] m5VarArr) {
-        this.f39573d = tcVar;
-        this.f39574e = str;
-        this.f39575i = str2;
-        this.f39576o = udVarArr;
-        this.f39577p = raVarArr;
-        this.f39578q = strArr;
-        this.f39579r = m5VarArr;
+        this.f40141d = tcVar;
+        this.f40142e = str;
+        this.f40143i = str2;
+        this.f40144o = udVarArr;
+        this.f40145p = raVarArr;
+        this.f40146q = strArr;
+        this.f40147r = m5VarArr;
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i10) {
         int a10 = jf.c.a(parcel);
-        jf.c.q(parcel, 2, this.f39573d, i10, false);
-        jf.c.s(parcel, 3, this.f39574e, false);
-        jf.c.s(parcel, 4, this.f39575i, false);
-        jf.c.v(parcel, 5, this.f39576o, i10, false);
-        jf.c.v(parcel, 6, this.f39577p, i10, false);
-        jf.c.t(parcel, 7, this.f39578q, false);
-        jf.c.v(parcel, 8, this.f39579r, i10, false);
+        jf.c.q(parcel, 2, this.f40141d, i10, false);
+        jf.c.s(parcel, 3, this.f40142e, false);
+        jf.c.s(parcel, 4, this.f40143i, false);
+        jf.c.v(parcel, 5, this.f40144o, i10, false);
+        jf.c.v(parcel, 6, this.f40145p, i10, false);
+        jf.c.t(parcel, 7, this.f40146q, false);
+        jf.c.v(parcel, 8, this.f40147r, i10, false);
         jf.c.b(parcel, a10);
     }
 }

@@ -9,7 +9,7 @@ import java.util.Locale;
 class i implements t, z, Serializable {
 
     /* renamed from: d  reason: collision with root package name */
-    private static final i f37336d = new i();
+    private static final i f37904d = new i();
     private static final long serialVersionUID = 4572549754637955194L;
 
     i() {
@@ -17,7 +17,7 @@ class i implements t, z, Serializable {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static i D() {
-        return f37336d;
+        return f37904d;
     }
 
     @Override // bu.p
@@ -122,7 +122,7 @@ class i implements t, z, Serializable {
     }
 
     protected Object readResolve() {
-        return f37336d;
+        return f37904d;
     }
 
     @Override // cu.t

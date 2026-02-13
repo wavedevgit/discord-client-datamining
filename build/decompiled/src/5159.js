@@ -1,1055 +1,444 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun46211: for (var _fun46211_ip = 0;;) switch (_fun46211_ip) {
-        case 0:
-            var4 = require;
-            var2 = exports;
-            var5 = dependencyMap;
-            var3 = this;
-            var _closure1_slot0 = var4;
-            var _closure1_slot1 = var5;
-            var0 = var3;
-            if (!var0) {
-                _fun46211_ip = 34;
-                continue _fun46211
-            }
-        case 28:
-            var0 = var3.__extends;
-        case 34:
-            if (var0) {
-                _fun46211_ip = 51;
-                continue _fun46211
-            }
-        case 37:
-            var3 = function arg0, arg1() {
-                _fun46212: for (var _fun46212_ip = 0;;) switch (_fun46212_ip) {
-                    case 0:
-                        var1 = global;
-                        var2 = var1.Object;
-                        var3 = var2.setPrototypeOf;
-                        if (var3) {
-                            _fun46212_ip = 47;
-                            continue _fun46212
-                        }
-                    case 19:
-                        var2 = var1.Array;
-                        var1 = new Array(0);
-                        var1 = Object.create(var1);
-                        var1 = var1 instanceof var2;
-                        if (!var1) {
-                            _fun46212_ip = 44;
-                            continue _fun46212
-                        }
-                    case 39:
-                        var1 = function(arg0, arg1) { // Environment: var0
-                            var1 = arg1;
-                            var0 = arg0;
-                            var0.__proto__ = var1;
-                            var0 = undefined;
-                            return var0;
-                        };
-                    case 44:
-                        var3 = var1;
-                    case 47:
-                        if (var3) {
-                            _fun46212_ip = 55;
-                            continue _fun46212
-                        }
-                    case 50:
-                        var3 = function(arg0, arg1) { // Environment: var0
-                            _fun46214: for (var _fun46214_ip = 0;;) switch (_fun46214_ip) {
-                                case 0:
-                                    var7 = arg0;
-                                    var6 = arg1;
-                                    var4 = var6;
-                                    var0 = global;
-                                    for (var1 in var4)
-                                        case 19: {
-                                            case 28: var9 = var1;
-                                            var8 = var0.Object;
-                                            var8 = var8.prototype;
-                                            var10 = var8.hasOwnProperty;
-                                            var8 = var10.call;
-                                            var8 = var8.bind(var10)(var6, var9);
-                                            if (!var8) {
-                                                _fun46214_ip = 19;
-                                                continue _fun46214
-                                            }
-                                            case 62: var8 = var6[var9];
-                                            var7[var9] = var8;
-                                            _fun46214_ip = 19;
-                                            continue _fun46214;
-                                        }
-                                case 72:
-                                    var0 = undefined;
-                                    return var0;
-                            }
-                        };
-                    case 55:
-                        _closure1_slot2 = var3;
-                        var2 = undefined;
-                        var1 = arg0;
-                        var0 = arg1;
-                        var0 = var3.bind(var2)(var1, var0);
-                        return var0;
+    var4 = require;
+    var2 = exports;
+    var3 = dependencyMap;
+    var _closure1_slot0 = var4;
+    var _closure1_slot1 = var3;
+    var0 = global;
+    var7 = var0.Object;
+    var6 = var7.defineProperty;
+    var5 = {};
+    var0 = true;
+    var5.value = var0;
+    var0 = '__esModule';
+    var0 = var6.bind(var7)(var2, var0, var5);
+    var0 = 0;
+    var3 = var3[var0];
+    var0 = undefined;
+    var3 = var4.bind(var0)(var3);
+    var4 = var3.useCallback;
+    var _closure1_slot2 = var4;
+    var4 = var3.useEffect;
+    var _closure1_slot3 = var4;
+    var4 = var3.useMemo;
+    var _closure1_slot4 = var4;
+    var3 = var3.useRef;
+    var _closure1_slot5 = var3;
+    var1 = function arg0, arg1() {
+        _fun46110: for (var _fun46110_ip = 0;;) switch (_fun46110_ip) {
+            case 0:
+                var6 = arg0;
+                var5 = arg1;
+                var _closure2_slot0 = var6;
+                var _closure2_slot1 = var5;
+                var2 = _closure1_slot5;
+                var4 = undefined;
+                var1 = false;
+                var7 = var2.bind(var4)(var1);
+                var _closure2_slot2 = var7;
+                var7 = var2.bind(var4)(var1);
+                var _closure2_slot3 = var7;
+                var1 = var2.bind(var4)(var1);
+                var _closure2_slot4 = var1;
+                var1 = global;
+                var7 = var1.Date;
+                var1 = var7.now;
+                var1 = var1.bind(var7)();
+                var1 = var2.bind(var4)(var1);
+                var _closure2_slot5 = var1;
+                var1 = var6.props;
+                var11 = var1.data;
+                var2 = _closure1_slot0;
+                var7 = _closure1_slot1;
+                var1 = 1;
+                var1 = var7[var1];
+                var2 = var2.bind(var4)(var1);
+                var1 = var2.useUnmountAwareAnimationFrame;
+                var1 = var1.bind(var2)();
+                var13 = var1.requestAnimationFrame;
+                var _closure2_slot6 = var13;
+                var1 = var6.hasLayout;
+                var1 = var1.bind(var6)();
+                var10 = 0;
+                if (!var1) {
+                    _fun46110_ip = 160;
+                    continue _fun46110
                 }
-            };
-            var _closure1_slot2 = var3;
-            var0 = function(arg0, arg1) { // Environment: var1
-                _fun46215: for (var _fun46215_ip = 0;;) switch (_fun46215_ip) {
-                    case 0:
-                        var2 = arg0;
-                        var3 = arg1;
-                        var _closure2_slot0 = var2;
-                        var1 = function() {
-                            var1 = _closure2_slot0;
-                            var0 = this;
-                            var0.constructor = var1;
-                            var0 = undefined;
-                            return var0;
-                        };
-                        var4 = 'function';
-                        var0 = typeof var3;
-                        if (!(var4 !== var0)) {
-                            _fun46215_ip = 34;
-                            continue _fun46215
-                        }
-                    case 28:
-                        var0 = null;
-                        if (!(var0 === var3)) {
-                            _fun46215_ip = 114;
-                            continue _fun46215
-                        }
-                    case 34:
-                        var4 = _closure1_slot2;
-                        var0 = undefined;
-                        var4 = var4.bind(var0)(var2, var3);
-                        var4 = null;
-                        if (!(var4 !== var3)) {
-                            _fun46215_ip = 88;
-                            continue _fun46215
-                        }
-                    case 55:
-                        var4 = var3.prototype;
-                        var1.prototype = var4;
-                        var4 = var1.prototype;
-                        var4 = Object.create(var4, {
-                            constructor: {
-                                value: var1
-                            }
-                        });
-                        var8 = var4;
-                        var1 = new var8[var1](var7);
-                        var1 = var1 instanceof Object ? var1 : var4;
-                        _fun46215_ip = 106;
-                        continue _fun46215;
-                    case 88:
-                        var4 = global;
-                        var5 = var4.Object;
-                        var4 = var5.create;
-                        var1 = var4.bind(var5)(var3);
-                    case 106:
-                        var2.prototype = var1;
-                        return var0;
-                    case 114:
-                        var0 = global;
-                        var2 = var0.TypeError;
-                        var1 = var0.String;
-                        var0 = undefined;
-                        var1 = var1.bind(var0)(var3);
-                        var0 = 'Class extends value ';
-                        var3 = var0 + var1;
-                        var0 = var2.prototype;
-                        var1 = Object.create(var0, {
-                            constructor: {
-                                value: var2
-                            }
-                        });
-                        var0 = ' is not a constructor or null';
-                        var7 = var3 + var0;
-                        var8 = var1;
-                        var0 = new var8[var2](var7, var6);
-                        var0 = var0 instanceof Object ? var0 : var1;
-                        throw var0;
+            case 145:
+                var1 = var6.getWindowSize;
+                var1 = var1.bind(var6)();
+                var10 = var1.height;
+            case 160:
+                var1 = var6.hasLayout;
+                var1 = var1.bind(var6)();
+                var8 = 0;
+                if (!var1) {
+                    _fun46110_ip = 190;
+                    continue _fun46110
                 }
-            };
-        case 51:
-            var _closure1_slot3 = var0;
-            var0 = global;
-            var7 = var0.Object;
-            var6 = var7.defineProperty;
-            var3 = {};
-            var0 = true;
-            var3.value = var0;
-            var0 = '__esModule';
-            var0 = var6.bind(var7)(var2, var0, var3);
-            var0 = undefined;
-            var2.StickyType = var0;
-            var8 = 0;
-            var3 = var5[var8];
-            var3 = var4.bind(var0)(var3);
-            var _closure1_slot5 = var3;
-            var7 = 1;
-            var3 = var5[var7];
-            var3 = var4.bind(var0)(var3);
-            var _closure1_slot6 = var3;
-            var6 = var2.StickyType;
-            if (var6) {
-                _fun46211_ip = 146;
-                continue _fun46211
-            }
-        case 135:
-            var3 = {};
-            var2.StickyType = var3;
-            var6 = var3;
-        case 146:
-            var _closure1_slot4 = var6;
-            var6.HEADER = var8;
-            var3 = 'HEADER';
-            var6[var8] = var3;
-            var6.FOOTER = var7;
-            var3 = 'FOOTER';
-            var6[var7] = var3;
-            var3 = 4;
-            var3 = var5[var3];
-            var3 = var4.bind(var0)(var3);
-            var3 = var3.ComponentCompat;
-            var1 = function(arg0) { // Environment: var1
-                var4 = arg0;
-                var _closure2_slot0 = var4;
-                var0 = function arg0, arg1() {
-                    _fun46218: for (var _fun46218_ip = 0;;) switch (_fun46218_ip) {
+            case 175:
+                var1 = var6.getChildContainerDimensions;
+                var1 = var1.bind(var6)();
+                var8 = var1.height;
+            case 190:
+                var1 = var6.hasLayout;
+                var1 = var1.bind(var6)();
+                var2 = 0;
+                if (!var1) {
+                    _fun46110_ip = 220;
+                    continue _fun46110
+                }
+            case 205:
+                var1 = var6.getWindowSize;
+                var1 = var1.bind(var6)();
+                var2 = var1.width;
+            case 220:
+                var1 = var6.hasLayout;
+                var1 = var1.bind(var6)();
+                var7 = 0;
+                if (!var1) {
+                    _fun46110_ip = 250;
+                    continue _fun46110
+                }
+            case 235:
+                var1 = var6.getChildContainerDimensions;
+                var1 = var1.bind(var6)();
+                var7 = var1.width;
+            case 250:
+                var12 = _closure1_slot2;
+                var9 = new Array(1);
+                var9[0] = var6;
+                var1 = function() { // Environment: var0
+                    _fun46111: for (var _fun46111_ip = 0;;) switch (_fun46111_ip) {
                         case 0:
-                            var1 = this;
-                            var4 = _closure2_slot0;
-                            var3 = var4.call;
-                            var2 = arg0;
-                            var0 = arg1;
-                            var0 = var3.bind(var4)(var1, var2, var0);
-                            if (var0) {
-                                _fun46218_ip = 34;
-                                continue _fun46218
+                            var1 = _closure2_slot5;
+                            var5 = global;
+                            var3 = var5.Date;
+                            var0 = var3.now;
+                            var0 = var0.bind(var3)();
+                            var1.current = var0;
+                            var0 = _closure2_slot0;
+                            var0 = var0.props;
+                            var12 = var0.onEndReached;
+                            var8 = var0.onStartReached;
+                            var1 = var0.maintainVisibleContentPosition;
+                            var3 = var0.horizontal;
+                            var14 = var0.onEndReachedThreshold;
+                            var10 = var0.onStartReachedThreshold;
+                            var9 = null;
+                            var6 = var9 == var1;
+                            var0 = undefined;
+                            var4 = undefined;
+                            if (var6) {
+                                _fun46111_ip = 96;
+                                continue _fun46111
                             }
-                        case 31:
-                            var0 = var1;
-                        case 34:
-                            var1 = _closure1_slot4;
-                            var1 = var1.HEADER;
-                            var0.stickyType = var1;
-                            var1 = 1;
-                            var0.stickyTypeMultiplier = var1;
-                            var3 = false;
-                            var0.stickyVisiblity = var3;
-                            var1 = 0;
-                            var0.currentIndex = var1;
-                            var0.currentStickyIndex = var1;
-                            var4 = new Array(0);
-                            var0.visibleIndices = var4;
-                            var0.bounceScrolling = var3;
-                            var2 = _closure1_slot6;
-                            var2 = var2.Animated;
-                            var2 = var2.Value;
-                            var3 = var2.prototype;
-                            var3 = Object.create(var3, {
-                                constructor: {
-                                    value: var2
-                                }
-                            });
-                            var8 = var3;
-                            var7 = 0;
-                            var2 = new var8[var2](var7, var6);
-                            var2 = var2 instanceof Object ? var2 : var3;
-                            var0._stickyViewOffset = var2;
-                            var0._previousStickyIndex = var1;
-                            var0._nextStickyIndex = var1;
-                            var2 = true;
-                            var0._firstCompute = var2;
-                            var0._smallestVisibleIndex = var1;
-                            var0._largestVisibleIndex = var1;
-                            var0._offsetY = var1;
-                            var1 = {
-                                'startCorrection': 0,
-                                'endCorrection': 0,
-                                'windowShift': 0
-                            };
-                            var0._windowCorrection = var1;
-                            return var0;
-                    }
-                };
-                var3 = _closure1_slot3;
-                var2 = undefined;
-                var2 = var3.bind(var2)(var0, var4);
-                var3 = var0.prototype;
-                var2 = function(arg0) { // Environment: var1
-                    var0 = arg0;
-                    var3 = this;
-                    var1 = var3._updateDimensionParams;
-                    var1 = var1.bind(var3)();
-                    var7 = var3.calculateVisibleStickyIndex;
-                    var12 = var0.stickyIndices;
-                    var11 = var3._smallestVisibleIndex;
-                    var10 = var3._largestVisibleIndex;
-                    var9 = var3._offsetY;
-                    var8 = var3._windowBound;
-                    var13 = var3;
-                    var1 = var13[var7](var12, var11, var10, var9, var8, var7);
-                    var1 = var3._computeLayouts;
-                    var0 = var0.stickyIndices;
-                    var0 = var1.bind(var3)(var0);
-                    var2 = var3.stickyViewVisible;
-                    var1 = var3.stickyVisiblity;
-                    var0 = false;
-                    var0 = var2.bind(var3)(var1, var0);
-                    var0 = undefined;
-                    return var0;
-                };
-                var3.componentWillReceivePropsCompat = var2;
-                var3 = var0.prototype;
-                var2 = function() { // Environment: var1
-                    _fun46220: for (var _fun46220_ip = 0;;) switch (_fun46220_ip) {
-                        case 0:
-                            var0 = this;
-                            var2 = {};
-                            var3 = {};
-                            var1 = var0._stickyViewOffset;
-                            var3.translateY = var1;
-                            var1 = new Array(1);
-                            var1[0] = var3;
-                            var2.transform = var1;
-                            var1 = new Array(2);
-                            var1[0] = var2;
-                            var2 = var0.props;
-                            var2 = var2.renderContainer;
-                            var2 = !var2;
-                            if (!var2) {
-                                _fun46220_ip = 96;
-                                continue _fun46220
-                            }
-                        case 55:
-                            var4 = {};
-                            var3 = 'absolute';
-                            var4.position = var3;
-                            var3 = var0._scrollableWidth;
-                            var4.width = var3;
-                            var3 = new Array(2);
-                            var3[0] = var4;
-                            var4 = var0.containerPosition;
-                            var3[1] = var4;
-                            var2 = var3;
+                        case 88:
+                            var4 = var1.autoscrollToBottomThreshold;
                         case 96:
-                            var1[1] = var2;
-                            var5 = _closure1_slot5;
-                            var4 = var5.createElement;
-                            var2 = _closure1_slot6;
-                            var2 = var2.Animated;
-                            var3 = var2.View;
-                            var2 = {};
-                            var2.style = var1;
-                            var6 = var0.stickyVisiblity;
-                            var1 = null;
+                            var6 = var9 != var4;
+                            var1 = -1;
                             if (!var6) {
-                                _fun46220_ip = 155;
-                                continue _fun46220
-                            }
-                        case 145:
-                            var6 = var0._renderSticky;
-                            var1 = var6.bind(var0)();
-                        case 155:
-                            var4 = var4.bind(var5)(var3, var2, var1);
-                            var1 = var0.props;
-                            var1 = var1.renderContainer;
-                            if (var1) {
-                                _fun46220_ip = 178;
-                                continue _fun46220
-                            }
-                        case 176:
-                            return var4;
-                        case 178:
-                            var2 = var0.props;
-                            var1 = var2.getExtendedState;
-                            var3 = var1.bind(var2)();
-                            var2 = var0.props;
-                            var1 = var2.renderContainer;
-                            var0 = var0.currentStickyIndex;
-                            var0 = var1.bind(var2)(var4, var0, var3);
-                            return var0;
-                    }
-                };
-                var3.renderCompat = var2;
-                var3 = var0.prototype;
-                var2 = function(arg0) { // Environment: var1
-                    _fun46221: for (var _fun46221_ip = 0;;) switch (_fun46221_ip) {
-                        case 0:
-                            var2 = this;
-                            var0 = var2._firstCompute;
-                            if (!var0) {
-                                _fun46221_ip = 53;
-                                continue _fun46221
-                            }
-                        case 12:
-                            var0 = var2.initStickyParams;
-                            var0 = var0.bind(var2)();
-                            var1 = var2._getAdjustedOffsetY;
-                            var0 = var2._offsetY;
-                            var0 = var1.bind(var2)(var0);
-                            var2._offsetY = var0;
-                            var0 = false;
-                            var2._firstCompute = var0;
-                        case 53:
-                            var0 = var2._updateDimensionParams;
-                            var0 = var0.bind(var2)();
-                            var1 = var2._setSmallestAndLargestVisibleIndices;
-                            var0 = arg0;
-                            var0 = var1.bind(var2)(var0);
-                            var6 = var2.calculateVisibleStickyIndex;
-                            var0 = var2.props;
-                            var11 = var0.stickyIndices;
-                            var10 = var2._smallestVisibleIndex;
-                            var9 = var2._largestVisibleIndex;
-                            var8 = var2._offsetY;
-                            var7 = var2._windowBound;
-                            var12 = var2;
-                            var0 = var12[var6](var11, var10, var9, var8, var7, var6);
-                            var0 = var2._computeLayouts;
-                            var0 = var0.bind(var2)();
-                            var1 = var2.stickyViewVisible;
-                            var0 = var2.stickyVisiblity;
-                            var0 = var1.bind(var2)(var0);
-                            var0 = undefined;
-                            return var0;
-                    }
-                };
-                var3.onVisibleIndicesChanged = var2;
-                var3 = var0.prototype;
-                var2 = function(arg0) { // Environment: var1
-                    _fun46222: for (var _fun46222_ip = 0;;) switch (_fun46222_ip) {
-                        case 0:
-                            var0 = this;
-                            var2 = var0._getAdjustedOffsetY;
-                            var1 = arg0;
-                            var4 = var2.bind(var0)(var1);
-                            var0._offsetY = var4;
-                            var1 = var0._updateDimensionParams;
-                            var1 = var1.bind(var0)();
-                            var2 = var0.boundaryProcessing;
-                            var1 = var0._windowBound;
-                            var1 = var2.bind(var0)(var4, var1);
-                            var1 = var0._previousStickyIndex;
-                            var3 = undefined;
-                            if (!(var3 !== var1)) {
-                                _fun46222_ip = 297;
-                                continue _fun46222
-                            }
-                        case 66:
-                            var2 = var0._previousStickyIndex;
-                            var1 = var0.stickyTypeMultiplier;
-                            var2 = var2 * var1;
-                            var5 = var0.currentStickyIndex;
-                            var1 = var0.stickyTypeMultiplier;
-                            var1 = var5 * var1;
-                            if (!(!(var2 >= var1))) {
-                                _fun46222_ip = 653;
-                                continue _fun46222
-                            }
-                        case 105:
-                            var2 = var0.getScrollY;
-                            var1 = var0._scrollableHeight;
-                            var2 = var2.bind(var0)(var4, var1);
-                            var1 = var0._previousHeight;
-                            if (!var1) {
-                                _fun46222_ip = 154;
-                                continue _fun46222
-                            }
-                        case 132:
-                            var1 = var0._currentYd;
-                            if (!var1) {
-                                _fun46222_ip = 154;
-                                continue _fun46222
-                            }
-                        case 141:
-                            if (!var2) {
-                                _fun46222_ip = 154;
-                                continue _fun46222
-                            }
-                        case 144:
-                            var1 = var0._currentYd;
-                            if (!(!(var2 < var1))) {
-                                _fun46222_ip = 175;
-                                continue _fun46222
-                            }
-                        case 154:
-                            var6 = var0._stickyViewOffset;
-                            var5 = var6.setValue;
-                            var1 = 0;
-                            var1 = var5.bind(var6)(var1);
-                            _fun46222_ip = 297;
-                            continue _fun46222;
-                        case 175:
-                            var5 = var0._currentYd;
-                            var1 = var0._previousHeight;
-                            var1 = var5 - var1;
-                            if (!(var2 > var1)) {
-                                _fun46222_ip = 297;
-                                continue _fun46222
-                            }
-                        case 195:
-                            var5 = var0.currentIndex;
-                            var1 = var0.stickyTypeMultiplier;
-                            var1 = var5 - var1;
-                            var0.currentIndex = var1;
-                            var1 = var0._currentYd;
-                            var2 = var2 - var1;
-                            var1 = var0._previousHeight;
-                            var2 = var2 + var1;
-                            var5 = var0.stickyTypeMultiplier;
-                            var1 = -1;
-                            var1 = var1 * var5;
-                            var5 = var2 * var1;
-                            var2 = var0._stickyViewOffset;
-                            var1 = var2.setValue;
-                            var1 = var1.bind(var2)(var5);
-                            var1 = var0._computeLayouts;
-                            var1 = var1.bind(var0)();
-                            var2 = var0.stickyViewVisible;
-                            var1 = true;
-                            var1 = var2.bind(var0)(var1);
-                        case 297:
-                            var1 = var0._nextStickyIndex;
-                            if (!(var3 !== var1)) {
-                                _fun46222_ip = 578;
-                                continue _fun46222
-                            }
-                        case 310:
-                            var2 = var0._nextStickyIndex;
-                            var1 = var0.stickyTypeMultiplier;
-                            var2 = var2 * var1;
-                            var5 = var0.currentStickyIndex;
-                            var1 = var0.stickyTypeMultiplier;
-                            var1 = var5 * var1;
-                            if (!(!(var2 <= var1))) {
-                                _fun46222_ip = 580;
-                                continue _fun46222
-                            }
-                        case 349:
-                            var2 = var0.getScrollY;
-                            var1 = var0._scrollableHeight;
-                            var2 = var2.bind(var0)(var4, var1);
-                            var1 = var0._currentHeight;
-                            if (!var1) {
-                                _fun46222_ip = 408;
-                                continue _fun46222
-                            }
-                        case 376:
-                            var1 = var0._nextYd;
-                            if (!var1) {
-                                _fun46222_ip = 408;
-                                continue _fun46222
-                            }
-                        case 385:
-                            if (!var2) {
-                                _fun46222_ip = 408;
-                                continue _fun46222
-                            }
-                        case 388:
-                            var1 = var0._currentHeight;
-                            var4 = var2 + var1;
-                            var1 = var0._nextYd;
-                            if (!(!(var4 > var1))) {
-                                _fun46222_ip = 432;
-                                continue _fun46222
-                            }
-                        case 408:
-                            var5 = var0._stickyViewOffset;
-                            var4 = var5.setValue;
-                            var1 = 0;
-                            var1 = var4.bind(var5)(var1);
-                            _fun46222_ip = 578;
-                            continue _fun46222;
-                        case 432:
-                            var1 = var0._nextYd;
-                            if (!(!(var2 <= var1))) {
-                                _fun46222_ip = 521;
-                                continue _fun46222
-                            }
-                        case 442:
-                            var1 = var0._nextYd;
-                            if (!(var2 > var1)) {
-                                _fun46222_ip = 578;
-                                continue _fun46222
-                            }
-                        case 455:
-                            var4 = var0.currentIndex;
-                            var1 = var0.stickyTypeMultiplier;
-                            var1 = var4 + var1;
-                            var0.currentIndex = var1;
-                            var5 = var0._stickyViewOffset;
-                            var4 = var5.setValue;
-                            var1 = 0;
-                            var1 = var4.bind(var5)(var1);
-                            var1 = var0._computeLayouts;
-                            var1 = var1.bind(var0)();
-                            var4 = var0.stickyViewVisible;
-                            var1 = true;
-                            var1 = var4.bind(var0)(var1);
-                            _fun46222_ip = 578;
-                            continue _fun46222;
-                        case 521:
-                            var1 = var0._nextYd;
-                            var2 = var2 - var1;
-                            var1 = var0._currentHeight;
-                            var2 = var2 + var1;
-                            var4 = var0.stickyTypeMultiplier;
-                            var1 = -1;
-                            var1 = var1 * var4;
-                            var2 = var2 * var1;
-                            var1 = var0._stickyViewOffset;
-                            var0 = var1.setValue;
-                            var0 = var0.bind(var1)(var2);
-                        case 578:
-                            return var3;
-                        case 580:
-                            var1 = _closure1_slot0;
-                            var4 = _closure1_slot1;
-                            var0 = 2;
-                            var0 = var4[var0];
-                            var0 = var1.bind(var3)(var0);
-                            var2 = var0.default;
-                            var0 = 3;
-                            var0 = var4[var0];
-                            var0 = var1.bind(var3)(var0);
-                            var0 = var0.default;
-                            var8 = var0.stickyIndicesArraySortError;
-                            var1 = var2.prototype;
-                            var1 = Object.create(var1, {
-                                constructor: {
-                                    value: var2
-                                }
-                            });
-                            var9 = var1;
-                            var0 = new var9[var2](var8, var7);
-                            var0 = var0 instanceof Object ? var0 : var1;
-                            throw var0;
-                        case 653:
-                            var1 = _closure1_slot0;
-                            var4 = _closure1_slot1;
-                            var0 = 2;
-                            var0 = var4[var0];
-                            var0 = var1.bind(var3)(var0);
-                            var2 = var0.default;
-                            var0 = 3;
-                            var0 = var4[var0];
-                            var0 = var1.bind(var3)(var0);
-                            var0 = var0.default;
-                            var8 = var0.stickyIndicesArraySortError;
-                            var1 = var2.prototype;
-                            var1 = Object.create(var1, {
-                                constructor: {
-                                    value: var2
-                                }
-                            });
-                            var9 = var1;
-                            var0 = new var9[var2](var8, var7);
-                            var0 = var0 instanceof Object ? var0 : var1;
-                            throw var0;
-                    }
-                };
-                var3.onScroll = var2;
-                var3 = var0.prototype;
-                var2 = function(arg0, arg1) { // Environment: var1
-                    _fun46223: for (var _fun46223_ip = 0;;) switch (_fun46223_ip) {
-                        case 0:
-                            var1 = arg1;
-                            var3 = this;
-                            var0 = undefined;
-                            if (!(var0 === var1)) {
-                                _fun46223_ip = 14;
-                                continue _fun46223
-                            }
-                        case 12:
-                            var1 = true;
-                        case 14:
-                            var2 = arg0;
-                            var3.stickyVisiblity = var2;
-                            if (!var1) {
-                                _fun46223_ip = 39;
-                                continue _fun46223
-                            }
-                        case 26:
-                            var2 = var3.setState;
-                            var1 = {};
-                            var1 = var2.bind(var3)(var1);
-                        case 39:
-                            return var0;
-                    }
-                };
-                var3.stickyViewVisible = var2;
-                var3 = var0.prototype;
-                var2 = function(arg0) { // Environment: var1
-                    _fun46224: for (var _fun46224_ip = 0;;) switch (_fun46224_ip) {
-                        case 0:
-                            var2 = arg0;
-                            var0 = var2.getWindowCorrection;
-                            if (!var0) {
-                                _fun46224_ip = 22;
-                                continue _fun46224
-                            }
-                        case 12:
-                            var1 = var2.getWindowCorrection;
-                            var0 = var1.bind(var2)();
-                        case 22:
-                            if (var0) {
-                                _fun46224_ip = 34;
-                                continue _fun46224
-                            }
-                        case 25:
-                            var1 = this;
-                            var0 = var1._windowCorrection;
-                        case 34:
-                            return var0;
-                    }
-                };
-                var3.getWindowCorrection = var2;
-                var3 = var0.prototype;
-                var2 = function(arg0, arg1) { // Environment: var1
-                    _fun46225: for (var _fun46225_ip = 0;;) switch (_fun46225_ip) {
-                        case 0:
-                            var2 = this;
-                            var3 = var2.hasReachedBoundary;
-                            var1 = arg0;
-                            var0 = arg1;
-                            var0 = var3.bind(var2)(var1, var0);
-                            var1 = var2.bounceScrolling;
-                            if (!(var1 !== var0)) {
-                                _fun46225_ip = 78;
-                                continue _fun46225
-                            }
-                        case 31:
-                            var2.bounceScrolling = var0;
-                            var0 = var2.bounceScrolling;
-                            if (var0) {
-                                _fun46225_ip = 65;
-                                continue _fun46225
-                            }
-                        case 46:
-                            var1 = var2.onVisibleIndicesChanged;
-                            var0 = var2.visibleIndices;
-                            var0 = var1.bind(var2)(var0);
-                            _fun46225_ip = 78;
-                            continue _fun46225;
-                        case 65:
-                            var1 = var2.stickyViewVisible;
-                            var0 = false;
-                            var0 = var1.bind(var2)(var0);
-                        case 78:
-                            var0 = undefined;
-                            return var0;
-                    }
-                };
-                var3.boundaryProcessing = var2;
-                var3 = var0.prototype;
-                var2 = function() { // Environment: var1
-                    _fun46226: for (var _fun46226_ip = 0;;) switch (_fun46226_ip) {
-                        case 0:
-                            var1 = this;
-                            var2 = var1.props;
-                            var0 = var2.getRLVRenderedSize;
-                            var0 = var0.bind(var2)();
-                            if (!var0) {
-                                _fun46226_ip = 43;
-                                continue _fun46226
-                            }
-                        case 21:
-                            var2 = var0.height;
-                            var1._scrollableHeight = var2;
-                            var0 = var0.width;
-                            var1._scrollableWidth = var0;
-                        case 43:
-                            var2 = var1.props;
-                            var0 = var2.getContentDimension;
-                            var0 = var0.bind(var2)();
-                            var2 = var0;
-                            if (!var2) {
-                                _fun46226_ip = 70;
-                                continue _fun46226
-                            }
-                        case 64:
-                            var2 = var1._scrollableHeight;
-                        case 70:
-                            if (!var2) {
-                                _fun46226_ip = 94;
-                                continue _fun46226
-                            }
-                        case 73:
-                            var2 = var0.height;
-                            var0 = var1._scrollableHeight;
-                            var0 = var2 - var0;
-                            var1._windowBound = var0;
-                        case 94:
-                            var0 = undefined;
-                            return var0;
-                    }
-                };
-                var3._updateDimensionParams = var2;
-                var3 = var0.prototype;
-                var2 = function(arg0) { // Environment: var1
-                    _fun46227: for (var _fun46227_ip = 0;;) switch (_fun46227_ip) {
-                        case 0:
-                            var2 = arg0;
-                            var1 = this;
-                            if (var2) {
-                                _fun46227_ip = 20;
-                                continue _fun46227
-                            }
-                        case 9:
-                            var0 = var1.props;
-                            var2 = var0.stickyIndices;
-                        case 20:
-                            if (!var2) {
-                                _fun46227_ip = 460;
-                                continue _fun46227
-                            }
-                        case 26:
-                            var0 = var1.currentIndex;
-                            var0 = var2[var0];
-                            var1.currentStickyIndex = var0;
-                            var3 = var1.currentIndex;
-                            var0 = var1.stickyTypeMultiplier;
-                            var0 = var3 - var0;
-                            var0 = var2[var0];
-                            var1._previousStickyIndex = var0;
-                            var3 = var1.currentIndex;
-                            var0 = var1.stickyTypeMultiplier;
-                            var0 = var3 + var0;
-                            var0 = var2[var0];
-                            var1._nextStickyIndex = var0;
-                            var0 = var1.currentStickyIndex;
-                            var3 = undefined;
-                            if (!(var3 !== var0)) {
-                                _fun46227_ip = 245;
-                                continue _fun46227
+                                _fun46111_ip = 112;
+                                continue _fun46111
                             }
                         case 109:
-                            var4 = var1.props;
-                            var2 = var4.getLayoutForIndex;
-                            var0 = var1.currentStickyIndex;
-                            var0 = var2.bind(var4)(var0);
-                            var1._currentLayout = var0;
-                            var2 = var1._currentLayout;
-                            var0 = undefined;
-                            if (!var2) {
-                                _fun46227_ip = 159;
-                                continue _fun46227
+                            var1 = var4;
+                        case 112:
+                            if (var12) {
+                                _fun46111_ip = 127;
+                                continue _fun46111
                             }
-                        case 148:
-                            var2 = var1._currentLayout;
-                            var0 = var2.y;
-                        case 159:
-                            var1._currentY = var0;
-                            var2 = var1._currentLayout;
-                            var0 = undefined;
-                            if (!var2) {
-                                _fun46227_ip = 187;
-                                continue _fun46227
+                        case 115:
+                            if (var8) {
+                                _fun46111_ip = 127;
+                                continue _fun46111
                             }
-                        case 176:
-                            var2 = var1._currentLayout;
-                            var0 = var2.height;
-                        case 187:
-                            var1._currentHeight = var0;
-                            var2 = var1._currentY;
-                            var0 = undefined;
-                            if (!var2) {
-                                _fun46227_ip = 239;
-                                continue _fun46227
+                        case 118:
+                            var4 = 0;
+                            if (!(!(var1 < var4))) {
+                                _fun46111_ip = 466;
+                                continue _fun46111
                             }
-                        case 204:
-                            var2 = var1._currentHeight;
-                            var0 = undefined;
-                            if (!var2) {
-                                _fun46227_ip = 239;
-                                continue _fun46227
+                        case 127:
+                            var6 = _closure2_slot0;
+                            var4 = var6.getIsFirstLayoutComplete;
+                            var4 = var4.bind(var6)();
+                            if (!var4) {
+                                _fun46111_ip = 466;
+                                continue _fun46111
                             }
-                        case 215:
-                            var5 = var1.getCurrentYd;
-                            var4 = var1._currentY;
-                            var2 = var1._currentHeight;
-                            var0 = var5.bind(var1)(var4, var2);
-                        case 239:
-                            var1._currentYd = var0;
-                        case 245:
-                            var0 = var1._previousStickyIndex;
-                            if (!(var3 !== var0)) {
-                                _fun46227_ip = 311;
-                                continue _fun46227
+                        case 147:
+                            var11 = _closure2_slot0;
+                            var4 = var11.getAbsoluteLastScrollOffset;
+                            var7 = var4.bind(var11)();
+                            var4 = var11.getChildContainerDimensions;
+                            var4 = var4.bind(var11)();
+                            var6 = var11.getWindowSize;
+                            var13 = var6.bind(var11)();
+                            var11 = true;
+                            var6 = var11 === var3;
+                            if (var6) {
+                                _fun46111_ip = 197;
+                                continue _fun46111
                             }
-                        case 255:
-                            var4 = var1.props;
-                            var2 = var4.getLayoutForIndex;
-                            var0 = var1._previousStickyIndex;
-                            var0 = var2.bind(var4)(var0);
-                            var1._previousLayout = var0;
-                            var2 = var1._previousLayout;
-                            var0 = undefined;
-                            if (!var2) {
-                                _fun46227_ip = 305;
-                                continue _fun46227
+                        case 190:
+                            var3 = var13.height;
+                            _fun46111_ip = 202;
+                            continue _fun46111;
+                        case 197:
+                            var3 = var13.width;
+                        case 202:
+                            if (var6) {
+                                _fun46111_ip = 212;
+                                continue _fun46111
                             }
-                        case 294:
-                            var2 = var1._previousLayout;
-                            var0 = var2.height;
+                        case 205:
+                            var13 = var4.height;
+                            _fun46111_ip = 217;
+                            continue _fun46111;
+                        case 212:
+                            var13 = var4.width;
+                        case 217:
+                            var4 = _closure2_slot0;
+                            var4 = var4.firstItemOffset;
+                            var4 = var13 + var4;
+                            if (!var12) {
+                                _fun46111_ip = 332;
+                                continue _fun46111
+                            }
+                        case 234:
+                            var15 = var9 != var14;
+                            var13 = 0.5;
+                            if (!var15) {
+                                _fun46111_ip = 254;
+                                continue _fun46111
+                            }
+                        case 251:
+                            var13 = var14;
+                        case 254:
+                            var13 = var13 * var3;
+                            var16 = var5.Math;
+                            var15 = var16.ceil;
+                            var14 = var7 + var3;
+                            var14 = var15.bind(var16)(var14);
+                            var13 = var4 - var13;
+                            var13 = var14 >= var13;
+                            var14 = var13;
+                            if (!var14) {
+                                _fun46111_ip = 305;
+                                continue _fun46111
+                            }
+                        case 293:
+                            var15 = _closure2_slot2;
+                            var15 = var15.current;
+                            var14 = !var15;
                         case 305:
-                            var1._previousHeight = var0;
-                        case 311:
-                            var0 = var1._nextStickyIndex;
-                            if (!(var3 !== var0)) {
-                                _fun46227_ip = 460;
-                                continue _fun46227
+                            if (!var14) {
+                                _fun46111_ip = 322;
+                                continue _fun46111
                             }
-                        case 324:
-                            var4 = var1.props;
-                            var2 = var4.getLayoutForIndex;
-                            var0 = var1._nextStickyIndex;
-                            var0 = var2.bind(var4)(var0);
-                            var1._nextLayout = var0;
-                            var2 = var1._nextLayout;
-                            var0 = undefined;
-                            if (!var2) {
-                                _fun46227_ip = 374;
-                                continue _fun46227
+                        case 308:
+                            var14 = _closure2_slot2;
+                            var14.current = var11;
+                            var12 = var12.bind(var0)();
+                        case 322:
+                            var12 = _closure2_slot2;
+                            var12.current = var13;
+                        case 332:
+                            if (!var8) {
+                                _fun46111_ip = 408;
+                                continue _fun46111
                             }
-                        case 363:
-                            var2 = var1._nextLayout;
-                            var0 = var2.y;
-                        case 374:
-                            var1._nextY = var0;
-                            var2 = var1._nextLayout;
-                            var0 = undefined;
-                            if (!var2) {
-                                _fun46227_ip = 402;
-                                continue _fun46227
+                        case 335:
+                            var12 = var9 != var10;
+                            var9 = 0.2;
+                            if (!var12) {
+                                _fun46111_ip = 355;
+                                continue _fun46111
                             }
-                        case 391:
-                            var2 = var1._nextLayout;
-                            var0 = var2.height;
-                        case 402:
-                            var1._nextHeight = var0;
-                            var2 = var1._nextY;
-                            var0 = undefined;
-                            if (!var2) {
-                                _fun46227_ip = 454;
-                                continue _fun46227
+                        case 352:
+                            var9 = var10;
+                        case 355:
+                            var9 = var9 * var3;
+                            var9 = var7 <= var9;
+                            var10 = var9;
+                            if (!var10) {
+                                _fun46111_ip = 381;
+                                continue _fun46111
                             }
-                        case 419:
-                            var2 = var1._nextHeight;
-                            var0 = undefined;
-                            if (!var2) {
-                                _fun46227_ip = 454;
-                                continue _fun46227
+                        case 369:
+                            var12 = _closure2_slot3;
+                            var12 = var12.current;
+                            var10 = !var12;
+                        case 381:
+                            if (!var10) {
+                                _fun46111_ip = 398;
+                                continue _fun46111
                             }
-                        case 430:
-                            var4 = var1.getNextYd;
-                            var3 = var1._nextY;
-                            var2 = var1._nextHeight;
-                            var0 = var4.bind(var1)(var3, var2);
-                        case 454:
-                            var1._nextYd = var0;
-                        case 460:
+                        case 384:
+                            var10 = _closure2_slot3;
+                            var10.current = var11;
+                            var8 = var8.bind(var0)();
+                        case 398:
+                            var8 = _closure2_slot3;
+                            var8.current = var9;
+                        case 408:
+                            if (var6) {
+                                _fun46111_ip = 466;
+                                continue _fun46111
+                            }
+                        case 411:
+                            var6 = 0;
+                            if (!(var1 >= var6)) {
+                                _fun46111_ip = 466;
+                                continue _fun46111
+                            }
+                        case 417:
+                            var1 = var1 * var3;
+                            var6 = var5.Math;
+                            var5 = var6.ceil;
+                            var3 = var7 + var3;
+                            var3 = var5.bind(var6)(var3);
+                            var1 = var4 - var1;
+                            var1 = var3 >= var1;
+                            var2 = _closure2_slot4;
+                            var1 = !var1;
+                            var1 = !var1;
+                            var2.current = var1;
+                        case 466:
+                            return var0;
+                    }
+                };
+                var1 = var12.bind(var4)(var1, var9);
+                var9 = new Array(3);
+                var9[0] = var13;
+                var9[1] = var5;
+                var9[2] = var6;
+                var5 = function() { // Environment: var0
+                    _fun46112: for (var _fun46112_ip = 0;;) switch (_fun46112_ip) {
+                        case 0:
+                            var1 = _closure2_slot4;
+                            var1 = var1.current;
+                            if (!var1) {
+                                _fun46112_ip = 45;
+                                continue _fun46112
+                            }
+                        case 15:
+                            var2 = _closure2_slot4;
+                            var1 = false;
+                            var2.current = var1;
+                            var2 = _closure2_slot6;
+                            var1 = undefined;
+                            var0 = function() { // Environment: var0
+                                _fun46113: for (var _fun46113_ip = 0;;) switch (_fun46113_ip) {
+                                    case 0:
+                                        var0 = _closure2_slot0;
+                                        var0 = var0.props;
+                                        var4 = var0.maintainVisibleContentPosition;
+                                        var1 = null;
+                                        var5 = var1 == var4;
+                                        var0 = undefined;
+                                        var3 = undefined;
+                                        if (var5) {
+                                            _fun46113_ip = 39;
+                                            continue _fun46113
+                                        }
+                                    case 31:
+                                        var3 = var4.animateAutoScrollToBottom;
+                                    case 39:
+                                        var4 = var1 == var3;
+                                        if (var4) {
+                                            _fun46113_ip = 49;
+                                            continue _fun46113
+                                        }
+                                    case 46:
+                                        var4 = var3;
+                                    case 49:
+                                        var2 = _closure2_slot1;
+                                        var3 = var2.current;
+                                        if (!(var1 != var3)) {
+                                            _fun46113_ip = 80;
+                                            continue _fun46113
+                                        }
+                                    case 62:
+                                        var2 = var3.scrollToEnd;
+                                        var1 = {};
+                                        var1.animated = var4;
+                                        var1 = var2.bind(var3)(var1);
+                                    case 80:
+                                        return var0;
+                                }
+                            };
+                            var0 = var2.bind(var1)(var0);
+                        case 45:
                             var0 = undefined;
                             return var0;
                     }
                 };
-                var3._computeLayouts = var2;
-                var3 = var0.prototype;
-                var2 = function(arg0) { // Environment: var1
-                    var2 = arg0;
-                    var1 = this;
-                    var1.visibleIndices = var2;
-                    var0 = 0;
-                    var0 = var2[var0];
-                    var1._smallestVisibleIndex = var0;
-                    var3 = var2.length;
-                    var0 = 1;
-                    var0 = var3 - var0;
-                    var0 = var2[var0];
-                    var1._largestVisibleIndex = var0;
+                var5 = var12.bind(var4)(var5, var9);
+                var _closure2_slot7 = var5;
+                var13 = _closure1_slot4;
+                var12 = new Array(1);
+                var12[0] = var11;
+                var9 = function() { // Environment: var0
+                    var1 = _closure2_slot2;
+                    var0 = false;
+                    var1.current = var0;
                     var0 = undefined;
                     return var0;
                 };
-                var3._setSmallestAndLargestVisibleIndices = var2;
-                var3 = var0.prototype;
-                var2 = function() { // Environment: var1
-                    _fun46229: for (var _fun46229_ip = 0;;) switch (_fun46229_ip) {
+                var9 = var13.bind(var4)(var9, var12);
+                var3 = _closure1_slot3;
+                var9 = new Array(4);
+                var9[0] = var11;
+                var9[1] = var5;
+                var9[2] = var10;
+                var9[3] = var2;
+                var2 = function() { // Environment: var0
+                    var1 = _closure2_slot7;
+                    var0 = undefined;
+                    var1 = var1.bind(var0)();
+                    return var0;
+                };
+                var2 = var3.bind(var4)(var2, var9);
+                var2 = new Array(4);
+                var2[0] = var8;
+                var2[1] = var7;
+                var6 = var6.firstItemOffset;
+                var2[2] = var6;
+                var2[3] = var5;
+                var0 = function() { // Environment: var0
+                    _fun46116: for (var _fun46116_ip = 0;;) switch (_fun46116_ip) {
                         case 0:
-                            var1 = this;
-                            var0 = var1.currentStickyIndex;
-                            var3 = undefined;
-                            if (!(var3 === var0)) {
-                                _fun46229_ip = 19;
-                                continue _fun46229
+                            var0 = global;
+                            var1 = var0.Date;
+                            var0 = var1.now;
+                            var2 = var0.bind(var1)();
+                            var1 = _closure2_slot5;
+                            var1 = var1.current;
+                            var2 = var2 - var1;
+                            var1 = 100;
+                            if (!(var2 >= var1)) {
+                                _fun46116_ip = 50;
+                                continue _fun46116
                             }
-                        case 15:
-                            var0 = null;
-                            return var0;
-                        case 19:
-                            var4 = var1.props;
-                            var2 = var4.getDataForIndex;
-                            var0 = var1.currentStickyIndex;
-                            var6 = var2.bind(var4)(var0);
-                            var4 = var1.props;
-                            var2 = var4.getLayoutTypeForIndex;
-                            var0 = var1.currentStickyIndex;
-                            var5 = var2.bind(var4)(var0);
-                            var2 = var1.props;
-                            var0 = var2.getExtendedState;
-                            var4 = var0.bind(var2)();
-                            var2 = var1.props;
-                            var0 = var2.getRowRenderer;
-                            var2 = var0.bind(var2)();
-                            var0 = var1.props;
-                            var0 = var0.overrideRowRenderer;
-                            if (var0) {
-                                _fun46229_ip = 130;
-                                continue _fun46229
-                            }
-                        case 107:
-                            var8 = var1.currentStickyIndex;
-                            var11 = undefined;
-                            var10 = var5;
-                            var9 = var6;
-                            var7 = var4;
-                            var0 = var11[var2](var10, var9, var8, var7, var6);
-                            _fun46229_ip = 163;
-                            continue _fun46229;
-                        case 130:
-                            var3 = var1.props;
-                            var2 = var3.overrideRowRenderer;
-                            var8 = var1.currentStickyIndex;
-                            var11 = var3;
-                            var10 = var5;
-                            var9 = var6;
-                            var7 = var4;
-                            var0 = var11[var2](var10, var9, var8, var7, var6);
-                        case 163:
+                        case 40:
+                            var1 = _closure2_slot7;
+                            var0 = undefined;
+                            var0 = var1.bind(var0)();
+                        case 50:
+                            var0 = undefined;
                             return var0;
                     }
                 };
-                var3._renderSticky = var2;
-                var2 = var0.prototype;
-                var1 = function(arg0) { // Environment: var1
-                    var2 = this;
-                    var1 = var2.getWindowCorrection;
-                    var0 = var2.props;
-                    var0 = var1.bind(var2)(var0);
-                    var1 = var0.windowShift;
-                    var0 = arg0;
-                    var0 = var0 + var1;
-                    return var0;
-                };
-                var2._getAdjustedOffsetY = var1;
+                var0 = var3.bind(var4)(var0, var2);
+                var0 = {};
+                var0.checkBounds = var1;
                 return var0;
-            };
-            var1 = var1.bind(var0)(var3);
-            var2.default = var1;
-            return var0;
-    }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 5156, 5157, 5160]);
+        }
+    };
+    var2.useBoundDetection = var1;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 5156]);

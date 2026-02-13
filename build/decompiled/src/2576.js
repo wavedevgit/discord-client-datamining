@@ -1,65 +1,79 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var0 = exports;
-    var1 = global;
-    var4 = var1.Object;
-    var3 = var4.defineProperty;
-    var2 = {};
-    var1 = true;
-    var2.value = var1;
-    var1 = '__esModule';
-    var1 = var3.bind(var4)(var0, var1, var2);
-    var1 = function arg0, arg1() {
-        _fun21990: for (var _fun21990_ip = 0;;) switch (_fun21990_ip) {
-            case 0:
-                var4 = arg0;
-                var1 = arg1;
-                var0 = var1.length;
-                if (!(!(var0 < var4))) {
-                    _fun21990_ip = 19;
-                    continue _fun21990
-                }
-            case 15:
-                var0 = undefined;
-                return var0;
-            case 19:
-                var0 = global;
-                var2 = var0.TypeError;
-                var0 = ' argument';
-                var3 = var4 + var0;
-                var0 = 1;
-                var4 = var4 > var0;
-                var0 = '';
-                if (!var4) {
-                    _fun21990_ip = 55;
-                    continue _fun21990
-                }
-            case 51:
-                var0 = 's';
-            case 55:
-                var1 = var1.length;
-                var3 = var3 + var0;
-                var0 = ' required, but only ';
-                var0 = var3 + var0;
-                var3 = var0 + var1;
-                var0 = var2.prototype;
-                var1 = Object.create(var0, {
-                    constructor: {
-                        value: var2
-                    }
-                });
-                var0 = ' present';
-                var5 = var3 + var0;
-                var6 = var1;
-                var0 = new var6[var2](var5, var4);
-                var0 = var0 instanceof Object ? var0 : var1;
-                throw var0;
-        }
-    };
-    var0.default = var1;
-    var1 = var0.default;
-    var0 = arg4;
-    var0.exports = var1;
-    var0 = undefined;
-    return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, []);
+    _fun22004: for (var _fun22004_ip = 0;;) switch (_fun22004_ip) {
+        case 0:
+            var1 = exports;
+            var0 = global;
+            var4 = var0.Object;
+            var3 = var4.defineProperty;
+            var2 = {};
+            var0 = true;
+            var2.value = var0;
+            var0 = '__esModule';
+            var0 = var3.bind(var4)(var1, var0, var2);
+            var0 = undefined;
+            var1.default = var0;
+            var3 = dependencyMap;
+            var2 = 0;
+            var3 = var3[var2];
+            var2 = require;
+            var4 = var2.bind(var0)(var3);
+            if (!var4) {
+                _fun22004_ip = 75;
+                continue _fun22004
+            }
+        case 63:
+            var2 = var4.__esModule;
+            var3 = var4;
+            if (var2) {
+                _fun22004_ip = 84;
+                continue _fun22004
+            }
+        case 75:
+            var2 = {};
+            var2.default = var4;
+            var3 = var2;
+        case 84:
+            var2 = {};
+            var5 = var3.default;
+            var4 = {};
+            var6 = {
+                'full': 'EEEE, dd MMMM yyyy',
+                'long': 'dd MMMM yyyy',
+                'medium': 'dd MMM yyyy',
+                'short': 'dd/MM/yyyy'
+            };
+            var4.formats = var6;
+            var6 = 'full';
+            var4.defaultWidth = var6;
+            var4 = var5.bind(var0)(var4);
+            var2.date = var4;
+            var5 = var3.default;
+            var4 = {};
+            var7 = {
+                'full': 'HH:mm:ss zzzz',
+                'long': 'HH:mm:ss z',
+                'medium': 'HH:mm:ss',
+                'short': 'H:mm'
+            };
+            var4.formats = var7;
+            var4.defaultWidth = var6;
+            var4 = var5.bind(var0)(var4);
+            var2.time = var4;
+            var4 = var3.default;
+            var3 = {};
+            var5 = {};
+            var6 = '{{date}} {{time}}';
+            var5.any = var6;
+            var3.formats = var5;
+            var5 = 'any';
+            var3.defaultWidth = var5;
+            var3 = var4.bind(var0)(var3);
+            var2.dateTime = var3;
+            var1.default = var2;
+            var2 = var1.default;
+            var1 = module;
+            var1.exports = var2;
+            return var0;
+    }
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1695]);

@@ -1,299 +1,244 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = new Array(36);
-    var0 = {
-        'name': 'English, US',
-        'englishName': 'English, US',
-        'code': 'en-US',
-        'postgresLang': 'english',
-        'enabled': true
+    var1 = exports;
+    var2 = function arg0() {
+        var0 = global;
+        var0 = var0.Symbol;
+        var1 = var0.toStringTag;
+        var0 = arg0;
+        var1 = var0[var1];
+        var0 = 'IntlMessagesProxy';
+        var0 = var0 === var1;
+        return var0;
     };
-    var1[0] = var0;
-    var0 = {
-        'name': 'English, UK',
-        'englishName': 'English, UK',
-        'code': 'en-GB',
-        'postgresLang': 'english',
-        'enabled': true
+    var _closure1_slot0 = var2;
+    var2 = global;
+    var5 = var2.Object;
+    var4 = var5.defineProperty;
+    var3 = {};
+    var2 = true;
+    var3.value = var2;
+    var2 = '__esModule';
+    var2 = var4.bind(var5)(var1, var2, var3);
+    var2 = function arg0, arg1() {
+        _fun14038: for (var _fun14038_ip = 0;;) switch (_fun14038_ip) {
+            case 0:
+                var1 = arg0;
+                var2 = arg1;
+                var3 = _closure1_slot0;
+                var0 = undefined;
+                var4 = var3.bind(var0)(var1);
+                var3 = var3.bind(var0)(var2);
+                if (!var4) {
+                    _fun14038_ip = 31;
+                    continue _fun14038
+                }
+            case 28:
+                if (var3) {
+                    _fun14038_ip = 149;
+                    continue _fun14038
+                }
+            case 31:
+                if (var4) {
+                    _fun14038_ip = 77;
+                    continue _fun14038
+                }
+            case 34:
+                if (var3) {
+                    _fun14038_ip = 77;
+                    continue _fun14038
+                }
+            case 37:
+                var0 = global;
+                var6 = var0.Object;
+                var5 = var6.assign;
+                var8 = var0.Object;
+                var7 = var8.assign;
+                var0 = {};
+                var0 = var7.bind(var8)(var0, var2);
+                var0 = var5.bind(var6)(var0, var1);
+                _fun14038_ip = 175;
+                continue _fun14038;
+            case 77:
+                if (!var4) {
+                    _fun14038_ip = 110;
+                    continue _fun14038
+                }
+            case 80:
+                if (var3) {
+                    _fun14038_ip = 110;
+                    continue _fun14038
+                }
+            case 83:
+                var5 = global;
+                var7 = var5.Object;
+                var6 = var7.assign;
+                var5 = var1.$$baseObject;
+                var0 = var6.bind(var7)(var5, var2);
+                _fun14038_ip = 175;
+                continue _fun14038;
+            case 110:
+                if (!var3) {
+                    _fun14038_ip = 116;
+                    continue _fun14038
+                }
+            case 113:
+                var3 = !var4;
+            case 116:
+                var0 = var1;
+                if (!var3) {
+                    _fun14038_ip = 175;
+                    continue _fun14038
+                }
+            case 122:
+                var3 = global;
+                var5 = var3.Object;
+                var4 = var5.assign;
+                var3 = var2.$$baseObject;
+                var0 = var4.bind(var5)(var3, var1);
+                _fun14038_ip = 175;
+                continue _fun14038;
+            case 149:
+                var4 = var1.$$loader;
+                var3 = var4.fallbackWith;
+                var2 = var2.$$loader;
+                var2 = var3.bind(var4)(var2);
+                var0 = var1;
+            case 175:
+                return var0;
+        }
     };
-    var1[1] = var0;
-    var0 = {
-        'name': '中文',
-        'englishName': 'Chinese Simplified',
-        'code': 'zh-CN',
-        'postgresLang': 'simple',
-        'enabled': true
+    var1.chainMessagesObjects = var2;
+    var0 = function arg0() {
+        var1 = arg0;
+        var _closure2_slot0 = var1;
+        var0 = function arg0() {
+            var1 = arg0;
+            var _closure3_slot0 = var1;
+            var0 = function(arg0) { // Environment: var0
+                var3 = _closure2_slot0;
+                var2 = var3.get;
+                var1 = _closure3_slot0;
+                var0 = arg0;
+                var0 = var2.bind(var3)(var1, var0);
+                return var0;
+            };
+            return var0;
+        };
+        var _closure2_slot1 = var0;
+        var3 = {};
+        var2 = global;
+        var5 = var2.Proxy;
+        var0 = {};
+        var6 = function arg0() {
+            var0 = global;
+            var2 = var0.Reflect;
+            var1 = var2.ownKeys;
+            var0 = arg0;
+            var0 = var1.bind(var2)(var0);
+            return var0;
+        };
+        var0.ownKeys = var6;
+        var6 = function arg0, arg1() {
+            _fun14043: for (var _fun14043_ip = 0;;) switch (_fun14043_ip) {
+                case 0:
+                    var3 = arg0;
+                    var2 = arg1;
+                    var0 = var3[var2];
+                    if (var0) {
+                        _fun14043_ip = 31;
+                        continue _fun14043
+                    }
+                case 13:
+                    var1 = _closure2_slot1;
+                    var0 = undefined;
+                    var0 = var1.bind(var0)(var2);
+                    var3[var2] = var0;
+                case 31:
+                    var0 = global;
+                    var1 = var0.Reflect;
+                    var0 = var1.getOwnPropertyDescriptor;
+                    var0 = var0.bind(var1)(var3, var2);
+                    return var0;
+            }
+        };
+        var0.getOwnPropertyDescriptor = var6;
+        var4 = function arg0, arg1() {
+            _fun14044: for (var _fun14044_ip = 0;;) switch (_fun14044_ip) {
+                case 0:
+                    var3 = arg0;
+                    var2 = arg1;
+                    var0 = 'object';
+                    var1 = '$$typeof';
+                    if (!(var1 !== var2)) {
+                        _fun14044_ip = 74;
+                        continue _fun14044
+                    }
+                case 18:
+                    var1 = global;
+                    var1 = var1.Symbol;
+                    var4 = var1.toStringTag;
+                    var1 = 'IntlMessagesProxy';
+                    if (!(var2 !== var4)) {
+                        _fun14044_ip = 71;
+                        continue _fun14044
+                    }
+                case 42:
+                    var4 = var3[var2];
+                    if (var4) {
+                        _fun14044_ip = 67;
+                        continue _fun14044
+                    }
+                case 49:
+                    var5 = _closure2_slot1;
+                    var4 = undefined;
+                    var4 = var5.bind(var4)(var2);
+                    var3[var2] = var4;
+                case 67:
+                    var1 = var3[var2];
+                case 71:
+                    var0 = var1;
+                case 74:
+                    return var0;
+            }
+        };
+        var0.get = var4;
+        var4 = var5.prototype;
+        var4 = Object.create(var4, {
+            constructor: {
+                value: var5
+            }
+        });
+        var10 = var4;
+        var9 = var3;
+        var8 = var0;
+        var0 = new var10[var5](var9, var8, var7);
+        var0 = var0 instanceof Object ? var0 : var4;
+        var6 = var2.Object;
+        var5 = var6.defineProperty;
+        var4 = {
+            'value': null,
+            'enumerable': false,
+            'configurable': false,
+            'writable': false
+        };
+        var4.value = var3;
+        var3 = '$$baseObject';
+        var3 = var5.bind(var6)(var0, var3, var4);
+        var4 = var2.Object;
+        var3 = var4.defineProperty;
+        var2 = {
+            'value': null,
+            'enumerable': false,
+            'configurable': false,
+            'writable': false
+        };
+        var2.value = var1;
+        var1 = '$$loader';
+        var1 = var3.bind(var4)(var0, var1, var2);
+        return var0;
     };
-    var1[2] = var0;
-    var0 = {
-        'name': '繁體中文',
-        'englishName': 'Traditional Chinese',
-        'code': 'zh-TW',
-        'postgresLang': 'simple',
-        'enabled': true
-    };
-    var1[3] = var0;
-    var0 = {
-        'name': 'Čeština',
-        'englishName': 'Czech',
-        'code': 'cs',
-        'postgresLang': 'simple',
-        'enabled': true
-    };
-    var1[4] = var0;
-    var0 = {
-        'name': 'Dansk',
-        'englishName': 'Danish',
-        'code': 'da',
-        'postgresLang': 'danish',
-        'enabled': true
-    };
-    var1[5] = var0;
-    var0 = {
-        'name': 'Nederlands',
-        'englishName': 'Dutch',
-        'code': 'nl',
-        'postgresLang': 'dutch',
-        'enabled': true
-    };
-    var1[6] = var0;
-    var0 = {
-        'name': 'Français',
-        'englishName': 'French',
-        'code': 'fr',
-        'postgresLang': 'french',
-        'enabled': true
-    };
-    var1[7] = var0;
-    var0 = {
-        'name': 'Deutsch',
-        'englishName': 'German',
-        'code': 'de',
-        'postgresLang': 'german',
-        'enabled': true
-    };
-    var1[8] = var0;
-    var0 = {
-        'name': 'Ελληνικά',
-        'englishName': 'Greek',
-        'code': 'el',
-        'postgresLang': 'simple',
-        'enabled': true
-    };
-    var1[9] = var0;
-    var0 = {
-        'name': 'Magyar',
-        'englishName': 'Hungarian',
-        'code': 'hu',
-        'postgresLang': 'hungarian',
-        'enabled': true
-    };
-    var1[10] = var0;
-    var0 = {
-        'name': 'Italiano',
-        'englishName': 'Italian',
-        'code': 'it',
-        'postgresLang': 'italian',
-        'enabled': true
-    };
-    var1[11] = var0;
-    var0 = {
-        'name': '日本語',
-        'englishName': 'Japanese',
-        'code': 'ja',
-        'postgresLang': 'simple',
-        'enabled': true
-    };
-    var1[12] = var0;
-    var0 = {
-        'name': '한국어',
-        'englishName': 'Korean',
-        'code': 'ko',
-        'postgresLang': 'simple',
-        'enabled': true
-    };
-    var1[13] = var0;
-    var0 = {
-        'name': 'Polski',
-        'englishName': 'Polish',
-        'code': 'pl',
-        'postgresLang': 'simple',
-        'enabled': true
-    };
-    var1[14] = var0;
-    var0 = {
-        'name': 'Português',
-        'englishName': 'Portuguese',
-        'code': 'pt-PT',
-        'postgresLang': 'portuguese',
-        'enabled': false
-    };
-    var1[15] = var0;
-    var0 = {
-        'name': 'Português do Brasil',
-        'englishName': 'Portuguese, Brazilian',
-        'code': 'pt-BR',
-        'postgresLang': 'portuguese',
-        'enabled': true
-    };
-    var1[16] = var0;
-    var0 = {
-        'name': 'Русский',
-        'englishName': 'Russian',
-        'code': 'ru',
-        'postgresLang': 'russian',
-        'enabled': true
-    };
-    var1[17] = var0;
-    var0 = {
-        'name': 'Slovenčina',
-        'englishName': 'Slovak',
-        'code': 'sk',
-        'postgresLang': 'simple',
-        'enabled': false
-    };
-    var1[18] = var0;
-    var0 = {
-        'name': 'Español, LATAM',
-        'englishName': 'Spanish, LATAM',
-        'code': 'es-419',
-        'postgresLang': 'spanish',
-        'enabled': true
-    };
-    var1[19] = var0;
-    var0 = {
-        'name': 'Español',
-        'englishName': 'Spanish',
-        'code': 'es-ES',
-        'postgresLang': 'spanish',
-        'enabled': true
-    };
-    var1[20] = var0;
-    var0 = {
-        'name': 'Svenska',
-        'englishName': 'Swedish',
-        'code': 'sv-SE',
-        'postgresLang': 'swedish',
-        'enabled': true
-    };
-    var1[21] = var0;
-    var0 = {
-        'name': 'Türkçe',
-        'englishName': 'Turkish',
-        'code': 'tr',
-        'postgresLang': 'turkish',
-        'enabled': true
-    };
-    var1[22] = var0;
-    var0 = {
-        'name': 'български',
-        'englishName': 'Bulgarian',
-        'code': 'bg',
-        'postgresLang': 'simple',
-        'enabled': true
-    };
-    var1[23] = var0;
-    var0 = {
-        'name': 'Українська',
-        'englishName': 'Ukrainian',
-        'code': 'uk',
-        'postgresLang': 'simple',
-        'enabled': true
-    };
-    var1[24] = var0;
-    var0 = {
-        'name': 'Suomi',
-        'englishName': 'Finnish',
-        'code': 'fi',
-        'postgresLang': 'finnish',
-        'enabled': true
-    };
-    var1[25] = var0;
-    var0 = {
-        'name': 'Norsk',
-        'englishName': 'Norwegian',
-        'code': 'no',
-        'postgresLang': 'norwegian',
-        'enabled': true
-    };
-    var1[26] = var0;
-    var0 = {
-        'name': 'Hrvatski',
-        'englishName': 'Croatian',
-        'code': 'hr',
-        'postgresLang': 'simple',
-        'enabled': true
-    };
-    var1[27] = var0;
-    var0 = {
-        'name': 'Română',
-        'englishName': 'Romanian',
-        'code': 'ro',
-        'postgresLang': 'romanian',
-        'enabled': true
-    };
-    var1[28] = var0;
-    var0 = {
-        'name': 'Lietuviškai',
-        'englishName': 'Lithuanian',
-        'code': 'lt',
-        'postgresLang': 'simple',
-        'enabled': true
-    };
-    var1[29] = var0;
-    var0 = {
-        'name': 'ไทย',
-        'englishName': 'Thai',
-        'code': 'th',
-        'postgresLang': 'simple',
-        'enabled': true
-    };
-    var1[30] = var0;
-    var0 = {
-        'name': 'Tiếng Việt',
-        'englishName': 'Vietnamese',
-        'code': 'vi',
-        'postgresLang': 'simple',
-        'enabled': true
-    };
-    var1[31] = var0;
-    var0 = {
-        'name': 'हिंदी',
-        'englishName': 'Hindi',
-        'code': 'hi',
-        'postgresLang': 'simple',
-        'enabled': true
-    };
-    var1[32] = var0;
-    var0 = {
-        'name': 'עִברִית',
-        'englishName': 'Hebrew',
-        'code': 'he',
-        'postgresLang': 'simple',
-        'enabled': false,
-        'enabledAPI': true
-    };
-    var1[33] = var0;
-    var0 = {
-        'name': 'العربية',
-        'englishName': 'Arabic',
-        'code': 'ar',
-        'postgresLang': 'simple',
-        'enabled': false,
-        'enabledAPI': true
-    };
-    var1[34] = var0;
-    var0 = {
-        'name': 'Bahasa Indonesia',
-        'englishName': 'Indonesian',
-        'code': 'id',
-        'postgresLang': 'simple',
-        'enabled': false,
-        'enabledAPI': true
-    };
-    var1[35] = var0;
-    var0 = module;
-    var0.exports = var1;
+    var1.makeMessagesProxy = var0;
     var0 = undefined;
     return var0;
 })(undefined, undefined, undefined, undefined, undefined, undefined, []);

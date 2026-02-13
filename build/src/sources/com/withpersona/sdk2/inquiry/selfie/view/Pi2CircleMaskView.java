@@ -155,11 +155,11 @@ public final class Pi2CircleMaskView extends View {
         paint.setColor(0);
         paint.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.CLEAR));
         this.f20471p = paint;
-        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, z0.f53938a, i10, 0);
+        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, z0.f54506a, i10, 0);
         Intrinsics.checkNotNullExpressionValue(obtainStyledAttributes, "obtainStyledAttributes(...)");
         try {
-            this.f20467d = obtainStyledAttributes.getFloat(z0.f53939b, 0.4f);
-            this.f20468e = obtainStyledAttributes.getColor(z0.f53940c, -16777216);
+            this.f20467d = obtainStyledAttributes.getFloat(z0.f54507b, 0.4f);
+            this.f20468e = obtainStyledAttributes.getColor(z0.f54508c, -16777216);
             obtainStyledAttributes.recycle();
             setWillNotDraw(false);
         } catch (Throwable th2) {

@@ -97,7 +97,7 @@ public final class ActionRowComponent extends BaseLayoutComponent {
         compositeEncoder.w(serialDescriptor, 0, actionRowComponent.getType());
         compositeEncoder.y(serialDescriptor, 1, actionRowComponent.getId());
         if (compositeEncoder.z(serialDescriptor, 2) || actionRowComponent.getErrorText() != null) {
-            compositeEncoder.o(serialDescriptor, 2, n2.f50033a, actionRowComponent.getErrorText());
+            compositeEncoder.o(serialDescriptor, 2, n2.f50601a, actionRowComponent.getErrorText());
         }
         compositeEncoder.k(serialDescriptor, 3, (qt.o) lazyArr[3].getValue(), actionRowComponent.components);
     }

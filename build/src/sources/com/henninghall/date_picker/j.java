@@ -3,5 +3,5 @@ package com.henninghall.date_picker;
 public abstract class j {
 
     /* renamed from: a  reason: collision with root package name */
-    public static int f17550a = 2131232475;
+    public static int f17550a = 2131232471;
 }

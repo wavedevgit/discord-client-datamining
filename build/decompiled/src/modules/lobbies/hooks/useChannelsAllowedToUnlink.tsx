@@ -8,22 +8,22 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
     var3 = function arg0() {
-        _fun116107: for (var _fun116107_ip = 0;;) switch (_fun116107_ip) {
+        _fun115404: for (var _fun115404_ip = 0;;) switch (_fun115404_ip) {
             case 0:
                 var3 = arg0;
                 var2 = arguments[1];
                 var1 = arguments[2];
                 var4 = undefined;
                 if (!(var2 === var4)) {
-                    _fun116107_ip = 24;
-                    continue _fun116107
+                    _fun115404_ip = 24;
+                    continue _fun115404
                 }
             case 17:
                 var2 = _closure1_slot2;
             case 24:
                 if (!(var1 === var4)) {
-                    _fun116107_ip = 35;
-                    continue _fun116107
+                    _fun115404_ip = 35;
+                    continue _fun115404
                 }
             case 28:
                 var1 = _closure1_slot4;
@@ -31,8 +31,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var _closure2_slot0 = var1;
                 var1 = null;
                 if (!(var1 != var3)) {
-                    _fun116107_ip = 103;
-                    continue _fun116107
+                    _fun115404_ip = 103;
+                    continue _fun115404
                 }
             case 45:
                 var1 = var2.getChannels;
@@ -62,8 +62,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var0 = var1.bind(var2)(var0);
-                _fun116107_ip = 107;
-                continue _fun116107;
+                _fun115404_ip = 107;
+                continue _fun115404;
             case 103:
                 var0 = new Array(0);
             case 107:
@@ -128,4 +128,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useChannelsAllowedToUnlink = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1673, 3093, 8985, 566, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1676, 3096, 9198, 566, 2]);

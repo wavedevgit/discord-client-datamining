@@ -24,22 +24,22 @@ import kotlin.jvm.internal.Intrinsics;
 public final class i {
 
     /* renamed from: n  reason: collision with root package name */
-    public static final a f38065n = new a(null);
+    public static final a f38633n = new a(null);
 
     /* renamed from: o  reason: collision with root package name */
-    private static final PointF f38066o = new PointF();
+    private static final PointF f38634o = new PointF();
 
     /* renamed from: p  reason: collision with root package name */
-    private static final float[] f38067p = new float[2];
+    private static final float[] f38635p = new float[2];
 
     /* renamed from: q  reason: collision with root package name */
-    private static final Matrix f38068q = new Matrix();
+    private static final Matrix f38636q = new Matrix();
 
     /* renamed from: r  reason: collision with root package name */
-    private static final float[] f38069r = new float[2];
+    private static final float[] f38637r = new float[2];
 
     /* renamed from: s  reason: collision with root package name */
-    private static final Comparator f38070s = new Comparator() { // from class: nn.f
+    private static final Comparator f38638s = new Comparator() { // from class: nn.f
         @Override // java.util.Comparator
         public final int compare(Object obj, Object obj2) {
             int t10;
@@ -49,43 +49,43 @@ public final class i {
     };
 
     /* renamed from: a  reason: collision with root package name */
-    private final ViewGroup f38071a;
+    private final ViewGroup f38639a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final j f38072b;
+    private final j f38640b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final d0 f38073c;
+    private final d0 f38641c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final ViewGroup f38074d;
+    private final ViewGroup f38642d;
 
     /* renamed from: e  reason: collision with root package name */
-    private float f38075e;
+    private float f38643e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final ArrayList f38076f;
+    private final ArrayList f38644f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final ArrayList f38077g;
+    private final ArrayList f38645g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final ArrayList f38078h;
+    private final ArrayList f38646h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final HashSet f38079i;
+    private final HashSet f38647i;
 
     /* renamed from: j  reason: collision with root package name */
-    private boolean f38080j;
+    private boolean f38648j;
 
     /* renamed from: k  reason: collision with root package name */
-    private int f38081k;
+    private int f38649k;
 
     /* renamed from: l  reason: collision with root package name */
-    private boolean f38082l;
+    private boolean f38650l;
 
     /* renamed from: m  reason: collision with root package name */
-    private int f38083m;
+    private int f38651m;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -156,11 +156,11 @@ public final class i {
             float scrollY = (f11 + viewGroup.getScrollY()) - view.getTop();
             Matrix matrix = view.getMatrix();
             if (!matrix.isIdentity()) {
-                float[] fArr = i.f38067p;
+                float[] fArr = i.f38635p;
                 fArr[0] = scrollX;
                 fArr[1] = scrollY;
-                matrix.invert(i.f38068q);
-                i.f38068q.mapPoints(fArr);
+                matrix.invert(i.f38636q);
+                i.f38636q.mapPoints(fArr);
                 float f12 = fArr[0];
                 scrollY = fArr[1];
                 scrollX = f12;
@@ -176,27 +176,27 @@ public final class i {
     public /* synthetic */ class b {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final /* synthetic */ int[] f38084a;
+        public static final /* synthetic */ int[] f38652a;
 
         static {
             int[] iArr = new int[v.values().length];
             try {
-                iArr[v.f38130d.ordinal()] = 1;
+                iArr[v.f38698d.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                iArr[v.f38132i.ordinal()] = 2;
+                iArr[v.f38700i.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                iArr[v.f38131e.ordinal()] = 3;
+                iArr[v.f38699e.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
             try {
-                iArr[v.f38133o.ordinal()] = 4;
+                iArr[v.f38701o.ordinal()] = 4;
             } catch (NoSuchFieldError unused4) {
             }
-            f38084a = iArr;
+            f38652a = iArr;
         }
     }
 
@@ -205,21 +205,21 @@ public final class i {
         Intrinsics.checkNotNullParameter(handlerRegistry, "handlerRegistry");
         Intrinsics.checkNotNullParameter(viewConfigHelper, "viewConfigHelper");
         Intrinsics.checkNotNullParameter(rootView, "rootView");
-        this.f38071a = wrapperView;
-        this.f38072b = handlerRegistry;
-        this.f38073c = viewConfigHelper;
-        this.f38074d = rootView;
-        this.f38076f = new ArrayList();
-        this.f38077g = new ArrayList();
-        this.f38078h = new ArrayList();
-        this.f38079i = new HashSet();
+        this.f38639a = wrapperView;
+        this.f38640b = handlerRegistry;
+        this.f38641c = viewConfigHelper;
+        this.f38642d = rootView;
+        this.f38644f = new ArrayList();
+        this.f38645g = new ArrayList();
+        this.f38646h = new ArrayList();
+        this.f38647i = new HashSet();
     }
 
     private final void C(d dVar, View view) {
-        if (this.f38076f.contains(dVar)) {
+        if (this.f38644f.contains(dVar)) {
             return;
         }
-        this.f38076f.add(dVar);
+        this.f38644f.add(dVar);
         dVar.w0(false);
         dVar.x0(false);
         dVar.v0(Integer.MAX_VALUE);
@@ -228,7 +228,7 @@ public final class i {
 
     private final boolean D(View view, float[] fArr, int i10, MotionEvent motionEvent) {
         boolean z10;
-        ArrayList a10 = this.f38072b.a(view);
+        ArrayList a10 = this.f38640b.a(view);
         if (a10 != null) {
             synchronized (a10) {
                 try {
@@ -243,7 +243,7 @@ public final class i {
                             z10 = true;
                         }
                     }
-                    Unit unit = Unit.f31988a;
+                    Unit unit = Unit.f32556a;
                 } catch (Throwable th2) {
                     throw th2;
                 }
@@ -264,20 +264,20 @@ public final class i {
     }
 
     private final void E() {
-        if (!this.f38080j && this.f38081k == 0) {
+        if (!this.f38648j && this.f38649k == 0) {
             l();
         } else {
-            this.f38082l = true;
+            this.f38650l = true;
         }
     }
 
     private final boolean G(d dVar) {
-        ArrayList<d> arrayList = this.f38076f;
+        ArrayList<d> arrayList = this.f38644f;
         if (arrayList != null && arrayList.isEmpty()) {
             return false;
         }
         for (d dVar2 : arrayList) {
-            if (dVar.Y(dVar2) && dVar2.S() == 4 && !f38065n.h(dVar, dVar2) && dVar.c0(dVar2)) {
+            if (dVar.Y(dVar2) && dVar2.S() == 4 && !f38633n.h(dVar, dVar2) && dVar.c0(dVar2)) {
                 return true;
             }
         }
@@ -285,12 +285,12 @@ public final class i {
     }
 
     private final boolean H(d dVar) {
-        ArrayList<d> arrayList = this.f38076f;
+        ArrayList<d> arrayList = this.f38644f;
         if (arrayList != null && arrayList.isEmpty()) {
             return false;
         }
         for (d dVar2 : arrayList) {
-            if (f38065n.l(dVar, dVar2) && dVar2.S() == 5) {
+            if (f38633n.l(dVar, dVar2) && dVar2.S() == 5) {
                 return true;
             }
         }
@@ -305,7 +305,7 @@ public final class i {
     }
 
     private final boolean J(View view) {
-        if ((view instanceof RNGestureHandlerRootView) && !Intrinsics.areEqual(view, this.f38071a) && ((RNGestureHandlerRootView) view).isRootViewEnabled()) {
+        if ((view instanceof RNGestureHandlerRootView) && !Intrinsics.areEqual(view, this.f38639a) && ((RNGestureHandlerRootView) view).isRootViewEnabled()) {
             return true;
         }
         return false;
@@ -316,7 +316,7 @@ public final class i {
         if (J(view)) {
             return false;
         }
-        int i11 = b.f38084a[this.f38073c.a(view).ordinal()];
+        int i11 = b.f38652a[this.f38641c.a(view).ordinal()];
         if (i11 == 1) {
             return false;
         }
@@ -328,7 +328,7 @@ public final class i {
                     } else {
                         z10 = false;
                     }
-                    if (!D(view, fArr, i10, motionEvent) && !z10 && !f38065n.m(view, fArr)) {
+                    if (!D(view, fArr, i10, motionEvent) && !z10 && !f38633n.m(view, fArr)) {
                         return false;
                     }
                     return true;
@@ -345,7 +345,7 @@ public final class i {
             } else {
                 return D(view, fArr, i10, motionEvent);
             }
-        } else if (!D(view, fArr, i10, motionEvent) && !f38065n.m(view, fArr)) {
+        } else if (!D(view, fArr, i10, motionEvent) && !f38633n.m(view, fArr)) {
             return false;
         } else {
             return true;
@@ -370,56 +370,56 @@ public final class i {
         dVar.p();
         dVar.k();
         dVar.B();
-        return Unit.f31988a;
+        return Unit.f32556a;
     }
 
     private final void h(d dVar) {
-        if (this.f38077g.contains(dVar)) {
+        if (this.f38645g.contains(dVar)) {
             return;
         }
-        this.f38077g.add(dVar);
-        this.f38079i.add(Integer.valueOf(dVar.T()));
+        this.f38645g.add(dVar);
+        this.f38647i.add(Integer.valueOf(dVar.T()));
         dVar.x0(true);
-        int i10 = this.f38083m;
-        this.f38083m = i10 + 1;
+        int i10 = this.f38651m;
+        this.f38651m = i10 + 1;
         dVar.v0(i10);
     }
 
     private final boolean i(View view) {
-        if (view.getVisibility() == 0 && view.getAlpha() >= this.f38075e) {
+        if (view.getVisibility() == 0 && view.getAlpha() >= this.f38643e) {
             return true;
         }
         return false;
     }
 
     private final void j() {
-        for (d dVar : CollectionsKt.h1(CollectionsKt.T(this.f38077g))) {
+        for (d dVar : CollectionsKt.h1(CollectionsKt.T(this.f38645g))) {
             dVar.q();
         }
-        for (d dVar2 : CollectionsKt.T(this.f38076f)) {
+        for (d dVar2 : CollectionsKt.T(this.f38644f)) {
             dVar2.q();
         }
     }
 
     private final void k() {
-        for (d dVar : CollectionsKt.h1(this.f38077g)) {
+        for (d dVar : CollectionsKt.h1(this.f38645g)) {
             if (!dVar.a0()) {
-                this.f38077g.remove(dVar);
-                this.f38079i.remove(Integer.valueOf(dVar.T()));
+                this.f38645g.remove(dVar);
+                this.f38647i.remove(Integer.valueOf(dVar.T()));
             }
         }
     }
 
     private final void l() {
-        for (d dVar : CollectionsKt.T(this.f38076f)) {
-            if (f38065n.i(dVar.S()) && !dVar.a0()) {
+        for (d dVar : CollectionsKt.T(this.f38644f)) {
+            if (f38633n.i(dVar.S()) && !dVar.a0()) {
                 dVar.r0();
                 dVar.w0(false);
                 dVar.x0(false);
                 dVar.v0(Integer.MAX_VALUE);
             }
         }
-        CollectionsKt.J(this.f38076f, new Function1() { // from class: nn.g
+        CollectionsKt.J(this.f38644f, new Function1() { // from class: nn.g
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Object obj) {
                 boolean m10;
@@ -427,13 +427,13 @@ public final class i {
                 return Boolean.valueOf(m10);
             }
         });
-        this.f38082l = false;
+        this.f38650l = false;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final boolean m(d it) {
         Intrinsics.checkNotNullParameter(it, "it");
-        if (f38065n.i(it.S()) && !it.a0()) {
+        if (f38633n.i(it.S()) && !it.a0()) {
             return true;
         }
         return false;
@@ -479,8 +479,8 @@ public final class i {
     }
 
     private final void o(MotionEvent motionEvent) {
-        List<d> j12 = CollectionsKt.j1(this.f38076f);
-        CollectionsKt.A(j12, f38070s);
+        List<d> j12 = CollectionsKt.j1(this.f38644f);
+        CollectionsKt.A(j12, f38638s);
         for (d dVar : j12) {
             n(dVar, motionEvent);
         }
@@ -494,7 +494,7 @@ public final class i {
                     break;
                 }
                 ViewGroup viewGroup = (ViewGroup) parent;
-                ArrayList a10 = this.f38072b.a((View) parent);
+                ArrayList a10 = this.f38640b.a((View) parent);
                 if (a10 != null) {
                     synchronized (a10) {
                         try {
@@ -508,7 +508,7 @@ public final class i {
                                     z10 = true;
                                 }
                             }
-                            Unit unit = Unit.f31988a;
+                            Unit unit = Unit.f32556a;
                         } catch (Throwable th2) {
                             throw th2;
                         }
@@ -524,11 +524,11 @@ public final class i {
     private final void q(MotionEvent motionEvent) {
         int actionIndex = motionEvent.getActionIndex();
         int pointerId = motionEvent.getPointerId(actionIndex);
-        float[] fArr = f38069r;
+        float[] fArr = f38637r;
         fArr[0] = motionEvent.getX(actionIndex);
         fArr[1] = motionEvent.getY(actionIndex);
-        M(this.f38071a, fArr, pointerId, motionEvent);
-        r(this.f38071a, fArr, pointerId, motionEvent);
+        M(this.f38639a, fArr, pointerId, motionEvent);
+        r(this.f38639a, fArr, pointerId, motionEvent);
     }
 
     private final boolean r(ViewGroup viewGroup, float[] fArr, int i10, MotionEvent motionEvent) {
@@ -539,10 +539,10 @@ public final class i {
         }
         int childCount = viewGroup.getChildCount() - 1;
         while (-1 < childCount) {
-            View c10 = this.f38073c.c(viewGroup, childCount);
+            View c10 = this.f38641c.c(viewGroup, childCount);
             if (i(c10)) {
-                PointF pointF = f38066o;
-                a aVar = f38065n;
+                PointF pointF = f38634o;
+                a aVar = f38633n;
                 viewGroup2 = viewGroup;
                 aVar.n(fArr[0], fArr[1], viewGroup2, c10, pointF);
                 float f10 = fArr[0];
@@ -589,12 +589,12 @@ public final class i {
     }
 
     private final boolean u(d dVar) {
-        ArrayList<d> arrayList = this.f38076f;
+        ArrayList<d> arrayList = this.f38644f;
         if (arrayList != null && arrayList.isEmpty()) {
             return false;
         }
         for (d dVar2 : arrayList) {
-            a aVar = f38065n;
+            a aVar = f38633n;
             if (!aVar.i(dVar2.S()) && aVar.l(dVar, dVar2)) {
                 return true;
             }
@@ -603,7 +603,7 @@ public final class i {
     }
 
     private final boolean w(View view) {
-        if ((view instanceof ViewGroup) && !this.f38073c.b((ViewGroup) view)) {
+        if ((view instanceof ViewGroup) && !this.f38641c.b((ViewGroup) view)) {
             return false;
         }
         return true;
@@ -613,14 +613,14 @@ public final class i {
         if (view == null) {
             return false;
         }
-        if (view == this.f38071a) {
+        if (view == this.f38639a) {
             return true;
         }
         ViewParent parent = view.getParent();
-        while (parent != null && parent != this.f38071a) {
+        while (parent != null && parent != this.f38639a) {
             parent = parent.getParent();
         }
-        if (parent != this.f38071a) {
+        if (parent != this.f38639a) {
             return false;
         }
         return true;
@@ -638,7 +638,7 @@ public final class i {
             return false;
         }
         Matrix matrix = view.getMatrix();
-        float[] fArr = f38067p;
+        float[] fArr = f38635p;
         fArr[0] = 0.0f;
         fArr[1] = 0.0f;
         matrix.mapPoints(fArr);
@@ -655,16 +655,16 @@ public final class i {
         dVar.x0(false);
         dVar.w0(true);
         dVar.H0(true);
-        int i10 = this.f38083m;
-        this.f38083m = i10 + 1;
+        int i10 = this.f38651m;
+        this.f38651m = i10 + 1;
         dVar.v0(i10);
-        for (d dVar2 : CollectionsKt.T(this.f38076f)) {
-            if (f38065n.k(dVar2, dVar)) {
+        for (d dVar2 : CollectionsKt.T(this.f38644f)) {
+            if (f38633n.k(dVar2, dVar)) {
                 dVar2.q();
             }
         }
-        for (d dVar3 : CollectionsKt.T(this.f38077g)) {
-            if (f38065n.k(dVar3, dVar)) {
+        for (d dVar3 : CollectionsKt.T(this.f38645g)) {
+            if (f38633n.k(dVar3, dVar)) {
                 dVar3.x0(false);
             }
         }
@@ -682,10 +682,10 @@ public final class i {
 
     public final void A(d handler, int i10, int i11) {
         Intrinsics.checkNotNullParameter(handler, "handler");
-        this.f38081k++;
-        if (f38065n.i(i10)) {
-            for (d dVar : CollectionsKt.h1(this.f38077g)) {
-                if (f38065n.l(dVar, handler) && this.f38079i.contains(Integer.valueOf(dVar.T()))) {
+        this.f38649k++;
+        if (f38633n.i(i10)) {
+            for (d dVar : CollectionsKt.h1(this.f38645g)) {
+                if (f38633n.l(dVar, handler) && this.f38647i.contains(Integer.valueOf(dVar.T()))) {
                     if (i10 == 5) {
                         dVar.q();
                         if (dVar.S() == 5) {
@@ -710,7 +710,7 @@ public final class i {
         } else if (i11 == 4 && (i10 == 3 || i10 == 1)) {
             handler.w(i10, 2);
         }
-        this.f38081k--;
+        this.f38649k--;
         E();
     }
 
@@ -728,7 +728,7 @@ public final class i {
             java.lang.String r0 = "event"
             kotlin.jvm.internal.Intrinsics.checkNotNullParameter(r5, r0)
             r0 = 1
-            r4.f38080j = r0
+            r4.f38648j = r0
             int r1 = r5.getActionMasked()
             r2 = 3
             if (r1 == 0) goto L1c
@@ -746,10 +746,10 @@ public final class i {
         L1f:
             r4.o(r5)
             r3 = 0
-            r4.f38080j = r3
-            boolean r3 = r4.f38082l
+            r4.f38648j = r3
+            boolean r3 = r4.f38650l
             if (r3 == 0) goto L30
-            int r3 = r4.f38081k
+            int r3 = r4.f38649k
             if (r3 != 0) goto L30
             r4.l()
         L30:
@@ -759,10 +759,10 @@ public final class i {
             if (r1 == r2) goto L39
             goto L4d
         L39:
-            java.util.ArrayList r1 = r4.f38076f
+            java.util.ArrayList r1 = r4.f38644f
             boolean r1 = r1.isEmpty()
             if (r1 == 0) goto L4d
-            android.view.ViewGroup r1 = r4.f38074d
+            android.view.ViewGroup r1 = r4.f38642d
             boolean r2 = r1 instanceof com.facebook.react.uimanager.RootView
             if (r2 == 0) goto L4d
             r2 = r1
@@ -775,7 +775,7 @@ public final class i {
     }
 
     public final void F(float f10) {
-        this.f38075e = f10;
+        this.f38643e = f10;
     }
 
     public final MotionEvent K(View view, MotionEvent event) {
@@ -788,7 +788,7 @@ public final class i {
             } else {
                 viewGroup = null;
             }
-            if (!Intrinsics.areEqual(viewGroup, this.f38071a)) {
+            if (!Intrinsics.areEqual(viewGroup, this.f38639a)) {
                 K(viewGroup, event);
             }
             if (viewGroup != null) {
@@ -796,7 +796,7 @@ public final class i {
             }
             if (!view.getMatrix().isIdentity()) {
                 Matrix matrix = view.getMatrix();
-                Matrix matrix2 = f38068q;
+                Matrix matrix2 = f38636q;
                 matrix.invert(matrix2);
                 event.transform(matrix2);
             }
@@ -814,7 +814,7 @@ public final class i {
             } else {
                 viewGroup = null;
             }
-            if (!Intrinsics.areEqual(viewGroup, this.f38071a)) {
+            if (!Intrinsics.areEqual(viewGroup, this.f38639a)) {
                 L(viewGroup, point);
             }
             if (viewGroup != null) {
@@ -823,9 +823,9 @@ public final class i {
             }
             if (!view.getMatrix().isIdentity()) {
                 Matrix matrix = view.getMatrix();
-                Matrix matrix2 = f38068q;
+                Matrix matrix2 = f38636q;
                 matrix.invert(matrix2);
-                float[] fArr = f38069r;
+                float[] fArr = f38637r;
                 fArr[0] = point.x;
                 fArr[1] = point.y;
                 matrix2.mapPoints(fArr);
@@ -838,7 +838,7 @@ public final class i {
 
     public final void f(View view) {
         Intrinsics.checkNotNullParameter(view, "view");
-        ArrayList<d> a10 = this.f38072b.a(view);
+        ArrayList<d> a10 = this.f38640b.a(view);
         if (a10 != null) {
             for (final d dVar : a10) {
                 if (dVar instanceof q) {
@@ -858,11 +858,11 @@ public final class i {
 
     public final ArrayList s(View view) {
         Intrinsics.checkNotNullParameter(view, "view");
-        return this.f38072b.a(view);
+        return this.f38640b.a(view);
     }
 
     public final boolean v() {
-        ArrayList<d> arrayList = this.f38076f;
+        ArrayList<d> arrayList = this.f38644f;
         if (arrayList != null && arrayList.isEmpty()) {
             return false;
         }

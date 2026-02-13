@@ -1,22 +1,24 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var1 = function(arg0) { // Environment: var0
-        _fun95012: for (var _fun95012_ip = 0;;) switch (_fun95012_ip) {
+        _fun95044: for (var _fun95044_ip = 0;;) switch (_fun95044_ip) {
             case 0:
-                var2 = arg0;
-                var1 = '+';
-                if (!(var1 !== var2)) {
-                    _fun95012_ip = 23;
-                    continue _fun95012
+                var1 = arg0;
+                var0 = var1.preventDefault;
+                if (var0) {
+                    _fun95044_ip = 22;
+                    continue _fun95044
                 }
-            case 11:
-                var0 = var2.split;
-                var0 = var0.bind(var2)(var1);
-                _fun95012_ip = 33;
-                continue _fun95012;
-            case 23:
-                var0 = ['+'];
-            case 33:
+            case 12:
+                var0 = false;
+                var1.returnValue = var0;
+                _fun95044_ip = 32;
+                continue _fun95044;
+            case 22:
+                var0 = var1.preventDefault;
+                var0 = var0.bind(var1)();
+            case 32:
+                var0 = undefined;
                 return var0;
         }
     };

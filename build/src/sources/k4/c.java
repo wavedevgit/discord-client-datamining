@@ -10,31 +10,31 @@ import kotlin.jvm.internal.Intrinsics;
 public abstract class c {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final int f31486a = 8;
+    private static final int f32054a = 8;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a implements ThreadFactory {
 
         /* renamed from: a  reason: collision with root package name */
-        private final AtomicInteger f31487a = new AtomicInteger(0);
+        private final AtomicInteger f32055a = new AtomicInteger(0);
 
         /* renamed from: b  reason: collision with root package name */
-        final /* synthetic */ boolean f31488b;
+        final /* synthetic */ boolean f32056b;
 
         a(boolean z10) {
-            this.f31488b = z10;
+            this.f32056b = z10;
         }
 
         @Override // java.util.concurrent.ThreadFactory
         public Thread newThread(Runnable runnable) {
             String str;
             Intrinsics.checkNotNullParameter(runnable, "runnable");
-            if (this.f31488b) {
+            if (this.f32056b) {
                 str = "WM.task-";
             } else {
                 str = "androidx.work-";
             }
-            return new Thread(runnable, str + this.f31487a.incrementAndGet());
+            return new Thread(runnable, str + this.f32055a.incrementAndGet());
         }
     }
 
@@ -46,6 +46,6 @@ public abstract class c {
     }
 
     public static final int c() {
-        return f31486a;
+        return f32054a;
     }
 }

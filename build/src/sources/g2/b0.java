@@ -40,7 +40,7 @@ public final class b0 extends h {
     private b0(String str, Bundle bundle) {
         super("androidx.credentials.TYPE_DIGITAL_CREDENTIAL", bundle);
         this.f24648d = str;
-        if (!k2.c.f31480a.a(str)) {
+        if (!k2.c.f32048a.a(str)) {
             throw new IllegalArgumentException("credentialJson must not be empty, and must be a valid JSON");
         }
     }

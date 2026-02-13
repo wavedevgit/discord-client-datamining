@@ -5,19 +5,19 @@ import kotlinx.coroutines.CoroutineDispatcher;
 public final class m0 {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final m0 f55803a = new m0();
+    public static final m0 f56371a = new m0();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final CoroutineDispatcher f55804b = ft.c.f24365t;
+    private static final CoroutineDispatcher f56372b = ft.c.f24365t;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final CoroutineDispatcher f55805c = kotlinx.coroutines.h0.f35043i;
+    private static final CoroutineDispatcher f56373c = kotlinx.coroutines.h0.f35611i;
 
     private m0() {
     }
 
     public static final CoroutineDispatcher a() {
-        return f55804b;
+        return f56372b;
     }
 
     public static final CoroutineDispatcher b() {

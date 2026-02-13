@@ -2,17 +2,17 @@
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var4 = require;
-    var11 = metroImportDefault;
+    var10 = metroImportDefault;
     var2 = exports;
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
-    var _closure1_slot1 = var11;
+    var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
     var0 = function arg0() {
         var0 = arg0;
-        var9 = var0.title;
-        var8 = var0.disabledTitle;
-        var7 = var0.description;
+        var10 = var0.title;
+        var9 = var0.disabledTitle;
+        var8 = var0.description;
         var1 = var0.onButtonClick;
         var _closure2_slot0 = var1;
         var0 = var0.trackSettingsUpsellsAction;
@@ -31,15 +31,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = var1[var0];
         var _closure2_slot2 = var0;
         var1 = _closure1_slot1;
-        var10 = _closure1_slot2;
-        var0 = 9;
-        var0 = var10[var0];
+        var7 = _closure1_slot2;
+        var0 = 8;
+        var0 = var7[var0];
         var2 = var1.bind(var3)(var0);
         var0 = function() { // Environment: var5
             var2 = _closure2_slot1;
             var3 = _closure1_slot0;
             var1 = _closure1_slot2;
-            var0 = 10;
+            var0 = 9;
             var1 = var1[var0];
             var0 = undefined;
             var1 = var3.bind(var0)(var1);
@@ -50,13 +50,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         };
         var0 = var2.bind(var3)(var0);
         var2 = _closure1_slot9;
-        var0 = 11;
-        var0 = var10[var0];
+        var0 = 10;
+        var0 = var7[var0];
         var1 = var1.bind(var3)(var0);
         var0 = {};
-        var0.title = var9;
-        var0.disabledTitle = var8;
-        var0.description = var7;
+        var0.title = var10;
+        var0.disabledTitle = var9;
+        var0.description = var8;
         var0.disabled = var6;
         var5 = function() {
             var2 = _closure2_slot0;
@@ -68,7 +68,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2 = _closure2_slot1;
             var3 = _closure1_slot0;
             var4 = _closure1_slot2;
-            var1 = 10;
+            var1 = 9;
             var1 = var4[var1];
             var1 = var3.bind(var0)(var1);
             var1 = var1.TrackIarSettingsUpsellsActionType;
@@ -77,12 +77,19 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             return var0;
         };
         var0.onPress = var5;
-        var4 = _closure1_slot12;
+        var6 = _closure1_slot9;
+        var5 = _closure1_slot0;
+        var4 = 11;
+        var4 = var7[var4];
+        var4 = var5.bind(var3)(var4);
+        var5 = var4.SettingsIcon;
+        var4 = {};
+        var4 = var6.bind(var3)(var5, var4);
         var0.icon = var4;
         var0 = var2.bind(var3)(var1, var0);
         return var0;
     };
-    var _closure1_slot13 = var0;
+    var _closure1_slot12 = var0;
     var0 = global;
     var7 = var0.Object;
     var6 = var7.defineProperty;
@@ -94,7 +101,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = 0;
     var3 = var5[var0];
     var0 = undefined;
-    var3 = var11.bind(var0)(var3);
+    var3 = var10.bind(var0)(var3);
     var _closure1_slot3 = var3;
     var3 = 1;
     var6 = var5[var3];
@@ -108,7 +115,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot5 = var3;
     var3 = 3;
     var3 = var5[var3];
-    var3 = var11.bind(var0)(var3);
+    var3 = var10.bind(var0)(var3);
     var _closure1_slot6 = var3;
     var3 = 4;
     var3 = var5[var3];
@@ -120,48 +127,41 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 5;
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
-    var7 = var3.jsx;
-    var _closure1_slot9 = var7;
+    var6 = var3.jsx;
+    var _closure1_slot9 = var6;
     var3 = var3.jsxs;
     var _closure1_slot10 = var3;
     var3 = 6;
     var3 = var5[var3];
-    var8 = var4.bind(var0)(var3);
-    var6 = var8.createStyles;
+    var7 = var4.bind(var0)(var3);
+    var6 = var7.createStyles;
     var3 = {};
-    var9 = {};
-    var10 = 7;
-    var12 = var5[var10];
-    var12 = var11.bind(var0)(var12);
-    var12 = var12.spacing;
-    var12 = var12.PX_16;
-    var9.paddingHorizontal = var12;
-    var3.container = var9;
-    var9 = {};
-    var12 = '100%';
-    var9.width = var12;
-    var12 = var5[var10];
-    var12 = var11.bind(var0)(var12);
-    var12 = var12.spacing;
-    var12 = var12.PX_8;
-    var9.marginBottom = var12;
-    var3.settingsContainer = var9;
-    var9 = {};
-    var10 = var5[var10];
-    var10 = var11.bind(var0)(var10);
-    var10 = var10.spacing;
-    var10 = var10.PX_4;
-    var9.marginTop = var10;
-    var3.goToSettingsText = var9;
-    var3 = var6.bind(var8)(var3);
+    var8 = {};
+    var9 = 7;
+    var11 = var5[var9];
+    var11 = var10.bind(var0)(var11);
+    var11 = var11.spacing;
+    var11 = var11.PX_16;
+    var8.paddingHorizontal = var11;
+    var3.container = var8;
+    var8 = {};
+    var11 = '100%';
+    var8.width = var11;
+    var11 = var5[var9];
+    var11 = var10.bind(var0)(var11);
+    var11 = var11.spacing;
+    var11 = var11.PX_8;
+    var8.marginBottom = var11;
+    var3.settingsContainer = var8;
+    var8 = {};
+    var9 = var5[var9];
+    var9 = var10.bind(var0)(var9);
+    var9 = var9.spacing;
+    var9 = var9.PX_4;
+    var8.marginTop = var9;
+    var3.goToSettingsText = var8;
+    var3 = var6.bind(var7)(var3);
     var _closure1_slot11 = var3;
-    var3 = 8;
-    var3 = var5[var3];
-    var3 = var4.bind(var0)(var3);
-    var6 = var3.SettingsIcon;
-    var3 = {};
-    var3 = var7.bind(var0)(var6, var3);
-    var _closure1_slot12 = var3;
     var3 = 19;
     var3 = var5[var3];
     var5 = var4.bind(var0)(var3);
@@ -169,7 +169,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/in_app_reports/native/components/InAppReportsSettingsUpsellsElement.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun93271: for (var _fun93271_ip = 0;;) switch (_fun93271_ip) {
+        _fun93297: for (var _fun93297_ip = 0;;) switch (_fun93297_ip) {
             case 0:
                 var0 = arg0;
                 var9 = var0.settingsUpsells;
@@ -211,8 +211,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12 = var0 == var10;
                 var1 = undefined;
                 if (var12) {
-                    _fun93271_ip = 155;
-                    continue _fun93271
+                    _fun93297_ip = 155;
+                    continue _fun93297
                 }
             case 150:
                 var1 = var10.type;
@@ -220,7 +220,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var18 = var2.bind(var8)(var9, var1);
                 var2 = _closure1_slot0;
                 var8 = _closure1_slot2;
-                var1 = 10;
+                var1 = 9;
                 var1 = var8[var1];
                 var2 = var2.bind(var4)(var1);
                 var1 = var2.useTrackSettingsUpsellsAction;
@@ -230,8 +230,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = 0;
                 var0 = null;
                 if (!(var1 !== var2)) {
-                    _fun93271_ip = 508;
-                    continue _fun93271
+                    _fun93297_ip = 508;
+                    continue _fun93297
                 }
             case 214:
                 var3 = _closure1_slot10;
@@ -271,7 +271,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var6 = var0.getDescription;
                     var5 = var0.onApply;
                     var3 = _closure1_slot9;
-                    var2 = _closure1_slot13;
+                    var2 = _closure1_slot12;
                     var1 = {};
                     var0 = undefined;
                     var8 = var8.bind(var0)();
@@ -343,7 +343,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1.report_type = var8;
                     var5 = _closure2_slot4;
                     var1.report_subtype = var5;
-                    var5 = 10;
+                    var5 = 9;
                     var5 = var7[var5];
                     var5 = var6.bind(var0)(var5);
                     var5 = var5.TrackIarSettingsUpsellsActionType;
@@ -365,4 +365,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 1372, 660, 33, 1297, 671, 5434, 4109, 6590, 12180, 566, 6597, 5343, 1234, 5384, 6002, 4308, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 1372, 660, 33, 1297, 671, 4109, 6572, 12159, 5429, 566, 6579, 5423, 1235, 5390, 5981, 4308, 2]);

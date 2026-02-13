@@ -25,18 +25,17 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 1;
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
-    var7 = var3.StyleSheet;
-    var3 = 2;
-    var3 = var5[var3];
-    var3 = var4.bind(var0)(var3);
     var3 = var3.DEFAULT_ROLE_COLOR;
     var _closure1_slot4 = var3;
-    var3 = 3;
+    var3 = 2;
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
     var3 = var3.jsx;
     var _closure1_slot5 = var3;
-    var6 = var7.create;
+    var3 = 3;
+    var3 = var5[var3];
+    var7 = var4.bind(var0)(var3);
+    var6 = var7.createStyles;
     var3 = {};
     var8 = {
         'marginHorizontal': 0,
@@ -56,14 +55,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'components_native/common/color_picker/FormRoleColorPicker.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun101396: for (var _fun101396_ip = 0;;) switch (_fun101396_ip) {
+        _fun101509: for (var _fun101509_ip = 0;;) switch (_fun101509_ip) {
             case 0:
                 var1 = arg0;
                 var8 = var1.color;
                 var3 = undefined;
                 if (!(var8 === var3)) {
-                    _fun101396_ip = 23;
-                    continue _fun101396
+                    _fun101509_ip = 23;
+                    continue _fun101509
                 }
             case 16:
                 var8 = _closure1_slot4;
@@ -71,19 +70,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var _closure2_slot0 = var8;
                 var5 = var1.disabled;
                 if (!(var5 === var3)) {
-                    _fun101396_ip = 38;
-                    continue _fun101396
+                    _fun101509_ip = 38;
+                    continue _fun101509
                 }
             case 36:
                 var5 = false;
             case 38:
-                var6 = var1.onChange;
-                var _closure2_slot1 = var6;
+                var7 = var1.onChange;
+                var _closure2_slot1 = var7;
+                var1 = _closure1_slot6;
+                var11 = var1.bind(var3)();
                 var4 = _closure1_slot3;
                 var2 = var4.useCallback;
                 var1 = new Array(2);
                 var1[0] = var8;
-                var1[1] = var6;
+                var1[1] = var7;
                 var0 = function() { // Environment: var0
                     var4 = _closure1_slot1;
                     var1 = _closure1_slot2;
@@ -124,7 +125,6 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var10.bind(var3)(var6);
                 var6 = {};
                 var6.color = var8;
-                var11 = _closure1_slot6;
                 var11 = var11.rowColorBlock;
                 var6.style = var11;
                 var6.onSelect = var4;
@@ -144,4 +144,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 660, 33, 3279, 13184, 1307, 5441, 10140, 668, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 660, 33, 1297, 3282, 13188, 1307, 5438, 10235, 668, 2]);

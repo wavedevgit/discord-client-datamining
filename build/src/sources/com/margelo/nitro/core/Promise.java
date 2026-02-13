@@ -107,12 +107,12 @@ public final class Promise<T> {
                 } catch (Throwable th2) {
                     this.f18123i.reject(th2);
                 }
-                return Unit.f31988a;
+                return Unit.f32556a;
             }
 
             @Override // kotlin.jvm.functions.Function2
             public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-                return ((C0206a) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
+                return ((C0206a) create(coroutineScope, continuation)).invokeSuspend(Unit.f32556a);
             }
         }
 
@@ -156,7 +156,7 @@ public final class Promise<T> {
         @Override // kotlin.jvm.functions.Function1
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             a(obj);
-            return Unit.f31988a;
+            return Unit.f32556a;
         }
     }
 
@@ -173,14 +173,14 @@ public final class Promise<T> {
         public final void a(Throwable error) {
             Intrinsics.checkNotNullParameter(error, "error");
             Continuation continuation = this.f18125d;
-            Result.a aVar = Result.f31985e;
+            Result.a aVar = Result.f32553e;
             continuation.resumeWith(Result.b(kotlin.c.a(error)));
         }
 
         @Override // kotlin.jvm.functions.Function1
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             a((Throwable) obj);
-            return Unit.f31988a;
+            return Unit.f32556a;
         }
     }
 

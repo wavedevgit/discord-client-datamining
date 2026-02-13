@@ -12,27 +12,27 @@ import com.facebook.react.views.view.ReactViewGroup;
 public class a extends ReactViewGroup {
 
     /* renamed from: d  reason: collision with root package name */
-    private Bitmap f41097d;
+    private Bitmap f41665d;
 
     /* renamed from: e  reason: collision with root package name */
-    private boolean f41098e;
+    private boolean f41666e;
 
     /* renamed from: i  reason: collision with root package name */
-    private Paint f41099i;
+    private Paint f41667i;
 
     /* renamed from: o  reason: collision with root package name */
-    private PorterDuffXfermode f41100o;
+    private PorterDuffXfermode f41668o;
 
     /* renamed from: p  reason: collision with root package name */
-    private int f41101p;
+    private int f41669p;
 
     public a(Context context) {
         super(context);
-        this.f41097d = null;
-        this.f41098e = false;
-        this.f41101p = 2;
-        this.f41099i = new Paint(1);
-        this.f41100o = new PorterDuffXfermode(PorterDuff.Mode.DST_IN);
+        this.f41665d = null;
+        this.f41666e = false;
+        this.f41669p = 2;
+        this.f41667i = new Paint(1);
+        this.f41668o = new PorterDuffXfermode(PorterDuff.Mode.DST_IN);
     }
 
     public static Bitmap d(View view) {
@@ -49,11 +49,11 @@ public class a extends ReactViewGroup {
         View childAt = getChildAt(0);
         if (childAt != null) {
             childAt.setVisibility(0);
-            Bitmap bitmap = this.f41097d;
+            Bitmap bitmap = this.f41665d;
             if (bitmap != null) {
                 bitmap.recycle();
             }
-            this.f41097d = d(childAt);
+            this.f41665d = d(childAt);
             childAt.setVisibility(4);
         }
     }
@@ -62,15 +62,15 @@ public class a extends ReactViewGroup {
     @Override // com.facebook.react.views.view.ReactViewGroup, android.view.ViewGroup, android.view.View
     public void dispatchDraw(Canvas canvas) {
         super.dispatchDraw(canvas);
-        if (this.f41098e) {
+        if (this.f41666e) {
             e();
-            this.f41098e = false;
+            this.f41666e = false;
         }
-        if (this.f41097d != null) {
-            setLayerType(this.f41101p, this.f41099i);
-            this.f41099i.setXfermode(this.f41100o);
-            canvas.drawBitmap(this.f41097d, 0.0f, 0.0f, this.f41099i);
-            this.f41099i.setXfermode(null);
+        if (this.f41665d != null) {
+            setLayerType(this.f41669p, this.f41667i);
+            this.f41667i.setXfermode(this.f41668o);
+            canvas.drawBitmap(this.f41665d, 0.0f, 0.0f, this.f41667i);
+            this.f41667i.setXfermode(null);
         }
     }
 
@@ -78,15 +78,15 @@ public class a extends ReactViewGroup {
     @Override // com.facebook.react.views.view.ReactViewGroup, android.view.ViewGroup, android.view.View
     public void onAttachedToWindow() {
         super.onAttachedToWindow();
-        this.f41098e = true;
+        this.f41666e = true;
     }
 
     @Override // android.view.ViewGroup, android.view.ViewParent
     public void onDescendantInvalidated(View view, View view2) {
         View childAt;
         super.onDescendantInvalidated(view, view2);
-        if (!this.f41098e && (childAt = getChildAt(0)) != null && childAt.equals(view)) {
-            this.f41098e = true;
+        if (!this.f41666e && (childAt = getChildAt(0)) != null && childAt.equals(view)) {
+            this.f41666e = true;
         }
         invalidate();
     }
@@ -96,7 +96,7 @@ public class a extends ReactViewGroup {
     public void onLayout(boolean z10, int i10, int i11, int i12, int i13) {
         super.onLayout(z10, i10, i11, i12, i13);
         if (z10) {
-            this.f41098e = true;
+            this.f41666e = true;
         }
     }
 
@@ -107,6 +107,6 @@ public class a extends ReactViewGroup {
         } else {
             i10 = 2;
         }
-        this.f41101p = i10;
+        this.f41669p = i10;
     }
 }

@@ -28,19 +28,19 @@ import ys.m0;
 public final class b {
 
     /* renamed from: e  reason: collision with root package name */
-    public static final a f38212e = new a(null);
+    public static final a f38780e = new a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final File f38213a;
+    private final File f38781a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final SimpleDateFormat f38214b;
+    private final SimpleDateFormat f38782b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final CoroutineScope f38215c;
+    private final CoroutineScope f38783c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final CoroutineDispatcher f38216d;
+    private final CoroutineDispatcher f38784d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -58,47 +58,47 @@ public final class b {
     public static final class C0538b extends k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f38217d;
+        int f38785d;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ np.a f38219i;
+        final /* synthetic */ np.a f38787i;
 
         /* renamed from: o  reason: collision with root package name */
-        final /* synthetic */ String f38220o;
+        final /* synthetic */ String f38788o;
 
         /* renamed from: p  reason: collision with root package name */
-        final /* synthetic */ String f38221p;
+        final /* synthetic */ String f38789p;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         C0538b(np.a aVar, String str, String str2, Continuation continuation) {
             super(2, continuation);
-            this.f38219i = aVar;
-            this.f38220o = str;
-            this.f38221p = str2;
+            this.f38787i = aVar;
+            this.f38788o = str;
+            this.f38789p = str2;
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
-            return new C0538b(this.f38219i, this.f38220o, this.f38221p, continuation);
+            return new C0538b(this.f38787i, this.f38788o, this.f38789p, continuation);
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
             gs.b.f();
-            if (this.f38217d == 0) {
+            if (this.f38785d == 0) {
                 kotlin.c.b(obj);
                 try {
-                    File parentFile = b.this.f38213a.getParentFile();
+                    File parentFile = b.this.f38781a.getParentFile();
                     if (parentFile != null) {
                         kotlin.coroutines.jvm.internal.b.a(parentFile.mkdirs());
                     }
-                    String str = this.f38219i.name() + "," + b.this.f38214b.format(new Date()) + "," + this.f38220o + "," + this.f38221p;
-                    FileWriter fileWriter = new FileWriter(b.this.f38213a, true);
+                    String str = this.f38787i.name() + "," + b.this.f38782b.format(new Date()) + "," + this.f38788o + "," + this.f38789p;
+                    FileWriter fileWriter = new FileWriter(b.this.f38781a, true);
                     Writer append = fileWriter.append((CharSequence) str);
                     ls.c.a(fileWriter, null);
                     return append;
                 } catch (Exception unused) {
-                    return Unit.f31988a;
+                    return Unit.f32556a;
                 }
             }
             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
@@ -106,7 +106,7 @@ public final class b {
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((C0538b) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
+            return ((C0538b) create(coroutineScope, continuation)).invokeSuspend(Unit.f32556a);
         }
     }
 
@@ -114,7 +114,7 @@ public final class b {
     static final class c extends k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f38222d;
+        int f38790d;
 
         c(Continuation continuation) {
             super(2, continuation);
@@ -128,12 +128,12 @@ public final class b {
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
             gs.b.f();
-            if (this.f38222d == 0) {
+            if (this.f38790d == 0) {
                 kotlin.c.b(obj);
                 try {
-                    return kotlin.coroutines.jvm.internal.b.a(b.this.f38213a.delete());
+                    return kotlin.coroutines.jvm.internal.b.a(b.this.f38781a.delete());
                 } catch (Exception unused) {
-                    return Unit.f31988a;
+                    return Unit.f32556a;
                 }
             }
             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
@@ -141,7 +141,7 @@ public final class b {
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((c) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
+            return ((c) create(coroutineScope, continuation)).invokeSuspend(Unit.f32556a);
         }
     }
 
@@ -149,38 +149,38 @@ public final class b {
     static final class d extends k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f38224d;
+        int f38792d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ String f38225e;
+        final /* synthetic */ String f38793e;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ b f38226i;
+        final /* synthetic */ b f38794i;
 
         /* renamed from: o  reason: collision with root package name */
-        final /* synthetic */ String f38227o;
+        final /* synthetic */ String f38795o;
 
         /* renamed from: p  reason: collision with root package name */
-        final /* synthetic */ np.a f38228p;
+        final /* synthetic */ np.a f38796p;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         d(String str, b bVar, String str2, np.a aVar, Continuation continuation) {
             super(2, continuation);
-            this.f38225e = str;
-            this.f38226i = bVar;
-            this.f38227o = str2;
-            this.f38228p = aVar;
+            this.f38793e = str;
+            this.f38794i = bVar;
+            this.f38795o = str2;
+            this.f38796p = aVar;
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
-            return new d(this.f38225e, this.f38226i, this.f38227o, this.f38228p, continuation);
+            return new d(this.f38793e, this.f38794i, this.f38795o, this.f38796p, continuation);
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
             Object f10 = gs.b.f();
-            int i10 = this.f38224d;
+            int i10 = this.f38792d;
             if (i10 != 0) {
                 if (i10 == 1) {
                     kotlin.c.b(obj);
@@ -189,21 +189,21 @@ public final class b {
                 }
             } else {
                 kotlin.c.b(obj);
-                String J = StringsKt.J(this.f38225e, ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE, "\\n", false, 4, null);
-                b bVar = this.f38226i;
-                String str = this.f38227o;
-                np.a aVar = this.f38228p;
-                this.f38224d = 1;
+                String J = StringsKt.J(this.f38793e, ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE, "\\n", false, 4, null);
+                b bVar = this.f38794i;
+                String str = this.f38795o;
+                np.a aVar = this.f38796p;
+                this.f38792d = 1;
                 if (bVar.a(str, aVar, J, this) == f10) {
                     return f10;
                 }
             }
-            return Unit.f31988a;
+            return Unit.f32556a;
         }
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((d) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
+            return ((d) create(coroutineScope, continuation)).invokeSuspend(Unit.f32556a);
         }
     }
 
@@ -211,19 +211,19 @@ public final class b {
     static final class e extends k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f38229d;
+        int f38797d;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ String f38231i;
+        final /* synthetic */ String f38799i;
 
         /* renamed from: o  reason: collision with root package name */
-        final /* synthetic */ np.a f38232o;
+        final /* synthetic */ np.a f38800o;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         e(String str, np.a aVar, Continuation continuation) {
             super(2, continuation);
-            this.f38231i = str;
-            this.f38232o = aVar;
+            this.f38799i = str;
+            this.f38800o = aVar;
         }
 
         /* JADX INFO: Access modifiers changed from: private */
@@ -234,27 +234,27 @@ public final class b {
                 sb2.append(str2);
                 sb2.append(ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE);
             }
-            return Unit.f31988a;
+            return Unit.f32556a;
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
-            return new e(this.f38231i, this.f38232o, continuation);
+            return new e(this.f38799i, this.f38800o, continuation);
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
             gs.b.f();
-            if (this.f38229d == 0) {
+            if (this.f38797d == 0) {
                 kotlin.c.b(obj);
                 try {
-                    if (!b.this.f38213a.exists()) {
+                    if (!b.this.f38781a.exists()) {
                         return null;
                     }
                     final StringBuilder sb2 = new StringBuilder();
-                    File file = b.this.f38213a;
-                    final String str = this.f38231i;
-                    final np.a aVar = this.f38232o;
+                    File file = b.this.f38781a;
+                    final String str = this.f38799i;
+                    final np.a aVar = this.f38800o;
                     j.f(file, null, new Function1() { // from class: np.c
                         @Override // kotlin.jvm.functions.Function1
                         public final Object invoke(Object obj2) {
@@ -273,43 +273,43 @@ public final class b {
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((e) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
+            return ((e) create(coroutineScope, continuation)).invokeSuspend(Unit.f32556a);
         }
     }
 
     public b(Context context) {
         Intrinsics.checkNotNullParameter(context, "context");
-        this.f38213a = new File(context.getCacheDir(), "persona_log.csv");
-        this.f38214b = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.getDefault());
-        this.f38215c = i.a(m0.a().O0(z.b(null, 1, null)));
-        this.f38216d = CoroutineDispatcher.E1(m0.b(), 1, null, 2, null);
+        this.f38781a = new File(context.getCacheDir(), "persona_log.csv");
+        this.f38782b = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.getDefault());
+        this.f38783c = i.a(m0.a().O0(z.b(null, 1, null)));
+        this.f38784d = CoroutineDispatcher.E1(m0.b(), 1, null, 2, null);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public final Object a(String str, np.a aVar, String str2, Continuation continuation) {
-        Object g10 = ys.g.g(this.f38216d, new C0538b(aVar, str, str2, null), continuation);
+        Object g10 = ys.g.g(this.f38784d, new C0538b(aVar, str, str2, null), continuation);
         if (g10 == gs.b.f()) {
             return g10;
         }
-        return Unit.f31988a;
+        return Unit.f32556a;
     }
 
     public final Object e(Continuation continuation) {
-        Object g10 = ys.g.g(this.f38216d, new c(null), continuation);
+        Object g10 = ys.g.g(this.f38784d, new c(null), continuation);
         if (g10 == gs.b.f()) {
             return g10;
         }
-        return Unit.f31988a;
+        return Unit.f32556a;
     }
 
     public final void f(String subsystem, np.a level, String message) {
         Intrinsics.checkNotNullParameter(subsystem, "subsystem");
         Intrinsics.checkNotNullParameter(level, "level");
         Intrinsics.checkNotNullParameter(message, "message");
-        ys.g.d(this.f38215c, null, null, new d(message, this, subsystem, level, null), 3, null);
+        ys.g.d(this.f38783c, null, null, new d(message, this, subsystem, level, null), 3, null);
     }
 
     public final Object g(String str, np.a aVar, Continuation continuation) {
-        return ys.g.g(this.f38216d, new e(str, aVar, null), continuation);
+        return ys.g.g(this.f38784d, new e(str, aVar, null), continuation);
     }
 }

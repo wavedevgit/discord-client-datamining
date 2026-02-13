@@ -5,28 +5,28 @@ import android.app.Notification;
 public final class g {
 
     /* renamed from: a  reason: collision with root package name */
-    private final int f31507a;
+    private final int f32075a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final int f31508b;
+    private final int f32076b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Notification f31509c;
+    private final Notification f32077c;
 
     public g(int i10, Notification notification) {
         this(i10, notification, 0);
     }
 
     public int a() {
-        return this.f31508b;
+        return this.f32076b;
     }
 
     public Notification b() {
-        return this.f31509c;
+        return this.f32077c;
     }
 
     public int c() {
-        return this.f31507a;
+        return this.f32075a;
     }
 
     public boolean equals(Object obj) {
@@ -37,23 +37,23 @@ public final class g {
             return false;
         }
         g gVar = (g) obj;
-        if (this.f31507a != gVar.f31507a || this.f31508b != gVar.f31508b) {
+        if (this.f32075a != gVar.f32075a || this.f32076b != gVar.f32076b) {
             return false;
         }
-        return this.f31509c.equals(gVar.f31509c);
+        return this.f32077c.equals(gVar.f32077c);
     }
 
     public int hashCode() {
-        return (((this.f31507a * 31) + this.f31508b) * 31) + this.f31509c.hashCode();
+        return (((this.f32075a * 31) + this.f32076b) * 31) + this.f32077c.hashCode();
     }
 
     public String toString() {
-        return "ForegroundInfo{mNotificationId=" + this.f31507a + ", mForegroundServiceType=" + this.f31508b + ", mNotification=" + this.f31509c + '}';
+        return "ForegroundInfo{mNotificationId=" + this.f32075a + ", mForegroundServiceType=" + this.f32076b + ", mNotification=" + this.f32077c + '}';
     }
 
     public g(int i10, Notification notification, int i11) {
-        this.f31507a = i10;
-        this.f31509c = notification;
-        this.f31508b = i11;
+        this.f32075a = i10;
+        this.f32077c = notification;
+        this.f32076b = i11;
     }
 }

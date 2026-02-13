@@ -56,112 +56,112 @@ public abstract class FunctionDescriptorImpl extends DeclarationDescriptorNonRoo
     protected Map O;
 
     /* renamed from: p  reason: collision with root package name */
-    private List f32436p;
+    private List f33004p;
 
     /* renamed from: q  reason: collision with root package name */
-    private List f32437q;
+    private List f33005q;
 
     /* renamed from: r  reason: collision with root package name */
-    private KotlinType f32438r;
+    private KotlinType f33006r;
 
     /* renamed from: s  reason: collision with root package name */
-    private List f32439s;
+    private List f33007s;
 
     /* renamed from: t  reason: collision with root package name */
-    private ReceiverParameterDescriptor f32440t;
+    private ReceiverParameterDescriptor f33008t;
 
     /* renamed from: u  reason: collision with root package name */
-    private ReceiverParameterDescriptor f32441u;
+    private ReceiverParameterDescriptor f33009u;
 
     /* renamed from: v  reason: collision with root package name */
-    private Modality f32442v;
+    private Modality f33010v;
 
     /* renamed from: w  reason: collision with root package name */
-    private DescriptorVisibility f32443w;
+    private DescriptorVisibility f33011w;
 
     /* renamed from: x  reason: collision with root package name */
-    private boolean f32444x;
+    private boolean f33012x;
 
     /* renamed from: y  reason: collision with root package name */
-    private boolean f32445y;
+    private boolean f33013y;
 
     /* renamed from: z  reason: collision with root package name */
-    private boolean f32446z;
+    private boolean f33014z;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public class CopyConfiguration implements FunctionDescriptor.CopyBuilder<FunctionDescriptor> {
 
         /* renamed from: a  reason: collision with root package name */
-        protected TypeSubstitution f32447a;
+        protected TypeSubstitution f33015a;
 
         /* renamed from: b  reason: collision with root package name */
-        protected DeclarationDescriptor f32448b;
+        protected DeclarationDescriptor f33016b;
 
         /* renamed from: c  reason: collision with root package name */
-        protected Modality f32449c;
+        protected Modality f33017c;
 
         /* renamed from: d  reason: collision with root package name */
-        protected DescriptorVisibility f32450d;
+        protected DescriptorVisibility f33018d;
 
         /* renamed from: e  reason: collision with root package name */
-        protected FunctionDescriptor f32451e;
+        protected FunctionDescriptor f33019e;
 
         /* renamed from: f  reason: collision with root package name */
-        protected CallableMemberDescriptor.Kind f32452f;
+        protected CallableMemberDescriptor.Kind f33020f;
 
         /* renamed from: g  reason: collision with root package name */
-        protected List f32453g;
+        protected List f33021g;
 
         /* renamed from: h  reason: collision with root package name */
-        protected List f32454h;
+        protected List f33022h;
 
         /* renamed from: i  reason: collision with root package name */
-        protected ReceiverParameterDescriptor f32455i;
+        protected ReceiverParameterDescriptor f33023i;
 
         /* renamed from: j  reason: collision with root package name */
-        protected ReceiverParameterDescriptor f32456j;
+        protected ReceiverParameterDescriptor f33024j;
 
         /* renamed from: k  reason: collision with root package name */
-        protected KotlinType f32457k;
+        protected KotlinType f33025k;
 
         /* renamed from: l  reason: collision with root package name */
-        protected Name f32458l;
+        protected Name f33026l;
 
         /* renamed from: m  reason: collision with root package name */
-        protected boolean f32459m;
+        protected boolean f33027m;
 
         /* renamed from: n  reason: collision with root package name */
-        protected boolean f32460n;
+        protected boolean f33028n;
 
         /* renamed from: o  reason: collision with root package name */
-        protected boolean f32461o;
+        protected boolean f33029o;
 
         /* renamed from: p  reason: collision with root package name */
-        protected boolean f32462p;
+        protected boolean f33030p;
 
         /* renamed from: q  reason: collision with root package name */
-        private boolean f32463q;
+        private boolean f33031q;
 
         /* renamed from: r  reason: collision with root package name */
-        private List f32464r;
+        private List f33032r;
 
         /* renamed from: s  reason: collision with root package name */
-        private Annotations f32465s;
+        private Annotations f33033s;
 
         /* renamed from: t  reason: collision with root package name */
-        private boolean f32466t;
+        private boolean f33034t;
 
         /* renamed from: u  reason: collision with root package name */
-        private Map f32467u;
+        private Map f33035u;
 
         /* renamed from: v  reason: collision with root package name */
-        private Boolean f32468v;
+        private Boolean f33036v;
 
         /* renamed from: w  reason: collision with root package name */
-        protected boolean f32469w;
+        protected boolean f33037w;
 
         /* renamed from: x  reason: collision with root package name */
-        final /* synthetic */ FunctionDescriptorImpl f32470x;
+        final /* synthetic */ FunctionDescriptorImpl f33038x;
 
         public CopyConfiguration(@NotNull FunctionDescriptorImpl functionDescriptorImpl, @NotNull TypeSubstitution typeSubstitution, @NotNull DeclarationDescriptor declarationDescriptor, @NotNull Modality modality, @NotNull DescriptorVisibility descriptorVisibility, @NotNull CallableMemberDescriptor.Kind kind, @NotNull List<ValueParameterDescriptor> list, List<ReceiverParameterDescriptor> list2, @NotNull ReceiverParameterDescriptor receiverParameterDescriptor, KotlinType kotlinType, Name name) {
             if (typeSubstitution == null) {
@@ -188,30 +188,30 @@ public abstract class FunctionDescriptorImpl extends DeclarationDescriptorNonRoo
             if (kotlinType == null) {
                 a(7);
             }
-            this.f32470x = functionDescriptorImpl;
-            this.f32451e = null;
-            this.f32456j = functionDescriptorImpl.f32441u;
-            this.f32459m = true;
-            this.f32460n = false;
-            this.f32461o = false;
-            this.f32462p = false;
-            this.f32463q = functionDescriptorImpl.isHiddenToOvercomeSignatureClash();
-            this.f32464r = null;
-            this.f32465s = null;
-            this.f32466t = functionDescriptorImpl.isHiddenForResolutionEverywhereBesideSupercalls();
-            this.f32467u = new LinkedHashMap();
-            this.f32468v = null;
-            this.f32469w = false;
-            this.f32447a = typeSubstitution;
-            this.f32448b = declarationDescriptor;
-            this.f32449c = modality;
-            this.f32450d = descriptorVisibility;
-            this.f32452f = kind;
-            this.f32453g = list;
-            this.f32454h = list2;
-            this.f32455i = receiverParameterDescriptor;
-            this.f32457k = kotlinType;
-            this.f32458l = name;
+            this.f33038x = functionDescriptorImpl;
+            this.f33019e = null;
+            this.f33024j = functionDescriptorImpl.f33009u;
+            this.f33027m = true;
+            this.f33028n = false;
+            this.f33029o = false;
+            this.f33030p = false;
+            this.f33031q = functionDescriptorImpl.isHiddenToOvercomeSignatureClash();
+            this.f33032r = null;
+            this.f33033s = null;
+            this.f33034t = functionDescriptorImpl.isHiddenForResolutionEverywhereBesideSupercalls();
+            this.f33035u = new LinkedHashMap();
+            this.f33036v = null;
+            this.f33037w = false;
+            this.f33015a = typeSubstitution;
+            this.f33016b = declarationDescriptor;
+            this.f33017c = modality;
+            this.f33018d = descriptorVisibility;
+            this.f33020f = kind;
+            this.f33021g = list;
+            this.f33022h = list2;
+            this.f33023i = receiverParameterDescriptor;
+            this.f33025k = kotlinType;
+            this.f33026l = name;
         }
 
         private static /* synthetic */ void a(int i10) {
@@ -575,7 +575,7 @@ public abstract class FunctionDescriptorImpl extends DeclarationDescriptorNonRoo
 
         @Override // kotlin.reflect.jvm.internal.impl.descriptors.FunctionDescriptor.CopyBuilder
         public FunctionDescriptor build() {
-            return this.f32470x.c(this);
+            return this.f33038x.c(this);
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.descriptors.FunctionDescriptor.CopyBuilder
@@ -584,18 +584,18 @@ public abstract class FunctionDescriptorImpl extends DeclarationDescriptorNonRoo
             if (userDataKey == null) {
                 a(39);
             }
-            this.f32467u.put(userDataKey, v10);
+            this.f33035u.put(userDataKey, v10);
             return this;
         }
 
         public CopyConfiguration setHasSynthesizedParameterNames(boolean z10) {
-            this.f32468v = Boolean.valueOf(z10);
+            this.f33036v = Boolean.valueOf(z10);
             return this;
         }
 
         @NotNull
         public CopyConfiguration setJustForTypeSubstitution(boolean z10) {
-            this.f32469w = z10;
+            this.f33037w = z10;
             return this;
         }
 
@@ -617,49 +617,49 @@ public abstract class FunctionDescriptorImpl extends DeclarationDescriptorNonRoo
             if (annotations == null) {
                 a(35);
             }
-            this.f32465s = annotations;
+            this.f33033s = annotations;
             return this;
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.descriptors.FunctionDescriptor.CopyBuilder
         @NotNull
         public FunctionDescriptor.CopyBuilder<FunctionDescriptor> setCopyOverrides(boolean z10) {
-            this.f32459m = z10;
+            this.f33027m = z10;
             return this;
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.descriptors.FunctionDescriptor.CopyBuilder
         @NotNull
         public FunctionDescriptor.CopyBuilder<FunctionDescriptor> setDispatchReceiverParameter(ReceiverParameterDescriptor receiverParameterDescriptor) {
-            this.f32456j = receiverParameterDescriptor;
+            this.f33024j = receiverParameterDescriptor;
             return this;
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.descriptors.FunctionDescriptor.CopyBuilder
         @NotNull
         public FunctionDescriptor.CopyBuilder<FunctionDescriptor> setDropOriginalInContainingParts() {
-            this.f32462p = true;
+            this.f33030p = true;
             return this;
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.descriptors.FunctionDescriptor.CopyBuilder
         @NotNull
         public FunctionDescriptor.CopyBuilder<FunctionDescriptor> setExtensionReceiverParameter(ReceiverParameterDescriptor receiverParameterDescriptor) {
-            this.f32455i = receiverParameterDescriptor;
+            this.f33023i = receiverParameterDescriptor;
             return this;
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.descriptors.FunctionDescriptor.CopyBuilder
         @NotNull
         public FunctionDescriptor.CopyBuilder<FunctionDescriptor> setHiddenForResolutionEverywhereBesideSupercalls() {
-            this.f32466t = true;
+            this.f33034t = true;
             return this;
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.descriptors.FunctionDescriptor.CopyBuilder
         @NotNull
         public FunctionDescriptor.CopyBuilder<FunctionDescriptor> setHiddenToOvercomeSignatureClash() {
-            this.f32463q = true;
+            this.f33031q = true;
             return this;
         }
 
@@ -669,7 +669,7 @@ public abstract class FunctionDescriptorImpl extends DeclarationDescriptorNonRoo
             if (kind == null) {
                 a(14);
             }
-            this.f32452f = kind;
+            this.f33020f = kind;
             return this;
         }
 
@@ -679,7 +679,7 @@ public abstract class FunctionDescriptorImpl extends DeclarationDescriptorNonRoo
             if (modality == null) {
                 a(10);
             }
-            this.f32449c = modality;
+            this.f33017c = modality;
             return this;
         }
 
@@ -689,14 +689,14 @@ public abstract class FunctionDescriptorImpl extends DeclarationDescriptorNonRoo
             if (name == null) {
                 a(17);
             }
-            this.f32458l = name;
+            this.f33026l = name;
             return this;
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.descriptors.FunctionDescriptor.CopyBuilder
         @NotNull
         public FunctionDescriptor.CopyBuilder<FunctionDescriptor> setOriginal(CallableMemberDescriptor callableMemberDescriptor) {
-            this.f32451e = (FunctionDescriptor) callableMemberDescriptor;
+            this.f33019e = (FunctionDescriptor) callableMemberDescriptor;
             return this;
         }
 
@@ -706,14 +706,14 @@ public abstract class FunctionDescriptorImpl extends DeclarationDescriptorNonRoo
             if (declarationDescriptor == null) {
                 a(8);
             }
-            this.f32448b = declarationDescriptor;
+            this.f33016b = declarationDescriptor;
             return this;
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.descriptors.FunctionDescriptor.CopyBuilder
         @NotNull
         public FunctionDescriptor.CopyBuilder<FunctionDescriptor> setPreserveSourceElement() {
-            this.f32461o = true;
+            this.f33029o = true;
             return this;
         }
 
@@ -723,14 +723,14 @@ public abstract class FunctionDescriptorImpl extends DeclarationDescriptorNonRoo
             if (kotlinType == null) {
                 a(23);
             }
-            this.f32457k = kotlinType;
+            this.f33025k = kotlinType;
             return this;
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.descriptors.FunctionDescriptor.CopyBuilder
         @NotNull
         public FunctionDescriptor.CopyBuilder<FunctionDescriptor> setSignatureChange() {
-            this.f32460n = true;
+            this.f33028n = true;
             return this;
         }
 
@@ -740,7 +740,7 @@ public abstract class FunctionDescriptorImpl extends DeclarationDescriptorNonRoo
             if (typeSubstitution == null) {
                 a(37);
             }
-            this.f32447a = typeSubstitution;
+            this.f33015a = typeSubstitution;
             return this;
         }
 
@@ -751,7 +751,7 @@ public abstract class FunctionDescriptorImpl extends DeclarationDescriptorNonRoo
             if (list == null) {
                 a(21);
             }
-            this.f32464r = list;
+            this.f33032r = list;
             return this;
         }
 
@@ -762,7 +762,7 @@ public abstract class FunctionDescriptorImpl extends DeclarationDescriptorNonRoo
             if (list == null) {
                 a(19);
             }
-            this.f32453g = list;
+            this.f33021g = list;
             return this;
         }
 
@@ -772,7 +772,7 @@ public abstract class FunctionDescriptorImpl extends DeclarationDescriptorNonRoo
             if (descriptorVisibility == null) {
                 a(12);
             }
-            this.f32450d = descriptorVisibility;
+            this.f33018d = descriptorVisibility;
             return this;
         }
     }
@@ -782,10 +782,10 @@ public abstract class FunctionDescriptorImpl extends DeclarationDescriptorNonRoo
     public class a implements Function0 {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ TypeSubstitutor f32471d;
+        final /* synthetic */ TypeSubstitutor f33039d;
 
         a(TypeSubstitutor typeSubstitutor) {
-            this.f32471d = typeSubstitutor;
+            this.f33039d = typeSubstitutor;
         }
 
         @Override // kotlin.jvm.functions.Function0
@@ -793,7 +793,7 @@ public abstract class FunctionDescriptorImpl extends DeclarationDescriptorNonRoo
         public Collection invoke() {
             SmartList smartList = new SmartList();
             for (FunctionDescriptor functionDescriptor : FunctionDescriptorImpl.this.getOverriddenDescriptors()) {
-                smartList.add(functionDescriptor.substitute(this.f32471d));
+                smartList.add(functionDescriptor.substitute(this.f33039d));
             }
             return smartList;
         }
@@ -804,16 +804,16 @@ public abstract class FunctionDescriptorImpl extends DeclarationDescriptorNonRoo
     public static class b implements Function0 {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ List f32473d;
+        final /* synthetic */ List f33041d;
 
         b(List list) {
-            this.f32473d = list;
+            this.f33041d = list;
         }
 
         @Override // kotlin.jvm.functions.Function0
         /* renamed from: a */
         public List invoke() {
-            return this.f32473d;
+            return this.f33041d;
         }
     }
 
@@ -836,10 +836,10 @@ public abstract class FunctionDescriptorImpl extends DeclarationDescriptorNonRoo
         if (sourceElement == null) {
             a(4);
         }
-        this.f32443w = DescriptorVisibilities.UNKNOWN;
-        this.f32444x = false;
-        this.f32445y = false;
-        this.f32446z = false;
+        this.f33011w = DescriptorVisibilities.UNKNOWN;
+        this.f33012x = false;
+        this.f33013y = false;
+        this.f33014z = false;
         this.A = false;
         this.B = false;
         this.C = false;
@@ -1172,31 +1172,31 @@ public abstract class FunctionDescriptorImpl extends DeclarationDescriptorNonRoo
             a(25);
         }
         boolean[] zArr = new boolean[1];
-        if (copyConfiguration.f32465s != null) {
-            annotations = AnnotationsKt.composeAnnotations(getAnnotations(), copyConfiguration.f32465s);
+        if (copyConfiguration.f33033s != null) {
+            annotations = AnnotationsKt.composeAnnotations(getAnnotations(), copyConfiguration.f33033s);
         } else {
             annotations = getAnnotations();
         }
         Annotations annotations2 = annotations;
-        DeclarationDescriptor declarationDescriptor = copyConfiguration.f32448b;
-        FunctionDescriptor functionDescriptor3 = copyConfiguration.f32451e;
-        FunctionDescriptorImpl createSubstitutedCopy = createSubstitutedCopy(declarationDescriptor, functionDescriptor3, copyConfiguration.f32452f, copyConfiguration.f32458l, annotations2, d(copyConfiguration.f32461o, functionDescriptor3));
-        if (copyConfiguration.f32464r != null) {
-            list = copyConfiguration.f32464r;
+        DeclarationDescriptor declarationDescriptor = copyConfiguration.f33016b;
+        FunctionDescriptor functionDescriptor3 = copyConfiguration.f33019e;
+        FunctionDescriptorImpl createSubstitutedCopy = createSubstitutedCopy(declarationDescriptor, functionDescriptor3, copyConfiguration.f33020f, copyConfiguration.f33026l, annotations2, d(copyConfiguration.f33029o, functionDescriptor3));
+        if (copyConfiguration.f33032r != null) {
+            list = copyConfiguration.f33032r;
         } else {
             list = getTypeParameters();
         }
         zArr[0] = zArr[0] | (!list.isEmpty());
         ArrayList arrayList = new ArrayList(list.size());
-        TypeSubstitutor substituteTypeParameters = DescriptorSubstitutor.substituteTypeParameters(list, copyConfiguration.f32447a, createSubstitutedCopy, arrayList, zArr);
+        TypeSubstitutor substituteTypeParameters = DescriptorSubstitutor.substituteTypeParameters(list, copyConfiguration.f33015a, createSubstitutedCopy, arrayList, zArr);
         ReceiverParameterDescriptor receiverParameterDescriptor = null;
         if (substituteTypeParameters == null) {
             return null;
         }
         ArrayList arrayList2 = new ArrayList();
-        if (!copyConfiguration.f32454h.isEmpty()) {
+        if (!copyConfiguration.f33022h.isEmpty()) {
             int i10 = 0;
-            for (ReceiverParameterDescriptor receiverParameterDescriptor2 : copyConfiguration.f32454h) {
+            for (ReceiverParameterDescriptor receiverParameterDescriptor2 : copyConfiguration.f33022h) {
                 KotlinType substitute = substituteTypeParameters.substitute(receiverParameterDescriptor2.getType(), Variance.IN_VARIANCE);
                 if (substitute == null) {
                     return null;
@@ -1213,15 +1213,15 @@ public abstract class FunctionDescriptorImpl extends DeclarationDescriptorNonRoo
                 i10 = i11;
             }
         }
-        ReceiverParameterDescriptor receiverParameterDescriptor3 = copyConfiguration.f32455i;
+        ReceiverParameterDescriptor receiverParameterDescriptor3 = copyConfiguration.f33023i;
         if (receiverParameterDescriptor3 != null) {
             KotlinType substitute2 = substituteTypeParameters.substitute(receiverParameterDescriptor3.getType(), Variance.IN_VARIANCE);
             if (substitute2 == null) {
                 return null;
             }
-            ReceiverParameterDescriptorImpl receiverParameterDescriptorImpl2 = new ReceiverParameterDescriptorImpl(createSubstitutedCopy, new ExtensionReceiver(createSubstitutedCopy, substitute2, copyConfiguration.f32455i.getValue()), copyConfiguration.f32455i.getAnnotations());
+            ReceiverParameterDescriptorImpl receiverParameterDescriptorImpl2 = new ReceiverParameterDescriptorImpl(createSubstitutedCopy, new ExtensionReceiver(createSubstitutedCopy, substitute2, copyConfiguration.f33023i.getValue()), copyConfiguration.f33023i.getAnnotations());
             boolean z14 = zArr[0];
-            if (substitute2 != copyConfiguration.f32455i.getType()) {
+            if (substitute2 != copyConfiguration.f33023i.getType()) {
                 z11 = true;
             } else {
                 z11 = false;
@@ -1233,14 +1233,14 @@ public abstract class FunctionDescriptorImpl extends DeclarationDescriptorNonRoo
             c10 = 0;
             receiverParameterDescriptorImpl = null;
         }
-        ReceiverParameterDescriptor receiverParameterDescriptor4 = copyConfiguration.f32456j;
+        ReceiverParameterDescriptor receiverParameterDescriptor4 = copyConfiguration.f33024j;
         if (receiverParameterDescriptor4 != null) {
             ReceiverParameterDescriptor substitute3 = receiverParameterDescriptor4.substitute(substituteTypeParameters);
             if (substitute3 == null) {
                 return null;
             }
             boolean z15 = zArr[c10];
-            if (substitute3 != copyConfiguration.f32456j) {
+            if (substitute3 != copyConfiguration.f33024j) {
                 c12 = 1;
             } else {
                 c12 = c10;
@@ -1251,45 +1251,45 @@ public abstract class FunctionDescriptorImpl extends DeclarationDescriptorNonRoo
         } else {
             functionDescriptor = null;
         }
-        List<ValueParameterDescriptor> substitutedValueParameters = getSubstitutedValueParameters(createSubstitutedCopy, copyConfiguration.f32453g, substituteTypeParameters, copyConfiguration.f32462p, copyConfiguration.f32461o, zArr);
+        List<ValueParameterDescriptor> substitutedValueParameters = getSubstitutedValueParameters(createSubstitutedCopy, copyConfiguration.f33021g, substituteTypeParameters, copyConfiguration.f33030p, copyConfiguration.f33029o, zArr);
         if (substitutedValueParameters == null) {
             return functionDescriptor;
         }
-        KotlinType substitute4 = substituteTypeParameters.substitute(copyConfiguration.f32457k, Variance.OUT_VARIANCE);
+        KotlinType substitute4 = substituteTypeParameters.substitute(copyConfiguration.f33025k, Variance.OUT_VARIANCE);
         if (substitute4 == null) {
             return functionDescriptor;
         }
         boolean z16 = zArr[c10];
-        if (substitute4 != copyConfiguration.f32457k) {
+        if (substitute4 != copyConfiguration.f33025k) {
             c11 = 1;
         } else {
             c11 = c10;
         }
         boolean z17 = z16 | c11;
         zArr[c10] = z17;
-        if (!z17 && copyConfiguration.f32469w) {
+        if (!z17 && copyConfiguration.f33037w) {
             return this;
         }
-        createSubstitutedCopy.initialize(receiverParameterDescriptorImpl, receiverParameterDescriptor, arrayList2, arrayList, substitutedValueParameters, substitute4, copyConfiguration.f32449c, copyConfiguration.f32450d);
-        createSubstitutedCopy.setOperator(this.f32444x);
-        createSubstitutedCopy.setInfix(this.f32445y);
-        createSubstitutedCopy.setExternal(this.f32446z);
+        createSubstitutedCopy.initialize(receiverParameterDescriptorImpl, receiverParameterDescriptor, arrayList2, arrayList, substitutedValueParameters, substitute4, copyConfiguration.f33017c, copyConfiguration.f33018d);
+        createSubstitutedCopy.setOperator(this.f33012x);
+        createSubstitutedCopy.setInfix(this.f33013y);
+        createSubstitutedCopy.setExternal(this.f33014z);
         createSubstitutedCopy.setInline(this.A);
         createSubstitutedCopy.setTailrec(this.B);
         createSubstitutedCopy.setSuspend(this.G);
         createSubstitutedCopy.setExpect(this.C);
         createSubstitutedCopy.setActual(this.D);
         createSubstitutedCopy.setHasStableParameterNames(this.H);
-        createSubstitutedCopy.h(copyConfiguration.f32463q);
-        createSubstitutedCopy.g(copyConfiguration.f32466t);
-        if (copyConfiguration.f32468v != null) {
-            z10 = copyConfiguration.f32468v.booleanValue();
+        createSubstitutedCopy.h(copyConfiguration.f33031q);
+        createSubstitutedCopy.g(copyConfiguration.f33034t);
+        if (copyConfiguration.f33036v != null) {
+            z10 = copyConfiguration.f33036v.booleanValue();
         } else {
             z10 = this.I;
         }
         createSubstitutedCopy.setHasSynthesizedParameterNames(z10);
-        if (!copyConfiguration.f32467u.isEmpty() || this.O != null) {
-            Map map = copyConfiguration.f32467u;
+        if (!copyConfiguration.f33035u.isEmpty() || this.O != null) {
+            Map map = copyConfiguration.f33035u;
             Map map2 = this.O;
             if (map2 != null) {
                 for (Map.Entry entry : map2.entrySet()) {
@@ -1304,7 +1304,7 @@ public abstract class FunctionDescriptorImpl extends DeclarationDescriptorNonRoo
                 createSubstitutedCopy.O = map;
             }
         }
-        if (copyConfiguration.f32460n || getInitialSignatureDescriptor() != null) {
+        if (copyConfiguration.f33028n || getInitialSignatureDescriptor() != null) {
             if (getInitialSignatureDescriptor() != null) {
                 functionDescriptor2 = getInitialSignatureDescriptor();
             } else {
@@ -1312,8 +1312,8 @@ public abstract class FunctionDescriptorImpl extends DeclarationDescriptorNonRoo
             }
             createSubstitutedCopy.setInitialSignatureDescriptor(functionDescriptor2.substitute(substituteTypeParameters));
         }
-        if (copyConfiguration.f32459m && !getOriginal().getOverriddenDescriptors().isEmpty()) {
-            if (copyConfiguration.f32447a.isEmpty()) {
+        if (copyConfiguration.f33027m && !getOriginal().getOverriddenDescriptors().isEmpty()) {
+            if (copyConfiguration.f33015a.isEmpty()) {
                 Function0 function0 = this.K;
                 if (function0 != null) {
                     createSubstitutedCopy.K = function0;
@@ -1340,7 +1340,7 @@ public abstract class FunctionDescriptorImpl extends DeclarationDescriptorNonRoo
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.CallableDescriptor
     @NotNull
     public List<ReceiverParameterDescriptor> getContextReceiverParameters() {
-        List<ReceiverParameterDescriptor> list = this.f32439s;
+        List<ReceiverParameterDescriptor> list = this.f33007s;
         if (list == null) {
             a(13);
         }
@@ -1349,12 +1349,12 @@ public abstract class FunctionDescriptorImpl extends DeclarationDescriptorNonRoo
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.CallableDescriptor
     public ReceiverParameterDescriptor getDispatchReceiverParameter() {
-        return this.f32441u;
+        return this.f33009u;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.CallableDescriptor
     public ReceiverParameterDescriptor getExtensionReceiverParameter() {
-        return this.f32440t;
+        return this.f33008t;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.FunctionDescriptor
@@ -1375,7 +1375,7 @@ public abstract class FunctionDescriptorImpl extends DeclarationDescriptorNonRoo
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.MemberDescriptor
     @NotNull
     public Modality getModality() {
-        Modality modality = this.f32442v;
+        Modality modality = this.f33010v;
         if (modality == null) {
             a(15);
         }
@@ -1397,13 +1397,13 @@ public abstract class FunctionDescriptorImpl extends DeclarationDescriptorNonRoo
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.CallableDescriptor
     public KotlinType getReturnType() {
-        return this.f32438r;
+        return this.f33006r;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.CallableDescriptor
     @NotNull
     public List<TypeParameterDescriptor> getTypeParameters() {
-        List<TypeParameterDescriptor> list = this.f32436p;
+        List<TypeParameterDescriptor> list = this.f33004p;
         if (list != null) {
             return list;
         }
@@ -1422,7 +1422,7 @@ public abstract class FunctionDescriptorImpl extends DeclarationDescriptorNonRoo
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.CallableDescriptor
     @NotNull
     public List<ValueParameterDescriptor> getValueParameters() {
-        List<ValueParameterDescriptor> list = this.f32437q;
+        List<ValueParameterDescriptor> list = this.f33005q;
         if (list == null) {
             a(19);
         }
@@ -1432,7 +1432,7 @@ public abstract class FunctionDescriptorImpl extends DeclarationDescriptorNonRoo
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.DeclarationDescriptorWithVisibility
     @NotNull
     public DescriptorVisibility getVisibility() {
-        DescriptorVisibility descriptorVisibility = this.f32443w;
+        DescriptorVisibility descriptorVisibility = this.f33011w;
         if (descriptorVisibility == null) {
             a(16);
         }
@@ -1462,14 +1462,14 @@ public abstract class FunctionDescriptorImpl extends DeclarationDescriptorNonRoo
         if (descriptorVisibility == null) {
             a(8);
         }
-        this.f32436p = CollectionsKt.h1(list2);
-        this.f32437q = CollectionsKt.h1(list3);
-        this.f32438r = kotlinType;
-        this.f32442v = modality;
-        this.f32443w = descriptorVisibility;
-        this.f32440t = receiverParameterDescriptor;
-        this.f32441u = receiverParameterDescriptor2;
-        this.f32439s = list;
+        this.f33004p = CollectionsKt.h1(list2);
+        this.f33005q = CollectionsKt.h1(list3);
+        this.f33006r = kotlinType;
+        this.f33010v = modality;
+        this.f33011w = descriptorVisibility;
+        this.f33008t = receiverParameterDescriptor;
+        this.f33009u = receiverParameterDescriptor2;
+        this.f33007s = list;
         for (int i10 = 0; i10 < list2.size(); i10++) {
             TypeParameterDescriptor typeParameterDescriptor = list2.get(i10);
             if (typeParameterDescriptor.getIndex() != i10) {
@@ -1496,7 +1496,7 @@ public abstract class FunctionDescriptorImpl extends DeclarationDescriptorNonRoo
     }
 
     public boolean isExternal() {
-        return this.f32446z;
+        return this.f33014z;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.FunctionDescriptor
@@ -1511,7 +1511,7 @@ public abstract class FunctionDescriptorImpl extends DeclarationDescriptorNonRoo
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.FunctionDescriptor
     public boolean isInfix() {
-        if (this.f32445y) {
+        if (this.f33013y) {
             return true;
         }
         for (FunctionDescriptor functionDescriptor : getOriginal().getOverriddenDescriptors()) {
@@ -1528,7 +1528,7 @@ public abstract class FunctionDescriptorImpl extends DeclarationDescriptorNonRoo
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.FunctionDescriptor
     public boolean isOperator() {
-        if (this.f32444x) {
+        if (this.f33012x) {
             return true;
         }
         for (FunctionDescriptor functionDescriptor : getOriginal().getOverriddenDescriptors()) {
@@ -1574,7 +1574,7 @@ public abstract class FunctionDescriptorImpl extends DeclarationDescriptorNonRoo
     }
 
     public void setExternal(boolean z10) {
-        this.f32446z = z10;
+        this.f33014z = z10;
     }
 
     public void setHasStableParameterNames(boolean z10) {
@@ -1586,7 +1586,7 @@ public abstract class FunctionDescriptorImpl extends DeclarationDescriptorNonRoo
     }
 
     public void setInfix(boolean z10) {
-        this.f32445y = z10;
+        this.f33013y = z10;
     }
 
     public void setInline(boolean z10) {
@@ -1594,7 +1594,7 @@ public abstract class FunctionDescriptorImpl extends DeclarationDescriptorNonRoo
     }
 
     public void setOperator(boolean z10) {
-        this.f32444x = z10;
+        this.f33012x = z10;
     }
 
     public void setOverriddenDescriptors(@NotNull Collection<? extends CallableMemberDescriptor> collection) {
@@ -1615,7 +1615,7 @@ public abstract class FunctionDescriptorImpl extends DeclarationDescriptorNonRoo
         if (kotlinType == null) {
             a(11);
         }
-        this.f32438r = kotlinType;
+        this.f33006r = kotlinType;
     }
 
     public void setSuspend(boolean z10) {
@@ -1630,7 +1630,7 @@ public abstract class FunctionDescriptorImpl extends DeclarationDescriptorNonRoo
         if (descriptorVisibility == null) {
             a(10);
         }
-        this.f32443w = descriptorVisibility;
+        this.f33011w = descriptorVisibility;
     }
 
     public static List<ValueParameterDescriptor> getSubstitutedValueParameters(FunctionDescriptor functionDescriptor, @NotNull List<ValueParameterDescriptor> list, @NotNull TypeSubstitutor typeSubstitutor, boolean z10, boolean z11, boolean[] zArr) {

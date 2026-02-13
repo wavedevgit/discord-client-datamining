@@ -1,57 +1,46 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var0 = module;
-    var1 = function arg0, arg1() {
-        _fun45567: for (var _fun45567_ip = 0;;) switch (_fun45567_ip) {
-            case 0:
-                var3 = arg0;
-                var1 = arg1;
-                var0 = null;
-                var0 = var0 == var1;
-                if (var0) {
-                    _fun45567_ip = 24;
-                    continue _fun45567
-                }
-            case 15:
-                var2 = var3.length;
-                var0 = var1 > var2;
-            case 24:
-                if (!var0) {
-                    _fun45567_ip = 32;
-                    continue _fun45567
-                }
-            case 27:
-                var1 = var3.length;
-            case 32:
-                var0 = global;
-                var2 = var0.Array;
-                var0 = undefined;
-                var0 = var2.bind(var0)(var1);
-                var2 = 0;
-                var4 = var2 < var1;
-                if (!var4) {
-                    _fun45567_ip = 71;
-                    continue _fun45567
-                }
-            case 56:
-                var4 = var3[var2];
-                var0[var2] = var4;
-                var2 = var2 + 1;
-                if (var2 < var1) {
-                    _fun45567_ip = 56;
-                    continue _fun45567
-                }
-            case 71:
-                return var0;
-        }
-    };
-    var0.exports = var1;
-    var2 = var0.exports;
-    var1 = true;
-    var2.__esModule = var1;
-    var1 = var0.exports;
-    var0 = var0.exports;
-    var1.default = var0;
+    var7 = require;
+    var2 = exports;
+    var8 = dependencyMap;
+    var0 = global;
+    var4 = var0.Object;
+    var3 = var4.defineProperty;
+    var1 = {};
+    var0 = true;
+    var1.value = var0;
+    var0 = '__esModule';
+    var0 = var3.bind(var4)(var2, var0, var1);
+    var0 = 0;
+    var1 = var8[var0];
     var0 = undefined;
+    var1 = var7.bind(var0)(var1);
+    var4 = var1.StyleSheet;
+    var3 = var4.create;
+    var1 = {};
+    var5 = {
+        'padding': 10,
+        'cursor': 'grab'
+    };
+    var1.container = var5;
+    var5 = {
+        'alignSelf': 'center',
+        'width': null,
+        'height': 4,
+        'borderRadius': 4,
+        'backgroundColor': 'rgba(0, 0, 0, 0.75)'
+    };
+    var6 = 1;
+    var6 = var8[var6];
+    var6 = var7.bind(var0)(var6);
+    var7 = var6.WINDOW_WIDTH;
+    var6 = 7.5;
+    var7 = var6 * var7;
+    var6 = 100;
+    var6 = var7 / var6;
+    var5.width = var6;
+    var1.indicator = var5;
+    var1 = var3.bind(var4)(var1);
+    var2.styles = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, []);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 4941]);

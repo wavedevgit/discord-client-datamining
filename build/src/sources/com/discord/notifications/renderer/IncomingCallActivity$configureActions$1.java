@@ -98,7 +98,7 @@ public final class IncomingCallActivity$configureActions$1 extends k implements 
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Bitmap> continuation) {
-            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
+            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32556a);
         }
     }
 
@@ -149,7 +149,7 @@ public final class IncomingCallActivity$configureActions$1 extends k implements 
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Bitmap> continuation) {
-            return ((AnonymousClass2) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
+            return ((AnonymousClass2) create(coroutineScope, continuation)).invokeSuspend(Unit.f32556a);
         }
     }
 
@@ -326,11 +326,11 @@ public final class IncomingCallActivity$configureActions$1 extends k implements 
                 IncomingCallActivity$configureActions$1.invokeSuspend$lambda$3(IncomingCallActivity.this, dismissCallAction, view);
             }
         });
-        return Unit.f31988a;
+        return Unit.f32556a;
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((IncomingCallActivity$configureActions$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
+        return ((IncomingCallActivity$configureActions$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32556a);
     }
 }

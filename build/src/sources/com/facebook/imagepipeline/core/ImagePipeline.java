@@ -282,7 +282,7 @@ public final class ImagePipeline {
             r4 = r14
             r8 = r15
             r0.<init>(r1, r2, r3, r4, r5, r6, r7, r8, r9)     // Catch: java.lang.Exception -> L69
-            pa.d$a r12 = pa.d.f41544j     // Catch: java.lang.Exception -> L69
+            pa.d$a r12 = pa.d.f42112j     // Catch: java.lang.Exception -> L69
             com.facebook.datasource.DataSource r11 = r12.a(r11, r0, r3)     // Catch: java.lang.Exception -> L69
             return r11
         L7d:

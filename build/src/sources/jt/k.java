@@ -16,10 +16,10 @@ public final class k {
     public static final a Companion = new a(null);
 
     /* renamed from: b  reason: collision with root package name */
-    private static final k f31355b;
+    private static final k f31923b;
 
     /* renamed from: a  reason: collision with root package name */
-    private final ZoneOffset f31356a;
+    private final ZoneOffset f31924a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a {
@@ -43,7 +43,7 @@ public final class k {
             k i12;
             Intrinsics.checkNotNullParameter(input, "input");
             Intrinsics.checkNotNullParameter(format, "format");
-            b bVar = b.f31357a;
+            b bVar = b.f31925a;
             if (format == bVar.b()) {
                 h10 = m.h();
                 Intrinsics.checkNotNullExpressionValue(h10, "access$getIsoFormat(...)");
@@ -66,7 +66,7 @@ public final class k {
 
         @NotNull
         public final KSerializer serializer() {
-            return pt.j.f43202a;
+            return pt.j.f43770a;
         }
 
         private a() {
@@ -77,7 +77,7 @@ public final class k {
     public static final class b {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final b f31357a = new b();
+        public static final b f31925a = new b();
 
         private b() {
         }
@@ -98,31 +98,31 @@ public final class k {
     static {
         ZoneOffset UTC = ZoneOffset.UTC;
         Intrinsics.checkNotNullExpressionValue(UTC, "UTC");
-        f31355b = new k(UTC);
+        f31923b = new k(UTC);
     }
 
     public k(ZoneOffset zoneOffset) {
         Intrinsics.checkNotNullParameter(zoneOffset, "zoneOffset");
-        this.f31356a = zoneOffset;
+        this.f31924a = zoneOffset;
     }
 
     public final int a() {
-        return this.f31356a.getTotalSeconds();
+        return this.f31924a.getTotalSeconds();
     }
 
     public boolean equals(Object obj) {
-        if ((obj instanceof k) && Intrinsics.areEqual(this.f31356a, ((k) obj).f31356a)) {
+        if ((obj instanceof k) && Intrinsics.areEqual(this.f31924a, ((k) obj).f31924a)) {
             return true;
         }
         return false;
     }
 
     public int hashCode() {
-        return this.f31356a.hashCode();
+        return this.f31924a.hashCode();
     }
 
     public String toString() {
-        String zoneOffset = this.f31356a.toString();
+        String zoneOffset = this.f31924a.toString();
         Intrinsics.checkNotNullExpressionValue(zoneOffset, "toString(...)");
         return zoneOffset;
     }

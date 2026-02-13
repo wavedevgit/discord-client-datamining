@@ -39,8 +39,8 @@ public /* synthetic */ class CheckpointEmoji$$serializer implements h0 {
     @Override // tt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        KSerializer u10 = rt.a.u(z0.f50107a);
-        n2 n2Var = n2.f50033a;
+        KSerializer u10 = rt.a.u(z0.f50675a);
+        n2 n2Var = n2.f50601a;
         return new KSerializer[]{u10, n2Var, rt.a.u(n2Var)};
     }
 
@@ -57,8 +57,8 @@ public /* synthetic */ class CheckpointEmoji$$serializer implements h0 {
         Long l11 = null;
         if (b10.p()) {
             String m10 = b10.m(serialDescriptor, 1);
-            l10 = (Long) b10.n(serialDescriptor, 0, z0.f50107a, null);
-            str2 = (String) b10.n(serialDescriptor, 2, n2.f50033a, null);
+            l10 = (Long) b10.n(serialDescriptor, 0, z0.f50675a, null);
+            str2 = (String) b10.n(serialDescriptor, 2, n2.f50601a, null);
             str = m10;
             i10 = 7;
         } else {
@@ -71,7 +71,7 @@ public /* synthetic */ class CheckpointEmoji$$serializer implements h0 {
                 if (o10 == -1) {
                     z10 = false;
                 } else if (o10 == 0) {
-                    l11 = (Long) b10.n(serialDescriptor, 0, z0.f50107a, l11);
+                    l11 = (Long) b10.n(serialDescriptor, 0, z0.f50675a, l11);
                     i11 |= 1;
                 } else if (o10 == 1) {
                     str3 = b10.m(serialDescriptor, 1);
@@ -79,7 +79,7 @@ public /* synthetic */ class CheckpointEmoji$$serializer implements h0 {
                 } else if (o10 != 2) {
                     throw new b0(o10);
                 } else {
-                    str4 = (String) b10.n(serialDescriptor, 2, n2.f50033a, str4);
+                    str4 = (String) b10.n(serialDescriptor, 2, n2.f50601a, str4);
                     i11 |= 4;
                 }
             }

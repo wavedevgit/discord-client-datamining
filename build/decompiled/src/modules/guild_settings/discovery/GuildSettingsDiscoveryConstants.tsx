@@ -2580,15 +2580,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var3 = var1.bind(var2)();
         var2 = var3.map;
         var1 = function(arg0) { // Environment: var0
-            _fun104366: for (var _fun104366_ip = 0;;) switch (_fun104366_ip) {
+            _fun104541: for (var _fun104541_ip = 0;;) switch (_fun104541_ip) {
                 case 0:
                     var0 = arg0;
                     var2 = var0.value;
                     var1 = var0.name;
                     var0 = 'en-US';
                     if (!(var0 !== var2)) {
-                        _fun104366_ip = 44;
-                        continue _fun104366
+                        _fun104541_ip = 44;
+                        continue _fun104541
                     }
                 case 21:
                     var0 = {};
@@ -2597,8 +2597,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0.label = var1;
                     var1 = undefined;
                     var0.image = var1;
-                    _fun104366_ip = 127;
-                    continue _fun104366;
+                    _fun104541_ip = 127;
+                    continue _fun104541;
                 case 44:
                     var1 = {};
                     var1.id = var2;
@@ -2639,4 +2639,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.calculateLocaleOptions = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1234, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1235, 2]);

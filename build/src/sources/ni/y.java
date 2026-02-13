@@ -3,16 +3,16 @@ package ni;
 public final class y implements d0 {
 
     /* renamed from: c  reason: collision with root package name */
-    private static final Object f37945c = new Object();
+    private static final Object f38513c = new Object();
 
     /* renamed from: a  reason: collision with root package name */
-    private volatile d0 f37946a;
+    private volatile d0 f38514a;
 
     /* renamed from: b  reason: collision with root package name */
-    private volatile Object f37947b = f37945c;
+    private volatile Object f38515b = f38513c;
 
     private y(d0 d0Var) {
-        this.f37946a = d0Var;
+        this.f38514a = d0Var;
     }
 
     public static d0 b(d0 d0Var) {
@@ -25,20 +25,20 @@ public final class y implements d0 {
     @Override // ni.e0
     public final Object a() {
         Object obj;
-        Object obj2 = this.f37947b;
-        Object obj3 = f37945c;
+        Object obj2 = this.f38515b;
+        Object obj3 = f38513c;
         if (obj2 == obj3) {
             synchronized (this) {
                 try {
-                    obj = this.f37947b;
+                    obj = this.f38515b;
                     if (obj == obj3) {
-                        obj = this.f37946a.a();
-                        Object obj4 = this.f37947b;
+                        obj = this.f38514a.a();
+                        Object obj4 = this.f38515b;
                         if (obj4 != obj3 && obj4 != obj) {
                             throw new IllegalStateException("Scoped provider was invoked recursively returning different results: " + obj4 + " & " + obj + ". This is likely due to a circular dependency.");
                         }
-                        this.f37947b = obj;
-                        this.f37946a = null;
+                        this.f38515b = obj;
+                        this.f38514a = null;
                     }
                 } catch (Throwable th2) {
                     throw th2;

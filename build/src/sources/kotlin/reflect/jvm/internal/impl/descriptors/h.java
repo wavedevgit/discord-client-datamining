@@ -8,20 +8,20 @@ import kotlin.reflect.jvm.internal.impl.types.checker.KotlinTypeRefiner;
 public class h implements Function0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final ScopesHolderForClass f32373d;
+    private final ScopesHolderForClass f32941d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final KotlinTypeRefiner f32374e;
+    private final KotlinTypeRefiner f32942e;
 
     public h(ScopesHolderForClass scopesHolderForClass, KotlinTypeRefiner kotlinTypeRefiner) {
-        this.f32373d = scopesHolderForClass;
-        this.f32374e = kotlinTypeRefiner;
+        this.f32941d = scopesHolderForClass;
+        this.f32942e = kotlinTypeRefiner;
     }
 
     @Override // kotlin.jvm.functions.Function0
     public Object invoke() {
         MemberScope c10;
-        c10 = ScopesHolderForClass.c(this.f32373d, this.f32374e);
+        c10 = ScopesHolderForClass.c(this.f32941d, this.f32942e);
         return c10;
     }
 }

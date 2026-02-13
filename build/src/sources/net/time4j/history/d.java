@@ -29,116 +29,116 @@ public final class d implements Serializable {
     private static final long serialVersionUID = 4100690610730913643L;
 
     /* renamed from: d  reason: collision with root package name */
-    private final transient gu.b f37516d;
+    private final transient gu.b f38084d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final transient List f37517e;
+    private final transient List f38085e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final transient net.time4j.history.a f37518i;
+    private final transient net.time4j.history.a f38086i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final transient o f37519o;
+    private final transient o f38087o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final transient g f37520p;
+    private final transient g f38088p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final transient p f37521q;
+    private final transient p f38089q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final transient p f37522r;
+    private final transient p f38090r;
 
     /* renamed from: s  reason: collision with root package name */
-    private final transient t f37523s;
+    private final transient t f38091s;
 
     /* renamed from: t  reason: collision with root package name */
-    private final transient p f37524t;
+    private final transient p f38092t;
 
     /* renamed from: u  reason: collision with root package name */
-    private final transient p f37525u;
+    private final transient p f38093u;
 
     /* renamed from: v  reason: collision with root package name */
-    private final transient t f37526v;
+    private final transient t f38094v;
 
     /* renamed from: w  reason: collision with root package name */
-    private final transient t f37527w;
+    private final transient t f38095w;
 
     /* renamed from: x  reason: collision with root package name */
-    private final transient t f37528x;
+    private final transient t f38096x;
 
     /* renamed from: y  reason: collision with root package name */
-    private final transient p f37529y;
+    private final transient p f38097y;
 
     /* renamed from: z  reason: collision with root package name */
-    private final transient Set f37530z;
+    private final transient Set f38098z;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f37531a;
+        static final /* synthetic */ int[] f38099a;
 
         /* renamed from: b  reason: collision with root package name */
-        static final /* synthetic */ int[] f37532b;
+        static final /* synthetic */ int[] f38100b;
 
         /* renamed from: c  reason: collision with root package name */
-        static final /* synthetic */ int[] f37533c;
+        static final /* synthetic */ int[] f38101c;
 
         static {
             int[] iArr = new int[fu.a.values().length];
-            f37533c = iArr;
+            f38101c = iArr;
             try {
                 iArr[fu.a.DUAL_DATING.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f37533c[fu.a.AFTER_NEW_YEAR.ordinal()] = 2;
+                f38101c[fu.a.AFTER_NEW_YEAR.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                f37533c[fu.a.BEFORE_NEW_YEAR.ordinal()] = 3;
+                f38101c[fu.a.BEFORE_NEW_YEAR.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
             int[] iArr2 = new int[j.values().length];
-            f37532b = iArr2;
+            f38100b = iArr2;
             try {
                 iArr2[j.HISPANIC.ordinal()] = 1;
             } catch (NoSuchFieldError unused4) {
             }
             try {
-                f37532b[j.BYZANTINE.ordinal()] = 2;
+                f38100b[j.BYZANTINE.ordinal()] = 2;
             } catch (NoSuchFieldError unused5) {
             }
             try {
-                f37532b[j.AB_URBE_CONDITA.ordinal()] = 3;
+                f38100b[j.AB_URBE_CONDITA.ordinal()] = 3;
             } catch (NoSuchFieldError unused6) {
             }
             int[] iArr3 = new int[gu.b.values().length];
-            f37531a = iArr3;
+            f38099a = iArr3;
             try {
                 iArr3[gu.b.PROLEPTIC_GREGORIAN.ordinal()] = 1;
             } catch (NoSuchFieldError unused7) {
             }
             try {
-                f37531a[gu.b.PROLEPTIC_JULIAN.ordinal()] = 2;
+                f38099a[gu.b.PROLEPTIC_JULIAN.ordinal()] = 2;
             } catch (NoSuchFieldError unused8) {
             }
             try {
-                f37531a[gu.b.PROLEPTIC_BYZANTINE.ordinal()] = 3;
+                f38099a[gu.b.PROLEPTIC_BYZANTINE.ordinal()] = 3;
             } catch (NoSuchFieldError unused9) {
             }
             try {
-                f37531a[gu.b.SWEDEN.ordinal()] = 4;
+                f38099a[gu.b.SWEDEN.ordinal()] = 4;
             } catch (NoSuchFieldError unused10) {
             }
             try {
-                f37531a[gu.b.INTRODUCTION_ON_1582_10_15.ordinal()] = 5;
+                f38099a[gu.b.INTRODUCTION_ON_1582_10_15.ordinal()] = 5;
             } catch (NoSuchFieldError unused11) {
             }
             try {
-                f37531a[gu.b.SINGLE_CUTOVER_DATE.ordinal()] = 6;
+                f38099a[gu.b.SINGLE_CUTOVER_DATE.ordinal()] = 6;
             } catch (NoSuchFieldError unused12) {
             }
         }
@@ -146,21 +146,21 @@ public final class d implements Serializable {
 
     static {
         gu.b bVar = gu.b.PROLEPTIC_GREGORIAN;
-        c cVar = c.f37512d;
+        c cVar = c.f38080d;
         B = new d(bVar, Collections.singletonList(new f(Long.MIN_VALUE, cVar, cVar)));
         gu.b bVar2 = gu.b.PROLEPTIC_JULIAN;
-        c cVar2 = c.f37513e;
+        c cVar2 = c.f38081e;
         d dVar = new d(bVar2, Collections.singletonList(new f(Long.MIN_VALUE, cVar2, cVar2)));
         C = dVar;
         gu.b bVar3 = gu.b.PROLEPTIC_BYZANTINE;
         List singletonList = Collections.singletonList(new f(Long.MIN_VALUE, cVar2, cVar2));
-        n nVar = n.f37567i;
+        n nVar = n.f38135i;
         D = new d(bVar3, singletonList, null, new o(nVar, Integer.MAX_VALUE), g.c((f0) f0.r0().P()));
         long longValue = ((Long) f0.H0(1582, 10, 15).k(a0.MODIFIED_JULIAN_DATE)).longValue();
         E = longValue;
         F = F(longValue);
         ArrayList arrayList = new ArrayList();
-        c cVar3 = c.f37514i;
+        c cVar3 = c.f38082i;
         arrayList.add(new f(-57959L, cVar2, cVar3));
         arrayList.add(new f(-53575L, cVar3, cVar2));
         arrayList.add(new f(-38611L, cVar2, cVar));
@@ -173,12 +173,12 @@ public final class d implements Serializable {
         f0 d12 = dVar.d(h.i(jVar, 1421, 12, 24));
         f0 d13 = dVar.d(h.i(jVar, 1699, 12, 31));
         d E2 = E();
-        n nVar2 = n.f37565d;
+        n nVar2 = n.f38133d;
         o f10 = nVar2.f(1383);
-        n nVar3 = n.f37568o;
+        n nVar3 = n.f38136o;
         hashMap.put("ES", E2.K(f10.b(nVar3.f(1556))).J(g.f(d11)));
         hashMap.put("PT", E().K(nVar2.f(1422).b(nVar3.f(1556))).J(g.f(d12)));
-        hashMap.put("FR", G(f0.H0(1582, 12, 20)).K(n.f37569p.f(1567)));
+        hashMap.put("FR", G(f0.H0(1582, 12, 20)).K(n.f38137p.f(1567)));
         hashMap.put("DE", E().K(nVar3.f(1544)));
         hashMap.put("DE-BAYERN", G(f0.H0(1583, 10, 16)).K(nVar3.f(1544)));
         hashMap.put("DE-PREUSSEN", G(f0.H0(1610, 9, 2)).K(nVar3.f(1559)));
@@ -188,14 +188,14 @@ public final class d implements Serializable {
         hashMap.put("CH", G(f0.H0(1584, 1, 22)));
         hashMap.put("HU", G(f0.H0(1587, 11, 1)));
         d G2 = G(f0.H0(1700, 3, 1));
-        n nVar4 = n.f37571r;
+        n nVar4 = n.f38139r;
         hashMap.put("DK", G2.K(nVar4.f(1623)));
         hashMap.put("NO", G(f0.H0(1700, 3, 1)).K(nVar4.f(1623)));
         hashMap.put("IT", E().K(nVar3.f(1583)));
         hashMap.put("IT-FLORENCE", E().K(nVar4.f(1749)));
-        hashMap.put("IT-PISA", E().K(n.f37572s.f(1749)));
+        hashMap.put("IT-PISA", E().K(n.f38140s.f(1749)));
         d E3 = E();
-        n nVar5 = n.f37566e;
+        n nVar5 = n.f38134e;
         hashMap.put("IT-VENICE", E3.K(nVar5.f(1798)));
         hashMap.put("GB", G(f0.H0(1752, 9, 14)).K(nVar3.f(1087).b(nVar2.f(1155)).b(nVar4.f(1752))));
         hashMap.put("GB-SCT", G(f0.H0(1752, 9, 14)).K(nVar3.f(1087).b(nVar2.f(1155)).b(nVar4.f(1600))));
@@ -205,7 +205,7 @@ public final class d implements Serializable {
     }
 
     private d(gu.b bVar, List list) {
-        this(bVar, list, null, null, g.f37541d);
+        this(bVar, list, null, null, g.f38109d);
     }
 
     private boolean A(h hVar) {
@@ -261,7 +261,7 @@ public final class d implements Serializable {
         } else {
             bVar = gu.b.SINGLE_CUTOVER_DATE;
         }
-        return new d(bVar, Collections.singletonList(new f(j10, c.f37513e, c.f37512d)));
+        return new d(bVar, Collections.singletonList(new f(j10, c.f38081e, c.f38080d)));
     }
 
     public static d G(f0 f0Var) {
@@ -298,7 +298,7 @@ public final class d implements Serializable {
             String[] split = str.substring(9).split(":");
             if (split.length != 0) {
                 gu.b valueOf = gu.b.valueOf(split[0]);
-                switch (a.f37531a[valueOf.ordinal()]) {
+                switch (a.f38099a[valueOf.ordinal()]) {
                     case 1:
                         return B;
                     case 2:
@@ -350,7 +350,7 @@ public final class d implements Serializable {
                             i11 = Integer.MAX_VALUE;
                         }
                         if (oVar == null) {
-                            if (valueOf2 != n.f37565d || i11 != 567) {
+                            if (valueOf2 != n.f38133d || i11 != 567) {
                                 oVar = valueOf2.f(i11);
                             }
                         } else {
@@ -369,7 +369,7 @@ public final class d implements Serializable {
                             j valueOf3 = j.valueOf(split7[0].substring(5));
                             f0 i13 = du.l.i(split7[1].substring(7));
                             f0 i14 = du.l.i(split7[2].substring(5));
-                            int i15 = a.f37532b[valueOf3.ordinal()];
+                            int i15 = a.f38100b[valueOf3.ordinal()];
                             if (i15 != 1) {
                                 if (i15 != 2) {
                                     if (i15 == 3) {
@@ -411,11 +411,11 @@ public final class d implements Serializable {
     }
 
     private b t() {
-        net.time4j.history.a aVar = this.f37518i;
+        net.time4j.history.a aVar = this.f38086i;
         if (aVar != null) {
             return aVar.d();
         }
-        return c.f37513e;
+        return c.f38081e;
     }
 
     private Object writeReplace() {
@@ -441,7 +441,7 @@ public final class d implements Serializable {
     }
 
     public t C() {
-        return this.f37526v;
+        return this.f38094v;
     }
 
     public d I(net.time4j.history.a aVar) {
@@ -449,45 +449,45 @@ public final class d implements Serializable {
             if (!y()) {
                 return this;
             }
-            return new d(this.f37516d, this.f37517e, aVar, this.f37519o, this.f37520p);
+            return new d(this.f38084d, this.f38085e, aVar, this.f38087o, this.f38088p);
         }
         throw new NullPointerException("Missing ancient julian leap years.");
     }
 
     public d J(g gVar) {
-        if (!gVar.equals(this.f37520p) && y()) {
-            return new d(this.f37516d, this.f37517e, this.f37518i, this.f37519o, gVar);
+        if (!gVar.equals(this.f38088p) && y()) {
+            return new d(this.f38084d, this.f38085e, this.f38086i, this.f38087o, gVar);
         }
         return this;
     }
 
     public d K(o oVar) {
-        if (oVar.equals(o.f37575d)) {
-            if (this.f37519o != null) {
-                return new d(this.f37516d, this.f37517e, this.f37518i, null, this.f37520p);
+        if (oVar.equals(o.f38143d)) {
+            if (this.f38087o != null) {
+                return new d(this.f38084d, this.f38085e, this.f38086i, null, this.f38088p);
             }
         } else if (y()) {
-            return new d(this.f37516d, this.f37517e, this.f37518i, oVar, this.f37520p);
+            return new d(this.f38084d, this.f38085e, this.f38086i, oVar, this.f38088p);
         }
         return this;
     }
 
     public p L(fu.a aVar) {
-        int i10 = a.f37533c[aVar.ordinal()];
+        int i10 = a.f38101c[aVar.ordinal()];
         if (i10 != 1) {
             if (i10 != 2) {
                 if (i10 == 3) {
-                    return this.f37525u;
+                    return this.f38093u;
                 }
                 throw new UnsupportedOperationException(aVar.name());
             }
-            return this.f37524t;
+            return this.f38092t;
         }
-        return this.f37523s;
+        return this.f38091s;
     }
 
     public t M() {
-        return this.f37523s;
+        return this.f38091s;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -504,7 +504,7 @@ public final class d implements Serializable {
     }
 
     public p b() {
-        return this.f37529y;
+        return this.f38097y;
     }
 
     public f0 d(h hVar) {
@@ -521,12 +521,12 @@ public final class d implements Serializable {
     public h e(f0 f0Var) {
         h hVar;
         long longValue = ((Long) f0Var.k(a0.MODIFIED_JULIAN_DATE)).longValue();
-        int size = this.f37517e.size() - 1;
+        int size = this.f38085e.size() - 1;
         while (true) {
             if (size >= 0) {
-                f fVar = (f) this.f37517e.get(size);
-                if (longValue >= fVar.f37537a) {
-                    hVar = fVar.f37538b.e(longValue);
+                f fVar = (f) this.f38085e.get(size);
+                if (longValue >= fVar.f38105a) {
+                    hVar = fVar.f38106b.e(longValue);
                     break;
                 }
                 size--;
@@ -538,7 +538,7 @@ public final class d implements Serializable {
         if (hVar == null) {
             hVar = t().e(longValue);
         }
-        j d10 = this.f37520p.d(hVar, f0Var);
+        j d10 = this.f38088p.d(hVar, f0Var);
         if (d10 != hVar.e()) {
             hVar = h.i(d10, d10.d(hVar.e(), hVar.g()), hVar.f(), hVar.d());
         }
@@ -554,8 +554,8 @@ public final class d implements Serializable {
         }
         if (obj instanceof d) {
             d dVar = (d) obj;
-            if (this.f37516d == dVar.f37516d && z(this.f37518i, dVar.f37518i) && z(this.f37519o, dVar.f37519o) && this.f37520p.equals(dVar.f37520p)) {
-                if (this.f37516d != gu.b.SINGLE_CUTOVER_DATE || ((f) this.f37517e.get(0)).f37537a == ((f) dVar.f37517e.get(0)).f37537a) {
+            if (this.f38084d == dVar.f38084d && z(this.f38086i, dVar.f38086i) && z(this.f38087o, dVar.f38087o) && this.f38088p.equals(dVar.f38088p)) {
+                if (this.f38084d != gu.b.SINGLE_CUTOVER_DATE || ((f) this.f38085e.get(0)).f38105a == ((f) dVar.f38085e.get(0)).f38105a) {
                     return true;
                 }
                 return false;
@@ -565,38 +565,38 @@ public final class d implements Serializable {
     }
 
     public p f() {
-        return this.f37521q;
+        return this.f38089q;
     }
 
     public p g() {
-        return this.f37527w;
+        return this.f38095w;
     }
 
     public p h() {
-        return this.f37528x;
+        return this.f38096x;
     }
 
     public int hashCode() {
-        gu.b bVar = this.f37516d;
+        gu.b bVar = this.f38084d;
         if (bVar == gu.b.SINGLE_CUTOVER_DATE) {
-            long j10 = ((f) this.f37517e.get(0)).f37537a;
+            long j10 = ((f) this.f38085e.get(0)).f38105a;
             return (int) (j10 ^ (j10 << 32));
         }
         return bVar.hashCode();
     }
 
     public p i() {
-        return this.f37522r;
+        return this.f38090r;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public b k(h hVar) {
-        for (int size = this.f37517e.size() - 1; size >= 0; size--) {
-            f fVar = (f) this.f37517e.get(size);
-            if (hVar.compareTo(fVar.f37539c) >= 0) {
-                return fVar.f37538b;
+        for (int size = this.f38085e.size() - 1; size >= 0; size--) {
+            f fVar = (f) this.f38085e.get(size);
+            if (hVar.compareTo(fVar.f38107c) >= 0) {
+                return fVar.f38106b;
             }
-            if (hVar.compareTo(fVar.f37540d) > 0) {
+            if (hVar.compareTo(fVar.f38108d) > 0) {
                 return null;
             }
         }
@@ -604,7 +604,7 @@ public final class d implements Serializable {
     }
 
     public net.time4j.history.a l() {
-        net.time4j.history.a aVar = this.f37518i;
+        net.time4j.history.a aVar = this.f38086i;
         if (aVar != null) {
             return aVar;
         }
@@ -614,7 +614,7 @@ public final class d implements Serializable {
     public h m(j jVar, int i10) {
         h d10 = v().d(jVar, i10);
         if (B(d10)) {
-            j d11 = this.f37520p.d(d10, d(d10));
+            j d11 = this.f38088p.d(d10, d(d10));
             if (d11 != jVar) {
                 return h.i(d11, d11.d(d10.e(), d10.g()), d10.f(), d10.d());
             }
@@ -624,22 +624,22 @@ public final class d implements Serializable {
     }
 
     public Set n() {
-        return this.f37530z;
+        return this.f38098z;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public g o() {
-        return this.f37520p;
+        return this.f38088p;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public List p() {
-        return this.f37517e;
+        return this.f38085e;
     }
 
     public f0 q() {
-        List list = this.f37517e;
-        long j10 = ((f) list.get(list.size() - 1)).f37537a;
+        List list = this.f38085e;
+        long j10 = ((f) list.get(list.size() - 1)).f38105a;
         if (j10 != Long.MIN_VALUE) {
             return f0.M0(j10, a0.MODIFIED_JULIAN_DATE);
         }
@@ -648,7 +648,7 @@ public final class d implements Serializable {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public gu.b s() {
-        return this.f37516d;
+        return this.f38084d;
     }
 
     public String toString() {
@@ -659,7 +659,7 @@ public final class d implements Serializable {
         h d10;
         h hVar;
         try {
-            o oVar = this.f37519o;
+            o oVar = this.f38087o;
             int i11 = 1;
             if (oVar == null) {
                 d10 = h.i(jVar, i10, 1, 1);
@@ -668,14 +668,14 @@ public final class d implements Serializable {
                 d10 = oVar.d(jVar, i10);
                 if (jVar == j.BC) {
                     if (i10 == 1) {
-                        hVar = this.f37519o.d(j.AD, 1);
+                        hVar = this.f38087o.d(j.AD, 1);
                     } else {
-                        hVar = this.f37519o.d(jVar, i10 - 1);
+                        hVar = this.f38087o.d(jVar, i10 - 1);
                     }
                 } else {
-                    h d11 = this.f37519o.d(jVar, i10 + 1);
+                    h d11 = this.f38087o.d(jVar, i10 + 1);
                     if (jVar == j.BYZANTINE) {
-                        hVar = this.f37519o.d(j.AD, jVar.a(i10));
+                        hVar = this.f38087o.d(j.AD, jVar.a(i10));
                         if (hVar.compareTo(d10) > 0) {
                         }
                     }
@@ -683,16 +683,16 @@ public final class d implements Serializable {
                 }
                 i11 = 0;
             }
-            return (int) (net.time4j.f.f37433s.e(d(d10), d(hVar)) + i11);
+            return (int) (net.time4j.f.f38001s.e(d(d10), d(hVar)) + i11);
         } catch (RuntimeException unused) {
             return -1;
         }
     }
 
     public o v() {
-        o oVar = this.f37519o;
+        o oVar = this.f38087o;
         if (oVar == null) {
-            return o.f37575d;
+            return o.f38143d;
         }
         return oVar;
     }
@@ -700,15 +700,15 @@ public final class d implements Serializable {
     public String w() {
         StringBuilder sb2 = new StringBuilder(64);
         sb2.append("historic-");
-        sb2.append(this.f37516d.name());
-        int i10 = a.f37531a[this.f37516d.ordinal()];
+        sb2.append(this.f38084d.name());
+        int i10 = a.f38099a[this.f38084d.ordinal()];
         if (i10 != 1 && i10 != 2 && i10 != 3) {
             if (i10 == 5 || i10 == 6) {
                 sb2.append(":cutover=");
                 sb2.append(q());
             }
             sb2.append(":ancient-julian-leap-years=");
-            net.time4j.history.a aVar = this.f37518i;
+            net.time4j.history.a aVar = this.f38086i;
             if (aVar != null) {
                 int[] e10 = aVar.e();
                 sb2.append('[');
@@ -732,15 +732,15 @@ public final class d implements Serializable {
     }
 
     public boolean x() {
-        if (this.f37518i != null) {
+        if (this.f38086i != null) {
             return true;
         }
         return false;
     }
 
     public boolean y() {
-        List list = this.f37517e;
-        if (((f) list.get(list.size() - 1)).f37537a > Long.MIN_VALUE) {
+        List list = this.f38085e;
+        if (((f) list.get(list.size() - 1)).f38105a > Long.MIN_VALUE) {
             return true;
         }
         return false;
@@ -754,29 +754,29 @@ public final class d implements Serializable {
             throw new NullPointerException("Missing historic variant.");
         }
         if (gVar != null) {
-            this.f37516d = bVar;
-            this.f37517e = list;
-            this.f37518i = aVar;
-            this.f37519o = oVar;
-            this.f37520p = gVar;
+            this.f38084d = bVar;
+            this.f38085e = list;
+            this.f38086i = aVar;
+            this.f38087o = oVar;
+            this.f38088p = gVar;
             i iVar = new i(this);
-            this.f37521q = iVar;
+            this.f38089q = iVar;
             k kVar = new k(this);
-            this.f37522r = kVar;
+            this.f38090r = kVar;
             l lVar = new l('y', 1, 999999999, this, 2);
-            this.f37523s = lVar;
+            this.f38091s = lVar;
             l lVar2 = new l((char) 0, 1, 999999999, this, 6);
-            this.f37524t = lVar2;
+            this.f38092t = lVar2;
             l lVar3 = new l((char) 0, 1, 999999999, this, 7);
-            this.f37525u = lVar3;
+            this.f38093u = lVar3;
             l lVar4 = new l('M', 1, 12, this, 3);
-            this.f37526v = lVar4;
+            this.f38094v = lVar4;
             l lVar5 = new l('d', 1, 31, this, 4);
-            this.f37527w = lVar5;
+            this.f38095w = lVar5;
             l lVar6 = new l('D', 1, 365, this, 5);
-            this.f37528x = lVar6;
+            this.f38096x = lVar6;
             l lVar7 = new l((char) 0, 1, 10000000, this, 8);
-            this.f37529y = lVar7;
+            this.f38097y = lVar7;
             HashSet hashSet = new HashSet();
             hashSet.add(iVar);
             hashSet.add(kVar);
@@ -787,7 +787,7 @@ public final class d implements Serializable {
             hashSet.add(lVar5);
             hashSet.add(lVar6);
             hashSet.add(lVar7);
-            this.f37530z = Collections.unmodifiableSet(hashSet);
+            this.f38098z = Collections.unmodifiableSet(hashSet);
             return;
         }
         throw new NullPointerException("Missing era preference.");

@@ -13,10 +13,10 @@ public abstract class e {
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ Function0 f31298a;
+        final /* synthetic */ Function0 f31866a;
 
         a(Function0 function0) {
-            this.f31298a = function0;
+            this.f31866a = function0;
         }
     }
 
@@ -48,6 +48,6 @@ public abstract class e {
         } else {
             function02.invoke();
         }
-        return Unit.f31988a;
+        return Unit.f32556a;
     }
 }

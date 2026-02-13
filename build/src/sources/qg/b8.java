@@ -5,23 +5,23 @@ import bj.c;
 final class b8 implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final b8 f44180a = new b8();
+    static final b8 f44748a = new b8();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final bj.c f44181b;
+    private static final bj.c f44749b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final bj.c f44182c;
+    private static final bj.c f44750c;
 
     static {
         c.b a10 = bj.c.a("sourceLanguage");
         s1 s1Var = new s1();
         s1Var.a(1);
-        f44181b = a10.b(s1Var.b()).a();
+        f44749b = a10.b(s1Var.b()).a();
         c.b a11 = bj.c.a("targetLanguage");
         s1 s1Var2 = new s1();
         s1Var2.a(2);
-        f44182c = a11.b(s1Var2.b()).a();
+        f44750c = a11.b(s1Var2.b()).a();
     }
 
     private b8() {

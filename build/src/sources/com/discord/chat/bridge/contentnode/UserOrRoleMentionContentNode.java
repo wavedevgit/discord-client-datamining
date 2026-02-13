@@ -127,10 +127,10 @@ public final class UserOrRoleMentionContentNode extends MentionContentNode {
             compositeEncoder.o(serialDescriptor, 1, UserId$$serializer.INSTANCE, userOrRoleMentionContentNode.userId);
         }
         if (compositeEncoder.z(serialDescriptor, 2) || userOrRoleMentionContentNode.roleName != null) {
-            compositeEncoder.o(serialDescriptor, 2, n2.f50033a, userOrRoleMentionContentNode.roleName);
+            compositeEncoder.o(serialDescriptor, 2, n2.f50601a, userOrRoleMentionContentNode.roleName);
         }
         if (compositeEncoder.z(serialDescriptor, 3) || userOrRoleMentionContentNode.parsedUserId != null) {
-            compositeEncoder.o(serialDescriptor, 3, n2.f50033a, userOrRoleMentionContentNode.parsedUserId);
+            compositeEncoder.o(serialDescriptor, 3, n2.f50601a, userOrRoleMentionContentNode.parsedUserId);
         }
         if (compositeEncoder.z(serialDescriptor, 4) || userOrRoleMentionContentNode.roleColor != 0) {
             compositeEncoder.w(serialDescriptor, 4, userOrRoleMentionContentNode.roleColor);

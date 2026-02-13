@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.bind(var6)(var4);
     var2.RedesignCompatContext = var3;
     var1 = function arg0() {
-        _fun44502: for (var _fun44502_ip = 0;;) switch (_fun44502_ip) {
+        _fun44658: for (var _fun44658_ip = 0;;) switch (_fun44658_ip) {
             case 0:
                 var1 = arg0;
                 var0 = var1.children;
@@ -46,8 +46,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = null;
                 var4 = var4 == var5;
                 if (var4) {
-                    _fun44502_ip = 44;
-                    continue _fun44502
+                    _fun44658_ip = 44;
+                    continue _fun44658
                 }
             case 41:
                 var4 = var5;

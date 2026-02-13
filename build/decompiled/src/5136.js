@@ -1,154 +1,472 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var5 = require;
-    var3 = metroImportDefault;
+    var4 = metroImportDefault;
     var2 = exports;
-    var4 = dependencyMap;
+    var5 = dependencyMap;
+    var _closure1_slot0 = var4;
+    var _closure1_slot1 = var5;
     var0 = global;
     var7 = var0.Object;
     var6 = var7.defineProperty;
-    var1 = {};
+    var3 = {};
     var0 = true;
-    var1.value = var0;
+    var3.value = var0;
     var0 = '__esModule';
-    var0 = var6.bind(var7)(var2, var0, var1);
+    var0 = var6.bind(var7)(var2, var0, var3);
     var0 = 0;
-    var1 = var4[var0];
+    var3 = var5[var0];
     var0 = undefined;
-    var1 = var3.bind(var0)(var1);
-    var2.FlashList = var1;
-    var1 = 1;
-    var6 = var4[var1];
-    var6 = var5.bind(var0)(var6);
-    var6 = var6.FlashListProps;
-    var2.FlashListProps = var6;
-    var6 = var4[var1];
-    var6 = var5.bind(var0)(var6);
-    var6 = var6.ContentStyle;
-    var2.ContentStyle = var6;
-    var6 = var4[var1];
-    var6 = var5.bind(var0)(var6);
-    var6 = var6.ListRenderItem;
-    var2.ListRenderItem = var6;
-    var6 = var4[var1];
-    var6 = var5.bind(var0)(var6);
-    var6 = var6.ListRenderItemInfo;
-    var2.ListRenderItemInfo = var6;
-    var6 = var4[var1];
-    var6 = var5.bind(var0)(var6);
-    var6 = var6.RenderTarget;
-    var2.RenderTarget = var6;
-    var1 = var4[var1];
-    var1 = var5.bind(var0)(var1);
-    var1 = var1.RenderTargetOptions;
-    var2.RenderTargetOptions = var1;
-    var1 = 2;
-    var6 = var4[var1];
-    var6 = var5.bind(var0)(var6);
-    var6 = var6.useOnNativeBlankAreaEvents;
-    var2.useOnNativeBlankAreaEvents = var6;
-    var6 = var4[var1];
-    var6 = var5.bind(var0)(var6);
-    var6 = var6.BlankAreaEventHandler;
-    var2.BlankAreaEventHandler = var6;
-    var1 = var4[var1];
-    var1 = var5.bind(var0)(var1);
-    var1 = var1.BlankAreaEvent;
-    var2.BlankAreaEvent = var1;
-    var1 = 3;
-    var6 = var4[var1];
-    var6 = var5.bind(var0)(var6);
-    var6 = var6.useBenchmark;
-    var2.useBenchmark = var6;
-    var6 = var4[var1];
-    var6 = var5.bind(var0)(var6);
-    var6 = var6.BenchmarkParams;
-    var2.BenchmarkParams = var6;
-    var1 = var4[var1];
-    var1 = var5.bind(var0)(var1);
-    var1 = var1.BenchmarkResult;
-    var2.BenchmarkResult = var1;
-    var1 = 4;
-    var1 = var4[var1];
-    var1 = var5.bind(var0)(var1);
-    var1 = var1.useDataMultiplier;
-    var2.useDataMultiplier = var1;
-    var1 = 5;
-    var6 = var4[var1];
-    var6 = var5.bind(var0)(var6);
-    var6 = var6.useFlatListBenchmark;
-    var2.useFlatListBenchmark = var6;
-    var1 = var4[var1];
-    var1 = var5.bind(var0)(var1);
-    var1 = var1.FlatListBenchmarkParams;
-    var2.FlatListBenchmarkParams = var1;
-    var1 = 6;
-    var6 = var4[var1];
-    var6 = var5.bind(var0)(var6);
-    var6 = var6.useBlankAreaTracker;
-    var2.useBlankAreaTracker = var6;
-    var6 = var4[var1];
-    var6 = var5.bind(var0)(var6);
-    var6 = var6.BlankAreaTrackerResult;
-    var2.BlankAreaTrackerResult = var6;
-    var1 = var4[var1];
-    var1 = var5.bind(var0)(var1);
-    var1 = var1.BlankAreaTrackerConfig;
-    var2.BlankAreaTrackerConfig = var1;
-    var1 = 7;
-    var6 = var4[var1];
-    var6 = var5.bind(var0)(var6);
-    var6 = var6.MasonryFlashList;
-    var2.MasonryFlashList = var6;
-    var6 = var4[var1];
-    var6 = var5.bind(var0)(var6);
-    var6 = var6.MasonryFlashListProps;
-    var2.MasonryFlashListProps = var6;
-    var6 = var4[var1];
-    var6 = var5.bind(var0)(var6);
-    var6 = var6.MasonryFlashListScrollEvent;
-    var2.MasonryFlashListScrollEvent = var6;
-    var6 = var4[var1];
-    var6 = var5.bind(var0)(var6);
-    var6 = var6.MasonryFlashListRef;
-    var2.MasonryFlashListRef = var6;
-    var6 = var4[var1];
-    var6 = var5.bind(var0)(var6);
-    var6 = var6.MasonryListItem;
-    var2.MasonryListItem = var6;
-    var6 = var4[var1];
-    var6 = var5.bind(var0)(var6);
-    var6 = var6.MasonryListRenderItem;
-    var2.MasonryListRenderItem = var6;
-    var1 = var4[var1];
-    var1 = var5.bind(var0)(var1);
-    var1 = var1.MasonryListRenderItemInfo;
-    var2.MasonryListRenderItemInfo = var1;
-    var1 = 8;
-    var6 = var4[var1];
-    var6 = var5.bind(var0)(var6);
-    var6 = var6.JSFPSMonitor;
-    var2.JSFPSMonitor = var6;
-    var1 = var4[var1];
-    var1 = var5.bind(var0)(var1);
-    var1 = var1.JSFPSResult;
-    var2.JSFPSResult = var1;
-    var1 = 9;
-    var6 = var4[var1];
-    var6 = var5.bind(var0)(var6);
-    var6 = var6.autoScroll;
-    var2.autoScroll = var6;
-    var1 = var4[var1];
-    var1 = var5.bind(var0)(var1);
-    var1 = var1.Cancellable;
-    var2.Cancellable = var1;
-    var1 = 10;
-    var1 = var4[var1];
-    var1 = var3.bind(var0)(var1);
-    var2.ViewToken = var1;
-    var1 = 11;
-    var1 = var4[var1];
-    var1 = var3.bind(var0)(var1);
-    var2.CellContainer = var1;
+    var3 = var4.bind(var0)(var3);
+    var _closure1_slot2 = var3;
+    var3 = 1;
+    var3 = var5[var3];
+    var3 = var4.bind(var0)(var3);
+    var _closure1_slot3 = var3;
+    var3 = 2;
+    var3 = var5[var3];
+    var3 = var4.bind(var0)(var3);
+    var _closure1_slot4 = var3;
+    var1 = function() { // Environment: var1
+        var3 = _closure1_slot4;
+        var2 = function arg0() {
+            _fun45884: for (var _fun45884_ip = 0;;) switch (_fun45884_ip) {
+                case 0:
+                    var3 = arg0;
+                    var9 = this;
+                    var _closure3_slot0 = var3;
+                    var _closure3_slot1 = var9;
+                    var4 = _closure1_slot3;
+                    var2 = _closure2_slot0;
+                    var0 = undefined;
+                    var2 = var4.bind(var0)(var9, var2);
+                    var2 = new Array(0);
+                    var9.viewabilityHelpers = var2;
+                    var2 = false;
+                    var9.hasInteracted = var2;
+                    var2 = function() { // Environment: var1
+                        var0 = _closure3_slot1;
+                        var2 = var0.viewabilityHelpers;
+                        var1 = var2.forEach;
+                        var0 = function(arg0) { // Environment: var0
+                            var1 = arg0;
+                            var0 = var1.dispose;
+                            var0 = var0.bind(var1)();
+                            return var0;
+                        };
+                        var0 = var1.bind(var2)(var0);
+                        var0 = undefined;
+                        return var0;
+                    };
+                    var9.dispose = var2;
+                    var2 = function(arg0) { // Environment: var1
+                        var2 = _closure3_slot1;
+                        var1 = var2.updateViewableItems;
+                        var0 = arg0;
+                        var0 = var1.bind(var2)(var0);
+                        var0 = undefined;
+                        return var0;
+                    };
+                    var9.onVisibleIndicesChanged = var2;
+                    var2 = function() { // Environment: var1
+                        _fun45888: for (var _fun45888_ip = 0;;) switch (_fun45888_ip) {
+                            case 0:
+                                var1 = _closure3_slot1;
+                                var1 = var1.hasInteracted;
+                                if (var1) {
+                                    _fun45888_ip = 61;
+                                    continue _fun45888
+                                }
+                            case 16:
+                                var1 = _closure3_slot1;
+                                var0 = true;
+                                var1.hasInteracted = var0;
+                                var3 = var1.viewabilityHelpers;
+                                var2 = var3.forEach;
+                                var0 = function(arg0) { // Environment: var0
+                                    var1 = true;
+                                    var0 = arg0;
+                                    var0.hasInteracted = var1;
+                                    var0 = undefined;
+                                    return var0;
+                                };
+                                var0 = var2.bind(var3)(var0);
+                                var0 = var1.updateViewableItems;
+                                var0 = var0.bind(var1)();
+                            case 61:
+                                var0 = undefined;
+                                return var0;
+                        }
+                    };
+                    var9.recordInteraction = var2;
+                    var2 = function(arg0) { // Environment: var1
+                        _fun45890: for (var _fun45890_ip = 0;;) switch (_fun45890_ip) {
+                            case 0:
+                                var0 = arg0;
+                                var _closure4_slot0 = var0;
+                                var0 = _closure3_slot1;
+                                var3 = var0.rvManager;
+                                var0 = var3.getWindowSize;
+                                var3 = var0.bind(var3)();
+                                var _closure4_slot1 = var3;
+                                var0 = undefined;
+                                if (!(var0 !== var3)) {
+                                    _fun45890_ip = 134;
+                                    continue _fun45890
+                                }
+                            case 42:
+                                var3 = _closure3_slot1;
+                                var3 = var3.shouldListenToVisibleIndices;
+                                if (!var3) {
+                                    _fun45890_ip = 134;
+                                    continue _fun45890
+                                }
+                            case 55:
+                                var3 = _closure3_slot1;
+                                var4 = var3.rvManager;
+                                var3 = var4.getAbsoluteLastScrollOffset;
+                                var3 = var3.bind(var4)();
+                                var4 = null;
+                                var5 = var4 != var3;
+                                var4 = 0;
+                                if (!var5) {
+                                    _fun45890_ip = 89;
+                                    continue _fun45890
+                                }
+                            case 86:
+                                var4 = var3;
+                            case 89:
+                                var2 = _closure3_slot1;
+                                var3 = var2.rvManager;
+                                var3 = var3.firstItemOffset;
+                                var3 = var4 - var3;
+                                var _closure4_slot2 = var3;
+                                var3 = var2.viewabilityHelpers;
+                                var2 = var3.forEach;
+                                var1 = function(arg0) { // Environment: var1
+                                    _fun45891: for (var _fun45891_ip = 0;;) switch (_fun45891_ip) {
+                                        case 0:
+                                            var6 = arg0;
+                                            var5 = var6.updateViewableItems;
+                                            var0 = _closure3_slot1;
+                                            var0 = var0.rvManager;
+                                            var0 = var0.props;
+                                            var0 = var0.horizontal;
+                                            var1 = null;
+                                            var4 = var1 != var0;
+                                            if (!var4) {
+                                                _fun45891_ip = 45;
+                                                continue _fun45891
+                                            }
+                                        case 42:
+                                            var4 = var0;
+                                        case 45:
+                                            var10 = _closure4_slot2;
+                                            var9 = _closure4_slot1;
+                                            var7 = _closure4_slot0;
+                                            var8 = function(arg0) { // Environment: var0
+                                                var0 = _closure3_slot1;
+                                                var2 = var0.rvManager;
+                                                var1 = var2.getLayout;
+                                                var0 = arg0;
+                                                var0 = var1.bind(var2)(var0);
+                                                return var0;
+                                            };
+                                            var12 = var6;
+                                            var11 = var4;
+                                            var0 = var12[var5](var11, var10, var9, var8, var7, var6);
+                                            var0 = undefined;
+                                            return var0;
+                                    }
+                                };
+                                var1 = var2.bind(var3)(var1);
+                            case 134:
+                                return var0;
+                        }
+                    };
+                    var9.updateViewableItems = var2;
+                    var2 = function() { // Environment: var1
+                        var1 = _closure3_slot1;
+                        var3 = var1.viewabilityHelpers;
+                        var2 = var3.forEach;
+                        var0 = function(arg0) { // Environment: var0
+                            var1 = arg0;
+                            var0 = var1.clearLastReportedViewableIndices;
+                            var0 = var0.bind(var1)();
+                            return var0;
+                        };
+                        var0 = var2.bind(var3)(var0);
+                        var0 = var1.updateViewableItems;
+                        var0 = var0.bind(var1)();
+                        var0 = undefined;
+                        return var0;
+                    };
+                    var9.recomputeViewableItems = var2;
+                    var2 = function(arg0, arg1) { // Environment: var1
+                        var1 = arg1;
+                        var _closure4_slot0 = var1;
+                        var1 = function arg0, arg1() {
+                            _fun45896: for (var _fun45896_ip = 0;;) switch (_fun45896_ip) {
+                                case 0:
+                                    var3 = arg0;
+                                    var1 = _closure3_slot1;
+                                    var1 = var1.rvManager;
+                                    var1 = var1.props;
+                                    var1 = var1.data;
+                                    var2 = var1[var3];
+                                    var4 = undefined;
+                                    if (!(var4 !== var2)) {
+                                        _fun45896_ip = 90;
+                                        continue _fun45896
+                                    }
+                                case 36:
+                                    var1 = _closure3_slot1;
+                                    var1 = var1.rvManager;
+                                    var1 = var1.props;
+                                    var1 = var1.keyExtractor;
+                                    if (!(var4 !== var1)) {
+                                        _fun45896_ip = 90;
+                                        continue _fun45896
+                                    }
+                                case 61:
+                                    var0 = _closure3_slot1;
+                                    var0 = var0.rvManager;
+                                    var1 = var0.props;
+                                    var0 = var1.keyExtractor;
+                                    var1 = var0.bind(var1)(var2, var3);
+                                    _fun45896_ip = 99;
+                                    continue _fun45896;
+                                case 90:
+                                    var0 = var3.toString;
+                                    var1 = var0.bind(var3)();
+                                case 99:
+                                    var0 = {};
+                                    var0.index = var3;
+                                    var3 = arg1;
+                                    var0.isViewable = var3;
+                                    var0.item = var2;
+                                    var0.key = var1;
+                                    var1 = global;
+                                    var2 = var1.Date;
+                                    var1 = var2.now;
+                                    var1 = var1.bind(var2)();
+                                    var0.timestamp = var1;
+                                    return var0;
+                            }
+                        };
+                        var _closure4_slot1 = var1;
+                        var3 = _closure1_slot0;
+                        var2 = _closure1_slot1;
+                        var1 = 3;
+                        var2 = var2[var1];
+                        var1 = undefined;
+                        var3 = var3.bind(var1)(var2);
+                        var1 = var3.prototype;
+                        var1 = Object.create(var1, {
+                            constructor: {
+                                value: var3
+                            }
+                        });
+                        var5 = arg0;
+                        var4 = function(arg0, arg1, arg2) { // Environment: var0
+                            _fun45897: for (var _fun45897_ip = 0;;) switch (_fun45897_ip) {
+                                case 0:
+                                    var5 = arg0;
+                                    var8 = arg1;
+                                    var9 = arg2;
+                                    var2 = _closure4_slot0;
+                                    var1 = null;
+                                    if (!(var1 != var2)) {
+                                        _fun45897_ip = 124;
+                                        continue _fun45897
+                                    }
+                                case 24:
+                                    var2 = _closure4_slot0;
+                                    var1 = {};
+                                    var4 = var5.map;
+                                    var0 = function(arg0) { // Environment: var3
+                                        var3 = _closure4_slot1;
+                                        var2 = undefined;
+                                        var1 = arg0;
+                                        var0 = true;
+                                        var0 = var3.bind(var2)(var1, var0);
+                                        return var0;
+                                    };
+                                    var0 = var4.bind(var5)(var0);
+                                    var1.viewableItems = var0;
+                                    var6 = new Array(0);
+                                    var5 = var6.concat;
+                                    var7 = _closure1_slot2;
+                                    var4 = var8.map;
+                                    var0 = function(arg0) { // Environment: var3
+                                        var3 = _closure4_slot1;
+                                        var2 = undefined;
+                                        var1 = arg0;
+                                        var0 = true;
+                                        var0 = var3.bind(var2)(var1, var0);
+                                        return var0;
+                                    };
+                                    var4 = var4.bind(var8)(var0);
+                                    var0 = undefined;
+                                    var4 = var7.bind(var0)(var4);
+                                    var8 = var9.map;
+                                    var3 = function(arg0) { // Environment: var3
+                                        var3 = _closure4_slot1;
+                                        var2 = undefined;
+                                        var1 = arg0;
+                                        var0 = false;
+                                        var0 = var3.bind(var2)(var1, var0);
+                                        return var0;
+                                    };
+                                    var3 = var8.bind(var9)(var3);
+                                    var3 = var7.bind(var0)(var3);
+                                    var3 = var5.bind(var6)(var4, var3);
+                                    var1.changed = var3;
+                                    var0 = var2.bind(var0)(var1);
+                                case 124:
+                                    var0 = undefined;
+                                    return var0;
+                            }
+                        };
+                        var6 = var1;
+                        var0 = new var6[var3](var5, var4, var3);
+                        var0 = var0 instanceof Object ? var0 : var1;
+                        return var0;
+                    };
+                    var9.createViewabilityHelper = var2;
+                    var9.rvManager = var3;
+                    var2 = var3.props;
+                    var4 = var2.onViewableItemsChanged;
+                    var2 = null;
+                    var4 = var2 !== var4;
+                    if (!var4) {
+                        _fun45884_ip = 163;
+                        continue _fun45884
+                    }
+                case 148:
+                    var5 = var3.props;
+                    var5 = var5.onViewableItemsChanged;
+                    var4 = var0 !== var5;
+                case 163:
+                    if (!var4) {
+                        _fun45884_ip = 210;
+                        continue _fun45884
+                    }
+                case 166:
+                    var6 = var9.viewabilityHelpers;
+                    var5 = var6.push;
+                    var8 = var9.createViewabilityHelper;
+                    var4 = var3.props;
+                    var7 = var4.viewabilityConfig;
+                    var4 = function(arg0) { // Environment: var1
+                        _fun45901: for (var _fun45901_ip = 0;;) switch (_fun45901_ip) {
+                            case 0:
+                                var1 = _closure3_slot0;
+                                var1 = var1.props;
+                                var2 = var1.onViewableItemsChanged;
+                                var1 = null;
+                                if (!(var1 != var2)) {
+                                    _fun45901_ip = 47;
+                                    continue _fun45901
+                                }
+                            case 24:
+                                var0 = _closure3_slot0;
+                                var2 = var0.props;
+                                var1 = var2.onViewableItemsChanged;
+                                var0 = arg0;
+                                var0 = var1.bind(var2)(var0);
+                            case 47:
+                                var0 = undefined;
+                                return var0;
+                        }
+                    };
+                    var4 = var8.bind(var9)(var7, var4);
+                    var4 = var5.bind(var6)(var4);
+                case 210:
+                    var3 = var3.props;
+                    var3 = var3.viewabilityConfigCallbackPairs;
+                    if (!(var2 == var3)) {
+                        _fun45884_ip = 229;
+                        continue _fun45884
+                    }
+                case 225:
+                    var3 = new Array(0);
+                case 229:
+                    var2 = var3.forEach;
+                    var1 = function(arg0, arg1) { // Environment: var1
+                        var1 = arg1;
+                        var _closure4_slot0 = var1;
+                        var5 = _closure3_slot1;
+                        var2 = var5.viewabilityHelpers;
+                        var1 = var2.push;
+                        var4 = var5.createViewabilityHelper;
+                        var3 = arg0;
+                        var3 = var3.viewabilityConfig;
+                        var0 = function(arg0) { // Environment: var0
+                            _fun45903: for (var _fun45903_ip = 0;;) switch (_fun45903_ip) {
+                                case 0:
+                                    var0 = _closure3_slot0;
+                                    var0 = var0.props;
+                                    var4 = var0.viewabilityConfigCallbackPairs;
+                                    var1 = null;
+                                    var3 = var1 == var4;
+                                    var0 = undefined;
+                                    var2 = undefined;
+                                    if (var3) {
+                                        _fun45903_ip = 57;
+                                        continue _fun45903
+                                    }
+                                case 31:
+                                    var3 = _closure4_slot0;
+                                    var3 = var4[var3];
+                                    var4 = var1 == var3;
+                                    var2 = undefined;
+                                    if (var4) {
+                                        _fun45903_ip = 57;
+                                        continue _fun45903
+                                    }
+                                case 51:
+                                    var2 = var3.onViewableItemsChanged;
+                                case 57:
+                                    if (!(var1 != var2)) {
+                                        _fun45903_ip = 69;
+                                        continue _fun45903
+                                    }
+                                case 61:
+                                    var1 = arg0;
+                                    var1 = var2.bind(var0)(var1);
+                                case 69:
+                                    return var0;
+                            }
+                        };
+                        var0 = var4.bind(var5)(var3, var0);
+                        var0 = var1.bind(var2)(var0);
+                        var0 = undefined;
+                        return var0;
+                    };
+                    var1 = var2.bind(var3)(var1);
+                    return var0;
+            }
+        };
+        var _closure2_slot0 = var2;
+        var0 = {};
+        var4 = 'shouldListenToVisibleIndices';
+        var0.key = var4;
+        var1 = function() {
+            var0 = this;
+            var0 = var0.viewabilityHelpers;
+            var1 = var0.length;
+            var0 = 0;
+            var0 = var1 > var0;
+            return var0;
+        };
+        var0.get = var1;
+        var1 = new Array(1);
+        var1[0] = var0;
+        var0 = undefined;
+        var0 = var3.bind(var0)(var2, var1);
+        return var0;
+    };
+    var1 = var1.bind(var0)();
+    var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5137, 5143, 5140, 5195, 5200, 5201, 5196, 5202, 5198, 5197, 5203, 5142]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5130, 5118, 5119, 5137]);

@@ -18,9 +18,9 @@ public enum e {
     
 
     /* renamed from: d  reason: collision with root package name */
-    private final Class f31834d;
+    private final Class f32402d;
 
     e(Class cls) {
-        this.f31834d = cls;
+        this.f32402d = cls;
     }
 }

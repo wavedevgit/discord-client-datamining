@@ -9,16 +9,16 @@ public abstract class d extends cu.d implements q {
     private final Class<bu.q> chrono;
 
     /* renamed from: e  reason: collision with root package name */
-    private final transient char f37413e;
+    private final transient char f37981e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final transient boolean f37414i;
+    private final transient boolean f37982i;
 
     public d(String str, Class cls, char c10, boolean z10) {
         super(str);
         this.chrono = cls;
-        this.f37413e = c10;
-        this.f37414i = z10;
+        this.f37981e = c10;
+        this.f37982i = z10;
     }
 
     @Override // bu.p
@@ -38,7 +38,7 @@ public abstract class d extends cu.d implements q {
 
     @Override // bu.e, bu.p
     public char d() {
-        return this.f37413e;
+        return this.f37981e;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */

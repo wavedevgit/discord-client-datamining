@@ -5,27 +5,27 @@ import android.view.Display;
 public final class y extends c1 {
 
     /* renamed from: b  reason: collision with root package name */
-    private final float f54262b;
+    private final float f54830b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final float f54263c;
+    private final float f54831c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Display f54264d;
+    private final Display f54832d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final o f54265e;
+    private final o f54833e;
 
     public y(Display display, o oVar, float f10, float f11) {
-        this.f54262b = f10;
-        this.f54263c = f11;
-        this.f54264d = display;
-        this.f54265e = oVar;
+        this.f54830b = f10;
+        this.f54831c = f11;
+        this.f54832d = display;
+        this.f54833e = oVar;
     }
 
     private int f(boolean z10) {
         try {
-            int j10 = this.f54265e.j(this.f54264d.getRotation());
+            int j10 = this.f54833e.j(this.f54832d.getRotation());
             if (z10) {
                 return (360 - j10) % 360;
             }
@@ -44,9 +44,9 @@ public final class y extends c1 {
     protected android.graphics.PointF a(float r8, float r9) {
         /*
             r7 = this;
-            float r0 = r7.f54262b
-            float r1 = r7.f54263c
-            x.o r2 = r7.f54265e
+            float r0 = r7.f54830b
+            float r1 = r7.f54831c
+            x.o r2 = r7.f54833e
             int r2 = r2.c()
             if (r2 != 0) goto Le
             r2 = 1

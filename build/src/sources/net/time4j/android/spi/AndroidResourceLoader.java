@@ -28,37 +28,37 @@ import net.time4j.tz.s;
 public class AndroidResourceLoader extends zt.d {
 
     /* renamed from: f  reason: collision with root package name */
-    private static final Map f37239f;
+    private static final Map f37807f;
 
     /* renamed from: g  reason: collision with root package name */
-    private static final Set f37240g;
+    private static final Set f37808g;
 
     /* renamed from: d  reason: collision with root package name */
-    private Context f37241d = null;
+    private Context f37809d = null;
 
     /* renamed from: e  reason: collision with root package name */
-    private List f37242e = Collections.EMPTY_LIST;
+    private List f37810e = Collections.EMPTY_LIST;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f37243a;
+        static final /* synthetic */ int[] f37811a;
 
         static {
             int[] iArr = new int[cu.e.values().length];
-            f37243a = iArr;
+            f37811a = iArr;
             try {
                 iArr[cu.e.FULL.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f37243a[cu.e.LONG.ordinal()] = 2;
+                f37811a[cu.e.LONG.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                f37243a[cu.e.MEDIUM.ordinal()] = 3;
+                f37811a[cu.e.MEDIUM.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
         }
@@ -71,7 +71,7 @@ public class AndroidResourceLoader extends zt.d {
         }
 
         private eu.c b() {
-            return c.f37245a;
+            return c.f37813a;
         }
 
         private String c(String str) {
@@ -140,7 +140,7 @@ public class AndroidResourceLoader extends zt.d {
                 } else {
                     z11 = false;
                 }
-                boolean is24HourFormat = DateFormat.is24HourFormat(AndroidResourceLoader.this.f37241d);
+                boolean is24HourFormat = DateFormat.is24HourFormat(AndroidResourceLoader.this.f37809d);
                 if (is24HourFormat != z11) {
                     if (is24HourFormat) {
                         return c(h10).replace("  ", " ").trim();
@@ -150,7 +150,7 @@ public class AndroidResourceLoader extends zt.d {
                     } else {
                         str2 = "B";
                     }
-                    int i10 = a.f37243a[eVar.ordinal()];
+                    int i10 = a.f37811a[eVar.ordinal()];
                     if (i10 != 1) {
                         if (i10 != 2) {
                             if (i10 != 3) {
@@ -176,23 +176,23 @@ public class AndroidResourceLoader extends zt.d {
     public static final class c {
 
         /* renamed from: a  reason: collision with root package name */
-        private static final hu.c f37245a;
+        private static final hu.c f37813a;
 
         /* renamed from: b  reason: collision with root package name */
-        private static final Iterable f37246b;
+        private static final Iterable f37814b;
 
         /* renamed from: c  reason: collision with root package name */
-        private static final Iterable f37247c;
+        private static final Iterable f37815c;
 
         /* renamed from: d  reason: collision with root package name */
-        private static final Iterable f37248d;
+        private static final Iterable f37816d;
 
         static {
             hu.c cVar = new hu.c();
-            f37245a = cVar;
-            f37246b = Collections.singleton(hu.f.f27720d);
-            f37247c = Collections.singletonList(new hu.i());
-            f37248d = Collections.unmodifiableList(Arrays.asList(cVar, new net.time4j.calendar.service.b()));
+            f37813a = cVar;
+            f37814b = Collections.singleton(hu.f.f28288d);
+            f37815c = Collections.singletonList(new hu.i());
+            f37816d = Collections.unmodifiableList(Arrays.asList(cVar, new net.time4j.calendar.service.b()));
         }
     }
 
@@ -203,7 +203,7 @@ public class AndroidResourceLoader extends zt.d {
 
         @Override // java.lang.Iterable
         public Iterator iterator() {
-            return l.f37250b.iterator();
+            return l.f37818b.iterator();
         }
 
         /* synthetic */ d(a aVar) {
@@ -218,7 +218,7 @@ public class AndroidResourceLoader extends zt.d {
 
         @Override // java.lang.Iterable
         public Iterator iterator() {
-            return m.f37253c.iterator();
+            return m.f37821c.iterator();
         }
 
         /* synthetic */ e(a aVar) {
@@ -233,7 +233,7 @@ public class AndroidResourceLoader extends zt.d {
 
         @Override // java.lang.Iterable
         public Iterator iterator() {
-            return c.f37246b.iterator();
+            return c.f37814b.iterator();
         }
 
         /* synthetic */ f(a aVar) {
@@ -248,7 +248,7 @@ public class AndroidResourceLoader extends zt.d {
 
         @Override // java.lang.Iterable
         public Iterator iterator() {
-            return l.f37249a.iterator();
+            return l.f37817a.iterator();
         }
 
         /* synthetic */ g(a aVar) {
@@ -263,7 +263,7 @@ public class AndroidResourceLoader extends zt.d {
 
         @Override // java.lang.Iterable
         public Iterator iterator() {
-            return c.f37248d.iterator();
+            return c.f37816d.iterator();
         }
 
         /* synthetic */ h(a aVar) {
@@ -278,7 +278,7 @@ public class AndroidResourceLoader extends zt.d {
 
         @Override // java.lang.Iterable
         public Iterator iterator() {
-            return c.f37247c.iterator();
+            return c.f37815c.iterator();
         }
 
         /* synthetic */ i(a aVar) {
@@ -293,7 +293,7 @@ public class AndroidResourceLoader extends zt.d {
 
         @Override // java.lang.Iterable
         public Iterator iterator() {
-            return m.f37252b.iterator();
+            return m.f37820b.iterator();
         }
 
         /* synthetic */ j(a aVar) {
@@ -308,7 +308,7 @@ public class AndroidResourceLoader extends zt.d {
 
         @Override // java.lang.Iterable
         public Iterator iterator() {
-            return m.f37251a.iterator();
+            return m.f37819a.iterator();
         }
 
         /* synthetic */ k(a aVar) {
@@ -320,29 +320,29 @@ public class AndroidResourceLoader extends zt.d {
     private static final class l {
 
         /* renamed from: a  reason: collision with root package name */
-        private static final Iterable f37249a = Collections.singleton(new hu.a());
+        private static final Iterable f37817a = Collections.singleton(new hu.a());
 
         /* renamed from: b  reason: collision with root package name */
-        private static final Iterable f37250b = Arrays.asList(new hu.b(), new net.time4j.calendar.service.c());
+        private static final Iterable f37818b = Arrays.asList(new hu.b(), new net.time4j.calendar.service.c());
     }
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     private static final class m {
 
         /* renamed from: a  reason: collision with root package name */
-        private static final Iterable f37251a;
+        private static final Iterable f37819a;
 
         /* renamed from: b  reason: collision with root package name */
-        private static final Iterable f37252b;
+        private static final Iterable f37820b;
 
         /* renamed from: c  reason: collision with root package name */
-        private static final Iterable f37253c;
+        private static final Iterable f37821c;
 
         static {
             iu.c cVar;
             Set singleton = Collections.singleton(new ju.a());
-            f37251a = singleton;
-            f37252b = Collections.singleton(new ju.b());
+            f37819a = singleton;
+            f37820b = Collections.singleton(new ju.b());
             Iterator it = singleton.iterator();
             while (true) {
                 if (it.hasNext()) {
@@ -357,9 +357,9 @@ public class AndroidResourceLoader extends zt.d {
                 }
             }
             if (cVar == null) {
-                f37253c = Collections.EMPTY_LIST;
+                f37821c = Collections.EMPTY_LIST;
             } else {
-                f37253c = Collections.singleton(cVar);
+                f37821c = Collections.singleton(cVar);
             }
         }
     }
@@ -376,13 +376,13 @@ public class AndroidResourceLoader extends zt.d {
         hashMap.put(x.class, Collections.singleton(new hu.h()));
         hashMap.put(y.class, new i(null));
         hashMap.put(iu.e.class, Collections.singleton(new net.time4j.android.spi.a()));
-        f37239f = Collections.unmodifiableMap(hashMap);
+        f37807f = Collections.unmodifiableMap(hashMap);
         HashSet hashSet = new HashSet();
         hashSet.add("i18n");
         hashSet.add("calendar");
         hashSet.add("olson");
         hashSet.add("tzdata");
-        f37240g = Collections.unmodifiableSet(hashSet);
+        f37808g = Collections.unmodifiableSet(hashSet);
     }
 
     private static Object i(Object obj) {
@@ -400,7 +400,7 @@ public class AndroidResourceLoader extends zt.d {
                 openConnection.setUseCaches(false);
                 return openConnection.getInputStream();
             }
-            Context context = this.f37241d;
+            Context context = this.f37809d;
             if (context != null) {
                 return context.getAssets().open(uri.toString());
             }
@@ -413,7 +413,7 @@ public class AndroidResourceLoader extends zt.d {
     @Override // zt.d
     public URI f(String str, Class cls, String str2) {
         try {
-            if (f37240g.contains(str)) {
+            if (f37808g.contains(str)) {
                 return new URI("net/time4j/" + str + '/' + str2);
             }
             URL resource = cls.getClassLoader().getResource(str2);
@@ -428,10 +428,10 @@ public class AndroidResourceLoader extends zt.d {
 
     @Override // zt.d
     public Iterable g(Class cls) {
-        Object obj = (Iterable) f37239f.get(cls);
+        Object obj = (Iterable) f37807f.get(cls);
         if (obj == null) {
             if (cls == cu.f.class) {
-                obj = this.f37242e;
+                obj = this.f37810e;
             } else {
                 return ServiceLoader.load(cls, cls.getClassLoader());
             }
@@ -441,8 +441,8 @@ public class AndroidResourceLoader extends zt.d {
 
     public void j(Context context, yt.b bVar) {
         if (context != null) {
-            this.f37241d = context;
-            this.f37242e = Collections.singletonList(new b(this, null));
+            this.f37809d = context;
+            this.f37810e = Collections.singletonList(new b(this, null));
             return;
         }
         throw new NullPointerException("Missing Android-context.");

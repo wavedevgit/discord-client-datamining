@@ -1,31 +1,37 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
+    var1 = global;
+    var1 = var1.Function;
+    var1 = var1.prototype;
+    var1 = var1.toString;
+    var _closure1_slot0 = var1;
     var1 = function arg0() {
-        _fun8288: for (var _fun8288_ip = 0;;) switch (_fun8288_ip) {
+        _fun8291: for (var _fun8291_ip = 0;;) switch (_fun8291_ip) {
             case 0:
-                var3 = arg0;
-                var2 = this;
-                var0 = var2.has;
-                var0 = var0.bind(var2)(var3);
-                if (!var0) {
-                    _fun8288_ip = 28;
-                    continue _fun8288
+                var2 = arg0;
+                var0 = var2;
+                var1 = null;
+                if (!(var1 != var2)) {
+                    _fun8291_ip = 43;
+                    continue _fun8291
                 }
-            case 18:
-                var1 = var2.__data__;
-                var0 = delete var1[var3];
-            case 28:
-                var3 = var2.size;
-                var1 = 0;
-                if (!var0) {
-                    _fun8288_ip = 41;
-                    continue _fun8288
-                }
-            case 38:
-                var1 = 1;
-            case 41:
-                var1 = var3 - var1;
-                var2.size = var1;
+            case 12: // try_start_0
+                var3 = _closure1_slot0;
+                var2 = var3.call;
+                var1 = var0;
+                var1 = var2.bind(var3)(var1);
+            case 32: // try_end0
+                return var1;
+            case 34: // catch_target0
+                CatchBlockStart(arg_register = 1);
+            case 36: // try_start_1
+                var0 = '' + var0;
+            case 39: // try_end1
+                return var0;
+            case 41: // catch_target1
+                CatchBlockStart(arg_register = 0);
+            case 43:
+                var0 = '';
                 return var0;
         }
     };

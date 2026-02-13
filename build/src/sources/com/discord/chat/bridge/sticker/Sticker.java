@@ -102,10 +102,10 @@ public final class Sticker {
         compositeEncoder.y(serialDescriptor, 3, sticker.asset);
         compositeEncoder.y(serialDescriptor, 4, sticker.url);
         if (compositeEncoder.z(serialDescriptor, 5) || sticker.width != null) {
-            compositeEncoder.o(serialDescriptor, 5, p0.f50049a, sticker.width);
+            compositeEncoder.o(serialDescriptor, 5, p0.f50617a, sticker.width);
         }
         if (compositeEncoder.z(serialDescriptor, 6) || sticker.height != null) {
-            compositeEncoder.o(serialDescriptor, 6, p0.f50049a, sticker.height);
+            compositeEncoder.o(serialDescriptor, 6, p0.f50617a, sticker.height);
         }
         compositeEncoder.w(serialDescriptor, 7, sticker.renderMode);
         compositeEncoder.y(serialDescriptor, 8, sticker.accessibilityLabel);

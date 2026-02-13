@@ -5,27 +5,27 @@ import java.util.NoSuchElementException;
 public abstract class b extends t0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private EnumC0606b f45278d = EnumC0606b.NOT_READY;
+    private EnumC0606b f45846d = EnumC0606b.NOT_READY;
 
     /* renamed from: e  reason: collision with root package name */
-    private Object f45279e;
+    private Object f45847e;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f45280a;
+        static final /* synthetic */ int[] f45848a;
 
         static {
             int[] iArr = new int[EnumC0606b.values().length];
-            f45280a = iArr;
+            f45848a = iArr;
             try {
                 iArr[EnumC0606b.DONE.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f45280a[EnumC0606b.READY.ordinal()] = 2;
+                f45848a[EnumC0606b.READY.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
         }
@@ -42,10 +42,10 @@ public abstract class b extends t0 {
     }
 
     private boolean c() {
-        this.f45278d = EnumC0606b.FAILED;
-        this.f45279e = a();
-        if (this.f45278d != EnumC0606b.DONE) {
-            this.f45278d = EnumC0606b.READY;
+        this.f45846d = EnumC0606b.FAILED;
+        this.f45847e = a();
+        if (this.f45846d != EnumC0606b.DONE) {
+            this.f45846d = EnumC0606b.READY;
             return true;
         }
         return false;
@@ -55,20 +55,20 @@ public abstract class b extends t0 {
 
     /* JADX INFO: Access modifiers changed from: protected */
     public final Object b() {
-        this.f45278d = EnumC0606b.DONE;
+        this.f45846d = EnumC0606b.DONE;
         return null;
     }
 
     @Override // java.util.Iterator
     public final boolean hasNext() {
         boolean z10;
-        if (this.f45278d != EnumC0606b.FAILED) {
+        if (this.f45846d != EnumC0606b.FAILED) {
             z10 = true;
         } else {
             z10 = false;
         }
         pi.m.o(z10);
-        int i10 = a.f45280a[this.f45278d.ordinal()];
+        int i10 = a.f45848a[this.f45846d.ordinal()];
         if (i10 == 1) {
             return false;
         }
@@ -81,9 +81,9 @@ public abstract class b extends t0 {
     @Override // java.util.Iterator
     public final Object next() {
         if (hasNext()) {
-            this.f45278d = EnumC0606b.NOT_READY;
-            Object a10 = g0.a(this.f45279e);
-            this.f45279e = null;
+            this.f45846d = EnumC0606b.NOT_READY;
+            Object a10 = g0.a(this.f45847e);
+            this.f45847e = null;
             return a10;
         }
         throw new NoSuchElementException();

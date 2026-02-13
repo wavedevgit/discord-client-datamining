@@ -25,7 +25,7 @@ public final class d1 {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final gk.c d() {
-        gk.c a10 = gk.b.a(ik.a.f27973d);
+        gk.c a10 = gk.b.a(ik.a.f28541d);
         Intrinsics.checkNotNullExpressionValue(a10, "getClient(...)");
         return a10;
     }

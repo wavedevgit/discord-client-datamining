@@ -12,16 +12,16 @@ import java.util.Map;
 public final class g implements w1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f29193d;
+    private final String f29761d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final String f29194e;
+    private final String f29762e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final Long f29195i;
+    private final Long f29763i;
 
     /* renamed from: o  reason: collision with root package name */
-    private Map f29196o;
+    private Map f29764o;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements m1 {
@@ -99,43 +99,43 @@ public final class g implements w1 {
     }
 
     public g(String str, String str2, Long l10) {
-        this.f29193d = str;
-        this.f29194e = str2;
-        this.f29195i = l10;
+        this.f29761d = str;
+        this.f29762e = str2;
+        this.f29763i = l10;
     }
 
     public String a() {
-        return this.f29194e;
+        return this.f29762e;
     }
 
     public Long b() {
-        return this.f29195i;
+        return this.f29763i;
     }
 
     public String c() {
-        return this.f29193d;
+        return this.f29761d;
     }
 
     public void d(Map map) {
-        this.f29196o = map;
+        this.f29764o = map;
     }
 
     @Override // io.sentry.w1
     public void serialize(f3 f3Var, ILogger iLogger) {
         f3Var.u();
-        f3Var.e("reason").f(this.f29193d);
-        f3Var.e("category").f(this.f29194e);
-        f3Var.e("quantity").i(this.f29195i);
-        Map map = this.f29196o;
+        f3Var.e("reason").f(this.f29761d);
+        f3Var.e("category").f(this.f29762e);
+        f3Var.e("quantity").i(this.f29763i);
+        Map map = this.f29764o;
         if (map != null) {
             for (String str : map.keySet()) {
-                f3Var.e(str).j(iLogger, this.f29196o.get(str));
+                f3Var.e(str).j(iLogger, this.f29764o.get(str));
             }
         }
         f3Var.D();
     }
 
     public String toString() {
-        return "DiscardedEvent{reason='" + this.f29193d + "', category='" + this.f29194e + "', quantity=" + this.f29195i + '}';
+        return "DiscardedEvent{reason='" + this.f29761d + "', category='" + this.f29762e + "', quantity=" + this.f29763i + '}';
     }
 }

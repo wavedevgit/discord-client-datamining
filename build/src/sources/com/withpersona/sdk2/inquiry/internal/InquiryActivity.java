@@ -137,7 +137,7 @@ public final class InquiryActivity extends AppCompatActivity {
             str = null;
         }
         intent.putExtra("SESSION_TOKEN_KEY", str);
-        Unit unit = Unit.f31988a;
+        Unit unit = Unit.f32556a;
         setResult(0, intent);
         Integer w10 = D().w();
         if (w10 != null) {
@@ -170,7 +170,7 @@ public final class InquiryActivity extends AppCompatActivity {
         Intrinsics.checkNotNullParameter(bundle, "bundle");
         Intent intent = new Intent();
         intent.putExtras(bundle);
-        Unit unit = Unit.f31988a;
+        Unit unit = Unit.f32556a;
         inquiryActivity.setResult(-1, intent);
         inquiryActivity.finish();
     }
@@ -181,10 +181,10 @@ public final class InquiryActivity extends AppCompatActivity {
             Intent intent = new Intent();
             intent.putExtra("PERSONA_ACTIVITY_RESULT", "INQUIRY_ERROR");
             intent.putExtra("ERROR_DEBUG_MESSAGE_KEY", "Invalid session token.");
-            yq.d dVar = yq.d.f55729q;
+            yq.d dVar = yq.d.f56297q;
             Intrinsics.checkNotNull(dVar, "null cannot be cast to non-null type android.os.Parcelable");
             intent.putExtra("ERROR_CODE_KEY", (Parcelable) dVar);
-            Unit unit = Unit.f31988a;
+            Unit unit = Unit.f32556a;
             setResult(0, intent);
             finish();
             return false;
@@ -215,10 +215,10 @@ public final class InquiryActivity extends AppCompatActivity {
                 Intent intent = new Intent();
                 intent.putExtra("PERSONA_ACTIVITY_RESULT", "INQUIRY_ERROR");
                 intent.putExtra("ERROR_DEBUG_MESSAGE_KEY", "A fatal exception occurred.");
-                yq.d dVar = yq.d.f55735w;
+                yq.d dVar = yq.d.f56303w;
                 Intrinsics.checkNotNull(dVar, "null cannot be cast to non-null type android.os.Parcelable");
                 intent.putExtra("ERROR_CODE_KEY", (Parcelable) dVar);
-                Unit unit = Unit.f31988a;
+                Unit unit = Unit.f32556a;
                 setResult(0, intent);
                 finish();
                 return;

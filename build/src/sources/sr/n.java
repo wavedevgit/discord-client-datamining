@@ -12,59 +12,59 @@ import sr.l;
 class n implements l {
 
     /* renamed from: a  reason: collision with root package name */
-    private final g f48330a;
+    private final g f48898a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final q f48331b;
+    private final q f48899b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final t f48332c;
+    private final t f48900c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Map f48333d;
+    private final Map f48901d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final l.a f48334e;
+    private final l.a f48902e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     static class a implements l.b {
 
         /* renamed from: a  reason: collision with root package name */
-        private final Map f48335a = new HashMap();
+        private final Map f48903a = new HashMap();
 
         /* renamed from: b  reason: collision with root package name */
-        private l.a f48336b;
+        private l.a f48904b;
 
         @Override // sr.l.b
         public l a(g gVar, q qVar) {
-            l.a aVar = this.f48336b;
+            l.a aVar = this.f48904b;
             if (aVar == null) {
                 aVar = new b();
             }
-            return new n(gVar, qVar, new t(), Collections.unmodifiableMap(this.f48335a), aVar);
+            return new n(gVar, qVar, new t(), Collections.unmodifiableMap(this.f48903a), aVar);
         }
 
         @Override // sr.l.b
         public l.b b(Class cls, l.c cVar) {
             if (cVar == null) {
-                this.f48335a.remove(cls);
+                this.f48903a.remove(cls);
                 return this;
             }
-            this.f48335a.put(cls, cVar);
+            this.f48903a.put(cls, cVar);
             return this;
         }
     }
 
     n(g gVar, q qVar, t tVar, Map map, l.a aVar) {
-        this.f48330a = gVar;
-        this.f48331b = qVar;
-        this.f48332c = tVar;
-        this.f48333d = map;
-        this.f48334e = aVar;
+        this.f48898a = gVar;
+        this.f48899b = qVar;
+        this.f48900c = tVar;
+        this.f48901d = map;
+        this.f48902e = aVar;
     }
 
     private void G(aw.r rVar) {
-        l.c cVar = (l.c) this.f48333d.get(rVar.getClass());
+        l.c cVar = (l.c) this.f48901d.get(rVar.getClass());
         if (cVar != null) {
             cVar.a(this, rVar);
         } else {
@@ -74,7 +74,7 @@ class n implements l {
 
     @Override // sr.l
     public void A() {
-        this.f48332c.append('\n');
+        this.f48900c.append('\n');
     }
 
     @Override // sr.l
@@ -89,8 +89,8 @@ class n implements l {
 
     @Override // sr.l
     public void D() {
-        if (this.f48332c.length() > 0 && '\n' != this.f48332c.h()) {
-            this.f48332c.append('\n');
+        if (this.f48900c.length() > 0 && '\n' != this.f48900c.h()) {
+            this.f48900c.append('\n');
         }
     }
 
@@ -100,9 +100,9 @@ class n implements l {
     }
 
     public void F(Class cls, int i10) {
-        s a10 = this.f48330a.c().a(cls);
+        s a10 = this.f48898a.c().a(cls);
         if (a10 != null) {
-            c(i10, a10.a(this.f48330a, this.f48331b));
+            c(i10, a10.a(this.f48898a, this.f48899b));
         }
     }
 
@@ -118,12 +118,12 @@ class n implements l {
 
     @Override // sr.l
     public t builder() {
-        return this.f48332c;
+        return this.f48900c;
     }
 
     @Override // sr.l
     public void c(int i10, Object obj) {
-        t tVar = this.f48332c;
+        t tVar = this.f48900c;
         t.j(tVar, obj, i10, tVar.length());
     }
 
@@ -174,12 +174,12 @@ class n implements l {
 
     @Override // sr.l
     public q l() {
-        return this.f48331b;
+        return this.f48899b;
     }
 
     @Override // sr.l
     public int length() {
-        return this.f48332c.length();
+        return this.f48900c.length();
     }
 
     @Override // aw.y
@@ -212,7 +212,7 @@ class n implements l {
 
     @Override // sr.l
     public void r(aw.r rVar) {
-        this.f48334e.a(this, rVar);
+        this.f48902e.a(this, rVar);
     }
 
     @Override // aw.y
@@ -247,11 +247,11 @@ class n implements l {
 
     @Override // sr.l
     public g y() {
-        return this.f48330a;
+        return this.f48898a;
     }
 
     @Override // sr.l
     public void z(aw.r rVar) {
-        this.f48334e.b(this, rVar);
+        this.f48902e.b(this, rVar);
     }
 }

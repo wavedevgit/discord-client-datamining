@@ -5,16 +5,16 @@ import bj.c;
 final class d6 implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final d6 f41842a = new d6();
+    static final d6 f42410a = new d6();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final bj.c f41843b;
+    private static final bj.c f42411b;
 
     static {
         c.b a10 = bj.c.a("detectionType");
         f fVar = new f();
         fVar.a(1);
-        f41843b = a10.b(fVar.b()).a();
+        f42411b = a10.b(fVar.b()).a();
     }
 
     private d6() {

@@ -5,7 +5,7 @@ import bj.c;
 final class d9 implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final d9 f39158a = new d9();
+    static final d9 f39726a = new d9();
 
     static {
         c.b a10 = bj.c.a("useRecognition");

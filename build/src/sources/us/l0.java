@@ -9,24 +9,24 @@ import us.w0;
 public class l0 implements Function0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final KotlinType f51090d;
+    private final KotlinType f51658d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final w0.a f51091e;
+    private final w0.a f51659e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final w0 f51092i;
+    private final w0 f51660i;
 
     public l0(KotlinType kotlinType, w0.a aVar, w0 w0Var) {
-        this.f51090d = kotlinType;
-        this.f51091e = aVar;
-        this.f51092i = w0Var;
+        this.f51658d = kotlinType;
+        this.f51659e = aVar;
+        this.f51660i = w0Var;
     }
 
     @Override // kotlin.jvm.functions.Function0
     public Object invoke() {
         Type b02;
-        b02 = w0.a.b0(this.f51090d, this.f51091e, this.f51092i);
+        b02 = w0.a.b0(this.f51658d, this.f51659e, this.f51660i);
         return b02;
     }
 }

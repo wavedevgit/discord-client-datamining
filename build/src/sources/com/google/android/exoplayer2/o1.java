@@ -358,8 +358,8 @@ public final class o1 {
     /* JADX INFO: Access modifiers changed from: private */
     public static r.b n(c cVar, r.b bVar) {
         for (int i10 = 0; i10 < cVar.f13367c.size(); i10++) {
-            if (((r.b) cVar.f13367c.get(i10)).f46441d == bVar.f46441d) {
-                return bVar.c(p(cVar, bVar.f46438a));
+            if (((r.b) cVar.f13367c.get(i10)).f47009d == bVar.f47009d) {
+                return bVar.c(p(cVar, bVar.f47006a));
             }
         }
         return null;
@@ -445,8 +445,8 @@ public final class o1 {
     }
 
     public rd.p h(r.b bVar, me.b bVar2, long j10) {
-        Object o10 = o(bVar.f46438a);
-        r.b c10 = bVar.c(m(bVar.f46438a));
+        Object o10 = o(bVar.f47006a);
+        r.b c10 = bVar.c(m(bVar.f47006a));
         c cVar = (c) oe.a.e((c) this.f13351d.get(o10));
         l(cVar);
         cVar.f13367c.add(c10);
@@ -510,7 +510,7 @@ public final class o1 {
     public void y(rd.p pVar) {
         c cVar = (c) oe.a.e((c) this.f13350c.remove(pVar));
         cVar.f13365a.a(pVar);
-        cVar.f13367c.remove(((rd.n) pVar).f46411d);
+        cVar.f13367c.remove(((rd.n) pVar).f46979d);
         if (!this.f13350c.isEmpty()) {
             k();
         }

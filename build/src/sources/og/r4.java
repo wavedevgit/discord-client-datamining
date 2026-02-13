@@ -5,7 +5,7 @@ import bj.c;
 final class r4 implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final r4 f39626a = new r4();
+    static final r4 f40194a = new r4();
 
     static {
         c.b a10 = bj.c.a("durationMs");

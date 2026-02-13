@@ -107,14 +107,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = 'onSpinnerStarted';
         var0.key = var1;
         var1 = function() {
-            _fun66430: for (var _fun66430_ip = 0;;) switch (_fun66430_ip) {
+            _fun65141: for (var _fun65141_ip = 0;;) switch (_fun65141_ip) {
                 case 0:
                     var1 = this;
                     var2 = var1.spinnerVisibleStart;
                     var0 = null;
                     if (!(var0 == var2)) {
-                        _fun66430_ip = 55;
-                        continue _fun66430
+                        _fun65141_ip = 55;
+                        continue _fun65141
                     }
                 case 15:
                     var3 = _closure1_slot0;
@@ -138,7 +138,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = 'trackSpinnerDuration';
         var0.key = var5;
         var4 = function arg0, arg1, arg2() {
-            _fun66431: for (var _fun66431_ip = 0;;) switch (_fun66431_ip) {
+            _fun65142: for (var _fun65142_ip = 0;;) switch (_fun65142_ip) {
                 case 0:
                     var9 = arg0;
                     var6 = arg2;
@@ -146,8 +146,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = var0.spinnerVisibleStart;
                     var2 = null;
                     if (!(var2 != var1)) {
-                        _fun66431_ip = 571;
-                        continue _fun66431
+                        _fun65142_ip = 571;
+                        continue _fun65142
                     }
                 case 24:
                     var3 = _closure1_slot11;
@@ -157,8 +157,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = 0;
                     var4 = 0;
                     if (!var7) {
-                        _fun66431_ip = 55;
-                        continue _fun66431
+                        _fun65142_ip = 55;
+                        continue _fun65142
                     }
                 case 52:
                     var4 = var3;
@@ -180,8 +180,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var7 = var6 - var4;
                     var0.spinnerVisibleStart = var2;
                     if (!(!(var7 < var1))) {
-                        _fun66431_ip = 507;
-                        continue _fun66431
+                        _fun65142_ip = 507;
+                        continue _fun65142
                     }
                 case 131:
                     var6 = var0.logger;
@@ -213,40 +213,40 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = var2 != var4;
                     var6 = null;
                     if (!var1) {
-                        _fun66431_ip = 339;
-                        continue _fun66431
+                        _fun65142_ip = 339;
+                        continue _fun65142
                     }
                 case 263:
                     var1 = var4.isGuildVoice;
                     var1 = var1.bind(var4)();
                     var6 = 'guild_voice';
                     if (var1) {
-                        _fun66431_ip = 339;
-                        continue _fun66431
+                        _fun65142_ip = 339;
+                        continue _fun65142
                     }
                 case 282:
                     var1 = var4.isGuildStageVoice;
                     var1 = var1.bind(var4)();
                     var6 = 'is_stage_channel';
                     if (var1) {
-                        _fun66431_ip = 339;
-                        continue _fun66431
+                        _fun65142_ip = 339;
+                        continue _fun65142
                     }
                 case 301:
                     var1 = var4.isDM;
                     var1 = var1.bind(var4)();
                     var6 = 'dm';
                     if (var1) {
-                        _fun66431_ip = 339;
-                        continue _fun66431
+                        _fun65142_ip = 339;
+                        continue _fun65142
                     }
                 case 318:
                     var1 = var4.isGroupDM;
                     var1 = var1.bind(var4)();
                     var6 = null;
                     if (!var1) {
-                        _fun66431_ip = 339;
-                        continue _fun66431
+                        _fun65142_ip = 339;
+                        continue _fun65142
                     }
                 case 333:
                     var6 = 'group_dm';
@@ -285,8 +285,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var5 = var5.bind(var6)();
                     var1.service_provider = var5;
                     var1 = var3.bind(var4)(var2, var1);
-                    _fun66431_ip = 571;
-                    continue _fun66431;
+                    _fun65142_ip = 571;
+                    continue _fun65142;
                 case 507:
                     var2 = var0.logger;
                     var1 = var2.warn;
@@ -323,4 +323,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.VideoSpinnerContext = var3;
     var2.VideoSpinnerTimer = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 1216, 1372, 3623, 3515, 3518, 660, 3, 3526, 795, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 1217, 1372, 3623, 3515, 3518, 660, 3, 3526, 796, 2]);

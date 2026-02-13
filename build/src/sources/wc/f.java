@@ -7,14 +7,14 @@ import qi.t0;
 final class f implements a {
 
     /* renamed from: a  reason: collision with root package name */
-    public final s f52532a;
+    public final s f53100a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final int f52533b;
+    private final int f53101b;
 
     private f(int i10, s sVar) {
-        this.f52533b = i10;
-        this.f52532a = sVar;
+        this.f53101b = i10;
+        this.f53100a = sVar;
     }
 
     private static a a(int i10, int i11, h0 h0Var) {
@@ -59,7 +59,7 @@ final class f implements a {
     }
 
     public a b(Class cls) {
-        t0 it = this.f52532a.iterator();
+        t0 it = this.f53100a.iterator();
         while (it.hasNext()) {
             a aVar = (a) it.next();
             if (aVar.getClass() == cls) {
@@ -71,6 +71,6 @@ final class f implements a {
 
     @Override // wc.a
     public int getType() {
-        return this.f52533b;
+        return this.f53101b;
     }
 }

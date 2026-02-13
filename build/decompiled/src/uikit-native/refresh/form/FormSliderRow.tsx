@@ -61,7 +61,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'uikit-native/refresh/form/FormSliderRow.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun48773: for (var _fun48773_ip = 0;;) switch (_fun48773_ip) {
+        _fun48884: for (var _fun48884_ip = 0;;) switch (_fun48884_ip) {
             case 0:
                 var2 = arg0;
                 var15 = var2.label;
@@ -89,8 +89,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var1.bind(var4)();
                 var3 = _closure1_slot6;
                 if (var0) {
-                    _fun48773_ip = 207;
-                    continue _fun48773
+                    _fun48884_ip = 207;
+                    continue _fun48884
                 }
             case 103:
                 var1 = _closure1_slot7;
@@ -118,8 +118,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2[1] = var5;
                 var0.children = var2;
                 var0 = var3.bind(var4)(var1, var0);
-                _fun48773_ip = 389;
-                continue _fun48773;
+                _fun48884_ip = 389;
+                continue _fun48884;
             case 207:
                 var14 = _closure1_slot0;
                 var11 = _closure1_slot2;
@@ -171,4 +171,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 4875, 4878, 3938, 5486, 4867, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 4904, 4907, 3938, 5487, 4898, 2]);

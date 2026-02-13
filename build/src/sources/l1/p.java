@@ -6,63 +6,63 @@ import androidx.constraintlayout.core.widgets.d;
 public abstract class p implements d {
 
     /* renamed from: a  reason: collision with root package name */
-    public int f35486a;
+    public int f36054a;
 
     /* renamed from: b  reason: collision with root package name */
-    ConstraintWidget f35487b;
+    ConstraintWidget f36055b;
 
     /* renamed from: c  reason: collision with root package name */
-    m f35488c;
+    m f36056c;
 
     /* renamed from: d  reason: collision with root package name */
-    protected ConstraintWidget.b f35489d;
+    protected ConstraintWidget.b f36057d;
 
     /* renamed from: e  reason: collision with root package name */
-    g f35490e = new g(this);
+    g f36058e = new g(this);
 
     /* renamed from: f  reason: collision with root package name */
-    public int f35491f = 0;
+    public int f36059f = 0;
 
     /* renamed from: g  reason: collision with root package name */
-    boolean f35492g = false;
+    boolean f36060g = false;
 
     /* renamed from: h  reason: collision with root package name */
-    public f f35493h = new f(this);
+    public f f36061h = new f(this);
 
     /* renamed from: i  reason: collision with root package name */
-    public f f35494i = new f(this);
+    public f f36062i = new f(this);
 
     /* renamed from: j  reason: collision with root package name */
-    protected b f35495j = b.NONE;
+    protected b f36063j = b.NONE;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f35496a;
+        static final /* synthetic */ int[] f36064a;
 
         static {
             int[] iArr = new int[d.a.values().length];
-            f35496a = iArr;
+            f36064a = iArr;
             try {
                 iArr[d.a.LEFT.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f35496a[d.a.RIGHT.ordinal()] = 2;
+                f36064a[d.a.RIGHT.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                f35496a[d.a.TOP.ordinal()] = 3;
+                f36064a[d.a.TOP.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
             try {
-                f35496a[d.a.BASELINE.ordinal()] = 4;
+                f36064a[d.a.BASELINE.ordinal()] = 4;
             } catch (NoSuchFieldError unused4) {
             }
             try {
-                f35496a[d.a.BOTTOM.ordinal()] = 5;
+                f36064a[d.a.BOTTOM.ordinal()] = 5;
             } catch (NoSuchFieldError unused5) {
             }
         }
@@ -77,70 +77,70 @@ public abstract class p implements d {
     }
 
     public p(ConstraintWidget constraintWidget) {
-        this.f35487b = constraintWidget;
+        this.f36055b = constraintWidget;
     }
 
     private void l(int i10, int i11) {
         p pVar;
         float f10;
         int i12;
-        int i13 = this.f35486a;
+        int i13 = this.f36054a;
         if (i13 != 0) {
             if (i13 != 1) {
                 if (i13 != 2) {
                     if (i13 == 3) {
-                        ConstraintWidget constraintWidget = this.f35487b;
+                        ConstraintWidget constraintWidget = this.f36055b;
                         p pVar2 = constraintWidget.f2403e;
-                        ConstraintWidget.b bVar = pVar2.f35489d;
+                        ConstraintWidget.b bVar = pVar2.f36057d;
                         ConstraintWidget.b bVar2 = ConstraintWidget.b.MATCH_CONSTRAINT;
-                        if (bVar == bVar2 && pVar2.f35486a == 3) {
+                        if (bVar == bVar2 && pVar2.f36054a == 3) {
                             n nVar = constraintWidget.f2405f;
-                            if (nVar.f35489d == bVar2 && nVar.f35486a == 3) {
+                            if (nVar.f36057d == bVar2 && nVar.f36054a == 3) {
                                 return;
                             }
                         }
                         if (i10 == 0) {
                             pVar2 = constraintWidget.f2405f;
                         }
-                        if (pVar2.f35490e.f35443j) {
+                        if (pVar2.f36058e.f36011j) {
                             float v10 = constraintWidget.v();
                             if (i10 == 1) {
-                                i12 = (int) ((pVar2.f35490e.f35440g / v10) + 0.5f);
+                                i12 = (int) ((pVar2.f36058e.f36008g / v10) + 0.5f);
                             } else {
-                                i12 = (int) ((v10 * pVar2.f35490e.f35440g) + 0.5f);
+                                i12 = (int) ((v10 * pVar2.f36058e.f36008g) + 0.5f);
                             }
-                            this.f35490e.d(i12);
+                            this.f36058e.d(i12);
                             return;
                         }
                         return;
                     }
                     return;
                 }
-                ConstraintWidget K = this.f35487b.K();
+                ConstraintWidget K = this.f36055b.K();
                 if (K != null) {
                     if (i10 == 0) {
                         pVar = K.f2403e;
                     } else {
                         pVar = K.f2405f;
                     }
-                    g gVar = pVar.f35490e;
-                    if (gVar.f35443j) {
+                    g gVar = pVar.f36058e;
+                    if (gVar.f36011j) {
                         if (i10 == 0) {
-                            f10 = this.f35487b.B;
+                            f10 = this.f36055b.B;
                         } else {
-                            f10 = this.f35487b.E;
+                            f10 = this.f36055b.E;
                         }
-                        this.f35490e.d(g((int) ((gVar.f35440g * f10) + 0.5f), i10));
+                        this.f36058e.d(g((int) ((gVar.f36008g * f10) + 0.5f), i10));
                         return;
                     }
                     return;
                 }
                 return;
             }
-            this.f35490e.d(Math.min(g(this.f35490e.f35455m, i10), i11));
+            this.f36058e.d(Math.min(g(this.f36058e.f36023m, i10), i11));
             return;
         }
-        this.f35490e.d(g(i11, i10));
+        this.f36058e.d(g(i11, i10));
     }
 
     @Override // l1.d
@@ -148,19 +148,19 @@ public abstract class p implements d {
 
     /* JADX INFO: Access modifiers changed from: protected */
     public final void b(f fVar, f fVar2, int i10) {
-        fVar.f35445l.add(fVar2);
-        fVar.f35439f = i10;
-        fVar2.f35444k.add(fVar);
+        fVar.f36013l.add(fVar2);
+        fVar.f36007f = i10;
+        fVar2.f36012k.add(fVar);
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     public final void c(f fVar, f fVar2, int i10, g gVar) {
-        fVar.f35445l.add(fVar2);
-        fVar.f35445l.add(this.f35490e);
-        fVar.f35441h = i10;
-        fVar.f35442i = gVar;
-        fVar2.f35444k.add(fVar);
-        gVar.f35444k.add(fVar);
+        fVar.f36013l.add(fVar2);
+        fVar.f36013l.add(this.f36058e);
+        fVar.f36009h = i10;
+        fVar.f36010i = gVar;
+        fVar2.f36012k.add(fVar);
+        gVar.f36012k.add(fVar);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -175,7 +175,7 @@ public abstract class p implements d {
     /* JADX INFO: Access modifiers changed from: protected */
     public final int g(int i10, int i11) {
         if (i11 == 0) {
-            ConstraintWidget constraintWidget = this.f35487b;
+            ConstraintWidget constraintWidget = this.f36055b;
             int i12 = constraintWidget.A;
             int max = Math.max(constraintWidget.f2445z, i10);
             if (i12 > 0) {
@@ -185,7 +185,7 @@ public abstract class p implements d {
                 return max;
             }
         } else {
-            ConstraintWidget constraintWidget2 = this.f35487b;
+            ConstraintWidget constraintWidget2 = this.f36055b;
             int i13 = constraintWidget2.D;
             int max2 = Math.max(constraintWidget2.C, i10);
             if (i13 > 0) {
@@ -205,7 +205,7 @@ public abstract class p implements d {
             return null;
         }
         ConstraintWidget constraintWidget = dVar2.f2495d;
-        int i10 = a.f35496a[dVar2.f2496e.ordinal()];
+        int i10 = a.f36064a[dVar2.f2496e.ordinal()];
         if (i10 != 1) {
             if (i10 != 2) {
                 if (i10 != 3) {
@@ -213,15 +213,15 @@ public abstract class p implements d {
                         if (i10 != 5) {
                             return null;
                         }
-                        return constraintWidget.f2405f.f35494i;
+                        return constraintWidget.f2405f.f36062i;
                     }
-                    return constraintWidget.f2405f.f35469k;
+                    return constraintWidget.f2405f.f36037k;
                 }
-                return constraintWidget.f2405f.f35493h;
+                return constraintWidget.f2405f.f36061h;
             }
-            return constraintWidget.f2403e.f35494i;
+            return constraintWidget.f2403e.f36062i;
         }
-        return constraintWidget.f2403e.f35493h;
+        return constraintWidget.f2403e.f36061h;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
@@ -237,7 +237,7 @@ public abstract class p implements d {
         } else {
             pVar = constraintWidget.f2405f;
         }
-        int i11 = a.f35496a[dVar2.f2496e.ordinal()];
+        int i11 = a.f36064a[dVar2.f2496e.ordinal()];
         if (i11 != 1) {
             if (i11 != 2) {
                 if (i11 != 3) {
@@ -246,21 +246,21 @@ public abstract class p implements d {
                     }
                 }
             }
-            return pVar.f35494i;
+            return pVar.f36062i;
         }
-        return pVar.f35493h;
+        return pVar.f36061h;
     }
 
     public long j() {
-        g gVar = this.f35490e;
-        if (gVar.f35443j) {
-            return gVar.f35440g;
+        g gVar = this.f36058e;
+        if (gVar.f36011j) {
+            return gVar.f36008g;
         }
         return 0L;
     }
 
     public boolean k() {
-        return this.f35492g;
+        return this.f36060g;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -271,32 +271,32 @@ public abstract class p implements d {
         float R;
         f h10 = h(dVar2);
         f h11 = h(dVar3);
-        if (h10.f35443j && h11.f35443j) {
-            int f10 = h10.f35440g + dVar2.f();
-            int f11 = h11.f35440g - dVar3.f();
+        if (h10.f36011j && h11.f36011j) {
+            int f10 = h10.f36008g + dVar2.f();
+            int f11 = h11.f36008g - dVar3.f();
             int i11 = f11 - f10;
-            if (!this.f35490e.f35443j && this.f35489d == ConstraintWidget.b.MATCH_CONSTRAINT) {
+            if (!this.f36058e.f36011j && this.f36057d == ConstraintWidget.b.MATCH_CONSTRAINT) {
                 l(i10, i11);
             }
-            g gVar = this.f35490e;
-            if (gVar.f35443j) {
-                if (gVar.f35440g == i11) {
-                    this.f35493h.d(f10);
-                    this.f35494i.d(f11);
+            g gVar = this.f36058e;
+            if (gVar.f36011j) {
+                if (gVar.f36008g == i11) {
+                    this.f36061h.d(f10);
+                    this.f36062i.d(f11);
                     return;
                 }
                 if (i10 == 0) {
-                    R = this.f35487b.y();
+                    R = this.f36055b.y();
                 } else {
-                    R = this.f35487b.R();
+                    R = this.f36055b.R();
                 }
                 if (h10 == h11) {
-                    f10 = h10.f35440g;
-                    f11 = h11.f35440g;
+                    f10 = h10.f36008g;
+                    f11 = h11.f36008g;
                     R = 0.5f;
                 }
-                this.f35493h.d((int) (f10 + 0.5f + (((f11 - f10) - this.f35490e.f35440g) * R)));
-                this.f35494i.d(this.f35493h.f35440g + this.f35490e.f35440g);
+                this.f36061h.d((int) (f10 + 0.5f + (((f11 - f10) - this.f36058e.f36008g) * R)));
+                this.f36062i.d(this.f36061h.f36008g + this.f36058e.f36008g);
             }
         }
     }

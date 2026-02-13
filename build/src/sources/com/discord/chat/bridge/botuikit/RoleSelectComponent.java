@@ -150,10 +150,10 @@ public final class RoleSelectComponent extends SearchableSelectComponent {
         compositeEncoder.k(serialDescriptor, 2, ActionComponentState.Serializer.INSTANCE, roleSelectComponent.getState());
         compositeEncoder.y(serialDescriptor, 3, roleSelectComponent.getCustomId());
         if (compositeEncoder.z(serialDescriptor, 4) || roleSelectComponent.getPlaceholder() != null) {
-            compositeEncoder.o(serialDescriptor, 4, n2.f50033a, roleSelectComponent.getPlaceholder());
+            compositeEncoder.o(serialDescriptor, 4, n2.f50601a, roleSelectComponent.getPlaceholder());
         }
         if (compositeEncoder.z(serialDescriptor, 5) || roleSelectComponent.getAccessibilityLabel() != null) {
-            compositeEncoder.o(serialDescriptor, 5, n2.f50033a, roleSelectComponent.getAccessibilityLabel());
+            compositeEncoder.o(serialDescriptor, 5, n2.f50601a, roleSelectComponent.getAccessibilityLabel());
         }
         compositeEncoder.w(serialDescriptor, 6, roleSelectComponent.getMinValues());
         compositeEncoder.w(serialDescriptor, 7, roleSelectComponent.getMaxValues());

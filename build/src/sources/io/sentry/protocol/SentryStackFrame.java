@@ -23,49 +23,49 @@ public final class SentryStackFrame implements w1 {
     private w6 H;
 
     /* renamed from: d  reason: collision with root package name */
-    private List f29588d;
+    private List f30156d;
 
     /* renamed from: e  reason: collision with root package name */
-    private List f29589e;
+    private List f30157e;
 
     /* renamed from: i  reason: collision with root package name */
-    private Map f29590i;
+    private Map f30158i;
 
     /* renamed from: o  reason: collision with root package name */
-    private List f29591o;
+    private List f30159o;
 
     /* renamed from: p  reason: collision with root package name */
-    private String f29592p;
+    private String f30160p;
 
     /* renamed from: q  reason: collision with root package name */
-    private String f29593q;
+    private String f30161q;
 
     /* renamed from: r  reason: collision with root package name */
-    private String f29594r;
+    private String f30162r;
 
     /* renamed from: s  reason: collision with root package name */
-    private Integer f29595s;
+    private Integer f30163s;
 
     /* renamed from: t  reason: collision with root package name */
-    private Integer f29596t;
+    private Integer f30164t;
 
     /* renamed from: u  reason: collision with root package name */
-    private String f29597u;
+    private String f30165u;
 
     /* renamed from: v  reason: collision with root package name */
-    private String f29598v;
+    private String f30166v;
 
     /* renamed from: w  reason: collision with root package name */
-    private Boolean f29599w;
+    private Boolean f30167w;
 
     /* renamed from: x  reason: collision with root package name */
-    private String f29600x;
+    private String f30168x;
 
     /* renamed from: y  reason: collision with root package name */
-    private Boolean f29601y;
+    private Boolean f30169y;
 
     /* renamed from: z  reason: collision with root package name */
-    private String f29602z;
+    private String f30170z;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements m1 {
@@ -209,34 +209,34 @@ public final class SentryStackFrame implements w1 {
                 }
                 switch (c10) {
                     case 0:
-                        sentryStackFrame.f29589e = (List) e3Var.Z1();
+                        sentryStackFrame.f30157e = (List) e3Var.Z1();
                         break;
                     case 1:
                         sentryStackFrame.A = e3Var.r1();
                         break;
                     case 2:
-                        sentryStackFrame.f29599w = e3Var.w0();
+                        sentryStackFrame.f30167w = e3Var.w0();
                         break;
                     case 3:
                         sentryStackFrame.G = e3Var.r1();
                         break;
                     case 4:
-                        sentryStackFrame.f29595s = e3Var.l1();
+                        sentryStackFrame.f30163s = e3Var.l1();
                         break;
                     case 5:
-                        sentryStackFrame.f29594r = e3Var.r1();
+                        sentryStackFrame.f30162r = e3Var.r1();
                         break;
                     case 6:
-                        sentryStackFrame.f29601y = e3Var.w0();
+                        sentryStackFrame.f30169y = e3Var.w0();
                         break;
                     case 7:
                         sentryStackFrame.E = e3Var.r1();
                         break;
                     case '\b':
-                        sentryStackFrame.f29600x = e3Var.r1();
+                        sentryStackFrame.f30168x = e3Var.r1();
                         break;
                     case '\t':
-                        sentryStackFrame.f29592p = e3Var.r1();
+                        sentryStackFrame.f30160p = e3Var.r1();
                         break;
                     case '\n':
                         sentryStackFrame.B = e3Var.r1();
@@ -245,31 +245,31 @@ public final class SentryStackFrame implements w1 {
                         sentryStackFrame.H = (w6) e3Var.I0(iLogger, new w6.a());
                         break;
                     case '\f':
-                        sentryStackFrame.f29590i = (Map) e3Var.Z1();
+                        sentryStackFrame.f30158i = (Map) e3Var.Z1();
                         break;
                     case '\r':
-                        sentryStackFrame.f29596t = e3Var.l1();
+                        sentryStackFrame.f30164t = e3Var.l1();
                         break;
                     case 14:
                         sentryStackFrame.C = e3Var.r1();
                         break;
                     case 15:
-                        sentryStackFrame.f29588d = (List) e3Var.Z1();
+                        sentryStackFrame.f30156d = (List) e3Var.Z1();
                         break;
                     case 16:
                         sentryStackFrame.D = e3Var.r1();
                         break;
                     case 17:
-                        sentryStackFrame.f29598v = e3Var.r1();
+                        sentryStackFrame.f30166v = e3Var.r1();
                         break;
                     case ChatViewRecyclerTypes.EPHEMERAL_INDICATION /* 18 */:
-                        sentryStackFrame.f29593q = e3Var.r1();
+                        sentryStackFrame.f30161q = e3Var.r1();
                         break;
                     case ChatViewRecyclerTypes.INTERACTION_STATUS /* 19 */:
-                        sentryStackFrame.f29597u = e3Var.r1();
+                        sentryStackFrame.f30165u = e3Var.r1();
                         break;
                     case 20:
-                        sentryStackFrame.f29602z = e3Var.r1();
+                        sentryStackFrame.f30170z = e3Var.r1();
                         break;
                     default:
                         if (concurrentHashMap == null) {
@@ -290,15 +290,15 @@ public final class SentryStackFrame implements w1 {
     }
 
     public void B(String str) {
-        this.f29592p = str;
+        this.f30160p = str;
     }
 
     public void C(String str) {
-        this.f29593q = str;
+        this.f30161q = str;
     }
 
     public void D(Boolean bool) {
-        this.f29599w = bool;
+        this.f30167w = bool;
     }
 
     public void E(String str) {
@@ -306,7 +306,7 @@ public final class SentryStackFrame implements w1 {
     }
 
     public void F(Integer num) {
-        this.f29595s = num;
+        this.f30163s = num;
     }
 
     public void G(w6 w6Var) {
@@ -314,19 +314,19 @@ public final class SentryStackFrame implements w1 {
     }
 
     public void H(String str) {
-        this.f29594r = str;
+        this.f30162r = str;
     }
 
     public void I(Boolean bool) {
-        this.f29601y = bool;
+        this.f30169y = bool;
     }
 
     public void J(String str) {
-        this.f29600x = str;
+        this.f30168x = str;
     }
 
     public void K(String str) {
-        this.f29602z = str;
+        this.f30170z = str;
     }
 
     public void L(Map map) {
@@ -336,7 +336,7 @@ public final class SentryStackFrame implements w1 {
     public boolean equals(Object obj) {
         if (obj != null && SentryStackFrame.class == obj.getClass()) {
             SentryStackFrame sentryStackFrame = (SentryStackFrame) obj;
-            if (Objects.equals(this.f29588d, sentryStackFrame.f29588d) && Objects.equals(this.f29589e, sentryStackFrame.f29589e) && Objects.equals(this.f29590i, sentryStackFrame.f29590i) && Objects.equals(this.f29591o, sentryStackFrame.f29591o) && Objects.equals(this.f29592p, sentryStackFrame.f29592p) && Objects.equals(this.f29593q, sentryStackFrame.f29593q) && Objects.equals(this.f29594r, sentryStackFrame.f29594r) && Objects.equals(this.f29595s, sentryStackFrame.f29595s) && Objects.equals(this.f29596t, sentryStackFrame.f29596t) && Objects.equals(this.f29597u, sentryStackFrame.f29597u) && Objects.equals(this.f29598v, sentryStackFrame.f29598v) && Objects.equals(this.f29599w, sentryStackFrame.f29599w) && Objects.equals(this.f29600x, sentryStackFrame.f29600x) && Objects.equals(this.f29601y, sentryStackFrame.f29601y) && Objects.equals(this.f29602z, sentryStackFrame.f29602z) && Objects.equals(this.A, sentryStackFrame.A) && Objects.equals(this.B, sentryStackFrame.B) && Objects.equals(this.C, sentryStackFrame.C) && Objects.equals(this.D, sentryStackFrame.D) && Objects.equals(this.E, sentryStackFrame.E) && Objects.equals(this.F, sentryStackFrame.F) && Objects.equals(this.G, sentryStackFrame.G) && Objects.equals(this.H, sentryStackFrame.H)) {
+            if (Objects.equals(this.f30156d, sentryStackFrame.f30156d) && Objects.equals(this.f30157e, sentryStackFrame.f30157e) && Objects.equals(this.f30158i, sentryStackFrame.f30158i) && Objects.equals(this.f30159o, sentryStackFrame.f30159o) && Objects.equals(this.f30160p, sentryStackFrame.f30160p) && Objects.equals(this.f30161q, sentryStackFrame.f30161q) && Objects.equals(this.f30162r, sentryStackFrame.f30162r) && Objects.equals(this.f30163s, sentryStackFrame.f30163s) && Objects.equals(this.f30164t, sentryStackFrame.f30164t) && Objects.equals(this.f30165u, sentryStackFrame.f30165u) && Objects.equals(this.f30166v, sentryStackFrame.f30166v) && Objects.equals(this.f30167w, sentryStackFrame.f30167w) && Objects.equals(this.f30168x, sentryStackFrame.f30168x) && Objects.equals(this.f30169y, sentryStackFrame.f30169y) && Objects.equals(this.f30170z, sentryStackFrame.f30170z) && Objects.equals(this.A, sentryStackFrame.A) && Objects.equals(this.B, sentryStackFrame.B) && Objects.equals(this.C, sentryStackFrame.C) && Objects.equals(this.D, sentryStackFrame.D) && Objects.equals(this.E, sentryStackFrame.E) && Objects.equals(this.F, sentryStackFrame.F) && Objects.equals(this.G, sentryStackFrame.G) && Objects.equals(this.H, sentryStackFrame.H)) {
                 return true;
             }
         }
@@ -344,44 +344,44 @@ public final class SentryStackFrame implements w1 {
     }
 
     public int hashCode() {
-        return Objects.hash(this.f29588d, this.f29589e, this.f29590i, this.f29591o, this.f29592p, this.f29593q, this.f29594r, this.f29595s, this.f29596t, this.f29597u, this.f29598v, this.f29599w, this.f29600x, this.f29601y, this.f29602z, this.A, this.B, this.C, this.D, this.E, this.F, this.G, this.H);
+        return Objects.hash(this.f30156d, this.f30157e, this.f30158i, this.f30159o, this.f30160p, this.f30161q, this.f30162r, this.f30163s, this.f30164t, this.f30165u, this.f30166v, this.f30167w, this.f30168x, this.f30169y, this.f30170z, this.A, this.B, this.C, this.D, this.E, this.F, this.G, this.H);
     }
 
     @Override // io.sentry.w1
     public void serialize(f3 f3Var, ILogger iLogger) {
         f3Var.u();
-        if (this.f29592p != null) {
-            f3Var.e("filename").f(this.f29592p);
+        if (this.f30160p != null) {
+            f3Var.e("filename").f(this.f30160p);
         }
-        if (this.f29593q != null) {
-            f3Var.e("function").f(this.f29593q);
+        if (this.f30161q != null) {
+            f3Var.e("function").f(this.f30161q);
         }
-        if (this.f29594r != null) {
-            f3Var.e("module").f(this.f29594r);
+        if (this.f30162r != null) {
+            f3Var.e("module").f(this.f30162r);
         }
-        if (this.f29595s != null) {
-            f3Var.e("lineno").i(this.f29595s);
+        if (this.f30163s != null) {
+            f3Var.e("lineno").i(this.f30163s);
         }
-        if (this.f29596t != null) {
-            f3Var.e("colno").i(this.f29596t);
+        if (this.f30164t != null) {
+            f3Var.e("colno").i(this.f30164t);
         }
-        if (this.f29597u != null) {
-            f3Var.e("abs_path").f(this.f29597u);
+        if (this.f30165u != null) {
+            f3Var.e("abs_path").f(this.f30165u);
         }
-        if (this.f29598v != null) {
-            f3Var.e("context_line").f(this.f29598v);
+        if (this.f30166v != null) {
+            f3Var.e("context_line").f(this.f30166v);
         }
-        if (this.f29599w != null) {
-            f3Var.e("in_app").k(this.f29599w);
+        if (this.f30167w != null) {
+            f3Var.e("in_app").k(this.f30167w);
         }
-        if (this.f29600x != null) {
-            f3Var.e("package").f(this.f29600x);
+        if (this.f30168x != null) {
+            f3Var.e("package").f(this.f30168x);
         }
-        if (this.f29601y != null) {
-            f3Var.e("native").k(this.f29601y);
+        if (this.f30169y != null) {
+            f3Var.e("native").k(this.f30169y);
         }
-        if (this.f29602z != null) {
-            f3Var.e("platform").f(this.f29602z);
+        if (this.f30170z != null) {
+            f3Var.e("platform").f(this.f30170z);
         }
         if (this.A != null) {
             f3Var.e("image_addr").f(this.A);
@@ -404,17 +404,17 @@ public final class SentryStackFrame implements w1 {
         if (this.H != null) {
             f3Var.e("lock").j(iLogger, this.H);
         }
-        List list = this.f29588d;
+        List list = this.f30156d;
         if (list != null && !list.isEmpty()) {
-            f3Var.e("pre_context").j(iLogger, this.f29588d);
+            f3Var.e("pre_context").j(iLogger, this.f30156d);
         }
-        List list2 = this.f29589e;
+        List list2 = this.f30157e;
         if (list2 != null && !list2.isEmpty()) {
-            f3Var.e("post_context").j(iLogger, this.f29589e);
+            f3Var.e("post_context").j(iLogger, this.f30157e);
         }
-        Map map = this.f29590i;
+        Map map = this.f30158i;
         if (map != null && !map.isEmpty()) {
-            f3Var.e("vars").j(iLogger, this.f29590i);
+            f3Var.e("vars").j(iLogger, this.f30158i);
         }
         Map map2 = this.F;
         if (map2 != null) {
@@ -428,22 +428,22 @@ public final class SentryStackFrame implements w1 {
     }
 
     public Integer v() {
-        return this.f29596t;
+        return this.f30164t;
     }
 
     public String w() {
-        return this.f29592p;
+        return this.f30160p;
     }
 
     public String x() {
-        return this.f29593q;
+        return this.f30161q;
     }
 
     public Integer y() {
-        return this.f29595s;
+        return this.f30163s;
     }
 
     public String z() {
-        return this.f29594r;
+        return this.f30162r;
     }
 }

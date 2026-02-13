@@ -7,20 +7,20 @@ import j0.t;
 public final class a extends t.b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final int f30651a;
+    private final int f31219a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final int f30652b;
+    private final int f31220b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final c.a f30653c;
+    private final c.a f31221c;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public a(int i10, int i11, c.a aVar) {
-        this.f30651a = i10;
-        this.f30652b = i11;
+        this.f31219a = i10;
+        this.f31220b = i11;
         if (aVar != null) {
-            this.f30653c = aVar;
+            this.f31221c = aVar;
             return;
         }
         throw new NullPointerException("Null completer");
@@ -28,17 +28,17 @@ public final class a extends t.b {
 
     @Override // j0.t.b
     c.a a() {
-        return this.f30653c;
+        return this.f31221c;
     }
 
     @Override // j0.t.b
     int b() {
-        return this.f30651a;
+        return this.f31219a;
     }
 
     @Override // j0.t.b
     int c() {
-        return this.f30652b;
+        return this.f31220b;
     }
 
     public boolean equals(Object obj) {
@@ -47,7 +47,7 @@ public final class a extends t.b {
         }
         if (obj instanceof t.b) {
             t.b bVar = (t.b) obj;
-            if (this.f30651a == bVar.b() && this.f30652b == bVar.c() && this.f30653c.equals(bVar.a())) {
+            if (this.f31219a == bVar.b() && this.f31220b == bVar.c() && this.f31221c.equals(bVar.a())) {
                 return true;
             }
         }
@@ -55,10 +55,10 @@ public final class a extends t.b {
     }
 
     public int hashCode() {
-        return ((((this.f30651a ^ 1000003) * 1000003) ^ this.f30652b) * 1000003) ^ this.f30653c.hashCode();
+        return ((((this.f31219a ^ 1000003) * 1000003) ^ this.f31220b) * 1000003) ^ this.f31221c.hashCode();
     }
 
     public String toString() {
-        return "PendingSnapshot{jpegQuality=" + this.f30651a + ", rotationDegrees=" + this.f30652b + ", completer=" + this.f30653c + "}";
+        return "PendingSnapshot{jpegQuality=" + this.f31219a + ", rotationDegrees=" + this.f31220b + ", completer=" + this.f31221c + "}";
     }
 }

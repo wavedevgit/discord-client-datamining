@@ -24,7 +24,6 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = 1;
     var1 = var6[var1];
     var1 = var5.bind(var0)(var1);
-    var8 = var1.StyleSheet;
     var1 = var1.View;
     var _closure1_slot3 = var1;
     var1 = 2;
@@ -52,7 +51,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'STREAM_FAILED';
     var1.STREAM_FAILED = var4;
     var _closure1_slot8 = var1;
-    var7 = var8.create;
+    var4 = 5;
+    var4 = var6[var4];
+    var8 = var5.bind(var0)(var4);
+    var7 = var8.createStyles;
     var4 = {};
     var9 = {
         'alignItems': 'center',
@@ -60,7 +62,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         'backgroundColor': null,
         'padding': 8
     };
-    var10 = 5;
+    var10 = 6;
     var13 = var6[var10];
     var13 = var11.bind(var0)(var13);
     var13 = var13.unsafe_rawColors;
@@ -102,20 +104,20 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4.button = var9;
     var4 = var7.bind(var8)(var4);
     var _closure1_slot9 = var4;
-    var4 = 17;
+    var4 = 18;
     var4 = var6[var4];
     var6 = var5.bind(var0)(var4);
     var5 = var6.fileFinishedImporting;
     var4 = 'components_native/calls/stream/VideoEmptyState.tsx';
     var4 = var5.bind(var6)(var4);
     var3 = function arg0() {
-        _fun66249: for (var _fun66249_ip = 0;;) switch (_fun66249_ip) {
+        _fun64960: for (var _fun64960_ip = 0;;) switch (_fun64960_ip) {
             case 0:
                 var7 = arg0;
                 var2 = var7.type;
                 var5 = var7.style;
                 var11 = var7.avError;
-                var14 = var7.removeSplashImage;
+                var15 = var7.removeSplashImage;
                 var4 = var7.removeCloseButton;
                 var0 = var7.stream;
                 var _closure2_slot0 = var0;
@@ -128,189 +130,187 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     'stream': 0
                 };
                 var6 = null;
-                var26 = var3;
-                var25 = null;
-                var1 = silentSetPrototypeOf(var26, var25);
-                var26 = {};
-                var25 = var7;
-                var24 = var3;
-                var8 = copyDataProperties(var26, var25, var24);
+                var27 = var3;
+                var26 = null;
+                var1 = silentSetPrototypeOf(var27, var26);
+                var27 = {};
+                var26 = var7;
+                var25 = var3;
+                var8 = copyDataProperties(var27, var26, var25);
                 var3 = undefined;
                 var _closure2_slot1 = var3;
+                var1 = _closure1_slot9;
+                var13 = var1.bind(var3)();
                 var1 = _closure1_slot8;
                 var1 = var1.STREAM_ENDED;
                 if (!(var1 !== var2)) {
-                    _fun66249_ip = 346;
-                    continue _fun66249
+                    _fun64960_ip = 346;
+                    continue _fun64960
                 }
-            case 106:
+            case 114:
                 var1 = _closure1_slot8;
                 var1 = var1.STREAM_FAILED;
                 if (!(var1 !== var2)) {
-                    _fun66249_ip = 146;
-                    continue _fun66249
+                    _fun64960_ip = 154;
+                    continue _fun64960
                 }
-            case 120:
+            case 128:
                 var1 = _closure1_slot8;
                 var1 = var1.NONE;
                 var7 = undefined;
                 if (!(var1 === var2)) {
-                    _fun66249_ip = 543;
-                    continue _fun66249
+                    _fun64960_ip = 535;
+                    continue _fun64960
                 }
-            case 139:
+            case 147:
                 var7 = null;
-                _fun66249_ip = 543;
-                continue _fun66249;
-            case 146:
-                var13 = _closure1_slot7;
+                _fun64960_ip = 535;
+                continue _fun64960;
+            case 154:
+                var14 = _closure1_slot7;
                 var12 = _closure1_slot6;
                 var1 = {};
-                var16 = !var14;
-                if (!var16) {
-                    _fun66249_ip = 214;
-                    continue _fun66249
+                var17 = !var15;
+                if (!var17) {
+                    _fun64960_ip = 218;
+                    continue _fun64960
                 }
-            case 162:
+            case 170:
+                var19 = _closure1_slot5;
+                var18 = _closure1_slot0;
+                var20 = _closure1_slot2;
+                var16 = 10;
+                var16 = var20[var16];
+                var16 = var18.bind(var3)(var16);
+                var18 = var16.StreamFailed;
+                var16 = {};
+                var20 = var13.placeholderImage;
+                var16.style = var20;
+                var17 = var19.bind(var3)(var18, var16);
+            case 218:
+                var16 = new Array(2);
+                var16[0] = var17;
+                var19 = _closure1_slot5;
+                var23 = _closure1_slot0;
+                var24 = _closure1_slot2;
+                var17 = 8;
+                var17 = var24[var17];
+                var17 = var23.bind(var3)(var17);
+                var18 = var17.LegacyText;
+                var17 = {};
+                var20 = var13.placeholderText;
+                var17.style = var20;
+                var20 = 9;
+                var21 = var24[var20];
+                var21 = var23.bind(var3)(var21);
+                var22 = var21.intl;
+                var21 = var22.string;
+                var20 = var24[var20];
+                var20 = var23.bind(var3)(var20);
+                var20 = var20.t;
+                var20 = var20.rSlOep;
+                var20 = var21.bind(var22)(var20);
+                var17.children = var20;
+                var17 = var19.bind(var3)(var18, var17);
+                var16[1] = var17;
+                var1.children = var16;
+                var7 = var14.bind(var3)(var12, var1);
+                _fun64960_ip = 535;
+                continue _fun64960;
+            case 346:
+                var14 = _closure1_slot7;
+                var12 = _closure1_slot6;
+                var1 = {};
+                var16 = !var15;
+                if (!var16) {
+                    _fun64960_ip = 410;
+                    continue _fun64960
+                }
+            case 362:
                 var18 = _closure1_slot5;
                 var17 = _closure1_slot0;
                 var19 = _closure1_slot2;
-                var15 = 9;
+                var15 = 7;
                 var15 = var19[var15];
                 var15 = var17.bind(var3)(var15);
-                var17 = var15.StreamFailed;
+                var17 = var15.StreamEnded;
                 var15 = {};
-                var19 = _closure1_slot9;
-                var19 = var19.placeholderImage;
+                var19 = var13.placeholderImage;
                 var15.style = var19;
                 var16 = var18.bind(var3)(var17, var15);
-            case 214:
+            case 410:
                 var15 = new Array(2);
                 var15[0] = var16;
                 var18 = _closure1_slot5;
-                var22 = _closure1_slot0;
+                var20 = _closure1_slot0;
                 var23 = _closure1_slot2;
-                var16 = 7;
+                var16 = 8;
                 var16 = var23[var16];
-                var16 = var22.bind(var3)(var16);
+                var16 = var20.bind(var3)(var16);
                 var17 = var16.LegacyText;
                 var16 = {};
-                var19 = _closure1_slot9;
-                var19 = var19.placeholderText;
+                var19 = var13.placeholderText;
                 var16.style = var19;
-                var19 = 8;
-                var20 = var23[var19];
-                var20 = var22.bind(var3)(var20);
-                var21 = var20.intl;
-                var20 = var21.string;
+                var19 = 9;
+                var21 = var23[var19];
+                var21 = var20.bind(var3)(var21);
+                var22 = var21.intl;
+                var21 = var22.formatToMarkdownString;
                 var19 = var23[var19];
-                var19 = var22.bind(var3)(var19);
+                var19 = var20.bind(var3)(var19);
                 var19 = var19.t;
-                var19 = var19.rSlOep;
-                var19 = var20.bind(var21)(var19);
+                var20 = var19["1Ww0Hi"];
+                var19 = {};
+                var19 = var21.bind(var22)(var20, var19);
                 var16.children = var19;
                 var16 = var18.bind(var3)(var17, var16);
                 var15[1] = var16;
                 var1.children = var15;
-                var7 = var13.bind(var3)(var12, var1);
-                _fun66249_ip = 543;
-                continue _fun66249;
-            case 346:
-                var13 = _closure1_slot7;
-                var12 = _closure1_slot6;
-                var1 = {};
-                var15 = !var14;
-                if (!var15) {
-                    _fun66249_ip = 414;
-                    continue _fun66249
-                }
-            case 362:
-                var17 = _closure1_slot5;
-                var16 = _closure1_slot0;
-                var18 = _closure1_slot2;
-                var14 = 6;
-                var14 = var18[var14];
-                var14 = var16.bind(var3)(var14);
-                var16 = var14.StreamEnded;
-                var14 = {};
-                var18 = _closure1_slot9;
-                var18 = var18.placeholderImage;
-                var14.style = var18;
-                var15 = var17.bind(var3)(var16, var14);
-            case 414:
-                var14 = new Array(2);
-                var14[0] = var15;
-                var17 = _closure1_slot5;
-                var19 = _closure1_slot0;
-                var22 = _closure1_slot2;
-                var15 = 7;
-                var15 = var22[var15];
-                var15 = var19.bind(var3)(var15);
-                var16 = var15.LegacyText;
-                var15 = {};
-                var18 = _closure1_slot9;
-                var18 = var18.placeholderText;
-                var15.style = var18;
-                var18 = 8;
-                var20 = var22[var18];
-                var20 = var19.bind(var3)(var20);
-                var21 = var20.intl;
-                var20 = var21.formatToMarkdownString;
-                var18 = var22[var18];
-                var18 = var19.bind(var3)(var18);
-                var18 = var18.t;
-                var19 = var18["1Ww0Hi"];
-                var18 = {};
-                var18 = var20.bind(var21)(var19, var18);
-                var15.children = var18;
-                var15 = var17.bind(var3)(var16, var15);
-                var14[1] = var15;
-                var1.children = var14;
-                var7 = var13.bind(var3)(var12, var1);
-            case 543:
+                var7 = var14.bind(var3)(var12, var1);
+            case 535:
                 if (!(var6 == var11)) {
-                    _fun66249_ip = 623;
-                    continue _fun66249
+                    _fun64960_ip = 615;
+                    continue _fun64960
                 }
-            case 547:
+            case 539:
                 var1 = _closure1_slot8;
                 var1 = var1.STREAM_FAILED;
-                var16 = null;
+                var17 = null;
                 if (!(var2 === var1)) {
-                    _fun66249_ip = 660;
-                    continue _fun66249
+                    _fun64960_ip = 652;
+                    continue _fun64960
                 }
-            case 563:
-                var13 = _closure1_slot0;
-                var14 = _closure1_slot2;
-                var1 = 10;
-                var2 = var14[var1];
-                var12 = var13.bind(var3)(var2);
+            case 555:
+                var14 = _closure1_slot0;
+                var15 = _closure1_slot2;
+                var1 = 11;
+                var2 = var15[var1];
+                var12 = var14.bind(var3)(var2);
                 var2 = var12.getErrorInfo;
-                var1 = var14[var1];
-                var1 = var13.bind(var3)(var1);
+                var1 = var15[var1];
+                var1 = var14.bind(var3)(var1);
                 var1 = var1.AVError;
                 var1 = var1.STREAM_FAILED_TO_START;
                 var1 = var2.bind(var12)(var1);
-                var16 = var1.errorCode;
-                _fun66249_ip = 660;
-                continue _fun66249;
-            case 623:
+                var17 = var1.errorCode;
+                _fun64960_ip = 652;
+                continue _fun64960;
+            case 615:
                 var2 = _closure1_slot0;
                 var12 = _closure1_slot2;
-                var1 = 10;
+                var1 = 11;
                 var1 = var12[var1];
                 var2 = var2.bind(var3)(var1);
                 var1 = var2.getErrorInfo;
                 var1 = var1.bind(var2)(var11);
-                var16 = var1.errorCode;
-            case 660:
+                var17 = var1.errorCode;
+            case 652:
                 var11 = _closure1_slot0;
                 var2 = _closure1_slot2;
-                var1 = 11;
+                var1 = 12;
                 var1 = var2[var1];
-                var13 = var11.bind(var3)(var1);
-                var12 = var13.useStateFromStores;
+                var14 = var11.bind(var3)(var1);
+                var12 = var14.useStateFromStores;
                 var1 = _closure1_slot4;
                 var11 = new Array(1);
                 var11[0] = var1;
@@ -325,21 +325,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = var1.bind(var2)(var0);
                     return var0;
                 };
-                var0 = var12.bind(var13)(var11, var0, var1);
+                var0 = var12.bind(var14)(var11, var0, var1);
                 _closure2_slot1 = var0;
                 var1 = _closure1_slot1;
-                var0 = 12;
+                var0 = 13;
                 var0 = var2[var0];
                 var1 = var1.bind(var3)(var0);
                 var0 = function() { // Environment: var9
-                    _fun66251: for (var _fun66251_ip = 0;;) switch (_fun66251_ip) {
+                    _fun64962: for (var _fun64962_ip = 0;;) switch (_fun64962_ip) {
                         case 0:
                             var2 = _closure2_slot1;
                             var1 = null;
                             var1 = var1 != var2;
                             if (!var1) {
-                                _fun66251_ip = 30;
-                                continue _fun66251
+                                _fun64962_ip = 30;
+                                continue _fun64962
                             }
                         case 16:
                             var3 = _closure2_slot1;
@@ -347,18 +347,18 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1 = var2.bind(var3)();
                         case 30:
                             if (!var1) {
-                                _fun66251_ip = 96;
-                                continue _fun66251
+                                _fun64962_ip = 96;
+                                continue _fun64962
                             }
                         case 33:
                             var5 = _closure1_slot0;
                             var6 = _closure1_slot2;
-                            var1 = 13;
+                            var1 = 14;
                             var1 = var6[var1];
                             var4 = undefined;
                             var2 = var5.bind(var4)(var1);
                             var1 = var2.stopStream;
-                            var3 = 14;
+                            var3 = 15;
                             var3 = var6[var3];
                             var4 = var5.bind(var4)(var3);
                             var3 = var4.encodeStreamKey;
@@ -374,11 +374,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = _closure1_slot7;
                 var1 = _closure1_slot3;
                 var0 = {};
-                var26 = var0;
-                var25 = var8;
-                var8 = copyDataProperties(var26, var25);
-                var8 = _closure1_slot9;
-                var11 = var8.container;
+                var27 = var0;
+                var26 = var8;
+                var8 = copyDataProperties(var27, var26);
+                var11 = var13.container;
                 var8 = new Array(2);
                 var8[0] = var11;
                 var8[1] = var5;
@@ -386,54 +385,53 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0[var5] = var8;
                 var5 = new Array(3);
                 var5[0] = var7;
-                var6 = var6 != var16;
+                var6 = var6 != var17;
                 if (!var6) {
-                    _fun66249_ip = 929;
-                    continue _fun66249
+                    _fun64960_ip = 913;
+                    continue _fun64960
                 }
-            case 821:
+            case 805:
                 var11 = _closure1_slot5;
-                var13 = _closure1_slot0;
-                var17 = _closure1_slot2;
-                var7 = 15;
-                var7 = var17[var7];
-                var7 = var13.bind(var3)(var7);
+                var14 = _closure1_slot0;
+                var18 = _closure1_slot2;
+                var7 = 16;
+                var7 = var18[var7];
+                var7 = var14.bind(var3)(var7);
                 var8 = var7.Text;
                 var7 = {
                     'variant': 'text-sm/semibold',
                     'color': 'text-muted',
                     'selectable': true
                 };
-                var12 = 8;
-                var14 = var17[var12];
-                var14 = var13.bind(var3)(var14);
-                var15 = var14.intl;
-                var14 = var15.formatToPlainString;
-                var12 = var17[var12];
-                var12 = var13.bind(var3)(var12);
+                var12 = 9;
+                var15 = var18[var12];
+                var15 = var14.bind(var3)(var15);
+                var16 = var15.intl;
+                var15 = var16.formatToPlainString;
+                var12 = var18[var12];
+                var12 = var14.bind(var3)(var12);
                 var12 = var12.t;
-                var13 = var12.ejOT95;
+                var14 = var12.ejOT95;
                 var12 = {};
-                var12.errorCode = var16;
-                var12 = var14.bind(var15)(var13, var12);
+                var12.errorCode = var17;
+                var12 = var15.bind(var16)(var14, var12);
                 var7.children = var12;
                 var6 = var11.bind(var3)(var8, var7);
-            case 929:
+            case 913:
                 var5[1] = var6;
                 var4 = !var4;
                 if (!var4) {
-                    _fun66249_ip = 1081;
-                    continue _fun66249
+                    _fun64960_ip = 1059;
+                    continue _fun64960
                 }
-            case 942:
+            case 926:
                 var8 = _closure1_slot5;
                 var12 = _closure1_slot1;
                 var14 = _closure1_slot2;
-                var11 = 16;
+                var11 = 17;
                 var6 = var14[var11];
                 var7 = var12.bind(var3)(var6);
                 var6 = {};
-                var13 = _closure1_slot9;
                 var13 = var13.button;
                 var6.style = var13;
                 var11 = var14[var11];
@@ -442,7 +440,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = var11.GREY;
                 var6.color = var11;
                 var13 = _closure1_slot0;
-                var10 = 8;
+                var10 = 9;
                 var11 = var14[var10];
                 var11 = var13.bind(var3)(var11);
                 var12 = var11.intl;
@@ -456,12 +454,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = function() {
                     var4 = _closure1_slot0;
                     var5 = _closure1_slot2;
-                    var0 = 13;
+                    var0 = 14;
                     var1 = var5[var0];
                     var0 = undefined;
                     var3 = var4.bind(var0)(var1);
                     var2 = var3.stopStream;
-                    var1 = 14;
+                    var1 = 15;
                     var1 = var5[var1];
                     var5 = var4.bind(var0)(var1);
                     var4 = var5.encodeStreamKey;
@@ -472,7 +470,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var6.onPress = var9;
                 var4 = var8.bind(var3)(var7, var6);
-            case 1081:
+            case 1059:
                 var5[2] = var4;
                 var4 = 'children';
                 var0[var4] = var5;
@@ -483,4 +481,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var3;
     var2.VideoEmptyTypes = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1372, 660, 33, 671, 8135, 4852, 1234, 8138, 8133, 566, 4109, 8141, 3502, 3938, 4849, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1372, 660, 33, 1297, 671, 8066, 4883, 1235, 8069, 8064, 566, 4109, 8072, 3502, 3938, 4880, 2]);

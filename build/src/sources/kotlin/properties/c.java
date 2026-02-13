@@ -3,7 +3,7 @@ package kotlin.properties;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.reflect.KProperty;
 import org.jetbrains.annotations.NotNull;
-/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public abstract class c implements ReadWriteProperty {
     private Object value;
 

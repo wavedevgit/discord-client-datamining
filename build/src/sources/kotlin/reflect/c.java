@@ -1,7 +1,7 @@
 package kotlin.reflect;
 
 import kotlin.jvm.internal.Intrinsics;
-/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public abstract class c {
     public static final Object a(KClass kClass, Object obj) {
         Intrinsics.checkNotNullParameter(kClass, "<this>");

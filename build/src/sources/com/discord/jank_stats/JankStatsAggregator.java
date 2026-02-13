@@ -78,7 +78,7 @@ public final class JankStatsAggregator {
         synchronized (this) {
             jankStats = JankStats.f4759f.a(window, listener);
             INSTANCE.setJankHeuristicMultiplier(1.0f);
-            Unit unit = Unit.f31988a;
+            Unit unit = Unit.f32556a;
         }
     }
 

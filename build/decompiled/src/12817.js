@@ -1,142 +1,59 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var2 = exports;
+    var1 = exports;
     var0 = global;
     var4 = var0.Object;
     var3 = var4.defineProperty;
-    var1 = {};
+    var2 = {};
     var0 = true;
-    var1.value = var0;
+    var2.value = var0;
     var0 = '__esModule';
-    var0 = var3.bind(var4)(var2, var0, var1);
-    var0 = undefined;
-    var2.default = var0;
-    var1 = function() {
-        var0 = function(arg0) { // Environment: var0
-            var0 = arg0;
-            var _closure3_slot0 = var0;
-            var0 = {};
-            var _closure3_slot1 = var0;
-            var0 = {};
-            var1 = function arg0() {
-                _fun98291: for (var _fun98291_ip = 0;;) switch (_fun98291_ip) {
-                    case 0:
-                        var0 = arg0;
-                        var3 = var0.type;
-                        var0 = var0.payload;
-                        var _closure4_slot0 = var0;
-                        var4 = var3.substr;
-                        var0 = 0;
-                        var2 = 5;
-                        var4 = var4.bind(var3)(var0, var2);
-                        var0 = 'repl.';
-                        if (!(var0 === var4)) {
-                            _fun98291_ip = 174;
-                            continue _fun98291
-                        }
-                    case 50:
-                        var0 = var3.substr;
-                        var2 = var0.bind(var3)(var2);
-                        var0 = 'ls';
-                        if (!(var0 !== var2)) {
-                            _fun98291_ip = 127;
-                            continue _fun98291
-                        }
-                    case 71:
-                        var0 = 'execute';
-                        if (!(var0 === var2)) {
-                            _fun98291_ip = 174;
-                            continue _fun98291
-                        }
-                    case 79:
-                        var3 = _closure3_slot0;
-                        var2 = var3.send;
-                        var4 = function() { // Environment: var1
-                            var0 = _closure4_slot0;
-                            var0 = eval(var0);
-                            return var0;
-                        };
-                        var1 = var4.call;
-                        var0 = _closure3_slot1;
-                        var1 = var1.bind(var4)(var0);
-                        var0 = 'repl.execute.response';
-                        var0 = var2.bind(var3)(var0, var1);
-                        _fun98291_ip = 174;
-                        continue _fun98291;
-                    case 127:
-                        var3 = _closure3_slot0;
-                        var2 = var3.send;
-                        var1 = global;
-                        var4 = var1.Object;
-                        var1 = var4.keys;
-                        var0 = _closure3_slot1;
-                        var1 = var1.bind(var4)(var0);
-                        var0 = 'repl.ls.response';
-                        var0 = var2.bind(var3)(var0, var1);
-                    case 174:
-                        var0 = undefined;
-                        return var0;
-                }
-            };
-            var0.onCommand = var1;
-            var1 = {};
-            var2 = function arg0, arg1() {
-                _fun98293: for (var _fun98293_ip = 0;;) switch (_fun98293_ip) {
-                    case 0:
-                        var2 = arg0;
-                        if (var2) {
-                            _fun98293_ip = 42;
-                            continue _fun98293
-                        }
-                    case 6:
-                        var0 = global;
-                        var3 = var0.Error;
-                        var0 = var3.prototype;
-                        var1 = Object.create(var0, {
-                            constructor: {
-                                value: var3
-                            }
-                        });
-                        var4 = 'You must provide a name for your REPL';
-                        var5 = var1;
-                        var0 = new var5[var3](var4, var3);
-                        var0 = var0 instanceof Object ? var0 : var1;
-                        throw var0;
-                    case 42:
-                        var1 = _closure3_slot1;
-                        var1 = var1[var2];
-                        if (var1) {
-                            _fun98293_ip = 71;
-                            continue _fun98293
-                        }
-                    case 56:
-                        var1 = _closure3_slot1;
-                        var0 = arg1;
-                        var1[var2] = var0;
-                        var0 = undefined;
-                        return var0;
-                    case 71:
-                        var0 = global;
-                        var2 = var0.Error;
-                        var0 = var2.prototype;
-                        var1 = Object.create(var0, {
-                            constructor: {
-                                value: var2
-                            }
-                        });
-                        var4 = 'You are already REPLing an item with that name';
-                        var5 = var1;
-                        var0 = new var5[var2](var4, var3);
-                        var0 = var0 instanceof Object ? var0 : var1;
-                        throw var0;
-                }
-            };
-            var1.repl = var2;
-            var0.features = var1;
+    var0 = var3.bind(var4)(var1, var0, var2);
+    var0 = function arg0() {
+        _fun98379: for (var _fun98379_ip = 0;;) switch (_fun98379_ip) {
+            case 0:
+                var2 = arg0;
+                var1 = var2.match;
+                var0 = /^(?:https?:\\/\\ / ) ? (\[
+            [ ^ \]
+        ] + \] | [ ^ \/:\s]+)(?::\d+)?(?:[\/?#]|$)/;
+            var2 = var1.bind(var2)(var0);
+            var0 = null;
+            var1 = var0 == var2;
+            var0 = undefined;
+            if (var1) {
+                _fun98379_ip = 46;
+                continue _fun98379
+            }
+            case 39:
+            var1 = 1;
+            var0 = var2[var1];
+            case 46:
+            var2 = 'string';
+            var1 = typeof var0;
+            if (!(var2 === var1)) {
+                _fun98379_ip = 59;
+                continue _fun98379
+            }
+            case 57:
             return var0;
-        };
-        return var0;
+            case 59:
+            var0 = global;
+            var2 = var0.Error;
+            var0 = var2.prototype;
+            var1 = Object.create(var0, {
+                constructor: {
+                    value: var2
+                }
+            });
+            var3 = 'Invalid URL - host not found';
+            var4 = var1;
+            var0 = new var4[var2](var3, var2);
+            var0 = var0 instanceof Object ? var0 : var1;
+            throw var0;
+        }
     };
-    var2.default = var1;
+    var1.getHostFromUrl = var0;
+    var0 = undefined;
     return var0;
 })(undefined, undefined, undefined, undefined, undefined, undefined, []);

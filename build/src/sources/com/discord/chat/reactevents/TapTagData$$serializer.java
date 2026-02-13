@@ -41,7 +41,7 @@ public /* synthetic */ class TapTagData$$serializer implements h0 {
     @Override // tt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        return new KSerializer[]{MessageId$$serializer.INSTANCE, ChannelId$$serializer.INSTANCE, rt.a.u(n2.f50033a)};
+        return new KSerializer[]{MessageId$$serializer.INSTANCE, ChannelId$$serializer.INSTANCE, rt.a.u(n2.f50601a)};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -57,7 +57,7 @@ public /* synthetic */ class TapTagData$$serializer implements h0 {
         if (b10.p()) {
             MessageId messageId = (MessageId) b10.y(serialDescriptor, 0, MessageId$$serializer.INSTANCE, null);
             str = messageId != null ? messageId.m1093unboximpl() : null;
-            str2 = (String) b10.n(serialDescriptor, 2, n2.f50033a, null);
+            str2 = (String) b10.n(serialDescriptor, 2, n2.f50601a, null);
             channelId = (ChannelId) b10.y(serialDescriptor, 1, ChannelId$$serializer.INSTANCE, null);
             i10 = 7;
         } else {
@@ -80,7 +80,7 @@ public /* synthetic */ class TapTagData$$serializer implements h0 {
                 } else if (o10 != 2) {
                     throw new b0(o10);
                 } else {
-                    str3 = (String) b10.n(serialDescriptor, 2, n2.f50033a, str3);
+                    str3 = (String) b10.n(serialDescriptor, 2, n2.f50601a, str3);
                     i11 |= 4;
                 }
             }

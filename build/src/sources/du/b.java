@@ -87,7 +87,7 @@ public final class b implements bu.d {
             }
         }
         if (iVar == null) {
-            iVar = hu.f.f27720d;
+            iVar = hu.f.f28288d;
         }
         f21938i = iVar;
         if (Boolean.getBoolean("net.time4j.format.iso.decimal.dot")) {

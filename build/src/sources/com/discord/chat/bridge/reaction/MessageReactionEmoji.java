@@ -93,15 +93,15 @@ public final class MessageReactionEmoji implements ReactionView.Emoji {
 
     public static final /* synthetic */ void write$Self$chat_release(MessageReactionEmoji messageReactionEmoji, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
         if (compositeEncoder.z(serialDescriptor, 0) || messageReactionEmoji.getName() != null) {
-            compositeEncoder.o(serialDescriptor, 0, n2.f50033a, messageReactionEmoji.getName());
+            compositeEncoder.o(serialDescriptor, 0, n2.f50601a, messageReactionEmoji.getName());
         }
         compositeEncoder.y(serialDescriptor, 1, messageReactionEmoji.getSrc());
         compositeEncoder.y(serialDescriptor, 2, messageReactionEmoji.getDisplayName());
         if (compositeEncoder.z(serialDescriptor, 3) || messageReactionEmoji.getId() != null) {
-            compositeEncoder.o(serialDescriptor, 3, n2.f50033a, messageReactionEmoji.getId());
+            compositeEncoder.o(serialDescriptor, 3, n2.f50601a, messageReactionEmoji.getId());
         }
         if (compositeEncoder.z(serialDescriptor, 4) || messageReactionEmoji.getAnimated() != null) {
-            compositeEncoder.o(serialDescriptor, 4, h.f49997a, messageReactionEmoji.getAnimated());
+            compositeEncoder.o(serialDescriptor, 4, h.f50565a, messageReactionEmoji.getAnimated());
         }
     }
 

@@ -17,10 +17,10 @@ public final class R {
     public static final class drawable {
         public static int lock = 0x7f080570;
         public static int lock_overlay = 0x7f080571;
-        public static int premium_tier0_gradient = 0x7f080731;
-        public static int premium_tier0_gradient_circle = 0x7f080732;
-        public static int premium_tier2_gradient = 0x7f080733;
-        public static int premium_tier2_gradient_circle = 0x7f080734;
+        public static int premium_tier0_gradient = 0x7f08072d;
+        public static int premium_tier0_gradient_circle = 0x7f08072e;
+        public static int premium_tier2_gradient = 0x7f08072f;
+        public static int premium_tier2_gradient_circle = 0x7f080730;
 
         private drawable() {
         }

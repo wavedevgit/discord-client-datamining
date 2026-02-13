@@ -366,7 +366,7 @@ public class d extends me.f implements h {
 
     private static void x(HttpURLConnection httpURLConnection, long j10) {
         int i10;
-        if (httpURLConnection != null && (i10 = w0.f39038a) >= 19 && i10 <= 20) {
+        if (httpURLConnection != null && (i10 = w0.f39606a) >= 19 && i10 <= 20) {
             try {
                 InputStream inputStream = httpURLConnection.getInputStream();
                 if (j10 == -1) {
@@ -491,10 +491,10 @@ public class d extends me.f implements h {
                 if (errorStream != null) {
                     bArr = w0.i1(errorStream);
                 } else {
-                    bArr = w0.f39043f;
+                    bArr = w0.f39611f;
                 }
             } catch (IOException unused) {
-                bArr = w0.f39043f;
+                bArr = w0.f39611f;
             }
             byte[] bArr2 = bArr;
             s();

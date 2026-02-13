@@ -9,7 +9,7 @@ import kotlin.jvm.internal.Intrinsics;
 public abstract class e {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final a f56526a = new a(null);
+    public static final a f57094a = new a(null);
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -50,17 +50,17 @@ public abstract class e {
                 return format.getNumber(key);
             }
             try {
-                Result.a aVar = Result.f31985e;
+                Result.a aVar = Result.f32553e;
                 b10 = Result.b(Integer.valueOf(format.getInteger(key)));
             } catch (Throwable th2) {
-                Result.a aVar2 = Result.f31985e;
+                Result.a aVar2 = Result.f32553e;
                 b10 = Result.b(kotlin.c.a(th2));
             }
             if (Result.e(b10) != null) {
                 try {
                     b11 = Result.b(Float.valueOf(format.getFloat(key)));
                 } catch (Throwable th3) {
-                    Result.a aVar3 = Result.f31985e;
+                    Result.a aVar3 = Result.f32553e;
                     b11 = Result.b(kotlin.c.a(th3));
                 }
                 b10 = b11;
@@ -86,10 +86,10 @@ public abstract class e {
     }
 
     public static final Number a(MediaFormat mediaFormat, Number number) {
-        return f56526a.b(mediaFormat, number);
+        return f57094a.b(mediaFormat, number);
     }
 
     public static final Number b(MediaFormat mediaFormat, String str) {
-        return f56526a.c(mediaFormat, str);
+        return f57094a.c(mediaFormat, str);
     }
 }

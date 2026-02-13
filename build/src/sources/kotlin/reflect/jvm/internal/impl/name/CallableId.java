@@ -12,25 +12,25 @@ public final class CallableId {
     public static final Companion Companion = new Companion(null);
 
     /* renamed from: f  reason: collision with root package name */
-    private static final Name f33797f;
+    private static final Name f34365f;
 
     /* renamed from: g  reason: collision with root package name */
-    private static final FqName f33798g;
+    private static final FqName f34366g;
 
     /* renamed from: a  reason: collision with root package name */
-    private final FqName f33799a;
+    private final FqName f34367a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final FqName f33800b;
+    private final FqName f34368b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Name f33801c;
+    private final Name f34369c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final ClassId f33802d;
+    private final ClassId f34370d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final FqName f33803e;
+    private final FqName f34371e;
 
     @SourceDebugExtension({"SMAP\nCallableId.kt\nKotlin\n*S Kotlin\n*F\n+ 1 CallableId.kt\norg/jetbrains/kotlin/name/CallableId$Companion\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,134:1\n1#2:135\n*E\n"})
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
@@ -45,16 +45,16 @@ public final class CallableId {
 
     static {
         Name name = SpecialNames.LOCAL;
-        f33797f = name;
-        f33798g = FqName.Companion.topLevel(name);
+        f34365f = name;
+        f34366g = FqName.Companion.topLevel(name);
     }
 
     private CallableId(FqName fqName, FqName fqName2, Name name, ClassId classId, FqName fqName3) {
-        this.f33799a = fqName;
-        this.f33800b = fqName2;
-        this.f33801c = name;
-        this.f33802d = classId;
-        this.f33803e = fqName3;
+        this.f34367a = fqName;
+        this.f34368b = fqName2;
+        this.f34369c = name;
+        this.f34370d = classId;
+        this.f34371e = fqName3;
     }
 
     public boolean equals(Object obj) {
@@ -65,7 +65,7 @@ public final class CallableId {
             return false;
         }
         CallableId callableId = (CallableId) obj;
-        if (Intrinsics.areEqual(this.f33799a, callableId.f33799a) && Intrinsics.areEqual(this.f33800b, callableId.f33800b) && Intrinsics.areEqual(this.f33801c, callableId.f33801c)) {
+        if (Intrinsics.areEqual(this.f34367a, callableId.f34367a) && Intrinsics.areEqual(this.f34368b, callableId.f34368b) && Intrinsics.areEqual(this.f34369c, callableId.f34369c)) {
             return true;
         }
         return false;
@@ -73,27 +73,27 @@ public final class CallableId {
 
     public int hashCode() {
         int i10;
-        int hashCode = (527 + this.f33799a.hashCode()) * 31;
-        FqName fqName = this.f33800b;
+        int hashCode = (527 + this.f34367a.hashCode()) * 31;
+        FqName fqName = this.f34368b;
         if (fqName != null) {
             i10 = fqName.hashCode();
         } else {
             i10 = 0;
         }
-        return ((hashCode + i10) * 31) + this.f33801c.hashCode();
+        return ((hashCode + i10) * 31) + this.f34369c.hashCode();
     }
 
     @NotNull
     public String toString() {
         StringBuilder sb2 = new StringBuilder();
-        sb2.append(StringsKt.I(this.f33799a.asString(), '.', '/', false, 4, null));
+        sb2.append(StringsKt.I(this.f34367a.asString(), '.', '/', false, 4, null));
         sb2.append("/");
-        FqName fqName = this.f33800b;
+        FqName fqName = this.f34368b;
         if (fqName != null) {
             sb2.append(fqName);
             sb2.append(".");
         }
-        sb2.append(this.f33801c);
+        sb2.append(this.f34369c);
         return sb2.toString();
     }
 

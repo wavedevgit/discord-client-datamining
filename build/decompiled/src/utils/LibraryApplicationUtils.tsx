@@ -8,31 +8,31 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
     var3 = function arg0() {
-        _fun30944: for (var _fun30944_ip = 0;;) switch (_fun30944_ip) {
+        _fun30974: for (var _fun30974_ip = 0;;) switch (_fun30974_ip) {
             case 0:
                 var2 = arg0;
                 var1 = null;
                 var3 = var1 == var2;
                 var0 = null;
                 if (var3) {
-                    _fun30944_ip = 82;
-                    continue _fun30944
+                    _fun30974_ip = 82;
+                    continue _fun30974
                 }
             case 14:
                 var5 = var2.type;
                 var4 = _closure1_slot6;
                 var4 = var4.INSTALLING;
                 if (!(var5 !== var4)) {
-                    _fun30944_ip = 76;
-                    continue _fun30944
+                    _fun30974_ip = 76;
+                    continue _fun30974
                 }
             case 36:
                 var5 = var2.type;
                 var4 = _closure1_slot6;
                 var4 = var4.UPDATING;
                 if (!(var5 !== var4)) {
-                    _fun30944_ip = 76;
-                    continue _fun30944
+                    _fun30974_ip = 76;
+                    continue _fun30974
                 }
             case 55:
                 var4 = var2.type;
@@ -40,8 +40,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var3.UNINSTALLING;
                 var1 = null;
                 if (!(var4 === var3)) {
-                    _fun30944_ip = 79;
-                    continue _fun30944
+                    _fun30974_ip = 79;
+                    continue _fun30974
                 }
             case 76:
                 var1 = var2;
@@ -120,7 +120,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.convertComboId = var4;
     var4 = function arg0, arg1() {
-        _fun30947: for (var _fun30947_ip = 0;;) switch (_fun30947_ip) {
+        _fun30977: for (var _fun30977_ip = 0;;) switch (_fun30977_ip) {
             case 0:
                 var3 = arg1;
                 var2 = _closure1_slot0;
@@ -133,8 +133,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var2.getSetting;
                 var0 = var0.bind(var2)();
                 if (!var0) {
-                    _fun30947_ip = 143;
-                    continue _fun30947
+                    _fun30977_ip = 143;
+                    continue _fun30977
                 }
             case 47:
                 var2 = _closure1_slot0;
@@ -147,8 +147,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = _closure1_slot7;
                 var0 = var0.INVISIBLE;
                 if (!(var2 !== var0)) {
-                    _fun30947_ip = 143;
-                    continue _fun30947
+                    _fun30977_ip = 143;
+                    continue _fun30977
                 }
             case 94:
                 var2 = var3.getActiveLibraryApplication;
@@ -157,8 +157,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = null;
                 var0 = var0 == var3;
                 if (var0) {
-                    _fun30947_ip = 141;
-                    continue _fun30947
+                    _fun30977_ip = 141;
+                    continue _fun30977
                 }
             case 117:
                 var2 = var3.hasFlag;
@@ -175,15 +175,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.shouldShareApplicationActivity = var4;
     var4 = function arg0, arg1() {
-        _fun30948: for (var _fun30948_ip = 0;;) switch (_fun30948_ip) {
+        _fun30978: for (var _fun30978_ip = 0;;) switch (_fun30978_ip) {
             case 0:
                 var3 = arg1;
                 var2 = 100;
                 var1 = 0;
                 var0 = var2;
                 if (!(var1 !== var3)) {
-                    _fun30948_ip = 26;
-                    continue _fun30948
+                    _fun30978_ip = 26;
+                    continue _fun30978
                 }
             case 15:
                 var1 = arg0;
@@ -195,22 +195,22 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.calculateProgressPercentage = var4;
     var4 = function arg0, arg1, arg2() {
-        _fun30949: for (var _fun30949_ip = 0;;) switch (_fun30949_ip) {
+        _fun30979: for (var _fun30979_ip = 0;;) switch (_fun30979_ip) {
             case 0:
                 var3 = arg1;
                 var0 = null;
                 var0 = var0 != var3;
                 if (!var0) {
-                    _fun30949_ip = 72;
-                    continue _fun30949
+                    _fun30979_ip = 72;
+                    continue _fun30979
                 }
             case 12:
                 var1 = arg2;
                 var1 = var1.enabled;
                 var1 = !var1;
                 if (var1) {
-                    _fun30949_ip = 53;
-                    continue _fun30949
+                    _fun30979_ip = 53;
+                    continue _fun30979
                 }
             case 26:
                 var4 = var3.hasFlag;
@@ -220,8 +220,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = !var2;
             case 53:
                 if (!var1) {
-                    _fun30949_ip = 69;
-                    continue _fun30949
+                    _fun30979_ip = 69;
+                    continue _fun30979
                 }
             case 56:
                 var2 = var3.isHidden;
@@ -239,7 +239,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var3 = arg0;
         var2 = var3.reduce;
         var1 = function(arg0, arg1) { // Environment: var0
-            _fun30951: for (var _fun30951_ip = 0;;) switch (_fun30951_ip) {
+            _fun30981: for (var _fun30981_ip = 0;;) switch (_fun30981_ip) {
                 case 0:
                     var3 = arg0;
                     var4 = arg1;
@@ -249,8 +249,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var6 = null;
                     var0 = var3;
                     if (!(var6 != var2)) {
-                        _fun30951_ip = 122;
-                        continue _fun30951
+                        _fun30981_ip = 122;
+                        continue _fun30981
                     }
                 case 29:
                     var4 = var4.type;
@@ -258,8 +258,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = var1.UP_TO_DATE;
                     var0 = var3;
                     if (!(var4 !== var1)) {
-                        _fun30951_ip = 122;
-                        continue _fun30951
+                        _fun30981_ip = 122;
+                        continue _fun30981
                     }
                 case 51:
                     var1 = {};
@@ -290,7 +290,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getCombinedProgress = var3;
     var1 = function arg0() {
-        _fun30952: for (var _fun30952_ip = 0;;) switch (_fun30952_ip) {
+        _fun30982: for (var _fun30982_ip = 0;;) switch (_fun30982_ip) {
             case 0:
                 var4 = arg0;
                 var0 = var4.isDiscordApplication;
@@ -298,8 +298,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = !var0;
                 var0 = !var1;
                 if (var1) {
-                    _fun30952_ip = 56;
-                    continue _fun30952
+                    _fun30982_ip = 56;
+                    continue _fun30982
                 }
             case 22:
                 var3 = var4.isEntitled;

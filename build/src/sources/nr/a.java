@@ -9,11 +9,11 @@ import kotlin.jvm.internal.Intrinsics;
 public final class a implements h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final b f38356a;
+    private final b f38924a;
 
     public a(b operations) {
         Intrinsics.checkNotNullParameter(operations, "operations");
-        this.f38356a = operations;
+        this.f38924a = operations;
     }
 
     private final Object b(Object obj, Object obj2) {
@@ -43,14 +43,14 @@ public final class a implements h {
         Object b10;
         Object p02 = CollectionsKt.p0(map.keySet());
         Object obj2 = map.get(p02);
-        if (CollectionsKt.d0(this.f38356a.a().keySet(), p02)) {
-            cv.a aVar = (cv.a) this.f38356a.a().get(p02);
+        if (CollectionsKt.d0(this.f38924a.a().keySet(), p02)) {
+            cv.a aVar = (cv.a) this.f38924a.a().get(p02);
             if (aVar != null) {
                 return aVar.e(obj2, obj, this);
             }
             return null;
         }
-        cv.b d10 = d(this.f38356a.b(), p02);
+        cv.b d10 = d(this.f38924a.b(), p02);
         if (obj2 instanceof List) {
             Iterable<Object> iterable = (Iterable) obj2;
             b10 = new ArrayList(CollectionsKt.w(iterable, 10));

@@ -29,14 +29,17 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 2;
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
-    var7 = var3.StyleSheet;
-    var _closure1_slot5 = var7;
+    var3 = var3.StyleSheet;
+    var _closure1_slot5 = var3;
     var3 = 3;
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
     var3 = var3.jsx;
     var _closure1_slot6 = var3;
-    var6 = var7.create;
+    var3 = 6;
+    var3 = var5[var3];
+    var7 = var4.bind(var0)(var3);
+    var6 = var7.createStyles;
     var3 = {};
     var8 = {
         'flex': 1,
@@ -45,24 +48,24 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.screens = var8;
     var3 = var6.bind(var7)(var3);
     var _closure1_slot7 = var3;
-    var3 = 6;
+    var3 = 7;
     var3 = var5[var3];
     var5 = var4.bind(var0)(var3);
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/freeze/native/NativeFreezeScreens.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun101791: for (var _fun101791_ip = 0;;) switch (_fun101791_ip) {
+        _fun101914: for (var _fun101914_ip = 0;;) switch (_fun101914_ip) {
             case 0:
                 var0 = arg0;
                 var7 = var0.children;
-                var9 = var0.activeIndex;
-                var _closure2_slot0 = var9;
+                var10 = var0.activeIndex;
+                var _closure2_slot0 = var10;
                 var6 = var0.detachInactiveScreens;
                 var3 = undefined;
                 if (!(var6 === var3)) {
-                    _fun101791_ip = 34;
-                    continue _fun101791
+                    _fun101914_ip = 34;
+                    continue _fun101914
                 }
             case 32:
                 var6 = true;
@@ -70,8 +73,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var _closure2_slot1 = var6;
                 var1 = var0.lazy;
                 if (!(var1 === var3)) {
-                    _fun101791_ip = 50;
-                    continue _fun101791
+                    _fun101914_ip = 50;
+                    continue _fun101914
                 }
             case 48:
                 var1 = true;
@@ -79,8 +82,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var _closure2_slot2 = var1;
                 var1 = var0.unmountOnBlur;
                 if (!(var1 === var3)) {
-                    _fun101791_ip = 66;
-                    continue _fun101791
+                    _fun101914_ip = 66;
+                    continue _fun101914
                 }
             case 64:
                 var1 = false;
@@ -88,8 +91,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var _closure2_slot3 = var1;
                 var1 = var0.freezeOnBlur;
                 if (!(var1 === var3)) {
-                    _fun101791_ip = 82;
-                    continue _fun101791
+                    _fun101914_ip = 82;
+                    continue _fun101914
                 }
             case 80:
                 var1 = true;
@@ -97,70 +100,72 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var _closure2_slot4 = var1;
                 var0 = var0.preloadIndices;
                 if (!(var0 === var3)) {
-                    _fun101791_ip = 102;
-                    continue _fun101791
+                    _fun101914_ip = 102;
+                    continue _fun101914
                 }
             case 98:
                 var0 = new Array(0);
             case 102:
                 var _closure2_slot5 = var0;
                 var _closure2_slot6 = var3;
-                var1 = _closure1_slot1;
-                var2 = _closure1_slot2;
-                var0 = 4;
-                var0 = var2[var0];
-                var2 = var1.bind(var3)(var0);
-                var10 = 0;
-                var1 = var9 >= var10;
-                if (!var1) {
-                    _fun101791_ip = 175;
-                    continue _fun101791
-                }
-            case 142:
-                var0 = global;
-                var8 = var0.Array;
-                var0 = var8.isArray;
-                var8 = var0.bind(var8)(var7);
-                var0 = 1;
-                if (!var8) {
-                    _fun101791_ip = 171;
-                    continue _fun101791
-                }
-            case 166:
-                var0 = var7.length;
-            case 171:
-                var1 = var9 < var0;
-            case 175:
-                var0 = 'NativeFreezeScreens: invalid activeIndex';
-                var0 = var2.bind(var3)(var1, var0);
-                var2 = _closure1_slot4;
-                var1 = var2.useState;
-                var0 = new Array(1);
-                var0[0] = var9;
-                var2 = var1.bind(var2)(var0);
-                var1 = _closure1_slot3;
-                var0 = 2;
-                var0 = var1.bind(var3)(var2, var0);
-                var2 = var0[var10];
-                _closure2_slot6 = var2;
-                var8 = 1;
-                var1 = var0[var8];
-                var0 = var2.includes;
-                var0 = var0.bind(var2)(var9);
-                if (var0) {
-                    _fun101791_ip = 280;
-                    continue _fun101791
-                }
-            case 250:
-                var0 = new Array(1);
-                var13 = var0;
-                var12 = var2;
+                var1 = _closure1_slot7;
+                var5 = var1.bind(var3)();
+                var2 = _closure1_slot1;
+                var8 = _closure1_slot2;
+                var1 = 4;
+                var1 = var8[var1];
+                var8 = var2.bind(var3)(var1);
                 var11 = 0;
-                var2 = arraySpread(var13, var12, var11);
-                var0[var2] = var9;
-                var2 = var2 + var8;
-                var0 = var1.bind(var3)(var0);
-            case 280:
+                var2 = var10 >= var11;
+                if (!var2) {
+                    _fun101914_ip = 183;
+                    continue _fun101914
+                }
+            case 150:
+                var1 = global;
+                var9 = var1.Array;
+                var1 = var9.isArray;
+                var9 = var1.bind(var9)(var7);
+                var1 = 1;
+                if (!var9) {
+                    _fun101914_ip = 179;
+                    continue _fun101914
+                }
+            case 174:
+                var1 = var7.length;
+            case 179:
+                var2 = var10 < var1;
+            case 183:
+                var1 = 'NativeFreezeScreens: invalid activeIndex';
+                var1 = var8.bind(var3)(var2, var1);
+                var8 = _closure1_slot4;
+                var2 = var8.useState;
+                var1 = new Array(1);
+                var1[0] = var10;
+                var8 = var2.bind(var8)(var1);
+                var2 = _closure1_slot3;
+                var1 = 2;
+                var1 = var2.bind(var3)(var8, var1);
+                var8 = var1[var11];
+                _closure2_slot6 = var8;
+                var9 = 1;
+                var2 = var1[var9];
+                var1 = var8.includes;
+                var1 = var1.bind(var8)(var10);
+                if (var1) {
+                    _fun101914_ip = 288;
+                    continue _fun101914
+                }
+            case 258:
+                var1 = new Array(1);
+                var14 = var1;
+                var13 = var8;
+                var12 = 0;
+                var8 = arraySpread(var14, var13, var12);
+                var1[var8] = var10;
+                var8 = var8 + var9;
+                var1 = var2.bind(var3)(var1);
+            case 288:
                 var2 = _closure1_slot6;
                 var1 = _closure1_slot0;
                 var8 = _closure1_slot2;
@@ -172,7 +177,6 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.enabled = var6;
                 var6 = true;
                 var0.hasTwoStates = var6;
-                var5 = _closure1_slot7;
                 var5 = var5.screens;
                 var0.style = var5;
                 var5 = 'native-freeze-screens-container';
@@ -183,30 +187,30 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var5.bind(var6)(var7);
                 var6 = var7;
                 if (var5) {
-                    _fun101791_ip = 383;
-                    continue _fun101791
+                    _fun101914_ip = 387;
+                    continue _fun101914
                 }
-            case 372:
+            case 376:
                 var5 = new Array(1);
                 var5[0] = var7;
                 var6 = var5;
-            case 383:
+            case 387:
                 var5 = var6.map;
                 var4 = function(arg0, arg1) { // Environment: var4
-                    _fun101792: for (var _fun101792_ip = 0;;) switch (_fun101792_ip) {
+                    _fun101915: for (var _fun101915_ip = 0;;) switch (_fun101915_ip) {
                         case 0:
                             var4 = arg1;
                             var0 = _closure2_slot0;
                             var11 = var0 === var4;
                             var0 = _closure2_slot3;
                             if (!var0) {
-                                _fun101792_ip = 28;
-                                continue _fun101792
+                                _fun101915_ip = 28;
+                                continue _fun101915
                             }
                         case 21:
                             if (var11) {
-                                _fun101792_ip = 28;
-                                continue _fun101792
+                                _fun101915_ip = 28;
+                                continue _fun101915
                             }
                         case 24:
                             var0 = null;
@@ -214,29 +218,29 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         case 28:
                             var0 = _closure2_slot2;
                             if (!var0) {
-                                _fun101792_ip = 76;
-                                continue _fun101792
+                                _fun101915_ip = 76;
+                                continue _fun101915
                             }
                         case 35:
                             var1 = _closure2_slot6;
                             var0 = var1.includes;
                             var0 = var0.bind(var1)(var4);
                             if (var0) {
-                                _fun101792_ip = 76;
-                                continue _fun101792
+                                _fun101915_ip = 76;
+                                continue _fun101915
                             }
                         case 52:
                             if (var11) {
-                                _fun101792_ip = 76;
-                                continue _fun101792
+                                _fun101915_ip = 76;
+                                continue _fun101915
                             }
                         case 55:
                             var1 = _closure2_slot5;
                             var0 = var1.includes;
                             var0 = var0.bind(var1)(var4);
                             if (var0) {
-                                _fun101792_ip = 76;
-                                continue _fun101792
+                                _fun101915_ip = 76;
+                                continue _fun101915
                             }
                         case 72:
                             var0 = null;
@@ -244,8 +248,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         case 76:
                             var6 = 0;
                             if (!var11) {
-                                _fun101792_ip = 84;
-                                continue _fun101792
+                                _fun101915_ip = 84;
+                                continue _fun101915
                             }
                         case 81:
                             var6 = 2;
@@ -266,8 +270,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var8 = {};
                             var9 = -1;
                             if (!var11) {
-                                _fun101792_ip = 152;
-                                continue _fun101792
+                                _fun101915_ip = 152;
+                                continue _fun101915
                             }
                         case 150:
                             var9 = 0;
@@ -294,4 +298,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.NativeFreezeScreens = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 33, 44, 4026, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 33, 44, 4026, 1297, 2]);

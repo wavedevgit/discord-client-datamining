@@ -12,21 +12,21 @@ import st.l;
 public final class b1 extends s0 {
 
     /* renamed from: c  reason: collision with root package name */
-    private final SerialDescriptor f49962c;
+    private final SerialDescriptor f50530c;
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a implements Map.Entry, KMappedMarker {
 
         /* renamed from: d  reason: collision with root package name */
-        private final Object f49963d;
+        private final Object f50531d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final Object f49964e;
+        private final Object f50532e;
 
         public a(Object obj, Object obj2) {
-            this.f49963d = obj;
-            this.f49964e = obj2;
+            this.f50531d = obj;
+            this.f50532e = obj2;
         }
 
         @Override // java.util.Map.Entry
@@ -38,7 +38,7 @@ public final class b1 extends s0 {
                 return false;
             }
             a aVar = (a) obj;
-            if (Intrinsics.areEqual(this.f49963d, aVar.f49963d) && Intrinsics.areEqual(this.f49964e, aVar.f49964e)) {
+            if (Intrinsics.areEqual(this.f50531d, aVar.f50531d) && Intrinsics.areEqual(this.f50532e, aVar.f50532e)) {
                 return true;
             }
             return false;
@@ -46,18 +46,18 @@ public final class b1 extends s0 {
 
         @Override // java.util.Map.Entry
         public Object getKey() {
-            return this.f49963d;
+            return this.f50531d;
         }
 
         @Override // java.util.Map.Entry
         public Object getValue() {
-            return this.f49964e;
+            return this.f50532e;
         }
 
         @Override // java.util.Map.Entry
         public int hashCode() {
             int hashCode;
-            Object obj = this.f49963d;
+            Object obj = this.f50531d;
             int i10 = 0;
             if (obj == null) {
                 hashCode = 0;
@@ -65,7 +65,7 @@ public final class b1 extends s0 {
                 hashCode = obj.hashCode();
             }
             int i11 = hashCode * 31;
-            Object obj2 = this.f49964e;
+            Object obj2 = this.f50532e;
             if (obj2 != null) {
                 i10 = obj2.hashCode();
             }
@@ -78,7 +78,7 @@ public final class b1 extends s0 {
         }
 
         public String toString() {
-            return "MapEntry(key=" + this.f49963d + ", value=" + this.f49964e + ')';
+            return "MapEntry(key=" + this.f50531d + ", value=" + this.f50532e + ')';
         }
     }
 
@@ -87,7 +87,7 @@ public final class b1 extends s0 {
         super(keySerializer, valueSerializer, null);
         Intrinsics.checkNotNullParameter(keySerializer, "keySerializer");
         Intrinsics.checkNotNullParameter(valueSerializer, "valueSerializer");
-        this.f49962c = st.j.d("kotlin.collections.Map.Entry", l.c.f48382a, new SerialDescriptor[0], new Function1() { // from class: tt.a1
+        this.f50530c = st.j.d("kotlin.collections.Map.Entry", l.c.f48950a, new SerialDescriptor[0], new Function1() { // from class: tt.a1
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Object obj) {
                 Unit g10;
@@ -102,12 +102,12 @@ public final class b1 extends s0 {
         Intrinsics.checkNotNullParameter(buildSerialDescriptor, "$this$buildSerialDescriptor");
         st.a.b(buildSerialDescriptor, "key", kSerializer.getDescriptor(), null, false, 12, null);
         st.a.b(buildSerialDescriptor, "value", kSerializer2.getDescriptor(), null, false, 12, null);
-        return Unit.f31988a;
+        return Unit.f32556a;
     }
 
     @Override // kotlinx.serialization.KSerializer, qt.o, kotlinx.serialization.DeserializationStrategy
     public SerialDescriptor getDescriptor() {
-        return this.f49962c;
+        return this.f50530c;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */

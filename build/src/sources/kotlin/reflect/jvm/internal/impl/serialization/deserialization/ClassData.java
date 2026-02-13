@@ -10,46 +10,46 @@ import org.jetbrains.annotations.NotNull;
 public final class ClassData {
 
     /* renamed from: a  reason: collision with root package name */
-    private final NameResolver f34263a;
+    private final NameResolver f34831a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final ProtoBuf.Class f34264b;
+    private final ProtoBuf.Class f34832b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final BinaryVersion f34265c;
+    private final BinaryVersion f34833c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final SourceElement f34266d;
+    private final SourceElement f34834d;
 
     public ClassData(@NotNull NameResolver nameResolver, @NotNull ProtoBuf.Class classProto, @NotNull BinaryVersion metadataVersion, @NotNull SourceElement sourceElement) {
         Intrinsics.checkNotNullParameter(nameResolver, "nameResolver");
         Intrinsics.checkNotNullParameter(classProto, "classProto");
         Intrinsics.checkNotNullParameter(metadataVersion, "metadataVersion");
         Intrinsics.checkNotNullParameter(sourceElement, "sourceElement");
-        this.f34263a = nameResolver;
-        this.f34264b = classProto;
-        this.f34265c = metadataVersion;
-        this.f34266d = sourceElement;
+        this.f34831a = nameResolver;
+        this.f34832b = classProto;
+        this.f34833c = metadataVersion;
+        this.f34834d = sourceElement;
     }
 
     @NotNull
     public final NameResolver component1() {
-        return this.f34263a;
+        return this.f34831a;
     }
 
     @NotNull
     public final ProtoBuf.Class component2() {
-        return this.f34264b;
+        return this.f34832b;
     }
 
     @NotNull
     public final BinaryVersion component3() {
-        return this.f34265c;
+        return this.f34833c;
     }
 
     @NotNull
     public final SourceElement component4() {
-        return this.f34266d;
+        return this.f34834d;
     }
 
     public boolean equals(Object obj) {
@@ -58,17 +58,17 @@ public final class ClassData {
         }
         if (obj instanceof ClassData) {
             ClassData classData = (ClassData) obj;
-            return Intrinsics.areEqual(this.f34263a, classData.f34263a) && Intrinsics.areEqual(this.f34264b, classData.f34264b) && Intrinsics.areEqual(this.f34265c, classData.f34265c) && Intrinsics.areEqual(this.f34266d, classData.f34266d);
+            return Intrinsics.areEqual(this.f34831a, classData.f34831a) && Intrinsics.areEqual(this.f34832b, classData.f34832b) && Intrinsics.areEqual(this.f34833c, classData.f34833c) && Intrinsics.areEqual(this.f34834d, classData.f34834d);
         }
         return false;
     }
 
     public int hashCode() {
-        return (((((this.f34263a.hashCode() * 31) + this.f34264b.hashCode()) * 31) + this.f34265c.hashCode()) * 31) + this.f34266d.hashCode();
+        return (((((this.f34831a.hashCode() * 31) + this.f34832b.hashCode()) * 31) + this.f34833c.hashCode()) * 31) + this.f34834d.hashCode();
     }
 
     @NotNull
     public String toString() {
-        return "ClassData(nameResolver=" + this.f34263a + ", classProto=" + this.f34264b + ", metadataVersion=" + this.f34265c + ", sourceElement=" + this.f34266d + ')';
+        return "ClassData(nameResolver=" + this.f34831a + ", classProto=" + this.f34832b + ", metadataVersion=" + this.f34833c + ", sourceElement=" + this.f34834d + ')';
     }
 }

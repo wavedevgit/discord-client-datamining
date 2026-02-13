@@ -12,31 +12,31 @@ import p8.n;
 public class a {
 
     /* renamed from: h  reason: collision with root package name */
-    private static a f50517h;
+    private static a f51085h;
 
     /* renamed from: i  reason: collision with root package name */
-    private static final long f50518i = TimeUnit.MINUTES.toMillis(2);
+    private static final long f51086i = TimeUnit.MINUTES.toMillis(2);
 
     /* renamed from: b  reason: collision with root package name */
-    private volatile File f50520b;
+    private volatile File f51088b;
 
     /* renamed from: d  reason: collision with root package name */
-    private volatile File f50522d;
+    private volatile File f51090d;
 
     /* renamed from: e  reason: collision with root package name */
-    private long f50523e;
+    private long f51091e;
 
     /* renamed from: a  reason: collision with root package name */
-    private volatile StatFs f50519a = null;
+    private volatile StatFs f51087a = null;
 
     /* renamed from: c  reason: collision with root package name */
-    private volatile StatFs f50521c = null;
+    private volatile StatFs f51089c = null;
 
     /* renamed from: g  reason: collision with root package name */
-    private volatile boolean f50525g = false;
+    private volatile boolean f51093g = false;
 
     /* renamed from: f  reason: collision with root package name */
-    private final Lock f50524f = new ReentrantLock();
+    private final Lock f51092f = new ReentrantLock();
 
     /* renamed from: u8.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
@@ -53,17 +53,17 @@ public class a {
     }
 
     private void b() {
-        if (!this.f50525g) {
-            this.f50524f.lock();
+        if (!this.f51093g) {
+            this.f51092f.lock();
             try {
-                if (!this.f50525g) {
-                    this.f50520b = Environment.getDataDirectory();
-                    this.f50522d = Environment.getExternalStorageDirectory();
+                if (!this.f51093g) {
+                    this.f51088b = Environment.getDataDirectory();
+                    this.f51090d = Environment.getExternalStorageDirectory();
                     g();
-                    this.f50525g = true;
+                    this.f51093g = true;
                 }
             } finally {
-                this.f50524f.unlock();
+                this.f51092f.unlock();
             }
         }
     }
@@ -72,10 +72,10 @@ public class a {
         a aVar;
         synchronized (a.class) {
             try {
-                if (f50517h == null) {
-                    f50517h = new a();
+                if (f51085h == null) {
+                    f51085h = new a();
                 }
-                aVar = f50517h;
+                aVar = f51085h;
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -84,21 +84,21 @@ public class a {
     }
 
     private void e() {
-        if (this.f50524f.tryLock()) {
+        if (this.f51092f.tryLock()) {
             try {
-                if (SystemClock.uptimeMillis() - this.f50523e > f50518i) {
+                if (SystemClock.uptimeMillis() - this.f51091e > f51086i) {
                     g();
                 }
             } finally {
-                this.f50524f.unlock();
+                this.f51092f.unlock();
             }
         }
     }
 
     private void g() {
-        this.f50519a = h(this.f50519a, this.f50520b);
-        this.f50521c = h(this.f50521c, this.f50522d);
-        this.f50523e = SystemClock.uptimeMillis();
+        this.f51087a = h(this.f51087a, this.f51088b);
+        this.f51089c = h(this.f51089c, this.f51090d);
+        this.f51091e = SystemClock.uptimeMillis();
     }
 
     private StatFs h(StatFs statFs, File file) {
@@ -122,9 +122,9 @@ public class a {
         b();
         e();
         if (enumC0693a == EnumC0693a.INTERNAL) {
-            statFs = this.f50519a;
+            statFs = this.f51087a;
         } else {
-            statFs = this.f50521c;
+            statFs = this.f51089c;
         }
         if (statFs != null) {
             return statFs.getBlockSizeLong() * statFs.getAvailableBlocksLong();

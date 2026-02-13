@@ -106,7 +106,7 @@ public final class MediaPlayFinishedAnalytics implements ReactEvent {
         compositeEncoder.w(serialDescriptor, 2, mediaPlayFinishedAnalytics.stallCount);
         compositeEncoder.w(serialDescriptor, 3, mediaPlayFinishedAnalytics.seekCount);
         compositeEncoder.E(serialDescriptor, 4, mediaPlayFinishedAnalytics.firstPlayWaitingMs);
-        n2 n2Var = n2.f50033a;
+        n2 n2Var = n2.f50601a;
         compositeEncoder.o(serialDescriptor, 5, n2Var, mediaPlayFinishedAnalytics.mediaSource);
         compositeEncoder.s(serialDescriptor, 6, mediaPlayFinishedAnalytics.fileDurationSec);
         compositeEncoder.o(serialDescriptor, 7, n2Var, mediaPlayFinishedAnalytics.mimeType);

@@ -9,13 +9,13 @@ import java.util.WeakHashMap;
 public final class v implements b0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Map f30161d = Collections.synchronizedMap(new WeakHashMap());
+    private final Map f30729d = Collections.synchronizedMap(new WeakHashMap());
 
     /* renamed from: e  reason: collision with root package name */
-    private final k7 f30162e;
+    private final k7 f30730e;
 
     public v(k7 k7Var) {
-        this.f30162e = (k7) io.sentry.util.y.c(k7Var, "options are required");
+        this.f30730e = (k7) io.sentry.util.y.c(k7Var, "options are required");
     }
 
     private static List b(Throwable th2) {
@@ -38,19 +38,19 @@ public final class v implements b0 {
 
     @Override // io.sentry.b0
     public SentryEvent h(SentryEvent sentryEvent, Hint hint) {
-        if (this.f30162e.isEnableDeduplication()) {
+        if (this.f30730e.isEnableDeduplication()) {
             Throwable O = sentryEvent.O();
             if (O != null) {
-                if (!this.f30161d.containsKey(O) && !c(this.f30161d, b(O))) {
-                    this.f30161d.put(O, null);
+                if (!this.f30729d.containsKey(O) && !c(this.f30729d, b(O))) {
+                    this.f30729d.put(O, null);
                     return sentryEvent;
                 }
-                this.f30162e.getLogger().c(SentryLevel.DEBUG, "Duplicate Exception detected. Event %s will be discarded.", sentryEvent.G());
+                this.f30730e.getLogger().c(SentryLevel.DEBUG, "Duplicate Exception detected. Event %s will be discarded.", sentryEvent.G());
                 return null;
             }
             return sentryEvent;
         }
-        this.f30162e.getLogger().c(SentryLevel.DEBUG, "Event deduplication is disabled.", new Object[0]);
+        this.f30730e.getLogger().c(SentryLevel.DEBUG, "Event deduplication is disabled.", new Object[0]);
         return sentryEvent;
     }
 }

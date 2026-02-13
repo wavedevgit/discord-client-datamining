@@ -7,29 +7,29 @@ import kotlin.jvm.internal.Intrinsics;
 public final class c {
 
     /* renamed from: a  reason: collision with root package name */
-    private final FallbackMode f30349a;
+    private final FallbackMode f30917a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final ep.f f30350b;
+    private final ep.f f30918b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final b0 f30351c;
+    private final b0 f30919c;
 
     public c(FallbackMode fallbackMode, ep.f environment, b0 savedStateHandle) {
         Intrinsics.checkNotNullParameter(fallbackMode, "fallbackMode");
         Intrinsics.checkNotNullParameter(environment, "environment");
         Intrinsics.checkNotNullParameter(savedStateHandle, "savedStateHandle");
-        this.f30349a = fallbackMode;
-        this.f30350b = environment;
-        this.f30351c = savedStateHandle;
+        this.f30917a = fallbackMode;
+        this.f30918b = environment;
+        this.f30919c = savedStateHandle;
     }
 
     public final ep.f a() {
-        return this.f30350b;
+        return this.f30918b;
     }
 
     public final FallbackMode b() {
-        return this.f30349a;
+        return this.f30917a;
     }
 
     public final so.a c(i fallbackModeManager) {
@@ -38,6 +38,6 @@ public final class c {
     }
 
     public final b0 d() {
-        return this.f30351c;
+        return this.f30919c;
     }
 }

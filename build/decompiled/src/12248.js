@@ -9,16 +9,18 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = var3.registerAsset;
     var1 = {
         '__packager_asset': true,
-        'httpServerLocation': '/assets/design/components/LottieIcon/native/generated/lotties',
+        'httpServerLocation': '/assets/modules/guild_onboarding/native/images',
+        'width': 45,
+        'height': 34.5,
         'scales': null,
-        'hash': '2c315f321285573a3e0f3421e17e59ea',
-        'name': 'NitroGem24',
-        'type': 'lottie'
+        'hash': '5048f3c6d8b18fc7809b7e99f1c62a70',
+        'name': 'stamp-wave',
+        'type': 'png'
     };
-    var4 = [1];
+    var4 = [2, 3];
     var1.scales = var4;
     var2 = var2.bind(var3)(var1);
     var1 = module;
     var1.exports = var2;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1239]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1240]);

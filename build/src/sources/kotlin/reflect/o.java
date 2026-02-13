@@ -8,15 +8,15 @@ import java.util.List;
 import kotlin.collections.CollectionsKt;
 import kotlin.jvm.internal.Intrinsics;
 /* JADX INFO: Access modifiers changed from: package-private */
-/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public final class o implements TypeVariable, Type {
 
     /* renamed from: d  reason: collision with root package name */
-    private final l f34836d;
+    private final l f35404d;
 
     public o(l typeParameter) {
         Intrinsics.checkNotNullParameter(typeParameter, "typeParameter");
-        this.f34836d = typeParameter;
+        this.f35404d = typeParameter;
     }
 
     public boolean equals(Object obj) {
@@ -33,7 +33,7 @@ public final class o implements TypeVariable, Type {
     @Override // java.lang.reflect.TypeVariable
     public Type[] getBounds() {
         Type c10;
-        List<KType> upperBounds = this.f34836d.getUpperBounds();
+        List<KType> upperBounds = this.f35404d.getUpperBounds();
         ArrayList arrayList = new ArrayList(CollectionsKt.w(upperBounds, 10));
         for (KType kType : upperBounds) {
             c10 = p.c(kType, true);
@@ -44,12 +44,12 @@ public final class o implements TypeVariable, Type {
 
     @Override // java.lang.reflect.TypeVariable
     public GenericDeclaration getGenericDeclaration() {
-        throw new as.q("An operation is not implemented: " + ("getGenericDeclaration() is not yet supported for type variables created from KType: " + this.f34836d));
+        throw new as.q("An operation is not implemented: " + ("getGenericDeclaration() is not yet supported for type variables created from KType: " + this.f35404d));
     }
 
     @Override // java.lang.reflect.TypeVariable
     public String getName() {
-        return this.f34836d.getName();
+        return this.f35404d.getName();
     }
 
     @Override // java.lang.reflect.Type

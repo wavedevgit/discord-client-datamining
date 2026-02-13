@@ -24,7 +24,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/virtual_currency/hooks/web/useVirtualCurrencyEnabled.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function(arg0) { // Environment: var1
-        _fun96451: for (var _fun96451_ip = 0;;) switch (_fun96451_ip) {
+        _fun96465: for (var _fun96465_ip = 0;;) switch (_fun96465_ip) {
             case 0:
                 var3 = arg0;
                 var2 = _closure1_slot0;
@@ -37,8 +37,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var1.bind(var2)(var3);
                 var1 = {};
                 if (var2) {
-                    _fun96451_ip = 88;
-                    continue _fun96451
+                    _fun96465_ip = 88;
+                    continue _fun96465
                 }
             case 43:
                 var2 = _closure1_slot1;
@@ -51,8 +51,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.enabled;
                 var1.enabled = var0;
                 var0 = var1;
-                _fun96451_ip = 97;
-                continue _fun96451;
+                _fun96465_ip = 97;
+                continue _fun96465;
             case 88:
                 var2 = false;
                 var1.enabled = var2;
@@ -63,7 +63,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.isVirtualCurrencyEnabled = var3;
     var1 = function(arg0) { // Environment: var1
-        _fun96452: for (var _fun96452_ip = 0;;) switch (_fun96452_ip) {
+        _fun96466: for (var _fun96466_ip = 0;;) switch (_fun96466_ip) {
             case 0:
                 var3 = arg0;
                 var2 = _closure1_slot1;
@@ -82,15 +82,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var1.bind(var2)(var3);
                 var1 = {};
                 if (var2) {
-                    _fun96452_ip = 84;
-                    continue _fun96452
+                    _fun96466_ip = 84;
+                    continue _fun96466
                 }
             case 70:
                 var0 = var0.enabled;
                 var1.enabled = var0;
                 var0 = var1;
-                _fun96452_ip = 93;
-                continue _fun96452;
+                _fun96466_ip = 93;
+                continue _fun96466;
             case 84:
                 var2 = false;
                 var1.enabled = var2;
@@ -101,4 +101,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useVirtualCurrencyEnabled = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3342, 12552, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3345, 12542, 2]);

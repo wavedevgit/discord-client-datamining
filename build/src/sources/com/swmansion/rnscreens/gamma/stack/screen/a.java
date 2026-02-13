@@ -105,7 +105,7 @@ public final class a extends ViewGroup implements sn.a {
         Intrinsics.checkNotNullParameter(reactContext, "reactContext");
         this.f19193d = reactContext;
         this.f19195i = new WeakReference(null);
-        kotlin.properties.a aVar = kotlin.properties.a.f32075a;
+        kotlin.properties.a aVar = kotlin.properties.a.f32643a;
         this.f19196o = new b(EnumC0229a.f19199d, this);
     }
 

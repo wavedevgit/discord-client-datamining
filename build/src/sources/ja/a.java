@@ -12,70 +12,70 @@ import ha.e;
 public class a implements ha.a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ka.a f30870a;
+    private final ka.a f31438a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final e f30871b;
+    private final e f31439b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final ha.c f30872c;
+    private final ha.c f31440c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Rect f30873d;
+    private final Rect f31441d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final int[] f30874e;
+    private final int[] f31442e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final int[] f30875f;
+    private final int[] f31443f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final int f30876g;
+    private final int f31444g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final ha.b[] f30877h;
+    private final ha.b[] f31445h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final Rect f30878i = new Rect();
+    private final Rect f31446i = new Rect();
 
     /* renamed from: j  reason: collision with root package name */
-    private final Rect f30879j = new Rect();
+    private final Rect f31447j = new Rect();
 
     /* renamed from: k  reason: collision with root package name */
-    private final boolean f30880k;
+    private final boolean f31448k;
 
     /* renamed from: l  reason: collision with root package name */
-    private final Paint f30881l;
+    private final Paint f31449l;
 
     /* renamed from: m  reason: collision with root package name */
-    private Bitmap f30882m;
+    private Bitmap f31450m;
 
     public a(ka.a aVar, e eVar, Rect rect, boolean z10) {
-        this.f30870a = aVar;
-        this.f30871b = eVar;
+        this.f31438a = aVar;
+        this.f31439b = eVar;
         ha.c d10 = eVar.d();
-        this.f30872c = d10;
+        this.f31440c = d10;
         int[] A = d10.A();
-        this.f30874e = A;
+        this.f31442e = A;
         aVar.a(A);
-        this.f30876g = aVar.c(A);
-        this.f30875f = aVar.b(A);
-        this.f30873d = m(d10, rect);
-        this.f30880k = z10;
-        this.f30877h = new ha.b[d10.a()];
-        for (int i10 = 0; i10 < this.f30872c.a(); i10++) {
-            this.f30877h[i10] = this.f30872c.c(i10);
+        this.f31444g = aVar.c(A);
+        this.f31443f = aVar.b(A);
+        this.f31441d = m(d10, rect);
+        this.f31448k = z10;
+        this.f31445h = new ha.b[d10.a()];
+        for (int i10 = 0; i10 < this.f31440c.a(); i10++) {
+            this.f31445h[i10] = this.f31440c.c(i10);
         }
         Paint paint = new Paint();
-        this.f30881l = paint;
+        this.f31449l = paint;
         paint.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.CLEAR));
     }
 
     private synchronized void l() {
-        Bitmap bitmap = this.f30882m;
+        Bitmap bitmap = this.f31450m;
         if (bitmap != null) {
             bitmap.recycle();
-            this.f30882m = null;
+            this.f31450m = null;
         }
     }
 
@@ -87,31 +87,31 @@ public class a implements ha.a {
     }
 
     private void n(Canvas canvas, float f10, float f11, ha.b bVar) {
-        if (bVar.f27016g == b.EnumC0359b.DISPOSE_TO_BACKGROUND) {
-            int ceil = (int) Math.ceil(bVar.f27011b * f10);
-            int ceil2 = (int) Math.ceil(bVar.f27012c * f11);
-            canvas.drawRect(new Rect(ceil, ceil2, ((int) Math.ceil(bVar.f27013d * f10)) + ceil, ((int) Math.ceil(bVar.f27014e * f11)) + ceil2), this.f30881l);
+        if (bVar.f27584g == b.EnumC0359b.DISPOSE_TO_BACKGROUND) {
+            int ceil = (int) Math.ceil(bVar.f27579b * f10);
+            int ceil2 = (int) Math.ceil(bVar.f27580c * f11);
+            canvas.drawRect(new Rect(ceil, ceil2, ((int) Math.ceil(bVar.f27581d * f10)) + ceil, ((int) Math.ceil(bVar.f27582e * f11)) + ceil2), this.f31449l);
         }
     }
 
     private synchronized Bitmap o(int i10, int i11) {
         try {
-            Bitmap bitmap = this.f30882m;
+            Bitmap bitmap = this.f31450m;
             if (bitmap != null) {
                 if (bitmap.getWidth() >= i10) {
-                    if (this.f30882m.getHeight() < i11) {
+                    if (this.f31450m.getHeight() < i11) {
                     }
                 }
                 l();
             }
-            if (this.f30882m == null) {
-                this.f30882m = Bitmap.createBitmap(i10, i11, Bitmap.Config.ARGB_8888);
+            if (this.f31450m == null) {
+                this.f31450m = Bitmap.createBitmap(i10, i11, Bitmap.Config.ARGB_8888);
             }
-            this.f30882m.eraseColor(0);
+            this.f31450m.eraseColor(0);
         } catch (Throwable th2) {
             throw th2;
         }
-        return this.f30882m;
+        return this.f31450m;
     }
 
     private void p(Canvas canvas, ha.d dVar) {
@@ -119,7 +119,7 @@ public class a implements ha.a {
         int height;
         int b10;
         int c10;
-        if (this.f30880k) {
+        if (this.f31448k) {
             float max = Math.max(dVar.getWidth() / Math.min(dVar.getWidth(), canvas.getWidth()), dVar.getHeight() / Math.min(dVar.getHeight(), canvas.getHeight()));
             width = (int) (dVar.getWidth() / max);
             height = (int) (dVar.getHeight() / max);
@@ -133,36 +133,36 @@ public class a implements ha.a {
         }
         synchronized (this) {
             Bitmap o10 = o(width, height);
-            this.f30882m = o10;
+            this.f31450m = o10;
             dVar.a(width, height, o10);
             canvas.save();
             canvas.translate(b10, c10);
-            canvas.drawBitmap(this.f30882m, 0.0f, 0.0f, (Paint) null);
+            canvas.drawBitmap(this.f31450m, 0.0f, 0.0f, (Paint) null);
             canvas.restore();
         }
     }
 
     private void q(Canvas canvas, ha.d dVar) {
-        double width = this.f30873d.width() / this.f30872c.getWidth();
-        double height = this.f30873d.height() / this.f30872c.getHeight();
+        double width = this.f31441d.width() / this.f31440c.getWidth();
+        double height = this.f31441d.height() / this.f31440c.getHeight();
         int round = (int) Math.round(dVar.getWidth() * width);
         int round2 = (int) Math.round(dVar.getHeight() * height);
         int b10 = (int) (dVar.b() * width);
         int c10 = (int) (dVar.c() * height);
         synchronized (this) {
             try {
-                int width2 = this.f30873d.width();
-                int height2 = this.f30873d.height();
+                int width2 = this.f31441d.width();
+                int height2 = this.f31441d.height();
                 o(width2, height2);
-                Bitmap bitmap = this.f30882m;
+                Bitmap bitmap = this.f31450m;
                 if (bitmap != null) {
                     dVar.a(round, round2, bitmap);
                 }
-                this.f30878i.set(0, 0, width2, height2);
-                this.f30879j.set(b10, c10, width2 + b10, height2 + c10);
-                Bitmap bitmap2 = this.f30882m;
+                this.f31446i.set(0, 0, width2, height2);
+                this.f31447j.set(b10, c10, width2 + b10, height2 + c10);
+                Bitmap bitmap2 = this.f31450m;
                 if (bitmap2 != null) {
-                    canvas.drawBitmap(bitmap2, this.f30878i, this.f30879j, (Paint) null);
+                    canvas.drawBitmap(bitmap2, this.f31446i, this.f31447j, (Paint) null);
                 }
             } catch (Throwable th2) {
                 throw th2;
@@ -171,9 +171,9 @@ public class a implements ha.a {
     }
 
     private void r(Canvas canvas, ha.d dVar, ha.b bVar, ha.b bVar2) {
-        Rect rect = this.f30873d;
-        if (rect != null && rect.width() > 0 && this.f30873d.height() > 0) {
-            float width = canvas.getWidth() / this.f30873d.width();
+        Rect rect = this.f31441d;
+        if (rect != null && rect.width() > 0 && this.f31441d.height() > 0) {
+            float width = canvas.getWidth() / this.f31441d.width();
             if (bVar2 != null) {
                 n(canvas, width, width, bVar2);
             }
@@ -183,8 +183,8 @@ public class a implements ha.a {
             int b10 = (int) (dVar.b() * width);
             int c10 = (int) (dVar.c() * width);
             Rect rect3 = new Rect(b10, c10, ((int) (width2 * width)) + b10, ((int) (height * width)) + c10);
-            if (bVar.f27015f == b.a.NO_BLEND) {
-                canvas.drawRect(rect3, this.f30881l);
+            if (bVar.f27583f == b.a.NO_BLEND) {
+                canvas.drawRect(rect3, this.f31449l);
             }
             synchronized (this) {
                 Bitmap o10 = o(width2, height);
@@ -199,8 +199,8 @@ public class a implements ha.a {
         float f11;
         float f12;
         float f13;
-        int width = this.f30872c.getWidth();
-        int height = this.f30872c.getHeight();
+        int width = this.f31440c.getWidth();
+        int height = this.f31440c.getHeight();
         float f14 = width;
         float f15 = height;
         int width2 = dVar.getWidth();
@@ -233,8 +233,8 @@ public class a implements ha.a {
         if (bVar2 != null) {
             n(canvas, f12, f13, bVar2);
         }
-        if (bVar.f27015f == b.a.NO_BLEND) {
-            canvas.drawRect(rect2, this.f30881l);
+        if (bVar.f27583f == b.a.NO_BLEND) {
+            canvas.drawRect(rect2, this.f31449l);
         }
         synchronized (this) {
             Bitmap o10 = o(width2, height2);
@@ -245,30 +245,30 @@ public class a implements ha.a {
 
     @Override // ha.a
     public int a() {
-        return this.f30872c.a();
+        return this.f31440c.a();
     }
 
     @Override // ha.a
     public int b() {
-        return this.f30872c.b();
+        return this.f31440c.b();
     }
 
     @Override // ha.a
     public ha.b c(int i10) {
-        return this.f30877h[i10];
+        return this.f31445h[i10];
     }
 
     @Override // ha.a
     public int d() {
-        return this.f30876g;
+        return this.f31444g;
     }
 
     @Override // ha.a
     public void e(int i10, Canvas canvas) {
-        ha.d z10 = this.f30872c.z(i10);
+        ha.d z10 = this.f31440c.z(i10);
         try {
             if (z10.getWidth() > 0 && z10.getHeight() > 0) {
-                if (this.f30872c.x()) {
+                if (this.f31440c.x()) {
                     q(canvas, z10);
                 } else {
                     p(canvas, z10);
@@ -282,45 +282,45 @@ public class a implements ha.a {
 
     @Override // ha.a
     public ha.a f(Rect rect) {
-        if (m(this.f30872c, rect).equals(this.f30873d)) {
+        if (m(this.f31440c, rect).equals(this.f31441d)) {
             return this;
         }
-        return new a(this.f30870a, this.f30871b, rect, this.f30880k);
+        return new a(this.f31438a, this.f31439b, rect, this.f31448k);
     }
 
     @Override // ha.a
     public int g(int i10) {
-        return this.f30874e[i10];
+        return this.f31442e[i10];
     }
 
     @Override // ha.a
     public int getHeight() {
-        return this.f30872c.getHeight();
+        return this.f31440c.getHeight();
     }
 
     @Override // ha.a
     public int getWidth() {
-        return this.f30872c.getWidth();
+        return this.f31440c.getWidth();
     }
 
     @Override // ha.a
     public int h() {
-        return this.f30873d.height();
+        return this.f31441d.height();
     }
 
     @Override // ha.a
     public void i(int i10, Canvas canvas) {
         ha.b c10;
-        ha.d z10 = this.f30872c.z(i10);
-        ha.b c11 = this.f30872c.c(i10);
+        ha.d z10 = this.f31440c.z(i10);
+        ha.b c11 = this.f31440c.c(i10);
         if (i10 == 0) {
             c10 = null;
         } else {
-            c10 = this.f30872c.c(i10 - 1);
+            c10 = this.f31440c.c(i10 - 1);
         }
         try {
             if (z10.getWidth() > 0 && z10.getHeight() > 0) {
-                if (this.f30872c.x()) {
+                if (this.f31440c.x()) {
                     s(canvas, z10, c11, c10);
                 } else {
                     r(canvas, z10, c11, c10);
@@ -334,11 +334,11 @@ public class a implements ha.a {
 
     @Override // ha.a
     public int j() {
-        return this.f30873d.width();
+        return this.f31441d.width();
     }
 
     @Override // ha.a
     public e k() {
-        return this.f30871b;
+        return this.f31439b;
     }
 }

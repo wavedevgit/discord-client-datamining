@@ -2,39 +2,31 @@
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var4 = require;
     var2 = exports;
-    var5 = dependencyMap;
+    var1 = dependencyMap;
     var _closure1_slot0 = var4;
-    var _closure1_slot1 = var5;
+    var _closure1_slot1 = var1;
+    var0 = global;
+    var7 = var0.Object;
+    var6 = var7.defineProperty;
+    var0 = var0.Symbol;
+    var5 = var0.toStringTag;
+    var0 = {};
+    var8 = 'Module';
+    var0.value = var8;
+    var0 = var6.bind(var7)(var2, var5, var0);
     var0 = 0;
-    var1 = var5[var0];
+    var1 = var1[var0];
     var0 = undefined;
-    var1 = var4.bind(var0)(var1);
-    var _closure1_slot2 = var1;
-    var1 = 1;
-    var1 = var5[var1];
-    var1 = var4.bind(var0)(var1);
-    var _closure1_slot3 = var1;
-    var1 = global;
-    var8 = var1.Object;
-    var7 = var8.defineProperty;
-    var1 = var1.Symbol;
-    var6 = var1.toStringTag;
-    var1 = {};
-    var9 = 'Module';
-    var1.value = var9;
-    var1 = var7.bind(var8)(var2, var6, var1);
-    var1 = 2;
-    var1 = var5[var1];
     var5 = var4.bind(var0)(var1);
     var4 = var5.defineIntegration;
     var1 = function() { // Environment: var3
         var0 = {};
-        var1 = 'OpenFeature';
+        var1 = 'LaunchDarkly';
         var0.name = var1;
         var1 = function arg0, arg1, arg2() {
             var2 = _closure1_slot0;
             var1 = _closure1_slot1;
-            var0 = 2;
+            var0 = 0;
             var1 = var1[var0];
             var0 = undefined;
             var2 = var2.bind(var0)(var1);
@@ -47,74 +39,35 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1 = var4.bind(var5)(var1);
-    var3 = function() { // Environment: var3
-        var3 = _closure1_slot3;
-        var2 = function() {
-            var3 = _closure1_slot2;
-            var2 = _closure2_slot0;
-            var0 = undefined;
-            var1 = this;
-            var1 = var3.bind(var0)(var1, var2);
-            return var0;
+    var3 = function() {
+        var0 = {
+            'name': 'sentry-flag-auditor',
+            'type': 'flag-used',
+            'synchronous': true
         };
-        var _closure2_slot0 = var2;
-        var0 = {};
-        var1 = 'after';
-        var0.key = var1;
-        var1 = function arg0, arg1() {
+        var1 = function arg0, arg1, arg2() {
+            var4 = arg0;
             var1 = arg1;
             var3 = _closure1_slot0;
-            var4 = _closure1_slot1;
-            var2 = 2;
-            var5 = var4[var2];
+            var5 = _closure1_slot1;
+            var2 = 0;
+            var6 = var5[var2];
             var0 = undefined;
-            var8 = var3.bind(var0)(var5);
+            var8 = var3.bind(var0)(var6);
             var7 = var8._INTERNAL_insertFlagToScope;
-            var6 = var1.flagKey;
-            var5 = var1.value;
-            var5 = var7.bind(var8)(var6, var5);
-            var2 = var4[var2];
-            var4 = var3.bind(var0)(var2);
-            var3 = var4._INTERNAL_addFeatureFlagToActiveSpan;
-            var2 = var1.flagKey;
+            var6 = var1.value;
+            var6 = var7.bind(var8)(var4, var6);
+            var2 = var5[var2];
+            var3 = var3.bind(var0)(var2);
+            var2 = var3._INTERNAL_addFeatureFlagToActiveSpan;
             var1 = var1.value;
-            var1 = var3.bind(var4)(var2, var1);
+            var1 = var2.bind(var3)(var4, var1);
             return var0;
         };
-        var0.value = var1;
-        var1 = new Array(2);
-        var1[0] = var0;
-        var0 = {};
-        var5 = 'error';
-        var0.key = var5;
-        var4 = function arg0, arg1, arg2() {
-            var1 = arg0;
-            var3 = _closure1_slot0;
-            var4 = _closure1_slot1;
-            var2 = 2;
-            var5 = var4[var2];
-            var0 = undefined;
-            var8 = var3.bind(var0)(var5);
-            var7 = var8._INTERNAL_insertFlagToScope;
-            var6 = var1.flagKey;
-            var5 = var1.defaultValue;
-            var5 = var7.bind(var8)(var6, var5);
-            var2 = var4[var2];
-            var4 = var3.bind(var0)(var2);
-            var3 = var4._INTERNAL_addFeatureFlagToActiveSpan;
-            var2 = var1.flagKey;
-            var1 = var1.defaultValue;
-            var1 = var3.bind(var4)(var2, var1);
-            return var0;
-        };
-        var0.value = var4;
-        var1[1] = var0;
-        var0 = undefined;
-        var0 = var3.bind(var0)(var2, var1);
+        var0.method = var1;
         return var0;
     };
-    var3 = var3.bind(var0)();
-    var2.OpenFeatureIntegrationHook = var3;
-    var2.openFeatureIntegration = var1;
+    var2.buildLaunchDarklyFlagUsedHandler = var3;
+    var2.launchDarklyIntegration = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 817]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [818]);

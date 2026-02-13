@@ -5,7 +5,7 @@ import bj.c;
 final class k6 implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final k6 f39334a = new k6();
+    static final k6 f39902a = new k6();
 
     static {
         c.b a10 = bj.c.a("cameraSource");

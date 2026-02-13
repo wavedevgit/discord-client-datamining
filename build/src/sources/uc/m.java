@@ -3,7 +3,7 @@ package uc;
 public interface m {
 
     /* renamed from: l  reason: collision with root package name */
-    public static final m f50686l = new a();
+    public static final m f51254l = new a();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     class a implements m {

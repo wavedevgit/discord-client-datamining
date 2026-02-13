@@ -692,7 +692,7 @@ public class AppBarLayout extends LinearLayout implements CoordinatorLayout.b {
                 int bottom = childAt.getBottom() + I;
                 if (childAt.getTop() + I <= 0 && bottom >= 0) {
                     if (parcelable == null) {
-                        parcelable = u2.a.f50396e;
+                        parcelable = u2.a.f50964e;
                     }
                     c cVar = new c(parcelable);
                     if (I == 0) {
@@ -1258,7 +1258,7 @@ public class AppBarLayout extends LinearLayout implements CoordinatorLayout.b {
         BaseBehavior.c cVar;
         Behavior behavior = this.L;
         if (behavior != null && this.f15161e != -1 && this.f15165q == 0) {
-            cVar = behavior.x0(u2.a.f50396e, this);
+            cVar = behavior.x0(u2.a.f50964e, this);
         } else {
             cVar = null;
         }

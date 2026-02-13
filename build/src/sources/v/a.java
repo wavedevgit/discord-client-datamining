@@ -19,32 +19,32 @@ import y.a;
 public class a implements y.a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final n0 f51307a;
+    private final n0 f51875a;
 
     /* renamed from: f  reason: collision with root package name */
-    private int f51312f = 0;
+    private int f51880f = 0;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Map f51309c = new HashMap();
+    private final Map f51877c = new HashMap();
 
     /* renamed from: e  reason: collision with root package name */
-    private Set f51311e = new HashSet();
+    private Set f51879e = new HashSet();
 
     /* renamed from: b  reason: collision with root package name */
-    private final List f51308b = new ArrayList();
+    private final List f51876b = new ArrayList();
 
     /* renamed from: d  reason: collision with root package name */
-    private List f51310d = new ArrayList();
+    private List f51878d = new ArrayList();
 
     public a(n0 n0Var) {
-        this.f51307a = n0Var;
+        this.f51875a = n0Var;
         e();
     }
 
     private void e() {
         Set<Set> hashSet = new HashSet();
         try {
-            hashSet = this.f51307a.e();
+            hashSet = this.f51875a.e();
         } catch (f unused) {
             y0.c("Camera2CameraCoordinator", "Failed to get concurrent camera ids");
         }
@@ -54,16 +54,16 @@ public class a implements y.a {
                 String str = (String) arrayList.get(0);
                 String str2 = (String) arrayList.get(1);
                 try {
-                    if (l2.a(this.f51307a, str) && l2.a(this.f51307a, str2)) {
-                        this.f51311e.add(new HashSet(Arrays.asList(str, str2)));
-                        if (!this.f51309c.containsKey(str)) {
-                            this.f51309c.put(str, new ArrayList());
+                    if (l2.a(this.f51875a, str) && l2.a(this.f51875a, str2)) {
+                        this.f51879e.add(new HashSet(Arrays.asList(str, str2)));
+                        if (!this.f51877c.containsKey(str)) {
+                            this.f51877c.put(str, new ArrayList());
                         }
-                        if (!this.f51309c.containsKey(str2)) {
-                            this.f51309c.put(str2, new ArrayList());
+                        if (!this.f51877c.containsKey(str2)) {
+                            this.f51877c.put(str2, new ArrayList());
                         }
-                        ((List) this.f51309c.get(str)).add((String) arrayList.get(1));
-                        ((List) this.f51309c.get(str2)).add((String) arrayList.get(0));
+                        ((List) this.f51877c.get(str)).add((String) arrayList.get(1));
+                        ((List) this.f51877c.get(str2)).add((String) arrayList.get(0));
                     }
                 } catch (w0 unused2) {
                     y0.a("Camera2CameraCoordinator", "Concurrent camera id pair: (" + str + ", " + str2 + ") is not backward compatible");
@@ -74,16 +74,16 @@ public class a implements y.a {
 
     @Override // y.a
     public void a(a.InterfaceC0768a interfaceC0768a) {
-        this.f51308b.add(interfaceC0768a);
+        this.f51876b.add(interfaceC0768a);
     }
 
     @Override // y.a
     public String b(String str) {
-        if (!this.f51309c.containsKey(str)) {
+        if (!this.f51877c.containsKey(str)) {
             return null;
         }
-        for (String str2 : (List) this.f51309c.get(str)) {
-            for (o oVar : this.f51310d) {
+        for (String str2 : (List) this.f51877c.get(str)) {
+            for (o oVar : this.f51878d) {
                 if (str2.equals(h.a(oVar).c())) {
                     return str2;
                 }
@@ -94,19 +94,19 @@ public class a implements y.a {
 
     @Override // y.a
     public int c() {
-        return this.f51312f;
+        return this.f51880f;
     }
 
     @Override // y.a
     public void d(int i10) {
-        if (i10 != this.f51312f) {
-            for (a.InterfaceC0768a interfaceC0768a : this.f51308b) {
-                interfaceC0768a.a(this.f51312f, i10);
+        if (i10 != this.f51880f) {
+            for (a.InterfaceC0768a interfaceC0768a : this.f51876b) {
+                interfaceC0768a.a(this.f51880f, i10);
             }
         }
-        if (this.f51312f == 2 && i10 != 2) {
-            this.f51310d.clear();
+        if (this.f51880f == 2 && i10 != 2) {
+            this.f51878d.clear();
         }
-        this.f51312f = i10;
+        this.f51880f = i10;
     }
 }

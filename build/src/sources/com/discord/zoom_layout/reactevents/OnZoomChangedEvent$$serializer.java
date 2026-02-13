@@ -36,7 +36,7 @@ public /* synthetic */ class OnZoomChangedEvent$$serializer implements h0 {
     @Override // tt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        return new KSerializer[]{g0.f49993a};
+        return new KSerializer[]{g0.f50561a};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy

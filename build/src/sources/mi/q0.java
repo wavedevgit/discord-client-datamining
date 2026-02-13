@@ -11,44 +11,44 @@ import java.util.Set;
 public abstract class q0 {
 
     /* renamed from: a  reason: collision with root package name */
-    protected final r0 f36515a;
+    protected final r0 f37083a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final IntentFilter f36516b;
+    private final IntentFilter f37084b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Context f36517c;
+    private final Context f37085c;
 
     /* renamed from: d  reason: collision with root package name */
-    protected final Set f36518d = new HashSet();
+    protected final Set f37086d = new HashSet();
 
     /* renamed from: e  reason: collision with root package name */
-    private p0 f36519e = null;
+    private p0 f37087e = null;
 
     /* renamed from: f  reason: collision with root package name */
-    private volatile boolean f36520f = false;
+    private volatile boolean f37088f = false;
 
     /* JADX INFO: Access modifiers changed from: protected */
     public q0(r0 r0Var, IntentFilter intentFilter, Context context) {
-        this.f36515a = r0Var;
-        this.f36516b = intentFilter;
-        this.f36517c = f0.a(context);
+        this.f37083a = r0Var;
+        this.f37084b = intentFilter;
+        this.f37085c = f0.a(context);
     }
 
     private final void d() {
         p0 p0Var;
-        if ((this.f36520f || !this.f36518d.isEmpty()) && this.f36519e == null) {
+        if ((this.f37088f || !this.f37086d.isEmpty()) && this.f37087e == null) {
             p0 p0Var2 = new p0(this, null);
-            this.f36519e = p0Var2;
+            this.f37087e = p0Var2;
             if (Build.VERSION.SDK_INT >= 33) {
-                this.f36517c.registerReceiver(p0Var2, this.f36516b, 2);
+                this.f37085c.registerReceiver(p0Var2, this.f37084b, 2);
             } else {
-                this.f36517c.registerReceiver(p0Var2, this.f36516b);
+                this.f37085c.registerReceiver(p0Var2, this.f37084b);
             }
         }
-        if (!this.f36520f && this.f36518d.isEmpty() && (p0Var = this.f36519e) != null) {
-            this.f36517c.unregisterReceiver(p0Var);
-            this.f36519e = null;
+        if (!this.f37088f && this.f37086d.isEmpty() && (p0Var = this.f37087e) != null) {
+            this.f37085c.unregisterReceiver(p0Var);
+            this.f37087e = null;
         }
     }
 
@@ -56,12 +56,12 @@ public abstract class q0 {
     public abstract void a(Context context, Intent intent);
 
     public final synchronized void b(boolean z10) {
-        this.f36520f = true;
+        this.f37088f = true;
         d();
     }
 
     public final synchronized void c(Object obj) {
-        Iterator it = new HashSet(this.f36518d).iterator();
+        Iterator it = new HashSet(this.f37086d).iterator();
         while (it.hasNext()) {
             ((fi.a) it.next()).a(obj);
         }

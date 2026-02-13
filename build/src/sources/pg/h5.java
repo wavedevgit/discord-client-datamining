@@ -5,37 +5,37 @@ import bj.c;
 final class h5 implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final h5 f42059a = new h5();
+    static final h5 f42627a = new h5();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final bj.c f42060b;
+    private static final bj.c f42628b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final bj.c f42061c;
+    private static final bj.c f42629c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final bj.c f42062d;
+    private static final bj.c f42630d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final bj.c f42063e;
+    private static final bj.c f42631e;
 
     static {
         c.b a10 = bj.c.a("inferenceCommonLogEvent");
         f fVar = new f();
         fVar.a(1);
-        f42060b = a10.b(fVar.b()).a();
+        f42628b = a10.b(fVar.b()).a();
         c.b a11 = bj.c.a("imageInfo");
         f fVar2 = new f();
         fVar2.a(2);
-        f42061c = a11.b(fVar2.b()).a();
+        f42629c = a11.b(fVar2.b()).a();
         c.b a12 = bj.c.a("detectorOptions");
         f fVar3 = new f();
         fVar3.a(3);
-        f42062d = a12.b(fVar3.b()).a();
+        f42630d = a12.b(fVar3.b()).a();
         c.b a13 = bj.c.a("objectInfos");
         f fVar4 = new f();
         fVar4.a(4);
-        f42063e = a13.b(fVar4.b()).a();
+        f42631e = a13.b(fVar4.b()).a();
     }
 
     private h5() {

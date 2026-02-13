@@ -1,32 +1,29 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun95013: for (var _fun95013_ip = 0;;) switch (_fun95013_ip) {
-        case 0:
-            var1 = {
-                'option': 'alt',
-                'command': 'meta',
-                'return': 'enter',
-                'escape': 'esc'
-            };
-            var2 = 'meta';
-            var4 = /Mac|iPod|iPhone|iPad/;
-            var3 = var4.test;
-            var0 = global;
-            var0 = var0.navigator;
-            var0 = var0.platform;
-            var3 = var3.bind(var4)(var0);
-            var0 = 'ctrl';
-            if (!var3) {
-                _fun95013_ip = 66;
-                continue _fun95013
-            }
-        case 63:
-            var0 = var2;
-        case 66:
-            var1.mod = var0;
-            var0 = module;
-            var0.exports = var1;
-            var0 = undefined;
-            return var0;
-    }
+    var1 = function(arg0) { // Environment: var0
+        _fun95046: for (var _fun95046_ip = 0;;) switch (_fun95046_ip) {
+            case 0:
+                var1 = arg0;
+                var0 = var1.stopPropagation;
+                if (var0) {
+                    _fun95046_ip = 22;
+                    continue _fun95046
+                }
+            case 12:
+                var0 = true;
+                var1.cancelBubble = var0;
+                _fun95046_ip = 32;
+                continue _fun95046;
+            case 22:
+                var0 = var1.stopPropagation;
+                var0 = var0.bind(var1)();
+            case 32:
+                var0 = undefined;
+                return var0;
+        }
+    };
+    var0 = arg4;
+    var0.exports = var1;
+    var0 = undefined;
+    return var0;
 })(undefined, undefined, undefined, undefined, undefined, undefined, []);

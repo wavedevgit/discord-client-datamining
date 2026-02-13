@@ -26,9 +26,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var0)(var3);
     var6 = var3.View;
     var _closure1_slot3 = var6;
-    var6 = var3.Image;
-    var _closure1_slot4 = var6;
-    var7 = var3.StyleSheet;
+    var3 = var3.Image;
+    var _closure1_slot4 = var3;
     var3 = 2;
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
@@ -36,7 +35,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot5 = var6;
     var3 = var3.jsxs;
     var _closure1_slot6 = var3;
-    var6 = var7.create;
+    var3 = 3;
+    var3 = var5[var3];
+    var7 = var4.bind(var0)(var3);
+    var6 = var7.createStyles;
     var3 = {};
     var8 = {
         'padding': 8,
@@ -72,7 +74,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.preview = var8;
     var3 = var6.bind(var7)(var3);
     var _closure1_slot7 = var3;
-    var3 = 5;
+    var3 = 6;
     var3 = var5[var3];
     var5 = var4.bind(var0)(var3);
     var4 = var5.fileFinishedImporting;
@@ -81,20 +83,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = function(arg0) { // Environment: var1
         var0 = arg0;
         var0 = var0.notification;
+        var1 = _closure1_slot7;
+        var3 = undefined;
+        var8 = var1.bind(var3)();
         var10 = var0.imageUri;
-        var3 = _closure1_slot6;
-        var2 = _closure1_slot3;
-        var1 = {};
-        var8 = _closure1_slot7;
-        var0 = var8.container;
-        var1.style = var0;
+        var2 = _closure1_slot6;
+        var1 = _closure1_slot3;
+        var0 = {};
+        var4 = var8.container;
+        var0.style = var4;
         var7 = _closure1_slot5;
         var6 = _closure1_slot1;
         var13 = _closure1_slot2;
-        var0 = 3;
-        var4 = var13[var0];
-        var0 = undefined;
-        var6 = var6.bind(var0)(var4);
+        var4 = 4;
+        var4 = var13[var4];
+        var6 = var6.bind(var3)(var4);
         var4 = {};
         var9 = var8.clyde;
         var4.style = var9;
@@ -104,16 +107,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4.source = var9;
         var9 = 'contain';
         var4.resizeMode = var9;
-        var6 = var7.bind(var0)(var6, var4);
+        var6 = var7.bind(var3)(var6, var4);
         var4 = new Array(3);
         var4[0] = var6;
         var6 = {};
         var9 = var8.content;
         var6.style = var9;
         var12 = _closure1_slot0;
-        var11 = 4;
+        var11 = 5;
         var9 = var13[var11];
-        var9 = var12.bind(var0)(var9);
+        var9 = var12.bind(var3)(var9);
         var14 = var9.Text;
         var9 = {
             'variant': 'text-md/semibold',
@@ -123,11 +126,11 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         };
         var15 = var8.text;
         var9.style = var15;
-        var14 = var7.bind(var0)(var14, var9);
+        var14 = var7.bind(var3)(var14, var9);
         var9 = new Array(2);
         var9[0] = var14;
         var11 = var13[var11];
-        var11 = var12.bind(var0)(var11);
+        var11 = var12.bind(var3)(var11);
         var12 = var11.Text;
         var11 = {
             'variant': 'text-md/medium',
@@ -137,10 +140,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         };
         var13 = var8.text;
         var11.style = var13;
-        var11 = var7.bind(var0)(var12, var11);
+        var11 = var7.bind(var3)(var12, var11);
         var9[1] = var11;
         var6.children = var9;
-        var6 = var3.bind(var0)(var2, var6);
+        var6 = var2.bind(var3)(var1, var6);
         var4[1] = var6;
         var6 = _closure1_slot4;
         var5 = {};
@@ -149,12 +152,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5.source = var9;
         var8 = var8.preview;
         var5.style = var8;
-        var5 = var7.bind(var0)(var6, var5);
+        var5 = var7.bind(var3)(var6, var5);
         var4[2] = var5;
-        var1.children = var4;
-        var0 = var3.bind(var0)(var2, var1);
+        var0.children = var4;
+        var0 = var2.bind(var3)(var1, var0);
         return var0;
     };
     var2.BugReporterNotification = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 5426, 3938, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 4709, 3938, 2]);

@@ -7,7 +7,7 @@ import java.util.UUID;
 public class m {
 
     /* renamed from: b  reason: collision with root package name */
-    public static final xi.c f52824b = xi.c.c(m.class).b(xi.q.j(i.class)).b(xi.q.j(Context.class)).e(new xi.g() { // from class: wj.e0
+    public static final xi.c f53392b = xi.c.c(m.class).b(xi.q.j(i.class)).b(xi.q.j(Context.class)).e(new xi.g() { // from class: wj.e0
         @Override // xi.g
         public final Object a(xi.d dVar) {
             return new m((Context) dVar.a(Context.class));
@@ -15,10 +15,10 @@ public class m {
     }).d();
 
     /* renamed from: a  reason: collision with root package name */
-    protected final Context f52825a;
+    protected final Context f53393a;
 
     public m(Context context) {
-        this.f52825a = context;
+        this.f53393a = context;
     }
 
     public synchronized String a() {
@@ -32,6 +32,6 @@ public class m {
     }
 
     protected final SharedPreferences b() {
-        return this.f52825a.getSharedPreferences("com.google.mlkit.internal", 0);
+        return this.f53393a.getSharedPreferences("com.google.mlkit.internal", 0);
     }
 }

@@ -12,22 +12,22 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 public final class a implements c {
 
     /* renamed from: a  reason: collision with root package name */
-    private final d f30826a;
+    private final d f31394a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final i f30827b;
+    private final i f31395b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final int f30828c;
+    private final int f31396c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final boolean f30829d;
+    private final boolean f31397d;
 
     public a(d dVar, i iVar, int i10, boolean z10) {
-        this.f30826a = dVar;
-        this.f30827b = iVar;
-        this.f30828c = i10;
-        this.f30829d = z10;
+        this.f31394a = dVar;
+        this.f31395b = iVar;
+        this.f31396c = i10;
+        this.f31397d = z10;
         if (i10 > 0) {
             return;
         }
@@ -37,22 +37,22 @@ public final class a implements c {
     @Override // j5.c
     public void a() {
         boolean z10;
-        Drawable drawable = this.f30826a.getDrawable();
-        Drawable a10 = this.f30827b.a();
-        h J = this.f30827b.b().J();
-        int i10 = this.f30828c;
-        i iVar = this.f30827b;
+        Drawable drawable = this.f31394a.getDrawable();
+        Drawable a10 = this.f31395b.a();
+        h J = this.f31395b.b().J();
+        int i10 = this.f31396c;
+        i iVar = this.f31395b;
         if ((iVar instanceof q) && ((q) iVar).d()) {
             z10 = false;
         } else {
             z10 = true;
         }
-        z4.a aVar = new z4.a(drawable, a10, J, i10, z10, this.f30829d);
-        i iVar2 = this.f30827b;
+        z4.a aVar = new z4.a(drawable, a10, J, i10, z10, this.f31397d);
+        i iVar2 = this.f31395b;
         if (iVar2 instanceof q) {
-            this.f30826a.a(aVar);
+            this.f31394a.a(aVar);
         } else if (iVar2 instanceof f) {
-            this.f30826a.c(aVar);
+            this.f31394a.c(aVar);
         } else {
             throw new p();
         }
@@ -63,14 +63,14 @@ public final class a implements c {
     public static final class C0416a implements c.a {
 
         /* renamed from: c  reason: collision with root package name */
-        private final int f30830c;
+        private final int f31398c;
 
         /* renamed from: d  reason: collision with root package name */
-        private final boolean f30831d;
+        private final boolean f31399d;
 
         public C0416a(int i10, boolean z10) {
-            this.f30830c = i10;
-            this.f30831d = z10;
+            this.f31398c = i10;
+            this.f31399d = z10;
             if (i10 <= 0) {
                 throw new IllegalArgumentException("durationMillis must be > 0.");
             }
@@ -79,12 +79,12 @@ public final class a implements c {
         @Override // j5.c.a
         public c a(d dVar, i iVar) {
             if (!(iVar instanceof q)) {
-                return c.a.f30835b.a(dVar, iVar);
+                return c.a.f31403b.a(dVar, iVar);
             }
-            if (((q) iVar).c() == x4.h.f54344d) {
-                return c.a.f30835b.a(dVar, iVar);
+            if (((q) iVar).c() == x4.h.f54912d) {
+                return c.a.f31403b.a(dVar, iVar);
             }
-            return new a(dVar, iVar, this.f30830c, this.f30831d);
+            return new a(dVar, iVar, this.f31398c, this.f31399d);
         }
 
         public boolean equals(Object obj) {
@@ -93,7 +93,7 @@ public final class a implements c {
             }
             if (obj instanceof C0416a) {
                 C0416a c0416a = (C0416a) obj;
-                if (this.f30830c == c0416a.f30830c && this.f30831d == c0416a.f30831d) {
+                if (this.f31398c == c0416a.f31398c && this.f31399d == c0416a.f31399d) {
                     return true;
                 }
                 return false;
@@ -102,7 +102,7 @@ public final class a implements c {
         }
 
         public int hashCode() {
-            return (this.f30830c * 31) + Boolean.hashCode(this.f30831d);
+            return (this.f31398c * 31) + Boolean.hashCode(this.f31399d);
         }
 
         public /* synthetic */ C0416a(int i10, boolean z10, int i11, DefaultConstructorMarker defaultConstructorMarker) {

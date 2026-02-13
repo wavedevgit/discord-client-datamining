@@ -2,222 +2,14 @@
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var4 = require;
-    var13 = metroImportDefault;
+    var12 = metroImportDefault;
     var2 = exports;
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
-    var _closure1_slot1 = var13;
+    var _closure1_slot1 = var12;
     var _closure1_slot2 = var5;
-    var1 = function() {
-        var4 = _closure1_slot5;
-        var3 = var4.useMemo;
-        var2 = function() { // Environment: var1
-            var1 = function() {
-                var0 = {};
-                var1 = {};
-                var5 = _closure1_slot0;
-                var6 = _closure1_slot2;
-                var3 = 24;
-                var3 = var6[var3];
-                var4 = undefined;
-                var3 = var5.bind(var4)(var3);
-                var3 = var3.ImpressionNames;
-                var3 = var3.AVATAR_UPLOAD;
-                var1.impressionName = var3;
-                var3 = function() {
-                    var3 = _closure1_slot9;
-                    var7 = _closure1_slot0;
-                    var8 = _closure1_slot2;
-                    var0 = 25;
-                    var0 = var8[var0];
-                    var2 = undefined;
-                    var0 = var7.bind(var2)(var0);
-                    var1 = var0.HeaderActionButton;
-                    var0 = {};
-                    var4 = 19;
-                    var5 = var8[var4];
-                    var5 = var7.bind(var2)(var5);
-                    var6 = var5.intl;
-                    var5 = var6.string;
-                    var4 = var8[var4];
-                    var4 = var7.bind(var2)(var4);
-                    var4 = var4.t;
-                    var4 = var4["5Wxrcd"];
-                    var4 = var5.bind(var6)(var4);
-                    var0.text = var4;
-                    var4 = function() {
-                        var2 = _closure1_slot0;
-                        var1 = _closure1_slot2;
-                        var0 = 23;
-                        var1 = var1[var0];
-                        var0 = undefined;
-                        var1 = var2.bind(var0)(var1);
-                        var0 = var1.showSkipAvatarModal;
-                        var0 = var0.bind(var1)();
-                        return var0;
-                    };
-                    var0.onPress = var4;
-                    var0 = var3.bind(var2)(var1, var0);
-                    return var0;
-                };
-                var1.headerRight = var3;
-                var3 = function() {
-                    var0 = null;
-                    return var0;
-                };
-                var1.headerLeft = var3;
-                var3 = 26;
-                var3 = var6[var3];
-                var4 = var5.bind(var4)(var3);
-                var3 = var4.getHeaderNoTitle;
-                var3 = var3.bind(var4)();
-                var1.headerTitle = var3;
-                var3 = true;
-                var1.ignoreKeyboard = var3;
-                var1.fullscreen = var3;
-                var2 = function() {
-                    var0 = _closure1_slot12;
-                    return var0;
-                };
-                var1.render = var2;
-                var0.ADD_AVATAR = var1;
-                return var0;
-            };
-            var0 = undefined;
-            var0 = var1.bind(var0)();
-            return var0;
-        };
-        var1 = new Array(0);
-        var4 = var3.bind(var4)(var2, var1);
-        var3 = _closure1_slot9;
-        var1 = _closure1_slot0;
-        var2 = _closure1_slot2;
-        var0 = 27;
-        var0 = var2[var0];
-        var2 = undefined;
-        var0 = var1.bind(var2)(var0);
-        var1 = var0.Navigator;
-        var0 = {};
-        var0.screens = var4;
-        var4 = 'ADD_AVATAR';
-        var0.initialRouteName = var4;
-        var0 = var3.bind(var2)(var1, var0);
-        return var0;
-    };
-    var0 = global;
-    var8 = var0.Object;
-    var6 = var8.defineProperty;
-    var3 = {};
-    var0 = true;
-    var3.value = var0;
-    var0 = '__esModule';
-    var0 = var6.bind(var8)(var2, var0, var3);
-    var0 = 0;
-    var3 = var5[var0];
-    var0 = undefined;
-    var3 = var13.bind(var0)(var3);
-    var _closure1_slot3 = var3;
-    var3 = 1;
-    var3 = var5[var3];
-    var3 = var13.bind(var0)(var3);
-    var _closure1_slot4 = var3;
-    var3 = 2;
-    var6 = var5[var3];
-    var3 = arg3;
-    var3 = var3.bind(var0)(var6);
-    var _closure1_slot5 = var3;
-    var3 = 3;
-    var3 = var5[var3];
-    var3 = var4.bind(var0)(var3);
-    var3 = var3.View;
-    var _closure1_slot6 = var3;
-    var3 = 4;
-    var3 = var5[var3];
-    var3 = var13.bind(var0)(var3);
-    var _closure1_slot7 = var3;
-    var3 = 5;
-    var3 = var5[var3];
-    var3 = var4.bind(var0)(var3);
-    var14 = var3.Fonts;
-    var6 = var3.ModalAnimation;
-    var3 = var3.UPLOAD_MEDIUM_SIZE;
-    var _closure1_slot8 = var3;
-    var3 = 6;
-    var3 = var5[var3];
-    var3 = var4.bind(var0)(var3);
-    var9 = var3.jsx;
-    var _closure1_slot9 = var9;
-    var3 = var3.jsxs;
-    var _closure1_slot10 = var3;
-    var3 = 7;
-    var3 = var5[var3];
-    var10 = var4.bind(var0)(var3);
-    var8 = var10.createStyles;
-    var3 = {};
-    var11 = {
-        'flex': 1,
-        'backgroundColor': null,
-        'justifyContent': 'center',
-        'paddingTop': null,
-        'alignItems': 'center'
-    };
-    var12 = 8;
-    var15 = var5[var12];
-    var15 = var13.bind(var0)(var15);
-    var15 = var15.colors;
-    var15 = var15.BACKGROUND_BASE_LOW;
-    var11.backgroundColor = var15;
-    var15 = 'center';
-    var16 = 9;
-    var16 = var5[var16];
-    var16 = var4.bind(var0)(var16);
-    var17 = var16.NAV_BAR_HEIGHT;
-    var16 = 32;
-    var16 = var17 + var16;
-    var11.paddingTop = var16;
-    var3.container = var11;
-    var11 = {
-        'display': 'flex',
-        'alignItems': 'center'
-    };
-    var3.headerContainer = var11;
-    var11 = {
-        'flexGrow': 0,
-        'marginHorizontal': 16,
-        'marginBottom': 16
-    };
-    var3.button = var11;
-    var11 = {
-        'marginBottom': 8,
-        'textAlign': 'center'
-    };
-    var3.title = var11;
-    var11 = {};
-    var11.textAlign = var15;
-    var3.subtitle = var11;
-    var11 = {
-        'alignSelf': 'center',
-        'paddingTop': 24
-    };
-    var3.errorContainer = var11;
-    var11 = {};
-    var15 = 10;
-    var15 = var5[var15];
-    var15 = var13.bind(var0)(var15);
-    var14 = var14.DISPLAY_MEDIUM;
-    var12 = var5[var12];
-    var12 = var13.bind(var0)(var12);
-    var12 = var12.unsafe_rawColors;
-    var13 = var12.RED_400;
-    var12 = 12;
-    var19 = var15.bind(var0)(var14, var13, var12);
-    var20 = var11;
-    var12 = copyDataProperties(var20, var19);
-    var3.errorText = var11;
-    var3 = var8.bind(var10)(var3);
-    var _closure1_slot11 = var3;
-    var8 = function() {
-        _fun114542: for (var _fun114542_ip = 0;;) switch (_fun114542_ip) {
+    var0 = function() {
+        _fun114573: for (var _fun114573_ip = 0;;) switch (_fun114573_ip) {
             case 0:
                 var0 = function() {
                     var3 = undefined;
@@ -225,13 +17,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = _closure1_slot3;
                     var1 = function*() { // Environment: var1
                         var0 = function*() { // Original name: ?anon_0_, environment: var0
-                            _fun114545: for (var _fun114545_ip = 0;;) switch (_fun114545_ip) {
+                            _fun114576: for (var _fun114576_ip = 0;;) switch (_fun114576_ip) {
                                 case 0:
                                     StartGenerator();
                                     ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
                                     if (var1) {
-                                        _fun114545_ip = 262;
-                                        continue _fun114545
+                                        _fun114576_ip = 262;
+                                        continue _fun114576
                                     }
                                 case 10:
                                     var4 = _closure2_slot0;
@@ -254,15 +46,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 case 74:
                                     ResumeGenerator(result_out_reg = 1, return_bool_out_reg = 5);
                                     if (var5) {
-                                        _fun114545_ip = 259;
-                                        continue _fun114545
+                                        _fun114576_ip = 259;
+                                        continue _fun114576
                                     }
                                 case 83:
                                     var12 = var1.base64;
                                     var5 = null;
                                     if (!(var5 != var12)) {
-                                        _fun114545_ip = 133;
-                                        continue _fun114545
+                                        _fun114576_ip = 133;
+                                        continue _fun114576
                                     }
                                 case 95:
                                     var7 = var12.match;
@@ -273,15 +65,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                     var6 = var6.base64GIFRegex;
                                     var6 = var7.bind(var12)(var6);
                                     if (!(var5 == var6)) {
-                                        _fun114545_ip = 245;
-                                        continue _fun114545
+                                        _fun114576_ip = 245;
+                                        continue _fun114576
                                     }
                                 case 133:
                                     var5 = var5 != var12;
                                     var6 = undefined;
                                     if (!var5) {
-                                        _fun114545_ip = 203;
-                                        continue _fun114545
+                                        _fun114576_ip = 203;
+                                        continue _fun114576
                                     }
                                 case 142:
                                     var10 = _closure1_slot0;
@@ -308,8 +100,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                     var4 = var4.bind(var5)(var6);
                                     var4 = _closure2_slot2;
                                     var4 = var4.bind(var2)(var2);
-                                    _fun114545_ip = 256;
-                                    continue _fun114545;
+                                    _fun114576_ip = 256;
+                                    continue _fun114576;
                                 case 245:
                                     var4 = _closure2_slot0;
                                     var3 = true;
@@ -385,8 +177,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var9 != var13;
                 var0 = undefined;
                 if (!var2) {
-                    _fun114542_ip = 280;
-                    continue _fun114542
+                    _fun114573_ip = 280;
+                    continue _fun114573
                 }
             case 197:
                 var11 = _closure1_slot0;
@@ -411,8 +203,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 280:
                 var8 = var1;
                 if (!(var9 != var0)) {
-                    _fun114542_ip = 290;
-                    continue _fun114542
+                    _fun114573_ip = 290;
+                    continue _fun114573
                 }
             case 287:
                 var8 = var0;
@@ -427,8 +219,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var9 == var8;
                 var0 = undefined;
                 if (var4) {
-                    _fun114542_ip = 335;
-                    continue _fun114542
+                    _fun114573_ip = 335;
+                    continue _fun114573
                 }
             case 329:
                 var0 = var8.imageUri;
@@ -444,8 +236,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = var7 > var6;
                 var6 = 16;
                 if (!var11) {
-                    _fun114542_ip = 378;
-                    continue _fun114542
+                    _fun114573_ip = 378;
+                    continue _fun114573
                 }
             case 375:
                 var6 = var7;
@@ -553,8 +345,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var23 = var16.errorText;
                 var19.style = var23;
                 if (!var22) {
-                    _fun114542_ip = 827;
-                    continue _fun114542
+                    _fun114573_ip = 827;
+                    continue _fun114573
                 }
             case 775:
                 var26 = _closure1_slot0;
@@ -635,9 +427,219 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
         }
     };
+    var _closure1_slot12 = var0;
+    var1 = function() {
+        var4 = _closure1_slot5;
+        var3 = var4.useMemo;
+        var2 = function() { // Environment: var1
+            var1 = function() {
+                var0 = {};
+                var1 = {};
+                var5 = _closure1_slot0;
+                var6 = _closure1_slot2;
+                var3 = 24;
+                var3 = var6[var3];
+                var4 = undefined;
+                var3 = var5.bind(var4)(var3);
+                var3 = var3.ImpressionNames;
+                var3 = var3.AVATAR_UPLOAD;
+                var1.impressionName = var3;
+                var3 = function() {
+                    var3 = _closure1_slot9;
+                    var7 = _closure1_slot0;
+                    var8 = _closure1_slot2;
+                    var0 = 25;
+                    var0 = var8[var0];
+                    var2 = undefined;
+                    var0 = var7.bind(var2)(var0);
+                    var1 = var0.HeaderActionButton;
+                    var0 = {};
+                    var4 = 19;
+                    var5 = var8[var4];
+                    var5 = var7.bind(var2)(var5);
+                    var6 = var5.intl;
+                    var5 = var6.string;
+                    var4 = var8[var4];
+                    var4 = var7.bind(var2)(var4);
+                    var4 = var4.t;
+                    var4 = var4["5Wxrcd"];
+                    var4 = var5.bind(var6)(var4);
+                    var0.text = var4;
+                    var4 = function() {
+                        var2 = _closure1_slot0;
+                        var1 = _closure1_slot2;
+                        var0 = 23;
+                        var1 = var1[var0];
+                        var0 = undefined;
+                        var1 = var2.bind(var0)(var1);
+                        var0 = var1.showSkipAvatarModal;
+                        var0 = var0.bind(var1)();
+                        return var0;
+                    };
+                    var0.onPress = var4;
+                    var0 = var3.bind(var2)(var1, var0);
+                    return var0;
+                };
+                var1.headerRight = var3;
+                var3 = function() {
+                    var0 = null;
+                    return var0;
+                };
+                var1.headerLeft = var3;
+                var3 = 26;
+                var3 = var6[var3];
+                var4 = var5.bind(var4)(var3);
+                var3 = var4.getHeaderNoTitle;
+                var3 = var3.bind(var4)();
+                var1.headerTitle = var3;
+                var3 = true;
+                var1.ignoreKeyboard = var3;
+                var1.fullscreen = var3;
+                var2 = function() {
+                    var3 = _closure1_slot9;
+                    var2 = _closure1_slot12;
+                    var1 = undefined;
+                    var0 = {};
+                    var0 = var3.bind(var1)(var2, var0);
+                    return var0;
+                };
+                var1.render = var2;
+                var0.ADD_AVATAR = var1;
+                return var0;
+            };
+            var0 = undefined;
+            var0 = var1.bind(var0)();
+            return var0;
+        };
+        var1 = new Array(0);
+        var4 = var3.bind(var4)(var2, var1);
+        var3 = _closure1_slot9;
+        var1 = _closure1_slot0;
+        var2 = _closure1_slot2;
+        var0 = 27;
+        var0 = var2[var0];
+        var2 = undefined;
+        var0 = var1.bind(var2)(var0);
+        var1 = var0.Navigator;
+        var0 = {};
+        var0.screens = var4;
+        var4 = 'ADD_AVATAR';
+        var0.initialRouteName = var4;
+        var0 = var3.bind(var2)(var1, var0);
+        return var0;
+    };
+    var0 = global;
+    var8 = var0.Object;
+    var6 = var8.defineProperty;
     var3 = {};
-    var3 = var9.bind(var0)(var8, var3);
-    var _closure1_slot12 = var3;
+    var0 = true;
+    var3.value = var0;
+    var0 = '__esModule';
+    var0 = var6.bind(var8)(var2, var0, var3);
+    var0 = 0;
+    var3 = var5[var0];
+    var0 = undefined;
+    var3 = var12.bind(var0)(var3);
+    var _closure1_slot3 = var3;
+    var3 = 1;
+    var3 = var5[var3];
+    var3 = var12.bind(var0)(var3);
+    var _closure1_slot4 = var3;
+    var3 = 2;
+    var6 = var5[var3];
+    var3 = arg3;
+    var3 = var3.bind(var0)(var6);
+    var _closure1_slot5 = var3;
+    var3 = 3;
+    var3 = var5[var3];
+    var3 = var4.bind(var0)(var3);
+    var3 = var3.View;
+    var _closure1_slot6 = var3;
+    var3 = 4;
+    var3 = var5[var3];
+    var3 = var12.bind(var0)(var3);
+    var _closure1_slot7 = var3;
+    var3 = 5;
+    var3 = var5[var3];
+    var3 = var4.bind(var0)(var3);
+    var13 = var3.Fonts;
+    var6 = var3.ModalAnimation;
+    var3 = var3.UPLOAD_MEDIUM_SIZE;
+    var _closure1_slot8 = var3;
+    var3 = 6;
+    var3 = var5[var3];
+    var3 = var4.bind(var0)(var3);
+    var8 = var3.jsx;
+    var _closure1_slot9 = var8;
+    var3 = var3.jsxs;
+    var _closure1_slot10 = var3;
+    var3 = 7;
+    var3 = var5[var3];
+    var9 = var4.bind(var0)(var3);
+    var8 = var9.createStyles;
+    var3 = {};
+    var10 = {
+        'flex': 1,
+        'backgroundColor': null,
+        'justifyContent': 'center',
+        'paddingTop': null,
+        'alignItems': 'center'
+    };
+    var11 = 8;
+    var14 = var5[var11];
+    var14 = var12.bind(var0)(var14);
+    var14 = var14.colors;
+    var14 = var14.BACKGROUND_BASE_LOW;
+    var10.backgroundColor = var14;
+    var14 = 'center';
+    var15 = 9;
+    var15 = var5[var15];
+    var15 = var4.bind(var0)(var15);
+    var16 = var15.NAV_BAR_HEIGHT;
+    var15 = 32;
+    var15 = var16 + var15;
+    var10.paddingTop = var15;
+    var3.container = var10;
+    var10 = {
+        'display': 'flex',
+        'alignItems': 'center'
+    };
+    var3.headerContainer = var10;
+    var10 = {
+        'flexGrow': 0,
+        'marginHorizontal': 16,
+        'marginBottom': 16
+    };
+    var3.button = var10;
+    var10 = {
+        'marginBottom': 8,
+        'textAlign': 'center'
+    };
+    var3.title = var10;
+    var10 = {};
+    var10.textAlign = var14;
+    var3.subtitle = var10;
+    var10 = {
+        'alignSelf': 'center',
+        'paddingTop': 24
+    };
+    var3.errorContainer = var10;
+    var10 = {};
+    var14 = 10;
+    var14 = var5[var14];
+    var14 = var12.bind(var0)(var14);
+    var13 = var13.DISPLAY_MEDIUM;
+    var11 = var5[var11];
+    var11 = var12.bind(var0)(var11);
+    var11 = var11.unsafe_rawColors;
+    var12 = var11.RED_400;
+    var11 = 12;
+    var18 = var14.bind(var0)(var13, var12, var11);
+    var19 = var10;
+    var11 = copyDataProperties(var19, var18);
+    var3.errorText = var10;
+    var3 = var8.bind(var9)(var3);
+    var _closure1_slot11 = var3;
     var3 = {};
     var6 = var6.SLIDE_IN_OUT;
     var3.animation = var6;
@@ -650,4 +652,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 57, 31, 27, 5642, 660, 33, 1297, 671, 4753, 4689, 1568, 566, 5782, 14656, 5797, 4008, 5780, 3938, 1234, 14665, 4852, 4849, 14653, 481, 5374, 5836, 5834, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 57, 31, 27, 5642, 660, 33, 1297, 671, 4708, 4687, 1568, 566, 5782, 14648, 5797, 4008, 5780, 3938, 1235, 14657, 4883, 4880, 14645, 481, 5380, 4710, 5845, 2]);

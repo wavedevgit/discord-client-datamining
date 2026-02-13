@@ -28,13 +28,13 @@ import rg.w0;
 abstract class m {
 
     /* renamed from: a  reason: collision with root package name */
-    static final rk f27397a = rk.a(ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE);
+    static final rk f27965a = rk.a(ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE);
 
     /* renamed from: b  reason: collision with root package name */
-    private static final Comparator f27398b = new Comparator() { // from class: hk.h
+    private static final Comparator f27966b = new Comparator() { // from class: hk.h
         @Override // java.util.Comparator
         public final int compare(Object obj, Object obj2) {
-            rk rkVar = m.f27397a;
+            rk rkVar = m.f27965a;
             return ((Integer) ((Map.Entry) obj).getValue()).compareTo((Integer) ((Map.Entry) obj2).getValue());
         }
     };
@@ -44,12 +44,12 @@ abstract class m {
         SparseArray sparseArray = new SparseArray();
         int i10 = 0;
         for (ka kaVar : kaVarArr) {
-            SparseArray sparseArray2 = (SparseArray) sparseArray.get(kaVar.f46945u);
+            SparseArray sparseArray2 = (SparseArray) sparseArray.get(kaVar.f47513u);
             if (sparseArray2 == null) {
                 sparseArray2 = new SparseArray();
-                sparseArray.append(kaVar.f46945u, sparseArray2);
+                sparseArray.append(kaVar.f47513u, sparseArray2);
             }
-            sparseArray2.append(kaVar.f46946v, kaVar);
+            sparseArray2.append(kaVar.f47514v, kaVar);
         }
         j0 j0Var = new j0();
         int i11 = 0;
@@ -66,64 +66,64 @@ abstract class m {
                     String str;
                     String str2;
                     ka kaVar2 = (ka) obj;
-                    rk rkVar = m.f27397a;
-                    List b11 = e.b(kaVar2.f46937e);
-                    if (fl.b(kaVar2.f46940p)) {
+                    rk rkVar = m.f27965a;
+                    List b11 = e.b(kaVar2.f47505e);
+                    if (fl.b(kaVar2.f47508p)) {
                         str = "";
                     } else {
-                        str = kaVar2.f46940p;
+                        str = kaVar2.f47508p;
                     }
                     String str3 = str;
                     Rect a11 = e.a(b11);
-                    if (fl.b(kaVar2.f46942r)) {
+                    if (fl.b(kaVar2.f47510r)) {
                         str2 = "und";
                     } else {
-                        str2 = kaVar2.f46942r;
+                        str2 = kaVar2.f47510r;
                     }
                     String str4 = str2;
                     final Matrix matrix2 = matrix;
-                    return new a.b(str3, a11, b11, str4, matrix2, w0.a(Arrays.asList(kaVar2.f46936d), new uj() { // from class: hk.l
+                    return new a.b(str3, a11, b11, str4, matrix2, w0.a(Arrays.asList(kaVar2.f47504d), new uj() { // from class: hk.l
                         @Override // rg.uj
                         public final Object a(Object obj2) {
                             String str5;
                             String str6;
                             rg rgVar = (rg) obj2;
-                            rk rkVar2 = m.f27397a;
-                            List b12 = e.b(rgVar.f47114e);
-                            if (fl.b(rgVar.f47116o)) {
+                            rk rkVar2 = m.f27965a;
+                            List b12 = e.b(rgVar.f47682e);
+                            if (fl.b(rgVar.f47684o)) {
                                 str5 = "";
                             } else {
-                                str5 = rgVar.f47116o;
+                                str5 = rgVar.f47684o;
                             }
                             String str7 = str5;
                             Rect a12 = e.a(b12);
-                            if (fl.b(rgVar.f47118q)) {
+                            if (fl.b(rgVar.f47686q)) {
                                 str6 = "und";
                             } else {
-                                str6 = rgVar.f47118q;
+                                str6 = rgVar.f47686q;
                             }
-                            return new a.C0346a(str7, a12, b12, str6, matrix2, rgVar.f47117p, rgVar.f47114e.f46640p, m0.i());
+                            return new a.C0346a(str7, a12, b12, str6, matrix2, rgVar.f47685p, rgVar.f47682e.f47208p, m0.i());
                         }
-                    }), kaVar2.f46941q, kaVar2.f46937e.f46640p);
+                    }), kaVar2.f47509q, kaVar2.f47505e.f47208p);
                 }
             });
-            e4 e4Var = ((ka) b10.get(i10)).f46937e;
+            e4 e4Var = ((ka) b10.get(i10)).f47505e;
             r1 listIterator = b10.listIterator(i10);
             int i13 = Integer.MIN_VALUE;
             int i14 = Integer.MAX_VALUE;
             int i15 = Integer.MAX_VALUE;
             int i16 = Integer.MIN_VALUE;
             while (listIterator.hasNext()) {
-                e4 e4Var2 = ((ka) listIterator.next()).f46937e;
+                e4 e4Var2 = ((ka) listIterator.next()).f47505e;
                 int i17 = i10;
-                double sin = Math.sin(Math.toRadians(e4Var.f46640p));
+                double sin = Math.sin(Math.toRadians(e4Var.f47208p));
                 SparseArray sparseArray4 = sparseArray;
                 int i18 = i11;
-                double cos = Math.cos(Math.toRadians(e4Var.f46640p));
+                double cos = Math.cos(Math.toRadians(e4Var.f47208p));
                 Point[] pointArr = new Point[4];
-                Point point = new Point(e4Var2.f46636d, e4Var2.f46637e);
+                Point point = new Point(e4Var2.f47204d, e4Var2.f47205e);
                 pointArr[i17] = point;
-                point.offset(-e4Var.f46636d, -e4Var.f46637e);
+                point.offset(-e4Var.f47204d, -e4Var.f47205e);
                 Point point2 = pointArr[i17];
                 int i19 = point2.x;
                 r1 r1Var = listIterator;
@@ -132,9 +132,9 @@ abstract class m {
                 point2.x = i21;
                 int i22 = (int) (((-i19) * sin) + (i20 * cos));
                 point2.y = i22;
-                pointArr[1] = new Point(e4Var2.f46638i + i21, i22);
-                pointArr[2] = new Point(e4Var2.f46638i + i21, e4Var2.f46639o + i22);
-                pointArr[3] = new Point(i21, i22 + e4Var2.f46639o);
+                pointArr[1] = new Point(e4Var2.f47206i + i21, i22);
+                pointArr[2] = new Point(e4Var2.f47206i + i21, e4Var2.f47207o + i22);
+                pointArr[3] = new Point(i21, i22 + e4Var2.f47207o);
                 for (int i23 = i17; i23 < 4; i23++) {
                     Point point3 = pointArr[i23];
                     i14 = Math.min(i14, point3.x);
@@ -150,10 +150,10 @@ abstract class m {
             SparseArray sparseArray5 = sparseArray;
             int i24 = i11;
             int i25 = i10;
-            int i26 = e4Var.f46636d;
-            int i27 = e4Var.f46637e;
-            double sin2 = Math.sin(Math.toRadians(e4Var.f46640p));
-            double cos2 = Math.cos(Math.toRadians(e4Var.f46640p));
+            int i26 = e4Var.f47204d;
+            int i27 = e4Var.f47205e;
+            double sin2 = Math.sin(Math.toRadians(e4Var.f47208p));
+            double cos2 = Math.cos(Math.toRadians(e4Var.f47208p));
             Point[] pointArr2 = {new Point(i14, i15), new Point(i13, i15), new Point(i13, i16), new Point(i14, i16)};
             int i28 = i25;
             while (i28 < 4) {
@@ -168,7 +168,7 @@ abstract class m {
                 sin2 = d10;
             }
             List asList = Arrays.asList(pointArr2);
-            j0Var.a(new a.e(f27397a.b(w0.a(a10, new uj() { // from class: hk.k
+            j0Var.a(new a.e(f27965a.b(w0.a(a10, new uj() { // from class: hk.k
                 @Override // rg.uj
                 public final Object a(Object obj) {
                     return ((a.b) obj).c();
@@ -179,7 +179,7 @@ abstract class m {
             sparseArray = sparseArray5;
         }
         m0 b11 = j0Var.b();
-        return new gk.a(f27397a.b(w0.a(b11, new uj() { // from class: hk.i
+        return new gk.a(f27965a.b(w0.a(b11, new uj() { // from class: hk.i
             @Override // rg.uj
             public final Object a(Object obj) {
                 return ((a.e) obj).d();
@@ -202,7 +202,7 @@ abstract class m {
         }
         Set entrySet = hashMap.entrySet();
         if (!entrySet.isEmpty()) {
-            String str = (String) ((Map.Entry) Collections.max(entrySet, f27398b)).getKey();
+            String str = (String) ((Map.Entry) Collections.max(entrySet, f27966b)).getKey();
             if (!fl.b(str)) {
                 return str;
             }

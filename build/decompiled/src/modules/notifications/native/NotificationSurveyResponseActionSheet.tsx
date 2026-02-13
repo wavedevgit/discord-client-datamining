@@ -2,11 +2,11 @@
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var4 = require;
-    var13 = metroImportDefault;
+    var11 = metroImportDefault;
     var2 = exports;
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
-    var _closure1_slot1 = var13;
+    var _closure1_slot1 = var11;
     var _closure1_slot2 = var5;
     var0 = global;
     var7 = var0.Object;
@@ -37,64 +37,60 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = 3;
     var6 = var5[var6];
     var6 = var4.bind(var0)(var6);
-    var8 = var6.jsx;
-    var _closure1_slot6 = var8;
+    var7 = var6.jsx;
+    var _closure1_slot6 = var7;
     var6 = var6.jsxs;
     var _closure1_slot7 = var6;
     var6 = 4;
     var6 = var5[var6];
-    var10 = var4.bind(var0)(var6);
-    var9 = var10.createStyles;
-    var7 = {};
-    var11 = {};
-    var6 = 5;
-    var6 = var5[var6];
-    var15 = var13.bind(var0)(var6);
-    var14 = var3.DISPLAY_EXTRABOLD;
-    var12 = 6;
-    var3 = var5[var12];
-    var3 = var13.bind(var0)(var3);
+    var8 = var4.bind(var0)(var6);
+    var7 = var8.createStyles;
+    var6 = {};
+    var9 = {};
+    var10 = 5;
+    var10 = var5[var10];
+    var14 = var11.bind(var0)(var10);
+    var13 = var3.DISPLAY_EXTRABOLD;
+    var10 = 6;
+    var3 = var5[var10];
+    var3 = var11.bind(var0)(var3);
     var3 = var3.colors;
-    var6 = var3.INTERACTIVE_TEXT_ACTIVE;
+    var12 = var3.INTERACTIVE_TEXT_ACTIVE;
     var3 = 16;
-    var17 = var15.bind(var0)(var14, var6, var3);
-    var18 = var11;
-    var6 = copyDataProperties(var18, var17);
-    var6 = 8;
-    var14 = 'marginTop';
-    var11[var14] = var6;
-    var14 = 'marginBottom';
-    var11[var14] = var6;
-    var7.title = var11;
-    var11 = {
+    var16 = var14.bind(var0)(var13, var12, var3);
+    var17 = var9;
+    var12 = copyDataProperties(var17, var16);
+    var13 = 8;
+    var12 = 'marginTop';
+    var9[var12] = var13;
+    var12 = 'marginBottom';
+    var9[var12] = var13;
+    var6.title = var9;
+    var9 = {
         'color': null,
         'textAlign': 'center',
         'width': 343
     };
-    var12 = var5[var12];
-    var12 = var13.bind(var0)(var12);
-    var12 = var12.colors;
-    var12 = var12.INTERACTIVE_TEXT_ACTIVE;
-    var11.color = var12;
-    var7.subtitle = var11;
-    var11 = {
+    var10 = var5[var10];
+    var10 = var11.bind(var0)(var10);
+    var10 = var10.colors;
+    var10 = var10.INTERACTIVE_TEXT_ACTIVE;
+    var9.color = var10;
+    var6.subtitle = var9;
+    var9 = {
         'paddingTop': 50,
         'paddingBottom': 100,
         'alignItems': 'center'
     };
-    var7.view = var11;
-    var11 = {
+    var6.view = var9;
+    var9 = {
         'width': 116,
         'height': 93
     };
-    var7.rating = var11;
-    var7 = var9.bind(var10)(var7);
-    var _closure1_slot8 = var7;
-    var6 = var5[var6];
-    var6 = var4.bind(var0)(var6);
-    var7 = var6.ActionSheetCloseButton;
-    var6 = {};
-    var9 = function() {
+    var6.rating = var9;
+    var6 = var7.bind(var8)(var6);
+    var _closure1_slot8 = var6;
+    var6 = function() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 7;
@@ -105,8 +101,6 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = var1.bind(var2)();
         return var0;
     };
-    var6.onPress = var9;
-    var6 = var8.bind(var0)(var7, var6);
     var _closure1_slot9 = var6;
     var3 = var5[var3];
     var5 = var4.bind(var0)(var3);
@@ -114,7 +108,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/notifications/native/NotificationSurveyResponseActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun78728: for (var _fun78728_ip = 0;;) switch (_fun78728_ip) {
+        _fun76993: for (var _fun76993_ip = 0;;) switch (_fun76993_ip) {
             case 0:
                 var0 = arg0;
                 var8 = var0.header;
@@ -124,7 +118,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = _closure1_slot7;
                 var1 = _closure1_slot0;
                 var4 = _closure1_slot2;
-                var0 = 9;
+                var0 = 8;
                 var0 = var4[var0];
                 var0 = var1.bind(var3)(var0);
                 var1 = var0.BottomSheet;
@@ -132,23 +126,30 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = null;
                 var5 = var4 != var8;
                 if (!var5) {
-                    _fun78728_ip = 113;
-                    continue _fun78728
+                    _fun76993_ip = 143;
+                    continue _fun76993
                 }
             case 62:
                 var7 = _closure1_slot6;
-                var6 = _closure1_slot0;
-                var9 = _closure1_slot2;
-                var4 = 10;
-                var4 = var9[var4];
-                var4 = var6.bind(var3)(var4);
+                var9 = _closure1_slot0;
+                var10 = _closure1_slot2;
+                var4 = 9;
+                var4 = var10[var4];
+                var4 = var9.bind(var3)(var4);
                 var6 = var4.BottomSheetTitleHeader;
                 var4 = {};
                 var4.title = var8;
-                var8 = _closure1_slot9;
+                var8 = 10;
+                var8 = var10[var8];
+                var8 = var9.bind(var3)(var8);
+                var9 = var8.ActionSheetCloseButton;
+                var8 = {};
+                var10 = _closure1_slot9;
+                var8.onPress = var10;
+                var8 = var7.bind(var3)(var9, var8);
                 var4.trailing = var8;
                 var5 = var7.bind(var3)(var6, var4);
-            case 113:
+            case 143:
                 var4 = new Array(2);
                 var4[0] = var5;
                 var7 = _closure1_slot7;
@@ -233,4 +234,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 660, 33, 1297, 4689, 671, 3279, 5233, 4907, 5237, 9933, 3938, 1234, 5384, 1686, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 660, 33, 1297, 4687, 671, 3282, 4938, 5267, 5265, 9778, 3938, 1235, 5390, 1689, 2]);

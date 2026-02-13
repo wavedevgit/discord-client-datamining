@@ -38,19 +38,19 @@ import org.jetbrains.annotations.NotNull;
 public final class c extends FrameLayout {
 
     /* renamed from: i  reason: collision with root package name */
-    public static final a f35954i = new a(null);
+    public static final a f36522i = new a(null);
 
     /* renamed from: d  reason: collision with root package name */
-    private final gp.b f35955d;
+    private final gp.b f36523d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final e f35956e;
+    private final e f36524e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements c0 {
 
         /* renamed from: a  reason: collision with root package name */
-        private final /* synthetic */ f f35957a;
+        private final /* synthetic */ f f36525a;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         /* renamed from: lp.c$a$a  reason: collision with other inner class name */
@@ -69,7 +69,7 @@ public final class c extends FrameLayout {
             @Override // kotlin.jvm.functions.Function2
             public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2) {
                 a((d) obj, (a0) obj2);
-                return Unit.f31988a;
+                return Unit.f32556a;
             }
         }
 
@@ -95,16 +95,16 @@ public final class c extends FrameLayout {
             Intrinsics.checkNotNullParameter(initialRendering, "initialRendering");
             Intrinsics.checkNotNullParameter(initialViewEnvironment, "initialViewEnvironment");
             Intrinsics.checkNotNullParameter(contextForNewView, "contextForNewView");
-            return this.f35957a.a(initialRendering, initialViewEnvironment, contextForNewView, viewGroup);
+            return this.f36525a.a(initialRendering, initialViewEnvironment, contextForNewView, viewGroup);
         }
 
         @Override // gn.c0
         public KClass getType() {
-            return this.f35957a.getType();
+            return this.f36525a.getType();
         }
 
         private a() {
-            this.f35957a = new f(Reflection.getOrCreateKotlinClass(d.class), new Function4() { // from class: lp.b
+            this.f36525a = new f(Reflection.getOrCreateKotlinClass(d.class), new Function4() { // from class: lp.b
                 @Override // kotlin.jvm.functions.Function4
                 public final Object invoke(Object obj, Object obj2, Object obj3, Object obj4) {
                     View c10;
@@ -131,7 +131,7 @@ public final class c extends FrameLayout {
                 view = null;
             }
             if (view != null) {
-                this.f35956e.d(CollectionsKt.e(nVar));
+                this.f36524e.d(CollectionsKt.e(nVar));
                 g0.g(view, nVar, a0Var);
                 return view;
             }
@@ -145,10 +145,10 @@ public final class c extends FrameLayout {
             }
         });
         g0.h(c11);
-        this.f35956e.h(CollectionsKt.l(), currentView, c11);
-        this.f35955d.f25960c.removeView(currentView);
-        this.f35955d.f25960c.addView(c11);
-        if (currentView != null && (c10 = hn.d.f27464h.c(currentView)) != null) {
+        this.f36524e.h(CollectionsKt.l(), currentView, c11);
+        this.f36523d.f25960c.removeView(currentView);
+        this.f36523d.f25960c.addView(c11);
+        if (currentView != null && (c10 = hn.d.f28032h.c(currentView)) != null) {
             c10.f();
         }
         return c11;
@@ -158,13 +158,13 @@ public final class c extends FrameLayout {
     public static final void c(View view, Function0 doStart) {
         Intrinsics.checkNotNullParameter(view, "view");
         Intrinsics.checkNotNullParameter(doStart, "doStart");
-        d.a.e(hn.d.f27464h, view, null, 2, null);
+        d.a.e(hn.d.f28032h, view, null, 2, null);
         doStart.invoke();
     }
 
     private final View getCurrentView() {
-        if (this.f35955d.f25960c.getChildCount() > 0) {
-            return this.f35955d.f25960c.getChildAt(0);
+        if (this.f36523d.f25960c.getChildCount() > 0) {
+            return this.f36523d.f25960c.getChildAt(0);
         }
         return null;
     }
@@ -176,18 +176,18 @@ public final class c extends FrameLayout {
         setEnabled(newRendering.b());
         if (!isEnabled()) {
             b10.setAlpha(0.5f);
-            this.f35955d.f25959b.setVisibility(0);
+            this.f36523d.f25959b.setVisibility(0);
             return;
         }
         b10.setAlpha(1.0f);
-        this.f35955d.f25959b.setVisibility(8);
+        this.f36523d.f25959b.setVisibility(8);
     }
 
     @Override // android.view.ViewGroup, android.view.View
     protected void onAttachedToWindow() {
         Object c10;
         super.onAttachedToWindow();
-        u3.f c11 = hn.c.f27463a.c(this);
+        u3.f c11 = hn.c.f28031a.c(this);
         g.a aVar = g.f25811a;
         j0 d10 = k0.d(this);
         if (d10 == null) {
@@ -199,12 +199,12 @@ public final class c extends FrameLayout {
             c10 = null;
         }
         Intrinsics.checkNotNull(c10);
-        this.f35956e.a(g.a.b(aVar, c10, null, 2, null), c11);
+        this.f36524e.a(g.a.b(aVar, c10, null, 2, null), c11);
     }
 
     @Override // android.view.ViewGroup, android.view.View
     protected void onDetachedFromWindow() {
-        this.f35956e.b();
+        this.f36524e.b();
         super.onDetachedFromWindow();
     }
 
@@ -218,7 +218,7 @@ public final class c extends FrameLayout {
             bVar = null;
         }
         if (bVar != null) {
-            this.f35956e.f(bVar.a());
+            this.f36524e.f(bVar.a());
             super.onRestoreInstanceState(((b) state).getSuperState());
             return;
         }
@@ -229,7 +229,7 @@ public final class c extends FrameLayout {
     protected Parcelable onSaveInstanceState() {
         Parcelable onSaveInstanceState = super.onSaveInstanceState();
         if (onSaveInstanceState != null) {
-            return new b(onSaveInstanceState, this.f35956e.g());
+            return new b(onSaveInstanceState, this.f36524e.g());
         }
         return null;
     }
@@ -240,7 +240,7 @@ public final class c extends FrameLayout {
         public static final a CREATOR = new a(null);
 
         /* renamed from: d  reason: collision with root package name */
-        private final e.a f35958d;
+        private final e.a f36526d;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         public static final class a implements Parcelable.Creator {
@@ -270,18 +270,18 @@ public final class c extends FrameLayout {
             super(superState);
             Intrinsics.checkNotNullParameter(superState, "superState");
             Intrinsics.checkNotNullParameter(savedViewState, "savedViewState");
-            this.f35958d = savedViewState;
+            this.f36526d = savedViewState;
         }
 
         public final e.a a() {
-            return this.f35958d;
+            return this.f36526d;
         }
 
         @Override // android.view.View.BaseSavedState, android.view.AbsSavedState, android.os.Parcelable
         public void writeToParcel(Parcel out, int i10) {
             Intrinsics.checkNotNullParameter(out, "out");
             super.writeToParcel(out, i10);
-            out.writeParcelable(this.f35958d, i10);
+            out.writeParcelable(this.f36526d, i10);
         }
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
@@ -290,7 +290,7 @@ public final class c extends FrameLayout {
             Intrinsics.checkNotNullParameter(source, "source");
             Parcelable readParcelable = source.readParcelable(e.a.class.getClassLoader());
             Intrinsics.checkNotNull(readParcelable);
-            this.f35958d = (e.a) readParcelable;
+            this.f36526d = (e.a) readParcelable;
         }
     }
 
@@ -300,7 +300,7 @@ public final class c extends FrameLayout {
         Intrinsics.checkNotNullParameter(context, "context");
         gp.b b10 = gp.b.b(LayoutInflater.from(context), this);
         Intrinsics.checkNotNullExpressionValue(b10, "inflate(...)");
-        this.f35955d = b10;
-        this.f35956e = new e();
+        this.f36523d = b10;
+        this.f36524e = new e();
     }
 }

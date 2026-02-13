@@ -53,7 +53,7 @@ public final class d implements Continuation, CoroutineStackFrame {
         if (!(obj instanceof Result.b)) {
             return obj;
         }
-        throw ((Result.b) obj).f31987d;
+        throw ((Result.b) obj).f32555d;
     }
 
     @Override // kotlin.coroutines.jvm.internal.CoroutineStackFrame

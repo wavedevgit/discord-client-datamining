@@ -10,10 +10,10 @@ import x4.k;
 public interface c extends h.b {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final b f51339a = b.f51341a;
+    public static final b f51907a = b.f51909a;
 
     /* renamed from: b  reason: collision with root package name */
-    public static final c f51340b = new a();
+    public static final c f51908b = new a();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a implements c {
@@ -25,7 +25,7 @@ public interface c extends h.b {
     public static final class b {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ b f51341a = new b();
+        static final /* synthetic */ b f51909a = new b();
 
         private b() {
         }
@@ -36,10 +36,10 @@ public interface c extends h.b {
     public interface InterfaceC0708c {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final a f51342a = a.f51344a;
+        public static final a f51910a = a.f51912a;
 
         /* renamed from: b  reason: collision with root package name */
-        public static final InterfaceC0708c f51343b = new InterfaceC0708c() { // from class: v4.d
+        public static final InterfaceC0708c f51911b = new InterfaceC0708c() { // from class: v4.d
             @Override // v4.c.InterfaceC0708c
             public final c a(g5.h hVar) {
                 c b10;
@@ -53,7 +53,7 @@ public interface c extends h.b {
         public static final class a {
 
             /* renamed from: a  reason: collision with root package name */
-            static final /* synthetic */ a f51344a = new a();
+            static final /* synthetic */ a f51912a = new a();
 
             private a() {
             }
@@ -61,7 +61,7 @@ public interface c extends h.b {
 
         /* JADX INFO: Access modifiers changed from: private */
         static c b(g5.h hVar) {
-            return c.f51340b;
+            return c.f51908b;
         }
 
         c a(g5.h hVar);

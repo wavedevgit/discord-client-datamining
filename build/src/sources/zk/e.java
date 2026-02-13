@@ -4,16 +4,16 @@ package zk;
 public final class e extends i {
 
     /* renamed from: c  reason: collision with root package name */
-    private final String f56493c;
+    private final String f57061c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f56494d;
+    private final String f57062d;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public e(ok.a aVar, String str, String str2) {
         super(aVar);
-        this.f56493c = str2;
-        this.f56494d = str;
+        this.f57061c = str2;
+        this.f57062d = str;
     }
 
     private void k(StringBuilder sb2, int i10) {
@@ -22,7 +22,7 @@ public final class e extends i {
             return;
         }
         sb2.append('(');
-        sb2.append(this.f56493c);
+        sb2.append(this.f57061c);
         sb2.append(')');
         int i11 = f10 % 32;
         int i12 = f10 / 32;
@@ -57,7 +57,7 @@ public final class e extends i {
     @Override // zk.i
     protected void h(StringBuilder sb2, int i10) {
         sb2.append('(');
-        sb2.append(this.f56494d);
+        sb2.append(this.f57062d);
         sb2.append(i10 / 100000);
         sb2.append(')');
     }

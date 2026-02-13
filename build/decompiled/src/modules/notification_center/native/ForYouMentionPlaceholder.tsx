@@ -173,14 +173,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = var2.bind(var3)(var1);
         var2 = var5.useAnimatedStyle;
         var1 = function() {
-            _fun103901: for (var _fun103901_ip = 0;;) switch (_fun103901_ip) {
+            _fun104026: for (var _fun104026_ip = 0;;) switch (_fun104026_ip) {
                 case 0:
                     var0 = {};
                     var3 = _closure2_slot1;
                     var1 = 0.7;
                     if (var3) {
-                        _fun103901_ip = 35;
-                        continue _fun103901
+                        _fun104026_ip = 35;
+                        continue _fun104026
                     }
                 case 22:
                     var3 = _closure2_slot2;

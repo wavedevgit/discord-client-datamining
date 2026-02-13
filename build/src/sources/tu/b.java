@@ -20,10 +20,10 @@ public enum b {
     
 
     /* renamed from: e  reason: collision with root package name */
-    public static final a f50112e = new a(null);
+    public static final a f50680e = new a(null);
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f50126d;
+    private final int f50694d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a {
@@ -46,10 +46,10 @@ public enum b {
     }
 
     b(int i10) {
-        this.f50126d = i10;
+        this.f50694d = i10;
     }
 
     public final int d() {
-        return this.f50126d;
+        return this.f50694d;
     }
 }

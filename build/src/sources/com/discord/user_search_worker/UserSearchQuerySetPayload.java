@@ -106,17 +106,17 @@ public final class UserSearchQuerySetPayload {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final /* synthetic */ KSerializer _childSerializers$_anonymous_() {
-        return new tt.f(n2.f50033a);
+        return new tt.f(n2.f50601a);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final /* synthetic */ KSerializer _childSerializers$_anonymous_$0() {
-        return new tt.f(n2.f50033a);
+        return new tt.f(n2.f50601a);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final /* synthetic */ KSerializer _childSerializers$_anonymous_$1() {
-        return new u0(n2.f50033a, x.f50087a);
+        return new u0(n2.f50601a, x.f50655a);
     }
 
     public static /* synthetic */ UserSearchQuerySetPayload copy$default(UserSearchQuerySetPayload userSearchQuerySetPayload, String str, UserSearchQuerySetFilters userSearchQuerySetFilters, List list, List list2, Map map, double d10, int i10, int i11, Object obj) {

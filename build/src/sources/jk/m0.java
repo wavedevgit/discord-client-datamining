@@ -3,22 +3,22 @@ package jk;
 final class m0 implements x0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final i0 f31132a;
+    private final i0 f31700a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final d1 f31133b;
+    private final d1 f31701b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final boolean f31134c;
+    private final boolean f31702c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final m f31135d;
+    private final m f31703d;
 
     private m0(d1 d1Var, m mVar, i0 i0Var) {
-        this.f31133b = d1Var;
-        this.f31134c = mVar.d(i0Var);
-        this.f31135d = mVar;
-        this.f31132a = i0Var;
+        this.f31701b = d1Var;
+        this.f31702c = mVar.d(i0Var);
+        this.f31703d = mVar;
+        this.f31700a = i0Var;
     }
 
     private void h(d1 d1Var, m mVar, Object obj, w0 w0Var, l lVar) {
@@ -62,9 +62,9 @@ final class m0 implements x0 {
 
     private boolean j(w0 w0Var, l lVar, m mVar, p pVar, d1 d1Var, Object obj) {
         int tag = w0Var.getTag();
-        if (tag != j1.f31075a) {
+        if (tag != j1.f31643a) {
             if (j1.b(tag) == 2) {
-                Object a10 = mVar.a(lVar, this.f31132a, j1.a(tag));
+                Object a10 = mVar.a(lVar, this.f31700a, j1.a(tag));
                 if (a10 != null) {
                     mVar.g(w0Var, a10, lVar, pVar);
                     return true;
@@ -78,10 +78,10 @@ final class m0 implements x0 {
         f fVar = null;
         while (w0Var.z() != Integer.MAX_VALUE) {
             int tag2 = w0Var.getTag();
-            if (tag2 == j1.f31077c) {
+            if (tag2 == j1.f31645c) {
                 i10 = w0Var.g();
-                obj2 = mVar.a(lVar, this.f31132a, i10);
-            } else if (tag2 == j1.f31078d) {
+                obj2 = mVar.a(lVar, this.f31700a, i10);
+            } else if (tag2 == j1.f31646d) {
                 if (obj2 != null) {
                     mVar.g(w0Var, obj2, lVar, pVar);
                 } else {
@@ -91,7 +91,7 @@ final class m0 implements x0 {
                 break;
             }
         }
-        if (w0Var.getTag() == j1.f31076b) {
+        if (w0Var.getTag() == j1.f31644b) {
             if (fVar != null) {
                 if (obj2 != null) {
                     mVar.h(fVar, obj2, lVar, pVar);
@@ -106,26 +106,26 @@ final class m0 implements x0 {
 
     @Override // jk.x0
     public void a(Object obj, Object obj2) {
-        z0.g(this.f31133b, obj, obj2);
-        if (this.f31134c) {
-            z0.e(this.f31135d, obj, obj2);
+        z0.g(this.f31701b, obj, obj2);
+        if (this.f31702c) {
+            z0.e(this.f31703d, obj, obj2);
         }
     }
 
     @Override // jk.x0
     public void b(Object obj) {
-        this.f31133b.h(obj);
-        this.f31135d.e(obj);
+        this.f31701b.h(obj);
+        this.f31703d.e(obj);
     }
 
     @Override // jk.x0
     public final boolean c(Object obj) {
-        return this.f31135d.b(obj).b();
+        return this.f31703d.b(obj).b();
     }
 
     @Override // jk.x0
     public Object d() {
-        i0 i0Var = this.f31132a;
+        i0 i0Var = this.f31700a;
         if (i0Var instanceof s) {
             return ((s) i0Var).y();
         }
@@ -134,26 +134,26 @@ final class m0 implements x0 {
 
     @Override // jk.x0
     public int e(Object obj) {
-        int hashCode = this.f31133b.g(obj).hashCode();
-        if (this.f31134c) {
-            return (hashCode * 53) + this.f31135d.b(obj).hashCode();
+        int hashCode = this.f31701b.g(obj).hashCode();
+        if (this.f31702c) {
+            return (hashCode * 53) + this.f31703d.b(obj).hashCode();
         }
         return hashCode;
     }
 
     @Override // jk.x0
     public boolean f(Object obj, Object obj2) {
-        if (!this.f31133b.g(obj).equals(this.f31133b.g(obj2))) {
+        if (!this.f31701b.g(obj).equals(this.f31701b.g(obj2))) {
             return false;
         }
-        if (this.f31134c) {
-            return this.f31135d.b(obj).equals(this.f31135d.b(obj2));
+        if (this.f31702c) {
+            return this.f31703d.b(obj).equals(this.f31703d.b(obj2));
         }
         return true;
     }
 
     @Override // jk.x0
     public void g(Object obj, w0 w0Var, l lVar) {
-        h(this.f31133b, this.f31135d, obj, w0Var, lVar);
+        h(this.f31701b, this.f31703d, obj, w0Var, lVar);
     }
 }

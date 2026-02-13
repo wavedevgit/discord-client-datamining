@@ -7,10 +7,10 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 public abstract class a {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final C0518a f36559a = new C0518a(null);
+    public static final C0518a f37127a = new C0518a(null);
 
     /* renamed from: b  reason: collision with root package name */
-    private static final List f36560b = CollectionsKt.o("RootedDevice", "DebuggerThreatDetected", "AppIsDebuggable", "AppIntegrityError", "EmulatorFound", "GoogleEmulatorDetected", "MagiskManagerDetected", "FridaDetected", "FridaCustomDetected");
+    private static final List f37128b = CollectionsKt.o("RootedDevice", "DebuggerThreatDetected", "AppIsDebuggable", "AppIntegrityError", "EmulatorFound", "GoogleEmulatorDetected", "MagiskManagerDetected", "FridaDetected", "FridaCustomDetected");
 
     /* renamed from: mo.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
@@ -20,7 +20,7 @@ public abstract class a {
         }
 
         public final List a() {
-            return a.f36560b;
+            return a.f37128b;
         }
 
         private C0518a() {

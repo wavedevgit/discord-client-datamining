@@ -6,14 +6,14 @@ import kotlin.jvm.internal.Intrinsics;
 public final class g {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ActivityResultLauncher f45551a;
+    private final ActivityResultLauncher f46119a;
 
     public g(ActivityResultLauncher passportNfcReaderLauncher) {
         Intrinsics.checkNotNullParameter(passportNfcReaderLauncher, "passportNfcReaderLauncher");
-        this.f45551a = passportNfcReaderLauncher;
+        this.f46119a = passportNfcReaderLauncher;
     }
 
     public final ActivityResultLauncher a() {
-        return this.f45551a;
+        return this.f46119a;
     }
 }

@@ -42,7 +42,7 @@ public final class h extends CoordinatorLayout implements FragmentManager.o {
         this.M = new ArrayList();
         this.N = new ArrayList();
         this.O = new c();
-        setId(un.g.f50812a.a());
+        setId(un.g.f51380a.a());
     }
 
     private final List Z() {
@@ -177,7 +177,7 @@ public final class h extends CoordinatorLayout implements FragmentManager.o {
     }
 
     public final void i0() {
-        FragmentManager a10 = un.b.f50809a.a(this);
+        FragmentManager a10 = un.b.f51377a.a(this);
         if (a10 != null) {
             a10.n(this);
             this.K = a10;

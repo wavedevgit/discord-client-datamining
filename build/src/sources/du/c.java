@@ -1386,7 +1386,7 @@ public final class c implements du.e, du.d {
         hashMap.put("PST", net.time4j.tz.p.r(fVar, 8));
         hashMap.put("PDT", net.time4j.tz.p.r(fVar, 7));
         N.w(new du.f(b0.TIMEZONE_OFFSET, new a(), new b(hashMap)));
-        return N.F().V(net.time4j.tz.p.f37786v);
+        return N.F().V(net.time4j.tz.p.f38354v);
     }
 
     private static void M(d dVar) {
@@ -1869,7 +1869,7 @@ public final class c implements du.e, du.d {
                 bu.b0 b0Var = bu.b0.DAYLIGHT_SAVING;
                 if (h10.n(b0Var)) {
                     boolean booleanValue = ((Boolean) h10.k(b0Var)).booleanValue();
-                    net.time4j.tz.o oVar = (net.time4j.tz.o) pVar.b(cu.a.f21113e, net.time4j.tz.l.f37724o);
+                    net.time4j.tz.o oVar = (net.time4j.tz.o) pVar.b(cu.a.f21113e, net.time4j.tz.l.f38292o);
                     if (booleanValue) {
                         gVar2 = net.time4j.tz.g.EARLIER_OFFSET;
                     } else {

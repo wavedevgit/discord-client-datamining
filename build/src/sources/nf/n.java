@@ -11,24 +11,24 @@ import java.util.Arrays;
 public final class n extends ff.d implements mf.d {
 
     /* renamed from: k  reason: collision with root package name */
-    private static final a.g f37830k;
+    private static final a.g f38398k;
 
     /* renamed from: l  reason: collision with root package name */
-    private static final a.AbstractC0316a f37831l;
+    private static final a.AbstractC0316a f38399l;
 
     /* renamed from: m  reason: collision with root package name */
-    private static final ff.a f37832m;
+    private static final ff.a f38400m;
 
     static {
         a.g gVar = new a.g();
-        f37830k = gVar;
+        f38398k = gVar;
         k kVar = new k();
-        f37831l = kVar;
-        f37832m = new ff.a("ModuleInstall.API", kVar, gVar);
+        f38399l = kVar;
+        f38400m = new ff.a("ModuleInstall.API", kVar, gVar);
     }
 
     public n(Context context) {
-        super(context, f37832m, a.d.f23724g, d.a.f23736c);
+        super(context, f38400m, a.d.f23724g, d.a.f23736c);
     }
 
     static final a C(boolean z10, ff.f... fVarArr) {

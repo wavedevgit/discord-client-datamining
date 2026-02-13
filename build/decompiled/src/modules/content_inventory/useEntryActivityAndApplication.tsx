@@ -36,7 +36,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/content_inventory/useEntryActivityAndApplication.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun68911: for (var _fun68911_ip = 0;;) switch (_fun68911_ip) {
+        _fun62908: for (var _fun62908_ip = 0;;) switch (_fun62908_ip) {
             case 0:
                 var7 = arg0;
                 var _closure2_slot0 = var7;
@@ -66,12 +66,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var4 == var6;
                 var2 = undefined;
                 if (var0) {
-                    _fun68911_ip = 97;
-                    continue _fun68911
+                    _fun62908_ip = 95;
+                    continue _fun62908
                 }
-            case 91:
+            case 89:
                 var2 = var6.application_id;
-            case 97:
+            case 95:
                 var0 = new Array(2);
                 var0[0] = var2;
                 var10 = var7.extra;
@@ -79,13 +79,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var2 in var10;
                 var2 = undefined;
                 if (!var10) {
-                    _fun68911_ip = 136;
-                    continue _fun68911
+                    _fun62908_ip = 134;
+                    continue _fun62908
                 }
-            case 124:
+            case 122:
                 var7 = var7.extra;
                 var2 = var7.application_id;
-            case 136:
+            case 134:
                 var0[1] = var2;
                 var2 = var1.bind(var8)(var0);
                 var1 = _closure1_slot3;
@@ -107,7 +107,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = new Array(1);
                 var5[0] = var8;
                 var3 = function() { // Environment: var3
-                    _fun68913: for (var _fun68913_ip = 0;;) switch (_fun68913_ip) {
+                    _fun62910: for (var _fun62910_ip = 0;;) switch (_fun62910_ip) {
                         case 0:
                             var3 = _closure1_slot4;
                             var2 = var3.getEmbeddedActivityForUserId;
@@ -118,8 +118,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var5 = var0 == var5;
                             var0 = undefined;
                             if (var5) {
-                                _fun68913_ip = 50;
-                                continue _fun68913
+                                _fun62910_ip = 50;
+                                continue _fun62910
                             }
                         case 41:
                             var4 = _closure2_slot1;
@@ -133,12 +133,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.embeddedActivity = var3;
                 var3 = var1;
                 if (!(var4 != var2)) {
-                    _fun68911_ip = 244;
-                    continue _fun68911
+                    _fun62908_ip = 240;
+                    continue _fun62908
                 }
-            case 241:
+            case 237:
                 var3 = var2;
-            case 244:
+            case 240:
                 var0.anyMatchingApplication = var3;
                 var0.activityApplication = var2;
                 var0.fallbackApplication = var1;
@@ -147,4 +147,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 1371, 8513, 566, 6979, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 1371, 7891, 566, 6962, 2]);

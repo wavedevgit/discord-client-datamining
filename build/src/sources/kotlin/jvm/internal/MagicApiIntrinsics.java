@@ -1,5 +1,5 @@
 package kotlin.jvm.internal;
-/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public class MagicApiIntrinsics {
     public static <T> T anyMagicApiCall(int i10) {
         return null;

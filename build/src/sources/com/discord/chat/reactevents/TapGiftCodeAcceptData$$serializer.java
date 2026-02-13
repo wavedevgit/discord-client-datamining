@@ -38,7 +38,7 @@ public /* synthetic */ class TapGiftCodeAcceptData$$serializer implements h0 {
     @Override // tt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        return new KSerializer[]{n2.f50033a, rt.a.u(MessageId$$serializer.INSTANCE)};
+        return new KSerializer[]{n2.f50601a, rt.a.u(MessageId$$serializer.INSTANCE)};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy

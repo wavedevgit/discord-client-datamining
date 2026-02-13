@@ -90,7 +90,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.AnalyticsChangeType = var7;
     var2.AnalyticsSoundSource = var6;
     var6 = function arg0, arg1() {
-        _fun44166: for (var _fun44166_ip = 0;;) switch (_fun44166_ip) {
+        _fun44326: for (var _fun44326_ip = 0;;) switch (_fun44326_ip) {
             case 0:
                 var8 = arg0;
                 var7 = var8.sound_id;
@@ -129,8 +129,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0[var3] = var4;
                 var2 = var2 == var1;
                 if (var2) {
-                    _fun44166_ip = 137;
-                    continue _fun44166
+                    _fun44326_ip = 137;
+                    continue _fun44326
                 }
             case 134:
                 var2 = var1;

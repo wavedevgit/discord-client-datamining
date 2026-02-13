@@ -306,7 +306,7 @@ public final class b extends kotlin.collections.f implements List, RandomAccess,
         public Object c(int i10) {
             o();
             l();
-            kotlin.collections.d.f32022d.b(i10, this.f7478i);
+            kotlin.collections.d.f32590d.b(i10, this.f7478i);
             return s(this.f7477e + i10);
         }
 
@@ -332,7 +332,7 @@ public final class b extends kotlin.collections.f implements List, RandomAccess,
         @Override // java.util.AbstractList, java.util.List
         public Object get(int i10) {
             l();
-            kotlin.collections.d.f32022d.b(i10, this.f7478i);
+            kotlin.collections.d.f32590d.b(i10, this.f7478i);
             return this.f7476d[this.f7477e + i10];
         }
 
@@ -425,7 +425,7 @@ public final class b extends kotlin.collections.f implements List, RandomAccess,
         public Object set(int i10, Object obj) {
             o();
             l();
-            kotlin.collections.d.f32022d.b(i10, this.f7478i);
+            kotlin.collections.d.f32590d.b(i10, this.f7478i);
             Object[] objArr = this.f7476d;
             int i11 = this.f7477e;
             Object obj2 = objArr[i11 + i10];
@@ -435,7 +435,7 @@ public final class b extends kotlin.collections.f implements List, RandomAccess,
 
         @Override // java.util.AbstractList, java.util.List
         public List subList(int i10, int i11) {
-            kotlin.collections.d.f32022d.d(i10, i11, this.f7478i);
+            kotlin.collections.d.f32590d.d(i10, i11, this.f7478i);
             return new a(this.f7476d, this.f7477e + i10, i11 - i10, this, this.f7480p);
         }
 
@@ -469,7 +469,7 @@ public final class b extends kotlin.collections.f implements List, RandomAccess,
         @Override // java.util.AbstractList, java.util.List
         public ListIterator listIterator(int i10) {
             l();
-            kotlin.collections.d.f32022d.c(i10, this.f7478i);
+            kotlin.collections.d.f32590d.c(i10, this.f7478i);
             return new C0105a(this, i10);
         }
 
@@ -477,7 +477,7 @@ public final class b extends kotlin.collections.f implements List, RandomAccess,
         public void add(int i10, Object obj) {
             o();
             l();
-            kotlin.collections.d.f32022d.c(i10, this.f7478i);
+            kotlin.collections.d.f32590d.c(i10, this.f7478i);
             k(this.f7477e + i10, obj);
         }
 
@@ -486,7 +486,7 @@ public final class b extends kotlin.collections.f implements List, RandomAccess,
             Intrinsics.checkNotNullParameter(elements, "elements");
             o();
             l();
-            kotlin.collections.d.f32022d.c(i10, this.f7478i);
+            kotlin.collections.d.f32590d.c(i10, this.f7478i);
             int size = elements.size();
             j(this.f7477e + i10, elements, size);
             return size > 0;
@@ -727,7 +727,7 @@ public final class b extends kotlin.collections.f implements List, RandomAccess,
         if (i10 >= 0) {
             Object[] objArr = this.f7473d;
             if (i10 > objArr.length) {
-                this.f7473d = bs.c.e(this.f7473d, kotlin.collections.d.f32022d.e(objArr.length, i10));
+                this.f7473d = bs.c.e(this.f7473d, kotlin.collections.d.f32590d.e(objArr.length, i10));
                 return;
             }
             return;
@@ -774,7 +774,7 @@ public final class b extends kotlin.collections.f implements List, RandomAccess,
     @Override // kotlin.collections.f
     public Object c(int i10) {
         s();
-        kotlin.collections.d.f32022d.b(i10, this.f7474e);
+        kotlin.collections.d.f32590d.b(i10, this.f7474e);
         return A(i10);
     }
 
@@ -797,7 +797,7 @@ public final class b extends kotlin.collections.f implements List, RandomAccess,
 
     @Override // java.util.AbstractList, java.util.List
     public Object get(int i10) {
-        kotlin.collections.d.f32022d.b(i10, this.f7474e);
+        kotlin.collections.d.f32590d.b(i10, this.f7474e);
         return this.f7473d[i10];
     }
 
@@ -891,7 +891,7 @@ public final class b extends kotlin.collections.f implements List, RandomAccess,
     @Override // java.util.AbstractList, java.util.List
     public Object set(int i10, Object obj) {
         s();
-        kotlin.collections.d.f32022d.b(i10, this.f7474e);
+        kotlin.collections.d.f32590d.b(i10, this.f7474e);
         Object[] objArr = this.f7473d;
         Object obj2 = objArr[i10];
         objArr[i10] = obj;
@@ -900,7 +900,7 @@ public final class b extends kotlin.collections.f implements List, RandomAccess,
 
     @Override // java.util.AbstractList, java.util.List
     public List subList(int i10, int i11) {
-        kotlin.collections.d.f32022d.d(i10, i11, this.f7474e);
+        kotlin.collections.d.f32590d.d(i10, i11, this.f7474e);
         return new a(this.f7473d, i10, i11 - i10, null, this);
     }
 
@@ -931,14 +931,14 @@ public final class b extends kotlin.collections.f implements List, RandomAccess,
 
     @Override // java.util.AbstractList, java.util.List
     public ListIterator listIterator(int i10) {
-        kotlin.collections.d.f32022d.c(i10, this.f7474e);
+        kotlin.collections.d.f32590d.c(i10, this.f7474e);
         return new c(this, i10);
     }
 
     @Override // java.util.AbstractList, java.util.List
     public void add(int i10, Object obj) {
         s();
-        kotlin.collections.d.f32022d.c(i10, this.f7474e);
+        kotlin.collections.d.f32590d.c(i10, this.f7474e);
         q(i10, obj);
     }
 
@@ -950,7 +950,7 @@ public final class b extends kotlin.collections.f implements List, RandomAccess,
     public boolean addAll(int i10, Collection elements) {
         Intrinsics.checkNotNullParameter(elements, "elements");
         s();
-        kotlin.collections.d.f32022d.c(i10, this.f7474e);
+        kotlin.collections.d.f32590d.c(i10, this.f7474e);
         int size = elements.size();
         p(i10, elements, size);
         return size > 0;

@@ -5,32 +5,32 @@ import kotlin.jvm.internal.Intrinsics;
 final class r {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f30467a;
+    private final String f31035a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final char f30468b;
+    private final char f31036b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final s f30469c;
+    private final s f31037c;
 
     public r(String text, char c10, s mode) {
         Intrinsics.checkNotNullParameter(text, "text");
         Intrinsics.checkNotNullParameter(mode, "mode");
-        this.f30467a = text;
-        this.f30468b = c10;
-        this.f30469c = mode;
+        this.f31035a = text;
+        this.f31036b = c10;
+        this.f31037c = mode;
     }
 
     public final char a() {
-        return this.f30468b;
+        return this.f31036b;
     }
 
     public final s b() {
-        return this.f30469c;
+        return this.f31037c;
     }
 
     public final String c() {
-        return this.f30467a;
+        return this.f31035a;
     }
 
     public boolean equals(Object obj) {
@@ -41,20 +41,20 @@ final class r {
             return false;
         }
         r rVar = (r) obj;
-        if (Intrinsics.areEqual(this.f30467a, rVar.f30467a) && this.f30468b == rVar.f30468b && Intrinsics.areEqual(this.f30469c, rVar.f30469c)) {
+        if (Intrinsics.areEqual(this.f31035a, rVar.f31035a) && this.f31036b == rVar.f31036b && Intrinsics.areEqual(this.f31037c, rVar.f31037c)) {
             return true;
         }
         return false;
     }
 
     public int hashCode() {
-        return (((this.f30467a.hashCode() * 31) + Character.hashCode(this.f30468b)) * 31) + this.f30469c.hashCode();
+        return (((this.f31035a.hashCode() * 31) + Character.hashCode(this.f31036b)) * 31) + this.f31037c.hashCode();
     }
 
     public String toString() {
-        String str = this.f30467a;
-        char c10 = this.f30468b;
-        s sVar = this.f30469c;
+        String str = this.f31035a;
+        char c10 = this.f31036b;
+        s sVar = this.f31037c;
         return "TrimArguments(text=" + str + ", char=" + c10 + ", mode=" + sVar + ")";
     }
 }

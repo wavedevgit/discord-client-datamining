@@ -11,33 +11,33 @@ import java.util.Set;
 public final class f implements cu.i {
 
     /* renamed from: b  reason: collision with root package name */
-    private static final Locale[] f27718b = new Locale[0];
+    private static final Locale[] f28286b = new Locale[0];
 
     /* renamed from: c  reason: collision with root package name */
-    public static final Set f27719c;
+    public static final Set f28287c;
 
     /* renamed from: d  reason: collision with root package name */
-    public static final f f27720d;
+    public static final f f28288d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final Map f27721e;
+    private static final Map f28289e;
 
     static {
         j[] values;
         String[] split = e.h("i18n/numbers/symbol", Locale.ROOT).f("locales").split(" ");
         HashSet hashSet = new HashSet();
         Collections.addAll(hashSet, split);
-        f27719c = Collections.unmodifiableSet(hashSet);
-        f27720d = new f();
+        f28287c = Collections.unmodifiableSet(hashSet);
+        f28288d = new f();
         HashMap hashMap = new HashMap();
         for (j jVar : j.values()) {
             hashMap.put(jVar.l(), jVar);
         }
-        f27721e = Collections.unmodifiableMap(hashMap);
+        f28289e = Collections.unmodifiableMap(hashMap);
     }
 
     private static e g(Locale locale) {
-        if (f27719c.contains(d.a(locale))) {
+        if (f28287c.contains(d.a(locale))) {
             return e.h("i18n/numbers/symbol", locale);
         }
         return null;
@@ -61,7 +61,7 @@ public final class f implements cu.i {
 
     @Override // cu.i
     public Locale[] a() {
-        return f27718b;
+        return f28286b;
     }
 
     @Override // cu.i
@@ -77,7 +77,7 @@ public final class f implements cu.i {
     @Override // cu.i
     public j d(Locale locale) {
         String i10 = i(locale, "numsys", j.f21169d.l());
-        j jVar = (j) f27721e.get(i10);
+        j jVar = (j) f28289e.get(i10);
         if (jVar != null) {
             return jVar;
         }

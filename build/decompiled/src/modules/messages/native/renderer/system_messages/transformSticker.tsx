@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
     var0 = function arg0, arg1() {
-        _fun56236: for (var _fun56236_ip = 0;;) switch (_fun56236_ip) {
+        _fun56271: for (var _fun56271_ip = 0;;) switch (_fun56271_ip) {
             case 0:
                 var9 = arg0;
                 var3 = arg1;
@@ -21,8 +21,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = '';
                 var2 = var4;
                 if (!var5) {
-                    _fun56236_ip = 42;
-                    continue _fun56236
+                    _fun56271_ip = 42;
+                    continue _fun56271
                 }
             case 39:
                 var2 = var1;
@@ -42,8 +42,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var7.bind(var8)(var9, var2);
                 var6 = var6 != var2;
                 if (!var6) {
-                    _fun56236_ip = 108;
-                    continue _fun56236
+                    _fun56271_ip = 108;
+                    continue _fun56271
                 }
             case 105:
                 var4 = var2;
@@ -57,13 +57,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var4.bind(var5)(var2);
                 var2 = var2.NativeLottieRenderMode;
                 if (var3) {
-                    _fun56236_ip = 154;
-                    continue _fun56236
+                    _fun56271_ip = 154;
+                    continue _fun56271
                 }
             case 146:
                 var3 = var2.STILL;
-                _fun56236_ip = 160;
-                continue _fun56236;
+                _fun56271_ip = 160;
+                continue _fun56271;
             case 154:
                 var3 = var2.LOOP;
             case 160:
@@ -152,14 +152,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1[1] = var5;
         var1[2] = var4;
         var0 = function() { // Environment: var0
-            _fun56238: for (var _fun56238_ip = 0;;) switch (_fun56238_ip) {
+            _fun56273: for (var _fun56273_ip = 0;;) switch (_fun56273_ip) {
                 case 0:
                     var2 = _closure2_slot1;
                     var4 = undefined;
                     var0 = undefined;
                     if (!var2) {
-                        _fun56238_ip = 35;
-                        continue _fun56238
+                        _fun56273_ip = 35;
+                        continue _fun56273
                     }
                 case 14:
                     var3 = _closure1_slot4;
@@ -194,4 +194,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.transformSticker = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1352, 3994, 6794, 1234, 1348, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1352, 3994, 6776, 1235, 1348, 2]);

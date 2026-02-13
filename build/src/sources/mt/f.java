@@ -6,26 +6,26 @@ import kotlin.jvm.internal.Intrinsics;
 public final class f extends h {
 
     /* renamed from: b  reason: collision with root package name */
-    private final nt.e f36617b;
+    private final nt.e f37185b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final ot.q f36618c;
+    private final ot.q f37186c;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public f(List formats) {
         super(formats);
         Intrinsics.checkNotNullParameter(formats, "formats");
-        this.f36617b = super.a();
-        this.f36618c = super.b();
+        this.f37185b = super.a();
+        this.f37186c = super.b();
     }
 
     @Override // mt.h, mt.o
     public nt.e a() {
-        return this.f36617b;
+        return this.f37185b;
     }
 
     @Override // mt.h, mt.o
     public ot.q b() {
-        return this.f36618c;
+        return this.f37186c;
     }
 }

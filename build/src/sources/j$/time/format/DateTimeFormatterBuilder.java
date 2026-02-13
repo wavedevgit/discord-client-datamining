@@ -12,29 +12,29 @@ import java.util.Objects;
 public final class DateTimeFormatterBuilder {
 
     /* renamed from: f  reason: collision with root package name */
-    public static final j$.time.b f30531f = new j$.time.b(2);
+    public static final j$.time.b f31099f = new j$.time.b(2);
 
     /* renamed from: a  reason: collision with root package name */
-    public DateTimeFormatterBuilder f30532a;
+    public DateTimeFormatterBuilder f31100a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final DateTimeFormatterBuilder f30533b;
+    public final DateTimeFormatterBuilder f31101b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final List f30534c;
+    public final List f31102c;
 
     /* renamed from: d  reason: collision with root package name */
-    public final boolean f30535d;
+    public final boolean f31103d;
 
     /* renamed from: e  reason: collision with root package name */
-    public int f30536e;
+    public int f31104e;
 
     static {
         HashMap hashMap = new HashMap();
         hashMap.put('G', j$.time.temporal.a.ERA);
         hashMap.put('y', j$.time.temporal.a.YEAR_OF_ERA);
         hashMap.put('u', j$.time.temporal.a.YEAR);
-        j$.time.temporal.h hVar = j$.time.temporal.j.f30616a;
+        j$.time.temporal.h hVar = j$.time.temporal.j.f31184a;
         hashMap.put('Q', hVar);
         hashMap.put('q', hVar);
         j$.time.temporal.a aVar = j$.time.temporal.a.MONTH_OF_YEAR;
@@ -62,19 +62,19 @@ public final class DateTimeFormatterBuilder {
     }
 
     public DateTimeFormatterBuilder() {
-        this.f30532a = this;
-        this.f30534c = new ArrayList();
-        this.f30536e = -1;
-        this.f30533b = null;
-        this.f30535d = false;
+        this.f31100a = this;
+        this.f31102c = new ArrayList();
+        this.f31104e = -1;
+        this.f31101b = null;
+        this.f31103d = false;
     }
 
     public DateTimeFormatterBuilder(DateTimeFormatterBuilder dateTimeFormatterBuilder) {
-        this.f30532a = this;
-        this.f30534c = new ArrayList();
-        this.f30536e = -1;
-        this.f30533b = dateTimeFormatterBuilder;
-        this.f30535d = true;
+        this.f31100a = this;
+        this.f31102c = new ArrayList();
+        this.f31104e = -1;
+        this.f31101b = dateTimeFormatterBuilder;
+        this.f31103d = true;
     }
 
     public DateTimeFormatterBuilder parseCaseInsensitive() {
@@ -110,29 +110,29 @@ public final class DateTimeFormatterBuilder {
 
     public final void f(h hVar) {
         w wVar;
-        DateTimeFormatterBuilder dateTimeFormatterBuilder = this.f30532a;
-        int i10 = dateTimeFormatterBuilder.f30536e;
+        DateTimeFormatterBuilder dateTimeFormatterBuilder = this.f31100a;
+        int i10 = dateTimeFormatterBuilder.f31104e;
         if (i10 >= 0) {
-            h hVar2 = (h) ((ArrayList) dateTimeFormatterBuilder.f30534c).get(i10);
-            int i11 = hVar.f30551b;
-            int i12 = hVar.f30552c;
-            if (i11 != i12 || (wVar = hVar.f30553d) != w.NOT_NEGATIVE) {
-                if (hVar2.f30554e != -1) {
-                    hVar2 = new h(hVar2.f30550a, hVar2.f30551b, hVar2.f30552c, hVar2.f30553d, -1);
+            h hVar2 = (h) ((ArrayList) dateTimeFormatterBuilder.f31102c).get(i10);
+            int i11 = hVar.f31119b;
+            int i12 = hVar.f31120c;
+            if (i11 != i12 || (wVar = hVar.f31121d) != w.NOT_NEGATIVE) {
+                if (hVar2.f31122e != -1) {
+                    hVar2 = new h(hVar2.f31118a, hVar2.f31119b, hVar2.f31120c, hVar2.f31121d, -1);
                 }
-                this.f30532a.f30536e = b(hVar);
+                this.f31100a.f31104e = b(hVar);
             } else {
-                hVar2 = new h(hVar2.f30550a, hVar2.f30551b, hVar2.f30552c, hVar2.f30553d, hVar2.f30554e + i12);
-                if (hVar.f30554e != -1) {
-                    hVar = new h(hVar.f30550a, i11, i12, wVar, -1);
+                hVar2 = new h(hVar2.f31118a, hVar2.f31119b, hVar2.f31120c, hVar2.f31121d, hVar2.f31122e + i12);
+                if (hVar.f31122e != -1) {
+                    hVar = new h(hVar.f31118a, i11, i12, wVar, -1);
                 }
                 b(hVar);
-                this.f30532a.f30536e = i10;
+                this.f31100a.f31104e = i10;
             }
-            ((ArrayList) this.f30532a.f30534c).set(i10, hVar2);
+            ((ArrayList) this.f31100a.f31102c).set(i10, hVar2);
             return;
         }
-        dateTimeFormatterBuilder.f30536e = b(hVar);
+        dateTimeFormatterBuilder.f31104e = b(hVar);
     }
 
     public final void e(j$.time.temporal.a aVar, Map map) {
@@ -143,7 +143,7 @@ public final class DateTimeFormatterBuilder {
     }
 
     public DateTimeFormatterBuilder appendOffsetId() {
-        b(i.f30556d);
+        b(i.f31124d);
         return this;
     }
 
@@ -168,42 +168,42 @@ public final class DateTimeFormatterBuilder {
 
     public final void a(DateTimeFormatter dateTimeFormatter) {
         Objects.requireNonNull(dateTimeFormatter, "formatter");
-        d dVar = dateTimeFormatter.f30526a;
-        if (dVar.f30542b) {
-            dVar = new d(dVar.f30541a, false);
+        d dVar = dateTimeFormatter.f31094a;
+        if (dVar.f31110b) {
+            dVar = new d(dVar.f31109a, false);
         }
         b(dVar);
     }
 
     public final void j() {
-        DateTimeFormatterBuilder dateTimeFormatterBuilder = this.f30532a;
-        dateTimeFormatterBuilder.f30536e = -1;
-        this.f30532a = new DateTimeFormatterBuilder(dateTimeFormatterBuilder);
+        DateTimeFormatterBuilder dateTimeFormatterBuilder = this.f31100a;
+        dateTimeFormatterBuilder.f31104e = -1;
+        this.f31100a = new DateTimeFormatterBuilder(dateTimeFormatterBuilder);
     }
 
     public final void i() {
-        DateTimeFormatterBuilder dateTimeFormatterBuilder = this.f30532a;
-        if (dateTimeFormatterBuilder.f30533b == null) {
+        DateTimeFormatterBuilder dateTimeFormatterBuilder = this.f31100a;
+        if (dateTimeFormatterBuilder.f31101b == null) {
             throw new IllegalStateException("Cannot call optionalEnd() as there was no previous call to optionalStart()");
         }
-        if (((ArrayList) dateTimeFormatterBuilder.f30534c).size() > 0) {
-            DateTimeFormatterBuilder dateTimeFormatterBuilder2 = this.f30532a;
-            d dVar = new d(dateTimeFormatterBuilder2.f30534c, dateTimeFormatterBuilder2.f30535d);
-            this.f30532a = this.f30532a.f30533b;
+        if (((ArrayList) dateTimeFormatterBuilder.f31102c).size() > 0) {
+            DateTimeFormatterBuilder dateTimeFormatterBuilder2 = this.f31100a;
+            d dVar = new d(dateTimeFormatterBuilder2.f31102c, dateTimeFormatterBuilder2.f31103d);
+            this.f31100a = this.f31100a.f31101b;
             b(dVar);
             return;
         }
-        this.f30532a = this.f30532a.f30533b;
+        this.f31100a = this.f31100a.f31101b;
     }
 
     public final int b(e eVar) {
         Objects.requireNonNull(eVar, "pp");
-        DateTimeFormatterBuilder dateTimeFormatterBuilder = this.f30532a;
+        DateTimeFormatterBuilder dateTimeFormatterBuilder = this.f31100a;
         dateTimeFormatterBuilder.getClass();
-        ((ArrayList) dateTimeFormatterBuilder.f30534c).add(eVar);
-        DateTimeFormatterBuilder dateTimeFormatterBuilder2 = this.f30532a;
-        dateTimeFormatterBuilder2.f30536e = -1;
-        return ((ArrayList) dateTimeFormatterBuilder2.f30534c).size() - 1;
+        ((ArrayList) dateTimeFormatterBuilder.f31102c).add(eVar);
+        DateTimeFormatterBuilder dateTimeFormatterBuilder2 = this.f31100a;
+        dateTimeFormatterBuilder2.f31104e = -1;
+        return ((ArrayList) dateTimeFormatterBuilder2.f31102c).size() - 1;
     }
 
     public DateTimeFormatter toFormatter() {
@@ -216,11 +216,11 @@ public final class DateTimeFormatterBuilder {
 
     public final DateTimeFormatter l(Locale locale, v vVar, j$.time.chrono.j jVar) {
         Objects.requireNonNull(locale, "locale");
-        while (this.f30532a.f30533b != null) {
+        while (this.f31100a.f31101b != null) {
             i();
         }
-        d dVar = new d(this.f30534c, false);
-        t tVar = t.f30584a;
+        d dVar = new d(this.f31102c, false);
+        t tVar = t.f31152a;
         return new DateTimeFormatter(dVar, locale, vVar, jVar);
     }
 }

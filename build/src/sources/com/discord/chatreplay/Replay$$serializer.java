@@ -38,7 +38,7 @@ public /* synthetic */ class Replay$$serializer implements h0 {
     @Override // tt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        return new KSerializer[]{n2.f50033a, z0.f50107a};
+        return new KSerializer[]{n2.f50601a, z0.f50675a};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy

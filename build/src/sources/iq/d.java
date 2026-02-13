@@ -9,25 +9,25 @@ public abstract class d {
     public /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final /* synthetic */ int[] f30400a;
+        public static final /* synthetic */ int[] f30968a;
 
         static {
             int[] iArr = new int[c.values().length];
             try {
-                iArr[c.f30396d.ordinal()] = 1;
+                iArr[c.f30964d.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                iArr[c.f30397e.ordinal()] = 2;
+                iArr[c.f30965e.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
-            f30400a = iArr;
+            f30968a = iArr;
         }
     }
 
     public static final String a(c cVar) {
         Intrinsics.checkNotNullParameter(cVar, "<this>");
-        int i10 = a.f30400a[cVar.ordinal()];
+        int i10 = a.f30968a[cVar.ordinal()];
         if (i10 != 1) {
             if (i10 == 2) {
                 return "precise";

@@ -2,7 +2,7 @@
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var4 = require;
-    var11 = metroImportDefault;
+    var10 = metroImportDefault;
     var2 = exports;
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
@@ -21,8 +21,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = undefined;
     var3 = var3.bind(var0)(var6);
     var _closure1_slot2 = var3;
-    var12 = 1;
-    var3 = var5[var12];
+    var11 = 1;
+    var3 = var5[var11];
     var3 = var4.bind(var0)(var3);
     var3 = var3.View;
     var _closure1_slot3 = var3;
@@ -34,59 +34,50 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 3;
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
-    var7 = var3.jsx;
-    var _closure1_slot5 = var7;
+    var6 = var3.jsx;
+    var _closure1_slot5 = var6;
     var3 = var3.jsxs;
     var _closure1_slot6 = var3;
     var3 = 4;
     var3 = var5[var3];
-    var8 = var4.bind(var0)(var3);
-    var6 = var8.createStyles;
+    var7 = var4.bind(var0)(var3);
+    var6 = var7.createStyles;
     var3 = {};
-    var9 = {
+    var8 = {
         'display': 'flex',
         'flexDirection': 'row',
         'alignItems': 'center'
     };
-    var10 = 5;
-    var13 = var5[var10];
-    var13 = var11.bind(var0)(var13);
-    var13 = var13.spacing;
-    var13 = var13.PX_8;
-    var9.gap = var13;
-    var13 = var5[var10];
-    var13 = var11.bind(var0)(var13);
-    var13 = var13.spacing;
-    var13 = var13.PX_8;
-    var9.padding = var13;
-    var13 = var5[var10];
-    var13 = var11.bind(var0)(var13);
-    var13 = var13.radii;
-    var13 = var13.xs;
-    var9.borderRadius = var13;
-    var13 = var5[var10];
-    var13 = var11.bind(var0)(var13);
-    var13 = var13.colors;
-    var13 = var13.TEXT_LINK;
-    var9.borderColor = var13;
-    var9.borderWidth = var12;
-    var10 = var5[var10];
-    var10 = var11.bind(var0)(var10);
-    var10 = var10.colors;
-    var10 = var10.BACKGROUND_FEEDBACK_INFO;
-    var9.backgroundColor = var10;
-    var3.blockedIgnoredRedirect = var9;
-    var3 = var6.bind(var8)(var3);
+    var9 = 5;
+    var12 = var5[var9];
+    var12 = var10.bind(var0)(var12);
+    var12 = var12.spacing;
+    var12 = var12.PX_8;
+    var8.gap = var12;
+    var12 = var5[var9];
+    var12 = var10.bind(var0)(var12);
+    var12 = var12.spacing;
+    var12 = var12.PX_8;
+    var8.padding = var12;
+    var12 = var5[var9];
+    var12 = var10.bind(var0)(var12);
+    var12 = var12.radii;
+    var12 = var12.xs;
+    var8.borderRadius = var12;
+    var12 = var5[var9];
+    var12 = var10.bind(var0)(var12);
+    var12 = var12.colors;
+    var12 = var12.TEXT_LINK;
+    var8.borderColor = var12;
+    var8.borderWidth = var11;
+    var9 = var5[var9];
+    var9 = var10.bind(var0)(var9);
+    var9 = var9.colors;
+    var9 = var9.BACKGROUND_FEEDBACK_INFO;
+    var8.backgroundColor = var9;
+    var3.blockedIgnoredRedirect = var8;
+    var3 = var6.bind(var7)(var3);
     var _closure1_slot7 = var3;
-    var3 = 6;
-    var3 = var5[var3];
-    var3 = var4.bind(var0)(var3);
-    var6 = var3.CircleInformationIcon;
-    var3 = {};
-    var8 = 'text-link';
-    var3.color = var8;
-    var3 = var7.bind(var0)(var6, var3);
-    var _closure1_slot8 = var3;
     var3 = 10;
     var3 = var5[var3];
     var5 = var4.bind(var0)(var3);
@@ -94,7 +85,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/safety_common/native/SafetySettingsNotice.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun80161: for (var _fun80161_ip = 0;;) switch (_fun80161_ip) {
+        _fun80563: for (var _fun80563_ip = 0;;) switch (_fun80563_ip) {
             case 0:
                 var1 = arg0;
                 var12 = var1.label;
@@ -113,7 +104,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = function() { // Environment: var14
                     var3 = _closure1_slot0;
                     var2 = _closure1_slot1;
-                    var0 = 7;
+                    var0 = 6;
                     var2 = var2[var0];
                     var0 = undefined;
                     var4 = var3.bind(var0)(var2);
@@ -135,7 +126,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = var1.bind(var0)();
                     var4 = _closure1_slot0;
                     var5 = _closure1_slot1;
-                    var3 = 7;
+                    var3 = 6;
                     var3 = var5[var3];
                     var4 = var4.bind(var0)(var3);
                     var3 = var4.trackSafetySettingsNoticeAnalytics;
@@ -152,12 +143,19 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = {};
                 var4 = var4.blockedIgnoredRedirect;
                 var0.style = var4;
-                var5 = _closure1_slot8;
-                var4 = new Array(2);
-                var4[0] = var5;
                 var7 = _closure1_slot5;
                 var6 = _closure1_slot0;
                 var8 = _closure1_slot1;
+                var4 = 7;
+                var4 = var8[var4];
+                var4 = var6.bind(var3)(var4);
+                var5 = var4.CircleInformationIcon;
+                var4 = {};
+                var10 = 'text-link';
+                var4.color = var10;
+                var5 = var7.bind(var3)(var5, var4);
+                var4 = new Array(2);
+                var4[0] = var5;
                 var5 = 8;
                 var5 = var8[var5];
                 var5 = var6.bind(var3)(var5);
@@ -171,10 +169,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5.variant = var8;
                 var8 = null;
                 if (!(var8 == var13)) {
-                    _fun80161_ip = 258;
-                    continue _fun80161
+                    _fun80563_ip = 290;
+                    continue _fun80563
                 }
-            case 206:
+            case 238:
                 var10 = _closure1_slot0;
                 var11 = _closure1_slot1;
                 var8 = 9;
@@ -206,9 +204,9 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var8.hook = var15;
                 var8 = var10.bind(var11)(var12, var8);
-                _fun80161_ip = 313;
-                continue _fun80161;
-            case 258:
+                _fun80563_ip = 345;
+                continue _fun80563;
+            case 290:
                 var10 = _closure1_slot0;
                 var11 = _closure1_slot1;
                 var9 = 9;
@@ -241,7 +239,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9.hook = var14;
                 var9.count = var13;
                 var8 = var10.bind(var11)(var12, var9);
-            case 313:
+            case 345:
                 var5.children = var8;
                 var5 = var7.bind(var3)(var6, var5);
                 var4[1] = var5;
@@ -252,4 +250,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 5997, 33, 1297, 671, 3267, 10120, 3938, 1234, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 5976, 33, 1297, 671, 10218, 3270, 3938, 1235, 2]);

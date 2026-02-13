@@ -5,5 +5,5 @@ import java.util.concurrent.ConcurrentHashMap;
 final class r1 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ConcurrentHashMap f50062a = new ConcurrentHashMap();
+    private final ConcurrentHashMap f50630a = new ConcurrentHashMap();
 }

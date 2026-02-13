@@ -24,30 +24,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 1;
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
-    var7 = var3.jsx;
-    var _closure1_slot3 = var7;
+    var6 = var3.jsx;
+    var _closure1_slot3 = var6;
     var3 = var3.jsxs;
     var _closure1_slot4 = var3;
-    var8 = 2;
-    var3 = var5[var8];
-    var3 = var4.bind(var0)(var3);
-    var6 = var3.G;
-    var3 = {};
-    var9 = 'Frame_-_24px';
-    var3.id = var9;
-    var8 = var5[var8];
-    var8 = var4.bind(var0)(var8);
-    var9 = var8.Rect;
-    var8 = {
-        'y': '0',
-        'fill': 'none',
-        'width': '24',
-        'height': '24'
-    };
-    var8 = var7.bind(var0)(var9, var8);
-    var3.children = var8;
-    var3 = var7.bind(var0)(var6, var3);
-    var _closure1_slot5 = var3;
     var3 = 3;
     var3 = var5[var3];
     var5 = var4.bind(var0)(var3);
@@ -57,7 +37,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = function arg0() {
         var0 = arg0;
         var13 = var0.fill;
-        var4 = var0.iconStyles;
+        var5 = var0.iconStyles;
         var3 = _closure1_slot4;
         var1 = _closure1_slot1;
         var14 = _closure1_slot2;
@@ -73,13 +53,30 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             'height': '24',
             'viewBox': '0 0 24 24'
         };
-        var0.style = var4;
+        var0.style = var5;
         var0.fill = var13;
-        var6 = _closure1_slot5;
-        var4 = new Array(2);
-        var4[0] = var6;
         var7 = _closure1_slot3;
         var12 = _closure1_slot0;
+        var4 = var14[var11];
+        var4 = var12.bind(var2)(var4);
+        var5 = var4.G;
+        var4 = {};
+        var6 = 'Frame_-_24px';
+        var4.id = var6;
+        var6 = var14[var11];
+        var6 = var12.bind(var2)(var6);
+        var8 = var6.Rect;
+        var6 = {
+            'y': '0',
+            'fill': 'none',
+            'width': '24',
+            'height': '24'
+        };
+        var6 = var7.bind(var2)(var8, var6);
+        var4.children = var6;
+        var5 = var7.bind(var2)(var5, var4);
+        var4 = new Array(2);
+        var4[0] = var5;
         var5 = var14[var11];
         var5 = var12.bind(var2)(var5);
         var6 = var5.G;

@@ -19,13 +19,13 @@ import java.util.concurrent.atomic.AtomicReference;
 public final class ViewHierarchyEventProcessor implements io.sentry.b0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final SentryAndroidOptions f28181d;
+    private final SentryAndroidOptions f28749d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final io.sentry.android.core.internal.util.n f28182e = new io.sentry.android.core.internal.util.n(io.sentry.android.core.internal.util.f.b(), 2000, 3);
+    private final io.sentry.android.core.internal.util.n f28750e = new io.sentry.android.core.internal.util.n(io.sentry.android.core.internal.util.f.b(), 2000, 3);
 
     public ViewHierarchyEventProcessor(SentryAndroidOptions sentryAndroidOptions) {
-        this.f28181d = (SentryAndroidOptions) io.sentry.util.y.c(sentryAndroidOptions, "SentryAndroidOptions is required");
+        this.f28749d = (SentryAndroidOptions) io.sentry.util.y.c(sentryAndroidOptions, "SentryAndroidOptions is required");
         if (sentryAndroidOptions.isAttachViewHierarchy()) {
             io.sentry.util.p.a("ViewHierarchy");
         }
@@ -164,13 +164,13 @@ public final class ViewHierarchyEventProcessor implements io.sentry.b0 {
     public SentryEvent h(SentryEvent sentryEvent, Hint hint) {
         io.sentry.protocol.i0 e10;
         if (sentryEvent.B0()) {
-            if (!this.f28181d.isAttachViewHierarchy()) {
-                this.f28181d.getLogger().c(SentryLevel.DEBUG, "attachViewHierarchy is disabled.", new Object[0]);
+            if (!this.f28749d.isAttachViewHierarchy()) {
+                this.f28749d.getLogger().c(SentryLevel.DEBUG, "attachViewHierarchy is disabled.", new Object[0]);
                 return sentryEvent;
             } else if (!io.sentry.util.n.i(hint)) {
-                boolean a10 = this.f28182e.a();
-                this.f28181d.getBeforeViewHierarchyCaptureCallback();
-                if (!a10 && (e10 = e(f1.c().b(), this.f28181d.getViewHierarchyExporters(), this.f28181d.getThreadChecker(), this.f28181d.getLogger())) != null) {
+                boolean a10 = this.f28750e.a();
+                this.f28749d.getBeforeViewHierarchyCaptureCallback();
+                if (!a10 && (e10 = e(f1.c().b(), this.f28749d.getViewHierarchyExporters(), this.f28749d.getThreadChecker(), this.f28749d.getLogger())) != null) {
                     hint.o(io.sentry.b.c(e10));
                 }
             }

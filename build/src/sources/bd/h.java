@@ -37,7 +37,7 @@ final class h implements g {
         if (q10 <= 0) {
             return null;
         }
-        int i11 = aVar.f38835d;
+        int i11 = aVar.f39403d;
         long j12 = q10;
         if (i11 >= 32000) {
             i10 = 1152;
@@ -50,7 +50,7 @@ final class h implements g {
         int N3 = h0Var.N();
         int i12 = 2;
         h0Var.V(2);
-        long j13 = j11 + aVar.f38834c;
+        long j13 = j11 + aVar.f39402c;
         long[] jArr = new long[N];
         long[] jArr2 = new long[N];
         int i13 = 0;
@@ -101,7 +101,7 @@ final class h implements g {
     public z.a e(long j10) {
         int i10 = w0.i(this.f6598a, j10, true, true);
         a0 a0Var = new a0(this.f6598a[i10], this.f6599b[i10]);
-        if (a0Var.f50612a < j10 && i10 != this.f6598a.length - 1) {
+        if (a0Var.f51180a < j10 && i10 != this.f6598a.length - 1) {
             int i11 = i10 + 1;
             return new z.a(a0Var, new a0(this.f6598a[i11], this.f6599b[i11]));
         }

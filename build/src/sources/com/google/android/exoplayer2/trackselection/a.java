@@ -169,7 +169,7 @@ public class a extends ke.b {
         }
 
         public b(int i10, int i11, int i12, float f10) {
-            this(i10, i11, i12, 1279, 719, f10, 0.75f, oe.e.f38931a);
+            this(i10, i11, i12, 1279, 719, f10, 0.75f, oe.e.f39499a);
         }
 
         public b(int i10, int i11, int i12, int i13, int i14, float f10, float f11, oe.e eVar) {
@@ -214,9 +214,9 @@ public class a extends ke.b {
             return -9223372036854775807L;
         }
         n nVar = (n) v.c(list);
-        long j10 = nVar.f48713g;
+        long j10 = nVar.f49281g;
         if (j10 != -9223372036854775807L) {
-            long j11 = nVar.f48714h;
+            long j11 = nVar.f49282h;
             if (j11 != -9223372036854775807L) {
                 return j11 - j10;
             }
@@ -345,7 +345,7 @@ public class a extends ke.b {
     private int x(long j10, long j11) {
         long z10 = z(j11);
         int i10 = 0;
-        for (int i11 = 0; i11 < this.f31697b; i11++) {
+        for (int i11 = 0; i11 < this.f32265b; i11++) {
             if (j10 == Long.MIN_VALUE || !a(i11, j10)) {
                 Format c10 = c(i11);
                 if (w(c10, c10.f12301s, z10)) {
@@ -467,10 +467,10 @@ public class a extends ke.b {
         if (list.isEmpty()) {
             o10 = -1;
         } else {
-            o10 = o(((n) v.c(list)).f48710d);
+            o10 = o(((n) v.c(list)).f49278d);
         }
         if (o10 != -1) {
-            i10 = ((n) v.c(list)).f48711e;
+            i10 = ((n) v.c(list)).f49279e;
             i11 = o10;
         }
         int x10 = x(b10, C);
@@ -527,14 +527,14 @@ public class a extends ke.b {
             return 0;
         }
         int size = list.size();
-        long j02 = w0.j0(((n) list.get(size - 1)).f48713g - j10, this.f13803r);
+        long j02 = w0.j0(((n) list.get(size - 1)).f49281g - j10, this.f13803r);
         long B = B();
         if (j02 >= B) {
             Format c10 = c(x(b10, A(list)));
             for (int i12 = 0; i12 < size; i12++) {
                 n nVar2 = (n) list.get(i12);
-                Format format = nVar2.f48710d;
-                if (w0.j0(nVar2.f48713g - j10, this.f13803r) >= B && format.f12301s < c10.f12301s && (i10 = format.C) != -1 && i10 <= this.f13798m && (i11 = format.B) != -1 && i11 <= this.f13797l && i10 < c10.C) {
+                Format format = nVar2.f49278d;
+                if (w0.j0(nVar2.f49281g - j10, this.f13803r) >= B && format.f12301s < c10.f12301s && (i10 = format.C) != -1 && i10 <= this.f13798m && (i11 = format.B) != -1 && i11 <= this.f13797l && i10 < c10.C) {
                     return i12;
                 }
             }

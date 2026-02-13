@@ -7,7 +7,7 @@ import kotlin.jvm.internal.Intrinsics;
 public final class d extends Handler {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final d f53989a = new d();
+    public static final d f54557a = new d();
 
     private d() {
     }
@@ -16,7 +16,7 @@ public final class d extends Handler {
     public void publish(LogRecord record) {
         int b10;
         Intrinsics.checkNotNullParameter(record, "record");
-        c cVar = c.f53986a;
+        c cVar = c.f54554a;
         String loggerName = record.getLoggerName();
         Intrinsics.checkNotNullExpressionValue(loggerName, "record.loggerName");
         b10 = e.b(record);

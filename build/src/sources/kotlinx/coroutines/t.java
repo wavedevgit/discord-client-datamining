@@ -14,10 +14,10 @@ import ys.s0;
 public final class t extends s implements k {
 
     /* renamed from: o  reason: collision with root package name */
-    private final Executor f35063o;
+    private final Executor f35631o;
 
     public t(Executor executor) {
-        this.f35063o = executor;
+        this.f35631o = executor;
         dt.a.a(P1());
     }
 
@@ -60,12 +60,12 @@ public final class t extends s implements k {
         if (scheduledFuture != null) {
             return new n(scheduledFuture);
         }
-        return j.f35046t.C0(j11, runnable2, coroutineContext2);
+        return j.f35614t.C0(j11, runnable2, coroutineContext2);
     }
 
     @Override // kotlinx.coroutines.s
     public Executor P1() {
-        return this.f35063o;
+        return this.f35631o;
     }
 
     @Override // kotlinx.coroutines.CoroutineDispatcher
@@ -131,7 +131,7 @@ public final class t extends s implements k {
         if (scheduledFuture != null) {
             ys.l.c(cancellableContinuation, new c(scheduledFuture));
         } else {
-            j.f35046t.z(j11, cancellableContinuation);
+            j.f35614t.z(j11, cancellableContinuation);
         }
     }
 }

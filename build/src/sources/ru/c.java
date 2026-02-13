@@ -11,13 +11,13 @@ import kotlin.jvm.internal.Intrinsics;
 public abstract class c {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final a f47755a = new a();
+    private static final a f48323a = new a();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final String[] f47756b;
+    private static final String[] f48324b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final DateFormat[] f47757c;
+    private static final DateFormat[] f48325c;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a extends ThreadLocal {
@@ -30,15 +30,15 @@ public abstract class c {
         public DateFormat initialValue() {
             SimpleDateFormat simpleDateFormat = new SimpleDateFormat("EEE, dd MMM yyyy HH:mm:ss 'GMT'", Locale.US);
             simpleDateFormat.setLenient(false);
-            simpleDateFormat.setTimeZone(mu.e.f36662f);
+            simpleDateFormat.setTimeZone(mu.e.f37230f);
             return simpleDateFormat;
         }
     }
 
     static {
         String[] strArr = {"EEE, dd MMM yyyy HH:mm:ss zzz", "EEEE, dd-MMM-yy HH:mm:ss zzz", "EEE MMM d HH:mm:ss yyyy", "EEE, dd-MMM-yyyy HH:mm:ss z", "EEE, dd-MMM-yyyy HH-mm-ss z", "EEE, dd MMM yy HH:mm:ss z", "EEE dd-MMM-yyyy HH:mm:ss z", "EEE dd MMM yyyy HH:mm:ss z", "EEE dd-MMM-yyyy HH-mm-ss z", "EEE dd-MMM-yy HH:mm:ss z", "EEE dd MMM yy HH:mm:ss z", "EEE,dd-MMM-yy HH:mm:ss z", "EEE,dd-MMM-yyyy HH:mm:ss z", "EEE, dd-MM-yyyy HH:mm:ss z", "EEE MMM d yyyy HH:mm:ss z"};
-        f47756b = strArr;
-        f47757c = new DateFormat[strArr.length];
+        f48324b = strArr;
+        f48325c = new DateFormat[strArr.length];
     }
 
     public static final Date a(String str) {
@@ -47,20 +47,20 @@ public abstract class c {
             return null;
         }
         ParsePosition parsePosition = new ParsePosition(0);
-        Date parse = ((DateFormat) f47755a.get()).parse(str, parsePosition);
+        Date parse = ((DateFormat) f48323a.get()).parse(str, parsePosition);
         if (parsePosition.getIndex() == str.length()) {
             return parse;
         }
-        String[] strArr = f47756b;
+        String[] strArr = f48324b;
         synchronized (strArr) {
             try {
                 int length = strArr.length;
                 for (int i10 = 0; i10 < length; i10++) {
-                    DateFormat[] dateFormatArr = f47757c;
+                    DateFormat[] dateFormatArr = f48325c;
                     DateFormat dateFormat = dateFormatArr[i10];
                     if (dateFormat == null) {
-                        dateFormat = new SimpleDateFormat(f47756b[i10], Locale.US);
-                        dateFormat.setTimeZone(mu.e.f36662f);
+                        dateFormat = new SimpleDateFormat(f48324b[i10], Locale.US);
+                        dateFormat.setTimeZone(mu.e.f37230f);
                         dateFormatArr[i10] = dateFormat;
                     }
                     parsePosition.setIndex(0);
@@ -69,7 +69,7 @@ public abstract class c {
                         return parse2;
                     }
                 }
-                Unit unit = Unit.f31988a;
+                Unit unit = Unit.f32556a;
                 return null;
             } catch (Throwable th2) {
                 throw th2;
@@ -79,7 +79,7 @@ public abstract class c {
 
     public static final String b(Date date) {
         Intrinsics.checkNotNullParameter(date, "<this>");
-        String format = ((DateFormat) f47755a.get()).format(date);
+        String format = ((DateFormat) f48323a.get()).format(date);
         Intrinsics.checkNotNullExpressionValue(format, "STANDARD_DATE_FORMAT.get().format(this)");
         return format;
     }

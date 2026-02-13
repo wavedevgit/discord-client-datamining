@@ -43,8 +43,8 @@ public /* synthetic */ class PollMediaEmoji$$serializer implements h0 {
     @Override // tt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        n2 n2Var = n2.f50033a;
-        return new KSerializer[]{a.u(n2Var), n2Var, a.u(n2Var), h.f49997a};
+        n2 n2Var = n2.f50601a;
+        return new KSerializer[]{a.u(n2Var), n2Var, a.u(n2Var), h.f50565a};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -59,7 +59,7 @@ public /* synthetic */ class PollMediaEmoji$$serializer implements h0 {
         SerialDescriptor serialDescriptor = descriptor;
         kotlinx.serialization.encoding.c b10 = decoder.b(serialDescriptor);
         if (b10.p()) {
-            n2 n2Var = n2.f50033a;
+            n2 n2Var = n2.f50601a;
             String m10 = b10.m(serialDescriptor, 1);
             str3 = (String) b10.n(serialDescriptor, 2, n2Var, null);
             z10 = b10.C(serialDescriptor, 3);
@@ -78,13 +78,13 @@ public /* synthetic */ class PollMediaEmoji$$serializer implements h0 {
                 if (o10 == -1) {
                     z11 = false;
                 } else if (o10 == 0) {
-                    str4 = (String) b10.n(serialDescriptor, 0, n2.f50033a, str4);
+                    str4 = (String) b10.n(serialDescriptor, 0, n2.f50601a, str4);
                     i11 |= 1;
                 } else if (o10 == 1) {
                     str5 = b10.m(serialDescriptor, 1);
                     i11 |= 2;
                 } else if (o10 == 2) {
-                    str6 = (String) b10.n(serialDescriptor, 2, n2.f50033a, str6);
+                    str6 = (String) b10.n(serialDescriptor, 2, n2.f50601a, str6);
                     i11 |= 4;
                 } else if (o10 != 3) {
                     throw new b0(o10);

@@ -9,8 +9,8 @@ public class c extends p {
     }
 
     private static z5.a c(z5.a aVar) {
-        t5.d dVar = (t5.d) aVar.f56093b;
-        t5.d dVar2 = (t5.d) aVar.f56094c;
+        t5.d dVar = (t5.d) aVar.f56661b;
+        t5.d dVar2 = (t5.d) aVar.f56662c;
         if (dVar != null && dVar2 != null && dVar.e().length != dVar2.e().length) {
             float[] e10 = e(dVar.e(), dVar2.e());
             return aVar.b(dVar.b(e10), dVar2.b(e10));
@@ -46,7 +46,7 @@ public class c extends p {
 
     @Override // s5.o
     public o5.a a() {
-        return new o5.e(this.f47857a);
+        return new o5.e(this.f48425a);
     }
 
     @Override // s5.p, s5.o

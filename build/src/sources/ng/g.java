@@ -3,26 +3,26 @@ package ng;
 final class g {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Object f37844a;
+    private final Object f38412a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Object f37845b;
+    private final Object f38413b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Object f37846c;
+    private final Object f38414c;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public g(Object obj, Object obj2, Object obj3) {
-        this.f37844a = obj;
-        this.f37845b = obj2;
-        this.f37846c = obj3;
+        this.f38412a = obj;
+        this.f38413b = obj2;
+        this.f38414c = obj3;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final IllegalArgumentException a() {
-        Object obj = this.f37846c;
-        Object obj2 = this.f37845b;
-        Object obj3 = this.f37844a;
+        Object obj = this.f38414c;
+        Object obj2 = this.f38413b;
+        Object obj3 = this.f38412a;
         String valueOf = String.valueOf(obj3);
         String valueOf2 = String.valueOf(obj2);
         String valueOf3 = String.valueOf(obj3);

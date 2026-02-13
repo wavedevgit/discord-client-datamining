@@ -29,11 +29,11 @@ class j implements ItemTouchUIUtil {
 
     @Override // androidx.recyclerview.widget.ItemTouchUIUtil
     public void a(View view) {
-        Object tag = view.getTag(q3.c.f43900a);
+        Object tag = view.getTag(q3.c.f44468a);
         if (tag instanceof Float) {
             i0.r0(view, ((Float) tag).floatValue());
         }
-        view.setTag(q3.c.f43900a, null);
+        view.setTag(q3.c.f44468a, null);
         view.setTranslationX(0.0f);
         view.setTranslationY(0.0f);
     }
@@ -44,10 +44,10 @@ class j implements ItemTouchUIUtil {
 
     @Override // androidx.recyclerview.widget.ItemTouchUIUtil
     public void c(Canvas canvas, RecyclerView recyclerView, View view, float f10, float f11, int i10, boolean z10) {
-        if (z10 && view.getTag(q3.c.f43900a) == null) {
+        if (z10 && view.getTag(q3.c.f44468a) == null) {
             Float valueOf = Float.valueOf(i0.t(view));
             i0.r0(view, e(recyclerView, view) + 1.0f);
-            view.setTag(q3.c.f43900a, valueOf);
+            view.setTag(q3.c.f44468a, valueOf);
         }
         view.setTranslationX(f10);
         view.setTranslationY(f11);

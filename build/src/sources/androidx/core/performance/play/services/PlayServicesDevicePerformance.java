@@ -158,7 +158,7 @@ public final class PlayServicesDevicePerformance {
                     if (r5 != r1) goto L4b
                     return r1
                 L4b:
-                    kotlin.Unit r5 = kotlin.Unit.f31988a
+                    kotlin.Unit r5 = kotlin.Unit.f32556a
                     return r5
                 */
                 throw new UnsupportedOperationException("Method not decompiled: androidx.core.performance.play.services.PlayServicesDevicePerformance.b.a.emit(java.lang.Object, kotlin.coroutines.Continuation):java.lang.Object");
@@ -176,7 +176,7 @@ public final class PlayServicesDevicePerformance {
             if (collect == gs.b.f()) {
                 return collect;
             }
-            return Unit.f31988a;
+            return Unit.f32556a;
         }
     }
 
@@ -242,7 +242,7 @@ public final class PlayServicesDevicePerformance {
 
             @Override // kotlin.jvm.functions.Function2
             public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-                return ((a) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
+                return ((a) create(coroutineScope, continuation)).invokeSuspend(Unit.f32556a);
             }
         }
 
@@ -291,7 +291,7 @@ public final class PlayServicesDevicePerformance {
             if (this.f3340d == 0) {
                 kotlin.c.b(obj);
                 ((z2.a) this.f3341e).i(PlayServicesDevicePerformance.this.f3327e, kotlin.coroutines.jvm.internal.b.e(this.f3343o));
-                return Unit.f31988a;
+                return Unit.f32556a;
             }
             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
@@ -299,7 +299,7 @@ public final class PlayServicesDevicePerformance {
         @Override // kotlin.jvm.functions.Function2
         /* renamed from: j */
         public final Object invoke(z2.a aVar, Continuation continuation) {
-            return ((d) create(aVar, continuation)).invokeSuspend(Unit.f31988a);
+            return ((d) create(aVar, continuation)).invokeSuspend(Unit.f32556a);
         }
     }
 
@@ -370,12 +370,12 @@ public final class PlayServicesDevicePerformance {
                     }
                     String str = this.f3350e.f3325c;
                     Log.v(str, "Saved mediaPerformanceClass " + this.f3351i);
-                    return Unit.f31988a;
+                    return Unit.f32556a;
                 }
 
                 @Override // kotlin.jvm.functions.Function2
                 public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-                    return ((C0035a) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
+                    return ((C0035a) create(coroutineScope, continuation)).invokeSuspend(Unit.f32556a);
                 }
             }
 
@@ -404,14 +404,14 @@ public final class PlayServicesDevicePerformance {
                     Integer result = this.f3348o;
                     Intrinsics.checkNotNullExpressionValue(result, "result");
                     i.d(coroutineScope, null, null, new C0035a(this.f3347i, Math.max(result.intValue(), this.f3347i.f3326d.b()), null), 3, null);
-                    return Unit.f31988a;
+                    return Unit.f32556a;
                 }
                 throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
             }
 
             @Override // kotlin.jvm.functions.Function2
             public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-                return ((a) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
+                return ((a) create(coroutineScope, continuation)).invokeSuspend(Unit.f32556a);
             }
         }
 
@@ -426,7 +426,7 @@ public final class PlayServicesDevicePerformance {
         @Override // kotlin.jvm.functions.Function1
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             a((Integer) obj);
-            return Unit.f31988a;
+            return Unit.f32556a;
         }
     }
 
@@ -455,7 +455,7 @@ public final class PlayServicesDevicePerformance {
         if (a10 == gs.b.f()) {
             return a10;
         }
-        return Unit.f31988a;
+        return Unit.f32556a;
     }
 
     private final void k(rf.b bVar) {
@@ -497,7 +497,7 @@ public final class PlayServicesDevicePerformance {
 
     /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
     public PlayServicesDevicePerformance(Context context) {
-        this(context, rf.a.f46543a.a(context), z2.c.b(z2.c.f56064a, null, null, null, new a(context), 7, null));
+        this(context, rf.a.f47111a.a(context), z2.c.b(z2.c.f56632a, null, null, null, new a(context), 7, null));
         Intrinsics.checkNotNullParameter(context, "context");
     }
 }

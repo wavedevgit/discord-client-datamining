@@ -12,17 +12,17 @@ import okio.Source;
 public interface a {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final C0704a f51269a = C0704a.f51271a;
+    public static final C0704a f51837a = C0704a.f51839a;
 
     /* renamed from: b  reason: collision with root package name */
-    public static final a f51270b = new C0704a.C0705a();
+    public static final a f51838b = new C0704a.C0705a();
 
     /* renamed from: uu.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class C0704a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ C0704a f51271a = new C0704a();
+        static final /* synthetic */ C0704a f51839a = new C0704a();
 
         /* renamed from: uu.a$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */

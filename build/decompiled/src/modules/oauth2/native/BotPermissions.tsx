@@ -2,7 +2,7 @@
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var4 = require;
-    var11 = metroImportDefault;
+    var10 = metroImportDefault;
     var6 = metroImportAll;
     var2 = exports;
     var5 = dependencyMap;
@@ -20,7 +20,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = 0;
     var3 = var5[var0];
     var0 = undefined;
-    var3 = var11.bind(var0)(var3);
+    var3 = var10.bind(var0)(var3);
     var _closure1_slot3 = var3;
     var3 = 1;
     var3 = var5[var3];
@@ -34,16 +34,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 3;
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
-    var7 = var3.jsx;
-    var _closure1_slot6 = var7;
+    var6 = var3.jsx;
+    var _closure1_slot6 = var6;
     var3 = var3.jsxs;
     var _closure1_slot7 = var3;
     var3 = 4;
     var3 = var5[var3];
-    var8 = var4.bind(var0)(var3);
-    var6 = var8.createStyles;
+    var7 = var4.bind(var0)(var3);
+    var6 = var7.createStyles;
     var3 = {};
-    var9 = {
+    var8 = {
         'width': 24,
         'height': 24,
         'flexGrow': 0,
@@ -51,30 +51,20 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         'alignItems': 'center',
         'justifyContent': 'center'
     };
-    var10 = 5;
-    var12 = var5[var10];
-    var12 = var11.bind(var0)(var12);
-    var12 = var12.radii;
-    var12 = var12.sm;
-    var9.borderRadius = var12;
-    var10 = var5[var10];
-    var10 = var11.bind(var0)(var10);
-    var10 = var10.colors;
-    var10 = var10.ICON_FEEDBACK_CRITICAL;
-    var9.backgroundColor = var10;
-    var3.disabledPermissionIcon = var9;
-    var3 = var6.bind(var8)(var3);
+    var9 = 5;
+    var11 = var5[var9];
+    var11 = var10.bind(var0)(var11);
+    var11 = var11.radii;
+    var11 = var11.sm;
+    var8.borderRadius = var11;
+    var9 = var5[var9];
+    var9 = var10.bind(var0)(var9);
+    var9 = var9.colors;
+    var9 = var9.ICON_FEEDBACK_CRITICAL;
+    var8.backgroundColor = var9;
+    var3.disabledPermissionIcon = var8;
+    var3 = var6.bind(var7)(var3);
     var _closure1_slot8 = var3;
-    var3 = 6;
-    var3 = var5[var3];
-    var3 = var4.bind(var0)(var3);
-    var6 = var3.XSmallIcon;
-    var3 = {
-        'size': 'sm',
-        'color': 'white'
-    };
-    var3 = var7.bind(var0)(var6, var3);
-    var _closure1_slot9 = var3;
     var3 = 14;
     var3 = var5[var3];
     var5 = var4.bind(var0)(var3);
@@ -82,7 +72,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/oauth2/native/BotPermissions.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun48826: for (var _fun48826_ip = 0;;) switch (_fun48826_ip) {
+        _fun48933: for (var _fun48933_ip = 0;;) switch (_fun48933_ip) {
             case 0:
                 var2 = arg0;
                 var21 = var2.application;
@@ -102,7 +92,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var5.useState;
                 var6 = _closure1_slot1;
                 var8 = _closure1_slot2;
-                var2 = 7;
+                var2 = 6;
                 var2 = var8[var2];
                 var2 = var6.bind(var3)(var2);
                 var2 = var2.NONE;
@@ -131,7 +121,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var7 = _closure2_slot6;
                     var4 = _closure1_slot1;
                     var5 = _closure1_slot2;
-                    var2 = 8;
+                    var2 = 7;
                     var6 = var5[var2];
                     var9 = var4.bind(var0)(var6);
                     var8 = var9.invert;
@@ -150,7 +140,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var1 = var4.bind(var5)(var1, var2);
                 var10 = _closure1_slot0;
-                var1 = 9;
+                var1 = 8;
                 var1 = var8[var1];
                 var1 = var10.bind(var3)(var1);
                 var4 = var1.OrderedPermissions;
@@ -158,7 +148,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = function(arg0) { // Environment: var0
                     var2 = _closure1_slot1;
                     var1 = _closure1_slot2;
-                    var0 = 8;
+                    var0 = 7;
                     var1 = var1[var0];
                     var0 = undefined;
                     var3 = var2.bind(var0)(var1);
@@ -173,7 +163,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = function(arg0) { // Environment: var0
                     var2 = _closure1_slot1;
                     var1 = _closure1_slot2;
-                    var0 = 8;
+                    var0 = 7;
                     var1 = var1[var0];
                     var0 = undefined;
                     var3 = var2.bind(var0)(var1);
@@ -191,14 +181,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var _closure3_slot0 = var5;
                     var2 = _closure1_slot0;
                     var8 = _closure1_slot2;
-                    var0 = 9;
+                    var0 = 8;
                     var0 = var8[var0];
                     var4 = undefined;
                     var3 = var2.bind(var4)(var0);
                     var0 = var3.getPermissionName;
                     var0 = var0.bind(var3)(var5);
                     var7 = _closure1_slot1;
-                    var3 = 8;
+                    var3 = 7;
                     var3 = var8[var3];
                     var9 = var7.bind(var4)(var3);
                     var7 = var9.has;
@@ -206,7 +196,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var3 = var7.bind(var9)(var3, var5);
                     var7 = !var3;
                     var3 = _closure1_slot6;
-                    var1 = 10;
+                    var1 = 9;
                     var1 = var8[var1];
                     var1 = var2.bind(var4)(var1);
                     var2 = var1.Checkbox;
@@ -233,7 +223,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = function(arg0) { // Environment: var0
                     var2 = _closure1_slot1;
                     var1 = _closure1_slot2;
-                    var0 = 8;
+                    var0 = 7;
                     var1 = var1[var0];
                     var0 = undefined;
                     var3 = var2.bind(var0)(var1);
@@ -249,17 +239,17 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var5 = arg0;
                     var7 = _closure1_slot0;
                     var10 = _closure1_slot2;
-                    var0 = 9;
-                    var0 = var10[var0];
+                    var1 = 8;
+                    var1 = var10[var1];
                     var4 = undefined;
-                    var1 = var7.bind(var4)(var0);
-                    var0 = var1.getPermissionName;
-                    var9 = var0.bind(var1)(var5);
+                    var2 = var7.bind(var4)(var1);
+                    var1 = var2.getPermissionName;
+                    var9 = var1.bind(var2)(var5);
                     var3 = _closure1_slot7;
-                    var0 = 11;
-                    var0 = var10[var0];
-                    var0 = var7.bind(var4)(var0);
-                    var2 = var0.Stack;
+                    var1 = 10;
+                    var1 = var10[var1];
+                    var1 = var7.bind(var4)(var1);
+                    var2 = var1.Stack;
                     var1 = {
                         'direction': 'horizontal',
                         'align': 'center'
@@ -267,10 +257,18 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var8 = _closure1_slot6;
                     var6 = _closure1_slot5;
                     var0 = {};
-                    var12 = _closure2_slot4;
-                    var12 = var12.disabledPermissionIcon;
-                    var0.style = var12;
-                    var11 = _closure1_slot9;
+                    var11 = _closure2_slot4;
+                    var11 = var11.disabledPermissionIcon;
+                    var0.style = var11;
+                    var11 = 11;
+                    var11 = var10[var11];
+                    var11 = var7.bind(var4)(var11);
+                    var12 = var11.XSmallIcon;
+                    var11 = {
+                        'size': 'sm',
+                        'color': 'white'
+                    };
+                    var11 = var8.bind(var4)(var12, var11);
                     var0.children = var11;
                     var6 = var8.bind(var4)(var6, var0);
                     var0 = new Array(2);
@@ -294,7 +292,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var13 = var1.bind(var2)(var0);
                 var2 = _closure1_slot7;
-                var15 = 11;
+                var15 = 10;
                 var0 = var8[var15];
                 var0 = var10.bind(var3)(var0);
                 var1 = var0.Stack;
@@ -349,8 +347,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var5 > var6;
                 var5 = null;
                 if (!var6) {
-                    _fun48826_ip = 701;
-                    continue _fun48826
+                    _fun48933_ip = 701;
+                    continue _fun48933
                 }
             case 518:
                 var8 = _closure1_slot7;
@@ -403,4 +401,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 33, 1297, 671, 5234, 3098, 484, 5419, 5499, 4086, 3938, 1234, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 33, 1297, 671, 3101, 484, 5414, 5499, 4086, 4739, 3938, 1235, 2]);

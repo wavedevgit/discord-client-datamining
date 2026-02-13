@@ -14,7 +14,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = /,/g;
     var _closure1_slot1 = var2;
     var0 = function arg0() {
-        _fun49057: for (var _fun49057_ip = 0;;) switch (_fun49057_ip) {
+        _fun49164: for (var _fun49164_ip = 0;;) switch (_fun49164_ip) {
             case 0:
                 var3 = arg0;
                 var0 = global;
@@ -23,26 +23,26 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = var0.bind(var1)(var3);
                 var0 = var3;
                 if (var1) {
-                    _fun49057_ip = 116;
-                    continue _fun49057
+                    _fun49164_ip = 116;
+                    continue _fun49164
                 }
             case 27:
                 var2 = typeof var3;
                 var1 = 'number';
                 if (!(var1 !== var2)) {
-                    _fun49057_ip = 102;
-                    continue _fun49057
+                    _fun49164_ip = 102;
+                    continue _fun49164
                 }
             case 38:
                 var1 = 'string';
                 if (!(var1 !== var2)) {
-                    _fun49057_ip = 52;
-                    continue _fun49057
+                    _fun49164_ip = 52;
+                    continue _fun49164
                 }
             case 46:
                 var1 = new Array(0);
-                _fun49057_ip = 100;
-                continue _fun49057;
+                _fun49164_ip = 100;
+                continue _fun49164;
             case 52:
                 var2 = var3.trim;
                 var7 = var2.bind(var3)();
@@ -54,8 +54,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = _closure1_slot0;
                 var1 = var4.bind(var5)(var2);
             case 100:
-                _fun49057_ip = 113;
-                continue _fun49057;
+                _fun49164_ip = 113;
+                continue _fun49164;
             case 102:
                 var2 = new Array(1);
                 var2[0] = var3;

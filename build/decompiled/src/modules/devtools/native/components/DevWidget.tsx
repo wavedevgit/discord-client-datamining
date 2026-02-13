@@ -2,11 +2,11 @@
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var4 = require;
-    var12 = metroImportDefault;
+    var11 = metroImportDefault;
     var2 = exports;
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
-    var _closure1_slot1 = var12;
+    var _closure1_slot1 = var11;
     var _closure1_slot2 = var5;
     var0 = global;
     var7 = var0.Object;
@@ -20,61 +20,61 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var5[var0];
     var3 = metroImportAll;
     var0 = undefined;
-    var8 = var3.bind(var0)(var6);
-    var _closure1_slot3 = var8;
+    var7 = var3.bind(var0)(var6);
+    var _closure1_slot3 = var7;
     var3 = 1;
     var3 = var5[var3];
-    var3 = var12.bind(var0)(var3);
+    var3 = var11.bind(var0)(var3);
     var _closure1_slot4 = var3;
     var3 = 2;
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
-    var13 = var3.DEV_WIDGET_SIZE;
-    var _closure1_slot5 = var13;
+    var12 = var3.DEV_WIDGET_SIZE;
+    var _closure1_slot5 = var12;
     var3 = 3;
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
-    var7 = var3.jsx;
-    var _closure1_slot6 = var7;
+    var6 = var3.jsx;
+    var _closure1_slot6 = var6;
     var6 = var3.Fragment;
     var _closure1_slot7 = var6;
     var3 = var3.jsxs;
     var _closure1_slot8 = var3;
     var3 = 4;
     var3 = var5[var3];
-    var9 = var4.bind(var0)(var3);
-    var6 = var9.createStyles;
+    var8 = var4.bind(var0)(var3);
+    var6 = var8.createStyles;
     var3 = {};
-    var10 = {};
-    var11 = 'absolute';
-    var10.position = var11;
-    var3.widgetContainer = var10;
-    var10 = {
+    var9 = {};
+    var10 = 'absolute';
+    var9.position = var10;
+    var3.widgetContainer = var9;
+    var9 = {
         'backgroundColor': null,
         'justifyContent': 'center',
         'alignItems': 'center'
     };
-    var11 = 5;
-    var14 = var5[var11];
-    var14 = var12.bind(var0)(var14);
-    var14 = var14.colors;
-    var14 = var14.BACKGROUND_BRAND;
-    var10.backgroundColor = var14;
-    var10.height = var13;
-    var10.width = var13;
-    var13 = var5[var11];
-    var13 = var12.bind(var0)(var13);
-    var13 = var13.radii;
-    var13 = var13.xl;
-    var10.borderRadius = var13;
-    var11 = var5[var11];
-    var11 = var12.bind(var0)(var11);
-    var11 = var11.shadows;
-    var16 = var11.SHADOW_MOBILE_NAVIGATOR_X;
-    var17 = var10;
-    var11 = copyDataProperties(var17, var16);
-    var3.widget = var10;
-    var3 = var6.bind(var9)(var3);
+    var10 = 5;
+    var13 = var5[var10];
+    var13 = var11.bind(var0)(var13);
+    var13 = var13.colors;
+    var13 = var13.BACKGROUND_BRAND;
+    var9.backgroundColor = var13;
+    var9.height = var12;
+    var9.width = var12;
+    var12 = var5[var10];
+    var12 = var11.bind(var0)(var12);
+    var12 = var12.radii;
+    var12 = var12.xl;
+    var9.borderRadius = var12;
+    var10 = var5[var10];
+    var10 = var11.bind(var0)(var10);
+    var10 = var10.shadows;
+    var15 = var10.SHADOW_MOBILE_NAVIGATOR_X;
+    var16 = var9;
+    var10 = copyDataProperties(var16, var15);
+    var3.widget = var9;
+    var3 = var6.bind(var8)(var3);
     var _closure1_slot9 = var3;
     var3 = {};
     var6 = 'function DevWidgetTsx1(x,y){const{windowDimensionsSharedValue,insetsSharedValue,clamp,dragBoundsPadding,contentWidth,contentHeight}=this.__closure;const{width:windowWidth,height:windowHeight}=windowDimensionsSharedValue.get();const insets=insetsSharedValue.get();return{x:clamp(x,insets.left+dragBoundsPadding,windowWidth-insets.right-contentWidth-dragBoundsPadding),y:clamp(y,insets.top+dragBoundsPadding,windowHeight-insets.bottom-contentHeight-dragBoundsPadding)};}';
@@ -97,7 +97,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.code = var6;
     var _closure1_slot14 = var3;
     var3 = function arg0() {
-        _fun100544: for (var _fun100544_ip = 0;;) switch (_fun100544_ip) {
+        _fun100643: for (var _fun100643_ip = 0;;) switch (_fun100643_ip) {
             case 0:
                 var0 = arg0;
                 var15 = var0.x;
@@ -111,8 +111,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var20 = var0.dragBoundsPadding;
                 var3 = undefined;
                 if (!(var20 === var3)) {
-                    _fun100544_ip = 57;
-                    continue _fun100544
+                    _fun100643_ip = 57;
+                    continue _fun100643
                 }
             case 55:
                 var20 = 0;
@@ -420,37 +420,27 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot15 = var3;
-    var3 = 12;
-    var3 = var5[var3];
-    var3 = var4.bind(var0)(var3);
-    var6 = var3.StaffBadgeIcon;
-    var3 = {
-        'size': 'md',
-        'color': 'white'
-    };
-    var3 = var7.bind(var0)(var6, var3);
-    var _closure1_slot16 = var3;
-    var6 = var8.memo;
+    var6 = var7.memo;
     var3 = function() { // Environment: var1
-        var0 = _closure1_slot9;
+        var1 = _closure1_slot9;
         var3 = undefined;
-        var5 = var0.bind(var3)();
+        var4 = var1.bind(var3)();
         var2 = _closure1_slot6;
-        var1 = _closure1_slot0;
+        var5 = _closure1_slot0;
         var6 = _closure1_slot2;
-        var0 = 13;
+        var0 = 12;
         var0 = var6[var0];
-        var0 = var1.bind(var3)(var0);
+        var0 = var5.bind(var3)(var0);
         var1 = var0.PressableOpacity;
         var0 = {};
-        var5 = var5.widget;
-        var0.style = var5;
-        var5 = 'button';
-        var0.accessibilityRole = var5;
-        var5 = function() {
+        var4 = var4.widget;
+        var0.style = var4;
+        var4 = 'button';
+        var0.accessibilityRole = var4;
+        var4 = function() {
             var2 = _closure1_slot0;
             var1 = _closure1_slot2;
-            var0 = 14;
+            var0 = 13;
             var1 = var1[var0];
             var0 = undefined;
             var1 = var2.bind(var0)(var1);
@@ -458,18 +448,24 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var0 = var0.bind(var1)();
             return var0;
         };
-        var0.onPress = var5;
-        var5 = 0.5;
-        var0.activeOpacity = var5;
-        var4 = _closure1_slot16;
+        var0.onPress = var4;
+        var4 = 0.5;
+        var0.activeOpacity = var4;
+        var4 = 14;
+        var4 = var6[var4];
+        var4 = var5.bind(var3)(var4);
+        var5 = var4.StaffBadgeIcon;
+        var4 = {
+            'size': 'md',
+            'color': 'white'
+        };
+        var4 = var2.bind(var3)(var5, var4);
         var0.children = var4;
         var0 = var2.bind(var3)(var1, var0);
         return var0;
     };
-    var6 = var6.bind(var8)(var3);
-    var3 = {};
-    var3 = var7.bind(var0)(var6, var3);
-    var _closure1_slot17 = var3;
+    var3 = var6.bind(var7)(var3);
+    var _closure1_slot16 = var3;
     var3 = 17;
     var3 = var5[var3];
     var5 = var4.bind(var0)(var3);
@@ -536,7 +532,9 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             return var0;
         };
         var5.onChangePosition = var9;
-        var8 = _closure1_slot17;
+        var9 = _closure1_slot16;
+        var8 = {};
+        var8 = var7.bind(var3)(var9, var8);
         var5.children = var8;
         var5 = var7.bind(var3)(var6, var5);
         var4[1] = var5;
@@ -546,4 +544,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 5291, 807, 33, 1297, 671, 3717, 5330, 13068, 4937, 4087, 4093, 10991, 4880, 11172, 13069, 10990, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 5321, 808, 33, 1297, 671, 3717, 5360, 13076, 4968, 4087, 4093, 4909, 11415, 11148, 13077, 11147, 2]);

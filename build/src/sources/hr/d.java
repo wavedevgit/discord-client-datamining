@@ -5,37 +5,37 @@ import android.graphics.RectF;
 public class d {
 
     /* renamed from: a  reason: collision with root package name */
-    private RectF f27658a;
+    private RectF f28226a;
 
     /* renamed from: b  reason: collision with root package name */
-    private RectF f27659b;
+    private RectF f28227b;
 
     /* renamed from: c  reason: collision with root package name */
-    private float f27660c;
+    private float f28228c;
 
     /* renamed from: d  reason: collision with root package name */
-    private float f27661d;
+    private float f28229d;
 
     public d(RectF rectF, RectF rectF2, float f10, float f11) {
-        this.f27658a = rectF;
-        this.f27659b = rectF2;
-        this.f27660c = f10;
-        this.f27661d = f11;
+        this.f28226a = rectF;
+        this.f28227b = rectF2;
+        this.f28228c = f10;
+        this.f28229d = f11;
     }
 
     public RectF a() {
-        return this.f27658a;
+        return this.f28226a;
     }
 
     public float b() {
-        return this.f27661d;
+        return this.f28229d;
     }
 
     public RectF c() {
-        return this.f27659b;
+        return this.f28227b;
     }
 
     public float d() {
-        return this.f27660c;
+        return this.f28228c;
     }
 }

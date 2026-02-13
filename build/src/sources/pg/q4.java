@@ -5,44 +5,44 @@ import bj.c;
 final class q4 implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final q4 f42352a = new q4();
+    static final q4 f42920a = new q4();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final bj.c f42353b;
+    private static final bj.c f42921b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final bj.c f42354c;
+    private static final bj.c f42922c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final bj.c f42355d;
+    private static final bj.c f42923d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final bj.c f42356e;
+    private static final bj.c f42924e;
 
     /* renamed from: f  reason: collision with root package name */
-    private static final bj.c f42357f;
+    private static final bj.c f42925f;
 
     static {
         c.b a10 = bj.c.a("inferenceCommonLogEvent");
         f fVar = new f();
         fVar.a(1);
-        f42353b = a10.b(fVar.b()).a();
+        f42921b = a10.b(fVar.b()).a();
         c.b a11 = bj.c.a("imageInfo");
         f fVar2 = new f();
         fVar2.a(2);
-        f42354c = a11.b(fVar2.b()).a();
+        f42922c = a11.b(fVar2.b()).a();
         c.b a12 = bj.c.a("captionCount");
         f fVar3 = new f();
         fVar3.a(4);
-        f42355d = a12.b(fVar3.b()).a();
+        f42923d = a12.b(fVar3.b()).a();
         c.b a13 = bj.c.a("highestScore");
         f fVar4 = new f();
         fVar4.a(5);
-        f42356e = a13.b(fVar4.b()).a();
+        f42924e = a13.b(fVar4.b()).a();
         c.b a14 = bj.c.a("imageType");
         f fVar5 = new f();
         fVar5.a(6);
-        f42357f = a14.b(fVar5.b()).a();
+        f42925f = a14.b(fVar5.b()).a();
     }
 
     private q4() {

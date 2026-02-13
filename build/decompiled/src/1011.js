@@ -1,74 +1,113 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var2 = exports;
-    var3 = dependencyMap;
-    var0 = require;
-    var _closure1_slot0 = var0;
-    var _closure1_slot1 = var3;
+    var1 = exports;
     var0 = global;
-    var6 = var0.Object;
-    var5 = var6.defineProperty;
-    var4 = {};
+    var4 = var0.Object;
+    var3 = var4.defineProperty;
+    var2 = {};
     var0 = true;
-    var4.value = var0;
+    var2.value = var0;
     var0 = '__esModule';
-    var0 = var5.bind(var6)(var2, var0, var4);
-    var0 = 0;
-    var4 = var3[var0];
-    var3 = metroImportDefault;
-    var0 = undefined;
-    var3 = var3.bind(var0)(var4);
-    var _closure1_slot2 = var3;
-    var1 = function arg0() {
-        _fun10348: for (var _fun10348_ip = 0;;) switch (_fun10348_ip) {
+    var0 = var3.bind(var4)(var1, var0, var2);
+    var0 = function arg0() {
+        _fun10351: for (var _fun10351_ip = 0;;) switch (_fun10351_ip) {
             case 0:
-                var2 = _closure1_slot0;
-                var3 = _closure1_slot1;
-                var0 = 1;
-                var0 = var3[var0];
+                var1 = arg0;
+                var4 = undefined;
                 var5 = undefined;
-                var3 = var2.bind(var5)(var0);
-                var2 = var3.normalize;
-                var0 = arg0;
-                var4 = var2.bind(var3)(var0);
-                var0 = null;
-                if (!(var0 !== var4)) {
-                    _fun10348_ip = 95;
-                    continue _fun10348
+                var2 = 'string';
+                var0 = typeof var1;
+                if (!(var2 !== var0)) {
+                    _fun10351_ip = 57;
+                    continue _fun10351
                 }
-            case 45:
-                var2 = 'object';
-                var0 = typeof var4;
-                if (!(var2 === var0)) {
-                    _fun10348_ip = 95;
-                    continue _fun10348
+            case 18:
+                var0 = 'exception';
+                var0 = var0 in var1;
+                if (!var0) {
+                    _fun10351_ip = 57;
+                    continue _fun10351
                 }
-            case 56:
-                var0 = global;
-                var3 = var0.Array;
-                var2 = var3.isArray;
-                var2 = var2.bind(var3)(var4);
-                if (var2) {
-                    _fun10348_ip = 95;
-                    continue _fun10348
-                }
-            case 77:
-                var3 = var4.constructor;
-                var2 = var0.Object;
-                var0 = var4;
+            case 29:
+                var2 = var1.exception;
+                var3 = null;
+                var0 = undefined;
                 if (!(var3 !== var2)) {
-                    _fun10348_ip = 112;
-                    continue _fun10348
+                    _fun10351_ip = 54;
+                    continue _fun10351
                 }
-            case 95:
-                var3 = _closure1_slot2;
-                var2 = {};
-                var1 = 'value';
-                var0 = var3.bind(var5)(var2, var1, var4);
-            case 112:
+            case 43:
+                var0 = undefined;
+                if (!(var0 !== var2)) {
+                    _fun10351_ip = 54;
+                    continue _fun10351
+                }
+            case 49:
+                var0 = var2.values;
+            case 54:
+                if (var0) {
+                    _fun10351_ip = 63;
+                    continue _fun10351
+                }
+            case 57:
+                var0 = new Array(0);
+                _fun10351_ip = 74;
+                continue _fun10351;
+            case 63:
+                var1 = var1.exception;
+                var0 = var1.values;
+            case 74:
+                var3 = var0;
+                var2 = var3[Symbol.iterator];
+                var3 = var2().next;
+                var1 = 'onerror';
+                var0 = false;
+            case 86:
+                var6 = var3().value;
+                var7 = var2;
+                if (!(var7 !== var4)) {
+                    _fun10351_ip = 162;
+                    continue _fun10351
+                }
+            case 97: // try_start_0
+                var5 = var6;
+                var6 = var6.mechanism;
+                if (!var6) {
+                    _fun10351_ip = 146;
+                    continue _fun10351
+                }
+            case 109:
+                var6 = var5;
+                var6 = var6.mechanism;
+                var6 = var6.handled;
+                if (!(var0 === var6)) {
+                    _fun10351_ip = 146;
+                    continue _fun10351
+                }
+            case 128:
+                var6 = var5;
+                var6 = var6.mechanism;
+                var6 = var6.type;
+                if (!(var1 !== var6)) {
+                    _fun10351_ip = 148;
+                    continue _fun10351
+                }
+            case 146: // try_end0
+                _fun10351_ip = 86;
+                continue _fun10351;
+            case 148:
+                var2.return();
+                var1 = true;
+                return var1;
+            case 155: // catch_target0
+                CatchBlockStart(arg_register = 1);
+                var2.return();
+                throw var1;
+            case 162:
                 return var0;
         }
     };
-    var2.convertToNormalizedObject = var1;
+    var1.isHardCrash = var0;
+    var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [77, 817]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, []);

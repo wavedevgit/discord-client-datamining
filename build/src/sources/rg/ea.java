@@ -5,7 +5,7 @@ import bj.c;
 final class ea implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final ea f46646a = new ea();
+    static final ea f47214a = new ea();
 
     static {
         c.b a10 = bj.c.a("identifiedLanguages");

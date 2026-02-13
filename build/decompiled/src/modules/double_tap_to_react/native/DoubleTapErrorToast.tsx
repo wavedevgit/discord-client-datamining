@@ -2,71 +2,13 @@
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var4 = require;
-    var11 = metroImportDefault;
+    var10 = metroImportDefault;
     var2 = exports;
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
-    var _closure1_slot1 = var11;
+    var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
-    var0 = global;
-    var7 = var0.Object;
-    var6 = var7.defineProperty;
-    var3 = {};
-    var0 = true;
-    var3.value = var0;
-    var0 = '__esModule';
-    var0 = var6.bind(var7)(var2, var0, var3);
-    var0 = 0;
-    var6 = var5[var0];
-    var3 = metroImportAll;
-    var0 = undefined;
-    var3 = var3.bind(var0)(var6);
-    var3 = 1;
-    var3 = var5[var3];
-    var3 = var4.bind(var0)(var3);
-    var3 = var3.View;
-    var _closure1_slot3 = var3;
-    var3 = 2;
-    var3 = var5[var3];
-    var3 = var4.bind(var0)(var3);
-    var3 = var3.EmojiDisabledReasons;
-    var _closure1_slot4 = var3;
-    var3 = 3;
-    var3 = var5[var3];
-    var3 = var4.bind(var0)(var3);
-    var7 = var3.jsx;
-    var _closure1_slot5 = var7;
-    var3 = 4;
-    var3 = var5[var3];
-    var8 = var4.bind(var0)(var3);
-    var6 = var8.createStyles;
-    var3 = {};
-    var9 = {};
-    var10 = 5;
-    var12 = var5[var10];
-    var12 = var11.bind(var0)(var12);
-    var12 = var12.colors;
-    var12 = var12.BACKGROUND_FEEDBACK_CRITICAL;
-    var9.backgroundColor = var12;
-    var12 = var5[var10];
-    var12 = var11.bind(var0)(var12);
-    var12 = var12.radii;
-    var12 = var12.round;
-    var9.borderRadius = var12;
-    var12 = var5[var10];
-    var12 = var11.bind(var0)(var12);
-    var12 = var12.spacing;
-    var12 = var12.PX_4;
-    var9.padding = var12;
-    var10 = var5[var10];
-    var10 = var11.bind(var0)(var10);
-    var10 = var10.spacing;
-    var10 = var10.PX_4;
-    var9.marginLeft = var10;
-    var3.icon = var9;
-    var3 = var6.bind(var8)(var3);
-    var _closure1_slot6 = var3;
-    var6 = function() {
+    var0 = function() {
         var0 = _closure1_slot6;
         var3 = undefined;
         var4 = var0.bind(var3)();
@@ -99,9 +41,65 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = var2.bind(var3)(var1, var0);
         return var0;
     };
+    var _closure1_slot7 = var0;
+    var0 = global;
+    var7 = var0.Object;
+    var6 = var7.defineProperty;
     var3 = {};
-    var3 = var7.bind(var0)(var6, var3);
-    var _closure1_slot7 = var3;
+    var0 = true;
+    var3.value = var0;
+    var0 = '__esModule';
+    var0 = var6.bind(var7)(var2, var0, var3);
+    var0 = 0;
+    var6 = var5[var0];
+    var3 = arg3;
+    var0 = undefined;
+    var3 = var3.bind(var0)(var6);
+    var3 = 1;
+    var3 = var5[var3];
+    var3 = var4.bind(var0)(var3);
+    var3 = var3.View;
+    var _closure1_slot3 = var3;
+    var3 = 2;
+    var3 = var5[var3];
+    var3 = var4.bind(var0)(var3);
+    var3 = var3.EmojiDisabledReasons;
+    var _closure1_slot4 = var3;
+    var3 = 3;
+    var3 = var5[var3];
+    var3 = var4.bind(var0)(var3);
+    var3 = var3.jsx;
+    var _closure1_slot5 = var3;
+    var3 = 4;
+    var3 = var5[var3];
+    var7 = var4.bind(var0)(var3);
+    var6 = var7.createStyles;
+    var3 = {};
+    var8 = {};
+    var9 = 5;
+    var11 = var5[var9];
+    var11 = var10.bind(var0)(var11);
+    var11 = var11.colors;
+    var11 = var11.BACKGROUND_FEEDBACK_CRITICAL;
+    var8.backgroundColor = var11;
+    var11 = var5[var9];
+    var11 = var10.bind(var0)(var11);
+    var11 = var11.radii;
+    var11 = var11.round;
+    var8.borderRadius = var11;
+    var11 = var5[var9];
+    var11 = var10.bind(var0)(var11);
+    var11 = var11.spacing;
+    var11 = var11.PX_4;
+    var8.padding = var11;
+    var9 = var5[var9];
+    var9 = var10.bind(var0)(var9);
+    var9 = var9.spacing;
+    var9 = var9.PX_4;
+    var8.marginLeft = var9;
+    var3.icon = var8;
+    var3 = var6.bind(var7)(var3);
+    var _closure1_slot6 = var3;
     var3 = 10;
     var3 = var5[var3];
     var5 = var4.bind(var0)(var3);
@@ -125,26 +123,30 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = 'EMOJI_DOUBLE_TAP_ERROR';
         var1.key = var5;
         var5 = function() {
-            var0 = _closure1_slot7;
+            var3 = _closure1_slot5;
+            var2 = _closure1_slot7;
+            var1 = undefined;
+            var0 = {};
+            var0 = var3.bind(var1)(var2, var0);
             return var0;
         };
         var1.icon = var5;
         var4 = function() {
-            _fun58050: for (var _fun58050_ip = 0;;) switch (_fun58050_ip) {
+            _fun58106: for (var _fun58106_ip = 0;;) switch (_fun58106_ip) {
                 case 0:
                     var2 = _closure2_slot1;
                     var0 = _closure1_slot4;
                     var0 = var0.DISALLOW_EXTERNAL;
                     if (!(var2 === var0)) {
-                        _fun58050_ip = 37;
-                        continue _fun58050
+                        _fun58106_ip = 37;
+                        continue _fun58106
                     }
                 case 24:
                     var2 = _closure2_slot0;
                     var0 = null;
                     if (!(var0 == var2)) {
-                        _fun58050_ip = 230;
-                        continue _fun58050
+                        _fun58106_ip = 230;
+                        continue _fun58106
                     }
                 case 37:
                     var4 = _closure1_slot5;
@@ -161,8 +163,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var6 = _closure2_slot0;
                     var5 = null;
                     if (!(var5 == var6)) {
-                        _fun58050_ip = 149;
-                        continue _fun58050
+                        _fun58106_ip = 149;
+                        continue _fun58106
                     }
                 case 90:
                     var8 = _closure1_slot0;
@@ -177,8 +179,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var5 = var5.t;
                     var5 = var5.CL5mWi;
                     var5 = var6.bind(var7)(var5);
-                    _fun58050_ip = 218;
-                    continue _fun58050;
+                    _fun58106_ip = 218;
+                    continue _fun58106;
                 case 149:
                     var7 = _closure1_slot0;
                     var11 = _closure1_slot2;
@@ -198,8 +200,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 case 218:
                     var0.children = var5;
                     var0 = var4.bind(var3)(var2, var0);
-                    _fun58050_ip = 344;
-                    continue _fun58050;
+                    _fun58106_ip = 344;
+                    continue _fun58106;
                 case 230:
                     var4 = _closure1_slot5;
                     var6 = _closure1_slot0;
@@ -239,4 +241,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.showDoubleTapErrorToast = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1624, 33, 1297, 671, 7101, 3150, 3938, 1234, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1624, 33, 1297, 671, 7089, 3153, 3938, 1235, 2]);

@@ -13,13 +13,13 @@ public final class m extends i {
     public static final Parcelable.Creator<m> CREATOR = new a();
 
     /* renamed from: e  reason: collision with root package name */
-    public final String f36326e;
+    public final String f36894e;
 
     /* renamed from: i  reason: collision with root package name */
-    public final String f36327i;
+    public final String f36895i;
 
     /* renamed from: o  reason: collision with root package name */
-    public final s f36328o;
+    public final s f36896o;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     class a implements Parcelable.Creator {
@@ -72,7 +72,7 @@ public final class m extends i {
         }
         if (obj != null && m.class == obj.getClass()) {
             m mVar = (m) obj;
-            if (w0.c(this.f36315d, mVar.f36315d) && w0.c(this.f36326e, mVar.f36326e) && this.f36328o.equals(mVar.f36328o)) {
+            if (w0.c(this.f36883d, mVar.f36883d) && w0.c(this.f36894e, mVar.f36894e) && this.f36896o.equals(mVar.f36896o)) {
                 return true;
             }
         }
@@ -83,7 +83,7 @@ public final class m extends i {
     @Override // com.google.android.exoplayer2.metadata.Metadata.b
     public void f1(MediaMetadata.b bVar) {
         Integer num;
-        String str = this.f36315d;
+        String str = this.f36883d;
         str.getClass();
         char c10 = 65535;
         switch (str.hashCode()) {
@@ -224,32 +224,32 @@ public final class m extends i {
             switch (c10) {
                 case 0:
                 case '\n':
-                    bVar.N((CharSequence) this.f36328o.get(0));
+                    bVar.N((CharSequence) this.f36896o.get(0));
                     return;
                 case 1:
                 case 11:
-                    bVar.S((CharSequence) this.f36328o.get(0));
+                    bVar.S((CharSequence) this.f36896o.get(0));
                     return;
                 case 2:
                 case '\f':
-                    String str2 = (String) this.f36328o.get(0);
+                    String str2 = (String) this.f36896o.get(0);
                     bVar.f0(Integer.valueOf(Integer.parseInt(str2.substring(2, 4)))).e0(Integer.valueOf(Integer.parseInt(str2.substring(0, 2))));
                     return;
                 case 3:
                 case 17:
-                    bVar.O((CharSequence) this.f36328o.get(0));
+                    bVar.O((CharSequence) this.f36896o.get(0));
                     return;
                 case 4:
                 case ChatViewRecyclerTypes.EPHEMERAL_INDICATION /* 18 */:
-                    bVar.M((CharSequence) this.f36328o.get(0));
+                    bVar.M((CharSequence) this.f36896o.get(0));
                     return;
                 case 5:
                 case ChatViewRecyclerTypes.INTERACTION_STATUS /* 19 */:
-                    bVar.T((CharSequence) this.f36328o.get(0));
+                    bVar.T((CharSequence) this.f36896o.get(0));
                     return;
                 case 6:
                 case 20:
-                    String[] d12 = w0.d1((String) this.f36328o.get(0), "/");
+                    String[] d12 = w0.d1((String) this.f36896o.get(0), "/");
                     int parseInt = Integer.parseInt(d12[0]);
                     if (d12.length > 1) {
                         num = Integer.valueOf(Integer.parseInt(d12[1]));
@@ -260,18 +260,18 @@ public final class m extends i {
                     return;
                 case 7:
                 case 16:
-                    bVar.m0((CharSequence) this.f36328o.get(0));
+                    bVar.m0((CharSequence) this.f36896o.get(0));
                     return;
                 case '\b':
                 case 15:
-                    bVar.r0((CharSequence) this.f36328o.get(0));
+                    bVar.r0((CharSequence) this.f36896o.get(0));
                     return;
                 case '\t':
                 case ChatViewRecyclerTypes.FLAGGED_MESSAGE_EMBED /* 21 */:
-                    bVar.g0(Integer.valueOf(Integer.parseInt((String) this.f36328o.get(0))));
+                    bVar.g0(Integer.valueOf(Integer.parseInt((String) this.f36896o.get(0))));
                     return;
                 case '\r':
-                    List a10 = a((String) this.f36328o.get(0));
+                    List a10 = a((String) this.f36896o.get(0));
                     int size = a10.size();
                     if (size != 1) {
                         if (size != 2) {
@@ -286,7 +286,7 @@ public final class m extends i {
                     bVar.g0((Integer) a10.get(0));
                     return;
                 case 14:
-                    List a11 = a((String) this.f36328o.get(0));
+                    List a11 = a((String) this.f36896o.get(0));
                     int size2 = a11.size();
                     if (size2 != 1) {
                         if (size2 != 2) {
@@ -309,35 +309,35 @@ public final class m extends i {
 
     public int hashCode() {
         int i10;
-        int hashCode = (527 + this.f36315d.hashCode()) * 31;
-        String str = this.f36326e;
+        int hashCode = (527 + this.f36883d.hashCode()) * 31;
+        String str = this.f36894e;
         if (str != null) {
             i10 = str.hashCode();
         } else {
             i10 = 0;
         }
-        return ((hashCode + i10) * 31) + this.f36328o.hashCode();
+        return ((hashCode + i10) * 31) + this.f36896o.hashCode();
     }
 
     @Override // md.i
     public String toString() {
-        return this.f36315d + ": description=" + this.f36326e + ": values=" + this.f36328o;
+        return this.f36883d + ": description=" + this.f36894e + ": values=" + this.f36896o;
     }
 
     @Override // android.os.Parcelable
     public void writeToParcel(Parcel parcel, int i10) {
-        parcel.writeString(this.f36315d);
-        parcel.writeString(this.f36326e);
-        parcel.writeStringArray((String[]) this.f36328o.toArray(new String[0]));
+        parcel.writeString(this.f36883d);
+        parcel.writeString(this.f36894e);
+        parcel.writeStringArray((String[]) this.f36896o.toArray(new String[0]));
     }
 
     public m(String str, String str2, List list) {
         super(str);
         oe.a.a(!list.isEmpty());
-        this.f36326e = str2;
+        this.f36894e = str2;
         s o10 = s.o(list);
-        this.f36328o = o10;
-        this.f36327i = (String) o10.get(0);
+        this.f36896o = o10;
+        this.f36895i = (String) o10.get(0);
     }
 
     private m(Parcel parcel) {

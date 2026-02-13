@@ -6,13 +6,13 @@ import p.a;
 final class x3 extends u0 {
 
     /* renamed from: c  reason: collision with root package name */
-    static final x3 f43692c = new x3(new u.k());
+    static final x3 f44260c = new x3(new u.k());
 
     /* renamed from: b  reason: collision with root package name */
-    private final u.k f43693b;
+    private final u.k f44261b;
 
     private x3(u.k kVar) {
-        this.f43693b = kVar;
+        this.f44261b = kVar;
     }
 
     @Override // q.u0, a0.p0.b
@@ -22,7 +22,7 @@ final class x3 extends u0 {
             a0.g1 g1Var = (a0.g1) x2Var;
             a.C0582a c0582a = new a.C0582a();
             if (g1Var.e0()) {
-                this.f43693b.a(g1Var.X(), c0582a);
+                this.f44261b.a(g1Var.X(), c0582a);
             }
             aVar.e(c0582a.c());
             return;

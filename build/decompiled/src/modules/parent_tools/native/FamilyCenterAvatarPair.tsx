@@ -78,7 +78,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/parent_tools/native/FamilyCenterAvatarPair.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun81718: for (var _fun81718_ip = 0;;) switch (_fun81718_ip) {
+        _fun82796: for (var _fun82796_ip = 0;;) switch (_fun82796_ip) {
             case 0:
                 var0 = arg0;
                 var9 = var0.otherUser;
@@ -105,14 +105,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13 = var2.bind(var3)(var1, var0);
                 var0 = null;
                 if (!(var4 !== var13)) {
-                    _fun81718_ip = 361;
-                    continue _fun81718
+                    _fun82796_ip = 361;
+                    continue _fun82796
                 }
             case 95:
                 var0 = null;
                 if (!(var4 !== var9)) {
-                    _fun81718_ip = 361;
-                    continue _fun81718
+                    _fun82796_ip = 361;
+                    continue _fun82796
                 }
             case 104:
                 var3 = _closure1_slot6;

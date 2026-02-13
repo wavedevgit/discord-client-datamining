@@ -40,7 +40,7 @@ public /* synthetic */ class TapSoundmojiData$$serializer implements h0 {
     @Override // tt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        n2 n2Var = n2.f50033a;
+        n2 n2Var = n2.f50601a;
         return new KSerializer[]{n2Var, n2Var, rt.a.u(n2Var), rt.a.u(MessageId$$serializer.INSTANCE)};
     }
 
@@ -58,7 +58,7 @@ public /* synthetic */ class TapSoundmojiData$$serializer implements h0 {
         if (b10.p()) {
             str = b10.m(serialDescriptor, 0);
             String m10 = b10.m(serialDescriptor, 1);
-            String str5 = (String) b10.n(serialDescriptor, 2, n2.f50033a, null);
+            String str5 = (String) b10.n(serialDescriptor, 2, n2.f50601a, null);
             MessageId messageId = (MessageId) b10.n(serialDescriptor, 3, MessageId$$serializer.INSTANCE, null);
             i10 = 15;
             str2 = str5;
@@ -82,7 +82,7 @@ public /* synthetic */ class TapSoundmojiData$$serializer implements h0 {
                     str7 = b10.m(serialDescriptor, 1);
                     i11 |= 2;
                 } else if (o10 == 2) {
-                    str6 = (String) b10.n(serialDescriptor, 2, n2.f50033a, str6);
+                    str6 = (String) b10.n(serialDescriptor, 2, n2.f50601a, str6);
                     i11 |= 4;
                 } else if (o10 != 3) {
                     throw new b0(o10);

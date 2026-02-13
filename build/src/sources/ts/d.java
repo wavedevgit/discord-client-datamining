@@ -17,15 +17,15 @@ import kotlin.reflect.jvm.internal.impl.serialization.deserialization.MemberDese
 import us.h1;
 import us.j3;
 import us.k;
-/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public abstract class d {
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public /* synthetic */ class a extends FunctionReferenceImpl implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final a f49940d = new a();
+        public static final a f50508d = new a();
 
         a() {
             super(2, MemberDeserializer.class, "loadFunction", "loadFunction(Lorg/jetbrains/kotlin/metadata/ProtoBuf$Function;)Lorg/jetbrains/kotlin/descriptors/SimpleFunctionDescriptor;", 0);
@@ -67,6 +67,6 @@ public abstract class d {
         Class<?> cls = function.getClass();
         ProtoBuf.TypeTable typeTable = function2.getTypeTable();
         Intrinsics.checkNotNullExpressionValue(typeTable, "getTypeTable(...)");
-        return new h1(k.f51083o, (SimpleFunctionDescriptor) j3.h(cls, function2, jvmNameResolver, new TypeTable(typeTable), metadataVersion, a.f49940d));
+        return new h1(k.f51651o, (SimpleFunctionDescriptor) j3.h(cls, function2, jvmNameResolver, new TypeTable(typeTable), metadataVersion, a.f50508d));
     }
 }

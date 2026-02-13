@@ -32,10 +32,10 @@ import kotlin.jvm.internal.Intrinsics;
 public final class a extends b {
 
     /* renamed from: r  reason: collision with root package name */
-    public static final C0415a f30807r = new C0415a(null);
+    public static final C0415a f31375r = new C0415a(null);
 
     /* renamed from: q  reason: collision with root package name */
-    private final i2.e f30808q;
+    private final i2.e f31376q;
 
     /* renamed from: j2.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
@@ -48,7 +48,7 @@ public final class a extends b {
             Object b10;
             Intrinsics.checkNotNullParameter(type, "type");
             try {
-                c.a aVar = c.f30811a;
+                c.a aVar = c.f31379a;
                 a aVar2 = new a(new b0(), null, 2, null);
                 if (Intrinsics.areEqual(type, "androidx.credentials.TYPE_CREATE_PUBLIC_KEY_CREDENTIAL_DOM_EXCEPTION/androidx.credentials.TYPE_ABORT_ERROR")) {
                     b10 = aVar.b(new i2.a(), str, aVar2);
@@ -185,6 +185,6 @@ public final class a extends b {
     public a(i2.e domError, CharSequence charSequence) {
         super("androidx.credentials.TYPE_CREATE_PUBLIC_KEY_CREDENTIAL_DOM_EXCEPTION/" + domError.a(), charSequence);
         Intrinsics.checkNotNullParameter(domError, "domError");
-        this.f30808q = domError;
+        this.f31376q = domError;
     }
 }

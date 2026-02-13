@@ -6,10 +6,10 @@ import wp.b1;
 public final class d1 implements b1.b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final c1 f53057a;
+    private final c1 f53625a;
 
     d1(c1 c1Var) {
-        this.f53057a = c1Var;
+        this.f53625a = c1Var;
     }
 
     public static lr.h b(c1 c1Var) {
@@ -18,6 +18,6 @@ public final class d1 implements b1.b {
 
     @Override // wp.b1.b
     public b1 a(a1.b bVar, boolean z10) {
-        return this.f53057a.b(bVar, z10);
+        return this.f53625a.b(bVar, z10);
     }
 }

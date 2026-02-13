@@ -230,7 +230,7 @@ public final class a implements o<b> {
             L9d:
                 return r0
             L9e:
-                kotlin.Unit r12 = kotlin.Unit.f31988a
+                kotlin.Unit r12 = kotlin.Unit.f32556a
                 return r12
             */
             throw new UnsupportedOperationException("Method not decompiled: com.withpersona.sdk2.inquiry.document.network.a.c.invokeSuspend(java.lang.Object):java.lang.Object");
@@ -238,7 +238,7 @@ public final class a implements o<b> {
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(FlowCollector flowCollector, Continuation continuation) {
-            return ((c) create(flowCollector, continuation)).invokeSuspend(Unit.f31988a);
+            return ((c) create(flowCollector, continuation)).invokeSuspend(Unit.f32556a);
         }
     }
 

@@ -37,7 +37,7 @@ import os.l;
 import os.m;
 import os.n;
 import os.o;
-/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public class TypeIntrinsics {
     public static Collection asMutableCollection(Object obj) {
         if ((obj instanceof KMappedMarker) && !(obj instanceof KMutableCollection)) {

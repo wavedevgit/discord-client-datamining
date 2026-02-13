@@ -4,10 +4,10 @@ package jk;
 public final class a0 implements y0 {
 
     /* renamed from: b  reason: collision with root package name */
-    private static final h0 f30979b = new a();
+    private static final h0 f31547b = new a();
 
     /* renamed from: a  reason: collision with root package name */
-    private final h0 f30980a;
+    private final h0 f31548a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     class a implements h0 {
@@ -30,16 +30,16 @@ public final class a0 implements y0 {
     public static class b implements h0 {
 
         /* renamed from: a  reason: collision with root package name */
-        private h0[] f30981a;
+        private h0[] f31549a;
 
         b(h0... h0VarArr) {
-            this.f30981a = h0VarArr;
+            this.f31549a = h0VarArr;
         }
 
         @Override // jk.h0
         public g0 a(Class cls) {
             h0[] h0VarArr;
-            for (h0 h0Var : this.f30981a) {
+            for (h0 h0Var : this.f31549a) {
                 if (h0Var.b(cls)) {
                     return h0Var.a(cls);
                 }
@@ -49,7 +49,7 @@ public final class a0 implements y0 {
 
         @Override // jk.h0
         public boolean b(Class cls) {
-            for (h0 h0Var : this.f30981a) {
+            for (h0 h0Var : this.f31549a) {
                 if (h0Var.b(cls)) {
                     return true;
                 }
@@ -70,7 +70,7 @@ public final class a0 implements y0 {
         try {
             return (h0) Class.forName("com.google.protobuf.DescriptorMessageInfoFactory").getDeclaredMethod("getInstance", null).invoke(null, null);
         } catch (Exception unused) {
-            return f30979b;
+            return f31547b;
         }
     }
 
@@ -97,7 +97,7 @@ public final class a0 implements y0 {
     @Override // jk.y0
     public x0 a(Class cls) {
         z0.j(cls);
-        g0 a10 = this.f30980a.a(cls);
+        g0 a10 = this.f31548a.a(cls);
         if (a10.a()) {
             if (s.class.isAssignableFrom(cls)) {
                 return m0.i(z0.m(), o.b(), a10.b());
@@ -108,6 +108,6 @@ public final class a0 implements y0 {
     }
 
     private a0(h0 h0Var) {
-        this.f30980a = (h0) u.b(h0Var, "messageInfoFactory");
+        this.f31548a = (h0) u.b(h0Var, "messageInfoFactory");
     }
 }

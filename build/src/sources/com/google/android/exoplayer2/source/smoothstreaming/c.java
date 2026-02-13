@@ -82,16 +82,16 @@ final class c implements p, n0.a {
 
     private td.i a(com.google.android.exoplayer2.trackselection.g gVar, long j10) {
         int c10 = this.f13594t.c(gVar.l());
-        return new td.i(this.f13597w.f56365f[c10].f56371a, null, null, this.f13586d.a(this.f13588i, this.f13597w, c10, gVar, this.f13587e, null), this, this.f13593s, j10, this.f13589o, this.f13590p, this.f13591q, this.f13592r);
+        return new td.i(this.f13597w.f56933f[c10].f56939a, null, null, this.f13586d.a(this.f13588i, this.f13597w, c10, gVar, this.f13587e, null), this, this.f13593s, j10, this.f13589o, this.f13590p, this.f13591q, this.f13592r);
     }
 
     private static w0 n(zd.a aVar, v vVar) {
-        u0[] u0VarArr = new u0[aVar.f56365f.length];
+        u0[] u0VarArr = new u0[aVar.f56933f.length];
         int i10 = 0;
         while (true) {
-            a.b[] bVarArr = aVar.f56365f;
+            a.b[] bVarArr = aVar.f56933f;
             if (i10 < bVarArr.length) {
-                Format[] formatArr = bVarArr[i10].f56380j;
+                Format[] formatArr = bVarArr[i10].f56948j;
                 Format[] formatArr2 = new Format[formatArr.length];
                 for (int i11 = 0; i11 < formatArr.length; i11++) {
                     Format format = formatArr[i11];
@@ -123,7 +123,7 @@ final class c implements p, n0.a {
     public long e(long j10, t0 t0Var) {
         td.i[] iVarArr;
         for (td.i iVar : this.f13598x) {
-            if (iVar.f48718d == 2) {
+            if (iVar.f49286d == 2) {
                 return iVar.e(j10, t0Var);
             }
         }

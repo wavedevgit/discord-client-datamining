@@ -3,7 +3,7 @@ package qs;
 import java.util.Random;
 import java.util.concurrent.ThreadLocalRandom;
 import kotlin.jvm.internal.Intrinsics;
-/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public final class a extends kotlin.random.a {
     @Override // kotlin.random.c
     public int f(int i10, int i11) {

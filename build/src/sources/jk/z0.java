@@ -9,16 +9,16 @@ import jk.u;
 public abstract class z0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Class f31182a = b();
+    private static final Class f31750a = b();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final d1 f31183b = c(false);
+    private static final d1 f31751b = c(false);
 
     /* renamed from: c  reason: collision with root package name */
-    private static final d1 f31184c = c(true);
+    private static final d1 f31752c = c(true);
 
     /* renamed from: d  reason: collision with root package name */
-    private static final d1 f31185d = new f1();
+    private static final d1 f31753d = new f1();
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static Object a(Object obj, int i10, List list, u.a aVar, Object obj2, d1 d1Var) {
@@ -103,16 +103,16 @@ public abstract class z0 {
     }
 
     public static d1 h() {
-        return f31183b;
+        return f31751b;
     }
 
     public static d1 i() {
-        return f31184c;
+        return f31752c;
     }
 
     public static void j(Class cls) {
         Class cls2;
-        if (!s.class.isAssignableFrom(cls) && (cls2 = f31182a) != null && !cls2.isAssignableFrom(cls)) {
+        if (!s.class.isAssignableFrom(cls) && (cls2 = f31750a) != null && !cls2.isAssignableFrom(cls)) {
             throw new IllegalArgumentException("Message classes must extend GeneratedMessageV3 or GeneratedMessageLite");
         }
     }
@@ -137,6 +137,6 @@ public abstract class z0 {
     }
 
     public static d1 m() {
-        return f31185d;
+        return f31753d;
     }
 }

@@ -7,16 +7,16 @@ import x.w1;
 public final class g extends w1.g {
 
     /* renamed from: a  reason: collision with root package name */
-    private final int f54047a;
+    private final int f54615a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Surface f54048b;
+    private final Surface f54616b;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public g(int i10, Surface surface) {
-        this.f54047a = i10;
+        this.f54615a = i10;
         if (surface != null) {
-            this.f54048b = surface;
+            this.f54616b = surface;
             return;
         }
         throw new NullPointerException("Null surface");
@@ -24,12 +24,12 @@ public final class g extends w1.g {
 
     @Override // x.w1.g
     public int a() {
-        return this.f54047a;
+        return this.f54615a;
     }
 
     @Override // x.w1.g
     public Surface b() {
-        return this.f54048b;
+        return this.f54616b;
     }
 
     public boolean equals(Object obj) {
@@ -38,7 +38,7 @@ public final class g extends w1.g {
         }
         if (obj instanceof w1.g) {
             w1.g gVar = (w1.g) obj;
-            if (this.f54047a == gVar.a() && this.f54048b.equals(gVar.b())) {
+            if (this.f54615a == gVar.a() && this.f54616b.equals(gVar.b())) {
                 return true;
             }
         }
@@ -46,10 +46,10 @@ public final class g extends w1.g {
     }
 
     public int hashCode() {
-        return ((this.f54047a ^ 1000003) * 1000003) ^ this.f54048b.hashCode();
+        return ((this.f54615a ^ 1000003) * 1000003) ^ this.f54616b.hashCode();
     }
 
     public String toString() {
-        return "Result{resultCode=" + this.f54047a + ", surface=" + this.f54048b + "}";
+        return "Result{resultCode=" + this.f54615a + ", surface=" + this.f54616b + "}";
     }
 }

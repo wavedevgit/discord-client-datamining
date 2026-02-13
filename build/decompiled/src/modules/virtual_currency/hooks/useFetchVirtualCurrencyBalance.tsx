@@ -66,29 +66,29 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4[1] = var1;
         var4[2] = var2;
         var0 = function() { // Environment: var0
-            _fun61163: for (var _fun61163_ip = 0;;) switch (_fun61163_ip) {
+            _fun76037: for (var _fun76037_ip = 0;;) switch (_fun76037_ip) {
                 case 0:
                     var0 = _closure2_slot0;
                     var3 = null;
                     var0 = var3 !== var0;
                     if (var0) {
-                        _fun61163_ip = 24;
-                        continue _fun61163
+                        _fun76037_ip = 24;
+                        continue _fun76037
                     }
                 case 16:
                     var2 = _closure2_slot2;
                     var0 = var3 !== var2;
                 case 24:
                     if (var0) {
-                        _fun61163_ip = 31;
-                        continue _fun61163
+                        _fun76037_ip = 31;
+                        continue _fun76037
                     }
                 case 27:
                     var0 = _closure2_slot1;
                 case 31:
                     if (var0) {
-                        _fun61163_ip = 69;
-                        continue _fun61163
+                        _fun76037_ip = 69;
+                        continue _fun76037
                     }
                 case 34:
                     var2 = _closure1_slot0;
@@ -113,4 +113,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useFetchVirtualCurrencyBalance = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 7614, 566, 7615, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 9611, 566, 9612, 2]);

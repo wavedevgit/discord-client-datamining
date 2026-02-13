@@ -5,30 +5,30 @@ import bj.c;
 final class m5 implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final m5 f42240a = new m5();
+    static final m5 f42808a = new m5();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final bj.c f42241b;
+    private static final bj.c f42809b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final bj.c f42242c;
+    private static final bj.c f42810c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final bj.c f42243d;
+    private static final bj.c f42811d;
 
     static {
         c.b a10 = bj.c.a("detectorMode");
         f fVar = new f();
         fVar.a(1);
-        f42241b = a10.b(fVar.b()).a();
+        f42809b = a10.b(fVar.b()).a();
         c.b a11 = bj.c.a("streamModeSmoothingRatio");
         f fVar2 = new f();
         fVar2.a(2);
-        f42242c = a11.b(fVar2.b()).a();
+        f42810c = a11.b(fVar2.b()).a();
         c.b a12 = bj.c.a("rawSizeMaskEnabled");
         f fVar3 = new f();
         fVar3.a(3);
-        f42243d = a12.b(fVar3.b()).a();
+        f42811d = a12.b(fVar3.b()).a();
     }
 
     private m5() {

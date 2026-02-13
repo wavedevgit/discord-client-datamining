@@ -7,13 +7,13 @@ import net.time4j.f0;
 public abstract class d implements bu.k {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final long f37316a = f0.H0(1645, 1, 28).i();
+    private static final long f37884a = f0.H0(1645, 1, 28).i();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final long f37317b = f0.H0(3000, 1, 27).i();
+    private static final long f37885b = f0.H0(3000, 1, 27).i();
 
     /* renamed from: c  reason: collision with root package name */
-    private static final long f37318c = f0.H0(-2636, 2, 15).i();
+    private static final long f37886c = f0.H0(-2636, 2, 15).i();
 
     private long f(int i10, int i11, h hVar) {
         long p10 = p(q(i10, i11) + ((hVar.getNumber() - 1) * 29));
@@ -79,12 +79,12 @@ public abstract class d implements bu.k {
 
     @Override // bu.k
     public final long a() {
-        return f37317b;
+        return f37885b;
     }
 
     @Override // bu.k
     public long d() {
-        return f37316a;
+        return f37884a;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -147,7 +147,7 @@ public abstract class d implements bu.k {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final long q(int i10, int i11) {
-        return s((long) Math.floor(f37318c + (((((i10 - 1) * 60) + i11) - 0.5d) * 365.242189d)));
+        return s((long) Math.floor(f37886c + (((((i10 - 1) * 60) + i11) - 0.5d) * 365.242189d)));
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -187,7 +187,7 @@ public abstract class d implements bu.k {
         if (d10 != 0) {
             i10 = d10;
         }
-        long floor = (long) Math.floor((1.5d - (i10 / 12.0d)) + ((j10 - f37318c) / 365.242189d));
+        long floor = (long) Math.floor((1.5d - (i10 / 12.0d)) + ((j10 - f37886c) / 365.242189d));
         int i11 = 60;
         int b10 = ((int) zt.c.b(floor - 1, 60)) + 1;
         int d11 = zt.c.d(floor, 60);

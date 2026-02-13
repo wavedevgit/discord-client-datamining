@@ -122,7 +122,7 @@ public final class ChannelSelectComponent extends SearchableSelectComponent {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final /* synthetic */ KSerializer _childSerializers$_anonymous_$0() {
-        return new tt.f(p0.f50049a);
+        return new tt.f(p0.f50617a);
     }
 
     public static /* synthetic */ ChannelSelectComponent copy$default(ChannelSelectComponent channelSelectComponent, int i10, String str, ActionComponentState actionComponentState, String str2, String str3, String str4, int i11, int i12, boolean z10, List list, List list2, int i13, Object obj) {
@@ -180,10 +180,10 @@ public final class ChannelSelectComponent extends SearchableSelectComponent {
         compositeEncoder.k(serialDescriptor, 2, ActionComponentState.Serializer.INSTANCE, channelSelectComponent.getState());
         compositeEncoder.y(serialDescriptor, 3, channelSelectComponent.getCustomId());
         if (compositeEncoder.z(serialDescriptor, 4) || channelSelectComponent.getPlaceholder() != null) {
-            compositeEncoder.o(serialDescriptor, 4, n2.f50033a, channelSelectComponent.getPlaceholder());
+            compositeEncoder.o(serialDescriptor, 4, n2.f50601a, channelSelectComponent.getPlaceholder());
         }
         if (compositeEncoder.z(serialDescriptor, 5) || channelSelectComponent.getAccessibilityLabel() != null) {
-            compositeEncoder.o(serialDescriptor, 5, n2.f50033a, channelSelectComponent.getAccessibilityLabel());
+            compositeEncoder.o(serialDescriptor, 5, n2.f50601a, channelSelectComponent.getAccessibilityLabel());
         }
         compositeEncoder.w(serialDescriptor, 6, channelSelectComponent.getMinValues());
         compositeEncoder.w(serialDescriptor, 7, channelSelectComponent.getMaxValues());

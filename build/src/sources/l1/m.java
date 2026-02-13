@@ -7,90 +7,90 @@ import java.util.ArrayList;
 public class m {
 
     /* renamed from: h  reason: collision with root package name */
-    public static int f35461h;
+    public static int f36029h;
 
     /* renamed from: c  reason: collision with root package name */
-    p f35464c;
+    p f36032c;
 
     /* renamed from: d  reason: collision with root package name */
-    p f35465d;
+    p f36033d;
 
     /* renamed from: f  reason: collision with root package name */
-    int f35467f;
+    int f36035f;
 
     /* renamed from: g  reason: collision with root package name */
-    int f35468g;
+    int f36036g;
 
     /* renamed from: a  reason: collision with root package name */
-    public int f35462a = 0;
+    public int f36030a = 0;
 
     /* renamed from: b  reason: collision with root package name */
-    public boolean f35463b = false;
+    public boolean f36031b = false;
 
     /* renamed from: e  reason: collision with root package name */
-    ArrayList f35466e = new ArrayList();
+    ArrayList f36034e = new ArrayList();
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public m(p pVar, int i10) {
-        this.f35464c = null;
-        this.f35465d = null;
-        int i11 = f35461h;
-        this.f35467f = i11;
-        f35461h = i11 + 1;
-        this.f35464c = pVar;
-        this.f35465d = pVar;
-        this.f35468g = i10;
+        this.f36032c = null;
+        this.f36033d = null;
+        int i11 = f36029h;
+        this.f36035f = i11;
+        f36029h = i11 + 1;
+        this.f36032c = pVar;
+        this.f36033d = pVar;
+        this.f36036g = i10;
     }
 
     private long c(f fVar, long j10) {
-        p pVar = fVar.f35437d;
+        p pVar = fVar.f36005d;
         if (pVar instanceof k) {
             return j10;
         }
-        int size = fVar.f35444k.size();
+        int size = fVar.f36012k.size();
         long j11 = j10;
         for (int i10 = 0; i10 < size; i10++) {
-            d dVar = (d) fVar.f35444k.get(i10);
+            d dVar = (d) fVar.f36012k.get(i10);
             if (dVar instanceof f) {
                 f fVar2 = (f) dVar;
-                if (fVar2.f35437d != pVar) {
-                    j11 = Math.min(j11, c(fVar2, fVar2.f35439f + j10));
+                if (fVar2.f36005d != pVar) {
+                    j11 = Math.min(j11, c(fVar2, fVar2.f36007f + j10));
                 }
             }
         }
-        if (fVar == pVar.f35494i) {
+        if (fVar == pVar.f36062i) {
             long j12 = j10 - pVar.j();
-            return Math.min(Math.min(j11, c(pVar.f35493h, j12)), j12 - pVar.f35493h.f35439f);
+            return Math.min(Math.min(j11, c(pVar.f36061h, j12)), j12 - pVar.f36061h.f36007f);
         }
         return j11;
     }
 
     private long d(f fVar, long j10) {
-        p pVar = fVar.f35437d;
+        p pVar = fVar.f36005d;
         if (pVar instanceof k) {
             return j10;
         }
-        int size = fVar.f35444k.size();
+        int size = fVar.f36012k.size();
         long j11 = j10;
         for (int i10 = 0; i10 < size; i10++) {
-            d dVar = (d) fVar.f35444k.get(i10);
+            d dVar = (d) fVar.f36012k.get(i10);
             if (dVar instanceof f) {
                 f fVar2 = (f) dVar;
-                if (fVar2.f35437d != pVar) {
-                    j11 = Math.max(j11, d(fVar2, fVar2.f35439f + j10));
+                if (fVar2.f36005d != pVar) {
+                    j11 = Math.max(j11, d(fVar2, fVar2.f36007f + j10));
                 }
             }
         }
-        if (fVar == pVar.f35493h) {
+        if (fVar == pVar.f36061h) {
             long j12 = j10 + pVar.j();
-            return Math.max(Math.max(j11, d(pVar.f35494i, j12)), j12 - pVar.f35494i.f35439f);
+            return Math.max(Math.max(j11, d(pVar.f36062i, j12)), j12 - pVar.f36062i.f36007f);
         }
         return j11;
     }
 
     public void a(p pVar) {
-        this.f35466e.add(pVar);
-        this.f35465d = pVar;
+        this.f36034e.add(pVar);
+        this.f36033d = pVar;
     }
 
     public long b(ConstraintWidgetContainer constraintWidgetContainer, int i10) {
@@ -102,10 +102,10 @@ public class m {
         f fVar;
         f fVar2;
         p pVar4;
-        p pVar5 = this.f35464c;
+        p pVar5 = this.f36032c;
         long j11 = 0;
         if (pVar5 instanceof c) {
-            if (((c) pVar5).f35491f != i10) {
+            if (((c) pVar5).f36059f != i10) {
                 return 0L;
             }
         } else if (i10 == 0) {
@@ -120,45 +120,45 @@ public class m {
         } else {
             pVar = constraintWidgetContainer.f2405f;
         }
-        f fVar3 = pVar.f35493h;
+        f fVar3 = pVar.f36061h;
         if (i10 == 0) {
             pVar2 = constraintWidgetContainer.f2403e;
         } else {
             pVar2 = constraintWidgetContainer.f2405f;
         }
-        f fVar4 = pVar2.f35494i;
-        boolean contains = pVar5.f35493h.f35445l.contains(fVar3);
-        boolean contains2 = this.f35464c.f35494i.f35445l.contains(fVar4);
-        long j12 = this.f35464c.j();
+        f fVar4 = pVar2.f36062i;
+        boolean contains = pVar5.f36061h.f36013l.contains(fVar3);
+        boolean contains2 = this.f36032c.f36062i.f36013l.contains(fVar4);
+        long j12 = this.f36032c.j();
         if (contains && contains2) {
-            long d10 = d(this.f35464c.f35493h, 0L);
-            long c10 = c(this.f35464c.f35494i, 0L);
+            long d10 = d(this.f36032c.f36061h, 0L);
+            long c10 = c(this.f36032c.f36062i, 0L);
             long j13 = d10 - j12;
-            p pVar6 = this.f35464c;
-            int i12 = pVar6.f35494i.f35439f;
+            p pVar6 = this.f36032c;
+            int i12 = pVar6.f36062i.f36007f;
             if (j13 >= (-i12)) {
                 j13 += i12;
             }
-            int i13 = pVar6.f35493h.f35439f;
+            int i13 = pVar6.f36061h.f36007f;
             long j14 = ((-c10) - j12) - i13;
             if (j14 >= i13) {
                 j14 -= i13;
             }
-            float q10 = pVar6.f35487b.q(i10);
+            float q10 = pVar6.f36055b.q(i10);
             if (q10 > 0.0f) {
                 j11 = (((float) j14) / q10) + (((float) j13) / (1.0f - q10));
             }
             float f10 = (float) j11;
             long j15 = (f10 * q10) + 0.5f + j12 + (f10 * (1.0f - q10)) + 0.5f;
-            j10 = pVar4.f35493h.f35439f + j15;
-            i11 = this.f35464c.f35494i.f35439f;
+            j10 = pVar4.f36061h.f36007f + j15;
+            i11 = this.f36032c.f36062i.f36007f;
         } else if (contains) {
-            return Math.max(d(this.f35464c.f35493h, fVar2.f35439f), this.f35464c.f35493h.f35439f + j12);
+            return Math.max(d(this.f36032c.f36061h, fVar2.f36007f), this.f36032c.f36061h.f36007f + j12);
         } else if (contains2) {
-            return Math.max(-c(this.f35464c.f35494i, fVar.f35439f), (-this.f35464c.f35494i.f35439f) + j12);
+            return Math.max(-c(this.f36032c.f36062i, fVar.f36007f), (-this.f36032c.f36062i.f36007f) + j12);
         } else {
-            j10 = pVar3.f35493h.f35439f + this.f35464c.j();
-            i11 = this.f35464c.f35494i.f35439f;
+            j10 = pVar3.f36061h.f36007f + this.f36032c.j();
+            i11 = this.f36032c.f36062i.f36007f;
         }
         return j10 - i11;
     }

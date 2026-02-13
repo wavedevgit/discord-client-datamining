@@ -38,7 +38,7 @@ public /* synthetic */ class SecureFramesStateUpdateCallbackEvent$$serializer im
     @Override // tt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        return new KSerializer[]{p0.f50049a, n2.f50033a};
+        return new KSerializer[]{p0.f50617a, n2.f50601a};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy

@@ -23,26 +23,26 @@ public abstract class s1 {
         if (attributes != null) {
             String label = attributes.getLabel();
             if (label != null) {
-                c10.f48257c.setHint(label);
+                c10.f48825c.setHint(label);
             }
             String placeholder = attributes.getPlaceholder();
             if (placeholder != null) {
-                c10.f48257c.setPlaceholderText(placeholder);
-                TextInputLayout inputLayout = c10.f48257c;
+                c10.f48825c.setPlaceholderText(placeholder);
+                TextInputLayout inputLayout = c10.f48825c;
                 Intrinsics.checkNotNullExpressionValue(inputLayout, "inputLayout");
                 lq.o.a(inputLayout);
             }
             Integer precision = attributes.getPrecision();
             if (precision != null) {
                 int intValue = precision.intValue();
-                EditText editText = c10.f48257c.getEditText();
+                EditText editText = c10.f48825c.getEditText();
                 if (editText != null) {
                     editText.setFilters(new u[]{new u(intValue)});
                 }
             }
         }
-        c10.f48256b.setText(String.valueOf(inputNumberComponent.b().b()));
-        TextInputEditText editText2 = c10.f48256b;
+        c10.f48824b.setText(String.valueOf(inputNumberComponent.b().b()));
+        TextInputEditText editText2 = c10.f48824b;
         Intrinsics.checkNotNullExpressionValue(editText2, "editText");
         editText2.addTextChangedListener(new a(inputNumberComponent));
         uiComponentHelper.d(new Function0() { // from class: pq.r1
@@ -62,28 +62,28 @@ public abstract class s1 {
     public static final Unit c(InputNumber inputNumber, sq.k kVar) {
         InputTextBasedComponentStyle styles = inputNumber.getStyles();
         if (styles != null) {
-            TextInputLayout inputLayout = kVar.f48257c;
+            TextInputLayout inputLayout = kVar.f48825c;
             Intrinsics.checkNotNullExpressionValue(inputLayout, "inputLayout");
             uq.a0.k(inputLayout, styles);
         }
-        return Unit.f31988a;
+        return Unit.f32556a;
     }
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements TextWatcher {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ InputNumberComponent f43093d;
+        final /* synthetic */ InputNumberComponent f43661d;
 
         public a(InputNumberComponent inputNumberComponent) {
-            this.f43093d = inputNumberComponent;
+            this.f43661d = inputNumberComponent;
         }
 
         @Override // android.text.TextWatcher
         public void afterTextChanged(Editable editable) {
             Double d10;
             String obj;
-            qq.i b10 = this.f43093d.b();
+            qq.i b10 = this.f43661d.b();
             if (editable != null && (obj = editable.toString()) != null) {
                 d10 = StringsKt.p(obj);
             } else {

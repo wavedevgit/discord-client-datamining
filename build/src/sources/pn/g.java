@@ -14,52 +14,52 @@ import pn.g;
 public final class g {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ThemedReactContext f42807a;
+    private final ThemedReactContext f43375a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final d f42808b;
+    private final d f43376b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final float f42809c;
+    private final float f43377c;
 
     /* renamed from: d  reason: collision with root package name */
-    private BottomSheetBehavior.g f42810d;
+    private BottomSheetBehavior.g f43378d;
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a extends BottomSheetBehavior.g {
 
         /* renamed from: a  reason: collision with root package name */
-        private final Screen f42811a;
+        private final Screen f43379a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final View f42812b;
+        private final View f43380b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final float f42813c;
+        private final float f43381c;
 
         /* renamed from: d  reason: collision with root package name */
-        private float f42814d;
+        private float f43382d;
 
         /* renamed from: e  reason: collision with root package name */
-        private float f42815e;
+        private float f43383e;
 
         /* renamed from: f  reason: collision with root package name */
-        private float f42816f;
+        private float f43384f;
 
         /* renamed from: g  reason: collision with root package name */
-        private final ValueAnimator f42817g;
+        private final ValueAnimator f43385g;
 
         public a(Screen screen, View viewToAnimate, float f10) {
             Intrinsics.checkNotNullParameter(screen, "screen");
             Intrinsics.checkNotNullParameter(viewToAnimate, "viewToAnimate");
-            this.f42811a = screen;
-            this.f42812b = viewToAnimate;
-            this.f42813c = f10;
-            this.f42814d = f(screen.getSheetLargestUndimmedDetentIndex());
+            this.f43379a = screen;
+            this.f43380b = viewToAnimate;
+            this.f43381c = f10;
+            this.f43382d = f(screen.getSheetLargestUndimmedDetentIndex());
             float f11 = f(kotlin.ranges.d.m(screen.getSheetLargestUndimmedDetentIndex() + 1, 0, screen.getSheetDetents().d() - 1));
-            this.f42815e = f11;
-            this.f42816f = f11 - this.f42814d;
+            this.f43383e = f11;
+            this.f43384f = f11 - this.f43382d;
             ValueAnimator ofFloat = ValueAnimator.ofFloat(0.0f, f10);
             ofFloat.setDuration(1L);
             ofFloat.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() { // from class: pn.f
@@ -68,20 +68,20 @@ public final class g {
                     g.a.e(g.a.this, valueAnimator);
                 }
             });
-            this.f42817g = ofFloat;
+            this.f43385g = ofFloat;
         }
 
         /* JADX INFO: Access modifiers changed from: private */
         public static final void e(a aVar, ValueAnimator it) {
             Intrinsics.checkNotNullParameter(it, "it");
-            View view = aVar.f42812b;
+            View view = aVar.f43380b;
             Object animatedValue = it.getAnimatedValue();
             Intrinsics.checkNotNull(animatedValue, "null cannot be cast to non-null type kotlin.Float");
             view.setAlpha(((Float) animatedValue).floatValue());
         }
 
         private final float f(int i10) {
-            int d10 = this.f42811a.getSheetDetents().d();
+            int d10 = this.f43379a.getSheetDetents().d();
             if (d10 != 1) {
                 if (d10 != 2) {
                     if (d10 != 3 || i10 == -1) {
@@ -96,7 +96,7 @@ public final class g {
                         }
                         return -1.0f;
                     }
-                    BottomSheetBehavior<Screen> sheetBehavior = this.f42811a.getSheetBehavior();
+                    BottomSheetBehavior<Screen> sheetBehavior = this.f43379a.getSheetBehavior();
                     Intrinsics.checkNotNull(sheetBehavior);
                     return sheetBehavior.t0();
                 } else if (i10 == -1) {
@@ -120,9 +120,9 @@ public final class g {
         @Override // com.google.android.material.bottomsheet.BottomSheetBehavior.g
         public void b(View bottomSheet, float f10) {
             Intrinsics.checkNotNullParameter(bottomSheet, "bottomSheet");
-            float f11 = this.f42814d;
-            if (f11 < f10 && f10 < this.f42815e) {
-                this.f42817g.setCurrentFraction((f10 - f11) / this.f42816f);
+            float f11 = this.f43382d;
+            if (f11 < f10 && f10 < this.f43383e) {
+                this.f43385g.setCurrentFraction((f10 - f11) / this.f43384f);
             }
         }
 
@@ -132,23 +132,23 @@ public final class g {
             if (i10 != 1 && i10 != 2) {
                 return;
             }
-            this.f42814d = f(this.f42811a.getSheetLargestUndimmedDetentIndex());
-            float f10 = f(kotlin.ranges.d.m(this.f42811a.getSheetLargestUndimmedDetentIndex() + 1, 0, this.f42811a.getSheetDetents().d() - 1));
-            this.f42815e = f10;
-            this.f42816f = f10 - this.f42814d;
+            this.f43382d = f(this.f43379a.getSheetLargestUndimmedDetentIndex());
+            float f10 = f(kotlin.ranges.d.m(this.f43379a.getSheetLargestUndimmedDetentIndex() + 1, 0, this.f43379a.getSheetDetents().d() - 1));
+            this.f43383e = f10;
+            this.f43384f = f10 - this.f43382d;
         }
     }
 
     public g(ThemedReactContext reactContext, Screen screen) {
         Intrinsics.checkNotNullParameter(reactContext, "reactContext");
         Intrinsics.checkNotNullParameter(screen, "screen");
-        this.f42807a = reactContext;
-        this.f42808b = b(screen);
-        this.f42809c = 0.3f;
+        this.f43375a = reactContext;
+        this.f43376b = b(screen);
+        this.f43377c = 0.3f;
     }
 
     private final d b(final Screen screen) {
-        d dVar = new d(this.f42807a, this.f42809c);
+        d dVar = new d(this.f43375a, this.f43377c);
         dVar.setLayoutParams(new ViewGroup.LayoutParams(-1, -1));
         dVar.setOnClickListener(new View.OnClickListener() { // from class: pn.e
             @Override // android.view.View.OnClickListener
@@ -169,24 +169,24 @@ public final class g {
     }
 
     private final BottomSheetBehavior.g i(Screen screen, boolean z10) {
-        if (this.f42810d == null || z10) {
-            this.f42810d = new a(screen, this.f42808b, this.f42809c);
+        if (this.f43378d == null || z10) {
+            this.f43378d = new a(screen, this.f43376b, this.f43377c);
         }
-        BottomSheetBehavior.g gVar = this.f42810d;
+        BottomSheetBehavior.g gVar = this.f43378d;
         Intrinsics.checkNotNull(gVar);
         return gVar;
     }
 
     public final d d() {
-        return this.f42808b;
+        return this.f43376b;
     }
 
     public final float e() {
-        return this.f42809c;
+        return this.f43377c;
     }
 
     public final void f(BottomSheetBehavior bottomSheetBehavior) {
-        BottomSheetBehavior.g gVar = this.f42810d;
+        BottomSheetBehavior.g gVar = this.f43378d;
         if (gVar != null && bottomSheetBehavior != null) {
             bottomSheetBehavior.J0(gVar);
         }
@@ -201,11 +201,11 @@ public final class g {
     public final void h(Screen screen, ViewGroup root) {
         Intrinsics.checkNotNullParameter(screen, "screen");
         Intrinsics.checkNotNullParameter(root, "root");
-        root.addView(this.f42808b, 0);
+        root.addView(this.f43376b, 0);
         if (!j(screen, screen.getSheetInitialDetentIndex())) {
-            this.f42808b.setAlpha(0.0f);
+            this.f43376b.setAlpha(0.0f);
         } else {
-            this.f42808b.setAlpha(this.f42809c);
+            this.f43376b.setAlpha(this.f43377c);
         }
     }
 

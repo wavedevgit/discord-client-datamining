@@ -74,7 +74,7 @@ public final class AudioAttributes implements com.google.android.exoplayer2.g {
 
         private d(AudioAttributes audioAttributes) {
             AudioAttributes.Builder usage = new AudioAttributes.Builder().setContentType(audioAttributes.f12799d).setFlags(audioAttributes.f12800e).setUsage(audioAttributes.f12801i);
-            int i10 = w0.f39038a;
+            int i10 = w0.f39606a;
             if (i10 >= 29) {
                 b.a(usage, audioAttributes.f12802o);
             }

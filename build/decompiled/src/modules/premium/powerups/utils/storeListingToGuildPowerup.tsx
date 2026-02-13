@@ -37,7 +37,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/premium/powerups/utils/storeListingToGuildPowerup.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0, arg1() {
-        _fun60409: for (var _fun60409_ip = 0;;) switch (_fun60409_ip) {
+        _fun79034: for (var _fun79034_ip = 0;;) switch (_fun79034_ip) {
             case 0:
                 var16 = arg0;
                 var1 = arg1;
@@ -47,30 +47,30 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = undefined;
                 var5 = undefined;
                 if (var3) {
-                    _fun60409_ip = 35;
-                    continue _fun60409
+                    _fun79034_ip = 35;
+                    continue _fun79034
                 }
             case 27:
                 var5 = var2.category_type;
             case 35:
                 if (!(var15 != var5)) {
-                    _fun60409_ip = 274;
-                    continue _fun60409
+                    _fun79034_ip = 274;
+                    continue _fun79034
                 }
             case 42:
                 var2 = var1.sku;
                 var4 = var15 == var2;
                 var3 = undefined;
                 if (var4) {
-                    _fun60409_ip = 63;
-                    continue _fun60409
+                    _fun79034_ip = 63;
+                    continue _fun79034
                 }
             case 57:
                 var3 = var2.powerup_metadata;
             case 63:
                 if (!(var15 != var3)) {
-                    _fun60409_ip = 274;
-                    continue _fun60409
+                    _fun79034_ip = 274;
+                    continue _fun79034
                 }
             case 70:
                 var2 = {};
@@ -84,13 +84,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var1.sku;
                 var3 = var3.dependent_sku_id;
                 if (!(var15 == var3)) {
-                    _fun60409_ip = 131;
-                    continue _fun60409
+                    _fun79034_ip = 131;
+                    continue _fun79034
                 }
             case 125:
                 var3 = new Array(0);
-                _fun60409_ip = 154;
-                continue _fun60409;
+                _fun79034_ip = 154;
+                continue _fun79034;
             case 131:
                 var4 = var1.sku;
                 var6 = var4.dependent_sku_id;
@@ -103,8 +103,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var15 == var4;
                 var3 = undefined;
                 if (var6) {
-                    _fun60409_ip = 182;
-                    continue _fun60409
+                    _fun79034_ip = 182;
+                    continue _fun79034
                 }
             case 174:
                 var3 = var4.animated_image_url;
@@ -114,8 +114,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var15 == var4;
                 var3 = undefined;
                 if (var6) {
-                    _fun60409_ip = 210;
-                    continue _fun60409
+                    _fun79034_ip = 210;
+                    continue _fun79034
                 }
             case 202:
                 var3 = var4.static_image_url;
@@ -125,8 +125,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var15 == var4;
                 var3 = undefined;
                 if (var6) {
-                    _fun60409_ip = 238;
-                    continue _fun60409
+                    _fun79034_ip = 238;
+                    continue _fun79034
                 }
             case 230:
                 var3 = var4.store_removal_date;
@@ -135,15 +135,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = _closure1_slot2;
                 var4 = var4.LEVEL;
                 if (!(var4 !== var5)) {
-                    _fun60409_ip = 327;
-                    continue _fun60409
+                    _fun79034_ip = 327;
+                    continue _fun79034
                 }
             case 260:
                 var4 = _closure1_slot2;
                 var4 = var4.PERK;
                 if (!(var4 !== var5)) {
-                    _fun60409_ip = 276;
-                    continue _fun60409
+                    _fun79034_ip = 276;
+                    continue _fun79034
                 }
             case 274:
                 return var0;
@@ -156,8 +156,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var15 != var6;
                 var5 = '';
                 if (!var7) {
-                    _fun60409_ip = 311;
-                    continue _fun60409
+                    _fun79034_ip = 311;
+                    continue _fun79034
                 }
             case 308:
                 var5 = var6;
@@ -173,15 +173,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var15 == var5;
                 var4 = undefined;
                 if (var6) {
-                    _fun60409_ip = 354;
-                    continue _fun60409
+                    _fun79034_ip = 354;
+                    continue _fun79034
                 }
             case 348:
                 var4 = var5.guild_features;
             case 354:
                 if (!(var15 != var4)) {
-                    _fun60409_ip = 845;
-                    continue _fun60409
+                    _fun79034_ip = 847;
+                    continue _fun79034
                 }
             case 361:
                 var6 = _closure1_slot3;
@@ -204,8 +204,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var12;
                 var5 = var11;
                 if (!var1) {
-                    _fun60409_ip = 773;
-                    continue _fun60409
+                    _fun79034_ip = 775;
+                    continue _fun79034
                 }
             case 444:
                 var18 = var16.find;
@@ -221,154 +221,154 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var15 == var21;
                 var18 = undefined;
                 if (var1) {
-                    _fun60409_ip = 531;
-                    continue _fun60409
+                    _fun79034_ip = 533;
+                    continue _fun79034
                 }
-            case 468:
+            case 470:
                 var1 = var21.sku;
                 var19 = var15 == var1;
                 var10 = var1;
                 var18 = undefined;
                 if (var19) {
-                    _fun60409_ip = 531;
-                    continue _fun60409
+                    _fun79034_ip = 533;
+                    continue _fun79034
                 }
-            case 486:
+            case 488:
                 var1 = var1.powerup_metadata;
                 var19 = var15 == var1;
                 var10 = var1;
                 var18 = undefined;
                 if (var19) {
-                    _fun60409_ip = 531;
-                    continue _fun60409
+                    _fun79034_ip = 533;
+                    continue _fun79034
                 }
-            case 504:
+            case 506:
                 var19 = var1.guild_features;
                 var1 = var15 == var19;
                 var10 = var19;
                 var18 = undefined;
                 if (var1) {
-                    _fun60409_ip = 531;
-                    continue _fun60409
+                    _fun79034_ip = 533;
+                    continue _fun79034
                 }
-            case 522:
+            case 524:
                 var18 = var19.additional_emoji_slots;
                 var10 = var19;
-            case 531:
+            case 533:
                 var19 = var15 != var18;
                 var1 = 0;
                 if (!var19) {
-                    _fun60409_ip = 543;
-                    continue _fun60409
+                    _fun79034_ip = 545;
+                    continue _fun79034
                 }
-            case 540:
+            case 542:
                 var1 = var18;
-            case 543:
+            case 545:
                 var20 = var13 + var1;
                 var1 = var15 == var21;
                 var18 = undefined;
                 if (var1) {
-                    _fun60409_ip = 619;
-                    continue _fun60409
+                    _fun79034_ip = 621;
+                    continue _fun79034
                 }
-            case 556:
+            case 558:
                 var1 = var21.sku;
                 var19 = var15 == var1;
                 var9 = var1;
                 var18 = undefined;
                 if (var19) {
-                    _fun60409_ip = 619;
-                    continue _fun60409
+                    _fun79034_ip = 621;
+                    continue _fun79034
                 }
-            case 574:
+            case 576:
                 var1 = var1.powerup_metadata;
                 var19 = var15 == var1;
                 var9 = var1;
                 var18 = undefined;
                 if (var19) {
-                    _fun60409_ip = 619;
-                    continue _fun60409
+                    _fun79034_ip = 621;
+                    continue _fun79034
                 }
-            case 592:
+            case 594:
                 var19 = var1.guild_features;
                 var1 = var15 == var19;
                 var9 = var19;
                 var18 = undefined;
                 if (var1) {
-                    _fun60409_ip = 619;
-                    continue _fun60409
+                    _fun79034_ip = 621;
+                    continue _fun79034
                 }
-            case 610:
+            case 612:
                 var18 = var19.additional_sound_slots;
                 var9 = var19;
-            case 619:
+            case 621:
                 var19 = var15 != var18;
                 var1 = 0;
                 if (!var19) {
-                    _fun60409_ip = 631;
-                    continue _fun60409
+                    _fun79034_ip = 633;
+                    continue _fun79034
                 }
-            case 628:
+            case 630:
                 var1 = var18;
-            case 631:
+            case 633:
                 var19 = var12 + var1;
                 var1 = var15 == var21;
                 var18 = undefined;
                 if (var1) {
-                    _fun60409_ip = 707;
-                    continue _fun60409
+                    _fun79034_ip = 709;
+                    continue _fun79034
                 }
-            case 644:
+            case 646:
                 var1 = var21.sku;
                 var22 = var15 == var1;
                 var8 = var1;
                 var18 = undefined;
                 if (var22) {
-                    _fun60409_ip = 707;
-                    continue _fun60409
+                    _fun79034_ip = 709;
+                    continue _fun79034
                 }
-            case 662:
+            case 664:
                 var1 = var1.powerup_metadata;
                 var22 = var15 == var1;
                 var8 = var1;
                 var18 = undefined;
                 if (var22) {
-                    _fun60409_ip = 707;
-                    continue _fun60409
+                    _fun79034_ip = 709;
+                    continue _fun79034
                 }
-            case 680:
+            case 682:
                 var22 = var1.guild_features;
                 var1 = var15 == var22;
                 var8 = var22;
                 var18 = undefined;
                 if (var1) {
-                    _fun60409_ip = 707;
-                    continue _fun60409
+                    _fun79034_ip = 709;
+                    continue _fun79034
                 }
-            case 698:
+            case 700:
                 var18 = var22.additional_sticker_slots;
                 var8 = var22;
-            case 707:
+            case 709:
                 var22 = var15 != var18;
                 var1 = 0;
                 if (!var22) {
-                    _fun60409_ip = 719;
-                    continue _fun60409
+                    _fun79034_ip = 721;
+                    continue _fun79034
                 }
-            case 716:
+            case 718:
                 var1 = var18;
-            case 719:
+            case 721:
                 var18 = var11 + var1;
                 var22 = var15 == var21;
                 var1 = undefined;
                 if (var22) {
-                    _fun60409_ip = 744;
-                    continue _fun60409
+                    _fun79034_ip = 746;
+                    continue _fun79034
                 }
-            case 732:
+            case 734:
                 var21 = var21.sku;
                 var1 = var21.dependent_sku_id;
-            case 744:
+            case 746:
                 _closure2_slot0 = var1;
                 var13 = var20;
                 var12 = var19;
@@ -377,10 +377,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var12;
                 var5 = var11;
                 if (var15 != var1) {
-                    _fun60409_ip = 444;
-                    continue _fun60409
+                    _fun79034_ip = 444;
+                    continue _fun79034
                 }
-            case 773:
+            case 775:
                 var1 = {};
                 var3 = _closure1_slot2;
                 var3 = var3.LEVEL;
@@ -400,10 +400,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var23 = var2;
                 var2 = copyDataProperties(var24, var23);
                 return var1;
-            case 845:
+            case 847:
                 return var0;
         }
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1623, 6811, 1624, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1623, 6793, 1624, 2]);

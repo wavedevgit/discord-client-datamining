@@ -7,7 +7,7 @@ import pv.b;
 public final class a implements cv.b, b {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final a f43227a = new a();
+    public static final a f43795a = new a();
 
     private a() {
     }

@@ -6,43 +6,43 @@ import oe.u0;
 public final class i {
 
     /* renamed from: a  reason: collision with root package name */
-    public final long f51513a;
+    public final long f52081a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final long f51514b;
+    public final long f52082b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final String f51515c;
+    private final String f52083c;
 
     /* renamed from: d  reason: collision with root package name */
-    private int f51516d;
+    private int f52084d;
 
     public i(String str, long j10, long j11) {
-        this.f51515c = str == null ? "" : str;
-        this.f51513a = j10;
-        this.f51514b = j11;
+        this.f52083c = str == null ? "" : str;
+        this.f52081a = j10;
+        this.f52082b = j11;
     }
 
     public i a(i iVar, String str) {
         String c10 = c(str);
         i iVar2 = null;
         if (iVar != null && c10.equals(iVar.c(str))) {
-            long j10 = this.f51514b;
+            long j10 = this.f52082b;
             long j11 = -1;
             if (j10 != -1) {
-                long j12 = this.f51513a;
-                if (j12 + j10 == iVar.f51513a) {
-                    long j13 = iVar.f51514b;
+                long j12 = this.f52081a;
+                if (j12 + j10 == iVar.f52081a) {
+                    long j13 = iVar.f52082b;
                     if (j13 != -1) {
                         j11 = j10 + j13;
                     }
                     return new i(c10, j12, j11);
                 }
             }
-            long j14 = iVar.f51514b;
+            long j14 = iVar.f52082b;
             if (j14 != -1) {
-                long j15 = iVar.f51513a;
-                if (j15 + j14 == this.f51513a) {
+                long j15 = iVar.f52081a;
+                if (j15 + j14 == this.f52081a) {
                     if (j10 != -1) {
                         j11 = j14 + j10;
                     }
@@ -54,11 +54,11 @@ public final class i {
     }
 
     public Uri b(String str) {
-        return u0.e(str, this.f51515c);
+        return u0.e(str, this.f52083c);
     }
 
     public String c(String str) {
-        return u0.d(str, this.f51515c);
+        return u0.d(str, this.f52083c);
     }
 
     public boolean equals(Object obj) {
@@ -67,7 +67,7 @@ public final class i {
         }
         if (obj != null && i.class == obj.getClass()) {
             i iVar = (i) obj;
-            if (this.f51513a == iVar.f51513a && this.f51514b == iVar.f51514b && this.f51515c.equals(iVar.f51515c)) {
+            if (this.f52081a == iVar.f52081a && this.f52082b == iVar.f52082b && this.f52083c.equals(iVar.f52083c)) {
                 return true;
             }
         }
@@ -75,13 +75,13 @@ public final class i {
     }
 
     public int hashCode() {
-        if (this.f51516d == 0) {
-            this.f51516d = ((((527 + ((int) this.f51513a)) * 31) + ((int) this.f51514b)) * 31) + this.f51515c.hashCode();
+        if (this.f52084d == 0) {
+            this.f52084d = ((((527 + ((int) this.f52081a)) * 31) + ((int) this.f52082b)) * 31) + this.f52083c.hashCode();
         }
-        return this.f51516d;
+        return this.f52084d;
     }
 
     public String toString() {
-        return "RangedUri(referenceUri=" + this.f51515c + ", start=" + this.f51513a + ", length=" + this.f51514b + ")";
+        return "RangedUri(referenceUri=" + this.f52083c + ", start=" + this.f52081a + ", length=" + this.f52082b + ")";
     }
 }

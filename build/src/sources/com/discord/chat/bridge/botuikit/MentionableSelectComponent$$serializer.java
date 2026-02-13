@@ -57,9 +57,9 @@ public /* synthetic */ class MentionableSelectComponent$$serializer implements h
     public final KSerializer[] childSerializers() {
         Lazy[] lazyArr;
         lazyArr = MentionableSelectComponent.$childSerializers;
-        p0 p0Var = p0.f50049a;
-        n2 n2Var = n2.f50033a;
-        return new KSerializer[]{p0Var, n2Var, ActionComponentState.Serializer.INSTANCE, n2Var, rt.a.u(n2Var), rt.a.u(n2Var), p0Var, p0Var, tt.h.f49997a, lazyArr[9].getValue()};
+        p0 p0Var = p0.f50617a;
+        n2 n2Var = n2.f50601a;
+        return new KSerializer[]{p0Var, n2Var, ActionComponentState.Serializer.INSTANCE, n2Var, rt.a.u(n2Var), rt.a.u(n2Var), p0Var, p0Var, tt.h.f50565a, lazyArr[9].getValue()};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -88,7 +88,7 @@ public /* synthetic */ class MentionableSelectComponent$$serializer implements h
             i10 = b10.i(serialDescriptor, 0);
             String m10 = b10.m(serialDescriptor, 1);
             String m11 = b10.m(serialDescriptor, 3);
-            n2 n2Var = n2.f50033a;
+            n2 n2Var = n2.f50601a;
             int i17 = b10.i(serialDescriptor, 6);
             int i18 = b10.i(serialDescriptor, 7);
             boolean C = b10.C(serialDescriptor, 8);
@@ -145,12 +145,12 @@ public /* synthetic */ class MentionableSelectComponent$$serializer implements h
                         i14 = 7;
                         break;
                     case 4:
-                        str6 = (String) b10.n(serialDescriptor, 4, n2.f50033a, str6);
+                        str6 = (String) b10.n(serialDescriptor, 4, n2.f50601a, str6);
                         i16 |= 16;
                         i14 = 7;
                         break;
                     case 5:
-                        str5 = (String) b10.n(serialDescriptor, 5, n2.f50033a, str5);
+                        str5 = (String) b10.n(serialDescriptor, 5, n2.f50601a, str5);
                         i16 |= 32;
                         i14 = 7;
                         continue;

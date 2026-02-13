@@ -5,16 +5,16 @@ import bj.c;
 final class s3 implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final s3 f42403a = new s3();
+    static final s3 f42971a = new s3();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final bj.c f42404b;
+    private static final bj.c f42972b;
 
     static {
         c.b a10 = bj.c.a("api");
         f fVar = new f();
         fVar.a(1);
-        f42404b = a10.b(fVar.b()).a();
+        f42972b = a10.b(fVar.b()).a();
     }
 
     private s3() {

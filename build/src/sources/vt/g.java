@@ -7,21 +7,21 @@ import kotlin.jvm.internal.Intrinsics;
 public abstract class g {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ArrayDeque f51898a = new ArrayDeque();
+    private final ArrayDeque f52466a = new ArrayDeque();
 
     /* renamed from: b  reason: collision with root package name */
-    private int f51899b;
+    private int f52467b;
 
     /* JADX INFO: Access modifiers changed from: protected */
     public final void a(byte[] array) {
         Intrinsics.checkNotNullParameter(array, "array");
         synchronized (this) {
             try {
-                if (this.f51899b + array.length < e.a()) {
-                    this.f51899b += array.length / 2;
-                    this.f51898a.addLast(array);
+                if (this.f52467b + array.length < e.a()) {
+                    this.f52467b += array.length / 2;
+                    this.f52466a.addLast(array);
                 }
-                Unit unit = Unit.f31988a;
+                Unit unit = Unit.f32556a;
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -32,9 +32,9 @@ public abstract class g {
     public final byte[] b(int i10) {
         byte[] bArr;
         synchronized (this) {
-            bArr = (byte[]) this.f51898a.q();
+            bArr = (byte[]) this.f52466a.q();
             if (bArr != null) {
-                this.f51899b -= bArr.length / 2;
+                this.f52467b -= bArr.length / 2;
             } else {
                 bArr = null;
             }

@@ -25,14 +25,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = false;
         var _closure2_slot2 = var1;
         var0 = function(arg0) { // Environment: var0
-            _fun93994: for (var _fun93994_ip = 0;;) switch (_fun93994_ip) {
+            _fun94008: for (var _fun94008_ip = 0;;) switch (_fun94008_ip) {
                 case 0:
                     var7 = 0;
                     var1 = copyRestArgs(var7);
                     var2 = _closure2_slot2;
                     if (var2) {
-                        _fun93994_ip = 58;
-                        continue _fun93994
+                        _fun94008_ip = 58;
+                        continue _fun94008
                     }
                 case 16:
                     var2 = true;

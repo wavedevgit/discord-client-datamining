@@ -10,31 +10,31 @@ import oa.n;
 public final class b {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final b f27823a = new b();
+    public static final b f28391a = new b();
 
     /* renamed from: b  reason: collision with root package name */
-    private static boolean f27824b;
+    private static boolean f28392b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static a f27825c;
+    private static a f28393c;
 
     private b() {
     }
 
     public static final a a(PlatformBitmapFactory platformBitmapFactory, n nVar, ma.n nVar2, boolean z10, boolean z11, int i10, int i11, ExecutorService executorService) {
-        if (!f27824b) {
+        if (!f28392b) {
             try {
                 Class cls = Boolean.TYPE;
                 Class cls2 = Integer.TYPE;
                 Object newInstance = AnimatedFactoryV2Impl.class.getConstructor(PlatformBitmapFactory.class, n.class, ma.n.class, cls, cls, cls2, cls2, g.class).newInstance(platformBitmapFactory, nVar, nVar2, Boolean.valueOf(z10), Boolean.valueOf(z11), Integer.valueOf(i10), Integer.valueOf(i11), executorService);
                 Intrinsics.checkNotNull(newInstance, "null cannot be cast to non-null type com.facebook.imagepipeline.animated.factory.AnimatedFactory");
-                f27825c = (a) newInstance;
+                f28393c = (a) newInstance;
             } catch (Throwable unused) {
             }
-            if (f27825c != null) {
-                f27824b = true;
+            if (f28393c != null) {
+                f28392b = true;
             }
         }
-        return f27825c;
+        return f28393c;
     }
 }

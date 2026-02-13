@@ -6,16 +6,16 @@ import kotlin.jvm.functions.Function0;
 public class u implements Function0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final StarProjectionImpl f34752d;
+    private final StarProjectionImpl f35320d;
 
     public u(StarProjectionImpl starProjectionImpl) {
-        this.f34752d = starProjectionImpl;
+        this.f35320d = starProjectionImpl;
     }
 
     @Override // kotlin.jvm.functions.Function0
     public Object invoke() {
         KotlinType a10;
-        a10 = StarProjectionImpl.a(this.f34752d);
+        a10 = StarProjectionImpl.a(this.f35320d);
         return a10;
     }
 }

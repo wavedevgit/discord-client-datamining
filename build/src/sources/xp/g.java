@@ -13,22 +13,22 @@ import wp.x0;
 public final class g implements ViewBinding {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ConstraintLayout f55137a;
+    private final ConstraintLayout f55705a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final ShapeableImageView f55138b;
+    public final ShapeableImageView f55706b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final TextView f55139c;
+    public final TextView f55707c;
 
     private g(ConstraintLayout constraintLayout, ShapeableImageView shapeableImageView, TextView textView) {
-        this.f55137a = constraintLayout;
-        this.f55138b = shapeableImageView;
-        this.f55139c = textView;
+        this.f55705a = constraintLayout;
+        this.f55706b = shapeableImageView;
+        this.f55707c = textView;
     }
 
     public static g a(View view) {
-        int i10 = w0.f53498x;
+        int i10 = w0.f54066x;
         ShapeableImageView shapeableImageView = (ShapeableImageView) e4.a.a(view, i10);
         if (shapeableImageView != null) {
             i10 = w0.C;
@@ -41,7 +41,7 @@ public final class g implements ViewBinding {
     }
 
     public static g c(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z10) {
-        View inflate = layoutInflater.inflate(x0.f53519g, viewGroup, false);
+        View inflate = layoutInflater.inflate(x0.f54087g, viewGroup, false);
         if (z10) {
             viewGroup.addView(inflate);
         }
@@ -51,6 +51,6 @@ public final class g implements ViewBinding {
     @Override // androidx.viewbinding.ViewBinding
     /* renamed from: b */
     public ConstraintLayout getRoot() {
-        return this.f55137a;
+        return this.f55705a;
     }
 }

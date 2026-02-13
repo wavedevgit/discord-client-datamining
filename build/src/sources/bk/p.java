@@ -34,7 +34,7 @@ final class p implements l {
         og.i iVar = new og.i();
         this.f7252c = iVar;
         this.f7251b = context;
-        iVar.f39273d = bVar.a();
+        iVar.f39841d = bVar.a();
         this.f7253d = nkVar;
     }
 
@@ -84,7 +84,7 @@ final class p implements l {
                             }
                         } else {
                             Image.Plane[] planeArr = (Image.Plane[]) q.l(aVar.j());
-                            oVar.f39531d = planeArr[0].getRowStride();
+                            oVar.f40099d = planeArr[0].getRowStride();
                             Y0 = kVar2.X0(tf.b.W0(planeArr[0].getBuffer()), oVar);
                         }
                     } else {

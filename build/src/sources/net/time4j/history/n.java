@@ -5,34 +5,34 @@ package net.time4j.history;
 public abstract class n {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final n f37565d;
+    public static final n f38133d;
 
     /* renamed from: e  reason: collision with root package name */
-    public static final n f37566e;
+    public static final n f38134e;
 
     /* renamed from: i  reason: collision with root package name */
-    public static final n f37567i;
+    public static final n f38135i;
 
     /* renamed from: o  reason: collision with root package name */
-    public static final n f37568o;
+    public static final n f38136o;
 
     /* renamed from: p  reason: collision with root package name */
-    public static final n f37569p;
+    public static final n f38137p;
 
     /* renamed from: q  reason: collision with root package name */
-    public static final n f37570q;
+    public static final n f38138q;
 
     /* renamed from: r  reason: collision with root package name */
-    public static final n f37571r;
+    public static final n f38139r;
 
     /* renamed from: s  reason: collision with root package name */
-    public static final n f37572s;
+    public static final n f38140s;
 
     /* renamed from: t  reason: collision with root package name */
-    public static final n f37573t;
+    public static final n f38141t;
 
     /* renamed from: u  reason: collision with root package name */
-    private static final /* synthetic */ n[] f37574u;
+    private static final /* synthetic */ n[] f38142u;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     enum a extends n {
@@ -53,14 +53,14 @@ public abstract class n {
 
     static {
         a aVar = new a("BEGIN_OF_JANUARY", 0);
-        f37565d = aVar;
+        f38133d = aVar;
         n nVar = new n("BEGIN_OF_MARCH", 1) { // from class: net.time4j.history.n.b
             @Override // net.time4j.history.n
             net.time4j.history.h d(j jVar, int i10) {
                 return net.time4j.history.h.i(jVar, i10, 3, 1);
             }
         };
-        f37566e = nVar;
+        f38134e = nVar;
         n nVar2 = new n("BEGIN_OF_SEPTEMBER", 2) { // from class: net.time4j.history.n.c
             @Override // net.time4j.history.n
             int a(o oVar, net.time4j.history.h hVar) {
@@ -78,7 +78,7 @@ public abstract class n {
                 return net.time4j.history.h.i(jVar, i10 - 1, 9, 1);
             }
         };
-        f37567i = nVar2;
+        f38135i = nVar2;
         n nVar3 = new n("CHRISTMAS_STYLE", 3) { // from class: net.time4j.history.n.d
             @Override // net.time4j.history.n
             int a(o oVar, net.time4j.history.h hVar) {
@@ -95,7 +95,7 @@ public abstract class n {
                 return net.time4j.history.h.i(jVar, i10 - 1, 12, 25);
             }
         };
-        f37568o = nVar3;
+        f38136o = nVar3;
         n nVar4 = new n("EASTER_STYLE", 4) { // from class: net.time4j.history.n.e
             @Override // net.time4j.history.n
             net.time4j.history.h d(j jVar, int i10) {
@@ -111,7 +111,7 @@ public abstract class n {
                 return net.time4j.history.h.i(jVar, i10, i11, i12);
             }
         };
-        f37569p = nVar4;
+        f38137p = nVar4;
         n nVar5 = new n("GOOD_FRIDAY", 5) { // from class: net.time4j.history.n.f
             @Override // net.time4j.history.n
             net.time4j.history.h d(j jVar, int i10) {
@@ -127,14 +127,14 @@ public abstract class n {
                 return net.time4j.history.h.i(jVar, i10, i11, i12);
             }
         };
-        f37570q = nVar5;
+        f38138q = nVar5;
         n nVar6 = new n("MARIA_ANUNCIATA", 6) { // from class: net.time4j.history.n.g
             @Override // net.time4j.history.n
             net.time4j.history.h d(j jVar, int i10) {
                 return net.time4j.history.h.i(jVar, i10, 3, 25);
             }
         };
-        f37571r = nVar6;
+        f38139r = nVar6;
         n nVar7 = new n("CALCULUS_PISANUS", 7) { // from class: net.time4j.history.n.h
             @Override // net.time4j.history.n
             int a(o oVar, net.time4j.history.h hVar) {
@@ -148,23 +148,23 @@ public abstract class n {
 
             @Override // net.time4j.history.n
             net.time4j.history.h d(j jVar, int i10) {
-                return n.f37571r.d(jVar, i10 + 1);
+                return n.f38139r.d(jVar, i10 + 1);
             }
 
             @Override // net.time4j.history.n
             int e(boolean z10, o oVar, j jVar, int i10, int i11, int i12) {
-                return n.f37571r.e(z10, oVar, jVar, i10 + 1, i11, i12);
+                return n.f38139r.e(z10, oVar, jVar, i10 + 1, i11, i12);
             }
         };
-        f37572s = nVar7;
+        f38140s = nVar7;
         n nVar8 = new n("EPIPHANY", 8) { // from class: net.time4j.history.n.i
             @Override // net.time4j.history.n
             net.time4j.history.h d(j jVar, int i10) {
                 return net.time4j.history.h.i(jVar, i10, 1, 6);
             }
         };
-        f37573t = nVar8;
-        f37574u = new n[]{aVar, nVar, nVar2, nVar3, nVar4, nVar5, nVar6, nVar7, nVar8};
+        f38141t = nVar8;
+        f38142u = new n[]{aVar, nVar, nVar2, nVar3, nVar4, nVar5, nVar6, nVar7, nVar8};
     }
 
     private n(String str, int i10) {
@@ -175,7 +175,7 @@ public abstract class n {
     }
 
     public static n[] values() {
-        return (n[]) f37574u.clone();
+        return (n[]) f38142u.clone();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -284,7 +284,7 @@ public abstract class n {
     public o f(int i10) {
         if (i10 > 567) {
             o oVar = new o(this, i10);
-            n nVar = f37565d;
+            n nVar = f38133d;
             if (this != nVar) {
                 return new o(nVar, 567).b(oVar);
             }

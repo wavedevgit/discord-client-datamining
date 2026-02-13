@@ -9,115 +9,115 @@ import java.util.Map;
 public class i {
 
     /* renamed from: c  reason: collision with root package name */
-    private Map f35626c;
+    private Map f36194c;
 
     /* renamed from: d  reason: collision with root package name */
-    private Map f35627d;
+    private Map f36195d;
 
     /* renamed from: e  reason: collision with root package name */
-    private float f35628e;
+    private float f36196e;
 
     /* renamed from: f  reason: collision with root package name */
-    private Map f35629f;
+    private Map f36197f;
 
     /* renamed from: g  reason: collision with root package name */
-    private List f35630g;
+    private List f36198g;
 
     /* renamed from: h  reason: collision with root package name */
-    private SparseArrayCompat f35631h;
+    private SparseArrayCompat f36199h;
 
     /* renamed from: i  reason: collision with root package name */
-    private u0.j f35632i;
+    private u0.j f36200i;
 
     /* renamed from: j  reason: collision with root package name */
-    private List f35633j;
+    private List f36201j;
 
     /* renamed from: k  reason: collision with root package name */
-    private Rect f35634k;
+    private Rect f36202k;
 
     /* renamed from: l  reason: collision with root package name */
-    private float f35635l;
+    private float f36203l;
 
     /* renamed from: m  reason: collision with root package name */
-    private float f35636m;
+    private float f36204m;
 
     /* renamed from: n  reason: collision with root package name */
-    private float f35637n;
+    private float f36205n;
 
     /* renamed from: o  reason: collision with root package name */
-    private boolean f35638o;
+    private boolean f36206o;
 
     /* renamed from: q  reason: collision with root package name */
-    private int f35640q;
+    private int f36208q;
 
     /* renamed from: r  reason: collision with root package name */
-    private int f35641r;
+    private int f36209r;
 
     /* renamed from: a  reason: collision with root package name */
-    private final e0 f35624a = new e0();
+    private final e0 f36192a = new e0();
 
     /* renamed from: b  reason: collision with root package name */
-    private final HashSet f35625b = new HashSet();
+    private final HashSet f36193b = new HashSet();
 
     /* renamed from: p  reason: collision with root package name */
-    private int f35639p = 0;
+    private int f36207p = 0;
 
     public void a(String str) {
         y5.d.c(str);
-        this.f35625b.add(str);
+        this.f36193b.add(str);
     }
 
     public Rect b() {
-        return this.f35634k;
+        return this.f36202k;
     }
 
     public SparseArrayCompat c() {
-        return this.f35631h;
+        return this.f36199h;
     }
 
     public float d() {
-        return (e() / this.f35637n) * 1000.0f;
+        return (e() / this.f36205n) * 1000.0f;
     }
 
     public float e() {
-        return this.f35636m - this.f35635l;
+        return this.f36204m - this.f36203l;
     }
 
     public float f() {
-        return this.f35636m;
+        return this.f36204m;
     }
 
     public Map g() {
-        return this.f35629f;
+        return this.f36197f;
     }
 
     public float h(float f10) {
-        return y5.i.i(this.f35635l, this.f35636m, f10);
+        return y5.i.i(this.f36203l, this.f36204m, f10);
     }
 
     public float i() {
-        return this.f35637n;
+        return this.f36205n;
     }
 
     public Map j() {
         float e10 = y5.j.e();
-        if (e10 != this.f35628e) {
-            for (Map.Entry entry : this.f35627d.entrySet()) {
-                this.f35627d.put((String) entry.getKey(), ((x) entry.getValue()).a(this.f35628e / e10));
+        if (e10 != this.f36196e) {
+            for (Map.Entry entry : this.f36195d.entrySet()) {
+                this.f36195d.put((String) entry.getKey(), ((x) entry.getValue()).a(this.f36196e / e10));
             }
         }
-        this.f35628e = e10;
-        return this.f35627d;
+        this.f36196e = e10;
+        return this.f36195d;
     }
 
     public List k() {
-        return this.f35633j;
+        return this.f36201j;
     }
 
     public r5.h l(String str) {
-        int size = this.f35630g.size();
+        int size = this.f36198g.size();
         for (int i10 = 0; i10 < size; i10++) {
-            r5.h hVar = (r5.h) this.f35630g.get(i10);
+            r5.h hVar = (r5.h) this.f36198g.get(i10);
             if (hVar.a(str)) {
                 return hVar;
             }
@@ -126,63 +126,63 @@ public class i {
     }
 
     public int m() {
-        return this.f35639p;
+        return this.f36207p;
     }
 
     public e0 n() {
-        return this.f35624a;
+        return this.f36192a;
     }
 
     public List o(String str) {
-        return (List) this.f35626c.get(str);
+        return (List) this.f36194c.get(str);
     }
 
     public float p() {
-        return this.f35635l;
+        return this.f36203l;
     }
 
     public boolean q() {
-        return this.f35638o;
+        return this.f36206o;
     }
 
     public void r(int i10) {
-        this.f35639p += i10;
+        this.f36207p += i10;
     }
 
     public void s(Rect rect, float f10, float f11, float f12, List list, u0.j jVar, Map map, Map map2, float f13, SparseArrayCompat sparseArrayCompat, Map map3, List list2, int i10, int i11) {
-        this.f35634k = rect;
-        this.f35635l = f10;
-        this.f35636m = f11;
-        this.f35637n = f12;
-        this.f35633j = list;
-        this.f35632i = jVar;
-        this.f35626c = map;
-        this.f35627d = map2;
-        this.f35628e = f13;
-        this.f35631h = sparseArrayCompat;
-        this.f35629f = map3;
-        this.f35630g = list2;
-        this.f35640q = i10;
-        this.f35641r = i11;
+        this.f36202k = rect;
+        this.f36203l = f10;
+        this.f36204m = f11;
+        this.f36205n = f12;
+        this.f36201j = list;
+        this.f36200i = jVar;
+        this.f36194c = map;
+        this.f36195d = map2;
+        this.f36196e = f13;
+        this.f36199h = sparseArrayCompat;
+        this.f36197f = map3;
+        this.f36198g = list2;
+        this.f36208q = i10;
+        this.f36209r = i11;
     }
 
     public u5.e t(long j10) {
-        return (u5.e) this.f35632i.d(j10);
+        return (u5.e) this.f36200i.d(j10);
     }
 
     public String toString() {
         StringBuilder sb2 = new StringBuilder("LottieComposition:\n");
-        for (u5.e eVar : this.f35633j) {
+        for (u5.e eVar : this.f36201j) {
             sb2.append(eVar.z("\t"));
         }
         return sb2.toString();
     }
 
     public void u(boolean z10) {
-        this.f35638o = z10;
+        this.f36206o = z10;
     }
 
     public void v(boolean z10) {
-        this.f35624a.b(z10);
+        this.f36192a.b(z10);
     }
 }

@@ -37,7 +37,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/TableRow/native/TableSwitchRow.native.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun47887: for (var _fun47887_ip = 0;;) switch (_fun47887_ip) {
+        _fun48842: for (var _fun48842_ip = 0;;) switch (_fun48842_ip) {
             case 0:
                 var4 = arg0;
                 var9 = var4.value;
@@ -49,8 +49,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var4.disabled;
                 var3 = undefined;
                 if (!(var7 === var3)) {
-                    _fun47887_ip = 48;
-                    continue _fun47887
+                    _fun48842_ip = 48;
+                    continue _fun48842
                 }
             case 46:
                 var7 = false;
@@ -82,7 +82,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var6.isAndroid;
                 var6 = var2.bind(var6)();
                 var8 = function() {
-                    _fun47888: for (var _fun47888_ip = 0;;) switch (_fun47888_ip) {
+                    _fun48843: for (var _fun48843_ip = 0;;) switch (_fun48843_ip) {
                         case 0:
                             var2 = _closure2_slot1;
                             var0 = null;
@@ -90,8 +90,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var3 = undefined;
                             var0 = undefined;
                             if (var2) {
-                                _fun47888_ip = 36;
-                                continue _fun47888
+                                _fun48843_ip = 36;
+                                continue _fun48843
                             }
                         case 20:
                             var2 = _closure2_slot1;
@@ -165,8 +165,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var15 = '';
                 var14 = var15;
                 if (!var13) {
-                    _fun47887_ip = 377;
-                    continue _fun47887
+                    _fun48842_ip = 377;
+                    continue _fun48842
                 }
             case 374:
                 var14 = var11;
@@ -182,8 +182,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0[var11] = var12;
                 var11 = undefined;
                 if (!var6) {
-                    _fun47887_ip = 429;
-                    continue _fun47887
+                    _fun48842_ip = 429;
+                    continue _fun48842
                 }
             case 426:
                 var11 = var8;
@@ -199,13 +199,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = global;
                     var2 = var1.setTimeout;
                     var1 = function() { // Environment: var1
-                        _fun47891: for (var _fun47891_ip = 0;;) switch (_fun47891_ip) {
+                        _fun48846: for (var _fun48846_ip = 0;;) switch (_fun48846_ip) {
                             case 0:
                                 var2 = _closure2_slot1;
                                 var1 = null;
                                 if (!(var1 != var2)) {
-                                    _fun47891_ip = 31;
-                                    continue _fun47891
+                                    _fun48846_ip = 31;
+                                    continue _fun48846
                                 }
                             case 13:
                                 var2 = _closure2_slot1;
@@ -244,4 +244,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.TableSwitchRow = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 33, 478, 3155, 4876, 5345, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 33, 478, 3158, 4905, 5477, 2]);

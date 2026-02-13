@@ -184,7 +184,7 @@ public final class AFa1uSDK extends AppsFlyerLib {
         /* JADX INFO: Access modifiers changed from: private */
         public /* synthetic */ Unit getMonetizationNetwork() {
             AFa1uSDK.this.getCurrencyIso4217Code(new AFh1kSDK());
-            return Unit.f31988a;
+            return Unit.f32556a;
         }
     }
 

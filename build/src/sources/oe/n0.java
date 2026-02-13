@@ -5,65 +5,65 @@ import com.google.android.exoplayer2.PlaybackParameters;
 public final class n0 implements a0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final e f38985d;
+    private final e f39553d;
 
     /* renamed from: e  reason: collision with root package name */
-    private boolean f38986e;
+    private boolean f39554e;
 
     /* renamed from: i  reason: collision with root package name */
-    private long f38987i;
+    private long f39555i;
 
     /* renamed from: o  reason: collision with root package name */
-    private long f38988o;
+    private long f39556o;
 
     /* renamed from: p  reason: collision with root package name */
-    private PlaybackParameters f38989p = PlaybackParameters.f12550o;
+    private PlaybackParameters f39557p = PlaybackParameters.f12550o;
 
     public n0(e eVar) {
-        this.f38985d = eVar;
+        this.f39553d = eVar;
     }
 
     public void a(long j10) {
-        this.f38987i = j10;
-        if (this.f38986e) {
-            this.f38988o = this.f38985d.b();
+        this.f39555i = j10;
+        if (this.f39554e) {
+            this.f39556o = this.f39553d.b();
         }
     }
 
     public void b() {
-        if (!this.f38986e) {
-            this.f38988o = this.f38985d.b();
-            this.f38986e = true;
+        if (!this.f39554e) {
+            this.f39556o = this.f39553d.b();
+            this.f39554e = true;
         }
     }
 
     @Override // oe.a0
     public PlaybackParameters c() {
-        return this.f38989p;
+        return this.f39557p;
     }
 
     public void d() {
-        if (this.f38986e) {
+        if (this.f39554e) {
             a(v());
-            this.f38986e = false;
+            this.f39554e = false;
         }
     }
 
     @Override // oe.a0
     public void f(PlaybackParameters playbackParameters) {
-        if (this.f38986e) {
+        if (this.f39554e) {
             a(v());
         }
-        this.f38989p = playbackParameters;
+        this.f39557p = playbackParameters;
     }
 
     @Override // oe.a0
     public long v() {
         long b10;
-        long j10 = this.f38987i;
-        if (this.f38986e) {
-            long b11 = this.f38985d.b() - this.f38988o;
-            PlaybackParameters playbackParameters = this.f38989p;
+        long j10 = this.f39555i;
+        if (this.f39554e) {
+            long b11 = this.f39553d.b() - this.f39556o;
+            PlaybackParameters playbackParameters = this.f39557p;
             if (playbackParameters.f12554d == 1.0f) {
                 b10 = w0.K0(b11);
             } else {

@@ -15,46 +15,46 @@ import java.util.UUID;
 public class b4 {
 
     /* renamed from: a  reason: collision with root package name */
-    private a0.w0 f43246a;
+    private a0.w0 f43814a;
 
     /* renamed from: b  reason: collision with root package name */
-    private a0.i2 f43247b;
+    private a0.i2 f43815b;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Size f43249d;
+    private final Size f43817d;
 
     /* renamed from: f  reason: collision with root package name */
-    private final c f43251f;
+    private final c f43819f;
 
     /* renamed from: e  reason: collision with root package name */
-    private final u.x f43250e = new u.x();
+    private final u.x f43818e = new u.x();
 
     /* renamed from: g  reason: collision with root package name */
-    private i2.c f43252g = null;
+    private i2.c f43820g = null;
 
     /* renamed from: c  reason: collision with root package name */
-    private final b f43248c = new b();
+    private final b f43816c = new b();
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public class a implements d0.c {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ Surface f43253a;
+        final /* synthetic */ Surface f43821a;
 
         /* renamed from: b  reason: collision with root package name */
-        final /* synthetic */ SurfaceTexture f43254b;
+        final /* synthetic */ SurfaceTexture f43822b;
 
         a(Surface surface, SurfaceTexture surfaceTexture) {
-            this.f43253a = surface;
-            this.f43254b = surfaceTexture;
+            this.f43821a = surface;
+            this.f43822b = surfaceTexture;
         }
 
         @Override // d0.c
         /* renamed from: a */
         public void onSuccess(Void r12) {
-            this.f43253a.release();
-            this.f43254b.release();
+            this.f43821a.release();
+            this.f43822b.release();
         }
 
         @Override // d0.c
@@ -100,16 +100,16 @@ public class b4 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public b4(r.a0 a0Var, e3 e3Var, c cVar) {
-        this.f43251f = cVar;
+        this.f43819f = cVar;
         Size g10 = g(a0Var, e3Var);
-        this.f43249d = g10;
+        this.f43817d = g10;
         x.y0.a("MeteringRepeating", "MeteringSession SurfaceTexture size: " + g10);
-        this.f43247b = d();
+        this.f43815b = d();
     }
 
     public static /* synthetic */ void a(b4 b4Var, a0.i2 i2Var, i2.g gVar) {
-        b4Var.f43247b = b4Var.d();
-        c cVar = b4Var.f43251f;
+        b4Var.f43815b = b4Var.d();
+        c cVar = b4Var.f43819f;
         if (cVar != null) {
             cVar.a();
         }
@@ -121,7 +121,7 @@ public class b4 {
             x.y0.c("MeteringRepeating", "Can not get output size list.");
             return new Size(0, 0);
         }
-        Size[] a10 = this.f43250e.a(c10);
+        Size[] a10 = this.f43818e.a(c10);
         List asList = Arrays.asList(a10);
         Collections.sort(asList, new Comparator() { // from class: q.a4
             @Override // java.util.Comparator
@@ -162,24 +162,24 @@ public class b4 {
     /* JADX INFO: Access modifiers changed from: package-private */
     public void c() {
         x.y0.a("MeteringRepeating", "MeteringRepeating clear!");
-        a0.w0 w0Var = this.f43246a;
+        a0.w0 w0Var = this.f43814a;
         if (w0Var != null) {
             w0Var.d();
         }
-        this.f43246a = null;
+        this.f43814a = null;
     }
 
     a0.i2 d() {
         SurfaceTexture surfaceTexture = new SurfaceTexture(0);
-        surfaceTexture.setDefaultBufferSize(this.f43249d.getWidth(), this.f43249d.getHeight());
+        surfaceTexture.setDefaultBufferSize(this.f43817d.getWidth(), this.f43817d.getHeight());
         Surface surface = new Surface(surfaceTexture);
-        i2.b p10 = i2.b.p(this.f43248c, this.f43249d);
+        i2.b p10 = i2.b.p(this.f43816c, this.f43817d);
         p10.x(1);
         a0.k1 k1Var = new a0.k1(surface);
-        this.f43246a = k1Var;
+        this.f43814a = k1Var;
         d0.n.j(k1Var.k(), new a(surface, surfaceTexture), c0.a.a());
-        p10.l(this.f43246a);
-        i2.c cVar = this.f43252g;
+        p10.l(this.f43814a);
+        i2.c cVar = this.f43820g;
         if (cVar != null) {
             cVar.b();
         }
@@ -189,14 +189,14 @@ public class b4 {
                 b4.a(b4.this, i2Var, gVar);
             }
         });
-        this.f43252g = cVar2;
+        this.f43820g = cVar2;
         p10.r(cVar2);
         return p10.o();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public Size e() {
-        return this.f43249d;
+        return this.f43817d;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -206,11 +206,11 @@ public class b4 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public a0.i2 h() {
-        return this.f43247b;
+        return this.f43815b;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public a0.x2 i() {
-        return this.f43248c;
+        return this.f43816c;
     }
 }

@@ -3,10 +3,10 @@ package x;
 public class o0 extends Exception {
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f54133d;
+    private final int f54701d;
 
     public o0(int i10, String str, Throwable th2) {
         super(str, th2);
-        this.f54133d = i10;
+        this.f54701d = i10;
     }
 }

@@ -3,10 +3,10 @@ package rg;
 public final class th {
 
     /* renamed from: a  reason: collision with root package name */
-    private uh f47166a;
+    private uh f47734a;
 
     public final th a(uh uhVar) {
-        this.f47166a = uhVar;
+        this.f47734a = uhVar;
         return this;
     }
 

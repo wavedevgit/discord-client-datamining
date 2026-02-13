@@ -5,48 +5,48 @@ import android.media.metrics.LogSessionId;
 public final class t1 {
 
     /* renamed from: b  reason: collision with root package name */
-    public static final t1 f37130b;
+    public static final t1 f37698b;
 
     /* renamed from: a  reason: collision with root package name */
-    private final a f37131a;
+    private final a f37699a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     private static final class a {
 
         /* renamed from: b  reason: collision with root package name */
-        public static final a f37132b;
+        public static final a f37700b;
 
         /* renamed from: a  reason: collision with root package name */
-        public final LogSessionId f37133a;
+        public final LogSessionId f37701a;
 
         static {
             LogSessionId logSessionId;
             logSessionId = LogSessionId.LOG_SESSION_ID_NONE;
-            f37132b = new a(logSessionId);
+            f37700b = new a(logSessionId);
         }
 
         public a(LogSessionId logSessionId) {
-            this.f37133a = logSessionId;
+            this.f37701a = logSessionId;
         }
     }
 
     static {
         t1 t1Var;
-        if (oe.w0.f39038a < 31) {
+        if (oe.w0.f39606a < 31) {
             t1Var = new t1();
         } else {
-            t1Var = new t1(a.f37132b);
+            t1Var = new t1(a.f37700b);
         }
-        f37130b = t1Var;
+        f37698b = t1Var;
     }
 
     public t1() {
         this((a) null);
-        oe.a.g(oe.w0.f39038a < 31);
+        oe.a.g(oe.w0.f39606a < 31);
     }
 
     public LogSessionId a() {
-        return ((a) oe.a.e(this.f37131a)).f37133a;
+        return ((a) oe.a.e(this.f37699a)).f37701a;
     }
 
     public t1(LogSessionId logSessionId) {
@@ -54,6 +54,6 @@ public final class t1 {
     }
 
     private t1(a aVar) {
-        this.f37131a = aVar;
+        this.f37699a = aVar;
     }
 }

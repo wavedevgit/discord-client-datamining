@@ -7,18 +7,18 @@ import kotlin.text.StringsKt;
 public abstract class e {
 
     /* renamed from: a */
-    private static final int f51888a;
+    private static final int f52456a;
 
     static {
         Object b10;
         int i10;
         try {
-            Result.a aVar = Result.f31985e;
+            Result.a aVar = Result.f32553e;
             String property = System.getProperty("kotlinx.serialization.json.pool.size");
             Intrinsics.checkNotNullExpressionValue(property, "getProperty(...)");
             b10 = Result.b(StringsKt.toIntOrNull(property));
         } catch (Throwable th2) {
-            Result.a aVar2 = Result.f31985e;
+            Result.a aVar2 = Result.f32553e;
             b10 = Result.b(kotlin.c.a(th2));
         }
         if (Result.g(b10)) {
@@ -30,10 +30,10 @@ public abstract class e {
         } else {
             i10 = 2097152;
         }
-        f51888a = i10;
+        f52456a = i10;
     }
 
     public static final /* synthetic */ int a() {
-        return f51888a;
+        return f52456a;
     }
 }

@@ -11,25 +11,25 @@ import com.squareup.workflow1.ui.WorkflowViewStub;
 public final class b implements ViewBinding {
 
     /* renamed from: a  reason: collision with root package name */
-    private final CoordinatorLayout f51740a;
+    private final CoordinatorLayout f52308a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final WorkflowViewStub f51741b;
+    public final WorkflowViewStub f52309b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final FloatingActionButton f51742c;
+    public final FloatingActionButton f52310c;
 
     private b(CoordinatorLayout coordinatorLayout, WorkflowViewStub workflowViewStub, FloatingActionButton floatingActionButton) {
-        this.f51740a = coordinatorLayout;
-        this.f51741b = workflowViewStub;
-        this.f51742c = floatingActionButton;
+        this.f52308a = coordinatorLayout;
+        this.f52309b = workflowViewStub;
+        this.f52310c = floatingActionButton;
     }
 
     public static b a(View view) {
-        int i10 = up.a.f50877a;
+        int i10 = up.a.f51445a;
         WorkflowViewStub workflowViewStub = (WorkflowViewStub) e4.a.a(view, i10);
         if (workflowViewStub != null) {
-            i10 = up.a.f50878b;
+            i10 = up.a.f51446b;
             FloatingActionButton floatingActionButton = (FloatingActionButton) e4.a.a(view, i10);
             if (floatingActionButton != null) {
                 return new b((CoordinatorLayout) view, workflowViewStub, floatingActionButton);
@@ -39,7 +39,7 @@ public final class b implements ViewBinding {
     }
 
     public static b c(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z10) {
-        View inflate = layoutInflater.inflate(up.b.f50882b, viewGroup, false);
+        View inflate = layoutInflater.inflate(up.b.f51450b, viewGroup, false);
         if (z10) {
             viewGroup.addView(inflate);
         }
@@ -49,6 +49,6 @@ public final class b implements ViewBinding {
     @Override // androidx.viewbinding.ViewBinding
     /* renamed from: b */
     public CoordinatorLayout getRoot() {
-        return this.f51740a;
+        return this.f52308a;
     }
 }

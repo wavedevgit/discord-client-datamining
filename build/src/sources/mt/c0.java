@@ -7,16 +7,16 @@ import kotlin.jvm.internal.Intrinsics;
 public abstract class c0 implements l {
 
     /* renamed from: a  reason: collision with root package name */
-    private final b0 f36611a;
+    private final b0 f37179a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final int f36612b;
+    private final int f37180b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Integer f36613c;
+    private final Integer f37181c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f36614d;
+    private final int f37182d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     /* synthetic */ class a extends FunctionReferenceImpl implements Function1 {
@@ -33,11 +33,11 @@ public abstract class c0 implements l {
 
     public c0(b0 field, int i10, Integer num) {
         Intrinsics.checkNotNullParameter(field, "field");
-        this.f36611a = field;
-        this.f36612b = i10;
-        this.f36613c = num;
+        this.f37179a = field;
+        this.f37180b = i10;
+        this.f37181c = num;
         int e10 = field.e();
-        this.f36614d = e10;
+        this.f37182d = e10;
         if (i10 >= 0) {
             if (e10 >= i10) {
                 if (num == null || num.intValue() > i10) {
@@ -52,8 +52,8 @@ public abstract class c0 implements l {
 
     @Override // mt.l
     public nt.e a() {
-        nt.j jVar = new nt.j(new a(this.f36611a.b()), this.f36612b);
-        Integer num = this.f36613c;
+        nt.j jVar = new nt.j(new a(this.f37179a.b()), this.f37180b);
+        Integer num = this.f37181c;
         if (num != null) {
             return new nt.h(jVar, num.intValue());
         }
@@ -62,11 +62,11 @@ public abstract class c0 implements l {
 
     @Override // mt.l
     public ot.q b() {
-        return ot.p.e(Integer.valueOf(this.f36612b), Integer.valueOf(this.f36614d), this.f36613c, this.f36611a.b(), this.f36611a.getName(), false, 32, null);
+        return ot.p.e(Integer.valueOf(this.f37180b), Integer.valueOf(this.f37182d), this.f37181c, this.f37179a.b(), this.f37179a.getName(), false, 32, null);
     }
 
     @Override // mt.l
     public /* bridge */ /* synthetic */ n c() {
-        return this.f36611a;
+        return this.f37179a;
     }
 }

@@ -71,9 +71,9 @@ public final class InitiateReplyData implements ReactEvent {
         compositeEncoder.k(serialDescriptor, 0, MessageId$$serializer.INSTANCE, MessageId.m1084boximpl(initiateReplyData.messageId));
         compositeEncoder.k(serialDescriptor, 1, ChannelId$$serializer.INSTANCE, ChannelId.m1058boximpl(initiateReplyData.channelId));
         if (compositeEncoder.z(serialDescriptor, 2) || !Intrinsics.areEqual(initiateReplyData.triggerHaptic, Boolean.FALSE)) {
-            compositeEncoder.o(serialDescriptor, 2, h.f49997a, initiateReplyData.triggerHaptic);
+            compositeEncoder.o(serialDescriptor, 2, h.f50565a, initiateReplyData.triggerHaptic);
         }
-        compositeEncoder.o(serialDescriptor, 3, n2.f50033a, initiateReplyData.location);
+        compositeEncoder.o(serialDescriptor, 3, n2.f50601a, initiateReplyData.location);
     }
 
     @NotNull

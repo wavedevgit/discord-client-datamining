@@ -9,10 +9,10 @@ import androidx.viewbinding.ViewBinding;
 public final class h implements ViewBinding {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ConstraintLayout f48245a;
+    private final ConstraintLayout f48813a;
 
     private h(ConstraintLayout constraintLayout) {
-        this.f48245a = constraintLayout;
+        this.f48813a = constraintLayout;
     }
 
     public static h a(View view) {
@@ -27,7 +27,7 @@ public final class h implements ViewBinding {
     }
 
     public static h d(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z10) {
-        View inflate = layoutInflater.inflate(nq.f.f38309i, viewGroup, false);
+        View inflate = layoutInflater.inflate(nq.f.f38877i, viewGroup, false);
         if (z10) {
             viewGroup.addView(inflate);
         }
@@ -37,6 +37,6 @@ public final class h implements ViewBinding {
     @Override // androidx.viewbinding.ViewBinding
     /* renamed from: b */
     public ConstraintLayout getRoot() {
-        return this.f48245a;
+        return this.f48813a;
     }
 }

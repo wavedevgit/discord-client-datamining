@@ -39,7 +39,7 @@ public /* synthetic */ class CheckpointCardComponent$$serializer implements h0 {
     @Override // tt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        return new KSerializer[]{p0.f50049a, n2.f50033a, CheckpointDataV2025$$serializer.INSTANCE};
+        return new KSerializer[]{p0.f50617a, n2.f50601a, CheckpointDataV2025$$serializer.INSTANCE};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy

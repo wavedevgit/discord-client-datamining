@@ -63,17 +63,17 @@ public final class c implements m {
         this.f22428a.p(0);
         b.C0548b f10 = oc.b.f(this.f22428a);
         Format format = this.f22437j;
-        if (format == null || f10.f38781d != format.J || f10.f38780c != format.K || !w0.c(f10.f38778a, format.f12305w)) {
-            Format.b b02 = new Format.b().U(this.f22431d).g0(f10.f38778a).J(f10.f38781d).h0(f10.f38780c).X(this.f22430c).b0(f10.f38784g);
-            if ("audio/ac3".equals(f10.f38778a)) {
-                b02.I(f10.f38784g);
+        if (format == null || f10.f39349d != format.J || f10.f39348c != format.K || !w0.c(f10.f39346a, format.f12305w)) {
+            Format.b b02 = new Format.b().U(this.f22431d).g0(f10.f39346a).J(f10.f39349d).h0(f10.f39348c).X(this.f22430c).b0(f10.f39352g);
+            if ("audio/ac3".equals(f10.f39346a)) {
+                b02.I(f10.f39352g);
             }
             Format G = b02.G();
             this.f22437j = G;
             this.f22432e.c(G);
         }
-        this.f22438k = f10.f38782e;
-        this.f22436i = (f10.f38783f * 1000000) / this.f22437j.K;
+        this.f22438k = f10.f39350e;
+        this.f22436i = (f10.f39351f * 1000000) / this.f22437j.K;
     }
 
     private boolean h(oe.h0 h0Var) {
@@ -163,7 +163,7 @@ public final class c implements m {
     public c(String str) {
         oe.g0 g0Var = new oe.g0(new byte[IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT]);
         this.f22428a = g0Var;
-        this.f22429b = new oe.h0(g0Var.f38947a);
+        this.f22429b = new oe.h0(g0Var.f39515a);
         this.f22433f = 0;
         this.f22439l = -9223372036854775807L;
         this.f22430c = str;

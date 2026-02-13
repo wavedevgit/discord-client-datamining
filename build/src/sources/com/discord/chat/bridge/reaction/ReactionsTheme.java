@@ -70,22 +70,22 @@ public final class ReactionsTheme implements ReactionView.ReactionsTheme {
 
     public static final /* synthetic */ void write$Self$chat_release(ReactionsTheme reactionsTheme, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
         if (compositeEncoder.z(serialDescriptor, 0) || reactionsTheme.getReactionBackgroundColor() != null) {
-            compositeEncoder.o(serialDescriptor, 0, p0.f50049a, reactionsTheme.getReactionBackgroundColor());
+            compositeEncoder.o(serialDescriptor, 0, p0.f50617a, reactionsTheme.getReactionBackgroundColor());
         }
         if (compositeEncoder.z(serialDescriptor, 1) || reactionsTheme.getReactionBorderColor() != null) {
-            compositeEncoder.o(serialDescriptor, 1, p0.f50049a, reactionsTheme.getReactionBorderColor());
+            compositeEncoder.o(serialDescriptor, 1, p0.f50617a, reactionsTheme.getReactionBorderColor());
         }
         if (compositeEncoder.z(serialDescriptor, 2) || reactionsTheme.getReactionTextColor() != null) {
-            compositeEncoder.o(serialDescriptor, 2, p0.f50049a, reactionsTheme.getReactionTextColor());
+            compositeEncoder.o(serialDescriptor, 2, p0.f50617a, reactionsTheme.getReactionTextColor());
         }
         if (compositeEncoder.z(serialDescriptor, 3) || reactionsTheme.getActiveReactionBackgroundColor() != null) {
-            compositeEncoder.o(serialDescriptor, 3, p0.f50049a, reactionsTheme.getActiveReactionBackgroundColor());
+            compositeEncoder.o(serialDescriptor, 3, p0.f50617a, reactionsTheme.getActiveReactionBackgroundColor());
         }
         if (compositeEncoder.z(serialDescriptor, 4) || reactionsTheme.getActiveReactionBorderColor() != null) {
-            compositeEncoder.o(serialDescriptor, 4, p0.f50049a, reactionsTheme.getActiveReactionBorderColor());
+            compositeEncoder.o(serialDescriptor, 4, p0.f50617a, reactionsTheme.getActiveReactionBorderColor());
         }
         if (compositeEncoder.z(serialDescriptor, 5) || reactionsTheme.getActiveReactionTextColor() != null) {
-            compositeEncoder.o(serialDescriptor, 5, p0.f50049a, reactionsTheme.getActiveReactionTextColor());
+            compositeEncoder.o(serialDescriptor, 5, p0.f50617a, reactionsTheme.getActiveReactionTextColor());
         }
     }
 

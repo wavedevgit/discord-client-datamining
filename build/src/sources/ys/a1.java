@@ -8,15 +8,15 @@ import kotlin.jvm.functions.Function2;
 public final class a1 extends h0 {
 
     /* renamed from: o  reason: collision with root package name */
-    private final Continuation f55771o;
+    private final Continuation f56339o;
 
     public a1(CoroutineContext coroutineContext, Function2 function2) {
         super(coroutineContext, false);
-        this.f55771o = gs.b.a(function2, this, this);
+        this.f56339o = gs.b.a(function2, this, this);
     }
 
     @Override // kotlinx.coroutines.b0
     protected void y0() {
-        et.a.b(this.f55771o, this);
+        et.a.b(this.f56339o, this);
     }
 }

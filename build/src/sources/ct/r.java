@@ -9,7 +9,7 @@ final class r implements Continuation {
     public static final r f21095d = new r();
 
     /* renamed from: e  reason: collision with root package name */
-    private static final CoroutineContext f21096e = kotlin.coroutines.e.f32062d;
+    private static final CoroutineContext f21096e = kotlin.coroutines.e.f32630d;
 
     private r() {
     }

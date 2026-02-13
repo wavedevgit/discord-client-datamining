@@ -28,53 +28,53 @@ import vs.i;
 public final class n implements h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final boolean f51857a;
+    private final boolean f52425a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final h f51858b;
+    private final h f52426b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Member f51859c;
+    private final Member f52427c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final a f51860d;
+    private final a f52428d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final IntRange[] f51861e;
+    private final IntRange[] f52429e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final boolean f51862f;
+    private final boolean f52430f;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     private static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final IntRange f51863a;
+        private final IntRange f52431a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final List[] f51864b;
+        private final List[] f52432b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final Method f51865c;
+        private final Method f52433c;
 
         public a(IntRange argumentRange, List[] unboxParameters, Method method) {
             Intrinsics.checkNotNullParameter(argumentRange, "argumentRange");
             Intrinsics.checkNotNullParameter(unboxParameters, "unboxParameters");
-            this.f51863a = argumentRange;
-            this.f51864b = unboxParameters;
-            this.f51865c = method;
+            this.f52431a = argumentRange;
+            this.f52432b = unboxParameters;
+            this.f52433c = method;
         }
 
         public final IntRange a() {
-            return this.f51863a;
+            return this.f52431a;
         }
 
         public final Method b() {
-            return this.f51865c;
+            return this.f52433c;
         }
 
         public final List[] c() {
-            return this.f51864b;
+            return this.f52432b;
         }
     }
 
@@ -82,19 +82,19 @@ public final class n implements h {
     public static final class b implements h {
 
         /* renamed from: a  reason: collision with root package name */
-        private final Method f51866a;
+        private final Method f52434a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final Method f51867b;
+        private final Method f52435b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final List f51868c;
+        private final List f52436c;
 
         /* renamed from: d  reason: collision with root package name */
-        private final List f51869d;
+        private final List f52437d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final List f51870e;
+        private final List f52438e;
 
         public b(FunctionDescriptor descriptor, c1 container, String constructorDesc, List originalParameters) {
             Collection e10;
@@ -104,10 +104,10 @@ public final class n implements h {
             Intrinsics.checkNotNullParameter(originalParameters, "originalParameters");
             Method m10 = container.m("constructor-impl", constructorDesc);
             Intrinsics.checkNotNull(m10);
-            this.f51866a = m10;
+            this.f52434a = m10;
             Method m11 = container.m("box-impl", StringsKt.D0(constructorDesc, "V") + ReflectClassUtilKt.getDesc(container.getJClass()));
             Intrinsics.checkNotNull(m11);
-            this.f51867b = m11;
+            this.f52435b = m11;
             List<ParameterDescriptor> list = originalParameters;
             ArrayList arrayList = new ArrayList(CollectionsKt.w(list, 10));
             for (ParameterDescriptor parameterDescriptor : list) {
@@ -115,7 +115,7 @@ public final class n implements h {
                 Intrinsics.checkNotNullExpressionValue(type, "getType(...)");
                 arrayList.add(o.d(TypeSubstitutionKt.asSimpleType(type), descriptor));
             }
-            this.f51868c = arrayList;
+            this.f52436c = arrayList;
             ArrayList arrayList2 = new ArrayList(CollectionsKt.w(list, 10));
             int i10 = 0;
             for (Object obj : list) {
@@ -126,7 +126,7 @@ public final class n implements h {
                 ClassifierDescriptor mo1201getDeclarationDescriptor = ((ParameterDescriptor) obj).getType().getConstructor().mo1201getDeclarationDescriptor();
                 Intrinsics.checkNotNull(mo1201getDeclarationDescriptor, "null cannot be cast to non-null type org.jetbrains.kotlin.descriptors.ClassDescriptor");
                 ClassDescriptor classDescriptor = (ClassDescriptor) mo1201getDeclarationDescriptor;
-                List list2 = (List) this.f51868c.get(i10);
+                List list2 = (List) this.f52436c.get(i10);
                 if (list2 != null) {
                     List<Method> list3 = list2;
                     e10 = new ArrayList(CollectionsKt.w(list3, 10));
@@ -141,13 +141,13 @@ public final class n implements h {
                 arrayList2.add(e10);
                 i10 = i11;
             }
-            this.f51869d = arrayList2;
-            this.f51870e = CollectionsKt.y(arrayList2);
+            this.f52437d = arrayList2;
+            this.f52438e = CollectionsKt.y(arrayList2);
         }
 
         @Override // vs.h
         public List a() {
-            return this.f51870e;
+            return this.f52438e;
         }
 
         @Override // vs.h
@@ -165,7 +165,7 @@ public final class n implements h {
             Collection e10;
             Intrinsics.checkNotNullParameter(args, "args");
             ArrayList arrayList = new ArrayList();
-            for (Pair pair : kotlin.collections.i.i1(args, this.f51868c)) {
+            for (Pair pair : kotlin.collections.i.i1(args, this.f52436c)) {
                 Object a10 = pair.a();
                 List list = (List) pair.b();
                 if (list != null) {
@@ -180,8 +180,8 @@ public final class n implements h {
                 CollectionsKt.B(arrayList, e10);
             }
             Object[] array = arrayList.toArray(new Object[0]);
-            this.f51866a.invoke(null, Arrays.copyOf(array, array.length));
-            return this.f51867b.invoke(null, Arrays.copyOf(array, array.length));
+            this.f52434a.invoke(null, Arrays.copyOf(array, array.length));
+            return this.f52435b.invoke(null, Arrays.copyOf(array, array.length));
         }
 
         public Void d() {
@@ -189,12 +189,12 @@ public final class n implements h {
         }
 
         public final List e() {
-            return this.f51869d;
+            return this.f52437d;
         }
 
         @Override // vs.h
         public Type getReturnType() {
-            Class<?> returnType = this.f51867b.getReturnType();
+            Class<?> returnType = this.f52435b.getReturnType();
             Intrinsics.checkNotNullExpressionValue(returnType, "getReturnType(...)");
             return returnType;
         }
@@ -224,17 +224,17 @@ public final class n implements h {
 
     @Override // vs.h
     public List a() {
-        return this.f51858b.a();
+        return this.f52426b.a();
     }
 
     @Override // vs.h
     public Member b() {
-        return this.f51859c;
+        return this.f52427c;
     }
 
     @Override // vs.h
     public boolean c() {
-        return this.f51858b instanceof i.h.a;
+        return this.f52426b instanceof i.h.a;
     }
 
     @Override // vs.h
@@ -244,11 +244,11 @@ public final class n implements h {
         Method method;
         Object g10;
         Intrinsics.checkNotNullParameter(args, "args");
-        IntRange a10 = this.f51860d.a();
-        List[] c10 = this.f51860d.c();
-        Method b10 = this.f51860d.b();
+        IntRange a10 = this.f52428d.a();
+        List[] c10 = this.f52428d.c();
+        Method b10 = this.f52428d.b();
         if (!a10.isEmpty()) {
-            if (this.f51862f) {
+            if (this.f52430f) {
                 List d10 = CollectionsKt.d(args.length);
                 int d11 = a10.d();
                 for (int i10 = 0; i10 < d11; i10++) {
@@ -323,7 +323,7 @@ public final class n implements h {
                 args = objArr;
             }
         }
-        Object call = this.f51858b.call(args);
+        Object call = this.f52426b.call(args);
         if (call != gs.b.f() && b10 != null && (invoke = b10.invoke(null, call)) != null) {
             return invoke;
         }
@@ -332,12 +332,12 @@ public final class n implements h {
 
     public final IntRange f(int i10) {
         if (i10 >= 0) {
-            IntRange[] intRangeArr = this.f51861e;
+            IntRange[] intRangeArr = this.f52429e;
             if (i10 < intRangeArr.length) {
                 return intRangeArr[i10];
             }
         }
-        IntRange[] intRangeArr2 = this.f51861e;
+        IntRange[] intRangeArr2 = this.f52429e;
         if (intRangeArr2.length == 0) {
             return new IntRange(i10, i10);
         }
@@ -347,6 +347,6 @@ public final class n implements h {
 
     @Override // vs.h
     public Type getReturnType() {
-        return this.f51858b.getReturnType();
+        return this.f52426b.getReturnType();
     }
 }

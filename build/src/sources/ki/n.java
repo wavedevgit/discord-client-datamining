@@ -5,14 +5,14 @@ import java.util.zip.ZipEntry;
 public final class n {
 
     /* renamed from: a  reason: collision with root package name */
-    public final String f31767a;
+    public final String f32335a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final ZipEntry f31768b;
+    public final ZipEntry f32336b;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public n(ZipEntry zipEntry, String str) {
-        this.f31768b = zipEntry;
-        this.f31767a = str;
+        this.f32336b = zipEntry;
+        this.f32335a = str;
     }
 }

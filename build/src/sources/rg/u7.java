@@ -5,7 +5,7 @@ import bj.c;
 final class u7 implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final u7 f47185a = new u7();
+    static final u7 f47753a = new u7();
 
     static {
         c.b a10 = bj.c.a("cameraId");

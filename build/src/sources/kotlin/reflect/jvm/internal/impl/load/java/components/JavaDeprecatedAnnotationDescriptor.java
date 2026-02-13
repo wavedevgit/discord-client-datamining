@@ -20,16 +20,16 @@ import org.jetbrains.annotations.NotNull;
 public final class JavaDeprecatedAnnotationDescriptor extends JavaAnnotationDescriptor {
 
     /* renamed from: h  reason: collision with root package name */
-    static final /* synthetic */ KProperty[] f32789h = {Reflection.property1(new PropertyReference1Impl(JavaDeprecatedAnnotationDescriptor.class, "allValueArguments", "getAllValueArguments()Ljava/util/Map;", 0))};
+    static final /* synthetic */ KProperty[] f33357h = {Reflection.property1(new PropertyReference1Impl(JavaDeprecatedAnnotationDescriptor.class, "allValueArguments", "getAllValueArguments()Ljava/util/Map;", 0))};
 
     /* renamed from: g  reason: collision with root package name */
-    private final NotNullLazyValue f32790g;
+    private final NotNullLazyValue f33358g;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public JavaDeprecatedAnnotationDescriptor(JavaAnnotation javaAnnotation, @NotNull LazyJavaResolverContext c10) {
         super(c10, javaAnnotation, StandardNames.FqNames.deprecated);
         Intrinsics.checkNotNullParameter(c10, "c");
-        this.f32790g = c10.getStorageManager().createLazyValue(c.f32804d);
+        this.f33358g = c10.getStorageManager().createLazyValue(c.f33372d);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -40,6 +40,6 @@ public final class JavaDeprecatedAnnotationDescriptor extends JavaAnnotationDesc
     @Override // kotlin.reflect.jvm.internal.impl.load.java.components.JavaAnnotationDescriptor, kotlin.reflect.jvm.internal.impl.descriptors.annotations.AnnotationDescriptor
     @NotNull
     public Map<Name, ConstantValue<?>> getAllValueArguments() {
-        return (Map) StorageKt.getValue(this.f32790g, this, f32789h[0]);
+        return (Map) StorageKt.getValue(this.f33358g, this, f33357h[0]);
     }
 }

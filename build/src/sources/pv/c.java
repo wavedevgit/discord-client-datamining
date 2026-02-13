@@ -10,7 +10,7 @@ import pv.b;
 public final class c implements cv.b, b {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final c f43228a = new c();
+    public static final c f43796a = new c();
 
     private c() {
     }
@@ -92,15 +92,15 @@ public final class c implements cv.b, b {
         Object b10;
         String x02 = CollectionsKt.x0(k(CollectionsKt.firstOrNull(list)), ",", null, null, 0, null, null, 62, null);
         try {
-            Result.a aVar = Result.f31985e;
+            Result.a aVar = Result.f32553e;
             if (list.size() == 2) {
-                x02 = f43228a.i(x02, i10);
+                x02 = f43796a.i(x02, i10);
             } else if (list.size() > 2) {
-                x02 = f43228a.d(x02, i10, i11);
+                x02 = f43796a.d(x02, i10, i11);
             }
             b10 = Result.b(x02);
         } catch (Throwable th2) {
-            Result.a aVar2 = Result.f31985e;
+            Result.a aVar2 = Result.f32553e;
             b10 = Result.b(kotlin.c.a(th2));
         }
         if (Result.g(b10)) {
@@ -117,7 +117,7 @@ public final class c implements cv.b, b {
     /* renamed from: c */
     public String f(Object obj, Object obj2) {
         List c10 = mw.a.c(obj);
-        return f43228a.j(c10, d.b(String.valueOf(mw.c.b(c10))), d.b(String.valueOf(mw.c.c(c10))));
+        return f43796a.j(c10, d.b(String.valueOf(mw.c.b(c10))), d.b(String.valueOf(mw.c.c(c10))));
     }
 
     public List k(Object obj) {

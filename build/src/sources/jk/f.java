@@ -11,34 +11,34 @@ import java.util.NoSuchElementException;
 public abstract class f implements Iterable, Serializable {
 
     /* renamed from: e  reason: collision with root package name */
-    public static final f f31004e = new i(u.f31164d);
+    public static final f f31572e = new i(u.f31732d);
 
     /* renamed from: i  reason: collision with root package name */
-    private static final InterfaceC0422f f31005i;
+    private static final InterfaceC0422f f31573i;
 
     /* renamed from: o  reason: collision with root package name */
-    private static final Comparator f31006o;
+    private static final Comparator f31574o;
 
     /* renamed from: d  reason: collision with root package name */
-    private int f31007d = 0;
+    private int f31575d = 0;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public class a extends c {
 
         /* renamed from: d  reason: collision with root package name */
-        private int f31008d = 0;
+        private int f31576d = 0;
 
         /* renamed from: e  reason: collision with root package name */
-        private final int f31009e;
+        private final int f31577e;
 
         a() {
-            this.f31009e = f.this.size();
+            this.f31577e = f.this.size();
         }
 
         @Override // java.util.Iterator
         public boolean hasNext() {
-            if (this.f31008d < this.f31009e) {
+            if (this.f31576d < this.f31577e) {
                 return true;
             }
             return false;
@@ -46,9 +46,9 @@ public abstract class f implements Iterable, Serializable {
 
         @Override // jk.f.g
         public byte nextByte() {
-            int i10 = this.f31008d;
-            if (i10 < this.f31009e) {
-                this.f31008d = i10 + 1;
+            int i10 = this.f31576d;
+            if (i10 < this.f31577e) {
+                this.f31576d = i10 + 1;
                 return f.this.j(i10);
             }
             throw new NoSuchElementException();
@@ -112,37 +112,37 @@ public abstract class f implements Iterable, Serializable {
     public static final class e extends i {
 
         /* renamed from: q  reason: collision with root package name */
-        private final int f31011q;
+        private final int f31579q;
 
         /* renamed from: r  reason: collision with root package name */
-        private final int f31012r;
+        private final int f31580r;
 
         e(byte[] bArr, int i10, int i11) {
             super(bArr);
             f.e(i10, i10 + i11, bArr.length);
-            this.f31011q = i10;
-            this.f31012r = i11;
+            this.f31579q = i10;
+            this.f31580r = i11;
         }
 
         @Override // jk.f.i
         protected int B() {
-            return this.f31011q;
+            return this.f31579q;
         }
 
         @Override // jk.f.i, jk.f
         public byte c(int i10) {
             f.d(i10, size());
-            return this.f31013p[this.f31011q + i10];
+            return this.f31581p[this.f31579q + i10];
         }
 
         @Override // jk.f.i, jk.f
         byte j(int i10) {
-            return this.f31013p[this.f31011q + i10];
+            return this.f31581p[this.f31579q + i10];
         }
 
         @Override // jk.f.i, jk.f
         public int size() {
-            return this.f31012r;
+            return this.f31580r;
         }
     }
 
@@ -169,11 +169,11 @@ public abstract class f implements Iterable, Serializable {
     public static class i extends h {
 
         /* renamed from: p  reason: collision with root package name */
-        protected final byte[] f31013p;
+        protected final byte[] f31581p;
 
         i(byte[] bArr) {
             bArr.getClass();
-            this.f31013p = bArr;
+            this.f31581p = bArr;
         }
 
         final boolean A(f fVar, int i10, int i11) {
@@ -182,8 +182,8 @@ public abstract class f implements Iterable, Serializable {
                 if (i12 <= fVar.size()) {
                     if (fVar instanceof i) {
                         i iVar = (i) fVar;
-                        byte[] bArr = this.f31013p;
-                        byte[] bArr2 = iVar.f31013p;
+                        byte[] bArr = this.f31581p;
+                        byte[] bArr2 = iVar.f31581p;
                         int B = B() + i11;
                         int B2 = B();
                         int B3 = iVar.B() + i10;
@@ -209,7 +209,7 @@ public abstract class f implements Iterable, Serializable {
 
         @Override // jk.f
         public byte c(int i10) {
-            return this.f31013p[i10];
+            return this.f31581p[i10];
         }
 
         @Override // jk.f
@@ -237,37 +237,37 @@ public abstract class f implements Iterable, Serializable {
 
         @Override // jk.f
         byte j(int i10) {
-            return this.f31013p[i10];
+            return this.f31581p[i10];
         }
 
         @Override // jk.f
         public final boolean k() {
             int B = B();
-            return i1.k(this.f31013p, B, size() + B);
+            return i1.k(this.f31581p, B, size() + B);
         }
 
         @Override // jk.f
         protected final int o(int i10, int i11, int i12) {
-            return u.h(i10, this.f31013p, B() + i11, i12);
+            return u.h(i10, this.f31581p, B() + i11, i12);
         }
 
         @Override // jk.f
         public final f q(int i10, int i11) {
             int e10 = f.e(i10, i11, size());
             if (e10 == 0) {
-                return f.f31004e;
+                return f.f31572e;
             }
-            return new e(this.f31013p, B() + i10, e10);
+            return new e(this.f31581p, B() + i10, e10);
         }
 
         @Override // jk.f
         public int size() {
-            return this.f31013p.length;
+            return this.f31581p.length;
         }
 
         @Override // jk.f
         protected final String t(Charset charset) {
-            return new String(this.f31013p, B(), size(), charset);
+            return new String(this.f31581p, B(), size(), charset);
         }
     }
 
@@ -295,8 +295,8 @@ public abstract class f implements Iterable, Serializable {
         } else {
             dVar = new d(null);
         }
-        f31005i = dVar;
-        f31006o = new b();
+        f31573i = dVar;
+        f31574o = new b();
     }
 
     f() {
@@ -331,11 +331,11 @@ public abstract class f implements Iterable, Serializable {
 
     public static f g(byte[] bArr, int i10, int i11) {
         e(i10, i10 + i11, bArr.length);
-        return new i(f31005i.a(bArr, i10, i11));
+        return new i(f31573i.a(bArr, i10, i11));
     }
 
     public static f i(String str) {
-        return new i(str.getBytes(u.f31162b));
+        return new i(str.getBytes(u.f31730b));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -365,14 +365,14 @@ public abstract class f implements Iterable, Serializable {
     public abstract boolean equals(Object obj);
 
     public final int hashCode() {
-        int i10 = this.f31007d;
+        int i10 = this.f31575d;
         if (i10 == 0) {
             int size = size();
             i10 = o(size, 0, size);
             if (i10 == 0) {
                 i10 = 1;
             }
-            this.f31007d = i10;
+            this.f31575d = i10;
         }
         return i10;
     }
@@ -390,7 +390,7 @@ public abstract class f implements Iterable, Serializable {
     protected abstract int o(int i10, int i11, int i12);
 
     protected final int p() {
-        return this.f31007d;
+        return this.f31575d;
     }
 
     public abstract f q(int i10, int i11);
@@ -411,6 +411,6 @@ public abstract class f implements Iterable, Serializable {
     }
 
     public final String u() {
-        return s(u.f31162b);
+        return s(u.f31730b);
     }
 }

@@ -7,7 +7,7 @@ import okio.ByteString;
 public final class g {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final g f36059a = new g();
+    public static final g f36627a = new g();
 
     private g() {
     }
@@ -16,7 +16,7 @@ public final class g {
         Intrinsics.checkNotNullParameter(username, "username");
         Intrinsics.checkNotNullParameter(password, "password");
         Intrinsics.checkNotNullParameter(charset, "charset");
-        String d10 = ByteString.f40592o.f(username + ':' + password, charset).d();
+        String d10 = ByteString.f41160o.f(username + ':' + password, charset).d();
         return "Basic " + d10;
     }
 }

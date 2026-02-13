@@ -84,4 +84,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.fetchGuildAffinities = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 507, 806, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 507, 807, 2]);

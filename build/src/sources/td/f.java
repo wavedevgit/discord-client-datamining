@@ -11,56 +11,56 @@ import me.a0;
 public abstract class f implements j.e {
 
     /* renamed from: a  reason: collision with root package name */
-    public final long f48707a = LoadEventInfo.a();
+    public final long f49275a = LoadEventInfo.a();
 
     /* renamed from: b  reason: collision with root package name */
-    public final com.google.android.exoplayer2.upstream.a f48708b;
+    public final com.google.android.exoplayer2.upstream.a f49276b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final int f48709c;
+    public final int f49277c;
 
     /* renamed from: d  reason: collision with root package name */
-    public final Format f48710d;
+    public final Format f49278d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final int f48711e;
+    public final int f49279e;
 
     /* renamed from: f  reason: collision with root package name */
-    public final Object f48712f;
+    public final Object f49280f;
 
     /* renamed from: g  reason: collision with root package name */
-    public final long f48713g;
+    public final long f49281g;
 
     /* renamed from: h  reason: collision with root package name */
-    public final long f48714h;
+    public final long f49282h;
 
     /* renamed from: i  reason: collision with root package name */
-    protected final a0 f48715i;
+    protected final a0 f49283i;
 
     public f(DataSource dataSource, com.google.android.exoplayer2.upstream.a aVar, int i10, Format format, int i11, Object obj, long j10, long j11) {
-        this.f48715i = new a0(dataSource);
-        this.f48708b = (com.google.android.exoplayer2.upstream.a) oe.a.e(aVar);
-        this.f48709c = i10;
-        this.f48710d = format;
-        this.f48711e = i11;
-        this.f48712f = obj;
-        this.f48713g = j10;
-        this.f48714h = j11;
+        this.f49283i = new a0(dataSource);
+        this.f49276b = (com.google.android.exoplayer2.upstream.a) oe.a.e(aVar);
+        this.f49277c = i10;
+        this.f49278d = format;
+        this.f49279e = i11;
+        this.f49280f = obj;
+        this.f49281g = j10;
+        this.f49282h = j11;
     }
 
     public final long b() {
-        return this.f48715i.o();
+        return this.f49283i.o();
     }
 
     public final long d() {
-        return this.f48714h - this.f48713g;
+        return this.f49282h - this.f49281g;
     }
 
     public final Map e() {
-        return this.f48715i.q();
+        return this.f49283i.q();
     }
 
     public final Uri f() {
-        return this.f48715i.p();
+        return this.f49283i.p();
     }
 }

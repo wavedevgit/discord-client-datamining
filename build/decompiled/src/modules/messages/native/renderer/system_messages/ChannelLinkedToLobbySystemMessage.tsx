@@ -33,7 +33,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/messages/native/renderer/system_messages/ChannelLinkedToLobbySystemMessage.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun56559: for (var _fun56559_ip = 0;;) switch (_fun56559_ip) {
+        _fun56594: for (var _fun56594_ip = 0;;) switch (_fun56594_ip) {
             case 0:
                 var4 = arg0;
                 var6 = var4.message;
@@ -54,16 +54,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12 = var0 != var10;
                 var1 = '';
                 if (!var12) {
-                    _fun56559_ip = 87;
-                    continue _fun56559
+                    _fun56594_ip = 87;
+                    continue _fun56594
                 }
             case 84:
                 var1 = var10;
             case 87:
                 var1 = var5.bind(var9)(var1);
                 if (!(var0 != var1)) {
-                    _fun56559_ip = 501;
-                    continue _fun56559
+                    _fun56594_ip = 502;
+                    continue _fun56594
                 }
             case 99:
                 var13 = _closure1_slot0;
@@ -94,39 +94,39 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var14 = 'username';
                 var7 = null;
                 if (!(var14 === var11)) {
-                    _fun56559_ip = 228;
-                    continue _fun56559
+                    _fun56594_ip = 229;
+                    continue _fun56594
                 }
-            case 225:
+            case 226:
                 var7 = var10;
-            case 228:
+            case 229:
                 if (!(var0 == var7)) {
-                    _fun56559_ip = 238;
-                    continue _fun56559
+                    _fun56594_ip = 239;
+                    continue _fun56594
                 }
-            case 232:
+            case 233:
                 var7 = var8.defaultUsernameColor;
-            case 238:
+            case 239:
                 var5.linkColor = var7;
                 var5.roleColor = var10;
                 var7 = null;
                 if (!var13) {
-                    _fun56559_ip = 256;
-                    continue _fun56559
+                    _fun56594_ip = 257;
+                    continue _fun56594
                 }
-            case 253:
+            case 254:
                 var7 = var12;
-            case 256:
+            case 257:
                 var5.roleColors = var7;
                 var7 = 'dot';
                 var7 = var7 === var11;
                 if (!var7) {
-                    _fun56559_ip = 276;
-                    continue _fun56559
+                    _fun56594_ip = 277;
+                    continue _fun56594
                 }
-            case 272:
+            case 273:
                 var7 = var0 != var10;
-            case 276:
+            case 277:
                 var5.shouldShowRoleDot = var7;
                 var6 = var6.channel_id;
                 var5.messageChannelId = var6;
@@ -177,10 +177,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var18 = var1;
                 var2 = copyDataProperties(var18, var17);
                 return var1;
-            case 501:
+            case 502:
                 return var0;
         }
     };
     var2.createChannelLinkedToLobbySystemMessage = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3451, 660, 6762, 6770, 6771, 1686, 1234, 6772, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3454, 660, 6744, 6752, 6753, 1689, 1235, 6754, 2]);

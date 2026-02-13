@@ -13,46 +13,46 @@ import kotlin.jvm.internal.Intrinsics;
 public final class e extends h {
 
     /* renamed from: i  reason: collision with root package name */
-    public static final b f52002i = new b(null);
+    public static final b f52570i = new b(null);
 
     /* renamed from: d  reason: collision with root package name */
-    private final Method f52003d;
+    private final Method f52571d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Method f52004e;
+    private final Method f52572e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final Method f52005f;
+    private final Method f52573f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final Class f52006g;
+    private final Class f52574g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final Class f52007h;
+    private final Class f52575h;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     private static final class a implements InvocationHandler {
 
         /* renamed from: a  reason: collision with root package name */
-        private final List f52008a;
+        private final List f52576a;
 
         /* renamed from: b  reason: collision with root package name */
-        private boolean f52009b;
+        private boolean f52577b;
 
         /* renamed from: c  reason: collision with root package name */
-        private String f52010c;
+        private String f52578c;
 
         public a(List protocols) {
             Intrinsics.checkNotNullParameter(protocols, "protocols");
-            this.f52008a = protocols;
+            this.f52576a = protocols;
         }
 
         public final String a() {
-            return this.f52010c;
+            return this.f52578c;
         }
 
         public final boolean b() {
-            return this.f52009b;
+            return this.f52577b;
         }
 
         @Override // java.lang.reflect.InvocationHandler
@@ -68,10 +68,10 @@ public final class e extends h {
                 return Boolean.TRUE;
             }
             if (Intrinsics.areEqual(name, "unsupported") && Intrinsics.areEqual(Void.TYPE, returnType)) {
-                this.f52009b = true;
+                this.f52577b = true;
                 return null;
             } else if (Intrinsics.areEqual(name, "protocols") && objArr.length == 0) {
-                return this.f52008a;
+                return this.f52576a;
             } else {
                 if ((Intrinsics.areEqual(name, "selectProtocol") || Intrinsics.areEqual(name, "select")) && Intrinsics.areEqual(String.class, returnType) && objArr.length == 1) {
                     Object obj = objArr[0];
@@ -85,8 +85,8 @@ public final class e extends h {
                                 Object obj2 = list.get(i10);
                                 Intrinsics.checkNotNull(obj2, "null cannot be cast to non-null type kotlin.String");
                                 String str = (String) obj2;
-                                if (this.f52008a.contains(str)) {
-                                    this.f52010c = str;
+                                if (this.f52576a.contains(str)) {
+                                    this.f52578c = str;
                                     return str;
                                 } else if (i10 == size) {
                                     break;
@@ -95,15 +95,15 @@ public final class e extends h {
                                 }
                             }
                         }
-                        String str2 = (String) this.f52008a.get(0);
-                        this.f52010c = str2;
+                        String str2 = (String) this.f52576a.get(0);
+                        this.f52578c = str2;
                         return str2;
                     }
                 }
                 if ((Intrinsics.areEqual(name, "protocolSelected") || Intrinsics.areEqual(name, "selected")) && objArr.length == 1) {
                     Object obj3 = objArr[0];
                     Intrinsics.checkNotNull(obj3, "null cannot be cast to non-null type kotlin.String");
-                    this.f52010c = (String) obj3;
+                    this.f52578c = (String) obj3;
                     return null;
                 }
                 return method.invoke(this, Arrays.copyOf(objArr, objArr.length));
@@ -155,18 +155,18 @@ public final class e extends h {
         Intrinsics.checkNotNullParameter(removeMethod, "removeMethod");
         Intrinsics.checkNotNullParameter(clientProviderClass, "clientProviderClass");
         Intrinsics.checkNotNullParameter(serverProviderClass, "serverProviderClass");
-        this.f52003d = putMethod;
-        this.f52004e = getMethod;
-        this.f52005f = removeMethod;
-        this.f52006g = clientProviderClass;
-        this.f52007h = serverProviderClass;
+        this.f52571d = putMethod;
+        this.f52572e = getMethod;
+        this.f52573f = removeMethod;
+        this.f52574g = clientProviderClass;
+        this.f52575h = serverProviderClass;
     }
 
     @Override // vu.h
     public void b(SSLSocket sslSocket) {
         Intrinsics.checkNotNullParameter(sslSocket, "sslSocket");
         try {
-            this.f52005f.invoke(null, sslSocket);
+            this.f52573f.invoke(null, sslSocket);
         } catch (IllegalAccessException e10) {
             throw new AssertionError("failed to remove ALPN", e10);
         } catch (InvocationTargetException e11) {
@@ -179,7 +179,7 @@ public final class e extends h {
         Intrinsics.checkNotNullParameter(sslSocket, "sslSocket");
         Intrinsics.checkNotNullParameter(protocols, "protocols");
         try {
-            this.f52003d.invoke(null, sslSocket, Proxy.newProxyInstance(h.class.getClassLoader(), new Class[]{this.f52006g, this.f52007h}, new a(h.f52016a.b(protocols))));
+            this.f52571d.invoke(null, sslSocket, Proxy.newProxyInstance(h.class.getClassLoader(), new Class[]{this.f52574g, this.f52575h}, new a(h.f52584a.b(protocols))));
         } catch (IllegalAccessException e10) {
             throw new AssertionError("failed to set ALPN", e10);
         } catch (InvocationTargetException e11) {
@@ -191,7 +191,7 @@ public final class e extends h {
     public String h(SSLSocket sslSocket) {
         Intrinsics.checkNotNullParameter(sslSocket, "sslSocket");
         try {
-            InvocationHandler invocationHandler = Proxy.getInvocationHandler(this.f52004e.invoke(null, sslSocket));
+            InvocationHandler invocationHandler = Proxy.getInvocationHandler(this.f52572e.invoke(null, sslSocket));
             Intrinsics.checkNotNull(invocationHandler, "null cannot be cast to non-null type okhttp3.internal.platform.Jdk8WithJettyBootPlatform.AlpnProvider");
             a aVar = (a) invocationHandler;
             if (!aVar.b() && aVar.a() == null) {

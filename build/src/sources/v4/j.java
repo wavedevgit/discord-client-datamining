@@ -42,49 +42,49 @@ import ys.z;
 public final class j implements h {
 
     /* renamed from: o  reason: collision with root package name */
-    public static final a f51355o = new a(null);
+    public static final a f51923o = new a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final Context f51356a;
+    private final Context f51924a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final g5.c f51357b;
+    private final g5.c f51925b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Lazy f51358c;
+    private final Lazy f51926c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Lazy f51359d;
+    private final Lazy f51927d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Lazy f51360e;
+    private final Lazy f51928e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final c.InterfaceC0708c f51361f;
+    private final c.InterfaceC0708c f51929f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final v4.b f51362g;
+    private final v4.b f51930g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final q f51363h;
+    private final q f51931h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final CoroutineScope f51364i = kotlinx.coroutines.i.a(j1.b(null, 1, null).O0(m0.c().P1()).O0(new e(z.f55836n, this)));
+    private final CoroutineScope f51932i = kotlinx.coroutines.i.a(j1.b(null, 1, null).O0(m0.c().P1()).O0(new e(z.f56404n, this)));
 
     /* renamed from: j  reason: collision with root package name */
-    private final v f51365j;
+    private final v f51933j;
 
     /* renamed from: k  reason: collision with root package name */
-    private final p f51366k;
+    private final p f51934k;
 
     /* renamed from: l  reason: collision with root package name */
-    private final v4.b f51367l;
+    private final v4.b f51935l;
 
     /* renamed from: m  reason: collision with root package name */
-    private final List f51368m;
+    private final List f51936m;
 
     /* renamed from: n  reason: collision with root package name */
-    private final AtomicBoolean f51369n;
+    private final AtomicBoolean f51937n;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a {
@@ -100,26 +100,26 @@ public final class j implements h {
     static final class b extends k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f51370d;
+        int f51938d;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ g5.h f51372i;
+        final /* synthetic */ g5.h f51940i;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         b(g5.h hVar, Continuation continuation) {
             super(2, continuation);
-            this.f51372i = hVar;
+            this.f51940i = hVar;
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
-            return new b(this.f51372i, continuation);
+            return new b(this.f51940i, continuation);
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
             Object f10 = gs.b.f();
-            int i10 = this.f51370d;
+            int i10 = this.f51938d;
             if (i10 != 0) {
                 if (i10 == 1) {
                     kotlin.c.b(obj);
@@ -129,8 +129,8 @@ public final class j implements h {
             } else {
                 kotlin.c.b(obj);
                 j jVar = j.this;
-                g5.h hVar = this.f51372i;
-                this.f51370d = 1;
+                g5.h hVar = this.f51940i;
+                this.f51938d = 1;
                 obj = jVar.e(hVar, 0, this);
                 if (obj == f10) {
                     return f10;
@@ -145,7 +145,7 @@ public final class j implements h {
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((b) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
+            return ((b) create(coroutineScope, continuation)).invokeSuspend(Unit.f32556a);
         }
     }
 
@@ -154,25 +154,25 @@ public final class j implements h {
     public static final class c extends kotlin.coroutines.jvm.internal.d {
 
         /* renamed from: d  reason: collision with root package name */
-        Object f51373d;
+        Object f51941d;
 
         /* renamed from: e  reason: collision with root package name */
-        Object f51374e;
+        Object f51942e;
 
         /* renamed from: i  reason: collision with root package name */
-        Object f51375i;
+        Object f51943i;
 
         /* renamed from: o  reason: collision with root package name */
-        Object f51376o;
+        Object f51944o;
 
         /* renamed from: p  reason: collision with root package name */
-        Object f51377p;
+        Object f51945p;
 
         /* renamed from: q  reason: collision with root package name */
-        /* synthetic */ Object f51378q;
+        /* synthetic */ Object f51946q;
 
         /* renamed from: s  reason: collision with root package name */
-        int f51380s;
+        int f51948s;
 
         c(Continuation continuation) {
             super(continuation);
@@ -180,8 +180,8 @@ public final class j implements h {
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
-            this.f51378q = obj;
-            this.f51380s |= Integer.MIN_VALUE;
+            this.f51946q = obj;
+            this.f51948s |= Integer.MIN_VALUE;
             return j.this.e(null, 0, this);
         }
     }
@@ -191,43 +191,43 @@ public final class j implements h {
     public static final class d extends k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f51381d;
+        int f51949d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ g5.h f51382e;
+        final /* synthetic */ g5.h f51950e;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ j f51383i;
+        final /* synthetic */ j f51951i;
 
         /* renamed from: o  reason: collision with root package name */
-        final /* synthetic */ h5.i f51384o;
+        final /* synthetic */ h5.i f51952o;
 
         /* renamed from: p  reason: collision with root package name */
-        final /* synthetic */ v4.c f51385p;
+        final /* synthetic */ v4.c f51953p;
 
         /* renamed from: q  reason: collision with root package name */
-        final /* synthetic */ Bitmap f51386q;
+        final /* synthetic */ Bitmap f51954q;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         d(g5.h hVar, j jVar, h5.i iVar, v4.c cVar, Bitmap bitmap, Continuation continuation) {
             super(2, continuation);
-            this.f51382e = hVar;
-            this.f51383i = jVar;
-            this.f51384o = iVar;
-            this.f51385p = cVar;
-            this.f51386q = bitmap;
+            this.f51950e = hVar;
+            this.f51951i = jVar;
+            this.f51952o = iVar;
+            this.f51953p = cVar;
+            this.f51954q = bitmap;
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
-            return new d(this.f51382e, this.f51383i, this.f51384o, this.f51385p, this.f51386q, continuation);
+            return new d(this.f51950e, this.f51951i, this.f51952o, this.f51953p, this.f51954q, continuation);
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
             boolean z10;
             Object f10 = gs.b.f();
-            int i10 = this.f51381d;
+            int i10 = this.f51949d;
             if (i10 != 0) {
                 if (i10 == 1) {
                     kotlin.c.b(obj);
@@ -236,19 +236,19 @@ public final class j implements h {
                 throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
             }
             kotlin.c.b(obj);
-            g5.h hVar = this.f51382e;
-            List list = this.f51383i.f51368m;
-            g5.h hVar2 = this.f51382e;
-            h5.i iVar = this.f51384o;
-            v4.c cVar = this.f51385p;
-            if (this.f51386q != null) {
+            g5.h hVar = this.f51950e;
+            List list = this.f51951i.f51936m;
+            g5.h hVar2 = this.f51950e;
+            h5.i iVar = this.f51952o;
+            v4.c cVar = this.f51953p;
+            if (this.f51954q != null) {
                 z10 = true;
             } else {
                 z10 = false;
             }
             b5.c cVar2 = new b5.c(hVar, list, 0, hVar2, iVar, cVar, z10);
-            g5.h hVar3 = this.f51382e;
-            this.f51381d = 1;
+            g5.h hVar3 = this.f51950e;
+            this.f51949d = 1;
             Object g10 = cVar2.g(hVar3, this);
             if (g10 == f10) {
                 return f10;
@@ -258,7 +258,7 @@ public final class j implements h {
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((d) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
+            return ((d) create(coroutineScope, continuation)).invokeSuspend(Unit.f32556a);
         }
     }
 
@@ -266,36 +266,36 @@ public final class j implements h {
     public static final class e extends kotlin.coroutines.a implements z {
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ j f51387e;
+        final /* synthetic */ j f51955e;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public e(z.b bVar, j jVar) {
             super(bVar);
-            this.f51387e = jVar;
+            this.f51955e = jVar;
         }
 
         @Override // ys.z
         public void N0(CoroutineContext coroutineContext, Throwable th2) {
-            this.f51387e.h();
+            this.f51955e.h();
         }
     }
 
     public j(Context context, g5.c cVar, Lazy lazy, Lazy lazy2, Lazy lazy3, c.InterfaceC0708c interfaceC0708c, v4.b bVar, q qVar, t tVar) {
-        this.f51356a = context;
-        this.f51357b = cVar;
-        this.f51358c = lazy;
-        this.f51359d = lazy2;
-        this.f51360e = lazy3;
-        this.f51361f = interfaceC0708c;
-        this.f51362g = bVar;
-        this.f51363h = qVar;
+        this.f51924a = context;
+        this.f51925b = cVar;
+        this.f51926c = lazy;
+        this.f51927d = lazy2;
+        this.f51928e = lazy3;
+        this.f51929f = interfaceC0708c;
+        this.f51930g = bVar;
+        this.f51931h = qVar;
         v vVar = new v(this);
-        this.f51365j = vVar;
+        this.f51933j = vVar;
         p pVar = new p(this, vVar, null);
-        this.f51366k = pVar;
-        this.f51367l = bVar.h().c(new d5.c(), HttpUrl.class).c(new d5.g(), String.class).c(new d5.b(), Uri.class).c(new d5.f(), Uri.class).c(new d5.e(), Integer.class).c(new d5.a(), byte[].class).b(new c5.c(), Uri.class).b(new c5.a(qVar.a()), File.class).a(new j.b(lazy3, lazy2, qVar.e()), Uri.class).a(new i.a(), File.class).a(new a.C0003a(), Uri.class).a(new d.a(), Uri.class).a(new k.b(), Uri.class).a(new e.a(), Drawable.class).a(new b.a(), Bitmap.class).a(new c.a(), ByteBuffer.class).d(new f.c(qVar.c(), qVar.b())).e();
-        this.f51368m = CollectionsKt.M0(getComponents().c(), new b5.a(this, vVar, pVar, null));
-        this.f51369n = new AtomicBoolean(false);
+        this.f51934k = pVar;
+        this.f51935l = bVar.h().c(new d5.c(), HttpUrl.class).c(new d5.g(), String.class).c(new d5.b(), Uri.class).c(new d5.f(), Uri.class).c(new d5.e(), Integer.class).c(new d5.a(), byte[].class).b(new c5.c(), Uri.class).b(new c5.a(qVar.a()), File.class).a(new j.b(lazy3, lazy2, qVar.e()), Uri.class).a(new i.a(), File.class).a(new a.C0003a(), Uri.class).a(new d.a(), Uri.class).a(new k.b(), Uri.class).a(new e.a(), Drawable.class).a(new b.a(), Bitmap.class).a(new c.a(), ByteBuffer.class).d(new f.c(qVar.c(), qVar.b())).e();
+        this.f51936m = CollectionsKt.M0(getComponents().c(), new b5.a(this, vVar, pVar, null));
+        this.f51937n = new AtomicBoolean(false);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -433,7 +433,7 @@ public final class j implements h {
     @Override // v4.h
     public g5.e a(g5.h hVar) {
         g0 b10;
-        b10 = ys.i.b(this.f51364i, null, null, new b(hVar, null), 3, null);
+        b10 = ys.i.b(this.f51932i, null, null, new b(hVar, null), 3, null);
         if (hVar.M() instanceof i5.d) {
             return k5.k.l(((i5.d) hVar.M()).getView()).b(b10);
         }
@@ -442,20 +442,20 @@ public final class j implements h {
 
     @Override // v4.h
     public e5.c b() {
-        return (e5.c) this.f51358c.getValue();
+        return (e5.c) this.f51926c.getValue();
     }
 
     public final Context f() {
-        return this.f51356a;
+        return this.f51924a;
     }
 
     public g5.c g() {
-        return this.f51357b;
+        return this.f51925b;
     }
 
     @Override // v4.h
     public v4.b getComponents() {
-        return this.f51367l;
+        return this.f51935l;
     }
 
     public final t h() {
@@ -463,12 +463,12 @@ public final class j implements h {
     }
 
     public final q i() {
-        return this.f51363h;
+        return this.f51931h;
     }
 
     public final void m(int i10) {
         e5.c cVar;
-        Lazy lazy = this.f51358c;
+        Lazy lazy = this.f51926c;
         if (lazy != null && (cVar = (e5.c) lazy.getValue()) != null) {
             cVar.a(i10);
         }
@@ -476,9 +476,9 @@ public final class j implements h {
 
     @Override // v4.h
     public void shutdown() {
-        if (!this.f51369n.getAndSet(true)) {
-            kotlinx.coroutines.i.f(this.f51364i, null, 1, null);
-            this.f51365j.e();
+        if (!this.f51937n.getAndSet(true)) {
+            kotlinx.coroutines.i.f(this.f51932i, null, 1, null);
+            this.f51933j.e();
             e5.c b10 = b();
             if (b10 != null) {
                 b10.clear();

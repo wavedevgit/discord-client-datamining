@@ -85,7 +85,7 @@ public final class a implements ScaleGestureDetector.OnScaleGestureListener {
         @Override // kotlin.jvm.functions.Function1
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             a((c.a) obj);
-            return Unit.f31988a;
+            return Unit.f32556a;
         }
     }
 
@@ -116,7 +116,7 @@ public final class a implements ScaleGestureDetector.OnScaleGestureListener {
         @Override // kotlin.jvm.functions.Function1
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             a((c.a) obj);
-            return Unit.f31988a;
+            return Unit.f32556a;
         }
     }
 
@@ -141,7 +141,7 @@ public final class a implements ScaleGestureDetector.OnScaleGestureListener {
         @Override // kotlin.jvm.functions.Function1
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             a((c.a) obj);
-            return Unit.f31988a;
+            return Unit.f32556a;
         }
     }
 
@@ -176,7 +176,7 @@ public final class a implements ScaleGestureDetector.OnScaleGestureListener {
         @Override // kotlin.jvm.functions.Function1
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             a((c.a) obj);
-            return Unit.f31988a;
+            return Unit.f32556a;
         }
     }
 
@@ -210,7 +210,7 @@ public final class a implements ScaleGestureDetector.OnScaleGestureListener {
         @Override // kotlin.jvm.functions.Function1
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             a((c.a) obj);
-            return Unit.f31988a;
+            return Unit.f32556a;
         }
     }
 

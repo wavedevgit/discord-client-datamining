@@ -20,7 +20,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = 'modules/premium/game_server/utils/gameServerResponseToInstance.tsx';
     var1 = var3.bind(var4)(var1);
     var1 = function arg0() {
-        _fun56411: for (var _fun56411_ip = 0;;) switch (_fun56411_ip) {
+        _fun56446: for (var _fun56446_ip = 0;;) switch (_fun56446_ip) {
             case 0:
                 var1 = arg0;
                 var0 = {};
@@ -41,8 +41,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var2 != var3;
                 var2 = 0;
                 if (!var4) {
-                    _fun56411_ip = 95;
-                    continue _fun56411
+                    _fun56446_ip = 95;
+                    continue _fun56446
                 }
             case 92:
                 var2 = var3;

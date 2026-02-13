@@ -178,13 +178,13 @@ public final class NotificationClient {
         JsonObject a11 = xVar.a();
         BufferedOutputStream bufferedOutputStream = new BufferedOutputStream(new FileOutputStream(file, true), 8192);
         try {
-            Json.a aVar = Json.f35100d;
+            Json.a aVar = Json.f35668d;
             aVar.a();
             byte[] bytes = aVar.c(JsonObject.Companion.serializer(), a11).getBytes(Charsets.UTF_8);
             Intrinsics.checkNotNullExpressionValue(bytes, "getBytes(...)");
             bufferedOutputStream.write(bytes);
             bufferedOutputStream.write(10);
-            Unit unit = Unit.f31988a;
+            Unit unit = Unit.f32556a;
             c.a(bufferedOutputStream, null);
         } finally {
         }
@@ -250,7 +250,7 @@ public final class NotificationClient {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit tokenListener$lambda$1(String it) {
         Intrinsics.checkNotNullParameter(it, "it");
-        return Unit.f31988a;
+        return Unit.f32556a;
     }
 
     private final boolean updateAndComputeIfShouldRunBackgroundSync(Context context) {
@@ -372,7 +372,7 @@ public final class NotificationClient {
         String str;
         Intrinsics.checkNotNullParameter(context, "context");
         Intrinsics.checkNotNullParameter(data, "data");
-        a.C0767a c0767a = a.f55153b;
+        a.C0767a c0767a = a.f55721b;
         KSerializer serializer = NotificationData.Companion.serializer();
         Map y10 = o0.y(data);
         y10.put("time_received", String.valueOf(System.currentTimeMillis()));
@@ -382,7 +382,7 @@ public final class NotificationClient {
             str = AppStateModule.APP_STATE_ACTIVE;
         }
         y10.put("app_state", str);
-        Unit unit = Unit.f31988a;
+        Unit unit = Unit.f32556a;
         NotificationData notificationData = (NotificationData) c0767a.d(serializer, y10);
         appendNotificationToCacheFile(context, notificationData);
         showNotification(context, notificationData, data, true);

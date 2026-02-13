@@ -4,25 +4,25 @@ package jk;
 public final class v0 implements g0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final i0 f31172a;
+    private final i0 f31740a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f31173b;
+    private final String f31741b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Object[] f31174c;
+    private final Object[] f31742c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f31175d;
+    private final int f31743d;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public v0(i0 i0Var, String str, Object[] objArr) {
-        this.f31172a = i0Var;
-        this.f31173b = str;
-        this.f31174c = objArr;
+        this.f31740a = i0Var;
+        this.f31741b = str;
+        this.f31742c = objArr;
         char charAt = str.charAt(0);
         if (charAt < 55296) {
-            this.f31175d = charAt;
+            this.f31743d = charAt;
             return;
         }
         int i10 = charAt & 8191;
@@ -36,7 +36,7 @@ public final class v0 implements g0 {
                 i11 += 13;
                 i12 = i13;
             } else {
-                this.f31175d = i10 | (charAt2 << i11);
+                this.f31743d = i10 | (charAt2 << i11);
                 return;
             }
         }
@@ -44,7 +44,7 @@ public final class v0 implements g0 {
 
     @Override // jk.g0
     public boolean a() {
-        if ((this.f31175d & 2) == 2) {
+        if ((this.f31743d & 2) == 2) {
             return true;
         }
         return false;
@@ -52,12 +52,12 @@ public final class v0 implements g0 {
 
     @Override // jk.g0
     public i0 b() {
-        return this.f31172a;
+        return this.f31740a;
     }
 
     @Override // jk.g0
     public s0 c() {
-        if ((this.f31175d & 1) == 1) {
+        if ((this.f31743d & 1) == 1) {
             return s0.PROTO2;
         }
         return s0.PROTO3;
@@ -65,11 +65,11 @@ public final class v0 implements g0 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public Object[] d() {
-        return this.f31174c;
+        return this.f31742c;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public String e() {
-        return this.f31173b;
+        return this.f31741b;
     }
 }

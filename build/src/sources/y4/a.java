@@ -15,49 +15,49 @@ public interface a {
     public static final class C0772a {
 
         /* renamed from: a  reason: collision with root package name */
-        private c0 f55386a;
+        private c0 f55954a;
 
         /* renamed from: f  reason: collision with root package name */
-        private long f55391f;
+        private long f55959f;
 
         /* renamed from: b  reason: collision with root package name */
-        private h f55387b = h.f6270b;
+        private h f55955b = h.f6270b;
 
         /* renamed from: c  reason: collision with root package name */
-        private double f55388c = 0.02d;
+        private double f55956c = 0.02d;
 
         /* renamed from: d  reason: collision with root package name */
-        private long f55389d = 10485760;
+        private long f55957d = 10485760;
 
         /* renamed from: e  reason: collision with root package name */
-        private long f55390e = 262144000;
+        private long f55958e = 262144000;
 
         /* renamed from: g  reason: collision with root package name */
-        private CoroutineDispatcher f55392g = m0.b();
+        private CoroutineDispatcher f55960g = m0.b();
 
         public final a a() {
             long j10;
-            c0 c0Var = this.f55386a;
+            c0 c0Var = this.f55954a;
             if (c0Var != null) {
-                if (this.f55388c > 0.0d) {
+                if (this.f55956c > 0.0d) {
                     try {
                         File file = c0Var.toFile();
                         file.mkdir();
                         StatFs statFs = new StatFs(file.getAbsolutePath());
-                        j10 = kotlin.ranges.d.o((long) (this.f55388c * statFs.getBlockCountLong() * statFs.getBlockSizeLong()), this.f55389d, this.f55390e);
+                        j10 = kotlin.ranges.d.o((long) (this.f55956c * statFs.getBlockCountLong() * statFs.getBlockSizeLong()), this.f55957d, this.f55958e);
                     } catch (Exception unused) {
-                        j10 = this.f55389d;
+                        j10 = this.f55957d;
                     }
                 } else {
-                    j10 = this.f55391f;
+                    j10 = this.f55959f;
                 }
-                return new e(j10, c0Var, this.f55387b, this.f55392g);
+                return new e(j10, c0Var, this.f55955b, this.f55960g);
             }
             throw new IllegalStateException("directory == null");
         }
 
         public final C0772a b(c0 c0Var) {
-            this.f55386a = c0Var;
+            this.f55954a = c0Var;
             return this;
         }
 

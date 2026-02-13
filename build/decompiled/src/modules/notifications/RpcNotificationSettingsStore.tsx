@@ -6,7 +6,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2 = exports;
     var6 = dependencyMap;
     var0 = function() {
-        _fun72725: for (var _fun72725_ip = 0;;) switch (_fun72725_ip) {
+        _fun70333: for (var _fun70333_ip = 0;;) switch (_fun70333_ip) {
             case 0:
             case 2: // try_start_0
                 var1 = global;
@@ -27,8 +27,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = !var1;
                 var _closure2_slot0 = var1;
             case 72: // try_end0
-                _fun72725_ip = 76;
-                continue _fun72725;
+                _fun70333_ip = 76;
+                continue _fun70333;
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
@@ -111,7 +111,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = var3.Store;
     var3 = function(arg0) { // Environment: var4
         var3 = function() {
-            _fun72729: for (var _fun72729_ip = 0;;) switch (_fun72729_ip) {
+            _fun70337: for (var _fun70337_ip = 0;;) switch (_fun70337_ip) {
                 case 0:
                     var3 = this;
                     var2 = undefined;
@@ -125,16 +125,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = _closure1_slot8;
                     var0 = var0.bind(var2)();
                     if (var0) {
-                        _fun72729_ip = 69;
-                        continue _fun72729
+                        _fun70337_ip = 69;
+                        continue _fun70337
                     }
                 case 51:
                     var6 = var8.apply;
                     var4 = arguments;
                     var0 = var4;
                     var0 = var6.bind(var8)(var3, var0);
-                    _fun72729_ip = 105;
-                    continue _fun72729;
+                    _fun70337_ip = 105;
+                    continue _fun70337;
                 case 69:
                     var6 = global;
                     var7 = var6.Reflect;
@@ -173,7 +173,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var6 = 'areSlayerNotificationsSuppressed';
         var4.key = var6;
         var5 = function() {
-            _fun72731: for (var _fun72731_ip = 0;;) switch (_fun72731_ip) {
+            _fun70339: for (var _fun70339_ip = 0;;) switch (_fun70339_ip) {
                 case 0:
                     var4 = _closure1_slot7;
                     var3 = var4.getCurrentConfig;
@@ -186,8 +186,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = var3.bind(var4)(var2, var1);
                     var1 = var1.enabled;
                     if (var1) {
-                        _fun72731_ip = 102;
-                        continue _fun72731
+                        _fun70339_ip = 102;
+                        continue _fun70339
                     }
                 case 46:
                     var6 = _closure1_slot6;
@@ -200,8 +200,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1 = var9.getId;
                             var1 = var1.bind(var9)();
                             if (var2 !== var1) {
-                                _fun72731_ip = 58;
-                                continue _fun72731
+                                _fun70339_ip = 58;
+                                continue _fun70339
                             }
                             case 96: var1 = true;
                             return var1;
@@ -234,7 +234,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var3.RPC_APP_DISCONNECTED = var9;
     var4 = function arg0() {
-        _fun72733: for (var _fun72733_ip = 0;;) switch (_fun72733_ip) {
+        _fun70341: for (var _fun70341_ip = 0;;) switch (_fun70341_ip) {
             case 0:
                 var0 = arg0;
                 var3 = _closure1_slot6;
@@ -242,8 +242,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = delete var3[var2];
                 var2 = var0.suppressNotifications;
                 if (!var2) {
-                    _fun72733_ip = 51;
-                    continue _fun72733
+                    _fun70341_ip = 51;
+                    continue _fun70341
                 }
             case 31:
                 var2 = _closure1_slot6;
@@ -275,4 +275,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var3;
     var2.Killswitch = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 15, 17, 18, 1216, 3117, 566, 806, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 15, 17, 18, 1217, 3120, 566, 807, 2]);

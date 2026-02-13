@@ -30,6 +30,6 @@ public abstract class k0 {
         ImageView imageView = fVar.f21862b;
         Intrinsics.checkNotNullExpressionValue(imageView, "imageView");
         uq.g.b(imageView, combinedStepImagePreview.getStyles());
-        return Unit.f31988a;
+        return Unit.f32556a;
     }
 }

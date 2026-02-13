@@ -1,53 +1,32 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun44823: for (var _fun44823_ip = 0;;) switch (_fun44823_ip) {
-        case 0:
-            var1 = exports;
-            var2 = global;
-            var5 = var2.Object;
-            var4 = var5.defineProperty;
-            var3 = {};
-            var0 = true;
-            var3.value = var0;
-            var0 = '__esModule';
-            var0 = var4.bind(var5)(var1, var0, var3);
-            var0 = var2.setImmediate;
-            var3 = 'function';
-            var0 = typeof var0;
-            if (!(var3 !== var0)) {
-                _fun44823_ip = 105;
-                continue _fun44823
-            }
-        case 52:
-            var0 = var2.requestAnimationFrame;
-            var0 = typeof var0;
-            if (!(var3 !== var0)) {
-                _fun44823_ip = 85;
-                continue _fun44823
-            }
-        case 65:
-            var4 = var2.queueMicrotask;
-            var3 = var4.bind;
-            var0 = null;
-            var0 = var3.bind(var4)(var0);
-            _fun44823_ip = 103;
-            continue _fun44823;
-        case 85:
-            var5 = var2.requestAnimationFrame;
-            var4 = var5.bind;
-            var3 = null;
-            var0 = var4.bind(var5)(var3);
-        case 103:
-            _fun44823_ip = 123;
-            continue _fun44823;
-        case 105:
-            var4 = var2.setImmediate;
-            var3 = var4.bind;
-            var2 = null;
-            var0 = var3.bind(var4)(var2);
-        case 123:
-            var1.ghQueueMicrotask = var0;
-            var0 = undefined;
-            return var0;
-    }
+    var1 = exports;
+    var3 = global;
+    var6 = var3.Object;
+    var5 = var6.defineProperty;
+    var4 = {};
+    var2 = true;
+    var4.value = var2;
+    var2 = '__esModule';
+    var2 = var5.bind(var6)(var1, var2, var4);
+    var2 = function() {
+        var0 = undefined;
+        return var0;
+    };
+    var4 = var3.Object;
+    var3 = var4.freeze;
+    var3 = var3.bind(var4)(var2);
+    var1.print = var2;
+    var0 = function arg0() {
+        var0 = global;
+        var2 = var0.console;
+        var1 = var2.warn;
+        var0 = '[BottomSheet] could not enable logging on production!';
+        var0 = var1.bind(var2)(var0);
+        var0 = undefined;
+        return var0;
+    };
+    var1.enableLogging = var0;
+    var0 = undefined;
+    return var0;
 })(undefined, undefined, undefined, undefined, undefined, undefined, []);

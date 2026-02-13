@@ -9,7 +9,7 @@ import jk.u;
 abstract class c extends AbstractList implements u.b {
 
     /* renamed from: d  reason: collision with root package name */
-    private boolean f30991d = true;
+    private boolean f31559d = true;
 
     @Override // java.util.AbstractList, java.util.AbstractCollection, java.util.Collection, java.util.List
     public boolean add(Object obj) {
@@ -25,7 +25,7 @@ abstract class c extends AbstractList implements u.b {
 
     /* JADX INFO: Access modifiers changed from: protected */
     public void b() {
-        if (this.f30991d) {
+        if (this.f31559d) {
             return;
         }
         throw new UnsupportedOperationException();
@@ -73,7 +73,7 @@ abstract class c extends AbstractList implements u.b {
 
     @Override // jk.u.b
     public final void m() {
-        this.f30991d = false;
+        this.f31559d = false;
     }
 
     @Override // java.util.AbstractList, java.util.List
@@ -104,7 +104,7 @@ abstract class c extends AbstractList implements u.b {
 
     @Override // jk.u.b
     public boolean y() {
-        return this.f30991d;
+        return this.f31559d;
     }
 
     @Override // java.util.AbstractList, java.util.List

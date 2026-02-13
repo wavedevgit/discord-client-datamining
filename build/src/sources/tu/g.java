@@ -19,31 +19,31 @@ import ru.k;
 public final class g implements ru.d {
 
     /* renamed from: g  reason: collision with root package name */
-    public static final a f50225g = new a(null);
+    public static final a f50793g = new a(null);
 
     /* renamed from: h  reason: collision with root package name */
-    private static final List f50226h = mu.e.w("connection", "host", "keep-alive", "proxy-connection", "te", "transfer-encoding", "encoding", "upgrade", ":method", ":path", ":scheme", ":authority");
+    private static final List f50794h = mu.e.w("connection", "host", "keep-alive", "proxy-connection", "te", "transfer-encoding", "encoding", "upgrade", ":method", ":path", ":scheme", ":authority");
 
     /* renamed from: i  reason: collision with root package name */
-    private static final List f50227i = mu.e.w("connection", "host", "keep-alive", "proxy-connection", "te", "transfer-encoding", "encoding", "upgrade");
+    private static final List f50795i = mu.e.w("connection", "host", "keep-alive", "proxy-connection", "te", "transfer-encoding", "encoding", "upgrade");
 
     /* renamed from: a  reason: collision with root package name */
-    private final qu.f f50228a;
+    private final qu.f f50796a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final ru.g f50229b;
+    private final ru.g f50797b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final f f50230c;
+    private final f f50798c;
 
     /* renamed from: d  reason: collision with root package name */
-    private volatile i f50231d;
+    private volatile i f50799d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final lu.j f50232e;
+    private final lu.j f50800e;
 
     /* renamed from: f  reason: collision with root package name */
-    private volatile boolean f50233f;
+    private volatile boolean f50801f;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a {
@@ -55,13 +55,13 @@ public final class g implements ru.d {
             Intrinsics.checkNotNullParameter(request, "request");
             Headers h10 = request.h();
             ArrayList arrayList = new ArrayList(h10.size() + 4);
-            arrayList.add(new c(c.f50130g, request.j()));
-            arrayList.add(new c(c.f50131h, ru.i.f47773a.c(request.n())));
+            arrayList.add(new c(c.f50698g, request.j()));
+            arrayList.add(new c(c.f50699h, ru.i.f48341a.c(request.n())));
             String f10 = request.f("Host");
             if (f10 != null) {
-                arrayList.add(new c(c.f50133j, f10));
+                arrayList.add(new c(c.f50701j, f10));
             }
-            arrayList.add(new c(c.f50132i, request.n().s()));
+            arrayList.add(new c(c.f50700i, request.n().s()));
             int size = h10.size();
             for (int i10 = 0; i10 < size; i10++) {
                 String e10 = h10.e(i10);
@@ -69,7 +69,7 @@ public final class g implements ru.d {
                 Intrinsics.checkNotNullExpressionValue(US, "US");
                 String lowerCase = e10.toLowerCase(US);
                 Intrinsics.checkNotNullExpressionValue(lowerCase, "this as java.lang.String).toLowerCase(locale)");
-                if (!g.f50226h.contains(lowerCase) || (Intrinsics.areEqual(lowerCase, "te") && Intrinsics.areEqual(h10.k(i10), "trailers"))) {
+                if (!g.f50794h.contains(lowerCase) || (Intrinsics.areEqual(lowerCase, "te") && Intrinsics.areEqual(h10.k(i10), "trailers"))) {
                     arrayList.add(new c(lowerCase, h10.k(i10)));
                 }
             }
@@ -86,14 +86,14 @@ public final class g implements ru.d {
                 String e10 = headerBlock.e(i10);
                 String k10 = headerBlock.k(i10);
                 if (Intrinsics.areEqual(e10, ":status")) {
-                    k.a aVar2 = ru.k.f47776d;
+                    k.a aVar2 = ru.k.f48344d;
                     kVar = aVar2.a("HTTP/1.1 " + k10);
-                } else if (!g.f50227i.contains(e10)) {
+                } else if (!g.f50795i.contains(e10)) {
                     aVar.d(e10, k10);
                 }
             }
             if (kVar != null) {
-                return new Response.a().p(protocol).g(kVar.f47778b).m(kVar.f47779c).k(aVar.f());
+                return new Response.a().p(protocol).g(kVar.f48346b).m(kVar.f48347c).k(aVar.f());
             }
             throw new ProtocolException("Expected ':status' header not present");
         }
@@ -107,17 +107,17 @@ public final class g implements ru.d {
         Intrinsics.checkNotNullParameter(connection, "connection");
         Intrinsics.checkNotNullParameter(chain, "chain");
         Intrinsics.checkNotNullParameter(http2Connection, "http2Connection");
-        this.f50228a = connection;
-        this.f50229b = chain;
-        this.f50230c = http2Connection;
+        this.f50796a = connection;
+        this.f50797b = chain;
+        this.f50798c = http2Connection;
         List H = client.H();
         lu.j jVar = lu.j.H2_PRIOR_KNOWLEDGE;
-        this.f50232e = H.contains(jVar) ? jVar : lu.j.HTTP_2;
+        this.f50800e = H.contains(jVar) ? jVar : lu.j.HTTP_2;
     }
 
     @Override // ru.d
     public void a() {
-        i iVar = this.f50231d;
+        i iVar = this.f50799d;
         Intrinsics.checkNotNull(iVar);
         iVar.n().close();
     }
@@ -125,20 +125,20 @@ public final class g implements ru.d {
     @Override // ru.d
     public Source b(Response response) {
         Intrinsics.checkNotNullParameter(response, "response");
-        i iVar = this.f50231d;
+        i iVar = this.f50799d;
         Intrinsics.checkNotNull(iVar);
         return iVar.p();
     }
 
     @Override // ru.d
     public qu.f c() {
-        return this.f50228a;
+        return this.f50796a;
     }
 
     @Override // ru.d
     public void cancel() {
-        this.f50233f = true;
-        i iVar = this.f50231d;
+        this.f50801f = true;
+        i iVar = this.f50799d;
         if (iVar != null) {
             iVar.f(b.CANCEL);
         }
@@ -156,7 +156,7 @@ public final class g implements ru.d {
     @Override // ru.d
     public Sink e(Request request, long j10) {
         Intrinsics.checkNotNullParameter(request, "request");
-        i iVar = this.f50231d;
+        i iVar = this.f50799d;
         Intrinsics.checkNotNull(iVar);
         return iVar.n();
     }
@@ -165,7 +165,7 @@ public final class g implements ru.d {
     public void f(Request request) {
         boolean z10;
         Intrinsics.checkNotNullParameter(request, "request");
-        if (this.f50231d != null) {
+        if (this.f50799d != null) {
             return;
         }
         if (request.c() != null) {
@@ -173,18 +173,18 @@ public final class g implements ru.d {
         } else {
             z10 = false;
         }
-        this.f50231d = this.f50230c.E1(f50225g.a(request), z10);
-        if (!this.f50233f) {
-            i iVar = this.f50231d;
+        this.f50799d = this.f50798c.E1(f50793g.a(request), z10);
+        if (!this.f50801f) {
+            i iVar = this.f50799d;
             Intrinsics.checkNotNull(iVar);
             TimeUnit timeUnit = TimeUnit.MILLISECONDS;
-            iVar.v().g(this.f50229b.g(), timeUnit);
-            i iVar2 = this.f50231d;
+            iVar.v().g(this.f50797b.g(), timeUnit);
+            i iVar2 = this.f50799d;
             Intrinsics.checkNotNull(iVar2);
-            iVar2.E().g(this.f50229b.j(), timeUnit);
+            iVar2.E().g(this.f50797b.j(), timeUnit);
             return;
         }
-        i iVar3 = this.f50231d;
+        i iVar3 = this.f50799d;
         Intrinsics.checkNotNull(iVar3);
         iVar3.f(b.CANCEL);
         throw new IOException("Canceled");
@@ -192,9 +192,9 @@ public final class g implements ru.d {
 
     @Override // ru.d
     public Response.a g(boolean z10) {
-        i iVar = this.f50231d;
+        i iVar = this.f50799d;
         if (iVar != null) {
-            Response.a b10 = f50225g.b(iVar.C(), this.f50232e);
+            Response.a b10 = f50793g.b(iVar.C(), this.f50800e);
             if (z10 && b10.h() == 100) {
                 return null;
             }
@@ -205,6 +205,6 @@ public final class g implements ru.d {
 
     @Override // ru.d
     public void h() {
-        this.f50230c.flush();
+        this.f50798c.flush();
     }
 }

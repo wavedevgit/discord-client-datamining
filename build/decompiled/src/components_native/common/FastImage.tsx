@@ -1,7 +1,7 @@
 // components_native/common/FastImage.tsx
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun48505: for (var _fun48505_ip = 0;;) switch (_fun48505_ip) {
+    _fun43715: for (var _fun43715_ip = 0;;) switch (_fun43715_ip) {
         case 0:
             var4 = require;
             var2 = exports;
@@ -42,7 +42,6 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var7 = var4.bind(var0)(var7);
             var10 = var7.Image;
             var _closure1_slot0 = var10;
-            var11 = var7.StyleSheet;
             var7 = var7.NativeModules;
             var _closure1_slot1 = var7;
             var7 = 2;
@@ -50,7 +49,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var7 = var4.bind(var0)(var7);
             var7 = var7.jsx;
             var _closure1_slot2 = var7;
-            var8 = var11.create;
+            var7 = 3;
+            var7 = var5[var7];
+            var11 = var4.bind(var0)(var7);
+            var8 = var11.createStyles;
             var7 = {};
             var12 = {};
             var13 = 'hidden';
@@ -58,7 +60,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var7.base = var12;
             var7 = var8.bind(var11)(var7);
             var _closure1_slot3 = var7;
-            var7 = 3;
+            var7 = 4;
             var8 = var5[var7];
             var7 = arg2;
             var8 = var7.bind(var0)(var8);
@@ -72,98 +74,99 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var _closure1_slot4 = var7;
             var8 = var9.memo;
             var7 = function(arg0) { // Environment: var6
-                _fun48507: for (var _fun48507_ip = 0;;) switch (_fun48507_ip) {
+                _fun43717: for (var _fun43717_ip = 0;;) switch (_fun43717_ip) {
                     case 0:
                         var4 = arg0;
-                        var0 = var4.source;
-                        var10 = var4.style;
-                        var2 = var4.placeholder;
-                        var1 = var4.enableAnimation;
+                        var1 = _closure1_slot3;
                         var3 = undefined;
-                        var8 = var3 === var1;
+                        var12 = var1.bind(var3)();
+                        var1 = var4.source;
+                        var11 = var4.style;
+                        var5 = var4.placeholder;
+                        var2 = var4.enableAnimation;
+                        var9 = var3 === var2;
+                        if (var9) {
+                            _fun43717_ip = 48;
+                            continue _fun43717
+                        }
+                    case 45:
+                        var9 = var2;
+                    case 48:
+                        var2 = var4.fade;
+                        var8 = var3 === var2;
                         if (var8) {
-                            _fun48507_ip = 37;
-                            continue _fun48507
+                            _fun43717_ip = 64;
+                            continue _fun43717
                         }
-                    case 34:
-                        var8 = var1;
-                    case 37:
-                        var1 = var4.fade;
-                        var7 = var3 === var1;
-                        if (var7) {
-                            _fun48507_ip = 53;
-                            continue _fun48507
+                    case 61:
+                        var8 = var2;
+                    case 64:
+                        var2 = var4.usesSmallCache;
+                        var7 = var3 !== var2;
+                        if (!var7) {
+                            _fun43717_ip = 80;
+                            continue _fun43717
                         }
-                    case 50:
-                        var7 = var1;
-                    case 53:
-                        var1 = var4.usesSmallCache;
-                        var6 = var3 !== var1;
-                        if (!var6) {
-                            _fun48507_ip = 69;
-                            continue _fun48507
-                        }
-                    case 66:
-                        var6 = var1;
-                    case 69:
-                        var1 = 'number';
-                        var0 = typeof var0;
-                        if (!(var1 !== var0)) {
-                            _fun48507_ip = 224;
-                            continue _fun48507
-                        }
-                    case 83:
-                        var9 = null;
-                        var0 = var9 != var2;
-                        var5 = null;
-                        if (!var0) {
-                            _fun48507_ip = 112;
-                            continue _fun48507
+                    case 77:
+                        var7 = var2;
+                    case 80:
+                        var2 = 'number';
+                        var1 = typeof var1;
+                        if (!(var2 !== var1)) {
+                            _fun43717_ip = 225;
+                            continue _fun43717
                         }
                     case 94:
-                        var1 = _closure1_slot0;
-                        var0 = var1.resolveAssetSource;
-                        var5 = var0.bind(var1)(var2);
-                    case 112:
-                        var2 = _closure1_slot2;
-                        var1 = _closure1_slot4;
-                        var0 = {};
-                        var14 = var0;
-                        var13 = var4;
-                        var12 = copyDataProperties(var14, var13);
-                        var11 = _closure1_slot3;
-                        var12 = var11.base;
-                        var11 = new Array(2);
-                        var11[0] = var12;
-                        var11[1] = var10;
-                        var10 = 'style';
-                        var0[var10] = var11;
-                        var10 = var9 == var5;
-                        var9 = undefined;
-                        if (var10) {
-                            _fun48507_ip = 180;
-                            continue _fun48507
+                        var10 = null;
+                        var1 = var10 != var5;
+                        var6 = null;
+                        if (!var1) {
+                            _fun43717_ip = 120;
+                            continue _fun43717
                         }
-                    case 175:
-                        var9 = var5.uri;
-                    case 180:
-                        var5 = 'placeholder';
-                        var0[var5] = var9;
-                        var5 = 'enableAnimation';
-                        var0[var5] = var8;
-                        var5 = 'fade';
-                        var0[var5] = var7;
-                        var5 = 'usesSmallCache';
-                        var0[var5] = var6;
-                        var0 = var2.bind(var3)(var1, var0);
-                        return var0;
-                    case 224:
+                    case 105:
+                        var2 = _closure1_slot0;
+                        var1 = var2.resolveAssetSource;
+                        var6 = var1.bind(var2)(var5);
+                    case 120:
+                        var5 = _closure1_slot2;
+                        var2 = _closure1_slot4;
+                        var1 = {};
+                        var15 = var1;
+                        var14 = var4;
+                        var13 = copyDataProperties(var15, var14);
+                        var13 = var12.base;
+                        var12 = new Array(2);
+                        var12[0] = var13;
+                        var12[1] = var11;
+                        var11 = 'style';
+                        var1[var11] = var12;
+                        var11 = var10 == var6;
+                        var10 = undefined;
+                        if (var11) {
+                            _fun43717_ip = 181;
+                            continue _fun43717
+                        }
+                    case 176:
+                        var10 = var6.uri;
+                    case 181:
+                        var6 = 'placeholder';
+                        var1[var6] = var10;
+                        var6 = 'enableAnimation';
+                        var1[var6] = var9;
+                        var6 = 'fade';
+                        var1[var6] = var8;
+                        var6 = 'usesSmallCache';
+                        var1[var6] = var7;
+                        var1 = var5.bind(var3)(var2, var1);
+                        return var1;
+                    case 225:
                         var2 = _closure1_slot2;
                         var1 = _closure1_slot0;
                         var0 = {};
-                        var14 = var0;
-                        var13 = var4;
-                        var4 = copyDataProperties(var14, var13);
+                        var15 = var0;
+                        var14 = var4;
+                        var4 = copyDataProperties(var15, var14);
                         var0 = var2.bind(var3)(var1, var0);
                         return var0;
                 }
@@ -239,19 +242,19 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var3.preload = var6;
-            var6 = 4;
+            var6 = 5;
             var6 = var5[var6];
             var7 = var4.bind(var0)(var6);
             var6 = var7.isAndroid;
             var6 = var6.bind(var7)();
             if (!var6) {
-                _fun48505_ip = 282;
-                continue _fun48505
+                _fun43715_ip = 288;
+                continue _fun43715
             }
-        case 279:
+        case 285:
             var1 = var3;
-        case 282:
-            var3 = 5;
+        case 288:
+            var3 = 6;
             var3 = var5[var3];
             var5 = var4.bind(var0)(var3);
             var4 = var5.fileFinishedImporting;
@@ -260,4 +263,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2.default = var1;
             return var0;
     }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 4082, 478, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 4082, 478, 2]);

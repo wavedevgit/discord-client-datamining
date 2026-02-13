@@ -18,26 +18,26 @@ public abstract class g2 {
         InputTextArea.Attributes attributes = config.getAttributes();
         if (attributes != null) {
             gn.t b10 = inputTextAreaComponent.b();
-            TextInputEditText editText = c10.f48265b;
+            TextInputEditText editText = c10.f48833b;
             Intrinsics.checkNotNullExpressionValue(editText, "editText");
             gn.u.b(b10, editText);
             String label = attributes.getLabel();
             if (label != null) {
-                c10.f48266c.setHint(label);
+                c10.f48834c.setHint(label);
             }
             String placeholder = attributes.getPlaceholder();
             if (placeholder != null) {
-                c10.f48266c.setPlaceholderText(placeholder);
-                TextInputLayout inputLayout = c10.f48266c;
+                c10.f48834c.setPlaceholderText(placeholder);
+                TextInputLayout inputLayout = c10.f48834c;
                 Intrinsics.checkNotNullExpressionValue(inputLayout, "inputLayout");
                 lq.o.a(inputLayout);
             }
             Integer rows = attributes.getRows();
             if (rows != null) {
                 int intValue = rows.intValue();
-                c10.f48265b.setMaxLines(intValue);
-                c10.f48265b.setMinLines(intValue);
-                c10.f48265b.setVerticalScrollBarEnabled(true);
+                c10.f48833b.setMaxLines(intValue);
+                c10.f48833b.setMinLines(intValue);
+                c10.f48833b.setVerticalScrollBarEnabled(true);
             }
         }
         uiComponentHelper.d(new Function0() { // from class: pq.f2
@@ -57,10 +57,10 @@ public abstract class g2 {
     public static final Unit c(InputTextArea inputTextArea, sq.n nVar) {
         InputTextBasedComponentStyle styles = inputTextArea.getStyles();
         if (styles != null) {
-            TextInputLayout inputLayout = nVar.f48266c;
+            TextInputLayout inputLayout = nVar.f48834c;
             Intrinsics.checkNotNullExpressionValue(inputLayout, "inputLayout");
             uq.a0.k(inputLayout, styles);
         }
-        return Unit.f31988a;
+        return Unit.f32556a;
     }
 }

@@ -190,7 +190,7 @@ public final class DiscordAudioManager implements DiscordAudioManagerInterface {
     public static final Unit emitEffectiveDevice$lambda$3(AndroidAudioDevice androidAudioDevice, DiscordAudioManagerListener listener) {
         Intrinsics.checkNotNullParameter(listener, "listener");
         listener.onActiveAudioDeviceChanged(androidAudioDevice);
-        return Unit.f31988a;
+        return Unit.f32556a;
     }
 
     private final SimpleDeviceType getActiveAudioDevice() {

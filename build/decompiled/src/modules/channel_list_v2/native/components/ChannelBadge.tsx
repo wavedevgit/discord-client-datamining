@@ -24,15 +24,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 1;
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
-    var7 = var3.jsx;
-    var _closure1_slot3 = var7;
-    var3 = 2;
-    var3 = var5[var3];
-    var3 = var4.bind(var0)(var3);
-    var6 = var3.NewBadge;
-    var3 = {};
-    var3 = var7.bind(var0)(var6, var3);
-    var _closure1_slot4 = var3;
+    var3 = var3.jsx;
+    var _closure1_slot3 = var3;
     var3 = 7;
     var3 = var5[var3];
     var5 = var4.bind(var0)(var3);
@@ -40,22 +33,22 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/channel_list_v2/native/components/ChannelBadge.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun88256: for (var _fun88256_ip = 0;;) switch (_fun88256_ip) {
+        _fun90295: for (var _fun90295_ip = 0;;) switch (_fun90295_ip) {
             case 0:
                 var1 = arg0;
                 var0 = var1.newChannel;
                 var4 = undefined;
                 if (!(var0 === var4)) {
-                    _fun88256_ip = 17;
-                    continue _fun88256
+                    _fun90295_ip = 17;
+                    continue _fun90295
                 }
             case 15:
                 var0 = false;
             case 17:
                 var6 = var1.mentionCount;
                 if (!(var6 === var4)) {
-                    _fun88256_ip = 29;
-                    continue _fun88256
+                    _fun90295_ip = 29;
+                    continue _fun90295
                 }
             case 27:
                 var6 = 0;
@@ -67,62 +60,62 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13 = var1.locale;
                 var2 = null;
                 if (!(var2 != var6)) {
-                    _fun88256_ip = 74;
-                    continue _fun88256
+                    _fun90295_ip = 74;
+                    continue _fun90295
                 }
             case 65:
                 var1 = 0;
                 if (!(!(var6 > var1))) {
-                    _fun88256_ip = 378;
-                    continue _fun88256
+                    _fun90295_ip = 412;
+                    continue _fun90295
                 }
             case 74:
                 if (var0) {
-                    _fun88256_ip = 369;
-                    continue _fun88256
+                    _fun90295_ip = 369;
+                    continue _fun90295
                 }
             case 80:
                 if (!(var2 != var14)) {
-                    _fun88256_ip = 93;
-                    continue _fun88256
+                    _fun90295_ip = 93;
+                    continue _fun90295
                 }
             case 84:
                 var0 = 0;
                 if (!(!(var14 > var0))) {
-                    _fun88256_ip = 232;
-                    continue _fun88256
+                    _fun90295_ip = 232;
+                    continue _fun90295
                 }
             case 93:
                 if (!(var2 != var7)) {
-                    _fun88256_ip = 103;
-                    continue _fun88256
+                    _fun90295_ip = 103;
+                    continue _fun90295
                 }
             case 97:
                 var0 = 0;
                 if (!(!(var7 > var0))) {
-                    _fun88256_ip = 171;
-                    continue _fun88256
+                    _fun90295_ip = 171;
+                    continue _fun90295
                 }
             case 103:
                 var1 = var2 != var8;
                 var0 = null;
                 if (!var1) {
-                    _fun88256_ip = 169;
-                    continue _fun88256
+                    _fun90295_ip = 169;
+                    continue _fun90295
                 }
             case 112:
                 var1 = 0;
                 var1 = var8 > var1;
                 var0 = null;
                 if (!var1) {
-                    _fun88256_ip = 169;
-                    continue _fun88256
+                    _fun90295_ip = 169;
+                    continue _fun90295
                 }
             case 123:
                 var3 = _closure1_slot3;
                 var2 = _closure1_slot1;
                 var9 = _closure1_slot2;
-                var1 = 3;
+                var1 = 2;
                 var1 = var9[var1];
                 var2 = var2.bind(var4)(var1);
                 var1 = {};
@@ -131,8 +124,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1.eventsMentionBadge = var8;
                 var0 = var3.bind(var4)(var2, var1);
             case 169:
-                _fun88256_ip = 227;
-                continue _fun88256;
+                _fun90295_ip = 227;
+                continue _fun90295;
             case 171:
                 var3 = _closure1_slot3;
                 var2 = _closure1_slot0;
@@ -148,8 +141,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1.children = var7;
                 var0 = var3.bind(var4)(var2, var1);
             case 227:
-                _fun88256_ip = 367;
-                continue _fun88256;
+                _fun90295_ip = 367;
+                continue _fun90295;
             case 232:
                 var3 = _closure1_slot3;
                 var12 = _closure1_slot0;
@@ -182,28 +175,36 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1.children = var7;
                 var0 = var3.bind(var4)(var2, var1);
             case 367:
-                _fun88256_ip = 376;
-                continue _fun88256;
+                _fun90295_ip = 410;
+                continue _fun90295;
             case 369:
-                var0 = _closure1_slot4;
-            case 376:
-                _fun88256_ip = 422;
-                continue _fun88256;
-            case 378:
+                var3 = _closure1_slot3;
+                var2 = _closure1_slot0;
+                var7 = _closure1_slot2;
+                var1 = 3;
+                var1 = var7[var1];
+                var1 = var2.bind(var4)(var1);
+                var2 = var1.NewBadge;
+                var1 = {};
+                var0 = var3.bind(var4)(var2, var1);
+            case 410:
+                _fun90295_ip = 456;
+                continue _fun90295;
+            case 412:
                 var3 = _closure1_slot3;
                 var2 = _closure1_slot1;
                 var7 = _closure1_slot2;
-                var1 = 3;
+                var1 = 2;
                 var1 = var7[var1];
                 var2 = var2.bind(var4)(var1);
                 var1 = {};
                 var1.value = var6;
                 var1.isMentionLowImportance = var5;
                 var0 = var3.bind(var4)(var2, var1);
-            case 422:
+            case 456:
                 return var0;
         }
     };
     var2.renderChannelBadge = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 11412, 7714, 3938, 1234, 1604, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 8703, 11710, 3938, 1235, 1604, 2]);

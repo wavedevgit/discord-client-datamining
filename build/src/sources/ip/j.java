@@ -6,22 +6,22 @@ import com.withpersona.sdk2.inquiry.FallbackMode;
 public final class j implements lr.d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final lr.h f30384a;
+    private final lr.h f30952a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final lr.h f30385b;
+    private final lr.h f30953b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final lr.h f30386c;
+    private final lr.h f30954c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final lr.h f30387d;
+    private final lr.h f30955d;
 
     public j(lr.h hVar, lr.h hVar2, lr.h hVar3, lr.h hVar4) {
-        this.f30384a = hVar;
-        this.f30385b = hVar2;
-        this.f30386c = hVar3;
-        this.f30387d = hVar4;
+        this.f30952a = hVar;
+        this.f30953b = hVar2;
+        this.f30954c = hVar3;
+        this.f30955d = hVar4;
     }
 
     public static j a(lr.h hVar, lr.h hVar2, lr.h hVar3, lr.h hVar4) {
@@ -35,6 +35,6 @@ public final class j implements lr.d {
     @Override // javax.inject.Provider
     /* renamed from: b */
     public i get() {
-        return c((FallbackMode) this.f30384a.get(), (a) this.f30385b.get(), (ep.f) this.f30386c.get(), (w) this.f30387d.get());
+        return c((FallbackMode) this.f30952a.get(), (a) this.f30953b.get(), (ep.f) this.f30954c.get(), (w) this.f30955d.get());
     }
 }

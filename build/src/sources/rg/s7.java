@@ -5,7 +5,7 @@ import bj.c;
 final class s7 implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final s7 f47132a = new s7();
+    static final s7 f47700a = new s7();
 
     static {
         c.b a10 = bj.c.a("options");

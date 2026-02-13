@@ -77,11 +77,11 @@ public final class InspectorNetworkHelper {
                                 }
                                 inspectorNetworkRequestListener.onData(new String(bArr, 0, read, Charsets.UTF_8));
                             }
-                            Unit unit = Unit.f31988a;
+                            Unit unit = Unit.f32556a;
                             c.a(byteStream, null);
                         }
                         inspectorNetworkRequestListener.onCompletion();
-                        Unit unit2 = Unit.f31988a;
+                        Unit unit2 = Unit.f32556a;
                         c.a(a10, null);
                     } catch (IOException e10) {
                         InspectorNetworkRequestListener.this.onError(e10.getMessage());

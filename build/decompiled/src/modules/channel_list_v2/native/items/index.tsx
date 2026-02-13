@@ -33,10 +33,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var5.bind(var0)(var6);
     var6 = var6.RecentlyActiveCategory;
     var2.RecentlyActiveCategory = var6;
+    var6 = var4[var1];
+    var6 = var5.bind(var0)(var6);
+    var6 = var6.renderCategoryItem;
+    var2.renderCategoryItem = var6;
     var1 = var4[var1];
     var1 = var5.bind(var0)(var1);
-    var1 = var1.renderCategoryItem;
-    var2.renderCategoryItem = var1;
+    var1 = var1.useCategoryStyles;
+    var2.useCategoryStyles = var1;
     var1 = 2;
     var1 = var4[var1];
     var1 = var3.bind(var0)(var1);
@@ -46,4 +50,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var3.bind(var0)(var1);
     var2.RedesignVoiceUserSummary = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [2, 13327, 13328, 13343]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [2, 13323, 13324, 13339]);

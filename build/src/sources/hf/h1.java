@@ -5,44 +5,44 @@ import android.content.ComponentName;
 public final class h1 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f27258a;
+    private final String f27826a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f27259b;
+    private final String f27827b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final ComponentName f27260c;
+    private final ComponentName f27828c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f27261d;
+    private final int f27829d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final boolean f27262e;
+    private final boolean f27830e;
 
     public h1(String str, String str2, int i10, boolean z10) {
         q.f(str);
-        this.f27258a = str;
+        this.f27826a = str;
         q.f(str2);
-        this.f27259b = str2;
-        this.f27260c = null;
-        this.f27261d = 4225;
-        this.f27262e = z10;
+        this.f27827b = str2;
+        this.f27828c = null;
+        this.f27829d = 4225;
+        this.f27830e = z10;
     }
 
     public final String a() {
-        return this.f27258a;
+        return this.f27826a;
     }
 
     public final String b() {
-        return this.f27259b;
+        return this.f27827b;
     }
 
     public final ComponentName c() {
-        return this.f27260c;
+        return this.f27828c;
     }
 
     public final boolean d() {
-        return this.f27262e;
+        return this.f27830e;
     }
 
     public final boolean equals(Object obj) {
@@ -53,20 +53,20 @@ public final class h1 {
             return false;
         }
         h1 h1Var = (h1) obj;
-        if (o.a(this.f27258a, h1Var.f27258a) && o.a(this.f27259b, h1Var.f27259b) && o.a(this.f27260c, h1Var.f27260c) && this.f27262e == h1Var.f27262e) {
+        if (o.a(this.f27826a, h1Var.f27826a) && o.a(this.f27827b, h1Var.f27827b) && o.a(this.f27828c, h1Var.f27828c) && this.f27830e == h1Var.f27830e) {
             return true;
         }
         return false;
     }
 
     public final int hashCode() {
-        return o.b(this.f27258a, this.f27259b, this.f27260c, 4225, Boolean.valueOf(this.f27262e));
+        return o.b(this.f27826a, this.f27827b, this.f27828c, 4225, Boolean.valueOf(this.f27830e));
     }
 
     public final String toString() {
-        String str = this.f27258a;
+        String str = this.f27826a;
         if (str == null) {
-            ComponentName componentName = this.f27260c;
+            ComponentName componentName = this.f27828c;
             q.l(componentName);
             return componentName.flattenToString();
         }

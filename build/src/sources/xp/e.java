@@ -18,68 +18,68 @@ import wp.x0;
 public final class e implements ViewBinding {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ScrollView f55116a;
+    private final ScrollView f55684a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final Guideline f55117b;
+    public final Guideline f55685b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final ConstraintLayout f55118c;
+    public final ConstraintLayout f55686c;
 
     /* renamed from: d  reason: collision with root package name */
-    public final ImageView f55119d;
+    public final ImageView f55687d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final ThemeableLottieAnimationView f55120e;
+    public final ThemeableLottieAnimationView f55688e;
 
     /* renamed from: f  reason: collision with root package name */
-    public final Guideline f55121f;
+    public final Guideline f55689f;
 
     /* renamed from: g  reason: collision with root package name */
-    public final Pi2NavigationBar f55122g;
+    public final Pi2NavigationBar f55690g;
 
     /* renamed from: h  reason: collision with root package name */
-    public final ConstraintLayout f55123h;
+    public final ConstraintLayout f55691h;
 
     /* renamed from: i  reason: collision with root package name */
-    public final Guideline f55124i;
+    public final Guideline f55692i;
 
     /* renamed from: j  reason: collision with root package name */
-    public final Button f55125j;
+    public final Button f55693j;
 
     /* renamed from: k  reason: collision with root package name */
-    public final TextView f55126k;
+    public final TextView f55694k;
 
     /* renamed from: l  reason: collision with root package name */
-    public final TextView f55127l;
+    public final TextView f55695l;
 
     /* renamed from: m  reason: collision with root package name */
-    public final TextView f55128m;
+    public final TextView f55696m;
 
     private e(ScrollView scrollView, Guideline guideline, ConstraintLayout constraintLayout, ImageView imageView, ThemeableLottieAnimationView themeableLottieAnimationView, Guideline guideline2, Pi2NavigationBar pi2NavigationBar, ConstraintLayout constraintLayout2, Guideline guideline3, Button button, TextView textView, TextView textView2, TextView textView3) {
-        this.f55116a = scrollView;
-        this.f55117b = guideline;
-        this.f55118c = constraintLayout;
-        this.f55119d = imageView;
-        this.f55120e = themeableLottieAnimationView;
-        this.f55121f = guideline2;
-        this.f55122g = pi2NavigationBar;
-        this.f55123h = constraintLayout2;
-        this.f55124i = guideline3;
-        this.f55125j = button;
-        this.f55126k = textView;
-        this.f55127l = textView2;
-        this.f55128m = textView3;
+        this.f55684a = scrollView;
+        this.f55685b = guideline;
+        this.f55686c = constraintLayout;
+        this.f55687d = imageView;
+        this.f55688e = themeableLottieAnimationView;
+        this.f55689f = guideline2;
+        this.f55690g = pi2NavigationBar;
+        this.f55691h = constraintLayout2;
+        this.f55692i = guideline3;
+        this.f55693j = button;
+        this.f55694k = textView;
+        this.f55695l = textView2;
+        this.f55696m = textView3;
     }
 
     public static e a(View view) {
-        int i10 = w0.f53480f;
+        int i10 = w0.f54048f;
         Guideline guideline = (Guideline) e4.a.a(view, i10);
         if (guideline != null) {
-            i10 = w0.f53487m;
+            i10 = w0.f54055m;
             ConstraintLayout constraintLayout = (ConstraintLayout) e4.a.a(view, i10);
             if (constraintLayout != null) {
-                i10 = w0.f53500z;
+                i10 = w0.f54068z;
                 ImageView imageView = (ImageView) e4.a.a(view, i10);
                 if (imageView != null) {
                     i10 = w0.B;
@@ -126,7 +126,7 @@ public final class e implements ViewBinding {
     }
 
     public static e c(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z10) {
-        View inflate = layoutInflater.inflate(x0.f53517e, viewGroup, false);
+        View inflate = layoutInflater.inflate(x0.f54085e, viewGroup, false);
         if (z10) {
             viewGroup.addView(inflate);
         }
@@ -136,6 +136,6 @@ public final class e implements ViewBinding {
     @Override // androidx.viewbinding.ViewBinding
     /* renamed from: b */
     public ScrollView getRoot() {
-        return this.f55116a;
+        return this.f55684a;
     }
 }

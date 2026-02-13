@@ -28,255 +28,269 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 2;
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
-    var3 = var3.ThemeTypes;
+    var3 = var3.useEffectiveThemeOverride;
     var _closure1_slot5 = var3;
-    var3 = 10;
+    var3 = 3;
+    var3 = var5[var3];
+    var3 = var4.bind(var0)(var3);
+    var3 = var3.ThemeTypes;
+    var _closure1_slot6 = var3;
+    var3 = 11;
     var3 = var5[var3];
     var5 = var4.bind(var0)(var3);
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/user_profile/hooks/useProfileTheme.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun57753: for (var _fun57753_ip = 0;;) switch (_fun57753_ip) {
+        _fun57799: for (var _fun57799_ip = 0;;) switch (_fun57799_ip) {
             case 0:
                 var0 = arg0;
-                var12 = var0.user;
-                var13 = var0.displayProfile;
-                var11 = var0.pendingThemeColors;
-                var14 = var0.pendingAvatarSrc;
-                var2 = var0.isPreview;
-                var3 = var0.forceUserTheme;
-                var4 = _closure1_slot1;
-                var5 = _closure1_slot2;
-                var1 = 3;
-                var1 = var5[var1];
-                var9 = undefined;
-                var1 = var4.bind(var9)(var1);
-                var8 = var1.bind(var9)();
-                var4 = _closure1_slot0;
-                var1 = 4;
-                var1 = var5[var1];
-                var6 = var4.bind(var9)(var1);
-                var5 = var6.useStateFromStores;
-                var1 = _closure1_slot4;
-                var4 = new Array(1);
-                var4[0] = var1;
-                var1 = function() { // Environment: var1
+                var13 = var0.user;
+                var14 = var0.displayProfile;
+                var12 = var0.pendingThemeColors;
+                var15 = var0.pendingAvatarSrc;
+                var3 = var0.isPreview;
+                var4 = var0.forceUserTheme;
+                var2 = _closure1_slot1;
+                var6 = _closure1_slot2;
+                var0 = 4;
+                var0 = var6[var0];
+                var10 = undefined;
+                var0 = var2.bind(var10)(var0);
+                var9 = var0.bind(var10)();
+                var0 = _closure1_slot5;
+                var0 = var0.bind(var10)();
+                var5 = _closure1_slot0;
+                var2 = 5;
+                var2 = var6[var2];
+                var7 = var5.bind(var10)(var2);
+                var6 = var7.useStateFromStores;
+                var2 = _closure1_slot4;
+                var5 = new Array(1);
+                var5[0] = var2;
+                var2 = function() { // Environment: var2
                     var0 = _closure1_slot4;
                     var0 = var0.syncProfileThemeWithUserTheme;
                     return var0;
                 };
-                var4 = var5.bind(var6)(var4, var1);
-                var6 = null;
-                if (!(var6 == var14)) {
-                    _fun57753_ip = 162;
-                    continue _fun57753
+                var5 = var6.bind(var7)(var5, var2);
+                var7 = null;
+                if (!(var7 == var15)) {
+                    _fun57799_ip = 170;
+                    continue _fun57799
                 }
-            case 121:
-                var5 = var6 == var12;
-                var1 = undefined;
-                if (var5) {
-                    _fun57753_ip = 159;
-                    continue _fun57753
+            case 129:
+                var6 = var7 == var13;
+                var2 = undefined;
+                if (var6) {
+                    _fun57799_ip = 167;
+                    continue _fun57799
                 }
-            case 130:
-                var10 = var12.getAvatarURL;
-                var5 = var6 == var13;
-                var7 = undefined;
-                if (var5) {
-                    _fun57753_ip = 150;
-                    continue _fun57753
+            case 138:
+                var11 = var13.getAvatarURL;
+                var6 = var7 == var14;
+                var8 = undefined;
+                if (var6) {
+                    _fun57799_ip = 158;
+                    continue _fun57799
                 }
-            case 145:
-                var7 = var13.guildId;
-            case 150:
-                var5 = 80;
-                var1 = var10.bind(var12)(var7, var5);
-            case 159:
-                var14 = var1;
-            case 162:
-                var5 = _closure1_slot0;
-                var10 = _closure1_slot2;
-                var1 = 5;
-                var1 = var10[var1];
-                var16 = var5.bind(var9)(var1);
-                var15 = var16.unsafe_getResolvedRawColor;
-                var12 = {};
-                var7 = 1;
-                var12.saturation = var7;
-                var1 = 'PRIMARY_530';
-                var12 = var15.bind(var16)(var1, var12);
-                var1 = 6;
-                var1 = var10[var1];
-                var10 = var5.bind(var9)(var1);
-                var5 = var10.useAvatarColors;
-                var1 = false;
-                var10 = var5.bind(var10)(var14, var12, var1);
-                var5 = _closure1_slot3;
-                var1 = 2;
-                var5 = var5.bind(var9)(var10, var1);
-                var1 = 0;
-                var12 = var5[var1];
-                var10 = var5[var7];
-                if (!(var6 != var13)) {
-                    _fun57753_ip = 273;
-                    continue _fun57753
-                }
-            case 262:
-                var5 = var13.canEditThemes;
-                if (var5) {
-                    _fun57753_ip = 298;
-                    continue _fun57753
+            case 153:
+                var8 = var14.guildId;
+            case 158:
+                var6 = 80;
+                var2 = var11.bind(var13)(var8, var6);
+            case 167:
+                var15 = var2;
+            case 170:
+                var6 = _closure1_slot0;
+                var11 = _closure1_slot2;
+                var2 = 6;
+                var2 = var11[var2];
+                var17 = var6.bind(var10)(var2);
+                var16 = var17.unsafe_getResolvedRawColor;
+                var13 = {};
+                var8 = 1;
+                var13.saturation = var8;
+                var2 = 'PRIMARY_530';
+                var13 = var16.bind(var17)(var2, var13);
+                var2 = 7;
+                var2 = var11[var2];
+                var11 = var6.bind(var10)(var2);
+                var6 = var11.useAvatarColors;
+                var2 = false;
+                var11 = var6.bind(var11)(var15, var13, var2);
+                var6 = _closure1_slot3;
+                var2 = 2;
+                var6 = var6.bind(var10)(var11, var2);
+                var2 = 0;
+                var13 = var6[var2];
+                var11 = var6[var8];
+                if (!(var7 == var0)) {
+                    _fun57799_ip = 621;
+                    continue _fun57799
                 }
             case 273:
-                if (var2) {
-                    _fun57753_ip = 298;
-                    continue _fun57753
+                if (!(var7 != var14)) {
+                    _fun57799_ip = 288;
+                    continue _fun57799
                 }
-            case 276:
-                var2 = {
+            case 277:
+                var6 = var14.canEditThemes;
+                if (var6) {
+                    _fun57799_ip = 313;
+                    continue _fun57799
+                }
+            case 288:
+                if (var3) {
+                    _fun57799_ip = 313;
+                    continue _fun57799
+                }
+            case 291:
+                var3 = {
                     'theme': null,
                     'primaryColor': null,
                     'secondaryColor': null
                 };
-                var2.theme = var8;
-                return var2;
-            case 298:
-                var2 = var6 == var13;
-                var5 = undefined;
-                if (var2) {
-                    _fun57753_ip = 320;
-                    continue _fun57753
-                }
-            case 307:
-                var2 = var13.getPreviewThemeColors;
-                var5 = var2.bind(var13)(var11);
-            case 320:
-                var11 = var6 == var5;
-                var2 = undefined;
-                if (var11) {
-                    _fun57753_ip = 333;
-                    continue _fun57753
-                }
-            case 329:
-                var2 = var5[var1];
-            case 333:
-                if (!(var6 == var2)) {
-                    _fun57753_ip = 368;
-                    continue _fun57753
-                }
-            case 337:
-                var11 = _closure1_slot0;
-                var13 = _closure1_slot2;
-                var1 = 7;
-                var1 = var13[var1];
-                var11 = var11.bind(var9)(var1);
-                var1 = var11.hex2int;
-                var2 = var1.bind(var11)(var12);
-            case 368:
-                var11 = var6 == var5;
-                var1 = undefined;
-                if (var11) {
-                    _fun57753_ip = 381;
-                    continue _fun57753
-                }
-            case 377:
-                var1 = var5[var7];
-            case 381:
-                if (!(var6 == var1)) {
-                    _fun57753_ip = 416;
-                    continue _fun57753
-                }
-            case 385:
-                var7 = _closure1_slot0;
-                var11 = _closure1_slot2;
-                var5 = 7;
-                var5 = var11[var5];
-                var7 = var7.bind(var9)(var5);
-                var5 = var7.hex2int;
-                var1 = var5.bind(var7)(var10);
-            case 416:
-                var5 = var8;
-                if (var4) {
-                    _fun57753_ip = 472;
-                    continue _fun57753
-                }
-            case 422:
-                var5 = var8;
+                var3.theme = var9;
+                return var3;
+            case 313:
+                var3 = var7 == var14;
+                var6 = undefined;
                 if (var3) {
-                    _fun57753_ip = 472;
-                    continue _fun57753
+                    _fun57799_ip = 335;
+                    continue _fun57799
                 }
-            case 428:
-                var4 = _closure1_slot0;
-                var7 = _closure1_slot2;
-                var3 = 8;
-                var3 = var7[var3];
-                var4 = var4.bind(var9)(var3);
-                var3 = var4.getProfileTheme;
-                var4 = var3.bind(var4)(var2);
-                var3 = var8;
-                if (!(var6 != var4)) {
-                    _fun57753_ip = 469;
-                    continue _fun57753
+            case 322:
+                var3 = var14.getPreviewThemeColors;
+                var6 = var3.bind(var14)(var12);
+            case 335:
+                var12 = var7 == var6;
+                var3 = undefined;
+                if (var12) {
+                    _fun57799_ip = 348;
+                    continue _fun57799
                 }
-            case 466:
-                var3 = var4;
-            case 469:
-                var5 = var3;
-            case 472:
-                var3 = _closure1_slot5;
-                var3 = var3.DARK;
-                if (!(var5 === var3)) {
-                    _fun57753_ip = 523;
-                    continue _fun57753
+            case 344:
+                var3 = var6[var2];
+            case 348:
+                if (!(var7 == var3)) {
+                    _fun57799_ip = 383;
+                    continue _fun57799
                 }
-            case 486:
-                var4 = _closure1_slot0;
-                var6 = _closure1_slot2;
-                var3 = 9;
-                var3 = var6[var3];
-                var4 = var4.bind(var9)(var3);
-                var3 = var4.isThemeDark;
-                var4 = var3.bind(var4)(var8);
-                var3 = var8;
+            case 352:
+                var12 = _closure1_slot0;
+                var14 = _closure1_slot2;
+                var2 = 8;
+                var2 = var14[var2];
+                var12 = var12.bind(var10)(var2);
+                var2 = var12.hex2int;
+                var3 = var2.bind(var12)(var13);
+            case 383:
+                var12 = var7 == var6;
+                var2 = undefined;
+                if (var12) {
+                    _fun57799_ip = 396;
+                    continue _fun57799
+                }
+            case 392:
+                var2 = var6[var8];
+            case 396:
+                if (!(var7 == var2)) {
+                    _fun57799_ip = 431;
+                    continue _fun57799
+                }
+            case 400:
+                var8 = _closure1_slot0;
+                var12 = _closure1_slot2;
+                var6 = 8;
+                var6 = var12[var6];
+                var8 = var8.bind(var10)(var6);
+                var6 = var8.hex2int;
+                var2 = var6.bind(var8)(var11);
+            case 431:
+                var6 = var9;
+                if (var5) {
+                    _fun57799_ip = 487;
+                    continue _fun57799
+                }
+            case 437:
+                var6 = var9;
                 if (var4) {
-                    _fun57753_ip = 587;
-                    continue _fun57753
+                    _fun57799_ip = 487;
+                    continue _fun57799
                 }
-            case 523:
-                var4 = _closure1_slot5;
+            case 443:
+                var5 = _closure1_slot0;
+                var8 = _closure1_slot2;
+                var4 = 9;
+                var4 = var8[var4];
+                var5 = var5.bind(var10)(var4);
+                var4 = var5.getProfileTheme;
+                var5 = var4.bind(var5)(var3);
+                var4 = var9;
+                if (!(var7 != var5)) {
+                    _fun57799_ip = 484;
+                    continue _fun57799
+                }
+            case 481:
+                var4 = var5;
+            case 484:
+                var6 = var4;
+            case 487:
+                var4 = _closure1_slot6;
                 var4 = var4.DARK;
-                var4 = var5 === var4;
-                if (!var4) {
-                    _fun57753_ip = 571;
-                    continue _fun57753
+                if (!(var6 === var4)) {
+                    _fun57799_ip = 538;
+                    continue _fun57799
                 }
-            case 540:
-                var7 = _closure1_slot0;
-                var10 = _closure1_slot2;
-                var6 = 9;
-                var6 = var10[var6];
-                var7 = var7.bind(var9)(var6);
-                var6 = var7.isThemeLight;
-                var4 = var6.bind(var7)(var8);
-            case 571:
-                var3 = var5;
-                if (!var4) {
-                    _fun57753_ip = 587;
-                    continue _fun57753
+            case 501:
+                var5 = _closure1_slot0;
+                var7 = _closure1_slot2;
+                var4 = 10;
+                var4 = var7[var4];
+                var5 = var5.bind(var10)(var4);
+                var4 = var5.isThemeDark;
+                var5 = var4.bind(var5)(var9);
+                var4 = var9;
+                if (var5) {
+                    _fun57799_ip = 602;
+                    continue _fun57799
                 }
-            case 577:
-                var0 = _closure1_slot5;
-                var3 = var0.DARKER;
-            case 587:
-                var0 = {};
-                var0.theme = var3;
-                var0.primaryColor = var2;
-                var0.secondaryColor = var1;
+            case 538:
+                var5 = _closure1_slot6;
+                var5 = var5.DARK;
+                var5 = var6 === var5;
+                if (!var5) {
+                    _fun57799_ip = 586;
+                    continue _fun57799
+                }
+            case 555:
+                var8 = _closure1_slot0;
+                var11 = _closure1_slot2;
+                var7 = 10;
+                var7 = var11[var7];
+                var8 = var8.bind(var10)(var7);
+                var7 = var8.isThemeLight;
+                var5 = var7.bind(var8)(var9);
+            case 586:
+                var4 = var6;
+                if (!var5) {
+                    _fun57799_ip = 602;
+                    continue _fun57799
+                }
+            case 592:
+                var1 = _closure1_slot6;
+                var4 = var1.DARKER;
+            case 602:
+                var1 = {};
+                var1.theme = var4;
+                var1.primaryColor = var3;
+                var1.secondaryColor = var2;
+                return var1;
+            case 621:
                 return var0;
         }
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 1298, 660, 3247, 566, 808, 6938, 668, 7060, 3207, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 1298, 7047, 660, 3250, 566, 809, 6920, 668, 7048, 3210, 2]);

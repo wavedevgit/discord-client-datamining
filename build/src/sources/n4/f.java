@@ -9,13 +9,13 @@ import p4.u;
 public final class f extends c {
 
     /* renamed from: c  reason: collision with root package name */
-    public static final a f36822c = new a(null);
+    public static final a f37390c = new a(null);
 
     /* renamed from: d  reason: collision with root package name */
-    private static final String f36823d;
+    private static final String f37391d;
 
     /* renamed from: b  reason: collision with root package name */
-    private final int f36824b;
+    private final int f37392b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a {
@@ -30,25 +30,25 @@ public final class f extends c {
     static {
         String i10 = m.i("NetworkNotRoamingCtrlr");
         Intrinsics.checkNotNullExpressionValue(i10, "tagWithPrefix(\"NetworkNotRoamingCtrlr\")");
-        f36823d = i10;
+        f37391d = i10;
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public f(o4.h tracker) {
         super(tracker);
         Intrinsics.checkNotNullParameter(tracker, "tracker");
-        this.f36824b = 7;
+        this.f37392b = 7;
     }
 
     @Override // n4.c
     public int b() {
-        return this.f36824b;
+        return this.f37392b;
     }
 
     @Override // n4.c
     public boolean c(u workSpec) {
         Intrinsics.checkNotNullParameter(workSpec, "workSpec");
-        if (workSpec.f41456j.d() == n.NOT_ROAMING) {
+        if (workSpec.f42024j.d() == n.NOT_ROAMING) {
             return true;
         }
         return false;

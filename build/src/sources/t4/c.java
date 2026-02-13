@@ -8,7 +8,7 @@ import kotlin.jvm.internal.Intrinsics;
 public final class c implements cv.b {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final c f48470a = new c();
+    public static final c f49038a = new c();
 
     private c() {
     }
@@ -34,8 +34,8 @@ public final class c implements cv.b {
         Object b10;
         d dVar;
         try {
-            Result.a aVar = Result.f31985e;
-            Integer a10 = f48470a.a(list);
+            Result.a aVar = Result.f32553e;
+            Integer a10 = f49038a.a(list);
             if (a10 != null) {
                 int intValue = a10.intValue();
                 List c10 = mw.a.c(list.get(0));
@@ -55,7 +55,7 @@ public final class c implements cv.b {
             }
             b10 = Result.b(dVar);
         } catch (Throwable th2) {
-            Result.a aVar2 = Result.f31985e;
+            Result.a aVar2 = Result.f32553e;
             b10 = Result.b(kotlin.c.a(th2));
         }
         if (Result.e(b10) != null) {

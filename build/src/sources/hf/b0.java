@@ -13,10 +13,10 @@ import java.util.Locale;
 public abstract class b0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final SimpleArrayMap f27182a = new SimpleArrayMap();
+    private static final SimpleArrayMap f27750a = new SimpleArrayMap();
 
     /* renamed from: b  reason: collision with root package name */
-    private static Locale f27183b;
+    private static Locale f27751b;
 
     public static String a(Context context) {
         String packageName = context.getPackageName();
@@ -165,13 +165,13 @@ public abstract class b0 {
     }
 
     private static String h(Context context, String str) {
-        SimpleArrayMap simpleArrayMap = f27182a;
+        SimpleArrayMap simpleArrayMap = f27750a;
         synchronized (simpleArrayMap) {
             try {
                 Locale c10 = w1.e.a(context.getResources().getConfiguration()).c(0);
-                if (!c10.equals(f27183b)) {
+                if (!c10.equals(f27751b)) {
                     simpleArrayMap.clear();
-                    f27183b = c10;
+                    f27751b = c10;
                 }
                 String str2 = (String) simpleArrayMap.get(str);
                 if (str2 != null) {

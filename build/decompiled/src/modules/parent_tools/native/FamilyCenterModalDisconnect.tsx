@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
     var0 = function arg0() {
-        _fun81706: for (var _fun81706_ip = 0;;) switch (_fun81706_ip) {
+        _fun82784: for (var _fun82784_ip = 0;;) switch (_fun82784_ip) {
             case 0:
                 var0 = arg0;
                 var28 = var0.otherUser;
@@ -323,8 +323,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11.variant = var20;
                 var17 = !var17;
                 if (var17) {
-                    _fun81706_ip = 1167;
-                    continue _fun81706
+                    _fun82784_ip = 1167;
+                    continue _fun82784
                 }
             case 1164:
                 var17 = var16;
@@ -484,22 +484,17 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = function() { // Environment: var1
             var2 = _closure2_slot0;
             var1 = function arg0() {
-                var4 = _closure1_slot6;
-                var1 = _closure1_slot9;
-                var0 = {};
-                var5 = arg0;
-                var0.otherUser = var5;
-                var7 = undefined;
-                var0 = var4.bind(var7)(var1, var0);
+                var0 = arg0;
                 var _closure4_slot0 = var0;
                 var0 = {};
                 var1 = {};
-                var4 = true;
-                var1.headerShown = var4;
+                var3 = true;
+                var1.headerShown = var3;
                 var5 = _closure1_slot0;
                 var8 = _closure1_slot2;
                 var4 = 24;
                 var4 = var8[var4];
+                var7 = undefined;
                 var5 = var5.bind(var7)(var4);
                 var4 = var5.getHeaderCloseButton;
                 var6 = _closure1_slot1;
@@ -515,7 +510,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var1.headerTitle = var3;
                 var2 = function() {
+                    var3 = _closure1_slot6;
+                    var2 = _closure1_slot9;
+                    var1 = {};
                     var0 = _closure4_slot0;
+                    var1.otherUser = var0;
+                    var0 = undefined;
+                    var0 = var3.bind(var0)(var2, var1);
                     return var0;
                 };
                 var1.render = var2;
@@ -555,4 +556,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 33, 1297, 671, 4567, 6603, 3149, 1234, 10316, 10322, 1860, 6528, 6529, 10377, 5375, 3938, 10351, 5441, 4894, 10318, 6532, 4090, 5836, 7834, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 33, 1297, 671, 4567, 6585, 3152, 1235, 10490, 10497, 1863, 6514, 6515, 10548, 5381, 3938, 10523, 5438, 4925, 10492, 6518, 4090, 4710, 7562, 2]);

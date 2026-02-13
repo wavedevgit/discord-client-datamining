@@ -9,10 +9,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = var3.registerAsset;
     var1 = {
         '__packager_asset': true,
-        'httpServerLocation': '/assets/.cache/intl/bW9kdWxlcy9wcmVtaXVtL2dpZnRpbmc=',
+        'httpServerLocation': '/assets/modules/premium/powerups',
         'scales': null,
-        'hash': '23e1bf57acca68e4f665608f6be63f2e',
-        'name': 'cs.messages.23e1bf57acca68e4f665608f6be63f2e.compiled.messages',
+        'hash': '7c6e3aec8fafda6e0602b5dfd39747bb',
+        'name': 'GuildPowerups.compiled.messages',
         'type': 'jsona'
     };
     var4 = [1];
@@ -21,4 +21,4 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = module;
     var1.exports = var2;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1239]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1240]);

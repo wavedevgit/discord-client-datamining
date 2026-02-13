@@ -1,7 +1,7 @@
 package kotlin.ranges;
 
 import kotlin.jvm.internal.Intrinsics;
-/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 class e {
     public static final void a(boolean z10, Number step) {
         Intrinsics.checkNotNullParameter(step, "step");

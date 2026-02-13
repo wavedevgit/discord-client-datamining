@@ -9,13 +9,13 @@ public final class a extends b {
     public static final Parcelable.Creator<a> CREATOR = new C0549a();
 
     /* renamed from: d  reason: collision with root package name */
-    public final long f38844d;
+    public final long f39412d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final long f38845e;
+    public final long f39413e;
 
     /* renamed from: i  reason: collision with root package name */
-    public final byte[] f38846i;
+    public final byte[] f39414i;
 
     /* renamed from: od.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
@@ -51,25 +51,25 @@ public final class a extends b {
 
     @Override // od.b
     public String toString() {
-        return "SCTE-35 PrivateCommand { ptsAdjustment=" + this.f38844d + ", identifier= " + this.f38845e + " }";
+        return "SCTE-35 PrivateCommand { ptsAdjustment=" + this.f39412d + ", identifier= " + this.f39413e + " }";
     }
 
     @Override // android.os.Parcelable
     public void writeToParcel(Parcel parcel, int i10) {
-        parcel.writeLong(this.f38844d);
-        parcel.writeLong(this.f38845e);
-        parcel.writeByteArray(this.f38846i);
+        parcel.writeLong(this.f39412d);
+        parcel.writeLong(this.f39413e);
+        parcel.writeByteArray(this.f39414i);
     }
 
     private a(long j10, byte[] bArr, long j11) {
-        this.f38844d = j11;
-        this.f38845e = j10;
-        this.f38846i = bArr;
+        this.f39412d = j11;
+        this.f39413e = j10;
+        this.f39414i = bArr;
     }
 
     private a(Parcel parcel) {
-        this.f38844d = parcel.readLong();
-        this.f38845e = parcel.readLong();
-        this.f38846i = (byte[]) w0.j(parcel.createByteArray());
+        this.f39412d = parcel.readLong();
+        this.f39413e = parcel.readLong();
+        this.f39414i = (byte[]) w0.j(parcel.createByteArray());
     }
 }

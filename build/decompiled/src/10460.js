@@ -9,12 +9,12 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = var3.registerAsset;
     var1 = {
         '__packager_asset': true,
-        'httpServerLocation': '/assets/modules/premium/native/images/perks',
-        'width': 320.5,
-        'height': 175,
+        'httpServerLocation': '/assets/modules/contact_sync/native/images',
+        'width': 215.5,
+        'height': 135,
         'scales': null,
-        'hash': 'd422ef91f74da1b3cc395d635485063d',
-        'name': 'early_access',
+        'hash': 'fad7ba73a3f13e1d6de72f833c30efc1',
+        'name': 'header-art-onboarding',
         'type': 'png'
     };
     var4 = [2, 3];
@@ -23,4 +23,4 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = module;
     var1.exports = var2;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1239]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1240]);

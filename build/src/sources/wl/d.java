@@ -16,41 +16,41 @@ import rl.c;
 public class d implements f {
 
     /* renamed from: i  reason: collision with root package name */
-    private static final String f52903i = "d";
+    private static final String f53471i = "d";
 
     /* renamed from: a  reason: collision with root package name */
-    LinkedList f52904a;
+    LinkedList f53472a;
 
     /* renamed from: b  reason: collision with root package name */
-    boolean f52905b;
+    boolean f53473b;
 
     /* renamed from: c  reason: collision with root package name */
-    MediaMuxer f52906c;
+    MediaMuxer f53474c;
 
     /* renamed from: d  reason: collision with root package name */
-    private MediaFormat[] f52907d;
+    private MediaFormat[] f53475d;
 
     /* renamed from: e  reason: collision with root package name */
-    private ParcelFileDescriptor f52908e;
+    private ParcelFileDescriptor f53476e;
 
     /* renamed from: f  reason: collision with root package name */
-    private String f52909f;
+    private String f53477f;
 
     /* renamed from: g  reason: collision with root package name */
-    private int f52910g;
+    private int f53478g;
 
     /* renamed from: h  reason: collision with root package name */
-    private int f52911h;
+    private int f53479h;
 
     public d(Context context, Uri uri, int i10, int i11, int i12) {
         MediaMuxer mediaMuxer;
         try {
             if (Build.VERSION.SDK_INT >= 26) {
                 ParcelFileDescriptor openFileDescriptor = context.getContentResolver().openFileDescriptor(uri, "rwt");
-                this.f52908e = openFileDescriptor;
+                this.f53476e = openFileDescriptor;
                 if (openFileDescriptor != null) {
                     c.a();
-                    mediaMuxer = b.a(this.f52908e.getFileDescriptor(), i12);
+                    mediaMuxer = b.a(this.f53476e.getFileDescriptor(), i12);
                 } else {
                     throw new IOException("Inaccessible URI " + uri);
                 }
@@ -69,21 +69,21 @@ public class d implements f {
     }
 
     private void d(MediaMuxer mediaMuxer, int i10, int i11) {
-        this.f52911h = i10;
-        this.f52906c = mediaMuxer;
+        this.f53479h = i10;
+        this.f53474c = mediaMuxer;
         mediaMuxer.setOrientationHint(i11);
-        this.f52910g = 0;
-        this.f52905b = false;
-        this.f52904a = new LinkedList();
-        this.f52907d = new MediaFormat[i10];
+        this.f53478g = 0;
+        this.f53473b = false;
+        this.f53472a = new LinkedList();
+        this.f53475d = new MediaFormat[i10];
     }
 
     private void e() {
         try {
-            ParcelFileDescriptor parcelFileDescriptor = this.f52908e;
+            ParcelFileDescriptor parcelFileDescriptor = this.f53476e;
             if (parcelFileDescriptor != null) {
                 parcelFileDescriptor.close();
-                this.f52908e = null;
+                this.f53476e = null;
             }
         } catch (IOException unused) {
         }
@@ -91,7 +91,7 @@ public class d implements f {
 
     @Override // wl.f
     public String a() {
-        String str = this.f52909f;
+        String str = this.f53477f;
         if (str != null) {
             return str;
         }
@@ -100,33 +100,33 @@ public class d implements f {
 
     @Override // wl.f
     public void b(int i10, ByteBuffer byteBuffer, MediaCodec.BufferInfo bufferInfo) {
-        if (this.f52905b) {
+        if (this.f53473b) {
             if (byteBuffer == null) {
-                Log.e(f52903i, "Trying to write a null buffer, skipping");
+                Log.e(f53471i, "Trying to write a null buffer, skipping");
                 return;
             } else {
-                this.f52906c.writeSampleData(i10, byteBuffer, bufferInfo);
+                this.f53474c.writeSampleData(i10, byteBuffer, bufferInfo);
                 return;
             }
         }
-        this.f52904a.addLast(new g(i10, byteBuffer, bufferInfo));
+        this.f53472a.addLast(new g(i10, byteBuffer, bufferInfo));
     }
 
     @Override // wl.f
     public int c(MediaFormat mediaFormat, int i10) {
-        this.f52907d[i10] = mediaFormat;
-        int i11 = this.f52910g + 1;
-        this.f52910g = i11;
-        if (i11 == this.f52911h) {
-            Log.d(f52903i, "All tracks added, starting MediaMuxer, writing out " + this.f52904a.size() + " queued samples");
-            for (MediaFormat mediaFormat2 : this.f52907d) {
-                this.f52906c.addTrack(mediaFormat2);
+        this.f53475d[i10] = mediaFormat;
+        int i11 = this.f53478g + 1;
+        this.f53478g = i11;
+        if (i11 == this.f53479h) {
+            Log.d(f53471i, "All tracks added, starting MediaMuxer, writing out " + this.f53472a.size() + " queued samples");
+            for (MediaFormat mediaFormat2 : this.f53475d) {
+                this.f53474c.addTrack(mediaFormat2);
             }
-            this.f52906c.start();
-            this.f52905b = true;
-            while (!this.f52904a.isEmpty()) {
-                g gVar = (g) this.f52904a.removeFirst();
-                this.f52906c.writeSampleData(gVar.c(), gVar.a(), gVar.b());
+            this.f53474c.start();
+            this.f53473b = true;
+            while (!this.f53472a.isEmpty()) {
+                g gVar = (g) this.f53472a.removeFirst();
+                this.f53474c.writeSampleData(gVar.c(), gVar.a(), gVar.b());
             }
         }
         return i10;
@@ -135,7 +135,7 @@ public class d implements f {
     @Override // wl.f
     public void release() {
         try {
-            this.f52906c.release();
+            this.f53474c.release();
         } finally {
             e();
         }

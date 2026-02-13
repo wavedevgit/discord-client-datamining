@@ -49,7 +49,7 @@ public final class n extends com.google.android.exoplayer2.f implements Handler.
             }
             return this.L.e(a10 - 1);
         }
-        return this.L.f46238e;
+        return this.L.f46806e;
     }
 
     private long c0() {
@@ -257,7 +257,7 @@ public final class n extends com.google.android.exoplayer2.f implements Handler.
                                 this.F = true;
                             }
                         }
-                    } else if (lVar.f46238e <= j10) {
+                    } else if (lVar.f46806e <= j10) {
                         l lVar2 = this.L;
                         if (lVar2 != null) {
                             lVar2.t();
@@ -297,7 +297,7 @@ public final class n extends com.google.android.exoplayer2.f implements Handler.
                                     this.E = true;
                                     this.G = false;
                                 } else {
-                                    Format format = this.D.f36283b;
+                                    Format format = this.D.f36851b;
                                     if (format != null) {
                                         kVar.f749t = format.A;
                                         kVar.v();

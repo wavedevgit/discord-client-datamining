@@ -172,7 +172,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.update = var4;
     var4 = function arg0() {
-        _fun65712: for (var _fun65712_ip = 0;;) switch (_fun65712_ip) {
+        _fun62020: for (var _fun62020_ip = 0;;) switch (_fun62020_ip) {
             case 0:
                 var0 = arg0;
                 var8 = var0.uploads;
@@ -192,8 +192,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1.channelId = var5;
                 var5 = var8;
                 if (!var6) {
-                    _fun65712_ip = 96;
-                    continue _fun65712
+                    _fun62020_ip = 94;
+                    continue _fun62020
                 }
             case 77:
                 var7 = var8.map;
@@ -204,7 +204,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var5 = var7.bind(var8)(var6);
-            case 96:
+            case 94:
                 var1.uploads = var5;
                 var1.draftType = var4;
                 var1 = var2.bind(var3)(var1);
@@ -248,4 +248,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [806, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [807, 2]);

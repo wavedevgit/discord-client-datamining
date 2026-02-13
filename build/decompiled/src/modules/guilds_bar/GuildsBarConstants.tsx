@@ -52,4 +52,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.GuildPeekCardTypes = var3;
     var2.CardCategory = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [668, 808, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [668, 809, 2]);

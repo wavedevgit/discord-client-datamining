@@ -22,7 +22,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/creator_monetization/guild_shop/GuildShopExperimentsUtils.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function arg0, arg1() {
-        _fun50442: for (var _fun50442_ip = 0;;) switch (_fun50442_ip) {
+        _fun50549: for (var _fun50549_ip = 0;;) switch (_fun50549_ip) {
             case 0:
                 var4 = arg1;
                 var3 = _closure1_slot0;
@@ -44,8 +44,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = arg0;
                 var1 = var2.bind(var3)(var1, var4);
                 if (!var0) {
-                    _fun50442_ip = 88;
-                    continue _fun50442
+                    _fun50549_ip = 88;
+                    continue _fun50549
                 }
             case 85:
                 var0 = var1;
@@ -55,7 +55,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useIsEligibleForSubscriptionsInGuildShop = var3;
     var3 = function arg0, arg1() {
-        _fun50443: for (var _fun50443_ip = 0;;) switch (_fun50443_ip) {
+        _fun50550: for (var _fun50550_ip = 0;;) switch (_fun50550_ip) {
             case 0:
                 var4 = arg1;
                 var3 = _closure1_slot0;
@@ -77,8 +77,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = arg0;
                 var1 = var2.bind(var3)(var1, var4);
                 if (!var0) {
-                    _fun50443_ip = 88;
-                    continue _fun50443
+                    _fun50550_ip = 88;
+                    continue _fun50550
                 }
             case 85:
                 var0 = var1;

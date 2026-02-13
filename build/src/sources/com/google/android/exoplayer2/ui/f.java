@@ -320,12 +320,12 @@ final class f {
             if (bVar.f717w) {
                 i14 = bVar.f718x;
             } else {
-                i14 = bVar2.f35720c;
+                i14 = bVar2.f36288c;
             }
         } else {
             i14 = -16777216;
         }
-        if (a(this.f13956i, bVar.f706d) && w0.c(this.f13957j, bVar.f707e) && this.f13958k == bVar.f709o && this.f13959l == bVar.f710p && this.f13960m == bVar.f711q && w0.c(Integer.valueOf(this.f13961n), Integer.valueOf(bVar.f712r)) && this.f13962o == bVar.f713s && w0.c(Integer.valueOf(this.f13963p), Integer.valueOf(bVar.f714t)) && this.f13964q == bVar.f715u && this.f13965r == bVar.f716v && this.f13966s == bVar2.f35718a && this.f13967t == bVar2.f35719b && this.f13968u == i14 && this.f13970w == bVar2.f35721d && this.f13969v == bVar2.f35722e && w0.c(this.f13953f.getTypeface(), bVar2.f35723f) && this.f13971x == f10 && this.f13972y == f11 && this.f13973z == f12 && this.A == i10 && this.B == i11 && this.C == i12 && this.D == i13) {
+        if (a(this.f13956i, bVar.f706d) && w0.c(this.f13957j, bVar.f707e) && this.f13958k == bVar.f709o && this.f13959l == bVar.f710p && this.f13960m == bVar.f711q && w0.c(Integer.valueOf(this.f13961n), Integer.valueOf(bVar.f712r)) && this.f13962o == bVar.f713s && w0.c(Integer.valueOf(this.f13963p), Integer.valueOf(bVar.f714t)) && this.f13964q == bVar.f715u && this.f13965r == bVar.f716v && this.f13966s == bVar2.f36286a && this.f13967t == bVar2.f36287b && this.f13968u == i14 && this.f13970w == bVar2.f36289d && this.f13969v == bVar2.f36290e && w0.c(this.f13953f.getTypeface(), bVar2.f36291f) && this.f13971x == f10 && this.f13972y == f11 && this.f13973z == f12 && this.A == i10 && this.B == i11 && this.C == i12 && this.D == i13) {
             d(canvas, z10);
             return;
         }
@@ -339,12 +339,12 @@ final class f {
         this.f13963p = bVar.f714t;
         this.f13964q = bVar.f715u;
         this.f13965r = bVar.f716v;
-        this.f13966s = bVar2.f35718a;
-        this.f13967t = bVar2.f35719b;
+        this.f13966s = bVar2.f36286a;
+        this.f13967t = bVar2.f36287b;
         this.f13968u = i14;
-        this.f13970w = bVar2.f35721d;
-        this.f13969v = bVar2.f35722e;
-        this.f13953f.setTypeface(bVar2.f35723f);
+        this.f13970w = bVar2.f36289d;
+        this.f13969v = bVar2.f36290e;
+        this.f13953f.setTypeface(bVar2.f36291f);
         this.f13971x = f10;
         this.f13972y = f11;
         this.f13973z = f12;

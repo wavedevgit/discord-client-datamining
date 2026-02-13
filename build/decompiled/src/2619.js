@@ -1,177 +1,246 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun22100: for (var _fun22100_ip = 0;;) switch (_fun22100_ip) {
-        case 0:
-            var1 = exports;
-            var0 = global;
-            var4 = var0.Object;
-            var3 = var4.defineProperty;
-            var2 = {};
-            var0 = true;
-            var2.value = var0;
-            var0 = '__esModule';
-            var0 = var3.bind(var4)(var1, var0, var2);
-            var0 = undefined;
-            var1.default = var0;
-            var3 = dependencyMap;
-            var2 = 0;
-            var3 = var3[var2];
-            var2 = require;
-            var4 = var2.bind(var0)(var3);
-            if (!var4) {
-                _fun22100_ip = 77;
-                continue _fun22100
-            }
-        case 65:
-            var2 = var4.__esModule;
-            var3 = var4;
-            if (var2) {
-                _fun22100_ip = 86;
-                continue _fun22100
-            }
-        case 77:
-            var2 = {};
-            var2.default = var4;
-            var3 = var2;
-        case 86:
-            var10 = {};
-            var2 = ['T', 'H', 'M', 'H', 'T', 'K', 'H', 'E', 'S', 'L', 'M', 'J'];
-            var10.narrow = var2;
-            var2 = ['tammi', 'helmi', 'maalis', 'huhti', 'touko', 'kesä', 'heinä', 'elo', 'syys', 'loka', 'marras', 'joulu'];
-            var10.abbreviated = var2;
-            var2 = ['tammikuu', 'helmikuu', 'maaliskuu', 'huhtikuu', 'toukokuu', 'kesäkuu', 'heinäkuu', 'elokuu', 'syyskuu', 'lokakuu', 'marraskuu', 'joulukuu'];
-            var10.wide = var2;
-            var9 = {};
-            var2 = var10.narrow;
-            var9.narrow = var2;
-            var2 = var10.abbreviated;
-            var9.abbreviated = var2;
-            var2 = ['tammikuuta', 'helmikuuta', 'maaliskuuta', 'huhtikuuta', 'toukokuuta', 'kesäkuuta', 'heinäkuuta', 'elokuuta', 'syyskuuta', 'lokakuuta', 'marraskuuta', 'joulukuuta'];
-            var9.wide = var2;
-            var8 = {};
-            var2 = ['S', 'M', 'T', 'K', 'T', 'P', 'L'];
-            var8.narrow = var2;
-            var2 = ['su', 'ma', 'ti', 'ke', 'to', 'pe', 'la'];
-            var8.short = var2;
-            var2 = ['sunn.', 'maan.', 'tiis.', 'kesk.', 'torst.', 'perj.', 'la'];
-            var8.abbreviated = var2;
-            var2 = ['sunnuntai', 'maanantai', 'tiistai', 'keskiviikko', 'torstai', 'perjantai', 'lauantai'];
-            var8.wide = var2;
-            var7 = {};
-            var2 = var8.narrow;
-            var7.narrow = var2;
-            var2 = var8.short;
-            var7.short = var2;
-            var2 = var8.abbreviated;
-            var7.abbreviated = var2;
-            var2 = ['sunnuntaina', 'maanantaina', 'tiistaina', 'keskiviikkona', 'torstaina', 'perjantaina', 'lauantaina'];
-            var7.wide = var2;
-            var2 = {};
-            var4 = function arg0, arg1() {
-                var0 = global;
-                var2 = var0.Number;
-                var1 = undefined;
+    var1 = exports;
+    var10 = function arg0() {
+        var3 = arg0;
+        var2 = var3.replace;
+        var1 = /sekuntia?/;
+        var0 = 'sekunnin';
+        var0 = var2.bind(var3)(var1, var0);
+        return var0;
+    };
+    var9 = function arg0() {
+        var3 = arg0;
+        var2 = var3.replace;
+        var1 = /minuuttia?/;
+        var0 = 'minuutin';
+        var0 = var2.bind(var3)(var1, var0);
+        return var0;
+    };
+    var8 = function arg0() {
+        var3 = arg0;
+        var2 = var3.replace;
+        var1 = /tuntia?/;
+        var0 = 'tunnin';
+        var0 = var2.bind(var3)(var1, var0);
+        return var0;
+    };
+    var7 = function arg0() {
+        var3 = arg0;
+        var2 = var3.replace;
+        var1 = /(viikko|viikkoa)/;
+        var0 = 'viikon';
+        var0 = var2.bind(var3)(var1, var0);
+        return var0;
+    };
+    var6 = function arg0() {
+        var3 = arg0;
+        var2 = var3.replace;
+        var1 = /(kuukausi|kuukautta)/;
+        var0 = 'kuukauden';
+        var0 = var2.bind(var3)(var1, var0);
+        return var0;
+    };
+    var5 = function arg0() {
+        var3 = arg0;
+        var2 = var3.replace;
+        var1 = /(vuosi|vuotta)/;
+        var0 = 'vuoden';
+        var0 = var2.bind(var3)(var1, var0);
+        return var0;
+    };
+    var0 = global;
+    var11 = var0.Object;
+    var4 = var11.defineProperty;
+    var3 = {};
+    var0 = true;
+    var3.value = var0;
+    var0 = '__esModule';
+    var0 = var4.bind(var11)(var1, var0, var3);
+    var0 = undefined;
+    var1.default = var0;
+    var3 = {};
+    var4 = {
+        'one': 'alle sekunti',
+        'other': 'alle {{count}} sekuntia'
+    };
+    var4.futureTense = var10;
+    var3.lessThanXSeconds = var4;
+    var4 = {
+        'one': 'sekunti',
+        'other': '{{count}} sekuntia'
+    };
+    var4.futureTense = var10;
+    var3.xSeconds = var4;
+    var4 = {
+        'one': 'puoli minuuttia',
+        'other': 'puoli minuuttia'
+    };
+    var10 = function arg0() {
+        var0 = 'puolen minuutin';
+        return var0;
+    };
+    var4.futureTense = var10;
+    var3.halfAMinute = var4;
+    var4 = {
+        'one': 'alle minuutti',
+        'other': 'alle {{count}} minuuttia'
+    };
+    var4.futureTense = var9;
+    var3.lessThanXMinutes = var4;
+    var4 = {
+        'one': 'minuutti',
+        'other': '{{count}} minuuttia'
+    };
+    var4.futureTense = var9;
+    var3.xMinutes = var4;
+    var4 = {
+        'one': 'noin tunti',
+        'other': 'noin {{count}} tuntia'
+    };
+    var4.futureTense = var8;
+    var3.aboutXHours = var4;
+    var4 = {
+        'one': 'tunti',
+        'other': '{{count}} tuntia'
+    };
+    var4.futureTense = var8;
+    var3.xHours = var4;
+    var4 = {
+        'one': 'päivä',
+        'other': '{{count}} päivää'
+    };
+    var8 = function arg0() {
+        var3 = arg0;
+        var2 = var3.replace;
+        var1 = /päivää?/;
+        var0 = 'päivän';
+        var0 = var2.bind(var3)(var1, var0);
+        return var0;
+    };
+    var4.futureTense = var8;
+    var3.xDays = var4;
+    var4 = {
+        'one': 'noin viikko',
+        'other': 'noin {{count}} viikkoa'
+    };
+    var4.futureTense = var7;
+    var3.aboutXWeeks = var4;
+    var4 = {
+        'one': 'viikko',
+        'other': '{{count}} viikkoa'
+    };
+    var4.futureTense = var7;
+    var3.xWeeks = var4;
+    var4 = {
+        'one': 'noin kuukausi',
+        'other': 'noin {{count}} kuukautta'
+    };
+    var4.futureTense = var6;
+    var3.aboutXMonths = var4;
+    var4 = {
+        'one': 'kuukausi',
+        'other': '{{count}} kuukautta'
+    };
+    var4.futureTense = var6;
+    var3.xMonths = var4;
+    var4 = {
+        'one': 'noin vuosi',
+        'other': 'noin {{count}} vuotta'
+    };
+    var4.futureTense = var5;
+    var3.aboutXYears = var4;
+    var4 = {
+        'one': 'vuosi',
+        'other': '{{count}} vuotta'
+    };
+    var4.futureTense = var5;
+    var3.xYears = var4;
+    var4 = {
+        'one': 'yli vuosi',
+        'other': 'yli {{count}} vuotta'
+    };
+    var4.futureTense = var5;
+    var3.overXYears = var4;
+    var4 = {
+        'one': 'lähes vuosi',
+        'other': 'lähes {{count}} vuotta'
+    };
+    var4.futureTense = var5;
+    var3.almostXYears = var4;
+    var _closure1_slot0 = var3;
+    var2 = function arg0, arg1, arg2() {
+        _fun22123: for (var _fun22123_ip = 0;;) switch (_fun22123_ip) {
+            case 0:
+                var6 = arg1;
+                var1 = arg2;
+                var2 = _closure1_slot0;
                 var0 = arg0;
-                var1 = var2.bind(var1)(var0);
-                var0 = '.';
-                var0 = var1 + var0;
-                return var0;
-            };
-            var2.ordinalNumber = var4;
-            var6 = var3.default;
-            var4 = {};
-            var5 = {};
-            var12 = ['eaa.', 'jaa.'];
-            var5.narrow = var12;
-            var12 = ['eaa.', 'jaa.'];
-            var5.abbreviated = var12;
-            var12 = ['ennen ajanlaskun alkua', 'jälkeen ajanlaskun alun'];
-            var5.wide = var12;
-            var4.values = var5;
-            var5 = 'wide';
-            var4.defaultWidth = var5;
-            var4 = var6.bind(var0)(var4);
-            var2.era = var4;
-            var6 = var3.default;
-            var4 = {};
-            var12 = {};
-            var13 = ['1', '2', '3', '4'];
-            var12.narrow = var13;
-            var13 = ['Q1', 'Q2', 'Q3', 'Q4'];
-            var12.abbreviated = var13;
-            var13 = ['1. kvartaali', '2. kvartaali', '3. kvartaali', '4. kvartaali'];
-            var12.wide = var13;
-            var4.values = var12;
-            var4.defaultWidth = var5;
-            var11 = function arg0() {
-                var1 = arg0;
+                var4 = var2[var0];
                 var0 = 1;
-                var0 = var1 - var0;
+                if (!(var0 !== var6)) {
+                    _fun22123_ip = 67;
+                    continue _fun22123
+                }
+            case 27:
+                var5 = var4.other;
+                var3 = var5.replace;
+                var0 = global;
+                var2 = var0.String;
+                var0 = undefined;
+                var2 = var2.bind(var0)(var6);
+                var0 = '{{count}}';
+                var3 = var3.bind(var5)(var0, var2);
+                _fun22123_ip = 73;
+                continue _fun22123;
+            case 67:
+                var3 = var4.one;
+            case 73:
+                var2 = null;
+                var0 = var3;
+                if (!(var2 != var1)) {
+                    _fun22123_ip = 151;
+                    continue _fun22123
+                }
+            case 82:
+                var2 = var1.addSuffix;
+                var0 = var3;
+                if (!var2) {
+                    _fun22123_ip = 151;
+                    continue _fun22123
+                }
+            case 94:
+                var2 = var1.comparison;
+                if (!var2) {
+                    _fun22123_ip = 115;
+                    continue _fun22123
+                }
+            case 103:
+                var2 = var1.comparison;
+                var1 = 0;
+                if (!(!(var2 > var1))) {
+                    _fun22123_ip = 127;
+                    continue _fun22123
+                }
+            case 115:
+                var1 = ' sitten';
+                var1 = var3 + var1;
+                _fun22123_ip = 148;
+                continue _fun22123;
+            case 127:
+                var2 = var4.futureTense;
+                var3 = var2.bind(var4)(var3);
+                var2 = ' kuluttua';
+                var1 = var3 + var2;
+            case 148:
+                var0 = var1;
+            case 151:
                 return var0;
-            };
-            var4.argumentCallback = var11;
-            var4 = var6.bind(var0)(var4);
-            var2.quarter = var4;
-            var6 = var3.default;
-            var4 = {};
-            var4.values = var10;
-            var4.defaultWidth = var5;
-            var4.formattingValues = var9;
-            var4.defaultFormattingWidth = var5;
-            var4 = var6.bind(var0)(var4);
-            var2.month = var4;
-            var6 = var3.default;
-            var4 = {};
-            var4.values = var8;
-            var4.defaultWidth = var5;
-            var4.formattingValues = var7;
-            var4.defaultFormattingWidth = var5;
-            var4 = var6.bind(var0)(var4);
-            var2.day = var4;
-            var4 = var3.default;
-            var3 = {};
-            var6 = {};
-            var7 = {
-                'am': 'ap',
-                'pm': 'ip',
-                'midnight': 'keskiyö',
-                'noon': 'keskipäivä',
-                'morning': 'ap',
-                'afternoon': 'ip',
-                'evening': 'illalla',
-                'night': 'yöllä'
-            };
-            var6.narrow = var7;
-            var7 = {
-                'am': 'ap',
-                'pm': 'ip',
-                'midnight': 'keskiyö',
-                'noon': 'keskipäivä',
-                'morning': 'ap',
-                'afternoon': 'ip',
-                'evening': 'illalla',
-                'night': 'yöllä'
-            };
-            var6.abbreviated = var7;
-            var7 = {
-                'am': 'ap',
-                'pm': 'ip',
-                'midnight': 'keskiyöllä',
-                'noon': 'keskipäivällä',
-                'morning': 'aamupäivällä',
-                'afternoon': 'iltapäivällä',
-                'evening': 'illalla',
-                'night': 'yöllä'
-            };
-            var6.wide = var7;
-            var3.values = var6;
-            var3.defaultWidth = var5;
-            var3 = var4.bind(var0)(var3);
-            var2.dayPeriod = var3;
-            var1.default = var2;
-            var2 = var1.default;
-            var1 = arg4;
-            var1.exports = var2;
-            return var0;
-    }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1695]);
+        }
+    };
+    var1.default = var2;
+    var2 = var1.default;
+    var1 = arg4;
+    var1.exports = var2;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, []);

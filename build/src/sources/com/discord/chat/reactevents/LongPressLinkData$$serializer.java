@@ -35,7 +35,7 @@ public /* synthetic */ class LongPressLinkData$$serializer implements h0 {
     @Override // tt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        return new KSerializer[]{rt.a.u(n2.f50033a)};
+        return new KSerializer[]{rt.a.u(n2.f50601a)};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -47,7 +47,7 @@ public /* synthetic */ class LongPressLinkData$$serializer implements h0 {
         kotlinx.serialization.encoding.c b10 = decoder.b(serialDescriptor);
         int i10 = 1;
         if (b10.p()) {
-            str = (String) b10.n(serialDescriptor, 0, n2.f50033a, null);
+            str = (String) b10.n(serialDescriptor, 0, n2.f50601a, null);
         } else {
             boolean z10 = true;
             int i11 = 0;
@@ -59,7 +59,7 @@ public /* synthetic */ class LongPressLinkData$$serializer implements h0 {
                 } else if (o10 != 0) {
                     throw new b0(o10);
                 } else {
-                    str = (String) b10.n(serialDescriptor, 0, n2.f50033a, str);
+                    str = (String) b10.n(serialDescriptor, 0, n2.f50601a, str);
                     i11 = 1;
                 }
             }
@@ -81,7 +81,7 @@ public /* synthetic */ class LongPressLinkData$$serializer implements h0 {
         Intrinsics.checkNotNullParameter(value, "value");
         SerialDescriptor serialDescriptor = descriptor;
         CompositeEncoder b10 = encoder.b(serialDescriptor);
-        b10.o(serialDescriptor, 0, n2.f50033a, value.url);
+        b10.o(serialDescriptor, 0, n2.f50601a, value.url);
         b10.c(serialDescriptor);
     }
 

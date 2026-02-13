@@ -6,30 +6,30 @@ import com.facebook.react.devsupport.StackTraceHelper;
 final class q7 implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final q7 f44870a = new q7();
+    static final q7 f45438a = new q7();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final bj.c f44871b;
+    private static final bj.c f45439b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final bj.c f44872c;
+    private static final bj.c f45440c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final bj.c f44873d;
+    private static final bj.c f45441d;
 
     static {
         c.b a10 = bj.c.a(StackTraceHelper.NAME_KEY);
         s1 s1Var = new s1();
         s1Var.a(1);
-        f44871b = a10.b(s1Var.b()).a();
+        f45439b = a10.b(s1Var.b()).a();
         c.b a11 = bj.c.a("stages");
         s1 s1Var2 = new s1();
         s1Var2.a(2);
-        f44872c = a11.b(s1Var2.b()).a();
+        f45440c = a11.b(s1Var2.b()).a();
         c.b a12 = bj.c.a("runMiniBenchmark");
         s1 s1Var3 = new s1();
         s1Var3.a(3);
-        f44873d = a12.b(s1Var3.b()).a();
+        f45441d = a12.b(s1Var3.b()).a();
     }
 
     private q7() {

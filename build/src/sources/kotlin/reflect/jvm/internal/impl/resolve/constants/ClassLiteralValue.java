@@ -9,24 +9,24 @@ import org.jetbrains.annotations.NotNull;
 public final class ClassLiteralValue {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ClassId f34114a;
+    private final ClassId f34682a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final int f34115b;
+    private final int f34683b;
 
     public ClassLiteralValue(@NotNull ClassId classId, int i10) {
         Intrinsics.checkNotNullParameter(classId, "classId");
-        this.f34114a = classId;
-        this.f34115b = i10;
+        this.f34682a = classId;
+        this.f34683b = i10;
     }
 
     @NotNull
     public final ClassId component1() {
-        return this.f34114a;
+        return this.f34682a;
     }
 
     public final int component2() {
-        return this.f34115b;
+        return this.f34683b;
     }
 
     public boolean equals(Object obj) {
@@ -35,33 +35,33 @@ public final class ClassLiteralValue {
         }
         if (obj instanceof ClassLiteralValue) {
             ClassLiteralValue classLiteralValue = (ClassLiteralValue) obj;
-            return Intrinsics.areEqual(this.f34114a, classLiteralValue.f34114a) && this.f34115b == classLiteralValue.f34115b;
+            return Intrinsics.areEqual(this.f34682a, classLiteralValue.f34682a) && this.f34683b == classLiteralValue.f34683b;
         }
         return false;
     }
 
     public final int getArrayNestedness() {
-        return this.f34115b;
+        return this.f34683b;
     }
 
     @NotNull
     public final ClassId getClassId() {
-        return this.f34114a;
+        return this.f34682a;
     }
 
     public int hashCode() {
-        return (this.f34114a.hashCode() * 31) + Integer.hashCode(this.f34115b);
+        return (this.f34682a.hashCode() * 31) + Integer.hashCode(this.f34683b);
     }
 
     @NotNull
     public String toString() {
         StringBuilder sb2 = new StringBuilder();
-        int i10 = this.f34115b;
+        int i10 = this.f34683b;
         for (int i11 = 0; i11 < i10; i11++) {
             sb2.append("kotlin/Array<");
         }
-        sb2.append(this.f34114a);
-        int i12 = this.f34115b;
+        sb2.append(this.f34682a);
+        int i12 = this.f34683b;
         for (int i13 = 0; i13 < i12; i13++) {
             sb2.append(">");
         }

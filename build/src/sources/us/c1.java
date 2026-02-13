@@ -39,13 +39,13 @@ import us.z2;
 public abstract class c1 implements ClassBasedDeclarationContainer {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final a f51006d = new a(null);
+    public static final a f51574d = new a(null);
 
     /* renamed from: e  reason: collision with root package name */
-    private static final Class f51007e = DefaultConstructorMarker.class;
+    private static final Class f51575e = DefaultConstructorMarker.class;
 
     /* renamed from: i  reason: collision with root package name */
-    private static final Regex f51008i = new Regex("<v#(\\d+)>");
+    private static final Regex f51576i = new Regex("<v#(\\d+)>");
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a {
@@ -54,7 +54,7 @@ public abstract class c1 implements ClassBasedDeclarationContainer {
         }
 
         public final Regex a() {
-            return c1.f51008i;
+            return c1.f51576i;
         }
 
         private a() {
@@ -65,13 +65,13 @@ public abstract class c1 implements ClassBasedDeclarationContainer {
     public abstract class b {
 
         /* renamed from: c  reason: collision with root package name */
-        static final /* synthetic */ KProperty[] f51009c = {Reflection.property1(new PropertyReference1Impl(b.class, "moduleData", "getModuleData()Lorg/jetbrains/kotlin/descriptors/runtime/components/RuntimeModuleData;", 0))};
+        static final /* synthetic */ KProperty[] f51577c = {Reflection.property1(new PropertyReference1Impl(b.class, "moduleData", "getModuleData()Lorg/jetbrains/kotlin/descriptors/runtime/components/RuntimeModuleData;", 0))};
 
         /* renamed from: a  reason: collision with root package name */
-        private final z2.a f51010a;
+        private final z2.a f51578a;
 
         public b() {
-            this.f51010a = z2.c(new d1(c1.this));
+            this.f51578a = z2.c(new d1(c1.this));
         }
 
         /* JADX INFO: Access modifiers changed from: private */
@@ -80,7 +80,7 @@ public abstract class c1 implements ClassBasedDeclarationContainer {
         }
 
         public final RuntimeModuleData b() {
-            Object b10 = this.f51010a.b(this, f51009c[0]);
+            Object b10 = this.f51578a.b(this, f51577c[0]);
             Intrinsics.checkNotNullExpressionValue(b10, "getValue(...)");
             return (RuntimeModuleData) b10;
         }
@@ -91,23 +91,23 @@ public abstract class c1 implements ClassBasedDeclarationContainer {
     public static final class c {
 
         /* renamed from: a  reason: collision with root package name */
-        private final List f51012a;
+        private final List f51580a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final Class f51013b;
+        private final Class f51581b;
 
         public c(List parameters, Class cls) {
             Intrinsics.checkNotNullParameter(parameters, "parameters");
-            this.f51012a = parameters;
-            this.f51013b = cls;
+            this.f51580a = parameters;
+            this.f51581b = cls;
         }
 
         public final List a() {
-            return this.f51012a;
+            return this.f51580a;
         }
 
         public final Class b() {
-            return this.f51013b;
+            return this.f51581b;
         }
     }
 
@@ -117,28 +117,28 @@ public abstract class c1 implements ClassBasedDeclarationContainer {
     protected static final class d {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final d f51014d = new d("DECLARED", 0);
+        public static final d f51582d = new d("DECLARED", 0);
 
         /* renamed from: e  reason: collision with root package name */
-        public static final d f51015e = new d("INHERITED", 1);
+        public static final d f51583e = new d("INHERITED", 1);
 
         /* renamed from: i  reason: collision with root package name */
-        private static final /* synthetic */ d[] f51016i;
+        private static final /* synthetic */ d[] f51584i;
 
         /* renamed from: o  reason: collision with root package name */
-        private static final /* synthetic */ EnumEntries f51017o;
+        private static final /* synthetic */ EnumEntries f51585o;
 
         static {
             d[] a10 = a();
-            f51016i = a10;
-            f51017o = hs.a.a(a10);
+            f51584i = a10;
+            f51585o = hs.a.a(a10);
         }
 
         private d(String str, int i10) {
         }
 
         private static final /* synthetic */ d[] a() {
-            return new d[]{f51014d, f51015e};
+            return new d[]{f51582d, f51583e};
         }
 
         public static d valueOf(String str) {
@@ -146,14 +146,14 @@ public abstract class c1 implements ClassBasedDeclarationContainer {
         }
 
         public static d[] values() {
-            return (d[]) f51016i.clone();
+            return (d[]) f51584i.clone();
         }
 
         public final boolean d(CallableMemberDescriptor member) {
             boolean z10;
             Intrinsics.checkNotNullParameter(member, "member");
             boolean isReal = member.getKind().isReal();
-            if (this == f51014d) {
+            if (this == f51582d) {
                 z10 = true;
             } else {
                 z10 = false;
@@ -210,7 +210,7 @@ public abstract class c1 implements ClassBasedDeclarationContainer {
 
     private final void g(List list, List list2, boolean z10) {
         Class<Object> cls;
-        if (Intrinsics.areEqual(CollectionsKt.B0(list2), f51007e)) {
+        if (Intrinsics.areEqual(CollectionsKt.B0(list2), f51575e)) {
             list2 = list2.subList(0, list2.size() - 1);
         }
         list.addAll(list2);
@@ -221,7 +221,7 @@ public abstract class c1 implements ClassBasedDeclarationContainer {
             list.add(TYPE);
         }
         if (z10) {
-            cls = f51007e;
+            cls = f51575e;
         } else {
             cls = Object.class;
         }
@@ -232,7 +232,7 @@ public abstract class c1 implements ClassBasedDeclarationContainer {
     /* JADX INFO: Access modifiers changed from: private */
     public static final CharSequence l(FunctionDescriptor descriptor) {
         Intrinsics.checkNotNullParameter(descriptor, "descriptor");
-        return DescriptorRenderer.DEBUG_TEXT.render(descriptor) + " | " + e3.f51033a.g(descriptor).a();
+        return DescriptorRenderer.DEBUG_TEXT.render(descriptor) + " | " + e3.f51601a.g(descriptor).a();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -252,7 +252,7 @@ public abstract class c1 implements ClassBasedDeclarationContainer {
     /* JADX INFO: Access modifiers changed from: private */
     public static final CharSequence q(PropertyDescriptor descriptor) {
         Intrinsics.checkNotNullParameter(descriptor, "descriptor");
-        return DescriptorRenderer.DEBUG_TEXT.render(descriptor) + " | " + e3.f51033a.f(descriptor).a();
+        return DescriptorRenderer.DEBUG_TEXT.render(descriptor) + " | " + e3.f51601a.f(descriptor).a();
     }
 
     private final Method x(Class cls, String str, Class[] clsArr, Class cls2, boolean z10) {
@@ -399,7 +399,7 @@ public abstract class c1 implements ClassBasedDeclarationContainer {
         Class<?> jClass = getJClass();
         ArrayList arrayList = new ArrayList();
         g(arrayList, y(desc, false).a(), true);
-        Unit unit = Unit.f31988a;
+        Unit unit = Unit.f32556a;
         return A(jClass, arrayList);
     }
 
@@ -460,7 +460,7 @@ public abstract class c1 implements ClassBasedDeclarationContainer {
         String str;
         Intrinsics.checkNotNullParameter(name, "name");
         Intrinsics.checkNotNullParameter(signature, "signature");
-        MatchResult h10 = f51008i.h(signature);
+        MatchResult h10 = f51576i.h(signature);
         if (h10 != null) {
             String str2 = (String) h10.a().a().b().get(1);
             PropertyDescriptor t10 = t(Integer.parseInt(str2));
@@ -473,7 +473,7 @@ public abstract class c1 implements ClassBasedDeclarationContainer {
         Intrinsics.checkNotNullExpressionValue(identifier, "identifier(...)");
         ArrayList arrayList = new ArrayList();
         for (Object obj : w(identifier)) {
-            if (Intrinsics.areEqual(e3.f51033a.f((PropertyDescriptor) obj).a(), signature)) {
+            if (Intrinsics.areEqual(e3.f51601a.f((PropertyDescriptor) obj).a(), signature)) {
                 arrayList.add(obj);
             }
         }
@@ -489,7 +489,7 @@ public abstract class c1 implements ClassBasedDeclarationContainer {
                     }
                     ((List) obj3).add(obj2);
                 }
-                Collection values = kotlin.collections.o0.h(linkedHashMap, new z0(y0.f51215d)).values();
+                Collection values = kotlin.collections.o0.h(linkedHashMap, new z0(y0.f51783d)).values();
                 Intrinsics.checkNotNullExpressionValue(values, "<get-values>(...)");
                 List list = (List) CollectionsKt.y0(values);
                 if (list.size() == 1) {
@@ -498,7 +498,7 @@ public abstract class c1 implements ClassBasedDeclarationContainer {
                 }
                 Name identifier2 = Name.identifier(name);
                 Intrinsics.checkNotNullExpressionValue(identifier2, "identifier(...)");
-                String x02 = CollectionsKt.x0(w(identifier2), ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE, null, null, 0, null, a1.f50997d, 30, null);
+                String x02 = CollectionsKt.x0(w(identifier2), ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE, null, null, 0, null, a1.f51565d, 30, null);
                 StringBuilder sb2 = new StringBuilder();
                 sb2.append("Property '");
                 sb2.append(name);
@@ -564,7 +564,7 @@ public abstract class c1 implements ClassBasedDeclarationContainer {
             if (r5 != 0) goto L4e
             boolean r4 = r9.d(r4)
             if (r4 == 0) goto L4e
-            kotlin.Unit r4 = kotlin.Unit.f31988a
+            kotlin.Unit r4 = kotlin.Unit.f32556a
             java.lang.Object r3 = r3.accept(r0, r4)
             us.a0 r3 = (us.a0) r3
             goto L4f

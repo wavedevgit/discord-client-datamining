@@ -14,18 +14,18 @@ import java.util.TreeMap;
 public abstract class k0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final char[] f31106a;
+    private static final char[] f31674a;
 
     static {
         char[] cArr = new char[80];
-        f31106a = cArr;
+        f31674a = cArr;
         Arrays.fill(cArr, ' ');
     }
 
     private static void a(int i10, StringBuilder sb2) {
         int i11;
         while (i10 > 0) {
-            char[] cArr = f31106a;
+            char[] cArr = f31674a;
             if (i10 > cArr.length) {
                 i11 = cArr.length;
             } else {
@@ -59,7 +59,7 @@ public abstract class k0 {
             return obj.equals("");
         } else {
             if (obj instanceof f) {
-                return obj.equals(f.f31004e);
+                return obj.equals(f.f31572e);
             }
             if (obj instanceof i0) {
                 if (obj == ((i0) obj).getDefaultInstanceForType()) {
@@ -205,7 +205,7 @@ public abstract class k0 {
             }
             i11 = i12;
         }
-        e1 e1Var = ((s) i0Var).f31143i;
+        e1 e1Var = ((s) i0Var).f31711i;
         if (e1Var != null) {
             e1Var.k(sb2, i10);
         }

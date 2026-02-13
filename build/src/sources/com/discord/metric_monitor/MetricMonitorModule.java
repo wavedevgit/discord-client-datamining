@@ -53,7 +53,7 @@ public final class MetricMonitorModule extends NativeMetricMonitorModuleSpec {
     public static final Unit _init_$lambda$0(MetricMonitorModule metricMonitorModule, ReactApplicationContext reactApplicationContext, MetricEvent metric) {
         Intrinsics.checkNotNullParameter(metric, "metric");
         metricMonitorModule.reactEvents.emitModuleEvent(reactApplicationContext, metric);
-        return Unit.f31988a;
+        return Unit.f32556a;
     }
 
     @Override // com.discord.codegen.NativeMetricMonitorModuleSpec

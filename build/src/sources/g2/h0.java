@@ -51,7 +51,7 @@ public final class h0 extends h {
     private h0(String str, Bundle bundle) {
         super("androidx.credentials.TYPE_PUBLIC_KEY_CREDENTIAL", bundle);
         this.f24676d = str;
-        if (!k2.c.f31480a.a(str)) {
+        if (!k2.c.f32048a.a(str)) {
             throw new IllegalArgumentException("authenticationResponseJson must not be empty, and must be a valid JSON");
         }
     }

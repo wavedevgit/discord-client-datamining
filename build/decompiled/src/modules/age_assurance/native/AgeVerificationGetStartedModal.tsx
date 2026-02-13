@@ -9,29 +9,29 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
     var0 = function arg0, arg1() {
-        _fun52792: for (var _fun52792_ip = 0;;) switch (_fun52792_ip) {
+        _fun52827: for (var _fun52827_ip = 0;;) switch (_fun52827_ip) {
             case 0:
                 var1 = _closure1_slot7;
                 var0 = arg1;
                 if (var0) {
-                    _fun52792_ip = 35;
-                    continue _fun52792
+                    _fun52827_ip = 35;
+                    continue _fun52827
                 }
             case 13:
                 var0 = arg0;
                 if (var0) {
-                    _fun52792_ip = 27;
-                    continue _fun52792
+                    _fun52827_ip = 27;
+                    continue _fun52827
                 }
             case 19:
                 var0 = var1.INTRO;
-                _fun52792_ip = 33;
-                continue _fun52792;
+                _fun52827_ip = 33;
+                continue _fun52827;
             case 27:
                 var0 = var1.RETRY;
             case 33:
-                _fun52792_ip = 41;
-                continue _fun52792;
+                _fun52827_ip = 41;
+                continue _fun52827;
             case 35:
                 var0 = var1.EXPRESSIVE_INTRO;
             case 41:
@@ -94,7 +94,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/age_assurance/native/AgeVerificationGetStartedModal.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun52793: for (var _fun52793_ip = 0;;) switch (_fun52793_ip) {
+        _fun52828: for (var _fun52828_ip = 0;;) switch (_fun52828_ip) {
             case 0:
                 var1 = arg0;
                 var12 = var1.entryPoint;
@@ -104,8 +104,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var1.useEmbeddedMethods;
                 var3 = undefined;
                 if (!(var5 === var3)) {
-                    _fun52793_ip = 39;
-                    continue _fun52793
+                    _fun52828_ip = 39;
+                    continue _fun52828
                 }
             case 37:
                 var5 = false;
@@ -178,12 +178,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var8 = _closure2_slot4;
                     var1 = function arg0, arg1, arg2, arg3, arg4, arg5() {
                         var9 = arg0;
-                        var10 = arg1;
-                        var5 = arg3;
-                        var0 = arg2;
+                        var0 = arg1;
                         var _closure4_slot0 = var0;
-                        var0 = arg5;
+                        var0 = arg2;
                         var _closure4_slot1 = var0;
+                        var0 = arg3;
+                        var _closure4_slot2 = var0;
+                        var0 = arg4;
+                        var _closure4_slot3 = var0;
+                        var0 = arg5;
+                        var _closure4_slot4 = var0;
                         var6 = function() {
                             var2 = _closure1_slot1;
                             var1 = _closure1_slot2;
@@ -195,58 +199,27 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var0 = var0.bind(var1)();
                             return var0;
                         };
-                        var _closure4_slot2 = var6;
-                        var4 = _closure1_slot5;
-                        var2 = _closure1_slot1;
-                        var8 = _closure1_slot2;
-                        var0 = 6;
-                        var0 = var8[var0];
-                        var7 = undefined;
-                        var11 = var2.bind(var7)(var0);
-                        var0 = {};
-                        var0.onClose = var6;
-                        var0.modalSessionId = var10;
-                        var0 = var4.bind(var7)(var11, var0);
-                        var _closure4_slot3 = var0;
-                        var0 = 7;
-                        var0 = var8[var0];
-                        var11 = var2.bind(var7)(var0);
-                        var0 = {};
-                        var0.onClose = var6;
-                        var0.modalSessionId = var10;
-                        var0.entryPoint = var5;
-                        var0 = var4.bind(var7)(var11, var0);
-                        var _closure4_slot4 = var0;
-                        var0 = 8;
-                        var0 = var8[var0];
-                        var2 = var2.bind(var7)(var0);
-                        var0 = {};
-                        var11 = function() {
-                            _fun52798: for (var _fun52798_ip = 0;;) switch (_fun52798_ip) {
+                        var _closure4_slot5 = var6;
+                        var0 = function() {
+                            _fun52833: for (var _fun52833_ip = 0;;) switch (_fun52833_ip) {
                                 case 0:
-                                    var2 = _closure4_slot2;
+                                    var2 = _closure4_slot5;
                                     var0 = undefined;
                                     var2 = var2.bind(var0)();
-                                    var3 = _closure4_slot1;
+                                    var3 = _closure4_slot4;
                                     var2 = null;
                                     if (!(var2 != var3)) {
-                                        _fun52798_ip = 31;
-                                        continue _fun52798
+                                        _fun52833_ip = 31;
+                                        continue _fun52833
                                     }
                                 case 23:
-                                    var1 = _closure4_slot1;
+                                    var1 = _closure4_slot4;
                                     var1 = var1.bind(var0)();
                                 case 31:
                                     return var0;
                             }
                         };
-                        var0.onClose = var11;
-                        var0.modalSessionId = var10;
-                        var10 = arg4;
-                        var0.classificationId = var10;
-                        var0.entryPoint = var5;
-                        var0 = var4.bind(var7)(var2, var0);
-                        var _closure4_slot5 = var0;
+                        var _closure4_slot6 = var0;
                         var0 = {};
                         var2 = _closure1_slot7;
                         var10 = var2.INTRO;
@@ -258,25 +231,27 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             return var0;
                         };
                         var2.headerTitle = var4;
-                        var5 = _closure1_slot0;
-                        var4 = 9;
+                        var7 = _closure1_slot0;
+                        var8 = _closure1_slot2;
+                        var4 = 6;
                         var11 = var8[var4];
-                        var13 = var5.bind(var7)(var11);
+                        var5 = undefined;
+                        var13 = var7.bind(var5)(var11);
                         var12 = var13.getHeaderCloseButton;
                         var11 = function() { // Environment: var3
-                            var1 = _closure4_slot2;
+                            var1 = _closure4_slot5;
                             var0 = undefined;
                             var1 = var1.bind(var0)();
                             var2 = _closure1_slot1;
                             var3 = _closure1_slot2;
-                            var1 = 10;
+                            var1 = 7;
                             var1 = var3[var1];
                             var3 = var2.bind(var0)(var1);
                             var2 = var3.maybeOpenAgeVerificationUserFeedback;
                             var1 = {};
                             var5 = 'age_verification_get_started_modal';
                             var1.location = var5;
-                            var4 = _closure4_slot0;
+                            var4 = _closure4_slot1;
                             var1.visibleContent = var4;
                             var1 = var2.bind(var3)(var1);
                             return var0;
@@ -284,7 +259,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var11 = var12.bind(var13)(var11);
                         var2.headerLeft = var11;
                         var11 = function() {
-                            var0 = _closure4_slot4;
+                            var3 = _closure1_slot5;
+                            var1 = _closure1_slot1;
+                            var2 = _closure1_slot2;
+                            var0 = 8;
+                            var0 = var2[var0];
+                            var2 = undefined;
+                            var1 = var1.bind(var2)(var0);
+                            var0 = {};
+                            var5 = _closure4_slot5;
+                            var0.onClose = var5;
+                            var5 = _closure4_slot0;
+                            var0.modalSessionId = var5;
+                            var4 = _closure4_slot2;
+                            var0.entryPoint = var4;
+                            var0 = var3.bind(var2)(var1, var0);
                             return var0;
                         };
                         var2.render = var11;
@@ -300,12 +289,24 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         };
                         var2.headerTitle = var11;
                         var11 = var8[var4];
-                        var12 = var5.bind(var7)(var11);
+                        var12 = var7.bind(var5)(var11);
                         var11 = var12.getHeaderCloseButton;
                         var11 = var11.bind(var12)(var6);
                         var2.headerLeft = var11;
                         var11 = function() {
-                            var0 = _closure4_slot3;
+                            var3 = _closure1_slot5;
+                            var1 = _closure1_slot1;
+                            var2 = _closure1_slot2;
+                            var0 = 9;
+                            var0 = var2[var0];
+                            var2 = undefined;
+                            var1 = var1.bind(var2)(var0);
+                            var0 = {};
+                            var5 = _closure4_slot5;
+                            var0.onClose = var5;
+                            var4 = _closure4_slot0;
+                            var0.modalSessionId = var4;
+                            var0 = var3.bind(var2)(var1, var0);
                             return var0;
                         };
                         var2.render = var11;
@@ -321,12 +322,28 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         };
                         var1.headerTitle = var9;
                         var4 = var8[var4];
-                        var5 = var5.bind(var7)(var4);
+                        var5 = var7.bind(var5)(var4);
                         var4 = var5.getHeaderCloseButton;
                         var4 = var4.bind(var5)(var6);
                         var1.headerLeft = var4;
                         var3 = function() {
-                            var0 = _closure4_slot5;
+                            var3 = _closure1_slot5;
+                            var1 = _closure1_slot1;
+                            var2 = _closure1_slot2;
+                            var0 = 10;
+                            var0 = var2[var0];
+                            var2 = undefined;
+                            var1 = var1.bind(var2)(var0);
+                            var0 = {};
+                            var5 = _closure4_slot6;
+                            var0.onClose = var5;
+                            var5 = _closure4_slot0;
+                            var0.modalSessionId = var5;
+                            var5 = _closure4_slot3;
+                            var0.classificationId = var5;
+                            var4 = _closure4_slot2;
+                            var0.entryPoint = var4;
+                            var0 = var3.bind(var2)(var1, var0);
                             return var0;
                         };
                         var1.render = var3;
@@ -343,12 +360,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2[0] = var5;
                 var2[1] = var6;
                 var1 = function() { // Environment: var0
-                    _fun52806: for (var _fun52806_ip = 0;;) switch (_fun52806_ip) {
+                    _fun52841: for (var _fun52841_ip = 0;;) switch (_fun52841_ip) {
                         case 0:
                             var2 = _closure2_slot2;
                             if (var2) {
-                                _fun52806_ip = 64;
-                                continue _fun52806
+                                _fun52841_ip = 64;
+                                continue _fun52841
                             }
                         case 13:
                             var0 = _closure2_slot1;
@@ -360,18 +377,18 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var2 = var4.bind(var2)(var3);
                             var2 = var2.AgeVerificationModalVersion;
                             if (var0) {
-                                _fun52806_ip = 56;
-                                continue _fun52806
+                                _fun52841_ip = 56;
+                                continue _fun52841
                             }
                         case 48:
                             var0 = var2.PRIMARY;
-                            _fun52806_ip = 62;
-                            continue _fun52806;
+                            _fun52841_ip = 62;
+                            continue _fun52841;
                         case 56:
                             var0 = var2.RETRY;
                         case 62:
-                            _fun52806_ip = 98;
-                            continue _fun52806;
+                            _fun52841_ip = 98;
+                            continue _fun52841;
                         case 64:
                             var3 = _closure1_slot0;
                             var2 = _closure1_slot2;
@@ -434,4 +451,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 33, 1297, 671, 4567, 6029, 6516, 6524, 5836, 6533, 491, 6517, 1358, 4561, 5834, 1234, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 33, 1297, 671, 4567, 4710, 6011, 6015, 6509, 6510, 491, 6016, 1358, 4561, 5845, 1235, 2]);

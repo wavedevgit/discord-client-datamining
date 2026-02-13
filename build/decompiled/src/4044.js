@@ -38,7 +38,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot7 = var3;
     var3 = var4.forwardRef;
     var1 = function arg0, arg1() {
-        _fun37460: for (var _fun37460_ip = 0;;) switch (_fun37460_ip) {
+        _fun37490: for (var _fun37490_ip = 0;;) switch (_fun37490_ip) {
             case 0:
                 var7 = arg0;
                 var6 = _closure1_slot5;
@@ -183,13 +183,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var4 = new Array(1);
                 var4[0] = var0;
                 var2 = function(arg0) { // Environment: var3
-                    _fun37474: for (var _fun37474_ip = 0;;) switch (_fun37474_ip) {
+                    _fun37504: for (var _fun37504_ip = 0;;) switch (_fun37504_ip) {
                         case 0:
                             var0 = _closure2_slot0;
                             var2 = var0.current;
                             if (var2) {
-                                _fun37474_ip = 41;
-                                continue _fun37474
+                                _fun37504_ip = 41;
+                                continue _fun37504
                             }
                         case 15:
                             var0 = global;
@@ -197,8 +197,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var1 = var3.warn;
                             var0 = 'Reference to native search bar component has not been updated yet';
                             var0 = var1.bind(var3)(var0);
-                            _fun37474_ip = 51;
-                            continue _fun37474;
+                            _fun37504_ip = 51;
+                            continue _fun37504;
                         case 41:
                             var1 = arg0;
                             var0 = undefined;
@@ -219,8 +219,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = var2.isSearchBarAvailableForCurrentPlatform;
                 var4 = global;
                 if (var2) {
-                    _fun37460_ip = 137;
-                    continue _fun37460
+                    _fun37490_ip = 137;
+                    continue _fun37490
                 }
             case 109:
                 var6 = var4.console;
@@ -237,8 +237,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var9 = var1 != var8;
                 var1 = 'systemDefault';
                 if (!var9) {
-                    _fun37460_ip = 172;
-                    continue _fun37460
+                    _fun37490_ip = 172;
+                    continue _fun37490
                 }
             case 169:
                 var1 = var8;

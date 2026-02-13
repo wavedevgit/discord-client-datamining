@@ -20,13 +20,13 @@ public final class R {
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class color {
-        public static int chat_media_view_stroke = 0x7f0600ea;
-        public static int chat_mentions_background_dark = 0x7f0600eb;
-        public static int chat_mentions_background_light = 0x7f0600ec;
-        public static int chat_mentions_foreground_dark = 0x7f0600ed;
-        public static int chat_mentions_foreground_light = 0x7f0600ee;
-        public static int message_divider_dark = 0x7f060512;
-        public static int message_divider_light = 0x7f060513;
+        public static int chat_media_view_stroke = 0x7f06011b;
+        public static int chat_mentions_background_dark = 0x7f06011c;
+        public static int chat_mentions_background_light = 0x7f06011d;
+        public static int chat_mentions_foreground_dark = 0x7f06011e;
+        public static int chat_mentions_foreground_light = 0x7f06011f;
+        public static int message_divider_dark = 0x7f060583;
+        public static int message_divider_light = 0x7f060584;
 
         private color() {
         }
@@ -85,8 +85,8 @@ public final class R {
         public static int ic_swipe_edit = 0x7f0802af;
         public static int ic_swipe_reply = 0x7f0802b0;
         public static int ic_unknown_game_icon_16dp = 0x7f0802b2;
-        public static int premium_tier2_gradient = 0x7f080733;
-        public static int rounded_pill_background = 0x7f080739;
+        public static int premium_tier2_gradient = 0x7f08072f;
+        public static int rounded_pill_background = 0x7f080735;
 
         private drawable() {
         }

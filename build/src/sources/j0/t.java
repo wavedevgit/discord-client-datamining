@@ -32,43 +32,43 @@ import x.y0;
 public class t implements p0, SurfaceTexture.OnFrameAvailableListener {
 
     /* renamed from: d  reason: collision with root package name */
-    private final x f30753d;
+    private final x f31321d;
 
     /* renamed from: e  reason: collision with root package name */
-    final HandlerThread f30754e;
+    final HandlerThread f31322e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final Executor f30755i;
+    private final Executor f31323i;
 
     /* renamed from: o  reason: collision with root package name */
-    final Handler f30756o;
+    final Handler f31324o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final AtomicBoolean f30757p;
+    private final AtomicBoolean f31325p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final float[] f30758q;
+    private final float[] f31326q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final float[] f30759r;
+    private final float[] f31327r;
 
     /* renamed from: s  reason: collision with root package name */
-    final Map f30760s;
+    final Map f31328s;
 
     /* renamed from: t  reason: collision with root package name */
-    private int f30761t;
+    private int f31329t;
 
     /* renamed from: u  reason: collision with root package name */
-    private boolean f30762u;
+    private boolean f31330u;
 
     /* renamed from: v  reason: collision with root package name */
-    private final List f30763v;
+    private final List f31331v;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private static Function f30764a = new Function() { // from class: j0.s
+        private static Function f31332a = new Function() { // from class: j0.s
             @Override // androidx.arch.core.util.Function
             public final Object apply(Object obj) {
                 return new t((x.z) obj);
@@ -76,7 +76,7 @@ public class t implements p0, SurfaceTexture.OnFrameAvailableListener {
         };
 
         public static p0 a(x.z zVar) {
-            return (p0) f30764a.apply(zVar);
+            return (p0) f31332a.apply(zVar);
         }
     }
 
@@ -108,19 +108,19 @@ public class t implements p0, SurfaceTexture.OnFrameAvailableListener {
         surfaceTexture.setOnFrameAvailableListener(null);
         surfaceTexture.release();
         surface.release();
-        tVar.f30761t--;
+        tVar.f31329t--;
         tVar.q();
     }
 
     public static /* synthetic */ void f(t tVar) {
-        tVar.f30762u = true;
+        tVar.f31330u = true;
         tVar.q();
     }
 
     public static /* synthetic */ void g(t tVar, x.z zVar, Map map, c.a aVar) {
         tVar.getClass();
         try {
-            tVar.f30753d.h(zVar, map);
+            tVar.f31321d.h(zVar, map);
             aVar.c(null);
         } catch (RuntimeException e10) {
             aVar.f(e10);
@@ -133,7 +133,7 @@ public class t implements p0, SurfaceTexture.OnFrameAvailableListener {
         tVar.s(new Runnable() { // from class: j0.p
             @Override // java.lang.Runnable
             public final void run() {
-                t.this.f30763v.add(d10);
+                t.this.f31331v.add(d10);
             }
         }, new Runnable() { // from class: j0.q
             @Override // java.lang.Runnable
@@ -150,26 +150,26 @@ public class t implements p0, SurfaceTexture.OnFrameAvailableListener {
         if (w1Var.n().d() && hVar.e()) {
             eVar = d.e.YUV;
         }
-        tVar.f30753d.o(eVar);
+        tVar.f31321d.o(eVar);
     }
 
     public static /* synthetic */ void j(final t tVar, final l1 l1Var) {
-        Surface k12 = l1Var.k1(tVar.f30755i, new Consumer() { // from class: j0.d
+        Surface k12 = l1Var.k1(tVar.f31323i, new Consumer() { // from class: j0.d
             @Override // androidx.core.util.Consumer
             public final void accept(Object obj) {
                 t.k(t.this, l1Var, (l1.b) obj);
             }
         });
-        tVar.f30753d.j(k12);
-        tVar.f30760s.put(l1Var, k12);
+        tVar.f31321d.j(k12);
+        tVar.f31328s.put(l1Var, k12);
     }
 
     public static /* synthetic */ void k(t tVar, l1 l1Var, l1.b bVar) {
         tVar.getClass();
         l1Var.close();
-        Surface surface = (Surface) tVar.f30760s.remove(l1Var);
+        Surface surface = (Surface) tVar.f31328s.remove(l1Var);
         if (surface != null) {
-            tVar.f30753d.r(surface);
+            tVar.f31321d.r(surface);
         }
     }
 
@@ -188,27 +188,27 @@ public class t implements p0, SurfaceTexture.OnFrameAvailableListener {
     }
 
     public static /* synthetic */ void o(final t tVar, final w1 w1Var) {
-        tVar.f30761t++;
-        final SurfaceTexture surfaceTexture = new SurfaceTexture(tVar.f30753d.g());
+        tVar.f31329t++;
+        final SurfaceTexture surfaceTexture = new SurfaceTexture(tVar.f31321d.g());
         surfaceTexture.setDefaultBufferSize(w1Var.o().getWidth(), w1Var.o().getHeight());
         final Surface surface = new Surface(surfaceTexture);
-        w1Var.t(tVar.f30755i, new w1.i() { // from class: j0.j
+        w1Var.t(tVar.f31323i, new w1.i() { // from class: j0.j
             @Override // x.w1.i
             public final void a(w1.h hVar) {
                 t.i(t.this, w1Var, hVar);
             }
         });
-        w1Var.s(surface, tVar.f30755i, new Consumer() { // from class: j0.k
+        w1Var.s(surface, tVar.f31323i, new Consumer() { // from class: j0.k
             @Override // androidx.core.util.Consumer
             public final void accept(Object obj) {
                 t.e(t.this, w1Var, surfaceTexture, surface, (w1.g) obj);
             }
         });
-        surfaceTexture.setOnFrameAvailableListener(tVar, tVar.f30756o);
+        surfaceTexture.setOnFrameAvailableListener(tVar, tVar.f31324o);
     }
 
     public static /* synthetic */ void p(t tVar, Runnable runnable, Runnable runnable2) {
-        if (tVar.f30762u) {
+        if (tVar.f31330u) {
             runnable.run();
         } else {
             runnable2.run();
@@ -216,16 +216,16 @@ public class t implements p0, SurfaceTexture.OnFrameAvailableListener {
     }
 
     private void q() {
-        if (this.f30762u && this.f30761t == 0) {
-            for (l1 l1Var : this.f30760s.keySet()) {
+        if (this.f31330u && this.f31329t == 0) {
+            for (l1 l1Var : this.f31328s.keySet()) {
                 l1Var.close();
             }
-            for (b bVar : this.f30763v) {
+            for (b bVar : this.f31331v) {
                 bVar.a().f(new Exception("Failed to snapshot: DefaultSurfaceProcessor is released."));
             }
-            this.f30760s.clear();
-            this.f30753d.k();
-            this.f30754e.quit();
+            this.f31328s.clear();
+            this.f31321d.k();
+            this.f31322e.quit();
         }
     }
 
@@ -240,7 +240,7 @@ public class t implements p0, SurfaceTexture.OnFrameAvailableListener {
 
     private void s(final Runnable runnable, final Runnable runnable2) {
         try {
-            this.f30755i.execute(new Runnable() { // from class: j0.n
+            this.f31323i.execute(new Runnable() { // from class: j0.n
                 @Override // java.lang.Runnable
                 public final void run() {
                     t.p(t.this, runnable2, runnable);
@@ -253,17 +253,17 @@ public class t implements p0, SurfaceTexture.OnFrameAvailableListener {
     }
 
     private void t(Throwable th2) {
-        for (b bVar : this.f30763v) {
+        for (b bVar : this.f31331v) {
             bVar.a().f(th2);
         }
-        this.f30763v.clear();
+        this.f31331v.clear();
     }
 
     private Bitmap u(Size size, float[] fArr, int i10) {
         float[] fArr2 = (float[]) fArr.clone();
         b0.m.c(fArr2, i10, 0.5f, 0.5f);
         b0.m.d(fArr2, 0.5f);
-        return this.f30753d.p(b0.q.o(size, i10), fArr2);
+        return this.f31321d.p(b0.q.o(size, i10), fArr2);
     }
 
     private void v(final x.z zVar, final Map map) {
@@ -287,7 +287,7 @@ public class t implements p0, SurfaceTexture.OnFrameAvailableListener {
     }
 
     private void w(as.u uVar) {
-        if (this.f30763v.isEmpty()) {
+        if (this.f31331v.isEmpty()) {
             return;
         }
         if (uVar == null) {
@@ -296,7 +296,7 @@ public class t implements p0, SurfaceTexture.OnFrameAvailableListener {
         }
         try {
             ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
-            Iterator it = this.f30763v.iterator();
+            Iterator it = this.f31331v.iterator();
             int i10 = -1;
             int i11 = -1;
             Bitmap bitmap = null;
@@ -330,7 +330,7 @@ public class t implements p0, SurfaceTexture.OnFrameAvailableListener {
 
     @Override // x.m1
     public void a(final l1 l1Var) {
-        if (this.f30757p.get()) {
+        if (this.f31325p.get()) {
             l1Var.close();
             return;
         }
@@ -346,7 +346,7 @@ public class t implements p0, SurfaceTexture.OnFrameAvailableListener {
 
     @Override // x.m1
     public void b(final w1 w1Var) {
-        if (this.f30757p.get()) {
+        if (this.f31325p.get()) {
             w1Var.v();
             return;
         }
@@ -373,17 +373,17 @@ public class t implements p0, SurfaceTexture.OnFrameAvailableListener {
     @Override // android.graphics.SurfaceTexture.OnFrameAvailableListener
     public void onFrameAvailable(SurfaceTexture surfaceTexture) {
         boolean z10;
-        if (!this.f30757p.get()) {
+        if (!this.f31325p.get()) {
             surfaceTexture.updateTexImage();
-            surfaceTexture.getTransformMatrix(this.f30758q);
+            surfaceTexture.getTransformMatrix(this.f31326q);
             as.u uVar = null;
-            for (Map.Entry entry : this.f30760s.entrySet()) {
+            for (Map.Entry entry : this.f31328s.entrySet()) {
                 Surface surface = (Surface) entry.getValue();
                 l1 l1Var = (l1) entry.getKey();
-                l1Var.j1(this.f30759r, this.f30758q);
+                l1Var.j1(this.f31327r, this.f31326q);
                 if (l1Var.getFormat() == 34) {
                     try {
-                        this.f30753d.n(surfaceTexture.getTimestamp(), this.f30759r, surface);
+                        this.f31321d.n(surfaceTexture.getTimestamp(), this.f31327r, surface);
                     } catch (RuntimeException e10) {
                         y0.d("DefaultSurfaceProcessor", "Failed to render with OpenGL.", e10);
                     }
@@ -399,7 +399,7 @@ public class t implements p0, SurfaceTexture.OnFrameAvailableListener {
                         z11 = true;
                     }
                     b2.e.j(z11, "Only one JPEG output is supported.");
-                    uVar = new as.u(surface, l1Var.getSize(), (float[]) this.f30759r.clone());
+                    uVar = new as.u(surface, l1Var.getSize(), (float[]) this.f31327r.clone());
                 }
             }
             try {
@@ -412,7 +412,7 @@ public class t implements p0, SurfaceTexture.OnFrameAvailableListener {
 
     @Override // j0.p0
     public void release() {
-        if (this.f30757p.getAndSet(true)) {
+        if (this.f31325p.getAndSet(true)) {
             return;
         }
         r(new Runnable() { // from class: j0.i
@@ -424,20 +424,20 @@ public class t implements p0, SurfaceTexture.OnFrameAvailableListener {
     }
 
     t(x.z zVar, Map map) {
-        this.f30757p = new AtomicBoolean(false);
-        this.f30758q = new float[16];
-        this.f30759r = new float[16];
-        this.f30760s = new LinkedHashMap();
-        this.f30761t = 0;
-        this.f30762u = false;
-        this.f30763v = new ArrayList();
+        this.f31325p = new AtomicBoolean(false);
+        this.f31326q = new float[16];
+        this.f31327r = new float[16];
+        this.f31328s = new LinkedHashMap();
+        this.f31329t = 0;
+        this.f31330u = false;
+        this.f31331v = new ArrayList();
         HandlerThread handlerThread = new HandlerThread("GL Thread");
-        this.f30754e = handlerThread;
+        this.f31322e = handlerThread;
         handlerThread.start();
         Handler handler = new Handler(handlerThread.getLooper());
-        this.f30756o = handler;
-        this.f30755i = c0.a.e(handler);
-        this.f30753d = new x();
+        this.f31324o = handler;
+        this.f31323i = c0.a.e(handler);
+        this.f31321d = new x();
         try {
             v(zVar, map);
         } catch (RuntimeException e10) {

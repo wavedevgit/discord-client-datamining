@@ -20,14 +20,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = 'modules/premium/premium_state/PremiumStateUtils.tsx';
     var1 = var3.bind(var4)(var1);
     var1 = function arg0() {
-        _fun18178: for (var _fun18178_ip = 0;;) switch (_fun18178_ip) {
+        _fun18188: for (var _fun18188_ip = 0;;) switch (_fun18188_ip) {
             case 0:
                 var2 = arg0;
                 var0 = null;
                 var1 = var0 == var2;
                 if (var1) {
-                    _fun18178_ip = 56;
-                    continue _fun18178
+                    _fun18188_ip = 56;
+                    continue _fun18188
                 }
             case 12:
                 var1 = {};

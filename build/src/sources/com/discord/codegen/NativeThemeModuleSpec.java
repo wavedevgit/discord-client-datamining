@@ -20,6 +20,10 @@ public abstract class NativeThemeModuleSpec extends ReactContextBaseJavaModule i
 
     @ReactMethod
     @a
+    public abstract void setVisualRefreshEnabled(boolean z10);
+
+    @ReactMethod
+    @a
     public abstract void updateSaturation(double d10);
 
     @ReactMethod

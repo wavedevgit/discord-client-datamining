@@ -9,7 +9,7 @@ import vu.h;
 public abstract class c {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final a f55844a = new a(null);
+    public static final a f56412a = new a(null);
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a {
@@ -19,7 +19,7 @@ public abstract class c {
 
         public final c a(X509TrustManager trustManager) {
             Intrinsics.checkNotNullParameter(trustManager, "trustManager");
-            return h.f52016a.g().c(trustManager);
+            return h.f52584a.g().c(trustManager);
         }
 
         private a() {

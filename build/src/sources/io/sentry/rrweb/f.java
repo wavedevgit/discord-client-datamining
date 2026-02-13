@@ -15,16 +15,16 @@ import java.util.Map;
 public final class f extends d implements w1 {
 
     /* renamed from: o  reason: collision with root package name */
-    private int f29977o;
+    private int f30545o;
 
     /* renamed from: p  reason: collision with root package name */
-    private List f29978p;
+    private List f30546p;
 
     /* renamed from: q  reason: collision with root package name */
-    private Map f29979q;
+    private Map f30547q;
 
     /* renamed from: r  reason: collision with root package name */
-    private Map f29980r;
+    private Map f30548r;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements m1 {
@@ -36,9 +36,9 @@ public final class f extends d implements w1 {
                 String o02 = e3Var.o0();
                 o02.getClass();
                 if (o02.equals("pointerId")) {
-                    fVar.f29977o = e3Var.nextInt();
+                    fVar.f30545o = e3Var.nextInt();
                 } else if (o02.equals("positions")) {
-                    fVar.f29978p = e3Var.k2(iLogger, new b.a());
+                    fVar.f30546p = e3Var.k2(iLogger, new b.a());
                 } else if (!aVar.a(fVar, o02, e3Var, iLogger)) {
                     if (hashMap == null) {
                         hashMap = new HashMap();
@@ -81,19 +81,19 @@ public final class f extends d implements w1 {
     public static final class b implements w1 {
 
         /* renamed from: d  reason: collision with root package name */
-        private int f29981d;
+        private int f30549d;
 
         /* renamed from: e  reason: collision with root package name */
-        private float f29982e;
+        private float f30550e;
 
         /* renamed from: i  reason: collision with root package name */
-        private float f29983i;
+        private float f30551i;
 
         /* renamed from: o  reason: collision with root package name */
-        private long f29984o;
+        private long f30552o;
 
         /* renamed from: p  reason: collision with root package name */
-        private Map f29985p;
+        private Map f30553p;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         public static final class a implements m1 {
@@ -135,16 +135,16 @@ public final class f extends d implements w1 {
                     }
                     switch (c10) {
                         case 0:
-                            bVar.f29982e = e3Var.nextFloat();
+                            bVar.f30550e = e3Var.nextFloat();
                             break;
                         case 1:
-                            bVar.f29983i = e3Var.nextFloat();
+                            bVar.f30551i = e3Var.nextFloat();
                             break;
                         case 2:
-                            bVar.f29981d = e3Var.nextInt();
+                            bVar.f30549d = e3Var.nextInt();
                             break;
                         case 3:
-                            bVar.f29984o = e3Var.nextLong();
+                            bVar.f30552o = e3Var.nextLong();
                             break;
                         default:
                             if (hashMap == null) {
@@ -161,40 +161,40 @@ public final class f extends d implements w1 {
         }
 
         public long e() {
-            return this.f29984o;
+            return this.f30552o;
         }
 
         public void f(int i10) {
-            this.f29981d = i10;
+            this.f30549d = i10;
         }
 
         public void g(long j10) {
-            this.f29984o = j10;
+            this.f30552o = j10;
         }
 
         public void h(Map map) {
-            this.f29985p = map;
+            this.f30553p = map;
         }
 
         public void i(float f10) {
-            this.f29982e = f10;
+            this.f30550e = f10;
         }
 
         public void j(float f10) {
-            this.f29983i = f10;
+            this.f30551i = f10;
         }
 
         @Override // io.sentry.w1
         public void serialize(f3 f3Var, ILogger iLogger) {
             f3Var.u();
-            f3Var.e(StackTraceHelper.ID_KEY).b(this.f29981d);
-            f3Var.e("x").c(this.f29982e);
-            f3Var.e("y").c(this.f29983i);
-            f3Var.e("timeOffset").b(this.f29984o);
-            Map map = this.f29985p;
+            f3Var.e(StackTraceHelper.ID_KEY).b(this.f30549d);
+            f3Var.e("x").c(this.f30550e);
+            f3Var.e("y").c(this.f30551i);
+            f3Var.e("timeOffset").b(this.f30552o);
+            Map map = this.f30553p;
             if (map != null) {
                 for (String str : map.keySet()) {
-                    Object obj = this.f29985p.get(str);
+                    Object obj = this.f30553p.get(str);
                     f3Var.e(str);
                     f3Var.j(iLogger, obj);
                 }
@@ -210,15 +210,15 @@ public final class f extends d implements w1 {
     private void k(f3 f3Var, ILogger iLogger) {
         f3Var.u();
         new d.c().a(this, f3Var, iLogger);
-        List list = this.f29978p;
+        List list = this.f30546p;
         if (list != null && !list.isEmpty()) {
-            f3Var.e("positions").j(iLogger, this.f29978p);
+            f3Var.e("positions").j(iLogger, this.f30546p);
         }
-        f3Var.e("pointerId").b(this.f29977o);
-        Map map = this.f29980r;
+        f3Var.e("pointerId").b(this.f30545o);
+        Map map = this.f30548r;
         if (map != null) {
             for (String str : map.keySet()) {
-                Object obj = this.f29980r.get(str);
+                Object obj = this.f30548r.get(str);
                 f3Var.e(str);
                 f3Var.j(iLogger, obj);
             }
@@ -227,19 +227,19 @@ public final class f extends d implements w1 {
     }
 
     public void l(Map map) {
-        this.f29980r = map;
+        this.f30548r = map;
     }
 
     public void m(int i10) {
-        this.f29977o = i10;
+        this.f30545o = i10;
     }
 
     public void n(List list) {
-        this.f29978p = list;
+        this.f30546p = list;
     }
 
     public void o(Map map) {
-        this.f29979q = map;
+        this.f30547q = map;
     }
 
     @Override // io.sentry.w1
@@ -248,10 +248,10 @@ public final class f extends d implements w1 {
         new b.C0407b().a(this, f3Var, iLogger);
         f3Var.e("data");
         k(f3Var, iLogger);
-        Map map = this.f29979q;
+        Map map = this.f30547q;
         if (map != null) {
             for (String str : map.keySet()) {
-                Object obj = this.f29979q.get(str);
+                Object obj = this.f30547q.get(str);
                 f3Var.e(str);
                 f3Var.j(iLogger, obj);
             }

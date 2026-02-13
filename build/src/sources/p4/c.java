@@ -8,10 +8,10 @@ import java.util.List;
 public final class c implements b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final r3.u f41412a;
+    private final r3.u f41980a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final r3.i f41413b;
+    private final r3.i f41981b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     class a extends r3.i {
@@ -41,8 +41,8 @@ public final class c implements b {
     }
 
     public c(r3.u uVar) {
-        this.f41412a = uVar;
-        this.f41413b = new a(uVar);
+        this.f41980a = uVar;
+        this.f41981b = new a(uVar);
     }
 
     public static List e() {
@@ -58,8 +58,8 @@ public final class c implements b {
         } else {
             i10.i1(1, str);
         }
-        this.f41412a.d();
-        Cursor b10 = t3.b.b(this.f41412a, i10, false, null);
+        this.f41980a.d();
+        Cursor b10 = t3.b.b(this.f41980a, i10, false, null);
         try {
             ArrayList arrayList = new ArrayList(b10.getCount());
             while (b10.moveToNext()) {
@@ -86,9 +86,9 @@ public final class c implements b {
         } else {
             i10.i1(1, str);
         }
-        this.f41412a.d();
+        this.f41980a.d();
         boolean z11 = false;
-        Cursor b10 = t3.b.b(this.f41412a, i10, false, null);
+        Cursor b10 = t3.b.b(this.f41980a, i10, false, null);
         try {
             if (b10.moveToFirst()) {
                 if (b10.getInt(0) == 0) {
@@ -105,13 +105,13 @@ public final class c implements b {
 
     @Override // p4.b
     public void c(p4.a aVar) {
-        this.f41412a.d();
-        this.f41412a.e();
+        this.f41980a.d();
+        this.f41980a.e();
         try {
-            this.f41413b.j(aVar);
-            this.f41412a.A();
+            this.f41981b.j(aVar);
+            this.f41980a.A();
         } finally {
-            this.f41412a.i();
+            this.f41980a.i();
         }
     }
 
@@ -124,9 +124,9 @@ public final class c implements b {
         } else {
             i10.i1(1, str);
         }
-        this.f41412a.d();
+        this.f41980a.d();
         boolean z11 = false;
-        Cursor b10 = t3.b.b(this.f41412a, i10, false, null);
+        Cursor b10 = t3.b.b(this.f41980a, i10, false, null);
         try {
             if (b10.moveToFirst()) {
                 if (b10.getInt(0) == 0) {

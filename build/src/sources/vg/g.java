@@ -9,54 +9,54 @@ public final class g extends jf.a {
     public static final Parcelable.Creator<g> CREATOR = new l();
 
     /* renamed from: d  reason: collision with root package name */
-    private final boolean f51597d;
+    private final boolean f52165d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final boolean f51598e;
+    private final boolean f52166e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final boolean f51599i;
+    private final boolean f52167i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final boolean f51600o;
+    private final boolean f52168o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final boolean f51601p;
+    private final boolean f52169p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final boolean f51602q;
+    private final boolean f52170q;
 
     public g(boolean z10, boolean z11, boolean z12, boolean z13, boolean z14, boolean z15) {
-        this.f51597d = z10;
-        this.f51598e = z11;
-        this.f51599i = z12;
-        this.f51600o = z13;
-        this.f51601p = z14;
-        this.f51602q = z15;
+        this.f52165d = z10;
+        this.f52166e = z11;
+        this.f52167i = z12;
+        this.f52168o = z13;
+        this.f52169p = z14;
+        this.f52170q = z15;
     }
 
     public boolean b() {
-        return this.f51602q;
+        return this.f52170q;
     }
 
     public boolean c() {
-        return this.f51599i;
+        return this.f52167i;
     }
 
     public boolean d() {
-        return this.f51600o;
+        return this.f52168o;
     }
 
     public boolean e() {
-        return this.f51597d;
+        return this.f52165d;
     }
 
     public boolean f() {
-        return this.f51601p;
+        return this.f52169p;
     }
 
     public boolean g() {
-        return this.f51598e;
+        return this.f52166e;
     }
 
     @Override // android.os.Parcelable

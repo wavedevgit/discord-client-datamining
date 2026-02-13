@@ -77,4 +77,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useEmojiColorPalette = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1298, 3198, 566, 3207, 6766, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1298, 3201, 566, 3210, 6748, 2]);

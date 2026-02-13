@@ -38,8 +38,8 @@ public /* synthetic */ class UserSearchQuerySetFilters$$serializer implements h0
     @Override // tt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        KSerializer u10 = rt.a.u(n2.f50033a);
-        tt.h hVar = tt.h.f49997a;
+        KSerializer u10 = rt.a.u(n2.f50601a);
+        tt.h hVar = tt.h.f50565a;
         return new KSerializer[]{u10, rt.a.u(hVar), rt.a.u(hVar)};
     }
 
@@ -55,8 +55,8 @@ public /* synthetic */ class UserSearchQuerySetFilters$$serializer implements h0
         kotlinx.serialization.encoding.c b10 = decoder.b(serialDescriptor);
         String str2 = null;
         if (b10.p()) {
-            tt.h hVar = tt.h.f49997a;
-            str = (String) b10.n(serialDescriptor, 0, n2.f50033a, null);
+            tt.h hVar = tt.h.f50565a;
+            str = (String) b10.n(serialDescriptor, 0, n2.f50601a, null);
             bool2 = (Boolean) b10.n(serialDescriptor, 2, hVar, null);
             bool = (Boolean) b10.n(serialDescriptor, 1, hVar, null);
             i10 = 7;
@@ -70,15 +70,15 @@ public /* synthetic */ class UserSearchQuerySetFilters$$serializer implements h0
                 if (o10 == -1) {
                     z10 = false;
                 } else if (o10 == 0) {
-                    str2 = (String) b10.n(serialDescriptor, 0, n2.f50033a, str2);
+                    str2 = (String) b10.n(serialDescriptor, 0, n2.f50601a, str2);
                     i11 |= 1;
                 } else if (o10 == 1) {
-                    bool3 = (Boolean) b10.n(serialDescriptor, 1, tt.h.f49997a, bool3);
+                    bool3 = (Boolean) b10.n(serialDescriptor, 1, tt.h.f50565a, bool3);
                     i11 |= 2;
                 } else if (o10 != 2) {
                     throw new b0(o10);
                 } else {
-                    bool4 = (Boolean) b10.n(serialDescriptor, 2, tt.h.f49997a, bool4);
+                    bool4 = (Boolean) b10.n(serialDescriptor, 2, tt.h.f50565a, bool4);
                     i11 |= 4;
                 }
             }

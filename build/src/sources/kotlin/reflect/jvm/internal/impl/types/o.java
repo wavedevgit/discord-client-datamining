@@ -9,32 +9,32 @@ import kotlin.reflect.jvm.internal.impl.types.checker.KotlinTypeRefiner;
 public class o implements Function1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final TypeConstructor f34729d;
+    private final TypeConstructor f35297d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final List f34730e;
+    private final List f35298e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final TypeAttributes f34731i;
+    private final TypeAttributes f35299i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final boolean f34732o;
+    private final boolean f35300o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final MemberScope f34733p;
+    private final MemberScope f35301p;
 
     public o(TypeConstructor typeConstructor, List list, TypeAttributes typeAttributes, boolean z10, MemberScope memberScope) {
-        this.f34729d = typeConstructor;
-        this.f34730e = list;
-        this.f34731i = typeAttributes;
-        this.f34732o = z10;
-        this.f34733p = memberScope;
+        this.f35297d = typeConstructor;
+        this.f35298e = list;
+        this.f35299i = typeAttributes;
+        this.f35300o = z10;
+        this.f35301p = memberScope;
     }
 
     @Override // kotlin.jvm.functions.Function1
     public Object invoke(Object obj) {
         SimpleType f10;
-        f10 = KotlinTypeFactory.f(this.f34729d, this.f34730e, this.f34731i, this.f34732o, this.f34733p, (KotlinTypeRefiner) obj);
+        f10 = KotlinTypeFactory.f(this.f35297d, this.f35298e, this.f35299i, this.f35300o, this.f35301p, (KotlinTypeRefiner) obj);
         return f10;
     }
 }

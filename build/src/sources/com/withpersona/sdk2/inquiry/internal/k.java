@@ -97,14 +97,14 @@ public final class k implements gn.k {
         this.f19963c = lottieAnimationView;
         Context context = view.getContext();
         Intrinsics.checkNotNullExpressionValue(context, "getContext(...)");
-        Integer f10 = bq.s.f(context, tp.a.f49766n, null, false, 6, null);
+        Integer f10 = bq.s.f(context, tp.a.f50334n, null, false, 6, null);
         this.f19964d = f10;
         if (f10 != null) {
             k(f10.intValue());
             lottieAnimationView.v();
             return;
         }
-        lottieAnimationView.l(new r5.e("**"), l5.b0.f35547b, new z5.e() { // from class: ep.x
+        lottieAnimationView.l(new r5.e("**"), l5.b0.f36115b, new z5.e() { // from class: ep.x
             @Override // z5.e
             public final Object a(z5.b bVar) {
                 Integer g10;
@@ -112,7 +112,7 @@ public final class k implements gn.k {
                 return g10;
             }
         });
-        lottieAnimationView.l(new r5.e("**"), l5.b0.f35546a, new z5.e() { // from class: ep.y
+        lottieAnimationView.l(new r5.e("**"), l5.b0.f36114a, new z5.e() { // from class: ep.y
             @Override // z5.e
             public final Object a(z5.b bVar) {
                 Integer h10;
@@ -166,7 +166,7 @@ public final class k implements gn.k {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit m(n.d.b bVar) {
         bVar.a().invoke();
-        return Unit.f31988a;
+        return Unit.f32556a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -195,7 +195,7 @@ public final class k implements gn.k {
         if (rendering.c()) {
             Context context = this.f19962b.getContext();
             Intrinsics.checkNotNullExpressionValue(context, "getContext(...)");
-            Integer f10 = bq.s.f(context, tp.a.f49765m, null, false, 6, null);
+            Integer f10 = bq.s.f(context, tp.a.f50333m, null, false, 6, null);
             if (f10 != null) {
                 this.f19962b.setBackground(androidx.core.content.a.e(this.f19962b.getContext(), f10.intValue()));
             }
@@ -227,7 +227,7 @@ public final class k implements gn.k {
                 Integer fillColorValue = b11.getFillColorValue();
                 if (fillColorValue != null) {
                     final int intValue = fillColorValue.intValue();
-                    kVar.f19963c.l(new r5.e("**"), l5.b0.f35546a, new z5.e() { // from class: ep.u
+                    kVar.f19963c.l(new r5.e("**"), l5.b0.f36114a, new z5.e() { // from class: ep.u
                         @Override // z5.e
                         public final Object a(z5.b bVar) {
                             Integer n10;
@@ -239,7 +239,7 @@ public final class k implements gn.k {
                 Integer strokeColorValue = b11.getStrokeColorValue();
                 if (strokeColorValue != null) {
                     final int intValue2 = strokeColorValue.intValue();
-                    kVar.f19963c.l(new r5.e("**"), l5.b0.f35547b, new z5.e() { // from class: ep.v
+                    kVar.f19963c.l(new r5.e("**"), l5.b0.f36115b, new z5.e() { // from class: ep.v
                         @Override // z5.e
                         public final Object a(z5.b bVar) {
                             Integer o10;

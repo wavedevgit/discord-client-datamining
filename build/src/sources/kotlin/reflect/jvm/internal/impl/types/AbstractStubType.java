@@ -16,13 +16,13 @@ public abstract class AbstractStubType extends SimpleType {
     public static final Companion Companion = new Companion(null);
 
     /* renamed from: e  reason: collision with root package name */
-    private final NewTypeVariableConstructor f34521e;
+    private final NewTypeVariableConstructor f35089e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final boolean f34522i;
+    private final boolean f35090i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final MemberScope f34523o;
+    private final MemberScope f35091o;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class Companion {
@@ -36,9 +36,9 @@ public abstract class AbstractStubType extends SimpleType {
 
     public AbstractStubType(@NotNull NewTypeVariableConstructor originalTypeVariable, boolean z10) {
         Intrinsics.checkNotNullParameter(originalTypeVariable, "originalTypeVariable");
-        this.f34521e = originalTypeVariable;
-        this.f34522i = z10;
-        this.f34523o = ErrorUtils.createErrorScope(ErrorScopeKind.STUB_TYPE_SCOPE, originalTypeVariable.toString());
+        this.f35089e = originalTypeVariable;
+        this.f35090i = z10;
+        this.f35091o = ErrorUtils.createErrorScope(ErrorScopeKind.STUB_TYPE_SCOPE, originalTypeVariable.toString());
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.types.KotlinType
@@ -56,17 +56,17 @@ public abstract class AbstractStubType extends SimpleType {
     @Override // kotlin.reflect.jvm.internal.impl.types.KotlinType
     @NotNull
     public MemberScope getMemberScope() {
-        return this.f34523o;
+        return this.f35091o;
     }
 
     @NotNull
     public final NewTypeVariableConstructor getOriginalTypeVariable() {
-        return this.f34521e;
+        return this.f35089e;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.types.KotlinType
     public boolean isMarkedNullable() {
-        return this.f34522i;
+        return this.f35090i;
     }
 
     @NotNull

@@ -6,55 +6,55 @@ import java.util.List;
 public final class o0 extends p0 {
 
     /* renamed from: i  reason: collision with root package name */
-    final transient int f44766i;
+    final transient int f45334i;
 
     /* renamed from: o  reason: collision with root package name */
-    final transient int f44767o;
+    final transient int f45335o;
 
     /* renamed from: p  reason: collision with root package name */
-    final /* synthetic */ p0 f44768p;
+    final /* synthetic */ p0 f45336p;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public o0(p0 p0Var, int i10, int i11) {
-        this.f44768p = p0Var;
-        this.f44766i = i10;
-        this.f44767o = i11;
+        this.f45336p = p0Var;
+        this.f45334i = i10;
+        this.f45335o = i11;
     }
 
     @Override // qg.k0
     final int c() {
-        return this.f44768p.d() + this.f44766i + this.f44767o;
+        return this.f45336p.d() + this.f45334i + this.f45335o;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // qg.k0
     public final int d() {
-        return this.f44768p.d() + this.f44766i;
+        return this.f45336p.d() + this.f45334i;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // qg.k0
     public final Object[] e() {
-        return this.f44768p.e();
+        return this.f45336p.e();
     }
 
     @Override // qg.p0
     public final p0 f(int i10, int i11) {
-        c.c(i10, i11, this.f44767o);
-        p0 p0Var = this.f44768p;
-        int i12 = this.f44766i;
+        c.c(i10, i11, this.f45335o);
+        p0 p0Var = this.f45336p;
+        int i12 = this.f45334i;
         return p0Var.subList(i10 + i12, i11 + i12);
     }
 
     @Override // java.util.List
     public final Object get(int i10) {
-        c.a(i10, this.f44767o, "index");
-        return this.f44768p.get(i10 + this.f44766i);
+        c.a(i10, this.f45335o, "index");
+        return this.f45336p.get(i10 + this.f45334i);
     }
 
     @Override // java.util.AbstractCollection, java.util.Collection, java.util.List
     public final int size() {
-        return this.f44767o;
+        return this.f45335o;
     }
 
     @Override // qg.p0, java.util.List

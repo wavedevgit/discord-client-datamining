@@ -70,14 +70,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = 'trigger';
         var0.key = var5;
         var5 = function() {
-            _fun59224: for (var _fun59224_ip = 0;;) switch (_fun59224_ip) {
+            _fun58879: for (var _fun58879_ip = 0;;) switch (_fun58879_ip) {
                 case 0:
                     var1 = arguments[0];
                     var4 = this;
                     var0 = undefined;
                     if (!(var1 === var0)) {
-                        _fun59224_ip = 14;
-                        continue _fun59224
+                        _fun58879_ip = 14;
+                        continue _fun58879
                     }
                 case 12:
                     var1 = {};
@@ -142,4 +142,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.CommonTriggerPointConfiguration = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 1211, 1591, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 1212, 1591, 2]);

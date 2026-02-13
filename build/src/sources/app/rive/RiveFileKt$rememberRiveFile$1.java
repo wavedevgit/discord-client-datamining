@@ -102,7 +102,7 @@ final class RiveFileKt$rememberRiveFile$1 extends k implements Function2<u, Cont
             r7.<init>()
             throw r7
         L5b:
-            kotlin.Unit r7 = kotlin.Unit.f31988a
+            kotlin.Unit r7 = kotlin.Unit.f32556a
             return r7
         */
         throw new UnsupportedOperationException("Method not decompiled: app.rive.RiveFileKt$rememberRiveFile$1.invokeSuspend(java.lang.Object):java.lang.Object");
@@ -110,6 +110,6 @@ final class RiveFileKt$rememberRiveFile$1 extends k implements Function2<u, Cont
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(@NotNull u uVar, Continuation<? super Unit> continuation) {
-        return ((RiveFileKt$rememberRiveFile$1) create(uVar, continuation)).invokeSuspend(Unit.f31988a);
+        return ((RiveFileKt$rememberRiveFile$1) create(uVar, continuation)).invokeSuspend(Unit.f32556a);
     }
 }

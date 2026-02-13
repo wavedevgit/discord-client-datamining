@@ -5,19 +5,19 @@ import android.util.Log;
 public class b implements c {
 
     /* renamed from: c  reason: collision with root package name */
-    public static final b f43989c = new b();
+    public static final b f44557c = new b();
 
     /* renamed from: a  reason: collision with root package name */
-    private String f43990a = "unknown";
+    private String f44558a = "unknown";
 
     /* renamed from: b  reason: collision with root package name */
-    private int f43991b = 5;
+    private int f44559b = 5;
 
     private b() {
     }
 
     public static b a() {
-        return f43989c;
+        return f44557c;
     }
 
     private static String c(String str, Throwable th2) {
@@ -32,8 +32,8 @@ public class b implements c {
     }
 
     private String g(String str) {
-        if (this.f43990a != null) {
-            return this.f43990a + ":" + str;
+        if (this.f44558a != null) {
+            return this.f44558a + ":" + str;
         }
         return str;
     }
@@ -47,7 +47,7 @@ public class b implements c {
     }
 
     public int b() {
-        return this.f43991b;
+        return this.f44559b;
     }
 
     @Override // q8.c
@@ -67,14 +67,14 @@ public class b implements c {
 
     @Override // q8.c
     public boolean isLoggable(int i10) {
-        if (this.f43991b <= i10) {
+        if (this.f44559b <= i10) {
             return true;
         }
         return false;
     }
 
     public void k(int i10) {
-        this.f43991b = i10;
+        this.f44559b = i10;
     }
 
     public void l(String str, String str2, Throwable th2) {

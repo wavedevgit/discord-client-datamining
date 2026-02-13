@@ -13,10 +13,10 @@ public enum k implements bu.i {
     
 
     /* renamed from: d  reason: collision with root package name */
-    private final transient bu.p f37340d = new b();
+    private final transient bu.p f37908d = new b();
 
     /* renamed from: e  reason: collision with root package name */
-    private final transient bu.p f37341e = new e();
+    private final transient bu.p f37909e = new e();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     private static class b extends cu.d implements t {
@@ -81,7 +81,7 @@ public enum k implements bu.i {
         /* JADX INFO: Access modifiers changed from: protected */
         @Override // bu.e
         public z c(x xVar) {
-            if (!xVar.E(f0.f37451z)) {
+            if (!xVar.E(f0.f38019z)) {
                 return null;
             }
             return new c();
@@ -167,7 +167,7 @@ public enum k implements bu.i {
         }
 
         private int d(bu.q qVar) {
-            return ((f0) qVar.k(f0.f37451z)).f() + 2333;
+            return ((f0) qVar.k(f0.f38019z)).f() + 2333;
         }
 
         @Override // bu.z
@@ -220,8 +220,8 @@ public enum k implements bu.i {
             if (num != null) {
                 if (o(qVar, num)) {
                     int d10 = d(qVar);
-                    net.time4j.e eVar = f0.f37451z;
-                    return qVar.E(eVar, (f0) ((f0) qVar.k(eVar)).K(num.intValue() - d10, net.time4j.f.f37429o));
+                    net.time4j.e eVar = f0.f38019z;
+                    return qVar.E(eVar, (f0) ((f0) qVar.k(eVar)).K(num.intValue() - d10, net.time4j.f.f37997o));
                 }
                 throw new IllegalArgumentException("Invalid year of era: " + num);
             }
@@ -267,7 +267,7 @@ public enum k implements bu.i {
         /* JADX INFO: Access modifiers changed from: protected */
         @Override // bu.e
         public z c(x xVar) {
-            if (!xVar.E(f0.f37451z)) {
+            if (!xVar.E(f0.f38019z)) {
                 return null;
             }
             return new d();
@@ -293,7 +293,7 @@ public enum k implements bu.i {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public bu.p a() {
-        return this.f37340d;
+        return this.f37908d;
     }
 
     public String d(Locale locale, v vVar) {
@@ -302,6 +302,6 @@ public enum k implements bu.i {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public bu.p e() {
-        return this.f37341e;
+        return this.f37909e;
     }
 }

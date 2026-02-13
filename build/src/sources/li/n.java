@@ -15,32 +15,32 @@ import mi.r0;
 public final class n extends q0 {
 
     /* renamed from: j  reason: collision with root package name */
-    private static n f35853j;
+    private static n f36421j;
 
     /* renamed from: g  reason: collision with root package name */
-    private final Handler f35854g;
+    private final Handler f36422g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final e f35855h;
+    private final e f36423h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final Set f35856i;
+    private final Set f36424i;
 
     public n(Context context, e eVar) {
         super(new r0("SplitInstallListenerRegistry"), new IntentFilter("com.google.android.play.core.splitinstall.receiver.SplitInstallUpdateIntentService"), context);
-        this.f35854g = new Handler(Looper.getMainLooper());
-        this.f35856i = new LinkedHashSet();
-        this.f35855h = eVar;
+        this.f36422g = new Handler(Looper.getMainLooper());
+        this.f36424i = new LinkedHashSet();
+        this.f36423h = eVar;
     }
 
     public static synchronized n f(Context context) {
         n nVar;
         synchronized (n.class) {
             try {
-                if (f35853j == null) {
-                    f35853j = new n(context, h.INSTANCE);
+                if (f36421j == null) {
+                    f36421j = new n(context, h.INSTANCE);
                 }
-                nVar = f35853j;
+                nVar = f36421j;
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -56,8 +56,8 @@ public final class n extends q0 {
             return;
         }
         a j10 = a.j(bundleExtra);
-        this.f36515a.a("ListenerRegistryBroadcastReceiver.onReceive: %s", j10);
-        f zza = this.f35855h.zza();
+        this.f37083a.a("ListenerRegistryBroadcastReceiver.onReceive: %s", j10);
+        f zza = this.f36423h.zza();
         if (j10.e() == 3 && zza != null) {
             zza.a(j10.i(), new l(this, j10, intent, context));
         } else {
@@ -66,7 +66,7 @@ public final class n extends q0 {
     }
 
     public final synchronized void h(a aVar) {
-        Iterator it = new LinkedHashSet(this.f35856i).iterator();
+        Iterator it = new LinkedHashSet(this.f36424i).iterator();
         if (!it.hasNext()) {
             super.c(aVar);
         } else {

@@ -7,16 +7,16 @@ import kotlin.jvm.functions.Function0;
 public class h2 implements Function0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final j2 f51058d;
+    private final j2 f51626d;
 
     public h2(j2 j2Var) {
-        this.f51058d = j2Var;
+        this.f51626d = j2Var;
     }
 
     @Override // kotlin.jvm.functions.Function0
     public Object invoke() {
         Field J;
-        J = j2.J(this.f51058d);
+        J = j2.J(this.f51626d);
         return J;
     }
 }

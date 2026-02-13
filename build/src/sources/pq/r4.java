@@ -28,7 +28,7 @@ public abstract class r4 {
     public /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final /* synthetic */ int[] f43090a;
+        public static final /* synthetic */ int[] f43658a;
 
         static {
             int[] iArr = new int[RemoteImage.ContentType.values().length];
@@ -44,7 +44,7 @@ public abstract class r4 {
                 iArr[RemoteImage.ContentType.SVG.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
-            f43090a = iArr;
+            f43658a = iArr;
         }
     }
 
@@ -200,7 +200,7 @@ public abstract class r4 {
         final Context a10 = m5Var.a();
         if (str != null && contentType != null) {
             final Ref.BooleanRef booleanRef = new Ref.BooleanRef();
-            int[] iArr = a.f43090a;
+            int[] iArr = a.f43658a;
             int i10 = iArr[contentType.ordinal()];
             if (i10 != 1) {
                 if (i10 != 2) {
@@ -278,7 +278,7 @@ public abstract class r4 {
         eVar.f21860b.setRepeatMode(1);
         eVar.f21860b.setRepeatCount(-1);
         eVar.f21860b.playAnimation();
-        return Unit.f31988a;
+        return Unit.f32556a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -289,7 +289,7 @@ public abstract class r4 {
         fVar.f21862b.setImageResource(i10);
         fVar.f21862b.setScaleType(ImageView.ScaleType.FIT_XY);
         fVar.f21862b.setAdjustViewBounds(true);
-        return Unit.f31988a;
+        return Unit.f32556a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -323,7 +323,7 @@ public abstract class r4 {
         }
         fVar.f21862b.setScaleType(ImageView.ScaleType.FIT_XY);
         fVar.f21862b.setAdjustViewBounds(true);
-        return Unit.f31988a;
+        return Unit.f32556a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -355,7 +355,7 @@ public abstract class r4 {
         if (contentType == null) {
             i10 = -1;
         } else {
-            i10 = a.f43090a[contentType.ordinal()];
+            i10 = a.f43658a[contentType.ordinal()];
         }
         if (i10 != 1) {
             if (i10 != 3) {
@@ -408,7 +408,7 @@ public abstract class r4 {
         ImageView imageView2 = fVar.f21862b;
         Intrinsics.checkNotNullExpressionValue(imageView2, "imageView");
         k(imageView2, url, remoteImage.getStyles());
-        return Unit.f31988a;
+        return Unit.f32556a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -419,7 +419,7 @@ public abstract class r4 {
         eVar.f21860b.setRepeatMode(1);
         eVar.f21860b.setRepeatCount(-1);
         eVar.f21860b.playAnimation();
-        return Unit.f31988a;
+        return Unit.f32556a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -436,7 +436,7 @@ public abstract class r4 {
         ImageView imageView2 = fVar.f21862b;
         Intrinsics.checkNotNullExpressionValue(imageView2, "imageView");
         j(imageView2, str);
-        return Unit.f31988a;
+        return Unit.f32556a;
     }
 
     private static final String w(String str, String str2, String str3, String str4) {

@@ -4,19 +4,19 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = exports;
     var6 = dependencyMap;
     var4 = function arg0() {
-        _fun24073: for (var _fun24073_ip = 0;;) switch (_fun24073_ip) {
+        _fun24091: for (var _fun24091_ip = 0;;) switch (_fun24091_ip) {
             case 0:
                 var2 = arg0;
                 if (!var2) {
-                    _fun24073_ip = 18;
-                    continue _fun24073
+                    _fun24091_ip = 18;
+                    continue _fun24091
                 }
             case 6:
                 var1 = var2.__esModule;
                 var0 = var2;
                 if (var1) {
-                    _fun24073_ip = 27;
-                    continue _fun24073
+                    _fun24091_ip = 27;
+                    continue _fun24091
                 }
             case 18:
                 var1 = {};
@@ -35,51 +35,25 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = '__esModule';
     var0 = var7.bind(var8)(var1, var0, var2);
     var0 = function arg0, arg1() {
-        _fun24074: for (var _fun24074_ip = 0;;) switch (_fun24074_ip) {
-            case 0:
-                var5 = undefined;
-                var1 = undefined;
-                var2 = _closure1_slot2;
-                var3 = var2.default;
-                var1 = arguments;
-                var2 = var1;
-                var1 = 2;
-                var1 = var3.bind(var5)(var1, var2);
-                var1 = _closure1_slot1;
-                var2 = var1.default;
-                var1 = arg0;
-                var1 = var2.bind(var5)(var1);
-                var0 = _closure1_slot0;
-                var2 = var0.default;
-                var0 = arg1;
-                var3 = var2.bind(var5)(var0);
-                var0 = global;
-                var4 = var0.isNaN;
-                var2 = var1.getTime;
-                var2 = var2.bind(var1)();
-                var2 = var4.bind(var5)(var2);
-                if (var2) {
-                    _fun24074_ip = 103;
-                    continue _fun24074
-                }
-            case 90:
-                var2 = var1.setFullYear;
-                var2 = var2.bind(var1)(var3);
-                return var1;
-            case 103:
-                var2 = var0.Date;
-                var7 = var0.NaN;
-                var1 = var2.prototype;
-                var1 = Object.create(var1, {
-                    constructor: {
-                        value: var2
-                    }
-                });
-                var8 = var1;
-                var0 = new var8[var2](var7, var6);
-                var0 = var0 instanceof Object ? var0 : var1;
-                return var0;
-        }
+        var3 = undefined;
+        var0 = undefined;
+        var2 = _closure1_slot2;
+        var4 = var2.default;
+        var0 = arguments;
+        var2 = var0;
+        var0 = 2;
+        var0 = var4.bind(var3)(var0, var2);
+        var0 = _closure1_slot1;
+        var2 = var0.default;
+        var0 = arg0;
+        var0 = var2.bind(var3)(var0);
+        var1 = _closure1_slot0;
+        var2 = var1.default;
+        var1 = arg1;
+        var2 = var2.bind(var3)(var1);
+        var1 = var0.setSeconds;
+        var1 = var1.bind(var0)(var2);
+        return var0;
     };
     var1.default = var0;
     var0 = 0;
@@ -102,4 +76,4 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = arg4;
     var1.exports = var2;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [2579, 2575, 2576]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [2582, 2578, 2579]);

@@ -30,7 +30,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var4.bind(var0)(var3);
     var6 = var7.createStore;
     var3 = function(arg0, arg1) { // Environment: var1
-        _fun19229: for (var _fun19229_ip = 0;;) switch (_fun19229_ip) {
+        _fun19256: for (var _fun19256_ip = 0;;) switch (_fun19256_ip) {
             case 0:
                 var0 = arg0;
                 var _closure2_slot0 = var0;
@@ -49,8 +49,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var3.bind(var4)(var2);
                 var2 = null;
                 if (!(var2 == var4)) {
-                    _fun19229_ip = 73;
-                    continue _fun19229
+                    _fun19256_ip = 73;
+                    continue _fun19256
                 }
             case 69:
                 var4 = new Array(0);
@@ -104,7 +104,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var0.dismissNotification = var2;
                 var1 = function arg0() {
-                    _fun19232: for (var _fun19232_ip = 0;;) switch (_fun19232_ip) {
+                    _fun19259: for (var _fun19259_ip = 0;;) switch (_fun19259_ip) {
                         case 0:
                             var3 = arg0;
                             var2 = _closure2_slot1;
@@ -115,8 +115,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var2 = var7.has;
                             var2 = var2.bind(var7)(var3);
                             if (!var2) {
-                                _fun19232_ip = 123;
-                                continue _fun19232
+                                _fun19259_ip = 123;
+                                continue _fun19259
                             }
                         case 41:
                             var2 = var7.delete;
@@ -250,4 +250,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.clearCommunicationDisabledNotice = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 1685, 587, 630, 802, 797, 3078, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 1688, 587, 630, 803, 798, 3081, 2]);

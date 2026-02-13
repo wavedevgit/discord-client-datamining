@@ -5,16 +5,16 @@ import android.content.Context;
 public abstract class c {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final ff.a f51585a = mg.g.f36459l;
+    public static final ff.a f52153a = mg.g.f37027l;
 
     /* renamed from: b  reason: collision with root package name */
-    public static final a f51586b = new mg.e();
+    public static final a f52154b = new mg.e();
 
     /* renamed from: c  reason: collision with root package name */
-    public static final b f51587c = new mg.i();
+    public static final b f52155c = new mg.i();
 
     /* renamed from: d  reason: collision with root package name */
-    public static final h f51588d = new mg.j();
+    public static final h f52156d = new mg.j();
 
     public static i a(Context context) {
         return new mg.l(context);

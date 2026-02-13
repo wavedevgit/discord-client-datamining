@@ -273,7 +273,7 @@ public final class h0 implements uc.k {
                 this.f22507p = false;
                 a(0L, 0L);
                 if (lVar.getPosition() != 0) {
-                    yVar.f50715a = 0L;
+                    yVar.f51283a = 0L;
                     return 1;
                 }
             }
@@ -381,7 +381,7 @@ public final class h0 implements uc.k {
         this.f22498g = new SparseArray();
         this.f22496e = new SparseIntArray();
         this.f22501j = new f0(i11);
-        this.f22503l = uc.m.f50686l;
+        this.f22503l = uc.m.f51254l;
         this.f22510s = -1;
         x();
     }
@@ -537,7 +537,7 @@ public final class h0 implements uc.k {
                     this.f22513a.r(4);
                     h0Var.V(this.f22513a.h(12));
                     if (h0.this.f22492a == 2 && h0.this.f22508q == null) {
-                        i0.b bVar = new i0.b(21, null, null, w0.f39043f);
+                        i0.b bVar = new i0.b(21, null, null, w0.f39611f);
                         h0 h0Var2 = h0.this;
                         h0Var2.f22508q = h0Var2.f22497f.a(21, bVar);
                         if (h0.this.f22508q != null) {

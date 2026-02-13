@@ -15,27 +15,27 @@ import ys.m0;
 public final class c {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final c f56064a = new c();
+    public static final c f56632a = new c();
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a extends Lambda implements Function0 {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ Function0 f56065d;
+        final /* synthetic */ Function0 f56633d;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         a(Function0 function0) {
             super(0);
-            this.f56065d = function0;
+            this.f56633d = function0;
         }
 
         @Override // kotlin.jvm.functions.Function0
         /* renamed from: a */
         public final File invoke() {
-            File file = (File) this.f56065d.invoke();
+            File file = (File) this.f56633d.invoke();
             String s10 = j.s(file);
-            h hVar = h.f56070a;
+            h hVar = h.f56638a;
             if (Intrinsics.areEqual(s10, hVar.f())) {
                 return file;
             }
@@ -63,6 +63,6 @@ public final class c {
         Intrinsics.checkNotNullParameter(migrations, "migrations");
         Intrinsics.checkNotNullParameter(scope, "scope");
         Intrinsics.checkNotNullParameter(produceFile, "produceFile");
-        return new b(w2.g.f52125a.a(h.f56070a, bVar, migrations, scope, new a(produceFile)));
+        return new b(w2.g.f52693a.a(h.f56638a, bVar, migrations, scope, new a(produceFile)));
     }
 }

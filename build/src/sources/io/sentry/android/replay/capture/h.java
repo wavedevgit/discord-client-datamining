@@ -35,42 +35,42 @@ import kotlin.jvm.internal.Ref;
 public interface h {
 
     /* renamed from: a */
-    public static final a f28810a = a.f28811a;
+    public static final a f29378a = a.f29379a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
 
         /* renamed from: a */
-        static final /* synthetic */ a f28811a = new a();
+        static final /* synthetic */ a f29379a = new a();
 
         /* renamed from: io.sentry.android.replay.capture.h$a$a */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         public static final class C0393a extends Lambda implements Function1 {
 
             /* renamed from: d */
-            final /* synthetic */ Date f28812d;
+            final /* synthetic */ Date f29380d;
 
             /* renamed from: e */
-            final /* synthetic */ List f28813e;
+            final /* synthetic */ List f29381e;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             C0393a(Date date, List list) {
                 super(1);
-                this.f28812d = date;
-                this.f28813e = list;
+                this.f29380d = date;
+                this.f29381e = list;
             }
 
             public final void a(io.sentry.rrweb.b event) {
                 Intrinsics.checkNotNullParameter(event, "event");
-                if (event.e() >= this.f28812d.getTime()) {
-                    this.f28813e.add(event);
+                if (event.e() >= this.f29380d.getTime()) {
+                    this.f29381e.add(event);
                 }
             }
 
             @Override // kotlin.jvm.functions.Function1
             public /* bridge */ /* synthetic */ Object invoke(Object obj) {
                 a((io.sentry.rrweb.b) obj);
-                return Unit.f31988a;
+                return Unit.f32556a;
             }
         }
 
@@ -169,7 +169,7 @@ public interface h {
                 }
                 return b(options, a10, replayId, currentSegmentTimestamp, i10, i11, i12, b10, i13, c10, replayType, str, list2, events);
             }
-            return c.b.f28816a;
+            return c.b.f29384a;
         }
 
         public final void g(Deque events, long j10, Function1 function1) {
@@ -216,18 +216,18 @@ public interface h {
         public static final class a extends c {
 
             /* renamed from: a */
-            private final l7 f28814a;
+            private final l7 f29382a;
 
             /* renamed from: b */
-            private final v3 f28815b;
+            private final v3 f29383b;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             public a(l7 replay, v3 recording) {
                 super(null);
                 Intrinsics.checkNotNullParameter(replay, "replay");
                 Intrinsics.checkNotNullParameter(recording, "recording");
-                this.f28814a = replay;
-                this.f28815b = recording;
+                this.f29382a = replay;
+                this.f29383b = recording;
             }
 
             public static /* synthetic */ void b(a aVar, w0 w0Var, Hint hint, int i10, Object obj) {
@@ -240,20 +240,20 @@ public interface h {
             public final void a(w0 w0Var, Hint hint) {
                 Intrinsics.checkNotNullParameter(hint, "hint");
                 if (w0Var != null) {
-                    l7 l7Var = this.f28814a;
-                    hint.l(this.f28815b);
-                    Unit unit = Unit.f31988a;
+                    l7 l7Var = this.f29382a;
+                    hint.l(this.f29383b);
+                    Unit unit = Unit.f32556a;
                     w0Var.t(l7Var, hint);
                 }
             }
 
             public final l7 c() {
-                return this.f28814a;
+                return this.f29382a;
             }
 
             public final void d(int i10) {
-                this.f28814a.o0(i10);
-                List<io.sentry.rrweb.b> a10 = this.f28815b.a();
+                this.f29382a.o0(i10);
+                List<io.sentry.rrweb.b> a10 = this.f29383b.a();
                 if (a10 != null) {
                     for (io.sentry.rrweb.b bVar : a10) {
                         if (bVar instanceof io.sentry.rrweb.j) {
@@ -269,17 +269,17 @@ public interface h {
                 }
                 if (obj instanceof a) {
                     a aVar = (a) obj;
-                    return Intrinsics.areEqual(this.f28814a, aVar.f28814a) && Intrinsics.areEqual(this.f28815b, aVar.f28815b);
+                    return Intrinsics.areEqual(this.f29382a, aVar.f29382a) && Intrinsics.areEqual(this.f29383b, aVar.f29383b);
                 }
                 return false;
             }
 
             public int hashCode() {
-                return (this.f28814a.hashCode() * 31) + this.f28815b.hashCode();
+                return (this.f29382a.hashCode() * 31) + this.f29383b.hashCode();
             }
 
             public String toString() {
-                return "Created(replay=" + this.f28814a + ", recording=" + this.f28815b + ')';
+                return "Created(replay=" + this.f29382a + ", recording=" + this.f29383b + ')';
             }
         }
 
@@ -287,7 +287,7 @@ public interface h {
         public static final class b extends c {
 
             /* renamed from: a */
-            public static final b f28816a = new b();
+            public static final b f29384a = new b();
 
             private b() {
                 super(null);

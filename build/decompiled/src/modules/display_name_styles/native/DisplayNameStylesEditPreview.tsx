@@ -263,10 +263,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/display_name_styles/native/DisplayNameStylesEditPreview.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun84702: for (var _fun84702_ip = 0;;) switch (_fun84702_ip) {
+        _fun85788: for (var _fun85788_ip = 0;;) switch (_fun85788_ip) {
             case 0:
                 var1 = arg0;
-                var18 = var1.user;
+                var17 = var1.user;
                 var11 = var1.displayName;
                 var13 = var1.guildId;
                 var7 = var1.selectedFontId;
@@ -277,33 +277,22 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var _closure2_slot2 = var5;
                 var1 = _closure1_slot7;
                 var3 = undefined;
-                var9 = var1.bind(var3)();
-                var2 = _closure1_slot0;
-                var4 = _closure1_slot2;
+                var10 = var1.bind(var3)();
+                var9 = _closure1_slot0;
+                var18 = _closure1_slot2;
                 var1 = 5;
-                var1 = var4[var1];
-                var2 = var2.bind(var3)(var1);
+                var1 = var18[var1];
+                var2 = var9.bind(var3)(var1);
                 var1 = var2.useGuildMemberAndUserPendingNameplate;
-                var1 = var1.bind(var2)(var18, var13);
+                var1 = var1.bind(var2)(var17, var13);
                 var15 = var1.userNameplate;
                 var4 = var1.guildNameplate;
                 var14 = var1.pendingNameplate;
-                var17 = null;
-                var1 = var17 != var4;
-                var16 = undefined;
-                if (!var1) {
-                    _fun84702_ip = 155;
-                    continue _fun84702
-                }
-            case 124:
-                var2 = _closure1_slot0;
-                var10 = _closure1_slot2;
                 var1 = 6;
-                var1 = var10[var1];
-                var2 = var2.bind(var3)(var1);
+                var1 = var18[var1];
+                var2 = var9.bind(var3)(var1);
                 var1 = var2.getNameplateData;
                 var16 = var1.bind(var2)(var4);
-            case 155:
                 var4 = _closure1_slot3;
                 var2 = var4.useMemo;
                 var1 = new Array(3);
@@ -324,16 +313,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = _closure1_slot6;
                 var1 = _closure1_slot4;
                 var0 = {};
-                var4 = var9.previewSection;
+                var4 = var10.previewSection;
                 var0.style = var4;
                 var6 = _closure1_slot5;
                 var5 = _closure1_slot1;
-                var19 = _closure1_slot2;
                 var4 = 7;
-                var4 = var19[var4];
+                var4 = var18[var4];
                 var5 = var5.bind(var3)(var4);
                 var4 = {};
-                var4.user = var18;
+                var4.user = var17;
                 var4.displayName = var11;
                 var4.guildId = var13;
                 var4.pendingDisplayNameStyles = var12;
@@ -347,49 +335,49 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = _closure1_slot5;
                 var6 = _closure1_slot4;
                 var5 = {};
-                var10 = var9.chatPreviewWrapper;
-                var5.style = var10;
+                var19 = var10.chatPreviewWrapper;
+                var5.style = var19;
                 var21 = _closure1_slot5;
                 var20 = _closure1_slot8;
-                var10 = {};
-                var10.user = var18;
-                var10.displayName = var11;
-                var10.displayNameStyles = var12;
-                var10.guildId = var13;
-                var10 = var21.bind(var3)(var20, var10);
-                var5.children = var10;
+                var19 = {};
+                var19.user = var17;
+                var19.displayName = var11;
+                var19.displayNameStyles = var12;
+                var19.guildId = var13;
+                var19 = var21.bind(var3)(var20, var19);
+                var5.children = var19;
                 var5 = var7.bind(var3)(var6, var5);
                 var4[1] = var5;
                 var7 = _closure1_slot5;
                 var6 = _closure1_slot4;
                 var5 = {};
-                var9 = var9.nameplatePreviewWrapper;
-                var5.style = var9;
+                var10 = var10.nameplatePreviewWrapper;
+                var5.style = var10;
                 var10 = _closure1_slot5;
-                var9 = _closure1_slot0;
                 var8 = 8;
-                var8 = var19[var8];
+                var8 = var18[var8];
                 var8 = var9.bind(var3)(var8);
                 var9 = var8.NameplatePreview;
                 var8 = {};
-                var8.user = var18;
+                var8.user = var17;
                 var8.nameplate = var14;
+                var17 = null;
                 var18 = var17 == var14;
                 var14 = undefined;
                 if (!var18) {
-                    _fun84702_ip = 431;
-                    continue _fun84702
+                    _fun85788_ip = 406;
+                    continue _fun85788
                 }
-            case 421:
+            case 396:
                 if (!(var17 != var16)) {
-                    _fun84702_ip = 428;
-                    continue _fun84702
+                    _fun85788_ip = 403;
+                    continue _fun85788
                 }
-            case 425:
+            case 400:
                 var15 = var16;
-            case 428:
+            case 403:
                 var14 = var15;
-            case 431:
+            case 406:
                 var8.nameplateData = var14;
                 var8.guildId = var13;
                 var8.pendingDisplayNameStyles = var12;
@@ -405,4 +393,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 5644, 1641, 7057, 7017, 3134, 5512, 7018, 7019, 3938, 1234, 2182, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 5644, 1641, 7044, 7004, 3137, 5512, 7005, 7006, 3938, 1235, 2185, 2]);

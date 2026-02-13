@@ -1,83 +1,111 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var1 = exports;
-    var2 = require;
-    var _closure1_slot0 = var2;
-    var2 = dependencyMap;
-    var _closure1_slot1 = var2;
-    var2 = global;
-    var5 = var2.Object;
+    var0 = global;
+    var5 = var0.Object;
     var4 = var5.defineProperty;
-    var2 = var2.Symbol;
-    var3 = var2.toStringTag;
-    var2 = {};
+    var0 = var0.Symbol;
+    var3 = var0.toStringTag;
+    var0 = {};
     var6 = 'Module';
-    var2.value = var6;
-    var2 = var4.bind(var5)(var1, var3, var2);
-    var2 = function() {
-        var2 = _closure1_slot0;
-        var1 = _closure1_slot1;
-        var0 = 0;
-        var1 = var1[var0];
-        var0 = undefined;
-        var3 = var2.bind(var0)(var1);
-        var2 = var3.getGlobalSingleton;
-        var1 = 'defaultCurrentScope';
-        var0 = function() { // Environment: var0
-            var2 = _closure1_slot0;
-            var1 = _closure1_slot1;
-            var0 = 1;
-            var1 = var1[var0];
-            var0 = undefined;
-            var0 = var2.bind(var0)(var1);
-            var0 = var0.Scope;
-            var1 = var0.prototype;
-            var1 = Object.create(var1, {
-                constructor: {
-                    value: var0
+    var0.value = var6;
+    var0 = var4.bind(var5)(var1, var3, var0);
+    var0 = function arg0, arg1() {
+        _fun8957: for (var _fun8957_ip = 0;;) switch (_fun8957_ip) {
+            case 0:
+                var1 = arg0;
+                var0 = arg1;
+                var12 = undefined;
+                var3 = undefined;
+                var4 = arguments.length;
+                var2 = 2;
+                var4 = var4 > var2;
+                var11 = var2;
+                if (!var4) {
+                    _fun8957_ip = 41;
+                    continue _fun8957
                 }
-            });
-            var4 = var1;
-            var0 = new var4[var0](var3);
-            var0 = var0 instanceof Object ? var0 : var1;
-            return var0;
-        };
-        var0 = var2.bind(var3)(var1, var0);
-        return var0;
-    };
-    var1.getDefaultCurrentScope = var2;
-    var0 = function() {
-        var2 = _closure1_slot0;
-        var1 = _closure1_slot1;
-        var0 = 0;
-        var1 = var1[var0];
-        var0 = undefined;
-        var3 = var2.bind(var0)(var1);
-        var2 = var3.getGlobalSingleton;
-        var1 = 'defaultIsolationScope';
-        var0 = function() { // Environment: var0
-            var2 = _closure1_slot0;
-            var1 = _closure1_slot1;
-            var0 = 1;
-            var1 = var1[var0];
-            var0 = undefined;
-            var0 = var2.bind(var0)(var1);
-            var0 = var0.Scope;
-            var1 = var0.prototype;
-            var1 = Object.create(var1, {
-                constructor: {
-                    value: var0
+            case 26:
+                var4 = arguments[var2];
+                var11 = var2;
+                if (!(var12 !== var4)) {
+                    _fun8957_ip = 41;
+                    continue _fun8957
                 }
-            });
-            var4 = var1;
-            var0 = new var4[var0](var3);
-            var0 = var0 instanceof Object ? var0 : var1;
-            return var0;
-        };
-        var0 = var2.bind(var3)(var1, var0);
-        return var0;
+            case 37:
+                var11 = arguments[var2];
+            case 41:
+                if (!var0) {
+                    _fun8957_ip = 214;
+                    continue _fun8957
+                }
+            case 47:
+                var3 = 'object';
+                var2 = typeof var0;
+                if (!(var3 === var2)) {
+                    _fun8957_ip = 214;
+                    continue _fun8957
+                }
+            case 61:
+                var3 = 0;
+                if (!(!(var11 <= var3))) {
+                    _fun8957_ip = 214;
+                    continue _fun8957
+                }
+            case 70:
+                if (!var1) {
+                    _fun8957_ip = 100;
+                    continue _fun8957
+                }
+            case 73:
+                var2 = global;
+                var4 = var2.Object;
+                var2 = var4.keys;
+                var2 = var2.bind(var4)(var0);
+                var2 = var2.length;
+                if (!(var3 !== var2)) {
+                    _fun8957_ip = 212;
+                    continue _fun8957
+                }
+            case 100:
+                var10 = global;
+                var4 = var10.Object;
+                var3 = var4.assign;
+                var2 = {};
+                var2 = var3.bind(var4)(var2, var1);
+                var8 = var0;
+                var3 = 1;
+                for (var5 in var8)
+                    case 138: {
+                        case 147: var14 = var5;
+                        var13 = var10.Object;
+                        var13 = var13.prototype;
+                        var15 = var13.hasOwnProperty;
+                        var13 = var15.call;
+                        var13 = var13.bind(var15)(var0, var14);
+                        if (!var13) {
+                            _fun8957_ip = 138;
+                            continue _fun8957
+                        }
+                        case 181: var17 = _closure1_slot0;
+                        var16 = var2[var14];
+                        var15 = var0[var14];
+                        var13 = var11 - var3;
+                        var13 = var17.bind(var12)(var16, var15, var13);
+                        var2[var14] = var13;
+                        _fun8957_ip = 138;
+                        continue _fun8957;
+                    }
+            case 210:
+                return var2;
+            case 212:
+                return var1;
+            case 214:
+                return var0;
+        }
     };
-    var1.getDefaultIsolationScope = var0;
+    var _closure1_slot0 = var0;
+    var1.merge = var0;
     var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [825, 842]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, []);

@@ -9,25 +9,25 @@ import java.util.Map;
 public final class x6 implements w1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private io.sentry.protocol.x f30270d;
+    private io.sentry.protocol.x f30838d;
 
     /* renamed from: e  reason: collision with root package name */
-    private Double f30271e;
+    private Double f30839e;
 
     /* renamed from: i  reason: collision with root package name */
-    private String f30272i;
+    private String f30840i;
 
     /* renamed from: o  reason: collision with root package name */
-    private a7 f30273o;
+    private a7 f30841o;
 
     /* renamed from: p  reason: collision with root package name */
-    private Integer f30274p;
+    private Integer f30842p;
 
     /* renamed from: q  reason: collision with root package name */
-    private Map f30275q;
+    private Map f30843q;
 
     /* renamed from: r  reason: collision with root package name */
-    private Map f30276r;
+    private Map f30844r;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements m1 {
@@ -141,41 +141,41 @@ public final class x6 implements w1 {
     }
 
     public x6(io.sentry.protocol.x xVar, Double d10, String str, a7 a7Var) {
-        this.f30270d = xVar;
-        this.f30271e = d10;
-        this.f30272i = str;
-        this.f30273o = a7Var;
+        this.f30838d = xVar;
+        this.f30839e = d10;
+        this.f30840i = str;
+        this.f30841o = a7Var;
     }
 
     public void a(Map map) {
-        this.f30275q = map;
+        this.f30843q = map;
     }
 
     public void b(Integer num) {
-        this.f30274p = num;
+        this.f30842p = num;
     }
 
     public void c(Map map) {
-        this.f30276r = map;
+        this.f30844r = map;
     }
 
     @Override // io.sentry.w1
     public void serialize(f3 f3Var, ILogger iLogger) {
         f3Var.u();
-        f3Var.e("timestamp").j(iLogger, k.c(this.f30271e));
-        f3Var.e("trace_id").j(iLogger, this.f30270d);
-        f3Var.e("body").f(this.f30272i);
-        f3Var.e("level").j(iLogger, this.f30273o);
-        if (this.f30274p != null) {
-            f3Var.e("severity_number").j(iLogger, this.f30274p);
+        f3Var.e("timestamp").j(iLogger, k.c(this.f30839e));
+        f3Var.e("trace_id").j(iLogger, this.f30838d);
+        f3Var.e("body").f(this.f30840i);
+        f3Var.e("level").j(iLogger, this.f30841o);
+        if (this.f30842p != null) {
+            f3Var.e("severity_number").j(iLogger, this.f30842p);
         }
-        if (this.f30275q != null) {
-            f3Var.e("attributes").j(iLogger, this.f30275q);
+        if (this.f30843q != null) {
+            f3Var.e("attributes").j(iLogger, this.f30843q);
         }
-        Map map = this.f30276r;
+        Map map = this.f30844r;
         if (map != null) {
             for (String str : map.keySet()) {
-                f3Var.e(str).j(iLogger, this.f30276r.get(str));
+                f3Var.e(str).j(iLogger, this.f30844r.get(str));
             }
         }
         f3Var.D();

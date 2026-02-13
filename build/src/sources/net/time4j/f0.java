@@ -29,103 +29,103 @@ public final class f0 extends bu.m implements zt.a, bu.d0, cu.h {
     private static final long serialVersionUID = -6698431452072325688L;
 
     /* renamed from: w  reason: collision with root package name */
-    private static final int[] f37448w;
+    private static final int[] f38016w;
 
     /* renamed from: x  reason: collision with root package name */
-    private static final int[] f37449x;
+    private static final int[] f38017x;
 
     /* renamed from: y  reason: collision with root package name */
-    static final bu.p f37450y;
+    static final bu.p f38018y;
 
     /* renamed from: z  reason: collision with root package name */
-    public static final net.time4j.e f37451z;
+    public static final net.time4j.e f38019z;
 
     /* renamed from: d  reason: collision with root package name */
-    private final transient int f37452d;
+    private final transient int f38020d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final transient byte f37453e;
+    private final transient byte f38021e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final transient byte f37454i;
+    private final transient byte f38022i;
 
     /* renamed from: o  reason: collision with root package name */
-    static final f0 f37440o = new f0(-999999999, 1, 1);
+    static final f0 f38008o = new f0(-999999999, 1, 1);
 
     /* renamed from: p  reason: collision with root package name */
-    static final f0 f37441p = new f0(999999999, 12, 31);
+    static final f0 f38009p = new f0(999999999, 12, 31);
 
     /* renamed from: q  reason: collision with root package name */
-    static final Integer f37442q = -999999999;
+    static final Integer f38010q = -999999999;
 
     /* renamed from: r  reason: collision with root package name */
-    static final Integer f37443r = 999999999;
+    static final Integer f38011r = 999999999;
 
     /* renamed from: s  reason: collision with root package name */
-    private static final Integer f37444s = 1;
+    private static final Integer f38012s = 1;
 
     /* renamed from: t  reason: collision with root package name */
-    private static final Integer f37445t = 12;
+    private static final Integer f38013t = 12;
 
     /* renamed from: u  reason: collision with root package name */
-    private static final Integer f37446u = 365;
+    private static final Integer f38014u = 365;
 
     /* renamed from: v  reason: collision with root package name */
-    private static final Integer f37447v = 366;
+    private static final Integer f38015v = 366;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f37455a;
+        static final /* synthetic */ int[] f38023a;
 
         /* renamed from: b  reason: collision with root package name */
-        static final /* synthetic */ int[] f37456b;
+        static final /* synthetic */ int[] f38024b;
 
         static {
             int[] iArr = new int[n0.values().length];
-            f37456b = iArr;
+            f38024b = iArr;
             try {
                 iArr[n0.Q1.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f37456b[n0.Q2.ordinal()] = 2;
+                f38024b[n0.Q2.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             int[] iArr2 = new int[net.time4j.f.values().length];
-            f37455a = iArr2;
+            f38023a = iArr2;
             try {
-                iArr2[net.time4j.f.f37426d.ordinal()] = 1;
+                iArr2[net.time4j.f.f37994d.ordinal()] = 1;
             } catch (NoSuchFieldError unused3) {
             }
             try {
-                f37455a[net.time4j.f.f37427e.ordinal()] = 2;
+                f38023a[net.time4j.f.f37995e.ordinal()] = 2;
             } catch (NoSuchFieldError unused4) {
             }
             try {
-                f37455a[net.time4j.f.f37428i.ordinal()] = 3;
+                f38023a[net.time4j.f.f37996i.ordinal()] = 3;
             } catch (NoSuchFieldError unused5) {
             }
             try {
-                f37455a[net.time4j.f.f37429o.ordinal()] = 4;
+                f38023a[net.time4j.f.f37997o.ordinal()] = 4;
             } catch (NoSuchFieldError unused6) {
             }
             try {
-                f37455a[net.time4j.f.f37430p.ordinal()] = 5;
+                f38023a[net.time4j.f.f37998p.ordinal()] = 5;
             } catch (NoSuchFieldError unused7) {
             }
             try {
-                f37455a[net.time4j.f.f37431q.ordinal()] = 6;
+                f38023a[net.time4j.f.f37999q.ordinal()] = 6;
             } catch (NoSuchFieldError unused8) {
             }
             try {
-                f37455a[net.time4j.f.f37432r.ordinal()] = 7;
+                f38023a[net.time4j.f.f38000r.ordinal()] = 7;
             } catch (NoSuchFieldError unused9) {
             }
             try {
-                f37455a[net.time4j.f.f37433s.ordinal()] = 8;
+                f38023a[net.time4j.f.f38001s.ordinal()] = 8;
             } catch (NoSuchFieldError unused10) {
             }
         }
@@ -151,13 +151,13 @@ public final class f0 extends bu.m implements zt.a, bu.d0, cu.h {
         @Override // bu.z
         /* renamed from: d */
         public f0 m(f0 f0Var) {
-            return f0.f37441p;
+            return f0.f38009p;
         }
 
         @Override // bu.z
         /* renamed from: e */
         public f0 q(f0 f0Var) {
-            return f0.f37440o;
+            return f0.f38008o;
         }
 
         @Override // bu.z
@@ -190,30 +190,30 @@ public final class f0 extends bu.m implements zt.a, bu.d0, cu.h {
     private static class c implements bu.z {
 
         /* renamed from: d  reason: collision with root package name */
-        private final String f37457d;
+        private final String f38025d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final Class f37458e;
+        private final Class f38026e;
 
         /* renamed from: i  reason: collision with root package name */
-        private final Enum f37459i;
+        private final Enum f38027i;
 
         /* renamed from: o  reason: collision with root package name */
-        private final Enum f37460o;
+        private final Enum f38028o;
 
         /* renamed from: p  reason: collision with root package name */
-        private final int f37461p;
+        private final int f38029p;
 
         c(String str, Class cls, Enum r32, Enum r42, int i10) {
-            this.f37457d = str;
-            this.f37458e = cls;
-            this.f37459i = r32;
-            this.f37460o = r42;
-            this.f37461p = i10;
+            this.f38025d = str;
+            this.f38026e = cls;
+            this.f38027i = r32;
+            this.f38028o = r42;
+            this.f38029p = i10;
         }
 
         private bu.p b() {
-            switch (this.f37461p) {
+            switch (this.f38029p) {
                 case 101:
                     return f0.F;
                 case 102:
@@ -221,7 +221,7 @@ public final class f0 extends bu.m implements zt.a, bu.d0, cu.h {
                 case 103:
                     return f0.I;
                 default:
-                    throw new UnsupportedOperationException(this.f37457d);
+                    throw new UnsupportedOperationException(this.f38025d);
             }
         }
 
@@ -244,36 +244,36 @@ public final class f0 extends bu.m implements zt.a, bu.d0, cu.h {
         @Override // bu.z
         /* renamed from: e */
         public Enum m(f0 f0Var) {
-            if (this.f37461p == 102 && f0Var.f37452d == 999999999 && f0Var.f37453e == 12 && f0Var.f37454i >= 27) {
-                return (Enum) this.f37458e.cast(y0.FRIDAY);
+            if (this.f38029p == 102 && f0Var.f38020d == 999999999 && f0Var.f38021e == 12 && f0Var.f38022i >= 27) {
+                return (Enum) this.f38026e.cast(y0.FRIDAY);
             }
-            return this.f37460o;
+            return this.f38028o;
         }
 
         @Override // bu.z
         /* renamed from: f */
         public Enum q(f0 f0Var) {
-            return this.f37459i;
+            return this.f38027i;
         }
 
         @Override // bu.z
         /* renamed from: g */
         public Enum y(f0 f0Var) {
             Object f10;
-            switch (this.f37461p) {
+            switch (this.f38029p) {
                 case 101:
-                    f10 = b0.f(f0Var.f37453e);
+                    f10 = b0.f(f0Var.f38021e);
                     break;
                 case 102:
                     f10 = f0Var.A0();
                     break;
                 case 103:
-                    f10 = n0.f(((f0Var.f37453e - 1) / 3) + 1);
+                    f10 = n0.f(((f0Var.f38021e - 1) / 3) + 1);
                     break;
                 default:
-                    throw new UnsupportedOperationException(this.f37457d);
+                    throw new UnsupportedOperationException(this.f38025d);
             }
-            return (Enum) this.f37458e.cast(f10);
+            return (Enum) this.f38026e.cast(f10);
         }
 
         @Override // bu.z
@@ -282,7 +282,7 @@ public final class f0 extends bu.m implements zt.a, bu.d0, cu.h {
             if (r52 == null) {
                 return false;
             }
-            if (this.f37461p == 102 && f0Var.f37452d == 999999999) {
+            if (this.f38029p == 102 && f0Var.f38020d == 999999999) {
                 try {
                     x(f0Var, r52, false);
                     return true;
@@ -297,15 +297,15 @@ public final class f0 extends bu.m implements zt.a, bu.d0, cu.h {
         /* renamed from: k */
         public f0 x(f0 f0Var, Enum r32, boolean z10) {
             if (r32 != null) {
-                switch (this.f37461p) {
+                switch (this.f38029p) {
                     case 101:
                         return f0Var.T0(((b0) b0.class.cast(r32)).d());
                     case 102:
                         return f0Var.Q0((y0) y0.class.cast(r32));
                     case 103:
-                        return (f0) f0Var.K(((n0) n0.class.cast(r32)).d() - (((f0Var.f37453e - 1) / 3) + 1), net.time4j.f.f37430p);
+                        return (f0) f0Var.K(((n0) n0.class.cast(r32)).d() - (((f0Var.f38021e - 1) / 3) + 1), net.time4j.f.f37998p);
                     default:
-                        throw new UnsupportedOperationException(this.f37457d);
+                        throw new UnsupportedOperationException(this.f38025d);
                 }
             }
             throw new IllegalArgumentException("Missing element value.");
@@ -316,20 +316,20 @@ public final class f0 extends bu.m implements zt.a, bu.d0, cu.h {
     private static class d implements bu.c0 {
 
         /* renamed from: d  reason: collision with root package name */
-        private final bu.p f37462d;
+        private final bu.p f38030d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final String f37463e;
+        private final String f38031e;
 
         /* renamed from: i  reason: collision with root package name */
-        private final int f37464i;
+        private final int f38032i;
 
         d(bu.p pVar) {
             this(((s) pVar).J(), pVar);
         }
 
         private bu.p b() {
-            switch (this.f37464i) {
+            switch (this.f38032i) {
                 case 14:
                     return f0.E;
                 case 15:
@@ -340,14 +340,14 @@ public final class f0 extends bu.m implements zt.a, bu.d0, cu.h {
                 case ChatViewRecyclerTypes.INTERACTION_STATUS /* 19 */:
                     return null;
                 default:
-                    throw new UnsupportedOperationException(this.f37463e);
+                    throw new UnsupportedOperationException(this.f38031e);
             }
         }
 
         private static int g(f0 f0Var) {
-            int i10 = ((f0Var.f37453e - 1) / 3) + 1;
+            int i10 = ((f0Var.f38021e - 1) / 3) + 1;
             if (i10 == 1) {
-                if (zt.b.e(f0Var.f37452d)) {
+                if (zt.b.e(f0Var.f38020d)) {
                     return 91;
                 }
                 return 90;
@@ -359,8 +359,8 @@ public final class f0 extends bu.m implements zt.a, bu.d0, cu.h {
         }
 
         private int i(f0 f0Var) {
-            int d10 = zt.b.d(f0Var.f37452d, f0Var.f37453e);
-            byte b10 = f0Var.f37454i;
+            int d10 = zt.b.d(f0Var.f38020d, f0Var.f38021e);
+            byte b10 = f0Var.f38022i;
             int i10 = 0;
             while (true) {
                 int i11 = i10 + 1;
@@ -387,59 +387,59 @@ public final class f0 extends bu.m implements zt.a, bu.d0, cu.h {
         @Override // bu.c0
         /* renamed from: e */
         public int u(f0 f0Var) {
-            switch (this.f37464i) {
+            switch (this.f38032i) {
                 case 14:
-                    return f0Var.f37452d;
+                    return f0Var.f38020d;
                 case 15:
-                    return f0Var.f37453e;
+                    return f0Var.f38021e;
                 case 16:
-                    return f0Var.f37454i;
+                    return f0Var.f38022i;
                 case 17:
                     return f0Var.B0();
                 case ChatViewRecyclerTypes.EPHEMERAL_INDICATION /* 18 */:
                     return f0Var.z0();
                 case ChatViewRecyclerTypes.INTERACTION_STATUS /* 19 */:
-                    return ((f0Var.f37454i - 1) / 7) + 1;
+                    return ((f0Var.f38022i - 1) / 7) + 1;
                 default:
-                    throw new UnsupportedOperationException(this.f37463e);
+                    throw new UnsupportedOperationException(this.f38031e);
             }
         }
 
         @Override // bu.z
         /* renamed from: f */
         public Integer m(f0 f0Var) {
-            switch (this.f37464i) {
+            switch (this.f38032i) {
                 case 14:
-                    return f0.f37443r;
+                    return f0.f38011r;
                 case 15:
-                    return f0.f37445t;
+                    return f0.f38013t;
                 case 16:
-                    return Integer.valueOf(zt.b.d(f0Var.f37452d, f0Var.f37453e));
+                    return Integer.valueOf(zt.b.d(f0Var.f38020d, f0Var.f38021e));
                 case 17:
-                    return zt.b.e(f0Var.f37452d) ? f0.f37447v : f0.f37446u;
+                    return zt.b.e(f0Var.f38020d) ? f0.f38015v : f0.f38014u;
                 case ChatViewRecyclerTypes.EPHEMERAL_INDICATION /* 18 */:
                     return Integer.valueOf(g(f0Var));
                 case ChatViewRecyclerTypes.INTERACTION_STATUS /* 19 */:
                     return Integer.valueOf(i(f0Var));
                 default:
-                    throw new UnsupportedOperationException(this.f37463e);
+                    throw new UnsupportedOperationException(this.f38031e);
             }
         }
 
         @Override // bu.z
         /* renamed from: j */
         public Integer q(f0 f0Var) {
-            switch (this.f37464i) {
+            switch (this.f38032i) {
                 case 14:
-                    return f0.f37442q;
+                    return f0.f38010q;
                 case 15:
                 case 16:
                 case 17:
                 case ChatViewRecyclerTypes.EPHEMERAL_INDICATION /* 18 */:
                 case ChatViewRecyclerTypes.INTERACTION_STATUS /* 19 */:
-                    return f0.f37444s;
+                    return f0.f38012s;
                 default:
-                    throw new UnsupportedOperationException(this.f37463e);
+                    throw new UnsupportedOperationException(this.f38031e);
             }
         }
 
@@ -451,7 +451,7 @@ public final class f0 extends bu.m implements zt.a, bu.d0, cu.h {
 
         public boolean l(f0 f0Var, int i10) {
             int i11;
-            switch (this.f37464i) {
+            switch (this.f38032i) {
                 case 14:
                     if (i10 < -999999999 || i10 > 999999999) {
                         return false;
@@ -463,13 +463,13 @@ public final class f0 extends bu.m implements zt.a, bu.d0, cu.h {
                     }
                     return true;
                 case 16:
-                    if (i10 < 1 || i10 > zt.b.d(f0Var.f37452d, f0Var.f37453e)) {
+                    if (i10 < 1 || i10 > zt.b.d(f0Var.f38020d, f0Var.f38021e)) {
                         return false;
                     }
                     return true;
                 case 17:
                     if (i10 >= 1) {
-                        if (zt.b.e(f0Var.f37452d)) {
+                        if (zt.b.e(f0Var.f38020d)) {
                             i11 = 366;
                         } else {
                             i11 = 365;
@@ -490,7 +490,7 @@ public final class f0 extends bu.m implements zt.a, bu.d0, cu.h {
                     }
                     return true;
                 default:
-                    throw new UnsupportedOperationException(this.f37463e);
+                    throw new UnsupportedOperationException(this.f38031e);
             }
         }
 
@@ -507,7 +507,7 @@ public final class f0 extends bu.m implements zt.a, bu.d0, cu.h {
         /* renamed from: r */
         public f0 n(f0 f0Var, int i10, boolean z10) {
             if (!z10) {
-                switch (this.f37464i) {
+                switch (this.f38032i) {
                     case 14:
                         return f0Var.U0(i10);
                     case 15:
@@ -518,19 +518,19 @@ public final class f0 extends bu.m implements zt.a, bu.d0, cu.h {
                         return f0Var.R0(i10);
                     case ChatViewRecyclerTypes.EPHEMERAL_INDICATION /* 18 */:
                         if (i10 >= 1 && i10 <= g(f0Var)) {
-                            return (f0) f0Var.K(i10 - f0Var.z0(), net.time4j.f.f37433s);
+                            return (f0) f0Var.K(i10 - f0Var.z0(), net.time4j.f.f38001s);
                         }
                         throw new IllegalArgumentException("Out of range: " + i10);
                     case ChatViewRecyclerTypes.INTERACTION_STATUS /* 19 */:
                         if (!z10 && (i10 < 1 || i10 > i(f0Var))) {
                             throw new IllegalArgumentException("Out of range: " + i10);
                         }
-                        return (f0) f0Var.K(i10 - (((f0Var.f37454i - 1) / 7) + 1), net.time4j.f.f37432r);
+                        return (f0) f0Var.K(i10 - (((f0Var.f38022i - 1) / 7) + 1), net.time4j.f.f38000r);
                     default:
-                        throw new UnsupportedOperationException(this.f37463e);
+                        throw new UnsupportedOperationException(this.f38031e);
                 }
             }
-            return (f0) f0Var.K(zt.c.l(i10, u(f0Var)), (u) f0.M.N(this.f37462d));
+            return (f0) f0Var.K(zt.c.l(i10, u(f0Var)), (u) f0.M.N(this.f38030d));
         }
 
         @Override // bu.z
@@ -543,9 +543,9 @@ public final class f0 extends bu.m implements zt.a, bu.d0, cu.h {
         }
 
         d(int i10, bu.p pVar) {
-            this.f37462d = pVar;
-            this.f37463e = pVar.name();
-            this.f37464i = i10;
+            this.f38030d = pVar;
+            this.f38031e = pVar.name();
+            this.f38032i = i10;
         }
     }
 
@@ -553,7 +553,7 @@ public final class f0 extends bu.m implements zt.a, bu.d0, cu.h {
     private static class e implements bu.u {
 
         /* renamed from: d  reason: collision with root package name */
-        private static final int f37465d = zt.b.i(zt.b.l(bu.a0.MODIFIED_JULIAN_DATE.o(zt.c.b(System.currentTimeMillis(), 86400000), bu.a0.UNIX))) + 20;
+        private static final int f38033d = zt.b.i(zt.b.l(bu.a0.MODIFIED_JULIAN_DATE.o(zt.c.b(System.currentTimeMillis(), 86400000), bu.a0.UNIX))) + 20;
 
         private e() {
         }
@@ -574,7 +574,7 @@ public final class f0 extends bu.m implements zt.a, bu.d0, cu.h {
         }
 
         private static boolean i(bu.q qVar, boolean z10, n0 n0Var, int i10) {
-            int i11 = a.f37456b[n0Var.ordinal()];
+            int i11 = a.f38024b[n0Var.ordinal()];
             int i12 = 91;
             if (i11 != 1) {
                 if (i11 != 2) {
@@ -653,7 +653,7 @@ public final class f0 extends bu.m implements zt.a, bu.d0, cu.h {
 
         @Override // bu.u
         public int c() {
-            return f37465d;
+            return f38033d;
         }
 
         @Override // bu.u
@@ -662,7 +662,7 @@ public final class f0 extends bu.m implements zt.a, bu.d0, cu.h {
             y0 y0Var;
             l0 l0Var;
             int m10;
-            bu.p pVar = f0.f37450y;
+            bu.p pVar = f0.f38018y;
             if (qVar.n(pVar)) {
                 return (f0) qVar.k(pVar);
             }
@@ -722,7 +722,7 @@ public final class f0 extends bu.m implements zt.a, bu.d0, cu.h {
             }
             int m15 = qVar.m(f0.B);
             if (m15 != Integer.MIN_VALUE) {
-                a1 a1Var = a1.f37220x;
+                a1 a1Var = a1.f37788x;
                 if (qVar.n(a1Var.n())) {
                     int intValue = ((Integer) qVar.k(a1Var.n())).intValue();
                     bu.p pVar4 = f0.G;
@@ -796,10 +796,10 @@ public final class f0 extends bu.m implements zt.a, bu.d0, cu.h {
         /* renamed from: f */
         public f0 b(long j10) {
             if (j10 == -365243219892L) {
-                return f0.f37440o;
+                return f0.f38008o;
             }
             if (j10 == 365241779741L) {
-                return f0.f37441p;
+                return f0.f38009p;
             }
             long l10 = zt.b.l(bu.a0.MODIFIED_JULIAN_DATE.o(j10, bu.a0.UTC));
             return f0.H0(zt.b.i(l10), zt.b.h(l10), zt.b.g(l10));
@@ -811,16 +811,16 @@ public final class f0 extends bu.m implements zt.a, bu.d0, cu.h {
     }
 
     static {
-        f37448w = r7;
-        f37449x = r8;
+        f38016w = r7;
+        f38017x = r8;
         int[] iArr = {31, 59, 90, 120, 151, 181, MediaImageViewKt.OBSCURED_IMAGE_MIN_HEIGHT, 243, 273, 304, 334, 365};
         int[] iArr2 = {31, 60, 91, 121, 152, 182, 213, 244, 274, 305, 335, 366};
-        h hVar = h.f37500d;
-        f37450y = hVar;
-        f37451z = hVar;
+        h hVar = h.f38068d;
+        f38018y = hVar;
+        f38019z = hVar;
         s G2 = s.G("YEAR", 14, -999999999, 999999999, 'u');
         A = G2;
-        b1 b1Var = b1.f37274r;
+        b1 b1Var = b1.f37842r;
         B = b1Var;
         p pVar = new p("QUARTER_OF_YEAR", n0.class, n0.Q1, n0.Q4, 103, 'Q');
         C = pVar;
@@ -836,7 +836,7 @@ public final class f0 extends bu.m implements zt.a, bu.d0, cu.h {
         H = G5;
         s G6 = s.G("DAY_OF_QUARTER", 18, 1, 92, (char) 0);
         I = G6;
-        z0 z0Var = z0.f37817o;
+        z0 z0Var = z0.f38385o;
         J = z0Var;
         HashMap hashMap = new HashMap();
         t0(hashMap, hVar);
@@ -855,20 +855,20 @@ public final class f0 extends bu.m implements zt.a, bu.d0, cu.h {
         L = fVar;
         h0.b j10 = h0.b.j(u.class, f0.class, new e(null), fVar);
         b bVar = new b(null);
-        net.time4j.f fVar2 = net.time4j.f.f37433s;
-        h0.b e10 = j10.e(hVar, bVar, fVar2).e(G2, new d(G2), net.time4j.f.f37429o).e(b1Var, b1.K(f0.class), x0.f37796d).e(pVar, c.j(pVar), net.time4j.f.f37430p);
+        net.time4j.f fVar2 = net.time4j.f.f38001s;
+        h0.b e10 = j10.e(hVar, bVar, fVar2).e(G2, new d(G2), net.time4j.f.f37997o).e(b1Var, b1.K(f0.class), x0.f38364d).e(pVar, c.j(pVar), net.time4j.f.f37998p);
         c j11 = c.j(pVar2);
-        net.time4j.f fVar3 = net.time4j.f.f37431q;
-        h0.b e11 = e10.e(pVar2, j11, fVar3).e(G3, new d(G3), fVar3).e(G4, new d(G4), fVar2).e(pVar3, c.j(pVar3), fVar2).e(G5, new d(G5), fVar2).e(G6, new d(G6), fVar2).e(z0Var, new d(19, z0Var), net.time4j.f.f37432r);
+        net.time4j.f fVar3 = net.time4j.f.f37999q;
+        h0.b e11 = e10.e(pVar2, j11, fVar3).e(G3, new d(G3), fVar3).e(G4, new d(G4), fVar2).e(pVar3, c.j(pVar3), fVar2).e(G5, new d(G5), fVar2).e(G6, new d(G6), fVar2).e(z0Var, new d(19, z0Var), net.time4j.f.f38000r);
         O0(e11);
         N0(e11);
         M = e11.h();
     }
 
     private f0(int i10, int i11, int i12) {
-        this.f37452d = i10;
-        this.f37453e = (byte) i11;
-        this.f37454i = (byte) i12;
+        this.f38020d = i10;
+        this.f38021e = (byte) i11;
+        this.f38022i = (byte) i12;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -884,9 +884,9 @@ public final class f0 extends bu.m implements zt.a, bu.d0, cu.h {
                 return H0(i10, 1, i11);
             }
             if (zt.b.e(i10)) {
-                iArr = f37449x;
+                iArr = f38017x;
             } else {
-                iArr = f37448w;
+                iArr = f38016w;
             }
             if (i11 > iArr[6]) {
                 i12 = 7;
@@ -924,7 +924,7 @@ public final class f0 extends bu.m implements zt.a, bu.d0, cu.h {
     public static f0 K0(int i10, int i11, y0 y0Var, boolean z10) {
         int i12;
         if (i11 >= 1 && i11 <= 53) {
-            if (z10 && (i10 < f37442q.intValue() || i10 > f37443r.intValue())) {
+            if (z10 && (i10 < f38010q.intValue() || i10 > f38011r.intValue())) {
                 throw new IllegalArgumentException(W0(i10));
             }
             int d10 = y0.h(zt.b.c(i10, 1, 1)).d();
@@ -984,8 +984,8 @@ public final class f0 extends bu.m implements zt.a, bu.d0, cu.h {
 
     private static void O0(h0.b bVar) {
         EnumSet enumSet;
-        EnumSet range = EnumSet.range(net.time4j.f.f37426d, net.time4j.f.f37431q);
-        EnumSet range2 = EnumSet.range(net.time4j.f.f37432r, net.time4j.f.f37433s);
+        EnumSet range = EnumSet.range(net.time4j.f.f37994d, net.time4j.f.f37999q);
+        EnumSet range2 = EnumSet.range(net.time4j.f.f38000r, net.time4j.f.f38001s);
         net.time4j.f[] values = net.time4j.f.values();
         int length = values.length;
         int i10 = 0;
@@ -993,7 +993,7 @@ public final class f0 extends bu.m implements zt.a, bu.d0, cu.h {
             net.time4j.f fVar = values[i10];
             f.j jVar = new f.j(fVar);
             double length2 = fVar.getLength();
-            if (fVar.compareTo(net.time4j.f.f37432r) < 0) {
+            if (fVar.compareTo(net.time4j.f.f38000r) < 0) {
                 enumSet = range;
             } else {
                 enumSet = range2;
@@ -1007,10 +1007,10 @@ public final class f0 extends bu.m implements zt.a, bu.d0, cu.h {
 
     /* JADX INFO: Access modifiers changed from: private */
     public f0 P0(int i10) {
-        if (this.f37454i == i10) {
+        if (this.f38022i == i10) {
             return this;
         }
-        return H0(this.f37452d, this.f37453e, i10);
+        return H0(this.f38020d, this.f38021e, i10);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -1027,23 +1027,23 @@ public final class f0 extends bu.m implements zt.a, bu.d0, cu.h {
         if (B0() == i10) {
             return this;
         }
-        return G0(this.f37452d, i10);
+        return G0(this.f38020d, i10);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public f0 T0(int i10) {
-        if (this.f37453e == i10) {
+        if (this.f38021e == i10) {
             return this;
         }
-        return H0(this.f37452d, i10, Math.min(zt.b.d(this.f37452d, i10), (int) this.f37454i));
+        return H0(this.f38020d, i10, Math.min(zt.b.d(this.f38020d, i10), (int) this.f38022i));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public f0 U0(int i10) {
-        if (this.f37452d == i10) {
+        if (this.f38020d == i10) {
             return this;
         }
-        return H0(i10, this.f37453e, Math.min(zt.b.d(i10, this.f37453e), (int) this.f37454i));
+        return H0(i10, this.f38021e, Math.min(zt.b.d(i10, this.f38021e), (int) this.f38022i));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -1057,13 +1057,13 @@ public final class f0 extends bu.m implements zt.a, bu.d0, cu.h {
     }
 
     private static f0 n0(f0 f0Var, long j10) {
-        long f10 = zt.c.f(f0Var.f37454i, j10);
+        long f10 = zt.c.f(f0Var.f38022i, j10);
         if (f10 >= 1 && f10 <= 28) {
-            return H0(f0Var.f37452d, f0Var.f37453e, (int) f10);
+            return H0(f0Var.f38020d, f0Var.f38021e, (int) f10);
         }
         long f11 = zt.c.f(f0Var.B0(), j10);
         if (f11 >= 1 && f11 <= 365) {
-            return G0(f0Var.f37452d, (int) f11);
+            return G0(f0Var.f38020d, (int) f11);
         }
         return (f0) L.b(zt.c.f(f0Var.C0(), j10));
     }
@@ -1078,21 +1078,21 @@ public final class f0 extends bu.m implements zt.a, bu.d0, cu.h {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static f0 s0(net.time4j.f fVar, f0 f0Var, long j10, int i10) {
-        switch (a.f37455a[fVar.ordinal()]) {
+        switch (a.f38023a[fVar.ordinal()]) {
             case 1:
-                return s0(net.time4j.f.f37431q, f0Var, zt.c.i(j10, 12000L), i10);
+                return s0(net.time4j.f.f37999q, f0Var, zt.c.i(j10, 12000L), i10);
             case 2:
-                return s0(net.time4j.f.f37431q, f0Var, zt.c.i(j10, 1200L), i10);
+                return s0(net.time4j.f.f37999q, f0Var, zt.c.i(j10, 1200L), i10);
             case 3:
-                return s0(net.time4j.f.f37431q, f0Var, zt.c.i(j10, 120L), i10);
+                return s0(net.time4j.f.f37999q, f0Var, zt.c.i(j10, 120L), i10);
             case 4:
-                return s0(net.time4j.f.f37431q, f0Var, zt.c.i(j10, 12L), i10);
+                return s0(net.time4j.f.f37999q, f0Var, zt.c.i(j10, 12L), i10);
             case 5:
-                return s0(net.time4j.f.f37431q, f0Var, zt.c.i(j10, 3L), i10);
+                return s0(net.time4j.f.f37999q, f0Var, zt.c.i(j10, 3L), i10);
             case 6:
-                return x0(f0Var, zt.c.f(f0Var.D0(), j10), f0Var.f37454i, i10);
+                return x0(f0Var, zt.c.f(f0Var.D0(), j10), f0Var.f38022i, i10);
             case 7:
-                return s0(net.time4j.f.f37433s, f0Var, zt.c.i(j10, 7L), i10);
+                return s0(net.time4j.f.f38001s, f0Var, zt.c.i(j10, 7L), i10);
             case 8:
                 return n0(f0Var, j10);
             default:
@@ -1159,7 +1159,7 @@ public final class f0 extends bu.m implements zt.a, bu.d0, cu.h {
             r0 = 5
             r1 = 2
             if (r11 != r0) goto Ld
-            byte r0 = r7.f37454i
+            byte r0 = r7.f38022i
             int r2 = r7.lengthOfMonth()
             if (r0 != r2) goto Ld
             r11 = r1
@@ -1232,48 +1232,48 @@ public final class f0 extends bu.m implements zt.a, bu.d0, cu.h {
     /* JADX INFO: Access modifiers changed from: private */
     public int z0() {
         byte b10;
-        switch (this.f37453e) {
+        switch (this.f38021e) {
             case 1:
             case 4:
             case 7:
             case 10:
-                return this.f37454i;
+                return this.f38022i;
             case 2:
             case 8:
             case 11:
-                return this.f37454i + 31;
+                return this.f38022i + 31;
             case 3:
-                if (zt.b.e(this.f37452d)) {
+                if (zt.b.e(this.f38020d)) {
                     b10 = 60;
                 } else {
                     b10 = 59;
                 }
-                return b10 + this.f37454i;
+                return b10 + this.f38022i;
             case 5:
-                return this.f37454i + 30;
+                return this.f38022i + 30;
             case 6:
             case 12:
-                return this.f37454i + 61;
+                return this.f38022i + 61;
             case 9:
-                return this.f37454i + 62;
+                return this.f38022i + 62;
             default:
-                throw new AssertionError("Unknown month: " + ((int) this.f37453e));
+                throw new AssertionError("Unknown month: " + ((int) this.f38021e));
         }
     }
 
     public y0 A0() {
-        return y0.h(zt.b.c(this.f37452d, this.f37453e, this.f37454i));
+        return y0.h(zt.b.c(this.f38020d, this.f38021e, this.f38022i));
     }
 
     public int B0() {
-        byte b10 = this.f37453e;
+        byte b10 = this.f38021e;
         if (b10 != 1) {
             if (b10 != 2) {
-                return f37448w[b10 - 2] + this.f37454i + (zt.b.e(this.f37452d) ? 1 : 0);
+                return f38016w[b10 - 2] + this.f38022i + (zt.b.e(this.f38020d) ? 1 : 0);
             }
-            return this.f37454i + 31;
+            return this.f38022i + 31;
         }
-        return this.f37454i;
+        return this.f38022i;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -1283,12 +1283,12 @@ public final class f0 extends bu.m implements zt.a, bu.d0, cu.h {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public long D0() {
-        return (((this.f37452d - 1970) * 12) + this.f37453e) - 1;
+        return (((this.f38020d - 1970) * 12) + this.f38021e) - 1;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int E0() {
-        return ((Integer) k(a1.f37220x.n())).intValue();
+        return ((Integer) k(a1.f37788x.n())).intValue();
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
@@ -1303,11 +1303,11 @@ public final class f0 extends bu.m implements zt.a, bu.d0, cu.h {
     public int M(bu.g gVar) {
         if (gVar instanceof f0) {
             f0 f0Var = (f0) gVar;
-            int i10 = this.f37452d - f0Var.f37452d;
+            int i10 = this.f38020d - f0Var.f38020d;
             if (i10 == 0) {
-                int i11 = this.f37453e - f0Var.f37453e;
+                int i11 = this.f38021e - f0Var.f38021e;
                 if (i11 == 0) {
-                    return this.f37454i - f0Var.f37454i;
+                    return this.f38022i - f0Var.f38022i;
                 }
                 return i11;
             }
@@ -1328,7 +1328,7 @@ public final class f0 extends bu.m implements zt.a, bu.d0, cu.h {
         }
         if (obj instanceof f0) {
             f0 f0Var = (f0) obj;
-            if (this.f37454i == f0Var.f37454i && this.f37453e == f0Var.f37453e && this.f37452d == f0Var.f37452d) {
+            if (this.f38022i == f0Var.f38022i && this.f38021e == f0Var.f38021e && this.f38020d == f0Var.f38020d) {
                 return true;
             }
         }
@@ -1337,22 +1337,22 @@ public final class f0 extends bu.m implements zt.a, bu.d0, cu.h {
 
     @Override // zt.a
     public int f() {
-        return this.f37452d;
+        return this.f38020d;
     }
 
     @Override // zt.a
     public int g() {
-        return this.f37454i;
+        return this.f38022i;
     }
 
     @Override // bu.m
     public int hashCode() {
-        int i10 = this.f37452d;
-        return (((i10 << 11) + (this.f37453e << 6)) + this.f37454i) ^ (i10 & (-2048));
+        int i10 = this.f38020d;
+        return (((i10 << 11) + (this.f38021e << 6)) + this.f38022i) ^ (i10 & (-2048));
     }
 
     public int lengthOfMonth() {
-        return zt.b.d(this.f37452d, this.f37453e);
+        return zt.b.d(this.f38020d, this.f38021e);
     }
 
     public i0 o0(g0 g0Var) {
@@ -1360,12 +1360,12 @@ public final class f0 extends bu.m implements zt.a, bu.d0, cu.h {
     }
 
     public i0 p0() {
-        return o0(g0.f37482x);
+        return o0(g0.f38050x);
     }
 
     @Override // zt.a
     public int q() {
-        return this.f37453e;
+        return this.f38021e;
     }
 
     public i0 q0(int i10, int i11, int i12) {
@@ -1375,9 +1375,9 @@ public final class f0 extends bu.m implements zt.a, bu.d0, cu.h {
     @Override // zt.a
     public String toString() {
         StringBuilder sb2 = new StringBuilder(32);
-        v0(sb2, this.f37452d);
-        u0(sb2, this.f37453e);
-        u0(sb2, this.f37454i);
+        v0(sb2, this.f38020d);
+        u0(sb2, this.f38021e);
+        u0(sb2, this.f38022i);
         return sb2.toString();
     }
 

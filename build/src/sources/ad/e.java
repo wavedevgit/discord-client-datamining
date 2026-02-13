@@ -490,8 +490,6 @@ public class e implements k {
             int i15;
             int i16;
             int i17;
-            float f10;
-            int i18;
             pe.d a10;
             String str3 = this.f675b;
             str3.getClass();
@@ -732,17 +730,12 @@ public class e implements k {
                     break;
             }
             String str4 = "audio/raw";
-            pe.c cVar = null;
             switch (c10) {
                 case 0:
                 case 1:
                 case '\t':
                     byte[] bArr = this.f684k;
-                    if (bArr == null) {
-                        singletonList = null;
-                    } else {
-                        singletonList = Collections.singletonList(bArr);
-                    }
+                    singletonList = bArr == null ? null : Collections.singletonList(bArr);
                     str4 = "video/mp4v-es";
                     str = null;
                     i12 = -1;
@@ -751,14 +744,14 @@ public class e implements k {
                 case 2:
                     if (l(new h0(g(this.f675b)))) {
                         int g02 = w0.g0(this.P);
-                        if (g02 == 0) {
-                            y.i("MatroskaExtractor", "Unsupported PCM bit depth: " + this.P + ". Setting mimeType to audio/x-unknown");
-                        } else {
+                        if (g02 != 0) {
                             i11 = g02;
                             singletonList = null;
                             str = null;
                             i12 = -1;
                             break;
+                        } else {
+                            y.i("MatroskaExtractor", "Unsupported PCM bit depth: " + this.P + ". Setting mimeType to audio/x-unknown");
                         }
                     } else {
                         y.i("MatroskaExtractor", "Non-PCM MS/ACM is unsupported. Setting mimeType to audio/x-unknown");
@@ -817,9 +810,9 @@ public class e implements k {
                     break;
                 case '\n':
                     pe.a b10 = pe.a.b(new h0(g(this.f675b)));
-                    list = b10.f41549a;
-                    this.Y = b10.f41550b;
-                    str2 = b10.f41557i;
+                    list = b10.f42117a;
+                    this.Y = b10.f42118b;
+                    str2 = b10.f42125i;
                     str4 = "video/avc";
                     List list2 = list;
                     str = str2;
@@ -843,10 +836,10 @@ public class e implements k {
                     break;
                 case '\r':
                     singletonList = Collections.singletonList(g(this.f675b));
-                    a.b f11 = oc.a.f(this.f684k);
-                    this.Q = f11.f38769a;
-                    this.O = f11.f38770b;
-                    str = f11.f38771c;
+                    a.b f10 = oc.a.f(this.f684k);
+                    this.Q = f10.f39337a;
+                    this.O = f10.f39338b;
+                    str = f10.f39339c;
                     str4 = "audio/mp4a-latm";
                     i12 = -1;
                     i11 = -1;
@@ -917,14 +910,14 @@ public class e implements k {
                         i11 = -1;
                     }
                 case 23:
-                    int i19 = this.P;
-                    if (i19 == 8) {
+                    int i18 = this.P;
+                    if (i18 == 8) {
                         singletonList = null;
                         str = null;
                         i11 = 3;
                         i12 = -1;
                         break;
-                    } else if (i19 == 16) {
+                    } else if (i18 == 16) {
                         i13 = 268435456;
                         i11 = i13;
                         singletonList = null;
@@ -962,9 +955,9 @@ public class e implements k {
                     break;
                 case ChatViewRecyclerTypes.MEDIA_MOSAIC_ATTACHMENT /* 26 */:
                     pe.f a11 = pe.f.a(new h0(g(this.f675b)));
-                    list = a11.f41591a;
-                    this.Y = a11.f41592b;
-                    str2 = a11.f41599i;
+                    list = a11.f42159a;
+                    this.Y = a11.f42160b;
+                    str2 = a11.f42167i;
                     str4 = "video/hevc";
                     List list22 = list;
                     str = str2;
@@ -1023,73 +1016,59 @@ public class e implements k {
                     throw l0.a("Unrecognized codec identifier.", null);
             }
             if (this.N != null && (a10 = pe.d.a(new h0(this.N))) != null) {
-                str = a10.f41576c;
+                str = a10.f42144c;
                 str4 = "video/dolby-vision";
             }
             String str5 = str4;
-            boolean z10 = this.V;
-            if (this.U) {
-                i14 = 2;
-            } else {
-                i14 = 0;
-            }
-            int i20 = i14 | (z10 ? 1 : 0);
+            int i19 = (this.U ? 2 : 0) | (this.V ? 1 : 0);
             Format.b bVar = new Format.b();
             if (oe.c0.o(str5)) {
                 bVar.J(this.O).h0(this.Q).a0(i11);
-                i15 = 1;
+                i14 = 1;
             } else if (oe.c0.s(str5)) {
                 if (this.f690q == 0) {
-                    int i21 = this.f688o;
-                    i16 = -1;
+                    int i20 = this.f688o;
+                    i15 = -1;
+                    if (i20 == -1) {
+                        i20 = this.f686m;
+                    }
+                    this.f688o = i20;
+                    int i21 = this.f689p;
                     if (i21 == -1) {
-                        i21 = this.f686m;
+                        i21 = this.f687n;
                     }
-                    this.f688o = i21;
-                    int i22 = this.f689p;
-                    if (i22 == -1) {
-                        i22 = this.f687n;
-                    }
-                    this.f689p = i22;
+                    this.f689p = i21;
                 } else {
-                    i16 = -1;
+                    i15 = -1;
                 }
-                if (this.f688o != i16 && (i18 = this.f689p) != i16) {
-                    f10 = (this.f687n * i17) / (this.f686m * i18);
-                } else {
-                    f10 = -1.0f;
-                }
-                if (this.f697x) {
-                    cVar = new pe.c(this.f698y, this.A, this.f699z, h());
-                }
+                float f11 = (this.f688o == i15 || (i17 = this.f689p) == i15) ? -1.0f : (this.f687n * i16) / (this.f686m * i17);
+                pe.c cVar = this.f697x ? new pe.c(this.f698y, this.A, this.f699z, h()) : null;
                 if (this.f674a != null && e.f644i0.containsKey(this.f674a)) {
-                    i16 = ((Integer) e.f644i0.get(this.f674a)).intValue();
+                    i15 = ((Integer) e.f644i0.get(this.f674a)).intValue();
                 }
                 if (this.f691r == 0 && Float.compare(this.f692s, 0.0f) == 0 && Float.compare(this.f693t, 0.0f) == 0) {
                     if (Float.compare(this.f694u, 0.0f) == 0) {
-                        i16 = 0;
+                        i15 = 0;
                     } else if (Float.compare(this.f693t, 90.0f) == 0) {
-                        i16 = 90;
-                    } else if (Float.compare(this.f693t, -180.0f) != 0 && Float.compare(this.f693t, 180.0f) != 0) {
-                        if (Float.compare(this.f693t, -90.0f) == 0) {
-                            i16 = 270;
-                        }
-                    } else {
-                        i16 = 180;
+                        i15 = 90;
+                    } else if (Float.compare(this.f693t, -180.0f) == 0 || Float.compare(this.f693t, 180.0f) == 0) {
+                        i15 = 180;
+                    } else if (Float.compare(this.f693t, -90.0f) == 0) {
+                        i15 = 270;
                     }
                 }
-                bVar.n0(this.f686m).S(this.f687n).c0(f10).f0(i16).d0(this.f695v).j0(this.f696w).L(cVar);
-                i15 = 2;
+                bVar.n0(this.f686m).S(this.f687n).c0(f11).f0(i15).d0(this.f695v).j0(this.f696w).L(cVar);
+                i14 = 2;
             } else if (!"application/x-subrip".equals(str5) && !"text/x-ssa".equals(str5) && !"text/vtt".equals(str5) && !"application/vobsub".equals(str5) && !"application/pgs".equals(str5) && !"application/dvbsubs".equals(str5)) {
                 throw l0.a("Unexpected MIME type.", null);
             } else {
-                i15 = 3;
+                i14 = 3;
             }
             if (this.f674a != null && !e.f644i0.containsKey(this.f674a)) {
                 bVar.W(this.f674a);
             }
-            Format G = bVar.T(i10).g0(str5).Y(i12).X(this.W).i0(i20).V(singletonList).K(str).O(this.f685l).G();
-            b0 c11 = mVar.c(this.f676c, i15);
+            Format G = bVar.T(i10).g0(str5).Y(i12).X(this.W).i0(i19).V(singletonList).K(str).O(this.f685l).G();
+            b0 c11 = mVar.c(this.f676c, i14);
             this.X = c11;
             c11.c(G);
         }
@@ -1125,14 +1104,14 @@ public class e implements k {
     private boolean A(uc.y yVar, long j10) {
         if (this.f671y) {
             this.A = j10;
-            yVar.f50715a = this.f672z;
+            yVar.f51283a = this.f672z;
             this.f671y = false;
             return true;
         }
         if (this.f668v) {
             long j11 = this.A;
             if (j11 != -1) {
-                yVar.f50715a = j11;
+                yVar.f51283a = j11;
                 this.A = -1L;
                 return true;
             }
@@ -2052,7 +2031,7 @@ public class e implements k {
                     c cVar2 = this.f667u;
                     if (cVar2.f681h) {
                         if (cVar2.f683j != null) {
-                            cVar2.f685l = new sc.m(new m.b(mc.d.f36226a, "video/webm", this.f667u.f683j.f50615b));
+                            cVar2.f685l = new sc.m(new m.b(mc.d.f36794a, "video/webm", this.f667u.f683j.f51183b));
                             return;
                         }
                         throw l0.a("Encrypted Track found but ContentEncKeyID was not found", null);
@@ -2530,7 +2509,7 @@ public class e implements k {
         this.f653g = new h0(4);
         this.f654h = new h0(ByteBuffer.allocate(4).putInt(-1).array());
         this.f655i = new h0(4);
-        this.f651e = new h0(d0.f38891a);
+        this.f651e = new h0(d0.f39459a);
         this.f652f = new h0(4);
         this.f656j = new h0();
         this.f657k = new h0();

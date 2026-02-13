@@ -26,7 +26,7 @@ import os.n;
 import os.o;
 @c
 @Deprecated
-/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public abstract class FunctionImpl implements Function, Serializable, Function0, Function1, Function2, Function3, Function4, Function5, Function6, n, Function8, o, os.a, b, os.c, d, e, f, g, h, i, j, k, l, m {
     private void checkArity(int i10) {
         if (getArity() != i10) {

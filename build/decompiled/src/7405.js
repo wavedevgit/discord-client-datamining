@@ -1,111 +1,26 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = exports;
-    var2 = require;
-    var _closure1_slot0 = var2;
-    var2 = module;
-    var _closure1_slot1 = var2;
-    var2 = dependencyMap;
-    var _closure1_slot2 = var2;
-    var2 = function arg0, arg1() {
-        var2 = arg0;
-        var1 = var2.require;
-        var0 = arg1;
-        var0 = var1.bind(var2)(var0);
-        return var0;
-    };
-    var _closure1_slot3 = var2;
-    var3 = global;
-    var6 = var3.Object;
-    var5 = var6.defineProperty;
-    var4 = {};
-    var3 = true;
-    var4.value = var3;
-    var3 = '__esModule';
-    var3 = var5.bind(var6)(var1, var3, var4);
-    var1.dynamicRequire = var2;
-    var2 = function() {
-        _fun60024: for (var _fun60024_ip = 0;;) switch (_fun60024_ip) {
-            case 0:
-                var2 = _closure1_slot0;
-                var0 = _closure1_slot2;
-                var3 = 0;
-                var1 = var0[var3];
-                var0 = undefined;
-                var1 = var2.bind(var0)(var1);
-                var0 = var1.isBrowserBundle;
-                var0 = var0.bind(var1)();
-                var0 = !var0;
-                if (!var0) {
-                    _fun60024_ip = 103;
-                    continue _fun60024
-                }
-            case 40:
-                var4 = global;
-                var1 = var4.Object;
-                var1 = var1.prototype;
-                var2 = var1.toString;
-                var1 = var2.call;
-                var5 = var4.process;
-                var6 = 'undefined';
-                var5 = typeof var5;
-                var3 = 0;
-                if (!(var6 !== var5)) {
-                    _fun60024_ip = 88;
-                    continue _fun60024
-                }
-            case 82:
-                var3 = var4.process;
-            case 88:
-                var2 = var1.bind(var2)(var3);
-                var1 = '[object process]';
-                var0 = var1 === var2;
-            case 103:
-                return var0;
-        }
-    };
-    var1.isNodeEnv = var2;
-    var0 = function arg0() {
-        _fun60025: for (var _fun60025_ip = 0;;) switch (_fun60025_ip) {
-            case 0:
-                var1 = arg0;
-                var4 = undefined;
-                var0 = undefined;
-            case 7: // try_start_0
-                var5 = _closure1_slot3;
-                var3 = _closure1_slot1;
-                var2 = var1;
-                var0 = var5.bind(var4)(var3, var2);
-            case 27: // try_end0
-                _fun60025_ip = 31;
-                continue _fun60025;
-            case 29: // catch_target0
-                CatchBlockStart(arg_register = 2);
-            case 31: // try_start_1
-                var3 = _closure1_slot3;
-                var2 = _closure1_slot1;
-                var5 = 'process';
-                var5 = var3.bind(var4)(var2, var5);
-                var5 = var5.cwd;
-                var8 = var5.bind(var4)();
-                var7 = var1;
-                var1 = global;
-                var1 = var1.HermesInternal;
-                var6 = var1.concat;
-                var5 = '';
-                var1 = '/node_modules/';
-                var1 = var6.bind(var5)(var8, var1, var7);
-                var0 = var3.bind(var4)(var2, var1);
-            case 101: // try_end1
-                _fun60025_ip = 105;
-                continue _fun60025;
-            case 103: // catch_target1
-                CatchBlockStart(arg_register = 1);
-            case 105:
-                return var0;
-        }
-    };
-    var1.loadModule = var0;
+    var1 = dependencyMap;
+    var0 = 0;
+    var2 = var1[var0];
+    var1 = require;
     var0 = undefined;
+    var3 = var1.bind(var0)(var2);
+    var2 = var3.registerAsset;
+    var1 = {
+        '__packager_asset': true,
+        'httpServerLocation': '/assets/modules/premium/tiered_tenure_badging/native/images',
+        'width': 99.66666666666667,
+        'height': 66.66666666666667,
+        'scales': null,
+        'hash': '0fef0a9d83d27dc691bf77b0bdae0680',
+        'name': 'asset_opal_badge_small',
+        'type': 'png'
+    };
+    var4 = [3];
+    var1.scales = var4;
+    var2 = var2.bind(var3)(var1);
+    var1 = module;
+    var1.exports = var2;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [7406]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1240]);

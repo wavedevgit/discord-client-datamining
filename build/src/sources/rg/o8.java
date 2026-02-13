@@ -5,7 +5,7 @@ import bj.c;
 final class o8 implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final o8 f47043a = new o8();
+    static final o8 f47611a = new o8();
 
     static {
         c.b a10 = bj.c.a("languageCode");

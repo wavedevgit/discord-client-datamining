@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
     var1 = function arg0() {
-        _fun50270: for (var _fun50270_ip = 0;;) switch (_fun50270_ip) {
+        _fun50377: for (var _fun50377_ip = 0;;) switch (_fun50377_ip) {
             case 0:
                 var3 = arg0;
                 var4 = var3.features;
@@ -17,8 +17,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var1.bind(var4)(var0);
                 var0 = !var0;
                 if (!var0) {
-                    _fun50270_ip = 96;
-                    continue _fun50270
+                    _fun50377_ip = 96;
+                    continue _fun50377
                 }
             case 38:
                 var5 = var3.features;
@@ -27,8 +27,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.CREATOR_MONETIZABLE;
                 var1 = var4.bind(var5)(var1);
                 if (var1) {
-                    _fun50270_ip = 93;
-                    continue _fun50270
+                    _fun50377_ip = 93;
+                    continue _fun50377
                 }
             case 67:
                 var4 = var3.features;
@@ -82,7 +82,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = new Array(1);
         var1[0] = var4;
         var0 = function() { // Environment: var0
-            _fun50272: for (var _fun50272_ip = 0;;) switch (_fun50272_ip) {
+            _fun50379: for (var _fun50379_ip = 0;;) switch (_fun50379_ip) {
                 case 0:
                     var3 = _closure1_slot2;
                     var2 = var3.getGuild;
@@ -91,8 +91,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = null;
                     var0 = var0 != var3;
                     if (!var0) {
-                        _fun50272_ip = 44;
-                        continue _fun50272
+                        _fun50379_ip = 44;
+                        continue _fun50379
                     }
                 case 33:
                     var2 = _closure1_slot4;

@@ -1,136 +1,234 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var3 = require;
+    var4 = require;
     var2 = exports;
-    var4 = dependencyMap;
-    var0 = global;
-    var6 = var0.Object;
-    var5 = var6.defineProperty;
-    var0 = var0.Symbol;
-    var1 = var0.toStringTag;
-    var0 = {};
-    var7 = 'Module';
-    var0.value = var7;
-    var0 = var5.bind(var6)(var2, var1, var0);
-    var1 = 0;
-    var5 = var4[var1];
+    var3 = dependencyMap;
+    var _closure1_slot0 = var4;
+    var _closure1_slot1 = var3;
+    var0 = 0;
+    var3 = var3[var0];
     var0 = undefined;
-    var5 = var3.bind(var0)(var5);
-    var5 = var5.addClsInstrumentationHandler;
-    var2.addClsInstrumentationHandler = var5;
-    var5 = var4[var1];
-    var5 = var3.bind(var0)(var5);
-    var5 = var5.addInpInstrumentationHandler;
-    var2.addInpInstrumentationHandler = var5;
-    var5 = var4[var1];
-    var5 = var3.bind(var0)(var5);
-    var5 = var5.addLcpInstrumentationHandler;
-    var2.addLcpInstrumentationHandler = var5;
-    var5 = var4[var1];
-    var5 = var3.bind(var0)(var5);
-    var5 = var5.addPerformanceInstrumentationHandler;
-    var2.addPerformanceInstrumentationHandler = var5;
-    var1 = var4[var1];
-    var1 = var3.bind(var0)(var1);
-    var1 = var1.addTtfbInstrumentationHandler;
-    var2.addTtfbInstrumentationHandler = var1;
-    var1 = 1;
-    var5 = var4[var1];
-    var5 = var3.bind(var0)(var5);
-    var5 = var5.addPerformanceEntries;
-    var2.addPerformanceEntries = var5;
-    var5 = var4[var1];
-    var5 = var3.bind(var0)(var5);
-    var5 = var5.startTrackingInteractions;
-    var2.startTrackingInteractions = var5;
-    var5 = var4[var1];
-    var5 = var3.bind(var0)(var5);
-    var5 = var5.startTrackingLongAnimationFrames;
-    var2.startTrackingLongAnimationFrames = var5;
-    var5 = var4[var1];
-    var5 = var3.bind(var0)(var5);
-    var5 = var5.startTrackingLongTasks;
-    var2.startTrackingLongTasks = var5;
-    var1 = var4[var1];
-    var1 = var3.bind(var0)(var1);
-    var1 = var1.startTrackingWebVitals;
-    var2.startTrackingWebVitals = var1;
-    var1 = 2;
-    var1 = var4[var1];
-    var1 = var3.bind(var0)(var1);
-    var1 = var1.startTrackingElementTiming;
-    var2.startTrackingElementTiming = var1;
-    var1 = 3;
-    var1 = var4[var1];
-    var1 = var3.bind(var0)(var1);
-    var1 = var1.extractNetworkProtocol;
-    var2.extractNetworkProtocol = var1;
-    var1 = 4;
-    var1 = var4[var1];
-    var1 = var3.bind(var0)(var1);
-    var1 = var1.addClickKeypressInstrumentationHandler;
-    var2.addClickKeypressInstrumentationHandler = var1;
-    var1 = 5;
-    var1 = var4[var1];
-    var1 = var3.bind(var0)(var1);
-    var1 = var1.addHistoryInstrumentationHandler;
-    var2.addHistoryInstrumentationHandler = var1;
-    var1 = 6;
-    var5 = var4[var1];
-    var5 = var3.bind(var0)(var5);
-    var5 = var5.clearCachedImplementation;
-    var2.clearCachedImplementation = var5;
-    var5 = var4[var1];
-    var5 = var3.bind(var0)(var5);
-    var5 = var5.fetch;
-    var2.fetch = var5;
-    var5 = var4[var1];
-    var5 = var3.bind(var0)(var5);
-    var5 = var5.getNativeImplementation;
-    var2.getNativeImplementation = var5;
-    var1 = var4[var1];
-    var1 = var3.bind(var0)(var1);
-    var1 = var1.setTimeout;
-    var2.setTimeout = var1;
-    var1 = 7;
-    var5 = var4[var1];
-    var5 = var3.bind(var0)(var5);
-    var5 = var5.SENTRY_XHR_DATA_KEY;
-    var2.SENTRY_XHR_DATA_KEY = var5;
-    var1 = var4[var1];
-    var1 = var3.bind(var0)(var1);
-    var1 = var1.addXhrInstrumentationHandler;
-    var2.addXhrInstrumentationHandler = var1;
-    var1 = 8;
-    var5 = var4[var1];
-    var5 = var3.bind(var0)(var5);
-    var5 = var5.getBodyString;
-    var2.getBodyString = var5;
-    var5 = var4[var1];
-    var5 = var3.bind(var0)(var5);
-    var5 = var5.getFetchRequestArgBody;
-    var2.getFetchRequestArgBody = var5;
-    var5 = var4[var1];
-    var5 = var3.bind(var0)(var5);
-    var5 = var5.parseXhrResponseHeaders;
-    var2.parseXhrResponseHeaders = var5;
-    var1 = var4[var1];
-    var1 = var3.bind(var0)(var1);
-    var1 = var1.serializeFormData;
-    var2.serializeFormData = var1;
-    var1 = 9;
-    var1 = var4[var1];
-    var1 = var3.bind(var0)(var1);
-    var1 = var1.resourceTimingToSpanAttributes;
-    var2.resourceTimingToSpanAttributes = var1;
-    var1 = 10;
-    var5 = var4[var1];
-    var5 = var3.bind(var0)(var5);
-    var5 = var5.registerInpInteractionListener;
-    var2.registerInpInteractionListener = var5;
-    var1 = var4[var1];
-    var1 = var3.bind(var0)(var1);
-    var1 = var1.startTrackingINP;
-    var2.startTrackingINP = var1;
+    var3 = var4.bind(var0)(var3);
+    var _closure1_slot2 = var3;
+    var3 = global;
+    var6 = var3.Object;
+    var5 = var6.defineProperty;
+    var3 = var3.Symbol;
+    var4 = var3.toStringTag;
+    var3 = {};
+    var7 = 'Module';
+    var3.value = var7;
+    var3 = var5.bind(var6)(var2, var4, var3);
+    var1 = function arg0() {
+        _fun10721: for (var _fun10721_ip = 0;;) switch (_fun10721_ip) {
+            case 0:
+                var4 = arg0;
+                var6 = undefined;
+                var3 = undefined;
+                var _closure2_slot0 = var4;
+                var1 = function() {
+                    var3 = undefined;
+                    var0 = undefined;
+                    var2 = _closure1_slot2;
+                    var1 = function*(arg0) { // Environment: var1
+                        var0 = function*(arg0) { // Original name: ?anon_0_, environment: var0
+                            _fun10724: for (var _fun10724_ip = 0;;) switch (_fun10724_ip) {
+                                case 0:
+                                    StartGenerator();
+                                    var4 = arg0;
+                                    ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 3);
+                                    if (var3) {
+                                        _fun10724_ip = 388;
+                                        continue _fun10724
+                                    }
+                                case 13:
+                                    var6 = undefined;
+                                    var2 = undefined;
+                                    var1 = undefined;
+                                    var3 = var4.body;
+                                    var7 = var3.length;
+                                    var2 = var7;
+                                    var5 = _closure2_slot2;
+                                    var5 = var5 + var7;
+                                    _closure2_slot2 = var5;
+                                    var5 = _closure2_slot3;
+                                    var5 = var5 + 1;
+                                    _closure2_slot3 = var5;
+                                    var5 = global;
+                                    var8 = var5.Object;
+                                    var7 = var8.assign;
+                                    var5 = {
+                                        'body': null,
+                                        'method': 'POST',
+                                        'referrerPolicy': 'strict-origin'
+                                    };
+                                    var4 = var4.body;
+                                    var5.body = var4;
+                                    var4 = _closure2_slot0;
+                                    var4 = var4.headers;
+                                    var5.headers = var4;
+                                    var10 = _closure2_slot2;
+                                    var9 = 60000;
+                                    var9 = var10 <= var9;
+                                    var4 = var9;
+                                    if (!var9) {
+                                        _fun10724_ip = 138;
+                                        continue _fun10724
+                                    }
+                                case 127:
+                                    var10 = _closure2_slot3;
+                                    var9 = 15;
+                                    var4 = var10 < var9;
+                                case 138:
+                                    var5.keepalive = var4;
+                                    var4 = _closure2_slot0;
+                                    var4 = var4.fetchOptions;
+                                    var1 = var7.bind(var8)(var5, var4);
+                                case 159: // try_start_0 // try_start_1
+                                    var5 = _closure2_slot1;
+                                    var4 = _closure2_slot0;
+                                    var4 = var4.url;
+                                    var1 = var5.bind(var6)(var4, var1);
+                                    SaveGenerator(address = 182);
+                                case 180:
+                                    return var1;
+                                case 182:
+                                    ResumeGenerator(result_out_reg = 1, return_bool_out_reg = 4);
+                                    if (var4) {
+                                        _fun10724_ip = 290;
+                                        continue _fun10724
+                                    }
+                                case 188:
+                                    var4 = {};
+                                    var5 = var1.status;
+                                    var4.statusCode = var5;
+                                    var5 = {};
+                                    var9 = var1.headers;
+                                    var8 = var9.get;
+                                    var7 = 'X-Sentry-Rate-Limits';
+                                    var7 = var8.bind(var9)(var7);
+                                    var5['x-sentry-rate-limits'] = var7;
+                                    var9 = var1.headers;
+                                    var8 = var9.get;
+                                    var7 = 'Retry-After';
+                                    var7 = var8.bind(var9)(var7);
+                                    var5['retry-after'] = var7;
+                                    var4.headers = var5;
+                                case 261: // try_end0 // try_end1
+                                    var7 = _closure2_slot2;
+                                    var5 = var2;
+                                    var5 = var7 - var5;
+                                    _closure2_slot2 = var5;
+                                    var5 = _closure2_slot3;
+                                    var5 = var5 - 1;
+                                    _closure2_slot3 = var5;
+                                    return var4;
+                                case 290:
+                                    var5 = _closure2_slot2;
+                                    var4 = var2;
+                                    var4 = var5 - var4;
+                                    _closure2_slot2 = var4;
+                                    var4 = _closure2_slot3;
+                                    var4 = var4 - 1;
+                                    _closure2_slot3 = var4;
+                                    return var1;
+                                case 319: // try_start_2 // catch_target0
+                                    CatchBlockStart(arg_register = 1);
+                                    var5 = _closure1_slot0;
+                                    var7 = _closure1_slot1;
+                                    var4 = 1;
+                                    var4 = var7[var4];
+                                    var6 = var5.bind(var6)(var4);
+                                    var5 = var6.clearCachedImplementation;
+                                    var4 = 'fetch';
+                                    var4 = var5.bind(var6)(var4);
+                                    throw var1;
+                                case 361: // try_end2 // catch_target1 // catch_target2
+                                    CatchBlockStart(arg_register = 1);
+                                    var4 = _closure2_slot2;
+                                    var2 = var4 - var2;
+                                    _closure2_slot2 = var2;
+                                    var2 = _closure2_slot3;
+                                    var2 = var2 - 1;
+                                    _closure2_slot3 = var2;
+                                    throw var1;
+                                case 388:
+                                    return var0;
+                            }
+                        };
+                        return var0;
+                    };
+                    var3 = var2.bind(var3)(var1);
+                    _closure2_slot4 = var3;
+                    var2 = var3.apply;
+                    var0 = arguments;
+                    var1 = var0;
+                    var0 = this;
+                    var0 = var2.bind(var3)(var0, var1);
+                    return var0;
+                };
+                var _closure2_slot4 = var1;
+                var1 = arguments.length;
+                var2 = 1;
+                if (!(var1 > var2)) {
+                    _fun10721_ip = 40;
+                    continue _fun10721
+                }
+            case 32:
+                var1 = arguments[var2];
+                if (!(var6 === var1)) {
+                    _fun10721_ip = 77;
+                    continue _fun10721
+                }
+            case 40:
+                var5 = _closure1_slot0;
+                var1 = _closure1_slot1;
+                var1 = var1[var2];
+                var7 = var5.bind(var6)(var1);
+                var5 = var7.getNativeImplementation;
+                var1 = 'fetch';
+                var1 = var5.bind(var7)(var1);
+                _fun10721_ip = 81;
+                continue _fun10721;
+            case 77:
+                var1 = arguments[var2];
+            case 81:
+                var _closure2_slot1 = var1;
+                var1 = 0;
+                var _closure2_slot2 = var1;
+                var _closure2_slot3 = var1;
+                var5 = _closure1_slot0;
+                var7 = _closure1_slot1;
+                var1 = 2;
+                var2 = var7[var1];
+                var3 = var5.bind(var6)(var2);
+                var2 = var3.createTransport;
+                var1 = var7[var1];
+                var6 = var5.bind(var6)(var1);
+                var5 = var6.makePromiseBuffer;
+                var1 = var4.bufferSize;
+                if (var1) {
+                    _fun10721_ip = 151;
+                    continue _fun10721
+                }
+            case 148:
+                var1 = 40;
+            case 151:
+                var1 = var5.bind(var6)(var1);
+                var0 = function arg0() {
+                    var0 = undefined;
+                    var3 = _closure2_slot4;
+                    var2 = var3.apply;
+                    var0 = arguments;
+                    var1 = var0;
+                    var0 = this;
+                    var0 = var2.bind(var3)(var0, var1);
+                    return var0;
+                };
+                var0 = var2.bind(var3)(var4, var0, var1);
+                return var0;
+        }
+    };
+    var2.makeFetchTransport = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1031, 1056, 1061, 1057, 1062, 1063, 1064, 1065, 1066, 1060, 1067]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 1031, 818]);

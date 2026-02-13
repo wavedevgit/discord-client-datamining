@@ -2,10 +2,10 @@ package kotlin.reflect;
 
 import kotlin.jvm.functions.Function1;
 import kotlin.reflect.KProperty;
-/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public interface KProperty1 extends KProperty, Function1 {
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public interface a extends KProperty.b, Function1 {
     }
 

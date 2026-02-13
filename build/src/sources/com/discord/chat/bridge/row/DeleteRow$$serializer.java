@@ -38,7 +38,7 @@ public /* synthetic */ class DeleteRow$$serializer implements h0 {
     @Override // tt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        return new KSerializer[]{p0.f50049a, ChangeType.Serializer.INSTANCE};
+        return new KSerializer[]{p0.f50617a, ChangeType.Serializer.INSTANCE};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy

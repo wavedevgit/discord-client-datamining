@@ -5,7 +5,7 @@ import bj.c;
 final class d7 implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final d7 f39156a = new d7();
+    static final d7 f39724a = new d7();
 
     static {
         c.b a10 = bj.c.a("remoteModelOptions");

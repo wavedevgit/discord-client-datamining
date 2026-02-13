@@ -37,39 +37,39 @@ import org.jetbrains.annotations.NotNull;
 public final class JvmPackageScope implements MemberScope {
 
     /* renamed from: e  reason: collision with root package name */
-    static final /* synthetic */ KProperty[] f32875e = {Reflection.property1(new PropertyReference1Impl(JvmPackageScope.class, "kotlinScopes", "getKotlinScopes()[Lorg/jetbrains/kotlin/resolve/scopes/MemberScope;", 0))};
+    static final /* synthetic */ KProperty[] f33443e = {Reflection.property1(new PropertyReference1Impl(JvmPackageScope.class, "kotlinScopes", "getKotlinScopes()[Lorg/jetbrains/kotlin/resolve/scopes/MemberScope;", 0))};
 
     /* renamed from: a  reason: collision with root package name */
-    private final LazyJavaResolverContext f32876a;
+    private final LazyJavaResolverContext f33444a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final LazyJavaPackageFragment f32877b;
+    private final LazyJavaPackageFragment f33445b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final LazyJavaPackageScope f32878c;
+    private final LazyJavaPackageScope f33446c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final NotNullLazyValue f32879d;
+    private final NotNullLazyValue f33447d;
 
     public JvmPackageScope(@NotNull LazyJavaResolverContext c10, @NotNull JavaPackage jPackage, @NotNull LazyJavaPackageFragment packageFragment) {
         Intrinsics.checkNotNullParameter(c10, "c");
         Intrinsics.checkNotNullParameter(jPackage, "jPackage");
         Intrinsics.checkNotNullParameter(packageFragment, "packageFragment");
-        this.f32876a = c10;
-        this.f32877b = packageFragment;
-        this.f32878c = new LazyJavaPackageScope(c10, jPackage, packageFragment);
-        this.f32879d = c10.getStorageManager().createLazyValue(new b(this));
+        this.f33444a = c10;
+        this.f33445b = packageFragment;
+        this.f33446c = new LazyJavaPackageScope(c10, jPackage, packageFragment);
+        this.f33447d = c10.getStorageManager().createLazyValue(new b(this));
     }
 
     private final MemberScope[] b() {
-        return (MemberScope[]) StorageKt.getValue(this.f32879d, this, f32875e[0]);
+        return (MemberScope[]) StorageKt.getValue(this.f33447d, this, f33443e[0]);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final MemberScope[] c(JvmPackageScope jvmPackageScope) {
         ArrayList arrayList = new ArrayList();
-        for (KotlinJvmBinaryClass kotlinJvmBinaryClass : jvmPackageScope.f32877b.getBinaryClasses$descriptors_jvm().values()) {
-            MemberScope createKotlinPackagePartScope = jvmPackageScope.f32876a.getComponents().getDeserializedDescriptorResolver().createKotlinPackagePartScope(jvmPackageScope.f32877b, kotlinJvmBinaryClass);
+        for (KotlinJvmBinaryClass kotlinJvmBinaryClass : jvmPackageScope.f33445b.getBinaryClasses$descriptors_jvm().values()) {
+            MemberScope createKotlinPackagePartScope = jvmPackageScope.f33444a.getComponents().getDeserializedDescriptorResolver().createKotlinPackagePartScope(jvmPackageScope.f33445b, kotlinJvmBinaryClass);
             if (createKotlinPackagePartScope != null) {
                 arrayList.add(createKotlinPackagePartScope);
             }
@@ -81,7 +81,7 @@ public final class JvmPackageScope implements MemberScope {
     public Set<Name> getClassifierNames() {
         Set<Name> flatMapClassifierNamesOrNull = MemberScopeKt.flatMapClassifierNamesOrNull(kotlin.collections.i.H(b()));
         if (flatMapClassifierNamesOrNull != null) {
-            flatMapClassifierNamesOrNull.addAll(this.f32878c.getClassifierNames());
+            flatMapClassifierNamesOrNull.addAll(this.f33446c.getClassifierNames());
             return flatMapClassifierNamesOrNull;
         }
         return null;
@@ -93,7 +93,7 @@ public final class JvmPackageScope implements MemberScope {
         Intrinsics.checkNotNullParameter(name, "name");
         Intrinsics.checkNotNullParameter(location, "location");
         mo1205recordLookup(name, location);
-        ClassDescriptor mo1202getContributedClassifier = this.f32878c.mo1202getContributedClassifier(name, location);
+        ClassDescriptor mo1202getContributedClassifier = this.f33446c.mo1202getContributedClassifier(name, location);
         if (mo1202getContributedClassifier != null) {
             return mo1202getContributedClassifier;
         }
@@ -118,7 +118,7 @@ public final class JvmPackageScope implements MemberScope {
     public Collection<DeclarationDescriptor> getContributedDescriptors(@NotNull DescriptorKindFilter kindFilter, @NotNull Function1<? super Name, Boolean> nameFilter) {
         Intrinsics.checkNotNullParameter(kindFilter, "kindFilter");
         Intrinsics.checkNotNullParameter(nameFilter, "nameFilter");
-        LazyJavaPackageScope lazyJavaPackageScope = this.f32878c;
+        LazyJavaPackageScope lazyJavaPackageScope = this.f33446c;
         MemberScope[] b10 = b();
         Collection<DeclarationDescriptor> contributedDescriptors = lazyJavaPackageScope.getContributedDescriptors(kindFilter, nameFilter);
         for (MemberScope memberScope : b10) {
@@ -136,7 +136,7 @@ public final class JvmPackageScope implements MemberScope {
         Intrinsics.checkNotNullParameter(name, "name");
         Intrinsics.checkNotNullParameter(location, "location");
         mo1205recordLookup(name, location);
-        LazyJavaPackageScope lazyJavaPackageScope = this.f32878c;
+        LazyJavaPackageScope lazyJavaPackageScope = this.f33446c;
         MemberScope[] b10 = b();
         Collection<? extends SimpleFunctionDescriptor> contributedFunctions = lazyJavaPackageScope.getContributedFunctions(name, location);
         int length = b10.length;
@@ -158,7 +158,7 @@ public final class JvmPackageScope implements MemberScope {
         Intrinsics.checkNotNullParameter(name, "name");
         Intrinsics.checkNotNullParameter(location, "location");
         mo1205recordLookup(name, location);
-        LazyJavaPackageScope lazyJavaPackageScope = this.f32878c;
+        LazyJavaPackageScope lazyJavaPackageScope = this.f33446c;
         MemberScope[] b10 = b();
         Collection<? extends PropertyDescriptor> contributedVariables = lazyJavaPackageScope.getContributedVariables(name, location);
         int length = b10.length;
@@ -182,13 +182,13 @@ public final class JvmPackageScope implements MemberScope {
         for (MemberScope memberScope : b10) {
             CollectionsKt.B(linkedHashSet, memberScope.getFunctionNames());
         }
-        linkedHashSet.addAll(this.f32878c.getFunctionNames());
+        linkedHashSet.addAll(this.f33446c.getFunctionNames());
         return linkedHashSet;
     }
 
     @NotNull
     public final LazyJavaPackageScope getJavaScope$descriptors_jvm() {
-        return this.f32878c;
+        return this.f33446c;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.resolve.scopes.MemberScope
@@ -199,7 +199,7 @@ public final class JvmPackageScope implements MemberScope {
         for (MemberScope memberScope : b10) {
             CollectionsKt.B(linkedHashSet, memberScope.getVariableNames());
         }
-        linkedHashSet.addAll(this.f32878c.getVariableNames());
+        linkedHashSet.addAll(this.f33446c.getVariableNames());
         return linkedHashSet;
     }
 
@@ -208,11 +208,11 @@ public final class JvmPackageScope implements MemberScope {
     public void mo1205recordLookup(@NotNull Name name, @NotNull LookupLocation location) {
         Intrinsics.checkNotNullParameter(name, "name");
         Intrinsics.checkNotNullParameter(location, "location");
-        UtilsKt.record(this.f32876a.getComponents().getLookupTracker(), location, this.f32877b, name);
+        UtilsKt.record(this.f33444a.getComponents().getLookupTracker(), location, this.f33445b, name);
     }
 
     @NotNull
     public String toString() {
-        return "scope for " + this.f32877b;
+        return "scope for " + this.f33445b;
     }
 }

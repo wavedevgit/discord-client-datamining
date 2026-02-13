@@ -3,42 +3,42 @@ package ok;
 public final class m {
 
     /* renamed from: a  reason: collision with root package name */
-    private final float f40203a;
+    private final float f40771a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final float f40204b;
+    private final float f40772b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final float f40205c;
+    private final float f40773c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final float f40206d;
+    private final float f40774d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final float f40207e;
+    private final float f40775e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final float f40208f;
+    private final float f40776f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final float f40209g;
+    private final float f40777g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final float f40210h;
+    private final float f40778h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final float f40211i;
+    private final float f40779i;
 
     private m(float f10, float f11, float f12, float f13, float f14, float f15, float f16, float f17, float f18) {
-        this.f40203a = f10;
-        this.f40204b = f13;
-        this.f40205c = f16;
-        this.f40206d = f11;
-        this.f40207e = f14;
-        this.f40208f = f17;
-        this.f40209g = f12;
-        this.f40210h = f15;
-        this.f40211i = f18;
+        this.f40771a = f10;
+        this.f40772b = f13;
+        this.f40773c = f16;
+        this.f40774d = f11;
+        this.f40775e = f14;
+        this.f40776f = f17;
+        this.f40777g = f12;
+        this.f40778h = f15;
+        this.f40779i = f18;
     }
 
     public static m b(float f10, float f11, float f12, float f13, float f14, float f15, float f16, float f17, float f18, float f19, float f20, float f21, float f22, float f23, float f24, float f25) {
@@ -66,59 +66,59 @@ public final class m {
     }
 
     m a() {
-        float f10 = this.f40207e;
-        float f11 = this.f40211i;
-        float f12 = this.f40208f;
-        float f13 = this.f40210h;
+        float f10 = this.f40775e;
+        float f11 = this.f40779i;
+        float f12 = this.f40776f;
+        float f13 = this.f40778h;
         float f14 = (f10 * f11) - (f12 * f13);
-        float f15 = this.f40209g;
-        float f16 = this.f40206d;
+        float f15 = this.f40777g;
+        float f16 = this.f40774d;
         float f17 = (f12 * f15) - (f16 * f11);
         float f18 = (f16 * f13) - (f10 * f15);
-        float f19 = this.f40205c;
-        float f20 = this.f40204b;
+        float f19 = this.f40773c;
+        float f20 = this.f40772b;
         float f21 = (f19 * f13) - (f20 * f11);
-        float f22 = this.f40203a;
+        float f22 = this.f40771a;
         return new m(f14, f17, f18, f21, (f11 * f22) - (f19 * f15), (f15 * f20) - (f13 * f22), (f20 * f12) - (f19 * f10), (f19 * f16) - (f12 * f22), (f22 * f10) - (f20 * f16));
     }
 
     m e(m mVar) {
-        float f10 = this.f40203a;
-        float f11 = mVar.f40203a;
-        float f12 = this.f40206d;
-        float f13 = mVar.f40204b;
-        float f14 = this.f40209g;
-        float f15 = mVar.f40205c;
+        float f10 = this.f40771a;
+        float f11 = mVar.f40771a;
+        float f12 = this.f40774d;
+        float f13 = mVar.f40772b;
+        float f14 = this.f40777g;
+        float f15 = mVar.f40773c;
         float f16 = (f10 * f11) + (f12 * f13) + (f14 * f15);
-        float f17 = mVar.f40206d;
-        float f18 = mVar.f40207e;
-        float f19 = mVar.f40208f;
+        float f17 = mVar.f40774d;
+        float f18 = mVar.f40775e;
+        float f19 = mVar.f40776f;
         float f20 = (f10 * f17) + (f12 * f18) + (f14 * f19);
-        float f21 = mVar.f40209g;
-        float f22 = mVar.f40210h;
-        float f23 = mVar.f40211i;
-        float f24 = this.f40204b;
-        float f25 = this.f40207e;
-        float f26 = this.f40210h;
+        float f21 = mVar.f40777g;
+        float f22 = mVar.f40778h;
+        float f23 = mVar.f40779i;
+        float f24 = this.f40772b;
+        float f25 = this.f40775e;
+        float f26 = this.f40778h;
         float f27 = (f24 * f21) + (f25 * f22) + (f26 * f23);
-        float f28 = this.f40205c;
+        float f28 = this.f40773c;
         float f29 = f11 * f28;
-        float f30 = this.f40208f;
+        float f30 = this.f40776f;
         float f31 = f29 + (f13 * f30);
-        float f32 = this.f40211i;
+        float f32 = this.f40779i;
         return new m(f16, f20, (f10 * f21) + (f12 * f22) + (f14 * f23), (f24 * f11) + (f25 * f13) + (f26 * f15), (f24 * f17) + (f25 * f18) + (f26 * f19), f27, f31 + (f15 * f32), (f28 * f17) + (f18 * f30) + (f19 * f32), (f28 * f21) + (f30 * f22) + (f32 * f23));
     }
 
     public void f(float[] fArr) {
-        float f10 = this.f40203a;
-        float f11 = this.f40204b;
-        float f12 = this.f40205c;
-        float f13 = this.f40206d;
-        float f14 = this.f40207e;
-        float f15 = this.f40208f;
-        float f16 = this.f40209g;
-        float f17 = this.f40210h;
-        float f18 = this.f40211i;
+        float f10 = this.f40771a;
+        float f11 = this.f40772b;
+        float f12 = this.f40773c;
+        float f13 = this.f40774d;
+        float f14 = this.f40775e;
+        float f15 = this.f40776f;
+        float f16 = this.f40777g;
+        float f17 = this.f40778h;
+        float f18 = this.f40779i;
         int length = fArr.length - 1;
         for (int i10 = 0; i10 < length; i10 += 2) {
             float f19 = fArr[i10];

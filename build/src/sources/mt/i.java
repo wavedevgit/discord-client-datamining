@@ -7,16 +7,16 @@ import kotlin.jvm.internal.Intrinsics;
 final class i implements v {
 
     /* renamed from: a  reason: collision with root package name */
-    private final List f36622a;
+    private final List f37190a;
 
     public i(List predicates) {
         Intrinsics.checkNotNullParameter(predicates, "predicates");
-        this.f36622a = predicates;
+        this.f37190a = predicates;
     }
 
     @Override // mt.v
     public boolean test(Object obj) {
-        List<v> list = this.f36622a;
+        List<v> list = this.f37190a;
         if ((list instanceof Collection) && list.isEmpty()) {
             return true;
         }

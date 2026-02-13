@@ -2,11 +2,11 @@
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var4 = require;
-    var9 = metroImportDefault;
+    var12 = metroImportDefault;
     var2 = exports;
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
-    var _closure1_slot1 = var9;
+    var _closure1_slot1 = var12;
     var _closure1_slot2 = var5;
     var0 = global;
     var7 = var0.Object;
@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot3 = var3;
     var3 = 2;
     var3 = var5[var3];
-    var3 = var9.bind(var0)(var3);
+    var3 = var12.bind(var0)(var3);
     var _closure1_slot4 = var3;
     var3 = 3;
     var3 = var5[var3];
@@ -38,23 +38,23 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 4;
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
-    var11 = var3.Fonts;
+    var9 = var3.Fonts;
     var3 = var3.Permissions;
     var _closure1_slot6 = var3;
     var3 = 5;
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
-    var7 = var3.jsx;
-    var _closure1_slot7 = var7;
+    var6 = var3.jsx;
+    var _closure1_slot7 = var6;
     var3 = var3.jsxs;
     var _closure1_slot8 = var3;
     var3 = 6;
     var3 = var5[var3];
-    var8 = var4.bind(var0)(var3);
-    var6 = var8.createStyles;
+    var7 = var4.bind(var0)(var3);
+    var6 = var7.createStyles;
     var3 = {};
-    var12 = 'center';
-    var10 = {
+    var10 = 'center';
+    var8 = {
         'display': 'flex',
         'flexDirection': 'column',
         'justifyContent': 'center',
@@ -62,51 +62,36 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         'marginBottom': 88,
         'padding': 16
     };
-    var3.container = var10;
-    var10 = {};
-    var13 = 7;
-    var13 = var5[var13];
-    var16 = var9.bind(var0)(var13);
-    var15 = var11.DISPLAY_EXTRABOLD;
-    var11 = 8;
-    var13 = var5[var11];
-    var13 = var9.bind(var0)(var13);
-    var13 = var13.colors;
-    var19 = var13.MOBILE_TEXT_HEADING_PRIMARY;
-    var13 = {};
-    var13.marginBottom = var11;
-    var18 = 24;
-    var21 = undefined;
-    var20 = var15;
-    var17 = var13;
-    var19 = var21[var16](var20, var19, var18, var17, var16);
-    var20 = var10;
-    var11 = copyDataProperties(var20, var19);
-    var11 = 'textAlign';
-    var10[var11] = var12;
-    var3.title = var10;
-    var10 = {
+    var3.container = var8;
+    var8 = {};
+    var11 = 7;
+    var11 = var5[var11];
+    var14 = var12.bind(var0)(var11);
+    var13 = var9.DISPLAY_EXTRABOLD;
+    var9 = 8;
+    var11 = var5[var9];
+    var11 = var12.bind(var0)(var11);
+    var11 = var11.colors;
+    var17 = var11.MOBILE_TEXT_HEADING_PRIMARY;
+    var11 = {};
+    var11.marginBottom = var9;
+    var16 = 24;
+    var19 = undefined;
+    var18 = var13;
+    var15 = var11;
+    var17 = var19[var14](var18, var17, var16, var15, var14);
+    var18 = var8;
+    var9 = copyDataProperties(var18, var17);
+    var9 = 'textAlign';
+    var8[var9] = var10;
+    var3.title = var8;
+    var8 = {
         'paddingBottom': 2,
         'textAlign': 'center'
     };
-    var3.subtitle = var10;
-    var3 = var6.bind(var8)(var3);
+    var3.subtitle = var8;
+    var3 = var6.bind(var7)(var3);
     var _closure1_slot9 = var3;
-    var3 = 9;
-    var3 = var5[var3];
-    var6 = var9.bind(var0)(var3);
-    var3 = {};
-    var8 = 10;
-    var8 = var5[var8];
-    var8 = var9.bind(var0)(var8);
-    var3.icon = var8;
-    var8 = 11;
-    var8 = var5[var8];
-    var8 = var4.bind(var0)(var8);
-    var8 = var8.CalendarIcon;
-    var3.IconComponent = var8;
-    var3 = var7.bind(var0)(var6, var3);
-    var _closure1_slot10 = var3;
     var3 = 17;
     var3 = var5[var3];
     var5 = var4.bind(var0)(var3);
@@ -114,7 +99,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/guild_scheduled_events/native/components/GuildEventsNoContent.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun90698: for (var _fun90698_ip = 0;;) switch (_fun90698_ip) {
+        _fun67648: for (var _fun67648_ip = 0;;) switch (_fun67648_ip) {
             case 0:
                 var1 = arg0;
                 var0 = var1.guild;
@@ -126,7 +111,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = var1.bind(var3)();
                 var16 = _closure1_slot0;
                 var10 = _closure1_slot2;
-                var1 = 12;
+                var1 = 9;
                 var1 = var10[var1];
                 var5 = var16.bind(var3)(var1);
                 var4 = var5.useStateFromStores;
@@ -150,10 +135,24 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = {};
                 var4 = var11.container;
                 var0.style = var4;
-                var7 = _closure1_slot10;
+                var9 = _closure1_slot7;
+                var12 = _closure1_slot1;
+                var4 = 10;
+                var4 = var10[var4];
+                var7 = var12.bind(var3)(var4);
+                var4 = {};
+                var8 = 11;
+                var8 = var10[var8];
+                var8 = var12.bind(var3)(var8);
+                var4.icon = var8;
+                var8 = 12;
+                var8 = var10[var8];
+                var8 = var16.bind(var3)(var8);
+                var8 = var8.CalendarIcon;
+                var4.IconComponent = var8;
+                var7 = var9.bind(var3)(var7, var4);
                 var4 = new Array(4);
                 var4[0] = var7;
-                var9 = _closure1_slot7;
                 var7 = 13;
                 var8 = var10[var7];
                 var8 = var16.bind(var3)(var8);
@@ -202,10 +201,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var9.bind(var3)(var8, var7);
                 var4[2] = var7;
                 if (!var5) {
-                    _fun90698_ip = 467;
-                    continue _fun90698
+                    _fun67648_ip = 525;
+                    continue _fun67648
                 }
-            case 342:
+            case 400:
                 var8 = _closure1_slot7;
                 var10 = _closure1_slot0;
                 var9 = _closure1_slot2;
@@ -250,7 +249,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var11.bind(var12)(var10, var9);
                 var6.children = var9;
                 var5 = var8.bind(var3)(var7, var6);
-            case 467:
+            case 525:
                 var4[3] = var5;
                 var0.children = var4;
                 var0 = var2.bind(var3)(var1, var0);
@@ -259,4 +258,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 3093, 660, 483, 33, 1297, 4689, 671, 5993, 8311, 8314, 566, 3938, 1234, 5384, 8284, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 3096, 660, 483, 33, 1297, 4687, 671, 566, 5986, 8238, 8241, 3938, 1235, 5390, 8212, 2]);

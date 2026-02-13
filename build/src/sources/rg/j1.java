@@ -5,26 +5,26 @@ import java.util.Iterator;
 final class j1 extends p0 {
 
     /* renamed from: i  reason: collision with root package name */
-    private final transient o0 f46764i;
+    private final transient o0 f47332i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final transient m0 f46765o;
+    private final transient m0 f47333o;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public j1(o0 o0Var, m0 m0Var) {
-        this.f46764i = o0Var;
-        this.f46765o = m0Var;
+        this.f47332i = o0Var;
+        this.f47333o = m0Var;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // rg.h0
     public final int b(Object[] objArr, int i10) {
-        return this.f46765o.b(objArr, 0);
+        return this.f47333o.b(objArr, 0);
     }
 
     @Override // rg.h0, java.util.AbstractCollection, java.util.Collection
     public final boolean contains(Object obj) {
-        if (this.f46764i.get(obj) != null) {
+        if (this.f47332i.get(obj) != null) {
             return true;
         }
         return false;
@@ -32,7 +32,7 @@ final class j1 extends p0 {
 
     @Override // java.util.AbstractCollection, java.util.Collection, java.lang.Iterable, java.util.Set
     public final /* synthetic */ Iterator iterator() {
-        return this.f46765o.listIterator(0);
+        return this.f47333o.listIterator(0);
     }
 
     @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set

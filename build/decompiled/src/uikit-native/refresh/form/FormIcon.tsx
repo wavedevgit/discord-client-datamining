@@ -43,7 +43,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'uikit-native/refresh/form/FormIcon.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun44566: for (var _fun44566_ip = 0;;) switch (_fun44566_ip) {
+        _fun44726: for (var _fun44726_ip = 0;;) switch (_fun44726_ip) {
             case 0:
                 var3 = arg0;
                 var8 = var3.style;
@@ -66,10 +66,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = undefined;
                 var7 = var2.bind(var4)();
                 if (!(var0 == var6)) {
-                    _fun44566_ip = 142;
-                    continue _fun44566
+                    _fun44726_ip = 138;
+                    continue _fun44726
                 }
-            case 73:
+            case 69:
                 var3 = _closure1_slot2;
                 var2 = _closure1_slot0;
                 var10 = _closure1_slot1;
@@ -87,9 +87,9 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13 = var5;
                 var9 = copyDataProperties(var14, var13);
                 var0 = var3.bind(var4)(var2, var0);
-                _fun44566_ip = 210;
-                continue _fun44566;
-            case 142:
+                _fun44726_ip = 206;
+                continue _fun44726;
+            case 138:
                 var3 = _closure1_slot2;
                 var2 = _closure1_slot0;
                 var9 = _closure1_slot1;
@@ -107,10 +107,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13 = var5;
                 var5 = copyDataProperties(var14, var13);
                 var0 = var3.bind(var4)(var2, var1);
-            case 210:
+            case 206:
                 return var0;
         }
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 1297, 4901, 4092, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 1297, 4932, 4092, 2]);

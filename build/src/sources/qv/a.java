@@ -7,10 +7,10 @@ import java.util.concurrent.ConcurrentMap;
 public abstract class a {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final ConcurrentMap f45772a = new ConcurrentHashMap();
+    private static final ConcurrentMap f46340a = new ConcurrentHashMap();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final ConcurrentMap f45773b = new ConcurrentHashMap();
+    private static final ConcurrentMap f46341b = new ConcurrentHashMap();
 
     private static boolean a(String str) {
         if (b.b(str) && str.length() == 2) {

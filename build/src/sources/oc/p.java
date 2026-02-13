@@ -3,14 +3,14 @@ package oc;
 public final class p {
 
     /* renamed from: a  reason: collision with root package name */
-    public final int f38816a;
+    public final int f39384a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final float f38817b;
+    public final float f39385b;
 
     public p(int i10, float f10) {
-        this.f38816a = i10;
-        this.f38817b = f10;
+        this.f39384a = i10;
+        this.f39385b = f10;
     }
 
     public boolean equals(Object obj) {
@@ -19,7 +19,7 @@ public final class p {
         }
         if (obj != null && p.class == obj.getClass()) {
             p pVar = (p) obj;
-            if (this.f38816a == pVar.f38816a && Float.compare(pVar.f38817b, this.f38817b) == 0) {
+            if (this.f39384a == pVar.f39384a && Float.compare(pVar.f39385b, this.f39385b) == 0) {
                 return true;
             }
         }
@@ -27,6 +27,6 @@ public final class p {
     }
 
     public int hashCode() {
-        return ((527 + this.f38816a) * 31) + Float.floatToIntBits(this.f38817b);
+        return ((527 + this.f39384a) * 31) + Float.floatToIntBits(this.f39385b);
     }
 }

@@ -77,7 +77,7 @@ public final class NonGuildVersion {
             compositeEncoder.E(serialDescriptor, 1, nonGuildVersion.version);
         }
         if (compositeEncoder.z(serialDescriptor, 2) || nonGuildVersion.versionString != null) {
-            compositeEncoder.o(serialDescriptor, 2, n2.f50033a, nonGuildVersion.versionString);
+            compositeEncoder.o(serialDescriptor, 2, n2.f50601a, nonGuildVersion.versionString);
         }
     }
 

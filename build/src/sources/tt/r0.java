@@ -8,11 +8,11 @@ import kotlin.reflect.KType;
 final class r0 implements KType {
 
     /* renamed from: d  reason: collision with root package name */
-    private final KType f50061d;
+    private final KType f50629d;
 
     public r0(KType origin) {
         Intrinsics.checkNotNullParameter(origin, "origin");
-        this.f50061d = origin;
+        this.f50629d = origin;
     }
 
     public boolean equals(Object obj) {
@@ -22,7 +22,7 @@ final class r0 implements KType {
         if (obj == null) {
             return false;
         }
-        KType kType3 = this.f50061d;
+        KType kType3 = this.f50629d;
         kotlin.reflect.d dVar = null;
         if (obj instanceof r0) {
             r0Var = (r0) obj;
@@ -30,7 +30,7 @@ final class r0 implements KType {
             r0Var = null;
         }
         if (r0Var != null) {
-            kType = r0Var.f50061d;
+            kType = r0Var.f50629d;
         } else {
             kType = null;
         }
@@ -56,29 +56,29 @@ final class r0 implements KType {
 
     @Override // kotlin.reflect.b
     public List getAnnotations() {
-        return this.f50061d.getAnnotations();
+        return this.f50629d.getAnnotations();
     }
 
     @Override // kotlin.reflect.KType
     public List getArguments() {
-        return this.f50061d.getArguments();
+        return this.f50629d.getArguments();
     }
 
     @Override // kotlin.reflect.KType
     public kotlin.reflect.d getClassifier() {
-        return this.f50061d.getClassifier();
+        return this.f50629d.getClassifier();
     }
 
     public int hashCode() {
-        return this.f50061d.hashCode();
+        return this.f50629d.hashCode();
     }
 
     @Override // kotlin.reflect.KType
     public boolean isMarkedNullable() {
-        return this.f50061d.isMarkedNullable();
+        return this.f50629d.isMarkedNullable();
     }
 
     public String toString() {
-        return "KTypeWrapper: " + this.f50061d;
+        return "KTypeWrapper: " + this.f50629d;
     }
 }

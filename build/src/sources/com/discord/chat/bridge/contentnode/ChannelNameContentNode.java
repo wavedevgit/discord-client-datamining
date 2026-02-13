@@ -101,7 +101,7 @@ public final class ChannelNameContentNode extends ContentNode {
         }
         compositeEncoder.y(serialDescriptor, 1, channelNameContentNode.iconType);
         if (compositeEncoder.z(serialDescriptor, 2) || channelNameContentNode.icon != null) {
-            compositeEncoder.o(serialDescriptor, 2, n2.f50033a, channelNameContentNode.icon);
+            compositeEncoder.o(serialDescriptor, 2, n2.f50601a, channelNameContentNode.icon);
         }
         compositeEncoder.k(serialDescriptor, 3, (qt.o) lazyArr[3].getValue(), channelNameContentNode.content);
     }

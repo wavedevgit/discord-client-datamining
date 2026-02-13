@@ -8,22 +8,22 @@ import kotlin.jvm.internal.Intrinsics;
 public final class d0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final TextInputLayout f42912a;
+    private final TextInputLayout f43480a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final TextInputLayout f42913b;
+    private final TextInputLayout f43481b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final sq.f f42914c;
+    private final sq.f f43482c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final sq.f f42915d;
+    private final sq.f f43483d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final ButtonWithLoadingIndicator f42916e;
+    private final ButtonWithLoadingIndicator f43484e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final TextView f42917f;
+    private final TextView f43485f;
 
     public d0(TextInputLayout cardAccessNumber, TextInputLayout documentNumber, sq.f dateOfBirthBinding, sq.f expirationDateBinding, ButtonWithLoadingIndicator launchButton, TextView errorLabel) {
         Intrinsics.checkNotNullParameter(cardAccessNumber, "cardAccessNumber");
@@ -32,35 +32,35 @@ public final class d0 {
         Intrinsics.checkNotNullParameter(expirationDateBinding, "expirationDateBinding");
         Intrinsics.checkNotNullParameter(launchButton, "launchButton");
         Intrinsics.checkNotNullParameter(errorLabel, "errorLabel");
-        this.f42912a = cardAccessNumber;
-        this.f42913b = documentNumber;
-        this.f42914c = dateOfBirthBinding;
-        this.f42915d = expirationDateBinding;
-        this.f42916e = launchButton;
-        this.f42917f = errorLabel;
+        this.f43480a = cardAccessNumber;
+        this.f43481b = documentNumber;
+        this.f43482c = dateOfBirthBinding;
+        this.f43483d = expirationDateBinding;
+        this.f43484e = launchButton;
+        this.f43485f = errorLabel;
     }
 
     public final TextInputLayout a() {
-        return this.f42912a;
+        return this.f43480a;
     }
 
     public final sq.f b() {
-        return this.f42914c;
+        return this.f43482c;
     }
 
     public final TextInputLayout c() {
-        return this.f42913b;
+        return this.f43481b;
     }
 
     public final TextView d() {
-        return this.f42917f;
+        return this.f43485f;
     }
 
     public final sq.f e() {
-        return this.f42915d;
+        return this.f43483d;
     }
 
     public final ButtonWithLoadingIndicator f() {
-        return this.f42916e;
+        return this.f43484e;
     }
 }

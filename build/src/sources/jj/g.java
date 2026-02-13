@@ -8,10 +8,10 @@ import java.util.UUID;
 public class g {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final byte f30975a = Byte.parseByte("01110000", 2);
+    private static final byte f31543a = Byte.parseByte("01110000", 2);
 
     /* renamed from: b  reason: collision with root package name */
-    private static final byte f30976b = Byte.parseByte("00001111", 2);
+    private static final byte f31544b = Byte.parseByte("00001111", 2);
 
     private static String b(byte[] bArr) {
         return new String(Base64.encode(bArr, 11), Charset.defaultCharset()).substring(0, 22);
@@ -28,7 +28,7 @@ public class g {
         byte[] c10 = c(UUID.randomUUID(), new byte[17]);
         byte b10 = c10[0];
         c10[16] = b10;
-        c10[0] = (byte) ((b10 & f30976b) | f30975a);
+        c10[0] = (byte) ((b10 & f31544b) | f31543a);
         return b(c10);
     }
 }

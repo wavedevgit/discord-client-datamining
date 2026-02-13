@@ -11,7 +11,7 @@ public abstract class i0 implements Comparator {
     }
 
     public static i0 b() {
-        return f0.f45330d;
+        return f0.f45898d;
     }
 
     public i0 c(pi.f fVar) {

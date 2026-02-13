@@ -3,33 +3,33 @@ package rd;
 public class q {
 
     /* renamed from: a  reason: collision with root package name */
-    public final Object f46438a;
+    public final Object f47006a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final int f46439b;
+    public final int f47007b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final int f46440c;
+    public final int f47008c;
 
     /* renamed from: d  reason: collision with root package name */
-    public final long f46441d;
+    public final long f47009d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final int f46442e;
+    public final int f47010e;
 
     public q(Object obj) {
         this(obj, -1L);
     }
 
     public q a(Object obj) {
-        if (this.f46438a.equals(obj)) {
+        if (this.f47006a.equals(obj)) {
             return this;
         }
-        return new q(obj, this.f46439b, this.f46440c, this.f46441d, this.f46442e);
+        return new q(obj, this.f47007b, this.f47008c, this.f47009d, this.f47010e);
     }
 
     public boolean b() {
-        if (this.f46439b != -1) {
+        if (this.f47007b != -1) {
             return true;
         }
         return false;
@@ -43,14 +43,14 @@ public class q {
             return false;
         }
         q qVar = (q) obj;
-        if (this.f46438a.equals(qVar.f46438a) && this.f46439b == qVar.f46439b && this.f46440c == qVar.f46440c && this.f46441d == qVar.f46441d && this.f46442e == qVar.f46442e) {
+        if (this.f47006a.equals(qVar.f47006a) && this.f47007b == qVar.f47007b && this.f47008c == qVar.f47008c && this.f47009d == qVar.f47009d && this.f47010e == qVar.f47010e) {
             return true;
         }
         return false;
     }
 
     public int hashCode() {
-        return ((((((((527 + this.f46438a.hashCode()) * 31) + this.f46439b) * 31) + this.f46440c) * 31) + ((int) this.f46441d)) * 31) + this.f46442e;
+        return ((((((((527 + this.f47006a.hashCode()) * 31) + this.f47007b) * 31) + this.f47008c) * 31) + ((int) this.f47009d)) * 31) + this.f47010e;
     }
 
     public q(Object obj, long j10) {
@@ -67,18 +67,18 @@ public class q {
 
     /* JADX INFO: Access modifiers changed from: protected */
     public q(q qVar) {
-        this.f46438a = qVar.f46438a;
-        this.f46439b = qVar.f46439b;
-        this.f46440c = qVar.f46440c;
-        this.f46441d = qVar.f46441d;
-        this.f46442e = qVar.f46442e;
+        this.f47006a = qVar.f47006a;
+        this.f47007b = qVar.f47007b;
+        this.f47008c = qVar.f47008c;
+        this.f47009d = qVar.f47009d;
+        this.f47010e = qVar.f47010e;
     }
 
     private q(Object obj, int i10, int i11, long j10, int i12) {
-        this.f46438a = obj;
-        this.f46439b = i10;
-        this.f46440c = i11;
-        this.f46441d = j10;
-        this.f46442e = i12;
+        this.f47006a = obj;
+        this.f47007b = i10;
+        this.f47008c = i11;
+        this.f47009d = j10;
+        this.f47010e = i12;
     }
 }

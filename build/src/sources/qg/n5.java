@@ -5,37 +5,37 @@ import bj.c;
 final class n5 implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final n5 f44743a = new n5();
+    static final n5 f45311a = new n5();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final bj.c f44744b;
+    private static final bj.c f45312b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final bj.c f44745c;
+    private static final bj.c f45313c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final bj.c f44746d;
+    private static final bj.c f45314d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final bj.c f44747e;
+    private static final bj.c f45315e;
 
     static {
         c.b a10 = bj.c.a("imageFormat");
         s1 s1Var = new s1();
         s1Var.a(1);
-        f44744b = a10.b(s1Var.b()).a();
+        f45312b = a10.b(s1Var.b()).a();
         c.b a11 = bj.c.a("originalImageSize");
         s1 s1Var2 = new s1();
         s1Var2.a(2);
-        f44745c = a11.b(s1Var2.b()).a();
+        f45313c = a11.b(s1Var2.b()).a();
         c.b a12 = bj.c.a("compressedImageSize");
         s1 s1Var3 = new s1();
         s1Var3.a(3);
-        f44746d = a12.b(s1Var3.b()).a();
+        f45314d = a12.b(s1Var3.b()).a();
         c.b a13 = bj.c.a("isOdmlImage");
         s1 s1Var4 = new s1();
         s1Var4.a(4);
-        f44747e = a13.b(s1Var4.b()).a();
+        f45315e = a13.b(s1Var4.b()).a();
     }
 
     private n5() {
@@ -45,9 +45,9 @@ final class n5 implements bj.d {
     public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
         r9 r9Var = (r9) obj;
         bj.e eVar = (bj.e) obj2;
-        eVar.e(f44744b, r9Var.a());
-        eVar.e(f44745c, r9Var.b());
-        eVar.e(f44746d, null);
-        eVar.e(f44747e, null);
+        eVar.e(f45312b, r9Var.a());
+        eVar.e(f45313c, r9Var.b());
+        eVar.e(f45314d, null);
+        eVar.e(f45315e, null);
     }
 }

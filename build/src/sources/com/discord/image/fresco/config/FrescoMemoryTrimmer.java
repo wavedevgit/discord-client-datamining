@@ -36,7 +36,7 @@ public final class FrescoMemoryTrimmer {
 
             private final boolean getMemoryIsLow() {
                 this.activityManager.getMemoryInfo(this.memoryInfo);
-                Unit unit = Unit.f31988a;
+                Unit unit = Unit.f32556a;
                 return this.memoryInfo.lowMemory;
             }
 

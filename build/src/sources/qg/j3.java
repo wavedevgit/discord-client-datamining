@@ -5,58 +5,58 @@ import bj.c;
 final class j3 implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final j3 f44583a = new j3();
+    static final j3 f45151a = new j3();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final bj.c f44584b;
+    private static final bj.c f45152b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final bj.c f44585c;
+    private static final bj.c f45153c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final bj.c f44586d;
+    private static final bj.c f45154d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final bj.c f44587e;
+    private static final bj.c f45155e;
 
     /* renamed from: f  reason: collision with root package name */
-    private static final bj.c f44588f;
+    private static final bj.c f45156f;
 
     /* renamed from: g  reason: collision with root package name */
-    private static final bj.c f44589g;
+    private static final bj.c f45157g;
 
     /* renamed from: h  reason: collision with root package name */
-    private static final bj.c f44590h;
+    private static final bj.c f45158h;
 
     static {
         c.b a10 = bj.c.a("durationMs");
         s1 s1Var = new s1();
         s1Var.a(1);
-        f44584b = a10.b(s1Var.b()).a();
+        f45152b = a10.b(s1Var.b()).a();
         c.b a11 = bj.c.a("handledErrors");
         s1 s1Var2 = new s1();
         s1Var2.a(2);
-        f44585c = a11.b(s1Var2.b()).a();
+        f45153c = a11.b(s1Var2.b()).a();
         c.b a12 = bj.c.a("partiallyHandledErrors");
         s1 s1Var3 = new s1();
         s1Var3.a(3);
-        f44586d = a12.b(s1Var3.b()).a();
+        f45154d = a12.b(s1Var3.b()).a();
         c.b a13 = bj.c.a("unhandledErrors");
         s1 s1Var4 = new s1();
         s1Var4.a(4);
-        f44587e = a13.b(s1Var4.b()).a();
+        f45155e = a13.b(s1Var4.b()).a();
         c.b a14 = bj.c.a("modelNamespace");
         s1 s1Var5 = new s1();
         s1Var5.a(5);
-        f44588f = a14.b(s1Var5.b()).a();
+        f45156f = a14.b(s1Var5.b()).a();
         c.b a15 = bj.c.a("delegateFilter");
         s1 s1Var6 = new s1();
         s1Var6.a(6);
-        f44589g = a15.b(s1Var6.b()).a();
+        f45157g = a15.b(s1Var6.b()).a();
         c.b a16 = bj.c.a("httpResponseCode");
         s1 s1Var7 = new s1();
         s1Var7.a(7);
-        f44590h = a16.b(s1Var7.b()).a();
+        f45158h = a16.b(s1Var7.b()).a();
     }
 
     private j3() {

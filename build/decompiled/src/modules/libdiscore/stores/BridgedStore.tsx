@@ -22,13 +22,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/libdiscore/stores/BridgedStore.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun17902: for (var _fun17902_ip = 0;;) switch (_fun17902_ip) {
+        _fun17912: for (var _fun17912_ip = 0;;) switch (_fun17912_ip) {
             case 0:
                 var1 = arg0;
                 var0 = 'typescript';
                 if (!(var0 !== var1)) {
-                    _fun17902_ip = 48;
-                    continue _fun17902
+                    _fun17912_ip = 48;
+                    continue _fun17912
                 }
             case 11:
                 var4 = _closure1_slot0;
@@ -40,8 +40,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var3.hasFluxApi;
                 var2 = var2.bind(var3)();
                 if (!var2) {
-                    _fun17902_ip = 51;
-                    continue _fun17902
+                    _fun17912_ip = 51;
+                    continue _fun17912
                 }
             case 48:
                 var0 = var1;

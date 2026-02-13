@@ -6,7 +6,7 @@ import com.facebook.react.devsupport.StackTraceHelper;
 final class rb implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final rb f39636a = new rb();
+    static final rb f40204a = new rb();
 
     static {
         c.b a10 = bj.c.a("pipelineNamespace");

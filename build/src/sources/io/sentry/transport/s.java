@@ -8,10 +8,10 @@ import java.util.Iterator;
 public final class s implements io.sentry.cache.g {
 
     /* renamed from: d  reason: collision with root package name */
-    private static final s f30094d = new s();
+    private static final s f30662d = new s();
 
     public static s b() {
-        return f30094d;
+        return f30662d;
     }
 
     @Override // io.sentry.cache.g

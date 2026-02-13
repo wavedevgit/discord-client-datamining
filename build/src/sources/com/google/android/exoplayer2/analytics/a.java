@@ -91,7 +91,7 @@ public class a implements nc.a {
 
         private void b(t.a aVar, r.b bVar, Timeline timeline) {
             if (bVar != null) {
-                if (timeline.f(bVar.f46438a) != -1) {
+                if (timeline.f(bVar.f47006a) != -1) {
                     aVar.f(bVar, timeline);
                     return;
                 }
@@ -131,11 +131,11 @@ public class a implements nc.a {
         }
 
         private static boolean i(r.b bVar, Object obj, boolean z10, int i10, int i11, int i12) {
-            if (!bVar.f46438a.equals(obj)) {
+            if (!bVar.f47006a.equals(obj)) {
                 return false;
             }
-            if (!z10 || bVar.f46439b != i10 || bVar.f46440c != i11) {
-                if (z10 || bVar.f46439b != -1 || bVar.f46442e != i12) {
+            if (!z10 || bVar.f47007b != i10 || bVar.f47008c != i11) {
+                if (z10 || bVar.f47007b != -1 || bVar.f47010e != i12) {
                     return false;
                 }
                 return true;
@@ -261,7 +261,7 @@ public class a implements nc.a {
             f10 = this.f12689o.f(bVar);
         }
         if (bVar != null && f10 != null) {
-            return V0(f10, f10.l(bVar.f46438a, this.f12687e).f12595i, bVar);
+            return V0(f10, f10.l(bVar.f47006a, this.f12687e).f12595i, bVar);
         }
         int Q = this.f12692r.Q();
         Timeline v10 = this.f12692r.v();
@@ -452,7 +452,7 @@ public class a implements nc.a {
         }
         long j10 = 0;
         if (bVar2 != null && bVar2.b()) {
-            if (z10 && this.f12692r.r() == bVar2.f46439b && this.f12692r.I() == bVar2.f46440c) {
+            if (z10 && this.f12692r.r() == bVar2.f47007b && this.f12692r.I() == bVar2.f47008c) {
                 j10 = this.f12692r.Z();
             }
         } else if (z10) {

@@ -3,62 +3,62 @@ package pg;
 public final class z7 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Long f42714a;
+    private final Long f43282a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final x7 f42715b;
+    private final x7 f43283b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final r7 f42716c;
+    private final r7 f43284c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Integer f42717d;
+    private final Integer f43285d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Integer f42718e;
+    private final Integer f43286e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final Integer f42719f;
+    private final Integer f43287f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final Integer f42720g;
+    private final Integer f43288g;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public /* synthetic */ z7(w7 w7Var, y7 y7Var) {
-        this.f42714a = w7Var.f42605a;
-        this.f42715b = w7Var.f42606b;
-        this.f42716c = w7Var.f42607c;
-        this.f42717d = w7Var.f42608d;
-        this.f42718e = w7Var.f42609e;
-        this.f42719f = w7Var.f42610f;
-        this.f42720g = w7Var.f42611g;
+        this.f43282a = w7Var.f43173a;
+        this.f43283b = w7Var.f43174b;
+        this.f43284c = w7Var.f43175c;
+        this.f43285d = w7Var.f43176d;
+        this.f43286e = w7Var.f43177e;
+        this.f43287f = w7Var.f43178f;
+        this.f43288g = w7Var.f43179g;
     }
 
     public final r7 a() {
-        return this.f42716c;
+        return this.f43284c;
     }
 
     public final x7 b() {
-        return this.f42715b;
+        return this.f43283b;
     }
 
     public final Integer c() {
-        return this.f42717d;
+        return this.f43285d;
     }
 
     public final Integer d() {
-        return this.f42719f;
+        return this.f43287f;
     }
 
     public final Integer e() {
-        return this.f42718e;
+        return this.f43286e;
     }
 
     public final Integer f() {
-        return this.f42720g;
+        return this.f43288g;
     }
 
     public final Long g() {
-        return this.f42714a;
+        return this.f43282a;
     }
 }

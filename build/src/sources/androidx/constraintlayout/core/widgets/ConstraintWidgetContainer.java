@@ -106,20 +106,20 @@ public class ConstraintWidgetContainer extends k1.c {
             return false;
         }
         if (constraintWidget.V() != 8 && !(constraintWidget instanceof f) && !(constraintWidget instanceof a)) {
-            aVar.f35413a = constraintWidget.A();
-            aVar.f35414b = constraintWidget.T();
-            aVar.f35415c = constraintWidget.W();
-            aVar.f35416d = constraintWidget.x();
-            aVar.f35421i = false;
-            aVar.f35422j = i11;
-            ConstraintWidget.b bVar = aVar.f35413a;
+            aVar.f35981a = constraintWidget.A();
+            aVar.f35982b = constraintWidget.T();
+            aVar.f35983c = constraintWidget.W();
+            aVar.f35984d = constraintWidget.x();
+            aVar.f35989i = false;
+            aVar.f35990j = i11;
+            ConstraintWidget.b bVar = aVar.f35981a;
             ConstraintWidget.b bVar2 = ConstraintWidget.b.MATCH_CONSTRAINT;
             if (bVar == bVar2) {
                 z10 = true;
             } else {
                 z10 = false;
             }
-            if (aVar.f35414b == bVar2) {
+            if (aVar.f35982b == bVar2) {
                 z11 = true;
             } else {
                 z11 = false;
@@ -135,75 +135,75 @@ public class ConstraintWidgetContainer extends k1.c {
                 z13 = false;
             }
             if (z10 && constraintWidget.a0(0) && constraintWidget.f2439w == 0 && !z12) {
-                aVar.f35413a = ConstraintWidget.b.WRAP_CONTENT;
+                aVar.f35981a = ConstraintWidget.b.WRAP_CONTENT;
                 if (z11 && constraintWidget.f2441x == 0) {
-                    aVar.f35413a = ConstraintWidget.b.FIXED;
+                    aVar.f35981a = ConstraintWidget.b.FIXED;
                 }
                 z10 = false;
             }
             if (z11 && constraintWidget.a0(1) && constraintWidget.f2441x == 0 && !z13) {
-                aVar.f35414b = ConstraintWidget.b.WRAP_CONTENT;
+                aVar.f35982b = ConstraintWidget.b.WRAP_CONTENT;
                 if (z10 && constraintWidget.f2439w == 0) {
-                    aVar.f35414b = ConstraintWidget.b.FIXED;
+                    aVar.f35982b = ConstraintWidget.b.FIXED;
                 }
                 z11 = false;
             }
             if (constraintWidget.n0()) {
-                aVar.f35413a = ConstraintWidget.b.FIXED;
+                aVar.f35981a = ConstraintWidget.b.FIXED;
                 z10 = false;
             }
             if (constraintWidget.o0()) {
-                aVar.f35414b = ConstraintWidget.b.FIXED;
+                aVar.f35982b = ConstraintWidget.b.FIXED;
                 z11 = false;
             }
             if (z12) {
                 if (constraintWidget.f2443y[0] == 4) {
-                    aVar.f35413a = ConstraintWidget.b.FIXED;
+                    aVar.f35981a = ConstraintWidget.b.FIXED;
                 } else if (!z11) {
-                    ConstraintWidget.b bVar3 = aVar.f35414b;
+                    ConstraintWidget.b bVar3 = aVar.f35982b;
                     ConstraintWidget.b bVar4 = ConstraintWidget.b.FIXED;
                     if (bVar3 == bVar4) {
-                        i13 = aVar.f35416d;
+                        i13 = aVar.f35984d;
                     } else {
-                        aVar.f35413a = ConstraintWidget.b.WRAP_CONTENT;
+                        aVar.f35981a = ConstraintWidget.b.WRAP_CONTENT;
                         interfaceC0489b.b(constraintWidget, aVar);
-                        i13 = aVar.f35418f;
+                        i13 = aVar.f35986f;
                     }
-                    aVar.f35413a = bVar4;
-                    aVar.f35415c = (int) (constraintWidget.v() * i13);
+                    aVar.f35981a = bVar4;
+                    aVar.f35983c = (int) (constraintWidget.v() * i13);
                 }
             }
             if (z13) {
                 if (constraintWidget.f2443y[1] == 4) {
-                    aVar.f35414b = ConstraintWidget.b.FIXED;
+                    aVar.f35982b = ConstraintWidget.b.FIXED;
                 } else if (!z10) {
-                    ConstraintWidget.b bVar5 = aVar.f35413a;
+                    ConstraintWidget.b bVar5 = aVar.f35981a;
                     ConstraintWidget.b bVar6 = ConstraintWidget.b.FIXED;
                     if (bVar5 == bVar6) {
-                        i12 = aVar.f35415c;
+                        i12 = aVar.f35983c;
                     } else {
-                        aVar.f35414b = ConstraintWidget.b.WRAP_CONTENT;
+                        aVar.f35982b = ConstraintWidget.b.WRAP_CONTENT;
                         interfaceC0489b.b(constraintWidget, aVar);
-                        i12 = aVar.f35417e;
+                        i12 = aVar.f35985e;
                     }
-                    aVar.f35414b = bVar6;
+                    aVar.f35982b = bVar6;
                     if (constraintWidget.w() == -1) {
-                        aVar.f35416d = (int) (i12 / constraintWidget.v());
+                        aVar.f35984d = (int) (i12 / constraintWidget.v());
                     } else {
-                        aVar.f35416d = (int) (constraintWidget.v() * i12);
+                        aVar.f35984d = (int) (constraintWidget.v() * i12);
                     }
                 }
             }
             interfaceC0489b.b(constraintWidget, aVar);
-            constraintWidget.l1(aVar.f35417e);
-            constraintWidget.M0(aVar.f35418f);
-            constraintWidget.L0(aVar.f35420h);
-            constraintWidget.B0(aVar.f35419g);
-            aVar.f35422j = b.a.f35410k;
-            return aVar.f35421i;
+            constraintWidget.l1(aVar.f35985e);
+            constraintWidget.M0(aVar.f35986f);
+            constraintWidget.L0(aVar.f35988h);
+            constraintWidget.B0(aVar.f35987g);
+            aVar.f35990j = b.a.f35978k;
+            return aVar.f35989i;
         }
-        aVar.f35417e = 0;
-        aVar.f35418f = 0;
+        aVar.f35985e = 0;
+        aVar.f35986f = 0;
         return false;
     }
 

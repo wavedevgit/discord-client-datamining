@@ -47,7 +47,7 @@ public final class x extends uc.a {
             if (j12 != -9223372036854775807L) {
                 return a.e.f(j12, j11 + i10);
             }
-            return a.e.f50607d;
+            return a.e.f51175d;
         }
 
         private static void d(oe.h0 h0Var) {
@@ -98,7 +98,7 @@ public final class x extends uc.a {
 
         @Override // uc.a.f
         public void b() {
-            this.f22757b.R(w0.f39043f);
+            this.f22757b.R(w0.f39611f);
         }
 
         private b(s0 s0Var) {

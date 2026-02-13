@@ -16,25 +16,25 @@ import q.u;
 public final class z4 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final u f43784a;
+    private final u f44352a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Executor f43785b;
+    private final Executor f44353b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final a5 f43786c;
+    private final a5 f44354c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final MutableLiveData f43787d;
+    private final MutableLiveData f44355d;
 
     /* renamed from: e  reason: collision with root package name */
-    final b f43788e;
+    final b f44356e;
 
     /* renamed from: f  reason: collision with root package name */
-    private boolean f43789f = false;
+    private boolean f44357f = false;
 
     /* renamed from: g  reason: collision with root package name */
-    private u.c f43790g = new a();
+    private u.c f44358g = new a();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     class a implements u.c {
@@ -43,7 +43,7 @@ public final class z4 {
 
         @Override // q.u.c
         public boolean a(TotalCaptureResult totalCaptureResult) {
-            z4.this.f43788e.a(totalCaptureResult);
+            z4.this.f44356e.a(totalCaptureResult);
             return false;
         }
     }
@@ -66,15 +66,15 @@ public final class z4 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public z4(u uVar, r.a0 a0Var, Executor executor) {
-        this.f43784a = uVar;
-        this.f43785b = executor;
+        this.f44352a = uVar;
+        this.f44353b = executor;
         b b10 = b(a0Var);
-        this.f43788e = b10;
+        this.f44356e = b10;
         a5 a5Var = new a5(b10.d(), b10.b());
-        this.f43786c = a5Var;
+        this.f44354c = a5Var;
         a5Var.f(1.0f);
-        this.f43787d = new MutableLiveData(e0.g.e(a5Var));
-        uVar.v(this.f43790g);
+        this.f44355d = new MutableLiveData(e0.g.e(a5Var));
+        uVar.v(this.f44358g);
     }
 
     private static b b(r.a0 a0Var) {
@@ -104,40 +104,40 @@ public final class z4 {
 
     private void h(x.a2 a2Var) {
         if (Looper.myLooper() == Looper.getMainLooper()) {
-            this.f43787d.o(a2Var);
+            this.f44355d.o(a2Var);
         } else {
-            this.f43787d.m(a2Var);
+            this.f44355d.m(a2Var);
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void a(a.C0582a c0582a) {
-        this.f43788e.f(c0582a);
+        this.f44356e.f(c0582a);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public Rect c() {
-        return this.f43788e.e();
+        return this.f44356e.e();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public LiveData e() {
-        return this.f43787d;
+        return this.f44355d;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void g(boolean z10) {
         x.a2 e10;
-        if (this.f43789f != z10) {
-            this.f43789f = z10;
+        if (this.f44357f != z10) {
+            this.f44357f = z10;
             if (!z10) {
-                synchronized (this.f43786c) {
-                    this.f43786c.f(1.0f);
-                    e10 = e0.g.e(this.f43786c);
+                synchronized (this.f44354c) {
+                    this.f44354c.f(1.0f);
+                    e10 = e0.g.e(this.f44354c);
                 }
                 h(e10);
-                this.f43788e.c();
-                this.f43784a.f0();
+                this.f44356e.c();
+                this.f44352a.f0();
             }
         }
     }

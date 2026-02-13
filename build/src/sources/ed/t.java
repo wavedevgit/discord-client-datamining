@@ -110,10 +110,10 @@ public final class t implements m {
             return;
         }
         u.a aVar = this.f22725b;
-        this.f22734k = aVar.f38834c;
+        this.f22734k = aVar.f39402c;
         if (!this.f22731h) {
-            this.f22733j = (aVar.f38838g * 1000000) / aVar.f38835d;
-            this.f22727d.c(new Format.b().U(this.f22728e).g0(this.f22725b.f38833b).Y(RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT).J(this.f22725b.f38836e).h0(this.f22725b.f38835d).X(this.f22726c).G());
+            this.f22733j = (aVar.f39406g * 1000000) / aVar.f39403d;
+            this.f22727d.c(new Format.b().U(this.f22728e).g0(this.f22725b.f39401b).Y(RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT).J(this.f22725b.f39404e).h0(this.f22725b.f39403d).X(this.f22726c).G());
             this.f22731h = true;
         }
         this.f22724a.U(0);

@@ -19,16 +19,16 @@ import z1.g;
 class m extends r {
 
     /* renamed from: b  reason: collision with root package name */
-    private static final Class f45902b;
+    private static final Class f46470b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final Constructor f45903c;
+    private static final Constructor f46471c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final Method f45904d;
+    private static final Method f46472d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final Method f45905e;
+    private static final Method f46473e;
 
     static {
         Class<?> cls;
@@ -48,15 +48,15 @@ class m extends r {
             method = null;
             method2 = null;
         }
-        f45903c = constructor;
-        f45902b = cls;
-        f45904d = method2;
-        f45905e = method;
+        f46471c = constructor;
+        f46470b = cls;
+        f46472d = method2;
+        f46473e = method;
     }
 
     private static boolean i(Object obj, ByteBuffer byteBuffer, int i10, int i11, boolean z10) {
         try {
-            return ((Boolean) f45904d.invoke(obj, byteBuffer, Integer.valueOf(i10), null, Integer.valueOf(i11), Boolean.valueOf(z10))).booleanValue();
+            return ((Boolean) f46472d.invoke(obj, byteBuffer, Integer.valueOf(i10), null, Integer.valueOf(i11), Boolean.valueOf(z10))).booleanValue();
         } catch (IllegalAccessException | InvocationTargetException unused) {
             return false;
         }
@@ -64,16 +64,16 @@ class m extends r {
 
     private static Typeface j(Object obj) {
         try {
-            Object newInstance = Array.newInstance(f45902b, 1);
+            Object newInstance = Array.newInstance(f46470b, 1);
             Array.set(newInstance, 0, obj);
-            return (Typeface) f45905e.invoke(null, newInstance);
+            return (Typeface) f46473e.invoke(null, newInstance);
         } catch (IllegalAccessException | InvocationTargetException unused) {
             return null;
         }
     }
 
     public static boolean k() {
-        Method method = f45904d;
+        Method method = f46472d;
         if (method == null) {
             Log.w("TypefaceCompatApi24Impl", "Unable to collect necessary private methods.Fallback to legacy implementation.");
         }
@@ -85,7 +85,7 @@ class m extends r {
 
     private static Object l() {
         try {
-            return f45903c.newInstance(null);
+            return f46471c.newInstance(null);
         } catch (IllegalAccessException | InstantiationException | InvocationTargetException unused) {
             return null;
         }

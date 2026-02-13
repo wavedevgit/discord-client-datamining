@@ -5,37 +5,37 @@ import bj.c;
 final class p2 implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final p2 f42323a = new p2();
+    static final p2 f42891a = new p2();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final bj.c f42324b;
+    private static final bj.c f42892b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final bj.c f42325c;
+    private static final bj.c f42893c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final bj.c f42326d;
+    private static final bj.c f42894d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final bj.c f42327e;
+    private static final bj.c f42895e;
 
     static {
         c.b a10 = bj.c.a("callingSource");
         f fVar = new f();
         fVar.a(1);
-        f42324b = a10.b(fVar.b()).a();
+        f42892b = a10.b(fVar.b()).a();
         c.b a11 = bj.c.a("supportedFormats");
         f fVar2 = new f();
         fVar2.a(2);
-        f42325c = a11.b(fVar2.b()).a();
+        f42893c = a11.b(fVar2.b()).a();
         c.b a12 = bj.c.a("durationMs");
         f fVar3 = new f();
         fVar3.a(3);
-        f42326d = a12.b(fVar3.b()).a();
+        f42894d = a12.b(fVar3.b()).a();
         c.b a13 = bj.c.a("errorCode");
         f fVar4 = new f();
         fVar4.a(4);
-        f42327e = a13.b(fVar4.b()).a();
+        f42895e = a13.b(fVar4.b()).a();
     }
 
     private p2() {

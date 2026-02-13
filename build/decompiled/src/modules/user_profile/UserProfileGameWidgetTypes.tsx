@@ -114,7 +114,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = 'isValid';
         var0.key = var5;
         var5 = function() {
-            _fun42908: for (var _fun42908_ip = 0;;) switch (_fun42908_ip) {
+            _fun42917: for (var _fun42917_ip = 0;;) switch (_fun42917_ip) {
                 case 0:
                     var1 = this;
                     var0 = var1.games;
@@ -122,8 +122,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = 0;
                     var0 = var2 > var0;
                     if (!var0) {
-                        _fun42908_ip = 78;
-                        continue _fun42908
+                        _fun42917_ip = 78;
+                        continue _fun42917
                     }
                 case 23:
                     var2 = var1.games;
@@ -148,23 +148,23 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = 'isEqual';
         var0.key = var5;
         var5 = function arg0() {
-            _fun42909: for (var _fun42909_ip = 0;;) switch (_fun42909_ip) {
+            _fun42918: for (var _fun42918_ip = 0;;) switch (_fun42918_ip) {
                 case 0:
                     var3 = arg0;
                     var2 = this;
                     var0 = _closure2_slot0;
                     var0 = var3 instanceof var0;
                     if (!var0) {
-                        _fun42909_ip = 95;
-                        continue _fun42909
+                        _fun42918_ip = 95;
+                        continue _fun42918
                     }
                 case 20:
                     var4 = var3.type;
                     var1 = var2.type;
                     var1 = var4 === var1;
                     if (!var1) {
-                        _fun42909_ip = 92;
-                        continue _fun42909
+                        _fun42918_ip = 92;
+                        continue _fun42918
                     }
                 case 37:
                     var6 = _closure1_slot0;
@@ -250,4 +250,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.isGameWidget = var3;
     var2.BaseGameWidget = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 4668, 4670, 4671, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 4665, 4667, 4668, 2]);

@@ -179,13 +179,13 @@ public final class EmojiPickerRowView extends LinearLayout {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit onLongPressEmoji$lambda$1(String it) {
         Intrinsics.checkNotNullParameter(it, "it");
-        return Unit.f31988a;
+        return Unit.f32556a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit onPressEmoji$lambda$0(String it) {
         Intrinsics.checkNotNullParameter(it, "it");
-        return Unit.f31988a;
+        return Unit.f32556a;
     }
 
     @NotNull

@@ -9,16 +9,16 @@ import kotlin.jvm.internal.Intrinsics;
 public final class e extends Event implements tn.b {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final a f52942d = new a(null);
+    public static final a f53510d = new a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f52943a;
+    private final String f53511a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final int f52944b;
+    private final int f53512b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final boolean f52945c;
+    private final boolean f53513c;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements tn.b {
@@ -44,9 +44,9 @@ public final class e extends Event implements tn.b {
     public e(int i10, int i11, String tabKey, int i12, boolean z10) {
         super(i10, i11);
         Intrinsics.checkNotNullParameter(tabKey, "tabKey");
-        this.f52943a = tabKey;
-        this.f52944b = i12;
-        this.f52945c = z10;
+        this.f53511a = tabKey;
+        this.f53512b = i12;
+        this.f53513c = z10;
     }
 
     @Override // tn.b
@@ -56,14 +56,14 @@ public final class e extends Event implements tn.b {
 
     @Override // com.facebook.react.uimanager.events.Event
     public short getCoalescingKey() {
-        return (short) ((this.f52944b * 10) + (this.f52945c ? 1 : 0));
+        return (short) ((this.f53512b * 10) + (this.f53513c ? 1 : 0));
     }
 
     @Override // com.facebook.react.uimanager.events.Event
     protected WritableMap getEventData() {
         WritableMap createMap = Arguments.createMap();
-        createMap.putString("tabKey", this.f52943a);
-        createMap.putBoolean("repeatedSelectionHandledBySpecialEffect", this.f52945c);
+        createMap.putString("tabKey", this.f53511a);
+        createMap.putBoolean("repeatedSelectionHandledBySpecialEffect", this.f53513c);
         return createMap;
     }
 

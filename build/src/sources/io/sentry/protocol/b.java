@@ -12,13 +12,13 @@ import java.util.concurrent.ConcurrentHashMap;
 public final class b implements w1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private String f29630d;
+    private String f30198d;
 
     /* renamed from: e  reason: collision with root package name */
-    private String f29631e;
+    private String f30199e;
 
     /* renamed from: i  reason: collision with root package name */
-    private Map f29632i;
+    private Map f30200i;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements m1 {
@@ -32,9 +32,9 @@ public final class b implements w1 {
                 String o02 = e3Var.o0();
                 o02.getClass();
                 if (o02.equals(StackTraceHelper.NAME_KEY)) {
-                    bVar.f29630d = e3Var.r1();
+                    bVar.f30198d = e3Var.r1();
                 } else if (o02.equals("version")) {
-                    bVar.f29631e = e3Var.r1();
+                    bVar.f30199e = e3Var.r1();
                 } else {
                     if (concurrentHashMap == null) {
                         concurrentHashMap = new ConcurrentHashMap();
@@ -52,7 +52,7 @@ public final class b implements w1 {
     }
 
     public void c(Map map) {
-        this.f29632i = map;
+        this.f30200i = map;
     }
 
     public boolean equals(Object obj) {
@@ -61,7 +61,7 @@ public final class b implements w1 {
         }
         if (obj != null && b.class == obj.getClass()) {
             b bVar = (b) obj;
-            if (io.sentry.util.y.a(this.f29630d, bVar.f29630d) && io.sentry.util.y.a(this.f29631e, bVar.f29631e)) {
+            if (io.sentry.util.y.a(this.f30198d, bVar.f30198d) && io.sentry.util.y.a(this.f30199e, bVar.f30199e)) {
                 return true;
             }
         }
@@ -69,22 +69,22 @@ public final class b implements w1 {
     }
 
     public int hashCode() {
-        return io.sentry.util.y.b(this.f29630d, this.f29631e);
+        return io.sentry.util.y.b(this.f30198d, this.f30199e);
     }
 
     @Override // io.sentry.w1
     public void serialize(f3 f3Var, ILogger iLogger) {
         f3Var.u();
-        if (this.f29630d != null) {
-            f3Var.e(StackTraceHelper.NAME_KEY).f(this.f29630d);
+        if (this.f30198d != null) {
+            f3Var.e(StackTraceHelper.NAME_KEY).f(this.f30198d);
         }
-        if (this.f29631e != null) {
-            f3Var.e("version").f(this.f29631e);
+        if (this.f30199e != null) {
+            f3Var.e("version").f(this.f30199e);
         }
-        Map map = this.f29632i;
+        Map map = this.f30200i;
         if (map != null) {
             for (String str : map.keySet()) {
-                Object obj = this.f29632i.get(str);
+                Object obj = this.f30200i.get(str);
                 f3Var.e(str);
                 f3Var.j(iLogger, obj);
             }
@@ -94,8 +94,8 @@ public final class b implements w1 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public b(b bVar) {
-        this.f29630d = bVar.f29630d;
-        this.f29631e = bVar.f29631e;
-        this.f29632i = io.sentry.util.c.b(bVar.f29632i);
+        this.f30198d = bVar.f30198d;
+        this.f30199e = bVar.f30199e;
+        this.f30200i = io.sentry.util.c.b(bVar.f30200i);
     }
 }

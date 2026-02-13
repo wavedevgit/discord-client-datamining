@@ -25,7 +25,7 @@ public final class JsonObject extends JsonElement implements Map<String, JsonEle
     public static final Companion Companion = new Companion(null);
 
     /* renamed from: d  reason: collision with root package name */
-    private final Map f35123d;
+    private final Map f35691d;
 
     @Metadata(d1 = {"\u0000\u0016\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003J\f\u0010\u0004\u001a\b\u0012\u0004\u0012\u00020\u00060\u0005¨\u0006\u0007"}, d2 = {"Lkotlinx/serialization/json/JsonObject$Companion;", "", "<init>", "()V", "serializer", "Lkotlinx/serialization/KSerializer;", "Lkotlinx/serialization/json/JsonObject;", "kotlinx-serialization-json"}, k = 1, mv = {2, 0, 0}, xi = 48)
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
@@ -35,7 +35,7 @@ public final class JsonObject extends JsonElement implements Map<String, JsonEle
 
         @NotNull
         public final KSerializer serializer() {
-            return y.f51262a;
+            return y.f51830a;
         }
 
         public /* synthetic */ Companion(DefaultConstructorMarker defaultConstructorMarker) {
@@ -47,7 +47,7 @@ public final class JsonObject extends JsonElement implements Map<String, JsonEle
     public JsonObject(Map content) {
         super(null);
         Intrinsics.checkNotNullParameter(content, "content");
-        this.f35123d = content;
+        this.f35691d = content;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -64,7 +64,7 @@ public final class JsonObject extends JsonElement implements Map<String, JsonEle
 
     public boolean c(String key) {
         Intrinsics.checkNotNullParameter(key, "key");
-        return this.f35123d.containsKey(key);
+        return this.f35691d.containsKey(key);
     }
 
     @Override // java.util.Map
@@ -105,12 +105,12 @@ public final class JsonObject extends JsonElement implements Map<String, JsonEle
 
     public boolean d(JsonElement value) {
         Intrinsics.checkNotNullParameter(value, "value");
-        return this.f35123d.containsValue(value);
+        return this.f35691d.containsValue(value);
     }
 
     public JsonElement e(String key) {
         Intrinsics.checkNotNullParameter(key, "key");
-        return (JsonElement) this.f35123d.get(key);
+        return (JsonElement) this.f35691d.get(key);
     }
 
     @Override // java.util.Map
@@ -120,15 +120,15 @@ public final class JsonObject extends JsonElement implements Map<String, JsonEle
 
     @Override // java.util.Map
     public boolean equals(Object obj) {
-        return Intrinsics.areEqual(this.f35123d, obj);
+        return Intrinsics.areEqual(this.f35691d, obj);
     }
 
     public Set f() {
-        return this.f35123d.entrySet();
+        return this.f35691d.entrySet();
     }
 
     public Set g() {
-        return this.f35123d.keySet();
+        return this.f35691d.keySet();
     }
 
     @Override // java.util.Map
@@ -141,20 +141,20 @@ public final class JsonObject extends JsonElement implements Map<String, JsonEle
 
     @Override // java.util.Map
     public int hashCode() {
-        return this.f35123d.hashCode();
+        return this.f35691d.hashCode();
     }
 
     public int i() {
-        return this.f35123d.size();
+        return this.f35691d.size();
     }
 
     @Override // java.util.Map
     public boolean isEmpty() {
-        return this.f35123d.isEmpty();
+        return this.f35691d.isEmpty();
     }
 
     public Collection j() {
-        return this.f35123d.values();
+        return this.f35691d.values();
     }
 
     @Override // java.util.Map
@@ -209,7 +209,7 @@ public final class JsonObject extends JsonElement implements Map<String, JsonEle
     }
 
     public String toString() {
-        return CollectionsKt.x0(this.f35123d.entrySet(), ",", "{", "}", 0, null, new Function1() { // from class: ut.w
+        return CollectionsKt.x0(this.f35691d.entrySet(), ",", "{", "}", 0, null, new Function1() { // from class: ut.w
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Object obj) {
                 CharSequence l10;

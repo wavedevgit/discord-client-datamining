@@ -22,13 +22,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'utils/NumberUtils.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function arg0() {
-        _fun17833: for (var _fun17833_ip = 0;;) switch (_fun17833_ip) {
+        _fun17839: for (var _fun17839_ip = 0;;) switch (_fun17839_ip) {
             case 0:
                 var4 = arg0;
                 var0 = 1000000;
                 if (!(!(var4 < var0))) {
-                    _fun17833_ip = 99;
-                    continue _fun17833
+                    _fun17839_ip = 99;
+                    continue _fun17839
                 }
             case 13:
                 var2 = var4 / var0;
@@ -72,19 +72,19 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.shortenAndLocalizeNumber = var3;
     var3 = function arg0, arg1() {
-        _fun17834: for (var _fun17834_ip = 0;;) switch (_fun17834_ip) {
+        _fun17840: for (var _fun17840_ip = 0;;) switch (_fun17840_ip) {
             case 0:
                 var6 = arg0;
                 var4 = 1000;
                 if (!(!(var6 < var4))) {
-                    _fun17834_ip = 280;
-                    continue _fun17834
+                    _fun17840_ip = 280;
+                    continue _fun17840
                 }
             case 16:
                 var7 = 1000000;
                 if (!(!(var6 < var7))) {
-                    _fun17834_ip = 189;
-                    continue _fun17834
+                    _fun17840_ip = 189;
+                    continue _fun17840
                 }
             case 29:
                 var0 = global;
@@ -176,14 +176,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.humanizeValue = var3;
     var3 = function arg0() {
-        _fun17835: for (var _fun17835_ip = 0;;) switch (_fun17835_ip) {
+        _fun17841: for (var _fun17841_ip = 0;;) switch (_fun17841_ip) {
             case 0:
                 var4 = arg0;
                 var0 = arguments[1];
                 var3 = undefined;
                 if (!(var0 === var3)) {
-                    _fun17835_ip = 20;
-                    continue _fun17835
+                    _fun17841_ip = 20;
+                    continue _fun17841
                 }
             case 12:
                 var1 = global;
@@ -191,8 +191,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 20:
                 var1 = null;
                 if (!(var1 != var4)) {
-                    _fun17835_ip = 64;
-                    continue _fun17835
+                    _fun17841_ip = 64;
+                    continue _fun17841
                 }
             case 26:
                 var2 = global;
@@ -202,8 +202,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var3.isNaN;
                 var2 = var2.bind(var3)(var1);
                 if (!var2) {
-                    _fun17835_ip = 62;
-                    continue _fun17835
+                    _fun17841_ip = 62;
+                    continue _fun17841
                 }
             case 59:
                 var1 = var0;
@@ -215,13 +215,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.parseInteger = var3;
     var1 = function arg0, arg1() {
-        _fun17836: for (var _fun17836_ip = 0;;) switch (_fun17836_ip) {
+        _fun17842: for (var _fun17842_ip = 0;;) switch (_fun17842_ip) {
             case 0:
                 var0 = arguments[2];
                 var1 = undefined;
                 if (!(var0 === var1)) {
-                    _fun17836_ip = 11;
-                    continue _fun17836
+                    _fun17842_ip = 11;
+                    continue _fun17842
                 }
             case 9:
                 var0 = {};
@@ -246,4 +246,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.formatPercent = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1234, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1235, 2]);

@@ -9,16 +9,16 @@ import okhttp3.Call;
 public final class a extends h.a {
 
     /* renamed from: b  reason: collision with root package name */
-    private final Call.Factory f48676b;
+    private final Call.Factory f49244b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final String f48677c;
+    private final String f49245c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final c0 f48678d;
+    private final c0 f49246d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final CacheControl f48679e;
+    private final CacheControl f49247e;
 
     public a(Call.Factory factory, String str, c0 c0Var) {
         this(factory, str, c0Var, null);
@@ -28,8 +28,8 @@ public final class a extends h.a {
     @Override // com.google.android.exoplayer2.upstream.h.a
     /* renamed from: c */
     public OkHttpDataSource a(h.g gVar) {
-        OkHttpDataSource okHttpDataSource = new OkHttpDataSource(this.f48676b, this.f48677c, this.f48679e, gVar);
-        c0 c0Var = this.f48678d;
+        OkHttpDataSource okHttpDataSource = new OkHttpDataSource(this.f49244b, this.f49245c, this.f49247e, gVar);
+        c0 c0Var = this.f49246d;
         if (c0Var != null) {
             okHttpDataSource.i(c0Var);
         }
@@ -37,9 +37,9 @@ public final class a extends h.a {
     }
 
     public a(Call.Factory factory, String str, c0 c0Var, CacheControl cacheControl) {
-        this.f48676b = factory;
-        this.f48677c = str;
-        this.f48678d = c0Var;
-        this.f48679e = cacheControl;
+        this.f49244b = factory;
+        this.f49245c = str;
+        this.f49246d = c0Var;
+        this.f49247e = cacheControl;
     }
 }

@@ -3,14 +3,14 @@ package jk;
 abstract class o {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final m f31136a = new n();
+    private static final m f31704a = new n();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final m f31137b = c();
+    private static final m f31705b = c();
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static m a() {
-        m mVar = f31137b;
+        m mVar = f31705b;
         if (mVar != null) {
             return mVar;
         }
@@ -19,7 +19,7 @@ abstract class o {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static m b() {
-        return f31136a;
+        return f31704a;
     }
 
     private static m c() {

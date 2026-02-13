@@ -1,47 +1,77 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun97552: for (var _fun97552_ip = 0;;) switch (_fun97552_ip) {
+    _fun97591: for (var _fun97591_ip = 0;;) switch (_fun97591_ip) {
         case 0:
+            var9 = require;
+            var10 = dependencyMap;
             var1 = global;
-            var2 = var1.Math;
-            var2 = var2.ceil;
-            var _closure1_slot0 = var2;
-            var2 = var1.Math;
-            var2 = var2.floor;
-            var _closure1_slot1 = var2;
-            var1 = var1.Math;
-            var1 = var1.trunc;
-            if (var1) {
-                _fun97552_ip = 58;
-                continue _fun97552
-            }
-        case 51:
-            var1 = function arg0() {
-                _fun97553: for (var _fun97553_ip = 0;;) switch (_fun97553_ip) {
-                    case 0:
-                        var0 = arg0;
-                        var2 = var0 - 0;
-                        var0 = 0;
-                        if (!(!(var2 > var0))) {
-                            _fun97553_ip = 21;
-                            continue _fun97553
-                        }
-                    case 12:
-                        var1 = _closure1_slot0;
-                        _fun97553_ip = 28;
-                        continue _fun97553;
-                    case 21:
-                        var1 = _closure1_slot1;
-                    case 28:
-                        var0 = undefined;
-                        var0 = var1.bind(var0)(var2);
-                        return var0;
-                }
-            };
-        case 58:
-            var0 = arg4;
-            var0.exports = var1;
+            var0 = var1.Function;
+            var8 = var0.prototype;
+            var5 = 0;
+            var2 = var10[var5];
             var0 = undefined;
+            var7 = var9.bind(var0)(var2);
+            if (!var7) {
+                _fun97591_ip = 47;
+                continue _fun97591
+            }
+        case 35:
+            var1 = var1.Object;
+            var7 = var1.getOwnPropertyDescriptor;
+        case 47:
+            var1 = 1;
+            var1 = var10[var1];
+            var1 = var9.bind(var0)(var1);
+            var6 = 'name';
+            var4 = var1.bind(var0)(var8, var6);
+            var3 = var4;
+            if (!var4) {
+                _fun97591_ip = 99;
+                continue _fun97591
+            }
+        case 75:
+            var1 = function() {
+                var0 = undefined;
+                return var0;
+            };
+            var2 = var1.name;
+            var1 = 'something';
+            var3 = var1 === var2;
+        case 99:
+            var1 = var4;
+            if (!var1) {
+                _fun97591_ip = 150;
+                continue _fun97591
+            }
+        case 105:
+            var2 = var10[var5];
+            var2 = var9.bind(var0)(var2);
+            var2 = !var2;
+            if (var2) {
+                _fun97591_ip = 147;
+                continue _fun97591
+            }
+        case 120:
+            var5 = var10[var5];
+            var5 = var9.bind(var0)(var5);
+            if (!var5) {
+                _fun97591_ip = 144;
+                continue _fun97591
+            }
+        case 132:
+            var6 = var7.bind(var0)(var8, var6);
+            var5 = var6.configurable;
+        case 144:
+            var2 = var5;
+        case 147:
+            var1 = var2;
+        case 150:
+            var2 = {};
+            var2.EXISTS = var4;
+            var2.PROPER = var3;
+            var2.CONFIGURABLE = var1;
+            var1 = arg4;
+            var1.exports = var2;
             return var0;
     }
-})(undefined, undefined, undefined, undefined, undefined, undefined, []);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [12692, 12712]);

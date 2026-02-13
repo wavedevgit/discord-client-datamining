@@ -12,19 +12,19 @@ import kotlin.jvm.internal.Intrinsics;
 public final class d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final u f35537a;
+    private final u f36105a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final n0 f35538b;
+    private final n0 f36106b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final long f35539c;
+    private final long f36107c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Object f35540d;
+    private final Object f36108d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Map f35541e;
+    private final Map f36109e;
 
     /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
     public d(u runnableScheduler, n0 launcher) {
@@ -37,17 +37,17 @@ public final class d {
     public static final void d(d this$0, a0 token) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         Intrinsics.checkNotNullParameter(token, "$token");
-        this$0.f35538b.d(token, 3);
+        this$0.f36106b.d(token, 3);
     }
 
     public final void b(a0 token) {
         Runnable runnable;
         Intrinsics.checkNotNullParameter(token, "token");
-        synchronized (this.f35540d) {
-            runnable = (Runnable) this.f35541e.remove(token);
+        synchronized (this.f36108d) {
+            runnable = (Runnable) this.f36109e.remove(token);
         }
         if (runnable != null) {
-            this.f35537a.a(runnable);
+            this.f36105a.a(runnable);
         }
     }
 
@@ -59,20 +59,20 @@ public final class d {
                 d.d(d.this, token);
             }
         };
-        synchronized (this.f35540d) {
-            Runnable runnable2 = (Runnable) this.f35541e.put(token, runnable);
+        synchronized (this.f36108d) {
+            Runnable runnable2 = (Runnable) this.f36109e.put(token, runnable);
         }
-        this.f35537a.b(this.f35539c, runnable);
+        this.f36105a.b(this.f36107c, runnable);
     }
 
     public d(u runnableScheduler, n0 launcher, long j10) {
         Intrinsics.checkNotNullParameter(runnableScheduler, "runnableScheduler");
         Intrinsics.checkNotNullParameter(launcher, "launcher");
-        this.f35537a = runnableScheduler;
-        this.f35538b = launcher;
-        this.f35539c = j10;
-        this.f35540d = new Object();
-        this.f35541e = new LinkedHashMap();
+        this.f36105a = runnableScheduler;
+        this.f36106b = launcher;
+        this.f36107c = j10;
+        this.f36108d = new Object();
+        this.f36109e = new LinkedHashMap();
     }
 
     public /* synthetic */ d(u uVar, n0 n0Var, long j10, int i10, DefaultConstructorMarker defaultConstructorMarker) {

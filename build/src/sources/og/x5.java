@@ -5,7 +5,7 @@ import bj.c;
 final class x5 implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final x5 f39794a = new x5();
+    static final x5 f40362a = new x5();
 
     static {
         c.b a10 = bj.c.a("logEventKey");

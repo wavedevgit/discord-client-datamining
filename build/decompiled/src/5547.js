@@ -42,22 +42,22 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var6 = var7.assign;
     var5 = {};
     var4 = function arg0() {
-        _fun49106: for (var _fun49106_ip = 0;;) switch (_fun49106_ip) {
+        _fun49213: for (var _fun49213_ip = 0;;) switch (_fun49213_ip) {
             case 0:
                 var3 = arg0;
                 var4 = this;
                 var0 = var4.props;
                 var2 = var0.onStartShouldSetResponder;
                 if (var2) {
-                    _fun49106_ip = 40;
-                    continue _fun49106
+                    _fun49213_ip = 40;
+                    continue _fun49213
                 }
             case 20:
                 var1 = _closure1_slot1;
                 var0 = var1.call;
                 var0 = var0.bind(var1)(var4, var3);
-                _fun49106_ip = 47;
-                continue _fun49106;
+                _fun49213_ip = 47;
+                continue _fun49213;
             case 40:
                 var1 = undefined;
                 var0 = var2.bind(var1)(var3);
@@ -67,22 +67,22 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var5.touchableHandleStartShouldSetResponder = var4;
     var4 = function arg0() {
-        _fun49107: for (var _fun49107_ip = 0;;) switch (_fun49107_ip) {
+        _fun49214: for (var _fun49214_ip = 0;;) switch (_fun49214_ip) {
             case 0:
                 var3 = arg0;
                 var4 = this;
                 var0 = var4.props;
                 var2 = var0.onResponderTerminationRequest;
                 if (var2) {
-                    _fun49107_ip = 40;
-                    continue _fun49107
+                    _fun49214_ip = 40;
+                    continue _fun49214
                 }
             case 20:
                 var1 = _closure1_slot2;
                 var0 = var1.call;
                 var0 = var0.bind(var1)(var4, var3);
-                _fun49107_ip = 47;
-                continue _fun49107;
+                _fun49214_ip = 47;
+                continue _fun49214;
             case 40:
                 var1 = undefined;
                 var0 = var2.bind(var1)(var3);
@@ -92,22 +92,22 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var5.touchableHandleResponderTerminationRequest = var4;
     var4 = function arg0() {
-        _fun49108: for (var _fun49108_ip = 0;;) switch (_fun49108_ip) {
+        _fun49215: for (var _fun49215_ip = 0;;) switch (_fun49215_ip) {
             case 0:
                 var3 = arg0;
                 var4 = this;
                 var0 = var4.props;
                 var2 = var0.onResponderGrant;
                 if (var2) {
-                    _fun49108_ip = 40;
-                    continue _fun49108
+                    _fun49215_ip = 40;
+                    continue _fun49215
                 }
             case 20:
                 var1 = _closure1_slot3;
                 var0 = var1.call;
                 var0 = var0.bind(var1)(var4, var3);
-                _fun49108_ip = 47;
-                continue _fun49108;
+                _fun49215_ip = 47;
+                continue _fun49215;
             case 40:
                 var1 = undefined;
                 var0 = var2.bind(var1)(var3);
@@ -117,22 +117,22 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var5.touchableHandleResponderGrant = var4;
     var4 = function arg0() {
-        _fun49109: for (var _fun49109_ip = 0;;) switch (_fun49109_ip) {
+        _fun49216: for (var _fun49216_ip = 0;;) switch (_fun49216_ip) {
             case 0:
                 var3 = arg0;
                 var4 = this;
                 var0 = var4.props;
                 var2 = var0.onResponderMove;
                 if (var2) {
-                    _fun49109_ip = 40;
-                    continue _fun49109
+                    _fun49216_ip = 40;
+                    continue _fun49216
                 }
             case 20:
                 var1 = _closure1_slot4;
                 var0 = var1.call;
                 var0 = var0.bind(var1)(var4, var3);
-                _fun49109_ip = 47;
-                continue _fun49109;
+                _fun49216_ip = 47;
+                continue _fun49216;
             case 40:
                 var1 = undefined;
                 var0 = var2.bind(var1)(var3);
@@ -142,22 +142,22 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var5.touchableHandleResponderMove = var4;
     var4 = function arg0() {
-        _fun49110: for (var _fun49110_ip = 0;;) switch (_fun49110_ip) {
+        _fun49217: for (var _fun49217_ip = 0;;) switch (_fun49217_ip) {
             case 0:
                 var3 = arg0;
                 var4 = this;
                 var0 = var4.props;
                 var2 = var0.onResponderRelease;
                 if (var2) {
-                    _fun49110_ip = 40;
-                    continue _fun49110
+                    _fun49217_ip = 40;
+                    continue _fun49217
                 }
             case 20:
                 var1 = _closure1_slot5;
                 var0 = var1.call;
                 var0 = var0.bind(var1)(var4, var3);
-                _fun49110_ip = 47;
-                continue _fun49110;
+                _fun49217_ip = 47;
+                continue _fun49217;
             case 40:
                 var1 = undefined;
                 var0 = var2.bind(var1)(var3);
@@ -167,22 +167,22 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var5.touchableHandleResponderRelease = var4;
     var4 = function arg0() {
-        _fun49111: for (var _fun49111_ip = 0;;) switch (_fun49111_ip) {
+        _fun49218: for (var _fun49218_ip = 0;;) switch (_fun49218_ip) {
             case 0:
                 var3 = arg0;
                 var4 = this;
                 var0 = var4.props;
                 var2 = var0.onResponderTerminate;
                 if (var2) {
-                    _fun49111_ip = 40;
-                    continue _fun49111
+                    _fun49218_ip = 40;
+                    continue _fun49218
                 }
             case 20:
                 var1 = _closure1_slot6;
                 var0 = var1.call;
                 var0 = var0.bind(var1)(var4, var3);
-                _fun49111_ip = 47;
-                continue _fun49111;
+                _fun49218_ip = 47;
+                continue _fun49218;
             case 40:
                 var1 = undefined;
                 var0 = var2.bind(var1)(var3);
@@ -192,14 +192,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var5.touchableHandleResponderTerminate = var4;
     var4 = function arg0() {
-        _fun49112: for (var _fun49112_ip = 0;;) switch (_fun49112_ip) {
+        _fun49219: for (var _fun49219_ip = 0;;) switch (_fun49219_ip) {
             case 0:
                 var0 = this;
                 var0 = var0.props;
                 var2 = var0.onPress;
                 if (!var2) {
-                    _fun49112_ip = 26;
-                    continue _fun49112
+                    _fun49219_ip = 26;
+                    continue _fun49219
                 }
             case 16:
                 var1 = undefined;
@@ -212,14 +212,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var5.touchableHandlePress = var4;
     var4 = function arg0() {
-        _fun49113: for (var _fun49113_ip = 0;;) switch (_fun49113_ip) {
+        _fun49220: for (var _fun49220_ip = 0;;) switch (_fun49220_ip) {
             case 0:
                 var0 = this;
                 var0 = var0.props;
                 var2 = var0.onPressIn;
                 if (!var2) {
-                    _fun49113_ip = 27;
-                    continue _fun49113
+                    _fun49220_ip = 27;
+                    continue _fun49220
                 }
             case 17:
                 var1 = undefined;
@@ -232,14 +232,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var5.touchableHandleActivePressIn = var4;
     var4 = function arg0() {
-        _fun49114: for (var _fun49114_ip = 0;;) switch (_fun49114_ip) {
+        _fun49221: for (var _fun49221_ip = 0;;) switch (_fun49221_ip) {
             case 0:
                 var0 = this;
                 var0 = var0.props;
                 var2 = var0.onPressOut;
                 if (!var2) {
-                    _fun49114_ip = 27;
-                    continue _fun49114
+                    _fun49221_ip = 27;
+                    continue _fun49221
                 }
             case 17:
                 var1 = undefined;
@@ -252,14 +252,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var5.touchableHandleActivePressOut = var4;
     var4 = function arg0() {
-        _fun49115: for (var _fun49115_ip = 0;;) switch (_fun49115_ip) {
+        _fun49222: for (var _fun49222_ip = 0;;) switch (_fun49222_ip) {
             case 0:
                 var0 = this;
                 var0 = var0.props;
                 var2 = var0.onLongPress;
                 if (!var2) {
-                    _fun49115_ip = 27;
-                    continue _fun49115
+                    _fun49222_ip = 27;
+                    continue _fun49222
                 }
             case 17:
                 var1 = undefined;
@@ -272,14 +272,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var5.touchableHandleLongPress = var4;
     var4 = function() {
-        _fun49116: for (var _fun49116_ip = 0;;) switch (_fun49116_ip) {
+        _fun49223: for (var _fun49223_ip = 0;;) switch (_fun49223_ip) {
             case 0:
                 var0 = this;
                 var0 = var0.props;
                 var0 = var0.pressRetentionOffset;
                 if (var0) {
-                    _fun49116_ip = 24;
-                    continue _fun49116
+                    _fun49223_ip = 24;
+                    continue _fun49223
                 }
             case 17:
                 var0 = _closure1_slot0;
@@ -296,14 +296,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var5.touchableGetHitSlop = var4;
     var4 = function() {
-        _fun49118: for (var _fun49118_ip = 0;;) switch (_fun49118_ip) {
+        _fun49225: for (var _fun49225_ip = 0;;) switch (_fun49225_ip) {
             case 0:
                 var0 = this;
                 var0 = var0.props;
                 var0 = var0.delayPressIn;
                 if (var0) {
-                    _fun49118_ip = 19;
-                    continue _fun49118
+                    _fun49225_ip = 19;
+                    continue _fun49225
                 }
             case 17:
                 var0 = 0;
@@ -313,20 +313,20 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var5.touchableGetHighlightDelayMS = var4;
     var4 = function() {
-        _fun49119: for (var _fun49119_ip = 0;;) switch (_fun49119_ip) {
+        _fun49226: for (var _fun49226_ip = 0;;) switch (_fun49226_ip) {
             case 0:
                 var0 = this;
                 var0 = var0.props;
                 var1 = var0.delayLongPress;
                 var0 = 0;
                 if (!(var0 !== var1)) {
-                    _fun49119_ip = 32;
-                    continue _fun49119
+                    _fun49226_ip = 32;
+                    continue _fun49226
                 }
             case 20:
                 if (var1) {
-                    _fun49119_ip = 29;
-                    continue _fun49119
+                    _fun49226_ip = 29;
+                    continue _fun49226
                 }
             case 23:
                 var1 = 500;
@@ -338,14 +338,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var5.touchableGetLongPressDelayMS = var4;
     var4 = function() {
-        _fun49120: for (var _fun49120_ip = 0;;) switch (_fun49120_ip) {
+        _fun49227: for (var _fun49227_ip = 0;;) switch (_fun49227_ip) {
             case 0:
                 var0 = this;
                 var0 = var0.props;
                 var0 = var0.delayPressOut;
                 if (var0) {
-                    _fun49120_ip = 19;
-                    continue _fun49120
+                    _fun49227_ip = 19;
+                    continue _fun49227
                 }
             case 17:
                 var0 = 0;
@@ -373,7 +373,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var3.length;
     var _closure1_slot11 = var3;
     var1 = function arg0() {
-        _fun49122: for (var _fun49122_ip = 0;;) switch (_fun49122_ip) {
+        _fun49229: for (var _fun49229_ip = 0;;) switch (_fun49229_ip) {
             case 0:
                 var2 = arg0;
                 var1 = _closure1_slot11;
@@ -381,8 +381,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = var4 < var1;
                 var3 = 'function';
                 if (!var1) {
-                    _fun49122_ip = 74;
-                    continue _fun49122
+                    _fun49229_ip = 74;
+                    continue _fun49229
                 }
             case 23:
                 var1 = _closure1_slot9;
@@ -392,8 +392,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var6 = typeof var7;
                 var1 = var7;
                 if (!(var3 === var6)) {
-                    _fun49122_ip = 59;
-                    continue _fun49122
+                    _fun49229_ip = 59;
+                    continue _fun49229
                 }
             case 49:
                 var6 = var7.bind;
@@ -403,8 +403,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var4 = var4 + 1;
                 var1 = _closure1_slot11;
                 if (var4 < var1) {
-                    _fun49122_ip = 23;
-                    continue _fun49122
+                    _fun49229_ip = 23;
+                    continue _fun49229
                 }
             case 74:
                 var1 = _closure1_slot7;

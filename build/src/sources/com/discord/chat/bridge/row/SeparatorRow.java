@@ -120,10 +120,10 @@ public final class SeparatorRow extends Row {
         compositeEncoder.y(serialDescriptor, 3, separatorRow.f9275id);
         compositeEncoder.w(serialDescriptor, 4, separatorRow.color);
         if (compositeEncoder.z(serialDescriptor, 5) || separatorRow.scrollTo != null) {
-            compositeEncoder.o(serialDescriptor, 5, h.f49997a, separatorRow.scrollTo);
+            compositeEncoder.o(serialDescriptor, 5, h.f50565a, separatorRow.scrollTo);
         }
         if (compositeEncoder.z(serialDescriptor, 6) || separatorRow.isBeforeContent != null) {
-            compositeEncoder.o(serialDescriptor, 6, h.f49997a, separatorRow.isBeforeContent);
+            compositeEncoder.o(serialDescriptor, 6, h.f50565a, separatorRow.isBeforeContent);
         }
         if (compositeEncoder.z(serialDescriptor, 7) || separatorRow.summary != null) {
             compositeEncoder.o(serialDescriptor, 7, Summary$$serializer.INSTANCE, separatorRow.summary);

@@ -17,13 +17,13 @@ import wp.x5;
 public final class f1 implements gn.c0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final /* synthetic */ gn.f f53084a;
+    private final /* synthetic */ gn.f f53652a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final fo.t f53085b;
+    private final fo.t f53653b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final fo.w0 f53086c;
+    private final fo.w0 f53654c;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
@@ -41,14 +41,14 @@ public final class f1 implements gn.c0 {
         @Override // kotlin.jvm.functions.Function2
         public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2) {
             a((x5.d.a) obj, (gn.a0) obj2);
-            return Unit.f31988a;
+            return Unit.f32556a;
         }
     }
 
     public f1(final fo.t cameraPreview, final fo.w0 selfieDirectionFeed) {
         Intrinsics.checkNotNullParameter(cameraPreview, "cameraPreview");
         Intrinsics.checkNotNullParameter(selfieDirectionFeed, "selfieDirectionFeed");
-        this.f53084a = new gn.f(Reflection.getOrCreateKotlinClass(x5.d.a.class), new Function4() { // from class: wp.e1
+        this.f53652a = new gn.f(Reflection.getOrCreateKotlinClass(x5.d.a.class), new Function4() { // from class: wp.e1
             @Override // kotlin.jvm.functions.Function4
             public final Object invoke(Object obj, Object obj2, Object obj3, Object obj4) {
                 View c10;
@@ -56,8 +56,8 @@ public final class f1 implements gn.c0 {
                 return c10;
             }
         });
-        this.f53085b = cameraPreview;
-        this.f53086c = selfieDirectionFeed;
+        this.f53653b = cameraPreview;
+        this.f53654c = selfieDirectionFeed;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -70,7 +70,7 @@ public final class f1 implements gn.c0 {
             context2 = context;
         }
         xp.c c10 = xp.c.c(LayoutInflater.from(context2).cloneInContext(context));
-        kq.c.a(initialViewEnvironment, androidx.core.content.a.c(c10.getRoot().getContext(), t0.f53350a));
+        kq.c.a(initialViewEnvironment, androidx.core.content.a.c(c10.getRoot().getContext(), t0.f53918a));
         ConstraintLayout root = c10.getRoot();
         Intrinsics.checkNotNullExpressionValue(root, "getRoot(...)");
         Intrinsics.checkNotNull(c10);
@@ -86,11 +86,11 @@ public final class f1 implements gn.c0 {
         Intrinsics.checkNotNullParameter(initialRendering, "initialRendering");
         Intrinsics.checkNotNullParameter(initialViewEnvironment, "initialViewEnvironment");
         Intrinsics.checkNotNullParameter(contextForNewView, "contextForNewView");
-        return this.f53084a.a(initialRendering, initialViewEnvironment, contextForNewView, viewGroup);
+        return this.f53652a.a(initialRendering, initialViewEnvironment, contextForNewView, viewGroup);
     }
 
     @Override // gn.c0
     public KClass getType() {
-        return this.f53084a.getType();
+        return this.f53652a.getType();
     }
 }

@@ -7,24 +7,24 @@ import kotlin.jvm.internal.Intrinsics;
 public final class m {
 
     /* renamed from: a  reason: collision with root package name */
-    private final l f27612a;
+    private final l f28180a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final List f27613b;
+    private final List f28181b;
 
     public m(l primaryChoice, List backupChoices) {
         Intrinsics.checkNotNullParameter(primaryChoice, "primaryChoice");
         Intrinsics.checkNotNullParameter(backupChoices, "backupChoices");
-        this.f27612a = primaryChoice;
-        this.f27613b = backupChoices;
+        this.f28180a = primaryChoice;
+        this.f28181b = backupChoices;
     }
 
     public final List a() {
-        return CollectionsKt.L0(CollectionsKt.e(this.f27612a), this.f27613b);
+        return CollectionsKt.L0(CollectionsKt.e(this.f28180a), this.f28181b);
     }
 
     public final l b() {
-        return this.f27612a;
+        return this.f28180a;
     }
 
     public boolean equals(Object obj) {
@@ -35,19 +35,19 @@ public final class m {
             return false;
         }
         m mVar = (m) obj;
-        if (Intrinsics.areEqual(this.f27612a, mVar.f27612a) && Intrinsics.areEqual(this.f27613b, mVar.f27613b)) {
+        if (Intrinsics.areEqual(this.f28180a, mVar.f28180a) && Intrinsics.areEqual(this.f28181b, mVar.f28181b)) {
             return true;
         }
         return false;
     }
 
     public int hashCode() {
-        return (this.f27612a.hashCode() * 31) + this.f27613b.hashCode();
+        return (this.f28180a.hashCode() * 31) + this.f28181b.hashCode();
     }
 
     public String toString() {
-        l lVar = this.f27612a;
-        List list = this.f27613b;
+        l lVar = this.f28180a;
+        List list = this.f28181b;
         return "CameraChoices(primaryChoice=" + lVar + ", backupChoices=" + list + ")";
     }
 }

@@ -87,7 +87,7 @@ public final class StaticChannelMentionType {
         @Override // kotlinx.serialization.KSerializer, qt.o, kotlinx.serialization.DeserializationStrategy
         @NotNull
         public SerialDescriptor getDescriptor() {
-            return st.j.b("StaticChannelMentionType", e.i.f48369a);
+            return st.j.b("StaticChannelMentionType", e.i.f48937a);
         }
 
         @Override // kotlinx.serialization.DeserializationStrategy

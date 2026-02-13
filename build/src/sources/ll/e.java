@@ -3,14 +3,14 @@ package ll;
 public class e implements h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f35899a;
+    private final String f36467a;
 
     public e(String str) {
-        this.f35899a = str;
+        this.f36467a = str;
     }
 
     @Override // ll.h
     public void a(ml.g gVar) {
-        gVar.q(this.f35899a);
+        gVar.q(this.f36467a);
     }
 }

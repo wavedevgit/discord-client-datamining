@@ -5,10 +5,10 @@ import androidx.activity.result.ActivityResultLauncher;
 public final class x implements lr.d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final u f36592a;
+    private final u f37160a;
 
     public x(u uVar) {
-        this.f36592a = uVar;
+        this.f37160a = uVar;
     }
 
     public static x a(u uVar) {
@@ -22,6 +22,6 @@ public final class x implements lr.d {
     @Override // javax.inject.Provider
     /* renamed from: b */
     public ActivityResultLauncher get() {
-        return c(this.f36592a);
+        return c(this.f37160a);
     }
 }

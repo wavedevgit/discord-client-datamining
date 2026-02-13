@@ -11,10 +11,10 @@ import wu.j;
 public final class g implements k {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final b f53998a = new b(null);
+    public static final b f54566a = new b(null);
 
     /* renamed from: b  reason: collision with root package name */
-    private static final j.a f53999b = new a();
+    private static final j.a f54567b = new a();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a implements j.a {
@@ -24,7 +24,7 @@ public final class g implements k {
         @Override // wu.j.a
         public boolean b(SSLSocket sslSocket) {
             Intrinsics.checkNotNullParameter(sslSocket, "sslSocket");
-            vu.c.f51995e.b();
+            vu.c.f52563e.b();
             return false;
         }
 
@@ -42,7 +42,7 @@ public final class g implements k {
         }
 
         public final j.a a() {
-            return g.f53999b;
+            return g.f54567b;
         }
 
         private b() {
@@ -51,7 +51,7 @@ public final class g implements k {
 
     @Override // wu.k
     public boolean a() {
-        return vu.c.f51995e.b();
+        return vu.c.f52563e.b();
     }
 
     @Override // wu.k
@@ -83,7 +83,7 @@ public final class g implements k {
         if (b(sslSocket)) {
             BCSSLSocket bCSSLSocket = (BCSSLSocket) sslSocket;
             BCSSLParameters parameters = bCSSLSocket.getParameters();
-            parameters.setApplicationProtocols((String[]) vu.h.f52016a.b(protocols).toArray(new String[0]));
+            parameters.setApplicationProtocols((String[]) vu.h.f52584a.b(protocols).toArray(new String[0]));
             bCSSLSocket.setParameters(parameters);
         }
     }

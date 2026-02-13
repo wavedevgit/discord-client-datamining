@@ -15,74 +15,74 @@ import jc.b;
 public class r {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Context f27078a;
+    private final Context f27646a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final bc.e f27079b;
+    private final bc.e f27647b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final ic.d f27080c;
+    private final ic.d f27648c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final x f27081d;
+    private final x f27649d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Executor f27082e;
+    private final Executor f27650e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final jc.b f27083f;
+    private final jc.b f27651f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final kc.a f27084g;
+    private final kc.a f27652g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final kc.a f27085h;
+    private final kc.a f27653h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final ic.c f27086i;
+    private final ic.c f27654i;
 
     public r(Context context, bc.e eVar, ic.d dVar, x xVar, Executor executor, jc.b bVar, kc.a aVar, kc.a aVar2, ic.c cVar) {
-        this.f27078a = context;
-        this.f27079b = eVar;
-        this.f27080c = dVar;
-        this.f27081d = xVar;
-        this.f27082e = executor;
-        this.f27083f = bVar;
-        this.f27084g = aVar;
-        this.f27085h = aVar2;
-        this.f27086i = cVar;
+        this.f27646a = context;
+        this.f27647b = eVar;
+        this.f27648c = dVar;
+        this.f27649d = xVar;
+        this.f27650e = executor;
+        this.f27651f = bVar;
+        this.f27652g = aVar;
+        this.f27653h = aVar2;
+        this.f27654i = cVar;
     }
 
     public static /* synthetic */ Object b(r rVar, Iterable iterable, ac.o oVar, long j10) {
-        rVar.f27080c.T0(iterable);
-        rVar.f27080c.K1(oVar, rVar.f27084g.a() + j10);
+        rVar.f27648c.T0(iterable);
+        rVar.f27648c.K1(oVar, rVar.f27652g.a() + j10);
         return null;
     }
 
     public static /* synthetic */ Object c(r rVar) {
-        rVar.f27086i.a();
+        rVar.f27654i.a();
         return null;
     }
 
     public static /* synthetic */ Object e(r rVar, Iterable iterable) {
-        rVar.f27080c.K(iterable);
+        rVar.f27648c.K(iterable);
         return null;
     }
 
     public static /* synthetic */ Object f(r rVar, ac.o oVar, int i10) {
-        rVar.f27081d.b(oVar, i10 + 1);
+        rVar.f27649d.b(oVar, i10 + 1);
         return null;
     }
 
     public static /* synthetic */ Object g(r rVar, ac.o oVar, long j10) {
-        rVar.f27080c.K1(oVar, rVar.f27084g.a() + j10);
+        rVar.f27648c.K1(oVar, rVar.f27652g.a() + j10);
         return null;
     }
 
     public static /* synthetic */ Object h(r rVar, Map map) {
         rVar.getClass();
         for (Map.Entry entry : map.entrySet()) {
-            rVar.f27086i.i(((Integer) entry.getValue()).intValue(), c.b.INVALID_PAYLOD, (String) entry.getKey());
+            rVar.f27654i.i(((Integer) entry.getValue()).intValue(), c.b.INVALID_PAYLOD, (String) entry.getKey());
         }
         return null;
     }
@@ -91,8 +91,8 @@ public class r {
         rVar.getClass();
         try {
             try {
-                jc.b bVar = rVar.f27083f;
-                final ic.d dVar = rVar.f27080c;
+                jc.b bVar = rVar.f27651f;
+                final ic.d dVar = rVar.f27648c;
                 Objects.requireNonNull(dVar);
                 bVar.m(new b.a() { // from class: hc.i
                     @Override // jc.b.a
@@ -101,7 +101,7 @@ public class r {
                     }
                 });
                 if (!rVar.k()) {
-                    rVar.f27083f.m(new b.a() { // from class: hc.j
+                    rVar.f27651f.m(new b.a() { // from class: hc.j
                         @Override // jc.b.a
                         public final Object execute() {
                             return r.f(r.this, oVar, i10);
@@ -112,7 +112,7 @@ public class r {
                 }
                 runnable.run();
             } catch (jc.a unused) {
-                rVar.f27081d.b(oVar, i10 + 1);
+                rVar.f27649d.b(oVar, i10 + 1);
                 runnable.run();
             }
         } catch (Throwable th2) {
@@ -122,10 +122,10 @@ public class r {
     }
 
     public ac.i j(bc.m mVar) {
-        jc.b bVar = this.f27083f;
-        final ic.c cVar = this.f27086i;
+        jc.b bVar = this.f27651f;
+        final ic.c cVar = this.f27654i;
         Objects.requireNonNull(cVar);
-        return mVar.a(ac.i.a().i(this.f27084g.a()).k(this.f27085h.a()).j("GDT_CLIENT_METRICS").h(new ac.h(yb.c.b("proto"), ((dc.a) bVar.m(new b.a() { // from class: hc.h
+        return mVar.a(ac.i.a().i(this.f27652g.a()).k(this.f27653h.a()).j("GDT_CLIENT_METRICS").h(new ac.h(yb.c.b("proto"), ((dc.a) bVar.m(new b.a() { // from class: hc.h
             @Override // jc.b.a
             public final Object execute() {
                 return ic.c.this.h();
@@ -134,7 +134,7 @@ public class r {
     }
 
     boolean k() {
-        NetworkInfo activeNetworkInfo = ((ConnectivityManager) this.f27078a.getSystemService("connectivity")).getActiveNetworkInfo();
+        NetworkInfo activeNetworkInfo = ((ConnectivityManager) this.f27646a.getSystemService("connectivity")).getActiveNetworkInfo();
         if (activeNetworkInfo != null && activeNetworkInfo.isConnected()) {
             return true;
         }
@@ -143,22 +143,22 @@ public class r {
 
     public bc.g l(final ac.o oVar, int i10) {
         bc.g b10;
-        bc.m a10 = this.f27079b.a(oVar.b());
+        bc.m a10 = this.f27647b.a(oVar.b());
         bc.g e10 = bc.g.e(0L);
         final long j10 = 0;
-        while (((Boolean) this.f27083f.m(new b.a() { // from class: hc.k
+        while (((Boolean) this.f27651f.m(new b.a() { // from class: hc.k
             @Override // jc.b.a
             public final Object execute() {
                 Boolean valueOf;
-                valueOf = Boolean.valueOf(r.this.f27080c.N1(oVar));
+                valueOf = Boolean.valueOf(r.this.f27648c.N1(oVar));
                 return valueOf;
             }
         })).booleanValue()) {
-            final Iterable<ic.k> iterable = (Iterable) this.f27083f.m(new b.a() { // from class: hc.l
+            final Iterable<ic.k> iterable = (Iterable) this.f27651f.m(new b.a() { // from class: hc.l
                 @Override // jc.b.a
                 public final Object execute() {
                     Iterable n22;
-                    n22 = r.this.f27080c.n2(oVar);
+                    n22 = r.this.f27648c.n2(oVar);
                     return n22;
                 }
             });
@@ -181,17 +181,17 @@ public class r {
             e10 = b10;
             if (e10.c() == g.a.TRANSIENT_ERROR) {
                 final ac.o oVar2 = oVar;
-                this.f27083f.m(new b.a() { // from class: hc.m
+                this.f27651f.m(new b.a() { // from class: hc.m
                     @Override // jc.b.a
                     public final Object execute() {
                         return r.b(r.this, iterable, oVar2, j10);
                     }
                 });
-                this.f27081d.a(oVar2, i10 + 1, true);
+                this.f27649d.a(oVar2, i10 + 1, true);
                 return e10;
             }
             ac.o oVar3 = oVar;
-            this.f27083f.m(new b.a() { // from class: hc.n
+            this.f27651f.m(new b.a() { // from class: hc.n
                 @Override // jc.b.a
                 public final Object execute() {
                     return r.e(r.this, iterable);
@@ -200,7 +200,7 @@ public class r {
             if (e10.c() == g.a.OK) {
                 long max = Math.max(j10, e10.b());
                 if (oVar3.e()) {
-                    this.f27083f.m(new b.a() { // from class: hc.o
+                    this.f27651f.m(new b.a() { // from class: hc.o
                         @Override // jc.b.a
                         public final Object execute() {
                             return r.c(r.this);
@@ -218,7 +218,7 @@ public class r {
                         hashMap.put(j11, Integer.valueOf(((Integer) hashMap.get(j11)).intValue() + 1));
                     }
                 }
-                this.f27083f.m(new b.a() { // from class: hc.p
+                this.f27651f.m(new b.a() { // from class: hc.p
                     @Override // jc.b.a
                     public final Object execute() {
                         return r.h(r.this, hashMap);
@@ -228,7 +228,7 @@ public class r {
             oVar = oVar3;
         }
         final ac.o oVar4 = oVar;
-        this.f27083f.m(new b.a() { // from class: hc.q
+        this.f27651f.m(new b.a() { // from class: hc.q
             @Override // jc.b.a
             public final Object execute() {
                 return r.g(r.this, oVar4, j10);
@@ -238,7 +238,7 @@ public class r {
     }
 
     public void m(final ac.o oVar, final int i10, final Runnable runnable) {
-        this.f27082e.execute(new Runnable() { // from class: hc.g
+        this.f27650e.execute(new Runnable() { // from class: hc.g
             @Override // java.lang.Runnable
             public final void run() {
                 r.i(r.this, oVar, i10, runnable);

@@ -34,7 +34,7 @@ public final class b {
 
     public static /* synthetic */ n0 e(b bVar, KClass kClass, String str, int i10, Object obj) {
         if ((i10 & 2) != 0) {
-            str = h.f36129a.c(kClass);
+            str = h.f36697a.c(kClass);
         }
         return bVar.d(kClass, str);
     }

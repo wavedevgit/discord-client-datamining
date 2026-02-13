@@ -21,32 +21,32 @@ import java.util.concurrent.ConcurrentMap;
 public final class e {
 
     /* renamed from: e  reason: collision with root package name */
-    private static final ConcurrentMap f27709e = new ConcurrentHashMap(32);
+    private static final ConcurrentMap f28277e = new ConcurrentHashMap(32);
 
     /* renamed from: f  reason: collision with root package name */
-    private static final ReferenceQueue f27710f = new ReferenceQueue();
+    private static final ReferenceQueue f28278f = new ReferenceQueue();
 
     /* renamed from: a  reason: collision with root package name */
-    private final e f27711a;
+    private final e f28279a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Map f27712b;
+    private final Map f28280b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final String f27713c;
+    private final String f28281c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Locale f27714d;
+    private final Locale f28282d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     private static class a extends SoftReference {
 
         /* renamed from: a  reason: collision with root package name */
-        private b f27715a;
+        private b f28283a;
 
         a(e eVar, b bVar) {
-            super(eVar, e.f27710f);
-            this.f27715a = bVar;
+            super(eVar, e.f28278f);
+            this.f28283a = bVar;
         }
     }
 
@@ -54,14 +54,14 @@ public final class e {
     private static class b {
 
         /* renamed from: a  reason: collision with root package name */
-        private final String f27716a;
+        private final String f28284a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final Locale f27717b;
+        private final Locale f28285b;
 
         b(String str, Locale locale) {
-            this.f27716a = str;
-            this.f27717b = locale;
+            this.f28284a = str;
+            this.f28285b = locale;
         }
 
         public boolean equals(Object obj) {
@@ -70,7 +70,7 @@ public final class e {
             }
             if (obj instanceof b) {
                 b bVar = (b) obj;
-                if (this.f27716a.equals(bVar.f27716a) && this.f27717b.equals(bVar.f27717b)) {
+                if (this.f28284a.equals(bVar.f28284a) && this.f28285b.equals(bVar.f28285b)) {
                     return true;
                 }
             }
@@ -78,19 +78,19 @@ public final class e {
         }
 
         public int hashCode() {
-            return (this.f27716a.hashCode() << 3) ^ this.f27717b.hashCode();
+            return (this.f28284a.hashCode() << 3) ^ this.f28285b.hashCode();
         }
 
         public String toString() {
-            return this.f27716a + "/" + this.f27717b;
+            return this.f28284a + "/" + this.f28285b;
         }
     }
 
     private e(g gVar, String str, Locale locale) {
         int i10;
-        this.f27711a = null;
-        this.f27713c = str;
-        this.f27714d = locale;
+        this.f28279a = null;
+        this.f28281c = str;
+        this.f28282d = locale;
         HashMap hashMap = new HashMap();
         while (true) {
             String h10 = gVar.h();
@@ -112,7 +112,7 @@ public final class e {
                     }
                 }
             } else {
-                this.f27712b = Collections.unmodifiableMap(hashMap);
+                this.f28280b = Collections.unmodifiableMap(hashMap);
                 return;
             }
         }
@@ -144,16 +144,16 @@ public final class e {
         if (!str.isEmpty()) {
             if (locale != null) {
                 b bVar = new b(str, locale);
-                a aVar = (a) f27709e.get(bVar);
+                a aVar = (a) f28277e.get(bVar);
                 if (aVar != null && (eVar = (e) aVar.get()) != null) {
                     return eVar;
                 }
                 while (true) {
-                    Reference poll = f27710f.poll();
+                    Reference poll = f28278f.poll();
                     if (poll == null) {
                         break;
                     }
-                    f27709e.remove(((a) poll).f27715a);
+                    f28277e.remove(((a) poll).f28283a);
                 }
                 ArrayList arrayList = new ArrayList();
                 for (Locale locale2 : c(locale)) {
@@ -172,7 +172,7 @@ public final class e {
                         arrayList.set(i11, ((e) arrayList.get(i11)).k((e) arrayList.get(size)));
                     }
                     e eVar2 = (e) arrayList.get(0);
-                    f27709e.putIfAbsent(bVar, new a(eVar2, bVar));
+                    f28277e.putIfAbsent(bVar, new a(eVar2, bVar));
                     return eVar2;
                 }
                 throw new MissingResourceException("Cannot find resource bundle for: " + j(str, locale), e.class.getName(), "");
@@ -250,8 +250,8 @@ public final class e {
     public boolean b(String str) {
         if (str != null) {
             e eVar = this;
-            while (((String) eVar.f27712b.get(str)) == null) {
-                eVar = eVar.f27711a;
+            while (((String) eVar.f28280b.get(str)) == null) {
+                eVar = eVar.f28279a;
                 if (eVar == null) {
                     return false;
                 }
@@ -262,35 +262,35 @@ public final class e {
     }
 
     public Set d() {
-        return this.f27712b.keySet();
+        return this.f28280b.keySet();
     }
 
     public Locale e() {
-        return this.f27714d;
+        return this.f28282d;
     }
 
     public String f(String str) {
         if (str != null) {
             e eVar = this;
             do {
-                String str2 = (String) eVar.f27712b.get(str);
+                String str2 = (String) eVar.f28280b.get(str);
                 if (str2 != null) {
                     return str2;
                 }
-                eVar = eVar.f27711a;
+                eVar = eVar.f28279a;
             } while (eVar != null);
-            throw new MissingResourceException("Cannot find property resource for: " + j(this.f27713c, this.f27714d) + "=>" + str, e.class.getName(), str);
+            throw new MissingResourceException("Cannot find property resource for: " + j(this.f28281c, this.f28282d) + "=>" + str, e.class.getName(), str);
         }
         throw new NullPointerException("Missing resource key.");
     }
 
     public Set g() {
-        HashSet hashSet = new HashSet(this.f27712b.keySet());
+        HashSet hashSet = new HashSet(this.f28280b.keySet());
         e eVar = this;
         while (true) {
-            eVar = eVar.f27711a;
+            eVar = eVar.f28279a;
             if (eVar != null) {
-                hashSet.addAll(eVar.f27712b.keySet());
+                hashSet.addAll(eVar.f28280b.keySet());
             } else {
                 return Collections.unmodifiableSet(hashSet);
             }
@@ -298,9 +298,9 @@ public final class e {
     }
 
     private e(e eVar, e eVar2) {
-        this.f27711a = eVar2;
-        this.f27713c = eVar.f27713c;
-        this.f27714d = eVar.f27714d;
-        this.f27712b = eVar.f27712b;
+        this.f28279a = eVar2;
+        this.f28281c = eVar.f28281c;
+        this.f28282d = eVar.f28282d;
+        this.f28280b = eVar.f28280b;
     }
 }

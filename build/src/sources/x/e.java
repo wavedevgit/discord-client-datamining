@@ -7,29 +7,29 @@ import x.l1;
 final class e extends l1.a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Size f54036a;
+    private final Size f54604a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Rect f54037b;
+    private final Rect f54605b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final a0.e0 f54038c;
+    private final a0.e0 f54606c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f54039d;
+    private final int f54607d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final boolean f54040e;
+    private final boolean f54608e;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public e(Size size, Rect rect, a0.e0 e0Var, int i10, boolean z10) {
         if (size != null) {
-            this.f54036a = size;
+            this.f54604a = size;
             if (rect != null) {
-                this.f54037b = rect;
-                this.f54038c = e0Var;
-                this.f54039d = i10;
-                this.f54040e = z10;
+                this.f54605b = rect;
+                this.f54606c = e0Var;
+                this.f54607d = i10;
+                this.f54608e = z10;
                 return;
             }
             throw new NullPointerException("Null inputCropRect");
@@ -39,27 +39,27 @@ final class e extends l1.a {
 
     @Override // x.l1.a
     public a0.e0 a() {
-        return this.f54038c;
+        return this.f54606c;
     }
 
     @Override // x.l1.a
     public Rect b() {
-        return this.f54037b;
+        return this.f54605b;
     }
 
     @Override // x.l1.a
     public Size c() {
-        return this.f54036a;
+        return this.f54604a;
     }
 
     @Override // x.l1.a
     public boolean d() {
-        return this.f54040e;
+        return this.f54608e;
     }
 
     @Override // x.l1.a
     public int e() {
-        return this.f54039d;
+        return this.f54607d;
     }
 
     public boolean equals(Object obj) {
@@ -69,7 +69,7 @@ final class e extends l1.a {
         }
         if (obj instanceof l1.a) {
             l1.a aVar = (l1.a) obj;
-            if (this.f54036a.equals(aVar.c()) && this.f54037b.equals(aVar.b()) && ((e0Var = this.f54038c) != null ? e0Var.equals(aVar.a()) : aVar.a() == null) && this.f54039d == aVar.e() && this.f54040e == aVar.d()) {
+            if (this.f54604a.equals(aVar.c()) && this.f54605b.equals(aVar.b()) && ((e0Var = this.f54606c) != null ? e0Var.equals(aVar.a()) : aVar.a() == null) && this.f54607d == aVar.e() && this.f54608e == aVar.d()) {
                 return true;
             }
         }
@@ -79,15 +79,15 @@ final class e extends l1.a {
     public int hashCode() {
         int hashCode;
         int i10;
-        int hashCode2 = (((this.f54036a.hashCode() ^ 1000003) * 1000003) ^ this.f54037b.hashCode()) * 1000003;
-        a0.e0 e0Var = this.f54038c;
+        int hashCode2 = (((this.f54604a.hashCode() ^ 1000003) * 1000003) ^ this.f54605b.hashCode()) * 1000003;
+        a0.e0 e0Var = this.f54606c;
         if (e0Var == null) {
             hashCode = 0;
         } else {
             hashCode = e0Var.hashCode();
         }
-        int i11 = (((hashCode2 ^ hashCode) * 1000003) ^ this.f54039d) * 1000003;
-        if (this.f54040e) {
+        int i11 = (((hashCode2 ^ hashCode) * 1000003) ^ this.f54607d) * 1000003;
+        if (this.f54608e) {
             i10 = 1231;
         } else {
             i10 = 1237;
@@ -96,6 +96,6 @@ final class e extends l1.a {
     }
 
     public String toString() {
-        return "CameraInputInfo{inputSize=" + this.f54036a + ", inputCropRect=" + this.f54037b + ", cameraInternal=" + this.f54038c + ", rotationDegrees=" + this.f54039d + ", mirroring=" + this.f54040e + "}";
+        return "CameraInputInfo{inputSize=" + this.f54604a + ", inputCropRect=" + this.f54605b + ", cameraInternal=" + this.f54606c + ", rotationDegrees=" + this.f54607d + ", mirroring=" + this.f54608e + "}";
     }
 }

@@ -7,22 +7,22 @@ import com.henninghall.date_picker.k;
 class b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final LinearLayout f31884a;
+    private final LinearLayout f32452a;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public b(View view) {
         LinearLayout linearLayout = (LinearLayout) view.findViewById(k.f17558h);
-        this.f31884a = linearLayout;
+        this.f32452a = linearLayout;
         linearLayout.setWillNotDraw(false);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void a(View view) {
-        this.f31884a.addView(view);
+        this.f32452a.addView(view);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void b() {
-        this.f31884a.removeAllViews();
+        this.f32452a.removeAllViews();
     }
 }

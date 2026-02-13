@@ -24,7 +24,6 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = 1;
     var1 = var6[var1];
     var1 = var5.bind(var0)(var1);
-    var8 = var1.StyleSheet;
     var1 = var1.View;
     var _closure1_slot3 = var1;
     var1 = 2;
@@ -32,7 +31,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var5.bind(var0)(var1);
     var1 = var1.jsx;
     var _closure1_slot4 = var1;
-    var4 = var8.create;
+    var1 = 3;
+    var1 = var6[var1];
+    var8 = var5.bind(var0)(var1);
+    var4 = var8.createStyles;
     var1 = {};
     var9 = {
         'minWidth': 44,
@@ -43,7 +45,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         'justifyContent': 'center',
         'alignItems': 'center'
     };
-    var10 = 3;
+    var10 = 4;
     var10 = var6[var10];
     var10 = var11.bind(var0)(var10);
     var10 = var10.radii;
@@ -54,7 +56,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot5 = var1;
     var4 = var7.memo;
     var3 = function(arg0) { // Environment: var3
-        _fun80363: for (var _fun80363_ip = 0;;) switch (_fun80363_ip) {
+        _fun80722: for (var _fun80722_ip = 0;;) switch (_fun80722_ip) {
             case 0:
                 var0 = arg0;
                 var13 = var0.color;
@@ -63,17 +65,19 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var0.selected;
                 var4 = undefined;
                 if (!(var6 === var4)) {
-                    _fun80363_ip = 33;
-                    continue _fun80363
+                    _fun80722_ip = 33;
+                    continue _fun80722
                 }
             case 31:
                 var6 = false;
             case 33:
                 var0 = var0.onSelect;
                 var _closure2_slot1 = var0;
+                var1 = _closure1_slot5;
+                var7 = var1.bind(var4)();
                 var2 = _closure1_slot0;
                 var1 = _closure1_slot2;
-                var14 = 4;
+                var14 = 5;
                 var1 = var1[var14];
                 var2 = var2.bind(var4)(var1);
                 var1 = var2.int2hsv;
@@ -81,110 +85,108 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = var1.v;
                 var5 = null;
                 if (!(var5 == var0)) {
-                    _fun80363_ip = 318;
-                    continue _fun80363
+                    _fun80722_ip = 322;
+                    continue _fun80722
                 }
-            case 91:
+            case 99:
                 var2 = _closure1_slot4;
                 var1 = _closure1_slot3;
                 var0 = {};
-                var3 = _closure1_slot5;
-                var9 = var3.colorBlock;
+                var9 = var7.colorBlock;
                 var3 = new Array(3);
                 var3[0] = var9;
                 var3[1] = var8;
                 var9 = {};
-                var15 = _closure1_slot0;
+                var16 = _closure1_slot0;
                 var12 = _closure1_slot2;
                 var12 = var12[var14];
-                var15 = var15.bind(var4)(var12);
-                var12 = var15.int2hex;
-                var12 = var12.bind(var15)(var13);
+                var16 = var16.bind(var4)(var12);
+                var12 = var16.int2hex;
+                var12 = var12.bind(var16)(var13);
                 var9.backgroundColor = var12;
                 var3[2] = var9;
                 var0.style = var3;
                 var3 = null;
                 if (!var6) {
-                    _fun80363_ip = 303;
-                    continue _fun80363
+                    _fun80722_ip = 307;
+                    continue _fun80722
                 }
-            case 173:
-                var15 = _closure1_slot4;
-                var17 = _closure1_slot1;
-                var18 = _closure1_slot2;
-                var9 = 7;
-                var9 = var18[var9];
-                var12 = var17.bind(var4)(var9);
-                var9 = {};
-                var16 = 8;
-                var16 = var18[var16];
-                var16 = var17.bind(var4)(var16);
-                var9.source = var16;
-                var16 = 0.5;
-                if (!(!(var11 < var16))) {
-                    _fun80363_ip = 262;
-                    continue _fun80363
-                }
-            case 229:
-                var17 = _closure1_slot1;
-                var18 = _closure1_slot2;
-                var16 = 3;
-                var16 = var18[var16];
-                var16 = var17.bind(var4)(var16);
-                var16 = var16.unsafe_rawColors;
-                var16 = var16.BLACK;
-                _fun80363_ip = 293;
-                continue _fun80363;
-            case 262:
+            case 177:
+                var16 = _closure1_slot4;
                 var18 = _closure1_slot1;
                 var19 = _closure1_slot2;
-                var17 = 3;
+                var9 = 8;
+                var9 = var19[var9];
+                var12 = var18.bind(var4)(var9);
+                var9 = {};
+                var17 = 9;
+                var17 = var19[var17];
+                var17 = var18.bind(var4)(var17);
+                var9.source = var17;
+                var17 = 0.5;
+                if (!(!(var11 < var17))) {
+                    _fun80722_ip = 266;
+                    continue _fun80722
+                }
+            case 233:
+                var18 = _closure1_slot1;
+                var19 = _closure1_slot2;
+                var17 = 4;
                 var17 = var19[var17];
                 var17 = var18.bind(var4)(var17);
                 var17 = var17.unsafe_rawColors;
-                var16 = var17.WHITE;
-            case 293:
-                var9.color = var16;
-                var3 = var15.bind(var4)(var12, var9);
-            case 303:
+                var17 = var17.BLACK;
+                _fun80722_ip = 297;
+                continue _fun80722;
+            case 266:
+                var19 = _closure1_slot1;
+                var20 = _closure1_slot2;
+                var18 = 4;
+                var18 = var20[var18];
+                var18 = var19.bind(var4)(var18);
+                var18 = var18.unsafe_rawColors;
+                var17 = var18.WHITE;
+            case 297:
+                var9.color = var17;
+                var3 = var16.bind(var4)(var12, var9);
+            case 307:
                 var0.children = var3;
                 var0 = var2.bind(var4)(var1, var0);
-                _fun80363_ip = 635;
-                continue _fun80363;
-            case 318:
+                _fun80722_ip = 635;
+                continue _fun80722;
+            case 322:
                 var3 = _closure1_slot4;
                 var12 = _closure1_slot0;
                 var9 = _closure1_slot2;
-                var1 = 5;
+                var1 = 6;
                 var1 = var9[var1];
                 var1 = var12.bind(var4)(var1);
                 var2 = var1.PressableOpacity;
                 var1 = {};
-                var15 = 'button';
-                var1.accessibilityRole = var15;
-                var15 = 6;
-                var15 = var9[var15];
-                var18 = var12.bind(var4)(var15);
-                var17 = var18.hexToColorName;
-                var15 = var9[var14];
-                var16 = var12.bind(var4)(var15);
-                var15 = var16.int2hex;
-                var16 = var15.bind(var16)(var13);
-                var15 = true;
-                var15 = var17.bind(var18)(var16, var15);
-                var1.accessibilityLabel = var15;
-                var15 = {};
-                var15.selected = var6;
-                var1.accessibilityState = var15;
-                var7 = function() {
+                var16 = 'button';
+                var1.accessibilityRole = var16;
+                var16 = 7;
+                var16 = var9[var16];
+                var19 = var12.bind(var4)(var16);
+                var18 = var19.hexToColorName;
+                var16 = var9[var14];
+                var17 = var12.bind(var4)(var16);
+                var16 = var17.int2hex;
+                var17 = var16.bind(var17)(var13);
+                var16 = true;
+                var16 = var18.bind(var19)(var17, var16);
+                var1.accessibilityLabel = var16;
+                var16 = {};
+                var16.selected = var6;
+                var1.accessibilityState = var16;
+                var15 = function() {
                     var2 = _closure2_slot1;
                     var1 = _closure2_slot0;
                     var0 = undefined;
                     var0 = var2.bind(var0)(var1);
                     return var0;
                 };
-                var1.onPress = var7;
-                var7 = _closure1_slot5;
+                var1.onPress = var15;
                 var15 = var7.colorBlock;
                 var7 = new Array(3);
                 var7[0] = var15;
@@ -199,40 +201,40 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1.style = var7;
                 var5 = null;
                 if (!var6) {
-                    _fun80363_ip = 625;
-                    continue _fun80363
+                    _fun80722_ip = 625;
+                    continue _fun80722
                 }
             case 495:
                 var8 = _closure1_slot4;
                 var12 = _closure1_slot1;
                 var13 = _closure1_slot2;
-                var6 = 7;
+                var6 = 8;
                 var6 = var13[var6];
                 var7 = var12.bind(var4)(var6);
                 var6 = {};
-                var9 = 8;
+                var9 = 9;
                 var9 = var13[var9];
                 var9 = var12.bind(var4)(var9);
                 var6.source = var9;
                 var9 = 0.5;
                 if (!(!(var11 < var9))) {
-                    _fun80363_ip = 584;
-                    continue _fun80363
+                    _fun80722_ip = 584;
+                    continue _fun80722
                 }
             case 551:
                 var11 = _closure1_slot1;
                 var12 = _closure1_slot2;
-                var9 = 3;
+                var9 = 4;
                 var9 = var12[var9];
                 var9 = var11.bind(var4)(var9);
                 var9 = var9.unsafe_rawColors;
                 var9 = var9.BLACK;
-                _fun80363_ip = 615;
-                continue _fun80363;
+                _fun80722_ip = 615;
+                continue _fun80722;
             case 584:
                 var11 = _closure1_slot1;
                 var12 = _closure1_slot2;
-                var10 = 3;
+                var10 = 4;
                 var10 = var12[var10];
                 var10 = var11.bind(var4)(var10);
                 var10 = var10.unsafe_rawColors;
@@ -248,13 +250,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var3 = var4.bind(var7)(var3);
-    var4 = 9;
+    var4 = 10;
     var4 = var6[var4];
     var6 = var5.bind(var0)(var4);
     var5 = var6.fileFinishedImporting;
     var4 = 'components_native/common/color_picker/ColorBlock.tsx';
     var4 = var5.bind(var6)(var4);
     var2.default = var3;
-    var2.styles = var1;
+    var2.useStyles = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 671, 668, 4880, 3241, 4092, 7792, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 668, 4909, 3244, 4092, 7522, 2]);

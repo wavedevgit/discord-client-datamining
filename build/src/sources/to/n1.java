@@ -23,7 +23,7 @@ import to.n1;
 public abstract class n1 implements Parcelable {
 
     /* renamed from: d  reason: collision with root package name */
-    private boolean f49421d;
+    private boolean f49989d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class b extends n1 {
@@ -31,37 +31,37 @@ public abstract class n1 implements Parcelable {
         public static final Parcelable.Creator<b> CREATOR = new a();
 
         /* renamed from: e  reason: collision with root package name */
-        private final h4.a f49434e;
+        private final h4.a f50002e;
 
         /* renamed from: i  reason: collision with root package name */
-        private final List f49435i;
+        private final List f50003i;
 
         /* renamed from: o  reason: collision with root package name */
-        private final List f49436o;
+        private final List f50004o;
 
         /* renamed from: p  reason: collision with root package name */
-        private final int f49437p;
+        private final int f50005p;
 
         /* renamed from: q  reason: collision with root package name */
-        private final n1 f49438q;
+        private final n1 f50006q;
 
         /* renamed from: r  reason: collision with root package name */
-        private final String f49439r;
+        private final String f50007r;
 
         /* renamed from: s  reason: collision with root package name */
-        private final List f49440s;
+        private final List f50008s;
 
         /* renamed from: t  reason: collision with root package name */
-        private final fo.v f49441t;
+        private final fo.v f50009t;
 
         /* renamed from: u  reason: collision with root package name */
-        private final List f49442u;
+        private final List f50010u;
 
         /* renamed from: v  reason: collision with root package name */
-        private final String f49443v;
+        private final String f50011v;
 
         /* renamed from: w  reason: collision with root package name */
-        private final String f49444w;
+        private final String f50012w;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         public static final class a implements Parcelable.Creator {
@@ -113,52 +113,52 @@ public abstract class n1 implements Parcelable {
             Intrinsics.checkNotNullParameter(captureFrames, "captureFrames");
             Intrinsics.checkNotNullParameter(cameraProperties, "cameraProperties");
             Intrinsics.checkNotNullParameter(idConfigsForCountry, "idConfigsForCountry");
-            this.f49434e = currentPart;
-            this.f49435i = uploadingIds;
-            this.f49436o = parts;
-            this.f49437p = i10;
-            this.f49438q = n1Var;
-            this.f49439r = str;
-            this.f49440s = captureFrames;
-            this.f49441t = cameraProperties;
-            this.f49442u = idConfigsForCountry;
-            this.f49443v = str2;
-            this.f49444w = str3;
+            this.f50002e = currentPart;
+            this.f50003i = uploadingIds;
+            this.f50004o = parts;
+            this.f50005p = i10;
+            this.f50006q = n1Var;
+            this.f50007r = str;
+            this.f50008s = captureFrames;
+            this.f50009t = cameraProperties;
+            this.f50010u = idConfigsForCountry;
+            this.f50011v = str2;
+            this.f50012w = str3;
         }
 
         public static /* synthetic */ b q(b bVar, h4.a aVar, List list, List list2, int i10, n1 n1Var, String str, List list3, fo.v vVar, List list4, String str2, String str3, int i11, Object obj) {
             if ((i11 & 1) != 0) {
-                aVar = bVar.f49434e;
+                aVar = bVar.f50002e;
             }
             if ((i11 & 2) != 0) {
-                list = bVar.f49435i;
+                list = bVar.f50003i;
             }
             if ((i11 & 4) != 0) {
-                list2 = bVar.f49436o;
+                list2 = bVar.f50004o;
             }
             if ((i11 & 8) != 0) {
-                i10 = bVar.f49437p;
+                i10 = bVar.f50005p;
             }
             if ((i11 & 16) != 0) {
-                n1Var = bVar.f49438q;
+                n1Var = bVar.f50006q;
             }
             if ((i11 & 32) != 0) {
-                str = bVar.f49439r;
+                str = bVar.f50007r;
             }
             if ((i11 & 64) != 0) {
-                list3 = bVar.f49440s;
+                list3 = bVar.f50008s;
             }
             if ((i11 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) != 0) {
-                vVar = bVar.f49441t;
+                vVar = bVar.f50009t;
             }
             if ((i11 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER) != 0) {
-                list4 = bVar.f49442u;
+                list4 = bVar.f50010u;
             }
             if ((i11 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING) != 0) {
-                str2 = bVar.f49443v;
+                str2 = bVar.f50011v;
             }
             if ((i11 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET) != 0) {
-                str3 = bVar.f49444w;
+                str3 = bVar.f50012w;
             }
             String str4 = str2;
             String str5 = str3;
@@ -178,7 +178,7 @@ public abstract class n1 implements Parcelable {
 
         @Override // to.n1
         public n1 e() {
-            return this.f49438q;
+            return this.f50006q;
         }
 
         public boolean equals(Object obj) {
@@ -189,7 +189,7 @@ public abstract class n1 implements Parcelable {
                 return false;
             }
             b bVar = (b) obj;
-            if (Intrinsics.areEqual(this.f49434e, bVar.f49434e) && Intrinsics.areEqual(this.f49435i, bVar.f49435i) && Intrinsics.areEqual(this.f49436o, bVar.f49436o) && this.f49437p == bVar.f49437p && Intrinsics.areEqual(this.f49438q, bVar.f49438q) && Intrinsics.areEqual(this.f49439r, bVar.f49439r) && Intrinsics.areEqual(this.f49440s, bVar.f49440s) && Intrinsics.areEqual(this.f49441t, bVar.f49441t) && Intrinsics.areEqual(this.f49442u, bVar.f49442u) && Intrinsics.areEqual(this.f49443v, bVar.f49443v) && Intrinsics.areEqual(this.f49444w, bVar.f49444w)) {
+            if (Intrinsics.areEqual(this.f50002e, bVar.f50002e) && Intrinsics.areEqual(this.f50003i, bVar.f50003i) && Intrinsics.areEqual(this.f50004o, bVar.f50004o) && this.f50005p == bVar.f50005p && Intrinsics.areEqual(this.f50006q, bVar.f50006q) && Intrinsics.areEqual(this.f50007r, bVar.f50007r) && Intrinsics.areEqual(this.f50008s, bVar.f50008s) && Intrinsics.areEqual(this.f50009t, bVar.f50009t) && Intrinsics.areEqual(this.f50010u, bVar.f50010u) && Intrinsics.areEqual(this.f50011v, bVar.f50011v) && Intrinsics.areEqual(this.f50012w, bVar.f50012w)) {
                 return true;
             }
             return false;
@@ -197,15 +197,15 @@ public abstract class n1 implements Parcelable {
 
         @Override // to.n1
         public String f() {
-            return this.f49439r;
+            return this.f50007r;
         }
 
         public int hashCode() {
             int hashCode;
             int hashCode2;
             int hashCode3;
-            int hashCode4 = ((((((this.f49434e.hashCode() * 31) + this.f49435i.hashCode()) * 31) + this.f49436o.hashCode()) * 31) + Integer.hashCode(this.f49437p)) * 31;
-            n1 n1Var = this.f49438q;
+            int hashCode4 = ((((((this.f50002e.hashCode() * 31) + this.f50003i.hashCode()) * 31) + this.f50004o.hashCode()) * 31) + Integer.hashCode(this.f50005p)) * 31;
+            n1 n1Var = this.f50006q;
             int i10 = 0;
             if (n1Var == null) {
                 hashCode = 0;
@@ -213,21 +213,21 @@ public abstract class n1 implements Parcelable {
                 hashCode = n1Var.hashCode();
             }
             int i11 = (hashCode4 + hashCode) * 31;
-            String str = this.f49439r;
+            String str = this.f50007r;
             if (str == null) {
                 hashCode2 = 0;
             } else {
                 hashCode2 = str.hashCode();
             }
-            int hashCode5 = (((((((i11 + hashCode2) * 31) + this.f49440s.hashCode()) * 31) + this.f49441t.hashCode()) * 31) + this.f49442u.hashCode()) * 31;
-            String str2 = this.f49443v;
+            int hashCode5 = (((((((i11 + hashCode2) * 31) + this.f50008s.hashCode()) * 31) + this.f50009t.hashCode()) * 31) + this.f50010u.hashCode()) * 31;
+            String str2 = this.f50011v;
             if (str2 == null) {
                 hashCode3 = 0;
             } else {
                 hashCode3 = str2.hashCode();
             }
             int i12 = (hashCode5 + hashCode3) * 31;
-            String str3 = this.f49444w;
+            String str3 = this.f50012w;
             if (str3 != null) {
                 i10 = str3.hashCode();
             }
@@ -236,17 +236,17 @@ public abstract class n1 implements Parcelable {
 
         @Override // to.n1
         public int j() {
-            return this.f49437p;
+            return this.f50005p;
         }
 
         @Override // to.n1
         public List k() {
-            return this.f49436o;
+            return this.f50004o;
         }
 
         @Override // to.n1
         public List l() {
-            return this.f49435i;
+            return this.f50003i;
         }
 
         public final b p(h4.a currentPart, List uploadingIds, List parts, int i10, n1 n1Var, String str, List captureFrames, fo.v cameraProperties, List idConfigsForCountry, String str2, String str3) {
@@ -260,72 +260,72 @@ public abstract class n1 implements Parcelable {
         }
 
         public final fo.v r() {
-            return this.f49441t;
+            return this.f50009t;
         }
 
         @Override // to.n1
         /* renamed from: s */
         public h4.a g() {
-            return this.f49434e;
+            return this.f50002e;
         }
 
         public final List t() {
-            return this.f49442u;
+            return this.f50010u;
         }
 
         public String toString() {
-            h4.a aVar = this.f49434e;
-            List list = this.f49435i;
-            List list2 = this.f49436o;
-            int i10 = this.f49437p;
-            n1 n1Var = this.f49438q;
-            String str = this.f49439r;
-            List list3 = this.f49440s;
-            fo.v vVar = this.f49441t;
-            List list4 = this.f49442u;
-            String str2 = this.f49443v;
-            String str3 = this.f49444w;
+            h4.a aVar = this.f50002e;
+            List list = this.f50003i;
+            List list2 = this.f50004o;
+            int i10 = this.f50005p;
+            n1 n1Var = this.f50006q;
+            String str = this.f50007r;
+            List list3 = this.f50008s;
+            fo.v vVar = this.f50009t;
+            List list4 = this.f50010u;
+            String str2 = this.f50011v;
+            String str3 = this.f50012w;
             return "AutoClassificationManualSelect(currentPart=" + aVar + ", uploadingIds=" + list + ", parts=" + list2 + ", partIndex=" + i10 + ", backState=" + n1Var + ", countryCode=" + str + ", captureFrames=" + list3 + ", cameraProperties=" + vVar + ", idConfigsForCountry=" + list4 + ", selectedCountryCode=" + str2 + ", selectedIdClass=" + str3 + ")";
         }
 
         public final String u() {
-            return this.f49443v;
+            return this.f50011v;
         }
 
         public final String v() {
-            return this.f49444w;
+            return this.f50012w;
         }
 
         @Override // android.os.Parcelable
         public final void writeToParcel(Parcel dest, int i10) {
             Intrinsics.checkNotNullParameter(dest, "dest");
-            this.f49434e.writeToParcel(dest, i10);
-            List<Parcelable> list = this.f49435i;
+            this.f50002e.writeToParcel(dest, i10);
+            List<Parcelable> list = this.f50003i;
             dest.writeInt(list.size());
             for (Parcelable parcelable : list) {
                 dest.writeParcelable(parcelable, i10);
             }
-            List<Parcelable> list2 = this.f49436o;
+            List<Parcelable> list2 = this.f50004o;
             dest.writeInt(list2.size());
             for (Parcelable parcelable2 : list2) {
                 dest.writeParcelable(parcelable2, i10);
             }
-            dest.writeInt(this.f49437p);
-            dest.writeParcelable(this.f49438q, i10);
-            dest.writeString(this.f49439r);
-            List<c0> list3 = this.f49440s;
+            dest.writeInt(this.f50005p);
+            dest.writeParcelable(this.f50006q, i10);
+            dest.writeString(this.f50007r);
+            List<c0> list3 = this.f50008s;
             dest.writeInt(list3.size());
             for (c0 c0Var : list3) {
                 c0Var.writeToParcel(dest, i10);
             }
-            dest.writeParcelable(this.f49441t, i10);
-            List<e4> list4 = this.f49442u;
+            dest.writeParcelable(this.f50009t, i10);
+            List<e4> list4 = this.f50010u;
             dest.writeInt(list4.size());
             for (e4 e4Var : list4) {
                 e4Var.writeToParcel(dest, i10);
             }
-            dest.writeString(this.f49443v);
-            dest.writeString(this.f49444w);
+            dest.writeString(this.f50011v);
+            dest.writeString(this.f50012w);
         }
     }
 
@@ -335,31 +335,31 @@ public abstract class n1 implements Parcelable {
         public static final Parcelable.Creator<d> CREATOR = new a();
 
         /* renamed from: e  reason: collision with root package name */
-        private final h4.a f49454e;
+        private final h4.a f50022e;
 
         /* renamed from: i  reason: collision with root package name */
-        private final List f49455i;
+        private final List f50023i;
 
         /* renamed from: o  reason: collision with root package name */
-        private final q f49456o;
+        private final q f50024o;
 
         /* renamed from: p  reason: collision with root package name */
-        private final d0.b f49457p;
+        private final d0.b f50025p;
 
         /* renamed from: q  reason: collision with root package name */
-        private final List f49458q;
+        private final List f50026q;
 
         /* renamed from: r  reason: collision with root package name */
-        private final int f49459r;
+        private final int f50027r;
 
         /* renamed from: s  reason: collision with root package name */
-        private final n1 f49460s;
+        private final n1 f50028s;
 
         /* renamed from: t  reason: collision with root package name */
-        private final String f49461t;
+        private final String f50029t;
 
         /* renamed from: u  reason: collision with root package name */
-        private final zo.d f49462u;
+        private final zo.d f50030u;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         public static final class a implements Parcelable.Creator {
@@ -398,44 +398,44 @@ public abstract class n1 implements Parcelable {
             Intrinsics.checkNotNullParameter(captureConfig, "captureConfig");
             Intrinsics.checkNotNullParameter(idForReview, "idForReview");
             Intrinsics.checkNotNullParameter(parts, "parts");
-            this.f49454e = currentPart;
-            this.f49455i = uploadingIds;
-            this.f49456o = captureConfig;
-            this.f49457p = idForReview;
-            this.f49458q = parts;
-            this.f49459r = i10;
-            this.f49460s = n1Var;
-            this.f49461t = str;
-            this.f49462u = dVar;
+            this.f50022e = currentPart;
+            this.f50023i = uploadingIds;
+            this.f50024o = captureConfig;
+            this.f50025p = idForReview;
+            this.f50026q = parts;
+            this.f50027r = i10;
+            this.f50028s = n1Var;
+            this.f50029t = str;
+            this.f50030u = dVar;
         }
 
         public static /* synthetic */ d q(d dVar, h4.a aVar, List list, q qVar, d0.b bVar, List list2, int i10, n1 n1Var, String str, zo.d dVar2, int i11, Object obj) {
             if ((i11 & 1) != 0) {
-                aVar = dVar.f49454e;
+                aVar = dVar.f50022e;
             }
             if ((i11 & 2) != 0) {
-                list = dVar.f49455i;
+                list = dVar.f50023i;
             }
             if ((i11 & 4) != 0) {
-                qVar = dVar.f49456o;
+                qVar = dVar.f50024o;
             }
             if ((i11 & 8) != 0) {
-                bVar = dVar.f49457p;
+                bVar = dVar.f50025p;
             }
             if ((i11 & 16) != 0) {
-                list2 = dVar.f49458q;
+                list2 = dVar.f50026q;
             }
             if ((i11 & 32) != 0) {
-                i10 = dVar.f49459r;
+                i10 = dVar.f50027r;
             }
             if ((i11 & 64) != 0) {
-                n1Var = dVar.f49460s;
+                n1Var = dVar.f50028s;
             }
             if ((i11 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) != 0) {
-                str = dVar.f49461t;
+                str = dVar.f50029t;
             }
             if ((i11 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER) != 0) {
-                dVar2 = dVar.f49462u;
+                dVar2 = dVar.f50030u;
             }
             String str2 = str;
             zo.d dVar3 = dVar2;
@@ -449,7 +449,7 @@ public abstract class n1 implements Parcelable {
         @Override // to.n1
         public void d() {
             super.d();
-            for (c0 c0Var : this.f49457p.m2()) {
+            for (c0 c0Var : this.f50025p.m2()) {
                 new File(c0Var.a()).delete();
             }
         }
@@ -461,7 +461,7 @@ public abstract class n1 implements Parcelable {
 
         @Override // to.n1
         public n1 e() {
-            return this.f49460s;
+            return this.f50028s;
         }
 
         public boolean equals(Object obj) {
@@ -472,7 +472,7 @@ public abstract class n1 implements Parcelable {
                 return false;
             }
             d dVar = (d) obj;
-            if (Intrinsics.areEqual(this.f49454e, dVar.f49454e) && Intrinsics.areEqual(this.f49455i, dVar.f49455i) && Intrinsics.areEqual(this.f49456o, dVar.f49456o) && Intrinsics.areEqual(this.f49457p, dVar.f49457p) && Intrinsics.areEqual(this.f49458q, dVar.f49458q) && this.f49459r == dVar.f49459r && Intrinsics.areEqual(this.f49460s, dVar.f49460s) && Intrinsics.areEqual(this.f49461t, dVar.f49461t) && Intrinsics.areEqual(this.f49462u, dVar.f49462u)) {
+            if (Intrinsics.areEqual(this.f50022e, dVar.f50022e) && Intrinsics.areEqual(this.f50023i, dVar.f50023i) && Intrinsics.areEqual(this.f50024o, dVar.f50024o) && Intrinsics.areEqual(this.f50025p, dVar.f50025p) && Intrinsics.areEqual(this.f50026q, dVar.f50026q) && this.f50027r == dVar.f50027r && Intrinsics.areEqual(this.f50028s, dVar.f50028s) && Intrinsics.areEqual(this.f50029t, dVar.f50029t) && Intrinsics.areEqual(this.f50030u, dVar.f50030u)) {
                 return true;
             }
             return false;
@@ -480,14 +480,14 @@ public abstract class n1 implements Parcelable {
 
         @Override // to.n1
         public String f() {
-            return this.f49461t;
+            return this.f50029t;
         }
 
         public int hashCode() {
             int hashCode;
             int hashCode2;
-            int hashCode3 = ((((((((((this.f49454e.hashCode() * 31) + this.f49455i.hashCode()) * 31) + this.f49456o.hashCode()) * 31) + this.f49457p.hashCode()) * 31) + this.f49458q.hashCode()) * 31) + Integer.hashCode(this.f49459r)) * 31;
-            n1 n1Var = this.f49460s;
+            int hashCode3 = ((((((((((this.f50022e.hashCode() * 31) + this.f50023i.hashCode()) * 31) + this.f50024o.hashCode()) * 31) + this.f50025p.hashCode()) * 31) + this.f50026q.hashCode()) * 31) + Integer.hashCode(this.f50027r)) * 31;
+            n1 n1Var = this.f50028s;
             int i10 = 0;
             if (n1Var == null) {
                 hashCode = 0;
@@ -495,14 +495,14 @@ public abstract class n1 implements Parcelable {
                 hashCode = n1Var.hashCode();
             }
             int i11 = (hashCode3 + hashCode) * 31;
-            String str = this.f49461t;
+            String str = this.f50029t;
             if (str == null) {
                 hashCode2 = 0;
             } else {
                 hashCode2 = str.hashCode();
             }
             int i12 = (i11 + hashCode2) * 31;
-            zo.d dVar = this.f49462u;
+            zo.d dVar = this.f50030u;
             if (dVar != null) {
                 i10 = dVar.hashCode();
             }
@@ -511,17 +511,17 @@ public abstract class n1 implements Parcelable {
 
         @Override // to.n1
         public int j() {
-            return this.f49459r;
+            return this.f50027r;
         }
 
         @Override // to.n1
         public List k() {
-            return this.f49458q;
+            return this.f50026q;
         }
 
         @Override // to.n1
         public List l() {
-            return this.f49455i;
+            return this.f50023i;
         }
 
         public final d p(h4.a currentPart, List uploadingIds, q captureConfig, d0.b idForReview, List parts, int i10, n1 n1Var, String str, zo.d dVar) {
@@ -534,56 +534,56 @@ public abstract class n1 implements Parcelable {
         }
 
         public final q r() {
-            return this.f49456o;
+            return this.f50024o;
         }
 
         @Override // to.n1
         /* renamed from: s */
         public h4.a g() {
-            return this.f49454e;
+            return this.f50022e;
         }
 
         public final zo.d t() {
-            return this.f49462u;
+            return this.f50030u;
         }
 
         public String toString() {
-            h4.a aVar = this.f49454e;
-            List list = this.f49455i;
-            q qVar = this.f49456o;
-            d0.b bVar = this.f49457p;
-            List list2 = this.f49458q;
-            int i10 = this.f49459r;
-            n1 n1Var = this.f49460s;
-            String str = this.f49461t;
-            zo.d dVar = this.f49462u;
+            h4.a aVar = this.f50022e;
+            List list = this.f50023i;
+            q qVar = this.f50024o;
+            d0.b bVar = this.f50025p;
+            List list2 = this.f50026q;
+            int i10 = this.f50027r;
+            n1 n1Var = this.f50028s;
+            String str = this.f50029t;
+            zo.d dVar = this.f50030u;
             return "CountdownToCapture(currentPart=" + aVar + ", uploadingIds=" + list + ", captureConfig=" + qVar + ", idForReview=" + bVar + ", parts=" + list2 + ", partIndex=" + i10 + ", backState=" + n1Var + ", countryCode=" + str + ", hint=" + dVar + ")";
         }
 
         public final d0.b u() {
-            return this.f49457p;
+            return this.f50025p;
         }
 
         @Override // android.os.Parcelable
         public final void writeToParcel(Parcel dest, int i10) {
             Intrinsics.checkNotNullParameter(dest, "dest");
-            this.f49454e.writeToParcel(dest, i10);
-            List<Parcelable> list = this.f49455i;
+            this.f50022e.writeToParcel(dest, i10);
+            List<Parcelable> list = this.f50023i;
             dest.writeInt(list.size());
             for (Parcelable parcelable : list) {
                 dest.writeParcelable(parcelable, i10);
             }
-            dest.writeParcelable(this.f49456o, i10);
-            this.f49457p.writeToParcel(dest, i10);
-            List<Parcelable> list2 = this.f49458q;
+            dest.writeParcelable(this.f50024o, i10);
+            this.f50025p.writeToParcel(dest, i10);
+            List<Parcelable> list2 = this.f50026q;
             dest.writeInt(list2.size());
             for (Parcelable parcelable2 : list2) {
                 dest.writeParcelable(parcelable2, i10);
             }
-            dest.writeInt(this.f49459r);
-            dest.writeParcelable(this.f49460s, i10);
-            dest.writeString(this.f49461t);
-            dest.writeParcelable(this.f49462u, i10);
+            dest.writeInt(this.f50027r);
+            dest.writeParcelable(this.f50028s, i10);
+            dest.writeString(this.f50029t);
+            dest.writeParcelable(this.f50030u, i10);
         }
     }
 
@@ -593,34 +593,34 @@ public abstract class n1 implements Parcelable {
         public static final Parcelable.Creator<e> CREATOR = new a();
 
         /* renamed from: e  reason: collision with root package name */
-        private final c4 f49463e;
+        private final c4 f50031e;
 
         /* renamed from: i  reason: collision with root package name */
-        private final List f49464i;
+        private final List f50032i;
 
         /* renamed from: o  reason: collision with root package name */
-        private final h4 f49465o;
+        private final h4 f50033o;
 
         /* renamed from: p  reason: collision with root package name */
-        private final List f49466p;
+        private final List f50034p;
 
         /* renamed from: q  reason: collision with root package name */
-        private final int f49467q;
+        private final int f50035q;
 
         /* renamed from: r  reason: collision with root package name */
-        private final n1 f49468r;
+        private final n1 f50036r;
 
         /* renamed from: s  reason: collision with root package name */
-        private final String f49469s;
+        private final String f50037s;
 
         /* renamed from: t  reason: collision with root package name */
-        private final ap.c f49470t;
+        private final ap.c f50038t;
 
         /* renamed from: u  reason: collision with root package name */
-        private final long f49471u;
+        private final long f50039u;
 
         /* renamed from: v  reason: collision with root package name */
-        private final boolean f49472v;
+        private final boolean f50040v;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         public static final class a implements Parcelable.Creator {
@@ -671,34 +671,34 @@ public abstract class n1 implements Parcelable {
 
         public static /* synthetic */ e q(e eVar, c4 c4Var, List list, h4 h4Var, List list2, int i10, n1 n1Var, String str, ap.c cVar, long j10, boolean z10, int i11, Object obj) {
             if ((i11 & 1) != 0) {
-                c4Var = eVar.f49463e;
+                c4Var = eVar.f50031e;
             }
             if ((i11 & 2) != 0) {
-                list = eVar.f49464i;
+                list = eVar.f50032i;
             }
             if ((i11 & 4) != 0) {
-                h4Var = eVar.f49465o;
+                h4Var = eVar.f50033o;
             }
             if ((i11 & 8) != 0) {
-                list2 = eVar.f49466p;
+                list2 = eVar.f50034p;
             }
             if ((i11 & 16) != 0) {
-                i10 = eVar.f49467q;
+                i10 = eVar.f50035q;
             }
             if ((i11 & 32) != 0) {
-                n1Var = eVar.f49468r;
+                n1Var = eVar.f50036r;
             }
             if ((i11 & 64) != 0) {
-                str = eVar.f49469s;
+                str = eVar.f50037s;
             }
             if ((i11 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) != 0) {
-                cVar = eVar.f49470t;
+                cVar = eVar.f50038t;
             }
             if ((i11 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER) != 0) {
-                j10 = eVar.f49471u;
+                j10 = eVar.f50039u;
             }
             if ((i11 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING) != 0) {
-                z10 = eVar.f49472v;
+                z10 = eVar.f50040v;
             }
             boolean z11 = z10;
             long j11 = j10;
@@ -716,7 +716,7 @@ public abstract class n1 implements Parcelable {
 
         @Override // to.n1
         public n1 e() {
-            return this.f49468r;
+            return this.f50036r;
         }
 
         public boolean equals(Object obj) {
@@ -727,7 +727,7 @@ public abstract class n1 implements Parcelable {
                 return false;
             }
             e eVar = (e) obj;
-            if (Intrinsics.areEqual(this.f49463e, eVar.f49463e) && Intrinsics.areEqual(this.f49464i, eVar.f49464i) && Intrinsics.areEqual(this.f49465o, eVar.f49465o) && Intrinsics.areEqual(this.f49466p, eVar.f49466p) && this.f49467q == eVar.f49467q && Intrinsics.areEqual(this.f49468r, eVar.f49468r) && Intrinsics.areEqual(this.f49469s, eVar.f49469s) && Intrinsics.areEqual(this.f49470t, eVar.f49470t) && this.f49471u == eVar.f49471u && this.f49472v == eVar.f49472v) {
+            if (Intrinsics.areEqual(this.f50031e, eVar.f50031e) && Intrinsics.areEqual(this.f50032i, eVar.f50032i) && Intrinsics.areEqual(this.f50033o, eVar.f50033o) && Intrinsics.areEqual(this.f50034p, eVar.f50034p) && this.f50035q == eVar.f50035q && Intrinsics.areEqual(this.f50036r, eVar.f50036r) && Intrinsics.areEqual(this.f50037s, eVar.f50037s) && Intrinsics.areEqual(this.f50038t, eVar.f50038t) && this.f50039u == eVar.f50039u && this.f50040v == eVar.f50040v) {
                 return true;
             }
             return false;
@@ -735,19 +735,19 @@ public abstract class n1 implements Parcelable {
 
         @Override // to.n1
         public String f() {
-            return this.f49469s;
+            return this.f50037s;
         }
 
         @Override // to.n1
         public h4 g() {
-            return this.f49465o;
+            return this.f50033o;
         }
 
         public int hashCode() {
             int hashCode;
             int hashCode2;
-            int hashCode3 = ((((((((this.f49463e.hashCode() * 31) + this.f49464i.hashCode()) * 31) + this.f49465o.hashCode()) * 31) + this.f49466p.hashCode()) * 31) + Integer.hashCode(this.f49467q)) * 31;
-            n1 n1Var = this.f49468r;
+            int hashCode3 = ((((((((this.f50031e.hashCode() * 31) + this.f50032i.hashCode()) * 31) + this.f50033o.hashCode()) * 31) + this.f50034p.hashCode()) * 31) + Integer.hashCode(this.f50035q)) * 31;
+            n1 n1Var = this.f50036r;
             int i10 = 0;
             if (n1Var == null) {
                 hashCode = 0;
@@ -755,33 +755,33 @@ public abstract class n1 implements Parcelable {
                 hashCode = n1Var.hashCode();
             }
             int i11 = (hashCode3 + hashCode) * 31;
-            String str = this.f49469s;
+            String str = this.f50037s;
             if (str == null) {
                 hashCode2 = 0;
             } else {
                 hashCode2 = str.hashCode();
             }
             int i12 = (i11 + hashCode2) * 31;
-            ap.c cVar = this.f49470t;
+            ap.c cVar = this.f50038t;
             if (cVar != null) {
                 i10 = cVar.hashCode();
             }
-            return ((((i12 + i10) * 31) + Long.hashCode(this.f49471u)) * 31) + Boolean.hashCode(this.f49472v);
+            return ((((i12 + i10) * 31) + Long.hashCode(this.f50039u)) * 31) + Boolean.hashCode(this.f50040v);
         }
 
         @Override // to.n1
         public int j() {
-            return this.f49467q;
+            return this.f50035q;
         }
 
         @Override // to.n1
         public List k() {
-            return this.f49466p;
+            return this.f50034p;
         }
 
         @Override // to.n1
         public List l() {
-            return this.f49464i;
+            return this.f50032i;
         }
 
         public final e p(c4 id2, List uploadingIds, h4 currentPart, List parts, int i10, n1 n1Var, String str, ap.c cVar, long j10, boolean z10) {
@@ -793,58 +793,58 @@ public abstract class n1 implements Parcelable {
         }
 
         public final c4 r() {
-            return this.f49463e;
+            return this.f50031e;
         }
 
         public final long s() {
-            return this.f49471u;
+            return this.f50039u;
         }
 
         public final boolean t() {
-            return this.f49472v;
+            return this.f50040v;
         }
 
         public String toString() {
-            c4 c4Var = this.f49463e;
-            List list = this.f49464i;
-            h4 h4Var = this.f49465o;
-            List list2 = this.f49466p;
-            int i10 = this.f49467q;
-            n1 n1Var = this.f49468r;
-            String str = this.f49469s;
-            ap.c cVar = this.f49470t;
-            long j10 = this.f49471u;
-            boolean z10 = this.f49472v;
+            c4 c4Var = this.f50031e;
+            List list = this.f50032i;
+            h4 h4Var = this.f50033o;
+            List list2 = this.f50034p;
+            int i10 = this.f50035q;
+            n1 n1Var = this.f50036r;
+            String str = this.f50037s;
+            ap.c cVar = this.f50038t;
+            long j10 = this.f50039u;
+            boolean z10 = this.f50040v;
             return "FinalizeLocalVideoCapture(id=" + c4Var + ", uploadingIds=" + list + ", currentPart=" + h4Var + ", parts=" + list2 + ", partIndex=" + i10 + ", backState=" + n1Var + ", countryCode=" + str + ", governmentIdRequestArguments=" + cVar + ", minDurationMs=" + j10 + ", isDelayComplete=" + z10 + ")";
         }
 
         @Override // android.os.Parcelable
         public final void writeToParcel(Parcel dest, int i10) {
             Intrinsics.checkNotNullParameter(dest, "dest");
-            this.f49463e.writeToParcel(dest, i10);
-            List<Parcelable> list = this.f49464i;
+            this.f50031e.writeToParcel(dest, i10);
+            List<Parcelable> list = this.f50032i;
             dest.writeInt(list.size());
             for (Parcelable parcelable : list) {
                 dest.writeParcelable(parcelable, i10);
             }
-            dest.writeParcelable(this.f49465o, i10);
-            List<Parcelable> list2 = this.f49466p;
+            dest.writeParcelable(this.f50033o, i10);
+            List<Parcelable> list2 = this.f50034p;
             dest.writeInt(list2.size());
             for (Parcelable parcelable2 : list2) {
                 dest.writeParcelable(parcelable2, i10);
             }
-            dest.writeInt(this.f49467q);
-            dest.writeParcelable(this.f49468r, i10);
-            dest.writeString(this.f49469s);
-            ap.c cVar = this.f49470t;
+            dest.writeInt(this.f50035q);
+            dest.writeParcelable(this.f50036r, i10);
+            dest.writeString(this.f50037s);
+            ap.c cVar = this.f50038t;
             if (cVar == null) {
                 dest.writeInt(0);
             } else {
                 dest.writeInt(1);
                 cVar.writeToParcel(dest, i10);
             }
-            dest.writeLong(this.f49471u);
-            dest.writeInt(this.f49472v ? 1 : 0);
+            dest.writeLong(this.f50039u);
+            dest.writeInt(this.f50040v ? 1 : 0);
         }
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
@@ -854,16 +854,16 @@ public abstract class n1 implements Parcelable {
             Intrinsics.checkNotNullParameter(uploadingIds, "uploadingIds");
             Intrinsics.checkNotNullParameter(currentPart, "currentPart");
             Intrinsics.checkNotNullParameter(parts, "parts");
-            this.f49463e = id2;
-            this.f49464i = uploadingIds;
-            this.f49465o = currentPart;
-            this.f49466p = parts;
-            this.f49467q = i10;
-            this.f49468r = n1Var;
-            this.f49469s = str;
-            this.f49470t = cVar;
-            this.f49471u = j10;
-            this.f49472v = z10;
+            this.f50031e = id2;
+            this.f50032i = uploadingIds;
+            this.f50033o = currentPart;
+            this.f50034p = parts;
+            this.f50035q = i10;
+            this.f50036r = n1Var;
+            this.f50037s = str;
+            this.f50038t = cVar;
+            this.f50039u = j10;
+            this.f50040v = z10;
         }
     }
 
@@ -873,28 +873,28 @@ public abstract class n1 implements Parcelable {
         public static final Parcelable.Creator<f> CREATOR = new a();
 
         /* renamed from: e  reason: collision with root package name */
-        private final h4 f49473e;
+        private final h4 f50041e;
 
         /* renamed from: i  reason: collision with root package name */
-        private final List f49474i;
+        private final List f50042i;
 
         /* renamed from: o  reason: collision with root package name */
-        private final List f49475o;
+        private final List f50043o;
 
         /* renamed from: p  reason: collision with root package name */
-        private final int f49476p;
+        private final int f50044p;
 
         /* renamed from: q  reason: collision with root package name */
-        private final n1 f49477q;
+        private final n1 f50045q;
 
         /* renamed from: r  reason: collision with root package name */
-        private final String f49478r;
+        private final String f50046r;
 
         /* renamed from: s  reason: collision with root package name */
-        private final c4 f49479s;
+        private final c4 f50047s;
 
         /* renamed from: t  reason: collision with root package name */
-        private final fo.v f49480t;
+        private final fo.v f50048t;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         public static final class a implements Parcelable.Creator {
@@ -931,14 +931,14 @@ public abstract class n1 implements Parcelable {
             Intrinsics.checkNotNullParameter(parts, "parts");
             Intrinsics.checkNotNullParameter(id2, "id");
             Intrinsics.checkNotNullParameter(cameraProperties, "cameraProperties");
-            this.f49473e = currentPart;
-            this.f49474i = uploadingIds;
-            this.f49475o = parts;
-            this.f49476p = i10;
-            this.f49477q = n1Var;
-            this.f49478r = str;
-            this.f49479s = id2;
-            this.f49480t = cameraProperties;
+            this.f50041e = currentPart;
+            this.f50042i = uploadingIds;
+            this.f50043o = parts;
+            this.f50044p = i10;
+            this.f50045q = n1Var;
+            this.f50046r = str;
+            this.f50047s = id2;
+            this.f50048t = cameraProperties;
         }
 
         @Override // android.os.Parcelable
@@ -948,57 +948,57 @@ public abstract class n1 implements Parcelable {
 
         @Override // to.n1
         public n1 e() {
-            return this.f49477q;
+            return this.f50045q;
         }
 
         @Override // to.n1
         public String f() {
-            return this.f49478r;
+            return this.f50046r;
         }
 
         @Override // to.n1
         public h4 g() {
-            return this.f49473e;
+            return this.f50041e;
         }
 
         @Override // to.n1
         public int j() {
-            return this.f49476p;
+            return this.f50044p;
         }
 
         @Override // to.n1
         public List k() {
-            return this.f49475o;
+            return this.f50043o;
         }
 
         @Override // to.n1
         public List l() {
-            return this.f49474i;
+            return this.f50042i;
         }
 
         public final c4 p() {
-            return this.f49479s;
+            return this.f50047s;
         }
 
         @Override // android.os.Parcelable
         public final void writeToParcel(Parcel dest, int i10) {
             Intrinsics.checkNotNullParameter(dest, "dest");
-            dest.writeParcelable(this.f49473e, i10);
-            List<Parcelable> list = this.f49474i;
+            dest.writeParcelable(this.f50041e, i10);
+            List<Parcelable> list = this.f50042i;
             dest.writeInt(list.size());
             for (Parcelable parcelable : list) {
                 dest.writeParcelable(parcelable, i10);
             }
-            List<Parcelable> list2 = this.f49475o;
+            List<Parcelable> list2 = this.f50043o;
             dest.writeInt(list2.size());
             for (Parcelable parcelable2 : list2) {
                 dest.writeParcelable(parcelable2, i10);
             }
-            dest.writeInt(this.f49476p);
-            dest.writeParcelable(this.f49477q, i10);
-            dest.writeString(this.f49478r);
-            this.f49479s.writeToParcel(dest, i10);
-            dest.writeParcelable(this.f49480t, i10);
+            dest.writeInt(this.f50044p);
+            dest.writeParcelable(this.f50045q, i10);
+            dest.writeString(this.f50046r);
+            this.f50047s.writeToParcel(dest, i10);
+            dest.writeParcelable(this.f50048t, i10);
         }
     }
 
@@ -1008,37 +1008,37 @@ public abstract class n1 implements Parcelable {
         public static final Parcelable.Creator<g> CREATOR = new a();
 
         /* renamed from: e  reason: collision with root package name */
-        private final h4.a f49481e;
+        private final h4.a f50049e;
 
         /* renamed from: i  reason: collision with root package name */
-        private final List f49482i;
+        private final List f50050i;
 
         /* renamed from: o  reason: collision with root package name */
-        private final q f49483o;
+        private final q f50051o;
 
         /* renamed from: p  reason: collision with root package name */
-        private final d0 f49484p;
+        private final d0 f50052p;
 
         /* renamed from: q  reason: collision with root package name */
-        private final List f49485q;
+        private final List f50053q;
 
         /* renamed from: r  reason: collision with root package name */
-        private final int f49486r;
+        private final int f50054r;
 
         /* renamed from: s  reason: collision with root package name */
-        private final n1 f49487s;
+        private final n1 f50055s;
 
         /* renamed from: t  reason: collision with root package name */
-        private final fo.v f49488t;
+        private final fo.v f50056t;
 
         /* renamed from: u  reason: collision with root package name */
-        private final String f49489u;
+        private final String f50057u;
 
         /* renamed from: v  reason: collision with root package name */
-        private final boolean f49490v;
+        private final boolean f50058v;
 
         /* renamed from: w  reason: collision with root package name */
-        private final String f49491w;
+        private final String f50059w;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         public static final class a implements Parcelable.Creator {
@@ -1083,37 +1083,37 @@ public abstract class n1 implements Parcelable {
 
         public static /* synthetic */ g v(g gVar, h4.a aVar, List list, q qVar, d0 d0Var, List list2, int i10, n1 n1Var, fo.v vVar, String str, boolean z10, String str2, int i11, Object obj) {
             if ((i11 & 1) != 0) {
-                aVar = gVar.f49481e;
+                aVar = gVar.f50049e;
             }
             if ((i11 & 2) != 0) {
-                list = gVar.f49482i;
+                list = gVar.f50050i;
             }
             if ((i11 & 4) != 0) {
-                qVar = gVar.f49483o;
+                qVar = gVar.f50051o;
             }
             if ((i11 & 8) != 0) {
-                d0Var = gVar.f49484p;
+                d0Var = gVar.f50052p;
             }
             if ((i11 & 16) != 0) {
-                list2 = gVar.f49485q;
+                list2 = gVar.f50053q;
             }
             if ((i11 & 32) != 0) {
-                i10 = gVar.f49486r;
+                i10 = gVar.f50054r;
             }
             if ((i11 & 64) != 0) {
-                n1Var = gVar.f49487s;
+                n1Var = gVar.f50055s;
             }
             if ((i11 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) != 0) {
-                vVar = gVar.f49488t;
+                vVar = gVar.f50056t;
             }
             if ((i11 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER) != 0) {
-                str = gVar.f49489u;
+                str = gVar.f50057u;
             }
             if ((i11 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING) != 0) {
-                z10 = gVar.f49490v;
+                z10 = gVar.f50058v;
             }
             if ((i11 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET) != 0) {
-                str2 = gVar.f49491w;
+                str2 = gVar.f50059w;
             }
             boolean z11 = z10;
             String str3 = str2;
@@ -1141,7 +1141,7 @@ public abstract class n1 implements Parcelable {
 
         @Override // to.n1
         public n1 e() {
-            return this.f49487s;
+            return this.f50055s;
         }
 
         public boolean equals(Object obj) {
@@ -1152,7 +1152,7 @@ public abstract class n1 implements Parcelable {
                 return false;
             }
             g gVar = (g) obj;
-            if (Intrinsics.areEqual(this.f49481e, gVar.f49481e) && Intrinsics.areEqual(this.f49482i, gVar.f49482i) && Intrinsics.areEqual(this.f49483o, gVar.f49483o) && Intrinsics.areEqual(this.f49484p, gVar.f49484p) && Intrinsics.areEqual(this.f49485q, gVar.f49485q) && this.f49486r == gVar.f49486r && Intrinsics.areEqual(this.f49487s, gVar.f49487s) && Intrinsics.areEqual(this.f49488t, gVar.f49488t) && Intrinsics.areEqual(this.f49489u, gVar.f49489u) && this.f49490v == gVar.f49490v && Intrinsics.areEqual(this.f49491w, gVar.f49491w)) {
+            if (Intrinsics.areEqual(this.f50049e, gVar.f50049e) && Intrinsics.areEqual(this.f50050i, gVar.f50050i) && Intrinsics.areEqual(this.f50051o, gVar.f50051o) && Intrinsics.areEqual(this.f50052p, gVar.f50052p) && Intrinsics.areEqual(this.f50053q, gVar.f50053q) && this.f50054r == gVar.f50054r && Intrinsics.areEqual(this.f50055s, gVar.f50055s) && Intrinsics.areEqual(this.f50056t, gVar.f50056t) && Intrinsics.areEqual(this.f50057u, gVar.f50057u) && this.f50058v == gVar.f50058v && Intrinsics.areEqual(this.f50059w, gVar.f50059w)) {
                 return true;
             }
             return false;
@@ -1160,29 +1160,29 @@ public abstract class n1 implements Parcelable {
 
         @Override // to.n1
         public String f() {
-            return this.f49491w;
+            return this.f50059w;
         }
 
         public int hashCode() {
             int hashCode;
             int hashCode2;
-            int hashCode3 = ((((((((((this.f49481e.hashCode() * 31) + this.f49482i.hashCode()) * 31) + this.f49483o.hashCode()) * 31) + this.f49484p.hashCode()) * 31) + this.f49485q.hashCode()) * 31) + Integer.hashCode(this.f49486r)) * 31;
-            n1 n1Var = this.f49487s;
+            int hashCode3 = ((((((((((this.f50049e.hashCode() * 31) + this.f50050i.hashCode()) * 31) + this.f50051o.hashCode()) * 31) + this.f50052p.hashCode()) * 31) + this.f50053q.hashCode()) * 31) + Integer.hashCode(this.f50054r)) * 31;
+            n1 n1Var = this.f50055s;
             int i10 = 0;
             if (n1Var == null) {
                 hashCode = 0;
             } else {
                 hashCode = n1Var.hashCode();
             }
-            int hashCode4 = (((hashCode3 + hashCode) * 31) + this.f49488t.hashCode()) * 31;
-            String str = this.f49489u;
+            int hashCode4 = (((hashCode3 + hashCode) * 31) + this.f50056t.hashCode()) * 31;
+            String str = this.f50057u;
             if (str == null) {
                 hashCode2 = 0;
             } else {
                 hashCode2 = str.hashCode();
             }
-            int hashCode5 = (((hashCode4 + hashCode2) * 31) + Boolean.hashCode(this.f49490v)) * 31;
-            String str2 = this.f49491w;
+            int hashCode5 = (((hashCode4 + hashCode2) * 31) + Boolean.hashCode(this.f50058v)) * 31;
+            String str2 = this.f50059w;
             if (str2 != null) {
                 i10 = str2.hashCode();
             }
@@ -1191,38 +1191,38 @@ public abstract class n1 implements Parcelable {
 
         @Override // to.n1
         public int j() {
-            return this.f49486r;
+            return this.f50054r;
         }
 
         @Override // to.n1
         public List k() {
-            return this.f49485q;
+            return this.f50053q;
         }
 
         @Override // to.n1
         public List l() {
-            return this.f49482i;
+            return this.f50050i;
         }
 
         @Override // to.n1.h
         public fo.v p() {
-            return this.f49488t;
+            return this.f50056t;
         }
 
         @Override // to.n1.h
         public q q() {
-            return this.f49483o;
+            return this.f50051o;
         }
 
         @Override // to.n1
         /* renamed from: r */
         public h4.a g() {
-            return this.f49481e;
+            return this.f50049e;
         }
 
         @Override // to.n1.h
         public d0 s() {
-            return this.f49484p;
+            return this.f50052p;
         }
 
         @Override // to.n1.h
@@ -1231,17 +1231,17 @@ public abstract class n1 implements Parcelable {
         }
 
         public String toString() {
-            h4.a aVar = this.f49481e;
-            List list = this.f49482i;
-            q qVar = this.f49483o;
-            d0 d0Var = this.f49484p;
-            List list2 = this.f49485q;
-            int i10 = this.f49486r;
-            n1 n1Var = this.f49487s;
-            fo.v vVar = this.f49488t;
-            String str = this.f49489u;
-            boolean z10 = this.f49490v;
-            String str2 = this.f49491w;
+            h4.a aVar = this.f50049e;
+            List list = this.f50050i;
+            q qVar = this.f50051o;
+            d0 d0Var = this.f50052p;
+            List list2 = this.f50053q;
+            int i10 = this.f50054r;
+            n1 n1Var = this.f50055s;
+            fo.v vVar = this.f50056t;
+            String str = this.f50057u;
+            boolean z10 = this.f50058v;
+            String str2 = this.f50059w;
             return "ReviewCapturedImage(currentPart=" + aVar + ", uploadingIds=" + list + ", captureConfig=" + qVar + ", idForReview=" + d0Var + ", parts=" + list2 + ", partIndex=" + i10 + ", backState=" + n1Var + ", cameraProperties=" + vVar + ", error=" + str + ", submittingForAutoClassification=" + z10 + ", countryCode=" + str2 + ")";
         }
 
@@ -1256,35 +1256,35 @@ public abstract class n1 implements Parcelable {
         }
 
         public final String w() {
-            return this.f49489u;
+            return this.f50057u;
         }
 
         @Override // android.os.Parcelable
         public final void writeToParcel(Parcel dest, int i10) {
             Intrinsics.checkNotNullParameter(dest, "dest");
-            this.f49481e.writeToParcel(dest, i10);
-            List<Parcelable> list = this.f49482i;
+            this.f50049e.writeToParcel(dest, i10);
+            List<Parcelable> list = this.f50050i;
             dest.writeInt(list.size());
             for (Parcelable parcelable : list) {
                 dest.writeParcelable(parcelable, i10);
             }
-            dest.writeParcelable(this.f49483o, i10);
-            dest.writeParcelable(this.f49484p, i10);
-            List<Parcelable> list2 = this.f49485q;
+            dest.writeParcelable(this.f50051o, i10);
+            dest.writeParcelable(this.f50052p, i10);
+            List<Parcelable> list2 = this.f50053q;
             dest.writeInt(list2.size());
             for (Parcelable parcelable2 : list2) {
                 dest.writeParcelable(parcelable2, i10);
             }
-            dest.writeInt(this.f49486r);
-            dest.writeParcelable(this.f49487s, i10);
-            dest.writeParcelable(this.f49488t, i10);
-            dest.writeString(this.f49489u);
-            dest.writeInt(this.f49490v ? 1 : 0);
-            dest.writeString(this.f49491w);
+            dest.writeInt(this.f50054r);
+            dest.writeParcelable(this.f50055s, i10);
+            dest.writeParcelable(this.f50056t, i10);
+            dest.writeString(this.f50057u);
+            dest.writeInt(this.f50058v ? 1 : 0);
+            dest.writeString(this.f50059w);
         }
 
         public boolean x() {
-            return this.f49490v;
+            return this.f50058v;
         }
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
@@ -1296,17 +1296,17 @@ public abstract class n1 implements Parcelable {
             Intrinsics.checkNotNullParameter(idForReview, "idForReview");
             Intrinsics.checkNotNullParameter(parts, "parts");
             Intrinsics.checkNotNullParameter(cameraProperties, "cameraProperties");
-            this.f49481e = currentPart;
-            this.f49482i = uploadingIds;
-            this.f49483o = captureConfig;
-            this.f49484p = idForReview;
-            this.f49485q = parts;
-            this.f49486r = i10;
-            this.f49487s = n1Var;
-            this.f49488t = cameraProperties;
-            this.f49489u = str;
-            this.f49490v = z10;
-            this.f49491w = str2;
+            this.f50049e = currentPart;
+            this.f50050i = uploadingIds;
+            this.f50051o = captureConfig;
+            this.f50052p = idForReview;
+            this.f50053q = parts;
+            this.f50054r = i10;
+            this.f50055s = n1Var;
+            this.f50056t = cameraProperties;
+            this.f50057u = str;
+            this.f50058v = z10;
+            this.f50059w = str2;
         }
     }
 
@@ -1367,7 +1367,7 @@ public abstract class n1 implements Parcelable {
     public abstract h4 g();
 
     public final boolean i() {
-        return this.f49421d;
+        return this.f49989d;
     }
 
     public abstract int j();
@@ -1377,7 +1377,7 @@ public abstract class n1 implements Parcelable {
     public abstract List l();
 
     public final void o(boolean z10) {
-        this.f49421d = z10;
+        this.f49989d = z10;
     }
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
@@ -1386,40 +1386,40 @@ public abstract class n1 implements Parcelable {
         public static final Parcelable.Creator<i> CREATOR = new a();
 
         /* renamed from: e  reason: collision with root package name */
-        private final h4.a f49492e;
+        private final h4.a f50060e;
 
         /* renamed from: i  reason: collision with root package name */
-        private final List f49493i;
+        private final List f50061i;
 
         /* renamed from: o  reason: collision with root package name */
-        private final q f49494o;
+        private final q f50062o;
 
         /* renamed from: p  reason: collision with root package name */
-        private final d0 f49495p;
+        private final d0 f50063p;
 
         /* renamed from: q  reason: collision with root package name */
-        private final String f49496q;
+        private final String f50064q;
 
         /* renamed from: r  reason: collision with root package name */
-        private final List f49497r;
+        private final List f50065r;
 
         /* renamed from: s  reason: collision with root package name */
-        private final int f49498s;
+        private final int f50066s;
 
         /* renamed from: t  reason: collision with root package name */
-        private final n1 f49499t;
+        private final n1 f50067t;
 
         /* renamed from: u  reason: collision with root package name */
-        private final fo.v f49500u;
+        private final fo.v f50068u;
 
         /* renamed from: v  reason: collision with root package name */
-        private final String f49501v;
+        private final String f50069v;
 
         /* renamed from: w  reason: collision with root package name */
-        private final boolean f49502w;
+        private final boolean f50070w;
 
         /* renamed from: x  reason: collision with root package name */
-        private final String f49503x;
+        private final String f50071x;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         public static final class a implements Parcelable.Creator {
@@ -1465,40 +1465,40 @@ public abstract class n1 implements Parcelable {
 
         public static /* synthetic */ i v(i iVar, h4.a aVar, List list, q qVar, d0 d0Var, String str, List list2, int i10, n1 n1Var, fo.v vVar, String str2, boolean z10, String str3, int i11, Object obj) {
             if ((i11 & 1) != 0) {
-                aVar = iVar.f49492e;
+                aVar = iVar.f50060e;
             }
             if ((i11 & 2) != 0) {
-                list = iVar.f49493i;
+                list = iVar.f50061i;
             }
             if ((i11 & 4) != 0) {
-                qVar = iVar.f49494o;
+                qVar = iVar.f50062o;
             }
             if ((i11 & 8) != 0) {
-                d0Var = iVar.f49495p;
+                d0Var = iVar.f50063p;
             }
             if ((i11 & 16) != 0) {
-                str = iVar.f49496q;
+                str = iVar.f50064q;
             }
             if ((i11 & 32) != 0) {
-                list2 = iVar.f49497r;
+                list2 = iVar.f50065r;
             }
             if ((i11 & 64) != 0) {
-                i10 = iVar.f49498s;
+                i10 = iVar.f50066s;
             }
             if ((i11 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) != 0) {
-                n1Var = iVar.f49499t;
+                n1Var = iVar.f50067t;
             }
             if ((i11 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER) != 0) {
-                vVar = iVar.f49500u;
+                vVar = iVar.f50068u;
             }
             if ((i11 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING) != 0) {
-                str2 = iVar.f49501v;
+                str2 = iVar.f50069v;
             }
             if ((i11 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET) != 0) {
-                z10 = iVar.f49502w;
+                z10 = iVar.f50070w;
             }
             if ((i11 & RecyclerView.ItemAnimator.FLAG_MOVED) != 0) {
-                str3 = iVar.f49503x;
+                str3 = iVar.f50071x;
             }
             boolean z11 = z10;
             String str4 = str3;
@@ -1512,7 +1512,7 @@ public abstract class n1 implements Parcelable {
         }
 
         public boolean A() {
-            return this.f49502w;
+            return this.f50070w;
         }
 
         @Override // to.n1
@@ -1530,7 +1530,7 @@ public abstract class n1 implements Parcelable {
 
         @Override // to.n1
         public n1 e() {
-            return this.f49499t;
+            return this.f50067t;
         }
 
         public boolean equals(Object obj) {
@@ -1541,7 +1541,7 @@ public abstract class n1 implements Parcelable {
                 return false;
             }
             i iVar = (i) obj;
-            if (Intrinsics.areEqual(this.f49492e, iVar.f49492e) && Intrinsics.areEqual(this.f49493i, iVar.f49493i) && Intrinsics.areEqual(this.f49494o, iVar.f49494o) && Intrinsics.areEqual(this.f49495p, iVar.f49495p) && Intrinsics.areEqual(this.f49496q, iVar.f49496q) && Intrinsics.areEqual(this.f49497r, iVar.f49497r) && this.f49498s == iVar.f49498s && Intrinsics.areEqual(this.f49499t, iVar.f49499t) && Intrinsics.areEqual(this.f49500u, iVar.f49500u) && Intrinsics.areEqual(this.f49501v, iVar.f49501v) && this.f49502w == iVar.f49502w && Intrinsics.areEqual(this.f49503x, iVar.f49503x)) {
+            if (Intrinsics.areEqual(this.f50060e, iVar.f50060e) && Intrinsics.areEqual(this.f50061i, iVar.f50061i) && Intrinsics.areEqual(this.f50062o, iVar.f50062o) && Intrinsics.areEqual(this.f50063p, iVar.f50063p) && Intrinsics.areEqual(this.f50064q, iVar.f50064q) && Intrinsics.areEqual(this.f50065r, iVar.f50065r) && this.f50066s == iVar.f50066s && Intrinsics.areEqual(this.f50067t, iVar.f50067t) && Intrinsics.areEqual(this.f50068u, iVar.f50068u) && Intrinsics.areEqual(this.f50069v, iVar.f50069v) && this.f50070w == iVar.f50070w && Intrinsics.areEqual(this.f50071x, iVar.f50071x)) {
                 return true;
             }
             return false;
@@ -1549,37 +1549,37 @@ public abstract class n1 implements Parcelable {
 
         @Override // to.n1
         public String f() {
-            return this.f49503x;
+            return this.f50071x;
         }
 
         public int hashCode() {
             int hashCode;
             int hashCode2;
             int hashCode3;
-            int hashCode4 = ((((((this.f49492e.hashCode() * 31) + this.f49493i.hashCode()) * 31) + this.f49494o.hashCode()) * 31) + this.f49495p.hashCode()) * 31;
-            String str = this.f49496q;
+            int hashCode4 = ((((((this.f50060e.hashCode() * 31) + this.f50061i.hashCode()) * 31) + this.f50062o.hashCode()) * 31) + this.f50063p.hashCode()) * 31;
+            String str = this.f50064q;
             int i10 = 0;
             if (str == null) {
                 hashCode = 0;
             } else {
                 hashCode = str.hashCode();
             }
-            int hashCode5 = (((((hashCode4 + hashCode) * 31) + this.f49497r.hashCode()) * 31) + Integer.hashCode(this.f49498s)) * 31;
-            n1 n1Var = this.f49499t;
+            int hashCode5 = (((((hashCode4 + hashCode) * 31) + this.f50065r.hashCode()) * 31) + Integer.hashCode(this.f50066s)) * 31;
+            n1 n1Var = this.f50067t;
             if (n1Var == null) {
                 hashCode2 = 0;
             } else {
                 hashCode2 = n1Var.hashCode();
             }
-            int hashCode6 = (((hashCode5 + hashCode2) * 31) + this.f49500u.hashCode()) * 31;
-            String str2 = this.f49501v;
+            int hashCode6 = (((hashCode5 + hashCode2) * 31) + this.f50068u.hashCode()) * 31;
+            String str2 = this.f50069v;
             if (str2 == null) {
                 hashCode3 = 0;
             } else {
                 hashCode3 = str2.hashCode();
             }
-            int hashCode7 = (((hashCode6 + hashCode3) * 31) + Boolean.hashCode(this.f49502w)) * 31;
-            String str3 = this.f49503x;
+            int hashCode7 = (((hashCode6 + hashCode3) * 31) + Boolean.hashCode(this.f50070w)) * 31;
+            String str3 = this.f50071x;
             if (str3 != null) {
                 i10 = str3.hashCode();
             }
@@ -1588,38 +1588,38 @@ public abstract class n1 implements Parcelable {
 
         @Override // to.n1
         public int j() {
-            return this.f49498s;
+            return this.f50066s;
         }
 
         @Override // to.n1
         public List k() {
-            return this.f49497r;
+            return this.f50065r;
         }
 
         @Override // to.n1
         public List l() {
-            return this.f49493i;
+            return this.f50061i;
         }
 
         @Override // to.n1.h
         public fo.v p() {
-            return this.f49500u;
+            return this.f50068u;
         }
 
         @Override // to.n1.h
         public q q() {
-            return this.f49494o;
+            return this.f50062o;
         }
 
         @Override // to.n1
         /* renamed from: r */
         public h4.a g() {
-            return this.f49492e;
+            return this.f50060e;
         }
 
         @Override // to.n1.h
         public d0 s() {
-            return this.f49495p;
+            return this.f50063p;
         }
 
         @Override // to.n1.h
@@ -1628,18 +1628,18 @@ public abstract class n1 implements Parcelable {
         }
 
         public String toString() {
-            h4.a aVar = this.f49492e;
-            List list = this.f49493i;
-            q qVar = this.f49494o;
-            d0 d0Var = this.f49495p;
-            String str = this.f49496q;
-            List list2 = this.f49497r;
-            int i10 = this.f49498s;
-            n1 n1Var = this.f49499t;
-            fo.v vVar = this.f49500u;
-            String str2 = this.f49501v;
-            boolean z10 = this.f49502w;
-            String str3 = this.f49503x;
+            h4.a aVar = this.f50060e;
+            List list = this.f50061i;
+            q qVar = this.f50062o;
+            d0 d0Var = this.f50063p;
+            String str = this.f50064q;
+            List list2 = this.f50065r;
+            int i10 = this.f50066s;
+            n1 n1Var = this.f50067t;
+            fo.v vVar = this.f50068u;
+            String str2 = this.f50069v;
+            boolean z10 = this.f50070w;
+            String str3 = this.f50071x;
             return "ReviewSelectedImage(currentPart=" + aVar + ", uploadingIds=" + list + ", captureConfig=" + qVar + ", idForReview=" + d0Var + ", fileName=" + str + ", parts=" + list2 + ", partIndex=" + i10 + ", backState=" + n1Var + ", cameraProperties=" + vVar + ", error=" + str2 + ", submittingForAutoClassification=" + z10 + ", countryCode=" + str3 + ")";
         }
 
@@ -1654,36 +1654,36 @@ public abstract class n1 implements Parcelable {
         }
 
         public final String w() {
-            return this.f49501v;
+            return this.f50069v;
         }
 
         @Override // android.os.Parcelable
         public final void writeToParcel(Parcel dest, int i10) {
             Intrinsics.checkNotNullParameter(dest, "dest");
-            this.f49492e.writeToParcel(dest, i10);
-            List<Parcelable> list = this.f49493i;
+            this.f50060e.writeToParcel(dest, i10);
+            List<Parcelable> list = this.f50061i;
             dest.writeInt(list.size());
             for (Parcelable parcelable : list) {
                 dest.writeParcelable(parcelable, i10);
             }
-            dest.writeParcelable(this.f49494o, i10);
-            dest.writeParcelable(this.f49495p, i10);
-            dest.writeString(this.f49496q);
-            List<Parcelable> list2 = this.f49497r;
+            dest.writeParcelable(this.f50062o, i10);
+            dest.writeParcelable(this.f50063p, i10);
+            dest.writeString(this.f50064q);
+            List<Parcelable> list2 = this.f50065r;
             dest.writeInt(list2.size());
             for (Parcelable parcelable2 : list2) {
                 dest.writeParcelable(parcelable2, i10);
             }
-            dest.writeInt(this.f49498s);
-            dest.writeParcelable(this.f49499t, i10);
-            dest.writeParcelable(this.f49500u, i10);
-            dest.writeString(this.f49501v);
-            dest.writeInt(this.f49502w ? 1 : 0);
-            dest.writeString(this.f49503x);
+            dest.writeInt(this.f50066s);
+            dest.writeParcelable(this.f50067t, i10);
+            dest.writeParcelable(this.f50068u, i10);
+            dest.writeString(this.f50069v);
+            dest.writeInt(this.f50070w ? 1 : 0);
+            dest.writeString(this.f50071x);
         }
 
         public final String x() {
-            return this.f49496q;
+            return this.f50064q;
         }
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
@@ -1695,18 +1695,18 @@ public abstract class n1 implements Parcelable {
             Intrinsics.checkNotNullParameter(idForReview, "idForReview");
             Intrinsics.checkNotNullParameter(parts, "parts");
             Intrinsics.checkNotNullParameter(cameraProperties, "cameraProperties");
-            this.f49492e = currentPart;
-            this.f49493i = uploadingIds;
-            this.f49494o = captureConfig;
-            this.f49495p = idForReview;
-            this.f49496q = str;
-            this.f49497r = parts;
-            this.f49498s = i10;
-            this.f49499t = n1Var;
-            this.f49500u = cameraProperties;
-            this.f49501v = str2;
-            this.f49502w = z10;
-            this.f49503x = str3;
+            this.f50060e = currentPart;
+            this.f50061i = uploadingIds;
+            this.f50062o = captureConfig;
+            this.f50063p = idForReview;
+            this.f50064q = str;
+            this.f50065r = parts;
+            this.f50066s = i10;
+            this.f50067t = n1Var;
+            this.f50068u = cameraProperties;
+            this.f50069v = str2;
+            this.f50070w = z10;
+            this.f50071x = str3;
         }
     }
 
@@ -1716,34 +1716,34 @@ public abstract class n1 implements Parcelable {
         public static final Parcelable.Creator<k> CREATOR = new a();
 
         /* renamed from: e  reason: collision with root package name */
-        private final c4 f49512e;
+        private final c4 f50080e;
 
         /* renamed from: i  reason: collision with root package name */
-        private final List f49513i;
+        private final List f50081i;
 
         /* renamed from: o  reason: collision with root package name */
-        private final h4 f49514o;
+        private final h4 f50082o;
 
         /* renamed from: p  reason: collision with root package name */
-        private final List f49515p;
+        private final List f50083p;
 
         /* renamed from: q  reason: collision with root package name */
-        private final int f49516q;
+        private final int f50084q;
 
         /* renamed from: r  reason: collision with root package name */
-        private final n1 f49517r;
+        private final n1 f50085r;
 
         /* renamed from: s  reason: collision with root package name */
-        private final String f49518s;
+        private final String f50086s;
 
         /* renamed from: t  reason: collision with root package name */
-        private final ap.c f49519t;
+        private final ap.c f50087t;
 
         /* renamed from: u  reason: collision with root package name */
-        private final String f49520u;
+        private final String f50088u;
 
         /* renamed from: v  reason: collision with root package name */
-        private final fo.v f49521v;
+        private final fo.v f50089v;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         public static final class a implements Parcelable.Creator {
@@ -1783,7 +1783,7 @@ public abstract class n1 implements Parcelable {
         }
 
         public /* synthetic */ k(c4 c4Var, List list, h4 h4Var, List list2, int i10, n1 n1Var, String str, ap.c cVar, String str2, fo.v vVar, int i11, DefaultConstructorMarker defaultConstructorMarker) {
-            this(c4Var, list, (i11 & 4) != 0 ? new h4.a(c4.e.f49014o) : h4Var, list2, i10, (i11 & 32) != 0 ? null : n1Var, str, (i11 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) != 0 ? null : cVar, str2, vVar);
+            this(c4Var, list, (i11 & 4) != 0 ? new h4.a(c4.e.f49582o) : h4Var, list2, i10, (i11 & 32) != 0 ? null : n1Var, str, (i11 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) != 0 ? null : cVar, str2, vVar);
         }
 
         @Override // android.os.Parcelable
@@ -1793,7 +1793,7 @@ public abstract class n1 implements Parcelable {
 
         @Override // to.n1
         public n1 e() {
-            return this.f49517r;
+            return this.f50085r;
         }
 
         public boolean equals(Object obj) {
@@ -1804,7 +1804,7 @@ public abstract class n1 implements Parcelable {
                 return false;
             }
             k kVar = (k) obj;
-            if (Intrinsics.areEqual(this.f49512e, kVar.f49512e) && Intrinsics.areEqual(this.f49513i, kVar.f49513i) && Intrinsics.areEqual(this.f49514o, kVar.f49514o) && Intrinsics.areEqual(this.f49515p, kVar.f49515p) && this.f49516q == kVar.f49516q && Intrinsics.areEqual(this.f49517r, kVar.f49517r) && Intrinsics.areEqual(this.f49518s, kVar.f49518s) && Intrinsics.areEqual(this.f49519t, kVar.f49519t) && Intrinsics.areEqual(this.f49520u, kVar.f49520u) && Intrinsics.areEqual(this.f49521v, kVar.f49521v)) {
+            if (Intrinsics.areEqual(this.f50080e, kVar.f50080e) && Intrinsics.areEqual(this.f50081i, kVar.f50081i) && Intrinsics.areEqual(this.f50082o, kVar.f50082o) && Intrinsics.areEqual(this.f50083p, kVar.f50083p) && this.f50084q == kVar.f50084q && Intrinsics.areEqual(this.f50085r, kVar.f50085r) && Intrinsics.areEqual(this.f50086s, kVar.f50086s) && Intrinsics.areEqual(this.f50087t, kVar.f50087t) && Intrinsics.areEqual(this.f50088u, kVar.f50088u) && Intrinsics.areEqual(this.f50089v, kVar.f50089v)) {
                 return true;
             }
             return false;
@@ -1812,20 +1812,20 @@ public abstract class n1 implements Parcelable {
 
         @Override // to.n1
         public String f() {
-            return this.f49518s;
+            return this.f50086s;
         }
 
         @Override // to.n1
         public h4 g() {
-            return this.f49514o;
+            return this.f50082o;
         }
 
         public int hashCode() {
             int hashCode;
             int hashCode2;
             int hashCode3;
-            int hashCode4 = ((((((((this.f49512e.hashCode() * 31) + this.f49513i.hashCode()) * 31) + this.f49514o.hashCode()) * 31) + this.f49515p.hashCode()) * 31) + Integer.hashCode(this.f49516q)) * 31;
-            n1 n1Var = this.f49517r;
+            int hashCode4 = ((((((((this.f50080e.hashCode() * 31) + this.f50081i.hashCode()) * 31) + this.f50082o.hashCode()) * 31) + this.f50083p.hashCode()) * 31) + Integer.hashCode(this.f50084q)) * 31;
+            n1 n1Var = this.f50085r;
             int i10 = 0;
             if (n1Var == null) {
                 hashCode = 0;
@@ -1833,95 +1833,95 @@ public abstract class n1 implements Parcelable {
                 hashCode = n1Var.hashCode();
             }
             int i11 = (hashCode4 + hashCode) * 31;
-            String str = this.f49518s;
+            String str = this.f50086s;
             if (str == null) {
                 hashCode2 = 0;
             } else {
                 hashCode2 = str.hashCode();
             }
             int i12 = (i11 + hashCode2) * 31;
-            ap.c cVar = this.f49519t;
+            ap.c cVar = this.f50087t;
             if (cVar == null) {
                 hashCode3 = 0;
             } else {
                 hashCode3 = cVar.hashCode();
             }
             int i13 = (i12 + hashCode3) * 31;
-            String str2 = this.f49520u;
+            String str2 = this.f50088u;
             if (str2 != null) {
                 i10 = str2.hashCode();
             }
-            return ((i13 + i10) * 31) + this.f49521v.hashCode();
+            return ((i13 + i10) * 31) + this.f50089v.hashCode();
         }
 
         @Override // to.n1
         public int j() {
-            return this.f49516q;
+            return this.f50084q;
         }
 
         @Override // to.n1
         public List k() {
-            return this.f49515p;
+            return this.f50083p;
         }
 
         @Override // to.n1
         public List l() {
-            return this.f49513i;
+            return this.f50081i;
         }
 
         public final fo.v p() {
-            return this.f49521v;
+            return this.f50089v;
         }
 
         public final ap.c q() {
-            return this.f49519t;
+            return this.f50087t;
         }
 
         public final String r() {
-            return this.f49520u;
+            return this.f50088u;
         }
 
         public String toString() {
-            c4 c4Var = this.f49512e;
-            List list = this.f49513i;
-            h4 h4Var = this.f49514o;
-            List list2 = this.f49515p;
-            int i10 = this.f49516q;
-            n1 n1Var = this.f49517r;
-            String str = this.f49518s;
-            ap.c cVar = this.f49519t;
-            String str2 = this.f49520u;
-            fo.v vVar = this.f49521v;
+            c4 c4Var = this.f50080e;
+            List list = this.f50081i;
+            h4 h4Var = this.f50082o;
+            List list2 = this.f50083p;
+            int i10 = this.f50084q;
+            n1 n1Var = this.f50085r;
+            String str = this.f50086s;
+            ap.c cVar = this.f50087t;
+            String str2 = this.f50088u;
+            fo.v vVar = this.f50089v;
             return "Submit(id=" + c4Var + ", uploadingIds=" + list + ", currentPart=" + h4Var + ", parts=" + list2 + ", partIndex=" + i10 + ", backState=" + n1Var + ", countryCode=" + str + ", governmentIdRequestArguments=" + cVar + ", webRtcObjectId=" + str2 + ", cameraProperties=" + vVar + ")";
         }
 
         @Override // android.os.Parcelable
         public final void writeToParcel(Parcel dest, int i10) {
             Intrinsics.checkNotNullParameter(dest, "dest");
-            this.f49512e.writeToParcel(dest, i10);
-            List<Parcelable> list = this.f49513i;
+            this.f50080e.writeToParcel(dest, i10);
+            List<Parcelable> list = this.f50081i;
             dest.writeInt(list.size());
             for (Parcelable parcelable : list) {
                 dest.writeParcelable(parcelable, i10);
             }
-            dest.writeParcelable(this.f49514o, i10);
-            List<Parcelable> list2 = this.f49515p;
+            dest.writeParcelable(this.f50082o, i10);
+            List<Parcelable> list2 = this.f50083p;
             dest.writeInt(list2.size());
             for (Parcelable parcelable2 : list2) {
                 dest.writeParcelable(parcelable2, i10);
             }
-            dest.writeInt(this.f49516q);
-            dest.writeParcelable(this.f49517r, i10);
-            dest.writeString(this.f49518s);
-            ap.c cVar = this.f49519t;
+            dest.writeInt(this.f50084q);
+            dest.writeParcelable(this.f50085r, i10);
+            dest.writeString(this.f50086s);
+            ap.c cVar = this.f50087t;
             if (cVar == null) {
                 dest.writeInt(0);
             } else {
                 dest.writeInt(1);
                 cVar.writeToParcel(dest, i10);
             }
-            dest.writeString(this.f49520u);
-            dest.writeParcelable(this.f49521v, i10);
+            dest.writeString(this.f50088u);
+            dest.writeParcelable(this.f50089v, i10);
         }
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
@@ -1932,16 +1932,16 @@ public abstract class n1 implements Parcelable {
             Intrinsics.checkNotNullParameter(currentPart, "currentPart");
             Intrinsics.checkNotNullParameter(parts, "parts");
             Intrinsics.checkNotNullParameter(cameraProperties, "cameraProperties");
-            this.f49512e = id2;
-            this.f49513i = uploadingIds;
-            this.f49514o = currentPart;
-            this.f49515p = parts;
-            this.f49516q = i10;
-            this.f49517r = n1Var;
-            this.f49518s = str;
-            this.f49519t = cVar;
-            this.f49520u = str2;
-            this.f49521v = cameraProperties;
+            this.f50080e = id2;
+            this.f50081i = uploadingIds;
+            this.f50082o = currentPart;
+            this.f50083p = parts;
+            this.f50084q = i10;
+            this.f50085r = n1Var;
+            this.f50086s = str;
+            this.f50087t = cVar;
+            this.f50088u = str2;
+            this.f50089v = cameraProperties;
         }
     }
 
@@ -1952,46 +1952,46 @@ public abstract class n1 implements Parcelable {
         private final Function0 A;
 
         /* renamed from: e  reason: collision with root package name */
-        private final h4.a f49522e;
+        private final h4.a f50090e;
 
         /* renamed from: i  reason: collision with root package name */
-        private final List f49523i;
+        private final List f50091i;
 
         /* renamed from: o  reason: collision with root package name */
-        private final q f49524o;
+        private final q f50092o;
 
         /* renamed from: p  reason: collision with root package name */
-        private final f5.b.a f49525p;
+        private final f5.b.a f50093p;
 
         /* renamed from: q  reason: collision with root package name */
-        private final List f49526q;
+        private final List f50094q;
 
         /* renamed from: r  reason: collision with root package name */
-        private final int f49527r;
+        private final int f50095r;
 
         /* renamed from: s  reason: collision with root package name */
-        private final n1 f49528s;
+        private final n1 f50096s;
 
         /* renamed from: t  reason: collision with root package name */
-        private final bp.t f49529t;
+        private final bp.t f50097t;
 
         /* renamed from: u  reason: collision with root package name */
-        private final String f49530u;
+        private final String f50098u;
 
         /* renamed from: v  reason: collision with root package name */
-        private final Throwable f49531v;
+        private final Throwable f50099v;
 
         /* renamed from: w  reason: collision with root package name */
-        private final boolean f49532w;
+        private final boolean f50100w;
 
         /* renamed from: x  reason: collision with root package name */
-        private final boolean f49533x;
+        private final boolean f50101x;
 
         /* renamed from: y  reason: collision with root package name */
-        private final String f49534y;
+        private final String f50102y;
 
         /* renamed from: z  reason: collision with root package name */
-        private final zo.d f49535z;
+        private final zo.d f50103z;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         public static final class a implements Parcelable.Creator {
@@ -2055,19 +2055,19 @@ public abstract class n1 implements Parcelable {
 
         /* JADX INFO: Access modifiers changed from: private */
         public static final Unit q() {
-            return Unit.f31988a;
+            return Unit.f32556a;
         }
 
         public static /* synthetic */ l s(l lVar, h4.a aVar, List list, q qVar, f5.b.a aVar2, List list2, int i10, n1 n1Var, bp.t tVar, String str, Throwable th2, boolean z10, boolean z11, String str2, zo.d dVar, Function0 function0, int i11, Object obj) {
-            return lVar.r((i11 & 1) != 0 ? lVar.f49522e : aVar, (i11 & 2) != 0 ? lVar.f49523i : list, (i11 & 4) != 0 ? lVar.f49524o : qVar, (i11 & 8) != 0 ? lVar.f49525p : aVar2, (i11 & 16) != 0 ? lVar.f49526q : list2, (i11 & 32) != 0 ? lVar.f49527r : i10, (i11 & 64) != 0 ? lVar.f49528s : n1Var, (i11 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) != 0 ? lVar.f49529t : tVar, (i11 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER) != 0 ? lVar.f49530u : str, (i11 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING) != 0 ? lVar.f49531v : th2, (i11 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET) != 0 ? lVar.f49532w : z10, (i11 & RecyclerView.ItemAnimator.FLAG_MOVED) != 0 ? lVar.f49533x : z11, (i11 & RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT) != 0 ? lVar.f49534y : str2, (i11 & 8192) != 0 ? lVar.f49535z : dVar, (i11 & 16384) != 0 ? lVar.A : function0);
+            return lVar.r((i11 & 1) != 0 ? lVar.f50090e : aVar, (i11 & 2) != 0 ? lVar.f50091i : list, (i11 & 4) != 0 ? lVar.f50092o : qVar, (i11 & 8) != 0 ? lVar.f50093p : aVar2, (i11 & 16) != 0 ? lVar.f50094q : list2, (i11 & 32) != 0 ? lVar.f50095r : i10, (i11 & 64) != 0 ? lVar.f50096s : n1Var, (i11 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) != 0 ? lVar.f50097t : tVar, (i11 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER) != 0 ? lVar.f50098u : str, (i11 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING) != 0 ? lVar.f50099v : th2, (i11 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET) != 0 ? lVar.f50100w : z10, (i11 & RecyclerView.ItemAnimator.FLAG_MOVED) != 0 ? lVar.f50101x : z11, (i11 & RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT) != 0 ? lVar.f50102y : str2, (i11 & 8192) != 0 ? lVar.f50103z : dVar, (i11 & 16384) != 0 ? lVar.A : function0);
         }
 
         public final zo.d A() {
-            return this.f49535z;
+            return this.f50103z;
         }
 
         public final f5.b.a B() {
-            return this.f49525p;
+            return this.f50093p;
         }
 
         public final Function0 C() {
@@ -2075,11 +2075,11 @@ public abstract class n1 implements Parcelable {
         }
 
         public final String D() {
-            return this.f49530u;
+            return this.f50098u;
         }
 
         public final bp.t E() {
-            return this.f49529t;
+            return this.f50097t;
         }
 
         @Override // to.b
@@ -2099,7 +2099,7 @@ public abstract class n1 implements Parcelable {
 
         @Override // to.n1
         public n1 e() {
-            return this.f49528s;
+            return this.f50096s;
         }
 
         public boolean equals(Object obj) {
@@ -2110,7 +2110,7 @@ public abstract class n1 implements Parcelable {
                 return false;
             }
             l lVar = (l) obj;
-            if (Intrinsics.areEqual(this.f49522e, lVar.f49522e) && Intrinsics.areEqual(this.f49523i, lVar.f49523i) && Intrinsics.areEqual(this.f49524o, lVar.f49524o) && this.f49525p == lVar.f49525p && Intrinsics.areEqual(this.f49526q, lVar.f49526q) && this.f49527r == lVar.f49527r && Intrinsics.areEqual(this.f49528s, lVar.f49528s) && this.f49529t == lVar.f49529t && Intrinsics.areEqual(this.f49530u, lVar.f49530u) && Intrinsics.areEqual(this.f49531v, lVar.f49531v) && this.f49532w == lVar.f49532w && this.f49533x == lVar.f49533x && Intrinsics.areEqual(this.f49534y, lVar.f49534y) && Intrinsics.areEqual(this.f49535z, lVar.f49535z) && Intrinsics.areEqual(this.A, lVar.A)) {
+            if (Intrinsics.areEqual(this.f50090e, lVar.f50090e) && Intrinsics.areEqual(this.f50091i, lVar.f50091i) && Intrinsics.areEqual(this.f50092o, lVar.f50092o) && this.f50093p == lVar.f50093p && Intrinsics.areEqual(this.f50094q, lVar.f50094q) && this.f50095r == lVar.f50095r && Intrinsics.areEqual(this.f50096s, lVar.f50096s) && this.f50097t == lVar.f50097t && Intrinsics.areEqual(this.f50098u, lVar.f50098u) && Intrinsics.areEqual(this.f50099v, lVar.f50099v) && this.f50100w == lVar.f50100w && this.f50101x == lVar.f50101x && Intrinsics.areEqual(this.f50102y, lVar.f50102y) && Intrinsics.areEqual(this.f50103z, lVar.f50103z) && Intrinsics.areEqual(this.A, lVar.A)) {
                 return true;
             }
             return false;
@@ -2118,7 +2118,7 @@ public abstract class n1 implements Parcelable {
 
         @Override // to.n1
         public String f() {
-            return this.f49534y;
+            return this.f50102y;
         }
 
         public int hashCode() {
@@ -2127,8 +2127,8 @@ public abstract class n1 implements Parcelable {
             int hashCode3;
             int hashCode4;
             int hashCode5;
-            int hashCode6 = ((((((((((this.f49522e.hashCode() * 31) + this.f49523i.hashCode()) * 31) + this.f49524o.hashCode()) * 31) + this.f49525p.hashCode()) * 31) + this.f49526q.hashCode()) * 31) + Integer.hashCode(this.f49527r)) * 31;
-            n1 n1Var = this.f49528s;
+            int hashCode6 = ((((((((((this.f50090e.hashCode() * 31) + this.f50091i.hashCode()) * 31) + this.f50092o.hashCode()) * 31) + this.f50093p.hashCode()) * 31) + this.f50094q.hashCode()) * 31) + Integer.hashCode(this.f50095r)) * 31;
+            n1 n1Var = this.f50096s;
             int i10 = 0;
             if (n1Var == null) {
                 hashCode = 0;
@@ -2136,35 +2136,35 @@ public abstract class n1 implements Parcelable {
                 hashCode = n1Var.hashCode();
             }
             int i11 = (hashCode6 + hashCode) * 31;
-            bp.t tVar = this.f49529t;
+            bp.t tVar = this.f50097t;
             if (tVar == null) {
                 hashCode2 = 0;
             } else {
                 hashCode2 = tVar.hashCode();
             }
             int i12 = (i11 + hashCode2) * 31;
-            String str = this.f49530u;
+            String str = this.f50098u;
             if (str == null) {
                 hashCode3 = 0;
             } else {
                 hashCode3 = str.hashCode();
             }
             int i13 = (i12 + hashCode3) * 31;
-            Throwable th2 = this.f49531v;
+            Throwable th2 = this.f50099v;
             if (th2 == null) {
                 hashCode4 = 0;
             } else {
                 hashCode4 = th2.hashCode();
             }
-            int hashCode7 = (((((i13 + hashCode4) * 31) + Boolean.hashCode(this.f49532w)) * 31) + Boolean.hashCode(this.f49533x)) * 31;
-            String str2 = this.f49534y;
+            int hashCode7 = (((((i13 + hashCode4) * 31) + Boolean.hashCode(this.f50100w)) * 31) + Boolean.hashCode(this.f50101x)) * 31;
+            String str2 = this.f50102y;
             if (str2 == null) {
                 hashCode5 = 0;
             } else {
                 hashCode5 = str2.hashCode();
             }
             int i14 = (hashCode7 + hashCode5) * 31;
-            zo.d dVar = this.f49535z;
+            zo.d dVar = this.f50103z;
             if (dVar != null) {
                 i10 = dVar.hashCode();
             }
@@ -2173,17 +2173,17 @@ public abstract class n1 implements Parcelable {
 
         @Override // to.n1
         public int j() {
-            return this.f49527r;
+            return this.f50095r;
         }
 
         @Override // to.n1
         public List k() {
-            return this.f49526q;
+            return this.f50094q;
         }
 
         @Override // to.n1
         public List l() {
-            return this.f49523i;
+            return this.f50091i;
         }
 
         public final l r(h4.a currentPart, List uploadingIds, q captureConfig, f5.b.a manualCapture, List parts, int i10, n1 n1Var, bp.t tVar, String str, Throwable th2, boolean z10, boolean z11, String str2, zo.d dVar, Function0 webRtcConnectionEstablished) {
@@ -2197,77 +2197,77 @@ public abstract class n1 implements Parcelable {
         }
 
         public final q t() {
-            return this.f49524o;
+            return this.f50092o;
         }
 
         public String toString() {
-            h4.a aVar = this.f49522e;
-            List list = this.f49523i;
-            q qVar = this.f49524o;
-            f5.b.a aVar2 = this.f49525p;
-            List list2 = this.f49526q;
-            int i10 = this.f49527r;
-            n1 n1Var = this.f49528s;
-            bp.t tVar = this.f49529t;
-            String str = this.f49530u;
-            Throwable th2 = this.f49531v;
-            boolean z10 = this.f49532w;
-            boolean z11 = this.f49533x;
-            String str2 = this.f49534y;
-            zo.d dVar = this.f49535z;
+            h4.a aVar = this.f50090e;
+            List list = this.f50091i;
+            q qVar = this.f50092o;
+            f5.b.a aVar2 = this.f50093p;
+            List list2 = this.f50094q;
+            int i10 = this.f50095r;
+            n1 n1Var = this.f50096s;
+            bp.t tVar = this.f50097t;
+            String str = this.f50098u;
+            Throwable th2 = this.f50099v;
+            boolean z10 = this.f50100w;
+            boolean z11 = this.f50101x;
+            String str2 = this.f50102y;
+            zo.d dVar = this.f50103z;
             Function0 function0 = this.A;
             return "WaitForAutocapture(currentPart=" + aVar + ", uploadingIds=" + list + ", captureConfig=" + qVar + ", manualCapture=" + aVar2 + ", parts=" + list2 + ", partIndex=" + i10 + ", backState=" + n1Var + ", webRtcState=" + tVar + ", webRtcJwt=" + str + ", error=" + th2 + ", checkCameraPermissions=" + z10 + ", checkAudioPermissions=" + z11 + ", countryCode=" + str2 + ", hint=" + dVar + ", webRtcConnectionEstablished=" + function0 + ")";
         }
 
         public boolean u() {
-            return this.f49533x;
+            return this.f50101x;
         }
 
         public boolean v() {
-            return this.f49532w;
+            return this.f50100w;
         }
 
         @Override // to.n1
         /* renamed from: w */
         public h4.a g() {
-            return this.f49522e;
+            return this.f50090e;
         }
 
         @Override // android.os.Parcelable
         public final void writeToParcel(Parcel dest, int i10) {
             Intrinsics.checkNotNullParameter(dest, "dest");
-            this.f49522e.writeToParcel(dest, i10);
-            List<Parcelable> list = this.f49523i;
+            this.f50090e.writeToParcel(dest, i10);
+            List<Parcelable> list = this.f50091i;
             dest.writeInt(list.size());
             for (Parcelable parcelable : list) {
                 dest.writeParcelable(parcelable, i10);
             }
-            dest.writeParcelable(this.f49524o, i10);
-            dest.writeString(this.f49525p.name());
-            List<Parcelable> list2 = this.f49526q;
+            dest.writeParcelable(this.f50092o, i10);
+            dest.writeString(this.f50093p.name());
+            List<Parcelable> list2 = this.f50094q;
             dest.writeInt(list2.size());
             for (Parcelable parcelable2 : list2) {
                 dest.writeParcelable(parcelable2, i10);
             }
-            dest.writeInt(this.f49527r);
-            dest.writeParcelable(this.f49528s, i10);
-            bp.t tVar = this.f49529t;
+            dest.writeInt(this.f50095r);
+            dest.writeParcelable(this.f50096s, i10);
+            bp.t tVar = this.f50097t;
             if (tVar == null) {
                 dest.writeInt(0);
             } else {
                 dest.writeInt(1);
                 dest.writeString(tVar.name());
             }
-            dest.writeString(this.f49530u);
-            dest.writeSerializable(this.f49531v);
-            dest.writeInt(this.f49532w ? 1 : 0);
-            dest.writeInt(this.f49533x ? 1 : 0);
-            dest.writeString(this.f49534y);
-            dest.writeParcelable(this.f49535z, i10);
+            dest.writeString(this.f50098u);
+            dest.writeSerializable(this.f50099v);
+            dest.writeInt(this.f50100w ? 1 : 0);
+            dest.writeInt(this.f50101x ? 1 : 0);
+            dest.writeString(this.f50102y);
+            dest.writeParcelable(this.f50103z, i10);
         }
 
         public final Throwable x() {
-            return this.f49531v;
+            return this.f50099v;
         }
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
@@ -2279,20 +2279,20 @@ public abstract class n1 implements Parcelable {
             Intrinsics.checkNotNullParameter(manualCapture, "manualCapture");
             Intrinsics.checkNotNullParameter(parts, "parts");
             Intrinsics.checkNotNullParameter(webRtcConnectionEstablished, "webRtcConnectionEstablished");
-            this.f49522e = currentPart;
-            this.f49523i = uploadingIds;
-            this.f49524o = captureConfig;
-            this.f49525p = manualCapture;
-            this.f49526q = parts;
-            this.f49527r = i10;
-            this.f49528s = n1Var;
-            this.f49529t = tVar;
-            this.f49530u = str;
-            this.f49531v = th2;
-            this.f49532w = z10;
-            this.f49533x = z11;
-            this.f49534y = str2;
-            this.f49535z = dVar;
+            this.f50090e = currentPart;
+            this.f50091i = uploadingIds;
+            this.f50092o = captureConfig;
+            this.f50093p = manualCapture;
+            this.f50094q = parts;
+            this.f50095r = i10;
+            this.f50096s = n1Var;
+            this.f50097t = tVar;
+            this.f50098u = str;
+            this.f50099v = th2;
+            this.f50100w = z10;
+            this.f50101x = z11;
+            this.f50102y = str2;
+            this.f50103z = dVar;
             this.A = webRtcConnectionEstablished;
         }
     }
@@ -2306,40 +2306,40 @@ public abstract class n1 implements Parcelable {
         public static final Parcelable.Creator<a> CREATOR = new C0675a();
 
         /* renamed from: e  reason: collision with root package name */
-        private final h4.a f49422e;
+        private final h4.a f49990e;
 
         /* renamed from: i  reason: collision with root package name */
-        private final List f49423i;
+        private final List f49991i;
 
         /* renamed from: o  reason: collision with root package name */
-        private final List f49424o;
+        private final List f49992o;
 
         /* renamed from: p  reason: collision with root package name */
-        private final int f49425p;
+        private final int f49993p;
 
         /* renamed from: q  reason: collision with root package name */
-        private final n1 f49426q;
+        private final n1 f49994q;
 
         /* renamed from: r  reason: collision with root package name */
-        private final String f49427r;
+        private final String f49995r;
 
         /* renamed from: s  reason: collision with root package name */
-        private final List f49428s;
+        private final List f49996s;
 
         /* renamed from: t  reason: collision with root package name */
-        private final fo.v f49429t;
+        private final fo.v f49997t;
 
         /* renamed from: u  reason: collision with root package name */
-        private final List f49430u;
+        private final List f49998u;
 
         /* renamed from: v  reason: collision with root package name */
-        private final String f49431v;
+        private final String f49999v;
 
         /* renamed from: w  reason: collision with root package name */
-        private final String f49432w;
+        private final String f50000w;
 
         /* renamed from: x  reason: collision with root package name */
-        private final to.c f49433x;
+        private final to.c f50001x;
 
         /* renamed from: to.n1$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
@@ -2384,7 +2384,7 @@ public abstract class n1 implements Parcelable {
         }
 
         public /* synthetic */ a(h4.a aVar, List list, List list2, int i10, n1 n1Var, String str, List list3, fo.v vVar, List list4, String str2, String str3, to.c cVar, int i11, DefaultConstructorMarker defaultConstructorMarker) {
-            this((i11 & 1) != 0 ? new h4.a(c4.e.f49014o) : aVar, (i11 & 2) != 0 ? CollectionsKt.l() : list, list2, i10, n1Var, str, list3, vVar, list4, (i11 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING) != 0 ? null : str2, (i11 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET) != 0 ? null : str3, cVar);
+            this((i11 & 1) != 0 ? new h4.a(c4.e.f49582o) : aVar, (i11 & 2) != 0 ? CollectionsKt.l() : list, list2, i10, n1Var, str, list3, vVar, list4, (i11 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING) != 0 ? null : str2, (i11 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET) != 0 ? null : str3, cVar);
         }
 
         @Override // android.os.Parcelable
@@ -2394,7 +2394,7 @@ public abstract class n1 implements Parcelable {
 
         @Override // to.n1
         public n1 e() {
-            return this.f49426q;
+            return this.f49994q;
         }
 
         public boolean equals(Object obj) {
@@ -2405,7 +2405,7 @@ public abstract class n1 implements Parcelable {
                 return false;
             }
             a aVar = (a) obj;
-            if (Intrinsics.areEqual(this.f49422e, aVar.f49422e) && Intrinsics.areEqual(this.f49423i, aVar.f49423i) && Intrinsics.areEqual(this.f49424o, aVar.f49424o) && this.f49425p == aVar.f49425p && Intrinsics.areEqual(this.f49426q, aVar.f49426q) && Intrinsics.areEqual(this.f49427r, aVar.f49427r) && Intrinsics.areEqual(this.f49428s, aVar.f49428s) && Intrinsics.areEqual(this.f49429t, aVar.f49429t) && Intrinsics.areEqual(this.f49430u, aVar.f49430u) && Intrinsics.areEqual(this.f49431v, aVar.f49431v) && Intrinsics.areEqual(this.f49432w, aVar.f49432w) && this.f49433x == aVar.f49433x) {
+            if (Intrinsics.areEqual(this.f49990e, aVar.f49990e) && Intrinsics.areEqual(this.f49991i, aVar.f49991i) && Intrinsics.areEqual(this.f49992o, aVar.f49992o) && this.f49993p == aVar.f49993p && Intrinsics.areEqual(this.f49994q, aVar.f49994q) && Intrinsics.areEqual(this.f49995r, aVar.f49995r) && Intrinsics.areEqual(this.f49996s, aVar.f49996s) && Intrinsics.areEqual(this.f49997t, aVar.f49997t) && Intrinsics.areEqual(this.f49998u, aVar.f49998u) && Intrinsics.areEqual(this.f49999v, aVar.f49999v) && Intrinsics.areEqual(this.f50000w, aVar.f50000w) && this.f50001x == aVar.f50001x) {
                 return true;
             }
             return false;
@@ -2413,15 +2413,15 @@ public abstract class n1 implements Parcelable {
 
         @Override // to.n1
         public String f() {
-            return this.f49427r;
+            return this.f49995r;
         }
 
         public int hashCode() {
             int hashCode;
             int hashCode2;
             int hashCode3;
-            int hashCode4 = ((((((this.f49422e.hashCode() * 31) + this.f49423i.hashCode()) * 31) + this.f49424o.hashCode()) * 31) + Integer.hashCode(this.f49425p)) * 31;
-            n1 n1Var = this.f49426q;
+            int hashCode4 = ((((((this.f49990e.hashCode() * 31) + this.f49991i.hashCode()) * 31) + this.f49992o.hashCode()) * 31) + Integer.hashCode(this.f49993p)) * 31;
+            n1 n1Var = this.f49994q;
             int i10 = 0;
             if (n1Var == null) {
                 hashCode = 0;
@@ -2429,107 +2429,107 @@ public abstract class n1 implements Parcelable {
                 hashCode = n1Var.hashCode();
             }
             int i11 = (hashCode4 + hashCode) * 31;
-            String str = this.f49427r;
+            String str = this.f49995r;
             if (str == null) {
                 hashCode2 = 0;
             } else {
                 hashCode2 = str.hashCode();
             }
-            int hashCode5 = (((((((i11 + hashCode2) * 31) + this.f49428s.hashCode()) * 31) + this.f49429t.hashCode()) * 31) + this.f49430u.hashCode()) * 31;
-            String str2 = this.f49431v;
+            int hashCode5 = (((((((i11 + hashCode2) * 31) + this.f49996s.hashCode()) * 31) + this.f49997t.hashCode()) * 31) + this.f49998u.hashCode()) * 31;
+            String str2 = this.f49999v;
             if (str2 == null) {
                 hashCode3 = 0;
             } else {
                 hashCode3 = str2.hashCode();
             }
             int i12 = (hashCode5 + hashCode3) * 31;
-            String str3 = this.f49432w;
+            String str3 = this.f50000w;
             if (str3 != null) {
                 i10 = str3.hashCode();
             }
-            return ((i12 + i10) * 31) + this.f49433x.hashCode();
+            return ((i12 + i10) * 31) + this.f50001x.hashCode();
         }
 
         @Override // to.n1
         public int j() {
-            return this.f49425p;
+            return this.f49993p;
         }
 
         @Override // to.n1
         public List k() {
-            return this.f49424o;
+            return this.f49992o;
         }
 
         @Override // to.n1
         public List l() {
-            return this.f49423i;
+            return this.f49991i;
         }
 
         public final List p() {
-            return this.f49428s;
+            return this.f49996s;
         }
 
         @Override // to.n1
         /* renamed from: q */
         public h4.a g() {
-            return this.f49422e;
+            return this.f49990e;
         }
 
         public final to.c r() {
-            return this.f49433x;
+            return this.f50001x;
         }
 
         public final List s() {
-            return this.f49430u;
+            return this.f49998u;
         }
 
         public String toString() {
-            h4.a aVar = this.f49422e;
-            List list = this.f49423i;
-            List list2 = this.f49424o;
-            int i10 = this.f49425p;
-            n1 n1Var = this.f49426q;
-            String str = this.f49427r;
-            List list3 = this.f49428s;
-            fo.v vVar = this.f49429t;
-            List list4 = this.f49430u;
-            String str2 = this.f49431v;
-            String str3 = this.f49432w;
-            to.c cVar = this.f49433x;
+            h4.a aVar = this.f49990e;
+            List list = this.f49991i;
+            List list2 = this.f49992o;
+            int i10 = this.f49993p;
+            n1 n1Var = this.f49994q;
+            String str = this.f49995r;
+            List list3 = this.f49996s;
+            fo.v vVar = this.f49997t;
+            List list4 = this.f49998u;
+            String str2 = this.f49999v;
+            String str3 = this.f50000w;
+            to.c cVar = this.f50001x;
             return "AutoClassificationError(currentPart=" + aVar + ", uploadingIds=" + list + ", parts=" + list2 + ", partIndex=" + i10 + ", backState=" + n1Var + ", countryCode=" + str + ", captureFrames=" + list3 + ", cameraProperties=" + vVar + ", idConfigsForCountry=" + list4 + ", selectedCountryCode=" + str2 + ", selectedIdClass=" + str3 + ", errorType=" + cVar + ")";
         }
 
         @Override // android.os.Parcelable
         public final void writeToParcel(Parcel dest, int i10) {
             Intrinsics.checkNotNullParameter(dest, "dest");
-            this.f49422e.writeToParcel(dest, i10);
-            List<Parcelable> list = this.f49423i;
+            this.f49990e.writeToParcel(dest, i10);
+            List<Parcelable> list = this.f49991i;
             dest.writeInt(list.size());
             for (Parcelable parcelable : list) {
                 dest.writeParcelable(parcelable, i10);
             }
-            List<Parcelable> list2 = this.f49424o;
+            List<Parcelable> list2 = this.f49992o;
             dest.writeInt(list2.size());
             for (Parcelable parcelable2 : list2) {
                 dest.writeParcelable(parcelable2, i10);
             }
-            dest.writeInt(this.f49425p);
-            dest.writeParcelable(this.f49426q, i10);
-            dest.writeString(this.f49427r);
-            List<c0> list3 = this.f49428s;
+            dest.writeInt(this.f49993p);
+            dest.writeParcelable(this.f49994q, i10);
+            dest.writeString(this.f49995r);
+            List<c0> list3 = this.f49996s;
             dest.writeInt(list3.size());
             for (c0 c0Var : list3) {
                 c0Var.writeToParcel(dest, i10);
             }
-            dest.writeParcelable(this.f49429t, i10);
-            List<e4> list4 = this.f49430u;
+            dest.writeParcelable(this.f49997t, i10);
+            List<e4> list4 = this.f49998u;
             dest.writeInt(list4.size());
             for (e4 e4Var : list4) {
                 e4Var.writeToParcel(dest, i10);
             }
-            dest.writeString(this.f49431v);
-            dest.writeString(this.f49432w);
-            dest.writeString(this.f49433x.name());
+            dest.writeString(this.f49999v);
+            dest.writeString(this.f50000w);
+            dest.writeString(this.f50001x.name());
         }
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
@@ -2542,18 +2542,18 @@ public abstract class n1 implements Parcelable {
             Intrinsics.checkNotNullParameter(cameraProperties, "cameraProperties");
             Intrinsics.checkNotNullParameter(idConfigsForCountry, "idConfigsForCountry");
             Intrinsics.checkNotNullParameter(errorType, "errorType");
-            this.f49422e = currentPart;
-            this.f49423i = uploadingIds;
-            this.f49424o = parts;
-            this.f49425p = i10;
-            this.f49426q = n1Var;
-            this.f49427r = str;
-            this.f49428s = captureFrames;
-            this.f49429t = cameraProperties;
-            this.f49430u = idConfigsForCountry;
-            this.f49431v = str2;
-            this.f49432w = str3;
-            this.f49433x = errorType;
+            this.f49990e = currentPart;
+            this.f49991i = uploadingIds;
+            this.f49992o = parts;
+            this.f49993p = i10;
+            this.f49994q = n1Var;
+            this.f49995r = str;
+            this.f49996s = captureFrames;
+            this.f49997t = cameraProperties;
+            this.f49998u = idConfigsForCountry;
+            this.f49999v = str2;
+            this.f50000w = str3;
+            this.f50001x = errorType;
         }
     }
 
@@ -2563,31 +2563,31 @@ public abstract class n1 implements Parcelable {
         public static final Parcelable.Creator<c> CREATOR = new a();
 
         /* renamed from: e  reason: collision with root package name */
-        private final h4.a f49445e;
+        private final h4.a f50013e;
 
         /* renamed from: i  reason: collision with root package name */
-        private final List f49446i;
+        private final List f50014i;
 
         /* renamed from: o  reason: collision with root package name */
-        private final List f49447o;
+        private final List f50015o;
 
         /* renamed from: p  reason: collision with root package name */
-        private final int f49448p;
+        private final int f50016p;
 
         /* renamed from: q  reason: collision with root package name */
-        private final String f49449q;
+        private final String f50017q;
 
         /* renamed from: r  reason: collision with root package name */
-        private final q f49450r;
+        private final q f50018r;
 
         /* renamed from: s  reason: collision with root package name */
-        private final boolean f49451s;
+        private final boolean f50019s;
 
         /* renamed from: t  reason: collision with root package name */
-        private final n1 f49452t;
+        private final n1 f50020t;
 
         /* renamed from: u  reason: collision with root package name */
-        private final String f49453u;
+        private final String f50021u;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         public static final class a implements Parcelable.Creator {
@@ -2624,36 +2624,36 @@ public abstract class n1 implements Parcelable {
         }
 
         public /* synthetic */ c(h4.a aVar, List list, List list2, int i10, String str, q qVar, boolean z10, n1 n1Var, String str2, int i11, DefaultConstructorMarker defaultConstructorMarker) {
-            this((i11 & 1) != 0 ? new h4.a(c4.e.f49014o) : aVar, (i11 & 2) != 0 ? CollectionsKt.l() : list, list2, i10, str, qVar, (i11 & 64) != 0 ? false : z10, n1Var, (i11 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER) != 0 ? null : str2);
+            this((i11 & 1) != 0 ? new h4.a(c4.e.f49582o) : aVar, (i11 & 2) != 0 ? CollectionsKt.l() : list, list2, i10, str, qVar, (i11 & 64) != 0 ? false : z10, n1Var, (i11 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER) != 0 ? null : str2);
         }
 
         public static /* synthetic */ c q(c cVar, h4.a aVar, List list, List list2, int i10, String str, q qVar, boolean z10, n1 n1Var, String str2, int i11, Object obj) {
             if ((i11 & 1) != 0) {
-                aVar = cVar.f49445e;
+                aVar = cVar.f50013e;
             }
             if ((i11 & 2) != 0) {
-                list = cVar.f49446i;
+                list = cVar.f50014i;
             }
             if ((i11 & 4) != 0) {
-                list2 = cVar.f49447o;
+                list2 = cVar.f50015o;
             }
             if ((i11 & 8) != 0) {
-                i10 = cVar.f49448p;
+                i10 = cVar.f50016p;
             }
             if ((i11 & 16) != 0) {
-                str = cVar.f49449q;
+                str = cVar.f50017q;
             }
             if ((i11 & 32) != 0) {
-                qVar = cVar.f49450r;
+                qVar = cVar.f50018r;
             }
             if ((i11 & 64) != 0) {
-                z10 = cVar.f49451s;
+                z10 = cVar.f50019s;
             }
             if ((i11 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) != 0) {
-                n1Var = cVar.f49452t;
+                n1Var = cVar.f50020t;
             }
             if ((i11 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER) != 0) {
-                str2 = cVar.f49453u;
+                str2 = cVar.f50021u;
             }
             n1 n1Var2 = n1Var;
             String str3 = str2;
@@ -2671,7 +2671,7 @@ public abstract class n1 implements Parcelable {
 
         @Override // to.n1
         public n1 e() {
-            return this.f49452t;
+            return this.f50020t;
         }
 
         public boolean equals(Object obj) {
@@ -2682,7 +2682,7 @@ public abstract class n1 implements Parcelable {
                 return false;
             }
             c cVar = (c) obj;
-            if (Intrinsics.areEqual(this.f49445e, cVar.f49445e) && Intrinsics.areEqual(this.f49446i, cVar.f49446i) && Intrinsics.areEqual(this.f49447o, cVar.f49447o) && this.f49448p == cVar.f49448p && Intrinsics.areEqual(this.f49449q, cVar.f49449q) && Intrinsics.areEqual(this.f49450r, cVar.f49450r) && this.f49451s == cVar.f49451s && Intrinsics.areEqual(this.f49452t, cVar.f49452t) && Intrinsics.areEqual(this.f49453u, cVar.f49453u)) {
+            if (Intrinsics.areEqual(this.f50013e, cVar.f50013e) && Intrinsics.areEqual(this.f50014i, cVar.f50014i) && Intrinsics.areEqual(this.f50015o, cVar.f50015o) && this.f50016p == cVar.f50016p && Intrinsics.areEqual(this.f50017q, cVar.f50017q) && Intrinsics.areEqual(this.f50018r, cVar.f50018r) && this.f50019s == cVar.f50019s && Intrinsics.areEqual(this.f50020t, cVar.f50020t) && Intrinsics.areEqual(this.f50021u, cVar.f50021u)) {
                 return true;
             }
             return false;
@@ -2690,29 +2690,29 @@ public abstract class n1 implements Parcelable {
 
         @Override // to.n1
         public String f() {
-            return this.f49449q;
+            return this.f50017q;
         }
 
         public int hashCode() {
             int hashCode;
             int hashCode2;
-            int hashCode3 = ((((((this.f49445e.hashCode() * 31) + this.f49446i.hashCode()) * 31) + this.f49447o.hashCode()) * 31) + Integer.hashCode(this.f49448p)) * 31;
-            String str = this.f49449q;
+            int hashCode3 = ((((((this.f50013e.hashCode() * 31) + this.f50014i.hashCode()) * 31) + this.f50015o.hashCode()) * 31) + Integer.hashCode(this.f50016p)) * 31;
+            String str = this.f50017q;
             int i10 = 0;
             if (str == null) {
                 hashCode = 0;
             } else {
                 hashCode = str.hashCode();
             }
-            int hashCode4 = (((((hashCode3 + hashCode) * 31) + this.f49450r.hashCode()) * 31) + Boolean.hashCode(this.f49451s)) * 31;
-            n1 n1Var = this.f49452t;
+            int hashCode4 = (((((hashCode3 + hashCode) * 31) + this.f50018r.hashCode()) * 31) + Boolean.hashCode(this.f50019s)) * 31;
+            n1 n1Var = this.f50020t;
             if (n1Var == null) {
                 hashCode2 = 0;
             } else {
                 hashCode2 = n1Var.hashCode();
             }
             int i11 = (hashCode4 + hashCode2) * 31;
-            String str2 = this.f49453u;
+            String str2 = this.f50021u;
             if (str2 != null) {
                 i10 = str2.hashCode();
             }
@@ -2721,17 +2721,17 @@ public abstract class n1 implements Parcelable {
 
         @Override // to.n1
         public int j() {
-            return this.f49448p;
+            return this.f50016p;
         }
 
         @Override // to.n1
         public List k() {
-            return this.f49447o;
+            return this.f50015o;
         }
 
         @Override // to.n1
         public List l() {
-            return this.f49446i;
+            return this.f50014i;
         }
 
         public final c p(h4.a currentPart, List uploadingIds, List parts, int i10, String str, q captureConfig, boolean z10, n1 n1Var, String str2) {
@@ -2743,56 +2743,56 @@ public abstract class n1 implements Parcelable {
         }
 
         public final q r() {
-            return this.f49450r;
+            return this.f50018r;
         }
 
         public final boolean s() {
-            return this.f49451s;
+            return this.f50019s;
         }
 
         @Override // to.n1
         /* renamed from: t */
         public h4.a g() {
-            return this.f49445e;
+            return this.f50013e;
         }
 
         public String toString() {
-            h4.a aVar = this.f49445e;
-            List list = this.f49446i;
-            List list2 = this.f49447o;
-            int i10 = this.f49448p;
-            String str = this.f49449q;
-            q qVar = this.f49450r;
-            boolean z10 = this.f49451s;
-            n1 n1Var = this.f49452t;
-            String str2 = this.f49453u;
+            h4.a aVar = this.f50013e;
+            List list = this.f50014i;
+            List list2 = this.f50015o;
+            int i10 = this.f50016p;
+            String str = this.f50017q;
+            q qVar = this.f50018r;
+            boolean z10 = this.f50019s;
+            n1 n1Var = this.f50020t;
+            String str2 = this.f50021u;
             return "ChooseCaptureMethod(currentPart=" + aVar + ", uploadingIds=" + list + ", parts=" + list2 + ", partIndex=" + i10 + ", countryCode=" + str + ", captureConfig=" + qVar + ", choosingDocumentToUpload=" + z10 + ", backState=" + n1Var + ", error=" + str2 + ")";
         }
 
         public final String u() {
-            return this.f49453u;
+            return this.f50021u;
         }
 
         @Override // android.os.Parcelable
         public final void writeToParcel(Parcel dest, int i10) {
             Intrinsics.checkNotNullParameter(dest, "dest");
-            this.f49445e.writeToParcel(dest, i10);
-            List<Parcelable> list = this.f49446i;
+            this.f50013e.writeToParcel(dest, i10);
+            List<Parcelable> list = this.f50014i;
             dest.writeInt(list.size());
             for (Parcelable parcelable : list) {
                 dest.writeParcelable(parcelable, i10);
             }
-            List<Parcelable> list2 = this.f49447o;
+            List<Parcelable> list2 = this.f50015o;
             dest.writeInt(list2.size());
             for (Parcelable parcelable2 : list2) {
                 dest.writeParcelable(parcelable2, i10);
             }
-            dest.writeInt(this.f49448p);
-            dest.writeString(this.f49449q);
-            dest.writeParcelable(this.f49450r, i10);
-            dest.writeInt(this.f49451s ? 1 : 0);
-            dest.writeParcelable(this.f49452t, i10);
-            dest.writeString(this.f49453u);
+            dest.writeInt(this.f50016p);
+            dest.writeString(this.f50017q);
+            dest.writeParcelable(this.f50018r, i10);
+            dest.writeInt(this.f50019s ? 1 : 0);
+            dest.writeParcelable(this.f50020t, i10);
+            dest.writeString(this.f50021u);
         }
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
@@ -2802,15 +2802,15 @@ public abstract class n1 implements Parcelable {
             Intrinsics.checkNotNullParameter(uploadingIds, "uploadingIds");
             Intrinsics.checkNotNullParameter(parts, "parts");
             Intrinsics.checkNotNullParameter(captureConfig, "captureConfig");
-            this.f49445e = currentPart;
-            this.f49446i = uploadingIds;
-            this.f49447o = parts;
-            this.f49448p = i10;
-            this.f49449q = str;
-            this.f49450r = captureConfig;
-            this.f49451s = z10;
-            this.f49452t = n1Var;
-            this.f49453u = str2;
+            this.f50013e = currentPart;
+            this.f50014i = uploadingIds;
+            this.f50015o = parts;
+            this.f50016p = i10;
+            this.f50017q = str;
+            this.f50018r = captureConfig;
+            this.f50019s = z10;
+            this.f50020t = n1Var;
+            this.f50021u = str2;
         }
     }
 
@@ -2820,28 +2820,28 @@ public abstract class n1 implements Parcelable {
         public static final Parcelable.Creator<j> CREATOR = new a();
 
         /* renamed from: e  reason: collision with root package name */
-        private final h4 f49504e;
+        private final h4 f50072e;
 
         /* renamed from: i  reason: collision with root package name */
-        private final List f49505i;
+        private final List f50073i;
 
         /* renamed from: o  reason: collision with root package name */
-        private final List f49506o;
+        private final List f50074o;
 
         /* renamed from: p  reason: collision with root package name */
-        private final n1 f49507p;
+        private final n1 f50075p;
 
         /* renamed from: q  reason: collision with root package name */
-        private final int f49508q;
+        private final int f50076q;
 
         /* renamed from: r  reason: collision with root package name */
-        private final String f49509r;
+        private final String f50077r;
 
         /* renamed from: s  reason: collision with root package name */
-        private final c4 f49510s;
+        private final c4 f50078s;
 
         /* renamed from: t  reason: collision with root package name */
-        private final String f49511t;
+        private final String f50079t;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         public static final class a implements Parcelable.Creator {
@@ -2880,33 +2880,33 @@ public abstract class n1 implements Parcelable {
         }
 
         public /* synthetic */ j(h4 h4Var, List list, List list2, n1 n1Var, int i10, String str, c4 c4Var, String str2, int i11, DefaultConstructorMarker defaultConstructorMarker) {
-            this((i11 & 1) != 0 ? new h4.a(c4.e.f49014o) : h4Var, (i11 & 2) != 0 ? CollectionsKt.l() : list, (i11 & 4) != 0 ? CollectionsKt.l() : list2, (i11 & 8) != 0 ? null : n1Var, (i11 & 16) != 0 ? -1 : i10, str, (i11 & 64) != 0 ? null : c4Var, (i11 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) != 0 ? null : str2);
+            this((i11 & 1) != 0 ? new h4.a(c4.e.f49582o) : h4Var, (i11 & 2) != 0 ? CollectionsKt.l() : list, (i11 & 4) != 0 ? CollectionsKt.l() : list2, (i11 & 8) != 0 ? null : n1Var, (i11 & 16) != 0 ? -1 : i10, str, (i11 & 64) != 0 ? null : c4Var, (i11 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) != 0 ? null : str2);
         }
 
         public static /* synthetic */ j q(j jVar, h4 h4Var, List list, List list2, n1 n1Var, int i10, String str, c4 c4Var, String str2, int i11, Object obj) {
             if ((i11 & 1) != 0) {
-                h4Var = jVar.f49504e;
+                h4Var = jVar.f50072e;
             }
             if ((i11 & 2) != 0) {
-                list = jVar.f49505i;
+                list = jVar.f50073i;
             }
             if ((i11 & 4) != 0) {
-                list2 = jVar.f49506o;
+                list2 = jVar.f50074o;
             }
             if ((i11 & 8) != 0) {
-                n1Var = jVar.f49507p;
+                n1Var = jVar.f50075p;
             }
             if ((i11 & 16) != 0) {
-                i10 = jVar.f49508q;
+                i10 = jVar.f50076q;
             }
             if ((i11 & 32) != 0) {
-                str = jVar.f49509r;
+                str = jVar.f50077r;
             }
             if ((i11 & 64) != 0) {
-                c4Var = jVar.f49510s;
+                c4Var = jVar.f50078s;
             }
             if ((i11 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) != 0) {
-                str2 = jVar.f49511t;
+                str2 = jVar.f50079t;
             }
             c4 c4Var2 = c4Var;
             String str3 = str2;
@@ -2922,7 +2922,7 @@ public abstract class n1 implements Parcelable {
 
         @Override // to.n1
         public n1 e() {
-            return this.f49507p;
+            return this.f50075p;
         }
 
         public boolean equals(Object obj) {
@@ -2933,7 +2933,7 @@ public abstract class n1 implements Parcelable {
                 return false;
             }
             j jVar = (j) obj;
-            if (Intrinsics.areEqual(this.f49504e, jVar.f49504e) && Intrinsics.areEqual(this.f49505i, jVar.f49505i) && Intrinsics.areEqual(this.f49506o, jVar.f49506o) && Intrinsics.areEqual(this.f49507p, jVar.f49507p) && this.f49508q == jVar.f49508q && Intrinsics.areEqual(this.f49509r, jVar.f49509r) && Intrinsics.areEqual(this.f49510s, jVar.f49510s) && Intrinsics.areEqual(this.f49511t, jVar.f49511t)) {
+            if (Intrinsics.areEqual(this.f50072e, jVar.f50072e) && Intrinsics.areEqual(this.f50073i, jVar.f50073i) && Intrinsics.areEqual(this.f50074o, jVar.f50074o) && Intrinsics.areEqual(this.f50075p, jVar.f50075p) && this.f50076q == jVar.f50076q && Intrinsics.areEqual(this.f50077r, jVar.f50077r) && Intrinsics.areEqual(this.f50078s, jVar.f50078s) && Intrinsics.areEqual(this.f50079t, jVar.f50079t)) {
                 return true;
             }
             return false;
@@ -2941,42 +2941,42 @@ public abstract class n1 implements Parcelable {
 
         @Override // to.n1
         public String f() {
-            return this.f49509r;
+            return this.f50077r;
         }
 
         @Override // to.n1
         public h4 g() {
-            return this.f49504e;
+            return this.f50072e;
         }
 
         public int hashCode() {
             int hashCode;
             int hashCode2;
             int hashCode3;
-            int hashCode4 = ((((this.f49504e.hashCode() * 31) + this.f49505i.hashCode()) * 31) + this.f49506o.hashCode()) * 31;
-            n1 n1Var = this.f49507p;
+            int hashCode4 = ((((this.f50072e.hashCode() * 31) + this.f50073i.hashCode()) * 31) + this.f50074o.hashCode()) * 31;
+            n1 n1Var = this.f50075p;
             int i10 = 0;
             if (n1Var == null) {
                 hashCode = 0;
             } else {
                 hashCode = n1Var.hashCode();
             }
-            int hashCode5 = (((hashCode4 + hashCode) * 31) + Integer.hashCode(this.f49508q)) * 31;
-            String str = this.f49509r;
+            int hashCode5 = (((hashCode4 + hashCode) * 31) + Integer.hashCode(this.f50076q)) * 31;
+            String str = this.f50077r;
             if (str == null) {
                 hashCode2 = 0;
             } else {
                 hashCode2 = str.hashCode();
             }
             int i11 = (hashCode5 + hashCode2) * 31;
-            c4 c4Var = this.f49510s;
+            c4 c4Var = this.f50078s;
             if (c4Var == null) {
                 hashCode3 = 0;
             } else {
                 hashCode3 = c4Var.hashCode();
             }
             int i12 = (i11 + hashCode3) * 31;
-            String str2 = this.f49511t;
+            String str2 = this.f50079t;
             if (str2 != null) {
                 i10 = str2.hashCode();
             }
@@ -2985,17 +2985,17 @@ public abstract class n1 implements Parcelable {
 
         @Override // to.n1
         public int j() {
-            return this.f49508q;
+            return this.f50076q;
         }
 
         @Override // to.n1
         public List k() {
-            return this.f49506o;
+            return this.f50074o;
         }
 
         @Override // to.n1
         public List l() {
-            return this.f49505i;
+            return this.f50073i;
         }
 
         public final j p(h4 currentPart, List uploadingIds, List parts, n1 n1Var, int i10, String str, c4 c4Var, String str2) {
@@ -3006,46 +3006,46 @@ public abstract class n1 implements Parcelable {
         }
 
         public final String r() {
-            return this.f49511t;
+            return this.f50079t;
         }
 
         public String toString() {
-            h4 h4Var = this.f49504e;
-            List list = this.f49505i;
-            List list2 = this.f49506o;
-            n1 n1Var = this.f49507p;
-            int i10 = this.f49508q;
-            String str = this.f49509r;
-            c4 c4Var = this.f49510s;
-            String str2 = this.f49511t;
+            h4 h4Var = this.f50072e;
+            List list = this.f50073i;
+            List list2 = this.f50074o;
+            n1 n1Var = this.f50075p;
+            int i10 = this.f50076q;
+            String str = this.f50077r;
+            c4 c4Var = this.f50078s;
+            String str2 = this.f50079t;
             return "ShowInstructions(currentPart=" + h4Var + ", uploadingIds=" + list + ", parts=" + list2 + ", backState=" + n1Var + ", partIndex=" + i10 + ", countryCode=" + str + ", selectedId=" + c4Var + ", error=" + str2 + ")";
         }
 
         @Override // android.os.Parcelable
         public final void writeToParcel(Parcel dest, int i10) {
             Intrinsics.checkNotNullParameter(dest, "dest");
-            dest.writeParcelable(this.f49504e, i10);
-            List<Parcelable> list = this.f49505i;
+            dest.writeParcelable(this.f50072e, i10);
+            List<Parcelable> list = this.f50073i;
             dest.writeInt(list.size());
             for (Parcelable parcelable : list) {
                 dest.writeParcelable(parcelable, i10);
             }
-            List<Parcelable> list2 = this.f49506o;
+            List<Parcelable> list2 = this.f50074o;
             dest.writeInt(list2.size());
             for (Parcelable parcelable2 : list2) {
                 dest.writeParcelable(parcelable2, i10);
             }
-            dest.writeParcelable(this.f49507p, i10);
-            dest.writeInt(this.f49508q);
-            dest.writeString(this.f49509r);
-            c4 c4Var = this.f49510s;
+            dest.writeParcelable(this.f50075p, i10);
+            dest.writeInt(this.f50076q);
+            dest.writeString(this.f50077r);
+            c4 c4Var = this.f50078s;
             if (c4Var == null) {
                 dest.writeInt(0);
             } else {
                 dest.writeInt(1);
                 c4Var.writeToParcel(dest, i10);
             }
-            dest.writeString(this.f49511t);
+            dest.writeString(this.f50079t);
         }
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
@@ -3054,14 +3054,14 @@ public abstract class n1 implements Parcelable {
             Intrinsics.checkNotNullParameter(currentPart, "currentPart");
             Intrinsics.checkNotNullParameter(uploadingIds, "uploadingIds");
             Intrinsics.checkNotNullParameter(parts, "parts");
-            this.f49504e = currentPart;
-            this.f49505i = uploadingIds;
-            this.f49506o = parts;
-            this.f49507p = n1Var;
-            this.f49508q = i10;
-            this.f49509r = str;
-            this.f49510s = c4Var;
-            this.f49511t = str2;
+            this.f50072e = currentPart;
+            this.f50073i = uploadingIds;
+            this.f50074o = parts;
+            this.f50075p = n1Var;
+            this.f50076q = i10;
+            this.f50077r = str;
+            this.f50078s = c4Var;
+            this.f50079t = str2;
         }
     }
 }

@@ -5,10 +5,10 @@ import java.util.Locale;
 public class a extends d {
 
     /* renamed from: e  reason: collision with root package name */
-    private final long f47428e;
+    private final long f47996e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final long f47429i;
+    private final long f47997i;
 
     public a(long j10, long j11) {
         this(j10, j11, new Throwable());
@@ -16,12 +16,12 @@ public class a extends d {
 
     @Override // java.lang.Throwable
     public String getMessage() {
-        return String.format(Locale.ENGLISH, "Insufficient disk space, estimated file size in bytes %d, available disk space in bytes %d", Long.valueOf(this.f47428e), Long.valueOf(this.f47429i));
+        return String.format(Locale.ENGLISH, "Insufficient disk space, estimated file size in bytes %d, available disk space in bytes %d", Long.valueOf(this.f47996e), Long.valueOf(this.f47997i));
     }
 
     public a(long j10, long j11, Throwable th2) {
         super(th2);
-        this.f47428e = j10;
-        this.f47429i = j11;
+        this.f47996e = j10;
+        this.f47997i = j11;
     }
 }

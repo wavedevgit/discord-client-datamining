@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/messages/native/renderer/system_messages/GuildReportRaidSystemMessage.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun56542: for (var _fun56542_ip = 0;;) switch (_fun56542_ip) {
+        _fun56577: for (var _fun56577_ip = 0;;) switch (_fun56577_ip) {
             case 0:
                 var7 = arg0;
                 var14 = var7.message;
@@ -56,8 +56,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var4 == var12;
                 var0 = undefined;
                 if (var9) {
-                    _fun56542_ip = 100;
-                    continue _fun56542
+                    _fun56577_ip = 100;
+                    continue _fun56577
                 }
             case 95:
                 var0 = var12.guild_id;
@@ -97,32 +97,32 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = 'username';
                 var9 = null;
                 if (!(var6 === var11)) {
-                    _fun56542_ip = 263;
-                    continue _fun56542
+                    _fun56577_ip = 264;
+                    continue _fun56577
                 }
-            case 260:
+            case 261:
                 var9 = var10;
-            case 263:
+            case 264:
                 var1.linkColor = var9;
                 var1.roleColor = var10;
                 var9 = null;
                 if (!var16) {
-                    _fun56542_ip = 281;
-                    continue _fun56542
+                    _fun56577_ip = 282;
+                    continue _fun56577
                 }
-            case 278:
+            case 279:
                 var9 = var15;
-            case 281:
+            case 282:
                 var1.roleColors = var9;
                 var9 = 'dot';
                 var9 = var9 === var11;
                 if (!var9) {
-                    _fun56542_ip = 301;
-                    continue _fun56542
+                    _fun56577_ip = 302;
+                    continue _fun56577
                 }
-            case 297:
+            case 298:
                 var9 = var4 != var10;
-            case 301:
+            case 302:
                 var1.shouldShowRoleDot = var9;
                 var9 = var14.channel_id;
                 var1.messageChannelId = var9;
@@ -132,21 +132,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var4 == var0;
                 var1 = undefined;
                 if (var9) {
-                    _fun56542_ip = 342;
-                    continue _fun56542
+                    _fun56577_ip = 343;
+                    continue _fun56577
                 }
-            case 337:
+            case 338:
                 var1 = var0.name;
-            case 342:
+            case 343:
                 var9 = var4 != var1;
                 var0 = '';
                 if (!var9) {
-                    _fun56542_ip = 356;
-                    continue _fun56542
+                    _fun56577_ip = 357;
+                    continue _fun56577
                 }
-            case 353:
+            case 354:
                 var0 = var1;
-            case 356:
+            case 357:
                 var13.guildName = var0;
                 var9 = _closure1_slot1;
                 var11 = _closure1_slot2;
@@ -192,12 +192,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var4 != var3;
                 var4 = null;
                 if (!var5) {
-                    _fun56542_ip = 556;
-                    continue _fun56542
+                    _fun56577_ip = 557;
+                    continue _fun56577
                 }
-            case 553:
+            case 554:
                 var4 = var3;
-            case 556:
+            case 557:
                 var3 = 'usernameColor';
                 var0[var3] = var4;
                 var7 = _closure1_slot0;
@@ -227,4 +227,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.createGuildReportRaidSystemMessage = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1372, 1410, 6762, 6770, 6844, 6771, 6845, 6772, 1234, 1418, 1417, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1372, 1410, 6744, 6752, 6826, 6753, 6827, 6754, 1235, 1418, 1417, 2]);

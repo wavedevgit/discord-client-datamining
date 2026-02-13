@@ -15,58 +15,58 @@ import java.io.Closeable;
 public final class NetworkBreadcrumbsIntegration implements io.sentry.k1, Closeable {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Context f28122d;
+    private final Context f28690d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final x0 f28123e;
+    private final x0 f28691e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final io.sentry.util.a f28124i = new io.sentry.util.a();
+    private final io.sentry.util.a f28692i = new io.sentry.util.a();
 
     /* renamed from: o  reason: collision with root package name */
-    private k7 f28125o;
+    private k7 f28693o;
 
     /* renamed from: p  reason: collision with root package name */
-    volatile b f28126p;
+    volatile b f28694p;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static class a {
 
         /* renamed from: a  reason: collision with root package name */
-        final int f28127a;
+        final int f28695a;
 
         /* renamed from: b  reason: collision with root package name */
-        final int f28128b;
+        final int f28696b;
 
         /* renamed from: c  reason: collision with root package name */
-        final int f28129c;
+        final int f28697c;
 
         /* renamed from: d  reason: collision with root package name */
-        private long f28130d;
+        private long f28698d;
 
         /* renamed from: e  reason: collision with root package name */
-        final boolean f28131e;
+        final boolean f28699e;
 
         /* renamed from: f  reason: collision with root package name */
-        final String f28132f;
+        final String f28700f;
 
         a(NetworkCapabilities networkCapabilities, x0 x0Var, long j10) {
             int i10;
             io.sentry.util.y.c(networkCapabilities, "NetworkCapabilities is required");
             io.sentry.util.y.c(x0Var, "BuildInfoProvider is required");
-            this.f28127a = networkCapabilities.getLinkDownstreamBandwidthKbps();
-            this.f28128b = networkCapabilities.getLinkUpstreamBandwidthKbps();
+            this.f28695a = networkCapabilities.getLinkDownstreamBandwidthKbps();
+            this.f28696b = networkCapabilities.getLinkUpstreamBandwidthKbps();
             if (x0Var.d() >= 29) {
                 i10 = networkCapabilities.getSignalStrength();
             } else {
                 i10 = 0;
             }
-            this.f28129c = i10 > -100 ? i10 : 0;
-            this.f28131e = networkCapabilities.hasTransport(4);
+            this.f28697c = i10 > -100 ? i10 : 0;
+            this.f28699e = networkCapabilities.hasTransport(4);
             String b12 = io.sentry.android.core.internal.util.e.b1(networkCapabilities);
-            this.f28132f = b12 == null ? "" : b12;
-            this.f28130d = j10;
+            this.f28700f = b12 == null ? "" : b12;
+            this.f28698d = j10;
         }
 
         boolean a(a aVar) {
@@ -74,10 +74,10 @@ public final class NetworkBreadcrumbsIntegration implements io.sentry.k1, Closea
             boolean z11;
             boolean z12;
             boolean z13;
-            int abs = Math.abs(this.f28129c - aVar.f28129c);
-            int abs2 = Math.abs(this.f28127a - aVar.f28127a);
-            int abs3 = Math.abs(this.f28128b - aVar.f28128b);
-            if (io.sentry.k.l(Math.abs(this.f28130d - aVar.f28130d)) < 5000.0d) {
+            int abs = Math.abs(this.f28697c - aVar.f28697c);
+            int abs2 = Math.abs(this.f28695a - aVar.f28695a);
+            int abs3 = Math.abs(this.f28696b - aVar.f28696b);
+            if (io.sentry.k.l(Math.abs(this.f28698d - aVar.f28698d)) < 5000.0d) {
                 z10 = true;
             } else {
                 z10 = false;
@@ -87,17 +87,17 @@ public final class NetworkBreadcrumbsIntegration implements io.sentry.k1, Closea
             } else {
                 z11 = true;
             }
-            if (!z10 && abs2 > Math.max(1000.0d, Math.abs(this.f28127a) * 0.1d)) {
+            if (!z10 && abs2 > Math.max(1000.0d, Math.abs(this.f28695a) * 0.1d)) {
                 z12 = false;
             } else {
                 z12 = true;
             }
-            if (!z10 && abs3 > Math.max(1000.0d, Math.abs(this.f28128b) * 0.1d)) {
+            if (!z10 && abs3 > Math.max(1000.0d, Math.abs(this.f28696b) * 0.1d)) {
                 z13 = false;
             } else {
                 z13 = true;
             }
-            if (this.f28131e != aVar.f28131e || !this.f28132f.equals(aVar.f28132f) || !z11 || !z12 || !z13) {
+            if (this.f28699e != aVar.f28699e || !this.f28700f.equals(aVar.f28700f) || !z11 || !z12 || !z13) {
                 return false;
             }
             return true;
@@ -108,24 +108,24 @@ public final class NetworkBreadcrumbsIntegration implements io.sentry.k1, Closea
     static final class b extends ConnectivityManager.NetworkCallback {
 
         /* renamed from: a  reason: collision with root package name */
-        final io.sentry.w0 f28133a;
+        final io.sentry.w0 f28701a;
 
         /* renamed from: b  reason: collision with root package name */
-        final x0 f28134b;
+        final x0 f28702b;
 
         /* renamed from: c  reason: collision with root package name */
-        NetworkCapabilities f28135c = null;
+        NetworkCapabilities f28703c = null;
 
         /* renamed from: d  reason: collision with root package name */
-        long f28136d = 0;
+        long f28704d = 0;
 
         /* renamed from: e  reason: collision with root package name */
-        final k5 f28137e;
+        final k5 f28705e;
 
         b(io.sentry.w0 w0Var, x0 x0Var, k5 k5Var) {
-            this.f28133a = (io.sentry.w0) io.sentry.util.y.c(w0Var, "Scopes are required");
-            this.f28134b = (x0) io.sentry.util.y.c(x0Var, "BuildInfoProvider is required");
-            this.f28137e = (k5) io.sentry.util.y.c(k5Var, "SentryDateProvider is required");
+            this.f28701a = (io.sentry.w0) io.sentry.util.y.c(w0Var, "Scopes are required");
+            this.f28702b = (x0) io.sentry.util.y.c(x0Var, "BuildInfoProvider is required");
+            this.f28705e = (k5) io.sentry.util.y.c(k5Var, "SentryDateProvider is required");
         }
 
         private Breadcrumb a(String str) {
@@ -139,10 +139,10 @@ public final class NetworkBreadcrumbsIntegration implements io.sentry.k1, Closea
 
         private a b(NetworkCapabilities networkCapabilities, NetworkCapabilities networkCapabilities2, long j10, long j11) {
             if (networkCapabilities == null) {
-                return new a(networkCapabilities2, this.f28134b, j11);
+                return new a(networkCapabilities2, this.f28702b, j11);
             }
-            a aVar = new a(networkCapabilities, this.f28134b, j10);
-            a aVar2 = new a(networkCapabilities2, this.f28134b, j11);
+            a aVar = new a(networkCapabilities, this.f28702b, j10);
+            a aVar2 = new a(networkCapabilities2, this.f28702b, j11);
             if (aVar.a(aVar2)) {
                 return null;
             }
@@ -151,51 +151,51 @@ public final class NetworkBreadcrumbsIntegration implements io.sentry.k1, Closea
 
         @Override // android.net.ConnectivityManager.NetworkCallback
         public void onAvailable(Network network) {
-            this.f28133a.e(a("NETWORK_AVAILABLE"));
-            this.f28135c = null;
+            this.f28701a.e(a("NETWORK_AVAILABLE"));
+            this.f28703c = null;
         }
 
         @Override // android.net.ConnectivityManager.NetworkCallback
         public void onCapabilitiesChanged(Network network, NetworkCapabilities networkCapabilities) {
-            long h10 = this.f28137e.now().h();
-            a b10 = b(this.f28135c, networkCapabilities, this.f28136d, h10);
+            long h10 = this.f28705e.now().h();
+            a b10 = b(this.f28703c, networkCapabilities, this.f28704d, h10);
             if (b10 == null) {
                 return;
             }
-            this.f28135c = networkCapabilities;
-            this.f28136d = h10;
+            this.f28703c = networkCapabilities;
+            this.f28704d = h10;
             Breadcrumb a10 = a("NETWORK_CAPABILITIES_CHANGED");
-            a10.A("download_bandwidth", Integer.valueOf(b10.f28127a));
-            a10.A("upload_bandwidth", Integer.valueOf(b10.f28128b));
-            a10.A("vpn_active", Boolean.valueOf(b10.f28131e));
-            a10.A("network_type", b10.f28132f);
-            int i10 = b10.f28129c;
+            a10.A("download_bandwidth", Integer.valueOf(b10.f28695a));
+            a10.A("upload_bandwidth", Integer.valueOf(b10.f28696b));
+            a10.A("vpn_active", Boolean.valueOf(b10.f28699e));
+            a10.A("network_type", b10.f28700f);
+            int i10 = b10.f28697c;
             if (i10 != 0) {
                 a10.A("signal_strength", Integer.valueOf(i10));
             }
             Hint hint = new Hint();
             hint.k("android:networkCapabilities", b10);
-            this.f28133a.i(a10, hint);
+            this.f28701a.i(a10, hint);
         }
 
         @Override // android.net.ConnectivityManager.NetworkCallback
         public void onLost(Network network) {
-            this.f28133a.e(a("NETWORK_LOST"));
-            this.f28135c = null;
+            this.f28701a.e(a("NETWORK_LOST"));
+            this.f28703c = null;
         }
     }
 
     public NetworkBreadcrumbsIntegration(Context context, x0 x0Var) {
-        this.f28122d = (Context) io.sentry.util.y.c(e1.g(context), "Context is required");
-        this.f28123e = (x0) io.sentry.util.y.c(x0Var, "BuildInfoProvider is required");
+        this.f28690d = (Context) io.sentry.util.y.c(e1.g(context), "Context is required");
+        this.f28691e = (x0) io.sentry.util.y.c(x0Var, "BuildInfoProvider is required");
     }
 
     @Override // java.io.Closeable, java.lang.AutoCloseable
     public void close() {
-        io.sentry.a1 a10 = this.f28124i.a();
+        io.sentry.a1 a10 = this.f28692i.a();
         try {
-            b bVar = this.f28126p;
-            this.f28126p = null;
+            b bVar = this.f28694p;
+            this.f28694p = null;
             if (a10 != null) {
                 a10.close();
             }
@@ -224,19 +224,19 @@ public final class NetworkBreadcrumbsIntegration implements io.sentry.k1, Closea
             sentryAndroidOptions = null;
         }
         SentryAndroidOptions sentryAndroidOptions2 = (SentryAndroidOptions) io.sentry.util.y.c(sentryAndroidOptions, "SentryAndroidOptions is required");
-        this.f28125o = k7Var;
+        this.f28693o = k7Var;
         ILogger logger = k7Var.getLogger();
         SentryLevel sentryLevel = SentryLevel.DEBUG;
         logger.c(sentryLevel, "NetworkBreadcrumbsIntegration enabled: %s", Boolean.valueOf(sentryAndroidOptions2.isEnableNetworkEventBreadcrumbs()));
         if (sentryAndroidOptions2.isEnableNetworkEventBreadcrumbs()) {
-            if (this.f28123e.d() < 24) {
+            if (this.f28691e.d() < 24) {
                 k7Var.getLogger().c(sentryLevel, "NetworkCallbacks need Android N+.", new Object[0]);
                 return;
             }
-            io.sentry.a1 a10 = this.f28124i.a();
+            io.sentry.a1 a10 = this.f28692i.a();
             try {
-                this.f28126p = new b(w0Var, this.f28123e, k7Var.getDateProvider());
-                if (io.sentry.android.core.internal.util.e.O0(this.f28122d, k7Var.getLogger(), this.f28123e, this.f28126p)) {
+                this.f28694p = new b(w0Var, this.f28691e, k7Var.getDateProvider());
+                if (io.sentry.android.core.internal.util.e.O0(this.f28690d, k7Var.getLogger(), this.f28691e, this.f28694p)) {
                     k7Var.getLogger().c(sentryLevel, "NetworkBreadcrumbsIntegration installed.", new Object[0]);
                     io.sentry.util.p.a("NetworkBreadcrumbs");
                 } else {

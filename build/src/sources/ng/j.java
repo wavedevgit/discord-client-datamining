@@ -5,7 +5,7 @@ import java.util.Set;
 public abstract class j extends c implements Set {
 
     /* renamed from: e  reason: collision with root package name */
-    private transient f f37864e;
+    private transient f f38432e;
 
     @Override // java.util.Collection, java.util.Set
     public final boolean equals(Object obj) {
@@ -28,10 +28,10 @@ public abstract class j extends c implements Set {
     }
 
     public final f f() {
-        f fVar = this.f37864e;
+        f fVar = this.f38432e;
         if (fVar == null) {
             f g10 = g();
-            this.f37864e = g10;
+            this.f38432e = g10;
             return g10;
         }
         return fVar;
@@ -39,7 +39,7 @@ public abstract class j extends c implements Set {
 
     f g() {
         Object[] array = toArray();
-        int i10 = f.f37842i;
+        int i10 = f.f38410i;
         return f.g(array, array.length);
     }
 

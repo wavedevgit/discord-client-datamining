@@ -99,8 +99,8 @@ public final class MediaPlayerManagerModule extends ReactContextBaseJavaModule {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit changeProgress$lambda$1(double d10, SimpleExoPlayer player) {
         Intrinsics.checkNotNullParameter(player, "player");
-        Duration.a aVar = Duration.f34987e;
-        long t10 = Duration.t(kotlin.time.b.r(d10, ws.b.f53968p));
+        Duration.a aVar = Duration.f35555e;
+        long t10 = Duration.t(kotlin.time.b.r(d10, ws.b.f54536p));
         long duration = player.getDuration();
         if (duration > 0 && t10 >= 0 && t10 <= duration) {
             try {
@@ -113,7 +113,7 @@ public final class MediaPlayerManagerModule extends ReactContextBaseJavaModule {
             Log log2 = Log.INSTANCE;
             Log.w$default(log2, NAME, "Invalid seek attempt: position=" + t10 + ", duration=" + duration, (Throwable) null, 4, (Object) null);
         }
-        return Unit.f31988a;
+        return Unit.f32556a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -140,10 +140,10 @@ public final class MediaPlayerManagerModule extends ReactContextBaseJavaModule {
             double doubleValue = portal.doubleValue();
             ReactEvents reactEvents2 = this.reactEvents;
             ReactApplicationContext reactApplicationContext2 = this.reactContext;
-            Duration.a aVar = Duration.f34987e;
-            ws.b bVar = ws.b.f53967o;
+            Duration.a aVar = Duration.f35555e;
+            ws.b bVar = ws.b.f54535o;
             long t10 = kotlin.time.b.t(j10, bVar);
-            ws.b bVar2 = ws.b.f53968p;
+            ws.b bVar2 = ws.b.f54536p;
             reactEvents2.emitModuleEvent(reactApplicationContext2, new MediaPlayerProgress(doubleValue, Duration.J(t10, bVar2), Duration.J(kotlin.time.b.t(j11, bVar), bVar2)));
         }
     }
@@ -156,7 +156,7 @@ public final class MediaPlayerManagerModule extends ReactContextBaseJavaModule {
         } else {
             player.R(0);
         }
-        return Unit.f31988a;
+        return Unit.f32556a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -169,7 +169,7 @@ public final class MediaPlayerManagerModule extends ReactContextBaseJavaModule {
             f10 = 1.0f;
         }
         player.F0(f10);
-        return Unit.f31988a;
+        return Unit.f32556a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -183,11 +183,11 @@ public final class MediaPlayerManagerModule extends ReactContextBaseJavaModule {
             }
         }
         if (player.P() == z10) {
-            return Unit.f31988a;
+            return Unit.f32556a;
         }
         player.n(z10);
         mediaPlayerManagerModule.reactEvents.emitModuleEvent(mediaPlayerManagerModule.reactContext, new MediaPlayerPause(d10, !z10));
-        return Unit.f31988a;
+        return Unit.f32556a;
     }
 
     private final void withPlayer(final double d10, final Function1<? super SimpleExoPlayer, Unit> function1) {

@@ -19,11 +19,11 @@ import okhttp3.HttpUrl;
 public final class i implements CookieJar {
 
     /* renamed from: c  reason: collision with root package name */
-    private final CookieHandler f36063c;
+    private final CookieHandler f36631c;
 
     public i(CookieHandler cookieHandler) {
         Intrinsics.checkNotNullParameter(cookieHandler, "cookieHandler");
-        this.f36063c = cookieHandler;
+        this.f36631c = cookieHandler;
     }
 
     private final List a(HttpUrl httpUrl, String str) {
@@ -56,7 +56,7 @@ public final class i implements CookieJar {
     public List loadForRequest(HttpUrl url) {
         Intrinsics.checkNotNullParameter(url, "url");
         try {
-            Map<String, List<String>> cookieHeaders = this.f36063c.get(url.t(), o0.i());
+            Map<String, List<String>> cookieHeaders = this.f36631c.get(url.t(), o0.i());
             Intrinsics.checkNotNullExpressionValue(cookieHeaders, "cookieHeaders");
             ArrayList arrayList = null;
             for (Map.Entry<String, List<String>> entry : cookieHeaders.entrySet()) {
@@ -82,7 +82,7 @@ public final class i implements CookieJar {
             }
             return CollectionsKt.l();
         } catch (IOException e10) {
-            vu.h g10 = vu.h.f52016a.g();
+            vu.h g10 = vu.h.f52584a.g();
             StringBuilder sb2 = new StringBuilder();
             sb2.append("Loading cookies failed for ");
             HttpUrl r10 = url.r("/...");
@@ -103,9 +103,9 @@ public final class i implements CookieJar {
             arrayList.add(mu.b.a((Cookie) it.next(), true));
         }
         try {
-            this.f36063c.put(url.t(), o0.f(v.a("Set-Cookie", arrayList)));
+            this.f36631c.put(url.t(), o0.f(v.a("Set-Cookie", arrayList)));
         } catch (IOException e10) {
-            vu.h g10 = vu.h.f52016a.g();
+            vu.h g10 = vu.h.f52584a.g();
             StringBuilder sb2 = new StringBuilder();
             sb2.append("Saving cookies failed for ");
             HttpUrl r10 = url.r("/...");

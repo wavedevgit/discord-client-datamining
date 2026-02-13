@@ -8,22 +8,22 @@ import np.e;
 public final class c implements lr.d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final h f31274a;
+    private final h f31842a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final h f31275b;
+    private final h f31843b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final h f31276c;
+    private final h f31844c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final h f31277d;
+    private final h f31845d;
 
     public c(h hVar, h hVar2, h hVar3, h hVar4) {
-        this.f31274a = hVar;
-        this.f31275b = hVar2;
-        this.f31276c = hVar3;
-        this.f31277d = hVar4;
+        this.f31842a = hVar;
+        this.f31843b = hVar2;
+        this.f31844c = hVar3;
+        this.f31845d = hVar4;
     }
 
     public static c a(h hVar, h hVar2, h hVar3, h hVar4) {
@@ -37,6 +37,6 @@ public final class c implements lr.d {
     @Override // javax.inject.Provider
     /* renamed from: b */
     public a get() {
-        return c((Context) this.f31274a.get(), (e.a) this.f31275b.get(), (f) this.f31276c.get(), (CoroutineDispatcher) this.f31277d.get());
+        return c((Context) this.f31842a.get(), (e.a) this.f31843b.get(), (f) this.f31844c.get(), (CoroutineDispatcher) this.f31845d.get());
     }
 }

@@ -7,7 +7,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var0;
     var _closure1_slot1 = var6;
     var0 = function() {
-        _fun49203: for (var _fun49203_ip = 0;;) switch (_fun49203_ip) {
+        _fun49310: for (var _fun49310_ip = 0;;) switch (_fun49310_ip) {
             case 0:
             case 2: // try_start_0
                 var1 = global;
@@ -28,8 +28,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = !var1;
                 var _closure2_slot0 = var1;
             case 70: // try_end0
-                _fun49203_ip = 74;
-                continue _fun49203;
+                _fun49310_ip = 74;
+                continue _fun49310;
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
@@ -80,7 +80,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = var5.bind(var0)(var4);
     var1 = function(arg0) { // Environment: var1
         var3 = function() {
-            _fun49207: for (var _fun49207_ip = 0;;) switch (_fun49207_ip) {
+            _fun49314: for (var _fun49314_ip = 0;;) switch (_fun49314_ip) {
                 case 0:
                     var3 = this;
                     var2 = undefined;
@@ -94,16 +94,16 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var0 = _closure1_slot7;
                     var0 = var0.bind(var2)();
                     if (var0) {
-                        _fun49207_ip = 69;
-                        continue _fun49207
+                        _fun49314_ip = 69;
+                        continue _fun49314
                     }
                 case 51:
                     var6 = var8.apply;
                     var4 = arguments;
                     var0 = var4;
                     var0 = var6.bind(var8)(var3, var0);
-                    _fun49207_ip = 105;
-                    continue _fun49207;
+                    _fun49314_ip = 105;
+                    continue _fun49314;
                 case 69:
                     var6 = global;
                     var7 = var6.Reflect;

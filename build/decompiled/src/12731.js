@@ -1,27 +1,43 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = global;
-    var1 = var1.String;
-    var _closure1_slot0 = var1;
-    var1 = function(arg0) { // Environment: var0
-        _fun97516: for (var _fun97516_ip = 0;;) switch (_fun97516_ip) {
-            case 0:
-                var0 = arg0;
-            case 3: // try_start_0
+    _fun97551: for (var _fun97551_ip = 0;;) switch (_fun97551_ip) {
+        case 0:
+            var3 = require;
+            var2 = dependencyMap;
+            var _closure1_slot0 = var3;
+            var _closure1_slot1 = var2;
+            var0 = 0;
+            var2 = var2[var0];
+            var0 = undefined;
+            var5 = var3.bind(var0)(var2);
+            var4 = var5.concat;
+            var3 = 'length';
+            var2 = 'prototype';
+            var2 = var4.bind(var5)(var3, var2);
+            var _closure1_slot2 = var2;
+            var2 = global;
+            var2 = var2.Object;
+            var2 = var2.getOwnPropertyNames;
+            if (var2) {
+                _fun97551_ip = 76;
+                continue _fun97551
+            }
+        case 69:
+            var2 = function arg0() {
                 var2 = _closure1_slot0;
-                var1 = var0;
-                var0 = undefined;
-                var0 = var2.bind(var0)(var1);
-            case 20: // try_end0
+                var3 = _closure1_slot1;
+                var1 = 1;
+                var1 = var3[var1];
+                var3 = undefined;
+                var2 = var2.bind(var3)(var1);
+                var1 = _closure1_slot2;
+                var0 = arg0;
+                var0 = var2.bind(var3)(var0, var1);
                 return var0;
-            case 22: // catch_target0
-                CatchBlockStart(arg_register = 0);
-                var0 = 'Object';
-                return var0;
-        }
-    };
-    var0 = arg4;
-    var0.exports = var1;
-    var0 = undefined;
-    return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, []);
+            };
+        case 76:
+            var1 = arg5;
+            var1.f = var2;
+            return var0;
+    }
+})(undefined, undefined, undefined, undefined, undefined, undefined, [12732, 12733]);

@@ -11,8 +11,8 @@ class o {
 
     public boolean a(w wVar, boolean z10) {
         if (z10) {
-            if (Build.VERSION.SDK_INT < wVar.f35676d) {
-                y5.d.c(String.format("%s is not supported pre SDK %d", wVar.name(), Integer.valueOf(wVar.f35676d)));
+            if (Build.VERSION.SDK_INT < wVar.f36244d) {
+                y5.d.c(String.format("%s is not supported pre SDK %d", wVar.name(), Integer.valueOf(wVar.f36244d)));
                 return false;
             }
             return this.f8505a.add(wVar);

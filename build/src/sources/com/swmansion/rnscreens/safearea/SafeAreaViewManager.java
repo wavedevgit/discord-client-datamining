@@ -70,7 +70,7 @@ public final class SafeAreaViewManager extends ViewGroupManager<d> implements RN
     @ReactProp(name = "edges")
     public void setEdges(@NotNull d view, ReadableMap readableMap) {
         Intrinsics.checkNotNullParameter(view, "view");
-        yn.a a10 = yn.a.f55667e.a(readableMap);
+        yn.a a10 = yn.a.f56235e.a(readableMap);
         if (a10 != null) {
             view.setEdges(a10);
         }

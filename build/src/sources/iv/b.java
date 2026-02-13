@@ -6,7 +6,7 @@ import lv.d;
 public final class b implements cv.b, lv.d {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final b f30441a = new b();
+    public static final b f31009a = new b();
 
     private b() {
     }

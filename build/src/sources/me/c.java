@@ -11,19 +11,19 @@ import oe.w0;
 public final class c extends f {
 
     /* renamed from: e  reason: collision with root package name */
-    private final AssetManager f36341e;
+    private final AssetManager f36909e;
 
     /* renamed from: f  reason: collision with root package name */
-    private Uri f36342f;
+    private Uri f36910f;
 
     /* renamed from: g  reason: collision with root package name */
-    private InputStream f36343g;
+    private InputStream f36911g;
 
     /* renamed from: h  reason: collision with root package name */
-    private long f36344h;
+    private long f36912h;
 
     /* renamed from: i  reason: collision with root package name */
-    private boolean f36345i;
+    private boolean f36913i;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class a extends m {
@@ -34,7 +34,7 @@ public final class c extends f {
 
     public c(Context context) {
         super(false);
-        this.f36341e = context.getAssets();
+        this.f36909e = context.getAssets();
     }
 
     @Override // com.google.android.exoplayer2.upstream.DataSource
@@ -42,7 +42,7 @@ public final class c extends f {
         int i10;
         try {
             Uri uri = aVar.f13983a;
-            this.f36342f = uri;
+            this.f36910f = uri;
             String str = (String) oe.a.e(uri.getPath());
             if (str.startsWith("/android_asset/")) {
                 str = str.substring(15);
@@ -50,22 +50,22 @@ public final class c extends f {
                 str = str.substring(1);
             }
             q(aVar);
-            InputStream open = this.f36341e.open(str, 1);
-            this.f36343g = open;
+            InputStream open = this.f36909e.open(str, 1);
+            this.f36911g = open;
             if (open.skip(aVar.f13989g) >= aVar.f13989g) {
                 long j10 = aVar.f13990h;
                 if (j10 != -1) {
-                    this.f36344h = j10;
+                    this.f36912h = j10;
                 } else {
-                    long available = this.f36343g.available();
-                    this.f36344h = available;
+                    long available = this.f36911g.available();
+                    this.f36912h = available;
                     if (available == 2147483647L) {
-                        this.f36344h = -1L;
+                        this.f36912h = -1L;
                     }
                 }
-                this.f36345i = true;
+                this.f36913i = true;
                 r(aVar);
-                return this.f36344h;
+                return this.f36912h;
             }
             throw new a(null, 2008);
         } catch (a e10) {
@@ -82,10 +82,10 @@ public final class c extends f {
 
     @Override // com.google.android.exoplayer2.upstream.DataSource
     public void close() {
-        this.f36342f = null;
+        this.f36910f = null;
         try {
             try {
-                InputStream inputStream = this.f36343g;
+                InputStream inputStream = this.f36911g;
                 if (inputStream != null) {
                     inputStream.close();
                 }
@@ -93,9 +93,9 @@ public final class c extends f {
                 throw new a(e10, 2000);
             }
         } finally {
-            this.f36343g = null;
-            if (this.f36345i) {
-                this.f36345i = false;
+            this.f36911g = null;
+            if (this.f36913i) {
+                this.f36913i = false;
                 p();
             }
         }
@@ -103,7 +103,7 @@ public final class c extends f {
 
     @Override // com.google.android.exoplayer2.upstream.DataSource
     public Uri m() {
-        return this.f36342f;
+        return this.f36910f;
     }
 
     @Override // me.j
@@ -111,7 +111,7 @@ public final class c extends f {
         if (i11 == 0) {
             return 0;
         }
-        long j10 = this.f36344h;
+        long j10 = this.f36912h;
         if (j10 == 0) {
             return -1;
         }
@@ -122,13 +122,13 @@ public final class c extends f {
                 throw new a(e10, 2000);
             }
         }
-        int read = ((InputStream) w0.j(this.f36343g)).read(bArr, i10, i11);
+        int read = ((InputStream) w0.j(this.f36911g)).read(bArr, i10, i11);
         if (read == -1) {
             return -1;
         }
-        long j11 = this.f36344h;
+        long j11 = this.f36912h;
         if (j11 != -1) {
-            this.f36344h = j11 - read;
+            this.f36912h = j11 - read;
         }
         o(read);
         return read;

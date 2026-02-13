@@ -6,16 +6,16 @@ import kotlin.jvm.functions.Function0;
 public class v implements Function0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final a0 f51170d;
+    private final a0 f51738d;
 
     public v(a0 a0Var) {
-        this.f51170d = a0Var;
+        this.f51738d = a0Var;
     }
 
     @Override // kotlin.jvm.functions.Function0
     public Object invoke() {
         boolean H;
-        H = a0.H(this.f51170d);
+        H = a0.H(this.f51738d);
         return Boolean.valueOf(H);
     }
 }

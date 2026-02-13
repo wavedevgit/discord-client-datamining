@@ -8,34 +8,34 @@ import java.util.concurrent.ConcurrentHashMap;
 public final class Breadcrumb implements w1, Comparable {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Long f28024d;
+    private final Long f28592d;
 
     /* renamed from: e  reason: collision with root package name */
-    private Date f28025e;
+    private Date f28593e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final Long f28026i;
+    private final Long f28594i;
 
     /* renamed from: o  reason: collision with root package name */
-    private String f28027o;
+    private String f28595o;
 
     /* renamed from: p  reason: collision with root package name */
-    private String f28028p;
+    private String f28596p;
 
     /* renamed from: q  reason: collision with root package name */
-    private Map f28029q;
+    private Map f28597q;
 
     /* renamed from: r  reason: collision with root package name */
-    private String f28030r;
+    private String f28598r;
 
     /* renamed from: s  reason: collision with root package name */
-    private String f28031s;
+    private String f28599s;
 
     /* renamed from: t  reason: collision with root package name */
-    private SentryLevel f28032t;
+    private SentryLevel f28600t;
 
     /* renamed from: u  reason: collision with root package name */
-    private Map f28033u;
+    private Map f28601u;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements m1 {
@@ -147,12 +147,12 @@ public final class Breadcrumb implements w1, Comparable {
                 }
             }
             Breadcrumb breadcrumb = new Breadcrumb(d10);
-            breadcrumb.f28027o = str;
-            breadcrumb.f28028p = str2;
-            breadcrumb.f28029q = concurrentHashMap;
-            breadcrumb.f28030r = str3;
-            breadcrumb.f28031s = str4;
-            breadcrumb.f28032t = sentryLevel;
+            breadcrumb.f28595o = str;
+            breadcrumb.f28596p = str2;
+            breadcrumb.f28597q = concurrentHashMap;
+            breadcrumb.f28598r = str3;
+            breadcrumb.f28599s = str4;
+            breadcrumb.f28600t = sentryLevel;
             breadcrumb.F(concurrentHashMap2);
             e3Var.D();
             return breadcrumb;
@@ -160,10 +160,10 @@ public final class Breadcrumb implements w1, Comparable {
     }
 
     public Breadcrumb(Date date) {
-        this.f28029q = new ConcurrentHashMap();
-        this.f28026i = Long.valueOf(System.nanoTime());
-        this.f28025e = date;
-        this.f28024d = null;
+        this.f28597q = new ConcurrentHashMap();
+        this.f28594i = Long.valueOf(System.nanoTime());
+        this.f28593e = date;
+        this.f28592d = null;
     }
 
     public static Breadcrumb G(String str, String str2, String str3, String str4, Map map) {
@@ -187,14 +187,14 @@ public final class Breadcrumb implements w1, Comparable {
     }
 
     private static boolean i(Breadcrumb breadcrumb, Breadcrumb breadcrumb2) {
-        if (breadcrumb.t().getTime() == breadcrumb2.t().getTime() && io.sentry.util.y.a(breadcrumb.f28027o, breadcrumb2.f28027o) && io.sentry.util.y.a(breadcrumb.f28028p, breadcrumb2.f28028p) && io.sentry.util.y.a(breadcrumb.f28030r, breadcrumb2.f28030r) && io.sentry.util.y.a(breadcrumb.f28031s, breadcrumb2.f28031s) && breadcrumb.f28032t == breadcrumb2.f28032t) {
+        if (breadcrumb.t().getTime() == breadcrumb2.t().getTime() && io.sentry.util.y.a(breadcrumb.f28595o, breadcrumb2.f28595o) && io.sentry.util.y.a(breadcrumb.f28596p, breadcrumb2.f28596p) && io.sentry.util.y.a(breadcrumb.f28598r, breadcrumb2.f28598r) && io.sentry.util.y.a(breadcrumb.f28599s, breadcrumb2.f28599s) && breadcrumb.f28600t == breadcrumb2.f28600t) {
             return true;
         }
         return false;
     }
 
     private static int k(Breadcrumb breadcrumb) {
-        return io.sentry.util.y.b(Long.valueOf(breadcrumb.t().getTime()), breadcrumb.f28027o, breadcrumb.f28028p, breadcrumb.f28030r, breadcrumb.f28031s, breadcrumb.f28032t);
+        return io.sentry.util.y.b(Long.valueOf(breadcrumb.t().getTime()), breadcrumb.f28595o, breadcrumb.f28596p, breadcrumb.f28598r, breadcrumb.f28599s, breadcrumb.f28600t);
     }
 
     private static boolean v(Breadcrumb breadcrumb, Breadcrumb breadcrumb2) {
@@ -205,7 +205,7 @@ public final class Breadcrumb implements w1, Comparable {
     }
 
     private static int w(Breadcrumb breadcrumb) {
-        return io.sentry.util.y.b(Long.valueOf(breadcrumb.t().getTime()), breadcrumb.f28027o, breadcrumb.f28028p, breadcrumb.f28030r, breadcrumb.f28031s, breadcrumb.f28032t, breadcrumb.n("status_code"), breadcrumb.n("url"), breadcrumb.n("method"), breadcrumb.n("http.fragment"), breadcrumb.n("http.query"));
+        return io.sentry.util.y.b(Long.valueOf(breadcrumb.t().getTime()), breadcrumb.f28595o, breadcrumb.f28596p, breadcrumb.f28598r, breadcrumb.f28599s, breadcrumb.f28600t, breadcrumb.n("status_code"), breadcrumb.n("url"), breadcrumb.n("method"), breadcrumb.n("http.fragment"), breadcrumb.n("http.query"));
     }
 
     public static Breadcrumb x(String str) {
@@ -223,28 +223,28 @@ public final class Breadcrumb implements w1, Comparable {
         if (obj == null) {
             y(str);
         } else {
-            this.f28029q.put(str, obj);
+            this.f28597q.put(str, obj);
         }
     }
 
     public void B(SentryLevel sentryLevel) {
-        this.f28032t = sentryLevel;
+        this.f28600t = sentryLevel;
     }
 
     public void C(String str) {
-        this.f28027o = str;
+        this.f28595o = str;
     }
 
     public void D(String str) {
-        this.f28031s = str;
+        this.f28599s = str;
     }
 
     public void E(String str) {
-        this.f28028p = str;
+        this.f28596p = str;
     }
 
     public void F(Map map) {
-        this.f28033u = map;
+        this.f28601u = map;
     }
 
     public boolean equals(Object obj) {
@@ -253,7 +253,7 @@ public final class Breadcrumb implements w1, Comparable {
         }
         if (obj != null && Breadcrumb.class == obj.getClass()) {
             Breadcrumb breadcrumb = (Breadcrumb) obj;
-            if ("http".equals(this.f28028p)) {
+            if ("http".equals(this.f28596p)) {
                 return v(this, breadcrumb);
             }
             return i(this, breadcrumb);
@@ -262,7 +262,7 @@ public final class Breadcrumb implements w1, Comparable {
     }
 
     public int hashCode() {
-        if ("http".equals(this.f28028p)) {
+        if ("http".equals(this.f28596p)) {
             return w(this);
         }
         return k(this);
@@ -271,60 +271,60 @@ public final class Breadcrumb implements w1, Comparable {
     @Override // java.lang.Comparable
     /* renamed from: l */
     public int compareTo(Breadcrumb breadcrumb) {
-        return this.f28026i.compareTo(breadcrumb.f28026i);
+        return this.f28594i.compareTo(breadcrumb.f28594i);
     }
 
     public String m() {
-        return this.f28030r;
+        return this.f28598r;
     }
 
     public Object n(String str) {
         if (str == null) {
             return null;
         }
-        return this.f28029q.get(str);
+        return this.f28597q.get(str);
     }
 
     public Map o() {
-        return this.f28029q;
+        return this.f28597q;
     }
 
     public SentryLevel q() {
-        return this.f28032t;
+        return this.f28600t;
     }
 
     public String r() {
-        return this.f28027o;
+        return this.f28595o;
     }
 
     public String s() {
-        return this.f28031s;
+        return this.f28599s;
     }
 
     @Override // io.sentry.w1
     public void serialize(f3 f3Var, ILogger iLogger) {
         f3Var.u();
         f3Var.e("timestamp").j(iLogger, t());
-        if (this.f28027o != null) {
-            f3Var.e("message").f(this.f28027o);
+        if (this.f28595o != null) {
+            f3Var.e("message").f(this.f28595o);
         }
-        if (this.f28028p != null) {
-            f3Var.e("type").f(this.f28028p);
+        if (this.f28596p != null) {
+            f3Var.e("type").f(this.f28596p);
         }
-        f3Var.e("data").j(iLogger, this.f28029q);
-        if (this.f28030r != null) {
-            f3Var.e("category").f(this.f28030r);
+        f3Var.e("data").j(iLogger, this.f28597q);
+        if (this.f28598r != null) {
+            f3Var.e("category").f(this.f28598r);
         }
-        if (this.f28031s != null) {
-            f3Var.e("origin").f(this.f28031s);
+        if (this.f28599s != null) {
+            f3Var.e("origin").f(this.f28599s);
         }
-        if (this.f28032t != null) {
-            f3Var.e("level").j(iLogger, this.f28032t);
+        if (this.f28600t != null) {
+            f3Var.e("level").j(iLogger, this.f28600t);
         }
-        Map map = this.f28033u;
+        Map map = this.f28601u;
         if (map != null) {
             for (String str : map.keySet()) {
-                Object obj = this.f28033u.get(str);
+                Object obj = this.f28601u.get(str);
                 f3Var.e(str);
                 f3Var.j(iLogger, obj);
             }
@@ -333,57 +333,57 @@ public final class Breadcrumb implements w1, Comparable {
     }
 
     public Date t() {
-        Date date = this.f28025e;
+        Date date = this.f28593e;
         if (date != null) {
             return (Date) date.clone();
         }
-        Long l10 = this.f28024d;
+        Long l10 = this.f28592d;
         if (l10 != null) {
             Date e10 = k.e(l10.longValue());
-            this.f28025e = e10;
+            this.f28593e = e10;
             return e10;
         }
         throw new IllegalStateException("No timestamp set for breadcrumb");
     }
 
     public String u() {
-        return this.f28028p;
+        return this.f28596p;
     }
 
     public void y(String str) {
         if (str == null) {
             return;
         }
-        this.f28029q.remove(str);
+        this.f28597q.remove(str);
     }
 
     public void z(String str) {
-        this.f28030r = str;
+        this.f28598r = str;
     }
 
     public Breadcrumb(long j10) {
-        this.f28029q = new ConcurrentHashMap();
-        this.f28026i = Long.valueOf(System.nanoTime());
-        this.f28024d = Long.valueOf(j10);
-        this.f28025e = null;
+        this.f28597q = new ConcurrentHashMap();
+        this.f28594i = Long.valueOf(System.nanoTime());
+        this.f28592d = Long.valueOf(j10);
+        this.f28593e = null;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public Breadcrumb(Breadcrumb breadcrumb) {
-        this.f28029q = new ConcurrentHashMap();
-        this.f28026i = Long.valueOf(System.nanoTime());
-        this.f28025e = breadcrumb.f28025e;
-        this.f28024d = breadcrumb.f28024d;
-        this.f28027o = breadcrumb.f28027o;
-        this.f28028p = breadcrumb.f28028p;
-        this.f28030r = breadcrumb.f28030r;
-        this.f28031s = breadcrumb.f28031s;
-        Map b10 = io.sentry.util.c.b(breadcrumb.f28029q);
+        this.f28597q = new ConcurrentHashMap();
+        this.f28594i = Long.valueOf(System.nanoTime());
+        this.f28593e = breadcrumb.f28593e;
+        this.f28592d = breadcrumb.f28592d;
+        this.f28595o = breadcrumb.f28595o;
+        this.f28596p = breadcrumb.f28596p;
+        this.f28598r = breadcrumb.f28598r;
+        this.f28599s = breadcrumb.f28599s;
+        Map b10 = io.sentry.util.c.b(breadcrumb.f28597q);
         if (b10 != null) {
-            this.f28029q = b10;
+            this.f28597q = b10;
         }
-        this.f28033u = io.sentry.util.c.b(breadcrumb.f28033u);
-        this.f28032t = breadcrumb.f28032t;
+        this.f28601u = io.sentry.util.c.b(breadcrumb.f28601u);
+        this.f28600t = breadcrumb.f28600t;
     }
 
     public Breadcrumb() {
@@ -392,6 +392,6 @@ public final class Breadcrumb implements w1, Comparable {
 
     public Breadcrumb(String str) {
         this();
-        this.f28027o = str;
+        this.f28595o = str;
     }
 }

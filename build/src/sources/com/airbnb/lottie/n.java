@@ -491,7 +491,7 @@ public class n extends Drawable implements Drawable.Callback, Animatable {
         }
         r5.h l10 = iVar.l(str);
         if (l10 != null) {
-            D0((int) (l10.f46164b + l10.f46165c));
+            D0((int) (l10.f46732b + l10.f46733c));
             return;
         }
         throw new IllegalArgumentException("Cannot find marker with name " + str + ".");
@@ -556,8 +556,8 @@ public class n extends Drawable implements Drawable.Callback, Animatable {
         }
         r5.h l10 = iVar.l(str);
         if (l10 != null) {
-            int i10 = (int) l10.f46164b;
-            G0(i10, ((int) l10.f46165c) + i10);
+            int i10 = (int) l10.f46732b;
+            G0(i10, ((int) l10.f46733c) + i10);
             return;
         }
         throw new IllegalArgumentException("Cannot find marker with name " + str + ".");
@@ -597,7 +597,7 @@ public class n extends Drawable implements Drawable.Callback, Animatable {
         }
         r5.h l10 = iVar.l(str);
         if (l10 != null) {
-            I0((int) l10.f46164b);
+            I0((int) l10.f46732b);
             return;
         }
         throw new IllegalArgumentException("Cannot find marker with name " + str + ".");
@@ -942,7 +942,7 @@ public class n extends Drawable implements Drawable.Callback, Animatable {
         if (!s(K())) {
             r5.h R = R();
             if (R != null) {
-                y0((int) R.f46164b);
+                y0((int) R.f46732b);
             } else {
                 if (Z() < 0.0f) {
                     S = T();
@@ -1060,7 +1060,7 @@ public class n extends Drawable implements Drawable.Callback, Animatable {
             return;
         }
         boolean z10 = true;
-        if (eVar == r5.e.f46158c) {
+        if (eVar == r5.e.f46726c) {
             cVar2.d(obj, cVar);
         } else if (eVar.d() != null) {
             eVar.d().d(obj, cVar);

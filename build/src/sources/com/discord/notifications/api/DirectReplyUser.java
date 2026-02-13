@@ -71,13 +71,13 @@ public final class DirectReplyUser {
     public static final /* synthetic */ void write$Self$notification_api_release(DirectReplyUser directReplyUser, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
         compositeEncoder.k(serialDescriptor, 0, UserId$$serializer.INSTANCE, UserId.m1136boximpl(directReplyUser.f10246id));
         if (compositeEncoder.z(serialDescriptor, 1) || directReplyUser.username != null) {
-            compositeEncoder.o(serialDescriptor, 1, n2.f50033a, directReplyUser.username);
+            compositeEncoder.o(serialDescriptor, 1, n2.f50601a, directReplyUser.username);
         }
         if (compositeEncoder.z(serialDescriptor, 2) || directReplyUser.discriminator != null) {
-            compositeEncoder.o(serialDescriptor, 2, n2.f50033a, directReplyUser.discriminator);
+            compositeEncoder.o(serialDescriptor, 2, n2.f50601a, directReplyUser.discriminator);
         }
         if (compositeEncoder.z(serialDescriptor, 3) || directReplyUser.avatar != null) {
-            compositeEncoder.o(serialDescriptor, 3, n2.f50033a, directReplyUser.avatar);
+            compositeEncoder.o(serialDescriptor, 3, n2.f50601a, directReplyUser.avatar);
         }
     }
 

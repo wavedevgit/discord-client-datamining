@@ -16,46 +16,46 @@ import z.w;
 public class o0 {
 
     /* renamed from: a  reason: collision with root package name */
-    final Executor f55911a;
+    final Executor f56479a;
 
     /* renamed from: b  reason: collision with root package name */
-    final j0.w f55912b;
+    final j0.w f56480b;
 
     /* renamed from: c  reason: collision with root package name */
-    private a f55913c;
+    private a f56481c;
 
     /* renamed from: d  reason: collision with root package name */
-    private j0.y f55914d;
+    private j0.y f56482d;
 
     /* renamed from: e  reason: collision with root package name */
-    private j0.y f55915e;
+    private j0.y f56483e;
 
     /* renamed from: f  reason: collision with root package name */
-    private j0.y f55916f;
+    private j0.y f56484f;
 
     /* renamed from: g  reason: collision with root package name */
-    private j0.y f55917g;
+    private j0.y f56485g;
 
     /* renamed from: h  reason: collision with root package name */
-    private j0.y f55918h;
+    private j0.y f56486h;
 
     /* renamed from: i  reason: collision with root package name */
-    private j0.y f55919i;
+    private j0.y f56487i;
 
     /* renamed from: j  reason: collision with root package name */
-    private j0.y f55920j;
+    private j0.y f56488j;
 
     /* renamed from: k  reason: collision with root package name */
-    private j0.y f55921k;
+    private j0.y f56489k;
 
     /* renamed from: l  reason: collision with root package name */
-    private j0.y f55922l;
+    private j0.y f56490l;
 
     /* renamed from: m  reason: collision with root package name */
-    private final d2 f55923m;
+    private final d2 f56491m;
 
     /* renamed from: n  reason: collision with root package name */
-    private final boolean f55924n;
+    private final boolean f56492n;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
@@ -103,7 +103,7 @@ public class o0 {
         if (bVar.b().j()) {
             bVar.a().close();
         } else {
-            o0Var.f55911a.execute(new Runnable() { // from class: z.h0
+            o0Var.f56479a.execute(new Runnable() { // from class: z.h0
                 @Override // java.lang.Runnable
                 public final void run() {
                     o0.this.k(bVar);
@@ -119,7 +119,7 @@ public class o0 {
             bVar.a().close();
             return;
         }
-        o0Var.f55911a.execute(new Runnable() { // from class: z.g0
+        o0Var.f56479a.execute(new Runnable() { // from class: z.g0
             @Override // java.lang.Runnable
             public final void run() {
                 o0.this.m(bVar);
@@ -129,12 +129,12 @@ public class o0 {
 
     private j0.z i(j0.z zVar, int i10) {
         b2.e.i(i0.b.i(zVar.e()));
-        j0.z zVar2 = (j0.z) this.f55918h.apply(zVar);
-        j0.y yVar = this.f55922l;
+        j0.z zVar2 = (j0.z) this.f56486h.apply(zVar);
+        j0.y yVar = this.f56490l;
         if (yVar != null) {
             zVar2 = (j0.z) yVar.apply(zVar2);
         }
-        return (j0.z) this.f55916f.apply(i.b.c(zVar2, i10));
+        return (j0.z) this.f56484f.apply(i.b.c(zVar2, i10));
     }
 
     private static void o(final p0 p0Var, final x.o0 o0Var) {
@@ -148,15 +148,15 @@ public class o0 {
 
     androidx.camera.core.n j(b bVar) {
         p0 b10 = bVar.b();
-        j0.z zVar = (j0.z) this.f55914d.apply(bVar);
-        if ((zVar.e() == 35 || this.f55922l != null || this.f55924n) && this.f55913c.c() == 256) {
-            j0.z zVar2 = (j0.z) this.f55915e.apply(w.a.c(zVar, b10.c()));
-            if (this.f55922l != null) {
+        j0.z zVar = (j0.z) this.f56482d.apply(bVar);
+        if ((zVar.e() == 35 || this.f56490l != null || this.f56492n) && this.f56481c.c() == 256) {
+            j0.z zVar2 = (j0.z) this.f56483e.apply(w.a.c(zVar, b10.c()));
+            if (this.f56490l != null) {
                 zVar2 = i(zVar2, b10.c());
             }
-            zVar = (j0.z) this.f55920j.apply(zVar2);
+            zVar = (j0.z) this.f56488j.apply(zVar2);
         }
-        return (androidx.camera.core.n) this.f55919i.apply(zVar);
+        return (androidx.camera.core.n) this.f56487i.apply(zVar);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -190,14 +190,14 @@ public class o0 {
     }
 
     n0.h l(b bVar) {
-        int c10 = this.f55913c.c();
+        int c10 = this.f56481c.c();
         b2.e.b(i0.b.i(c10), String.format("On-disk capture only support JPEG and JPEG/R output formats. Output format: %s", Integer.valueOf(c10)));
         p0 b10 = bVar.b();
-        j0.z zVar = (j0.z) this.f55915e.apply(w.a.c((j0.z) this.f55914d.apply(bVar), b10.c()));
-        if (zVar.i() || this.f55922l != null) {
+        j0.z zVar = (j0.z) this.f56483e.apply(w.a.c((j0.z) this.f56482d.apply(bVar), b10.c()));
+        if (zVar.i() || this.f56490l != null) {
             zVar = i(zVar, b10.c());
         }
-        j0.y yVar = this.f55917g;
+        j0.y yVar = this.f56485g;
         n0.g d10 = b10.d();
         Objects.requireNonNull(d10);
         return (n0.h) yVar.apply(a0.a.c(zVar, d10));
@@ -206,7 +206,7 @@ public class o0 {
     /* JADX INFO: Access modifiers changed from: package-private */
     public void m(b bVar) {
         boolean z10;
-        int c10 = this.f55913c.c();
+        int c10 = this.f56481c.c();
         if (c10 != 35 && c10 != 256) {
             z10 = false;
         } else {
@@ -215,7 +215,7 @@ public class o0 {
         b2.e.b(z10, String.format("Postview only support YUV and JPEG output formats. Output format: %s", Integer.valueOf(c10)));
         final p0 b10 = bVar.b();
         try {
-            final Bitmap bitmap = (Bitmap) this.f55921k.apply((j0.z) this.f55914d.apply(bVar));
+            final Bitmap bitmap = (Bitmap) this.f56489k.apply((j0.z) this.f56482d.apply(bVar));
             c0.a.d().execute(new Runnable() { // from class: z.k0
                 @Override // java.lang.Runnable
                 public final void run() {
@@ -229,7 +229,7 @@ public class o0 {
     }
 
     public Void p(a aVar) {
-        this.f55913c = aVar;
+        this.f56481c = aVar;
         aVar.a().a(new Consumer() { // from class: z.m0
             @Override // androidx.core.util.Consumer
             public final void accept(Object obj) {
@@ -242,15 +242,15 @@ public class o0 {
                 o0.d(o0.this, (o0.b) obj);
             }
         });
-        this.f55914d = new f0();
-        this.f55915e = new w(this.f55923m);
-        this.f55918h = new z();
-        this.f55916f = new i();
-        this.f55917g = new a0();
-        this.f55919i = new c0();
-        this.f55921k = new v();
-        if (aVar.b() == 35 || this.f55924n) {
-            this.f55920j = new b0();
+        this.f56482d = new f0();
+        this.f56483e = new w(this.f56491m);
+        this.f56486h = new z();
+        this.f56484f = new i();
+        this.f56485g = new a0();
+        this.f56487i = new c0();
+        this.f56489k = new v();
+        if (aVar.b() == 35 || this.f56492n) {
+            this.f56488j = new b0();
             return null;
         }
         return null;
@@ -258,13 +258,13 @@ public class o0 {
 
     o0(Executor executor, j0.w wVar, d2 d2Var) {
         if (androidx.camera.core.internal.compat.quirk.a.b(LowMemoryQuirk.class) != null) {
-            this.f55911a = c0.a.f(executor);
+            this.f56479a = c0.a.f(executor);
         } else {
-            this.f55911a = executor;
+            this.f56479a = executor;
         }
-        this.f55912b = wVar;
-        this.f55923m = d2Var;
-        this.f55924n = d2Var.a(IncorrectJpegMetadataQuirk.class);
+        this.f56480b = wVar;
+        this.f56491m = d2Var;
+        this.f56492n = d2Var.a(IncorrectJpegMetadataQuirk.class);
     }
 
     public void n() {

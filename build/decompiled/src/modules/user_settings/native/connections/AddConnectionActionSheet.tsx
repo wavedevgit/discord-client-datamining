@@ -25,27 +25,19 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 1;
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
-    var8 = var3.jsx;
-    var _closure1_slot4 = var8;
+    var3 = var3.jsx;
+    var _closure1_slot4 = var3;
     var3 = 2;
     var3 = var5[var3];
-    var9 = var4.bind(var0)(var3);
-    var7 = var9.createStyles;
+    var8 = var4.bind(var0)(var3);
+    var7 = var8.createStyles;
     var6 = {};
-    var10 = {};
+    var9 = {};
     var3 = 16;
-    var10.paddingHorizontal = var3;
-    var6.list = var10;
-    var6 = var7.bind(var9)(var6);
+    var9.paddingHorizontal = var3;
+    var6.list = var9;
+    var6 = var7.bind(var8)(var6);
     var _closure1_slot5 = var6;
-    var6 = 3;
-    var6 = var5[var6];
-    var6 = var4.bind(var0)(var6);
-    var6 = var6.TableRow;
-    var7 = var6.Arrow;
-    var6 = {};
-    var6 = var8.bind(var0)(var7, var6);
-    var _closure1_slot6 = var6;
     var3 = var5[var3];
     var5 = var4.bind(var0)(var3);
     var4 = var5.fileFinishedImporting;
@@ -57,25 +49,25 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var7 = var1.bind(var3)();
         var2 = _closure1_slot1;
         var10 = _closure1_slot2;
-        var1 = 4;
+        var1 = 3;
         var1 = var10[var1];
         var1 = var2.bind(var3)(var1);
         var1 = var1.bind(var3)();
         var _closure2_slot0 = var1;
-        var1 = 5;
+        var1 = 4;
         var1 = var10[var1];
         var1 = var2.bind(var3)(var1);
         var1 = var1.bind(var3)();
         var9 = var1.bottom;
         var5 = _closure1_slot0;
-        var1 = 6;
+        var1 = 5;
         var1 = var10[var1];
         var2 = var5.bind(var3)(var1);
         var1 = var2.usePlatforms;
         var8 = var1.bind(var2)();
         var _closure2_slot1 = var8;
         var2 = _closure1_slot4;
-        var0 = 7;
+        var0 = 6;
         var0 = var10[var0];
         var0 = var5.bind(var3)(var0);
         var1 = var0.BottomSheet;
@@ -83,12 +75,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             'scrollable': true,
             'startExpanded': true
         };
-        var4 = 8;
+        var4 = 7;
         var4 = var10[var4];
         var4 = var5.bind(var3)(var4);
         var11 = var4.BottomSheetTitleHeader;
         var4 = {};
-        var12 = 9;
+        var12 = 8;
         var13 = var10[var12];
         var13 = var5.bind(var3)(var13);
         var14 = var13.intl;
@@ -101,7 +93,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4.title = var12;
         var4 = var2.bind(var3)(var11, var4);
         var0.header = var4;
-        var4 = 10;
+        var4 = 9;
         var4 = var10[var4];
         var4 = var5.bind(var3)(var4);
         var5 = var4.BottomSheetScrollView;
@@ -113,32 +105,32 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4.contentContainerStyle = var7;
         var7 = var8.map;
         var6 = function(arg0, arg1) { // Environment: var6
-            _fun81902: for (var _fun81902_ip = 0;;) switch (_fun81902_ip) {
+            _fun82972: for (var _fun82972_ip = 0;;) switch (_fun82972_ip) {
                 case 0:
                     var0 = arg0;
-                    var10 = arg1;
+                    var11 = arg1;
                     var7 = var0.name;
                     var4 = var0.type;
                     var _closure3_slot0 = var4;
-                    var11 = var0.icon;
+                    var12 = var0.icon;
                     var3 = _closure1_slot4;
-                    var13 = _closure1_slot0;
-                    var14 = _closure1_slot2;
-                    var0 = 3;
-                    var0 = var14[var0];
+                    var14 = _closure1_slot0;
+                    var15 = _closure1_slot2;
+                    var8 = 10;
+                    var0 = var15[var8];
                     var2 = undefined;
-                    var0 = var13.bind(var2)(var0);
+                    var0 = var14.bind(var2)(var0);
                     var1 = var0.TableRow;
                     var0 = {};
-                    var8 = 0;
-                    var8 = var8 === var10;
-                    var0.start = var8;
-                    var9 = _closure2_slot1;
-                    var12 = var9.length;
-                    var9 = 1;
-                    var9 = var12 - var9;
-                    var9 = var10 === var9;
-                    var0.end = var9;
+                    var9 = 0;
+                    var9 = var9 === var11;
+                    var0.start = var9;
+                    var10 = _closure2_slot1;
+                    var13 = var10.length;
+                    var10 = 1;
+                    var10 = var13 - var10;
+                    var10 = var11 === var10;
+                    var0.end = var10;
                     var0.label = var7;
                     var6 = function() {
                         var2 = _closure1_slot1;
@@ -164,37 +156,45 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0.onPress = var6;
                     var7 = _closure1_slot1;
                     var6 = 13;
-                    var6 = var14[var6];
+                    var6 = var15[var6];
                     var7 = var7.bind(var2)(var6);
                     var6 = {};
-                    var9 = 14;
-                    var9 = var14[var9];
-                    var10 = var13.bind(var2)(var9);
-                    var9 = var10.makeSource;
-                    var12 = 15;
-                    var12 = var14[var12];
-                    var13 = var13.bind(var2)(var12);
-                    var12 = var13.isThemeDark;
-                    var8 = _closure2_slot0;
-                    var8 = var12.bind(var13)(var8);
-                    if (var8) {
-                        _fun81902_ip = 190;
-                        continue _fun81902
+                    var10 = 14;
+                    var10 = var15[var10];
+                    var11 = var14.bind(var2)(var10);
+                    var10 = var11.makeSource;
+                    var13 = 15;
+                    var13 = var15[var13];
+                    var14 = var14.bind(var2)(var13);
+                    var13 = var14.isThemeDark;
+                    var9 = _closure2_slot0;
+                    var9 = var13.bind(var14)(var9);
+                    if (var9) {
+                        _fun82972_ip = 190;
+                        continue _fun82972
                     }
                 case 182:
-                    var8 = var11.lightPNG;
-                    _fun81902_ip = 196;
-                    continue _fun81902;
+                    var9 = var12.lightPNG;
+                    _fun82972_ip = 196;
+                    continue _fun82972;
                 case 190:
-                    var8 = var11.darkPNG;
+                    var9 = var12.darkPNG;
                 case 196:
-                    var8 = var9.bind(var10)(var8);
-                    var6.source = var8;
-                    var8 = true;
-                    var6.disableColor = var8;
+                    var9 = var10.bind(var11)(var9);
+                    var6.source = var9;
+                    var9 = true;
+                    var6.disableColor = var9;
                     var6 = var3.bind(var2)(var7, var6);
                     var0.icon = var6;
-                    var5 = _closure1_slot6;
+                    var7 = _closure1_slot4;
+                    var6 = _closure1_slot0;
+                    var5 = _closure1_slot2;
+                    var5 = var5[var8];
+                    var5 = var6.bind(var2)(var5);
+                    var5 = var5.TableRow;
+                    var6 = var5.Arrow;
+                    var5 = {};
+                    var5 = var7.bind(var2)(var6, var5);
                     var0.trailing = var5;
                     var0 = var3.bind(var2)(var1, var0, var4);
                     return var0;
@@ -209,4 +209,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 33, 1297, 4876, 3247, 1568, 4524, 4907, 5237, 1234, 4909, 3279, 5370, 4092, 1417, 3207, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 33, 1297, 3250, 1568, 4524, 4938, 5267, 1235, 4940, 4905, 3282, 5376, 4092, 1417, 3210, 2]);

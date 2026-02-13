@@ -44,8 +44,8 @@ public /* synthetic */ class ThreadEmbed$$serializer implements h0 {
     @Override // tt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        n2 n2Var = n2.f50033a;
-        return new KSerializer[]{n2Var, n2Var, a.u(n2Var), a.u(h.f49997a), a.u(n2Var), a.u(ThreadEmbedMessage$$serializer.INSTANCE)};
+        n2 n2Var = n2.f50601a;
+        return new KSerializer[]{n2Var, n2Var, a.u(n2Var), a.u(h.f50565a), a.u(n2Var), a.u(ThreadEmbedMessage$$serializer.INSTANCE)};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -65,10 +65,10 @@ public /* synthetic */ class ThreadEmbed$$serializer implements h0 {
         if (b10.p()) {
             String m10 = b10.m(serialDescriptor, 0);
             String m11 = b10.m(serialDescriptor, 1);
-            n2 n2Var = n2.f50033a;
+            n2 n2Var = n2.f50601a;
             str = m10;
             threadEmbedMessage = (ThreadEmbedMessage) b10.n(serialDescriptor, 5, ThreadEmbedMessage$$serializer.INSTANCE, null);
-            bool = (Boolean) b10.n(serialDescriptor, 3, h.f49997a, null);
+            bool = (Boolean) b10.n(serialDescriptor, 3, h.f50565a, null);
             str4 = (String) b10.n(serialDescriptor, 4, n2Var, null);
             str3 = (String) b10.n(serialDescriptor, 2, n2Var, null);
             str2 = m11;
@@ -96,15 +96,15 @@ public /* synthetic */ class ThreadEmbed$$serializer implements h0 {
                         i11 |= 2;
                         break;
                     case 2:
-                        str7 = (String) b10.n(serialDescriptor, 2, n2.f50033a, str7);
+                        str7 = (String) b10.n(serialDescriptor, 2, n2.f50601a, str7);
                         i11 |= 4;
                         break;
                     case 3:
-                        bool2 = (Boolean) b10.n(serialDescriptor, 3, h.f49997a, bool2);
+                        bool2 = (Boolean) b10.n(serialDescriptor, 3, h.f50565a, bool2);
                         i11 |= 8;
                         break;
                     case 4:
-                        str8 = (String) b10.n(serialDescriptor, 4, n2.f50033a, str8);
+                        str8 = (String) b10.n(serialDescriptor, 4, n2.f50601a, str8);
                         i11 |= 16;
                         break;
                     case 5:

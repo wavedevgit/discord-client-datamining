@@ -23,30 +23,30 @@ public abstract class RequestBody {
         public static final class a extends RequestBody {
 
             /* renamed from: a */
-            final /* synthetic */ MediaType f40377a;
+            final /* synthetic */ MediaType f40945a;
 
             /* renamed from: b */
-            final /* synthetic */ File f40378b;
+            final /* synthetic */ File f40946b;
 
             a(MediaType mediaType, File file) {
-                this.f40377a = mediaType;
-                this.f40378b = file;
+                this.f40945a = mediaType;
+                this.f40946b = file;
             }
 
             @Override // okhttp3.RequestBody
             public long contentLength() {
-                return this.f40378b.length();
+                return this.f40946b.length();
             }
 
             @Override // okhttp3.RequestBody
             public MediaType contentType() {
-                return this.f40377a;
+                return this.f40945a;
             }
 
             @Override // okhttp3.RequestBody
             public void writeTo(BufferedSink sink) {
                 Intrinsics.checkNotNullParameter(sink, "sink");
-                Source j10 = x.j(this.f40378b);
+                Source j10 = x.j(this.f40946b);
                 try {
                     sink.A0(j10);
                     ls.c.a(j10, null);
@@ -59,30 +59,30 @@ public abstract class RequestBody {
         public static final class b extends RequestBody {
 
             /* renamed from: a */
-            final /* synthetic */ MediaType f40379a;
+            final /* synthetic */ MediaType f40947a;
 
             /* renamed from: b */
-            final /* synthetic */ ByteString f40380b;
+            final /* synthetic */ ByteString f40948b;
 
             b(MediaType mediaType, ByteString byteString) {
-                this.f40379a = mediaType;
-                this.f40380b = byteString;
+                this.f40947a = mediaType;
+                this.f40948b = byteString;
             }
 
             @Override // okhttp3.RequestBody
             public long contentLength() {
-                return this.f40380b.G();
+                return this.f40948b.G();
             }
 
             @Override // okhttp3.RequestBody
             public MediaType contentType() {
-                return this.f40379a;
+                return this.f40947a;
             }
 
             @Override // okhttp3.RequestBody
             public void writeTo(BufferedSink sink) {
                 Intrinsics.checkNotNullParameter(sink, "sink");
-                sink.e2(this.f40380b);
+                sink.e2(this.f40948b);
             }
         }
 
@@ -90,38 +90,38 @@ public abstract class RequestBody {
         public static final class c extends RequestBody {
 
             /* renamed from: a */
-            final /* synthetic */ MediaType f40381a;
+            final /* synthetic */ MediaType f40949a;
 
             /* renamed from: b */
-            final /* synthetic */ int f40382b;
+            final /* synthetic */ int f40950b;
 
             /* renamed from: c */
-            final /* synthetic */ byte[] f40383c;
+            final /* synthetic */ byte[] f40951c;
 
             /* renamed from: d */
-            final /* synthetic */ int f40384d;
+            final /* synthetic */ int f40952d;
 
             c(MediaType mediaType, int i10, byte[] bArr, int i11) {
-                this.f40381a = mediaType;
-                this.f40382b = i10;
-                this.f40383c = bArr;
-                this.f40384d = i11;
+                this.f40949a = mediaType;
+                this.f40950b = i10;
+                this.f40951c = bArr;
+                this.f40952d = i11;
             }
 
             @Override // okhttp3.RequestBody
             public long contentLength() {
-                return this.f40382b;
+                return this.f40950b;
             }
 
             @Override // okhttp3.RequestBody
             public MediaType contentType() {
-                return this.f40381a;
+                return this.f40949a;
             }
 
             @Override // okhttp3.RequestBody
             public void writeTo(BufferedSink sink) {
                 Intrinsics.checkNotNullParameter(sink, "sink");
-                sink.write(this.f40383c, this.f40384d, this.f40382b);
+                sink.write(this.f40951c, this.f40952d, this.f40950b);
             }
         }
 
@@ -170,7 +170,7 @@ public abstract class RequestBody {
             if (mediaType != null) {
                 Charset d10 = MediaType.d(mediaType, null, 1, null);
                 if (d10 == null) {
-                    MediaType.a aVar = MediaType.f40298e;
+                    MediaType.a aVar = MediaType.f40866e;
                     mediaType = aVar.c(mediaType + "; charset=utf-8");
                 } else {
                     charset = d10;

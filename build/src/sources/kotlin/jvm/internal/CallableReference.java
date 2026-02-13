@@ -11,7 +11,7 @@ import kotlin.reflect.KVisibility;
 import kotlin.reflect.i;
 import kotlin.reflect.l;
 import ns.b;
-/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public abstract class CallableReference implements KCallable, Serializable {
     public static final Object NO_RECEIVER = NoReceiver.INSTANCE;
     private final boolean isTopLevel;
@@ -21,7 +21,7 @@ public abstract class CallableReference implements KCallable, Serializable {
     private transient KCallable reflected;
     private final String signature;
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     private static class NoReceiver implements Serializable {
         private static final NoReceiver INSTANCE = new NoReceiver();
 

@@ -1,51 +1,44 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var0 = module;
-    var1 = function arg0() {
-        _fun45690: for (var _fun45690_ip = 0;;) switch (_fun45690_ip) {
-            case 0:
-                var2 = arg0;
-                var0 = global;
-                var1 = var0.Symbol;
-                var3 = 'undefined';
-                var1 = typeof var1;
-                if (!(var3 !== var1)) {
-                    _fun45690_ip = 43;
-                    continue _fun45690
-                }
-            case 21:
-                var1 = var0.Symbol;
-                var1 = var1.iterator;
-                var3 = var2[var1];
-                var1 = null;
-                if (!(var1 == var3)) {
-                    _fun45690_ip = 59;
-                    continue _fun45690
-                }
-            case 43:
-                var3 = var2["@@iterator"];
-                var1 = null;
-                if (!(var1 == var3)) {
-                    _fun45690_ip = 59;
-                    continue _fun45690
-                }
-            case 55:
-                var1 = undefined;
-                return var1;
-            case 59:
-                var1 = var0.Array;
-                var0 = var1.from;
-                var0 = var0.bind(var1)(var2);
-                return var0;
-        }
-    };
-    var0.exports = var1;
-    var2 = var0.exports;
-    var1 = true;
-    var2.__esModule = var1;
-    var1 = var0.exports;
-    var0 = var0.exports;
-    var1.default = var0;
+    var7 = require;
+    var2 = exports;
+    var8 = dependencyMap;
+    var0 = global;
+    var4 = var0.Object;
+    var3 = var4.defineProperty;
+    var1 = {};
+    var0 = true;
+    var1.value = var0;
+    var0 = '__esModule';
+    var0 = var3.bind(var4)(var2, var0, var1);
+    var0 = 0;
+    var1 = var8[var0];
     var0 = undefined;
+    var1 = var7.bind(var0)(var1);
+    var3 = var1.memo;
+    var1 = 1;
+    var1 = var8[var1];
+    var1 = var7.bind(var0)(var1);
+    var5 = var1.FlatList;
+    var1 = 2;
+    var4 = var8[var1];
+    var1 = metroImportDefault;
+    var4 = var1.bind(var0)(var4);
+    var1 = var4.createAnimatedComponent;
+    var6 = var1.bind(var4)(var5);
+    var1 = 3;
+    var1 = var8[var1];
+    var5 = var7.bind(var0)(var1);
+    var4 = var5.createBottomSheetScrollableComponent;
+    var1 = 4;
+    var1 = var8[var1];
+    var1 = var7.bind(var0)(var1);
+    var1 = var1.SCROLLABLE_TYPE;
+    var1 = var1.FLATLIST;
+    var1 = var4.bind(var5)(var1, var6);
+    var1 = var3.bind(var0)(var1);
+    var3 = 'BottomSheetFlatList';
+    var1.displayName = var3;
+    var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, []);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 3718, 5093, 4941]);

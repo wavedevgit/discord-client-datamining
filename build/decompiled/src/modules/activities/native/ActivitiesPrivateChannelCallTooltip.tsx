@@ -23,18 +23,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var3.bind(var0)(var6);
     var3 = 1;
     var3 = var5[var3];
-    var3 = var4.bind(var0)(var3);
-    var7 = var3.StyleSheet;
-    var3 = 2;
-    var3 = var5[var3];
     var3 = var10.bind(var0)(var3);
     var _closure1_slot3 = var3;
-    var3 = 3;
+    var3 = 2;
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
     var3 = var3.EMBEDDED_ACTIVITIES_BLOG_POST_URL;
     var _closure1_slot4 = var3;
-    var3 = 4;
+    var3 = 3;
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
     var3 = var3.jsx;
@@ -43,7 +39,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = 500;
     var3.duration = var6;
     var _closure1_slot6 = var3;
-    var6 = var7.create;
+    var3 = 4;
+    var3 = var5[var3];
+    var7 = var4.bind(var0)(var3);
+    var6 = var7.createStyles;
     var3 = {};
     var8 = {
         'marginLeft': 200,
@@ -54,17 +53,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         'borderBottomWidth': 16,
         'borderLeftWidth': 16
     };
-    var9 = 200;
-    var11 = 16;
-    var13 = {};
-    var12 = '225deg';
-    var13.rotateZ = var12;
-    var12 = new Array(1);
-    var12[0] = var13;
-    var8.transform = var12;
+    var9 = 16;
+    var12 = {};
+    var11 = '225deg';
+    var12.rotateZ = var11;
+    var11 = new Array(1);
+    var11[0] = var12;
+    var8.transform = var11;
     var3.arrow = var8;
     var8 = {};
-    var8.padding = var11;
+    var8.padding = var9;
     var3.tooltip = var8;
     var8 = {
         'position': 'absolute',
@@ -74,9 +72,6 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         'top': 4294967288
     };
     var3.tooltipContainer = var8;
-    var8 = {};
-    var8.width = var9;
-    var3.shortWidthTooltipContainer = var8;
     var8 = {
         'textAlign': 'center',
         'fontSize': 14
@@ -114,12 +109,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/activities/native/ActivitiesPrivateChannelCallTooltip.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun90443: for (var _fun90443_ip = 0;;) switch (_fun90443_ip) {
+        _fun92002: for (var _fun92002_ip = 0;;) switch (_fun92002_ip) {
             case 0:
                 var0 = arg0;
                 var12 = var0.onClosePress;
                 var3 = undefined;
                 var _closure2_slot0 = var3;
+                var0 = _closure1_slot7;
+                var11 = var0.bind(var3)();
                 var2 = _closure1_slot0;
                 var4 = _closure1_slot2;
                 var0 = 6;
@@ -137,12 +134,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var4.bind(var5)(var2, var0);
                 var6 = 4;
                 if (!var0) {
-                    _fun90443_ip = 78;
-                    continue _fun90443
+                    _fun92002_ip = 86;
+                    continue _fun92002
                 }
-            case 76:
+            case 84:
                 var6 = 0;
-            case 78:
+            case 86:
                 _closure2_slot0 = var6;
                 var16 = _closure1_slot0;
                 var10 = _closure1_slot2;
@@ -223,7 +220,6 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var9.bind(var3)(var0);
                 var1 = var0.View;
                 var0 = {};
-                var11 = _closure1_slot7;
                 var6 = var11.tooltipContainer;
                 var4 = new Array(2);
                 var4[0] = var6;
@@ -306,4 +302,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1298, 3454, 33, 671, 566, 3717, 4103, 11668, 1234, 4849, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1298, 3457, 33, 1297, 671, 566, 3717, 4103, 8694, 1235, 4880, 2]);

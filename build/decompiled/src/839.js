@@ -1,231 +1,49 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var1 = exports;
-    var2 = function arg0() {
-        _fun8878: for (var _fun8878_ip = 0;;) switch (_fun8878_ip) {
-            case 0:
-                var1 = arg0;
-                var0 = 400;
-                if (!(var1 < var0)) {
-                    _fun8878_ip = 23;
-                    continue _fun8878
-                }
-            case 13:
-                var2 = 100;
-                if (!(!(var1 >= var2))) {
-                    _fun8878_ip = 319;
-                    continue _fun8878
-                }
-            case 23:
-                if (!(var1 >= var0)) {
-                    _fun8878_ip = 37;
-                    continue _fun8878
-                }
-            case 27:
-                var0 = 500;
-                if (!(!(var1 < var0))) {
-                    _fun8878_ip = 147;
-                    continue _fun8878
-                }
-            case 37:
-                var0 = 500;
-                if (!(var1 >= var0)) {
-                    _fun8878_ip = 57;
-                    continue _fun8878
-                }
-            case 47:
-                var0 = 600;
-                if (!(!(var1 < var0))) {
-                    _fun8878_ip = 69;
-                    continue _fun8878
-                }
-            case 57:
-                var0 = {
-                    'code': 2,
-                    'message': 'internal_error'
-                };
-                return var0;
-            case 69:
-                var0 = 501;
-                if (!(var0 !== var1)) {
-                    _fun8878_ip = 135;
-                    continue _fun8878
-                }
-            case 79:
-                var0 = 503;
-                if (!(var0 !== var1)) {
-                    _fun8878_ip = 123;
-                    continue _fun8878
-                }
-            case 89:
-                var0 = 504;
-                if (!(var0 !== var1)) {
-                    _fun8878_ip = 111;
-                    continue _fun8878
-                }
-            case 99:
-                var0 = {
-                    'code': 2,
-                    'message': 'internal_error'
-                };
-                return var0;
-            case 111:
-                var0 = {
-                    'code': 2,
-                    'message': 'deadline_exceeded'
-                };
-                return var0;
-            case 123:
-                var0 = {
-                    'code': 2,
-                    'message': 'unavailable'
-                };
-                return var0;
-            case 135:
-                var0 = {
-                    'code': 2,
-                    'message': 'unimplemented'
-                };
-                return var0;
-            case 147:
-                var0 = 401;
-                if (!(var0 !== var1)) {
-                    _fun8878_ip = 307;
-                    continue _fun8878
-                }
-            case 160:
-                var0 = 403;
-                if (!(var0 !== var1)) {
-                    _fun8878_ip = 295;
-                    continue _fun8878
-                }
-            case 173:
-                var0 = 404;
-                if (!(var0 !== var1)) {
-                    _fun8878_ip = 283;
-                    continue _fun8878
-                }
-            case 183:
-                var0 = 409;
-                if (!(var0 !== var1)) {
-                    _fun8878_ip = 271;
-                    continue _fun8878
-                }
-            case 193:
-                var0 = 413;
-                if (!(var0 !== var1)) {
-                    _fun8878_ip = 259;
-                    continue _fun8878
-                }
-            case 203:
-                var0 = 429;
-                if (!(var0 !== var1)) {
-                    _fun8878_ip = 247;
-                    continue _fun8878
-                }
-            case 213:
-                var0 = 499;
-                if (!(var0 !== var1)) {
-                    _fun8878_ip = 235;
-                    continue _fun8878
-                }
-            case 223:
-                var0 = {
-                    'code': 2,
-                    'message': 'invalid_argument'
-                };
-                return var0;
-            case 235:
-                var0 = {
-                    'code': 2,
-                    'message': 'cancelled'
-                };
-                return var0;
-            case 247:
-                var0 = {
-                    'code': 2,
-                    'message': 'resource_exhausted'
-                };
-                return var0;
-            case 259:
-                var0 = {
-                    'code': 2,
-                    'message': 'failed_precondition'
-                };
-                return var0;
-            case 271:
-                var0 = {
-                    'code': 2,
-                    'message': 'already_exists'
-                };
-                return var0;
-            case 283:
-                var0 = {
-                    'code': 2,
-                    'message': 'not_found'
-                };
-                return var0;
-            case 295:
-                var0 = {
-                    'code': 2,
-                    'message': 'permission_denied'
-                };
-                return var0;
-            case 307:
-                var0 = {
-                    'code': 2,
-                    'message': 'unauthenticated'
-                };
-                return var0;
-            case 319:
-                var0 = {};
-                var1 = 1;
-                var0.code = var1;
-                return var0;
-        }
-    };
-    var _closure1_slot0 = var2;
-    var3 = global;
-    var6 = var3.Object;
-    var5 = var6.defineProperty;
-    var3 = var3.Symbol;
-    var4 = var3.toStringTag;
-    var3 = {};
-    var7 = 'Module';
-    var3.value = var7;
-    var3 = var5.bind(var6)(var1, var4, var3);
-    var3 = 2;
-    var1.SPAN_STATUS_ERROR = var3;
-    var3 = 1;
-    var1.SPAN_STATUS_OK = var3;
-    var3 = 0;
-    var1.SPAN_STATUS_UNSET = var3;
-    var1.getSpanStatusFromHttpCode = var2;
-    var0 = function arg0, arg1() {
-        _fun8879: for (var _fun8879_ip = 0;;) switch (_fun8879_ip) {
-            case 0:
-                var3 = arg0;
-                var2 = arg1;
-                var1 = var3.setAttribute;
-                var0 = 'http.response.status_code';
-                var0 = var1.bind(var3)(var0, var2);
-                var1 = _closure1_slot0;
-                var0 = undefined;
-                var2 = var1.bind(var0)(var2);
-                var4 = var2.message;
-                var1 = 'unknown_error';
-                if (!(var1 !== var4)) {
-                    _fun8879_ip = 64;
-                    continue _fun8879
-                }
-            case 53:
-                var1 = var3.setStatus;
-                var1 = var1.bind(var3)(var2);
-            case 64:
-                return var0;
-        }
-    };
-    var1.setHttpStatus = var0;
+    var0 = global;
+    var4 = var0.Object;
+    var3 = var4.defineProperty;
+    var0 = var0.Symbol;
+    var2 = var0.toStringTag;
+    var0 = {};
+    var5 = 'Module';
+    var0.value = var5;
+    var0 = var3.bind(var4)(var1, var2, var0);
+    var0 = 'cache.hit';
+    var1.SEMANTIC_ATTRIBUTE_CACHE_HIT = var0;
+    var0 = 'cache.item_size';
+    var1.SEMANTIC_ATTRIBUTE_CACHE_ITEM_SIZE = var0;
+    var0 = 'cache.key';
+    var1.SEMANTIC_ATTRIBUTE_CACHE_KEY = var0;
+    var0 = 'sentry.exclusive_time';
+    var1.SEMANTIC_ATTRIBUTE_EXCLUSIVE_TIME = var0;
+    var0 = 'http.request.method';
+    var1.SEMANTIC_ATTRIBUTE_HTTP_REQUEST_METHOD = var0;
+    var0 = 'sentry.profile_id';
+    var1.SEMANTIC_ATTRIBUTE_PROFILE_ID = var0;
+    var0 = 'sentry.custom_span_name';
+    var1.SEMANTIC_ATTRIBUTE_SENTRY_CUSTOM_SPAN_NAME = var0;
+    var0 = 'sentry.idle_span_finish_reason';
+    var1.SEMANTIC_ATTRIBUTE_SENTRY_IDLE_SPAN_FINISH_REASON = var0;
+    var0 = 'sentry.measurement_unit';
+    var1.SEMANTIC_ATTRIBUTE_SENTRY_MEASUREMENT_UNIT = var0;
+    var0 = 'sentry.measurement_value';
+    var1.SEMANTIC_ATTRIBUTE_SENTRY_MEASUREMENT_VALUE = var0;
+    var0 = 'sentry.op';
+    var1.SEMANTIC_ATTRIBUTE_SENTRY_OP = var0;
+    var0 = 'sentry.origin';
+    var1.SEMANTIC_ATTRIBUTE_SENTRY_ORIGIN = var0;
+    var0 = 'sentry.previous_trace_sample_rate';
+    var1.SEMANTIC_ATTRIBUTE_SENTRY_PREVIOUS_TRACE_SAMPLE_RATE = var0;
+    var0 = 'sentry.sample_rate';
+    var1.SEMANTIC_ATTRIBUTE_SENTRY_SAMPLE_RATE = var0;
+    var0 = 'sentry.source';
+    var1.SEMANTIC_ATTRIBUTE_SENTRY_SOURCE = var0;
+    var0 = 'url.full';
+    var1.SEMANTIC_ATTRIBUTE_URL_FULL = var0;
+    var0 = 'sentry.link.type';
+    var1.SEMANTIC_LINK_ATTRIBUTE_LINK_TYPE = var0;
     var0 = undefined;
     return var0;
 })(undefined, undefined, undefined, undefined, undefined, undefined, []);

@@ -159,7 +159,7 @@ public final class Inquiry {
                             try {
                                 dVar = (d) bundle.getParcelable("ERROR_CODE_KEY");
                             } catch (Exception unused) {
-                                dVar2 = d.f55731s;
+                                dVar2 = d.f56299s;
                             }
                         } else {
                             dVar = null;
@@ -168,7 +168,7 @@ public final class Inquiry {
                             str5 = dVar;
                         }
                         if (str5 == 0) {
-                            str5 = d.f55731s;
+                            str5 = d.f56299s;
                         }
                         dVar2 = str5;
                         if (str3 == null) {

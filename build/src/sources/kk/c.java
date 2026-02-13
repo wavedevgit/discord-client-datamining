@@ -3,44 +3,44 @@ package kk;
 public final class c {
 
     /* renamed from: a  reason: collision with root package name */
-    private final b f31818a;
+    private final b f32386a;
 
     /* renamed from: b  reason: collision with root package name */
-    private ok.b f31819b;
+    private ok.b f32387b;
 
     public c(b bVar) {
         if (bVar != null) {
-            this.f31818a = bVar;
+            this.f32386a = bVar;
             return;
         }
         throw new IllegalArgumentException("Binarizer must be non-null.");
     }
 
     public ok.b a() {
-        if (this.f31819b == null) {
-            this.f31819b = this.f31818a.b();
+        if (this.f32387b == null) {
+            this.f32387b = this.f32386a.b();
         }
-        return this.f31819b;
+        return this.f32387b;
     }
 
     public ok.a b(int i10, ok.a aVar) {
-        return this.f31818a.c(i10, aVar);
+        return this.f32386a.c(i10, aVar);
     }
 
     public int c() {
-        return this.f31818a.d();
+        return this.f32386a.d();
     }
 
     public int d() {
-        return this.f31818a.f();
+        return this.f32386a.f();
     }
 
     public boolean e() {
-        return this.f31818a.e().f();
+        return this.f32386a.e().f();
     }
 
     public c f() {
-        return new c(this.f31818a.a(this.f31818a.e().g()));
+        return new c(this.f32386a.a(this.f32386a.e().g()));
     }
 
     public String toString() {

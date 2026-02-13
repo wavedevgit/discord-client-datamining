@@ -5,10 +5,10 @@ import lr.h;
 public final class f {
 
     /* renamed from: a  reason: collision with root package name */
-    private final h f38239a;
+    private final h f38807a;
 
     public f(h hVar) {
-        this.f38239a = hVar;
+        this.f38807a = hVar;
     }
 
     public static f a(h hVar) {
@@ -20,6 +20,6 @@ public final class f {
     }
 
     public e b(String str) {
-        return c((b) this.f38239a.get(), str);
+        return c((b) this.f38807a.get(), str);
     }
 }

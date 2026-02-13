@@ -3,15 +3,15 @@ package sg;
 public abstract class e implements Runnable {
 
     /* renamed from: d  reason: collision with root package name */
-    private final zg.k f48093d;
+    private final zg.k f48661d;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public e() {
-        this.f48093d = null;
+        this.f48661d = null;
     }
 
     public void a(Exception exc) {
-        zg.k kVar = this.f48093d;
+        zg.k kVar = this.f48661d;
         if (kVar != null) {
             kVar.d(exc);
         }
@@ -21,7 +21,7 @@ public abstract class e implements Runnable {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final zg.k c() {
-        return this.f48093d;
+        return this.f48661d;
     }
 
     @Override // java.lang.Runnable
@@ -34,6 +34,6 @@ public abstract class e implements Runnable {
     }
 
     public e(zg.k kVar) {
-        this.f48093d = kVar;
+        this.f48661d = kVar;
     }
 }

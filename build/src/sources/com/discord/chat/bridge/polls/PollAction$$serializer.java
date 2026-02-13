@@ -50,8 +50,8 @@ public /* synthetic */ class PollAction$$serializer implements h0 {
     public final KSerializer[] childSerializers() {
         Lazy[] lazyArr;
         lazyArr = PollAction.$childSerializers;
-        n2 n2Var = n2.f50033a;
-        return new KSerializer[]{n2Var, lazyArr[1].getValue(), h.f49997a, a.u(n2Var), a.u(n2Var), a.u(n2Var)};
+        n2 n2Var = n2.f50601a;
+        return new KSerializer[]{n2Var, lazyArr[1].getValue(), h.f50565a, a.u(n2Var), a.u(n2Var), a.u(n2Var)};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -72,7 +72,7 @@ public /* synthetic */ class PollAction$$serializer implements h0 {
         if (b10.p()) {
             String m10 = b10.m(serialDescriptor, 0);
             boolean C = b10.C(serialDescriptor, 2);
-            n2 n2Var = n2.f50033a;
+            n2 n2Var = n2.f50601a;
             pollActionPresentation = (PollActionPresentation) b10.y(serialDescriptor, 1, (DeserializationStrategy) lazyArr[1].getValue(), null);
             str = m10;
             str4 = (String) b10.n(serialDescriptor, 5, n2Var, null);
@@ -108,15 +108,15 @@ public /* synthetic */ class PollAction$$serializer implements h0 {
                         i11 |= 4;
                         break;
                     case 3:
-                        str6 = (String) b10.n(serialDescriptor, 3, n2.f50033a, str6);
+                        str6 = (String) b10.n(serialDescriptor, 3, n2.f50601a, str6);
                         i11 |= 8;
                         break;
                     case 4:
-                        str7 = (String) b10.n(serialDescriptor, 4, n2.f50033a, str7);
+                        str7 = (String) b10.n(serialDescriptor, 4, n2.f50601a, str7);
                         i11 |= 16;
                         break;
                     case 5:
-                        str8 = (String) b10.n(serialDescriptor, 5, n2.f50033a, str8);
+                        str8 = (String) b10.n(serialDescriptor, 5, n2.f50601a, str8);
                         i11 |= 32;
                         break;
                     default:

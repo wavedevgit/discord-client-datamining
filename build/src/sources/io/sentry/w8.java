@@ -8,14 +8,14 @@ interface w8 {
     public static final class a implements w8 {
 
         /* renamed from: a  reason: collision with root package name */
-        private static final a f30260a = new a();
+        private static final a f30828a = new a();
 
         private a() {
         }
 
         /* JADX INFO: Access modifiers changed from: package-private */
         public static w8 c() {
-            return f30260a;
+            return f30828a;
         }
 
         @Override // io.sentry.w8

@@ -1,35 +1,66 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun97589: for (var _fun97589_ip = 0;;) switch (_fun97589_ip) {
-        case 0:
-            var6 = require;
-            var7 = dependencyMap;
-            var0 = 0;
-            var1 = var7[var0];
-            var0 = undefined;
-            var3 = var6.bind(var0)(var1);
-            var1 = 1;
-            var2 = var7[var1];
-            var2 = var6.bind(var0)(var2);
-            var2 = var2.WeakMap;
-            var2 = var3.bind(var0)(var2);
-            if (!var2) {
-                _fun97589_ip = 97;
-                continue _fun97589
-            }
-        case 45:
-            var4 = /native code/;
-            var3 = var4.test;
-            var5 = global;
-            var5 = var5.String;
-            var1 = var7[var1];
-            var1 = var6.bind(var0)(var1);
-            var1 = var1.WeakMap;
-            var1 = var5.bind(var0)(var1);
-            var2 = var3.bind(var4)(var1);
-        case 97:
-            var1 = module;
-            var1.exports = var2;
-            return var0;
-    }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [12725, 12699]);
+    var3 = require;
+    var2 = exports;
+    var4 = dependencyMap;
+    var1 = {};
+    var5 = 0;
+    var6 = var4[var5];
+    var0 = undefined;
+    var6 = var3.bind(var0)(var6);
+    var7 = var6.URL;
+    var6 = var7.install;
+    var6 = var6.bind(var7)(var1);
+    var5 = var4[var5];
+    var5 = var3.bind(var0)(var5);
+    var6 = var5.URLSearchParams;
+    var5 = var6.install;
+    var5 = var5.bind(var6)(var1);
+    var5 = var1.URL;
+    var2.URL = var5;
+    var1 = var1.URLSearchParams;
+    var2.URLSearchParams = var1;
+    var1 = 1;
+    var5 = var4[var1];
+    var5 = var3.bind(var0)(var5);
+    var5 = var5.parseURL;
+    var2.parseURL = var5;
+    var5 = var4[var1];
+    var5 = var3.bind(var0)(var5);
+    var5 = var5.basicURLParse;
+    var2.basicURLParse = var5;
+    var5 = var4[var1];
+    var5 = var3.bind(var0)(var5);
+    var5 = var5.serializeURL;
+    var2.serializeURL = var5;
+    var5 = var4[var1];
+    var5 = var3.bind(var0)(var5);
+    var5 = var5.serializeHost;
+    var2.serializeHost = var5;
+    var5 = var4[var1];
+    var5 = var3.bind(var0)(var5);
+    var5 = var5.serializeInteger;
+    var2.serializeInteger = var5;
+    var5 = var4[var1];
+    var5 = var3.bind(var0)(var5);
+    var5 = var5.serializeURLOrigin;
+    var2.serializeURLOrigin = var5;
+    var5 = var4[var1];
+    var5 = var3.bind(var0)(var5);
+    var5 = var5.setTheUsername;
+    var2.setTheUsername = var5;
+    var5 = var4[var1];
+    var5 = var3.bind(var0)(var5);
+    var5 = var5.setThePassword;
+    var2.setThePassword = var5;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.cannotHaveAUsernamePasswordPort;
+    var2.cannotHaveAUsernamePasswordPort = var1;
+    var1 = 2;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.percentDecode;
+    var2.percentDecode = var1;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [12762, 12766, 12769]);

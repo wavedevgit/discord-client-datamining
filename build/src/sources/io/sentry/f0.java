@@ -6,10 +6,10 @@ import java.util.concurrent.CopyOnWriteArrayList;
 public final class f0 {
 
     /* renamed from: b  reason: collision with root package name */
-    private static final f0 f29314b = new f0();
+    private static final f0 f29882b = new f0();
 
     /* renamed from: a  reason: collision with root package name */
-    private final List f29315a = new CopyOnWriteArrayList();
+    private final List f29883a = new CopyOnWriteArrayList();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public interface a {
@@ -19,10 +19,10 @@ public final class f0 {
     }
 
     public static f0 a() {
-        return f29314b;
+        return f29882b;
     }
 
     public void b(a aVar) {
-        this.f29315a.add(aVar);
+        this.f29883a.add(aVar);
     }
 }

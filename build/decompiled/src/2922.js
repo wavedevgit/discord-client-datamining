@@ -4,19 +4,19 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = exports;
     var6 = dependencyMap;
     var4 = function arg0() {
-        _fun23838: for (var _fun23838_ip = 0;;) switch (_fun23838_ip) {
+        _fun23856: for (var _fun23856_ip = 0;;) switch (_fun23856_ip) {
             case 0:
                 var2 = arg0;
                 if (!var2) {
-                    _fun23838_ip = 18;
-                    continue _fun23838
+                    _fun23856_ip = 18;
+                    continue _fun23856
                 }
             case 6:
                 var1 = var2.__esModule;
                 var0 = var2;
                 if (var1) {
-                    _fun23838_ip = 27;
-                    continue _fun23838
+                    _fun23856_ip = 27;
+                    continue _fun23856
                 }
             case 18:
                 var1 = {};
@@ -34,23 +34,26 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2.value = var0;
     var0 = '__esModule';
     var0 = var7.bind(var8)(var1, var0, var2);
-    var0 = function arg0, arg1() {
-        var4 = undefined;
+    var0 = function arg0() {
+        var2 = undefined;
         var1 = undefined;
-        var2 = _closure1_slot1;
-        var3 = var2.default;
+        var3 = _closure1_slot1;
+        var4 = var3.default;
         var1 = arguments;
-        var2 = var1;
-        var1 = 2;
-        var1 = var3.bind(var4)(var1, var2);
+        var3 = var1;
+        var1 = 1;
+        var1 = var4.bind(var2)(var1, var3);
         var0 = _closure1_slot0;
-        var3 = var0.default;
-        var2 = {};
-        var0 = 1;
-        var2.weekStartsOn = var0;
-        var1 = arg0;
-        var0 = arg1;
-        var0 = var3.bind(var4)(var1, var0, var2);
+        var1 = var0.default;
+        var0 = arg0;
+        var1 = var1.bind(var2)(var0);
+        var0 = var1.getTime;
+        var1 = var0.bind(var1)();
+        var0 = global;
+        var2 = var0.Date;
+        var0 = var2.now;
+        var0 = var0.bind(var2)();
+        var0 = var1 < var0;
         return var0;
     };
     var1.default = var0;
@@ -69,4 +72,4 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = arg4;
     var1.exports = var2;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [2923, 2576]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [2578, 2579]);

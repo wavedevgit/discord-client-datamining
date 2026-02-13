@@ -39,21 +39,23 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var0)(var3);
     var3 = var3.jsx;
     var _closure1_slot6 = var3;
-    var3 = 9;
+    var3 = ['mobile-visual-refresh'];
+    var _closure1_slot7 = var3;
+    var3 = 10;
     var3 = var5[var3];
     var5 = var4.bind(var0)(var3);
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/themes/RootThemeContextProvider.native.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun100713: for (var _fun100713_ip = 0;;) switch (_fun100713_ip) {
+        _fun100551: for (var _fun100551_ip = 0;;) switch (_fun100551_ip) {
             case 0:
                 var0 = arg0;
                 var4 = var0.children;
                 var2 = _closure1_slot0;
-                var7 = _closure1_slot2;
+                var8 = _closure1_slot2;
                 var1 = 5;
-                var1 = var7[var1];
+                var1 = var8[var1];
                 var3 = undefined;
                 var6 = var2.bind(var3)(var1);
                 var5 = var6.useStateFromStoresObject;
@@ -75,125 +77,141 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var1 = var5.bind(var6)(var2, var1);
-                var6 = var1.saturation;
-                var5 = var1.contrast;
-                var8 = var1.theme;
-                var2 = _closure1_slot1;
+                var7 = var1.saturation;
+                var6 = var1.contrast;
+                var9 = var1.theme;
+                var5 = _closure1_slot1;
                 var1 = 6;
-                var1 = var7[var1];
-                var1 = var2.bind(var3)(var1);
+                var1 = var8[var1];
+                var1 = var5.bind(var3)(var1);
                 var1 = var1.bind(var3)();
+                var2 = 7;
+                var2 = var8[var2];
+                var5 = var5.bind(var3)(var2);
+                var2 = {};
+                var8 = 'RootThemeContextProvider';
+                var2.location = var8;
+                var2 = var5.bind(var3)(var2);
+                var5 = undefined;
+                if (!var2) {
+                    _fun100551_ip = 148;
+                    continue _fun100551
+                }
+            case 144:
+                var5 = _closure1_slot7;
+            case 148:
                 var2 = null;
                 var2 = var2 != var1;
-                var10 = 0;
                 var11 = 0;
+                var12 = 0;
                 if (!var2) {
-                    _fun100713_ip = 259;
-                    continue _fun100713
+                    _fun100551_ip = 295;
+                    continue _fun100551
                 }
-            case 128:
+            case 164:
                 var2 = var1.theme;
                 var1 = _closure1_slot5;
                 var1 = var1.LIGHT;
                 if (!(var2 !== var1)) {
-                    _fun100713_ip = 203;
-                    continue _fun100713
+                    _fun100551_ip = 239;
+                    continue _fun100551
                 }
-            case 148:
-                var9 = _closure1_slot0;
-                var12 = _closure1_slot2;
-                var1 = 7;
-                var2 = var12[var1];
-                var7 = var9.bind(var3)(var2);
-                var2 = var7.setThemeFlag;
-                var1 = var12[var1];
-                var1 = var9.bind(var3)(var1);
+            case 184:
+                var10 = _closure1_slot0;
+                var13 = _closure1_slot2;
+                var1 = 8;
+                var2 = var13[var1];
+                var8 = var10.bind(var3)(var2);
+                var2 = var8.setThemeFlag;
+                var1 = var13[var1];
+                var1 = var10.bind(var3)(var1);
                 var1 = var1.ThemeContextFlags;
                 var1 = var1.MOBILE_DARK_GRADIENT_THEME_ENABLED;
-                var1 = var2.bind(var7)(var10, var1);
-                _fun100713_ip = 256;
-                continue _fun100713;
-            case 203:
-                var12 = _closure1_slot0;
-                var13 = _closure1_slot2;
-                var2 = 7;
-                var7 = var13[var2];
-                var9 = var12.bind(var3)(var7);
-                var7 = var9.setThemeFlag;
-                var2 = var13[var2];
-                var2 = var12.bind(var3)(var2);
+                var1 = var2.bind(var8)(var11, var1);
+                _fun100551_ip = 292;
+                continue _fun100551;
+            case 239:
+                var13 = _closure1_slot0;
+                var14 = _closure1_slot2;
+                var2 = 8;
+                var8 = var14[var2];
+                var10 = var13.bind(var3)(var8);
+                var8 = var10.setThemeFlag;
+                var2 = var14[var2];
+                var2 = var13.bind(var3)(var2);
                 var2 = var2.ThemeContextFlags;
                 var2 = var2.MOBILE_LIGHT_GRADIENT_THEME_ENABLED;
-                var1 = var7.bind(var9)(var10, var2);
-            case 256:
-                var11 = var1;
-            case 259:
+                var1 = var8.bind(var10)(var11, var2);
+            case 292:
+                var12 = var1;
+            case 295:
                 var1 = 1;
-                var10 = var11;
-                if (!(var1 !== var6)) {
-                    _fun100713_ip = 322;
-                    continue _fun100713
+                var11 = var12;
+                if (!(var1 !== var7)) {
+                    _fun100551_ip = 358;
+                    continue _fun100551
                 }
-            case 269:
-                var12 = _closure1_slot0;
-                var13 = _closure1_slot2;
-                var2 = 7;
-                var7 = var13[var2];
-                var9 = var12.bind(var3)(var7);
-                var7 = var9.setThemeFlag;
-                var2 = var13[var2];
-                var2 = var12.bind(var3)(var2);
+            case 305:
+                var13 = _closure1_slot0;
+                var14 = _closure1_slot2;
+                var2 = 8;
+                var8 = var14[var2];
+                var10 = var13.bind(var3)(var8);
+                var8 = var10.setThemeFlag;
+                var2 = var14[var2];
+                var2 = var13.bind(var3)(var2);
                 var2 = var2.ThemeContextFlags;
                 var2 = var2.REDUCE_SATURATION_ENABLED;
-                var10 = var7.bind(var9)(var11, var2);
-            case 322:
-                var7 = var10;
-                if (!(var1 !== var5)) {
-                    _fun100713_ip = 425;
-                    continue _fun100713
+                var11 = var8.bind(var10)(var12, var2);
+            case 358:
+                var8 = var11;
+                if (!(var1 !== var6)) {
+                    _fun100551_ip = 461;
+                    continue _fun100551
                 }
-            case 329:
-                var9 = _closure1_slot0;
+            case 365:
+                var10 = _closure1_slot0;
                 var2 = _closure1_slot2;
-                var13 = 7;
-                var2 = var2[var13];
-                var9 = var9.bind(var3)(var2);
-                var2 = var9.setThemeFlag;
-                if (!(!(var5 > var1))) {
-                    _fun100713_ip = 390;
-                    continue _fun100713
+                var14 = 8;
+                var2 = var2[var14];
+                var10 = var10.bind(var3)(var2);
+                var2 = var10.setThemeFlag;
+                if (!(!(var6 > var1))) {
+                    _fun100551_ip = 426;
+                    continue _fun100551
                 }
-            case 359:
-                var11 = _closure1_slot0;
+            case 395:
+                var12 = _closure1_slot0;
                 var1 = _closure1_slot2;
-                var1 = var1[var13];
-                var1 = var11.bind(var3)(var1);
+                var1 = var1[var14];
+                var1 = var12.bind(var3)(var1);
                 var1 = var1.ThemeContextFlags;
                 var1 = var1.REDUCED_CONTRAST_ENABLED;
-                _fun100713_ip = 419;
-                continue _fun100713;
-            case 390:
-                var12 = _closure1_slot0;
-                var11 = _closure1_slot2;
-                var11 = var11[var13];
-                var11 = var12.bind(var3)(var11);
-                var11 = var11.ThemeContextFlags;
-                var1 = var11.INCREASED_CONTRAST_ENABLED;
-            case 419:
-                var7 = var2.bind(var9)(var10, var1);
-            case 425:
+                _fun100551_ip = 455;
+                continue _fun100551;
+            case 426:
+                var13 = _closure1_slot0;
+                var12 = _closure1_slot2;
+                var12 = var12[var14];
+                var12 = var13.bind(var3)(var12);
+                var12 = var12.ThemeContextFlags;
+                var1 = var12.INCREASED_CONTRAST_ENABLED;
+            case 455:
+                var8 = var2.bind(var10)(var11, var1);
+            case 461:
                 var2 = _closure1_slot6;
                 var1 = _closure1_slot0;
-                var9 = _closure1_slot2;
-                var0 = 8;
-                var0 = var9[var0];
+                var10 = _closure1_slot2;
+                var0 = 9;
+                var0 = var10[var0];
                 var0 = var1.bind(var3)(var0);
                 var1 = var0.RootThemeContextProvider;
                 var0 = {};
-                var0.theme = var8;
-                var0.flags = var7;
-                var0.saturation = var6;
-                var0.contrast = var5;
+                var0.theme = var9;
+                var0.flags = var8;
+                var0.saturation = var7;
+                var0.contrast = var6;
+                var0.enabledExperiments = var5;
                 var0.children = var4;
                 var0 = var2.bind(var3)(var1, var0);
                 return var0;
@@ -201,4 +219,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.RootThemeContextProvider = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1298, 3198, 483, 33, 566, 3243, 3161, 4858, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1298, 3201, 483, 33, 566, 3246, 13062, 3164, 4889, 2]);

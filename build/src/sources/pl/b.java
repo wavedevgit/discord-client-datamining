@@ -7,29 +7,29 @@ import java.util.List;
 public class b {
 
     /* renamed from: a  reason: collision with root package name */
-    private List f42785a = new ArrayList(2);
+    private List f43353a = new ArrayList(2);
 
     public void a(MediaFormat mediaFormat) {
         a aVar = new a();
         aVar.e(mediaFormat);
-        this.f42785a.add(aVar);
+        this.f43353a.add(aVar);
     }
 
     public List b() {
-        return this.f42785a;
+        return this.f43353a;
     }
 
     public void c(int i10, long j10) {
-        a aVar = (a) this.f42785a.get(i10);
+        a aVar = (a) this.f43353a.get(i10);
         aVar.c(aVar.a() + j10);
     }
 
     public void d(int i10, MediaFormat mediaFormat) {
-        ((a) this.f42785a.get(i10)).f(mediaFormat);
+        ((a) this.f43353a.get(i10)).f(mediaFormat);
     }
 
     public void e(int i10, String str, String str2) {
-        a aVar = (a) this.f42785a.get(i10);
+        a aVar = (a) this.f43353a.get(i10);
         aVar.b(str);
         aVar.d(str2);
     }

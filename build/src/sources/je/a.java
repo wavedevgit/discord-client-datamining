@@ -9,11 +9,11 @@ import oe.w0;
 public final class a extends ae.f {
 
     /* renamed from: o  reason: collision with root package name */
-    private final h0 f30911o;
+    private final h0 f31479o;
 
     public a() {
         super("Mp4WebvttDecoder");
-        this.f30911o = new h0();
+        this.f31479o = new h0();
     }
 
     private static ae.b B(h0 h0Var, int i10) {
@@ -47,15 +47,15 @@ public final class a extends ae.f {
 
     @Override // ae.f
     protected ae.g z(byte[] bArr, int i10, boolean z10) {
-        this.f30911o.S(bArr, i10);
+        this.f31479o.S(bArr, i10);
         ArrayList arrayList = new ArrayList();
-        while (this.f30911o.a() > 0) {
-            if (this.f30911o.a() >= 8) {
-                int q10 = this.f30911o.q();
-                if (this.f30911o.q() == 1987343459) {
-                    arrayList.add(B(this.f30911o, q10 - 8));
+        while (this.f31479o.a() > 0) {
+            if (this.f31479o.a() >= 8) {
+                int q10 = this.f31479o.q();
+                if (this.f31479o.q() == 1987343459) {
+                    arrayList.add(B(this.f31479o, q10 - 8));
                 } else {
-                    this.f30911o.V(q10 - 8);
+                    this.f31479o.V(q10 - 8);
                 }
             } else {
                 throw new ae.i("Incomplete Mp4Webvtt Top Level box header found.");

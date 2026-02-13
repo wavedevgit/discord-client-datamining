@@ -5,41 +5,41 @@ import jk.j1;
 public class b0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final a f30983a;
+    private final a f31551a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Object f30984b;
+    private final Object f31552b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Object f30985c;
+    private final Object f31553c;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     static class a {
 
         /* renamed from: a  reason: collision with root package name */
-        public final j1.b f30986a;
+        public final j1.b f31554a;
 
         /* renamed from: b  reason: collision with root package name */
-        public final Object f30987b;
+        public final Object f31555b;
 
         /* renamed from: c  reason: collision with root package name */
-        public final j1.b f30988c;
+        public final j1.b f31556c;
 
         /* renamed from: d  reason: collision with root package name */
-        public final Object f30989d;
+        public final Object f31557d;
 
         public a(j1.b bVar, Object obj, j1.b bVar2, Object obj2) {
-            this.f30986a = bVar;
-            this.f30987b = obj;
-            this.f30988c = bVar2;
-            this.f30989d = obj2;
+            this.f31554a = bVar;
+            this.f31555b = obj;
+            this.f31556c = bVar2;
+            this.f31557d = obj2;
         }
     }
 
     private b0(j1.b bVar, Object obj, j1.b bVar2, Object obj2) {
-        this.f30983a = new a(bVar, obj, bVar2, obj2);
-        this.f30984b = obj;
-        this.f30985c = obj2;
+        this.f31551a = new a(bVar, obj, bVar2, obj2);
+        this.f31552b = obj;
+        this.f31553c = obj2;
     }
 
     public static b0 b(j1.b bVar, Object obj, j1.b bVar2, Object obj2) {
@@ -48,6 +48,6 @@ public class b0 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public a a() {
-        return this.f30983a;
+        return this.f31551a;
     }
 }

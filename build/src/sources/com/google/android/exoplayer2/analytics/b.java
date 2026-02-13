@@ -80,7 +80,7 @@ public final class b implements d {
             if (bVar == null) {
                 j10 = -1;
             } else {
-                j10 = bVar.f46441d;
+                j10 = bVar.f47009d;
             }
             this.f12713c = j10;
             if (bVar != null && bVar.b()) {
@@ -114,11 +114,11 @@ public final class b implements d {
             }
             r.b bVar2 = this.f12714d;
             if (bVar2 == null) {
-                if (bVar.b() || bVar.f46441d != this.f12713c) {
+                if (bVar.b() || bVar.f47009d != this.f12713c) {
                     return false;
                 }
                 return true;
-            } else if (bVar.f46441d != bVar2.f46441d || bVar.f46439b != bVar2.f46439b || bVar.f46440c != bVar2.f46440c) {
+            } else if (bVar.f47009d != bVar2.f47009d || bVar.f47007b != bVar2.f47007b || bVar.f47008c != bVar2.f47008c) {
                 return false;
             } else {
                 return true;
@@ -137,16 +137,16 @@ public final class b implements d {
             if (j10 == -1) {
                 return false;
             }
-            if (bVar.f46441d > j10) {
+            if (bVar.f47009d > j10) {
                 return true;
             }
             if (this.f12714d == null) {
                 return false;
             }
-            int f10 = eventTime.f12643b.f(bVar.f46438a);
-            int f11 = eventTime.f12643b.f(this.f12714d.f46438a);
+            int f10 = eventTime.f12643b.f(bVar.f47006a);
+            int f11 = eventTime.f12643b.f(this.f12714d.f47006a);
             r.b bVar2 = eventTime.f12645d;
-            if (bVar2.f46441d < this.f12714d.f46441d || f10 < f11) {
+            if (bVar2.f47009d < this.f12714d.f47009d || f10 < f11) {
                 return false;
             }
             if (f10 > f11) {
@@ -154,25 +154,25 @@ public final class b implements d {
             }
             if (bVar2.b()) {
                 r.b bVar3 = eventTime.f12645d;
-                int i10 = bVar3.f46439b;
-                int i11 = bVar3.f46440c;
+                int i10 = bVar3.f47007b;
+                int i11 = bVar3.f47008c;
                 r.b bVar4 = this.f12714d;
-                int i12 = bVar4.f46439b;
-                if (i10 > i12 || (i10 == i12 && i11 > bVar4.f46440c)) {
+                int i12 = bVar4.f47007b;
+                if (i10 > i12 || (i10 == i12 && i11 > bVar4.f47008c)) {
                     return true;
                 }
                 return false;
             }
-            int i13 = eventTime.f12645d.f46442e;
-            if (i13 == -1 || i13 > this.f12714d.f46439b) {
+            int i13 = eventTime.f12645d.f47010e;
+            if (i13 == -1 || i13 > this.f12714d.f47007b) {
                 return true;
             }
             return false;
         }
 
         public void k(int i10, r.b bVar) {
-            if (this.f12713c == -1 && i10 == this.f12712b && bVar != null && bVar.f46441d >= b.this.o()) {
-                this.f12713c = bVar.f46441d;
+            if (this.f12713c == -1 && i10 == this.f12712b && bVar != null && bVar.f47009d >= b.this.o()) {
+                this.f12713c = bVar.f47009d;
             }
         }
 
@@ -183,7 +183,7 @@ public final class b implements d {
                 return false;
             }
             r.b bVar = this.f12714d;
-            if (bVar != null && timeline2.f(bVar.f46438a) == -1) {
+            if (bVar != null && timeline2.f(bVar.f47006a) == -1) {
                 return false;
             }
             return true;
@@ -259,9 +259,9 @@ public final class b implements d {
         d(eventTime);
         r.b bVar = eventTime.f12645d;
         if (bVar != null && bVar.b()) {
-            if (aVar == null || aVar.f12713c != eventTime.f12645d.f46441d || aVar.f12714d == null || aVar.f12714d.f46439b != eventTime.f12645d.f46439b || aVar.f12714d.f46440c != eventTime.f12645d.f46440c) {
+            if (aVar == null || aVar.f12713c != eventTime.f12645d.f47009d || aVar.f12714d == null || aVar.f12714d.f47007b != eventTime.f12645d.f47007b || aVar.f12714d.f47008c != eventTime.f12645d.f47008c) {
                 r.b bVar2 = eventTime.f12645d;
-                this.f12707e.d(eventTime, p(eventTime.f12644c, new r.b(bVar2.f46438a, bVar2.f46441d)).f12711a, p10.f12711a);
+                this.f12707e.d(eventTime, p(eventTime.f12644c, new r.b(bVar2.f47006a, bVar2.f47009d)).f12711a, p10.f12711a);
             }
         }
     }
@@ -305,7 +305,7 @@ public final class b implements d {
         }
         r.b bVar = eventTime.f12645d;
         if (bVar != null) {
-            if (bVar.f46441d < o()) {
+            if (bVar.f47009d < o()) {
                 return;
             }
             a aVar = (a) this.f12705c.get(this.f12709g);
@@ -320,12 +320,12 @@ public final class b implements d {
         r.b bVar2 = eventTime.f12645d;
         if (bVar2 != null && bVar2.b()) {
             r.b bVar3 = eventTime.f12645d;
-            r.b bVar4 = new r.b(bVar3.f46438a, bVar3.f46441d, bVar3.f46439b);
+            r.b bVar4 = new r.b(bVar3.f47006a, bVar3.f47009d, bVar3.f47007b);
             a p11 = p(eventTime.f12644c, bVar4);
             if (!p11.f12715e) {
                 p11.f12715e = true;
-                eventTime.f12643b.l(eventTime.f12645d.f46438a, this.f12704b);
-                this.f12707e.c(new AnalyticsListener.EventTime(eventTime.f12642a, eventTime.f12643b, eventTime.f12644c, bVar4, Math.max(0L, w0.p1(this.f12704b.i(eventTime.f12645d.f46439b)) + this.f12704b.p()), eventTime.f12647f, eventTime.f12648g, eventTime.f12649h, eventTime.f12650i, eventTime.f12651j), p11.f12711a);
+                eventTime.f12643b.l(eventTime.f12645d.f47006a, this.f12704b);
+                this.f12707e.c(new AnalyticsListener.EventTime(eventTime.f12642a, eventTime.f12643b, eventTime.f12644c, bVar4, Math.max(0L, w0.p1(this.f12704b.i(eventTime.f12645d.f47007b)) + this.f12704b.p()), eventTime.f12647f, eventTime.f12648g, eventTime.f12649h, eventTime.f12650i, eventTime.f12651j), p11.f12711a);
             }
         }
         if (!p10.f12715e) {
@@ -340,7 +340,7 @@ public final class b implements d {
 
     @Override // com.google.android.exoplayer2.analytics.d
     public synchronized String e(Timeline timeline, r.b bVar) {
-        return p(timeline.l(bVar.f46438a, this.f12704b).f12595i, bVar).f12711a;
+        return p(timeline.l(bVar.f47006a, this.f12704b).f12595i, bVar).f12711a;
     }
 
     @Override // com.google.android.exoplayer2.analytics.d

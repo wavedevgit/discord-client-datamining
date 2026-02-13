@@ -89,46 +89,46 @@ import zq.v4;
 public final class f3 implements gn.k {
 
     /* renamed from: m  reason: collision with root package name */
-    public static final a f56677m = new a(null);
+    public static final a f57245m = new a(null);
 
     /* renamed from: b  reason: collision with root package name */
-    private final ar.a f56678b;
+    private final ar.a f57246b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Map f56679c;
+    private final Map f57247c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Map f56680d;
+    private final Map f57248d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final tq.k f56681e;
+    private final tq.k f57249e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final o1 f56682f;
+    private final o1 f57250f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final e1 f56683g;
+    private final e1 f57251g;
 
     /* renamed from: h  reason: collision with root package name */
-    private Function0 f56684h;
+    private Function0 f57252h;
 
     /* renamed from: i  reason: collision with root package name */
-    private Function0 f56685i;
+    private Function0 f57253i;
 
     /* renamed from: j  reason: collision with root package name */
-    private Function2 f56686j;
+    private Function2 f57254j;
 
     /* renamed from: k  reason: collision with root package name */
-    private Function1 f56687k;
+    private Function1 f57255k;
 
     /* renamed from: l  reason: collision with root package name */
-    private Function1 f56688l;
+    private Function1 f57256l;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements gn.c0 {
 
         /* renamed from: a  reason: collision with root package name */
-        private final /* synthetic */ gn.f f56689a;
+        private final /* synthetic */ gn.f f57257a;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         /* renamed from: zq.f3$a$a  reason: collision with other inner class name */
@@ -147,7 +147,7 @@ public final class f3 implements gn.k {
             @Override // kotlin.jvm.functions.Function2
             public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2) {
                 a((v4.d.a) obj, (gn.a0) obj2);
-                return Unit.f31988a;
+                return Unit.f32556a;
             }
         }
 
@@ -180,16 +180,16 @@ public final class f3 implements gn.k {
             Intrinsics.checkNotNullParameter(initialRendering, "initialRendering");
             Intrinsics.checkNotNullParameter(initialViewEnvironment, "initialViewEnvironment");
             Intrinsics.checkNotNullParameter(contextForNewView, "contextForNewView");
-            return this.f56689a.a(initialRendering, initialViewEnvironment, contextForNewView, viewGroup);
+            return this.f57257a.a(initialRendering, initialViewEnvironment, contextForNewView, viewGroup);
         }
 
         @Override // gn.c0
         public KClass getType() {
-            return this.f56689a.getType();
+            return this.f57257a.getType();
         }
 
         private a() {
-            this.f56689a = new gn.f(Reflection.getOrCreateKotlinClass(v4.d.a.class), new Function4() { // from class: zq.e3
+            this.f57257a = new gn.f(Reflection.getOrCreateKotlinClass(v4.d.a.class), new Function4() { // from class: zq.e3
                 @Override // kotlin.jvm.functions.Function4
                 public final Object invoke(Object obj, Object obj2, Object obj3, Object obj4) {
                     View c10;
@@ -204,16 +204,16 @@ public final class f3 implements gn.k {
     public static final class b extends BottomSheetBehavior.g {
 
         /* renamed from: b  reason: collision with root package name */
-        final /* synthetic */ BottomSheetBehavior f56691b;
+        final /* synthetic */ BottomSheetBehavior f57259b;
 
         b(BottomSheetBehavior bottomSheetBehavior) {
-            this.f56691b = bottomSheetBehavior;
+            this.f57259b = bottomSheetBehavior;
         }
 
         @Override // com.google.android.material.bottomsheet.BottomSheetBehavior.g
         public void b(View bottomSheet, float f10) {
             Intrinsics.checkNotNullParameter(bottomSheet, "bottomSheet");
-            f3.this.f56678b.f6036j.setPadding(f3.this.f56678b.f6036j.getPaddingLeft(), f3.this.f56678b.f6036j.getPaddingTop(), f3.this.f56678b.f6036j.getPaddingRight(), this.f56691b.w0() + ((int) (f10 * (f3.this.f56678b.f6034h.getHeight() - this.f56691b.w0()))));
+            f3.this.f57246b.f6036j.setPadding(f3.this.f57246b.f6036j.getPaddingLeft(), f3.this.f57246b.f6036j.getPaddingTop(), f3.this.f57246b.f6036j.getPaddingRight(), this.f57259b.w0() + ((int) (f10 * (f3.this.f57246b.f6034h.getHeight() - this.f57259b.w0()))));
         }
 
         @Override // com.google.android.material.bottomsheet.BottomSheetBehavior.g
@@ -226,7 +226,7 @@ public final class f3 implements gn.k {
     public static final class c implements Function1 {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final c f56692d = new c();
+        public static final c f57260d = new c();
 
         @Override // kotlin.jvm.functions.Function1
         /* renamed from: a */
@@ -240,17 +240,17 @@ public final class f3 implements gn.k {
         Map i10;
         Intrinsics.checkNotNullParameter(binding, "binding");
         Intrinsics.checkNotNullParameter(initialRendering, "initialRendering");
-        this.f56678b = binding;
+        this.f57246b = binding;
         CoordinatorLayout root = binding.getRoot();
         Intrinsics.checkNotNullExpressionValue(root, "getRoot(...)");
-        this.f56681e = new tq.k(root);
+        this.f57249e = new tq.k(root);
         CoordinatorLayout root2 = binding.getRoot();
         Intrinsics.checkNotNullExpressionValue(root2, "getRoot(...)");
-        this.f56682f = new o1(root2);
+        this.f57250f = new o1(root2);
         CoordinatorLayout root3 = binding.getRoot();
         Intrinsics.checkNotNullExpressionValue(root3, "getRoot(...)");
-        this.f56683g = new e1(root3);
-        this.f56684h = new Function0() { // from class: zq.r1
+        this.f57251g = new e1(root3);
+        this.f57252h = new Function0() { // from class: zq.r1
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 Unit Y;
@@ -258,7 +258,7 @@ public final class f3 implements gn.k {
                 return Y;
             }
         };
-        this.f56685i = new Function0() { // from class: zq.c2
+        this.f57253i = new Function0() { // from class: zq.c2
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 Unit W;
@@ -266,7 +266,7 @@ public final class f3 implements gn.k {
                 return W;
             }
         };
-        this.f56686j = new Function2() { // from class: zq.n2
+        this.f57254j = new Function2() { // from class: zq.n2
             @Override // kotlin.jvm.functions.Function2
             public final Object invoke(Object obj, Object obj2) {
                 Unit X;
@@ -274,7 +274,7 @@ public final class f3 implements gn.k {
                 return X;
             }
         };
-        this.f56687k = new Function1() { // from class: zq.x2
+        this.f57255k = new Function1() { // from class: zq.x2
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Object obj) {
                 Unit V;
@@ -282,7 +282,7 @@ public final class f3 implements gn.k {
                 return V;
             }
         };
-        this.f56688l = new Function1() { // from class: zq.y2
+        this.f57256l = new Function1() { // from class: zq.y2
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Object obj) {
                 Unit Z;
@@ -291,7 +291,7 @@ public final class f3 implements gn.k {
             }
         };
         Context context = binding.getRoot().getContext();
-        nq.m mVar = nq.m.f38355a;
+        nq.m mVar = nq.m.f38923a;
         Intrinsics.checkNotNull(context);
         List f10 = initialRendering.f();
         List d10 = initialRendering.d();
@@ -310,25 +310,25 @@ public final class f3 implements gn.k {
             binding.f6035i.setControlsColor(h11.intValue());
         }
         List d11 = initialRendering.d();
-        this.f56680d = (d11 == null || (i10 = com.withpersona.sdk2.inquiry.steps.ui.components.f.j(d11)) == null) ? kotlin.collections.o0.i() : i10;
+        this.f57248d = (d11 == null || (i10 = com.withpersona.sdk2.inquiry.steps.ui.components.f.j(d11)) == null) ? kotlin.collections.o0.i() : i10;
         Set<Map.Entry> entrySet = h10.c().a().entrySet();
         LinkedHashMap linkedHashMap = new LinkedHashMap(kotlin.ranges.d.d(kotlin.collections.o0.e(CollectionsKt.w(entrySet, 10)), 16));
         for (Map.Entry entry : entrySet) {
             Pair a11 = as.v.a(entry.getKey(), ((nq.a) entry.getValue()).d());
             linkedHashMap.put(a11.c(), a11.d());
         }
-        this.f56679c = linkedHashMap;
-        this.f56678b.f6038l.addView(h10.a());
+        this.f57247c = linkedHashMap;
+        this.f57246b.f6038l.addView(h10.a());
         if (initialRendering.s() == StyleElements.PositionType.CENTER) {
             ConstraintSet constraintSet = new ConstraintSet();
-            constraintSet.f(this.f56678b.f6028b);
-            constraintSet.g(this.f56678b.f6038l.getId(), 4, this.f56678b.f6028b.getId(), 4);
-            constraintSet.c(this.f56678b.f6028b);
+            constraintSet.f(this.f57246b.f6028b);
+            constraintSet.g(this.f57246b.f6038l.getId(), 4, this.f57246b.f6028b.getId(), 4);
+            constraintSet.c(this.f57246b.f6028b);
         }
         if (h10.b() != null) {
             T(h10, initialRendering.f());
         }
-        CoordinatorLayout root4 = this.f56678b.getRoot();
+        CoordinatorLayout root4 = this.f57246b.getRoot();
         Intrinsics.checkNotNullExpressionValue(root4, "getRoot(...)");
         lq.f.g(root4, new Function1() { // from class: zq.z2
             @Override // kotlin.jvm.functions.Function1
@@ -354,7 +354,7 @@ public final class f3 implements gn.k {
     /* JADX INFO: Access modifiers changed from: private */
     public static final void C0(f3 f3Var, k5 k5Var, View view, View view2) {
         boolean z10;
-        Function2 function2 = f3Var.f56686j;
+        Function2 function2 = f3Var.f57254j;
         if (view.getVisibility() == 0) {
             z10 = true;
         } else {
@@ -373,7 +373,7 @@ public final class f3 implements gn.k {
                 return E0;
             }
         });
-        return Unit.f31988a;
+        return Unit.f32556a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -383,7 +383,7 @@ public final class f3 implements gn.k {
         bVar.f().c(it);
         bVar.p().c(CollectionsKt.l());
         bVar.s().c("");
-        return Unit.f31988a;
+        return Unit.f32556a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -396,7 +396,7 @@ public final class f3 implements gn.k {
                 return G0;
             }
         });
-        return Unit.f31988a;
+        return Unit.f32556a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -405,17 +405,17 @@ public final class f3 implements gn.k {
         com.withpersona.sdk2.inquiry.steps.ui.components.b bVar = (com.withpersona.sdk2.inquiry.steps.ui.components.b) k5Var;
         bVar.p().c(it);
         bVar.s().c("");
-        return Unit.f31988a;
+        return Unit.f32556a;
     }
 
     private static final void H0(final f3 f3Var, pq.c2 c2Var, final Function1 function1) {
         if (c2Var == null) {
             return;
         }
-        f3Var.f56678b.f6035i.getBackButton().setEnabled(false);
-        f3Var.f56678b.f6035i.setImportantForAccessibility(4);
-        f3Var.f56678b.f6038l.setImportantForAccessibility(4);
-        f3Var.f56681e.u(c2Var, new Function1() { // from class: zq.w2
+        f3Var.f57246b.f6035i.getBackButton().setEnabled(false);
+        f3Var.f57246b.f6035i.setImportantForAccessibility(4);
+        f3Var.f57246b.f6038l.setImportantForAccessibility(4);
+        f3Var.f57249e.u(c2Var, new Function1() { // from class: zq.w2
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Object obj) {
                 Unit I0;
@@ -428,13 +428,13 @@ public final class f3 implements gn.k {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit I0(f3 f3Var, Function1 function1, List selectedItems) {
         Intrinsics.checkNotNullParameter(selectedItems, "selectedItems");
-        f3Var.f56678b.f6035i.getBackButton().setEnabled(true);
-        f3Var.f56678b.f6035i.setImportantForAccessibility(1);
-        f3Var.f56678b.f6038l.setImportantForAccessibility(1);
+        f3Var.f57246b.f6035i.getBackButton().setEnabled(true);
+        f3Var.f57246b.f6035i.setImportantForAccessibility(1);
+        f3Var.f57246b.f6038l.setImportantForAccessibility(1);
         if (!selectedItems.isEmpty()) {
             function1.invoke(selectedItems);
         }
-        return Unit.f31988a;
+        return Unit.f32556a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -447,24 +447,24 @@ public final class f3 implements gn.k {
                 return K0;
             }
         });
-        return Unit.f31988a;
+        return Unit.f32556a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit K0(k5 k5Var, List it) {
         Intrinsics.checkNotNullParameter(it, "it");
         ((InputPhoneNumberComponent) k5Var).g().c(it);
-        return Unit.f31988a;
+        return Unit.f32556a;
     }
 
     private static final void L0(final f3 f3Var, pq.c2 c2Var, final Function1 function1) {
         if (c2Var == null) {
             return;
         }
-        f3Var.f56678b.f6035i.getBackButton().setEnabled(false);
-        f3Var.f56678b.f6035i.setImportantForAccessibility(4);
-        f3Var.f56678b.f6038l.setImportantForAccessibility(4);
-        f3Var.f56681e.u(c2Var, new Function1() { // from class: zq.v2
+        f3Var.f57246b.f6035i.getBackButton().setEnabled(false);
+        f3Var.f57246b.f6035i.setImportantForAccessibility(4);
+        f3Var.f57246b.f6038l.setImportantForAccessibility(4);
+        f3Var.f57249e.u(c2Var, new Function1() { // from class: zq.v2
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Object obj) {
                 Unit M0;
@@ -477,21 +477,21 @@ public final class f3 implements gn.k {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit M0(f3 f3Var, Function1 function1, List selectedItems) {
         Intrinsics.checkNotNullParameter(selectedItems, "selectedItems");
-        f3Var.f56678b.f6035i.getBackButton().setEnabled(true);
-        f3Var.f56678b.f6035i.setImportantForAccessibility(1);
-        f3Var.f56678b.f6038l.setImportantForAccessibility(1);
+        f3Var.f57246b.f6035i.getBackButton().setEnabled(true);
+        f3Var.f57246b.f6035i.setImportantForAccessibility(1);
+        f3Var.f57246b.f6038l.setImportantForAccessibility(1);
         if (!selectedItems.isEmpty()) {
             function1.invoke(selectedItems);
         }
-        return Unit.f31988a;
+        return Unit.f32556a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void N0(final f3 f3Var, final k5 k5Var, ESignature eSignature, v4.d.a aVar, gn.a0 a0Var, View view) {
-        f3Var.f56678b.f6035i.getBackButton().setEnabled(false);
-        f3Var.f56678b.f6035i.setImportantForAccessibility(4);
-        f3Var.f56678b.f6038l.setImportantForAccessibility(4);
-        f3Var.f56682f.p((ESignatureComponent) k5Var, eSignature, aVar.t(), a0Var, new Function2() { // from class: zq.s2
+        f3Var.f57246b.f6035i.getBackButton().setEnabled(false);
+        f3Var.f57246b.f6035i.setImportantForAccessibility(4);
+        f3Var.f57246b.f6038l.setImportantForAccessibility(4);
+        f3Var.f57250f.p((ESignatureComponent) k5Var, eSignature, aVar.t(), a0Var, new Function2() { // from class: zq.s2
             @Override // kotlin.jvm.functions.Function2
             public final Object invoke(Object obj, Object obj2) {
                 Unit O0;
@@ -515,42 +515,42 @@ public final class f3 implements gn.k {
         int i13 = g10.f3306c;
         View b10 = hVar.b();
         if (b10 == null) {
-            f3Var.f56678b.f6036j.setPadding(i12, i11, i13, max);
+            f3Var.f57246b.f6036j.setPadding(i12, i11, i13, max);
         } else {
-            ShadowedNestedScrollView nestedScroll = f3Var.f56678b.f6036j;
+            ShadowedNestedScrollView nestedScroll = f3Var.f57246b.f6036j;
             Intrinsics.checkNotNullExpressionValue(nestedScroll, "nestedScroll");
             nestedScroll.setPadding(i12, i11, i13, nestedScroll.getPaddingBottom());
             b10.setPadding(i12, b10.getPaddingTop(), i13, max);
         }
-        MaterialDivider footerDivider = f3Var.f56678b.f6030d;
+        MaterialDivider footerDivider = f3Var.f57246b.f6030d;
         Intrinsics.checkNotNullExpressionValue(footerDivider, "footerDivider");
         ViewGroup.LayoutParams layoutParams = footerDivider.getLayoutParams();
         if (layoutParams != null) {
             ViewGroup.MarginLayoutParams marginLayoutParams = (ViewGroup.MarginLayoutParams) layoutParams;
             marginLayoutParams.bottomMargin = g10.f3307d;
             footerDivider.setLayoutParams(marginLayoutParams);
-            CoordinatorLayout footerSheetCoordinatorLayout = f3Var.f56678b.f6032f;
+            CoordinatorLayout footerSheetCoordinatorLayout = f3Var.f57246b.f6032f;
             Intrinsics.checkNotNullExpressionValue(footerSheetCoordinatorLayout, "footerSheetCoordinatorLayout");
             footerSheetCoordinatorLayout.setPadding(i12, footerSheetCoordinatorLayout.getPaddingTop(), i13, max);
-            return Unit.f31988a;
+            return Unit.f32556a;
         }
         throw new NullPointerException("null cannot be cast to non-null type android.view.ViewGroup.MarginLayoutParams");
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit O0(f3 f3Var, k5 k5Var, boolean z10, Bitmap bitmap) {
-        f3Var.f56678b.f6035i.getBackButton().setEnabled(true);
-        f3Var.f56678b.f6035i.setImportantForAccessibility(1);
-        f3Var.f56678b.f6038l.setImportantForAccessibility(1);
+        f3Var.f57246b.f6035i.getBackButton().setEnabled(true);
+        f3Var.f57246b.f6035i.setImportantForAccessibility(1);
+        f3Var.f57246b.f6038l.setImportantForAccessibility(1);
         if (!z10) {
             ((ESignatureComponent) k5Var).a().c(bitmap);
         }
-        return Unit.f31988a;
+        return Unit.f32556a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void P0(f3 f3Var, k5 k5Var, View view) {
-        f3Var.f56687k.invoke(k5Var);
+        f3Var.f57255k.invoke(k5Var);
     }
 
     private final void Q(View view, Map map, k5 k5Var, boolean z10) {
@@ -559,11 +559,11 @@ public final class f3 implements gn.k {
     }
 
     private static final void Q0(final f3 f3Var, final TextInputLayout textInputLayout, pq.c2 c2Var, final pq.a4 a4Var) {
-        f3Var.f56678b.f6035i.getBackButton().setEnabled(false);
+        f3Var.f57246b.f6035i.getBackButton().setEnabled(false);
         textInputLayout.setEnabled(false);
-        f3Var.f56678b.f6035i.setImportantForAccessibility(4);
-        f3Var.f56678b.f6038l.setImportantForAccessibility(4);
-        f3Var.f56681e.u(c2Var, new Function1() { // from class: zq.q2
+        f3Var.f57246b.f6035i.setImportantForAccessibility(4);
+        f3Var.f57246b.f6038l.setImportantForAccessibility(4);
+        f3Var.f57249e.u(c2Var, new Function1() { // from class: zq.q2
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Object obj) {
                 Unit R0;
@@ -596,13 +596,13 @@ public final class f3 implements gn.k {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit R0(f3 f3Var, TextInputLayout textInputLayout, pq.a4 a4Var, List selectedItems) {
         Intrinsics.checkNotNullParameter(selectedItems, "selectedItems");
-        f3Var.f56678b.f6035i.getBackButton().setEnabled(true);
+        f3Var.f57246b.f6035i.getBackButton().setEnabled(true);
         textInputLayout.setEnabled(true);
         textInputLayout.requestLayout();
-        f3Var.f56678b.f6035i.setImportantForAccessibility(1);
-        f3Var.f56678b.f6038l.setImportantForAccessibility(1);
+        f3Var.f57246b.f6035i.setImportantForAccessibility(1);
+        f3Var.f57246b.f6038l.setImportantForAccessibility(1);
         a4Var.a().c(selectedItems);
-        return Unit.f31988a;
+        return Unit.f32556a;
     }
 
     private final void S(View view, Map map, k5 k5Var) {
@@ -659,10 +659,10 @@ public final class f3 implements gn.k {
                     return U0;
                 }
             }).b();
-            nq.h e10 = this.f56683g.e();
+            nq.h e10 = this.f57251g.e();
             if (e10 != null && (c10 = e10.c()) != null && (a10 = c10.a()) != null) {
                 for (Map.Entry entry : a10.entrySet()) {
-                    q0(aVar, ((nq.a) entry.getValue()).c(), ((nq.a) entry.getValue()).d(), map, map2, a0Var, this.f56680d);
+                    q0(aVar, ((nq.a) entry.getValue()).c(), ((nq.a) entry.getValue()).d(), map, map2, a0Var, this.f57248d);
                 }
                 for (Pair pair : b10) {
                     final Function1 function1 = (Function1) pair.d();
@@ -698,7 +698,7 @@ public final class f3 implements gn.k {
         if (c10 != null) {
             e0(hVar, c10.intValue(), yVar);
         } else {
-            this.f56678b.f6029c.addView(hVar.b());
+            this.f57246b.f6029c.addView(hVar.b());
         }
     }
 
@@ -706,7 +706,7 @@ public final class f3 implements gn.k {
     public static final Unit T0(v4.d.a aVar, pq.t4 t4Var, k5 it) {
         Intrinsics.checkNotNullParameter(it, "it");
         aVar.o().invoke(t4Var, it);
-        return Unit.f31988a;
+        return Unit.f32556a;
     }
 
     private final Map U(List list) {
@@ -729,14 +729,14 @@ public final class f3 implements gn.k {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit U0(f3 f3Var, k5 it) {
         Intrinsics.checkNotNullParameter(it, "it");
-        f3Var.f56683g.f();
-        return Unit.f31988a;
+        f3Var.f57251g.f();
+        return Unit.f32556a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit V(GovernmentIdNfcScanComponent governmentIdNfcScanComponent) {
         Intrinsics.checkNotNullParameter(governmentIdNfcScanComponent, "<unused var>");
-        return Unit.f31988a;
+        return Unit.f32556a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -746,24 +746,24 @@ public final class f3 implements gn.k {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit W() {
-        return Unit.f31988a;
+        return Unit.f32556a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit X(k5 k5Var, boolean z10) {
         Intrinsics.checkNotNullParameter(k5Var, "<unused var>");
-        return Unit.f31988a;
+        return Unit.f32556a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit Y() {
-        return Unit.f31988a;
+        return Unit.f32556a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit Z(q5 it) {
         Intrinsics.checkNotNullParameter(it, "it");
-        return Unit.f31988a;
+        return Unit.f32556a;
     }
 
     private final void a0(Map map, Map map2, List list) {
@@ -802,7 +802,7 @@ public final class f3 implements gn.k {
                     map2.put(inputTextAreaComponent.getName(), n0(inputTextAreaComponent.b().b()));
                 } else if (a10 instanceof InputPhoneNumberComponent) {
                     InputPhoneNumberComponent inputPhoneNumberComponent = (InputPhoneNumberComponent) a10;
-                    String h10 = qq.d.f45611a.h((pq.b4) CollectionsKt.o0(inputPhoneNumberComponent.g().b()));
+                    String h10 = qq.d.f46179a.h((pq.b4) CollectionsKt.o0(inputPhoneNumberComponent.g().b()));
                     map2.put(inputPhoneNumberComponent.getName(), n0(h10 + " " + inputPhoneNumberComponent.b().b()));
                 } else if (a10 instanceof InputConfirmationCodeComponent) {
                     InputConfirmationCodeComponent inputConfirmationCodeComponent = (InputConfirmationCodeComponent) a10;
@@ -838,7 +838,7 @@ public final class f3 implements gn.k {
                 } else if (a10 instanceof l5) {
                     ArrayList arrayList2 = new ArrayList();
                     for (k5 k5Var : ((l5) a10).getChildren()) {
-                        View view = (View) this.f56679c.get(k5Var.getName());
+                        View view = (View) this.f57247c.get(k5Var.getName());
                         if (view == null) {
                             aVar = null;
                         } else {
@@ -908,7 +908,7 @@ public final class f3 implements gn.k {
     public static final void c0(ClickableStackComponent clickableStackComponent, f3 f3Var, ConstraintLayout constraintLayout, View view) {
         boolean z10 = true;
         clickableStackComponent.f(true);
-        Function2 function2 = f3Var.f56686j;
+        Function2 function2 = f3Var.f57254j;
         if (constraintLayout.getVisibility() != 0) {
             z10 = false;
         }
@@ -923,7 +923,7 @@ public final class f3 implements gn.k {
                 arrayList.add(obj2);
             }
         }
-        pq.t4 d10 = this.f56683g.d();
+        pq.t4 d10 = this.f57251g.d();
         if (d10 != null) {
             Iterator it = arrayList.iterator();
             while (true) {
@@ -939,10 +939,10 @@ public final class f3 implements gn.k {
             }
             pq.t4 t4Var = (pq.t4) obj;
             if (t4Var != null && !t4Var.a1()) {
-                this.f56683g.f();
+                this.f57251g.f();
             }
         }
-        if (this.f56683g.d() == null) {
+        if (this.f57251g.d() == null) {
             Iterator it2 = arrayList.iterator();
             while (true) {
                 if (!it2.hasNext()) {
@@ -951,12 +951,12 @@ public final class f3 implements gn.k {
                 pq.t4 t4Var2 = (pq.t4) it2.next();
                 if (!t4Var2.a2()) {
                     t4Var2.x1(true);
-                    this.f56683g.g(t4Var2, a0Var);
+                    this.f57251g.g(t4Var2, a0Var);
                     break;
                 }
             }
         }
-        pq.t4 d11 = this.f56683g.d();
+        pq.t4 d11 = this.f57251g.d();
         if (d11 != null) {
             S0(aVar, a0Var, d11, map, map2);
         }
@@ -969,8 +969,8 @@ public final class f3 implements gn.k {
         LayerDrawable layerDrawable;
         Drawable drawable2;
         GradientDrawable gradientDrawable;
-        this.f56678b.f6030d.setVisibility(0);
-        this.f56678b.f6032f.setVisibility(0);
+        this.f57246b.f6030d.setVisibility(0);
+        this.f57246b.f6032f.setVisibility(0);
         View b10 = hVar.b();
         String str = null;
         if (b10 != null) {
@@ -988,14 +988,14 @@ public final class f3 implements gn.k {
         } else {
             i11 = 0;
         }
-        Drawable background = this.f56678b.f6034h.getBackground();
+        Drawable background = this.f57246b.f6034h.getBackground();
         if (background instanceof LayerDrawable) {
             layerDrawable = (LayerDrawable) background;
         } else {
             layerDrawable = null;
         }
         if (layerDrawable != null) {
-            drawable2 = layerDrawable.findDrawableByLayerId(f1.f56663k);
+            drawable2 = layerDrawable.findDrawableByLayerId(f1.f57231k);
         } else {
             drawable2 = null;
         }
@@ -1007,26 +1007,26 @@ public final class f3 implements gn.k {
         if (gradientDrawable != null) {
             gradientDrawable.setColor(i11);
         }
-        this.f56678b.f6031e.addView(hVar.b());
+        this.f57246b.f6031e.addView(hVar.b());
         k5 k5Var = (k5) CollectionsKt.q0(yVar.getChildren(), i10);
         if (k5Var != null) {
             str = k5Var.getName();
         }
-        final View view = (View) this.f56679c.get(str);
-        final BottomSheetBehavior q02 = BottomSheetBehavior.q0(this.f56678b.f6034h);
+        final View view = (View) this.f57247c.get(str);
+        final BottomSheetBehavior q02 = BottomSheetBehavior.q0(this.f57246b.f6034h);
         Intrinsics.checkNotNullExpressionValue(q02, "from(...)");
-        this.f56678b.f6036j.setVerticalFadingEdgeEnabled(false);
+        this.f57246b.f6036j.setVerticalFadingEdgeEnabled(false);
         if (view != null) {
-            this.f56678b.f6033g.setVisibility(0);
-            this.f56678b.f6031e.addOnLayoutChangeListener(new View.OnLayoutChangeListener() { // from class: zq.l2
+            this.f57246b.f6033g.setVisibility(0);
+            this.f57246b.f6031e.addOnLayoutChangeListener(new View.OnLayoutChangeListener() { // from class: zq.l2
                 @Override // android.view.View.OnLayoutChangeListener
                 public final void onLayoutChange(View view2, int i12, int i13, int i14, int i15, int i16, int i17, int i18, int i19) {
                     f3.f0(f3.this, view, q02, view2, i12, i13, i14, i15, i16, i17, i18, i19);
                 }
             });
         } else {
-            this.f56678b.f6033g.setVisibility(4);
-            this.f56678b.f6031e.addOnLayoutChangeListener(new View.OnLayoutChangeListener() { // from class: zq.m2
+            this.f57246b.f6033g.setVisibility(4);
+            this.f57246b.f6031e.addOnLayoutChangeListener(new View.OnLayoutChangeListener() { // from class: zq.m2
                 @Override // android.view.View.OnLayoutChangeListener
                 public final void onLayoutChange(View view2, int i12, int i13, int i14, int i15, int i16, int i17, int i18, int i19) {
                     f3.g0(f3.this, q02, view2, i12, i13, i14, i15, i16, i17, i18, i19);
@@ -1038,58 +1038,58 @@ public final class f3 implements gn.k {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void f0(f3 f3Var, View view, BottomSheetBehavior bottomSheetBehavior, View view2, int i10, int i11, int i12, int i13, int i14, int i15, int i16, int i17) {
-        int bottom = f3Var.f56678b.f6031e.getBottom();
+        int bottom = f3Var.f57246b.f6031e.getBottom();
         Rect rect = new Rect();
         view.getDrawingRect(rect);
-        f3Var.f56678b.f6034h.offsetDescendantRectToMyCoords(view, rect);
+        f3Var.f57246b.f6034h.offsetDescendantRectToMyCoords(view, rect);
         int w02 = bottomSheetBehavior.w0();
         bottomSheetBehavior.X0(rect.top);
         if (w02 != bottomSheetBehavior.w0()) {
-            ShadowedNestedScrollView shadowedNestedScrollView = f3Var.f56678b.f6036j;
-            shadowedNestedScrollView.setPadding(shadowedNestedScrollView.getPaddingLeft(), f3Var.f56678b.f6036j.getPaddingTop(), f3Var.f56678b.f6036j.getPaddingRight(), bottomSheetBehavior.w0());
+            ShadowedNestedScrollView shadowedNestedScrollView = f3Var.f57246b.f6036j;
+            shadowedNestedScrollView.setPadding(shadowedNestedScrollView.getPaddingLeft(), f3Var.f57246b.f6036j.getPaddingTop(), f3Var.f57246b.f6036j.getPaddingRight(), bottomSheetBehavior.w0());
         }
         bottomSheetBehavior.V0(bottom);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void g0(f3 f3Var, BottomSheetBehavior bottomSheetBehavior, View view, int i10, int i11, int i12, int i13, int i14, int i15, int i16, int i17) {
-        int bottom = f3Var.f56678b.f6031e.getBottom();
+        int bottom = f3Var.f57246b.f6031e.getBottom();
         bottomSheetBehavior.X0(bottom);
         bottomSheetBehavior.V0(bottom);
-        ShadowedNestedScrollView shadowedNestedScrollView = f3Var.f56678b.f6036j;
-        shadowedNestedScrollView.setPadding(shadowedNestedScrollView.getPaddingLeft(), f3Var.f56678b.f6036j.getPaddingTop(), f3Var.f56678b.f6036j.getPaddingRight(), bottom);
+        ShadowedNestedScrollView shadowedNestedScrollView = f3Var.f57246b.f6036j;
+        shadowedNestedScrollView.setPadding(shadowedNestedScrollView.getPaddingLeft(), f3Var.f57246b.f6036j.getPaddingTop(), f3Var.f57246b.f6036j.getPaddingRight(), bottom);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit i0(f3 f3Var, v4.d.a aVar) {
-        if (!f3Var.f56681e.m() && !f3Var.f56682f.h()) {
+        if (!f3Var.f57249e.m() && !f3Var.f57250f.h()) {
             if (aVar.j().b()) {
                 aVar.k().invoke();
             } else {
                 aVar.l().invoke();
             }
         }
-        return Unit.f31988a;
+        return Unit.f32556a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit j0(v4.d.a aVar) {
         aVar.l().invoke();
-        return Unit.f31988a;
+        return Unit.f32556a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit k0(v4.d.a aVar, f3 f3Var, List list, k5 tappedComponent, boolean z10) {
         Intrinsics.checkNotNullParameter(tappedComponent, "tappedComponent");
         aVar.m().invoke(tappedComponent, Boolean.valueOf(z10), f3Var.U(list));
-        return Unit.f31988a;
+        return Unit.f32556a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit l0(v4.d.a aVar, f3 f3Var, List list, q5 it) {
         Intrinsics.checkNotNullParameter(it, "it");
         aVar.r().invoke(it, f3Var.U(list));
-        return Unit.f31988a;
+        return Unit.f32556a;
     }
 
     private final ComponentParam.c m0(Number number) {
@@ -1174,7 +1174,7 @@ public final class f3 implements gn.k {
                 buttonWithLoadingIndicator3.setIsLoading(aVar.u() && ((q5) k5Var).G0());
             }
             Q(view, map, k5Var, aVar.u());
-            Unit unit = Unit.f31988a;
+            Unit unit = Unit.f32556a;
         } else if (k5Var instanceof InputTextComponent) {
             Intrinsics.checkNotNull(view, "null cannot be cast to non-null type com.google.android.material.textfield.TextInputLayout");
             TextInputLayout textInputLayout = (TextInputLayout) view;
@@ -1183,7 +1183,7 @@ public final class f3 implements gn.k {
             UiComponentError.UiInputComponentError uiInputComponentError = obj instanceof UiComponentError.UiInputComponentError ? (UiComponentError.UiInputComponentError) obj : null;
             xq.d.d(textInputLayout, uiInputComponentError != null ? uiInputComponentError.getMessage() : null, inputTextComponent.f());
             Q(view, map, k5Var, aVar.u());
-            Unit unit2 = Unit.f31988a;
+            Unit unit2 = Unit.f32556a;
         } else if (k5Var instanceof InputTextAreaComponent) {
             Intrinsics.checkNotNull(view, "null cannot be cast to non-null type com.google.android.material.textfield.TextInputLayout");
             TextInputLayout textInputLayout2 = (TextInputLayout) view;
@@ -1192,7 +1192,7 @@ public final class f3 implements gn.k {
             UiComponentError.UiInputComponentError uiInputComponentError2 = obj2 instanceof UiComponentError.UiInputComponentError ? (UiComponentError.UiInputComponentError) obj2 : null;
             xq.d.d(textInputLayout2, uiInputComponentError2 != null ? uiInputComponentError2.getMessage() : null, inputTextAreaComponent.f());
             Q(view, map, k5Var, aVar.u());
-            Unit unit3 = Unit.f31988a;
+            Unit unit3 = Unit.f32556a;
         } else if (k5Var instanceof InputConfirmationCodeComponent) {
             ((InputConfirmationCodeComponent) k5Var).f().c(new Function0() { // from class: zq.g2
                 @Override // kotlin.jvm.functions.Function0
@@ -1203,12 +1203,12 @@ public final class f3 implements gn.k {
                 }
             });
             Q(view, map, k5Var, aVar.u());
-            Unit unit4 = Unit.f31988a;
+            Unit unit4 = Unit.f32556a;
         } else if (k5Var instanceof InputAddressComponent) {
             Object tag = view.getTag();
             Intrinsics.checkNotNull(tag, "null cannot be cast to non-null type com.withpersona.sdk2.inquiry.steps.ui.databinding.Pi2UiAddressFieldBinding");
             sq.d dVar = (sq.d) tag;
-            List<TextInputLayout> o10 = CollectionsKt.o(dVar.f48213f, dVar.f48221n, dVar.f48209b, dVar.f48220m, dVar.f48219l);
+            List<TextInputLayout> o10 = CollectionsKt.o(dVar.f48781f, dVar.f48789n, dVar.f48777b, dVar.f48788m, dVar.f48787l);
             InputAddressComponent inputAddressComponent = (InputAddressComponent) k5Var;
             Object obj3 = map3.get(inputAddressComponent.getName());
             Intrinsics.checkNotNull(obj3, "null cannot be cast to non-null type com.withpersona.sdk2.inquiry.network.dto.ui.components.InputAddress");
@@ -1216,7 +1216,7 @@ public final class f3 implements gn.k {
             Object obj4 = map5.get(inputAddressComponent.getName());
             UiComponentError.UiInputAddressComponentError uiInputAddressComponentError = obj4 instanceof UiComponentError.UiInputAddressComponentError ? (UiComponentError.UiInputAddressComponentError) obj4 : null;
             inputAddressComponent.g().c(inputAddressComponent.x());
-            Unit unit5 = Unit.f31988a;
+            Unit unit5 = Unit.f32556a;
             inputAddressComponent.i().c(inputAddressComponent.A());
             inputAddressComponent.a().c(inputAddressComponent.s());
             inputAddressComponent.c().c(inputAddressComponent.B());
@@ -1236,29 +1236,29 @@ public final class f3 implements gn.k {
             List h12 = CollectionsKt.h1(arrayList);
             InputAddress.AddressComponentStyle styles2 = inputAddress.getStyles();
             oq.a aVar2 = new oq.a(context, 17367043, h12, (styles2 == null || (inputTextStyle2 = styles2.getInputTextStyle()) == null) ? null : inputTextStyle2.getFocusedTextBasedStyle());
-            MaterialAutoCompleteTextView addressFieldExpandedTextView = dVar.f48214g;
+            MaterialAutoCompleteTextView addressFieldExpandedTextView = dVar.f48782g;
             Intrinsics.checkNotNullExpressionValue(addressFieldExpandedTextView, "addressFieldExpandedTextView");
             x0(addressFieldExpandedTextView, aVar2, o10, dVar, aVar, k5Var, list);
-            MaterialAutoCompleteTextView addressFieldCollapsedTextView = dVar.f48212e;
+            MaterialAutoCompleteTextView addressFieldCollapsedTextView = dVar.f48780e;
             Intrinsics.checkNotNullExpressionValue(addressFieldCollapsedTextView, "addressFieldCollapsedTextView");
             x0(addressFieldCollapsedTextView, aVar2, o10, dVar, aVar, k5Var, list);
             if (Intrinsics.areEqual(inputAddressComponent.C(), Boolean.FALSE)) {
                 for (TextInputLayout textInputLayout3 : o10) {
                     textInputLayout3.setEnabled(true);
                 }
-                dVar.f48226s.setVisibility(8);
+                dVar.f48794s.setVisibility(8);
             }
             if (uiInputAddressComponentError != null) {
                 inputAddressComponent.E(Boolean.FALSE);
             }
             if (Intrinsics.areEqual(inputAddressComponent.D(), Boolean.FALSE)) {
-                dVar.f48216i.setVisibility(8);
-                dVar.f48217j.setVisibility(0);
-                dVar.f48218k.setLabelFor(dVar.f48217j.getId());
+                dVar.f48784i.setVisibility(8);
+                dVar.f48785j.setVisibility(0);
+                dVar.f48786k.setLabelFor(dVar.f48785j.getId());
             } else if (Intrinsics.areEqual(inputAddressComponent.D(), Boolean.TRUE) || inputAddressComponent.D() == null) {
-                dVar.f48216i.setVisibility(0);
-                dVar.f48217j.setVisibility(8);
-                dVar.f48218k.setLabelFor(dVar.f48216i.getId());
+                dVar.f48784i.setVisibility(0);
+                dVar.f48785j.setVisibility(8);
+                dVar.f48786k.setLabelFor(dVar.f48784i.getId());
             }
             S(view, map, k5Var);
             for (View view2 : o10) {
@@ -1267,25 +1267,25 @@ public final class f3 implements gn.k {
             }
             InputAddress.AddressComponentStyle styles3 = inputAddress.getStyles();
             TextBasedComponentStyle errorTextStyle = (styles3 == null || (inputTextStyle = styles3.getInputTextStyle()) == null) ? null : inputTextStyle.getErrorTextStyle();
-            TextInputLayout addressFieldCollapsed = dVar.f48211d;
+            TextInputLayout addressFieldCollapsed = dVar.f48779d;
             Intrinsics.checkNotNullExpressionValue(addressFieldCollapsed, "addressFieldCollapsed");
             xq.d.d(addressFieldCollapsed, uiInputAddressComponentError != null ? uiInputAddressComponentError.getMessage().get("street_1") : null, errorTextStyle);
-            TextInputLayout addressFieldExpanded = dVar.f48213f;
+            TextInputLayout addressFieldExpanded = dVar.f48781f;
             Intrinsics.checkNotNullExpressionValue(addressFieldExpanded, "addressFieldExpanded");
             xq.d.d(addressFieldExpanded, uiInputAddressComponentError != null ? uiInputAddressComponentError.getMessage().get("street_1") : null, errorTextStyle);
-            TextInputLayout addressSuite = dVar.f48221n;
+            TextInputLayout addressSuite = dVar.f48789n;
             Intrinsics.checkNotNullExpressionValue(addressSuite, "addressSuite");
             xq.d.d(addressSuite, uiInputAddressComponentError != null ? uiInputAddressComponentError.getMessage().get("street_2") : null, errorTextStyle);
-            TextInputLayout addressCity = dVar.f48209b;
+            TextInputLayout addressCity = dVar.f48777b;
             Intrinsics.checkNotNullExpressionValue(addressCity, "addressCity");
             xq.d.d(addressCity, uiInputAddressComponentError != null ? uiInputAddressComponentError.getMessage().get("city") : null, errorTextStyle);
-            TextInputLayout addressSubdivision = dVar.f48220m;
+            TextInputLayout addressSubdivision = dVar.f48788m;
             Intrinsics.checkNotNullExpressionValue(addressSubdivision, "addressSubdivision");
             xq.d.d(addressSubdivision, uiInputAddressComponentError != null ? uiInputAddressComponentError.getMessage().get("subdivision") : null, errorTextStyle);
-            TextInputLayout addressPostalCode = dVar.f48219l;
+            TextInputLayout addressPostalCode = dVar.f48787l;
             Intrinsics.checkNotNullExpressionValue(addressPostalCode, "addressPostalCode");
             xq.d.d(addressPostalCode, uiInputAddressComponentError != null ? uiInputAddressComponentError.getMessage().get("postal_code") : null, errorTextStyle);
-            Unit unit6 = Unit.f31988a;
+            Unit unit6 = Unit.f32556a;
         } else {
             boolean z10 = true;
             if (!(k5Var instanceof com.withpersona.sdk2.inquiry.steps.ui.components.e) && !(k5Var instanceof com.withpersona.sdk2.inquiry.steps.ui.components.d)) {
@@ -1296,7 +1296,7 @@ public final class f3 implements gn.k {
                     Object obj5 = map5.get(((InputRadioGroupComponent) k5Var).getName());
                     UiComponentError.UiInputComponentError uiInputComponentError3 = obj5 instanceof UiComponentError.UiInputComponentError ? (UiComponentError.UiInputComponentError) obj5 : null;
                     String message = uiInputComponentError3 != null ? uiInputComponentError3.getMessage() : null;
-                    TextView radioGroupError = mVar.f48262c;
+                    TextView radioGroupError = mVar.f48830c;
                     Intrinsics.checkNotNullExpressionValue(radioGroupError, "radioGroupError");
                     if (message != null && !StringsKt.k0(message)) {
                         radioGroupError.setVisibility(0);
@@ -1306,16 +1306,16 @@ public final class f3 implements gn.k {
                         radioGroupError.setText("");
                     }
                     Q(view, map, k5Var, aVar.u());
-                    View findViewById = view.findViewById(nq.e.f38272l0);
+                    View findViewById = view.findViewById(nq.e.f38840l0);
                     Intrinsics.checkNotNullExpressionValue(findViewById, "findViewById(...)");
                     for (View view3 : androidx.core.view.o0.a((ViewGroup) findViewById)) {
                         R(view3, map, k5Var, aVar.u());
                     }
-                    Unit unit7 = Unit.f31988a;
+                    Unit unit7 = Unit.f32556a;
                     return;
                 } else if (k5Var instanceof l5) {
                     for (k5 k5Var2 : ((l5) k5Var).getChildren()) {
-                        View view4 = (View) this.f56679c.get(k5Var2.getName());
+                        View view4 = (View) this.f57247c.get(k5Var2.getName());
                         if (view4 != null) {
                             Map map6 = map5;
                             q0(aVar, k5Var2, view4, map, map6, a0Var, map3);
@@ -1329,7 +1329,7 @@ public final class f3 implements gn.k {
                         b0(aVar, (ClickableStackComponent) k5Var, (ConstraintLayout) view);
                     }
                     Q(view, map, k5Var, aVar.u());
-                    Unit unit8 = Unit.f31988a;
+                    Unit unit8 = Unit.f32556a;
                     return;
                 } else if (k5Var instanceof pq.h) {
                     view.setOnClickListener(new View.OnClickListener() { // from class: zq.k2
@@ -1343,7 +1343,7 @@ public final class f3 implements gn.k {
                         buttonWithLoadingIndicator4.setIsLoading((aVar.u() && ((pq.h) k5Var).G0()) ? false : false);
                     }
                     Q(view, map, k5Var, aVar.u());
-                    Unit unit9 = Unit.f31988a;
+                    Unit unit9 = Unit.f32556a;
                     return;
                 } else if (k5Var instanceof InputDateComponent) {
                     Object tag3 = view.getTag();
@@ -1352,29 +1352,29 @@ public final class f3 implements gn.k {
                     Object obj6 = map5.get(((InputDateComponent) k5Var).getName());
                     UiComponentError.UiInputComponentError uiInputComponentError4 = obj6 instanceof UiComponentError.UiInputComponentError ? (UiComponentError.UiInputComponentError) obj6 : null;
                     if (uiInputComponentError4 != null) {
-                        fVar.f48235f.setError(uiInputComponentError4.getMessage());
-                        fVar.f48232c.setError(uiInputComponentError4.getMessage());
-                        fVar.f48237h.setError(uiInputComponentError4.getMessage());
-                        fVar.f48234e.setText(uiInputComponentError4.getMessage());
-                        fVar.f48234e.setVisibility(0);
+                        fVar.f48803f.setError(uiInputComponentError4.getMessage());
+                        fVar.f48800c.setError(uiInputComponentError4.getMessage());
+                        fVar.f48805h.setError(uiInputComponentError4.getMessage());
+                        fVar.f48802e.setText(uiInputComponentError4.getMessage());
+                        fVar.f48802e.setVisibility(0);
                     } else {
-                        fVar.f48235f.setError("");
-                        fVar.f48232c.setError("");
-                        fVar.f48237h.setError("");
-                        fVar.f48234e.setText("");
-                        fVar.f48234e.setVisibility(8);
+                        fVar.f48803f.setError("");
+                        fVar.f48800c.setError("");
+                        fVar.f48805h.setError("");
+                        fVar.f48802e.setText("");
+                        fVar.f48802e.setVisibility(8);
                     }
                     S(view, map, k5Var);
-                    View month = fVar.f48235f;
+                    View month = fVar.f48803f;
                     Intrinsics.checkNotNullExpressionValue(month, "month");
                     R(month, map, k5Var, aVar.u());
-                    View day = fVar.f48232c;
+                    View day = fVar.f48800c;
                     Intrinsics.checkNotNullExpressionValue(day, "day");
                     R(day, map, k5Var, aVar.u());
-                    View year = fVar.f48237h;
+                    View year = fVar.f48805h;
                     Intrinsics.checkNotNullExpressionValue(year, "year");
                     R(year, map, k5Var, aVar.u());
-                    Unit unit10 = Unit.f31988a;
+                    Unit unit10 = Unit.f32556a;
                     return;
                 } else if (k5Var instanceof com.withpersona.sdk2.inquiry.steps.ui.components.b) {
                     Object tag4 = view.getTag();
@@ -1400,7 +1400,7 @@ public final class f3 implements gn.k {
                         }
                     }, message2 != null ? message2.get("idb_country") : null, message2 != null ? message2.get("idb_type") : null, message2 != null ? message2.get("idb_value") : null);
                     Q(view, map, k5Var, aVar.u());
-                    Unit unit11 = Unit.f31988a;
+                    Unit unit11 = Unit.f32556a;
                     return;
                 } else if (k5Var instanceof InputMaskedTextComponent) {
                     InputMaskedTextComponent inputMaskedTextComponent = (InputMaskedTextComponent) k5Var;
@@ -1412,7 +1412,7 @@ public final class f3 implements gn.k {
                     InputTextBasedComponentStyle f10 = inputMaskedTextComponent.f();
                     xq.d.d(textInputLayout4, message3, f10 != null ? f10.getErrorTextStyle() : null);
                     Q(view, map, k5Var, aVar.u());
-                    Unit unit12 = Unit.f31988a;
+                    Unit unit12 = Unit.f32556a;
                     return;
                 } else if (k5Var instanceof InputPhoneNumberComponent) {
                     Object tag5 = view.getTag();
@@ -1421,7 +1421,7 @@ public final class f3 implements gn.k {
                     InputPhoneNumberComponent inputPhoneNumberComponent = (InputPhoneNumberComponent) k5Var;
                     Object obj9 = map5.get(inputPhoneNumberComponent.getName());
                     UiComponentError.UiInputComponentError uiInputComponentError6 = obj9 instanceof UiComponentError.UiInputComponentError ? (UiComponentError.UiInputComponentError) obj9 : null;
-                    TextInputLayout inputLayout = lVar.f48259b;
+                    TextInputLayout inputLayout = lVar.f48827b;
                     Intrinsics.checkNotNullExpressionValue(inputLayout, "inputLayout");
                     xq.d.d(inputLayout, uiInputComponentError6 != null ? uiInputComponentError6.getMessage() : null, inputPhoneNumberComponent.j());
                     pq.v1.e(inputPhoneNumberComponent, lVar, new Function0() { // from class: zq.y1
@@ -1433,7 +1433,7 @@ public final class f3 implements gn.k {
                         }
                     });
                     Q(view, map, k5Var, aVar.u());
-                    Unit unit13 = Unit.f31988a;
+                    Unit unit13 = Unit.f32556a;
                     return;
                 } else if (k5Var instanceof InputNumberComponent) {
                     InputNumberComponent inputNumberComponent = (InputNumberComponent) k5Var;
@@ -1446,7 +1446,7 @@ public final class f3 implements gn.k {
                     InputNumber inputNumber = obj11 instanceof InputNumber ? (InputNumber) obj11 : null;
                     xq.d.d(textInputLayout5, message4, (inputNumber == null || (styles = inputNumber.getStyles()) == null) ? null : styles.getErrorTextStyle());
                     Q(view, map, k5Var, aVar.u());
-                    Unit unit14 = Unit.f31988a;
+                    Unit unit14 = Unit.f32556a;
                     return;
                 } else if (k5Var instanceof InputCurrencyComponent) {
                     InputCurrencyComponent inputCurrencyComponent = (InputCurrencyComponent) k5Var;
@@ -1455,7 +1455,7 @@ public final class f3 implements gn.k {
                     Intrinsics.checkNotNull(view, "null cannot be cast to non-null type com.google.android.material.textfield.TextInputLayout");
                     xq.d.d((TextInputLayout) view, uiInputComponentError8 != null ? uiInputComponentError8.getMessage() : null, inputCurrencyComponent.f());
                     Q(view, map, k5Var, aVar.u());
-                    Unit unit15 = Unit.f31988a;
+                    Unit unit15 = Unit.f32556a;
                     return;
                 } else if (k5Var instanceof InputCheckboxComponent) {
                     Object tag6 = view.getTag();
@@ -1464,14 +1464,14 @@ public final class f3 implements gn.k {
                     Object obj13 = map5.get(((InputCheckboxComponent) k5Var).getName());
                     UiComponentError.UiInputComponentError uiInputComponentError9 = obj13 instanceof UiComponentError.UiInputComponentError ? (UiComponentError.UiInputComponentError) obj13 : null;
                     if (uiInputComponentError9 != null) {
-                        iVar.f48249d.setText(uiInputComponentError9.getMessage());
-                        iVar.f48249d.setVisibility(0);
+                        iVar.f48817d.setText(uiInputComponentError9.getMessage());
+                        iVar.f48817d.setVisibility(0);
                     } else {
-                        iVar.f48249d.setText("");
-                        iVar.f48249d.setVisibility(8);
+                        iVar.f48817d.setText("");
+                        iVar.f48817d.setVisibility(8);
                     }
                     Q(view, map, k5Var, aVar.u());
-                    Unit unit16 = Unit.f31988a;
+                    Unit unit16 = Unit.f32556a;
                     return;
                 } else if (k5Var instanceof InputCheckboxGroupComponent) {
                     Object tag7 = view.getTag();
@@ -1480,19 +1480,19 @@ public final class f3 implements gn.k {
                     Object obj14 = map5.get(((InputCheckboxGroupComponent) k5Var).getName());
                     UiComponentError.UiInputComponentError uiInputComponentError10 = obj14 instanceof UiComponentError.UiInputComponentError ? (UiComponentError.UiInputComponentError) obj14 : null;
                     if (uiInputComponentError10 != null) {
-                        jVar.f48253c.setText(uiInputComponentError10.getMessage());
-                        jVar.f48253c.setVisibility(0);
+                        jVar.f48821c.setText(uiInputComponentError10.getMessage());
+                        jVar.f48821c.setVisibility(0);
                     } else {
-                        jVar.f48253c.setText("");
-                        jVar.f48253c.setVisibility(8);
+                        jVar.f48821c.setText("");
+                        jVar.f48821c.setVisibility(8);
                     }
                     Q(view, map, k5Var, aVar.u());
-                    View findViewById2 = view.findViewById(nq.e.f38283r);
+                    View findViewById2 = view.findViewById(nq.e.f38851r);
                     Intrinsics.checkNotNullExpressionValue(findViewById2, "findViewById(...)");
                     for (View view5 : androidx.core.view.o0.a((ViewGroup) findViewById2)) {
                         R(view5, map, k5Var, aVar.u());
                     }
-                    Unit unit17 = Unit.f31988a;
+                    Unit unit17 = Unit.f32556a;
                     return;
                 } else if (k5Var instanceof ESignatureComponent) {
                     Object tag8 = view.getTag();
@@ -1505,63 +1505,63 @@ public final class f3 implements gn.k {
                     Object obj16 = map5.get(eSignatureComponent.getName());
                     UiComponentError.UiInputComponentError uiInputComponentError11 = obj16 instanceof UiComponentError.UiInputComponentError ? (UiComponentError.UiInputComponentError) obj16 : null;
                     if (uiInputComponentError11 != null) {
-                        vVar.f48294d.setText(uiInputComponentError11.getMessage());
-                        vVar.f48294d.setVisibility(0);
+                        vVar.f48862d.setText(uiInputComponentError11.getMessage());
+                        vVar.f48862d.setVisibility(0);
                     } else {
-                        vVar.f48294d.setText("");
-                        vVar.f48294d.setVisibility(8);
+                        vVar.f48862d.setText("");
+                        vVar.f48862d.setVisibility(8);
                     }
                     ESignature.Attributes attributes = eSignature.getAttributes();
                     if ((attributes != null ? attributes.getLabel() : null) != null) {
-                        TextView textView = vVar.f48295e;
+                        TextView textView = vVar.f48863e;
                         ESignature.Attributes attributes2 = eSignature.getAttributes();
                         textView.setText(attributes2 != null ? attributes2.getLabel() : null);
-                        vVar.f48295e.setVisibility(0);
+                        vVar.f48863e.setVisibility(0);
                     } else {
-                        vVar.f48295e.setText("");
-                        vVar.f48295e.setVisibility(8);
+                        vVar.f48863e.setText("");
+                        vVar.f48863e.setVisibility(8);
                     }
                     Bitmap b10 = eSignatureComponent.a().b();
                     if (b10 == null) {
                         Object tag9 = view.getTag();
                         Intrinsics.checkNotNull(tag9, "null cannot be cast to non-null type com.withpersona.sdk2.inquiry.steps.ui.databinding.Pi2UiSignatureFieldBinding");
-                        ((sq.v) tag9).f48292b.setVisibility(0);
+                        ((sq.v) tag9).f48860b.setVisibility(0);
                         Object tag10 = view.getTag();
                         Intrinsics.checkNotNull(tag10, "null cannot be cast to non-null type com.withpersona.sdk2.inquiry.steps.ui.databinding.Pi2UiSignatureFieldBinding");
-                        TextView textView2 = ((sq.v) tag10).f48292b;
+                        TextView textView2 = ((sq.v) tag10).f48860b;
                         ESignature.Attributes attributes3 = eSignature.getAttributes();
                         textView2.setText((attributes3 == null || (r3 = attributes3.getPlaceholder()) == null) ? "+ Add signature" : "+ Add signature");
                         Object tag11 = view.getTag();
                         Intrinsics.checkNotNull(tag11, "null cannot be cast to non-null type com.withpersona.sdk2.inquiry.steps.ui.databinding.Pi2UiSignatureFieldBinding");
-                        ((sq.v) tag11).f48297g.setVisibility(8);
+                        ((sq.v) tag11).f48865g.setVisibility(8);
                         Object tag12 = view.getTag();
                         Intrinsics.checkNotNull(tag12, "null cannot be cast to non-null type com.withpersona.sdk2.inquiry.steps.ui.databinding.Pi2UiSignatureFieldBinding");
-                        ((sq.v) tag12).f48293c.setVisibility(8);
+                        ((sq.v) tag12).f48861c.setVisibility(8);
                     } else {
                         Object tag13 = view.getTag();
                         Intrinsics.checkNotNull(tag13, "null cannot be cast to non-null type com.withpersona.sdk2.inquiry.steps.ui.databinding.Pi2UiSignatureFieldBinding");
-                        ((sq.v) tag13).f48297g.setImageBitmap(b10);
+                        ((sq.v) tag13).f48865g.setImageBitmap(b10);
                         Object tag14 = view.getTag();
                         Intrinsics.checkNotNull(tag14, "null cannot be cast to non-null type com.withpersona.sdk2.inquiry.steps.ui.databinding.Pi2UiSignatureFieldBinding");
-                        ((sq.v) tag14).f48292b.setVisibility(8);
+                        ((sq.v) tag14).f48860b.setVisibility(8);
                         Object tag15 = view.getTag();
                         Intrinsics.checkNotNull(tag15, "null cannot be cast to non-null type com.withpersona.sdk2.inquiry.steps.ui.databinding.Pi2UiSignatureFieldBinding");
-                        ((sq.v) tag15).f48297g.setVisibility(0);
+                        ((sq.v) tag15).f48865g.setVisibility(0);
                         Object tag16 = view.getTag();
                         Intrinsics.checkNotNull(tag16, "null cannot be cast to non-null type com.withpersona.sdk2.inquiry.steps.ui.databinding.Pi2UiSignatureFieldBinding");
-                        ((sq.v) tag16).f48293c.setVisibility(0);
+                        ((sq.v) tag16).f48861c.setVisibility(0);
                     }
-                    vVar.f48296f.setOnClickListener(new View.OnClickListener() { // from class: zq.z1
+                    vVar.f48864f.setOnClickListener(new View.OnClickListener() { // from class: zq.z1
                         @Override // android.view.View.OnClickListener
                         public final void onClick(View view6) {
                             f3.N0(f3.this, k5Var, eSignature, aVar, a0Var, view6);
                         }
                     });
                     S(view, map, k5Var);
-                    View signatureContainer = vVar.f48296f;
+                    View signatureContainer = vVar.f48864f;
                     Intrinsics.checkNotNullExpressionValue(signatureContainer, "signatureContainer");
                     R(signatureContainer, map, k5Var, aVar.u());
-                    Unit unit18 = Unit.f31988a;
+                    Unit unit18 = Unit.f32556a;
                     return;
                 } else if (k5Var instanceof GovernmentIdNfcScanComponent) {
                     Object tag17 = view.getTag();
@@ -1594,14 +1594,14 @@ public final class f3 implements gn.k {
                             String str2 = uiGovernmentIdNfcScanComponentError.getMessage().get(GovernmentIdNfcScan.documentNumberName);
                             GovernmentIdNfcScan.GovernmentIdNfcScanStyles styles5 = governmentIdNfcScanComponent.e().getStyles();
                             xq.d.d(c10, str2, (styles5 == null || (documentNumberStyle = styles5.getDocumentNumberStyle()) == null) ? null : documentNumberStyle.getErrorTextStyle());
-                            d0Var.b().f48234e.setText(uiGovernmentIdNfcScanComponentError.getMessage().get(GovernmentIdNfcScan.dateOfBirthName));
-                            d0Var.b().f48234e.setVisibility(0);
-                            d0Var.e().f48234e.setText(uiGovernmentIdNfcScanComponentError.getMessage().get(GovernmentIdNfcScan.expirationDateName));
-                            d0Var.e().f48234e.setVisibility(0);
-                            Unit unit19 = Unit.f31988a;
+                            d0Var.b().f48802e.setText(uiGovernmentIdNfcScanComponentError.getMessage().get(GovernmentIdNfcScan.dateOfBirthName));
+                            d0Var.b().f48802e.setVisibility(0);
+                            d0Var.e().f48802e.setText(uiGovernmentIdNfcScanComponentError.getMessage().get(GovernmentIdNfcScan.expirationDateName));
+                            d0Var.e().f48802e.setVisibility(0);
+                            Unit unit19 = Unit.f32556a;
                             return;
                         } else {
-                            Unit unit20 = Unit.f31988a;
+                            Unit unit20 = Unit.f32556a;
                             return;
                         }
                     }
@@ -1610,7 +1610,7 @@ public final class f3 implements gn.k {
                     throw new as.p();
                 } else {
                     Q(view, map, k5Var, aVar.u());
-                    Unit unit21 = Unit.f31988a;
+                    Unit unit21 = Unit.f32556a;
                     return;
                 }
             }
@@ -1633,7 +1633,7 @@ public final class f3 implements gn.k {
                         f3.A0(f3.this, textInputLayout6, c2Var, a4Var, view6);
                     }
                 });
-                Unit unit22 = Unit.f31988a;
+                Unit unit22 = Unit.f32556a;
             }
             EditText editText2 = textInputLayout6.getEditText();
             if (editText2 != null) {
@@ -1645,7 +1645,7 @@ public final class f3 implements gn.k {
                         return B0;
                     }
                 }, 30, null));
-                Unit unit23 = Unit.f31988a;
+                Unit unit23 = Unit.f32556a;
             }
             Object obj17 = map5.get(k5Var.getName());
             UiComponentError.UiInputComponentError uiInputComponentError12 = obj17 instanceof UiComponentError.UiInputComponentError ? (UiComponentError.UiInputComponentError) obj17 : null;
@@ -1653,19 +1653,19 @@ public final class f3 implements gn.k {
             InputSelectBoxComponentStyle styles6 = c2Var.getStyles();
             xq.d.d(textInputLayout6, message5, styles6 != null ? styles6.getErrorTextStyle() : null);
             Q(view, map, k5Var, aVar.u());
-            Unit unit24 = Unit.f31988a;
+            Unit unit24 = Unit.f32556a;
         }
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void r0(f3 f3Var, View view) {
-        f3Var.f56684h.invoke();
+        f3Var.f57252h.invoke();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void s0(f3 f3Var, k5 k5Var, View view, View view2) {
         boolean z10;
-        Function2 function2 = f3Var.f56686j;
+        Function2 function2 = f3Var.f57254j;
         if (view.getVisibility() == 0) {
             z10 = true;
         } else {
@@ -1677,7 +1677,7 @@ public final class f3 implements gn.k {
     /* JADX INFO: Access modifiers changed from: private */
     public static final void t0(f3 f3Var, k5 k5Var, View view, View view2) {
         boolean z10;
-        Function2 function2 = f3Var.f56686j;
+        Function2 function2 = f3Var.f57254j;
         if (view.getVisibility() == 0) {
             z10 = true;
         } else {
@@ -1688,21 +1688,21 @@ public final class f3 implements gn.k {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void u0(f3 f3Var, View view) {
-        f3Var.f56685i.invoke();
+        f3Var.f57253i.invoke();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void v0(f3 f3Var, k5 k5Var, View view) {
-        f3Var.f56688l.invoke(k5Var);
+        f3Var.f57256l.invoke(k5Var);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit w0(View view, v4.d.a aVar, f3 f3Var) {
         boolean z10;
-        if (rq.a.f47736a.b(view)) {
-            c5 c5Var = (c5) qq.f.a(aVar.f(), Reflection.getOrCreateKotlinClass(c5.class), c.f56692d);
+        if (rq.a.f48304a.b(view)) {
+            c5 c5Var = (c5) qq.f.a(aVar.f(), Reflection.getOrCreateKotlinClass(c5.class), c.f57260d);
             if (c5Var != null) {
-                Function2 function2 = f3Var.f56686j;
+                Function2 function2 = f3Var.f57254j;
                 if (view.getVisibility() == 0) {
                     z10 = true;
                 } else {
@@ -1711,7 +1711,7 @@ public final class f3 implements gn.k {
                 function2.invoke(c5Var, Boolean.valueOf(z10));
             }
         }
-        return Unit.f31988a;
+        return Unit.f32556a;
     }
 
     private static final void x0(final MaterialAutoCompleteTextView materialAutoCompleteTextView, oq.a aVar, final List list, final sq.d dVar, final v4.d.a aVar2, final k5 k5Var, final List list2) {
@@ -1732,7 +1732,7 @@ public final class f3 implements gn.k {
         while (it.hasNext()) {
             ((TextInputLayout) it.next()).setEnabled(false);
         }
-        dVar.f48226s.setVisibility(0);
+        dVar.f48794s.setVisibility(0);
         Context context = materialAutoCompleteTextView.getContext();
         Intrinsics.checkNotNullExpressionValue(context, "getContext(...)");
         bq.f.d(context);
@@ -1751,10 +1751,10 @@ public final class f3 implements gn.k {
         nq.a aVar;
         Intrinsics.checkNotNullParameter(rendering, "rendering");
         Intrinsics.checkNotNullParameter(viewEnvironment, "viewEnvironment");
-        Context context = this.f56678b.getRoot().getContext();
+        Context context = this.f57246b.getRoot().getContext();
         final ArrayList<nq.a> arrayList = new ArrayList();
         for (k5 k5Var : rendering.f()) {
-            View view = (View) this.f56679c.get(k5Var.getName());
+            View view = (View) this.f57247c.get(k5Var.getName());
             if (view == null) {
                 aVar = null;
             } else {
@@ -1780,7 +1780,7 @@ public final class f3 implements gn.k {
         }
         kq.c.a(viewEnvironment, d10);
         for (nq.a aVar2 : arrayList) {
-            q0(rendering, aVar2.a(), aVar2.b(), p02, linkedHashMap, viewEnvironment, this.f56680d);
+            q0(rendering, aVar2.a(), aVar2.b(), p02, linkedHashMap, viewEnvironment, this.f57248d);
         }
         jq.a j10 = rendering.j();
         Function0 function0 = new Function0() { // from class: zq.a3
@@ -1799,17 +1799,17 @@ public final class f3 implements gn.k {
                 return j02;
             }
         };
-        Pi2NavigationBar navigationBar = this.f56678b.f6035i;
+        Pi2NavigationBar navigationBar = this.f57246b.f6035i;
         Intrinsics.checkNotNullExpressionValue(navigationBar, "navigationBar");
-        CoordinatorLayout root = this.f56678b.getRoot();
+        CoordinatorLayout root = this.f57246b.getRoot();
         Intrinsics.checkNotNullExpressionValue(root, "getRoot(...)");
         jq.e.b(j10, function0, function02, navigationBar, root);
-        CoordinatorLayout root2 = this.f56678b.getRoot();
+        CoordinatorLayout root2 = this.f57246b.getRoot();
         Intrinsics.checkNotNullExpressionValue(root2, "getRoot(...)");
         bq.z.b(root2, rendering.g(), rendering.p(), null, 0, 0, 56, null);
-        this.f56684h = rendering.n();
-        this.f56685i = rendering.l();
-        this.f56686j = new Function2() { // from class: zq.c3
+        this.f57252h = rendering.n();
+        this.f57253i = rendering.l();
+        this.f57254j = new Function2() { // from class: zq.c3
             @Override // kotlin.jvm.functions.Function2
             public final Object invoke(Object obj2, Object obj3) {
                 Unit k02;
@@ -1817,8 +1817,8 @@ public final class f3 implements gn.k {
                 return k02;
             }
         };
-        this.f56687k = rendering.i();
-        this.f56688l = new Function1() { // from class: zq.d3
+        this.f57255k = rendering.i();
+        this.f57256l = new Function1() { // from class: zq.d3
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Object obj2) {
                 Unit l02;
@@ -1832,13 +1832,13 @@ public final class f3 implements gn.k {
                 pq.h a10 = b10.a();
                 if (!(a10 instanceof pq.a) && !(a10 instanceof c5)) {
                     if (a10 instanceof pq.i) {
-                        this.f56685i.invoke();
+                        this.f57253i.invoke();
                     } else if (a10 instanceof pq.o) {
-                        this.f56684h.invoke();
+                        this.f57252h.invoke();
                     }
                 } else {
-                    Function2 function2 = this.f56686j;
-                    View view2 = (View) this.f56679c.get(a10.getName());
+                    Function2 function2 = this.f57254j;
+                    View view2 = (View) this.f57247c.get(a10.getName());
                     boolean z10 = false;
                     if (view2 != null && view2.getVisibility() == 0) {
                         z10 = true;
@@ -1846,7 +1846,7 @@ public final class f3 implements gn.k {
                     function2.invoke(a10, Boolean.valueOf(z10));
                 }
             } else if (b10.b() != null) {
-                View view3 = (View) this.f56679c.get(b10.a().getName());
+                View view3 = (View) this.f57247c.get(b10.a().getName());
                 if (view3 instanceof ButtonWithLoadingIndicator) {
                     ((ButtonWithLoadingIndicator) view3).setText(b10.b());
                 } else if (view3 instanceof MaterialButton) {

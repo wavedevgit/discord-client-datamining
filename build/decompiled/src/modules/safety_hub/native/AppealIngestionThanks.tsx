@@ -27,30 +27,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 2;
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
-    var7 = var3.jsx;
-    var _closure1_slot3 = var7;
+    var3 = var3.jsx;
+    var _closure1_slot3 = var3;
     var3 = 3;
     var3 = var5[var3];
-    var8 = var4.bind(var0)(var3);
-    var6 = var8.createStyles;
+    var7 = var4.bind(var0)(var3);
+    var6 = var7.createStyles;
     var3 = {};
-    var9 = {
+    var8 = {
         'flex': 1,
         'alignItems': 'center',
         'justifyContent': 'center'
     };
-    var3.container = var9;
-    var3 = var6.bind(var8)(var3);
+    var3.container = var8;
+    var3 = var6.bind(var7)(var3);
     var _closure1_slot4 = var3;
-    var3 = 4;
-    var3 = var5[var3];
-    var3 = var4.bind(var0)(var3);
-    var6 = var3.LegacyText;
-    var3 = {};
-    var8 = 'TODO - Thanks';
-    var3.children = var8;
-    var3 = var7.bind(var0)(var6, var3);
-    var _closure1_slot5 = var3;
     var3 = 7;
     var3 = var5[var3];
     var5 = var4.bind(var0)(var3);
@@ -60,29 +51,36 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = function() {
         var0 = _closure1_slot4;
         var3 = undefined;
-        var9 = var0.bind(var3)();
+        var8 = var0.bind(var3)();
         var2 = _closure1_slot3;
-        var7 = _closure1_slot0;
+        var9 = _closure1_slot0;
         var10 = _closure1_slot1;
-        var0 = 5;
+        var0 = 4;
         var0 = var10[var0];
-        var0 = var7.bind(var3)(var0);
+        var0 = var9.bind(var3)(var0);
         var1 = var0.AppealIngestionModalScreen;
         var0 = {};
         var5 = _closure1_slot2;
         var4 = {};
-        var6 = var9.container;
+        var6 = var8.container;
         var4.style = var6;
-        var6 = 6;
+        var6 = 5;
         var6 = var10[var6];
-        var6 = var7.bind(var3)(var6);
+        var6 = var9.bind(var3)(var6);
         var7 = var6.SafeAreaPaddingView;
         var6 = {};
-        var10 = true;
-        var6.bottom = var10;
-        var9 = var9.container;
-        var6.style = var9;
-        var8 = _closure1_slot5;
+        var11 = true;
+        var6.bottom = var11;
+        var8 = var8.container;
+        var6.style = var8;
+        var8 = 6;
+        var8 = var10[var8];
+        var8 = var9.bind(var3)(var8);
+        var9 = var8.LegacyText;
+        var8 = {};
+        var10 = 'TODO - Thanks';
+        var8.children = var10;
+        var8 = var2.bind(var3)(var9, var8);
         var6.children = var8;
         var6 = var2.bind(var3)(var7, var6);
         var4.children = var6;
@@ -93,4 +91,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 4852, 10101, 4754, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 10199, 4741, 4883, 2]);

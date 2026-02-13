@@ -3,10 +3,10 @@ package og;
 public final class uj {
 
     /* renamed from: a  reason: collision with root package name */
-    private i1 f39722a;
+    private i1 f40290a;
 
     public final uj b(i1 i1Var) {
-        this.f39722a = i1Var;
+        this.f40290a = i1Var;
         return this;
     }
 

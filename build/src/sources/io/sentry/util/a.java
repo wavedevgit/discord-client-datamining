@@ -10,15 +10,15 @@ public final class a extends ReentrantLock {
     static final class C0408a implements a1 {
 
         /* renamed from: d  reason: collision with root package name */
-        private final ReentrantLock f30124d;
+        private final ReentrantLock f30692d;
 
         C0408a(ReentrantLock reentrantLock) {
-            this.f30124d = reentrantLock;
+            this.f30692d = reentrantLock;
         }
 
         @Override // io.sentry.a1, java.lang.AutoCloseable
         public void close() {
-            this.f30124d.unlock();
+            this.f30692d.unlock();
         }
     }
 

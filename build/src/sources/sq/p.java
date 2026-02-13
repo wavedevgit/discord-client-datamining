@@ -13,46 +13,46 @@ import com.google.android.material.textfield.TextInputLayout;
 public final class p implements ViewBinding {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ConstraintLayout f48270a;
+    private final ConstraintLayout f48838a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final ConstraintLayout f48271b;
+    public final ConstraintLayout f48839b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final TextInputLayout f48272c;
+    public final TextInputLayout f48840c;
 
     /* renamed from: d  reason: collision with root package name */
-    public final AutoCompleteTextView f48273d;
+    public final AutoCompleteTextView f48841d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final TextView f48274e;
+    public final TextView f48842e;
 
     /* renamed from: f  reason: collision with root package name */
-    public final TextInputLayout f48275f;
+    public final TextInputLayout f48843f;
 
     /* renamed from: g  reason: collision with root package name */
-    public final AutoCompleteTextView f48276g;
+    public final AutoCompleteTextView f48844g;
 
     /* renamed from: h  reason: collision with root package name */
-    public final TextView f48277h;
+    public final TextView f48845h;
 
     /* renamed from: i  reason: collision with root package name */
-    public final TextInputLayout f48278i;
+    public final TextInputLayout f48846i;
 
     /* renamed from: j  reason: collision with root package name */
-    public final TextInputEditText f48279j;
+    public final TextInputEditText f48847j;
 
     private p(ConstraintLayout constraintLayout, ConstraintLayout constraintLayout2, TextInputLayout textInputLayout, AutoCompleteTextView autoCompleteTextView, TextView textView, TextInputLayout textInputLayout2, AutoCompleteTextView autoCompleteTextView2, TextView textView2, TextInputLayout textInputLayout3, TextInputEditText textInputEditText) {
-        this.f48270a = constraintLayout;
-        this.f48271b = constraintLayout2;
-        this.f48272c = textInputLayout;
-        this.f48273d = autoCompleteTextView;
-        this.f48274e = textView;
-        this.f48275f = textInputLayout2;
-        this.f48276g = autoCompleteTextView2;
-        this.f48277h = textView2;
-        this.f48278i = textInputLayout3;
-        this.f48279j = textInputEditText;
+        this.f48838a = constraintLayout;
+        this.f48839b = constraintLayout2;
+        this.f48840c = textInputLayout;
+        this.f48841d = autoCompleteTextView;
+        this.f48842e = textView;
+        this.f48843f = textInputLayout2;
+        this.f48844g = autoCompleteTextView2;
+        this.f48845h = textView2;
+        this.f48846i = textInputLayout3;
+        this.f48847j = textInputEditText;
     }
 
     public static p a(View view) {
@@ -98,7 +98,7 @@ public final class p implements ViewBinding {
     }
 
     public static p d(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z10) {
-        View inflate = layoutInflater.inflate(nq.f.f38317q, viewGroup, false);
+        View inflate = layoutInflater.inflate(nq.f.f38885q, viewGroup, false);
         if (z10) {
             viewGroup.addView(inflate);
         }
@@ -108,6 +108,6 @@ public final class p implements ViewBinding {
     @Override // androidx.viewbinding.ViewBinding
     /* renamed from: b */
     public ConstraintLayout getRoot() {
-        return this.f48270a;
+        return this.f48838a;
     }
 }

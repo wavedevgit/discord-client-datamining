@@ -7,16 +7,16 @@ import kotlin.jvm.functions.Function2;
 public class z0 implements Comparator {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Function2 f51219d;
+    private final Function2 f51787d;
 
     public z0(Function2 function2) {
-        this.f51219d = function2;
+        this.f51787d = function2;
     }
 
     @Override // java.util.Comparator
     public int compare(Object obj, Object obj2) {
         int p10;
-        p10 = c1.p(this.f51219d, obj, obj2);
+        p10 = c1.p(this.f51787d, obj, obj2);
         return p10;
     }
 }

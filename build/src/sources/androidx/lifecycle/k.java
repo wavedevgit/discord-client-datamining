@@ -47,14 +47,14 @@ public final class k extends j implements m {
                 } else {
                     k.this.a().a(k.this);
                 }
-                return Unit.f31988a;
+                return Unit.f32556a;
             }
             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((a) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
+            return ((a) create(coroutineScope, continuation)).invokeSuspend(Unit.f32556a);
         }
     }
 

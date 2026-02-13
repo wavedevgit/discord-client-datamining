@@ -5,30 +5,30 @@ import bj.c;
 final class k3 implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final k3 f42160a = new k3();
+    static final k3 f42728a = new k3();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final bj.c f42161b;
+    private static final bj.c f42729b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final bj.c f42162c;
+    private static final bj.c f42730c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final bj.c f42163d;
+    private static final bj.c f42731d;
 
     static {
         c.b a10 = bj.c.a("detectorOptions");
         f fVar = new f();
         fVar.a(1);
-        f42161b = a10.b(fVar.b()).a();
+        f42729b = a10.b(fVar.b()).a();
         c.b a11 = bj.c.a("eventType");
         f fVar2 = new f();
         fVar2.a(2);
-        f42162c = a11.b(fVar2.b()).a();
+        f42730c = a11.b(fVar2.b()).a();
         c.b a12 = bj.c.a("errorCode");
         f fVar3 = new f();
         fVar3.a(3);
-        f42163d = a12.b(fVar3.b()).a();
+        f42731d = a12.b(fVar3.b()).a();
     }
 
     private k3() {

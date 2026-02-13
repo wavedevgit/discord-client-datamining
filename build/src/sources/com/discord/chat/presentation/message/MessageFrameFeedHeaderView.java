@@ -84,7 +84,7 @@ public final class MessageFrameFeedHeaderView extends ConstraintLayout {
 
         /* JADX INFO: Access modifiers changed from: private */
         public static final /* synthetic */ KSerializer _childSerializers$_anonymous_() {
-            return new tt.f(n2.f50033a);
+            return new tt.f(n2.f50601a);
         }
 
         /* JADX WARN: Multi-variable type inference failed */
@@ -107,16 +107,16 @@ public final class MessageFrameFeedHeaderView extends ConstraintLayout {
         public static final /* synthetic */ void write$Self$chat_release(MessageBundleHeader messageBundleHeader, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
             Lazy[] lazyArr = $childSerializers;
             if (compositeEncoder.z(serialDescriptor, 0) || messageBundleHeader.channelIconURL != null) {
-                compositeEncoder.o(serialDescriptor, 0, n2.f50033a, messageBundleHeader.channelIconURL);
+                compositeEncoder.o(serialDescriptor, 0, n2.f50601a, messageBundleHeader.channelIconURL);
             }
             if (compositeEncoder.z(serialDescriptor, 1) || messageBundleHeader.chatIconURL != null) {
-                compositeEncoder.o(serialDescriptor, 1, n2.f50033a, messageBundleHeader.chatIconURL);
+                compositeEncoder.o(serialDescriptor, 1, n2.f50601a, messageBundleHeader.chatIconURL);
             }
             if (compositeEncoder.z(serialDescriptor, 2) || messageBundleHeader.avatarURLs != null) {
                 compositeEncoder.o(serialDescriptor, 2, (qt.o) lazyArr[2].getValue(), messageBundleHeader.avatarURLs);
             }
             if (compositeEncoder.z(serialDescriptor, 3) || messageBundleHeader.channelName != null) {
-                compositeEncoder.o(serialDescriptor, 3, n2.f50033a, messageBundleHeader.channelName);
+                compositeEncoder.o(serialDescriptor, 3, n2.f50601a, messageBundleHeader.channelName);
             }
         }
 

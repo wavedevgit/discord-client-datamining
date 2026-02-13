@@ -37,28 +37,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = arg0;
         var6 = var0.channel;
         var _closure2_slot0 = var6;
-        var3 = _closure1_slot4;
-        var9 = _closure1_slot1;
-        var10 = _closure1_slot2;
-        var0 = 2;
-        var0 = var10[var0];
-        var2 = undefined;
-        var1 = var9.bind(var2)(var0);
-        var0 = {};
-        var0.channel = var6;
-        var7 = true;
-        var0.inModal = var7;
-        var0 = var3.bind(var2)(var1, var0);
-        var _closure2_slot1 = var0;
-        var8 = _closure1_slot3;
-        var7 = var8.useEffect;
+        var3 = _closure1_slot3;
+        var2 = var3.useEffect;
         var0 = var6.id;
         var1 = new Array(1);
         var1[0] = var0;
         var0 = function() { // Environment: var4
             var2 = _closure1_slot1;
             var1 = _closure1_slot2;
-            var0 = 3;
+            var0 = 2;
             var1 = var1[var0];
             var0 = undefined;
             var3 = var2.bind(var0)(var1);
@@ -70,7 +57,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var0 = function() { // Environment: var0
                 var2 = _closure1_slot1;
                 var1 = _closure1_slot2;
-                var0 = 3;
+                var0 = 2;
                 var1 = var1[var0];
                 var0 = undefined;
                 var4 = var2.bind(var0)(var1);
@@ -83,9 +70,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             };
             return var0;
         };
-        var0 = var7.bind(var8)(var0, var1);
-        var0 = 4;
+        var0 = var2.bind(var3)(var0, var1);
+        var3 = _closure1_slot4;
+        var9 = _closure1_slot1;
+        var10 = _closure1_slot2;
+        var0 = 3;
         var0 = var10[var0];
+        var2 = undefined;
         var1 = var9.bind(var2)(var0);
         var0 = {};
         var7 = 'StageVoiceChat';
@@ -93,7 +84,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var6 = var6.name;
         var0.title = var6;
         var6 = _closure1_slot0;
-        var5 = 5;
+        var5 = 4;
         var5 = var10[var5];
         var5 = var6.bind(var2)(var5);
         var6 = var5.StageIcon;
@@ -101,7 +92,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var7 = 'sm';
         var5.size = var7;
         var7 = {};
-        var8 = 6;
+        var8 = 5;
         var8 = var10[var8];
         var8 = var9.bind(var2)(var8);
         var8 = var8.spacing;
@@ -111,7 +102,19 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = var3.bind(var2)(var6, var5);
         var0.titleIcon = var5;
         var4 = function() {
-            var0 = _closure2_slot1;
+            var3 = _closure1_slot4;
+            var1 = _closure1_slot1;
+            var2 = _closure1_slot2;
+            var0 = 6;
+            var0 = var2[var0];
+            var2 = undefined;
+            var1 = var1.bind(var2)(var0);
+            var0 = {};
+            var4 = _closure2_slot0;
+            var0.channel = var4;
+            var4 = true;
+            var0.inModal = var4;
+            var0 = var3.bind(var2)(var1, var0);
             return var0;
         };
         var0.render = var4;
@@ -120,4 +123,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 9087, 7918, 8680, 4836, 671, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 7937, 9181, 4867, 671, 8784, 2]);

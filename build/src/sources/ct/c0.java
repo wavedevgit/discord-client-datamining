@@ -62,13 +62,13 @@ final class c0 implements FlowCollector {
                     return f10;
                 }
             }
-            return Unit.f31988a;
+            return Unit.f32556a;
         }
 
         @Override // kotlin.jvm.functions.Function2
         /* renamed from: j */
         public final Object invoke(Object obj, Continuation continuation) {
-            return ((a) create(obj, continuation)).invokeSuspend(Unit.f31988a);
+            return ((a) create(obj, continuation)).invokeSuspend(Unit.f32556a);
         }
     }
 
@@ -84,6 +84,6 @@ final class c0 implements FlowCollector {
         if (c10 == gs.b.f()) {
             return c10;
         }
-        return Unit.f31988a;
+        return Unit.f32556a;
     }
 }

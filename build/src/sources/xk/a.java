@@ -5,29 +5,29 @@ import wk.k;
 public abstract class a extends k {
 
     /* renamed from: b  reason: collision with root package name */
-    private final int[] f54874b;
+    private final int[] f55442b;
 
     /* renamed from: e  reason: collision with root package name */
-    private final int[] f54877e;
+    private final int[] f55445e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final int[] f54878f;
+    private final int[] f55446f;
 
     /* renamed from: a  reason: collision with root package name */
-    private final int[] f54873a = new int[4];
+    private final int[] f55441a = new int[4];
 
     /* renamed from: c  reason: collision with root package name */
-    private final float[] f54875c = new float[4];
+    private final float[] f55443c = new float[4];
 
     /* renamed from: d  reason: collision with root package name */
-    private final float[] f54876d = new float[4];
+    private final float[] f55444d = new float[4];
 
     /* JADX INFO: Access modifiers changed from: protected */
     public a() {
         int[] iArr = new int[8];
-        this.f54874b = iArr;
-        this.f54877e = new int[iArr.length / 2];
-        this.f54878f = new int[iArr.length / 2];
+        this.f55442b = iArr;
+        this.f55445e = new int[iArr.length / 2];
+        this.f55446f = new int[iArr.length / 2];
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
@@ -92,31 +92,31 @@ public abstract class a extends k {
 
     /* JADX INFO: Access modifiers changed from: protected */
     public final int[] h() {
-        return this.f54874b;
+        return this.f55442b;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     public final int[] i() {
-        return this.f54873a;
+        return this.f55441a;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     public final int[] j() {
-        return this.f54878f;
+        return this.f55446f;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     public final float[] k() {
-        return this.f54876d;
+        return this.f55444d;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     public final int[] l() {
-        return this.f54877e;
+        return this.f55445e;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     public final float[] m() {
-        return this.f54875c;
+        return this.f55443c;
     }
 }

@@ -31,28 +31,28 @@ import kotlin.jvm.internal.Reflection;
 public final class j implements gn.b {
 
     /* renamed from: d  reason: collision with root package name */
-    private final nq.g f38333d;
+    private final nq.g f38901d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final List f38334e;
+    private final List f38902e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final Function0 f38335i;
+    private final Function0 f38903i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final String f38336o;
+    private final String f38904o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final boolean f38337p;
+    private final boolean f38905p;
 
     /* renamed from: q  reason: collision with root package name */
-    private nq.h f38338q;
+    private nq.h f38906q;
 
     /* renamed from: r  reason: collision with root package name */
-    private BottomSheetBehavior f38339r;
+    private BottomSheetBehavior f38907r;
 
     /* renamed from: s  reason: collision with root package name */
-    private final c0 f38340s;
+    private final c0 f38908s;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a extends Lambda implements Function1 {
@@ -62,14 +62,14 @@ public final class j implements gn.b {
         public static final class C0539a implements gn.k {
 
             /* renamed from: b  reason: collision with root package name */
-            final /* synthetic */ ViewBinding f38342b;
+            final /* synthetic */ ViewBinding f38910b;
 
             /* renamed from: c  reason: collision with root package name */
-            final /* synthetic */ j f38343c;
+            final /* synthetic */ j f38911c;
 
             public C0539a(ViewBinding viewBinding, j jVar) {
-                this.f38342b = viewBinding;
-                this.f38343c = jVar;
+                this.f38910b = viewBinding;
+                this.f38911c = jVar;
             }
 
             @Override // gn.k
@@ -78,7 +78,7 @@ public final class j implements gn.b {
                 Intrinsics.checkNotNullParameter(rendering, "rendering");
                 Intrinsics.checkNotNullParameter(viewEnvironment, "viewEnvironment");
                 j jVar = (j) rendering;
-                dq.a aVar = (dq.a) this.f38342b;
+                dq.a aVar = (dq.a) this.f38910b;
                 ViewGroup.LayoutParams layoutParams = aVar.f21845b.getLayoutParams();
                 Intrinsics.checkNotNull(layoutParams, "null cannot be cast to non-null type androidx.coordinatorlayout.widget.CoordinatorLayout.LayoutParams");
                 CoordinatorLayout.c f10 = ((CoordinatorLayout.f) layoutParams).f();
@@ -93,37 +93,37 @@ public final class j implements gn.b {
                 ConstraintLayout bottomSheet = aVar.f21845b;
                 Intrinsics.checkNotNullExpressionValue(bottomSheet, "bottomSheet");
                 lq.b.b(bottomSheetBehavior, cVar, bottomSheet, aVar.f21847d, aVar.f21848e);
-                this.f38343c.i(bottomSheetBehavior);
+                this.f38911c.i(bottomSheetBehavior);
                 aVar.getRoot().addOnAttachStateChangeListener(new d(bottomSheetBehavior));
                 Context context = aVar.getRoot().getContext();
-                m mVar = m.f38355a;
+                m mVar = m.f38923a;
                 Intrinsics.checkNotNull(context);
-                nq.h h10 = m.h(mVar, context, this.f38343c.f38333d, false, true, false, 16, null);
-                this.f38343c.j(h10);
+                nq.h h10 = m.h(mVar, context, this.f38911c.f38901d, false, true, false, 16, null);
+                this.f38911c.j(h10);
                 aVar.f21846c.addView(h10.a());
                 Map a10 = h10.c().a();
-                for (Pair pair : this.f38343c.f38334e) {
+                for (Pair pair : this.f38911c.f38902e) {
                     Function1 function1 = (Function1) pair.d();
                     nq.a aVar2 = (nq.a) a10.get((String) pair.c());
                     if (aVar2 != null) {
                         aVar2.d().setOnClickListener(new e(function1, aVar2));
                     }
                 }
-                nq.a aVar3 = (nq.a) a10.get(this.f38343c.f38336o);
+                nq.a aVar3 = (nq.a) a10.get(this.f38911c.f38904o);
                 if (aVar3 != null && (d10 = aVar3.d()) != null) {
                     d10.setOnClickListener(new f(bottomSheetBehavior));
                 }
                 ConstraintLayout bottomSheet2 = aVar.f21845b;
                 Intrinsics.checkNotNullExpressionValue(bottomSheet2, "bottomSheet");
                 gn.e.c(bottomSheet2, new g(bottomSheetBehavior));
-                if (jVar.f38337p) {
+                if (jVar.f38905p) {
                     aVar.f21848e.setOnClickListener(new h(bottomSheetBehavior));
                 } else {
                     aVar.f21848e.setOnClickListener(null);
                 }
                 NestedScrollView contentScrollView = aVar.f21847d;
                 Intrinsics.checkNotNullExpressionValue(contentScrollView, "contentScrollView");
-                StepStyles.UiStepStyle styles = this.f38343c.f38333d.getStyles();
+                StepStyles.UiStepStyle styles = this.f38911c.f38901d.getStyles();
                 FrameLayout contentContainer = aVar.f21846c;
                 Intrinsics.checkNotNullExpressionValue(contentContainer, "contentContainer");
                 uq.c.c(contentScrollView, styles, contentContainer, null, 4, null);
@@ -146,7 +146,7 @@ public final class j implements gn.b {
     /* synthetic */ class b extends FunctionReferenceImpl implements Function3 {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final b f38344d = new b();
+        public static final b f38912d = new b();
 
         b() {
             super(3, dq.a.class, "inflate", "inflate(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Z)Lcom/withpersona/sdk2/inquiry/shared/databinding/Pi2GenericUiStepBottomSheetBinding;", 0);
@@ -169,13 +169,13 @@ public final class j implements gn.b {
         }
 
         public final void a() {
-            j.this.f38335i.invoke();
+            j.this.f38903i.invoke();
         }
 
         @Override // kotlin.jvm.functions.Function0
         public /* bridge */ /* synthetic */ Object invoke() {
             a();
-            return Unit.f31988a;
+            return Unit.f32556a;
         }
     }
 
@@ -183,32 +183,32 @@ public final class j implements gn.b {
     public static final class d implements View.OnAttachStateChangeListener {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ BottomSheetBehavior f38346d;
+        final /* synthetic */ BottomSheetBehavior f38914d;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         static final class a implements Runnable {
 
             /* renamed from: d  reason: collision with root package name */
-            final /* synthetic */ BottomSheetBehavior f38347d;
+            final /* synthetic */ BottomSheetBehavior f38915d;
 
             a(BottomSheetBehavior bottomSheetBehavior) {
-                this.f38347d = bottomSheetBehavior;
+                this.f38915d = bottomSheetBehavior;
             }
 
             @Override // java.lang.Runnable
             public final void run() {
-                this.f38347d.c1(3);
+                this.f38915d.c1(3);
             }
         }
 
         d(BottomSheetBehavior bottomSheetBehavior) {
-            this.f38346d = bottomSheetBehavior;
+            this.f38914d = bottomSheetBehavior;
         }
 
         @Override // android.view.View.OnAttachStateChangeListener
         public void onViewAttachedToWindow(View view) {
             Intrinsics.checkNotNullParameter(view, "view");
-            view.postDelayed(new a(this.f38346d), 100L);
+            view.postDelayed(new a(this.f38914d), 100L);
         }
 
         @Override // android.view.View.OnAttachStateChangeListener
@@ -221,19 +221,19 @@ public final class j implements gn.b {
     static final class e implements View.OnClickListener {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ Function1 f38348d;
+        final /* synthetic */ Function1 f38916d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ nq.a f38349e;
+        final /* synthetic */ nq.a f38917e;
 
         e(Function1 function1, nq.a aVar) {
-            this.f38348d = function1;
-            this.f38349e = aVar;
+            this.f38916d = function1;
+            this.f38917e = aVar;
         }
 
         @Override // android.view.View.OnClickListener
         public final void onClick(View view) {
-            this.f38348d.invoke(this.f38349e.c());
+            this.f38916d.invoke(this.f38917e.c());
         }
     }
 
@@ -241,15 +241,15 @@ public final class j implements gn.b {
     static final class f implements View.OnClickListener {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ BottomSheetBehavior f38350d;
+        final /* synthetic */ BottomSheetBehavior f38918d;
 
         f(BottomSheetBehavior bottomSheetBehavior) {
-            this.f38350d = bottomSheetBehavior;
+            this.f38918d = bottomSheetBehavior;
         }
 
         @Override // android.view.View.OnClickListener
         public final void onClick(View view) {
-            this.f38350d.c1(5);
+            this.f38918d.c1(5);
         }
     }
 
@@ -257,20 +257,20 @@ public final class j implements gn.b {
     static final class g implements Function0 {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ BottomSheetBehavior f38351d;
+        final /* synthetic */ BottomSheetBehavior f38919d;
 
         g(BottomSheetBehavior bottomSheetBehavior) {
-            this.f38351d = bottomSheetBehavior;
+            this.f38919d = bottomSheetBehavior;
         }
 
         public final void a() {
-            this.f38351d.c1(5);
+            this.f38919d.c1(5);
         }
 
         @Override // kotlin.jvm.functions.Function0
         public /* bridge */ /* synthetic */ Object invoke() {
             a();
-            return Unit.f31988a;
+            return Unit.f32556a;
         }
     }
 
@@ -278,15 +278,15 @@ public final class j implements gn.b {
     static final class h implements View.OnClickListener {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ BottomSheetBehavior f38352d;
+        final /* synthetic */ BottomSheetBehavior f38920d;
 
         h(BottomSheetBehavior bottomSheetBehavior) {
-            this.f38352d = bottomSheetBehavior;
+            this.f38920d = bottomSheetBehavior;
         }
 
         @Override // android.view.View.OnClickListener
         public final void onClick(View view) {
-            this.f38352d.c1(5);
+            this.f38920d.c1(5);
         }
     }
 
@@ -294,18 +294,18 @@ public final class j implements gn.b {
         Intrinsics.checkNotNullParameter(uiScreen, "uiScreen");
         Intrinsics.checkNotNullParameter(componentNamesToActions, "componentNamesToActions");
         Intrinsics.checkNotNullParameter(onCancelled, "onCancelled");
-        this.f38333d = uiScreen;
-        this.f38334e = componentNamesToActions;
-        this.f38335i = onCancelled;
-        this.f38336o = str;
-        this.f38337p = z10;
+        this.f38901d = uiScreen;
+        this.f38902e = componentNamesToActions;
+        this.f38903i = onCancelled;
+        this.f38904o = str;
+        this.f38905p = z10;
         k.a aVar = gn.k.f25849a;
-        this.f38340s = new z(Reflection.getOrCreateKotlinClass(j.class), b.f38344d, new a());
+        this.f38908s = new z(Reflection.getOrCreateKotlinClass(j.class), b.f38912d, new a());
     }
 
     @Override // gn.b
     public c0 a() {
-        return this.f38340s;
+        return this.f38908s;
     }
 
     public boolean equals(Object obj) {
@@ -316,46 +316,46 @@ public final class j implements gn.b {
             return false;
         }
         j jVar = (j) obj;
-        if (Intrinsics.areEqual(this.f38333d, jVar.f38333d) && Intrinsics.areEqual(this.f38334e, jVar.f38334e) && Intrinsics.areEqual(this.f38335i, jVar.f38335i) && Intrinsics.areEqual(this.f38336o, jVar.f38336o) && this.f38337p == jVar.f38337p) {
+        if (Intrinsics.areEqual(this.f38901d, jVar.f38901d) && Intrinsics.areEqual(this.f38902e, jVar.f38902e) && Intrinsics.areEqual(this.f38903i, jVar.f38903i) && Intrinsics.areEqual(this.f38904o, jVar.f38904o) && this.f38905p == jVar.f38905p) {
             return true;
         }
         return false;
     }
 
     public final BottomSheetBehavior g() {
-        return this.f38339r;
+        return this.f38907r;
     }
 
     public final nq.h h() {
-        return this.f38338q;
+        return this.f38906q;
     }
 
     public int hashCode() {
         int hashCode;
-        int hashCode2 = ((((this.f38333d.hashCode() * 31) + this.f38334e.hashCode()) * 31) + this.f38335i.hashCode()) * 31;
-        String str = this.f38336o;
+        int hashCode2 = ((((this.f38901d.hashCode() * 31) + this.f38902e.hashCode()) * 31) + this.f38903i.hashCode()) * 31;
+        String str = this.f38904o;
         if (str == null) {
             hashCode = 0;
         } else {
             hashCode = str.hashCode();
         }
-        return ((hashCode2 + hashCode) * 31) + Boolean.hashCode(this.f38337p);
+        return ((hashCode2 + hashCode) * 31) + Boolean.hashCode(this.f38905p);
     }
 
     public final void i(BottomSheetBehavior bottomSheetBehavior) {
-        this.f38339r = bottomSheetBehavior;
+        this.f38907r = bottomSheetBehavior;
     }
 
     public final void j(nq.h hVar) {
-        this.f38338q = hVar;
+        this.f38906q = hVar;
     }
 
     public String toString() {
-        nq.g gVar = this.f38333d;
-        List list = this.f38334e;
-        Function0 function0 = this.f38335i;
-        String str = this.f38336o;
-        boolean z10 = this.f38337p;
+        nq.g gVar = this.f38901d;
+        List list = this.f38902e;
+        Function0 function0 = this.f38903i;
+        String str = this.f38904o;
+        boolean z10 = this.f38905p;
         return "UiStepBottomSheet(uiScreen=" + gVar + ", componentNamesToActions=" + list + ", onCancelled=" + function0 + ", cancelButtonName=" + str + ", hideWhenTappedOutside=" + z10 + ")";
     }
 

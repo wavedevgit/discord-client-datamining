@@ -7,13 +7,13 @@ import java.util.List;
 final class b implements g {
 
     /* renamed from: e  reason: collision with root package name */
-    public static final b f27931e = new b();
+    public static final b f28499e = new b();
 
     /* renamed from: d  reason: collision with root package name */
-    private final List f27932d;
+    private final List f28500d;
 
     public b(ae.b bVar) {
-        this.f27932d = Collections.singletonList(bVar);
+        this.f28500d = Collections.singletonList(bVar);
     }
 
     @Override // ae.g
@@ -27,7 +27,7 @@ final class b implements g {
     @Override // ae.g
     public List d(long j10) {
         if (j10 >= 0) {
-            return this.f27932d;
+            return this.f28500d;
         }
         return Collections.EMPTY_LIST;
     }
@@ -50,6 +50,6 @@ final class b implements g {
     }
 
     private b() {
-        this.f27932d = Collections.EMPTY_LIST;
+        this.f28500d = Collections.EMPTY_LIST;
     }
 }

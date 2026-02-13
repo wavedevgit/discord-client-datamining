@@ -15,45 +15,45 @@ import wp.x0;
 public final class f implements ViewBinding {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ConstraintLayout f55129a;
+    private final ConstraintLayout f55697a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final TextView f55130b;
+    public final TextView f55698b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final ConstraintLayout f55131c;
+    public final ConstraintLayout f55699c;
 
     /* renamed from: d  reason: collision with root package name */
-    public final Pi2NavigationBar f55132d;
+    public final Pi2NavigationBar f55700d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final RecyclerView f55133e;
+    public final RecyclerView f55701e;
 
     /* renamed from: f  reason: collision with root package name */
-    public final Button f55134f;
+    public final Button f55702f;
 
     /* renamed from: g  reason: collision with root package name */
-    public final TextView f55135g;
+    public final TextView f55703g;
 
     /* renamed from: h  reason: collision with root package name */
-    public final Button f55136h;
+    public final Button f55704h;
 
     private f(ConstraintLayout constraintLayout, TextView textView, ConstraintLayout constraintLayout2, Pi2NavigationBar pi2NavigationBar, RecyclerView recyclerView, Button button, TextView textView2, Button button2) {
-        this.f55129a = constraintLayout;
-        this.f55130b = textView;
-        this.f55131c = constraintLayout2;
-        this.f55132d = pi2NavigationBar;
-        this.f55133e = recyclerView;
-        this.f55134f = button;
-        this.f55135g = textView2;
-        this.f55136h = button2;
+        this.f55697a = constraintLayout;
+        this.f55698b = textView;
+        this.f55699c = constraintLayout2;
+        this.f55700d = pi2NavigationBar;
+        this.f55701e = recyclerView;
+        this.f55702f = button;
+        this.f55703g = textView2;
+        this.f55704h = button2;
     }
 
     public static f a(View view) {
-        int i10 = w0.f53479e;
+        int i10 = w0.f54047e;
         TextView textView = (TextView) e4.a.a(view, i10);
         if (textView != null) {
-            i10 = w0.f53491q;
+            i10 = w0.f54059q;
             ConstraintLayout constraintLayout = (ConstraintLayout) e4.a.a(view, i10);
             if (constraintLayout != null) {
                 i10 = w0.E;
@@ -68,7 +68,7 @@ public final class f implements ViewBinding {
                             i10 = w0.Y;
                             TextView textView2 = (TextView) e4.a.a(view, i10);
                             if (textView2 != null) {
-                                i10 = w0.f53476b0;
+                                i10 = w0.f54044b0;
                                 Button button2 = (Button) e4.a.a(view, i10);
                                 if (button2 != null) {
                                     return new f((ConstraintLayout) view, textView, constraintLayout, pi2NavigationBar, recyclerView, button, textView2, button2);
@@ -83,7 +83,7 @@ public final class f implements ViewBinding {
     }
 
     public static f c(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z10) {
-        View inflate = layoutInflater.inflate(x0.f53518f, viewGroup, false);
+        View inflate = layoutInflater.inflate(x0.f54086f, viewGroup, false);
         if (z10) {
             viewGroup.addView(inflate);
         }
@@ -93,6 +93,6 @@ public final class f implements ViewBinding {
     @Override // androidx.viewbinding.ViewBinding
     /* renamed from: b */
     public ConstraintLayout getRoot() {
-        return this.f55129a;
+        return this.f55697a;
     }
 }

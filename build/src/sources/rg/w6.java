@@ -5,7 +5,7 @@ import bj.c;
 final class w6 implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final w6 f47239a = new w6();
+    static final w6 f47807a = new w6();
 
     static {
         c.b a10 = bj.c.a("screenName");

@@ -18,19 +18,19 @@ public final class e implements Comparable<e> {
     public static final a Companion = new a(null);
 
     /* renamed from: e  reason: collision with root package name */
-    private static final e f31339e;
+    private static final e f31907e;
 
     /* renamed from: i  reason: collision with root package name */
-    private static final e f31340i;
+    private static final e f31908i;
 
     /* renamed from: o  reason: collision with root package name */
-    private static final e f31341o;
+    private static final e f31909o;
 
     /* renamed from: p  reason: collision with root package name */
-    private static final e f31342p;
+    private static final e f31910p;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Instant f31343d;
+    private final Instant f31911d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a {
@@ -40,7 +40,7 @@ public final class e implements Comparable<e> {
 
         public static /* synthetic */ e g(a aVar, CharSequence charSequence, kt.n nVar, int i10, Object obj) {
             if ((i10 & 2) != 0) {
-                nVar = j.b.f35230a.a();
+                nVar = j.b.f35798a.a();
             }
             return aVar.e(charSequence, nVar);
         }
@@ -66,11 +66,11 @@ public final class e implements Comparable<e> {
         }
 
         public final e c() {
-            return e.f31342p;
+            return e.f31910p;
         }
 
         public final e d() {
-            return e.f31341o;
+            return e.f31909o;
         }
 
         public final e e(CharSequence input, kt.n format) {
@@ -90,7 +90,7 @@ public final class e implements Comparable<e> {
 
         @NotNull
         public final KSerializer serializer() {
-            return pt.e.f43188a;
+            return pt.e.f43756a;
         }
 
         private a() {
@@ -100,33 +100,33 @@ public final class e implements Comparable<e> {
     static {
         Instant ofEpochSecond = Instant.ofEpochSecond(-3217862419201L, 999999999L);
         Intrinsics.checkNotNullExpressionValue(ofEpochSecond, "ofEpochSecond(...)");
-        f31339e = new e(ofEpochSecond);
+        f31907e = new e(ofEpochSecond);
         Instant ofEpochSecond2 = Instant.ofEpochSecond(3093527980800L, 0L);
         Intrinsics.checkNotNullExpressionValue(ofEpochSecond2, "ofEpochSecond(...)");
-        f31340i = new e(ofEpochSecond2);
+        f31908i = new e(ofEpochSecond2);
         Instant MIN = Instant.MIN;
         Intrinsics.checkNotNullExpressionValue(MIN, "MIN");
-        f31341o = new e(MIN);
+        f31909o = new e(MIN);
         Instant MAX = Instant.MAX;
         Intrinsics.checkNotNullExpressionValue(MAX, "MAX");
-        f31342p = new e(MAX);
+        f31910p = new e(MAX);
     }
 
     public e(Instant value) {
         Intrinsics.checkNotNullParameter(value, "value");
-        this.f31343d = value;
+        this.f31911d = value;
     }
 
     @Override // java.lang.Comparable
     /* renamed from: e */
     public int compareTo(e other) {
         Intrinsics.checkNotNullParameter(other, "other");
-        return this.f31343d.compareTo(other.f31343d);
+        return this.f31911d.compareTo(other.f31911d);
     }
 
     public boolean equals(Object obj) {
         if (this != obj) {
-            if (!(obj instanceof e) || !Intrinsics.areEqual(this.f31343d, ((e) obj).f31343d)) {
+            if (!(obj instanceof e) || !Intrinsics.areEqual(this.f31911d, ((e) obj).f31911d)) {
                 return false;
             }
             return true;
@@ -135,15 +135,15 @@ public final class e implements Comparable<e> {
     }
 
     public final long f() {
-        return this.f31343d.getEpochSecond();
+        return this.f31911d.getEpochSecond();
     }
 
     public int hashCode() {
-        return this.f31343d.hashCode();
+        return this.f31911d.hashCode();
     }
 
     public String toString() {
-        String instant = this.f31343d.toString();
+        String instant = this.f31911d.toString();
         Intrinsics.checkNotNullExpressionValue(instant, "toString(...)");
         return instant;
     }

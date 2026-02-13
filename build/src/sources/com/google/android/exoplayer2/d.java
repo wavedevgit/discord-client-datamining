@@ -80,7 +80,7 @@ public final class d {
         if (this.f13072e == 0) {
             return;
         }
-        if (oe.w0.f39038a >= 26) {
+        if (oe.w0.f39606a >= 26) {
             c();
         } else {
             a();
@@ -131,7 +131,7 @@ public final class d {
                 oe.y.i("AudioFocusManager", "Unidentified audio usage: " + audioAttributes.f12801i);
                 return 0;
             case 16:
-                if (oe.w0.f39038a < 19) {
+                if (oe.w0.f39606a < 19) {
                     return 2;
                 }
                 return 4;
@@ -173,7 +173,7 @@ public final class d {
         if (this.f13072e == 1) {
             return 1;
         }
-        if (oe.w0.f39038a >= 26) {
+        if (oe.w0.f39606a >= 26) {
             k10 = l();
         } else {
             k10 = k();

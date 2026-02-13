@@ -5,7 +5,7 @@ import kotlin.jvm.internal.MutablePropertyReference1Impl;
 public abstract class m {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final mt.q f35267a = new mt.q(new mt.x(new MutablePropertyReference1Impl() { // from class: kt.m.a
+    private static final mt.q f35835a = new mt.q(new mt.x(new MutablePropertyReference1Impl() { // from class: kt.m.a
         @Override // kotlin.jvm.internal.MutablePropertyReference1Impl, kotlin.jvm.internal.MutablePropertyReference1, kotlin.reflect.KProperty1
         public Object get(Object obj) {
             return ((k) obj).J();
@@ -18,5 +18,5 @@ public abstract class m {
     }), null, null, null, 14, null);
 
     /* renamed from: b  reason: collision with root package name */
-    private static final k f35268b = new k(null, null, null, null, 15, null);
+    private static final k f35836b = new k(null, null, null, null, 15, null);
 }

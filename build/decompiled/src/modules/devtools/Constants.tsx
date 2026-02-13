@@ -31,4 +31,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.STORAGE_KEY_LOG_DISPATCHES = var3;
     var2.DEV_WIDGET_SIZE = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [808, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [809, 2]);

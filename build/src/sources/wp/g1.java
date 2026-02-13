@@ -3,14 +3,14 @@ package wp;
 public final class g1 implements lr.d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final lr.h f53096a;
+    private final lr.h f53664a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final lr.h f53097b;
+    private final lr.h f53665b;
 
     public g1(lr.h hVar, lr.h hVar2) {
-        this.f53096a = hVar;
-        this.f53097b = hVar2;
+        this.f53664a = hVar;
+        this.f53665b = hVar2;
     }
 
     public static g1 a(lr.h hVar, lr.h hVar2) {
@@ -24,6 +24,6 @@ public final class g1 implements lr.d {
     @Override // javax.inject.Provider
     /* renamed from: b */
     public f1 get() {
-        return c((fo.t) this.f53096a.get(), (fo.w0) this.f53097b.get());
+        return c((fo.t) this.f53664a.get(), (fo.w0) this.f53665b.get());
     }
 }

@@ -8,7 +8,7 @@ import kotlin.jvm.internal.Lambda;
 public final class a implements cv.b, b {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final a f31374a = new a();
+    public static final a f31942a = new a();
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* renamed from: jv.a$a  reason: collision with other inner class name */
@@ -16,7 +16,7 @@ public final class a implements cv.b, b {
     public static final class C0438a extends Lambda implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final C0438a f31375d = new C0438a();
+        public static final C0438a f31943d = new C0438a();
 
         C0438a() {
             super(2);
@@ -78,6 +78,6 @@ public final class a implements cv.b, b {
     @Override // cv.b
     /* renamed from: i */
     public Boolean f(Object obj, Object obj2) {
-        return Boolean.valueOf(h(obj, C0438a.f31375d));
+        return Boolean.valueOf(h(obj, C0438a.f31943d));
     }
 }

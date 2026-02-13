@@ -7,34 +7,34 @@ import kotlin.enums.EnumEntries;
 public final class a {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final a f45529d = new a("NotRequested", 0);
+    public static final a f46097d = new a("NotRequested", 0);
 
     /* renamed from: e  reason: collision with root package name */
-    public static final a f45530e = new a("NotSupported", 1);
+    public static final a f46098e = new a("NotSupported", 1);
 
     /* renamed from: i  reason: collision with root package name */
-    public static final a f45531i = new a("Failed", 2);
+    public static final a f46099i = new a("Failed", 2);
 
     /* renamed from: o  reason: collision with root package name */
-    public static final a f45532o = new a("Success", 3);
+    public static final a f46100o = new a("Success", 3);
 
     /* renamed from: p  reason: collision with root package name */
-    private static final /* synthetic */ a[] f45533p;
+    private static final /* synthetic */ a[] f46101p;
 
     /* renamed from: q  reason: collision with root package name */
-    private static final /* synthetic */ EnumEntries f45534q;
+    private static final /* synthetic */ EnumEntries f46102q;
 
     static {
         a[] a10 = a();
-        f45533p = a10;
-        f45534q = hs.a.a(a10);
+        f46101p = a10;
+        f46102q = hs.a.a(a10);
     }
 
     private a(String str, int i10) {
     }
 
     private static final /* synthetic */ a[] a() {
-        return new a[]{f45529d, f45530e, f45531i, f45532o};
+        return new a[]{f46097d, f46098e, f46099i, f46100o};
     }
 
     public static a valueOf(String str) {
@@ -42,6 +42,6 @@ public final class a {
     }
 
     public static a[] values() {
-        return (a[]) f45533p.clone();
+        return (a[]) f46101p.clone();
     }
 }

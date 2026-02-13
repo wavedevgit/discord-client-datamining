@@ -48,13 +48,13 @@ public abstract class b {
         if (i10 != 1) {
             if (i10 != 2) {
                 if (i10 == 3) {
-                    return iq.a.f30391i;
+                    return iq.a.f30959i;
                 }
                 throw new as.p();
             }
-            return iq.a.f30390e;
+            return iq.a.f30958e;
         }
-        return iq.a.f30389d;
+        return iq.a.f30957d;
     }
 
     public static final iq.e b(CreateInquirySessionResponse.GpsPrecisionRequirement gpsPrecisionRequirement) {
@@ -62,10 +62,10 @@ public abstract class b {
         int i10 = a.f23058b[gpsPrecisionRequirement.ordinal()];
         if (i10 != 1) {
             if (i10 == 2) {
-                return iq.e.f30401d;
+                return iq.e.f30969d;
             }
             throw new as.p();
         }
-        return iq.e.f30402e;
+        return iq.e.f30970e;
     }
 }

@@ -6,10 +6,10 @@ import java.util.Comparator;
 class p0 implements bu.d0, Comparator {
 
     /* renamed from: d  reason: collision with root package name */
-    private final boolean f37660d;
+    private final boolean f38228d;
 
     private p0(boolean z10) {
-        this.f37660d = z10;
+        this.f38228d = z10;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */

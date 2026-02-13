@@ -9,7 +9,7 @@ import kotlin.text.StringsKt;
 public final class j implements b {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final j f30474a = new j();
+    public static final j f31042a = new j();
 
     private j() {
     }

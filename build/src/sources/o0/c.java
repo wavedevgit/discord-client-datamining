@@ -20,19 +20,19 @@ import x.z1;
 public final class c {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Object f38395a = new Object();
+    private final Object f38963a = new Object();
 
     /* renamed from: b  reason: collision with root package name */
-    private final Map f38396b = new HashMap();
+    private final Map f38964b = new HashMap();
 
     /* renamed from: c  reason: collision with root package name */
-    private final Map f38397c = new HashMap();
+    private final Map f38965c = new HashMap();
 
     /* renamed from: d  reason: collision with root package name */
-    private final ArrayDeque f38398d = new ArrayDeque();
+    private final ArrayDeque f38966d = new ArrayDeque();
 
     /* renamed from: e  reason: collision with root package name */
-    y.a f38399e;
+    y.a f38967e;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
@@ -51,40 +51,40 @@ public final class c {
     public static class b implements o {
 
         /* renamed from: d  reason: collision with root package name */
-        private final c f38400d;
+        private final c f38968d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final LifecycleOwner f38401e;
+        private final LifecycleOwner f38969e;
 
         b(LifecycleOwner lifecycleOwner, c cVar) {
-            this.f38401e = lifecycleOwner;
-            this.f38400d = cVar;
+            this.f38969e = lifecycleOwner;
+            this.f38968d = cVar;
         }
 
         LifecycleOwner a() {
-            return this.f38401e;
+            return this.f38969e;
         }
 
         @w(Lifecycle.a.ON_DESTROY)
         public void onDestroy(LifecycleOwner lifecycleOwner) {
-            this.f38400d.l(lifecycleOwner);
+            this.f38968d.l(lifecycleOwner);
         }
 
         @w(Lifecycle.a.ON_START)
         public void onStart(LifecycleOwner lifecycleOwner) {
-            this.f38400d.h(lifecycleOwner);
+            this.f38968d.h(lifecycleOwner);
         }
 
         @w(Lifecycle.a.ON_STOP)
         public void onStop(LifecycleOwner lifecycleOwner) {
-            this.f38400d.i(lifecycleOwner);
+            this.f38968d.i(lifecycleOwner);
         }
     }
 
     private b d(LifecycleOwner lifecycleOwner) {
-        synchronized (this.f38395a) {
+        synchronized (this.f38963a) {
             try {
-                for (b bVar : this.f38397c.keySet()) {
+                for (b bVar : this.f38965c.keySet()) {
                     if (lifecycleOwner.equals(bVar.a())) {
                         return bVar;
                     }
@@ -97,14 +97,14 @@ public final class c {
     }
 
     private boolean f(LifecycleOwner lifecycleOwner) {
-        synchronized (this.f38395a) {
+        synchronized (this.f38963a) {
             try {
                 b d10 = d(lifecycleOwner);
                 if (d10 == null) {
                     return false;
                 }
-                for (a aVar : (Set) this.f38397c.get(d10)) {
-                    if (!((o0.b) b2.e.g((o0.b) this.f38396b.get(aVar))).v().isEmpty()) {
+                for (a aVar : (Set) this.f38965c.get(d10)) {
+                    if (!((o0.b) b2.e.g((o0.b) this.f38964b.get(aVar))).v().isEmpty()) {
                         return true;
                     }
                 }
@@ -117,21 +117,21 @@ public final class c {
 
     private void g(o0.b bVar) {
         Set hashSet;
-        synchronized (this.f38395a) {
+        synchronized (this.f38963a) {
             try {
                 LifecycleOwner t10 = bVar.t();
                 a a10 = a.a(t10, e0.f.B((g2) bVar.b(), (g2) bVar.u()));
                 b d10 = d(t10);
                 if (d10 != null) {
-                    hashSet = (Set) this.f38397c.get(d10);
+                    hashSet = (Set) this.f38965c.get(d10);
                 } else {
                     hashSet = new HashSet();
                 }
                 hashSet.add(a10);
-                this.f38396b.put(a10, bVar);
+                this.f38964b.put(a10, bVar);
                 if (d10 == null) {
                     b bVar2 = new b(t10, this);
-                    this.f38397c.put(bVar2, hashSet);
+                    this.f38965c.put(bVar2, hashSet);
                     t10.getLifecycle().a(bVar2);
                 }
             } catch (Throwable th2) {
@@ -141,14 +141,14 @@ public final class c {
     }
 
     private void j(LifecycleOwner lifecycleOwner) {
-        synchronized (this.f38395a) {
+        synchronized (this.f38963a) {
             try {
                 b d10 = d(lifecycleOwner);
                 if (d10 == null) {
                     return;
                 }
-                for (a aVar : (Set) this.f38397c.get(d10)) {
-                    ((o0.b) b2.e.g((o0.b) this.f38396b.get(aVar))).x();
+                for (a aVar : (Set) this.f38965c.get(d10)) {
+                    ((o0.b) b2.e.g((o0.b) this.f38964b.get(aVar))).x();
                 }
             } catch (Throwable th2) {
                 throw th2;
@@ -157,10 +157,10 @@ public final class c {
     }
 
     private void m(LifecycleOwner lifecycleOwner) {
-        synchronized (this.f38395a) {
+        synchronized (this.f38963a) {
             try {
-                for (a aVar : (Set) this.f38397c.get(d(lifecycleOwner))) {
-                    o0.b bVar = (o0.b) this.f38396b.get(aVar);
+                for (a aVar : (Set) this.f38965c.get(d(lifecycleOwner))) {
+                    o0.b bVar = (o0.b) this.f38964b.get(aVar);
                     if (!((o0.b) b2.e.g(bVar)).v().isEmpty()) {
                         bVar.z();
                     }
@@ -173,20 +173,20 @@ public final class c {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void a(o0.b bVar, z1 z1Var, List list, Collection collection, y.a aVar) {
-        synchronized (this.f38395a) {
+        synchronized (this.f38963a) {
             try {
                 b2.e.a(!collection.isEmpty());
-                this.f38399e = aVar;
+                this.f38967e = aVar;
                 LifecycleOwner t10 = bVar.t();
                 b d10 = d(t10);
                 if (d10 == null) {
                     return;
                 }
-                Set<a> set = (Set) this.f38397c.get(d10);
-                y.a aVar2 = this.f38399e;
+                Set<a> set = (Set) this.f38965c.get(d10);
+                y.a aVar2 = this.f38967e;
                 if (aVar2 == null || aVar2.c() != 2) {
                     for (a aVar3 : set) {
-                        o0.b bVar2 = (o0.b) b2.e.g((o0.b) this.f38396b.get(aVar3));
+                        o0.b bVar2 = (o0.b) b2.e.g((o0.b) this.f38964b.get(aVar3));
                         if (!bVar2.equals(bVar) && !bVar2.v().isEmpty()) {
                             throw new IllegalArgumentException("Multiple LifecycleCameras with use cases are registered to the same LifecycleOwner.");
                         }
@@ -211,9 +211,9 @@ public final class c {
     /* JADX INFO: Access modifiers changed from: package-private */
     public o0.b b(LifecycleOwner lifecycleOwner, e0.f fVar) {
         boolean z10;
-        synchronized (this.f38395a) {
+        synchronized (this.f38963a) {
             try {
-                if (this.f38396b.get(a.a(lifecycleOwner, fVar.D())) == null) {
+                if (this.f38964b.get(a.a(lifecycleOwner, fVar.D())) == null) {
                     z10 = true;
                 } else {
                     z10 = false;
@@ -237,8 +237,8 @@ public final class c {
     /* JADX INFO: Access modifiers changed from: package-private */
     public o0.b c(LifecycleOwner lifecycleOwner, f.b bVar) {
         o0.b bVar2;
-        synchronized (this.f38395a) {
-            bVar2 = (o0.b) this.f38396b.get(a.a(lifecycleOwner, bVar));
+        synchronized (this.f38963a) {
+            bVar2 = (o0.b) this.f38964b.get(a.a(lifecycleOwner, bVar));
         }
         return bVar2;
     }
@@ -246,28 +246,28 @@ public final class c {
     /* JADX INFO: Access modifiers changed from: package-private */
     public Collection e() {
         Collection unmodifiableCollection;
-        synchronized (this.f38395a) {
-            unmodifiableCollection = Collections.unmodifiableCollection(this.f38396b.values());
+        synchronized (this.f38963a) {
+            unmodifiableCollection = Collections.unmodifiableCollection(this.f38964b.values());
         }
         return unmodifiableCollection;
     }
 
     void h(LifecycleOwner lifecycleOwner) {
-        synchronized (this.f38395a) {
+        synchronized (this.f38963a) {
             try {
                 if (!f(lifecycleOwner)) {
                     return;
                 }
-                if (this.f38398d.isEmpty()) {
-                    this.f38398d.push(lifecycleOwner);
+                if (this.f38966d.isEmpty()) {
+                    this.f38966d.push(lifecycleOwner);
                 } else {
-                    y.a aVar = this.f38399e;
+                    y.a aVar = this.f38967e;
                     if (aVar == null || aVar.c() != 2) {
-                        LifecycleOwner lifecycleOwner2 = (LifecycleOwner) this.f38398d.peek();
+                        LifecycleOwner lifecycleOwner2 = (LifecycleOwner) this.f38966d.peek();
                         if (!lifecycleOwner.equals(lifecycleOwner2)) {
                             j(lifecycleOwner2);
-                            this.f38398d.remove(lifecycleOwner);
-                            this.f38398d.push(lifecycleOwner);
+                            this.f38966d.remove(lifecycleOwner);
+                            this.f38966d.push(lifecycleOwner);
                         }
                     }
                 }
@@ -279,12 +279,12 @@ public final class c {
     }
 
     void i(LifecycleOwner lifecycleOwner) {
-        synchronized (this.f38395a) {
+        synchronized (this.f38963a) {
             try {
-                this.f38398d.remove(lifecycleOwner);
+                this.f38966d.remove(lifecycleOwner);
                 j(lifecycleOwner);
-                if (!this.f38398d.isEmpty()) {
-                    m((LifecycleOwner) this.f38398d.peek());
+                if (!this.f38966d.isEmpty()) {
+                    m((LifecycleOwner) this.f38966d.peek());
                 }
             } catch (Throwable th2) {
                 throw th2;
@@ -294,10 +294,10 @@ public final class c {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void k() {
-        synchronized (this.f38395a) {
+        synchronized (this.f38963a) {
             try {
-                for (a aVar : this.f38396b.keySet()) {
-                    o0.b bVar = (o0.b) this.f38396b.get(aVar);
+                for (a aVar : this.f38964b.keySet()) {
+                    o0.b bVar = (o0.b) this.f38964b.get(aVar);
                     bVar.y();
                     i(bVar.t());
                 }
@@ -308,17 +308,17 @@ public final class c {
     }
 
     void l(LifecycleOwner lifecycleOwner) {
-        synchronized (this.f38395a) {
+        synchronized (this.f38963a) {
             try {
                 b d10 = d(lifecycleOwner);
                 if (d10 == null) {
                     return;
                 }
                 i(lifecycleOwner);
-                for (a aVar : (Set) this.f38397c.get(d10)) {
-                    this.f38396b.remove(aVar);
+                for (a aVar : (Set) this.f38965c.get(d10)) {
+                    this.f38964b.remove(aVar);
                 }
-                this.f38397c.remove(d10);
+                this.f38965c.remove(d10);
                 d10.a().getLifecycle().d(d10);
             } catch (Throwable th2) {
                 throw th2;

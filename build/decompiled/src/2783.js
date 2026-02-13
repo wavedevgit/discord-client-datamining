@@ -4,19 +4,19 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = exports;
     var6 = dependencyMap;
     var4 = function arg0() {
-        _fun22806: for (var _fun22806_ip = 0;;) switch (_fun22806_ip) {
+        _fun22824: for (var _fun22824_ip = 0;;) switch (_fun22824_ip) {
             case 0:
                 var2 = arg0;
                 if (!var2) {
-                    _fun22806_ip = 18;
-                    continue _fun22806
+                    _fun22824_ip = 18;
+                    continue _fun22824
                 }
             case 6:
                 var1 = var2.__esModule;
                 var0 = var2;
                 if (var1) {
-                    _fun22806_ip = 27;
-                    continue _fun22806
+                    _fun22824_ip = 27;
+                    continue _fun22824
                 }
             case 18:
                 var1 = {};
@@ -35,128 +35,57 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = '__esModule';
     var0 = var7.bind(var8)(var1, var0, var2);
     var0 = function arg0, arg1() {
-        _fun22807: for (var _fun22807_ip = 0;;) switch (_fun22807_ip) {
+        _fun22825: for (var _fun22825_ip = 0;;) switch (_fun22825_ip) {
             case 0:
-                var0 = arg0;
-                var4 = arg1;
-                var7 = undefined;
+                var4 = undefined;
                 var1 = undefined;
                 var2 = _closure1_slot3;
                 var3 = var2.default;
                 var1 = arguments;
-                var2 = 1;
-                var1 = var3.bind(var7)(var2, var1);
+                var2 = var1;
+                var1 = 2;
+                var1 = var3.bind(var4)(var1, var2);
+                var1 = _closure1_slot0;
+                var2 = var1.default;
+                var1 = arg0;
+                var6 = var2.bind(var4)(var1);
+                var1 = _closure1_slot0;
+                var2 = var1.default;
+                var1 = arg1;
+                var5 = var2.bind(var4)(var1);
                 var1 = _closure1_slot2;
-                var3 = var1.default;
-                var1 = _closure1_slot1;
-                var5 = var1.default;
-                var1 = var0.start;
-                var1 = var5.bind(var7)(var1);
-                var3 = var3.bind(var7)(var1);
-                var1 = _closure1_slot1;
                 var1 = var1.default;
-                var0 = var0.end;
-                var5 = var1.bind(var7)(var0);
-                var0 = var3.getTime;
-                var0 = var0.bind(var3)();
-                var1 = var5.getTime;
-                var5 = var1.bind(var5)();
-                if (!(!(var0 >= var5))) {
-                    _fun22807_ip = 287;
-                    continue _fun22807
-                }
-            case 112:
-                var1 = new Array(0);
-                var0 = global;
-                var8 = var0.Number;
-                var10 = null;
-                var11 = var10 == var4;
-                var9 = undefined;
-                if (var11) {
-                    _fun22807_ip = 141;
-                    continue _fun22807
-                }
-            case 135:
-                var9 = var4.step;
-            case 141:
-                var4 = var2;
-                if (!(var10 !== var9)) {
-                    _fun22807_ip = 158;
-                    continue _fun22807
-                }
-            case 148:
-                var4 = var2;
-                if (!(var7 !== var9)) {
-                    _fun22807_ip = 158;
-                    continue _fun22807
-                }
-            case 155:
-                var4 = var9;
-            case 158:
-                var4 = var8.bind(var7)(var4);
-                if (!(!(var4 < var2))) {
-                    _fun22807_ip = 253;
-                    continue _fun22807
-                }
-            case 167:
-                var2 = var0.isNaN;
-                var2 = var2.bind(var7)(var4);
-                if (var2) {
-                    _fun22807_ip = 253;
-                    continue _fun22807
-                }
-            case 181:
-                var2 = var3.getTime;
-                var2 = var2.bind(var3)();
-                if (!(var2 <= var5)) {
-                    _fun22807_ip = 251;
-                    continue _fun22807
-                }
-            case 195:
-                var8 = var1.push;
+                var1 = var1.bind(var4)(var6, var5);
+                var3 = global;
+                var8 = var3.Math;
+                var7 = var8.abs;
                 var2 = _closure1_slot1;
                 var2 = var2.default;
-                var2 = var2.bind(var7)(var3);
-                var2 = var8.bind(var1)(var2);
-                var2 = _closure1_slot0;
-                var2 = var2.default;
-                var8 = var2.bind(var7)(var3, var4);
-                var2 = var8.getTime;
-                var2 = var2.bind(var8)();
-                var3 = var8;
-                if (var2 <= var5) {
-                    _fun22807_ip = 195;
-                    continue _fun22807
+                var2 = var2.bind(var4)(var6, var5);
+                var2 = var7.bind(var8)(var2);
+                var7 = var6.setFullYear;
+                var8 = 1584;
+                var7 = var7.bind(var6)(var8);
+                var7 = var5.setFullYear;
+                var7 = var7.bind(var5)(var8);
+                var0 = _closure1_slot2;
+                var0 = var0.default;
+                var5 = var0.bind(var4)(var6, var5);
+                var0 = -var1;
+                var3 = var3.Number;
+                var0 = var5 === var0;
+                var0 = var3.bind(var4)(var0);
+                var0 = var2 - var0;
+                var1 = var1 * var0;
+                var0 = 0;
+                if (!(var0 !== var1)) {
+                    _fun22825_ip = 191;
+                    continue _fun22825
                 }
-            case 251:
-                return var1;
-            case 253:
-                var2 = var0.RangeError;
-                var0 = var2.prototype;
-                var1 = Object.create(var0, {
-                    constructor: {
-                        value: var2
-                    }
-                });
-                var13 = '`options.step` must be a number equal to or greater than 1';
-                var14 = var1;
-                var0 = new var14[var2](var13, var12);
-                var0 = var0 instanceof Object ? var0 : var1;
-                throw var0;
-            case 287:
-                var0 = global;
-                var2 = var0.RangeError;
-                var0 = var2.prototype;
-                var1 = Object.create(var0, {
-                    constructor: {
-                        value: var2
-                    }
-                });
-                var13 = 'Invalid interval';
-                var14 = var1;
-                var0 = new var14[var2](var13, var12);
-                var0 = var0 instanceof Object ? var0 : var1;
-                throw var0;
+            case 188:
+                var0 = var1;
+            case 191:
+                return var0;
         }
     };
     var1.default = var0;
@@ -185,4 +114,4 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = arg4;
     var1.exports = var2;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [2740, 2575, 2784, 2576]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [2578, 2768, 2754, 2579]);

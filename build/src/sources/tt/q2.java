@@ -13,10 +13,10 @@ import kotlinx.serialization.encoding.c;
 public abstract class q2 implements Decoder, kotlinx.serialization.encoding.c {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ArrayList f50059a = new ArrayList();
+    private final ArrayList f50627a = new ArrayList();
 
     /* renamed from: b  reason: collision with root package name */
-    private boolean f50060b;
+    private boolean f50628b;
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Object L(q2 q2Var, DeserializationStrategy deserializationStrategy, Object obj) {
@@ -34,10 +34,10 @@ public abstract class q2 implements Decoder, kotlinx.serialization.encoding.c {
     private final Object g0(Object obj, Function0 function0) {
         f0(obj);
         Object invoke = function0.invoke();
-        if (!this.f50060b) {
+        if (!this.f50628b) {
             e0();
         }
-        this.f50060b = false;
+        this.f50628b = false;
         return invoke;
     }
 
@@ -91,7 +91,7 @@ public abstract class q2 implements Decoder, kotlinx.serialization.encoding.c {
     /* JADX INFO: Access modifiers changed from: protected */
     public final void K(q2 other) {
         Intrinsics.checkNotNullParameter(other, "other");
-        other.f50059a.addAll(this.f50059a);
+        other.f50627a.addAll(this.f50627a);
     }
 
     protected Object N(DeserializationStrategy deserializer, Object obj) {
@@ -140,7 +140,7 @@ public abstract class q2 implements Decoder, kotlinx.serialization.encoding.c {
 
     /* JADX INFO: Access modifiers changed from: protected */
     public final Object b0() {
-        return CollectionsKt.B0(this.f50059a);
+        return CollectionsKt.B0(this.f50627a);
     }
 
     @Override // kotlinx.serialization.encoding.c
@@ -151,7 +151,7 @@ public abstract class q2 implements Decoder, kotlinx.serialization.encoding.c {
     protected abstract Object c0(SerialDescriptor serialDescriptor, int i10);
 
     public final ArrayList d0() {
-        return this.f50059a;
+        return this.f50627a;
     }
 
     @Override // kotlinx.serialization.encoding.Decoder
@@ -161,9 +161,9 @@ public abstract class q2 implements Decoder, kotlinx.serialization.encoding.c {
     }
 
     protected final Object e0() {
-        ArrayList arrayList = this.f50059a;
+        ArrayList arrayList = this.f50627a;
         Object remove = arrayList.remove(CollectionsKt.n(arrayList));
-        this.f50060b = true;
+        this.f50628b = true;
         return remove;
     }
 
@@ -175,7 +175,7 @@ public abstract class q2 implements Decoder, kotlinx.serialization.encoding.c {
 
     /* JADX INFO: Access modifiers changed from: protected */
     public final void f0(Object obj) {
-        this.f50059a.add(obj);
+        this.f50627a.add(obj);
     }
 
     @Override // kotlinx.serialization.encoding.Decoder

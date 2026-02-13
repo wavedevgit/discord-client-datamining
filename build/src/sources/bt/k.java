@@ -50,7 +50,7 @@ public abstract /* synthetic */ class k {
         @Override // kotlinx.coroutines.flow.FlowCollector
         public final Object emit(Object obj, Continuation continuation) {
             this.f7597d.add(obj);
-            return Unit.f31988a;
+            return Unit.f32556a;
         }
     }
 

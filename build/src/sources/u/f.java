@@ -7,10 +7,10 @@ import java.util.List;
 public class f {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ExtraSupportedSurfaceCombinationsQuirk f50317a = (ExtraSupportedSurfaceCombinationsQuirk) androidx.camera.camera2.internal.compat.quirk.b.b(ExtraSupportedSurfaceCombinationsQuirk.class);
+    private final ExtraSupportedSurfaceCombinationsQuirk f50885a = (ExtraSupportedSurfaceCombinationsQuirk) androidx.camera.camera2.internal.compat.quirk.b.b(ExtraSupportedSurfaceCombinationsQuirk.class);
 
     public List a(String str) {
-        ExtraSupportedSurfaceCombinationsQuirk extraSupportedSurfaceCombinationsQuirk = this.f50317a;
+        ExtraSupportedSurfaceCombinationsQuirk extraSupportedSurfaceCombinationsQuirk = this.f50885a;
         if (extraSupportedSurfaceCombinationsQuirk == null) {
             return new ArrayList();
         }

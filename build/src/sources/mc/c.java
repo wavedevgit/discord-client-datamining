@@ -10,16 +10,16 @@ import qi.s;
 public abstract class c extends Binder {
 
     /* renamed from: c  reason: collision with root package name */
-    private static final int f36225c;
+    private static final int f36793c;
 
     static {
         int i10;
-        if (oe.w0.f39038a >= 30) {
+        if (oe.w0.f39606a >= 30) {
             i10 = IBinder.getSuggestedMaxIpcSizeBytes();
         } else {
             i10 = 65536;
         }
-        f36225c = i10;
+        f36793c = i10;
     }
 
     public static qi.s a(IBinder iBinder) {

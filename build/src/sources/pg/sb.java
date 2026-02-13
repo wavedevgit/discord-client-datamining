@@ -7,11 +7,11 @@ import java.util.List;
 public final class sb implements pb {
 
     /* renamed from: a  reason: collision with root package name */
-    final List f42417a;
+    final List f42985a;
 
     public sb(Context context, rb rbVar) {
         ArrayList arrayList = new ArrayList();
-        this.f42417a = arrayList;
+        this.f42985a = arrayList;
         if (rbVar.c()) {
             arrayList.add(new cc(context, rbVar));
         }
@@ -19,7 +19,7 @@ public final class sb implements pb {
 
     @Override // pg.pb
     public final void a(ob obVar) {
-        for (pb pbVar : this.f42417a) {
+        for (pb pbVar : this.f42985a) {
             pbVar.a(obVar);
         }
     }

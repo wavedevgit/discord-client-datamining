@@ -26,22 +26,22 @@ import org.jetbrains.annotations.NotNull;
 public class LazyPackageViewDescriptorImpl extends DeclarationDescriptorImpl implements PackageViewDescriptor {
 
     /* renamed from: s  reason: collision with root package name */
-    static final /* synthetic */ KProperty[] f32476s = {Reflection.property1(new PropertyReference1Impl(LazyPackageViewDescriptorImpl.class, "fragments", "getFragments()Ljava/util/List;", 0)), Reflection.property1(new PropertyReference1Impl(LazyPackageViewDescriptorImpl.class, "empty", "getEmpty()Z", 0))};
+    static final /* synthetic */ KProperty[] f33044s = {Reflection.property1(new PropertyReference1Impl(LazyPackageViewDescriptorImpl.class, "fragments", "getFragments()Ljava/util/List;", 0)), Reflection.property1(new PropertyReference1Impl(LazyPackageViewDescriptorImpl.class, "empty", "getEmpty()Z", 0))};
 
     /* renamed from: i  reason: collision with root package name */
-    private final ModuleDescriptorImpl f32477i;
+    private final ModuleDescriptorImpl f33045i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final FqName f32478o;
+    private final FqName f33046o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final NotNullLazyValue f32479p;
+    private final NotNullLazyValue f33047p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final NotNullLazyValue f32480q;
+    private final NotNullLazyValue f33048q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final MemberScope f32481r;
+    private final MemberScope f33049r;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public LazyPackageViewDescriptorImpl(@NotNull ModuleDescriptorImpl module, @NotNull FqName fqName, @NotNull StorageManager storageManager) {
@@ -49,11 +49,11 @@ public class LazyPackageViewDescriptorImpl extends DeclarationDescriptorImpl imp
         Intrinsics.checkNotNullParameter(module, "module");
         Intrinsics.checkNotNullParameter(fqName, "fqName");
         Intrinsics.checkNotNullParameter(storageManager, "storageManager");
-        this.f32477i = module;
-        this.f32478o = fqName;
-        this.f32479p = storageManager.createLazyValue(new d(this));
-        this.f32480q = storageManager.createLazyValue(new e(this));
-        this.f32481r = new LazyScopeAdapter(storageManager, new f(this));
+        this.f33045i = module;
+        this.f33046o = fqName;
+        this.f33047p = storageManager.createLazyValue(new d(this));
+        this.f33048q = storageManager.createLazyValue(new e(this));
+        this.f33049r = new LazyScopeAdapter(storageManager, new f(this));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -101,25 +101,25 @@ public class LazyPackageViewDescriptorImpl extends DeclarationDescriptorImpl imp
     }
 
     protected final boolean g() {
-        return ((Boolean) StorageKt.getValue(this.f32480q, this, f32476s[1])).booleanValue();
+        return ((Boolean) StorageKt.getValue(this.f33048q, this, f33044s[1])).booleanValue();
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.PackageViewDescriptor
     @NotNull
     public FqName getFqName() {
-        return this.f32478o;
+        return this.f33046o;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.PackageViewDescriptor
     @NotNull
     public List<PackageFragmentDescriptor> getFragments() {
-        return (List) StorageKt.getValue(this.f32479p, this, f32476s[0]);
+        return (List) StorageKt.getValue(this.f33047p, this, f33044s[0]);
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.PackageViewDescriptor
     @NotNull
     public MemberScope getMemberScope() {
-        return this.f32481r;
+        return this.f33049r;
     }
 
     public int hashCode() {
@@ -142,6 +142,6 @@ public class LazyPackageViewDescriptorImpl extends DeclarationDescriptorImpl imp
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.PackageViewDescriptor
     @NotNull
     public ModuleDescriptorImpl getModule() {
-        return this.f32477i;
+        return this.f33045i;
     }
 }

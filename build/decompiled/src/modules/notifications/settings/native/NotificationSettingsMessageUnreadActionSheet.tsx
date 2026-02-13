@@ -226,4 +226,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 4310, 33, 1297, 671, 4907, 9138, 3938, 1234, 5481, 5480, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 4310, 33, 1297, 671, 4938, 8840, 3938, 1235, 5482, 5481, 2]);

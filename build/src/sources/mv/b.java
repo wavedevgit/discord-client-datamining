@@ -8,7 +8,7 @@ import ov.a;
 public final class b implements cv.b, ov.a {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final b f36668a = new b();
+    public static final b f37236a = new b();
 
     private b() {
     }

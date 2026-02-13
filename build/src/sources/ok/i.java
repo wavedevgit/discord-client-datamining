@@ -6,51 +6,51 @@ import java.nio.charset.StandardCharsets;
 public final class i {
 
     /* renamed from: a  reason: collision with root package name */
-    private StringBuilder f40195a;
+    private StringBuilder f40763a;
 
     /* renamed from: b  reason: collision with root package name */
-    private StringBuilder f40196b;
+    private StringBuilder f40764b;
 
     /* renamed from: c  reason: collision with root package name */
-    private Charset f40197c;
+    private Charset f40765c;
 
     public i() {
-        this.f40197c = StandardCharsets.ISO_8859_1;
-        this.f40195a = new StringBuilder();
+        this.f40765c = StandardCharsets.ISO_8859_1;
+        this.f40763a = new StringBuilder();
     }
 
     private void g() {
-        Charset charset = this.f40197c;
+        Charset charset = this.f40765c;
         Charset charset2 = StandardCharsets.ISO_8859_1;
         if (charset.equals(charset2)) {
-            if (this.f40195a.length() > 0) {
-                StringBuilder sb2 = this.f40196b;
+            if (this.f40763a.length() > 0) {
+                StringBuilder sb2 = this.f40764b;
                 if (sb2 == null) {
-                    this.f40196b = this.f40195a;
-                    this.f40195a = new StringBuilder();
+                    this.f40764b = this.f40763a;
+                    this.f40763a = new StringBuilder();
                     return;
                 }
-                sb2.append((CharSequence) this.f40195a);
-                this.f40195a = new StringBuilder();
+                sb2.append((CharSequence) this.f40763a);
+                this.f40763a = new StringBuilder();
             }
-        } else if (this.f40195a.length() > 0) {
-            byte[] bytes = this.f40195a.toString().getBytes(charset2);
-            this.f40195a = new StringBuilder();
-            StringBuilder sb3 = this.f40196b;
+        } else if (this.f40763a.length() > 0) {
+            byte[] bytes = this.f40763a.toString().getBytes(charset2);
+            this.f40763a = new StringBuilder();
+            StringBuilder sb3 = this.f40764b;
             if (sb3 == null) {
-                this.f40196b = new StringBuilder(new String(bytes, this.f40197c));
+                this.f40764b = new StringBuilder(new String(bytes, this.f40765c));
             } else {
-                sb3.append(new String(bytes, this.f40197c));
+                sb3.append(new String(bytes, this.f40765c));
             }
         }
     }
 
     public void a(byte b10) {
-        this.f40195a.append((char) (b10 & 255));
+        this.f40763a.append((char) (b10 & 255));
     }
 
     public void b(char c10) {
-        this.f40195a.append((char) (c10 & 255));
+        this.f40763a.append((char) (c10 & 255));
     }
 
     public void c(int i10) {
@@ -58,27 +58,27 @@ public final class i {
     }
 
     public void d(String str) {
-        this.f40195a.append(str);
+        this.f40763a.append(str);
     }
 
     public void e(StringBuilder sb2) {
         g();
-        this.f40196b.append((CharSequence) sb2);
+        this.f40764b.append((CharSequence) sb2);
     }
 
     public void f(int i10) {
         g();
         d e10 = d.e(i10);
         if (e10 != null) {
-            this.f40197c = e10.f();
+            this.f40765c = e10.f();
             return;
         }
         throw kk.g.a();
     }
 
     public boolean h() {
-        if (this.f40195a.length() == 0) {
-            StringBuilder sb2 = this.f40196b;
+        if (this.f40763a.length() == 0) {
+            StringBuilder sb2 = this.f40764b;
             if (sb2 == null || sb2.length() == 0) {
                 return true;
             }
@@ -93,7 +93,7 @@ public final class i {
 
     public String toString() {
         g();
-        StringBuilder sb2 = this.f40196b;
+        StringBuilder sb2 = this.f40764b;
         if (sb2 == null) {
             return "";
         }
@@ -101,7 +101,7 @@ public final class i {
     }
 
     public i(int i10) {
-        this.f40197c = StandardCharsets.ISO_8859_1;
-        this.f40195a = new StringBuilder(i10);
+        this.f40765c = StandardCharsets.ISO_8859_1;
+        this.f40763a = new StringBuilder(i10);
     }
 }

@@ -3,26 +3,26 @@ package xv;
 public class i extends cw.a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final aw.g f55211a;
+    private final aw.g f55779a;
 
     /* renamed from: b  reason: collision with root package name */
-    private String f55212b;
+    private String f55780b;
 
     /* renamed from: c  reason: collision with root package name */
-    private StringBuilder f55213c;
+    private StringBuilder f55781c;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static class a extends cw.b {
         @Override // cw.e
         public cw.f a(cw.h hVar, cw.g gVar) {
             int a10 = hVar.a();
-            if (a10 >= zv.d.f57222a) {
+            if (a10 >= zv.d.f57790a) {
                 return cw.f.c();
             }
             int c10 = hVar.c();
             i k10 = i.k(hVar.getLine(), c10, a10);
             if (k10 != null) {
-                return cw.f.d(k10).b(c10 + k10.f55211a.p());
+                return cw.f.d(k10).b(c10 + k10.f55779a.p());
             }
             return cw.f.c();
         }
@@ -30,8 +30,8 @@ public class i extends cw.a {
 
     public i(char c10, int i10, int i11) {
         aw.g gVar = new aw.g();
-        this.f55211a = gVar;
-        this.f55213c = new StringBuilder();
+        this.f55779a = gVar;
+        this.f55781c = new StringBuilder();
         gVar.s(c10);
         gVar.u(i10);
         gVar.t(i11);
@@ -66,8 +66,8 @@ public class i extends cw.a {
     }
 
     private boolean l(CharSequence charSequence, int i10) {
-        char n10 = this.f55211a.n();
-        int p10 = this.f55211a.p();
+        char n10 = this.f55779a.n();
+        int p10 = this.f55779a.p();
         int k10 = zv.d.k(n10, charSequence, i10, charSequence.length()) - i10;
         if (k10 < p10 || zv.d.m(charSequence, i10 + k10, charSequence.length()) != charSequence.length()) {
             return false;
@@ -77,23 +77,23 @@ public class i extends cw.a {
 
     @Override // cw.d
     public aw.a d() {
-        return this.f55211a;
+        return this.f55779a;
     }
 
     @Override // cw.a, cw.d
     public void e(CharSequence charSequence) {
-        if (this.f55212b == null) {
-            this.f55212b = charSequence.toString();
+        if (this.f55780b == null) {
+            this.f55780b = charSequence.toString();
             return;
         }
-        this.f55213c.append(charSequence);
-        this.f55213c.append('\n');
+        this.f55781c.append(charSequence);
+        this.f55781c.append('\n');
     }
 
     @Override // cw.a, cw.d
     public void f() {
-        this.f55211a.v(zv.a.e(this.f55212b.trim()));
-        this.f55211a.w(this.f55213c.toString());
+        this.f55779a.v(zv.a.e(this.f55780b.trim()));
+        this.f55779a.w(this.f55781c.toString());
     }
 
     @Override // cw.d
@@ -101,11 +101,11 @@ public class i extends cw.a {
         int c10 = hVar.c();
         int index = hVar.getIndex();
         CharSequence line = hVar.getLine();
-        if (hVar.a() < zv.d.f57222a && l(line, c10)) {
+        if (hVar.a() < zv.d.f57790a && l(line, c10)) {
             return cw.c.c();
         }
         int length = line.length();
-        for (int o10 = this.f55211a.o(); o10 > 0 && index < length && line.charAt(index) == ' '; o10--) {
+        for (int o10 = this.f55779a.o(); o10 > 0 && index < length && line.charAt(index) == ' '; o10--) {
             index++;
         }
         return cw.c.b(index);

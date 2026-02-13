@@ -57,13 +57,13 @@ final class FileModule$readFile$1 extends k implements Function2<CoroutineScope,
             } catch (Throwable th2) {
                 this.$promise.reject(th2);
             }
-            return Unit.f31988a;
+            return Unit.f32556a;
         }
         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((FileModule$readFile$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
+        return ((FileModule$readFile$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32556a);
     }
 }

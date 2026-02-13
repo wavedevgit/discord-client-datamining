@@ -3,7 +3,7 @@ package rg;
 public final class jk {
 
     /* renamed from: a  reason: collision with root package name */
-    private static jk f46924a;
+    private static jk f47492a;
 
     private jk() {
     }
@@ -12,10 +12,10 @@ public final class jk {
         jk jkVar;
         synchronized (jk.class) {
             try {
-                if (f46924a == null) {
-                    f46924a = new jk();
+                if (f47492a == null) {
+                    f47492a = new jk();
                 }
-                jkVar = f46924a;
+                jkVar = f47492a;
             } catch (Throwable th2) {
                 throw th2;
             }

@@ -11,19 +11,19 @@ import t4.i;
 public final class h implements cv.b {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final h f48480a = new h();
+    public static final h f49048a = new h();
 
     private h() {
     }
 
     private final Object a(i iVar, Function0 function0, Function0 function02) {
-        if (Intrinsics.areEqual(iVar, i.b.f48482a)) {
+        if (Intrinsics.areEqual(iVar, i.b.f49050a)) {
             return function02.invoke();
         }
-        if (Intrinsics.areEqual(iVar, i.a.f48481a)) {
+        if (Intrinsics.areEqual(iVar, i.a.f49049a)) {
             return function0.invoke();
         }
-        if (Intrinsics.areEqual(iVar, i.c.f48483a)) {
+        if (Intrinsics.areEqual(iVar, i.c.f49051a)) {
             return null;
         }
         throw new p();
@@ -111,12 +111,12 @@ public final class h implements cv.b {
 
     private final i c(String str) {
         if (Intrinsics.areEqual(str, "desc")) {
-            return i.b.f48482a;
+            return i.b.f49050a;
         }
         if (Intrinsics.areEqual(str, "asc")) {
-            return i.a.f48481a;
+            return i.a.f49049a;
         }
-        return i.c.f48483a;
+        return i.c.f49051a;
     }
 
     @Override // cv.b
@@ -133,7 +133,7 @@ public final class h implements cv.b {
         if (list == null) {
             return null;
         }
-        h hVar = f48480a;
+        h hVar = f49048a;
         Object b10 = mw.c.b(c10);
         if (b10 instanceof String) {
             str = (String) b10;

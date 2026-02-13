@@ -7,20 +7,20 @@ import kotlinx.coroutines.Job;
 public final class y0 extends CancellationException {
 
     /* renamed from: d  reason: collision with root package name */
-    private final transient Job f55835d;
+    private final transient Job f56403d;
 
     public y0(String str, Throwable th2, Job job) {
         super(str);
-        this.f55835d = job;
+        this.f56403d = job;
         if (th2 != null) {
             initCause(th2);
         }
     }
 
     public final Job a() {
-        Job job = this.f55835d;
+        Job job = this.f56403d;
         if (job == null) {
-            return kotlinx.coroutines.d0.f35026e;
+            return kotlinx.coroutines.d0.f35594e;
         }
         return job;
     }

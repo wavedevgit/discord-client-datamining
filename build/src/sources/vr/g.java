@@ -7,28 +7,28 @@ import android.view.View;
 public class g extends URLSpan {
 
     /* renamed from: d  reason: collision with root package name */
-    private final tr.c f51798d;
+    private final tr.c f52366d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final String f51799e;
+    private final String f52367e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final sr.c f51800i;
+    private final sr.c f52368i;
 
     public g(tr.c cVar, String str, sr.c cVar2) {
         super(str);
-        this.f51798d = cVar;
-        this.f51799e = str;
-        this.f51800i = cVar2;
+        this.f52366d = cVar;
+        this.f52367e = str;
+        this.f52368i = cVar2;
     }
 
     @Override // android.text.style.URLSpan, android.text.style.ClickableSpan
     public void onClick(View view) {
-        this.f51800i.a(view, this.f51799e);
+        this.f52368i.a(view, this.f52367e);
     }
 
     @Override // android.text.style.ClickableSpan, android.text.style.CharacterStyle
     public void updateDrawState(TextPaint textPaint) {
-        this.f51798d.f(textPaint);
+        this.f52366d.f(textPaint);
     }
 }

@@ -33,15 +33,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/Icon/native/redesign/generated/LightbulbIcon.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Environment: var1
-        _fun103938: for (var _fun103938_ip = 0;;) switch (_fun103938_ip) {
+        _fun104063: for (var _fun104063_ip = 0;;) switch (_fun104063_ip) {
             case 0:
                 var2 = arg0;
                 var5 = var2.style;
                 var6 = var2.color;
                 var3 = undefined;
                 if (!(var6 === var3)) {
-                    _fun103938_ip = 53;
-                    continue _fun103938
+                    _fun104063_ip = 53;
+                    continue _fun104063
                 }
             case 19:
                 var1 = _closure1_slot1;
@@ -83,4 +83,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.LightbulbIcon = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 671, 3152, 13539, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 671, 3155, 13550, 2]);

@@ -14,124 +14,124 @@ import android.view.accessibility.AccessibilityEvent;
 public abstract class j implements Window.Callback {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Window.Callback f28307d;
+    private final Window.Callback f28875d;
 
     public j(Window.Callback callback) {
-        this.f28307d = callback;
+        this.f28875d = callback;
     }
 
     @Override // android.view.Window.Callback
     public boolean dispatchGenericMotionEvent(MotionEvent motionEvent) {
-        return this.f28307d.dispatchGenericMotionEvent(motionEvent);
+        return this.f28875d.dispatchGenericMotionEvent(motionEvent);
     }
 
     @Override // android.view.Window.Callback
     public boolean dispatchKeyEvent(KeyEvent keyEvent) {
-        return this.f28307d.dispatchKeyEvent(keyEvent);
+        return this.f28875d.dispatchKeyEvent(keyEvent);
     }
 
     @Override // android.view.Window.Callback
     public boolean dispatchKeyShortcutEvent(KeyEvent keyEvent) {
-        return this.f28307d.dispatchKeyShortcutEvent(keyEvent);
+        return this.f28875d.dispatchKeyShortcutEvent(keyEvent);
     }
 
     @Override // android.view.Window.Callback
     public boolean dispatchPopulateAccessibilityEvent(AccessibilityEvent accessibilityEvent) {
-        return this.f28307d.dispatchPopulateAccessibilityEvent(accessibilityEvent);
+        return this.f28875d.dispatchPopulateAccessibilityEvent(accessibilityEvent);
     }
 
     @Override // android.view.Window.Callback
     public boolean dispatchTouchEvent(MotionEvent motionEvent) {
-        return this.f28307d.dispatchTouchEvent(motionEvent);
+        return this.f28875d.dispatchTouchEvent(motionEvent);
     }
 
     @Override // android.view.Window.Callback
     public boolean dispatchTrackballEvent(MotionEvent motionEvent) {
-        return this.f28307d.dispatchTrackballEvent(motionEvent);
+        return this.f28875d.dispatchTrackballEvent(motionEvent);
     }
 
     @Override // android.view.Window.Callback
     public void onActionModeFinished(ActionMode actionMode) {
-        this.f28307d.onActionModeFinished(actionMode);
+        this.f28875d.onActionModeFinished(actionMode);
     }
 
     @Override // android.view.Window.Callback
     public void onActionModeStarted(ActionMode actionMode) {
-        this.f28307d.onActionModeStarted(actionMode);
+        this.f28875d.onActionModeStarted(actionMode);
     }
 
     @Override // android.view.Window.Callback
     public void onAttachedToWindow() {
-        this.f28307d.onAttachedToWindow();
+        this.f28875d.onAttachedToWindow();
     }
 
     @Override // android.view.Window.Callback
     public void onContentChanged() {
-        this.f28307d.onContentChanged();
+        this.f28875d.onContentChanged();
     }
 
     @Override // android.view.Window.Callback
     public boolean onCreatePanelMenu(int i10, Menu menu) {
-        return this.f28307d.onCreatePanelMenu(i10, menu);
+        return this.f28875d.onCreatePanelMenu(i10, menu);
     }
 
     @Override // android.view.Window.Callback
     public View onCreatePanelView(int i10) {
-        return this.f28307d.onCreatePanelView(i10);
+        return this.f28875d.onCreatePanelView(i10);
     }
 
     @Override // android.view.Window.Callback
     public void onDetachedFromWindow() {
-        this.f28307d.onDetachedFromWindow();
+        this.f28875d.onDetachedFromWindow();
     }
 
     @Override // android.view.Window.Callback
     public boolean onMenuItemSelected(int i10, MenuItem menuItem) {
-        return this.f28307d.onMenuItemSelected(i10, menuItem);
+        return this.f28875d.onMenuItemSelected(i10, menuItem);
     }
 
     @Override // android.view.Window.Callback
     public boolean onMenuOpened(int i10, Menu menu) {
-        return this.f28307d.onMenuOpened(i10, menu);
+        return this.f28875d.onMenuOpened(i10, menu);
     }
 
     @Override // android.view.Window.Callback
     public void onPanelClosed(int i10, Menu menu) {
-        this.f28307d.onPanelClosed(i10, menu);
+        this.f28875d.onPanelClosed(i10, menu);
     }
 
     @Override // android.view.Window.Callback
     public boolean onPreparePanel(int i10, View view, Menu menu) {
-        return this.f28307d.onPreparePanel(i10, view, menu);
+        return this.f28875d.onPreparePanel(i10, view, menu);
     }
 
     @Override // android.view.Window.Callback
     public boolean onSearchRequested() {
-        return this.f28307d.onSearchRequested();
+        return this.f28875d.onSearchRequested();
     }
 
     @Override // android.view.Window.Callback
     public void onWindowAttributesChanged(WindowManager.LayoutParams layoutParams) {
-        this.f28307d.onWindowAttributesChanged(layoutParams);
+        this.f28875d.onWindowAttributesChanged(layoutParams);
     }
 
     @Override // android.view.Window.Callback
     public void onWindowFocusChanged(boolean z10) {
-        this.f28307d.onWindowFocusChanged(z10);
+        this.f28875d.onWindowFocusChanged(z10);
     }
 
     @Override // android.view.Window.Callback
     public ActionMode onWindowStartingActionMode(ActionMode.Callback callback) {
-        return this.f28307d.onWindowStartingActionMode(callback);
+        return this.f28875d.onWindowStartingActionMode(callback);
     }
 
     @Override // android.view.Window.Callback
     public boolean onSearchRequested(SearchEvent searchEvent) {
-        return this.f28307d.onSearchRequested(searchEvent);
+        return this.f28875d.onSearchRequested(searchEvent);
     }
 
     @Override // android.view.Window.Callback
     public ActionMode onWindowStartingActionMode(ActionMode.Callback callback, int i10) {
-        return this.f28307d.onWindowStartingActionMode(callback, i10);
+        return this.f28875d.onWindowStartingActionMode(callback, i10);
     }
 }

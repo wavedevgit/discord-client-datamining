@@ -5,22 +5,22 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 public final class f {
 
     /* renamed from: a  reason: collision with root package name */
-    private final boolean f54456a;
+    private final boolean f55024a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final boolean f54457b;
+    private final boolean f55025b;
 
     public f(boolean z10, boolean z11) {
-        this.f54456a = z10;
-        this.f54457b = z11;
+        this.f55024a = z10;
+        this.f55025b = z11;
     }
 
     public final boolean a() {
-        return this.f54456a;
+        return this.f55024a;
     }
 
     public final boolean b() {
-        return this.f54457b;
+        return this.f55025b;
     }
 
     public /* synthetic */ f(boolean z10, boolean z11, int i10, DefaultConstructorMarker defaultConstructorMarker) {

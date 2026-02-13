@@ -128,7 +128,7 @@ final class RiveUIView$onAttachedToWindow$1 extends k implements Function2<Corou
                 app.rive.core.CommandQueue.m106drawPOUf8go$default(r8, r9, r11, r13, r14, r15, r16, r17, r18)
                 goto L34
             L91:
-                kotlin.Unit r1 = kotlin.Unit.f31988a
+                kotlin.Unit r1 = kotlin.Unit.f32556a
                 return r1
             */
             throw new UnsupportedOperationException("Method not decompiled: app.rive.RiveUIView$onAttachedToWindow$1.AnonymousClass1.invokeSuspend(java.lang.Object):java.lang.Object");
@@ -136,7 +136,7 @@ final class RiveUIView$onAttachedToWindow$1 extends k implements Function2<Corou
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(@NotNull CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
+            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32556a);
         }
     }
 
@@ -174,11 +174,11 @@ final class RiveUIView$onAttachedToWindow$1 extends k implements Function2<Corou
                 return f10;
             }
         }
-        return Unit.f31988a;
+        return Unit.f32556a;
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(@NotNull CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((RiveUIView$onAttachedToWindow$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
+        return ((RiveUIView$onAttachedToWindow$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32556a);
     }
 }

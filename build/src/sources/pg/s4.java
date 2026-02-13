@@ -5,23 +5,23 @@ import bj.c;
 final class s4 implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final s4 f42405a = new s4();
+    static final s4 f42973a = new s4();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final bj.c f42406b;
+    private static final bj.c f42974b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final bj.c f42407c;
+    private static final bj.c f42975c;
 
     static {
         c.b a10 = bj.c.a("detectorOptions");
         f fVar = new f();
         fVar.a(1);
-        f42406b = a10.b(fVar.b()).a();
+        f42974b = a10.b(fVar.b()).a();
         c.b a11 = bj.c.a("errorCode");
         f fVar2 = new f();
         fVar2.a(2);
-        f42407c = a11.b(fVar2.b()).a();
+        f42975c = a11.b(fVar2.b()).a();
     }
 
     private s4() {

@@ -12,19 +12,19 @@ public class k extends o {
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        final OutputConfiguration f47790a;
+        final OutputConfiguration f48358a;
 
         /* renamed from: b  reason: collision with root package name */
-        String f47791b;
+        String f48359b;
 
         /* renamed from: c  reason: collision with root package name */
-        boolean f47792c;
+        boolean f48360c;
 
         /* renamed from: d  reason: collision with root package name */
-        long f47793d = 1;
+        long f48361d = 1;
 
         a(OutputConfiguration outputConfiguration) {
-            this.f47790a = outputConfiguration;
+            this.f48358a = outputConfiguration;
         }
 
         public boolean equals(Object obj) {
@@ -32,7 +32,7 @@ public class k extends o {
                 return false;
             }
             a aVar = (a) obj;
-            if (!Objects.equals(this.f47790a, aVar.f47790a) || this.f47792c != aVar.f47792c || this.f47793d != aVar.f47793d || !Objects.equals(this.f47791b, aVar.f47791b)) {
+            if (!Objects.equals(this.f48358a, aVar.f48358a) || this.f48360c != aVar.f48360c || this.f48361d != aVar.f48361d || !Objects.equals(this.f48359b, aVar.f48359b)) {
                 return false;
             }
             return true;
@@ -40,17 +40,17 @@ public class k extends o {
 
         public int hashCode() {
             int hashCode;
-            int hashCode2 = this.f47790a.hashCode() ^ 31;
-            int i10 = (this.f47792c ? 1 : 0) ^ ((hashCode2 << 5) - hashCode2);
+            int hashCode2 = this.f48358a.hashCode() ^ 31;
+            int i10 = (this.f48360c ? 1 : 0) ^ ((hashCode2 << 5) - hashCode2);
             int i11 = (i10 << 5) - i10;
-            String str = this.f47791b;
+            String str = this.f48359b;
             if (str == null) {
                 hashCode = 0;
             } else {
                 hashCode = str.hashCode();
             }
             int i12 = hashCode ^ i11;
-            return Long.hashCode(this.f47793d) ^ ((i12 << 5) - i12);
+            return Long.hashCode(this.f48361d) ^ ((i12 << 5) - i12);
         }
     }
 
@@ -66,22 +66,22 @@ public class k extends o {
 
     @Override // s.j.a
     public void c(long j10) {
-        ((a) this.f47799a).f47793d = j10;
+        ((a) this.f48367a).f48361d = j10;
     }
 
     @Override // s.j.a
     public void d(String str) {
-        ((a) this.f47799a).f47791b = str;
+        ((a) this.f48367a).f48359b = str;
     }
 
     @Override // s.j.a
     public String e() {
-        return ((a) this.f47799a).f47791b;
+        return ((a) this.f48367a).f48359b;
     }
 
     @Override // s.j.a
     public void f() {
-        ((a) this.f47799a).f47792c = true;
+        ((a) this.f48367a).f48360c = true;
     }
 
     @Override // s.o, s.j.a
@@ -91,13 +91,13 @@ public class k extends o {
 
     @Override // s.j.a
     public Object h() {
-        b2.e.a(this.f47799a instanceof a);
-        return ((a) this.f47799a).f47790a;
+        b2.e.a(this.f48367a instanceof a);
+        return ((a) this.f48367a).f48358a;
     }
 
     @Override // s.o
     boolean i() {
-        return ((a) this.f47799a).f47792c;
+        return ((a) this.f48367a).f48360c;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */

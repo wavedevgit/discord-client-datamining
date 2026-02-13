@@ -45,15 +45,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/activity_status/ActivityStatusDescriptiveTextExperiment.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Environment: var1
-        _fun68691: for (var _fun68691_ip = 0;;) switch (_fun68691_ip) {
+        _fun62608: for (var _fun62608_ip = 0;;) switch (_fun62608_ip) {
             case 0:
                 var1 = arg0;
                 var0 = var1.location;
                 var4 = var1.autoTrackExposure;
                 var1 = undefined;
                 if (!(var4 === var1)) {
-                    _fun68691_ip = 22;
-                    continue _fun68691
+                    _fun62608_ip = 22;
+                    continue _fun62608
                 }
             case 20:
                 var4 = true;
@@ -70,4 +70,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useActivityStatusDescriptiveTextExperiment = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3117, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3120, 2]);

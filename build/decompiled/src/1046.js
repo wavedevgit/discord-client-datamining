@@ -1,59 +1,42 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var1 = exports;
-    var2 = global;
-    var6 = var2.Object;
-    var5 = var6.defineProperty;
-    var3 = var2.Symbol;
-    var4 = var3.toStringTag;
-    var3 = {};
-    var7 = 'Module';
-    var3.value = var7;
-    var3 = var5.bind(var6)(var1, var4, var3);
-    var2 = var2.WeakMap;
-    var3 = var2.prototype;
-    var3 = Object.create(var3, {
-        constructor: {
-            value: var2
-        }
-    });
-    var11 = var3;
-    var2 = new var11[var2](var10);
-    var2 = var2 instanceof Object ? var2 : var3;
-    var _closure1_slot0 = var2;
-    var0 = function arg0, arg1() {
-        _fun10786: for (var _fun10786_ip = 0;;) switch (_fun10786_ip) {
-            case 0:
-                var2 = arg0;
-                var1 = arg1;
-                var4 = _closure1_slot0;
-                var3 = var4.get;
-                var3 = var3.bind(var4)(var2);
-                if (var3) {
-                    _fun10786_ip = 61;
-                    continue _fun10786
-                }
-            case 26:
-                var4 = _closure1_slot0;
-                var3 = var4.set;
-                var5 = var1.prototype;
-                var5 = Object.create(var5, {
-                    constructor: {
-                        value: var1
+    var0 = global;
+    var4 = var0.Object;
+    var3 = var4.defineProperty;
+    var0 = var0.Symbol;
+    var2 = var0.toStringTag;
+    var0 = {};
+    var5 = 'Module';
+    var0.value = var5;
+    var0 = var3.bind(var4)(var1, var2, var0);
+    var0 = function arg0() {
+        var1 = arg0;
+        var _closure2_slot0 = var1;
+        var1 = false;
+        var _closure2_slot1 = var1;
+        var0 = function() { // Environment: var0
+            _fun10789: for (var _fun10789_ip = 0;;) switch (_fun10789_ip) {
+                case 0:
+                    var0 = _closure2_slot1;
+                    if (var0) {
+                        _fun10789_ip = 26;
+                        continue _fun10789
                     }
-                });
-                var8 = var5;
-                var1 = new var8[var1](var7);
-                var1 = var1 instanceof Object ? var1 : var5;
-                var1 = var3.bind(var4)(var2, var1);
-            case 61:
-                var1 = _closure1_slot0;
-                var0 = var1.get;
-                var0 = var0.bind(var1)(var2);
-                return var0;
-        }
+                case 10:
+                    var2 = _closure2_slot0;
+                    var0 = undefined;
+                    var0 = var2.bind(var0)();
+                    var0 = true;
+                    _closure2_slot1 = var0;
+                case 26:
+                    var0 = undefined;
+                    return var0;
+            }
+        };
+        return var0;
     };
-    var1.initUnique = var0;
+    var1.runOnce = var0;
     var0 = undefined;
     return var0;
 })(undefined, undefined, undefined, undefined, undefined, undefined, []);

@@ -49,13 +49,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2 = undefined;
             var1 = function*() { // Environment: var0
                 var0 = function*() { // Original name: ?anon_0_, environment: var0
-                    _fun80889: for (var _fun80889_ip = 0;;) switch (_fun80889_ip) {
+                    _fun81787: for (var _fun81787_ip = 0;;) switch (_fun81787_ip) {
                         case 0:
                             StartGenerator();
                             ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
                             if (var1) {
-                                _fun80889_ip = 236;
-                                continue _fun80889
+                                _fun81787_ip = 236;
+                                continue _fun81787
                             }
                         case 10: // try_start_0
                             var4 = _closure1_slot0;
@@ -72,8 +72,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         case 49:
                             ResumeGenerator(result_out_reg = 1, return_bool_out_reg = 4);
                             if (var4) {
-                                _fun80889_ip = 112;
-                                continue _fun80889
+                                _fun81787_ip = 112;
+                                continue _fun81787
                             }
                         case 55:
                             var4 = _closure1_slot0;
@@ -227,4 +227,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = 'settings-age-group-reset';
     var2.SETTINGS_AGE_GROUP_RESET_ALERT_ID = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 33, 1469, 10228, 4024, 3149, 1234, 4022, 2374, 4022, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 33, 1469, 10380, 4024, 3152, 1235, 4022, 2377, 4022, 2]);

@@ -3,7 +3,7 @@ package xg;
 import android.os.Parcel;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.common.api.Status;
-/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 public abstract class e extends gg.b implements f {
     public e() {
         super("com.google.android.gms.signin.internal.ISignInCallbacks");

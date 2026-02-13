@@ -2,7 +2,7 @@ package kotlin.reflect;
 
 import java.util.List;
 import java.util.Map;
-/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public interface KCallable extends b {
     Object call(Object... objArr);
 

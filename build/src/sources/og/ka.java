@@ -5,7 +5,7 @@ import bj.c;
 final class ka implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final ka f39414a = new ka();
+    static final ka f39982a = new ka();
 
     static {
         c.b a10 = bj.c.a("maxLabels");

@@ -5,7 +5,7 @@ import bj.c;
 final class y5 implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final y5 f47365a = new y5();
+    static final y5 f47933a = new y5();
 
     static {
         c.b a10 = bj.c.a("maxResults");

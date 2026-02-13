@@ -3,15 +3,15 @@ package io.sentry;
 public final class z1 implements h1 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final k7 f30301a;
+    private final k7 f30869a;
 
     public z1(k7 k7Var) {
-        this.f30301a = k7Var;
+        this.f30869a = k7Var;
     }
 
     @Override // io.sentry.h1
     public boolean a() {
         io.sentry.internal.a.a().b();
-        return u6.d().c(this.f30301a.getFatalLogger());
+        return u6.d().c(this.f30869a.getFatalLogger());
     }
 }

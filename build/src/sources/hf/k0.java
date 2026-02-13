@@ -8,31 +8,31 @@ import java.util.concurrent.TimeUnit;
 final class k0 implements g.a {
 
     /* renamed from: a  reason: collision with root package name */
-    final /* synthetic */ ff.g f27273a;
+    final /* synthetic */ ff.g f27841a;
 
     /* renamed from: b  reason: collision with root package name */
-    final /* synthetic */ zg.k f27274b;
+    final /* synthetic */ zg.k f27842b;
 
     /* renamed from: c  reason: collision with root package name */
-    final /* synthetic */ p.a f27275c;
+    final /* synthetic */ p.a f27843c;
 
     /* renamed from: d  reason: collision with root package name */
-    final /* synthetic */ m0 f27276d;
+    final /* synthetic */ m0 f27844d;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public k0(ff.g gVar, zg.k kVar, p.a aVar, m0 m0Var) {
-        this.f27273a = gVar;
-        this.f27274b = kVar;
-        this.f27275c = aVar;
-        this.f27276d = m0Var;
+        this.f27841a = gVar;
+        this.f27842b = kVar;
+        this.f27843c = aVar;
+        this.f27844d = m0Var;
     }
 
     @Override // ff.g.a
     public final void a(Status status) {
         if (status.g()) {
-            this.f27274b.c(this.f27275c.a(this.f27273a.await(0L, TimeUnit.MILLISECONDS)));
+            this.f27842b.c(this.f27843c.a(this.f27841a.await(0L, TimeUnit.MILLISECONDS)));
             return;
         }
-        this.f27274b.b(b.a(status));
+        this.f27842b.b(b.a(status));
     }
 }

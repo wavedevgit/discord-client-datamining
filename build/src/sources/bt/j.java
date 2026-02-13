@@ -50,12 +50,12 @@ public abstract /* synthetic */ class j {
                     return f10;
                 }
             }
-            return Unit.f31988a;
+            return Unit.f32556a;
         }
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((a) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
+            return ((a) create(coroutineScope, continuation)).invokeSuspend(Unit.f32556a);
         }
     }
 
@@ -64,7 +64,7 @@ public abstract /* synthetic */ class j {
         if (collect == gs.b.f()) {
             return collect;
         }
-        return Unit.f31988a;
+        return Unit.f32556a;
     }
 
     public static final Object b(Flow flow, Function2 function2, Continuation continuation) {
@@ -74,7 +74,7 @@ public abstract /* synthetic */ class j {
         if (h10 == gs.b.f()) {
             return h10;
         }
-        return Unit.f31988a;
+        return Unit.f32556a;
     }
 
     public static final Object c(FlowCollector flowCollector, Flow flow, Continuation continuation) {
@@ -83,7 +83,7 @@ public abstract /* synthetic */ class j {
         if (collect == gs.b.f()) {
             return collect;
         }
-        return Unit.f31988a;
+        return Unit.f32556a;
     }
 
     public static final Job d(Flow flow, CoroutineScope coroutineScope) {

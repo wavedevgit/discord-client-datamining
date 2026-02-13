@@ -15,9 +15,9 @@ public abstract class a {
         Intrinsics.checkNotNullParameter(buffer, "<this>");
         Intrinsics.checkNotNullParameter(unsafeCursor, "unsafeCursor");
         Buffer.a g10 = okio.b.g(unsafeCursor);
-        if (g10.f40583d == null) {
-            g10.f40583d = buffer;
-            g10.f40584e = true;
+        if (g10.f41151d == null) {
+            g10.f41151d = buffer;
+            g10.f41152e = true;
             return g10;
         }
         throw new IllegalStateException("already attached to a buffer");
@@ -74,7 +74,7 @@ public abstract class a {
         int i13;
         Intrinsics.checkNotNullParameter(buffer, "<this>");
         Intrinsics.checkNotNullParameter(options, "options");
-        g0 g0Var2 = buffer.f40581d;
+        g0 g0Var2 = buffer.f41149d;
         if (g0Var2 == null) {
             if (z10) {
                 return -2;

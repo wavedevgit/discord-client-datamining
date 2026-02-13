@@ -53,21 +53,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getMobileStatusContainerRect = var3;
     var1 = function arg0() {
-        _fun49632: for (var _fun49632_ip = 0;;) switch (_fun49632_ip) {
+        _fun49739: for (var _fun49739_ip = 0;;) switch (_fun49739_ip) {
             case 0:
                 var2 = arg0;
                 var1 = _closure1_slot1;
                 var1 = var1.SMALL;
                 if (!(var1 !== var2)) {
-                    _fun49632_ip = 54;
-                    continue _fun49632
+                    _fun49739_ip = 54;
+                    continue _fun49739
                 }
             case 20:
                 var1 = _closure1_slot1;
                 var1 = var1.XSMALL;
                 if (!(var1 !== var2)) {
-                    _fun49632_ip = 54;
-                    continue _fun49632
+                    _fun49739_ip = 54;
+                    continue _fun49739
                 }
             case 34:
                 var0 = _closure1_slot1;
@@ -75,8 +75,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = 28;
                 var1 = 6;
                 if (!(var0 === var2)) {
-                    _fun49632_ip = 60;
-                    continue _fun49632
+                    _fun49739_ip = 60;
+                    continue _fun49739
                 }
             case 54:
                 var5 = 22;

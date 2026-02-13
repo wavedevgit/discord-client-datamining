@@ -3,16 +3,16 @@ package ig;
 final class f extends h0 {
 
     /* renamed from: i  reason: collision with root package name */
-    private final i f27951i;
+    private final i f28519i;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public f(i iVar, int i10) {
         super(iVar.size(), i10);
-        this.f27951i = iVar;
+        this.f28519i = iVar;
     }
 
     @Override // ig.h0
     protected final Object a(int i10) {
-        return this.f27951i.get(i10);
+        return this.f28519i.get(i10);
     }
 }

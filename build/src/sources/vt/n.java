@@ -5,19 +5,19 @@ import kotlin.jvm.internal.Intrinsics;
 public final class n extends m {
 
     /* renamed from: c  reason: collision with root package name */
-    private final boolean f51926c;
+    private final boolean f52494c;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public n(z writer, boolean z10) {
         super(writer);
         Intrinsics.checkNotNullParameter(writer, "writer");
-        this.f51926c = z10;
+        this.f52494c = z10;
     }
 
     @Override // vt.m
     public void n(String value) {
         Intrinsics.checkNotNullParameter(value, "value");
-        if (this.f51926c) {
+        if (this.f52494c) {
             super.n(value);
         } else {
             super.k(value);

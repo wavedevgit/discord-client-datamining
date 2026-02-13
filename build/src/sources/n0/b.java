@@ -29,50 +29,50 @@ import x.y0;
 public class b {
 
     /* renamed from: h  reason: collision with root package name */
-    private static final double f36679h = Math.sqrt(2.3703703703703702d);
+    private static final double f37247h = Math.sqrt(2.3703703703703702d);
 
     /* renamed from: a  reason: collision with root package name */
-    private final Size f36680a;
+    private final Size f37248a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Rational f36681b;
+    private final Rational f37249b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Rational f36682c;
+    private final Rational f37250c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Set f36683d;
+    private final Set f37251d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final e0.k f36684e;
+    private final e0.k f37252e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final d0 f36685f;
+    private final d0 f37253f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final Map f36686g;
+    private final Map f37254g;
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static class a implements Comparator {
 
         /* renamed from: d  reason: collision with root package name */
-        private final Rational f36687d;
+        private final Rational f37255d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final boolean f36688e;
+        private final boolean f37256e;
 
         a(Rational rational, boolean z10) {
-            this.f36687d = rational;
-            this.f36688e = z10;
+            this.f37255d = rational;
+            this.f37256e = z10;
         }
 
         @Override // java.util.Comparator
         /* renamed from: a */
         public int compare(Rational rational, Rational rational2) {
-            float c10 = b.c(rational, this.f36687d);
-            float c11 = b.c(rational2, this.f36687d);
-            if (this.f36688e) {
+            float c10 = b.c(rational, this.f37255d);
+            float c11 = b.c(rational2, this.f37255d);
+            if (this.f37256e) {
                 return Float.compare(c11, c10);
             }
             return Float.compare(c10, c11);
@@ -95,8 +95,8 @@ public class b {
     }
 
     private boolean B(Rational rational, Size size) {
-        if (!this.f36681b.equals(rational) && !b0.a.a(size, rational)) {
-            return b(this.f36681b.floatValue(), rational.floatValue(), N(size).floatValue());
+        if (!this.f37249b.equals(rational) && !b0.a.a(size, rational)) {
+            return b(this.f37249b.floatValue(), rational.floatValue(), N(size).floatValue());
         }
         return false;
     }
@@ -107,7 +107,7 @@ public class b {
 
     private boolean D() {
         for (Size size : l()) {
-            if (!b0.a.a(size, this.f36682c)) {
+            if (!b0.a.a(size, this.f37250c)) {
                 return true;
             }
         }
@@ -143,9 +143,9 @@ public class b {
     private List H(List list) {
         ArrayList arrayList = new ArrayList();
         if (D()) {
-            arrayList.addAll(I(this.f36681b, list, false));
+            arrayList.addAll(I(this.f37249b, list, false));
         }
-        arrayList.addAll(I(this.f36682c, list, false));
+        arrayList.addAll(I(this.f37250c, list, false));
         arrayList.addAll(G(list, false));
         if (arrayList.isEmpty()) {
             y0.l("ResolutionsMerger", "Failed to find a parent resolution that does not result in double-cropping, this might due to camera not supporting 4:3 and 16:9resolutions or a strict ResolutionSelector settings. Starting resolution selection process with resolutions that might have a smaller FOV.");
@@ -159,7 +159,7 @@ public class b {
         List<Size> g10 = g(rational, list);
         L(g10);
         HashSet hashSet = new HashSet(g10);
-        for (x2 x2Var : this.f36683d) {
+        for (x2 x2Var : this.f37251d) {
             List v10 = v(x2Var);
             if (!z10) {
                 v10 = d(rational, v10);
@@ -182,7 +182,7 @@ public class b {
     private boolean J() {
         boolean z10;
         m0.c o10;
-        Iterator it = this.f36683d.iterator();
+        Iterator it = this.f37251d.iterator();
         while (true) {
             z10 = false;
             if (!it.hasNext()) {
@@ -200,7 +200,7 @@ public class b {
     }
 
     private void K(List list) {
-        Collections.sort(list, new a(M(this.f36680a), true));
+        Collections.sort(list, new a(M(this.f37248a), true));
     }
 
     static void L(List list) {
@@ -326,18 +326,18 @@ public class b {
     }
 
     private static Rational h(Size size) {
-        if (size.getWidth() / size.getHeight() > f36679h) {
+        if (size.getWidth() / size.getHeight() > f37247h) {
             return b0.a.f6340c;
         }
         return b0.a.f6338a;
     }
 
     private List i() {
-        return this.f36685f.d(34);
+        return this.f37253f.d(34);
     }
 
     private List j() {
-        return this.f36685f.f(34);
+        return this.f37253f.f(34);
     }
 
     private static Rect k(Rational rational, Size size) {
@@ -369,7 +369,7 @@ public class b {
 
     private Set l() {
         HashSet hashSet = new HashSet();
-        for (x2 x2Var : this.f36683d) {
+        for (x2 x2Var : this.f37251d) {
             hashSet.addAll(v(x2Var));
         }
         return hashSet;
@@ -426,14 +426,14 @@ public class b {
     }
 
     private List v(x2 x2Var) {
-        if (this.f36683d.contains(x2Var)) {
-            if (this.f36686g.containsKey(x2Var)) {
-                List list = (List) this.f36686g.get(x2Var);
+        if (this.f37251d.contains(x2Var)) {
+            if (this.f37254g.containsKey(x2Var)) {
+                List list = (List) this.f37254g.get(x2Var);
                 Objects.requireNonNull(list);
                 return list;
             }
-            List e10 = e(this.f36684e.m(x2Var));
-            this.f36686g.put(x2Var, e10);
+            List e10 = e(this.f37252e.m(x2Var));
+            this.f37254g.put(x2Var, e10);
             return e10;
         }
         throw new IllegalArgumentException("Invalid child config: " + x2Var);
@@ -570,13 +570,13 @@ public class b {
     }
 
     b(Size size, d0 d0Var, Set set, e0.k kVar) {
-        this.f36686g = new HashMap();
-        this.f36680a = size;
+        this.f37254g = new HashMap();
+        this.f37248a = size;
         Rational u10 = u(size);
-        this.f36681b = u10;
-        this.f36682c = n(u10);
-        this.f36685f = d0Var;
-        this.f36683d = set;
-        this.f36684e = kVar;
+        this.f37249b = u10;
+        this.f37250c = n(u10);
+        this.f37253f = d0Var;
+        this.f37251d = set;
+        this.f37252e = kVar;
     }
 }

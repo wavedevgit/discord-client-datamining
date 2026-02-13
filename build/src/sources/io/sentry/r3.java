@@ -7,28 +7,28 @@ import java.util.concurrent.ConcurrentHashMap;
 public final class r3 implements w1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private String f29859d;
+    private String f30427d;
 
     /* renamed from: e  reason: collision with root package name */
-    private String f29860e;
+    private String f30428e;
 
     /* renamed from: i  reason: collision with root package name */
-    private String f29861i;
+    private String f30429i;
 
     /* renamed from: o  reason: collision with root package name */
-    private Long f29862o;
+    private Long f30430o;
 
     /* renamed from: p  reason: collision with root package name */
-    private Long f29863p;
+    private Long f30431p;
 
     /* renamed from: q  reason: collision with root package name */
-    private Long f29864q;
+    private Long f30432q;
 
     /* renamed from: r  reason: collision with root package name */
-    private Long f29865r;
+    private Long f30433r;
 
     /* renamed from: s  reason: collision with root package name */
-    private Map f29866s;
+    private Map f30434s;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements m1 {
@@ -92,7 +92,7 @@ public final class r3 implements w1 {
                         if (n12 == null) {
                             break;
                         } else {
-                            r3Var.f29862o = n12;
+                            r3Var.f30430o = n12;
                             break;
                         }
                     case 1:
@@ -100,7 +100,7 @@ public final class r3 implements w1 {
                         if (n13 == null) {
                             break;
                         } else {
-                            r3Var.f29863p = n13;
+                            r3Var.f30431p = n13;
                             break;
                         }
                     case 2:
@@ -108,7 +108,7 @@ public final class r3 implements w1 {
                         if (r12 == null) {
                             break;
                         } else {
-                            r3Var.f29859d = r12;
+                            r3Var.f30427d = r12;
                             break;
                         }
                     case 3:
@@ -116,7 +116,7 @@ public final class r3 implements w1 {
                         if (r13 == null) {
                             break;
                         } else {
-                            r3Var.f29861i = r13;
+                            r3Var.f30429i = r13;
                             break;
                         }
                     case 4:
@@ -124,7 +124,7 @@ public final class r3 implements w1 {
                         if (r14 == null) {
                             break;
                         } else {
-                            r3Var.f29860e = r14;
+                            r3Var.f30428e = r14;
                             break;
                         }
                     case 5:
@@ -132,7 +132,7 @@ public final class r3 implements w1 {
                         if (n14 == null) {
                             break;
                         } else {
-                            r3Var.f29865r = n14;
+                            r3Var.f30433r = n14;
                             break;
                         }
                     case 6:
@@ -140,7 +140,7 @@ public final class r3 implements w1 {
                         if (n15 == null) {
                             break;
                         } else {
-                            r3Var.f29864q = n15;
+                            r3Var.f30432q = n15;
                             break;
                         }
                     default:
@@ -167,7 +167,7 @@ public final class r3 implements w1 {
         }
         if (obj != null && r3.class == obj.getClass()) {
             r3 r3Var = (r3) obj;
-            if (this.f29859d.equals(r3Var.f29859d) && this.f29860e.equals(r3Var.f29860e) && this.f29861i.equals(r3Var.f29861i) && this.f29862o.equals(r3Var.f29862o) && this.f29864q.equals(r3Var.f29864q) && io.sentry.util.y.a(this.f29865r, r3Var.f29865r) && io.sentry.util.y.a(this.f29863p, r3Var.f29863p) && io.sentry.util.y.a(this.f29866s, r3Var.f29866s)) {
+            if (this.f30427d.equals(r3Var.f30427d) && this.f30428e.equals(r3Var.f30428e) && this.f30429i.equals(r3Var.f30429i) && this.f30430o.equals(r3Var.f30430o) && this.f30432q.equals(r3Var.f30432q) && io.sentry.util.y.a(this.f30433r, r3Var.f30433r) && io.sentry.util.y.a(this.f30431p, r3Var.f30431p) && io.sentry.util.y.a(this.f30434s, r3Var.f30434s)) {
                 return true;
             }
         }
@@ -175,48 +175,48 @@ public final class r3 implements w1 {
     }
 
     public String h() {
-        return this.f29859d;
+        return this.f30427d;
     }
 
     public int hashCode() {
-        return io.sentry.util.y.b(this.f29859d, this.f29860e, this.f29861i, this.f29862o, this.f29863p, this.f29864q, this.f29865r, this.f29866s);
+        return io.sentry.util.y.b(this.f30427d, this.f30428e, this.f30429i, this.f30430o, this.f30431p, this.f30432q, this.f30433r, this.f30434s);
     }
 
     public String i() {
-        return this.f29861i;
+        return this.f30429i;
     }
 
     public String j() {
-        return this.f29860e;
+        return this.f30428e;
     }
 
     public void k(Long l10, Long l11, Long l12, Long l13) {
-        if (this.f29863p == null) {
-            this.f29863p = Long.valueOf(l10.longValue() - l11.longValue());
-            this.f29862o = Long.valueOf(this.f29862o.longValue() - l11.longValue());
-            this.f29865r = Long.valueOf(l12.longValue() - l13.longValue());
-            this.f29864q = Long.valueOf(this.f29864q.longValue() - l13.longValue());
+        if (this.f30431p == null) {
+            this.f30431p = Long.valueOf(l10.longValue() - l11.longValue());
+            this.f30430o = Long.valueOf(this.f30430o.longValue() - l11.longValue());
+            this.f30433r = Long.valueOf(l12.longValue() - l13.longValue());
+            this.f30432q = Long.valueOf(this.f30432q.longValue() - l13.longValue());
         }
     }
 
     public void l(Map map) {
-        this.f29866s = map;
+        this.f30434s = map;
     }
 
     @Override // io.sentry.w1
     public void serialize(f3 f3Var, ILogger iLogger) {
         f3Var.u();
-        f3Var.e(StackTraceHelper.ID_KEY).j(iLogger, this.f29859d);
-        f3Var.e("trace_id").j(iLogger, this.f29860e);
-        f3Var.e(StackTraceHelper.NAME_KEY).j(iLogger, this.f29861i);
-        f3Var.e("relative_start_ns").j(iLogger, this.f29862o);
-        f3Var.e("relative_end_ns").j(iLogger, this.f29863p);
-        f3Var.e("relative_cpu_start_ms").j(iLogger, this.f29864q);
-        f3Var.e("relative_cpu_end_ms").j(iLogger, this.f29865r);
-        Map map = this.f29866s;
+        f3Var.e(StackTraceHelper.ID_KEY).j(iLogger, this.f30427d);
+        f3Var.e("trace_id").j(iLogger, this.f30428e);
+        f3Var.e(StackTraceHelper.NAME_KEY).j(iLogger, this.f30429i);
+        f3Var.e("relative_start_ns").j(iLogger, this.f30430o);
+        f3Var.e("relative_end_ns").j(iLogger, this.f30431p);
+        f3Var.e("relative_cpu_start_ms").j(iLogger, this.f30432q);
+        f3Var.e("relative_cpu_end_ms").j(iLogger, this.f30433r);
+        Map map = this.f30434s;
         if (map != null) {
             for (String str : map.keySet()) {
-                Object obj = this.f29866s.get(str);
+                Object obj = this.f30434s.get(str);
                 f3Var.e(str);
                 f3Var.j(iLogger, obj);
             }
@@ -225,10 +225,10 @@ public final class r3 implements w1 {
     }
 
     public r3(e1 e1Var, Long l10, Long l11) {
-        this.f29859d = e1Var.f().toString();
-        this.f29860e = e1Var.q().p().toString();
-        this.f29861i = e1Var.getName().isEmpty() ? "unknown" : e1Var.getName();
-        this.f29862o = l10;
-        this.f29864q = l11;
+        this.f30427d = e1Var.f().toString();
+        this.f30428e = e1Var.q().p().toString();
+        this.f30429i = e1Var.getName().isEmpty() ? "unknown" : e1Var.getName();
+        this.f30430o = l10;
+        this.f30432q = l11;
     }
 }

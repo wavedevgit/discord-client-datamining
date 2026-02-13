@@ -7,34 +7,34 @@ import kotlin.enums.EnumEntries;
 public final class h {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final h f54344d = new h("MEMORY_CACHE", 0);
+    public static final h f54912d = new h("MEMORY_CACHE", 0);
 
     /* renamed from: e  reason: collision with root package name */
-    public static final h f54345e = new h("MEMORY", 1);
+    public static final h f54913e = new h("MEMORY", 1);
 
     /* renamed from: i  reason: collision with root package name */
-    public static final h f54346i = new h("DISK", 2);
+    public static final h f54914i = new h("DISK", 2);
 
     /* renamed from: o  reason: collision with root package name */
-    public static final h f54347o = new h("NETWORK", 3);
+    public static final h f54915o = new h("NETWORK", 3);
 
     /* renamed from: p  reason: collision with root package name */
-    private static final /* synthetic */ h[] f54348p;
+    private static final /* synthetic */ h[] f54916p;
 
     /* renamed from: q  reason: collision with root package name */
-    private static final /* synthetic */ EnumEntries f54349q;
+    private static final /* synthetic */ EnumEntries f54917q;
 
     static {
         h[] a10 = a();
-        f54348p = a10;
-        f54349q = hs.a.a(a10);
+        f54916p = a10;
+        f54917q = hs.a.a(a10);
     }
 
     private h(String str, int i10) {
     }
 
     private static final /* synthetic */ h[] a() {
-        return new h[]{f54344d, f54345e, f54346i, f54347o};
+        return new h[]{f54912d, f54913e, f54914i, f54915o};
     }
 
     public static h valueOf(String str) {
@@ -42,6 +42,6 @@ public final class h {
     }
 
     public static h[] values() {
-        return (h[]) f54348p.clone();
+        return (h[]) f54916p.clone();
     }
 }

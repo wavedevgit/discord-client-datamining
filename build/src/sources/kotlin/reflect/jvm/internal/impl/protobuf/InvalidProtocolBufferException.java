@@ -5,11 +5,11 @@ import java.io.IOException;
 public class InvalidProtocolBufferException extends IOException {
 
     /* renamed from: d  reason: collision with root package name */
-    private MessageLite f33936d;
+    private MessageLite f34504d;
 
     public InvalidProtocolBufferException(String str) {
         super(str);
-        this.f33936d = null;
+        this.f34504d = null;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -58,11 +58,11 @@ public class InvalidProtocolBufferException extends IOException {
     }
 
     public MessageLite getUnfinishedMessage() {
-        return this.f33936d;
+        return this.f34504d;
     }
 
     public InvalidProtocolBufferException setUnfinishedMessage(MessageLite messageLite) {
-        this.f33936d = messageLite;
+        this.f34504d = messageLite;
         return this;
     }
 }

@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/age_gate/useIsNsfwGated.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun62500: for (var _fun62500_ip = 0;;) switch (_fun62500_ip) {
+        _fun71715: for (var _fun71715_ip = 0;;) switch (_fun71715_ip) {
             case 0:
                 var0 = arg0;
                 var _closure2_slot0 = var0;
@@ -47,7 +47,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = new Array(1);
                 var8[0] = var2;
                 var2 = function() { // Environment: var1
-                    _fun62501: for (var _fun62501_ip = 0;;) switch (_fun62501_ip) {
+                    _fun71716: for (var _fun71716_ip = 0;;) switch (_fun71716_ip) {
                         case 0:
                             var1 = _closure1_slot3;
                             var0 = var1.getCurrentUser;
@@ -56,8 +56,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var2 = var0 == var1;
                             var0 = undefined;
                             if (var2) {
-                                _fun62501_ip = 33;
-                                continue _fun62501
+                                _fun71716_ip = 33;
+                                continue _fun71716
                             }
                         case 27:
                             var0 = var1.nsfwAllowed;
@@ -85,19 +85,19 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var4.bind(var5)(var3, var1);
                 var1 = !var1;
                 if (!var0) {
-                    _fun62500_ip = 126;
-                    continue _fun62500
+                    _fun71715_ip = 130;
+                    continue _fun71715
                 }
-            case 117:
+            case 121:
                 if (var1) {
-                    _fun62500_ip = 123;
-                    continue _fun62500
+                    _fun71715_ip = 127;
+                    continue _fun71715
                 }
-            case 120:
+            case 124:
                 var1 = var2;
-            case 123:
+            case 127:
                 var0 = var1;
-            case 126:
+            case 130:
                 return var0;
         }
     };

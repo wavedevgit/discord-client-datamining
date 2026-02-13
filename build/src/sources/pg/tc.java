@@ -6,19 +6,19 @@ import java.util.Map;
 final class tc extends pc {
 
     /* renamed from: i  reason: collision with root package name */
-    private final transient oc f42488i;
+    private final transient oc f43056i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final transient Object[] f42489o;
+    private final transient Object[] f43057o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final transient int f42490p;
+    private final transient int f43058p;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public tc(oc ocVar, Object[] objArr, int i10, int i11) {
-        this.f42488i = ocVar;
-        this.f42489o = objArr;
-        this.f42490p = i11;
+        this.f43056i = ocVar;
+        this.f43057o = objArr;
+        this.f43058p = i11;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -33,7 +33,7 @@ final class tc extends pc {
             Map.Entry entry = (Map.Entry) obj;
             Object key = entry.getKey();
             Object value = entry.getValue();
-            if (value != null && value.equals(this.f42488i.get(key))) {
+            if (value != null && value.equals(this.f43056i.get(key))) {
                 return true;
             }
         }
@@ -52,6 +52,6 @@ final class tc extends pc {
 
     @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
     public final int size() {
-        return this.f42490p;
+        return this.f43058p;
     }
 }

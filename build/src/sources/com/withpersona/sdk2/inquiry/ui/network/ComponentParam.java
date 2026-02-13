@@ -31,19 +31,19 @@ public abstract class ComponentParam implements Parcelable {
             static {
                 int[] iArr = new int[qp.a.values().length];
                 try {
-                    iArr[qp.a.f45529d.ordinal()] = 1;
+                    iArr[qp.a.f46097d.ordinal()] = 1;
                 } catch (NoSuchFieldError unused) {
                 }
                 try {
-                    iArr[qp.a.f45530e.ordinal()] = 2;
+                    iArr[qp.a.f46098e.ordinal()] = 2;
                 } catch (NoSuchFieldError unused2) {
                 }
                 try {
-                    iArr[qp.a.f45531i.ordinal()] = 3;
+                    iArr[qp.a.f46099i.ordinal()] = 3;
                 } catch (NoSuchFieldError unused3) {
                 }
                 try {
-                    iArr[qp.a.f45532o.ordinal()] = 4;
+                    iArr[qp.a.f46100o.ordinal()] = 4;
                 } catch (NoSuchFieldError unused4) {
                 }
                 f20797a = iArr;
@@ -165,7 +165,7 @@ public abstract class ComponentParam implements Parcelable {
                 writer.s();
             } else {
                 if (componentParam == null) {
-                    Unit unit = Unit.f31988a;
+                    Unit unit = Unit.f32556a;
                     return;
                 }
                 throw new p();

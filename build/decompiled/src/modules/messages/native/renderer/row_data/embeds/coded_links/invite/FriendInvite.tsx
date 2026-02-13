@@ -38,7 +38,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/messages/native/renderer/row_data/embeds/coded_links/invite/FriendInvite.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0, arg1, arg2, arg3() {
-        _fun93001: for (var _fun93001_ip = 0;;) switch (_fun93001_ip) {
+        _fun93027: for (var _fun93027_ip = 0;;) switch (_fun93027_ip) {
             case 0:
                 var2 = arg0;
                 var3 = _closure1_slot1;
@@ -63,14 +63,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.t;
                 var7 = arg1;
                 if (var7) {
-                    _fun93001_ip = 112;
-                    continue _fun93001
+                    _fun93027_ip = 112;
+                    continue _fun93027
                 }
             case 97:
                 var7 = var0.PYJHW6;
                 var16 = var3.bind(var6)(var7);
-                _fun93001_ip = 125;
-                continue _fun93001;
+                _fun93027_ip = 125;
+                continue _fun93027;
             case 112:
                 var0 = var0.eQyu1F;
                 var16 = var3.bind(var6)(var0);
@@ -81,21 +81,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = '';
                 var13 = var11;
                 if (!var0) {
-                    _fun93001_ip = 158;
-                    continue _fun93001
+                    _fun93027_ip = 159;
+                    continue _fun93027
                 }
             case 147:
                 var0 = var2.inviter;
                 var13 = var0.username;
-            case 158:
+            case 159:
                 var0 = var2.inviter;
                 var0 = var3 != var0;
                 var10 = var11;
                 if (!var0) {
-                    _fun93001_ip = 211;
-                    continue _fun93001
+                    _fun93027_ip = 212;
+                    continue _fun93027
                 }
-            case 174:
+            case 175:
                 var6 = _closure1_slot1;
                 var7 = _closure1_slot2;
                 var0 = 5;
@@ -104,36 +104,36 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var7.getUserTag;
                 var0 = var2.inviter;
                 var10 = var6.bind(var7)(var0);
-            case 211:
+            case 212:
                 var0 = var2.inviter;
                 var6 = var3 != var0;
                 if (!var6) {
-                    _fun93001_ip = 259;
-                    continue _fun93001
+                    _fun93027_ip = 260;
+                    continue _fun93027
                 }
-            case 224:
+            case 225:
                 var8 = _closure1_slot4;
                 var7 = var8.isFriend;
                 var9 = var2.inviter;
                 var14 = var3 == var9;
                 var0 = undefined;
                 if (var14) {
-                    _fun93001_ip = 254;
-                    continue _fun93001
+                    _fun93027_ip = 255;
+                    continue _fun93027
                 }
-            case 249:
+            case 250:
                 var0 = var9.id;
-            case 254:
+            case 255:
                 var6 = var7.bind(var8)(var0);
-            case 259:
+            case 260:
                 var0 = var2.inviter;
                 var0 = var3 != var0;
                 var9 = var11;
                 if (!var0) {
-                    _fun93001_ip = 332;
-                    continue _fun93001
+                    _fun93027_ip = 333;
+                    continue _fun93027
                 }
-            case 275:
+            case 276:
                 var8 = _closure1_slot3;
                 var7 = var8.resolveAssetSource;
                 var14 = _closure1_slot1;
@@ -146,23 +146,23 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var14.bind(var15)(var0);
                 var0 = var7.bind(var8)(var0);
                 var9 = var0.uri;
-            case 332:
+            case 333:
                 var0 = var2.inviter;
                 var8 = var3 == var0;
                 var7 = undefined;
                 if (var8) {
-                    _fun93001_ip = 352;
-                    continue _fun93001
+                    _fun93027_ip = 353;
+                    continue _fun93027
                 }
-            case 347:
+            case 348:
                 var7 = var0.id;
-            case 352:
+            case 353:
                 var0 = arg2;
                 if (!(var7 !== var0)) {
-                    _fun93001_ip = 459;
-                    continue _fun93001
+                    _fun93027_ip = 460;
+                    continue _fun93027
                 }
-            case 359:
+            case 360:
                 var17 = var4.acceptLabelGreenColor;
                 var15 = var4.acceptLabelGreenBackgroundColor;
                 var7 = _closure1_slot0;
@@ -175,26 +175,26 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var7.bind(var5)(var0);
                 var0 = var0.t;
                 if (var6) {
-                    _fun93001_ip = 436;
-                    continue _fun93001
+                    _fun93027_ip = 437;
+                    continue _fun93027
                 }
-            case 415:
+            case 416:
                 var6 = var0.ib7Ng1;
                 var14 = var18.bind(var19)(var6);
                 var7 = var17;
                 var8 = var15;
                 var6 = true;
-                _fun93001_ip = 525;
-                continue _fun93001;
-            case 436:
+                _fun93027_ip = 526;
+                continue _fun93027;
+            case 437:
                 var0 = var0.xhxnPn;
                 var14 = var18.bind(var19)(var0);
                 var6 = true;
                 var7 = var17;
                 var8 = var15;
-                _fun93001_ip = 525;
-                continue _fun93001;
-            case 459:
+                _fun93027_ip = 526;
+                continue _fun93027;
+            case 460:
                 var7 = var4.acceptLabelDisabledColor;
                 var8 = var4.acceptLabelDisabledBackgroundColor;
                 var20 = _closure1_slot0;
@@ -209,7 +209,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.ib7Ng1;
                 var14 = var18.bind(var19)(var0);
                 var6 = false;
-            case 525:
+            case 526:
                 var0 = {};
                 var23 = var0;
                 var22 = var12;
@@ -220,13 +220,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12 = var3 != var16;
                 var15 = undefined;
                 if (!var12) {
-                    _fun93001_ip = 568;
-                    continue _fun93001
+                    _fun93027_ip = 569;
+                    continue _fun93027
                 }
-            case 558:
+            case 559:
                 var12 = var16.toUpperCase;
                 var15 = var12.bind(var16)();
-            case 568:
+            case 569:
                 var12 = 'headerText';
                 var0[var12] = var15;
                 var15 = var4.headerColor;
@@ -244,24 +244,24 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13 = var3 != var9;
                 var12 = undefined;
                 if (!var13) {
-                    _fun93001_ip = 648;
-                    continue _fun93001
+                    _fun93027_ip = 649;
+                    continue _fun93027
                 }
-            case 645:
+            case 646:
                 var12 = var9;
-            case 648:
+            case 649:
                 var9 = 'thumbnailUrl';
                 var0[var9] = var12;
                 var9 = 'subtitle';
                 var0[var9] = var10;
                 var9 = undefined;
                 if (!(var11 !== var10)) {
-                    _fun93001_ip = 678;
-                    continue _fun93001
+                    _fun93027_ip = 679;
+                    continue _fun93027
                 }
-            case 672:
+            case 673:
                 var9 = var4.subtitleColor;
-            case 678:
+            case 679:
                 var4 = 'subtitleColor';
                 var0[var4] = var9;
                 var4 = 'acceptLabelBackgroundColor';
@@ -279,32 +279,32 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var3 == var6;
                 var4 = undefined;
                 if (var7) {
-                    _fun93001_ip = 761;
-                    continue _fun93001
+                    _fun93027_ip = 762;
+                    continue _fun93027
                 }
-            case 756:
+            case 757:
                 var4 = var6.name;
-            case 761:
+            case 762:
                 var6 = var3 != var4;
                 var5 = undefined;
                 if (!var6) {
-                    _fun93001_ip = 773;
-                    continue _fun93001
+                    _fun93027_ip = 774;
+                    continue _fun93027
                 }
-            case 770:
+            case 771:
                 var5 = var4;
-            case 773:
+            case 774:
                 var4 = 'channelName';
                 var0[var4] = var5;
                 var2 = var2.type;
                 if (!(var3 == var2)) {
-                    _fun93001_ip = 801;
-                    continue _fun93001
+                    _fun93027_ip = 802;
+                    continue _fun93027
                 }
-            case 791:
+            case 792:
                 var1 = _closure1_slot5;
                 var2 = var1.FRIEND;
-            case 801:
+            case 802:
                 var1 = 'type';
                 var0[var1] = var2;
                 return var0;
@@ -312,4 +312,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.createFriendInvite = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 3102, 3332, 10030, 1234, 3237, 1417, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 3105, 3335, 10107, 1235, 3240, 1417, 2]);

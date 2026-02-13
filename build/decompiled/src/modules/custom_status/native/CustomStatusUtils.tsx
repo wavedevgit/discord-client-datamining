@@ -24,7 +24,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/custom_status/native/CustomStatusUtils.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Environment: var1
-        _fun57852: for (var _fun57852_ip = 0;;) switch (_fun57852_ip) {
+        _fun57908: for (var _fun57908_ip = 0;;) switch (_fun57908_ip) {
             case 0:
                 var0 = arg0;
                 var9 = var0.location;
@@ -56,8 +56,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var1.bind(var6)();
                 var1 = undefined;
                 if (!var6) {
-                    _fun57852_ip = 141;
-                    continue _fun57852
+                    _fun57908_ip = 141;
+                    continue _fun57908
                 }
             case 127:
                 var6 = {};
@@ -76,4 +76,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.openEditCustomStatusModal = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [4567, 7077, 1307, 478, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [4567, 7065, 1307, 478, 2]);

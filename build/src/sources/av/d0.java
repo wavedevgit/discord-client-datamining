@@ -32,7 +32,7 @@ public final class d0 implements Source {
         this.f6229d = upstream;
         Buffer f10 = upstream.f();
         this.f6230e = f10;
-        g0 g0Var = f10.f40581d;
+        g0 g0Var = f10.f41149d;
         this.f6231i = g0Var;
         if (g0Var != null) {
             i10 = g0Var.f6263b;
@@ -68,7 +68,7 @@ public final class d0 implements Source {
             av.g0 r3 = r8.f6231i
             if (r3 == 0) goto L2b
             okio.Buffer r4 = r8.f6230e
-            av.g0 r4 = r4.f40581d
+            av.g0 r4 = r4.f41149d
             if (r3 != r4) goto L23
             int r3 = r8.f6232o
             kotlin.jvm.internal.Intrinsics.checkNotNull(r4)
@@ -96,7 +96,7 @@ public final class d0 implements Source {
             av.g0 r0 = r8.f6231i
             if (r0 != 0) goto L51
             okio.Buffer r0 = r8.f6230e
-            av.g0 r0 = r0.f40581d
+            av.g0 r0 = r0.f41149d
             if (r0 == 0) goto L51
             r8.f6231i = r0
             kotlin.jvm.internal.Intrinsics.checkNotNull(r0)

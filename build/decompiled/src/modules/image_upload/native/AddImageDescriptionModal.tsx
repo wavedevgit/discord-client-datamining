@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
     var0 = function arg0() {
-        _fun70679: for (var _fun70679_ip = 0;;) switch (_fun70679_ip) {
+        _fun76335: for (var _fun76335_ip = 0;;) switch (_fun76335_ip) {
             case 0:
                 var1 = arg0;
                 var20 = var1.source;
@@ -59,28 +59,28 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = 1;
                 var25 = var2;
                 if (!var7) {
-                    _fun70679_ip = 192;
-                    continue _fun70679
+                    _fun76335_ip = 192;
+                    continue _fun76335
                 }
             case 162:
                 var7 = var4 != var1;
                 var25 = var2;
                 if (!var7) {
-                    _fun70679_ip = 192;
-                    continue _fun70679
+                    _fun76335_ip = 192;
+                    continue _fun76335
                 }
             case 172:
                 var7 = 0;
                 var25 = var2;
                 if (!(var7 !== var6)) {
-                    _fun70679_ip = 192;
-                    continue _fun70679
+                    _fun76335_ip = 192;
+                    continue _fun76335
                 }
             case 181:
                 var25 = var2;
                 if (!(var7 !== var1)) {
-                    _fun70679_ip = 192;
-                    continue _fun70679
+                    _fun76335_ip = 192;
+                    continue _fun76335
                 }
             case 188:
                 var25 = var6 / var1;
@@ -90,8 +90,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var4 == var17;
                 var10 = undefined;
                 if (var1) {
-                    _fun70679_ip = 215;
-                    continue _fun70679
+                    _fun76335_ip = 215;
+                    continue _fun76335
                 }
             case 210:
                 var10 = var17.description;
@@ -99,8 +99,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = var4 != var10;
                 var1 = '';
                 if (!var11) {
-                    _fun70679_ip = 229;
-                    continue _fun70679
+                    _fun76335_ip = 229;
+                    continue _fun76335
                 }
             case 226:
                 var1 = var10;
@@ -431,47 +431,52 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
         var0 = arg0;
-        var7 = var0.source;
-        var6 = var0.channelId;
-        var3 = var0.id;
-        var2 = _closure1_slot10;
-        var1 = _closure1_slot13;
-        var0 = {};
-        var0.source = var7;
-        var0.channelId = var6;
-        var0.id = var3;
-        var3 = undefined;
-        var0 = var2.bind(var3)(var1, var0);
-        var _closure2_slot0 = var0;
-        var2 = _closure1_slot10;
+        var1 = var0.source;
+        var _closure2_slot0 = var1;
+        var1 = var0.channelId;
+        var _closure2_slot1 = var1;
+        var0 = var0.id;
+        var _closure2_slot2 = var0;
+        var3 = _closure1_slot10;
         var1 = _closure1_slot1;
         var9 = _closure1_slot2;
         var0 = 18;
         var0 = var9[var0];
-        var1 = var1.bind(var3)(var0);
+        var2 = undefined;
+        var1 = var1.bind(var2)(var0);
         var0 = {};
         var6 = 'addImageDescriptionModal';
         var0.screenKey = var6;
         var8 = _closure1_slot0;
         var5 = 14;
         var6 = var9[var5];
-        var6 = var8.bind(var3)(var6);
+        var6 = var8.bind(var2)(var6);
         var7 = var6.intl;
         var6 = var7.string;
         var5 = var9[var5];
-        var5 = var8.bind(var3)(var5);
+        var5 = var8.bind(var2)(var5);
         var5 = var5.t;
         var5 = var5["5S2AK+"];
         var5 = var6.bind(var7)(var5);
         var0.title = var5;
         var4 = function() {
-            var0 = _closure2_slot0;
+            var3 = _closure1_slot10;
+            var2 = _closure1_slot13;
+            var1 = {};
+            var4 = _closure2_slot0;
+            var1.source = var4;
+            var4 = _closure2_slot1;
+            var1.channelId = var4;
+            var0 = _closure2_slot2;
+            var1.id = var0;
+            var0 = undefined;
+            var0 = var3.bind(var0)(var2, var1);
             return var0;
         };
         var0.render = var4;
-        var0 = var2.bind(var3)(var1, var0);
+        var0 = var3.bind(var2)(var1, var0);
         return var0;
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 3996, 3995, 33, 1297, 671, 566, 1464, 1469, 4871, 8677, 7704, 1234, 8038, 8796, 5451, 8680, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 3996, 3995, 33, 1297, 671, 566, 1464, 1469, 4900, 9676, 8962, 1235, 7667, 9674, 5448, 9181, 2]);

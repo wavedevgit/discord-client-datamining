@@ -10,7 +10,7 @@ import xl.i;
 public class d {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final String f55625a = "d";
+    private static final String f56193a = "d";
 
     public c a(int i10, int i11, wl.e eVar, ql.a aVar, i iVar, ql.b bVar, f fVar, MediaFormat mediaFormat) {
         if (mediaFormat == null) {
@@ -38,7 +38,7 @@ public class d {
                 }
                 return new a(eVar, i10, fVar, i11, mediaFormat, iVar, aVar, bVar);
             } else {
-                String str = f55625a;
+                String str = f56193a;
                 Log.i(str, "Unsupported track mime type: " + string + ", will use passthrough transcoder");
                 return new b(eVar, i10, fVar, i11);
             }

@@ -13,25 +13,25 @@ public final class i implements h {
     public static final Parcelable.Creator<i> CREATOR = new a();
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f42963d;
+    private final String f43531d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final JsonLogicBoolean f42964e;
+    private final JsonLogicBoolean f43532e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final JsonLogicBoolean f42965i;
+    private final JsonLogicBoolean f43533i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final String f42966o;
+    private final String f43534o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final Integer f42967p;
+    private final Integer f43535p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final List f42968q;
+    private final List f43536q;
 
     /* renamed from: r  reason: collision with root package name */
-    private boolean f42969r;
+    private boolean f43537r;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements Parcelable.Creator {
@@ -61,22 +61,22 @@ public final class i implements h {
 
     public i(String name, JsonLogicBoolean jsonLogicBoolean, JsonLogicBoolean jsonLogicBoolean2, String str, Integer num) {
         Intrinsics.checkNotNullParameter(name, "name");
-        this.f42963d = name;
-        this.f42964e = jsonLogicBoolean;
-        this.f42965i = jsonLogicBoolean2;
-        this.f42966o = str;
-        this.f42967p = num;
-        this.f42968q = new ArrayList();
+        this.f43531d = name;
+        this.f43532e = jsonLogicBoolean;
+        this.f43533i = jsonLogicBoolean2;
+        this.f43534o = str;
+        this.f43535p = num;
+        this.f43536q = new ArrayList();
     }
 
     @Override // pq.h
     public boolean G0() {
-        return this.f42969r;
+        return this.f43537r;
     }
 
     @Override // pq.e0
     public List d() {
-        return this.f42968q;
+        return this.f43536q;
     }
 
     @Override // android.os.Parcelable
@@ -92,7 +92,7 @@ public final class i implements h {
             return false;
         }
         i iVar = (i) obj;
-        if (Intrinsics.areEqual(this.f42963d, iVar.f42963d) && Intrinsics.areEqual(this.f42964e, iVar.f42964e) && Intrinsics.areEqual(this.f42965i, iVar.f42965i) && Intrinsics.areEqual(this.f42966o, iVar.f42966o) && Intrinsics.areEqual(this.f42967p, iVar.f42967p)) {
+        if (Intrinsics.areEqual(this.f43531d, iVar.f43531d) && Intrinsics.areEqual(this.f43532e, iVar.f43532e) && Intrinsics.areEqual(this.f43533i, iVar.f43533i) && Intrinsics.areEqual(this.f43534o, iVar.f43534o) && Intrinsics.areEqual(this.f43535p, iVar.f43535p)) {
             return true;
         }
         return false;
@@ -100,35 +100,35 @@ public final class i implements h {
 
     @Override // pq.h
     public String getAutoSubmitCountdownText() {
-        return this.f42966o;
+        return this.f43534o;
     }
 
     @Override // pq.h
     public Integer getAutoSubmitIntervalSeconds() {
-        return this.f42967p;
+        return this.f43535p;
     }
 
     @Override // pq.v
     public JsonLogicBoolean getDisabled() {
-        return this.f42965i;
+        return this.f43533i;
     }
 
     @Override // pq.e0
     public JsonLogicBoolean getHidden() {
-        return this.f42964e;
+        return this.f43532e;
     }
 
     @Override // pq.h, pq.k5
     public String getName() {
-        return this.f42963d;
+        return this.f43531d;
     }
 
     public int hashCode() {
         int hashCode;
         int hashCode2;
         int hashCode3;
-        int hashCode4 = this.f42963d.hashCode() * 31;
-        JsonLogicBoolean jsonLogicBoolean = this.f42964e;
+        int hashCode4 = this.f43531d.hashCode() * 31;
+        JsonLogicBoolean jsonLogicBoolean = this.f43532e;
         int i10 = 0;
         if (jsonLogicBoolean == null) {
             hashCode = 0;
@@ -136,21 +136,21 @@ public final class i implements h {
             hashCode = jsonLogicBoolean.hashCode();
         }
         int i11 = (hashCode4 + hashCode) * 31;
-        JsonLogicBoolean jsonLogicBoolean2 = this.f42965i;
+        JsonLogicBoolean jsonLogicBoolean2 = this.f43533i;
         if (jsonLogicBoolean2 == null) {
             hashCode2 = 0;
         } else {
             hashCode2 = jsonLogicBoolean2.hashCode();
         }
         int i12 = (i11 + hashCode2) * 31;
-        String str = this.f42966o;
+        String str = this.f43534o;
         if (str == null) {
             hashCode3 = 0;
         } else {
             hashCode3 = str.hashCode();
         }
         int i13 = (i12 + hashCode3) * 31;
-        Integer num = this.f42967p;
+        Integer num = this.f43535p;
         if (num != null) {
             i10 = num.hashCode();
         }
@@ -159,26 +159,26 @@ public final class i implements h {
 
     @Override // pq.h, pq.j2
     public void n(boolean z10) {
-        this.f42969r = z10;
+        this.f43537r = z10;
     }
 
     public String toString() {
-        String str = this.f42963d;
-        JsonLogicBoolean jsonLogicBoolean = this.f42964e;
-        JsonLogicBoolean jsonLogicBoolean2 = this.f42965i;
-        String str2 = this.f42966o;
-        Integer num = this.f42967p;
+        String str = this.f43531d;
+        JsonLogicBoolean jsonLogicBoolean = this.f43532e;
+        JsonLogicBoolean jsonLogicBoolean2 = this.f43533i;
+        String str2 = this.f43534o;
+        Integer num = this.f43535p;
         return "CancelButtonComponent(name=" + str + ", hidden=" + jsonLogicBoolean + ", disabled=" + jsonLogicBoolean2 + ", autoSubmitCountdownText=" + str2 + ", autoSubmitIntervalSeconds=" + num + ")";
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel dest, int i10) {
         Intrinsics.checkNotNullParameter(dest, "dest");
-        dest.writeString(this.f42963d);
-        dest.writeParcelable(this.f42964e, i10);
-        dest.writeParcelable(this.f42965i, i10);
-        dest.writeString(this.f42966o);
-        Integer num = this.f42967p;
+        dest.writeString(this.f43531d);
+        dest.writeParcelable(this.f43532e, i10);
+        dest.writeParcelable(this.f43533i, i10);
+        dest.writeString(this.f43534o);
+        Integer num = this.f43535p;
         if (num == null) {
             dest.writeInt(0);
             return;

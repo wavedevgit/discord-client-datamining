@@ -2,11 +2,11 @@
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var4 = require;
-    var6 = metroImportDefault;
+    var10 = metroImportDefault;
     var2 = exports;
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
-    var _closure1_slot1 = var6;
+    var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
     var0 = function arg0() {
         var0 = arg0;
@@ -19,12 +19,18 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var4 = var9.alertContainer;
         var0.style = var4;
-        var6 = _closure1_slot7;
+        var7 = _closure1_slot4;
+        var6 = _closure1_slot1;
+        var10 = _closure1_slot2;
+        var4 = 5;
+        var4 = var10[var4];
+        var6 = var6.bind(var3)(var4);
+        var4 = {};
+        var6 = var7.bind(var3)(var6, var4);
         var4 = new Array(2);
         var4[0] = var6;
         var7 = _closure1_slot4;
         var6 = _closure1_slot0;
-        var10 = _closure1_slot2;
         var5 = 6;
         var5 = var10[var5];
         var5 = var6.bind(var3)(var5);
@@ -41,20 +47,20 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = var2.bind(var3)(var1, var0);
         return var0;
     };
-    var _closure1_slot8 = var0;
+    var _closure1_slot7 = var0;
     var0 = global;
-    var8 = var0.Object;
-    var7 = var8.defineProperty;
+    var7 = var0.Object;
+    var6 = var7.defineProperty;
     var3 = {};
     var0 = true;
     var3.value = var0;
     var0 = '__esModule';
-    var0 = var7.bind(var8)(var2, var0, var3);
+    var0 = var6.bind(var7)(var2, var0, var3);
     var0 = 0;
-    var7 = var5[var0];
+    var6 = var5[var0];
     var3 = arg3;
     var0 = undefined;
-    var3 = var3.bind(var0)(var7);
+    var3 = var3.bind(var0)(var6);
     var3 = 1;
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
@@ -63,42 +69,36 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 2;
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
-    var7 = var3.jsx;
-    var _closure1_slot4 = var7;
+    var6 = var3.jsx;
+    var _closure1_slot4 = var6;
     var3 = var3.jsxs;
     var _closure1_slot5 = var3;
     var3 = 3;
     var3 = var5[var3];
-    var9 = var4.bind(var0)(var3);
-    var8 = var9.createStyles;
+    var7 = var4.bind(var0)(var3);
+    var6 = var7.createStyles;
     var3 = {};
-    var10 = {
+    var8 = {
         'display': 'flex',
         'alignItems': 'center',
         'padding': 8
     };
-    var3.alertContainer = var10;
-    var10 = {
+    var3.alertContainer = var8;
+    var8 = {
         'fontSize': 16,
         'lineHeight': 24,
         'color': null,
         'textAlign': 'center'
     };
-    var11 = 4;
-    var11 = var5[var11];
-    var11 = var6.bind(var0)(var11);
-    var11 = var11.colors;
-    var11 = var11.INTERACTIVE_TEXT_DEFAULT;
-    var10.color = var11;
-    var3.alertBodyText = var10;
-    var3 = var8.bind(var9)(var3);
+    var9 = 4;
+    var9 = var5[var9];
+    var9 = var10.bind(var0)(var9);
+    var9 = var9.colors;
+    var9 = var9.INTERACTIVE_TEXT_DEFAULT;
+    var8.color = var9;
+    var3.alertBodyText = var8;
+    var3 = var6.bind(var7)(var3);
     var _closure1_slot6 = var3;
-    var3 = 5;
-    var3 = var5[var3];
-    var6 = var6.bind(var0)(var3);
-    var3 = {};
-    var3 = var7.bind(var0)(var6, var3);
-    var _closure1_slot7 = var3;
     var3 = 10;
     var3 = var5[var3];
     var5 = var4.bind(var0)(var3);
@@ -147,7 +147,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var12 = var14.bind(var16)(var12);
         var0.title = var12;
         var14 = _closure1_slot4;
-        var12 = _closure1_slot8;
+        var12 = _closure1_slot7;
         var11 = {};
         var11.description = var15;
         var11 = var14.bind(var7)(var12, var11);
@@ -186,4 +186,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.confirmActivityAgeGateAlert = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 8011, 3938, 1234, 3998, 4849, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 8032, 3938, 1235, 3998, 4880, 2]);

@@ -33,22 +33,22 @@ import us.z2;
 public abstract class a0 implements KCallable, w2 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final z2.a f50991d;
+    private final z2.a f51559d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final z2.a f50992e;
+    private final z2.a f51560e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final z2.a f50993i;
+    private final z2.a f51561i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final z2.a f50994o;
+    private final z2.a f51562o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final z2.a f50995p;
+    private final z2.a f51563p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final Lazy f50996q;
+    private final Lazy f51564q;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a implements Comparator {
@@ -61,24 +61,24 @@ public abstract class a0 implements KCallable, w2 {
     public a0() {
         z2.a c10 = z2.c(new q(this));
         Intrinsics.checkNotNullExpressionValue(c10, "lazySoft(...)");
-        this.f50991d = c10;
+        this.f51559d = c10;
         z2.a c11 = z2.c(new r(this));
         Intrinsics.checkNotNullExpressionValue(c11, "lazySoft(...)");
-        this.f50992e = c11;
+        this.f51560e = c11;
         z2.a c12 = z2.c(new s(this));
         Intrinsics.checkNotNullExpressionValue(c12, "lazySoft(...)");
-        this.f50993i = c12;
+        this.f51561i = c12;
         z2.a c13 = z2.c(new t(this));
         Intrinsics.checkNotNullExpressionValue(c13, "lazySoft(...)");
-        this.f50994o = c13;
+        this.f51562o = c13;
         z2.a c14 = z2.c(new u(this));
         Intrinsics.checkNotNullExpressionValue(c14, "lazySoft(...)");
-        this.f50995p = c14;
-        this.f50996q = as.l.a(as.o.f6082e, new v(this));
+        this.f51563p = c14;
+        this.f51564q = as.l.a(as.o.f6082e, new v(this));
     }
 
     private final int E(kotlin.reflect.i iVar) {
-        if (((Boolean) this.f50996q.getValue()).booleanValue()) {
+        if (((Boolean) this.f51564q.getValue()).booleanValue()) {
             if (j3.k(iVar.getType())) {
                 KType type = iVar.getType();
                 Intrinsics.checkNotNull(type, "null cannot be cast to non-null type kotlin.reflect.jvm.internal.KTypeImpl");
@@ -111,10 +111,10 @@ public abstract class a0 implements KCallable, w2 {
         int i11;
         List<kotlin.reflect.i> parameters = a0Var.getParameters();
         int size = parameters.size() + (a0Var.isSuspend() ? 1 : 0);
-        if (((Boolean) a0Var.f50996q.getValue()).booleanValue()) {
+        if (((Boolean) a0Var.f51564q.getValue()).booleanValue()) {
             i10 = 0;
             for (kotlin.reflect.i iVar : parameters) {
-                if (iVar.getKind() == i.a.f32106i) {
+                if (iVar.getKind() == i.a.f32674i) {
                     i11 = a0Var.E(iVar);
                 } else {
                     i11 = 0;
@@ -128,7 +128,7 @@ public abstract class a0 implements KCallable, w2 {
             } else {
                 i10 = 0;
                 for (kotlin.reflect.i iVar2 : list) {
-                    if (iVar2.getKind() == i.a.f32106i && (i10 = i10 + 1) < 0) {
+                    if (iVar2.getKind() == i.a.f32674i && (i10 = i10 + 1) < 0) {
                         CollectionsKt.u();
                     }
                 }
@@ -163,14 +163,14 @@ public abstract class a0 implements KCallable, w2 {
         if (!a0Var.G()) {
             ReceiverParameterDescriptor i12 = j3.i(D);
             if (i12 != null) {
-                arrayList.add(new x1(a0Var, 0, i.a.f32104d, new w(i12)));
+                arrayList.add(new x1(a0Var, 0, i.a.f32672d, new w(i12)));
                 i10 = 1;
             } else {
                 i10 = 0;
             }
             ReceiverParameterDescriptor extensionReceiverParameter = D.getExtensionReceiverParameter();
             if (extensionReceiverParameter != null) {
-                arrayList.add(new x1(a0Var, i10, i.a.f32105e, new x(extensionReceiverParameter)));
+                arrayList.add(new x1(a0Var, i10, i.a.f32673e, new x(extensionReceiverParameter)));
                 i10++;
             }
         } else {
@@ -178,7 +178,7 @@ public abstract class a0 implements KCallable, w2 {
         }
         int size = D.getValueParameters().size();
         while (i11 < size) {
-            arrayList.add(new x1(a0Var, i10, i.a.f32106i, new y(D, i11)));
+            arrayList.add(new x1(a0Var, i10, i.a.f32674i, new y(D, i11)));
             i11++;
             i10++;
         }
@@ -300,7 +300,7 @@ public abstract class a0 implements KCallable, w2 {
     }
 
     private final Object[] z() {
-        return (Object[]) ((Object[]) this.f50995p.invoke()).clone();
+        return (Object[]) ((Object[]) this.f51563p.invoke()).clone();
     }
 
     public abstract vs.h A();
@@ -342,28 +342,28 @@ public abstract class a0 implements KCallable, w2 {
 
     @Override // kotlin.reflect.b
     public List getAnnotations() {
-        Object invoke = this.f50991d.invoke();
+        Object invoke = this.f51559d.invoke();
         Intrinsics.checkNotNullExpressionValue(invoke, "invoke(...)");
         return (List) invoke;
     }
 
     @Override // kotlin.reflect.KCallable
     public List getParameters() {
-        Object invoke = this.f50992e.invoke();
+        Object invoke = this.f51560e.invoke();
         Intrinsics.checkNotNullExpressionValue(invoke, "invoke(...)");
         return (List) invoke;
     }
 
     @Override // kotlin.reflect.KCallable
     public KType getReturnType() {
-        Object invoke = this.f50993i.invoke();
+        Object invoke = this.f51561i.invoke();
         Intrinsics.checkNotNullExpressionValue(invoke, "invoke(...)");
         return (KType) invoke;
     }
 
     @Override // kotlin.reflect.KCallable
     public List getTypeParameters() {
-        Object invoke = this.f50994o.invoke();
+        Object invoke = this.f51562o.invoke();
         Intrinsics.checkNotNullExpressionValue(invoke, "invoke(...)");
         return (List) invoke;
     }
@@ -416,7 +416,7 @@ public abstract class a0 implements KCallable, w2 {
         if (isSuspend()) {
             z11[parameters.size()] = continuation;
         }
-        boolean booleanValue = ((Boolean) this.f50996q.getValue()).booleanValue();
+        boolean booleanValue = ((Boolean) this.f51564q.getValue()).booleanValue();
         int i11 = 0;
         for (kotlin.reflect.i iVar : parameters) {
             if (booleanValue) {
@@ -445,7 +445,7 @@ public abstract class a0 implements KCallable, w2 {
             } else if (!iVar.isVararg()) {
                 throw new IllegalArgumentException("No argument provided for a required parameter: " + iVar);
             }
-            if (iVar.getKind() == i.a.f32106i) {
+            if (iVar.getKind() == i.a.f32674i) {
                 i11 += i10;
             }
         }

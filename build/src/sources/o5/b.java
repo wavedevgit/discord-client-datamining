@@ -14,18 +14,18 @@ public class b extends g {
     public int r(z5.a aVar, float f10) {
         float f11;
         Float f12;
-        if (aVar.f56093b != null && aVar.f56094c != null) {
-            z5.c cVar = this.f38587e;
-            if (cVar != null && (f12 = aVar.f56099h) != null) {
+        if (aVar.f56661b != null && aVar.f56662c != null) {
+            z5.c cVar = this.f39155e;
+            if (cVar != null && (f12 = aVar.f56667h) != null) {
                 f11 = f10;
-                Integer num = (Integer) cVar.b(aVar.f56098g, f12.floatValue(), (Integer) aVar.f56093b, (Integer) aVar.f56094c, f11, e(), f());
+                Integer num = (Integer) cVar.b(aVar.f56666g, f12.floatValue(), (Integer) aVar.f56661b, (Integer) aVar.f56662c, f11, e(), f());
                 if (num != null) {
                     return num.intValue();
                 }
             } else {
                 f11 = f10;
             }
-            return y5.b.c(y5.i.b(f11, 0.0f, 1.0f), ((Integer) aVar.f56093b).intValue(), ((Integer) aVar.f56094c).intValue());
+            return y5.b.c(y5.i.b(f11, 0.0f, 1.0f), ((Integer) aVar.f56661b).intValue(), ((Integer) aVar.f56662c).intValue());
         }
         throw new IllegalStateException("Missing values for keyframe.");
     }

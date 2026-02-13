@@ -3,7 +3,7 @@ package w5;
 public class l implements n0 {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final l f52317a = new l();
+    public static final l f52885a = new l();
 
     private l() {
     }

@@ -20,28 +20,28 @@ import y3.d;
 public final class d implements x3.h {
 
     /* renamed from: s  reason: collision with root package name */
-    public static final a f55355s = new a(null);
+    public static final a f55923s = new a(null);
 
     /* renamed from: d  reason: collision with root package name */
-    private final Context f55356d;
+    private final Context f55924d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final String f55357e;
+    private final String f55925e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final h.a f55358i;
+    private final h.a f55926i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final boolean f55359o;
+    private final boolean f55927o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final boolean f55360p;
+    private final boolean f55928p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final Lazy f55361q;
+    private final Lazy f55929q;
 
     /* renamed from: r  reason: collision with root package name */
-    private boolean f55362r;
+    private boolean f55930r;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a {
@@ -58,18 +58,18 @@ public final class d implements x3.h {
     public static final class b {
 
         /* renamed from: a  reason: collision with root package name */
-        private y3.c f55363a;
+        private y3.c f55931a;
 
         public b(y3.c cVar) {
-            this.f55363a = cVar;
+            this.f55931a = cVar;
         }
 
         public final y3.c a() {
-            return this.f55363a;
+            return this.f55931a;
         }
 
         public final void b(y3.c cVar) {
-            this.f55363a = cVar;
+            this.f55931a = cVar;
         }
     }
 
@@ -78,55 +78,55 @@ public final class d implements x3.h {
     public static final class c extends SQLiteOpenHelper {
 
         /* renamed from: s  reason: collision with root package name */
-        public static final C0769c f55364s = new C0769c(null);
+        public static final C0769c f55932s = new C0769c(null);
 
         /* renamed from: d  reason: collision with root package name */
-        private final Context f55365d;
+        private final Context f55933d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final b f55366e;
+        private final b f55934e;
 
         /* renamed from: i  reason: collision with root package name */
-        private final h.a f55367i;
+        private final h.a f55935i;
 
         /* renamed from: o  reason: collision with root package name */
-        private final boolean f55368o;
+        private final boolean f55936o;
 
         /* renamed from: p  reason: collision with root package name */
-        private boolean f55369p;
+        private boolean f55937p;
 
         /* renamed from: q  reason: collision with root package name */
-        private final z3.a f55370q;
+        private final z3.a f55938q;
 
         /* renamed from: r  reason: collision with root package name */
-        private boolean f55371r;
+        private boolean f55939r;
 
         /* JADX INFO: Access modifiers changed from: private */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
         public static final class a extends RuntimeException {
 
             /* renamed from: d  reason: collision with root package name */
-            private final b f55372d;
+            private final b f55940d;
 
             /* renamed from: e  reason: collision with root package name */
-            private final Throwable f55373e;
+            private final Throwable f55941e;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             public a(b callbackName, Throwable cause) {
                 super(cause);
                 Intrinsics.checkNotNullParameter(callbackName, "callbackName");
                 Intrinsics.checkNotNullParameter(cause, "cause");
-                this.f55372d = callbackName;
-                this.f55373e = cause;
+                this.f55940d = callbackName;
+                this.f55941e = cause;
             }
 
             public final b a() {
-                return this.f55372d;
+                return this.f55940d;
             }
 
             @Override // java.lang.Throwable
             public Throwable getCause() {
-                return this.f55373e;
+                return this.f55941e;
             }
         }
 
@@ -167,7 +167,7 @@ public final class d implements x3.h {
         public /* synthetic */ class C0770d {
 
             /* renamed from: a  reason: collision with root package name */
-            public static final /* synthetic */ int[] f55380a;
+            public static final /* synthetic */ int[] f55948a;
 
             static {
                 int[] iArr = new int[b.values().length];
@@ -191,13 +191,13 @@ public final class d implements x3.h {
                     iArr[b.ON_OPEN.ordinal()] = 5;
                 } catch (NoSuchFieldError unused5) {
                 }
-                f55380a = iArr;
+                f55948a = iArr;
             }
         }
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public c(Context context, String str, final b dbRef, final h.a callback, boolean z10) {
-            super(context, str, null, callback.f54316a, new DatabaseErrorHandler() { // from class: y3.e
+            super(context, str, null, callback.f54884a, new DatabaseErrorHandler() { // from class: y3.e
                 @Override // android.database.DatabaseErrorHandler
                 public final void onCorruption(SQLiteDatabase sQLiteDatabase) {
                     d.c.h(h.a.this, dbRef, sQLiteDatabase);
@@ -207,10 +207,10 @@ public final class d implements x3.h {
             Intrinsics.checkNotNullParameter(context, "context");
             Intrinsics.checkNotNullParameter(dbRef, "dbRef");
             Intrinsics.checkNotNullParameter(callback, "callback");
-            this.f55365d = context;
-            this.f55366e = dbRef;
-            this.f55367i = callback;
-            this.f55368o = z10;
+            this.f55933d = context;
+            this.f55934e = dbRef;
+            this.f55935i = callback;
+            this.f55936o = z10;
             if (str == null) {
                 str2 = UUID.randomUUID().toString();
                 Intrinsics.checkNotNullExpressionValue(str2, "randomUUID().toString()");
@@ -219,14 +219,14 @@ public final class d implements x3.h {
             }
             File cacheDir = context.getCacheDir();
             Intrinsics.checkNotNullExpressionValue(cacheDir, "context.cacheDir");
-            this.f55370q = new z3.a(str2, cacheDir, false);
+            this.f55938q = new z3.a(str2, cacheDir, false);
         }
 
         /* JADX INFO: Access modifiers changed from: private */
         public static final void h(h.a callback, b dbRef, SQLiteDatabase dbObj) {
             Intrinsics.checkNotNullParameter(callback, "$callback");
             Intrinsics.checkNotNullParameter(dbRef, "$dbRef");
-            C0769c c0769c = f55364s;
+            C0769c c0769c = f55932s;
             Intrinsics.checkNotNullExpressionValue(dbObj, "dbObj");
             callback.c(c0769c.a(dbRef, dbObj));
         }
@@ -245,7 +245,7 @@ public final class d implements x3.h {
         private final SQLiteDatabase p(boolean z10) {
             File parentFile;
             String databaseName = getDatabaseName();
-            if (databaseName != null && (parentFile = this.f55365d.getDatabasePath(databaseName).getParentFile()) != null) {
+            if (databaseName != null && (parentFile = this.f55933d.getDatabasePath(databaseName).getParentFile()) != null) {
                 parentFile.mkdirs();
                 if (!parentFile.isDirectory()) {
                     Log.w("SupportSQLite", "Invalid database parent file, not a directory: " + parentFile);
@@ -266,7 +266,7 @@ public final class d implements x3.h {
                     if (th2 instanceof a) {
                         a aVar = th2;
                         Throwable cause = aVar.getCause();
-                        int i10 = C0770d.f55380a[aVar.a().ordinal()];
+                        int i10 = C0770d.f55948a[aVar.a().ordinal()];
                         if (i10 != 1 && i10 != 2 && i10 != 3 && i10 != 4) {
                             if (!(cause instanceof SQLiteException)) {
                                 throw cause;
@@ -275,13 +275,13 @@ public final class d implements x3.h {
                             throw cause;
                         }
                     } else if (th2 instanceof SQLiteException) {
-                        if (databaseName == null || !this.f55368o) {
+                        if (databaseName == null || !this.f55936o) {
                             throw th2;
                         }
                     } else {
                         throw th2;
                     }
-                    this.f55365d.deleteDatabase(databaseName);
+                    this.f55933d.deleteDatabase(databaseName);
                     try {
                         return n(z10);
                     } catch (a e10) {
@@ -294,12 +294,12 @@ public final class d implements x3.h {
         @Override // android.database.sqlite.SQLiteOpenHelper, java.lang.AutoCloseable
         public void close() {
             try {
-                z3.a.c(this.f55370q, false, 1, null);
+                z3.a.c(this.f55938q, false, 1, null);
                 super.close();
-                this.f55366e.b(null);
-                this.f55371r = false;
+                this.f55934e.b(null);
+                this.f55939r = false;
             } finally {
-                this.f55370q.d();
+                this.f55938q.d();
             }
         }
 
@@ -307,39 +307,39 @@ public final class d implements x3.h {
             boolean z11;
             x3.g m10;
             try {
-                z3.a aVar = this.f55370q;
-                if (!this.f55371r && getDatabaseName() != null) {
+                z3.a aVar = this.f55938q;
+                if (!this.f55939r && getDatabaseName() != null) {
                     z11 = true;
                 } else {
                     z11 = false;
                 }
                 aVar.b(z11);
-                this.f55369p = false;
+                this.f55937p = false;
                 SQLiteDatabase p10 = p(z10);
-                if (this.f55369p) {
+                if (this.f55937p) {
                     close();
                     m10 = i(z10);
                 } else {
                     m10 = m(p10);
                 }
-                this.f55370q.d();
+                this.f55938q.d();
                 return m10;
             } catch (Throwable th2) {
-                this.f55370q.d();
+                this.f55938q.d();
                 throw th2;
             }
         }
 
         public final y3.c m(SQLiteDatabase sqLiteDatabase) {
             Intrinsics.checkNotNullParameter(sqLiteDatabase, "sqLiteDatabase");
-            return f55364s.a(this.f55366e, sqLiteDatabase);
+            return f55932s.a(this.f55934e, sqLiteDatabase);
         }
 
         @Override // android.database.sqlite.SQLiteOpenHelper
         public void onConfigure(SQLiteDatabase db2) {
             Intrinsics.checkNotNullParameter(db2, "db");
             try {
-                this.f55367i.b(m(db2));
+                this.f55935i.b(m(db2));
             } catch (Throwable th2) {
                 throw new a(b.ON_CONFIGURE, th2);
             }
@@ -349,7 +349,7 @@ public final class d implements x3.h {
         public void onCreate(SQLiteDatabase sqLiteDatabase) {
             Intrinsics.checkNotNullParameter(sqLiteDatabase, "sqLiteDatabase");
             try {
-                this.f55367i.d(m(sqLiteDatabase));
+                this.f55935i.d(m(sqLiteDatabase));
             } catch (Throwable th2) {
                 throw new a(b.ON_CREATE, th2);
             }
@@ -358,9 +358,9 @@ public final class d implements x3.h {
         @Override // android.database.sqlite.SQLiteOpenHelper
         public void onDowngrade(SQLiteDatabase db2, int i10, int i11) {
             Intrinsics.checkNotNullParameter(db2, "db");
-            this.f55369p = true;
+            this.f55937p = true;
             try {
-                this.f55367i.e(m(db2), i10, i11);
+                this.f55935i.e(m(db2), i10, i11);
             } catch (Throwable th2) {
                 throw new a(b.ON_DOWNGRADE, th2);
             }
@@ -369,22 +369,22 @@ public final class d implements x3.h {
         @Override // android.database.sqlite.SQLiteOpenHelper
         public void onOpen(SQLiteDatabase db2) {
             Intrinsics.checkNotNullParameter(db2, "db");
-            if (!this.f55369p) {
+            if (!this.f55937p) {
                 try {
-                    this.f55367i.f(m(db2));
+                    this.f55935i.f(m(db2));
                 } catch (Throwable th2) {
                     throw new a(b.ON_OPEN, th2);
                 }
             }
-            this.f55371r = true;
+            this.f55939r = true;
         }
 
         @Override // android.database.sqlite.SQLiteOpenHelper
         public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i10, int i11) {
             Intrinsics.checkNotNullParameter(sqLiteDatabase, "sqLiteDatabase");
-            this.f55369p = true;
+            this.f55937p = true;
             try {
-                this.f55367i.g(m(sqLiteDatabase), i10, i11);
+                this.f55935i.g(m(sqLiteDatabase), i10, i11);
             } catch (Throwable th2) {
                 throw new a(b.ON_UPGRADE, th2);
             }
@@ -402,12 +402,12 @@ public final class d implements x3.h {
         /* renamed from: a */
         public final c invoke() {
             c cVar;
-            if (d.this.f55357e != null && d.this.f55359o) {
-                cVar = new c(d.this.f55356d, new File(x3.d.a(d.this.f55356d), d.this.f55357e).getAbsolutePath(), new b(null), d.this.f55358i, d.this.f55360p);
+            if (d.this.f55925e != null && d.this.f55927o) {
+                cVar = new c(d.this.f55924d, new File(x3.d.a(d.this.f55924d), d.this.f55925e).getAbsolutePath(), new b(null), d.this.f55926i, d.this.f55928p);
             } else {
-                cVar = new c(d.this.f55356d, d.this.f55357e, new b(null), d.this.f55358i, d.this.f55360p);
+                cVar = new c(d.this.f55924d, d.this.f55925e, new b(null), d.this.f55926i, d.this.f55928p);
             }
-            x3.b.d(cVar, d.this.f55362r);
+            x3.b.d(cVar, d.this.f55930r);
             return cVar;
         }
     }
@@ -415,28 +415,28 @@ public final class d implements x3.h {
     public d(Context context, String str, h.a callback, boolean z10, boolean z11) {
         Intrinsics.checkNotNullParameter(context, "context");
         Intrinsics.checkNotNullParameter(callback, "callback");
-        this.f55356d = context;
-        this.f55357e = str;
-        this.f55358i = callback;
-        this.f55359o = z10;
-        this.f55360p = z11;
-        this.f55361q = l.b(new C0771d());
+        this.f55924d = context;
+        this.f55925e = str;
+        this.f55926i = callback;
+        this.f55927o = z10;
+        this.f55928p = z11;
+        this.f55929q = l.b(new C0771d());
     }
 
     private final c s() {
-        return (c) this.f55361q.getValue();
+        return (c) this.f55929q.getValue();
     }
 
     @Override // x3.h, java.io.Closeable, java.lang.AutoCloseable
     public void close() {
-        if (this.f55361q.isInitialized()) {
+        if (this.f55929q.isInitialized()) {
             s().close();
         }
     }
 
     @Override // x3.h
     public String getDatabaseName() {
-        return this.f55357e;
+        return this.f55925e;
     }
 
     @Override // x3.h
@@ -446,9 +446,9 @@ public final class d implements x3.h {
 
     @Override // x3.h
     public void setWriteAheadLoggingEnabled(boolean z10) {
-        if (this.f55361q.isInitialized()) {
+        if (this.f55929q.isInitialized()) {
             x3.b.d(s(), z10);
         }
-        this.f55362r = z10;
+        this.f55930r = z10;
     }
 }

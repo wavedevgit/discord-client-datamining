@@ -143,24 +143,24 @@ public final class EmbedThumbnail implements EmbedUrlProvider {
     public static final /* synthetic */ void write$Self$chat_release(EmbedThumbnail embedThumbnail, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
         compositeEncoder.y(serialDescriptor, 0, embedThumbnail.url);
         if (compositeEncoder.z(serialDescriptor, 1) || embedThumbnail.proxyURL != null) {
-            compositeEncoder.o(serialDescriptor, 1, n2.f50033a, embedThumbnail.proxyURL);
+            compositeEncoder.o(serialDescriptor, 1, n2.f50601a, embedThumbnail.proxyURL);
         }
         if (compositeEncoder.z(serialDescriptor, 2) || embedThumbnail.videoUrl != null) {
-            compositeEncoder.o(serialDescriptor, 2, n2.f50033a, embedThumbnail.videoUrl);
+            compositeEncoder.o(serialDescriptor, 2, n2.f50601a, embedThumbnail.videoUrl);
         }
         compositeEncoder.w(serialDescriptor, 3, embedThumbnail.height);
         compositeEncoder.w(serialDescriptor, 4, embedThumbnail.width);
         if (compositeEncoder.z(serialDescriptor, 5) || embedThumbnail.gifv != null) {
-            compositeEncoder.o(serialDescriptor, 5, tt.h.f49997a, embedThumbnail.gifv);
+            compositeEncoder.o(serialDescriptor, 5, tt.h.f50565a, embedThumbnail.gifv);
         }
         if (compositeEncoder.z(serialDescriptor, 6) || embedThumbnail.showPlayButton != null) {
-            compositeEncoder.o(serialDescriptor, 6, tt.h.f49997a, embedThumbnail.showPlayButton);
+            compositeEncoder.o(serialDescriptor, 6, tt.h.f50565a, embedThumbnail.showPlayButton);
         }
         if (compositeEncoder.z(serialDescriptor, 7) || embedThumbnail.placeholder != null) {
-            compositeEncoder.o(serialDescriptor, 7, n2.f50033a, embedThumbnail.placeholder);
+            compositeEncoder.o(serialDescriptor, 7, n2.f50601a, embedThumbnail.placeholder);
         }
         if (compositeEncoder.z(serialDescriptor, 8) || embedThumbnail.placeholderVersion != null) {
-            compositeEncoder.o(serialDescriptor, 8, p0.f50049a, embedThumbnail.placeholderVersion);
+            compositeEncoder.o(serialDescriptor, 8, p0.f50617a, embedThumbnail.placeholderVersion);
         }
         if (compositeEncoder.z(serialDescriptor, 9) || embedThumbnail.srcIsAnimated) {
             compositeEncoder.x(serialDescriptor, 9, embedThumbnail.srcIsAnimated);

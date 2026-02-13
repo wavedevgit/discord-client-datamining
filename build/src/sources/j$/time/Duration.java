@@ -7,19 +7,19 @@ import java.util.regex.Pattern;
 public final class Duration implements Comparable<Duration>, Serializable {
 
     /* renamed from: c  reason: collision with root package name */
-    public static final Duration f30477c = new Duration(0, 0);
+    public static final Duration f31045c = new Duration(0, 0);
 
     /* renamed from: a  reason: collision with root package name */
-    public final long f30478a;
+    public final long f31046a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final int f30479b;
+    public final int f31047b;
 
     @Override // java.lang.Comparable
     public final int compareTo(Duration duration) {
         Duration duration2 = duration;
-        int compare = Long.compare(this.f30478a, duration2.f30478a);
-        return compare != 0 ? compare : this.f30479b - duration2.f30479b;
+        int compare = Long.compare(this.f31046a, duration2.f31046a);
+        return compare != 0 ? compare : this.f31047b - duration2.f31047b;
     }
 
     static {
@@ -39,18 +39,18 @@ public final class Duration implements Comparable<Duration>, Serializable {
 
     public static Duration r(long j10, int i10) {
         if ((i10 | j10) == 0) {
-            return f30477c;
+            return f31045c;
         }
         return new Duration(j10, i10);
     }
 
     public Duration(long j10, int i10) {
-        this.f30478a = j10;
-        this.f30479b = i10;
+        this.f31046a = j10;
+        this.f31047b = i10;
     }
 
     public long toMillis() {
-        return Math.addExact(Math.multiplyExact(this.f30478a, 1000L), this.f30479b / 1000000);
+        return Math.addExact(Math.multiplyExact(this.f31046a, 1000L), this.f31047b / 1000000);
     }
 
     public final boolean equals(Object obj) {
@@ -59,7 +59,7 @@ public final class Duration implements Comparable<Duration>, Serializable {
         }
         if (obj instanceof Duration) {
             Duration duration = (Duration) obj;
-            if (this.f30478a == duration.f30478a && this.f30479b == duration.f30479b) {
+            if (this.f31046a == duration.f31046a && this.f31047b == duration.f31047b) {
                 return true;
             }
         }
@@ -67,15 +67,15 @@ public final class Duration implements Comparable<Duration>, Serializable {
     }
 
     public final int hashCode() {
-        long j10 = this.f30478a;
-        return (this.f30479b * 51) + ((int) (j10 ^ (j10 >>> 32)));
+        long j10 = this.f31046a;
+        return (this.f31047b * 51) + ((int) (j10 ^ (j10 >>> 32)));
     }
 
     public final String toString() {
-        if (this == f30477c) {
+        if (this == f31045c) {
             return "PT0S";
         }
-        long j10 = this.f30478a;
+        long j10 = this.f31046a;
         long j11 = j10 / 3600;
         int i10 = (int) ((j10 % 3600) / 60);
         int i11 = (int) (j10 % 60);
@@ -89,22 +89,22 @@ public final class Duration implements Comparable<Duration>, Serializable {
             sb2.append(i10);
             sb2.append('M');
         }
-        if (i11 == 0 && this.f30479b == 0 && sb2.length() > 2) {
+        if (i11 == 0 && this.f31047b == 0 && sb2.length() > 2) {
             return sb2.toString();
         }
-        if (i11 >= 0 || this.f30479b <= 0) {
+        if (i11 >= 0 || this.f31047b <= 0) {
             sb2.append(i11);
         } else if (i11 == -1) {
             sb2.append("-0");
         } else {
             sb2.append(i11 + 1);
         }
-        if (this.f30479b > 0) {
+        if (this.f31047b > 0) {
             int length = sb2.length();
             if (i11 < 0) {
-                sb2.append(2000000000 - this.f30479b);
+                sb2.append(2000000000 - this.f31047b);
             } else {
-                sb2.append(this.f30479b + 1000000000);
+                sb2.append(this.f31047b + 1000000000);
             }
             while (sb2.charAt(sb2.length() - 1) == '0') {
                 sb2.setLength(sb2.length() - 1);

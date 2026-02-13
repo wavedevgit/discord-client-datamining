@@ -14,17 +14,17 @@ public final class j1 extends a2 implements kotlin.reflect.f {
     public static final class a extends j2.d implements f.a {
 
         /* renamed from: u  reason: collision with root package name */
-        private final j1 f51066u;
+        private final j1 f51634u;
 
         public a(j1 property) {
             Intrinsics.checkNotNullParameter(property, "property");
-            this.f51066u = property;
+            this.f51634u = property;
         }
 
         @Override // kotlin.reflect.KProperty.a
         /* renamed from: P */
         public j1 a() {
-            return this.f51066u;
+            return this.f51634u;
         }
 
         public void Q(Object obj) {
@@ -34,7 +34,7 @@ public final class j1 extends a2 implements kotlin.reflect.f {
         @Override // kotlin.jvm.functions.Function1
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             Q(obj);
-            return Unit.f31988a;
+            return Unit.f32556a;
         }
     }
 

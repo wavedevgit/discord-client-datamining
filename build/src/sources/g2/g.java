@@ -51,7 +51,7 @@ public final class g extends c {
     private g(String str, Bundle bundle) {
         super("androidx.credentials.TYPE_PUBLIC_KEY_CREDENTIAL", bundle);
         this.f24671d = str;
-        if (!k2.c.f31480a.a(str)) {
+        if (!k2.c.f32048a.a(str)) {
             throw new IllegalArgumentException("registrationResponseJson must not be empty, and must be a valid JSON");
         }
     }

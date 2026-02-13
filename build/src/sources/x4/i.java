@@ -6,22 +6,22 @@ import kotlin.jvm.internal.Intrinsics;
 public final class i {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Drawable f54350a;
+    private final Drawable f54918a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final boolean f54351b;
+    private final boolean f54919b;
 
     public i(Drawable drawable, boolean z10) {
-        this.f54350a = drawable;
-        this.f54351b = z10;
+        this.f54918a = drawable;
+        this.f54919b = z10;
     }
 
     public final Drawable a() {
-        return this.f54350a;
+        return this.f54918a;
     }
 
     public final boolean b() {
-        return this.f54351b;
+        return this.f54919b;
     }
 
     public boolean equals(Object obj) {
@@ -30,7 +30,7 @@ public final class i {
         }
         if (obj instanceof i) {
             i iVar = (i) obj;
-            if (Intrinsics.areEqual(this.f54350a, iVar.f54350a) && this.f54351b == iVar.f54351b) {
+            if (Intrinsics.areEqual(this.f54918a, iVar.f54918a) && this.f54919b == iVar.f54919b) {
                 return true;
             }
             return false;
@@ -39,6 +39,6 @@ public final class i {
     }
 
     public int hashCode() {
-        return (this.f54350a.hashCode() * 31) + Boolean.hashCode(this.f54351b);
+        return (this.f54918a.hashCode() * 31) + Boolean.hashCode(this.f54919b);
     }
 }

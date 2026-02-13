@@ -11,22 +11,22 @@ import android.text.style.LeadingMarginSpan;
 public class b implements LeadingMarginSpan {
 
     /* renamed from: q  reason: collision with root package name */
-    private static final boolean f51784q;
+    private static final boolean f52352q;
 
     /* renamed from: d  reason: collision with root package name */
-    private tr.c f51785d;
+    private tr.c f52353d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Paint f51786e = h.a();
+    private final Paint f52354e = h.a();
 
     /* renamed from: i  reason: collision with root package name */
-    private final RectF f51787i = h.c();
+    private final RectF f52355i = h.c();
 
     /* renamed from: o  reason: collision with root package name */
-    private final Rect f51788o = h.b();
+    private final Rect f52356o = h.b();
 
     /* renamed from: p  reason: collision with root package name */
-    private final int f51789p;
+    private final int f52357p;
 
     static {
         boolean z10;
@@ -36,12 +36,12 @@ public class b implements LeadingMarginSpan {
         } else {
             z10 = true;
         }
-        f51784q = z10;
+        f52352q = z10;
     }
 
     public b(tr.c cVar, int i10) {
-        this.f51785d = cVar;
-        this.f51789p = i10;
+        this.f52353d = cVar;
+        this.f52357p = i10;
     }
 
     @Override // android.text.style.LeadingMarginSpan
@@ -51,18 +51,18 @@ public class b implements LeadingMarginSpan {
         Paint.Style style;
         int i19;
         if (z10 && zr.c.b(i15, charSequence, this)) {
-            this.f51786e.set(paint);
-            this.f51785d.g(this.f51786e);
+            this.f52354e.set(paint);
+            this.f52353d.g(this.f52354e);
             int save = canvas.save();
             try {
-                int j10 = this.f51785d.j();
-                int l10 = this.f51785d.l((int) ((this.f51786e.descent() - this.f51786e.ascent()) + 0.5f));
+                int j10 = this.f52353d.j();
+                int l10 = this.f52353d.l((int) ((this.f52354e.descent() - this.f52354e.ascent()) + 0.5f));
                 int i20 = (j10 - l10) / 2;
-                if (f51784q) {
+                if (f52352q) {
                     if (i11 < 0) {
-                        i19 = i10 - (layout.getWidth() - (j10 * this.f51789p));
+                        i19 = i10 - (layout.getWidth() - (j10 * this.f52357p));
                     } else {
-                        i19 = (j10 * this.f51789p) - i10;
+                        i19 = (j10 * this.f52357p) - i10;
                     }
                     int i21 = i10 + (i20 * i11);
                     int i22 = (i11 * l10) + i21;
@@ -76,23 +76,23 @@ public class b implements LeadingMarginSpan {
                     i17 = i10 + i20;
                     i18 = i17 + l10;
                 }
-                int descent = (i13 + ((int) (((this.f51786e.descent() + this.f51786e.ascent()) / 2.0f) + 0.5f))) - (l10 / 2);
+                int descent = (i13 + ((int) (((this.f52354e.descent() + this.f52354e.ascent()) / 2.0f) + 0.5f))) - (l10 / 2);
                 int i24 = l10 + descent;
-                int i25 = this.f51789p;
+                int i25 = this.f52357p;
                 if (i25 != 0 && i25 != 1) {
-                    this.f51788o.set(i17, descent, i18, i24);
-                    this.f51786e.setStyle(Paint.Style.FILL);
-                    canvas.drawRect(this.f51788o, this.f51786e);
+                    this.f52356o.set(i17, descent, i18, i24);
+                    this.f52354e.setStyle(Paint.Style.FILL);
+                    canvas.drawRect(this.f52356o, this.f52354e);
                     canvas.restoreToCount(save);
                 }
-                this.f51787i.set(i17, descent, i18, i24);
-                if (this.f51789p == 0) {
+                this.f52355i.set(i17, descent, i18, i24);
+                if (this.f52357p == 0) {
                     style = Paint.Style.FILL;
                 } else {
                     style = Paint.Style.STROKE;
                 }
-                this.f51786e.setStyle(style);
-                canvas.drawOval(this.f51787i, this.f51786e);
+                this.f52354e.setStyle(style);
+                canvas.drawOval(this.f52355i, this.f52354e);
                 canvas.restoreToCount(save);
             } catch (Throwable th2) {
                 canvas.restoreToCount(save);
@@ -103,6 +103,6 @@ public class b implements LeadingMarginSpan {
 
     @Override // android.text.style.LeadingMarginSpan
     public int getLeadingMargin(boolean z10) {
-        return this.f51785d.j();
+        return this.f52353d.j();
     }
 }

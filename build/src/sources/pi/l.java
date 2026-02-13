@@ -5,10 +5,10 @@ import java.util.logging.Logger;
 abstract class l {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Logger f42751a = Logger.getLogger(l.class.getName());
+    private static final Logger f43319a = Logger.getLogger(l.class.getName());
 
     /* renamed from: b  reason: collision with root package name */
-    private static final k f42752b = b();
+    private static final k f43320b = b();
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */

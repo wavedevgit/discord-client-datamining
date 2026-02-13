@@ -11,73 +11,73 @@ import oe.w0;
 public final class t {
 
     /* renamed from: a  reason: collision with root package name */
-    public final int f50692a;
+    public final int f51260a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final int f50693b;
+    public final int f51261b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final int f50694c;
+    public final int f51262c;
 
     /* renamed from: d  reason: collision with root package name */
-    public final int f50695d;
+    public final int f51263d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final int f50696e;
+    public final int f51264e;
 
     /* renamed from: f  reason: collision with root package name */
-    public final int f50697f;
+    public final int f51265f;
 
     /* renamed from: g  reason: collision with root package name */
-    public final int f50698g;
+    public final int f51266g;
 
     /* renamed from: h  reason: collision with root package name */
-    public final int f50699h;
+    public final int f51267h;
 
     /* renamed from: i  reason: collision with root package name */
-    public final int f50700i;
+    public final int f51268i;
 
     /* renamed from: j  reason: collision with root package name */
-    public final long f50701j;
+    public final long f51269j;
 
     /* renamed from: k  reason: collision with root package name */
-    public final a f50702k;
+    public final a f51270k;
 
     /* renamed from: l  reason: collision with root package name */
-    private final Metadata f50703l;
+    private final Metadata f51271l;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static class a {
 
         /* renamed from: a  reason: collision with root package name */
-        public final long[] f50704a;
+        public final long[] f51272a;
 
         /* renamed from: b  reason: collision with root package name */
-        public final long[] f50705b;
+        public final long[] f51273b;
 
         public a(long[] jArr, long[] jArr2) {
-            this.f50704a = jArr;
-            this.f50705b = jArr2;
+            this.f51272a = jArr;
+            this.f51273b = jArr2;
         }
     }
 
     public t(byte[] bArr, int i10) {
         g0 g0Var = new g0(bArr);
         g0Var.p(i10 * 8);
-        this.f50692a = g0Var.h(16);
-        this.f50693b = g0Var.h(16);
-        this.f50694c = g0Var.h(24);
-        this.f50695d = g0Var.h(24);
+        this.f51260a = g0Var.h(16);
+        this.f51261b = g0Var.h(16);
+        this.f51262c = g0Var.h(24);
+        this.f51263d = g0Var.h(24);
         int h10 = g0Var.h(20);
-        this.f50696e = h10;
-        this.f50697f = j(h10);
-        this.f50698g = g0Var.h(3) + 1;
+        this.f51264e = h10;
+        this.f51265f = j(h10);
+        this.f51266g = g0Var.h(3) + 1;
         int h11 = g0Var.h(5) + 1;
-        this.f50699h = h11;
-        this.f50700i = e(h11);
-        this.f50701j = g0Var.j(36);
-        this.f50702k = null;
-        this.f50703l = null;
+        this.f51267h = h11;
+        this.f51268i = e(h11);
+        this.f51269j = g0Var.j(36);
+        this.f51270k = null;
+        this.f51271l = null;
     }
 
     private static int e(int i10) {
@@ -129,57 +129,57 @@ public final class t {
     }
 
     public t a(List list) {
-        return new t(this.f50692a, this.f50693b, this.f50694c, this.f50695d, this.f50696e, this.f50698g, this.f50699h, this.f50701j, this.f50702k, h(new Metadata(list)));
+        return new t(this.f51260a, this.f51261b, this.f51262c, this.f51263d, this.f51264e, this.f51266g, this.f51267h, this.f51269j, this.f51270k, h(new Metadata(list)));
     }
 
     public t b(a aVar) {
-        return new t(this.f50692a, this.f50693b, this.f50694c, this.f50695d, this.f50696e, this.f50698g, this.f50699h, this.f50701j, aVar, this.f50703l);
+        return new t(this.f51260a, this.f51261b, this.f51262c, this.f51263d, this.f51264e, this.f51266g, this.f51267h, this.f51269j, aVar, this.f51271l);
     }
 
     public t c(List list) {
-        return new t(this.f50692a, this.f50693b, this.f50694c, this.f50695d, this.f50696e, this.f50698g, this.f50699h, this.f50701j, this.f50702k, h(e0.c(list)));
+        return new t(this.f51260a, this.f51261b, this.f51262c, this.f51263d, this.f51264e, this.f51266g, this.f51267h, this.f51269j, this.f51270k, h(e0.c(list)));
     }
 
     public long d() {
         long j10;
         long j11;
         long j12;
-        int i10 = this.f50695d;
+        int i10 = this.f51263d;
         if (i10 > 0) {
-            j11 = (i10 + this.f50694c) / 2;
+            j11 = (i10 + this.f51262c) / 2;
             j12 = 1;
         } else {
-            int i11 = this.f50692a;
-            if (i11 == this.f50693b && i11 > 0) {
+            int i11 = this.f51260a;
+            if (i11 == this.f51261b && i11 > 0) {
                 j10 = i11;
             } else {
                 j10 = 4096;
             }
-            j11 = ((j10 * this.f50698g) * this.f50699h) / 8;
+            j11 = ((j10 * this.f51266g) * this.f51267h) / 8;
             j12 = 64;
         }
         return j11 + j12;
     }
 
     public long f() {
-        long j10 = this.f50701j;
+        long j10 = this.f51269j;
         if (j10 == 0) {
             return -9223372036854775807L;
         }
-        return (j10 * 1000000) / this.f50696e;
+        return (j10 * 1000000) / this.f51264e;
     }
 
     public Format g(byte[] bArr, Metadata metadata) {
         bArr[4] = ByteCompanionObject.MIN_VALUE;
-        int i10 = this.f50695d;
+        int i10 = this.f51263d;
         if (i10 <= 0) {
             i10 = -1;
         }
-        return new Format.b().g0("audio/flac").Y(i10).J(this.f50698g).h0(this.f50696e).V(Collections.singletonList(bArr)).Z(h(metadata)).G();
+        return new Format.b().g0("audio/flac").Y(i10).J(this.f51266g).h0(this.f51264e).V(Collections.singletonList(bArr)).Z(h(metadata)).G();
     }
 
     public Metadata h(Metadata metadata) {
-        Metadata metadata2 = this.f50703l;
+        Metadata metadata2 = this.f51271l;
         if (metadata2 == null) {
             return metadata;
         }
@@ -187,21 +187,21 @@ public final class t {
     }
 
     public long i(long j10) {
-        return w0.r((j10 * this.f50696e) / 1000000, 0L, this.f50701j - 1);
+        return w0.r((j10 * this.f51264e) / 1000000, 0L, this.f51269j - 1);
     }
 
     private t(int i10, int i11, int i12, int i13, int i14, int i15, int i16, long j10, a aVar, Metadata metadata) {
-        this.f50692a = i10;
-        this.f50693b = i11;
-        this.f50694c = i12;
-        this.f50695d = i13;
-        this.f50696e = i14;
-        this.f50697f = j(i14);
-        this.f50698g = i15;
-        this.f50699h = i16;
-        this.f50700i = e(i16);
-        this.f50701j = j10;
-        this.f50702k = aVar;
-        this.f50703l = metadata;
+        this.f51260a = i10;
+        this.f51261b = i11;
+        this.f51262c = i12;
+        this.f51263d = i13;
+        this.f51264e = i14;
+        this.f51265f = j(i14);
+        this.f51266g = i15;
+        this.f51267h = i16;
+        this.f51268i = e(i16);
+        this.f51269j = j10;
+        this.f51270k = aVar;
+        this.f51271l = metadata;
     }
 }

@@ -29,61 +29,61 @@ import uq.f0;
 public final class g {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ViewGroup f52952a;
+    private final ViewGroup f53520a;
 
     /* renamed from: b  reason: collision with root package name */
-    private xo.c f52953b;
+    private xo.c f53521b;
 
     /* renamed from: c  reason: collision with root package name */
-    private boolean f52954c;
+    private boolean f53522c;
 
     /* renamed from: d  reason: collision with root package name */
-    private boolean f52955d;
+    private boolean f53523d;
 
     /* renamed from: e  reason: collision with root package name */
-    private View f52956e;
+    private View f53524e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final /* synthetic */ int[] f52957a;
+        public static final /* synthetic */ int[] f53525a;
 
         static {
             int[] iArr = new int[c4.e.values().length];
             try {
-                iArr[c4.e.f49014o.ordinal()] = 1;
+                iArr[c4.e.f49582o.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                iArr[c4.e.f49015p.ordinal()] = 2;
+                iArr[c4.e.f49583p.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                iArr[c4.e.f49017r.ordinal()] = 3;
+                iArr[c4.e.f49585r.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
-            f52957a = iArr;
+            f53525a = iArr;
         }
     }
 
     public g(ViewGroup contentView) {
         Intrinsics.checkNotNullParameter(contentView, "contentView");
-        this.f52952a = contentView;
+        this.f53520a = contentView;
     }
 
     private final void g(boolean z10) {
-        this.f52954c = z10;
+        this.f53522c = z10;
         o();
     }
 
     private final void h() {
-        xo.c cVar = this.f52953b;
-        if (cVar == null || this.f52955d) {
+        xo.c cVar = this.f53521b;
+        if (cVar == null || this.f53523d) {
             return;
         }
-        this.f52955d = true;
-        final BottomSheetBehavior q02 = BottomSheetBehavior.q0(cVar.f54981c);
+        this.f53523d = true;
+        final BottomSheetBehavior q02 = BottomSheetBehavior.q0(cVar.f55549c);
         Intrinsics.checkNotNullExpressionValue(q02, "from(...)");
         Function0 function0 = new Function0() { // from class: wo.d
             @Override // kotlin.jvm.functions.Function0
@@ -93,16 +93,16 @@ public final class g {
                 return i10;
             }
         };
-        FrameLayout bottomSheet = cVar.f54981c;
+        FrameLayout bottomSheet = cVar.f55549c;
         Intrinsics.checkNotNullExpressionValue(bottomSheet, "bottomSheet");
-        lq.b.b(q02, function0, bottomSheet, cVar.f54982d, cVar.f54988j);
-        cVar.f54988j.setOnClickListener(new View.OnClickListener() { // from class: wo.e
+        lq.b.b(q02, function0, bottomSheet, cVar.f55550d, cVar.f55556j);
+        cVar.f55556j.setOnClickListener(new View.OnClickListener() { // from class: wo.e
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
                 g.j(BottomSheetBehavior.this, view);
             }
         });
-        cVar.f54983e.setOnClickListener(new View.OnClickListener() { // from class: wo.f
+        cVar.f55551e.setOnClickListener(new View.OnClickListener() { // from class: wo.f
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
                 g.k(BottomSheetBehavior.this, view);
@@ -114,7 +114,7 @@ public final class g {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit i(g gVar) {
         gVar.g(false);
-        return Unit.f31988a;
+        return Unit.f32556a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -132,13 +132,13 @@ public final class g {
         Intrinsics.checkNotNullParameter(insets, "insets");
         Insets g10 = insets.g(WindowInsetsCompat.p.h());
         Intrinsics.checkNotNullExpressionValue(g10, "getInsetsIgnoringVisibility(...)");
-        Space bottomInset = cVar.f54980b;
+        Space bottomInset = cVar.f55548b;
         Intrinsics.checkNotNullExpressionValue(bottomInset, "bottomInset");
         ViewGroup.LayoutParams layoutParams = bottomInset.getLayoutParams();
         if (layoutParams != null) {
             layoutParams.height = g10.f3307d;
             bottomInset.setLayoutParams(layoutParams);
-            return Unit.f31988a;
+            return Unit.f32556a;
         }
         throw new NullPointerException("null cannot be cast to non-null type android.view.ViewGroup.LayoutParams");
     }
@@ -150,13 +150,13 @@ public final class g {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit p(xo.c cVar) {
-        BottomSheetBehavior q02 = BottomSheetBehavior.q0(cVar.f54981c);
+        BottomSheetBehavior q02 = BottomSheetBehavior.q0(cVar.f55549c);
         Intrinsics.checkNotNullExpressionValue(q02, "from(...)");
         q02.c1(5);
         FrameLayout root = cVar.getRoot();
         Intrinsics.checkNotNullExpressionValue(root, "getRoot(...)");
         gn.e.c(root, null);
-        return Unit.f31988a;
+        return Unit.f32556a;
     }
 
     public final void l(StepStyles.GovernmentIdStepStyle governmentIdStepStyle, h viewModel, NextStep.GovernmentId.AssetConfig.CapturePage capturePage) {
@@ -177,50 +177,50 @@ public final class g {
         StepStyles.StepTextBasedComponentStyleContainer base5;
         TextBasedComponentStyle base6;
         Intrinsics.checkNotNullParameter(viewModel, "viewModel");
-        final xo.c cVar = this.f52953b;
+        final xo.c cVar = this.f53521b;
         if (cVar == null) {
-            cVar = xo.c.c(LayoutInflater.from(this.f52952a.getContext()), this.f52952a, true);
+            cVar = xo.c.c(LayoutInflater.from(this.f53520a.getContext()), this.f53520a, true);
             Intrinsics.checkNotNullExpressionValue(cVar, "inflate(...)");
         }
-        this.f52953b = cVar;
+        this.f53521b = cVar;
         h();
         g(true);
-        TextView title = cVar.f54990l;
+        TextView title = cVar.f55558l;
         Intrinsics.checkNotNullExpressionValue(title, "title");
         qq.f.d(title, viewModel.f());
-        TextView prompt = cVar.f54987i;
+        TextView prompt = cVar.f55555i;
         Intrinsics.checkNotNullExpressionValue(prompt, "prompt");
         qq.f.d(prompt, viewModel.c());
-        TextView tips = cVar.f54989k;
+        TextView tips = cVar.f55557k;
         Intrinsics.checkNotNullExpressionValue(tips, "tips");
         qq.f.d(tips, viewModel.e());
-        cVar.f54983e.setText(viewModel.a());
-        final BottomSheetBehavior q02 = BottomSheetBehavior.q0(cVar.f54981c);
+        cVar.f55551e.setText(viewModel.a());
+        final BottomSheetBehavior q02 = BottomSheetBehavior.q0(cVar.f55549c);
         Intrinsics.checkNotNullExpressionValue(q02, "from(...)");
         Integer num4 = null;
         if (governmentIdStepStyle != null && (titleStyle = governmentIdStepStyle.getTitleStyle()) != null && (base5 = titleStyle.getBase()) != null && (base6 = base5.getBase()) != null) {
-            TextView title2 = cVar.f54990l;
+            TextView title2 = cVar.f55558l;
             Intrinsics.checkNotNullExpressionValue(title2, "title");
             f0.n(title2, base6, null, 2, null);
         }
         if (governmentIdStepStyle != null && (textStyle = governmentIdStepStyle.getTextStyle()) != null && (base3 = textStyle.getBase()) != null && (base4 = base3.getBase()) != null) {
-            TextView prompt2 = cVar.f54987i;
+            TextView prompt2 = cVar.f55555i;
             Intrinsics.checkNotNullExpressionValue(prompt2, "prompt");
             f0.n(prompt2, base4, null, 2, null);
-            TextView tips2 = cVar.f54989k;
+            TextView tips2 = cVar.f55557k;
             Intrinsics.checkNotNullExpressionValue(tips2, "tips");
             f0.n(tips2, base4, null, 2, null);
         }
         if (governmentIdStepStyle != null && (buttonPrimaryStyle = governmentIdStepStyle.getButtonPrimaryStyle()) != null && (base = buttonPrimaryStyle.getBase()) != null && (base2 = base.getBase()) != null) {
-            Button captureButton = cVar.f54983e;
+            Button captureButton = cVar.f55551e;
             Intrinsics.checkNotNullExpressionValue(captureButton, "captureButton");
             uq.e.f(captureButton, base2, false, false, 6, null);
         }
-        LinearLayout bottomSheetContent = cVar.f54982d;
+        LinearLayout bottomSheetContent = cVar.f55550d;
         Intrinsics.checkNotNullExpressionValue(bottomSheetContent, "bottomSheetContent");
         uq.c.c(bottomSheetContent, governmentIdStepStyle, null, null, 6, null);
         if (governmentIdStepStyle != null && (modalPaddingValue = governmentIdStepStyle.getModalPaddingValue()) != null) {
-            Button captureButton2 = cVar.f54983e;
+            Button captureButton2 = cVar.f55551e;
             Intrinsics.checkNotNullExpressionValue(captureButton2, "captureButton");
             ViewGroup.LayoutParams layoutParams = captureButton2.getLayoutParams();
             if (layoutParams != null) {
@@ -235,7 +235,7 @@ public final class g {
             }
         }
         c4.e d10 = viewModel.d();
-        int[] iArr = a.f52957a;
+        int[] iArr = a.f53525a;
         int i11 = iArr[d10.ordinal()];
         if (i11 != 1) {
             if (i11 != 2) {
@@ -263,32 +263,32 @@ public final class g {
             idFrontHelpModalPictograph = null;
         }
         if (idFrontHelpModalPictograph != null) {
-            if (this.f52956e == null) {
-                ConstraintLayout illustrationContainer = cVar.f54986h;
+            if (this.f53524e == null) {
+                ConstraintLayout illustrationContainer = cVar.f55554h;
                 Intrinsics.checkNotNullExpressionValue(illustrationContainer, "illustrationContainer");
-                this.f52956e = wq.b.c(idFrontHelpModalPictograph, illustrationContainer, false, 2, null);
-                cVar.f54985g.setVisibility(8);
+                this.f53524e = wq.b.c(idFrontHelpModalPictograph, illustrationContainer, false, 2, null);
+                cVar.f55553g.setVisibility(8);
             }
         } else {
             int i12 = iArr[viewModel.d().ordinal()];
             if (i12 != 1) {
                 if (i12 != 2) {
                     if (i12 != 3) {
-                        i10 = tp.d.f49783c;
+                        i10 = tp.d.f50351c;
                     } else {
-                        i10 = tp.d.f49782b;
+                        i10 = tp.d.f50350b;
                     }
                 } else {
-                    i10 = tp.d.f49781a;
+                    i10 = tp.d.f50349a;
                 }
             } else {
-                i10 = tp.d.f49783c;
+                i10 = tp.d.f50351c;
             }
-            cVar.f54985g.setAnimation(i10);
+            cVar.f55553g.setAnimation(i10);
             int i13 = iArr[viewModel.d().ordinal()];
             if (i13 != 2) {
                 if (i13 != 3) {
-                    ThemeableLottieAnimationView illustration = cVar.f54985g;
+                    ThemeableLottieAnimationView illustration = cVar.f55553g;
                     Intrinsics.checkNotNullExpressionValue(illustration, "illustration");
                     if (governmentIdStepStyle != null) {
                         num3 = governmentIdStepStyle.getCaptureHintIconStrokeColor();
@@ -300,7 +300,7 @@ public final class g {
                     }
                     uq.g.g(illustration, num3, num4, null, new String[]{"#000000"}, new String[]{"#8751FF"}, new String[0]);
                 } else {
-                    ThemeableLottieAnimationView illustration2 = cVar.f54985g;
+                    ThemeableLottieAnimationView illustration2 = cVar.f55553g;
                     Intrinsics.checkNotNullExpressionValue(illustration2, "illustration");
                     if (governmentIdStepStyle != null) {
                         num2 = governmentIdStepStyle.getCaptureHintIconStrokeColor();
@@ -313,7 +313,7 @@ public final class g {
                     uq.g.g(illustration2, num2, num4, null, new String[]{"#190051"}, new String[]{"#AA84FF", "#AA85FF"}, new String[0]);
                 }
             } else {
-                ThemeableLottieAnimationView illustration3 = cVar.f54985g;
+                ThemeableLottieAnimationView illustration3 = cVar.f55553g;
                 Intrinsics.checkNotNullExpressionValue(illustration3, "illustration");
                 if (governmentIdStepStyle != null) {
                     num = governmentIdStepStyle.getCaptureHintIconStrokeColor();
@@ -326,7 +326,7 @@ public final class g {
                 uq.g.g(illustration3, num, num4, null, new String[]{"#000000", "#190051"}, new String[]{"#AA84FF"}, new String[0]);
             }
         }
-        Space bottomInset = cVar.f54980b;
+        Space bottomInset = cVar.f55548b;
         Intrinsics.checkNotNullExpressionValue(bottomInset, "bottomInset");
         lq.f.g(bottomInset, new Function1() { // from class: wo.a
             @Override // kotlin.jvm.functions.Function1
@@ -345,11 +345,11 @@ public final class g {
     }
 
     public final void o() {
-        final xo.c cVar = this.f52953b;
+        final xo.c cVar = this.f53521b;
         if (cVar == null) {
             return;
         }
-        if (this.f52954c) {
+        if (this.f53522c) {
             FrameLayout root = cVar.getRoot();
             Intrinsics.checkNotNullExpressionValue(root, "getRoot(...)");
             gn.e.c(root, new Function0() { // from class: wo.c

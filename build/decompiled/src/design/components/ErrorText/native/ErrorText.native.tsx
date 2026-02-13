@@ -23,20 +23,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 1;
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
-    var7 = var3.jsx;
-    var _closure1_slot3 = var7;
+    var6 = var3.jsx;
+    var _closure1_slot3 = var6;
     var3 = var3.jsxs;
     var _closure1_slot4 = var3;
-    var3 = 2;
-    var3 = var5[var3];
-    var3 = var4.bind(var0)(var3);
-    var6 = var3.CircleErrorIcon;
-    var3 = {
-        'size': 'xs',
-        'color': 'text-feedback-critical'
-    };
-    var3 = var7.bind(var0)(var6, var3);
-    var _closure1_slot5 = var3;
     var3 = 7;
     var3 = var5[var3];
     var5 = var4.bind(var0)(var3);
@@ -46,10 +36,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = function arg0() {
         var1 = arg0;
         var8 = var1.children;
-        var4 = var1.style;
+        var5 = var1.style;
         var6 = _closure1_slot0;
         var9 = _closure1_slot1;
-        var1 = 3;
+        var1 = 2;
         var1 = var9[var1];
         var3 = undefined;
         var2 = var6.bind(var3)(var1);
@@ -61,14 +51,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = new Array(1);
         var1[0] = var10;
         var0 = function() { // Environment: var0
-            _fun48618: for (var _fun48618_ip = 0;;) switch (_fun48618_ip) {
+            _fun48710: for (var _fun48710_ip = 0;;) switch (_fun48710_ip) {
                 case 0:
                     var2 = _closure2_slot0;
                     var1 = null;
                     var1 = var1 != var2;
                     if (!var1) {
-                        _fun48618_ip = 28;
-                        continue _fun48618
+                        _fun48710_ip = 28;
+                        continue _fun48710
                     }
                 case 16:
                     var3 = _closure2_slot0;
@@ -76,13 +66,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = var2 !== var3;
                 case 28:
                     if (!var1) {
-                        _fun48618_ip = 77;
-                        continue _fun48618
+                        _fun48710_ip = 77;
+                        continue _fun48710
                     }
                 case 31:
                     var3 = _closure1_slot0;
                     var2 = _closure1_slot1;
-                    var1 = 4;
+                    var1 = 3;
                     var2 = var2[var1];
                     var1 = undefined;
                     var1 = var3.bind(var1)(var2);
@@ -97,7 +87,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         };
         var0 = var2.bind(var7)(var0, var1);
         var2 = _closure1_slot4;
-        var0 = 5;
+        var0 = 4;
         var0 = var9[var0];
         var0 = var6.bind(var3)(var0);
         var1 = var0.Stack;
@@ -106,11 +96,19 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             'spacing': 4,
             'align': 'flex-start'
         };
-        var0.style = var4;
-        var7 = _closure1_slot5;
-        var4 = new Array(2);
-        var4[0] = var7;
+        var0.style = var5;
         var7 = _closure1_slot3;
+        var4 = 5;
+        var4 = var9[var4];
+        var4 = var6.bind(var3)(var4);
+        var5 = var4.CircleErrorIcon;
+        var4 = {
+            'size': 'xs',
+            'color': 'text-feedback-critical'
+        };
+        var5 = var7.bind(var3)(var5, var4);
+        var4 = new Array(2);
+        var4[0] = var5;
         var5 = 6;
         var5 = var9[var5];
         var5 = var6.bind(var3)(var5);
@@ -128,4 +126,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.ErrorText = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 5454, 3155, 3207, 4086, 3938, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 3158, 3210, 4086, 5451, 3938, 2]);

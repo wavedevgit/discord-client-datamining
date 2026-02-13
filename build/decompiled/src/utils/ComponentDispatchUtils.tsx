@@ -66,7 +66,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8.warn = var9;
     var1.logger = var8;
     var6 = function arg0, arg1, arg2() {
-        _fun13524: for (var _fun13524_ip = 0;;) switch (_fun13524_ip) {
+        _fun13529: for (var _fun13529_ip = 0;;) switch (_fun13529_ip) {
             case 0:
                 var5 = arg0;
                 var _closure2_slot0 = var5;
@@ -87,8 +87,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = null;
                 var4 = var5;
                 if (!(var2 != var1)) {
-                    _fun13524_ip = 61;
-                    continue _fun13524
+                    _fun13529_ip = 61;
+                    continue _fun13529
                 }
             case 58:
                 var4 = var1;
@@ -138,4 +138,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.ComponentDispatcher = var3;
     var2.ComponentDispatch = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 1230, 3, 1231, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 1231, 3, 1232, 2]);

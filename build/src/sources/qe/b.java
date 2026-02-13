@@ -93,10 +93,10 @@ public final class b extends com.google.android.exoplayer2.f {
             this.A.h();
             if (X(J(), this.A, 0) == -4 && !this.A.n()) {
                 rc.f fVar = this.A;
-                this.E = fVar.f46232p;
+                this.E = fVar.f46800p;
                 if (this.D != null && !fVar.m()) {
                     this.A.v();
-                    float[] a02 = a0((ByteBuffer) w0.j(this.A.f46230i));
+                    float[] a02 = a0((ByteBuffer) w0.j(this.A.f46798i));
                     if (a02 != null) {
                         ((a) w0.j(this.D)).b(this.E - this.C, a02);
                     }

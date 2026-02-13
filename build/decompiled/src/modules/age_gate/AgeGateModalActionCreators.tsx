@@ -66,7 +66,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.openAgeGateModal = var3;
     var3 = function arg0() {
-        _fun41244: for (var _fun41244_ip = 0;;) switch (_fun41244_ip) {
+        _fun41274: for (var _fun41274_ip = 0;;) switch (_fun41274_ip) {
             case 0:
                 var6 = arg0;
                 var2 = _closure1_slot1;
@@ -92,8 +92,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var1 = var2.bind(var3)(var1);
                 if (!(var0 !== var6)) {
-                    _fun41244_ip = 111;
-                    continue _fun41244
+                    _fun41274_ip = 111;
+                    continue _fun41274
                 }
             case 50:
                 var2 = _closure1_slot1;
@@ -221,4 +221,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.closeFailedAgeGate = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1219, 660, 795, 806, 4563, 1220, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1220, 660, 796, 807, 4563, 1221, 2]);

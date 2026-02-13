@@ -5,22 +5,22 @@ import android.content.Intent;
 final class d0 extends e0 {
 
     /* renamed from: d  reason: collision with root package name */
-    final /* synthetic */ Intent f27221d;
+    final /* synthetic */ Intent f27789d;
 
     /* renamed from: e  reason: collision with root package name */
-    final /* synthetic */ gf.h f27222e;
+    final /* synthetic */ gf.h f27790e;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public d0(Intent intent, gf.h hVar, int i10) {
-        this.f27221d = intent;
-        this.f27222e = hVar;
+        this.f27789d = intent;
+        this.f27790e = hVar;
     }
 
     @Override // hf.e0
     public final void a() {
-        Intent intent = this.f27221d;
+        Intent intent = this.f27789d;
         if (intent != null) {
-            this.f27222e.startActivityForResult(intent, 2);
+            this.f27790e.startActivityForResult(intent, 2);
         }
     }
 }

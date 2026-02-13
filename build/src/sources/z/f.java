@@ -5,17 +5,17 @@ import z.o0;
 final class f extends o0.b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final p0 f55878a;
+    private final p0 f56446a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final androidx.camera.core.n f55879b;
+    private final androidx.camera.core.n f56447b;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public f(p0 p0Var, androidx.camera.core.n nVar) {
         if (p0Var != null) {
-            this.f55878a = p0Var;
+            this.f56446a = p0Var;
             if (nVar != null) {
-                this.f55879b = nVar;
+                this.f56447b = nVar;
                 return;
             }
             throw new NullPointerException("Null imageProxy");
@@ -25,12 +25,12 @@ final class f extends o0.b {
 
     @Override // z.o0.b
     androidx.camera.core.n a() {
-        return this.f55879b;
+        return this.f56447b;
     }
 
     @Override // z.o0.b
     p0 b() {
-        return this.f55878a;
+        return this.f56446a;
     }
 
     public boolean equals(Object obj) {
@@ -39,7 +39,7 @@ final class f extends o0.b {
         }
         if (obj instanceof o0.b) {
             o0.b bVar = (o0.b) obj;
-            if (this.f55878a.equals(bVar.b()) && this.f55879b.equals(bVar.a())) {
+            if (this.f56446a.equals(bVar.b()) && this.f56447b.equals(bVar.a())) {
                 return true;
             }
         }
@@ -47,10 +47,10 @@ final class f extends o0.b {
     }
 
     public int hashCode() {
-        return ((this.f55878a.hashCode() ^ 1000003) * 1000003) ^ this.f55879b.hashCode();
+        return ((this.f56446a.hashCode() ^ 1000003) * 1000003) ^ this.f56447b.hashCode();
     }
 
     public String toString() {
-        return "InputPacket{processingRequest=" + this.f55878a + ", imageProxy=" + this.f55879b + "}";
+        return "InputPacket{processingRequest=" + this.f56446a + ", imageProxy=" + this.f56447b + "}";
     }
 }

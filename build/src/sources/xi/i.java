@@ -6,7 +6,7 @@ import java.util.List;
 public interface i {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final i f54829a = new i() { // from class: xi.h
+    public static final i f55397a = new i() { // from class: xi.h
         @Override // xi.i
         public final List a(ComponentRegistrar componentRegistrar) {
             return componentRegistrar.getComponents();

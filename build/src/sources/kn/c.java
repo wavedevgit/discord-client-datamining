@@ -26,16 +26,16 @@ import kotlin.reflect.KClass;
 public final class c extends g {
 
     /* renamed from: q  reason: collision with root package name */
-    public static final b f31931q = new b(null);
+    public static final b f32499q = new b(null);
 
     /* renamed from: p  reason: collision with root package name */
-    private final int f31932p;
+    private final int f32500p;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class b implements c0 {
 
         /* renamed from: a  reason: collision with root package name */
-        private final /* synthetic */ a f31936a;
+        private final /* synthetic */ a f32504a;
 
         public /* synthetic */ b(DefaultConstructorMarker defaultConstructorMarker) {
             this();
@@ -47,16 +47,16 @@ public final class c extends g {
             Intrinsics.checkNotNullParameter(initialRendering, "initialRendering");
             Intrinsics.checkNotNullParameter(initialViewEnvironment, "initialViewEnvironment");
             Intrinsics.checkNotNullParameter(contextForNewView, "contextForNewView");
-            return this.f31936a.a(initialRendering, initialViewEnvironment, contextForNewView, viewGroup);
+            return this.f32504a.a(initialRendering, initialViewEnvironment, contextForNewView, viewGroup);
         }
 
         @Override // gn.c0
         public KClass getType() {
-            return this.f31936a.getType();
+            return this.f32504a.getType();
         }
 
         private b() {
-            this.f31936a = new a(0, 1, null);
+            this.f32504a = new a(0, 1, null);
         }
     }
 
@@ -65,14 +65,14 @@ public final class c extends g {
     public /* synthetic */ class C0449c {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final /* synthetic */ int[] f31937a;
+        public static final /* synthetic */ int[] f32505a;
 
         static {
             int[] iArr = new int[e.a.values().length];
             iArr[e.a.POSITIVE.ordinal()] = 1;
             iArr[e.a.NEGATIVE.ordinal()] = 2;
             iArr[e.a.NEUTRAL.ordinal()] = 3;
-            f31937a = iArr;
+            f32505a = iArr;
         }
     }
 
@@ -81,7 +81,7 @@ public final class c extends g {
     }
 
     private final int h(e.a aVar) {
-        int i10 = C0449c.f31937a[aVar.ordinal()];
+        int i10 = C0449c.f32505a[aVar.ordinal()];
         if (i10 != 1) {
             if (i10 != 2) {
                 if (i10 == 3) {
@@ -97,7 +97,7 @@ public final class c extends g {
     /* JADX INFO: Access modifiers changed from: private */
     public static final void i(e rendering, DialogInterface dialogInterface) {
         Intrinsics.checkNotNullParameter(rendering, "$rendering");
-        rendering.d().invoke(e.b.C0450b.f31950a);
+        rendering.d().invoke(e.b.C0450b.f32518a);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -141,7 +141,7 @@ public final class c extends g {
                         c.j(e.this, aVar2, dialogInterface, i11);
                     }
                 });
-                unit = Unit.f31988a;
+                unit = Unit.f32556a;
             }
             if (unit == null && (k10 = aVar.k(h(aVar2))) != null) {
                 k10.setVisibility(4);
@@ -157,7 +157,7 @@ public final class c extends g {
     public g.a b(e initialModalRendering, a0 initialViewEnvironment) {
         Intrinsics.checkNotNullParameter(initialModalRendering, "initialModalRendering");
         Intrinsics.checkNotNullParameter(initialViewEnvironment, "initialViewEnvironment");
-        androidx.appcompat.app.a create = new a.C0015a(getContext(), this.f31932p).create();
+        androidx.appcompat.app.a create = new a.C0015a(getContext(), this.f32500p).create();
         Intrinsics.checkNotNullExpressionValue(create, "Builder(context, dialogThemeResId)\n      .create()");
         g.a aVar = new g.a(initialModalRendering, initialViewEnvironment, create, null, 8, null);
         d(aVar);
@@ -168,7 +168,7 @@ public final class c extends g {
     public c(Context context, AttributeSet attributeSet, int i10, int i11, int i12) {
         super(context, attributeSet, i10, i11);
         Intrinsics.checkNotNullParameter(context, "context");
-        this.f31932p = i12;
+        this.f32500p = i12;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -176,17 +176,17 @@ public final class c extends g {
     public static final class a implements c0 {
 
         /* renamed from: a  reason: collision with root package name */
-        private final int f31933a;
+        private final int f32501a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final /* synthetic */ gn.f f31934b;
+        private final /* synthetic */ gn.f f32502b;
 
         /* renamed from: kn.c$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         static final class C0447a extends Lambda implements Function4 {
 
             /* renamed from: d  reason: collision with root package name */
-            final /* synthetic */ int f31935d;
+            final /* synthetic */ int f32503d;
 
             /* JADX INFO: Access modifiers changed from: package-private */
             /* renamed from: kn.c$a$a$a  reason: collision with other inner class name */
@@ -205,14 +205,14 @@ public final class c extends g {
                 @Override // kotlin.jvm.functions.Function2
                 public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2) {
                     a((f) obj, (a0) obj2);
-                    return Unit.f31988a;
+                    return Unit.f32556a;
                 }
             }
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             C0447a(int i10) {
                 super(4);
-                this.f31935d = i10;
+                this.f32503d = i10;
             }
 
             @Override // kotlin.jvm.functions.Function4
@@ -221,8 +221,8 @@ public final class c extends g {
                 Intrinsics.checkNotNullParameter(initialRendering, "initialRendering");
                 Intrinsics.checkNotNullParameter(initialEnv, "initialEnv");
                 Intrinsics.checkNotNullParameter(context, "context");
-                c cVar = new c(context, null, 0, 0, this.f31935d, 14, null);
-                cVar.setId(jn.a.f31205b);
+                c cVar = new c(context, null, 0, 0, this.f32503d, 14, null);
+                cVar.setId(jn.a.f31773b);
                 cVar.setLayoutParams(new ViewGroup.LayoutParams(-1, -1));
                 g0.a(cVar, initialRendering, initialEnv, new C0448a(cVar));
                 return cVar;
@@ -230,8 +230,8 @@ public final class c extends g {
         }
 
         public a(int i10) {
-            this.f31933a = i10;
-            this.f31934b = new gn.f(Reflection.getOrCreateKotlinClass(d.class), new C0447a(i10));
+            this.f32501a = i10;
+            this.f32502b = new gn.f(Reflection.getOrCreateKotlinClass(d.class), new C0447a(i10));
         }
 
         @Override // gn.c0
@@ -240,12 +240,12 @@ public final class c extends g {
             Intrinsics.checkNotNullParameter(initialRendering, "initialRendering");
             Intrinsics.checkNotNullParameter(initialViewEnvironment, "initialViewEnvironment");
             Intrinsics.checkNotNullParameter(contextForNewView, "contextForNewView");
-            return this.f31934b.a(initialRendering, initialViewEnvironment, contextForNewView, viewGroup);
+            return this.f32502b.a(initialRendering, initialViewEnvironment, contextForNewView, viewGroup);
         }
 
         @Override // gn.c0
         public KClass getType() {
-            return this.f31934b.getType();
+            return this.f32502b.getType();
         }
 
         public /* synthetic */ a(int i10, int i11, DefaultConstructorMarker defaultConstructorMarker) {

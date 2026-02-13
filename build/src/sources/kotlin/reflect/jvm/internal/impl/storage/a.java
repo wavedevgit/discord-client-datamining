@@ -3,25 +3,25 @@ package kotlin.reflect.jvm.internal.impl.storage;
 class a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Object f34517a;
+    private final Object f35085a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Thread f34518b = Thread.currentThread();
+    private final Thread f35086b = Thread.currentThread();
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public a(Object obj) {
-        this.f34517a = obj;
+        this.f35085a = obj;
     }
 
     public Object a() {
         if (b()) {
-            return this.f34517a;
+            return this.f35085a;
         }
         throw new IllegalStateException("No value in this thread (hasValue should be checked before)");
     }
 
     public boolean b() {
-        if (this.f34518b == Thread.currentThread()) {
+        if (this.f35086b == Thread.currentThread()) {
             return true;
         }
         return false;

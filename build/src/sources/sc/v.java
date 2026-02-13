@@ -10,16 +10,16 @@ import sc.v;
 public interface v {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final v f48054a;
+    public static final v f48622a;
 
     /* renamed from: b  reason: collision with root package name */
-    public static final v f48055b;
+    public static final v f48623b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public interface b {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final b f48056a = new b() { // from class: sc.w
+        public static final b f48624a = new b() { // from class: sc.w
             @Override // sc.v.b
             public final void release() {
                 v.b.a();
@@ -34,14 +34,14 @@ public interface v {
 
     static {
         a aVar = new a();
-        f48054a = aVar;
-        f48055b = aVar;
+        f48622a = aVar;
+        f48623b = aVar;
     }
 
     int a(Format format);
 
     default b b(u.a aVar, Format format) {
-        return b.f48056a;
+        return b.f48624a;
     }
 
     n c(u.a aVar, Format format);

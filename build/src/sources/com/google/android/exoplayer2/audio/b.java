@@ -126,7 +126,7 @@ public final class b {
         this.f12818b = (f) oe.a.e(fVar);
         Handler y10 = w0.y();
         this.f12819c = y10;
-        int i10 = w0.f39038a;
+        int i10 = w0.f39606a;
         if (i10 >= 23) {
             cVar = new c();
         } else {
@@ -161,7 +161,7 @@ public final class b {
         if (dVar != null) {
             dVar.a();
         }
-        if (w0.f39038a >= 23 && (cVar = this.f12820d) != null) {
+        if (w0.f39606a >= 23 && (cVar = this.f12820d) != null) {
             C0163b.a(this.f12817a, cVar, this.f12819c);
         }
         Intent intent = null;
@@ -179,7 +179,7 @@ public final class b {
             return;
         }
         this.f12823g = null;
-        if (w0.f39038a >= 23 && (cVar = this.f12820d) != null) {
+        if (w0.f39606a >= 23 && (cVar = this.f12820d) != null) {
             C0163b.b(this.f12817a, cVar);
         }
         BroadcastReceiver broadcastReceiver = this.f12821e;

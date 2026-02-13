@@ -16,37 +16,37 @@ import to.n4;
 public final class a implements ViewBinding {
 
     /* renamed from: a  reason: collision with root package name */
-    private final CoordinatorLayout f54947a;
+    private final CoordinatorLayout f55515a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final LinearLayout f54948b;
+    public final LinearLayout f55516b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final Button f54949c;
+    public final Button f55517c;
 
     /* renamed from: d  reason: collision with root package name */
-    public final ThemeableLottieAnimationView f54950d;
+    public final ThemeableLottieAnimationView f55518d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final Pi2NavigationBar f54951e;
+    public final Pi2NavigationBar f55519e;
 
     /* renamed from: f  reason: collision with root package name */
-    public final TextView f54952f;
+    public final TextView f55520f;
 
     private a(CoordinatorLayout coordinatorLayout, LinearLayout linearLayout, Button button, ThemeableLottieAnimationView themeableLottieAnimationView, Pi2NavigationBar pi2NavigationBar, TextView textView) {
-        this.f54947a = coordinatorLayout;
-        this.f54948b = linearLayout;
-        this.f54949c = button;
-        this.f54950d = themeableLottieAnimationView;
-        this.f54951e = pi2NavigationBar;
-        this.f54952f = textView;
+        this.f55515a = coordinatorLayout;
+        this.f55516b = linearLayout;
+        this.f55517c = button;
+        this.f55518d = themeableLottieAnimationView;
+        this.f55519e = pi2NavigationBar;
+        this.f55520f = textView;
     }
 
     public static a a(View view) {
-        int i10 = m4.f49405t;
+        int i10 = m4.f49973t;
         LinearLayout linearLayout = (LinearLayout) e4.a.a(view, i10);
         if (linearLayout != null) {
-            i10 = m4.f49407u;
+            i10 = m4.f49975u;
             Button button = (Button) e4.a.a(view, i10);
             if (button != null) {
                 i10 = m4.P;
@@ -68,7 +68,7 @@ public final class a implements ViewBinding {
     }
 
     public static a c(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z10) {
-        View inflate = layoutInflater.inflate(n4.f49537a, viewGroup, false);
+        View inflate = layoutInflater.inflate(n4.f50105a, viewGroup, false);
         if (z10) {
             viewGroup.addView(inflate);
         }
@@ -78,6 +78,6 @@ public final class a implements ViewBinding {
     @Override // androidx.viewbinding.ViewBinding
     /* renamed from: b */
     public CoordinatorLayout getRoot() {
-        return this.f54947a;
+        return this.f55515a;
     }
 }

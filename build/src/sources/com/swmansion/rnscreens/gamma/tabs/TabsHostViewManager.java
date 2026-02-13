@@ -51,7 +51,7 @@ public final class TabsHostViewManager extends ViewGroupManager<l> implements RN
     @Override // com.facebook.react.uimanager.BaseViewManager, com.facebook.react.uimanager.ViewManager
     @NotNull
     public Map<String, Object> getExportedCustomDirectEventTypeConstants() {
-        return o0.n(un.a.a(wn.e.f52942d));
+        return o0.n(un.a.a(wn.e.f53510d));
     }
 
     @Override // com.facebook.react.uimanager.ViewManager, com.facebook.react.bridge.NativeModule

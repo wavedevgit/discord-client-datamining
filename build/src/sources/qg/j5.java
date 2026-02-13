@@ -5,30 +5,30 @@ import bj.c;
 final class j5 implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final j5 f44596a = new j5();
+    static final j5 f45164a = new j5();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final bj.c f44597b;
+    private static final bj.c f45165b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final bj.c f44598c;
+    private static final bj.c f45166c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final bj.c f44599d;
+    private static final bj.c f45167d;
 
     static {
         c.b a10 = bj.c.a("options");
         s1 s1Var = new s1();
         s1Var.a(1);
-        f44597b = a10.b(s1Var.b()).a();
+        f45165b = a10.b(s1Var.b()).a();
         c.b a11 = bj.c.a("eventType");
         s1 s1Var2 = new s1();
         s1Var2.a(2);
-        f44598c = a11.b(s1Var2.b()).a();
+        f45166c = a11.b(s1Var2.b()).a();
         c.b a12 = bj.c.a("errorCode");
         s1 s1Var3 = new s1();
         s1Var3.a(3);
-        f44599d = a12.b(s1Var3.b()).a();
+        f45167d = a12.b(s1Var3.b()).a();
     }
 
     private j5() {

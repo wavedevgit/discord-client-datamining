@@ -39,26 +39,19 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 4;
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
-    var7 = var3.jsx;
-    var _closure1_slot7 = var7;
+    var3 = var3.jsx;
+    var _closure1_slot7 = var3;
     var3 = 5;
     var3 = var5[var3];
-    var8 = var4.bind(var0)(var3);
-    var6 = var8.createStyles;
+    var7 = var4.bind(var0)(var3);
+    var6 = var7.createStyles;
     var3 = {};
-    var9 = {};
-    var10 = 'center';
-    var9.textAlign = var10;
-    var3.helpLink = var9;
-    var3 = var6.bind(var8)(var3);
+    var8 = {};
+    var9 = 'center';
+    var8.textAlign = var9;
+    var3.helpLink = var8;
+    var3 = var6.bind(var7)(var3);
     var _closure1_slot8 = var3;
-    var3 = 6;
-    var3 = var5[var3];
-    var3 = var4.bind(var0)(var3);
-    var6 = var3.ShieldSpotIllustration;
-    var3 = {};
-    var3 = var7.bind(var0)(var6, var3);
-    var _closure1_slot9 = var3;
     var3 = 24;
     var3 = var5[var3];
     var5 = var4.bind(var0)(var3);
@@ -71,7 +64,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = function() { // Environment: var13
             var2 = _closure1_slot0;
             var1 = _closure1_slot2;
-            var0 = 7;
+            var0 = 6;
             var1 = var1[var0];
             var0 = undefined;
             var1 = var2.bind(var0)(var1);
@@ -87,13 +80,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var16 = var0.bind(var3)();
         var5 = _closure1_slot0;
         var8 = _closure1_slot2;
-        var0 = 8;
+        var0 = 7;
         var0 = var8[var0];
         var1 = var5.bind(var3)(var0);
         var0 = var1.useOnTaskComplete;
         var12 = var0.bind(var1)();
         var _closure2_slot1 = var12;
-        var0 = 9;
+        var0 = 8;
         var0 = var8[var0];
         var4 = var5.bind(var3)(var0);
         var2 = var4.useStateFromStores;
@@ -109,7 +102,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = var2.bind(var4)(var1, var0);
         var _closure2_slot2 = var0;
         var10 = _closure1_slot1;
-        var1 = 10;
+        var1 = 9;
         var1 = var8[var1];
         var2 = var10.bind(var3)(var1);
         var1 = {};
@@ -118,7 +111,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var1 = {};
             var4 = _closure1_slot0;
             var3 = _closure1_slot2;
-            var0 = 11;
+            var0 = 10;
             var3 = var3[var0];
             var0 = undefined;
             var3 = var4.bind(var0)(var3);
@@ -137,7 +130,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1[0] = var12;
         var1[1] = var0;
         var0 = function() { // Environment: var13
-            _fun118591: for (var _fun118591_ip = 0;;) switch (_fun118591_ip) {
+            _fun118615: for (var _fun118615_ip = 0;;) switch (_fun118615_ip) {
                 case 0:
                     var2 = _closure2_slot2;
                     var0 = null;
@@ -145,8 +138,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = undefined;
                     var4 = undefined;
                     if (var2) {
-                        _fun118591_ip = 30;
-                        continue _fun118591
+                        _fun118615_ip = 30;
+                        continue _fun118615
                     }
                 case 20:
                     var2 = _closure2_slot2;
@@ -154,21 +147,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 case 30:
                     var5 = _closure1_slot0;
                     var6 = _closure1_slot2;
-                    var2 = 12;
+                    var2 = 11;
                     var2 = var6[var2];
                     var2 = var5.bind(var0)(var2);
                     var2 = var2.AgeVerificationStatusUkAndAusOnly;
                     var2 = var2.UNVERIFIED;
                     if (!(var4 !== var2)) {
-                        _fun118591_ip = 116;
-                        continue _fun118591
+                        _fun118615_ip = 116;
+                        continue _fun118615
                     }
                 case 69:
                     var2 = _closure2_slot1;
                     var1 = {};
                     var4 = _closure1_slot0;
                     var5 = _closure1_slot2;
-                    var3 = 11;
+                    var3 = 10;
                     var3 = var5[var3];
                     var3 = var4.bind(var0)(var3);
                     var3 = var3.TaskInputType;
@@ -186,7 +179,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = function() { // Environment: var13
             var6 = _closure1_slot0;
             var7 = _closure1_slot2;
-            var1 = 13;
+            var1 = 12;
             var2 = var7[var1];
             var0 = undefined;
             var5 = var6.bind(var0)(var2);
@@ -205,11 +198,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         };
         var0 = var2.bind(var9)(var0, var1);
         var2 = _closure1_slot7;
-        var0 = 14;
+        var0 = 13;
         var0 = var8[var0];
         var1 = var10.bind(var3)(var0);
         var0 = {};
-        var9 = _closure1_slot9;
+        var9 = 14;
+        var9 = var8[var9];
+        var9 = var5.bind(var3)(var9);
+        var12 = var9.ShieldSpotIllustration;
+        var9 = {};
+        var9 = var2.bind(var3)(var12, var9);
         var0.ImageComponent = var9;
         var15 = 15;
         var9 = var8[var15];
@@ -315,4 +313,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1621, 660, 33, 1297, 6030, 491, 15104, 566, 6525, 15098, 1647, 4561, 15107, 1234, 2118, 2374, 6009, 1686, 11238, 4563, 3938, 6530, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1621, 660, 33, 1297, 491, 15094, 566, 6511, 15089, 1650, 4561, 15098, 6021, 1235, 2121, 2377, 5991, 1689, 11481, 4563, 3938, 6516, 2]);

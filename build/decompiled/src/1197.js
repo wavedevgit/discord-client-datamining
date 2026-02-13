@@ -1,293 +1,503 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = exports;
-    var2 = require;
-    var _closure1_slot0 = var2;
-    var2 = dependencyMap;
-    var _closure1_slot1 = var2;
-    var2 = global;
-    var5 = var2.Object;
-    var4 = var5.defineProperty;
+    var4 = metroImportDefault;
+    var2 = exports;
+    var5 = dependencyMap;
+    var0 = require;
+    var _closure1_slot0 = var0;
+    var _closure1_slot1 = var5;
+    var0 = function arg0, arg1, arg2() {
+        _fun13015: for (var _fun13015_ip = 0;;) switch (_fun13015_ip) {
+            case 0:
+                var3 = arg0;
+                var5 = arg2;
+                var1 = _closure1_slot3;
+                var2 = undefined;
+                var0 = arg1;
+                var8 = var1.bind(var2)(var0);
+                var1 = _closure1_slot2;
+                var0 = _closure1_slot12;
+                var0 = var0.bind(var2)();
+                if (var0) {
+                    _fun13015_ip = 51;
+                    continue _fun13015
+                }
+            case 38:
+                var0 = var8.apply;
+                var0 = var0.bind(var8)(var3, var5);
+                _fun13015_ip = 92;
+                continue _fun13015;
+            case 51:
+                var6 = global;
+                var7 = var6.Reflect;
+                var6 = var7.construct;
+                if (var5) {
+                    _fun13015_ip = 71;
+                    continue _fun13015
+                }
+            case 67:
+                var5 = new Array(0);
+            case 71:
+                var4 = _closure1_slot3;
+                var4 = var4.bind(var2)(var3);
+                var4 = var4.constructor;
+                var0 = var6.bind(var7)(var8, var5, var4);
+            case 92:
+                var0 = var1.bind(var2)(var3, var0);
+                return var0;
+        }
+    };
+    var _closure1_slot11 = var0;
+    var0 = function() {
+        _fun13016: for (var _fun13016_ip = 0;;) switch (_fun13016_ip) {
+            case 0:
+            case 2: // try_start_0
+                var1 = global;
+                var2 = var1.Boolean;
+                var2 = var2.prototype;
+                var3 = var2.valueOf;
+                var2 = var3.call;
+                var7 = var1.Reflect;
+                var6 = var7.construct;
+                var5 = var1.Boolean;
+                var4 = new Array(0);
+                var1 = function() { // Environment: var0
+                    var0 = undefined;
+                    return var0;
+                };
+                var1 = var6.bind(var7)(var5, var4, var1);
+                var1 = var2.bind(var3)(var1);
+                var1 = !var1;
+                var _closure2_slot0 = var1;
+            case 70: // try_end0
+                _fun13016_ip = 74;
+                continue _fun13016;
+            case 72: // catch_target0
+                CatchBlockStart(arg_register = 1);
+            case 74:
+                var1 = function() {
+                    var0 = _closure2_slot0;
+                    var0 = !var0;
+                    var0 = !var0;
+                    return var0;
+                };
+                _closure1_slot12 = var1;
+                var0 = undefined;
+                var0 = var1.bind(var0)();
+                return var0;
+        }
+    };
+    var _closure1_slot12 = var0;
+    var0 = global;
+    var7 = var0.Object;
+    var6 = var7.defineProperty;
     var3 = {};
-    var2 = true;
-    var3.value = var2;
-    var2 = '__esModule';
-    var2 = var4.bind(var5)(var1, var2, var3);
-    var2 = function() {
-        _fun13041: for (var _fun13041_ip = 0;;) switch (_fun13041_ip) {
+    var0 = true;
+    var3.value = var0;
+    var0 = '__esModule';
+    var0 = var6.bind(var7)(var2, var0, var3);
+    var0 = 0;
+    var3 = var5[var0];
+    var0 = undefined;
+    var3 = var4.bind(var0)(var3);
+    var _closure1_slot2 = var3;
+    var3 = 1;
+    var3 = var5[var3];
+    var3 = var4.bind(var0)(var3);
+    var _closure1_slot3 = var3;
+    var3 = 2;
+    var3 = var5[var3];
+    var3 = var4.bind(var0)(var3);
+    var _closure1_slot4 = var3;
+    var3 = 3;
+    var3 = var5[var3];
+    var3 = var4.bind(var0)(var3);
+    var _closure1_slot5 = var3;
+    var3 = 4;
+    var3 = var5[var3];
+    var3 = var4.bind(var0)(var3);
+    var _closure1_slot6 = var3;
+    var3 = function() {
+        var0 = undefined;
+        return var0;
+    };
+    var _closure1_slot7 = var3;
+    var3 = function() { // Environment: var1
+        var4 = _closure1_slot6;
+        var3 = function() {
+            var3 = _closure1_slot5;
+            var2 = _closure2_slot0;
+            var0 = undefined;
+            var1 = this;
+            var1 = var3.bind(var0)(var1, var2);
+            return var0;
+        };
+        var _closure2_slot0 = var3;
+        var0 = {};
+        var2 = '_feedbackComponentName';
+        var0.key = var2;
+        var2 = function() {
+            var0 = global;
+            var2 = var0.Error;
+            var0 = var2.prototype;
+            var1 = Object.create(var0, {
+                constructor: {
+                    value: var2
+                }
+            });
+            var3 = 'Subclasses must override feedbackComponentName';
+            var4 = var1;
+            var0 = new var4[var2](var3, var2);
+            var0 = var0 instanceof Object ? var0 : var1;
+            throw var0;
+        };
+        var0.get = var2;
+        var2 = new Array(6);
+        var2[0] = var0;
+        var0 = {};
+        var5 = 'initialize';
+        var0.key = var5;
+        var5 = function arg0() {
+            var1 = arg0;
+            var0 = this;
+            var0._setVisibility = var1;
+            var0 = undefined;
+            return var0;
+        };
+        var0.value = var5;
+        var2[1] = var0;
+        var0 = {};
+        var5 = 'reset';
+        var0.key = var5;
+        var5 = function() {
+            var1 = this;
+            var0 = false;
+            var1._isVisible = var0;
+            var0 = _closure1_slot7;
+            var1._setVisibility = var0;
+            var0 = undefined;
+            return var0;
+        };
+        var0.value = var5;
+        var2[2] = var0;
+        var0 = {};
+        var5 = 'show';
+        var0.key = var5;
+        var5 = function() {
+            _fun13025: for (var _fun13025_ip = 0;;) switch (_fun13025_ip) {
+                case 0:
+                    var2 = this;
+                    var1 = var2._setVisibility;
+                    var0 = _closure1_slot7;
+                    if (!(var1 === var0)) {
+                        _fun13025_ip = 85;
+                        continue _fun13025
+                    }
+                case 20:
+                    var0 = global;
+                    var3 = var0.console;
+                    var1 = var3.warn;
+                    var12 = var2._feedbackComponentName;
+                    var10 = var2._feedbackComponentName;
+                    var0 = var0.HermesInternal;
+                    var6 = var0.concat;
+                    var13 = '[Sentry] ';
+                    var11 = " requires 'Sentry.wrap(RootComponent)' to be called before 'show";
+                    var9 = "()'.";
+                    var0 = var13[var6](var12, var11, var10, var9, var8);
+                    var0 = var1.bind(var3)(var0);
+                    _fun13025_ip = 104;
+                    continue _fun13025;
+                case 85:
+                    var1 = true;
+                    var2._isVisible = var1;
+                    var0 = var2._setVisibility;
+                    var0 = var0.bind(var2)(var1);
+                case 104:
+                    var0 = undefined;
+                    return var0;
+            }
+        };
+        var0.value = var5;
+        var2[3] = var0;
+        var0 = {};
+        var5 = 'hide';
+        var0.key = var5;
+        var5 = function() {
+            _fun13026: for (var _fun13026_ip = 0;;) switch (_fun13026_ip) {
+                case 0:
+                    var2 = this;
+                    var1 = var2._setVisibility;
+                    var0 = _closure1_slot7;
+                    if (!(var1 === var0)) {
+                        _fun13026_ip = 75;
+                        continue _fun13026
+                    }
+                case 20:
+                    var0 = global;
+                    var3 = var0.console;
+                    var1 = var3.warn;
+                    var6 = var2._feedbackComponentName;
+                    var0 = var0.HermesInternal;
+                    var5 = var0.concat;
+                    var4 = '[Sentry] ';
+                    var0 = " requires 'Sentry.wrap(RootComponent)' before interacting with the widget.";
+                    var0 = var5.bind(var4)(var6, var0);
+                    var0 = var1.bind(var3)(var0);
+                    _fun13026_ip = 94;
+                    continue _fun13026;
+                case 75:
+                    var1 = false;
+                    var2._isVisible = var1;
+                    var0 = var2._setVisibility;
+                    var0 = var0.bind(var2)(var1);
+                case 94:
+                    var0 = undefined;
+                    return var0;
+            }
+        };
+        var0.value = var5;
+        var2[4] = var0;
+        var0 = {};
+        var5 = 'isFormVisible';
+        var0.key = var5;
+        var1 = function() {
+            var0 = this;
+            var0 = var0._isVisible;
+            return var0;
+        };
+        var0.value = var1;
+        var2[5] = var0;
+        var1 = undefined;
+        var0 = null;
+        var0 = var4.bind(var1)(var3, var0, var2);
+        return var0;
+    };
+    var6 = var3.bind(var0)();
+    var3 = false;
+    var6._isVisible = var3;
+    var3 = function(arg0) { // Environment: var1
+        var4 = function() {
+            var4 = this;
+            var3 = undefined;
+            var0 = undefined;
+            var5 = _closure1_slot5;
+            var2 = _closure2_slot0;
+            var5 = var5.bind(var3)(var4, var2);
+            var1 = _closure1_slot11;
+            var0 = arguments;
+            var0 = var1.bind(var3)(var4, var2, var0);
+            return var0;
+        };
+        var _closure2_slot0 = var4;
+        var5 = _closure1_slot4;
+        var3 = undefined;
+        var2 = arg0;
+        var2 = var5.bind(var3)(var4, var2);
+        var2 = _closure1_slot6;
+        var0 = {};
+        var5 = '_feedbackComponentName';
+        var0.key = var5;
+        var1 = function() {
+            var0 = 'FeedbackWidget';
+            return var0;
+        };
+        var0.get = var1;
+        var1 = new Array(1);
+        var1[0] = var0;
+        var0 = null;
+        var0 = var2.bind(var3)(var4, var0, var1);
+        return var0;
+    };
+    var5 = var3.bind(var0)(var6);
+    var _closure1_slot8 = var5;
+    var3 = function(arg0) { // Environment: var1
+        var4 = function() {
+            var4 = this;
+            var3 = undefined;
+            var0 = undefined;
+            var5 = _closure1_slot5;
+            var2 = _closure2_slot0;
+            var5 = var5.bind(var3)(var4, var2);
+            var1 = _closure1_slot11;
+            var0 = arguments;
+            var0 = var1.bind(var3)(var4, var2, var0);
+            return var0;
+        };
+        var _closure2_slot0 = var4;
+        var5 = _closure1_slot4;
+        var3 = undefined;
+        var2 = arg0;
+        var2 = var5.bind(var3)(var4, var2);
+        var2 = _closure1_slot6;
+        var0 = {};
+        var5 = '_feedbackComponentName';
+        var0.key = var5;
+        var1 = function() {
+            var0 = 'FeedbackButton';
+            return var0;
+        };
+        var0.get = var1;
+        var1 = new Array(1);
+        var1[0] = var0;
+        var0 = null;
+        var0 = var2.bind(var3)(var4, var0, var1);
+        return var0;
+    };
+    var4 = var3.bind(var0)(var6);
+    var _closure1_slot9 = var4;
+    var3 = function(arg0) { // Environment: var1
+        var4 = function() {
+            var4 = this;
+            var3 = undefined;
+            var0 = undefined;
+            var5 = _closure1_slot5;
+            var2 = _closure2_slot0;
+            var5 = var5.bind(var3)(var4, var2);
+            var1 = _closure1_slot11;
+            var0 = arguments;
+            var0 = var1.bind(var3)(var4, var2, var0);
+            return var0;
+        };
+        var _closure2_slot0 = var4;
+        var5 = _closure1_slot4;
+        var3 = undefined;
+        var2 = arg0;
+        var2 = var5.bind(var3)(var4, var2);
+        var2 = _closure1_slot6;
+        var0 = {};
+        var5 = '_feedbackComponentName';
+        var0.key = var5;
+        var1 = function() {
+            var0 = 'ScreenshotButton';
+            return var0;
+        };
+        var0.get = var1;
+        var1 = new Array(1);
+        var1[0] = var0;
+        var0 = null;
+        var0 = var2.bind(var3)(var4, var0, var1);
+        return var0;
+    };
+    var3 = var3.bind(var0)(var6);
+    var _closure1_slot10 = var3;
+    var6 = 200;
+    var2.PULL_DOWN_CLOSE_THRESHOLD = var6;
+    var2.SLIDE_ANIMATION_DURATION = var6;
+    var2.BACKGROUND_ANIMATION_DURATION = var6;
+    var2.FeedbackWidgetManager = var5;
+    var2.FeedbackButtonManager = var4;
+    var2.ScreenshotButtonManager = var3;
+    var3 = function() {
+        var3 = _closure1_slot0;
+        var2 = _closure1_slot1;
+        var0 = 5;
+        var2 = var2[var0];
+        var0 = undefined;
+        var3 = var3.bind(var0)(var2);
+        var2 = var3.lazyLoadAutoInjectFeedbackButtonIntegration;
+        var2 = var2.bind(var3)();
+        var2 = _closure1_slot9;
+        var1 = var2.show;
+        var1 = var1.bind(var2)();
+        return var0;
+    };
+    var2.showFeedbackButton = var3;
+    var3 = function() {
+        var1 = _closure1_slot9;
+        var0 = var1.hide;
+        var0 = var0.bind(var1)();
+        var0 = undefined;
+        return var0;
+    };
+    var2.hideFeedbackButton = var3;
+    var3 = function() {
+        var3 = _closure1_slot0;
+        var2 = _closure1_slot1;
+        var0 = 5;
+        var2 = var2[var0];
+        var0 = undefined;
+        var3 = var3.bind(var0)(var2);
+        var2 = var3.lazyLoadAutoInjectFeedbackIntegration;
+        var2 = var2.bind(var3)();
+        var2 = _closure1_slot8;
+        var1 = var2.show;
+        var1 = var1.bind(var2)();
+        return var0;
+    };
+    var2.showFeedbackWidget = var3;
+    var3 = function() {
+        _fun13040: for (var _fun13040_ip = 0;;) switch (_fun13040_ip) {
             case 0:
                 var3 = _closure1_slot0;
-                var0 = _closure1_slot1;
-                var7 = 0;
-                var2 = var0[var7];
+                var2 = _closure1_slot1;
+                var0 = 6;
+                var2 = var2[var0];
                 var0 = undefined;
                 var3 = var3.bind(var0)(var2);
-                var2 = var3.getClient;
-                var6 = var2.bind(var3)();
-                var5 = null;
-                var2 = undefined;
-                if (!(var5 !== var6)) {
-                    _fun13041_ip = 85;
-                    continue _fun13041
+                var2 = var3.isWeb;
+                var4 = var2.bind(var3)();
+                var2 = _closure1_slot0;
+                var3 = _closure1_slot1;
+                if (var4) {
+                    _fun13040_ip = 84;
+                    continue _fun13040
                 }
-            case 42:
-                var2 = undefined;
-                if (!(var0 !== var6)) {
-                    _fun13041_ip = 85;
-                    continue _fun13041
-                }
-            case 48:
-                var4 = var6.getIntegrationByName;
-                var8 = _closure1_slot0;
-                var9 = _closure1_slot1;
-                var3 = 1;
-                var3 = var9[var3];
-                var3 = var8.bind(var0)(var3);
-                var3 = var3.MOBILE_FEEDBACK_INTEGRATION_NAME;
-                var2 = var4.bind(var6)(var3);
-            case 85:
-                var3 = undefined;
-                if (var2) {
-                    _fun13041_ip = 124;
-                    continue _fun13041
-                }
-            case 90:
-                var6 = _closure1_slot0;
-                var4 = _closure1_slot1;
-                var4 = var4[var7];
-                var6 = var6.bind(var0)(var4);
-                var4 = var6.getClient;
-                var4 = var4.bind(var6)();
-                var2 = var5 === var4;
-                var3 = var4;
-            case 124:
-                if (var2) {
-                    _fun13041_ip = 131;
-                    continue _fun13041
-                }
-            case 127:
-                var2 = var0 === var3;
-            case 131:
-                if (var2) {
-                    _fun13041_ip = 175;
-                    continue _fun13041
-                }
-            case 134:
-                var2 = var3.addIntegration;
-                var4 = _closure1_slot0;
-                var5 = _closure1_slot1;
-                var1 = 1;
-                var1 = var5[var1];
-                var4 = var4.bind(var0)(var1);
-                var1 = var4.feedbackIntegration;
+            case 46:
+                var4 = 5;
+                var4 = var3[var4];
+                var5 = var2.bind(var0)(var4);
+                var4 = var5.lazyLoadAutoInjectScreenshotButtonIntegration;
+                var4 = var4.bind(var5)();
+                var4 = _closure1_slot10;
+                var1 = var4.show;
                 var1 = var1.bind(var4)();
+                _fun13040_ip = 118;
+                continue _fun13040;
+            case 84:
+                var1 = 7;
+                var1 = var3[var1];
+                var1 = var2.bind(var0)(var1);
+                var3 = var1.debug;
+                var2 = var3.warn;
+                var1 = 'ScreenshotButton is not supported on Web.';
                 var1 = var2.bind(var3)(var1);
-            case 175:
+            case 118:
                 return var0;
         }
     };
-    var1.lazyLoadFeedbackIntegration = var2;
-    var2 = 'AutoInjectMobileFeedback';
-    var1.AUTO_INJECT_FEEDBACK_INTEGRATION_NAME = var2;
-    var2 = function() {
-        _fun13042: for (var _fun13042_ip = 0;;) switch (_fun13042_ip) {
-            case 0:
-                var3 = _closure1_slot0;
-                var0 = _closure1_slot1;
-                var6 = 0;
-                var1 = var0[var6];
-                var0 = undefined;
-                var3 = var3.bind(var0)(var1);
-                var1 = var3.getClient;
-                var7 = var1.bind(var3)();
-                var4 = null;
-                var1 = undefined;
-                if (!(var4 !== var7)) {
-                    _fun13042_ip = 65;
-                    continue _fun13042
-                }
-            case 42:
-                var1 = undefined;
-                if (!(var0 !== var7)) {
-                    _fun13042_ip = 65;
-                    continue _fun13042
-                }
-            case 48:
-                var5 = var7.getIntegrationByName;
-                var3 = 'AutoInjectMobileFeedback';
-                var1 = var5.bind(var7)(var3);
-            case 65:
-                var3 = undefined;
-                if (var1) {
-                    _fun13042_ip = 104;
-                    continue _fun13042
-                }
-            case 70:
-                var5 = _closure1_slot0;
-                var2 = _closure1_slot1;
-                var2 = var2[var6];
-                var5 = var5.bind(var0)(var2);
-                var2 = var5.getClient;
-                var2 = var2.bind(var5)();
-                var1 = var4 === var2;
-                var3 = var2;
-            case 104:
-                if (var1) {
-                    _fun13042_ip = 111;
-                    continue _fun13042
-                }
-            case 107:
-                var1 = var0 === var3;
-            case 111:
-                if (var1) {
-                    _fun13042_ip = 137;
-                    continue _fun13042
-                }
-            case 114:
-                var2 = var3.addIntegration;
-                var1 = {};
-                var4 = 'AutoInjectMobileFeedback';
-                var1.name = var4;
-                var1 = var2.bind(var3)(var1);
-            case 137:
-                return var0;
-        }
+    var2.showScreenshotButton = var3;
+    var3 = function() {
+        var1 = _closure1_slot10;
+        var0 = var1.hide;
+        var0 = var0.bind(var1)();
+        var0 = undefined;
+        return var0;
     };
-    var1.lazyLoadAutoInjectFeedbackIntegration = var2;
-    var2 = 'AutoInjectMobileFeedbackButton';
-    var1.AUTO_INJECT_FEEDBACK_BUTTON_INTEGRATION_NAME = var2;
-    var2 = function() {
-        _fun13043: for (var _fun13043_ip = 0;;) switch (_fun13043_ip) {
-            case 0:
-                var3 = _closure1_slot0;
-                var0 = _closure1_slot1;
-                var6 = 0;
-                var1 = var0[var6];
-                var0 = undefined;
-                var3 = var3.bind(var0)(var1);
-                var1 = var3.getClient;
-                var7 = var1.bind(var3)();
-                var4 = null;
-                var1 = undefined;
-                if (!(var4 !== var7)) {
-                    _fun13043_ip = 65;
-                    continue _fun13043
-                }
-            case 42:
-                var1 = undefined;
-                if (!(var0 !== var7)) {
-                    _fun13043_ip = 65;
-                    continue _fun13043
-                }
-            case 48:
-                var5 = var7.getIntegrationByName;
-                var3 = 'AutoInjectMobileFeedbackButton';
-                var1 = var5.bind(var7)(var3);
-            case 65:
-                var3 = undefined;
-                if (var1) {
-                    _fun13043_ip = 104;
-                    continue _fun13043
-                }
-            case 70:
-                var5 = _closure1_slot0;
-                var2 = _closure1_slot1;
-                var2 = var2[var6];
-                var5 = var5.bind(var0)(var2);
-                var2 = var5.getClient;
-                var2 = var2.bind(var5)();
-                var1 = var4 === var2;
-                var3 = var2;
-            case 104:
-                if (var1) {
-                    _fun13043_ip = 111;
-                    continue _fun13043
-                }
-            case 107:
-                var1 = var0 === var3;
-            case 111:
-                if (var1) {
-                    _fun13043_ip = 137;
-                    continue _fun13043
-                }
-            case 114:
-                var2 = var3.addIntegration;
-                var1 = {};
-                var4 = 'AutoInjectMobileFeedbackButton';
-                var1.name = var4;
-                var1 = var2.bind(var3)(var1);
-            case 137:
-                return var0;
-        }
+    var2.hideScreenshotButton = var3;
+    var3 = function() {
+        var1 = _closure1_slot9;
+        var0 = var1.reset;
+        var0 = var0.bind(var1)();
+        var0 = undefined;
+        return var0;
     };
-    var1.lazyLoadAutoInjectFeedbackButtonIntegration = var2;
-    var2 = 'AutoInjectMobileScreenshotButton';
-    var1.AUTO_INJECT_SCREENSHOT_BUTTON_INTEGRATION_NAME = var2;
-    var0 = function() {
-        _fun13044: for (var _fun13044_ip = 0;;) switch (_fun13044_ip) {
-            case 0:
-                var3 = _closure1_slot0;
-                var0 = _closure1_slot1;
-                var6 = 0;
-                var1 = var0[var6];
-                var0 = undefined;
-                var3 = var3.bind(var0)(var1);
-                var1 = var3.getClient;
-                var7 = var1.bind(var3)();
-                var4 = null;
-                var1 = undefined;
-                if (!(var4 !== var7)) {
-                    _fun13044_ip = 65;
-                    continue _fun13044
-                }
-            case 42:
-                var1 = undefined;
-                if (!(var0 !== var7)) {
-                    _fun13044_ip = 65;
-                    continue _fun13044
-                }
-            case 48:
-                var5 = var7.getIntegrationByName;
-                var3 = 'AutoInjectMobileScreenshotButton';
-                var1 = var5.bind(var7)(var3);
-            case 65:
-                var3 = undefined;
-                if (var1) {
-                    _fun13044_ip = 104;
-                    continue _fun13044
-                }
-            case 70:
-                var5 = _closure1_slot0;
-                var2 = _closure1_slot1;
-                var2 = var2[var6];
-                var5 = var5.bind(var0)(var2);
-                var2 = var5.getClient;
-                var2 = var2.bind(var5)();
-                var1 = var4 === var2;
-                var3 = var2;
-            case 104:
-                if (var1) {
-                    _fun13044_ip = 111;
-                    continue _fun13044
-                }
-            case 107:
-                var1 = var0 === var3;
-            case 111:
-                if (var1) {
-                    _fun13044_ip = 137;
-                    continue _fun13044
-                }
-            case 114:
-                var2 = var3.addIntegration;
-                var1 = {};
-                var4 = 'AutoInjectMobileScreenshotButton';
-                var1.name = var4;
-                var1 = var2.bind(var3)(var1);
-            case 137:
-                return var0;
-        }
+    var2.resetFeedbackButtonManager = var3;
+    var3 = function() {
+        var1 = _closure1_slot8;
+        var0 = var1.reset;
+        var0 = var0.bind(var1)();
+        var0 = undefined;
+        return var0;
     };
-    var1.lazyLoadAutoInjectScreenshotButtonIntegration = var0;
-    var0 = undefined;
+    var2.resetFeedbackWidgetManager = var3;
+    var1 = function() {
+        var1 = _closure1_slot10;
+        var0 = var1.reset;
+        var0 = var0.bind(var1)();
+        var0 = undefined;
+        return var0;
+    };
+    var2.resetScreenshotButtonManager = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [817, 1129]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [15, 17, 18, 6, 7, 1198, 1000, 818]);

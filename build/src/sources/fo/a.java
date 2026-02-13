@@ -129,7 +129,7 @@ public final class a {
         }
 
         private final boolean f(String str) {
-            if (new Regex("^@\n\\u001e\r(ANSI |AAMVA)\\d{10}.+", kotlin.text.m.f34976s).i(StringsKt.k1(str).toString()) && e(str, a.f23943v) != null && e(str, a.f23947z) != null) {
+            if (new Regex("^@\n\\u001e\r(ANSI |AAMVA)\\d{10}.+", kotlin.text.m.f35544s).i(StringsKt.k1(str).toString()) && e(str, a.f23943v) != null && e(str, a.f23947z) != null) {
                 return true;
             }
             return false;

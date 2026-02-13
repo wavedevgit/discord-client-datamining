@@ -3,38 +3,38 @@ package m4;
 public final class c {
 
     /* renamed from: a  reason: collision with root package name */
-    private final boolean f36132a;
+    private final boolean f36700a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final boolean f36133b;
+    private final boolean f36701b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final boolean f36134c;
+    private final boolean f36702c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final boolean f36135d;
+    private final boolean f36703d;
 
     public c(boolean z10, boolean z11, boolean z12, boolean z13) {
-        this.f36132a = z10;
-        this.f36133b = z11;
-        this.f36134c = z12;
-        this.f36135d = z13;
+        this.f36700a = z10;
+        this.f36701b = z11;
+        this.f36702c = z12;
+        this.f36703d = z13;
     }
 
     public final boolean a() {
-        return this.f36132a;
+        return this.f36700a;
     }
 
     public final boolean b() {
-        return this.f36134c;
+        return this.f36702c;
     }
 
     public final boolean c() {
-        return this.f36135d;
+        return this.f36703d;
     }
 
     public final boolean d() {
-        return this.f36133b;
+        return this.f36701b;
     }
 
     public boolean equals(Object obj) {
@@ -45,7 +45,7 @@ public final class c {
             return false;
         }
         c cVar = (c) obj;
-        if (this.f36132a == cVar.f36132a && this.f36133b == cVar.f36133b && this.f36134c == cVar.f36134c && this.f36135d == cVar.f36135d) {
+        if (this.f36700a == cVar.f36700a && this.f36701b == cVar.f36701b && this.f36702c == cVar.f36702c && this.f36703d == cVar.f36703d) {
             return true;
         }
         return false;
@@ -58,26 +58,26 @@ public final class c {
     /* JADX WARN: Type inference failed for: r2v0, types: [boolean] */
     /* JADX WARN: Type inference failed for: r2v2, types: [boolean] */
     public int hashCode() {
-        boolean z10 = this.f36132a;
+        boolean z10 = this.f36700a;
         int i10 = 1;
         ?? r02 = z10;
         if (z10) {
             r02 = 1;
         }
         int i11 = r02 * 31;
-        ?? r22 = this.f36133b;
+        ?? r22 = this.f36701b;
         int i12 = r22;
         if (r22 != 0) {
             i12 = 1;
         }
         int i13 = (i11 + i12) * 31;
-        ?? r23 = this.f36134c;
+        ?? r23 = this.f36702c;
         int i14 = r23;
         if (r23 != 0) {
             i14 = 1;
         }
         int i15 = (i13 + i14) * 31;
-        boolean z11 = this.f36135d;
+        boolean z11 = this.f36703d;
         if (!z11) {
             i10 = z11 ? 1 : 0;
         }
@@ -85,6 +85,6 @@ public final class c {
     }
 
     public String toString() {
-        return "NetworkState(isConnected=" + this.f36132a + ", isValidated=" + this.f36133b + ", isMetered=" + this.f36134c + ", isNotRoaming=" + this.f36135d + ')';
+        return "NetworkState(isConnected=" + this.f36700a + ", isValidated=" + this.f36701b + ", isMetered=" + this.f36702c + ", isNotRoaming=" + this.f36703d + ')';
     }
 }

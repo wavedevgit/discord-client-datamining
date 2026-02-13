@@ -18,121 +18,121 @@ import t5.t;
 public abstract class a implements a.b, k, e {
 
     /* renamed from: e  reason: collision with root package name */
-    private final com.airbnb.lottie.n f36831e;
+    private final com.airbnb.lottie.n f37399e;
 
     /* renamed from: f  reason: collision with root package name */
-    protected final u5.b f36832f;
+    protected final u5.b f37400f;
 
     /* renamed from: h  reason: collision with root package name */
-    private final float[] f36834h;
+    private final float[] f37402h;
 
     /* renamed from: i  reason: collision with root package name */
-    final Paint f36835i;
+    final Paint f37403i;
 
     /* renamed from: j  reason: collision with root package name */
-    private final o5.a f36836j;
+    private final o5.a f37404j;
 
     /* renamed from: k  reason: collision with root package name */
-    private final o5.a f36837k;
+    private final o5.a f37405k;
 
     /* renamed from: l  reason: collision with root package name */
-    private final List f36838l;
+    private final List f37406l;
 
     /* renamed from: m  reason: collision with root package name */
-    private final o5.a f36839m;
+    private final o5.a f37407m;
 
     /* renamed from: n  reason: collision with root package name */
-    private o5.a f36840n;
+    private o5.a f37408n;
 
     /* renamed from: o  reason: collision with root package name */
-    private o5.a f36841o;
+    private o5.a f37409o;
 
     /* renamed from: p  reason: collision with root package name */
-    float f36842p;
+    float f37410p;
 
     /* renamed from: q  reason: collision with root package name */
-    private o5.c f36843q;
+    private o5.c f37411q;
 
     /* renamed from: a  reason: collision with root package name */
-    private final PathMeasure f36827a = new PathMeasure();
+    private final PathMeasure f37395a = new PathMeasure();
 
     /* renamed from: b  reason: collision with root package name */
-    private final Path f36828b = new Path();
+    private final Path f37396b = new Path();
 
     /* renamed from: c  reason: collision with root package name */
-    private final Path f36829c = new Path();
+    private final Path f37397c = new Path();
 
     /* renamed from: d  reason: collision with root package name */
-    private final RectF f36830d = new RectF();
+    private final RectF f37398d = new RectF();
 
     /* renamed from: g  reason: collision with root package name */
-    private final List f36833g = new ArrayList();
+    private final List f37401g = new ArrayList();
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class b {
 
         /* renamed from: a  reason: collision with root package name */
-        private final List f36844a;
+        private final List f37412a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final u f36845b;
+        private final u f37413b;
 
         private b(u uVar) {
-            this.f36844a = new ArrayList();
-            this.f36845b = uVar;
+            this.f37412a = new ArrayList();
+            this.f37413b = uVar;
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public a(com.airbnb.lottie.n nVar, u5.b bVar, Paint.Cap cap, Paint.Join join, float f10, s5.d dVar, s5.b bVar2, List list, s5.b bVar3) {
         m5.a aVar = new m5.a(1);
-        this.f36835i = aVar;
-        this.f36842p = 0.0f;
-        this.f36831e = nVar;
-        this.f36832f = bVar;
+        this.f37403i = aVar;
+        this.f37410p = 0.0f;
+        this.f37399e = nVar;
+        this.f37400f = bVar;
         aVar.setStyle(Paint.Style.STROKE);
         aVar.setStrokeCap(cap);
         aVar.setStrokeJoin(join);
         aVar.setStrokeMiter(f10);
-        this.f36837k = dVar.a();
-        this.f36836j = bVar2.a();
+        this.f37405k = dVar.a();
+        this.f37404j = bVar2.a();
         if (bVar3 == null) {
-            this.f36839m = null;
+            this.f37407m = null;
         } else {
-            this.f36839m = bVar3.a();
+            this.f37407m = bVar3.a();
         }
-        this.f36838l = new ArrayList(list.size());
-        this.f36834h = new float[list.size()];
+        this.f37406l = new ArrayList(list.size());
+        this.f37402h = new float[list.size()];
         for (int i10 = 0; i10 < list.size(); i10++) {
-            this.f36838l.add(((s5.b) list.get(i10)).a());
+            this.f37406l.add(((s5.b) list.get(i10)).a());
         }
-        bVar.i(this.f36837k);
-        bVar.i(this.f36836j);
-        for (int i11 = 0; i11 < this.f36838l.size(); i11++) {
-            bVar.i((o5.a) this.f36838l.get(i11));
+        bVar.i(this.f37405k);
+        bVar.i(this.f37404j);
+        for (int i11 = 0; i11 < this.f37406l.size(); i11++) {
+            bVar.i((o5.a) this.f37406l.get(i11));
         }
-        o5.a aVar2 = this.f36839m;
+        o5.a aVar2 = this.f37407m;
         if (aVar2 != null) {
             bVar.i(aVar2);
         }
-        this.f36837k.a(this);
-        this.f36836j.a(this);
+        this.f37405k.a(this);
+        this.f37404j.a(this);
         for (int i12 = 0; i12 < list.size(); i12++) {
-            ((o5.a) this.f36838l.get(i12)).a(this);
+            ((o5.a) this.f37406l.get(i12)).a(this);
         }
-        o5.a aVar3 = this.f36839m;
+        o5.a aVar3 = this.f37407m;
         if (aVar3 != null) {
             aVar3.a(this);
         }
         if (bVar.x() != null) {
             o5.d a10 = bVar.x().a().a();
-            this.f36841o = a10;
+            this.f37409o = a10;
             a10.a(this);
-            bVar.i(this.f36841o);
+            bVar.i(this.f37409o);
         }
         if (bVar.z() != null) {
-            this.f36843q = new o5.c(this, bVar, bVar.z());
+            this.f37411q = new o5.c(this, bVar, bVar.z());
         }
     }
 
@@ -141,34 +141,34 @@ public abstract class a implements a.b, k, e {
         if (l5.e.h()) {
             l5.e.b("StrokeContent#applyDashPattern");
         }
-        if (this.f36838l.isEmpty()) {
+        if (this.f37406l.isEmpty()) {
             if (l5.e.h()) {
                 l5.e.c("StrokeContent#applyDashPattern");
                 return;
             }
             return;
         }
-        for (int i10 = 0; i10 < this.f36838l.size(); i10++) {
-            this.f36834h[i10] = ((Float) ((o5.a) this.f36838l.get(i10)).h()).floatValue();
+        for (int i10 = 0; i10 < this.f37406l.size(); i10++) {
+            this.f37402h[i10] = ((Float) ((o5.a) this.f37406l.get(i10)).h()).floatValue();
             if (i10 % 2 == 0) {
-                float[] fArr = this.f36834h;
+                float[] fArr = this.f37402h;
                 if (fArr[i10] < 1.0f) {
                     fArr[i10] = 1.0f;
                 }
             } else {
-                float[] fArr2 = this.f36834h;
+                float[] fArr2 = this.f37402h;
                 if (fArr2[i10] < 0.1f) {
                     fArr2[i10] = 0.1f;
                 }
             }
         }
-        o5.a aVar = this.f36839m;
+        o5.a aVar = this.f37407m;
         if (aVar == null) {
             floatValue = 0.0f;
         } else {
             floatValue = ((Float) aVar.h()).floatValue();
         }
-        this.f36835i.setPathEffect(new DashPathEffect(this.f36834h, floatValue));
+        this.f37403i.setPathEffect(new DashPathEffect(this.f37402h, floatValue));
         if (l5.e.h()) {
             l5.e.c("StrokeContent#applyDashPattern");
         }
@@ -181,41 +181,41 @@ public abstract class a implements a.b, k, e {
         if (l5.e.h()) {
             l5.e.b("StrokeContent#applyTrimPath");
         }
-        if (bVar.f36845b == null) {
+        if (bVar.f37413b == null) {
             if (l5.e.h()) {
                 l5.e.c("StrokeContent#applyTrimPath");
                 return;
             }
             return;
         }
-        this.f36828b.reset();
-        for (int size = bVar.f36844a.size() - 1; size >= 0; size--) {
-            this.f36828b.addPath(((m) bVar.f36844a.get(size)).t());
+        this.f37396b.reset();
+        for (int size = bVar.f37412a.size() - 1; size >= 0; size--) {
+            this.f37396b.addPath(((m) bVar.f37412a.get(size)).t());
         }
-        float floatValue = ((Float) bVar.f36845b.i().h()).floatValue() / 100.0f;
-        float floatValue2 = ((Float) bVar.f36845b.e().h()).floatValue() / 100.0f;
-        float floatValue3 = ((Float) bVar.f36845b.g().h()).floatValue() / 360.0f;
+        float floatValue = ((Float) bVar.f37413b.i().h()).floatValue() / 100.0f;
+        float floatValue2 = ((Float) bVar.f37413b.e().h()).floatValue() / 100.0f;
+        float floatValue3 = ((Float) bVar.f37413b.g().h()).floatValue() / 360.0f;
         if (floatValue < 0.01f && floatValue2 > 0.99f) {
-            canvas.drawPath(this.f36828b, this.f36835i);
+            canvas.drawPath(this.f37396b, this.f37403i);
             if (l5.e.h()) {
                 l5.e.c("StrokeContent#applyTrimPath");
                 return;
             }
             return;
         }
-        this.f36827a.setPath(this.f36828b, false);
-        float length = this.f36827a.getLength();
-        while (this.f36827a.nextContour()) {
-            length += this.f36827a.getLength();
+        this.f37395a.setPath(this.f37396b, false);
+        float length = this.f37395a.getLength();
+        while (this.f37395a.nextContour()) {
+            length += this.f37395a.getLength();
         }
         float f13 = floatValue3 * length;
         float f14 = (floatValue * length) + f13;
         float min = Math.min((floatValue2 * length) + f13, (f14 + length) - 1.0f);
         float f15 = 0.0f;
-        for (int size2 = bVar.f36844a.size() - 1; size2 >= 0; size2--) {
-            this.f36829c.set(((m) bVar.f36844a.get(size2)).t());
-            this.f36827a.setPath(this.f36829c, false);
-            float length2 = this.f36827a.getLength();
+        for (int size2 = bVar.f37412a.size() - 1; size2 >= 0; size2--) {
+            this.f37397c.set(((m) bVar.f37412a.get(size2)).t());
+            this.f37395a.setPath(this.f37397c, false);
+            float length2 = this.f37395a.getLength();
             if (min > length) {
                 float f16 = min - length;
                 if (f16 < f15 + length2 && f15 < f16) {
@@ -224,15 +224,15 @@ public abstract class a implements a.b, k, e {
                     } else {
                         f12 = 0.0f;
                     }
-                    y5.j.a(this.f36829c, f12, Math.min(f16 / length2, 1.0f), 0.0f);
-                    canvas.drawPath(this.f36829c, this.f36835i);
+                    y5.j.a(this.f37397c, f12, Math.min(f16 / length2, 1.0f), 0.0f);
+                    canvas.drawPath(this.f37397c, this.f37403i);
                     f15 += length2;
                 }
             }
             float f17 = f15 + length2;
             if (f17 >= f14 && f15 <= min) {
                 if (f17 <= min && f14 < f15) {
-                    canvas.drawPath(this.f36829c, this.f36835i);
+                    canvas.drawPath(this.f37397c, this.f37403i);
                 } else {
                     if (f14 < f15) {
                         f10 = 0.0f;
@@ -244,8 +244,8 @@ public abstract class a implements a.b, k, e {
                     } else {
                         f11 = (min - f15) / length2;
                     }
-                    y5.j.a(this.f36829c, f10, f11, 0.0f);
-                    canvas.drawPath(this.f36829c, this.f36835i);
+                    y5.j.a(this.f37397c, f10, f11, 0.0f);
+                    canvas.drawPath(this.f37397c, this.f37403i);
                 }
             }
             f15 += length2;
@@ -257,7 +257,7 @@ public abstract class a implements a.b, k, e {
 
     @Override // o5.a.b
     public void a() {
-        this.f36831e.invalidateSelf();
+        this.f37399e.invalidateSelf();
     }
 
     @Override // n5.c
@@ -282,7 +282,7 @@ public abstract class a implements a.b, k, e {
                 u uVar3 = (u) cVar2;
                 if (uVar3.j() == t.a.INDIVIDUALLY) {
                     if (bVar != null) {
-                        this.f36833g.add(bVar);
+                        this.f37401g.add(bVar);
                     }
                     bVar = new b(uVar3);
                     uVar3.d(this);
@@ -292,11 +292,11 @@ public abstract class a implements a.b, k, e {
                 if (bVar == null) {
                     bVar = new b(uVar);
                 }
-                bVar.f36844a.add((m) cVar2);
+                bVar.f37412a.add((m) cVar2);
             }
         }
         if (bVar != null) {
-            this.f36833g.add(bVar);
+            this.f37401g.add(bVar);
         }
     }
 
@@ -307,42 +307,42 @@ public abstract class a implements a.b, k, e {
         o5.c cVar4;
         o5.c cVar5;
         o5.c cVar6;
-        if (obj == b0.f35549d) {
-            this.f36837k.o(cVar);
-        } else if (obj == b0.f35564s) {
-            this.f36836j.o(cVar);
+        if (obj == b0.f36117d) {
+            this.f37405k.o(cVar);
+        } else if (obj == b0.f36132s) {
+            this.f37404j.o(cVar);
         } else if (obj == b0.K) {
-            o5.a aVar = this.f36840n;
+            o5.a aVar = this.f37408n;
             if (aVar != null) {
-                this.f36832f.H(aVar);
+                this.f37400f.H(aVar);
             }
             if (cVar == null) {
-                this.f36840n = null;
+                this.f37408n = null;
                 return;
             }
             o5.q qVar = new o5.q(cVar);
-            this.f36840n = qVar;
+            this.f37408n = qVar;
             qVar.a(this);
-            this.f36832f.i(this.f36840n);
-        } else if (obj == b0.f35555j) {
-            o5.a aVar2 = this.f36841o;
+            this.f37400f.i(this.f37408n);
+        } else if (obj == b0.f36123j) {
+            o5.a aVar2 = this.f37409o;
             if (aVar2 != null) {
                 aVar2.o(cVar);
                 return;
             }
             o5.q qVar2 = new o5.q(cVar);
-            this.f36841o = qVar2;
+            this.f37409o = qVar2;
             qVar2.a(this);
-            this.f36832f.i(this.f36841o);
-        } else if (obj == b0.f35550e && (cVar6 = this.f36843q) != null) {
+            this.f37400f.i(this.f37409o);
+        } else if (obj == b0.f36118e && (cVar6 = this.f37411q) != null) {
             cVar6.c(cVar);
-        } else if (obj == b0.G && (cVar5 = this.f36843q) != null) {
+        } else if (obj == b0.G && (cVar5 = this.f37411q) != null) {
             cVar5.f(cVar);
-        } else if (obj == b0.H && (cVar4 = this.f36843q) != null) {
+        } else if (obj == b0.H && (cVar4 = this.f37411q) != null) {
             cVar4.d(cVar);
-        } else if (obj == b0.I && (cVar3 = this.f36843q) != null) {
+        } else if (obj == b0.I && (cVar3 = this.f37411q) != null) {
             cVar3.e(cVar);
-        } else if (obj == b0.J && (cVar2 = this.f36843q) != null) {
+        } else if (obj == b0.J && (cVar2 = this.f37411q) != null) {
             cVar2.g(cVar);
         }
     }
@@ -357,19 +357,19 @@ public abstract class a implements a.b, k, e {
         if (l5.e.h()) {
             l5.e.b("StrokeContent#getBounds");
         }
-        this.f36828b.reset();
-        for (int i10 = 0; i10 < this.f36833g.size(); i10++) {
-            b bVar = (b) this.f36833g.get(i10);
-            for (int i11 = 0; i11 < bVar.f36844a.size(); i11++) {
-                this.f36828b.addPath(((m) bVar.f36844a.get(i11)).t(), matrix);
+        this.f37396b.reset();
+        for (int i10 = 0; i10 < this.f37401g.size(); i10++) {
+            b bVar = (b) this.f37401g.get(i10);
+            for (int i11 = 0; i11 < bVar.f37412a.size(); i11++) {
+                this.f37396b.addPath(((m) bVar.f37412a.get(i11)).t(), matrix);
             }
         }
-        this.f36828b.computeBounds(this.f36830d, false);
-        float q10 = ((o5.d) this.f36836j).q();
-        RectF rectF2 = this.f36830d;
+        this.f37396b.computeBounds(this.f37398d, false);
+        float q10 = ((o5.d) this.f37404j).q();
+        RectF rectF2 = this.f37398d;
         float f10 = q10 / 2.0f;
         rectF2.set(rectF2.left - f10, rectF2.top - f10, rectF2.right + f10, rectF2.bottom + f10);
-        rectF.set(this.f36830d);
+        rectF.set(this.f37398d);
         rectF.set(rectF.left - 1.0f, rectF.top - 1.0f, rectF.right + 1.0f, rectF.bottom + 1.0f);
         if (l5.e.h()) {
             l5.e.c("StrokeContent#getBounds");
@@ -388,10 +388,10 @@ public abstract class a implements a.b, k, e {
             }
             return;
         }
-        int q10 = (int) ((((i10 / 255.0f) * ((o5.f) this.f36837k).q()) / 100.0f) * 255.0f);
-        this.f36835i.setAlpha(y5.i.c(q10, 0, SetSpanOperation.SPAN_MAX_PRIORITY));
-        this.f36835i.setStrokeWidth(((o5.d) this.f36836j).q());
-        if (this.f36835i.getStrokeWidth() <= 0.0f) {
+        int q10 = (int) ((((i10 / 255.0f) * ((o5.f) this.f37405k).q()) / 100.0f) * 255.0f);
+        this.f37403i.setAlpha(y5.i.c(q10, 0, SetSpanOperation.SPAN_MAX_PRIORITY));
+        this.f37403i.setStrokeWidth(((o5.d) this.f37404j).q());
+        if (this.f37403i.getStrokeWidth() <= 0.0f) {
             if (l5.e.h()) {
                 l5.e.c("StrokeContent#draw");
                 return;
@@ -399,43 +399,43 @@ public abstract class a implements a.b, k, e {
             return;
         }
         g();
-        o5.a aVar = this.f36840n;
+        o5.a aVar = this.f37408n;
         if (aVar != null) {
-            this.f36835i.setColorFilter((ColorFilter) aVar.h());
+            this.f37403i.setColorFilter((ColorFilter) aVar.h());
         }
-        o5.a aVar2 = this.f36841o;
+        o5.a aVar2 = this.f37409o;
         if (aVar2 != null) {
             float floatValue = ((Float) aVar2.h()).floatValue();
             if (floatValue == 0.0f) {
-                this.f36835i.setMaskFilter(null);
-            } else if (floatValue != this.f36842p) {
-                this.f36835i.setMaskFilter(this.f36832f.y(floatValue));
+                this.f37403i.setMaskFilter(null);
+            } else if (floatValue != this.f37410p) {
+                this.f37403i.setMaskFilter(this.f37400f.y(floatValue));
             }
-            this.f36842p = floatValue;
+            this.f37410p = floatValue;
         }
-        o5.c cVar = this.f36843q;
+        o5.c cVar = this.f37411q;
         if (cVar != null) {
-            cVar.b(this.f36835i, matrix, y5.j.l(i10, q10));
+            cVar.b(this.f37403i, matrix, y5.j.l(i10, q10));
         }
         canvas.save();
         canvas.concat(matrix);
-        for (int i11 = 0; i11 < this.f36833g.size(); i11++) {
-            b bVar = (b) this.f36833g.get(i11);
-            if (bVar.f36845b != null) {
+        for (int i11 = 0; i11 < this.f37401g.size(); i11++) {
+            b bVar = (b) this.f37401g.get(i11);
+            if (bVar.f37413b != null) {
                 i(canvas, bVar);
             } else {
                 if (l5.e.h()) {
                     l5.e.b("StrokeContent#buildPath");
                 }
-                this.f36828b.reset();
-                for (int size = bVar.f36844a.size() - 1; size >= 0; size--) {
-                    this.f36828b.addPath(((m) bVar.f36844a.get(size)).t());
+                this.f37396b.reset();
+                for (int size = bVar.f37412a.size() - 1; size >= 0; size--) {
+                    this.f37396b.addPath(((m) bVar.f37412a.get(size)).t());
                 }
                 if (l5.e.h()) {
                     l5.e.c("StrokeContent#buildPath");
                     l5.e.b("StrokeContent#drawPath");
                 }
-                canvas.drawPath(this.f36828b, this.f36835i);
+                canvas.drawPath(this.f37396b, this.f37403i);
                 if (l5.e.h()) {
                     l5.e.c("StrokeContent#drawPath");
                 }

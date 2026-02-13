@@ -4,695 +4,295 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var1;
     var1 = dependencyMap;
     var _closure1_slot1 = var1;
-    var1 = function arg0, arg1, arg2, arg3, arg4() {
-        _fun29218: for (var _fun29218_ip = 0;;) switch (_fun29218_ip) {
+    var1 = function arg0, arg1, arg2() {
+        _fun29278: for (var _fun29278_ip = 0;;) switch (_fun29278_ip) {
             case 0:
-                var11 = arg0;
-                var10 = arg1;
-                var1 = arg2;
-                var9 = arg3;
-                var14 = arg4;
-                var4 = _closure1_slot0;
+                var6 = arg0;
+                var5 = arg1;
+                var4 = arg2;
+                var2 = _closure1_slot0;
                 var3 = _closure1_slot1;
-                var2 = 0;
-                var3 = var3[var2];
-                var2 = undefined;
-                var3 = var4.bind(var2)(var3);
-                var4 = var3.bind(var2)(var11);
-                if (!(var2 !== var11)) {
-                    _fun29218_ip = 124;
-                    continue _fun29218
-                }
-            case 48:
-                var5 = _closure1_slot0;
-                var6 = _closure1_slot1;
-                var3 = 1;
-                var3 = var6[var3];
-                var3 = var5.bind(var2)(var3);
-                var3 = var3.bind(var2)(var11);
-                if (var3) {
-                    _fun29218_ip = 124;
-                    continue _fun29218
-                }
-            case 76:
-                var5 = _closure1_slot0;
-                var6 = _closure1_slot1;
-                var3 = 2;
-                var3 = var6[var3];
-                var6 = var5.bind(var2)(var3);
-                var3 = var6.prototype;
-                var5 = Object.create(var3, {
-                    constructor: {
-                        value: var6
-                    }
-                });
-                var24 = 'Assertion failed: O must be undefined or an Object';
-                var25 = var5;
-                var3 = new var25[var6](var24, var23);
-                var3 = var3 instanceof Object ? var3 : var5;
-                throw var3;
-            case 124:
-                var5 = _closure1_slot0;
-                var6 = _closure1_slot1;
-                var3 = 3;
-                var3 = var6[var3];
-                var3 = var5.bind(var2)(var3);
-                var3 = var3.bind(var2)(var10);
-                if (var3) {
-                    _fun29218_ip = 200;
-                    continue _fun29218
-                }
-            case 152:
-                var5 = _closure1_slot0;
-                var6 = _closure1_slot1;
-                var3 = 2;
-                var3 = var6[var3];
-                var6 = var5.bind(var2)(var3);
-                var3 = var6.prototype;
-                var5 = Object.create(var3, {
-                    constructor: {
-                        value: var6
-                    }
-                });
-                var24 = 'Assertion failed: P must be a Property Key';
-                var25 = var5;
-                var3 = new var25[var6](var24, var23);
-                var3 = var3 instanceof Object ? var3 : var5;
-                throw var3;
-            case 200:
-                var5 = 'boolean';
-                var3 = typeof var1;
-                if (!(var5 === var3)) {
-                    _fun29218_ip = 1754;
-                    continue _fun29218
-                }
-            case 214:
-                var5 = _closure1_slot0;
-                var3 = _closure1_slot1;
-                var6 = 4;
-                var3 = var3[var6];
-                var3 = var5.bind(var2)(var3);
-                var3 = var3.bind(var2)(var9);
-                if (var3) {
-                    _fun29218_ip = 290;
-                    continue _fun29218
-                }
-            case 242:
-                var5 = _closure1_slot0;
+                var1 = 0;
+                var1 = var3[var1];
+                var3 = undefined;
+                var1 = var2.bind(var3)(var1);
+                var1 = var1.bind(var3)(var6);
+                var2 = _closure1_slot0;
                 var7 = _closure1_slot1;
-                var3 = 2;
-                var3 = var7[var3];
-                var7 = var5.bind(var2)(var3);
-                var3 = var7.prototype;
-                var5 = Object.create(var3, {
+                if (var1) {
+                    _fun29278_ip = 89;
+                    continue _fun29278
+                }
+            case 49:
+                var1 = 1;
+                var1 = var7[var1];
+                var9 = var2.bind(var3)(var1);
+                var1 = var9.prototype;
+                var8 = Object.create(var1, {
                     constructor: {
-                        value: var7
+                        value: var9
                     }
                 });
-                var24 = 'Assertion failed: Desc must be a Property Descriptor';
-                var25 = var5;
-                var3 = new var25[var7](var24, var23);
-                var3 = var3 instanceof Object ? var3 : var5;
-                throw var3;
-            case 290:
-                if (!(var2 !== var14)) {
-                    _fun29218_ip = 367;
-                    continue _fun29218
-                }
-            case 294:
-                var5 = _closure1_slot0;
-                var3 = _closure1_slot1;
-                var3 = var3[var6];
-                var3 = var5.bind(var2)(var3);
-                var3 = var3.bind(var2)(var14);
-                if (var3) {
-                    _fun29218_ip = 367;
-                    continue _fun29218
-                }
-            case 319:
-                var5 = _closure1_slot0;
-                var6 = _closure1_slot1;
-                var3 = 2;
-                var3 = var6[var3];
-                var6 = var5.bind(var2)(var3);
-                var3 = var6.prototype;
-                var5 = Object.create(var3, {
-                    constructor: {
-                        value: var6
-                    }
-                });
-                var24 = 'Assertion failed: current must be a Property Descriptor, or undefined';
-                var25 = var5;
-                var3 = new var25[var6](var24, var23);
-                var3 = var3 instanceof Object ? var3 : var5;
-                throw var3;
-            case 367:
-                if (!(var2 !== var14)) {
-                    _fun29218_ip = 1520;
-                    continue _fun29218
-                }
-            case 374:
-                var12 = _closure1_slot0;
+                var16 = 'Assertion failed: O must be an Object';
+                var17 = var8;
+                var1 = new var17[var9](var16, var15);
+                var1 = var1 instanceof Object ? var1 : var8;
+                throw var1;
+            case 89:
+                var1 = 2;
+                var1 = var7[var1];
+                var1 = var2.bind(var3)(var1);
+                var1 = var1.bind(var3)(var5);
+                var2 = _closure1_slot0;
                 var7 = _closure1_slot1;
-                var3 = 10;
-                var3 = var7[var3];
-                var5 = var12.bind(var2)(var3);
-                var3 = {};
+                if (var1) {
+                    _fun29278_ip = 157;
+                    continue _fun29278
+                }
+            case 117:
+                var1 = 1;
+                var1 = var7[var1];
+                var9 = var2.bind(var3)(var1);
+                var1 = var9.prototype;
+                var8 = Object.create(var1, {
+                    constructor: {
+                        value: var9
+                    }
+                });
+                var16 = 'Assertion failed: P must be a Property Key';
+                var17 = var8;
+                var1 = new var17[var9](var16, var15);
+                var1 = var1 instanceof Object ? var1 : var8;
+                throw var1;
+            case 157:
+                var1 = 3;
+                var1 = var7[var1];
+                var1 = var2.bind(var3)(var1);
+                var7 = var1.bind(var3)(var4);
+                var2 = _closure1_slot0;
+                var1 = _closure1_slot1;
+                if (var7) {
+                    _fun29278_ip = 225;
+                    continue _fun29278
+                }
+            case 185:
+                var7 = 1;
+                var7 = var1[var7];
+                var9 = var2.bind(var3)(var7);
+                var7 = var9.prototype;
+                var8 = Object.create(var7, {
+                    constructor: {
+                        value: var9
+                    }
+                });
+                var16 = 'Assertion failed: Desc must be a Property Descriptor';
+                var17 = var8;
+                var7 = new var17[var9](var16, var15);
+                var7 = var7 instanceof Object ? var7 : var8;
+                throw var7;
+            case 225:
+                var7 = 4;
+                var1 = var1[var7];
+                var8 = var2.bind(var3)(var1);
+                var2 = _closure1_slot0;
+                var1 = _closure1_slot1;
+                if (var8) {
+                    _fun29278_ip = 562;
+                    continue _fun29278
+                }
+            case 251:
                 var8 = 5;
-                var6 = var7[var8];
-                var6 = var12.bind(var2)(var6);
-                var3.IsAccessorDescriptor = var6;
-                var6 = 7;
-                var7 = var7[var6];
-                var7 = var12.bind(var2)(var7);
-                var3.IsDataDescriptor = var7;
-                var3 = var5.bind(var2)(var3, var14);
-                if (var3) {
-                    _fun29218_ip = 487;
-                    continue _fun29218
+                var8 = var1[var8];
+                var8 = var2.bind(var3)(var8);
+                var8 = var8.bind(var3)(var4);
+                if (var8) {
+                    _fun29278_ip = 514;
+                    continue _fun29278
                 }
-            case 439:
-                var5 = _closure1_slot0;
-                var7 = _closure1_slot1;
-                var3 = 2;
-                var3 = var7[var3];
-                var7 = var5.bind(var2)(var3);
-                var3 = var7.prototype;
-                var5 = Object.create(var3, {
-                    constructor: {
-                        value: var7
-                    }
-                });
-                var24 = '`current`, when present, must be a fully populated and valid Property Descriptor';
-                var25 = var5;
-                var3 = new var25[var7](var24, var23);
-                var3 = var3 instanceof Object ? var3 : var5;
-                throw var3;
-            case 487:
-                var3 = var14["[[Configurable]]"];
-                if (var3) {
-                    _fun29218_ip = 906;
-                    continue _fun29218
+            case 274:
+                var8 = var5 in var6;
+                var9 = !var8;
+                if (var8) {
+                    _fun29278_ip = 290;
+                    continue _fun29278
                 }
-            case 499:
-                var3 = '[[Configurable]]';
-                var3 = var3 in var9;
-                if (!var3) {
-                    _fun29218_ip = 522;
-                    continue _fun29218
+            case 284:
+                var9 = var4["[[Writable]]"];
+            case 290:
+                if (!var9) {
+                    _fun29278_ip = 299;
+                    continue _fun29278
                 }
-            case 510:
-                var3 = var9["[[Configurable]]"];
-                if (var3) {
-                    _fun29218_ip = 902;
-                    continue _fun29218
+            case 293:
+                var9 = var4["[[Enumerable]]"];
+            case 299:
+                if (!var9) {
+                    _fun29278_ip = 308;
+                    continue _fun29278
                 }
-            case 522:
-                var3 = '[[Enumerable]]';
-                var3 = var3 in var9;
-                if (!var3) {
-                    _fun29218_ip = 578;
-                    continue _fun29218
+            case 302:
+                var9 = var4["[[Configurable]]"];
+            case 308:
+                if (!var9) {
+                    _fun29278_ip = 319;
+                    continue _fun29278
                 }
-            case 533:
-                var5 = _closure1_slot0;
-                var7 = _closure1_slot1;
-                var3 = 8;
-                var3 = var7[var3];
-                var7 = var5.bind(var2)(var3);
-                var5 = var9["[[Enumerable]]"];
-                var3 = var14["[[Enumerable]]"];
-                var3 = var7.bind(var2)(var5, var3);
-                if (var3) {
-                    _fun29218_ip = 578;
-                    continue _fun29218
-                }
-            case 574:
-                var3 = false;
-                return var3;
-            case 578:
-                var5 = _closure1_slot0;
-                var7 = _closure1_slot1;
-                var3 = 11;
-                var3 = var7[var3];
-                var3 = var5.bind(var2)(var3);
-                var3 = var3.bind(var2)(var9);
-                if (var3) {
-                    _fun29218_ip = 667;
-                    continue _fun29218
-                }
-            case 606:
-                var12 = _closure1_slot0;
-                var3 = _closure1_slot1;
-                var5 = 8;
-                var5 = var3[var5];
-                var7 = var12.bind(var2)(var5);
-                var5 = var3[var8];
-                var5 = var12.bind(var2)(var5);
-                var5 = var5.bind(var2)(var9);
-                var3 = var3[var8];
-                var3 = var12.bind(var2)(var3);
-                var3 = var3.bind(var2)(var14);
-                var3 = var7.bind(var2)(var5, var3);
-                if (var3) {
-                    _fun29218_ip = 667;
-                    continue _fun29218
-                }
-            case 663:
-                var3 = false;
-                return var3;
-            case 667:
-                var5 = _closure1_slot0;
-                var3 = _closure1_slot1;
-                var3 = var3[var8];
-                var3 = var5.bind(var2)(var3);
-                var3 = var3.bind(var2)(var14);
-                if (var3) {
-                    _fun29218_ip = 790;
-                    continue _fun29218
-                }
-            case 692:
-                var3 = var14["[[Writable]]"];
-                if (var3) {
-                    _fun29218_ip = 906;
-                    continue _fun29218
-                }
-            case 704:
-                var3 = '[[Writable]]';
-                var3 = var3 in var9;
-                if (!var3) {
-                    _fun29218_ip = 724;
-                    continue _fun29218
-                }
-            case 715:
-                var3 = var9["[[Writable]]"];
-                if (var3) {
-                    _fun29218_ip = 786;
-                    continue _fun29218
-                }
-            case 724:
-                var3 = '[[Value]]';
-                var3 = var3 in var9;
-                if (!var3) {
-                    _fun29218_ip = 906;
-                    continue _fun29218
-                }
-            case 738:
-                var5 = _closure1_slot0;
-                var7 = _closure1_slot1;
-                var3 = 8;
-                var3 = var7[var3];
-                var7 = var5.bind(var2)(var3);
-                var5 = var9["[[Value]]"];
-                var3 = var14["[[Value]]"];
-                var3 = var7.bind(var2)(var5, var3);
-                if (var3) {
-                    _fun29218_ip = 906;
-                    continue _fun29218
-                }
-            case 782:
-                var3 = false;
-                return var3;
-            case 786:
-                var3 = false;
-                return var3;
-            case 790:
-                var3 = '[[Get]]';
-                var3 = var3 in var9;
-                if (!var3) {
-                    _fun29218_ip = 846;
-                    continue _fun29218
-                }
-            case 801:
-                var5 = _closure1_slot0;
-                var7 = _closure1_slot1;
-                var3 = 8;
-                var3 = var7[var3];
-                var7 = var5.bind(var2)(var3);
-                var5 = var9["[[Get]]"];
-                var3 = var14["[[Get]]"];
-                var3 = var7.bind(var2)(var5, var3);
-                if (var3) {
-                    _fun29218_ip = 846;
-                    continue _fun29218
-                }
-            case 842:
-                var3 = false;
-                return var3;
-            case 846:
-                var3 = '[[Set]]';
-                var3 = var3 in var9;
-                if (!var3) {
-                    _fun29218_ip = 906;
-                    continue _fun29218
-                }
-            case 857:
-                var5 = _closure1_slot0;
-                var7 = _closure1_slot1;
-                var3 = 8;
-                var3 = var7[var3];
-                var7 = var5.bind(var2)(var3);
-                var5 = var9["[[Set]]"];
-                var3 = var14["[[Set]]"];
-                var3 = var7.bind(var2)(var5, var3);
-                if (var3) {
-                    _fun29218_ip = 906;
-                    continue _fun29218
-                }
-            case 898:
-                var3 = false;
-                return var3;
-            case 902:
-                var3 = false;
-                return var3;
-            case 906:
-                var3 = 'Undefined';
-                var3 = var3 === var4;
-                if (var3) {
-                    _fun29218_ip = 1518;
-                    continue _fun29218
-                }
-            case 922:
-                var7 = _closure1_slot0;
-                var5 = _closure1_slot1;
-                var5 = var5[var6];
-                var5 = var7.bind(var2)(var5);
-                var5 = var5.bind(var2)(var14);
-                if (!var5) {
-                    _fun29218_ip = 975;
-                    continue _fun29218
-                }
-            case 947:
-                var7 = _closure1_slot0;
-                var5 = _closure1_slot1;
-                var5 = var5[var8];
-                var5 = var7.bind(var2)(var5);
-                var5 = var5.bind(var2)(var9);
-                if (var5) {
-                    _fun29218_ip = 1315;
-                    continue _fun29218
-                }
-            case 975:
-                var7 = _closure1_slot0;
-                var5 = _closure1_slot1;
-                var5 = var5[var8];
-                var5 = var7.bind(var2)(var5);
-                var5 = var5.bind(var2)(var14);
-                if (!var5) {
-                    _fun29218_ip = 1025;
-                    continue _fun29218
-                }
-            case 1000:
-                var7 = _closure1_slot0;
-                var5 = _closure1_slot1;
-                var5 = var5[var6];
-                var5 = var7.bind(var2)(var5);
-                var5 = var5.bind(var2)(var9);
-                if (var5) {
-                    _fun29218_ip = 1101;
-                    continue _fun29218
-                }
-            case 1025:
-                var13 = _closure1_slot0;
-                var15 = _closure1_slot1;
-                var5 = 6;
-                var5 = var15[var5];
-                var12 = var13.bind(var2)(var5);
-                var5 = var15[var6];
-                var8 = var13.bind(var2)(var5);
-                var5 = 8;
-                var5 = var15[var5];
-                var23 = var13.bind(var2)(var5);
-                var5 = 9;
-                var5 = var15[var5];
-                var22 = var13.bind(var2)(var5);
-                var25 = undefined;
-                var24 = var8;
-                var21 = var11;
-                var20 = var10;
-                var19 = var9;
-                var5 = var25[var12](var24, var23, var22, var21, var20, var19, var18);
-                _fun29218_ip = 1310;
-                continue _fun29218;
-            case 1101:
-                var7 = '[[Configurable]]';
-                var8 = var7 in var9;
-                var7 = var14;
+            case 311:
+                var8 = '[[Value]]';
+                var9 = var8 in var4;
+            case 319:
+                var8 = var5 in var6;
                 if (!var8) {
-                    _fun29218_ip = 1118;
-                    continue _fun29218
+                    _fun29278_ip = 349;
+                    continue _fun29278
                 }
-            case 1115:
-                var7 = var9;
-            case 1118:
-                var17 = var7["[[Configurable]]"];
-                var7 = '[[Enumerable]]';
-                var8 = var7 in var9;
-                var7 = var14;
+            case 326:
+                var10 = '[[Configurable]]';
+                var11 = var10 in var4;
+                var10 = !var11;
+                if (!var11) {
+                    _fun29278_ip = 346;
+                    continue _fun29278
+                }
+            case 340:
+                var10 = var4["[[Configurable]]"];
+            case 346:
+                var8 = var10;
+            case 349:
                 if (!var8) {
-                    _fun29218_ip = 1141;
-                    continue _fun29218
+                    _fun29278_ip = 375;
+                    continue _fun29278
                 }
-            case 1138:
-                var7 = var9;
-            case 1141:
-                var16 = var7["[[Enumerable]]"];
-                var8 = _closure1_slot0;
-                var18 = _closure1_slot1;
-                var7 = 6;
-                var7 = var18[var7];
-                var15 = var8.bind(var2)(var7);
-                var7 = var18[var6];
-                var13 = var8.bind(var2)(var7);
-                var7 = 8;
-                var7 = var18[var7];
-                var12 = var8.bind(var2)(var7);
-                var7 = 9;
-                var7 = var18[var7];
-                var8 = var8.bind(var2)(var7);
-                var7 = {};
-                var17 = !var17;
-                var17 = !var17;
-                var7['[[Configurable]]'] = var17;
-                var16 = !var16;
-                var16 = !var16;
-                var7['[[Enumerable]]'] = var16;
-                var16 = '[[Value]]';
-                var17 = var16 in var9;
-                var16 = var14;
-                if (!var17) {
-                    _fun29218_ip = 1241;
-                    continue _fun29218
+            case 352:
+                var10 = '[[Enumerable]]';
+                var11 = var10 in var4;
+                var10 = !var11;
+                if (!var11) {
+                    _fun29278_ip = 372;
+                    continue _fun29278
                 }
-            case 1238:
-                var16 = var9;
-            case 1241:
-                var16 = var16["[[Value]]"];
-                var7['[[Value]]'] = var16;
-                var16 = '[[Writable]]';
-                var17 = var16 in var9;
-                var16 = var14;
-                if (!var17) {
-                    _fun29218_ip = 1269;
-                    continue _fun29218
-                }
-            case 1266:
-                var16 = var9;
-            case 1269:
-                var16 = var16["[[Writable]]"];
-                var16 = !var16;
-                var16 = !var16;
-                var7['[[Writable]]'] = var16;
-                var25 = undefined;
-                var24 = var13;
-                var23 = var12;
-                var22 = var8;
-                var21 = var11;
-                var20 = var10;
-                var19 = var7;
-                var5 = var25[var15](var24, var23, var22, var21, var20, var19, var18);
-            case 1310:
-                _fun29218_ip = 1515;
-                continue _fun29218;
-            case 1315:
-                var7 = '[[Configurable]]';
-                var8 = var7 in var9;
-                var7 = var14;
+            case 366:
+                var10 = var4["[[Enumerable]]"];
+            case 372:
+                var8 = var10;
+            case 375:
                 if (!var8) {
-                    _fun29218_ip = 1332;
-                    continue _fun29218
+                    _fun29278_ip = 401;
+                    continue _fun29278
                 }
-            case 1329:
-                var7 = var9;
-            case 1332:
-                var16 = var7["[[Configurable]]"];
-                var7 = '[[Enumerable]]';
-                var8 = var7 in var9;
-                var7 = var14;
+            case 378:
+                var10 = '[[Writable]]';
+                var11 = var10 in var4;
+                var10 = !var11;
+                if (!var11) {
+                    _fun29278_ip = 398;
+                    continue _fun29278
+                }
+            case 392:
+                var10 = var4["[[Writable]]"];
+            case 398:
+                var8 = var10;
+            case 401:
                 if (!var8) {
-                    _fun29218_ip = 1355;
-                    continue _fun29218
+                    _fun29278_ip = 412;
+                    continue _fun29278
                 }
-            case 1352:
-                var7 = var9;
-            case 1355:
-                var15 = var7["[[Enumerable]]"];
-                var7 = _closure1_slot0;
-                var17 = _closure1_slot1;
+            case 404:
+                var10 = '[[Value]]';
+                var8 = var10 in var4;
+            case 412:
+                if (var9) {
+                    _fun29278_ip = 466;
+                    continue _fun29278
+                }
+            case 415:
+                if (var8) {
+                    _fun29278_ip = 466;
+                    continue _fun29278
+                }
+            case 418:
+                var9 = _closure1_slot0;
+                var10 = _closure1_slot1;
                 var8 = 6;
-                var8 = var17[var8];
-                var13 = var7.bind(var2)(var8);
-                var6 = var17[var6];
-                var12 = var7.bind(var2)(var6);
-                var6 = 8;
-                var6 = var17[var6];
-                var8 = var7.bind(var2)(var6);
-                var6 = 9;
-                var6 = var17[var6];
-                var7 = var7.bind(var2)(var6);
-                var6 = {};
-                var16 = !var16;
-                var16 = !var16;
-                var6['[[Configurable]]'] = var16;
-                var15 = !var15;
-                var15 = !var15;
-                var6['[[Enumerable]]'] = var15;
-                var15 = '[[Get]]';
-                var16 = var15 in var9;
-                var15 = var14;
-                if (!var16) {
-                    _fun29218_ip = 1455;
-                    continue _fun29218
-                }
-            case 1452:
-                var15 = var9;
-            case 1455:
-                var15 = var15["[[Get]]"];
-                var6['[[Get]]'] = var15;
-                var15 = '[[Set]]';
-                var15 = var15 in var9;
-                if (!var15) {
-                    _fun29218_ip = 1480;
-                    continue _fun29218
-                }
-            case 1477:
-                var14 = var9;
-            case 1480:
-                var14 = var14["[[Set]]"];
-                var6['[[Set]]'] = var14;
-                var25 = undefined;
-                var24 = var12;
-                var23 = var8;
-                var22 = var7;
-                var21 = var11;
-                var20 = var10;
-                var19 = var6;
-                var5 = var25[var13](var24, var23, var22, var21, var20, var19, var18);
-            case 1515:
-                var3 = var5;
-            case 1518:
-                return var3;
-            case 1520:
-                var3 = !var1;
-                var1 = !var3;
-                if (var3) {
-                    _fun29218_ip = 1752;
-                    continue _fun29218
-                }
-            case 1532:
-                var3 = 'Undefined';
-                var3 = var3 === var4;
-                if (var3) {
-                    _fun29218_ip = 1749;
-                    continue _fun29218
-                }
-            case 1548:
-                var5 = _closure1_slot0;
-                var6 = _closure1_slot1;
-                var4 = 5;
-                var4 = var6[var4];
-                var4 = var5.bind(var2)(var4);
-                var4 = var4.bind(var2)(var9);
-                var12 = _closure1_slot0;
-                var13 = _closure1_slot1;
-                var5 = 6;
-                var5 = var13[var5];
-                var8 = var12.bind(var2)(var5);
-                var5 = 7;
-                var5 = var13[var5];
-                var7 = var12.bind(var2)(var5);
-                var5 = 8;
-                var5 = var13[var5];
-                var6 = var12.bind(var2)(var5);
-                var5 = 9;
-                var5 = var13[var5];
-                var5 = var12.bind(var2)(var5);
-                if (var4) {
-                    _fun29218_ip = 1722;
-                    continue _fun29218
-                }
-            case 1632:
-                var4 = {};
-                var12 = var9["[[Configurable]]"];
-                var12 = !var12;
-                var12 = !var12;
-                var4['[[Configurable]]'] = var12;
-                var12 = var9["[[Enumerable]]"];
-                var12 = !var12;
-                var12 = !var12;
-                var4['[[Enumerable]]'] = var12;
-                var12 = var9["[[Value]]"];
-                var4['[[Value]]'] = var12;
-                var12 = var9["[[Writable]]"];
-                var12 = !var12;
-                var12 = !var12;
-                var4['[[Writable]]'] = var12;
-                var25 = undefined;
-                var24 = var7;
-                var23 = var6;
-                var22 = var5;
-                var21 = var11;
-                var20 = var10;
-                var19 = var4;
-                var4 = var25[var8](var24, var23, var22, var21, var20, var19, var18);
-                _fun29218_ip = 1746;
-                continue _fun29218;
-            case 1722:
-                var25 = undefined;
-                var24 = var7;
-                var23 = var6;
-                var22 = var5;
-                var21 = var11;
-                var20 = var10;
-                var19 = var9;
-                var4 = var25[var8](var24, var23, var22, var21, var20, var19, var18);
-            case 1746:
-                var3 = var4;
-            case 1749:
-                var1 = var3;
-            case 1752:
-                return var1;
-            case 1754:
-                var1 = _closure1_slot0;
-                var3 = _closure1_slot1;
-                var0 = 2;
-                var0 = var3[var0];
-                var2 = var1.bind(var2)(var0);
-                var0 = var2.prototype;
-                var1 = Object.create(var0, {
+                var8 = var10[var8];
+                var10 = var9.bind(var3)(var8);
+                var8 = var10.prototype;
+                var9 = Object.create(var8, {
                     constructor: {
-                        value: var2
+                        value: var10
                     }
                 });
-                var24 = 'Assertion failed: extensible must be a Boolean';
-                var25 = var1;
-                var0 = new var25[var2](var24, var23);
-                var0 = var0 instanceof Object ? var0 : var1;
-                throw var0;
+                var16 = 'This environment does not support defining non-writable, non-enumerable, or non-configurable properties';
+                var17 = var9;
+                var8 = new var17[var10](var16, var15);
+                var8 = var8 instanceof Object ? var8 : var9;
+                throw var8;
+            case 466:
+                var8 = var4["[[Value]]"];
+                var6[var5] = var8;
+                var9 = _closure1_slot0;
+                var10 = _closure1_slot1;
+                var8 = 7;
+                var8 = var10[var8];
+                var10 = var9.bind(var3)(var8);
+                var9 = var6[var5];
+                var8 = var4["[[Value]]"];
+                var8 = var10.bind(var3)(var9, var8);
+                return var8;
+            case 514:
+                var9 = _closure1_slot0;
+                var10 = _closure1_slot1;
+                var8 = 6;
+                var8 = var10[var8];
+                var10 = var9.bind(var3)(var8);
+                var8 = var10.prototype;
+                var9 = Object.create(var8, {
+                    constructor: {
+                        value: var10
+                    }
+                });
+                var16 = 'This environment does not support accessor property descriptors.';
+                var17 = var9;
+                var8 = new var17[var10](var16, var15);
+                var8 = var8 instanceof Object ? var8 : var9;
+                throw var8;
+            case 562:
+                var1 = var1[var7];
+                var1 = var2.bind(var3)(var1);
+                var7 = var1.bind(var3)(var6, var5);
+                var2 = var7;
+                if (!var2) {
+                    _fun29278_ip = 608;
+                    continue _fun29278
+                }
+            case 583:
+                var8 = _closure1_slot0;
+                var9 = _closure1_slot1;
+                var1 = 8;
+                var1 = var9[var1];
+                var1 = var8.bind(var3)(var1);
+                var2 = var1.bind(var3)(var7);
+            case 608:
+                var7 = _closure1_slot0;
+                var8 = _closure1_slot1;
+                var0 = 9;
+                var0 = var8[var0];
+                var0 = var7.bind(var3)(var0);
+                var14 = var0.bind(var3)(var6);
+                var0 = 10;
+                var0 = var8[var0];
+                var0 = var7.bind(var3)(var0);
+                var17 = undefined;
+                var16 = var6;
+                var15 = var5;
+                var13 = var4;
+                var12 = var2;
+                var0 = var17[var0](var16, var15, var14, var13, var12, var11);
+                return var0;
         }
     };
     var0 = arg4;
     var0.exports = var1;
     var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3432, 3365, 518, 3412, 3416, 3429, 3419, 3420, 3421, 3422, 3433, 3434]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3368, 518, 3415, 3419, 519, 3432, 539, 3424, 3420, 3433, 3434]);

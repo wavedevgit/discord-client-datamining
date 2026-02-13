@@ -36,7 +36,7 @@ public /* synthetic */ class EmbedProvider$$serializer implements h0 {
     @Override // tt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        return new KSerializer[]{n2.f50033a};
+        return new KSerializer[]{n2.f50601a};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy

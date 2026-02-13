@@ -5,124 +5,76 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var3;
-    var0 = function() {
-        var4 = undefined;
-        var0 = undefined;
-        var3 = _closure1_slot2;
-        var2 = function*() { // Environment: var2
-            var0 = function*() { // Original name: ?anon_0_, environment: var0
-                _fun12148: for (var _fun12148_ip = 0;;) switch (_fun12148_ip) {
-                    case 0:
-                        StartGenerator();
-                        ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
-                        if (var1) {
-                            _fun12148_ip = 141;
-                            continue _fun12148
-                        }
-                    case 10:
-                        var5 = _closure1_slot0;
-                        var2 = _closure1_slot1;
-                        var4 = 1;
-                        var3 = var2[var4];
-                        var2 = undefined;
-                        var5 = var5.bind(var2)(var3);
-                        var3 = var5.getClient;
-                        var5 = var3.bind(var5)();
-                        if (var5) {
-                            _fun12148_ip = 57;
-                            continue _fun12148
-                        }
-                    case 48:
-                        var3 = 'no-client-active';
-                        return var3;
-                    case 57:
-                        var3 = var5.getDsn;
-                        var3 = var3.bind(var5)();
-                        if (var3) {
-                            _fun12148_ip = 79;
-                            continue _fun12148
-                        }
-                    case 70:
-                        var3 = 'no-dsn-configured';
-                        return var3;
-                    case 79: // try_start_0
-                        var3 = _closure1_slot0;
-                        var1 = _closure1_slot1;
-                        var1 = var1[var4];
-                        var4 = var3.bind(var2)(var1);
-                        var3 = var4.suppressTracing;
-                        var1 = function() { // Environment: var1
-                            var0 = global;
-                            var3 = var0.fetch;
-                            var2 = undefined;
-                            var1 = 'https://o447951.ingest.sentry.io/api/4509632503087104/envelope/?sentry_version=7&sentry_key=c1dfb07d783ad5325c245c1fd3725390&sentry_client=sentry.javascript.browser%2F1.33.7';
-                            var0 = {
-                                'body': '{}',
-                                'method': 'POST',
-                                'mode': 'cors',
-                                'credentials': 'omit'
-                            };
-                            var0 = var3.bind(var2)(var1, var0);
-                            return var0;
-                        };
-                        var1 = var3.bind(var4)(var1);
-                        SaveGenerator(address = 118);
-                    case 116:
-                        return var1;
-                    case 118:
-                        ResumeGenerator(result_out_reg = 1, return_bool_out_reg = 3);
-                        if (var3) {
-                            _fun12148_ip = 127;
-                            continue _fun12148
-                        }
-                    case 124: // try_end0
-                        return var2;
-                    case 127:
-                        return var1;
-                    case 130: // catch_target0
-                        CatchBlockStart(arg_register = 1);
-                        var1 = 'sentry-unreachable';
-                        return var1;
-                    case 141:
-                        return var0;
-                }
-            };
-            return var0;
-        };
-        var3 = var3.bind(var4)(var2);
-        _closure1_slot3 = var3;
-        var2 = var3.apply;
-        var0 = arguments;
-        var1 = var0;
-        var0 = this;
-        var0 = var2.bind(var3)(var0, var1);
-        return var0;
-    };
-    var _closure1_slot3 = var0;
+    var0 = global;
+    var7 = var0.Object;
+    var6 = var7.defineProperty;
+    var0 = var0.Symbol;
+    var5 = var0.toStringTag;
+    var0 = {};
+    var8 = 'Module';
+    var0.value = var8;
+    var0 = var6.bind(var7)(var2, var5, var0);
     var0 = 0;
     var3 = var3[var0];
     var0 = undefined;
-    var3 = var4.bind(var0)(var3);
-    var _closure1_slot2 = var3;
-    var3 = global;
-    var6 = var3.Object;
-    var5 = var6.defineProperty;
-    var3 = var3.Symbol;
-    var4 = var3.toStringTag;
-    var3 = {};
-    var7 = 'Module';
-    var3.value = var7;
-    var3 = var5.bind(var6)(var2, var4, var3);
-    var1 = function() {
-        var0 = undefined;
-        var3 = _closure1_slot3;
-        var2 = var3.apply;
-        var0 = arguments;
-        var1 = var0;
-        var0 = this;
-        var0 = var2.bind(var3)(var0, var1);
+    var4 = var4.bind(var0)(var3);
+    var3 = var4.defineIntegration;
+    var1 = function(arg0) { // Environment: var1
+        var0 = arg0;
+        var0 = var0.featureFlagClient;
+        var _closure2_slot0 = var0;
+        var0 = {};
+        var2 = 'Statsig';
+        var0.name = var2;
+        var2 = function arg0() {
+            var3 = _closure2_slot0;
+            var2 = var3.on;
+            var1 = 'gate_evaluation';
+            var0 = function(arg0) { // Environment: var0
+                var1 = arg0;
+                var3 = _closure1_slot0;
+                var4 = _closure1_slot1;
+                var2 = 0;
+                var5 = var4[var2];
+                var0 = undefined;
+                var8 = var3.bind(var0)(var5);
+                var7 = var8._INTERNAL_insertFlagToScope;
+                var5 = var1.gate;
+                var6 = var5.name;
+                var5 = var1.gate;
+                var5 = var5.value;
+                var5 = var7.bind(var8)(var6, var5);
+                var2 = var4[var2];
+                var4 = var3.bind(var0)(var2);
+                var3 = var4._INTERNAL_addFeatureFlagToActiveSpan;
+                var2 = var1.gate;
+                var2 = var2.name;
+                var1 = var1.gate;
+                var1 = var1.value;
+                var1 = var3.bind(var4)(var2, var1);
+                return var0;
+            };
+            var0 = var2.bind(var3)(var1, var0);
+            var0 = undefined;
+            return var0;
+        };
+        var0.setup = var2;
+        var1 = function arg0, arg1, arg2() {
+            var2 = _closure1_slot0;
+            var1 = _closure1_slot1;
+            var0 = 0;
+            var1 = var1[var0];
+            var0 = undefined;
+            var2 = var2.bind(var0)(var1);
+            var1 = var2._INTERNAL_copyFlagsFromScopeToEvent;
+            var0 = arg0;
+            var0 = var1.bind(var2)(var0);
+            return var0;
+        };
+        var0.processEvent = var1;
         return var0;
     };
-    var2.diagnoseSdkConnectivity = var1;
+    var1 = var3.bind(var4)(var1);
+    var2.statsigIntegration = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 817]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [818]);

@@ -3,7 +3,7 @@ package net.time4j;
 final class i extends o {
 
     /* renamed from: i  reason: collision with root package name */
-    private final Object f37580i;
+    private final Object f38148i;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public i(bu.p pVar, int i10) {
@@ -21,7 +21,7 @@ final class i extends o {
     @Override // bu.v
     /* renamed from: b */
     public f0 apply(f0 f0Var) {
-        return (f0) ((bu.v) this.f37580i).apply(f0Var);
+        return (f0) ((bu.v) this.f38148i).apply(f0Var);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -29,28 +29,28 @@ final class i extends o {
         super(pVar, i10);
         switch (i10) {
             case -1:
-                this.f37580i = d(pVar, obj);
+                this.f38148i = d(pVar, obj);
                 return;
             case 0:
-                this.f37580i = bu.g0.l(pVar);
+                this.f38148i = bu.g0.l(pVar);
                 return;
             case 1:
-                this.f37580i = bu.g0.j(pVar);
+                this.f38148i = bu.g0.j(pVar);
                 return;
             case 2:
-                this.f37580i = bu.g0.f(pVar);
+                this.f38148i = bu.g0.f(pVar);
                 return;
             case 3:
-                this.f37580i = bu.g0.h(pVar);
+                this.f38148i = bu.g0.h(pVar);
                 return;
             case 4:
-                this.f37580i = bu.g0.d(pVar);
+                this.f38148i = bu.g0.d(pVar);
                 return;
             case 5:
-                this.f37580i = bu.g0.c(pVar);
+                this.f38148i = bu.g0.c(pVar);
                 return;
             case 6:
-                this.f37580i = c(pVar, obj);
+                this.f38148i = c(pVar, obj);
                 return;
             default:
                 throw new AssertionError("Unknown: " + a());

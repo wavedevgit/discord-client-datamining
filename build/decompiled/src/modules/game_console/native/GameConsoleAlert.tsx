@@ -64,7 +64,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/game_console/native/GameConsoleAlert.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun71799: for (var _fun71799_ip = 0;;) switch (_fun71799_ip) {
+        _fun67590: for (var _fun67590_ip = 0;;) switch (_fun67590_ip) {
             case 0:
                 var1 = arg0;
                 var13 = var1.body;
@@ -97,13 +97,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1[0] = var7;
                 var1[1] = var6;
                 var0 = function() { // Environment: var0
-                    _fun71801: for (var _fun71801_ip = 0;;) switch (_fun71801_ip) {
+                    _fun67592: for (var _fun67592_ip = 0;;) switch (_fun67592_ip) {
                         case 0:
                             var2 = _closure2_slot1;
                             var1 = null;
                             if (!(var1 != var2)) {
-                                _fun71801_ip = 23;
-                                continue _fun71801
+                                _fun67592_ip = 23;
+                                continue _fun67592
                             }
                         case 13:
                             var1 = _closure2_slot0;
@@ -118,8 +118,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = null;
                 var0 = var13;
                 if (!(var1 != var9)) {
-                    _fun71799_ip = 325;
-                    continue _fun71799
+                    _fun67590_ip = 325;
+                    continue _fun67590
                 }
             case 139:
                 var3 = _closure1_slot6;

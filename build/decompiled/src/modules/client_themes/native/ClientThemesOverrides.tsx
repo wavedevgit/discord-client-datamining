@@ -24,9 +24,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot3 = var3;
     var3 = 1;
     var3 = var5[var3];
-    var3 = var4.bind(var0)(var3);
-    var7 = var3.StyleSheet;
-    var6 = var7.create;
+    var7 = var4.bind(var0)(var3);
+    var6 = var7.createStyles;
     var3 = {};
     var8 = {};
     var9 = 'transparent';
@@ -59,15 +58,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = new Array(1);
         var1[0] = var4;
         var0 = function() { // Environment: var0
-            _fun62449: for (var _fun62449_ip = 0;;) switch (_fun62449_ip) {
+            _fun71671: for (var _fun71671_ip = 0;;) switch (_fun71671_ip) {
                 case 0:
                     var1 = _closure2_slot0;
                     var0 = null;
                     var1 = var0 != var1;
                     var0 = undefined;
                     if (!var1) {
-                        _fun62449_ip = 31;
-                        continue _fun62449
+                        _fun71671_ip = 31;
+                        continue _fun71671
                     }
                 case 18:
                     var1 = {};
@@ -101,15 +100,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = new Array(1);
         var1[0] = var4;
         var0 = function() { // Environment: var0
-            _fun62451: for (var _fun62451_ip = 0;;) switch (_fun62451_ip) {
+            _fun71673: for (var _fun71673_ip = 0;;) switch (_fun71673_ip) {
                 case 0:
                     var1 = _closure2_slot0;
                     var0 = null;
                     var1 = var0 != var1;
                     var0 = undefined;
                     if (!var1) {
-                        _fun62451_ip = 31;
-                        continue _fun62451
+                        _fun71673_ip = 31;
+                        continue _fun71673
                     }
                 case 18:
                     var1 = {};
@@ -143,15 +142,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = new Array(1);
         var1[0] = var4;
         var0 = function() { // Environment: var0
-            _fun62453: for (var _fun62453_ip = 0;;) switch (_fun62453_ip) {
+            _fun71675: for (var _fun71675_ip = 0;;) switch (_fun71675_ip) {
                 case 0:
                     var1 = _closure2_slot0;
                     var0 = null;
                     var1 = var0 != var1;
                     var0 = undefined;
                     if (!var1) {
-                        _fun62453_ip = 31;
-                        continue _fun62453
+                        _fun71675_ip = 31;
+                        continue _fun71675
                     }
                 case 18:
                     var1 = {};
@@ -167,35 +166,36 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useGradientMidpoint = var3;
     var1 = function(arg0) { // Environment: var1
-        _fun62454: for (var _fun62454_ip = 0;;) switch (_fun62454_ip) {
+        _fun71676: for (var _fun71676_ip = 0;;) switch (_fun71676_ip) {
             case 0:
                 var1 = arg0;
-                var4 = _closure1_slot1;
-                var3 = _closure1_slot2;
-                var0 = 3;
-                var3 = var3[var0];
+                var2 = _closure1_slot4;
                 var0 = undefined;
+                var2 = var2.bind(var0)();
+                var4 = _closure1_slot1;
+                var5 = _closure1_slot2;
+                var3 = 3;
+                var3 = var5[var3];
                 var3 = var4.bind(var0)(var3);
                 var3 = var3.bind(var0)();
                 if (!var3) {
-                    _fun62454_ip = 54;
-                    continue _fun62454
+                    _fun71676_ip = 58;
+                    continue _fun71676
                 }
-            case 35:
+            case 43:
                 var3 = null;
                 if (!(var3 == var1)) {
-                    _fun62454_ip = 51;
-                    continue _fun62454
+                    _fun71676_ip = 55;
+                    continue _fun71676
                 }
-            case 41:
-                var2 = _closure1_slot4;
+            case 49:
                 var1 = var2.none;
-            case 51:
+            case 55:
                 var0 = var1;
-            case 54:
+            case 58:
                 return var0;
         }
     };
     var2.useClientThemesOverride = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 3197, 7691, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1297, 3200, 8786, 2]);

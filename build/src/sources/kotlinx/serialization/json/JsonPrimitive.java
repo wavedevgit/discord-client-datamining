@@ -21,7 +21,7 @@ public abstract class JsonPrimitive extends JsonElement {
 
         @NotNull
         public final KSerializer serializer() {
-            return z.f51267a;
+            return z.f51835a;
         }
 
         public /* synthetic */ Companion(DefaultConstructorMarker defaultConstructorMarker) {

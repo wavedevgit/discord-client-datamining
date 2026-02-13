@@ -42,7 +42,7 @@ public /* synthetic */ class ForwardFooterInfo$$serializer implements h0 {
     @Override // tt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        n2 n2Var = n2.f50033a;
+        n2 n2Var = n2.f50601a;
         return new KSerializer[]{n2Var, n2Var, n2Var, a.u(n2Var)};
     }
 
@@ -63,7 +63,7 @@ public /* synthetic */ class ForwardFooterInfo$$serializer implements h0 {
             String m11 = b10.m(serialDescriptor, 1);
             String m12 = b10.m(serialDescriptor, 2);
             str = m10;
-            str4 = (String) b10.n(serialDescriptor, 3, n2.f50033a, null);
+            str4 = (String) b10.n(serialDescriptor, 3, n2.f50601a, null);
             str3 = m12;
             str2 = m11;
             i10 = 15;
@@ -89,7 +89,7 @@ public /* synthetic */ class ForwardFooterInfo$$serializer implements h0 {
                 } else if (o10 != 3) {
                     throw new b0(o10);
                 } else {
-                    str8 = (String) b10.n(serialDescriptor, 3, n2.f50033a, str8);
+                    str8 = (String) b10.n(serialDescriptor, 3, n2.f50601a, str8);
                     i11 |= 8;
                 }
             }

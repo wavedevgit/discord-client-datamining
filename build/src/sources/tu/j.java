@@ -15,28 +15,28 @@ import tu.d;
 public final class j implements Closeable {
 
     /* renamed from: r  reason: collision with root package name */
-    public static final a f50274r = new a(null);
+    public static final a f50842r = new a(null);
 
     /* renamed from: s  reason: collision with root package name */
-    private static final Logger f50275s = Logger.getLogger(e.class.getName());
+    private static final Logger f50843s = Logger.getLogger(e.class.getName());
 
     /* renamed from: d  reason: collision with root package name */
-    private final BufferedSink f50276d;
+    private final BufferedSink f50844d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final boolean f50277e;
+    private final boolean f50845e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final Buffer f50278i;
+    private final Buffer f50846i;
 
     /* renamed from: o  reason: collision with root package name */
-    private int f50279o;
+    private int f50847o;
 
     /* renamed from: p  reason: collision with root package name */
-    private boolean f50280p;
+    private boolean f50848p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final d.b f50281q;
+    private final d.b f50849q;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a {
@@ -50,18 +50,18 @@ public final class j implements Closeable {
 
     public j(BufferedSink sink, boolean z10) {
         Intrinsics.checkNotNullParameter(sink, "sink");
-        this.f50276d = sink;
-        this.f50277e = z10;
+        this.f50844d = sink;
+        this.f50845e = z10;
         Buffer buffer = new Buffer();
-        this.f50278i = buffer;
-        this.f50279o = 16384;
-        this.f50281q = new d.b(0, false, buffer, 3, null);
+        this.f50846i = buffer;
+        this.f50847o = 16384;
+        this.f50849q = new d.b(0, false, buffer, 3, null);
     }
 
     private final void Z(int i10, long j10) {
         int i11;
         while (j10 > 0) {
-            long min = Math.min(this.f50279o, j10);
+            long min = Math.min(this.f50847o, j10);
             j10 -= min;
             int i12 = (int) min;
             if (j10 == 0) {
@@ -70,17 +70,17 @@ public final class j implements Closeable {
                 i11 = 0;
             }
             n(i10, i12, 9, i11);
-            this.f50276d.u0(this.f50278i, min);
+            this.f50844d.u0(this.f50846i, min);
         }
     }
 
     public final synchronized void C(int i10, int i11, List requestHeaders) {
         int i12;
         Intrinsics.checkNotNullParameter(requestHeaders, "requestHeaders");
-        if (!this.f50280p) {
-            this.f50281q.g(requestHeaders);
-            long size = this.f50278i.size();
-            int min = (int) Math.min(this.f50279o - 4, size);
+        if (!this.f50848p) {
+            this.f50849q.g(requestHeaders);
+            long size = this.f50846i.size();
+            int min = (int) Math.min(this.f50847o - 4, size);
             int i13 = min + 4;
             long j10 = min;
             int i14 = (size > j10 ? 1 : (size == j10 ? 0 : -1));
@@ -90,8 +90,8 @@ public final class j implements Closeable {
                 i12 = 0;
             }
             n(i10, i13, 5, i12);
-            this.f50276d.writeInt(i11 & Integer.MAX_VALUE);
-            this.f50276d.u0(this.f50278i, j10);
+            this.f50844d.writeInt(i11 & Integer.MAX_VALUE);
+            this.f50844d.u0(this.f50846i, j10);
             if (i14 > 0) {
                 Z(i10, size - j10);
             }
@@ -102,11 +102,11 @@ public final class j implements Closeable {
 
     public final synchronized void I(int i10, b errorCode) {
         Intrinsics.checkNotNullParameter(errorCode, "errorCode");
-        if (!this.f50280p) {
+        if (!this.f50848p) {
             if (errorCode.d() != -1) {
                 n(i10, 4, 3, 0);
-                this.f50276d.writeInt(errorCode.d());
-                this.f50276d.flush();
+                this.f50844d.writeInt(errorCode.d());
+                this.f50844d.flush();
             } else {
                 throw new IllegalArgumentException("Failed requirement.");
             }
@@ -119,7 +119,7 @@ public final class j implements Closeable {
         int i10;
         try {
             Intrinsics.checkNotNullParameter(settings, "settings");
-            if (!this.f50280p) {
+            if (!this.f50848p) {
                 n(0, settings.i() * 6, 4, 0);
                 for (int i11 = 0; i11 < 10; i11++) {
                     if (settings.f(i11)) {
@@ -132,11 +132,11 @@ public final class j implements Closeable {
                         } else {
                             i10 = 3;
                         }
-                        this.f50276d.writeShort(i10);
-                        this.f50276d.writeInt(settings.a(i11));
+                        this.f50844d.writeShort(i10);
+                        this.f50844d.writeInt(settings.a(i11));
                     }
                 }
-                this.f50276d.flush();
+                this.f50844d.flush();
             } else {
                 throw new IOException("closed");
             }
@@ -146,11 +146,11 @@ public final class j implements Closeable {
     }
 
     public final synchronized void Q(int i10, long j10) {
-        if (!this.f50280p) {
+        if (!this.f50848p) {
             if (j10 != 0 && j10 <= 2147483647L) {
                 n(i10, 4, 8, 0);
-                this.f50276d.writeInt((int) j10);
-                this.f50276d.flush();
+                this.f50844d.writeInt((int) j10);
+                this.f50844d.flush();
             } else {
                 throw new IllegalArgumentException(("windowSizeIncrement == 0 || windowSizeIncrement > 0x7fffffffL: " + j10).toString());
             }
@@ -162,13 +162,13 @@ public final class j implements Closeable {
     public final synchronized void a(m peerSettings) {
         try {
             Intrinsics.checkNotNullParameter(peerSettings, "peerSettings");
-            if (!this.f50280p) {
-                this.f50279o = peerSettings.e(this.f50279o);
+            if (!this.f50848p) {
+                this.f50847o = peerSettings.e(this.f50847o);
                 if (peerSettings.b() != -1) {
-                    this.f50281q.e(peerSettings.b());
+                    this.f50849q.e(peerSettings.b());
                 }
                 n(0, 0, 4, 1);
-                this.f50276d.flush();
+                this.f50844d.flush();
             } else {
                 throw new IOException("closed");
             }
@@ -179,13 +179,13 @@ public final class j implements Closeable {
 
     @Override // java.io.Closeable, java.lang.AutoCloseable
     public synchronized void close() {
-        this.f50280p = true;
-        this.f50276d.close();
+        this.f50848p = true;
+        this.f50844d.close();
     }
 
     public final synchronized void flush() {
-        if (!this.f50280p) {
-            this.f50276d.flush();
+        if (!this.f50848p) {
+            this.f50844d.flush();
         } else {
             throw new IOException("closed");
         }
@@ -193,16 +193,16 @@ public final class j implements Closeable {
 
     public final synchronized void h() {
         try {
-            if (!this.f50280p) {
-                if (!this.f50277e) {
+            if (!this.f50848p) {
+                if (!this.f50845e) {
                     return;
                 }
-                Logger logger = f50275s;
+                Logger logger = f50843s;
                 if (logger.isLoggable(Level.FINE)) {
-                    logger.fine(mu.e.t(">> CONNECTION " + e.f50159b.q(), new Object[0]));
+                    logger.fine(mu.e.t(">> CONNECTION " + e.f50727b.q(), new Object[0]));
                 }
-                this.f50276d.e2(e.f50159b);
-                this.f50276d.flush();
+                this.f50844d.e2(e.f50727b);
+                this.f50844d.flush();
                 return;
             }
             throw new IOException("closed");
@@ -212,7 +212,7 @@ public final class j implements Closeable {
     }
 
     public final synchronized void i(boolean z10, int i10, Buffer buffer, int i11) {
-        if (!this.f50280p) {
+        if (!this.f50848p) {
             m(i10, z10 ? 1 : 0, buffer, i11);
         } else {
             throw new IOException("closed");
@@ -222,7 +222,7 @@ public final class j implements Closeable {
     public final void m(int i10, int i11, Buffer buffer, int i12) {
         n(i10, i12, 0, i11);
         if (i12 > 0) {
-            BufferedSink bufferedSink = this.f50276d;
+            BufferedSink bufferedSink = this.f50844d;
             Intrinsics.checkNotNull(buffer);
             bufferedSink.u0(buffer, i12);
         }
@@ -233,49 +233,49 @@ public final class j implements Closeable {
         int i15;
         int i16;
         int i17;
-        Logger logger = f50275s;
+        Logger logger = f50843s;
         if (logger.isLoggable(Level.FINE)) {
             i14 = i10;
             i15 = i11;
             i16 = i12;
             i17 = i13;
-            logger.fine(e.f50158a.c(false, i14, i15, i16, i17));
+            logger.fine(e.f50726a.c(false, i14, i15, i16, i17));
         } else {
             i14 = i10;
             i15 = i11;
             i16 = i12;
             i17 = i13;
         }
-        if (i15 <= this.f50279o) {
+        if (i15 <= this.f50847o) {
             if ((Integer.MIN_VALUE & i14) == 0) {
-                mu.e.c0(this.f50276d, i15);
-                this.f50276d.writeByte(i16 & SetSpanOperation.SPAN_MAX_PRIORITY);
-                this.f50276d.writeByte(i17 & SetSpanOperation.SPAN_MAX_PRIORITY);
-                this.f50276d.writeInt(Integer.MAX_VALUE & i14);
+                mu.e.c0(this.f50844d, i15);
+                this.f50844d.writeByte(i16 & SetSpanOperation.SPAN_MAX_PRIORITY);
+                this.f50844d.writeByte(i17 & SetSpanOperation.SPAN_MAX_PRIORITY);
+                this.f50844d.writeInt(Integer.MAX_VALUE & i14);
                 return;
             }
             throw new IllegalArgumentException(("reserved bit set: " + i14).toString());
         }
-        throw new IllegalArgumentException(("FRAME_SIZE_ERROR length > " + this.f50279o + ": " + i15).toString());
+        throw new IllegalArgumentException(("FRAME_SIZE_ERROR length > " + this.f50847o + ": " + i15).toString());
     }
 
     public final synchronized void p(int i10, b errorCode, byte[] debugData) {
         try {
             Intrinsics.checkNotNullParameter(errorCode, "errorCode");
             Intrinsics.checkNotNullParameter(debugData, "debugData");
-            if (!this.f50280p) {
+            if (!this.f50848p) {
                 if (errorCode.d() != -1) {
                     boolean z10 = false;
                     n(0, debugData.length + 8, 7, 0);
-                    this.f50276d.writeInt(i10);
-                    this.f50276d.writeInt(errorCode.d());
+                    this.f50844d.writeInt(i10);
+                    this.f50844d.writeInt(errorCode.d());
                     if (debugData.length == 0) {
                         z10 = true;
                     }
                     if (!z10) {
-                        this.f50276d.write(debugData);
+                        this.f50844d.write(debugData);
                     }
-                    this.f50276d.flush();
+                    this.f50844d.flush();
                 } else {
                     throw new IllegalArgumentException("errorCode.httpCode == -1");
                 }
@@ -290,10 +290,10 @@ public final class j implements Closeable {
     public final synchronized void s(boolean z10, int i10, List headerBlock) {
         int i11;
         Intrinsics.checkNotNullParameter(headerBlock, "headerBlock");
-        if (!this.f50280p) {
-            this.f50281q.g(headerBlock);
-            long size = this.f50278i.size();
-            long min = Math.min(this.f50279o, size);
+        if (!this.f50848p) {
+            this.f50849q.g(headerBlock);
+            long size = this.f50846i.size();
+            long min = Math.min(this.f50847o, size);
             int i12 = (size > min ? 1 : (size == min ? 0 : -1));
             if (i12 == 0) {
                 i11 = 4;
@@ -304,7 +304,7 @@ public final class j implements Closeable {
                 i11 |= 1;
             }
             n(i10, (int) min, 1, i11);
-            this.f50276d.u0(this.f50278i, min);
+            this.f50844d.u0(this.f50846i, min);
             if (i12 > 0) {
                 Z(i10, size - min);
             }
@@ -314,15 +314,15 @@ public final class j implements Closeable {
     }
 
     public final int y() {
-        return this.f50279o;
+        return this.f50847o;
     }
 
     public final synchronized void z(boolean z10, int i10, int i11) {
-        if (!this.f50280p) {
+        if (!this.f50848p) {
             n(0, 8, 6, z10 ? 1 : 0);
-            this.f50276d.writeInt(i10);
-            this.f50276d.writeInt(i11);
-            this.f50276d.flush();
+            this.f50844d.writeInt(i10);
+            this.f50844d.writeInt(i11);
+            this.f50844d.flush();
         } else {
             throw new IOException("closed");
         }

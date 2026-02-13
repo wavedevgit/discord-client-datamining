@@ -9,12 +9,12 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = var3.registerAsset;
     var1 = {
         '__packager_asset': true,
-        'httpServerLocation': '/assets/images/native/premium/activated',
-        'width': 213.5,
-        'height': 19,
+        'httpServerLocation': '/assets/modules/premium/native/images',
+        'width': 375,
+        'height': 199.5,
         'scales': null,
-        'hash': '5c483e491c3f377ab1cb686f9a6d4d3b',
-        'name': 'img_subscription_activated_light',
+        'hash': '84a21c838928df371966fa4ffd9053d1',
+        'name': 'nitro_home_banner',
         'type': 'png'
     };
     var4 = [2, 3];
@@ -23,4 +23,4 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = module;
     var1.exports = var2;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1239]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1240]);

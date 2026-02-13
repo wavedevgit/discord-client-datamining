@@ -173,4 +173,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.GuildRoleSubscriptionsTierTemplatesExperiment = var3;
     var2.GuildRoleSubscriptionsTierTemplatesUserExperiment = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5694, 3117, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5694, 3120, 2]);

@@ -3,26 +3,26 @@ package og;
 public final class b3 {
 
     /* renamed from: a  reason: collision with root package name */
-    private e3 f39111a;
+    private e3 f39679a;
 
     /* renamed from: b  reason: collision with root package name */
-    private Integer f39112b;
+    private Integer f39680b;
 
     /* renamed from: c  reason: collision with root package name */
-    private yd f39113c;
+    private yd f39681c;
 
     public final b3 a(Integer num) {
-        this.f39112b = Integer.valueOf(num.intValue() & Integer.MAX_VALUE);
+        this.f39680b = Integer.valueOf(num.intValue() & Integer.MAX_VALUE);
         return this;
     }
 
     public final b3 b(yd ydVar) {
-        this.f39113c = ydVar;
+        this.f39681c = ydVar;
         return this;
     }
 
     public final b3 c(e3 e3Var) {
-        this.f39111a = e3Var;
+        this.f39679a = e3Var;
         return this;
     }
 

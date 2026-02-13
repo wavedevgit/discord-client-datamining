@@ -17,23 +17,23 @@ import wp.x5;
 public final class p1 implements gn.k {
 
     /* renamed from: c  reason: collision with root package name */
-    public static final a f53281c = new a(null);
+    public static final a f53849c = new a(null);
 
     /* renamed from: b  reason: collision with root package name */
-    private final xp.d f53282b;
+    private final xp.d f53850b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements gn.c0 {
 
         /* renamed from: a  reason: collision with root package name */
-        private final /* synthetic */ gn.c0 f53283a;
+        private final /* synthetic */ gn.c0 f53851a;
 
         /* renamed from: wp.p1$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         /* synthetic */ class C0743a extends FunctionReferenceImpl implements Function3 {
 
             /* renamed from: d  reason: collision with root package name */
-            public static final C0743a f53284d = new C0743a();
+            public static final C0743a f53852d = new C0743a();
 
             C0743a() {
                 super(3, xp.d.class, "inflate", "inflate(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Z)Lcom/withpersona/sdk2/inquiry/selfie/databinding/Pi2SelfieCameraRestartBinding;", 0);
@@ -54,7 +54,7 @@ public final class p1 implements gn.k {
         /* synthetic */ class b extends FunctionReferenceImpl implements Function1 {
 
             /* renamed from: d  reason: collision with root package name */
-            public static final b f53285d = new b();
+            public static final b f53853d = new b();
 
             b() {
                 super(1, p1.class, "<init>", "<init>(Lcom/withpersona/sdk2/inquiry/selfie/databinding/Pi2SelfieCameraRestartBinding;)V", 0);
@@ -78,23 +78,23 @@ public final class p1 implements gn.k {
             Intrinsics.checkNotNullParameter(initialRendering, "initialRendering");
             Intrinsics.checkNotNullParameter(initialViewEnvironment, "initialViewEnvironment");
             Intrinsics.checkNotNullParameter(contextForNewView, "contextForNewView");
-            return this.f53283a.a(initialRendering, initialViewEnvironment, contextForNewView, viewGroup);
+            return this.f53851a.a(initialRendering, initialViewEnvironment, contextForNewView, viewGroup);
         }
 
         @Override // gn.c0
         public KClass getType() {
-            return this.f53283a.getType();
+            return this.f53851a.getType();
         }
 
         private a() {
             k.a aVar = gn.k.f25849a;
-            this.f53283a = new gn.z(Reflection.getOrCreateKotlinClass(x5.d.C0756d.class), C0743a.f53284d, b.f53285d);
+            this.f53851a = new gn.z(Reflection.getOrCreateKotlinClass(x5.d.C0756d.class), C0743a.f53852d, b.f53853d);
         }
     }
 
     public p1(xp.d binding) {
         Intrinsics.checkNotNullParameter(binding, "binding");
-        this.f53282b = binding;
+        this.f53850b = binding;
     }
 
     @Override // gn.k

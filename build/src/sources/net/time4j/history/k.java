@@ -15,7 +15,7 @@ import net.time4j.f0;
 final class k extends cu.d implements t {
 
     /* renamed from: e  reason: collision with root package name */
-    private static final Locale f37560e = new Locale("la");
+    private static final Locale f38128e = new Locale("la");
     private static final long serialVersionUID = 5200533417265981438L;
     private final d history;
 
@@ -23,10 +23,10 @@ final class k extends cu.d implements t {
     private static class a implements z {
 
         /* renamed from: d  reason: collision with root package name */
-        private final d f37561d;
+        private final d f38129d;
 
         a(d dVar) {
-            this.f37561d = dVar;
+            this.f38129d = dVar;
         }
 
         @Override // bu.z
@@ -65,7 +65,7 @@ final class k extends cu.d implements t {
         /* renamed from: f */
         public j y(q qVar) {
             try {
-                return this.f37561d.e((f0) qVar.k(f0.f37451z)).e();
+                return this.f38129d.e((f0) qVar.k(f0.f38019z)).e();
             } catch (IllegalArgumentException e10) {
                 throw new r(e10.getMessage(), e10);
             }
@@ -77,7 +77,7 @@ final class k extends cu.d implements t {
             if (jVar == null) {
                 return false;
             }
-            if (this.f37561d.e((f0) qVar.k(f0.f37451z)).e() != jVar) {
+            if (this.f38129d.e((f0) qVar.k(f0.f38019z)).e() != jVar) {
                 return false;
             }
             return true;
@@ -87,7 +87,7 @@ final class k extends cu.d implements t {
         /* renamed from: i */
         public q x(q qVar, j jVar, boolean z10) {
             if (jVar != null) {
-                if (this.f37561d.e((f0) qVar.k(f0.f37451z)).e() == jVar) {
+                if (this.f38129d.e((f0) qVar.k(f0.f38019z)).e() == jVar) {
                     return qVar;
                 }
                 throw new IllegalArgumentException(jVar.name());
@@ -110,7 +110,7 @@ final class k extends cu.d implements t {
         Boolean bool = Boolean.FALSE;
         String str = "a";
         if (((Boolean) dVar.b(cVar2, bool)).booleanValue()) {
-            cu.b c10 = cu.b.c("historic", f37560e);
+            cu.b c10 = cu.b.c("historic", f38128e);
             if (vVar2 == vVar) {
                 str = "w";
             }
@@ -161,7 +161,7 @@ final class k extends cu.d implements t {
     /* JADX INFO: Access modifiers changed from: protected */
     @Override // bu.e
     public z c(x xVar) {
-        if (xVar.E(f0.f37451z)) {
+        if (xVar.E(f0.f38019z)) {
             return new a(this.history);
         }
         return null;

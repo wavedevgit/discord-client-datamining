@@ -39,49 +39,49 @@ public final class e implements w1 {
     private Map T;
 
     /* renamed from: d  reason: collision with root package name */
-    private String f29653d;
+    private String f30221d;
 
     /* renamed from: e  reason: collision with root package name */
-    private String f29654e;
+    private String f30222e;
 
     /* renamed from: i  reason: collision with root package name */
-    private String f29655i;
+    private String f30223i;
 
     /* renamed from: o  reason: collision with root package name */
-    private String f29656o;
+    private String f30224o;
 
     /* renamed from: p  reason: collision with root package name */
-    private String f29657p;
+    private String f30225p;
 
     /* renamed from: q  reason: collision with root package name */
-    private String f29658q;
+    private String f30226q;
 
     /* renamed from: r  reason: collision with root package name */
-    private String[] f29659r;
+    private String[] f30227r;
 
     /* renamed from: s  reason: collision with root package name */
-    private Float f29660s;
+    private Float f30228s;
 
     /* renamed from: t  reason: collision with root package name */
-    private Boolean f29661t;
+    private Boolean f30229t;
 
     /* renamed from: u  reason: collision with root package name */
-    private Boolean f29662u;
+    private Boolean f30230u;
 
     /* renamed from: v  reason: collision with root package name */
-    private b f29663v;
+    private b f30231v;
 
     /* renamed from: w  reason: collision with root package name */
-    private Boolean f29664w;
+    private Boolean f30232w;
 
     /* renamed from: x  reason: collision with root package name */
-    private Long f29665x;
+    private Long f30233x;
 
     /* renamed from: y  reason: collision with root package name */
-    private Long f29666y;
+    private Long f30234y;
 
     /* renamed from: z  reason: collision with root package name */
-    private Long f29667z;
+    private Long f30235z;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements m1 {
@@ -313,34 +313,34 @@ public final class e implements w1 {
                             break;
                         }
                     case 2:
-                        eVar.f29664w = e3Var.w0();
+                        eVar.f30232w = e3Var.w0();
                         break;
                     case 3:
-                        eVar.f29654e = e3Var.r1();
+                        eVar.f30222e = e3Var.r1();
                         break;
                     case 4:
                         eVar.P = e3Var.l1();
                         break;
                     case 5:
-                        eVar.f29663v = (b) e3Var.I0(iLogger, new b.a());
+                        eVar.f30231v = (b) e3Var.I0(iLogger, new b.a());
                         break;
                     case 6:
                         eVar.O = e3Var.R1();
                         break;
                     case 7:
-                        eVar.f29656o = e3Var.r1();
+                        eVar.f30224o = e3Var.r1();
                         break;
                     case '\b':
                         eVar.M = e3Var.r1();
                         break;
                     case '\t':
-                        eVar.f29662u = e3Var.w0();
+                        eVar.f30230u = e3Var.w0();
                         break;
                     case '\n':
-                        eVar.f29660s = e3Var.R1();
+                        eVar.f30228s = e3Var.R1();
                         break;
                     case 11:
-                        eVar.f29658q = e3Var.r1();
+                        eVar.f30226q = e3Var.r1();
                         break;
                     case '\f':
                         eVar.H = e3Var.R1();
@@ -349,13 +349,13 @@ public final class e implements w1 {
                         eVar.I = e3Var.l1();
                         break;
                     case 14:
-                        eVar.f29666y = e3Var.n1();
+                        eVar.f30234y = e3Var.n1();
                         break;
                     case 15:
                         eVar.L = e3Var.r1();
                         break;
                     case 16:
-                        eVar.f29653d = e3Var.r1();
+                        eVar.f30221d = e3Var.r1();
                         break;
                     case 17:
                         eVar.A = e3Var.w0();
@@ -367,14 +367,14 @@ public final class e implements w1 {
                         } else {
                             String[] strArr = new String[list.size()];
                             list.toArray(strArr);
-                            eVar.f29659r = strArr;
+                            eVar.f30227r = strArr;
                             break;
                         }
                     case ChatViewRecyclerTypes.INTERACTION_STATUS /* 19 */:
-                        eVar.f29655i = e3Var.r1();
+                        eVar.f30223i = e3Var.r1();
                         break;
                     case 20:
-                        eVar.f29657p = e3Var.r1();
+                        eVar.f30225p = e3Var.r1();
                         break;
                     case ChatViewRecyclerTypes.FLAGGED_MESSAGE_EMBED /* 21 */:
                         eVar.R = e3Var.r1();
@@ -398,13 +398,13 @@ public final class e implements w1 {
                         eVar.B = e3Var.n1();
                         break;
                     case 28:
-                        eVar.f29667z = e3Var.n1();
+                        eVar.f30235z = e3Var.n1();
                         break;
                     case 29:
-                        eVar.f29665x = e3Var.n1();
+                        eVar.f30233x = e3Var.n1();
                         break;
                     case 30:
-                        eVar.f29661t = e3Var.w0();
+                        eVar.f30229t = e3Var.w0();
                         break;
                     case ChatViewRecyclerTypes.EMBEDDED_ACTIVITY_INVITE /* 31 */:
                         eVar.E = e3Var.n1();
@@ -465,11 +465,11 @@ public final class e implements w1 {
     }
 
     public void L(String[] strArr) {
-        this.f29659r = strArr;
+        this.f30227r = strArr;
     }
 
     public void M(Float f10) {
-        this.f29660s = f10;
+        this.f30228s = f10;
     }
 
     public void N(Float f10) {
@@ -481,11 +481,11 @@ public final class e implements w1 {
     }
 
     public void P(String str) {
-        this.f29655i = str;
+        this.f30223i = str;
     }
 
     public void Q(Boolean bool) {
-        this.f29661t = bool;
+        this.f30229t = bool;
     }
 
     public void R(String str) {
@@ -505,11 +505,11 @@ public final class e implements w1 {
     }
 
     public void V(String str) {
-        this.f29656o = str;
+        this.f30224o = str;
     }
 
     public void W(Long l10) {
-        this.f29666y = l10;
+        this.f30234y = l10;
     }
 
     public void X(Long l10) {
@@ -529,19 +529,19 @@ public final class e implements w1 {
     }
 
     public void b0(String str) {
-        this.f29654e = str;
+        this.f30222e = str;
     }
 
     public void c0(Long l10) {
-        this.f29665x = l10;
+        this.f30233x = l10;
     }
 
     public void d0(String str) {
-        this.f29657p = str;
+        this.f30225p = str;
     }
 
     public void e0(String str) {
-        this.f29658q = str;
+        this.f30226q = str;
     }
 
     public boolean equals(Object obj) {
@@ -550,7 +550,7 @@ public final class e implements w1 {
         }
         if (obj != null && e.class == obj.getClass()) {
             e eVar = (e) obj;
-            if (io.sentry.util.y.a(this.f29653d, eVar.f29653d) && io.sentry.util.y.a(this.f29654e, eVar.f29654e) && io.sentry.util.y.a(this.f29655i, eVar.f29655i) && io.sentry.util.y.a(this.f29656o, eVar.f29656o) && io.sentry.util.y.a(this.f29657p, eVar.f29657p) && io.sentry.util.y.a(this.f29658q, eVar.f29658q) && Arrays.equals(this.f29659r, eVar.f29659r) && io.sentry.util.y.a(this.f29660s, eVar.f29660s) && io.sentry.util.y.a(this.f29661t, eVar.f29661t) && io.sentry.util.y.a(this.f29662u, eVar.f29662u) && this.f29663v == eVar.f29663v && io.sentry.util.y.a(this.f29664w, eVar.f29664w) && io.sentry.util.y.a(this.f29665x, eVar.f29665x) && io.sentry.util.y.a(this.f29666y, eVar.f29666y) && io.sentry.util.y.a(this.f29667z, eVar.f29667z) && io.sentry.util.y.a(this.A, eVar.A) && io.sentry.util.y.a(this.B, eVar.B) && io.sentry.util.y.a(this.C, eVar.C) && io.sentry.util.y.a(this.D, eVar.D) && io.sentry.util.y.a(this.E, eVar.E) && io.sentry.util.y.a(this.F, eVar.F) && io.sentry.util.y.a(this.G, eVar.G) && io.sentry.util.y.a(this.H, eVar.H) && io.sentry.util.y.a(this.I, eVar.I) && io.sentry.util.y.a(this.J, eVar.J) && io.sentry.util.y.a(this.L, eVar.L) && io.sentry.util.y.a(this.M, eVar.M) && io.sentry.util.y.a(this.N, eVar.N) && io.sentry.util.y.a(this.O, eVar.O) && io.sentry.util.y.a(this.P, eVar.P) && io.sentry.util.y.a(this.Q, eVar.Q) && io.sentry.util.y.a(this.R, eVar.R) && io.sentry.util.y.a(this.S, eVar.S)) {
+            if (io.sentry.util.y.a(this.f30221d, eVar.f30221d) && io.sentry.util.y.a(this.f30222e, eVar.f30222e) && io.sentry.util.y.a(this.f30223i, eVar.f30223i) && io.sentry.util.y.a(this.f30224o, eVar.f30224o) && io.sentry.util.y.a(this.f30225p, eVar.f30225p) && io.sentry.util.y.a(this.f30226q, eVar.f30226q) && Arrays.equals(this.f30227r, eVar.f30227r) && io.sentry.util.y.a(this.f30228s, eVar.f30228s) && io.sentry.util.y.a(this.f30229t, eVar.f30229t) && io.sentry.util.y.a(this.f30230u, eVar.f30230u) && this.f30231v == eVar.f30231v && io.sentry.util.y.a(this.f30232w, eVar.f30232w) && io.sentry.util.y.a(this.f30233x, eVar.f30233x) && io.sentry.util.y.a(this.f30234y, eVar.f30234y) && io.sentry.util.y.a(this.f30235z, eVar.f30235z) && io.sentry.util.y.a(this.A, eVar.A) && io.sentry.util.y.a(this.B, eVar.B) && io.sentry.util.y.a(this.C, eVar.C) && io.sentry.util.y.a(this.D, eVar.D) && io.sentry.util.y.a(this.E, eVar.E) && io.sentry.util.y.a(this.F, eVar.F) && io.sentry.util.y.a(this.G, eVar.G) && io.sentry.util.y.a(this.H, eVar.H) && io.sentry.util.y.a(this.I, eVar.I) && io.sentry.util.y.a(this.J, eVar.J) && io.sentry.util.y.a(this.L, eVar.L) && io.sentry.util.y.a(this.M, eVar.M) && io.sentry.util.y.a(this.N, eVar.N) && io.sentry.util.y.a(this.O, eVar.O) && io.sentry.util.y.a(this.P, eVar.P) && io.sentry.util.y.a(this.Q, eVar.Q) && io.sentry.util.y.a(this.R, eVar.R) && io.sentry.util.y.a(this.S, eVar.S)) {
                 return true;
             }
         }
@@ -558,11 +558,11 @@ public final class e implements w1 {
     }
 
     public void f0(Boolean bool) {
-        this.f29662u = bool;
+        this.f30230u = bool;
     }
 
     public void g0(b bVar) {
-        this.f29663v = bVar;
+        this.f30231v = bVar;
     }
 
     public void h0(Integer num) {
@@ -570,7 +570,7 @@ public final class e implements w1 {
     }
 
     public int hashCode() {
-        return (io.sentry.util.y.b(this.f29653d, this.f29654e, this.f29655i, this.f29656o, this.f29657p, this.f29658q, this.f29660s, this.f29661t, this.f29662u, this.f29663v, this.f29664w, this.f29665x, this.f29666y, this.f29667z, this.A, this.B, this.C, this.D, this.E, this.F, this.G, this.H, this.I, this.J, this.K, this.L, this.M, this.N, this.O, this.P, this.Q, this.R, this.S) * 31) + Arrays.hashCode(this.f29659r);
+        return (io.sentry.util.y.b(this.f30221d, this.f30222e, this.f30223i, this.f30224o, this.f30225p, this.f30226q, this.f30228s, this.f30229t, this.f30230u, this.f30231v, this.f30232w, this.f30233x, this.f30234y, this.f30235z, this.A, this.B, this.C, this.D, this.E, this.F, this.G, this.H, this.I, this.J, this.K, this.L, this.M, this.N, this.O, this.P, this.Q, this.R, this.S) * 31) + Arrays.hashCode(this.f30227r);
     }
 
     public void i0(Double d10) {
@@ -594,7 +594,7 @@ public final class e implements w1 {
     }
 
     public void n0(Boolean bool) {
-        this.f29664w = bool;
+        this.f30232w = bool;
     }
 
     public void o0(Long l10) {
@@ -612,50 +612,50 @@ public final class e implements w1 {
     @Override // io.sentry.w1
     public void serialize(f3 f3Var, ILogger iLogger) {
         f3Var.u();
-        if (this.f29653d != null) {
-            f3Var.e(StackTraceHelper.NAME_KEY).f(this.f29653d);
+        if (this.f30221d != null) {
+            f3Var.e(StackTraceHelper.NAME_KEY).f(this.f30221d);
         }
-        if (this.f29654e != null) {
-            f3Var.e("manufacturer").f(this.f29654e);
+        if (this.f30222e != null) {
+            f3Var.e("manufacturer").f(this.f30222e);
         }
-        if (this.f29655i != null) {
-            f3Var.e("brand").f(this.f29655i);
+        if (this.f30223i != null) {
+            f3Var.e("brand").f(this.f30223i);
         }
-        if (this.f29656o != null) {
-            f3Var.e("family").f(this.f29656o);
+        if (this.f30224o != null) {
+            f3Var.e("family").f(this.f30224o);
         }
-        if (this.f29657p != null) {
-            f3Var.e("model").f(this.f29657p);
+        if (this.f30225p != null) {
+            f3Var.e("model").f(this.f30225p);
         }
-        if (this.f29658q != null) {
-            f3Var.e("model_id").f(this.f29658q);
+        if (this.f30226q != null) {
+            f3Var.e("model_id").f(this.f30226q);
         }
-        if (this.f29659r != null) {
-            f3Var.e("archs").j(iLogger, this.f29659r);
+        if (this.f30227r != null) {
+            f3Var.e("archs").j(iLogger, this.f30227r);
         }
-        if (this.f29660s != null) {
-            f3Var.e("battery_level").i(this.f29660s);
+        if (this.f30228s != null) {
+            f3Var.e("battery_level").i(this.f30228s);
         }
-        if (this.f29661t != null) {
-            f3Var.e("charging").k(this.f29661t);
+        if (this.f30229t != null) {
+            f3Var.e("charging").k(this.f30229t);
         }
-        if (this.f29662u != null) {
-            f3Var.e("online").k(this.f29662u);
+        if (this.f30230u != null) {
+            f3Var.e("online").k(this.f30230u);
         }
-        if (this.f29663v != null) {
-            f3Var.e("orientation").j(iLogger, this.f29663v);
+        if (this.f30231v != null) {
+            f3Var.e("orientation").j(iLogger, this.f30231v);
         }
-        if (this.f29664w != null) {
-            f3Var.e("simulator").k(this.f29664w);
+        if (this.f30232w != null) {
+            f3Var.e("simulator").k(this.f30232w);
         }
-        if (this.f29665x != null) {
-            f3Var.e("memory_size").i(this.f29665x);
+        if (this.f30233x != null) {
+            f3Var.e("memory_size").i(this.f30233x);
         }
-        if (this.f29666y != null) {
-            f3Var.e("free_memory").i(this.f29666y);
+        if (this.f30234y != null) {
+            f3Var.e("free_memory").i(this.f30234y);
         }
-        if (this.f29667z != null) {
-            f3Var.e("usable_memory").i(this.f29667z);
+        if (this.f30235z != null) {
+            f3Var.e("usable_memory").i(this.f30235z);
         }
         if (this.A != null) {
             f3Var.e("low_memory").k(this.A);
@@ -725,19 +725,19 @@ public final class e implements w1 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public e(e eVar) {
-        this.f29653d = eVar.f29653d;
-        this.f29654e = eVar.f29654e;
-        this.f29655i = eVar.f29655i;
-        this.f29656o = eVar.f29656o;
-        this.f29657p = eVar.f29657p;
-        this.f29658q = eVar.f29658q;
-        this.f29661t = eVar.f29661t;
-        this.f29662u = eVar.f29662u;
-        this.f29663v = eVar.f29663v;
-        this.f29664w = eVar.f29664w;
-        this.f29665x = eVar.f29665x;
-        this.f29666y = eVar.f29666y;
-        this.f29667z = eVar.f29667z;
+        this.f30221d = eVar.f30221d;
+        this.f30222e = eVar.f30222e;
+        this.f30223i = eVar.f30223i;
+        this.f30224o = eVar.f30224o;
+        this.f30225p = eVar.f30225p;
+        this.f30226q = eVar.f30226q;
+        this.f30229t = eVar.f30229t;
+        this.f30230u = eVar.f30230u;
+        this.f30231v = eVar.f30231v;
+        this.f30232w = eVar.f30232w;
+        this.f30233x = eVar.f30233x;
+        this.f30234y = eVar.f30234y;
+        this.f30235z = eVar.f30235z;
         this.A = eVar.A;
         this.B = eVar.B;
         this.C = eVar.C;
@@ -751,9 +751,9 @@ public final class e implements w1 {
         this.L = eVar.L;
         this.N = eVar.N;
         this.O = eVar.O;
-        this.f29660s = eVar.f29660s;
-        String[] strArr = eVar.f29659r;
-        this.f29659r = strArr != null ? (String[]) strArr.clone() : null;
+        this.f30228s = eVar.f30228s;
+        String[] strArr = eVar.f30227r;
+        this.f30227r = strArr != null ? (String[]) strArr.clone() : null;
         this.M = eVar.M;
         TimeZone timeZone = eVar.K;
         this.K = timeZone != null ? (TimeZone) timeZone.clone() : null;

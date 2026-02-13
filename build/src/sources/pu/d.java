@@ -11,29 +11,29 @@ import kotlin.jvm.internal.Intrinsics;
 public final class d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final e f43209a;
+    private final e f43777a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f43210b;
+    private final String f43778b;
 
     /* renamed from: c  reason: collision with root package name */
-    private boolean f43211c;
+    private boolean f43779c;
 
     /* renamed from: d  reason: collision with root package name */
-    private a f43212d;
+    private a f43780d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final List f43213e;
+    private final List f43781e;
 
     /* renamed from: f  reason: collision with root package name */
-    private boolean f43214f;
+    private boolean f43782f;
 
     public d(e taskRunner, String name) {
         Intrinsics.checkNotNullParameter(taskRunner, "taskRunner");
         Intrinsics.checkNotNullParameter(name, "name");
-        this.f43209a = taskRunner;
-        this.f43210b = name;
-        this.f43213e = new ArrayList();
+        this.f43777a = taskRunner;
+        this.f43778b = name;
+        this.f43781e = new ArrayList();
     }
 
     public static /* synthetic */ void j(d dVar, a aVar, long j10, int i10, Object obj) {
@@ -44,15 +44,15 @@ public final class d {
     }
 
     public final void a() {
-        if (mu.e.f36664h && Thread.holdsLock(this)) {
+        if (mu.e.f37232h && Thread.holdsLock(this)) {
             throw new AssertionError("Thread " + Thread.currentThread().getName() + " MUST NOT hold lock on " + this);
         }
-        synchronized (this.f43209a) {
+        synchronized (this.f43777a) {
             try {
                 if (b()) {
-                    this.f43209a.h(this);
+                    this.f43777a.h(this);
                 }
-                Unit unit = Unit.f31988a;
+                Unit unit = Unit.f32556a;
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -60,21 +60,21 @@ public final class d {
     }
 
     public final boolean b() {
-        a aVar = this.f43212d;
+        a aVar = this.f43780d;
         if (aVar != null) {
             Intrinsics.checkNotNull(aVar);
             if (aVar.a()) {
-                this.f43214f = true;
+                this.f43782f = true;
             }
         }
         boolean z10 = false;
-        for (int size = this.f43213e.size() - 1; -1 < size; size--) {
-            if (((a) this.f43213e.get(size)).a()) {
-                a aVar2 = (a) this.f43213e.get(size);
-                if (e.f43215h.a().isLoggable(Level.FINE)) {
+        for (int size = this.f43781e.size() - 1; -1 < size; size--) {
+            if (((a) this.f43781e.get(size)).a()) {
+                a aVar2 = (a) this.f43781e.get(size);
+                if (e.f43783h.a().isLoggable(Level.FINE)) {
                     b.a(aVar2, this, "canceled");
                 }
-                this.f43213e.remove(size);
+                this.f43781e.remove(size);
                 z10 = true;
             }
         }
@@ -82,48 +82,48 @@ public final class d {
     }
 
     public final a c() {
-        return this.f43212d;
+        return this.f43780d;
     }
 
     public final boolean d() {
-        return this.f43214f;
+        return this.f43782f;
     }
 
     public final List e() {
-        return this.f43213e;
+        return this.f43781e;
     }
 
     public final String f() {
-        return this.f43210b;
+        return this.f43778b;
     }
 
     public final boolean g() {
-        return this.f43211c;
+        return this.f43779c;
     }
 
     public final e h() {
-        return this.f43209a;
+        return this.f43777a;
     }
 
     public final void i(a task, long j10) {
         Intrinsics.checkNotNullParameter(task, "task");
-        synchronized (this.f43209a) {
-            if (this.f43211c) {
+        synchronized (this.f43777a) {
+            if (this.f43779c) {
                 if (task.a()) {
-                    if (e.f43215h.a().isLoggable(Level.FINE)) {
+                    if (e.f43783h.a().isLoggable(Level.FINE)) {
                         b.a(task, this, "schedule canceled (queue is shutdown)");
                     }
                     return;
                 }
-                if (e.f43215h.a().isLoggable(Level.FINE)) {
+                if (e.f43783h.a().isLoggable(Level.FINE)) {
                     b.a(task, this, "schedule failed (queue is shutdown)");
                 }
                 throw new RejectedExecutionException();
             }
             if (k(task, j10, false)) {
-                this.f43209a.h(this);
+                this.f43777a.h(this);
             }
-            Unit unit = Unit.f31988a;
+            Unit unit = Unit.f32556a;
         }
     }
 
@@ -131,20 +131,20 @@ public final class d {
         String str;
         Intrinsics.checkNotNullParameter(task, "task");
         task.e(this);
-        long c10 = this.f43209a.g().c();
+        long c10 = this.f43777a.g().c();
         long j11 = c10 + j10;
-        int indexOf = this.f43213e.indexOf(task);
+        int indexOf = this.f43781e.indexOf(task);
         if (indexOf != -1) {
             if (task.c() <= j11) {
-                if (e.f43215h.a().isLoggable(Level.FINE)) {
+                if (e.f43783h.a().isLoggable(Level.FINE)) {
                     b.a(task, this, "already scheduled");
                 }
                 return false;
             }
-            this.f43213e.remove(indexOf);
+            this.f43781e.remove(indexOf);
         }
         task.g(j11);
-        if (e.f43215h.a().isLoggable(Level.FINE)) {
+        if (e.f43783h.a().isLoggable(Level.FINE)) {
             if (z10) {
                 str = "run again after " + b.b(j11 - c10);
             } else {
@@ -152,7 +152,7 @@ public final class d {
             }
             b.a(task, this, str);
         }
-        Iterator it = this.f43213e.iterator();
+        Iterator it = this.f43781e.iterator();
         int i10 = 0;
         while (true) {
             if (it.hasNext()) {
@@ -166,9 +166,9 @@ public final class d {
             }
         }
         if (i10 == -1) {
-            i10 = this.f43213e.size();
+            i10 = this.f43781e.size();
         }
-        this.f43213e.add(i10, task);
+        this.f43781e.add(i10, task);
         if (i10 != 0) {
             return false;
         }
@@ -176,24 +176,24 @@ public final class d {
     }
 
     public final void l(a aVar) {
-        this.f43212d = aVar;
+        this.f43780d = aVar;
     }
 
     public final void m(boolean z10) {
-        this.f43214f = z10;
+        this.f43782f = z10;
     }
 
     public final void n() {
-        if (mu.e.f36664h && Thread.holdsLock(this)) {
+        if (mu.e.f37232h && Thread.holdsLock(this)) {
             throw new AssertionError("Thread " + Thread.currentThread().getName() + " MUST NOT hold lock on " + this);
         }
-        synchronized (this.f43209a) {
+        synchronized (this.f43777a) {
             try {
-                this.f43211c = true;
+                this.f43779c = true;
                 if (b()) {
-                    this.f43209a.h(this);
+                    this.f43777a.h(this);
                 }
-                Unit unit = Unit.f31988a;
+                Unit unit = Unit.f32556a;
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -201,6 +201,6 @@ public final class d {
     }
 
     public String toString() {
-        return this.f43210b;
+        return this.f43778b;
     }
 }

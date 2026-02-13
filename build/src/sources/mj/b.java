@@ -3,16 +3,16 @@ package mj;
 public class b implements a {
 
     /* renamed from: a  reason: collision with root package name */
-    private static b f36522a;
+    private static b f37090a;
 
     private b() {
     }
 
     public static b b() {
-        if (f36522a == null) {
-            f36522a = new b();
+        if (f37090a == null) {
+            f37090a = new b();
         }
-        return f36522a;
+        return f37090a;
     }
 
     @Override // mj.a

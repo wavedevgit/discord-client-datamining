@@ -8,13 +8,13 @@ import kotlinx.coroutines.flow.MutableSharedFlow;
 public final class z implements bt.a0 {
 
     /* renamed from: e  reason: collision with root package name */
-    public static final a f36596e = new a(null);
+    public static final a f37164e = new a(null);
 
     /* renamed from: i  reason: collision with root package name */
-    private static final MutableSharedFlow f36597i = bt.c0.b(0, 1, at.a.f6105e, 1, null);
+    private static final MutableSharedFlow f37165i = bt.c0.b(0, 1, at.a.f6105e, 1, null);
 
     /* renamed from: d  reason: collision with root package name */
-    private final /* synthetic */ MutableSharedFlow f36598d = f36597i;
+    private final /* synthetic */ MutableSharedFlow f37166d = f37165i;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -27,11 +27,11 @@ public final class z implements bt.a0 {
     }
 
     public final boolean a(boolean z10) {
-        return f36597i.b(Boolean.valueOf(z10));
+        return f37165i.b(Boolean.valueOf(z10));
     }
 
     @Override // bt.a0, kotlinx.coroutines.flow.Flow
     public Object collect(FlowCollector flowCollector, Continuation continuation) {
-        return this.f36598d.collect(flowCollector, continuation);
+        return this.f37166d.collect(flowCollector, continuation);
     }
 }

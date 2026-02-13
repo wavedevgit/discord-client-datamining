@@ -22,16 +22,16 @@ import pm.f;
 public final class f {
 
     /* renamed from: a  reason: collision with root package name */
-    private e1 f42792a;
+    private e1 f43360a;
 
     /* renamed from: b  reason: collision with root package name */
-    private CancellationSignal f42793b;
+    private CancellationSignal f43361b;
 
     /* renamed from: c  reason: collision with root package name */
-    private Function1 f42794c;
+    private Function1 f43362c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Lazy f42795d = l.b(new Function0() { // from class: pm.e
+    private final Lazy f43363d = l.b(new Function0() { // from class: pm.e
         @Override // kotlin.jvm.functions.Function0
         public final Object invoke() {
             f.a m10;
@@ -41,10 +41,10 @@ public final class f {
     });
 
     /* renamed from: e  reason: collision with root package name */
-    private boolean f42796e;
+    private boolean f43364e;
 
     /* renamed from: f  reason: collision with root package name */
-    private SpringAnimation f42797f;
+    private SpringAnimation f43365f;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements d1 {
@@ -71,7 +71,7 @@ public final class f {
 
     private final void g(boolean z10, Float f10) {
         int i10;
-        final e1 e1Var = this.f42792a;
+        final e1 e1Var = this.f43360a;
         if (e1Var != null) {
             Function1 function1 = new Function1() { // from class: pm.b
                 @Override // kotlin.jvm.functions.Function1
@@ -112,7 +112,7 @@ public final class f {
                 }
             });
             b10.r();
-            this.f42797f = b10;
+            this.f43365f = b10;
             return;
         }
         throw new IllegalStateException("Controller should not be null");
@@ -128,7 +128,7 @@ public final class f {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit i(f fVar, float f10) {
         fVar.s(ps.a.c(f10));
-        return Unit.f31988a;
+        return Unit.f32556a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -138,8 +138,8 @@ public final class f {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void k(f fVar, androidx.dynamicanimation.animation.c cVar, boolean z10, float f10, float f11) {
-        if (Intrinsics.areEqual(cVar, fVar.f42797f)) {
-            fVar.f42797f = null;
+        if (Intrinsics.areEqual(cVar, fVar.f43365f)) {
+            fVar.f43365f = null;
         }
         fVar.o();
     }
@@ -150,31 +150,31 @@ public final class f {
     }
 
     private final a p() {
-        return (a) this.f42795d.getValue();
+        return (a) this.f43363d.getValue();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public final void v(e1 e1Var) {
-        this.f42793b = null;
-        this.f42792a = e1Var;
-        Function1 function1 = this.f42794c;
+        this.f43361b = null;
+        this.f43360a = e1Var;
+        Function1 function1 = this.f43362c;
         if (function1 != null) {
             function1.invoke(e1Var);
         }
-        this.f42794c = null;
+        this.f43362c = null;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public final void w() {
-        this.f42792a = null;
-        this.f42793b = null;
-        this.f42796e = false;
-        SpringAnimation springAnimation = this.f42797f;
+        this.f43360a = null;
+        this.f43361b = null;
+        this.f43364e = false;
+        SpringAnimation springAnimation = this.f43365f;
         if (springAnimation != null) {
             springAnimation.d();
         }
-        this.f42797f = null;
-        this.f42794c = null;
+        this.f43365f = null;
+        this.f43362c = null;
     }
 
     public static /* synthetic */ void y(f fVar, View view, Function1 function1, int i10, Object obj) {
@@ -185,9 +185,9 @@ public final class f {
     }
 
     public final void l(Float f10) {
-        e1 e1Var = this.f42792a;
+        e1 e1Var = this.f43360a;
         if (e1Var == null) {
-            CancellationSignal cancellationSignal = this.f42793b;
+            CancellationSignal cancellationSignal = this.f43361b;
             if (cancellationSignal != null) {
                 cancellationSignal.cancel();
                 return;
@@ -195,7 +195,7 @@ public final class f {
             return;
         }
         boolean z10 = false;
-        pm.a.f42786a.b(false);
+        pm.a.f43354a.b(false);
         int i10 = e1Var.c().f3307d;
         int i11 = e1Var.e().f3307d;
         int i12 = e1Var.d().f3307d;
@@ -209,22 +209,22 @@ public final class f {
         } else if (i10 == i12) {
             e1Var.a(false);
         } else if (e1Var.b() >= 0.15f) {
-            h(this, !this.f42796e, null, 2, null);
+            h(this, !this.f43364e, null, 2, null);
         } else {
-            h(this, this.f42796e, null, 2, null);
+            h(this, this.f43364e, null, 2, null);
         }
     }
 
     public final void n() {
-        e1 e1Var = this.f42792a;
+        e1 e1Var = this.f43360a;
         if (e1Var != null) {
-            e1Var.a(this.f42796e);
+            e1Var.a(this.f43364e);
         }
-        CancellationSignal cancellationSignal = this.f42793b;
+        CancellationSignal cancellationSignal = this.f43361b;
         if (cancellationSignal != null) {
             cancellationSignal.cancel();
         }
-        SpringAnimation springAnimation = this.f42797f;
+        SpringAnimation springAnimation = this.f43365f;
         if (springAnimation != null) {
             springAnimation.d();
         }
@@ -232,9 +232,9 @@ public final class f {
     }
 
     public final void o() {
-        e1 e1Var = this.f42792a;
+        e1 e1Var = this.f43360a;
         if (e1Var == null) {
-            CancellationSignal cancellationSignal = this.f42793b;
+            CancellationSignal cancellationSignal = this.f43361b;
             if (cancellationSignal != null) {
                 cancellationSignal.cancel();
                 return;
@@ -249,14 +249,14 @@ public final class f {
         } else if (i10 == i12) {
             e1Var.a(false);
         } else if (e1Var.b() >= 0.15f) {
-            e1Var.a(!this.f42796e);
+            e1Var.a(!this.f43364e);
         } else {
-            e1Var.a(this.f42796e);
+            e1Var.a(this.f43364e);
         }
     }
 
     public final int q() {
-        e1 e1Var = this.f42792a;
+        e1 e1Var = this.f43360a;
         if (e1Var != null) {
             return e1Var.c().f3307d;
         }
@@ -264,9 +264,9 @@ public final class f {
     }
 
     public final int r(int i10) {
-        e1 e1Var = this.f42792a;
+        e1 e1Var = this.f43360a;
         if (e1Var != null) {
-            pm.a.f42786a.b(true);
+            pm.a.f43354a.b(true);
             return s(e1Var.c().f3307d - i10);
         }
         throw new IllegalStateException("Current WindowInsetsAnimationController is null.This should only be called if isAnimationInProgress() returns true");
@@ -275,11 +275,11 @@ public final class f {
     public final int s(int i10) {
         int i11;
         int i12;
-        e1 e1Var = this.f42792a;
+        e1 e1Var = this.f43360a;
         if (e1Var != null) {
             int i13 = e1Var.d().f3307d;
             int i14 = e1Var.e().f3307d;
-            boolean z10 = this.f42796e;
+            boolean z10 = this.f43364e;
             if (z10) {
                 i11 = i14;
             } else {
@@ -299,14 +299,14 @@ public final class f {
     }
 
     public final boolean t() {
-        if (this.f42792a != null) {
+        if (this.f43360a != null) {
             return true;
         }
         return false;
     }
 
     public final boolean u() {
-        if (this.f42793b != null) {
+        if (this.f43361b != null) {
             return true;
         }
         return false;
@@ -321,15 +321,15 @@ public final class f {
             if (F != null && F.u(WindowInsetsCompat.p.c())) {
                 z10 = true;
             }
-            this.f42796e = z10;
-            this.f42793b = new CancellationSignal();
-            this.f42794c = function1;
-            pm.a.f42786a.b(true);
+            this.f43364e = z10;
+            this.f43361b = new CancellationSignal();
+            this.f43362c = function1;
+            pm.a.f43354a.b(true);
             WindowInsetsControllerCompat J = i0.J(view);
             if (J != null) {
                 int c10 = WindowInsetsCompat.p.c();
-                linearInterpolator = g.f42799a;
-                J.a(c10, -1L, linearInterpolator, this.f42793b, p());
+                linearInterpolator = g.f43367a;
+                J.a(c10, -1L, linearInterpolator, this.f43361b, p());
                 return;
             }
             return;

@@ -82,7 +82,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/nameplates/native/NameplateCardPreview.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun71031: for (var _fun71031_ip = 0;;) switch (_fun71031_ip) {
+        _fun75830: for (var _fun75830_ip = 0;;) switch (_fun75830_ip) {
             case 0:
                 var0 = arg0;
                 var2 = var0.item;
@@ -90,8 +90,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var16 = var0.animate;
                 var3 = undefined;
                 if (!(var16 === var3)) {
-                    _fun71031_ip = 28;
-                    continue _fun71031
+                    _fun75830_ip = 28;
+                    continue _fun75830
                 }
             case 26:
                 var16 = false;
@@ -116,7 +116,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = 6;
                 var0 = var4[var0];
                 var1 = var1.bind(var3)(var0);
-                var0 = var1.getNameplateDataFromRecord;
+                var0 = var1.getNameplateData;
                 var18 = var0.bind(var1)(var2);
                 var2 = _closure1_slot5;
                 var1 = _closure1_slot3;
@@ -125,8 +125,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = new Array(2);
                 var4[0] = var7;
                 if (!var5) {
-                    _fun71031_ip = 164;
-                    continue _fun71031
+                    _fun75830_ip = 164;
+                    continue _fun75830
                 }
             case 158:
                 var5 = var17.purchased;
@@ -251,4 +251,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 33, 1297, 671, 44, 3490, 1645, 7005, 5512, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 33, 1297, 671, 44, 1644, 1641, 6995, 5512, 2]);

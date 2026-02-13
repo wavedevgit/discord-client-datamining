@@ -43,7 +43,7 @@ public class h extends b {
             } else {
                 this.J = new q(cVar);
             }
-        } else if (obj == b0.f35546a) {
+        } else if (obj == b0.f36114a) {
             if (cVar == null) {
                 this.K = null;
                 this.F.setColor(this.I.p());
@@ -57,7 +57,7 @@ public class h extends b {
     public void f(RectF rectF, Matrix matrix, boolean z10) {
         super.f(rectF, matrix, z10);
         this.E.set(0.0f, 0.0f, this.I.r(), this.I.q());
-        this.f50450o.mapRect(this.E);
+        this.f51018o.mapRect(this.E);
         rectF.set(this.E);
     }
 
@@ -78,10 +78,10 @@ public class h extends b {
             } else {
                 this.F.setColor(this.I.p());
             }
-            if (this.f50459x.h() == null) {
+            if (this.f51027x.h() == null) {
                 intValue = 100;
             } else {
-                intValue = ((Integer) this.f50459x.h().h()).intValue();
+                intValue = ((Integer) this.f51027x.h().h()).intValue();
             }
             int i11 = (int) ((i10 / 255.0f) * (((alpha / 255.0f) * intValue) / 100.0f) * 255.0f);
             this.F.setAlpha(i11);

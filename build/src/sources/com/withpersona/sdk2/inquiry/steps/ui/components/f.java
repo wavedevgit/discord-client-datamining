@@ -183,7 +183,7 @@ public abstract class f {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit e(MaterialButton materialButton, BaseButtonComponentStyle baseButtonComponentStyle) {
         uq.e.f(materialButton, baseButtonComponentStyle, false, false, 6, null);
-        return Unit.f31988a;
+        return Unit.f32556a;
     }
 
     public static final ButtonWithLoadingIndicator f(h hVar, m5 uiComponentHelper, Button config) {
@@ -218,7 +218,7 @@ public abstract class f {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit g(ButtonWithLoadingIndicator buttonWithLoadingIndicator, BaseButtonComponentStyle baseButtonComponentStyle) {
         uq.e.d(buttonWithLoadingIndicator, baseButtonComponentStyle);
-        return Unit.f31988a;
+        return Unit.f32556a;
     }
 
     private static final int h(Button button) {
@@ -238,7 +238,7 @@ public abstract class f {
         if (i10 != -1) {
             if (i10 != 1) {
                 if (i10 == 2) {
-                    return tp.a.f49753a;
+                    return tp.a.f50321a;
                 }
                 throw new p();
             }

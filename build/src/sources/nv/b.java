@@ -8,13 +8,13 @@ import kotlin.jvm.internal.Lambda;
 public final class b implements cv.b, dv.c {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final b f38381a = new b();
+    public static final b f38949a = new b();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     static final class a extends Lambda implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final a f38382d = new a();
+        public static final a f38950d = new a();
 
         a() {
             super(2);
@@ -56,7 +56,7 @@ public final class b implements cv.b, dv.c {
 
     @Override // cv.b
     public Object f(Object obj, Object obj2) {
-        return Boolean.valueOf(b(mw.a.c(obj), a.f38382d));
+        return Boolean.valueOf(b(mw.a.c(obj), a.f38950d));
     }
 
     @Override // dv.b

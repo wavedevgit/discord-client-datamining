@@ -58,7 +58,7 @@ final class b extends h.a {
         /* renamed from: b */
         public Unit a(ResponseBody responseBody) {
             responseBody.close();
-            return Unit.f31988a;
+            return Unit.f32556a;
         }
     }
 

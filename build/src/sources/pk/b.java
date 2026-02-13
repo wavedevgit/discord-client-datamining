@@ -6,25 +6,25 @@ import kk.p;
 public final class b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ok.b f42773a;
+    private final ok.b f43341a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final int f42774b;
+    private final int f43342b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final int f42775c;
+    private final int f43343c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f42776d;
+    private final int f43344d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final int f42777e;
+    private final int f43345e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final int f42778f;
+    private final int f43346f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final int f42779g;
+    private final int f43347g;
 
     public b(ok.b bVar) {
         this(bVar, 10, bVar.l() / 2, bVar.h() / 2);
@@ -39,7 +39,7 @@ public final class b {
         float d12 = pVar3.d();
         float c13 = pVar4.c();
         float d13 = pVar4.d();
-        if (c10 < this.f42775c / 2.0f) {
+        if (c10 < this.f43343c / 2.0f) {
             return new p[]{new p(c13 - 1.0f, d13 + 1.0f), new p(c11 + 1.0f, d11 + 1.0f), new p(c12 - 1.0f, d12 - 1.0f), new p(c10 + 1.0f, d10 - 1.0f)};
         }
         return new p[]{new p(c13 + 1.0f, d13 + 1.0f), new p(c11 + 1.0f, d11 - 1.0f), new p(c12 - 1.0f, d12 + 1.0f), new p(c10 - 1.0f, d10 - 1.0f)};
@@ -48,7 +48,7 @@ public final class b {
     private boolean b(int i10, int i11, int i12, boolean z10) {
         if (z10) {
             while (i10 <= i11) {
-                if (this.f42773a.e(i10, i12)) {
+                if (this.f43341a.e(i10, i12)) {
                     return true;
                 }
                 i10++;
@@ -56,7 +56,7 @@ public final class b {
             return false;
         }
         while (i10 <= i11) {
-            if (this.f42773a.e(i12, i10)) {
+            if (this.f43341a.e(i12, i10)) {
                 return true;
             }
             i10++;
@@ -73,7 +73,7 @@ public final class b {
             float f17 = i10;
             int c11 = a.c((f17 * f15) + f10);
             int c12 = a.c((f17 * f16) + f11);
-            if (this.f42773a.e(c11, c12)) {
+            if (this.f43341a.e(c11, c12)) {
                 return new p(c11, c12);
             }
         }
@@ -81,10 +81,10 @@ public final class b {
     }
 
     public p[] c() {
-        int i10 = this.f42776d;
-        int i11 = this.f42777e;
-        int i12 = this.f42779g;
-        int i13 = this.f42778f;
+        int i10 = this.f43344d;
+        int i11 = this.f43345e;
+        int i12 = this.f43347g;
+        int i13 = this.f43346f;
         boolean z10 = false;
         boolean z11 = false;
         boolean z12 = false;
@@ -95,7 +95,7 @@ public final class b {
             boolean z16 = false;
             boolean z17 = true;
             while (true) {
-                if ((z17 || !z11) && i11 < this.f42775c) {
+                if ((z17 || !z11) && i11 < this.f43343c) {
                     z17 = b(i12, i13, i11, false);
                     if (z17) {
                         i11++;
@@ -106,10 +106,10 @@ public final class b {
                     }
                 }
             }
-            if (i11 < this.f42775c) {
+            if (i11 < this.f43343c) {
                 boolean z18 = true;
                 while (true) {
-                    if ((z18 || !z12) && i13 < this.f42774b) {
+                    if ((z18 || !z12) && i13 < this.f43342b) {
                         z18 = b(i10, i11, i13, true);
                         if (z18) {
                             i13++;
@@ -120,7 +120,7 @@ public final class b {
                         }
                     }
                 }
-                if (i13 < this.f42774b) {
+                if (i13 < this.f43342b) {
                     boolean z19 = true;
                     while (true) {
                         if ((z19 || !z13) && i10 >= 0) {
@@ -193,20 +193,20 @@ public final class b {
     }
 
     public b(ok.b bVar, int i10, int i11, int i12) {
-        this.f42773a = bVar;
+        this.f43341a = bVar;
         int h10 = bVar.h();
-        this.f42774b = h10;
+        this.f43342b = h10;
         int l10 = bVar.l();
-        this.f42775c = l10;
+        this.f43343c = l10;
         int i13 = i10 / 2;
         int i14 = i11 - i13;
-        this.f42776d = i14;
+        this.f43344d = i14;
         int i15 = i11 + i13;
-        this.f42777e = i15;
+        this.f43345e = i15;
         int i16 = i12 - i13;
-        this.f42779g = i16;
+        this.f43347g = i16;
         int i17 = i12 + i13;
-        this.f42778f = i17;
+        this.f43346f = i17;
         if (i16 < 0 || i14 < 0 || i17 >= h10 || i15 >= l10) {
             throw k.a();
         }

@@ -75,7 +75,7 @@ public final class MetricEvent implements ReactEvent {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final /* synthetic */ KSerializer _childSerializers$_anonymous_() {
-        return new f(n2.f50033a);
+        return new f(n2.f50601a);
     }
 
     /* JADX WARN: Multi-variable type inference failed */

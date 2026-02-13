@@ -6,13 +6,13 @@ import kotlin.jvm.internal.Intrinsics;
 public final class b {
 
     /* renamed from: a  reason: collision with root package name */
-    private boolean f42800a;
+    private boolean f43368a;
 
     /* renamed from: b  reason: collision with root package name */
-    private boolean f42801b;
+    private boolean f43369b;
 
     private final void c(Screen screen) {
-        if (this.f42800a && this.f42801b) {
+        if (this.f43368a && this.f43369b) {
             screen.requestTriggeringPostponedEnterTransition$react_native_screens_release();
             screen.triggerPostponedEnterTransitionIfNeeded$react_native_screens_release();
         }
@@ -20,13 +20,13 @@ public final class b {
 
     public final void a(Screen screen) {
         Intrinsics.checkNotNullParameter(screen, "screen");
-        this.f42801b = true;
+        this.f43369b = true;
         c(screen);
     }
 
     public final void b(Screen screen) {
         Intrinsics.checkNotNullParameter(screen, "screen");
-        this.f42800a = true;
+        this.f43368a = true;
         c(screen);
     }
 }

@@ -24,22 +24,22 @@ public final class UnsignedTypes {
     public static final UnsignedTypes INSTANCE = new UnsignedTypes();
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Set f32159a;
+    private static final Set f32727a;
 
     /* renamed from: b  reason: collision with root package name */
-    private static final Set f32160b;
+    private static final Set f32728b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final HashMap f32161c;
+    private static final HashMap f32729c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final HashMap f32162d;
+    private static final HashMap f32730d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final HashMap f32163e;
+    private static final HashMap f32731e;
 
     /* renamed from: f  reason: collision with root package name */
-    private static final Set f32164f;
+    private static final Set f32732f;
 
     static {
         UnsignedType[] values;
@@ -48,25 +48,25 @@ public final class UnsignedTypes {
         for (UnsignedType unsignedType : values2) {
             arrayList.add(unsignedType.getTypeName());
         }
-        f32159a = CollectionsKt.l1(arrayList);
+        f32727a = CollectionsKt.l1(arrayList);
         UnsignedArrayType[] values3 = UnsignedArrayType.values();
         ArrayList arrayList2 = new ArrayList(values3.length);
         for (UnsignedArrayType unsignedArrayType : values3) {
             arrayList2.add(unsignedArrayType.getTypeName());
         }
-        f32160b = CollectionsKt.l1(arrayList2);
-        f32161c = new HashMap();
-        f32162d = new HashMap();
-        f32163e = o0.k(v.a(UnsignedArrayType.UBYTEARRAY, Name.identifier("ubyteArrayOf")), v.a(UnsignedArrayType.USHORTARRAY, Name.identifier("ushortArrayOf")), v.a(UnsignedArrayType.UINTARRAY, Name.identifier("uintArrayOf")), v.a(UnsignedArrayType.ULONGARRAY, Name.identifier("ulongArrayOf")));
+        f32728b = CollectionsKt.l1(arrayList2);
+        f32729c = new HashMap();
+        f32730d = new HashMap();
+        f32731e = o0.k(v.a(UnsignedArrayType.UBYTEARRAY, Name.identifier("ubyteArrayOf")), v.a(UnsignedArrayType.USHORTARRAY, Name.identifier("ushortArrayOf")), v.a(UnsignedArrayType.UINTARRAY, Name.identifier("uintArrayOf")), v.a(UnsignedArrayType.ULONGARRAY, Name.identifier("ulongArrayOf")));
         UnsignedType[] values4 = UnsignedType.values();
         LinkedHashSet linkedHashSet = new LinkedHashSet();
         for (UnsignedType unsignedType2 : values4) {
             linkedHashSet.add(unsignedType2.getArrayClassId().getShortClassName());
         }
-        f32164f = linkedHashSet;
+        f32732f = linkedHashSet;
         for (UnsignedType unsignedType3 : UnsignedType.values()) {
-            f32161c.put(unsignedType3.getArrayClassId(), unsignedType3.getClassId());
-            f32162d.put(unsignedType3.getClassId(), unsignedType3.getArrayClassId());
+            f32729c.put(unsignedType3.getArrayClassId(), unsignedType3.getClassId());
+            f32730d.put(unsignedType3.getClassId(), unsignedType3.getArrayClassId());
         }
     }
 
@@ -84,18 +84,18 @@ public final class UnsignedTypes {
 
     public final ClassId getUnsignedClassIdByArrayClassId(@NotNull ClassId arrayClassId) {
         Intrinsics.checkNotNullParameter(arrayClassId, "arrayClassId");
-        return (ClassId) f32161c.get(arrayClassId);
+        return (ClassId) f32729c.get(arrayClassId);
     }
 
     public final boolean isShortNameOfUnsignedArray(@NotNull Name name) {
         Intrinsics.checkNotNullParameter(name, "name");
-        return f32164f.contains(name);
+        return f32732f.contains(name);
     }
 
     public final boolean isUnsignedClass(@NotNull DeclarationDescriptor descriptor) {
         Intrinsics.checkNotNullParameter(descriptor, "descriptor");
         DeclarationDescriptor containingDeclaration = descriptor.getContainingDeclaration();
-        if ((containingDeclaration instanceof PackageFragmentDescriptor) && Intrinsics.areEqual(((PackageFragmentDescriptor) containingDeclaration).getFqName(), StandardNames.BUILT_INS_PACKAGE_FQ_NAME) && f32159a.contains(descriptor.getName())) {
+        if ((containingDeclaration instanceof PackageFragmentDescriptor) && Intrinsics.areEqual(((PackageFragmentDescriptor) containingDeclaration).getFqName(), StandardNames.BUILT_INS_PACKAGE_FQ_NAME) && f32727a.contains(descriptor.getName())) {
             return true;
         }
         return false;

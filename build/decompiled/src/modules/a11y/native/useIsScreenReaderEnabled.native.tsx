@@ -47,14 +47,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = _closure2_slot0;
                 var1 = undefined;
                 var0 = function(arg0) { // Environment: var0
-                    _fun37583: for (var _fun37583_ip = 0;;) switch (_fun37583_ip) {
+                    _fun37613: for (var _fun37613_ip = 0;;) switch (_fun37613_ip) {
                         case 0:
                             var0 = arg0;
                             var3 = var0.screenReaderEnabled;
                             var1 = _closure3_slot0;
                             if (!(var3 !== var1)) {
-                                _fun37583_ip = 34;
-                                continue _fun37583
+                                _fun37613_ip = 34;
+                                continue _fun37613
                             }
                         case 20:
                             var1 = {};
@@ -136,4 +136,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useIsScreenReaderEnabled = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 629, 802, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 629, 803, 2]);

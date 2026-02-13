@@ -214,7 +214,7 @@ public final class BundleDownloader {
                         if (headers.containsKey("X-Http-Status")) {
                             h11 = Integer.parseInt(headers.getOrDefault("X-Http-Status", "0"));
                         }
-                        this.processBundleResult(str, h11, Headers.f40274e.a(headers), body, file, bundleInfo, devBundleDownloadListener);
+                        this.processBundleResult(str, h11, Headers.f40842e.a(headers), body, file, bundleInfo, devBundleDownloadListener);
                     } else if (headers.containsKey("Content-Type") && Intrinsics.areEqual(headers.get("Content-Type"), "application/json")) {
                         try {
                             JSONObject jSONObject = new JSONObject(body.X1());
@@ -423,10 +423,10 @@ public final class BundleDownloader {
                             r1 = r0
                             goto La7
                         L9a:
-                            kotlin.Unit r0 = kotlin.Unit.f31988a     // Catch: java.lang.Throwable -> L97
+                            kotlin.Unit r0 = kotlin.Unit.f32556a     // Catch: java.lang.Throwable -> L97
                             ls.c.a(r12, r8)     // Catch: java.lang.Throwable -> La5
                         L9f:
-                            kotlin.Unit r12 = kotlin.Unit.f31988a     // Catch: java.lang.Throwable -> La5
+                            kotlin.Unit r12 = kotlin.Unit.f32556a     // Catch: java.lang.Throwable -> La5
                             ls.c.a(r11, r8)
                             return
                         La5:

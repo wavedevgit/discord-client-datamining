@@ -21,7 +21,7 @@ public abstract class e implements KSerializer {
     public e(KClass baseClass) {
         Intrinsics.checkNotNullParameter(baseClass, "baseClass");
         this.baseClass = baseClass;
-        this.descriptor = st.j.e("JsonContentPolymorphicSerializer<" + baseClass.getSimpleName() + '>', d.b.f48360a, new SerialDescriptor[0], null, 8, null);
+        this.descriptor = st.j.e("JsonContentPolymorphicSerializer<" + baseClass.getSimpleName() + '>', d.b.f48928a, new SerialDescriptor[0], null, 8, null);
     }
 
     private final Void a(KClass kClass, KClass kClass2) {

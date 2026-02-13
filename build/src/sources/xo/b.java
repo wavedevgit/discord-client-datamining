@@ -32,110 +32,110 @@ public final class b implements ViewBinding {
     public final Space E;
 
     /* renamed from: a  reason: collision with root package name */
-    private final FrameLayout f54953a;
+    private final FrameLayout f55521a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final Space f54954b;
+    public final Space f55522b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final Camera2PreviewView f54955c;
+    public final Camera2PreviewView f55523c;
 
     /* renamed from: d  reason: collision with root package name */
-    public final ProgressBar f54956d;
+    public final ProgressBar f55524d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final ConstraintLayout f54957e;
+    public final ConstraintLayout f55525e;
 
     /* renamed from: f  reason: collision with root package name */
-    public final Button f54958f;
+    public final Button f55526f;
 
     /* renamed from: g  reason: collision with root package name */
-    public final Space f54959g;
+    public final Space f55527g;
 
     /* renamed from: h  reason: collision with root package name */
-    public final TextView f54960h;
+    public final TextView f55528h;
 
     /* renamed from: i  reason: collision with root package name */
-    public final TextView f54961i;
+    public final TextView f55529i;
 
     /* renamed from: j  reason: collision with root package name */
-    public final LinearLayout f54962j;
+    public final LinearLayout f55530j;
 
     /* renamed from: k  reason: collision with root package name */
-    public final ToggleButton f54963k;
+    public final ToggleButton f55531k;
 
     /* renamed from: l  reason: collision with root package name */
-    public final TextView f54964l;
+    public final TextView f55532l;
 
     /* renamed from: m  reason: collision with root package name */
-    public final FrameLayout f54965m;
+    public final FrameLayout f55533m;
 
     /* renamed from: n  reason: collision with root package name */
-    public final Pi2NavigationBar f54966n;
+    public final Pi2NavigationBar f55534n;
 
     /* renamed from: o  reason: collision with root package name */
-    public final View f54967o;
+    public final View f55535o;
 
     /* renamed from: p  reason: collision with root package name */
-    public final ImageView f54968p;
+    public final ImageView f55536p;
 
     /* renamed from: q  reason: collision with root package name */
-    public final ConstraintLayout f54969q;
+    public final ConstraintLayout f55537q;
 
     /* renamed from: r  reason: collision with root package name */
-    public final ThemeableLottieAnimationView f54970r;
+    public final ThemeableLottieAnimationView f55538r;
 
     /* renamed from: s  reason: collision with root package name */
-    public final ConstraintLayout f54971s;
+    public final ConstraintLayout f55539s;
 
     /* renamed from: t  reason: collision with root package name */
-    public final TextView f54972t;
+    public final TextView f55540t;
 
     /* renamed from: u  reason: collision with root package name */
-    public final Barrier f54973u;
+    public final Barrier f55541u;
 
     /* renamed from: v  reason: collision with root package name */
-    public final FrameLayout f54974v;
+    public final FrameLayout f55542v;
 
     /* renamed from: w  reason: collision with root package name */
-    public final View f54975w;
+    public final View f55543w;
 
     /* renamed from: x  reason: collision with root package name */
-    public final Barrier f54976x;
+    public final Barrier f55544x;
 
     /* renamed from: y  reason: collision with root package name */
-    public final PreviewView f54977y;
+    public final PreviewView f55545y;
 
     /* renamed from: z  reason: collision with root package name */
-    public final ProgressBar f54978z;
+    public final ProgressBar f55546z;
 
     private b(FrameLayout frameLayout, Space space, Camera2PreviewView camera2PreviewView, ProgressBar progressBar, ConstraintLayout constraintLayout, Button button, Space space2, TextView textView, TextView textView2, LinearLayout linearLayout, ToggleButton toggleButton, TextView textView3, FrameLayout frameLayout2, Pi2NavigationBar pi2NavigationBar, View view, ImageView imageView, ConstraintLayout constraintLayout2, ThemeableLottieAnimationView themeableLottieAnimationView, ConstraintLayout constraintLayout3, TextView textView4, Barrier barrier, FrameLayout frameLayout3, View view2, Barrier barrier2, PreviewView previewView, ProgressBar progressBar2, LottieAnimationView lottieAnimationView, ScanningView scanningView, SpotlightView spotlightView, TextView textView5, Space space3) {
-        this.f54953a = frameLayout;
-        this.f54954b = space;
-        this.f54955c = camera2PreviewView;
-        this.f54956d = progressBar;
-        this.f54957e = constraintLayout;
-        this.f54958f = button;
-        this.f54959g = space2;
-        this.f54960h = textView;
-        this.f54961i = textView2;
-        this.f54962j = linearLayout;
-        this.f54963k = toggleButton;
-        this.f54964l = textView3;
-        this.f54965m = frameLayout2;
-        this.f54966n = pi2NavigationBar;
-        this.f54967o = view;
-        this.f54968p = imageView;
-        this.f54969q = constraintLayout2;
-        this.f54970r = themeableLottieAnimationView;
-        this.f54971s = constraintLayout3;
-        this.f54972t = textView4;
-        this.f54973u = barrier;
-        this.f54974v = frameLayout3;
-        this.f54975w = view2;
-        this.f54976x = barrier2;
-        this.f54977y = previewView;
-        this.f54978z = progressBar2;
+        this.f55521a = frameLayout;
+        this.f55522b = space;
+        this.f55523c = camera2PreviewView;
+        this.f55524d = progressBar;
+        this.f55525e = constraintLayout;
+        this.f55526f = button;
+        this.f55527g = space2;
+        this.f55528h = textView;
+        this.f55529i = textView2;
+        this.f55530j = linearLayout;
+        this.f55531k = toggleButton;
+        this.f55532l = textView3;
+        this.f55533m = frameLayout2;
+        this.f55534n = pi2NavigationBar;
+        this.f55535o = view;
+        this.f55536p = imageView;
+        this.f55537q = constraintLayout2;
+        this.f55538r = themeableLottieAnimationView;
+        this.f55539s = constraintLayout3;
+        this.f55540t = textView4;
+        this.f55541u = barrier;
+        this.f55542v = frameLayout3;
+        this.f55543w = view2;
+        this.f55544x = barrier2;
+        this.f55545y = previewView;
+        this.f55546z = progressBar2;
         this.A = lottieAnimationView;
         this.B = scanningView;
         this.C = spotlightView;
@@ -146,31 +146,31 @@ public final class b implements ViewBinding {
     public static b a(View view) {
         View a10;
         View a11;
-        int i10 = m4.f49381h;
+        int i10 = m4.f49949h;
         Space space = (Space) e4.a.a(view, i10);
         if (space != null) {
-            i10 = m4.f49383i;
+            i10 = m4.f49951i;
             Camera2PreviewView camera2PreviewView = (Camera2PreviewView) e4.a.a(view, i10);
             if (camera2PreviewView != null) {
-                i10 = m4.f49387k;
+                i10 = m4.f49955k;
                 ProgressBar progressBar = (ProgressBar) e4.a.a(view, i10);
                 if (progressBar != null) {
-                    i10 = m4.f49391m;
+                    i10 = m4.f49959m;
                     ConstraintLayout constraintLayout = (ConstraintLayout) e4.a.a(view, i10);
                     if (constraintLayout != null) {
-                        i10 = m4.f49393n;
+                        i10 = m4.f49961n;
                         Button button = (Button) e4.a.a(view, i10);
                         if (button != null) {
-                            i10 = m4.f49395o;
+                            i10 = m4.f49963o;
                             Space space2 = (Space) e4.a.a(view, i10);
                             if (space2 != null) {
-                                i10 = m4.f49397p;
+                                i10 = m4.f49965p;
                                 TextView textView = (TextView) e4.a.a(view, i10);
                                 if (textView != null) {
-                                    i10 = m4.f49413x;
+                                    i10 = m4.f49981x;
                                     TextView textView2 = (TextView) e4.a.a(view, i10);
                                     if (textView2 != null) {
-                                        i10 = m4.f49417z;
+                                        i10 = m4.f49985z;
                                         LinearLayout linearLayout = (LinearLayout) e4.a.a(view, i10);
                                         if (linearLayout != null) {
                                             i10 = m4.E;
@@ -185,43 +185,43 @@ public final class b implements ViewBinding {
                                                         i10 = m4.Y;
                                                         Pi2NavigationBar pi2NavigationBar = (Pi2NavigationBar) e4.a.a(view, i10);
                                                         if (pi2NavigationBar != null && (a10 = e4.a.a(view, (i10 = m4.Z))) != null) {
-                                                            i10 = m4.f49368a0;
+                                                            i10 = m4.f49936a0;
                                                             ImageView imageView = (ImageView) e4.a.a(view, i10);
                                                             if (imageView != null) {
-                                                                i10 = m4.f49370b0;
+                                                                i10 = m4.f49938b0;
                                                                 ConstraintLayout constraintLayout2 = (ConstraintLayout) e4.a.a(view, i10);
                                                                 if (constraintLayout2 != null) {
-                                                                    i10 = m4.f49372c0;
+                                                                    i10 = m4.f49940c0;
                                                                     ThemeableLottieAnimationView themeableLottieAnimationView = (ThemeableLottieAnimationView) e4.a.a(view, i10);
                                                                     if (themeableLottieAnimationView != null) {
-                                                                        i10 = m4.f49374d0;
+                                                                        i10 = m4.f49942d0;
                                                                         ConstraintLayout constraintLayout3 = (ConstraintLayout) e4.a.a(view, i10);
                                                                         if (constraintLayout3 != null) {
-                                                                            i10 = m4.f49376e0;
+                                                                            i10 = m4.f49944e0;
                                                                             TextView textView4 = (TextView) e4.a.a(view, i10);
                                                                             if (textView4 != null) {
-                                                                                i10 = m4.f49384i0;
+                                                                                i10 = m4.f49952i0;
                                                                                 Barrier barrier = (Barrier) e4.a.a(view, i10);
                                                                                 if (barrier != null) {
-                                                                                    i10 = m4.f49386j0;
+                                                                                    i10 = m4.f49954j0;
                                                                                     FrameLayout frameLayout2 = (FrameLayout) e4.a.a(view, i10);
-                                                                                    if (frameLayout2 != null && (a11 = e4.a.a(view, (i10 = m4.f49388k0))) != null) {
-                                                                                        i10 = m4.f49390l0;
+                                                                                    if (frameLayout2 != null && (a11 = e4.a.a(view, (i10 = m4.f49956k0))) != null) {
+                                                                                        i10 = m4.f49958l0;
                                                                                         Barrier barrier2 = (Barrier) e4.a.a(view, i10);
                                                                                         if (barrier2 != null) {
-                                                                                            i10 = m4.f49392m0;
+                                                                                            i10 = m4.f49960m0;
                                                                                             PreviewView previewView = (PreviewView) e4.a.a(view, i10);
                                                                                             if (previewView != null) {
-                                                                                                i10 = m4.f49396o0;
+                                                                                                i10 = m4.f49964o0;
                                                                                                 ProgressBar progressBar2 = (ProgressBar) e4.a.a(view, i10);
                                                                                                 if (progressBar2 != null) {
-                                                                                                    i10 = m4.f49406t0;
+                                                                                                    i10 = m4.f49974t0;
                                                                                                     LottieAnimationView lottieAnimationView = (LottieAnimationView) e4.a.a(view, i10);
                                                                                                     if (lottieAnimationView != null) {
-                                                                                                        i10 = m4.f49408u0;
+                                                                                                        i10 = m4.f49976u0;
                                                                                                         ScanningView scanningView = (ScanningView) e4.a.a(view, i10);
                                                                                                         if (scanningView != null) {
-                                                                                                            i10 = m4.f49412w0;
+                                                                                                            i10 = m4.f49980w0;
                                                                                                             SpotlightView spotlightView = (SpotlightView) e4.a.a(view, i10);
                                                                                                             if (spotlightView != null) {
                                                                                                                 i10 = m4.D0;
@@ -267,7 +267,7 @@ public final class b implements ViewBinding {
     }
 
     public static b d(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z10) {
-        View inflate = layoutInflater.inflate(n4.f49538b, viewGroup, false);
+        View inflate = layoutInflater.inflate(n4.f50106b, viewGroup, false);
         if (z10) {
             viewGroup.addView(inflate);
         }
@@ -277,6 +277,6 @@ public final class b implements ViewBinding {
     @Override // androidx.viewbinding.ViewBinding
     /* renamed from: b */
     public FrameLayout getRoot() {
-        return this.f54953a;
+        return this.f55521a;
     }
 }

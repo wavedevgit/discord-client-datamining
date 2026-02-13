@@ -36,40 +36,40 @@ import qn.e;
 public final class o implements androidx.lifecycle.m, w {
 
     /* renamed from: w */
-    public static final a f42824w = new a(null);
+    public static final a f43392w = new a(null);
 
     /* renamed from: d */
-    private final Screen f42825d;
+    private final Screen f43393d;
 
     /* renamed from: e */
-    private boolean f42826e;
+    private boolean f43394e;
 
     /* renamed from: i */
-    private com.swmansion.rnscreens.n f42827i;
+    private com.swmansion.rnscreens.n f43395i;
 
     /* renamed from: o */
-    private boolean f42828o;
+    private boolean f43396o;
 
     /* renamed from: p */
-    private int f42829p;
+    private int f43397p;
 
     /* renamed from: q */
-    private int f42830q;
+    private int f43398q;
 
     /* renamed from: r */
-    private int f42831r;
+    private int f43399r;
 
     /* renamed from: s */
-    private int f42832s;
+    private int f43400s;
 
     /* renamed from: t */
-    private final d f42833t;
+    private final d f43401t;
 
     /* renamed from: u */
-    private final b f42834u;
+    private final b f43402u;
 
     /* renamed from: v */
-    private View f42835v;
+    private View f43403v;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -109,38 +109,38 @@ public final class o implements androidx.lifecycle.m, w {
     public static final class c {
 
         /* renamed from: a */
-        private final r0 f42837a;
+        private final r0 f43405a;
 
         /* renamed from: b */
-        private final Screen f42838b;
+        private final Screen f43406b;
 
         /* renamed from: c */
-        private final CoordinatorLayout f42839c;
+        private final CoordinatorLayout f43407c;
 
         /* renamed from: d */
-        private final g f42840d;
+        private final g f43408d;
 
         public c(r0 fragment, Screen screen, CoordinatorLayout coordinatorLayout, g dimmingDelegate) {
             Intrinsics.checkNotNullParameter(fragment, "fragment");
             Intrinsics.checkNotNullParameter(screen, "screen");
             Intrinsics.checkNotNullParameter(coordinatorLayout, "coordinatorLayout");
             Intrinsics.checkNotNullParameter(dimmingDelegate, "dimmingDelegate");
-            this.f42837a = fragment;
-            this.f42838b = screen;
-            this.f42839c = coordinatorLayout;
-            this.f42840d = dimmingDelegate;
+            this.f43405a = fragment;
+            this.f43406b = screen;
+            this.f43407c = coordinatorLayout;
+            this.f43408d = dimmingDelegate;
         }
 
         public final CoordinatorLayout a() {
-            return this.f42839c;
+            return this.f43407c;
         }
 
         public final g b() {
-            return this.f42840d;
+            return this.f43408d;
         }
 
         public final r0 c() {
-            return this.f42837a;
+            return this.f43405a;
         }
 
         public boolean equals(Object obj) {
@@ -151,21 +151,21 @@ public final class o implements androidx.lifecycle.m, w {
                 return false;
             }
             c cVar = (c) obj;
-            if (Intrinsics.areEqual(this.f42837a, cVar.f42837a) && Intrinsics.areEqual(this.f42838b, cVar.f42838b) && Intrinsics.areEqual(this.f42839c, cVar.f42839c) && Intrinsics.areEqual(this.f42840d, cVar.f42840d)) {
+            if (Intrinsics.areEqual(this.f43405a, cVar.f43405a) && Intrinsics.areEqual(this.f43406b, cVar.f43406b) && Intrinsics.areEqual(this.f43407c, cVar.f43407c) && Intrinsics.areEqual(this.f43408d, cVar.f43408d)) {
                 return true;
             }
             return false;
         }
 
         public int hashCode() {
-            return (((((this.f42837a.hashCode() * 31) + this.f42838b.hashCode()) * 31) + this.f42839c.hashCode()) * 31) + this.f42840d.hashCode();
+            return (((((this.f43405a.hashCode() * 31) + this.f43406b.hashCode()) * 31) + this.f43407c.hashCode()) * 31) + this.f43408d.hashCode();
         }
 
         public String toString() {
-            r0 r0Var = this.f42837a;
-            Screen screen = this.f42838b;
-            CoordinatorLayout coordinatorLayout = this.f42839c;
-            g gVar = this.f42840d;
+            r0 r0Var = this.f43405a;
+            Screen screen = this.f43406b;
+            CoordinatorLayout coordinatorLayout = this.f43407c;
+            g gVar = this.f43408d;
             return "SheetAnimationContext(fragment=" + r0Var + ", screen=" + screen + ", coordinatorLayout=" + coordinatorLayout + ", dimmingDelegate=" + gVar + ")";
         }
     }
@@ -192,7 +192,7 @@ public final class o implements androidx.lifecycle.m, w {
     public /* synthetic */ class e {
 
         /* renamed from: a */
-        public static final /* synthetic */ int[] f42842a;
+        public static final /* synthetic */ int[] f43410a;
 
         static {
             int[] iArr = new int[Lifecycle.a.values().length];
@@ -216,7 +216,7 @@ public final class o implements androidx.lifecycle.m, w {
                 iArr[Lifecycle.a.ON_DESTROY.ordinal()] = 5;
             } catch (NoSuchFieldError unused5) {
             }
-            f42842a = iArr;
+            f43410a = iArr;
         }
     }
 
@@ -229,26 +229,26 @@ public final class o implements androidx.lifecycle.m, w {
         @Override // android.animation.AnimatorListenerAdapter, android.animation.Animator.AnimatorListener
         public void onAnimationEnd(Animator animation) {
             Intrinsics.checkNotNullParameter(animation, "animation");
-            o.this.f42828o = false;
+            o.this.f43396o = false;
             o.this.C().onSheetYTranslationChanged$react_native_screens_release();
         }
 
         @Override // android.animation.AnimatorListenerAdapter, android.animation.Animator.AnimatorListener
         public void onAnimationStart(Animator animation) {
             Intrinsics.checkNotNullParameter(animation, "animation");
-            o.this.f42828o = true;
+            o.this.f43396o = true;
         }
     }
 
     public o(Screen screen) {
         Intrinsics.checkNotNullParameter(screen, "screen");
-        this.f42825d = screen;
-        this.f42827i = com.swmansion.rnscreens.m.f19299a;
-        this.f42831r = screen.getSheetInitialDetentIndex();
-        this.f42832s = screen.getSheetDetents().k(screen.getSheetInitialDetentIndex());
+        this.f43393d = screen;
+        this.f43395i = com.swmansion.rnscreens.m.f19299a;
+        this.f43399r = screen.getSheetInitialDetentIndex();
+        this.f43400s = screen.getSheetDetents().k(screen.getSheetInitialDetentIndex());
         d dVar = new d();
-        this.f42833t = dVar;
-        this.f42834u = new b();
+        this.f43401t = dVar;
+        this.f43402u = new b();
         screen.getFragment();
         Fragment fragment = screen.getFragment();
         Intrinsics.checkNotNull(fragment);
@@ -269,7 +269,7 @@ public final class o implements androidx.lifecycle.m, w {
     }
 
     public final InputMethodManager B() {
-        Object systemService = this.f42825d.getReactContext().getSystemService("input_method");
+        Object systemService = this.f43393d.getReactContext().getSystemService("input_method");
         if (systemService instanceof InputMethodManager) {
             return (InputMethodManager) systemService;
         }
@@ -277,11 +277,11 @@ public final class o implements androidx.lifecycle.m, w {
     }
 
     private final BottomSheetBehavior D() {
-        return this.f42825d.getSheetBehavior();
+        return this.f43393d.getSheetBehavior();
     }
 
     private final r0 E() {
-        Fragment fragment = this.f42825d.getFragment();
+        Fragment fragment = this.f43393d.getFragment();
         Intrinsics.checkNotNull(fragment, "null cannot be cast to non-null type com.swmansion.rnscreens.ScreenStackFragment");
         return (r0) fragment;
     }
@@ -307,12 +307,12 @@ public final class o implements androidx.lifecycle.m, w {
     }
 
     public final void L(int i10) {
-        boolean b10 = p.f42844a.b(i10);
+        boolean b10 = p.f43412a.b(i10);
         if (b10) {
-            this.f42832s = i10;
-            this.f42831r = this.f42825d.getSheetDetents().h(i10);
+            this.f43400s = i10;
+            this.f43399r = this.f43393d.getSheetDetents().h(i10);
         }
-        this.f42825d.onSheetDetentChanged$react_native_screens_release(this.f42831r, b10);
+        this.f43393d.onSheetDetentChanged$react_native_screens_release(this.f43399r, b10);
         if (P(i10)) {
             E().a0();
         }
@@ -321,14 +321,14 @@ public final class o implements androidx.lifecycle.m, w {
     private final void M() {
         View currentFocus;
         View decorView;
-        Activity currentActivity = this.f42825d.getReactContext().getCurrentActivity();
+        Activity currentActivity = this.f43393d.getReactContext().getCurrentActivity();
         if (currentActivity != null && (currentFocus = currentActivity.getCurrentFocus()) != null) {
             Window window = currentActivity.getWindow();
             if (window != null && (decorView = window.getDecorView()) != null && Intrinsics.areEqual(co.a.c(decorView), Boolean.TRUE)) {
-                this.f42835v = currentFocus;
+                this.f43403v = currentFocus;
             }
-            this.f42825d.setDescendantFocusability(262144);
-            this.f42825d.requestFocus();
+            this.f43393d.setDescendantFocusability(262144);
+            this.f43393d.requestFocus();
             InputMethodManager B = B();
             if (B != null) {
                 B.hideSoftInputFromWindow(currentFocus.getWindowToken(), 0);
@@ -337,7 +337,7 @@ public final class o implements androidx.lifecycle.m, w {
     }
 
     private final View N() {
-        Activity currentActivity = this.f42825d.getReactContext().getCurrentActivity();
+        Activity currentActivity = this.f43393d.getReactContext().getCurrentActivity();
         if (currentActivity != null) {
             View decorView = currentActivity.getWindow().getDecorView();
             Intrinsics.checkNotNullExpressionValue(decorView, "getDecorView(...)");
@@ -347,7 +347,7 @@ public final class o implements androidx.lifecycle.m, w {
     }
 
     private final void O() {
-        View view = this.f42835v;
+        View view = this.f43403v;
         if (view != null) {
             view.requestFocus();
             InputMethodManager B = B();
@@ -355,7 +355,7 @@ public final class o implements androidx.lifecycle.m, w {
                 B.showSoftInput(view, 0);
             }
         }
-        this.f42835v = null;
+        this.f43403v = null;
     }
 
     private final boolean P(int i10) {
@@ -370,11 +370,11 @@ public final class o implements androidx.lifecycle.m, w {
         WindowMetrics currentWindowMetrics;
         Rect bounds;
         DisplayMetrics displayMetrics;
-        ScreenContainer container = this.f42825d.getContainer();
+        ScreenContainer container = this.f43393d.getContainer();
         if (container != null) {
             return Integer.valueOf(container.getHeight());
         }
-        ThemedReactContext reactContext = this.f42825d.getReactContext();
+        ThemedReactContext reactContext = this.f43393d.getReactContext();
         Resources resources = reactContext.getResources();
         if (resources != null && (displayMetrics = resources.getDisplayMetrics()) != null) {
             return Integer.valueOf(displayMetrics.heightPixels);
@@ -396,22 +396,22 @@ public final class o implements androidx.lifecycle.m, w {
     private final Integer S() {
         Integer Q = Q();
         if (Q != null) {
-            return Integer.valueOf(Q.intValue() - this.f42829p);
+            return Integer.valueOf(Q.intValue() - this.f43397p);
         }
         return null;
     }
 
     private final void U(float f10) {
-        this.f42825d.setTranslationY(f10 - n(this.f42830q));
+        this.f43393d.setTranslationY(f10 - n(this.f43398q));
     }
 
     private final void l(AnimatorSet animatorSet, boolean z10, r0 r0Var) {
         e.a aVar;
-        qn.i iVar = new qn.i(this.f42825d);
+        qn.i iVar = new qn.i(this.f43393d);
         if (z10) {
-            aVar = e.a.f45476d;
+            aVar = e.a.f46044d;
         } else {
-            aVar = e.a.f45477e;
+            aVar = e.a.f46045e;
         }
         animatorSet.addListener(new qn.e(r0Var, iVar, aVar));
         animatorSet.addListener(new f());
@@ -422,7 +422,7 @@ public final class o implements androidx.lifecycle.m, w {
             nVar = com.swmansion.rnscreens.m.f19299a;
         }
         if ((i11 & 4) != 0) {
-            i10 = oVar.f42831r;
+            i10 = oVar.f43399r;
         }
         return oVar.o(bottomSheetBehavior, nVar, i10);
     }
@@ -468,7 +468,7 @@ public final class o implements androidx.lifecycle.m, w {
                 x10 = o.x((Number) obj);
                 return x10;
             }
-        }), Float.valueOf(this.f42825d.getHeight()), Float.valueOf(0.0f));
+        }), Float.valueOf(this.f43393d.getHeight()), Float.valueOf(0.0f));
         ofObject.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() { // from class: pn.l
             @Override // android.animation.ValueAnimator.AnimatorUpdateListener
             public final void onAnimationUpdate(ValueAnimator valueAnimator) {
@@ -480,7 +480,7 @@ public final class o implements androidx.lifecycle.m, w {
     }
 
     public static final float w(o oVar, Number number) {
-        return oVar.f42825d.getHeight();
+        return oVar.f43393d.getHeight();
     }
 
     public static final Float x(Number number) {
@@ -495,7 +495,7 @@ public final class o implements androidx.lifecycle.m, w {
     }
 
     private final ValueAnimator z(CoordinatorLayout coordinatorLayout) {
-        ValueAnimator ofFloat = ValueAnimator.ofFloat(0.0f, (coordinatorLayout.getBottom() - this.f42825d.getTop()) - this.f42825d.getTranslationY());
+        ValueAnimator ofFloat = ValueAnimator.ofFloat(0.0f, (coordinatorLayout.getBottom() - this.f43393d.getTop()) - this.f43393d.getTranslationY());
         ofFloat.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() { // from class: pn.n
             @Override // android.animation.ValueAnimator.AnimatorUpdateListener
             public final void onAnimationUpdate(ValueAnimator valueAnimator) {
@@ -507,19 +507,19 @@ public final class o implements androidx.lifecycle.m, w {
     }
 
     public final Screen C() {
-        return this.f42825d;
+        return this.f43393d;
     }
 
     public final void K(WindowInsetsCompat insets) {
         Intrinsics.checkNotNullParameter(insets, "insets");
-        this.f42830q = insets.f(WindowInsetsCompat.p.c()).f3307d;
-        if (!this.f42828o) {
+        this.f43398q = insets.f(WindowInsetsCompat.p.c()).f3307d;
+        if (!this.f43396o) {
             U(0.0f);
         }
     }
 
     public final Integer R() {
-        if (this.f42825d.getSheetShouldOverflowTopInset()) {
+        if (this.f43393d.getSheetShouldOverflowTopInset()) {
             return Q();
         }
         return S();
@@ -539,12 +539,12 @@ public final class o implements androidx.lifecycle.m, w {
             kotlin.jvm.internal.Intrinsics.checkNotNullParameter(r7, r0)
             java.lang.Integer r0 = r6.R()
             if (r0 == 0) goto L70
-            com.swmansion.rnscreens.Screen r1 = r6.f42825d
+            com.swmansion.rnscreens.Screen r1 = r6.f43393d
             boolean r1 = pn.q.b(r1)
             r2 = 1
             r3 = 0
             if (r1 != r2) goto L2e
-            com.swmansion.rnscreens.Screen r1 = r6.f42825d
+            com.swmansion.rnscreens.Screen r1 = r6.f43393d
             com.swmansion.rnscreens.ScreenContentWrapper r1 = r1.getContentWrapper()
             if (r1 == 0) goto L2c
             int r2 = r1.getHeight()
@@ -557,7 +557,7 @@ public final class o implements androidx.lifecycle.m, w {
             goto L45
         L2e:
             if (r1 != 0) goto L6a
-            com.swmansion.rnscreens.Screen r1 = r6.f42825d
+            com.swmansion.rnscreens.Screen r1 = r6.f43393d
             com.swmansion.rnscreens.bottomsheet.SheetDetents r1 = r1.getSheetDetents()
             double r1 = r1.g()
             int r4 = r0.intValue()
@@ -566,15 +566,15 @@ public final class o implements androidx.lifecycle.m, w {
             int r1 = (int) r1
             java.lang.Integer r2 = java.lang.Integer.valueOf(r1)
         L45:
-            com.swmansion.rnscreens.Screen r1 = r6.f42825d
+            com.swmansion.rnscreens.Screen r1 = r6.f43393d
             com.swmansion.rnscreens.bottomsheet.SheetDetents r1 = r1.getSheetDetents()
             int r1 = r1.d()
             r4 = 3
             if (r1 != r4) goto L66
-            com.swmansion.rnscreens.Screen r1 = r6.f42825d
+            com.swmansion.rnscreens.Screen r1 = r6.f43393d
             com.swmansion.rnscreens.bottomsheet.SheetDetents r1 = r1.getSheetDetents()
             int r0 = r0.intValue()
-            int r3 = r6.f42829p
+            int r3 = r6.f43397p
             int r0 = r1.b(r0, r3)
             java.lang.Integer r3 = java.lang.Integer.valueOf(r0)
         L66:
@@ -604,30 +604,30 @@ public final class o implements androidx.lifecycle.m, w {
         Intrinsics.checkNotNullExpressionValue(f11, "getInsets(...)");
         Insets f12 = insets.f(WindowInsetsCompat.p.b());
         Intrinsics.checkNotNullExpressionValue(f12, "getInsets(...)");
-        this.f42829p = Math.max(f11.f3305b, f12.f3305b);
+        this.f43397p = Math.max(f11.f3305b, f12.f3305b);
         int i10 = 0;
         if (u10) {
-            this.f42826e = true;
-            this.f42827i = new com.swmansion.rnscreens.o(f10.f3307d);
+            this.f43394e = true;
+            this.f43395i = new com.swmansion.rnscreens.o(f10.f3307d);
             BottomSheetBehavior D = D();
             if (D != null) {
-                q(this, D, this.f42827i, 0, 4, null);
+                q(this, D, this.f43395i, 0, 4, null);
             }
         } else {
             BottomSheetBehavior D2 = D();
             if (D2 != null) {
-                if (this.f42826e) {
+                if (this.f43394e) {
                     q(this, D2, com.swmansion.rnscreens.l.f19298a, 0, 4, null);
                 } else {
-                    com.swmansion.rnscreens.n nVar = this.f42827i;
+                    com.swmansion.rnscreens.n nVar = this.f43395i;
                     com.swmansion.rnscreens.m mVar = com.swmansion.rnscreens.m.f19299a;
                     if (!Intrinsics.areEqual(nVar, mVar)) {
                         q(this, D2, mVar, 0, 4, null);
                     }
                 }
             }
-            this.f42827i = com.swmansion.rnscreens.m.f19299a;
-            this.f42826e = false;
+            this.f43395i = com.swmansion.rnscreens.m.f19299a;
+            this.f43394e = false;
         }
         if (!u10) {
             i10 = f11.f3307d;
@@ -641,7 +641,7 @@ public final class o implements androidx.lifecycle.m, w {
     public void i(LifecycleOwner source, Lifecycle.a event) {
         Intrinsics.checkNotNullParameter(source, "source");
         Intrinsics.checkNotNullParameter(event, "event");
-        int i10 = e.f42842a[event.ordinal()];
+        int i10 = e.f43410a[event.ordinal()];
         if (i10 != 1) {
             if (i10 != 2) {
                 if (i10 != 3) {
@@ -668,8 +668,8 @@ public final class o implements androidx.lifecycle.m, w {
         int i11;
         Integer R = R();
         if (R != null) {
-            if (q.b(this.f42825d)) {
-                ScreenContentWrapper contentWrapper = this.f42825d.getContentWrapper();
+            if (q.b(this.f43393d)) {
+                ScreenContentWrapper contentWrapper = this.f43393d.getContentWrapper();
                 if (contentWrapper != null) {
                     i11 = contentWrapper.getHeight();
                 } else {
@@ -677,7 +677,7 @@ public final class o implements androidx.lifecycle.m, w {
                 }
                 return Math.min(Math.max(R.intValue() - i11, 0), i10);
             }
-            return Math.min(R.intValue() - ((int) (kotlin.ranges.d.k(this.f42825d.getSheetDetents().g(), 0.0d, 1.0d) * R.intValue())), i10);
+            return Math.min(R.intValue() - ((int) (kotlin.ranges.d.k(this.f43393d.getSheetDetents().g(), 0.0d, 1.0d) * R.intValue())), i10);
         }
         throw new IllegalStateException("[RNScreens] Failed to find window height during bottom sheet behaviour configuration");
     }
@@ -693,27 +693,27 @@ public final class o implements androidx.lifecycle.m, w {
         if (R != null) {
             behavior.U0(true);
             behavior.O0(true);
-            behavior.c0(this.f42833t);
-            ScreenFooter footer = this.f42825d.getFooter();
+            behavior.c0(this.f43401t);
+            ScreenFooter footer = this.f43393d.getFooter();
             if (footer != null) {
                 footer.r(behavior);
             }
             boolean z10 = false;
             if (keyboardState instanceof com.swmansion.rnscreens.m) {
-                int d10 = this.f42825d.getSheetDetents().d();
+                int d10 = this.f43393d.getSheetDetents().d();
                 if (d10 != 1) {
                     if (d10 != 2) {
                         if (d10 == 3) {
-                            return pn.a.f(behavior, Integer.valueOf(this.f42825d.getSheetDetents().k(i10)), Integer.valueOf(this.f42825d.getSheetDetents().c(R.intValue())), Integer.valueOf(this.f42825d.getSheetDetents().i(R.intValue())), Float.valueOf(this.f42825d.getSheetDetents().e()), Integer.valueOf(this.f42825d.getSheetDetents().b(R.intValue(), this.f42829p)));
+                            return pn.a.f(behavior, Integer.valueOf(this.f43393d.getSheetDetents().k(i10)), Integer.valueOf(this.f43393d.getSheetDetents().c(R.intValue())), Integer.valueOf(this.f43393d.getSheetDetents().i(R.intValue())), Float.valueOf(this.f43393d.getSheetDetents().e()), Integer.valueOf(this.f43393d.getSheetDetents().b(R.intValue(), this.f43397p)));
                         }
-                        throw new IllegalStateException("[RNScreens] Invalid detent count " + this.f42825d.getSheetDetents().d() + ". Expected at most 3.");
+                        throw new IllegalStateException("[RNScreens] Invalid detent count " + this.f43393d.getSheetDetents().d() + ". Expected at most 3.");
                     }
-                    return pn.a.h(behavior, Integer.valueOf(this.f42825d.getSheetDetents().k(i10)), Integer.valueOf(this.f42825d.getSheetDetents().c(R.intValue())), Integer.valueOf(this.f42825d.getSheetDetents().i(R.intValue())));
+                    return pn.a.h(behavior, Integer.valueOf(this.f43393d.getSheetDetents().k(i10)), Integer.valueOf(this.f43393d.getSheetDetents().c(R.intValue())), Integer.valueOf(this.f43393d.getSheetDetents().i(R.intValue())));
                 }
-                if (q.b(this.f42825d)) {
-                    i12 = this.f42825d.getSheetDetents().j(this.f42825d);
+                if (q.b(this.f43393d)) {
+                    i12 = this.f43393d.getSheetDetents().j(this.f43393d);
                 } else {
-                    i12 = this.f42825d.getSheetDetents().i(R.intValue());
+                    i12 = this.f43393d.getSheetDetents().i(R.intValue());
                 }
                 pn.a.e(behavior, Integer.valueOf(i12), false, 2, null);
                 return behavior;
@@ -721,7 +721,7 @@ public final class o implements androidx.lifecycle.m, w {
                 if (((com.swmansion.rnscreens.o) keyboardState).a() != 0) {
                     z10 = true;
                 }
-                int d11 = this.f42825d.getSheetDetents().d();
+                int d11 = this.f43393d.getSheetDetents().d();
                 if (d11 != 1) {
                     if (d11 != 2) {
                         if (d11 == 3) {
@@ -732,10 +732,10 @@ public final class o implements androidx.lifecycle.m, w {
                                 bottomSheetBehavior2 = behavior;
                                 pn.a.g(bottomSheetBehavior2, null, null, null, null, null, 31, null);
                             }
-                            bottomSheetBehavior2.c0(this.f42834u);
+                            bottomSheetBehavior2.c0(this.f43402u);
                             return bottomSheetBehavior2;
                         }
-                        throw new IllegalStateException("[RNScreens] Invalid detent count " + this.f42825d.getSheetDetents().d() + ". Expected at most 3.");
+                        throw new IllegalStateException("[RNScreens] Invalid detent count " + this.f43393d.getSheetDetents().d() + ". Expected at most 3.");
                     }
                     if (z10) {
                         bottomSheetBehavior = behavior;
@@ -744,27 +744,27 @@ public final class o implements androidx.lifecycle.m, w {
                         pn.a.i(behavior, null, null, null, 7, null);
                         bottomSheetBehavior = behavior;
                     }
-                    bottomSheetBehavior.c0(this.f42834u);
+                    bottomSheetBehavior.c0(this.f43402u);
                     return bottomSheetBehavior;
                 }
-                behavior.c0(this.f42834u);
+                behavior.c0(this.f43402u);
                 return behavior;
             } else if (keyboardState instanceof com.swmansion.rnscreens.l) {
-                behavior.J0(this.f42834u);
-                int d12 = this.f42825d.getSheetDetents().d();
+                behavior.J0(this.f43402u);
+                int d12 = this.f43393d.getSheetDetents().d();
                 if (d12 != 1) {
                     if (d12 != 2) {
                         if (d12 == 3) {
-                            return pn.a.g(behavior, null, Integer.valueOf(this.f42825d.getSheetDetents().c(R.intValue())), Integer.valueOf(this.f42825d.getSheetDetents().i(R.intValue())), Float.valueOf(this.f42825d.getSheetDetents().e()), Integer.valueOf(this.f42825d.getSheetDetents().b(R.intValue(), this.f42829p)), 1, null);
+                            return pn.a.g(behavior, null, Integer.valueOf(this.f43393d.getSheetDetents().c(R.intValue())), Integer.valueOf(this.f43393d.getSheetDetents().i(R.intValue())), Float.valueOf(this.f43393d.getSheetDetents().e()), Integer.valueOf(this.f43393d.getSheetDetents().b(R.intValue(), this.f43397p)), 1, null);
                         }
-                        throw new IllegalStateException("[RNScreens] Invalid detent count " + this.f42825d.getSheetDetents().d() + ". Expected at most 3.");
+                        throw new IllegalStateException("[RNScreens] Invalid detent count " + this.f43393d.getSheetDetents().d() + ". Expected at most 3.");
                     }
-                    return pn.a.i(behavior, null, Integer.valueOf(this.f42825d.getSheetDetents().c(R.intValue())), Integer.valueOf(this.f42825d.getSheetDetents().i(R.intValue())), 1, null);
+                    return pn.a.i(behavior, null, Integer.valueOf(this.f43393d.getSheetDetents().c(R.intValue())), Integer.valueOf(this.f43393d.getSheetDetents().i(R.intValue())), 1, null);
                 }
-                if (q.b(this.f42825d)) {
-                    i11 = this.f42825d.getSheetDetents().j(this.f42825d);
+                if (q.b(this.f43393d)) {
+                    i11 = this.f43393d.getSheetDetents().j(this.f43393d);
                 } else {
-                    i11 = this.f42825d.getSheetDetents().i(R.intValue());
+                    i11 = this.f43393d.getSheetDetents().i(R.intValue());
                 }
                 pn.a.d(behavior, Integer.valueOf(i11), false);
                 return behavior;
@@ -782,7 +782,7 @@ public final class o implements androidx.lifecycle.m, w {
         r0 c10 = sheetAnimationContext.c();
         ValueAnimator r10 = r(0.0f, b10.e(), b10);
         AnimatorSet.Builder play = animatorSet.play(v());
-        Screen screen = this.f42825d;
+        Screen screen = this.f43393d;
         if (!b10.j(screen, screen.getSheetInitialDetentIndex())) {
             play = null;
         }

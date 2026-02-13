@@ -10,9 +10,1484 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var6;
     var _closure1_slot3 = var5;
+    var0 = function() {
+        _fun112434: for (var _fun112434_ip = 0;;) switch (_fun112434_ip) {
+            case 0:
+                var1 = _closure1_slot20;
+                var3 = undefined;
+                var12 = var1.bind(var3)();
+                var4 = _closure1_slot5;
+                var2 = var4.useContext;
+                var8 = _closure1_slot1;
+                var15 = _closure1_slot3;
+                var1 = 13;
+                var1 = var15[var1];
+                var1 = var8.bind(var3)(var1);
+                var1 = var2.bind(var4)(var1);
+                var7 = var1.controlsSpecs;
+                var2 = var1.setMode;
+                var _closure2_slot0 = var2;
+                var4 = var1.pipContainerRef;
+                var14 = _closure1_slot0;
+                var1 = 14;
+                var1 = var15[var1];
+                var5 = var14.bind(var3)(var1);
+                var1 = var5.usePIPState;
+                var5 = var1.bind(var5)();
+                var _closure2_slot1 = var5;
+                var6 = var5.mode;
+                var1 = function arg0() {
+                    var3 = arg0;
+                    var _closure3_slot0 = var3;
+                    var0 = _closure1_slot20;
+                    var10 = undefined;
+                    var22 = var0.bind(var10)();
+                    var _closure3_slot1 = var22;
+                    var5 = _closure1_slot5;
+                    var4 = var5.useContext;
+                    var6 = _closure1_slot1;
+                    var12 = _closure1_slot3;
+                    var0 = 13;
+                    var0 = var12[var0];
+                    var0 = var6.bind(var10)(var0);
+                    var4 = var4.bind(var5)(var0);
+                    var17 = var4.controlsSpecs;
+                    var _closure3_slot2 = var17;
+                    var16 = var4.hideControls;
+                    var _closure3_slot3 = var16;
+                    var25 = var4.pipAvoidanceSpecs;
+                    var _closure3_slot4 = var25;
+                    var20 = var4.safeArea;
+                    var _closure3_slot5 = var20;
+                    var0 = var4.setFocused;
+                    var _closure3_slot6 = var0;
+                    var11 = var4.setMode;
+                    var _closure3_slot7 = var11;
+                    var15 = var4.showControls;
+                    var _closure3_slot8 = var15;
+                    var19 = var4.windowDimensions;
+                    var _closure3_slot9 = var19;
+                    var18 = var4.wrapperDimensions;
+                    var _closure3_slot10 = var18;
+                    var5 = var4.wrapperOffset;
+                    var _closure3_slot11 = var5;
+                    var4 = var4.channelId;
+                    var _closure3_slot12 = var4;
+                    var9 = _closure1_slot0;
+                    var4 = 14;
+                    var4 = var12[var4];
+                    var6 = var9.bind(var10)(var4);
+                    var4 = var6.usePIPState;
+                    var4 = var4.bind(var6)();
+                    var _closure3_slot13 = var4;
+                    var6 = 15;
+                    var7 = var12[var6];
+                    var14 = var9.bind(var10)(var7);
+                    var8 = var14.useSharedValue;
+                    var13 = 0;
+                    var7 = {
+                        'x': 0,
+                        'y': 0,
+                        'absoluteX': 0,
+                        'absoluteY': 0,
+                        'active': false,
+                        'pressed': false
+                    };
+                    var21 = var8.bind(var14)(var7);
+                    var _closure3_slot14 = var21;
+                    var7 = var12[var6];
+                    var8 = var9.bind(var10)(var7);
+                    var7 = var8.useSharedValue;
+                    var24 = var7.bind(var8)(var13);
+                    var _closure3_slot15 = var24;
+                    var14 = _closure1_slot5;
+                    var13 = var14.useEffect;
+                    var8 = new Array(1);
+                    var8[0] = var24;
+                    var7 = function() { // Environment: var1
+                        var1 = global;
+                        var4 = var1.setTimeout;
+                        var3 = undefined;
+                        var2 = function() { // Environment: var0
+                            var2 = _closure3_slot15;
+                            var1 = var2.set;
+                            var0 = 1;
+                            var0 = var1.bind(var2)(var0);
+                            var0 = undefined;
+                            return var0;
+                        };
+                        var1 = 200;
+                        var1 = var4.bind(var3)(var2, var1);
+                        var _closure4_slot0 = var1;
+                        var0 = function() { // Environment: var0
+                            var0 = global;
+                            var2 = var0.clearTimeout;
+                            var1 = _closure4_slot0;
+                            var0 = undefined;
+                            var1 = var2.bind(var0)(var1);
+                            return var0;
+                        };
+                        return var0;
+                    };
+                    var7 = var13.bind(var14)(var7, var8);
+                    var7 = var12[var6];
+                    var13 = var9.bind(var10)(var7);
+                    var8 = var13.useAnimatedStyle;
+                    var7 = function() {
+                        _fun112439: for (var _fun112439_ip = 0;;) switch (_fun112439_ip) {
+                            case 0:
+                                var0 = _closure3_slot13;
+                                var4 = var0.width;
+                                var1 = var0.showSecondaryPIP;
+                                var0 = _closure3_slot13;
+                                if (var1) {
+                                    _fun112439_ip = 32;
+                                    continue _fun112439
+                                }
+                            case 25:
+                                var3 = var0.height;
+                                _fun112439_ip = 38;
+                                continue _fun112439;
+                            case 32:
+                                var3 = var0.containerHeight;
+                            case 38:
+                                var2 = _closure1_slot0;
+                                var0 = _closure1_slot3;
+                                var6 = 16;
+                                var0 = var0[var6];
+                                var5 = undefined;
+                                var7 = var2.bind(var5)(var0);
+                                var2 = var7.getClampedPIPPosition;
+                                var0 = {};
+                                var10 = _closure3_slot10;
+                                var9 = var10.get;
+                                var9 = var9.bind(var10)();
+                                var9 = var9.pipX;
+                                var0.pipX = var9;
+                                var9 = var10.get;
+                                var9 = var9.bind(var10)();
+                                var9 = var9.pipY;
+                                var0.pipY = var9;
+                                var0.width = var4;
+                                var0.height = var3;
+                                var10 = _closure3_slot9;
+                                var9 = var10.get;
+                                var9 = var9.bind(var10)();
+                                var0.windowDimensions = var9;
+                                var10 = _closure3_slot5;
+                                var9 = var10.get;
+                                var9 = var9.bind(var10)();
+                                var0.safeArea = var9;
+                                var10 = _closure3_slot4;
+                                var9 = var10.get;
+                                var9 = var9.bind(var10)();
+                                var9 = var9.bottom;
+                                var0.bottomAvoidanceRegion = var9;
+                                var9 = var10.get;
+                                var9 = var9.bind(var10)();
+                                var9 = var9.top;
+                                var0.topAvoidanceRegion = var9;
+                                var10 = _closure3_slot14;
+                                var9 = var10.get;
+                                var9 = var9.bind(var10)();
+                                var10 = var9.active;
+                                var9 = undefined;
+                                if (!var10) {
+                                    _fun112439_ip = 238;
+                                    continue _fun112439
+                                }
+                            case 225:
+                                var11 = _closure3_slot14;
+                                var10 = var11.get;
+                                var9 = var10.bind(var11)();
+                            case 238:
+                                var0.positionOffset = var9;
+                                var0 = var2.bind(var7)(var0);
+                                var13 = var0.x;
+                                var11 = var0.y;
+                                var0 = {};
+                                var0.width = var4;
+                                var0.height = var3;
+                                var7 = _closure3_slot15;
+                                var2 = var7.get;
+                                var2 = var2.bind(var7)();
+                                var0.opacity = var2;
+                                var7 = {};
+                                var9 = _closure1_slot0;
+                                var2 = _closure1_slot3;
+                                var12 = 11;
+                                var2 = var2[var12];
+                                var10 = var9.bind(var5)(var2);
+                                var9 = var10.withSpring;
+                                var14 = _closure3_slot14;
+                                var2 = var14.get;
+                                var2 = var2.bind(var14)();
+                                var2 = var2.active;
+                                if (var2) {
+                                    _fun112439_ip = 340;
+                                    continue _fun112439
+                                }
+                            case 334:
+                                var2 = _closure1_slot17;
+                                _fun112439_ip = 344;
+                                continue _fun112439;
+                            case 340:
+                                var2 = _closure1_slot10;
+                            case 344:
+                                var2 = var9.bind(var10)(var13, var2);
+                                var7.translateX = var2;
+                                var2 = new Array(2);
+                                var2[0] = var7;
+                                var7 = {};
+                                var10 = _closure1_slot0;
+                                var9 = _closure1_slot3;
+                                var9 = var9[var12];
+                                var10 = var10.bind(var5)(var9);
+                                var9 = var10.withSpring;
+                                var12 = _closure3_slot14;
+                                var8 = var12.get;
+                                var8 = var8.bind(var12)();
+                                var8 = var8.active;
+                                if (var8) {
+                                    _fun112439_ip = 415;
+                                    continue _fun112439
+                                }
+                            case 409:
+                                var8 = _closure1_slot17;
+                                _fun112439_ip = 419;
+                                continue _fun112439;
+                            case 415:
+                                var8 = _closure1_slot10;
+                            case 419:
+                                var8 = var9.bind(var10)(var11, var8);
+                                var7.translateY = var8;
+                                var2[1] = var7;
+                                var0.transform = var2;
+                                var2 = _closure1_slot0;
+                                var1 = _closure1_slot3;
+                                var1 = var1[var6];
+                                var2 = var2.bind(var5)(var1);
+                                var1 = var2.getVoicePanelPIPBorderRadius;
+                                var1 = var1.bind(var2)(var4, var3);
+                                var0.borderRadius = var1;
+                                return var0;
+                        }
+                    };
+                    var14 = {};
+                    var14.pipState = var4;
+                    var23 = 16;
+                    var26 = var12[var23];
+                    var26 = var9.bind(var10)(var26);
+                    var26 = var26.getClampedPIPPosition;
+                    var14.getClampedPIPPosition = var26;
+                    var14.wrapperDimensions = var18;
+                    var14.windowDimensions = var19;
+                    var14.safeArea = var20;
+                    var14.pipAvoidanceSpecs = var25;
+                    var14.initialGestureOffset = var21;
+                    var14.opacity = var24;
+                    var24 = 11;
+                    var24 = var12[var24];
+                    var24 = var9.bind(var10)(var24);
+                    var24 = var24.withSpring;
+                    var14.withSpring = var24;
+                    var24 = _closure1_slot10;
+                    var14.DRAWER_SPRING_PHYSICS = var24;
+                    var24 = _closure1_slot17;
+                    var14.LAYOUT_PHYSICS = var24;
+                    var24 = var12[var23];
+                    var24 = var9.bind(var10)(var24);
+                    var24 = var24.getVoicePanelPIPBorderRadius;
+                    var14.getVoicePanelPIPBorderRadius = var24;
+                    var7.__closure = var14;
+                    var14 = 6729444248940.0;
+                    var7.__workletHash = var14;
+                    var14 = _closure1_slot21;
+                    var7.__initData = var14;
+                    var8 = var8.bind(var13)(var7);
+                    var6 = var12[var6];
+                    var13 = var9.bind(var10)(var6);
+                    var7 = var13.useAnimatedStyle;
+                    var6 = function() {
+                        var0 = _closure3_slot13;
+                        var4 = var0.width;
+                        var3 = var0.height;
+                        var0 = {};
+                        var0.width = var4;
+                        var0.height = var3;
+                        var5 = _closure1_slot0;
+                        var2 = _closure1_slot3;
+                        var1 = 16;
+                        var2 = var2[var1];
+                        var1 = undefined;
+                        var2 = var5.bind(var1)(var2);
+                        var1 = var2.getVoicePanelPIPBorderRadius;
+                        var1 = var1.bind(var2)(var4, var3);
+                        var0.borderRadius = var1;
+                        return var0;
+                    };
+                    var14 = {};
+                    var14.pipState = var4;
+                    var23 = var12[var23];
+                    var23 = var9.bind(var10)(var23);
+                    var23 = var23.getVoicePanelPIPBorderRadius;
+                    var14.getVoicePanelPIPBorderRadius = var23;
+                    var6.__closure = var14;
+                    var14 = 1914976453427.0;
+                    var6.__workletHash = var14;
+                    var14 = _closure1_slot22;
+                    var6.__initData = var14;
+                    var7 = var7.bind(var13)(var6);
+                    var14 = _closure1_slot5;
+                    var13 = var14.useMemo;
+                    var6 = new Array(3);
+                    var6[0] = var22;
+                    var22 = var4.width;
+                    var6[1] = var22;
+                    var4 = var4.height;
+                    var6[2] = var4;
+                    var4 = function() { // Environment: var1
+                        var1 = _closure3_slot1;
+                        var2 = var1.pipContentWrapper;
+                        var0 = new Array(3);
+                        var0[0] = var2;
+                        var2 = {};
+                        var3 = _closure3_slot13;
+                        var4 = var3.width;
+                        var2.width = var4;
+                        var4 = var3.height;
+                        var2.height = var4;
+                        var6 = _closure1_slot0;
+                        var5 = _closure1_slot3;
+                        var4 = 16;
+                        var5 = var5[var4];
+                        var4 = undefined;
+                        var6 = var6.bind(var4)(var5);
+                        var5 = var6.getVoicePanelPIPBorderRadius;
+                        var4 = var3.width;
+                        var3 = var3.height;
+                        var3 = var5.bind(var6)(var4, var3);
+                        var2.borderRadius = var3;
+                        var0[1] = var2;
+                        var1 = var1.inAppElevationShadow;
+                        var0[2] = var1;
+                        return var0;
+                    };
+                    var4 = var13.bind(var14)(var4, var6);
+                    var14 = _closure1_slot5;
+                    var13 = var14.useCallback;
+                    var6 = new Array(5);
+                    var6[0] = var21;
+                    var6[1] = var20;
+                    var6[2] = var19;
+                    var6[3] = var18;
+                    var6[4] = var5;
+                    var5 = function() { // Environment: var1
+                        var12 = _closure1_slot0;
+                        var9 = _closure1_slot3;
+                        var11 = 17;
+                        var1 = var9[var11];
+                        var8 = undefined;
+                        var1 = var12.bind(var8)(var1);
+                        var2 = var1.Gesture;
+                        var1 = var2.Pan;
+                        var2 = var1.bind(var2)();
+                        var1 = var2.enabled;
+                        var4 = true;
+                        var2 = var1.bind(var2)(var4);
+                        var1 = var2.manualActivation;
+                        var4 = var1.bind(var2)(var4);
+                        var2 = var4.maxPointers;
+                        var1 = 1;
+                        var4 = var2.bind(var4)(var1);
+                        var2 = var4.shouldCancelWhenOutside;
+                        var1 = false;
+                        var4 = var2.bind(var4)(var1);
+                        var2 = var4.onBegin;
+                        var1 = function arg0() {
+                            var0 = arg0;
+                            var4 = var0.absoluteX;
+                            var3 = var0.absoluteY;
+                            var2 = _closure3_slot14;
+                            var1 = var2.set;
+                            var0 = {
+                                'x': 0,
+                                'y': 0,
+                                'absoluteX': null,
+                                'absoluteY': null,
+                                'active': false,
+                                'pressed': true
+                            };
+                            var0.absoluteX = var4;
+                            var0.absoluteY = var3;
+                            var0 = var1.bind(var2)(var0);
+                            var0 = undefined;
+                            return var0;
+                        };
+                        var6 = {};
+                        var5 = _closure3_slot14;
+                        var6.initialGestureOffset = var5;
+                        var1.__closure = var6;
+                        var6 = 4684366251999.0;
+                        var1.__workletHash = var6;
+                        var6 = _closure1_slot29;
+                        var1.__initData = var6;
+                        var4 = var2.bind(var4)(var1);
+                        var2 = var4.onTouchesUp;
+                        var1 = function() {
+                            var2 = _closure1_slot1;
+                            var1 = _closure1_slot3;
+                            var0 = 18;
+                            var1 = var1[var0];
+                            var0 = undefined;
+                            var3 = var2.bind(var0)(var1);
+                            var2 = _closure3_slot14;
+                            var1 = {
+                                'active': false,
+                                'pressed': false
+                            };
+                            var1 = var3.bind(var0)(var2, var1);
+                            return var0;
+                        };
+                        var10 = {};
+                        var7 = _closure1_slot1;
+                        var6 = 18;
+                        var13 = var9[var6];
+                        var13 = var7.bind(var8)(var13);
+                        var10.updateSharedValueIfChanged = var13;
+                        var10.initialGestureOffset = var5;
+                        var1.__closure = var10;
+                        var10 = 11771025649835.0;
+                        var1.__workletHash = var10;
+                        var10 = _closure1_slot28;
+                        var1.__initData = var10;
+                        var4 = var2.bind(var4)(var1);
+                        var2 = var4.onTouchesMove;
+                        var1 = function arg0, arg1() {
+                            _fun112445: for (var _fun112445_ip = 0;;) switch (_fun112445_ip) {
+                                case 0:
+                                    var4 = arg0;
+                                    var3 = arg1;
+                                    var5 = var4.state;
+                                    var6 = _closure1_slot0;
+                                    var2 = _closure1_slot3;
+                                    var0 = 17;
+                                    var2 = var2[var0];
+                                    var0 = undefined;
+                                    var2 = var6.bind(var0)(var2);
+                                    var2 = var2.State;
+                                    var2 = var2.BEGAN;
+                                    if (!(var5 === var2)) {
+                                        _fun112445_ip = 345;
+                                        continue _fun112445
+                                    }
+                                case 55:
+                                    var6 = _closure3_slot14;
+                                    var5 = var6.get;
+                                    var5 = var5.bind(var6)();
+                                    var5 = var5.active;
+                                    if (var5) {
+                                        _fun112445_ip = 345;
+                                        continue _fun112445
+                                    }
+                                case 83:
+                                    var5 = var4.changedTouches;
+                                    var4 = 0;
+                                    var4 = var5[var4];
+                                    var7 = var4.absoluteY;
+                                    var8 = var4.absoluteX;
+                                    var5 = global;
+                                    var9 = var5.Math;
+                                    var6 = var9.abs;
+                                    var10 = _closure3_slot14;
+                                    var4 = var10.get;
+                                    var4 = var4.bind(var10)();
+                                    var4 = var4.absoluteX;
+                                    var4 = var4 - var8;
+                                    var4 = var6.bind(var9)(var4);
+                                    var6 = 10;
+                                    var4 = var4 > var6;
+                                    if (var4) {
+                                        _fun112445_ip = 203;
+                                        continue _fun112445
+                                    }
+                                case 159:
+                                    var10 = var5.Math;
+                                    var9 = var10.abs;
+                                    var11 = _closure3_slot14;
+                                    var5 = var11.get;
+                                    var5 = var5.bind(var11)();
+                                    var5 = var5.absoluteY;
+                                    var5 = var5 - var7;
+                                    var5 = var9.bind(var10)(var5);
+                                    var4 = var5 > var6;
+                                case 203:
+                                    if (!var4) {
+                                        _fun112445_ip = 345;
+                                        continue _fun112445
+                                    }
+                                case 209:
+                                    var6 = _closure3_slot14;
+                                    var5 = var6.set;
+                                    var4 = {
+                                        'x': 0,
+                                        'y': 0,
+                                        'absoluteX': null,
+                                        'absoluteY': null,
+                                        'pressed': true,
+                                        'active': true
+                                    };
+                                    var4.absoluteX = var8;
+                                    var4.absoluteY = var7;
+                                    var4 = var5.bind(var6)(var4);
+                                    var4 = _closure1_slot1;
+                                    var5 = _closure1_slot3;
+                                    var6 = 18;
+                                    var6 = var5[var6];
+                                    var7 = var4.bind(var0)(var6);
+                                    var6 = _closure3_slot11;
+                                    var2 = {
+                                        'gestureActive': true,
+                                        'x': 0,
+                                        'y': 0
+                                    };
+                                    var2 = var7.bind(var0)(var6, var2);
+                                    var2 = var3.activate;
+                                    var2 = var2.bind(var3)();
+                                    var2 = _closure1_slot0;
+                                    var1 = 15;
+                                    var1 = var5[var1];
+                                    var3 = var2.bind(var0)(var1);
+                                    var2 = var3.runOnJS;
+                                    var1 = 19;
+                                    var1 = var5[var1];
+                                    var1 = var4.bind(var0)(var1);
+                                    var1 = var2.bind(var3)(var1);
+                                    var1 = var1.bind(var0)();
+                                case 345:
+                                    return var0;
+                            }
+                        };
+                        var10 = {};
+                        var11 = var9[var11];
+                        var11 = var12.bind(var8)(var11);
+                        var11 = var11.State;
+                        var10.State = var11;
+                        var10.initialGestureOffset = var5;
+                        var11 = 10;
+                        var10.MIN_GESTURE_START = var11;
+                        var11 = var9[var6];
+                        var11 = var7.bind(var8)(var11);
+                        var10.updateSharedValueIfChanged = var11;
+                        var13 = _closure3_slot11;
+                        var10.wrapperOffset = var13;
+                        var11 = 15;
+                        var15 = var9[var11];
+                        var15 = var12.bind(var8)(var15);
+                        var15 = var15.runOnJS;
+                        var10.runOnJS = var15;
+                        var15 = 19;
+                        var15 = var9[var15];
+                        var15 = var7.bind(var8)(var15);
+                        var10.triggerIOSHaptic = var15;
+                        var1.__closure = var10;
+                        var10 = 16714994610987.0;
+                        var1.__workletHash = var10;
+                        var10 = _closure1_slot27;
+                        var1.__initData = var10;
+                        var4 = var2.bind(var4)(var1);
+                        var2 = var4.onChange;
+                        var1 = function arg0() {
+                            var0 = arg0;
+                            var6 = var0.absoluteX;
+                            var5 = var0.absoluteY;
+                            var2 = _closure1_slot1;
+                            var1 = _closure1_slot3;
+                            var0 = 18;
+                            var1 = var1[var0];
+                            var0 = undefined;
+                            var3 = var2.bind(var0)(var1);
+                            var2 = _closure3_slot14;
+                            var1 = {};
+                            var4 = var2.get;
+                            var4 = var4.bind(var2)();
+                            var4 = var4.absoluteX;
+                            var4 = var6 - var4;
+                            var1.x = var4;
+                            var4 = var2.get;
+                            var4 = var4.bind(var2)();
+                            var4 = var4.absoluteY;
+                            var4 = var5 - var4;
+                            var1.y = var4;
+                            var1 = var3.bind(var0)(var2, var1);
+                            return var0;
+                        };
+                        var10 = {};
+                        var15 = var9[var6];
+                        var15 = var7.bind(var8)(var15);
+                        var10.updateSharedValueIfChanged = var15;
+                        var10.initialGestureOffset = var5;
+                        var1.__closure = var10;
+                        var10 = 7822444262980.0;
+                        var1.__workletHash = var10;
+                        var10 = _closure1_slot26;
+                        var1.__initData = var10;
+                        var4 = var2.bind(var4)(var1);
+                        var2 = var4.onEnd;
+                        var1 = function arg0() {
+                            var0 = arg0;
+                            var10 = var0.velocityX;
+                            var9 = var0.velocityY;
+                            var8 = var0.absoluteX;
+                            var1 = var0.absoluteY;
+                            var2 = _closure1_slot0;
+                            var5 = _closure1_slot3;
+                            var0 = 16;
+                            var4 = var5[var0];
+                            var0 = undefined;
+                            var7 = var2.bind(var0)(var4);
+                            var6 = var7.calculatePIPPositionFromVelocity;
+                            var4 = {};
+                            var4.velocityX = var10;
+                            var4.velocityY = var9;
+                            var4.absoluteX = var8;
+                            var4.absoluteY = var1;
+                            var9 = _closure3_slot9;
+                            var8 = var9.get;
+                            var8 = var8.bind(var9)();
+                            var4.windowDimensions = var8;
+                            var9 = _closure3_slot5;
+                            var8 = var9.get;
+                            var8 = var8.bind(var9)();
+                            var4.safeArea = var8;
+                            var4 = var6.bind(var7)(var4);
+                            var10 = var4.pipX;
+                            var9 = var4.pipY;
+                            var4 = _closure1_slot1;
+                            var3 = 18;
+                            var6 = var5[var3];
+                            var8 = var4.bind(var0)(var6);
+                            var7 = _closure3_slot10;
+                            var6 = {};
+                            var6.pipX = var10;
+                            var6.pipY = var9;
+                            var6 = var8.bind(var0)(var7, var6);
+                            var3 = var5[var3];
+                            var6 = var4.bind(var0)(var3);
+                            var3 = _closure3_slot11;
+                            var1 = {};
+                            var7 = false;
+                            var1.gestureActive = var7;
+                            var1 = var6.bind(var0)(var3, var1);
+                            var1 = 15;
+                            var1 = var5[var1];
+                            var3 = var2.bind(var0)(var1);
+                            var2 = var3.runOnJS;
+                            var1 = 20;
+                            var1 = var5[var1];
+                            var1 = var4.bind(var0)(var1);
+                            var1 = var1.updateSourceTrackingView;
+                            var1 = var2.bind(var3)(var1);
+                            var1 = var1.bind(var0)();
+                            return var0;
+                        };
+                        var10 = {};
+                        var15 = 16;
+                        var15 = var9[var15];
+                        var15 = var12.bind(var8)(var15);
+                        var15 = var15.calculatePIPPositionFromVelocity;
+                        var10.calculatePIPPositionFromVelocity = var15;
+                        var15 = _closure3_slot9;
+                        var10.windowDimensions = var15;
+                        var15 = _closure3_slot5;
+                        var10.safeArea = var15;
+                        var15 = var9[var6];
+                        var15 = var7.bind(var8)(var15);
+                        var10.updateSharedValueIfChanged = var15;
+                        var14 = _closure3_slot10;
+                        var10.wrapperDimensions = var14;
+                        var10.wrapperOffset = var13;
+                        var11 = var9[var11];
+                        var11 = var12.bind(var8)(var11);
+                        var11 = var11.runOnJS;
+                        var10.runOnJS = var11;
+                        var11 = 20;
+                        var11 = var9[var11];
+                        var11 = var7.bind(var8)(var11);
+                        var11 = var11.updateSourceTrackingView;
+                        var10.updateSourceTrackingView = var11;
+                        var1.__closure = var10;
+                        var10 = 11935428351350.0;
+                        var1.__workletHash = var10;
+                        var10 = _closure1_slot25;
+                        var1.__initData = var10;
+                        var4 = var2.bind(var4)(var1);
+                        var2 = var4.onTouchesCancelled;
+                        var1 = function() {
+                            var2 = _closure1_slot1;
+                            var1 = _closure1_slot3;
+                            var0 = 18;
+                            var1 = var1[var0];
+                            var0 = undefined;
+                            var3 = var2.bind(var0)(var1);
+                            var2 = _closure3_slot14;
+                            var1 = {
+                                'active': false,
+                                'pressed': false
+                            };
+                            var1 = var3.bind(var0)(var2, var1);
+                            return var0;
+                        };
+                        var10 = {};
+                        var11 = var9[var6];
+                        var11 = var7.bind(var8)(var11);
+                        var10.updateSharedValueIfChanged = var11;
+                        var10.initialGestureOffset = var5;
+                        var1.__closure = var10;
+                        var10 = 4606005866023.0;
+                        var1.__workletHash = var10;
+                        var10 = _closure1_slot24;
+                        var1.__initData = var10;
+                        var2 = var2.bind(var4)(var1);
+                        var1 = var2.onFinalize;
+                        var0 = function() {
+                            var2 = _closure1_slot1;
+                            var1 = _closure1_slot3;
+                            var0 = 18;
+                            var1 = var1[var0];
+                            var0 = undefined;
+                            var3 = var2.bind(var0)(var1);
+                            var2 = _closure3_slot14;
+                            var1 = {
+                                'active': false,
+                                'pressed': false
+                            };
+                            var1 = var3.bind(var0)(var2, var1);
+                            return var0;
+                        };
+                        var4 = {};
+                        var6 = var9[var6];
+                        var6 = var7.bind(var8)(var6);
+                        var4.updateSharedValueIfChanged = var6;
+                        var4.initialGestureOffset = var5;
+                        var0.__closure = var4;
+                        var4 = 5443656412422.0;
+                        var0.__workletHash = var4;
+                        var3 = _closure1_slot23;
+                        var0.__initData = var3;
+                        var0 = var1.bind(var2)(var0);
+                        return var0;
+                    };
+                    var6 = var13.bind(var14)(var5, var6);
+                    var _closure3_slot16 = var6;
+                    var14 = _closure1_slot5;
+                    var13 = var14.useMemo;
+                    var5 = new Array(7);
+                    var5[0] = var17;
+                    var5[1] = var16;
+                    var5[2] = var0;
+                    var5[3] = var15;
+                    var5[4] = var3;
+                    var5[5] = var11;
+                    var5[6] = var6;
+                    var3 = function() { // Environment: var1
+                        var11 = _closure1_slot0;
+                        var12 = _closure1_slot3;
+                        var6 = 17;
+                        var0 = var12[var6];
+                        var5 = undefined;
+                        var0 = var11.bind(var5)(var0);
+                        var4 = var0.Gesture;
+                        var3 = var4.Exclusive;
+                        var0 = var12[var6];
+                        var0 = var11.bind(var5)(var0);
+                        var2 = var0.Gesture;
+                        var0 = var2.Tap;
+                        var9 = var0.bind(var2)();
+                        var7 = var9.enabled;
+                        var13 = _closure3_slot0;
+                        var2 = _closure1_slot13;
+                        var2 = var2.IN_APP;
+                        var2 = var13 !== var2;
+                        var7 = var7.bind(var9)(var2);
+                        var2 = var7.maxDistance;
+                        var9 = 30;
+                        var14 = var2.bind(var7)(var9);
+                        var7 = var14.onStart;
+                        var2 = function() {
+                            var2 = _closure1_slot0;
+                            var1 = _closure1_slot3;
+                            var0 = 15;
+                            var1 = var1[var0];
+                            var0 = undefined;
+                            var3 = var2.bind(var0)(var1);
+                            var2 = var3.runOnJS;
+                            var1 = _closure3_slot6;
+                            var2 = var2.bind(var3)(var1);
+                            var1 = null;
+                            var1 = var2.bind(var0)(var1);
+                            return var0;
+                        };
+                        var15 = {};
+                        var10 = 15;
+                        var16 = var12[var10];
+                        var16 = var11.bind(var5)(var16);
+                        var16 = var16.runOnJS;
+                        var15.runOnJS = var16;
+                        var16 = _closure3_slot6;
+                        var15.setFocused = var16;
+                        var2.__closure = var15;
+                        var15 = 10703348418884.0;
+                        var2.__workletHash = var15;
+                        var15 = _closure1_slot30;
+                        var2.__initData = var15;
+                        var14 = var7.bind(var14)(var2);
+                        var7 = var14.numberOfTaps;
+                        var2 = 2;
+                        var2 = var7.bind(var14)(var2);
+                        var6 = var12[var6];
+                        var6 = var11.bind(var5)(var6);
+                        var7 = var6.Gesture;
+                        var6 = var7.Tap;
+                        var14 = var6.bind(var7)();
+                        var7 = var14.enabled;
+                        var6 = true;
+                        var7 = var7.bind(var14)(var6);
+                        var6 = var7.maxDistance;
+                        var7 = var6.bind(var7)(var9);
+                        var6 = var7.onStart;
+                        var1 = function() {
+                            _fun112452: for (var _fun112452_ip = 0;;) switch (_fun112452_ip) {
+                                case 0:
+                                    var3 = _closure3_slot0;
+                                    var2 = _closure1_slot13;
+                                    var2 = var2.IN_APP;
+                                    if (!(var3 !== var2)) {
+                                        _fun112452_ip = 140;
+                                        continue _fun112452
+                                    }
+                                case 24:
+                                    var3 = _closure3_slot2;
+                                    var2 = var3.get;
+                                    var2 = var2.bind(var3)();
+                                    var3 = var2.mode;
+                                    var2 = _closure1_slot12;
+                                    var2 = var2.HIDDEN;
+                                    if (!(var3 !== var2)) {
+                                        _fun112452_ip = 98;
+                                        continue _fun112452
+                                    }
+                                case 56:
+                                    var4 = _closure1_slot0;
+                                    var3 = _closure1_slot3;
+                                    var2 = 15;
+                                    var2 = var3[var2];
+                                    var3 = undefined;
+                                    var5 = var4.bind(var3)(var2);
+                                    var4 = var5.runOnJS;
+                                    var2 = _closure3_slot3;
+                                    var2 = var4.bind(var5)(var2);
+                                    var2 = var2.bind(var3)();
+                                    _fun112452_ip = 191;
+                                    continue _fun112452;
+                                case 98:
+                                    var4 = _closure1_slot0;
+                                    var3 = _closure1_slot3;
+                                    var2 = 15;
+                                    var2 = var3[var2];
+                                    var3 = undefined;
+                                    var5 = var4.bind(var3)(var2);
+                                    var4 = var5.runOnJS;
+                                    var2 = _closure3_slot8;
+                                    var2 = var4.bind(var5)(var2);
+                                    var2 = var2.bind(var3)();
+                                    _fun112452_ip = 191;
+                                    continue _fun112452;
+                                case 140:
+                                    var4 = _closure1_slot0;
+                                    var3 = _closure1_slot3;
+                                    var2 = 15;
+                                    var3 = var3[var2];
+                                    var2 = undefined;
+                                    var4 = var4.bind(var2)(var3);
+                                    var3 = var4.runOnJS;
+                                    var1 = _closure3_slot7;
+                                    var1 = var3.bind(var4)(var1);
+                                    var0 = _closure1_slot11;
+                                    var0 = var0.PANEL;
+                                    var0 = var1.bind(var2)(var0);
+                                case 191:
+                                    var0 = undefined;
+                                    return var0;
+                            }
+                        };
+                        var9 = {};
+                        var9.pipMode = var13;
+                        var13 = _closure1_slot13;
+                        var9.VoicePanelPIPModes = var13;
+                        var10 = var12[var10];
+                        var10 = var11.bind(var5)(var10);
+                        var10 = var10.runOnJS;
+                        var9.runOnJS = var10;
+                        var10 = _closure3_slot7;
+                        var9.setMode = var10;
+                        var10 = _closure1_slot11;
+                        var9.VoicePanelModes = var10;
+                        var10 = _closure3_slot2;
+                        var9.controlsSpecs = var10;
+                        var10 = _closure1_slot12;
+                        var9.VoicePanelControlsModes = var10;
+                        var10 = _closure3_slot8;
+                        var9.showControls = var10;
+                        var10 = _closure3_slot3;
+                        var9.hideControls = var10;
+                        var1.__closure = var9;
+                        var9 = 9532493963151.0;
+                        var1.__workletHash = var9;
+                        var8 = _closure1_slot31;
+                        var1.__initData = var8;
+                        var1 = var6.bind(var7)(var1);
+                        var0 = _closure3_slot16;
+                        var0 = var0.bind(var5)();
+                        var0 = var3.bind(var4)(var2, var1, var0);
+                        return var0;
+                    };
+                    var3 = var13.bind(var14)(var3, var5);
+                    var5 = 21;
+                    var5 = var12[var5];
+                    var12 = var9.bind(var10)(var5);
+                    var10 = var12.useStateFromStoresObject;
+                    var5 = _closure1_slot7;
+                    var9 = new Array(2);
+                    var9[0] = var5;
+                    var5 = _closure1_slot8;
+                    var9[1] = var5;
+                    var5 = function() { // Environment: var1
+                        _fun112453: for (var _fun112453_ip = 0;;) switch (_fun112453_ip) {
+                            case 0:
+                                var2 = _closure1_slot7;
+                                var1 = var2.getCurrentEmbeddedActivity;
+                                var5 = var1.bind(var2)();
+                                var3 = _closure1_slot0;
+                                var2 = _closure1_slot3;
+                                var1 = 22;
+                                var1 = var2[var1];
+                                var2 = undefined;
+                                var4 = var3.bind(var2)(var1);
+                                var3 = var4.getEmbeddedActivityLocationChannelId;
+                                var1 = null;
+                                var6 = var1 == var5;
+                                if (var6) {
+                                    _fun112453_ip = 59;
+                                    continue _fun112453
+                                }
+                            case 54:
+                                var2 = var5.location;
+                            case 59:
+                                var3 = var3.bind(var4)(var2);
+                                var2 = _closure1_slot8;
+                                var0 = var2.getConnectedFrame;
+                                var0 = var0.bind(var2)();
+                                var1 = var1 != var0;
+                                var0 = {};
+                                var2 = _closure3_slot12;
+                                var2 = var3 !== var2;
+                                var0.currentEmbeddedActivityIsNotInCurrentChannel = var2;
+                                var0.hasFrame = var1;
+                                return var0;
+                        }
+                    };
+                    var5 = var10.bind(var12)(var9, var5);
+                    var13 = var5.currentEmbeddedActivityIsNotInCurrentChannel;
+                    var _closure3_slot17 = var13;
+                    var12 = var5.hasFrame;
+                    var _closure3_slot18 = var12;
+                    var10 = _closure1_slot5;
+                    var9 = var10.useCallback;
+                    var5 = new Array(4);
+                    var5[0] = var13;
+                    var5[1] = var12;
+                    var5[2] = var11;
+                    var5[3] = var0;
+                    var0 = function() { // Environment: var1
+                        _fun112454: for (var _fun112454_ip = 0;;) switch (_fun112454_ip) {
+                            case 0:
+                                var1 = _closure3_slot17;
+                                if (!var1) {
+                                    _fun112454_ip = 45;
+                                    continue _fun112454
+                                }
+                            case 10:
+                                var2 = _closure3_slot7;
+                                var1 = _closure1_slot11;
+                                var1 = var1.PIP;
+                                var3 = undefined;
+                                var1 = var2.bind(var3)(var1);
+                                var2 = _closure3_slot6;
+                                var1 = null;
+                                var1 = var2.bind(var3)(var1);
+                            case 45:
+                                var1 = _closure3_slot18;
+                                if (var1) {
+                                    _fun112454_ip = 100;
+                                    continue _fun112454
+                                }
+                            case 55:
+                                var3 = _closure1_slot2;
+                                var2 = _closure1_slot3;
+                                var1 = 24;
+                                var2 = var2[var1];
+                                var1 = undefined;
+                                var3 = var3.bind(var1)(var2);
+                                var2 = var3.updateActivityPanelMode;
+                                var1 = _closure1_slot14;
+                                var1 = var1.PANEL;
+                                var1 = var2.bind(var3)(var1);
+                                _fun112454_ip = 143;
+                                continue _fun112454;
+                            case 100:
+                                var3 = _closure1_slot1;
+                                var2 = _closure1_slot3;
+                                var1 = 23;
+                                var2 = var2[var1];
+                                var1 = undefined;
+                                var2 = var3.bind(var1)(var2);
+                                var1 = var2.updateFramePanelMode;
+                                var0 = _closure1_slot14;
+                                var0 = var0.PANEL;
+                                var0 = var1.bind(var2)(var0);
+                            case 143:
+                                var0 = undefined;
+                                return var0;
+                        }
+                    };
+                    var5 = var9.bind(var10)(var0, var5);
+                    var _closure3_slot19 = var5;
+                    var0 = {};
+                    var0.multiPIPWrapperStyles = var8;
+                    var0.mainPIPWrapperStyles = var7;
+                    var0.secondaryPIPWrapperStyles = var4;
+                    var0.mainPIPGesture = var3;
+                    var4 = _closure1_slot5;
+                    var3 = var4.useMemo;
+                    var2 = new Array(2);
+                    var2[0] = var6;
+                    var2[1] = var5;
+                    var1 = function() { // Environment: var1
+                        var9 = _closure1_slot0;
+                        var10 = _closure1_slot3;
+                        var0 = 17;
+                        var1 = var10[var0];
+                        var4 = undefined;
+                        var1 = var9.bind(var4)(var1);
+                        var3 = var1.Gesture;
+                        var2 = var3.Exclusive;
+                        var0 = var10[var0];
+                        var0 = var9.bind(var4)(var0);
+                        var1 = var0.Gesture;
+                        var0 = var1.Tap;
+                        var5 = var0.bind(var1)();
+                        var1 = var5.maxDistance;
+                        var0 = 30;
+                        var6 = var1.bind(var5)(var0);
+                        var5 = var6.onStart;
+                        var1 = function() {
+                            var2 = _closure1_slot0;
+                            var1 = _closure1_slot3;
+                            var0 = 15;
+                            var1 = var1[var0];
+                            var0 = undefined;
+                            var3 = var2.bind(var0)(var1);
+                            var2 = var3.runOnJS;
+                            var1 = _closure3_slot19;
+                            var1 = var2.bind(var3)(var1);
+                            var1 = var1.bind(var0)();
+                            return var0;
+                        };
+                        var8 = {};
+                        var0 = 15;
+                        var0 = var10[var0];
+                        var0 = var9.bind(var4)(var0);
+                        var0 = var0.runOnJS;
+                        var8.runOnJS = var0;
+                        var9 = _closure3_slot19;
+                        var8.handleSecondaryPIPTap = var9;
+                        var1.__closure = var8;
+                        var8 = 8361527940381.0;
+                        var1.__workletHash = var8;
+                        var7 = _closure1_slot32;
+                        var1.__initData = var7;
+                        var1 = var5.bind(var6)(var1);
+                        var0 = _closure3_slot16;
+                        var0 = var0.bind(var4)();
+                        var0 = var2.bind(var3)(var1, var0);
+                        return var0;
+                    };
+                    var1 = var3.bind(var4)(var1, var2);
+                    var0.secondaryPIPGesture = var1;
+                    return var0;
+                };
+                var1 = var1.bind(var3)(var6);
+                var6 = var1.multiPIPWrapperStyles;
+                var22 = var1.mainPIPWrapperStyles;
+                var11 = var1.secondaryPIPWrapperStyles;
+                var21 = var1.mainPIPGesture;
+                var16 = var1.secondaryPIPGesture;
+                var1 = 25;
+                var1 = var15[var1];
+                var1 = var8.bind(var3)(var1);
+                var1 = var1.bind(var3)(var7);
+                var17 = var1.pushToTalk;
+                var1 = 21;
+                var1 = var15[var1];
+                var9 = var14.bind(var3)(var1);
+                var8 = var9.useStateFromStoresObject;
+                var1 = _closure1_slot8;
+                var7 = new Array(1);
+                var7[0] = var1;
+                var1 = function() { // Environment: var0
+                    var1 = _closure1_slot8;
+                    var0 = var1.getConnectedFrame;
+                    var1 = var0.bind(var1)();
+                    var0 = null;
+                    var0 = var0 != var1;
+                    return var0;
+                };
+                var1 = var8.bind(var9)(var7, var1);
+                var _closure2_slot2 = var1;
+                var7 = 15;
+                var7 = var15[var7];
+                var9 = var14.bind(var3)(var7);
+                var8 = var9.useAnimatedStyle;
+                var7 = function() {
+                    var0 = {};
+                    var3 = _closure1_slot0;
+                    var2 = _closure1_slot3;
+                    var1 = 16;
+                    var2 = var2[var1];
+                    var1 = undefined;
+                    var4 = var3.bind(var1)(var2);
+                    var3 = var4.getVoicePanelPIPBorderRadius;
+                    var1 = _closure2_slot1;
+                    var2 = var1.width;
+                    var1 = var1.height;
+                    var1 = var3.bind(var4)(var2, var1);
+                    var0.borderRadius = var1;
+                    return var0;
+                };
+                var10 = {};
+                var13 = 16;
+                var13 = var15[var13];
+                var13 = var14.bind(var3)(var13);
+                var13 = var13.getVoicePanelPIPBorderRadius;
+                var10.getVoicePanelPIPBorderRadius = var13;
+                var10.pipState = var5;
+                var7.__closure = var10;
+                var10 = 9598016909682.0;
+                var7.__workletHash = var10;
+                var10 = _closure1_slot33;
+                var7.__initData = var10;
+                var13 = var8.bind(var9)(var7);
+                var9 = _closure1_slot5;
+                var8 = var9.useMemo;
+                var7 = new Array(1);
+                var7[0] = var2;
+                var2 = function() { // Environment: var0
+                    var0 = {
+                        'accessible': true,
+                        'accessibilityLabel': null,
+                        'accessibilityRole': 'button'
+                    };
+                    var5 = _closure1_slot0;
+                    var6 = _closure1_slot3;
+                    var1 = 26;
+                    var2 = var6[var1];
+                    var4 = undefined;
+                    var2 = var5.bind(var4)(var2);
+                    var3 = var2.intl;
+                    var2 = var3.string;
+                    var1 = var6[var1];
+                    var1 = var5.bind(var4)(var1);
+                    var1 = var1.t;
+                    var1 = var1.oN8bqe;
+                    var1 = var2.bind(var3)(var1);
+                    var0.accessibilityLabel = var1;
+                    var2 = {};
+                    var1 = 'activate';
+                    var2.name = var1;
+                    var1 = new Array(1);
+                    var1[0] = var2;
+                    var0.accessibilityActions = var1;
+                    var1 = function() {
+                        var2 = _closure2_slot0;
+                        var0 = _closure1_slot11;
+                        var1 = var0.PANEL;
+                        var0 = undefined;
+                        var1 = var2.bind(var0)(var1);
+                        return var0;
+                    };
+                    var0.onAccessibilityAction = var1;
+                    return var0;
+                };
+                var15 = var8.bind(var9)(var2, var7);
+                var8 = _closure1_slot5;
+                var7 = var8.useMemo;
+                var2 = new Array(1);
+                var2[0] = var1;
+                var1 = function() { // Environment: var0
+                    var0 = {};
+                    var1 = true;
+                    var0.accessible = var1;
+                    var5 = _closure1_slot0;
+                    var6 = _closure1_slot3;
+                    var1 = 26;
+                    var2 = var6[var1];
+                    var4 = undefined;
+                    var2 = var5.bind(var4)(var2);
+                    var3 = var2.intl;
+                    var2 = var3.string;
+                    var1 = var6[var1];
+                    var1 = var5.bind(var4)(var1);
+                    var1 = var1.t;
+                    var1 = var1["3ejJer"];
+                    var1 = var2.bind(var3)(var1);
+                    var0.accessibilityLabel = var1;
+                    var2 = {};
+                    var1 = 'activate';
+                    var2.name = var1;
+                    var1 = new Array(1);
+                    var1[0] = var2;
+                    var0.accessibilityActions = var1;
+                    var1 = function() {
+                        _fun112462: for (var _fun112462_ip = 0;;) switch (_fun112462_ip) {
+                            case 0:
+                                var1 = _closure2_slot2;
+                                if (var1) {
+                                    _fun112462_ip = 58;
+                                    continue _fun112462
+                                }
+                            case 13:
+                                var3 = _closure1_slot2;
+                                var2 = _closure1_slot3;
+                                var1 = 24;
+                                var2 = var2[var1];
+                                var1 = undefined;
+                                var3 = var3.bind(var1)(var2);
+                                var2 = var3.updateActivityPanelMode;
+                                var1 = _closure1_slot14;
+                                var1 = var1.PANEL;
+                                var1 = var2.bind(var3)(var1);
+                                _fun112462_ip = 101;
+                                continue _fun112462;
+                            case 58:
+                                var3 = _closure1_slot1;
+                                var2 = _closure1_slot3;
+                                var1 = 23;
+                                var2 = var2[var1];
+                                var1 = undefined;
+                                var2 = var3.bind(var1)(var2);
+                                var1 = var2.updateFramePanelMode;
+                                var0 = _closure1_slot14;
+                                var0 = var0.PANEL;
+                                var0 = var1.bind(var2)(var0);
+                            case 101:
+                                var0 = undefined;
+                                return var0;
+                        }
+                    };
+                    var0.onAccessibilityAction = var1;
+                    return var0;
+                };
+                var10 = var7.bind(var8)(var1, var2);
+                var1 = _closure1_slot9;
+                var0 = function(arg0) { // Environment: var0
+                    var0 = arg0;
+                    var0 = var0.isActivityFocused;
+                    return var0;
+                };
+                var1 = var1.bind(var3)(var0);
+                if (!var17) {
+                    _fun112434_ip = 418;
+                    continue _fun112434
+                }
+            case 390:
+                var2 = var5.mode;
+                var0 = _closure1_slot13;
+                var0 = var0.IN_PANEL;
+                var0 = var2 !== var0;
+                if (var0) {
+                    _fun112434_ip = 415;
+                    continue _fun112434
+                }
+            case 412:
+                var0 = var1;
+            case 415:
+                var17 = var0;
+            case 418:
+                var2 = _closure1_slot16;
+                var1 = _closure1_slot1;
+                var0 = _closure1_slot3;
+                var9 = 27;
+                var0 = var0[var9];
+                var1 = var1.bind(var3)(var0);
+                var0 = {};
+                var0.ref = var4;
+                var19 = 'box-none';
+                var0.pointerEvents = var19;
+                var7 = var12.multiPIPContainer;
+                var4 = new Array(2);
+                var4[0] = var7;
+                var4[1] = var6;
+                var0.style = var4;
+                var4 = _closure1_slot19;
+                var0.layout = var4;
+                var4 = var5.mode;
+                var14 = null;
+                var6 = var14 != var4;
+                if (!var6) {
+                    _fun112434_ip = 773;
+                    continue _fun112434
+                }
+            case 507:
+                var8 = _closure1_slot16;
+                var25 = _closure1_slot1;
+                var27 = _closure1_slot3;
+                var4 = var27[var9];
+                var7 = var25.bind(var3)(var4);
+                var4 = {};
+                var23 = var12.pipContentWrapper;
+                var20 = new Array(3);
+                var20[0] = var23;
+                var23 = var12.inAppElevationShadow;
+                var20[1] = var23;
+                var20[2] = var22;
+                var4.style = var20;
+                var4.pointerEvents = var19;
+                var19 = _closure1_slot19;
+                var4.layout = var19;
+                var29 = var4;
+                var28 = var15;
+                var15 = copyDataProperties(var29, var28);
+                var20 = _closure1_slot15;
+                var19 = _closure1_slot0;
+                var15 = 17;
+                var15 = var27[var15];
+                var15 = var19.bind(var3)(var15);
+                var19 = var15.GestureDetector;
+                var15 = {};
+                var15.gesture = var21;
+                var23 = _closure1_slot15;
+                var21 = var27[var9];
+                var22 = var25.bind(var3)(var21);
+                var21 = {};
+                var26 = var12.pipMask;
+                var24 = new Array(2);
+                var24[0] = var26;
+                var24[1] = var13;
+                var21.style = var24;
+                var24 = _closure1_slot19;
+                var21.layout = var24;
+                var26 = _closure1_slot15;
+                var24 = 28;
+                var24 = var27[var24];
+                var25 = var25.bind(var3)(var24);
+                var24 = {};
+                var24 = var26.bind(var3)(var25, var24);
+                var21.children = var24;
+                var21 = var23.bind(var3)(var22, var21);
+                var15.children = var21;
+                var19 = var20.bind(var3)(var19, var15);
+                var15 = new Array(2);
+                var15[0] = var19;
+                var14 = null;
+                if (!var17) {
+                    _fun112434_ip = 754;
+                    continue _fun112434
+                }
+            case 722:
+                var20 = _closure1_slot15;
+                var19 = _closure1_slot1;
+                var21 = _closure1_slot3;
+                var17 = 29;
+                var17 = var21[var17];
+                var19 = var19.bind(var3)(var17);
+                var17 = {};
+                var14 = var20.bind(var3)(var19, var17);
+            case 754:
+                var15[1] = var14;
+                var14 = 'children';
+                var4[var14] = var15;
+                var6 = var8.bind(var3)(var7, var4);
+            case 773:
+                var4 = new Array(2);
+                var4[0] = var6;
+                var5 = var5.showSecondaryPIP;
+                if (!var5) {
+                    _fun112434_ip = 1001;
+                    continue _fun112434
+                }
+            case 793:
+                var8 = _closure1_slot15;
+                var19 = _closure1_slot1;
+                var21 = _closure1_slot3;
+                var15 = 30;
+                var6 = var21[var15];
+                var7 = var19.bind(var3)(var6);
+                var6 = {};
+                var6.style = var11;
+                var29 = var6;
+                var28 = var10;
+                var10 = copyDataProperties(var29, var28);
+                var11 = _closure1_slot15;
+                var9 = var21[var9];
+                var10 = var19.bind(var3)(var9);
+                var9 = {};
+                var14 = var12.pipMask;
+                var12 = new Array(2);
+                var12[0] = var14;
+                var12[1] = var13;
+                var9.style = var12;
+                var14 = _closure1_slot15;
+                var13 = _closure1_slot0;
+                var12 = 17;
+                var12 = var21[var12];
+                var12 = var13.bind(var3)(var12);
+                var13 = var12.GestureDetector;
+                var12 = {};
+                var12.gesture = var16;
+                var17 = _closure1_slot15;
+                var15 = var21[var15];
+                var16 = var19.bind(var3)(var15);
+                var15 = {};
+                var20 = _closure1_slot6;
+                var20 = var20.absoluteFill;
+                var15.style = var20;
+                var20 = _closure1_slot15;
+                var18 = 31;
+                var18 = var21[var18];
+                var19 = var19.bind(var3)(var18);
+                var18 = {};
+                var18 = var20.bind(var3)(var19, var18);
+                var15.children = var18;
+                var15 = var17.bind(var3)(var16, var15);
+                var12.children = var15;
+                var12 = var14.bind(var3)(var13, var12);
+                var9.children = var12;
+                var10 = var11.bind(var3)(var10, var9);
+                var9 = 'children';
+                var6[var9] = var10;
+                var5 = var8.bind(var3)(var7, var6);
+            case 1001:
+                var4[1] = var5;
+                var0.children = var4;
+                var0 = var2.bind(var3)(var1, var0);
+                return var0;
+        }
+    };
+    var _closure1_slot35 = var0;
     var0 = function arg0, arg1, arg2, arg3() {
         var4 = _closure1_slot15;
-        var3 = _closure1_slot38;
+        var3 = _closure1_slot34;
         var2 = {};
         var0 = arg1;
         var0 = var0.pipMode;
@@ -26,7 +1501,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = var4.bind(var1)(var3, var2, var0);
         return var0;
     };
-    var _closure1_slot39 = var0;
+    var _closure1_slot36 = var0;
     var0 = global;
     var9 = var0.Object;
     var8 = var9.defineProperty;
@@ -47,8 +1522,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 2;
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
-    var10 = var3.StyleSheet;
-    var _closure1_slot6 = var10;
+    var11 = var3.StyleSheet;
+    var _closure1_slot6 = var11;
     var3 = var3.Platform;
     var3 = 3;
     var3 = var5[var3];
@@ -65,11 +1540,11 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 6;
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
-    var8 = var3.DRAWER_SPRING_PHYSICS;
-    var _closure1_slot10 = var8;
-    var8 = var3.VoicePanelModes;
-    var _closure1_slot11 = var8;
-    var12 = var3.SECONDARY_PIP_TOP_MARGIN;
+    var7 = var3.DRAWER_SPRING_PHYSICS;
+    var _closure1_slot10 = var7;
+    var7 = var3.VoicePanelModes;
+    var _closure1_slot11 = var7;
+    var10 = var3.SECONDARY_PIP_TOP_MARGIN;
     var3 = 7;
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
@@ -88,8 +1563,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 10;
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
-    var8 = var3.jsx;
-    var _closure1_slot15 = var8;
+    var7 = var3.jsx;
+    var _closure1_slot15 = var7;
     var3 = var3.jsxs;
     var _closure1_slot16 = var3;
     var3 = {
@@ -99,8 +1574,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot17 = var3;
     var3 = {};
-    var9 = 'function layoutTransition_VoicePanelPIPTsx1(values){const{withSpring,LAYOUT_PHYSICS}=this.__closure;return{animations:{originX:withSpring(values.targetOriginX,LAYOUT_PHYSICS),originY:withSpring(values.targetOriginY,LAYOUT_PHYSICS),width:withSpring(values.targetWidth,LAYOUT_PHYSICS),height:withSpring(values.targetHeight,LAYOUT_PHYSICS)},initialValues:{originX:values.currentOriginX,originY:values.currentOriginY,width:values.currentWidth,height:values.currentHeight}};}';
-    var3.code = var9;
+    var7 = 'function layoutTransition_VoicePanelPIPTsx1(values){const{withSpring,LAYOUT_PHYSICS}=this.__closure;return{animations:{originX:withSpring(values.targetOriginX,LAYOUT_PHYSICS),originY:withSpring(values.targetOriginY,LAYOUT_PHYSICS),width:withSpring(values.targetWidth,LAYOUT_PHYSICS),height:withSpring(values.targetHeight,LAYOUT_PHYSICS)},initialValues:{originX:values.currentOriginX,originY:values.currentOriginY,width:values.currentWidth,height:values.currentHeight}};}';
+    var3.code = var7;
     var _closure1_slot18 = var3;
     var3 = function() { // Environment: var1
         var0 = function arg0() {
@@ -172,1609 +1647,130 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var3 = var3.bind(var0)();
     var _closure1_slot19 = var3;
-    var9 = var10.create;
+    var3 = 12;
+    var3 = var5[var3];
+    var8 = var4.bind(var0)(var3);
+    var7 = var8.createStyles;
     var3 = {};
-    var11 = {};
-    var13 = 'black';
-    var11.backgroundColor = var13;
-    var3.pipContentWrapper = var11;
-    var11 = {};
-    var3.noElevationShadow = var11;
-    var11 = {};
-    var3.inAppElevationShadow = var11;
-    var11 = {};
-    var3.inPanelElevationShadow = var11;
-    var11 = {};
-    var16 = var10.absoluteFillObject;
-    var17 = var11;
-    var13 = copyDataProperties(var17, var16);
-    var14 = 'hidden';
-    var13 = 'overflow';
-    var11[var13] = var14;
-    var3.pipMask = var11;
-    var11 = {
+    var9 = {};
+    var12 = 'black';
+    var9.backgroundColor = var12;
+    var3.pipContentWrapper = var9;
+    var9 = {};
+    var3.inAppElevationShadow = var9;
+    var9 = {};
+    var14 = var11.absoluteFillObject;
+    var15 = var9;
+    var11 = copyDataProperties(var15, var14);
+    var12 = 'hidden';
+    var11 = 'overflow';
+    var9[var11] = var12;
+    var3.pipMask = var9;
+    var9 = {
         'position': 'absolute',
         'zIndex': 10,
         'flexDirection': 'column',
         'alignItems': 'center'
     };
-    var11.gap = var12;
-    var3.multiPIPContainer = var11;
-    var3 = var9.bind(var10)(var3);
+    var9.gap = var10;
+    var3.multiPIPContainer = var9;
+    var3 = var7.bind(var8)(var3);
     var _closure1_slot20 = var3;
     var3 = {};
-    var9 = 'function VoicePanelPIPTsx2(){const{pipState,getClampedPIPPosition,wrapperDimensions,windowDimensions,safeArea,pipAvoidanceSpecs,initialGestureOffset,opacity,withSpring,DRAWER_SPRING_PHYSICS,LAYOUT_PHYSICS,getVoicePanelPIPBorderRadius}=this.__closure;const width=pipState.width;const height=!pipState.showSecondaryPIP?pipState.height:pipState.containerHeight;const{x:x,y:y}=getClampedPIPPosition({pipX:wrapperDimensions.get().pipX,pipY:wrapperDimensions.get().pipY,width:width,height:height,windowDimensions:windowDimensions.get(),safeArea:safeArea.get(),bottomAvoidanceRegion:pipAvoidanceSpecs.get().bottom,topAvoidanceRegion:pipAvoidanceSpecs.get().top,positionOffset:initialGestureOffset.get().active?initialGestureOffset.get():undefined});return{width:width,height:height,opacity:opacity.get(),transform:[{translateX:withSpring(x,initialGestureOffset.get().active?DRAWER_SPRING_PHYSICS:LAYOUT_PHYSICS)},{translateY:withSpring(y,initialGestureOffset.get().active?DRAWER_SPRING_PHYSICS:LAYOUT_PHYSICS)}],borderRadius:getVoicePanelPIPBorderRadius(width,height)};}';
-    var3.code = var9;
+    var7 = 'function VoicePanelPIPTsx2(){const{pipState,getClampedPIPPosition,wrapperDimensions,windowDimensions,safeArea,pipAvoidanceSpecs,initialGestureOffset,opacity,withSpring,DRAWER_SPRING_PHYSICS,LAYOUT_PHYSICS,getVoicePanelPIPBorderRadius}=this.__closure;const width=pipState.width;const height=!pipState.showSecondaryPIP?pipState.height:pipState.containerHeight;const{x:x,y:y}=getClampedPIPPosition({pipX:wrapperDimensions.get().pipX,pipY:wrapperDimensions.get().pipY,width:width,height:height,windowDimensions:windowDimensions.get(),safeArea:safeArea.get(),bottomAvoidanceRegion:pipAvoidanceSpecs.get().bottom,topAvoidanceRegion:pipAvoidanceSpecs.get().top,positionOffset:initialGestureOffset.get().active?initialGestureOffset.get():undefined});return{width:width,height:height,opacity:opacity.get(),transform:[{translateX:withSpring(x,initialGestureOffset.get().active?DRAWER_SPRING_PHYSICS:LAYOUT_PHYSICS)},{translateY:withSpring(y,initialGestureOffset.get().active?DRAWER_SPRING_PHYSICS:LAYOUT_PHYSICS)}],borderRadius:getVoicePanelPIPBorderRadius(width,height)};}';
+    var3.code = var7;
     var _closure1_slot21 = var3;
     var3 = {};
-    var9 = 'function VoicePanelPIPTsx3(){const{pipState,getVoicePanelPIPBorderRadius}=this.__closure;const{width:width,height:height}=pipState;return{width:width,height:height,borderRadius:getVoicePanelPIPBorderRadius(width,height)};}';
-    var3.code = var9;
+    var7 = 'function VoicePanelPIPTsx3(){const{pipState,getVoicePanelPIPBorderRadius}=this.__closure;const{width:width,height:height}=pipState;return{width:width,height:height,borderRadius:getVoicePanelPIPBorderRadius(width,height)};}';
+    var3.code = var7;
     var _closure1_slot22 = var3;
     var3 = {};
-    var9 = 'function VoicePanelPIPTsx4(){const{updateSharedValueIfChanged,initialGestureOffset}=this.__closure;updateSharedValueIfChanged(initialGestureOffset,{active:false,pressed:false});}';
-    var3.code = var9;
+    var7 = 'function VoicePanelPIPTsx4(){const{updateSharedValueIfChanged,initialGestureOffset}=this.__closure;updateSharedValueIfChanged(initialGestureOffset,{active:false,pressed:false});}';
+    var3.code = var7;
     var _closure1_slot23 = var3;
     var3 = {};
-    var9 = 'function VoicePanelPIPTsx5(){const{updateSharedValueIfChanged,initialGestureOffset}=this.__closure;updateSharedValueIfChanged(initialGestureOffset,{active:false,pressed:false});}';
-    var3.code = var9;
+    var7 = 'function VoicePanelPIPTsx5(){const{updateSharedValueIfChanged,initialGestureOffset}=this.__closure;updateSharedValueIfChanged(initialGestureOffset,{active:false,pressed:false});}';
+    var3.code = var7;
     var _closure1_slot24 = var3;
     var3 = {};
-    var9 = 'function VoicePanelPIPTsx6({velocityX:velocityX,velocityY:velocityY,absoluteX:absoluteX,absoluteY:absoluteY}){const{calculatePIPPositionFromVelocity,windowDimensions,safeArea,updateSharedValueIfChanged,wrapperDimensions,wrapperOffset,runOnJS,updateSourceTrackingView}=this.__closure;const{pipX:pipX,pipY:pipY}=calculatePIPPositionFromVelocity({velocityX:velocityX,velocityY:velocityY,absoluteX:absoluteX,absoluteY:absoluteY,windowDimensions:windowDimensions.get(),safeArea:safeArea.get()});updateSharedValueIfChanged(wrapperDimensions,{pipX:pipX,pipY:pipY});updateSharedValueIfChanged(wrapperOffset,{gestureActive:false});runOnJS(updateSourceTrackingView)();}';
-    var3.code = var9;
+    var7 = 'function VoicePanelPIPTsx6({velocityX:velocityX,velocityY:velocityY,absoluteX:absoluteX,absoluteY:absoluteY}){const{calculatePIPPositionFromVelocity,windowDimensions,safeArea,updateSharedValueIfChanged,wrapperDimensions,wrapperOffset,runOnJS,updateSourceTrackingView}=this.__closure;const{pipX:pipX,pipY:pipY}=calculatePIPPositionFromVelocity({velocityX:velocityX,velocityY:velocityY,absoluteX:absoluteX,absoluteY:absoluteY,windowDimensions:windowDimensions.get(),safeArea:safeArea.get()});updateSharedValueIfChanged(wrapperDimensions,{pipX:pipX,pipY:pipY});updateSharedValueIfChanged(wrapperOffset,{gestureActive:false});runOnJS(updateSourceTrackingView)();}';
+    var3.code = var7;
     var _closure1_slot25 = var3;
     var3 = {};
-    var9 = 'function VoicePanelPIPTsx7({absoluteX:absoluteX,absoluteY:absoluteY}){const{updateSharedValueIfChanged,initialGestureOffset}=this.__closure;updateSharedValueIfChanged(initialGestureOffset,{x:absoluteX-initialGestureOffset.get().absoluteX,y:absoluteY-initialGestureOffset.get().absoluteY});}';
-    var3.code = var9;
+    var7 = 'function VoicePanelPIPTsx7({absoluteX:absoluteX,absoluteY:absoluteY}){const{updateSharedValueIfChanged,initialGestureOffset}=this.__closure;updateSharedValueIfChanged(initialGestureOffset,{x:absoluteX-initialGestureOffset.get().absoluteX,y:absoluteY-initialGestureOffset.get().absoluteY});}';
+    var3.code = var7;
     var _closure1_slot26 = var3;
     var3 = {};
-    var9 = 'function VoicePanelPIPTsx8(event,manager){const{State,initialGestureOffset,MIN_GESTURE_START,updateSharedValueIfChanged,wrapperOffset,runOnJS,triggerIOSHaptic}=this.__closure;if(event.state!==State.BEGAN||initialGestureOffset.get().active)return;const{absoluteY:absoluteY,absoluteX:absoluteX}=event.changedTouches[0];if(Math.abs(initialGestureOffset.get().absoluteX-absoluteX)>MIN_GESTURE_START||Math.abs(initialGestureOffset.get().absoluteY-absoluteY)>MIN_GESTURE_START){initialGestureOffset.set({x:0,y:0,absoluteX:absoluteX,absoluteY:absoluteY,pressed:true,active:true});updateSharedValueIfChanged(wrapperOffset,{gestureActive:true,x:0,y:0});manager.activate();runOnJS(triggerIOSHaptic)();}}';
-    var3.code = var9;
+    var7 = 'function VoicePanelPIPTsx8(event,manager){const{State,initialGestureOffset,MIN_GESTURE_START,updateSharedValueIfChanged,wrapperOffset,runOnJS,triggerIOSHaptic}=this.__closure;if(event.state!==State.BEGAN||initialGestureOffset.get().active)return;const{absoluteY:absoluteY,absoluteX:absoluteX}=event.changedTouches[0];if(Math.abs(initialGestureOffset.get().absoluteX-absoluteX)>MIN_GESTURE_START||Math.abs(initialGestureOffset.get().absoluteY-absoluteY)>MIN_GESTURE_START){initialGestureOffset.set({x:0,y:0,absoluteX:absoluteX,absoluteY:absoluteY,pressed:true,active:true});updateSharedValueIfChanged(wrapperOffset,{gestureActive:true,x:0,y:0});manager.activate();runOnJS(triggerIOSHaptic)();}}';
+    var3.code = var7;
     var _closure1_slot27 = var3;
     var3 = {};
-    var9 = 'function VoicePanelPIPTsx9(){const{updateSharedValueIfChanged,initialGestureOffset}=this.__closure;updateSharedValueIfChanged(initialGestureOffset,{active:false,pressed:false});}';
-    var3.code = var9;
+    var7 = 'function VoicePanelPIPTsx9(){const{updateSharedValueIfChanged,initialGestureOffset}=this.__closure;updateSharedValueIfChanged(initialGestureOffset,{active:false,pressed:false});}';
+    var3.code = var7;
     var _closure1_slot28 = var3;
     var3 = {};
-    var9 = 'function VoicePanelPIPTsx10({absoluteX:absoluteX,absoluteY:absoluteY}){const{initialGestureOffset}=this.__closure;initialGestureOffset.set({x:0,y:0,absoluteX:absoluteX,absoluteY:absoluteY,active:false,pressed:true});}';
-    var3.code = var9;
+    var7 = 'function VoicePanelPIPTsx10({absoluteX:absoluteX,absoluteY:absoluteY}){const{initialGestureOffset}=this.__closure;initialGestureOffset.set({x:0,y:0,absoluteX:absoluteX,absoluteY:absoluteY,active:false,pressed:true});}';
+    var3.code = var7;
     var _closure1_slot29 = var3;
     var3 = {};
-    var9 = 'function VoicePanelPIPTsx11(){const{runOnJS,setFocused}=this.__closure;runOnJS(setFocused)(null);}';
-    var3.code = var9;
+    var7 = 'function VoicePanelPIPTsx11(){const{runOnJS,setFocused}=this.__closure;runOnJS(setFocused)(null);}';
+    var3.code = var7;
     var _closure1_slot30 = var3;
     var3 = {};
-    var9 = 'function VoicePanelPIPTsx12(){const{pipMode,VoicePanelPIPModes,runOnJS,setMode,VoicePanelModes,controlsSpecs,VoicePanelControlsModes,showControls,hideControls}=this.__closure;if(pipMode===VoicePanelPIPModes.IN_APP){runOnJS(setMode)(VoicePanelModes.PANEL);}else{if(controlsSpecs.get().mode===VoicePanelControlsModes.HIDDEN){runOnJS(showControls)();}else{runOnJS(hideControls)();}}}';
-    var3.code = var9;
+    var7 = 'function VoicePanelPIPTsx12(){const{pipMode,VoicePanelPIPModes,runOnJS,setMode,VoicePanelModes,controlsSpecs,VoicePanelControlsModes,showControls,hideControls}=this.__closure;if(pipMode===VoicePanelPIPModes.IN_APP){runOnJS(setMode)(VoicePanelModes.PANEL);}else{if(controlsSpecs.get().mode===VoicePanelControlsModes.HIDDEN){runOnJS(showControls)();}else{runOnJS(hideControls)();}}}';
+    var3.code = var7;
     var _closure1_slot31 = var3;
     var3 = {};
-    var9 = 'function VoicePanelPIPTsx13(){const{runOnJS,handleSecondaryPIPTap}=this.__closure;runOnJS(handleSecondaryPIPTap)();}';
-    var3.code = var9;
+    var7 = 'function VoicePanelPIPTsx13(){const{runOnJS,handleSecondaryPIPTap}=this.__closure;runOnJS(handleSecondaryPIPTap)();}';
+    var3.code = var7;
     var _closure1_slot32 = var3;
     var3 = {};
-    var9 = 'function VoicePanelPIPTsx14(){const{getVoicePanelPIPBorderRadius,pipState}=this.__closure;return{borderRadius:getVoicePanelPIPBorderRadius(pipState.width,pipState.height)};}';
-    var3.code = var9;
+    var7 = 'function VoicePanelPIPTsx14(){const{getVoicePanelPIPBorderRadius,pipState}=this.__closure;return{borderRadius:getVoicePanelPIPBorderRadius(pipState.width,pipState.height)};}';
+    var3.code = var7;
     var _closure1_slot33 = var3;
-    var3 = 24;
-    var3 = var5[var3];
-    var9 = var7.bind(var0)(var3);
-    var3 = {};
-    var3 = var8.bind(var0)(var9, var3);
-    var _closure1_slot34 = var3;
-    var3 = 25;
-    var3 = var5[var3];
-    var9 = var7.bind(var0)(var3);
-    var3 = {};
-    var3 = var8.bind(var0)(var9, var3);
-    var _closure1_slot35 = var3;
-    var3 = 26;
-    var3 = var5[var3];
-    var7 = var7.bind(var0)(var3);
-    var3 = {};
-    var3 = var8.bind(var0)(var7, var3);
-    var _closure1_slot36 = var3;
-    var7 = function() {
-        _fun111366: for (var _fun111366_ip = 0;;) switch (_fun111366_ip) {
-            case 0:
-                var4 = _closure1_slot5;
-                var2 = var4.useContext;
-                var8 = _closure1_slot1;
-                var14 = _closure1_slot3;
-                var1 = 12;
-                var1 = var14[var1];
-                var3 = undefined;
-                var1 = var8.bind(var3)(var1);
-                var1 = var2.bind(var4)(var1);
-                var7 = var1.controlsSpecs;
-                var2 = var1.setMode;
-                var _closure2_slot0 = var2;
-                var4 = var1.pipContainerRef;
-                var13 = _closure1_slot0;
-                var1 = 13;
-                var1 = var14[var1];
-                var5 = var13.bind(var3)(var1);
-                var1 = var5.usePIPState;
-                var5 = var1.bind(var5)();
-                var _closure2_slot1 = var5;
-                var6 = var5.mode;
-                var1 = function arg0() {
-                    var3 = arg0;
-                    var _closure3_slot0 = var3;
-                    var5 = _closure1_slot5;
-                    var4 = var5.useContext;
-                    var6 = _closure1_slot1;
-                    var12 = _closure1_slot3;
-                    var0 = 12;
-                    var0 = var12[var0];
-                    var10 = undefined;
-                    var0 = var6.bind(var10)(var0);
-                    var4 = var4.bind(var5)(var0);
-                    var17 = var4.controlsSpecs;
-                    var _closure3_slot1 = var17;
-                    var16 = var4.hideControls;
-                    var _closure3_slot2 = var16;
-                    var24 = var4.pipAvoidanceSpecs;
-                    var _closure3_slot3 = var24;
-                    var20 = var4.safeArea;
-                    var _closure3_slot4 = var20;
-                    var0 = var4.setFocused;
-                    var _closure3_slot5 = var0;
-                    var11 = var4.setMode;
-                    var _closure3_slot6 = var11;
-                    var15 = var4.showControls;
-                    var _closure3_slot7 = var15;
-                    var19 = var4.windowDimensions;
-                    var _closure3_slot8 = var19;
-                    var18 = var4.wrapperDimensions;
-                    var _closure3_slot9 = var18;
-                    var5 = var4.wrapperOffset;
-                    var _closure3_slot10 = var5;
-                    var4 = var4.channelId;
-                    var _closure3_slot11 = var4;
-                    var9 = _closure1_slot0;
-                    var4 = 13;
-                    var4 = var12[var4];
-                    var6 = var9.bind(var10)(var4);
-                    var4 = var6.usePIPState;
-                    var4 = var4.bind(var6)();
-                    var _closure3_slot12 = var4;
-                    var6 = 14;
-                    var7 = var12[var6];
-                    var14 = var9.bind(var10)(var7);
-                    var8 = var14.useSharedValue;
-                    var13 = 0;
-                    var7 = {
-                        'x': 0,
-                        'y': 0,
-                        'absoluteX': 0,
-                        'absoluteY': 0,
-                        'active': false,
-                        'pressed': false
-                    };
-                    var21 = var8.bind(var14)(var7);
-                    var _closure3_slot13 = var21;
-                    var7 = var12[var6];
-                    var8 = var9.bind(var10)(var7);
-                    var7 = var8.useSharedValue;
-                    var23 = var7.bind(var8)(var13);
-                    var _closure3_slot14 = var23;
-                    var14 = _closure1_slot5;
-                    var13 = var14.useEffect;
-                    var8 = new Array(1);
-                    var8[0] = var23;
-                    var7 = function() { // Environment: var1
-                        var1 = global;
-                        var4 = var1.setTimeout;
-                        var3 = undefined;
-                        var2 = function() { // Environment: var0
-                            var2 = _closure3_slot14;
-                            var1 = var2.set;
-                            var0 = 1;
-                            var0 = var1.bind(var2)(var0);
-                            var0 = undefined;
-                            return var0;
-                        };
-                        var1 = 200;
-                        var1 = var4.bind(var3)(var2, var1);
-                        var _closure4_slot0 = var1;
-                        var0 = function() { // Environment: var0
-                            var0 = global;
-                            var2 = var0.clearTimeout;
-                            var1 = _closure4_slot0;
-                            var0 = undefined;
-                            var1 = var2.bind(var0)(var1);
-                            return var0;
-                        };
-                        return var0;
-                    };
-                    var7 = var13.bind(var14)(var7, var8);
-                    var7 = var12[var6];
-                    var13 = var9.bind(var10)(var7);
-                    var8 = var13.useAnimatedStyle;
-                    var7 = function() {
-                        _fun111371: for (var _fun111371_ip = 0;;) switch (_fun111371_ip) {
-                            case 0:
-                                var0 = _closure3_slot12;
-                                var4 = var0.width;
-                                var1 = var0.showSecondaryPIP;
-                                var0 = _closure3_slot12;
-                                if (var1) {
-                                    _fun111371_ip = 32;
-                                    continue _fun111371
-                                }
-                            case 25:
-                                var3 = var0.height;
-                                _fun111371_ip = 38;
-                                continue _fun111371;
-                            case 32:
-                                var3 = var0.containerHeight;
-                            case 38:
-                                var2 = _closure1_slot0;
-                                var0 = _closure1_slot3;
-                                var6 = 15;
-                                var0 = var0[var6];
-                                var5 = undefined;
-                                var7 = var2.bind(var5)(var0);
-                                var2 = var7.getClampedPIPPosition;
-                                var0 = {};
-                                var10 = _closure3_slot9;
-                                var9 = var10.get;
-                                var9 = var9.bind(var10)();
-                                var9 = var9.pipX;
-                                var0.pipX = var9;
-                                var9 = var10.get;
-                                var9 = var9.bind(var10)();
-                                var9 = var9.pipY;
-                                var0.pipY = var9;
-                                var0.width = var4;
-                                var0.height = var3;
-                                var10 = _closure3_slot8;
-                                var9 = var10.get;
-                                var9 = var9.bind(var10)();
-                                var0.windowDimensions = var9;
-                                var10 = _closure3_slot4;
-                                var9 = var10.get;
-                                var9 = var9.bind(var10)();
-                                var0.safeArea = var9;
-                                var10 = _closure3_slot3;
-                                var9 = var10.get;
-                                var9 = var9.bind(var10)();
-                                var9 = var9.bottom;
-                                var0.bottomAvoidanceRegion = var9;
-                                var9 = var10.get;
-                                var9 = var9.bind(var10)();
-                                var9 = var9.top;
-                                var0.topAvoidanceRegion = var9;
-                                var10 = _closure3_slot13;
-                                var9 = var10.get;
-                                var9 = var9.bind(var10)();
-                                var10 = var9.active;
-                                var9 = undefined;
-                                if (!var10) {
-                                    _fun111371_ip = 238;
-                                    continue _fun111371
-                                }
-                            case 225:
-                                var11 = _closure3_slot13;
-                                var10 = var11.get;
-                                var9 = var10.bind(var11)();
-                            case 238:
-                                var0.positionOffset = var9;
-                                var0 = var2.bind(var7)(var0);
-                                var13 = var0.x;
-                                var11 = var0.y;
-                                var0 = {};
-                                var0.width = var4;
-                                var0.height = var3;
-                                var7 = _closure3_slot14;
-                                var2 = var7.get;
-                                var2 = var2.bind(var7)();
-                                var0.opacity = var2;
-                                var7 = {};
-                                var9 = _closure1_slot0;
-                                var2 = _closure1_slot3;
-                                var12 = 11;
-                                var2 = var2[var12];
-                                var10 = var9.bind(var5)(var2);
-                                var9 = var10.withSpring;
-                                var14 = _closure3_slot13;
-                                var2 = var14.get;
-                                var2 = var2.bind(var14)();
-                                var2 = var2.active;
-                                if (var2) {
-                                    _fun111371_ip = 340;
-                                    continue _fun111371
-                                }
-                            case 334:
-                                var2 = _closure1_slot17;
-                                _fun111371_ip = 344;
-                                continue _fun111371;
-                            case 340:
-                                var2 = _closure1_slot10;
-                            case 344:
-                                var2 = var9.bind(var10)(var13, var2);
-                                var7.translateX = var2;
-                                var2 = new Array(2);
-                                var2[0] = var7;
-                                var7 = {};
-                                var10 = _closure1_slot0;
-                                var9 = _closure1_slot3;
-                                var9 = var9[var12];
-                                var10 = var10.bind(var5)(var9);
-                                var9 = var10.withSpring;
-                                var12 = _closure3_slot13;
-                                var8 = var12.get;
-                                var8 = var8.bind(var12)();
-                                var8 = var8.active;
-                                if (var8) {
-                                    _fun111371_ip = 415;
-                                    continue _fun111371
-                                }
-                            case 409:
-                                var8 = _closure1_slot17;
-                                _fun111371_ip = 419;
-                                continue _fun111371;
-                            case 415:
-                                var8 = _closure1_slot10;
-                            case 419:
-                                var8 = var9.bind(var10)(var11, var8);
-                                var7.translateY = var8;
-                                var2[1] = var7;
-                                var0.transform = var2;
-                                var2 = _closure1_slot0;
-                                var1 = _closure1_slot3;
-                                var1 = var1[var6];
-                                var2 = var2.bind(var5)(var1);
-                                var1 = var2.getVoicePanelPIPBorderRadius;
-                                var1 = var1.bind(var2)(var4, var3);
-                                var0.borderRadius = var1;
-                                return var0;
-                        }
-                    };
-                    var14 = {};
-                    var14.pipState = var4;
-                    var22 = 15;
-                    var25 = var12[var22];
-                    var25 = var9.bind(var10)(var25);
-                    var25 = var25.getClampedPIPPosition;
-                    var14.getClampedPIPPosition = var25;
-                    var14.wrapperDimensions = var18;
-                    var14.windowDimensions = var19;
-                    var14.safeArea = var20;
-                    var14.pipAvoidanceSpecs = var24;
-                    var14.initialGestureOffset = var21;
-                    var14.opacity = var23;
-                    var23 = 11;
-                    var23 = var12[var23];
-                    var23 = var9.bind(var10)(var23);
-                    var23 = var23.withSpring;
-                    var14.withSpring = var23;
-                    var23 = _closure1_slot10;
-                    var14.DRAWER_SPRING_PHYSICS = var23;
-                    var23 = _closure1_slot17;
-                    var14.LAYOUT_PHYSICS = var23;
-                    var23 = var12[var22];
-                    var23 = var9.bind(var10)(var23);
-                    var23 = var23.getVoicePanelPIPBorderRadius;
-                    var14.getVoicePanelPIPBorderRadius = var23;
-                    var7.__closure = var14;
-                    var14 = 6729444248940.0;
-                    var7.__workletHash = var14;
-                    var14 = _closure1_slot21;
-                    var7.__initData = var14;
-                    var8 = var8.bind(var13)(var7);
-                    var6 = var12[var6];
-                    var13 = var9.bind(var10)(var6);
-                    var7 = var13.useAnimatedStyle;
-                    var6 = function() {
-                        var0 = _closure3_slot12;
-                        var4 = var0.width;
-                        var3 = var0.height;
-                        var0 = {};
-                        var0.width = var4;
-                        var0.height = var3;
-                        var5 = _closure1_slot0;
-                        var2 = _closure1_slot3;
-                        var1 = 15;
-                        var2 = var2[var1];
-                        var1 = undefined;
-                        var2 = var5.bind(var1)(var2);
-                        var1 = var2.getVoicePanelPIPBorderRadius;
-                        var1 = var1.bind(var2)(var4, var3);
-                        var0.borderRadius = var1;
-                        return var0;
-                    };
-                    var14 = {};
-                    var14.pipState = var4;
-                    var22 = var12[var22];
-                    var22 = var9.bind(var10)(var22);
-                    var22 = var22.getVoicePanelPIPBorderRadius;
-                    var14.getVoicePanelPIPBorderRadius = var22;
-                    var6.__closure = var14;
-                    var14 = 1914976453427.0;
-                    var6.__workletHash = var14;
-                    var14 = _closure1_slot22;
-                    var6.__initData = var14;
-                    var7 = var7.bind(var13)(var6);
-                    var14 = _closure1_slot5;
-                    var13 = var14.useMemo;
-                    var22 = var4.width;
-                    var6 = new Array(2);
-                    var6[0] = var22;
-                    var4 = var4.height;
-                    var6[1] = var4;
-                    var4 = function() { // Environment: var1
-                        var0 = _closure1_slot20;
-                        var2 = var0.pipContentWrapper;
-                        var0 = new Array(3);
-                        var0[0] = var2;
-                        var2 = {};
-                        var3 = _closure3_slot12;
-                        var4 = var3.width;
-                        var2.width = var4;
-                        var4 = var3.height;
-                        var2.height = var4;
-                        var6 = _closure1_slot0;
-                        var5 = _closure1_slot3;
-                        var4 = 15;
-                        var5 = var5[var4];
-                        var4 = undefined;
-                        var6 = var6.bind(var4)(var5);
-                        var5 = var6.getVoicePanelPIPBorderRadius;
-                        var4 = var3.width;
-                        var3 = var3.height;
-                        var3 = var5.bind(var6)(var4, var3);
-                        var2.borderRadius = var3;
-                        var0[1] = var2;
-                        var1 = _closure1_slot20;
-                        var1 = var1.inAppElevationShadow;
-                        var0[2] = var1;
-                        return var0;
-                    };
-                    var4 = var13.bind(var14)(var4, var6);
-                    var14 = _closure1_slot5;
-                    var13 = var14.useCallback;
-                    var6 = new Array(5);
-                    var6[0] = var21;
-                    var6[1] = var20;
-                    var6[2] = var19;
-                    var6[3] = var18;
-                    var6[4] = var5;
-                    var5 = function() { // Environment: var1
-                        var12 = _closure1_slot0;
-                        var9 = _closure1_slot3;
-                        var11 = 16;
-                        var1 = var9[var11];
-                        var8 = undefined;
-                        var1 = var12.bind(var8)(var1);
-                        var2 = var1.Gesture;
-                        var1 = var2.Pan;
-                        var2 = var1.bind(var2)();
-                        var1 = var2.enabled;
-                        var4 = true;
-                        var2 = var1.bind(var2)(var4);
-                        var1 = var2.manualActivation;
-                        var4 = var1.bind(var2)(var4);
-                        var2 = var4.maxPointers;
-                        var1 = 1;
-                        var4 = var2.bind(var4)(var1);
-                        var2 = var4.shouldCancelWhenOutside;
-                        var1 = false;
-                        var4 = var2.bind(var4)(var1);
-                        var2 = var4.onBegin;
-                        var1 = function arg0() {
-                            var0 = arg0;
-                            var4 = var0.absoluteX;
-                            var3 = var0.absoluteY;
-                            var2 = _closure3_slot13;
-                            var1 = var2.set;
-                            var0 = {
-                                'x': 0,
-                                'y': 0,
-                                'absoluteX': null,
-                                'absoluteY': null,
-                                'active': false,
-                                'pressed': true
-                            };
-                            var0.absoluteX = var4;
-                            var0.absoluteY = var3;
-                            var0 = var1.bind(var2)(var0);
-                            var0 = undefined;
-                            return var0;
-                        };
-                        var6 = {};
-                        var5 = _closure3_slot13;
-                        var6.initialGestureOffset = var5;
-                        var1.__closure = var6;
-                        var6 = 4684366251999.0;
-                        var1.__workletHash = var6;
-                        var6 = _closure1_slot29;
-                        var1.__initData = var6;
-                        var4 = var2.bind(var4)(var1);
-                        var2 = var4.onTouchesUp;
-                        var1 = function() {
-                            var2 = _closure1_slot1;
-                            var1 = _closure1_slot3;
-                            var0 = 17;
-                            var1 = var1[var0];
-                            var0 = undefined;
-                            var3 = var2.bind(var0)(var1);
-                            var2 = _closure3_slot13;
-                            var1 = {
-                                'active': false,
-                                'pressed': false
-                            };
-                            var1 = var3.bind(var0)(var2, var1);
-                            return var0;
-                        };
-                        var10 = {};
-                        var7 = _closure1_slot1;
-                        var6 = 17;
-                        var13 = var9[var6];
-                        var13 = var7.bind(var8)(var13);
-                        var10.updateSharedValueIfChanged = var13;
-                        var10.initialGestureOffset = var5;
-                        var1.__closure = var10;
-                        var10 = 11771025649835.0;
-                        var1.__workletHash = var10;
-                        var10 = _closure1_slot28;
-                        var1.__initData = var10;
-                        var4 = var2.bind(var4)(var1);
-                        var2 = var4.onTouchesMove;
-                        var1 = function arg0, arg1() {
-                            _fun111377: for (var _fun111377_ip = 0;;) switch (_fun111377_ip) {
-                                case 0:
-                                    var4 = arg0;
-                                    var3 = arg1;
-                                    var5 = var4.state;
-                                    var6 = _closure1_slot0;
-                                    var2 = _closure1_slot3;
-                                    var0 = 16;
-                                    var2 = var2[var0];
-                                    var0 = undefined;
-                                    var2 = var6.bind(var0)(var2);
-                                    var2 = var2.State;
-                                    var2 = var2.BEGAN;
-                                    if (!(var5 === var2)) {
-                                        _fun111377_ip = 345;
-                                        continue _fun111377
-                                    }
-                                case 55:
-                                    var6 = _closure3_slot13;
-                                    var5 = var6.get;
-                                    var5 = var5.bind(var6)();
-                                    var5 = var5.active;
-                                    if (var5) {
-                                        _fun111377_ip = 345;
-                                        continue _fun111377
-                                    }
-                                case 83:
-                                    var5 = var4.changedTouches;
-                                    var4 = 0;
-                                    var4 = var5[var4];
-                                    var7 = var4.absoluteY;
-                                    var8 = var4.absoluteX;
-                                    var5 = global;
-                                    var9 = var5.Math;
-                                    var6 = var9.abs;
-                                    var10 = _closure3_slot13;
-                                    var4 = var10.get;
-                                    var4 = var4.bind(var10)();
-                                    var4 = var4.absoluteX;
-                                    var4 = var4 - var8;
-                                    var4 = var6.bind(var9)(var4);
-                                    var6 = 10;
-                                    var4 = var4 > var6;
-                                    if (var4) {
-                                        _fun111377_ip = 203;
-                                        continue _fun111377
-                                    }
-                                case 159:
-                                    var10 = var5.Math;
-                                    var9 = var10.abs;
-                                    var11 = _closure3_slot13;
-                                    var5 = var11.get;
-                                    var5 = var5.bind(var11)();
-                                    var5 = var5.absoluteY;
-                                    var5 = var5 - var7;
-                                    var5 = var9.bind(var10)(var5);
-                                    var4 = var5 > var6;
-                                case 203:
-                                    if (!var4) {
-                                        _fun111377_ip = 345;
-                                        continue _fun111377
-                                    }
-                                case 209:
-                                    var6 = _closure3_slot13;
-                                    var5 = var6.set;
-                                    var4 = {
-                                        'x': 0,
-                                        'y': 0,
-                                        'absoluteX': null,
-                                        'absoluteY': null,
-                                        'pressed': true,
-                                        'active': true
-                                    };
-                                    var4.absoluteX = var8;
-                                    var4.absoluteY = var7;
-                                    var4 = var5.bind(var6)(var4);
-                                    var4 = _closure1_slot1;
-                                    var5 = _closure1_slot3;
-                                    var6 = 17;
-                                    var6 = var5[var6];
-                                    var7 = var4.bind(var0)(var6);
-                                    var6 = _closure3_slot10;
-                                    var2 = {
-                                        'gestureActive': true,
-                                        'x': 0,
-                                        'y': 0
-                                    };
-                                    var2 = var7.bind(var0)(var6, var2);
-                                    var2 = var3.activate;
-                                    var2 = var2.bind(var3)();
-                                    var2 = _closure1_slot0;
-                                    var1 = 14;
-                                    var1 = var5[var1];
-                                    var3 = var2.bind(var0)(var1);
-                                    var2 = var3.runOnJS;
-                                    var1 = 18;
-                                    var1 = var5[var1];
-                                    var1 = var4.bind(var0)(var1);
-                                    var1 = var2.bind(var3)(var1);
-                                    var1 = var1.bind(var0)();
-                                case 345:
-                                    return var0;
-                            }
-                        };
-                        var10 = {};
-                        var11 = var9[var11];
-                        var11 = var12.bind(var8)(var11);
-                        var11 = var11.State;
-                        var10.State = var11;
-                        var10.initialGestureOffset = var5;
-                        var11 = 10;
-                        var10.MIN_GESTURE_START = var11;
-                        var11 = var9[var6];
-                        var11 = var7.bind(var8)(var11);
-                        var10.updateSharedValueIfChanged = var11;
-                        var13 = _closure3_slot10;
-                        var10.wrapperOffset = var13;
-                        var11 = 14;
-                        var15 = var9[var11];
-                        var15 = var12.bind(var8)(var15);
-                        var15 = var15.runOnJS;
-                        var10.runOnJS = var15;
-                        var15 = 18;
-                        var15 = var9[var15];
-                        var15 = var7.bind(var8)(var15);
-                        var10.triggerIOSHaptic = var15;
-                        var1.__closure = var10;
-                        var10 = 16714994610987.0;
-                        var1.__workletHash = var10;
-                        var10 = _closure1_slot27;
-                        var1.__initData = var10;
-                        var4 = var2.bind(var4)(var1);
-                        var2 = var4.onChange;
-                        var1 = function arg0() {
-                            var0 = arg0;
-                            var6 = var0.absoluteX;
-                            var5 = var0.absoluteY;
-                            var2 = _closure1_slot1;
-                            var1 = _closure1_slot3;
-                            var0 = 17;
-                            var1 = var1[var0];
-                            var0 = undefined;
-                            var3 = var2.bind(var0)(var1);
-                            var2 = _closure3_slot13;
-                            var1 = {};
-                            var4 = var2.get;
-                            var4 = var4.bind(var2)();
-                            var4 = var4.absoluteX;
-                            var4 = var6 - var4;
-                            var1.x = var4;
-                            var4 = var2.get;
-                            var4 = var4.bind(var2)();
-                            var4 = var4.absoluteY;
-                            var4 = var5 - var4;
-                            var1.y = var4;
-                            var1 = var3.bind(var0)(var2, var1);
-                            return var0;
-                        };
-                        var10 = {};
-                        var15 = var9[var6];
-                        var15 = var7.bind(var8)(var15);
-                        var10.updateSharedValueIfChanged = var15;
-                        var10.initialGestureOffset = var5;
-                        var1.__closure = var10;
-                        var10 = 7822444262980.0;
-                        var1.__workletHash = var10;
-                        var10 = _closure1_slot26;
-                        var1.__initData = var10;
-                        var4 = var2.bind(var4)(var1);
-                        var2 = var4.onEnd;
-                        var1 = function arg0() {
-                            var0 = arg0;
-                            var10 = var0.velocityX;
-                            var9 = var0.velocityY;
-                            var8 = var0.absoluteX;
-                            var1 = var0.absoluteY;
-                            var2 = _closure1_slot0;
-                            var5 = _closure1_slot3;
-                            var0 = 15;
-                            var4 = var5[var0];
-                            var0 = undefined;
-                            var7 = var2.bind(var0)(var4);
-                            var6 = var7.calculatePIPPositionFromVelocity;
-                            var4 = {};
-                            var4.velocityX = var10;
-                            var4.velocityY = var9;
-                            var4.absoluteX = var8;
-                            var4.absoluteY = var1;
-                            var9 = _closure3_slot8;
-                            var8 = var9.get;
-                            var8 = var8.bind(var9)();
-                            var4.windowDimensions = var8;
-                            var9 = _closure3_slot4;
-                            var8 = var9.get;
-                            var8 = var8.bind(var9)();
-                            var4.safeArea = var8;
-                            var4 = var6.bind(var7)(var4);
-                            var10 = var4.pipX;
-                            var9 = var4.pipY;
-                            var4 = _closure1_slot1;
-                            var3 = 17;
-                            var6 = var5[var3];
-                            var8 = var4.bind(var0)(var6);
-                            var7 = _closure3_slot9;
-                            var6 = {};
-                            var6.pipX = var10;
-                            var6.pipY = var9;
-                            var6 = var8.bind(var0)(var7, var6);
-                            var3 = var5[var3];
-                            var6 = var4.bind(var0)(var3);
-                            var3 = _closure3_slot10;
-                            var1 = {};
-                            var7 = false;
-                            var1.gestureActive = var7;
-                            var1 = var6.bind(var0)(var3, var1);
-                            var1 = 14;
-                            var1 = var5[var1];
-                            var3 = var2.bind(var0)(var1);
-                            var2 = var3.runOnJS;
-                            var1 = 19;
-                            var1 = var5[var1];
-                            var1 = var4.bind(var0)(var1);
-                            var1 = var1.updateSourceTrackingView;
-                            var1 = var2.bind(var3)(var1);
-                            var1 = var1.bind(var0)();
-                            return var0;
-                        };
-                        var10 = {};
-                        var15 = 15;
-                        var15 = var9[var15];
-                        var15 = var12.bind(var8)(var15);
-                        var15 = var15.calculatePIPPositionFromVelocity;
-                        var10.calculatePIPPositionFromVelocity = var15;
-                        var15 = _closure3_slot8;
-                        var10.windowDimensions = var15;
-                        var15 = _closure3_slot4;
-                        var10.safeArea = var15;
-                        var15 = var9[var6];
-                        var15 = var7.bind(var8)(var15);
-                        var10.updateSharedValueIfChanged = var15;
-                        var14 = _closure3_slot9;
-                        var10.wrapperDimensions = var14;
-                        var10.wrapperOffset = var13;
-                        var11 = var9[var11];
-                        var11 = var12.bind(var8)(var11);
-                        var11 = var11.runOnJS;
-                        var10.runOnJS = var11;
-                        var11 = 19;
-                        var11 = var9[var11];
-                        var11 = var7.bind(var8)(var11);
-                        var11 = var11.updateSourceTrackingView;
-                        var10.updateSourceTrackingView = var11;
-                        var1.__closure = var10;
-                        var10 = 11935428351350.0;
-                        var1.__workletHash = var10;
-                        var10 = _closure1_slot25;
-                        var1.__initData = var10;
-                        var4 = var2.bind(var4)(var1);
-                        var2 = var4.onTouchesCancelled;
-                        var1 = function() {
-                            var2 = _closure1_slot1;
-                            var1 = _closure1_slot3;
-                            var0 = 17;
-                            var1 = var1[var0];
-                            var0 = undefined;
-                            var3 = var2.bind(var0)(var1);
-                            var2 = _closure3_slot13;
-                            var1 = {
-                                'active': false,
-                                'pressed': false
-                            };
-                            var1 = var3.bind(var0)(var2, var1);
-                            return var0;
-                        };
-                        var10 = {};
-                        var11 = var9[var6];
-                        var11 = var7.bind(var8)(var11);
-                        var10.updateSharedValueIfChanged = var11;
-                        var10.initialGestureOffset = var5;
-                        var1.__closure = var10;
-                        var10 = 4606005866023.0;
-                        var1.__workletHash = var10;
-                        var10 = _closure1_slot24;
-                        var1.__initData = var10;
-                        var2 = var2.bind(var4)(var1);
-                        var1 = var2.onFinalize;
-                        var0 = function() {
-                            var2 = _closure1_slot1;
-                            var1 = _closure1_slot3;
-                            var0 = 17;
-                            var1 = var1[var0];
-                            var0 = undefined;
-                            var3 = var2.bind(var0)(var1);
-                            var2 = _closure3_slot13;
-                            var1 = {
-                                'active': false,
-                                'pressed': false
-                            };
-                            var1 = var3.bind(var0)(var2, var1);
-                            return var0;
-                        };
-                        var4 = {};
-                        var6 = var9[var6];
-                        var6 = var7.bind(var8)(var6);
-                        var4.updateSharedValueIfChanged = var6;
-                        var4.initialGestureOffset = var5;
-                        var0.__closure = var4;
-                        var4 = 5443656412422.0;
-                        var0.__workletHash = var4;
-                        var3 = _closure1_slot23;
-                        var0.__initData = var3;
-                        var0 = var1.bind(var2)(var0);
-                        return var0;
-                    };
-                    var6 = var13.bind(var14)(var5, var6);
-                    var _closure3_slot15 = var6;
-                    var14 = _closure1_slot5;
-                    var13 = var14.useMemo;
-                    var5 = new Array(7);
-                    var5[0] = var17;
-                    var5[1] = var16;
-                    var5[2] = var0;
-                    var5[3] = var15;
-                    var5[4] = var3;
-                    var5[5] = var11;
-                    var5[6] = var6;
-                    var3 = function() { // Environment: var1
-                        var11 = _closure1_slot0;
-                        var12 = _closure1_slot3;
-                        var6 = 16;
-                        var0 = var12[var6];
-                        var5 = undefined;
-                        var0 = var11.bind(var5)(var0);
-                        var4 = var0.Gesture;
-                        var3 = var4.Exclusive;
-                        var0 = var12[var6];
-                        var0 = var11.bind(var5)(var0);
-                        var2 = var0.Gesture;
-                        var0 = var2.Tap;
-                        var9 = var0.bind(var2)();
-                        var7 = var9.enabled;
-                        var13 = _closure3_slot0;
-                        var2 = _closure1_slot13;
-                        var2 = var2.IN_APP;
-                        var2 = var13 !== var2;
-                        var7 = var7.bind(var9)(var2);
-                        var2 = var7.maxDistance;
-                        var9 = 30;
-                        var14 = var2.bind(var7)(var9);
-                        var7 = var14.onStart;
-                        var2 = function() {
-                            var2 = _closure1_slot0;
-                            var1 = _closure1_slot3;
-                            var0 = 14;
-                            var1 = var1[var0];
-                            var0 = undefined;
-                            var3 = var2.bind(var0)(var1);
-                            var2 = var3.runOnJS;
-                            var1 = _closure3_slot5;
-                            var2 = var2.bind(var3)(var1);
-                            var1 = null;
-                            var1 = var2.bind(var0)(var1);
-                            return var0;
-                        };
-                        var15 = {};
-                        var10 = 14;
-                        var16 = var12[var10];
-                        var16 = var11.bind(var5)(var16);
-                        var16 = var16.runOnJS;
-                        var15.runOnJS = var16;
-                        var16 = _closure3_slot5;
-                        var15.setFocused = var16;
-                        var2.__closure = var15;
-                        var15 = 10703348418884.0;
-                        var2.__workletHash = var15;
-                        var15 = _closure1_slot30;
-                        var2.__initData = var15;
-                        var14 = var7.bind(var14)(var2);
-                        var7 = var14.numberOfTaps;
-                        var2 = 2;
-                        var2 = var7.bind(var14)(var2);
-                        var6 = var12[var6];
-                        var6 = var11.bind(var5)(var6);
-                        var7 = var6.Gesture;
-                        var6 = var7.Tap;
-                        var14 = var6.bind(var7)();
-                        var7 = var14.enabled;
-                        var6 = true;
-                        var7 = var7.bind(var14)(var6);
-                        var6 = var7.maxDistance;
-                        var7 = var6.bind(var7)(var9);
-                        var6 = var7.onStart;
-                        var1 = function() {
-                            _fun111384: for (var _fun111384_ip = 0;;) switch (_fun111384_ip) {
-                                case 0:
-                                    var3 = _closure3_slot0;
-                                    var2 = _closure1_slot13;
-                                    var2 = var2.IN_APP;
-                                    if (!(var3 !== var2)) {
-                                        _fun111384_ip = 140;
-                                        continue _fun111384
-                                    }
-                                case 24:
-                                    var3 = _closure3_slot1;
-                                    var2 = var3.get;
-                                    var2 = var2.bind(var3)();
-                                    var3 = var2.mode;
-                                    var2 = _closure1_slot12;
-                                    var2 = var2.HIDDEN;
-                                    if (!(var3 !== var2)) {
-                                        _fun111384_ip = 98;
-                                        continue _fun111384
-                                    }
-                                case 56:
-                                    var4 = _closure1_slot0;
-                                    var3 = _closure1_slot3;
-                                    var2 = 14;
-                                    var2 = var3[var2];
-                                    var3 = undefined;
-                                    var5 = var4.bind(var3)(var2);
-                                    var4 = var5.runOnJS;
-                                    var2 = _closure3_slot2;
-                                    var2 = var4.bind(var5)(var2);
-                                    var2 = var2.bind(var3)();
-                                    _fun111384_ip = 191;
-                                    continue _fun111384;
-                                case 98:
-                                    var4 = _closure1_slot0;
-                                    var3 = _closure1_slot3;
-                                    var2 = 14;
-                                    var2 = var3[var2];
-                                    var3 = undefined;
-                                    var5 = var4.bind(var3)(var2);
-                                    var4 = var5.runOnJS;
-                                    var2 = _closure3_slot7;
-                                    var2 = var4.bind(var5)(var2);
-                                    var2 = var2.bind(var3)();
-                                    _fun111384_ip = 191;
-                                    continue _fun111384;
-                                case 140:
-                                    var4 = _closure1_slot0;
-                                    var3 = _closure1_slot3;
-                                    var2 = 14;
-                                    var3 = var3[var2];
-                                    var2 = undefined;
-                                    var4 = var4.bind(var2)(var3);
-                                    var3 = var4.runOnJS;
-                                    var1 = _closure3_slot6;
-                                    var1 = var3.bind(var4)(var1);
-                                    var0 = _closure1_slot11;
-                                    var0 = var0.PANEL;
-                                    var0 = var1.bind(var2)(var0);
-                                case 191:
-                                    var0 = undefined;
-                                    return var0;
-                            }
-                        };
-                        var9 = {};
-                        var9.pipMode = var13;
-                        var13 = _closure1_slot13;
-                        var9.VoicePanelPIPModes = var13;
-                        var10 = var12[var10];
-                        var10 = var11.bind(var5)(var10);
-                        var10 = var10.runOnJS;
-                        var9.runOnJS = var10;
-                        var10 = _closure3_slot6;
-                        var9.setMode = var10;
-                        var10 = _closure1_slot11;
-                        var9.VoicePanelModes = var10;
-                        var10 = _closure3_slot1;
-                        var9.controlsSpecs = var10;
-                        var10 = _closure1_slot12;
-                        var9.VoicePanelControlsModes = var10;
-                        var10 = _closure3_slot7;
-                        var9.showControls = var10;
-                        var10 = _closure3_slot2;
-                        var9.hideControls = var10;
-                        var1.__closure = var9;
-                        var9 = 9532493963151.0;
-                        var1.__workletHash = var9;
-                        var8 = _closure1_slot31;
-                        var1.__initData = var8;
-                        var1 = var6.bind(var7)(var1);
-                        var0 = _closure3_slot15;
-                        var0 = var0.bind(var5)();
-                        var0 = var3.bind(var4)(var2, var1, var0);
-                        return var0;
-                    };
-                    var3 = var13.bind(var14)(var3, var5);
-                    var5 = 20;
-                    var5 = var12[var5];
-                    var12 = var9.bind(var10)(var5);
-                    var10 = var12.useStateFromStoresObject;
-                    var5 = _closure1_slot7;
-                    var9 = new Array(2);
-                    var9[0] = var5;
-                    var5 = _closure1_slot8;
-                    var9[1] = var5;
-                    var5 = function() { // Environment: var1
-                        _fun111385: for (var _fun111385_ip = 0;;) switch (_fun111385_ip) {
-                            case 0:
-                                var2 = _closure1_slot7;
-                                var1 = var2.getCurrentEmbeddedActivity;
-                                var5 = var1.bind(var2)();
-                                var3 = _closure1_slot0;
-                                var2 = _closure1_slot3;
-                                var1 = 21;
-                                var1 = var2[var1];
-                                var2 = undefined;
-                                var4 = var3.bind(var2)(var1);
-                                var3 = var4.getEmbeddedActivityLocationChannelId;
-                                var1 = null;
-                                var6 = var1 == var5;
-                                if (var6) {
-                                    _fun111385_ip = 59;
-                                    continue _fun111385
-                                }
-                            case 54:
-                                var2 = var5.location;
-                            case 59:
-                                var3 = var3.bind(var4)(var2);
-                                var2 = _closure1_slot8;
-                                var0 = var2.getConnectedFrame;
-                                var0 = var0.bind(var2)();
-                                var1 = var1 != var0;
-                                var0 = {};
-                                var2 = _closure3_slot11;
-                                var2 = var3 !== var2;
-                                var0.currentEmbeddedActivityIsNotInCurrentChannel = var2;
-                                var0.hasFrame = var1;
-                                return var0;
-                        }
-                    };
-                    var5 = var10.bind(var12)(var9, var5);
-                    var13 = var5.currentEmbeddedActivityIsNotInCurrentChannel;
-                    var _closure3_slot16 = var13;
-                    var12 = var5.hasFrame;
-                    var _closure3_slot17 = var12;
-                    var10 = _closure1_slot5;
-                    var9 = var10.useCallback;
-                    var5 = new Array(4);
-                    var5[0] = var13;
-                    var5[1] = var12;
-                    var5[2] = var11;
-                    var5[3] = var0;
-                    var0 = function() { // Environment: var1
-                        _fun111386: for (var _fun111386_ip = 0;;) switch (_fun111386_ip) {
-                            case 0:
-                                var1 = _closure3_slot16;
-                                if (!var1) {
-                                    _fun111386_ip = 45;
-                                    continue _fun111386
-                                }
-                            case 10:
-                                var2 = _closure3_slot6;
-                                var1 = _closure1_slot11;
-                                var1 = var1.PIP;
-                                var3 = undefined;
-                                var1 = var2.bind(var3)(var1);
-                                var2 = _closure3_slot5;
-                                var1 = null;
-                                var1 = var2.bind(var3)(var1);
-                            case 45:
-                                var1 = _closure3_slot17;
-                                if (var1) {
-                                    _fun111386_ip = 100;
-                                    continue _fun111386
-                                }
-                            case 55:
-                                var3 = _closure1_slot2;
-                                var2 = _closure1_slot3;
-                                var1 = 23;
-                                var2 = var2[var1];
-                                var1 = undefined;
-                                var3 = var3.bind(var1)(var2);
-                                var2 = var3.updateActivityPanelMode;
-                                var1 = _closure1_slot14;
-                                var1 = var1.PANEL;
-                                var1 = var2.bind(var3)(var1);
-                                _fun111386_ip = 143;
-                                continue _fun111386;
-                            case 100:
-                                var3 = _closure1_slot1;
-                                var2 = _closure1_slot3;
-                                var1 = 22;
-                                var2 = var2[var1];
-                                var1 = undefined;
-                                var2 = var3.bind(var1)(var2);
-                                var1 = var2.updateFramePanelMode;
-                                var0 = _closure1_slot14;
-                                var0 = var0.PANEL;
-                                var0 = var1.bind(var2)(var0);
-                            case 143:
-                                var0 = undefined;
-                                return var0;
-                        }
-                    };
-                    var5 = var9.bind(var10)(var0, var5);
-                    var _closure3_slot18 = var5;
-                    var0 = {};
-                    var0.multiPIPWrapperStyles = var8;
-                    var0.mainPIPWrapperStyles = var7;
-                    var0.secondaryPIPWrapperStyles = var4;
-                    var0.mainPIPGesture = var3;
-                    var4 = _closure1_slot5;
-                    var3 = var4.useMemo;
-                    var2 = new Array(2);
-                    var2[0] = var6;
-                    var2[1] = var5;
-                    var1 = function() { // Environment: var1
-                        var9 = _closure1_slot0;
-                        var10 = _closure1_slot3;
-                        var0 = 16;
-                        var1 = var10[var0];
-                        var4 = undefined;
-                        var1 = var9.bind(var4)(var1);
-                        var3 = var1.Gesture;
-                        var2 = var3.Exclusive;
-                        var0 = var10[var0];
-                        var0 = var9.bind(var4)(var0);
-                        var1 = var0.Gesture;
-                        var0 = var1.Tap;
-                        var5 = var0.bind(var1)();
-                        var1 = var5.maxDistance;
-                        var0 = 30;
-                        var6 = var1.bind(var5)(var0);
-                        var5 = var6.onStart;
-                        var1 = function() {
-                            var2 = _closure1_slot0;
-                            var1 = _closure1_slot3;
-                            var0 = 14;
-                            var1 = var1[var0];
-                            var0 = undefined;
-                            var3 = var2.bind(var0)(var1);
-                            var2 = var3.runOnJS;
-                            var1 = _closure3_slot18;
-                            var1 = var2.bind(var3)(var1);
-                            var1 = var1.bind(var0)();
-                            return var0;
-                        };
-                        var8 = {};
-                        var0 = 14;
-                        var0 = var10[var0];
-                        var0 = var9.bind(var4)(var0);
-                        var0 = var0.runOnJS;
-                        var8.runOnJS = var0;
-                        var9 = _closure3_slot18;
-                        var8.handleSecondaryPIPTap = var9;
-                        var1.__closure = var8;
-                        var8 = 8361527940381.0;
-                        var1.__workletHash = var8;
-                        var7 = _closure1_slot32;
-                        var1.__initData = var7;
-                        var1 = var5.bind(var6)(var1);
-                        var0 = _closure3_slot15;
-                        var0 = var0.bind(var4)();
-                        var0 = var2.bind(var3)(var1, var0);
-                        return var0;
-                    };
-                    var1 = var3.bind(var4)(var1, var2);
-                    var0.secondaryPIPGesture = var1;
-                    return var0;
-                };
-                var1 = var1.bind(var3)(var6);
-                var6 = var1.multiPIPWrapperStyles;
-                var23 = var1.mainPIPWrapperStyles;
-                var11 = var1.secondaryPIPWrapperStyles;
-                var22 = var1.mainPIPGesture;
-                var17 = var1.secondaryPIPGesture;
-                var1 = 27;
-                var1 = var14[var1];
-                var1 = var8.bind(var3)(var1);
-                var1 = var1.bind(var3)(var7);
-                var15 = var1.pushToTalk;
-                var1 = 20;
-                var1 = var14[var1];
-                var9 = var13.bind(var3)(var1);
-                var8 = var9.useStateFromStoresObject;
-                var1 = _closure1_slot8;
-                var7 = new Array(1);
-                var7[0] = var1;
-                var1 = function() { // Environment: var0
-                    var1 = _closure1_slot8;
-                    var0 = var1.getConnectedFrame;
-                    var1 = var0.bind(var1)();
-                    var0 = null;
-                    var0 = var0 != var1;
-                    return var0;
-                };
-                var1 = var8.bind(var9)(var7, var1);
-                var _closure2_slot2 = var1;
-                var7 = 14;
-                var7 = var14[var7];
-                var9 = var13.bind(var3)(var7);
-                var8 = var9.useAnimatedStyle;
-                var7 = function() {
-                    var0 = {};
-                    var3 = _closure1_slot0;
-                    var2 = _closure1_slot3;
-                    var1 = 15;
-                    var2 = var2[var1];
-                    var1 = undefined;
-                    var4 = var3.bind(var1)(var2);
-                    var3 = var4.getVoicePanelPIPBorderRadius;
-                    var1 = _closure2_slot1;
-                    var2 = var1.width;
-                    var1 = var1.height;
-                    var1 = var3.bind(var4)(var2, var1);
-                    var0.borderRadius = var1;
-                    return var0;
-                };
-                var10 = {};
-                var12 = 15;
-                var12 = var14[var12];
-                var12 = var13.bind(var3)(var12);
-                var12 = var12.getVoicePanelPIPBorderRadius;
-                var10.getVoicePanelPIPBorderRadius = var12;
-                var10.pipState = var5;
-                var7.__closure = var10;
-                var10 = 9598016909682.0;
-                var7.__workletHash = var10;
-                var10 = _closure1_slot33;
-                var7.__initData = var10;
-                var13 = var8.bind(var9)(var7);
-                var9 = _closure1_slot5;
-                var8 = var9.useMemo;
-                var7 = new Array(1);
-                var7[0] = var2;
-                var2 = function() { // Environment: var0
-                    var0 = {
-                        'accessible': true,
-                        'accessibilityLabel': null,
-                        'accessibilityRole': 'button'
-                    };
-                    var5 = _closure1_slot0;
-                    var6 = _closure1_slot3;
-                    var1 = 28;
-                    var2 = var6[var1];
-                    var4 = undefined;
-                    var2 = var5.bind(var4)(var2);
-                    var3 = var2.intl;
-                    var2 = var3.string;
-                    var1 = var6[var1];
-                    var1 = var5.bind(var4)(var1);
-                    var1 = var1.t;
-                    var1 = var1.oN8bqe;
-                    var1 = var2.bind(var3)(var1);
-                    var0.accessibilityLabel = var1;
-                    var2 = {};
-                    var1 = 'activate';
-                    var2.name = var1;
-                    var1 = new Array(1);
-                    var1[0] = var2;
-                    var0.accessibilityActions = var1;
-                    var1 = function() {
-                        var2 = _closure2_slot0;
-                        var0 = _closure1_slot11;
-                        var1 = var0.PANEL;
-                        var0 = undefined;
-                        var1 = var2.bind(var0)(var1);
-                        return var0;
-                    };
-                    var0.onAccessibilityAction = var1;
-                    return var0;
-                };
-                var14 = var8.bind(var9)(var2, var7);
-                var8 = _closure1_slot5;
-                var7 = var8.useMemo;
-                var2 = new Array(1);
-                var2[0] = var1;
-                var1 = function() { // Environment: var0
-                    var0 = {};
-                    var1 = true;
-                    var0.accessible = var1;
-                    var5 = _closure1_slot0;
-                    var6 = _closure1_slot3;
-                    var1 = 28;
-                    var2 = var6[var1];
-                    var4 = undefined;
-                    var2 = var5.bind(var4)(var2);
-                    var3 = var2.intl;
-                    var2 = var3.string;
-                    var1 = var6[var1];
-                    var1 = var5.bind(var4)(var1);
-                    var1 = var1.t;
-                    var1 = var1["3ejJer"];
-                    var1 = var2.bind(var3)(var1);
-                    var0.accessibilityLabel = var1;
-                    var2 = {};
-                    var1 = 'activate';
-                    var2.name = var1;
-                    var1 = new Array(1);
-                    var1[0] = var2;
-                    var0.accessibilityActions = var1;
-                    var1 = function() {
-                        _fun111394: for (var _fun111394_ip = 0;;) switch (_fun111394_ip) {
-                            case 0:
-                                var1 = _closure2_slot2;
-                                if (var1) {
-                                    _fun111394_ip = 58;
-                                    continue _fun111394
-                                }
-                            case 13:
-                                var3 = _closure1_slot2;
-                                var2 = _closure1_slot3;
-                                var1 = 23;
-                                var2 = var2[var1];
-                                var1 = undefined;
-                                var3 = var3.bind(var1)(var2);
-                                var2 = var3.updateActivityPanelMode;
-                                var1 = _closure1_slot14;
-                                var1 = var1.PANEL;
-                                var1 = var2.bind(var3)(var1);
-                                _fun111394_ip = 101;
-                                continue _fun111394;
-                            case 58:
-                                var3 = _closure1_slot1;
-                                var2 = _closure1_slot3;
-                                var1 = 22;
-                                var2 = var2[var1];
-                                var1 = undefined;
-                                var2 = var3.bind(var1)(var2);
-                                var1 = var2.updateFramePanelMode;
-                                var0 = _closure1_slot14;
-                                var0 = var0.PANEL;
-                                var0 = var1.bind(var2)(var0);
-                            case 101:
-                                var0 = undefined;
-                                return var0;
-                        }
-                    };
-                    var0.onAccessibilityAction = var1;
-                    return var0;
-                };
-                var10 = var7.bind(var8)(var1, var2);
-                var1 = _closure1_slot9;
-                var0 = function(arg0) { // Environment: var0
-                    var0 = arg0;
-                    var0 = var0.isActivityFocused;
-                    return var0;
-                };
-                var1 = var1.bind(var3)(var0);
-                if (!var15) {
-                    _fun111366_ip = 410;
-                    continue _fun111366
-                }
-            case 382:
-                var2 = var5.mode;
-                var0 = _closure1_slot13;
-                var0 = var0.IN_PANEL;
-                var0 = var2 !== var0;
-                if (var0) {
-                    _fun111366_ip = 407;
-                    continue _fun111366
-                }
-            case 404:
-                var0 = var1;
-            case 407:
-                var15 = var0;
-            case 410:
-                var2 = _closure1_slot16;
-                var1 = _closure1_slot1;
-                var0 = _closure1_slot3;
-                var9 = 29;
-                var0 = var0[var9];
-                var1 = var1.bind(var3)(var0);
-                var0 = {};
-                var0.ref = var4;
-                var16 = 'box-none';
-                var0.pointerEvents = var16;
-                var4 = _closure1_slot20;
-                var7 = var4.multiPIPContainer;
-                var4 = new Array(2);
-                var4[0] = var7;
-                var4[1] = var6;
-                var0.style = var4;
-                var4 = _closure1_slot19;
-                var0.layout = var4;
-                var4 = var5.mode;
-                var12 = null;
-                var6 = var12 != var4;
-                if (!var6) {
-                    _fun111366_ip = 733;
-                    continue _fun111366
-                }
-            case 503:
-                var8 = _closure1_slot16;
-                var21 = _closure1_slot1;
-                var20 = _closure1_slot3;
-                var4 = var20[var9];
-                var7 = var21.bind(var3)(var4);
-                var4 = {};
-                var19 = _closure1_slot20;
-                var24 = var19.pipContentWrapper;
-                var19 = new Array(3);
-                var19[0] = var24;
-                var24 = _closure1_slot20;
-                var24 = var24.inAppElevationShadow;
-                var19[1] = var24;
-                var19[2] = var23;
-                var4.style = var19;
-                var4.pointerEvents = var16;
-                var16 = _closure1_slot19;
-                var4.layout = var16;
-                var26 = var4;
-                var25 = var14;
-                var14 = copyDataProperties(var26, var25);
-                var19 = _closure1_slot15;
-                var16 = _closure1_slot0;
-                var14 = 16;
-                var14 = var20[var14];
-                var14 = var16.bind(var3)(var14);
-                var16 = var14.GestureDetector;
-                var14 = {};
-                var14.gesture = var22;
-                var22 = _closure1_slot15;
-                var20 = var20[var9];
-                var21 = var21.bind(var3)(var20);
-                var20 = {};
-                var23 = _closure1_slot20;
-                var24 = var23.pipMask;
-                var23 = new Array(2);
-                var23[0] = var24;
-                var23[1] = var13;
-                var20.style = var23;
-                var23 = _closure1_slot19;
-                var20.layout = var23;
-                var23 = _closure1_slot34;
-                var20.children = var23;
-                var20 = var22.bind(var3)(var21, var20);
-                var14.children = var20;
-                var16 = var19.bind(var3)(var16, var14);
-                var14 = new Array(2);
-                var14[0] = var16;
-                var12 = null;
-                if (!var15) {
-                    _fun111366_ip = 714;
-                    continue _fun111366
-                }
-            case 710:
-                var12 = _closure1_slot35;
-            case 714:
-                var14[1] = var12;
-                var12 = 'children';
-                var4[var12] = var14;
-                var6 = var8.bind(var3)(var7, var4);
-            case 733:
-                var4 = new Array(2);
-                var4[0] = var6;
-                var5 = var5.showSecondaryPIP;
-                if (!var5) {
-                    _fun111366_ip = 945;
-                    continue _fun111366
-                }
-            case 753:
-                var8 = _closure1_slot15;
-                var16 = _closure1_slot1;
-                var19 = _closure1_slot3;
-                var15 = 30;
-                var6 = var19[var15];
-                var7 = var16.bind(var3)(var6);
-                var6 = {};
-                var6.style = var11;
-                var26 = var6;
-                var25 = var10;
-                var10 = copyDataProperties(var26, var25);
-                var11 = _closure1_slot15;
-                var9 = var19[var9];
-                var10 = var16.bind(var3)(var9);
-                var9 = {};
-                var12 = _closure1_slot20;
-                var14 = var12.pipMask;
-                var12 = new Array(2);
-                var12[0] = var14;
-                var12[1] = var13;
-                var9.style = var12;
-                var14 = _closure1_slot15;
-                var13 = _closure1_slot0;
-                var12 = 16;
-                var12 = var19[var12];
-                var12 = var13.bind(var3)(var12);
-                var13 = var12.GestureDetector;
-                var12 = {};
-                var12.gesture = var17;
-                var17 = _closure1_slot15;
-                var15 = var19[var15];
-                var16 = var16.bind(var3)(var15);
-                var15 = {};
-                var19 = _closure1_slot6;
-                var19 = var19.absoluteFill;
-                var15.style = var19;
-                var18 = _closure1_slot36;
-                var15.children = var18;
-                var15 = var17.bind(var3)(var16, var15);
-                var12.children = var15;
-                var12 = var14.bind(var3)(var13, var12);
-                var9.children = var12;
-                var10 = var11.bind(var3)(var10, var9);
-                var9 = 'children';
-                var6[var9] = var10;
-                var5 = var8.bind(var3)(var7, var6);
-            case 945:
-                var4[1] = var5;
-                var0.children = var4;
-                var0 = var2.bind(var3)(var1, var0);
-                return var0;
-        }
-    };
-    var3 = {};
-    var3 = var8.bind(var0)(var7, var3);
-    var _closure1_slot37 = var3;
     var7 = var6.memo;
     var3 = function(arg0) { // Environment: var1
-        _fun111399: for (var _fun111399_ip = 0;;) switch (_fun111399_ip) {
+        _fun112467: for (var _fun112467_ip = 0;;) switch (_fun112467_ip) {
             case 0:
                 var1 = arg0;
-                var8 = var1.pipMode;
-                var7 = var1.transitionState;
-                var _closure2_slot0 = var7;
-                var6 = var1.transitionCleanUp;
-                var _closure2_slot1 = var6;
-                var5 = undefined;
-                var _closure2_slot2 = var5;
-                var4 = _closure1_slot5;
-                var3 = var4.useState;
+                var6 = var1.pipMode;
+                var8 = var1.transitionState;
+                var _closure2_slot0 = var8;
+                var7 = var1.transitionCleanUp;
+                var _closure2_slot1 = var7;
+                var4 = undefined;
+                var _closure2_slot2 = var4;
+                var5 = _closure1_slot5;
+                var3 = var5.useState;
                 var2 = _closure1_slot13;
                 var2 = var2.IN_PANEL;
-                var2 = var8 === var2;
+                var2 = var6 === var2;
                 if (var2) {
-                    _fun111399_ip = 102;
-                    continue _fun111399
+                    _fun112467_ip = 102;
+                    continue _fun112467
                 }
             case 66:
                 var9 = _closure1_slot0;
                 var10 = _closure1_slot3;
-                var8 = 31;
-                var8 = var10[var8];
-                var8 = var9.bind(var5)(var8);
-                var8 = var8.TransitionStates;
-                var8 = var8.MOUNTED;
-                var2 = var7 === var8;
+                var6 = 32;
+                var6 = var10[var6];
+                var6 = var9.bind(var4)(var6);
+                var6 = var6.TransitionStates;
+                var6 = var6.MOUNTED;
+                var2 = var8 === var6;
             case 102:
-                var4 = var3.bind(var4)(var2);
+                var5 = var3.bind(var5)(var2);
                 var3 = _closure1_slot4;
                 var2 = 2;
-                var4 = var3.bind(var5)(var4, var2);
+                var5 = var3.bind(var4)(var5, var2);
                 var2 = 0;
-                var2 = var4[var2];
+                var2 = var5[var2];
                 var3 = 1;
-                var3 = var4[var3];
+                var3 = var5[var3];
                 _closure2_slot2 = var3;
-                var8 = _closure1_slot5;
-                var5 = var8.useEffect;
-                var4 = function() { // Environment: var0
+                var9 = _closure1_slot5;
+                var6 = var9.useEffect;
+                var5 = function() { // Environment: var0
                     var1 = global;
                     var4 = var1.setTimeout;
                     var3 = undefined;
@@ -1799,27 +1795,27 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var3 = new Array(0);
-                var3 = var5.bind(var8)(var4, var3);
-                var5 = _closure1_slot5;
-                var4 = var5.useEffect;
+                var3 = var6.bind(var9)(var5, var3);
+                var6 = _closure1_slot5;
+                var5 = var6.useEffect;
                 var3 = new Array(2);
-                var3[0] = var7;
-                var3[1] = var6;
+                var3[0] = var8;
+                var3[1] = var7;
                 var0 = function() { // Environment: var0
-                    _fun111403: for (var _fun111403_ip = 0;;) switch (_fun111403_ip) {
+                    _fun112471: for (var _fun112471_ip = 0;;) switch (_fun112471_ip) {
                         case 0:
                             var2 = _closure2_slot0;
                             var3 = _closure1_slot0;
                             var1 = _closure1_slot3;
-                            var0 = 31;
+                            var0 = 32;
                             var1 = var1[var0];
                             var0 = undefined;
                             var1 = var3.bind(var0)(var1);
                             var1 = var1.TransitionStates;
                             var1 = var1.YEETED;
                             if (!(var2 === var1)) {
-                                _fun111403_ip = 74;
-                                continue _fun111403
+                                _fun112471_ip = 74;
+                                continue _fun112471
                             }
                         case 48:
                             var1 = global;
@@ -1836,27 +1832,30 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             return var0;
                     }
                 };
-                var0 = var4.bind(var5)(var0, var3);
+                var0 = var5.bind(var6)(var0, var3);
                 var0 = null;
                 if (!var2) {
-                    _fun111399_ip = 206;
-                    continue _fun111399
+                    _fun112467_ip = 218;
+                    continue _fun112467
                 }
             case 202:
-                var0 = _closure1_slot37;
-            case 206:
+                var3 = _closure1_slot15;
+                var2 = _closure1_slot35;
+                var1 = {};
+                var0 = var3.bind(var4)(var2, var1);
+            case 218:
                 return var0;
         }
     };
     var3 = var7.bind(var6)(var3);
-    var _closure1_slot38 = var3;
+    var _closure1_slot34 = var3;
     var3 = var6.memo;
     var1 = function() {
-        _fun111405: for (var _fun111405_ip = 0;;) switch (_fun111405_ip) {
+        _fun112473: for (var _fun112473_ip = 0;;) switch (_fun112473_ip) {
             case 0:
                 var1 = _closure1_slot0;
                 var5 = _closure1_slot3;
-                var0 = 13;
+                var0 = 14;
                 var0 = var5[var0];
                 var3 = undefined;
                 var2 = var1.bind(var3)(var0);
@@ -1865,21 +1864,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var0.mode;
                 var6 = var0.showSecondaryPIP;
                 var2 = _closure1_slot15;
-                var0 = 31;
+                var0 = 32;
                 var0 = var5[var0];
                 var0 = var1.bind(var3)(var0);
                 var1 = var0.TransitionItem;
                 var0 = {};
                 var5 = null;
                 if (!(var5 == var7)) {
-                    _fun111405_ip = 81;
-                    continue _fun111405
+                    _fun112473_ip = 81;
+                    continue _fun112473
                 }
             case 76:
                 var5 = undefined;
                 if (!var6) {
-                    _fun111405_ip = 91;
-                    continue _fun111405
+                    _fun112473_ip = 91;
+                    continue _fun112473
                 }
             case 81:
                 var6 = {};
@@ -1887,14 +1886,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var6;
             case 91:
                 var0.item = var5;
-                var4 = _closure1_slot39;
+                var4 = _closure1_slot36;
                 var0.renderItem = var4;
                 var0 = var2.bind(var3)(var1, var0);
                 return var0;
         }
     };
     var1 = var3.bind(var6)(var1);
-    var3 = 32;
+    var3 = 33;
     var3 = var5[var3];
     var5 = var4.bind(var0)(var3);
     var4 = var5.fileFinishedImporting;
@@ -1902,4 +1901,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 1371, 7954, 7917, 9719, 9717, 14302, 7952, 33, 4087, 9718, 14303, 3717, 14301, 4937, 5331, 14300, 8163, 566, 3083, 7976, 7950, 14314, 14316, 14318, 7643, 1234, 6551, 6550, 4023, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 1371, 7975, 7936, 11863, 11861, 14311, 7973, 33, 4087, 1297, 11862, 14315, 3717, 14310, 4968, 5361, 14317, 8094, 566, 3086, 7997, 7971, 8250, 1235, 6533, 14426, 14427, 6532, 14429, 4023, 2]);

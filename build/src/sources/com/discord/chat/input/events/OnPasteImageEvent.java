@@ -59,7 +59,7 @@ public final class OnPasteImageEvent implements ReactEvent {
 
     public static final /* synthetic */ void write$Self$chat_input_release(OnPasteImageEvent onPasteImageEvent, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
         compositeEncoder.y(serialDescriptor, 0, onPasteImageEvent.url);
-        compositeEncoder.o(serialDescriptor, 1, n2.f50033a, onPasteImageEvent.type);
+        compositeEncoder.o(serialDescriptor, 1, n2.f50601a, onPasteImageEvent.type);
     }
 
     @NotNull

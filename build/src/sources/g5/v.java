@@ -48,14 +48,14 @@ public final class v implements View.OnAttachStateChangeListener {
             if (this.f24906d == 0) {
                 kotlin.c.b(obj);
                 v.this.c(null);
-                return Unit.f31988a;
+                return Unit.f32556a;
             }
             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((a) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
+            return ((a) create(coroutineScope, continuation)).invokeSuspend(Unit.f32556a);
         }
     }
 
@@ -70,7 +70,7 @@ public final class v implements View.OnAttachStateChangeListener {
             if (job != null) {
                 Job.a.a(job, null, 1, null);
             }
-            d10 = ys.i.d(v0.f55830d, m0.c().P1(), null, new a(null), 2, null);
+            d10 = ys.i.d(v0.f56398d, m0.c().P1(), null, new a(null), 2, null);
             this.f24903i = d10;
             this.f24902e = null;
         } catch (Throwable th2) {

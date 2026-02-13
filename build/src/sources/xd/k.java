@@ -23,10 +23,10 @@ public interface k {
     public static final class c extends IOException {
 
         /* renamed from: d  reason: collision with root package name */
-        public final Uri f54607d;
+        public final Uri f55175d;
 
         public c(Uri uri) {
-            this.f54607d = uri;
+            this.f55175d = uri;
         }
     }
 
@@ -34,10 +34,10 @@ public interface k {
     public static final class d extends IOException {
 
         /* renamed from: d  reason: collision with root package name */
-        public final Uri f54608d;
+        public final Uri f55176d;
 
         public d(Uri uri) {
-            this.f54608d = uri;
+            this.f55176d = uri;
         }
     }
 

@@ -56,7 +56,7 @@ public final class TabScreenViewManager extends ViewGroupManager<com.swmansion.r
     @Override // com.facebook.react.uimanager.BaseViewManager, com.facebook.react.uimanager.ViewManager
     @NotNull
     public Map<String, Object> getExportedCustomDirectEventTypeConstants() {
-        return o0.n(un.a.a(wn.c.f52940a), un.a.a(wn.a.f52938a), un.a.a(wn.d.f52941a), un.a.a(wn.b.f52939a));
+        return o0.n(un.a.a(wn.c.f53508a), un.a.a(wn.a.f53506a), un.a.a(wn.d.f53509a), un.a.a(wn.b.f53507a));
     }
 
     @Override // com.facebook.react.uimanager.ViewManager, com.facebook.react.bridge.NativeModule

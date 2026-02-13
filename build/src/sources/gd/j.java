@@ -17,7 +17,7 @@ public final class j implements l.b {
     @Override // gd.l.b
     public l a(l.a aVar) {
         int i10;
-        int i11 = w0.f39038a;
+        int i11 = w0.f39606a;
         if (i11 >= 23 && ((i10 = this.f25483a) == 1 || (i10 == 0 && i11 >= 31))) {
             int k10 = c0.k(aVar.f25492c.f12305w);
             oe.y.f("DMCodecAdapterFactory", "Creating an asynchronous MediaCodec adapter for track type " + w0.q0(k10));

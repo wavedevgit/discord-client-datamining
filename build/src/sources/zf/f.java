@@ -15,16 +15,16 @@ public final class f extends ff.d implements yf.e {
     public static final class a extends c {
 
         /* renamed from: c  reason: collision with root package name */
-        final /* synthetic */ k f56421c;
+        final /* synthetic */ k f56989c;
 
         a(k kVar) {
-            this.f56421c = kVar;
+            this.f56989c = kVar;
         }
 
         @Override // zf.a
         public void F(Status status, yf.g gVar) {
             Intrinsics.checkNotNullParameter(status, "status");
-            r.a(status, gVar, this.f56421c);
+            r.a(status, gVar, this.f56989c);
         }
     }
 
@@ -56,7 +56,7 @@ public final class f extends ff.d implements yf.e {
     @Override // yf.e
     public Task h(final GetCredentialRequest request) {
         Intrinsics.checkNotNullParameter(request, "request");
-        Task p10 = p(q.a().d(lg.d.f35819a).b(new m() { // from class: zf.e
+        Task p10 = p(q.a().d(lg.d.f36387a).b(new m() { // from class: zf.e
             @Override // gf.m
             public final void accept(Object obj, Object obj2) {
                 f.D(GetCredentialRequest.this, (d) obj, (k) obj2);

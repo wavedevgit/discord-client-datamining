@@ -29,7 +29,7 @@ public final class EphemeralIndicationViewHolder extends MessagePartViewHolder {
     public static final Unit bind$lambda$1$lambda$0(EphemeralIndicationViewHolder ephemeralIndicationViewHolder, EphemeralIndicationMessageAccessory ephemeralIndicationMessageAccessory, String it) {
         Intrinsics.checkNotNullParameter(it, "it");
         ChatEventHandler.DefaultImpls.m490onLinkClickedu7_MRrM$default(ephemeralIndicationViewHolder.eventHandler, ephemeralIndicationMessageAccessory.mo537getMessageId3Eiw7ao(), it, null, 4, null);
-        return Unit.f31988a;
+        return Unit.f32556a;
     }
 
     public final void bind(@NotNull final EphemeralIndicationMessageAccessory ephemeralAccessory) {

@@ -60,7 +60,7 @@ public final class WorkflowViewStub extends View {
                 unit = null;
             } else {
                 parent.addView(newView, indexOfChild, layoutParams);
-                unit = Unit.f31988a;
+                unit = Unit.f32556a;
             }
             if (unit == null) {
                 parent.addView(newView, indexOfChild);
@@ -70,7 +70,7 @@ public final class WorkflowViewStub extends View {
         @Override // kotlin.jvm.functions.Function2
         public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2) {
             a((ViewGroup) obj, (View) obj2);
-            return Unit.f31988a;
+            return Unit.f32556a;
         }
     }
 
@@ -102,7 +102,7 @@ public final class WorkflowViewStub extends View {
     public static final void d(View view, Function0 doStart) {
         Intrinsics.checkNotNullParameter(view, "view");
         Intrinsics.checkNotNullParameter(doStart, "doStart");
-        d.a.e(d.f27464h, view, null, 2, null);
+        d.a.e(d.f28032h, view, null, 2, null);
         doStart.invoke();
     }
 
@@ -123,7 +123,7 @@ public final class WorkflowViewStub extends View {
             ViewGroup viewGroup2 = viewGroup;
             if (viewGroup2 != null) {
                 View view2 = this.f18935d;
-                if (view2 != this && (c10 = d.f27464h.c(view2)) != null) {
+                if (view2 != this && (c10 = d.f28032h.c(view2)) != null) {
                     c10.f();
                 }
                 Context context = viewGroup2.getContext();

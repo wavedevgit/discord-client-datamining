@@ -12,51 +12,51 @@ import ok.i;
 abstract class c {
 
     /* renamed from: b  reason: collision with root package name */
-    private static final char[] f48142b;
+    private static final char[] f48710b;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final char[] f48144d;
+    private static final char[] f48712d;
 
     /* renamed from: a  reason: collision with root package name */
-    private static final char[] f48141a = {'*', '*', '*', ' ', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'};
+    private static final char[] f48709a = {'*', '*', '*', ' ', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'};
 
     /* renamed from: c  reason: collision with root package name */
-    private static final char[] f48143c = {'*', '*', '*', ' ', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'};
+    private static final char[] f48711c = {'*', '*', '*', ' ', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'};
 
     /* renamed from: e  reason: collision with root package name */
-    private static final char[] f48145e = {'`', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', '{', '|', '}', '~', 127};
+    private static final char[] f48713e = {'`', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', '{', '|', '}', '~', 127};
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     static /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f48146a;
+        static final /* synthetic */ int[] f48714a;
 
         static {
             int[] iArr = new int[b.values().length];
-            f48146a = iArr;
+            f48714a = iArr;
             try {
                 iArr[b.C40_ENCODE.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f48146a[b.TEXT_ENCODE.ordinal()] = 2;
+                f48714a[b.TEXT_ENCODE.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                f48146a[b.ANSIX12_ENCODE.ordinal()] = 3;
+                f48714a[b.ANSIX12_ENCODE.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
             try {
-                f48146a[b.EDIFACT_ENCODE.ordinal()] = 4;
+                f48714a[b.EDIFACT_ENCODE.ordinal()] = 4;
             } catch (NoSuchFieldError unused4) {
             }
             try {
-                f48146a[b.BASE256_ENCODE.ordinal()] = 5;
+                f48714a[b.BASE256_ENCODE.ordinal()] = 5;
             } catch (NoSuchFieldError unused5) {
             }
             try {
-                f48146a[b.ECI_ENCODE.ordinal()] = 6;
+                f48714a[b.ECI_ENCODE.ordinal()] = 6;
             } catch (NoSuchFieldError unused6) {
             }
         }
@@ -77,8 +77,8 @@ abstract class c {
 
     static {
         char[] cArr = {'!', '\"', '#', '$', '%', '&', '\'', '(', ')', '*', '+', ',', '-', '.', '/', ':', ';', '<', '=', '>', '?', '@', '[', '\\', ']', '^', '_'};
-        f48142b = cArr;
-        f48144d = cArr;
+        f48710b = cArr;
+        f48712d = cArr;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -119,7 +119,7 @@ abstract class c {
             sk.c$b r13 = c(r4, r5, r7, r14)
             goto L65
         L3c:
-            int[] r16 = sk.c.a.f48146a
+            int[] r16 = sk.c.a.f48714a
             int r13 = r13.ordinal()
             r13 = r16[r13]
             switch(r13) {
@@ -380,7 +380,7 @@ abstract class c {
                                 throw g.a();
                             }
                         } else {
-                            char[] cArr = f48142b;
+                            char[] cArr = f48710b;
                             if (i12 < cArr.length) {
                                 char c10 = cArr[i12];
                                 if (z10) {
@@ -412,7 +412,7 @@ abstract class c {
                 } else if (i12 < 3) {
                     i10 = i12 + 1;
                 } else {
-                    char[] cArr2 = f48141a;
+                    char[] cArr2 = f48709a;
                     if (i12 < cArr2.length) {
                         char c11 = cArr2[i12];
                         if (z10) {
@@ -480,7 +480,7 @@ abstract class c {
                     if (i10 != 1) {
                         if (i10 != 2) {
                             if (i10 == 3) {
-                                char[] cArr = f48145e;
+                                char[] cArr = f48713e;
                                 if (i12 < cArr.length) {
                                     char c10 = cArr[i12];
                                     if (z10) {
@@ -498,7 +498,7 @@ abstract class c {
                                 throw g.a();
                             }
                         } else {
-                            char[] cArr2 = f48144d;
+                            char[] cArr2 = f48712d;
                             if (i12 < cArr2.length) {
                                 char c11 = cArr2[i12];
                                 if (z10) {
@@ -530,7 +530,7 @@ abstract class c {
                 } else if (i12 < 3) {
                     i10 = i12 + 1;
                 } else {
-                    char[] cArr3 = f48143c;
+                    char[] cArr3 = f48711c;
                     if (i12 < cArr3.length) {
                         char c12 = cArr3[i12];
                         if (z10) {

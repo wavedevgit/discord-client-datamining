@@ -27,7 +27,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2 = var6.bind(var7)(var1);
         var1 = var2.useAnimatedStyle;
         var0 = function() {
-            _fun68761: for (var _fun68761_ip = 0;;) switch (_fun68761_ip) {
+            _fun62691: for (var _fun62691_ip = 0;;) switch (_fun62691_ip) {
                 case 0:
                     var1 = _closure2_slot3;
                     var5 = var1.inactive;
@@ -47,29 +47,29 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = var1.bind(var8)();
                     var1 = var6.bind(var7)(var1);
                     if (!(var4 !== var2)) {
-                        _fun68761_ip = 111;
-                        continue _fun68761
+                        _fun62691_ip = 111;
+                        continue _fun62691
                     }
                 case 80:
                     if (var3) {
-                        _fun68761_ip = 99;
-                        continue _fun68761
+                        _fun62691_ip = 99;
+                        continue _fun62691
                     }
                 case 83:
                     if (!(var1 === var2)) {
-                        _fun68761_ip = 121;
-                        continue _fun68761
+                        _fun62691_ip = 121;
+                        continue _fun62691
                     }
                 case 87:
                     var1 = _closure2_slot3;
                     var5 = var1.active;
-                    _fun68761_ip = 121;
-                    continue _fun68761;
+                    _fun62691_ip = 121;
+                    continue _fun62691;
                 case 99:
                     var1 = _closure2_slot3;
                     var5 = var1.inactive;
-                    _fun68761_ip = 121;
-                    continue _fun68761;
+                    _fun62691_ip = 121;
+                    continue _fun62691;
                 case 111:
                     var0 = _closure2_slot3;
                     var5 = var0.pressed;
@@ -347,7 +347,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/Tabs/native/TabItem.native.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun68765: for (var _fun68765_ip = 0;;) switch (_fun68765_ip) {
+        _fun62695: for (var _fun62695_ip = 0;;) switch (_fun62695_ip) {
             case 0:
                 var3 = arg0;
                 var13 = var3.label;
@@ -422,12 +422,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var16 = {};
                 var17 = 0;
                 if (!var18) {
-                    _fun68765_ip = 251;
-                    continue _fun68765
+                    _fun62695_ip = 249;
+                    continue _fun62695
                 }
-            case 248:
+            case 246:
                 var17 = 1;
-            case 251:
+            case 249:
                 var16.flexGrow = var17;
                 var15[1] = var16;
                 var0.style = var15;
@@ -479,10 +479,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var4 != var12;
                 var4 = null;
                 if (!var7) {
-                    _fun68765_ip = 423;
-                    continue _fun68765
+                    _fun62695_ip = 419;
+                    continue _fun62695
                 }
-            case 388:
+            case 384:
                 var8 = _closure1_slot4;
                 var7 = _closure1_slot15;
                 var6 = {};
@@ -491,7 +491,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6.activeIndex = var10;
                 var6.pressed = var9;
                 var4 = var8.bind(var3)(var7, var6);
-            case 423:
+            case 419:
                 var5[1] = var4;
                 var4 = 'children';
                 var0[var4] = var5;

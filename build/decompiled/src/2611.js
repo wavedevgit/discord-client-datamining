@@ -1,6 +1,6 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun22075: for (var _fun22075_ip = 0;;) switch (_fun22075_ip) {
+    _fun22097: for (var _fun22097_ip = 0;;) switch (_fun22097_ip) {
         case 0:
             var1 = exports;
             var0 = global;
@@ -19,15 +19,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var2 = require;
             var4 = var2.bind(var0)(var3);
             if (!var4) {
-                _fun22075_ip = 75;
-                continue _fun22075
+                _fun22097_ip = 75;
+                continue _fun22097
             }
         case 63:
             var2 = var4.__esModule;
             var3 = var4;
             if (var2) {
-                _fun22075_ip = 84;
-                continue _fun22075
+                _fun22097_ip = 84;
+                continue _fun22097
             }
         case 75:
             var2 = {};
@@ -38,10 +38,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var6 = var3.default;
             var4 = {};
             var5 = {
-                'full': "EEEE, d 'de' MMMM 'de' y",
-                'long': "d 'de' MMMM 'de' y",
-                'medium': 'd MMM y',
-                'short': 'dd/MM/y'
+                'full': 'EEEE, d MMMM yyyy',
+                'long': 'd MMMM yyyy',
+                'medium': 'd MMM yyyy',
+                'short': 'dd/MM/yyyy'
             };
             var4.formats = var5;
             var5 = 'full';
@@ -63,8 +63,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var4 = var3.default;
             var3 = {};
             var6 = {
-                'full': "{{date}} 'a las' {{time}}",
-                'long': "{{date}} 'a las' {{time}}",
+                'full': "{{date}} 'at' {{time}}",
+                'long': "{{date}} 'at' {{time}}",
                 'medium': '{{date}}, {{time}}',
                 'short': '{{date}}, {{time}}'
             };
@@ -78,4 +78,4 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var1.exports = var2;
             return var0;
     }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1692]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1695]);

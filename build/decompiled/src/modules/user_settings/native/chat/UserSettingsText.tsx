@@ -11,7 +11,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = function arg0, arg1, arg2, arg3, arg4() {
         var3 = _closure1_slot1;
         var2 = _closure1_slot2;
-        var0 = 10;
+        var0 = 11;
         var2 = var2[var0];
         var0 = undefined;
         var4 = var3.bind(var0)(var2);
@@ -47,7 +47,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2 = var13[var3](var12, var11, var10, var9, var8, var7);
         var2 = _closure1_slot1;
         var3 = _closure1_slot2;
-        var1 = 12;
+        var1 = 13;
         var1 = var3[var1];
         var3 = var2.bind(var0)(var1);
         var2 = var3.updatedUnsyncedSettings;
@@ -71,7 +71,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2 = var13[var3](var12, var11, var10, var9, var8, var7);
         var2 = _closure1_slot1;
         var3 = _closure1_slot2;
-        var1 = 12;
+        var1 = 13;
         var1 = var3[var1];
         var3 = var2.bind(var0)(var1);
         var2 = var3.updatedUnsyncedSettings;
@@ -95,7 +95,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2 = var13[var4](var12, var11, var10, var9, var8, var7);
         var2 = _closure1_slot0;
         var4 = _closure1_slot2;
-        var1 = 11;
+        var1 = 12;
         var1 = var4[var1];
         var1 = var2.bind(var0)(var1);
         var2 = var1.ViewImageDescriptions;
@@ -120,7 +120,6 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var12 = 1;
     var6 = var8[var12];
     var6 = var7.bind(var0)(var6);
-    var10 = var6.StyleSheet;
     var6 = var6.View;
     var _closure1_slot3 = var6;
     var6 = 2;
@@ -146,7 +145,6 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = 6;
     var6 = var8[var6];
     var6 = var7.bind(var0)(var6);
-    var14 = var6.Fonts;
     var9 = var6.AnalyticEvents;
     var _closure1_slot9 = var9;
     var9 = var6.AnalyticsSections;
@@ -167,40 +165,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot14 = var9;
     var6 = var6.Fragment;
     var _closure1_slot15 = var6;
-    var9 = var10.create;
+    var6 = 9;
+    var6 = var8[var6];
+    var10 = var7.bind(var0)(var6);
+    var9 = var10.createStyles;
     var6 = {};
     var11 = {};
     var11.flex = var12;
     var6.flex = var11;
-    var11 = {
-        'position': 'absolute',
-        'top': 4294967256,
-        'right': 0,
-        'left': 0,
-        'backgroundColor': null,
-        'justifyContent': 'center',
-        'alignItems': 'center',
-        'paddingTop': 5,
-        'paddingBottom': 4
-    };
-    var12 = 9;
-    var15 = var8[var12];
-    var15 = var13.bind(var0)(var15);
-    var15 = var15.unsafe_rawColors;
-    var15 = var15.GREEN_360;
-    var11.backgroundColor = var15;
-    var6.banner = var11;
-    var11 = {};
-    var15 = var8[var12];
-    var15 = var13.bind(var0)(var15);
-    var15 = var15.unsafe_rawColors;
-    var15 = var15.WHITE;
-    var11.color = var15;
-    var14 = var14.PRIMARY_SEMIBOLD;
-    var11.fontFamily = var14;
-    var14 = 14;
-    var11.fontSize = var14;
-    var6.cacheClearedText = var11;
     var11 = {
         'flexDirection': 'row',
         'alignItems': 'center'
@@ -210,6 +182,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         'width': 16,
         'height': 16
     };
+    var12 = 10;
     var12 = var8[var12];
     var12 = var13.bind(var0)(var12);
     var12 = var12.unsafe_rawColors;
@@ -218,20 +191,23 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6.nitroIcon = var11;
     var6 = var9.bind(var10)(var6);
     var _closure1_slot16 = var6;
-    var6 = 27;
+    var6 = 28;
     var6 = var8[var6];
     var8 = var7.bind(var0)(var6);
     var7 = var8.fileFinishedImporting;
     var6 = 'modules/user_settings/native/chat/UserSettingsText.tsx';
     var6 = var7.bind(var8)(var6);
     var6 = function() {
-        _fun84826: for (var _fun84826_ip = 0;;) switch (_fun84826_ip) {
+        _fun85915: for (var _fun85915_ip = 0;;) switch (_fun85915_ip) {
             case 0:
+                var0 = _closure1_slot16;
+                var3 = undefined;
+                var4 = var0.bind(var3)();
+                var _closure2_slot0 = var4;
                 var31 = _closure1_slot0;
                 var28 = _closure1_slot2;
-                var22 = 11;
+                var22 = 12;
                 var0 = var28[var22];
-                var3 = undefined;
                 var0 = var31.bind(var3)(var0);
                 var1 = var0.InlineAttachmentMedia;
                 var0 = var1.useSetting;
@@ -251,10 +227,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var0.RenderReactions;
                 var0 = var1.useSetting;
                 var23 = var0.bind(var1)();
-                var0 = 13;
+                var0 = 14;
                 var1 = var28[var0];
-                var5 = var31.bind(var3)(var1);
-                var4 = var5.useStateFromStoresObject;
+                var6 = var31.bind(var3)(var1);
+                var5 = var6.useStateFromStoresObject;
                 var1 = _closure1_slot7;
                 var2 = new Array(1);
                 var2[0] = var1;
@@ -269,16 +245,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0.dataSavingMode = var1;
                     return var0;
                 };
-                var1 = var4.bind(var5)(var2, var1);
+                var1 = var5.bind(var6)(var2, var1);
                 var2 = var1.lowQualityImageMode;
-                var _closure2_slot0 = var2;
+                var _closure2_slot1 = var2;
                 var19 = var1.videoUploadQuality;
-                var _closure2_slot1 = var19;
+                var _closure2_slot2 = var19;
                 var25 = var1.dataSavingMode;
-                var _closure2_slot2 = var25;
+                var _closure2_slot3 = var25;
                 var1 = var28[var0];
-                var5 = var31.bind(var3)(var1);
-                var4 = var5.useStateFromStores;
+                var6 = var31.bind(var3)(var1);
+                var5 = var6.useStateFromStores;
                 var1 = _closure1_slot5;
                 var2 = new Array(1);
                 var2[0] = var1;
@@ -288,10 +264,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = var0.bind(var1)();
                     return var0;
                 };
-                var5 = var4.bind(var5)(var2, var1);
+                var6 = var5.bind(var6)(var2, var1);
                 var1 = var28[var0];
-                var6 = var31.bind(var3)(var1);
-                var4 = var6.useStateFromStores;
+                var7 = var31.bind(var3)(var1);
+                var5 = var7.useStateFromStores;
                 var1 = _closure1_slot4;
                 var2 = new Array(1);
                 var2[0] = var1;
@@ -301,15 +277,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = var0.bind(var1)();
                     return var0;
                 };
-                var4 = var4.bind(var6)(var2, var1);
-                var1 = 14;
+                var5 = var5.bind(var7)(var2, var1);
+                var1 = 15;
                 var1 = var28[var1];
                 var2 = var31.bind(var3)(var1);
                 var1 = var2.hasPremiumSubscriptionToDisplay;
-                var16 = var1.bind(var2)(var4, var5);
+                var16 = var1.bind(var2)(var5, var6);
                 var0 = var28[var0];
-                var4 = var31.bind(var3)(var0);
-                var2 = var4.useStateFromStores;
+                var5 = var31.bind(var3)(var0);
+                var2 = var5.useStateFromStores;
                 var0 = _closure1_slot6;
                 var1 = new Array(1);
                 var1[0] = var0;
@@ -320,38 +296,37 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = var1.bind(var2)(var0);
                     return var0;
                 };
-                var17 = var2.bind(var4)(var1, var0);
+                var17 = var2.bind(var5)(var1, var0);
                 var0 = var28[var22];
                 var0 = var31.bind(var3)(var0);
                 var1 = var0.ViewImageDescriptions;
                 var0 = var1.useSetting;
                 var29 = var0.bind(var1)();
-                var _closure2_slot3 = var29;
-                var0 = 15;
+                var _closure2_slot4 = var29;
+                var0 = 16;
                 var0 = var28[var0];
                 var1 = var31.bind(var3)(var0);
                 var0 = var1.useNavigation;
                 var0 = var0.bind(var1)();
-                var _closure2_slot4 = var0;
+                var _closure2_slot5 = var0;
                 var2 = _closure1_slot13;
                 var1 = _closure1_slot3;
                 var0 = {};
-                var4 = _closure1_slot16;
                 var4 = var4.flex;
                 var0.style = var4;
-                var4 = 21;
+                var4 = 22;
                 var4 = var28[var4];
                 var4 = var31.bind(var3)(var4);
                 var5 = var4.Form;
                 var4 = {};
                 var8 = _closure1_slot14;
-                var6 = 22;
+                var6 = 23;
                 var6 = var28[var6];
                 var6 = var31.bind(var3)(var6);
                 var7 = var6.Stack;
                 var6 = {};
                 var10 = _closure1_slot1;
-                var9 = 9;
+                var9 = 10;
                 var9 = var28[var9];
                 var9 = var10.bind(var3)(var9);
                 var9 = var9.spacing;
@@ -363,12 +338,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6.style = var9;
                 var12 = _closure1_slot15;
                 var9 = {};
-                var10 = 23;
+                var10 = 24;
                 var13 = var28[var10];
                 var13 = var31.bind(var3)(var13);
                 var18 = var13.TableRowGroup;
                 var14 = {};
-                var21 = 20;
+                var21 = 21;
                 var13 = var28[var21];
                 var13 = var31.bind(var3)(var13);
                 var26 = var13.intl;
@@ -392,7 +367,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13.maxSize = var33;
                 var13 = var26.bind(var32)(var20, var13);
                 var14.description = var13;
-                var13 = 24;
+                var13 = 25;
                 var20 = var28[var13];
                 var20 = var31.bind(var3)(var20);
                 var26 = var20.TableSwitchRow;
@@ -474,13 +449,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var29 = function arg0() {
                     var2 = _closure1_slot20;
                     var1 = {};
-                    var3 = _closure2_slot1;
+                    var3 = _closure2_slot2;
                     var1.videoUploadQuality = var3;
                     var3 = arg0;
                     var1.viewImageDescriptions = var3;
-                    var3 = _closure2_slot0;
+                    var3 = _closure2_slot1;
                     var1.lowQualityImageMode = var3;
-                    var0 = _closure2_slot2;
+                    var0 = _closure2_slot3;
                     var1.dataSavingMode = var0;
                     var0 = undefined;
                     var1 = var2.bind(var0)(var1);
@@ -496,7 +471,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = new Array(6);
                 var9[0] = var12;
                 var12 = {};
-                var14 = 25;
+                var14 = 26;
                 var14 = var28[var14];
                 var14 = var31.bind(var3)(var14);
                 var18 = var14.TableRadioGroup;
@@ -519,11 +494,11 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = {};
                     var0 = arg0;
                     var1.videoUploadQuality = var0;
-                    var3 = _closure2_slot3;
+                    var3 = _closure2_slot4;
                     var1.viewImageDescriptions = var3;
-                    var3 = _closure2_slot0;
+                    var3 = _closure2_slot1;
                     var1.lowQualityImageMode = var3;
-                    var0 = _closure2_slot2;
+                    var0 = _closure2_slot3;
                     var1.dataSavingMode = var0;
                     var0 = undefined;
                     var1 = var2.bind(var0)(var1);
@@ -543,7 +518,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var19.supportURL = var29;
                 var19 = var26.bind(var27)(var20, var19);
                 var14.description = var19;
-                var20 = 26;
+                var20 = 27;
                 var19 = var28[var20];
                 var19 = var31.bind(var3)(var19);
                 var26 = var19.TableRadioRow;
@@ -606,26 +581,26 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var14[0] = var18;
                 var16 = !var16;
                 if (!var16) {
-                    _fun84826_ip = 1515;
-                    continue _fun84826
+                    _fun85915_ip = 1523;
+                    continue _fun85915
                 }
-            case 1504:
+            case 1512:
                 var18 = function() {
                     var3 = _closure1_slot14;
                     var2 = _closure1_slot3;
                     var1 = {};
-                    var8 = _closure1_slot16;
+                    var8 = _closure2_slot0;
                     var0 = var8.nitroUpsell;
                     var1.style = var0;
                     var7 = _closure1_slot13;
                     var10 = _closure1_slot1;
                     var12 = _closure1_slot2;
-                    var9 = 17;
+                    var9 = 18;
                     var4 = var12[var9];
                     var0 = undefined;
                     var6 = var10.bind(var0)(var4);
                     var4 = {};
-                    var11 = 18;
+                    var11 = 19;
                     var11 = var12[var11];
                     var11 = var10.bind(var0)(var11);
                     var4.source = var11;
@@ -640,7 +615,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var4 = new Array(2);
                     var4[0] = var6;
                     var9 = _closure1_slot0;
-                    var5 = 19;
+                    var5 = 20;
                     var5 = var12[var5];
                     var5 = var9.bind(var0)(var5);
                     var6 = var5.Text;
@@ -652,7 +627,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var10 = 4;
                     var8.marginLeft = var10;
                     var5.style = var8;
-                    var8 = 20;
+                    var8 = 21;
                     var10 = var12[var8];
                     var10 = var9.bind(var0)(var10);
                     var11 = var10.intl;
@@ -665,7 +640,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var12 = function() {
                         var3 = _closure1_slot1;
                         var2 = _closure1_slot2;
-                        var1 = 16;
+                        var1 = 17;
                         var2 = var2[var1];
                         var1 = undefined;
                         var3 = var3.bind(var1)(var2);
@@ -673,7 +648,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var0 = _closure1_slot11;
                         var1 = var0.PREMIUM;
                         var1 = var2.bind(var3)(var1);
-                        var3 = _closure2_slot4;
+                        var3 = _closure2_slot5;
                         var2 = var3.push;
                         var1 = var0.PREMIUM;
                         var0 = {};
@@ -693,7 +668,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var16 = var18.bind(var3)();
-            case 1515:
+            case 1523:
                 var14[1] = var16;
                 var12.children = var14;
                 var12 = var8.bind(var3)(var1, var12);
@@ -743,11 +718,11 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var25 = function arg0() {
                     var2 = _closure1_slot18;
                     var1 = {};
-                    var3 = _closure2_slot1;
+                    var3 = _closure2_slot2;
                     var1.videoUploadQuality = var3;
-                    var3 = _closure2_slot3;
+                    var3 = _closure2_slot4;
                     var1.viewImageDescriptions = var3;
-                    var0 = _closure2_slot0;
+                    var0 = _closure2_slot1;
                     var1.lowQualityImageMode = var0;
                     var0 = arg0;
                     var1.dataSavingMode = var0;
@@ -880,7 +855,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var15 = function arg0() {
                     var2 = _closure1_slot1;
                     var1 = _closure1_slot2;
-                    var0 = 12;
+                    var0 = 13;
                     var1 = var1[var0];
                     var0 = undefined;
                     var3 = var2.bind(var0)(var1);
@@ -908,7 +883,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var3 = arg0;
         var5 = _closure1_slot1;
         var4 = _closure1_slot2;
-        var0 = 10;
+        var0 = 11;
         var2 = var4[var0];
         var0 = undefined;
         var7 = var5.bind(var0)(var2);
@@ -924,7 +899,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2.location = var8;
         var2 = var6.bind(var7)(var5, var2);
         var2 = _closure1_slot0;
-        var1 = 11;
+        var1 = 12;
         var1 = var4[var1];
         var1 = var2.bind(var0)(var1);
         var2 = var1.IncludeStickersInAutocomplete;
@@ -947,7 +922,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2 = var13[var3](var12, var11, var10, var9, var8, var7);
         var2 = _closure1_slot1;
         var3 = _closure1_slot2;
-        var1 = 12;
+        var1 = 13;
         var1 = var3[var1];
         var3 = var2.bind(var0)(var1);
         var2 = var3.updatedUnsyncedSettings;
@@ -961,4 +936,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.setVideoUploadQuality = var3;
     var2.setImageDescriptions = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1621, 3119, 1354, 3199, 660, 4846, 33, 671, 795, 1348, 8062, 566, 3111, 1469, 7329, 4092, 6755, 3938, 1234, 5441, 4086, 5343, 5344, 5481, 5480, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1621, 3122, 1354, 3202, 660, 4877, 33, 1297, 671, 796, 1348, 7684, 566, 3114, 1469, 7309, 4092, 6737, 3938, 1235, 5438, 4086, 5423, 5476, 5482, 5481, 2]);

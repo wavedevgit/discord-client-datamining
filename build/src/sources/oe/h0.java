@@ -6,58 +6,58 @@ import java.util.Arrays;
 public final class h0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private static final char[] f38953d = {'\r', '\n'};
+    private static final char[] f39521d = {'\r', '\n'};
 
     /* renamed from: e  reason: collision with root package name */
-    private static final char[] f38954e = {'\n'};
+    private static final char[] f39522e = {'\n'};
 
     /* renamed from: f  reason: collision with root package name */
-    private static final qi.u f38955f = qi.u.x(pi.d.f42736a, pi.d.f42738c, pi.d.f42741f, pi.d.f42739d, pi.d.f42740e);
+    private static final qi.u f39523f = qi.u.x(pi.d.f43304a, pi.d.f43306c, pi.d.f43309f, pi.d.f43307d, pi.d.f43308e);
 
     /* renamed from: a  reason: collision with root package name */
-    private byte[] f38956a;
+    private byte[] f39524a;
 
     /* renamed from: b  reason: collision with root package name */
-    private int f38957b;
+    private int f39525b;
 
     /* renamed from: c  reason: collision with root package name */
-    private int f38958c;
+    private int f39526c;
 
     public h0() {
-        this.f38956a = w0.f39043f;
+        this.f39524a = w0.f39611f;
     }
 
     private void W(Charset charset) {
-        if (m(charset, f38953d) == '\r') {
-            m(charset, f38954e);
+        if (m(charset, f39521d) == '\r') {
+            m(charset, f39522e);
         }
     }
 
     private int d(Charset charset) {
         int i10;
-        if (!charset.equals(pi.d.f42738c) && !charset.equals(pi.d.f42736a)) {
-            if (!charset.equals(pi.d.f42741f) && !charset.equals(pi.d.f42740e) && !charset.equals(pi.d.f42739d)) {
+        if (!charset.equals(pi.d.f43306c) && !charset.equals(pi.d.f43304a)) {
+            if (!charset.equals(pi.d.f43309f) && !charset.equals(pi.d.f43308e) && !charset.equals(pi.d.f43307d)) {
                 throw new IllegalArgumentException("Unsupported charset: " + charset);
             }
             i10 = 2;
         } else {
             i10 = 1;
         }
-        int i11 = this.f38957b;
+        int i11 = this.f39525b;
         while (true) {
-            int i12 = this.f38958c;
+            int i12 = this.f39526c;
             if (i11 < i12 - (i10 - 1)) {
-                if ((charset.equals(pi.d.f42738c) || charset.equals(pi.d.f42736a)) && w0.F0(this.f38956a[i11])) {
+                if ((charset.equals(pi.d.f43306c) || charset.equals(pi.d.f43304a)) && w0.F0(this.f39524a[i11])) {
                     break;
                 }
-                if (charset.equals(pi.d.f42741f) || charset.equals(pi.d.f42739d)) {
-                    byte[] bArr = this.f38956a;
+                if (charset.equals(pi.d.f43309f) || charset.equals(pi.d.f43307d)) {
+                    byte[] bArr = this.f39524a;
                     if (bArr[i11] == 0 && w0.F0(bArr[i11 + 1])) {
                         break;
                     }
                 }
-                if (charset.equals(pi.d.f42740e)) {
-                    byte[] bArr2 = this.f38956a;
+                if (charset.equals(pi.d.f43308e)) {
+                    byte[] bArr2 = this.f39524a;
                     if (bArr2[i11 + 1] == 0 && w0.F0(bArr2[i11])) {
                         break;
                     }
@@ -74,16 +74,16 @@ public final class h0 {
         byte a10;
         char c10;
         int i10 = 1;
-        if ((charset.equals(pi.d.f42738c) || charset.equals(pi.d.f42736a)) && a() >= 1) {
-            a10 = (byte) si.b.a(si.h.b(this.f38956a[this.f38957b]));
+        if ((charset.equals(pi.d.f43306c) || charset.equals(pi.d.f43304a)) && a() >= 1) {
+            a10 = (byte) si.b.a(si.h.b(this.f39524a[this.f39525b]));
         } else {
-            if ((charset.equals(pi.d.f42741f) || charset.equals(pi.d.f42739d)) && a() >= 2) {
-                byte[] bArr = this.f38956a;
-                int i11 = this.f38957b;
+            if ((charset.equals(pi.d.f43309f) || charset.equals(pi.d.f43307d)) && a() >= 2) {
+                byte[] bArr = this.f39524a;
+                int i11 = this.f39525b;
                 c10 = si.b.c(bArr[i11], bArr[i11 + 1]);
-            } else if (charset.equals(pi.d.f42740e) && a() >= 2) {
-                byte[] bArr2 = this.f38956a;
-                int i12 = this.f38957b;
+            } else if (charset.equals(pi.d.f43308e) && a() >= 2) {
+                byte[] bArr2 = this.f39524a;
+                int i12 = this.f39525b;
                 c10 = si.b.c(bArr2[i12 + 1], bArr2[i12]);
             } else {
                 return 0;
@@ -99,7 +99,7 @@ public final class h0 {
         if (i10 != 0) {
             char c10 = (char) (i10 >> 16);
             if (si.b.b(cArr, c10)) {
-                this.f38957b += i10 & 65535;
+                this.f39525b += i10 & 65535;
                 return c10;
             }
             return (char) 0;
@@ -108,25 +108,25 @@ public final class h0 {
     }
 
     public long A() {
-        byte[] bArr = this.f38956a;
-        int i10 = this.f38957b;
+        byte[] bArr = this.f39524a;
+        int i10 = this.f39525b;
         int i11 = i10 + 1;
-        this.f38957b = i11;
+        this.f39525b = i11;
         int i12 = i10 + 2;
-        this.f38957b = i12;
+        this.f39525b = i12;
         int i13 = i10 + 3;
-        this.f38957b = i13;
+        this.f39525b = i13;
         long j10 = ((bArr[i10] & 255) << 56) | ((bArr[i11] & 255) << 48) | ((bArr[i12] & 255) << 40);
         int i14 = i10 + 4;
-        this.f38957b = i14;
+        this.f39525b = i14;
         int i15 = i10 + 5;
-        this.f38957b = i15;
+        this.f39525b = i15;
         long j11 = j10 | ((bArr[i13] & 255) << 32) | ((bArr[i14] & 255) << 24);
         int i16 = i10 + 6;
-        this.f38957b = i16;
+        this.f39525b = i16;
         int i17 = i10 + 7;
-        this.f38957b = i17;
-        this.f38957b = i10 + 8;
+        this.f39525b = i17;
+        this.f39525b = i10 + 8;
         return (bArr[i17] & 255) | j11 | ((bArr[i15] & 255) << 16) | ((bArr[i16] & 255) << 8);
     }
 
@@ -139,34 +139,34 @@ public final class h0 {
         if (i10 == 0) {
             return "";
         }
-        int i12 = this.f38957b;
+        int i12 = this.f39525b;
         int i13 = (i12 + i10) - 1;
-        if (i13 < this.f38958c && this.f38956a[i13] == 0) {
+        if (i13 < this.f39526c && this.f39524a[i13] == 0) {
             i11 = i10 - 1;
         } else {
             i11 = i10;
         }
-        String F = w0.F(this.f38956a, i12, i11);
-        this.f38957b += i10;
+        String F = w0.F(this.f39524a, i12, i11);
+        this.f39525b += i10;
         return F;
     }
 
     public short D() {
-        byte[] bArr = this.f38956a;
-        int i10 = this.f38957b;
+        byte[] bArr = this.f39524a;
+        int i10 = this.f39525b;
         int i11 = i10 + 1;
-        this.f38957b = i11;
-        this.f38957b = i10 + 2;
+        this.f39525b = i11;
+        this.f39525b = i10 + 2;
         return (short) ((bArr[i11] & 255) | ((bArr[i10] & 255) << 8));
     }
 
     public String E(int i10) {
-        return F(i10, pi.d.f42738c);
+        return F(i10, pi.d.f43306c);
     }
 
     public String F(int i10, Charset charset) {
-        String str = new String(this.f38956a, this.f38957b, i10, charset);
-        this.f38957b += i10;
+        String str = new String(this.f39524a, this.f39525b, i10, charset);
+        this.f39525b += i10;
         return str;
     }
 
@@ -175,45 +175,45 @@ public final class h0 {
     }
 
     public int H() {
-        byte[] bArr = this.f38956a;
-        int i10 = this.f38957b;
-        this.f38957b = i10 + 1;
+        byte[] bArr = this.f39524a;
+        int i10 = this.f39525b;
+        this.f39525b = i10 + 1;
         return bArr[i10] & 255;
     }
 
     public int I() {
-        byte[] bArr = this.f38956a;
-        int i10 = this.f38957b;
+        byte[] bArr = this.f39524a;
+        int i10 = this.f39525b;
         int i11 = i10 + 1;
-        this.f38957b = i11;
-        this.f38957b = i10 + 2;
+        this.f39525b = i11;
+        this.f39525b = i10 + 2;
         int i12 = (bArr[i11] & 255) | ((bArr[i10] & 255) << 8);
-        this.f38957b = i10 + 4;
+        this.f39525b = i10 + 4;
         return i12;
     }
 
     public long J() {
-        byte[] bArr = this.f38956a;
-        int i10 = this.f38957b;
+        byte[] bArr = this.f39524a;
+        int i10 = this.f39525b;
         int i11 = i10 + 1;
-        this.f38957b = i11;
+        this.f39525b = i11;
         int i12 = i10 + 2;
-        this.f38957b = i12;
+        this.f39525b = i12;
         int i13 = i10 + 3;
-        this.f38957b = i13;
-        this.f38957b = i10 + 4;
+        this.f39525b = i13;
+        this.f39525b = i10 + 4;
         return (bArr[i13] & 255) | ((bArr[i10] & 255) << 24) | ((bArr[i11] & 255) << 16) | ((bArr[i12] & 255) << 8);
     }
 
     public int K() {
-        byte[] bArr = this.f38956a;
-        int i10 = this.f38957b;
+        byte[] bArr = this.f39524a;
+        int i10 = this.f39525b;
         int i11 = i10 + 1;
-        this.f38957b = i11;
+        this.f39525b = i11;
         int i12 = i10 + 2;
-        this.f38957b = i12;
+        this.f39525b = i12;
         int i13 = (bArr[i11] & 255) << 8;
-        this.f38957b = i10 + 3;
+        this.f39525b = i10 + 3;
         return (bArr[i12] & 255) | i13 | ((bArr[i10] & 255) << 16);
     }
 
@@ -234,11 +234,11 @@ public final class h0 {
     }
 
     public int N() {
-        byte[] bArr = this.f38956a;
-        int i10 = this.f38957b;
+        byte[] bArr = this.f39524a;
+        int i10 = this.f39525b;
         int i11 = i10 + 1;
-        this.f38957b = i11;
-        this.f38957b = i10 + 2;
+        this.f39525b = i11;
+        this.f39525b = i10 + 2;
         return (bArr[i11] & 255) | ((bArr[i10] & 255) << 8);
     }
 
@@ -247,7 +247,7 @@ public final class h0 {
         int i11;
         byte b10;
         int i12;
-        long j10 = this.f38956a[this.f38957b];
+        long j10 = this.f39524a[this.f39525b];
         int i13 = 7;
         while (true) {
             if (i13 < 0) {
@@ -265,13 +265,13 @@ public final class h0 {
         i11 = 0;
         if (i11 != 0) {
             for (i10 = 1; i10 < i11; i10++) {
-                if ((this.f38956a[this.f38957b + i10] & 192) == 128) {
+                if ((this.f39524a[this.f39525b + i10] & 192) == 128) {
                     j10 = (j10 << 6) | (b10 & 63);
                 } else {
                     throw new NumberFormatException("Invalid UTF-8 sequence continuation byte: " + j10);
                 }
             }
-            this.f38957b += i11;
+            this.f39525b += i11;
             return j10;
         }
         throw new NumberFormatException("Invalid UTF-8 sequence first byte: " + j10);
@@ -279,23 +279,23 @@ public final class h0 {
 
     public Charset P() {
         if (a() >= 3) {
-            byte[] bArr = this.f38956a;
-            int i10 = this.f38957b;
+            byte[] bArr = this.f39524a;
+            int i10 = this.f39525b;
             if (bArr[i10] == -17 && bArr[i10 + 1] == -69 && bArr[i10 + 2] == -65) {
-                this.f38957b = i10 + 3;
-                return pi.d.f42738c;
+                this.f39525b = i10 + 3;
+                return pi.d.f43306c;
             }
         }
         if (a() >= 2) {
-            byte[] bArr2 = this.f38956a;
-            int i11 = this.f38957b;
+            byte[] bArr2 = this.f39524a;
+            int i11 = this.f39525b;
             byte b10 = bArr2[i11];
             if (b10 == -2 && bArr2[i11 + 1] == -1) {
-                this.f38957b = i11 + 2;
-                return pi.d.f42739d;
+                this.f39525b = i11 + 2;
+                return pi.d.f43307d;
             } else if (b10 == -1 && bArr2[i11 + 1] == -2) {
-                this.f38957b = i11 + 2;
-                return pi.d.f42740e;
+                this.f39525b = i11 + 2;
+                return pi.d.f43308e;
             } else {
                 return null;
             }
@@ -308,7 +308,7 @@ public final class h0 {
         if (b() < i10) {
             bArr = new byte[i10];
         } else {
-            bArr = this.f38956a;
+            bArr = this.f39524a;
         }
         S(bArr, i10);
     }
@@ -318,97 +318,97 @@ public final class h0 {
     }
 
     public void S(byte[] bArr, int i10) {
-        this.f38956a = bArr;
-        this.f38958c = i10;
-        this.f38957b = 0;
+        this.f39524a = bArr;
+        this.f39526c = i10;
+        this.f39525b = 0;
     }
 
     public void T(int i10) {
         boolean z10;
-        if (i10 >= 0 && i10 <= this.f38956a.length) {
+        if (i10 >= 0 && i10 <= this.f39524a.length) {
             z10 = true;
         } else {
             z10 = false;
         }
         a.a(z10);
-        this.f38958c = i10;
+        this.f39526c = i10;
     }
 
     public void U(int i10) {
         boolean z10;
-        if (i10 >= 0 && i10 <= this.f38958c) {
+        if (i10 >= 0 && i10 <= this.f39526c) {
             z10 = true;
         } else {
             z10 = false;
         }
         a.a(z10);
-        this.f38957b = i10;
+        this.f39525b = i10;
     }
 
     public void V(int i10) {
-        U(this.f38957b + i10);
+        U(this.f39525b + i10);
     }
 
     public int a() {
-        return this.f38958c - this.f38957b;
+        return this.f39526c - this.f39525b;
     }
 
     public int b() {
-        return this.f38956a.length;
+        return this.f39524a.length;
     }
 
     public void c(int i10) {
         if (i10 > b()) {
-            this.f38956a = Arrays.copyOf(this.f38956a, i10);
+            this.f39524a = Arrays.copyOf(this.f39524a, i10);
         }
     }
 
     public byte[] e() {
-        return this.f38956a;
+        return this.f39524a;
     }
 
     public int f() {
-        return this.f38957b;
+        return this.f39525b;
     }
 
     public int g() {
-        return this.f38958c;
+        return this.f39526c;
     }
 
     public char h(Charset charset) {
-        boolean contains = f38955f.contains(charset);
+        boolean contains = f39523f.contains(charset);
         a.b(contains, "Unsupported charset: " + charset);
         return (char) (i(charset) >> 16);
     }
 
     public int j() {
-        return this.f38956a[this.f38957b] & 255;
+        return this.f39524a[this.f39525b] & 255;
     }
 
     public void k(g0 g0Var, int i10) {
-        l(g0Var.f38947a, 0, i10);
+        l(g0Var.f39515a, 0, i10);
         g0Var.p(0);
     }
 
     public void l(byte[] bArr, int i10, int i11) {
-        System.arraycopy(this.f38956a, this.f38957b, bArr, i10, i11);
-        this.f38957b += i11;
+        System.arraycopy(this.f39524a, this.f39525b, bArr, i10, i11);
+        this.f39525b += i11;
     }
 
     public String n(char c10) {
         if (a() == 0) {
             return null;
         }
-        int i10 = this.f38957b;
-        while (i10 < this.f38958c && this.f38956a[i10] != c10) {
+        int i10 = this.f39525b;
+        while (i10 < this.f39526c && this.f39524a[i10] != c10) {
             i10++;
         }
-        byte[] bArr = this.f38956a;
-        int i11 = this.f38957b;
+        byte[] bArr = this.f39524a;
+        int i11 = this.f39525b;
         String F = w0.F(bArr, i11, i10 - i11);
-        this.f38957b = i10;
-        if (i10 < this.f38958c) {
-            this.f38957b = i10 + 1;
+        this.f39525b = i10;
+        if (i10 < this.f39526c) {
+            this.f39525b = i10 + 1;
         }
         return F;
     }
@@ -422,46 +422,46 @@ public final class h0 {
     }
 
     public int q() {
-        byte[] bArr = this.f38956a;
-        int i10 = this.f38957b;
+        byte[] bArr = this.f39524a;
+        int i10 = this.f39525b;
         int i11 = i10 + 1;
-        this.f38957b = i11;
+        this.f39525b = i11;
         int i12 = i10 + 2;
-        this.f38957b = i12;
+        this.f39525b = i12;
         int i13 = ((bArr[i11] & 255) << 16) | ((bArr[i10] & 255) << 24);
         int i14 = i10 + 3;
-        this.f38957b = i14;
-        this.f38957b = i10 + 4;
+        this.f39525b = i14;
+        this.f39525b = i10 + 4;
         return (bArr[i14] & 255) | i13 | ((bArr[i12] & 255) << 8);
     }
 
     public int r() {
-        byte[] bArr = this.f38956a;
-        int i10 = this.f38957b;
+        byte[] bArr = this.f39524a;
+        int i10 = this.f39525b;
         int i11 = i10 + 1;
-        this.f38957b = i11;
+        this.f39525b = i11;
         int i12 = i10 + 2;
-        this.f38957b = i12;
+        this.f39525b = i12;
         int i13 = (bArr[i11] & 255) << 8;
-        this.f38957b = i10 + 3;
+        this.f39525b = i10 + 3;
         return (bArr[i12] & 255) | i13 | (((bArr[i10] & 255) << 24) >> 8);
     }
 
     public String s() {
-        return t(pi.d.f42738c);
+        return t(pi.d.f43306c);
     }
 
     public String t(Charset charset) {
-        boolean contains = f38955f.contains(charset);
+        boolean contains = f39523f.contains(charset);
         a.b(contains, "Unsupported charset: " + charset);
         if (a() == 0) {
             return null;
         }
-        if (!charset.equals(pi.d.f42736a)) {
+        if (!charset.equals(pi.d.f43304a)) {
             P();
         }
-        String F = F(d(charset) - this.f38957b, charset);
-        if (this.f38957b == this.f38958c) {
+        String F = F(d(charset) - this.f39525b, charset);
+        if (this.f39525b == this.f39526c) {
             return F;
         }
         W(charset);
@@ -469,62 +469,62 @@ public final class h0 {
     }
 
     public int u() {
-        byte[] bArr = this.f38956a;
-        int i10 = this.f38957b;
+        byte[] bArr = this.f39524a;
+        int i10 = this.f39525b;
         int i11 = i10 + 1;
-        this.f38957b = i11;
+        this.f39525b = i11;
         int i12 = i10 + 2;
-        this.f38957b = i12;
+        this.f39525b = i12;
         int i13 = ((bArr[i11] & 255) << 8) | (bArr[i10] & 255);
         int i14 = i10 + 3;
-        this.f38957b = i14;
-        this.f38957b = i10 + 4;
+        this.f39525b = i14;
+        this.f39525b = i10 + 4;
         return ((bArr[i14] & 255) << 24) | i13 | ((bArr[i12] & 255) << 16);
     }
 
     public long v() {
-        byte[] bArr = this.f38956a;
-        int i10 = this.f38957b;
+        byte[] bArr = this.f39524a;
+        int i10 = this.f39525b;
         int i11 = i10 + 1;
-        this.f38957b = i11;
+        this.f39525b = i11;
         int i12 = i10 + 2;
-        this.f38957b = i12;
+        this.f39525b = i12;
         long j10 = (bArr[i10] & 255) | ((bArr[i11] & 255) << 8);
         int i13 = i10 + 3;
-        this.f38957b = i13;
+        this.f39525b = i13;
         int i14 = i10 + 4;
-        this.f38957b = i14;
+        this.f39525b = i14;
         long j11 = j10 | ((bArr[i12] & 255) << 16) | ((bArr[i13] & 255) << 24);
         int i15 = i10 + 5;
-        this.f38957b = i15;
+        this.f39525b = i15;
         int i16 = i10 + 6;
-        this.f38957b = i16;
+        this.f39525b = i16;
         long j12 = j11 | ((bArr[i14] & 255) << 32) | ((bArr[i15] & 255) << 40);
         int i17 = i10 + 7;
-        this.f38957b = i17;
-        this.f38957b = i10 + 8;
+        this.f39525b = i17;
+        this.f39525b = i10 + 8;
         return ((bArr[i17] & 255) << 56) | j12 | ((bArr[i16] & 255) << 48);
     }
 
     public short w() {
-        byte[] bArr = this.f38956a;
-        int i10 = this.f38957b;
+        byte[] bArr = this.f39524a;
+        int i10 = this.f39525b;
         int i11 = i10 + 1;
-        this.f38957b = i11;
-        this.f38957b = i10 + 2;
+        this.f39525b = i11;
+        this.f39525b = i10 + 2;
         return (short) (((bArr[i11] & 255) << 8) | (bArr[i10] & 255));
     }
 
     public long x() {
-        byte[] bArr = this.f38956a;
-        int i10 = this.f38957b;
+        byte[] bArr = this.f39524a;
+        int i10 = this.f39525b;
         int i11 = i10 + 1;
-        this.f38957b = i11;
+        this.f39525b = i11;
         int i12 = i10 + 2;
-        this.f38957b = i12;
+        this.f39525b = i12;
         int i13 = i10 + 3;
-        this.f38957b = i13;
-        this.f38957b = i10 + 4;
+        this.f39525b = i13;
+        this.f39525b = i10 + 4;
         return ((bArr[i13] & 255) << 24) | (bArr[i10] & 255) | ((bArr[i11] & 255) << 8) | ((bArr[i12] & 255) << 16);
     }
 
@@ -537,26 +537,26 @@ public final class h0 {
     }
 
     public int z() {
-        byte[] bArr = this.f38956a;
-        int i10 = this.f38957b;
+        byte[] bArr = this.f39524a;
+        int i10 = this.f39525b;
         int i11 = i10 + 1;
-        this.f38957b = i11;
-        this.f38957b = i10 + 2;
+        this.f39525b = i11;
+        this.f39525b = i10 + 2;
         return ((bArr[i11] & 255) << 8) | (bArr[i10] & 255);
     }
 
     public h0(int i10) {
-        this.f38956a = new byte[i10];
-        this.f38958c = i10;
+        this.f39524a = new byte[i10];
+        this.f39526c = i10;
     }
 
     public h0(byte[] bArr) {
-        this.f38956a = bArr;
-        this.f38958c = bArr.length;
+        this.f39524a = bArr;
+        this.f39526c = bArr.length;
     }
 
     public h0(byte[] bArr, int i10) {
-        this.f38956a = bArr;
-        this.f38958c = i10;
+        this.f39524a = bArr;
+        this.f39526c = i10;
     }
 }

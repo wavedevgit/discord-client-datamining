@@ -7,15 +7,15 @@ import java.util.List;
 final class b extends u0 {
 
     /* renamed from: e  reason: collision with root package name */
-    final /* synthetic */ IBinder f37899e;
+    final /* synthetic */ IBinder f38467e;
 
     /* renamed from: i  reason: collision with root package name */
-    final /* synthetic */ e f37900i;
+    final /* synthetic */ e f38468i;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public b(e eVar, IBinder iBinder) {
-        this.f37899e = iBinder;
-        this.f37900i = eVar;
+        this.f38467e = iBinder;
+        this.f38468i = eVar;
     }
 
     @Override // ni.u0
@@ -23,15 +23,15 @@ final class b extends u0 {
         a1 a1Var;
         List<Runnable> list;
         List list2;
-        a1Var = this.f37900i.f37902d.f37912i;
-        this.f37900i.f37902d.f37917n = (IInterface) a1Var.a(this.f37899e);
-        f.r(this.f37900i.f37902d);
-        this.f37900i.f37902d.f37910g = false;
-        list = this.f37900i.f37902d.f37907d;
+        a1Var = this.f38468i.f38470d.f38480i;
+        this.f38468i.f38470d.f38485n = (IInterface) a1Var.a(this.f38467e);
+        f.r(this.f38468i.f38470d);
+        this.f38468i.f38470d.f38478g = false;
+        list = this.f38468i.f38470d.f38475d;
         for (Runnable runnable : list) {
             runnable.run();
         }
-        list2 = this.f37900i.f37902d.f37907d;
+        list2 = this.f38468i.f38470d.f38475d;
         list2.clear();
     }
 }

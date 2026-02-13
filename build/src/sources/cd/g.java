@@ -1576,7 +1576,7 @@ public class g implements uc.k {
         this.f8098o = b0Var;
         this.f8094k = new jd.c();
         this.f8095l = new h0(16);
-        this.f8088e = new h0(d0.f38891a);
+        this.f8088e = new h0(d0.f39459a);
         this.f8089f = new h0(5);
         this.f8090g = new h0();
         byte[] bArr = new byte[16];
@@ -1588,7 +1588,7 @@ public class g implements uc.k {
         this.f8107x = -9223372036854775807L;
         this.f8106w = -9223372036854775807L;
         this.f8108y = -9223372036854775807L;
-        this.E = uc.m.f50686l;
+        this.E = uc.m.f51254l;
         this.F = new b0[0];
         this.G = new b0[0];
     }

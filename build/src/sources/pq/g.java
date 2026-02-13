@@ -18,7 +18,7 @@ public abstract class g {
             return null;
         }
         final ShapeableImageView shapeableImageView = new ShapeableImageView(a10);
-        shapeableImageView.setImageResource(nq.d.f38245b);
+        shapeableImageView.setImageResource(nq.d.f38813b);
         shapeableImageView.setAdjustViewBounds(true);
         int dimension = (int) a10.getResources().getDimension(bq.k.f7367b);
         shapeableImageView.setPadding(dimension, shapeableImageView.getPaddingTop(), dimension, shapeableImageView.getPaddingBottom());
@@ -42,7 +42,7 @@ public abstract class g {
             ((ViewGroup.MarginLayoutParams) layoutParams2).width = -2;
             ((ViewGroup.MarginLayoutParams) layoutParams2).height = -2;
             shapeableImageView.setLayoutParams(layoutParams2);
-            return Unit.f31988a;
+            return Unit.f32556a;
         }
         throw new NullPointerException("null cannot be cast to non-null type androidx.constraintlayout.widget.ConstraintLayout.LayoutParams");
     }

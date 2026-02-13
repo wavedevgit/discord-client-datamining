@@ -35,7 +35,9 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = function arg0() {
         var0 = arg0;
         var13 = var0.guildId;
+        var _closure2_slot0 = var13;
         var12 = var0.user;
+        var _closure2_slot1 = var12;
         var2 = var0.cancelButtonCallback;
         var10 = _closure1_slot1;
         var11 = _closure1_slot2;
@@ -46,25 +48,17 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = {};
         var0.onBeforeGoBack = var2;
         var0 = var1.bind(var3)(var0);
-        var6 = var0.onGoBack;
+        var0 = var0.onGoBack;
+        var _closure2_slot2 = var0;
         var2 = _closure1_slot3;
         var0 = 3;
-        var0 = var11[var0];
-        var1 = var10.bind(var3)(var0);
-        var0 = {};
-        var0.user = var12;
-        var0.guildId = var13;
-        var0.onClose = var6;
-        var0 = var2.bind(var3)(var1, var0);
-        var _closure2_slot0 = var0;
-        var0 = 4;
         var0 = var11[var0];
         var1 = var10.bind(var3)(var0);
         var0 = {};
         var6 = 'disableCommunication';
         var0.screenKey = var6;
         var6 = _closure1_slot0;
-        var5 = 5;
+        var5 = 4;
         var7 = var11[var5];
         var7 = var6.bind(var3)(var7);
         var8 = var7.intl;
@@ -74,7 +68,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = var5.t;
         var6 = var5.FN7NIS;
         var5 = {};
-        var9 = 6;
+        var9 = 5;
         var9 = var11[var9];
         var11 = var10.bind(var3)(var9);
         var10 = var11.getName;
@@ -84,7 +78,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = var7.bind(var8)(var6, var5);
         var0.title = var5;
         var4 = function() {
-            var0 = _closure2_slot0;
+            var3 = _closure1_slot3;
+            var1 = _closure1_slot1;
+            var2 = _closure1_slot2;
+            var0 = 6;
+            var0 = var2[var0];
+            var2 = undefined;
+            var1 = var1.bind(var2)(var0);
+            var0 = {};
+            var5 = _closure2_slot1;
+            var0.user = var5;
+            var5 = _closure2_slot0;
+            var0.guildId = var5;
+            var4 = _closure2_slot2;
+            var0.onClose = var4;
+            var0 = var3.bind(var2)(var1, var0);
             return var0;
         };
         var0.render = var4;
@@ -93,4 +101,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 8675, 8676, 8680, 1234, 3956, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 9179, 9181, 1235, 3956, 10140, 2]);

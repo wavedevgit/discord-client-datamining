@@ -36,7 +36,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/errors/hooks/useVideoReadyTimeout.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun66433: for (var _fun66433_ip = 0;;) switch (_fun66433_ip) {
+        _fun65144: for (var _fun65144_ip = 0;;) switch (_fun65144_ip) {
             case 0:
                 var2 = arg0;
                 var8 = var2.streamId;
@@ -51,8 +51,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var2.paused;
                 var10 = undefined;
                 if (!(var9 === var10)) {
-                    _fun66433_ip = 64;
-                    continue _fun66433
+                    _fun65144_ip = 64;
+                    continue _fun65144
                 }
             case 62:
                 var9 = false;
@@ -85,8 +85,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var3.VideoSpinnerContext;
                 var3 = var3.SELF_STREAM;
                 if (!(var4 !== var3)) {
-                    _fun66433_ip = 238;
-                    continue _fun66433
+                    _fun65144_ip = 238;
+                    continue _fun65144
                 }
             case 171:
                 var5 = _closure1_slot0;
@@ -96,8 +96,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var3.VideoSpinnerContext;
                 var3 = var3.REMOTE_STREAM;
                 if (!(var4 !== var3)) {
-                    _fun66433_ip = 238;
-                    continue _fun66433
+                    _fun65144_ip = 238;
+                    continue _fun65144
                 }
             case 204:
                 var4 = _closure1_slot0;
@@ -107,8 +107,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var4.bind(var10)(var3);
                 var3 = var3.MediaEngineContextTypes;
                 var5 = var3.DEFAULT;
-                _fun66433_ip = 270;
-                continue _fun66433;
+                _fun65144_ip = 270;
+                continue _fun65144;
             case 238:
                 var4 = _closure1_slot0;
                 var11 = _closure1_slot1;
@@ -129,18 +129,18 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2[4] = var0;
                 var2[5] = var6;
                 var0 = function() { // Environment: var1
-                    _fun66434: for (var _fun66434_ip = 0;;) switch (_fun66434_ip) {
+                    _fun65145: for (var _fun65145_ip = 0;;) switch (_fun65145_ip) {
                         case 0:
                             var1 = _closure2_slot3;
                             if (!var1) {
-                                _fun66434_ip = 107;
-                                continue _fun66434
+                                _fun65145_ip = 103;
+                                continue _fun65145
                             }
                         case 12:
                             var1 = _closure2_slot4;
                             if (var1) {
-                                _fun66434_ip = 107;
-                                continue _fun66434
+                                _fun65145_ip = 103;
+                                continue _fun65145
                             }
                         case 19:
                             var5 = _closure1_slot0;
@@ -153,8 +153,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var3 = var4.isIncomingVideoEnabled;
                             var3 = var3.bind(var4)();
                             if (!var3) {
-                                _fun66434_ip = 107;
-                                continue _fun66434
+                                _fun65145_ip = 103;
+                                continue _fun65145
                             }
                         case 63:
                             var2 = _closure2_slot5;
@@ -187,7 +187,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 return var0;
                             };
                             return var0;
-                        case 107:
+                        case 103:
                             var0 = undefined;
                             return var0;
                     }
@@ -222,4 +222,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 667, 3627, 8159, 3630, 8161, 8164, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 667, 3627, 8090, 3630, 8092, 8095, 2]);

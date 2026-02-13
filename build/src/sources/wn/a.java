@@ -8,7 +8,7 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 public final class a extends Event implements tn.b {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final C0738a f52938a = new C0738a(null);
+    public static final C0738a f53506a = new C0738a(null);
 
     /* renamed from: wn.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */

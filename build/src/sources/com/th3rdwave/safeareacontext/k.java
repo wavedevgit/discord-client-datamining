@@ -123,7 +123,7 @@ public final class k extends ReactViewGroup implements ViewTreeObserver.OnPreDra
                 throw th2;
             }
         }
-        Unit unit = Unit.f31988a;
+        Unit unit = Unit.f32556a;
         reentrantLock.unlock();
         if (j10 >= 500000000) {
             Log.w("SafeAreaView", "Timed out waiting for layout.");
@@ -138,7 +138,7 @@ public final class k extends ReactViewGroup implements ViewTreeObserver.OnPreDra
                 booleanRef.element = true;
                 condition.signal();
             }
-            Unit unit = Unit.f31988a;
+            Unit unit = Unit.f32556a;
             reentrantLock.unlock();
         } catch (Throwable th2) {
             reentrantLock.unlock();

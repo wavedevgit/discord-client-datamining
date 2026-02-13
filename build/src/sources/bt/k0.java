@@ -76,7 +76,7 @@ public final class k0 extends ct.b implements MutableStateFlow, c, ct.q {
                 int i12 = i11 + 1;
                 this.f7599p = i12;
                 ct.d[] m11 = m();
-                Unit unit = Unit.f31988a;
+                Unit unit = Unit.f32556a;
                 while (true) {
                     m0[] m0VarArr = (m0[]) m11;
                     if (m0VarArr != null) {
@@ -93,7 +93,7 @@ public final class k0 extends ct.b implements MutableStateFlow, c, ct.q {
                             return true;
                         }
                         m10 = m();
-                        Unit unit2 = Unit.f31988a;
+                        Unit unit2 = Unit.f32556a;
                     }
                     m11 = m10;
                     i12 = i10;
@@ -157,7 +157,7 @@ public final class k0 extends ct.b implements MutableStateFlow, c, ct.q {
     @Override // kotlinx.coroutines.flow.MutableSharedFlow, kotlinx.coroutines.flow.FlowCollector
     public Object emit(Object obj, Continuation continuation) {
         setValue(obj);
-        return Unit.f31988a;
+        return Unit.f32556a;
     }
 
     @Override // ct.q

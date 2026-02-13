@@ -5,7 +5,7 @@ import bj.c;
 final class ec implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final ec f39193a = new ec();
+    static final ec f39761a = new ec();
 
     static {
         c.b a10 = bj.c.a("subjectSegmenterOptions");

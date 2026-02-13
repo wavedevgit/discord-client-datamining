@@ -106,7 +106,7 @@ public final class ContentInventoryEntry {
         }
         compositeEncoder.y(serialDescriptor, 4, contentInventoryEntry.avatarUrl);
         if (compositeEncoder.z(serialDescriptor, 5) || contentInventoryEntry.platformIconUrl != null) {
-            compositeEncoder.o(serialDescriptor, 5, n2.f50033a, contentInventoryEntry.platformIconUrl);
+            compositeEncoder.o(serialDescriptor, 5, n2.f50601a, contentInventoryEntry.platformIconUrl);
         }
         if (compositeEncoder.z(serialDescriptor, 6) || contentInventoryEntry.platformClickable != null) {
             compositeEncoder.o(serialDescriptor, 6, ContentInventoryEntryClickable$$serializer.INSTANCE, contentInventoryEntry.platformClickable);

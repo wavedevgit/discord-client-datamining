@@ -10,12 +10,12 @@ import java.util.concurrent.atomic.AtomicInteger;
 public final class i extends e {
 
     /* renamed from: e  reason: collision with root package name */
-    final /* synthetic */ o f48100e;
+    final /* synthetic */ o f48668e;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public i(o oVar) {
         Objects.requireNonNull(oVar);
-        this.f48100e = oVar;
+        this.f48668e = oVar;
     }
 
     @Override // sg.e
@@ -28,29 +28,29 @@ public final class i extends e {
         ServiceConnection serviceConnection;
         AtomicInteger atomicInteger2;
         d dVar2;
-        o oVar = this.f48100e;
-        obj = oVar.f48111f;
+        o oVar = this.f48668e;
+        obj = oVar.f48679f;
         synchronized (obj) {
             try {
-                atomicInteger = oVar.f48116k;
+                atomicInteger = oVar.f48684k;
                 if (atomicInteger.get() > 0) {
-                    atomicInteger2 = oVar.f48116k;
+                    atomicInteger2 = oVar.f48684k;
                     if (atomicInteger2.decrementAndGet() > 0) {
-                        dVar2 = oVar.f48107b;
+                        dVar2 = oVar.f48675b;
                         dVar2.c("Leaving the connection open for other ongoing calls.", new Object[0]);
                         return;
                     }
                 }
-                iInterface = oVar.f48118m;
+                iInterface = oVar.f48686m;
                 if (iInterface != null) {
-                    dVar = oVar.f48107b;
+                    dVar = oVar.f48675b;
                     dVar.c("Unbind from service.", new Object[0]);
-                    context = oVar.f48106a;
-                    serviceConnection = oVar.f48117l;
+                    context = oVar.f48674a;
+                    serviceConnection = oVar.f48685l;
                     context.unbindService(serviceConnection);
-                    oVar.f48112g = false;
-                    oVar.f48118m = null;
-                    oVar.f48117l = null;
+                    oVar.f48680g = false;
+                    oVar.f48686m = null;
+                    oVar.f48685l = null;
                 }
                 oVar.w();
             } catch (Throwable th2) {

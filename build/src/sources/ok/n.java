@@ -6,19 +6,19 @@ import java.nio.charset.UnsupportedCharsetException;
 public abstract class n {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Charset f40212a = Charset.defaultCharset();
+    private static final Charset f40780a = Charset.defaultCharset();
 
     /* renamed from: b  reason: collision with root package name */
-    public static final Charset f40213b;
+    public static final Charset f40781b;
 
     /* renamed from: c  reason: collision with root package name */
-    public static final Charset f40214c;
+    public static final Charset f40782c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final Charset f40215d;
+    private static final Charset f40783d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final boolean f40216e;
+    private static final boolean f40784e;
 
     static {
         Charset charset;
@@ -30,25 +30,25 @@ public abstract class n {
         } catch (UnsupportedCharsetException unused) {
             charset = null;
         }
-        f40213b = charset;
+        f40781b = charset;
         try {
             charset2 = Charset.forName("GB2312");
         } catch (UnsupportedCharsetException unused2) {
             charset2 = null;
         }
-        f40214c = charset2;
+        f40782c = charset2;
         try {
             charset3 = Charset.forName("EUC_JP");
         } catch (UnsupportedCharsetException unused3) {
         }
-        f40215d = charset3;
-        Charset charset4 = f40213b;
-        if ((charset4 != null && charset4.equals(f40212a)) || (charset3 != null && charset3.equals(f40212a))) {
+        f40783d = charset3;
+        Charset charset4 = f40781b;
+        if ((charset4 != null && charset4.equals(f40780a)) || (charset3 != null && charset3.equals(f40780a))) {
             z10 = true;
         } else {
             z10 = false;
         }
-        f40216e = z10;
+        f40784e = z10;
     }
 
     /* JADX WARN: Removed duplicated region for block: B:112:0x011d  */

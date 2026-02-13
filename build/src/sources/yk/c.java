@@ -6,44 +6,44 @@ import java.util.List;
 final class c {
 
     /* renamed from: a  reason: collision with root package name */
-    private final List f55592a;
+    private final List f56160a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final int f55593b;
+    private final int f56161b;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public c(List list, int i10) {
-        this.f55592a = new ArrayList(list);
-        this.f55593b = i10;
+        this.f56160a = new ArrayList(list);
+        this.f56161b = i10;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public List a() {
-        return this.f55592a;
+        return this.f56160a;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int b() {
-        return this.f55593b;
+        return this.f56161b;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public boolean c(List list) {
-        return this.f55592a.equals(list);
+        return this.f56160a.equals(list);
     }
 
     public boolean equals(Object obj) {
         if (!(obj instanceof c)) {
             return false;
         }
-        return this.f55592a.equals(((c) obj).f55592a);
+        return this.f56160a.equals(((c) obj).f56160a);
     }
 
     public int hashCode() {
-        return this.f55592a.hashCode();
+        return this.f56160a.hashCode();
     }
 
     public String toString() {
-        return "{ " + this.f55592a + " }";
+        return "{ " + this.f56160a + " }";
     }
 }

@@ -5,7 +5,7 @@ import com.facebook.cache.common.CacheKey;
 public class z implements s {
 
     /* renamed from: a  reason: collision with root package name */
-    private static z f36224a;
+    private static z f36792a;
 
     private z() {
     }
@@ -14,10 +14,10 @@ public class z implements s {
         z zVar;
         synchronized (z.class) {
             try {
-                if (f36224a == null) {
-                    f36224a = new z();
+                if (f36792a == null) {
+                    f36792a = new z();
                 }
-                zVar = f36224a;
+                zVar = f36792a;
             } catch (Throwable th2) {
                 throw th2;
             }

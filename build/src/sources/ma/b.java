@@ -12,31 +12,31 @@ import kotlin.text.StringsKt;
 public final class b implements CacheKey {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f36157a;
+    private final String f36725a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final ResizeOptions f36158b;
+    private final ResizeOptions f36726b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final RotationOptions f36159c;
+    private final RotationOptions f36727c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final ImageDecodeOptions f36160d;
+    private final ImageDecodeOptions f36728d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final CacheKey f36161e;
+    private final CacheKey f36729e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final String f36162f;
+    private final String f36730f;
 
     /* renamed from: g  reason: collision with root package name */
-    private Object f36163g;
+    private Object f36731g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final int f36164h;
+    private final int f36732h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final long f36165i;
+    private final long f36733i;
 
     public b(String sourceString, ResizeOptions resizeOptions, RotationOptions rotationOptions, ImageDecodeOptions imageDecodeOptions, CacheKey cacheKey, String str) {
         int i10;
@@ -44,12 +44,12 @@ public final class b implements CacheKey {
         Intrinsics.checkNotNullParameter(sourceString, "sourceString");
         Intrinsics.checkNotNullParameter(rotationOptions, "rotationOptions");
         Intrinsics.checkNotNullParameter(imageDecodeOptions, "imageDecodeOptions");
-        this.f36157a = sourceString;
-        this.f36158b = resizeOptions;
-        this.f36159c = rotationOptions;
-        this.f36160d = imageDecodeOptions;
-        this.f36161e = cacheKey;
-        this.f36162f = str;
+        this.f36725a = sourceString;
+        this.f36726b = resizeOptions;
+        this.f36727c = rotationOptions;
+        this.f36728d = imageDecodeOptions;
+        this.f36729e = cacheKey;
+        this.f36730f = str;
         int hashCode = sourceString.hashCode() * 31;
         if (resizeOptions != null) {
             i10 = resizeOptions.hashCode();
@@ -62,13 +62,13 @@ public final class b implements CacheKey {
         } else {
             i11 = 0;
         }
-        this.f36164h = ((hashCode2 + i11) * 31) + (str != null ? str.hashCode() : 0);
-        this.f36165i = RealtimeSinceBootClock.get().now();
+        this.f36732h = ((hashCode2 + i11) * 31) + (str != null ? str.hashCode() : 0);
+        this.f36733i = RealtimeSinceBootClock.get().now();
     }
 
     @Override // com.facebook.cache.common.CacheKey
     public String a() {
-        return this.f36157a;
+        return this.f36725a;
     }
 
     @Override // com.facebook.cache.common.CacheKey
@@ -86,7 +86,7 @@ public final class b implements CacheKey {
     }
 
     public final void d(Object obj) {
-        this.f36163g = obj;
+        this.f36731g = obj;
     }
 
     @Override // com.facebook.cache.common.CacheKey
@@ -105,7 +105,7 @@ public final class b implements CacheKey {
         }
         Intrinsics.checkNotNull(obj, "null cannot be cast to non-null type com.facebook.imagepipeline.cache.BitmapMemoryCacheKey");
         b bVar = (b) obj;
-        if (Intrinsics.areEqual(this.f36157a, bVar.f36157a) && Intrinsics.areEqual(this.f36158b, bVar.f36158b) && Intrinsics.areEqual(this.f36159c, bVar.f36159c) && Intrinsics.areEqual(this.f36160d, bVar.f36160d) && Intrinsics.areEqual(this.f36161e, bVar.f36161e) && Intrinsics.areEqual(this.f36162f, bVar.f36162f)) {
+        if (Intrinsics.areEqual(this.f36725a, bVar.f36725a) && Intrinsics.areEqual(this.f36726b, bVar.f36726b) && Intrinsics.areEqual(this.f36727c, bVar.f36727c) && Intrinsics.areEqual(this.f36728d, bVar.f36728d) && Intrinsics.areEqual(this.f36729e, bVar.f36729e) && Intrinsics.areEqual(this.f36730f, bVar.f36730f)) {
             return true;
         }
         return false;
@@ -113,16 +113,16 @@ public final class b implements CacheKey {
 
     @Override // com.facebook.cache.common.CacheKey
     public int hashCode() {
-        return this.f36164h;
+        return this.f36732h;
     }
 
     public String toString() {
-        String str = this.f36157a;
-        ResizeOptions resizeOptions = this.f36158b;
-        RotationOptions rotationOptions = this.f36159c;
-        ImageDecodeOptions imageDecodeOptions = this.f36160d;
-        CacheKey cacheKey = this.f36161e;
-        String str2 = this.f36162f;
+        String str = this.f36725a;
+        ResizeOptions resizeOptions = this.f36726b;
+        RotationOptions rotationOptions = this.f36727c;
+        ImageDecodeOptions imageDecodeOptions = this.f36728d;
+        CacheKey cacheKey = this.f36729e;
+        String str2 = this.f36730f;
         return "BitmapMemoryCacheKey(sourceString=" + str + ", resizeOptions=" + resizeOptions + ", rotationOptions=" + rotationOptions + ", imageDecodeOptions=" + imageDecodeOptions + ", postprocessorCacheKey=" + cacheKey + ", postprocessorName=" + str2 + ")";
     }
 }

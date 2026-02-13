@@ -8,10 +8,10 @@ import java.util.List;
 public final class o7 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final k7 f29572a;
+    private final k7 f30140a;
 
     public o7(k7 k7Var) {
-        this.f29572a = k7Var;
+        this.f30140a = k7Var;
     }
 
     public List a(StackTraceElement[] stackTraceElementArr, boolean z10) {
@@ -45,12 +45,12 @@ public final class o7 {
 
     public Boolean b(String str) {
         if (str != null && !str.isEmpty()) {
-            for (String str2 : this.f29572a.getInAppIncludes()) {
+            for (String str2 : this.f30140a.getInAppIncludes()) {
                 if (str.startsWith(str2)) {
                     return Boolean.TRUE;
                 }
             }
-            for (String str3 : this.f29572a.getInAppExcludes()) {
+            for (String str3 : this.f30140a.getInAppExcludes()) {
                 if (str.startsWith(str3)) {
                     return Boolean.FALSE;
                 }

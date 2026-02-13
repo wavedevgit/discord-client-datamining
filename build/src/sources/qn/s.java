@@ -8,13 +8,13 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 public final class s extends Event {
 
     /* renamed from: c  reason: collision with root package name */
-    public static final a f45506c = new a(null);
+    public static final a f46074c = new a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final int f45507a;
+    private final int f46075a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final boolean f45508b;
+    private final boolean f46076b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -28,8 +28,8 @@ public final class s extends Event {
 
     public s(int i10, int i11, int i12, boolean z10) {
         super(i10, i11);
-        this.f45507a = i12;
-        this.f45508b = z10;
+        this.f46075a = i12;
+        this.f46076b = z10;
     }
 
     @Override // com.facebook.react.uimanager.events.Event
@@ -40,8 +40,8 @@ public final class s extends Event {
     @Override // com.facebook.react.uimanager.events.Event
     protected WritableMap getEventData() {
         WritableMap createMap = Arguments.createMap();
-        createMap.putInt("index", this.f45507a);
-        createMap.putBoolean("isStable", this.f45508b);
+        createMap.putInt("index", this.f46075a);
+        createMap.putBoolean("isStable", this.f46076b);
         return createMap;
     }
 

@@ -14,14 +14,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var3 = _closure1_slot3;
         var2 = function*(arg0, arg1) { // Environment: var2
             var0 = function*(arg0, arg1) { // Original name: ?anon_0_, environment: var0
-                _fun78374: for (var _fun78374_ip = 0;;) switch (_fun78374_ip) {
+                _fun78587: for (var _fun78587_ip = 0;;) switch (_fun78587_ip) {
                     case 0:
                         StartGenerator();
                         var9 = arg0;
                         ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
                         if (var1) {
-                            _fun78374_ip = 195;
-                            continue _fun78374
+                            _fun78587_ip = 195;
+                            continue _fun78587
                         }
                     case 13:
                         var4 = _closure1_slot0;
@@ -68,8 +68,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     case 85:
                         ResumeGenerator(result_out_reg = 1, return_bool_out_reg = 4);
                         if (var4) {
-                            _fun78374_ip = 192;
-                            continue _fun78374
+                            _fun78587_ip = 192;
+                            continue _fun78587
                         }
                     case 91:
                         var5 = _closure1_slot1;
@@ -150,4 +150,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.bulkClearRecents = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 660, 1355, 1341, 806, 795, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 660, 1355, 1341, 807, 796, 2]);

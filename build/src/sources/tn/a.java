@@ -9,16 +9,16 @@ import kotlin.jvm.internal.Intrinsics;
 public abstract class a {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final C0663a f48946d = new C0663a(null);
+    public static final C0663a f49514d = new C0663a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final ReactContext f48947a;
+    private final ReactContext f49515a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final int f48948b;
+    private final int f49516b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final EventDispatcher f48949c;
+    private final EventDispatcher f49517c;
 
     /* renamed from: tn.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
@@ -33,11 +33,11 @@ public abstract class a {
 
     public a(ReactContext reactContext, int i10) {
         Intrinsics.checkNotNullParameter(reactContext, "reactContext");
-        this.f48947a = reactContext;
-        this.f48948b = i10;
+        this.f49515a = reactContext;
+        this.f49516b = i10;
         EventDispatcher eventDispatcherForReactTag = UIManagerHelper.getEventDispatcherForReactTag(reactContext, i10);
         if (eventDispatcherForReactTag != null) {
-            this.f48949c = eventDispatcherForReactTag;
+            this.f49517c = eventDispatcherForReactTag;
             return;
         }
         throw new IllegalStateException(("[RNScreens] Nullish event dispatcher for view with tag: " + i10).toString());
@@ -45,15 +45,15 @@ public abstract class a {
 
     /* JADX INFO: Access modifiers changed from: protected */
     public final EventDispatcher e() {
-        return this.f48949c;
+        return this.f49517c;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     public final int f() {
-        return UIManagerHelper.getSurfaceId(this.f48947a);
+        return UIManagerHelper.getSurfaceId(this.f49515a);
     }
 
     public final int g() {
-        return this.f48948b;
+        return this.f49516b;
     }
 }

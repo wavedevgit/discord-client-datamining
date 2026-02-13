@@ -22,43 +22,43 @@ import java.util.Objects;
 public final class f5 implements b5 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final r.a0 f43347a;
+    private final r.a0 f43915a;
 
     /* renamed from: b  reason: collision with root package name */
-    final i0.e f43348b;
+    final i0.e f43916b;
 
     /* renamed from: c  reason: collision with root package name */
-    private boolean f43349c = false;
+    private boolean f43917c = false;
 
     /* renamed from: d  reason: collision with root package name */
-    private boolean f43350d = false;
+    private boolean f43918d = false;
 
     /* renamed from: e  reason: collision with root package name */
-    private boolean f43351e;
+    private boolean f43919e;
 
     /* renamed from: f  reason: collision with root package name */
-    private boolean f43352f;
+    private boolean f43920f;
 
     /* renamed from: g  reason: collision with root package name */
-    androidx.camera.core.q f43353g;
+    androidx.camera.core.q f43921g;
 
     /* renamed from: h  reason: collision with root package name */
-    private a0.k f43354h;
+    private a0.k f43922h;
 
     /* renamed from: i  reason: collision with root package name */
-    private a0.w0 f43355i;
+    private a0.w0 f43923i;
 
     /* renamed from: j  reason: collision with root package name */
-    ImageWriter f43356j;
+    ImageWriter f43924j;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public f5(r.a0 a0Var) {
-        this.f43351e = false;
-        this.f43352f = false;
-        this.f43347a = a0Var;
-        this.f43351e = g5.a(a0Var, 4);
-        this.f43352f = androidx.camera.camera2.internal.compat.quirk.b.b(ZslDisablerQuirk.class) != null;
-        this.f43348b = new i0.e(3, new i0.c() { // from class: q.d5
+        this.f43919e = false;
+        this.f43920f = false;
+        this.f43915a = a0Var;
+        this.f43919e = g5.a(a0Var, 4);
+        this.f43920f = androidx.camera.camera2.internal.compat.quirk.b.b(ZslDisablerQuirk.class) != null;
+        this.f43916b = new i0.e(3, new i0.c() { // from class: q.d5
             @Override // i0.c
             public final void a(Object obj) {
                 ((androidx.camera.core.n) obj).close();
@@ -71,7 +71,7 @@ public final class f5 implements b5 {
         try {
             androidx.camera.core.n b10 = j1Var.b();
             if (b10 != null) {
-                f5Var.f43348b.d(b10);
+                f5Var.f43916b.d(b10);
             }
         } catch (IllegalStateException e10) {
             x.y0.c("ZslControlImpl", "Failed to acquire latest image IllegalStateException = " + e10.getMessage());
@@ -79,24 +79,24 @@ public final class f5 implements b5 {
     }
 
     private void j() {
-        i0.e eVar = this.f43348b;
+        i0.e eVar = this.f43916b;
         while (!eVar.c()) {
             ((androidx.camera.core.n) eVar.a()).close();
         }
-        a0.w0 w0Var = this.f43355i;
+        a0.w0 w0Var = this.f43923i;
         if (w0Var != null) {
-            androidx.camera.core.q qVar = this.f43353g;
+            androidx.camera.core.q qVar = this.f43921g;
             if (qVar != null) {
                 w0Var.k().a(new c5(qVar), c0.a.d());
-                this.f43353g = null;
+                this.f43921g = null;
             }
             w0Var.d();
-            this.f43355i = null;
+            this.f43923i = null;
         }
-        ImageWriter imageWriter = this.f43356j;
+        ImageWriter imageWriter = this.f43924j;
         if (imageWriter != null) {
             imageWriter.close();
-            this.f43356j = null;
+            this.f43924j = null;
         }
     }
 
@@ -139,39 +139,39 @@ public final class f5 implements b5 {
 
     @Override // q.b5
     public boolean a() {
-        return this.f43349c;
+        return this.f43917c;
     }
 
     @Override // q.b5
     public void b(i2.b bVar) {
         j();
-        if (this.f43349c) {
+        if (this.f43917c) {
             bVar.x(1);
-        } else if (this.f43352f) {
+        } else if (this.f43920f) {
             bVar.x(1);
         } else {
-            Map k10 = k(this.f43347a);
-            if (this.f43351e && !k10.isEmpty() && k10.containsKey(34) && l(this.f43347a, 34)) {
+            Map k10 = k(this.f43915a);
+            if (this.f43919e && !k10.isEmpty() && k10.containsKey(34) && l(this.f43915a, 34)) {
                 Size size = (Size) k10.get(34);
                 androidx.camera.core.p pVar = new androidx.camera.core.p(size.getWidth(), size.getHeight(), 34, 9);
-                this.f43354h = pVar.m();
-                this.f43353g = new androidx.camera.core.q(pVar);
+                this.f43922h = pVar.m();
+                this.f43921g = new androidx.camera.core.q(pVar);
                 pVar.e(new j1.a() { // from class: q.e5
                     @Override // a0.j1.a
                     public final void a(a0.j1 j1Var) {
                         f5.h(f5.this, j1Var);
                     }
                 }, c0.a.c());
-                a0.k1 k1Var = new a0.k1(this.f43353g.getSurface(), new Size(this.f43353g.getWidth(), this.f43353g.getHeight()), 34);
-                this.f43355i = k1Var;
-                androidx.camera.core.q qVar = this.f43353g;
+                a0.k1 k1Var = new a0.k1(this.f43921g.getSurface(), new Size(this.f43921g.getWidth(), this.f43921g.getHeight()), 34);
+                this.f43923i = k1Var;
+                androidx.camera.core.q qVar = this.f43921g;
                 ListenableFuture k11 = k1Var.k();
                 Objects.requireNonNull(qVar);
                 k11.a(new c5(qVar), c0.a.d());
-                bVar.l(this.f43355i);
-                bVar.e(this.f43354h);
+                bVar.l(this.f43923i);
+                bVar.e(this.f43922h);
                 bVar.k(new a());
-                bVar.u(new InputConfiguration(this.f43353g.getWidth(), this.f43353g.getHeight(), this.f43353g.c()));
+                bVar.u(new InputConfiguration(this.f43921g.getWidth(), this.f43921g.getHeight(), this.f43921g.c()));
                 return;
             }
             bVar.x(1);
@@ -180,18 +180,18 @@ public final class f5 implements b5 {
 
     @Override // q.b5
     public void c(boolean z10) {
-        this.f43350d = z10;
+        this.f43918d = z10;
     }
 
     @Override // q.b5
     public void d(boolean z10) {
-        this.f43349c = z10;
+        this.f43917c = z10;
     }
 
     @Override // q.b5
     public androidx.camera.core.n e() {
         try {
-            return (androidx.camera.core.n) this.f43348b.a();
+            return (androidx.camera.core.n) this.f43916b.a();
         } catch (NoSuchElementException unused) {
             x.y0.c("ZslControlImpl", "dequeueImageFromBuffer no such element");
             return null;
@@ -201,7 +201,7 @@ public final class f5 implements b5 {
     @Override // q.b5
     public boolean f(androidx.camera.core.n nVar) {
         Image F = nVar.F();
-        ImageWriter imageWriter = this.f43356j;
+        ImageWriter imageWriter = this.f43924j;
         if (imageWriter != null && F != null) {
             try {
                 f0.a.d(imageWriter, F);
@@ -215,7 +215,7 @@ public final class f5 implements b5 {
 
     @Override // q.b5
     public boolean g() {
-        return this.f43350d;
+        return this.f43918d;
     }
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
@@ -227,7 +227,7 @@ public final class f5 implements b5 {
         public void onConfigured(CameraCaptureSession cameraCaptureSession) {
             Surface inputSurface = cameraCaptureSession.getInputSurface();
             if (inputSurface != null) {
-                f5.this.f43356j = f0.a.c(inputSurface, 1);
+                f5.this.f43924j = f0.a.c(inputSurface, 1);
             }
         }
 

@@ -39,7 +39,7 @@ public /* synthetic */ class CheckpointGuild$$serializer implements h0 {
     @Override // tt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        n2 n2Var = n2.f50033a;
+        n2 n2Var = n2.f50601a;
         return new KSerializer[]{n2Var, GuildId$$serializer.INSTANCE, rt.a.u(n2Var)};
     }
 
@@ -56,7 +56,7 @@ public /* synthetic */ class CheckpointGuild$$serializer implements h0 {
         String str3 = null;
         if (b10.p()) {
             str = b10.m(serialDescriptor, 0);
-            str2 = (String) b10.n(serialDescriptor, 2, n2.f50033a, null);
+            str2 = (String) b10.n(serialDescriptor, 2, n2.f50601a, null);
             guildId = (GuildId) b10.y(serialDescriptor, 1, GuildId$$serializer.INSTANCE, null);
             i10 = 7;
         } else {
@@ -77,7 +77,7 @@ public /* synthetic */ class CheckpointGuild$$serializer implements h0 {
                 } else if (o10 != 2) {
                     throw new b0(o10);
                 } else {
-                    str4 = (String) b10.n(serialDescriptor, 2, n2.f50033a, str4);
+                    str4 = (String) b10.n(serialDescriptor, 2, n2.f50601a, str4);
                     i11 |= 4;
                 }
             }

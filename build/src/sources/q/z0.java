@@ -26,62 +26,62 @@ import x.n0;
 public class z0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final u f43735a;
+    private final u f44303a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final u.c0 f43736b;
+    private final u.c0 f44304b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final boolean f43737c;
+    private final boolean f44305c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final a0.d2 f43738d;
+    private final a0.d2 f44306d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Executor f43739e;
+    private final Executor f44307e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final ScheduledExecutorService f43740f;
+    private final ScheduledExecutorService f44308f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final boolean f43741g;
+    private final boolean f44309g;
 
     /* renamed from: h  reason: collision with root package name */
-    private int f43742h = 1;
+    private int f44310h = 1;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static class a implements e {
 
         /* renamed from: a  reason: collision with root package name */
-        private final u f43743a;
+        private final u f44311a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final u.o f43744b;
+        private final u.o f44312b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final int f43745c;
+        private final int f44313c;
 
         /* renamed from: d  reason: collision with root package name */
-        private boolean f43746d = false;
+        private boolean f44314d = false;
 
         a(u uVar, int i10, u.o oVar) {
-            this.f43743a = uVar;
-            this.f43745c = i10;
-            this.f43744b = oVar;
+            this.f44311a = uVar;
+            this.f44313c = i10;
+            this.f44312b = oVar;
         }
 
         public static /* synthetic */ Object e(a aVar, c.a aVar2) {
-            aVar.f43743a.B().R(aVar2);
-            aVar.f43744b.b();
+            aVar.f44311a.B().R(aVar2);
+            aVar.f44312b.b();
             return "AePreCapture";
         }
 
         @Override // q.z0.e
         public ListenableFuture a(TotalCaptureResult totalCaptureResult) {
-            if (z0.e(this.f43745c, totalCaptureResult)) {
+            if (z0.e(this.f44313c, totalCaptureResult)) {
                 x.y0.a("Camera2CapturePipeline", "Trigger AE");
-                this.f43746d = true;
+                this.f44314d = true;
                 return d0.d.b(androidx.concurrent.futures.c.a(new c.InterfaceC0026c() { // from class: q.x0
                     @Override // androidx.concurrent.futures.c.InterfaceC0026c
                     public final Object a(c.a aVar) {
@@ -102,7 +102,7 @@ public class z0 {
 
         @Override // q.z0.e
         public boolean b() {
-            if (this.f43745c == 0) {
+            if (this.f44313c == 0) {
                 return true;
             }
             return false;
@@ -110,10 +110,10 @@ public class z0 {
 
         @Override // q.z0.e
         public void c() {
-            if (this.f43746d) {
+            if (this.f44314d) {
                 x.y0.a("Camera2CapturePipeline", "cancel TriggerAePreCapture");
-                this.f43743a.B().o(false, true);
-                this.f43744b.a();
+                this.f44311a.B().o(false, true);
+                this.f44312b.a();
             }
         }
     }
@@ -123,13 +123,13 @@ public class z0 {
     public static class b implements e {
 
         /* renamed from: a  reason: collision with root package name */
-        private final u f43747a;
+        private final u f44315a;
 
         /* renamed from: b  reason: collision with root package name */
-        private boolean f43748b = false;
+        private boolean f44316b = false;
 
         b(u uVar) {
-            this.f43747a = uVar;
+            this.f44315a = uVar;
         }
 
         @Override // q.z0.e
@@ -142,8 +142,8 @@ public class z0 {
                 Integer num2 = (Integer) totalCaptureResult.get(CaptureResult.CONTROL_AF_STATE);
                 if (num2 != null && num2.intValue() == 0) {
                     x.y0.a("Camera2CapturePipeline", "Trigger AF");
-                    this.f43748b = true;
-                    this.f43747a.B().S(null, false);
+                    this.f44316b = true;
+                    this.f44315a.B().S(null, false);
                 }
             }
             return p10;
@@ -156,9 +156,9 @@ public class z0 {
 
         @Override // q.z0.e
         public void c() {
-            if (this.f43748b) {
+            if (this.f44316b) {
                 x.y0.a("Camera2CapturePipeline", "cancel TriggerAF");
-                this.f43747a.B().o(true, false);
+                this.f44315a.B().o(true, false);
             }
         }
     }
@@ -168,22 +168,22 @@ public class z0 {
     public static class c implements z.k {
 
         /* renamed from: a  reason: collision with root package name */
-        private final Executor f43749a;
+        private final Executor f44317a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final d f43750b;
+        private final d f44318b;
 
         /* renamed from: c  reason: collision with root package name */
-        private int f43751c;
+        private int f44319c;
 
         c(d dVar, Executor executor, int i10) {
-            this.f43750b = dVar;
-            this.f43749a = executor;
-            this.f43751c = i10;
+            this.f44318b = dVar;
+            this.f44317a = executor;
+            this.f44319c = i10;
         }
 
         public static /* synthetic */ Object c(c cVar, c.a aVar) {
-            cVar.f43750b.j();
+            cVar.f44318b.j();
             aVar.c(null);
             return "invokePostCaptureFuture";
         }
@@ -195,12 +195,12 @@ public class z0 {
         @Override // z.k
         public ListenableFuture a() {
             x.y0.a("Camera2CapturePipeline", "invokePreCapture");
-            return d0.d.b(this.f43750b.k(this.f43751c)).e(new Function() { // from class: q.b1
+            return d0.d.b(this.f44318b.k(this.f44319c)).e(new Function() { // from class: q.b1
                 @Override // androidx.arch.core.util.Function
                 public final Object apply(Object obj) {
                     return z0.c.d((TotalCaptureResult) obj);
                 }
-            }, this.f43749a);
+            }, this.f44317a);
         }
 
         @Override // z.k
@@ -219,37 +219,37 @@ public class z0 {
     public static class d {
 
         /* renamed from: j  reason: collision with root package name */
-        private static final long f43752j;
+        private static final long f44320j;
 
         /* renamed from: k  reason: collision with root package name */
-        private static final long f43753k;
+        private static final long f44321k;
 
         /* renamed from: a  reason: collision with root package name */
-        private final int f43754a;
+        private final int f44322a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final Executor f43755b;
+        private final Executor f44323b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final ScheduledExecutorService f43756c;
+        private final ScheduledExecutorService f44324c;
 
         /* renamed from: d  reason: collision with root package name */
-        private final u f43757d;
+        private final u f44325d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final u.o f43758e;
+        private final u.o f44326e;
 
         /* renamed from: f  reason: collision with root package name */
-        private final boolean f43759f;
+        private final boolean f44327f;
 
         /* renamed from: g  reason: collision with root package name */
-        private long f43760g = f43752j;
+        private long f44328g = f44320j;
 
         /* renamed from: h  reason: collision with root package name */
-        final List f43761h = new ArrayList();
+        final List f44329h = new ArrayList();
 
         /* renamed from: i  reason: collision with root package name */
-        private final e f43762i = new a();
+        private final e f44330i = new a();
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
         class a implements e {
@@ -259,7 +259,7 @@ public class z0 {
             @Override // q.z0.e
             public ListenableFuture a(TotalCaptureResult totalCaptureResult) {
                 ArrayList arrayList = new ArrayList();
-                for (e eVar : d.this.f43761h) {
+                for (e eVar : d.this.f44329h) {
                     arrayList.add(eVar.a(totalCaptureResult));
                 }
                 return d0.n.x(d0.n.k(arrayList), new Function() { // from class: q.i1
@@ -274,7 +274,7 @@ public class z0 {
 
             @Override // q.z0.e
             public boolean b() {
-                for (e eVar : d.this.f43761h) {
+                for (e eVar : d.this.f44329h) {
                     if (eVar.b()) {
                         return true;
                     }
@@ -284,7 +284,7 @@ public class z0 {
 
             @Override // q.z0.e
             public void c() {
-                for (e eVar : d.this.f43761h) {
+                for (e eVar : d.this.f44329h) {
                     eVar.c();
                 }
             }
@@ -295,55 +295,55 @@ public class z0 {
         public class b extends a0.k {
 
             /* renamed from: a  reason: collision with root package name */
-            final /* synthetic */ c.a f43764a;
+            final /* synthetic */ c.a f44332a;
 
             b(c.a aVar) {
-                this.f43764a = aVar;
+                this.f44332a = aVar;
             }
 
             @Override // a0.k
             public void a(int i10) {
-                this.f43764a.f(new x.o0(3, "Capture request is cancelled because camera is closed", null));
+                this.f44332a.f(new x.o0(3, "Capture request is cancelled because camera is closed", null));
             }
 
             @Override // a0.k
             public void b(int i10, a0.u uVar) {
-                this.f43764a.c(null);
+                this.f44332a.c(null);
             }
 
             @Override // a0.k
             public void c(int i10, a0.m mVar) {
-                this.f43764a.f(new x.o0(2, "Capture request failed with reason " + mVar.a(), null));
+                this.f44332a.f(new x.o0(2, "Capture request failed with reason " + mVar.a(), null));
             }
         }
 
         static {
             TimeUnit timeUnit = TimeUnit.SECONDS;
-            f43752j = timeUnit.toNanos(1L);
-            f43753k = timeUnit.toNanos(5L);
+            f44320j = timeUnit.toNanos(1L);
+            f44321k = timeUnit.toNanos(5L);
         }
 
         d(int i10, Executor executor, ScheduledExecutorService scheduledExecutorService, u uVar, boolean z10, u.o oVar) {
-            this.f43754a = i10;
-            this.f43755b = executor;
-            this.f43756c = scheduledExecutorService;
-            this.f43757d = uVar;
-            this.f43759f = z10;
-            this.f43758e = oVar;
+            this.f44322a = i10;
+            this.f44323b = executor;
+            this.f44324c = scheduledExecutorService;
+            this.f44325d = uVar;
+            this.f44327f = z10;
+            this.f44326e = oVar;
         }
 
         public static /* synthetic */ ListenableFuture a(d dVar, int i10, TotalCaptureResult totalCaptureResult) {
             dVar.getClass();
             if (z0.e(i10, totalCaptureResult)) {
-                dVar.l(f43753k);
+                dVar.l(f44321k);
             }
-            return dVar.f43762i.a(totalCaptureResult);
+            return dVar.f44330i.a(totalCaptureResult);
         }
 
         public static /* synthetic */ ListenableFuture d(d dVar, Boolean bool) {
             dVar.getClass();
             if (Boolean.TRUE.equals(bool)) {
-                return z0.i(dVar.f43760g, dVar.f43756c, dVar.f43757d, new f.a() { // from class: q.h1
+                return z0.i(dVar.f44328g, dVar.f44324c, dVar.f44325d, new f.a() { // from class: q.h1
                     @Override // q.z0.f.a
                     public final boolean a(TotalCaptureResult totalCaptureResult) {
                         boolean d10;
@@ -369,7 +369,7 @@ public class z0 {
 
         private void h(p0.a aVar, a0.p0 p0Var) {
             int i10;
-            if (this.f43754a == 3 && !this.f43759f) {
+            if (this.f44322a == 3 && !this.f44327f) {
                 i10 = 4;
             } else if (p0Var.k() != -1 && p0Var.k() != 5) {
                 i10 = -1;
@@ -382,11 +382,11 @@ public class z0 {
         }
 
         private void l(long j10) {
-            this.f43760g = j10;
+            this.f44328g = j10;
         }
 
         void f(e eVar) {
-            this.f43761h.add(eVar);
+            this.f44329h.add(eVar);
         }
 
         ListenableFuture i(final List list, final int i10) {
@@ -398,26 +398,26 @@ public class z0 {
                     m10 = z0.d.this.m(list, i10);
                     return m10;
                 }
-            }, this.f43755b);
+            }, this.f44323b);
             f10.a(new Runnable() { // from class: q.d1
                 @Override // java.lang.Runnable
                 public final void run() {
                     z0.d.this.j();
                 }
-            }, this.f43755b);
+            }, this.f44323b);
             return f10;
         }
 
         public void j() {
-            this.f43762i.c();
+            this.f44330i.c();
         }
 
         public ListenableFuture k(final int i10) {
             ListenableFuture p10;
             ListenableFuture p11 = d0.n.p(null);
-            if (!this.f43761h.isEmpty()) {
-                if (this.f43762i.b()) {
-                    p10 = z0.j(this.f43757d, null);
+            if (!this.f44329h.isEmpty()) {
+                if (this.f44330i.b()) {
+                    p10 = z0.j(this.f44325d, null);
                 } else {
                     p10 = d0.n.p(null);
                 }
@@ -426,12 +426,12 @@ public class z0 {
                     public final ListenableFuture apply(Object obj) {
                         return z0.d.a(z0.d.this, i10, (TotalCaptureResult) obj);
                     }
-                }, this.f43755b).f(new d0.a() { // from class: q.g1
+                }, this.f44323b).f(new d0.a() { // from class: q.g1
                     @Override // d0.a
                     public final ListenableFuture apply(Object obj) {
                         return z0.d.d(z0.d.this, (Boolean) obj);
                     }
-                }, this.f43755b);
+                }, this.f44323b);
             }
             return p11;
         }
@@ -446,7 +446,7 @@ public class z0 {
             while (it.hasNext()) {
                 a0.p0 p0Var = (a0.p0) it.next();
                 final p0.a j10 = p0.a.j(p0Var);
-                if (p0Var.k() == 5 && !this.f43757d.P().g() && !this.f43757d.P().a() && (e10 = this.f43757d.P().e()) != null && this.f43757d.P().f(e10)) {
+                if (p0Var.k() == 5 && !this.f44325d.P().g() && !this.f44325d.P().a() && (e10 = this.f44325d.P().e()) != null && this.f44325d.P().f(e10)) {
                     uVar = a0.v.a(e10.E());
                 } else {
                     uVar = null;
@@ -456,7 +456,7 @@ public class z0 {
                 } else {
                     h(j10, p0Var);
                 }
-                if (this.f43758e.c(i10)) {
+                if (this.f44326e.c(i10)) {
                     g(j10);
                 }
                 arrayList.add(androidx.concurrent.futures.c.a(new c.InterfaceC0026c() { // from class: q.e1
@@ -467,7 +467,7 @@ public class z0 {
                 }));
                 arrayList2.add(j10.h());
             }
-            this.f43757d.d0(arrayList2);
+            this.f44325d.d0(arrayList2);
             return d0.n.k(arrayList);
         }
     }
@@ -487,10 +487,10 @@ public class z0 {
     public static class f implements u.c {
 
         /* renamed from: a  reason: collision with root package name */
-        private c.a f43766a;
+        private c.a f44334a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final ListenableFuture f43767b = androidx.concurrent.futures.c.a(new c.InterfaceC0026c() { // from class: q.j1
+        private final ListenableFuture f44335b = androidx.concurrent.futures.c.a(new c.InterfaceC0026c() { // from class: q.j1
             @Override // androidx.concurrent.futures.c.InterfaceC0026c
             public final Object a(c.a aVar) {
                 return z0.f.b(z0.f.this, aVar);
@@ -498,7 +498,7 @@ public class z0 {
         });
 
         /* renamed from: c  reason: collision with root package name */
-        private final a f43768c;
+        private final a f44336c;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
@@ -507,26 +507,26 @@ public class z0 {
         }
 
         f(a aVar) {
-            this.f43768c = aVar;
+            this.f44336c = aVar;
         }
 
         public static /* synthetic */ Object b(f fVar, c.a aVar) {
-            fVar.f43766a = aVar;
+            fVar.f44334a = aVar;
             return "waitFor3AResult";
         }
 
         @Override // q.u.c
         public boolean a(TotalCaptureResult totalCaptureResult) {
-            a aVar = this.f43768c;
+            a aVar = this.f44336c;
             if (aVar != null && !aVar.a(totalCaptureResult)) {
                 return false;
             }
-            this.f43766a.c(totalCaptureResult);
+            this.f44334a.c(totalCaptureResult);
             return true;
         }
 
         public ListenableFuture c() {
-            return this.f43767b;
+            return this.f44335b;
         }
     }
 
@@ -535,37 +535,37 @@ public class z0 {
     public static class g implements e {
 
         /* renamed from: f  reason: collision with root package name */
-        private static final long f43769f = TimeUnit.SECONDS.toNanos(2);
+        private static final long f44337f = TimeUnit.SECONDS.toNanos(2);
 
         /* renamed from: a  reason: collision with root package name */
-        private final u f43770a;
+        private final u f44338a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final Executor f43771b;
+        private final Executor f44339b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final ScheduledExecutorService f43772c;
+        private final ScheduledExecutorService f44340c;
 
         /* renamed from: d  reason: collision with root package name */
-        private final n0.i f43773d;
+        private final n0.i f44341d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final u.b0 f43774e;
+        private final u.b0 f44342e;
 
         g(u uVar, Executor executor, ScheduledExecutorService scheduledExecutorService, u.b0 b0Var) {
-            this.f43770a = uVar;
-            this.f43771b = executor;
-            this.f43772c = scheduledExecutorService;
-            this.f43774e = b0Var;
+            this.f44338a = uVar;
+            this.f44339b = executor;
+            this.f44340c = scheduledExecutorService;
+            this.f44342e = b0Var;
             n0.i F = uVar.F();
             Objects.requireNonNull(F);
-            this.f43773d = F;
+            this.f44341d = F;
         }
 
         public static /* synthetic */ void d(g gVar, AtomicReference atomicReference, c.a aVar) {
             gVar.getClass();
             x.y0.a("Camera2CapturePipeline", "ScreenFlashTask#preCapture: invoking applyScreenFlashUi");
-            gVar.f43773d.a(System.currentTimeMillis() + TimeUnit.SECONDS.toMillis(3L), (n0.j) atomicReference.get());
+            gVar.f44341d.a(System.currentTimeMillis() + TimeUnit.SECONDS.toMillis(3L), (n0.j) atomicReference.get());
             aVar.c(null);
         }
 
@@ -596,12 +596,12 @@ public class z0 {
         }
 
         public static /* synthetic */ Object l(g gVar, c.a aVar) {
-            if (!gVar.f43774e.a()) {
+            if (!gVar.f44342e.a()) {
                 aVar.c(null);
                 return "EnableTorchInternal";
             }
             x.y0.a("Camera2CapturePipeline", "ScreenFlashTask#preCapture: enable torch");
-            gVar.f43770a.y(true);
+            gVar.f44338a.y(true);
             aVar.c(null);
             return "EnableTorchInternal";
         }
@@ -618,7 +618,7 @@ public class z0 {
 
         public static /* synthetic */ ListenableFuture p(g gVar, ListenableFuture listenableFuture, Object obj) {
             gVar.getClass();
-            return d0.n.r(TimeUnit.SECONDS.toMillis(3L), gVar.f43772c, null, true, listenableFuture);
+            return d0.n.r(TimeUnit.SECONDS.toMillis(3L), gVar.f44340c, null, true, listenableFuture);
         }
 
         @Override // q.z0.e
@@ -641,33 +641,33 @@ public class z0 {
                 public final ListenableFuture apply(Object obj) {
                     ListenableFuture v10;
                     Void r22 = (Void) obj;
-                    v10 = z0.g.this.f43770a.B().v(true);
+                    v10 = z0.g.this.f44338a.B().v(true);
                     return v10;
                 }
-            }, this.f43771b).f(new d0.a() { // from class: q.t1
+            }, this.f44339b).f(new d0.a() { // from class: q.t1
                 @Override // d0.a
                 public final ListenableFuture apply(Object obj) {
                     return z0.g.h(z0.g.this, (Void) obj);
                 }
-            }, this.f43771b).f(new d0.a() { // from class: q.u1
+            }, this.f44339b).f(new d0.a() { // from class: q.u1
                 @Override // d0.a
                 public final ListenableFuture apply(Object obj) {
                     return z0.g.p(z0.g.this, a10, obj);
                 }
-            }, this.f43771b).f(new d0.a() { // from class: q.v1
+            }, this.f44339b).f(new d0.a() { // from class: q.v1
                 @Override // d0.a
                 public final ListenableFuture apply(Object obj) {
                     ListenableFuture Q;
                     Void r22 = (Void) obj;
-                    Q = z0.g.this.f43770a.B().Q();
+                    Q = z0.g.this.f44338a.B().Q();
                     return Q;
                 }
-            }, this.f43771b).f(new d0.a() { // from class: q.w1
+            }, this.f44339b).f(new d0.a() { // from class: q.w1
                 @Override // d0.a
                 public final ListenableFuture apply(Object obj) {
                     ListenableFuture i10;
                     Void r22 = (Void) obj;
-                    i10 = z0.i(z0.g.f43769f, r0.f43772c, z0.g.this.f43770a, new z0.f.a() { // from class: q.n1
+                    i10 = z0.i(z0.g.f44337f, r0.f44340c, z0.g.this.f44338a, new z0.f.a() { // from class: q.n1
                         @Override // q.z0.f.a
                         public final boolean a(TotalCaptureResult totalCaptureResult2) {
                             boolean d10;
@@ -677,7 +677,7 @@ public class z0 {
                     });
                     return i10;
                 }
-            }, this.f43771b).e(new Function() { // from class: q.x1
+            }, this.f44339b).e(new Function() { // from class: q.x1
                 @Override // androidx.arch.core.util.Function
                 public final Object apply(Object obj) {
                     Boolean bool;
@@ -696,18 +696,18 @@ public class z0 {
         @Override // q.z0.e
         public void c() {
             x.y0.a("Camera2CapturePipeline", "ScreenFlashTask#postCapture");
-            if (this.f43774e.a()) {
-                this.f43770a.y(false);
+            if (this.f44342e.a()) {
+                this.f44338a.y(false);
             }
-            this.f43770a.B().v(false).a(new Runnable() { // from class: q.k1
+            this.f44338a.B().v(false).a(new Runnable() { // from class: q.k1
                 @Override // java.lang.Runnable
                 public final void run() {
                     Log.d("Camera2CapturePipeline", "enableExternalFlashAeMode disabled");
                 }
-            }, this.f43771b);
-            this.f43770a.B().o(false, true);
+            }, this.f44339b);
+            this.f44338a.B().o(false, true);
             ScheduledExecutorService d10 = c0.a.d();
-            final n0.i iVar = this.f43773d;
+            final n0.i iVar = this.f44341d;
             Objects.requireNonNull(iVar);
             d10.execute(new Runnable() { // from class: q.p1
                 @Override // java.lang.Runnable
@@ -723,56 +723,56 @@ public class z0 {
     public static class h implements e {
 
         /* renamed from: g  reason: collision with root package name */
-        private static final long f43775g = TimeUnit.SECONDS.toNanos(2);
+        private static final long f44343g = TimeUnit.SECONDS.toNanos(2);
 
         /* renamed from: a  reason: collision with root package name */
-        private final u f43776a;
+        private final u f44344a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final int f43777b;
+        private final int f44345b;
 
         /* renamed from: c  reason: collision with root package name */
-        private boolean f43778c = false;
+        private boolean f44346c = false;
 
         /* renamed from: d  reason: collision with root package name */
-        private final Executor f43779d;
+        private final Executor f44347d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final ScheduledExecutorService f43780e;
+        private final ScheduledExecutorService f44348e;
 
         /* renamed from: f  reason: collision with root package name */
-        private final boolean f43781f;
+        private final boolean f44349f;
 
         h(u uVar, int i10, Executor executor, ScheduledExecutorService scheduledExecutorService, boolean z10) {
-            this.f43776a = uVar;
-            this.f43777b = i10;
-            this.f43779d = executor;
-            this.f43780e = scheduledExecutorService;
-            this.f43781f = z10;
+            this.f44344a = uVar;
+            this.f44345b = i10;
+            this.f44347d = executor;
+            this.f44348e = scheduledExecutorService;
+            this.f44349f = z10;
         }
 
         public static /* synthetic */ ListenableFuture d(h hVar, Void r12) {
-            if (hVar.f43781f) {
-                return hVar.f43776a.B().Q();
+            if (hVar.f44349f) {
+                return hVar.f44344a.B().Q();
             }
             return d0.n.p(null);
         }
 
         public static /* synthetic */ Object e(h hVar, c.a aVar) {
-            hVar.f43776a.M().e(aVar, true);
+            hVar.f44344a.M().e(aVar, true);
             return "TorchOn";
         }
 
         @Override // q.z0.e
         public ListenableFuture a(TotalCaptureResult totalCaptureResult) {
-            boolean e10 = z0.e(this.f43777b, totalCaptureResult);
+            boolean e10 = z0.e(this.f44345b, totalCaptureResult);
             x.y0.a("Camera2CapturePipeline", "TorchTask#preCapture: isFlashRequired = " + e10);
-            if (z0.e(this.f43777b, totalCaptureResult)) {
-                if (this.f43776a.V()) {
+            if (z0.e(this.f44345b, totalCaptureResult)) {
+                if (this.f44344a.V()) {
                     x.y0.a("Camera2CapturePipeline", "Torch already on, not turn on");
                 } else {
                     x.y0.a("Camera2CapturePipeline", "Turn on torch");
-                    this.f43778c = true;
+                    this.f44346c = true;
                     return d0.d.b(androidx.concurrent.futures.c.a(new c.InterfaceC0026c() { // from class: q.y1
                         @Override // androidx.concurrent.futures.c.InterfaceC0026c
                         public final Object a(c.a aVar) {
@@ -783,12 +783,12 @@ public class z0 {
                         public final ListenableFuture apply(Object obj) {
                             return z0.h.d(z0.h.this, (Void) obj);
                         }
-                    }, this.f43779d).f(new d0.a() { // from class: q.a2
+                    }, this.f44347d).f(new d0.a() { // from class: q.a2
                         @Override // d0.a
                         public final ListenableFuture apply(Object obj) {
                             ListenableFuture i10;
                             Void r22 = (Void) obj;
-                            i10 = z0.i(z0.h.f43775g, r0.f43780e, z0.h.this.f43776a, new z0.f.a() { // from class: q.c2
+                            i10 = z0.i(z0.h.f44343g, r0.f44348e, z0.h.this.f44344a, new z0.f.a() { // from class: q.c2
                                 @Override // q.z0.f.a
                                 public final boolean a(TotalCaptureResult totalCaptureResult2) {
                                     boolean d10;
@@ -798,7 +798,7 @@ public class z0 {
                             });
                             return i10;
                         }
-                    }, this.f43779d).e(new Function() { // from class: q.b2
+                    }, this.f44347d).e(new Function() { // from class: q.b2
                         @Override // androidx.arch.core.util.Function
                         public final Object apply(Object obj) {
                             Boolean bool;
@@ -814,7 +814,7 @@ public class z0 {
 
         @Override // q.z0.e
         public boolean b() {
-            if (this.f43777b == 0) {
+            if (this.f44345b == 0) {
                 return true;
             }
             return false;
@@ -822,11 +822,11 @@ public class z0 {
 
         @Override // q.z0.e
         public void c() {
-            if (this.f43778c) {
-                this.f43776a.M().e(null, false);
+            if (this.f44346c) {
+                this.f44344a.M().e(null, false);
                 x.y0.a("Camera2CapturePipeline", "Turning off torch");
-                if (this.f43781f) {
-                    this.f43776a.B().o(false, true);
+                if (this.f44349f) {
+                    this.f44344a.B().o(false, true);
                 }
             }
         }
@@ -835,14 +835,14 @@ public class z0 {
     /* JADX INFO: Access modifiers changed from: package-private */
     public z0(u uVar, r.a0 a0Var, a0.d2 d2Var, Executor executor, ScheduledExecutorService scheduledExecutorService) {
         boolean z10 = true;
-        this.f43735a = uVar;
+        this.f44303a = uVar;
         Integer num = (Integer) a0Var.a(CameraCharacteristics.INFO_SUPPORTED_HARDWARE_LEVEL);
-        this.f43741g = (num == null || num.intValue() != 2) ? false : false;
-        this.f43739e = executor;
-        this.f43740f = scheduledExecutorService;
-        this.f43738d = d2Var;
-        this.f43736b = new u.c0(d2Var);
-        this.f43737c = u.g.a(new w0(a0Var));
+        this.f44309g = (num == null || num.intValue() != 2) ? false : false;
+        this.f44307e = executor;
+        this.f44308f = scheduledExecutorService;
+        this.f44306d = d2Var;
+        this.f44304b = new u.c0(d2Var);
+        this.f44305c = u.g.a(new w0(a0Var));
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -880,7 +880,7 @@ public class z0 {
     }
 
     private boolean f(int i10) {
-        if (this.f43736b.a() || this.f43742h == 3 || i10 == 1) {
+        if (this.f44304b.a() || this.f44310h == 3 || i10 == 1) {
             return true;
         }
         return false;
@@ -900,48 +900,48 @@ public class z0 {
             public final void run() {
                 u.this.W(fVar);
             }
-        }, uVar.f43596c);
+        }, uVar.f44164c);
         return c10;
     }
 
     d b(int i10, int i11, int i12) {
         int i13;
         boolean z10;
-        u.o oVar = new u.o(this.f43738d);
-        d dVar = new d(this.f43742h, this.f43739e, this.f43740f, this.f43735a, this.f43741g, oVar);
+        u.o oVar = new u.o(this.f44306d);
+        d dVar = new d(this.f44310h, this.f44307e, this.f44308f, this.f44303a, this.f44309g, oVar);
         if (i10 == 0) {
-            dVar.f(new b(this.f43735a));
+            dVar.f(new b(this.f44303a));
         }
         if (i11 == 3) {
-            dVar.f(new g(this.f43735a, this.f43739e, this.f43740f, new u.b0(this.f43738d)));
-        } else if (this.f43737c) {
+            dVar.f(new g(this.f44303a, this.f44307e, this.f44308f, new u.b0(this.f44306d)));
+        } else if (this.f44305c) {
             if (f(i12)) {
-                if (!this.f43736b.a() && !this.f43735a.S()) {
+                if (!this.f44304b.a() && !this.f44303a.S()) {
                     z10 = true;
                 } else {
                     z10 = false;
                 }
                 i13 = i11;
-                dVar.f(new h(this.f43735a, i13, this.f43739e, this.f43740f, z10));
+                dVar.f(new h(this.f44303a, i13, this.f44307e, this.f44308f, z10));
             } else {
                 i13 = i11;
-                dVar.f(new a(this.f43735a, i13, oVar));
+                dVar.f(new a(this.f44303a, i13, oVar));
             }
-            x.y0.a("Camera2CapturePipeline", "createPipeline: captureMode = " + i10 + ", flashMode = " + i13 + ", flashType = " + i12 + ", pipeline tasks = " + dVar.f43761h);
+            x.y0.a("Camera2CapturePipeline", "createPipeline: captureMode = " + i10 + ", flashMode = " + i13 + ", flashType = " + i12 + ", pipeline tasks = " + dVar.f44329h);
             return dVar;
         }
         i13 = i11;
-        x.y0.a("Camera2CapturePipeline", "createPipeline: captureMode = " + i10 + ", flashMode = " + i13 + ", flashType = " + i12 + ", pipeline tasks = " + dVar.f43761h);
+        x.y0.a("Camera2CapturePipeline", "createPipeline: captureMode = " + i10 + ", flashMode = " + i13 + ", flashType = " + i12 + ", pipeline tasks = " + dVar.f44329h);
         return dVar;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public z.k c(int i10, int i11, int i12) {
-        return new c(b(i10, i11, i12), this.f43739e, i11);
+        return new c(b(i10, i11, i12), this.f44307e, i11);
     }
 
     public void g(int i10) {
-        this.f43742h = i10;
+        this.f44310h = i10;
     }
 
     public ListenableFuture h(List list, int i10, int i11, int i12) {

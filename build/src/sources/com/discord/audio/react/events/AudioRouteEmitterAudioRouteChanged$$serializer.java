@@ -38,7 +38,7 @@ public /* synthetic */ class AudioRouteEmitterAudioRouteChanged$$serializer impl
     @Override // tt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        return new KSerializer[]{n2.f50033a, h.f49997a};
+        return new KSerializer[]{n2.f50601a, h.f50565a};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy

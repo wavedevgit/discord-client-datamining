@@ -13,80 +13,80 @@ import kotlinx.serialization.json.JsonObject;
 public final class y implements KSerializer {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final y f51262a = new y();
+    public static final y f51830a = new y();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final SerialDescriptor f51263b = a.f51264b;
+    private static final SerialDescriptor f51831b = a.f51832b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     private static final class a implements SerialDescriptor {
 
         /* renamed from: b  reason: collision with root package name */
-        public static final a f51264b = new a();
+        public static final a f51832b = new a();
 
         /* renamed from: c  reason: collision with root package name */
-        private static final String f51265c = "kotlinx.serialization.json.JsonObject";
+        private static final String f51833c = "kotlinx.serialization.json.JsonObject";
 
         /* renamed from: a  reason: collision with root package name */
-        private final /* synthetic */ SerialDescriptor f51266a = rt.a.k(rt.a.I(StringCompanionObject.INSTANCE), o.f51251a).getDescriptor();
+        private final /* synthetic */ SerialDescriptor f51834a = rt.a.k(rt.a.I(StringCompanionObject.INSTANCE), o.f51819a).getDescriptor();
 
         private a() {
         }
 
         @Override // kotlinx.serialization.descriptors.SerialDescriptor
         public boolean b() {
-            return this.f51266a.b();
+            return this.f51834a.b();
         }
 
         @Override // kotlinx.serialization.descriptors.SerialDescriptor
         public int c(String name) {
             Intrinsics.checkNotNullParameter(name, "name");
-            return this.f51266a.c(name);
+            return this.f51834a.c(name);
         }
 
         @Override // kotlinx.serialization.descriptors.SerialDescriptor
         public int d() {
-            return this.f51266a.d();
+            return this.f51834a.d();
         }
 
         @Override // kotlinx.serialization.descriptors.SerialDescriptor
         public String e(int i10) {
-            return this.f51266a.e(i10);
+            return this.f51834a.e(i10);
         }
 
         @Override // kotlinx.serialization.descriptors.SerialDescriptor
         public List f(int i10) {
-            return this.f51266a.f(i10);
+            return this.f51834a.f(i10);
         }
 
         @Override // kotlinx.serialization.descriptors.SerialDescriptor
         public SerialDescriptor g(int i10) {
-            return this.f51266a.g(i10);
+            return this.f51834a.g(i10);
         }
 
         @Override // kotlinx.serialization.descriptors.SerialDescriptor
         public List getAnnotations() {
-            return this.f51266a.getAnnotations();
+            return this.f51834a.getAnnotations();
         }
 
         @Override // kotlinx.serialization.descriptors.SerialDescriptor
         public st.k getKind() {
-            return this.f51266a.getKind();
+            return this.f51834a.getKind();
         }
 
         @Override // kotlinx.serialization.descriptors.SerialDescriptor
         public String h() {
-            return f51265c;
+            return f51833c;
         }
 
         @Override // kotlinx.serialization.descriptors.SerialDescriptor
         public boolean i(int i10) {
-            return this.f51266a.i(i10);
+            return this.f51834a.i(i10);
         }
 
         @Override // kotlinx.serialization.descriptors.SerialDescriptor
         public boolean isInline() {
-            return this.f51266a.isInline();
+            return this.f51834a.isInline();
         }
     }
 
@@ -98,7 +98,7 @@ public final class y implements KSerializer {
     public JsonObject deserialize(Decoder decoder) {
         Intrinsics.checkNotNullParameter(decoder, "decoder");
         p.b(decoder);
-        return new JsonObject((Map) rt.a.k(rt.a.I(StringCompanionObject.INSTANCE), o.f51251a).deserialize(decoder));
+        return new JsonObject((Map) rt.a.k(rt.a.I(StringCompanionObject.INSTANCE), o.f51819a).deserialize(decoder));
     }
 
     @Override // qt.o
@@ -107,11 +107,11 @@ public final class y implements KSerializer {
         Intrinsics.checkNotNullParameter(encoder, "encoder");
         Intrinsics.checkNotNullParameter(value, "value");
         p.c(encoder);
-        rt.a.k(rt.a.I(StringCompanionObject.INSTANCE), o.f51251a).serialize(encoder, value);
+        rt.a.k(rt.a.I(StringCompanionObject.INSTANCE), o.f51819a).serialize(encoder, value);
     }
 
     @Override // kotlinx.serialization.KSerializer, qt.o, kotlinx.serialization.DeserializationStrategy
     public SerialDescriptor getDescriptor() {
-        return f51263b;
+        return f51831b;
     }
 }

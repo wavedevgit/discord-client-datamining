@@ -1,66 +1,153 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var0 = exports;
-    var1 = global;
-    var4 = var1.Object;
-    var3 = var4.defineProperty;
-    var2 = {};
-    var1 = true;
-    var2.value = var1;
-    var1 = '__esModule';
-    var1 = var3.bind(var4)(var0, var1, var2);
-    var1 = function arg0, arg1() {
-        _fun22971: for (var _fun22971_ip = 0;;) switch (_fun22971_ip) {
+    var2 = exports;
+    var0 = global;
+    var5 = var0.Object;
+    var4 = var5.defineProperty;
+    var3 = {};
+    var0 = true;
+    var3.value = var0;
+    var0 = '__esModule';
+    var0 = var4.bind(var5)(var2, var0, var3);
+    var0 = function arg0() {
+        var2 = _closure1_slot0;
+        var1 = var2.indexOf;
+        var0 = arg0;
+        var1 = var1.bind(var2)(var0);
+        var0 = -1;
+        var0 = var0 !== var1;
+        return var0;
+    };
+    var2.isProtectedDayOfYearToken = var0;
+    var0 = function arg0() {
+        var2 = _closure1_slot1;
+        var1 = var2.indexOf;
+        var0 = arg0;
+        var1 = var1.bind(var2)(var0);
+        var0 = -1;
+        var0 = var0 !== var1;
+        return var0;
+    };
+    var2.isProtectedWeekYearToken = var0;
+    var0 = function arg0, arg1, arg2() {
+        _fun22991: for (var _fun22991_ip = 0;;) switch (_fun22991_ip) {
             case 0:
-                var0 = arg0;
-                var7 = arg1;
-                var1 = null;
-                if (!(var1 != var0)) {
-                    _fun22971_ip = 80;
-                    continue _fun22971
+                var1 = arg0;
+                var5 = arg1;
+                var4 = arg2;
+                var0 = 'YYYY';
+                if (!(var0 !== var1)) {
+                    _fun22991_ip = 267;
+                    continue _fun22991
                 }
-            case 12:
-                var5 = var7;
-                var1 = global;
-                for (var2 in var5)
-                    case 25: {
-                        case 34: var9 = var2;
-                        var8 = var1.Object;
-                        var8 = var8.prototype;
-                        var10 = var8.hasOwnProperty;
-                        var8 = var10.call;
-                        var8 = var8.bind(var10)(var7, var9);
-                        if (!var8) {
-                            _fun22971_ip = 25;
-                            continue _fun22971
-                        }
-                        case 68: var8 = var7[var9];
-                        var0[var9] = var8;
-                        _fun22971_ip = 25;
-                        continue _fun22971;
-                    }
-            case 78:
+            case 22:
+                var0 = 'YY';
+                if (!(var0 !== var1)) {
+                    _fun22991_ip = 197;
+                    continue _fun22991
+                }
+            case 35:
+                var0 = 'D';
+                if (!(var0 !== var1)) {
+                    _fun22991_ip = 127;
+                    continue _fun22991
+                }
+            case 43:
+                var0 = 'DD';
+                if (!(var0 !== var1)) {
+                    _fun22991_ip = 57;
+                    continue _fun22991
+                }
+            case 53:
+                var0 = undefined;
                 return var0;
-            case 80:
+            case 57:
                 var0 = global;
-                var2 = var0.TypeError;
-                var0 = var2.prototype;
-                var1 = Object.create(var0, {
+                var2 = var0.RangeError;
+                var3 = 'Use `dd` instead of `DD` (in `';
+                var1 = var3.concat;
+                var0 = '`) for formatting days of the month to the input `';
+                var3 = var1.bind(var3)(var5, var0);
+                var1 = var3.concat;
+                var0 = '`; see: https://github.com/date-fns/date-fns/blob/master/docs/unicodeTokens.md';
+                var7 = var1.bind(var3)(var4, var0);
+                var1 = var2.prototype;
+                var1 = Object.create(var1, {
                     constructor: {
                         value: var2
                     }
                 });
-                var12 = 'assign requires that input parameter not be null or undefined';
-                var13 = var1;
-                var0 = new var13[var2](var12, var11);
+                var8 = var1;
+                var0 = new var8[var2](var7, var6);
+                var0 = var0 instanceof Object ? var0 : var1;
+                throw var0;
+            case 127:
+                var0 = global;
+                var2 = var0.RangeError;
+                var3 = 'Use `d` instead of `D` (in `';
+                var1 = var3.concat;
+                var0 = '`) for formatting days of the month to the input `';
+                var3 = var1.bind(var3)(var5, var0);
+                var1 = var3.concat;
+                var0 = '`; see: https://github.com/date-fns/date-fns/blob/master/docs/unicodeTokens.md';
+                var7 = var1.bind(var3)(var4, var0);
+                var1 = var2.prototype;
+                var1 = Object.create(var1, {
+                    constructor: {
+                        value: var2
+                    }
+                });
+                var8 = var1;
+                var0 = new var8[var2](var7, var6);
+                var0 = var0 instanceof Object ? var0 : var1;
+                throw var0;
+            case 197:
+                var0 = global;
+                var2 = var0.RangeError;
+                var3 = 'Use `yy` instead of `YY` (in `';
+                var1 = var3.concat;
+                var0 = '`) for formatting years to the input `';
+                var3 = var1.bind(var3)(var5, var0);
+                var1 = var3.concat;
+                var0 = '`; see: https://github.com/date-fns/date-fns/blob/master/docs/unicodeTokens.md';
+                var7 = var1.bind(var3)(var4, var0);
+                var1 = var2.prototype;
+                var1 = Object.create(var1, {
+                    constructor: {
+                        value: var2
+                    }
+                });
+                var8 = var1;
+                var0 = new var8[var2](var7, var6);
+                var0 = var0 instanceof Object ? var0 : var1;
+                throw var0;
+            case 267:
+                var0 = global;
+                var2 = var0.RangeError;
+                var3 = 'Use `yyyy` instead of `YYYY` (in `';
+                var1 = var3.concat;
+                var0 = '`) for formatting years to the input `';
+                var3 = var1.bind(var3)(var5, var0);
+                var1 = var3.concat;
+                var0 = '`; see: https://github.com/date-fns/date-fns/blob/master/docs/unicodeTokens.md';
+                var7 = var1.bind(var3)(var4, var0);
+                var1 = var2.prototype;
+                var1 = Object.create(var1, {
+                    constructor: {
+                        value: var2
+                    }
+                });
+                var8 = var1;
+                var0 = new var8[var2](var7, var6);
                 var0 = var0 instanceof Object ? var0 : var1;
                 throw var0;
         }
     };
-    var0.default = var1;
-    var1 = var0.default;
-    var0 = arg4;
-    var0.exports = var1;
+    var2.throwProtectedError = var0;
+    var0 = ['D', 'DD'];
+    var _closure1_slot0 = var0;
+    var0 = ['YY', 'YYYY'];
+    var _closure1_slot1 = var0;
     var0 = undefined;
     return var0;
 })(undefined, undefined, undefined, undefined, undefined, undefined, []);

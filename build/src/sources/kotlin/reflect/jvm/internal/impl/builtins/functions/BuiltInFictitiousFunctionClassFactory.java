@@ -24,16 +24,16 @@ import org.jetbrains.annotations.NotNull;
 public final class BuiltInFictitiousFunctionClassFactory implements ClassDescriptorFactory {
 
     /* renamed from: a  reason: collision with root package name */
-    private final StorageManager f32170a;
+    private final StorageManager f32738a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final ModuleDescriptor f32171b;
+    private final ModuleDescriptor f32739b;
 
     public BuiltInFictitiousFunctionClassFactory(@NotNull StorageManager storageManager, @NotNull ModuleDescriptor module) {
         Intrinsics.checkNotNullParameter(storageManager, "storageManager");
         Intrinsics.checkNotNullParameter(module, "module");
-        this.f32170a = storageManager;
-        this.f32171b = module;
+        this.f32738a = storageManager;
+        this.f32739b = module;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.deserialization.ClassDescriptorFactory
@@ -51,7 +51,7 @@ public final class BuiltInFictitiousFunctionClassFactory implements ClassDescrip
         FunctionTypeKind component1 = functionalClassKindWithArity.component1();
         int component2 = functionalClassKindWithArity.component2();
         ArrayList arrayList = new ArrayList();
-        for (Object obj : this.f32171b.getPackage(packageFqName).getFragments()) {
+        for (Object obj : this.f32739b.getPackage(packageFqName).getFragments()) {
             if (obj instanceof BuiltInsPackageFragment) {
                 arrayList.add(obj);
             }
@@ -66,7 +66,7 @@ public final class BuiltInFictitiousFunctionClassFactory implements ClassDescrip
         if (packageFragmentDescriptor == null) {
             packageFragmentDescriptor = (BuiltInsPackageFragment) CollectionsKt.o0(arrayList);
         }
-        return new FunctionClassDescriptor(this.f32170a, packageFragmentDescriptor, component1, component2);
+        return new FunctionClassDescriptor(this.f32738a, packageFragmentDescriptor, component1, component2);
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.deserialization.ClassDescriptorFactory

@@ -15,14 +15,14 @@ public abstract class p {
     public static final class a implements SerialDescriptor {
 
         /* renamed from: a */
-        private final Lazy f51253a;
+        private final Lazy f51821a;
 
         a(Function0 function0) {
-            this.f51253a = as.l.b(function0);
+            this.f51821a = as.l.b(function0);
         }
 
         private final SerialDescriptor a() {
-            return (SerialDescriptor) this.f51253a.getValue();
+            return (SerialDescriptor) this.f51821a.getValue();
         }
 
         @Override // kotlinx.serialization.descriptors.SerialDescriptor

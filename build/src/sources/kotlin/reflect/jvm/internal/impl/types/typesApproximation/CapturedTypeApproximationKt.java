@@ -133,7 +133,7 @@ public final class CapturedTypeApproximationKt {
         if (!typeProjection.isStarProjection()) {
             KotlinType type = typeProjection.getType();
             Intrinsics.checkNotNullExpressionValue(type, "getType(...)");
-            if (TypeUtils.contains(type, a.f34748d)) {
+            if (TypeUtils.contains(type, a.f35316d)) {
                 Variance projectionKind = typeProjection.getProjectionKind();
                 Intrinsics.checkNotNullExpressionValue(projectionKind, "getProjectionKind(...)");
                 if (projectionKind == Variance.OUT_VARIANCE) {

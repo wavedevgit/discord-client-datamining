@@ -43,7 +43,7 @@ public /* synthetic */ class ReactionsTheme$$serializer implements h0 {
     @Override // tt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        p0 p0Var = p0.f50049a;
+        p0 p0Var = p0.f50617a;
         return new KSerializer[]{a.u(p0Var), a.u(p0Var), a.u(p0Var), a.u(p0Var), a.u(p0Var), a.u(p0Var)};
     }
 
@@ -63,7 +63,7 @@ public /* synthetic */ class ReactionsTheme$$serializer implements h0 {
         int i11 = 5;
         Integer num7 = null;
         if (b10.p()) {
-            p0 p0Var = p0.f50049a;
+            p0 p0Var = p0.f50617a;
             num6 = (Integer) b10.n(serialDescriptor, 5, p0Var, null);
             i10 = 63;
             num4 = (Integer) b10.n(serialDescriptor, 3, p0Var, null);
@@ -86,23 +86,23 @@ public /* synthetic */ class ReactionsTheme$$serializer implements h0 {
                         z10 = false;
                         i11 = 5;
                     case 0:
-                        num7 = (Integer) b10.n(serialDescriptor, 0, p0.f50049a, num7);
+                        num7 = (Integer) b10.n(serialDescriptor, 0, p0.f50617a, num7);
                         i12 |= 1;
                         i11 = 5;
                     case 1:
-                        num8 = (Integer) b10.n(serialDescriptor, 1, p0.f50049a, num8);
+                        num8 = (Integer) b10.n(serialDescriptor, 1, p0.f50617a, num8);
                         i12 |= 2;
                     case 2:
-                        num9 = (Integer) b10.n(serialDescriptor, 2, p0.f50049a, num9);
+                        num9 = (Integer) b10.n(serialDescriptor, 2, p0.f50617a, num9);
                         i12 |= 4;
                     case 3:
-                        num10 = (Integer) b10.n(serialDescriptor, 3, p0.f50049a, num10);
+                        num10 = (Integer) b10.n(serialDescriptor, 3, p0.f50617a, num10);
                         i12 |= 8;
                     case 4:
-                        num11 = (Integer) b10.n(serialDescriptor, 4, p0.f50049a, num11);
+                        num11 = (Integer) b10.n(serialDescriptor, 4, p0.f50617a, num11);
                         i12 |= 16;
                     case 5:
-                        num12 = (Integer) b10.n(serialDescriptor, i11, p0.f50049a, num12);
+                        num12 = (Integer) b10.n(serialDescriptor, i11, p0.f50617a, num12);
                         i12 |= 32;
                     default:
                         throw new b0(o10);

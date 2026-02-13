@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = new Array(1);
         var1[0] = var4;
         var0 = function(arg0) { // Environment: var0
-            _fun63916: for (var _fun63916_ip = 0;;) switch (_fun63916_ip) {
+            _fun61644: for (var _fun61644_ip = 0;;) switch (_fun61644_ip) {
                 case 0:
                     var0 = arg0;
                     var7 = var0.nativeEvent;
@@ -42,16 +42,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var8 = var0.current;
                     var0 = var7.isSectionHeader;
                     if (var0) {
-                        _fun63916_ip = 127;
-                        continue _fun63916
+                        _fun61644_ip = 126;
+                        continue _fun61644
                     }
-                case 30:
+                case 29:
                     var0 = var7.isSectionFooter;
                     if (var0) {
-                        _fun63916_ip = 77;
-                        continue _fun63916
+                        _fun61644_ip = 76;
+                        continue _fun61644
                     }
-                case 39:
+                case 38:
                     var3 = var8.renderItem;
                     var2 = var7.section;
                     var0 = var7.item;
@@ -60,141 +60,141 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = var2 != var0;
                     var4 = undefined;
                     if (!var2) {
-                        _fun63916_ip = 75;
-                        continue _fun63916
+                        _fun61644_ip = 74;
+                        continue _fun61644
                     }
-                case 72:
+                case 71:
                     var4 = var0;
-                case 75:
-                    _fun63916_ip = 125;
-                    continue _fun63916;
-                case 77:
+                case 74:
+                    _fun61644_ip = 124;
+                    continue _fun61644;
+                case 76:
                     var0 = var8.renderSectionFooter;
                     var3 = null;
                     var5 = var3 == var0;
                     var2 = undefined;
                     if (var5) {
-                        _fun63916_ip = 110;
-                        continue _fun63916
+                        _fun61644_ip = 109;
+                        continue _fun61644
                     }
-                case 94:
+                case 93:
                     var6 = var8.renderSectionFooter;
                     var5 = var7.section;
                     var2 = var6.bind(var8)(var5);
-                case 110:
+                case 109:
                     var3 = var3 != var2;
                     var0 = undefined;
                     if (!var3) {
-                        _fun63916_ip = 122;
-                        continue _fun63916
+                        _fun61644_ip = 121;
+                        continue _fun61644
                     }
-                case 119:
+                case 118:
                     var0 = var2;
-                case 122:
+                case 121:
                     var4 = var0;
-                case 125:
-                    _fun63916_ip = 175;
-                    continue _fun63916;
-                case 127:
+                case 124:
+                    _fun61644_ip = 174;
+                    continue _fun61644;
+                case 126:
                     var0 = var8.renderSectionHeader;
                     var3 = null;
                     var5 = var3 == var0;
                     var2 = undefined;
                     if (var5) {
-                        _fun63916_ip = 160;
-                        continue _fun63916
+                        _fun61644_ip = 159;
+                        continue _fun61644
                     }
-                case 144:
+                case 143:
                     var6 = var8.renderSectionHeader;
                     var5 = var7.section;
                     var2 = var6.bind(var8)(var5);
-                case 160:
+                case 159:
                     var3 = var3 != var2;
                     var0 = undefined;
                     if (!var3) {
-                        _fun63916_ip = 172;
-                        continue _fun63916
+                        _fun61644_ip = 171;
+                        continue _fun61644
                     }
-                case 169:
+                case 168:
                     var0 = var2;
-                case 172:
+                case 171:
                     var4 = var0;
-                case 175:
+                case 174:
                     var3 = null;
                     var2 = var3 == var4;
                     var0 = undefined;
                     var8 = undefined;
                     if (var2) {
-                        _fun63916_ip = 193;
-                        continue _fun63916
+                        _fun61644_ip = 192;
+                        continue _fun61644
                     }
-                case 188:
+                case 187:
                     var8 = var4.props;
-                case 193:
+                case 192:
                     var5 = var3 == var4;
                     var2 = undefined;
                     if (var5) {
-                        _fun63916_ip = 207;
-                        continue _fun63916
+                        _fun61644_ip = 206;
+                        continue _fun61644
                     }
-                case 202:
+                case 201:
                     var2 = var4.type;
-                case 207:
+                case 206:
                     var9 = 'function';
                     var4 = typeof var2;
                     if (!(var9 === var4)) {
-                        _fun63916_ip = 234;
-                        continue _fun63916
+                        _fun61644_ip = 233;
+                        continue _fun61644
                     }
-                case 218:
+                case 217:
                     var4 = var2.name;
                     var5 = var4.length;
                     var4 = 0;
                     if (!(!(var5 > var4))) {
-                        _fun63916_ip = 285;
-                        continue _fun63916
+                        _fun61644_ip = 284;
+                        continue _fun61644
                     }
-                case 234:
+                case 233:
                     var5 = var3 == var2;
                     var4 = undefined;
                     if (var5) {
-                        _fun63916_ip = 248;
-                        continue _fun63916
+                        _fun61644_ip = 247;
+                        continue _fun61644
                     }
-                case 243:
+                case 242:
                     var4 = var2.type;
-                case 248:
+                case 247:
                     var6 = typeof var4;
                     var5 = undefined;
                     if (!(var9 === var6)) {
-                        _fun63916_ip = 283;
-                        continue _fun63916
+                        _fun61644_ip = 282;
+                        continue _fun61644
                     }
-                case 257:
+                case 256:
                     var6 = var4.name;
                     var9 = var6.length;
                     var6 = 0;
                     var6 = var9 > var6;
                     var5 = undefined;
                     if (!var6) {
-                        _fun63916_ip = 283;
-                        continue _fun63916
+                        _fun61644_ip = 282;
+                        continue _fun61644
                     }
-                case 278:
+                case 277:
                     var5 = var4.name;
-                case 283:
-                    _fun63916_ip = 290;
-                    continue _fun63916;
-                case 285:
+                case 282:
+                    _fun61644_ip = 289;
+                    continue _fun61644;
+                case 284:
                     var5 = var2.name;
-                case 290:
+                case 289:
                     var4 = var3 == var5;
                     var2 = undefined;
                     if (!var4) {
-                        _fun63916_ip = 331;
-                        continue _fun63916
+                        _fun61644_ip = 330;
+                        continue _fun61644
                     }
-                case 299:
+                case 298:
                     var4 = global;
                     var6 = var4.Object;
                     var4 = var6.keys;
@@ -202,21 +202,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var6 = var8.join;
                     var4 = ',';
                     var2 = var6.bind(var8)(var4);
-                case 331:
+                case 330:
                     var4 = var7.isSectionHeader;
                     if (var4) {
-                        _fun63916_ip = 426;
-                        continue _fun63916
+                        _fun61644_ip = 425;
+                        continue _fun61644
                     }
-                case 340:
+                case 339:
                     var6 = var7.isSectionFooter;
                     var10 = var7.section;
                     var4 = global;
                     if (var6) {
-                        _fun63916_ip = 397;
-                        continue _fun63916
+                        _fun61644_ip = 396;
+                        continue _fun61644
                     }
-                case 356:
+                case 355:
                     var14 = var7.item;
                     var6 = var4.HermesInternal;
                     var11 = var6.concat;
@@ -225,18 +225,18 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var13 = '.';
                     var16 = var10;
                     var6 = var17[var11](var16, var15, var14, var13, var12);
-                    _fun63916_ip = 424;
-                    continue _fun63916;
-                case 397:
+                    _fun61644_ip = 423;
+                    continue _fun61644;
+                case 396:
                     var4 = var4.HermesInternal;
                     var9 = var4.concat;
                     var8 = 'Section footer at section ';
                     var4 = '.';
                     var6 = var9.bind(var8)(var10, var4);
-                case 424:
-                    _fun63916_ip = 460;
-                    continue _fun63916;
-                case 426:
+                case 423:
+                    _fun61644_ip = 459;
+                    continue _fun61644;
+                case 425:
                     var10 = var7.section;
                     var4 = global;
                     var4 = var4.HermesInternal;
@@ -244,7 +244,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var8 = 'Section header at section ';
                     var4 = '.';
                     var6 = var9.bind(var8)(var10, var4);
-                case 460:
+                case 459:
                     var4 = {};
                     var16 = var7.sizeExpected;
                     var14 = var7.size;
@@ -260,12 +260,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var6 = var3 != var5;
                     var3 = 'Unknown component.';
                     if (!var6) {
-                        _fun63916_ip = 538;
-                        continue _fun63916
+                        _fun61644_ip = 537;
+                        continue _fun61644
                     }
-                case 535:
+                case 534:
                     var3 = var5;
-                case 538:
+                case 537:
                     var4.itemName = var3;
                     var4.itemProps = var2;
                     var1 = _closure2_slot0;
@@ -288,4 +288,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 7893, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 7626, 2]);

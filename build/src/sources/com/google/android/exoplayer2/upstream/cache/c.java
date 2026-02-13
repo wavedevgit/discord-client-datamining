@@ -172,11 +172,11 @@ public final class c implements DataSource {
         if (f10 == null) {
             dataSource = this.f14048d;
             a10 = aVar.a().h(this.f14058n).g(this.f14059o).a();
-        } else if (f10.f37181o) {
-            Uri fromFile = Uri.fromFile((File) w0.j(f10.f37182p));
-            long j12 = f10.f37179e;
+        } else if (f10.f37749o) {
+            Uri fromFile = Uri.fromFile((File) w0.j(f10.f37750p));
+            long j12 = f10.f37747e;
             long j13 = this.f14058n - j12;
-            long j14 = f10.f37180i - j13;
+            long j14 = f10.f37748i - j13;
             long j15 = this.f14059o;
             if (j15 != -1) {
                 j14 = Math.min(j14, j15);
@@ -187,7 +187,7 @@ public final class c implements DataSource {
             if (f10.e()) {
                 j10 = this.f14059o;
             } else {
-                j10 = f10.f37180i;
+                j10 = f10.f37748i;
                 long j16 = this.f14059o;
                 if (j16 != -1) {
                     j10 = Math.min(j10, j16);
@@ -470,7 +470,7 @@ public final class c implements DataSource {
     private c(com.google.android.exoplayer2.upstream.cache.a aVar, DataSource dataSource, DataSource dataSource2, l lVar, ne.b bVar, int i10, j0 j0Var, int i11, a aVar2) {
         this.f14045a = aVar;
         this.f14046b = dataSource2;
-        this.f14049e = bVar == null ? ne.b.f37177a : bVar;
+        this.f14049e = bVar == null ? ne.b.f37745a : bVar;
         this.f14050f = (i10 & 1) != 0;
         this.f14051g = (i10 & 2) != 0;
         this.f14052h = (i10 & 4) != 0;

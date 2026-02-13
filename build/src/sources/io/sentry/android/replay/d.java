@@ -8,28 +8,28 @@ import kotlin.jvm.internal.Intrinsics;
 public final class d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final s f28837a;
+    private final s f29405a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final i f28838b;
+    private final i f29406b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Date f28839c;
+    private final Date f29407c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f28840d;
+    private final int f29408d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final long f28841e;
+    private final long f29409e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final l7.b f28842f;
+    private final l7.b f29410f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final String f28843g;
+    private final String f29411g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final List f28844h;
+    private final List f29412h;
 
     public d(s recorderConfig, i cache, Date timestamp, int i10, long j10, l7.b replayType, String str, List events) {
         Intrinsics.checkNotNullParameter(recorderConfig, "recorderConfig");
@@ -37,34 +37,34 @@ public final class d {
         Intrinsics.checkNotNullParameter(timestamp, "timestamp");
         Intrinsics.checkNotNullParameter(replayType, "replayType");
         Intrinsics.checkNotNullParameter(events, "events");
-        this.f28837a = recorderConfig;
-        this.f28838b = cache;
-        this.f28839c = timestamp;
-        this.f28840d = i10;
-        this.f28841e = j10;
-        this.f28842f = replayType;
-        this.f28843g = str;
-        this.f28844h = events;
+        this.f29405a = recorderConfig;
+        this.f29406b = cache;
+        this.f29407c = timestamp;
+        this.f29408d = i10;
+        this.f29409e = j10;
+        this.f29410f = replayType;
+        this.f29411g = str;
+        this.f29412h = events;
     }
 
     public final i a() {
-        return this.f28838b;
+        return this.f29406b;
     }
 
     public final long b() {
-        return this.f28841e;
+        return this.f29409e;
     }
 
     public final List c() {
-        return this.f28844h;
+        return this.f29412h;
     }
 
     public final int d() {
-        return this.f28840d;
+        return this.f29408d;
     }
 
     public final s e() {
-        return this.f28837a;
+        return this.f29405a;
     }
 
     public boolean equals(Object obj) {
@@ -73,30 +73,30 @@ public final class d {
         }
         if (obj instanceof d) {
             d dVar = (d) obj;
-            return Intrinsics.areEqual(this.f28837a, dVar.f28837a) && Intrinsics.areEqual(this.f28838b, dVar.f28838b) && Intrinsics.areEqual(this.f28839c, dVar.f28839c) && this.f28840d == dVar.f28840d && this.f28841e == dVar.f28841e && this.f28842f == dVar.f28842f && Intrinsics.areEqual(this.f28843g, dVar.f28843g) && Intrinsics.areEqual(this.f28844h, dVar.f28844h);
+            return Intrinsics.areEqual(this.f29405a, dVar.f29405a) && Intrinsics.areEqual(this.f29406b, dVar.f29406b) && Intrinsics.areEqual(this.f29407c, dVar.f29407c) && this.f29408d == dVar.f29408d && this.f29409e == dVar.f29409e && this.f29410f == dVar.f29410f && Intrinsics.areEqual(this.f29411g, dVar.f29411g) && Intrinsics.areEqual(this.f29412h, dVar.f29412h);
         }
         return false;
     }
 
     public final l7.b f() {
-        return this.f28842f;
+        return this.f29410f;
     }
 
     public final String g() {
-        return this.f28843g;
+        return this.f29411g;
     }
 
     public final Date h() {
-        return this.f28839c;
+        return this.f29407c;
     }
 
     public int hashCode() {
-        int hashCode = ((((((((((this.f28837a.hashCode() * 31) + this.f28838b.hashCode()) * 31) + this.f28839c.hashCode()) * 31) + Integer.hashCode(this.f28840d)) * 31) + Long.hashCode(this.f28841e)) * 31) + this.f28842f.hashCode()) * 31;
-        String str = this.f28843g;
-        return ((hashCode + (str == null ? 0 : str.hashCode())) * 31) + this.f28844h.hashCode();
+        int hashCode = ((((((((((this.f29405a.hashCode() * 31) + this.f29406b.hashCode()) * 31) + this.f29407c.hashCode()) * 31) + Integer.hashCode(this.f29408d)) * 31) + Long.hashCode(this.f29409e)) * 31) + this.f29410f.hashCode()) * 31;
+        String str = this.f29411g;
+        return ((hashCode + (str == null ? 0 : str.hashCode())) * 31) + this.f29412h.hashCode();
     }
 
     public String toString() {
-        return "LastSegmentData(recorderConfig=" + this.f28837a + ", cache=" + this.f28838b + ", timestamp=" + this.f28839c + ", id=" + this.f28840d + ", duration=" + this.f28841e + ", replayType=" + this.f28842f + ", screenAtStart=" + this.f28843g + ", events=" + this.f28844h + ')';
+        return "LastSegmentData(recorderConfig=" + this.f29405a + ", cache=" + this.f29406b + ", timestamp=" + this.f29407c + ", id=" + this.f29408d + ", duration=" + this.f29409e + ", replayType=" + this.f29410f + ", screenAtStart=" + this.f29411g + ", events=" + this.f29412h + ')';
     }
 }

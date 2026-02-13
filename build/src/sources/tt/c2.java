@@ -5,5 +5,5 @@ import kotlinx.serialization.KSerializer;
 public abstract class c2 {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final KSerializer[] f49973a = new KSerializer[0];
+    public static final KSerializer[] f50541a = new KSerializer[0];
 }

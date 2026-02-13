@@ -3,13 +3,13 @@ package io.sentry;
 public final class e2 implements l0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private static final e2 f29270d = new e2();
+    private static final e2 f29838d = new e2();
 
     private e2() {
     }
 
     public static e2 a() {
-        return f29270d;
+        return f29838d;
     }
 
     @Override // io.sentry.l0
@@ -26,7 +26,7 @@ public final class e2 implements l0 {
 
     @Override // io.sentry.l0
     public io.sentry.protocol.x f() {
-        return io.sentry.protocol.x.f29799e;
+        return io.sentry.protocol.x.f30367e;
     }
 
     @Override // io.sentry.l0
@@ -35,7 +35,7 @@ public final class e2 implements l0 {
 
     @Override // io.sentry.l0
     public io.sentry.protocol.x h() {
-        return io.sentry.protocol.x.f29799e;
+        return io.sentry.protocol.x.f30367e;
     }
 
     @Override // io.sentry.l0

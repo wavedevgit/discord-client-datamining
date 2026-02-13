@@ -7,31 +7,31 @@ import kotlin.enums.EnumEntries;
 public final class a {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final a f51224d = new a("NONE", 0);
+    public static final a f51792d = new a("NONE", 0);
 
     /* renamed from: e  reason: collision with root package name */
-    public static final a f51225e = new a("ALL_JSON_OBJECTS", 1);
+    public static final a f51793e = new a("ALL_JSON_OBJECTS", 1);
 
     /* renamed from: i  reason: collision with root package name */
-    public static final a f51226i = new a("POLYMORPHIC", 2);
+    public static final a f51794i = new a("POLYMORPHIC", 2);
 
     /* renamed from: o  reason: collision with root package name */
-    private static final /* synthetic */ a[] f51227o;
+    private static final /* synthetic */ a[] f51795o;
 
     /* renamed from: p  reason: collision with root package name */
-    private static final /* synthetic */ EnumEntries f51228p;
+    private static final /* synthetic */ EnumEntries f51796p;
 
     static {
         a[] a10 = a();
-        f51227o = a10;
-        f51228p = hs.a.a(a10);
+        f51795o = a10;
+        f51796p = hs.a.a(a10);
     }
 
     private a(String str, int i10) {
     }
 
     private static final /* synthetic */ a[] a() {
-        return new a[]{f51224d, f51225e, f51226i};
+        return new a[]{f51792d, f51793e, f51794i};
     }
 
     public static a valueOf(String str) {
@@ -39,6 +39,6 @@ public final class a {
     }
 
     public static a[] values() {
-        return (a[]) f51227o.clone();
+        return (a[]) f51795o.clone();
     }
 }

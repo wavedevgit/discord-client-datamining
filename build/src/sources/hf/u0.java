@@ -3,10 +3,10 @@ package hf;
 public final class u0 extends Exception {
 
     /* renamed from: d  reason: collision with root package name */
-    public final com.google.android.gms.common.b f27332d;
+    public final com.google.android.gms.common.b f27900d;
 
     public u0(com.google.android.gms.common.b bVar) {
         q.b(bVar.f(), "ResolvableConnectionException can only be created with a connection result containing a resolution.");
-        this.f27332d = bVar;
+        this.f27900d = bVar;
     }
 }

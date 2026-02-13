@@ -12,13 +12,13 @@ public final class q implements Metadata.b {
     public static final Parcelable.Creator<q> CREATOR = new a();
 
     /* renamed from: d  reason: collision with root package name */
-    public final String f52655d;
+    public final String f53223d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final String f52656e;
+    public final String f53224e;
 
     /* renamed from: i  reason: collision with root package name */
-    public final List f52657i;
+    public final List f53225i;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     class a implements Parcelable.Creator {
@@ -39,9 +39,9 @@ public final class q implements Metadata.b {
     }
 
     public q(String str, String str2, List list) {
-        this.f52655d = str;
-        this.f52656e = str2;
-        this.f52657i = Collections.unmodifiableList(new ArrayList(list));
+        this.f53223d = str;
+        this.f53224e = str2;
+        this.f53225i = Collections.unmodifiableList(new ArrayList(list));
     }
 
     @Override // android.os.Parcelable
@@ -55,7 +55,7 @@ public final class q implements Metadata.b {
         }
         if (obj != null && q.class == obj.getClass()) {
             q qVar = (q) obj;
-            if (TextUtils.equals(this.f52655d, qVar.f52655d) && TextUtils.equals(this.f52656e, qVar.f52656e) && this.f52657i.equals(qVar.f52657i)) {
+            if (TextUtils.equals(this.f53223d, qVar.f53223d) && TextUtils.equals(this.f53224e, qVar.f53224e) && this.f53225i.equals(qVar.f53225i)) {
                 return true;
             }
         }
@@ -64,7 +64,7 @@ public final class q implements Metadata.b {
 
     public int hashCode() {
         int i10;
-        String str = this.f52655d;
+        String str = this.f53223d;
         int i11 = 0;
         if (str != null) {
             i10 = str.hashCode();
@@ -72,19 +72,19 @@ public final class q implements Metadata.b {
             i10 = 0;
         }
         int i12 = i10 * 31;
-        String str2 = this.f52656e;
+        String str2 = this.f53224e;
         if (str2 != null) {
             i11 = str2.hashCode();
         }
-        return ((i12 + i11) * 31) + this.f52657i.hashCode();
+        return ((i12 + i11) * 31) + this.f53225i.hashCode();
     }
 
     public String toString() {
         String str;
         StringBuilder sb2 = new StringBuilder();
         sb2.append("HlsTrackMetadataEntry");
-        if (this.f52655d != null) {
-            str = " [" + this.f52655d + ", " + this.f52656e + "]";
+        if (this.f53223d != null) {
+            str = " [" + this.f53223d + ", " + this.f53224e + "]";
         } else {
             str = "";
         }
@@ -94,24 +94,24 @@ public final class q implements Metadata.b {
 
     @Override // android.os.Parcelable
     public void writeToParcel(Parcel parcel, int i10) {
-        parcel.writeString(this.f52655d);
-        parcel.writeString(this.f52656e);
-        int size = this.f52657i.size();
+        parcel.writeString(this.f53223d);
+        parcel.writeString(this.f53224e);
+        int size = this.f53225i.size();
         parcel.writeInt(size);
         for (int i11 = 0; i11 < size; i11++) {
-            parcel.writeParcelable((Parcelable) this.f52657i.get(i11), 0);
+            parcel.writeParcelable((Parcelable) this.f53225i.get(i11), 0);
         }
     }
 
     q(Parcel parcel) {
-        this.f52655d = parcel.readString();
-        this.f52656e = parcel.readString();
+        this.f53223d = parcel.readString();
+        this.f53224e = parcel.readString();
         int readInt = parcel.readInt();
         ArrayList arrayList = new ArrayList(readInt);
         for (int i10 = 0; i10 < readInt; i10++) {
             arrayList.add((b) parcel.readParcelable(b.class.getClassLoader()));
         }
-        this.f52657i = Collections.unmodifiableList(arrayList);
+        this.f53225i = Collections.unmodifiableList(arrayList);
     }
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
@@ -119,22 +119,22 @@ public final class q implements Metadata.b {
         public static final Parcelable.Creator<b> CREATOR = new a();
 
         /* renamed from: d  reason: collision with root package name */
-        public final int f52658d;
+        public final int f53226d;
 
         /* renamed from: e  reason: collision with root package name */
-        public final int f52659e;
+        public final int f53227e;
 
         /* renamed from: i  reason: collision with root package name */
-        public final String f52660i;
+        public final String f53228i;
 
         /* renamed from: o  reason: collision with root package name */
-        public final String f52661o;
+        public final String f53229o;
 
         /* renamed from: p  reason: collision with root package name */
-        public final String f52662p;
+        public final String f53230p;
 
         /* renamed from: q  reason: collision with root package name */
-        public final String f52663q;
+        public final String f53231q;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
         class a implements Parcelable.Creator {
@@ -155,12 +155,12 @@ public final class q implements Metadata.b {
         }
 
         public b(int i10, int i11, String str, String str2, String str3, String str4) {
-            this.f52658d = i10;
-            this.f52659e = i11;
-            this.f52660i = str;
-            this.f52661o = str2;
-            this.f52662p = str3;
-            this.f52663q = str4;
+            this.f53226d = i10;
+            this.f53227e = i11;
+            this.f53228i = str;
+            this.f53229o = str2;
+            this.f53230p = str3;
+            this.f53231q = str4;
         }
 
         @Override // android.os.Parcelable
@@ -174,7 +174,7 @@ public final class q implements Metadata.b {
             }
             if (obj != null && b.class == obj.getClass()) {
                 b bVar = (b) obj;
-                if (this.f52658d == bVar.f52658d && this.f52659e == bVar.f52659e && TextUtils.equals(this.f52660i, bVar.f52660i) && TextUtils.equals(this.f52661o, bVar.f52661o) && TextUtils.equals(this.f52662p, bVar.f52662p) && TextUtils.equals(this.f52663q, bVar.f52663q)) {
+                if (this.f53226d == bVar.f53226d && this.f53227e == bVar.f53227e && TextUtils.equals(this.f53228i, bVar.f53228i) && TextUtils.equals(this.f53229o, bVar.f53229o) && TextUtils.equals(this.f53230p, bVar.f53230p) && TextUtils.equals(this.f53231q, bVar.f53231q)) {
                     return true;
                 }
             }
@@ -185,8 +185,8 @@ public final class q implements Metadata.b {
             int i10;
             int i11;
             int i12;
-            int i13 = ((this.f52658d * 31) + this.f52659e) * 31;
-            String str = this.f52660i;
+            int i13 = ((this.f53226d * 31) + this.f53227e) * 31;
+            String str = this.f53228i;
             int i14 = 0;
             if (str != null) {
                 i10 = str.hashCode();
@@ -194,21 +194,21 @@ public final class q implements Metadata.b {
                 i10 = 0;
             }
             int i15 = (i13 + i10) * 31;
-            String str2 = this.f52661o;
+            String str2 = this.f53229o;
             if (str2 != null) {
                 i11 = str2.hashCode();
             } else {
                 i11 = 0;
             }
             int i16 = (i15 + i11) * 31;
-            String str3 = this.f52662p;
+            String str3 = this.f53230p;
             if (str3 != null) {
                 i12 = str3.hashCode();
             } else {
                 i12 = 0;
             }
             int i17 = (i16 + i12) * 31;
-            String str4 = this.f52663q;
+            String str4 = this.f53231q;
             if (str4 != null) {
                 i14 = str4.hashCode();
             }
@@ -217,21 +217,21 @@ public final class q implements Metadata.b {
 
         @Override // android.os.Parcelable
         public void writeToParcel(Parcel parcel, int i10) {
-            parcel.writeInt(this.f52658d);
-            parcel.writeInt(this.f52659e);
-            parcel.writeString(this.f52660i);
-            parcel.writeString(this.f52661o);
-            parcel.writeString(this.f52662p);
-            parcel.writeString(this.f52663q);
+            parcel.writeInt(this.f53226d);
+            parcel.writeInt(this.f53227e);
+            parcel.writeString(this.f53228i);
+            parcel.writeString(this.f53229o);
+            parcel.writeString(this.f53230p);
+            parcel.writeString(this.f53231q);
         }
 
         b(Parcel parcel) {
-            this.f52658d = parcel.readInt();
-            this.f52659e = parcel.readInt();
-            this.f52660i = parcel.readString();
-            this.f52661o = parcel.readString();
-            this.f52662p = parcel.readString();
-            this.f52663q = parcel.readString();
+            this.f53226d = parcel.readInt();
+            this.f53227e = parcel.readInt();
+            this.f53228i = parcel.readString();
+            this.f53229o = parcel.readString();
+            this.f53230p = parcel.readString();
+            this.f53231q = parcel.readString();
         }
     }
 }

@@ -3,16 +3,16 @@ package qg;
 public abstract class be {
 
     /* renamed from: a  reason: collision with root package name */
-    private static ae f44193a;
+    private static ae f44761a;
 
     public static synchronized qd a(gd gdVar) {
         qd qdVar;
         synchronized (be.class) {
             try {
-                if (f44193a == null) {
-                    f44193a = new ae(null);
+                if (f44761a == null) {
+                    f44761a = new ae(null);
                 }
-                qdVar = (qd) f44193a.b(gdVar);
+                qdVar = (qd) f44761a.b(gdVar);
             } catch (Throwable th2) {
                 throw th2;
             }

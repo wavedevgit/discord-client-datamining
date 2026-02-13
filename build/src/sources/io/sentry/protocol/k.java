@@ -12,13 +12,13 @@ import java.util.concurrent.ConcurrentHashMap;
 public final class k implements w1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Number f29721d;
+    private final Number f30289d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final String f29722e;
+    private final String f30290e;
 
     /* renamed from: i  reason: collision with root package name */
-    private Map f29723i;
+    private Map f30291i;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements m1 {
@@ -58,25 +58,25 @@ public final class k implements w1 {
     }
 
     public k(Number number, String str) {
-        this.f29721d = number;
-        this.f29722e = str;
+        this.f30289d = number;
+        this.f30290e = str;
     }
 
     public void a(Map map) {
-        this.f29723i = map;
+        this.f30291i = map;
     }
 
     @Override // io.sentry.w1
     public void serialize(f3 f3Var, ILogger iLogger) {
         f3Var.u();
-        f3Var.e("value").i(this.f29721d);
-        if (this.f29722e != null) {
-            f3Var.e("unit").f(this.f29722e);
+        f3Var.e("value").i(this.f30289d);
+        if (this.f30290e != null) {
+            f3Var.e("unit").f(this.f30290e);
         }
-        Map map = this.f29723i;
+        Map map = this.f30291i;
         if (map != null) {
             for (String str : map.keySet()) {
-                Object obj = this.f29723i.get(str);
+                Object obj = this.f30291i.get(str);
                 f3Var.e(str);
                 f3Var.j(iLogger, obj);
             }

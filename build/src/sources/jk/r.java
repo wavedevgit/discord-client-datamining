@@ -3,13 +3,13 @@ package jk;
 class r implements h0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final r f31140a = new r();
+    private static final r f31708a = new r();
 
     private r() {
     }
 
     public static r c() {
-        return f31140a;
+        return f31708a;
     }
 
     @Override // jk.h0

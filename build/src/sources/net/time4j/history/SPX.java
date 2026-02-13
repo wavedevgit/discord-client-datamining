@@ -13,43 +13,43 @@ import net.time4j.f0;
 final class SPX implements Externalizable {
 
     /* renamed from: i  reason: collision with root package name */
-    private static final int[] f37501i = new int[0];
+    private static final int[] f38069i = new int[0];
     private static final long serialVersionUID = 1;
 
     /* renamed from: d  reason: collision with root package name */
-    private transient Object f37502d;
+    private transient Object f38070d;
 
     /* renamed from: e  reason: collision with root package name */
-    private transient int f37503e;
+    private transient int f38071e;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f37504a;
+        static final /* synthetic */ int[] f38072a;
 
         static {
             int[] iArr = new int[gu.b.values().length];
-            f37504a = iArr;
+            f38072a = iArr;
             try {
                 iArr[gu.b.PROLEPTIC_GREGORIAN.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f37504a[gu.b.PROLEPTIC_JULIAN.ordinal()] = 2;
+                f38072a[gu.b.PROLEPTIC_JULIAN.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                f37504a[gu.b.PROLEPTIC_BYZANTINE.ordinal()] = 3;
+                f38072a[gu.b.PROLEPTIC_BYZANTINE.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
             try {
-                f37504a[gu.b.SWEDEN.ordinal()] = 4;
+                f38072a[gu.b.SWEDEN.ordinal()] = 4;
             } catch (NoSuchFieldError unused4) {
             }
             try {
-                f37504a[gu.b.INTRODUCTION_ON_1582_10_15.ordinal()] = 5;
+                f38072a[gu.b.INTRODUCTION_ON_1582_10_15.ordinal()] = 5;
             } catch (NoSuchFieldError unused5) {
             }
         }
@@ -69,7 +69,7 @@ final class SPX implements Externalizable {
     }
 
     private d b(DataInput dataInput, byte b10) {
-        int i10 = a.f37504a[a(b10 & 15).ordinal()];
+        int i10 = a.f38072a[a(b10 & 15).ordinal()];
         if (i10 != 1) {
             if (i10 != 2) {
                 if (i10 != 3) {
@@ -102,15 +102,15 @@ final class SPX implements Externalizable {
 
     private void d(DataOutput dataOutput) {
         int[] iArr;
-        d dVar = (d) this.f37502d;
-        dataOutput.writeByte(dVar.s().a() | (this.f37503e << 4));
+        d dVar = (d) this.f38070d;
+        dataOutput.writeByte(dVar.s().a() | (this.f38071e << 4));
         if (dVar.s() == gu.b.SINGLE_CUTOVER_DATE) {
-            dataOutput.writeLong(((f) dVar.p().get(0)).f37537a);
+            dataOutput.writeLong(((f) dVar.p().get(0)).f38105a);
         }
         if (dVar.x()) {
             iArr = dVar.l().e();
         } else {
-            iArr = f37501i;
+            iArr = f38069i;
         }
         dataOutput.writeInt(iArr.length);
         for (int i10 : iArr) {
@@ -121,7 +121,7 @@ final class SPX implements Externalizable {
     }
 
     private Object readResolve() {
-        return this.f37502d;
+        return this.f38070d;
     }
 
     @Override // java.io.Externalizable
@@ -153,12 +153,12 @@ final class SPX implements Externalizable {
         } else {
             b10 = b(objectInput, readByte);
         }
-        this.f37502d = b10;
+        this.f38070d = b10;
     }
 
     @Override // java.io.Externalizable
     public void writeExternal(ObjectOutput objectOutput) {
-        int i10 = this.f37503e;
+        int i10 = this.f38071e;
         if (i10 != 1 && i10 != 2 && i10 != 3) {
             throw new InvalidClassException("Unknown serialized type.");
         }
@@ -167,7 +167,7 @@ final class SPX implements Externalizable {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public SPX(Object obj, int i10) {
-        this.f37502d = obj;
-        this.f37503e = i10;
+        this.f38070d = obj;
+        this.f38071e = i10;
     }
 }

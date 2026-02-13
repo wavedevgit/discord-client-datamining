@@ -94,7 +94,7 @@ public final class UnicodeEmojis {
 
         /* JADX INFO: Access modifiers changed from: private */
         public static final /* synthetic */ KSerializer _childSerializers$_anonymous_() {
-            return new tt.f(n2.f50033a);
+            return new tt.f(n2.f50601a);
         }
 
         /* JADX WARN: Multi-variable type inference failed */
@@ -531,7 +531,7 @@ public final class UnicodeEmojis {
     public static final Unit emojiJsonParser$lambda$0(JsonBuilder Json) {
         Intrinsics.checkNotNullParameter(Json, "$this$Json");
         Json.c(true);
-        return Unit.f31988a;
+        return Unit.f32556a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */

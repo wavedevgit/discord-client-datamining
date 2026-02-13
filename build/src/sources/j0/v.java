@@ -3,13 +3,13 @@ package j0;
 public class v implements x.s0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final androidx.camera.core.n f30772a;
+    private final androidx.camera.core.n f31340a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final int f30773b;
+    private final int f31341b;
 
     public v(androidx.camera.core.n nVar, int i10) {
-        this.f30772a = nVar;
-        this.f30773b = i10;
+        this.f31340a = nVar;
+        this.f31341b = i10;
     }
 }

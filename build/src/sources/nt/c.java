@@ -5,10 +5,10 @@ import kotlin.jvm.internal.Intrinsics;
 public final class c implements e {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f38361a;
+    private final String f38929a;
 
     public c(String string) {
         Intrinsics.checkNotNullParameter(string, "string");
-        this.f38361a = string;
+        this.f38929a = string;
     }
 }

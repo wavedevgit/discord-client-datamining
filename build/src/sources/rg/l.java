@@ -8,24 +8,24 @@ import java.util.ListIterator;
 public class l extends j implements List {
 
     /* renamed from: q  reason: collision with root package name */
-    final /* synthetic */ m f46973q;
+    final /* synthetic */ m f47541q;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public l(m mVar, Object obj, List list, j jVar) {
         super(mVar, obj, list, jVar);
-        this.f46973q = mVar;
+        this.f47541q = mVar;
     }
 
     @Override // java.util.List
     public final void add(int i10, Object obj) {
         int i11;
         zzb();
-        boolean isEmpty = this.f46760e.isEmpty();
-        ((List) this.f46760e).add(i10, obj);
-        m mVar = this.f46973q;
-        i11 = mVar.f46996o;
-        mVar.f46996o = i11 + 1;
+        boolean isEmpty = this.f47328e.isEmpty();
+        ((List) this.f47328e).add(i10, obj);
+        m mVar = this.f47541q;
+        i11 = mVar.f47564o;
+        mVar.f47564o = i11 + 1;
         if (isEmpty) {
             b();
         }
@@ -38,12 +38,12 @@ public class l extends j implements List {
             return false;
         }
         int size = size();
-        boolean addAll = ((List) this.f46760e).addAll(i10, collection);
+        boolean addAll = ((List) this.f47328e).addAll(i10, collection);
         if (addAll) {
-            int size2 = this.f46760e.size();
-            m mVar = this.f46973q;
-            i11 = mVar.f46996o;
-            mVar.f46996o = i11 + (size2 - size);
+            int size2 = this.f47328e.size();
+            m mVar = this.f47541q;
+            i11 = mVar.f47564o;
+            mVar.f47564o = i11 + (size2 - size);
             if (size == 0) {
                 b();
                 return true;
@@ -56,19 +56,19 @@ public class l extends j implements List {
     @Override // java.util.List
     public final Object get(int i10) {
         zzb();
-        return ((List) this.f46760e).get(i10);
+        return ((List) this.f47328e).get(i10);
     }
 
     @Override // java.util.List
     public final int indexOf(Object obj) {
         zzb();
-        return ((List) this.f46760e).indexOf(obj);
+        return ((List) this.f47328e).indexOf(obj);
     }
 
     @Override // java.util.List
     public final int lastIndexOf(Object obj) {
         zzb();
-        return ((List) this.f46760e).lastIndexOf(obj);
+        return ((List) this.f47328e).lastIndexOf(obj);
     }
 
     @Override // java.util.List
@@ -81,10 +81,10 @@ public class l extends j implements List {
     public final Object remove(int i10) {
         int i11;
         zzb();
-        Object remove = ((List) this.f46760e).remove(i10);
-        m mVar = this.f46973q;
-        i11 = mVar.f46996o;
-        mVar.f46996o = i11 - 1;
+        Object remove = ((List) this.f47328e).remove(i10);
+        m mVar = this.f47541q;
+        i11 = mVar.f47564o;
+        mVar.f47564o = i11 - 1;
         c();
         return remove;
     }
@@ -92,18 +92,18 @@ public class l extends j implements List {
     @Override // java.util.List
     public final Object set(int i10, Object obj) {
         zzb();
-        return ((List) this.f46760e).set(i10, obj);
+        return ((List) this.f47328e).set(i10, obj);
     }
 
     @Override // java.util.List
     public final List subList(int i10, int i11) {
         zzb();
-        List subList = ((List) this.f46760e).subList(i10, i11);
-        j jVar = this.f46761i;
+        List subList = ((List) this.f47328e).subList(i10, i11);
+        j jVar = this.f47329i;
         if (jVar == null) {
             jVar = this;
         }
-        return this.f46973q.k(this.f46759d, subList, jVar);
+        return this.f47541q.k(this.f47327d, subList, jVar);
     }
 
     @Override // java.util.List

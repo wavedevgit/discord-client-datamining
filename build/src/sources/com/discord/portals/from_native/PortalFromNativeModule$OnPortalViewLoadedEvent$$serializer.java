@@ -36,7 +36,7 @@ public /* synthetic */ class PortalFromNativeModule$OnPortalViewLoadedEvent$$ser
     @Override // tt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        return new KSerializer[]{x.f50087a};
+        return new KSerializer[]{x.f50655a};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy

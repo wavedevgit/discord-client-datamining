@@ -9,20 +9,11 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2.value = var0;
     var0 = '__esModule';
     var0 = var3.bind(var4)(var1, var0, var2);
-    var0 = function arg0, arg1() {
-        var5 = 10;
-        var4 = arg1;
-        var1 = exponentiationOperator(var5, var4);
-        var0 = global;
-        var3 = var0.Math;
-        var2 = var3.round;
-        var0 = arg0;
-        var0 = var0 * var1;
-        var0 = var2.bind(var3)(var0);
-        var0 = var0 / var1;
+    var0 = function() {
+        var0 = undefined;
         return var0;
     };
-    var1.roundToDecimalPlaces = var0;
+    var1.default = var0;
     var0 = undefined;
     return var0;
 })(undefined, undefined, undefined, undefined, undefined, undefined, []);

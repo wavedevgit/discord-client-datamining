@@ -411,7 +411,7 @@ public final class BundleUpdater {
             Pair a13 = v.a("bytesReceived", this.bytesReceived);
             Duration duration = this.duration;
             if (duration != null) {
-                d10 = Double.valueOf(Duration.J(duration.O(), ws.b.f53968p));
+                d10 = Double.valueOf(Duration.J(duration.O(), ws.b.f54536p));
             } else {
                 d10 = null;
             }
@@ -655,7 +655,7 @@ public final class BundleUpdater {
         @Override // com.discord.bundle_updater.BundleUpdater.OtaMetric
         @NotNull
         public ReadableMap toNativeMap() {
-            return NativeMapExtensionsKt.nativeMapOf(v.a("type", "OtaCheckAttempt"), v.a("result", this.result.getValue()), v.a("durationSeconds", Double.valueOf(Duration.J(this.duration, ws.b.f53968p))), v.a("bytesReceived", Long.valueOf(this.totalBytesReceived)), v.a("error", this.error));
+            return NativeMapExtensionsKt.nativeMapOf(v.a("type", "OtaCheckAttempt"), v.a("result", this.result.getValue()), v.a("durationSeconds", Double.valueOf(Duration.J(this.duration, ws.b.f54536p))), v.a("bytesReceived", Long.valueOf(this.totalBytesReceived)), v.a("error", this.error));
         }
 
         @NotNull
@@ -830,7 +830,7 @@ public final class BundleUpdater {
             }
         });
         this.otaMetrics = new ArrayList();
-        this.otaCheckTimeMark = g.a.d(kotlin.time.g.f34994a.a());
+        this.otaCheckTimeMark = g.a.d(kotlin.time.g.f35562a.a());
     }
 
     private final OtaCheckAttempt attemptOtaUpdate() {
@@ -915,7 +915,7 @@ public final class BundleUpdater {
         Thread.sleep(i10 * 1000);
         try {
             bundleUpdater.otaMetrics.clear();
-            bundleUpdater.otaCheckTimeMark = g.a.d(kotlin.time.g.f34994a.a());
+            bundleUpdater.otaCheckTimeMark = g.a.d(kotlin.time.g.f35562a.a());
             bundleUpdater.totalBytesReceived = 0L;
             OtaCheckAttempt attemptOtaUpdate = bundleUpdater.attemptOtaUpdate();
             if (function0 != null) {
@@ -1400,7 +1400,7 @@ public final class BundleUpdater {
     }
 
     public final Cookie getBuildOverrideCookie() {
-        return Cookie.f40241j.c(BASE_OTA_URL, getBuildOverrideCookieHeader());
+        return Cookie.f40809j.c(BASE_OTA_URL, getBuildOverrideCookieHeader());
     }
 
     @NotNull

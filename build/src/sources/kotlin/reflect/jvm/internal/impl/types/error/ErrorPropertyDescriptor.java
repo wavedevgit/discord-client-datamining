@@ -31,24 +31,24 @@ import org.jetbrains.annotations.NotNull;
 public final class ErrorPropertyDescriptor implements PropertyDescriptor {
 
     /* renamed from: d  reason: collision with root package name */
-    private final /* synthetic */ PropertyDescriptorImpl f34683d;
+    private final /* synthetic */ PropertyDescriptorImpl f35251d;
 
     public ErrorPropertyDescriptor() {
         ErrorUtils errorUtils = ErrorUtils.INSTANCE;
         PropertyDescriptorImpl create = PropertyDescriptorImpl.create(errorUtils.getErrorClass(), Annotations.Companion.getEMPTY(), Modality.OPEN, DescriptorVisibilities.PUBLIC, true, Name.special(ErrorEntity.ERROR_PROPERTY.getDebugText()), CallableMemberDescriptor.Kind.DECLARATION, SourceElement.NO_SOURCE, false, false, false, false, false, false);
         create.setType(errorUtils.getErrorPropertyType(), CollectionsKt.l(), null, null, CollectionsKt.l());
-        this.f34683d = create;
+        this.f35251d = create;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.DeclarationDescriptor
     public <R, D> R accept(DeclarationDescriptorVisitor<R, D> declarationDescriptorVisitor, D d10) {
-        return (R) this.f34683d.accept(declarationDescriptorVisitor, d10);
+        return (R) this.f35251d.accept(declarationDescriptorVisitor, d10);
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.CallableMemberDescriptor
     @NotNull
     public CallableMemberDescriptor copy(DeclarationDescriptor declarationDescriptor, Modality modality, DescriptorVisibility descriptorVisibility, CallableMemberDescriptor.Kind kind, boolean z10) {
-        PropertyDescriptor copy = this.f34683d.copy(declarationDescriptor, modality, descriptorVisibility, kind, z10);
+        PropertyDescriptor copy = this.f35251d.copy(declarationDescriptor, modality, descriptorVisibility, kind, z10);
         Intrinsics.checkNotNullExpressionValue(copy, "copy(...)");
         return copy;
     }
@@ -56,7 +56,7 @@ public final class ErrorPropertyDescriptor implements PropertyDescriptor {
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.PropertyDescriptor
     @NotNull
     public List<PropertyAccessorDescriptor> getAccessors() {
-        List<PropertyAccessorDescriptor> accessors = this.f34683d.getAccessors();
+        List<PropertyAccessorDescriptor> accessors = this.f35251d.getAccessors();
         Intrinsics.checkNotNullExpressionValue(accessors, "getAccessors(...)");
         return accessors;
     }
@@ -64,26 +64,26 @@ public final class ErrorPropertyDescriptor implements PropertyDescriptor {
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.annotations.Annotated
     @NotNull
     public Annotations getAnnotations() {
-        Annotations annotations = this.f34683d.getAnnotations();
+        Annotations annotations = this.f35251d.getAnnotations();
         Intrinsics.checkNotNullExpressionValue(annotations, "<get-annotations>(...)");
         return annotations;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.PropertyDescriptor
     public FieldDescriptor getBackingField() {
-        return this.f34683d.getBackingField();
+        return this.f35251d.getBackingField();
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.VariableDescriptor
     /* renamed from: getCompileTimeInitializer */
     public ConstantValue<?> mo1198getCompileTimeInitializer() {
-        return this.f34683d.mo1198getCompileTimeInitializer();
+        return this.f35251d.mo1198getCompileTimeInitializer();
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.DeclarationDescriptorNonRoot, kotlin.reflect.jvm.internal.impl.descriptors.DeclarationDescriptor
     @NotNull
     public DeclarationDescriptor getContainingDeclaration() {
-        DeclarationDescriptor containingDeclaration = this.f34683d.getContainingDeclaration();
+        DeclarationDescriptor containingDeclaration = this.f35251d.getContainingDeclaration();
         Intrinsics.checkNotNullExpressionValue(containingDeclaration, "getContainingDeclaration(...)");
         return containingDeclaration;
     }
@@ -91,35 +91,35 @@ public final class ErrorPropertyDescriptor implements PropertyDescriptor {
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.CallableDescriptor
     @NotNull
     public List<ReceiverParameterDescriptor> getContextReceiverParameters() {
-        List<ReceiverParameterDescriptor> contextReceiverParameters = this.f34683d.getContextReceiverParameters();
+        List<ReceiverParameterDescriptor> contextReceiverParameters = this.f35251d.getContextReceiverParameters();
         Intrinsics.checkNotNullExpressionValue(contextReceiverParameters, "getContextReceiverParameters(...)");
         return contextReceiverParameters;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.PropertyDescriptor
     public FieldDescriptor getDelegateField() {
-        return this.f34683d.getDelegateField();
+        return this.f35251d.getDelegateField();
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.CallableDescriptor
     public ReceiverParameterDescriptor getDispatchReceiverParameter() {
-        return this.f34683d.getDispatchReceiverParameter();
+        return this.f35251d.getDispatchReceiverParameter();
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.CallableDescriptor
     public ReceiverParameterDescriptor getExtensionReceiverParameter() {
-        return this.f34683d.getExtensionReceiverParameter();
+        return this.f35251d.getExtensionReceiverParameter();
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.PropertyDescriptor
     public PropertyGetterDescriptor getGetter() {
-        return this.f34683d.getGetter();
+        return this.f35251d.getGetter();
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.CallableMemberDescriptor
     @NotNull
     public CallableMemberDescriptor.Kind getKind() {
-        CallableMemberDescriptor.Kind kind = this.f34683d.getKind();
+        CallableMemberDescriptor.Kind kind = this.f35251d.getKind();
         Intrinsics.checkNotNullExpressionValue(kind, "getKind(...)");
         return kind;
     }
@@ -127,7 +127,7 @@ public final class ErrorPropertyDescriptor implements PropertyDescriptor {
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.MemberDescriptor
     @NotNull
     public Modality getModality() {
-        Modality modality = this.f34683d.getModality();
+        Modality modality = this.f35251d.getModality();
         Intrinsics.checkNotNullExpressionValue(modality, "getModality(...)");
         return modality;
     }
@@ -135,7 +135,7 @@ public final class ErrorPropertyDescriptor implements PropertyDescriptor {
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.Named
     @NotNull
     public Name getName() {
-        Name name = this.f34683d.getName();
+        Name name = this.f35251d.getName();
         Intrinsics.checkNotNullExpressionValue(name, "getName(...)");
         return name;
     }
@@ -143,7 +143,7 @@ public final class ErrorPropertyDescriptor implements PropertyDescriptor {
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.DeclarationDescriptor
     @NotNull
     public PropertyDescriptor getOriginal() {
-        PropertyDescriptor original = this.f34683d.getOriginal();
+        PropertyDescriptor original = this.f35251d.getOriginal();
         Intrinsics.checkNotNullExpressionValue(original, "getOriginal(...)");
         return original;
     }
@@ -151,25 +151,25 @@ public final class ErrorPropertyDescriptor implements PropertyDescriptor {
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.PropertyDescriptor, kotlin.reflect.jvm.internal.impl.descriptors.CallableMemberDescriptor, kotlin.reflect.jvm.internal.impl.descriptors.CallableDescriptor
     @NotNull
     public Collection<? extends PropertyDescriptor> getOverriddenDescriptors() {
-        Collection<? extends PropertyDescriptor> overriddenDescriptors = this.f34683d.getOverriddenDescriptors();
+        Collection<? extends PropertyDescriptor> overriddenDescriptors = this.f35251d.getOverriddenDescriptors();
         Intrinsics.checkNotNullExpressionValue(overriddenDescriptors, "getOverriddenDescriptors(...)");
         return overriddenDescriptors;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.CallableDescriptor
     public KotlinType getReturnType() {
-        return this.f34683d.getReturnType();
+        return this.f35251d.getReturnType();
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.PropertyDescriptor
     public PropertySetterDescriptor getSetter() {
-        return this.f34683d.getSetter();
+        return this.f35251d.getSetter();
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.DeclarationDescriptorWithSource
     @NotNull
     public SourceElement getSource() {
-        SourceElement source = this.f34683d.getSource();
+        SourceElement source = this.f35251d.getSource();
         Intrinsics.checkNotNullExpressionValue(source, "getSource(...)");
         return source;
     }
@@ -177,7 +177,7 @@ public final class ErrorPropertyDescriptor implements PropertyDescriptor {
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.ValueDescriptor
     @NotNull
     public KotlinType getType() {
-        KotlinType type = this.f34683d.getType();
+        KotlinType type = this.f35251d.getType();
         Intrinsics.checkNotNullExpressionValue(type, "getType(...)");
         return type;
     }
@@ -185,20 +185,20 @@ public final class ErrorPropertyDescriptor implements PropertyDescriptor {
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.CallableDescriptor
     @NotNull
     public List<TypeParameterDescriptor> getTypeParameters() {
-        List<TypeParameterDescriptor> typeParameters = this.f34683d.getTypeParameters();
+        List<TypeParameterDescriptor> typeParameters = this.f35251d.getTypeParameters();
         Intrinsics.checkNotNullExpressionValue(typeParameters, "getTypeParameters(...)");
         return typeParameters;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.CallableDescriptor
     public <V> V getUserData(CallableDescriptor.UserDataKey<V> userDataKey) {
-        return (V) this.f34683d.getUserData(userDataKey);
+        return (V) this.f35251d.getUserData(userDataKey);
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.CallableDescriptor
     @NotNull
     public List<ValueParameterDescriptor> getValueParameters() {
-        List<ValueParameterDescriptor> valueParameters = this.f34683d.getValueParameters();
+        List<ValueParameterDescriptor> valueParameters = this.f35251d.getValueParameters();
         Intrinsics.checkNotNullExpressionValue(valueParameters, "getValueParameters(...)");
         return valueParameters;
     }
@@ -206,60 +206,60 @@ public final class ErrorPropertyDescriptor implements PropertyDescriptor {
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.DeclarationDescriptorWithVisibility
     @NotNull
     public DescriptorVisibility getVisibility() {
-        DescriptorVisibility visibility = this.f34683d.getVisibility();
+        DescriptorVisibility visibility = this.f35251d.getVisibility();
         Intrinsics.checkNotNullExpressionValue(visibility, "getVisibility(...)");
         return visibility;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.CallableDescriptor
     public boolean hasSynthesizedParameterNames() {
-        return this.f34683d.hasSynthesizedParameterNames();
+        return this.f35251d.hasSynthesizedParameterNames();
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.MemberDescriptor
     public boolean isActual() {
-        return this.f34683d.isActual();
+        return this.f35251d.isActual();
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.VariableDescriptor
     public boolean isConst() {
-        return this.f34683d.isConst();
+        return this.f35251d.isConst();
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.VariableDescriptorWithAccessors
     public boolean isDelegated() {
-        return this.f34683d.isDelegated();
+        return this.f35251d.isDelegated();
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.MemberDescriptor
     public boolean isExpect() {
-        return this.f34683d.isExpect();
+        return this.f35251d.isExpect();
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.MemberDescriptor
     public boolean isExternal() {
-        return this.f34683d.isExternal();
+        return this.f35251d.isExternal();
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.VariableDescriptor
     public boolean isLateInit() {
-        return this.f34683d.isLateInit();
+        return this.f35251d.isLateInit();
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.VariableDescriptor
     public boolean isVar() {
-        return this.f34683d.isVar();
+        return this.f35251d.isVar();
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.CallableMemberDescriptor
     public void setOverriddenDescriptors(@NotNull Collection<? extends CallableMemberDescriptor> overriddenDescriptors) {
         Intrinsics.checkNotNullParameter(overriddenDescriptors, "overriddenDescriptors");
-        this.f34683d.setOverriddenDescriptors(overriddenDescriptors);
+        this.f35251d.setOverriddenDescriptors(overriddenDescriptors);
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.Substitutable
     public PropertyDescriptor substitute(@NotNull TypeSubstitutor substitutor) {
         Intrinsics.checkNotNullParameter(substitutor, "substitutor");
-        return this.f34683d.substitute(substitutor);
+        return this.f35251d.substitute(substitutor);
     }
 }

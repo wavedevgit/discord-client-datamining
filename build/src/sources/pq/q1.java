@@ -46,10 +46,10 @@ public abstract class q1 {
     public static final Unit c(InputMultiSelect inputMultiSelect, sq.r rVar) {
         InputSelectComponentStyle styles = inputMultiSelect.getStyles();
         if (styles != null) {
-            TextInputLayout listSelector = rVar.f48284b;
+            TextInputLayout listSelector = rVar.f48852b;
             Intrinsics.checkNotNullExpressionValue(listSelector, "listSelector");
             uq.o.i(listSelector, styles);
         }
-        return Unit.f31988a;
+        return Unit.f32556a;
     }
 }

@@ -5,10 +5,10 @@ import androidx.lifecycle.b0;
 public final class g implements lr.d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final c f30356a;
+    private final c f30924a;
 
     public g(c cVar) {
-        this.f30356a = cVar;
+        this.f30924a = cVar;
     }
 
     public static g a(c cVar) {
@@ -22,6 +22,6 @@ public final class g implements lr.d {
     @Override // javax.inject.Provider
     /* renamed from: b */
     public b0 get() {
-        return c(this.f30356a);
+        return c(this.f30924a);
     }
 }

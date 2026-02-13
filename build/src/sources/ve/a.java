@@ -6,49 +6,49 @@ import ff.a;
 public abstract class a {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final ff.a f51560a;
+    public static final ff.a f52128a;
 
     /* renamed from: b  reason: collision with root package name */
-    public static final ff.a f51561b;
+    public static final ff.a f52129b;
 
     /* renamed from: c  reason: collision with root package name */
-    public static final ye.a f51562c;
+    public static final ye.a f52130c;
 
     /* renamed from: d  reason: collision with root package name */
-    public static final ze.a f51563d;
+    public static final ze.a f52131d;
 
     /* renamed from: e  reason: collision with root package name */
-    public static final a.g f51564e;
+    public static final a.g f52132e;
 
     /* renamed from: f  reason: collision with root package name */
-    public static final a.g f51565f;
+    public static final a.g f52133f;
 
     /* renamed from: g  reason: collision with root package name */
-    private static final a.AbstractC0316a f51566g;
+    private static final a.AbstractC0316a f52134g;
 
     /* renamed from: h  reason: collision with root package name */
-    private static final a.AbstractC0316a f51567h;
+    private static final a.AbstractC0316a f52135h;
 
     /* renamed from: i  reason: collision with root package name */
-    public static final ff.a f51568i;
+    public static final ff.a f52136i;
 
     /* renamed from: j  reason: collision with root package name */
-    public static final q f51569j;
+    public static final q f52137j;
 
     static {
         a.g gVar = new a.g();
-        f51564e = gVar;
+        f52132e = gVar;
         a.g gVar2 = new a.g();
-        f51565f = gVar2;
+        f52133f = gVar2;
         d dVar = new d();
-        f51566g = dVar;
+        f52134g = dVar;
         e eVar = new e();
-        f51567h = eVar;
-        f51560a = b.f51570a;
-        f51568i = new ff.a("Auth.CREDENTIALS_API", dVar, gVar);
-        f51561b = new ff.a("Auth.GOOGLE_SIGN_IN_API", eVar, gVar2);
-        f51562c = b.f51571b;
-        f51569j = new q();
-        f51563d = new af.h();
+        f52135h = eVar;
+        f52128a = b.f52138a;
+        f52136i = new ff.a("Auth.CREDENTIALS_API", dVar, gVar);
+        f52129b = new ff.a("Auth.GOOGLE_SIGN_IN_API", eVar, gVar2);
+        f52130c = b.f52139b;
+        f52137j = new q();
+        f52131d = new af.h();
     }
 }

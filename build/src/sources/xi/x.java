@@ -9,13 +9,13 @@ import java.util.concurrent.ConcurrentHashMap;
 public class x implements ij.b {
 
     /* renamed from: b  reason: collision with root package name */
-    private volatile Set f54867b = null;
+    private volatile Set f55435b = null;
 
     /* renamed from: a  reason: collision with root package name */
-    private volatile Set f54866a = Collections.newSetFromMap(new ConcurrentHashMap());
+    private volatile Set f55434a = Collections.newSetFromMap(new ConcurrentHashMap());
 
     x(Collection collection) {
-        this.f54866a.addAll(collection);
+        this.f55434a.addAll(collection);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -25,10 +25,10 @@ public class x implements ij.b {
 
     private synchronized void d() {
         try {
-            for (ij.b bVar : this.f54866a) {
-                this.f54867b.add(bVar.get());
+            for (ij.b bVar : this.f55434a) {
+                this.f55435b.add(bVar.get());
             }
-            this.f54866a = null;
+            this.f55434a = null;
         } catch (Throwable th2) {
             throw th2;
         }
@@ -37,10 +37,10 @@ public class x implements ij.b {
     /* JADX INFO: Access modifiers changed from: package-private */
     public synchronized void a(ij.b bVar) {
         try {
-            if (this.f54867b == null) {
-                this.f54866a.add(bVar);
+            if (this.f55435b == null) {
+                this.f55434a.add(bVar);
             } else {
-                this.f54867b.add(bVar.get());
+                this.f55435b.add(bVar.get());
             }
         } catch (Throwable th2) {
             throw th2;
@@ -50,17 +50,17 @@ public class x implements ij.b {
     @Override // ij.b
     /* renamed from: c */
     public Set get() {
-        if (this.f54867b == null) {
+        if (this.f55435b == null) {
             synchronized (this) {
                 try {
-                    if (this.f54867b == null) {
-                        this.f54867b = Collections.newSetFromMap(new ConcurrentHashMap());
+                    if (this.f55435b == null) {
+                        this.f55435b = Collections.newSetFromMap(new ConcurrentHashMap());
                         d();
                     }
                 } finally {
                 }
             }
         }
-        return Collections.unmodifiableSet(this.f54867b);
+        return Collections.unmodifiableSet(this.f55435b);
     }
 }

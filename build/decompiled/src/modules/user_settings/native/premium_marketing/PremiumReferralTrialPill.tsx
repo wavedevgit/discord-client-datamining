@@ -84,7 +84,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/user_settings/native/premium_marketing/PremiumReferralTrialPill.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Environment: var1
-        _fun58233: for (var _fun58233_ip = 0;;) switch (_fun58233_ip) {
+        _fun60023: for (var _fun60023_ip = 0;;) switch (_fun60023_ip) {
             case 0:
                 var0 = arg0;
                 var4 = var0.hasExtraMargin;
@@ -95,13 +95,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = _closure1_slot2;
                 var0 = {};
                 if (var4) {
-                    _fun58233_ip = 43;
-                    continue _fun58233
+                    _fun60023_ip = 43;
+                    continue _fun60023
                 }
             case 35:
                 var4 = var9.pillParent;
-                _fun58233_ip = 49;
-                continue _fun58233;
+                _fun60023_ip = 49;
+                continue _fun60023;
             case 43:
                 var4 = var9.pillParentExtraMargin;
             case 49:
@@ -145,4 +145,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.PremiumReferralTrialPill = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 33, 1297, 671, 3938, 1234, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 33, 1297, 671, 3938, 1235, 2]);

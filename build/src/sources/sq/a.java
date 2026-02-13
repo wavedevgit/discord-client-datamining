@@ -15,66 +15,66 @@ import com.google.android.material.textfield.TextInputLayout;
 public final class a implements ViewBinding {
 
     /* renamed from: a  reason: collision with root package name */
-    private final FrameLayout f48187a;
+    private final FrameLayout f48755a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final FrameLayout f48188b;
+    public final FrameLayout f48756b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final LinearLayout f48189c;
+    public final LinearLayout f48757c;
 
     /* renamed from: d  reason: collision with root package name */
-    public final View f48190d;
+    public final View f48758d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final RecyclerView f48191e;
+    public final RecyclerView f48759e;
 
     /* renamed from: f  reason: collision with root package name */
-    public final TextInputEditText f48192f;
+    public final TextInputEditText f48760f;
 
     /* renamed from: g  reason: collision with root package name */
-    public final TextInputLayout f48193g;
+    public final TextInputLayout f48761g;
 
     /* renamed from: h  reason: collision with root package name */
-    public final View f48194h;
+    public final View f48762h;
 
     /* renamed from: i  reason: collision with root package name */
-    public final TextView f48195i;
+    public final TextView f48763i;
 
     /* renamed from: j  reason: collision with root package name */
-    public final MaterialToolbar f48196j;
+    public final MaterialToolbar f48764j;
 
     private a(FrameLayout frameLayout, FrameLayout frameLayout2, LinearLayout linearLayout, View view, RecyclerView recyclerView, TextInputEditText textInputEditText, TextInputLayout textInputLayout, View view2, TextView textView, MaterialToolbar materialToolbar) {
-        this.f48187a = frameLayout;
-        this.f48188b = frameLayout2;
-        this.f48189c = linearLayout;
-        this.f48190d = view;
-        this.f48191e = recyclerView;
-        this.f48192f = textInputEditText;
-        this.f48193g = textInputLayout;
-        this.f48194h = view2;
-        this.f48195i = textView;
-        this.f48196j = materialToolbar;
+        this.f48755a = frameLayout;
+        this.f48756b = frameLayout2;
+        this.f48757c = linearLayout;
+        this.f48758d = view;
+        this.f48759e = recyclerView;
+        this.f48760f = textInputEditText;
+        this.f48761g = textInputLayout;
+        this.f48762h = view2;
+        this.f48763i = textView;
+        this.f48764j = materialToolbar;
     }
 
     public static a a(View view) {
         View a10;
         View a11;
-        int i10 = nq.e.f38275n;
+        int i10 = nq.e.f38843n;
         FrameLayout frameLayout = (FrameLayout) e4.a.a(view, i10);
         if (frameLayout != null) {
             i10 = nq.e.X;
             LinearLayout linearLayout = (LinearLayout) e4.a.a(view, i10);
             if (linearLayout != null && (a10 = e4.a.a(view, (i10 = nq.e.Y))) != null) {
-                i10 = nq.e.f38282q0;
+                i10 = nq.e.f38850q0;
                 RecyclerView recyclerView = (RecyclerView) e4.a.a(view, i10);
                 if (recyclerView != null) {
-                    i10 = nq.e.f38286s0;
+                    i10 = nq.e.f38854s0;
                     TextInputEditText textInputEditText = (TextInputEditText) e4.a.a(view, i10);
                     if (textInputEditText != null) {
-                        i10 = nq.e.f38288t0;
+                        i10 = nq.e.f38856t0;
                         TextInputLayout textInputLayout = (TextInputLayout) e4.a.a(view, i10);
-                        if (textInputLayout != null && (a11 = e4.a.a(view, (i10 = nq.e.f38294w0))) != null) {
+                        if (textInputLayout != null && (a11 = e4.a.a(view, (i10 = nq.e.f38862w0))) != null) {
                             i10 = nq.e.A0;
                             TextView textView = (TextView) e4.a.a(view, i10);
                             if (textView != null) {
@@ -93,7 +93,7 @@ public final class a implements ViewBinding {
     }
 
     public static a c(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z10) {
-        View inflate = layoutInflater.inflate(nq.f.f38301a, viewGroup, false);
+        View inflate = layoutInflater.inflate(nq.f.f38869a, viewGroup, false);
         if (z10) {
             viewGroup.addView(inflate);
         }
@@ -103,6 +103,6 @@ public final class a implements ViewBinding {
     @Override // androidx.viewbinding.ViewBinding
     /* renamed from: b */
     public FrameLayout getRoot() {
-        return this.f48187a;
+        return this.f48755a;
     }
 }

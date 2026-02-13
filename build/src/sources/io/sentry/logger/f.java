@@ -3,13 +3,13 @@ package io.sentry.logger;
 public final class f implements b {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final f f29481a = new f();
+    private static final f f30049a = new f();
 
     private f() {
     }
 
     public static f a() {
-        return f29481a;
+        return f30049a;
     }
 
     @Override // io.sentry.logger.b

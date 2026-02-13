@@ -72,19 +72,19 @@ public final class f implements ip.a {
                     }
                 }
                 if (arrayList != null && !arrayList.isEmpty()) {
-                    Result.a aVar = Result.f31985e;
+                    Result.a aVar = Result.f32553e;
                     i.a aVar2 = this.f19907c;
                     String uuid = UUID.randomUUID().toString();
                     Intrinsics.checkNotNullExpressionValue(uuid, "toString(...)");
                     return Result.b(aVar2.a(arrayList, uuid));
                 }
-                Result.a aVar3 = Result.f31985e;
+                Result.a aVar3 = Result.f32553e;
                 return Result.b(kotlin.c.a(new ip.b("Expected steps to contain at least one step")));
             }
-            Result.a aVar4 = Result.f31985e;
+            Result.a aVar4 = Result.f32553e;
             return Result.b(kotlin.c.a(new ip.b("Failed to open resource as static template")));
         } catch (Exception unused) {
-            Result.a aVar5 = Result.f31985e;
+            Result.a aVar5 = Result.f32553e;
             return Result.b(kotlin.c.a(new ip.b("Failed to open resource as static template. Resource not found.")));
         }
     }

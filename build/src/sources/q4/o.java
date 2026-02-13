@@ -12,18 +12,18 @@ import kotlin.jvm.internal.Intrinsics;
 public abstract class o {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final String f43931a;
+    private static final String f44499a;
 
     static {
         String i10 = k4.m.i("ProcessUtils");
         Intrinsics.checkNotNullExpressionValue(i10, "tagWithPrefix(\"ProcessUtils\")");
-        f43931a = i10;
+        f44499a = i10;
     }
 
     private static final String a(Context context) {
         Object obj;
         if (Build.VERSION.SDK_INT >= 28) {
-            return a.f43914a.a();
+            return a.f44482a.a();
         }
         try {
             Method declaredMethod = Class.forName("android.app.ActivityThread", false, k4.y.class.getClassLoader()).getDeclaredMethod("currentProcessName", null);
@@ -34,7 +34,7 @@ public abstract class o {
                 return (String) invoke;
             }
         } catch (Throwable th2) {
-            k4.m.e().b(f43931a, "Unable to check ActivityThread for processName", th2);
+            k4.m.e().b(f44499a, "Unable to check ActivityThread for processName", th2);
         }
         int myPid = Process.myPid();
         Object systemService = context.getSystemService("activity");

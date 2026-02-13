@@ -5,7 +5,7 @@ import com.google.android.gms.tasks.Task;
 public abstract class p {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final m0 f27306a = new j0();
+    private static final m0 f27874a = new j0();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public interface a {
@@ -13,7 +13,7 @@ public abstract class p {
     }
 
     public static Task a(ff.g gVar, a aVar) {
-        m0 m0Var = f27306a;
+        m0 m0Var = f27874a;
         zg.k kVar = new zg.k();
         gVar.addStatusListener(new k0(gVar, kVar, aVar, m0Var));
         return kVar.a();

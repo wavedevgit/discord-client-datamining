@@ -6,10 +6,10 @@ import kotlinx.serialization.descriptors.SerialDescriptor;
 public final class i1 extends kotlinx.serialization.encoding.b {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final i1 f50002a = new i1();
+    public static final i1 f50570a = new i1();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final wt.b f50003b = wt.c.a();
+    private static final wt.b f50571b = wt.c.a();
 
     private i1() {
     }
@@ -21,7 +21,7 @@ public final class i1 extends kotlinx.serialization.encoding.b {
 
     @Override // kotlinx.serialization.encoding.Encoder
     public wt.b a() {
-        return f50003b;
+        return f50571b;
     }
 
     @Override // kotlinx.serialization.encoding.Encoder

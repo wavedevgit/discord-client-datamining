@@ -21,7 +21,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = var1.bind(var2)();
         return var0;
     };
-    var _closure1_slot11 = var0;
+    var _closure1_slot9 = var0;
     var0 = global;
     var8 = var0.Object;
     var7 = var8.defineProperty;
@@ -57,20 +57,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 5;
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
-    var7 = var3.jsx;
-    var _closure1_slot8 = var7;
-    var3 = 7;
-    var3 = var5[var3];
-    var8 = var6.bind(var0)(var3);
-    var3 = {};
-    var3 = var7.bind(var0)(var8, var3);
-    var _closure1_slot9 = var3;
-    var3 = 8;
-    var3 = var5[var3];
-    var6 = var6.bind(var0)(var3);
-    var3 = {};
-    var3 = var7.bind(var0)(var6, var3);
-    var _closure1_slot10 = var3;
+    var3 = var3.jsx;
+    var _closure1_slot8 = var3;
     var3 = 21;
     var3 = var5[var3];
     var5 = var4.bind(var0)(var3);
@@ -78,7 +66,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/verification/native/components/EmailVerificationModal.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun63332: for (var _fun63332_ip = 0;;) switch (_fun63332_ip) {
+        _fun61053: for (var _fun61053_ip = 0;;) switch (_fun61053_ip) {
             case 0:
                 var0 = arg0;
                 var4 = var0.isChangeEmail;
@@ -111,16 +99,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var2 == var1;
                 var8 = undefined;
                 if (var6) {
-                    _fun63332_ip = 113;
-                    continue _fun63332
+                    _fun61053_ip = 113;
+                    continue _fun61053
                 }
             case 107:
                 var8 = var1.verified;
             case 113:
                 var6 = var2 != var8;
                 if (!var6) {
-                    _fun63332_ip = 123;
-                    continue _fun63332
+                    _fun61053_ip = 123;
+                    continue _fun61053
                 }
             case 120:
                 var6 = var8;
@@ -157,48 +145,19 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = function arg0() {
                         var0 = arg0;
                         var14 = var0.initiallyVerified;
-                        var9 = var0.isChangeEmail;
-                        var5 = var0.changeEmailReason;
-                        var4 = var0.setChangeEmailReason;
-                        var2 = _closure1_slot8;
-                        var1 = _closure1_slot1;
-                        var8 = _closure1_slot2;
-                        var0 = 9;
-                        var0 = var8[var0];
-                        var7 = undefined;
-                        var6 = var1.bind(var7)(var0);
-                        var0 = {};
-                        var0.isChangeEmail = var9;
-                        var0.changeEmailReason = var5;
-                        var0 = var2.bind(var7)(var6, var0);
-                        var _closure4_slot0 = var0;
-                        var0 = 10;
-                        var0 = var8[var0];
-                        var6 = var1.bind(var7)(var0);
-                        var0 = {};
-                        var0.isChangeEmail = var9;
-                        var0 = var2.bind(var7)(var6, var0);
-                        var _closure4_slot1 = var0;
-                        var0 = 11;
-                        var0 = var8[var0];
-                        var6 = var1.bind(var7)(var0);
-                        var0 = {};
-                        var0.changeEmailReason = var5;
-                        var0 = var2.bind(var7)(var6, var0);
+                        var1 = var0.isChangeEmail;
+                        var _closure4_slot0 = var1;
+                        var1 = var0.changeEmailReason;
+                        var _closure4_slot1 = var1;
+                        var0 = var0.setChangeEmailReason;
                         var _closure4_slot2 = var0;
-                        var0 = 12;
-                        var0 = var8[var0];
-                        var1 = var1.bind(var7)(var0);
-                        var0 = {};
-                        var0.changeEmailReason = var5;
-                        var0.setChangeEmailReason = var4;
-                        var0 = var2.bind(var7)(var1, var0);
-                        var _closure4_slot3 = var0;
                         var4 = {};
-                        var6 = _closure1_slot0;
-                        var5 = 13;
+                        var7 = _closure1_slot0;
+                        var8 = _closure1_slot2;
+                        var5 = 7;
                         var0 = var8[var5];
-                        var0 = var6.bind(var7)(var0);
+                        var6 = undefined;
+                        var0 = var7.bind(var6)(var0);
                         var0 = var0.ImpressionGroups;
                         var0 = var0.USER_ACCOUNT_EMAIL_CHANGE_FLOW;
                         var4.impression_group = var0;
@@ -206,26 +165,38 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var1 = _closure1_slot7;
                         var10 = var1.CHANGE_EMAIL_COLLECT_REASONS;
                         var2 = {};
-                        var9 = 14;
+                        var9 = 8;
                         var12 = var8[var9];
-                        var13 = var6.bind(var7)(var12);
+                        var13 = var7.bind(var6)(var12);
                         var12 = var13.getHeaderNoTitle;
                         var12 = var12.bind(var13)();
                         var2.headerTitle = var12;
                         var12 = var8[var9];
-                        var13 = var6.bind(var7)(var12);
+                        var13 = var7.bind(var6)(var12);
                         var12 = var13.getHeaderCloseButton;
-                        var11 = _closure1_slot11;
+                        var11 = _closure1_slot9;
                         var12 = var12.bind(var13)(var11);
                         var2.headerLeft = var12;
                         var12 = var8[var5];
-                        var12 = var6.bind(var7)(var12);
+                        var12 = var7.bind(var6)(var12);
                         var12 = var12.ImpressionNames;
                         var12 = var12.USER_ACCOUNT_EMAIL_CHANGE_COLLECT_REASONS;
                         var2.impressionName = var12;
                         var2.impressionProperties = var4;
                         var12 = function() {
-                            var0 = _closure4_slot3;
+                            var3 = _closure1_slot8;
+                            var1 = _closure1_slot1;
+                            var2 = _closure1_slot2;
+                            var0 = 9;
+                            var0 = var2[var0];
+                            var2 = undefined;
+                            var1 = var1.bind(var2)(var0);
+                            var0 = {};
+                            var5 = _closure4_slot1;
+                            var0.changeEmailReason = var5;
+                            var4 = _closure4_slot2;
+                            var0.setChangeEmailReason = var4;
+                            var0 = var3.bind(var2)(var1, var0);
                             return var0;
                         };
                         var2.render = var12;
@@ -233,23 +204,33 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var10 = var1.CHANGE_EMAIL_WARNING;
                         var2 = {};
                         var12 = var8[var9];
-                        var13 = var6.bind(var7)(var12);
+                        var13 = var7.bind(var6)(var12);
                         var12 = var13.getHeaderNoTitle;
                         var12 = var12.bind(var13)();
                         var2.headerTitle = var12;
                         var12 = var8[var9];
-                        var13 = var6.bind(var7)(var12);
+                        var13 = var7.bind(var6)(var12);
                         var12 = var13.getHeaderCloseButton;
                         var12 = var12.bind(var13)(var11);
                         var2.headerLeft = var12;
                         var12 = var8[var5];
-                        var12 = var6.bind(var7)(var12);
+                        var12 = var7.bind(var6)(var12);
                         var12 = var12.ImpressionNames;
                         var12 = var12.USER_ACCOUNT_EMAIL_CHANGE_WARNING;
                         var2.impressionName = var12;
                         var2.impressionProperties = var4;
                         var12 = function() {
-                            var0 = _closure4_slot2;
+                            var3 = _closure1_slot8;
+                            var1 = _closure1_slot1;
+                            var2 = _closure1_slot2;
+                            var0 = 10;
+                            var0 = var2[var0];
+                            var2 = undefined;
+                            var1 = var1.bind(var2)(var0);
+                            var0 = {};
+                            var4 = _closure4_slot1;
+                            var0.changeEmailReason = var4;
+                            var0 = var3.bind(var2)(var1, var0);
                             return var0;
                         };
                         var2.render = var12;
@@ -257,23 +238,31 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var10 = var1.RESEND_EMAIL;
                         var2 = {};
                         var12 = var8[var9];
-                        var13 = var6.bind(var7)(var12);
+                        var13 = var7.bind(var6)(var12);
                         var12 = var13.getHeaderNoTitle;
                         var12 = var12.bind(var13)();
                         var2.headerTitle = var12;
                         var12 = var8[var9];
-                        var13 = var6.bind(var7)(var12);
+                        var13 = var7.bind(var6)(var12);
                         var12 = var13.getHeaderCloseButton;
                         var12 = var12.bind(var13)(var11);
                         var2.headerLeft = var12;
                         var12 = var8[var5];
-                        var12 = var6.bind(var7)(var12);
+                        var12 = var7.bind(var6)(var12);
                         var12 = var12.ImpressionNames;
                         var12 = var12.USER_ACCOUNT_EMAIL_RESEND_VERIFICATION_EMAIL;
                         var2.impressionName = var12;
                         var2.impressionProperties = var4;
                         var12 = function() {
-                            var0 = _closure1_slot9;
+                            var3 = _closure1_slot8;
+                            var1 = _closure1_slot1;
+                            var2 = _closure1_slot2;
+                            var0 = 11;
+                            var0 = var2[var0];
+                            var2 = undefined;
+                            var1 = var1.bind(var2)(var0);
+                            var0 = {};
+                            var0 = var3.bind(var2)(var1, var0);
                             return var0;
                         };
                         var2.render = var12;
@@ -281,23 +270,31 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var10 = var1.CONFIRM_EMAIL_CHANGE_START;
                         var2 = {};
                         var12 = var8[var9];
-                        var13 = var6.bind(var7)(var12);
+                        var13 = var7.bind(var6)(var12);
                         var12 = var13.getHeaderNoTitle;
                         var12 = var12.bind(var13)();
                         var2.headerTitle = var12;
                         var12 = var8[var9];
-                        var13 = var6.bind(var7)(var12);
+                        var13 = var7.bind(var6)(var12);
                         var12 = var13.getHeaderCloseButton;
                         var12 = var12.bind(var13)(var11);
                         var2.headerLeft = var12;
                         var12 = var8[var5];
-                        var12 = var6.bind(var7)(var12);
+                        var12 = var7.bind(var6)(var12);
                         var12 = var12.ImpressionNames;
                         var12 = var12.USER_ACCOUNT_EMAIL_CHANGE_SEND_CODE;
                         var2.impressionName = var12;
                         var2.impressionProperties = var4;
                         var12 = function() {
-                            var0 = _closure1_slot10;
+                            var3 = _closure1_slot8;
+                            var1 = _closure1_slot1;
+                            var2 = _closure1_slot2;
+                            var0 = 12;
+                            var0 = var2[var0];
+                            var2 = undefined;
+                            var1 = var1.bind(var2)(var0);
+                            var0 = {};
+                            var0 = var3.bind(var2)(var1, var0);
                             return var0;
                         };
                         var2.render = var12;
@@ -305,23 +302,33 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var10 = var1.CONFIRM_EMAIL_CHANGE_CODE;
                         var2 = {};
                         var12 = var8[var9];
-                        var13 = var6.bind(var7)(var12);
+                        var13 = var7.bind(var6)(var12);
                         var12 = var13.getHeaderNoTitle;
                         var12 = var12.bind(var13)();
                         var2.headerTitle = var12;
                         var12 = var8[var9];
-                        var13 = var6.bind(var7)(var12);
+                        var13 = var7.bind(var6)(var12);
                         var12 = var13.getHeaderCloseButton;
                         var12 = var12.bind(var13)(var11);
                         var2.headerLeft = var12;
                         var12 = var8[var5];
-                        var12 = var6.bind(var7)(var12);
+                        var12 = var7.bind(var6)(var12);
                         var12 = var12.ImpressionNames;
                         var12 = var12.USER_ACCOUNT_EMAIL_CHANGE_VERIFY_CODE;
                         var2.impressionName = var12;
                         var2.impressionProperties = var4;
                         var12 = function() {
-                            var0 = _closure4_slot1;
+                            var3 = _closure1_slot8;
+                            var1 = _closure1_slot1;
+                            var2 = _closure1_slot2;
+                            var0 = 13;
+                            var0 = var2[var0];
+                            var2 = undefined;
+                            var1 = var1.bind(var2)(var0);
+                            var0 = {};
+                            var4 = _closure4_slot0;
+                            var0.isChangeEmail = var4;
+                            var0 = var3.bind(var2)(var1, var0);
                             return var0;
                         };
                         var2.render = var12;
@@ -329,17 +336,17 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var10 = var1.ENTER_EMAIL;
                         var2 = {};
                         var12 = var8[var9];
-                        var13 = var6.bind(var7)(var12);
+                        var13 = var7.bind(var6)(var12);
                         var12 = var13.getHeaderNoTitle;
                         var12 = var12.bind(var13)();
                         var2.headerTitle = var12;
                         var12 = var8[var9];
-                        var13 = var6.bind(var7)(var12);
+                        var13 = var7.bind(var6)(var12);
                         var12 = var13.getHeaderCloseButton;
                         var12 = var12.bind(var13)(var11);
                         var2.headerLeft = var12;
                         var12 = var8[var5];
-                        var12 = var6.bind(var7)(var12);
+                        var12 = var7.bind(var6)(var12);
                         var12 = var12.ImpressionNames;
                         var12 = var12.USER_ACCOUNT_EMAIL_CHANGE_ENTER_EMAIL;
                         var2.impressionName = var12;
@@ -351,7 +358,19 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var12[var13] = var14;
                         var2.impressionProperties = var12;
                         var12 = function() {
-                            var0 = _closure4_slot0;
+                            var3 = _closure1_slot8;
+                            var1 = _closure1_slot1;
+                            var2 = _closure1_slot2;
+                            var0 = 14;
+                            var0 = var2[var0];
+                            var2 = undefined;
+                            var1 = var1.bind(var2)(var0);
+                            var0 = {};
+                            var5 = _closure4_slot0;
+                            var0.isChangeEmail = var5;
+                            var4 = _closure4_slot1;
+                            var0.changeEmailReason = var4;
+                            var0 = var3.bind(var2)(var1, var0);
                             return var0;
                         };
                         var2.render = var12;
@@ -359,17 +378,17 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var10 = var1.VERIFY_PASSWORD;
                         var2 = {};
                         var12 = var8[var9];
-                        var13 = var6.bind(var7)(var12);
+                        var13 = var7.bind(var6)(var12);
                         var12 = var13.getHeaderNoTitle;
                         var12 = var12.bind(var13)();
                         var2.headerTitle = var12;
                         var12 = var8[var9];
-                        var13 = var6.bind(var7)(var12);
+                        var13 = var7.bind(var6)(var12);
                         var12 = var13.getHeaderCloseButton;
                         var12 = var12.bind(var13)(var11);
                         var2.headerLeft = var12;
                         var12 = var8[var5];
-                        var12 = var6.bind(var7)(var12);
+                        var12 = var7.bind(var6)(var12);
                         var12 = var12.ImpressionNames;
                         var12 = var12.USER_ACCOUNT_PASSWORD_VERIFY;
                         var2.impressionName = var12;
@@ -394,17 +413,17 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var2 = var1.CHANGE_EMAIL_COMPLETE;
                         var1 = {};
                         var10 = var8[var9];
-                        var12 = var6.bind(var7)(var10);
+                        var12 = var7.bind(var6)(var10);
                         var10 = var12.getHeaderNoTitle;
                         var10 = var10.bind(var12)();
                         var1.headerTitle = var10;
                         var9 = var8[var9];
-                        var10 = var6.bind(var7)(var9);
+                        var10 = var7.bind(var6)(var9);
                         var9 = var10.getHeaderCloseButton;
                         var9 = var9.bind(var10)(var11);
                         var1.headerLeft = var9;
                         var5 = var8[var5];
-                        var5 = var6.bind(var7)(var5);
+                        var5 = var7.bind(var6)(var5);
                         var5 = var5.ImpressionNames;
                         var5 = var5.USER_ACCOUNT_EMAIL_CHANGE_COMPLETE;
                         var1.impressionName = var5;
@@ -434,44 +453,44 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var5 = var7.bind(var8)(var5, var6);
                 if (var4) {
-                    _fun63332_ip = 245;
-                    continue _fun63332
+                    _fun61053_ip = 245;
+                    continue _fun61053
                 }
             case 214:
                 var6 = var2 == var1;
                 var4 = undefined;
                 if (var6) {
-                    _fun63332_ip = 229;
-                    continue _fun63332
+                    _fun61053_ip = 229;
+                    continue _fun61053
                 }
             case 223:
                 var4 = var1.email;
             case 229:
                 if (!(var2 != var4)) {
-                    _fun63332_ip = 245;
-                    continue _fun63332
+                    _fun61053_ip = 245;
+                    continue _fun61053
                 }
             case 233:
                 var4 = _closure1_slot7;
                 var4 = var4.RESEND_EMAIL;
-                _fun63332_ip = 283;
-                continue _fun63332;
+                _fun61053_ip = 283;
+                continue _fun61053;
             case 245:
                 if (!(var2 != var1)) {
-                    _fun63332_ip = 258;
-                    continue _fun63332
+                    _fun61053_ip = 258;
+                    continue _fun61053
                 }
             case 249:
                 var1 = var1.verified;
                 if (var1) {
-                    _fun63332_ip = 270;
-                    continue _fun63332
+                    _fun61053_ip = 270;
+                    continue _fun61053
                 }
             case 258:
                 var1 = _closure1_slot7;
                 var1 = var1.ENTER_EMAIL;
-                _fun63332_ip = 280;
-                continue _fun63332;
+                _fun61053_ip = 280;
+                continue _fun61053;
             case 270:
                 var2 = _closure1_slot7;
                 var1 = var2.CONFIRM_EMAIL_CHANGE_START;
@@ -505,4 +524,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 1621, 7795, 660, 33, 7793, 7796, 7799, 7801, 7803, 7871, 7873, 481, 5836, 7875, 7878, 566, 4904, 5834, 1234, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 1621, 7525, 660, 33, 7523, 481, 4710, 7526, 7529, 7530, 7533, 7535, 7606, 7608, 7611, 566, 4935, 5845, 1235, 2]);

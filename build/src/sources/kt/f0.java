@@ -11,16 +11,16 @@ import kotlin.jvm.internal.Intrinsics;
 public final class f0 {
 
     /* renamed from: b  reason: collision with root package name */
-    public static final a f35181b = new a(null);
+    public static final a f35749b = new a(null);
 
     /* renamed from: c  reason: collision with root package name */
-    private static final f0 f35182c = new f0(CollectionsKt.o("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"));
+    private static final f0 f35750c = new f0(CollectionsKt.o("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"));
 
     /* renamed from: d  reason: collision with root package name */
-    private static final f0 f35183d = new f0(CollectionsKt.o("Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"));
+    private static final f0 f35751d = new f0(CollectionsKt.o("Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"));
 
     /* renamed from: a  reason: collision with root package name */
-    private final List f35184a;
+    private final List f35752a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a {
@@ -29,7 +29,7 @@ public final class f0 {
         }
 
         public final f0 a() {
-            return f0.f35183d;
+            return f0.f35751d;
         }
 
         private a() {
@@ -40,7 +40,7 @@ public final class f0 {
     /* synthetic */ class b extends FunctionReferenceImpl implements Function1 {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final b f35185d = new b();
+        public static final b f35753d = new b();
 
         b() {
             super(1, String.class, "toString", "toString()Ljava/lang/String;", 0);
@@ -55,15 +55,15 @@ public final class f0 {
 
     public f0(List names) {
         Intrinsics.checkNotNullParameter(names, "names");
-        this.f35184a = names;
+        this.f35752a = names;
         if (names.size() == 12) {
             Iterator it = CollectionsKt.m(names).iterator();
             while (it.hasNext()) {
                 int nextInt = ((kotlin.collections.m0) it).nextInt();
-                if (((CharSequence) this.f35184a.get(nextInt)).length() > 0) {
+                if (((CharSequence) this.f35752a.get(nextInt)).length() > 0) {
                     for (int i10 = 0; i10 < nextInt; i10++) {
-                        if (Intrinsics.areEqual(this.f35184a.get(nextInt), this.f35184a.get(i10))) {
-                            throw new IllegalArgumentException(("Month names must be unique, but '" + ((String) this.f35184a.get(nextInt)) + "' was repeated").toString());
+                        if (Intrinsics.areEqual(this.f35752a.get(nextInt), this.f35752a.get(i10))) {
+                            throw new IllegalArgumentException(("Month names must be unique, but '" + ((String) this.f35752a.get(nextInt)) + "' was repeated").toString());
                         }
                     }
                 } else {
@@ -76,21 +76,21 @@ public final class f0 {
     }
 
     public final List b() {
-        return this.f35184a;
+        return this.f35752a;
     }
 
     public boolean equals(Object obj) {
-        if ((obj instanceof f0) && Intrinsics.areEqual(this.f35184a, ((f0) obj).f35184a)) {
+        if ((obj instanceof f0) && Intrinsics.areEqual(this.f35752a, ((f0) obj).f35752a)) {
             return true;
         }
         return false;
     }
 
     public int hashCode() {
-        return this.f35184a.hashCode();
+        return this.f35752a.hashCode();
     }
 
     public String toString() {
-        return CollectionsKt.x0(this.f35184a, ", ", "MonthNames(", ")", 0, null, b.f35185d, 24, null);
+        return CollectionsKt.x0(this.f35752a, ", ", "MonthNames(", ")", 0, null, b.f35753d, 24, null);
     }
 }

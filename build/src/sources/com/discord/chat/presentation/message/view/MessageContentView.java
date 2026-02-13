@@ -238,7 +238,7 @@ public class MessageContentView extends SimpleDraweeSpanTextView implements Vert
     public static final Unit truncate_l3ndG_o$lambda$3(Function1 function1, String str, View it) {
         Intrinsics.checkNotNullParameter(it, "it");
         function1.invoke(MessageId.m1084boximpl(str));
-        return Unit.f31988a;
+        return Unit.f32556a;
     }
 
     public final void setMessageContent(@NotNull MessageMargins margins, @NotNull StructurableText messageContent, @NotNull MarkdownTextRenderOptions options, @NotNull MarkdownTextRenderEventHandlers eventHandlers, Float f10, boolean z10) {
@@ -250,7 +250,7 @@ public class MessageContentView extends SimpleDraweeSpanTextView implements Vert
             @Override // kotlin.jvm.functions.Function1
             public /* bridge */ /* synthetic */ Object invoke(Object obj) {
                 m702invoke1xi1bu0(((MessageId) obj).m1093unboximpl());
-                return Unit.f31988a;
+                return Unit.f32556a;
             }
 
             /* renamed from: invoke-1xi1bu0  reason: not valid java name */

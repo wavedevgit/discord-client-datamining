@@ -10,7 +10,7 @@ import kotlin.jvm.internal.Intrinsics;
 public final class b {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final b f54310a = new b();
+    public static final b f54878a = new b();
 
     private b() {
     }

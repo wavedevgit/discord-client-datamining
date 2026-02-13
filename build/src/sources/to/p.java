@@ -9,25 +9,25 @@ public abstract class p {
     public /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final /* synthetic */ int[] f49609a;
+        public static final /* synthetic */ int[] f50177a;
 
         static {
             int[] iArr = new int[c4.e.values().length];
             try {
-                iArr[c4.e.f49014o.ordinal()] = 1;
+                iArr[c4.e.f49582o.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                iArr[c4.e.f49016q.ordinal()] = 2;
+                iArr[c4.e.f49584q.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
-            f49609a = iArr;
+            f50177a = iArr;
         }
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final t0.c b(c4.e eVar) {
-        int i10 = a.f49609a[eVar.ordinal()];
+        int i10 = a.f50177a[eVar.ordinal()];
         if (i10 != 1) {
             if (i10 != 2) {
                 return t0.c.f24128e;

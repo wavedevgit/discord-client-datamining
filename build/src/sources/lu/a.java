@@ -7,20 +7,20 @@ import okhttp3.Response;
 public interface a {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final C0500a f36044a = C0500a.f36047a;
+    public static final C0500a f36612a = C0500a.f36615a;
 
     /* renamed from: b  reason: collision with root package name */
-    public static final a f36045b = new C0500a.C0501a();
+    public static final a f36613b = new C0500a.C0501a();
 
     /* renamed from: c  reason: collision with root package name */
-    public static final a f36046c = new nu.a(null, 1, null);
+    public static final a f36614c = new nu.a(null, 1, null);
 
     /* renamed from: lu.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class C0500a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ C0500a f36047a = new C0500a();
+        static final /* synthetic */ C0500a f36615a = new C0500a();
 
         /* renamed from: lu.a$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */

@@ -1,79 +1,51 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = require;
-    var _closure1_slot0 = var1;
-    var1 = dependencyMap;
-    var _closure1_slot1 = var1;
-    var1 = function arg0, arg1, arg2, arg3() {
-        _fun28365: for (var _fun28365_ip = 0;;) switch (_fun28365_ip) {
+    var1 = function arg0, arg1() {
+        _fun28425: for (var _fun28425_ip = 0;;) switch (_fun28425_ip) {
             case 0:
                 var6 = arg0;
                 var5 = arg1;
-                var3 = arg2;
-                var4 = arg3;
                 var0 = null;
                 var0 = var0 == var6;
+                var1 = 0;
+                var4 = 0;
+                if (var0) {
+                    _fun28425_ip = 24;
+                    continue _fun28425
+                }
+            case 19:
+                var4 = var6.length;
+            case 24:
+                var0 = new Array(0);
+                var7 = var1 < var4;
+                var3 = undefined;
                 var2 = 0;
                 var1 = 0;
-                if (var0) {
-                    _fun28365_ip = 30;
-                    continue _fun28365
-                }
-            case 25:
-                var1 = var6.length;
-            case 30:
-                if (var1) {
-                    _fun28365_ip = 39;
-                    continue _fun28365
-                }
-            case 33:
-                var0 = new Array(0);
-                _fun28365_ip = 139;
-                continue _fun28365;
-            case 39:
-                var7 = var3;
-                if (!var3) {
-                    _fun28365_ip = 56;
-                    continue _fun28365
-                }
-            case 45:
-                var9 = 'number';
-                var8 = typeof var3;
-                var7 = var9 !== var8;
-            case 56:
                 if (!var7) {
-                    _fun28365_ip = 88;
-                    continue _fun28365
+                    _fun28425_ip = 81;
+                    continue _fun28425
                 }
-            case 59:
-                var10 = _closure1_slot0;
-                var8 = _closure1_slot1;
-                var8 = var8[var2];
-                var9 = undefined;
-                var8 = var10.bind(var9)(var8);
-                var7 = var8.bind(var9)(var6, var5, var3);
-            case 88:
-                if (!var7) {
-                    _fun28365_ip = 96;
-                    continue _fun28365
+            case 41:
+                var11 = var6[var2];
+                var9 = var5.bind(var3)(var11, var2, var6);
+                var8 = var2;
+                var7 = var1;
+                if (!var9) {
+                    _fun28425_ip = 71;
+                    continue _fun28425
                 }
-            case 91:
-                var3 = 0;
-                var4 = var1;
-            case 96:
-                var7 = _closure1_slot0;
-                var2 = _closure1_slot1;
-                var1 = 1;
-                var1 = var2[var1];
-                var2 = undefined;
-                var1 = var7.bind(var2)(var1);
-                var15 = undefined;
-                var14 = var6;
-                var13 = var5;
-                var12 = var3;
-                var11 = var4;
-                var0 = var15[var1](var14, var13, var12, var11, var10);
-            case 139:
+            case 61:
+                var10 = parseFloat(var1);
+                var7 = var10 + 1;
+                var0[var10] = var11;
+            case 71:
+                var2 = var8 + 1;
+                var1 = var7;
+                if (var2 < var4) {
+                    _fun28425_ip = 41;
+                    continue _fun28425
+                }
+            case 81:
                 return var0;
         }
     };
@@ -81,4 +53,4 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0.exports = var1;
     var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3306, 3308]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, []);

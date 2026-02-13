@@ -10,43 +10,43 @@ import java.util.concurrent.Callable;
 public final class i0 {
 
     /* renamed from: i  reason: collision with root package name */
-    private static final i f37855i = i.c("optional-module-barcode", "com.google.android.gms.vision.barcode");
+    private static final i f38423i = i.c("optional-module-barcode", "com.google.android.gms.vision.barcode");
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f37856a;
+    private final String f38424a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f37857b;
+    private final String f38425b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final b0 f37858c;
+    private final b0 f38426c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final wj.m f37859d;
+    private final wj.m f38427d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Task f37860e;
+    private final Task f38428e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final Task f37861f;
+    private final Task f38429f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final String f37862g;
+    private final String f38430g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final int f37863h;
+    private final int f38431h;
 
     public i0(Context context, final wj.m mVar, b0 b0Var, String str) {
         int i10;
         new HashMap();
         new HashMap();
-        this.f37856a = context.getPackageName();
-        this.f37857b = wj.c.a(context);
-        this.f37859d = mVar;
-        this.f37858c = b0Var;
+        this.f38424a = context.getPackageName();
+        this.f38425b = wj.c.a(context);
+        this.f38427d = mVar;
+        this.f38426c = b0Var;
         s0.a();
-        this.f37862g = str;
-        this.f37860e = wj.g.a().b(new Callable() { // from class: ng.g0
+        this.f38430g = str;
+        this.f38428e = wj.g.a().b(new Callable() { // from class: ng.g0
             @Override // java.util.concurrent.Callable
             public final Object call() {
                 return i0.this.a();
@@ -54,23 +54,23 @@ public final class i0 {
         });
         wj.g a10 = wj.g.a();
         Objects.requireNonNull(mVar);
-        this.f37861f = a10.b(new Callable() { // from class: ng.h0
+        this.f38429f = a10.b(new Callable() { // from class: ng.h0
             @Override // java.util.concurrent.Callable
             public final Object call() {
                 return wj.m.this.a();
             }
         });
-        i iVar = f37855i;
+        i iVar = f38423i;
         if (iVar.containsKey(str)) {
             i10 = DynamiteModule.c(context, (String) iVar.get(str));
         } else {
             i10 = -1;
         }
-        this.f37863h = i10;
+        this.f38431h = i10;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final /* synthetic */ String a() {
-        return hf.m.a().b(this.f37862g);
+        return hf.m.a().b(this.f38430g);
     }
 }

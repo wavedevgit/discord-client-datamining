@@ -9,12 +9,12 @@ import android.hardware.camera2.TotalCaptureResult;
 final class p2 extends CameraCaptureSession.CaptureCallback {
 
     /* renamed from: a  reason: collision with root package name */
-    private final a0.k f43535a;
+    private final a0.k f44103a;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public p2(a0.k kVar) {
         if (kVar != null) {
-            this.f43535a = kVar;
+            this.f44103a = kVar;
             return;
         }
         throw new NullPointerException("cameraCaptureCallback is null");
@@ -39,18 +39,18 @@ final class p2 extends CameraCaptureSession.CaptureCallback {
         } else {
             b10 = a0.q2.b();
         }
-        this.f43535a.b(a(captureRequest), new g(b10, totalCaptureResult));
+        this.f44103a.b(a(captureRequest), new g(b10, totalCaptureResult));
     }
 
     @Override // android.hardware.camera2.CameraCaptureSession.CaptureCallback
     public void onCaptureFailed(CameraCaptureSession cameraCaptureSession, CaptureRequest captureRequest, CaptureFailure captureFailure) {
         super.onCaptureFailed(cameraCaptureSession, captureRequest, captureFailure);
-        this.f43535a.c(a(captureRequest), new a0.m(m.a.ERROR));
+        this.f44103a.c(a(captureRequest), new a0.m(m.a.ERROR));
     }
 
     @Override // android.hardware.camera2.CameraCaptureSession.CaptureCallback
     public void onCaptureStarted(CameraCaptureSession cameraCaptureSession, CaptureRequest captureRequest, long j10, long j11) {
         super.onCaptureStarted(cameraCaptureSession, captureRequest, j10, j11);
-        this.f43535a.d(a(captureRequest));
+        this.f44103a.d(a(captureRequest));
     }
 }

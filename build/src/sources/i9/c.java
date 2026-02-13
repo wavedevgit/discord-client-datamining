@@ -6,13 +6,13 @@ import java.util.concurrent.ArrayBlockingQueue;
 public class c {
 
     /* renamed from: b  reason: collision with root package name */
-    private static final c f27802b = new c();
+    private static final c f28370b = new c();
 
     /* renamed from: c  reason: collision with root package name */
-    private static boolean f27803c = true;
+    private static boolean f28371c = true;
 
     /* renamed from: a  reason: collision with root package name */
-    private final Queue f27804a = new ArrayBlockingQueue(20);
+    private final Queue f28372a = new ArrayBlockingQueue(20);
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public enum a {
@@ -46,21 +46,21 @@ public class c {
     }
 
     public static c a() {
-        if (f27803c) {
+        if (f28371c) {
             return new c();
         }
-        return f27802b;
+        return f28370b;
     }
 
     public void b(a aVar) {
-        if (f27803c) {
-            for (int i10 = 5; !this.f27804a.offer(aVar) && i10 > 0; i10--) {
-                this.f27804a.poll();
+        if (f28371c) {
+            for (int i10 = 5; !this.f28372a.offer(aVar) && i10 > 0; i10--) {
+                this.f28372a.poll();
             }
         }
     }
 
     public String toString() {
-        return this.f27804a.toString();
+        return this.f28372a.toString();
     }
 }

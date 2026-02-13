@@ -9,25 +9,25 @@ import kt.e;
 public final class o0 extends kt.a {
 
     /* renamed from: b  reason: collision with root package name */
-    public static final b f35271b = new b(null);
+    public static final b f35839b = new b(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final mt.f f35272a;
+    private final mt.f f35840a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     private static final class a implements kt.b, e {
 
         /* renamed from: a  reason: collision with root package name */
-        private final mt.d f35273a;
+        private final mt.d f35841a;
 
         public a(mt.d actualBuilder) {
             Intrinsics.checkNotNullParameter(actualBuilder, "actualBuilder");
-            this.f35273a = actualBuilder;
+            this.f35841a = actualBuilder;
         }
 
         @Override // kt.b
         public mt.d a() {
-            return this.f35273a;
+            return this.f35841a;
         }
 
         @Override // kt.b
@@ -98,12 +98,12 @@ public final class o0 extends kt.a {
     public o0(mt.f actualFormat) {
         super(null);
         Intrinsics.checkNotNullParameter(actualFormat, "actualFormat");
-        this.f35272a = actualFormat;
+        this.f35840a = actualFormat;
     }
 
     @Override // kt.a
     public mt.f b() {
-        return this.f35272a;
+        return this.f35840a;
     }
 
     @Override // kt.a

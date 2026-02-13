@@ -56,7 +56,7 @@ final class e0 extends uc.a {
             if (j14 != -9223372036854775807L) {
                 return a.e.f(j14, j11 + j12);
             }
-            return a.e.f50607d;
+            return a.e.f51175d;
         }
 
         @Override // uc.a.f
@@ -70,7 +70,7 @@ final class e0 extends uc.a {
 
         @Override // uc.a.f
         public void b() {
-            this.f22453b.R(w0.f39043f);
+            this.f22453b.R(w0.f39611f);
         }
     }
 

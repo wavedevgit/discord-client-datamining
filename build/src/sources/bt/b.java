@@ -37,7 +37,7 @@ public final class b extends e {
     }
 
     public /* synthetic */ b(Function2 function2, CoroutineContext coroutineContext, int i10, at.a aVar, int i11, DefaultConstructorMarker defaultConstructorMarker) {
-        this(function2, (i11 & 2) != 0 ? kotlin.coroutines.e.f32062d : coroutineContext, (i11 & 4) != 0 ? -2 : i10, (i11 & 8) != 0 ? at.a.f6104d : aVar);
+        this(function2, (i11 & 2) != 0 ? kotlin.coroutines.e.f32630d : coroutineContext, (i11 & 4) != 0 ? -2 : i10, (i11 & 8) != 0 ? at.a.f6104d : aVar);
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
@@ -93,7 +93,7 @@ public final class b extends e {
         L43:
             boolean r5 = r5.z()
             if (r5 == 0) goto L4c
-            kotlin.Unit r5 = kotlin.Unit.f31988a
+            kotlin.Unit r5 = kotlin.Unit.f32556a
             return r5
         L4c:
             java.lang.IllegalStateException r5 = new java.lang.IllegalStateException

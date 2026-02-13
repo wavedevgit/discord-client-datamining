@@ -7,28 +7,28 @@ import kotlin.enums.EnumEntries;
 public final class g {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final g f35186d = new g("AM", 0);
+    public static final g f35754d = new g("AM", 0);
 
     /* renamed from: e  reason: collision with root package name */
-    public static final g f35187e = new g("PM", 1);
+    public static final g f35755e = new g("PM", 1);
 
     /* renamed from: i  reason: collision with root package name */
-    private static final /* synthetic */ g[] f35188i;
+    private static final /* synthetic */ g[] f35756i;
 
     /* renamed from: o  reason: collision with root package name */
-    private static final /* synthetic */ EnumEntries f35189o;
+    private static final /* synthetic */ EnumEntries f35757o;
 
     static {
         g[] a10 = a();
-        f35188i = a10;
-        f35189o = hs.a.a(a10);
+        f35756i = a10;
+        f35757o = hs.a.a(a10);
     }
 
     private g(String str, int i10) {
     }
 
     private static final /* synthetic */ g[] a() {
-        return new g[]{f35186d, f35187e};
+        return new g[]{f35754d, f35755e};
     }
 
     public static g valueOf(String str) {
@@ -36,6 +36,6 @@ public final class g {
     }
 
     public static g[] values() {
-        return (g[]) f35188i.clone();
+        return (g[]) f35756i.clone();
     }
 }

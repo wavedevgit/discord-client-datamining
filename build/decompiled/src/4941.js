@@ -1,294 +1,215 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var5 = metroImportDefault;
+    var5 = require;
     var2 = exports;
-    var6 = dependencyMap;
+    var19 = dependencyMap;
     var0 = global;
-    var _closure1_slot0 = var0;
-    var1 = function arg0, arg1() {
-        var0 = global;
-        var0 = var0.Object;
-        var0 = var0.prototype;
-        var3 = var0.hasOwnProperty;
-        var2 = var3.call;
-        var1 = arg0;
-        var0 = arg1;
-        var0 = var2.bind(var3)(var1, var0);
-        return var0;
-    };
-    var _closure1_slot3 = var1;
-    var0 = global;
-    var8 = var0.Object;
-    var7 = var8.defineProperty;
-    var4 = {};
+    var4 = var0.Object;
+    var3 = var4.defineProperty;
+    var1 = {};
     var0 = true;
-    var4.value = var0;
+    var1.value = var0;
     var0 = '__esModule';
-    var0 = var7.bind(var8)(var2, var0, var4);
-    var0 = 0;
-    var4 = var6[var0];
+    var0 = var3.bind(var4)(var2, var0, var1);
+    var20 = 0;
+    var3 = var19[var20];
+    var1 = metroImportDefault;
     var0 = undefined;
-    var4 = var5.bind(var0)(var4);
-    var _closure1_slot1 = var4;
+    var21 = var1.bind(var0)(var3);
     var4 = 1;
-    var4 = var6[var4];
-    var4 = var5.bind(var0)(var4);
-    var _closure1_slot2 = var4;
-    var4 = function arg0() {
-        _fun44748: for (var _fun44748_ip = 0;;) switch (_fun44748_ip) {
-            case 0:
-                var2 = arg0;
-                var0 = global;
-                var1 = var0.Array;
-                var0 = var1.isArray;
-                var1 = var0.bind(var1)(var2);
-                var0 = var2;
-                if (var1) {
-                    _fun44748_ip = 38;
-                    continue _fun44748
-                }
-            case 27:
-                var1 = new Array(1);
-                var1[0] = var2;
-                var0 = var1;
-            case 38:
-                return var0;
-        }
+    var1 = var19[var4];
+    var1 = var5.bind(var0)(var1);
+    var6 = var1.Dimensions;
+    var1 = var1.Platform;
+    var3 = var6.get;
+    var1 = 'window';
+    var1 = var3.bind(var6)(var1);
+    var9 = var1.height;
+    var8 = var1.width;
+    var3 = var6.get;
+    var1 = 'screen';
+    var1 = var3.bind(var6)(var1);
+    var7 = var1.height;
+    var6 = var1.width;
+    var18 = {};
+    var18.UNDETERMINED = var20;
+    var3 = 'UNDETERMINED';
+    var18[var20] = var3;
+    var18.SCROLLABLE = var4;
+    var1 = 'SCROLLABLE';
+    var18[var4] = var1;
+    var1 = 2;
+    var18.HANDLE = var1;
+    var10 = 'HANDLE';
+    var18[var1] = var10;
+    var22 = 3;
+    var18.CONTENT = var22;
+    var10 = 'CONTENT';
+    var18[var22] = var10;
+    var17 = {};
+    var17.CLOSED = var20;
+    var10 = 'CLOSED';
+    var17[var20] = var10;
+    var17.OPENED = var4;
+    var10 = 'OPENED';
+    var17[var4] = var10;
+    var17.EXTENDED = var1;
+    var10 = 'EXTENDED';
+    var17[var1] = var10;
+    var17.OVER_EXTENDED = var22;
+    var10 = 'OVER_EXTENDED';
+    var17[var22] = var10;
+    var15 = 4;
+    var17.FILL_PARENT = var15;
+    var10 = 'FILL_PARENT';
+    var17[var15] = var10;
+    var12 = {};
+    var12.LOCKED = var20;
+    var10 = 'LOCKED';
+    var12[var20] = var10;
+    var12.UNLOCKED = var4;
+    var10 = 'UNLOCKED';
+    var12[var4] = var10;
+    var12.UNDETERMINED = var1;
+    var12[var1] = var3;
+    var13 = {};
+    var13.UNDETERMINED = var20;
+    var13[var20] = var3;
+    var13.VIEW = var4;
+    var10 = 'VIEW';
+    var13[var4] = var10;
+    var13.FLATLIST = var1;
+    var10 = 'FLATLIST';
+    var13[var1] = var10;
+    var13.SCROLLVIEW = var22;
+    var10 = 'SCROLLVIEW';
+    var13[var22] = var10;
+    var13.SECTIONLIST = var15;
+    var10 = 'SECTIONLIST';
+    var13[var15] = var10;
+    var11 = 5;
+    var13.VIRTUALIZEDLIST = var11;
+    var10 = 'VIRTUALIZEDLIST';
+    var13[var11] = var10;
+    var16 = {};
+    var16.UNDETERMINED = var20;
+    var16[var20] = var3;
+    var16.RUNNING = var4;
+    var10 = 'RUNNING';
+    var16[var4] = var10;
+    var16.STOPPED = var1;
+    var10 = 'STOPPED';
+    var16[var1] = var10;
+    var16.INTERRUPTED = var22;
+    var10 = 'INTERRUPTED';
+    var16[var22] = var10;
+    var14 = {};
+    var14.NONE = var20;
+    var10 = 'NONE';
+    var14[var20] = var10;
+    var14.MOUNT = var4;
+    var10 = 'MOUNT';
+    var14[var4] = var10;
+    var14.GESTURE = var1;
+    var10 = 'GESTURE';
+    var14[var1] = var10;
+    var14.USER = var22;
+    var10 = 'USER';
+    var14[var22] = var10;
+    var14.CONTAINER_RESIZE = var15;
+    var10 = 'CONTAINER_RESIZE';
+    var14[var15] = var10;
+    var14.SNAP_POINT_CHANGE = var11;
+    var10 = 'SNAP_POINT_CHANGE';
+    var14[var11] = var10;
+    var11 = 6;
+    var14.KEYBOARD = var11;
+    var10 = 'KEYBOARD';
+    var14[var11] = var10;
+    var15 = {};
+    var15.TIMING = var20;
+    var10 = 'TIMING';
+    var15[var20] = var10;
+    var15.SPRING = var4;
+    var10 = 'SPRING';
+    var15[var4] = var10;
+    var11 = {};
+    var11.UNDETERMINED = var20;
+    var11[var20] = var3;
+    var11.SHOWN = var4;
+    var3 = 'SHOWN';
+    var11[var4] = var3;
+    var11.HIDDEN = var1;
+    var3 = 'HIDDEN';
+    var11[var1] = var3;
+    var10 = {};
+    var10.PROVIDED = var20;
+    var3 = 'PROVIDED';
+    var10[var20] = var3;
+    var10.DYNAMIC = var4;
+    var3 = 'DYNAMIC';
+    var10[var4] = var3;
+    var3 = var19[var1];
+    var3 = var5.bind(var0)(var3);
+    var4 = var3.Easing;
+    var3 = var4.out;
+    var1 = var19[var1];
+    var1 = var5.bind(var0)(var1);
+    var1 = var1.Easing;
+    var1 = var1.exp;
+    var3 = var3.bind(var4)(var1);
+    var4 = {};
+    var1 = 250;
+    var4.duration = var1;
+    var4.easing = var3;
+    var19 = var12.UNDETERMINED;
+    var5 = {};
+    var19 = var21.bind(var0)(var5, var19, var20);
+    var5 = var12.LOCKED;
+    var20 = var21.bind(var0)(var19, var5, var20);
+    var19 = var12.UNLOCKED;
+    var5 = 0.985;
+    var5 = var21.bind(var0)(var20, var19, var5);
+    var2.GESTURE_SOURCE = var18;
+    var2.SHEET_STATE = var17;
+    var2.ANIMATION_STATE = var16;
+    var2.ANIMATION_METHOD = var15;
+    var2.ANIMATION_SOURCE = var14;
+    var2.SCROLLABLE_TYPE = var13;
+    var2.SCROLLABLE_STATE = var12;
+    var2.KEYBOARD_STATE = var11;
+    var2.SNAP_POINT_TYPE = var10;
+    var2.WINDOW_HEIGHT = var9;
+    var2.WINDOW_WIDTH = var8;
+    var2.SCREEN_HEIGHT = var7;
+    var2.SCREEN_WIDTH = var6;
+    var2.SCROLLABLE_DECELERATION_RATE_MAPPER = var5;
+    var5 = {
+        'replace': 'replace',
+        'push': 'push',
+        'switch': 'switch'
     };
-    var2.toArray = var4;
-    var4 = function arg0, arg1() {
-        var0 = arg1;
-        var _closure2_slot0 = var0;
-        var0 = [null];
-        var _closure2_slot1 = var0;
-        var3 = _closure1_slot1;
-        var2 = undefined;
-        var0 = arg0;
-        var3 = var3.bind(var2)(var0);
-        var0 = new Array(0);
-        var _closure2_slot2 = var0;
-        var2 = var3.forEach;
-        var1 = function(arg0, arg1) { // Environment: var1
-            var4 = _closure2_slot1;
-            var0 = arg1;
-            var5 = var4[var0];
-            var3 = _closure2_slot0;
-            var0 = undefined;
-            var2 = arg0;
-            var3 = var3.bind(var0)(var5, var2);
-            var2 = var4.push;
-            var2 = var2.bind(var4)(var3);
-            var2 = _closure2_slot2;
-            var1 = var2.push;
-            var1 = var1.bind(var2)(var3);
-            return var0;
-        };
-        var1 = var2.bind(var3)(var1);
-        return var0;
+    var2.MODAL_STACK_BEHAVIOR = var5;
+    var5 = {
+        'interactive': 'interactive',
+        'extend': 'extend',
+        'fillParent': 'fillParent'
     };
-    var2.withPrevAndCurrent = var4;
-    var2.hasProperty = var1;
-    var1 = function() {
-        _fun44751: for (var _fun44751_ip = 0;;) switch (_fun44751_ip) {
-            case 0:
-                var3 = _closure1_slot3;
-                var2 = _closure1_slot0;
-                var1 = undefined;
-                var0 = 'process';
-                var0 = var3.bind(var1)(var2, var0);
-                if (!var0) {
-                    _fun44751_ip = 28;
-                    continue _fun44751
-                }
-            case 26:
-                var0 = false;
-            case 28:
-                return var0;
-        }
+    var2.KEYBOARD_BEHAVIOR = var5;
+    var5 = {
+        'none': 'none',
+        'restore': 'restore'
     };
-    var2.isTestEnv = var1;
-    var1 = function arg0() {
-        var0 = global;
-        var0 = var0.HermesInternal;
-        var2 = var0.concat;
-        var1 = '[react-native-gesture-handler] ';
-        var0 = arg0;
-        var0 = var2.bind(var1)(var0);
-        return var0;
+    var2.KEYBOARD_BLUR_BEHAVIOR = var5;
+    var5 = {
+        'adjustPan': 'adjustPan',
+        'adjustResize': 'adjustResize'
     };
-    var2.tagMessage = var1;
-    var1 = function() {
-        _fun44753: for (var _fun44753_ip = 0;;) switch (_fun44753_ip) {
-            case 0:
-                var1 = _closure1_slot0;
-                var0 = null;
-                var0 = var0 == var1;
-                if (var0) {
-                    _fun44753_ip = 25;
-                    continue _fun44753
-                }
-            case 16:
-                var1 = var1._IS_FABRIC;
-                var0 = !var1;
-            case 25:
-                var0 = !var0;
-                return var0;
-        }
-    };
-    var2.isFabric = var1;
-    var1 = function() {
-        var0 = _closure1_slot2;
-        var2 = var0.version;
-        var1 = var2.startsWith;
-        var0 = '19.';
-        var0 = var1.bind(var2)(var0);
-        return var0;
-    };
-    var2.isReact19 = var1;
-    var1 = function() {
-        _fun44755: for (var _fun44755_ip = 0;;) switch (_fun44755_ip) {
-            case 0:
-                var1 = _closure1_slot0;
-                var0 = var1.nativeCallSyncHook;
-                if (!var0) {
-                    _fun44755_ip = 25;
-                    continue _fun44755
-                }
-            case 16:
-                var2 = var1.__REMOTEDEV__;
-                var0 = !var2;
-            case 25:
-                if (var0) {
-                    _fun44755_ip = 34;
-                    continue _fun44755
-                }
-            case 28:
-                var0 = var1.RN$Bridgeless;
-            case 34:
-                var0 = !var0;
-                return var0;
-        }
-    };
-    var2.isRemoteDebuggingEnabled = var1;
-    var1 = function arg0, arg1() {
-        _fun44756: for (var _fun44756_ip = 0;;) switch (_fun44756_ip) {
-            case 0:
-                var1 = arg0;
-                var0 = arg1;
-                var4 = var1;
-                var5 = var0;
-                var3 = undefined;
-                var6 = undefined;
-                var7 = undefined;
-                if (!(var1 !== var0)) {
-                    _fun44756_ip = 231;
-                    continue _fun44756
-                }
-            case 25:
-                var0 = var4;
-                var1 = 'object';
-                var0 = typeof var0;
-                if (!(var1 === var0)) {
-                    _fun44756_ip = 227;
-                    continue _fun44756
-                }
-            case 42:
-                var0 = var5;
-                var0 = typeof var0;
-                if (!(var1 === var0)) {
-                    _fun44756_ip = 227;
-                    continue _fun44756
-                }
-            case 55:
-                var0 = var4;
-                var1 = null;
-                if (!(var1 !== var0)) {
-                    _fun44756_ip = 227;
-                    continue _fun44756
-                }
-            case 67:
-                var0 = var5;
-                if (!(var1 !== var0)) {
-                    _fun44756_ip = 227;
-                    continue _fun44756
-                }
-            case 77:
-                var1 = global;
-                var8 = var1.Object;
-                var2 = var8.keys;
-                var0 = var4;
-                var0 = var2.bind(var8)(var0);
-                var8 = var1.Object;
-                var2 = var8.keys;
-                var1 = var5;
-                var1 = var2.bind(var8)(var1);
-                var6 = var1;
-                var2 = var0.length;
-                var1 = var1.length;
-                if (!(var2 === var1)) {
-                    _fun44756_ip = 223;
-                    continue _fun44756
-                }
-            case 134:
-                var2 = var0;
-                var1 = var2[Symbol.iterator];
-                var2 = var1().next;
-            case 143:
-                var10 = var2().value;
-                var8 = var1;
-                if (!(var8 !== var3)) {
-                    _fun44756_ip = 219;
-                    continue _fun44756
-                }
-            case 154: // try_start_0
-                var7 = var10;
-                var9 = var6;
-                var8 = var9.includes;
-                var8 = var8.bind(var9)(var10);
-                if (!var8) {
-                    _fun44756_ip = 203;
-                    continue _fun44756
-                }
-            case 173:
-                var10 = _closure1_slot4;
-                var8 = var4;
-                var11 = var7;
-                var9 = var8[var11];
-                var8 = var5;
-                var8 = var8[var11];
-                var8 = var10.bind(var3)(var9, var8);
-                if (var8) {
-                    _fun44756_ip = 210;
-                    continue _fun44756
-                }
-            case 203: // try_end0
-                var1.return();
-                var8 = false;
-                return var8;
-            case 210:
-                _fun44756_ip = 143;
-                continue _fun44756;
-            case 212: // catch_target0
-                CatchBlockStart(arg_register = 0);
-                var1.return();
-                throw var0;
-            case 219:
-                var0 = true;
-                return var0;
-            case 223:
-                var0 = false;
-                return var0;
-            case 227:
-                var0 = false;
-                return var0;
-            case 231:
-                var0 = true;
-                return var0;
-        }
-    };
-    var _closure1_slot4 = var1;
-    var2.deepEqual = var1;
-    var1 = 2147483647;
-    var2.INT32_MAX = var1;
+    var2.KEYBOARD_INPUT_MODE = var5;
+    var5 = 12.5;
+    var2.KEYBOARD_DISMISS_THRESHOLD = var5;
+    var2.ANIMATION_CONFIGS = var4;
+    var2.ANIMATION_EASING = var3;
+    var2.ANIMATION_DURATION = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [65, 31]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [77, 27, 3718]);

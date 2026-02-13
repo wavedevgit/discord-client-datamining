@@ -17,7 +17,7 @@ public abstract class h4 {
     public /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final /* synthetic */ int[] f42958a;
+        public static final /* synthetic */ int[] f43526a;
 
         static {
             int[] iArr = new int[StyleElements.PositionType.values().length];
@@ -33,7 +33,7 @@ public abstract class h4 {
                 iArr[StyleElements.PositionType.END.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
-            f42958a = iArr;
+            f43526a = iArr;
         }
     }
 
@@ -105,7 +105,7 @@ public abstract class h4 {
         if (justification != null && (layoutParams instanceof ConstraintLayout.LayoutParams)) {
             ConstraintLayout.LayoutParams layoutParams2 = (ConstraintLayout.LayoutParams) layoutParams;
             ((ViewGroup.MarginLayoutParams) layoutParams2).width = -2;
-            int i10 = a.f42958a[justification.ordinal()];
+            int i10 = a.f43526a[justification.ordinal()];
             if (i10 != 1) {
                 if (i10 != 2) {
                     if (i10 == 3) {
@@ -122,6 +122,6 @@ public abstract class h4 {
             layoutParams2.G = f10;
         }
         imageView.setLayoutParams(layoutParams);
-        return Unit.f31988a;
+        return Unit.f32556a;
     }
 }

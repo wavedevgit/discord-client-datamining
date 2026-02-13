@@ -5,10 +5,10 @@ import java.util.List;
 public class r extends cw.a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final aw.t f55275a = new aw.t();
+    private final aw.t f55843a = new aw.t();
 
     /* renamed from: b  reason: collision with root package name */
-    private o f55276b = new o();
+    private o f55844b = new o();
 
     @Override // cw.a, cw.d
     public boolean c() {
@@ -17,18 +17,18 @@ public class r extends cw.a {
 
     @Override // cw.d
     public aw.a d() {
-        return this.f55275a;
+        return this.f55843a;
     }
 
     @Override // cw.a, cw.d
     public void e(CharSequence charSequence) {
-        this.f55276b.f(charSequence);
+        this.f55844b.f(charSequence);
     }
 
     @Override // cw.a, cw.d
     public void f() {
-        if (this.f55276b.d().length() == 0) {
-            this.f55275a.l();
+        if (this.f55844b.d().length() == 0) {
+            this.f55843a.l();
         }
     }
 
@@ -42,17 +42,17 @@ public class r extends cw.a {
 
     @Override // cw.a, cw.d
     public void h(bw.a aVar) {
-        CharSequence d10 = this.f55276b.d();
+        CharSequence d10 = this.f55844b.d();
         if (d10.length() > 0) {
-            aVar.a(d10.toString(), this.f55275a);
+            aVar.a(d10.toString(), this.f55843a);
         }
     }
 
     public CharSequence i() {
-        return this.f55276b.d();
+        return this.f55844b.d();
     }
 
     public List j() {
-        return this.f55276b.c();
+        return this.f55844b.c();
     }
 }

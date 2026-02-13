@@ -10,16 +10,16 @@ import kotlin.jvm.internal.Intrinsics;
 public final class b extends d implements EnumEntries, Serializable {
 
     /* renamed from: e  reason: collision with root package name */
-    private final Enum[] f27662e;
+    private final Enum[] f28230e;
 
     public b(Enum[] entries) {
         Intrinsics.checkNotNullParameter(entries, "entries");
-        this.f27662e = entries;
+        this.f28230e = entries;
     }
 
     @Override // kotlin.collections.b
     public int c() {
-        return this.f27662e.length;
+        return this.f28230e.length;
     }
 
     @Override // kotlin.collections.b, java.util.Collection, java.util.List
@@ -32,7 +32,7 @@ public final class b extends d implements EnumEntries, Serializable {
 
     public boolean e(Enum element) {
         Intrinsics.checkNotNullParameter(element, "element");
-        if (((Enum) i.c0(this.f27662e, element.ordinal())) == element) {
+        if (((Enum) i.c0(this.f28230e, element.ordinal())) == element) {
             return true;
         }
         return false;
@@ -41,14 +41,14 @@ public final class b extends d implements EnumEntries, Serializable {
     @Override // kotlin.collections.d, java.util.List
     /* renamed from: f */
     public Enum get(int i10) {
-        d.f32022d.b(i10, this.f27662e.length);
-        return this.f27662e[i10];
+        d.f32590d.b(i10, this.f28230e.length);
+        return this.f28230e[i10];
     }
 
     public int g(Enum element) {
         Intrinsics.checkNotNullParameter(element, "element");
         int ordinal = element.ordinal();
-        if (((Enum) i.c0(this.f27662e, ordinal)) == element) {
+        if (((Enum) i.c0(this.f28230e, ordinal)) == element) {
             return ordinal;
         }
         return -1;

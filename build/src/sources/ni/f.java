@@ -22,43 +22,43 @@ import java.util.concurrent.atomic.AtomicInteger;
 public final class f {
 
     /* renamed from: o */
-    private static final Map f37903o = new HashMap();
+    private static final Map f38471o = new HashMap();
 
     /* renamed from: a */
-    private final Context f37904a;
+    private final Context f38472a;
 
     /* renamed from: b */
-    private final t0 f37905b;
+    private final t0 f38473b;
 
     /* renamed from: c */
-    private final String f37906c;
+    private final String f38474c;
 
     /* renamed from: g */
-    private boolean f37910g;
+    private boolean f38478g;
 
     /* renamed from: h */
-    private final Intent f37911h;
+    private final Intent f38479h;
 
     /* renamed from: i */
-    private final a1 f37912i;
+    private final a1 f38480i;
 
     /* renamed from: m */
-    private ServiceConnection f37916m;
+    private ServiceConnection f38484m;
 
     /* renamed from: n */
-    private IInterface f37917n;
+    private IInterface f38485n;
 
     /* renamed from: d */
-    private final List f37907d = new ArrayList();
+    private final List f38475d = new ArrayList();
 
     /* renamed from: e */
-    private final Set f37908e = new HashSet();
+    private final Set f38476e = new HashSet();
 
     /* renamed from: f */
-    private final Object f37909f = new Object();
+    private final Object f38477f = new Object();
 
     /* renamed from: k */
-    private final IBinder.DeathRecipient f37914k = new IBinder.DeathRecipient() { // from class: ni.v0
+    private final IBinder.DeathRecipient f38482k = new IBinder.DeathRecipient() { // from class: ni.v0
         @Override // android.os.IBinder.DeathRecipient
         public final void binderDied() {
             f.k(f.this);
@@ -66,34 +66,34 @@ public final class f {
     };
 
     /* renamed from: l */
-    private final AtomicInteger f37915l = new AtomicInteger(0);
+    private final AtomicInteger f38483l = new AtomicInteger(0);
 
     /* renamed from: j */
-    private final WeakReference f37913j = new WeakReference(null);
+    private final WeakReference f38481j = new WeakReference(null);
 
     public f(Context context, t0 t0Var, String str, Intent intent, a1 a1Var, z0 z0Var) {
-        this.f37904a = context;
-        this.f37905b = t0Var;
-        this.f37906c = str;
-        this.f37911h = intent;
-        this.f37912i = a1Var;
+        this.f38472a = context;
+        this.f38473b = t0Var;
+        this.f38474c = str;
+        this.f38479h = intent;
+        this.f38480i = a1Var;
     }
 
     public static /* synthetic */ void k(f fVar) {
-        fVar.f37905b.c("reportBinderDeath", new Object[0]);
-        android.support.v4.media.session.b.a(fVar.f37913j.get());
-        fVar.f37905b.c("%s : Binder has died.", fVar.f37906c);
-        for (u0 u0Var : fVar.f37907d) {
+        fVar.f38473b.c("reportBinderDeath", new Object[0]);
+        android.support.v4.media.session.b.a(fVar.f38481j.get());
+        fVar.f38473b.c("%s : Binder has died.", fVar.f38474c);
+        for (u0 u0Var : fVar.f38475d) {
             u0Var.a(fVar.w());
         }
-        fVar.f37907d.clear();
-        synchronized (fVar.f37909f) {
+        fVar.f38475d.clear();
+        synchronized (fVar.f38477f) {
             fVar.x();
         }
     }
 
     public static /* bridge */ /* synthetic */ void o(f fVar, final zg.k kVar) {
-        fVar.f37908e.add(kVar);
+        fVar.f38476e.add(kVar);
         kVar.a().addOnCompleteListener(new OnCompleteListener() { // from class: ni.w0
             @Override // com.google.android.gms.tasks.OnCompleteListener
             public final void onComplete(Task task) {
@@ -103,64 +103,64 @@ public final class f {
     }
 
     public static /* bridge */ /* synthetic */ void q(f fVar, u0 u0Var) {
-        if (fVar.f37917n == null && !fVar.f37910g) {
-            fVar.f37905b.c("Initiate binding to the service.", new Object[0]);
-            fVar.f37907d.add(u0Var);
+        if (fVar.f38485n == null && !fVar.f38478g) {
+            fVar.f38473b.c("Initiate binding to the service.", new Object[0]);
+            fVar.f38475d.add(u0Var);
             e eVar = new e(fVar, null);
-            fVar.f37916m = eVar;
-            fVar.f37910g = true;
-            if (!fVar.f37904a.bindService(fVar.f37911h, eVar, 1)) {
-                fVar.f37905b.c("Failed to bind to the service.", new Object[0]);
-                fVar.f37910g = false;
-                for (u0 u0Var2 : fVar.f37907d) {
+            fVar.f38484m = eVar;
+            fVar.f38478g = true;
+            if (!fVar.f38472a.bindService(fVar.f38479h, eVar, 1)) {
+                fVar.f38473b.c("Failed to bind to the service.", new Object[0]);
+                fVar.f38478g = false;
+                for (u0 u0Var2 : fVar.f38475d) {
                     u0Var2.a(new g());
                 }
-                fVar.f37907d.clear();
+                fVar.f38475d.clear();
             }
-        } else if (fVar.f37910g) {
-            fVar.f37905b.c("Waiting to bind to the service.", new Object[0]);
-            fVar.f37907d.add(u0Var);
+        } else if (fVar.f38478g) {
+            fVar.f38473b.c("Waiting to bind to the service.", new Object[0]);
+            fVar.f38475d.add(u0Var);
         } else {
             u0Var.run();
         }
     }
 
     public static /* bridge */ /* synthetic */ void r(f fVar) {
-        fVar.f37905b.c("linkToDeath", new Object[0]);
+        fVar.f38473b.c("linkToDeath", new Object[0]);
         try {
-            fVar.f37917n.asBinder().linkToDeath(fVar.f37914k, 0);
+            fVar.f38485n.asBinder().linkToDeath(fVar.f38482k, 0);
         } catch (RemoteException e10) {
-            fVar.f37905b.b(e10, "linkToDeath failed", new Object[0]);
+            fVar.f38473b.b(e10, "linkToDeath failed", new Object[0]);
         }
     }
 
     public static /* bridge */ /* synthetic */ void s(f fVar) {
-        fVar.f37905b.c("unlinkToDeath", new Object[0]);
-        fVar.f37917n.asBinder().unlinkToDeath(fVar.f37914k, 0);
+        fVar.f38473b.c("unlinkToDeath", new Object[0]);
+        fVar.f38485n.asBinder().unlinkToDeath(fVar.f38482k, 0);
     }
 
     private final RemoteException w() {
-        return new RemoteException(String.valueOf(this.f37906c).concat(" : Binder has died."));
+        return new RemoteException(String.valueOf(this.f38474c).concat(" : Binder has died."));
     }
 
     public final void x() {
-        for (zg.k kVar : this.f37908e) {
+        for (zg.k kVar : this.f38476e) {
             kVar.d(w());
         }
-        this.f37908e.clear();
+        this.f38476e.clear();
     }
 
     public final Handler c() {
         Handler handler;
-        Map map = f37903o;
+        Map map = f38471o;
         synchronized (map) {
             try {
-                if (!map.containsKey(this.f37906c)) {
-                    HandlerThread handlerThread = new HandlerThread(this.f37906c, 10);
+                if (!map.containsKey(this.f38474c)) {
+                    HandlerThread handlerThread = new HandlerThread(this.f38474c, 10);
                     handlerThread.start();
-                    map.put(this.f37906c, new Handler(handlerThread.getLooper()));
+                    map.put(this.f38474c, new Handler(handlerThread.getLooper()));
                 }
-                handler = (Handler) map.get(this.f37906c);
+                handler = (Handler) map.get(this.f38474c);
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -169,7 +169,7 @@ public final class f {
     }
 
     public final IInterface e() {
-        return this.f37917n;
+        return this.f38485n;
     }
 
     public final void t(u0 u0Var, zg.k kVar) {
@@ -177,14 +177,14 @@ public final class f {
     }
 
     public final /* synthetic */ void u(zg.k kVar, Task task) {
-        synchronized (this.f37909f) {
-            this.f37908e.remove(kVar);
+        synchronized (this.f38477f) {
+            this.f38476e.remove(kVar);
         }
     }
 
     public final void v(zg.k kVar) {
-        synchronized (this.f37909f) {
-            this.f37908e.remove(kVar);
+        synchronized (this.f38477f) {
+            this.f38476e.remove(kVar);
         }
         c().post(new y0(this));
     }

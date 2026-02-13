@@ -18,16 +18,16 @@ import kotlinx.serialization.encoding.Encoder;
 public final class b extends tt.b {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final b f43181a = new b();
+    public static final b f43749a = new b();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final Lazy f43182b = l.a(o.f6082e, a.f43183d);
+    private static final Lazy f43750b = l.a(o.f6082e, a.f43751d);
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     static final class a extends Lambda implements Function0 {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final a f43183d = new a();
+        public static final a f43751d = new a();
 
         a() {
             super(0);
@@ -36,7 +36,7 @@ public final class b extends tt.b {
         @Override // kotlin.jvm.functions.Function0
         /* renamed from: a */
         public final SealedClassSerializer invoke() {
-            return new SealedClassSerializer("kotlinx.datetime.DateTimeUnit", Reflection.getOrCreateKotlinClass(jt.c.class), new KClass[]{Reflection.getOrCreateKotlinClass(c.C0437c.class), Reflection.getOrCreateKotlinClass(c.d.class), Reflection.getOrCreateKotlinClass(c.e.class)}, new KSerializer[]{d.f43184a, h.f43194a, i.f43198a});
+            return new SealedClassSerializer("kotlinx.datetime.DateTimeUnit", Reflection.getOrCreateKotlinClass(jt.c.class), new KClass[]{Reflection.getOrCreateKotlinClass(c.C0437c.class), Reflection.getOrCreateKotlinClass(c.d.class), Reflection.getOrCreateKotlinClass(c.e.class)}, new KSerializer[]{d.f43752a, h.f43762a, i.f43766a});
         }
     }
 
@@ -44,7 +44,7 @@ public final class b extends tt.b {
     }
 
     private final SealedClassSerializer g() {
-        return (SealedClassSerializer) f43182b.getValue();
+        return (SealedClassSerializer) f43750b.getValue();
     }
 
     @Override // tt.b

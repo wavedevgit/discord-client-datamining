@@ -58,7 +58,7 @@ public final class VoiceMessagePlaybackFailedData implements ReactEvent {
 
     public static final /* synthetic */ void write$Self$chat_release(VoiceMessagePlaybackFailedData voiceMessagePlaybackFailedData, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
         compositeEncoder.k(serialDescriptor, 0, MessageId$$serializer.INSTANCE, MessageId.m1084boximpl(voiceMessagePlaybackFailedData.messageId));
-        compositeEncoder.o(serialDescriptor, 1, n2.f50033a, voiceMessagePlaybackFailedData.errorMessage);
+        compositeEncoder.o(serialDescriptor, 1, n2.f50601a, voiceMessagePlaybackFailedData.errorMessage);
     }
 
     @NotNull

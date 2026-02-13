@@ -24,21 +24,21 @@ import kotlin.jvm.internal.Intrinsics;
 public final class o1 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ViewGroup f56837a;
+    private final ViewGroup f57405a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Lazy f56838b;
+    private final Lazy f57406b;
 
     /* renamed from: c  reason: collision with root package name */
-    private boolean f56839c;
+    private boolean f57407c;
 
     /* renamed from: d  reason: collision with root package name */
-    private Function2 f56840d;
+    private Function2 f57408d;
 
     public o1(ViewGroup contentView) {
         Intrinsics.checkNotNullParameter(contentView, "contentView");
-        this.f56837a = contentView;
-        this.f56838b = as.l.b(new Function0() { // from class: zq.i1
+        this.f57405a = contentView;
+        this.f57406b = as.l.b(new Function0() { // from class: zq.i1
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 ar.b j10;
@@ -92,19 +92,19 @@ public final class o1 {
     }
 
     private final ar.b i() {
-        return (ar.b) this.f56838b.getValue();
+        return (ar.b) this.f57406b.getValue();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final ar.b j(o1 o1Var) {
-        return ar.b.c(LayoutInflater.from(o1Var.f56837a.getContext()), o1Var.f56837a, true);
+        return ar.b.c(LayoutInflater.from(o1Var.f57405a.getContext()), o1Var.f57405a, true);
     }
 
     private final void k(StepStyles.UiStepStyle uiStepStyle, gn.a0 a0Var) {
-        if (this.f56839c) {
+        if (this.f57407c) {
             return;
         }
-        this.f56839c = true;
+        this.f57407c = true;
         final BottomSheetBehavior q02 = BottomSheetBehavior.q0(i().f6040b);
         Intrinsics.checkNotNullExpressionValue(q02, "from(...)");
         Function0 function0 = new Function0() { // from class: zq.k1
@@ -144,13 +144,13 @@ public final class o1 {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit l(o1 o1Var) {
-        Function2 function2 = o1Var.f56840d;
+        Function2 function2 = o1Var.f57408d;
         if (function2 != null) {
             function2.invoke(Boolean.TRUE, null);
         }
-        o1Var.f56840d = null;
+        o1Var.f57408d = null;
         o1Var.i().f6046h.f();
-        return Unit.f31988a;
+        return Unit.f32556a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -165,11 +165,11 @@ public final class o1 {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void o(o1 o1Var, BottomSheetBehavior bottomSheetBehavior, View view) {
-        Function2 function2 = o1Var.f56840d;
+        Function2 function2 = o1Var.f57408d;
         if (function2 != null) {
             function2.invoke(Boolean.FALSE, o1Var.i().f6046h.i());
         }
-        o1Var.f56840d = null;
+        o1Var.f57408d = null;
         bottomSheetBehavior.c1(5);
     }
 
@@ -181,7 +181,7 @@ public final class o1 {
     }
 
     public final boolean h() {
-        if (!this.f56838b.isInitialized()) {
+        if (!this.f57406b.isInitialized()) {
             return false;
         }
         BottomSheetBehavior q02 = BottomSheetBehavior.q0(i().f6040b);
@@ -200,7 +200,7 @@ public final class o1 {
         Intrinsics.checkNotNullParameter(viewEnvironment, "viewEnvironment");
         Intrinsics.checkNotNullParameter(onComplete, "onComplete");
         k(uiStepStyle, viewEnvironment);
-        this.f56840d = onComplete;
+        this.f57408d = onComplete;
         i().f6046h.f();
         TextView textView = i().f6048j;
         ESignature.Attributes attributes = config.getAttributes();

@@ -65,7 +65,7 @@ final class b extends i {
 
         @Override // dd.g
         public void c(long j10) {
-            long[] jArr = this.f21580b.f50704a;
+            long[] jArr = this.f21580b.f51272a;
             this.f21582d = jArr[w0.i(jArr, j10, true, true)];
         }
 

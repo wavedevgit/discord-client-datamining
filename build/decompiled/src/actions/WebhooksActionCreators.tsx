@@ -185,15 +185,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.fetchForChannel = var6;
     var6 = function arg0, arg1, arg2() {
-        _fun109948: for (var _fun109948_ip = 0;;) switch (_fun109948_ip) {
+        _fun109925: for (var _fun109925_ip = 0;;) switch (_fun109925_ip) {
             case 0:
                 var5 = arg2;
                 var1 = arg0;
                 var _closure2_slot0 = var1;
                 var1 = null;
                 if (!(var1 == var5)) {
-                    _fun109948_ip = 77;
-                    continue _fun109948
+                    _fun109925_ip = 77;
+                    continue _fun109925
                 }
             case 18:
                 var2 = _closure1_slot4;
@@ -360,4 +360,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 806, 507, 22, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 807, 507, 22, 2]);

@@ -1,43 +1,55 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var3 = metroImportDefault;
+    var4 = require;
     var2 = exports;
-    var11 = dependencyMap;
+    var3 = dependencyMap;
+    var _closure1_slot0 = var4;
+    var _closure1_slot1 = var3;
     var0 = global;
-    var5 = var0.Object;
-    var4 = var5.defineProperty;
-    var1 = {};
-    var7 = true;
-    var1.value = var7;
+    var7 = var0.Object;
+    var6 = var7.defineProperty;
+    var5 = {};
+    var0 = true;
+    var5.value = var0;
     var0 = '__esModule';
-    var0 = var4.bind(var5)(var2, var0, var1);
+    var0 = var6.bind(var7)(var2, var0, var5);
     var0 = 0;
-    var1 = var11[var0];
+    var3 = var3[var0];
     var0 = undefined;
-    var10 = var3.bind(var0)(var1);
-    var4 = ['maxDurationMs', 'maxDelayMs', 'numberOfTaps', 'maxDeltaX', 'maxDeltaY', 'maxDist', 'minPointers'];
-    var1 = 1;
-    var1 = var11[var1];
-    var5 = var3.bind(var0)(var1);
-    var1 = {};
-    var3 = 'TapGestureHandler';
-    var1.name = var3;
-    var9 = new Array(0);
-    var8 = var9.concat;
-    var6 = 2;
-    var11 = var11[var6];
-    var6 = require;
-    var6 = var6.bind(var0)(var11);
-    var6 = var6.baseGestureHandlerProps;
-    var6 = var10.bind(var0)(var6);
-    var6 = var8.bind(var9)(var6, var4);
-    var1.allowedProps = var6;
-    var6 = {};
-    var6.shouldCancelWhenOutside = var7;
-    var1.config = var6;
-    var1 = var5.bind(var0)(var1);
-    var2.tapGestureHandlerProps = var4;
-    var2.tapHandlerName = var3;
-    var2.TapGestureHandler = var1;
+    var3 = var4.bind(var0)(var3);
+    var3 = var3.useContext;
+    var _closure1_slot2 = var3;
+    var1 = function arg0() {
+        _fun44851: for (var _fun44851_ip = 0;;) switch (_fun44851_ip) {
+            case 0:
+                var2 = _closure1_slot2;
+                var3 = _closure1_slot0;
+                var1 = _closure1_slot1;
+                var0 = 1;
+                var0 = var1[var0];
+                var1 = undefined;
+                var0 = var3.bind(var1)(var0);
+                var0 = var0.BottomSheetModalInternalContext;
+                var0 = var2.bind(var1)(var0);
+                var2 = true;
+                var1 = arg0;
+                if (!(var2 !== var1)) {
+                    _fun44851_ip = 55;
+                    continue _fun44851
+                }
+            case 49:
+                var1 = null;
+                if (!(var1 !== var0)) {
+                    _fun44851_ip = 57;
+                    continue _fun44851
+                }
+            case 55:
+                return var0;
+            case 57:
+                var0 = "'BottomSheetModalInternalContext' cannot be null!";
+                throw var0;
+        }
+    };
+    var2.useBottomSheetModalInternal = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [65, 4956, 4954]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 4951]);

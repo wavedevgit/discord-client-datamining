@@ -40,8 +40,8 @@ public /* synthetic */ class StallReport$$serializer implements h0 {
     @Override // tt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        n2 n2Var = n2.f50033a;
-        return new KSerializer[]{p0.f50049a, n2Var, a.u(n2Var)};
+        n2 n2Var = n2.f50601a;
+        return new KSerializer[]{p0.f50617a, n2Var, a.u(n2Var)};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -57,7 +57,7 @@ public /* synthetic */ class StallReport$$serializer implements h0 {
         if (b10.p()) {
             i10 = b10.i(serialDescriptor, 0);
             String m10 = b10.m(serialDescriptor, 1);
-            str2 = (String) b10.n(serialDescriptor, 2, n2.f50033a, null);
+            str2 = (String) b10.n(serialDescriptor, 2, n2.f50601a, null);
             str = m10;
             i11 = 7;
         } else {
@@ -79,7 +79,7 @@ public /* synthetic */ class StallReport$$serializer implements h0 {
                 } else if (o10 != 2) {
                     throw new b0(o10);
                 } else {
-                    str4 = (String) b10.n(serialDescriptor, 2, n2.f50033a, str4);
+                    str4 = (String) b10.n(serialDescriptor, 2, n2.f50601a, str4);
                     i12 |= 4;
                 }
             }

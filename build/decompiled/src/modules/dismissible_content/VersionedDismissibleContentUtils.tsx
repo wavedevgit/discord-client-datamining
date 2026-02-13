@@ -36,7 +36,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/dismissible_content/VersionedDismissibleContentUtils.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun15758: for (var _fun15758_ip = 0;;) switch (_fun15758_ip) {
+        _fun15764: for (var _fun15764_ip = 0;;) switch (_fun15764_ip) {
             case 0:
                 var5 = arg0;
                 var3 = _closure1_slot0;
@@ -48,8 +48,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2.DismissibleContent;
                 var2 = var2.COLLECTIBLES_SHOP_ENTRY_MARKETING;
                 if (!(var2 !== var5)) {
-                    _fun15758_ip = 572;
-                    continue _fun15758
+                    _fun15764_ip = 572;
+                    continue _fun15764
                 }
             case 47:
                 var3 = _closure1_slot0;
@@ -59,8 +59,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2.DismissibleContent;
                 var2 = var2.GIFTING_PROMOTION_ICON;
                 if (!(var2 !== var5)) {
-                    _fun15758_ip = 540;
-                    continue _fun15758
+                    _fun15764_ip = 540;
+                    continue _fun15764
                 }
             case 83:
                 var3 = _closure1_slot0;
@@ -70,8 +70,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2.DismissibleContent;
                 var2 = var2.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK;
                 if (!(var2 !== var5)) {
-                    _fun15758_ip = 540;
-                    continue _fun15758
+                    _fun15764_ip = 540;
+                    continue _fun15764
                 }
             case 119:
                 var3 = _closure1_slot0;
@@ -81,8 +81,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2.DismissibleContent;
                 var2 = var2.GIFTING_PROMOTION_MOBILE_FIRST_TIME_HALFSHEET;
                 if (!(var2 !== var5)) {
-                    _fun15758_ip = 540;
-                    continue _fun15758
+                    _fun15764_ip = 540;
+                    continue _fun15764
                 }
             case 155:
                 var3 = _closure1_slot0;
@@ -92,8 +92,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2.DismissibleContent;
                 var2 = var2.GIFTING_PROMOTION_REMINDER;
                 if (!(var2 !== var5)) {
-                    _fun15758_ip = 540;
-                    continue _fun15758
+                    _fun15764_ip = 540;
+                    continue _fun15764
                 }
             case 191:
                 var3 = _closure1_slot0;
@@ -103,8 +103,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2.DismissibleContent;
                 var2 = var2.ACTIVITIES_VOICE_LAUNCHER_BADGE;
                 if (!(var2 !== var5)) {
-                    _fun15758_ip = 457;
-                    continue _fun15758
+                    _fun15764_ip = 457;
+                    continue _fun15764
                 }
             case 227:
                 var3 = _closure1_slot0;
@@ -114,8 +114,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2.DismissibleContent;
                 var2 = var2.GUILD_POWERUP_NEW_PERK_AVAILABLE_COACHMARK;
                 if (!(var2 !== var5)) {
-                    _fun15758_ip = 453;
-                    continue _fun15758
+                    _fun15764_ip = 453;
+                    continue _fun15764
                 }
             case 263:
                 var3 = _closure1_slot0;
@@ -125,8 +125,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2.DismissibleContent;
                 var2 = var2.COLLECTIBLES_SHOP_WIDE_BANNER;
                 if (!(var2 !== var5)) {
-                    _fun15758_ip = 421;
-                    continue _fun15758
+                    _fun15764_ip = 421;
+                    continue _fun15764
                 }
             case 299:
                 var3 = _closure1_slot0;
@@ -136,8 +136,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2.DismissibleContent;
                 var2 = var2.GAME_SHOP_ANNOUNCEMENT_MODAL;
                 if (!(var2 !== var5)) {
-                    _fun15758_ip = 415;
-                    continue _fun15758
+                    _fun15764_ip = 415;
+                    continue _fun15764
                 }
             case 332:
                 var3 = _closure1_slot0;
@@ -147,8 +147,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2.DismissibleContent;
                 var2 = var2.COLLECTIBLES_SHOP_MARVEL_RIVALS_ORBS_REWARD;
                 if (!(var2 !== var5)) {
-                    _fun15758_ip = 410;
-                    continue _fun15758
+                    _fun15764_ip = 410;
+                    continue _fun15764
                 }
             case 365:
                 var3 = _closure1_slot0;
@@ -225,8 +225,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var0 == var2;
                 var1 = undefined;
                 if (var3) {
-                    _fun15758_ip = 636;
-                    continue _fun15758
+                    _fun15764_ip = 636;
+                    continue _fun15764
                 }
             case 630:
                 var1 = var2.version;
@@ -234,8 +234,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var0 != var1;
                 var0 = 0;
                 if (!var2) {
-                    _fun15758_ip = 648;
-                    continue _fun15758
+                    _fun15764_ip = 648;
+                    continue _fun15764
                 }
             case 645:
                 var0 = var1;
@@ -245,4 +245,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getVersionedDismissibleContentCurrentVersion = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1371, 4652, 3492, 1358, 12667, 7601, 12668, 1647, 12669, 1385, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1371, 4650, 3492, 1358, 12657, 9600, 12658, 1650, 12659, 1385, 2]);

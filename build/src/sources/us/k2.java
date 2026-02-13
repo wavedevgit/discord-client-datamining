@@ -8,16 +8,16 @@ import us.j2;
 public class k2 implements Function0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final j2.c f51086d;
+    private final j2.c f51654d;
 
     public k2(j2.c cVar) {
-        this.f51086d = cVar;
+        this.f51654d = cVar;
     }
 
     @Override // kotlin.jvm.functions.Function0
     public Object invoke() {
         PropertyGetterDescriptor N;
-        N = j2.c.N(this.f51086d);
+        N = j2.c.N(this.f51654d);
         return N;
     }
 }

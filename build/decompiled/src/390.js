@@ -635,14 +635,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var2 = var1.props;
                             var2 = var2.onLayout;
                             if (!var2) {
-                                _fun5726_ip = 145;
+                                _fun5726_ip = 143;
                                 continue _fun5726
                             }
-                        case 129:
+                        case 127:
                             var2 = var1.props;
                             var1 = var2.onLayout;
                             var1 = var1.bind(var2)(var3);
-                        case 145:
+                        case 143:
                             return var0;
                     }
                 };

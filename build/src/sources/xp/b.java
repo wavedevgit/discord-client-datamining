@@ -14,55 +14,55 @@ import wp.x0;
 public final class b implements ViewBinding {
 
     /* renamed from: a  reason: collision with root package name */
-    private final View f55081a;
+    private final View f55649a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final View f55082b;
+    public final View f55650b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final Pi2CircleMaskView f55083c;
+    public final Pi2CircleMaskView f55651c;
 
     /* renamed from: d  reason: collision with root package name */
-    public final ThemeableLottieAnimationView f55084d;
+    public final ThemeableLottieAnimationView f55652d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final ImageView f55085e;
+    public final ImageView f55653e;
 
     /* renamed from: f  reason: collision with root package name */
-    public final View f55086f;
+    public final View f55654f;
 
     /* renamed from: g  reason: collision with root package name */
-    public final View f55087g;
+    public final View f55655g;
 
     /* renamed from: h  reason: collision with root package name */
-    public final Pi2ProgressArcView f55088h;
+    public final Pi2ProgressArcView f55656h;
 
     private b(View view, View view2, Pi2CircleMaskView pi2CircleMaskView, ThemeableLottieAnimationView themeableLottieAnimationView, ImageView imageView, View view3, View view4, Pi2ProgressArcView pi2ProgressArcView) {
-        this.f55081a = view;
-        this.f55082b = view2;
-        this.f55083c = pi2CircleMaskView;
-        this.f55084d = themeableLottieAnimationView;
-        this.f55085e = imageView;
-        this.f55086f = view3;
-        this.f55087g = view4;
-        this.f55088h = pi2ProgressArcView;
+        this.f55649a = view;
+        this.f55650b = view2;
+        this.f55651c = pi2CircleMaskView;
+        this.f55652d = themeableLottieAnimationView;
+        this.f55653e = imageView;
+        this.f55654f = view3;
+        this.f55655g = view4;
+        this.f55656h = pi2ProgressArcView;
     }
 
     public static b a(View view) {
         View a10;
         View a11;
-        int i10 = w0.f53478d;
+        int i10 = w0.f54046d;
         View a12 = e4.a.a(view, i10);
         if (a12 != null) {
-            i10 = w0.f53485k;
+            i10 = w0.f54053k;
             Pi2CircleMaskView pi2CircleMaskView = (Pi2CircleMaskView) e4.a.a(view, i10);
             if (pi2CircleMaskView != null) {
-                i10 = w0.f53492r;
+                i10 = w0.f54060r;
                 ThemeableLottieAnimationView themeableLottieAnimationView = (ThemeableLottieAnimationView) e4.a.a(view, i10);
                 if (themeableLottieAnimationView != null) {
-                    i10 = w0.f53493s;
+                    i10 = w0.f54061s;
                     ImageView imageView = (ImageView) e4.a.a(view, i10);
-                    if (imageView != null && (a10 = e4.a.a(view, (i10 = w0.f53497w))) != null && (a11 = e4.a.a(view, (i10 = w0.f53499y))) != null) {
+                    if (imageView != null && (a10 = e4.a.a(view, (i10 = w0.f54065w))) != null && (a11 = e4.a.a(view, (i10 = w0.f54067y))) != null) {
                         i10 = w0.L;
                         Pi2ProgressArcView pi2ProgressArcView = (Pi2ProgressArcView) e4.a.a(view, i10);
                         if (pi2ProgressArcView != null) {
@@ -77,7 +77,7 @@ public final class b implements ViewBinding {
 
     public static b b(LayoutInflater layoutInflater, ViewGroup viewGroup) {
         if (viewGroup != null) {
-            layoutInflater.inflate(x0.f53514b, viewGroup);
+            layoutInflater.inflate(x0.f54082b, viewGroup);
             return a(viewGroup);
         }
         throw new NullPointerException("parent");
@@ -85,6 +85,6 @@ public final class b implements ViewBinding {
 
     @Override // androidx.viewbinding.ViewBinding
     public View getRoot() {
-        return this.f55081a;
+        return this.f55649a;
     }
 }

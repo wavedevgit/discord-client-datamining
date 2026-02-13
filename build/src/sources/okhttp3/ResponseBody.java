@@ -28,33 +28,33 @@ public abstract class ResponseBody implements Closeable {
         public static final class a extends ResponseBody {
 
             /* renamed from: d  reason: collision with root package name */
-            final /* synthetic */ MediaType f40412d;
+            final /* synthetic */ MediaType f40980d;
 
             /* renamed from: e  reason: collision with root package name */
-            final /* synthetic */ long f40413e;
+            final /* synthetic */ long f40981e;
 
             /* renamed from: i  reason: collision with root package name */
-            final /* synthetic */ BufferedSource f40414i;
+            final /* synthetic */ BufferedSource f40982i;
 
             a(MediaType mediaType, long j10, BufferedSource bufferedSource) {
-                this.f40412d = mediaType;
-                this.f40413e = j10;
-                this.f40414i = bufferedSource;
+                this.f40980d = mediaType;
+                this.f40981e = j10;
+                this.f40982i = bufferedSource;
             }
 
             @Override // okhttp3.ResponseBody
             public long contentLength() {
-                return this.f40413e;
+                return this.f40981e;
             }
 
             @Override // okhttp3.ResponseBody
             public MediaType contentType() {
-                return this.f40412d;
+                return this.f40980d;
             }
 
             @Override // okhttp3.ResponseBody
             public BufferedSource source() {
-                return this.f40414i;
+                return this.f40982i;
             }
         }
 
@@ -75,7 +75,7 @@ public abstract class ResponseBody implements Closeable {
             if (mediaType != null) {
                 Charset d10 = MediaType.d(mediaType, null, 1, null);
                 if (d10 == null) {
-                    MediaType.a aVar = MediaType.f40298e;
+                    MediaType.a aVar = MediaType.f40866e;
                     mediaType = aVar.c(mediaType + "; charset=utf-8");
                 } else {
                     charset = d10;
@@ -128,48 +128,48 @@ public abstract class ResponseBody implements Closeable {
     public static final class a extends Reader {
 
         /* renamed from: d  reason: collision with root package name */
-        private final BufferedSource f40415d;
+        private final BufferedSource f40983d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final Charset f40416e;
+        private final Charset f40984e;
 
         /* renamed from: i  reason: collision with root package name */
-        private boolean f40417i;
+        private boolean f40985i;
 
         /* renamed from: o  reason: collision with root package name */
-        private Reader f40418o;
+        private Reader f40986o;
 
         public a(BufferedSource source, Charset charset) {
             Intrinsics.checkNotNullParameter(source, "source");
             Intrinsics.checkNotNullParameter(charset, "charset");
-            this.f40415d = source;
-            this.f40416e = charset;
+            this.f40983d = source;
+            this.f40984e = charset;
         }
 
         @Override // java.io.Reader, java.io.Closeable, java.lang.AutoCloseable
         public void close() {
             Unit unit;
-            this.f40417i = true;
-            Reader reader = this.f40418o;
+            this.f40985i = true;
+            Reader reader = this.f40986o;
             if (reader != null) {
                 reader.close();
-                unit = Unit.f31988a;
+                unit = Unit.f32556a;
             } else {
                 unit = null;
             }
             if (unit == null) {
-                this.f40415d.close();
+                this.f40983d.close();
             }
         }
 
         @Override // java.io.Reader
         public int read(char[] cbuf, int i10, int i11) {
             Intrinsics.checkNotNullParameter(cbuf, "cbuf");
-            if (!this.f40417i) {
-                Reader reader = this.f40418o;
+            if (!this.f40985i) {
+                Reader reader = this.f40986o;
                 if (reader == null) {
-                    reader = new InputStreamReader(this.f40415d.s2(), mu.e.J(this.f40415d, this.f40416e));
-                    this.f40418o = reader;
+                    reader = new InputStreamReader(this.f40983d.s2(), mu.e.J(this.f40983d, this.f40984e));
+                    this.f40986o = reader;
                 }
                 return reader.read(cbuf, i10, i11);
             }

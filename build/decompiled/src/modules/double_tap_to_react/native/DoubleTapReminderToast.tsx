@@ -118,41 +118,28 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/double_tap_to_react/native/DoubleTapReminderToast.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Environment: var1
-        _fun58065: for (var _fun58065_ip = 0;;) switch (_fun58065_ip) {
+        _fun58121: for (var _fun58121_ip = 0;;) switch (_fun58121_ip) {
             case 0:
                 var9 = arg0;
-                var4 = _closure1_slot5;
-                var2 = _closure1_slot7;
-                var1 = {};
-                var1.emoji = var9;
-                var0 = undefined;
-                var1 = var4.bind(var0)(var2, var1);
-                var _closure2_slot0 = var1;
+                var _closure2_slot0 = var9;
                 var7 = _closure1_slot0;
                 var1 = _closure1_slot2;
-                var2 = 8;
-                var2 = var1[var2];
-                var2 = var7.bind(var0)(var2);
-                var3 = var2.ToastEmoji;
-                var2 = {};
-                var2.emoji = var9;
-                var2 = var4.bind(var0)(var3, var2);
-                var _closure2_slot1 = var2;
-                var3 = 9;
+                var3 = 8;
                 var2 = var1[var3];
+                var0 = undefined;
                 var4 = var7.bind(var0)(var2);
                 var2 = var4.UNSAFE_isDismissibleContentDismissed;
-                var6 = 10;
+                var6 = 9;
                 var1 = var1[var6];
                 var1 = var7.bind(var0)(var1);
                 var1 = var1.DismissibleContent;
                 var1 = var1.DOUBLE_TAP_TO_REACT_REMINDER;
                 var1 = var2.bind(var4)(var1);
                 if (var1) {
-                    _fun58065_ip = 419;
-                    continue _fun58065
+                    _fun58121_ip = 363;
+                    continue _fun58121
                 }
-            case 131:
+            case 75:
                 var1 = _closure1_slot3;
                 var1 = var1.settings;
                 var1 = var1.textAndImages;
@@ -160,72 +147,72 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var2 == var1;
                 var11 = undefined;
                 if (var4) {
-                    _fun58065_ip = 164;
-                    continue _fun58065
+                    _fun58121_ip = 108;
+                    continue _fun58121
                 }
-            case 158:
+            case 102:
                 var11 = var1.defaultReactionEmoji;
-            case 164:
+            case 108:
                 if (!(var2 == var11)) {
-                    _fun58065_ip = 170;
-                    continue _fun58065
+                    _fun58121_ip = 114;
+                    continue _fun58121
                 }
-            case 168:
+            case 112:
                 var11 = {};
-            case 170:
+            case 114:
                 var1 = var11.disableDoubleTap;
                 var7 = var2 == var1;
                 var4 = undefined;
                 if (var7) {
-                    _fun58065_ip = 190;
-                    continue _fun58065
+                    _fun58121_ip = 134;
+                    continue _fun58121
                 }
-            case 185:
+            case 129:
                 var4 = var1.value;
-            case 190:
+            case 134:
                 var1 = var2 != var4;
                 if (!var1) {
-                    _fun58065_ip = 200;
-                    continue _fun58065
+                    _fun58121_ip = 144;
+                    continue _fun58121
                 }
-            case 197:
+            case 141:
                 var1 = var4;
-            case 200:
+            case 144:
                 var7 = _closure1_slot0;
                 var4 = _closure1_slot2;
-                var10 = 11;
+                var10 = 10;
                 var4 = var4[var10];
                 var7 = var7.bind(var0)(var4);
                 var4 = var7.disambiguatedEmojiFromProtoValue;
                 var7 = var4.bind(var7)(var11);
                 var1 = !var1;
                 if (!var1) {
-                    _fun58065_ip = 241;
-                    continue _fun58065
+                    _fun58121_ip = 185;
+                    continue _fun58121
                 }
-            case 237:
+            case 181:
                 var1 = var2 != var7;
-            case 241:
+            case 185:
                 if (!var1) {
-                    _fun58065_ip = 273;
-                    continue _fun58065
+                    _fun58121_ip = 217;
+                    continue _fun58121
                 }
-            case 244:
+            case 188:
                 var4 = _closure1_slot0;
                 var2 = _closure1_slot2;
                 var2 = var2[var10];
                 var4 = var4.bind(var0)(var2);
                 var2 = var4.areEmojisEqual;
                 var1 = var2.bind(var4)(var7, var9);
-            case 273:
+            case 217:
                 if (!var1) {
-                    _fun58065_ip = 419;
-                    continue _fun58065
+                    _fun58121_ip = 363;
+                    continue _fun58121
                 }
-            case 279:
+            case 223:
                 var4 = _closure1_slot1;
                 var1 = _closure1_slot2;
-                var2 = 12;
+                var2 = 11;
                 var2 = var1[var2];
                 var7 = var4.bind(var0)(var2);
                 var4 = var7.open;
@@ -233,12 +220,29 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = 'DOUBLE_TAP_TO_REACT_REMINDER';
                 var2.key = var9;
                 var9 = function() {
-                    var0 = _closure2_slot1;
+                    var3 = _closure1_slot5;
+                    var1 = _closure1_slot0;
+                    var2 = _closure1_slot2;
+                    var0 = 12;
+                    var0 = var2[var0];
+                    var2 = undefined;
+                    var0 = var1.bind(var2)(var0);
+                    var1 = var0.ToastEmoji;
+                    var0 = {};
+                    var4 = _closure2_slot0;
+                    var0.emoji = var4;
+                    var0 = var3.bind(var2)(var1, var0);
                     return var0;
                 };
                 var2.icon = var9;
                 var8 = function() {
+                    var3 = _closure1_slot5;
+                    var2 = _closure1_slot7;
+                    var1 = {};
                     var0 = _closure2_slot0;
+                    var1.emoji = var0;
+                    var0 = undefined;
+                    var0 = var3.bind(var0)(var2, var1);
                     return var0;
                 };
                 var2.content = var8;
@@ -260,10 +264,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = true;
                 var1.forceTrack = var5;
                 var1 = var3.bind(var4)(var2, var1);
-            case 419:
+            case 363:
                 return var0;
         }
     };
     var2.maybeShowDoubleTapReminderToast = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1310, 1369, 33, 1297, 671, 3938, 1234, 7106, 3213, 1358, 7097, 3150, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1310, 1369, 33, 1297, 671, 3938, 1235, 3216, 1358, 7085, 3153, 7094, 2]);

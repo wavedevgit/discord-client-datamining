@@ -24,7 +24,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/messages/native/renderer/system_messages/UserPremiumGuildSubscriptionSystemMessage.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun56253: for (var _fun56253_ip = 0;;) switch (_fun56253_ip) {
+        _fun56288: for (var _fun56288_ip = 0;;) switch (_fun56288_ip) {
             case 0:
                 var3 = arg0;
                 var11 = var3.message;
@@ -55,8 +55,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var17 = var5.bind(var6)(var7, var0, var15);
                 var0 = {};
                 if (!(!(var9 > var4))) {
-                    _fun56253_ip = 312;
-                    continue _fun56253
+                    _fun56288_ip = 313;
+                    continue _fun56288
                 }
             case 138:
                 var5 = _closure1_slot0;
@@ -82,32 +82,32 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var19 = 'username';
                 var13 = null;
                 if (!(var19 === var15)) {
-                    _fun56253_ip = 236;
-                    continue _fun56253
+                    _fun56288_ip = 237;
+                    continue _fun56288
                 }
-            case 233:
+            case 234:
                 var13 = var14;
-            case 236:
+            case 237:
                 var8.linkColor = var13;
                 var8.roleColor = var14;
                 var13 = null;
                 if (!var17) {
-                    _fun56253_ip = 254;
-                    continue _fun56253
+                    _fun56288_ip = 255;
+                    continue _fun56288
                 }
-            case 251:
+            case 252:
                 var13 = var16;
-            case 254:
+            case 255:
                 var8.roleColors = var13;
                 var13 = 'dot';
                 var13 = var13 === var15;
                 if (!var13) {
-                    _fun56253_ip = 274;
-                    continue _fun56253
+                    _fun56288_ip = 275;
+                    continue _fun56288
                 }
-            case 270:
+            case 271:
                 var13 = var18 != var14;
-            case 274:
+            case 275:
                 var8.shouldShowRoleDot = var13;
                 var13 = var11.channel_id;
                 var8.messageChannelId = var13;
@@ -115,9 +115,9 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8.medium = var13;
                 var4.usernameOnClick = var8;
                 var4 = var6.bind(var7)(var5, var4);
-                _fun56253_ip = 488;
-                continue _fun56253;
-            case 312:
+                _fun56288_ip = 490;
+                continue _fun56288;
+            case 313:
                 var6 = _closure1_slot0;
                 var13 = _closure1_slot2;
                 var5 = 3;
@@ -141,32 +141,32 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var18 = 'username';
                 var12 = null;
                 if (!(var18 === var15)) {
-                    _fun56253_ip = 412;
-                    continue _fun56253
+                    _fun56288_ip = 414;
+                    continue _fun56288
                 }
-            case 409:
+            case 411:
                 var12 = var14;
-            case 412:
+            case 414:
                 var10.linkColor = var12;
                 var10.roleColor = var14;
                 var12 = null;
                 if (!var17) {
-                    _fun56253_ip = 430;
-                    continue _fun56253
+                    _fun56288_ip = 432;
+                    continue _fun56288
                 }
-            case 427:
+            case 429:
                 var12 = var16;
-            case 430:
+            case 432:
                 var10.roleColors = var12;
                 var12 = 'dot';
                 var12 = var12 === var15;
                 if (!var12) {
-                    _fun56253_ip = 450;
-                    continue _fun56253
+                    _fun56288_ip = 452;
+                    continue _fun56288
                 }
-            case 446:
+            case 448:
                 var12 = var13 != var14;
-            case 450:
+            case 452:
                 var10.shouldShowRoleDot = var12;
                 var11 = var11.channel_id;
                 var10.messageChannelId = var11;
@@ -175,7 +175,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5.usernameOnClick = var10;
                 var5.numSubscriptions = var9;
                 var4 = var7.bind(var8)(var6, var5);
-            case 488:
+            case 490:
                 var0.content = var4;
                 var4 = _closure1_slot1;
                 var5 = _closure1_slot2;
@@ -190,4 +190,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.createUserPremiumGuildSubscriptionSystemMessage = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6799, 6770, 6771, 1234, 6772, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6781, 6752, 6753, 1235, 6754, 2]);

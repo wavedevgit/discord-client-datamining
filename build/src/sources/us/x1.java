@@ -28,41 +28,41 @@ import vs.n;
 public final class x1 implements kotlin.reflect.i {
 
     /* renamed from: q  reason: collision with root package name */
-    static final /* synthetic */ KProperty[] f51205q = {Reflection.property1(new PropertyReference1Impl(x1.class, "descriptor", "getDescriptor()Lorg/jetbrains/kotlin/descriptors/ParameterDescriptor;", 0)), Reflection.property1(new PropertyReference1Impl(x1.class, "annotations", "getAnnotations()Ljava/util/List;", 0))};
+    static final /* synthetic */ KProperty[] f51773q = {Reflection.property1(new PropertyReference1Impl(x1.class, "descriptor", "getDescriptor()Lorg/jetbrains/kotlin/descriptors/ParameterDescriptor;", 0)), Reflection.property1(new PropertyReference1Impl(x1.class, "annotations", "getAnnotations()Ljava/util/List;", 0))};
 
     /* renamed from: d  reason: collision with root package name */
-    private final a0 f51206d;
+    private final a0 f51774d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final int f51207e;
+    private final int f51775e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final i.a f51208i;
+    private final i.a f51776i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final z2.a f51209o;
+    private final z2.a f51777o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final z2.a f51210p;
+    private final z2.a f51778p;
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a implements Type {
 
         /* renamed from: d  reason: collision with root package name */
-        private final Type[] f51211d;
+        private final Type[] f51779d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final int f51212e;
+        private final int f51780e;
 
         public a(Type[] types) {
             Intrinsics.checkNotNullParameter(types, "types");
-            this.f51211d = types;
-            this.f51212e = Arrays.hashCode(types);
+            this.f51779d = types;
+            this.f51780e = Arrays.hashCode(types);
         }
 
         public boolean equals(Object obj) {
-            if ((obj instanceof a) && Arrays.equals(this.f51211d, ((a) obj).f51211d)) {
+            if ((obj instanceof a) && Arrays.equals(this.f51779d, ((a) obj).f51779d)) {
                 return true;
             }
             return false;
@@ -70,11 +70,11 @@ public final class x1 implements kotlin.reflect.i {
 
         @Override // java.lang.reflect.Type
         public String getTypeName() {
-            return kotlin.collections.i.v0(this.f51211d, ", ", "[", "]", 0, null, null, 56, null);
+            return kotlin.collections.i.v0(this.f51779d, ", ", "[", "]", 0, null, null, 56, null);
         }
 
         public int hashCode() {
-            return this.f51212e;
+            return this.f51780e;
         }
 
         public String toString() {
@@ -86,19 +86,19 @@ public final class x1 implements kotlin.reflect.i {
         Intrinsics.checkNotNullParameter(callable, "callable");
         Intrinsics.checkNotNullParameter(kind, "kind");
         Intrinsics.checkNotNullParameter(computeDescriptor, "computeDescriptor");
-        this.f51206d = callable;
-        this.f51207e = i10;
-        this.f51208i = kind;
-        this.f51209o = z2.c(computeDescriptor);
-        this.f51210p = z2.c(new v1(this));
+        this.f51774d = callable;
+        this.f51775e = i10;
+        this.f51776i = kind;
+        this.f51777o = z2.c(computeDescriptor);
+        this.f51778p = z2.c(new v1(this));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Type a(x1 x1Var) {
         List T0;
         ParameterDescriptor h10 = x1Var.h();
-        if ((h10 instanceof ReceiverParameterDescriptor) && Intrinsics.areEqual(j3.i(x1Var.f51206d.D()), h10) && x1Var.f51206d.D().getKind() == CallableMemberDescriptor.Kind.FAKE_OVERRIDE) {
-            DeclarationDescriptor containingDeclaration = x1Var.f51206d.D().getContainingDeclaration();
+        if ((h10 instanceof ReceiverParameterDescriptor) && Intrinsics.areEqual(j3.i(x1Var.f51774d.D()), h10) && x1Var.f51774d.D().getKind() == CallableMemberDescriptor.Kind.FAKE_OVERRIDE) {
+            DeclarationDescriptor containingDeclaration = x1Var.f51774d.D().getContainingDeclaration();
             Intrinsics.checkNotNull(containingDeclaration, "null cannot be cast to non-null type org.jetbrains.kotlin.descriptors.ClassDescriptor");
             Class q10 = j3.q((ClassDescriptor) containingDeclaration);
             if (q10 != null) {
@@ -106,9 +106,9 @@ public final class x1 implements kotlin.reflect.i {
             }
             throw new x2("Cannot determine receiver Java type of inherited declaration: " + h10);
         }
-        vs.h A = x1Var.f51206d.A();
+        vs.h A = x1Var.f51774d.A();
         if (A instanceof vs.n) {
-            if (x1Var.f51206d.G()) {
+            if (x1Var.f51774d.G()) {
                 vs.n nVar = (vs.n) A;
                 IntRange f10 = nVar.f(x1Var.getIndex() + 1);
                 int e10 = nVar.f(0).e() + 1;
@@ -144,7 +144,7 @@ public final class x1 implements kotlin.reflect.i {
     }
 
     private final ParameterDescriptor h() {
-        Object b10 = this.f51209o.b(this, f51205q[0]);
+        Object b10 = this.f51777o.b(this, f51773q[0]);
         Intrinsics.checkNotNullExpressionValue(b10, "getValue(...)");
         return (ParameterDescriptor) b10;
     }
@@ -167,7 +167,7 @@ public final class x1 implements kotlin.reflect.i {
     public boolean equals(Object obj) {
         if (obj instanceof x1) {
             x1 x1Var = (x1) obj;
-            if (Intrinsics.areEqual(this.f51206d, x1Var.f51206d) && getIndex() == x1Var.getIndex()) {
+            if (Intrinsics.areEqual(this.f51774d, x1Var.f51774d) && getIndex() == x1Var.getIndex()) {
                 return true;
             }
             return false;
@@ -176,24 +176,24 @@ public final class x1 implements kotlin.reflect.i {
     }
 
     public final a0 g() {
-        return this.f51206d;
+        return this.f51774d;
     }
 
     @Override // kotlin.reflect.b
     public List getAnnotations() {
-        Object b10 = this.f51210p.b(this, f51205q[1]);
+        Object b10 = this.f51778p.b(this, f51773q[1]);
         Intrinsics.checkNotNullExpressionValue(b10, "getValue(...)");
         return (List) b10;
     }
 
     @Override // kotlin.reflect.i
     public int getIndex() {
-        return this.f51207e;
+        return this.f51775e;
     }
 
     @Override // kotlin.reflect.i
     public i.a getKind() {
-        return this.f51208i;
+        return this.f51776i;
     }
 
     @Override // kotlin.reflect.i
@@ -224,7 +224,7 @@ public final class x1 implements kotlin.reflect.i {
     }
 
     public int hashCode() {
-        return (this.f51206d.hashCode() * 31) + Integer.hashCode(getIndex());
+        return (this.f51774d.hashCode() * 31) + Integer.hashCode(getIndex());
     }
 
     @Override // kotlin.reflect.i
@@ -237,6 +237,6 @@ public final class x1 implements kotlin.reflect.i {
     }
 
     public String toString() {
-        return d3.f51025a.j(this);
+        return d3.f51593a.j(this);
     }
 }

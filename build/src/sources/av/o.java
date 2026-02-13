@@ -61,7 +61,7 @@ public final class o implements Source {
                         return j11;
                     }
                     if (S0.f6263b == S0.f6264c) {
-                        sink.f40581d = S0.b();
+                        sink.f41149d = S0.b();
                         h0.b(S0);
                     }
                     return 0L;
@@ -91,7 +91,7 @@ public final class o implements Source {
         if (this.f6298d.p1()) {
             return true;
         }
-        g0 g0Var = this.f6298d.f().f40581d;
+        g0 g0Var = this.f6298d.f().f41149d;
         Intrinsics.checkNotNull(g0Var);
         int i10 = g0Var.f6264c;
         int i11 = g0Var.f6263b;

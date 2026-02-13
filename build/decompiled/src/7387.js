@@ -1,58 +1,26 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = exports;
-    var0 = global;
-    var4 = var0.Object;
-    var3 = var4.defineProperty;
-    var2 = {};
-    var0 = true;
-    var2.value = var0;
-    var0 = '__esModule';
-    var0 = var3.bind(var4)(var1, var0, var2);
-    var0 = function arg0() {
-        var0 = new Array(0);
-        var _closure2_slot0 = var0;
-        var3 = function arg0() {
-            var2 = arg0;
-            var1 = var2.forEach;
-            var0 = function(arg0) { // Environment: var0
-                _fun59888: for (var _fun59888_ip = 0;;) switch (_fun59888_ip) {
-                    case 0:
-                        var2 = arg0;
-                        var0 = global;
-                        var1 = var0.Array;
-                        var0 = var1.isArray;
-                        var1 = var0.bind(var1)(var2);
-                        if (var1) {
-                            _fun59888_ip = 43;
-                            continue _fun59888
-                        }
-                    case 27:
-                        var3 = _closure2_slot0;
-                        var1 = var3.push;
-                        var1 = var1.bind(var3)(var2);
-                        _fun59888_ip = 54;
-                        continue _fun59888;
-                    case 43:
-                        var1 = _closure2_slot1;
-                        var0 = undefined;
-                        var0 = var1.bind(var0)(var2);
-                    case 54:
-                        var0 = undefined;
-                        return var0;
-                }
-            };
-            var0 = var1.bind(var2)(var0);
-            var0 = undefined;
-            return var0;
-        };
-        var _closure2_slot1 = var3;
-        var2 = undefined;
-        var1 = arg0;
-        var1 = var3.bind(var2)(var1);
-        return var0;
-    };
-    var1.flatten = var0;
+    var1 = dependencyMap;
+    var0 = 0;
+    var2 = var1[var0];
+    var1 = require;
     var0 = undefined;
+    var3 = var1.bind(var0)(var2);
+    var2 = var3.registerAsset;
+    var1 = {
+        '__packager_asset': true,
+        'httpServerLocation': '/assets/modules/premium/tiered_tenure_badging/native/images',
+        'width': 58.333333333333336,
+        'height': 58.333333333333336,
+        'scales': null,
+        'hash': '99ffc81e67285d18182e87dbce7ba5f1',
+        'name': 'asset_silver_badge_small',
+        'type': 'png'
+    };
+    var4 = [3];
+    var1.scales = var4;
+    var2 = var2.bind(var3)(var1);
+    var1 = module;
+    var1.exports = var2;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, []);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1240]);

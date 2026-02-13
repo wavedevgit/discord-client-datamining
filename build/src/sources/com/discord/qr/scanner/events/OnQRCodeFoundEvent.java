@@ -64,7 +64,7 @@ public final class OnQRCodeFoundEvent implements ReactEvent {
     public static final /* synthetic */ void write$Self$qr_scanner_release(OnQRCodeFoundEvent onQRCodeFoundEvent, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
         compositeEncoder.y(serialDescriptor, 0, onQRCodeFoundEvent.status);
         if (compositeEncoder.z(serialDescriptor, 1) || onQRCodeFoundEvent.result != null) {
-            compositeEncoder.o(serialDescriptor, 1, n2.f50033a, onQRCodeFoundEvent.result);
+            compositeEncoder.o(serialDescriptor, 1, n2.f50601a, onQRCodeFoundEvent.result);
         }
     }
 

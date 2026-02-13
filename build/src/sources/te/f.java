@@ -9,40 +9,40 @@ import java.util.Map;
 public final class f {
 
     /* renamed from: a  reason: collision with root package name */
-    private final h f48763a;
+    private final h f49331a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final com.google.android.gms.common.util.d f48764b;
+    private final com.google.android.gms.common.util.d f49332b;
 
     /* renamed from: c  reason: collision with root package name */
-    private long f48765c;
+    private long f49333c;
 
     /* renamed from: d  reason: collision with root package name */
-    private long f48766d;
+    private long f49334d;
 
     /* renamed from: e  reason: collision with root package name */
-    private boolean f48767e;
+    private boolean f49335e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final Map f48768f;
+    private final Map f49336f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final List f48769g;
+    private final List f49337g;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public f(h hVar, com.google.android.gms.common.util.d dVar) {
         q.l(hVar);
         q.l(dVar);
-        this.f48763a = hVar;
-        this.f48764b = dVar;
-        this.f48765c = 1800000L;
-        this.f48766d = 3024000000L;
-        this.f48768f = new HashMap();
-        this.f48769g = new ArrayList();
+        this.f49331a = hVar;
+        this.f49332b = dVar;
+        this.f49333c = 1800000L;
+        this.f49334d = 3024000000L;
+        this.f49336f = new HashMap();
+        this.f49337g = new ArrayList();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final void a() {
-        this.f48767e = true;
+        this.f49335e = true;
     }
 }

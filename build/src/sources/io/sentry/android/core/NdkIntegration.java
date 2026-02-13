@@ -8,13 +8,13 @@ import java.io.Closeable;
 public final class NdkIntegration implements io.sentry.k1, Closeable {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Class f28120d;
+    private final Class f28688d;
 
     /* renamed from: e  reason: collision with root package name */
-    private SentryAndroidOptions f28121e;
+    private SentryAndroidOptions f28689e;
 
     public NdkIntegration(Class cls) {
-        this.f28120d = cls;
+        this.f28688d = cls;
     }
 
     private void a(SentryAndroidOptions sentryAndroidOptions) {
@@ -25,16 +25,16 @@ public final class NdkIntegration implements io.sentry.k1, Closeable {
     @Override // java.io.Closeable, java.lang.AutoCloseable
     public void close() {
         Class cls;
-        SentryAndroidOptions sentryAndroidOptions = this.f28121e;
-        if (sentryAndroidOptions != null && sentryAndroidOptions.isEnableNdk() && (cls = this.f28120d) != null) {
+        SentryAndroidOptions sentryAndroidOptions = this.f28689e;
+        if (sentryAndroidOptions != null && sentryAndroidOptions.isEnableNdk() && (cls = this.f28688d) != null) {
             try {
                 try {
                     cls.getMethod("close", null).invoke(null, null);
-                    this.f28121e.getLogger().c(SentryLevel.DEBUG, "NdkIntegration removed.", new Object[0]);
-                    a(this.f28121e);
+                    this.f28689e.getLogger().c(SentryLevel.DEBUG, "NdkIntegration removed.", new Object[0]);
+                    a(this.f28689e);
                 } catch (NoSuchMethodException e10) {
-                    this.f28121e.getLogger().b(SentryLevel.ERROR, "Failed to invoke the SentryNdk.close method.", e10);
-                    a(this.f28121e);
+                    this.f28689e.getLogger().b(SentryLevel.ERROR, "Failed to invoke the SentryNdk.close method.", e10);
+                    a(this.f28689e);
                 }
             }
         }
@@ -50,32 +50,32 @@ public final class NdkIntegration implements io.sentry.k1, Closeable {
             sentryAndroidOptions = null;
         }
         SentryAndroidOptions sentryAndroidOptions2 = (SentryAndroidOptions) io.sentry.util.y.c(sentryAndroidOptions, "SentryAndroidOptions is required");
-        this.f28121e = sentryAndroidOptions2;
+        this.f28689e = sentryAndroidOptions2;
         boolean isEnableNdk = sentryAndroidOptions2.isEnableNdk();
-        ILogger logger = this.f28121e.getLogger();
+        ILogger logger = this.f28689e.getLogger();
         SentryLevel sentryLevel = SentryLevel.DEBUG;
         logger.c(sentryLevel, "NdkIntegration enabled: %s", Boolean.valueOf(isEnableNdk));
-        if (isEnableNdk && this.f28120d != null) {
-            if (this.f28121e.getCacheDirPath() == null) {
-                this.f28121e.getLogger().c(SentryLevel.ERROR, "No cache dir path is defined in options.", new Object[0]);
-                a(this.f28121e);
+        if (isEnableNdk && this.f28688d != null) {
+            if (this.f28689e.getCacheDirPath() == null) {
+                this.f28689e.getLogger().c(SentryLevel.ERROR, "No cache dir path is defined in options.", new Object[0]);
+                a(this.f28689e);
                 return;
             }
             try {
-                this.f28120d.getMethod("init", SentryAndroidOptions.class).invoke(null, this.f28121e);
-                this.f28121e.getLogger().c(sentryLevel, "NdkIntegration installed.", new Object[0]);
+                this.f28688d.getMethod("init", SentryAndroidOptions.class).invoke(null, this.f28689e);
+                this.f28689e.getLogger().c(sentryLevel, "NdkIntegration installed.", new Object[0]);
                 io.sentry.util.p.a("Ndk");
                 return;
             } catch (NoSuchMethodException e10) {
-                a(this.f28121e);
-                this.f28121e.getLogger().b(SentryLevel.ERROR, "Failed to invoke the SentryNdk.init method.", e10);
+                a(this.f28689e);
+                this.f28689e.getLogger().b(SentryLevel.ERROR, "Failed to invoke the SentryNdk.init method.", e10);
                 return;
             } catch (Throwable th2) {
-                a(this.f28121e);
-                this.f28121e.getLogger().b(SentryLevel.ERROR, "Failed to initialize SentryNdk.", th2);
+                a(this.f28689e);
+                this.f28689e.getLogger().b(SentryLevel.ERROR, "Failed to initialize SentryNdk.", th2);
                 return;
             }
         }
-        a(this.f28121e);
+        a(this.f28689e);
     }
 }

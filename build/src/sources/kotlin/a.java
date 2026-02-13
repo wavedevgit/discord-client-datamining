@@ -6,11 +6,11 @@ import kotlin.jvm.internal.Intrinsics;
 public abstract class a {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Object f31989a;
+    private static final Object f32557a;
 
     static {
-        Result.a aVar = Result.f31985e;
-        f31989a = Result.b(gs.b.f());
+        Result.a aVar = Result.f32553e;
+        f32557a = Result.b(gs.b.f());
     }
 
     public static final Object b(as.a aVar, Object obj) {

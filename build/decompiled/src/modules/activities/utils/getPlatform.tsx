@@ -22,19 +22,19 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/activities/utils/getPlatform.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun65377: for (var _fun65377_ip = 0;;) switch (_fun65377_ip) {
+        _fun64570: for (var _fun64570_ip = 0;;) switch (_fun64570_ip) {
             case 0:
                 var1 = arg0;
                 var0 = 'android';
                 if (!(var0 !== var1)) {
-                    _fun65377_ip = 95;
-                    continue _fun65377
+                    _fun64570_ip = 95;
+                    continue _fun64570
                 }
             case 11:
                 var0 = 'ios';
                 if (!(var0 !== var1)) {
-                    _fun65377_ip = 57;
-                    continue _fun65377
+                    _fun64570_ip = 57;
+                    continue _fun64570
                 }
             case 19:
                 var2 = _closure1_slot0;
@@ -70,4 +70,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1647, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1650, 2]);

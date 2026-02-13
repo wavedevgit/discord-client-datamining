@@ -8,28 +8,28 @@ import java.util.concurrent.TimeUnit;
 public class c extends p9.b {
 
     /* renamed from: f  reason: collision with root package name */
-    private final w8.b f41532f;
+    private final w8.b f42100f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final ScheduledExecutorService f41533g;
+    private final ScheduledExecutorService f42101g;
 
     /* renamed from: h  reason: collision with root package name */
-    private boolean f41534h;
+    private boolean f42102h;
 
     /* renamed from: i  reason: collision with root package name */
-    private long f41535i;
+    private long f42103i;
 
     /* renamed from: j  reason: collision with root package name */
-    private long f41536j;
+    private long f42104j;
 
     /* renamed from: k  reason: collision with root package name */
-    private long f41537k;
+    private long f42105k;
 
     /* renamed from: l  reason: collision with root package name */
-    private b f41538l;
+    private b f42106l;
 
     /* renamed from: m  reason: collision with root package name */
-    private final Runnable f41539m;
+    private final Runnable f42107m;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     class a implements Runnable {
@@ -40,11 +40,11 @@ public class c extends p9.b {
         public void run() {
             synchronized (c.this) {
                 try {
-                    c.this.f41534h = false;
+                    c.this.f42102h = false;
                     if (!c.this.t()) {
                         c.this.u();
-                    } else if (c.this.f41538l != null) {
-                        c.this.f41538l.i();
+                    } else if (c.this.f42106l != null) {
+                        c.this.f42106l.i();
                     }
                 } catch (Throwable th2) {
                     throw th2;
@@ -60,13 +60,13 @@ public class c extends p9.b {
 
     private c(p9.a aVar, b bVar, w8.b bVar2, ScheduledExecutorService scheduledExecutorService) {
         super(aVar);
-        this.f41534h = false;
-        this.f41536j = 2000L;
-        this.f41537k = 1000L;
-        this.f41539m = new a();
-        this.f41538l = bVar;
-        this.f41532f = bVar2;
-        this.f41533g = scheduledExecutorService;
+        this.f42102h = false;
+        this.f42104j = 2000L;
+        this.f42105k = 1000L;
+        this.f42107m = new a();
+        this.f42106l = bVar;
+        this.f42100f = bVar2;
+        this.f42101g = scheduledExecutorService;
     }
 
     public static p9.b r(p9.a aVar, b bVar, w8.b bVar2, ScheduledExecutorService scheduledExecutorService) {
@@ -79,7 +79,7 @@ public class c extends p9.b {
 
     /* JADX INFO: Access modifiers changed from: private */
     public boolean t() {
-        if (this.f41532f.now() - this.f41535i > this.f41536j) {
+        if (this.f42100f.now() - this.f42103i > this.f42104j) {
             return true;
         }
         return false;
@@ -87,15 +87,15 @@ public class c extends p9.b {
 
     /* JADX INFO: Access modifiers changed from: private */
     public synchronized void u() {
-        if (!this.f41534h) {
-            this.f41534h = true;
-            this.f41533g.schedule(this.f41539m, this.f41537k, TimeUnit.MILLISECONDS);
+        if (!this.f42102h) {
+            this.f42102h = true;
+            this.f42101g.schedule(this.f42107m, this.f42105k, TimeUnit.MILLISECONDS);
         }
     }
 
     @Override // p9.b, p9.a
     public boolean h(Drawable drawable, Canvas canvas, int i10) {
-        this.f41535i = this.f41532f.now();
+        this.f42103i = this.f42100f.now();
         boolean h10 = super.h(drawable, canvas, i10);
         u();
         return h10;

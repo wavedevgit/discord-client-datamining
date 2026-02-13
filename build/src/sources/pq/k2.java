@@ -13,13 +13,13 @@ public final class k2 implements k5, e0 {
     public static final Parcelable.Creator<k2> CREATOR = new a();
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f42991d;
+    private final String f43559d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final JsonLogicBoolean f42992e;
+    private final JsonLogicBoolean f43560e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final List f42993i;
+    private final List f43561i;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements Parcelable.Creator {
@@ -39,14 +39,14 @@ public final class k2 implements k5, e0 {
 
     public k2(String name, JsonLogicBoolean jsonLogicBoolean) {
         Intrinsics.checkNotNullParameter(name, "name");
-        this.f42991d = name;
-        this.f42992e = jsonLogicBoolean;
-        this.f42993i = new ArrayList();
+        this.f43559d = name;
+        this.f43560e = jsonLogicBoolean;
+        this.f43561i = new ArrayList();
     }
 
     @Override // pq.e0
     public List d() {
-        return this.f42993i;
+        return this.f43561i;
     }
 
     @Override // android.os.Parcelable
@@ -62,7 +62,7 @@ public final class k2 implements k5, e0 {
             return false;
         }
         k2 k2Var = (k2) obj;
-        if (Intrinsics.areEqual(this.f42991d, k2Var.f42991d) && Intrinsics.areEqual(this.f42992e, k2Var.f42992e)) {
+        if (Intrinsics.areEqual(this.f43559d, k2Var.f43559d) && Intrinsics.areEqual(this.f43560e, k2Var.f43560e)) {
             return true;
         }
         return false;
@@ -70,18 +70,18 @@ public final class k2 implements k5, e0 {
 
     @Override // pq.e0
     public JsonLogicBoolean getHidden() {
-        return this.f42992e;
+        return this.f43560e;
     }
 
     @Override // pq.k5
     public String getName() {
-        return this.f42991d;
+        return this.f43559d;
     }
 
     public int hashCode() {
         int hashCode;
-        int hashCode2 = this.f42991d.hashCode() * 31;
-        JsonLogicBoolean jsonLogicBoolean = this.f42992e;
+        int hashCode2 = this.f43559d.hashCode() * 31;
+        JsonLogicBoolean jsonLogicBoolean = this.f43560e;
         if (jsonLogicBoolean == null) {
             hashCode = 0;
         } else {
@@ -91,16 +91,16 @@ public final class k2 implements k5, e0 {
     }
 
     public String toString() {
-        String str = this.f42991d;
-        JsonLogicBoolean jsonLogicBoolean = this.f42992e;
+        String str = this.f43559d;
+        JsonLogicBoolean jsonLogicBoolean = this.f43560e;
         return "LocalImageComponent(name=" + str + ", hidden=" + jsonLogicBoolean + ")";
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel dest, int i10) {
         Intrinsics.checkNotNullParameter(dest, "dest");
-        dest.writeString(this.f42991d);
-        dest.writeParcelable(this.f42992e, i10);
+        dest.writeString(this.f43559d);
+        dest.writeParcelable(this.f43560e, i10);
     }
 
     /* JADX WARN: Illegal instructions before constructor call */

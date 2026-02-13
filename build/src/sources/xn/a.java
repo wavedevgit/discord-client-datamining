@@ -8,23 +8,23 @@ import kotlin.text.StringsKt;
 final class a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Context f54937a;
+    private final Context f55505a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f54938b;
+    private final String f55506b;
 
     public a(Context context, String str) {
         Intrinsics.checkNotNullParameter(context, "context");
-        this.f54937a = context;
-        this.f54938b = str;
+        this.f55505a = context;
+        this.f55506b = str;
     }
 
     private final Uri a(String str, Context context) {
-        return b.f54939a.b(context, str);
+        return b.f55507a.b(context, str);
     }
 
     private final Uri b(Context context) {
-        String str = this.f54938b;
+        String str = this.f55506b;
         if (str == null) {
             return null;
         }

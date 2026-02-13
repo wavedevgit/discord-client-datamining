@@ -11,33 +11,33 @@ import kotlinx.serialization.json.JsonObject;
 final class p0 extends n0 {
 
     /* renamed from: k  reason: collision with root package name */
-    private final JsonObject f51934k;
+    private final JsonObject f52502k;
 
     /* renamed from: l  reason: collision with root package name */
-    private final List f51935l;
+    private final List f52503l;
 
     /* renamed from: m  reason: collision with root package name */
-    private final int f51936m;
+    private final int f52504m;
 
     /* renamed from: n  reason: collision with root package name */
-    private int f51937n;
+    private int f52505n;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public p0(Json json, JsonObject value) {
         super(json, value, null, null, 12, null);
         Intrinsics.checkNotNullParameter(json, "json");
         Intrinsics.checkNotNullParameter(value, "value");
-        this.f51934k = value;
+        this.f52502k = value;
         List h12 = CollectionsKt.h1(D0().keySet());
-        this.f51935l = h12;
-        this.f51936m = h12.size() * 2;
-        this.f51937n = -1;
+        this.f52503l = h12;
+        this.f52504m = h12.size() * 2;
+        this.f52505n = -1;
     }
 
     @Override // vt.n0, vt.c
     /* renamed from: I0 */
     public JsonObject D0() {
-        return this.f51934k;
+        return this.f52502k;
     }
 
     @Override // vt.n0, vt.c, tt.q2, kotlinx.serialization.encoding.c
@@ -48,16 +48,16 @@ final class p0 extends n0 {
     @Override // vt.n0, tt.g1
     protected String i0(SerialDescriptor descriptor, int i10) {
         Intrinsics.checkNotNullParameter(descriptor, "descriptor");
-        return (String) this.f51935l.get(i10 / 2);
+        return (String) this.f52503l.get(i10 / 2);
     }
 
     @Override // vt.n0, kotlinx.serialization.encoding.c
     public int o(SerialDescriptor descriptor) {
         Intrinsics.checkNotNullParameter(descriptor, "descriptor");
-        int i10 = this.f51937n;
-        if (i10 < this.f51936m - 1) {
+        int i10 = this.f52505n;
+        if (i10 < this.f52504m - 1) {
             int i11 = i10 + 1;
-            this.f51937n = i11;
+            this.f52505n = i11;
             return i11;
         }
         return -1;
@@ -66,7 +66,7 @@ final class p0 extends n0 {
     @Override // vt.n0, vt.c
     protected JsonElement o0(String tag) {
         Intrinsics.checkNotNullParameter(tag, "tag");
-        if (this.f51937n % 2 == 0) {
+        if (this.f52505n % 2 == 0) {
             return ut.h.d(tag);
         }
         return (JsonElement) kotlin.collections.o0.j(D0(), tag);

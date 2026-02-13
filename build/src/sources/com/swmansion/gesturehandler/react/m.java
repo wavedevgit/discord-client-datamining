@@ -54,10 +54,10 @@ public final class m implements d0 {
         }
         if (!view.isEnabled()) {
             if (pointerEvents == PointerEvents.AUTO) {
-                return v.f38131e;
+                return v.f38699e;
             }
             if (pointerEvents == PointerEvents.BOX_ONLY) {
-                return v.f38130d;
+                return v.f38698d;
             }
         }
         int i10 = a.f18997a[pointerEvents.ordinal()];
@@ -65,15 +65,15 @@ public final class m implements d0 {
             if (i10 != 2) {
                 if (i10 != 3) {
                     if (i10 == 4) {
-                        return v.f38133o;
+                        return v.f38701o;
                     }
                     throw new p();
                 }
-                return v.f38130d;
+                return v.f38698d;
             }
-            return v.f38131e;
+            return v.f38699e;
         }
-        return v.f38132i;
+        return v.f38700i;
     }
 
     @Override // nn.d0

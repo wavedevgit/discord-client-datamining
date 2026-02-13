@@ -298,14 +298,14 @@ public enum je implements x1 {
     
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f46923d;
+    private final int f47491d;
 
     je(int i10) {
-        this.f46923d = i10;
+        this.f47491d = i10;
     }
 
     @Override // rg.x1
     public final int zza() {
-        return this.f46923d;
+        return this.f47491d;
     }
 }

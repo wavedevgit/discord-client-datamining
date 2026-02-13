@@ -14,15 +14,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var3 = _closure1_slot3;
         var2 = function*(arg0, arg1, arg2) { // Environment: var2
             var0 = function*(arg0, arg1, arg2) { // Original name: ?anon_0_, environment: var0
-                _fun63397: for (var _fun63397_ip = 0;;) switch (_fun63397_ip) {
+                _fun61523: for (var _fun61523_ip = 0;;) switch (_fun61523_ip) {
                     case 0:
                         StartGenerator();
                         var5 = arg1;
                         var7 = arg2;
                         ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
                         if (var1) {
-                            _fun63397_ip = 552;
-                            continue _fun63397
+                            _fun61523_ip = 553;
+                            continue _fun61523
                         }
                     case 16:
                         var2 = _closure1_slot1;
@@ -43,14 +43,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     case 69:
                         ResumeGenerator(result_out_reg = 1, return_bool_out_reg = 2);
                         if (var2) {
-                            _fun63397_ip = 549;
-                            continue _fun63397
+                            _fun61523_ip = 550;
+                            continue _fun61523
                         }
                     case 78:
                         var2 = var1.ok;
                         if (var2) {
-                            _fun63397_ip = 546;
-                            continue _fun63397
+                            _fun61523_ip = 547;
+                            continue _fun61523
                         }
                     case 90:
                         var6 = var1.body;
@@ -58,17 +58,17 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var8 = var2 == var6;
                         var3 = undefined;
                         if (var8) {
-                            _fun63397_ip = 111;
-                            continue _fun63397
+                            _fun61523_ip = 112;
+                            continue _fun61523
                         }
                     case 106:
                         var3 = var6.username;
-                    case 111:
+                    case 112:
                         if (!(var2 != var3)) {
-                            _fun63397_ip = 145;
-                            continue _fun63397
+                            _fun61523_ip = 146;
+                            continue _fun61523
                         }
-                    case 115:
+                    case 116:
                         var6 = _closure1_slot0;
                         var8 = _closure1_slot2;
                         var3 = 3;
@@ -76,37 +76,37 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var6 = var6.bind(var9)(var3);
                         var3 = var6.showInvalidUsernameToast;
                         var3 = var3.bind(var6)();
-                    case 145:
+                    case 146:
                         var6 = var1.body;
                         var8 = var2 == var6;
                         var3 = undefined;
                         if (var8) {
-                            _fun63397_ip = 165;
-                            continue _fun63397
+                            _fun61523_ip = 166;
+                            continue _fun61523
                         }
-                    case 159:
+                    case 160:
                         var3 = var6.email;
-                    case 165:
+                    case 166:
                         if (!(var2 == var3)) {
-                            _fun63397_ip = 375;
-                            continue _fun63397
+                            _fun61523_ip = 376;
+                            continue _fun61523
                         }
-                    case 172:
+                    case 173:
                         var6 = var1.body;
                         var8 = var2 == var6;
                         var3 = undefined;
                         if (var8) {
-                            _fun63397_ip = 192;
-                            continue _fun63397
+                            _fun61523_ip = 193;
+                            continue _fun61523
                         }
-                    case 186:
+                    case 187:
                         var3 = var6.email_token;
-                    case 192:
+                    case 193:
                         if (!(var2 != var3)) {
-                            _fun63397_ip = 546;
-                            continue _fun63397
+                            _fun61523_ip = 547;
+                            continue _fun61523
                         }
-                    case 199:
+                    case 200:
                         var8 = _closure1_slot4;
                         var3 = _closure1_slot5;
                         var6 = var3.EMAIL_TOKEN;
@@ -129,10 +129,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var3 = var7.bind(var9)(var3);
                         var6 = -1;
                         if (!(var6 === var3)) {
-                            _fun63397_ip = 348;
-                            continue _fun63397
+                            _fun61523_ip = 349;
+                            continue _fun61523
                         }
-                    case 304:
+                    case 305:
                         var10 = var5.replace;
                         var11 = _closure1_slot0;
                         var6 = _closure1_slot2;
@@ -141,17 +141,17 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var6 = var6.VerificationModalScenes;
                         var6 = var6.CONFIRM_EMAIL_CHANGE_CODE;
                         var6 = var10.bind(var5)(var6);
-                        _fun63397_ip = 546;
-                        continue _fun63397;
-                    case 348:
+                        _fun61523_ip = 547;
+                        continue _fun61523;
+                    case 349:
                         var6 = var5.pop;
                         var8 = var8 - var3;
                         var3 = 1;
                         var3 = var8 - var3;
                         var3 = var6.bind(var5)(var3);
-                        _fun63397_ip = 546;
-                        continue _fun63397;
-                    case 375:
+                        _fun61523_ip = 547;
+                        continue _fun61523;
+                    case 376:
                         var8 = _closure1_slot4;
                         var3 = _closure1_slot5;
                         var6 = var3.EMAIL;
@@ -174,10 +174,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var3 = var7.bind(var9)(var3);
                         var7 = -1;
                         if (!(var7 === var3)) {
-                            _fun63397_ip = 521;
-                            continue _fun63397
+                            _fun61523_ip = 522;
+                            continue _fun61523
                         }
-                    case 480:
+                    case 481:
                         var7 = var5.replace;
                         var8 = _closure1_slot0;
                         var4 = _closure1_slot2;
@@ -186,21 +186,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var4 = var4.VerificationModalScenes;
                         var4 = var4.ENTER_EMAIL;
                         var4 = var7.bind(var5)(var4);
-                        _fun63397_ip = 543;
-                        continue _fun63397;
-                    case 521:
+                        _fun61523_ip = 544;
+                        continue _fun61523;
+                    case 522:
                         var4 = var5.pop;
                         var6 = var6 - var3;
                         var3 = 1;
                         var3 = var6 - var3;
                         var3 = var4.bind(var5)(var3);
-                    case 543:
+                    case 544:
                         return var2;
-                    case 546:
+                    case 547:
                         return var1;
-                    case 549:
+                    case 550:
                         return var1;
-                    case 552:
+                    case 553:
                         return var0;
                 }
             };
@@ -272,7 +272,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.finishChangeEmailFlow = var3;
     var1 = function arg0, arg1() {
-        _fun63400: for (var _fun63400_ip = 0;;) switch (_fun63400_ip) {
+        _fun61526: for (var _fun61526_ip = 0;;) switch (_fun61526_ip) {
             case 0:
                 var3 = arg0;
                 var0 = var3.getState;
@@ -291,8 +291,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.bind(var0)(var5);
                 var5 = -1;
                 if (!(var5 === var1)) {
-                    _fun63400_ip = 120;
-                    continue _fun63400
+                    _fun61526_ip = 120;
+                    continue _fun61526
                 }
             case 79:
                 var5 = var3.replace;
@@ -303,8 +303,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2.VerificationModalScenes;
                 var2 = var2.RESEND_EMAIL;
                 var2 = var5.bind(var3)(var2);
-                _fun63400_ip = 135;
-                continue _fun63400;
+                _fun61526_ip = 135;
+                continue _fun61526;
             case 120:
                 var2 = var3.pop;
                 var1 = var4 - var1;
@@ -315,4 +315,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.finishVerifyEmailFlow = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 7795, 7329, 7046, 670, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 7525, 7309, 7033, 670, 2]);

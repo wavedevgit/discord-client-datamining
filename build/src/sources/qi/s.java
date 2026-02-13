@@ -10,7 +10,7 @@ import qi.q;
 public abstract class s extends q implements List, RandomAccess {
 
     /* renamed from: e  reason: collision with root package name */
-    private static final u0 f45400e = new b(k0.f45358p, 0);
+    private static final u0 f45968e = new b(k0.f45926p, 0);
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a extends q.a {
@@ -36,8 +36,8 @@ public abstract class s extends q implements List, RandomAccess {
         }
 
         public s k() {
-            this.f45392c = true;
-            return s.j(this.f45390a, this.f45391b);
+            this.f45960c = true;
+            return s.j(this.f45958a, this.f45959b);
         }
 
         a(int i10) {
@@ -50,16 +50,16 @@ public abstract class s extends q implements List, RandomAccess {
     public static class b extends qi.a {
 
         /* renamed from: i  reason: collision with root package name */
-        private final s f45401i;
+        private final s f45969i;
 
         b(s sVar, int i10) {
             super(sVar.size(), i10);
-            this.f45401i = sVar;
+            this.f45969i = sVar;
         }
 
         @Override // qi.a
         protected Object a(int i10) {
-            return this.f45401i.get(i10);
+            return this.f45969i.get(i10);
         }
     }
 
@@ -68,22 +68,22 @@ public abstract class s extends q implements List, RandomAccess {
     public class c extends s {
 
         /* renamed from: i  reason: collision with root package name */
-        final transient int f45402i;
+        final transient int f45970i;
 
         /* renamed from: o  reason: collision with root package name */
-        final transient int f45403o;
+        final transient int f45971o;
 
         c(int i10, int i11) {
-            this.f45402i = i10;
-            this.f45403o = i11;
+            this.f45970i = i10;
+            this.f45971o = i11;
         }
 
         @Override // qi.s, java.util.List
         /* renamed from: A */
         public s subList(int i10, int i11) {
-            pi.m.n(i10, i11, this.f45403o);
+            pi.m.n(i10, i11, this.f45971o);
             s sVar = s.this;
-            int i12 = this.f45402i;
+            int i12 = this.f45970i;
             return sVar.subList(i10 + i12, i11 + i12);
         }
 
@@ -94,12 +94,12 @@ public abstract class s extends q implements List, RandomAccess {
 
         @Override // qi.q
         int e() {
-            return s.this.f() + this.f45402i + this.f45403o;
+            return s.this.f() + this.f45970i + this.f45971o;
         }
 
         @Override // qi.q
         int f() {
-            return s.this.f() + this.f45402i;
+            return s.this.f() + this.f45970i;
         }
 
         @Override // qi.q
@@ -109,8 +109,8 @@ public abstract class s extends q implements List, RandomAccess {
 
         @Override // java.util.List
         public Object get(int i10) {
-            pi.m.h(i10, this.f45403o);
-            return s.this.get(i10 + this.f45402i);
+            pi.m.h(i10, this.f45971o);
+            return s.this.get(i10 + this.f45970i);
         }
 
         @Override // qi.s, java.util.AbstractCollection, java.util.Collection, java.lang.Iterable, java.util.List
@@ -125,7 +125,7 @@ public abstract class s extends q implements List, RandomAccess {
 
         @Override // java.util.AbstractCollection, java.util.Collection, java.util.List
         public int size() {
-            return this.f45403o;
+            return this.f45971o;
         }
 
         @Override // qi.s, java.util.List
@@ -174,7 +174,7 @@ public abstract class s extends q implements List, RandomAccess {
     }
 
     public static s t() {
-        return k0.f45358p;
+        return k0.f45926p;
     }
 
     public static s u(Object obj) {
@@ -292,7 +292,7 @@ public abstract class s extends q implements List, RandomAccess {
     public u0 listIterator(int i10) {
         pi.m.l(i10, size());
         if (isEmpty()) {
-            return f45400e;
+            return f45968e;
         }
         return new b(this, i10);
     }

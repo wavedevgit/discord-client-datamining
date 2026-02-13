@@ -4,6 +4,9 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = require;
     var2 = exports;
     var5 = dependencyMap;
+    var0 = metroImportDefault;
+    var _closure1_slot0 = var0;
+    var _closure1_slot1 = var5;
     var0 = global;
     var7 = var0.Object;
     var6 = var7.defineProperty;
@@ -20,14 +23,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 1;
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
-    var7 = var3.jsx;
-    var3 = 2;
-    var6 = var5[var3];
-    var3 = metroImportDefault;
-    var6 = var3.bind(var0)(var6);
-    var3 = {};
-    var3 = var7.bind(var0)(var6, var3);
-    var _closure1_slot0 = var3;
+    var3 = var3.jsx;
+    var _closure1_slot2 = var3;
     var3 = 3;
     var3 = var5[var3];
     var5 = var4.bind(var0)(var3);
@@ -35,9 +32,17 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/user_settings/native/premium_marketing/PremiumManagePlanScreen.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function() {
-        var0 = _closure1_slot0;
+        var3 = _closure1_slot2;
+        var1 = _closure1_slot0;
+        var2 = _closure1_slot1;
+        var0 = 2;
+        var0 = var2[var0];
+        var2 = undefined;
+        var1 = var1.bind(var2)(var0);
+        var0 = {};
+        var0 = var3.bind(var2)(var1, var0);
         return var0;
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 7143, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 10616, 2]);

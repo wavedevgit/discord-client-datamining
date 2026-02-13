@@ -13,7 +13,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var _closure2_slot0 = var6;
         var1 = _closure1_slot0;
         var8 = _closure1_slot2;
-        var0 = 5;
+        var0 = 4;
         var0 = var8[var0];
         var3 = undefined;
         var7 = var1.bind(var3)(var0);
@@ -22,7 +22,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = new Array(1);
         var1[0] = var0;
         var0 = function() { // Environment: var4
-            _fun111195: for (var _fun111195_ip = 0;;) switch (_fun111195_ip) {
+            _fun111228: for (var _fun111228_ip = 0;;) switch (_fun111228_ip) {
                 case 0:
                     var2 = _closure1_slot4;
                     var1 = var2.getChannel;
@@ -33,8 +33,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = var0 == var1;
                     var0 = undefined;
                     if (var2) {
-                        _fun111195_ip = 45;
-                        continue _fun111195
+                        _fun111228_ip = 45;
+                        continue _fun111228
                     }
                 case 40:
                     var0 = var1.guild_id;
@@ -45,7 +45,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var7 = var2.bind(var7)(var1, var0);
         var2 = _closure1_slot6;
         var1 = _closure1_slot1;
-        var0 = 6;
+        var0 = 5;
         var0 = var8[var0];
         var1 = var1.bind(var3)(var0);
         var0 = {};
@@ -57,7 +57,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var7 = _closure1_slot3;
         var6 = var7.useMemo;
         var5 = function() { // Environment: var4
-            var0 = _closure1_slot7;
+            var3 = _closure1_slot6;
+            var1 = _closure1_slot1;
+            var2 = _closure1_slot2;
+            var0 = 6;
+            var0 = var2[var0];
+            var2 = undefined;
+            var1 = var1.bind(var2)(var0);
+            var0 = {};
+            var0 = var3.bind(var2)(var1, var0);
             return var0;
         };
         var4 = new Array(0);
@@ -67,16 +75,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = var2.bind(var3)(var1, var0);
         return var0;
     };
-    var _closure1_slot8 = var0;
+    var _closure1_slot7 = var0;
     var0 = function arg0() {
         var0 = arg0;
         return var0;
     };
-    var _closure1_slot9 = var0;
+    var _closure1_slot8 = var0;
     var0 = function arg0, arg1, arg2, arg3() {
         var4 = arg1;
         var3 = _closure1_slot6;
-        var2 = _closure1_slot8;
+        var2 = _closure1_slot7;
         var1 = {};
         var1.channelId = var4;
         var0 = arg2;
@@ -87,7 +95,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = var3.bind(var0)(var2, var1, var4);
         return var0;
     };
-    var _closure1_slot10 = var0;
+    var _closure1_slot9 = var0;
     var0 = global;
     var8 = var0.Object;
     var6 = var8.defineProperty;
@@ -113,14 +121,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 3;
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
-    var8 = var3.jsx;
-    var _closure1_slot6 = var8;
-    var3 = 4;
-    var3 = var5[var3];
-    var7 = var7.bind(var0)(var3);
-    var3 = {};
-    var3 = var8.bind(var0)(var7, var3);
-    var _closure1_slot7 = var3;
+    var3 = var3.jsx;
+    var _closure1_slot6 = var3;
     var3 = var6.memo;
     var1 = function() {
         var5 = _closure1_slot5;
@@ -148,9 +150,9 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = var0.TransitionGroup;
         var0 = {};
         var0.items = var5;
-        var5 = _closure1_slot9;
+        var5 = _closure1_slot8;
         var0.getItemKey = var5;
-        var4 = _closure1_slot10;
+        var4 = _closure1_slot9;
         var0.renderItem = var4;
         var0 = var2.bind(var3)(var1, var0);
         return var0;
@@ -164,4 +166,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1372, 7917, 33, 14299, 566, 14428, 3078, 4023, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1372, 7936, 33, 566, 14292, 14316, 3081, 4023, 2]);

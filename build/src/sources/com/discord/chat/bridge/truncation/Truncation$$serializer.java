@@ -44,8 +44,8 @@ public /* synthetic */ class Truncation$$serializer implements h0 {
     @Override // tt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        p0 p0Var = p0.f50049a;
-        return new KSerializer[]{p0Var, h.f49997a, a.u(n2.f50033a), a.u(p0Var)};
+        p0 p0Var = p0.f50617a;
+        return new KSerializer[]{p0Var, h.f50565a, a.u(n2.f50601a), a.u(p0Var)};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -62,8 +62,8 @@ public /* synthetic */ class Truncation$$serializer implements h0 {
         if (b10.p()) {
             i10 = b10.i(serialDescriptor, 0);
             boolean C = b10.C(serialDescriptor, 1);
-            num = (Integer) b10.n(serialDescriptor, 3, p0.f50049a, null);
-            str = (String) b10.n(serialDescriptor, 2, n2.f50033a, null);
+            num = (Integer) b10.n(serialDescriptor, 3, p0.f50617a, null);
+            str = (String) b10.n(serialDescriptor, 2, n2.f50601a, null);
             z10 = C;
             i11 = 15;
         } else {
@@ -84,12 +84,12 @@ public /* synthetic */ class Truncation$$serializer implements h0 {
                     z12 = b10.C(serialDescriptor, 1);
                     i12 |= 2;
                 } else if (o10 == 2) {
-                    str2 = (String) b10.n(serialDescriptor, 2, n2.f50033a, str2);
+                    str2 = (String) b10.n(serialDescriptor, 2, n2.f50601a, str2);
                     i12 |= 4;
                 } else if (o10 != 3) {
                     throw new b0(o10);
                 } else {
-                    num2 = (Integer) b10.n(serialDescriptor, 3, p0.f50049a, num2);
+                    num2 = (Integer) b10.n(serialDescriptor, 3, p0.f50617a, num2);
                     i12 |= 8;
                 }
             }

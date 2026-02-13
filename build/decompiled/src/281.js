@@ -402,10 +402,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var5 = var3.bind(var4)(var2);
                     var7 = null;
                     if (!(var7 != var5)) {
-                        _fun4392_ip = 131;
+                        _fun4392_ip = 130;
                         continue _fun4392
                     }
-                case 66:
+                case 65:
                     var2 = _closure1_slot0;
                     var3 = _closure1_slot2;
                     var1 = 10;
@@ -416,31 +416,31 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var9 = var7 != var8;
                     var1 = 0;
                     if (!var9) {
-                        _fun4392_ip = 110;
+                        _fun4392_ip = 109;
                         continue _fun4392
                     }
-                case 107:
+                case 106:
                     var1 = var8;
-                case 110:
+                case 109:
                     var7 = var7 != var6;
                     var2 = 0;
                     if (!var7) {
-                        _fun4392_ip = 122;
+                        _fun4392_ip = 121;
                         continue _fun4392
                     }
-                case 119:
+                case 118:
                     var2 = var6;
-                case 122:
+                case 121:
                     var1 = var3.bind(var4)(var5, var1, var2);
-                    _fun4392_ip = 155;
+                    _fun4392_ip = 154;
                     continue _fun4392;
-                case 131:
+                case 130:
                     var1 = global;
                     var3 = var1.console;
                     var2 = var3.warn;
                     var1 = 'Touchable: Unable to find HostComponent instance. Has your Touchable component been unmounted?';
                     var1 = var2.bind(var3)(var1);
-                case 155:
+                case 154:
                     return var0;
             }
         };

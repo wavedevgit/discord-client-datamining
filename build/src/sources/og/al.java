@@ -3,7 +3,7 @@ package og;
 public final class al {
 
     /* renamed from: a  reason: collision with root package name */
-    private static al f39101a;
+    private static al f39669a;
 
     private al() {
     }
@@ -12,10 +12,10 @@ public final class al {
         al alVar;
         synchronized (al.class) {
             try {
-                if (f39101a == null) {
-                    f39101a = new al();
+                if (f39669a == null) {
+                    f39669a = new al();
                 }
-                alVar = f39101a;
+                alVar = f39669a;
             } catch (Throwable th2) {
                 throw th2;
             }

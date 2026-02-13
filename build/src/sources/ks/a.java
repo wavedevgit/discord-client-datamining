@@ -12,10 +12,10 @@ public class a extends js.a {
         @NotNull
 
         /* renamed from: a  reason: collision with root package name */
-        public static final C0465a f35166a = new C0465a();
+        public static final C0465a f35734a = new C0465a();
 
         /* renamed from: b  reason: collision with root package name */
-        public static final Integer f35167b;
+        public static final Integer f35735b;
 
         static {
             Integer num;
@@ -30,13 +30,13 @@ public class a extends js.a {
                 if (num != null && num.intValue() > 0) {
                     num2 = num;
                 }
-                f35167b = num2;
+                f35735b = num2;
             }
             num = null;
             if (num != null) {
                 num2 = num;
             }
-            f35167b = num2;
+            f35735b = num2;
         }
 
         private C0465a() {
@@ -44,7 +44,7 @@ public class a extends js.a {
     }
 
     private final boolean c(int i10) {
-        Integer num = C0465a.f35167b;
+        Integer num = C0465a.f35735b;
         if (num != null && num.intValue() < i10) {
             return false;
         }

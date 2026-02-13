@@ -13,40 +13,40 @@ import java.util.concurrent.atomic.AtomicBoolean;
 public final class i0 {
 
     /* renamed from: i  reason: collision with root package name */
-    private static volatile i0 f29359i;
+    private static volatile i0 f29927i;
 
     /* renamed from: a  reason: collision with root package name */
-    private final long f29361a;
+    private final long f29929a;
 
     /* renamed from: b  reason: collision with root package name */
-    private volatile String f29362b;
+    private volatile String f29930b;
 
     /* renamed from: c  reason: collision with root package name */
-    private volatile long f29363c;
+    private volatile long f29931c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final AtomicBoolean f29364d;
+    private final AtomicBoolean f29932d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Callable f29365e;
+    private final Callable f29933e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final ExecutorService f29366f;
+    private final ExecutorService f29934f;
 
     /* renamed from: g  reason: collision with root package name */
-    private static final long f29357g = TimeUnit.HOURS.toMillis(5);
+    private static final long f29925g = TimeUnit.HOURS.toMillis(5);
 
     /* renamed from: h  reason: collision with root package name */
-    private static final long f29358h = TimeUnit.SECONDS.toMillis(1);
+    private static final long f29926h = TimeUnit.SECONDS.toMillis(1);
 
     /* renamed from: j  reason: collision with root package name */
-    private static final io.sentry.util.a f29360j = new io.sentry.util.a();
+    private static final io.sentry.util.a f29928j = new io.sentry.util.a();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     private static final class b implements ThreadFactory {
 
         /* renamed from: a  reason: collision with root package name */
-        private int f29367a;
+        private int f29935a;
 
         private b() {
         }
@@ -55,8 +55,8 @@ public final class i0 {
         public Thread newThread(Runnable runnable) {
             StringBuilder sb2 = new StringBuilder();
             sb2.append("SentryHostnameCache-");
-            int i10 = this.f29367a;
-            this.f29367a = i10 + 1;
+            int i10 = this.f29935a;
+            this.f29935a = i10 + 1;
             sb2.append(i10);
             Thread thread = new Thread(runnable, sb2.toString());
             thread.setDaemon(true);
@@ -65,28 +65,28 @@ public final class i0 {
     }
 
     private i0() {
-        this(f29357g);
+        this(f29925g);
     }
 
     public static /* synthetic */ Void b(i0 i0Var) {
         i0Var.getClass();
         try {
-            i0Var.f29362b = ((InetAddress) i0Var.f29365e.call()).getCanonicalHostName();
-            i0Var.f29363c = System.currentTimeMillis() + i0Var.f29361a;
-            i0Var.f29364d.set(false);
+            i0Var.f29930b = ((InetAddress) i0Var.f29933e.call()).getCanonicalHostName();
+            i0Var.f29931c = System.currentTimeMillis() + i0Var.f29929a;
+            i0Var.f29932d.set(false);
             return null;
         } catch (Throwable th2) {
-            i0Var.f29364d.set(false);
+            i0Var.f29932d.set(false);
             throw th2;
         }
     }
 
     public static i0 e() {
-        if (f29359i == null) {
-            a1 a10 = f29360j.a();
+        if (f29927i == null) {
+            a1 a10 = f29928j.a();
             try {
-                if (f29359i == null) {
-                    f29359i = new i0();
+                if (f29927i == null) {
+                    f29927i = new i0();
                 }
                 if (a10 != null) {
                     a10.close();
@@ -102,21 +102,21 @@ public final class i0 {
                 throw th2;
             }
         }
-        return f29359i;
+        return f29927i;
     }
 
     private void f() {
-        this.f29363c = System.currentTimeMillis() + TimeUnit.SECONDS.toMillis(1L);
+        this.f29931c = System.currentTimeMillis() + TimeUnit.SECONDS.toMillis(1L);
     }
 
     private void g() {
         try {
-            this.f29366f.submit(new Callable() { // from class: io.sentry.h0
+            this.f29934f.submit(new Callable() { // from class: io.sentry.h0
                 @Override // java.util.concurrent.Callable
                 public final Object call() {
                     return i0.b(i0.this);
                 }
-            }).get(f29358h, TimeUnit.MILLISECONDS);
+            }).get(f29926h, TimeUnit.MILLISECONDS);
         } catch (InterruptedException unused) {
             Thread.currentThread().interrupt();
             f();
@@ -127,14 +127,14 @@ public final class i0 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void c() {
-        this.f29366f.shutdown();
+        this.f29934f.shutdown();
     }
 
     public String d() {
-        if (this.f29363c < System.currentTimeMillis() && this.f29364d.compareAndSet(false, true)) {
+        if (this.f29931c < System.currentTimeMillis() && this.f29932d.compareAndSet(false, true)) {
             g();
         }
-        return this.f29362b;
+        return this.f29930b;
     }
 
     i0(long j10) {
@@ -149,10 +149,10 @@ public final class i0 {
     }
 
     i0(long j10, Callable callable) {
-        this.f29364d = new AtomicBoolean(false);
-        this.f29366f = Executors.newSingleThreadExecutor(new b());
-        this.f29361a = j10;
-        this.f29365e = (Callable) io.sentry.util.y.c(callable, "getLocalhost is required");
+        this.f29932d = new AtomicBoolean(false);
+        this.f29934f = Executors.newSingleThreadExecutor(new b());
+        this.f29929a = j10;
+        this.f29933e = (Callable) io.sentry.util.y.c(callable, "getLocalhost is required");
         g();
     }
 }

@@ -5,10 +5,10 @@ import java.util.Set;
 public final class w0 implements lr.d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final lr.h f49704a;
+    private final lr.h f50272a;
 
     public w0(lr.h hVar) {
-        this.f49704a = hVar;
+        this.f50272a = hVar;
     }
 
     public static w0 a(lr.h hVar) {
@@ -22,6 +22,6 @@ public final class w0 implements lr.d {
     @Override // javax.inject.Provider
     /* renamed from: b */
     public Set get() {
-        return c((i0) this.f49704a.get());
+        return c((i0) this.f50272a.get());
     }
 }

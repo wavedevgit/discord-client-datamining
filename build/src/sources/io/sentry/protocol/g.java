@@ -14,10 +14,10 @@ import java.util.concurrent.ConcurrentHashMap;
 public final class g implements w1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private List f29675d;
+    private List f30243d;
 
     /* renamed from: e  reason: collision with root package name */
-    private Map f29676e;
+    private Map f30244e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements m1 {
@@ -50,15 +50,15 @@ public final class g implements w1 {
     }
 
     public g(List list) {
-        this.f29675d = list;
+        this.f30243d = list;
     }
 
     public List a() {
-        return this.f29675d;
+        return this.f30243d;
     }
 
     public void b(Map map) {
-        this.f29676e = map;
+        this.f30244e = map;
     }
 
     public boolean equals(Object obj) {
@@ -66,23 +66,23 @@ public final class g implements w1 {
             return true;
         }
         if (obj != null && g.class == obj.getClass()) {
-            return io.sentry.util.y.a(this.f29675d, ((g) obj).f29675d);
+            return io.sentry.util.y.a(this.f30243d, ((g) obj).f30243d);
         }
         return false;
     }
 
     public int hashCode() {
-        return io.sentry.util.y.b(this.f29675d);
+        return io.sentry.util.y.b(this.f30243d);
     }
 
     @Override // io.sentry.w1
     public void serialize(f3 f3Var, ILogger iLogger) {
         f3Var.u();
-        f3Var.e("values").j(iLogger, this.f29675d);
-        Map map = this.f29676e;
+        f3Var.e("values").j(iLogger, this.f30243d);
+        Map map = this.f30244e;
         if (map != null) {
             for (String str : map.keySet()) {
-                f3Var.e(str).j(iLogger, this.f29676e.get(str));
+                f3Var.e(str).j(iLogger, this.f30244e.get(str));
             }
         }
         f3Var.D();

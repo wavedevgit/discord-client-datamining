@@ -96,7 +96,7 @@ public final class ReactAssetUtilsKt$setReactIcon$2 extends k implements Functio
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Drawable> continuation) {
-            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
+            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32556a);
         }
     }
 
@@ -140,11 +140,11 @@ public final class ReactAssetUtilsKt$setReactIcon$2 extends k implements Functio
             obj = g10;
         }
         materialButton.setIcon((Drawable) obj);
-        return Unit.f31988a;
+        return Unit.f32556a;
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((ReactAssetUtilsKt$setReactIcon$2) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
+        return ((ReactAssetUtilsKt$setReactIcon$2) create(coroutineScope, continuation)).invokeSuspend(Unit.f32556a);
     }
 }

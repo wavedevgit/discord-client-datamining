@@ -6,16 +6,16 @@ import kotlin.jvm.internal.Intrinsics;
 public final class e {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final e f55650a = new e();
+    public static final e f56218a = new e();
 
     /* renamed from: b  reason: collision with root package name */
-    private static WeakReference f55651b;
+    private static WeakReference f56219b;
 
     private e() {
     }
 
     public final c a() {
-        WeakReference weakReference = f55651b;
+        WeakReference weakReference = f56219b;
         if (weakReference != null) {
             return (c) weakReference.get();
         }
@@ -24,6 +24,6 @@ public final class e {
 
     public final void b(c view) {
         Intrinsics.checkNotNullParameter(view, "view");
-        f55651b = new WeakReference(view);
+        f56219b = new WeakReference(view);
     }
 }

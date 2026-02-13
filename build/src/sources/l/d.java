@@ -12,19 +12,19 @@ import java.util.concurrent.atomic.AtomicInteger;
 public class d extends e {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Object f35360a = new Object();
+    private final Object f35928a = new Object();
 
     /* renamed from: b  reason: collision with root package name */
-    private final ExecutorService f35361b = Executors.newFixedThreadPool(4, new a());
+    private final ExecutorService f35929b = Executors.newFixedThreadPool(4, new a());
 
     /* renamed from: c  reason: collision with root package name */
-    private volatile Handler f35362c;
+    private volatile Handler f35930c;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     class a implements ThreadFactory {
 
         /* renamed from: a  reason: collision with root package name */
-        private final AtomicInteger f35363a = new AtomicInteger(0);
+        private final AtomicInteger f35931a = new AtomicInteger(0);
 
         a() {
         }
@@ -32,7 +32,7 @@ public class d extends e {
         @Override // java.util.concurrent.ThreadFactory
         public Thread newThread(Runnable runnable) {
             Thread thread = new Thread(runnable);
-            thread.setName("arch_disk_io_" + this.f35363a.getAndIncrement());
+            thread.setName("arch_disk_io_" + this.f35931a.getAndIncrement());
             return thread;
         }
     }
@@ -60,7 +60,7 @@ public class d extends e {
 
     @Override // l.e
     public void a(Runnable runnable) {
-        this.f35361b.execute(runnable);
+        this.f35929b.execute(runnable);
     }
 
     @Override // l.e
@@ -73,16 +73,16 @@ public class d extends e {
 
     @Override // l.e
     public void c(Runnable runnable) {
-        if (this.f35362c == null) {
-            synchronized (this.f35360a) {
+        if (this.f35930c == null) {
+            synchronized (this.f35928a) {
                 try {
-                    if (this.f35362c == null) {
-                        this.f35362c = d(Looper.getMainLooper());
+                    if (this.f35930c == null) {
+                        this.f35930c = d(Looper.getMainLooper());
                     }
                 } finally {
                 }
             }
         }
-        this.f35362c.post(runnable);
+        this.f35930c.post(runnable);
     }
 }

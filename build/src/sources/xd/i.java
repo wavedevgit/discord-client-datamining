@@ -40,82 +40,82 @@ import xd.g;
 public final class i implements k.a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final g f54602a;
+    private final g f55170a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final f f54603b;
+    private final f f55171b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final Pattern f54578c = Pattern.compile("AVERAGE-BANDWIDTH=(\\d+)\\b");
+    private static final Pattern f55146c = Pattern.compile("AVERAGE-BANDWIDTH=(\\d+)\\b");
 
     /* renamed from: d  reason: collision with root package name */
-    private static final Pattern f54579d = Pattern.compile("VIDEO=\"(.+?)\"");
+    private static final Pattern f55147d = Pattern.compile("VIDEO=\"(.+?)\"");
 
     /* renamed from: e  reason: collision with root package name */
-    private static final Pattern f54580e = Pattern.compile("AUDIO=\"(.+?)\"");
+    private static final Pattern f55148e = Pattern.compile("AUDIO=\"(.+?)\"");
 
     /* renamed from: f  reason: collision with root package name */
-    private static final Pattern f54581f = Pattern.compile("SUBTITLES=\"(.+?)\"");
+    private static final Pattern f55149f = Pattern.compile("SUBTITLES=\"(.+?)\"");
 
     /* renamed from: g  reason: collision with root package name */
-    private static final Pattern f54582g = Pattern.compile("CLOSED-CAPTIONS=\"(.+?)\"");
+    private static final Pattern f55150g = Pattern.compile("CLOSED-CAPTIONS=\"(.+?)\"");
 
     /* renamed from: h  reason: collision with root package name */
-    private static final Pattern f54583h = Pattern.compile("[^-]BANDWIDTH=(\\d+)\\b");
+    private static final Pattern f55151h = Pattern.compile("[^-]BANDWIDTH=(\\d+)\\b");
 
     /* renamed from: i  reason: collision with root package name */
-    private static final Pattern f54584i = Pattern.compile("CHANNELS=\"(.+?)\"");
+    private static final Pattern f55152i = Pattern.compile("CHANNELS=\"(.+?)\"");
 
     /* renamed from: j  reason: collision with root package name */
-    private static final Pattern f54585j = Pattern.compile("CODECS=\"(.+?)\"");
+    private static final Pattern f55153j = Pattern.compile("CODECS=\"(.+?)\"");
 
     /* renamed from: k  reason: collision with root package name */
-    private static final Pattern f54586k = Pattern.compile("RESOLUTION=(\\d+x\\d+)");
+    private static final Pattern f55154k = Pattern.compile("RESOLUTION=(\\d+x\\d+)");
 
     /* renamed from: l  reason: collision with root package name */
-    private static final Pattern f54587l = Pattern.compile("FRAME-RATE=([\\d\\.]+)\\b");
+    private static final Pattern f55155l = Pattern.compile("FRAME-RATE=([\\d\\.]+)\\b");
 
     /* renamed from: m  reason: collision with root package name */
-    private static final Pattern f54588m = Pattern.compile("#EXT-X-TARGETDURATION:(\\d+)\\b");
+    private static final Pattern f55156m = Pattern.compile("#EXT-X-TARGETDURATION:(\\d+)\\b");
 
     /* renamed from: n  reason: collision with root package name */
-    private static final Pattern f54589n = Pattern.compile("DURATION=([\\d\\.]+)\\b");
+    private static final Pattern f55157n = Pattern.compile("DURATION=([\\d\\.]+)\\b");
 
     /* renamed from: o  reason: collision with root package name */
-    private static final Pattern f54590o = Pattern.compile("PART-TARGET=([\\d\\.]+)\\b");
+    private static final Pattern f55158o = Pattern.compile("PART-TARGET=([\\d\\.]+)\\b");
 
     /* renamed from: p  reason: collision with root package name */
-    private static final Pattern f54591p = Pattern.compile("#EXT-X-VERSION:(\\d+)\\b");
+    private static final Pattern f55159p = Pattern.compile("#EXT-X-VERSION:(\\d+)\\b");
 
     /* renamed from: q  reason: collision with root package name */
-    private static final Pattern f54592q = Pattern.compile("#EXT-X-PLAYLIST-TYPE:(.+)\\b");
+    private static final Pattern f55160q = Pattern.compile("#EXT-X-PLAYLIST-TYPE:(.+)\\b");
 
     /* renamed from: r  reason: collision with root package name */
-    private static final Pattern f54593r = Pattern.compile("CAN-SKIP-UNTIL=([\\d\\.]+)\\b");
+    private static final Pattern f55161r = Pattern.compile("CAN-SKIP-UNTIL=([\\d\\.]+)\\b");
 
     /* renamed from: s  reason: collision with root package name */
-    private static final Pattern f54594s = c("CAN-SKIP-DATERANGES");
+    private static final Pattern f55162s = c("CAN-SKIP-DATERANGES");
 
     /* renamed from: t  reason: collision with root package name */
-    private static final Pattern f54595t = Pattern.compile("SKIPPED-SEGMENTS=(\\d+)\\b");
+    private static final Pattern f55163t = Pattern.compile("SKIPPED-SEGMENTS=(\\d+)\\b");
 
     /* renamed from: u  reason: collision with root package name */
-    private static final Pattern f54596u = Pattern.compile("[:|,]HOLD-BACK=([\\d\\.]+)\\b");
+    private static final Pattern f55164u = Pattern.compile("[:|,]HOLD-BACK=([\\d\\.]+)\\b");
 
     /* renamed from: v  reason: collision with root package name */
-    private static final Pattern f54597v = Pattern.compile("PART-HOLD-BACK=([\\d\\.]+)\\b");
+    private static final Pattern f55165v = Pattern.compile("PART-HOLD-BACK=([\\d\\.]+)\\b");
 
     /* renamed from: w  reason: collision with root package name */
-    private static final Pattern f54598w = c("CAN-BLOCK-RELOAD");
+    private static final Pattern f55166w = c("CAN-BLOCK-RELOAD");
 
     /* renamed from: x  reason: collision with root package name */
-    private static final Pattern f54599x = Pattern.compile("#EXT-X-MEDIA-SEQUENCE:(\\d+)\\b");
+    private static final Pattern f55167x = Pattern.compile("#EXT-X-MEDIA-SEQUENCE:(\\d+)\\b");
 
     /* renamed from: y  reason: collision with root package name */
-    private static final Pattern f54600y = Pattern.compile("#EXTINF:([\\d\\.]+)\\b");
+    private static final Pattern f55168y = Pattern.compile("#EXTINF:([\\d\\.]+)\\b");
 
     /* renamed from: z  reason: collision with root package name */
-    private static final Pattern f54601z = Pattern.compile("#EXTINF:[\\d\\.]+\\b,(.+)");
+    private static final Pattern f55169z = Pattern.compile("#EXTINF:[\\d\\.]+\\b,(.+)");
     private static final Pattern A = Pattern.compile("LAST-MSN=(\\d+)\\b");
     private static final Pattern B = Pattern.compile("LAST-PART=(\\d+)\\b");
     private static final Pattern C = Pattern.compile("TIME-OFFSET=(-?[\\d\\.]+)\\b");
@@ -144,10 +144,10 @@ public final class i implements k.a {
     private static final Pattern Z = Pattern.compile("VALUE=\"(.+?)\"");
 
     /* renamed from: a0  reason: collision with root package name */
-    private static final Pattern f54576a0 = Pattern.compile("IMPORT=\"(.+?)\"");
+    private static final Pattern f55144a0 = Pattern.compile("IMPORT=\"(.+?)\"");
 
     /* renamed from: b0  reason: collision with root package name */
-    private static final Pattern f54577b0 = Pattern.compile("\\{\\$([a-zA-Z0-9\\-_]+)\\}");
+    private static final Pattern f55145b0 = Pattern.compile("\\{\\$([a-zA-Z0-9\\-_]+)\\}");
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class a extends IOException {
@@ -158,34 +158,34 @@ public final class i implements k.a {
     public static class b {
 
         /* renamed from: a  reason: collision with root package name */
-        private final BufferedReader f54604a;
+        private final BufferedReader f55172a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final Queue f54605b;
+        private final Queue f55173b;
 
         /* renamed from: c  reason: collision with root package name */
-        private String f54606c;
+        private String f55174c;
 
         public b(Queue queue, BufferedReader bufferedReader) {
-            this.f54605b = queue;
-            this.f54604a = bufferedReader;
+            this.f55173b = queue;
+            this.f55172a = bufferedReader;
         }
 
         public boolean a() {
             String trim;
-            if (this.f54606c != null) {
+            if (this.f55174c != null) {
                 return true;
             }
-            if (!this.f54605b.isEmpty()) {
-                this.f54606c = (String) oe.a.e((String) this.f54605b.poll());
+            if (!this.f55173b.isEmpty()) {
+                this.f55174c = (String) oe.a.e((String) this.f55173b.poll());
                 return true;
             }
             do {
-                String readLine = this.f54604a.readLine();
-                this.f54606c = readLine;
+                String readLine = this.f55172a.readLine();
+                this.f55174c = readLine;
                 if (readLine != null) {
                     trim = readLine.trim();
-                    this.f54606c = trim;
+                    this.f55174c = trim;
                 } else {
                     return false;
                 }
@@ -195,8 +195,8 @@ public final class i implements k.a {
 
         public String b() {
             if (a()) {
-                String str = this.f54606c;
-                this.f54606c = null;
+                String str = this.f55174c;
+                this.f55174c = null;
                 return str;
             }
             throw new NoSuchElementException();
@@ -204,7 +204,7 @@ public final class i implements k.a {
     }
 
     public i() {
-        this(g.f54552n, null);
+        this(g.f55120n, null);
     }
 
     private static long A(String str, Pattern pattern) {
@@ -212,7 +212,7 @@ public final class i implements k.a {
     }
 
     private static String B(String str, Map map) {
-        Matcher matcher = f54577b0.matcher(str);
+        Matcher matcher = f55145b0.matcher(str);
         StringBuffer stringBuffer = new StringBuffer();
         while (matcher.find()) {
             String group = matcher.group(1);
@@ -274,7 +274,7 @@ public final class i implements k.a {
     private static g.b f(ArrayList arrayList, String str) {
         for (int i10 = 0; i10 < arrayList.size(); i10++) {
             g.b bVar = (g.b) arrayList.get(i10);
-            if (str.equals(bVar.f54570d)) {
+            if (str.equals(bVar.f55138d)) {
                 return bVar;
             }
         }
@@ -284,7 +284,7 @@ public final class i implements k.a {
     private static g.b g(ArrayList arrayList, String str) {
         for (int i10 = 0; i10 < arrayList.size(); i10++) {
             g.b bVar = (g.b) arrayList.get(i10);
-            if (str.equals(bVar.f54571e)) {
+            if (str.equals(bVar.f55139e)) {
                 return bVar;
             }
         }
@@ -294,7 +294,7 @@ public final class i implements k.a {
     private static g.b h(ArrayList arrayList, String str) {
         for (int i10 = 0; i10 < arrayList.size(); i10++) {
             g.b bVar = (g.b) arrayList.get(i10);
-            if (str.equals(bVar.f54569c)) {
+            if (str.equals(bVar.f55137c)) {
                 return bVar;
             }
         }
@@ -309,14 +309,14 @@ public final class i implements k.a {
         String u10 = u(str, J, "1", map);
         if ("urn:uuid:edef8ba9-79d6-4ace-a3c8-27dcd51d21ed".equals(str2)) {
             String z10 = z(str, K, map);
-            return new m.b(mc.d.f36229d, "video/mp4", Base64.decode(z10.substring(z10.indexOf(44)), 0));
+            return new m.b(mc.d.f36797d, "video/mp4", Base64.decode(z10.substring(z10.indexOf(44)), 0));
         } else if ("com.widevine".equals(str2)) {
-            return new m.b(mc.d.f36229d, "hls", w0.s0(str));
+            return new m.b(mc.d.f36797d, "hls", w0.s0(str));
         } else {
             if ("com.microsoft.playready".equals(str2) && "1".equals(u10)) {
                 String z11 = z(str, K, map);
                 byte[] decode = Base64.decode(z11.substring(z11.indexOf(44)), 0);
-                UUID uuid = mc.d.f36230e;
+                UUID uuid = mc.d.f36798e;
                 return new m.b(uuid, "video/mp4", l.a(uuid, decode));
             }
             return null;
@@ -425,11 +425,11 @@ public final class i implements k.a {
                             i10 = 0;
                         }
                         arrayList5 = arrayList16;
-                        int m10 = m(b10, f54583h);
-                        int s10 = s(b10, f54578c, -1);
-                        String v10 = v(b10, f54585j, hashMap2);
+                        int m10 = m(b10, f55151h);
+                        int s10 = s(b10, f55146c, -1);
+                        String v10 = v(b10, f55153j, hashMap2);
                         arrayList6 = arrayList15;
-                        String v11 = v(b10, f54586k, hashMap2);
+                        String v11 = v(b10, f55154k, hashMap2);
                         if (v11 != null) {
                             z11 = z13;
                             String[] d12 = w0.d1(v11, "x");
@@ -449,17 +449,17 @@ public final class i implements k.a {
                             i12 = -1;
                         }
                         arrayList7 = arrayList12;
-                        String v12 = v(b10, f54587l, hashMap2);
+                        String v12 = v(b10, f55155l, hashMap2);
                         if (v12 != null) {
                             f10 = Float.parseFloat(v12);
                         } else {
                             f10 = -1.0f;
                         }
                         arrayList8 = arrayList11;
-                        String v13 = v(b10, f54579d, hashMap2);
-                        String v14 = v(b10, f54580e, hashMap2);
-                        String v15 = v(b10, f54581f, hashMap2);
-                        String v16 = v(b10, f54582g, hashMap2);
+                        String v13 = v(b10, f55147d, hashMap2);
+                        String v14 = v(b10, f55148e, hashMap2);
+                        String v15 = v(b10, f55149f, hashMap2);
+                        String v16 = v(b10, f55150g, hashMap2);
                         if (startsWith) {
                             e11 = u0.e(str5, z(b10, K, hashMap2));
                         } else if (bVar.a()) {
@@ -506,16 +506,16 @@ public final class i implements k.a {
                 int i15 = 0;
                 while (i15 < arrayList9.size()) {
                     g.b bVar3 = (g.b) arrayList9.get(i15);
-                    if (hashSet.add(bVar3.f54567a)) {
-                        if (bVar3.f54568b.f12303u == null) {
+                    if (hashSet.add(bVar3.f55135a)) {
+                        if (bVar3.f55136b.f12303u == null) {
                             z10 = i14;
                         } else {
                             z10 = 0;
                         }
                         oe.a.g(z10);
                         Metadata.b[] bVarArr = new Metadata.b[i14];
-                        bVarArr[0] = new q(null, null, (List) oe.a.e((ArrayList) hashMap.get(bVar3.f54567a)));
-                        arrayList24.add(bVar3.a(bVar3.f54568b.b().Z(new Metadata(bVarArr)).G()));
+                        bVarArr[0] = new q(null, null, (List) oe.a.e((ArrayList) hashMap.get(bVar3.f55135a)));
+                        arrayList24.add(bVar3.a(bVar3.f55136b.b().Z(new Metadata(bVarArr)).G()));
                     }
                     i15++;
                     i14 = 1;
@@ -582,7 +582,7 @@ public final class i implements k.a {
                             arrayList2 = arrayList19;
                             g.b g10 = g(arrayList9, z16);
                             if (g10 != null) {
-                                String M2 = w0.M(g10.f54568b.f12302t, 3);
+                                String M2 = w0.M(g10.f55136b.f12302t, 3);
                                 X2.K(M2);
                                 str2 = c0.g(M2);
                             } else {
@@ -635,14 +635,14 @@ public final class i implements k.a {
                             g.b f11 = f(arrayList9, z16);
                             if (f11 != null) {
                                 bVar2 = f11;
-                                String M3 = w0.M(f11.f54568b.f12302t, 1);
+                                String M3 = w0.M(f11.f55136b.f12302t, 1);
                                 X2.K(M3);
                                 str4 = c0.g(M3);
                             } else {
                                 bVar2 = f11;
                                 str4 = null;
                             }
-                            String v18 = v(str6, f54584i, hashMap2);
+                            String v18 = v(str6, f55152i, hashMap2);
                             if (v18 != null) {
                                 X2.J(Integer.parseInt(w0.e1(v18, "/")[0]));
                                 if ("audio/eac3".equals(str4) && v18.endsWith("/JOC")) {
@@ -681,7 +681,7 @@ public final class i implements k.a {
                         case 3:
                             g.b h10 = h(arrayList9, z16);
                             if (h10 != null) {
-                                Format format2 = h10.f54568b;
+                                Format format2 = h10.f55136b;
                                 String M4 = w0.M(format2.f12302t, 2);
                                 X2.K(M4).g0(c0.g(M4)).n0(format2.B).S(format2.C).R(format2.D);
                             }
@@ -811,25 +811,25 @@ public final class i implements k.a {
     private static f.C0764f y(String str) {
         long j10;
         long j11;
-        double r10 = r(str, f54593r, -9.223372036854776E18d);
+        double r10 = r(str, f55161r, -9.223372036854776E18d);
         long j12 = -9223372036854775807L;
         if (r10 == -9.223372036854776E18d) {
             j10 = -9223372036854775807L;
         } else {
             j10 = (long) (r10 * 1000000.0d);
         }
-        boolean q10 = q(str, f54594s, false);
-        double r11 = r(str, f54596u, -9.223372036854776E18d);
+        boolean q10 = q(str, f55162s, false);
+        double r11 = r(str, f55164u, -9.223372036854776E18d);
         if (r11 == -9.223372036854776E18d) {
             j11 = -9223372036854775807L;
         } else {
             j11 = (long) (r11 * 1000000.0d);
         }
-        double r12 = r(str, f54597v, -9.223372036854776E18d);
+        double r12 = r(str, f55165v, -9.223372036854776E18d);
         if (r12 != -9.223372036854776E18d) {
             j12 = (long) (r12 * 1000000.0d);
         }
-        return new f.C0764f(j10, q10, j11, j12, q(str, f54598w, false));
+        return new f.C0764f(j10, q10, j11, j12, q(str, f55166w, false));
     }
 
     private static String z(String str, Pattern pattern, Map map) {
@@ -868,7 +868,7 @@ public final class i implements k.a {
                     }
                 }
                 arrayDeque.add(trim);
-                return o(this.f54602a, this.f54603b, new b(arrayDeque, bufferedReader), uri.toString());
+                return o(this.f55170a, this.f55171b, new b(arrayDeque, bufferedReader), uri.toString());
             }
             throw l0.c("Input does not start with the #EXTM3U header.", null);
         } finally {
@@ -877,7 +877,7 @@ public final class i implements k.a {
     }
 
     public i(g gVar, f fVar) {
-        this.f54602a = gVar;
-        this.f54603b = fVar;
+        this.f55170a = gVar;
+        this.f55171b = fVar;
     }
 }

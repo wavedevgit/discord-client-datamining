@@ -37,7 +37,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/messages/native/renderer/system_messages/RemoveRecipientSystemMessage.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun56133: for (var _fun56133_ip = 0;;) switch (_fun56133_ip) {
+        _fun56168: for (var _fun56168_ip = 0;;) switch (_fun56168_ip) {
             case 0:
                 var3 = arg0;
                 var0 = var3.message;
@@ -53,8 +53,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = null;
                 var4 = var9 != var12;
                 if (!var4) {
-                    _fun56133_ip = 82;
-                    continue _fun56133
+                    _fun56168_ip = 82;
+                    continue _fun56168
                 }
             case 63:
                 var7 = _closure1_slot3;
@@ -92,33 +92,33 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var14 = var6 === var10;
                 var6 = null;
                 if (!var14) {
-                    _fun56133_ip = 216;
-                    continue _fun56133
+                    _fun56168_ip = 217;
+                    continue _fun56168
                 }
-            case 213:
+            case 214:
                 var6 = var17;
-            case 216:
+            case 217:
                 var7.linkColor = var6;
                 var7.roleColor = var17;
                 var6 = null;
                 if (!var13) {
-                    _fun56133_ip = 234;
-                    continue _fun56133
+                    _fun56168_ip = 235;
+                    continue _fun56168
                 }
-            case 231:
+            case 232:
                 var6 = var18;
-            case 234:
+            case 235:
                 var7.roleColors = var6;
                 var6 = 'dot';
                 var6 = var6 === var10;
                 var10 = var6;
                 if (!var6) {
-                    _fun56133_ip = 257;
-                    continue _fun56133
+                    _fun56168_ip = 258;
+                    continue _fun56168
                 }
-            case 253:
+            case 254:
                 var10 = var9 != var17;
-            case 257:
+            case 258:
                 var7.shouldShowRoleDot = var10;
                 var10 = var0.channel_id;
                 var7.messageChannelId = var10;
@@ -127,10 +127,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8.usernameOnClick = var7;
                 var5 = var5.id;
                 if (!(var5 !== var11)) {
-                    _fun56133_ip = 574;
-                    continue _fun56133
+                    _fun56168_ip = 575;
+                    continue _fun56168
                 }
-            case 296:
+            case 297:
                 var7 = _closure1_slot5;
                 var5 = var7.getUser;
                 var10 = var5.bind(var7)(var11);
@@ -155,30 +155,30 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5.otherColorString = var7;
                 var11 = null;
                 if (!var14) {
-                    _fun56133_ip = 404;
-                    continue _fun56133
+                    _fun56168_ip = 405;
+                    continue _fun56168
                 }
-            case 401:
+            case 402:
                 var11 = var7;
-            case 404:
+            case 405:
                 var5.linkColor = var11;
                 var5.roleColor = var7;
                 var11 = null;
                 if (!var13) {
-                    _fun56133_ip = 422;
-                    continue _fun56133
+                    _fun56168_ip = 423;
+                    continue _fun56168
                 }
-            case 419:
+            case 420:
                 var11 = var12;
-            case 422:
+            case 423:
                 var5.roleColors = var11;
                 if (!var6) {
-                    _fun56133_ip = 434;
-                    continue _fun56133
+                    _fun56168_ip = 435;
+                    continue _fun56168
                 }
-            case 430:
+            case 431:
                 var6 = var9 != var7;
-            case 434:
+            case 435:
                 var5.shouldShowRoleDot = var6;
                 var0 = var0.channel_id;
                 var5.messageChannelId = var0;
@@ -196,18 +196,18 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var6.bind(var2)(var5);
                 var6 = var5.t;
                 if (var4) {
-                    _fun56133_ip = 522;
-                    continue _fun56133
+                    _fun56168_ip = 523;
+                    continue _fun56168
                 }
-            case 508:
+            case 509:
                 var5 = var6.QtZ0RD;
                 var5 = var7.bind(var9)(var5, var10);
-                _fun56133_ip = 536;
-                continue _fun56133;
-            case 522:
+                _fun56168_ip = 537;
+                continue _fun56168;
+            case 523:
                 var6 = var6.KBrM5t;
                 var5 = var7.bind(var9)(var6, var10);
-            case 536:
+            case 537:
                 var0.content = var5;
                 var6 = _closure1_slot1;
                 var7 = _closure1_slot2;
@@ -218,7 +218,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var22 = var0;
                 var5 = copyDataProperties(var22, var21);
                 return var0;
-            case 574:
+            case 575:
                 var0 = {};
                 var9 = _closure1_slot0;
                 var10 = _closure1_slot2;
@@ -231,18 +231,18 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var9.bind(var2)(var5);
                 var5 = var5.t;
                 if (var4) {
-                    _fun56133_ip = 638;
-                    continue _fun56133
+                    _fun56168_ip = 639;
+                    continue _fun56168
                 }
-            case 624:
+            case 625:
                 var4 = var5["Qn5+Lf"];
                 var4 = var6.bind(var7)(var4, var8);
-                _fun56133_ip = 652;
-                continue _fun56133;
-            case 638:
+                _fun56168_ip = 653;
+                continue _fun56168;
+            case 639:
                 var5 = var5.uHmblj;
                 var4 = var6.bind(var7)(var5, var8);
-            case 652:
+            case 653:
                 var0.content = var4;
                 var4 = _closure1_slot1;
                 var5 = _closure1_slot2;
@@ -257,4 +257,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.createRemoveRecipientSystemMessage = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1376, 1372, 1621, 6770, 6771, 1234, 6772, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1376, 1372, 1621, 6752, 6753, 1235, 6754, 2]);

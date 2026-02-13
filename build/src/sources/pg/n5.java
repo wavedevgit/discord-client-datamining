@@ -5,44 +5,44 @@ import bj.c;
 final class n5 implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final n5 f42278a = new n5();
+    static final n5 f42846a = new n5();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final bj.c f42279b;
+    private static final bj.c f42847b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final bj.c f42280c;
+    private static final bj.c f42848c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final bj.c f42281d;
+    private static final bj.c f42849d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final bj.c f42282e;
+    private static final bj.c f42850e;
 
     /* renamed from: f  reason: collision with root package name */
-    private static final bj.c f42283f;
+    private static final bj.c f42851f;
 
     static {
         c.b a10 = bj.c.a("inferenceCommonLogEvent");
         f fVar = new f();
         fVar.a(1);
-        f42279b = a10.b(fVar.b()).a();
+        f42847b = a10.b(fVar.b()).a();
         c.b a11 = bj.c.a("smartReplies");
         f fVar2 = new f();
         fVar2.a(2);
-        f42280c = a11.b(fVar2.b()).a();
+        f42848c = a11.b(fVar2.b()).a();
         c.b a12 = bj.c.a("resultStatus");
         f fVar3 = new f();
         fVar3.a(3);
-        f42281d = a12.b(fVar3.b()).a();
+        f42849d = a12.b(fVar3.b()).a();
         c.b a13 = bj.c.a("suggestionsCount");
         f fVar4 = new f();
         fVar4.a(4);
-        f42282e = a13.b(fVar4.b()).a();
+        f42850e = a13.b(fVar4.b()).a();
         c.b a14 = bj.c.a("blacklistErrorCode");
         f fVar5 = new f();
         fVar5.a(5);
-        f42283f = a14.b(fVar5.b()).a();
+        f42851f = a14.b(fVar5.b()).a();
     }
 
     private n5() {

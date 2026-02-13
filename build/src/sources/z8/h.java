@@ -11,15 +11,15 @@ import p8.j;
 public class h implements Supplier {
 
     /* renamed from: a  reason: collision with root package name */
-    private final List f56178a;
+    private final List f56746a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final boolean f56179b;
+    private final boolean f56747b;
 
     private h(List list, boolean z10) {
         j.c(!list.isEmpty(), "List of suppliers is empty!");
-        this.f56178a = list;
-        this.f56179b = z10;
+        this.f56746a = list;
+        this.f56747b = z10;
     }
 
     public static h c(List list, boolean z10) {
@@ -39,15 +39,15 @@ public class h implements Supplier {
         if (!(obj instanceof h)) {
             return false;
         }
-        return p8.h.a(this.f56178a, ((h) obj).f56178a);
+        return p8.h.a(this.f56746a, ((h) obj).f56746a);
     }
 
     public int hashCode() {
-        return this.f56178a.hashCode();
+        return this.f56746a.hashCode();
     }
 
     public String toString() {
-        return p8.h.b(this).b("list", this.f56178a).toString();
+        return p8.h.b(this).b("list", this.f56746a).toString();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -55,34 +55,34 @@ public class h implements Supplier {
     public class a extends z8.a {
 
         /* renamed from: h  reason: collision with root package name */
-        private ArrayList f56180h;
+        private ArrayList f56748h;
 
         /* renamed from: i  reason: collision with root package name */
-        private int f56181i;
+        private int f56749i;
 
         /* renamed from: j  reason: collision with root package name */
-        private int f56182j;
+        private int f56750j;
 
         /* renamed from: k  reason: collision with root package name */
-        private AtomicInteger f56183k;
+        private AtomicInteger f56751k;
 
         /* renamed from: l  reason: collision with root package name */
-        private Throwable f56184l;
+        private Throwable f56752l;
 
         /* renamed from: m  reason: collision with root package name */
-        private Map f56185m;
+        private Map f56753m;
 
         public a() {
-            if (!h.this.f56179b) {
+            if (!h.this.f56747b) {
                 y();
             }
         }
 
         private synchronized DataSource A(int i10) {
             DataSource dataSource;
-            ArrayList arrayList = this.f56180h;
+            ArrayList arrayList = this.f56748h;
             if (arrayList != null && i10 < arrayList.size()) {
-                dataSource = (DataSource) this.f56180h.get(i10);
+                dataSource = (DataSource) this.f56748h.get(i10);
             } else {
                 dataSource = null;
             }
@@ -90,13 +90,13 @@ public class h implements Supplier {
         }
 
         private synchronized DataSource B() {
-            return A(this.f56181i);
+            return A(this.f56749i);
         }
 
         private void C() {
             Throwable th2;
-            if (this.f56183k.incrementAndGet() == this.f56182j && (th2 = this.f56184l) != null) {
-                o(th2, this.f56185m);
+            if (this.f56751k.incrementAndGet() == this.f56750j && (th2 = this.f56752l) != null) {
+                o(th2, this.f56753m);
             }
         }
 
@@ -109,17 +109,17 @@ public class h implements Supplier {
             /*
                 r2 = this;
                 monitor-enter(r2)
-                int r0 = r2.f56181i     // Catch: java.lang.Throwable -> L1b
+                int r0 = r2.f56749i     // Catch: java.lang.Throwable -> L1b
                 com.facebook.datasource.DataSource r1 = r2.A(r3)     // Catch: java.lang.Throwable -> L1b
                 if (r4 != r1) goto L2f
-                int r4 = r2.f56181i     // Catch: java.lang.Throwable -> L1b
+                int r4 = r2.f56749i     // Catch: java.lang.Throwable -> L1b
                 if (r3 != r4) goto Le
                 goto L2f
             Le:
                 com.facebook.datasource.DataSource r4 = r2.B()     // Catch: java.lang.Throwable -> L1b
                 if (r4 == 0) goto L1f
                 if (r5 == 0) goto L1d
-                int r4 = r2.f56181i     // Catch: java.lang.Throwable -> L1b
+                int r4 = r2.f56749i     // Catch: java.lang.Throwable -> L1b
                 if (r3 >= r4) goto L1d
                 goto L1f
             L1b:
@@ -129,7 +129,7 @@ public class h implements Supplier {
                 r3 = r0
                 goto L21
             L1f:
-                r2.f56181i = r3     // Catch: java.lang.Throwable -> L1b
+                r2.f56749i = r3     // Catch: java.lang.Throwable -> L1b
             L21:
                 monitor-exit(r2)     // Catch: java.lang.Throwable -> L1b
             L22:
@@ -154,8 +154,8 @@ public class h implements Supplier {
         public void E(int i10, DataSource dataSource) {
             x(G(i10, dataSource));
             if (i10 == 0) {
-                this.f56184l = dataSource.b();
-                this.f56185m = dataSource.getExtras();
+                this.f56752l = dataSource.b();
+                this.f56753m = dataSource.getExtras();
             }
             C();
         }
@@ -192,20 +192,20 @@ public class h implements Supplier {
         }
 
         private void y() {
-            if (this.f56183k != null) {
+            if (this.f56751k != null) {
                 return;
             }
             synchronized (this) {
                 try {
-                    if (this.f56183k == null) {
-                        this.f56183k = new AtomicInteger(0);
-                        int size = h.this.f56178a.size();
-                        this.f56182j = size;
-                        this.f56181i = size;
-                        this.f56180h = new ArrayList(size);
+                    if (this.f56751k == null) {
+                        this.f56751k = new AtomicInteger(0);
+                        int size = h.this.f56746a.size();
+                        this.f56750j = size;
+                        this.f56749i = size;
+                        this.f56748h = new ArrayList(size);
                         for (int i10 = 0; i10 < size; i10++) {
-                            DataSource dataSource = (DataSource) ((Supplier) h.this.f56178a.get(i10)).get();
-                            this.f56180h.add(dataSource);
+                            DataSource dataSource = (DataSource) ((Supplier) h.this.f56746a.get(i10)).get();
+                            this.f56748h.add(dataSource);
                             dataSource.c(new C0795a(i10), n8.a.a());
                             if (!dataSource.a()) {
                             }
@@ -218,10 +218,10 @@ public class h implements Supplier {
 
         private synchronized DataSource z(int i10) {
             DataSource dataSource;
-            ArrayList arrayList = this.f56180h;
+            ArrayList arrayList = this.f56748h;
             dataSource = null;
             if (arrayList != null && i10 < arrayList.size()) {
-                dataSource = (DataSource) this.f56180h.set(i10, null);
+                dataSource = (DataSource) this.f56748h.set(i10, null);
             }
             return dataSource;
         }
@@ -230,7 +230,7 @@ public class h implements Supplier {
         public synchronized boolean a() {
             boolean z10;
             try {
-                if (h.this.f56179b) {
+                if (h.this.f56747b) {
                     y();
                 }
                 DataSource B = B();
@@ -248,7 +248,7 @@ public class h implements Supplier {
 
         @Override // z8.a, com.facebook.datasource.DataSource
         public boolean close() {
-            if (h.this.f56179b) {
+            if (h.this.f56747b) {
                 y();
             }
             synchronized (this) {
@@ -256,8 +256,8 @@ public class h implements Supplier {
                     if (!super.close()) {
                         return false;
                     }
-                    ArrayList arrayList = this.f56180h;
-                    this.f56180h = null;
+                    ArrayList arrayList = this.f56748h;
+                    this.f56748h = null;
                     if (arrayList != null) {
                         for (int i10 = 0; i10 < arrayList.size(); i10++) {
                             x((DataSource) arrayList.get(i10));
@@ -275,7 +275,7 @@ public class h implements Supplier {
         public synchronized Object getResult() {
             Object obj;
             try {
-                if (h.this.f56179b) {
+                if (h.this.f56747b) {
                     y();
                 }
                 DataSource B = B();
@@ -296,29 +296,29 @@ public class h implements Supplier {
         public class C0795a implements e {
 
             /* renamed from: a  reason: collision with root package name */
-            private int f56187a;
+            private int f56755a;
 
             public C0795a(int i10) {
-                this.f56187a = i10;
+                this.f56755a = i10;
             }
 
             @Override // z8.e
             public void onFailure(DataSource dataSource) {
-                a.this.E(this.f56187a, dataSource);
+                a.this.E(this.f56755a, dataSource);
             }
 
             @Override // z8.e
             public void onNewResult(DataSource dataSource) {
                 if (dataSource.a()) {
-                    a.this.F(this.f56187a, dataSource);
+                    a.this.F(this.f56755a, dataSource);
                 } else if (dataSource.isFinished()) {
-                    a.this.E(this.f56187a, dataSource);
+                    a.this.E(this.f56755a, dataSource);
                 }
             }
 
             @Override // z8.e
             public void onProgressUpdate(DataSource dataSource) {
-                if (this.f56187a == 0) {
+                if (this.f56755a == 0) {
                     a.this.q(dataSource.d());
                 }
             }

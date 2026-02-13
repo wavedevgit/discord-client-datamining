@@ -1,185 +1,372 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var3 = exports;
-    var0 = require;
-    var _closure1_slot0 = var0;
-    var0 = dependencyMap;
-    var _closure1_slot1 = var0;
-    var0 = global;
-    var6 = var0.Object;
-    var5 = var6.defineProperty;
-    var4 = {};
-    var2 = true;
-    var4.value = var2;
-    var2 = '__esModule';
-    var2 = var5.bind(var6)(var3, var2, var4);
-    var2 = function arg0() {
-        _fun13957: for (var _fun13957_ip = 0;;) switch (_fun13957_ip) {
+    var5 = require;
+    var2 = exports;
+    var6 = dependencyMap;
+    var _closure1_slot0 = var5;
+    var _closure1_slot1 = var6;
+    var0 = function() {
+        _fun13943: for (var _fun13943_ip = 0;;) switch (_fun13943_ip) {
             case 0:
-                var2 = _closure1_slot0;
-                var1 = _closure1_slot1;
-                var4 = 0;
-                var1 = var1[var4];
-                var10 = undefined;
-                var1 = var2.bind(var10)(var1);
-                var2 = var1.hash;
-                var1 = arg0;
-                var3 = var2.bind(var10)(var1, var4);
-                var2 = global;
-                var1 = var2.BigInt;
-                var9 = var1.bind(var10)(var3);
-                var5 = new Array(0);
-                var7 = var2.Math;
-                var6 = var7.ceil;
-                var11 = var2.Math;
-                var8 = var11.floor;
-                var12 = var2.Math;
-                var3 = var12.log2;
-                var1 = var2.Number;
-                var1 = var1.bind(var10)(var9);
-                var3 = var3.bind(var12)(var1);
-                var1 = 1;
-                var3 = var3 + var1;
-                var3 = var8.bind(var11)(var3);
-                var8 = 8;
-                var3 = var3 / var8;
-                var7 = var6.bind(var7)(var3);
-                var11 = var4 < var7;
-                var6 = 255;
-                var3 = 0;
-                if (!var11) {
-                    _fun13957_ip = 206;
-                    continue _fun13957
-                }
-            case 143:
-                var12 = var5.unshift;
-                var13 = var2.Number;
-                var14 = var2.BigInt;
-                var11 = var8 * var3;
-                var11 = var14.bind(var10)(var11);
-                var14 = var9 >> var11;
-                var11 = var2.BigInt;
-                var11 = var11.bind(var10)(var6);
-                var11 = var14 & var11;
-                var11 = var13.bind(var10)(var11);
-                var11 = var12.bind(var5)(var11);
-                var3 = var3 + 1;
-                if (var3 < var7) {
-                    _fun13957_ip = 143;
-                    continue _fun13957
-                }
-            case 206:
-                var2 = var2.Uint8Array;
-                var3 = var2.prototype;
-                var3 = Object.create(var3, {
-                    constructor: {
-                        value: var2
-                    }
-                });
-                var17 = var3;
-                var16 = var5;
-                var2 = new var17[var2](var16, var15);
-                var5 = var2 instanceof Object ? var2 : var3;
-                var2 = _closure1_slot3;
-                var3 = var5;
-                if (var2) {
-                    _fun13957_ip = 255;
-                    continue _fun13957
-                }
-            case 245:
-                var2 = var5.reverse;
-                var3 = var2.bind(var5)();
-            case 255:
-                var5 = _closure1_slot2;
-                var2 = var3[var4];
-                var7 = 2;
-                var2 = var2 >> var7;
-                var5 = var5[var2];
-                var2 = new Array(6);
-                var2[0] = var5;
-                var8 = _closure1_slot2;
-                var4 = var3[var4];
-                var5 = 3;
-                var6 = var5 & var4;
-                var9 = var3[var1];
-                var4 = 4;
-                var9 = var9 >> var4;
-                var6 = var6 << var4;
-                var6 = var6 | var9;
-                var6 = var8[var6];
-                var2[1] = var6;
-                var6 = _closure1_slot2;
-                var8 = var3[var1];
-                var1 = 15;
-                var1 = var1 & var8;
-                var9 = var3[var7];
-                var8 = 6;
-                var8 = var9 >> var8;
-                var1 = var1 << var7;
-                var1 = var1 | var8;
-                var1 = var6[var1];
-                var2[2] = var1;
-                var6 = _closure1_slot2;
-                var8 = var3[var7];
-                var1 = 63;
-                var1 = var1 & var8;
-                var1 = var6[var1];
-                var2[3] = var1;
-                var6 = _closure1_slot2;
-                var1 = var3[var5];
-                var1 = var1 >> var7;
-                var1 = var6[var1];
-                var2[4] = var1;
-                var1 = _closure1_slot2;
-                var0 = var3[var5];
-                var0 = var5 & var0;
-                var3 = var3[var4];
-                var3 = var3 >> var4;
-                var0 = var0 << var4;
-                var0 = var0 | var3;
-                var0 = var1[var0];
-                var2[5] = var0;
-                var1 = var2.join;
-                var0 = '';
-                var0 = var1.bind(var2)(var0);
+            case 2: // try_start_0
+                var1 = global;
+                var2 = var1.Boolean;
+                var2 = var2.prototype;
+                var3 = var2.valueOf;
+                var2 = var3.call;
+                var7 = var1.Reflect;
+                var6 = var7.construct;
+                var5 = var1.Boolean;
+                var4 = new Array(0);
+                var1 = function() { // Environment: var0
+                    var0 = undefined;
+                    return var0;
+                };
+                var1 = var6.bind(var7)(var5, var4, var1);
+                var1 = var2.bind(var3)(var1);
+                var1 = !var1;
+                var _closure2_slot0 = var1;
+            case 70: // try_end0
+                _fun13943_ip = 74;
+                continue _fun13943;
+            case 72: // catch_target0
+                CatchBlockStart(arg_register = 1);
+            case 74:
+                var1 = function() {
+                    var0 = _closure2_slot0;
+                    var0 = !var0;
+                    var0 = !var0;
+                    return var0;
+                };
+                _closure1_slot9 = var1;
+                var0 = undefined;
+                var0 = var1.bind(var0)();
                 return var0;
         }
     };
-    var3.runtimeHashMessageKey = var2;
-    var4 = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/';
-    var3 = var4.split;
-    var2 = '';
-    var2 = var3.bind(var4)(var2);
-    var _closure1_slot2 = var2;
-    var4 = var0.Uint8Array;
-    var2 = var4.prototype;
-    var3 = Object.create(var2, {
-        constructor: {
-            value: var4
+    var _closure1_slot9 = var0;
+    var0 = function arg0() {
+        var1 = arg0;
+        var _closure2_slot0 = var1;
+        var3 = _closure1_slot0;
+        var2 = _closure1_slot1;
+        var1 = 7;
+        var1 = var2[var1];
+        var2 = undefined;
+        var1 = var3.bind(var2)(var1);
+        var1 = var1.FormatBuilder;
+        var0 = function(arg0) { // Environment: var0
+            var3 = function() {
+                _fun13948: for (var _fun13948_ip = 0;;) switch (_fun13948_ip) {
+                    case 0:
+                        var3 = this;
+                        var2 = undefined;
+                        var4 = undefined;
+                        var0 = _closure1_slot2;
+                        var1 = _closure3_slot0;
+                        var0 = var0.bind(var2)(var3, var1);
+                        var0 = _closure1_slot5;
+                        var8 = var0.bind(var2)(var1);
+                        var1 = _closure1_slot4;
+                        var0 = _closure1_slot9;
+                        var0 = var0.bind(var2)();
+                        if (var0) {
+                            _fun13948_ip = 69;
+                            continue _fun13948
+                        }
+                    case 51:
+                        var6 = var8.apply;
+                        var4 = arguments;
+                        var0 = var4;
+                        var0 = var6.bind(var8)(var3, var0);
+                        _fun13948_ip = 105;
+                        continue _fun13948;
+                    case 69:
+                        var6 = global;
+                        var7 = var6.Reflect;
+                        var6 = var7.construct;
+                        var5 = _closure1_slot5;
+                        var5 = var5.bind(var2)(var3);
+                        var5 = var5.constructor;
+                        var4 = arguments;
+                        var0 = var6.bind(var7)(var8, var4, var5);
+                    case 105:
+                        var0 = var1.bind(var2)(var3, var0);
+                        var1 = 0;
+                        var0._nodeKey = var1;
+                        var1 = new Array(0);
+                        var0.result = var1;
+                        return var0;
+                }
+            };
+            var _closure3_slot0 = var3;
+            var4 = _closure1_slot6;
+            var2 = undefined;
+            var1 = arg0;
+            var1 = var4.bind(var2)(var3, var1);
+            var1 = _closure1_slot3;
+            var4 = {};
+            var0 = 'pushRichTextTag';
+            var4.key = var0;
+            var0 = function arg0, arg1, arg2() {
+                var3 = this;
+                var2 = var3.result;
+                var1 = var2.push;
+                var6 = _closure2_slot0;
+                var0 = arg0;
+                var5 = var6[var0];
+                var0 = var3.context;
+                var8 = var0.keyPrefix;
+                var0 = var3._nodeKey;
+                var7 = parseFloat(var0);
+                var0 = var7 + 1;
+                var3._nodeKey = var0;
+                var0 = global;
+                var0 = var0.HermesInternal;
+                var4 = var0.concat;
+                var3 = '';
+                var0 = '.tag-';
+                var4 = var4.bind(var3)(var8, var0, var7);
+                var3 = arg1;
+                var0 = arg2;
+                var0 = var5.bind(var6)(var3, var4, var0);
+                var0 = var1.bind(var2)(var0);
+                var0 = undefined;
+                return var0;
+            };
+            var4.value = var0;
+            var0 = new Array(4);
+            var0[0] = var4;
+            var4 = {};
+            var6 = 'pushLiteralText';
+            var4.key = var6;
+            var6 = function arg0() {
+                _fun13950: for (var _fun13950_ip = 0;;) switch (_fun13950_ip) {
+                    case 0:
+                        var3 = arg0;
+                        var0 = this;
+                        var4 = var0.result;
+                        var1 = var0.result;
+                        var2 = var1.length;
+                        var1 = 1;
+                        var2 = var2 - var1;
+                        var2 = var4[var2];
+                        var4 = 'string';
+                        var2 = typeof var2;
+                        if (!(var4 !== var2)) {
+                            _fun13950_ip = 63;
+                            continue _fun13950
+                        }
+                    case 45:
+                        var4 = var0.result;
+                        var2 = var4.push;
+                        var2 = var2.bind(var4)(var3);
+                        _fun13950_ip = 96;
+                        continue _fun13950;
+                    case 63:
+                        var2 = var0.result;
+                        var0 = var0.result;
+                        var0 = var0.length;
+                        var1 = var0 - var1;
+                        var0 = var2[var1];
+                        var0 = var0 + var3;
+                        var2[var1] = var0;
+                    case 96:
+                        var0 = undefined;
+                        return var0;
+                }
+            };
+            var4.value = var6;
+            var0[1] = var4;
+            var4 = {};
+            var6 = 'pushObject';
+            var4.key = var6;
+            var6 = function arg0() {
+                var0 = this;
+                var2 = var0.result;
+                var1 = var2.push;
+                var0 = arg0;
+                var0 = var1.bind(var2)(var0);
+                var0 = undefined;
+                return var0;
+            };
+            var4.value = var6;
+            var0[2] = var4;
+            var4 = {};
+            var6 = 'finish';
+            var4.key = var6;
+            var5 = function() {
+                var0 = this;
+                var0 = var0.result;
+                return var0;
+            };
+            var4.value = var5;
+            var0[3] = var4;
+            var0 = var1.bind(var2)(var3, var0);
+            return var0;
+        };
+        var0 = var0.bind(var2)(var1);
+        return var0;
+    };
+    var _closure1_slot10 = var0;
+    var1 = function arg0, arg1, arg2() {
+        _fun13953: for (var _fun13953_ip = 0;;) switch (_fun13953_ip) {
+            case 0:
+                var5 = arg0;
+                var4 = this;
+                var2 = 'string';
+                var1 = typeof var5;
+                var0 = var5;
+                if (!(var2 !== var1)) {
+                    _fun13953_ip = 39;
+                    continue _fun13953
+                }
+            case 20:
+                var3 = var4.bindFormatValues;
+                var2 = arg2;
+                var1 = arg1;
+                var0 = var3.bind(var4)(var2, var5, var1);
+            case 39:
+                return var0;
         }
-    });
-    var9 = 4;
-    var10 = var3;
-    var2 = new var10[var4](var9, var8);
-    var3 = var2 instanceof Object ? var2 : var3;
-    var4 = var0.Uint32Array;
-    var9 = var3.buffer;
-    var2 = var4.prototype;
-    var2 = Object.create(var2, {
-        constructor: {
-            value: var4
-        }
-    });
-    var10 = var2;
-    var0 = new var10[var4](var9, var8);
-    var4 = var0 instanceof Object ? var0 : var2;
-    var2 = 1;
+    };
+    var _closure1_slot11 = var1;
+    var3 = function arg0() {
+        var0 = {};
+        var2 = _closure1_slot11;
+        var0.format = var2;
+        var3 = _closure1_slot10;
+        var2 = undefined;
+        var1 = arg0;
+        var1 = var3.bind(var2)(var1);
+        var0.builder = var1;
+        return var0;
+    };
     var0 = 0;
-    var4[var0] = var2;
-    var0 = var3[var0];
-    var0 = var2 & var0;
-    var0 = !var0;
-    var _closure1_slot3 = var0;
+    var7 = var6[var0];
     var0 = undefined;
+    var7 = var5.bind(var0)(var7);
+    var _closure1_slot2 = var7;
+    var7 = 1;
+    var7 = var6[var7];
+    var7 = var5.bind(var0)(var7);
+    var _closure1_slot3 = var7;
+    var7 = 2;
+    var7 = var6[var7];
+    var7 = var5.bind(var0)(var7);
+    var _closure1_slot4 = var7;
+    var7 = 3;
+    var7 = var6[var7];
+    var7 = var5.bind(var0)(var7);
+    var _closure1_slot5 = var7;
+    var7 = 4;
+    var7 = var6[var7];
+    var7 = var5.bind(var0)(var7);
+    var _closure1_slot6 = var7;
+    var7 = 5;
+    var7 = var6[var7];
+    var7 = var5.bind(var0)(var7);
+    var _closure1_slot7 = var7;
+    var7 = global;
+    var10 = var7.Object;
+    var9 = var10.defineProperty;
+    var8 = {};
+    var7 = true;
+    var8.value = var7;
+    var7 = '__esModule';
+    var7 = var9.bind(var10)(var2, var7, var8);
+    var2.DEFAULT_REACT_RICH_TEXT_ELEMENTS = var0;
+    var2.reactFormatter = var0;
+    var2.formatReact = var1;
+    var2.makeReactFormatter = var3;
+    var1 = 6;
+    var1 = var6[var1];
+    var1 = var5.bind(var0)(var1);
+    var1 = var1.createElement;
+    var _closure1_slot8 = var1;
+    var1 = {};
+    var5 = function arg0, arg1() {
+        var4 = _closure1_slot8;
+        var3 = {};
+        var0 = arg1;
+        var3.key = var0;
+        var2 = undefined;
+        var1 = 'strong';
+        var0 = arg0;
+        var0 = var4.bind(var2)(var1, var3, var0);
+        return var0;
+    };
+    var1.$b = var5;
+    var5 = function arg0, arg1() {
+        var4 = _closure1_slot8;
+        var3 = {};
+        var0 = arg1;
+        var3.key = var0;
+        var2 = undefined;
+        var1 = 'em';
+        var0 = arg0;
+        var0 = var4.bind(var2)(var1, var3, var0);
+        return var0;
+    };
+    var1.$i = var5;
+    var5 = function arg0, arg1() {
+        var4 = _closure1_slot8;
+        var3 = {};
+        var0 = arg1;
+        var3.key = var0;
+        var2 = undefined;
+        var1 = 'del';
+        var0 = arg0;
+        var0 = var4.bind(var2)(var1, var3, var0);
+        return var0;
+    };
+    var1.$del = var5;
+    var5 = function arg0, arg1() {
+        var4 = _closure1_slot8;
+        var3 = {};
+        var0 = arg1;
+        var3.key = var0;
+        var2 = undefined;
+        var1 = 'code';
+        var0 = arg0;
+        var0 = var4.bind(var2)(var1, var3, var0);
+        return var0;
+    };
+    var1.$code = var5;
+    var5 = function arg0, arg1, arg2() {
+        var3 = _closure1_slot7;
+        var4 = undefined;
+        var2 = arg2;
+        var0 = 1;
+        var2 = var3.bind(var4)(var2, var0);
+        var0 = 0;
+        var0 = var2[var0];
+        var3 = _closure1_slot8;
+        var2 = {};
+        var2.href = var0;
+        var0 = arg1;
+        var2.key = var0;
+        var1 = 'a';
+        var0 = arg0;
+        var0 = var3.bind(var4)(var1, var2, var0);
+        return var0;
+    };
+    var1.$link = var5;
+    var4 = function arg0, arg1() {
+        var4 = _closure1_slot8;
+        var3 = {};
+        var0 = arg1;
+        var3.key = var0;
+        var2 = undefined;
+        var1 = 'p';
+        var0 = arg0;
+        var0 = var4.bind(var2)(var1, var3, var0);
+        return var0;
+    };
+    var1.$p = var4;
+    var2.DEFAULT_REACT_RICH_TEXT_ELEMENTS = var1;
+    var1 = var2.DEFAULT_REACT_RICH_TEXT_ELEMENTS;
+    var1 = var3.bind(var0)(var1);
+    var2.reactFormatter = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1289]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 15, 17, 18, 57, 31, 1277]);

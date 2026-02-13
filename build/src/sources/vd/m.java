@@ -3,10 +3,10 @@ package vd;
 final class m implements ud.f {
 
     /* renamed from: a  reason: collision with root package name */
-    private final i f51553a;
+    private final i f52121a;
 
     public m(i iVar) {
-        this.f51553a = iVar;
+        this.f52121a = iVar;
     }
 
     @Override // ud.f
@@ -26,7 +26,7 @@ final class m implements ud.f {
 
     @Override // ud.f
     public i e(long j10) {
-        return this.f51553a;
+        return this.f52121a;
     }
 
     @Override // ud.f

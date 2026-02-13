@@ -7,10 +7,10 @@ import java.util.List;
 public class e {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f50316a;
+    private final String f50884a;
 
     public e(String str) {
-        this.f50316a = str;
+        this.f50884a = str;
     }
 
     public List a(int i10) {
@@ -18,6 +18,6 @@ public class e {
         if (excludedSupportedSizesQuirk == null) {
             return new ArrayList();
         }
-        return excludedSupportedSizesQuirk.c(this.f50316a, i10);
+        return excludedSupportedSizesQuirk.c(this.f50884a, i10);
     }
 }

@@ -9,7 +9,7 @@ public final class a implements Metadata.b {
     public static final Parcelable.Creator<a> CREATOR = new C0588a();
 
     /* renamed from: d  reason: collision with root package name */
-    public final long f41546d;
+    public final long f42114d;
 
     /* renamed from: pc.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
@@ -43,21 +43,21 @@ public final class a implements Metadata.b {
         if (this == obj) {
             return true;
         }
-        if ((obj instanceof a) && this.f41546d == ((a) obj).f41546d) {
+        if ((obj instanceof a) && this.f42114d == ((a) obj).f42114d) {
             return true;
         }
         return false;
     }
 
     public int hashCode() {
-        return g.b(this.f41546d);
+        return g.b(this.f42114d);
     }
 
     public String toString() {
         Object valueOf;
         StringBuilder sb2 = new StringBuilder();
         sb2.append("Creation time: ");
-        long j10 = this.f41546d;
+        long j10 = this.f42114d;
         if (j10 == -2082844800000L) {
             valueOf = "unset";
         } else {
@@ -69,14 +69,14 @@ public final class a implements Metadata.b {
 
     @Override // android.os.Parcelable
     public void writeToParcel(Parcel parcel, int i10) {
-        parcel.writeLong(this.f41546d);
+        parcel.writeLong(this.f42114d);
     }
 
     public a(long j10) {
-        this.f41546d = j10;
+        this.f42114d = j10;
     }
 
     private a(Parcel parcel) {
-        this.f41546d = parcel.readLong();
+        this.f42114d = parcel.readLong();
     }
 }

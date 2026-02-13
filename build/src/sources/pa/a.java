@@ -12,10 +12,10 @@ import p8.j;
 public abstract class a extends z8.a {
 
     /* renamed from: h  reason: collision with root package name */
-    private final d1 f41541h;
+    private final d1 f42109h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final va.d f41542i;
+    private final va.d f42110i;
 
     /* renamed from: pa.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
@@ -51,8 +51,8 @@ public abstract class a extends z8.a {
         Intrinsics.checkNotNullParameter(producer, "producer");
         Intrinsics.checkNotNullParameter(settableProducerContext, "settableProducerContext");
         Intrinsics.checkNotNullParameter(requestListener, "requestListener");
-        this.f41541h = settableProducerContext;
-        this.f41542i = requestListener;
+        this.f42109h = settableProducerContext;
+        this.f42110i = requestListener;
         if (!za.b.d()) {
             m(settableProducerContext.getExtras());
             if (!za.b.d()) {
@@ -61,7 +61,7 @@ public abstract class a extends z8.a {
                 za.b.a("AbstractProducerToDataSourceAdapter()->onRequestStart");
                 try {
                     requestListener.a(settableProducerContext);
-                    Unit unit = Unit.f31988a;
+                    Unit unit = Unit.f32556a;
                 } finally {
                 }
             }
@@ -72,7 +72,7 @@ public abstract class a extends z8.a {
             za.b.a("AbstractProducerToDataSourceAdapter()->produceResult");
             try {
                 producer.b(y(), settableProducerContext);
-                Unit unit2 = Unit.f31988a;
+                Unit unit2 = Unit.f32556a;
                 return;
             } finally {
             }
@@ -85,7 +85,7 @@ public abstract class a extends z8.a {
             } else {
                 za.b.a("AbstractProducerToDataSourceAdapter()->onRequestStart");
                 requestListener.a(settableProducerContext);
-                Unit unit3 = Unit.f31988a;
+                Unit unit3 = Unit.f32556a;
                 za.b.b();
             }
             if (!za.b.d()) {
@@ -93,10 +93,10 @@ public abstract class a extends z8.a {
             } else {
                 za.b.a("AbstractProducerToDataSourceAdapter()->produceResult");
                 producer.b(y(), settableProducerContext);
-                Unit unit4 = Unit.f31988a;
+                Unit unit4 = Unit.f32556a;
                 za.b.b();
             }
-            Unit unit5 = Unit.f31988a;
+            Unit unit5 = Unit.f32556a;
         } catch (Throwable th2) {
             throw th2;
         }
@@ -109,8 +109,8 @@ public abstract class a extends z8.a {
 
     /* JADX INFO: Access modifiers changed from: private */
     public final void C(Throwable th2) {
-        if (super.o(th2, z(this.f41541h))) {
-            this.f41542i.i(this.f41541h, th2);
+        if (super.o(th2, z(this.f42109h))) {
+            this.f42110i.i(this.f42109h, th2);
         }
     }
 
@@ -119,7 +119,7 @@ public abstract class a extends z8.a {
     }
 
     public final d1 A() {
-        return this.f41541h;
+        return this.f42109h;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
@@ -127,7 +127,7 @@ public abstract class a extends z8.a {
         Intrinsics.checkNotNullParameter(producerContext, "producerContext");
         boolean d10 = com.facebook.imagepipeline.producers.c.d(i10);
         if (super.s(obj, d10, z(producerContext)) && d10) {
-            this.f41542i.e(this.f41541h);
+            this.f42110i.e(this.f42109h);
         }
     }
 
@@ -137,8 +137,8 @@ public abstract class a extends z8.a {
             return false;
         }
         if (!super.isFinished()) {
-            this.f41542i.g(this.f41541h);
-            this.f41541h.f();
+            this.f42110i.g(this.f42109h);
+            this.f42109h.f();
             return true;
         }
         return true;

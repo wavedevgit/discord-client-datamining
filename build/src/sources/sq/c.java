@@ -11,34 +11,34 @@ import com.google.android.material.textfield.TextInputLayout;
 public final class c implements ViewBinding {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ConstraintLayout f48201a;
+    private final ConstraintLayout f48769a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final TextInputLayout f48202b;
+    public final TextInputLayout f48770b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final TextInputEditText f48203c;
+    public final TextInputEditText f48771c;
 
     /* renamed from: d  reason: collision with root package name */
-    public final TextInputLayout f48204d;
+    public final TextInputLayout f48772d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final TextInputLayout f48205e;
+    public final TextInputLayout f48773e;
 
     /* renamed from: f  reason: collision with root package name */
-    public final TextInputEditText f48206f;
+    public final TextInputEditText f48774f;
 
     /* renamed from: g  reason: collision with root package name */
-    public final TextInputLayout f48207g;
+    public final TextInputLayout f48775g;
 
     private c(ConstraintLayout constraintLayout, TextInputLayout textInputLayout, TextInputEditText textInputEditText, TextInputLayout textInputLayout2, TextInputLayout textInputLayout3, TextInputEditText textInputEditText2, TextInputLayout textInputLayout4) {
-        this.f48201a = constraintLayout;
-        this.f48202b = textInputLayout;
-        this.f48203c = textInputEditText;
-        this.f48204d = textInputLayout2;
-        this.f48205e = textInputLayout3;
-        this.f48206f = textInputEditText2;
-        this.f48207g = textInputLayout4;
+        this.f48769a = constraintLayout;
+        this.f48770b = textInputLayout;
+        this.f48771c = textInputEditText;
+        this.f48772d = textInputLayout2;
+        this.f48773e = textInputLayout3;
+        this.f48774f = textInputEditText2;
+        this.f48775g = textInputLayout4;
     }
 
     public static c a(View view) {
@@ -51,10 +51,10 @@ public final class c implements ViewBinding {
                 i10 = nq.e.L;
                 TextInputLayout textInputLayout2 = (TextInputLayout) e4.a.a(view, i10);
                 if (textInputLayout2 != null) {
-                    i10 = nq.e.f38290u0;
+                    i10 = nq.e.f38858u0;
                     TextInputLayout textInputLayout3 = (TextInputLayout) e4.a.a(view, i10);
                     if (textInputLayout3 != null) {
-                        i10 = nq.e.f38292v0;
+                        i10 = nq.e.f38860v0;
                         TextInputEditText textInputEditText2 = (TextInputEditText) e4.a.a(view, i10);
                         if (textInputEditText2 != null) {
                             i10 = nq.e.B0;
@@ -75,7 +75,7 @@ public final class c implements ViewBinding {
     }
 
     public static c d(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z10) {
-        View inflate = layoutInflater.inflate(nq.f.f38303c, viewGroup, false);
+        View inflate = layoutInflater.inflate(nq.f.f38871c, viewGroup, false);
         if (z10) {
             viewGroup.addView(inflate);
         }
@@ -85,6 +85,6 @@ public final class c implements ViewBinding {
     @Override // androidx.viewbinding.ViewBinding
     /* renamed from: b */
     public ConstraintLayout getRoot() {
-        return this.f48201a;
+        return this.f48769a;
     }
 }

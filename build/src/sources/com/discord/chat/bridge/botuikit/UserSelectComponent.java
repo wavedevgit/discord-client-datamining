@@ -150,10 +150,10 @@ public final class UserSelectComponent extends SearchableSelectComponent {
         compositeEncoder.k(serialDescriptor, 2, ActionComponentState.Serializer.INSTANCE, userSelectComponent.getState());
         compositeEncoder.y(serialDescriptor, 3, userSelectComponent.getCustomId());
         if (compositeEncoder.z(serialDescriptor, 4) || userSelectComponent.getPlaceholder() != null) {
-            compositeEncoder.o(serialDescriptor, 4, n2.f50033a, userSelectComponent.getPlaceholder());
+            compositeEncoder.o(serialDescriptor, 4, n2.f50601a, userSelectComponent.getPlaceholder());
         }
         if (compositeEncoder.z(serialDescriptor, 5) || userSelectComponent.getAccessibilityLabel() != null) {
-            compositeEncoder.o(serialDescriptor, 5, n2.f50033a, userSelectComponent.getAccessibilityLabel());
+            compositeEncoder.o(serialDescriptor, 5, n2.f50601a, userSelectComponent.getAccessibilityLabel());
         }
         compositeEncoder.w(serialDescriptor, 6, userSelectComponent.getMinValues());
         compositeEncoder.w(serialDescriptor, 7, userSelectComponent.getMaxValues());

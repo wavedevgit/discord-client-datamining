@@ -26,10 +26,10 @@ import ru.h;
 public final class a implements Interceptor {
 
     /* renamed from: b  reason: collision with root package name */
-    public static final C0579a f41253b = new C0579a(null);
+    public static final C0579a f41821b = new C0579a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final okhttp3.b f41254a;
+    private final okhttp3.b f41822a;
 
     /* renamed from: ou.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
@@ -95,51 +95,51 @@ public final class a implements Interceptor {
     public static final class b implements Source {
 
         /* renamed from: d  reason: collision with root package name */
-        private boolean f41255d;
+        private boolean f41823d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ BufferedSource f41256e;
+        final /* synthetic */ BufferedSource f41824e;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ ou.b f41257i;
+        final /* synthetic */ ou.b f41825i;
 
         /* renamed from: o  reason: collision with root package name */
-        final /* synthetic */ BufferedSink f41258o;
+        final /* synthetic */ BufferedSink f41826o;
 
         b(BufferedSource bufferedSource, ou.b bVar, BufferedSink bufferedSink) {
-            this.f41256e = bufferedSource;
-            this.f41257i = bVar;
-            this.f41258o = bufferedSink;
+            this.f41824e = bufferedSource;
+            this.f41825i = bVar;
+            this.f41826o = bufferedSink;
         }
 
         @Override // okio.Source, java.io.Closeable, java.lang.AutoCloseable
         public void close() {
-            if (!this.f41255d && !mu.e.s(this, 100, TimeUnit.MILLISECONDS)) {
-                this.f41255d = true;
-                this.f41257i.a();
+            if (!this.f41823d && !mu.e.s(this, 100, TimeUnit.MILLISECONDS)) {
+                this.f41823d = true;
+                this.f41825i.a();
             }
-            this.f41256e.close();
+            this.f41824e.close();
         }
 
         @Override // okio.Source
         public long read(Buffer sink, long j10) {
             Intrinsics.checkNotNullParameter(sink, "sink");
             try {
-                long read = this.f41256e.read(sink, j10);
+                long read = this.f41824e.read(sink, j10);
                 if (read == -1) {
-                    if (!this.f41255d) {
-                        this.f41255d = true;
-                        this.f41258o.close();
+                    if (!this.f41823d) {
+                        this.f41823d = true;
+                        this.f41826o.close();
                     }
                     return -1L;
                 }
-                sink.z(this.f41258o.f(), sink.size() - read, read);
-                this.f41258o.h0();
+                sink.z(this.f41826o.f(), sink.size() - read, read);
+                this.f41826o.h0();
                 return read;
             } catch (IOException e10) {
-                if (!this.f41255d) {
-                    this.f41255d = true;
-                    this.f41257i.a();
+                if (!this.f41823d) {
+                    this.f41823d = true;
+                    this.f41825i.a();
                 }
                 throw e10;
             }
@@ -147,12 +147,12 @@ public final class a implements Interceptor {
 
         @Override // okio.Source
         public Timeout timeout() {
-            return this.f41256e.timeout();
+            return this.f41824e.timeout();
         }
     }
 
     public a(okhttp3.b bVar) {
-        this.f41254a = bVar;
+        this.f41822a = bVar;
     }
 
     private final Response a(ou.b bVar, Response response) {
@@ -174,7 +174,7 @@ public final class a implements Interceptor {
         ResponseBody n11;
         Intrinsics.checkNotNullParameter(chain, "chain");
         Call call = chain.call();
-        okhttp3.b bVar = this.f41254a;
+        okhttp3.b bVar = this.f41822a;
         qu.e eVar2 = null;
         if (bVar != null) {
             response = bVar.h(chain.i());
@@ -184,7 +184,7 @@ public final class a implements Interceptor {
         c b10 = new c.b(System.currentTimeMillis(), chain.i(), response).b();
         Request b11 = b10.b();
         Response a10 = b10.a();
-        okhttp3.b bVar2 = this.f41254a;
+        okhttp3.b bVar2 = this.f41822a;
         if (bVar2 != null) {
             bVar2.C(b10);
         }
@@ -192,24 +192,24 @@ public final class a implements Interceptor {
             eVar2 = (qu.e) call;
         }
         if (eVar2 == null || (eVar = eVar2.m()) == null) {
-            eVar = okhttp3.e.f40549b;
+            eVar = okhttp3.e.f41117b;
         }
         if (response != null && a10 == null && (n11 = response.n()) != null) {
             mu.e.m(n11);
         }
         if (b11 == null && a10 == null) {
-            Response c10 = new Response.a().r(chain.i()).p(j.HTTP_1_1).g(504).m("Unsatisfiable Request (only-if-cached)").b(mu.e.f36659c).s(-1L).q(System.currentTimeMillis()).c();
+            Response c10 = new Response.a().r(chain.i()).p(j.HTTP_1_1).g(504).m("Unsatisfiable Request (only-if-cached)").b(mu.e.f37227c).s(-1L).q(System.currentTimeMillis()).c();
             eVar.A(call, c10);
             return c10;
         } else if (b11 == null) {
             Intrinsics.checkNotNull(a10);
-            Response c11 = a10.G0().d(f41253b.f(a10)).c();
+            Response c11 = a10.G0().d(f41821b.f(a10)).c();
             eVar.b(call, c11);
             return c11;
         } else {
             if (a10 != null) {
                 eVar.a(call, a10);
-            } else if (this.f41254a != null) {
+            } else if (this.f41822a != null) {
                 eVar.c(call);
             }
             try {
@@ -219,15 +219,15 @@ public final class a implements Interceptor {
                 if (a10 != null) {
                     if (a11 != null && a11.z() == 304) {
                         Response.a G0 = a10.G0();
-                        C0579a c0579a = f41253b;
+                        C0579a c0579a = f41821b;
                         Response c12 = G0.k(c0579a.c(a10.z0(), a11.z0())).s(a11.S0()).q(a11.N0()).d(c0579a.f(a10)).n(c0579a.f(a11)).c();
                         ResponseBody n12 = a11.n();
                         Intrinsics.checkNotNull(n12);
                         n12.close();
-                        okhttp3.b bVar3 = this.f41254a;
+                        okhttp3.b bVar3 = this.f41822a;
                         Intrinsics.checkNotNull(bVar3);
                         bVar3.z();
-                        this.f41254a.I(a10, c12);
+                        this.f41822a.I(a10, c12);
                         eVar.b(call, c12);
                         return c12;
                     }
@@ -238,18 +238,18 @@ public final class a implements Interceptor {
                 }
                 Intrinsics.checkNotNull(a11);
                 Response.a G02 = a11.G0();
-                C0579a c0579a2 = f41253b;
+                C0579a c0579a2 = f41821b;
                 Response c13 = G02.d(c0579a2.f(a10)).n(c0579a2.f(a11)).c();
-                if (this.f41254a != null) {
-                    if (ru.e.b(c13) && c.f41259c.a(c13, b11)) {
-                        Response a12 = a(this.f41254a.n(c13), c13);
+                if (this.f41822a != null) {
+                    if (ru.e.b(c13) && c.f41827c.a(c13, b11)) {
+                        Response a12 = a(this.f41822a.n(c13), c13);
                         if (a10 != null) {
                             eVar.c(call);
                         }
                         return a12;
-                    } else if (f.f47760a.a(b11.j())) {
+                    } else if (f.f48328a.a(b11.j())) {
                         try {
-                            this.f41254a.p(b11);
+                            this.f41822a.p(b11);
                         } catch (IOException unused) {
                         }
                     }

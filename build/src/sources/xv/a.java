@@ -3,20 +3,20 @@ package xv;
 class a {
 
     /* renamed from: b  reason: collision with root package name */
-    private int f55168b = 0;
+    private int f55736b = 0;
 
     /* renamed from: a  reason: collision with root package name */
-    private final StringBuilder f55167a = new StringBuilder();
+    private final StringBuilder f55735a = new StringBuilder();
 
     public void a(CharSequence charSequence) {
-        if (this.f55168b != 0) {
-            this.f55167a.append('\n');
+        if (this.f55736b != 0) {
+            this.f55735a.append('\n');
         }
-        this.f55167a.append(charSequence);
-        this.f55168b++;
+        this.f55735a.append(charSequence);
+        this.f55736b++;
     }
 
     public String b() {
-        return this.f55167a.toString();
+        return this.f55735a.toString();
     }
 }

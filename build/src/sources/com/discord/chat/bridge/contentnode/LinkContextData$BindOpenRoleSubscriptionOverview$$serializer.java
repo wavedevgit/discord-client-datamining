@@ -42,8 +42,8 @@ public /* synthetic */ class LinkContextData$BindOpenRoleSubscriptionOverview$$s
     @Override // tt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        n2 n2Var = n2.f50033a;
-        return new KSerializer[]{n2Var, rt.a.u(tt.h.f49997a), n2Var, rt.a.u(n2Var), rt.a.u(n2Var), rt.a.u(n2Var)};
+        n2 n2Var = n2.f50601a;
+        return new KSerializer[]{n2Var, rt.a.u(tt.h.f50565a), n2Var, rt.a.u(n2Var), rt.a.u(n2Var), rt.a.u(n2Var)};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -63,13 +63,13 @@ public /* synthetic */ class LinkContextData$BindOpenRoleSubscriptionOverview$$s
         if (b10.p()) {
             String m10 = b10.m(serialDescriptor, 0);
             String m11 = b10.m(serialDescriptor, 2);
-            n2 n2Var = n2.f50033a;
+            n2 n2Var = n2.f50601a;
             str = m10;
             str5 = (String) b10.n(serialDescriptor, 5, n2Var, null);
             str3 = (String) b10.n(serialDescriptor, 3, n2Var, null);
             str4 = (String) b10.n(serialDescriptor, 4, n2Var, null);
             str2 = m11;
-            bool = (Boolean) b10.n(serialDescriptor, 1, tt.h.f49997a, null);
+            bool = (Boolean) b10.n(serialDescriptor, 1, tt.h.f50565a, null);
             i10 = 63;
         } else {
             boolean z10 = true;
@@ -90,7 +90,7 @@ public /* synthetic */ class LinkContextData$BindOpenRoleSubscriptionOverview$$s
                         i11 |= 1;
                         continue;
                     case 1:
-                        bool2 = (Boolean) b10.n(serialDescriptor, 1, tt.h.f49997a, bool2);
+                        bool2 = (Boolean) b10.n(serialDescriptor, 1, tt.h.f50565a, bool2);
                         i11 |= 2;
                         break;
                     case 2:
@@ -98,15 +98,15 @@ public /* synthetic */ class LinkContextData$BindOpenRoleSubscriptionOverview$$s
                         i11 |= 4;
                         break;
                     case 3:
-                        str8 = (String) b10.n(serialDescriptor, 3, n2.f50033a, str8);
+                        str8 = (String) b10.n(serialDescriptor, 3, n2.f50601a, str8);
                         i11 |= 8;
                         break;
                     case 4:
-                        str9 = (String) b10.n(serialDescriptor, 4, n2.f50033a, str9);
+                        str9 = (String) b10.n(serialDescriptor, 4, n2.f50601a, str9);
                         i11 |= 16;
                         break;
                     case 5:
-                        str10 = (String) b10.n(serialDescriptor, 5, n2.f50033a, str10);
+                        str10 = (String) b10.n(serialDescriptor, 5, n2.f50601a, str10);
                         i11 |= 32;
                         break;
                     default:

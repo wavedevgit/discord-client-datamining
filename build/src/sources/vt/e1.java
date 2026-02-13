@@ -7,46 +7,46 @@ import kotlin.enums.EnumEntries;
 public final class e1 {
 
     /* renamed from: i  reason: collision with root package name */
-    public static final e1 f51889i = new e1("OBJ", 0, '{', '}');
+    public static final e1 f52457i = new e1("OBJ", 0, '{', '}');
 
     /* renamed from: o  reason: collision with root package name */
-    public static final e1 f51890o = new e1("LIST", 1, '[', ']');
+    public static final e1 f52458o = new e1("LIST", 1, '[', ']');
 
     /* renamed from: p  reason: collision with root package name */
-    public static final e1 f51891p = new e1("MAP", 2, '{', '}');
+    public static final e1 f52459p = new e1("MAP", 2, '{', '}');
 
     /* renamed from: q  reason: collision with root package name */
-    public static final e1 f51892q = new e1("POLY_OBJ", 3, '[', ']');
+    public static final e1 f52460q = new e1("POLY_OBJ", 3, '[', ']');
 
     /* renamed from: r  reason: collision with root package name */
-    private static final /* synthetic */ e1[] f51893r;
+    private static final /* synthetic */ e1[] f52461r;
 
     /* renamed from: s  reason: collision with root package name */
-    private static final /* synthetic */ EnumEntries f51894s;
+    private static final /* synthetic */ EnumEntries f52462s;
 
     /* renamed from: d  reason: collision with root package name */
-    public final char f51895d;
+    public final char f52463d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final char f51896e;
+    public final char f52464e;
 
     static {
         e1[] a10 = a();
-        f51893r = a10;
-        f51894s = hs.a.a(a10);
+        f52461r = a10;
+        f52462s = hs.a.a(a10);
     }
 
     private e1(String str, int i10, char c10, char c11) {
-        this.f51895d = c10;
-        this.f51896e = c11;
+        this.f52463d = c10;
+        this.f52464e = c11;
     }
 
     private static final /* synthetic */ e1[] a() {
-        return new e1[]{f51889i, f51890o, f51891p, f51892q};
+        return new e1[]{f52457i, f52458o, f52459p, f52460q};
     }
 
     public static EnumEntries d() {
-        return f51894s;
+        return f52462s;
     }
 
     public static e1 valueOf(String str) {
@@ -54,6 +54,6 @@ public final class e1 {
     }
 
     public static e1[] values() {
-        return (e1[]) f51893r.clone();
+        return (e1[]) f52461r.clone();
     }
 }

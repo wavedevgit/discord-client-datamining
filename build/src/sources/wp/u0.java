@@ -3,5 +3,5 @@ package wp;
 public abstract class u0 {
 
     /* renamed from: a  reason: collision with root package name */
-    public static int f53365a = 2131166278;
+    public static int f53933a = 2131166278;
 }

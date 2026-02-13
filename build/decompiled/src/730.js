@@ -1,77 +1,82 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun8338: for (var _fun8338_ip = 0;;) switch (_fun8338_ip) {
-        case 0:
-            var3 = require;
-            var4 = dependencyMap;
-            var _closure1_slot0 = var3;
-            var _closure1_slot1 = var4;
-            var0 = global;
-            var0 = var0.Object;
-            var0 = var0.prototype;
-            var1 = var0.hasOwnProperty;
-            var _closure1_slot2 = var1;
-            var0 = var0.propertyIsEnumerable;
-            var _closure1_slot3 = var0;
-            var1 = 0;
-            var5 = var4[var1];
-            var0 = undefined;
-            var6 = var3.bind(var0)(var5);
-            var5 = function() { // Environment: var2
-                var0 = undefined;
-                var0 = arguments;
-                return var0;
-            };
-            var5 = var5.bind(var0)();
-            var5 = var6.bind(var0)(var5);
-            if (var5) {
-                _fun8338_ip = 86;
-                continue _fun8338
-            }
-        case 79:
-            var2 = function(arg0) { // Environment: var2
-                _fun8340: for (var _fun8340_ip = 0;;) switch (_fun8340_ip) {
-                    case 0:
-                        var4 = arg0;
-                        var3 = _closure1_slot0;
-                        var2 = _closure1_slot1;
-                        var0 = 1;
-                        var0 = var2[var0];
-                        var2 = undefined;
-                        var0 = var3.bind(var2)(var0);
-                        var0 = var0.bind(var2)(var4);
-                        if (!var0) {
-                            _fun8340_ip = 55;
-                            continue _fun8340
-                        }
-                    case 36:
-                        var5 = _closure1_slot2;
-                        var3 = var5.call;
-                        var2 = 'callee';
-                        var0 = var3.bind(var5)(var4, var2);
-                    case 55:
-                        if (!var0) {
-                            _fun8340_ip = 80;
-                            continue _fun8340
-                        }
-                    case 58:
-                        var3 = _closure1_slot3;
-                        var2 = var3.call;
-                        var1 = 'callee';
-                        var1 = var2.bind(var3)(var4, var1);
-                        var0 = !var1;
-                    case 80:
-                        return var0;
+    var1 = /^(?:0|[1-9]\d*)$/;
+    var _closure1_slot0 = var1;
+    var1 = function arg0, arg1() {
+        _fun8342: for (var _fun8342_ip = 0;;) switch (_fun8342_ip) {
+            case 0:
+                var2 = arg0;
+                var0 = arg1;
+                var5 = typeof var2;
+                var1 = null;
+                var3 = var1 == var0;
+                var1 = 9007199254740991.0;
+                if (var3) {
+                    _fun8342_ip = 31;
+                    continue _fun8342
                 }
-            };
-            _fun8338_ip = 95;
-            continue _fun8338;
-        case 86:
-            var1 = var4[var1];
-            var2 = var3.bind(var0)(var1);
-        case 95:
-            var1 = arg4;
-            var1.exports = var2;
-            return var0;
-    }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [731, 577]);
+            case 28:
+                var1 = var0;
+            case 31:
+                var3 = !var1;
+                var0 = !var3;
+                if (var3) {
+                    _fun8342_ip = 85;
+                    continue _fun8342
+                }
+            case 40:
+                var3 = 'number';
+                var3 = var3 === var5;
+                if (var3) {
+                    _fun8342_ip = 82;
+                    continue _fun8342
+                }
+            case 51:
+                var4 = 'symbol';
+                var4 = var4 !== var5;
+                if (!var4) {
+                    _fun8342_ip = 79;
+                    continue _fun8342
+                }
+            case 62:
+                var6 = _closure1_slot0;
+                var5 = var6.test;
+                var4 = var5.bind(var6)(var2);
+            case 79:
+                var3 = var4;
+            case 82:
+                var0 = var3;
+            case 85:
+                if (!var0) {
+                    _fun8342_ip = 98;
+                    continue _fun8342
+                }
+            case 88:
+                var3 = -1;
+                var0 = var2 > var3;
+            case 98:
+                if (!var0) {
+                    _fun8342_ip = 114;
+                    continue _fun8342
+                }
+            case 101:
+                var3 = 1;
+                var4 = var2 % var3;
+                var3 = 0;
+                var0 = var4 === var3;
+            case 114:
+                if (!var0) {
+                    _fun8342_ip = 121;
+                    continue _fun8342
+                }
+            case 117:
+                var0 = var2 < var1;
+            case 121:
+                return var0;
+        }
+    };
+    var0 = arg4;
+    var0.exports = var1;
+    var0 = undefined;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, []);

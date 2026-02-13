@@ -9,7 +9,7 @@ import r.b0;
 public final class b0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final a f45778a;
+    private final a f46346a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     interface a {
@@ -21,53 +21,53 @@ public final class b0 {
     public static final class b extends CameraDevice.StateCallback {
 
         /* renamed from: a  reason: collision with root package name */
-        final CameraDevice.StateCallback f45779a;
+        final CameraDevice.StateCallback f46347a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final Executor f45780b;
+        private final Executor f46348b;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         public b(Executor executor, CameraDevice.StateCallback stateCallback) {
-            this.f45780b = executor;
-            this.f45779a = stateCallback;
+            this.f46348b = executor;
+            this.f46347a = stateCallback;
         }
 
         @Override // android.hardware.camera2.CameraDevice.StateCallback
         public void onClosed(final CameraDevice cameraDevice) {
-            this.f45780b.execute(new Runnable() { // from class: r.c0
+            this.f46348b.execute(new Runnable() { // from class: r.c0
                 @Override // java.lang.Runnable
                 public final void run() {
-                    b0.b.this.f45779a.onClosed(cameraDevice);
+                    b0.b.this.f46347a.onClosed(cameraDevice);
                 }
             });
         }
 
         @Override // android.hardware.camera2.CameraDevice.StateCallback
         public void onDisconnected(final CameraDevice cameraDevice) {
-            this.f45780b.execute(new Runnable() { // from class: r.e0
+            this.f46348b.execute(new Runnable() { // from class: r.e0
                 @Override // java.lang.Runnable
                 public final void run() {
-                    b0.b.this.f45779a.onDisconnected(cameraDevice);
+                    b0.b.this.f46347a.onDisconnected(cameraDevice);
                 }
             });
         }
 
         @Override // android.hardware.camera2.CameraDevice.StateCallback
         public void onError(final CameraDevice cameraDevice, final int i10) {
-            this.f45780b.execute(new Runnable() { // from class: r.d0
+            this.f46348b.execute(new Runnable() { // from class: r.d0
                 @Override // java.lang.Runnable
                 public final void run() {
-                    b0.b.this.f45779a.onError(cameraDevice, i10);
+                    b0.b.this.f46347a.onError(cameraDevice, i10);
                 }
             });
         }
 
         @Override // android.hardware.camera2.CameraDevice.StateCallback
         public void onOpened(final CameraDevice cameraDevice) {
-            this.f45780b.execute(new Runnable() { // from class: r.f0
+            this.f46348b.execute(new Runnable() { // from class: r.f0
                 @Override // java.lang.Runnable
                 public final void run() {
-                    b0.b.this.f45779a.onOpened(cameraDevice);
+                    b0.b.this.f46347a.onOpened(cameraDevice);
                 }
             });
         }
@@ -75,9 +75,9 @@ public final class b0 {
 
     private b0(CameraDevice cameraDevice, Handler handler) {
         if (Build.VERSION.SDK_INT >= 28) {
-            this.f45778a = new i0(cameraDevice);
+            this.f46346a = new i0(cameraDevice);
         } else {
-            this.f45778a = h0.e(cameraDevice, handler);
+            this.f46346a = h0.e(cameraDevice, handler);
         }
     }
 
@@ -86,6 +86,6 @@ public final class b0 {
     }
 
     public void a(s.p pVar) {
-        this.f45778a.a(pVar);
+        this.f46346a.a(pVar);
     }
 }

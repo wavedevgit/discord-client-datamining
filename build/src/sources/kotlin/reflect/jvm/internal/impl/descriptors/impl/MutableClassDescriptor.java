@@ -30,28 +30,28 @@ import org.jetbrains.annotations.NotNull;
 public class MutableClassDescriptor extends ClassDescriptorBase {
 
     /* renamed from: s  reason: collision with root package name */
-    private final ClassKind f32505s;
+    private final ClassKind f33073s;
 
     /* renamed from: t  reason: collision with root package name */
-    private final boolean f32506t;
+    private final boolean f33074t;
 
     /* renamed from: u  reason: collision with root package name */
-    private Modality f32507u;
+    private Modality f33075u;
 
     /* renamed from: v  reason: collision with root package name */
-    private DescriptorVisibility f32508v;
+    private DescriptorVisibility f33076v;
 
     /* renamed from: w  reason: collision with root package name */
-    private TypeConstructor f32509w;
+    private TypeConstructor f33077w;
 
     /* renamed from: x  reason: collision with root package name */
-    private List f32510x;
+    private List f33078x;
 
     /* renamed from: y  reason: collision with root package name */
-    private final Collection f32511y;
+    private final Collection f33079y;
 
     /* renamed from: z  reason: collision with root package name */
-    private final StorageManager f32512z;
+    private final StorageManager f33080z;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public MutableClassDescriptor(@NotNull DeclarationDescriptor declarationDescriptor, @NotNull ClassKind classKind, boolean z10, boolean z11, @NotNull Name name, @NotNull SourceElement sourceElement, @NotNull StorageManager storageManager) {
@@ -71,10 +71,10 @@ public class MutableClassDescriptor extends ClassDescriptorBase {
         if (storageManager == null) {
             a(4);
         }
-        this.f32511y = new ArrayList();
-        this.f32512z = storageManager;
-        this.f32505s = classKind;
-        this.f32506t = z10;
+        this.f33079y = new ArrayList();
+        this.f33080z = storageManager;
+        this.f33073s = classKind;
+        this.f33074t = z10;
     }
 
     private static /* synthetic */ void a(int i10) {
@@ -264,7 +264,7 @@ public class MutableClassDescriptor extends ClassDescriptorBase {
     }
 
     public void createTypeConstructor() {
-        this.f32509w = new ClassTypeConstructorImpl(this, this.f32510x, this.f32511y, this.f32512z);
+        this.f33077w = new ClassTypeConstructorImpl(this, this.f33078x, this.f33079y, this.f33080z);
         Iterator<ClassConstructorDescriptor> it = getConstructors().iterator();
         while (it.hasNext()) {
             ((ClassConstructorDescriptorImpl) it.next()).setReturnType(getDefaultType());
@@ -290,7 +290,7 @@ public class MutableClassDescriptor extends ClassDescriptorBase {
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.ClassDescriptor, kotlin.reflect.jvm.internal.impl.descriptors.ClassifierDescriptorWithTypeParameters
     @NotNull
     public List<TypeParameterDescriptor> getDeclaredTypeParameters() {
-        List<TypeParameterDescriptor> list = this.f32510x;
+        List<TypeParameterDescriptor> list = this.f33078x;
         if (list == null) {
             a(15);
         }
@@ -300,7 +300,7 @@ public class MutableClassDescriptor extends ClassDescriptorBase {
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.ClassDescriptor
     @NotNull
     public ClassKind getKind() {
-        ClassKind classKind = this.f32505s;
+        ClassKind classKind = this.f33073s;
         if (classKind == null) {
             a(8);
         }
@@ -310,7 +310,7 @@ public class MutableClassDescriptor extends ClassDescriptorBase {
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.ClassDescriptor, kotlin.reflect.jvm.internal.impl.descriptors.MemberDescriptor
     @NotNull
     public Modality getModality() {
-        Modality modality = this.f32507u;
+        Modality modality = this.f33075u;
         if (modality == null) {
             a(7);
         }
@@ -340,7 +340,7 @@ public class MutableClassDescriptor extends ClassDescriptorBase {
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.ClassifierDescriptor
     @NotNull
     public TypeConstructor getTypeConstructor() {
-        TypeConstructor typeConstructor = this.f32509w;
+        TypeConstructor typeConstructor = this.f33077w;
         if (typeConstructor == null) {
             a(11);
         }
@@ -374,7 +374,7 @@ public class MutableClassDescriptor extends ClassDescriptorBase {
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.ClassDescriptor, kotlin.reflect.jvm.internal.impl.descriptors.MemberDescriptor, kotlin.reflect.jvm.internal.impl.descriptors.DeclarationDescriptorWithVisibility
     @NotNull
     public DescriptorVisibility getVisibility() {
-        DescriptorVisibility descriptorVisibility = this.f32508v;
+        DescriptorVisibility descriptorVisibility = this.f33076v;
         if (descriptorVisibility == null) {
             a(10);
         }
@@ -413,7 +413,7 @@ public class MutableClassDescriptor extends ClassDescriptorBase {
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.ClassifierDescriptorWithTypeParameters
     public boolean isInner() {
-        return this.f32506t;
+        return this.f33074t;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.ClassDescriptor
@@ -425,15 +425,15 @@ public class MutableClassDescriptor extends ClassDescriptorBase {
         if (modality == null) {
             a(6);
         }
-        this.f32507u = modality;
+        this.f33075u = modality;
     }
 
     public void setTypeParameterDescriptors(@NotNull List<TypeParameterDescriptor> list) {
         if (list == null) {
             a(14);
         }
-        if (this.f32510x == null) {
-            this.f32510x = new ArrayList(list);
+        if (this.f33078x == null) {
+            this.f33078x = new ArrayList(list);
             return;
         }
         throw new IllegalStateException("Type parameters are already set for " + getName());
@@ -443,7 +443,7 @@ public class MutableClassDescriptor extends ClassDescriptorBase {
         if (descriptorVisibility == null) {
             a(9);
         }
-        this.f32508v = descriptorVisibility;
+        this.f33076v = descriptorVisibility;
     }
 
     public String toString() {

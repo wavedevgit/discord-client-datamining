@@ -2,11 +2,11 @@
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var4 = require;
-    var9 = metroImportDefault;
+    var8 = metroImportDefault;
     var2 = exports;
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
-    var _closure1_slot1 = var9;
+    var _closure1_slot1 = var8;
     var _closure1_slot2 = var5;
     var0 = function arg0() {
         var0 = arg0;
@@ -96,7 +96,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = var2.bind(var3)(var1, var0);
         return var0;
     };
-    var _closure1_slot13 = var0;
+    var _closure1_slot12 = var0;
     var0 = global;
     var7 = var0.Object;
     var6 = var7.defineProperty;
@@ -105,13 +105,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.value = var0;
     var0 = '__esModule';
     var0 = var6.bind(var7)(var2, var0, var3);
-    var11 = 0;
-    var3 = var5[var11];
+    var10 = 0;
+    var3 = var5[var10];
     var0 = undefined;
-    var3 = var9.bind(var0)(var3);
+    var3 = var8.bind(var0)(var3);
     var _closure1_slot3 = var3;
-    var10 = 1;
-    var6 = var5[var10];
+    var9 = 1;
+    var6 = var5[var9];
     var3 = arg3;
     var3 = var3.bind(var0)(var6);
     var _closure1_slot4 = var3;
@@ -134,10 +134,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot8 = var3;
     var3 = 5;
     var3 = var5[var3];
-    var12 = var4.bind(var0)(var3);
-    var8 = var12.createStyles;
+    var11 = var4.bind(var0)(var3);
+    var7 = var11.createStyles;
     var3 = {};
-    var13 = {
+    var12 = {
         'flex': 1,
         'flexDirection': 'column',
         'alignItems': 'stretch',
@@ -146,68 +146,61 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         'marginRight': 16,
         'marginTop': 16
     };
-    var3.flexContainer = var13;
-    var13 = {
+    var3.flexContainer = var12;
+    var12 = {
         'display': 'flex',
         'alignItems': 'center'
     };
-    var3.centerFlex = var13;
-    var13 = {
+    var3.centerFlex = var12;
+    var12 = {
         'marginTop': 16,
         'textAlign': 'center'
     };
-    var3.margin = var13;
-    var13 = {};
-    var14 = 6;
-    var15 = var5[var14];
-    var15 = var9.bind(var0)(var15);
-    var15 = var15.colors;
-    var15 = var15.BACKGROUND_SURFACE_HIGH;
-    var13.backgroundColor = var15;
-    var14 = var5[var14];
-    var14 = var9.bind(var0)(var14);
-    var14 = var14.radii;
-    var14 = var14.md;
-    var13.borderRadius = var14;
-    var3.radioItem = var13;
-    var3 = var8.bind(var12)(var3);
+    var3.margin = var12;
+    var12 = {};
+    var13 = 6;
+    var14 = var5[var13];
+    var14 = var8.bind(var0)(var14);
+    var14 = var14.colors;
+    var14 = var14.BACKGROUND_SURFACE_HIGH;
+    var12.backgroundColor = var14;
+    var13 = var5[var13];
+    var13 = var8.bind(var0)(var13);
+    var13 = var13.radii;
+    var13 = var13.md;
+    var12.borderRadius = var13;
+    var3.radioItem = var12;
+    var3 = var7.bind(var11)(var3);
     var _closure1_slot9 = var3;
-    var8 = {};
-    var8.PASSKEY_CREDENTIAL_MANAGER = var11;
+    var7 = {};
+    var7.PASSKEY_CREDENTIAL_MANAGER = var10;
     var3 = 'PASSKEY_CREDENTIAL_MANAGER';
-    var8[var11] = var3;
-    var8.PASSKEY_DEVICE = var10;
+    var7[var10] = var3;
+    var7.PASSKEY_DEVICE = var9;
     var3 = 'PASSKEY_DEVICE';
-    var8[var10] = var3;
-    var8.OTHER_AND_ANDROID_NONDISCOVERABLE = var6;
+    var7[var9] = var3;
+    var7.OTHER_AND_ANDROID_NONDISCOVERABLE = var6;
     var3 = 'OTHER_AND_ANDROID_NONDISCOVERABLE';
-    var8[var6] = var3;
-    var _closure1_slot10 = var8;
+    var7[var6] = var3;
+    var _closure1_slot10 = var7;
     var3 = {};
-    var11 = var8.PASSKEY_CREDENTIAL_MANAGER;
+    var10 = var7.PASSKEY_CREDENTIAL_MANAGER;
     var6 = 7;
-    var10 = var5[var6];
-    var10 = var9.bind(var0)(var10);
-    var10 = var10.registerPasskey;
-    var3[var11] = var10;
-    var11 = var8.PASSKEY_DEVICE;
-    var10 = var5[var6];
-    var10 = var9.bind(var0)(var10);
-    var10 = var10.registerAndroidDevicePasskey;
-    var3[var11] = var10;
-    var8 = var8.OTHER_AND_ANDROID_NONDISCOVERABLE;
+    var9 = var5[var6];
+    var9 = var8.bind(var0)(var9);
+    var9 = var9.registerPasskey;
+    var3[var10] = var9;
+    var10 = var7.PASSKEY_DEVICE;
+    var9 = var5[var6];
+    var9 = var8.bind(var0)(var9);
+    var9 = var9.registerAndroidDevicePasskey;
+    var3[var10] = var9;
+    var7 = var7.OTHER_AND_ANDROID_NONDISCOVERABLE;
     var6 = var5[var6];
-    var6 = var9.bind(var0)(var6);
+    var6 = var8.bind(var0)(var6);
     var6 = var6.registerSecurityKey;
-    var3[var8] = var6;
+    var3[var7] = var6;
     var _closure1_slot11 = var3;
-    var3 = 10;
-    var3 = var5[var3];
-    var3 = var4.bind(var0)(var3);
-    var6 = var3.KeyImage;
-    var3 = {};
-    var3 = var7.bind(var0)(var6, var3);
-    var _closure1_slot12 = var3;
     var3 = 17;
     var3 = var5[var3];
     var5 = var4.bind(var0)(var3);
@@ -215,11 +208,11 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/webauthn/native/nav_steps/WebAuthnRegisterStep.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function() {
-        _fun63648: for (var _fun63648_ip = 0;;) switch (_fun63648_ip) {
+        _fun61375: for (var _fun61375_ip = 0;;) switch (_fun61375_ip) {
             case 0:
                 var4 = _closure1_slot0;
                 var8 = _closure1_slot2;
-                var0 = 11;
+                var0 = 10;
                 var0 = var8[var0];
                 var3 = undefined;
                 var1 = var4.bind(var3)(var0);
@@ -247,20 +240,20 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var16 = var2[var7];
                 var5 = var2[var6];
                 var _closure2_slot2 = var5;
-                var2 = 12;
+                var2 = 11;
                 var2 = var8[var2];
                 var4 = var4.bind(var3)(var2);
                 var2 = var4.isAndroid;
                 var4 = var2.bind(var4)();
                 var2 = _closure1_slot10;
                 if (var4) {
-                    _fun63648_ip = 164;
-                    continue _fun63648
+                    _fun61375_ip = 164;
+                    continue _fun61375
                 }
             case 156:
                 var8 = var2.OTHER_AND_ANDROID_NONDISCOVERABLE;
-                _fun63648_ip = 170;
-                continue _fun63648;
+                _fun61375_ip = 170;
+                continue _fun61375;
             case 164:
                 var8 = var2.PASSKEY_CREDENTIAL_MANAGER;
             case 170:
@@ -318,7 +311,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = _closure1_slot8;
                 var8 = _closure1_slot0;
                 var7 = _closure1_slot2;
-                var0 = 13;
+                var0 = 12;
                 var0 = var7[var0];
                 var0 = var8.bind(var3)(var0);
                 var1 = var0.SafeAreaPaddingView;
@@ -333,7 +326,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = {};
                 var6 = var15.centerFlex;
                 var4.style = var6;
-                var14 = _closure1_slot12;
+                var17 = _closure1_slot7;
+                var6 = 13;
+                var6 = var7[var6];
+                var6 = var8.bind(var3)(var6);
+                var14 = var6.KeyImage;
+                var6 = {};
+                var14 = var17.bind(var3)(var14, var6);
                 var6 = new Array(3);
                 var6[0] = var14;
                 var14 = _closure1_slot7;
@@ -357,28 +356,28 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var15 = var19.bind(var3)(var15);
                 var19 = var15.t;
                 if (var12) {
-                    _fun63648_ip = 485;
-                    continue _fun63648
+                    _fun61375_ip = 511;
+                    continue _fun61375
                 }
-            case 470:
+            case 496:
                 var15 = var19.Lh5vTW;
                 var15 = var20.bind(var21)(var15);
-                _fun63648_ip = 498;
-                continue _fun63648;
-            case 485:
+                _fun61375_ip = 524;
+                continue _fun61375;
+            case 511:
                 var19 = var19.aVMiX3;
                 var15 = var20.bind(var21)(var19);
-            case 498:
+            case 524:
                 var7.children = var15;
                 var7 = var14.bind(var3)(var8, var7);
                 var6[1] = var7;
                 var7 = null;
                 var7 = var7 != var16;
                 if (!var7) {
-                    _fun63648_ip = 571;
-                    continue _fun63648
+                    _fun61375_ip = 597;
+                    continue _fun61375
                 }
-            case 521:
+            case 547:
                 var15 = _closure1_slot7;
                 var14 = _closure1_slot0;
                 var8 = _closure1_slot2;
@@ -391,7 +390,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var8.children = var16;
                 var7 = var15.bind(var3)(var14, var8);
-            case 571:
+            case 597:
                 var6[2] = var7;
                 var4.children = var6;
                 var5 = var2.bind(var3)(var5, var4);
@@ -404,18 +403,18 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var6.bind(var3)(var5);
                 var5 = var5.shouldDisplayAndroidFidoSelector;
                 if (!var5) {
-                    _fun63648_ip = 653;
-                    continue _fun63648
+                    _fun61375_ip = 679;
+                    continue _fun61375
                 }
-            case 622:
+            case 648:
                 var8 = _closure1_slot7;
-                var7 = _closure1_slot13;
+                var7 = _closure1_slot12;
                 var6 = {};
                 var6.authenticatorSelection = var10;
                 var6.registering = var12;
                 var6.onChange = var9;
                 var5 = var8.bind(var3)(var7, var6);
-            case 653:
+            case 679:
                 var4[1] = var5;
                 var7 = _closure1_slot7;
                 var9 = _closure1_slot0;
@@ -441,18 +440,18 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13 = var14.bind(var3)(var13);
                 var14 = var13.t;
                 if (var12) {
-                    _fun63648_ip = 772;
-                    continue _fun63648
+                    _fun61375_ip = 798;
+                    continue _fun61375
                 }
-            case 757:
+            case 783:
                 var13 = var14.oibaQa;
                 var13 = var15.bind(var16)(var13);
-                _fun63648_ip = 783;
-                continue _fun63648;
-            case 772:
+                _fun61375_ip = 809;
+                continue _fun61375;
+            case 798:
                 var14 = var14.wePEBF;
                 var13 = var15.bind(var16)(var14);
-            case 783:
+            case 809:
                 var8.text = var13;
                 var8.disabled = var12;
                 var8.loading = var12;
@@ -477,4 +476,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 7823, 33, 1297, 671, 7822, 1234, 7324, 7847, 1469, 478, 4754, 3938, 6532, 4090, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 7551, 33, 1297, 671, 7550, 1235, 7224, 1469, 478, 4741, 7578, 3938, 6518, 4090, 2]);

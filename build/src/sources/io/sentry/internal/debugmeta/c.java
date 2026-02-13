@@ -14,10 +14,10 @@ import java.util.Properties;
 public final class c implements a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ILogger f29384a;
+    private final ILogger f29952a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final ClassLoader f29385b;
+    private final ClassLoader f29953b;
 
     public c(ILogger iLogger) {
         this(iLogger, c.class.getClassLoader());
@@ -28,19 +28,19 @@ public final class c implements a {
         InputStream openStream;
         ArrayList arrayList = new ArrayList();
         try {
-            Enumeration<URL> resources = this.f29385b.getResources(d.f30130a);
+            Enumeration<URL> resources = this.f29953b.getResources(d.f30698a);
             while (resources.hasMoreElements()) {
                 URL nextElement = resources.nextElement();
                 try {
                     openStream = nextElement.openStream();
                 } catch (RuntimeException e10) {
-                    this.f29384a.a(SentryLevel.ERROR, e10, "%s file is malformed.", nextElement);
+                    this.f29952a.a(SentryLevel.ERROR, e10, "%s file is malformed.", nextElement);
                 }
                 try {
                     Properties properties = new Properties();
                     properties.load(openStream);
                     arrayList.add(properties);
-                    this.f29384a.c(SentryLevel.INFO, "Debug Meta Data Properties loaded from %s", nextElement);
+                    this.f29952a.c(SentryLevel.INFO, "Debug Meta Data Properties loaded from %s", nextElement);
                     if (openStream != null) {
                         openStream.close();
                     }
@@ -57,17 +57,17 @@ public final class c implements a {
                 }
             }
         } catch (IOException e11) {
-            this.f29384a.a(SentryLevel.ERROR, e11, "Failed to load %s", d.f30130a);
+            this.f29952a.a(SentryLevel.ERROR, e11, "Failed to load %s", d.f30698a);
         }
         if (arrayList.isEmpty()) {
-            this.f29384a.c(SentryLevel.INFO, "No %s file was found.", d.f30130a);
+            this.f29952a.c(SentryLevel.INFO, "No %s file was found.", d.f30698a);
             return null;
         }
         return arrayList;
     }
 
     c(ILogger iLogger, ClassLoader classLoader) {
-        this.f29384a = iLogger;
-        this.f29385b = io.sentry.util.b.a(classLoader);
+        this.f29952a = iLogger;
+        this.f29953b = io.sentry.util.b.a(classLoader);
     }
 }

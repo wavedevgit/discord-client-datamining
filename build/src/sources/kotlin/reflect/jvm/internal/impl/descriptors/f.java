@@ -6,16 +6,16 @@ import kotlin.reflect.jvm.internal.impl.name.FqName;
 class f implements Function1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final FqName f32371d;
+    private final FqName f32939d;
 
     public f(FqName fqName) {
-        this.f32371d = fqName;
+        this.f32939d = fqName;
     }
 
     @Override // kotlin.jvm.functions.Function1
     public Object invoke(Object obj) {
         boolean d10;
-        d10 = PackageFragmentProviderImpl.d(this.f32371d, (FqName) obj);
+        d10 = PackageFragmentProviderImpl.d(this.f32939d, (FqName) obj);
         return Boolean.valueOf(d10);
     }
 }

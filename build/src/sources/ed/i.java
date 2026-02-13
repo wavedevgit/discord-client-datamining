@@ -90,7 +90,7 @@ public final class i implements m {
         if (h0Var.a() == 0) {
             return;
         }
-        this.f22520b.f38947a[0] = h0Var.e()[h0Var.f()];
+        this.f22520b.f39515a[0] = h0Var.e()[h0Var.f()];
         this.f22520b.p(2);
         int h10 = this.f22520b.h(4);
         int i10 = this.f22532n;
@@ -108,7 +108,7 @@ public final class i implements m {
 
     private boolean h(oe.h0 h0Var, int i10) {
         h0Var.U(i10 + 1);
-        if (!w(h0Var, this.f22520b.f38947a, 1)) {
+        if (!w(h0Var, this.f22520b.f39515a, 1)) {
             return false;
         }
         this.f22520b.p(4);
@@ -118,7 +118,7 @@ public final class i implements m {
             return false;
         }
         if (this.f22532n != -1) {
-            if (!w(h0Var, this.f22520b.f38947a, 1)) {
+            if (!w(h0Var, this.f22520b.f39515a, 1)) {
                 return true;
             }
             this.f22520b.p(2);
@@ -127,7 +127,7 @@ public final class i implements m {
             }
             h0Var.U(i10 + 2);
         }
-        if (!w(h0Var, this.f22520b.f38947a, 4)) {
+        if (!w(h0Var, this.f22520b.f39515a, 4)) {
             return true;
         }
         this.f22520b.p(14);
@@ -255,7 +255,7 @@ public final class i implements m {
             this.f22520b.r(5);
             byte[] b10 = oc.a.b(i10, this.f22532n, this.f22520b.h(3));
             a.b f10 = oc.a.f(b10);
-            Format G = new Format.b().U(this.f22523e).g0("audio/mp4a-latm").K(f10.f38771c).J(f10.f38770b).h0(f10.f38769a).V(Collections.singletonList(b10)).X(this.f22522d).G();
+            Format G = new Format.b().U(this.f22523e).g0("audio/mp4a-latm").K(f10.f39339c).J(f10.f39338b).h0(f10.f39337a).V(Collections.singletonList(b10)).X(this.f22522d).G();
             this.f22535q = 1024000000 / G.K;
             this.f22524f.c(G);
             this.f22534p = true;
@@ -358,7 +358,7 @@ public final class i implements m {
                             } else {
                                 i10 = 5;
                             }
-                            if (i(h0Var, this.f22520b.f38947a, i10)) {
+                            if (i(h0Var, this.f22520b.f39515a, i10)) {
                                 n();
                             }
                         }

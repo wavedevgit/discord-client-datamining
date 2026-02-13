@@ -5,7 +5,7 @@ import bj.c;
 final class u8 implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final u8 f39716a = new u8();
+    static final u8 f40284a = new u8();
 
     static {
         c.b a10 = bj.c.a("category");

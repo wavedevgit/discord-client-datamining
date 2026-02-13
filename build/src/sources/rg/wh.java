@@ -3,38 +3,38 @@ package rg;
 public final class wh {
 
     /* renamed from: a  reason: collision with root package name */
-    private final uh f47321a;
+    private final uh f47889a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Boolean f47322b;
+    private final Boolean f47890b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final String f47323c;
+    private final String f47891c;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public /* synthetic */ wh(th thVar, vh vhVar) {
         uh uhVar;
-        uhVar = thVar.f47166a;
-        this.f47321a = uhVar;
-        this.f47322b = null;
-        this.f47323c = null;
+        uhVar = thVar.f47734a;
+        this.f47889a = uhVar;
+        this.f47890b = null;
+        this.f47891c = null;
     }
 
     public final uh a() {
-        return this.f47321a;
+        return this.f47889a;
     }
 
     public final boolean equals(Object obj) {
         if (obj == this) {
             return true;
         }
-        if ((obj instanceof wh) && hf.o.a(this.f47321a, ((wh) obj).f47321a) && hf.o.a(null, null) && hf.o.a(null, null)) {
+        if ((obj instanceof wh) && hf.o.a(this.f47889a, ((wh) obj).f47889a) && hf.o.a(null, null) && hf.o.a(null, null)) {
             return true;
         }
         return false;
     }
 
     public final int hashCode() {
-        return hf.o.b(this.f47321a, null, null);
+        return hf.o.b(this.f47889a, null, null);
     }
 }

@@ -20,16 +20,16 @@ import tt.z0;
 public final class i implements KSerializer {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final i f43198a = new i();
+    public static final i f43766a = new i();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final Lazy f43199b = l.a(o.f6082e, a.f43200d);
+    private static final Lazy f43767b = l.a(o.f6082e, a.f43768d);
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     static final class a extends Lambda implements Function0 {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final a f43200d = new a();
+        public static final a f43768d = new a();
 
         /* JADX INFO: Access modifiers changed from: package-private */
         /* renamed from: pt.i$a$a  reason: collision with other inner class name */
@@ -37,7 +37,7 @@ public final class i implements KSerializer {
         public static final class C0598a extends Lambda implements Function1 {
 
             /* renamed from: d  reason: collision with root package name */
-            public static final C0598a f43201d = new C0598a();
+            public static final C0598a f43769d = new C0598a();
 
             C0598a() {
                 super(1);
@@ -45,13 +45,13 @@ public final class i implements KSerializer {
 
             public final void a(st.a buildClassSerialDescriptor) {
                 Intrinsics.checkNotNullParameter(buildClassSerialDescriptor, "$this$buildClassSerialDescriptor");
-                buildClassSerialDescriptor.a("nanoseconds", z0.f50107a.getDescriptor(), CollectionsKt.l(), false);
+                buildClassSerialDescriptor.a("nanoseconds", z0.f50675a.getDescriptor(), CollectionsKt.l(), false);
             }
 
             @Override // kotlin.jvm.functions.Function1
             public /* bridge */ /* synthetic */ Object invoke(Object obj) {
                 a((st.a) obj);
-                return Unit.f31988a;
+                return Unit.f32556a;
             }
         }
 
@@ -62,7 +62,7 @@ public final class i implements KSerializer {
         @Override // kotlin.jvm.functions.Function0
         /* renamed from: a */
         public final SerialDescriptor invoke() {
-            return st.j.c("kotlinx.datetime.TimeBased", new SerialDescriptor[0], C0598a.f43201d);
+            return st.j.c("kotlinx.datetime.TimeBased", new SerialDescriptor[0], C0598a.f43769d);
         }
     }
 
@@ -78,12 +78,12 @@ public final class i implements KSerializer {
         kotlinx.serialization.encoding.c b10 = decoder.b(descriptor);
         boolean z10 = true;
         if (b10.p()) {
-            j10 = b10.f(f43198a.getDescriptor(), 0);
+            j10 = b10.f(f43766a.getDescriptor(), 0);
         } else {
             long j11 = 0;
             boolean z11 = false;
             while (true) {
-                i iVar = f43198a;
+                i iVar = f43766a;
                 int o10 = b10.o(iVar.getDescriptor());
                 if (o10 != -1) {
                     if (o10 == 0) {
@@ -100,7 +100,7 @@ public final class i implements KSerializer {
                 }
             }
         }
-        Unit unit = Unit.f31988a;
+        Unit unit = Unit.f32556a;
         b10.c(descriptor);
         if (z10) {
             return new c.e(j10);
@@ -115,12 +115,12 @@ public final class i implements KSerializer {
         Intrinsics.checkNotNullParameter(value, "value");
         SerialDescriptor descriptor = getDescriptor();
         CompositeEncoder b10 = encoder.b(descriptor);
-        b10.E(f43198a.getDescriptor(), 0, value.d());
+        b10.E(f43766a.getDescriptor(), 0, value.d());
         b10.c(descriptor);
     }
 
     @Override // kotlinx.serialization.KSerializer, qt.o, kotlinx.serialization.DeserializationStrategy
     public SerialDescriptor getDescriptor() {
-        return (SerialDescriptor) f43199b.getValue();
+        return (SerialDescriptor) f43767b.getValue();
     }
 }

@@ -23,10 +23,10 @@ import qi.f;
 public abstract class d extends qi.f implements Serializable {
 
     /* renamed from: p  reason: collision with root package name */
-    private transient Map f45291p;
+    private transient Map f45859p;
 
     /* renamed from: q  reason: collision with root package name */
-    private transient int f45292q;
+    private transient int f45860q;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     class b extends AbstractC0607d {
@@ -47,7 +47,7 @@ public abstract class d extends qi.f implements Serializable {
     public class c extends a0.f {
 
         /* renamed from: i  reason: collision with root package name */
-        final transient Map f45293i;
+        final transient Map f45861i;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         class a extends a0.c {
@@ -61,7 +61,7 @@ public abstract class d extends qi.f implements Serializable {
 
             @Override // qi.a0.c, java.util.AbstractCollection, java.util.Collection, java.util.Set
             public boolean contains(Object obj) {
-                return qi.i.c(c.this.f45293i.entrySet(), obj);
+                return qi.i.c(c.this.f45861i.entrySet(), obj);
             }
 
             @Override // java.util.AbstractCollection, java.util.Collection, java.lang.Iterable, java.util.Set
@@ -85,46 +85,46 @@ public abstract class d extends qi.f implements Serializable {
         class b implements Iterator {
 
             /* renamed from: d  reason: collision with root package name */
-            final Iterator f45296d;
+            final Iterator f45864d;
 
             /* renamed from: e  reason: collision with root package name */
-            Collection f45297e;
+            Collection f45865e;
 
             b() {
-                this.f45296d = c.this.f45293i.entrySet().iterator();
+                this.f45864d = c.this.f45861i.entrySet().iterator();
             }
 
             @Override // java.util.Iterator
             /* renamed from: a */
             public Map.Entry next() {
-                Map.Entry entry = (Map.Entry) this.f45296d.next();
-                this.f45297e = (Collection) entry.getValue();
+                Map.Entry entry = (Map.Entry) this.f45864d.next();
+                this.f45865e = (Collection) entry.getValue();
                 return c.this.e(entry);
             }
 
             @Override // java.util.Iterator
             public boolean hasNext() {
-                return this.f45296d.hasNext();
+                return this.f45864d.hasNext();
             }
 
             @Override // java.util.Iterator
             public void remove() {
                 boolean z10;
-                if (this.f45297e != null) {
+                if (this.f45865e != null) {
                     z10 = true;
                 } else {
                     z10 = false;
                 }
                 pi.m.p(z10, "no calls to next() since the last call to remove()");
-                this.f45296d.remove();
-                d.p(d.this, this.f45297e.size());
-                this.f45297e.clear();
-                this.f45297e = null;
+                this.f45864d.remove();
+                d.p(d.this, this.f45865e.size());
+                this.f45865e.clear();
+                this.f45865e = null;
             }
         }
 
         c(Map map) {
-            this.f45293i = map;
+            this.f45861i = map;
         }
 
         @Override // qi.a0.f
@@ -135,7 +135,7 @@ public abstract class d extends qi.f implements Serializable {
         @Override // java.util.AbstractMap, java.util.Map
         /* renamed from: c */
         public Collection get(Object obj) {
-            Collection collection = (Collection) a0.h(this.f45293i, obj);
+            Collection collection = (Collection) a0.h(this.f45861i, obj);
             if (collection == null) {
                 return null;
             }
@@ -144,7 +144,7 @@ public abstract class d extends qi.f implements Serializable {
 
         @Override // java.util.AbstractMap, java.util.Map
         public void clear() {
-            if (this.f45293i == d.this.f45291p) {
+            if (this.f45861i == d.this.f45859p) {
                 d.this.clear();
             } else {
                 w.c(new b());
@@ -153,13 +153,13 @@ public abstract class d extends qi.f implements Serializable {
 
         @Override // java.util.AbstractMap, java.util.Map
         public boolean containsKey(Object obj) {
-            return a0.g(this.f45293i, obj);
+            return a0.g(this.f45861i, obj);
         }
 
         @Override // java.util.AbstractMap, java.util.Map
         /* renamed from: d */
         public Collection remove(Object obj) {
-            Collection collection = (Collection) this.f45293i.remove(obj);
+            Collection collection = (Collection) this.f45861i.remove(obj);
             if (collection == null) {
                 return null;
             }
@@ -177,7 +177,7 @@ public abstract class d extends qi.f implements Serializable {
 
         @Override // java.util.AbstractMap, java.util.Map
         public boolean equals(Object obj) {
-            if (this != obj && !this.f45293i.equals(obj)) {
+            if (this != obj && !this.f45861i.equals(obj)) {
                 return false;
             }
             return true;
@@ -185,7 +185,7 @@ public abstract class d extends qi.f implements Serializable {
 
         @Override // java.util.AbstractMap, java.util.Map
         public int hashCode() {
-            return this.f45293i.hashCode();
+            return this.f45861i.hashCode();
         }
 
         @Override // java.util.AbstractMap, java.util.Map
@@ -195,12 +195,12 @@ public abstract class d extends qi.f implements Serializable {
 
         @Override // java.util.AbstractMap, java.util.Map
         public int size() {
-            return this.f45293i.size();
+            return this.f45861i.size();
         }
 
         @Override // java.util.AbstractMap
         public String toString() {
-            return this.f45293i.toString();
+            return this.f45861i.toString();
         }
     }
 
@@ -209,26 +209,26 @@ public abstract class d extends qi.f implements Serializable {
     private abstract class AbstractC0607d implements Iterator {
 
         /* renamed from: d  reason: collision with root package name */
-        final Iterator f45299d;
+        final Iterator f45867d;
 
         /* renamed from: e  reason: collision with root package name */
-        Object f45300e = null;
+        Object f45868e = null;
 
         /* renamed from: i  reason: collision with root package name */
-        Collection f45301i = null;
+        Collection f45869i = null;
 
         /* renamed from: o  reason: collision with root package name */
-        Iterator f45302o = w.f();
+        Iterator f45870o = w.f();
 
         AbstractC0607d() {
-            this.f45299d = d.this.f45291p.entrySet().iterator();
+            this.f45867d = d.this.f45859p.entrySet().iterator();
         }
 
         abstract Object a(Object obj, Object obj2);
 
         @Override // java.util.Iterator
         public boolean hasNext() {
-            if (!this.f45299d.hasNext() && !this.f45302o.hasNext()) {
+            if (!this.f45867d.hasNext() && !this.f45870o.hasNext()) {
                 return false;
             }
             return true;
@@ -236,23 +236,23 @@ public abstract class d extends qi.f implements Serializable {
 
         @Override // java.util.Iterator
         public Object next() {
-            if (!this.f45302o.hasNext()) {
-                Map.Entry entry = (Map.Entry) this.f45299d.next();
-                this.f45300e = entry.getKey();
+            if (!this.f45870o.hasNext()) {
+                Map.Entry entry = (Map.Entry) this.f45867d.next();
+                this.f45868e = entry.getKey();
                 Collection collection = (Collection) entry.getValue();
-                this.f45301i = collection;
-                this.f45302o = collection.iterator();
+                this.f45869i = collection;
+                this.f45870o = collection.iterator();
             }
-            return a(g0.a(this.f45300e), this.f45302o.next());
+            return a(g0.a(this.f45868e), this.f45870o.next());
         }
 
         @Override // java.util.Iterator
         public void remove() {
-            this.f45302o.remove();
-            Collection collection = this.f45301i;
+            this.f45870o.remove();
+            Collection collection = this.f45869i;
             Objects.requireNonNull(collection);
             if (collection.isEmpty()) {
-                this.f45299d.remove();
+                this.f45867d.remove();
             }
             d.n(d.this);
         }
@@ -266,41 +266,41 @@ public abstract class d extends qi.f implements Serializable {
         public class a implements Iterator {
 
             /* renamed from: d  reason: collision with root package name */
-            Map.Entry f45305d;
+            Map.Entry f45873d;
 
             /* renamed from: e  reason: collision with root package name */
-            final /* synthetic */ Iterator f45306e;
+            final /* synthetic */ Iterator f45874e;
 
             a(Iterator it) {
-                this.f45306e = it;
+                this.f45874e = it;
             }
 
             @Override // java.util.Iterator
             public boolean hasNext() {
-                return this.f45306e.hasNext();
+                return this.f45874e.hasNext();
             }
 
             @Override // java.util.Iterator
             public Object next() {
-                Map.Entry entry = (Map.Entry) this.f45306e.next();
-                this.f45305d = entry;
+                Map.Entry entry = (Map.Entry) this.f45874e.next();
+                this.f45873d = entry;
                 return entry.getKey();
             }
 
             @Override // java.util.Iterator
             public void remove() {
                 boolean z10;
-                if (this.f45305d != null) {
+                if (this.f45873d != null) {
                     z10 = true;
                 } else {
                     z10 = false;
                 }
                 pi.m.p(z10, "no calls to next() since the last call to remove()");
-                Collection collection = (Collection) this.f45305d.getValue();
-                this.f45306e.remove();
+                Collection collection = (Collection) this.f45873d.getValue();
+                this.f45874e.remove();
                 d.p(d.this, collection.size());
                 collection.clear();
-                this.f45305d = null;
+                this.f45873d = null;
             }
         }
 
@@ -625,7 +625,7 @@ public abstract class d extends qi.f implements Serializable {
     public class i extends c implements SortedMap {
 
         /* renamed from: p  reason: collision with root package name */
-        SortedSet f45310p;
+        SortedSet f45878p;
 
         i(SortedMap sortedMap) {
             super(sortedMap);
@@ -648,17 +648,17 @@ public abstract class d extends qi.f implements Serializable {
         @Override // qi.d.c, java.util.AbstractMap, java.util.Map
         /* renamed from: g */
         public SortedSet keySet() {
-            SortedSet sortedSet = this.f45310p;
+            SortedSet sortedSet = this.f45878p;
             if (sortedSet == null) {
                 SortedSet f10 = f();
-                this.f45310p = f10;
+                this.f45878p = f10;
                 return f10;
             }
             return sortedSet;
         }
 
         SortedMap h() {
-            return (SortedMap) this.f45293i;
+            return (SortedMap) this.f45861i;
         }
 
         public SortedMap headMap(Object obj) {
@@ -721,30 +721,30 @@ public abstract class d extends qi.f implements Serializable {
     /* JADX INFO: Access modifiers changed from: protected */
     public d(Map map) {
         pi.m.d(map.isEmpty());
-        this.f45291p = map;
+        this.f45859p = map;
     }
 
     static /* synthetic */ int m(d dVar) {
-        int i10 = dVar.f45292q;
-        dVar.f45292q = i10 + 1;
+        int i10 = dVar.f45860q;
+        dVar.f45860q = i10 + 1;
         return i10;
     }
 
     static /* synthetic */ int n(d dVar) {
-        int i10 = dVar.f45292q;
-        dVar.f45292q = i10 - 1;
+        int i10 = dVar.f45860q;
+        dVar.f45860q = i10 - 1;
         return i10;
     }
 
     static /* synthetic */ int o(d dVar, int i10) {
-        int i11 = dVar.f45292q + i10;
-        dVar.f45292q = i11;
+        int i11 = dVar.f45860q + i10;
+        dVar.f45860q = i11;
         return i11;
     }
 
     static /* synthetic */ int p(d dVar, int i10) {
-        int i11 = dVar.f45292q - i10;
-        dVar.f45292q = i11;
+        int i11 = dVar.f45860q - i10;
+        dVar.f45860q = i11;
         return i11;
     }
 
@@ -758,11 +758,11 @@ public abstract class d extends qi.f implements Serializable {
 
     /* JADX INFO: Access modifiers changed from: private */
     public void w(Object obj) {
-        Collection collection = (Collection) a0.i(this.f45291p, obj);
+        Collection collection = (Collection) a0.i(this.f45859p, obj);
         if (collection != null) {
             int size = collection.size();
             collection.clear();
-            this.f45292q -= size;
+            this.f45860q -= size;
         }
     }
 
@@ -773,11 +773,11 @@ public abstract class d extends qi.f implements Serializable {
 
     @Override // qi.b0
     public void clear() {
-        for (Collection collection : this.f45291p.values()) {
+        for (Collection collection : this.f45859p.values()) {
             collection.clear();
         }
-        this.f45291p.clear();
-        this.f45292q = 0;
+        this.f45859p.clear();
+        this.f45860q = 0;
     }
 
     @Override // qi.f
@@ -792,7 +792,7 @@ public abstract class d extends qi.f implements Serializable {
 
     @Override // qi.b0
     public Collection get(Object obj) {
-        Collection collection = (Collection) this.f45291p.get(obj);
+        Collection collection = (Collection) this.f45859p.get(obj);
         if (collection == null) {
             collection = s(obj);
         }
@@ -811,17 +811,17 @@ public abstract class d extends qi.f implements Serializable {
 
     @Override // qi.b0
     public boolean put(Object obj, Object obj2) {
-        Collection collection = (Collection) this.f45291p.get(obj);
+        Collection collection = (Collection) this.f45859p.get(obj);
         if (collection == null) {
             Collection s10 = s(obj);
             if (s10.add(obj2)) {
-                this.f45292q++;
-                this.f45291p.put(obj, s10);
+                this.f45860q++;
+                this.f45859p.put(obj, s10);
                 return true;
             }
             throw new AssertionError("New Collection violated the Collection spec");
         } else if (collection.add(obj2)) {
-            this.f45292q++;
+            this.f45860q++;
             return true;
         } else {
             return false;
@@ -836,31 +836,31 @@ public abstract class d extends qi.f implements Serializable {
 
     @Override // qi.b0
     public int size() {
-        return this.f45292q;
+        return this.f45860q;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final Map t() {
-        Map map = this.f45291p;
+        Map map = this.f45859p;
         if (map instanceof NavigableMap) {
-            return new f((NavigableMap) this.f45291p);
+            return new f((NavigableMap) this.f45859p);
         }
         if (map instanceof SortedMap) {
-            return new i((SortedMap) this.f45291p);
+            return new i((SortedMap) this.f45859p);
         }
-        return new c(this.f45291p);
+        return new c(this.f45859p);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final Set u() {
-        Map map = this.f45291p;
+        Map map = this.f45859p;
         if (map instanceof NavigableMap) {
-            return new g((NavigableMap) this.f45291p);
+            return new g((NavigableMap) this.f45859p);
         }
         if (map instanceof SortedMap) {
-            return new j((SortedMap) this.f45291p);
+            return new j((SortedMap) this.f45859p);
         }
-        return new e(this.f45291p);
+        return new e(this.f45859p);
     }
 
     @Override // qi.f, qi.b0
@@ -885,35 +885,35 @@ public abstract class d extends qi.f implements Serializable {
     public class k extends AbstractCollection {
 
         /* renamed from: d  reason: collision with root package name */
-        final Object f45313d;
+        final Object f45881d;
 
         /* renamed from: e  reason: collision with root package name */
-        Collection f45314e;
+        Collection f45882e;
 
         /* renamed from: i  reason: collision with root package name */
-        final k f45315i;
+        final k f45883i;
 
         /* renamed from: o  reason: collision with root package name */
-        final Collection f45316o;
+        final Collection f45884o;
 
         k(Object obj, Collection collection, k kVar) {
             Collection d10;
-            this.f45313d = obj;
-            this.f45314e = collection;
-            this.f45315i = kVar;
+            this.f45881d = obj;
+            this.f45882e = collection;
+            this.f45883i = kVar;
             if (kVar == null) {
                 d10 = null;
             } else {
                 d10 = kVar.d();
             }
-            this.f45316o = d10;
+            this.f45884o = d10;
         }
 
         @Override // java.util.AbstractCollection, java.util.Collection
         public boolean add(Object obj) {
             f();
-            boolean isEmpty = this.f45314e.isEmpty();
-            boolean add = this.f45314e.add(obj);
+            boolean isEmpty = this.f45882e.isEmpty();
+            boolean add = this.f45882e.add(obj);
             if (add) {
                 d.m(d.this);
                 if (isEmpty) {
@@ -929,9 +929,9 @@ public abstract class d extends qi.f implements Serializable {
                 return false;
             }
             int size = size();
-            boolean addAll = this.f45314e.addAll(collection);
+            boolean addAll = this.f45882e.addAll(collection);
             if (addAll) {
-                d.o(d.this, this.f45314e.size() - size);
+                d.o(d.this, this.f45882e.size() - size);
                 if (size == 0) {
                     b();
                 }
@@ -940,16 +940,16 @@ public abstract class d extends qi.f implements Serializable {
         }
 
         void b() {
-            k kVar = this.f45315i;
+            k kVar = this.f45883i;
             if (kVar != null) {
                 kVar.b();
             } else {
-                d.this.f45291p.put(this.f45313d, this.f45314e);
+                d.this.f45859p.put(this.f45881d, this.f45882e);
             }
         }
 
         k c() {
-            return this.f45315i;
+            return this.f45883i;
         }
 
         @Override // java.util.AbstractCollection, java.util.Collection
@@ -958,7 +958,7 @@ public abstract class d extends qi.f implements Serializable {
             if (size == 0) {
                 return;
             }
-            this.f45314e.clear();
+            this.f45882e.clear();
             d.p(d.this, size);
             g();
         }
@@ -966,21 +966,21 @@ public abstract class d extends qi.f implements Serializable {
         @Override // java.util.AbstractCollection, java.util.Collection
         public boolean contains(Object obj) {
             f();
-            return this.f45314e.contains(obj);
+            return this.f45882e.contains(obj);
         }
 
         @Override // java.util.AbstractCollection, java.util.Collection
         public boolean containsAll(Collection collection) {
             f();
-            return this.f45314e.containsAll(collection);
+            return this.f45882e.containsAll(collection);
         }
 
         Collection d() {
-            return this.f45314e;
+            return this.f45882e;
         }
 
         Object e() {
-            return this.f45313d;
+            return this.f45881d;
         }
 
         @Override // java.util.Collection
@@ -989,35 +989,35 @@ public abstract class d extends qi.f implements Serializable {
                 return true;
             }
             f();
-            return this.f45314e.equals(obj);
+            return this.f45882e.equals(obj);
         }
 
         void f() {
             Collection collection;
-            k kVar = this.f45315i;
+            k kVar = this.f45883i;
             if (kVar != null) {
                 kVar.f();
-                if (this.f45315i.d() != this.f45316o) {
+                if (this.f45883i.d() != this.f45884o) {
                     throw new ConcurrentModificationException();
                 }
-            } else if (this.f45314e.isEmpty() && (collection = (Collection) d.this.f45291p.get(this.f45313d)) != null) {
-                this.f45314e = collection;
+            } else if (this.f45882e.isEmpty() && (collection = (Collection) d.this.f45859p.get(this.f45881d)) != null) {
+                this.f45882e = collection;
             }
         }
 
         void g() {
-            k kVar = this.f45315i;
+            k kVar = this.f45883i;
             if (kVar != null) {
                 kVar.g();
-            } else if (this.f45314e.isEmpty()) {
-                d.this.f45291p.remove(this.f45313d);
+            } else if (this.f45882e.isEmpty()) {
+                d.this.f45859p.remove(this.f45881d);
             }
         }
 
         @Override // java.util.Collection
         public int hashCode() {
             f();
-            return this.f45314e.hashCode();
+            return this.f45882e.hashCode();
         }
 
         @Override // java.util.AbstractCollection, java.util.Collection, java.lang.Iterable
@@ -1029,7 +1029,7 @@ public abstract class d extends qi.f implements Serializable {
         @Override // java.util.AbstractCollection, java.util.Collection
         public boolean remove(Object obj) {
             f();
-            boolean remove = this.f45314e.remove(obj);
+            boolean remove = this.f45882e.remove(obj);
             if (remove) {
                 d.n(d.this);
                 g();
@@ -1043,9 +1043,9 @@ public abstract class d extends qi.f implements Serializable {
                 return false;
             }
             int size = size();
-            boolean removeAll = this.f45314e.removeAll(collection);
+            boolean removeAll = this.f45882e.removeAll(collection);
             if (removeAll) {
-                d.o(d.this, this.f45314e.size() - size);
+                d.o(d.this, this.f45882e.size() - size);
                 g();
             }
             return removeAll;
@@ -1055,9 +1055,9 @@ public abstract class d extends qi.f implements Serializable {
         public boolean retainAll(Collection collection) {
             pi.m.j(collection);
             int size = size();
-            boolean retainAll = this.f45314e.retainAll(collection);
+            boolean retainAll = this.f45882e.retainAll(collection);
             if (retainAll) {
-                d.o(d.this, this.f45314e.size() - size);
+                d.o(d.this, this.f45882e.size() - size);
                 g();
             }
             return retainAll;
@@ -1066,13 +1066,13 @@ public abstract class d extends qi.f implements Serializable {
         @Override // java.util.AbstractCollection, java.util.Collection
         public int size() {
             f();
-            return this.f45314e.size();
+            return this.f45882e.size();
         }
 
         @Override // java.util.AbstractCollection
         public String toString() {
             f();
-            return this.f45314e.toString();
+            return this.f45882e.toString();
         }
 
         /* JADX INFO: Access modifiers changed from: package-private */
@@ -1080,25 +1080,25 @@ public abstract class d extends qi.f implements Serializable {
         public class a implements Iterator {
 
             /* renamed from: d  reason: collision with root package name */
-            final Iterator f45318d;
+            final Iterator f45886d;
 
             /* renamed from: e  reason: collision with root package name */
-            final Collection f45319e;
+            final Collection f45887e;
 
             a() {
-                Collection collection = k.this.f45314e;
-                this.f45319e = collection;
-                this.f45318d = d.v(collection);
+                Collection collection = k.this.f45882e;
+                this.f45887e = collection;
+                this.f45886d = d.v(collection);
             }
 
             Iterator a() {
                 b();
-                return this.f45318d;
+                return this.f45886d;
             }
 
             void b() {
                 k.this.f();
-                if (k.this.f45314e == this.f45319e) {
+                if (k.this.f45882e == this.f45887e) {
                     return;
                 }
                 throw new ConcurrentModificationException();
@@ -1107,25 +1107,25 @@ public abstract class d extends qi.f implements Serializable {
             @Override // java.util.Iterator
             public boolean hasNext() {
                 b();
-                return this.f45318d.hasNext();
+                return this.f45886d.hasNext();
             }
 
             @Override // java.util.Iterator
             public Object next() {
                 b();
-                return this.f45318d.next();
+                return this.f45886d.next();
             }
 
             @Override // java.util.Iterator
             public void remove() {
-                this.f45318d.remove();
+                this.f45886d.remove();
                 d.n(d.this);
                 k.this.g();
             }
 
             a(Iterator it) {
-                this.f45319e = k.this.f45314e;
-                this.f45318d = it;
+                this.f45887e = k.this.f45882e;
+                this.f45886d = it;
             }
         }
     }

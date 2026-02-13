@@ -9,11 +9,11 @@ import java.util.Locale;
 abstract class a implements u {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Class f37305d;
+    private final Class f37873d;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public a(Class cls) {
-        this.f37305d = cls;
+        this.f37873d = cls;
     }
 
     @Override // bu.u

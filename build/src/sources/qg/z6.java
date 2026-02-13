@@ -5,44 +5,44 @@ import bj.c;
 final class z6 implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final z6 f45230a = new z6();
+    static final z6 f45798a = new z6();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final bj.c f45231b;
+    private static final bj.c f45799b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final bj.c f45232c;
+    private static final bj.c f45800c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final bj.c f45233d;
+    private static final bj.c f45801d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final bj.c f45234e;
+    private static final bj.c f45802e;
 
     /* renamed from: f  reason: collision with root package name */
-    private static final bj.c f45235f;
+    private static final bj.c f45803f;
 
     static {
         c.b a10 = bj.c.a("detectorOptions");
         s1 s1Var = new s1();
         s1Var.a(1);
-        f45231b = a10.b(s1Var.b()).a();
+        f45799b = a10.b(s1Var.b()).a();
         c.b a11 = bj.c.a("errorCode");
         s1 s1Var2 = new s1();
         s1Var2.a(2);
-        f45232c = a11.b(s1Var2.b()).a();
+        f45800c = a11.b(s1Var2.b()).a();
         c.b a12 = bj.c.a("totalInitializationMs");
         s1 s1Var3 = new s1();
         s1Var3.a(3);
-        f45233d = a12.b(s1Var3.b()).a();
+        f45801d = a12.b(s1Var3.b()).a();
         c.b a13 = bj.c.a("loggingInitializationMs");
         s1 s1Var4 = new s1();
         s1Var4.a(4);
-        f45234e = a13.b(s1Var4.b()).a();
+        f45802e = a13.b(s1Var4.b()).a();
         c.b a14 = bj.c.a("otherErrors");
         s1 s1Var5 = new s1();
         s1Var5.a(5);
-        f45235f = a14.b(s1Var5.b()).a();
+        f45803f = a14.b(s1Var5.b()).a();
     }
 
     private z6() {

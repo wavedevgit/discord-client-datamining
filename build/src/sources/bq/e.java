@@ -241,13 +241,13 @@ public final class e {
         Intrinsics.checkNotNullParameter(b10, "b");
         Intrinsics.checkNotNullParameter(h10, "h");
         function3.invoke(item, b10, h10);
-        return Unit.f31988a;
+        return Unit.f32556a;
     }
 
     public static final Unit l(Function1 function1, ViewBinding viewBinding) {
         Intrinsics.checkNotNull(viewBinding, "null cannot be cast to non-null type VB of com.withpersona.sdk2.inquiry.shared.AdapterHelper.addItemTypeInternal");
         function1.invoke(viewBinding);
-        return Unit.f31988a;
+        return Unit.f32556a;
     }
 
     private final b n(int i10) {

@@ -3,42 +3,42 @@ package qg;
 public final class o2 {
 
     /* renamed from: a */
-    private ca f44769a;
+    private ca f45337a;
 
     /* renamed from: b */
-    private Boolean f44770b;
+    private Boolean f45338b;
 
     /* renamed from: c */
-    private n9 f44771c;
+    private n9 f45339c;
 
     /* renamed from: d */
-    private Integer f44772d;
+    private Integer f45340d;
 
     /* renamed from: e */
-    private Integer f44773e;
+    private Integer f45341e;
 
     public final o2 a(Integer num) {
-        this.f44772d = Integer.valueOf(num.intValue() & Integer.MAX_VALUE);
+        this.f45340d = Integer.valueOf(num.intValue() & Integer.MAX_VALUE);
         return this;
     }
 
     public final o2 b(n9 n9Var) {
-        this.f44771c = n9Var;
+        this.f45339c = n9Var;
         return this;
     }
 
     public final o2 c(ca caVar) {
-        this.f44769a = caVar;
+        this.f45337a = caVar;
         return this;
     }
 
     public final o2 d(Boolean bool) {
-        this.f44770b = bool;
+        this.f45338b = bool;
         return this;
     }
 
     public final o2 e(Integer num) {
-        this.f44773e = Integer.valueOf(num.intValue() & Integer.MAX_VALUE);
+        this.f45341e = Integer.valueOf(num.intValue() & Integer.MAX_VALUE);
         return this;
     }
 

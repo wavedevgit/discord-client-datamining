@@ -3,50 +3,50 @@ package qg;
 public final class g9 {
 
     /* renamed from: a  reason: collision with root package name */
-    private k9 f44487a;
+    private k9 f45055a;
 
     /* renamed from: b  reason: collision with root package name */
-    private h9 f44488b;
+    private h9 f45056b;
 
     /* renamed from: c  reason: collision with root package name */
-    private l9 f44489c;
+    private l9 f45057c;
 
     /* renamed from: d  reason: collision with root package name */
-    private i9 f44490d;
+    private i9 f45058d;
 
     /* renamed from: e  reason: collision with root package name */
-    private Boolean f44491e;
+    private Boolean f45059e;
 
     /* renamed from: f  reason: collision with root package name */
-    private Float f44492f;
+    private Float f45060f;
 
     public final g9 a(h9 h9Var) {
-        this.f44488b = h9Var;
+        this.f45056b = h9Var;
         return this;
     }
 
     public final g9 b(i9 i9Var) {
-        this.f44490d = i9Var;
+        this.f45058d = i9Var;
         return this;
     }
 
     public final g9 c(Boolean bool) {
-        this.f44491e = bool;
+        this.f45059e = bool;
         return this;
     }
 
     public final g9 d(k9 k9Var) {
-        this.f44487a = k9Var;
+        this.f45055a = k9Var;
         return this;
     }
 
     public final g9 e(Float f10) {
-        this.f44492f = f10;
+        this.f45060f = f10;
         return this;
     }
 
     public final g9 f(l9 l9Var) {
-        this.f44489c = l9Var;
+        this.f45057c = l9Var;
         return this;
     }
 

@@ -9,12 +9,20 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1.value = var0;
     var0 = '__esModule';
     var0 = var3.bind(var4)(var2, var0, var1);
-    var1 = dependencyMap;
-    var0 = 0;
-    var3 = var1[var0];
-    var1 = metroImportDefault;
+    var1 = function() { // Environment: var0
+        var0 = function() {
+            var0 = undefined;
+            return var0;
+        };
+        var1 = function(arg0) { // Environment: var1
+            var0 = arg0;
+            return var0;
+        };
+        var0.cast = var1;
+        return var0;
+    };
     var0 = undefined;
-    var1 = var1.bind(var0)(var3);
+    var1 = var1.bind(var0)();
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5214]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, []);

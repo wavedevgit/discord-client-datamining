@@ -5,7 +5,7 @@ import aw.x;
 public class t extends cw.a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final x f55280a = new x();
+    private final x f55848a = new x();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static class a extends cw.b {
@@ -61,7 +61,7 @@ public class t extends cw.a {
 
     @Override // cw.d
     public aw.a d() {
-        return this.f55280a;
+        return this.f55848a;
     }
 
     @Override // cw.d

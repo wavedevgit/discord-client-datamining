@@ -8,29 +8,29 @@ public final class qe extends jf.a {
     public static final Parcelable.Creator<qe> CREATOR = new re();
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f44886d;
+    private final int f45454d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final PointF f44887e;
+    private final PointF f45455e;
 
     public qe(int i10, PointF pointF) {
-        this.f44886d = i10;
-        this.f44887e = pointF;
+        this.f45454d = i10;
+        this.f45455e = pointF;
     }
 
     public final int b() {
-        return this.f44886d;
+        return this.f45454d;
     }
 
     public final PointF c() {
-        return this.f44887e;
+        return this.f45455e;
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i10) {
         int a10 = jf.c.a(parcel);
-        jf.c.l(parcel, 1, this.f44886d);
-        jf.c.q(parcel, 2, this.f44887e, i10, false);
+        jf.c.l(parcel, 1, this.f45454d);
+        jf.c.q(parcel, 2, this.f45455e, i10, false);
         jf.c.b(parcel, a10);
     }
 }

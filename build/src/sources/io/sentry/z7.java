@@ -10,49 +10,49 @@ public final class z7 implements w1 {
     private Map A;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Date f30334d;
+    private final Date f30902d;
 
     /* renamed from: e  reason: collision with root package name */
-    private Date f30335e;
+    private Date f30903e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final AtomicInteger f30336i;
+    private final AtomicInteger f30904i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final String f30337o;
+    private final String f30905o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final String f30338p;
+    private final String f30906p;
 
     /* renamed from: q  reason: collision with root package name */
-    private Boolean f30339q;
+    private Boolean f30907q;
 
     /* renamed from: r  reason: collision with root package name */
-    private b f30340r;
+    private b f30908r;
 
     /* renamed from: s  reason: collision with root package name */
-    private Long f30341s;
+    private Long f30909s;
 
     /* renamed from: t  reason: collision with root package name */
-    private Double f30342t;
+    private Double f30910t;
 
     /* renamed from: u  reason: collision with root package name */
-    private final String f30343u;
+    private final String f30911u;
 
     /* renamed from: v  reason: collision with root package name */
-    private String f30344v;
+    private String f30912v;
 
     /* renamed from: w  reason: collision with root package name */
-    private final String f30345w;
+    private final String f30913w;
 
     /* renamed from: x  reason: collision with root package name */
-    private final String f30346x;
+    private final String f30914x;
 
     /* renamed from: y  reason: collision with root package name */
-    private String f30347y;
+    private String f30915y;
 
     /* renamed from: z  reason: collision with root package name */
-    private final io.sentry.util.a f30348z;
+    private final io.sentry.util.a f30916z;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements m1 {
@@ -361,25 +361,25 @@ public final class z7 implements w1 {
     }
 
     public z7(b bVar, Date date, Date date2, int i10, String str, String str2, Boolean bool, Long l10, Double d10, String str3, String str4, String str5, String str6, String str7) {
-        this.f30348z = new io.sentry.util.a();
-        this.f30340r = bVar;
-        this.f30334d = date;
-        this.f30335e = date2;
-        this.f30336i = new AtomicInteger(i10);
-        this.f30337o = str;
-        this.f30338p = str2;
-        this.f30339q = bool;
-        this.f30341s = l10;
-        this.f30342t = d10;
-        this.f30343u = str3;
-        this.f30344v = str4;
-        this.f30345w = str5;
-        this.f30346x = str6;
-        this.f30347y = str7;
+        this.f30916z = new io.sentry.util.a();
+        this.f30908r = bVar;
+        this.f30902d = date;
+        this.f30903e = date2;
+        this.f30904i = new AtomicInteger(i10);
+        this.f30905o = str;
+        this.f30906p = str2;
+        this.f30907q = bool;
+        this.f30909s = l10;
+        this.f30910t = d10;
+        this.f30911u = str3;
+        this.f30912v = str4;
+        this.f30913w = str5;
+        this.f30914x = str6;
+        this.f30915y = str7;
     }
 
     private double a(Date date) {
-        return Math.abs(date.getTime() - this.f30334d.getTime()) / 1000.0d;
+        return Math.abs(date.getTime() - this.f30902d.getTime()) / 1000.0d;
     }
 
     private long i(Date date) {
@@ -392,7 +392,7 @@ public final class z7 implements w1 {
 
     /* renamed from: b */
     public z7 clone() {
-        return new z7(this.f30340r, this.f30334d, this.f30335e, this.f30336i.get(), this.f30337o, this.f30338p, this.f30339q, this.f30341s, this.f30342t, this.f30343u, this.f30344v, this.f30345w, this.f30346x, this.f30347y);
+        return new z7(this.f30908r, this.f30902d, this.f30903e, this.f30904i.get(), this.f30905o, this.f30906p, this.f30907q, this.f30909s, this.f30910t, this.f30911u, this.f30912v, this.f30913w, this.f30914x, this.f30915y);
     }
 
     public void c() {
@@ -400,21 +400,21 @@ public final class z7 implements w1 {
     }
 
     public void d(Date date) {
-        a1 a10 = this.f30348z.a();
+        a1 a10 = this.f30916z.a();
         try {
-            this.f30339q = null;
-            if (this.f30340r == b.Ok) {
-                this.f30340r = b.Exited;
+            this.f30907q = null;
+            if (this.f30908r == b.Ok) {
+                this.f30908r = b.Exited;
             }
             if (date != null) {
-                this.f30335e = date;
+                this.f30903e = date;
             } else {
-                this.f30335e = k.d();
+                this.f30903e = k.d();
             }
-            Date date2 = this.f30335e;
+            Date date2 = this.f30903e;
             if (date2 != null) {
-                this.f30342t = Double.valueOf(a(date2));
-                this.f30341s = Long.valueOf(i(this.f30335e));
+                this.f30910t = Double.valueOf(a(date2));
+                this.f30909s = Long.valueOf(i(this.f30903e));
             }
             if (a10 != null) {
                 a10.close();
@@ -432,27 +432,27 @@ public final class z7 implements w1 {
     }
 
     public int e() {
-        return this.f30336i.get();
+        return this.f30904i.get();
     }
 
     public String f() {
-        return this.f30347y;
+        return this.f30915y;
     }
 
     public Boolean g() {
-        return this.f30339q;
+        return this.f30907q;
     }
 
     public String h() {
-        return this.f30346x;
+        return this.f30914x;
     }
 
     public String j() {
-        return this.f30338p;
+        return this.f30906p;
     }
 
     public Date k() {
-        Date date = this.f30334d;
+        Date date = this.f30902d;
         if (date == null) {
             return null;
         }
@@ -460,18 +460,18 @@ public final class z7 implements w1 {
     }
 
     public b l() {
-        return this.f30340r;
+        return this.f30908r;
     }
 
     public boolean m() {
-        if (this.f30340r != b.Ok) {
+        if (this.f30908r != b.Ok) {
             return true;
         }
         return false;
     }
 
     public void n() {
-        this.f30339q = Boolean.TRUE;
+        this.f30907q = Boolean.TRUE;
     }
 
     public void o(Map map) {
@@ -484,11 +484,11 @@ public final class z7 implements w1 {
 
     public boolean q(b bVar, String str, boolean z10, String str2) {
         boolean z11;
-        a1 a10 = this.f30348z.a();
+        a1 a10 = this.f30916z.a();
         boolean z12 = true;
         if (bVar != null) {
             try {
-                this.f30340r = bVar;
+                this.f30908r = bVar;
                 z11 = true;
             } catch (Throwable th2) {
                 if (a10 != null) {
@@ -504,24 +504,24 @@ public final class z7 implements w1 {
             z11 = false;
         }
         if (str != null) {
-            this.f30344v = str;
+            this.f30912v = str;
             z11 = true;
         }
         if (z10) {
-            this.f30336i.addAndGet(1);
+            this.f30904i.addAndGet(1);
             z11 = true;
         }
         if (str2 != null) {
-            this.f30347y = str2;
+            this.f30915y = str2;
         } else {
             z12 = z11;
         }
         if (z12) {
-            this.f30339q = null;
+            this.f30907q = null;
             Date d10 = k.d();
-            this.f30335e = d10;
+            this.f30903e = d10;
             if (d10 != null) {
-                this.f30341s = Long.valueOf(i(d10));
+                this.f30909s = Long.valueOf(i(d10));
             }
         }
         if (a10 != null) {
@@ -533,41 +533,41 @@ public final class z7 implements w1 {
     @Override // io.sentry.w1
     public void serialize(f3 f3Var, ILogger iLogger) {
         f3Var.u();
-        if (this.f30338p != null) {
-            f3Var.e("sid").f(this.f30338p);
+        if (this.f30906p != null) {
+            f3Var.e("sid").f(this.f30906p);
         }
-        if (this.f30337o != null) {
-            f3Var.e("did").f(this.f30337o);
+        if (this.f30905o != null) {
+            f3Var.e("did").f(this.f30905o);
         }
-        if (this.f30339q != null) {
-            f3Var.e("init").k(this.f30339q);
+        if (this.f30907q != null) {
+            f3Var.e("init").k(this.f30907q);
         }
-        f3Var.e("started").j(iLogger, this.f30334d);
-        f3Var.e("status").j(iLogger, this.f30340r.name().toLowerCase(Locale.ROOT));
-        if (this.f30341s != null) {
-            f3Var.e("seq").i(this.f30341s);
+        f3Var.e("started").j(iLogger, this.f30902d);
+        f3Var.e("status").j(iLogger, this.f30908r.name().toLowerCase(Locale.ROOT));
+        if (this.f30909s != null) {
+            f3Var.e("seq").i(this.f30909s);
         }
-        f3Var.e("errors").b(this.f30336i.intValue());
-        if (this.f30342t != null) {
-            f3Var.e("duration").i(this.f30342t);
+        f3Var.e("errors").b(this.f30904i.intValue());
+        if (this.f30910t != null) {
+            f3Var.e("duration").i(this.f30910t);
         }
-        if (this.f30335e != null) {
-            f3Var.e("timestamp").j(iLogger, this.f30335e);
+        if (this.f30903e != null) {
+            f3Var.e("timestamp").j(iLogger, this.f30903e);
         }
-        if (this.f30347y != null) {
-            f3Var.e("abnormal_mechanism").j(iLogger, this.f30347y);
+        if (this.f30915y != null) {
+            f3Var.e("abnormal_mechanism").j(iLogger, this.f30915y);
         }
         f3Var.e("attrs");
         f3Var.u();
-        f3Var.e("release").j(iLogger, this.f30346x);
-        if (this.f30345w != null) {
-            f3Var.e("environment").j(iLogger, this.f30345w);
+        f3Var.e("release").j(iLogger, this.f30914x);
+        if (this.f30913w != null) {
+            f3Var.e("environment").j(iLogger, this.f30913w);
         }
-        if (this.f30343u != null) {
-            f3Var.e("ip_address").j(iLogger, this.f30343u);
+        if (this.f30911u != null) {
+            f3Var.e("ip_address").j(iLogger, this.f30911u);
         }
-        if (this.f30344v != null) {
-            f3Var.e("user_agent").j(iLogger, this.f30344v);
+        if (this.f30912v != null) {
+            f3Var.e("user_agent").j(iLogger, this.f30912v);
         }
         f3Var.D();
         Map map = this.A;

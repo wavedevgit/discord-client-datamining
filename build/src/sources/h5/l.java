@@ -34,7 +34,7 @@ public interface l extends j {
         @Override // kotlin.jvm.functions.Function1
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             a((Throwable) obj);
-            return Unit.f31988a;
+            return Unit.f32556a;
         }
     }
 

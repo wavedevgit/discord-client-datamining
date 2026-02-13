@@ -5,33 +5,33 @@ import kotlin.jvm.internal.LongCompanionObject;
 public final class t0 {
 
     /* renamed from: c  reason: collision with root package name */
-    public static final t0 f36272c;
+    public static final t0 f36840c;
 
     /* renamed from: d  reason: collision with root package name */
-    public static final t0 f36273d;
+    public static final t0 f36841d;
 
     /* renamed from: e  reason: collision with root package name */
-    public static final t0 f36274e;
+    public static final t0 f36842e;
 
     /* renamed from: f  reason: collision with root package name */
-    public static final t0 f36275f;
+    public static final t0 f36843f;
 
     /* renamed from: g  reason: collision with root package name */
-    public static final t0 f36276g;
+    public static final t0 f36844g;
 
     /* renamed from: a  reason: collision with root package name */
-    public final long f36277a;
+    public final long f36845a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final long f36278b;
+    public final long f36846b;
 
     static {
         t0 t0Var = new t0(0L, 0L);
-        f36272c = t0Var;
-        f36273d = new t0(LongCompanionObject.MAX_VALUE, LongCompanionObject.MAX_VALUE);
-        f36274e = new t0(LongCompanionObject.MAX_VALUE, 0L);
-        f36275f = new t0(0L, LongCompanionObject.MAX_VALUE);
-        f36276g = t0Var;
+        f36840c = t0Var;
+        f36841d = new t0(LongCompanionObject.MAX_VALUE, LongCompanionObject.MAX_VALUE);
+        f36842e = new t0(LongCompanionObject.MAX_VALUE, 0L);
+        f36843f = new t0(0L, LongCompanionObject.MAX_VALUE);
+        f36844g = t0Var;
     }
 
     public t0(long j10, long j11) {
@@ -43,8 +43,8 @@ public final class t0 {
         }
         oe.a.a(z10);
         oe.a.a(j11 >= 0);
-        this.f36277a = j10;
-        this.f36278b = j11;
+        this.f36845a = j10;
+        this.f36846b = j11;
     }
 
     /* JADX WARN: Removed duplicated region for block: B:26:0x0051 A[RETURN] */
@@ -55,11 +55,11 @@ public final class t0 {
     public long a(long r9, long r11, long r13) {
         /*
             r8 = this;
-            long r2 = r8.f36277a
+            long r2 = r8.f36845a
             r0 = 0
             int r4 = (r2 > r0 ? 1 : (r2 == r0 ? 0 : -1))
             if (r4 != 0) goto Lf
-            long r4 = r8.f36278b
+            long r4 = r8.f36846b
             int r0 = (r4 > r0 ? 1 : (r4 == r0 ? 0 : -1))
             if (r0 != 0) goto Lf
             return r9
@@ -67,7 +67,7 @@ public final class t0 {
             r4 = -9223372036854775808
             r0 = r9
             long r9 = oe.w0.g1(r0, r2, r4)
-            long r2 = r8.f36278b
+            long r2 = r8.f36846b
             r4 = 9223372036854775807(0x7fffffffffffffff, double:NaN)
             long r2 = oe.w0.b(r0, r2, r4)
             int r4 = (r9 > r11 ? 1 : (r9 == r11 ? 0 : -1))
@@ -116,7 +116,7 @@ public final class t0 {
         }
         if (obj != null && t0.class == obj.getClass()) {
             t0 t0Var = (t0) obj;
-            if (this.f36277a == t0Var.f36277a && this.f36278b == t0Var.f36278b) {
+            if (this.f36845a == t0Var.f36845a && this.f36846b == t0Var.f36846b) {
                 return true;
             }
         }
@@ -124,6 +124,6 @@ public final class t0 {
     }
 
     public int hashCode() {
-        return (((int) this.f36277a) * 31) + ((int) this.f36278b);
+        return (((int) this.f36845a) * 31) + ((int) this.f36846b);
     }
 }

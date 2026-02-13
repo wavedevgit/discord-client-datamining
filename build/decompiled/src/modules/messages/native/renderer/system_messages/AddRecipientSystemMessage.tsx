@@ -37,7 +37,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/messages/native/renderer/system_messages/AddRecipientSystemMessage.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun56115: for (var _fun56115_ip = 0;;) switch (_fun56115_ip) {
+        _fun56150: for (var _fun56150_ip = 0;;) switch (_fun56150_ip) {
             case 0:
                 var3 = arg0;
                 var6 = var3.message;
@@ -56,8 +56,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = null;
                 var4 = var10 != var9;
                 if (!var4) {
-                    _fun56115_ip = 97;
-                    continue _fun56115
+                    _fun56150_ip = 97;
+                    continue _fun56150
                 }
             case 78:
                 var8 = _closure1_slot3;
@@ -102,33 +102,33 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var14 = var5 === var7;
                 var5 = null;
                 if (!var14) {
-                    _fun56115_ip = 270;
-                    continue _fun56115
+                    _fun56150_ip = 271;
+                    continue _fun56150
                 }
-            case 267:
+            case 268:
                 var5 = var17;
-            case 270:
+            case 271:
                 var16.linkColor = var5;
                 var16.roleColor = var17;
                 var5 = null;
                 if (!var13) {
-                    _fun56115_ip = 288;
-                    continue _fun56115
+                    _fun56150_ip = 289;
+                    continue _fun56150
                 }
-            case 285:
+            case 286:
                 var5 = var18;
-            case 288:
+            case 289:
                 var16.roleColors = var5;
                 var5 = 'dot';
                 var7 = var5 === var7;
                 var5 = var7;
                 if (!var7) {
-                    _fun56115_ip = 311;
-                    continue _fun56115
+                    _fun56150_ip = 312;
+                    continue _fun56150
                 }
-            case 307:
+            case 308:
                 var5 = var10 != var17;
-            case 311:
+            case 312:
                 var16.shouldShowRoleDot = var5;
                 var5 = var6.channel_id;
                 var16.messageChannelId = var5;
@@ -142,30 +142,30 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.colorString = var9;
                 var11 = null;
                 if (!var14) {
-                    _fun56115_ip = 366;
-                    continue _fun56115
+                    _fun56150_ip = 367;
+                    continue _fun56150
                 }
-            case 363:
+            case 364:
                 var11 = var9;
-            case 366:
+            case 367:
                 var0.linkColor = var11;
                 var0.roleColor = var9;
                 var11 = null;
                 if (!var13) {
-                    _fun56115_ip = 384;
-                    continue _fun56115
+                    _fun56150_ip = 385;
+                    continue _fun56150
                 }
-            case 381:
+            case 382:
                 var11 = var12;
-            case 384:
+            case 385:
                 var0.roleColors = var11;
                 if (!var7) {
-                    _fun56115_ip = 396;
-                    continue _fun56115
+                    _fun56150_ip = 397;
+                    continue _fun56150
                 }
-            case 392:
+            case 393:
                 var7 = var10 != var9;
-            case 396:
+            case 397:
                 var0.shouldShowRoleDot = var7;
                 var6 = var6.channel_id;
                 var0.messageChannelId = var6;
@@ -183,18 +183,18 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var9.bind(var2)(var5);
                 var5 = var5.t;
                 if (var4) {
-                    _fun56115_ip = 485;
-                    continue _fun56115
+                    _fun56150_ip = 486;
+                    continue _fun56150
                 }
-            case 471:
+            case 472:
                 var4 = var5["7/Xl0S"];
                 var4 = var6.bind(var7)(var4, var8);
-                _fun56115_ip = 499;
-                continue _fun56115;
-            case 485:
+                _fun56150_ip = 500;
+                continue _fun56150;
+            case 486:
                 var5 = var5.Vej1Nw;
                 var4 = var6.bind(var7)(var5, var8);
-            case 499:
+            case 500:
                 var0.content = var4;
                 var4 = _closure1_slot1;
                 var5 = _closure1_slot2;
@@ -209,4 +209,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.createAddRecipientSystemMessage = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1376, 1372, 1621, 6770, 6771, 1234, 6772, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1376, 1372, 1621, 6752, 6753, 1235, 6754, 2]);

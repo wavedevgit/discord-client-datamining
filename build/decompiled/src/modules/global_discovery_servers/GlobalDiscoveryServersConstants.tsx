@@ -163,15 +163,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2 = var2.bind(var3)(var1);
         var1 = var2.map;
         var0 = function(arg0) { // Environment: var0
-            _fun67861: for (var _fun67861_ip = 0;;) switch (_fun67861_ip) {
+            _fun66528: for (var _fun66528_ip = 0;;) switch (_fun66528_ip) {
                 case 0:
                     var2 = arg0;
                     var3 = var2.code;
                     var1 = 'en-US';
                     var0 = var2;
                     if (!(var1 === var3)) {
-                        _fun67861_ip = 105;
-                        continue _fun67861
+                        _fun66528_ip = 105;
+                        continue _fun66528
                     }
                 case 19:
                     var1 = {};
@@ -203,4 +203,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getLanguageOptions = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [667, 1234, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [667, 1235, 2]);

@@ -1,29 +1,58 @@
 // modules/nameplates/utils.tsx
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var6 = require;
+    var7 = require;
     var2 = exports;
-    var7 = dependencyMap;
-    var _closure1_slot0 = var6;
+    var8 = dependencyMap;
+    var _closure1_slot0 = var7;
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
-    var _closure1_slot2 = var7;
+    var _closure1_slot2 = var8;
+    var5 = function arg0() {
+        _fun18427: for (var _fun18427_ip = 0;;) switch (_fun18427_ip) {
+            case 0:
+                var2 = arg0;
+                var0 = null;
+                var1 = var0 == var2;
+                if (var1) {
+                    _fun18427_ip = 74;
+                    continue _fun18427
+                }
+            case 12:
+                var1 = {};
+                var3 = var2.skuId;
+                var1.skuId = var3;
+                var3 = var2.asset;
+                var1.src = var3;
+                var3 = var2.label;
+                var1.imgAlt = var3;
+                var4 = _closure1_slot5;
+                var3 = var2.palette;
+                var2 = undefined;
+                var2 = var4.bind(var2)(var3);
+                var1.palette = var2;
+                var0 = var1;
+            case 74:
+                return var0;
+        }
+    };
+    var _closure1_slot6 = var5;
     var4 = function arg0() {
-        _fun18417: for (var _fun18417_ip = 0;;) switch (_fun18417_ip) {
+        _fun18428: for (var _fun18428_ip = 0;;) switch (_fun18428_ip) {
             case 0:
                 var3 = arg0;
                 var1 = var3.name;
                 var2 = _closure1_slot0;
                 var0 = _closure1_slot2;
-                var7 = 1;
+                var7 = 2;
                 var0 = var0[var7];
                 var5 = undefined;
                 var0 = var2.bind(var5)(var0);
                 var0 = var0.INVALID_PALETTE_KEY;
                 var0 = var1 !== var0;
                 if (!var0) {
-                    _fun18417_ip = 120;
-                    continue _fun18417
+                    _fun18428_ip = 120;
+                    continue _fun18428
                 }
             case 46:
                 var2 = var3.name;
@@ -34,19 +63,19 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.CUSTOM_PALETTE_KEY;
                 var1 = var2 !== var1;
                 if (var1) {
-                    _fun18417_ip = 117;
-                    continue _fun18417
+                    _fun18428_ip = 117;
+                    continue _fun18428
                 }
             case 81:
-                var6 = _closure1_slot6;
+                var6 = _closure1_slot8;
                 var2 = var3.darkBackground;
                 var2 = var6.bind(var5)(var2);
                 if (!var2) {
-                    _fun18417_ip = 114;
-                    continue _fun18417
+                    _fun18428_ip = 114;
+                    continue _fun18428
                 }
             case 99:
-                var4 = _closure1_slot6;
+                var4 = _closure1_slot8;
                 var3 = var3.lightBackground;
                 var2 = var4.bind(var5)(var3);
             case 114:
@@ -57,7 +86,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
         }
     };
-    var _closure1_slot5 = var4;
+    var _closure1_slot7 = var4;
     var0 = function arg0() {
         var2 = /^#([0-9a-fA-F]{6})$/;
         var1 = var2.test;
@@ -65,27 +94,32 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = var1.bind(var2)(var0);
         return var0;
     };
-    var _closure1_slot6 = var0;
+    var _closure1_slot8 = var0;
     var0 = global;
-    var8 = var0.Object;
-    var5 = var8.defineProperty;
+    var9 = var0.Object;
+    var6 = var9.defineProperty;
     var3 = {};
     var0 = true;
     var3.value = var0;
     var0 = '__esModule';
-    var0 = var5.bind(var8)(var2, var0, var3);
+    var0 = var6.bind(var9)(var2, var0, var3);
     var0 = 0;
-    var3 = var7[var0];
+    var3 = var8[var0];
     var0 = undefined;
-    var3 = var6.bind(var0)(var3);
-    var3 = var3.ThemeTypes;
+    var3 = var7.bind(var0)(var3);
+    var3 = var3.isNameplateRecord;
     var _closure1_slot3 = var3;
+    var3 = 1;
+    var3 = var8[var3];
+    var3 = var7.bind(var0)(var3);
+    var3 = var3.ThemeTypes;
+    var _closure1_slot4 = var3;
     var3 = function arg0() {
-        _fun18419: for (var _fun18419_ip = 0;;) switch (_fun18419_ip) {
+        _fun18430: for (var _fun18430_ip = 0;;) switch (_fun18430_ip) {
             case 0:
                 var2 = _closure1_slot0;
                 var0 = _closure1_slot2;
-                var4 = 1;
+                var4 = 2;
                 var0 = var0[var4];
                 var3 = undefined;
                 var0 = var2.bind(var3)(var0);
@@ -94,8 +128,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var2[var0];
                 var2 = null;
                 if (!(var2 == var0)) {
-                    _fun18419_ip = 67;
-                    continue _fun18419
+                    _fun18430_ip = 67;
+                    continue _fun18430
                 }
             case 44:
                 var2 = _closure1_slot0;
@@ -107,38 +141,72 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
         }
     };
-    var _closure1_slot4 = var3;
-    var5 = 4;
-    var5 = var7[var5];
-    var7 = var6.bind(var0)(var5);
-    var6 = var7.fileFinishedImporting;
-    var5 = 'modules/nameplates/utils.tsx';
-    var5 = var6.bind(var7)(var5);
-    var5 = function arg0, arg1() {
-        _fun18420: for (var _fun18420_ip = 0;;) switch (_fun18420_ip) {
+    var _closure1_slot5 = var3;
+    var6 = 5;
+    var6 = var8[var6];
+    var8 = var7.bind(var0)(var6);
+    var7 = var8.fileFinishedImporting;
+    var6 = 'modules/nameplates/utils.tsx';
+    var6 = var7.bind(var8)(var6);
+    var2.getNameplateData = var5;
+    var5 = function arg0() {
+        _fun18431: for (var _fun18431_ip = 0;;) switch (_fun18431_ip) {
             case 0:
                 var0 = arg0;
-                var3 = _closure1_slot5;
+                var1 = var0.items;
+                var2 = var1.length;
+                var1 = 0;
+                if (!(var1 !== var2)) {
+                    _fun18431_ip = 58;
+                    continue _fun18431
+                }
+            case 19:
+                var0 = var0.items;
+                var3 = var0[var1];
+                var0 = _closure1_slot3;
+                var2 = undefined;
+                var4 = var0.bind(var2)(var3);
+                var0 = null;
+                if (!var4) {
+                    _fun18431_ip = 56;
+                    continue _fun18431
+                }
+            case 47:
+                var1 = _closure1_slot6;
+                var0 = var1.bind(var2)(var3);
+            case 56:
+                return var0;
+            case 58:
+                var0 = null;
+                return var0;
+        }
+    };
+    var2.getNameplateDataFromProductRecord = var5;
+    var5 = function arg0, arg1() {
+        _fun18432: for (var _fun18432_ip = 0;;) switch (_fun18432_ip) {
+            case 0:
+                var0 = arg0;
+                var3 = _closure1_slot7;
                 var2 = undefined;
                 var3 = var3.bind(var2)(var0);
                 if (var3) {
-                    _fun18420_ip = 22;
-                    continue _fun18420
+                    _fun18432_ip = 22;
+                    continue _fun18432
                 }
             case 20:
                 return var2;
             case 22:
-                var1 = _closure1_slot3;
+                var1 = _closure1_slot4;
                 var2 = var1.LIGHT;
                 var1 = arg1;
                 if (!(var1 !== var2)) {
-                    _fun18420_ip = 47;
-                    continue _fun18420
+                    _fun18432_ip = 47;
+                    continue _fun18432
                 }
             case 39:
                 var4 = var0.darkBackground;
-                _fun18420_ip = 53;
-                continue _fun18420;
+                _fun18432_ip = 53;
+                continue _fun18432;
             case 47:
                 var4 = var0.lightBackground;
             case 53:
@@ -164,7 +232,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = function arg0() {
         var3 = _closure1_slot1;
         var4 = _closure1_slot2;
-        var1 = 2;
+        var1 = 3;
         var0 = var4[var1];
         var2 = undefined;
         var6 = var3.bind(var2)(var0);
@@ -220,12 +288,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.parseFirstFrame = var3;
-    var3 = function() {
+    var1 = function() {
         var0 = {};
         var1 = {};
         var6 = _closure1_slot0;
         var7 = _closure1_slot2;
-        var2 = 3;
+        var2 = 4;
         var3 = var7[var2];
         var5 = undefined;
         var3 = var6.bind(var5)(var3);
@@ -298,33 +366,6 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0.boom = var1;
         return var0;
     };
-    var2.getNameplateSampleUsers = var3;
-    var1 = function(arg0) { // Environment: var1
-        _fun18423: for (var _fun18423_ip = 0;;) switch (_fun18423_ip) {
-            case 0:
-                var2 = arg0;
-                var0 = null;
-                var1 = var0 == var2;
-                if (var1) {
-                    _fun18423_ip = 63;
-                    continue _fun18423
-                }
-            case 12:
-                var1 = {};
-                var3 = var2.asset;
-                var1.src = var3;
-                var5 = _closure1_slot4;
-                var4 = var2.palette;
-                var3 = undefined;
-                var3 = var5.bind(var3)(var4);
-                var1.palette = var3;
-                var2 = var2.label;
-                var1.imgAlt = var2;
-                var0 = var1;
-            case 63:
-                return var0;
-        }
-    };
-    var2.getNameplateData = var1;
+    var2.getNameplateSampleUsers = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [483, 1642, 1644, 1234, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1642, 483, 1645, 1647, 1235, 2]);

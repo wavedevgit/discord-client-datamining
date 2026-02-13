@@ -11,25 +11,25 @@ import com.google.android.material.materialswitch.MaterialSwitch;
 public final class a implements ViewBinding {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ConstraintLayout f51737a;
+    private final ConstraintLayout f52305a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final MaterialSwitch f51738b;
+    public final MaterialSwitch f52306b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final MaterialToolbar f51739c;
+    public final MaterialToolbar f52307c;
 
     private a(ConstraintLayout constraintLayout, MaterialSwitch materialSwitch, MaterialToolbar materialToolbar) {
-        this.f51737a = constraintLayout;
-        this.f51738b = materialSwitch;
-        this.f51739c = materialToolbar;
+        this.f52305a = constraintLayout;
+        this.f52306b = materialSwitch;
+        this.f52307c = materialToolbar;
     }
 
     public static a a(View view) {
-        int i10 = up.a.f50879c;
+        int i10 = up.a.f51447c;
         MaterialSwitch materialSwitch = (MaterialSwitch) e4.a.a(view, i10);
         if (materialSwitch != null) {
-            i10 = up.a.f50880d;
+            i10 = up.a.f51448d;
             MaterialToolbar materialToolbar = (MaterialToolbar) e4.a.a(view, i10);
             if (materialToolbar != null) {
                 return new a((ConstraintLayout) view, materialSwitch, materialToolbar);
@@ -43,7 +43,7 @@ public final class a implements ViewBinding {
     }
 
     public static a d(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z10) {
-        View inflate = layoutInflater.inflate(up.b.f50881a, viewGroup, false);
+        View inflate = layoutInflater.inflate(up.b.f51449a, viewGroup, false);
         if (z10) {
             viewGroup.addView(inflate);
         }
@@ -53,6 +53,6 @@ public final class a implements ViewBinding {
     @Override // androidx.viewbinding.ViewBinding
     /* renamed from: b */
     public ConstraintLayout getRoot() {
-        return this.f51737a;
+        return this.f52305a;
     }
 }

@@ -21,28 +21,28 @@ import org.jetbrains.annotations.NotNull;
 public final class b3 implements nq.b {
 
     /* renamed from: d  reason: collision with root package name */
-    private final List f40687d;
+    private final List f41255d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final List f40688e;
+    private final List f41256e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final StepStyles.UiStepStyle f40689i;
+    private final StepStyles.UiStepStyle f41257i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final String f40690o;
+    private final String f41258o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final String f40691p;
+    private final String f41259p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final String f40692q;
+    private final String f41260q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final String f40693r;
+    private final String f41261r;
 
     /* renamed from: s  reason: collision with root package name */
-    public static final a f40686s = new a(null);
+    public static final a f41254s = new a(null);
     @NotNull
     public static final Parcelable.Creator<b3> CREATOR = new b();
 
@@ -136,34 +136,34 @@ public final class b3 implements nq.b {
 
     public b3(List list, List componentConfigs, StepStyles.UiStepStyle uiStepStyle, String str, String str2, String str3, String str4) {
         Intrinsics.checkNotNullParameter(componentConfigs, "componentConfigs");
-        this.f40687d = list;
-        this.f40688e = componentConfigs;
-        this.f40689i = uiStepStyle;
-        this.f40690o = str;
-        this.f40691p = str2;
-        this.f40692q = str3;
-        this.f40693r = str4;
+        this.f41255d = list;
+        this.f41256e = componentConfigs;
+        this.f41257i = uiStepStyle;
+        this.f41258o = str;
+        this.f41259p = str2;
+        this.f41260q = str3;
+        this.f41261r = str4;
     }
 
     @Override // nq.b
     public List E0() {
-        return this.f40688e;
+        return this.f41256e;
     }
 
     public final String a() {
-        return this.f40693r;
+        return this.f41261r;
     }
 
     public final String b() {
-        return this.f40690o;
+        return this.f41258o;
     }
 
     public final String c() {
-        return this.f40691p;
+        return this.f41259p;
     }
 
     public final String d() {
-        return this.f40692q;
+        return this.f41260q;
     }
 
     @Override // android.os.Parcelable
@@ -173,18 +173,18 @@ public final class b3 implements nq.b {
 
     @Override // nq.b
     public List getComponents() {
-        return this.f40687d;
+        return this.f41255d;
     }
 
     @Override // nq.b
     public StepStyles.UiStepStyle getStyles() {
-        return this.f40689i;
+        return this.f41257i;
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel dest, int i10) {
         Intrinsics.checkNotNullParameter(dest, "dest");
-        List<Parcelable> list = this.f40687d;
+        List<Parcelable> list = this.f41255d;
         if (list == null) {
             dest.writeInt(0);
         } else {
@@ -194,15 +194,15 @@ public final class b3 implements nq.b {
                 dest.writeParcelable(parcelable, i10);
             }
         }
-        List<Parcelable> list2 = this.f40688e;
+        List<Parcelable> list2 = this.f41256e;
         dest.writeInt(list2.size());
         for (Parcelable parcelable2 : list2) {
             dest.writeParcelable(parcelable2, i10);
         }
-        dest.writeParcelable(this.f40689i, i10);
-        dest.writeString(this.f40690o);
-        dest.writeString(this.f40691p);
-        dest.writeString(this.f40692q);
-        dest.writeString(this.f40693r);
+        dest.writeParcelable(this.f41257i, i10);
+        dest.writeString(this.f41258o);
+        dest.writeString(this.f41259p);
+        dest.writeString(this.f41260q);
+        dest.writeString(this.f41261r);
     }
 }

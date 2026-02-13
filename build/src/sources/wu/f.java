@@ -13,25 +13,25 @@ import wu.j;
 public class f implements k {
 
     /* renamed from: f  reason: collision with root package name */
-    public static final a f53990f;
+    public static final a f54558f;
 
     /* renamed from: g  reason: collision with root package name */
-    private static final j.a f53991g;
+    private static final j.a f54559g;
 
     /* renamed from: a  reason: collision with root package name */
-    private final Class f53992a;
+    private final Class f54560a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Method f53993b;
+    private final Method f54561b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Method f53994c;
+    private final Method f54562c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Method f53995d;
+    private final Method f54563d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Method f53996e;
+    private final Method f54564e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a {
@@ -41,10 +41,10 @@ public class f implements k {
         public static final class C0758a implements j.a {
 
             /* renamed from: a  reason: collision with root package name */
-            final /* synthetic */ String f53997a;
+            final /* synthetic */ String f54565a;
 
             C0758a(String str) {
-                this.f53997a = str;
+                this.f54565a = str;
             }
 
             @Override // wu.j.a
@@ -52,13 +52,13 @@ public class f implements k {
                 Intrinsics.checkNotNullParameter(sslSocket, "sslSocket");
                 String name = sslSocket.getClass().getName();
                 Intrinsics.checkNotNullExpressionValue(name, "sslSocket.javaClass.name");
-                return StringsKt.P(name, this.f53997a + '.', false, 2, null);
+                return StringsKt.P(name, this.f54565a + '.', false, 2, null);
             }
 
             @Override // wu.j.a
             public k c(SSLSocket sslSocket) {
                 Intrinsics.checkNotNullParameter(sslSocket, "sslSocket");
-                return f.f53990f.b(sslSocket.getClass());
+                return f.f54558f.b(sslSocket.getClass());
             }
         }
 
@@ -85,7 +85,7 @@ public class f implements k {
         }
 
         public final j.a d() {
-            return f.f53991g;
+            return f.f54559g;
         }
 
         private a() {
@@ -94,30 +94,30 @@ public class f implements k {
 
     static {
         a aVar = new a(null);
-        f53990f = aVar;
-        f53991g = aVar.c("com.google.android.gms.org.conscrypt");
+        f54558f = aVar;
+        f54559g = aVar.c("com.google.android.gms.org.conscrypt");
     }
 
     public f(Class sslSocketClass) {
         Intrinsics.checkNotNullParameter(sslSocketClass, "sslSocketClass");
-        this.f53992a = sslSocketClass;
+        this.f54560a = sslSocketClass;
         Method declaredMethod = sslSocketClass.getDeclaredMethod("setUseSessionTickets", Boolean.TYPE);
         Intrinsics.checkNotNullExpressionValue(declaredMethod, "sslSocketClass.getDeclar…:class.javaPrimitiveType)");
-        this.f53993b = declaredMethod;
-        this.f53994c = sslSocketClass.getMethod("setHostname", String.class);
-        this.f53995d = sslSocketClass.getMethod("getAlpnSelectedProtocol", null);
-        this.f53996e = sslSocketClass.getMethod("setAlpnProtocols", byte[].class);
+        this.f54561b = declaredMethod;
+        this.f54562c = sslSocketClass.getMethod("setHostname", String.class);
+        this.f54563d = sslSocketClass.getMethod("getAlpnSelectedProtocol", null);
+        this.f54564e = sslSocketClass.getMethod("setAlpnProtocols", byte[].class);
     }
 
     @Override // wu.k
     public boolean a() {
-        return vu.b.f51989f.b();
+        return vu.b.f52557f.b();
     }
 
     @Override // wu.k
     public boolean b(SSLSocket sslSocket) {
         Intrinsics.checkNotNullParameter(sslSocket, "sslSocket");
-        return this.f53992a.isInstance(sslSocket);
+        return this.f54560a.isInstance(sslSocket);
     }
 
     @Override // wu.k
@@ -127,7 +127,7 @@ public class f implements k {
             return null;
         }
         try {
-            byte[] bArr = (byte[]) this.f53995d.invoke(sslSocket, null);
+            byte[] bArr = (byte[]) this.f54563d.invoke(sslSocket, null);
             if (bArr == null) {
                 return null;
             }
@@ -149,11 +149,11 @@ public class f implements k {
         Intrinsics.checkNotNullParameter(protocols, "protocols");
         if (b(sslSocket)) {
             try {
-                this.f53993b.invoke(sslSocket, Boolean.TRUE);
+                this.f54561b.invoke(sslSocket, Boolean.TRUE);
                 if (str != null) {
-                    this.f53994c.invoke(sslSocket, str);
+                    this.f54562c.invoke(sslSocket, str);
                 }
-                this.f53996e.invoke(sslSocket, vu.h.f52016a.c(protocols));
+                this.f54564e.invoke(sslSocket, vu.h.f52584a.c(protocols));
             } catch (IllegalAccessException e10) {
                 throw new AssertionError(e10);
             } catch (InvocationTargetException e11) {

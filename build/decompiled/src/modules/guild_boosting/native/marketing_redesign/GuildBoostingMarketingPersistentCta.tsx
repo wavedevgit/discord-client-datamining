@@ -172,7 +172,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = var21.bind(var3)(var2);
         var2 = var4.useAnimatedStyle;
         var1 = function() {
-            _fun59730: for (var _fun59730_ip = 0;;) switch (_fun59730_ip) {
+            _fun78929: for (var _fun78929_ip = 0;;) switch (_fun78929_ip) {
                 case 0:
                     var0 = {};
                     var3 = {};
@@ -180,8 +180,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var8 = -120;
                     var1 = var8;
                     if (var4) {
-                        _fun59730_ip = 76;
-                        continue _fun59730
+                        _fun78929_ip = 76;
+                        continue _fun78929
                     }
                 case 23:
                     var7 = _closure1_slot0;
@@ -194,8 +194,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var9 = _closure2_slot0;
                     var5 = 120;
                     if (!var9) {
-                        _fun59730_ip = 66;
-                        continue _fun59730
+                        _fun78929_ip = 66;
+                        continue _fun78929
                     }
                 case 63:
                     var5 = var8;
@@ -217,8 +217,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var5 = _closure2_slot0;
                     var2 = 0;
                     if (!var5) {
-                        _fun59730_ip = 135;
-                        continue _fun59730
+                        _fun78929_ip = 135;
+                        continue _fun78929
                     }
                 case 132:
                     var2 = 1;
@@ -365,4 +365,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = 120;
     var2.VISIBILITY_OFFSET = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1298, 660, 33, 1297, 671, 632, 3717, 4087, 4104, 7356, 3938, 7377, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1298, 660, 33, 1297, 671, 632, 3717, 4087, 4104, 7453, 3938, 9988, 2]);

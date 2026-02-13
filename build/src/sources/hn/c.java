@@ -11,7 +11,7 @@ import u3.j;
 public final class c {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final c f27463a = new c();
+    public static final c f28031a = new c();
 
     private c() {
     }

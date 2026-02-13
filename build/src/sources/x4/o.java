@@ -10,10 +10,10 @@ import okio.BufferedSource;
 public final class o {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final o f54365a = new o();
+    public static final o f54933a = new o();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final Paint f54366b = new Paint(3);
+    private static final Paint f54934b = new Paint(3);
 
     private o() {
     }
@@ -23,7 +23,7 @@ public final class o {
             e3.a aVar = new e3.a(new m(bufferedSource.peek().s2()));
             return new l(aVar.H(), aVar.w());
         }
-        return l.f54355d;
+        return l.f54923d;
     }
 
     public final Bitmap b(Bitmap bitmap, l lVar) {
@@ -51,7 +51,7 @@ public final class o {
         } else {
             createBitmap = Bitmap.createBitmap(bitmap.getWidth(), bitmap.getHeight(), k5.a.c(bitmap));
         }
-        new Canvas(createBitmap).drawBitmap(bitmap, matrix, f54366b);
+        new Canvas(createBitmap).drawBitmap(bitmap, matrix, f54934b);
         bitmap.recycle();
         return createBitmap;
     }

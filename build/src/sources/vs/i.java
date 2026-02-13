@@ -17,25 +17,25 @@ import vs.h;
 public abstract class i implements vs.h {
 
     /* renamed from: e  reason: collision with root package name */
-    public static final d f51836e = new d(null);
+    public static final d f52404e = new d(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final Member f51837a;
+    private final Member f52405a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Type f51838b;
+    private final Type f52406b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Class f51839c;
+    private final Class f52407c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final List f51840d;
+    private final List f52408d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a extends i implements vs.g {
 
         /* renamed from: f  reason: collision with root package name */
-        private final Object f51841f;
+        private final Object f52409f;
 
         /* JADX WARN: Illegal instructions before constructor call */
         /*
@@ -72,7 +72,7 @@ public abstract class i implements vs.h {
                 r1 = r7
                 r2 = r8
                 r1.<init>(r2, r3, r4, r5, r6)
-                r1.f51841f = r9
+                r1.f52409f = r9
                 return
             */
             throw new UnsupportedOperationException("Method not decompiled: vs.i.a.<init>(java.lang.reflect.Constructor, java.lang.Object):void");
@@ -83,7 +83,7 @@ public abstract class i implements vs.h {
             Intrinsics.checkNotNullParameter(args, "args");
             d(args);
             SpreadBuilder spreadBuilder = new SpreadBuilder(3);
-            spreadBuilder.add(this.f51841f);
+            spreadBuilder.add(this.f52409f);
             spreadBuilder.addSpread(args);
             spreadBuilder.add(null);
             return ((Constructor) b()).newInstance(spreadBuilder.toArray(new Object[spreadBuilder.size()]));
@@ -146,7 +146,7 @@ public abstract class i implements vs.h {
     public static final class c extends i implements vs.g {
 
         /* renamed from: f  reason: collision with root package name */
-        private final Object f51842f;
+        private final Object f52410f;
 
         /* JADX WARN: Illegal instructions before constructor call */
         /*
@@ -169,7 +169,7 @@ public abstract class i implements vs.h {
                 r1 = r7
                 r2 = r8
                 r1.<init>(r2, r3, r4, r5, r6)
-                r1.f51842f = r9
+                r1.f52410f = r9
                 return
             */
             throw new UnsupportedOperationException("Method not decompiled: vs.i.c.<init>(java.lang.reflect.Constructor, java.lang.Object):void");
@@ -180,7 +180,7 @@ public abstract class i implements vs.h {
             Intrinsics.checkNotNullParameter(args, "args");
             d(args);
             SpreadBuilder spreadBuilder = new SpreadBuilder(2);
-            spreadBuilder.add(this.f51842f);
+            spreadBuilder.add(this.f52410f);
             spreadBuilder.addSpread(args);
             return ((Constructor) b()).newInstance(spreadBuilder.toArray(new Object[spreadBuilder.size()]));
         }
@@ -251,20 +251,20 @@ public abstract class i implements vs.h {
         public static final class a extends f implements vs.g {
 
             /* renamed from: f  reason: collision with root package name */
-            private final Object f51843f;
+            private final Object f52411f;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             public a(Field field, Object obj) {
                 super(field, false, null);
                 Intrinsics.checkNotNullParameter(field, "field");
-                this.f51843f = obj;
+                this.f52411f = obj;
             }
 
             @Override // vs.i.f, vs.h
             public Object call(Object[] args) {
                 Intrinsics.checkNotNullParameter(args, "args");
                 d(args);
-                return ((Field) b()).get(this.f51843f);
+                return ((Field) b()).get(this.f52411f);
             }
         }
 
@@ -365,27 +365,27 @@ public abstract class i implements vs.h {
     public static abstract class g extends i {
 
         /* renamed from: f  reason: collision with root package name */
-        private final boolean f51844f;
+        private final boolean f52412f;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
         public static final class a extends g implements vs.g {
 
             /* renamed from: g  reason: collision with root package name */
-            private final Object f51845g;
+            private final Object f52413g;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             public a(Field field, boolean z10, Object obj) {
                 super(field, z10, false, null);
                 Intrinsics.checkNotNullParameter(field, "field");
-                this.f51845g = obj;
+                this.f52413g = obj;
             }
 
             @Override // vs.i.g, vs.h
             public Object call(Object[] args) {
                 Intrinsics.checkNotNullParameter(args, "args");
                 d(args);
-                ((Field) b()).set(this.f51845g, kotlin.collections.i.U(args));
-                return Unit.f31988a;
+                ((Field) b()).set(this.f52413g, kotlin.collections.i.U(args));
+                return Unit.f32556a;
             }
         }
 
@@ -402,7 +402,7 @@ public abstract class i implements vs.h {
                 Intrinsics.checkNotNullParameter(args, "args");
                 d(args);
                 ((Field) b()).set(null, kotlin.collections.i.w0(args));
-                return Unit.f31988a;
+                return Unit.f32556a;
             }
         }
 
@@ -456,14 +456,14 @@ public abstract class i implements vs.h {
                 obj = null;
             }
             field.set(obj, kotlin.collections.i.w0(args));
-            return Unit.f31988a;
+            return Unit.f32556a;
         }
 
         @Override // vs.i
         public void d(Object[] args) {
             Intrinsics.checkNotNullParameter(args, "args");
             super.d(args);
-            if (this.f51844f && kotlin.collections.i.w0(args) == null) {
+            if (this.f52412f && kotlin.collections.i.w0(args) == null) {
                 throw new IllegalArgumentException("null is not allowed as a value for this property.");
             }
         }
@@ -497,7 +497,7 @@ public abstract class i implements vs.h {
                 r1 = r7
                 r2 = r8
                 r1.<init>(r2, r3, r4, r5, r6)
-                r1.f51844f = r9
+                r1.f52412f = r9
                 return
             */
             throw new UnsupportedOperationException("Method not decompiled: vs.i.g.<init>(java.lang.reflect.Field, boolean, boolean):void");
@@ -508,26 +508,26 @@ public abstract class i implements vs.h {
     public static abstract class h extends i {
 
         /* renamed from: f  reason: collision with root package name */
-        private final boolean f51846f;
+        private final boolean f52414f;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
         public static final class a extends h implements vs.g {
 
             /* renamed from: g  reason: collision with root package name */
-            private final Object f51847g;
+            private final Object f52415g;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             public a(Method method, Object obj) {
                 super(method, false, null, 4, null);
                 Intrinsics.checkNotNullParameter(method, "method");
-                this.f51847g = obj;
+                this.f52415g = obj;
             }
 
             @Override // vs.h
             public Object call(Object[] args) {
                 Intrinsics.checkNotNullParameter(args, "args");
                 d(args);
-                return g(this.f51847g, args);
+                return g(this.f52415g, args);
             }
         }
 
@@ -551,10 +551,10 @@ public abstract class i implements vs.h {
         public static final class c extends h implements vs.g {
 
             /* renamed from: g  reason: collision with root package name */
-            private final boolean f51848g;
+            private final boolean f52416g;
 
             /* renamed from: h  reason: collision with root package name */
-            private final Object f51849h;
+            private final Object f52417h;
 
             /* JADX WARN: Illegal instructions before constructor call */
             /*
@@ -582,8 +582,8 @@ public abstract class i implements vs.h {
                     java.lang.reflect.Type[] r0 = (java.lang.reflect.Type[]) r0
                     r1 = 0
                     r4.<init>(r5, r2, r0, r1)
-                    r4.f51848g = r6
-                    r4.f51849h = r7
+                    r4.f52416g = r6
+                    r4.f52417h = r7
                     return
                 */
                 throw new UnsupportedOperationException("Method not decompiled: vs.i.h.c.<init>(java.lang.reflect.Method, boolean, java.lang.Object):void");
@@ -594,17 +594,17 @@ public abstract class i implements vs.h {
                 Intrinsics.checkNotNullParameter(args, "args");
                 d(args);
                 SpreadBuilder spreadBuilder = new SpreadBuilder(2);
-                spreadBuilder.add(this.f51849h);
+                spreadBuilder.add(this.f52417h);
                 spreadBuilder.addSpread(args);
                 return g(null, spreadBuilder.toArray(new Object[spreadBuilder.size()]));
             }
 
             public final Object h() {
-                return this.f51849h;
+                return this.f52417h;
             }
 
             public final boolean i() {
-                return this.f51848g;
+                return this.f52416g;
             }
         }
 
@@ -612,7 +612,7 @@ public abstract class i implements vs.h {
         public static final class d extends h implements vs.g {
 
             /* renamed from: g  reason: collision with root package name */
-            private final Object[] f51850g;
+            private final Object[] f52418g;
 
             /* JADX WARN: Illegal instructions before constructor call */
             /*
@@ -638,7 +638,7 @@ public abstract class i implements vs.h {
                     java.lang.reflect.Type[] r0 = (java.lang.reflect.Type[]) r0
                     r2 = 0
                     r3.<init>(r4, r1, r0, r2)
-                    r3.f51850g = r5
+                    r3.f52418g = r5
                     return
                 */
                 throw new UnsupportedOperationException("Method not decompiled: vs.i.h.d.<init>(java.lang.reflect.Method, java.lang.Object[]):void");
@@ -649,17 +649,17 @@ public abstract class i implements vs.h {
                 Intrinsics.checkNotNullParameter(args, "args");
                 d(args);
                 SpreadBuilder spreadBuilder = new SpreadBuilder(2);
-                spreadBuilder.addSpread(this.f51850g);
+                spreadBuilder.addSpread(this.f52418g);
                 spreadBuilder.addSpread(args);
                 return g(null, spreadBuilder.toArray(new Object[spreadBuilder.size()]));
             }
 
             public final Object[] h() {
-                return this.f51850g;
+                return this.f52418g;
             }
 
             public final int i() {
-                return this.f51850g.length;
+                return this.f52418g.length;
             }
         }
 
@@ -732,8 +732,8 @@ public abstract class i implements vs.h {
         protected final Object g(Object obj, Object[] args) {
             Intrinsics.checkNotNullParameter(args, "args");
             Object invoke = ((Method) b()).invoke(obj, Arrays.copyOf(args, args.length));
-            if (this.f51846f) {
-                return Unit.f31988a;
+            if (this.f52414f) {
+                return Unit.f32556a;
             }
             return invoke;
         }
@@ -770,7 +770,7 @@ public abstract class i implements vs.h {
                 java.lang.reflect.Type r7 = r6.getReturnType()
                 java.lang.Class r8 = java.lang.Void.TYPE
                 boolean r7 = kotlin.jvm.internal.Intrinsics.areEqual(r7, r8)
-                r0.f51846f = r7
+                r0.f52414f = r7
                 return
             */
             throw new UnsupportedOperationException("Method not decompiled: vs.i.h.<init>(java.lang.reflect.Method, boolean, java.lang.reflect.Type[]):void");
@@ -783,12 +783,12 @@ public abstract class i implements vs.h {
 
     @Override // vs.h
     public List a() {
-        return this.f51840d;
+        return this.f52408d;
     }
 
     @Override // vs.h
     public final Member b() {
-        return this.f51837a;
+        return this.f52405a;
     }
 
     @Override // vs.h
@@ -801,19 +801,19 @@ public abstract class i implements vs.h {
     }
 
     protected final void e(Object obj) {
-        if (obj != null && this.f51837a.getDeclaringClass().isInstance(obj)) {
+        if (obj != null && this.f52405a.getDeclaringClass().isInstance(obj)) {
             return;
         }
         throw new IllegalArgumentException("An object member requires the object instance passed as the first argument.");
     }
 
     public final Class f() {
-        return this.f51839c;
+        return this.f52407c;
     }
 
     @Override // vs.h
     public final Type getReturnType() {
-        return this.f51838b;
+        return this.f52406b;
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:5:0x0025, code lost:
@@ -827,9 +827,9 @@ public abstract class i implements vs.h {
         /*
             r0 = this;
             r0.<init>()
-            r0.f51837a = r1
-            r0.f51838b = r2
-            r0.f51839c = r3
+            r0.f52405a = r1
+            r0.f52406b = r2
+            r0.f52407c = r3
             if (r3 == 0) goto L27
             kotlin.jvm.internal.SpreadBuilder r1 = new kotlin.jvm.internal.SpreadBuilder
             r2 = 2
@@ -844,7 +844,7 @@ public abstract class i implements vs.h {
         L27:
             java.util.List r1 = kotlin.collections.i.R0(r4)
         L2b:
-            r0.f51840d = r1
+            r0.f52408d = r1
             return
         */
         throw new UnsupportedOperationException("Method not decompiled: vs.i.<init>(java.lang.reflect.Member, java.lang.reflect.Type, java.lang.Class, java.lang.reflect.Type[]):void");

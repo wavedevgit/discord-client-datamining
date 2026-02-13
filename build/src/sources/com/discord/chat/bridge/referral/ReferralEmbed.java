@@ -222,7 +222,7 @@ public interface ReferralEmbed {
             compositeEncoder.w(serialDescriptor, 1, resolved.getHeaderColor());
             compositeEncoder.w(serialDescriptor, 2, resolved.getBackgroundColor());
             compositeEncoder.w(serialDescriptor, 3, resolved.getThumbnailCornerRadius());
-            n2 n2Var = n2.f50033a;
+            n2 n2Var = n2.f50601a;
             compositeEncoder.o(serialDescriptor, 4, n2Var, resolved.getHeaderLogoUrl());
             if (compositeEncoder.z(serialDescriptor, 5) || resolved.headerUrl != null) {
                 compositeEncoder.o(serialDescriptor, 5, n2Var, resolved.headerUrl);
@@ -234,7 +234,7 @@ public interface ReferralEmbed {
                 compositeEncoder.o(serialDescriptor, 7, n2Var, resolved.titleText);
             }
             if (compositeEncoder.z(serialDescriptor, 8) || resolved.titleColor != null) {
-                compositeEncoder.o(serialDescriptor, 8, p0.f50049a, resolved.titleColor);
+                compositeEncoder.o(serialDescriptor, 8, p0.f50617a, resolved.titleColor);
             }
             if (compositeEncoder.z(serialDescriptor, 9) || resolved.bodyText != null) {
                 compositeEncoder.o(serialDescriptor, 9, n2Var, resolved.bodyText);
@@ -243,37 +243,37 @@ public interface ReferralEmbed {
                 compositeEncoder.o(serialDescriptor, 10, AnnotatedStructurableTextSerializer.INSTANCE, resolved.structuredBodyText);
             }
             if (compositeEncoder.z(serialDescriptor, 11) || resolved.bodyTextColor != null) {
-                compositeEncoder.o(serialDescriptor, 11, p0.f50049a, resolved.bodyTextColor);
+                compositeEncoder.o(serialDescriptor, 11, p0.f50617a, resolved.bodyTextColor);
             }
             if (compositeEncoder.z(serialDescriptor, 12) || resolved.linkButtonLabel != null) {
                 compositeEncoder.o(serialDescriptor, 12, AnnotatedStructurableTextSerializer.INSTANCE, resolved.linkButtonLabel);
             }
             if (compositeEncoder.z(serialDescriptor, 13) || resolved.linkButtonColor != null) {
-                compositeEncoder.o(serialDescriptor, 13, p0.f50049a, resolved.linkButtonColor);
+                compositeEncoder.o(serialDescriptor, 13, p0.f50617a, resolved.linkButtonColor);
             }
             if (compositeEncoder.z(serialDescriptor, 14) || resolved.subText != null) {
                 compositeEncoder.o(serialDescriptor, 14, n2Var, resolved.subText);
             }
             if (compositeEncoder.z(serialDescriptor, 15) || resolved.subTextColor != null) {
-                compositeEncoder.o(serialDescriptor, 15, p0.f50049a, resolved.subTextColor);
+                compositeEncoder.o(serialDescriptor, 15, p0.f50617a, resolved.subTextColor);
             }
             if (compositeEncoder.z(serialDescriptor, 16) || resolved.footerText != null) {
                 compositeEncoder.o(serialDescriptor, 16, n2Var, resolved.footerText);
             }
             if (compositeEncoder.z(serialDescriptor, 17) || resolved.footerTextColor != null) {
-                compositeEncoder.o(serialDescriptor, 17, p0.f50049a, resolved.footerTextColor);
+                compositeEncoder.o(serialDescriptor, 17, p0.f50617a, resolved.footerTextColor);
             }
             if (compositeEncoder.z(serialDescriptor, 18) || resolved.acceptLabelText != null) {
                 compositeEncoder.o(serialDescriptor, 18, n2Var, resolved.acceptLabelText);
             }
             if (compositeEncoder.z(serialDescriptor, 19) || resolved.acceptLabelColor != null) {
-                compositeEncoder.o(serialDescriptor, 19, p0.f50049a, resolved.acceptLabelColor);
+                compositeEncoder.o(serialDescriptor, 19, p0.f50617a, resolved.acceptLabelColor);
             }
             if (compositeEncoder.z(serialDescriptor, 20) || resolved.acceptLabelIconUrl != null) {
                 compositeEncoder.o(serialDescriptor, 20, n2Var, resolved.acceptLabelIconUrl);
             }
             if (compositeEncoder.z(serialDescriptor, 21) || resolved.canBeAccepted != null) {
-                compositeEncoder.o(serialDescriptor, 21, h.f49997a, resolved.canBeAccepted);
+                compositeEncoder.o(serialDescriptor, 21, h.f50565a, resolved.canBeAccepted);
             }
         }
 
@@ -653,7 +653,7 @@ public interface ReferralEmbed {
             compositeEncoder.w(serialDescriptor, 1, resolving.getHeaderColor());
             compositeEncoder.w(serialDescriptor, 2, resolving.getBackgroundColor());
             compositeEncoder.w(serialDescriptor, 3, resolving.getThumbnailCornerRadius());
-            compositeEncoder.o(serialDescriptor, 4, n2.f50033a, resolving.getHeaderLogoUrl());
+            compositeEncoder.o(serialDescriptor, 4, n2.f50601a, resolving.getHeaderLogoUrl());
             compositeEncoder.w(serialDescriptor, 5, resolving.resolvingGradientStart);
             compositeEncoder.w(serialDescriptor, 6, resolving.resolvingGradientEnd);
         }

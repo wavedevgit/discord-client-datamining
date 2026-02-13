@@ -8,69 +8,69 @@ import java.util.UUID;
 public class x implements k4.h {
 
     /* renamed from: d  reason: collision with root package name */
-    private static final String f43959d = k4.m.i("WMFgUpdater");
+    private static final String f44527d = k4.m.i("WMFgUpdater");
 
     /* renamed from: a  reason: collision with root package name */
-    private final r4.b f43960a;
+    private final r4.b f44528a;
 
     /* renamed from: b  reason: collision with root package name */
-    final androidx.work.impl.foreground.a f43961b;
+    final androidx.work.impl.foreground.a f44529b;
 
     /* renamed from: c  reason: collision with root package name */
-    final p4.v f43962c;
+    final p4.v f44530c;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     class a implements Runnable {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ androidx.work.impl.utils.futures.c f43963d;
+        final /* synthetic */ androidx.work.impl.utils.futures.c f44531d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ UUID f43964e;
+        final /* synthetic */ UUID f44532e;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ k4.g f43965i;
+        final /* synthetic */ k4.g f44533i;
 
         /* renamed from: o  reason: collision with root package name */
-        final /* synthetic */ Context f43966o;
+        final /* synthetic */ Context f44534o;
 
         a(androidx.work.impl.utils.futures.c cVar, UUID uuid, k4.g gVar, Context context) {
-            this.f43963d = cVar;
-            this.f43964e = uuid;
-            this.f43965i = gVar;
-            this.f43966o = context;
+            this.f44531d = cVar;
+            this.f44532e = uuid;
+            this.f44533i = gVar;
+            this.f44534o = context;
         }
 
         @Override // java.lang.Runnable
         public void run() {
             try {
-                if (!this.f43963d.isCancelled()) {
-                    String uuid = this.f43964e.toString();
-                    p4.u i10 = x.this.f43962c.i(uuid);
-                    if (i10 != null && !i10.f41448b.d()) {
-                        x.this.f43961b.a(uuid, this.f43965i);
-                        this.f43966o.startService(androidx.work.impl.foreground.b.e(this.f43966o, p4.x.a(i10), this.f43965i));
+                if (!this.f44531d.isCancelled()) {
+                    String uuid = this.f44532e.toString();
+                    p4.u i10 = x.this.f44530c.i(uuid);
+                    if (i10 != null && !i10.f42016b.d()) {
+                        x.this.f44529b.a(uuid, this.f44533i);
+                        this.f44534o.startService(androidx.work.impl.foreground.b.e(this.f44534o, p4.x.a(i10), this.f44533i));
                     } else {
                         throw new IllegalStateException("Calls to setForegroundAsync() must complete before a ListenableWorker signals completion of work by returning an instance of Result.");
                     }
                 }
-                this.f43963d.p(null);
+                this.f44531d.p(null);
             } catch (Throwable th2) {
-                this.f43963d.q(th2);
+                this.f44531d.q(th2);
             }
         }
     }
 
     public x(WorkDatabase workDatabase, androidx.work.impl.foreground.a aVar, r4.b bVar) {
-        this.f43961b = aVar;
-        this.f43960a = bVar;
-        this.f43962c = workDatabase.H();
+        this.f44529b = aVar;
+        this.f44528a = bVar;
+        this.f44530c = workDatabase.H();
     }
 
     @Override // k4.h
     public ListenableFuture a(Context context, UUID uuid, k4.g gVar) {
         androidx.work.impl.utils.futures.c t10 = androidx.work.impl.utils.futures.c.t();
-        this.f43960a.d(new a(t10, uuid, gVar, context));
+        this.f44528a.d(new a(t10, uuid, gVar, context));
         return t10;
     }
 }

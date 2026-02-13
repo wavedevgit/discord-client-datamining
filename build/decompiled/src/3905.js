@@ -1,6 +1,6 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun35238: for (var _fun35238_ip = 0;;) switch (_fun35238_ip) {
+    _fun35268: for (var _fun35268_ip = 0;;) switch (_fun35268_ip) {
         case 0:
             var1 = exports;
             var0 = require;
@@ -56,8 +56,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var0 = arg0;
             var0 = var0.RNScreensTurboModule;
             if (var0) {
-                _fun35238_ip = 135;
-                continue _fun35238
+                _fun35268_ip = 135;
+                continue _fun35268
             }
         case 84:
             var2 = {};

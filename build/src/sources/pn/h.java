@@ -7,16 +7,16 @@ import kotlin.jvm.internal.Intrinsics;
 public final class h implements ReactPointerEventsView {
 
     /* renamed from: d  reason: collision with root package name */
-    private final d f42818d;
+    private final d f43386d;
 
     public h(d dimmingView) {
         Intrinsics.checkNotNullParameter(dimmingView, "dimmingView");
-        this.f42818d = dimmingView;
+        this.f43386d = dimmingView;
     }
 
     @Override // com.facebook.react.uimanager.ReactPointerEventsView
     public PointerEvents getPointerEvents() {
-        if (this.f42818d.getBlockGestures$react_native_screens_release()) {
+        if (this.f43386d.getBlockGestures$react_native_screens_release()) {
             return PointerEvents.AUTO;
         }
         return PointerEvents.NONE;

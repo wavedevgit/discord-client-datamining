@@ -148,7 +148,7 @@ public final class DirectReplyMessage {
     public static final Unit json$lambda$0(JsonBuilder Json) {
         Intrinsics.checkNotNullParameter(Json, "$this$Json");
         Json.c(true);
-        return Unit.f31988a;
+        return Unit.f32556a;
     }
 
     public static final /* synthetic */ void write$Self$notification_api_release(DirectReplyMessage directReplyMessage, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
@@ -156,19 +156,19 @@ public final class DirectReplyMessage {
         compositeEncoder.k(serialDescriptor, 1, ChannelId$$serializer.INSTANCE, ChannelId.m1058boximpl(directReplyMessage.channelId));
         compositeEncoder.k(serialDescriptor, 2, DirectReplyUser$$serializer.INSTANCE, directReplyMessage.author);
         if (compositeEncoder.z(serialDescriptor, 3) || directReplyMessage.content != null) {
-            compositeEncoder.o(serialDescriptor, 3, n2.f50033a, directReplyMessage.content);
+            compositeEncoder.o(serialDescriptor, 3, n2.f50601a, directReplyMessage.content);
         }
         if (compositeEncoder.z(serialDescriptor, 4) || directReplyMessage.type != null) {
-            compositeEncoder.o(serialDescriptor, 4, p0.f50049a, directReplyMessage.type);
+            compositeEncoder.o(serialDescriptor, 4, p0.f50617a, directReplyMessage.type);
         }
         if (compositeEncoder.z(serialDescriptor, 5) || directReplyMessage.channelType != null) {
-            compositeEncoder.o(serialDescriptor, 5, p0.f50049a, directReplyMessage.channelType);
+            compositeEncoder.o(serialDescriptor, 5, p0.f50617a, directReplyMessage.channelType);
         }
         if (compositeEncoder.z(serialDescriptor, 6) || directReplyMessage.channelName != null) {
-            compositeEncoder.o(serialDescriptor, 6, n2.f50033a, directReplyMessage.channelName);
+            compositeEncoder.o(serialDescriptor, 6, n2.f50601a, directReplyMessage.channelName);
         }
         if (compositeEncoder.z(serialDescriptor, 7) || directReplyMessage.guildName != null) {
-            compositeEncoder.o(serialDescriptor, 7, n2.f50033a, directReplyMessage.guildName);
+            compositeEncoder.o(serialDescriptor, 7, n2.f50601a, directReplyMessage.guildName);
         }
     }
 

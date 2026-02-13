@@ -7,13 +7,13 @@ import java.util.Map;
 public final class y6 implements w1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private String f30294d;
+    private String f30862d;
 
     /* renamed from: e  reason: collision with root package name */
-    private Object f30295e;
+    private Object f30863e;
 
     /* renamed from: i  reason: collision with root package name */
-    private Map f30296i;
+    private Map f30864i;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements m1 {
@@ -53,27 +53,27 @@ public final class y6 implements w1 {
     }
 
     public y6(String str, Object obj) {
-        this.f30294d = str;
+        this.f30862d = str;
         if (obj != null && str.equals(InquiryField.StringField.TYPE)) {
-            this.f30295e = obj.toString();
+            this.f30863e = obj.toString();
         } else {
-            this.f30295e = obj;
+            this.f30863e = obj;
         }
     }
 
     public void a(Map map) {
-        this.f30296i = map;
+        this.f30864i = map;
     }
 
     @Override // io.sentry.w1
     public void serialize(f3 f3Var, ILogger iLogger) {
         f3Var.u();
-        f3Var.e("type").j(iLogger, this.f30294d);
-        f3Var.e("value").j(iLogger, this.f30295e);
-        Map map = this.f30296i;
+        f3Var.e("type").j(iLogger, this.f30862d);
+        f3Var.e("value").j(iLogger, this.f30863e);
+        Map map = this.f30864i;
         if (map != null) {
             for (String str : map.keySet()) {
-                f3Var.e(str).j(iLogger, this.f30296i.get(str));
+                f3Var.e(str).j(iLogger, this.f30864i.get(str));
             }
         }
         f3Var.D();
