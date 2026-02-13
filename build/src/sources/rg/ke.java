@@ -20,6 +20,11 @@ public final class ke {
     /* renamed from: f  reason: collision with root package name */
     private y3 f47521f;
 
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public static /* bridge */ /* synthetic */ y3 a(ke keVar) {
+        return keVar.f47521f;
+    }
+
     public final ke d(y3 y3Var) {
         this.f47521f = y3Var;
         return this;
