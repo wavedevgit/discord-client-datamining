@@ -1330,4 +1330,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.manageSubscription = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 27, 3960, 1621, 4615, 1623, 7228, 44, 478, 7248, 4612, 22, 491, 3130, 566, 7249, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 27, 3962, 1621, 4617, 1623, 7230, 44, 478, 7250, 4614, 22, 491, 3132, 566, 7251, 2]);

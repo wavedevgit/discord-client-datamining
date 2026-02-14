@@ -1,168 +1,141 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun68907: for (var _fun68907_ip = 0;;) switch (_fun68907_ip) {
-        case 0:
-            var4 = require;
-            var2 = exports;
-            var5 = dependencyMap;
-            var8 = global;
-            var7 = var8.Object;
-            var6 = var7.defineProperty;
-            var3 = {};
-            var0 = true;
-            var3.value = var0;
-            var0 = '__esModule';
-            var0 = var6.bind(var7)(var2, var0, var3);
-            var0 = 0;
-            var3 = var5[var0];
-            var0 = undefined;
-            var3 = var4.bind(var0)(var3);
-            var6 = var3.NativeEventEmitter;
-            var3 = var3.Platform;
-            var7 = 1;
-            var9 = var5[var7];
-            var9 = var4.bind(var0)(var9);
-            var9 = var9.default;
-            if (var9) {
-                _fun68907_ip = 134;
-                continue _fun68907
-            }
-        case 88:
-            var11 = var8.Proxy;
-            var10 = {};
-            var8 = function() {
-                var0 = global;
-                var2 = var0.Error;
-                var0 = var2.prototype;
-                var1 = Object.create(var0, {
-                    constructor: {
-                        value: var2
+    var1 = exports;
+    var2 = global;
+    var5 = var2.Object;
+    var4 = var5.defineProperty;
+    var3 = {};
+    var2 = true;
+    var3.value = var2;
+    var2 = '__esModule';
+    var2 = var4.bind(var5)(var1, var2, var3);
+    var3 = {};
+    var2 = 'function pnpm_utilsTs1(worklet,wait=0){const value={time:0};return function(...args){"worklet";const t=Date.now();const now=t-value.time;if(now<wait){value.time=t;return;}value.time=t;return worklet(...args);};}';
+    var3.code = var2;
+    var2 = {};
+    var4 = 'function pnpm_utilsTs2(...args){const{value,wait,worklet}=this.__closure;const t=Date.now();const now=t-value.time;if(now<wait){value.time=t;return;}value.time=t;return worklet(...args);}';
+    var2.code = var4;
+    var _closure1_slot0 = var2;
+    var2 = function arg0() {
+        _fun68867: for (var _fun68867_ip = 0;;) switch (_fun68867_ip) {
+            case 0:
+                var2 = arg0;
+                var7 = undefined;
+                var5 = undefined;
+                var _closure2_slot0 = var2;
+                var1 = arguments.length;
+                var4 = 1;
+                var6 = var1 > var4;
+                var1 = 0;
+                var3 = 0;
+                if (!var6) {
+                    _fun68867_ip = 44;
+                    continue _fun68867
+                }
+            case 30:
+                var6 = arguments[var4];
+                var3 = 0;
+                if (!(var7 !== var6)) {
+                    _fun68867_ip = 44;
+                    continue _fun68867
+                }
+            case 40:
+                var3 = arguments[var4];
+            case 44:
+                var _closure2_slot1 = var3;
+                var4 = {};
+                var4.time = var1;
+                var _closure2_slot2 = var4;
+                var0 = function() {
+                    _fun68868: for (var _fun68868_ip = 0;;) switch (_fun68868_ip) {
+                        case 0:
+                            var0 = undefined;
+                            var3 = undefined;
+                            var1 = global;
+                            var2 = var1.Date;
+                            var1 = var2.now;
+                            var2 = var1.bind(var2)();
+                            var4 = _closure2_slot2;
+                            var4 = var4.time;
+                            var5 = var2 - var4;
+                            var4 = _closure2_slot1;
+                            if (!(!(var5 < var4))) {
+                                _fun68868_ip = 75;
+                                continue _fun68868
+                            }
+                        case 46:
+                            var4 = _closure2_slot2;
+                            var4.time = var2;
+                            var5 = _closure2_slot0;
+                            var4 = var5.apply;
+                            var3 = arguments;
+                            var3 = var4.bind(var5)(var0, var3);
+                            return var3;
+                        case 75:
+                            var1 = _closure2_slot2;
+                            var1.time = var2;
+                            return var0;
                     }
-                });
-                var3 = "The package 'react-native-keyboard-controller' doesn't seem to be linked. Make sure: \n\n- You rebuilt the app after installing the package\n- You are not using Expo Go\n";
-                var4 = var1;
-                var0 = new var4[var2](var3, var2);
-                var0 = var0 instanceof Object ? var0 : var1;
-                throw var0;
-            };
-            var10.get = var8;
-            var8 = var11.prototype;
-            var9 = Object.create(var8, {
-                constructor: {
-                    value: var11
+                };
+                var1 = {};
+                var1.value = var4;
+                var1.wait = var3;
+                var1.worklet = var2;
+                var0.__closure = var1;
+                var1 = 8768898864142.0;
+                var0.__workletHash = var1;
+                var1 = _closure1_slot0;
+                var0.__initData = var1;
+                return var0;
+        }
+    };
+    var4 = {};
+    var2.__closure = var4;
+    var4 = 1678132827161.0;
+    var2.__workletHash = var4;
+    var2.__initData = var3;
+    var3 = {};
+    var4 = 'function pnpm_utilsTs3(defaultScrollValue,snapPoints){let snapPoint;if(snapPoints){snapPoint=snapPoints.find(function(offset){return offset>=defaultScrollValue;});}return snapPoint!==null&&snapPoint!==void 0?snapPoint:defaultScrollValue;}';
+    var3.code = var4;
+    var0 = function arg0, arg1() {
+        _fun68869: for (var _fun68869_ip = 0;;) switch (_fun68869_ip) {
+            case 0:
+                var0 = arg0;
+                var4 = arg1;
+                var _closure2_slot0 = var0;
+                var1 = undefined;
+                if (!var4) {
+                    _fun68869_ip = 34;
+                    continue _fun68869
                 }
-            });
-            var14 = {};
-            var15 = var9;
-            var13 = var10;
-            var8 = new var15[var11](var14, var13, var12);
-            var9 = var8 instanceof Object ? var8 : var9;
-            _fun68907_ip = 148;
-            continue _fun68907;
-        case 134:
-            var7 = var5[var7];
-            var7 = var4.bind(var0)(var7);
-            var9 = var7.default;
-        case 148:
-            var7 = 'KeyboardController::';
-            var _closure1_slot0 = var7;
-            var7 = var6.prototype;
-            var7 = Object.create(var7, {
-                constructor: {
-                    value: var6
+            case 17:
+                var3 = var4.find;
+                var2 = function(arg0) { // Environment: var2
+                    var1 = _closure2_slot0;
+                    var0 = arg0;
+                    var0 = var0 >= var1;
+                    return var0;
+                };
+                var1 = var3.bind(var4)(var2);
+            case 34:
+                var2 = null;
+                if (!(var2 != var1)) {
+                    _fun68869_ip = 43;
+                    continue _fun68869
                 }
-            });
-            var15 = var7;
-            var14 = var9;
-            var6 = new var15[var6](var14, var13);
-            var6 = var6 instanceof Object ? var6 : var7;
-            var _closure1_slot1 = var6;
-            var8 = {};
-            var6 = function arg0, arg1() {
-                var3 = _closure1_slot1;
-                var2 = var3.addListener;
-                var1 = _closure1_slot0;
-                var0 = arg0;
-                var1 = var1 + var0;
-                var0 = arg1;
-                var0 = var2.bind(var3)(var1, var0);
+            case 40:
+                var0 = var1;
+            case 43:
                 return var0;
-            };
-            var8.addListener = var6;
-            var7 = {};
-            var6 = function arg0, arg1() {
-                var3 = _closure1_slot1;
-                var2 = var3.addListener;
-                var1 = _closure1_slot0;
-                var0 = arg0;
-                var1 = var1 + var0;
-                var0 = arg1;
-                var0 = var2.bind(var3)(var1, var0);
-                return var0;
-            };
-            var7.addListener = var6;
-            var6 = {};
-            var10 = function arg0, arg1() {
-                var3 = _closure1_slot1;
-                var2 = var3.addListener;
-                var1 = _closure1_slot0;
-                var0 = arg0;
-                var1 = var1 + var0;
-                var0 = arg1;
-                var0 = var2.bind(var3)(var1, var0);
-                return var0;
-            };
-            var6.addListener = var10;
-            var10 = var3.Version;
-            var3 = 30;
-            if (!(!(var10 >= var3))) {
-                _fun68907_ip = 249;
-                continue _fun68907
-            }
-        case 240:
-            var3 = function(arg0) { // Environment: var1
-                var0 = arg0;
-                var0 = var0.children;
-                return var0;
-            };
-            _fun68907_ip = 266;
-            continue _fun68907;
-        case 249:
-            var10 = 2;
-            var10 = var5[var10];
-            var10 = var4.bind(var0)(var10);
-            var3 = var10.default;
-        case 266:
-            var2.KeyboardControllerNative = var9;
-            var2.KeyboardEvents = var8;
-            var2.FocusedInputEvents = var7;
-            var2.WindowDimensionsEvents = var6;
-            var6 = 3;
-            var7 = var5[var6];
-            var7 = var4.bind(var0)(var7);
-            var7 = var7.default;
-            var2.KeyboardControllerView = var7;
-            var6 = var5[var6];
-            var6 = var4.bind(var0)(var6);
-            var6 = var6.Commands;
-            var2.KeyboardControllerViewCommands = var6;
-            var2.KeyboardGestureArea = var3;
-            var3 = 4;
-            var3 = var5[var3];
-            var3 = var4.bind(var0)(var3);
-            var3 = var3.default;
-            var2.RCTOverKeyboardView = var3;
-            var3 = 5;
-            var3 = var5[var3];
-            var3 = var4.bind(var0)(var3);
-            var3 = var3.default;
-            var2.KeyboardBackgroundView = var3;
-            var1 = function(arg0) { // Environment: var1
-                var0 = arg0;
-                var0 = var0.children;
-                return var0;
-            };
-            var2.RCTKeyboardExtender = var1;
-            return var0;
-    }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 8582, 8583, 8584, 8585, 8586]);
+        }
+    };
+    var4 = {};
+    var0.__closure = var4;
+    var4 = 10680474034033.0;
+    var0.__workletHash = var4;
+    var0.__initData = var3;
+    var1.debounce = var2;
+    var1.scrollDistanceWithRespectToSnapPoints = var0;
+    var0 = undefined;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, []);

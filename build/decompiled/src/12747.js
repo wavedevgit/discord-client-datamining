@@ -1,77 +1,44 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun97501: for (var _fun97501_ip = 0;;) switch (_fun97501_ip) {
+    _fun97527: for (var _fun97527_ip = 0;;) switch (_fun97527_ip) {
         case 0:
-            var9 = require;
-            var10 = dependencyMap;
-            var1 = global;
-            var0 = var1.Function;
-            var8 = var0.prototype;
-            var5 = 0;
-            var2 = var10[var5];
+            var3 = require;
+            var4 = dependencyMap;
+            var0 = 0;
+            var1 = var4[var0];
             var0 = undefined;
-            var7 = var9.bind(var0)(var2);
-            if (!var7) {
-                _fun97501_ip = 47;
-                continue _fun97501
+            var2 = var3.bind(var0)(var1);
+            if (!var2) {
+                _fun97527_ip = 48;
+                continue _fun97527
             }
-        case 35:
-            var1 = var1.Object;
-            var7 = var1.getOwnPropertyDescriptor;
-        case 47:
+        case 22:
             var1 = 1;
-            var1 = var10[var1];
-            var1 = var9.bind(var0)(var1);
-            var6 = 'name';
-            var4 = var1.bind(var0)(var8, var6);
-            var3 = var4;
-            if (!var4) {
-                _fun97501_ip = 99;
-                continue _fun97501
-            }
-        case 75:
-            var1 = function() {
-                var0 = undefined;
+            var1 = var4[var1];
+            var3 = var3.bind(var0)(var1);
+            var1 = function() { // Environment: var1
+                var0 = global;
+                var5 = var0.Object;
+                var4 = var5.defineProperty;
+                var1 = 42;
+                var3 = function() { // Environment: var0
+                    var0 = undefined;
+                    return var0;
+                };
+                var2 = 'prototype';
+                var0 = {
+                    'value': 42,
+                    'writable': false
+                };
+                var0 = var4.bind(var5)(var3, var2, var0);
+                var0 = var0.prototype;
+                var0 = var1 !== var0;
                 return var0;
             };
-            var2 = var1.name;
-            var1 = 'something';
-            var3 = var1 === var2;
-        case 99:
-            var1 = var4;
-            if (!var1) {
-                _fun97501_ip = 150;
-                continue _fun97501
-            }
-        case 105:
-            var2 = var10[var5];
-            var2 = var9.bind(var0)(var2);
-            var2 = !var2;
-            if (var2) {
-                _fun97501_ip = 147;
-                continue _fun97501
-            }
-        case 120:
-            var5 = var10[var5];
-            var5 = var9.bind(var0)(var5);
-            if (!var5) {
-                _fun97501_ip = 144;
-                continue _fun97501
-            }
-        case 132:
-            var6 = var7.bind(var0)(var8, var6);
-            var5 = var6.configurable;
-        case 144:
-            var2 = var5;
-        case 147:
-            var1 = var2;
-        case 150:
-            var2 = {};
-            var2.EXISTS = var4;
-            var2.PROPER = var3;
-            var2.CONFIGURABLE = var1;
+            var2 = var3.bind(var0)(var1);
+        case 48:
             var1 = arg4;
             var1.exports = var2;
             return var0;
     }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [12690, 12710]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [12695, 12696]);

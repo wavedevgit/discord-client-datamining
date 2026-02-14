@@ -183,4 +183,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.createChannelLinkedToLobbySystemMessage = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3454, 660, 6745, 6753, 6754, 1689, 1235, 6755, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3456, 660, 6747, 6755, 6756, 1689, 1235, 6757, 2]);

@@ -1017,4 +1017,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.muteCustomJoinSound = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 3952, 3953, 660, 665, 507, 4806, 807, 3352, 5672, 796, 1355, 22, 3998, 1235, 5673, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 3954, 3955, 660, 665, 507, 4808, 807, 3354, 5674, 796, 1355, 22, 4000, 1235, 5675, 2]);

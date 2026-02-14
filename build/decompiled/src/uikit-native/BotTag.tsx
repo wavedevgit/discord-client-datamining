@@ -326,4 +326,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var3;
     var2.getBotLabel = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 3483, 33, 1297, 671, 1235, 5827, 3938, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 3485, 33, 1297, 671, 1235, 5829, 3940, 2]);

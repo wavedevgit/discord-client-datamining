@@ -196,4 +196,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getGuildBadgeImageSource = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [7454, 7459, 7460, 7461, 7462, 7463, 7464, 7465, 7466, 3210, 7453, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [7456, 7461, 7462, 7463, 7464, 7465, 7466, 7467, 7468, 3212, 7455, 2]);

@@ -630,4 +630,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getParticipantNamesText = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3515, 1377, 4241, 660, 5978, 22, 3956, 1235, 3101, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3517, 1377, 4243, 660, 5980, 22, 3958, 1235, 3103, 2]);

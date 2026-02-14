@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var6.bind(var0)(var3);
     var _closure1_slot5 = var3;
     var3 = function arg0() {
-        _fun93107: for (var _fun93107_ip = 0;;) switch (_fun93107_ip) {
+        _fun93142: for (var _fun93142_ip = 0;;) switch (_fun93142_ip) {
             case 0:
                 var0 = arg0;
                 var3 = var0.messageId;
@@ -41,8 +41,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var1.bind(var2)(var0);
                 var1 = null;
                 if (!(var1 !== var2)) {
-                    _fun93107_ip = 226;
-                    continue _fun93107
+                    _fun93142_ip = 226;
+                    continue _fun93142
                 }
             case 52:
                 var3 = _closure1_slot1;
@@ -59,16 +59,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var1 == var6;
                 var3 = undefined;
                 if (var8) {
-                    _fun93107_ip = 125;
-                    continue _fun93107
+                    _fun93142_ip = 125;
+                    continue _fun93142
                 }
             case 104:
                 var8 = var6.assets;
                 var10 = var1 == var8;
                 var3 = undefined;
                 if (var10) {
-                    _fun93107_ip = 125;
-                    continue _fun93107
+                    _fun93142_ip = 125;
+                    continue _fun93142
                 }
             case 119:
                 var3 = var8.invite_cover_image;
@@ -76,8 +76,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var1 != var3;
                 var3 = null;
                 if (!var8) {
-                    _fun93107_ip = 185;
-                    continue _fun93107
+                    _fun93142_ip = 185;
+                    continue _fun93142
                 }
             case 134:
                 var8 = _closure1_slot0;
@@ -92,15 +92,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var8.bind(var9)(var7, var6, var4);
             case 185:
                 if (!(var1 != var3)) {
-                    _fun93107_ip = 192;
-                    continue _fun93107
+                    _fun93142_ip = 192;
+                    continue _fun93142
                 }
             case 189:
                 var2 = var3;
             case 192:
                 if (!(var1 == var2)) {
-                    _fun93107_ip = 207;
-                    continue _fun93107
+                    _fun93142_ip = 207;
+                    continue _fun93142
                 }
             case 196:
                 var3 = var5.getCoverImageURL;
@@ -109,8 +109,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var1 != var2;
                 var1 = null;
                 if (!var3) {
-                    _fun93107_ip = 219;
-                    continue _fun93107
+                    _fun93142_ip = 219;
+                    continue _fun93142
                 }
             case 216:
                 var1 = var2;
@@ -179,13 +179,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2[1] = var0;
         var2[2] = var5;
         var1 = function() { // Environment: var1
-            _fun93110: for (var _fun93110_ip = 0;;) switch (_fun93110_ip) {
+            _fun93145: for (var _fun93145_ip = 0;;) switch (_fun93145_ip) {
                 case 0:
                     var1 = _closure2_slot3;
                     var0 = _closure2_slot4;
                     if (!(var1 !== var0)) {
-                        _fun93110_ip = 70;
-                        continue _fun93110
+                        _fun93145_ip = 70;
+                        continue _fun93145
                     }
                 case 15:
                     var2 = _closure1_slot2;
@@ -211,7 +211,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.usePresenceActivityInviteCoverImageURL = var3;
     var1 = function(arg0) { // Environment: var1
-        _fun93111: for (var _fun93111_ip = 0;;) switch (_fun93111_ip) {
+        _fun93146: for (var _fun93146_ip = 0;;) switch (_fun93146_ip) {
             case 0:
                 var0 = arg0;
                 var4 = var0.messageId;
@@ -227,8 +227,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var0.cachedImageURL;
                 var0 = var0.imageURL;
                 if (!(var2 !== var0)) {
-                    _fun93111_ip = 106;
-                    continue _fun93111
+                    _fun93146_ip = 106;
+                    continue _fun93146
                 }
             case 64:
                 var2 = _closure1_slot2;
@@ -247,4 +247,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getPresenceActivityInviteCoverImageURL = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 12136, 1586, 5713, 566, 12137, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 12142, 1586, 5715, 566, 12143, 2]);

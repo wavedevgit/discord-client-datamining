@@ -35,22 +35,22 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/premium/powerups/native/images/BoostGem.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun102986: for (var _fun102986_ip = 0;;) switch (_fun102986_ip) {
+        _fun103027: for (var _fun103027_ip = 0;;) switch (_fun103027_ip) {
             case 0:
                 var0 = arg0;
                 var9 = var0.width;
                 var3 = undefined;
                 if (!(var9 === var3)) {
-                    _fun102986_ip = 17;
-                    continue _fun102986
+                    _fun103027_ip = 17;
+                    continue _fun103027
                 }
             case 14:
                 var9 = 39;
             case 17:
                 var7 = var0.height;
                 if (!(var7 === var3)) {
-                    _fun102986_ip = 29;
-                    continue _fun102986
+                    _fun103027_ip = 29;
+                    continue _fun103027
                 }
             case 26:
                 var7 = 66;
@@ -134,4 +134,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 5520, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 5522, 2]);

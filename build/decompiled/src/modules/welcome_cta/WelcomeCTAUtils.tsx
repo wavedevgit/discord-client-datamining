@@ -182,4 +182,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.handleWelcomeCtaClicked = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1621, 6780, 660, 21, 6601, 796, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1621, 6782, 660, 21, 6603, 796, 2]);

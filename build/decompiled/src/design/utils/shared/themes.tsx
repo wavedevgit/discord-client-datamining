@@ -33,28 +33,28 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.isThemeLight = var3;
     var1 = function arg0() {
-        _fun27473: for (var _fun27473_ip = 0;;) switch (_fun27473_ip) {
+        _fun27477: for (var _fun27477_ip = 0;;) switch (_fun27477_ip) {
             case 0:
                 var1 = arg0;
                 var2 = _closure1_slot0;
                 var2 = var2.DARK;
                 if (!(var2 !== var1)) {
-                    _fun27473_ip = 52;
-                    continue _fun27473
+                    _fun27477_ip = 52;
+                    continue _fun27477
                 }
             case 20:
                 var2 = _closure1_slot0;
                 var2 = var2.MIDNIGHT;
                 if (!(var2 !== var1)) {
-                    _fun27473_ip = 52;
-                    continue _fun27473
+                    _fun27477_ip = 52;
+                    continue _fun27477
                 }
             case 34:
                 var0 = _closure1_slot0;
                 var0 = var0.DARKER;
                 if (!(var0 !== var1)) {
-                    _fun27473_ip = 52;
-                    continue _fun27473
+                    _fun27477_ip = 52;
+                    continue _fun27477
                 }
             case 48:
                 var0 = false;

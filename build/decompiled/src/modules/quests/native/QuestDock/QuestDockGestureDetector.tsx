@@ -13,47 +13,49 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2 = var3.useContext;
         var9 = _closure1_slot0;
         var10 = _closure1_slot2;
-        var0 = 4;
+        var0 = 5;
         var0 = var10[var0];
         var8 = undefined;
         var0 = var9.bind(var8)(var0);
         var0 = var0.QuestDockGestureContext;
         var0 = var2.bind(var3)(var0);
-        var13 = var0.questDockWrapperSpecs;
-        var _closure2_slot0 = var13;
+        var16 = var0.questDockWrapperSpecs;
+        var _closure2_slot0 = var16;
         var12 = var0.activeQuestDockMode;
         var _closure2_slot1 = var12;
-        var14 = var0.windowDimensions;
-        var _closure2_slot2 = var14;
-        var0 = var0.minExpandedContentHeight;
-        var _closure2_slot3 = var0;
-        var3 = _closure1_slot1;
-        var2 = 5;
-        var2 = var10[var2];
-        var2 = var3.bind(var8)(var2);
-        var16 = var2.bind(var8)();
-        var _closure2_slot4 = var16;
-        var4 = _closure1_slot3;
-        var3 = var4.useContext;
-        var2 = 6;
-        var2 = var10[var2];
-        var2 = var9.bind(var8)(var2);
-        var2 = var2.QuestDockExternalCoordinationContext;
-        var2 = var3.bind(var4)(var2);
-        var18 = var2.restingQuestDockMode;
-        var _closure2_slot5 = var18;
-        var6 = var2.setRestingQuestDockMode;
-        var _closure2_slot6 = var6;
-        var2 = 7;
+        var17 = var0.windowDimensions;
+        var _closure2_slot2 = var17;
+        var14 = var0.minExpandedContentHeight;
+        var _closure2_slot3 = var14;
+        var2 = _closure1_slot1;
+        var0 = 6;
+        var0 = var10[var0];
+        var0 = var2.bind(var8)(var0);
+        var19 = var0.bind(var8)();
+        var _closure2_slot4 = var19;
+        var3 = _closure1_slot3;
+        var2 = var3.useContext;
+        var0 = 7;
+        var0 = var10[var0];
+        var0 = var9.bind(var8)(var0);
+        var0 = var0.QuestDockExternalCoordinationContext;
+        var0 = var2.bind(var3)(var0);
+        var21 = var0.restingQuestDockMode;
+        var _closure2_slot5 = var21;
+        var15 = var0.setRestingQuestDockMode;
+        var _closure2_slot6 = var15;
+        var0 = var0.questDockOffset;
+        var _closure2_slot7 = var0;
+        var2 = 8;
         var2 = var10[var2];
         var3 = var9.bind(var8)(var2);
         var2 = var3.useIsMobileQuestDockVisible;
         var2 = var2.bind(var3)();
-        var _closure2_slot7 = var2;
-        var7 = 8;
+        var _closure2_slot8 = var2;
+        var7 = 9;
         var3 = var10[var7];
-        var15 = var9.bind(var8)(var3);
-        var4 = var15.useSharedValue;
+        var11 = var9.bind(var8)(var3);
+        var4 = var11.useSharedValue;
         var3 = {
             'absoluteX': 0,
             'absoluteY': 0,
@@ -63,55 +65,64 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             'isDrawer': null,
             'active': false
         };
-        var11 = 0;
-        var17 = var18.get;
-        var19 = var17.bind(var18)();
-        var17 = _closure1_slot4;
-        var17 = var17.EXPANDED;
-        var17 = var19 === var17;
-        var3.isDrawer = var17;
-        var17 = var4.bind(var15)(var3);
-        var _closure2_slot8 = var17;
+        var6 = 0;
+        var13 = var21.get;
+        var18 = var13.bind(var21)();
+        var13 = _closure1_slot4;
+        var13 = var13.EXPANDED;
+        var13 = var18 === var13;
+        var3.isDrawer = var13;
+        var20 = var4.bind(var11)(var3);
+        var _closure2_slot9 = var20;
         var3 = var10[var7];
         var4 = var9.bind(var8)(var3);
         var3 = var4.useSharedValue;
-        var15 = var3.bind(var4)(var11);
-        var _closure2_slot9 = var15;
+        var18 = var3.bind(var4)(var6);
+        var _closure2_slot10 = var18;
         var3 = var10[var7];
         var4 = var9.bind(var8)(var3);
         var3 = var4.useSharedValue;
         var11 = var3.bind(var4)(var2);
-        var _closure2_slot10 = var11;
-        var19 = _closure1_slot3;
-        var4 = var19.useEffect;
+        var _closure2_slot11 = var11;
+        var3 = _closure1_slot18;
+        var13 = var3.bind(var8)();
+        var _closure2_slot12 = var13;
+        var3 = _closure1_slot17;
+        var6 = var3.bind(var8)();
+        var _closure2_slot13 = var6;
+        var22 = _closure1_slot3;
+        var4 = var22.useEffect;
         var3 = new Array(2);
         var3[0] = var2;
         var3[1] = var11;
         var2 = function() { // Environment: var1
-            var2 = _closure2_slot10;
+            var2 = _closure2_slot11;
             var1 = var2.set;
-            var0 = _closure2_slot7;
+            var0 = _closure2_slot8;
             var0 = var1.bind(var2)(var0);
             var0 = undefined;
             return var0;
         };
-        var2 = var4.bind(var19)(var2, var3);
+        var2 = var4.bind(var22)(var2, var3);
         var4 = _closure1_slot3;
         var3 = var4.useMemo;
-        var2 = new Array(9);
-        var2[0] = var18;
-        var2[1] = var17;
-        var2[2] = var16;
-        var2[3] = var15;
-        var2[4] = var14;
-        var2[5] = var13;
-        var2[6] = var6;
+        var2 = new Array(12);
+        var2[0] = var21;
+        var2[1] = var20;
+        var2[2] = var19;
+        var2[3] = var18;
+        var2[4] = var17;
+        var2[5] = var16;
+        var2[6] = var15;
         var2[7] = var12;
-        var2[8] = var0;
+        var2[8] = var14;
+        var2[9] = var13;
+        var2[10] = var6;
+        var2[11] = var0;
         var0 = function() { // Environment: var1
             var8 = _closure1_slot0;
             var9 = _closure1_slot2;
-            var14 = 9;
+            var14 = 10;
             var1 = var9[var14];
             var7 = undefined;
             var1 = var8.bind(var7)(var1);
@@ -129,11 +140,11 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2 = var4.onTouchesDown;
             var1 = function arg0() {
                 var4 = arg0;
-                var1 = _closure2_slot9;
+                var1 = _closure2_slot10;
                 var0 = var1.set;
                 var5 = 0;
                 var0 = var0.bind(var1)(var5);
-                var2 = _closure2_slot8;
+                var2 = _closure2_slot9;
                 var1 = var2.set;
                 var0 = {};
                 var6 = var4.changedTouches;
@@ -171,9 +182,9 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var12 = {};
-            var13 = _closure2_slot9;
+            var13 = _closure2_slot10;
             var12.touchMoveCount = var13;
-            var10 = _closure2_slot8;
+            var10 = _closure2_slot9;
             var12.initialGestureOffset = var10;
             var6 = _closure2_slot0;
             var12.questDockWrapperSpecs = var6;
@@ -184,38 +195,38 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var1.__closure = var12;
             var12 = 15649211210155.0;
             var1.__workletHash = var12;
-            var12 = _closure1_slot21;
+            var12 = _closure1_slot23;
             var1.__initData = var12;
             var4 = var2.bind(var4)(var1);
             var2 = var4.onTouchesMove;
             var1 = function arg0() {
-                _fun84716: for (var _fun84716_ip = 0;;) switch (_fun84716_ip) {
+                _fun84727: for (var _fun84727_ip = 0;;) switch (_fun84727_ip) {
                     case 0:
                         var1 = arg0;
                         var3 = var1.state;
                         var5 = _closure1_slot0;
                         var2 = _closure1_slot2;
-                        var0 = 9;
+                        var0 = 10;
                         var2 = var2[var0];
                         var0 = undefined;
                         var2 = var5.bind(var0)(var2);
                         var2 = var2.State;
                         var2 = var2.BEGAN;
                         if (!(var3 === var2)) {
-                            _fun84716_ip = 620;
-                            continue _fun84716
+                            _fun84727_ip = 620;
+                            continue _fun84727
                         }
                     case 52:
-                        var3 = _closure2_slot8;
+                        var3 = _closure2_slot9;
                         var2 = var3.get;
                         var2 = var2.bind(var3)();
                         var2 = var2.active;
                         if (var2) {
-                            _fun84716_ip = 620;
-                            continue _fun84716
+                            _fun84727_ip = 620;
+                            continue _fun84727
                         }
                     case 80:
-                        var3 = _closure2_slot9;
+                        var3 = _closure2_slot10;
                         var6 = var3.set;
                         var2 = var3.get;
                         var7 = var2.bind(var3)();
@@ -231,7 +242,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var1 = var1[var9];
                         var6 = var1.absoluteY;
                         var7 = var1.absoluteX;
-                        var3 = _closure2_slot8;
+                        var3 = _closure2_slot9;
                         var1 = var3.get;
                         var1 = var1.bind(var3)();
                         var1 = var1.absoluteY;
@@ -247,22 +258,22 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var1 = var1.EXPANDED;
                         var1 = var10 === var1;
                         if (!var1) {
-                            _fun84716_ip = 226;
-                            continue _fun84716
+                            _fun84727_ip = 226;
+                            continue _fun84727
                         }
                     case 223:
                         var1 = var2;
                     case 226:
                         if (!var1) {
-                            _fun84716_ip = 233;
-                            continue _fun84716
+                            _fun84727_ip = 233;
+                            continue _fun84727
                         }
                     case 229:
                         var1 = var3 >= var9;
                     case 233:
                         if (var1) {
-                            _fun84716_ip = 620;
-                            continue _fun84716
+                            _fun84727_ip = 620;
+                            continue _fun84727
                         }
                     case 239:
                         var2 = _closure2_slot5;
@@ -272,16 +283,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var1 = var1.COLLAPSED;
                         var1 = var2 === var1;
                         if (!var1) {
-                            _fun84716_ip = 277;
-                            continue _fun84716
+                            _fun84727_ip = 277;
+                            continue _fun84727
                         }
                     case 269:
                         var2 = _closure1_slot8;
                         var1 = var3 > var2;
                     case 277:
                         if (var1) {
-                            _fun84716_ip = 338;
-                            continue _fun84716
+                            _fun84727_ip = 338;
+                            continue _fun84727
                         }
                     case 280:
                         var10 = _closure2_slot5;
@@ -291,16 +302,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var2 = var2.EXPANDED;
                         var2 = var10 === var2;
                         if (!var2) {
-                            _fun84716_ip = 335;
-                            continue _fun84716
+                            _fun84727_ip = 335;
+                            continue _fun84727
                         }
                     case 310:
                         var10 = _closure1_slot8;
                         var10 = -var10;
                         var10 = var3 < var10;
                         if (var10) {
-                            _fun84716_ip = 332;
-                            continue _fun84716
+                            _fun84727_ip = 332;
+                            continue _fun84727
                         }
                     case 324:
                         var11 = _closure1_slot8;
@@ -311,8 +322,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var1 = var2;
                     case 338:
                         if (var1) {
-                            _fun84716_ip = 389;
-                            continue _fun84716
+                            _fun84727_ip = 389;
+                            continue _fun84727
                         }
                     case 341:
                         var10 = _closure2_slot5;
@@ -322,15 +333,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var2 = var2.COLLAPSED;
                         var2 = var10 === var2;
                         if (!var2) {
-                            _fun84716_ip = 375;
-                            continue _fun84716
+                            _fun84727_ip = 375;
+                            continue _fun84727
                         }
                     case 371:
                         var2 = var3 < var9;
                     case 375:
                         if (!var2) {
-                            _fun84716_ip = 386;
-                            continue _fun84716
+                            _fun84727_ip = 386;
+                            continue _fun84727
                         }
                     case 378:
                         var10 = _closure1_slot9;
@@ -339,8 +350,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var1 = var2;
                     case 389:
                         if (var1) {
-                            _fun84716_ip = 440;
-                            continue _fun84716
+                            _fun84727_ip = 440;
+                            continue _fun84727
                         }
                     case 392:
                         var10 = _closure2_slot5;
@@ -350,15 +361,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var2 = var2.CLOSED;
                         var2 = var10 === var2;
                         if (!var2) {
-                            _fun84716_ip = 426;
-                            continue _fun84716
+                            _fun84727_ip = 426;
+                            continue _fun84727
                         }
                     case 422:
                         var2 = var3 > var9;
                     case 426:
                         if (!var2) {
-                            _fun84716_ip = 437;
-                            continue _fun84716
+                            _fun84727_ip = 437;
+                            continue _fun84727
                         }
                     case 429:
                         var10 = _closure1_slot9;
@@ -367,8 +378,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var1 = var2;
                     case 440:
                         if (var1) {
-                            _fun84716_ip = 491;
-                            continue _fun84716
+                            _fun84727_ip = 491;
+                            continue _fun84727
                         }
                     case 443:
                         var10 = _closure2_slot5;
@@ -378,15 +389,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var2 = var2.CLOSED;
                         var2 = var10 === var2;
                         if (!var2) {
-                            _fun84716_ip = 477;
-                            continue _fun84716
+                            _fun84727_ip = 477;
+                            continue _fun84727
                         }
                     case 473:
                         var2 = var3 < var9;
                     case 477:
                         if (!var2) {
-                            _fun84716_ip = 488;
-                            continue _fun84716
+                            _fun84727_ip = 488;
+                            continue _fun84727
                         }
                     case 480:
                         var3 = _closure1_slot9;
@@ -395,11 +406,11 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var1 = var2;
                     case 491:
                         if (!var1) {
-                            _fun84716_ip = 620;
-                            continue _fun84716
+                            _fun84727_ip = 620;
+                            continue _fun84727
                         }
                     case 497:
-                        var3 = _closure2_slot8;
+                        var3 = _closure2_slot9;
                         var2 = var3.set;
                         var1 = {};
                         var1.absoluteX = var7;
@@ -451,115 +462,123 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var1.__closure = var12;
             var12 = 16451041821957.0;
             var1.__workletHash = var12;
-            var12 = _closure1_slot20;
+            var12 = _closure1_slot22;
             var1.__initData = var12;
             var4 = var2.bind(var4)(var1);
             var2 = var4.onChange;
             var1 = function arg0() {
-                _fun84717: for (var _fun84717_ip = 0;;) switch (_fun84717_ip) {
+                _fun84728: for (var _fun84728_ip = 0;;) switch (_fun84728_ip) {
                     case 0:
                         var0 = arg0;
                         var2 = var0.absoluteY;
-                        var4 = _closure2_slot8;
-                        var0 = var4.get;
-                        var0 = var0.bind(var4)();
+                        var3 = _closure2_slot9;
+                        var0 = var3.get;
+                        var0 = var0.bind(var3)();
                         var0 = var0.absoluteY;
                         var6 = var2 - var0;
+                        var4 = _closure2_slot7;
+                        var2 = var4.set;
+                        var5 = global;
+                        var9 = var5.Math;
+                        var8 = var9.max;
+                        var0 = -var6;
+                        var7 = 0;
+                        var0 = var8.bind(var9)(var0, var7);
+                        var0 = var2.bind(var4)(var0);
                         var2 = _closure2_slot3;
                         var0 = var2.get;
                         var2 = var0.bind(var2)();
-                        var0 = var4.get;
-                        var0 = var0.bind(var4)();
-                        var3 = var0.height;
-                        var0 = var4.get;
-                        var0 = var0.bind(var4)();
-                        var0 = var0.y;
-                        var0 = var3 - var0;
+                        var0 = var3.get;
+                        var0 = var0.bind(var3)();
+                        var0 = var0.height;
                         var0 = var0 - var6;
                         var3 = var0 > var2;
                         if (!var3) {
-                            _fun84717_ip = 121;
-                            continue _fun84717
+                            _fun84728_ip = 141;
+                            continue _fun84728
                         }
-                    case 91:
-                        var5 = _closure2_slot1;
-                        var4 = var5.get;
-                        var5 = var4.bind(var5)();
+                    case 111:
+                        var8 = _closure2_slot1;
+                        var4 = var8.get;
+                        var8 = var4.bind(var8)();
                         var4 = _closure1_slot4;
                         var4 = var4.EXPANDED;
-                        var3 = var5 === var4;
-                    case 121:
+                        var3 = var8 === var4;
+                    case 141:
                         var9 = var0;
                         if (!var3) {
-                            _fun84717_ip = 146;
-                            continue _fun84717
+                            _fun84728_ip = 166;
+                            continue _fun84728
                         }
-                    case 127:
+                    case 147:
                         var3 = var0 - var2;
                         var0 = _closure1_slot16;
                         var0 = var3 * var0;
                         var9 = var2 + var0;
-                    case 146:
+                    case 166:
                         var2 = _closure2_slot3;
                         var0 = var2.get;
                         var0 = var0.bind(var2)();
-                        var5 = 0;
-                        if (!(!(var0 > var5))) {
-                            _fun84717_ip = 174;
-                            continue _fun84717
+                        if (!(!(var0 > var7))) {
+                            _fun84728_ip = 192;
+                            continue _fun84728
                         }
-                    case 165:
+                    case 183:
                         var0 = _closure1_slot10;
-                        _fun84717_ip = 213;
-                        continue _fun84717;
-                    case 174:
-                        var2 = global;
-                        var7 = var2.Math;
-                        var4 = var7.min;
+                        _fun84728_ip = 229;
+                        continue _fun84728;
+                    case 192:
+                        var8 = var5.Math;
+                        var4 = var8.min;
                         var3 = _closure2_slot3;
                         var2 = var3.get;
                         var3 = var2.bind(var3)();
                         var2 = _closure1_slot10;
-                        var0 = var4.bind(var7)(var3, var2);
-                    case 213:
+                        var0 = var4.bind(var8)(var3, var2);
+                    case 229:
                         if (!(!(var9 >= var0))) {
-                            _fun84717_ip = 980;
-                            continue _fun84717
+                            _fun84728_ip = 1058;
+                            continue _fun84728
                         }
-                    case 220:
+                    case 236:
                         var2 = _closure1_slot11;
                         if (!(!(var9 < var2))) {
-                            _fun84717_ip = 686;
-                            continue _fun84717
+                            _fun84728_ip = 766;
+                            continue _fun84728
                         }
-                    case 234:
-                        var2 = _closure1_slot10;
-                        var11 = var9 / var2;
+                    case 250:
                         var2 = _closure1_slot5;
                         var2 = var9 - var2;
-                        var8 = -1;
-                        var10 = var8 * var2;
-                        var3 = _closure2_slot8;
+                        var10 = -1;
+                        var3 = var10 * var2;
+                        var2 = _closure1_slot10;
+                        var4 = var9 / var2;
+                        var2 = _closure1_slot14;
+                        var4 = var4 / var2;
+                        var2 = 1;
+                        var2 = var2 - var4;
+                        var13 = var3 * var2;
+                        var3 = _closure2_slot9;
                         var2 = var3.get;
                         var2 = var2.bind(var3)();
                         var2 = var2.isDrawer;
                         if (!var2) {
-                            _fun84717_ip = 325;
-                            continue _fun84717
+                            _fun84728_ip = 360;
+                            continue _fun84728
                         }
-                    case 282:
-                        var4 = _closure2_slot8;
+                    case 317:
+                        var4 = _closure2_slot9;
                         var3 = var4.set;
                         var2 = {};
-                        var7 = var4.get;
-                        var16 = var7.bind(var4)();
-                        var17 = var2;
-                        var7 = copyDataProperties(var17, var16);
-                        var12 = false;
-                        var7 = 'isDrawer';
-                        var2[var7] = var12;
+                        var8 = var4.get;
+                        var17 = var8.bind(var4)();
+                        var18 = var2;
+                        var8 = copyDataProperties(var18, var17);
+                        var11 = false;
+                        var8 = 'isDrawer';
+                        var2[var8] = var11;
                         var2 = var3.bind(var4)(var2);
-                    case 325:
+                    case 360:
                         var3 = _closure1_slot5;
                         var4 = _closure2_slot0;
                         var2 = var4.get;
@@ -567,232 +586,260 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var2 = var2.height;
                         var2 = var3 !== var2;
                         if (!var2) {
-                            _fun84717_ip = 381;
-                            continue _fun84717
+                            _fun84728_ip = 416;
+                            continue _fun84728
                         }
-                    case 354:
+                    case 389:
                         var4 = _closure2_slot1;
                         var3 = var4.get;
                         var4 = var3.bind(var4)();
                         var3 = _closure1_slot4;
                         var3 = var3.EXPANDED;
                         var2 = var4 !== var3;
-                    case 381:
+                    case 416:
                         if (!var2) {
-                            _fun84717_ip = 460;
-                            continue _fun84717
+                            _fun84728_ip = 495;
+                            continue _fun84728
                         }
-                    case 384:
-                        var7 = _closure1_slot0;
-                        var12 = _closure1_slot2;
-                        var2 = 8;
-                        var2 = var12[var2];
+                    case 419:
+                        var8 = _closure1_slot0;
+                        var11 = _closure1_slot2;
+                        var2 = 9;
+                        var2 = var11[var2];
                         var4 = undefined;
-                        var14 = var7.bind(var4)(var2);
-                        var13 = var14.runOnJS;
-                        var2 = 11;
-                        var3 = var12[var2];
-                        var3 = var7.bind(var4)(var3);
+                        var14 = var8.bind(var4)(var2);
+                        var12 = var14.runOnJS;
+                        var2 = 12;
+                        var3 = var11[var2];
+                        var3 = var8.bind(var4)(var3);
                         var3 = var3.triggerHapticFeedback;
-                        var3 = var13.bind(var14)(var3);
-                        var2 = var12[var2];
-                        var2 = var7.bind(var4)(var2);
+                        var3 = var12.bind(var14)(var3);
+                        var2 = var11[var2];
+                        var2 = var8.bind(var4)(var2);
                         var2 = var2.HapticFeedbackTypes;
                         var2 = var2.IMPACT_MEDIUM;
                         var2 = var3.bind(var4)(var2);
-                    case 460:
+                    case 495:
                         var4 = _closure2_slot0;
                         var3 = var4.set;
                         var2 = {};
-                        var7 = var4.get;
-                        var16 = var7.bind(var4)();
-                        var17 = var2;
-                        var7 = copyDataProperties(var17, var16);
-                        var7 = 'x';
-                        var2[var7] = var5;
-                        var7 = _closure1_slot7;
-                        var8 = var8 * var7;
-                        var7 = _closure1_slot14;
-                        var11 = var11 / var7;
-                        var7 = 1;
-                        var7 = var7 - var11;
-                        var7 = var10 * var7;
-                        var8 = var8 + var7;
-                        var7 = 'y';
-                        var2[var7] = var8;
-                        var10 = _closure1_slot0;
-                        var8 = _closure1_slot2;
-                        var7 = 10;
-                        var8 = var8[var7];
-                        var7 = undefined;
-                        var12 = var10.bind(var7)(var8);
-                        var11 = var12.getQuestDockCollapsedWidth;
-                        var8 = _closure2_slot2;
-                        var7 = var8.get;
-                        var7 = var7.bind(var8)();
-                        var10 = var7.width;
-                        var13 = _closure2_slot4;
-                        var7 = var13.get;
-                        var7 = var7.bind(var13)();
-                        var8 = var7.left;
-                        var7 = var13.get;
-                        var7 = var7.bind(var13)();
-                        var7 = var7.right;
-                        var8 = var11.bind(var12)(var10, var8, var7);
-                        var7 = 'width';
-                        var2[var7] = var8;
-                        var8 = _closure1_slot5;
-                        var7 = 'height';
-                        var2[var7] = var8;
-                        var7 = 'prevDeltaY';
-                        var2[var7] = var6;
+                        var8 = var4.get;
+                        var17 = var8.bind(var4)();
+                        var18 = var2;
+                        var8 = copyDataProperties(var18, var17);
+                        var8 = 'x';
+                        var2[var8] = var7;
+                        var8 = _closure1_slot7;
+                        var8 = var10 * var8;
+                        var11 = _closure2_slot12;
+                        var10 = var8 - var11;
+                        var8 = var13;
+                        if (!(var11 > var7)) {
+                            _fun84728_ip = 571;
+                            continue _fun84728
+                        }
+                    case 554:
+                        var12 = var5.Math;
+                        var11 = var12.min;
+                        var8 = var11.bind(var12)(var13, var7);
+                    case 571:
+                        var10 = var10 + var8;
+                        var8 = 'y';
+                        var2[var8] = var10;
+                        var11 = _closure1_slot0;
+                        var10 = _closure1_slot2;
+                        var8 = 11;
+                        var10 = var10[var8];
+                        var8 = undefined;
+                        var13 = var11.bind(var8)(var10);
+                        var12 = var13.getQuestDockCollapsedWidth;
+                        var10 = _closure2_slot2;
+                        var8 = var10.get;
+                        var8 = var8.bind(var10)();
+                        var11 = var8.width;
+                        var8 = _closure2_slot12;
+                        if (!(!(var8 > var7))) {
+                            _fun84728_ip = 658;
+                            continue _fun84728
+                        }
+                    case 638:
+                        var10 = _closure2_slot4;
+                        var8 = var10.get;
+                        var8 = var8.bind(var10)();
+                        var10 = var8.left;
+                        _fun84728_ip = 662;
+                        continue _fun84728;
+                    case 658:
+                        var10 = _closure2_slot13;
+                    case 662:
+                        var8 = _closure2_slot12;
+                        if (!(!(var8 > var7))) {
+                            _fun84728_ip = 690;
+                            continue _fun84728
+                        }
+                    case 670:
+                        var14 = _closure2_slot4;
+                        var8 = var14.get;
+                        var8 = var8.bind(var14)();
+                        var8 = var8.right;
+                        _fun84728_ip = 694;
+                        continue _fun84728;
+                    case 690:
+                        var8 = _closure2_slot13;
+                    case 694:
+                        var10 = var12.bind(var13)(var11, var10, var8);
+                        var8 = 'width';
+                        var2[var8] = var10;
+                        var10 = _closure1_slot5;
+                        var8 = 'height';
+                        var2[var8] = var10;
+                        var8 = 'prevDeltaY';
+                        var2[var8] = var6;
                         var2 = var3.bind(var4)(var2);
                         var4 = _closure2_slot1;
                         var3 = var4.set;
                         var2 = _closure1_slot4;
                         var2 = var2.COLLAPSED;
                         var2 = var3.bind(var4)(var2);
-                        _fun84717_ip = 1267;
-                        continue _fun84717;
-                    case 686:
+                        _fun84728_ip = 1343;
+                        continue _fun84728;
+                    case 766:
                         var3 = _closure2_slot1;
                         var2 = var3.get;
                         var3 = var2.bind(var3)();
                         var2 = _closure1_slot4;
                         var2 = var2.CLOSED;
                         if (!(var3 === var2)) {
-                            _fun84717_ip = 1267;
-                            continue _fun84717
+                            _fun84728_ip = 1343;
+                            continue _fun84728
                         }
-                    case 716:
-                        var2 = global;
-                        var3 = var2.Math;
+                    case 796:
+                        var3 = var5.Math;
                         var2 = var3.min;
-                        var3 = var2.bind(var3)(var9, var5);
+                        var3 = var2.bind(var3)(var9, var7);
                         var2 = _closure1_slot6;
                         var3 = var3 / var2;
                         var2 = 1;
                         var3 = var2 - var3;
                         var2 = _closure1_slot6;
                         var2 = var2 - var9;
-                        var11 = var3 * var2;
-                        var7 = var11 > var5;
+                        var12 = var3 * var2;
+                        var8 = var12 > var7;
                         var4 = _closure2_slot0;
                         var3 = var4.set;
                         var2 = {};
-                        var8 = var4.get;
-                        var16 = var8.bind(var4)();
-                        var17 = var2;
-                        var8 = copyDataProperties(var17, var16);
-                        var8 = 'x';
-                        var2[var8] = var5;
-                        var10 = 0;
-                        if (!var7) {
-                            _fun84717_ip = 815;
-                            continue _fun84717
+                        var10 = var4.get;
+                        var17 = var10.bind(var4)();
+                        var18 = var2;
+                        var10 = copyDataProperties(var18, var17);
+                        var10 = 'x';
+                        var2[var10] = var7;
+                        var11 = 0;
+                        if (!var8) {
+                            _fun84728_ip = 893;
+                            continue _fun84728
                         }
-                    case 807:
-                        var8 = _closure1_slot15;
-                        var10 = var11 * var8;
-                    case 815:
-                        var8 = 'y';
-                        var2[var8] = var10;
-                        var11 = _closure1_slot0;
-                        var10 = _closure1_slot2;
-                        var8 = 10;
-                        var10 = var10[var8];
-                        var8 = undefined;
-                        var13 = var11.bind(var8)(var10);
-                        var12 = var13.getQuestDockClosedWidth;
-                        var10 = _closure2_slot2;
-                        var8 = var10.get;
-                        var8 = var8.bind(var10)();
-                        var11 = var8.width;
-                        var14 = _closure2_slot4;
-                        var8 = var14.get;
-                        var8 = var8.bind(var14)();
-                        var10 = var8.left;
-                        var8 = var14.get;
-                        var8 = var8.bind(var14)();
-                        var8 = var8.right;
-                        var10 = var12.bind(var13)(var11, var10, var8);
-                        var8 = 'width';
-                        var2[var8] = var10;
-                        var8 = var9;
-                        if (!var7) {
-                            _fun84717_ip = 928;
-                            continue _fun84717
+                    case 885:
+                        var10 = _closure1_slot15;
+                        var11 = var12 * var10;
+                    case 893:
+                        var10 = 'y';
+                        var2[var10] = var11;
+                        var12 = _closure1_slot0;
+                        var11 = _closure1_slot2;
+                        var10 = 11;
+                        var11 = var11[var10];
+                        var10 = undefined;
+                        var14 = var12.bind(var10)(var11);
+                        var13 = var14.getQuestDockClosedWidth;
+                        var11 = _closure2_slot2;
+                        var10 = var11.get;
+                        var10 = var10.bind(var11)();
+                        var12 = var10.width;
+                        var15 = _closure2_slot4;
+                        var10 = var15.get;
+                        var10 = var10.bind(var15)();
+                        var11 = var10.left;
+                        var10 = var15.get;
+                        var10 = var10.bind(var15)();
+                        var10 = var10.right;
+                        var11 = var13.bind(var14)(var12, var11, var10);
+                        var10 = 'width';
+                        var2[var10] = var11;
+                        var10 = var9;
+                        if (!var8) {
+                            _fun84728_ip = 1006;
+                            continue _fun84728
                         }
-                    case 924:
-                        var8 = _closure1_slot6;
-                    case 928:
-                        var7 = 'height';
-                        var2[var7] = var8;
-                        var7 = 'prevDeltaY';
-                        var2[var7] = var6;
+                    case 1002:
+                        var10 = _closure1_slot6;
+                    case 1006:
+                        var8 = 'height';
+                        var2[var8] = var10;
+                        var8 = 'prevDeltaY';
+                        var2[var8] = var6;
                         var2 = var3.bind(var4)(var2);
                         var3 = _closure2_slot1;
                         var2 = var3.set;
                         var0 = _closure1_slot4;
                         var0 = var0.CLOSED;
                         var0 = var2.bind(var3)(var0);
-                        _fun84717_ip = 1267;
-                        continue _fun84717;
-                    case 980:
-                        var2 = _closure2_slot8;
+                        _fun84728_ip = 1343;
+                        continue _fun84728;
+                    case 1058:
+                        var2 = _closure2_slot9;
                         var0 = var2.get;
                         var0 = var0.bind(var2)();
                         var0 = var0.isDrawer;
                         if (var0) {
-                            _fun84717_ip = 1045;
-                            continue _fun84717
+                            _fun84728_ip = 1123;
+                            continue _fun84728
                         }
-                    case 1002:
-                        var3 = _closure2_slot8;
+                    case 1080:
+                        var3 = _closure2_slot9;
                         var2 = var3.set;
                         var0 = {};
                         var4 = var3.get;
-                        var16 = var4.bind(var3)();
-                        var17 = var0;
-                        var4 = copyDataProperties(var17, var16);
-                        var7 = true;
+                        var17 = var4.bind(var3)();
+                        var18 = var0;
+                        var4 = copyDataProperties(var18, var17);
+                        var8 = true;
                         var4 = 'isDrawer';
-                        var0[var4] = var7;
+                        var0[var4] = var8;
                         var0 = var2.bind(var3)(var0);
-                    case 1045:
+                    case 1123:
                         var4 = _closure2_slot0;
                         var3 = var4.set;
                         var2 = {};
                         var0 = var4.get;
-                        var16 = var0.bind(var4)();
-                        var17 = var2;
-                        var0 = copyDataProperties(var17, var16);
+                        var17 = var0.bind(var4)();
+                        var18 = var2;
+                        var0 = copyDataProperties(var18, var17);
                         var0 = 'x';
-                        var2[var0] = var5;
+                        var2[var0] = var7;
                         var0 = 'y';
-                        var2[var0] = var5;
-                        var8 = _closure1_slot0;
-                        var7 = _closure1_slot2;
-                        var5 = 10;
-                        var7 = var7[var5];
-                        var5 = undefined;
-                        var12 = var8.bind(var5)(var7);
-                        var11 = var12.getQuestDockExpandedWidth;
+                        var2[var0] = var7;
+                        var10 = _closure1_slot0;
+                        var8 = _closure1_slot2;
+                        var7 = 11;
+                        var8 = var8[var7];
+                        var7 = undefined;
+                        var13 = var10.bind(var7)(var8);
+                        var12 = var13.getQuestDockExpandedWidth;
                         var10 = _closure2_slot2;
-                        var5 = var10.get;
-                        var5 = var5.bind(var10)();
-                        var8 = var5.width;
-                        var13 = _closure2_slot4;
-                        var5 = var13.get;
-                        var5 = var5.bind(var13)();
-                        var7 = var5.left;
-                        var5 = var13.get;
-                        var5 = var5.bind(var13)();
-                        var5 = var5.right;
-                        var7 = var11.bind(var12)(var8, var7, var5);
-                        var5 = 'width';
-                        var2[var5] = var7;
-                        var5 = global;
+                        var7 = var10.get;
+                        var7 = var7.bind(var10)();
+                        var11 = var7.width;
+                        var14 = _closure2_slot4;
+                        var7 = var14.get;
+                        var7 = var7.bind(var14)();
+                        var8 = var7.left;
+                        var7 = var14.get;
+                        var7 = var7.bind(var14)();
+                        var7 = var7.right;
+                        var8 = var12.bind(var13)(var11, var8, var7);
+                        var7 = 'width';
+                        var2[var7] = var8;
                         var8 = var5.Math;
                         var7 = var8.min;
                         var5 = var10.get;
@@ -809,13 +856,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var0 = _closure1_slot4;
                         var0 = var0.EXPANDED;
                         var0 = var1.bind(var2)(var0);
-                    case 1267:
+                    case 1343:
                         var0 = undefined;
                         return var0;
                 }
             };
             var12 = {};
             var12.initialGestureOffset = var10;
+            var13 = _closure2_slot7;
+            var12.questDockOffset = var13;
             var13 = _closure2_slot3;
             var12.minExpandedContentHeight = var13;
             var13 = _closure2_slot1;
@@ -827,7 +876,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var13 = _closure1_slot10;
             var12.QUEST_DOCK_GESTURE_MODE_TRANSITION_HEIGHT = var13;
             var12.questDockWrapperSpecs = var6;
-            var13 = 10;
+            var13 = 11;
             var6 = var9[var13];
             var6 = var8.bind(var7)(var6);
             var6 = var6.getQuestDockExpandedWidth;
@@ -850,12 +899,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var12.QUEST_DOCK_COLLAPSED_HEIGHT = var6;
             var6 = _closure1_slot14;
             var12.QUEST_DOCK_GESTURE_COLLAPSED_Y_OFFSET_FACTOR = var6;
-            var6 = 8;
+            var6 = 9;
             var14 = var9[var6];
             var14 = var8.bind(var7)(var14);
             var14 = var14.runOnJS;
             var12.runOnJS = var14;
-            var14 = 11;
+            var14 = 12;
             var15 = var9[var14];
             var15 = var8.bind(var7)(var15);
             var15 = var15.triggerHapticFeedback;
@@ -866,19 +915,23 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var12.HapticFeedbackTypes = var14;
             var14 = _closure1_slot7;
             var12.QUEST_DOCK_VERTICAL_EDGE_GUTTER_EXPANDED = var14;
+            var14 = _closure2_slot12;
+            var12.youBarHeight = var14;
             var13 = var9[var13];
             var13 = var8.bind(var7)(var13);
             var13 = var13.getQuestDockCollapsedWidth;
             var12.getQuestDockCollapsedWidth = var13;
+            var13 = _closure2_slot13;
+            var12.youBarHorizontalMargin = var13;
             var1.__closure = var12;
-            var12 = 3365256624774.0;
+            var12 = 700434147611.0;
             var1.__workletHash = var12;
-            var12 = _closure1_slot19;
+            var12 = _closure1_slot21;
             var1.__initData = var12;
             var2 = var2.bind(var4)(var1);
             var1 = var2.onEnd;
             var0 = function arg0() {
-                _fun84718: for (var _fun84718_ip = 0;;) switch (_fun84718_ip) {
+                _fun84729: for (var _fun84729_ip = 0;;) switch (_fun84729_ip) {
                     case 0:
                         var0 = arg0;
                         var4 = var0.velocityY;
@@ -892,29 +945,29 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var5 = var0.bind(var1)(var6);
                         var1 = _closure1_slot12;
                         if (!(var3 > var1)) {
-                            _fun84718_ip = 70;
-                            continue _fun84718
+                            _fun84729_ip = 70;
+                            continue _fun84729
                         }
                     case 61:
                         var1 = 0;
                         if (!(!(var4 < var1))) {
-                            _fun84718_ip = 336;
-                            continue _fun84718
+                            _fun84729_ip = 336;
+                            continue _fun84729
                         }
                     case 70:
                         var1 = _closure1_slot12;
                         if (!(var3 < var1)) {
-                            _fun84718_ip = 106;
-                            continue _fun84718
+                            _fun84729_ip = 106;
+                            continue _fun84729
                         }
                     case 78:
-                        var2 = _closure2_slot8;
+                        var2 = _closure2_slot9;
                         var1 = var2.get;
                         var1 = var1.bind(var2)();
                         var1 = var1.isDrawer;
                         if (var1) {
-                            _fun84718_ip = 336;
-                            continue _fun84718
+                            _fun84729_ip = 336;
+                            continue _fun84729
                         }
                     case 106:
                         var7 = _closure2_slot5;
@@ -923,26 +976,26 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var2 = _closure1_slot4;
                         var2 = var2.COLLAPSED;
                         if (!(var7 === var2)) {
-                            _fun84718_ip = 158;
-                            continue _fun84718
+                            _fun84729_ip = 158;
+                            continue _fun84729
                         }
                     case 136:
                         var2 = _closure1_slot12;
                         if (!(!(var4 > var2))) {
-                            _fun84718_ip = 324;
-                            continue _fun84718
+                            _fun84729_ip = 324;
+                            continue _fun84729
                         }
                     case 147:
                         var2 = _closure1_slot11;
                         if (!(!(var6 > var2))) {
-                            _fun84718_ip = 324;
-                            continue _fun84718
+                            _fun84729_ip = 324;
+                            continue _fun84729
                         }
                     case 158:
                         var2 = _closure1_slot12;
                         if (!(var4 > var2)) {
-                            _fun84718_ip = 193;
-                            continue _fun84718
+                            _fun84729_ip = 193;
+                            continue _fun84729
                         }
                     case 166:
                         var7 = _closure2_slot5;
@@ -951,20 +1004,20 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var2 = _closure1_slot4;
                         var2 = var2.COLLAPSED;
                         if (!(var7 === var2)) {
-                            _fun84718_ip = 312;
-                            continue _fun84718
+                            _fun84729_ip = 312;
+                            continue _fun84729
                         }
                     case 193:
                         var2 = 0;
                         if (!(var4 < var2)) {
-                            _fun84718_ip = 234;
-                            continue _fun84718
+                            _fun84729_ip = 234;
+                            continue _fun84729
                         }
                     case 199:
                         var2 = _closure1_slot12;
                         if (!(var3 > var2)) {
-                            _fun84718_ip = 234;
-                            continue _fun84718
+                            _fun84729_ip = 234;
+                            continue _fun84729
                         }
                     case 207:
                         var3 = _closure2_slot5;
@@ -973,8 +1026,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var2 = _closure1_slot4;
                         var2 = var2.CLOSED;
                         if (!(var3 !== var2)) {
-                            _fun84718_ip = 312;
-                            continue _fun84718
+                            _fun84729_ip = 312;
+                            continue _fun84729
                         }
                     case 234:
                         var3 = _closure2_slot5;
@@ -983,8 +1036,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var2 = _closure1_slot4;
                         var2 = var2.COLLAPSED;
                         if (!(var3 !== var2)) {
-                            _fun84718_ip = 300;
-                            continue _fun84718
+                            _fun84729_ip = 300;
+                            continue _fun84729
                         }
                     case 261:
                         var2 = _closure2_slot5;
@@ -993,32 +1046,32 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var1 = _closure1_slot4;
                         var1 = var1.CLOSED;
                         if (!(var2 !== var1)) {
-                            _fun84718_ip = 300;
-                            continue _fun84718
+                            _fun84729_ip = 300;
+                            continue _fun84729
                         }
                     case 288:
                         var1 = _closure1_slot4;
                         var2 = var1.COLLAPSED;
-                        _fun84718_ip = 310;
-                        continue _fun84718;
+                        _fun84729_ip = 310;
+                        continue _fun84729;
                     case 300:
                         var1 = _closure1_slot4;
                         var2 = var1.RESET_TO_PREVIOUS;
                     case 310:
-                        _fun84718_ip = 322;
-                        continue _fun84718;
+                        _fun84729_ip = 322;
+                        continue _fun84729;
                     case 312:
                         var1 = _closure1_slot4;
                         var2 = var1.COLLAPSED;
                     case 322:
-                        _fun84718_ip = 334;
-                        continue _fun84718;
+                        _fun84729_ip = 334;
+                        continue _fun84729;
                     case 324:
                         var1 = _closure1_slot4;
                         var2 = var1.SOFT_DISMISSED;
                     case 334:
-                        _fun84718_ip = 391;
-                        continue _fun84718;
+                        _fun84729_ip = 391;
+                        continue _fun84729;
                     case 336:
                         var3 = _closure2_slot5;
                         var1 = var3.get;
@@ -1026,14 +1079,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var1 = _closure1_slot4;
                         var1 = var1.EXPANDED;
                         if (!(var3 !== var1)) {
-                            _fun84718_ip = 378;
-                            continue _fun84718
+                            _fun84729_ip = 378;
+                            continue _fun84729
                         }
                     case 366:
                         var1 = _closure1_slot4;
                         var1 = var1.EXPANDED;
-                        _fun84718_ip = 388;
-                        continue _fun84718;
+                        _fun84729_ip = 388;
+                        continue _fun84729;
                     case 378:
                         var3 = _closure1_slot4;
                         var1 = var3.RESET_TO_PREVIOUS;
@@ -1047,8 +1100,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var3 = var3.CLOSED;
                         var3 = var4 === var3;
                         if (!var3) {
-                            _fun84718_ip = 438;
-                            continue _fun84718
+                            _fun84729_ip = 438;
+                            continue _fun84729
                         }
                     case 424:
                         var4 = _closure1_slot4;
@@ -1056,24 +1109,24 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var3 = var2 !== var4;
                     case 438:
                         if (!var3) {
-                            _fun84718_ip = 447;
-                            continue _fun84718
+                            _fun84729_ip = 447;
+                            continue _fun84729
                         }
                     case 441:
                         var4 = 0;
                         var3 = var6 < var4;
                     case 447:
                         if (!var3) {
-                            _fun84718_ip = 458;
-                            continue _fun84718
+                            _fun84729_ip = 458;
+                            continue _fun84729
                         }
                     case 450:
                         var4 = _closure1_slot11;
                         var3 = var5 > var4;
                     case 458:
                         if (!var3) {
-                            _fun84718_ip = 471;
-                            continue _fun84718
+                            _fun84729_ip = 471;
+                            continue _fun84729
                         }
                     case 461:
                         var3 = _closure1_slot4;
@@ -1081,7 +1134,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     case 471:
                         var4 = _closure1_slot0;
                         var3 = _closure1_slot2;
-                        var0 = 8;
+                        var0 = 9;
                         var3 = var3[var0];
                         var0 = undefined;
                         var4 = var4.bind(var0)(var3);
@@ -1110,7 +1163,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var0.__closure = var4;
             var4 = 10107537449160.0;
             var0.__workletHash = var4;
-            var3 = _closure1_slot18;
+            var3 = _closure1_slot20;
             var0.__initData = var3;
             var0 = var1.bind(var2)(var0);
             return var0;
@@ -1125,7 +1178,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2 = var3.get;
             var2 = var2.bind(var3)();
             var0.mode = var2;
-            var2 = _closure2_slot10;
+            var2 = _closure2_slot11;
             var1 = var2.get;
             var1 = var1.bind(var2)();
             var0.isVisible = var1;
@@ -1137,10 +1190,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2.__closure = var6;
         var6 = 13629688537260.0;
         var2.__workletHash = var6;
-        var6 = _closure1_slot22;
+        var6 = _closure1_slot24;
         var2.__initData = var6;
         var1 = function arg0, arg1() {
-            _fun84720: for (var _fun84720_ip = 0;;) switch (_fun84720_ip) {
+            _fun84731: for (var _fun84731_ip = 0;;) switch (_fun84731_ip) {
                 case 0:
                     var2 = arg0;
                     var3 = arg1;
@@ -1150,16 +1203,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = undefined;
                     var1 = undefined;
                     if (var6) {
-                        _fun84720_ip = 29;
-                        continue _fun84720
+                        _fun84731_ip = 29;
+                        continue _fun84731
                     }
                 case 24:
                     var1 = var3.mode;
                 case 29:
                     var1 = var5 !== var1;
                     if (!var1) {
-                        _fun84720_ip = 58;
-                        continue _fun84720
+                        _fun84731_ip = 58;
+                        continue _fun84731
                     }
                 case 36:
                     var6 = var2.mode;
@@ -1168,15 +1221,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = var6 !== var5;
                 case 58:
                     if (!var1) {
-                        _fun84720_ip = 92;
-                        continue _fun84720
+                        _fun84731_ip = 92;
+                        continue _fun84731
                     }
                 case 61:
                     var5 = var4 == var3;
                     var4 = undefined;
                     if (var5) {
-                        _fun84720_ip = 75;
-                        continue _fun84720
+                        _fun84731_ip = 75;
+                        continue _fun84731
                     }
                 case 70:
                     var4 = var3.mode;
@@ -1186,24 +1239,24 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = var4 !== var3;
                 case 92:
                     if (!var1) {
-                        _fun84720_ip = 101;
-                        continue _fun84720
+                        _fun84731_ip = 101;
+                        continue _fun84731
                     }
                 case 95:
                     var1 = var2.isVisible;
                 case 101:
                     if (!var1) {
-                        _fun84720_ip = 181;
-                        continue _fun84720
+                        _fun84731_ip = 181;
+                        continue _fun84731
                     }
                 case 104:
                     var3 = _closure1_slot0;
                     var4 = _closure1_slot2;
-                    var1 = 8;
+                    var1 = 9;
                     var1 = var4[var1];
                     var6 = var3.bind(var0)(var1);
                     var5 = var6.runOnJS;
-                    var1 = 11;
+                    var1 = 12;
                     var2 = var4[var1];
                     var2 = var3.bind(var0)(var2);
                     var2 = var2.triggerHapticFeedback;
@@ -1224,7 +1277,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var7 = var9.bind(var8)(var7);
         var7 = var7.runOnJS;
         var6.runOnJS = var7;
-        var7 = 11;
+        var7 = 12;
         var11 = var10[var7];
         var11 = var9.bind(var8)(var11);
         var11 = var11.triggerHapticFeedback;
@@ -1236,12 +1289,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1.__closure = var6;
         var6 = 17417080823410.0;
         var1.__workletHash = var6;
-        var5 = _closure1_slot23;
+        var5 = _closure1_slot25;
         var1.__initData = var5;
         var1 = var3.bind(var4)(var2, var1);
         return var0;
     };
-    var _closure1_slot24 = var1;
+    var _closure1_slot26 = var1;
     var0 = global;
     var8 = var0.Object;
     var7 = var8.defineProperty;
@@ -1291,41 +1344,48 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 3;
     var4 = var6[var4];
     var4 = var5.bind(var0)(var4);
+    var8 = var4.useYouBarHorizontalMargin;
+    var _closure1_slot17 = var8;
+    var4 = var4.useYouBarTotalHeight;
+    var _closure1_slot18 = var4;
+    var4 = 4;
+    var4 = var6[var4];
+    var4 = var5.bind(var0)(var4);
     var4 = var4.jsx;
-    var _closure1_slot17 = var4;
+    var _closure1_slot19 = var4;
     var4 = {};
     var8 = 'function QuestDockGestureDetectorTsx1(event){const{QUEST_DOCK_GESTURE_MODE_TRANSITION_VELOCITY,restingQuestDockMode,QuestDockMode,initialGestureOffset,QUEST_DOCK_GESTURE_MODE_CLOSED_TRANSITION_HEIGHT,runOnJS,setRestingQuestDockMode}=this.__closure;const{velocityY:velocityY,y:y}=event;const absoluteVelocityY=Math.abs(velocityY);const absoluteY=Math.abs(y);let resultingDockMode;if(absoluteVelocityY>QUEST_DOCK_GESTURE_MODE_TRANSITION_VELOCITY&&velocityY<0){if(restingQuestDockMode.get()===QuestDockMode.EXPANDED){resultingDockMode=QuestDockMode.RESET_TO_PREVIOUS;}else{resultingDockMode=QuestDockMode.EXPANDED;}}else if(absoluteVelocityY<QUEST_DOCK_GESTURE_MODE_TRANSITION_VELOCITY&&initialGestureOffset.get().isDrawer){if(restingQuestDockMode.get()===QuestDockMode.EXPANDED){resultingDockMode=QuestDockMode.RESET_TO_PREVIOUS;}else{resultingDockMode=QuestDockMode.EXPANDED;}}else if(restingQuestDockMode.get()===QuestDockMode.COLLAPSED&&(velocityY>QUEST_DOCK_GESTURE_MODE_TRANSITION_VELOCITY||y>QUEST_DOCK_GESTURE_MODE_CLOSED_TRANSITION_HEIGHT)){resultingDockMode=QuestDockMode.SOFT_DISMISSED;}else if(velocityY>QUEST_DOCK_GESTURE_MODE_TRANSITION_VELOCITY&&restingQuestDockMode.get()!==QuestDockMode.COLLAPSED){resultingDockMode=QuestDockMode.COLLAPSED;}else if(velocityY<0&&absoluteVelocityY>QUEST_DOCK_GESTURE_MODE_TRANSITION_VELOCITY&&restingQuestDockMode.get()===QuestDockMode.CLOSED){resultingDockMode=QuestDockMode.COLLAPSED;}else{if(restingQuestDockMode.get()===QuestDockMode.COLLAPSED||restingQuestDockMode.get()===QuestDockMode.CLOSED){resultingDockMode=QuestDockMode.RESET_TO_PREVIOUS;}else{resultingDockMode=QuestDockMode.COLLAPSED;}}if(restingQuestDockMode.get()===QuestDockMode.CLOSED&&resultingDockMode!==QuestDockMode.EXPANDED&&y<0&&absoluteY>QUEST_DOCK_GESTURE_MODE_CLOSED_TRANSITION_HEIGHT){resultingDockMode=QuestDockMode.COLLAPSED;}runOnJS(setRestingQuestDockMode)(resultingDockMode);}';
     var4.code = var8;
-    var _closure1_slot18 = var4;
-    var4 = {};
-    var8 = 'function QuestDockGestureDetectorTsx2(event){const{initialGestureOffset,minExpandedContentHeight,activeQuestDockMode,QuestDockMode,QUEST_DOCK_GESTURE_EXPANDED_EXCESS_HEIGHT_FACTOR,QUEST_DOCK_GESTURE_MODE_TRANSITION_HEIGHT,questDockWrapperSpecs,getQuestDockExpandedWidth,windowDimensions,safeArea,QUEST_DOCK_GESTURE_MODE_CLOSED_TRANSITION_HEIGHT,QUEST_DOCK_CLOSED_HEIGHT,QUEST_DOCK_GESTURE_CLOSED_Y_OFFSET_FACTOR,getQuestDockClosedWidth,QUEST_DOCK_COLLAPSED_HEIGHT,QUEST_DOCK_GESTURE_COLLAPSED_Y_OFFSET_FACTOR,runOnJS,triggerHapticFeedback,HapticFeedbackTypes,QUEST_DOCK_VERTICAL_EDGE_GUTTER_EXPANDED,getQuestDockCollapsedWidth}=this.__closure;const deltaY=event.absoluteY-initialGestureOffset.get().absoluteY;const expandedContentHeight=minExpandedContentHeight.get();let nextHeight=initialGestureOffset.get().height-initialGestureOffset.get().y-deltaY;if(nextHeight>expandedContentHeight&&activeQuestDockMode.get()===QuestDockMode.EXPANDED){const overage=nextHeight-expandedContentHeight;const additionalHeight=overage*QUEST_DOCK_GESTURE_EXPANDED_EXCESS_HEIGHT_FACTOR;nextHeight=expandedContentHeight+additionalHeight;}const expandedModeTransitionHeight=minExpandedContentHeight.get()>0?Math.min(minExpandedContentHeight.get(),QUEST_DOCK_GESTURE_MODE_TRANSITION_HEIGHT):QUEST_DOCK_GESTURE_MODE_TRANSITION_HEIGHT;if(nextHeight>=expandedModeTransitionHeight){if(!initialGestureOffset.get().isDrawer){initialGestureOffset.set({...initialGestureOffset.get(),isDrawer:true});}questDockWrapperSpecs.set({...questDockWrapperSpecs.get(),x:0,y:0,width:getQuestDockExpandedWidth(windowDimensions.get().width,safeArea.get().left,safeArea.get().right),height:Math.min(nextHeight,windowDimensions.get().height),prevDeltaY:deltaY});activeQuestDockMode.set(QuestDockMode.EXPANDED);}else if(nextHeight<QUEST_DOCK_GESTURE_MODE_CLOSED_TRANSITION_HEIGHT){if(activeQuestDockMode.get()===QuestDockMode.CLOSED){const progress=1-Math.min(nextHeight,0)/QUEST_DOCK_CLOSED_HEIGHT;const newChange=progress*(QUEST_DOCK_CLOSED_HEIGHT-nextHeight);const nextY=newChange*QUEST_DOCK_GESTURE_CLOSED_Y_OFFSET_FACTOR;const isDraggingDown=newChange>0;questDockWrapperSpecs.set({...questDockWrapperSpecs.get(),x:0,y:isDraggingDown?nextY:0,width:getQuestDockClosedWidth(windowDimensions.get().width,safeArea.get().left,safeArea.get().right),height:isDraggingDown?QUEST_DOCK_CLOSED_HEIGHT:nextHeight,prevDeltaY:deltaY});activeQuestDockMode.set(QuestDockMode.CLOSED);}}else{const progress=nextHeight/QUEST_DOCK_GESTURE_MODE_TRANSITION_HEIGHT;const yOffset=(nextHeight-QUEST_DOCK_COLLAPSED_HEIGHT)*-1;const newChange=yOffset*(1-progress/QUEST_DOCK_GESTURE_COLLAPSED_Y_OFFSET_FACTOR);if(initialGestureOffset.get().isDrawer){initialGestureOffset.set({...initialGestureOffset.get(),isDrawer:false});}if(QUEST_DOCK_COLLAPSED_HEIGHT!==questDockWrapperSpecs.get().height&&activeQuestDockMode.get()!==QuestDockMode.EXPANDED){runOnJS(triggerHapticFeedback)(HapticFeedbackTypes.IMPACT_MEDIUM);}questDockWrapperSpecs.set({...questDockWrapperSpecs.get(),x:0,y:QUEST_DOCK_VERTICAL_EDGE_GUTTER_EXPANDED*-1+newChange,width:getQuestDockCollapsedWidth(windowDimensions.get().width,safeArea.get().left,safeArea.get().right),height:QUEST_DOCK_COLLAPSED_HEIGHT,prevDeltaY:deltaY});activeQuestDockMode.set(QuestDockMode.COLLAPSED);}}';
-    var4.code = var8;
-    var _closure1_slot19 = var4;
-    var4 = {};
-    var8 = 'function QuestDockGestureDetectorTsx3(event){const{State,initialGestureOffset,touchMoveCount,QUEST_DOCK_GESTURE_TOUCH_MOVE_COUNT_THRESHOLD,restingQuestDockMode,QuestDockMode,QUEST_DOCK_GESTURE_VERTICAL_DELTA_MINIMUM,QUEST_DOCK_GESTURE_CLOSED_VERTICAL_DELTA_MINIMUM,questDockWrapperSpecs}=this.__closure;if(event.state!==State.BEGAN||initialGestureOffset.get().active){return;}touchMoveCount.set(touchMoveCount.get()+1);const isDragging=touchMoveCount.get()<=QUEST_DOCK_GESTURE_TOUCH_MOVE_COUNT_THRESHOLD;const{absoluteY:absoluteY,absoluteX:absoluteX}=event.changedTouches[0];const computed=initialGestureOffset.get().absoluteY-absoluteY;const computedAbsolute=Math.abs(computed);if(restingQuestDockMode.get()===QuestDockMode.EXPANDED&&isDragging&&computed>=0){return;}if(restingQuestDockMode.get()===QuestDockMode.COLLAPSED&&computed>QUEST_DOCK_GESTURE_VERTICAL_DELTA_MINIMUM||restingQuestDockMode.get()===QuestDockMode.EXPANDED&&(computed<-QUEST_DOCK_GESTURE_VERTICAL_DELTA_MINIMUM||computed>QUEST_DOCK_GESTURE_VERTICAL_DELTA_MINIMUM)||restingQuestDockMode.get()===QuestDockMode.COLLAPSED&&computed<0&&computedAbsolute>QUEST_DOCK_GESTURE_CLOSED_VERTICAL_DELTA_MINIMUM||restingQuestDockMode.get()===QuestDockMode.CLOSED&&computed>0&&computed>QUEST_DOCK_GESTURE_CLOSED_VERTICAL_DELTA_MINIMUM||restingQuestDockMode.get()===QuestDockMode.CLOSED&&computed<0&&computedAbsolute>QUEST_DOCK_GESTURE_CLOSED_VERTICAL_DELTA_MINIMUM){initialGestureOffset.set({absoluteX:absoluteX,absoluteY:absoluteY,x:questDockWrapperSpecs.get().x,y:questDockWrapperSpecs.get().y,height:questDockWrapperSpecs.get().height,isDrawer:restingQuestDockMode.get()===QuestDockMode.EXPANDED,active:true});}}';
-    var4.code = var8;
     var _closure1_slot20 = var4;
     var4 = {};
-    var8 = 'function QuestDockGestureDetectorTsx4(event){const{touchMoveCount,initialGestureOffset,questDockWrapperSpecs,restingQuestDockMode,QuestDockMode}=this.__closure;touchMoveCount.set(0);initialGestureOffset.set({absoluteX:event.changedTouches[0].absoluteX,absoluteY:event.changedTouches[0].absoluteY,x:questDockWrapperSpecs.get().x,y:questDockWrapperSpecs.get().y,height:questDockWrapperSpecs.get().height,isDrawer:restingQuestDockMode.get()===QuestDockMode.EXPANDED,active:false});}';
+    var8 = 'function QuestDockGestureDetectorTsx2(event){const{initialGestureOffset,questDockOffset,minExpandedContentHeight,activeQuestDockMode,QuestDockMode,QUEST_DOCK_GESTURE_EXPANDED_EXCESS_HEIGHT_FACTOR,QUEST_DOCK_GESTURE_MODE_TRANSITION_HEIGHT,questDockWrapperSpecs,getQuestDockExpandedWidth,windowDimensions,safeArea,QUEST_DOCK_GESTURE_MODE_CLOSED_TRANSITION_HEIGHT,QUEST_DOCK_CLOSED_HEIGHT,QUEST_DOCK_GESTURE_CLOSED_Y_OFFSET_FACTOR,getQuestDockClosedWidth,QUEST_DOCK_COLLAPSED_HEIGHT,QUEST_DOCK_GESTURE_COLLAPSED_Y_OFFSET_FACTOR,runOnJS,triggerHapticFeedback,HapticFeedbackTypes,QUEST_DOCK_VERTICAL_EDGE_GUTTER_EXPANDED,youBarHeight,getQuestDockCollapsedWidth,youBarHorizontalMargin}=this.__closure;const deltaY=event.absoluteY-initialGestureOffset.get().absoluteY;questDockOffset.set(Math.max(-deltaY,0));const expandedContentHeight=minExpandedContentHeight.get();let nextHeight=initialGestureOffset.get().height-deltaY;if(nextHeight>expandedContentHeight&&activeQuestDockMode.get()===QuestDockMode.EXPANDED){const overage=nextHeight-expandedContentHeight;const additionalHeight=overage*QUEST_DOCK_GESTURE_EXPANDED_EXCESS_HEIGHT_FACTOR;nextHeight=expandedContentHeight+additionalHeight;}const expandedModeTransitionHeight=minExpandedContentHeight.get()>0?Math.min(minExpandedContentHeight.get(),QUEST_DOCK_GESTURE_MODE_TRANSITION_HEIGHT):QUEST_DOCK_GESTURE_MODE_TRANSITION_HEIGHT;if(nextHeight>=expandedModeTransitionHeight){if(!initialGestureOffset.get().isDrawer){initialGestureOffset.set({...initialGestureOffset.get(),isDrawer:true});}questDockWrapperSpecs.set({...questDockWrapperSpecs.get(),x:0,y:0,width:getQuestDockExpandedWidth(windowDimensions.get().width,safeArea.get().left,safeArea.get().right),height:Math.min(nextHeight,windowDimensions.get().height),prevDeltaY:deltaY});activeQuestDockMode.set(QuestDockMode.EXPANDED);}else if(nextHeight<QUEST_DOCK_GESTURE_MODE_CLOSED_TRANSITION_HEIGHT){if(activeQuestDockMode.get()===QuestDockMode.CLOSED){const progress=1-Math.min(nextHeight,0)/QUEST_DOCK_CLOSED_HEIGHT;const newChange=progress*(QUEST_DOCK_CLOSED_HEIGHT-nextHeight);const nextY=newChange*QUEST_DOCK_GESTURE_CLOSED_Y_OFFSET_FACTOR;const isDraggingDown=newChange>0;questDockWrapperSpecs.set({...questDockWrapperSpecs.get(),x:0,y:isDraggingDown?nextY:0,width:getQuestDockClosedWidth(windowDimensions.get().width,safeArea.get().left,safeArea.get().right),height:isDraggingDown?QUEST_DOCK_CLOSED_HEIGHT:nextHeight,prevDeltaY:deltaY});activeQuestDockMode.set(QuestDockMode.CLOSED);}}else{const progress=nextHeight/QUEST_DOCK_GESTURE_MODE_TRANSITION_HEIGHT;const yOffset=(nextHeight-QUEST_DOCK_COLLAPSED_HEIGHT)*-1;const newChange=yOffset*(1-progress/QUEST_DOCK_GESTURE_COLLAPSED_Y_OFFSET_FACTOR);if(initialGestureOffset.get().isDrawer){initialGestureOffset.set({...initialGestureOffset.get(),isDrawer:false});}if(QUEST_DOCK_COLLAPSED_HEIGHT!==questDockWrapperSpecs.get().height&&activeQuestDockMode.get()!==QuestDockMode.EXPANDED){runOnJS(triggerHapticFeedback)(HapticFeedbackTypes.IMPACT_MEDIUM);}questDockWrapperSpecs.set({...questDockWrapperSpecs.get(),x:0,y:QUEST_DOCK_VERTICAL_EDGE_GUTTER_EXPANDED*-1-youBarHeight+(youBarHeight>0?Math.min(newChange,0):newChange),width:getQuestDockCollapsedWidth(windowDimensions.get().width,youBarHeight>0?youBarHorizontalMargin:safeArea.get().left,youBarHeight>0?youBarHorizontalMargin:safeArea.get().right),height:QUEST_DOCK_COLLAPSED_HEIGHT,prevDeltaY:deltaY});activeQuestDockMode.set(QuestDockMode.COLLAPSED);}}';
     var4.code = var8;
     var _closure1_slot21 = var4;
     var4 = {};
-    var8 = 'function QuestDockGestureDetectorTsx5(){const{activeQuestDockMode,isVisibleSharedValue}=this.__closure;return{mode:activeQuestDockMode.get(),isVisible:isVisibleSharedValue.get()};}';
+    var8 = 'function QuestDockGestureDetectorTsx3(event){const{State,initialGestureOffset,touchMoveCount,QUEST_DOCK_GESTURE_TOUCH_MOVE_COUNT_THRESHOLD,restingQuestDockMode,QuestDockMode,QUEST_DOCK_GESTURE_VERTICAL_DELTA_MINIMUM,QUEST_DOCK_GESTURE_CLOSED_VERTICAL_DELTA_MINIMUM,questDockWrapperSpecs}=this.__closure;if(event.state!==State.BEGAN||initialGestureOffset.get().active){return;}touchMoveCount.set(touchMoveCount.get()+1);const isDragging=touchMoveCount.get()<=QUEST_DOCK_GESTURE_TOUCH_MOVE_COUNT_THRESHOLD;const{absoluteY:absoluteY,absoluteX:absoluteX}=event.changedTouches[0];const computed=initialGestureOffset.get().absoluteY-absoluteY;const computedAbsolute=Math.abs(computed);if(restingQuestDockMode.get()===QuestDockMode.EXPANDED&&isDragging&&computed>=0){return;}if(restingQuestDockMode.get()===QuestDockMode.COLLAPSED&&computed>QUEST_DOCK_GESTURE_VERTICAL_DELTA_MINIMUM||restingQuestDockMode.get()===QuestDockMode.EXPANDED&&(computed<-QUEST_DOCK_GESTURE_VERTICAL_DELTA_MINIMUM||computed>QUEST_DOCK_GESTURE_VERTICAL_DELTA_MINIMUM)||restingQuestDockMode.get()===QuestDockMode.COLLAPSED&&computed<0&&computedAbsolute>QUEST_DOCK_GESTURE_CLOSED_VERTICAL_DELTA_MINIMUM||restingQuestDockMode.get()===QuestDockMode.CLOSED&&computed>0&&computed>QUEST_DOCK_GESTURE_CLOSED_VERTICAL_DELTA_MINIMUM||restingQuestDockMode.get()===QuestDockMode.CLOSED&&computed<0&&computedAbsolute>QUEST_DOCK_GESTURE_CLOSED_VERTICAL_DELTA_MINIMUM){initialGestureOffset.set({absoluteX:absoluteX,absoluteY:absoluteY,x:questDockWrapperSpecs.get().x,y:questDockWrapperSpecs.get().y,height:questDockWrapperSpecs.get().height,isDrawer:restingQuestDockMode.get()===QuestDockMode.EXPANDED,active:true});}}';
     var4.code = var8;
     var _closure1_slot22 = var4;
     var4 = {};
-    var8 = 'function QuestDockGestureDetectorTsx6(current,previous){const{QuestDockMode,runOnJS,triggerHapticFeedback,HapticFeedbackTypes}=this.__closure;if(current.mode===(previous===null||previous===void 0?void 0:previous.mode)||current.mode===QuestDockMode.CLOSED||(previous===null||previous===void 0?void 0:previous.mode)===QuestDockMode.CLOSED||!current.isVisible){return;}runOnJS(triggerHapticFeedback)(HapticFeedbackTypes.IMPACT_MEDIUM);}';
+    var8 = 'function QuestDockGestureDetectorTsx4(event){const{touchMoveCount,initialGestureOffset,questDockWrapperSpecs,restingQuestDockMode,QuestDockMode}=this.__closure;touchMoveCount.set(0);initialGestureOffset.set({absoluteX:event.changedTouches[0].absoluteX,absoluteY:event.changedTouches[0].absoluteY,x:questDockWrapperSpecs.get().x,y:questDockWrapperSpecs.get().y,height:questDockWrapperSpecs.get().height,isDrawer:restingQuestDockMode.get()===QuestDockMode.EXPANDED,active:false});}';
     var4.code = var8;
     var _closure1_slot23 = var4;
+    var4 = {};
+    var8 = 'function QuestDockGestureDetectorTsx5(){const{activeQuestDockMode,isVisibleSharedValue}=this.__closure;return{mode:activeQuestDockMode.get(),isVisible:isVisibleSharedValue.get()};}';
+    var4.code = var8;
+    var _closure1_slot24 = var4;
+    var4 = {};
+    var8 = 'function QuestDockGestureDetectorTsx6(current,previous){const{QuestDockMode,runOnJS,triggerHapticFeedback,HapticFeedbackTypes}=this.__closure;if(current.mode===(previous===null||previous===void 0?void 0:previous.mode)||current.mode===QuestDockMode.CLOSED||(previous===null||previous===void 0?void 0:previous.mode)===QuestDockMode.CLOSED||!current.isVisible){return;}runOnJS(triggerHapticFeedback)(HapticFeedbackTypes.IMPACT_MEDIUM);}';
+    var4.code = var8;
+    var _closure1_slot25 = var4;
     var4 = var7.memo;
     var3 = function arg0() {
-        var1 = _closure1_slot24;
+        var1 = _closure1_slot26;
         var3 = undefined;
         var4 = var1.bind(var3)();
-        var2 = _closure1_slot17;
+        var2 = _closure1_slot19;
         var1 = _closure1_slot0;
         var5 = _closure1_slot2;
-        var0 = 9;
+        var0 = 10;
         var0 = var5[var0];
         var0 = var1.bind(var3)(var0);
         var1 = var0.GestureDetector;
@@ -1338,7 +1398,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3 = var4.bind(var7)(var3);
-    var4 = 12;
+    var4 = 13;
     var4 = var6[var4];
     var6 = var5.bind(var0)(var4);
     var5 = var6.fileFinishedImporting;
@@ -1347,4 +1407,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var3;
     var2.useQuestDockSwipeGesture = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 5287, 5312, 33, 5313, 5360, 5316, 5283, 3717, 4968, 5311, 3283, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 5289, 5314, 5282, 33, 5315, 5362, 5318, 5285, 3719, 4970, 5313, 3285, 2]);

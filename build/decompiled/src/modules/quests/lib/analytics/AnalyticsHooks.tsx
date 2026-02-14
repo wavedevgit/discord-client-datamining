@@ -376,9 +376,9 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         _fun47968: for (var _fun47968_ip = 0;;) switch (_fun47968_ip) {
             case 0:
                 var1 = arg0;
-                var8 = var1.takeoverConfig;
+                var8 = var1.questHomeHeroConfig;
                 var _closure2_slot0 = var8;
-                var7 = var1.shouldShowTakeoverContent;
+                var7 = var1.shouldShowQuestHomeHeroContent;
                 var _closure2_slot1 = var7;
                 var4 = undefined;
                 var _closure2_slot2 = var4;
@@ -558,4 +558,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useQuestHomeEntrypointAnalyticsEvents = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 5284, 660, 5364, 5320, 5297, 5332, 5337, 5338, 491, 478, 5289, 5330, 796, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 5286, 660, 5366, 5322, 5299, 5334, 5339, 5340, 491, 478, 5291, 5332, 796, 2]);

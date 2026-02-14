@@ -202,4 +202,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = 0.8333333333333334;
     var2.avatarPlaceholderSizeRatio = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 44, 1644, 6996, 5810, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 44, 1644, 6998, 5812, 2]);

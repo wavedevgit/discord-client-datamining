@@ -83,4 +83,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.FireIcon = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 671, 3155, 7471, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 671, 3157, 7473, 2]);

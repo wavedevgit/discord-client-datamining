@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/group_dm/getGroupDMRecipientLimit.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun107822: for (var _fun107822_ip = 0;;) switch (_fun107822_ip) {
+        _fun107877: for (var _fun107877_ip = 0;;) switch (_fun107877_ip) {
             case 0:
                 var2 = arg0;
                 var3 = _closure1_slot0;
@@ -40,37 +40,37 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var0.bind(var3)();
                 var0 = null;
                 if (!(var0 != var4)) {
-                    _fun107822_ip = 38;
-                    continue _fun107822
+                    _fun107877_ip = 38;
+                    continue _fun107877
                 }
             case 25:
                 var3 = var4.isStaff;
                 var3 = var3.bind(var4)();
                 if (var3) {
-                    _fun107822_ip = 68;
-                    continue _fun107822
+                    _fun107877_ip = 68;
+                    continue _fun107877
                 }
             case 38:
                 if (!(var0 != var2)) {
-                    _fun107822_ip = 54;
-                    continue _fun107822
+                    _fun107877_ip = 54;
+                    continue _fun107877
                 }
             case 42:
                 var3 = var2.userLimit;
                 var0 = 0;
                 if (!(!(var3 > var0))) {
-                    _fun107822_ip = 60;
-                    continue _fun107822
+                    _fun107877_ip = 60;
+                    continue _fun107877
                 }
             case 54:
                 var0 = _closure1_slot1;
-                _fun107822_ip = 66;
-                continue _fun107822;
+                _fun107877_ip = 66;
+                continue _fun107877;
             case 60:
                 var0 = var2.userLimit;
             case 66:
-                _fun107822_ip = 72;
-                continue _fun107822;
+                _fun107877_ip = 72;
+                continue _fun107877;
             case 68:
                 var0 = _closure1_slot2;
             case 72:

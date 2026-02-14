@@ -942,4 +942,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.MarketingPageBanner = var3;
     var2.MarketingPageBannerButton = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 6, 7, 15, 17, 18, 1313, 7165, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 6, 7, 15, 17, 18, 1313, 7167, 2]);

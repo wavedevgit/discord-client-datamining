@@ -673,4 +673,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var3;
     var2.WhatYouLoseMode = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1623, 33, 1297, 671, 4709, 3938, 3114, 5785, 7339, 44, 7344, 1235, 7345, 7346, 7347, 7348, 3282, 4938, 7140, 4880, 7189, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1623, 33, 1297, 671, 4711, 3940, 3116, 5787, 7341, 44, 7346, 1235, 7347, 7348, 7349, 7350, 3284, 4940, 7142, 4882, 7191, 2]);

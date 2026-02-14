@@ -42,7 +42,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/guild/usePostableChannelCount.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun107688: for (var _fun107688_ip = 0;;) switch (_fun107688_ip) {
+        _fun107743: for (var _fun107743_ip = 0;;) switch (_fun107743_ip) {
             case 0:
                 var0 = arg0;
                 var _closure2_slot0 = var0;
@@ -59,7 +59,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = new Array(1);
                 var2[0] = var0;
                 var0 = function() { // Environment: var1
-                    _fun107689: for (var _fun107689_ip = 0;;) switch (_fun107689_ip) {
+                    _fun107744: for (var _fun107744_ip = 0;;) switch (_fun107744_ip) {
                         case 0:
                             var3 = _closure1_slot3;
                             var2 = var3.getChannels;
@@ -69,8 +69,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var0 = var1[var0];
                             var1 = null;
                             if (!(var1 == var0)) {
-                                _fun107689_ip = 43;
-                                continue _fun107689
+                                _fun107744_ip = 43;
+                                continue _fun107744
                             }
                         case 39:
                             var0 = new Array(0);
@@ -82,8 +82,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var3.length;
                 var0 = 0;
                 if (!(var0 !== var2)) {
-                    _fun107688_ip = 106;
-                    continue _fun107688
+                    _fun107743_ip = 106;
+                    continue _fun107743
                 }
             case 84:
                 var2 = var3.filter;
@@ -114,4 +114,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1676, 3096, 660, 566, 484, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1676, 3098, 660, 566, 484, 2]);

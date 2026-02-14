@@ -4,38 +4,40 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var1;
     var1 = dependencyMap;
     var _closure1_slot1 = var1;
-    var1 = function(arg0, arg1) { // Environment: var0
-        _fun97410: for (var _fun97410_ip = 0;;) switch (_fun97410_ip) {
+    var1 = global;
+    var1 = var1.TypeError;
+    var _closure1_slot2 = var1;
+    var1 = function(arg0) { // Environment: var0
+        _fun97441: for (var _fun97441_ip = 0;;) switch (_fun97441_ip) {
             case 0:
-                var3 = arg0;
-                var1 = arg1;
+                var1 = arg0;
                 var4 = _closure1_slot0;
-                var0 = _closure1_slot1;
-                var6 = 0;
-                var0 = var0[var6];
-                var5 = undefined;
-                var0 = var4.bind(var5)(var0);
-                var0 = var0[var3];
-                if (var0) {
-                    _fun97410_ip = 66;
-                    continue _fun97410
+                var3 = _closure1_slot1;
+                var2 = 0;
+                var2 = var3[var2];
+                var3 = undefined;
+                var2 = var4.bind(var3)(var2);
+                var2 = var2.bind(var3)(var1);
+                if (var2) {
+                    _fun97441_ip = 37;
+                    continue _fun97441
                 }
+            case 35:
+                return var1;
             case 37:
-                var4 = _closure1_slot0;
-                var2 = _closure1_slot1;
-                var2 = var2[var6];
-                var2 = var4.bind(var5)(var2);
-                if (var1) {
-                    _fun97410_ip = 59;
-                    continue _fun97410
-                }
-            case 57:
-                var1 = {};
-            case 59:
-                var2[var3] = var1;
-                var0 = var1;
-            case 66:
-                return var0;
+                var2 = _closure1_slot2;
+                var0 = "Can't call method on ";
+                var5 = var0 + var1;
+                var1 = var2.prototype;
+                var1 = Object.create(var1, {
+                    constructor: {
+                        value: var2
+                    }
+                });
+                var6 = var1;
+                var0 = new var6[var2](var5, var4);
+                var0 = var0 instanceof Object ? var0 : var1;
+                throw var0;
         }
     };
     var0 = arg4;

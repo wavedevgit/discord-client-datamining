@@ -61,4 +61,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.showActivitiesInvalidPermissionsAlert = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3998, 1235, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [4000, 1235, 2]);

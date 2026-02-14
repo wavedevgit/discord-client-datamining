@@ -194,4 +194,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.BaseTextField = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 478, 5455, 3161, 5458, 3160, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 478, 5457, 3163, 5460, 3162, 2]);

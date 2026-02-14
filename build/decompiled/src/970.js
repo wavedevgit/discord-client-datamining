@@ -175,14 +175,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = arg2;
                 var8 = arg3;
                 if (!var2) {
-                    _fun9985_ip = 1088;
+                    _fun9985_ip = 1092;
                     continue _fun9985
                 }
             case 18:
                 var3 = 'object';
                 var1 = typeof var2;
                 if (!(var3 === var1)) {
-                    _fun9985_ip = 1088;
+                    _fun9985_ip = 1092;
                     continue _fun9985
                 }
             case 32:
@@ -208,7 +208,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = var3 === var5;
             case 75:
                 if (!var1) {
-                    _fun9985_ip = 226;
+                    _fun9985_ip = 230;
                     continue _fun9985
                 }
             case 81:
@@ -259,174 +259,174 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var3.mechanism = var8;
                 var3 = var6.bind(var7)(var5, var3);
                 var1 = true;
-            case 226:
+            case 230:
                 if (var1) {
-                    _fun9985_ip = 1088;
+                    _fun9985_ip = 1092;
                     continue _fun9985
                 }
-            case 232:
+            case 236:
                 var3 = var2.type;
                 var1 = 'message_delta';
                 var1 = var1 === var3;
                 if (!var1) {
-                    _fun9985_ip = 256;
+                    _fun9985_ip = 260;
                     continue _fun9985
                 }
-            case 250:
+            case 254:
                 var1 = var2.usage;
-            case 256:
+            case 260:
                 if (!var1) {
-                    _fun9985_ip = 273;
+                    _fun9985_ip = 277;
                     continue _fun9985
                 }
-            case 259:
+            case 263:
                 var5 = var2.usage;
                 var3 = 'output_tokens';
                 var1 = var3 in var5;
-            case 273:
+            case 277:
                 if (!var1) {
-                    _fun9985_ip = 299;
+                    _fun9985_ip = 303;
                     continue _fun9985
                 }
-            case 276:
+            case 280:
                 var3 = var2.usage;
                 var3 = var3.output_tokens;
                 var5 = 'number';
                 var3 = typeof var3;
                 var1 = var5 === var3;
-            case 299:
+            case 303:
                 if (!var1) {
-                    _fun9985_ip = 320;
+                    _fun9985_ip = 324;
                     continue _fun9985
                 }
-            case 302:
+            case 306:
                 var1 = var2.usage;
                 var1 = var1.output_tokens;
                 var4.completionTokens = var1;
-            case 320:
+            case 324:
                 var1 = var2.message;
                 if (!var1) {
-                    _fun9985_ip = 531;
+                    _fun9985_ip = 535;
                     continue _fun9985
                 }
-            case 331:
+            case 335:
                 var1 = var2.message;
                 var3 = var1.id;
                 if (!var3) {
-                    _fun9985_ip = 355;
+                    _fun9985_ip = 359;
                     continue _fun9985
                 }
-            case 344:
+            case 348:
                 var3 = var1.id;
                 var4.responseId = var3;
-            case 355:
+            case 359:
                 var3 = var1.model;
                 if (!var3) {
-                    _fun9985_ip = 376;
+                    _fun9985_ip = 380;
                     continue _fun9985
                 }
-            case 364:
+            case 368:
                 var3 = var1.model;
                 var4.responseModel = var3;
-            case 376:
+            case 380:
                 var3 = var1.stop_reason;
                 if (!var3) {
-                    _fun9985_ip = 407;
+                    _fun9985_ip = 411;
                     continue _fun9985
                 }
-            case 385:
+            case 389:
                 var6 = var4.finishReasons;
                 var5 = var6.push;
                 var3 = var1.stop_reason;
                 var3 = var5.bind(var6)(var3);
-            case 407:
+            case 411:
                 var3 = var1.usage;
                 if (!var3) {
-                    _fun9985_ip = 531;
+                    _fun9985_ip = 535;
                     continue _fun9985
                 }
-            case 416:
+            case 420:
                 var3 = var1.usage;
                 var3 = var3.input_tokens;
                 var5 = 'number';
                 var3 = typeof var3;
                 if (!(var5 === var3)) {
-                    _fun9985_ip = 457;
+                    _fun9985_ip = 461;
                     continue _fun9985
                 }
-            case 439:
+            case 443:
                 var3 = var1.usage;
                 var3 = var3.input_tokens;
                 var4.promptTokens = var3;
-            case 457:
+            case 461:
                 var3 = var1.usage;
                 var3 = var3.cache_creation_input_tokens;
                 var3 = typeof var3;
                 if (!(var5 === var3)) {
-                    _fun9985_ip = 494;
+                    _fun9985_ip = 498;
                     continue _fun9985
                 }
-            case 476:
+            case 480:
                 var3 = var1.usage;
                 var3 = var3.cache_creation_input_tokens;
                 var4.cacheCreationInputTokens = var3;
-            case 494:
+            case 498:
                 var3 = var1.usage;
                 var3 = var3.cache_read_input_tokens;
                 var3 = typeof var3;
                 if (!(var5 === var3)) {
-                    _fun9985_ip = 531;
+                    _fun9985_ip = 535;
                     continue _fun9985
                 }
-            case 513:
+            case 517:
                 var1 = var1.usage;
                 var1 = var1.cache_read_input_tokens;
                 var4.cacheReadInputTokens = var1;
-            case 531:
+            case 535:
                 var3 = var2.type;
                 var1 = 'content_block_start';
                 var1 = var1 === var3;
                 if (!var1) {
-                    _fun9985_ip = 565;
+                    _fun9985_ip = 569;
                     continue _fun9985
                 }
-            case 549:
+            case 553:
                 var3 = var2.index;
                 var5 = 'number';
                 var3 = typeof var3;
                 var1 = var5 === var3;
-            case 565:
+            case 569:
                 if (!var1) {
-                    _fun9985_ip = 574;
+                    _fun9985_ip = 578;
                     continue _fun9985
                 }
-            case 568:
+            case 572:
                 var1 = var2.content_block;
-            case 574:
+            case 578:
                 if (!var1) {
-                    _fun9985_ip = 681;
+                    _fun9985_ip = 685;
                     continue _fun9985
                 }
-            case 577:
+            case 581:
                 var1 = var2.content_block;
                 var3 = var1.type;
                 var1 = 'tool_use';
                 var1 = var1 !== var3;
                 if (!var1) {
-                    _fun9985_ip = 622;
+                    _fun9985_ip = 626;
                     continue _fun9985
                 }
-            case 601:
+            case 605:
                 var3 = var2.content_block;
                 var5 = var3.type;
                 var3 = 'server_tool_use';
                 var1 = var3 !== var5;
-            case 622:
+            case 626:
                 if (var1) {
-                    _fun9985_ip = 681;
+                    _fun9985_ip = 685;
                     continue _fun9985
                 }
-            case 625:
+            case 629:
                 var5 = var4.activeToolBlocks;
                 var3 = var2.index;
                 var1 = {};
@@ -439,81 +439,81 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var6 = new Array(0);
                 var1.inputJsonParts = var6;
                 var5[var3] = var1;
-            case 681:
+            case 685:
                 var3 = var2.type;
                 var1 = 'content_block_delta';
                 if (!(var1 === var3)) {
-                    _fun9985_ip = 868;
+                    _fun9985_ip = 872;
                     continue _fun9985
                 }
-            case 699:
+            case 703:
                 var1 = var2.delta;
                 if (!var1) {
-                    _fun9985_ip = 868;
+                    _fun9985_ip = 872;
                     continue _fun9985
                 }
-            case 711:
+            case 715:
                 var1 = var2.index;
                 var3 = 'number';
                 var1 = typeof var1;
                 if (!(var3 === var1)) {
-                    _fun9985_ip = 813;
+                    _fun9985_ip = 817;
                     continue _fun9985
                 }
-            case 727:
+            case 731:
                 var3 = var2.delta;
                 var1 = 'partial_json';
                 var1 = var1 in var3;
                 if (!var1) {
-                    _fun9985_ip = 813;
+                    _fun9985_ip = 817;
                     continue _fun9985
                 }
-            case 744:
+            case 748:
                 var1 = var2.delta;
                 var1 = var1.partial_json;
                 var3 = 'string';
                 var1 = typeof var1;
                 if (!(var3 === var1)) {
-                    _fun9985_ip = 813;
+                    _fun9985_ip = 817;
                     continue _fun9985
                 }
-            case 767:
+            case 771:
                 var3 = var4.activeToolBlocks;
                 var1 = var2.index;
                 var1 = var3[var1];
                 if (!var1) {
-                    _fun9985_ip = 813;
+                    _fun9985_ip = 817;
                     continue _fun9985
                 }
-            case 785:
+            case 789:
                 var5 = var1.inputJsonParts;
                 var3 = var5.push;
                 var1 = var2.delta;
                 var1 = var1.partial_json;
                 var1 = var3.bind(var5)(var1);
-            case 813:
+            case 817:
                 if (!var0) {
-                    _fun9985_ip = 838;
+                    _fun9985_ip = 842;
                     continue _fun9985
                 }
-            case 816:
+            case 820:
                 var1 = var2.delta;
                 var1 = var1.text;
                 var3 = 'string';
                 var1 = typeof var1;
                 var0 = var3 === var1;
-            case 838:
+            case 842:
                 if (!var0) {
-                    _fun9985_ip = 868;
+                    _fun9985_ip = 872;
                     continue _fun9985
                 }
-            case 841:
+            case 845:
                 var3 = var4.responseTexts;
                 var1 = var3.push;
                 var0 = var2.delta;
                 var0 = var0.text;
                 var0 = var1.bind(var3)(var0);
-            case 868:
+            case 872:
                 var0 = var2;
                 var1 = var4;
                 var6 = undefined;
@@ -522,19 +522,19 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var4 = var2.type;
                 var2 = 'content_block_stop';
                 if (!(var2 === var4)) {
-                    _fun9985_ip = 1088;
+                    _fun9985_ip = 1092;
                     continue _fun9985
                 }
-            case 898:
+            case 902:
                 var2 = var0;
                 var2 = var2.index;
                 var4 = 'number';
                 var2 = typeof var2;
                 if (!(var4 === var2)) {
-                    _fun9985_ip = 1088;
+                    _fun9985_ip = 1092;
                     continue _fun9985
                 }
-            case 920:
+            case 924:
                 var2 = var1;
                 var4 = var2.activeToolBlocks;
                 var2 = var0;
@@ -542,42 +542,42 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = var4[var2];
                 var6 = var2;
                 if (!var2) {
-                    _fun9985_ip = 1088;
+                    _fun9985_ip = 1092;
                     continue _fun9985
                 }
-            case 950:
+            case 954:
                 var2 = var6;
                 var7 = var2.inputJsonParts;
                 var4 = var7.join;
                 var2 = '';
                 var3 = var4.bind(var7)(var2);
-            case 973: // try_start_0
+            case 977: // try_start_0
                 var2 = var3;
                 if (var2) {
-                    _fun9985_ip = 983;
+                    _fun9985_ip = 987;
                     continue _fun9985
                 }
-            case 979:
-                var2 = {};
-                _fun9985_ip = 1005;
-                continue _fun9985;
             case 983:
+                var2 = {};
+                _fun9985_ip = 1009;
+                continue _fun9985;
+            case 987:
                 var4 = global;
                 var8 = var4.JSON;
                 var7 = var8.parse;
                 var4 = var3;
                 var2 = var7.bind(var8)(var4);
-            case 1005:
+            case 1009:
                 var5 = var2;
-            case 1008: // try_end0
-                _fun9985_ip = 1022;
+            case 1012: // try_end0
+                _fun9985_ip = 1026;
                 continue _fun9985;
-            case 1010: // catch_target0
+            case 1014: // catch_target0
                 CatchBlockStart(arg_register = 2);
                 var2 = {};
                 var2.__unparsed = var3;
                 var5 = var2;
-            case 1022:
+            case 1026:
                 var4 = var1.toolCalls;
                 var3 = var4.push;
                 var2 = {};
@@ -592,7 +592,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = var1.activeToolBlocks;
                 var0 = var0.index;
                 var0 = delete var1[var0];
-            case 1088:
+            case 1092:
                 var0 = undefined;
                 return var0;
         }
@@ -3061,10 +3061,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var2 = var3.isRecording;
                     var2 = var2.bind(var3)();
                     if (!var2) {
-                        _fun9993_ip = 143;
+                        _fun9993_ip = 147;
                         continue _fun9993
                     }
-                case 77:
+                case 81:
                     var2 = _closure2_slot0;
                     var3 = var2.setStatus;
                     var1 = {};
@@ -3080,7 +3080,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var1 = var3.bind(var2)(var1);
                     var1 = var2.end;
                     var1 = var1.bind(var2)();
-                case 143:
+                case 147:
                     return var0;
             }
         };

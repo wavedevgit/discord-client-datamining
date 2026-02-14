@@ -49,7 +49,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2 = _closure1_slot3;
             var1 = var2.addConditionalChangeListener;
             var0 = function() { // Environment: var0
-                _fun43492: for (var _fun43492_ip = 0;;) switch (_fun43492_ip) {
+                _fun43490: for (var _fun43490_ip = 0;;) switch (_fun43490_ip) {
                     case 0:
                         var4 = _closure1_slot3;
                         var2 = var4.getSelfMember;
@@ -66,8 +66,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var8 = var4 == var7;
                         var0 = undefined;
                         if (var8) {
-                            _fun43492_ip = 69;
-                            continue _fun43492
+                            _fun43490_ip = 69;
+                            continue _fun43490
                         }
                     case 64:
                         var0 = var7.flags;
@@ -75,8 +75,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var7 = var4 != var0;
                         var4 = 0;
                         if (!var7) {
-                            _fun43492_ip = 81;
-                            continue _fun43492
+                            _fun43490_ip = 81;
+                            continue _fun43490
                         }
                     case 78:
                         var4 = var0;
@@ -86,8 +86,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var0 = var5.bind(var6)(var4, var0);
                         var0 = !var0;
                         if (var0) {
-                            _fun43492_ip = 151;
-                            continue _fun43492
+                            _fun43490_ip = 151;
+                            continue _fun43490
                         }
                     case 103:
                         var4 = _closure1_slot1;
@@ -116,4 +116,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.waitForOnboardingCompletion = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1686, 3084, 1384, 4696, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1686, 3086, 1384, 4698, 2]);

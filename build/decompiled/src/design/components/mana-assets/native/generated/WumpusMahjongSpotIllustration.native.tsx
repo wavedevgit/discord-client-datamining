@@ -81,4 +81,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.WumpusMahjongSpotIllustration = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 4709, 6505, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 4711, 6507, 2]);

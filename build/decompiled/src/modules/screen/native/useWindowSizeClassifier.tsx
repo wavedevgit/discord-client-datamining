@@ -9,43 +9,43 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var4;
     var0 = function arg0() {
-        _fun35477: for (var _fun35477_ip = 0;;) switch (_fun35477_ip) {
+        _fun35475: for (var _fun35475_ip = 0;;) switch (_fun35475_ip) {
             case 0:
                 var1 = arg0;
                 var0 = 360;
                 if (!(!(var1 <= var0))) {
-                    _fun35477_ip = 78;
-                    continue _fun35477
+                    _fun35475_ip = 78;
+                    continue _fun35475
                 }
             case 13:
                 var0 = 600;
                 if (!(!(var1 <= var0))) {
-                    _fun35477_ip = 63;
-                    continue _fun35477
+                    _fun35475_ip = 63;
+                    continue _fun35475
                 }
             case 23:
                 var0 = 840;
                 if (!(!(var1 <= var0))) {
-                    _fun35477_ip = 48;
-                    continue _fun35477
+                    _fun35475_ip = 48;
+                    continue _fun35475
                 }
             case 33:
                 var0 = _closure1_slot3;
                 var0 = var0.XLARGE;
-                _fun35477_ip = 61;
-                continue _fun35477;
+                _fun35475_ip = 61;
+                continue _fun35475;
             case 48:
                 var1 = _closure1_slot3;
                 var0 = var1.LARGE;
             case 61:
-                _fun35477_ip = 76;
-                continue _fun35477;
+                _fun35475_ip = 76;
+                continue _fun35475;
             case 63:
                 var1 = _closure1_slot3;
                 var0 = var1.NORMAL;
             case 76:
-                _fun35477_ip = 91;
-                continue _fun35477;
+                _fun35475_ip = 91;
+                continue _fun35475;
             case 78:
                 var1 = _closure1_slot3;
                 var0 = var1.SMALL;
@@ -117,4 +117,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getWindowSizeClassifier = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3921, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3923, 2]);

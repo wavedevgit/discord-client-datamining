@@ -81,4 +81,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.AvatarLockeExample = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 4709, 6041, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 4711, 6043, 2]);

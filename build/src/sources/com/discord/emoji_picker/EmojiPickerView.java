@@ -2,7 +2,10 @@ package com.discord.emoji_picker;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
+import android.view.MotionEvent;
 import android.view.View;
+import android.view.ViewConfiguration;
+import android.view.ViewParent;
 import androidx.core.view.o0;
 import androidx.recyclerview.widget.RecyclerView;
 import com.discord.crash_reporting.CrashReporting;
@@ -209,6 +212,41 @@ public final class EmojiPickerView extends RecyclerView implements EmojiPickerCa
                 return _init_$lambda$9;
             }
         }, z10, config));
+        addOnItemTouchListener(new RecyclerView.j(context) { // from class: com.discord.emoji_picker.EmojiPickerView.5
+            private boolean hasCancelledTouch;
+            private float initialY;
+            private final int touchSlop;
+
+            {
+                this.touchSlop = ViewConfiguration.get(context).getScaledTouchSlop();
+            }
+
+            @Override // androidx.recyclerview.widget.RecyclerView.OnItemTouchListener
+            public boolean onInterceptTouchEvent(RecyclerView rv2, MotionEvent e10) {
+                Intrinsics.checkNotNullParameter(rv2, "rv");
+                Intrinsics.checkNotNullParameter(e10, "e");
+                int actionMasked = e10.getActionMasked();
+                if (actionMasked != 0) {
+                    if (actionMasked == 2 && !this.hasCancelledTouch && Math.abs(e10.getY() - this.initialY) > this.touchSlop) {
+                        this.hasCancelledTouch = true;
+                        ViewParent parent = rv2.getParent();
+                        if (parent != null) {
+                            parent.requestDisallowInterceptTouchEvent(true);
+                        }
+                        MotionEvent obtain = MotionEvent.obtain(e10);
+                        obtain.setAction(3);
+                        for (View view : o0.a(rv2)) {
+                            view.dispatchTouchEvent(obtain);
+                        }
+                        obtain.recycle();
+                    }
+                } else {
+                    this.initialY = e10.getY();
+                    this.hasCancelledTouch = false;
+                }
+                return false;
+            }
+        });
         getScroller().bind();
         configurePremiumUpsellGradientDecorator(coreData.getHasPremiumInlineRoadblock());
         configureRecycledViewPool();

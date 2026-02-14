@@ -83,4 +83,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.XSmallBoldIcon = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 671, 3155, 5479, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 671, 3157, 5481, 2]);

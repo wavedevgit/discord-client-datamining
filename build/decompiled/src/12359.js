@@ -1,95 +1,193 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun94612: for (var _fun94612_ip = 0;;) switch (_fun94612_ip) {
-        case 0:
-            var1 = global;
-            var2 = var1.process;
-            var3 = 'object';
-            var2 = typeof var2;
-            if (!(var3 === var2)) {
-                _fun94612_ip = 102;
-                continue _fun94612
-            }
-        case 21:
-            var2 = var1.process;
-            var2 = var2.env;
-            if (!var2) {
-                _fun94612_ip = 102;
-                continue _fun94612
-            }
-        case 36:
-            var2 = var1.process;
-            var2 = var2.env;
-            var2 = var2.NODE_DEBUG;
-            if (!var2) {
-                _fun94612_ip = 102;
-                continue _fun94612
-            }
-        case 57:
-            var3 = /\bsemver\b/i;
-            var2 = var3.test;
-            var1 = var1.process;
-            var1 = var1.env;
-            var1 = var1.NODE_DEBUG;
-            var1 = var2.bind(var3)(var1);
-            if (var1) {
-                _fun94612_ip = 111;
-                continue _fun94612
-            }
-        case 102:
-            var1 = function() { // Environment: var0
-                var0 = undefined;
-                return var0;
-            };
-            _fun94612_ip = 118;
-            continue _fun94612;
-        case 111:
-            var1 = function() { // Environment: var0
-                _fun94613: for (var _fun94613_ip = 0;;) switch (_fun94613_ip) {
-                    case 0:
-                        var3 = undefined;
-                        var2 = arguments.length;
-                        var0 = global;
-                        var1 = var0.Array;
-                        var4 = var1.prototype;
-                        var4 = Object.create(var4, {
-                            constructor: {
-                                value: var1
-                            }
-                        });
-                        var8 = var4;
-                        var7 = var2;
-                        var1 = new var8[var1](var7, var6);
-                        var5 = var1 instanceof Object ? var1 : var4;
-                        var1 = 0;
-                        var4 = var1 < var2;
-                        if (!var4) {
-                            _fun94613_ip = 60;
-                            continue _fun94613
-                        }
-                    case 45:
-                        var4 = arguments[var1];
-                        var5[var1] = var4;
-                        var1 = var1 + 1;
-                        if (var1 < var2) {
-                            _fun94613_ip = 45;
-                            continue _fun94613
-                        }
-                    case 60:
-                        var3 = var0.console;
-                        var2 = var3.error;
-                        var1 = var2.apply;
-                        var4 = ['SEMVER'];
-                        var0 = var4.concat;
-                        var0 = var0.bind(var4)(var5);
-                        var0 = var1.bind(var2)(var3, var0);
-                        return var0;
-                }
-            };
-        case 118:
-            var0 = arg4;
-            var0.exports = var1;
-            var0 = undefined;
-            return var0;
-    }
-})(undefined, undefined, undefined, undefined, undefined, undefined, []);
+    var3 = require;
+    var4 = dependencyMap;
+    var2 = {};
+    var0 = 0;
+    var1 = var4[var0];
+    var0 = undefined;
+    var1 = var3.bind(var0)(var1);
+    var2.parse = var1;
+    var1 = 1;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var2.valid = var1;
+    var1 = 2;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var2.clean = var1;
+    var1 = 3;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var2.inc = var1;
+    var1 = 4;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var2.diff = var1;
+    var1 = 5;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var2.major = var1;
+    var1 = 6;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var2.minor = var1;
+    var1 = 7;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var2.patch = var1;
+    var1 = 8;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var2.prerelease = var1;
+    var1 = 9;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var2.compare = var1;
+    var1 = 10;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var2.rcompare = var1;
+    var1 = 11;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var2.compareLoose = var1;
+    var1 = 12;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var2.compareBuild = var1;
+    var1 = 13;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var2.sort = var1;
+    var1 = 14;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var2.rsort = var1;
+    var1 = 15;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var2.gt = var1;
+    var1 = 16;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var2.lt = var1;
+    var1 = 17;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var2.eq = var1;
+    var1 = 18;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var2.neq = var1;
+    var1 = 19;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var2.gte = var1;
+    var1 = 20;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var2.lte = var1;
+    var1 = 21;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var2.cmp = var1;
+    var1 = 22;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var2.coerce = var1;
+    var1 = 23;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var2.Comparator = var1;
+    var1 = 24;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var2.Range = var1;
+    var1 = 25;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var2.satisfies = var1;
+    var1 = 26;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var2.toComparators = var1;
+    var1 = 27;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var2.maxSatisfying = var1;
+    var1 = 28;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var2.minSatisfying = var1;
+    var1 = 29;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var2.minVersion = var1;
+    var1 = 30;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var2.validRange = var1;
+    var1 = 31;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var2.outside = var1;
+    var1 = 32;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var2.gtr = var1;
+    var1 = 33;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var2.ltr = var1;
+    var1 = 34;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var2.intersects = var1;
+    var1 = 35;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var2.simplifyRange = var1;
+    var1 = 36;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var2.subset = var1;
+    var1 = 37;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var2.SemVer = var1;
+    var1 = 38;
+    var5 = var4[var1];
+    var5 = var3.bind(var0)(var5);
+    var5 = var5.re;
+    var2.re = var5;
+    var5 = var4[var1];
+    var5 = var3.bind(var0)(var5);
+    var5 = var5.src;
+    var2.src = var5;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.t;
+    var2.tokens = var1;
+    var1 = 39;
+    var5 = var4[var1];
+    var5 = var3.bind(var0)(var5);
+    var5 = var5.SEMVER_SPEC_VERSION;
+    var2.SEMVER_SPEC_VERSION = var5;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.RELEASE_TYPES;
+    var2.RELEASE_TYPES = var1;
+    var1 = 40;
+    var5 = var4[var1];
+    var5 = var3.bind(var0)(var5);
+    var5 = var5.compareIdentifiers;
+    var2.compareIdentifiers = var5;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.rcompareIdentifiers;
+    var2.rcompareIdentifiers = var1;
+    var1 = module;
+    var1.exports = var2;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [12360, 12367, 12368, 12369, 12370, 12371, 12372, 12373, 12374, 12375, 12376, 12377, 12378, 12379, 12380, 12381, 12382, 12383, 12384, 12385, 12386, 12387, 12388, 12389, 12390, 12392, 12393, 12394, 12395, 12396, 12397, 12398, 12399, 12400, 12401, 12402, 12403, 12361, 12365, 12363, 12366]);

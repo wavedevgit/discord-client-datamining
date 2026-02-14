@@ -174,4 +174,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.createPremiumGroupInviteEmbed = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3129, 1297, 671, 6722, 6848, 6849, 1235, 2441, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3131, 1297, 671, 6724, 6850, 6851, 1235, 2441, 2]);

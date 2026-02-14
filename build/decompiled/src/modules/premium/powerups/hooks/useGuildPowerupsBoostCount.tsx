@@ -326,4 +326,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getGuildPowerupsBoostCount = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1410, 6791, 6793, 5701, 566, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1410, 6793, 6795, 5703, 566, 2]);

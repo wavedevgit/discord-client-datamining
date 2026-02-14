@@ -469,4 +469,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.InAppNavigationRecord = var3;
     var2.InAppNavigationType = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 15, 17, 18, 1629, 660, 5287, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 15, 17, 18, 1629, 660, 5289, 2]);

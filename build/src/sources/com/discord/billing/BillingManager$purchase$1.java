@@ -9,6 +9,7 @@ import com.discord.billing.BillingManagerException;
 import com.discord.billing.types.BillingFlowParams;
 import com.discord.billing.types.ProductType;
 import com.discord.crash_reporting.CrashReporting;
+import com.discord.media.utils.DiscordVideoMediaSource;
 import java.util.List;
 import java.util.concurrent.CancellationException;
 import kotlin.Metadata;
@@ -23,7 +24,7 @@ import kotlin.jvm.internal.Ref;
 import kotlinx.coroutines.CoroutineScope;
 /* JADX INFO: Access modifiers changed from: package-private */
 @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {2, 1, 0}, xi = 48)
-@kotlin.coroutines.jvm.internal.e(c = "com.discord.billing.BillingManager$purchase$1", f = "BillingManager.kt", l = {475}, m = "invokeSuspend")
+@kotlin.coroutines.jvm.internal.e(c = "com.discord.billing.BillingManager$purchase$1", f = "BillingManager.kt", l = {DiscordVideoMediaSource.DEFAULT_HEIGHT}, m = "invokeSuspend")
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 public final class BillingManager$purchase$1 extends kotlin.coroutines.jvm.internal.k implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
     final /* synthetic */ Activity $activity;

@@ -567,7 +567,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                                 StartGenerator();
                                                 ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
                                                 if (var1) {
-                                                    _fun9888_ip = 247;
+                                                    _fun9888_ip = 251;
                                                     continue _fun9888
                                                 }
                                             case 10:
@@ -816,7 +816,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                                 var2.mechanism = var5;
                                                 var2 = var3.bind(var4)(var1, var2);
                                                 throw var1;
-                                            case 247:
+                                            case 251:
                                                 return var0;
                                         }
                                     };
@@ -874,7 +874,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                                 StartGenerator();
                                                 ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
                                                 if (var1) {
-                                                    _fun9884_ip = 342;
+                                                    _fun9884_ip = 346;
                                                     continue _fun9884
                                                 }
                                             case 10:
@@ -992,7 +992,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                                 var2 = var3.end;
                                                 var2 = var2.bind(var3)();
                                                 throw var1;
-                                            case 342:
+                                            case 346:
                                                 return var0;
                                         }
                                     };

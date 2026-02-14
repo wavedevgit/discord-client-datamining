@@ -81,4 +81,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.SafetyBookletEmailSpotIllustration = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 4709, 6377, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 4711, 6379, 2]);

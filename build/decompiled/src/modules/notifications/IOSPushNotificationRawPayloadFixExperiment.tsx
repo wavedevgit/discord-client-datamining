@@ -41,13 +41,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/notifications/IOSPushNotificationRawPayloadFixExperiment.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function() {
-        _fun39285: for (var _fun39285_ip = 0;;) switch (_fun39285_ip) {
+        _fun39283: for (var _fun39283_ip = 0;;) switch (_fun39283_ip) {
             case 0:
                 var2 = _closure1_slot1;
                 var1 = null;
                 if (!(var1 == var2)) {
-                    _fun39285_ip = 49;
-                    continue _fun39285
+                    _fun39283_ip = 49;
+                    continue _fun39283
                 }
             case 13:
                 var3 = _closure1_slot0;

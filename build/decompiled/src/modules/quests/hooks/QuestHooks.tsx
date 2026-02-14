@@ -686,7 +686,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var4;
             case 382:
                 var4 = arg2;
-                var16 = var4.takeover;
+                var16 = var4.questHomeHero;
                 var4 = var12 != var16;
                 if (!var4) {
                     _fun48051_ip = 435;
@@ -698,7 +698,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13 = 21;
                 var13 = var15[var13];
                 var15 = var14.bind(var10)(var13);
-                var14 = var15.isQuestFeaturedByTakeover;
+                var14 = var15.isQuestFeaturedByHero;
                 var13 = var3.id;
                 var4 = var14.bind(var15)(var16, var13);
             case 435:
@@ -713,7 +713,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13 = 21;
                 var13 = var15[var13];
                 var15 = var14.bind(var10)(var13);
-                var14 = var15.isQuestFeaturedByTakeover;
+                var14 = var15.isQuestFeaturedByHero;
                 var13 = var0.id;
                 var12 = var14.bind(var15)(var16, var13);
             case 479:
@@ -1412,7 +1412,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var3[0] = var2;
             var2 = function() { // Environment: var0
                 var1 = _closure1_slot10;
-                var0 = var1.getQuestHomeTakeoverConfig;
+                var0 = var1.getQuestHomeHeroConfig;
                 var0 = var0.bind(var1)();
                 return var0;
             };
@@ -1425,7 +1425,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var0 = function() { // Environment: var0
                 var0 = {};
                 var1 = _closure3_slot0;
-                var0.takeover = var1;
+                var0.questHomeHero = var1;
                 return var0;
             };
             var0 = var2.bind(var3)(var0, var1);
@@ -2488,7 +2488,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot25 = var3;
     var3 = {};
     var6 = null;
-    var3.takeover = var6;
+    var3.questHomeHero = var6;
     var _closure1_slot26 = var3;
     var3 = {};
     var3.DESC = var28;
@@ -5621,7 +5621,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var10[var1];
                 var5 = undefined;
                 var1 = var9.bind(var5)(var1);
-                var3 = var1.QuestHomeTakeoverRolloutExperiment;
+                var3 = var1.QuestHomeHeroRolloutExperiment;
                 var2 = var3.useConfig;
                 var1 = {};
                 var6 = _closure1_slot12;
@@ -5676,18 +5676,18 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = function() { // Environment: var0
                     var0 = {};
                     var3 = _closure1_slot10;
-                    var2 = var3.isFetchingQuestHomeTakeover;
+                    var2 = var3.isFetchingQuestHomeHero;
                     var2 = var2.bind(var3)();
                     var0.isFetching = var2;
                     var2 = _closure1_slot10;
-                    var1 = var2.getQuestHomeTakeoverConfig;
+                    var1 = var2.getQuestHomeHeroConfig;
                     var1 = var1.bind(var2)();
-                    var0.takeoverConfig = var1;
+                    var0.questHomeHeroConfig = var1;
                     return var0;
                 };
                 var5 = var9.bind(var10)(var5, var3);
                 var3 = var5.isFetching;
-                var10 = var5.takeoverConfig;
+                var10 = var5.questHomeHeroConfig;
                 var _closure2_slot5 = var10;
                 var12 = _closure1_slot5;
                 var11 = var12.useMemo;
@@ -5795,7 +5795,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                                 var1 = var3[var1];
                                                 var4 = undefined;
                                                 var2 = var2.bind(var4)(var1);
-                                                var1 = var2.fetchQuestHomeTakeover;
+                                                var1 = var2.fetchQuestHomeHero;
                                                 var1 = var1.bind(var2)();
                                                 SaveGenerator(address = 49);
                                             case 47:
@@ -6016,7 +6016,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 380:
                 var4 = var5;
             case 383:
-                var0.takeover = var4;
+                var0.questHomeHero = var4;
                 if (var1) {
                     _fun48210_ip = 394;
                     continue _fun48210
@@ -6035,6 +6035,6 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
         }
     };
-    var2.useFetchQuestHomeTakeoverConfig = var1;
+    var2.useFetchQuestHomeHeroConfig = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 57, 31, 1690, 1372, 4525, 1621, 5284, 5287, 660, 1623, 566, 5373, 3521, 5317, 478, 5343, 5298, 5289, 5297, 667, 5325, 5326, 5347, 22, 5293, 5374, 5364, 5375, 5337, 6963, 12193, 5350, 6964, 12194, 1689, 1235, 1604, 3459, 44, 5320, 3250, 3210, 5346, 3114, 12195, 5331, 796, 12196, 1461, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 57, 31, 1690, 1372, 4527, 1621, 5286, 5289, 660, 1623, 566, 5375, 3523, 5319, 478, 5345, 5300, 5291, 5299, 667, 5327, 5328, 5349, 22, 5295, 5376, 5366, 5377, 5339, 6965, 12199, 5352, 6966, 12200, 1689, 1235, 1604, 3461, 44, 5322, 3252, 3212, 5348, 3116, 12201, 5333, 796, 12202, 1461, 2]);

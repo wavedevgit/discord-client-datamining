@@ -1,79 +1,30 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var0 = module;
-    var2 = require;
-    var _closure1_slot0 = var2;
-    var2 = dependencyMap;
-    var _closure1_slot1 = var2;
-    var1 = function arg0, arg1() {
-        _fun45940: for (var _fun45940_ip = 0;;) switch (_fun45940_ip) {
-            case 0:
-                var0 = arg1;
-                if (!var0) {
-                    _fun45940_ip = 59;
-                    continue _fun45940
-                }
-            case 6:
-                var3 = _closure1_slot0;
-                var2 = _closure1_slot1;
-                var1 = 0;
-                var2 = var2[var1];
-                var1 = undefined;
-                var2 = var3.bind(var1)(var2);
-                var1 = var2.default;
-                var2 = var1.bind(var2)(var0);
-                var1 = 'object';
-                if (!(var1 != var2)) {
-                    _fun45940_ip = 134;
-                    continue _fun45940
-                }
-            case 48:
-                var2 = 'function';
-                var1 = typeof var0;
-                if (!(var2 !== var1)) {
-                    _fun45940_ip = 134;
-                    continue _fun45940
-                }
-            case 59:
-                var3 = undefined;
-                if (!(var3 === var0)) {
-                    _fun45940_ip = 98;
-                    continue _fun45940
-                }
-            case 65:
-                var2 = _closure1_slot0;
-                var4 = _closure1_slot1;
-                var1 = 1;
-                var1 = var4[var1];
-                var2 = var2.bind(var3)(var1);
-                var1 = arg0;
-                var1 = var2.bind(var3)(var1);
-                return var1;
-            case 98:
-                var1 = global;
-                var3 = var1.TypeError;
-                var1 = var3.prototype;
-                var2 = Object.create(var1, {
-                    constructor: {
-                        value: var3
-                    }
-                });
-                var5 = 'Derived constructors may only return object or undefined';
-                var6 = var2;
-                var1 = new var6[var3](var5, var4);
-                var1 = var1 instanceof Object ? var1 : var2;
-                throw var1;
-            case 134:
-                return var0;
-        }
+    var1 = exports;
+    var0 = global;
+    var4 = var0.Object;
+    var3 = var4.defineProperty;
+    var2 = {};
+    var0 = true;
+    var2.value = var0;
+    var0 = '__esModule';
+    var0 = var3.bind(var4)(var1, var0, var2);
+    var0 = {
+        'multipleViewabilityThresholdTypesNotSupported': 'You can set exactly one of itemVisiblePercentThreshold or viewAreaCoveragePercentThreshold. Specifying both is not supported.',
+        'flashListV2OnlySupportsNewArchitecture': 'FlashList v2 is only supported on new architecture',
+        'layoutManagerNotInitializedLayoutInfo': 'LayoutManager is not initialized, layout info is unavailable',
+        'layoutManagerNotInitializedChildContainer': 'LayoutManager is not initialized, child container layout is unavailable',
+        'layoutManagerNotInitializedWindowSize': 'LayoutManager is not initialized, window size is unavailable',
+        'horizontalPropCannotBeToggled': 'Horizontal prop cannot be toggled, you can use a key on FlashList to recreate it.',
+        'layoutManagerNotInitializedVisibleIndices': 'LayoutManager is not initialized, visible indices are not unavailable',
+        'masonryAndHorizontalIncompatible': 'Masonry and horizontal props are incompatible',
+        'numColumnsAndHorizontalIncompatible': 'numColumns and horizontal props are incompatible',
+        'indexOutOfBounds': 'index out of bounds, not enough layouts',
+        'fpsMonitorAlreadyRunning': 'This FPS Monitor has already been run, please create a new instance',
+        'dataEmptyCannotRunBenchmark': 'Data is empty, cannot run benchmark',
+        'stickyHeadersNotSupportedForHorizontal': 'Sticky headers are not supported when list is horizontal'
     };
-    var0.exports = var1;
-    var2 = var0.exports;
-    var1 = true;
-    var2.__esModule = var1;
-    var1 = var0.exports;
-    var0 = var0.exports;
-    var1.default = var0;
+    var1.ErrorMessages = var0;
     var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5122, 5141]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, []);

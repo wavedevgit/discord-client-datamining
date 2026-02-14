@@ -73,4 +73,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.SpiderIllocon = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 4709, 6453, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 4711, 6455, 2]);

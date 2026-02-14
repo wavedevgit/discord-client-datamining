@@ -200,4 +200,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.useUserVerificationState = var3;
     var2.useInitialVerification = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1621, 7510, 566, 3220, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1621, 7512, 566, 3222, 2]);

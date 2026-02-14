@@ -291,4 +291,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useIsRoleStyleAndRoleColorsEligibleForERC = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 3201, 483, 669, 1304, 4796, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 3203, 483, 669, 1304, 4798, 2]);

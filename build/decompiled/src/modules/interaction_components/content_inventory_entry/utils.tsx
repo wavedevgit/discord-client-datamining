@@ -70,4 +70,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.isContentInventoryFallbackEmbed = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 1384, 3972, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 1384, 3974, 2]);

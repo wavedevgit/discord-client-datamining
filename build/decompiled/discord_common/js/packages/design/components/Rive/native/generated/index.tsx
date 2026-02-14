@@ -1,7 +1,7 @@
 // ../discord_common/js/packages/design/components/Rive/native/generated/index.tsx
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun27525: for (var _fun27525_ip = 0;;) switch (_fun27525_ip) {
+    _fun27529: for (var _fun27529_ip = 0;;) switch (_fun27529_ip) {
         case 0:
             var9 = require;
             var8 = exports;
@@ -31,8 +31,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var10 = var9.bind(var0)(var10);
                     var10 = var10[var11];
                     var8[var11] = var10;
-                    _fun27525_ip = 90;
-                    continue _fun27525;
+                    _fun27529_ip = 90;
+                    continue _fun27529;
                 }
         case 121:
             var2 = 2;
@@ -45,8 +45,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var10 = var9.bind(var0)(var10);
                     var10 = var10[var11];
                     var8[var11] = var10;
-                    _fun27525_ip = 141;
-                    continue _fun27525;
+                    _fun27529_ip = 141;
+                    continue _fun27529;
                 }
         case 172:
             var2 = 3;
@@ -59,8 +59,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var10 = var9.bind(var0)(var10);
                     var10 = var10[var11];
                     var8[var11] = var10;
-                    _fun27525_ip = 192;
-                    continue _fun27525;
+                    _fun27529_ip = 192;
+                    continue _fun27529;
                 }
         case 223:
             var2 = 4;
@@ -73,8 +73,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var10 = var9.bind(var0)(var10);
                     var10 = var10[var11];
                     var8[var11] = var10;
-                    _fun27525_ip = 243;
-                    continue _fun27525;
+                    _fun27529_ip = 243;
+                    continue _fun27529;
                 }
         case 274:
             var2 = 5;
@@ -87,8 +87,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var10 = var9.bind(var0)(var10);
                     var10 = var10[var11];
                     var8[var11] = var10;
-                    _fun27525_ip = 294;
-                    continue _fun27525;
+                    _fun27529_ip = 294;
+                    continue _fun27529;
                 }
         case 325:
             var2 = 6;
@@ -101,8 +101,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var10 = var9.bind(var0)(var10);
                     var10 = var10[var11];
                     var8[var11] = var10;
-                    _fun27525_ip = 345;
-                    continue _fun27525;
+                    _fun27529_ip = 345;
+                    continue _fun27529;
                 }
         case 376:
             var2 = 7;
@@ -115,10 +115,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var10 = var9.bind(var0)(var10);
                     var10 = var10[var11];
                     var8[var11] = var10;
-                    _fun27525_ip = 396;
-                    continue _fun27525;
+                    _fun27529_ip = 396;
+                    continue _fun27529;
                 }
         case 427:
             return var0;
     }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [2, 3179, 3188, 3190, 3192, 3194, 3196, 3198]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [2, 3181, 3190, 3192, 3194, 3196, 3198, 3200]);

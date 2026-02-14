@@ -22,15 +22,33 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var6 = {
         'enabled': false,
-        'animateBetweenServers': false
+        'animateBetweenServers': false,
+        'questDockEnabled': false,
+        'largeAvatarEnabled': false
     };
     var3.defaultConfig = var6;
     var6 = {};
     var7 = {
         'enabled': true,
-        'animateBetweenServers': true
+        'animateBetweenServers': true,
+        'questDockEnabled': true,
+        'largeAvatarEnabled': false
     };
     var6[1] = var7;
+    var7 = {
+        'enabled': true,
+        'animateBetweenServers': true,
+        'questDockEnabled': true,
+        'largeAvatarEnabled': true
+    };
+    var6[2] = var7;
+    var7 = {
+        'enabled': true,
+        'animateBetweenServers': true,
+        'questDockEnabled': false,
+        'largeAvatarEnabled': true
+    };
+    var6[3] = var7;
     var3.variations = var6;
     var3 = var4.bind(var0)(var3);
     var _closure1_slot0 = var3;

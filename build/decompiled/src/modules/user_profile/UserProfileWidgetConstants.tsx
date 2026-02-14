@@ -137,7 +137,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var3.WidgetType;
     var3 = var3.APPLICATION;
     var1 = function(arg0) { // Environment: var1
-        _fun43011: for (var _fun43011_ip = 0;;) switch (_fun43011_ip) {
+        _fun43009: for (var _fun43009_ip = 0;;) switch (_fun43009_ip) {
             case 0:
                 var2 = _closure1_slot2;
                 var1 = var2.getApplication;
@@ -148,8 +148,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var0 == var2;
                 var1 = undefined;
                 if (var3) {
-                    _fun43011_ip = 42;
-                    continue _fun43011
+                    _fun43009_ip = 42;
+                    continue _fun43009
                 }
             case 37:
                 var1 = var2.name;
@@ -157,8 +157,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var0 != var1;
                 var0 = '';
                 if (!var2) {
-                    _fun43011_ip = 56;
-                    continue _fun43011
+                    _fun43009_ip = 56;
+                    continue _fun43009
                 }
             case 53:
                 var0 = var1;
@@ -195,4 +195,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.WIDGETS_SUPPORTING_COMMENT = var3;
     var2.WIDGETS_SUPPORTING_TAGS = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3454, 4665, 1235, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3456, 4667, 1235, 2]);

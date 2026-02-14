@@ -84,4 +84,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useIsGameFriends = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 11389, 660, 566, 8473, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 11392, 660, 566, 8443, 2]);

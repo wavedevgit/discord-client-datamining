@@ -169,4 +169,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.createSimpleDeadchatPromptSystemMessage = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 6755, 1235, 478, 1417, 6837, 6838, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 6757, 1235, 478, 1417, 6839, 6840, 2]);

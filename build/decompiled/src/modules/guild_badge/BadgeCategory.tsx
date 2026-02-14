@@ -153,4 +153,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getBadgeCategory = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [7453, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [7455, 2]);

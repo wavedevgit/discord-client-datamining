@@ -250,4 +250,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.isSendableSticker = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1686, 5655, 660, 3114, 3994, 3101, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1686, 5657, 660, 3116, 3996, 3103, 2]);

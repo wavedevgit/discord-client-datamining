@@ -194,4 +194,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.transformSticker = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1352, 3994, 6777, 1235, 1348, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1352, 3996, 6779, 1235, 1348, 2]);

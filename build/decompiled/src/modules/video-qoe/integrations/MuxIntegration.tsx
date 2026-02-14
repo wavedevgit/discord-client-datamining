@@ -36,7 +36,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2 = 'mapDiscordToMuxMetadata';
         var0.key = var2;
         var2 = function arg0, arg1() {
-            _fun83912: for (var _fun83912_ip = 0;;) switch (_fun83912_ip) {
+            _fun83923: for (var _fun83923_ip = 0;;) switch (_fun83923_ip) {
                 case 0:
                     var2 = arg0;
                     var4 = this;
@@ -58,8 +58,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = var1.durationMs;
                     var3 = null;
                     if (!(var3 == var1)) {
-                        _fun83912_ip = 104;
-                        continue _fun83912
+                        _fun83923_ip = 104;
+                        continue _fun83923
                     }
                 case 80:
                     var5 = var2.contentMetadata;
@@ -82,8 +82,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var6 = var3 != var5;
                     var1 = 'Discord';
                     if (!var6) {
-                        _fun83912_ip = 188;
-                        continue _fun83912
+                        _fun83923_ip = 188;
+                        continue _fun83923
                     }
                 case 185:
                     var1 = var5;
@@ -104,8 +104,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var6 = var3 == var5;
                     var4 = undefined;
                     if (var6) {
-                        _fun83912_ip = 271;
-                        continue _fun83912
+                        _fun83923_ip = 271;
+                        continue _fun83923
                     }
                 case 266:
                     var4 = var5.userId;
@@ -115,8 +115,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var3 = var3 == var2;
                     var1 = undefined;
                     if (var3) {
-                        _fun83912_ip = 299;
-                        continue _fun83912
+                        _fun83923_ip = 299;
+                        continue _fun83923
                     }
                 case 291:
                     var1 = var2.userTier;
@@ -132,9 +132,9 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = 'getAppVersion';
         var0.key = var5;
         var5 = function() {
-            _fun83913: for (var _fun83913_ip = 0;;) switch (_fun83913_ip) {
+            _fun83924: for (var _fun83924_ip = 0;;) switch (_fun83924_ip) {
                 case 0:
-                    var0 = '5167';
+                    var0 = '5170';
                     return var0;
                 case 8:
                     CatchBlockStart(arg_register = 0);
@@ -148,7 +148,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = 'getBuildChannel';
         var0.key = var5;
         var1 = function() {
-            _fun83914: for (var _fun83914_ip = 0;;) switch (_fun83914_ip) {
+            _fun83925: for (var _fun83925_ip = 0;;) switch (_fun83925_ip) {
                 case 0:
                     var1 = undefined;
                     var3 = undefined;
@@ -161,8 +161,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var4 = var0 == var4;
                     var2 = undefined;
                     if (var4) {
-                        _fun83914_ip = 38;
-                        continue _fun83914
+                        _fun83925_ip = 38;
+                        continue _fun83925
                     }
                 case 32:
                     var2 = var3.RELEASE_CHANNEL;
@@ -171,8 +171,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = var0 != var2;
                     var0 = 'stable';
                     if (!var2) {
-                        _fun83914_ip = 55;
-                        continue _fun83914
+                        _fun83925_ip = 55;
+                        continue _fun83925
                     }
                 case 52:
                     var0 = var1;

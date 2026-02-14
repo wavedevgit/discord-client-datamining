@@ -228,4 +228,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.VerificationMethod = var3;
     var2.VERIFICATION_METHOD_TITLE_MAP = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 4561, 5993, 1235, 5991, 1689, 2377, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 4563, 5995, 1235, 5993, 1689, 2377, 2]);

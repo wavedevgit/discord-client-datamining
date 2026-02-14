@@ -81,4 +81,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.HeadphonesAndControllerSpotIllustration = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 4709, 6261, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 4711, 6263, 2]);

@@ -23,7 +23,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/device/hasPerformanceForKrispFullband.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function() {
-        _fun94590: for (var _fun94590_ip = 0;;) switch (_fun94590_ip) {
+        _fun94632: for (var _fun94632_ip = 0;;) switch (_fun94632_ip) {
             case 0:
                 var2 = _closure1_slot0;
                 var1 = _closure1_slot1;
@@ -35,8 +35,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = null;
                 var0 = var0 === var2;
                 if (var0) {
-                    _fun94590_ip = 44;
-                    continue _fun94590
+                    _fun94632_ip = 44;
+                    continue _fun94632
                 }
             case 37:
                 var1 = 31;
@@ -47,4 +47,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [12272, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [12278, 2]);

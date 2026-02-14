@@ -111,4 +111,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.logMessageSendFailure = var3;
     var2.getAttachmentMimeTypes = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 4308, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 4310, 2]);

@@ -109,10 +109,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = var9.fileFinishedImporting;
     var7 = 'modules/quests/experiments/index.tsx';
     var7 = var8.bind(var9)(var7);
-    var2.QuestHomeTakeoverRolloutExperiment = var6;
+    var2.QuestHomeHeroRolloutExperiment = var6;
     var2.QuestBarListenForSourceErrorExperimentVariant = var5;
     var2.QuestBarListenForSourceErrorExperiment = var4;
     var2.VideoEndCardV2Experiment = var3;
-    var2.FetchQuestHomeTakeoverOnConnectionOpenExperiment = var1;
+    var2.FetchQuestHomeHeroOnConnectionOpenExperiment = var1;
     return var0;
 })(undefined, undefined, undefined, undefined, undefined, undefined, [1301, 2]);

@@ -288,4 +288,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getAvatarSource = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5797, 1417, 668, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5799, 1417, 668, 2]);

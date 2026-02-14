@@ -424,4 +424,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.searchSounds = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [4744, 660, 5746, 796, 3109, 5661, 5748, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [4746, 660, 5748, 796, 3111, 5663, 5750, 2]);

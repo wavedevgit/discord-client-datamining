@@ -743,4 +743,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.updateVoiceChannelStatus = var3;
     var2.removeLinkedLobby = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 6541, 1372, 660, 807, 3917, 6542, 507, 6562, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 6543, 1372, 660, 807, 3919, 6544, 507, 6564, 2]);

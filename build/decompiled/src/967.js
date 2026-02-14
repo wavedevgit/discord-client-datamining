@@ -499,10 +499,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = var2.isRecording;
                 var1 = var1.bind(var2)();
                 if (!var1) {
-                    _fun9956_ip = 149;
+                    _fun9956_ip = 153;
                     continue _fun9956
                 }
-            case 87:
+            case 91:
                 var3 = var2.setStatus;
                 var1 = {};
                 var5 = _closure1_slot0;
@@ -517,7 +517,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = var3.bind(var2)(var1);
                 var1 = var2.end;
                 var1 = var1.bind(var2)();
-            case 149:
+            case 153:
                 throw var0;
         }
     };

@@ -108,7 +108,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/main_tabs_v2/native/friends/screens/AddFriendScreen.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun109143: for (var _fun109143_ip = 0;;) switch (_fun109143_ip) {
+        _fun109198: for (var _fun109198_ip = 0;;) switch (_fun109198_ip) {
             case 0:
                 var1 = arg0;
                 var6 = var1.navigation;
@@ -145,7 +145,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var _closure2_slot2 = var1;
                 var7 = var4.useCallback;
                 var2 = function() { // Environment: var0
-                    _fun109144: for (var _fun109144_ip = 0;;) switch (_fun109144_ip) {
+                    _fun109199: for (var _fun109199_ip = 0;;) switch (_fun109199_ip) {
                         case 0:
                             var2 = _closure1_slot7;
                             var0 = var2.getCurrentUser;
@@ -155,8 +155,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var0 = undefined;
                             var8 = undefined;
                             if (!var2) {
-                                _fun109144_ip = 60;
-                                continue _fun109144
+                                _fun109199_ip = 60;
+                                continue _fun109199
                             }
                         case 29:
                             var3 = _closure1_slot1;
@@ -266,7 +266,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var3 = var2.bind(var3)();
                     var2 = var3.then;
                     var1 = function(arg0) { // Environment: var1
-                        _fun109147: for (var _fun109147_ip = 0;;) switch (_fun109147_ip) {
+                        _fun109202: for (var _fun109202_ip = 0;;) switch (_fun109202_ip) {
                             case 0:
                                 var3 = arg0;
                                 var1 = _closure1_slot9;
@@ -275,15 +275,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var1 = var1.UNAUTHORIZED;
                                 var1 = var3 === var1;
                                 if (var2) {
-                                    _fun109147_ip = 36;
-                                    continue _fun109147
+                                    _fun109202_ip = 36;
+                                    continue _fun109202
                                 }
                             case 33:
                                 var2 = var1;
                             case 36:
                                 if (var2) {
-                                    _fun109147_ip = 82;
-                                    continue _fun109147
+                                    _fun109202_ip = 82;
+                                    continue _fun109202
                                 }
                             case 39:
                                 var3 = _closure1_slot0;
@@ -413,8 +413,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10[0] = var11;
                 var11 = null;
                 if (!var13) {
-                    _fun109143_ip = 701;
-                    continue _fun109143
+                    _fun109198_ip = 701;
+                    continue _fun109198
                 }
             case 649:
                 var14 = _closure1_slot10;
@@ -444,4 +444,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 1621, 660, 10342, 33, 1297, 671, 10350, 3240, 796, 1235, 8333, 8964, 8787, 3938, 12576, 12577, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 1621, 660, 10346, 33, 1297, 671, 10354, 3242, 796, 1235, 8303, 8935, 8757, 3940, 12581, 12582, 2]);

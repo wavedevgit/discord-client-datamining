@@ -180,7 +180,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                                 var3 = arg0;
                                                 ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
                                                 if (var1) {
-                                                    _fun9451_ip = 72;
+                                                    _fun9451_ip = 70;
                                                     continue _fun9451
                                                 }
                                             case 10:
@@ -189,18 +189,18 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                                 var1 = ['event', 'transaction', 'profile', 'replay_event'];
                                                 var2 = var4.bind(var2)(var3, var1);
                                                 if (!var2) {
-                                                    _fun9451_ip = 51;
+                                                    _fun9451_ip = 49;
                                                     continue _fun9451
                                                 }
-                                            case 38:
+                                            case 36:
                                                 var1 = _closure5_slot1;
                                                 var2.release = var1;
-                                            case 51:
+                                            case 49:
                                                 var2 = _closure6_slot1;
                                                 var1 = var2.send;
                                                 var1 = var1.bind(var2)(var3);
                                                 return var1;
-                                            case 72:
+                                            case 70:
                                                 return var0;
                                         }
                                     };

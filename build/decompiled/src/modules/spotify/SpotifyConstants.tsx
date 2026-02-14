@@ -355,4 +355,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2.getSpotifyResourceType = var1;
             return var0;
     }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 4401, 478, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 4403, 478, 2]);

@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/premium/game_server/hooks/useGameServerGetExpiringEntitlements.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun102916: for (var _fun102916_ip = 0;;) switch (_fun102916_ip) {
+        _fun102957: for (var _fun102957_ip = 0;;) switch (_fun102957_ip) {
             case 0:
                 var1 = arg0;
                 var _closure2_slot0 = var1;
@@ -60,8 +60,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = null;
                 var5 = var5 == var1;
                 if (var5) {
-                    _fun102916_ip = 92;
-                    continue _fun102916
+                    _fun102957_ip = 92;
+                    continue _fun102957
                 }
             case 86:
                 var4 = var1.entitlements;
@@ -69,7 +69,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = new Array(1);
                 var1[0] = var4;
                 var0 = function() { // Environment: var0
-                    _fun102918: for (var _fun102918_ip = 0;;) switch (_fun102918_ip) {
+                    _fun102959: for (var _fun102959_ip = 0;;) switch (_fun102959_ip) {
                         case 0:
                             var0 = global;
                             var2 = var0.Object;
@@ -80,16 +80,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var3 = undefined;
                             var0 = undefined;
                             if (var6) {
-                                _fun102918_ip = 43;
-                                continue _fun102918
+                                _fun102959_ip = 43;
+                                continue _fun102959
                             }
                         case 33:
                             var5 = _closure2_slot1;
                             var0 = var5.entitlements;
                         case 43:
                             if (!(var4 == var0)) {
-                                _fun102918_ip = 49;
-                                continue _fun102918
+                                _fun102959_ip = 49;
+                                continue _fun102959
                             }
                         case 47:
                             var0 = {};
@@ -98,8 +98,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1 = var2.length;
                             var0 = 0;
                             if (!(var0 !== var1)) {
-                                _fun102918_ip = 101;
-                                continue _fun102918
+                                _fun102959_ip = 101;
+                                continue _fun102959
                             }
                         case 65:
                             var1 = _closure1_slot0;
@@ -109,8 +109,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1 = var1.bind(var3)(var0);
                             var0 = var1.getExpiringGuildEntitlements;
                             var0 = var0.bind(var1)(var2);
-                            _fun102918_ip = 105;
-                            continue _fun102918;
+                            _fun102959_ip = 105;
+                            continue _fun102959;
                         case 101:
                             var0 = new Array(0);
                         case 105:
@@ -123,4 +123,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 6791, 566, 13382, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 6793, 566, 13387, 2]);

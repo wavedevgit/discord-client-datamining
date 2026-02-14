@@ -340,4 +340,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getBadgeTooltip = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [7453, 1235, 7454, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [7455, 1235, 7456, 2]);

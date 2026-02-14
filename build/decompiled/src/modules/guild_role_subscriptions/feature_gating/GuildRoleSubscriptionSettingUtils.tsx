@@ -521,4 +521,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.useCanManageGuildRoleSubscriptions = var3;
     var2.canManageGuildRoleSubscriptions = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1416, 3096, 1621, 660, 5692, 5695, 566, 5681, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1416, 3098, 1621, 660, 5694, 5697, 566, 5683, 2]);

@@ -269,4 +269,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.shouldShowActivity = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 1217, 1372, 1410, 4252, 4241, 660, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 1217, 1372, 1410, 4254, 4243, 660, 2]);

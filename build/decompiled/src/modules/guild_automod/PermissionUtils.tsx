@@ -32,21 +32,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var3.Permissions;
     var _closure1_slot5 = var3;
     var3 = function arg0() {
-        _fun109734: for (var _fun109734_ip = 0;;) switch (_fun109734_ip) {
+        _fun109789: for (var _fun109789_ip = 0;;) switch (_fun109789_ip) {
             case 0:
                 var2 = arguments[1];
                 var4 = arguments[2];
                 var0 = undefined;
                 if (!(var2 === var0)) {
-                    _fun109734_ip = 19;
-                    continue _fun109734
+                    _fun109789_ip = 19;
+                    continue _fun109789
                 }
             case 12:
                 var2 = _closure1_slot2;
             case 19:
                 if (!(var4 === var0)) {
-                    _fun109734_ip = 30;
-                    continue _fun109734
+                    _fun109789_ip = 30;
+                    continue _fun109789
                 }
             case 23:
                 var4 = _closure1_slot3;
@@ -57,8 +57,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = null;
                 var0 = var0 != var3;
                 if (!var0) {
-                    _fun109734_ip = 77;
-                    continue _fun109734
+                    _fun109789_ip = 77;
+                    continue _fun109789
                 }
             case 52:
                 var2 = var4.can;
@@ -77,14 +77,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/guild_automod/PermissionUtils.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function arg0() {
-        _fun109735: for (var _fun109735_ip = 0;;) switch (_fun109735_ip) {
+        _fun109790: for (var _fun109790_ip = 0;;) switch (_fun109790_ip) {
             case 0:
                 var3 = arg0;
                 var0 = null;
                 var0 = var0 != var3;
                 if (!var0) {
-                    _fun109735_ip = 26;
-                    continue _fun109735
+                    _fun109790_ip = 26;
+                    continue _fun109790
                 }
             case 12:
                 var2 = _closure1_slot6;
@@ -149,7 +149,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = new Array(1);
         var1[0] = var5;
         var0 = function() { // Environment: var0
-            _fun109740: for (var _fun109740_ip = 0;;) switch (_fun109740_ip) {
+            _fun109795: for (var _fun109795_ip = 0;;) switch (_fun109795_ip) {
                 case 0:
                     var3 = _closure1_slot2;
                     var2 = var3.getGuild;
@@ -159,8 +159,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var3 = var0 == var2;
                     var0 = undefined;
                     if (var3) {
-                        _fun109740_ip = 61;
-                        continue _fun109740
+                        _fun109795_ip = 61;
+                        continue _fun109795
                     }
                 case 35:
                     var3 = var2.features;
@@ -170,8 +170,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = var2.bind(var3)(var1);
                 case 61:
                     if (var0) {
-                        _fun109740_ip = 66;
-                        continue _fun109740
+                        _fun109795_ip = 66;
+                        continue _fun109795
                     }
                 case 64:
                     var0 = false;
@@ -184,4 +184,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useIsUserProfileRuleEnabled = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1410, 3096, 660, 566, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1410, 3098, 660, 566, 2]);

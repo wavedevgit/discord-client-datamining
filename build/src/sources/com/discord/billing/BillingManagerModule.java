@@ -20,7 +20,7 @@ import kotlin.Unit;
 import kotlin.jvm.functions.Function0;
 import kotlin.jvm.functions.Function1;
 import kotlin.jvm.functions.Function2;
-import kotlin.jvm.functions.Function3;
+import kotlin.jvm.functions.Function4;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Reflection;
 import kotlin.jvm.internal.SourceDebugExtension;
@@ -58,11 +58,11 @@ public final class BillingManagerModule extends ReactContextBaseJavaModule {
                 billingManager$lambda$1 = BillingManagerModule.billingManager$lambda$1(BillingManagerModule.this, ((Integer) obj).intValue(), ((Boolean) obj2).booleanValue());
                 return billingManager$lambda$1;
             }
-        }, new Function3() { // from class: com.discord.billing.t
-            @Override // kotlin.jvm.functions.Function3
-            public final Object invoke(Object obj, Object obj2, Object obj3) {
+        }, new Function4() { // from class: com.discord.billing.t
+            @Override // kotlin.jvm.functions.Function4
+            public final Object invoke(Object obj, Object obj2, Object obj3, Object obj4) {
                 Unit billingManager$lambda$2;
-                billingManager$lambda$2 = BillingManagerModule.billingManager$lambda$2(BillingManagerModule.this, (String) obj, (String) obj2, (String) obj3);
+                billingManager$lambda$2 = BillingManagerModule.billingManager$lambda$2(BillingManagerModule.this, (String) obj, (String) obj2, (String) obj3, ((Boolean) obj4).booleanValue());
                 return billingManager$lambda$2;
             }
         });
@@ -81,11 +81,11 @@ public final class BillingManagerModule extends ReactContextBaseJavaModule {
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public static final Unit billingManager$lambda$2(BillingManagerModule billingManagerModule, String purchaseToken, String packageName, String product) {
+    public static final Unit billingManager$lambda$2(BillingManagerModule billingManagerModule, String purchaseToken, String packageName, String product, boolean z10) {
         Intrinsics.checkNotNullParameter(purchaseToken, "purchaseToken");
         Intrinsics.checkNotNullParameter(packageName, "packageName");
         Intrinsics.checkNotNullParameter(product, "product");
-        billingManagerModule.emitEvent(new BillingManagerPurchaseUpdated(purchaseToken, packageName, product));
+        billingManagerModule.emitEvent(new BillingManagerPurchaseUpdated(purchaseToken, packageName, product, z10));
         return Unit.f32556a;
     }
 

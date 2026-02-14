@@ -310,4 +310,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.GameIconSizes = var3;
     var2.GameIconImageSize = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1623, 33, 1297, 671, 6977, 6978, 6979, 6980, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1623, 33, 1297, 671, 6979, 6980, 6981, 6982, 2]);

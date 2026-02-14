@@ -1016,4 +1016,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.canUpsellDoubleTapForEmoji = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 31, 4744, 1310, 1686, 1621, 7088, 660, 1369, 1624, 33, 3109, 3085, 7089, 1384, 3107, 3283, 6628, 7090, 3113, 7092, 1307, 4024, 3216, 1358, 7094, 7095, 1348, 1360, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 31, 4746, 1310, 1686, 1621, 7090, 660, 1369, 1624, 33, 3111, 3087, 7091, 1384, 3109, 3285, 6630, 7092, 3115, 7094, 1307, 4026, 3218, 1358, 7096, 7097, 1348, 1360, 2]);

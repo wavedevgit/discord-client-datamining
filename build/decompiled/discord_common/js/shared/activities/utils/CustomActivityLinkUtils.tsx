@@ -34,13 +34,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.bind(var6)(var4);
     var2.CustomLinkType = var3;
     var1 = function arg0() {
-        _fun93006: for (var _fun93006_ip = 0;;) switch (_fun93006_ip) {
+        _fun93041: for (var _fun93041_ip = 0;;) switch (_fun93041_ip) {
             case 0:
                 var4 = arg0;
                 var0 = null;
                 if (!(var0 != var4)) {
-                    _fun93006_ip = 133;
-                    continue _fun93006
+                    _fun93041_ip = 133;
+                    continue _fun93041
                 }
             case 12:
                 var2 = var4.split;
@@ -56,21 +56,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var3[var2];
                 var2 = '0';
                 if (!(var2 !== var6)) {
-                    _fun93006_ip = 91;
-                    continue _fun93006
+                    _fun93041_ip = 91;
+                    continue _fun93041
                 }
             case 67:
                 var2 = '1';
                 var5 = null;
                 if (!(var2 === var6)) {
-                    _fun93006_ip = 101;
-                    continue _fun93006
+                    _fun93041_ip = 101;
+                    continue _fun93041
                 }
             case 79:
                 var2 = _closure1_slot1;
                 var5 = var2.QUICK;
-                _fun93006_ip = 101;
-                continue _fun93006;
+                _fun93041_ip = 101;
+                continue _fun93041;
             case 91:
                 var1 = _closure1_slot1;
                 var5 = var1.MANAGED;
@@ -78,8 +78,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var0 == var5;
                 var1 = null;
                 if (var2) {
-                    _fun93006_ip = 131;
-                    continue _fun93006
+                    _fun93041_ip = 131;
+                    continue _fun93041
                 }
             case 110:
                 var2 = {};

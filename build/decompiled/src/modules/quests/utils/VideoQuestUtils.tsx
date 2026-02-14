@@ -449,4 +449,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.isVideoQuestProgressing = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3623, 5284, 5286, 660, 5297, 5317, 1235, 5326, 5320, 3916, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3625, 5286, 5288, 660, 5299, 5319, 1235, 5328, 5322, 3918, 2]);

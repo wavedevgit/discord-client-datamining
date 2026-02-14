@@ -487,4 +487,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.shakeUserSettings = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3997, 1410, 660, 1348, 4308, 1235, 1230, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3999, 1410, 660, 1348, 4310, 1235, 1230, 2]);

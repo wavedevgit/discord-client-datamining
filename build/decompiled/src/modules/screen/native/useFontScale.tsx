@@ -62,4 +62,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useFontScale = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [4097, 1465, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [4099, 1465, 2]);

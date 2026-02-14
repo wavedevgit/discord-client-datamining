@@ -444,4 +444,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var3;
     var2.STICKER_PACK_NEW_TIMESTAMP_THRESHOLD = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 15, 17, 18, 1310, 5653, 665, 667, 3604, 22, 566, 807, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 15, 17, 18, 1310, 5655, 665, 667, 3606, 22, 566, 807, 2]);

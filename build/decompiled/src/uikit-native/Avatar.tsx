@@ -1082,4 +1082,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.AvatarSizes = var3;
     var2.getStatusSize = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 5513, 660, 33, 1297, 671, 5514, 5632, 5633, 5517, 5634, 5813, 5810, 5814, 4092, 5824, 5825, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 5515, 660, 33, 1297, 671, 5516, 5634, 5635, 5519, 5636, 5815, 5812, 5816, 4094, 5826, 5827, 2]);

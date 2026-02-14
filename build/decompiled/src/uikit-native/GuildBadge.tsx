@@ -282,4 +282,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var3;
     var2.getGuildBadgeSource = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 660, 33, 7459, 7460, 7515, 7516, 1598, 4092, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 660, 33, 7461, 7462, 7517, 7518, 1598, 4094, 2]);

@@ -333,4 +333,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useHandleUseNow = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 57, 31, 6965, 4605, 1235, 1644, 7031, 5645, 5780, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 57, 31, 6967, 4607, 1235, 1644, 7033, 5647, 5782, 2]);

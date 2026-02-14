@@ -81,4 +81,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.SafetyShieldCenter3dIllustration = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 4709, 6383, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 4711, 6385, 2]);

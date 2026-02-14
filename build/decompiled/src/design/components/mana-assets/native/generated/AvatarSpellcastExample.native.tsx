@@ -81,4 +81,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.AvatarSpellcastExample = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 4709, 6053, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 4711, 6055, 2]);

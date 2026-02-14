@@ -1,24 +1,169 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = dependencyMap;
+    var4 = require;
+    var2 = exports;
+    var5 = dependencyMap;
+    var _closure1_slot0 = var4;
+    var _closure1_slot1 = var5;
+    var0 = global;
+    var7 = var0.Object;
+    var6 = var7.defineProperty;
+    var3 = {};
+    var0 = true;
+    var3.value = var0;
+    var0 = '__esModule';
+    var0 = var6.bind(var7)(var2, var0, var3);
     var0 = 0;
-    var2 = var1[var0];
-    var1 = require;
+    var3 = var5[var0];
     var0 = undefined;
-    var3 = var1.bind(var0)(var2);
-    var2 = var3.registerAsset;
-    var1 = {
-        '__packager_asset': true,
-        'httpServerLocation': '/assets/design/components/LottieIcon/native/generated/lotties',
-        'scales': null,
-        'hash': 'e2ea348445c8a662d796c112d980d074',
-        'name': 'Microphone',
-        'type': 'lottie'
+    var3 = var4.bind(var0)(var3);
+    var3 = var3.useRef;
+    var _closure1_slot2 = var3;
+    var3 = 1;
+    var3 = var5[var3];
+    var3 = var4.bind(var0)(var3);
+    var3 = var3.Animated;
+    var _closure1_slot3 = var3;
+    var3 = function arg0() {
+        var1 = arg0;
+        var _closure2_slot0 = var1;
+        var0 = function arg0() {
+            _fun68740: for (var _fun68740_ip = 0;;) switch (_fun68740_ip) {
+                case 0:
+                    var1 = arg0;
+                    var _closure3_slot0 = var1;
+                    var2 = function() {
+                        _fun68741: for (var _fun68741_ip = 0;;) switch (_fun68741_ip) {
+                            case 0:
+                                var2 = _closure1_slot0;
+                                var1 = _closure1_slot1;
+                                var0 = 2;
+                                var1 = var1[var0];
+                                var0 = undefined;
+                                var3 = var2.bind(var0)(var1);
+                                var2 = var3.findNodeHandle;
+                                var1 = _closure2_slot0;
+                                var1 = var1.current;
+                                var3 = var2.bind(var3)(var1);
+                                if (!var3) {
+                                    _fun68741_ip = 103;
+                                    continue _fun68741
+                                }
+                            case 51:
+                                var4 = _closure3_slot0;
+                                var2 = 'workletEventHandler';
+                                var2 = var2 in var4;
+                                var1 = _closure3_slot0;
+                                if (var2) {
+                                    _fun68741_ip = 86;
+                                    continue _fun68741
+                                }
+                            case 73:
+                                var2 = var1.registerForEvents;
+                                var2 = var2.bind(var1)(var3);
+                                _fun68741_ip = 103;
+                                continue _fun68741;
+                            case 86:
+                                var2 = var1.workletEventHandler;
+                                var1 = var2.registerForEvents;
+                                var1 = var1.bind(var2)(var3);
+                            case 103:
+                                return var0;
+                        }
+                    };
+                    var1 = _closure2_slot0;
+                    var3 = var1.current;
+                    var1 = undefined;
+                    if (var3) {
+                        _fun68740_ip = 48;
+                        continue _fun68740
+                    }
+                case 33:
+                    var3 = global;
+                    var3 = var3.queueMicrotask;
+                    var3 = var3.bind(var1)(var2);
+                    _fun68740_ip = 52;
+                    continue _fun68740;
+                case 48:
+                    var1 = var2.bind(var1)();
+                case 52:
+                    var0 = function() { // Environment: var0
+                        _fun68742: for (var _fun68742_ip = 0;;) switch (_fun68742_ip) {
+                            case 0:
+                                var2 = _closure1_slot0;
+                                var1 = _closure1_slot1;
+                                var0 = 2;
+                                var1 = var1[var0];
+                                var0 = undefined;
+                                var3 = var2.bind(var0)(var1);
+                                var2 = var3.findNodeHandle;
+                                var1 = _closure2_slot0;
+                                var1 = var1.current;
+                                var3 = var2.bind(var3)(var1);
+                                if (!var3) {
+                                    _fun68742_ip = 103;
+                                    continue _fun68742
+                                }
+                            case 51:
+                                var4 = _closure3_slot0;
+                                var2 = 'workletEventHandler';
+                                var2 = var2 in var4;
+                                var1 = _closure3_slot0;
+                                if (var2) {
+                                    _fun68742_ip = 86;
+                                    continue _fun68742
+                                }
+                            case 73:
+                                var2 = var1.unregisterFromEvents;
+                                var2 = var2.bind(var1)(var3);
+                                _fun68742_ip = 103;
+                                continue _fun68742;
+                            case 86:
+                                var2 = var1.workletEventHandler;
+                                var1 = var2.unregisterFromEvents;
+                                var1 = var1.bind(var2)(var3);
+                            case 103:
+                                return var0;
+                        }
+                    };
+                    return var0;
+            }
+        };
+        return var0;
     };
-    var4 = [1];
-    var1.scales = var4;
-    var2 = var2.bind(var3)(var1);
-    var1 = module;
-    var1.exports = var2;
+    var2.useEventHandlerRegistration = var3;
+    var1 = function arg0, arg1() {
+        _fun68743: for (var _fun68743_ip = 0;;) switch (_fun68743_ip) {
+            case 0:
+                var2 = _closure1_slot2;
+                var0 = undefined;
+                var3 = null;
+                var0 = var2.bind(var0)(var3);
+                var2 = var0.current;
+                if (!(var3 === var2)) {
+                    _fun68743_ip = 67;
+                    continue _fun68743
+                }
+            case 25:
+                var1 = _closure1_slot3;
+                var4 = var1.Value;
+                var1 = var4.prototype;
+                var2 = Object.create(var1, {
+                    constructor: {
+                        value: var4
+                    }
+                });
+                var6 = arg0;
+                var5 = arg1;
+                var7 = var2;
+                var1 = new var7[var4](var6, var5, var4);
+                var1 = var1 instanceof Object ? var1 : var2;
+                var0.current = var1;
+            case 67:
+                var0 = var0.current;
+                return var0;
+        }
+    };
+    var2.useAnimatedValue = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1240]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 8560]);

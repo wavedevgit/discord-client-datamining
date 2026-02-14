@@ -53,7 +53,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/markup/Timestamp.native.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun70736: for (var _fun70736_ip = 0;;) switch (_fun70736_ip) {
+        _fun70534: for (var _fun70534_ip = 0;;) switch (_fun70534_ip) {
             case 0:
                 var0 = arg0;
                 var2 = var0.node;
@@ -78,8 +78,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var7.timestamp;
                 var8 = null;
                 if (!(var8 != var7)) {
-                    _fun70736_ip = 101;
-                    continue _fun70736
+                    _fun70534_ip = 101;
+                    continue _fun70534
                 }
             case 98:
                 var6 = var7;
@@ -110,4 +110,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 1297, 671, 8874, 4883, 3153, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 1297, 671, 8845, 4885, 3155, 2]);

@@ -379,4 +379,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.createForumPostActions = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 6722, 3267, 6742, 1208, 3259, 1235, 1689, 6743, 6744, 1417, 3107, 3113, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 6724, 3269, 6744, 1208, 3261, 1235, 1689, 6745, 6746, 1417, 3109, 3115, 2]);

@@ -276,4 +276,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useIsAppLauncherEnabled = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1372, 3096, 483, 791, 566, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1372, 3098, 483, 791, 566, 2]);

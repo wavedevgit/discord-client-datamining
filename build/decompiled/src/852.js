@@ -538,7 +538,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var12 = var0.bind(var10)();
                 var _closure2_slot11 = var12;
                 if (!var12) {
-                    _fun8987_ip = 321;
+                    _fun8987_ip = 324;
                     continue _fun8987
                 }
             case 288:
@@ -550,10 +550,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = var10.hasSpansEnabled;
                 var0 = var0.bind(var10)();
                 if (var0) {
-                    _fun8987_ip = 440;
+                    _fun8987_ip = 447;
                     continue _fun8987
                 }
-            case 321:
+            case 324:
                 var11 = _closure1_slot0;
                 var14 = _closure1_slot1;
                 var0 = 4;
@@ -586,7 +586,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var10 = var11.freezeDscOnSpan;
                 var10 = var10.bind(var11)(var0, var13);
                 return var0;
-            case 440:
+            case 447:
                 var10 = _closure1_slot0;
                 var11 = _closure1_slot1;
                 var0 = var11[var8];
@@ -620,10 +620,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var8 = var10.bind(var4)(var8);
                 var8 = var8.DEBUG_BUILD;
                 if (!var8) {
-                    _fun8987_ip = 629;
+                    _fun8987_ip = 636;
                     continue _fun8987
                 }
-            case 587:
+            case 594:
                 var8 = _closure1_slot0;
                 var10 = _closure1_slot1;
                 var7 = 12;
@@ -633,7 +633,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var8 = var10.log;
                 var7 = '[Tracing] Started span is an idle span';
                 var7 = var8.bind(var10)(var7);
-            case 629:
+            case 636:
                 var _closure2_slot14 = var0;
                 var11 = var2.Proxy;
                 var19 = var0.end;
@@ -1079,12 +1079,12 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var7 = var8.bind(var9)(var7);
                 var6 = var6.disableAutoFinish;
                 if (var6) {
-                    _fun8987_ip = 796;
+                    _fun8987_ip = 803;
                     continue _fun8987
                 }
-            case 792:
+            case 799:
                 var5 = var5.bind(var4)();
-            case 796:
+            case 803:
                 var2 = var2.setTimeout;
                 var1 = function() { // Environment: var1
                     _fun9003: for (var _fun9003_ip = 0;;) switch (_fun9003_ip) {

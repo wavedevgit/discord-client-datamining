@@ -184,4 +184,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getFractionalPremiumQuestRewardName = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3114, 1235, 5296, 3137, 667, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3116, 1235, 5298, 3139, 667, 2]);

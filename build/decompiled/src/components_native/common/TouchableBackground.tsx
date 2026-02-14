@@ -57,7 +57,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'components_native/common/TouchableBackground.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun90419: for (var _fun90419_ip = 0;;) switch (_fun90419_ip) {
+        _fun90444: for (var _fun90444_ip = 0;;) switch (_fun90444_ip) {
             case 0:
                 var5 = arg0;
                 var10 = var5.activeBackgroundColor;
@@ -103,7 +103,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = new Array(1);
                 var2[0] = var1;
                 var1 = function(arg0) { // Environment: var0
-                    _fun90420: for (var _fun90420_ip = 0;;) switch (_fun90420_ip) {
+                    _fun90445: for (var _fun90445_ip = 0;;) switch (_fun90445_ip) {
                         case 0:
                             var3 = _closure2_slot2;
                             var0 = undefined;
@@ -112,8 +112,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var3 = _closure2_slot0;
                             var2 = null;
                             if (!(var2 != var3)) {
-                                _fun90420_ip = 38;
-                                continue _fun90420
+                                _fun90445_ip = 38;
+                                continue _fun90445
                             }
                         case 26:
                             var2 = _closure2_slot0;
@@ -128,13 +128,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = new Array(1);
                 var1[0] = var15;
                 var0 = function(arg0) { // Environment: var0
-                    _fun90421: for (var _fun90421_ip = 0;;) switch (_fun90421_ip) {
+                    _fun90446: for (var _fun90446_ip = 0;;) switch (_fun90446_ip) {
                         case 0:
                             var2 = _closure2_slot1;
                             var1 = null;
                             if (!(var1 != var2)) {
-                                _fun90421_ip = 27;
-                                continue _fun90421
+                                _fun90446_ip = 27;
+                                continue _fun90446
                             }
                         case 13:
                             var3 = _closure2_slot1;
@@ -168,14 +168,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = new Array(2);
                 var7[0] = var9;
                 if (!var8) {
-                    _fun90419_ip = 285;
-                    continue _fun90419
+                    _fun90444_ip = 285;
+                    continue _fun90444
                 }
             case 262:
                 var9 = {};
                 if (!(var12 == var10)) {
-                    _fun90419_ip = 278;
-                    continue _fun90419
+                    _fun90444_ip = 278;
+                    continue _fun90444
                 }
             case 268:
                 var11 = var11.default;

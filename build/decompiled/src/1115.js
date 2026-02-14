@@ -594,7 +594,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = 'js_profile';
                 var0 = var0 in var3;
                 if (var0) {
-                    _fun12253_ip = 963;
+                    _fun12253_ip = 967;
                     continue _fun12253
                 }
             case 23:
@@ -678,10 +678,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var7 = var2.start_timestamp;
                 var14 = var11.Date;
                 if (var7) {
-                    _fun12253_ip = 224;
+                    _fun12253_ip = 228;
                     continue _fun12253
                 }
-            case 192:
+            case 196:
                 var7 = var14.prototype;
                 var11 = Object.create(var7, {
                     constructor: {
@@ -693,9 +693,9 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var11 = var7 instanceof Object ? var7 : var11;
                 var7 = var11.toISOString;
                 var7 = var7.bind(var11)();
-                _fun12253_ip = 270;
+                _fun12253_ip = 274;
                 continue _fun12253;
-            case 224:
+            case 228:
                 var12 = var2.start_timestamp;
                 var11 = 1000;
                 var18 = var11 * var12;
@@ -710,23 +710,23 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var12 = var11 instanceof Object ? var11 : var12;
                 var11 = var12.toISOString;
                 var7 = var11.bind(var12)();
-            case 270:
+            case 274:
                 var0.timestamp = var7;
                 var7 = var2.release;
                 if (var7) {
-                    _fun12253_ip = 287;
+                    _fun12253_ip = 291;
                     continue _fun12253
                 }
-            case 284:
+            case 288:
                 var7 = var10;
-            case 287:
+            case 291:
                 var0.release = var7;
                 var7 = var2.environment;
                 if (var7) {
-                    _fun12253_ip = 331;
+                    _fun12253_ip = 335;
                     continue _fun12253
                 }
-            case 301:
+            case 305:
                 var12 = _closure1_slot0;
                 var14 = _closure1_slot1;
                 var11 = 2;
@@ -734,345 +734,345 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var12 = var12.bind(var13)(var11);
                 var11 = var12.getDefaultEnvironment;
                 var7 = var11.bind(var12)();
-            case 331:
+            case 335:
                 var0.environment = var7;
                 var7 = {};
                 var11 = var2.contexts;
                 var12 = undefined;
                 if (!(var15 !== var11)) {
-                    _fun12253_ip = 362;
+                    _fun12253_ip = 366;
                     continue _fun12253
                 }
-            case 350:
+            case 354:
                 var12 = undefined;
                 if (!(var13 !== var11)) {
-                    _fun12253_ip = 362;
+                    _fun12253_ip = 366;
                     continue _fun12253
                 }
-            case 356:
+            case 360:
                 var12 = var11.os;
-            case 362:
+            case 366:
                 var11 = undefined;
                 if (!(var15 !== var12)) {
-                    _fun12253_ip = 379;
+                    _fun12253_ip = 383;
                     continue _fun12253
                 }
-            case 368:
+            case 372:
                 var11 = undefined;
                 if (!(var13 !== var12)) {
-                    _fun12253_ip = 379;
+                    _fun12253_ip = 383;
                     continue _fun12253
                 }
-            case 374:
+            case 378:
                 var11 = var12.name;
-            case 379:
+            case 383:
                 if (var11) {
-                    _fun12253_ip = 385;
+                    _fun12253_ip = 389;
                     continue _fun12253
                 }
-            case 382:
+            case 386:
                 var11 = var10;
-            case 385:
+            case 389:
                 var7.name = var11;
                 var11 = var2.contexts;
                 var12 = undefined;
                 if (!(var15 !== var11)) {
-                    _fun12253_ip = 413;
+                    _fun12253_ip = 417;
                     continue _fun12253
                 }
-            case 401:
+            case 405:
                 var12 = undefined;
                 if (!(var13 !== var11)) {
-                    _fun12253_ip = 413;
+                    _fun12253_ip = 417;
                     continue _fun12253
                 }
-            case 407:
+            case 411:
                 var12 = var11.os;
-            case 413:
+            case 417:
                 var11 = undefined;
                 if (!(var15 !== var12)) {
-                    _fun12253_ip = 431;
+                    _fun12253_ip = 435;
                     continue _fun12253
                 }
-            case 419:
+            case 423:
                 var11 = undefined;
                 if (!(var13 !== var12)) {
-                    _fun12253_ip = 431;
+                    _fun12253_ip = 435;
                     continue _fun12253
                 }
-            case 425:
+            case 429:
                 var11 = var12.version;
-            case 431:
+            case 435:
                 if (var11) {
-                    _fun12253_ip = 437;
+                    _fun12253_ip = 441;
                     continue _fun12253
                 }
-            case 434:
+            case 438:
                 var11 = var10;
-            case 437:
+            case 441:
                 var7.version = var11;
                 var11 = var2.contexts;
                 var12 = undefined;
                 if (!(var15 !== var11)) {
-                    _fun12253_ip = 466;
+                    _fun12253_ip = 470;
                     continue _fun12253
                 }
-            case 454:
+            case 458:
                 var12 = undefined;
                 if (!(var13 !== var11)) {
-                    _fun12253_ip = 466;
+                    _fun12253_ip = 470;
                     continue _fun12253
                 }
-            case 460:
+            case 464:
                 var12 = var11.os;
-            case 466:
+            case 470:
                 var11 = undefined;
                 if (!(var15 !== var12)) {
-                    _fun12253_ip = 484;
+                    _fun12253_ip = 488;
                     continue _fun12253
                 }
-            case 472:
+            case 476:
                 var11 = undefined;
                 if (!(var13 !== var12)) {
-                    _fun12253_ip = 484;
+                    _fun12253_ip = 488;
                     continue _fun12253
                 }
-            case 478:
+            case 482:
                 var11 = var12.build;
-            case 484:
+            case 488:
                 if (var11) {
-                    _fun12253_ip = 490;
+                    _fun12253_ip = 494;
                     continue _fun12253
                 }
-            case 487:
+            case 491:
                 var11 = var10;
-            case 490:
+            case 494:
                 var7.build_number = var11;
                 var0.os = var7;
                 var7 = {};
                 var12 = var2.contexts;
                 var11 = undefined;
                 if (!(var15 !== var12)) {
-                    _fun12253_ip = 526;
+                    _fun12253_ip = 530;
                     continue _fun12253
                 }
-            case 514:
+            case 518:
                 var11 = undefined;
                 if (!(var13 !== var12)) {
-                    _fun12253_ip = 526;
+                    _fun12253_ip = 530;
                     continue _fun12253
                 }
-            case 520:
+            case 524:
                 var11 = var12.device;
-            case 526:
+            case 530:
                 if (!var11) {
-                    _fun12253_ip = 547;
+                    _fun12253_ip = 551;
                     continue _fun12253
                 }
-            case 529:
+            case 533:
                 var12 = var2.contexts;
                 var12 = var12.device;
                 var11 = var12.locale;
-            case 547:
+            case 551:
                 if (var11) {
-                    _fun12253_ip = 553;
+                    _fun12253_ip = 557;
                     continue _fun12253
                 }
-            case 550:
+            case 554:
                 var11 = var10;
-            case 553:
+            case 557:
                 var7.locale = var11;
                 var11 = var2.contexts;
                 var12 = undefined;
                 if (!(var15 !== var11)) {
-                    _fun12253_ip = 582;
+                    _fun12253_ip = 586;
                     continue _fun12253
                 }
-            case 570:
+            case 574:
                 var12 = undefined;
                 if (!(var13 !== var11)) {
-                    _fun12253_ip = 582;
+                    _fun12253_ip = 586;
                     continue _fun12253
                 }
-            case 576:
+            case 580:
                 var12 = var11.device;
-            case 582:
+            case 586:
                 var11 = undefined;
                 if (!(var15 !== var12)) {
-                    _fun12253_ip = 600;
+                    _fun12253_ip = 604;
                     continue _fun12253
                 }
-            case 588:
+            case 592:
                 var11 = undefined;
                 if (!(var13 !== var12)) {
-                    _fun12253_ip = 600;
+                    _fun12253_ip = 604;
                     continue _fun12253
                 }
-            case 594:
+            case 598:
                 var11 = var12.model;
-            case 600:
+            case 604:
                 if (var11) {
-                    _fun12253_ip = 606;
+                    _fun12253_ip = 610;
                     continue _fun12253
                 }
-            case 603:
+            case 607:
                 var11 = var10;
-            case 606:
+            case 610:
                 var7.model = var11;
                 var11 = var2.contexts;
                 var12 = undefined;
                 if (!(var15 !== var11)) {
-                    _fun12253_ip = 635;
+                    _fun12253_ip = 639;
                     continue _fun12253
                 }
-            case 623:
+            case 627:
                 var12 = undefined;
                 if (!(var13 !== var11)) {
-                    _fun12253_ip = 635;
+                    _fun12253_ip = 639;
                     continue _fun12253
                 }
-            case 629:
+            case 633:
                 var12 = var11.device;
-            case 635:
+            case 639:
                 var11 = undefined;
                 if (!(var15 !== var12)) {
-                    _fun12253_ip = 653;
+                    _fun12253_ip = 657;
                     continue _fun12253
                 }
-            case 641:
+            case 645:
                 var11 = undefined;
                 if (!(var13 !== var12)) {
-                    _fun12253_ip = 653;
+                    _fun12253_ip = 657;
                     continue _fun12253
                 }
-            case 647:
+            case 651:
                 var11 = var12.manufacturer;
-            case 653:
+            case 657:
                 if (var11) {
-                    _fun12253_ip = 659;
+                    _fun12253_ip = 663;
                     continue _fun12253
                 }
-            case 656:
+            case 660:
                 var11 = var10;
-            case 659:
+            case 663:
                 var7.manufacturer = var11;
                 var11 = var2.contexts;
                 var12 = undefined;
                 if (!(var15 !== var11)) {
-                    _fun12253_ip = 688;
+                    _fun12253_ip = 692;
                     continue _fun12253
                 }
-            case 676:
+            case 680:
                 var12 = undefined;
                 if (!(var13 !== var11)) {
-                    _fun12253_ip = 688;
+                    _fun12253_ip = 692;
                     continue _fun12253
                 }
-            case 682:
+            case 686:
                 var12 = var11.device;
-            case 688:
+            case 692:
                 var11 = undefined;
                 if (!(var15 !== var12)) {
-                    _fun12253_ip = 706;
+                    _fun12253_ip = 710;
                     continue _fun12253
                 }
-            case 694:
+            case 698:
                 var11 = undefined;
                 if (!(var13 !== var12)) {
-                    _fun12253_ip = 706;
+                    _fun12253_ip = 710;
                     continue _fun12253
                 }
-            case 700:
+            case 704:
                 var11 = var12.arch;
-            case 706:
+            case 710:
                 if (var11) {
-                    _fun12253_ip = 712;
+                    _fun12253_ip = 716;
                     continue _fun12253
                 }
-            case 709:
+            case 713:
                 var11 = var10;
-            case 712:
+            case 716:
                 var7.architecture = var11;
                 var11 = var2.contexts;
                 var12 = undefined;
                 if (!(var15 !== var11)) {
-                    _fun12253_ip = 741;
+                    _fun12253_ip = 745;
                     continue _fun12253
                 }
-            case 729:
+            case 733:
                 var12 = undefined;
                 if (!(var13 !== var11)) {
-                    _fun12253_ip = 741;
+                    _fun12253_ip = 745;
                     continue _fun12253
                 }
-            case 735:
+            case 739:
                 var12 = var11.device;
-            case 741:
+            case 745:
                 var11 = undefined;
                 if (!(var15 !== var12)) {
-                    _fun12253_ip = 759;
+                    _fun12253_ip = 763;
                     continue _fun12253
                 }
-            case 747:
+            case 751:
                 var11 = undefined;
                 if (!(var13 !== var12)) {
-                    _fun12253_ip = 759;
+                    _fun12253_ip = 763;
                     continue _fun12253
                 }
-            case 753:
+            case 757:
                 var11 = var12.simulator;
-            case 759:
+            case 763:
                 if (var11) {
-                    _fun12253_ip = 764;
+                    _fun12253_ip = 768;
                     continue _fun12253
                 }
-            case 762:
+            case 766:
                 var11 = false;
-            case 764:
+            case 768:
                 var7.is_emulator = var11;
                 var0.device = var7;
                 var7 = {};
                 var11 = var2.transaction;
                 if (var11) {
-                    _fun12253_ip = 788;
+                    _fun12253_ip = 792;
                     continue _fun12253
                 }
-            case 785:
+            case 789:
                 var11 = var10;
-            case 788:
+            case 792:
                 var7.name = var11;
                 var11 = var2.event_id;
                 if (var11) {
-                    _fun12253_ip = 804;
+                    _fun12253_ip = 808;
                     continue _fun12253
                 }
-            case 801:
+            case 805:
                 var11 = var10;
-            case 804:
+            case 808:
                 var7.id = var11;
                 var7.trace_id = var9;
                 var11 = var3.transaction;
                 var9 = undefined;
                 if (!(var15 !== var11)) {
-                    _fun12253_ip = 837;
+                    _fun12253_ip = 841;
                     continue _fun12253
                 }
-            case 825:
+            case 829:
                 var9 = undefined;
                 if (!(var13 !== var11)) {
-                    _fun12253_ip = 837;
+                    _fun12253_ip = 841;
                     continue _fun12253
                 }
-            case 831:
+            case 835:
                 var9 = var11.active_thread_id;
-            case 837:
+            case 841:
                 if (var9) {
-                    _fun12253_ip = 843;
+                    _fun12253_ip = 847;
                     continue _fun12253
                 }
-            case 840:
+            case 844:
                 var9 = var10;
-            case 843:
+            case 847:
                 var7.active_thread_id = var9;
                 var0.transaction = var7;
                 var7 = {};
@@ -1090,32 +1090,32 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var14 = var3.debug_meta;
                 var8 = undefined;
                 if (!(var15 !== var14)) {
-                    _fun12253_ip = 927;
+                    _fun12253_ip = 931;
                     continue _fun12253
                 }
-            case 915:
+            case 919:
                 var8 = undefined;
                 if (!(var8 !== var14)) {
-                    _fun12253_ip = 927;
+                    _fun12253_ip = 931;
                     continue _fun12253
                 }
-            case 921:
+            case 925:
                 var8 = var14.images;
-            case 927:
+            case 931:
                 if (var8) {
-                    _fun12253_ip = 934;
+                    _fun12253_ip = 938;
                     continue _fun12253
                 }
-            case 930:
-                var8 = new Array(0);
             case 934:
+                var8 = new Array(0);
+            case 938:
                 var8 = var12.bind(var13)(var8);
                 var8 = var10.bind(var11)(var9, var8);
                 var7.images = var8;
                 var0.debug_meta = var7;
                 var0 = var5.bind(var6)(var1, var0);
                 return var0;
-            case 963:
+            case 967:
                 var1 = _closure1_slot4;
                 var0 = undefined;
                 var0 = var1.bind(var0)(var4, var3, var2);

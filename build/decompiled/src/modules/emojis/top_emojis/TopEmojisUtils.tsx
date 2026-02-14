@@ -101,4 +101,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.maybeFetchTopEmojisByGuild = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1621, 4744, 4747, 7082, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1621, 4746, 4749, 7084, 2]);

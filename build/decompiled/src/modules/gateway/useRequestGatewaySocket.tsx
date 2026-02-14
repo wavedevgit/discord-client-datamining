@@ -46,12 +46,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2[0] = var6;
         var2[1] = var5;
         var1 = function() { // Environment: var1
-            _fun100435: for (var _fun100435_ip = 0;;) switch (_fun100435_ip) {
+            _fun100476: for (var _fun100476_ip = 0;;) switch (_fun100476_ip) {
                 case 0:
                     var1 = _closure2_slot1;
                     if (var1) {
-                        _fun100435_ip = 14;
-                        continue _fun100435
+                        _fun100476_ip = 14;
+                        continue _fun100476
                     }
                 case 10:
                     var1 = undefined;
@@ -86,4 +86,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useRequestGatewaySocket = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 5343, 659, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 5345, 659, 2]);

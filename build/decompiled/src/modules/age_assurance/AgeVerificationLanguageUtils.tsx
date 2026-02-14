@@ -22,7 +22,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/age_assurance/AgeVerificationLanguageUtils.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function arg0, arg1() {
-        _fun41262: for (var _fun41262_ip = 0;;) switch (_fun41262_ip) {
+        _fun41260: for (var _fun41260_ip = 0;;) switch (_fun41260_ip) {
             case 0:
                 var0 = arg0;
                 var1 = arg1;
@@ -40,8 +40,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var3.bind(var4)(var2);
                 var2 = var2.enabled;
                 if (!var2) {
-                    _fun41262_ip = 68;
-                    continue _fun41262
+                    _fun41260_ip = 68;
+                    continue _fun41260
                 }
             case 65:
                 var0 = var1;
@@ -51,7 +51,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getUpdatedAgeVerificationString = var3;
     var1 = function arg0, arg1() {
-        _fun41263: for (var _fun41263_ip = 0;;) switch (_fun41263_ip) {
+        _fun41261: for (var _fun41261_ip = 0;;) switch (_fun41261_ip) {
             case 0:
                 var0 = arg0;
                 var1 = arg1;
@@ -69,8 +69,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var3.bind(var4)(var2);
                 var2 = var2.enabled;
                 if (!var2) {
-                    _fun41263_ip = 68;
-                    continue _fun41263
+                    _fun41261_ip = 68;
+                    continue _fun41261
                 }
             case 65:
                 var0 = var1;
@@ -80,4 +80,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useUpdatedAgeVerificationString = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [4560, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [4562, 2]);

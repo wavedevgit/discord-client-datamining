@@ -622,4 +622,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.useHasFetchedColors = var3;
     var2.useAvatarColors = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 5, 31, 1298, 629, 803, 1461, 3244, 566, 4627, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 5, 31, 1298, 629, 803, 1461, 3246, 566, 4629, 2]);

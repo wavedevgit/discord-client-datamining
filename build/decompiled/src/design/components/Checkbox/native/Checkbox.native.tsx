@@ -229,4 +229,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.Checkbox = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 33, 1297, 1235, 4086, 5500, 3938, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 33, 1297, 1235, 4088, 5502, 3940, 2]);

@@ -9,8 +9,8 @@ sdkInfo:
 packageInfo:
   forcedPackageId: 127
 versionInfo:
-  versionCode: 317207
-  versionName: 317.7 - Alpha
+  versionCode: 317208
+  versionName: 317.8 - Alpha
 doNotCompress:
 - arsc
 - jpg
@@ -703,6 +703,7 @@ doNotCompress:
 - res/raw/modules_activity_privacy_activityprivacycompiledmessages.jsona
 - res/raw/modules_application_account_linking_accountlinkingcompiledmessages.jsona
 - res/raw/modules_application_account_linking_applicationaccountlinkingcompiledmessages.jsona
+- res/raw/modules_call_feedback_tutorials_web_callfeedbacktutorialscompiledmessages.jsona
 - res/raw/modules_checkout_messages_checkoutcompiledmessages.jsona
 - res/raw/modules_checkpoint_checkpointcompiledmessages.jsona
 - res/raw/modules_collectibles_web_shopexternalskuscompiledmessages.jsona

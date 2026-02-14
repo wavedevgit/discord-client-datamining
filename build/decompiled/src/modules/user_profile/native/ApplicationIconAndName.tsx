@@ -61,7 +61,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/user_profile/native/ApplicationIconAndName.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun91384: for (var _fun91384_ip = 0;;) switch (_fun91384_ip) {
+        _fun91409: for (var _fun91409_ip = 0;;) switch (_fun91409_ip) {
             case 0:
                 var0 = arg0;
                 var9 = var0.application;
@@ -70,8 +70,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var0.useComma;
                 var3 = undefined;
                 if (!(var8 === var3)) {
-                    _fun91384_ip = 34;
-                    continue _fun91384
+                    _fun91409_ip = 34;
+                    continue _fun91409
                 }
             case 32:
                 var8 = false;
@@ -100,8 +100,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = '';
                 var13 = var11;
                 if (!var15) {
-                    _fun91384_ip = 132;
-                    continue _fun91384
+                    _fun91409_ip = 132;
+                    continue _fun91409
                 }
             case 129:
                 var13 = var14;
@@ -126,8 +126,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var9.name;
                 var9 = var11;
                 if (!var8) {
-                    _fun91384_ip = 219;
-                    continue _fun91384
+                    _fun91409_ip = 219;
+                    continue _fun91409
                 }
             case 213:
                 var9 = ', ';
@@ -146,4 +146,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 1297, 671, 4092, 3938, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 1297, 671, 4094, 3940, 2]);

@@ -130,4 +130,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.doesGameHaveRichPresence = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3454, 1650, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3456, 1650, 2]);

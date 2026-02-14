@@ -5,122 +5,58 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = dependencyMap;
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var3;
-    var0 = global;
-    var7 = var0.Object;
-    var6 = var7.defineProperty;
-    var5 = {};
-    var0 = true;
-    var5.value = var0;
-    var0 = '__esModule';
-    var0 = var6.bind(var7)(var2, var0, var5);
     var0 = 0;
     var3 = var3[var0];
     var0 = undefined;
-    var4 = var4.bind(var0)(var3);
-    var3 = var4.defineIntegration;
-    var1 = function() { // Environment: var1
-        var0 = {};
-        var1 = 'ModuleMetadata';
-        var0.name = var1;
-        var1 = function arg0() {
-            var3 = arg0;
-            var _closure3_slot0 = var3;
-            var4 = var3.on;
-            var2 = 'beforeEnvelope';
-            var1 = function(arg0) { // Environment: var0
-                var2 = _closure1_slot0;
-                var1 = _closure1_slot1;
-                var0 = 1;
-                var1 = var1[var0];
-                var0 = undefined;
-                var4 = var2.bind(var0)(var1);
-                var3 = var4.forEachEnvelopeItem;
-                var2 = arg0;
-                var1 = function(arg0, arg1) { // Environment: var1
-                    _fun100156: for (var _fun100156_ip = 0;;) switch (_fun100156_ip) {
-                        case 0:
-                            var2 = arg0;
-                            var1 = 'event';
-                            var0 = arg1;
-                            if (!(var1 === var0)) {
-                                _fun100156_ip = 90;
-                                continue _fun100156
-                            }
-                        case 14:
-                            var0 = global;
-                            var1 = var0.Array;
-                            var0 = var1.isArray;
-                            var0 = var0.bind(var1)(var2);
-                            var4 = undefined;
-                            var1 = undefined;
-                            if (!var0) {
-                                _fun100156_ip = 46;
-                                continue _fun100156
-                            }
-                        case 39:
-                            var0 = 1;
-                            var1 = var2[var0];
-                        case 46:
-                            if (!var1) {
-                                _fun100156_ip = 90;
-                                continue _fun100156
-                            }
-                        case 49:
-                            var3 = _closure1_slot0;
-                            var5 = _closure1_slot1;
-                            var0 = 2;
-                            var0 = var5[var0];
-                            var3 = var3.bind(var4)(var0);
-                            var0 = var3.stripMetadataFromStackFrames;
-                            var0 = var0.bind(var3)(var1);
-                            var0 = 1;
-                            var2[var0] = var1;
-                        case 90:
-                            var0 = undefined;
-                            return var0;
-                    }
-                };
-                var1 = var3.bind(var4)(var2, var1);
-                return var0;
-            };
-            var1 = var4.bind(var3)(var2, var1);
-            var2 = var3.on;
-            var1 = 'applyFrameMetadata';
-            var0 = function(arg0) { // Environment: var0
-                _fun100157: for (var _fun100157_ip = 0;;) switch (_fun100157_ip) {
-                    case 0:
-                        var3 = arg0;
-                        var0 = var3.type;
-                        if (var0) {
-                            _fun100157_ip = 71;
-                            continue _fun100157
-                        }
-                    case 11:
-                        var1 = _closure3_slot0;
-                        var0 = var1.getOptions;
-                        var0 = var0.bind(var1)();
-                        var2 = var0.stackParser;
-                        var4 = _closure1_slot0;
-                        var1 = _closure1_slot1;
-                        var0 = 2;
-                        var1 = var1[var0];
-                        var0 = undefined;
-                        var1 = var4.bind(var0)(var1);
-                        var0 = var1.addMetadataToStackFrames;
-                        var0 = var0.bind(var1)(var2, var3);
-                    case 71:
-                        var0 = undefined;
-                        return var0;
-                }
-            };
-            var0 = var2.bind(var3)(var1, var0);
-            var0 = undefined;
+    var3 = var4.bind(var0)(var3);
+    var _closure1_slot2 = var3;
+    var3 = global;
+    var6 = var3.Object;
+    var5 = var6.defineProperty;
+    var4 = {};
+    var3 = true;
+    var4.value = var3;
+    var3 = '__esModule';
+    var3 = var5.bind(var6)(var2, var3, var4);
+    var1 = function() {
+        var0 = global;
+        var2 = var0.Object;
+        var1 = var2.entries;
+        var4 = _closure1_slot0;
+        var3 = _closure1_slot1;
+        var0 = 1;
+        var3 = var3[var0];
+        var0 = undefined;
+        var3 = var4.bind(var0)(var3);
+        var0 = var3.getTraceData;
+        var0 = var0.bind(var3)();
+        var2 = var1.bind(var2)(var0);
+        var1 = var2.map;
+        var0 = function(arg0) { // Environment: var0
+            var3 = _closure1_slot2;
+            var2 = undefined;
+            var1 = arg0;
+            var0 = 2;
+            var1 = var3.bind(var2)(var1, var0);
+            var0 = 0;
+            var9 = var1[var0];
+            var0 = 1;
+            var7 = var1[var0];
+            var0 = global;
+            var0 = var0.HermesInternal;
+            var3 = var0.concat;
+            var10 = '<meta name="';
+            var8 = '" content="';
+            var6 = '"/>';
+            var0 = var10[var3](var9, var8, var7, var6, var5);
             return var0;
         };
-        var0.setup = var1;
+        var2 = var1.bind(var2)(var0);
+        var1 = var2.join;
+        var0 = '\n';
+        var0 = var1.bind(var2)(var0);
         return var0;
     };
-    var1 = var3.bind(var4)(var1);
-    var2.moduleMetadataIntegration = var1;
+    var2.getTraceMetaTags = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [13004, 12915, 13021]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 13019]);

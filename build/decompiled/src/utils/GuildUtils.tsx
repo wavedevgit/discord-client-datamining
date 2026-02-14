@@ -404,4 +404,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var3;
     var2.getGuildNameSuggestion = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1410, 1621, 1386, 667, 4683, 3240, 1235, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1410, 1621, 1386, 667, 4685, 3242, 1235, 2]);

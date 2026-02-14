@@ -318,4 +318,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.createStageRaiseHandSystemMessage = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [4251, 1372, 3096, 660, 1235, 1689, 6753, 21, 4244, 6754, 6755, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [4253, 1372, 3098, 660, 1235, 1689, 6755, 21, 4246, 6756, 6757, 2]);

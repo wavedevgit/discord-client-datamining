@@ -5,7 +5,7 @@ import kotlin.coroutines.Continuation;
 import org.jetbrains.annotations.NotNull;
 /* JADX INFO: Access modifiers changed from: package-private */
 @Metadata(k = 3, mv = {2, 1, 0}, xi = 48)
-@kotlin.coroutines.jvm.internal.e(c = "com.discord.billing.BillingManager", f = "BillingManager.kt", l = {266}, m = "suspendUntilReady")
+@kotlin.coroutines.jvm.internal.e(c = "com.discord.billing.BillingManager", f = "BillingManager.kt", l = {271}, m = "suspendUntilReady")
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 public final class BillingManager$suspendUntilReady$1 extends kotlin.coroutines.jvm.internal.d {
     Object L$0;

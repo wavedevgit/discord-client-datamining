@@ -1527,7 +1527,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var4.autoInitializeNativeSdk = var8;
                             var8 = _closure1_slot16;
                             var4.beforeSend = var8;
-                            var8 = '5167';
+                            var8 = '5170';
                             var4.dist = var8;
                             var4.dsn = var10;
                             var4.environment = var2;
@@ -1537,7 +1537,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var4.sampleRate = var2;
                             var2 = _closure1_slot11;
                             var4.ignoreErrors = var2;
-                            var2 = 'discord_android@317.7.0-2+317207';
+                            var2 = 'discord_android@317.8.0-2+317208';
                             var4.release = var2;
                             var10 = _closure1_slot7;
                             var2 = new Array(1);
@@ -1670,4 +1670,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.initSentry = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 27, 660, 483, 811, 3, 1210, 1221, 796, 12676, 4269, 4274, 12677, 1208, 1594, 4270, 478, 1309, 12276, 657, 3908, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 27, 660, 483, 811, 3, 1210, 1221, 796, 12681, 4271, 4276, 12682, 1208, 1594, 4272, 478, 1309, 12282, 657, 3910, 2]);

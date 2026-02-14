@@ -3065,4 +3065,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getChannelPermissionSpecMap = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 1235, 5979, 1689, 5980, 5981, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 1235, 5981, 1689, 5982, 5983, 2]);

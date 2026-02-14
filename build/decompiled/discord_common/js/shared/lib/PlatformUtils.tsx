@@ -1,7 +1,7 @@
 // ../discord_common/js/shared/lib/PlatformUtils.tsx
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun29101: for (var _fun29101_ip = 0;;) switch (_fun29101_ip) {
+    _fun29105: for (var _fun29105_ip = 0;;) switch (_fun29105_ip) {
         case 0:
             var9 = metroImportDefault;
             var2 = exports;
@@ -42,73 +42,73 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var0 = undefined;
             var4 = undefined;
             if (var5) {
-                _fun29101_ip = 151;
-                continue _fun29101
+                _fun29105_ip = 153;
+                continue _fun29105
             }
-        case 130:
+        case 132:
             var1 = var1.navigator;
             var5 = var8 == var1;
             var4 = undefined;
             if (var5) {
-                _fun29101_ip = 151;
-                continue _fun29101
+                _fun29105_ip = 153;
+                continue _fun29105
             }
-        case 145:
+        case 147:
             var4 = var1.platform;
-        case 151:
+        case 153:
             var1 = 'MacIntel';
             var1 = var1 === var4;
             if (!var1) {
-                _fun29101_ip = 204;
-                continue _fun29101
+                _fun29105_ip = 206;
+                continue _fun29105
             }
-        case 164:
+        case 166:
             var5 = var3.window;
             var6 = var8 == var5;
             var4 = undefined;
             if (var6) {
-                _fun29101_ip = 200;
-                continue _fun29101
+                _fun29105_ip = 202;
+                continue _fun29105
             }
-        case 179:
+        case 181:
             var5 = var5.navigator;
             var6 = var8 == var5;
             var4 = undefined;
             if (var6) {
-                _fun29101_ip = 200;
-                continue _fun29101
+                _fun29105_ip = 202;
+                continue _fun29105
             }
-        case 194:
+        case 196:
             var4 = var5.standalone;
-        case 200:
+        case 202:
             var1 = var0 !== var4;
-        case 204:
+        case 206:
             if (!var1) {
-                _fun29101_ip = 250;
-                continue _fun29101
+                _fun29105_ip = 252;
+                continue _fun29105
             }
-        case 207:
+        case 209:
             var3 = var3.window;
             var5 = var8 == var3;
             var4 = undefined;
             if (var5) {
-                _fun29101_ip = 243;
-                continue _fun29101
+                _fun29105_ip = 245;
+                continue _fun29105
             }
-        case 222:
+        case 224:
             var3 = var3.navigator;
             var5 = var8 == var3;
             var4 = undefined;
             if (var5) {
-                _fun29101_ip = 243;
-                continue _fun29101
+                _fun29105_ip = 245;
+                continue _fun29105
             }
-        case 237:
+        case 239:
             var4 = var3.maxTouchPoints;
-        case 243:
+        case 245:
             var3 = 1;
             var1 = var4 > var3;
-        case 250:
+        case 252:
             var5 = var11.has;
             var6 = 0;
             var3 = var7[var6];
@@ -118,100 +118,100 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var4 = '';
             var3 = var4;
             if (!var13) {
-                _fun29101_ip = 289;
-                continue _fun29101
+                _fun29105_ip = 291;
+                continue _fun29105
             }
-        case 286:
+        case 288:
             var3 = var12;
-        case 289:
+        case 291:
             var5 = var5.bind(var11)(var3);
             if (var5) {
-                _fun29101_ip = 300;
-                continue _fun29101
+                _fun29105_ip = 302;
+                continue _fun29105
             }
-        case 297:
+        case 299:
             var5 = var1;
-        case 300:
+        case 302:
             var1 = !var5;
             if (!var1) {
-                _fun29101_ip = 374;
-                continue _fun29101
+                _fun29105_ip = 376;
+                continue _fun29105
             }
-        case 306:
+        case 308:
             var3 = var10.has;
             var11 = var7[var6];
             var11 = var9.bind(var0)(var11);
             var12 = var8 == var11;
             var11 = undefined;
             if (var12) {
-                _fun29101_ip = 359;
-                continue _fun29101
+                _fun29105_ip = 361;
+                continue _fun29105
             }
-        case 329:
+        case 331:
             var12 = var7[var6];
             var12 = var9.bind(var0)(var12);
             var12 = var12.os;
             var13 = var8 == var12;
             var11 = undefined;
             if (var13) {
-                _fun29101_ip = 359;
-                continue _fun29101
+                _fun29105_ip = 361;
+                continue _fun29105
             }
-        case 353:
+        case 355:
             var11 = var12.family;
-        case 359:
+        case 361:
             var12 = var8 != var11;
             if (!var12) {
-                _fun29101_ip = 369;
-                continue _fun29101
+                _fun29105_ip = 371;
+                continue _fun29105
             }
-        case 366:
+        case 368:
             var4 = var11;
-        case 369:
+        case 371:
             var1 = var3.bind(var10)(var4);
-        case 374:
+        case 376:
             var3 = var7[var6];
             var3 = var9.bind(var0)(var3);
             var3 = var8 == var3;
             var4 = undefined;
             if (var3) {
-                _fun29101_ip = 422;
-                continue _fun29101
+                _fun29105_ip = 424;
+                continue _fun29105
             }
-        case 392:
+        case 394:
             var3 = var7[var6];
             var3 = var9.bind(var0)(var3);
             var3 = var3.os;
             var10 = var8 == var3;
             var4 = undefined;
             if (var10) {
-                _fun29101_ip = 422;
-                continue _fun29101
+                _fun29105_ip = 424;
+                continue _fun29105
             }
-        case 416:
+        case 418:
             var4 = var3.family;
-        case 422:
+        case 424:
             var3 = var7[var6];
             var3 = var9.bind(var0)(var3);
             var10 = var8 == var3;
             var3 = undefined;
             if (var10) {
-                _fun29101_ip = 470;
-                continue _fun29101
+                _fun29105_ip = 472;
+                continue _fun29105
             }
-        case 440:
+        case 442:
             var6 = var7[var6];
             var6 = var9.bind(var0)(var6);
             var6 = var6.os;
             var8 = var8 == var6;
             var3 = undefined;
             if (var8) {
-                _fun29101_ip = 470;
-                continue _fun29101
+                _fun29105_ip = 472;
+                continue _fun29105
             }
-        case 464:
+        case 466:
             var3 = var6.family;
-        case 470:
+        case 472:
             var6 = 1;
             var7 = var7[var6];
             var6 = require;

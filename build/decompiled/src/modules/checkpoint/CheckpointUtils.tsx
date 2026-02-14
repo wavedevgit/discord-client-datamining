@@ -280,4 +280,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getCheckpointPowerBarUnits = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3526, 4229, 1235, 6931, 6932, 6933, 6934, 6935, 6936, 6937, 6938, 6939, 6940, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3528, 4231, 1235, 6933, 6934, 6935, 6936, 6937, 6938, 6939, 6940, 6941, 6942, 2]);

@@ -1,54 +1,20 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var5 = require;
-    var2 = exports;
-    var7 = dependencyMap;
-    var4 = global;
-    var8 = var4.Object;
-    var6 = var8.defineProperty;
-    var1 = {};
-    var13 = true;
-    var1.value = var13;
-    var0 = '__esModule';
-    var0 = var6.bind(var8)(var2, var0, var1);
-    var0 = 0;
-    var1 = var7[var0];
-    var0 = undefined;
-    var1 = var5.bind(var0)(var1);
-    var1 = var1.codegenNativeComponent;
-    var1 = {};
-    var6 = 'RNSScreenStack';
-    var1.uiViewClassName = var6;
-    var8 = {};
-    var9 = {};
-    var10 = 'onFinishTransitioning';
-    var9.registrationName = var10;
-    var8.topFinishTransitioning = var9;
-    var1.directEventTypes = var8;
-    var10 = var4.Object;
-    var9 = var10.assign;
-    var8 = {};
-    var8.iosPreventReattachmentOfDismissedScreens = var13;
-    var4 = 1;
-    var4 = var7[var4];
-    var12 = var5.bind(var0)(var4);
-    var11 = var12.ConditionallyIgnoredEventHandlers;
-    var4 = {};
-    var4.onFinishTransitioning = var13;
-    var4 = var11.bind(var12)(var4);
-    var4 = var9.bind(var10)(var8, var4);
-    var1.validAttributes = var4;
-    var _closure1_slot0 = var1;
-    var4 = 2;
-    var4 = var7[var4];
-    var5 = var5.bind(var0)(var4);
-    var4 = var5.get;
-    var3 = function() { // Environment: var3
-        var0 = _closure1_slot0;
+    var0 = global;
+    var1 = var0.Set;
+    var0 = var1.prototype;
+    var2 = Object.create(var0, {
+        constructor: {
+            value: var1
+        }
+    });
+    var0 = new var2[var1](var1);
+    var1 = function arg0() {
+        var0 = undefined;
         return var0;
     };
-    var3 = var4.bind(var5)(var6, var3);
-    var2.default = var3;
-    var2.__INTERNAL_VIEW_CONFIG = var1;
+    var0 = arg4;
+    var0.exports = var1;
+    var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 110, 42]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, []);

@@ -39,6 +39,51 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.bind(var6)(var4);
     var2.videoAssetFromServer = var3;
     var3 = function arg0() {
+        _fun47423: for (var _fun47423_ip = 0;;) switch (_fun47423_ip) {
+            case 0:
+                var1 = arg0;
+                var0 = {};
+                var5 = _closure1_slot0;
+                var4 = var1.video;
+                var3 = undefined;
+                var4 = var5.bind(var3)(var4);
+                var0.video = var4;
+                var4 = var1.video_low_res;
+                var5 = null;
+                if (!(var5 != var4)) {
+                    _fun47423_ip = 63;
+                    continue _fun47423
+                }
+            case 42:
+                var6 = _closure1_slot0;
+                var4 = var1.video_low_res;
+                var4 = var6.bind(var3)(var4);
+                var0.videoLowRes = var4;
+            case 63:
+                var4 = var1.video_hls;
+                if (!(var5 != var4)) {
+                    _fun47423_ip = 94;
+                    continue _fun47423
+                }
+            case 73:
+                var2 = _closure1_slot0;
+                var1 = var1.video_hls;
+                var1 = var2.bind(var3)(var1);
+                var0.videoHls = var1;
+            case 94:
+                return var0;
+        }
+    };
+    var2.desktopVideoAssetsFromServer = var3;
+    var3 = function arg0() {
+        var0 = {};
+        var1 = arg0;
+        var1 = var1.video_title;
+        var0.videoTitle = var1;
+        return var0;
+    };
+    var2.desktopVideoMessagesFromServer = var3;
+    var3 = function arg0() {
         _fun47425: for (var _fun47425_ip = 0;;) switch (_fun47425_ip) {
             case 0:
                 var1 = arg0;
@@ -64,51 +109,6 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 if (!(var5 != var4)) {
                     _fun47425_ip = 94;
                     continue _fun47425
-                }
-            case 73:
-                var2 = _closure1_slot0;
-                var1 = var1.video_hls;
-                var1 = var2.bind(var3)(var1);
-                var0.videoHls = var1;
-            case 94:
-                return var0;
-        }
-    };
-    var2.desktopVideoAssetsFromServer = var3;
-    var3 = function arg0() {
-        var0 = {};
-        var1 = arg0;
-        var1 = var1.video_title;
-        var0.videoTitle = var1;
-        return var0;
-    };
-    var2.desktopVideoMessagesFromServer = var3;
-    var3 = function arg0() {
-        _fun47427: for (var _fun47427_ip = 0;;) switch (_fun47427_ip) {
-            case 0:
-                var1 = arg0;
-                var0 = {};
-                var5 = _closure1_slot0;
-                var4 = var1.video;
-                var3 = undefined;
-                var4 = var5.bind(var3)(var4);
-                var0.video = var4;
-                var4 = var1.video_low_res;
-                var5 = null;
-                if (!(var5 != var4)) {
-                    _fun47427_ip = 63;
-                    continue _fun47427
-                }
-            case 42:
-                var6 = _closure1_slot0;
-                var4 = var1.video_low_res;
-                var4 = var6.bind(var3)(var4);
-                var0.videoLowRes = var4;
-            case 63:
-                var4 = var1.video_hls;
-                if (!(var5 != var4)) {
-                    _fun47427_ip = 94;
-                    continue _fun47427
                 }
             case 73:
                 var2 = _closure1_slot0;

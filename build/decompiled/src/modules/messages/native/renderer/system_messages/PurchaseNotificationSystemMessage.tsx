@@ -64,4 +64,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.createPurchaseNotificationSystemMessage = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1650, 6819, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1650, 6821, 2]);

@@ -145,4 +145,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useGuildProfile = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 31, 7440, 566, 7446, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 31, 7442, 566, 7448, 2]);

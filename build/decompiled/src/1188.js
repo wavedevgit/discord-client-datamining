@@ -150,7 +150,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = var5.warn;
                 var0 = '[TimeToDisplay] No active span found to attach ui.load.initial_display to.';
                 var0 = var2.bind(var5)(var0);
-                _fun12909_ip = 210;
+                _fun12909_ip = 214;
                 continue _fun12909;
             case 85:
                 var0 = var1.getSpanDescendants;
@@ -177,7 +177,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = var11[var3];
                 var1 = var12.bind(var7)(var1);
                 if (var0) {
-                    _fun12909_ip = 359;
+                    _fun12909_ip = 363;
                     continue _fun12909
                 }
             case 136:
@@ -198,27 +198,27 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = var8.bind(var10)(var2, var6);
                 var2 = var5.bind(var1)(var2);
                 if (var2) {
-                    _fun12909_ip = 212;
+                    _fun12909_ip = 216;
                     continue _fun12909
                 }
-            case 210:
+            case 214:
                 return var7;
-            case 212:
+            case 216:
                 var5 = null;
                 var8 = var5 == var6;
                 var5 = undefined;
                 if (var8) {
-                    _fun12909_ip = 229;
+                    _fun12909_ip = 233;
                     continue _fun12909
                 }
-            case 223:
+            case 227:
                 var5 = var6.isAutoInstrumented;
-            case 229:
+            case 233:
                 if (var5) {
-                    _fun12909_ip = 304;
+                    _fun12909_ip = 308;
                     continue _fun12909
                 }
-            case 232:
+            case 236:
                 var8 = _closure1_slot5;
                 var6 = var8.set;
                 var5 = true;
@@ -234,9 +234,9 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var5 = var9.bind(var7)(var5);
                 var5 = var5.SPAN_ORIGIN_MANUAL_UI_TIME_TO_DISPLAY;
                 var5 = var8.bind(var2)(var6, var5);
-                _fun12909_ip = 357;
+                _fun12909_ip = 361;
                 continue _fun12909;
-            case 304:
+            case 308:
                 var5 = var2.setAttribute;
                 var6 = _closure1_slot0;
                 var8 = _closure1_slot1;
@@ -248,9 +248,9 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var3 = var6.bind(var7)(var3);
                 var3 = var3.SPAN_ORIGIN_AUTO_UI_TIME_TO_DISPLAY;
                 var3 = var5.bind(var2)(var4, var3);
-            case 357:
+            case 361:
                 return var2;
-            case 359:
+            case 363:
                 var3 = var1.debug;
                 var2 = var3.log;
                 var1 = '[TimeToDisplay] Found existing ui.load.initial_display span.';
@@ -305,7 +305,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var7 = var9.warn;
                 var0 = '[TimeToDisplay] No active span found to attach ui.load.full_display to.';
                 var0 = var7.bind(var9)(var0);
-                _fun12911_ip = 312;
+                _fun12911_ip = 316;
                 continue _fun12911;
             case 122:
                 var0 = var1.getSpanDescendants;
@@ -341,7 +341,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = var7.warn;
                 var0 = '[TimeToDisplay] No initial display span found to attach ui.load.full_display to.';
                 var0 = var1.bind(var7)(var0);
-                _fun12911_ip = 312;
+                _fun12911_ip = 316;
                 continue _fun12911;
             case 196:
                 var1 = var2.find;
@@ -366,7 +366,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = var12[var3];
                 var1 = var13.bind(var8)(var1);
                 if (var0) {
-                    _fun12911_ip = 469;
+                    _fun12911_ip = 473;
                     continue _fun12911
                 }
             case 234:
@@ -388,12 +388,12 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = var9.bind(var1)(var2);
                 var _closure2_slot1 = var2;
                 if (var2) {
-                    _fun12911_ip = 314;
+                    _fun12911_ip = 318;
                     continue _fun12911
                 }
-            case 312:
+            case 316:
                 return var8;
-            case 314:
+            case 318:
                 var10 = var7.setTimeout;
                 var9 = var5.timeoutMs;
                 var7 = function() { // Environment: var6
@@ -483,12 +483,12 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var7 = var6 == var5;
                 var6 = undefined;
                 if (var7) {
-                    _fun12911_ip = 397;
+                    _fun12911_ip = 401;
                     continue _fun12911
                 }
-            case 391:
+            case 395:
                 var6 = var5.isAutoInstrumented;
-            case 397:
+            case 401:
                 var5 = var2.setAttribute;
                 var7 = _closure1_slot0;
                 var9 = _closure1_slot1;
@@ -499,20 +499,20 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var3 = var9[var3];
                 var3 = var7.bind(var8)(var3);
                 if (var6) {
-                    _fun12911_ip = 455;
+                    _fun12911_ip = 459;
                     continue _fun12911
                 }
-            case 441:
+            case 445:
                 var6 = var3.SPAN_ORIGIN_MANUAL_UI_TIME_TO_DISPLAY;
                 var6 = var5.bind(var2)(var4, var6);
-                _fun12911_ip = 467;
+                _fun12911_ip = 471;
                 continue _fun12911;
-            case 455:
+            case 459:
                 var3 = var3.SPAN_ORIGIN_AUTO_UI_TIME_TO_DISPLAY;
                 var3 = var5.bind(var2)(var4, var3);
-            case 467:
+            case 471:
                 return var2;
-            case 469:
+            case 473:
                 var3 = var1.debug;
                 var2 = var3.log;
                 var1 = '[TimeToDisplay] Found existing ui.load.full_display span.';

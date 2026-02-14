@@ -842,4 +842,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.setActiveDevice = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5710, 5708, 660, 3627, 507, 807, 667, 478, 5711, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5712, 5710, 660, 3629, 507, 807, 667, 478, 5713, 2]);

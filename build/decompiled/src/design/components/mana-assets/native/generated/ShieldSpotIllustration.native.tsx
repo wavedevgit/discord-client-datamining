@@ -81,4 +81,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.ShieldSpotIllustration = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 4709, 6431, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 4711, 6433, 2]);

@@ -104,4 +104,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.trackUserAvatarUpdated = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 5783, 796, 1417, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 5785, 796, 1417, 2]);

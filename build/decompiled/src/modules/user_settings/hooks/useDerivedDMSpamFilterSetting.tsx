@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/user_settings/hooks/useDerivedDMSpamFilterSetting.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function() {
-        _fun82165: for (var _fun82165_ip = 0;;) switch (_fun82165_ip) {
+        _fun82171: for (var _fun82171_ip = 0;;) switch (_fun82171_ip) {
             case 0:
                 var8 = _closure1_slot0;
                 var3 = _closure1_slot1;
@@ -74,37 +74,37 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var3.DmSpamFilterV2;
                 var3 = var3.DEFAULT_UNSET;
                 if (!(var0 === var3)) {
-                    _fun82165_ip = 274;
-                    continue _fun82165
+                    _fun82171_ip = 274;
+                    continue _fun82171
                 }
             case 167:
                 var3 = null;
                 var9 = var3 == var6;
                 var8 = undefined;
                 if (var9) {
-                    _fun82165_ip = 184;
-                    continue _fun82165
+                    _fun82171_ip = 184;
+                    continue _fun82171
                 }
             case 178:
                 var8 = var6.nsfwAllowed;
             case 184:
                 var6 = false;
                 if (!(var6 === var8)) {
-                    _fun82165_ip = 193;
-                    continue _fun82165
+                    _fun82171_ip = 193;
+                    continue _fun82171
                 }
             case 190:
                 if (var1) {
-                    _fun82165_ip = 242;
-                    continue _fun82165
+                    _fun82171_ip = 242;
+                    continue _fun82171
                 }
             case 193:
                 var6 = _closure1_slot3;
                 var1 = var6.get;
                 var1 = var1.bind(var6)(var7);
                 if (!(var3 == var1)) {
-                    _fun82165_ip = 240;
-                    continue _fun82165
+                    _fun82171_ip = 240;
+                    continue _fun82171
                 }
             case 211:
                 var6 = _closure1_slot0;
@@ -114,8 +114,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var3.DmSpamFilterV2;
                 var1 = var3.NON_FRIENDS;
             case 240:
-                _fun82165_ip = 271;
-                continue _fun82165;
+                _fun82171_ip = 271;
+                continue _fun82171;
             case 242:
                 var3 = _closure1_slot0;
                 var2 = _closure1_slot1;
@@ -131,4 +131,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useDerivedDmSpamFilterSettingValue = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1621, 1350, 1348, 566, 4283, 1311, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1621, 1350, 1348, 566, 4285, 1311, 2]);

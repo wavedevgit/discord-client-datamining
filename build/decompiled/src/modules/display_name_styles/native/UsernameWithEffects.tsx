@@ -839,4 +839,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = 0.6;
     var2.AVERAGE_FONT_WIDTH_RATIO = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 479, 7008, 3979, 3980, 7009, 3156, 7010, 1633, 1631, 3938, 3159, 1304, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 479, 7010, 3981, 3982, 7011, 3158, 7012, 1633, 1631, 3940, 3161, 1304, 2]);

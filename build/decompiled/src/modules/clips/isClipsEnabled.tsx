@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var7;
     var4 = function() {
-        _fun94013: for (var _fun94013_ip = 0;;) switch (_fun94013_ip) {
+        _fun94057: for (var _fun94057_ip = 0;;) switch (_fun94057_ip) {
             case 0:
                 var3 = _closure1_slot0;
                 var2 = _closure1_slot1;
@@ -23,8 +23,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.clipsSettings;
                 var1 = var1.clipsEnabled;
                 if (!var0) {
-                    _fun94013_ip = 67;
-                    continue _fun94013
+                    _fun94057_ip = 67;
+                    continue _fun94057
                 }
             case 64:
                 var0 = var1;
@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot3 = var4;
     var3 = function() {
-        _fun94014: for (var _fun94014_ip = 0;;) switch (_fun94014_ip) {
+        _fun94058: for (var _fun94058_ip = 0;;) switch (_fun94058_ip) {
             case 0:
                 var4 = _closure1_slot0;
                 var5 = _closure1_slot1;
@@ -61,8 +61,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var1 = var3.bind(var4)(var2, var1);
                 if (!var0) {
-                    _fun94014_ip = 85;
-                    continue _fun94014
+                    _fun94058_ip = 85;
+                    continue _fun94058
                 }
             case 82:
                 var0 = var1;
@@ -94,7 +94,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.isClipsEnabled = var4;
     var2.useIsClipsEnabled = var3;
     var3 = function() {
-        _fun94016: for (var _fun94016_ip = 0;;) switch (_fun94016_ip) {
+        _fun94060: for (var _fun94060_ip = 0;;) switch (_fun94060_ip) {
             case 0:
                 var0 = _closure1_slot3;
                 var4 = undefined;
@@ -112,15 +112,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.clipsSettings;
                 var1 = var1.decoupledClipsEnabled;
                 if (!var0) {
-                    _fun94016_ip = 75;
-                    continue _fun94016
+                    _fun94060_ip = 75;
+                    continue _fun94060
                 }
             case 72:
                 var0 = var2;
             case 75:
                 if (!var0) {
-                    _fun94016_ip = 81;
-                    continue _fun94016
+                    _fun94060_ip = 81;
+                    continue _fun94060
                 }
             case 78:
                 var0 = var1;
@@ -130,7 +130,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.isDecoupledClipsEnabled = var3;
     var1 = function() {
-        _fun94017: for (var _fun94017_ip = 0;;) switch (_fun94017_ip) {
+        _fun94061: for (var _fun94061_ip = 0;;) switch (_fun94061_ip) {
             case 0:
                 var0 = _closure1_slot4;
                 var5 = undefined;
@@ -159,15 +159,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var1 = var4.bind(var5)(var3, var1);
                 if (!var0) {
-                    _fun94017_ip = 93;
-                    continue _fun94017
+                    _fun94061_ip = 93;
+                    continue _fun94061
                 }
             case 90:
                 var0 = var2;
             case 93:
                 if (!var0) {
-                    _fun94017_ip = 99;
-                    continue _fun94017
+                    _fun94061_ip = 99;
+                    continue _fun94061
                 }
             case 96:
                 var0 = var1;
@@ -177,4 +177,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useIsDecoupledClipsEnabled = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3480, 3505, 566, 478, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3482, 3507, 566, 478, 2]);

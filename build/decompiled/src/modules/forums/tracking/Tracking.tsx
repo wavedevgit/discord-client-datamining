@@ -1103,4 +1103,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.trackForumCreateNewPostStarted = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1372, 3996, 5705, 6545, 660, 4308, 6546, 796, 6554, 478, 4322, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1372, 3998, 5707, 6547, 660, 4310, 6548, 796, 6556, 478, 4324, 2]);

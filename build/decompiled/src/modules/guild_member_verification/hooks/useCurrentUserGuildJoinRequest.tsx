@@ -65,4 +65,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useCurrentUserGuildJoinRequest = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3218, 566, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3220, 566, 2]);

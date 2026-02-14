@@ -137,4 +137,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var3;
     var2.getPendingFolderGuildIds = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3218, 1410, 566, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3220, 1410, 566, 2]);

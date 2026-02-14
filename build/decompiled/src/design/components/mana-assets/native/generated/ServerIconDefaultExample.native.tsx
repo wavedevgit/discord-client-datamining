@@ -81,4 +81,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.ServerIconDefaultExample = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 4709, 6405, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 4711, 6407, 2]);

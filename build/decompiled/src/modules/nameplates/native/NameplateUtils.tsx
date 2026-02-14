@@ -94,4 +94,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getNameplateAssets = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [7000, 7001, 7002, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [7002, 7003, 7004, 2]);

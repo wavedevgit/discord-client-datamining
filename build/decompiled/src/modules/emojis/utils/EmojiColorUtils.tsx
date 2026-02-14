@@ -440,4 +440,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.buildEmojiColorPalette = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3244, 3245, 669, 6630, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3246, 3247, 669, 6632, 2]);

@@ -44,7 +44,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useManaContext = var3;
     var1 = function(arg0) { // Environment: var1
-        _fun27663: for (var _fun27663_ip = 0;;) switch (_fun27663_ip) {
+        _fun27667: for (var _fun27667_ip = 0;;) switch (_fun27667_ip) {
             case 0:
                 var1 = arg0;
                 var0 = var1.children;
@@ -55,8 +55,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = {};
                 var6 = null;
                 if (!(var6 == var4)) {
-                    _fun27663_ip = 42;
-                    continue _fun27663
+                    _fun27667_ip = 42;
+                    continue _fun27667
                 }
             case 38:
                 var4 = _closure1_slot2;

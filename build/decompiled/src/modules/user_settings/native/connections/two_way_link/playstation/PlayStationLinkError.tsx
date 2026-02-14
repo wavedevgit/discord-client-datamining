@@ -124,4 +124,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.PlayStationLinkError = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 5917, 660, 33, 1469, 5841, 1235, 5842, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 5919, 660, 33, 1469, 5843, 1235, 5844, 2]);

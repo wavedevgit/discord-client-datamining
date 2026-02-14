@@ -1799,4 +1799,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.getGuildMonetizationRestrictions = var3;
     var2.fetchHighlightedCreatorGuildDetails = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 660, 483, 507, 3350, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 660, 483, 507, 3352, 2]);

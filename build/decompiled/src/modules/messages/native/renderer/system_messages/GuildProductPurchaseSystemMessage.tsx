@@ -196,4 +196,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.createGuildProductPurchaseSystemMessage = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3106, 1372, 660, 3978, 1418, 1417, 6770, 1235, 6755, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3108, 1372, 660, 3980, 1418, 1417, 6772, 1235, 6757, 2]);

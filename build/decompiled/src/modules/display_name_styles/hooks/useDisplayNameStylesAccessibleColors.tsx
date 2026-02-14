@@ -197,4 +197,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useDisplayNameStylesAccessibleColors = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1298, 566, 1633, 7011, 3244, 669, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1298, 566, 1633, 7013, 3246, 669, 2]);

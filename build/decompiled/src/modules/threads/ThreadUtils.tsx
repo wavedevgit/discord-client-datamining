@@ -487,4 +487,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useLastMessageTimestamp = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [29, 3944, 4309, 3098, 1234, 660, 1235, 4397, 4308, 796, 6554, 4700, 1384, 566, 21, 3050, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [29, 3946, 4311, 3100, 1234, 660, 1235, 4399, 4310, 796, 6556, 4702, 1384, 566, 21, 3052, 2]);

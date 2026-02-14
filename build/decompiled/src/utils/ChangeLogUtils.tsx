@@ -665,4 +665,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.renderChangelogMessageMarkup = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3151, 6861, 4795, 4811, 4812, 4788, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3153, 6863, 4797, 4813, 4814, 4790, 2]);

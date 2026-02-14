@@ -46,7 +46,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/forwarding/native/ForwardMessageFooter.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun73597: for (var _fun73597_ip = 0;;) switch (_fun73597_ip) {
+        _fun73397: for (var _fun73397_ip = 0;;) switch (_fun73397_ip) {
             case 0:
                 var0 = arg0;
                 var24 = var0.message;
@@ -185,16 +185,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0 > var1;
                 var5 = undefined;
                 if (!var0) {
-                    _fun73597_ip = 512;
-                    continue _fun73597
+                    _fun73397_ip = 512;
+                    continue _fun73397
                 }
             case 405:
                 var0 = var15.length;
                 var0 = var0 > var1;
                 var5 = undefined;
                 if (!var0) {
-                    _fun73597_ip = 512;
-                    continue _fun73597
+                    _fun73397_ip = 512;
+                    continue _fun73397
                 }
             case 419:
                 var1 = _closure1_slot0;
@@ -248,8 +248,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7.disabled = var18;
                 var18 = undefined;
                 if (var17) {
-                    _fun73597_ip = 637;
-                    continue _fun73597
+                    _fun73397_ip = 637;
+                    continue _fun73397
                 }
             case 634:
                 var18 = var9;
@@ -283,4 +283,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.ForwardMessageFooter = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 3996, 33, 8955, 6698, 566, 6556, 9238, 1235, 9239, 9240, 4090, 9247, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 3998, 33, 8926, 6700, 566, 6558, 9210, 1235, 9211, 9212, 4092, 9219, 2]);

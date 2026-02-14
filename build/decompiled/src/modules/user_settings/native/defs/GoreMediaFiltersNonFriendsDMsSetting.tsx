@@ -167,4 +167,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.useGoreContentNonFriendsDmSettingValue = var3;
     var2.onGoreContentNonFriendsDmOnPress = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [7093, 10428, 4264, 4287, 10429, 1235, 9059, 10431, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [7095, 10432, 4266, 4289, 10433, 1235, 9031, 10435, 2]);

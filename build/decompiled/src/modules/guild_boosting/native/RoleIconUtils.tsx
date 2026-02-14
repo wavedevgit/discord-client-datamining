@@ -350,4 +350,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getRoleIcon = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1679, 1410, 33, 566, 6813, 6814, 1235, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1679, 1410, 33, 566, 6815, 6816, 1235, 2]);

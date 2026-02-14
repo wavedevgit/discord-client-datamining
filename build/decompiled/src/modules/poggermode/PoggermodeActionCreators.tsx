@@ -207,4 +207,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.updateComboOnMessageSend = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1217, 6605, 6686, 807, 6688, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1217, 6607, 6688, 807, 6690, 2]);

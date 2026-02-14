@@ -368,4 +368,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.isForumPostPinned = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1372, 1410, 3944, 6553, 1379, 1235, 1381, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1372, 1410, 3946, 6555, 1379, 1235, 1381, 2]);

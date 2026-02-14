@@ -205,4 +205,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var3;
     var2.useAllGuildProfileGames = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 6963, 1304, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 6965, 1304, 2]);

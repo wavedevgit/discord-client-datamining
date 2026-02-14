@@ -81,7 +81,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                         var10 = var5.bind(var6)(var7);
                                         var5 = null;
                                         if (!(var5 != var10)) {
-                                            _fun12437_ip = 122;
+                                            _fun12437_ip = 126;
                                             continue _fun12437
                                         }
                                     case 78:
@@ -97,21 +97,21 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                         };
                                         var6.data = var10;
                                         var6 = var7.bind(var9)(var6);
-                                    case 122:
+                                    case 126:
                                         var7 = _closure2_slot0;
                                         var6 = var7.stateTransformer;
                                         var9 = var6.bind(var7)(var0);
                                         if (!(var5 == var9)) {
-                                            _fun12437_ip = 162;
+                                            _fun12437_ip = 166;
                                             continue _fun12437
                                         }
-                                    case 141:
+                                    case 145:
                                         var7 = var2.setContext;
                                         var6 = 'state';
                                         var6 = var7.bind(var2)(var6, var5);
-                                        _fun12437_ip = 306;
+                                        _fun12437_ip = 310;
                                         continue _fun12437;
-                                    case 162:
+                                    case 166:
                                         var7 = _closure1_slot0;
                                         var6 = _closure1_slot1;
                                         var6 = var6[var8];
@@ -121,29 +121,29 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                         var7 = var5 == var10;
                                         var6 = undefined;
                                         if (var7) {
-                                            _fun12437_ip = 208;
+                                            _fun12437_ip = 212;
                                             continue _fun12437
                                         }
-                                    case 198:
+                                    case 202:
                                         var7 = var10.getOptions;
                                         var6 = var7.bind(var10)();
-                                    case 208:
+                                    case 212:
                                         var7 = var5 == var6;
                                         var5 = undefined;
                                         if (var7) {
-                                            _fun12437_ip = 223;
+                                            _fun12437_ip = 227;
                                             continue _fun12437
                                         }
-                                    case 217:
+                                    case 221:
                                         var5 = var6.normalizeDepth;
-                                    case 223:
+                                    case 227:
                                         if (var5) {
-                                            _fun12437_ip = 229;
+                                            _fun12437_ip = 233;
                                             continue _fun12437
                                         }
-                                    case 226:
+                                    case 230:
                                         var5 = 3;
-                                    case 229:
+                                    case 233:
                                         var6 = {};
                                         var7 = {};
                                         var10 = 'redux';
@@ -162,18 +162,18 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                         var5 = var2.setContext;
                                         var4 = 'state';
                                         var4 = var5.bind(var2)(var4, var6);
-                                    case 306:
+                                    case 310:
                                         var1 = _closure2_slot0;
                                         var1 = var1.configureScopeWithState;
                                         var5 = 'function';
                                         var4 = typeof var1;
                                         if (!(var5 === var4)) {
-                                            _fun12437_ip = 333;
+                                            _fun12437_ip = 337;
                                             continue _fun12437
                                         }
-                                    case 327:
+                                    case 331:
                                         var1 = var1.bind(var3)(var2, var0);
-                                    case 333:
+                                    case 337:
                                         return var0;
                                 }
                             };

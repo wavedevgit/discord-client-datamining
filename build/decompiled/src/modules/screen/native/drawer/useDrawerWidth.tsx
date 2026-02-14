@@ -9,12 +9,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var6;
     var0 = function arg0, arg1() {
-        _fun78096: for (var _fun78096_ip = 0;;) switch (_fun78096_ip) {
+        _fun77899: for (var _fun77899_ip = 0;;) switch (_fun77899_ip) {
             case 0:
                 var0 = arg1;
                 if (var0) {
-                    _fun78096_ip = 44;
-                    continue _fun78096
+                    _fun77899_ip = 44;
+                    continue _fun77899
                 }
             case 9:
                 var0 = global;
@@ -25,8 +25,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = 32;
                 var0 = var5 - var0;
                 var0 = var3.bind(var4)(var2, var0);
-                _fun78096_ip = 48;
-                continue _fun78096;
+                _fun77899_ip = 48;
+                continue _fun77899;
             case 44:
                 var0 = _closure1_slot3;
             case 48:
@@ -61,7 +61,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.bind(var6)(var4);
     var2.DRAWER_LEFT_WIDTH_MIN = var3;
     var3 = function() {
-        _fun78097: for (var _fun78097_ip = 0;;) switch (_fun78097_ip) {
+        _fun77900: for (var _fun77900_ip = 0;;) switch (_fun77900_ip) {
             case 0:
                 var2 = _closure1_slot0;
                 var5 = _closure1_slot2;
@@ -81,8 +81,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var0.isChatLockedOpen;
                 var0 = var3;
                 if (!var5) {
-                    _fun78097_ip = 90;
-                    continue _fun78097
+                    _fun77900_ip = 90;
+                    continue _fun77900
                 }
             case 80:
                 var1 = _closure1_slot5;
@@ -93,7 +93,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getDrawerWidth = var3;
     var1 = function() {
-        _fun78098: for (var _fun78098_ip = 0;;) switch (_fun78098_ip) {
+        _fun77901: for (var _fun77901_ip = 0;;) switch (_fun77901_ip) {
             case 0:
                 var2 = _closure1_slot1;
                 var5 = _closure1_slot2;
@@ -111,8 +111,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var0.isChatLockedOpen;
                 var0 = var3;
                 if (!var5) {
-                    _fun78098_ip = 78;
-                    continue _fun78098
+                    _fun77901_ip = 78;
+                    continue _fun77901
                 }
             case 68:
                 var1 = _closure1_slot5;
@@ -123,4 +123,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useDrawerWidth = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 3921, 3919, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 3923, 3921, 2]);

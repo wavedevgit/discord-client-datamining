@@ -1734,7 +1734,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             StartGenerator();
                                             ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
                                             if (var1) {
-                                                _fun12587_ip = 769;
+                                                _fun12587_ip = 773;
                                                 continue _fun12587
                                             }
                                         case 10:
@@ -1751,7 +1751,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             var4 = var5.warn;
                                             var3 = '[AppStart] Could not capture App Start, missing client, call `Sentry.init` first.';
                                             var3 = var4.bind(var5)(var3);
-                                            _fun12587_ip = 766;
+                                            _fun12587_ip = 770;
                                             continue _fun12587;
                                         case 53:
                                             var4 = _closure2_slot0;
@@ -1769,7 +1769,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                         case 94:
                                             var4 = '[AppStart] App start tracking is enabled. App start will be added to the first transaction as a child span.';
                                             var4 = var5.bind(var6)(var4);
-                                            _fun12587_ip = 766;
+                                            _fun12587_ip = 770;
                                             continue _fun12587;
                                         case 110:
                                             var4 = '[AppStart] App start tracking standalone root span (transaction).';
@@ -1897,10 +1897,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             var4 = var4.SentryNonRecordingSpan;
                                             var4 = var8 instanceof var4;
                                             if (var4) {
-                                                _fun12587_ip = 766;
+                                                _fun12587_ip = 770;
                                                 continue _fun12587
                                             }
-                                        case 501:
+                                        case 505:
                                             var5 = _closure1_slot0;
                                             var6 = _closure1_slot1;
                                             var4 = 4;
@@ -1921,10 +1921,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             var4 = var5.convertSpanToTransaction;
                                             var5 = var4.bind(var5)(var8);
                                             if (var5) {
-                                                _fun12587_ip = 641;
+                                                _fun12587_ip = 645;
                                                 continue _fun12587
                                             }
-                                        case 597:
+                                        case 601:
                                             var6 = _closure1_slot0;
                                             var4 = _closure1_slot1;
                                             var4 = var4[var7];
@@ -1933,35 +1933,35 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             var6 = var9.warn;
                                             var4 = '[AppStart] Failed to convert App Start span to transaction.';
                                             var4 = var6.bind(var9)(var4);
-                                            _fun12587_ip = 766;
+                                            _fun12587_ip = 770;
                                             continue _fun12587;
-                                        case 641:
+                                        case 645:
                                             var2 = _closure2_slot8;
                                             var2 = var2.bind(var1)(var5);
-                                            SaveGenerator(address = 654);
-                                        case 652:
+                                            SaveGenerator(address = 658);
+                                        case 656:
                                             return var2;
-                                        case 654:
+                                        case 658:
                                             ResumeGenerator(result_out_reg = 2, return_bool_out_reg = 4);
                                             if (var4) {
-                                                _fun12587_ip = 763;
+                                                _fun12587_ip = 767;
                                                 continue _fun12587
                                             }
-                                        case 660:
+                                        case 664:
                                             var4 = var5.spans;
                                             if (!var4) {
-                                                _fun12587_ip = 766;
+                                                _fun12587_ip = 770;
                                                 continue _fun12587
                                             }
-                                        case 669:
+                                        case 673:
                                             var4 = var5.spans;
                                             var6 = var4.length;
                                             var4 = 0;
                                             if (!(var4 !== var6)) {
-                                                _fun12587_ip = 766;
+                                                _fun12587_ip = 770;
                                                 continue _fun12587
                                             }
-                                        case 686:
+                                        case 690:
                                             var6 = _closure1_slot0;
                                             var4 = _closure1_slot1;
                                             var4 = var4[var7];
@@ -1970,26 +1970,26 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             var4 = var4.bind(var6)(var8);
                                             var4 = var4.scope;
                                             if (var4) {
-                                                _fun12587_ip = 750;
+                                                _fun12587_ip = 754;
                                                 continue _fun12587
                                             }
-                                        case 723:
+                                        case 727:
                                             var6 = _closure1_slot0;
                                             var3 = _closure1_slot1;
                                             var3 = var3[var7];
                                             var6 = var6.bind(var1)(var3);
                                             var3 = var6.getCurrentScope;
                                             var4 = var3.bind(var6)();
-                                        case 750:
+                                        case 754:
                                             var3 = var4.captureEvent;
                                             var3 = var3.bind(var4)(var5);
-                                            _fun12587_ip = 766;
+                                            _fun12587_ip = 770;
                                             continue _fun12587;
-                                        case 763:
+                                        case 767:
                                             return var2;
-                                        case 766:
+                                        case 770:
                                             return var1;
-                                        case 769:
+                                        case 773:
                                             return var0;
                                     }
                                 };

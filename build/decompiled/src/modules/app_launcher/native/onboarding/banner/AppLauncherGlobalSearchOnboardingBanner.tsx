@@ -86,7 +86,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/app_launcher/native/onboarding/banner/AppLauncherGlobalSearchOnboardingBanner.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun108401: for (var _fun108401_ip = 0;;) switch (_fun108401_ip) {
+        _fun108456: for (var _fun108456_ip = 0;;) switch (_fun108456_ip) {
             case 0:
                 var1 = arg0;
                 var0 = var1.markAsDismissed;
@@ -110,12 +110,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3[1] = var2;
                 var0 = function() { // Environment: var5
                     var0 = function() { // Environment: var0
-                        _fun108403: for (var _fun108403_ip = 0;;) switch (_fun108403_ip) {
+                        _fun108458: for (var _fun108458_ip = 0;;) switch (_fun108458_ip) {
                             case 0:
                                 var1 = _closure2_slot1;
                                 if (!var1) {
-                                    _fun108403_ip = 41;
-                                    continue _fun108403
+                                    _fun108458_ip = 41;
+                                    continue _fun108458
                                 }
                             case 10:
                                 var2 = _closure2_slot0;
@@ -135,8 +135,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var8.bind(var9)(var0, var3);
                 var0 = null;
                 if (!var2) {
-                    _fun108401_ip = 340;
-                    continue _fun108401
+                    _fun108456_ip = 340;
+                    continue _fun108456
                 }
             case 110:
                 var3 = _closure1_slot7;
@@ -234,4 +234,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1468, 1369, 33, 1297, 671, 7834, 7112, 1235, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1468, 1369, 33, 1297, 671, 7802, 7114, 1235, 2]);

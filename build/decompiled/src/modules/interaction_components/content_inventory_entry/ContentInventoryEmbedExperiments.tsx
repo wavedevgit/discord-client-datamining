@@ -67,4 +67,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useIsContentInventoryEmbedEnabled = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3120, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3122, 2]);

@@ -964,4 +964,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getStreamEligibleChannels = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3516, 1376, 1676, 1410, 3096, 3518, 660, 4249, 1235, 4242, 4557, 566, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3518, 1376, 1676, 1410, 3098, 3520, 660, 4251, 1235, 4244, 4559, 566, 2]);

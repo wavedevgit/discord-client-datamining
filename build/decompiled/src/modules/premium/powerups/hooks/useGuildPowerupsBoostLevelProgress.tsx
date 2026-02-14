@@ -173,4 +173,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getGuildPowerupBoostLevelProgress = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1410, 660, 6790, 566, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1410, 660, 6792, 566, 2]);

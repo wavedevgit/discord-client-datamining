@@ -1322,24 +1322,24 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var0.isSelected = var10;
                             var10 = _closure2_slot7;
                             if (!var10) {
-                                _fun56876_ip = 626;
+                                _fun56876_ip = 634;
                                 continue _fun56876
                             }
-                        case 623:
+                        case 631:
                             var10 = var11;
-                        case 626:
+                        case 634:
                             var0.isVictor = var10;
                             var0.didSelfVote = var8;
                             var0.style = var7;
                             var7 = _closure2_slot10;
                             if (!var7) {
-                                _fun56876_ip = 656;
+                                _fun56876_ip = 664;
                                 continue _fun56876
                             }
-                        case 649:
+                        case 657:
                             var8 = _closure2_slot1;
                             var7 = !var8;
-                        case 656:
+                        case 664:
                             var0.shouldAnimateTransition = var7;
                             var8 = var3.Math;
                             var7 = var8.round;
@@ -1878,4 +1878,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.isPollMessageDirectlyInteractive = var3;
     var2.computeBasicPollChatData = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1298, 4744, 1372, 1686, 4257, 1621, 6885, 660, 3459, 3109, 3113, 1417, 6886, 3102, 3085, 6887, 1235, 6626, 6889, 478, 6890, 6891, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1298, 4746, 1372, 1686, 4259, 1621, 6887, 660, 3461, 3111, 3115, 1417, 6888, 3104, 3087, 6889, 1235, 6628, 6891, 478, 6892, 6893, 2]);

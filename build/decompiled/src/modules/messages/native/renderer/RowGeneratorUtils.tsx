@@ -271,4 +271,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.InviteEmbedBackground = var3;
     var2.resolveHighlightThemedColors = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 6592, 1297, 671, 3967, 1463, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 6594, 1297, 671, 3969, 1463, 2]);

@@ -54,15 +54,22 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot13 = var6;
     var3 = var3.QUEST_DOCK_VERTICAL_EDGE_GUTTER_EXPANDED;
     var _closure1_slot14 = var3;
+    var3 = 5;
+    var3 = var5[var3];
+    var3 = var4.bind(var0)(var3);
+    var6 = var3.useYouBarHorizontalMargin;
+    var _closure1_slot15 = var6;
+    var3 = var3.useYouBarTotalHeight;
+    var _closure1_slot16 = var3;
     var3 = {};
     var6 = 'function QuestDockHooksTsx1(){const{restingQuestDockMode,minExpandedContentHeight,windowDimensions,safeArea}=this.__closure;return{restingQuestDockMode:restingQuestDockMode.get(),minExpandedContentHeight:minExpandedContentHeight.get(),windowWidth:windowDimensions.get().width,windowHeight:windowDimensions.get().height,safeArea:safeArea.get()};}';
     var3.code = var6;
-    var _closure1_slot15 = var3;
+    var _closure1_slot17 = var3;
     var3 = {};
-    var6 = 'function QuestDockHooksTsx2(props,previous){const{cheapWorkletShallowEqual,QuestDockMode,runOnJS,setRestingQuestDockMode,questDockWrapperSpecs,QUEST_DOCK_VERTICAL_EDGE_GUTTER_COLLAPSED,getQuestDockCollapsedWidth,QUEST_DOCK_COLLAPSED_HEIGHT,activeQuestDockMode,QUEST_DOCK_VERTICAL_EDGE_GUTTER_CLOSED,getQuestDockClosedWidth,QUEST_DOCK_CLOSED_HEIGHT,getQuestDockExpandedHeightLimits,QUEST_DOCK_VERTICAL_EDGE_GUTTER_EXPANDED,getQuestDockExpandedWidth}=this.__closure;var _previous$restingQues;if(cheapWorkletShallowEqual(props,previous!==null&&previous!==void 0?previous:undefined))return;const{restingQuestDockMode:restingQuestDockMode,minExpandedContentHeight:minExpandedContentHeight,windowWidth:windowWidth,windowHeight:windowHeight,safeArea:safeArea}=props;switch(restingQuestDockMode){case QuestDockMode.RESET_TO_PREVIOUS:runOnJS(setRestingQuestDockMode)((_previous$restingQues=previous===null||previous===void 0?void 0:previous.restingQuestDockMode)!==null&&_previous$restingQues!==void 0?_previous$restingQues:QuestDockMode.COLLAPSED);return;case QuestDockMode.COLLAPSED:questDockWrapperSpecs.set({...questDockWrapperSpecs.get(),x:0,y:QUEST_DOCK_VERTICAL_EDGE_GUTTER_COLLAPSED*-1,width:getQuestDockCollapsedWidth(windowWidth,safeArea.left,safeArea.right),height:QUEST_DOCK_COLLAPSED_HEIGHT});activeQuestDockMode.set(QuestDockMode.COLLAPSED);break;case QuestDockMode.CLOSED:case QuestDockMode.SOFT_DISMISSED:questDockWrapperSpecs.set({...questDockWrapperSpecs.get(),x:0,y:QUEST_DOCK_VERTICAL_EDGE_GUTTER_CLOSED*-1,width:getQuestDockClosedWidth(windowWidth,safeArea.left,safeArea.right),height:QUEST_DOCK_CLOSED_HEIGHT});activeQuestDockMode.set(restingQuestDockMode);break;case QuestDockMode.EXPANDED:const minContentHeight=minExpandedContentHeight;const{minHeight:minHeight,maxHeight:maxHeight}=getQuestDockExpandedHeightLimits(windowHeight,safeArea.top,minContentHeight);const heightMidpoint=(maxHeight+minHeight)/2;let height;if(questDockWrapperSpecs.get().height<=QUEST_DOCK_COLLAPSED_HEIGHT){height=maxHeight;}else if(previous!=null&&questDockWrapperSpecs.get().height===getQuestDockExpandedHeightLimits(previous.windowHeight,previous.safeArea.top,minContentHeight).maxHeight){height=maxHeight;}else if(questDockWrapperSpecs.get().height>=heightMidpoint){height=maxHeight;}else{height=maxHeight;}questDockWrapperSpecs.set({...questDockWrapperSpecs.get(),x:0,y:QUEST_DOCK_VERTICAL_EDGE_GUTTER_EXPANDED,width:getQuestDockExpandedWidth(windowWidth,safeArea.left,safeArea.right),height:height});activeQuestDockMode.set(QuestDockMode.EXPANDED);break;}}';
+    var6 = 'function QuestDockHooksTsx2(props,previous){const{cheapWorkletShallowEqual,QuestDockMode,runOnJS,setRestingQuestDockMode,questDockWrapperSpecs,QUEST_DOCK_VERTICAL_EDGE_GUTTER_COLLAPSED,youBarHeightForCollapsed,getQuestDockCollapsedWidth,youBarHorizontalMargin,QUEST_DOCK_COLLAPSED_HEIGHT,activeQuestDockMode,QUEST_DOCK_VERTICAL_EDGE_GUTTER_CLOSED,youBarHeightForClosed,getQuestDockClosedWidth,QUEST_DOCK_CLOSED_HEIGHT,getQuestDockExpandedHeightLimits,QUEST_DOCK_VERTICAL_EDGE_GUTTER_EXPANDED,getQuestDockExpandedWidth}=this.__closure;var _previous$restingQues;if(cheapWorkletShallowEqual(props,previous!==null&&previous!==void 0?previous:undefined))return;const{restingQuestDockMode:restingQuestDockMode,minExpandedContentHeight:minExpandedContentHeight,windowWidth:windowWidth,windowHeight:windowHeight,safeArea:safeArea}=props;switch(restingQuestDockMode){case QuestDockMode.RESET_TO_PREVIOUS:runOnJS(setRestingQuestDockMode)((_previous$restingQues=previous===null||previous===void 0?void 0:previous.restingQuestDockMode)!==null&&_previous$restingQues!==void 0?_previous$restingQues:QuestDockMode.COLLAPSED);return;case QuestDockMode.COLLAPSED:questDockWrapperSpecs.set({...questDockWrapperSpecs.get(),x:0,y:QUEST_DOCK_VERTICAL_EDGE_GUTTER_COLLAPSED*-1-youBarHeightForCollapsed,width:getQuestDockCollapsedWidth(windowWidth,youBarHeightForCollapsed>0?youBarHorizontalMargin:safeArea.left,youBarHeightForCollapsed>0?youBarHorizontalMargin:safeArea.right),height:QUEST_DOCK_COLLAPSED_HEIGHT});activeQuestDockMode.set(QuestDockMode.COLLAPSED);break;case QuestDockMode.CLOSED:case QuestDockMode.SOFT_DISMISSED:questDockWrapperSpecs.set({...questDockWrapperSpecs.get(),x:0,y:QUEST_DOCK_VERTICAL_EDGE_GUTTER_CLOSED*-1-youBarHeightForClosed,width:getQuestDockClosedWidth(windowWidth,youBarHeightForClosed>0?youBarHorizontalMargin:safeArea.left,youBarHeightForClosed>0?youBarHorizontalMargin:safeArea.right),height:QUEST_DOCK_CLOSED_HEIGHT});activeQuestDockMode.set(restingQuestDockMode);break;case QuestDockMode.EXPANDED:const minContentHeight=minExpandedContentHeight;const{minHeight:minHeight,maxHeight:maxHeight}=getQuestDockExpandedHeightLimits(windowHeight,safeArea.top,minContentHeight);const heightMidpoint=(maxHeight+minHeight)/2;let height;if(questDockWrapperSpecs.get().height<=QUEST_DOCK_COLLAPSED_HEIGHT){height=maxHeight;}else if(previous!=null&&questDockWrapperSpecs.get().height===getQuestDockExpandedHeightLimits(previous.windowHeight,previous.safeArea.top,minContentHeight).maxHeight){height=maxHeight;}else if(questDockWrapperSpecs.get().height>=heightMidpoint){height=maxHeight;}else{height=maxHeight;}questDockWrapperSpecs.set({...questDockWrapperSpecs.get(),x:0,y:QUEST_DOCK_VERTICAL_EDGE_GUTTER_EXPANDED,width:getQuestDockExpandedWidth(windowWidth,safeArea.left,safeArea.right),height:height});activeQuestDockMode.set(QuestDockMode.EXPANDED);break;}}';
     var3.code = var6;
-    var _closure1_slot16 = var3;
-    var3 = 19;
+    var _closure1_slot18 = var3;
+    var3 = 20;
     var3 = var5[var3];
     var5 = var4.bind(var0)(var3);
     var4 = var5.fileFinishedImporting;
@@ -73,38 +80,47 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var3 = var4.useContext;
         var8 = _closure1_slot0;
         var9 = _closure1_slot2;
-        var0 = 5;
+        var0 = 6;
         var2 = var9[var0];
         var0 = undefined;
         var2 = var8.bind(var0)(var2);
         var2 = var2.QuestDockGestureContext;
         var2 = var3.bind(var4)(var2);
-        var7 = var2.questDockWrapperSpecs;
-        var _closure2_slot0 = var7;
-        var14 = var2.windowDimensions;
-        var _closure2_slot1 = var14;
-        var10 = var2.activeQuestDockMode;
-        var _closure2_slot2 = var10;
-        var15 = var2.minExpandedContentHeight;
-        var _closure2_slot3 = var15;
+        var13 = var2.questDockWrapperSpecs;
+        var _closure2_slot0 = var13;
+        var17 = var2.windowDimensions;
+        var _closure2_slot1 = var17;
+        var11 = var2.activeQuestDockMode;
+        var _closure2_slot2 = var11;
+        var18 = var2.minExpandedContentHeight;
+        var _closure2_slot3 = var18;
         var3 = var4.useContext;
-        var2 = 6;
+        var2 = 7;
         var2 = var9[var2];
         var2 = var8.bind(var0)(var2);
         var2 = var2.QuestDockExternalCoordinationContext;
         var2 = var3.bind(var4)(var2);
-        var16 = var2.restingQuestDockMode;
-        var _closure2_slot4 = var16;
-        var11 = var2.setRestingQuestDockMode;
-        var _closure2_slot5 = var11;
+        var19 = var2.restingQuestDockMode;
+        var _closure2_slot4 = var19;
+        var14 = var2.setRestingQuestDockMode;
+        var _closure2_slot5 = var14;
         var3 = _closure1_slot1;
-        var2 = 7;
+        var2 = 8;
         var2 = var9[var2];
         var2 = var3.bind(var0)(var2);
-        var13 = var2.bind(var0)();
-        var _closure2_slot6 = var13;
-        var12 = 8;
-        var2 = var9[var12];
+        var16 = var2.bind(var0)();
+        var _closure2_slot6 = var16;
+        var2 = _closure1_slot16;
+        var3 = -8;
+        var7 = var2.bind(var0)(var3);
+        var _closure2_slot7 = var7;
+        var10 = var2.bind(var0)();
+        var _closure2_slot8 = var10;
+        var2 = _closure1_slot15;
+        var12 = var2.bind(var0)();
+        var _closure2_slot9 = var12;
+        var15 = 9;
+        var2 = var9[var15];
         var4 = var8.bind(var0)(var2);
         var3 = var4.useAnimatedReaction;
         var2 = function() {
@@ -133,23 +149,23 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             return var0;
         };
         var6 = {};
-        var6.restingQuestDockMode = var16;
-        var6.minExpandedContentHeight = var15;
-        var6.windowDimensions = var14;
-        var6.safeArea = var13;
+        var6.restingQuestDockMode = var19;
+        var6.minExpandedContentHeight = var18;
+        var6.windowDimensions = var17;
+        var6.safeArea = var16;
         var2.__closure = var6;
         var6 = 9502251090521.0;
         var2.__workletHash = var6;
-        var6 = _closure1_slot15;
+        var6 = _closure1_slot17;
         var2.__initData = var6;
         var1 = function arg0, arg1() {
-            _fun47440: for (var _fun47440_ip = 0;;) switch (_fun47440_ip) {
+            _fun47438: for (var _fun47438_ip = 0;;) switch (_fun47438_ip) {
                 case 0:
                     var1 = arg0;
                     var5 = arg1;
                     var4 = _closure1_slot0;
                     var2 = _closure1_slot2;
-                    var0 = 9;
+                    var0 = 10;
                     var2 = var2[var0];
                     var0 = undefined;
                     var7 = var4.bind(var0)(var2);
@@ -158,16 +174,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var8 = var4 != var5;
                     var2 = undefined;
                     if (!var8) {
-                        _fun47440_ip = 51;
-                        continue _fun47440
+                        _fun47438_ip = 51;
+                        continue _fun47438
                     }
                 case 48:
                     var2 = var5;
                 case 51:
                     var2 = var6.bind(var7)(var1, var2);
                     if (var2) {
-                        _fun47440_ip = 897;
-                        continue _fun47440
+                        _fun47438_ip = 961;
+                        continue _fun47438
                     }
                 case 63:
                     var6 = var1.restingQuestDockMode;
@@ -178,41 +194,41 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = _closure1_slot6;
                     var1 = var1.RESET_TO_PREVIOUS;
                     if (!(var1 !== var6)) {
-                        _fun47440_ip = 822;
-                        continue _fun47440
+                        _fun47438_ip = 886;
+                        continue _fun47438
                     }
                 case 110:
                     var1 = _closure1_slot6;
                     var1 = var1.COLLAPSED;
                     if (!(var1 !== var6)) {
-                        _fun47440_ip = 662;
-                        continue _fun47440
+                        _fun47438_ip = 694;
+                        continue _fun47438
                     }
                 case 127:
                     var1 = _closure1_slot6;
                     var1 = var1.CLOSED;
                     if (!(var1 !== var6)) {
-                        _fun47440_ip = 509;
-                        continue _fun47440
+                        _fun47438_ip = 509;
+                        continue _fun47438
                     }
                 case 144:
                     var1 = _closure1_slot6;
                     var1 = var1.SOFT_DISMISSED;
                     if (!(var1 !== var6)) {
-                        _fun47440_ip = 509;
-                        continue _fun47440
+                        _fun47438_ip = 509;
+                        continue _fun47438
                     }
                 case 161:
                     var1 = _closure1_slot6;
                     var1 = var1.EXPANDED;
                     if (!(var1 === var6)) {
-                        _fun47440_ip = 897;
-                        continue _fun47440
+                        _fun47438_ip = 961;
+                        continue _fun47438
                     }
                 case 178:
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot2;
-                    var14 = 10;
+                    var14 = 11;
                     var1 = var1[var14];
                     var7 = var2.bind(var0)(var1);
                     var2 = var7.getQuestDockExpandedHeightLimits;
@@ -227,14 +243,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = _closure1_slot8;
                     var2 = var7 <= var2;
                     if (var2) {
-                        _fun47440_ip = 345;
-                        continue _fun47440
+                        _fun47438_ip = 345;
+                        continue _fun47438
                     }
                 case 260:
                     var7 = var4 != var5;
                     if (!var7) {
-                        _fun47440_ip = 342;
-                        continue _fun47440
+                        _fun47438_ip = 342;
+                        continue _fun47438
                     }
                 case 267:
                     var10 = _closure2_slot0;
@@ -256,8 +272,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = var7;
                 case 345:
                     if (var2) {
-                        _fun47440_ip = 366;
-                        continue _fun47440
+                        _fun47438_ip = 366;
+                        continue _fun47438
                     }
                 case 348:
                     var7 = _closure2_slot0;
@@ -296,8 +312,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = _closure1_slot6;
                     var1 = var1.EXPANDED;
                     var1 = var2.bind(var7)(var1);
-                    _fun47440_ip = 897;
-                    continue _fun47440;
+                    _fun47438_ip = 961;
+                    continue _fun47438;
                 case 509:
                     var9 = _closure2_slot0;
                     var7 = var9.set;
@@ -306,22 +322,45 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var19 = var10.bind(var9)();
                     var20 = var2;
                     var10 = copyDataProperties(var20, var19);
-                    var11 = 0;
+                    var15 = 0;
                     var10 = 'x';
-                    var2[var10] = var11;
+                    var2[var10] = var15;
                     var11 = _closure1_slot12;
                     var10 = -1;
                     var11 = var10 * var11;
-                    var10 = 'y';
-                    var2[var10] = var11;
-                    var11 = _closure1_slot0;
-                    var13 = _closure1_slot2;
-                    var10 = 10;
-                    var10 = var13[var10];
-                    var14 = var11.bind(var0)(var10);
+                    var10 = _closure2_slot8;
+                    var13 = var11 - var10;
+                    var11 = 'y';
+                    var2[var11] = var13;
+                    var13 = _closure1_slot0;
+                    var14 = _closure1_slot2;
+                    var11 = 11;
+                    var11 = var14[var11];
+                    var14 = var13.bind(var0)(var11);
                     var13 = var14.getQuestDockClosedWidth;
+                    if (!(!(var10 > var15))) {
+                        _fun47438_ip = 618;
+                        continue _fun47438
+                    }
+                case 611:
                     var11 = var8.left;
+                    _fun47438_ip = 622;
+                    continue _fun47438;
+                case 618:
+                    var11 = _closure2_slot9;
+                case 622:
+                    var10 = _closure2_slot8;
+                    if (!(!(var10 > var15))) {
+                        _fun47438_ip = 637;
+                        continue _fun47438
+                    }
+                case 630:
                     var10 = var8.right;
+                    _fun47438_ip = 641;
+                    continue _fun47438;
+                case 637:
+                    var10 = _closure2_slot9;
+                case 641:
                     var11 = var13.bind(var14)(var12, var11, var10);
                     var10 = 'width';
                     var2[var10] = var11;
@@ -332,9 +371,9 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = _closure2_slot2;
                     var1 = var2.set;
                     var1 = var1.bind(var2)(var6);
-                    _fun47440_ip = 897;
-                    continue _fun47440;
-                case 662:
+                    _fun47438_ip = 961;
+                    continue _fun47438;
+                case 694:
                     var7 = _closure2_slot0;
                     var6 = var7.set;
                     var2 = {};
@@ -342,22 +381,45 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var19 = var9.bind(var7)();
                     var20 = var2;
                     var9 = copyDataProperties(var20, var19);
-                    var10 = 0;
+                    var14 = 0;
                     var9 = 'x';
-                    var2[var9] = var10;
+                    var2[var9] = var14;
                     var10 = _closure1_slot13;
                     var9 = -1;
                     var10 = var9 * var10;
-                    var9 = 'y';
-                    var2[var9] = var10;
-                    var10 = _closure1_slot0;
-                    var11 = _closure1_slot2;
-                    var9 = 10;
-                    var9 = var11[var9];
-                    var11 = var10.bind(var0)(var9);
+                    var9 = _closure2_slot7;
+                    var11 = var10 - var9;
+                    var10 = 'y';
+                    var2[var10] = var11;
+                    var11 = _closure1_slot0;
+                    var13 = _closure1_slot2;
+                    var10 = 11;
+                    var10 = var13[var10];
+                    var11 = var11.bind(var0)(var10);
                     var10 = var11.getQuestDockCollapsedWidth;
+                    if (!(!(var9 > var14))) {
+                        _fun47438_ip = 803;
+                        continue _fun47438
+                    }
+                case 796:
                     var9 = var8.left;
+                    _fun47438_ip = 807;
+                    continue _fun47438;
+                case 803:
+                    var9 = _closure2_slot9;
+                case 807:
+                    var13 = _closure2_slot7;
+                    if (!(!(var13 > var14))) {
+                        _fun47438_ip = 822;
+                        continue _fun47438
+                    }
+                case 815:
                     var8 = var8.right;
+                    _fun47438_ip = 826;
+                    continue _fun47438;
+                case 822:
+                    var8 = _closure2_slot9;
+                case 826:
                     var9 = var10.bind(var11)(var12, var9, var8);
                     var8 = 'width';
                     var2[var8] = var9;
@@ -370,12 +432,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = _closure1_slot6;
                     var1 = var1.COLLAPSED;
                     var1 = var2.bind(var6)(var1);
-                    _fun47440_ip = 897;
-                    continue _fun47440;
-                case 822:
+                    _fun47438_ip = 961;
+                    continue _fun47438;
+                case 886:
                     var2 = _closure1_slot0;
                     var6 = _closure1_slot2;
-                    var1 = 8;
+                    var1 = 9;
                     var1 = var6[var1];
                     var6 = var2.bind(var0)(var1);
                     var2 = var6.runOnJS;
@@ -384,53 +446,56 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var6 = var4 == var5;
                     var1 = undefined;
                     if (var6) {
-                        _fun47440_ip = 874;
-                        continue _fun47440
+                        _fun47438_ip = 938;
+                        continue _fun47438
                     }
-                case 868:
+                case 932:
                     var1 = var5.restingQuestDockMode;
-                case 874:
+                case 938:
                     if (!(var4 == var1)) {
-                        _fun47440_ip = 888;
-                        continue _fun47440
+                        _fun47438_ip = 952;
+                        continue _fun47438
                     }
-                case 878:
+                case 942:
                     var3 = _closure1_slot6;
                     var1 = var3.COLLAPSED;
-                case 888:
+                case 952:
                     var1 = var2.bind(var0)(var1);
                     var1 = undefined;
                     return var1;
-                case 897:
+                case 961:
                     return var0;
             }
         };
         var6 = {};
-        var13 = 9;
-        var13 = var9[var13];
+        var16 = 10;
+        var16 = var9[var16];
+        var16 = var8.bind(var0)(var16);
+        var16 = var16.cheapWorkletShallowEqual;
+        var6.cheapWorkletShallowEqual = var16;
+        var16 = _closure1_slot6;
+        var6.QuestDockMode = var16;
+        var15 = var9[var15];
+        var15 = var8.bind(var0)(var15);
+        var15 = var15.runOnJS;
+        var6.runOnJS = var15;
+        var6.setRestingQuestDockMode = var14;
+        var6.questDockWrapperSpecs = var13;
+        var13 = _closure1_slot13;
+        var6.QUEST_DOCK_VERTICAL_EDGE_GUTTER_COLLAPSED = var13;
+        var6.youBarHeightForCollapsed = var7;
+        var7 = 11;
+        var13 = var9[var7];
         var13 = var8.bind(var0)(var13);
-        var13 = var13.cheapWorkletShallowEqual;
-        var6.cheapWorkletShallowEqual = var13;
-        var13 = _closure1_slot6;
-        var6.QuestDockMode = var13;
-        var12 = var9[var12];
-        var12 = var8.bind(var0)(var12);
-        var12 = var12.runOnJS;
-        var6.runOnJS = var12;
-        var6.setRestingQuestDockMode = var11;
-        var6.questDockWrapperSpecs = var7;
-        var7 = _closure1_slot13;
-        var6.QUEST_DOCK_VERTICAL_EDGE_GUTTER_COLLAPSED = var7;
-        var7 = 10;
-        var11 = var9[var7];
-        var11 = var8.bind(var0)(var11);
-        var11 = var11.getQuestDockCollapsedWidth;
-        var6.getQuestDockCollapsedWidth = var11;
-        var11 = _closure1_slot8;
-        var6.QUEST_DOCK_COLLAPSED_HEIGHT = var11;
-        var6.activeQuestDockMode = var10;
-        var10 = _closure1_slot12;
-        var6.QUEST_DOCK_VERTICAL_EDGE_GUTTER_CLOSED = var10;
+        var13 = var13.getQuestDockCollapsedWidth;
+        var6.getQuestDockCollapsedWidth = var13;
+        var6.youBarHorizontalMargin = var12;
+        var12 = _closure1_slot8;
+        var6.QUEST_DOCK_COLLAPSED_HEIGHT = var12;
+        var6.activeQuestDockMode = var11;
+        var11 = _closure1_slot12;
+        var6.QUEST_DOCK_VERTICAL_EDGE_GUTTER_CLOSED = var11;
+        var6.youBarHeightForClosed = var10;
         var10 = var9[var7];
         var10 = var8.bind(var0)(var10);
         var10 = var10.getQuestDockClosedWidth;
@@ -448,9 +513,9 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var7 = var7.getQuestDockExpandedWidth;
         var6.getQuestDockExpandedWidth = var7;
         var1.__closure = var6;
-        var6 = 8147170339175.0;
+        var6 = 12151704651865.0;
         var1.__workletHash = var6;
-        var5 = _closure1_slot16;
+        var5 = _closure1_slot18;
         var1.__initData = var5;
         var1 = var3.bind(var4)(var2, var1);
         return var0;
@@ -459,7 +524,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = function() {
         var3 = _closure1_slot0;
         var4 = _closure1_slot2;
-        var2 = 11;
+        var2 = 12;
         var2 = var4[var2];
         var5 = undefined;
         var6 = var3.bind(var5)(var2);
@@ -492,12 +557,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1[0] = var5;
         var1[1] = var4;
         var0 = function() { // Environment: var0
-            _fun47443: for (var _fun47443_ip = 0;;) switch (_fun47443_ip) {
+            _fun47441: for (var _fun47441_ip = 0;;) switch (_fun47441_ip) {
                 case 0:
                     var1 = _closure2_slot1;
                     if (var1) {
-                        _fun47443_ip = 14;
-                        continue _fun47443
+                        _fun47441_ip = 14;
+                        continue _fun47441
                     }
                 case 10:
                     var1 = 0;
@@ -507,29 +572,29 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = _closure1_slot6;
                     var1 = var1.COLLAPSED;
                     if (!(var1 !== var2)) {
-                        _fun47443_ip = 93;
-                        continue _fun47443
+                        _fun47441_ip = 93;
+                        continue _fun47441
                     }
                 case 35:
                     var1 = _closure1_slot6;
                     var1 = var1.EXPANDED;
                     if (!(var1 !== var2)) {
-                        _fun47443_ip = 87;
-                        continue _fun47443
+                        _fun47441_ip = 87;
+                        continue _fun47441
                     }
                 case 49:
                     var1 = _closure1_slot6;
                     var1 = var1.CLOSED;
                     if (!(var1 !== var2)) {
-                        _fun47443_ip = 81;
-                        continue _fun47443
+                        _fun47441_ip = 81;
+                        continue _fun47441
                     }
                 case 63:
                     var1 = _closure1_slot6;
                     var1 = var1.SOFT_DISMISSED;
                     if (!(var1 !== var2)) {
-                        _fun47443_ip = 81;
-                        continue _fun47443
+                        _fun47441_ip = 81;
+                        continue _fun47441
                     }
                 case 77:
                     var1 = 0;
@@ -554,7 +619,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var3 = var4.useContext;
         var5 = _closure1_slot0;
         var7 = _closure1_slot2;
-        var0 = 6;
+        var0 = 7;
         var2 = var7[var0];
         var0 = undefined;
         var2 = var5.bind(var0)(var2);
@@ -563,7 +628,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var6 = var2.setRestingQuestDockMode;
         var _closure2_slot0 = var6;
         var3 = var4.useContext;
-        var2 = 5;
+        var2 = 6;
         var2 = var7[var2];
         var2 = var5.bind(var0)(var2);
         var2 = var2.QuestDockGestureContext;
@@ -576,7 +641,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2[1] = var5;
         var1 = function() { // Environment: var1
             var4 = function() {
-                _fun47446: for (var _fun47446_ip = 0;;) switch (_fun47446_ip) {
+                _fun47444: for (var _fun47444_ip = 0;;) switch (_fun47444_ip) {
                     case 0:
                         var2 = _closure2_slot1;
                         var0 = var2.get;
@@ -585,13 +650,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var2 = var2.SOFT_DISMISSED;
                         var2 = var3 !== var2;
                         if (var2) {
-                            _fun47446_ip = 79;
-                            continue _fun47446
+                            _fun47444_ip = 79;
+                            continue _fun47444
                         }
                     case 36:
                         var5 = _closure1_slot0;
                         var4 = _closure1_slot2;
-                        var3 = 10;
+                        var3 = 11;
                         var4 = var4[var3];
                         var3 = undefined;
                         var5 = var5.bind(var3)(var4);
@@ -601,8 +666,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var2 = var4.bind(var5)(var3);
                     case 79:
                         if (var2) {
-                            _fun47446_ip = 103;
-                            continue _fun47446
+                            _fun47444_ip = 103;
+                            continue _fun47444
                         }
                     case 82:
                         var2 = _closure2_slot0;
@@ -621,7 +686,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2 = var1.setInterval;
             var5 = _closure1_slot1;
             var6 = _closure1_slot2;
-            var1 = 12;
+            var1 = 13;
             var1 = var6[var1];
             var1 = var5.bind(var3)(var1);
             var1 = var1.Millis;
@@ -649,7 +714,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var _closure2_slot0 = var5;
         var4 = _closure1_slot0;
         var3 = _closure1_slot2;
-        var2 = 13;
+        var2 = 14;
         var3 = var3[var2];
         var2 = undefined;
         var3 = var4.bind(var2)(var3);
@@ -669,14 +734,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var4.questId = var0;
             var6 = _closure1_slot0;
             var2 = _closure1_slot2;
-            var7 = 14;
+            var7 = 15;
             var8 = var2[var7];
             var0 = undefined;
             var8 = var6.bind(var0)(var8);
             var8 = var8.QuestContent;
             var8 = var8.QUEST_BAR_MOBILE;
             var4.questContent = var8;
-            var8 = 15;
+            var8 = 16;
             var8 = var2[var8];
             var8 = var6.bind(var0)(var8);
             var8 = var8.QuestContentCTA;
@@ -689,14 +754,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var4.sourceQuestContent = var7;
             var4 = var5.bind(var0)(var4);
             var4 = _closure1_slot1;
-            var3 = 16;
+            var3 = 17;
             var3 = var2[var3];
             var5 = var4.bind(var0)(var3);
             var4 = var5.openLazy;
-            var3 = 18;
+            var3 = 19;
             var3 = var2[var3];
             var6 = var6.bind(var0)(var3);
-            var3 = 17;
+            var3 = 18;
             var3 = var2[var3];
             var2 = var2.paths;
             var3 = var6.bind(var0)(var3, var2);
@@ -711,4 +776,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useActionSheetPressHandler = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 5310, 5287, 5312, 5313, 5316, 5360, 3717, 5362, 5311, 566, 667, 5363, 5289, 5337, 3282, 5371, 1307, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 5312, 5289, 5314, 5282, 5315, 5318, 5362, 3719, 5364, 5313, 566, 667, 5365, 5291, 5339, 3284, 5373, 1307, 2]);

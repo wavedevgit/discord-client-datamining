@@ -162,4 +162,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.parseBioReactWithCachedAST = var3;
     var2.parseBioReactWithoutScrolling = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [4789, 4790, 3936, 1386, 4872, 4788, 3151, 22, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [4791, 4792, 3938, 1386, 4874, 4790, 3153, 22, 2]);

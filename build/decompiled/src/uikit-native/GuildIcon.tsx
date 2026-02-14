@@ -927,4 +927,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.GuildIconSizes = var3;
     var2.ImageSizes = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 7456, 1416, 660, 33, 1297, 671, 1607, 4742, 4709, 6532, 290, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 7458, 1416, 660, 33, 1297, 671, 1607, 4744, 4711, 6534, 290, 2]);

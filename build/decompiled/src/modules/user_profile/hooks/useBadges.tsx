@@ -192,4 +192,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = 'quest_completed';
     var2.QUEST_COMPLETED_BADGE = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3241, 1621, 1348, 632, 1235, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3243, 1621, 1348, 632, 1235, 2]);

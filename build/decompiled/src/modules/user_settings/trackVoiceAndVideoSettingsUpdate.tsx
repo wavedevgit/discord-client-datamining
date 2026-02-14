@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/user_settings/trackVoiceAndVideoSettingsUpdate.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0, arg1, arg2, arg3() {
-        _fun66994: for (var _fun66994_ip = 0;;) switch (_fun66994_ip) {
+        _fun66789: for (var _fun66789_ip = 0;;) switch (_fun66789_ip) {
             case 0:
                 var7 = arg2;
                 var2 = _closure1_slot0;
@@ -45,8 +45,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var4 != var7;
                 var4 = undefined;
                 if (!var5) {
-                    _fun66994_ip = 69;
-                    continue _fun66994
+                    _fun66789_ip = 69;
+                    continue _fun66789
                 }
             case 56:
                 var5 = global;

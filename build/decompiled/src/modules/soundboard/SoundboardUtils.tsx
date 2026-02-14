@@ -854,4 +854,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.trackSoundFavorited = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 1310, 1376, 3096, 1621, 3952, 3953, 660, 1565, 1348, 3114, 5749, 5671, 4806, 5750, 5777, 5778, 5779, 632, 3240, 1358, 1355, 796, 4308, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 1310, 1376, 3098, 1621, 3954, 3955, 660, 1565, 1348, 3116, 5751, 5673, 4808, 5752, 5779, 5780, 5781, 632, 3242, 1358, 1355, 796, 4310, 2]);

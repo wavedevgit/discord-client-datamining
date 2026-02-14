@@ -37,7 +37,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.makeStorefrontSKUCodedLink = var3;
     var1 = function arg0() {
-        _fun28979: for (var _fun28979_ip = 0;;) switch (_fun28979_ip) {
+        _fun28983: for (var _fun28983_ip = 0;;) switch (_fun28983_ip) {
             case 0:
                 var2 = arg0;
                 var1 = var2.split;
@@ -46,8 +46,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var3.length;
                 var2 = 2;
                 if (!(var2 === var0)) {
-                    _fun28979_ip = 70;
-                    continue _fun28979
+                    _fun28983_ip = 70;
+                    continue _fun28983
                 }
             case 29:
                 var1 = _closure1_slot0;

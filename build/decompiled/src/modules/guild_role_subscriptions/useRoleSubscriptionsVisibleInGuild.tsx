@@ -265,4 +265,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useShowRoleSubscriptionsInChannelList = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1678, 1410, 660, 5679, 5680, 566, 5681, 5686, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1678, 1410, 660, 5681, 5682, 566, 5683, 5688, 2]);

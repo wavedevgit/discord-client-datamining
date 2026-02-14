@@ -38,7 +38,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     var4 = arg0;
                                     ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 3);
                                     if (var3) {
-                                        _fun10724_ip = 388;
+                                        _fun10724_ip = 392;
                                         continue _fun10724
                                     }
                                 case 13:
@@ -72,33 +72,33 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     var9 = var10 <= var9;
                                     var4 = var9;
                                     if (!var9) {
-                                        _fun10724_ip = 138;
+                                        _fun10724_ip = 142;
                                         continue _fun10724
                                     }
-                                case 127:
+                                case 131:
                                     var10 = _closure2_slot3;
                                     var9 = 15;
                                     var4 = var10 < var9;
-                                case 138:
+                                case 142:
                                     var5.keepalive = var4;
                                     var4 = _closure2_slot0;
                                     var4 = var4.fetchOptions;
                                     var1 = var7.bind(var8)(var5, var4);
-                                case 159: // try_start_0 // try_start_1
+                                case 163: // try_start_0 // try_start_1
                                     var5 = _closure2_slot1;
                                     var4 = _closure2_slot0;
                                     var4 = var4.url;
                                     var1 = var5.bind(var6)(var4, var1);
-                                    SaveGenerator(address = 182);
-                                case 180:
+                                    SaveGenerator(address = 186);
+                                case 184:
                                     return var1;
-                                case 182:
+                                case 186:
                                     ResumeGenerator(result_out_reg = 1, return_bool_out_reg = 4);
                                     if (var4) {
-                                        _fun10724_ip = 290;
+                                        _fun10724_ip = 294;
                                         continue _fun10724
                                     }
-                                case 188:
+                                case 192:
                                     var4 = {};
                                     var5 = var1.status;
                                     var4.statusCode = var5;
@@ -114,7 +114,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     var7 = var8.bind(var9)(var7);
                                     var5['retry-after'] = var7;
                                     var4.headers = var5;
-                                case 261: // try_end0 // try_end1
+                                case 265: // try_end0 // try_end1
                                     var7 = _closure2_slot2;
                                     var5 = var2;
                                     var5 = var7 - var5;
@@ -123,7 +123,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     var5 = var5 - 1;
                                     _closure2_slot3 = var5;
                                     return var4;
-                                case 290:
+                                case 294:
                                     var5 = _closure2_slot2;
                                     var4 = var2;
                                     var4 = var5 - var4;
@@ -132,7 +132,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     var4 = var4 - 1;
                                     _closure2_slot3 = var4;
                                     return var1;
-                                case 319: // try_start_2 // catch_target0
+                                case 323: // try_start_2 // catch_target0
                                     CatchBlockStart(arg_register = 1);
                                     var5 = _closure1_slot0;
                                     var7 = _closure1_slot1;
@@ -143,7 +143,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     var4 = 'fetch';
                                     var4 = var5.bind(var6)(var4);
                                     throw var1;
-                                case 361: // try_end2 // catch_target1 // catch_target2
+                                case 365: // try_end2 // catch_target1 // catch_target2
                                     CatchBlockStart(arg_register = 1);
                                     var4 = _closure2_slot2;
                                     var2 = var4 - var2;
@@ -152,7 +152,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     var2 = var2 - 1;
                                     _closure2_slot3 = var2;
                                     throw var1;
-                                case 388:
+                                case 392:
                                     return var0;
                             }
                         };

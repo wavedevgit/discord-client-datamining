@@ -56,7 +56,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/guild_sidebar/native/ChannelBadge.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun103201: for (var _fun103201_ip = 0;;) switch (_fun103201_ip) {
+        _fun103242: for (var _fun103242_ip = 0;;) switch (_fun103242_ip) {
             case 0:
                 var1 = arg0;
                 var8 = var1.mentionCount;
@@ -84,47 +84,47 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13 = var9.bind(var10)(var3, var2);
                 var2 = null;
                 if (!(var2 != var8)) {
-                    _fun103201_ip = 113;
-                    continue _fun103201
+                    _fun103242_ip = 113;
+                    continue _fun103242
                 }
             case 104:
                 var3 = 0;
                 if (!(!(var8 > var3))) {
-                    _fun103201_ip = 324;
-                    continue _fun103201
+                    _fun103242_ip = 324;
+                    continue _fun103242
                 }
             case 113:
                 if (var0) {
-                    _fun103201_ip = 264;
-                    continue _fun103201
+                    _fun103242_ip = 264;
+                    continue _fun103242
                 }
             case 119:
                 var3 = var2 != var1;
                 var0 = null;
                 if (!var3) {
-                    _fun103201_ip = 262;
-                    continue _fun103201
+                    _fun103242_ip = 262;
+                    continue _fun103242
                 }
             case 131:
                 var0 = null;
                 if (var1) {
-                    _fun103201_ip = 262;
-                    continue _fun103201
+                    _fun103242_ip = 262;
+                    continue _fun103242
                 }
             case 139:
                 var1 = var2 != var14;
                 var0 = null;
                 if (!var1) {
-                    _fun103201_ip = 262;
-                    continue _fun103201
+                    _fun103242_ip = 262;
+                    continue _fun103242
                 }
             case 148:
                 var1 = 0;
                 var1 = var14 > var1;
                 var0 = null;
                 if (!var1) {
-                    _fun103201_ip = 262;
-                    continue _fun103201
+                    _fun103242_ip = 262;
+                    continue _fun103242
                 }
             case 159:
                 var3 = _closure1_slot5;
@@ -152,8 +152,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1.children = var9;
                 var0 = var3.bind(var4)(var2, var1);
             case 262:
-                _fun103201_ip = 322;
-                continue _fun103201;
+                _fun103242_ip = 322;
+                continue _fun103242;
             case 264:
                 var3 = _closure1_slot5;
                 var2 = _closure1_slot3;
@@ -170,8 +170,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1.children = var9;
                 var0 = var3.bind(var4)(var2, var1);
             case 322:
-                _fun103201_ip = 392;
-                continue _fun103201;
+                _fun103242_ip = 392;
+                continue _fun103242;
             case 324:
                 var3 = _closure1_slot5;
                 var2 = _closure1_slot3;
@@ -195,4 +195,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1690, 33, 1297, 632, 13461, 11717, 3938, 1604, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1690, 33, 1297, 632, 13466, 11722, 3940, 1604, 2]);

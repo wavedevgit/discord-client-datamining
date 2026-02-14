@@ -1,158 +1,116 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var5 = require;
     var2 = exports;
-    var7 = dependencyMap;
-    var4 = global;
-    var8 = var4.Object;
-    var6 = var8.defineProperty;
-    var1 = {};
-    var0 = true;
-    var1.value = var0;
+    var0 = global;
+    var6 = var0.Object;
+    var5 = var6.defineProperty;
+    var4 = {};
+    var3 = true;
+    var4.value = var3;
     var0 = '__esModule';
-    var0 = var6.bind(var8)(var2, var0, var1);
+    var0 = var5.bind(var6)(var2, var0, var4);
+    var4 = dependencyMap;
     var0 = 0;
-    var1 = var7[var0];
+    var5 = var4[var0];
+    var4 = require;
     var0 = undefined;
-    var1 = var5.bind(var0)(var1);
-    var1 = var1.codegenNativeComponent;
-    var1 = {};
-    var6 = 'RNSScreen';
-    var1.uiViewClassName = var6;
-    var8 = {};
-    var9 = {};
-    var10 = 'onAppear';
-    var9.registrationName = var10;
-    var8.topAppear = var9;
-    var9 = {};
-    var10 = 'onDisappear';
-    var9.registrationName = var10;
-    var8.topDisappear = var9;
-    var9 = {};
-    var10 = 'onDismissed';
-    var9.registrationName = var10;
-    var8.topDismissed = var9;
-    var9 = {};
-    var10 = 'onNativeDismissCancelled';
-    var9.registrationName = var10;
-    var8.topNativeDismissCancelled = var9;
-    var9 = {};
-    var10 = 'onWillAppear';
-    var9.registrationName = var10;
-    var8.topWillAppear = var9;
-    var9 = {};
-    var10 = 'onWillDisappear';
-    var9.registrationName = var10;
-    var8.topWillDisappear = var9;
-    var9 = {};
-    var10 = 'onHeaderHeightChange';
-    var9.registrationName = var10;
-    var8.topHeaderHeightChange = var9;
-    var9 = {};
-    var10 = 'onTransitionProgress';
-    var9.registrationName = var10;
-    var8.topTransitionProgress = var9;
-    var9 = {};
-    var10 = 'onGestureCancel';
-    var9.registrationName = var10;
-    var8.topGestureCancel = var9;
-    var9 = {};
-    var10 = 'onHeaderBackButtonClicked';
-    var9.registrationName = var10;
-    var8.topHeaderBackButtonClicked = var9;
-    var9 = {};
-    var10 = 'onSheetDetentChanged';
-    var9.registrationName = var10;
-    var8.topSheetDetentChanged = var9;
-    var1.directEventTypes = var8;
-    var10 = var4.Object;
-    var9 = var10.assign;
-    var8 = {
-        'screenId': true,
-        'sheetAllowedDetents': true,
-        'sheetLargestUndimmedDetent': true,
-        'sheetGrabberVisible': true,
-        'sheetCornerRadius': true,
-        'sheetExpandsWhenScrolledToEdge': true,
-        'sheetInitialDetent': true,
-        'sheetElevation': true,
-        'sheetShouldOverflowTopInset': true,
-        'sheetDefaultResizeAnimationEnabled': true,
-        'customAnimationOnSwipe': true,
-        'fullScreenSwipeEnabled': true,
-        'fullScreenSwipeShadowEnabled': true,
-        'homeIndicatorHidden': true,
-        'preventNativeDismiss': true,
-        'gestureEnabled': true,
-        'statusBarColor': null,
-        'statusBarHidden': true,
-        'screenOrientation': true,
-        'statusBarAnimation': true,
-        'statusBarStyle': true,
-        'statusBarTranslucent': true,
-        'gestureResponseDistance': true,
-        'stackPresentation': true,
-        'stackAnimation': true,
-        'transitionDuration': true,
-        'replaceAnimation': true,
-        'swipeDirection': true,
-        'hideKeyboardOnSwipe': true,
-        'activityState': true,
-        'navigationBarColor': null,
-        'navigationBarTranslucent': true,
-        'navigationBarHidden': true,
-        'nativeBackButtonDismissalEnabled': true,
-        'bottomScrollEdgeEffect': true,
-        'leftScrollEdgeEffect': true,
-        'rightScrollEdgeEffect': true,
-        'topScrollEdgeEffect': true,
-        'synchronousShadowStateUpdatesEnabled': true,
-        'androidResetScreenShadowStateOnOrientationChangeEnabled': true
+    var4 = var4.bind(var0)(var5);
+    var5 = var4.Platform;
+    var4 = var4.UIManager;
+    var _closure1_slot0 = var4;
+    var _closure1_slot1 = var3;
+    var4 = false;
+    var _closure1_slot2 = var4;
+    var2.isNativePlatformSupported = var3;
+    var3 = function() {
+        _fun37414: for (var _fun37414_ip = 0;;) switch (_fun37414_ip) {
+            case 0:
+                var0 = undefined;
+                var3 = undefined;
+                var1 = arguments.length;
+                var2 = 0;
+                var4 = var1 > var2;
+                if (!var4) {
+                    _fun37414_ip = 24;
+                    continue _fun37414
+                }
+            case 16:
+                var1 = arguments[var2];
+                var4 = var0 !== var1;
+            case 24:
+                var1 = !var4;
+                if (!var4) {
+                    _fun37414_ip = 34;
+                    continue _fun37414
+                }
+            case 30:
+                var1 = arguments[var2];
+            case 34:
+                _closure1_slot1 = var1;
+                if (!var1) {
+                    _fun37414_ip = 68;
+                    continue _fun37414
+                }
+            case 44:
+                var4 = _closure1_slot0;
+                var3 = var4.getViewManagerConfig;
+                var2 = 'RNSScreen';
+                var2 = var3.bind(var4)(var2);
+                var1 = !var2;
+            case 68:
+                if (!var1) {
+                    _fun37414_ip = 95;
+                    continue _fun37414
+                }
+            case 71:
+                var1 = global;
+                var3 = var1.console;
+                var2 = var3.error;
+                var1 = "Screen native module hasn't been linked. Please check the react-native-screens README for more details";
+                var1 = var2.bind(var3)(var1);
+            case 95:
+                return var0;
+        }
     };
-    var4 = {};
-    var11 = 1;
-    var12 = var7[var11];
-    var12 = var5.bind(var0)(var12);
-    var12 = var12.default;
-    var4.process = var12;
-    var8.statusBarColor = var4;
-    var4 = {};
-    var11 = var7[var11];
-    var11 = var5.bind(var0)(var11);
-    var11 = var11.default;
-    var4.process = var11;
-    var8.navigationBarColor = var4;
-    var4 = 2;
-    var4 = var7[var4];
-    var12 = var5.bind(var0)(var4);
-    var11 = var12.ConditionallyIgnoredEventHandlers;
-    var4 = {
-        'onAppear': true,
-        'onDisappear': true,
-        'onDismissed': true,
-        'onNativeDismissCancelled': true,
-        'onWillAppear': true,
-        'onWillDisappear': true,
-        'onHeaderHeightChange': true,
-        'onTransitionProgress': true,
-        'onGestureCancel': true,
-        'onHeaderBackButtonClicked': true,
-        'onSheetDetentChanged': true
+    var2.enableScreens = var3;
+    var3 = function() {
+        _fun37415: for (var _fun37415_ip = 0;;) switch (_fun37415_ip) {
+            case 0:
+                var0 = undefined;
+                var3 = undefined;
+                var2 = arguments.length;
+                var1 = 0;
+                var4 = var2 > var1;
+                if (!var4) {
+                    _fun37415_ip = 24;
+                    continue _fun37415
+                }
+            case 16:
+                var2 = arguments[var1];
+                var4 = var0 !== var2;
+            case 24:
+                var2 = !var4;
+                if (!var4) {
+                    _fun37415_ip = 34;
+                    continue _fun37415
+                }
+            case 30:
+                var2 = arguments[var1];
+            case 34:
+                _closure1_slot2 = var2;
+                return var0;
+        }
     };
-    var4 = var11.bind(var12)(var4);
-    var4 = var9.bind(var10)(var8, var4);
-    var1.validAttributes = var4;
-    var _closure1_slot0 = var1;
-    var4 = 3;
-    var4 = var7[var4];
-    var5 = var5.bind(var0)(var4);
-    var4 = var5.get;
-    var3 = function() { // Environment: var3
-        var0 = _closure1_slot0;
+    var2.enableFreeze = var3;
+    var3 = function() {
+        var0 = _closure1_slot1;
         return var0;
     };
-    var3 = var4.bind(var5)(var6, var3);
-    var2.default = var3;
-    var2.__INTERNAL_VIEW_CONFIG = var1;
+    var2.screensEnabled = var3;
+    var1 = function() {
+        var0 = _closure1_slot2;
+        return var0;
+    };
+    var2.freezeEnabled = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 38, 110, 42]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [27]);

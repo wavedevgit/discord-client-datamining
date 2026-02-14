@@ -258,4 +258,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useDiscountedPremiumProductInfo = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 4615, 483, 566, 4612, 4610, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 4617, 483, 566, 4614, 4612, 2]);

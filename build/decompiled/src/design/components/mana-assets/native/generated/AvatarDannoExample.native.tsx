@@ -81,4 +81,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.AvatarDannoExample = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 4709, 6035, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 4711, 6037, 2]);

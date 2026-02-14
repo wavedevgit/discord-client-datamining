@@ -81,4 +81,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var3;
     var2.getSafeAreaInsetsWorklet = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3717, 1568, 1584, 5361, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3719, 1568, 1584, 5363, 2]);

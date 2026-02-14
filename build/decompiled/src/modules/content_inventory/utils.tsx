@@ -1540,4 +1540,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getTrendingType = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [667, 21, 1235, 3050, 6925, 2724, 6919, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [667, 21, 1235, 3052, 6927, 2726, 6921, 2]);

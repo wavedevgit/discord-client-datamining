@@ -40,7 +40,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/stage_channels/useStageSpeakingForCurrentUser.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function() {
-        _fun39009: for (var _fun39009_ip = 0;;) switch (_fun39009_ip) {
+        _fun39007: for (var _fun39007_ip = 0;;) switch (_fun39007_ip) {
             case 0:
                 var3 = _closure1_slot0;
                 var4 = _closure1_slot1;
@@ -57,8 +57,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = 'useIsStageSpeakingDisabledForCurrentUser';
                 var0 = var2.bind(var3)(var0);
                 if (!var0) {
-                    _fun39009_ip = 68;
-                    continue _fun39009
+                    _fun39007_ip = 68;
+                    continue _fun39007
                 }
             case 65:
                 var0 = var1;
@@ -68,7 +68,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useIsStageSpeakingDisabledForCurrentUser = var3;
     var3 = function() {
-        _fun39010: for (var _fun39010_ip = 0;;) switch (_fun39010_ip) {
+        _fun39008: for (var _fun39008_ip = 0;;) switch (_fun39008_ip) {
             case 0:
                 var3 = _closure1_slot0;
                 var4 = _closure1_slot1;
@@ -85,8 +85,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = 'isStageSpeakingDisabledForCurrentUser';
                 var0 = var2.bind(var3)(var0);
                 if (!var0) {
-                    _fun39010_ip = 68;
-                    continue _fun39010
+                    _fun39008_ip = 68;
+                    continue _fun39008
                 }
             case 65:
                 var0 = var1;
@@ -96,7 +96,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.isStageSpeakingDisabledForCurrentUser = var3;
     var3 = function arg0() {
-        _fun39011: for (var _fun39011_ip = 0;;) switch (_fun39011_ip) {
+        _fun39009: for (var _fun39009_ip = 0;;) switch (_fun39009_ip) {
             case 0:
                 var6 = arg0;
                 var2 = _closure1_slot0;
@@ -109,8 +109,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var1.bind(var2)();
                 var1 = null;
                 if (!(var1 == var6)) {
-                    _fun39011_ip = 58;
-                    continue _fun39011
+                    _fun39009_ip = 58;
+                    continue _fun39009
                 }
             case 44:
                 var5 = _closure1_slot4;
@@ -120,8 +120,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var1 != var6;
                 var7 = null;
                 if (!var3) {
-                    _fun39011_ip = 81;
-                    continue _fun39011
+                    _fun39009_ip = 81;
+                    continue _fun39009
                 }
             case 67:
                 var5 = _closure1_slot2;
@@ -130,8 +130,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 81:
                 var1 = var1 != var7;
                 if (!var1) {
-                    _fun39011_ip = 114;
-                    continue _fun39011
+                    _fun39009_ip = 114;
+                    continue _fun39009
                 }
             case 88:
                 var6 = _closure1_slot3;
@@ -149,15 +149,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = 'shouldAgeVerifyToSpeakForCurrentUser';
                 var0 = var3.bind(var4)(var0);
                 if (!var0) {
-                    _fun39011_ip = 155;
-                    continue _fun39011
+                    _fun39009_ip = 155;
+                    continue _fun39009
                 }
             case 152:
                 var0 = !var2;
             case 155:
                 if (!var0) {
-                    _fun39011_ip = 161;
-                    continue _fun39011
+                    _fun39009_ip = 161;
+                    continue _fun39009
                 }
             case 158:
                 var0 = var1;
@@ -166,6 +166,97 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.shouldAgeVerifyToSpeakForCurrentUser = var3;
+    var3 = function arg0() {
+        _fun39010: for (var _fun39010_ip = 0;;) switch (_fun39010_ip) {
+            case 0:
+                var8 = arg0;
+                var1 = null;
+                if (!(var1 == var8)) {
+                    _fun39010_ip = 28;
+                    continue _fun39010
+                }
+            case 11:
+                var2 = _closure1_slot4;
+                var1 = var2.getChannelId;
+                var8 = var1.bind(var2)();
+            case 28:
+                var _closure2_slot0 = var8;
+                var4 = _closure1_slot0;
+                var5 = _closure1_slot1;
+                var2 = 6;
+                var2 = var5[var2];
+                var3 = undefined;
+                var7 = var4.bind(var3)(var2);
+                var6 = var7.useStateFromStores;
+                var9 = _closure1_slot3;
+                var2 = new Array(2);
+                var2[0] = var9;
+                var1 = _closure1_slot2;
+                var2[1] = var1;
+                var1 = new Array(1);
+                var1[0] = var8;
+                var0 = function() { // Environment: var0
+                    _fun39011: for (var _fun39011_ip = 0;;) switch (_fun39011_ip) {
+                        case 0:
+                            var2 = _closure2_slot0;
+                            var0 = null;
+                            var2 = var0 != var2;
+                            var4 = null;
+                            if (!var2) {
+                                _fun39011_ip = 39;
+                                continue _fun39011
+                            }
+                        case 18:
+                            var3 = _closure1_slot2;
+                            var2 = var3.getChannel;
+                            var1 = _closure2_slot0;
+                            var4 = var2.bind(var3)(var1);
+                        case 39:
+                            var0 = var0 != var4;
+                            if (!var0) {
+                                _fun39011_ip = 75;
+                                continue _fun39011
+                            }
+                        case 46:
+                            var3 = _closure1_slot3;
+                            var2 = var3.can;
+                            var1 = _closure1_slot5;
+                            var1 = var1.REQUEST_TO_SPEAK;
+                            var0 = var2.bind(var3)(var1, var4);
+                        case 75:
+                            return var0;
+                    }
+                };
+                var1 = var6.bind(var7)(var2, var0, var1);
+                var0 = 4;
+                var0 = var5[var0];
+                var2 = var4.bind(var3)(var0);
+                var0 = var2.useIsVerifiedAdult;
+                var2 = var0.bind(var2)();
+                var0 = 5;
+                var0 = var5[var0];
+                var4 = var4.bind(var3)(var0);
+                var3 = var4.useIsStagePawtectEnabled;
+                var0 = 'useShouldAgeVerifyToSpeakForCurrentUser';
+                var0 = var3.bind(var4)(var0);
+                if (!var0) {
+                    _fun39010_ip = 157;
+                    continue _fun39010
+                }
+            case 154:
+                var0 = !var2;
+            case 157:
+                if (!var0) {
+                    _fun39010_ip = 163;
+                    continue _fun39010
+                }
+            case 160:
+                var0 = var1;
+            case 163:
+                return var0;
+        }
+    };
+    var2.useShouldAgeVerifyToSpeakForCurrentUser = var3;
     var3 = function arg0() {
         _fun39012: for (var _fun39012_ip = 0;;) switch (_fun39012_ip) {
             case 0:
@@ -231,13 +322,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = 4;
                 var0 = var5[var0];
                 var2 = var4.bind(var3)(var0);
-                var0 = var2.useIsVerifiedAdult;
+                var0 = var2.useIsAgeVerified;
                 var2 = var0.bind(var2)();
                 var0 = 5;
                 var0 = var5[var0];
                 var4 = var4.bind(var3)(var0);
                 var3 = var4.useIsStagePawtectEnabled;
-                var0 = 'useShouldAgeVerifyToSpeakForCurrentUser';
+                var0 = 'useShouldShowAgeVerificationPopover';
                 var0 = var3.bind(var4)(var0);
                 if (!var0) {
                     _fun39012_ip = 157;
@@ -256,100 +347,9 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
         }
     };
-    var2.useShouldAgeVerifyToSpeakForCurrentUser = var3;
-    var3 = function arg0() {
-        _fun39014: for (var _fun39014_ip = 0;;) switch (_fun39014_ip) {
-            case 0:
-                var8 = arg0;
-                var1 = null;
-                if (!(var1 == var8)) {
-                    _fun39014_ip = 28;
-                    continue _fun39014
-                }
-            case 11:
-                var2 = _closure1_slot4;
-                var1 = var2.getChannelId;
-                var8 = var1.bind(var2)();
-            case 28:
-                var _closure2_slot0 = var8;
-                var4 = _closure1_slot0;
-                var5 = _closure1_slot1;
-                var2 = 6;
-                var2 = var5[var2];
-                var3 = undefined;
-                var7 = var4.bind(var3)(var2);
-                var6 = var7.useStateFromStores;
-                var9 = _closure1_slot3;
-                var2 = new Array(2);
-                var2[0] = var9;
-                var1 = _closure1_slot2;
-                var2[1] = var1;
-                var1 = new Array(1);
-                var1[0] = var8;
-                var0 = function() { // Environment: var0
-                    _fun39015: for (var _fun39015_ip = 0;;) switch (_fun39015_ip) {
-                        case 0:
-                            var2 = _closure2_slot0;
-                            var0 = null;
-                            var2 = var0 != var2;
-                            var4 = null;
-                            if (!var2) {
-                                _fun39015_ip = 39;
-                                continue _fun39015
-                            }
-                        case 18:
-                            var3 = _closure1_slot2;
-                            var2 = var3.getChannel;
-                            var1 = _closure2_slot0;
-                            var4 = var2.bind(var3)(var1);
-                        case 39:
-                            var0 = var0 != var4;
-                            if (!var0) {
-                                _fun39015_ip = 75;
-                                continue _fun39015
-                            }
-                        case 46:
-                            var3 = _closure1_slot3;
-                            var2 = var3.can;
-                            var1 = _closure1_slot5;
-                            var1 = var1.REQUEST_TO_SPEAK;
-                            var0 = var2.bind(var3)(var1, var4);
-                        case 75:
-                            return var0;
-                    }
-                };
-                var1 = var6.bind(var7)(var2, var0, var1);
-                var0 = 4;
-                var0 = var5[var0];
-                var2 = var4.bind(var3)(var0);
-                var0 = var2.useIsAgeVerified;
-                var2 = var0.bind(var2)();
-                var0 = 5;
-                var0 = var5[var0];
-                var4 = var4.bind(var3)(var0);
-                var3 = var4.useIsStagePawtectEnabled;
-                var0 = 'useShouldShowAgeVerificationPopover';
-                var0 = var3.bind(var4)(var0);
-                if (!var0) {
-                    _fun39014_ip = 157;
-                    continue _fun39014
-                }
-            case 154:
-                var0 = !var2;
-            case 157:
-                if (!var0) {
-                    _fun39014_ip = 163;
-                    continue _fun39014
-                }
-            case 160:
-                var0 = var1;
-            case 163:
-                return var0;
-        }
-    };
     var2.useShouldShowAgeVerificationPopover = var3;
     var1 = function() {
-        _fun39016: for (var _fun39016_ip = 0;;) switch (_fun39016_ip) {
+        _fun39014: for (var _fun39014_ip = 0;;) switch (_fun39014_ip) {
             case 0:
                 var3 = _closure1_slot0;
                 var4 = _closure1_slot1;
@@ -366,8 +366,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = 'useShouldShowAgeVerificationForEvent';
                 var0 = var2.bind(var3)(var0);
                 if (!var0) {
-                    _fun39016_ip = 68;
-                    continue _fun39016
+                    _fun39014_ip = 68;
+                    continue _fun39014
                 }
             case 65:
                 var0 = !var1;
@@ -377,4 +377,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useShouldShowAgeVerificationForEvent = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1372, 3096, 1675, 483, 4254, 12279, 566, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1372, 3098, 1675, 483, 4256, 12285, 566, 2]);

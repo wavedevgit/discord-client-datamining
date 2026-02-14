@@ -493,4 +493,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.fetchAgeVerificationMethods = var3;
     var2.fetchAgeVerificationMethodsSuspendedUser = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 1217, 660, 5999, 507, 807, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 1217, 660, 6001, 507, 807, 2]);

@@ -325,4 +325,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.createEmojiAddedSystemMessage = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [4744, 1372, 3096, 660, 6753, 6754, 6845, 1235, 6755, 1417, 4793, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [4746, 1372, 3098, 660, 6755, 6756, 6847, 1235, 6757, 1417, 4795, 2]);

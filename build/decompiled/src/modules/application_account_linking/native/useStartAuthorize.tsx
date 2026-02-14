@@ -247,4 +247,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useStartAuthorize = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 31, 660, 6967, 6968, 3149, 6969, 796, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 31, 660, 6969, 6970, 3151, 6971, 796, 2]);

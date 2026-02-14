@@ -179,4 +179,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useGetStreamApplication = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3607, 660, 628, 566, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3609, 660, 628, 566, 2]);

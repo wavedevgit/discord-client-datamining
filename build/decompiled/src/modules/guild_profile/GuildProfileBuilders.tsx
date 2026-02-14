@@ -960,4 +960,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.buildGuildProfileFromInvite = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [4744, 3109, 7442, 1304, 7443, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [4746, 3111, 7444, 1304, 7445, 2]);

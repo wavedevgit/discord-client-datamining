@@ -56,22 +56,22 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2 = var2.bind(var3)(var1);
         var1 = var2.filter;
         var0 = function(arg0) { // Environment: var0
-            _fun101601: for (var _fun101601_ip = 0;;) switch (_fun101601_ip) {
+            _fun101642: for (var _fun101642_ip = 0;;) switch (_fun101642_ip) {
                 case 0:
                     var1 = arg0;
                     var3 = _closure2_slot0;
                     var0 = null;
                     if (!(var0 == var3)) {
-                        _fun101601_ip = 41;
-                        continue _fun101601
+                        _fun101642_ip = 41;
+                        continue _fun101642
                     }
                 case 16:
                     var4 = _closure1_slot3;
                     var3 = var4.isBlockedOrIgnored;
                     var0 = var1.id;
                     var0 = var3.bind(var4)(var0);
-                    _fun101601_ip = 60;
-                    continue _fun101601;
+                    _fun101642_ip = 60;
+                    continue _fun101642;
                 case 41:
                     var3 = _closure2_slot0;
                     var2 = var3.includes;
@@ -92,21 +92,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var _closure2_slot0 = var1;
         var1 = var2.filter;
         var0 = function(arg0) { // Environment: var0
-            _fun101603: for (var _fun101603_ip = 0;;) switch (_fun101603_ip) {
+            _fun101644: for (var _fun101644_ip = 0;;) switch (_fun101644_ip) {
                 case 0:
                     var3 = arg0;
                     var2 = _closure2_slot0;
                     var0 = null;
                     if (!(var0 == var2)) {
-                        _fun101603_ip = 36;
-                        continue _fun101603
+                        _fun101644_ip = 36;
+                        continue _fun101644
                     }
                 case 16:
                     var2 = _closure1_slot3;
                     var0 = var2.isBlockedOrIgnored;
                     var0 = var0.bind(var2)(var3);
-                    _fun101603_ip = 50;
-                    continue _fun101603;
+                    _fun101644_ip = 50;
+                    continue _fun101644;
                 case 36:
                     var2 = _closure2_slot0;
                     var1 = var2.includes;
@@ -142,21 +142,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var _closure2_slot0 = var1;
         var1 = var2.some;
         var0 = function(arg0) { // Environment: var0
-            _fun101607: for (var _fun101607_ip = 0;;) switch (_fun101607_ip) {
+            _fun101648: for (var _fun101648_ip = 0;;) switch (_fun101648_ip) {
                 case 0:
                     var3 = arg0;
                     var2 = _closure2_slot0;
                     var0 = null;
                     if (!(var0 == var2)) {
-                        _fun101607_ip = 36;
-                        continue _fun101607
+                        _fun101648_ip = 36;
+                        continue _fun101648
                     }
                 case 16:
                     var2 = _closure1_slot3;
                     var0 = var2.isBlockedOrIgnored;
                     var0 = var0.bind(var2)(var3);
-                    _fun101607_ip = 50;
-                    continue _fun101607;
+                    _fun101648_ip = 50;
+                    continue _fun101648;
                 case 36:
                     var2 = _closure2_slot0;
                     var1 = var2.includes;
@@ -198,4 +198,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.filterBlockedUsersFromVoiceStates = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3105, 1304, 22, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3107, 1304, 22, 2]);

@@ -327,4 +327,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.createJoinRequestNotificationSystemMessage = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6602, 3218, 1410, 1621, 660, 1235, 21, 6755, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6604, 3220, 1410, 1621, 660, 1235, 21, 6757, 2]);

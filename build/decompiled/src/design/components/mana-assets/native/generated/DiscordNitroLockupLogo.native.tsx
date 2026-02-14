@@ -139,4 +139,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.DiscordNitroLockupLogo = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 33, 671, 3156, 6163, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 33, 671, 3158, 6165, 2]);

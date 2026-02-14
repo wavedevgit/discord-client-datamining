@@ -178,4 +178,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.collectThreadMetadata = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6547, 6548, 1376, 3096, 660, 1221, 21, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6549, 6550, 1376, 3098, 660, 1221, 21, 2]);

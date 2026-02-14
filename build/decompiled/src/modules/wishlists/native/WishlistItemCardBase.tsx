@@ -57,7 +57,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var11 = var5[var11];
     var11 = var12.bind(var0)(var11);
     var11 = var11.colors;
-    var11 = var11.BORDER_SUBTLE;
+    var11 = var11.BORDER_MUTED;
     var8.borderColor = var11;
     var3.card = var8;
     var11 = 'center';
@@ -93,25 +93,25 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.ownedCard = var8;
     var3 = var6.bind(var7)(var3);
     var _closure1_slot7 = var3;
-    var3 = 8;
+    var3 = 9;
     var3 = var5[var3];
     var5 = var4.bind(var0)(var3);
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/wishlists/native/WishlistItemCardBase.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun87804: for (var _fun87804_ip = 0;;) switch (_fun87804_ip) {
+        _fun87815: for (var _fun87815_ip = 0;;) switch (_fun87815_ip) {
             case 0:
                 var0 = arg0;
                 var8 = var0.onPress;
-                var14 = var0.renderPreview;
+                var15 = var0.renderPreview;
                 var16 = var0.backgroundColor;
                 var7 = var0.accessibilityHidden;
                 var11 = var0.isOwned;
                 var4 = undefined;
                 if (!(var11 === var4)) {
-                    _fun87804_ip = 39;
-                    continue _fun87804
+                    _fun87815_ip = 39;
+                    continue _fun87815
                 }
             case 37:
                 var11 = false;
@@ -130,93 +130,111 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var0 != var2;
                 var9 = 170;
                 if (!var3) {
-                    _fun87804_ip = 101;
-                    continue _fun87804
+                    _fun87815_ip = 101;
+                    continue _fun87815
                 }
             case 98:
                 var9 = var2;
             case 101:
-                var13 = _closure1_slot5;
+                var19 = _closure1_slot0;
+                var20 = _closure1_slot2;
+                var2 = 6;
+                var2 = var20[var2];
+                var5 = var19.bind(var4)(var2);
+                var3 = var5.useToken;
+                var17 = _closure1_slot1;
+                var13 = 4;
+                var2 = var20[var13];
+                var2 = var17.bind(var4)(var2);
+                var2 = var2.colors;
+                var2 = var2.BG_SURFACE_RAISED;
+                var14 = var3.bind(var5)(var2);
+                var3 = _closure1_slot5;
                 var5 = _closure1_slot4;
                 var2 = {};
-                var3 = var6.ownedOverlay;
-                var2.style = var3;
-                var3 = 'none';
-                var2.pointerEvents = var3;
-                var18 = _closure1_slot0;
-                var19 = _closure1_slot2;
-                var3 = 6;
-                var3 = var19[var3];
-                var3 = var18.bind(var4)(var3);
-                var10 = var3.CheckmarkLargeBoldIcon;
-                var3 = {};
-                var15 = _closure1_slot1;
-                var12 = 4;
-                var12 = var19[var12];
-                var12 = var15.bind(var4)(var12);
-                var12 = var12.colors;
-                var12 = var12.WHITE;
-                var3.color = var12;
-                var12 = 'custom';
-                var3.size = var12;
-                var12 = {
+                var10 = var6.ownedOverlay;
+                var2.style = var10;
+                var10 = 'none';
+                var2.pointerEvents = var10;
+                var10 = 7;
+                var10 = var20[var10];
+                var10 = var19.bind(var4)(var10);
+                var12 = var10.CheckmarkLargeBoldIcon;
+                var10 = {};
+                var13 = var20[var13];
+                var13 = var17.bind(var4)(var13);
+                var13 = var13.colors;
+                var13 = var13.WHITE;
+                var10.color = var13;
+                var13 = 'custom';
+                var10.size = var13;
+                var13 = {
                     'width': 40,
                     'height': 40
                 };
-                var3.style = var12;
-                var12 = 7;
-                var15 = var19[var12];
-                var15 = var18.bind(var4)(var15);
-                var17 = var15.intl;
-                var15 = var17.string;
-                var12 = var19[var12];
-                var12 = var18.bind(var4)(var12);
-                var12 = var12.t;
-                var12 = var12["6cfuDj"];
-                var12 = var15.bind(var17)(var12);
-                var3.accessibilityLabel = var12;
-                var3 = var13.bind(var4)(var10, var3);
-                var2.children = var3;
-                var12 = var13.bind(var4)(var5, var2);
+                var10.style = var13;
+                var13 = 8;
+                var17 = var20[var13];
+                var17 = var19.bind(var4)(var17);
+                var18 = var17.intl;
+                var17 = var18.string;
+                var13 = var20[var13];
+                var13 = var19.bind(var4)(var13);
+                var13 = var13.t;
+                var13 = var13["6cfuDj"];
+                var13 = var17.bind(var18)(var13);
+                var10.accessibilityLabel = var13;
+                var10 = var3.bind(var4)(var12, var10);
+                var2.children = var10;
+                var12 = var3.bind(var4)(var5, var2);
                 var3 = _closure1_slot6;
                 var2 = {};
-                var15 = var6.cardContent;
+                var13 = var6.cardContent;
                 var10 = new Array(2);
-                var10[0] = var15;
-                var15 = {};
-                var15.backgroundColor = var16;
-                var10[1] = var15;
-                var2.style = var10;
-                var10 = {};
-                var15 = var11;
-                if (!var11) {
-                    _fun87804_ip = 326;
-                    continue _fun87804
+                var10[0] = var13;
+                var13 = {};
+                if (!(var0 != var16)) {
+                    _fun87815_ip = 354;
+                    continue _fun87815
                 }
-            case 320:
-                var15 = var6.ownedCard;
-            case 326:
-                var10.style = var15;
-                var14 = var14.bind(var4)();
-                var10.children = var14;
-                var13 = var13.bind(var4)(var5, var10);
+            case 351:
+                var14 = var16;
+            case 354:
+                var13.backgroundColor = var14;
+                var10[1] = var13;
+                var2.style = var10;
+                var14 = _closure1_slot5;
+                var13 = _closure1_slot4;
+                var10 = {};
+                var16 = var11;
+                if (!var11) {
+                    _fun87815_ip = 388;
+                    continue _fun87815
+                }
+            case 382:
+                var16 = var6.ownedCard;
+            case 388:
+                var10.style = var16;
+                var15 = var15.bind(var4)();
+                var10.children = var15;
+                var13 = var14.bind(var4)(var13, var10);
                 var10 = new Array(2);
                 var10[0] = var13;
                 if (!var11) {
-                    _fun87804_ip = 358;
-                    continue _fun87804
+                    _fun87815_ip = 420;
+                    continue _fun87815
                 }
-            case 355:
+            case 417:
                 var11 = var12;
-            case 358:
+            case 420:
                 var10[1] = var11;
                 var2.children = var10;
                 var5 = var3.bind(var4)(var5, var2);
                 if (!(var0 != var8)) {
-                    _fun87804_ip = 461;
-                    continue _fun87804
+                    _fun87815_ip = 523;
+                    continue _fun87815
                 }
-            case 376:
+            case 438:
                 var3 = _closure1_slot5;
                 var2 = _closure1_slot3;
                 var0 = {};
@@ -233,18 +251,18 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.accessibilityElementsHidden = var7;
                 var8 = 'auto';
                 if (!var7) {
-                    _fun87804_ip = 444;
-                    continue _fun87804
+                    _fun87815_ip = 506;
+                    continue _fun87815
                 }
-            case 438:
+            case 500:
                 var8 = 'no-hide-descendants';
-            case 444:
+            case 506:
                 var0.importantForAccessibility = var8;
                 var0.children = var5;
                 var0 = var3.bind(var4)(var2, var0);
-                _fun87804_ip = 532;
-                continue _fun87804;
-            case 461:
+                _fun87815_ip = 594;
+                continue _fun87815;
+            case 523:
                 var3 = _closure1_slot5;
                 var2 = _closure1_slot4;
                 var1 = {};
@@ -258,19 +276,19 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1.accessibilityElementsHidden = var7;
                 var6 = 'auto';
                 if (!var7) {
-                    _fun87804_ip = 517;
-                    continue _fun87804
+                    _fun87815_ip = 579;
+                    continue _fun87815
                 }
-            case 511:
+            case 573:
                 var6 = 'no-hide-descendants';
-            case 517:
+            case 579:
                 var1.importantForAccessibility = var6;
                 var1.children = var5;
                 var0 = var3.bind(var4)(var2, var1);
-            case 532:
+            case 594:
                 return var0;
         }
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 11338, 8345, 1235, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 11341, 3158, 8315, 1235, 2]);

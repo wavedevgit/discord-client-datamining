@@ -1,307 +1,76 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var17 = function arg0() {
-        _fun97571: for (var _fun97571_ip = 0;;) switch (_fun97571_ip) {
-            case 0:
-                var2 = arg0;
-                var0 = null;
-                if (!var2) {
-                    _fun97571_ip = 19;
-                    continue _fun97571
-                }
-            case 8:
-                var1 = _closure1_slot0;
-                var0 = var2[var1];
-            case 19:
-                return var0;
-        }
+    var1 = {
+        'name': 'react-native-url-polyfill',
+        'version': '2.0.0',
+        'description': 'A lightweight and trustworthy URL polyfill for React Native',
+        'keywords': null,
+        'bugs': null,
+        'homepage': 'https://github.com/charpeni/react-native-url-polyfill',
+        'readme': 'https://github.com/charpeni/react-native-url-polyfill#readme',
+        'repository': null,
+        'main': 'index.js',
+        'types': 'index.d.ts'
     };
-    var _closure1_slot4 = var17;
-    var16 = function arg0() {
-        _fun97572: for (var _fun97572_ip = 0;;) switch (_fun97572_ip) {
-            case 0:
-                var2 = arg0;
-                var0 = null;
-                if (!var2) {
-                    _fun97572_ip = 19;
-                    continue _fun97572
-                }
-            case 8:
-                var1 = _closure1_slot1;
-                var0 = var2[var1];
-            case 19:
-                return var0;
-        }
+    var0 = ['URL', 'URLSearchParams', 'polyfill', 'react native', 'whatwg-url'];
+    var1.keywords = var0;
+    var0 = {};
+    var2 = 'https://github.com/charpeni/react-native-url-polyfill/issues';
+    var0.url = var2;
+    var1.bugs = var0;
+    var0 = {
+        'type': 'git',
+        'url': 'https://github.com/charpeni/react-native-url-polyfill.git'
     };
-    var _closure1_slot5 = var16;
-    var1 = global;
-    var3 = var1.Symbol;
+    var1.repository = var0;
+    var0 = {
+        'test': 'jest',
+        'lint': 'eslint .',
+        'prepare': 'husky install',
+        'bundle-size': 'node scripts/bundle-size'
+    };
+    var1.scripts = var0;
+    var0 = 'Nicolas Charpentier <nicolas.charpentier079@gmail.com>';
+    var1.author = var0;
+    var0 = 'MIT';
+    var1.license = var0;
+    var0 = {};
+    var2 = '8.0.0-3';
+    var0['whatwg-url-without-unicode'] = var2;
+    var1.dependencies = var0;
+    var0 = {
+        '@react-native-community/eslint-config': '3.2.0',
+        'detox': '20.9.1',
+        'eslint': '8.44.0',
+        'eslint-plugin-prettier': '4.2.1',
+        'husky': '8.0.3',
+        'jest': '29.5.0',
+        'lint-staged': '13.2.3',
+        'metro-react-native-babel-preset': '0.76.7',
+        'nanoid': '3.3.6',
+        'prettier': '2.8.8',
+        'react': '18.2.0',
+        'react-native': '0.72.1',
+        'react-native-bundle-scale': '1.1.0',
+        'typescript': '5.1.6'
+    };
+    var1.devDependencies = var0;
+    var0 = {};
+    var2 = '*';
+    var0['react-native'] = var2;
+    var1.peerDependencies = var0;
+    var0 = {};
+    var2 = 'react-native';
+    var0.preset = var2;
+    var2 = ['/node_modules/', './platforms/'];
+    var0.testPathIgnorePatterns = var2;
+    var1.jest = var0;
+    var0 = {};
+    var2 = ['eslint --fix'];
+    var0['*.js'] = var2;
+    var1['lint-staged'] = var0;
+    var0 = module;
+    var0.exports = var1;
     var0 = undefined;
-    var2 = 'wrapper';
-    var20 = var3.bind(var0)(var2);
-    var _closure1_slot0 = var20;
-    var3 = var1.Symbol;
-    var2 = 'impl';
-    var19 = var3.bind(var0)(var2);
-    var _closure1_slot1 = var19;
-    var3 = var1.Symbol;
-    var2 = 'SameObject caches';
-    var2 = var3.bind(var0)(var2);
-    var _closure1_slot2 = var2;
-    var4 = var1.Symbol;
-    var3 = var4.for;
-    var2 = '[webidl2js]  constructor registry';
-    var18 = var3.bind(var4)(var2);
-    var3 = var1.Symbol;
-    var2 = 'internal';
-    var15 = var3.bind(var0)(var2);
-    var4 = var1.Object;
-    var3 = var4.getPrototypeOf;
-    var6 = var1.Object;
-    var5 = var6.getPrototypeOf;
-    var7 = new Array(0);
-    var2 = var1.Symbol;
-    var2 = var2.iterator;
-    var2 = var7[var2];
-    var2 = var2.bind(var7)();
-    var2 = var5.bind(var6)(var2);
-    var14 = var3.bind(var4)(var2);
-    var5 = var1.Object;
-    var4 = var5.getOwnPropertyDescriptor;
-    var2 = var1.ArrayBuffer;
-    var3 = var2.prototype;
-    var2 = 'byteLength';
-    var2 = var4.bind(var5)(var3, var2);
-    var2 = var2.get;
-    var _closure1_slot3 = var2;
-    var3 = var1.Symbol;
-    var2 = 'supports property index';
-    var12 = var3.bind(var0)(var2);
-    var3 = var1.Symbol;
-    var2 = 'supported property indices';
-    var11 = var3.bind(var0)(var2);
-    var3 = var1.Symbol;
-    var2 = 'supports property name';
-    var10 = var3.bind(var0)(var2);
-    var3 = var1.Symbol;
-    var2 = 'supported property names';
-    var9 = var3.bind(var0)(var2);
-    var3 = var1.Symbol;
-    var2 = 'indexed property get';
-    var8 = var3.bind(var0)(var2);
-    var3 = var1.Symbol;
-    var2 = 'indexed property set new';
-    var7 = var3.bind(var0)(var2);
-    var3 = var1.Symbol;
-    var2 = 'indexed property set existing';
-    var6 = var3.bind(var0)(var2);
-    var3 = var1.Symbol;
-    var2 = 'named property get';
-    var5 = var3.bind(var0)(var2);
-    var3 = var1.Symbol;
-    var2 = 'named property set new';
-    var4 = var3.bind(var0)(var2);
-    var3 = var1.Symbol;
-    var2 = 'named property set existing';
-    var3 = var3.bind(var0)(var2);
-    var2 = var1.Symbol;
-    var1 = 'named property delete';
-    var1 = var2.bind(var0)(var1);
-    var2 = {};
-    var21 = function arg0() {
-        _fun97573: for (var _fun97573_ip = 0;;) switch (_fun97573_ip) {
-            case 0:
-                var3 = arg0;
-                var2 = typeof var3;
-                var0 = 'object';
-                var0 = var0 === var2;
-                if (!var0) {
-                    _fun97573_ip = 23;
-                    continue _fun97573
-                }
-            case 17:
-                var1 = null;
-                var0 = var1 !== var3;
-            case 23:
-                if (var0) {
-                    _fun97573_ip = 34;
-                    continue _fun97573
-                }
-            case 26:
-                var1 = 'function';
-                var0 = var1 === var2;
-            case 34:
-                return var0;
-        }
-    };
-    var2.isObject = var21;
-    var21 = function arg0, arg1() {
-        var0 = global;
-        var0 = var0.Object;
-        var0 = var0.prototype;
-        var3 = var0.hasOwnProperty;
-        var2 = var3.call;
-        var1 = arg0;
-        var0 = arg1;
-        var0 = var2.bind(var3)(var1, var0);
-        return var0;
-    };
-    var2.hasOwn = var21;
-    var2.wrapperSymbol = var20;
-    var2.implSymbol = var19;
-    var19 = function arg0, arg1, arg2() {
-        _fun97575: for (var _fun97575_ip = 0;;) switch (_fun97575_ip) {
-            case 0:
-                var2 = arg0;
-                var1 = arg1;
-                var3 = _closure1_slot2;
-                var3 = var2[var3];
-                if (var3) {
-                    _fun97575_ip = 48;
-                    continue _fun97575
-                }
-            case 20:
-                var4 = _closure1_slot2;
-                var3 = global;
-                var6 = var3.Object;
-                var5 = var6.create;
-                var3 = null;
-                var3 = var5.bind(var6)(var3);
-                var2[var4] = var3;
-            case 48:
-                var3 = _closure1_slot2;
-                var3 = var2[var3];
-                var3 = var1 in var3;
-                if (var3) {
-                    _fun97575_ip = 84;
-                    continue _fun97575
-                }
-            case 63:
-                var3 = _closure1_slot2;
-                var4 = var2[var3];
-                var5 = arg2;
-                var3 = undefined;
-                var3 = var5.bind(var3)();
-                var4[var1] = var3;
-            case 84:
-                var0 = _closure1_slot2;
-                var0 = var2[var0];
-                var0 = var0[var1];
-                return var0;
-        }
-    };
-    var2.getSameObject = var19;
-    var2.ctorRegistrySymbol = var18;
-    var2.wrapperForImpl = var17;
-    var2.implForWrapper = var16;
-    var16 = function arg0() {
-        _fun97576: for (var _fun97576_ip = 0;;) switch (_fun97576_ip) {
-            case 0:
-                var1 = arg0;
-                var2 = _closure1_slot4;
-                var0 = undefined;
-                var0 = var2.bind(var0)(var1);
-                if (var0) {
-                    _fun97576_ip = 23;
-                    continue _fun97576
-                }
-            case 20:
-                var0 = var1;
-            case 23:
-                return var0;
-        }
-    };
-    var2.tryWrapperForImpl = var16;
-    var16 = function arg0() {
-        _fun97577: for (var _fun97577_ip = 0;;) switch (_fun97577_ip) {
-            case 0:
-                var1 = arg0;
-                var2 = _closure1_slot5;
-                var0 = undefined;
-                var0 = var2.bind(var0)(var1);
-                if (var0) {
-                    _fun97577_ip = 23;
-                    continue _fun97577
-                }
-            case 20:
-                var0 = var1;
-            case 23:
-                return var0;
-        }
-    };
-    var2.tryImplForWrapper = var16;
-    var2.iterInternalSymbol = var15;
-    var2.IteratorPrototype = var14;
-    var14 = function arg0() {
-        _fun97578: for (var _fun97578_ip = 0;;) switch (_fun97578_ip) {
-            case 0:
-                var0 = arg0;
-            case 3: // try_start_0
-                var2 = _closure1_slot3;
-                var1 = var2.call;
-                var0 = var1.bind(var2)(var0);
-            case 20: // try_end0
-                var0 = true;
-                return var0;
-            case 24: // catch_target0
-                CatchBlockStart(arg_register = 0);
-                var0 = false;
-                return var0;
-        }
-    };
-    var2.isArrayBuffer = var14;
-    var13 = function arg0() {
-        _fun97579: for (var _fun97579_ip = 0;;) switch (_fun97579_ip) {
-            case 0:
-                var2 = arg0;
-                var1 = 'string';
-                var0 = typeof var2;
-                if (!(var1 === var0)) {
-                    _fun97579_ip = 86;
-                    continue _fun97579
-                }
-            case 14:
-                var0 = 0;
-                var4 = var2 >>> var0;
-                var1 = global;
-                var6 = var1.Math;
-                var5 = var6.pow;
-                var3 = 2;
-                var0 = 32;
-                var3 = var5.bind(var6)(var3, var0);
-                var0 = 1;
-                var0 = var3 - var0;
-                var0 = var4 !== var0;
-                if (!var0) {
-                    _fun97579_ip = 84;
-                    continue _fun97579
-                }
-            case 60:
-                var1 = var1.HermesInternal;
-                var3 = var1.concat;
-                var1 = '';
-                var1 = var3.bind(var1)(var4);
-                var0 = var2 === var1;
-            case 84:
-                return var0;
-            case 86:
-                var0 = false;
-                return var0;
-        }
-    };
-    var2.isArrayIndexPropName = var13;
-    var2.supportsPropertyIndex = var12;
-    var2.supportedPropertyIndices = var11;
-    var2.supportsPropertyName = var10;
-    var2.supportedPropertyNames = var9;
-    var2.indexedGet = var8;
-    var2.indexedSetNew = var7;
-    var2.indexedSetExisting = var6;
-    var2.namedGet = var5;
-    var2.namedSetNew = var4;
-    var2.namedSetExisting = var3;
-    var2.namedDelete = var1;
-    var1 = arg4;
-    var1.exports = var2;
     return var0;
 })(undefined, undefined, undefined, undefined, undefined, undefined, []);

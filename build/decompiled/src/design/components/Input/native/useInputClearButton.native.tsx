@@ -123,4 +123,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.useInputClearButton = var3;
     var2.useInputClearButtonConfig = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 5433, 1235, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 5435, 1235, 2]);

@@ -1,399 +1,652 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = exports;
-    var2 = require;
-    var _closure1_slot0 = var2;
-    var2 = dependencyMap;
-    var _closure1_slot1 = var2;
-    var2 = function arg0, arg1() {
-        _fun99277: for (var _fun99277_ip = 0;;) switch (_fun99277_ip) {
-            case 0:
-                var4 = arg0;
-                var3 = arg1;
-                var6 = undefined;
-                var1 = undefined;
-                var2 = arguments.length;
-                var0 = 2;
-                var2 = var2 > var0;
-                if (!var2) {
-                    _fun99277_ip = 31;
-                    continue _fun99277
-                }
-            case 23:
-                var5 = arguments[var0];
-                var2 = var6 !== var5;
-            case 31:
-                if (!var2) {
-                    _fun99277_ip = 38;
-                    continue _fun99277
-                }
-            case 34:
-                var2 = arguments[var0];
-            case 38:
-                var5 = _closure1_slot0;
-                var0 = _closure1_slot1;
-                var7 = 0;
-                var0 = var0[var7];
-                var5 = var5.bind(var6)(var0);
-                var0 = var5.isString;
-                var0 = var0.bind(var5)(var4);
-                var5 = !var0;
-                var0 = !var5;
-                if (var5) {
-                    _fun99277_ip = 185;
-                    continue _fun99277
-                }
-            case 80:
-                var8 = _closure1_slot0;
-                var5 = _closure1_slot1;
-                var5 = var5[var7];
-                var8 = var8.bind(var6)(var5);
-                var5 = var8.isRegExp;
-                var5 = var5.bind(var8)(var3);
-                if (var5) {
-                    _fun99277_ip = 172;
-                    continue _fun99277
-                }
-            case 111:
-                var5 = _closure1_slot0;
-                var1 = _closure1_slot1;
-                var1 = var1[var7];
-                var5 = var5.bind(var6)(var1);
-                var1 = var5.isString;
-                var1 = var1.bind(var5)(var3);
-                var5 = !var1;
-                var1 = !var5;
-                if (var5) {
-                    _fun99277_ip = 170;
-                    continue _fun99277
-                }
-            case 148:
-                if (var2) {
-                    _fun99277_ip = 163;
-                    continue _fun99277
-                }
-            case 151:
-                var2 = var4.includes;
-                var2 = var2.bind(var4)(var3);
-                _fun99277_ip = 167;
-                continue _fun99277;
-            case 163:
-                var2 = var4 === var3;
-            case 167:
-                var1 = var2;
-            case 170:
-                _fun99277_ip = 182;
-                continue _fun99277;
-            case 172:
-                var2 = var3.test;
-                var1 = var2.bind(var3)(var4);
-            case 182:
-                var0 = var1;
-            case 185:
-                return var0;
-        }
-    };
-    var _closure1_slot2 = var2;
-    var3 = global;
-    var6 = var3.Object;
+    var3 = require;
+    var2 = exports;
+    var4 = dependencyMap;
+    var0 = global;
+    var6 = var0.Object;
     var5 = var6.defineProperty;
-    var4 = {};
-    var3 = true;
-    var4.value = var3;
-    var3 = '__esModule';
-    var3 = var5.bind(var6)(var1, var3, var4);
-    var1.isMatchingPattern = var2;
-    var2 = function arg0, arg1() {
-        _fun99278: for (var _fun99278_ip = 0;;) switch (_fun99278_ip) {
-            case 0:
-                var3 = arg0;
-                var9 = var3;
-                var8 = undefined;
-                var0 = undefined;
-                var10 = undefined;
-                var11 = undefined;
-                var7 = global;
-                var2 = var7.Array;
-                var1 = var2.isArray;
-                var1 = var1.bind(var2)(var3);
-                if (var1) {
-                    _fun99278_ip = 41;
-                    continue _fun99278
-                }
-            case 35:
-                var1 = '';
-                return var1;
-            case 41:
-                var0 = new Array(0);
-                var6 = 0;
-                var10 = 0;
-                var1 = var9;
-                var1 = var1.length;
-                var5 = '[value cannot be serialized]';
-                var4 = '[VueViewModel]';
-                if (!(var6 < var1)) {
-                    _fun99278_ip = 192;
-                    continue _fun99278
-                }
-            case 76:
-                var2 = var9;
-                var1 = var10;
-                var11 = var2[var1];
-            case 86: // try_start_0
-                var2 = _closure1_slot0;
-                var1 = _closure1_slot1;
-                var1 = var1[var6];
-                var12 = var2.bind(var8)(var1);
-                var2 = var12.isVueViewModel;
-                var1 = var11;
-                var12 = var2.bind(var12)(var1);
-                var2 = var0;
-                var1 = var2.push;
-                if (var12) {
-                    _fun99278_ip = 149;
-                    continue _fun99278
-                }
-            case 128:
-                var13 = var7.String;
-                var12 = var11;
-                var12 = var13.bind(var8)(var12);
-                var12 = var1.bind(var2)(var12);
-                _fun99278_ip = 154;
-                continue _fun99278;
-            case 149:
-                var1 = var1.bind(var2)(var4);
-            case 154: // try_end0
-                _fun99278_ip = 171;
-                continue _fun99278;
-            case 156: // catch_target0
-                CatchBlockStart(arg_register = 1);
-                var2 = var0;
-                var1 = var2.push;
-                var1 = var1.bind(var2)(var5);
-            case 171:
-                var1 = var10;
-                var2 = var1 + 1;
-                var10 = var2;
-                var1 = var9;
-                var1 = var1.length;
-                if (var2 < var1) {
-                    _fun99278_ip = 76;
-                    continue _fun99278
-                }
-            case 192:
-                var2 = var0;
-                var1 = var2.join;
-                var0 = arg1;
-                var0 = var1.bind(var2)(var0);
-                return var0;
-        }
-    };
-    var1.safeJoin = var2;
-    var2 = function arg0, arg1() {
-        _fun99279: for (var _fun99279_ip = 0;;) switch (_fun99279_ip) {
-            case 0:
-                var0 = arg0;
-                var6 = arg1;
-                var4 = var0.length;
-                var1 = 150;
-                if (!(!(var4 <= var1))) {
-                    _fun99279_ip = 187;
-                    continue _fun99279
-                }
-            case 21:
-                if (!(var6 > var4)) {
-                    _fun99279_ip = 28;
-                    continue _fun99279
-                }
-            case 25:
-                var6 = var4;
-            case 28:
-                var1 = global;
-                var5 = var1.Math;
-                var3 = var5.max;
-                var2 = 60;
-                var2 = var6 - var2;
-                var7 = 0;
-                var3 = var3.bind(var5)(var2, var7);
-                var6 = 5;
-                if (!(var3 < var6)) {
-                    _fun99279_ip = 65;
-                    continue _fun99279
-                }
-            case 63:
-                var3 = 0;
-            case 65:
-                var9 = var1.Math;
-                var8 = var9.min;
-                var5 = 140;
-                var2 = var3 + var5;
-                var2 = var8.bind(var9)(var2, var4);
-                var6 = var4 - var6;
-                if (!(var2 > var6)) {
-                    _fun99279_ip = 100;
-                    continue _fun99279
-                }
-            case 97:
-                var2 = var4;
-            case 100:
-                if (!(var2 === var4)) {
-                    _fun99279_ip = 125;
-                    continue _fun99279
-                }
-            case 104:
-                var8 = var1.Math;
-                var6 = var8.max;
-                var5 = var2 - var5;
-                var3 = var6.bind(var8)(var5, var7);
-            case 125:
-                var5 = var0.slice;
-                var6 = var5.bind(var0)(var3, var2);
-                var5 = var3;
-                var3 = var6;
-                if (!(var5 > var7)) {
-                    _fun99279_ip = 168;
-                    continue _fun99279
-                }
-            case 146:
-                var1 = var1.HermesInternal;
-                var5 = var1.concat;
-                var1 = "'{snip} ";
-                var3 = var5.bind(var1)(var6);
-            case 168:
-                var1 = var3;
-                if (!(var2 < var4)) {
-                    _fun99279_ip = 185;
-                    continue _fun99279
-                }
-            case 175:
-                var2 = ' {snip}';
-                var1 = var3 + var2;
-            case 185:
-                return var1;
-            case 187:
-                return var0;
-        }
-    };
-    var1.snipLine = var2;
-    var2 = function arg0() {
-        _fun99280: for (var _fun99280_ip = 0;;) switch (_fun99280_ip) {
-            case 0:
-                var4 = undefined;
-                var3 = undefined;
-                var1 = arg0;
-                var _closure2_slot0 = var1;
-                var1 = arguments.length;
-                var2 = 2;
-                var1 = var1 > var2;
-                if (!var1) {
-                    _fun99280_ip = 34;
-                    continue _fun99280
-                }
-            case 26:
-                var5 = arguments[var2];
-                var1 = var4 !== var5;
-            case 34:
-                if (!var1) {
-                    _fun99280_ip = 41;
-                    continue _fun99280
-                }
-            case 37:
-                var1 = arguments[var2];
-            case 41:
-                var _closure2_slot1 = var1;
-                var2 = arguments.length;
-                var1 = 1;
-                if (!(var2 > var1)) {
-                    _fun99280_ip = 63;
-                    continue _fun99280
-                }
-            case 55:
-                var2 = arguments[var1];
-                if (!(var4 === var2)) {
-                    _fun99280_ip = 69;
-                    continue _fun99280
-                }
-            case 63:
-                var2 = new Array(0);
-                _fun99280_ip = 73;
-                continue _fun99280;
-            case 69:
-                var2 = arguments[var1];
-            case 73:
-                var1 = var2.some;
-                var0 = function(arg0) { // Environment: var0
-                    var4 = _closure1_slot2;
-                    var3 = _closure2_slot0;
-                    var2 = _closure2_slot1;
-                    var1 = undefined;
-                    var0 = arg0;
-                    var0 = var4.bind(var1)(var3, var0, var2);
-                    return var0;
-                };
-                var0 = var1.bind(var2)(var0);
-                return var0;
-        }
-    };
-    var1.stringMatchesSomePattern = var2;
-    var0 = function arg0() {
-        _fun99282: for (var _fun99282_ip = 0;;) switch (_fun99282_ip) {
-            case 0:
-                var4 = arg0;
-                var6 = undefined;
-                var1 = undefined;
-                var2 = arguments.length;
-                var0 = 1;
-                var5 = var2 > var0;
-                var3 = 0;
-                var2 = 0;
-                if (!var5) {
-                    _fun99282_ip = 38;
-                    continue _fun99282
-                }
-            case 24:
-                var5 = arguments[var0];
-                var2 = 0;
-                if (!(var6 !== var5)) {
-                    _fun99282_ip = 38;
-                    continue _fun99282
-                }
-            case 34:
-                var2 = arguments[var0];
-            case 38:
-                var5 = 'string';
-                var1 = typeof var4;
-                var0 = var4;
-                if (!(var5 === var1)) {
-                    _fun99282_ip = 111;
-                    continue _fun99282
-                }
-            case 52:
-                var0 = var4;
-                if (!(var3 !== var2)) {
-                    _fun99282_ip = 111;
-                    continue _fun99282
-                }
-            case 59:
-                var1 = var4.length;
-                var0 = var4;
-                if (!(!(var1 <= var2))) {
-                    _fun99282_ip = 111;
-                    continue _fun99282
-                }
-            case 71:
-                var1 = var4.slice;
-                var4 = var1.bind(var4)(var3, var2);
-                var1 = global;
-                var1 = var1.HermesInternal;
-                var3 = var1.concat;
-                var2 = '';
-                var1 = '...';
-                var0 = var3.bind(var2)(var4, var1);
-            case 111:
-                return var0;
-        }
-    };
-    var1.truncate = var0;
+    var1 = {};
+    var0 = true;
+    var1.value = var0;
+    var0 = '__esModule';
+    var0 = var5.bind(var6)(var2, var0, var1);
+    var0 = 0;
+    var1 = var4[var0];
     var0 = undefined;
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.registerSpanErrorInstrumentation;
+    var2.registerSpanErrorInstrumentation = var1;
+    var1 = 1;
+    var5 = var4[var1];
+    var5 = var3.bind(var0)(var5);
+    var5 = var5.getCapturedScopesOnSpan;
+    var2.getCapturedScopesOnSpan = var5;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.setCapturedScopesOnSpan;
+    var2.setCapturedScopesOnSpan = var1;
+    var1 = 2;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.addTracingExtensions;
+    var2.addTracingExtensions = var1;
+    var1 = 3;
+    var5 = var4[var1];
+    var5 = var3.bind(var0)(var5);
+    var5 = var5.TRACING_DEFAULTS;
+    var2.TRACING_DEFAULTS = var5;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.startIdleSpan;
+    var2.startIdleSpan = var1;
+    var1 = 4;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.SentrySpan;
+    var2.SentrySpan = var1;
+    var1 = 5;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.SentryNonRecordingSpan;
+    var2.SentryNonRecordingSpan = var1;
+    var1 = 6;
+    var5 = var4[var1];
+    var5 = var3.bind(var0)(var5);
+    var5 = var5.SPAN_STATUS_ERROR;
+    var2.SPAN_STATUS_ERROR = var5;
+    var5 = var4[var1];
+    var5 = var3.bind(var0)(var5);
+    var5 = var5.SPAN_STATUS_OK;
+    var2.SPAN_STATUS_OK = var5;
+    var5 = var4[var1];
+    var5 = var3.bind(var0)(var5);
+    var5 = var5.SPAN_STATUS_UNSET;
+    var2.SPAN_STATUS_UNSET = var5;
+    var5 = var4[var1];
+    var5 = var3.bind(var0)(var5);
+    var5 = var5.getSpanStatusFromHttpCode;
+    var2.getSpanStatusFromHttpCode = var5;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.setHttpStatus;
+    var2.setHttpStatus = var1;
+    var1 = 7;
+    var5 = var4[var1];
+    var5 = var3.bind(var0)(var5);
+    var5 = var5.continueTrace;
+    var2.continueTrace = var5;
+    var5 = var4[var1];
+    var5 = var3.bind(var0)(var5);
+    var5 = var5.startInactiveSpan;
+    var2.startInactiveSpan = var5;
+    var5 = var4[var1];
+    var5 = var3.bind(var0)(var5);
+    var5 = var5.startNewTrace;
+    var2.startNewTrace = var5;
+    var5 = var4[var1];
+    var5 = var3.bind(var0)(var5);
+    var5 = var5.startSpan;
+    var2.startSpan = var5;
+    var5 = var4[var1];
+    var5 = var3.bind(var0)(var5);
+    var5 = var5.startSpanManual;
+    var2.startSpanManual = var5;
+    var5 = var4[var1];
+    var5 = var3.bind(var0)(var5);
+    var5 = var5.suppressTracing;
+    var2.suppressTracing = var5;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.withActiveSpan;
+    var2.withActiveSpan = var1;
+    var1 = 8;
+    var5 = var4[var1];
+    var5 = var3.bind(var0)(var5);
+    var5 = var5.getDynamicSamplingContextFromClient;
+    var2.getDynamicSamplingContextFromClient = var5;
+    var5 = var4[var1];
+    var5 = var3.bind(var0)(var5);
+    var5 = var5.getDynamicSamplingContextFromSpan;
+    var2.getDynamicSamplingContextFromSpan = var5;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.spanToBaggageHeader;
+    var2.spanToBaggageHeader = var1;
+    var1 = 9;
+    var5 = var4[var1];
+    var5 = var3.bind(var0)(var5);
+    var5 = var5.setMeasurement;
+    var2.setMeasurement = var5;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.timedEventsToMeasurements;
+    var2.timedEventsToMeasurements = var1;
+    var1 = 10;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.sampleSpan;
+    var2.sampleSpan = var1;
+    var1 = 11;
+    var5 = var4[var1];
+    var5 = var3.bind(var0)(var5);
+    var5 = var5.logSpanEnd;
+    var2.logSpanEnd = var5;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.logSpanStart;
+    var2.logSpanStart = var1;
+    var1 = 12;
+    var5 = var4[var1];
+    var5 = var3.bind(var0)(var5);
+    var5 = var5.SEMANTIC_ATTRIBUTE_CACHE_HIT;
+    var2.SEMANTIC_ATTRIBUTE_CACHE_HIT = var5;
+    var5 = var4[var1];
+    var5 = var3.bind(var0)(var5);
+    var5 = var5.SEMANTIC_ATTRIBUTE_CACHE_ITEM_SIZE;
+    var2.SEMANTIC_ATTRIBUTE_CACHE_ITEM_SIZE = var5;
+    var5 = var4[var1];
+    var5 = var3.bind(var0)(var5);
+    var5 = var5.SEMANTIC_ATTRIBUTE_CACHE_KEY;
+    var2.SEMANTIC_ATTRIBUTE_CACHE_KEY = var5;
+    var5 = var4[var1];
+    var5 = var3.bind(var0)(var5);
+    var5 = var5.SEMANTIC_ATTRIBUTE_EXCLUSIVE_TIME;
+    var2.SEMANTIC_ATTRIBUTE_EXCLUSIVE_TIME = var5;
+    var5 = var4[var1];
+    var5 = var3.bind(var0)(var5);
+    var5 = var5.SEMANTIC_ATTRIBUTE_HTTP_REQUEST_METHOD;
+    var2.SEMANTIC_ATTRIBUTE_HTTP_REQUEST_METHOD = var5;
+    var5 = var4[var1];
+    var5 = var3.bind(var0)(var5);
+    var5 = var5.SEMANTIC_ATTRIBUTE_PROFILE_ID;
+    var2.SEMANTIC_ATTRIBUTE_PROFILE_ID = var5;
+    var5 = var4[var1];
+    var5 = var3.bind(var0)(var5);
+    var5 = var5.SEMANTIC_ATTRIBUTE_SENTRY_IDLE_SPAN_FINISH_REASON;
+    var2.SEMANTIC_ATTRIBUTE_SENTRY_IDLE_SPAN_FINISH_REASON = var5;
+    var5 = var4[var1];
+    var5 = var3.bind(var0)(var5);
+    var5 = var5.SEMANTIC_ATTRIBUTE_SENTRY_MEASUREMENT_UNIT;
+    var2.SEMANTIC_ATTRIBUTE_SENTRY_MEASUREMENT_UNIT = var5;
+    var5 = var4[var1];
+    var5 = var3.bind(var0)(var5);
+    var5 = var5.SEMANTIC_ATTRIBUTE_SENTRY_MEASUREMENT_VALUE;
+    var2.SEMANTIC_ATTRIBUTE_SENTRY_MEASUREMENT_VALUE = var5;
+    var5 = var4[var1];
+    var5 = var3.bind(var0)(var5);
+    var5 = var5.SEMANTIC_ATTRIBUTE_SENTRY_OP;
+    var2.SEMANTIC_ATTRIBUTE_SENTRY_OP = var5;
+    var5 = var4[var1];
+    var5 = var3.bind(var0)(var5);
+    var5 = var5.SEMANTIC_ATTRIBUTE_SENTRY_ORIGIN;
+    var2.SEMANTIC_ATTRIBUTE_SENTRY_ORIGIN = var5;
+    var5 = var4[var1];
+    var5 = var3.bind(var0)(var5);
+    var5 = var5.SEMANTIC_ATTRIBUTE_SENTRY_SAMPLE_RATE;
+    var2.SEMANTIC_ATTRIBUTE_SENTRY_SAMPLE_RATE = var5;
+    var5 = var4[var1];
+    var5 = var3.bind(var0)(var5);
+    var5 = var5.SEMANTIC_ATTRIBUTE_SENTRY_SOURCE;
+    var2.SEMANTIC_ATTRIBUTE_SENTRY_SOURCE = var5;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.SEMANTIC_ATTRIBUTE_URL_FULL;
+    var2.SEMANTIC_ATTRIBUTE_URL_FULL = var1;
+    var1 = 13;
+    var5 = var4[var1];
+    var5 = var3.bind(var0)(var5);
+    var5 = var5.createEventEnvelope;
+    var2.createEventEnvelope = var5;
+    var5 = var4[var1];
+    var5 = var3.bind(var0)(var5);
+    var5 = var5.createSessionEnvelope;
+    var2.createSessionEnvelope = var5;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.createSpanEnvelope;
+    var2.createSpanEnvelope = var1;
+    var1 = 14;
+    var5 = var4[var1];
+    var5 = var3.bind(var0)(var5);
+    var5 = var5.addEventProcessor;
+    var2.addEventProcessor = var5;
+    var5 = var4[var1];
+    var5 = var3.bind(var0)(var5);
+    var5 = var5.captureCheckIn;
+    var2.captureCheckIn = var5;
+    var5 = var4[var1];
+    var5 = var3.bind(var0)(var5);
+    var5 = var5.captureEvent;
+    var2.captureEvent = var5;
+    var5 = var4[var1];
+    var5 = var3.bind(var0)(var5);
+    var5 = var5.captureException;
+    var2.captureException = var5;
+    var5 = var4[var1];
+    var5 = var3.bind(var0)(var5);
+    var5 = var5.captureMessage;
+    var2.captureMessage = var5;
+    var5 = var4[var1];
+    var5 = var3.bind(var0)(var5);
+    var5 = var5.captureSession;
+    var2.captureSession = var5;
+    var5 = var4[var1];
+    var5 = var3.bind(var0)(var5);
+    var5 = var5.close;
+    var2.close = var5;
+    var5 = var4[var1];
+    var5 = var3.bind(var0)(var5);
+    var5 = var5.endSession;
+    var2.endSession = var5;
+    var5 = var4[var1];
+    var5 = var3.bind(var0)(var5);
+    var5 = var5.flush;
+    var2.flush = var5;
+    var5 = var4[var1];
+    var5 = var3.bind(var0)(var5);
+    var5 = var5.isEnabled;
+    var2.isEnabled = var5;
+    var5 = var4[var1];
+    var5 = var3.bind(var0)(var5);
+    var5 = var5.isInitialized;
+    var2.isInitialized = var5;
+    var5 = var4[var1];
+    var5 = var3.bind(var0)(var5);
+    var5 = var5.lastEventId;
+    var2.lastEventId = var5;
+    var5 = var4[var1];
+    var5 = var3.bind(var0)(var5);
+    var5 = var5.setContext;
+    var2.setContext = var5;
+    var5 = var4[var1];
+    var5 = var3.bind(var0)(var5);
+    var5 = var5.setExtra;
+    var2.setExtra = var5;
+    var5 = var4[var1];
+    var5 = var3.bind(var0)(var5);
+    var5 = var5.setExtras;
+    var2.setExtras = var5;
+    var5 = var4[var1];
+    var5 = var3.bind(var0)(var5);
+    var5 = var5.setTag;
+    var2.setTag = var5;
+    var5 = var4[var1];
+    var5 = var3.bind(var0)(var5);
+    var5 = var5.setTags;
+    var2.setTags = var5;
+    var5 = var4[var1];
+    var5 = var3.bind(var0)(var5);
+    var5 = var5.setUser;
+    var2.setUser = var5;
+    var5 = var4[var1];
+    var5 = var3.bind(var0)(var5);
+    var5 = var5.startSession;
+    var2.startSession = var5;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.withMonitor;
+    var2.withMonitor = var1;
+    var1 = 15;
+    var5 = var4[var1];
+    var5 = var3.bind(var0)(var5);
+    var5 = var5.getClient;
+    var2.getClient = var5;
+    var5 = var4[var1];
+    var5 = var3.bind(var0)(var5);
+    var5 = var5.getCurrentScope;
+    var2.getCurrentScope = var5;
+    var5 = var4[var1];
+    var5 = var3.bind(var0)(var5);
+    var5 = var5.getGlobalScope;
+    var2.getGlobalScope = var5;
+    var5 = var4[var1];
+    var5 = var3.bind(var0)(var5);
+    var5 = var5.getIsolationScope;
+    var2.getIsolationScope = var5;
+    var5 = var4[var1];
+    var5 = var3.bind(var0)(var5);
+    var5 = var5.withIsolationScope;
+    var2.withIsolationScope = var5;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.withScope;
+    var2.withScope = var1;
+    var1 = 16;
+    var5 = var4[var1];
+    var5 = var3.bind(var0)(var5);
+    var5 = var5.getDefaultCurrentScope;
+    var2.getDefaultCurrentScope = var5;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.getDefaultIsolationScope;
+    var2.getDefaultIsolationScope = var1;
+    var1 = 17;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.setAsyncContextStrategy;
+    var2.setAsyncContextStrategy = var1;
+    var1 = 18;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.getMainCarrier;
+    var2.getMainCarrier = var1;
+    var1 = 19;
+    var5 = var4[var1];
+    var5 = var3.bind(var0)(var5);
+    var5 = var5.closeSession;
+    var2.closeSession = var5;
+    var5 = var4[var1];
+    var5 = var3.bind(var0)(var5);
+    var5 = var5.makeSession;
+    var2.makeSession = var5;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.updateSession;
+    var2.updateSession = var1;
+    var1 = 20;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.SessionFlusher;
+    var2.SessionFlusher = var1;
+    var1 = 21;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.Scope;
+    var2.Scope = var1;
+    var1 = 22;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.notifyEventProcessors;
+    var2.notifyEventProcessors = var1;
+    var1 = 23;
+    var5 = var4[var1];
+    var5 = var3.bind(var0)(var5);
+    var5 = var5.getEnvelopeEndpointWithUrlEncodedAuth;
+    var2.getEnvelopeEndpointWithUrlEncodedAuth = var5;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.getReportDialogEndpoint;
+    var2.getReportDialogEndpoint = var1;
+    var1 = 24;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.BaseClient;
+    var2.BaseClient = var1;
+    var1 = 25;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.ServerRuntimeClient;
+    var2.ServerRuntimeClient = var1;
+    var1 = 26;
+    var5 = var4[var1];
+    var5 = var3.bind(var0)(var5);
+    var5 = var5.initAndBind;
+    var2.initAndBind = var5;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.setCurrentClient;
+    var2.setCurrentClient = var1;
+    var1 = 27;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.createTransport;
+    var2.createTransport = var1;
+    var1 = 28;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.makeOfflineTransport;
+    var2.makeOfflineTransport = var1;
+    var1 = 29;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.makeMultiplexedTransport;
+    var2.makeMultiplexedTransport = var1;
+    var1 = 30;
+    var5 = var4[var1];
+    var5 = var3.bind(var0)(var5);
+    var5 = var5.addIntegration;
+    var2.addIntegration = var5;
+    var5 = var4[var1];
+    var5 = var3.bind(var0)(var5);
+    var5 = var5.defineIntegration;
+    var2.defineIntegration = var5;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.getIntegrationsToSetup;
+    var2.getIntegrationsToSetup = var1;
+    var1 = 31;
+    var5 = var4[var1];
+    var5 = var3.bind(var0)(var5);
+    var5 = var5.applyScopeDataToEvent;
+    var2.applyScopeDataToEvent = var5;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.mergeScopeData;
+    var2.mergeScopeData = var1;
+    var1 = 32;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.prepareEvent;
+    var2.prepareEvent = var1;
+    var1 = 33;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.createCheckInEnvelope;
+    var2.createCheckInEnvelope = var1;
+    var1 = 34;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.hasTracingEnabled;
+    var2.hasTracingEnabled = var1;
+    var1 = 35;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.isSentryRequestUrl;
+    var2.isSentryRequestUrl = var1;
+    var1 = 36;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.handleCallbackErrors;
+    var2.handleCallbackErrors = var1;
+    var1 = 37;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.parameterize;
+    var2.parameterize = var1;
+    var1 = 38;
+    var5 = var4[var1];
+    var5 = var3.bind(var0)(var5);
+    var5 = var5.addChildSpanToSpan;
+    var2.addChildSpanToSpan = var5;
+    var5 = var4[var1];
+    var5 = var3.bind(var0)(var5);
+    var5 = var5.getActiveSpan;
+    var2.getActiveSpan = var5;
+    var5 = var4[var1];
+    var5 = var3.bind(var0)(var5);
+    var5 = var5.getRootSpan;
+    var2.getRootSpan = var5;
+    var5 = var4[var1];
+    var5 = var3.bind(var0)(var5);
+    var5 = var5.getSpanDescendants;
+    var2.getSpanDescendants = var5;
+    var5 = var4[var1];
+    var5 = var3.bind(var0)(var5);
+    var5 = var5.getStatusMessage;
+    var2.getStatusMessage = var5;
+    var5 = var4[var1];
+    var5 = var3.bind(var0)(var5);
+    var5 = var5.spanIsSampled;
+    var2.spanIsSampled = var5;
+    var5 = var4[var1];
+    var5 = var3.bind(var0)(var5);
+    var5 = var5.spanTimeInputToSeconds;
+    var2.spanTimeInputToSeconds = var5;
+    var5 = var4[var1];
+    var5 = var3.bind(var0)(var5);
+    var5 = var5.spanToJSON;
+    var2.spanToJSON = var5;
+    var5 = var4[var1];
+    var5 = var3.bind(var0)(var5);
+    var5 = var5.spanToTraceContext;
+    var2.spanToTraceContext = var5;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.spanToTraceHeader;
+    var2.spanToTraceHeader = var1;
+    var1 = 39;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.parseSampleRate;
+    var2.parseSampleRate = var1;
+    var1 = 40;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.applySdkMetadata;
+    var2.applySdkMetadata = var1;
+    var1 = 41;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.getTraceData;
+    var2.getTraceData = var1;
+    var1 = 42;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.getTraceMetaTags;
+    var2.getTraceMetaTags = var1;
+    var1 = 43;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.DEFAULT_ENVIRONMENT;
+    var2.DEFAULT_ENVIRONMENT = var1;
+    var1 = 44;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.addBreadcrumb;
+    var2.addBreadcrumb = var1;
+    var1 = 45;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.functionToStringIntegration;
+    var2.functionToStringIntegration = var1;
+    var1 = 46;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.inboundFiltersIntegration;
+    var2.inboundFiltersIntegration = var1;
+    var1 = 47;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.linkedErrorsIntegration;
+    var2.linkedErrorsIntegration = var1;
+    var1 = 48;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.moduleMetadataIntegration;
+    var2.moduleMetadataIntegration = var1;
+    var1 = 49;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.requestDataIntegration;
+    var2.requestDataIntegration = var1;
+    var1 = 50;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.captureConsoleIntegration;
+    var2.captureConsoleIntegration = var1;
+    var1 = 51;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.debugIntegration;
+    var2.debugIntegration = var1;
+    var1 = 52;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.dedupeIntegration;
+    var2.dedupeIntegration = var1;
+    var1 = 53;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.extraErrorDataIntegration;
+    var2.extraErrorDataIntegration = var1;
+    var1 = 54;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.rewriteFramesIntegration;
+    var2.rewriteFramesIntegration = var1;
+    var1 = 55;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.sessionTimingIntegration;
+    var2.sessionTimingIntegration = var1;
+    var1 = 56;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.zodErrorsIntegration;
+    var2.zodErrorsIntegration = var1;
+    var1 = 57;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.thirdPartyErrorFilterIntegration;
+    var2.thirdPartyErrorFilterIntegration = var1;
+    var1 = 58;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.metrics;
+    var2.metrics = var1;
+    var1 = 59;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.profiler;
+    var2.profiler = var1;
+    var1 = 60;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.metricsDefault;
+    var2.metricsDefault = var1;
+    var1 = 61;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.BrowserMetricsAggregator;
+    var2.BrowserMetricsAggregator = var1;
+    var1 = 62;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.getMetricSummaryJsonForSpan;
+    var2.getMetricSummaryJsonForSpan = var1;
+    var1 = 63;
+    var5 = var4[var1];
+    var5 = var3.bind(var0)(var5);
+    var5 = var5.addTracingHeadersToFetchRequest;
+    var2.addTracingHeadersToFetchRequest = var5;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.instrumentFetchRequest;
+    var2.instrumentFetchRequest = var1;
+    var1 = 64;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.trpcMiddleware;
+    var2.trpcMiddleware = var1;
+    var1 = 65;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.captureFeedback;
+    var2.captureFeedback = var1;
+    var1 = 66;
+    var5 = var4[var1];
+    var5 = var3.bind(var0)(var5);
+    var5 = var5.getCurrentHub;
+    var2.getCurrentHub = var5;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.getCurrentHubShim;
+    var2.getCurrentHubShim = var1;
+    var1 = 67;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.SDK_VERSION;
+    var2.SDK_VERSION = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [12917]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [12919, 12987, 12988, 12989, 12999, 12991, 12977, 12992, 12994, 13000, 12997, 12996, 12975, 13001, 13002, 12985, 12984, 12979, 12978, 12983, 13006, 12981, 13005, 13007, 13008, 13010, 13012, 13013, 13014, 13015, 13009, 13004, 13003, 13011, 12990, 13016, 12993, 13017, 12974, 12998, 13018, 13019, 13020, 12995, 13021, 13022, 13023, 13024, 13025, 13027, 13028, 13029, 13030, 13031, 13032, 13033, 13034, 13035, 13036, 13038, 13039, 13044, 12976, 13045, 13046, 13047, 13048, 12920]);

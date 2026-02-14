@@ -153,4 +153,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.IntlLink = var1;
     var2.I18nLinkComponent = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 1297, 671, 3170, 3149, 3151, 1296, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 1297, 671, 3172, 3151, 3153, 1296, 2]);

@@ -97,7 +97,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var4 = false;
                 case 190:
                     if (!var4) {
-                        _fun12158_ip = 846;
+                        _fun12158_ip = 850;
                         continue _fun12158
                     }
                 case 196:
@@ -153,7 +153,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var4 = var2.data;
                     var4 = var4._sentryWorkerError;
                     if (!var4) {
-                        _fun12158_ip = 846;
+                        _fun12158_ip = 850;
                         continue _fun12158
                     }
                 case 400:
@@ -188,7 +188,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var2 = var4.getClient;
                     var4 = var2.bind(var4)();
                     if (!var4) {
-                        _fun12158_ip = 846;
+                        _fun12158_ip = 850;
                         continue _fun12158
                     }
                 case 524:
@@ -270,10 +270,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var2 = var5.bind(var0)(var2);
                     var2 = var2.DEBUG_BUILD;
                     if (!var2) {
-                        _fun12158_ip = 846;
+                        _fun12158_ip = 850;
                         continue _fun12158
                     }
-                case 806:
+                case 810:
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot1;
                     var1 = var1[var3];
@@ -282,7 +282,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var2 = var3.log;
                     var1 = 'Captured worker unhandled rejection';
                     var1 = var2.bind(var3)(var1, var4);
-                case 846:
+                case 850:
                     return var0;
             }
         };

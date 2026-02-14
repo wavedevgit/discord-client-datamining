@@ -334,4 +334,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.canGuildUseRoleIcons = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 478, 3109, 1443, 1417, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 478, 3111, 1443, 1417, 2]);

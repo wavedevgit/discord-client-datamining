@@ -183,7 +183,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var1 = var4.noop;
                         case 69:
                             if (var1) {
-                                _fun12746_ip = 1008;
+                                _fun12746_ip = 1012;
                                 continue _fun12746
                             }
                         case 75:
@@ -223,7 +223,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var1 = var3.includes;
                             var1 = var1.bind(var3)(var8);
                             if (var1) {
-                                _fun12746_ip = 925;
+                                _fun12746_ip = 929;
                                 continue _fun12746
                             }
                         case 149:
@@ -399,7 +399,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var5 = _closure2_slot3;
                         case 719:
                             if (!var5) {
-                                _fun12746_ip = 896;
+                                _fun12746_ip = 900;
                                 continue _fun12746
                             }
                         case 725:
@@ -440,15 +440,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var3 = var7.bind(var0)(var3);
                             var3 = var3.SPAN_ORIGIN_AUTO_NAVIGATION_REACT_NAVIGATION;
                             var3 = var5.bind(var6)(var4, var3);
-                        case 896:
+                        case 900:
                             var4 = var1.setTimeout;
                             var3 = _closure2_slot16;
                             var1 = _closure2_slot6;
                             var1 = var4.bind(var0)(var3, var1);
                             var _closure2_slot5 = var1;
-                            _fun12746_ip = 1082;
+                            _fun12746_ip = 1086;
                             continue _fun12746;
-                        case 925:
+                        case 929:
                             var2 = _closure1_slot0;
                             var3 = _closure1_slot1;
                             var1 = 3;
@@ -466,9 +466,9 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var19 = var8;
                             var1 = var22[var7](var21, var20, var19, var18, var17);
                             var1 = var2.bind(var3)(var1);
-                            _fun12746_ip = 1082;
+                            _fun12746_ip = 1086;
                             continue _fun12746;
-                        case 1008:
+                        case 1012:
                             var2 = _closure1_slot0;
                             var3 = _closure1_slot1;
                             var1 = 3;
@@ -484,7 +484,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var1 = ' Navigation action is a noop, not starting navigation span.';
                             var1 = var6.bind(var5)(var4, var1);
                             var1 = var2.bind(var3)(var1);
-                        case 1082:
+                        case 1086:
                             return var0;
                     }
                 };
@@ -521,7 +521,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var2 = ' Missing navigation container ref. Route transactions will not be sent.';
                             var2 = var10.bind(var8)(var7, var2);
                             var2 = var4.bind(var6)(var2);
-                            _fun12748_ip = 922;
+                            _fun12748_ip = 926;
                             continue _fun12748;
                         case 122:
                             var4 = _closure2_slot0;
@@ -546,7 +546,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var4 = '] Navigation state changed, but no route is rendered.';
                             var4 = var12.bind(var10)(var8, var4);
                             var4 = var6.bind(var7)(var4);
-                            _fun12748_ip = 922;
+                            _fun12748_ip = 926;
                             continue _fun12748;
                         case 212:
                             var4 = _closure2_slot3;
@@ -569,7 +569,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var4 = '] Navigation state changed, but navigation transaction was not started on dispatch.';
                             var4 = var14.bind(var13)(var8, var4);
                             var4 = var6.bind(var7)(var4);
-                            _fun12748_ip = 922;
+                            _fun12748_ip = 926;
                             continue _fun12748;
                         case 292:
                             var4 = 10;
@@ -595,7 +595,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var6 = var11.key;
                             var4 = var2.key;
                             if (!(var6 !== var4)) {
-                                _fun12748_ip = 924;
+                                _fun12748_ip = 928;
                                 continue _fun12748
                             }
                         case 384:
@@ -734,12 +734,12 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var12 = var6 == var11;
                             var10 = undefined;
                             if (var12) {
-                                _fun12748_ip = 850;
+                                _fun12748_ip = 854;
                                 continue _fun12748
                             }
-                        case 845:
+                        case 849:
                             var10 = var11.name;
-                        case 850:
+                        case 854:
                             var9.from = var10;
                             var10 = var2.name;
                             var9.to = var10;
@@ -747,23 +747,23 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var4 = var7.bind(var8)(var4);
                             var4 = _closure2_slot1;
                             if (!(var6 != var4)) {
-                                _fun12748_ip = 900;
+                                _fun12748_ip = 904;
                                 continue _fun12748
                             }
-                        case 880:
+                        case 884:
                             var7 = _closure2_slot1;
                             var6 = var7.setCurrentRoute;
                             var4 = var2.name;
                             var4 = var6.bind(var7)(var4);
-                        case 900:
+                        case 904:
                             var6 = _closure2_slot15;
                             var4 = var2.key;
                             var4 = var6.bind(var0)(var4);
                             var _closure2_slot2 = var2;
                             _closure2_slot3 = var0;
-                        case 922:
+                        case 926:
                             return var0;
-                        case 924:
+                        case 928:
                             var4 = _closure1_slot0;
                             var3 = _closure1_slot1;
                             var3 = var3[var5];

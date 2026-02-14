@@ -8,7 +8,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'op': 110,
         'w': 1280,
         'h': 720,
-        'nm': 'FrameEffect_07-4_Out',
+        'nm': 'FrameEffect_07-2_Out',
         'ddd': 0
     };
     var0 = {
@@ -126,7 +126,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'k': null,
         'ix': 2
     };
-    var4 = [94.82, 93.949, 0];
+    var4 = [1185.086, 93.949, 0];
     var3.k = var4;
     var0.p = var3;
     var3 = {
@@ -225,7 +225,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'k': null,
         'ix': 2
     };
-    var6 = [94.82, 274.563, 0];
+    var6 = [1002.02, 93.949, 0];
     var4.k = var6;
     var3.p = var4;
     var4 = {
@@ -322,7 +322,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'k': null,
         'ix': 2
     };
-    var6 = [94.82, 452.56, 0];
+    var6 = [820.42, 93.949, 0];
     var4.k = var6;
     var3.p = var4;
     var4 = {
@@ -420,7 +420,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'k': null,
         'ix': 2
     };
-    var7 = [94.82, 630.557, 0];
+    var7 = [638.82, 93.949, 0];
     var4.k = var7;
     var3.p = var4;
     var4 = {
@@ -516,7 +516,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'k': null,
         'ix': 2
     };
-    var7 = [278.02, 93.949, 0];
+    var7 = [458.02, 93.949, 0];
     var4.k = var7;
     var3.p = var4;
     var4 = {
@@ -613,7 +613,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'k': null,
         'ix': 2
     };
-    var7 = [278.02, 274.563, 0];
+    var7 = [278.02, 93.949, 0];
     var4.k = var7;
     var3.p = var4;
     var4 = {
@@ -711,7 +711,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'k': null,
         'ix': 2
     };
-    var7 = [278.02, 452.56, 0];
+    var7 = [94.82, 93.949, 0];
     var4.k = var7;
     var3.p = var4;
     var4 = {
@@ -808,7 +808,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'k': null,
         'ix': 2
     };
-    var7 = [278.02, 630.557, 0];
+    var7 = [1185.086, 274.563, 0];
     var4.k = var7;
     var3.p = var4;
     var4 = {
@@ -905,7 +905,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'k': null,
         'ix': 2
     };
-    var7 = [458.02, 93.949, 0];
+    var7 = [1002.02, 274.563, 0];
     var4.k = var7;
     var3.p = var4;
     var4 = {
@@ -1002,7 +1002,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'k': null,
         'ix': 2
     };
-    var7 = [458.02, 274.563, 0];
+    var7 = [820.42, 274.563, 0];
     var4.k = var7;
     var3.p = var4;
     var4 = {
@@ -1099,7 +1099,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'k': null,
         'ix': 2
     };
-    var7 = [458.02, 452.56, 0];
+    var7 = [638.82, 274.563, 0];
     var4.k = var7;
     var3.p = var4;
     var4 = {
@@ -1195,7 +1195,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'k': null,
         'ix': 2
     };
-    var7 = [458.02, 630.557, 0];
+    var7 = [458.02, 274.563, 0];
     var4.k = var7;
     var3.p = var4;
     var4 = {
@@ -1292,7 +1292,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'k': null,
         'ix': 2
     };
-    var7 = [638.82, 93.949, 0];
+    var7 = [278.02, 274.563, 0];
     var4.k = var7;
     var3.p = var4;
     var4 = {
@@ -1388,7 +1388,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'k': null,
         'ix': 2
     };
-    var7 = [638.82, 274.563, 0];
+    var7 = [94.82, 274.563, 0];
     var4.k = var7;
     var3.p = var4;
     var4 = {
@@ -1483,7 +1483,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'k': null,
         'ix': 2
     };
-    var7 = [638.82, 452.56, 0];
+    var7 = [1185.086, 452.56, 0];
     var4.k = var7;
     var3.p = var4;
     var4 = {
@@ -1580,7 +1580,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'k': null,
         'ix': 2
     };
-    var7 = [638.82, 630.557, 0];
+    var7 = [1002.02, 452.56, 0];
     var4.k = var7;
     var3.p = var4;
     var4 = {
@@ -1676,7 +1676,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'k': null,
         'ix': 2
     };
-    var7 = [820.42, 93.949, 0];
+    var7 = [820.42, 452.56, 0];
     var4.k = var7;
     var3.p = var4;
     var4 = {
@@ -1772,7 +1772,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'k': null,
         'ix': 2
     };
-    var7 = [820.42, 274.563, 0];
+    var7 = [638.82, 452.56, 0];
     var4.k = var7;
     var3.p = var4;
     var4 = {
@@ -1869,7 +1869,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'k': null,
         'ix': 2
     };
-    var19 = [820.42, 452.56, 0];
+    var19 = [458.02, 452.56, 0];
     var4.k = var19;
     var3.p = var4;
     var4 = {
@@ -1965,7 +1965,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'k': null,
         'ix': 2
     };
-    var19 = [820.42, 630.557, 0];
+    var19 = [278.02, 452.56, 0];
     var4.k = var19;
     var3.p = var4;
     var4 = {
@@ -2061,7 +2061,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'k': null,
         'ix': 2
     };
-    var19 = [1002.02, 93.949, 0];
+    var19 = [94.82, 452.56, 0];
     var4.k = var19;
     var3.p = var4;
     var4 = {
@@ -2156,7 +2156,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'k': null,
         'ix': 2
     };
-    var17 = [1002.02, 274.563, 0];
+    var17 = [1185.086, 630.557, 0];
     var4.k = var17;
     var3.p = var4;
     var4 = {
@@ -2251,7 +2251,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'k': null,
         'ix': 2
     };
-    var15 = [1002.02, 452.56, 0];
+    var15 = [1002.02, 630.557, 0];
     var4.k = var15;
     var3.p = var4;
     var4 = {
@@ -2346,7 +2346,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'k': null,
         'ix': 2
     };
-    var13 = [1002.02, 630.557, 0];
+    var13 = [820.42, 630.557, 0];
     var4.k = var13;
     var3.p = var4;
     var4 = {
@@ -2441,7 +2441,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'k': null,
         'ix': 2
     };
-    var11 = [1185.086, 93.949, 0];
+    var11 = [638.82, 630.557, 0];
     var4.k = var11;
     var3.p = var4;
     var4 = {
@@ -2536,7 +2536,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'k': null,
         'ix': 2
     };
-    var9 = [1185.086, 274.563, 0];
+    var9 = [458.02, 630.557, 0];
     var4.k = var9;
     var3.p = var4;
     var4 = {
@@ -2631,7 +2631,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'k': null,
         'ix': 2
     };
-    var6 = [1185.086, 452.56, 0];
+    var6 = [278.02, 630.557, 0];
     var4.k = var6;
     var3.p = var4;
     var4 = {
@@ -2726,7 +2726,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'k': null,
         'ix': 2
     };
-    var5 = [1185.086, 630.557, 0];
+    var5 = [94.82, 630.557, 0];
     var4.k = var5;
     var3.p = var4;
     var4 = {

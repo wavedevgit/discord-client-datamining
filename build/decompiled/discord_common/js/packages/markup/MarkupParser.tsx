@@ -1,7 +1,7 @@
 // ../discord_common/js/packages/markup/MarkupParser.tsx
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun44473: for (var _fun44473_ip = 0;;) switch (_fun44473_ip) {
+    _fun44471: for (var _fun44471_ip = 0;;) switch (_fun44471_ip) {
         case 0:
             var11 = require;
             var2 = exports;
@@ -40,8 +40,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var12 = var11.bind(var0)(var12);
                     var12 = var12[var13];
                     var2[var13] = var12;
-                    _fun44473_ip = 133;
-                    continue _fun44473;
+                    _fun44471_ip = 133;
+                    continue _fun44471;
                 }
         case 164:
             var5 = 3;
@@ -54,12 +54,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var12 = var11.bind(var0)(var12);
                     var12 = var12[var13];
                     var2[var13] = var12;
-                    _fun44473_ip = 184;
-                    continue _fun44473;
+                    _fun44471_ip = 184;
+                    continue _fun44471;
                 }
         case 215:
             var2.reactParserFor = var3;
             var2.astParserFor = var1;
             return var0;
     }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [4873, 2, 4874, 4875]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [4875, 2, 4876, 4877]);

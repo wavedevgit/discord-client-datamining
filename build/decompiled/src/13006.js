@@ -1,120 +1,343 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = exports;
-    var2 = require;
-    var _closure1_slot0 = var2;
-    var2 = dependencyMap;
-    var _closure1_slot1 = var2;
-    var2 = global;
-    var5 = var2.Object;
-    var4 = var5.defineProperty;
-    var3 = {};
-    var2 = true;
-    var3.value = var2;
-    var2 = '__esModule';
-    var2 = var4.bind(var5)(var1, var2, var3);
-    var0 = function arg0, arg1, arg2, arg3, arg4() {
-        _fun100059: for (var _fun100059_ip = 0;;) switch (_fun100059_ip) {
-            case 0:
-                var2 = arg1;
-                var5 = arg2;
-                var0 = arg3;
-                var4 = arg4;
-                var3 = {};
-                var1 = global;
-                var1 = var1.Date;
-                var6 = var1.prototype;
-                var6 = Object.create(var6, {
-                    constructor: {
-                        value: var1
-                    }
-                });
-                var9 = var6;
-                var1 = new var9[var1](var8);
-                var6 = var1 instanceof Object ? var1 : var6;
-                var1 = var6.toISOString;
-                var1 = var1.bind(var6)();
-                var3.sent_at = var1;
-                var1 = var5;
-                if (!var1) {
-                    _fun100059_ip = 69;
-                    continue _fun100059
-                }
-            case 63:
-                var1 = var5.sdk;
-            case 69:
-                if (!var1) {
-                    _fun100059_ip = 112;
-                    continue _fun100059
-                }
-            case 72:
-                var1 = {};
-                var6 = var5.sdk;
-                var6 = var6.name;
-                var1.name = var6;
-                var5 = var5.sdk;
-                var5 = var5.version;
-                var1.version = var5;
-                var3.sdk = var1;
-            case 112:
-                if (!var0) {
-                    _fun100059_ip = 118;
-                    continue _fun100059
-                }
-            case 115:
-                var0 = var4;
-            case 118:
-                if (!var0) {
-                    _fun100059_ip = 162;
-                    continue _fun100059
-                }
-            case 121:
-                var5 = _closure1_slot0;
-                var1 = _closure1_slot1;
-                var0 = 0;
-                var1 = var1[var0];
-                var0 = undefined;
-                var1 = var5.bind(var0)(var1);
-                var0 = var1.dsnToString;
-                var0 = var0.bind(var1)(var4);
-                var3.dsn = var0;
-            case 162:
-                if (!var2) {
-                    _fun100059_ip = 206;
-                    continue _fun100059
-                }
-            case 165:
-                var4 = _closure1_slot0;
-                var1 = _closure1_slot1;
-                var0 = 0;
-                var1 = var1[var0];
-                var0 = undefined;
-                var1 = var4.bind(var0)(var1);
-                var0 = var1.dropUndefinedKeys;
-                var0 = var0.bind(var1)(var2);
-                var3.trace = var0;
-            case 206:
-                var0 = {};
-                var1 = 'check_in';
-                var0.type = var1;
-                var4 = new Array(2);
-                var4[0] = var0;
-                var0 = arg0;
-                var4[1] = var0;
-                var2 = _closure1_slot0;
-                var1 = _closure1_slot1;
-                var0 = 0;
-                var1 = var1[var0];
-                var0 = undefined;
-                var2 = var2.bind(var0)(var1);
-                var1 = var2.createEnvelope;
-                var0 = new Array(1);
-                var0[0] = var4;
-                var0 = var1.bind(var2)(var3, var0);
-                return var0;
-        }
-    };
-    var1.createCheckInEnvelope = var0;
+    var4 = require;
+    var2 = exports;
+    var5 = dependencyMap;
+    var _closure1_slot0 = var4;
+    var _closure1_slot1 = var5;
+    var0 = 0;
+    var3 = var5[var0];
     var0 = undefined;
+    var3 = var4.bind(var0)(var3);
+    var _closure1_slot2 = var3;
+    var3 = 1;
+    var3 = var5[var3];
+    var3 = var4.bind(var0)(var3);
+    var _closure1_slot3 = var3;
+    var3 = global;
+    var6 = var3.Object;
+    var5 = var6.defineProperty;
+    var4 = {};
+    var3 = true;
+    var4.value = var3;
+    var3 = '__esModule';
+    var3 = var5.bind(var6)(var2, var3, var4);
+    var1 = function() { // Environment: var1
+        var3 = _closure1_slot3;
+        var2 = function arg0, arg1() {
+            _fun99996: for (var _fun99996_ip = 0;;) switch (_fun99996_ip) {
+                case 0:
+                    var2 = this;
+                    var _closure3_slot0 = var2;
+                    var4 = _closure1_slot2;
+                    var3 = _closure2_slot0;
+                    var0 = undefined;
+                    var3 = var4.bind(var0)(var2, var3);
+                    var3 = arg0;
+                    var2._client = var3;
+                    var3 = 60;
+                    var2.flushTimeout = var3;
+                    var3 = global;
+                    var4 = var3.Map;
+                    var5 = var4.prototype;
+                    var5 = Object.create(var5, {
+                        constructor: {
+                            value: var4
+                        }
+                    });
+                    var8 = var5;
+                    var4 = new var8[var4](var7);
+                    var4 = var4 instanceof Object ? var4 : var5;
+                    var2._pendingAggregates = var4;
+                    var4 = true;
+                    var2._isEnabled = var4;
+                    var4 = var3.setInterval;
+                    var5 = var2.flushTimeout;
+                    var3 = 1000;
+                    var3 = var3 * var5;
+                    var1 = function() { // Environment: var1
+                        var1 = _closure3_slot0;
+                        var0 = var1.flush;
+                        var0 = var0.bind(var1)();
+                        return var0;
+                    };
+                    var1 = var4.bind(var0)(var1, var3);
+                    var2._intervalId = var1;
+                    var1 = var2._intervalId;
+                    var1 = var1.unref;
+                    if (!var1) {
+                        _fun99996_ip = 163;
+                        continue _fun99996
+                    }
+                case 147:
+                    var3 = var2._intervalId;
+                    var1 = var3.unref;
+                    var1 = var1.bind(var3)();
+                case 163:
+                    var1 = arg1;
+                    var2._sessionAttrs = var1;
+                    return var0;
+            }
+        };
+        var _closure2_slot0 = var2;
+        var0 = {};
+        var1 = 'flush';
+        var0.key = var1;
+        var1 = function() {
+            _fun99998: for (var _fun99998_ip = 0;;) switch (_fun99998_ip) {
+                case 0:
+                    var0 = this;
+                    var1 = var0.getSessionAggregates;
+                    var2 = var1.bind(var0)();
+                    var1 = var2.aggregates;
+                    var3 = var1.length;
+                    var1 = 0;
+                    if (!(var1 !== var3)) {
+                        _fun99998_ip = 83;
+                        continue _fun99998
+                    }
+                case 32:
+                    var1 = global;
+                    var1 = var1.Map;
+                    var3 = var1.prototype;
+                    var3 = Object.create(var3, {
+                        constructor: {
+                            value: var1
+                        }
+                    });
+                    var5 = var3;
+                    var1 = new var5[var1](var4);
+                    var1 = var1 instanceof Object ? var1 : var3;
+                    var0._pendingAggregates = var1;
+                    var1 = var0._client;
+                    var0 = var1.sendSession;
+                    var0 = var0.bind(var1)(var2);
+                case 83:
+                    var0 = undefined;
+                    return var0;
+            }
+        };
+        var0.value = var1;
+        var1 = new Array(5);
+        var1[0] = var0;
+        var0 = {};
+        var5 = 'getSessionAggregates';
+        var0.key = var5;
+        var5 = function() {
+            var1 = this;
+            var0 = global;
+            var3 = var0.Array;
+            var2 = var3.from;
+            var4 = var1._pendingAggregates;
+            var0 = var4.values;
+            var0 = var0.bind(var4)();
+            var0 = var2.bind(var3)(var0);
+            var2 = {};
+            var1 = var1._sessionAttrs;
+            var2.attrs = var1;
+            var2.aggregates = var0;
+            var3 = _closure1_slot0;
+            var1 = _closure1_slot1;
+            var0 = 2;
+            var1 = var1[var0];
+            var0 = undefined;
+            var1 = var3.bind(var0)(var1);
+            var0 = var1.dropUndefinedKeys;
+            var0 = var0.bind(var1)(var2);
+            return var0;
+        };
+        var0.value = var5;
+        var1[1] = var0;
+        var0 = {};
+        var5 = 'close';
+        var0.key = var5;
+        var5 = function() {
+            var2 = this;
+            var0 = global;
+            var3 = var0.clearInterval;
+            var1 = var2._intervalId;
+            var0 = undefined;
+            var1 = var3.bind(var0)(var1);
+            var1 = false;
+            var2._isEnabled = var1;
+            var1 = var2.flush;
+            var1 = var1.bind(var2)();
+            return var0;
+        };
+        var0.value = var5;
+        var1[2] = var0;
+        var0 = {};
+        var5 = 'incrementSessionStatusCount';
+        var0.key = var5;
+        var5 = function() {
+            _fun100001: for (var _fun100001_ip = 0;;) switch (_fun100001_ip) {
+                case 0:
+                    var5 = this;
+                    var0 = var5._isEnabled;
+                    if (!var0) {
+                        _fun100001_ip = 131;
+                        continue _fun100001
+                    }
+                case 12:
+                    var1 = _closure1_slot0;
+                    var2 = _closure1_slot1;
+                    var0 = 3;
+                    var0 = var2[var0];
+                    var2 = undefined;
+                    var1 = var1.bind(var2)(var0);
+                    var0 = var1.getIsolationScope;
+                    var1 = var0.bind(var1)();
+                    var0 = var1.getRequestSession;
+                    var0 = var0.bind(var1)();
+                    var3 = var0;
+                    if (!var3) {
+                        _fun100001_ip = 68;
+                        continue _fun100001
+                    }
+                case 63:
+                    var3 = var0.status;
+                case 68:
+                    if (!var3) {
+                        _fun100001_ip = 131;
+                        continue _fun100001
+                    }
+                case 71:
+                    var4 = var5._incrementSessionStatusCount;
+                    var3 = var0.status;
+                    var0 = global;
+                    var0 = var0.Date;
+                    var6 = var0.prototype;
+                    var6 = Object.create(var6, {
+                        constructor: {
+                            value: var0
+                        }
+                    });
+                    var9 = var6;
+                    var0 = new var9[var0](var8);
+                    var0 = var0 instanceof Object ? var0 : var6;
+                    var0 = var4.bind(var5)(var3, var0);
+                    var0 = var1.setRequestSession;
+                    var0 = var0.bind(var1)(var2);
+                case 131:
+                    var0 = undefined;
+                    return var0;
+            }
+        };
+        var0.value = var5;
+        var1[3] = var0;
+        var0 = {};
+        var5 = '_incrementSessionStatusCount';
+        var0.key = var5;
+        var4 = function arg0, arg1() {
+            _fun100002: for (var _fun100002_ip = 0;;) switch (_fun100002_ip) {
+                case 0:
+                    var3 = arg0;
+                    var4 = this;
+                    var5 = global;
+                    var2 = var5.Date;
+                    var0 = var2.prototype;
+                    var1 = Object.create(var0, {
+                        constructor: {
+                            value: var2
+                        }
+                    });
+                    var9 = arg1;
+                    var10 = var1;
+                    var0 = new var10[var2](var9, var8);
+                    var2 = var0 instanceof Object ? var0 : var1;
+                    var0 = var2.setSeconds;
+                    var1 = 0;
+                    var6 = var0.bind(var2)(var1, var1);
+                    var2 = var4._pendingAggregates;
+                    var0 = var2.get;
+                    var0 = var0.bind(var2)(var6);
+                    if (var0) {
+                        _fun100002_ip = 136;
+                        continue _fun100002
+                    }
+                case 70:
+                    var2 = {};
+                    var5 = var5.Date;
+                    var7 = var5.prototype;
+                    var7 = Object.create(var7, {
+                        constructor: {
+                            value: var5
+                        }
+                    });
+                    var10 = var7;
+                    var9 = var6;
+                    var5 = new var10[var5](var9, var8);
+                    var7 = var5 instanceof Object ? var5 : var7;
+                    var5 = var7.toISOString;
+                    var5 = var5.bind(var7)();
+                    var2.started = var5;
+                    var5 = var4._pendingAggregates;
+                    var4 = var5.set;
+                    var4 = var4.bind(var5)(var6, var2);
+                    var0 = var2;
+                case 136:
+                    var2 = 'errored';
+                    if (!(var2 !== var3)) {
+                        _fun100002_ip = 216;
+                        continue _fun100002
+                    }
+                case 144:
+                    var2 = 'ok';
+                    if (!(var2 !== var3)) {
+                        _fun100002_ip = 184;
+                        continue _fun100002
+                    }
+                case 152:
+                    var3 = var0.crashed;
+                    if (var3) {
+                        _fun100002_ip = 163;
+                        continue _fun100002
+                    }
+                case 161:
+                    var3 = 0;
+                case 163:
+                    var2 = 1;
+                    var2 = var3 + var2;
+                    var0.crashed = var2;
+                    var2 = var0.crashed;
+                    return var2;
+                case 184:
+                    var3 = var0.exited;
+                    if (var3) {
+                        _fun100002_ip = 195;
+                        continue _fun100002
+                    }
+                case 193:
+                    var3 = 0;
+                case 195:
+                    var2 = 1;
+                    var2 = var3 + var2;
+                    var0.exited = var2;
+                    var2 = var0.exited;
+                    return var2;
+                case 216:
+                    var2 = var0.errored;
+                    if (var2) {
+                        _fun100002_ip = 227;
+                        continue _fun100002
+                    }
+                case 225:
+                    var2 = 0;
+                case 227:
+                    var1 = 1;
+                    var1 = var2 + var1;
+                    var0.errored = var1;
+                    var0 = var0.errored;
+                    return var0;
+            }
+        };
+        var0.value = var4;
+        var1[4] = var0;
+        var0 = undefined;
+        var0 = var3.bind(var0)(var2, var1);
+        return var0;
+    };
+    var1 = var1.bind(var0)();
+    var2.SessionFlusher = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [12915]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 12920, 12985]);

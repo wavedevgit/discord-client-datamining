@@ -232,4 +232,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2.NativeLottieRenderMode = var1;
             return var0;
     }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 478, 6778, 116, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 478, 6780, 116, 2]);

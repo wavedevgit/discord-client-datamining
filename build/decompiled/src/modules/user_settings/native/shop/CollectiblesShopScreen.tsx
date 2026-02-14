@@ -38,7 +38,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/user_settings/native/shop/CollectiblesShopScreen.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function() {
-        _fun88941: for (var _fun88941_ip = 0;;) switch (_fun88941_ip) {
+        _fun88952: for (var _fun88952_ip = 0;;) switch (_fun88952_ip) {
             case 0:
                 var1 = _closure1_slot0;
                 var2 = _closure1_slot2;
@@ -58,15 +58,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var7 == var0;
                 var4 = undefined;
                 if (var1) {
-                    _fun88941_ip = 80;
-                    continue _fun88941
+                    _fun88952_ip = 80;
+                    continue _fun88952
                 }
             case 74:
                 var4 = var0.screen;
             case 80:
                 if (!(var7 == var4)) {
-                    _fun88941_ip = 94;
-                    continue _fun88941
+                    _fun88952_ip = 94;
+                    continue _fun88952
                 }
             case 84:
                 var0 = _closure1_slot3;
@@ -84,15 +84,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var7 == var8;
                 var5 = undefined;
                 if (var9) {
-                    _fun88941_ip = 147;
-                    continue _fun88941
+                    _fun88952_ip = 147;
+                    continue _fun88952
                 }
             case 141:
                 var5 = var8.analyticsSource;
             case 147:
                 if (!(var7 == var5)) {
-                    _fun88941_ip = 177;
-                    continue _fun88941
+                    _fun88952_ip = 177;
+                    continue _fun88952
                 }
             case 151:
                 var7 = _closure1_slot1;
@@ -110,4 +110,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 3287, 33, 7611, 11504, 11505, 5639, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 3289, 33, 7579, 11507, 11508, 5641, 2]);

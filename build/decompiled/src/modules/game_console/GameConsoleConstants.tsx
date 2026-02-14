@@ -244,4 +244,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = 'console error alert';
     var2.GAME_CONSOLE_ALERT_MODAL_LOCATION = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 3339, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 3341, 2]);

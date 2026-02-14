@@ -113,7 +113,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var6.bind(var7)(var3);
     var _closure1_slot6 = var3;
     var3 = function arg0() {
-        _fun75037: for (var _fun75037_ip = 0;;) switch (_fun75037_ip) {
+        _fun74837: for (var _fun74837_ip = 0;;) switch (_fun74837_ip) {
             case 0:
                 var0 = new Array(0);
                 var2 = _closure1_slot0;
@@ -126,8 +126,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = arg0;
                 var1 = var2.bind(var4)(var1);
                 if (!var1) {
-                    _fun75037_ip = 127;
-                    continue _fun75037
+                    _fun74837_ip = 127;
+                    continue _fun74837
                 }
             case 46:
                 var2 = var0.push;
@@ -328,4 +328,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.doesStickerPackHavePopoutInformation = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 660, 33, 1297, 671, 4687, 3994, 1235, 3938, 4909, 4883, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 660, 33, 1297, 671, 4689, 3996, 1235, 3940, 4911, 4885, 2]);

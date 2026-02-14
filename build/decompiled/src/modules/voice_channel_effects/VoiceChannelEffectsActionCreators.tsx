@@ -312,4 +312,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.sendVoiceChannelSoundboardEffect = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [4744, 1675, 5751, 5752, 660, 3953, 22, 5753, 507, 5776, 5639, 4806, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [4746, 1675, 5753, 5754, 660, 3955, 22, 5755, 507, 5778, 5641, 4808, 2]);

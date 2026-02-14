@@ -179,4 +179,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useUpdateIsOnStartStageScreenEffect = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 3096, 1675, 629, 803, 566, 1380, 5973, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 3098, 1675, 629, 803, 566, 1380, 5975, 2]);

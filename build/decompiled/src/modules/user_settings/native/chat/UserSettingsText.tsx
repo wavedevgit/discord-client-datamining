@@ -198,7 +198,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = 'modules/user_settings/native/chat/UserSettingsText.tsx';
     var6 = var7.bind(var8)(var6);
     var6 = function() {
-        _fun85918: for (var _fun85918_ip = 0;;) switch (_fun85918_ip) {
+        _fun85930: for (var _fun85930_ip = 0;;) switch (_fun85930_ip) {
             case 0:
                 var0 = _closure1_slot16;
                 var3 = undefined;
@@ -581,8 +581,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var14[0] = var18;
                 var16 = !var16;
                 if (!var16) {
-                    _fun85918_ip = 1523;
-                    continue _fun85918
+                    _fun85930_ip = 1523;
+                    continue _fun85930
                 }
             case 1512:
                 var18 = function() {
@@ -936,4 +936,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.setVideoUploadQuality = var3;
     var2.setImageDescriptions = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1621, 3122, 1354, 3202, 660, 4877, 33, 1297, 671, 796, 1348, 7686, 566, 3114, 1469, 7311, 4092, 6738, 3938, 1235, 5438, 4086, 5423, 5476, 5482, 5481, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1621, 3124, 1354, 3204, 660, 4879, 33, 1297, 671, 796, 1348, 7654, 566, 3116, 1469, 7313, 4094, 6740, 3940, 1235, 5440, 4088, 5425, 5478, 5484, 5483, 2]);

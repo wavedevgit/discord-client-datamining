@@ -1873,4 +1873,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.fetchMonetizationRestrictions = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 5, 660, 5684, 807, 3443, 5685, 796, 4308, 3526, 667, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 5, 660, 5686, 807, 3445, 5687, 796, 4310, 3528, 667, 2]);

@@ -625,6 +625,6 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = var1.bind(var2)(var0);
         return var0;
     };
-    var2.isQuestFeaturedByTakeover = var1;
+    var2.isQuestFeaturedByHero = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 3516, 1410, 3096, 3518, 5287, 5326, 5327, 5328, 5329, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 3518, 1410, 3098, 3520, 5289, 5328, 5329, 5330, 5331, 2]);

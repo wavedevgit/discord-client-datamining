@@ -505,7 +505,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                                             var2 = 'function';
                                                             var1 = typeof var1;
                                                             if (!(var2 === var1)) {
-                                                                _fun10981_ip = 147;
+                                                                _fun10981_ip = 151;
                                                                 continue _fun10981
                                                             }
                                                         case 31:
@@ -537,57 +537,57 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                                             var1.mechanism = var9;
                                                             var1 = var7.bind(var8)(var6, var1);
                                                             var2.handleEvent = var1;
-                                                        case 147: // try_end0
-                                                            _fun10981_ip = 151;
+                                                        case 151: // try_end0
+                                                            _fun10981_ip = 155;
                                                             continue _fun10981;
-                                                        case 149: // catch_target0
+                                                        case 153: // catch_target0
                                                             CatchBlockStart(arg_register = 1);
-                                                        case 151:
+                                                        case 155:
                                                             var1 = _closure5_slot1;
                                                             var1 = var1.unregisterOriginalCallbacks;
                                                             if (!var1) {
-                                                                _fun10981_ip = 236;
+                                                                _fun10981_ip = 240;
                                                                 continue _fun10981
                                                             }
-                                                        case 167:
+                                                        case 171:
                                                             var6 = var0;
                                                             var2 = var5;
                                                             var1 = var3;
                                                             if (!var1) {
-                                                                _fun10981_ip = 190;
+                                                                _fun10981_ip = 194;
                                                                 continue _fun10981
                                                             }
-                                                        case 179:
+                                                        case 183:
                                                             var8 = 'object';
                                                             var7 = typeof var3;
                                                             var1 = var8 === var7;
-                                                        case 190:
+                                                        case 194:
                                                             if (!var1) {
-                                                                _fun10981_ip = 201;
+                                                                _fun10981_ip = 205;
                                                                 continue _fun10981
                                                             }
-                                                        case 193:
+                                                        case 197:
                                                             var7 = 'removeEventListener';
                                                             var1 = var7 in var3;
-                                                        case 201:
+                                                        case 205:
                                                             if (!var1) {
-                                                                _fun10981_ip = 221;
+                                                                _fun10981_ip = 225;
                                                                 continue _fun10981
                                                             }
-                                                        case 204:
+                                                        case 208:
                                                             var7 = var3.removeEventListener;
                                                             var8 = 'function';
                                                             var7 = typeof var7;
                                                             var1 = var8 === var7;
-                                                        case 221:
+                                                        case 225:
                                                             if (!var1) {
-                                                                _fun10981_ip = 236;
+                                                                _fun10981_ip = 240;
                                                                 continue _fun10981
                                                             }
-                                                        case 224:
+                                                        case 228:
                                                             var1 = var3.removeEventListener;
                                                             var1 = var1.bind(var3)(var6, var2);
-                                                        case 236:
+                                                        case 240:
                                                             var2 = _closure6_slot0;
                                                             var1 = var2.apply;
                                                             var6 = var0;

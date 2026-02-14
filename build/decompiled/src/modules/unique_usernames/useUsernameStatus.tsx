@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/unique_usernames/useUsernameStatus.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Environment: var1
-        _fun81700: for (var _fun81700_ip = 0;;) switch (_fun81700_ip) {
+        _fun81706: for (var _fun81706_ip = 0;;) switch (_fun81706_ip) {
             case 0:
                 var6 = arg0;
                 var9 = arguments[1];
@@ -41,22 +41,22 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var _closure2_slot0 = var6;
                 var8 = undefined;
                 if (!(var9 === var8)) {
-                    _fun81700_ip = 26;
-                    continue _fun81700
+                    _fun81706_ip = 26;
+                    continue _fun81706
                 }
             case 24:
                 var9 = true;
             case 26:
                 if (!(var7 === var8)) {
-                    _fun81700_ip = 32;
-                    continue _fun81700
+                    _fun81706_ip = 32;
+                    continue _fun81706
                 }
             case 30:
                 var7 = false;
             case 32:
                 if (!(var5 === var8)) {
-                    _fun81700_ip = 38;
-                    continue _fun81700
+                    _fun81706_ip = 38;
+                    continue _fun81706
                 }
             case 36:
                 var5 = undefined;
@@ -88,35 +88,35 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2[1] = var6;
                 var2[2] = var5;
                 var1 = function() { // Environment: var1
-                    _fun81701: for (var _fun81701_ip = 0;;) switch (_fun81701_ip) {
+                    _fun81707: for (var _fun81707_ip = 0;;) switch (_fun81707_ip) {
                         case 0:
                             var2 = _closure2_slot0;
                             var1 = '';
                             if (!(var1 !== var2)) {
-                                _fun81701_ip = 54;
-                                continue _fun81701
+                                _fun81707_ip = 54;
+                                continue _fun81707
                             }
                         case 15:
                             var2 = _closure2_slot0;
                             var1 = _closure2_slot1;
                             if (!(var2 !== var1)) {
-                                _fun81701_ip = 54;
-                                continue _fun81701
+                                _fun81707_ip = 54;
+                                continue _fun81707
                             }
                         case 27:
                             var2 = _closure2_slot2;
                             var1 = null;
                             if (!(var1 != var2)) {
-                                _fun81701_ip = 65;
-                                continue _fun81701
+                                _fun81707_ip = 65;
+                                continue _fun81707
                             }
                         case 37:
                             var3 = _closure2_slot3;
                             var2 = _closure2_slot2;
                             var1 = undefined;
                             var1 = var3.bind(var1)(var2);
-                            _fun81701_ip = 65;
-                            continue _fun81701;
+                            _fun81707_ip = 65;
+                            continue _fun81707;
                         case 54:
                             var1 = _closure2_slot3;
                             var0 = undefined;
@@ -132,4 +132,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useUsernameStatus = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 10368, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 10372, 2]);

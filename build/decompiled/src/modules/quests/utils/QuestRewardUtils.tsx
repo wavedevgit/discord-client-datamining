@@ -978,4 +978,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getPlatformString = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [4604, 5348, 5296, 5297, 2724, 1235, 5349, 5350, 5357, 5289, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [4606, 5350, 5298, 5299, 2726, 1235, 5351, 5352, 5359, 5291, 2]);

@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/chat/native/ChatChangesetUpdateTracker.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function arg0() {
-        _fun74141: for (var _fun74141_ip = 0;;) switch (_fun74141_ip) {
+        _fun73941: for (var _fun73941_ip = 0;;) switch (_fun73941_ip) {
             case 0:
                 var3 = arg0;
                 var2 = _closure1_slot0;
@@ -41,8 +41,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var2 != var0;
                 var2 = 0;
                 if (!var4) {
-                    _fun74141_ip = 34;
-                    continue _fun74141
+                    _fun73941_ip = 34;
+                    continue _fun73941
                 }
             case 31:
                 var2 = var0;
@@ -57,15 +57,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getAndIncrementChangesetIdForChat = var3;
     var1 = function arg0() {
-        _fun74142: for (var _fun74142_ip = 0;;) switch (_fun74142_ip) {
+        _fun73942: for (var _fun73942_ip = 0;;) switch (_fun73942_ip) {
             case 0:
                 var5 = arg0;
                 var3 = null;
                 var2 = var3 == var5;
                 var0 = 0;
                 if (var2) {
-                    _fun74142_ip = 46;
-                    continue _fun74142
+                    _fun73942_ip = 46;
+                    continue _fun73942
                 }
             case 14:
                 var4 = _closure1_slot0;
@@ -74,8 +74,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var3 != var2;
                 var1 = 0;
                 if (!var3) {
-                    _fun74142_ip = 43;
-                    continue _fun74142
+                    _fun73942_ip = 43;
+                    continue _fun73942
                 }
             case 40:
                 var1 = var2;

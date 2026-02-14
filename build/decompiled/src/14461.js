@@ -1,55 +1,89 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var0 = global;
-    var2 = var0.IntlMessageFormat;
-    var1 = var2.__addLocaleData;
-    var0 = {};
-    var3 = 'hu';
-    var0.locale = var3;
-    var3 = function arg0, arg1() {
-        _fun112792: for (var _fun112792_ip = 0;;) switch (_fun112792_ip) {
+    var3 = var0.IntlMessageFormat;
+    var2 = var3.__addLocaleData;
+    var1 = {};
+    var4 = 'de';
+    var1.locale = var4;
+    var4 = function arg0, arg1() {
+        _fun112864: for (var _fun112864_ip = 0;;) switch (_fun112864_ip) {
             case 0:
-                var2 = arg0;
+                var4 = arg0;
+                var0 = global;
+                var1 = var0.String;
+                var0 = undefined;
+                var2 = var1.bind(var0)(var4);
+                var1 = var2.split;
+                var0 = '.';
+                var0 = var1.bind(var2)(var0);
                 var1 = 1;
-                var0 = arg1;
-                if (var0) {
-                    _fun112792_ip = 29;
-                    continue _fun112792
+                var0 = var0[var1];
+                var2 = !var0;
+                var3 = 'other';
+                var5 = arg1;
+                var0 = var3;
+                if (var5) {
+                    _fun112864_ip = 78;
+                    continue _fun112864
                 }
-            case 12:
-                var3 = var1 == var2;
-                var0 = 'other';
-                if (!var3) {
-                    _fun112792_ip = 27;
-                    continue _fun112792
+            case 55:
+                var4 = var1 == var4;
+                var1 = var3;
+                if (!var4) {
+                    _fun112864_ip = 75;
+                    continue _fun112864
                 }
-            case 23:
-                var0 = 'one';
-            case 27:
-                _fun112792_ip = 54;
-                continue _fun112792;
-            case 29:
-                if (!(var1 != var2)) {
-                    _fun112792_ip = 47;
-                    continue _fun112792
-                }
-            case 33:
-                var1 = 5;
-                var2 = var1 == var2;
-                var1 = 'other';
+            case 65:
+                var1 = var3;
                 if (!var2) {
-                    _fun112792_ip = 51;
-                    continue _fun112792
+                    _fun112864_ip = 75;
+                    continue _fun112864
                 }
-            case 47:
+            case 71:
                 var1 = 'one';
-            case 51:
+            case 75:
                 var0 = var1;
-            case 54:
+            case 78:
                 return var0;
         }
     };
-    var0.pluralRuleFunction = var3;
+    var1.pluralRuleFunction = var4;
+    var1 = var2.bind(var3)(var1);
+    var3 = var0.IntlMessageFormat;
+    var2 = var3.__addLocaleData;
+    var1 = {
+        'locale': 'de-AT',
+        'parentLocale': 'de'
+    };
+    var1 = var2.bind(var3)(var1);
+    var3 = var0.IntlMessageFormat;
+    var2 = var3.__addLocaleData;
+    var1 = {
+        'locale': 'de-BE',
+        'parentLocale': 'de'
+    };
+    var1 = var2.bind(var3)(var1);
+    var3 = var0.IntlMessageFormat;
+    var2 = var3.__addLocaleData;
+    var1 = {
+        'locale': 'de-CH',
+        'parentLocale': 'de'
+    };
+    var1 = var2.bind(var3)(var1);
+    var3 = var0.IntlMessageFormat;
+    var2 = var3.__addLocaleData;
+    var1 = {
+        'locale': 'de-LI',
+        'parentLocale': 'de'
+    };
+    var1 = var2.bind(var3)(var1);
+    var2 = var0.IntlMessageFormat;
+    var1 = var2.__addLocaleData;
+    var0 = {
+        'locale': 'de-LU',
+        'parentLocale': 'de'
+    };
     var0 = var1.bind(var2)(var0);
     var0 = undefined;
     return var0;

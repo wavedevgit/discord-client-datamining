@@ -1,7 +1,7 @@
 // utils/MFAUtils.tsx
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun61283: for (var _fun61283_ip = 0;;) switch (_fun61283_ip) {
+    _fun80404: for (var _fun80404_ip = 0;;) switch (_fun80404_ip) {
         case 0:
             var7 = require;
             var2 = exports;
@@ -34,49 +34,49 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var0 = undefined;
             var10 = undefined;
             if (var9) {
-                _fun61283_ip = 88;
-                continue _fun61283
+                _fun80404_ip = 90;
+                continue _fun80404
             }
-        case 82:
+        case 84:
             var10 = var5.crypto;
-        case 88:
+        case 90:
             if (!(var6 == var10)) {
-                _fun61283_ip = 116;
-                continue _fun61283
+                _fun80404_ip = 118;
+                continue _fun80404
             }
-        case 92:
+        case 94:
             var9 = var4.window;
             var11 = var6 == var9;
             var5 = undefined;
             if (var11) {
-                _fun61283_ip = 113;
-                continue _fun61283
+                _fun80404_ip = 115;
+                continue _fun80404
             }
-        case 107:
+        case 109:
             var5 = var9.msCrypto;
-        case 113:
+        case 115:
             var10 = var5;
-        case 116:
+        case 118:
             var _closure1_slot2 = var10;
             var5 = var4.window;
             var4 = 'Uint8Array';
             var4 = var4 in var5;
             var5 = var6 != var10;
             if (!var5) {
-                _fun61283_ip = 149;
-                continue _fun61283
+                _fun80404_ip = 151;
+                continue _fun80404
             }
-        case 141:
+        case 143:
             var9 = 'getRandomValues';
             var5 = var9 in var10;
-        case 149:
+        case 151:
             if (!var5) {
-                _fun61283_ip = 155;
-                continue _fun61283
+                _fun80404_ip = 157;
+                continue _fun80404
             }
-        case 152:
+        case 154:
             var5 = var4;
-        case 155:
+        case 157:
             var4 = 0;
             var4 = var8[var4];
             var4 = var7.bind(var0)(var4);
@@ -135,13 +135,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2.generateTotpSecret = var4;
             var2.encodeTotpSecret = var3;
             var3 = function arg0, arg1() {
-                _fun61286: for (var _fun61286_ip = 0;;) switch (_fun61286_ip) {
+                _fun80407: for (var _fun80407_ip = 0;;) switch (_fun80407_ip) {
                     case 0:
                         var3 = arguments[2];
                         var2 = undefined;
                         if (!(var3 === var2)) {
-                            _fun61286_ip = 15;
-                            continue _fun61286
+                            _fun80407_ip = 15;
+                            continue _fun80407
                         }
                     case 9:
                         var3 = 'Discord';
@@ -170,7 +170,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             };
             var2.encodeTotpSecretAsUrl = var3;
             var1 = function arg0, arg1() {
-                _fun61287: for (var _fun61287_ip = 0;;) switch (_fun61287_ip) {
+                _fun80408: for (var _fun80408_ip = 0;;) switch (_fun80408_ip) {
                     case 0:
                         var6 = arg1;
                         var2 = _closure1_slot0;
@@ -189,8 +189,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var7 = var1 == var6;
                         var1 = undefined;
                         if (var7) {
-                            _fun61287_ip = 65;
-                            continue _fun61287
+                            _fun80408_ip = 65;
+                            continue _fun80408
                         }
                     case 59:
                         var1 = var6.tags;
@@ -211,4 +211,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2.captureWebAuthnException = var1;
             return var0;
     }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 7558, 1208, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 10199, 1208, 2]);

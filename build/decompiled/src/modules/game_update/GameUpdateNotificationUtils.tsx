@@ -61,4 +61,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.onGameUpdateNotificationSettingsChanged = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 3108, 1348, 796, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 3110, 1348, 796, 2]);

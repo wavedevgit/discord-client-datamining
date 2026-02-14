@@ -408,4 +408,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.useKeyboardBlurring = var3;
     var2.NativeTextInput = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1466, 660, 33, 5459, 4109, 4076, 5460, 3164, 3158, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1466, 660, 33, 5461, 4111, 4078, 5462, 3166, 3160, 2]);

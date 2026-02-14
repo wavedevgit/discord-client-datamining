@@ -70,4 +70,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getInvitableChannelForGuild = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1676, 3096, 660, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1676, 3098, 660, 2]);

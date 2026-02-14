@@ -353,4 +353,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.canBulkBanUser = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 1410, 3096, 1621, 3100, 660, 484, 3101, 566, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 1410, 3098, 1621, 3102, 660, 484, 3103, 566, 2]);

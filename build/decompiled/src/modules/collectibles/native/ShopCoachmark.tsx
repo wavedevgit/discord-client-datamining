@@ -88,73 +88,91 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var _closure2_slot1 = var7;
         var8 = var0.title;
         var _closure2_slot2 = var8;
-        var10 = var0.description;
-        var _closure2_slot3 = var10;
-        var12 = var0.avatarSrc;
-        var _closure2_slot4 = var12;
-        var11 = var0.decorationAsset;
-        var _closure2_slot5 = var11;
+        var11 = var0.description;
+        var _closure2_slot3 = var11;
+        var13 = var0.avatarSrc;
+        var _closure2_slot4 = var13;
+        var12 = var0.decorationAsset;
+        var _closure2_slot5 = var12;
         var6 = var0.navigateToShop;
         var _closure2_slot6 = var6;
+        var10 = var0.renderImgComponent;
+        var _closure2_slot7 = var10;
         var5 = _closure1_slot3;
         var4 = var5.useMemo;
-        var2 = new Array(7);
-        var2[0] = var12;
-        var2[1] = var11;
-        var2[2] = var10;
-        var2[3] = var9;
-        var2[4] = var8;
-        var2[5] = var7;
-        var2[6] = var6;
+        var2 = new Array(8);
+        var2[0] = var13;
+        var2[1] = var12;
+        var2[2] = var11;
+        var2[3] = var10;
+        var2[4] = var9;
+        var2[5] = var8;
+        var2[6] = var7;
+        var2[7] = var6;
         var1 = function() { // Environment: var1
-            var0 = {};
-            var3 = _closure2_slot2;
-            var0.title = var3;
-            var3 = _closure2_slot3;
-            var0.description = var3;
-            var3 = function() {
-                var2 = _closure2_slot0;
-                var0 = _closure1_slot4;
-                var1 = var0.USER_DISMISS;
-                var0 = undefined;
-                var1 = var2.bind(var0)(var1);
-                return var0;
-            };
-            var0.onDismiss = var3;
-            var3 = _closure2_slot1;
-            var0.visible = var3;
-            var3 = 'bottom';
-            var0.position = var3;
-            var2 = function() {
-                var3 = _closure1_slot5;
-                var2 = _closure1_slot7;
-                var1 = {};
-                var4 = _closure2_slot4;
-                var1.source = var4;
-                var0 = _closure2_slot5;
-                var1.decorationAsset = var0;
-                var0 = undefined;
-                var0 = var3.bind(var0)(var2, var1);
-                return var0;
-            };
-            var0.renderImgComponent = var2;
-            var6 = _closure1_slot0;
-            var7 = _closure1_slot2;
-            var2 = 5;
-            var3 = var7[var2];
-            var5 = undefined;
-            var3 = var6.bind(var5)(var3);
-            var4 = var3.intl;
-            var3 = var4.string;
-            var2 = var7[var2];
-            var2 = var6.bind(var5)(var2);
-            var2 = var2.t;
-            var2 = var2.fYfGgK;
-            var2 = var3.bind(var4)(var2);
-            var0.buttonLabel = var2;
-            var1 = _closure2_slot6;
-            var0.onButtonPress = var1;
-            return var0;
+            _fun103606: for (var _fun103606_ip = 0;;) switch (_fun103606_ip) {
+                case 0:
+                    var0 = {};
+                    var3 = _closure2_slot2;
+                    var0.title = var3;
+                    var3 = _closure2_slot3;
+                    var0.description = var3;
+                    var3 = function() {
+                        var2 = _closure2_slot0;
+                        var0 = _closure1_slot4;
+                        var1 = var0.USER_DISMISS;
+                        var0 = undefined;
+                        var1 = var2.bind(var0)(var1);
+                        return var0;
+                    };
+                    var0.onDismiss = var3;
+                    var3 = _closure2_slot1;
+                    var0.visible = var3;
+                    var3 = 'bottom';
+                    var0.position = var3;
+                    var4 = _closure2_slot7;
+                    var3 = null;
+                    if (!(var3 == var4)) {
+                        _fun103606_ip = 71;
+                        continue _fun103606
+                    }
+                case 62:
+                    var2 = function() { // Environment: var2
+                        var3 = _closure1_slot5;
+                        var2 = _closure1_slot7;
+                        var1 = {};
+                        var4 = _closure2_slot4;
+                        var1.source = var4;
+                        var0 = _closure2_slot5;
+                        var1.decorationAsset = var0;
+                        var0 = undefined;
+                        var0 = var3.bind(var0)(var2, var1);
+                        return var0;
+                    };
+                    _fun103606_ip = 75;
+                    continue _fun103606;
+                case 71:
+                    var2 = _closure2_slot7;
+                case 75:
+                    var0.renderImgComponent = var2;
+                    var6 = _closure1_slot0;
+                    var7 = _closure1_slot2;
+                    var2 = 5;
+                    var3 = var7[var2];
+                    var5 = undefined;
+                    var3 = var6.bind(var5)(var3);
+                    var4 = var3.intl;
+                    var3 = var4.string;
+                    var2 = var7[var2];
+                    var2 = var6.bind(var5)(var2);
+                    var2 = var2.t;
+                    var2 = var2.fYfGgK;
+                    var2 = var3.bind(var4)(var2);
+                    var0.buttonLabel = var2;
+                    var1 = _closure2_slot6;
+                    var0.onButtonPress = var1;
+                    return var0;
+            }
         };
         var2 = var4.bind(var5)(var1, var2);
         var4 = _closure1_slot0;
@@ -170,4 +188,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1369, 33, 1297, 5512, 1235, 7104, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1369, 33, 1297, 5514, 1235, 7106, 2]);

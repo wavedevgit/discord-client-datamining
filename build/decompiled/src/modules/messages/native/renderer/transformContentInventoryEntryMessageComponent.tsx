@@ -885,4 +885,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.transformToRowGeneratedContentInventoryEntryComponent = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 3454, 1690, 1621, 3457, 6919, 3956, 1418, 6920, 6921, 6922, 3244, 6924, 667, 1235, 6926, 5386, 6927, 5713, 6928, 6929, 6925, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 3456, 1690, 1621, 3459, 6921, 3958, 1418, 6922, 6923, 6924, 3246, 6926, 667, 1235, 6928, 5388, 6929, 5715, 6930, 6931, 6927, 2]);

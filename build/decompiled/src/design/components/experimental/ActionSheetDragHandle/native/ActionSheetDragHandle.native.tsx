@@ -181,4 +181,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.ActionSheetDragHandle = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 7114, 33, 1297, 671, 1235, 3717, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 7116, 33, 1297, 671, 1235, 3719, 2]);

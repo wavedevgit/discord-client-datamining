@@ -73,7 +73,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/guild_scheduled_events/native/components/GuildEventRecurrences.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun66823: for (var _fun66823_ip = 0;;) switch (_fun66823_ip) {
+        _fun66618: for (var _fun66618_ip = 0;;) switch (_fun66618_ip) {
             case 0:
                 var0 = arg0;
                 var4 = var0.guildId;
@@ -170,15 +170,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var11.bind(var3)(var10, var8);
                 var4[1] = var8;
                 if (!var5) {
-                    _fun66823_ip = 316;
-                    continue _fun66823
+                    _fun66618_ip = 316;
+                    continue _fun66618
                 }
             case 313:
                 var5 = !var7;
             case 316:
                 if (!var5) {
-                    _fun66823_ip = 426;
-                    continue _fun66823
+                    _fun66618_ip = 426;
+                    continue _fun66618
                 }
             case 319:
                 var8 = _closure1_slot6;
@@ -200,7 +200,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var11.bind(var12)(var10);
                 var6.text = var10;
                 var9 = function arg0() {
-                    _fun66825: for (var _fun66825_ip = 0;;) switch (_fun66825_ip) {
+                    _fun66620: for (var _fun66620_ip = 0;;) switch (_fun66620_ip) {
                         case 0:
                             var1 = arg0;
                             var0 = var1.stopPropagation;
@@ -212,8 +212,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var2 = var1.current;
                             var1 = null;
                             if (!(var1 != var2)) {
-                                _fun66825_ip = 51;
-                                continue _fun66825
+                                _fun66620_ip = 51;
+                                continue _fun66620
                             }
                         case 41:
                             var1 = var2.scrollToEnd;
@@ -235,4 +235,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 8256, 3938, 1235, 21, 8257, 4090, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 8226, 3940, 1235, 21, 8227, 4092, 2]);

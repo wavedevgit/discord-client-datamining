@@ -1,64 +1,53 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = require;
-    var _closure1_slot0 = var1;
-    var1 = dependencyMap;
-    var _closure1_slot1 = var1;
-    var1 = function(arg0) { // Environment: var0
-        _fun94925: for (var _fun94925_ip = 0;;) switch (_fun94925_ip) {
+    var1 = function(arg0, arg1) { // Environment: var0
+        _fun94956: for (var _fun94956_ip = 0;;) switch (_fun94956_ip) {
             case 0:
-                var5 = arg0;
-                var4 = this;
-                var0 = var5.which;
-                var1 = 'number';
-                var0 = typeof var0;
-                if (!(var1 !== var0)) {
-                    _fun94925_ip = 35;
-                    continue _fun94925
+                var1 = arg1;
+                var0 = var1.className;
+                var2 = ' ';
+                var0 = var2 + var0;
+                var3 = var0 + var2;
+                var2 = var3.indexOf;
+                var0 = ' combokeys ';
+                var2 = var2.bind(var3)(var0);
+                var0 = -1;
+                if (!(!(var2 > var0))) {
+                    _fun94956_ip = 107;
+                    continue _fun94956
                 }
-            case 23:
-                var0 = var5.keyCode;
-                var5.which = var0;
-            case 35:
-                var3 = _closure1_slot0;
-                var2 = _closure1_slot1;
-                var0 = 0;
-                var2 = var2[var0];
-                var0 = undefined;
-                var2 = var3.bind(var0)(var2);
-                var3 = var2.bind(var0)(var5);
-                if (!var3) {
-                    _fun94925_ip = 138;
-                    continue _fun94925
+            case 50:
+                var2 = var1.tagName;
+                var0 = var2.toLowerCase;
+                var3 = var0.bind(var2)();
+                var0 = 'input';
+                var0 = var0 === var3;
+                if (var0) {
+                    _fun94956_ip = 85;
+                    continue _fun94956
                 }
-            case 67:
-                var6 = var5.type;
-                var2 = 'keyup';
-                if (!(var2 === var6)) {
-                    _fun94925_ip = 100;
-                    continue _fun94925
+            case 77:
+                var2 = 'select';
+                var0 = var2 === var3;
+            case 85:
+                if (var0) {
+                    _fun94956_ip = 96;
+                    continue _fun94956
                 }
-            case 80:
-                var2 = var4.ignoreNextKeyup;
-                if (!(var2 === var3)) {
-                    _fun94925_ip = 100;
-                    continue _fun94925
+            case 88:
+                var2 = 'textarea';
+                var0 = var2 === var3;
+            case 96:
+                if (var0) {
+                    _fun94956_ip = 105;
+                    continue _fun94956
                 }
-            case 90:
-                var2 = false;
-                var4.ignoreNextKeyup = var2;
-                _fun94925_ip = 138;
-                continue _fun94925;
-            case 100:
-                var2 = _closure1_slot0;
-                var6 = _closure1_slot1;
-                var1 = 1;
-                var1 = var6[var1];
-                var1 = var2.bind(var0)(var1);
-                var2 = var4.handleKey;
-                var1 = var1.bind(var0)(var5);
-                var1 = var2.bind(var4)(var3, var1, var5);
-            case 138:
+            case 99:
+                var0 = var1.isContentEditable;
+            case 105:
+                return var0;
+            case 107:
+                var0 = false;
                 return var0;
         }
     };
@@ -66,4 +55,4 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0.exports = var1;
     var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [12417, 12420]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, []);

@@ -70,4 +70,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var3;
     var2.HolidayEmojiAnimationType = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [8469, 14589, 1235, 14590, 14591, 1358, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [8439, 14596, 1235, 14597, 14598, 1358, 2]);

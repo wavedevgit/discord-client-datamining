@@ -121,4 +121,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useBlockedPaymentsConfig = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3120, 6950, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3122, 6952, 2]);

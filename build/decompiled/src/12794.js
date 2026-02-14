@@ -1,108 +1,88 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var2 = exports;
+    var1 = exports;
     var0 = global;
-    var5 = var0.Object;
-    var4 = var5.defineProperty;
-    var3 = {};
+    var4 = var0.Object;
+    var3 = var4.defineProperty;
+    var2 = {};
     var0 = true;
-    var3.value = var0;
+    var2.value = var0;
     var0 = '__esModule';
-    var0 = var4.bind(var5)(var2, var0, var3);
-    var0 = undefined;
-    var2.default = var0;
-    var3 = {};
-    var4 = 'http://localhost:8081';
-    var3.url = var4;
-    var _closure1_slot0 = var3;
-    var1 = function() {
-        _fun98110: for (var _fun98110_ip = 0;;) switch (_fun98110_ip) {
+    var0 = var3.bind(var4)(var1, var0, var2);
+    var0 = function arg0, arg1() {
+        _fun98087: for (var _fun98087_ip = 0;;) switch (_fun98087_ip) {
             case 0:
-                var4 = undefined;
-                var3 = undefined;
-                var1 = arguments.length;
-                var2 = 0;
-                if (!(var1 > var2)) {
-                    _fun98110_ip = 23;
-                    continue _fun98110
-                }
-            case 15:
-                var1 = arguments[var2];
-                if (!(var4 === var1)) {
-                    _fun98110_ip = 27;
-                    continue _fun98110
-                }
-            case 23:
+                var4 = arg0;
+                var3 = arg1;
+                var1 = undefined;
+                var0 = undefined;
+            case 10: // try_start_0
                 var1 = {};
-                _fun98110_ip = 31;
-                continue _fun98110;
-            case 27:
-                var1 = arguments[var2];
-            case 31:
-                var _closure2_slot0 = var1;
-                var0 = function() { // Environment: var0
-                    var0 = global;
-                    var5 = var0.Object;
-                    var4 = var5.assign;
-                    var3 = _closure1_slot0;
-                    var2 = _closure2_slot0;
-                    var0 = {};
-                    var0 = var4.bind(var5)(var0, var3, var2);
-                    var _closure3_slot0 = var0;
-                    var0 = {};
-                    var1 = function arg0() {
-                        _fun98112: for (var _fun98112_ip = 0;;) switch (_fun98112_ip) {
-                            case 0:
-                                var0 = arg0;
-                                var2 = var0.type;
-                                var1 = 'editor.open';
-                                if (!(var1 === var2)) {
-                                    _fun98112_ip = 146;
-                                    continue _fun98112
-                                }
-                            case 21:
-                                var0 = var0.payload;
-                                var2 = var0.file;
-                                var1 = var0.lineNumber;
-                                var0 = _closure3_slot0;
-                                var6 = var0.url;
-                                var0 = global;
-                                var3 = var0.HermesInternal;
-                                var5 = var3.concat;
-                                var4 = '';
-                                var3 = '/open-stack-frame';
-                                var3 = var5.bind(var4)(var6, var3);
-                                var5 = {};
-                                var5.file = var2;
-                                if (var1) {
-                                    _fun98112_ip = 93;
-                                    continue _fun98112
-                                }
-                            case 90:
-                                var1 = 1;
-                            case 93:
-                                var5.lineNumber = var1;
-                                var2 = var0.fetch;
-                                var1 = {};
-                                var4 = 'POST';
-                                var1.method = var4;
-                                var4 = var0.JSON;
-                                var0 = var4.stringify;
-                                var0 = var0.bind(var4)(var5);
-                                var1.body = var0;
-                                var0 = undefined;
-                                var0 = var2.bind(var0)(var3, var1);
-                            case 146:
-                                var0 = undefined;
-                                return var0;
-                        }
-                    };
-                    var0.onCommand = var1;
-                    return var0;
-                };
+                var0 = {};
+                var2 = var4;
+                if (!var2) {
+                    _fun98087_ip = 105;
+                    continue _fun98087
+                }
+            case 20:
+                var2 = {};
+                var5 = global;
+                var8 = var5.Math;
+                var7 = var8.ceil;
+                var6 = var4.width;
+                var6 = var7.bind(var8)(var6);
+                var2.screenWidth = var6;
+                var7 = var5.Math;
+                var6 = var7.ceil;
+                var5 = var4.height;
+                var5 = var6.bind(var7)(var5);
+                var2.screenHeight = var5;
+                var5 = var4.scale;
+                var2.screenScale = var5;
+                var4 = var4.fontScale;
+                var2.screenFontScale = var4;
+                var1 = var2;
+            case 105:
+                var2 = var3;
+                if (!var2) {
+                    _fun98087_ip = 198;
+                    continue _fun98087
+                }
+            case 111:
+                var2 = {};
+                var4 = global;
+                var7 = var4.Math;
+                var6 = var7.ceil;
+                var5 = var3.width;
+                var5 = var6.bind(var7)(var5);
+                var2.windowWidth = var5;
+                var6 = var4.Math;
+                var5 = var6.ceil;
+                var4 = var3.height;
+                var4 = var5.bind(var6)(var4);
+                var2.windowHeight = var4;
+                var4 = var3.scale;
+                var2.windowScale = var4;
+                var3 = var3.fontScale;
+                var2.windowFontScale = var3;
+                var0 = var2;
+            case 198:
+                var2 = global;
+                var4 = var2.Object;
+                var3 = var4.assign;
+                var2 = var1;
+                var1 = var0;
+                var0 = {};
+                var0 = var3.bind(var4)(var0, var2, var1);
+            case 226: // try_end0
+                return var0;
+            case 228: // catch_target0
+                CatchBlockStart(arg_register = 0);
+                var0 = null;
                 return var0;
         }
     };
-    var2.default = var1;
+    var1.getReactNativeDimensionsWithDimensions = var0;
+    var0 = undefined;
     return var0;
 })(undefined, undefined, undefined, undefined, undefined, undefined, []);

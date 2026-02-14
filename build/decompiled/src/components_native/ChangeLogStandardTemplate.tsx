@@ -1033,4 +1033,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.changelogRules = var3;
     var2.getRenderChangelog = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 15, 17, 18, 31, 27, 1690, 660, 33, 1297, 671, 4883, 3164, 632, 6858, 796, 3149, 3151, 6860, 4788, 4741, 6862, 1235, 6863, 3080, 6864, 6865, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 15, 17, 18, 31, 27, 1690, 660, 33, 1297, 671, 4885, 3166, 632, 6860, 796, 3151, 3153, 6862, 4790, 4743, 6864, 1235, 6865, 3082, 6866, 6867, 2]);

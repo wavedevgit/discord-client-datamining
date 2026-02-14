@@ -33,7 +33,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/in_app_notifications/native/ForumThreadCreatedNotification.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun70783: for (var _fun70783_ip = 0;;) switch (_fun70783_ip) {
+        _fun70581: for (var _fun70581_ip = 0;;) switch (_fun70581_ip) {
             case 0:
                 var0 = arg0;
                 var0 = var0.notification;
@@ -50,8 +50,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13 = var0.bind(var3)(var1);
                 var0 = null;
                 if (!(var0 == var13)) {
-                    _fun70783_ip = 123;
-                    continue _fun70783
+                    _fun70581_ip = 123;
+                    continue _fun70581
                 }
             case 68:
                 var7 = _closure1_slot0;
@@ -73,8 +73,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var2.bind(var3)(var1);
                 var7 = var1.bind(var3)(var8);
                 if (!(var0 == var7)) {
-                    _fun70783_ip = 204;
-                    continue _fun70783
+                    _fun70581_ip = 204;
+                    continue _fun70581
                 }
             case 149:
                 var4 = _closure1_slot0;
@@ -149,4 +149,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 4799, 1235, 8851, 5512, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 4801, 1235, 8822, 5514, 2]);

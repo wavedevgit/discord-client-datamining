@@ -848,4 +848,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.collectForumPostAnalyticsMetadata = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [4230, 3098, 6547, 6548, 1372, 3996, 3096, 3995, 5705, 660, 1379, 1234, 6549, 1381, 6550, 21, 6551, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [4232, 3100, 6549, 6550, 1372, 3998, 3098, 3997, 5707, 660, 1379, 1234, 6551, 1381, 6552, 21, 6553, 2]);

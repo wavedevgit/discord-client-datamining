@@ -64,4 +64,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useIsEligibleSenderForReferralProgram = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6718, 6728, 566, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6720, 6730, 566, 2]);

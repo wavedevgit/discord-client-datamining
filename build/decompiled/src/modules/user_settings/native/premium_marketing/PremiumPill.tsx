@@ -406,4 +406,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.PremiumPill = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 3250, 7147, 7154, 1235, 3938, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 3252, 7149, 7156, 1235, 3940, 2]);

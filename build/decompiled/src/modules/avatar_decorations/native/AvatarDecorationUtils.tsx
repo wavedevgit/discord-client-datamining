@@ -170,4 +170,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.openAvatarDecorationActionSheet = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5635, 5514, 3282, 5637, 1307, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5637, 5516, 3284, 5639, 1307, 2]);

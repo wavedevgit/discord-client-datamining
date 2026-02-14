@@ -1861,7 +1861,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0.neverLoadBeforeConnectionOpen = var3;
     var1.ReplyNudgeManager = var0;
     var0 = {};
-    var6 = function() {
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 119;
@@ -1871,16 +1871,32 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = var0.default;
         return var0;
     };
-    var0.inlineRequire = var6;
+    var0.inlineRequire = var7;
     var0.hasStoreChangeListeners = var3;
     var1.RestrictedHoursManager = var0;
-    var0 = 120;
+    var0 = {};
+    var7 = ['QUESTS_SEND_HEARTBEAT_SUCCESS', 'QUESTS_SEND_HEARTBEAT_FAILURE', 'QUESTS_ENROLL_SUCCESS', 'RUNNING_GAMES_CHANGE', 'RUNNING_NON_GAMES_CHANGE', 'QUESTS_FETCH_CURRENT_QUESTS_SUCCESS', 'STREAM_START', 'STREAM_CREATE', 'STREAM_CLOSE', 'PASSIVE_UPDATE_V2', 'VOICE_STATE_UPDATES', 'EMBEDDED_ACTIVITY_LAUNCH_SUCCESS', 'FRAME_LAUNCH', 'EMBEDDED_ACTIVITY_UPDATE_V2', 'QUESTS_PREVIEW_UPDATE_SUCCESS', 'QUEST_APPLICATION_START_TIMER'];
+    var0.actions = var7;
+    var6 = function() {
+        var2 = _closure1_slot0;
+        var1 = _closure1_slot1;
+        var0 = 120;
+        var1 = var1[var0];
+        var0 = undefined;
+        var0 = var2.bind(var0)(var1);
+        var0 = var0.default;
+        return var0;
+    };
+    var0.inlineRequire = var6;
+    var0.neverLoadBeforeConnectionOpen = var3;
+    var1.QuestProgressManager = var0;
+    var0 = 121;
     var3 = var5[var0];
     var0 = undefined;
     var6 = var4.bind(var0)(var3);
     var3 = var6.initialize;
     var3 = var3.bind(var6)(var1);
-    var3 = 121;
+    var3 = 122;
     var3 = var5[var3];
     var5 = var4.bind(var0)(var3);
     var4 = var5.fileFinishedImporting;
@@ -1888,4 +1904,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [14506, 14509, 14517, 14518, 14519, 14520, 14521, 14524, 14525, 14528, 9792, 14529, 14530, 14531, 14535, 14536, 14537, 14539, 11833, 10352, 14544, 14545, 14550, 14551, 4275, 14552, 14553, 14574, 9348, 6551, 7981, 14575, 14576, 14578, 14580, 14581, 8237, 14583, 14584, 14585, 14586, 14587, 14595, 14596, 14612, 14614, 14615, 14616, 14618, 14621, 14622, 8508, 10946, 14631, 14632, 14636, 14640, 14642, 14656, 14664, 11945, 14667, 14687, 14688, 14689, 14691, 14692, 14696, 14698, 14699, 14700, 14701, 14702, 14703, 12544, 14704, 14705, 8466, 14707, 14710, 14711, 14713, 14714, 4702, 6705, 14718, 14719, 14723, 11207, 5799, 14724, 14522, 14725, 14726, 15025, 15026, 15027, 15029, 15030, 15032, 15035, 15037, 15040, 15042, 15043, 15044, 15048, 15049, 7555, 15051, 15054, 15055, 15077, 15081, 15082, 15085, 15102, 15105, 15106, 15107, 15111, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [14513, 14516, 14524, 14525, 14526, 14527, 14528, 14531, 14532, 14535, 9765, 14536, 14537, 14538, 14542, 14543, 14544, 14546, 11838, 10356, 14551, 14552, 14557, 14558, 4277, 14559, 14560, 14581, 9320, 6553, 7949, 14582, 14583, 14585, 14587, 14588, 8207, 14590, 14591, 14592, 14593, 14594, 14602, 14603, 14619, 14621, 14622, 14623, 14625, 14628, 14629, 8478, 10950, 14638, 14639, 14643, 14647, 14649, 14663, 14671, 11950, 14674, 14694, 14695, 14696, 14698, 14699, 14703, 14705, 14706, 14707, 14708, 14709, 14710, 12549, 14711, 14712, 8436, 14714, 14717, 14718, 14720, 14721, 4704, 6707, 14725, 14726, 14730, 11210, 5801, 14731, 14529, 14732, 14733, 15032, 15033, 15034, 15036, 15037, 15039, 15042, 15044, 15047, 15049, 15050, 15051, 15055, 15056, 10197, 15058, 15061, 15062, 15084, 15088, 15089, 15092, 15109, 15112, 15113, 15114, 15118, 15119, 2]);

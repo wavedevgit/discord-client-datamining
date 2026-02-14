@@ -94,23 +94,23 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var7 = {};
                 var10 = var11;
                 if (var11) {
-                    _fun9797_ip = 235;
+                    _fun9797_ip = 239;
                     continue _fun9797
                 }
-            case 229:
+            case 233:
                 var10 = 'handler_execution';
-            case 235:
+            case 239:
                 var7.error_type = var10;
                 var6 = var8.bind(var9)(var7, var6);
                 var5.data = var6;
                 var1.mechanism = var5;
                 var1 = var3.bind(var4)(var2, var1);
-            case 261: // try_end1
-                _fun9797_ip = 265;
+            case 265: // try_end1
+                _fun9797_ip = 269;
                 continue _fun9797;
-            case 263: // catch_target0 // catch_target1
+            case 267: // catch_target0 // catch_target1
                 CatchBlockStart(arg_register = 1);
-            case 265:
+            case 269:
                 return var0;
         }
     };

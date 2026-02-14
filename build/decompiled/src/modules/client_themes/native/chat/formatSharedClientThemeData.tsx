@@ -113,4 +113,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.formatSharedClientThemeData = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 5809, 1235, 2057, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 5811, 1235, 2057, 2]);

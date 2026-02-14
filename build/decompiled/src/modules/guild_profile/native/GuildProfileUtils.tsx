@@ -217,4 +217,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getProfilePrimaryColor = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 1298, 1417, 6921, 4627, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 1298, 1417, 6923, 4629, 2]);

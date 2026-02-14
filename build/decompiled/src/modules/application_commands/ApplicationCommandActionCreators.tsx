@@ -528,4 +528,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.setAppLauncherActiveCommand = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1217, 6558, 660, 44, 4553, 807, 507, 21, 1650, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1217, 6560, 660, 44, 4555, 807, 507, 21, 1650, 2]);

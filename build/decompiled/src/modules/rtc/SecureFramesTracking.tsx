@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
     var0 = function arg0() {
-        _fun67452: for (var _fun67452_ip = 0;;) switch (_fun67452_ip) {
+        _fun67247: for (var _fun67247_ip = 0;;) switch (_fun67247_ip) {
             case 0:
                 var2 = _closure1_slot3;
                 var1 = var2.getChannel;
@@ -19,8 +19,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var0 == var1;
                 var0 = undefined;
                 if (var2) {
-                    _fun67452_ip = 36;
-                    continue _fun67452
+                    _fun67247_ip = 36;
+                    continue _fun67247
                 }
             case 31:
                 var0 = var1.guild_id;
@@ -382,4 +382,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.trackE2EEPublicKeyMismatch = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1372, 660, 4308, 7062, 796, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1372, 660, 4310, 7064, 796, 2]);

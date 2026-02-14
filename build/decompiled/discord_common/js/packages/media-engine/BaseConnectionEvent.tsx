@@ -51,8 +51,6 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.Mute = var0;
     var0 = 'deafen';
     var1.Deafen = var0;
-    var0 = 'toggle-mute';
-    var1.ToggleMuteFromNative = var0;
     var0 = 'native-mute-changed';
     var1.NativeMuteChanged = var0;
     var0 = 'local-mute';

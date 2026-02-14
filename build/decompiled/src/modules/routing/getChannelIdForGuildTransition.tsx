@@ -147,4 +147,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getChannelIdForGuildTransition = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [4689, 1372, 1676, 1675, 1379, 4586, 3491, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [4691, 1372, 1676, 1675, 1379, 4588, 3493, 2]);

@@ -104,4 +104,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useDisplayNameStylesFont = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1634, 3980, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1634, 3982, 2]);

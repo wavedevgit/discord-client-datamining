@@ -1681,4 +1681,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var3;
     var2.EditAvatarDecorationInner = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 1298, 4619, 1690, 1686, 1621, 660, 3287, 1566, 1623, 33, 1297, 671, 1568, 566, 5638, 3717, 4087, 3114, 4605, 1235, 3283, 4603, 5639, 5640, 3282, 4880, 5641, 5782, 5784, 5785, 796, 3164, 4938, 4940, 3938, 5258, 5258, 5786, 5792, 3137, 5644, 5793, 5514, 5800, 5801, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 1298, 4621, 1690, 1686, 1621, 660, 3289, 1566, 1623, 33, 1297, 671, 1568, 566, 5640, 3719, 4089, 3116, 4607, 1235, 3285, 4605, 5641, 5642, 3284, 4882, 5643, 5784, 5786, 5787, 796, 3166, 4940, 4942, 3940, 5260, 5260, 5788, 5794, 3139, 5646, 5795, 5516, 5802, 5803, 2]);

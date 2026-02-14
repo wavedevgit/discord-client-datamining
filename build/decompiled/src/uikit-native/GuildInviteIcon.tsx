@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var13;
     var _closure1_slot2 = var5;
     var0 = function() {
-        _fun81260: for (var _fun81260_ip = 0;;) switch (_fun81260_ip) {
+        _fun81266: for (var _fun81266_ip = 0;;) switch (_fun81266_ip) {
             case 0:
             case 2: // try_start_0
                 var1 = global;
@@ -30,8 +30,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = !var1;
                 var _closure2_slot0 = var1;
             case 72: // try_end0
-                _fun81260_ip = 76;
-                continue _fun81260;
+                _fun81266_ip = 76;
+                continue _fun81266;
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
@@ -153,7 +153,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var6.PureComponent;
     var1 = function(arg0) { // Environment: var1
         var3 = function() {
-            _fun81264: for (var _fun81264_ip = 0;;) switch (_fun81264_ip) {
+            _fun81270: for (var _fun81270_ip = 0;;) switch (_fun81270_ip) {
                 case 0:
                     var3 = this;
                     var2 = undefined;
@@ -167,16 +167,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = _closure1_slot12;
                     var0 = var0.bind(var2)();
                     if (var0) {
-                        _fun81264_ip = 69;
-                        continue _fun81264
+                        _fun81270_ip = 69;
+                        continue _fun81270
                     }
                 case 51:
                     var6 = var8.apply;
                     var4 = arguments;
                     var0 = var4;
                     var0 = var6.bind(var8)(var3, var0);
-                    _fun81264_ip = 105;
-                    continue _fun81264;
+                    _fun81270_ip = 105;
+                    continue _fun81270;
                 case 69:
                     var6 = global;
                     var7 = var6.Reflect;
@@ -201,7 +201,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = 'render';
         var4.key = var5;
         var0 = function() {
-            _fun81265: for (var _fun81265_ip = 0;;) switch (_fun81265_ip) {
+            _fun81271: for (var _fun81271_ip = 0;;) switch (_fun81271_ip) {
                 case 0:
                     var1 = this;
                     var4 = _closure1_slot11;
@@ -224,8 +224,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var4 = var10.icon;
                     var8 = null;
                     if (!(var8 == var4)) {
-                        _fun81265_ip = 298;
-                        continue _fun81265
+                        _fun81271_ip = 298;
+                        continue _fun81271
                     }
                 case 99:
                     var9 = _closure1_slot0;
@@ -243,8 +243,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var4 = var9[var4];
                     var8 = var8 != var4;
                     if (!var8) {
-                        _fun81265_ip = 165;
-                        continue _fun81265
+                        _fun81271_ip = 165;
+                        continue _fun81271
                     }
                 case 162:
                     var1 = var4;
@@ -340,4 +340,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 15, 17, 18, 31, 27, 33, 1297, 671, 4882, 1417, 4709, 1607, 4883, 3164, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 15, 17, 18, 31, 27, 33, 1297, 671, 4884, 1417, 4711, 1607, 4885, 3166, 2]);

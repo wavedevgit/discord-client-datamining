@@ -58,7 +58,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot2 = var3;
     var3 = var6.memo;
     var1 = function(arg0) { // Environment: var1
-        _fun105112: for (var _fun105112_ip = 0;;) switch (_fun105112_ip) {
+        _fun105167: for (var _fun105167_ip = 0;;) switch (_fun105167_ip) {
             case 0:
                 var1 = arg0;
                 var0 = var1.theme;
@@ -70,15 +70,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var3 == var0;
                 var0 = null;
                 if (var2) {
-                    _fun105112_ip = 112;
-                    continue _fun105112
+                    _fun105167_ip = 112;
+                    continue _fun105167
                 }
             case 38:
                 var2 = var3 == var8;
                 var0 = null;
                 if (var2) {
-                    _fun105112_ip = 112;
-                    continue _fun105112
+                    _fun105167_ip = 112;
+                    continue _fun105167
                 }
             case 47:
                 var3 = _closure1_slot1;

@@ -1704,4 +1704,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.getComparator = var3;
     var2.makeSortedVoiceState = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [15, 17, 18, 6, 7, 1628, 1217, 1372, 1686, 1621, 3518, 660, 3240, 3092, 22, 21, 566, 807, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [15, 17, 18, 6, 7, 1628, 1217, 1372, 1686, 1621, 3520, 660, 3242, 3094, 22, 21, 566, 807, 2]);

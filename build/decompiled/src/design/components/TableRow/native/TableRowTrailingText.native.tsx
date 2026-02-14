@@ -52,4 +52,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.TableRowTrailingText = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 3938, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 3940, 2]);

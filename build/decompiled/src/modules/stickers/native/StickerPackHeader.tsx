@@ -131,7 +131,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot7 = var3;
     var3 = var6.memo;
     var1 = function(arg0) { // Environment: var1
-        _fun75032: for (var _fun75032_ip = 0;;) switch (_fun75032_ip) {
+        _fun74832: for (var _fun74832_ip = 0;;) switch (_fun74832_ip) {
             case 0:
                 var0 = arg0;
                 var13 = var0.stickerPack;
@@ -140,16 +140,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var0.withBanner;
                 var3 = undefined;
                 if (!(var5 === var3)) {
-                    _fun75032_ip = 33;
-                    continue _fun75032
+                    _fun74832_ip = 33;
+                    continue _fun74832
                 }
             case 31:
                 var5 = false;
             case 33:
                 var8 = var0.withDescription;
                 if (!(var8 === var3)) {
-                    _fun75032_ip = 45;
-                    continue _fun75032
+                    _fun74832_ip = 45;
+                    continue _fun74832
                 }
             case 43:
                 var8 = false;
@@ -192,8 +192,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var17 = var18.isStickerPackAnimated;
                 var17 = var17.bind(var18)(var13);
                 if (!var17) {
-                    _fun75032_ip = 322;
-                    continue _fun75032
+                    _fun74832_ip = 322;
+                    continue _fun74832
                 }
             case 199:
                 var20 = _closure1_slot4;
@@ -262,8 +262,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = new Array(3);
                 var4[0] = var9;
                 if (!var8) {
-                    _fun75032_ip = 495;
-                    continue _fun75032
+                    _fun74832_ip = 495;
+                    continue _fun74832
                 }
             case 484:
                 var14 = var13.description;
@@ -271,8 +271,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var9 != var14;
             case 495:
                 if (!var8) {
-                    _fun75032_ip = 549;
-                    continue _fun75032
+                    _fun74832_ip = 549;
+                    continue _fun74832
                 }
             case 498:
                 var15 = _closure1_slot4;
@@ -323,8 +323,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = _closure1_slot6;
                 var0 = {};
                 if (!var5) {
-                    _fun75032_ip = 758;
-                    continue _fun75032
+                    _fun74832_ip = 758;
+                    continue _fun74832
                 }
             case 700:
                 var8 = _closure1_slot4;
@@ -345,8 +345,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4[0] = var5;
                 var5 = null;
                 if (!(var5 == var10)) {
-                    _fun75032_ip = 815;
-                    continue _fun75032
+                    _fun74832_ip = 815;
+                    continue _fun74832
                 }
             case 772:
                 var8 = _closure1_slot4;
@@ -359,8 +359,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5.style = var13;
                 var5.children = var9;
                 var5 = var8.bind(var3)(var7, var5);
-                _fun75032_ip = 890;
-                continue _fun75032;
+                _fun74832_ip = 890;
+                continue _fun74832;
             case 815:
                 var8 = _closure1_slot4;
                 var7 = _closure1_slot0;
@@ -396,4 +396,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 9352, 33, 1297, 671, 3938, 3994, 4092, 9445, 6738, 1235, 9446, 4909, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 9324, 33, 1297, 671, 3940, 3996, 4094, 9417, 6740, 1235, 9418, 4911, 2]);

@@ -1,55 +1,81 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = function(arg0) { // Environment: var0
-        _fun94931: for (var _fun94931_ip = 0;;) switch (_fun94931_ip) {
+    var1 = module;
+    var3 = function arg0, arg1, arg2, arg3() {
+        _fun94964: for (var _fun94964_ip = 0;;) switch (_fun94964_ip) {
             case 0:
-                var1 = arg0;
-                var0 = new Array(0);
-                var2 = var1.shiftKey;
-                if (!var2) {
-                    _fun94931_ip = 30;
-                    continue _fun94931
-                }
-            case 16:
-                var3 = var0.push;
-                var2 = 'shift';
-                var2 = var3.bind(var0)(var2);
-            case 30:
-                var2 = var1.altKey;
-                if (!var2) {
-                    _fun94931_ip = 53;
-                    continue _fun94931
-                }
-            case 39:
-                var3 = var0.push;
-                var2 = 'alt';
-                var2 = var3.bind(var0)(var2);
-            case 53:
-                var2 = var1.ctrlKey;
-                if (!var2) {
-                    _fun94931_ip = 76;
-                    continue _fun94931
-                }
-            case 62:
-                var3 = var0.push;
-                var2 = 'ctrl';
-                var2 = var3.bind(var0)(var2);
-            case 76:
-                var1 = var1.metaKey;
+                var5 = arg0;
+                var2 = arg1;
+                var0 = arg2;
+                var1 = var5.addEventListener;
+                var1 = !var1;
+                var4 = var2;
                 if (!var1) {
-                    _fun94931_ip = 99;
-                    continue _fun94931
+                    _fun94964_ip = 32;
+                    continue _fun94964
                 }
-            case 85:
-                var2 = var0.push;
-                var1 = 'meta';
-                var1 = var2.bind(var0)(var1);
-            case 99:
+            case 24:
+                var1 = 'on';
+                var4 = var1 + var2;
+            case 32:
+                var3 = var5.addEventListener;
+                if (var3) {
+                    _fun94964_ip = 47;
+                    continue _fun94964
+                }
+            case 41:
+                var3 = var5.attachEvent;
+            case 47:
+                var2 = var3.call;
+                var6 = arg3;
+                var10 = var3;
+                var9 = var5;
+                var8 = var4;
+                var7 = var0;
+                var1 = var10[var2](var9, var8, var7, var6, var5);
                 return var0;
         }
     };
-    var0 = arg4;
-    var0.exports = var1;
+    var1.exports = var3;
+    var2 = var1.exports;
+    var2.on = var3;
+    var1 = var1.exports;
+    var0 = function arg0, arg1, arg2, arg3() {
+        _fun94965: for (var _fun94965_ip = 0;;) switch (_fun94965_ip) {
+            case 0:
+                var5 = arg0;
+                var2 = arg1;
+                var0 = arg2;
+                var1 = var5.removeEventListener;
+                var1 = !var1;
+                var4 = var2;
+                if (!var1) {
+                    _fun94965_ip = 32;
+                    continue _fun94965
+                }
+            case 24:
+                var1 = 'on';
+                var4 = var1 + var2;
+            case 32:
+                var3 = var5.removeEventListener;
+                if (var3) {
+                    _fun94965_ip = 47;
+                    continue _fun94965
+                }
+            case 41:
+                var3 = var5.detachEvent;
+            case 47:
+                var2 = var3.call;
+                var6 = arg3;
+                var10 = var3;
+                var9 = var5;
+                var8 = var4;
+                var7 = var0;
+                var1 = var10[var2](var9, var8, var7, var6, var5);
+                return var0;
+        }
+    };
+    var1.off = var0;
     var0 = undefined;
     return var0;
 })(undefined, undefined, undefined, undefined, undefined, undefined, []);

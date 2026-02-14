@@ -444,4 +444,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.shouldDisplayGuildTag = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1686, 1410, 1621, 6715, 660, 566, 3102, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1686, 1410, 1621, 6717, 660, 566, 3104, 2]);

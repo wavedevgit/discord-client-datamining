@@ -81,4 +81,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.ServerBannerStaffServerExample = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 4709, 6393, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 4711, 6395, 2]);

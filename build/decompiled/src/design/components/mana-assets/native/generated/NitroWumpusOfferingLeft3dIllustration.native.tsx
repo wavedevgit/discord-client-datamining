@@ -81,4 +81,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.NitroWumpusOfferingLeft3dIllustration = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 4709, 6333, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 4711, 6335, 2]);

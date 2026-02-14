@@ -246,4 +246,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useTieredTenureBadgeClickHandler = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1621, 1623, 7432, 660, 7047, 7433, 7384, 566, 5981, 3282, 7410, 1307, 7410, 796, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1621, 1623, 7434, 660, 7049, 7435, 7386, 566, 5983, 3284, 7412, 1307, 7412, 796, 2]);

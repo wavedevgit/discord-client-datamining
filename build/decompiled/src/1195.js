@@ -289,7 +289,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                 var1 = var3.bind(var0)(var1);
                                 var1 = var1.PULL_DOWN_CLOSE_THRESHOLD;
                                 if (!(!(var2 > var1))) {
-                                    _fun12992_ip = 99;
+                                    _fun12992_ip = 103;
                                     continue _fun12992
                                 }
                             case 44:
@@ -305,9 +305,9 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                 var2 = var3.bind(var4)(var2, var1);
                                 var1 = var2.start;
                                 var1 = var1.bind(var2)();
-                                _fun12992_ip = 214;
+                                _fun12992_ip = 218;
                                 continue _fun12992;
-                            case 99:
+                            case 103:
                                 var4 = _closure1_slot8;
                                 var3 = var4.timing;
                                 var1 = _closure3_slot0;
@@ -338,7 +338,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     return var0;
                                 };
                                 var1 = var2.bind(var3)(var1);
-                            case 214:
+                            case 218:
                                 return var0;
                         }
                     };

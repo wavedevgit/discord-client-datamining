@@ -131,4 +131,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useSystemMessageEmoji = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 4744, 566, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 4746, 566, 2]);

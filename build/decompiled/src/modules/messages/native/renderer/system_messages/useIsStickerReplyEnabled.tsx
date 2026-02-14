@@ -119,4 +119,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.computeIsStickerReplyEnabled = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1686, 3096, 1621, 660, 6774, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1686, 3098, 1621, 660, 6776, 2]);

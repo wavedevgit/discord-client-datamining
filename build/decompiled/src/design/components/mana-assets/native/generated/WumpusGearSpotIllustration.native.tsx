@@ -81,4 +81,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.WumpusGearSpotIllustration = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 4709, 6503, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 4711, 6505, 2]);

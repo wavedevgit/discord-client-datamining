@@ -453,4 +453,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.NameplatePreview = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1298, 1686, 33, 1297, 671, 1641, 3957, 5641, 566, 3240, 3979, 5512, 6998, 7007, 7008, 3938, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1298, 1686, 33, 1297, 671, 1641, 3959, 5643, 566, 3242, 3981, 5514, 7000, 7009, 7010, 3940, 2]);

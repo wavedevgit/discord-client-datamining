@@ -131,4 +131,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.createPrivateChannelIntegrationSystemMessage = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 3978, 6772, 6755, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 3980, 6774, 6757, 2]);

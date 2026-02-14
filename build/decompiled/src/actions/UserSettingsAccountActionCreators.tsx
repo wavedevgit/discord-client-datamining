@@ -205,7 +205,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var3 = var2.bind(var0)(var1);
         var2 = var3.dispatch;
         var1 = {};
-        var4 = 'USER_SETTINGS_ACCOUNT_INIT';
+        var4 = 'USER_PROFILE_SETTINGS_INIT';
         var1.type = var4;
         var1 = var2.bind(var3)(var1);
         return var0;
@@ -220,7 +220,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var3 = var2.bind(var0)(var1);
         var2 = var3.dispatch;
         var1 = {};
-        var4 = 'USER_SETTINGS_ACCOUNT_CLOSE';
+        var4 = 'USER_PROFILE_SETTINGS_CLOSE';
         var1.type = var4;
         var1 = var2.bind(var3)(var1);
         return var0;
@@ -316,7 +316,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var20 = var19.bind(var3)(var2);
                 var19 = var20.dispatch;
                 var2 = {};
-                var21 = 'USER_SETTINGS_ACCOUNT_SUBMIT';
+                var21 = 'USER_PROFILE_SETTINGS_SUBMIT';
                 var2.type = var21;
                 var2 = var19.bind(var20)(var2);
                 var2 = {};
@@ -481,7 +481,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var5 = var4.bind(var2)(var1);
                             var4 = var5.dispatch;
                             var1 = {};
-                            var6 = 'USER_SETTINGS_ACCOUNT_SUBMIT_SUCCESS';
+                            var6 = 'USER_PROFILE_SETTINGS_SUBMIT_SUCCESS';
                             var1.type = var6;
                             var1 = var4.bind(var5)(var1);
                             var1 = _closure2_slot0;
@@ -524,7 +524,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var3 = var3.bind(var1)(var2);
                     var2 = var3.dispatch;
                     var1 = {};
-                    var4 = 'USER_SETTINGS_ACCOUNT_SUBMIT_FAILURE';
+                    var4 = 'USER_PROFILE_SETTINGS_SUBMIT_FAILURE';
                     var1.type = var4;
                     var4 = var0.body;
                     var1.errors = var4;
@@ -594,7 +594,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var4.bind(var0)(var2);
                 var4 = var5.dispatch;
                 var2 = {};
-                var6 = 'USER_SETTINGS_ACCOUNT_SET_PENDING_AVATAR';
+                var6 = 'USER_PROFILE_SETTINGS_SET_PENDING_AVATAR';
                 var2.type = var6;
                 var2.avatar = var3;
                 var2 = var4.bind(var5)(var2);
@@ -657,7 +657,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var3 = var2.bind(var0)(var1);
         var2 = var3.dispatch;
         var1 = {};
-        var4 = 'USER_SETTINGS_ACCOUNT_SET_PENDING_GLOBAL_NAME';
+        var4 = 'USER_PROFILE_SETTINGS_SET_PENDING_GLOBAL_NAME';
         var1.type = var4;
         var4 = arg0;
         var1.globalName = var4;
@@ -674,7 +674,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var3 = var2.bind(var0)(var1);
         var2 = var3.dispatch;
         var1 = {};
-        var4 = 'USER_SETTINGS_ACCOUNT_SET_PENDING_LEGACY_USERNAME_DISABLED';
+        var4 = 'USER_PROFILE_SETTINGS_SET_PENDING_LEGACY_USERNAME_DISABLED';
         var1.type = var4;
         var4 = arg0;
         var1.legacyUsernameDisabled = var4;
@@ -691,7 +691,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var3 = var2.bind(var0)(var1);
         var2 = var3.dispatch;
         var1 = {};
-        var4 = 'USER_SETTINGS_ACCOUNT_SET_PENDING_COLLECTIBLES_ITEM';
+        var4 = 'USER_PROFILE_SETTINGS_SET_PENDING_COLLECTIBLES_ITEM';
         var1.type = var4;
         var4 = arg0;
         var1.item = var4;
@@ -708,7 +708,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var3 = var2.bind(var0)(var1);
         var2 = var3.dispatch;
         var1 = {};
-        var4 = 'USER_SETTINGS_ACCOUNT_SET_PENDING_PRIMARY_GUILD_ID';
+        var4 = 'USER_PROFILE_SETTINGS_SET_PENDING_PRIMARY_GUILD_ID';
         var1.type = var4;
         var4 = arg0;
         var1.primaryGuildId = var4;
@@ -725,7 +725,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var3 = var2.bind(var0)(var1);
         var2 = var3.dispatch;
         var1 = {};
-        var4 = 'USER_SETTINGS_ACCOUNT_SET_PENDING_DISPLAY_NAME_STYLES';
+        var4 = 'USER_PROFILE_SETTINGS_SET_PENDING_DISPLAY_NAME_STYLES';
         var1.type = var4;
         var4 = arg0;
         var1.displayNameStyles = var4;
@@ -742,7 +742,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var3 = var2.bind(var0)(var1);
         var2 = var3.dispatch;
         var1 = {};
-        var4 = 'USER_SETTINGS_ACCOUNT_CLEAR_ERRORS';
+        var4 = 'USER_PROFILE_SETTINGS_CLEAR_ERRORS';
         var1.type = var4;
         var1 = var2.bind(var3)(var1);
         return var0;
@@ -757,7 +757,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var3 = var2.bind(var0)(var1);
         var2 = var3.dispatch;
         var1 = {};
-        var4 = 'USER_SETTINGS_ACCOUNT_RESET_PENDING_ACCOUNT_CHANGES';
+        var4 = 'USER_PROFILE_SETTINGS_RESET_PENDING_ACCOUNT_CHANGES';
         var1.type = var4;
         var1 = var2.bind(var3)(var1);
         return var0;
@@ -772,7 +772,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var3 = var2.bind(var0)(var1);
         var2 = var3.dispatch;
         var1 = {};
-        var4 = 'USER_SETTINGS_ACCOUNT_RESET_PENDING_CHANGES';
+        var4 = 'USER_PROFILE_SETTINGS_RESET_PENDING_CHANGES';
         var1.type = var4;
         var1 = var2.bind(var3)(var1);
         return var0;
@@ -787,7 +787,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var3 = var2.bind(var0)(var1);
         var2 = var3.dispatch;
         var1 = {};
-        var4 = 'USER_SETTINGS_ACCOUNT_RESET_TRY_IT_OUT_CHANGES';
+        var4 = 'USER_PROFILE_SETTINGS_RESET_TRY_IT_OUT_CHANGES';
         var1.type = var4;
         var1 = var2.bind(var3)(var1);
         return var0;
@@ -802,7 +802,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var3 = var2.bind(var0)(var1);
         var2 = var3.dispatch;
         var1 = {};
-        var4 = 'USER_SETTINGS_ACCOUNT_RESET_AND_CLOSE_FORM';
+        var4 = 'USER_PROFILE_SETTINGS_RESET_AND_CLOSE_FORM';
         var1.type = var4;
         var1 = var2.bind(var3)(var1);
         return var0;
@@ -817,7 +817,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var3 = var2.bind(var0)(var1);
         var2 = var3.dispatch;
         var1 = {};
-        var4 = 'USER_SETTINGS_ACCOUNT_RESET_PENDING_LEGACY_USERNAME_DISABLED';
+        var4 = 'USER_PROFILE_SETTINGS_RESET_PENDING_LEGACY_USERNAME_DISABLED';
         var1.type = var4;
         var1 = var2.bind(var3)(var1);
         return var0;
@@ -832,11 +832,11 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var3 = var2.bind(var0)(var1);
         var2 = var3.dispatch;
         var1 = {};
-        var4 = 'USER_SETTINGS_ACCOUNT_RESET_PENDING_PRIMARY_GUILD_CHANGES';
+        var4 = 'USER_PROFILE_SETTINGS_RESET_PENDING_PRIMARY_GUILD_CHANGES';
         var1.type = var4;
         var1 = var2.bind(var3)(var1);
         return var0;
     };
     var2.resetPendingPrimaryGuildChanges = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 660, 4566, 807, 507, 4563, 1221, 587, 3210, 1235, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 660, 4568, 807, 507, 4565, 1221, 587, 3212, 1235, 2]);

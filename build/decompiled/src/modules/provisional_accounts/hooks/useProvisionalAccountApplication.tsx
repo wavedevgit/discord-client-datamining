@@ -40,7 +40,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2 = new Array(1);
         var2[0] = var7;
         var0 = function() { // Environment: var0
-            _fun91391: for (var _fun91391_ip = 0;;) switch (_fun91391_ip) {
+            _fun91416: for (var _fun91416_ip = 0;;) switch (_fun91416_ip) {
                 case 0:
                     var2 = _closure1_slot2;
                     var1 = var2.getGameRelationshipsForUser;
@@ -49,8 +49,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = var1.length;
                     var0 = 0;
                     if (!(var0 === var2)) {
-                        _fun91391_ip = 40;
-                        continue _fun91391
+                        _fun91416_ip = 40;
+                        continue _fun91416
                     }
                 case 36:
                     var2 = undefined;
@@ -71,4 +71,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [11389, 566, 6963, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [11392, 566, 6965, 2]);

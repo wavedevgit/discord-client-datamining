@@ -450,7 +450,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             var3 = var2.bind(var3)();
                                             var2 = _closure4_slot0;
                                             if (!(var3 === var2)) {
-                                                _fun10992_ip = 276;
+                                                _fun10992_ip = 280;
                                                 continue _fun10992
                                             }
                                         case 51:
@@ -465,17 +465,17 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             var2 = var2.SENTRY_XHR_DATA_KEY;
                                             var2 = var4[var2];
                                             if (!var7) {
-                                                _fun10992_ip = 276;
+                                                _fun10992_ip = 280;
                                                 continue _fun10992
                                             }
                                         case 105:
                                             if (!var3) {
-                                                _fun10992_ip = 276;
+                                                _fun10992_ip = 280;
                                                 continue _fun10992
                                             }
                                         case 111:
                                             if (!var2) {
-                                                _fun10992_ip = 276;
+                                                _fun10992_ip = 280;
                                                 continue _fun10992
                                             }
                                         case 117:
@@ -514,7 +514,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             var2 = var2.bind(var0)(var1);
                                             var1 = var2.addBreadcrumb;
                                             var1 = var1.bind(var2)(var3, var4);
-                                        case 276:
+                                        case 280:
                                             return var0;
                                     }
                                 };
@@ -554,14 +554,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             var4 = var2.bind(var3)();
                                             var3 = _closure4_slot0;
                                             if (!(var4 === var3)) {
-                                                _fun10994_ip = 492;
+                                                _fun10994_ip = 500;
                                                 continue _fun10994
                                             }
                                         case 51:
                                             var7 = var8.startTimestamp;
                                             var3 = var8.endTimestamp;
                                             if (!var3) {
-                                                _fun10994_ip = 492;
+                                                _fun10994_ip = 500;
                                                 continue _fun10994
                                             }
                                         case 69:
@@ -579,7 +579,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             var6 = var4.method;
                                             var4 = 'POST';
                                             if (!(var4 !== var6)) {
-                                                _fun10994_ip = 492;
+                                                _fun10994_ip = 500;
                                                 continue _fun10994
                                             }
                                         case 133:
@@ -589,7 +589,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             var4 = var4.url;
                                             var4 = var8.error;
                                             if (var4) {
-                                                _fun10994_ip = 386;
+                                                _fun10994_ip = 390;
                                                 continue _fun10994
                                             }
                                         case 167:
@@ -651,9 +651,9 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             var6 = var6.bind(var0)(var4);
                                             var4 = var6.addBreadcrumb;
                                             var4 = var4.bind(var6)(var9, var10);
-                                            _fun10994_ip = 492;
+                                            _fun10994_ip = 500;
                                             continue _fun10994;
-                                        case 386:
+                                        case 390:
                                             var6 = var8.fetchData;
                                             var4 = {};
                                             var9 = var8.error;
@@ -679,7 +679,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             var2 = var2.bind(var0)(var1);
                                             var1 = var2.addBreadcrumb;
                                             var1 = var1.bind(var2)(var3, var4);
-                                        case 492:
+                                        case 500:
                                             return var0;
                                     }
                                 };

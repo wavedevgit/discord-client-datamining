@@ -185,4 +185,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getCustomJoinSound = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1310, 3953, 566, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1310, 3955, 566, 2]);

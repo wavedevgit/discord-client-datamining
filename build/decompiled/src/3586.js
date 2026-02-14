@@ -1,9 +1,10 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = function arg0, arg1() {
-        var2 = arg0;
+    var1 = function arg0() {
+        var0 = this;
+        var2 = var0.__data__;
         var1 = var2.has;
-        var0 = arg1;
+        var0 = arg0;
         var0 = var1.bind(var2)(var0);
         return var0;
     };

@@ -185,4 +185,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getApplicationDetailsText = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5425, 1235, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5427, 1235, 2]);

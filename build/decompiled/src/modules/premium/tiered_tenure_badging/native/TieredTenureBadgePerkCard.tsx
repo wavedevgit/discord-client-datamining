@@ -538,4 +538,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.TieredTenureBadgePerkCard = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1621, 660, 33, 1297, 7382, 566, 7385, 796, 3282, 7410, 1307, 7410, 1235, 12043, 4883, 7411, 7360, 4709, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1621, 660, 33, 1297, 7384, 566, 7387, 796, 3284, 7412, 1307, 7412, 1235, 12048, 4885, 7413, 7362, 4711, 2]);

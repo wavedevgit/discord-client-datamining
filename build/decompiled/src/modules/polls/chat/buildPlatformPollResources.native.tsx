@@ -190,4 +190,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getAvatarUrl = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [22, 6888, 1297, 671, 6722, 4922, 5478, 1418, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [22, 6890, 1297, 671, 6724, 4924, 5480, 1418, 2]);

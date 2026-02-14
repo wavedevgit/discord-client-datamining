@@ -1639,4 +1639,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.trackUserProfileWishlistAction = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6851, 3711, 4592, 1686, 3607, 3105, 1621, 4664, 7063, 660, 483, 1417, 7040, 796, 4308, 7064, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6853, 3713, 4594, 1686, 3609, 3107, 1621, 4666, 7065, 660, 483, 1417, 7042, 796, 4310, 7066, 2]);

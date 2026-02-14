@@ -150,4 +150,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useCanReviewGuildMemberApplications = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1410, 3096, 660, 566, 4832, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1410, 3098, 660, 566, 4834, 2]);

@@ -641,4 +641,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var3;
     var2.resolveGiftCode = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 3454, 660, 1623, 807, 3348, 5403, 4603, 507, 6947, 6948, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 3456, 660, 1623, 807, 3350, 5405, 4605, 507, 6949, 6950, 2]);

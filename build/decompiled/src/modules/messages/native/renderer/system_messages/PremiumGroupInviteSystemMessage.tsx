@@ -79,4 +79,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.createPremiumGroupInviteSystemMessage = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1217, 1372, 6847, 6755, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1217, 1372, 6849, 6757, 2]);

@@ -82,20 +82,20 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = 'modules/channel/native/ScreenIndexFrozen.tsx';
     var6 = var7.bind(var8)(var6);
     var6 = function arg0, arg1() {
-        _fun33217: for (var _fun33217_ip = 0;;) switch (_fun33217_ip) {
+        _fun33215: for (var _fun33215_ip = 0;;) switch (_fun33215_ip) {
             case 0:
                 var3 = arg1;
                 var2 = _closure1_slot3;
                 var1 = arg0;
                 if (var1) {
-                    _fun33217_ip = 28;
-                    continue _fun33217
+                    _fun33215_ip = 28;
+                    continue _fun33215
                 }
             case 16:
                 var1 = var2.delete;
                 var1 = var1.bind(var2)(var3);
-                _fun33217_ip = 38;
-                continue _fun33217;
+                _fun33215_ip = 38;
+                continue _fun33215;
             case 28:
                 var1 = var2.add;
                 var1 = var1.bind(var2)(var3);
@@ -157,4 +157,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useIsScreenIndexFrozenSharedValue = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 3717, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 3719, 2]);

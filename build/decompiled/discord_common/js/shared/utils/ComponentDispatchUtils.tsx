@@ -74,12 +74,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var4 = null;
                     var4 = var4 != var2;
                     if (!var4) {
-                        _fun13539_ip = 146;
+                        _fun13539_ip = 150;
                         continue _fun13539
                     }
-                case 143:
+                case 147:
                     var3 = var2;
-                case 146:
+                case 150:
                     var2 = var1.emitter;
                     var1 = var2.setMaxListeners;
                     var1 = var1.bind(var2)(var3);

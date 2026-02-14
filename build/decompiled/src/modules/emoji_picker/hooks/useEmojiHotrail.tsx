@@ -79,4 +79,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var3;
     var2.getEmojiHotrail = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 4748, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 4750, 2]);

@@ -1481,4 +1481,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.UserTagAndPronouns = var3;
     var2.ProfileBadgeRows = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 7063, 7047, 660, 6715, 33, 1297, 671, 7007, 7008, 5826, 4909, 7429, 3938, 7431, 5332, 3917, 7434, 1235, 7436, 3153, 7053, 796, 5337, 5289, 478, 7437, 6893, 7438, 3240, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 7065, 7049, 660, 6717, 33, 1297, 671, 7009, 7010, 5828, 4911, 7431, 3940, 7433, 5334, 3919, 7436, 1235, 7438, 3155, 7055, 796, 5339, 5291, 478, 7439, 6895, 7440, 3242, 2]);

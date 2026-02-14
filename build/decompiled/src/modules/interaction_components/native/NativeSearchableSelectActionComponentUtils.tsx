@@ -369,4 +369,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.transformSearchableSelectOptions = var3;
     var2.getChannelIconData = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1372, 1679, 1410, 1621, 660, 3973, 1304, 1418, 6813, 6915, 668, 671, 6916, 4814, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1372, 1679, 1410, 1621, 660, 3975, 1304, 1418, 6815, 6917, 668, 671, 6918, 4816, 2]);

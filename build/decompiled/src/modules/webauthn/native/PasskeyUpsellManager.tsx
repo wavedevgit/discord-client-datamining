@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
     var0 = function() {
-        _fun61253: for (var _fun61253_ip = 0;;) switch (_fun61253_ip) {
+        _fun80395: for (var _fun80395_ip = 0;;) switch (_fun80395_ip) {
             case 0:
             case 2: // try_start_0
                 var1 = global;
@@ -29,25 +29,25 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var2.bind(var3)(var1);
                 var1 = !var1;
                 var _closure2_slot0 = var1;
-            case 70: // try_end0
-                _fun61253_ip = 74;
-                continue _fun61253;
-            case 72: // catch_target0
+            case 72: // try_end0
+                _fun80395_ip = 76;
+                continue _fun80395;
+            case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
-            case 74:
+            case 76:
                 var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
                     var0 = !var0;
                     return var0;
                 };
-                _closure1_slot15 = var1;
+                _closure1_slot14 = var1;
                 var0 = undefined;
                 var0 = var1.bind(var0)();
                 return var0;
         }
     };
-    var _closure1_slot15 = var0;
+    var _closure1_slot14 = var0;
     var0 = global;
     var8 = var0.Object;
     var7 = var8.defineProperty;
@@ -91,22 +91,18 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot10 = var3;
     var3 = 8;
     var3 = var5[var3];
-    var3 = var6.bind(var0)(var3);
-    var _closure1_slot11 = var3;
-    var3 = 9;
-    var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
     var3 = var3.LoginStates;
-    var _closure1_slot12 = var3;
+    var _closure1_slot11 = var3;
     var3 = false;
+    var _closure1_slot12 = var3;
     var _closure1_slot13 = var3;
-    var _closure1_slot14 = var3;
-    var3 = 18;
+    var3 = 15;
     var3 = var5[var3];
     var3 = var6.bind(var0)(var3);
     var1 = function(arg0) { // Environment: var1
         var3 = function arg0() {
-            _fun61257: for (var _fun61257_ip = 0;;) switch (_fun61257_ip) {
+            _fun80399: for (var _fun80399_ip = 0;;) switch (_fun80399_ip) {
                 case 0:
                     var4 = this;
                     var12 = 0;
@@ -123,17 +119,17 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = _closure1_slot6;
                     var8 = var0.bind(var3)(var2);
                     var2 = _closure1_slot5;
-                    var0 = _closure1_slot15;
+                    var0 = _closure1_slot14;
                     var0 = var0.bind(var3)();
                     if (var0) {
-                        _fun61257_ip = 84;
-                        continue _fun61257
+                        _fun80399_ip = 84;
+                        continue _fun80399
                     }
                 case 71:
                     var0 = var8.apply;
                     var0 = var0.bind(var8)(var4, var9);
-                    _fun61257_ip = 118;
-                    continue _fun61257;
+                    _fun80399_ip = 118;
+                    continue _fun80399;
                 case 84:
                     var5 = global;
                     var7 = var5.Reflect;
@@ -166,19 +162,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = new var13[var2](var12);
                     var5 = var2 instanceof Object ? var2 : var3;
                     var4 = var5.set;
-                    var3 = _closure1_slot9;
-                    var2 = var0.handlePasskeyUpsellShow;
-                    var5 = var4.bind(var5)(var3, var2);
-                    var4 = var5.set;
                     var3 = _closure1_slot8;
                     var2 = var0.handlePasskeyUpsellShow;
                     var5 = var4.bind(var5)(var3, var2);
                     var4 = var5.set;
-                    var3 = _closure1_slot10;
+                    var3 = _closure1_slot9;
                     var2 = var0.handlePasskeyUpsellShow;
                     var4 = var4.bind(var5)(var3, var2);
                     var3 = var4.set;
-                    var2 = _closure1_slot11;
+                    var2 = _closure1_slot10;
                     var1 = var0.handlePasskeyUpsellShow;
                     var1 = var3.bind(var4)(var2, var1);
                     var0.stores = var1;
@@ -195,178 +187,138 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = 'handlePasskeyUpsellShow';
         var4.key = var0;
         var0 = function() {
-            _fun61258: for (var _fun61258_ip = 0;;) switch (_fun61258_ip) {
+            _fun80400: for (var _fun80400_ip = 0;;) switch (_fun80400_ip) {
                 case 0:
-                    var1 = _closure1_slot14;
+                    var1 = _closure1_slot13;
                     if (!var1) {
-                        _fun61258_ip = 450;
-                        continue _fun61258
+                        _fun80400_ip = 346;
+                        continue _fun80400
                     }
                 case 13:
                     var3 = _closure1_slot0;
                     var2 = _closure1_slot2;
-                    var1 = 10;
+                    var1 = 9;
                     var1 = var2[var1];
                     var2 = undefined;
                     var1 = var3.bind(var2)(var1);
                     var1 = var1.hasWebAuthn;
                     if (!var1) {
-                        _fun61258_ip = 450;
-                        continue _fun61258
+                        _fun80400_ip = 346;
+                        continue _fun80400
                     }
                 case 47:
-                    var3 = _closure1_slot9;
+                    var3 = _closure1_slot8;
                     var1 = var3.getLoginStatus;
                     var3 = var1.bind(var3)();
-                    var1 = _closure1_slot12;
+                    var1 = _closure1_slot11;
                     var1 = var1.NONE;
                     if (!(var3 === var1)) {
-                        _fun61258_ip = 450;
-                        continue _fun61258
+                        _fun80400_ip = 346;
+                        continue _fun80400
                     }
                 case 78:
-                    var3 = _closure1_slot9;
+                    var3 = _closure1_slot8;
                     var1 = var3.attemptedPasswordLogin;
                     var1 = var1.bind(var3)();
                     if (!var1) {
-                        _fun61258_ip = 450;
-                        continue _fun61258
+                        _fun80400_ip = 346;
+                        continue _fun80400
                     }
                 case 98:
-                    var1 = _closure1_slot8;
-                    var1 = var1.hasLoadedExperiments;
-                    if (!var1) {
-                        _fun61258_ip = 450;
-                        continue _fun61258
-                    }
-                case 114:
                     var5 = _closure1_slot0;
                     var6 = _closure1_slot2;
-                    var1 = 11;
+                    var1 = 10;
                     var1 = var6[var1];
                     var4 = var5.bind(var2)(var1);
                     var3 = var4.UNSAFE_isDismissibleContentDismissed;
-                    var1 = 12;
+                    var1 = 11;
                     var1 = var6[var1];
                     var1 = var5.bind(var2)(var1);
                     var1 = var1.DismissibleContent;
                     var1 = var1.PASSWORDLESS_UPSELL;
                     var1 = var3.bind(var4)(var1);
                     if (var1) {
-                        _fun61258_ip = 450;
-                        continue _fun61258
+                        _fun80400_ip = 346;
+                        continue _fun80400
                     }
-                case 175:
-                    var3 = _closure1_slot11;
+                case 159:
+                    var3 = _closure1_slot10;
                     var1 = var3.hasFetchedCredentials;
                     var1 = var1.bind(var3)();
                     if (!var1) {
-                        _fun61258_ip = 208;
-                        continue _fun61258
+                        _fun80400_ip = 192;
+                        continue _fun80400
                     }
-                case 192:
-                    var1 = _closure1_slot11;
+                case 176:
+                    var1 = _closure1_slot10;
                     var1 = var1.hasCredentials;
                     if (var1) {
-                        _fun61258_ip = 450;
-                        continue _fun61258
+                        _fun80400_ip = 346;
+                        continue _fun80400
                     }
-                case 208:
+                case 192:
                     var3 = _closure1_slot0;
                     var4 = _closure1_slot2;
-                    var1 = 13;
+                    var1 = 12;
                     var1 = var4[var1];
                     var3 = var3.bind(var2)(var1);
                     var1 = var3.isModalOpen;
                     var1 = var1.bind(var3)();
                     if (var1) {
-                        _fun61258_ip = 450;
-                        continue _fun61258
+                        _fun80400_ip = 346;
+                        continue _fun80400
                     }
-                case 244:
-                    var3 = _closure1_slot10;
+                case 225:
+                    var3 = _closure1_slot9;
                     var1 = var3.getCurrentUser;
-                    var1 = var1.bind(var3)();
-                    if (!(var2 !== var1)) {
-                        _fun61258_ip = 450;
-                        continue _fun61258
-                    }
-                case 264:
-                    var1 = var1.verified;
+                    var3 = var1.bind(var3)();
+                    var1 = var2 !== var3;
                     if (!var1) {
-                        _fun61258_ip = 450;
-                        continue _fun61258
+                        _fun80400_ip = 251;
+                        continue _fun80400
                     }
-                case 276:
-                    var3 = _closure1_slot1;
-                    var4 = _closure1_slot2;
-                    var1 = 14;
-                    var1 = var4[var1];
-                    var5 = var3.bind(var2)(var1);
-                    var4 = var5.getCurrentConfig;
-                    var3 = {};
-                    var1 = 'PasskeyUpsellManager';
-                    var3.location = var1;
-                    var1 = {};
-                    var6 = false;
-                    var1.autoTrackExposure = var6;
-                    var1 = var4.bind(var5)(var3, var1);
-                    var4 = new Array(1);
-                    var4[0] = var1;
-                    var3 = var4.some;
-                    var1 = function(arg0) { // Environment: var1
-                        var2 = _closure1_slot0;
-                        var1 = _closure1_slot2;
-                        var0 = 15;
-                        var1 = var1[var0];
-                        var0 = undefined;
-                        var0 = var2.bind(var0)(var1);
-                        var0 = var0.PasskeyUpsellOnLoginExperimentState;
-                        var1 = var0.None;
-                        var0 = arg0;
-                        var0 = var0 !== var1;
-                        return var0;
-                    };
-                    var1 = var3.bind(var4)(var1);
+                case 245:
+                    var1 = var3.verified;
+                case 251:
                     if (!var1) {
-                        _fun61258_ip = 450;
-                        continue _fun61258
+                        _fun80400_ip = 346;
+                        continue _fun80400
                     }
-                case 358:
-                    var3 = _closure1_slot11;
+                case 254:
+                    var3 = _closure1_slot10;
                     var1 = var3.hasFetchedCredentials;
                     var1 = var1.bind(var3)();
                     if (var1) {
-                        _fun61258_ip = 420;
-                        continue _fun61258
+                        _fun80400_ip = 316;
+                        continue _fun80400
                     }
-                case 375:
-                    var1 = _closure1_slot13;
+                case 271:
+                    var1 = _closure1_slot12;
                     if (var1) {
-                        _fun61258_ip = 450;
-                        continue _fun61258
+                        _fun80400_ip = 346;
+                        continue _fun80400
                     }
-                case 382:
+                case 278:
                     var1 = true;
-                    _closure1_slot13 = var1;
+                    _closure1_slot12 = var1;
                     var3 = _closure1_slot0;
                     var4 = _closure1_slot2;
-                    var1 = 16;
+                    var1 = 13;
                     var1 = var4[var1];
                     var3 = var3.bind(var2)(var1);
                     var1 = var3.fetchWebAuthnCredentials;
                     var1 = var1.bind(var3)();
-                    _fun61258_ip = 450;
-                    continue _fun61258;
-                case 420:
+                    _fun80400_ip = 346;
+                    continue _fun80400;
+                case 316:
                     var1 = _closure1_slot1;
                     var3 = _closure1_slot2;
-                    var0 = 17;
+                    var0 = 14;
                     var0 = var3[var0];
                     var1 = var1.bind(var2)(var0);
                     var0 = var1.openPasskeyUpsell;
                     var0 = var0.bind(var1)();
-                case 450:
+                case 346:
                     var0 = undefined;
                     return var0;
             }
@@ -379,7 +331,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4.key = var6;
         var6 = function() {
             var0 = true;
-            _closure1_slot14 = var0;
+            _closure1_slot13 = var0;
             var0 = undefined;
             return var0;
         };
@@ -390,8 +342,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4.key = var6;
         var6 = function() {
             var0 = false;
+            _closure1_slot12 = var0;
             _closure1_slot13 = var0;
-            _closure1_slot14 = var0;
             var0 = undefined;
             return var0;
         };
@@ -403,12 +355,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = function arg0() {
             var4 = _closure1_slot0;
             var5 = _closure1_slot2;
-            var0 = 11;
+            var0 = 10;
             var0 = var5[var0];
             var1 = undefined;
             var3 = var4.bind(var1)(var0);
             var2 = var3.UNSAFE_markDismissibleContentAsDismissed;
-            var0 = 12;
+            var0 = 11;
             var0 = var5[var0];
             var0 = var4.bind(var1)(var0);
             var0 = var0.DismissibleContent;
@@ -436,7 +388,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var12 = var3;
     var1 = new var12[var1](var11);
     var1 = var1 instanceof Object ? var1 : var3;
-    var3 = 19;
+    var3 = 16;
     var3 = var5[var3];
     var5 = var4.bind(var0)(var3);
     var4 = var5.fileFinishedImporting;
@@ -444,4 +396,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 15, 17, 18, 1590, 1217, 1621, 7556, 660, 7557, 3216, 1358, 3916, 7560, 7561, 4571, 7562, 4305, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 15, 17, 18, 1217, 1621, 10191, 660, 10198, 3218, 1358, 3918, 4573, 10201, 4307, 2]);

@@ -106,4 +106,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.createStageEndSystemMessage = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6753, 6754, 1235, 6755, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6755, 6756, 1235, 6757, 2]);

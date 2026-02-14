@@ -15,10 +15,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = require;
     var0 = undefined;
     var1 = var1.bind(var0)(var3);
-    var3 = var1.ScrollView;
+    var3 = var1.View;
     var1 = var1.Animated;
-    var1 = var1.ScrollView;
-    var2.CompatScroller = var3;
-    var2.CompatAnimatedScroller = var1;
+    var1 = var1.View;
+    var2.CompatView = var3;
+    var2.CompatAnimatedView = var1;
     return var0;
 })(undefined, undefined, undefined, undefined, undefined, undefined, [27]);

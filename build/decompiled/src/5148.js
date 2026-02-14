@@ -1,140 +1,58 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = exports;
-    var2 = function arg0, arg1, arg2, arg3() {
-        _fun45978: for (var _fun45978_ip = 0;;) switch (_fun45978_ip) {
+    var0 = module;
+    var _closure1_slot0 = var0;
+    var1 = function arg0, arg1() {
+        _fun45952: for (var _fun45952_ip = 0;;) switch (_fun45952_ip) {
             case 0:
-                var10 = arg0;
-                var9 = arg1;
-                var8 = arg2;
-                var7 = arg3;
-                var0 = var10.length;
-                var6 = 1;
-                var5 = var0 - var6;
-                var1 = -1;
+                var2 = _closure1_slot0;
                 var3 = global;
-                var2 = 2;
-                var0 = var1;
-                var4 = 0;
-                if (!(var4 <= var5)) {
-                    _fun45978_ip = 190;
-                    continue _fun45978
+                var1 = var3.Object;
+                var1 = var1.setPrototypeOf;
+                if (var1) {
+                    _fun45952_ip = 33;
+                    continue _fun45952
                 }
-            case 47:
-                var13 = var3.Math;
-                var12 = var13.floor;
-                var11 = var4 + var5;
-                var11 = var11 / var2;
-                var14 = var12.bind(var13)(var11);
-                var11 = var10[var14];
-                if (var8) {
-                    _fun45978_ip = 86;
-                    continue _fun45978
-                }
-            case 79:
-                var16 = var11.y;
-                _fun45978_ip = 91;
-                continue _fun45978;
-            case 86:
-                var16 = var11.x;
-            case 91:
-                if (var8) {
-                    _fun45978_ip = 101;
-                    continue _fun45978
-                }
-            case 94:
-                var15 = var11.height;
-                _fun45978_ip = 106;
-                continue _fun45978;
-            case 101:
-                var15 = var11.width;
-            case 106:
-                if (var7) {
-                    _fun45978_ip = 137;
-                    continue _fun45978
-                }
-            case 109:
-                if (!(!(var16 <= var9))) {
-                    _fun45978_ip = 125;
-                    continue _fun45978
-                }
-            case 113:
-                var11 = var14 - var6;
-                var12 = var4;
-                var13 = var1;
-                _fun45978_ip = 171;
-                continue _fun45978;
-            case 125:
-                var12 = var14 + var6;
-                var11 = var5;
-                var13 = var14;
-                _fun45978_ip = 171;
-                continue _fun45978;
-            case 137:
-                if (!(!(var16 >= var9))) {
-                    _fun45978_ip = 161;
-                    continue _fun45978
-                }
-            case 141:
-                var15 = var16 + var15;
-                if (!(!(var15 > var9))) {
-                    _fun45978_ip = 161;
-                    continue _fun45978
-                }
-            case 149:
-                var12 = var14 + var6;
-                var11 = var5;
-                var13 = var1;
-                _fun45978_ip = 171;
-                continue _fun45978;
-            case 161:
-                var11 = var14 - var6;
-                var12 = var4;
-                var13 = var14;
-            case 171:
-                var4 = var12;
-                var5 = var11;
-                var1 = var13;
-                var0 = var1;
-                if (var4 <= var5) {
-                    _fun45978_ip = 47;
-                    continue _fun45978
-                }
-            case 190:
+            case 24:
+                var1 = function(arg0, arg1) { // Environment: var1
+                    var0 = arg0;
+                    var1 = arg1;
+                    var0.__proto__ = var1;
+                    return var0;
+                };
+                _fun45952_ip = 54;
+                continue _fun45952;
+            case 33:
+                var3 = var3.Object;
+                var4 = var3.setPrototypeOf;
+                var3 = var4.bind;
+                var1 = var3.bind(var4)();
+            case 54:
+                _closure1_slot1 = var1;
+                var2.exports = var1;
+                var1 = _closure1_slot0;
+                var3 = var1.exports;
+                var2 = true;
+                var3.__esModule = var2;
+                var2 = var1.exports;
+                var1 = var1.exports;
+                var2.default = var1;
+                var3 = _closure1_slot1;
+                var2 = undefined;
+                var1 = arg0;
+                var0 = arg1;
+                var0 = var3.bind(var2)(var1, var0);
                 return var0;
         }
     };
-    var _closure1_slot0 = var2;
-    var2 = global;
-    var5 = var2.Object;
-    var4 = var5.defineProperty;
-    var3 = {};
-    var2 = true;
-    var3.value = var2;
-    var2 = '__esModule';
-    var2 = var4.bind(var5)(var1, var2, var3);
-    var2 = function arg0, arg1, arg2() {
-        var5 = _closure1_slot0;
-        var10 = undefined;
-        var9 = arg0;
-        var8 = arg1;
-        var7 = arg2;
-        var6 = true;
-        var0 = var10[var5](var9, var8, var7, var6, var5);
-        return var0;
-    };
-    var1.findFirstVisibleIndex = var2;
-    var0 = function arg0, arg1, arg2() {
-        var5 = _closure1_slot0;
-        var10 = undefined;
-        var9 = arg0;
-        var8 = arg1;
-        var7 = arg2;
-        var6 = false;
-        var0 = var10[var5](var9, var8, var7, var6, var5);
-        return var0;
-    };
-    var1.findLastVisibleIndex = var0;
+    var _closure1_slot1 = var1;
+    var0.exports = var1;
+    var2 = var0.exports;
+    var1 = true;
+    var2.__esModule = var1;
+    var1 = var0.exports;
+    var0 = var0.exports;
+    var1.default = var0;
     var0 = undefined;
     return var0;
 })(undefined, undefined, undefined, undefined, undefined, undefined, []);

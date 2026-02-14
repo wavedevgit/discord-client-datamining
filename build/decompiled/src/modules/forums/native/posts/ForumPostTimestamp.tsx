@@ -48,7 +48,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/forums/native/posts/ForumPostTimestamp.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun90069: for (var _fun90069_ip = 0;;) switch (_fun90069_ip) {
+        _fun90094: for (var _fun90094_ip = 0;;) switch (_fun90094_ip) {
             case 0:
                 var0 = arg0;
                 var7 = var0.textStyle;
@@ -71,8 +71,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var2.bind(var4)(var9, var5, var8);
                 var5 = 'text-muted';
                 if (!var1) {
-                    _fun90069_ip = 108;
-                    continue _fun90069
+                    _fun90094_ip = 108;
+                    continue _fun90094
                 }
             case 102:
                 var5 = 'text-default';
@@ -101,4 +101,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 11664, 33, 1297, 8979, 3938, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 11669, 33, 1297, 8950, 3940, 2]);

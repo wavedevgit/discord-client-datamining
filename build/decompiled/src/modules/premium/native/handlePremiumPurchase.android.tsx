@@ -874,4 +874,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useHandlePremiumPurchase = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 31, 7159, 1217, 3122, 4615, 660, 483, 507, 7160, 3998, 1235, 4612, 566, 6730, 6733, 7161, 7189, 7190, 7192, 7193, 796, 3130, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 31, 7161, 1217, 3124, 4617, 660, 483, 507, 7162, 4000, 1235, 4614, 566, 6732, 6735, 7163, 7191, 7192, 7194, 7195, 796, 3132, 2]);

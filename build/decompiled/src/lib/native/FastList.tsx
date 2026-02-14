@@ -3794,7 +3794,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var8.bind(var0)(var5, var7);
                 var1.children = var4;
                 var0 = var3.bind(var0)(var2, var1);
-                _fun53824_ip = 188;
+                _fun53824_ip = 184;
                 continue _fun53824;
             case 88:
                 var4 = _closure1_slot15;
@@ -3812,18 +3812,18 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = false;
                 var10 = {};
                 if (var9) {
-                    _fun53824_ip = 147;
+                    _fun53824_ip = 143;
                     continue _fun53824
                 }
-            case 138:
+            case 134:
                 var10.height = var11;
                 var9 = var10;
-                _fun53824_ip = 154;
+                _fun53824_ip = 150;
                 continue _fun53824;
-            case 147:
+            case 143:
                 var10.width = var11;
                 var9 = var10;
-            case 154:
+            case 150:
                 var1.style = var9;
                 var7 = var8.bind(var3)(var5, var7);
                 var5 = new Array(2);
@@ -3831,7 +3831,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5[1] = var6;
                 var1.children = var5;
                 var0 = var4.bind(var3)(var2, var1);
-            case 188:
+            case 184:
                 return var0;
         }
     };
@@ -4020,7 +4020,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var7.bind(var0)(var5);
                 var1.children = var4;
                 var0 = var3.bind(var0)(var2, var1);
-                _fun53827_ip = 181;
+                _fun53827_ip = 177;
                 continue _fun53827;
             case 82:
                 var4 = _closure1_slot15;
@@ -4038,18 +4038,18 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = false;
                 var9 = {};
                 if (var8) {
-                    _fun53827_ip = 141;
+                    _fun53827_ip = 137;
                     continue _fun53827
                 }
-            case 132:
+            case 128:
                 var9.height = var10;
                 var8 = var9;
-                _fun53827_ip = 148;
+                _fun53827_ip = 144;
                 continue _fun53827;
-            case 141:
+            case 137:
                 var9.width = var10;
                 var8 = var9;
-            case 148:
+            case 144:
                 var1.style = var8;
                 var7 = var7.bind(var3)(var5);
                 var5 = new Array(2);
@@ -4057,7 +4057,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5[1] = var6;
                 var1.children = var5;
                 var0 = var4.bind(var3)(var2, var1);
-            case 181:
+            case 177:
                 return var0;
         }
     };
@@ -7664,4 +7664,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.FastListComputer = var3;
     var2.AnimatedFastList = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [29, 15, 17, 18, 57, 6, 7, 31, 27, 33, 22, 628, 6532, 3938, 478, 3717, 6533, 5314, 4940, 6535, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [29, 15, 17, 18, 57, 6, 7, 31, 27, 33, 22, 628, 6534, 3940, 478, 3719, 6535, 5316, 4942, 6537, 2]);

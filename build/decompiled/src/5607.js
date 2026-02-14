@@ -4,17 +4,25 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = exports;
     var7 = dependencyMap;
     var0 = global;
-    var6 = var0.Object;
-    var4 = var6.defineProperty;
+    var8 = var0.Object;
+    var6 = var8.defineProperty;
+    var4 = {};
+    var13 = true;
+    var4.value = var13;
+    var1 = '__esModule';
+    var1 = var6.bind(var8)(var2, var1, var4);
     var1 = {};
-    var0 = true;
-    var1.value = var0;
-    var0 = '__esModule';
-    var0 = var4.bind(var6)(var2, var0, var1);
-    var1 = {};
-    var6 = 'RNSVGPattern';
+    var6 = 'RNSVGPath';
     var1.uiViewClassName = var6;
-    var4 = {
+    var4 = {};
+    var8 = {};
+    var9 = 'onSvgLayout';
+    var8.registrationName = var9;
+    var4.topSvgLayout = var8;
+    var1.directEventTypes = var4;
+    var10 = var0.Object;
+    var9 = var10.assign;
+    var8 = {
         'name': true,
         'opacity': true,
         'matrix': true,
@@ -42,34 +50,27 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'vectorEffect': true,
         'propList': true,
         'filter': true,
-        'fontSize': true,
-        'fontWeight': true,
-        'font': true,
-        'x': true,
-        'y': true,
-        'height': true,
-        'width': true,
-        'patternUnits': true,
-        'patternContentUnits': true,
-        'patternTransform': true,
-        'minX': true,
-        'minY': true,
-        'vbWidth': true,
-        'vbHeight': true,
-        'align': true,
-        'meetOrSlice': true
+        'd': true
     };
-    var8 = {};
+    var4 = {};
     var0 = 0;
-    var9 = var7[var0];
+    var11 = var7[var0];
     var0 = undefined;
-    var9 = var5.bind(var0)(var9);
-    var9 = var9.default;
-    var8.process = var9;
-    var4.color = var8;
+    var11 = var5.bind(var0)(var11);
+    var11 = var11.default;
+    var4.process = var11;
+    var8.color = var4;
+    var4 = 1;
+    var4 = var7[var4];
+    var12 = var5.bind(var0)(var4);
+    var11 = var12.ConditionallyIgnoredEventHandlers;
+    var4 = {};
+    var4.onSvgLayout = var13;
+    var4 = var11.bind(var12)(var4);
+    var4 = var9.bind(var10)(var8, var4);
     var1.validAttributes = var4;
     var _closure1_slot0 = var1;
-    var4 = 1;
+    var4 = 2;
     var4 = var7[var4];
     var5 = var5.bind(var0)(var4);
     var4 = var5.get;
@@ -81,4 +82,4 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2.default = var3;
     var2.__INTERNAL_VIEW_CONFIG = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [38, 42]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [38, 110, 42]);

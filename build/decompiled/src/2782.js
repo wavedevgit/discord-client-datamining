@@ -6,19 +6,19 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
     var4 = function arg0() {
-        _fun22821: for (var _fun22821_ip = 0;;) switch (_fun22821_ip) {
+        _fun22819: for (var _fun22819_ip = 0;;) switch (_fun22819_ip) {
             case 0:
                 var2 = arg0;
                 if (!var2) {
-                    _fun22821_ip = 18;
-                    continue _fun22821
+                    _fun22819_ip = 18;
+                    continue _fun22819
                 }
             case 6:
                 var1 = var2.__esModule;
                 var0 = var2;
                 if (var1) {
-                    _fun22821_ip = 27;
-                    continue _fun22821
+                    _fun22819_ip = 27;
+                    continue _fun22819
                 }
             case 18:
                 var1 = {};
@@ -37,7 +37,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = '__esModule';
     var0 = var7.bind(var8)(var1, var0, var2);
     var0 = function arg0, arg1, arg2() {
-        _fun22822: for (var _fun22822_ip = 0;;) switch (_fun22822_ip) {
+        _fun22820: for (var _fun22820_ip = 0;;) switch (_fun22820_ip) {
             case 0:
                 var4 = arg2;
                 var2 = undefined;
@@ -52,7 +52,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var3 = arg0;
                 var1 = arg1;
                 var3 = var6.bind(var2)(var3, var1);
-                var1 = 7;
+                var1 = 3;
                 var1 = var3 / var1;
                 var3 = _closure1_slot0;
                 var0 = _closure1_slot1;
@@ -63,8 +63,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var5 = var0 == var4;
                 var0 = undefined;
                 if (var5) {
-                    _fun22822_ip = 98;
-                    continue _fun22822
+                    _fun22820_ip = 98;
+                    continue _fun22820
                 }
             case 92:
                 var0 = var4.roundingMethod;
@@ -90,4 +90,4 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = arg4;
     var1.exports = var2;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [2769, 2579, 2772]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [2778, 2581, 2774]);

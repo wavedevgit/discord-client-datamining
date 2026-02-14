@@ -62,65 +62,91 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = _closure2_slot0;
                     var0 = null;
                     if (!(var0 != var1)) {
-                        _fun48690_ip = 341;
+                        _fun48690_ip = 424;
                         continue _fun48690
                     }
                 case 16:
                     var6 = {};
-                    var7 = _closure2_slot0;
-                    var6.theme = var7;
+                    var5 = _closure2_slot0;
+                    var6.theme = var5;
                     var1 = _closure2_slot1;
                     var6.saturation = var1;
                     var1 = {};
                     var12 = _closure1_slot1;
-                    var10 = _closure1_slot2;
+                    var4 = _closure1_slot2;
                     var9 = 3;
-                    var4 = var10[var9];
+                    var7 = var4[var9];
                     var8 = undefined;
-                    var4 = var12.bind(var8)(var4);
-                    var11 = var4.internal;
-                    var5 = var11.resolveSemanticColor;
-                    var4 = var10[var9];
+                    var7 = var12.bind(var8)(var7);
+                    var11 = var7.internal;
+                    var10 = var11.resolveSemanticColor;
+                    var7 = var4[var9];
+                    var7 = var12.bind(var8)(var7);
+                    var7 = var7.colors;
+                    var7 = var7.PROFILE_GRADIENT_OVERLAY_SYNCED_WITH_USER_THEME;
+                    var7 = var10.bind(var11)(var5, var7, var6);
+                    var1.overlaySyncedWithUserTheme = var7;
+                    var7 = var4[var9];
+                    var7 = var12.bind(var8)(var7);
+                    var11 = var7.internal;
+                    var10 = var11.resolveSemanticColor;
+                    var7 = var4[var9];
+                    var7 = var12.bind(var8)(var7);
+                    var7 = var7.colors;
+                    var7 = var7.PROFILE_GRADIENT_OVERLAY;
+                    var7 = var10.bind(var11)(var5, var7, var6);
+                    var1.overlay = var7;
+                    var7 = _closure1_slot0;
+                    var10 = 4;
+                    var4 = var4[var10];
+                    var7 = var7.bind(var8)(var4);
+                    var4 = var7.getThemes;
+                    var4 = var4.bind(var7)();
+                    var4 = var4.LIGHT;
+                    if (!(var5 !== var4)) {
+                        _fun48690_ip = 258;
+                        continue _fun48690
+                    }
+                case 196:
+                    var12 = _closure1_slot1;
+                    var4 = _closure1_slot2;
+                    var5 = var4[var9];
+                    var5 = var12.bind(var8)(var5);
+                    var11 = var5.internal;
+                    var7 = var11.resolveSemanticColor;
+                    var5 = _closure2_slot0;
+                    var4 = var4[var9];
                     var4 = var12.bind(var8)(var4);
                     var4 = var4.colors;
-                    var4 = var4.PROFILE_GRADIENT_OVERLAY_SYNCED_WITH_USER_THEME;
-                    var4 = var5.bind(var11)(var7, var4, var6);
-                    var1.overlaySyncedWithUserTheme = var4;
-                    var4 = var10[var9];
-                    var4 = var12.bind(var8)(var4);
-                    var11 = var4.internal;
-                    var5 = var11.resolveSemanticColor;
-                    var4 = var10[var9];
-                    var4 = var12.bind(var8)(var4);
-                    var4 = var4.colors;
-                    var4 = var4.PROFILE_GRADIENT_OVERLAY;
-                    var4 = var5.bind(var11)(var7, var4, var6);
-                    var1.overlay = var4;
-                    var4 = var10[var9];
-                    var4 = var12.bind(var8)(var4);
-                    var11 = var4.internal;
-                    var5 = var11.resolveSemanticColor;
-                    var4 = var10[var9];
-                    var4 = var12.bind(var8)(var4);
-                    var4 = var4.colors;
-                    var4 = var4.PROFILE_GRADIENT_SECTION_BOX;
-                    var4 = var5.bind(var11)(var7, var4, var6);
+                    var4 = var4.BACKGROUND_MOD_NORMAL;
+                    var4 = var7.bind(var11)(var5, var4, var6);
+                    _fun48690_ip = 286;
+                    continue _fun48690;
+                case 258:
+                    var7 = _closure1_slot1;
+                    var5 = _closure1_slot2;
+                    var5 = var5[var9];
+                    var5 = var7.bind(var8)(var5);
+                    var5 = var5.unsafe_rawColors;
+                    var4 = var5.OPACITY_WHITE_24;
+                case 286:
                     var1.sectionBox = var4;
+                    var7 = _closure2_slot0;
                     var5 = _closure1_slot0;
-                    var4 = 4;
-                    var4 = var10[var4];
+                    var4 = _closure1_slot2;
+                    var4 = var4[var10];
                     var5 = var5.bind(var8)(var4);
                     var4 = var5.getThemes;
                     var4 = var4.bind(var5)();
                     var5 = var4.DARK;
                     var4 = 0.12;
                     if (!(var7 === var5)) {
-                        _fun48690_ip = 269;
+                        _fun48690_ip = 352;
                         continue _fun48690
                     }
-                case 259:
+                case 342:
                     var4 = 0.24;
-                case 269:
+                case 352:
                     var1.dividerOpacity = var4;
                     var7 = _closure1_slot1;
                     var2 = _closure1_slot2;
@@ -136,7 +162,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = var4.bind(var5)(var3, var2, var6);
                     var1.rolePillBackgroundColor = var2;
                     return var1;
-                case 341:
+                case 424:
                     return var0;
             }
         };

@@ -22,7 +22,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/guild_role_subscriptions/native/guild_settings/tier_templates/GuildRoleSubscriptionTierTemplateUtils.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun117734: for (var _fun117734_ip = 0;;) switch (_fun117734_ip) {
+        _fun117823: for (var _fun117823_ip = 0;;) switch (_fun117823_ip) {
             case 0:
                 var3 = arg0;
                 var4 = _closure1_slot0;
@@ -34,8 +34,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.ChannelTypes;
                 var1 = var1.GUILD_TEXT;
                 if (!(var1 !== var3)) {
-                    _fun117734_ip = 388;
-                    continue _fun117734
+                    _fun117823_ip = 388;
+                    continue _fun117823
                 }
             case 46:
                 var4 = _closure1_slot0;
@@ -45,8 +45,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.ChannelTypes;
                 var1 = var1.GUILD_VOICE;
                 if (!(var1 !== var3)) {
-                    _fun117734_ip = 360;
-                    continue _fun117734
+                    _fun117823_ip = 360;
+                    continue _fun117823
                 }
             case 82:
                 var4 = _closure1_slot0;
@@ -56,8 +56,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.ChannelTypes;
                 var1 = var1.GUILD_STAGE_VOICE;
                 if (!(var1 !== var3)) {
-                    _fun117734_ip = 332;
-                    continue _fun117734
+                    _fun117823_ip = 332;
+                    continue _fun117823
                 }
             case 118:
                 var4 = _closure1_slot0;
@@ -67,8 +67,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.ChannelTypes;
                 var1 = var1.GUILD_FORUM;
                 if (!(var1 !== var3)) {
-                    _fun117734_ip = 304;
-                    continue _fun117734
+                    _fun117823_ip = 304;
+                    continue _fun117823
                 }
             case 154:
                 var4 = _closure1_slot0;
@@ -78,8 +78,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.ChannelTypes;
                 var1 = var1.GUILD_MEDIA;
                 if (!(var1 !== var3)) {
-                    _fun117734_ip = 276;
-                    continue _fun117734
+                    _fun117823_ip = 276;
+                    continue _fun117823
                 }
             case 187:
                 var4 = _closure1_slot0;
@@ -89,8 +89,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.ChannelTypes;
                 var1 = var1.GUILD_ANNOUNCEMENT;
                 if (!(var1 !== var3)) {
-                    _fun117734_ip = 248;
-                    continue _fun117734
+                    _fun117823_ip = 248;
+                    continue _fun117823
                 }
             case 220:
                 var3 = _closure1_slot0;
@@ -152,4 +152,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getPrivateChannelIconComponent = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [791, 4851, 4868, 4866, 4857, 4856, 4863, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [791, 4853, 4870, 4868, 4859, 4858, 4865, 2]);

@@ -78,7 +78,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = 'getMaxFileSize';
         var0.key = var5;
         var5 = function arg0() {
-            _fun37856: for (var _fun37856_ip = 0;;) switch (_fun37856_ip) {
+            _fun37854: for (var _fun37854_ip = 0;;) switch (_fun37854_ip) {
                 case 0:
                     var3 = _closure1_slot6;
                     var2 = var3.getBasicChannel;
@@ -94,8 +94,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var4 = null;
                     var4 = var4 == var3;
                     if (var4) {
-                        _fun37856_ip = 63;
-                        continue _fun37856
+                        _fun37854_ip = 63;
+                        continue _fun37854
                     }
                 case 58:
                     var0 = var3.guild_id;
@@ -164,21 +164,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.bind(var6)(var4);
     var2.UploadTargets = var3;
     var1 = function arg0() {
-        _fun37860: for (var _fun37860_ip = 0;;) switch (_fun37860_ip) {
+        _fun37858: for (var _fun37858_ip = 0;;) switch (_fun37858_ip) {
             case 0:
                 var2 = arg0;
                 var1 = _closure1_slot10;
                 var1 = var1.GUILD_PRODUCT_ATTACHMENT;
                 if (!(var1 !== var2)) {
-                    _fun37860_ip = 114;
-                    continue _fun37860
+                    _fun37858_ip = 114;
+                    continue _fun37858
                 }
             case 20:
                 var1 = _closure1_slot10;
                 var1 = var1.GRAVITY_ATTACHMENT;
                 if (!(var1 !== var2)) {
-                    _fun37860_ip = 70;
-                    continue _fun37860
+                    _fun37858_ip = 70;
+                    continue _fun37858
                 }
             case 34:
                 var1 = _closure1_slot10;
@@ -232,4 +232,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getUploadTarget = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 1372, 660, 4004, 4002, 4132, 4134, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 1372, 660, 4006, 4004, 4134, 4136, 2]);

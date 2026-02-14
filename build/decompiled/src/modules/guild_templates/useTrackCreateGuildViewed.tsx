@@ -47,14 +47,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var _closure2_slot1 = var1;
         var1 = var2.useEffect;
         var0 = function() { // Environment: var0
-            _fun79569: for (var _fun79569_ip = 0;;) switch (_fun79569_ip) {
+            _fun79376: for (var _fun79376_ip = 0;;) switch (_fun79376_ip) {
                 case 0:
                     var2 = _closure2_slot0;
                     var1 = null;
                     var1 = var1 != var2;
                     if (!var1) {
-                        _fun79569_ip = 42;
-                        continue _fun79569
+                        _fun79376_ip = 42;
+                        continue _fun79376
                     }
                 case 16:
                     var2 = _closure2_slot0;
@@ -64,8 +64,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = var3 !== var2;
                 case 42:
                     if (!var1) {
-                        _fun79569_ip = 196;
-                        continue _fun79569
+                        _fun79376_ip = 196;
+                        continue _fun79376
                     }
                 case 48:
                     var1 = _closure2_slot1;
@@ -75,8 +75,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = var1.code;
                     var1 = var2.bind(var3)(var1);
                     if (var1) {
-                        _fun79569_ip = 196;
-                        continue _fun79569
+                        _fun79376_ip = 196;
+                        continue _fun79376
                     }
                 case 79:
                     var1 = _closure2_slot1;
@@ -115,4 +115,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 6565, 660, 796, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 6567, 660, 796, 2]);

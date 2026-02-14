@@ -22,7 +22,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/guild_boosting/native/GuildBoostingMarketingUtils.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun102961: for (var _fun102961_ip = 0;;) switch (_fun102961_ip) {
+        _fun103002: for (var _fun103002_ip = 0;;) switch (_fun103002_ip) {
             case 0:
                 var3 = arg0;
                 var4 = _closure1_slot0;
@@ -34,8 +34,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.PerkIcons;
                 var1 = var1.EMOJI;
                 if (!(var1 !== var3)) {
-                    _fun102961_ip = 708;
-                    continue _fun102961
+                    _fun103002_ip = 708;
+                    continue _fun103002
                 }
             case 46:
                 var4 = _closure1_slot0;
@@ -45,8 +45,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.PerkIcons;
                 var1 = var1.SOUNDBOARD;
                 if (!(var1 !== var3)) {
-                    _fun102961_ip = 680;
-                    continue _fun102961
+                    _fun103002_ip = 680;
+                    continue _fun103002
                 }
             case 82:
                 var4 = _closure1_slot0;
@@ -56,8 +56,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.PerkIcons;
                 var1 = var1.ANIMATED;
                 if (!(var1 !== var3)) {
-                    _fun102961_ip = 652;
-                    continue _fun102961
+                    _fun103002_ip = 652;
+                    continue _fun103002
                 }
             case 118:
                 var4 = _closure1_slot0;
@@ -67,8 +67,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.PerkIcons;
                 var1 = var1.AUDIO;
                 if (!(var1 !== var3)) {
-                    _fun102961_ip = 624;
-                    continue _fun102961
+                    _fun103002_ip = 624;
+                    continue _fun103002
                 }
             case 154:
                 var4 = _closure1_slot0;
@@ -78,8 +78,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.PerkIcons;
                 var1 = var1.STREAM;
                 if (!(var1 !== var3)) {
-                    _fun102961_ip = 596;
-                    continue _fun102961
+                    _fun103002_ip = 596;
+                    continue _fun103002
                 }
             case 190:
                 var4 = _closure1_slot0;
@@ -89,8 +89,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.PerkIcons;
                 var1 = var1.UPLOAD;
                 if (!(var1 !== var3)) {
-                    _fun102961_ip = 568;
-                    continue _fun102961
+                    _fun103002_ip = 568;
+                    continue _fun103002
                 }
             case 226:
                 var4 = _closure1_slot0;
@@ -100,8 +100,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.PerkIcons;
                 var1 = var1.CUSTOM_ROLE_ICON;
                 if (!(var1 !== var3)) {
-                    _fun102961_ip = 540;
-                    continue _fun102961
+                    _fun103002_ip = 540;
+                    continue _fun103002
                 }
             case 262:
                 var4 = _closure1_slot0;
@@ -111,8 +111,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.PerkIcons;
                 var1 = var1.CUSTOMIZATION;
                 if (!(var1 !== var3)) {
-                    _fun102961_ip = 512;
-                    continue _fun102961
+                    _fun103002_ip = 512;
+                    continue _fun103002
                 }
             case 298:
                 var4 = _closure1_slot0;
@@ -122,8 +122,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.PerkIcons;
                 var1 = var1.VANITY;
                 if (!(var1 !== var3)) {
-                    _fun102961_ip = 484;
-                    continue _fun102961
+                    _fun103002_ip = 484;
+                    continue _fun103002
                 }
             case 334:
                 var4 = _closure1_slot0;
@@ -133,8 +133,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.PerkIcons;
                 var1 = var1.STAGE_VIDEO;
                 if (!(var1 !== var3)) {
-                    _fun102961_ip = 456;
-                    continue _fun102961
+                    _fun103002_ip = 456;
+                    continue _fun103002
                 }
             case 367:
                 var4 = _closure1_slot0;
@@ -144,8 +144,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.PerkIcons;
                 var1 = var1.STICKER;
                 if (!(var1 !== var3)) {
-                    _fun102961_ip = 428;
-                    continue _fun102961
+                    _fun103002_ip = 428;
+                    continue _fun103002
                 }
             case 400:
                 var3 = _closure1_slot0;
@@ -247,4 +247,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getIconForPerk = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6784, 7736, 11984, 9277, 10676, 10024, 7734, 8201, 9245, 8640, 4867, 8857, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6786, 7704, 11989, 9249, 10680, 9997, 7702, 8170, 9217, 8610, 4869, 8828, 2]);

@@ -1556,7 +1556,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var1 = var1.bind(var3)();
                     var10 = var1;
                     if (!var1) {
-                        _fun10856_ip = 505;
+                        _fun10856_ip = 509;
                         continue _fun10856
                     }
                 case 65:
@@ -1574,7 +1574,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var19 = var7().value;
                     var20 = var2;
                     if (!(var20 !== var0)) {
-                        _fun10856_ip = 505;
+                        _fun10856_ip = 509;
                         continue _fun10856
                     }
                 case 116: // try_start_0
@@ -1582,7 +1582,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var19 = var19.scripts;
                     var19 = var19[var3];
                     if (!var19) {
-                        _fun10856_ip = 493;
+                        _fun10856_ip = 497;
                         continue _fun10856
                     }
                 case 135:
@@ -1620,7 +1620,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var20 = var12;
                     var19 = var13;
                     if (!(!(var20 < var19))) {
-                        _fun10856_ip = 493;
+                        _fun10856_ip = 497;
                         continue _fun10856
                     }
                 case 252:
@@ -1697,14 +1697,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var28 = var21;
                     var26 = var19;
                     var19 = var30[var23](var29, var28, var27, var26, var25);
-                case 493: // try_end0
+                case 497: // try_end0
                     _fun10856_ip = 102;
                     continue _fun10856;
-                case 498: // catch_target0
+                case 502: // catch_target0
                     CatchBlockStart(arg_register = 1);
                     var2.return();
                     throw var1;
-                case 505:
+                case 509:
                     return var0;
             }
         };
@@ -1750,7 +1750,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var2 = var2.bind(var3)();
                     var8 = var2;
                     if (!var2) {
-                        _fun10858_ip = 365;
+                        _fun10858_ip = 369;
                         continue _fun10858
                     }
                 case 63:
@@ -1773,7 +1773,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var13 = var5().value;
                     var14 = var2;
                     if (!(var14 !== var0)) {
-                        _fun10858_ip = 365;
+                        _fun10858_ip = 369;
                         continue _fun10858
                     }
                 case 138: // try_start_0
@@ -1815,7 +1815,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var13 = var15 < var14;
                 case 252:
                     if (var13) {
-                        _fun10858_ip = 353;
+                        _fun10858_ip = 357;
                         continue _fun10858
                     }
                 case 255:
@@ -1845,14 +1845,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var23 = var14;
                     var22 = var13;
                     var13 = var26[var17](var25, var24, var23, var22, var21);
-                case 353: // try_end0
+                case 357: // try_end0
                     _fun10858_ip = 124;
                     continue _fun10858;
-                case 358: // catch_target0
+                case 362: // catch_target0
                     CatchBlockStart(arg_register = 1);
                     var2.return();
                     throw var1;
-                case 365:
+                case 369:
                     return var0;
             }
         };

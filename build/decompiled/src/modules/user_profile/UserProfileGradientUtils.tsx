@@ -527,4 +527,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getUserProfileGradientContainerColors = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 660, 668, 3245, 22, 3210, 669, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 660, 668, 3247, 22, 3212, 669, 2]);

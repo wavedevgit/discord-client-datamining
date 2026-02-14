@@ -143,4 +143,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getGuildTagBadgePacksWaveTwoExperimentEnabled = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 1612, 3120, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 1612, 3122, 2]);

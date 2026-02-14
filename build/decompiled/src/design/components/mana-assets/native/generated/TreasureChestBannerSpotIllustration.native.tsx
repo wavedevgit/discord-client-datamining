@@ -81,4 +81,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.TreasureChestBannerSpotIllustration = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 4709, 6475, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 4711, 6477, 2]);

@@ -644,4 +644,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = 0.8;
     var2.BACKDROP_OPACITY = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 57, 31, 27, 3113, 6632, 1417, 6669, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 57, 31, 27, 3115, 6634, 1417, 6671, 2]);

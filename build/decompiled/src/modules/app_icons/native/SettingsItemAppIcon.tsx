@@ -53,7 +53,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/app_icons/native/SettingsItemAppIcon.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function() {
-        _fun86263: for (var _fun86263_ip = 0;;) switch (_fun86263_ip) {
+        _fun86273: for (var _fun86273_ip = 0;;) switch (_fun86273_ip) {
             case 0:
                 var0 = _closure1_slot5;
                 var4 = undefined;
@@ -73,14 +73,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.FreemiumAppIconIds;
                 var0 = var0.DEFAULT;
                 if (!(var5 !== var0)) {
-                    _fun86263_ip = 140;
-                    continue _fun86263
+                    _fun86273_ip = 140;
+                    continue _fun86273
                 }
             case 80:
                 var0 = null;
                 if (!(var0 != var2)) {
-                    _fun86263_ip = 140;
-                    continue _fun86263
+                    _fun86273_ip = 140;
+                    continue _fun86273
                 }
             case 86:
                 var3 = _closure1_slot4;
@@ -96,8 +96,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = 32;
                 var0.size = var5;
                 var0 = var3.bind(var4)(var2, var0);
-                _fun86263_ip = 178;
-                continue _fun86263;
+                _fun86273_ip = 178;
+                continue _fun86273;
             case 140:
                 var3 = _closure1_slot4;
                 var2 = _closure1_slot0;
@@ -114,4 +114,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 7693, 33, 1297, 671, 11096, 7694, 7658, 11098, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 7661, 33, 1297, 671, 11099, 7662, 7626, 11101, 2]);

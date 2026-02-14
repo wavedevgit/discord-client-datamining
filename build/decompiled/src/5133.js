@@ -1,20 +1,35 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var0 = module;
-    var1 = function() {
-        var0 = global;
-        var2 = var0.TypeError;
-        var0 = var2.prototype;
-        var1 = Object.create(var0, {
-            constructor: {
-                value: var2
-            }
-        });
-        var3 = 'Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.';
-        var4 = var1;
-        var0 = new var4[var2](var3, var2);
-        var0 = var0 instanceof Object ? var0 : var1;
-        throw var0;
+    var2 = require;
+    var _closure1_slot0 = var2;
+    var2 = dependencyMap;
+    var _closure1_slot1 = var2;
+    var1 = function arg0() {
+        _fun45846: for (var _fun45846_ip = 0;;) switch (_fun45846_ip) {
+            case 0:
+                var2 = arg0;
+                var0 = global;
+                var1 = var0.Array;
+                var0 = var1.isArray;
+                var0 = var0.bind(var1)(var2);
+                if (var0) {
+                    _fun45846_ip = 28;
+                    continue _fun45846
+                }
+            case 24:
+                var0 = undefined;
+                return var0;
+            case 28:
+                var3 = _closure1_slot0;
+                var1 = _closure1_slot1;
+                var0 = 0;
+                var0 = var1[var0];
+                var1 = undefined;
+                var0 = var3.bind(var1)(var0);
+                var0 = var0.bind(var1)(var2);
+                return var0;
+        }
     };
     var0.exports = var1;
     var2 = var0.exports;
@@ -25,4 +40,4 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1.default = var0;
     var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, []);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5115]);

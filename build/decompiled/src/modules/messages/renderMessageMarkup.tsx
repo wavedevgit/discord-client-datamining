@@ -1242,4 +1242,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.renderAutomodMessageMarkupToAST = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 3322, 4788, 3992, 1592, 3328, 1208, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 3324, 4790, 3994, 1592, 3330, 1208, 2]);

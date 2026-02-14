@@ -447,4 +447,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useGetOrFetchCollectiblesCategoriesAndPurchases = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 1590, 4619, 5787, 5788, 632, 4654, 4603, 5789, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 1590, 4621, 5789, 5790, 632, 4656, 4605, 5791, 2]);

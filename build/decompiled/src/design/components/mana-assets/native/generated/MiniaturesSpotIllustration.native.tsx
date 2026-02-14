@@ -81,4 +81,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.MiniaturesSpotIllustration = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 4709, 6297, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 4711, 6299, 2]);

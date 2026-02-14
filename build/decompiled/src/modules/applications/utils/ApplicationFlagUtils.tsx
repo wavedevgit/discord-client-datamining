@@ -172,4 +172,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.hasApplicationFlag = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3455, 484, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3457, 484, 2]);

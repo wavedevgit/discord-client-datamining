@@ -207,6 +207,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.QUEST_HOME_ENTRYPOINT_THEMED = var5;
     var1 = 'QUEST_HOME_ENTRYPOINT_THEMED';
     var3[var5] = var1;
+    var5 = 49;
+    var3.QUEST_ACTIVITY_UNENROLLED_MODAL = var5;
+    var1 = 'QUEST_ACTIVITY_UNENROLLED_MODAL';
+    var3[var5] = var1;
     var1 = {};
     var7 = var0.Set;
     var5 = var7.prototype;

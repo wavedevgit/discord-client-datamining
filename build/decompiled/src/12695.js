@@ -7,32 +7,26 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = undefined;
     var2 = var1.bind(var0)(var2);
     var1 = function() { // Environment: var1
-        _fun97395: for (var _fun97395_ip = 0;;) switch (_fun97395_ip) {
-            case 0:
-                var1 = function() { // Environment: var0
-                    var0 = undefined;
-                    return var0;
-                };
-                var0 = var1.bind;
-                var3 = var0.bind(var1)();
-                var1 = 'function';
-                var0 = typeof var3;
-                var0 = var1 !== var0;
-                if (var0) {
-                    _fun97395_ip = 47;
-                    continue _fun97395
-                }
-            case 32:
-                var2 = var3.hasOwnProperty;
-                var1 = 'prototype';
-                var0 = var2.bind(var3)(var1);
-            case 47:
-                return var0;
-        }
+        var0 = global;
+        var4 = var0.Object;
+        var3 = var4.defineProperty;
+        var2 = {};
+        var0 = function() {
+            var0 = 7;
+            return var0;
+        };
+        var2.get = var0;
+        var0 = {};
+        var1 = 1;
+        var0 = var3.bind(var4)(var0, var1, var2);
+        var1 = var0[var1];
+        var0 = 7;
+        var0 = var0 !== var1;
+        return var0;
     };
     var1 = var2.bind(var0)(var1);
     var2 = !var1;
     var1 = arg4;
     var1.exports = var2;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [12691]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [12696]);

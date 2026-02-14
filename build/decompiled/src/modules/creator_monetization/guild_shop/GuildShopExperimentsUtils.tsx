@@ -105,4 +105,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useIsEligibleForGuildShopPreview = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5687, 5688, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5689, 5690, 2]);

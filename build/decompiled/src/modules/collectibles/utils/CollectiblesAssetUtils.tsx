@@ -99,4 +99,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getCollectiblesItemAssetUrl = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [7000, 1304, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [7002, 1304, 2]);

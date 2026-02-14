@@ -335,7 +335,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = var0.length;
                 var3 = 0;
                 if (!(var3 !== var0)) {
-                    _fun12271_ip = 752;
+                    _fun12271_ip = 756;
                     continue _fun12271
                 }
             case 33:
@@ -560,7 +560,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var11 = var0().value;
                 var9 = var8;
                 if (!(var9 !== var2)) {
-                    _fun12271_ip = 691;
+                    _fun12271_ip = 695;
                     continue _fun12271
                 }
             case 665: // try_start_2
@@ -570,14 +570,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     'priority': 1
                 };
                 var10[var11] = var9;
-            case 682: // try_end2
+            case 686: // try_end2
                 _fun12271_ip = 654;
                 continue _fun12271;
-            case 684: // catch_target2
+            case 688: // catch_target2
                 CatchBlockStart(arg_register = 0);
                 var8.return();
                 throw var0;
-            case 691:
+            case 695:
                 var0 = {};
                 var0.samples = var7;
                 var0.frames = var6;
@@ -589,15 +589,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = var1.bind(var4)(var5);
                 var1 = var1[var3];
                 if (var1) {
-                    _fun12271_ip = 745;
+                    _fun12271_ip = 749;
                     continue _fun12271
                 }
-            case 739:
+            case 743:
                 var1 = '0';
-            case 745:
+            case 749:
                 var0.active_thread_id = var1;
                 return var0;
-            case 752:
+            case 756:
                 var1 = _closure1_slot0;
                 var3 = _closure1_slot1;
                 var0 = 1;

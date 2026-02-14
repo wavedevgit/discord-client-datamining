@@ -4803,6 +4803,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
             };
             var25.SOCIAL_LAYER_STOREFRONT_ANNOUNCEMENT = var40;
+            var40 = '/partner-sdk/storefront-config';
+            var25.SOCIAL_LAYER_STOREFRONT_CONFIG = var40;
             var40 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
@@ -12209,6 +12211,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var91.PERK_DISCOVERABILITY_CARD_CTA_CLICKED = var28;
             var28 = 'premium_tenure_rewards_orbs_cta_clicked';
             var91.PREMIUM_TENURE_REWARDS_ORBS_CTA_CLICKED = var28;
+            var28 = 'premium_tenure_rewards_orbs_section_impression';
+            var91.PREMIUM_TENURE_REWARDS_ORBS_SECTION_IMPRESSION = var28;
             var28 = 'premium_whats_new_box_cta_clicked';
             var91.PREMIUM_WHATS_NEW_BOX_CTA_CLICKED = var28;
             var28 = 'premium_whats_new_view_time';
@@ -14605,6 +14609,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var91.APP_TRANSACTION_ID_SYNCED = var28;
             var28 = 'parental_consent_checked';
             var91.PARENTAL_CONSENT_CHECKED = var28;
+            var28 = 'seo_page_cwv_measured';
+            var91.SEO_PAGE_CWV_MEASURED = var28;
             var90 = {};
             var28 = 'canary';
             var90.CANARY = var28;
@@ -16796,28 +16802,28 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var233 = var222[var144];
             var236 = var221.bind(var0)(var233);
             for (var233 in var236)
-                case 62745: {
-                    case 62754: var239 = var233;
+                case 62780: {
+                    case 62789: var239 = var233;
                     var238 = var222[var144];
                     var238 = var221.bind(var0)(var238);
                     var238 = var238[var239];
                     var2[var239] = var238;
-                    _fun7396_ip = 62745;
+                    _fun7396_ip = 62780;
                     continue _fun7396;
                 }
-        case 62776:
+        case 62811:
             var232 = var222[var232];
             var237 = var221.bind(var0)(var232);
             var235 = var237;
             for (var232 in var235)
-                case 62796: {
-                    case 62805: var239 = var232;
+                case 62831: {
+                    case 62840: var239 = var232;
                     var238 = var237[var239];
                     var2[var239] = var238;
-                    _fun7396_ip = 62796;
+                    _fun7396_ip = 62831;
                     continue _fun7396;
                 }
-        case 62818:
+        case 62853:
             var2.Routes = var231;
             var2.ME = var230;
             var2.FAVORITES = var229;

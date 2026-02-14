@@ -1223,4 +1223,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.convertVideoToFirstFrameImageWithMediaProxy = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5287, 660, 5347, 5296, 5358, 5359, 5293, 1586, 1457, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5289, 660, 5349, 5298, 5360, 5361, 5295, 1586, 1457, 2]);

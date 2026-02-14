@@ -13,104 +13,99 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.value = var2;
     var2 = '__esModule';
     var2 = var4.bind(var5)(var1, var2, var3);
-    var0 = function arg0() {
-        _fun99856: for (var _fun99856_ip = 0;;) switch (_fun99856_ip) {
+    var0 = function arg0, arg1() {
+        _fun99880: for (var _fun99880_ip = 0;;) switch (_fun99880_ip) {
             case 0:
-                var2 = arg0;
-                var7 = typeof var2;
-                var0 = 'boolean';
-                if (!(var0 !== var7)) {
-                    _fun99856_ip = 228;
-                    continue _fun99856
-                }
-            case 17:
-                var1 = 'string';
-                var0 = var2;
-                if (!(var1 === var7)) {
-                    _fun99856_ip = 43;
-                    continue _fun99856
-                }
-            case 28:
-                var1 = global;
-                var3 = var1.parseFloat;
+                var2 = undefined;
+                var8 = undefined;
+                var5 = arg0;
+                var3 = arg1;
+                var4 = undefined;
                 var1 = undefined;
-                var0 = var3.bind(var1)(var2);
+                var6 = arguments.length;
+                var7 = 2;
+                if (!(var6 > var7)) {
+                    _fun99880_ip = 34;
+                    continue _fun99880
+                }
+            case 26:
+                var6 = arguments[var7];
+                if (!(var2 === var6)) {
+                    _fun99880_ip = 43;
+                    continue _fun99880
+                }
+            case 34:
+                var6 = function() { // Environment: var0
+                    var0 = undefined;
+                    return var0;
+                };
+                _fun99880_ip = 47;
+                continue _fun99880;
             case 43:
-                var3 = 'number';
-                var1 = typeof var0;
-                if (!(var3 === var1)) {
-                    _fun99856_ip = 87;
-                    continue _fun99856
-                }
-            case 54:
-                var1 = global;
-                var3 = var1.isNaN;
-                var1 = undefined;
-                var1 = var3.bind(var1)(var0);
-                if (var1) {
-                    _fun99856_ip = 87;
-                    continue _fun99856
-                }
-            case 72:
-                var1 = 0;
-                if (!(!(var0 < var1))) {
-                    _fun99856_ip = 87;
-                    continue _fun99856
-                }
-            case 78:
-                var1 = 1;
-                if (!(!(var0 > var1))) {
-                    _fun99856_ip = 87;
-                    continue _fun99856
-                }
-            case 85:
+                var6 = arguments[var7];
+            case 47:
+                var1 = var6;
+            case 50: // try_start_0
+                var4 = var5.bind(var2)();
+            case 54: // try_end0
+                var6 = var4;
+                var5 = var3;
+                var4 = var1;
+                var0 = function arg0, arg1, arg2() {
+                    _fun99882: for (var _fun99882_ip = 0;;) switch (_fun99882_ip) {
+                        case 0:
+                            var3 = arg0;
+                            var2 = arg2;
+                            var1 = arg1;
+                            var _closure3_slot0 = var1;
+                            var _closure3_slot1 = var2;
+                            var5 = _closure1_slot0;
+                            var4 = _closure1_slot1;
+                            var1 = 0;
+                            var4 = var4[var1];
+                            var1 = undefined;
+                            var5 = var5.bind(var1)(var4);
+                            var4 = var5.isThenable;
+                            var4 = var4.bind(var5)(var3);
+                            if (var4) {
+                                _fun99882_ip = 63;
+                                continue _fun99882
+                            }
+                        case 57:
+                            var1 = var2.bind(var1)();
+                            return var3;
+                        case 63:
+                            var2 = var3.then;
+                            var1 = function(arg0) { // Environment: var0
+                                var1 = _closure3_slot1;
+                                var0 = undefined;
+                                var0 = var1.bind(var0)();
+                                var0 = arg0;
+                                return var0;
+                            };
+                            var0 = function(arg0) { // Environment: var0
+                                var0 = arg0;
+                                var3 = _closure3_slot0;
+                                var2 = undefined;
+                                var3 = var3.bind(var2)(var0);
+                                var1 = _closure3_slot1;
+                                var1 = var1.bind(var2)();
+                                throw var0;
+                            };
+                            var0 = var2.bind(var3)(var1, var0);
+                            return var0;
+                    }
+                };
+                var0 = var0.bind(var2)(var6, var5, var4);
                 return var0;
-            case 87:
-                var4 = _closure1_slot0;
-                var3 = _closure1_slot1;
-                var0 = 0;
-                var3 = var3[var0];
-                var0 = undefined;
-                var3 = var4.bind(var0)(var3);
-                var3 = var3.DEBUG_BUILD;
-                if (!var3) {
-                    _fun99856_ip = 226;
-                    continue _fun99856
-                }
-            case 120:
-                var3 = _closure1_slot0;
-                var4 = _closure1_slot1;
-                var1 = 1;
-                var1 = var4[var1];
-                var1 = var3.bind(var0)(var1);
-                var4 = var1.logger;
-                var3 = var4.warn;
-                var1 = global;
-                var6 = var1.JSON;
-                var5 = var6.stringify;
-                var9 = var5.bind(var6)(var2);
-                var6 = var1.JSON;
-                var5 = var6.stringify;
-                var11 = var5.bind(var6)(var7);
-                var1 = var1.HermesInternal;
-                var7 = var1.concat;
-                var14 = '[Tracing] Given sample rate is invalid. Sample rate must be a boolean or a number between 0 and 1. Got ';
-                var12 = ' of type ';
-                var10 = '.';
-                var13 = var9;
-                var1 = var14[var7](var13, var12, var11, var10, var9);
-                var1 = var3.bind(var4)(var1);
-            case 226:
-                return var0;
-            case 228:
-                var0 = global;
-                var1 = var0.Number;
-                var0 = undefined;
-                var0 = var1.bind(var0)(var2);
-                return var0;
+            case 79: // catch_target0
+                CatchBlockStart(arg_register = 0);
+                var3 = var3.bind(var2)(var0);
+                var1 = var1.bind(var2)();
+                throw var0;
         }
     };
-    var1.parseSampleRate = var0;
+    var1.handleCallbackErrors = var0;
     var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [12981, 12915]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [12920]);

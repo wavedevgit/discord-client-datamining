@@ -15,12 +15,12 @@ public final class R {
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class drawable {
-        public static int lock = 0x7f080570;
-        public static int lock_overlay = 0x7f080571;
-        public static int premium_tier0_gradient = 0x7f08072d;
-        public static int premium_tier0_gradient_circle = 0x7f08072e;
-        public static int premium_tier2_gradient = 0x7f08072f;
-        public static int premium_tier2_gradient_circle = 0x7f080730;
+        public static int lock = 0x7f080571;
+        public static int lock_overlay = 0x7f080572;
+        public static int premium_tier0_gradient = 0x7f08072e;
+        public static int premium_tier0_gradient_circle = 0x7f08072f;
+        public static int premium_tier2_gradient = 0x7f080730;
+        public static int premium_tier2_gradient_circle = 0x7f080731;
 
         private drawable() {
         }

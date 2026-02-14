@@ -502,4 +502,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getHeroColors = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 1298, 3201, 6921, 4627, 6923, 668, 669, 566, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 1298, 3203, 6923, 4629, 6925, 668, 669, 566, 2]);

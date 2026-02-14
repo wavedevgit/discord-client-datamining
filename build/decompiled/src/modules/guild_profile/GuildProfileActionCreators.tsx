@@ -571,4 +571,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.trackGuildProfileViewed = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 3218, 1686, 7440, 660, 807, 507, 7441, 3350, 796, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 3220, 1686, 7442, 660, 807, 507, 7443, 3352, 796, 2]);

@@ -310,4 +310,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.CollapsibleFloatingActionButton = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 4094, 1297, 3717, 4087, 4093, 4091, 7120, 671, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 4096, 1297, 3719, 4089, 4095, 4093, 7122, 671, 2]);

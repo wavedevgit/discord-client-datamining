@@ -221,4 +221,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useIsEligibleForPremiumGroupNitroTabMarketingMaterials = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1621, 3129, 3240, 1235, 2441, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1621, 3131, 3242, 1235, 2441, 2]);

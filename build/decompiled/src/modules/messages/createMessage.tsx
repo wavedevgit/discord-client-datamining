@@ -346,4 +346,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.createBotMessage = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [4276, 1628, 1621, 660, 44, 6619, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [4278, 1628, 1621, 660, 44, 6621, 2]);

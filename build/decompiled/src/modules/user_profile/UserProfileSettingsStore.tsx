@@ -449,7 +449,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
         }
     };
-    var1.USER_SETTINGS_ACCOUNT_INIT = var12;
+    var1.USER_PROFILE_SETTINGS_INIT = var12;
     var12 = function arg0() {
         var0 = arg0;
         var0 = var0.guildId;
@@ -459,9 +459,9 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = undefined;
         return var0;
     };
-    var1.USER_SETTINGS_ACCOUNT_SET_GUILD = var12;
-    var1.USER_SETTINGS_ACCOUNT_CLOSE = var11;
-    var1.USER_SETTINGS_ACCOUNT_RESET_AND_CLOSE_FORM = var3;
+    var1.USER_PROFILE_SETTINGS_SET_GUILD = var12;
+    var1.USER_PROFILE_SETTINGS_CLOSE = var11;
+    var1.USER_PROFILE_SETTINGS_RESET_AND_CLOSE_FORM = var3;
     var11 = function() {
         var0 = _closure1_slot8;
         var0 = var0.SUBMITTING;
@@ -471,7 +471,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = undefined;
         return var0;
     };
-    var1.USER_SETTINGS_ACCOUNT_SUBMIT = var11;
+    var1.USER_PROFILE_SETTINGS_SUBMIT = var11;
     var11 = function arg0() {
         _fun49807: for (var _fun49807_ip = 0;;) switch (_fun49807_ip) {
             case 0:
@@ -506,7 +506,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
         }
     };
-    var1.USER_SETTINGS_ACCOUNT_SUBMIT_SUCCESS = var11;
+    var1.USER_PROFILE_SETTINGS_SUBMIT_SUCCESS = var11;
     var11 = function arg0() {
         _fun49808: for (var _fun49808_ip = 0;;) switch (_fun49808_ip) {
             case 0:
@@ -548,7 +548,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
         }
     };
-    var1.USER_SETTINGS_ACCOUNT_SUBMIT_FAILURE = var11;
+    var1.USER_PROFILE_SETTINGS_SUBMIT_FAILURE = var11;
     var11 = function arg0() {
         _fun49809: for (var _fun49809_ip = 0;;) switch (_fun49809_ip) {
             case 0:
@@ -591,7 +591,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
         }
     };
-    var1.USER_SETTINGS_ACCOUNT_SET_PENDING_AVATAR = var11;
+    var1.USER_PROFILE_SETTINGS_SET_PENDING_AVATAR = var11;
     var11 = function arg0() {
         var0 = arg0;
         var4 = var0.globalName;
@@ -607,7 +607,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = undefined;
         return var0;
     };
-    var1.USER_SETTINGS_ACCOUNT_SET_PENDING_GLOBAL_NAME = var11;
+    var1.USER_PROFILE_SETTINGS_SET_PENDING_GLOBAL_NAME = var11;
     var11 = function arg0() {
         var0 = arg0;
         var2 = var0.guildId;
@@ -623,7 +623,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = undefined;
         return var0;
     };
-    var1.USER_SETTINGS_ACCOUNT_SET_PENDING_NICKNAME = var11;
+    var1.USER_PROFILE_SETTINGS_SET_PENDING_NICKNAME = var11;
     var11 = function arg0() {
         var0 = arg0;
         var4 = var0.legacyUsernameDisabled;
@@ -639,7 +639,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = undefined;
         return var0;
     };
-    var1.USER_SETTINGS_ACCOUNT_SET_PENDING_LEGACY_USERNAME_DISABLED = var11;
+    var1.USER_PROFILE_SETTINGS_SET_PENDING_LEGACY_USERNAME_DISABLED = var11;
     var11 = function arg0() {
         _fun49813: for (var _fun49813_ip = 0;;) switch (_fun49813_ip) {
             case 0:
@@ -774,7 +774,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
         }
     };
-    var1.USER_SETTINGS_ACCOUNT_SET_PENDING_COLLECTIBLES_ITEM = var11;
+    var1.USER_PROFILE_SETTINGS_SET_PENDING_COLLECTIBLES_ITEM = var11;
     var11 = function arg0() {
         _fun49814: for (var _fun49814_ip = 0;;) switch (_fun49814_ip) {
             case 0:
@@ -810,7 +810,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
         }
     };
-    var1.USER_SETTINGS_ACCOUNT_SET_PENDING_BANNER = var11;
+    var1.USER_PROFILE_SETTINGS_SET_PENDING_BANNER = var11;
     var11 = function arg0() {
         _fun49815: for (var _fun49815_ip = 0;;) switch (_fun49815_ip) {
             case 0:
@@ -846,7 +846,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
         }
     };
-    var1.USER_SETTINGS_ACCOUNT_SET_PENDING_BIO = var11;
+    var1.USER_PROFILE_SETTINGS_SET_PENDING_BIO = var11;
     var11 = function arg0() {
         _fun49816: for (var _fun49816_ip = 0;;) switch (_fun49816_ip) {
             case 0:
@@ -882,7 +882,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
         }
     };
-    var1.USER_SETTINGS_ACCOUNT_SET_PENDING_PRONOUNS = var11;
+    var1.USER_PROFILE_SETTINGS_SET_PENDING_PRONOUNS = var11;
     var11 = function arg0() {
         var0 = arg0;
         var4 = var0.color;
@@ -898,7 +898,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = undefined;
         return var0;
     };
-    var1.USER_SETTINGS_ACCOUNT_SET_PENDING_ACCENT_COLOR = var11;
+    var1.USER_PROFILE_SETTINGS_SET_PENDING_ACCENT_COLOR = var11;
     var11 = function arg0() {
         _fun49818: for (var _fun49818_ip = 0;;) switch (_fun49818_ip) {
             case 0:
@@ -934,7 +934,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
         }
     };
-    var1.USER_SETTINGS_ACCOUNT_SET_PENDING_THEME_COLORS = var11;
+    var1.USER_PROFILE_SETTINGS_SET_PENDING_THEME_COLORS = var11;
     var11 = function arg0() {
         var0 = arg0;
         var3 = var0.avatar;
@@ -948,7 +948,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = undefined;
         return var0;
     };
-    var1.USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_AVATAR = var11;
+    var1.USER_PROFILE_SETTINGS_SET_TRY_IT_OUT_AVATAR = var11;
     var11 = function arg0() {
         var0 = arg0;
         var3 = var0.avatarDecoration;
@@ -962,7 +962,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = undefined;
         return var0;
     };
-    var1.USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_AVATAR_DECORATION = var11;
+    var1.USER_PROFILE_SETTINGS_SET_TRY_IT_OUT_AVATAR_DECORATION = var11;
     var11 = function arg0() {
         var0 = arg0;
         var3 = var0.profileEffect;
@@ -976,7 +976,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = undefined;
         return var0;
     };
-    var1.USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_PROFILE_EFFECT = var11;
+    var1.USER_PROFILE_SETTINGS_SET_TRY_IT_OUT_PROFILE_EFFECT = var11;
     var11 = function arg0() {
         var0 = arg0;
         var3 = var0.banner;
@@ -990,7 +990,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = undefined;
         return var0;
     };
-    var1.USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_BANNER = var11;
+    var1.USER_PROFILE_SETTINGS_SET_TRY_IT_OUT_BANNER = var11;
     var11 = function arg0() {
         var0 = arg0;
         var3 = var0.themeColors;
@@ -1004,7 +1004,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = undefined;
         return var0;
     };
-    var1.USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_THEME_COLORS = var11;
+    var1.USER_PROFILE_SETTINGS_SET_TRY_IT_OUT_THEME_COLORS = var11;
     var11 = function arg0() {
         var0 = arg0;
         var3 = var0.displayNameStyles;
@@ -1018,7 +1018,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = undefined;
         return var0;
     };
-    var1.USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_DISPLAY_NAME_STYLES = var11;
+    var1.USER_PROFILE_SETTINGS_SET_TRY_IT_OUT_DISPLAY_NAME_STYLES = var11;
     var11 = function arg0() {
         var0 = arg0;
         var6 = var0.banner;
@@ -1041,7 +1041,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = undefined;
         return var0;
     };
-    var1.USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_PRESET = var11;
+    var1.USER_PROFILE_SETTINGS_SET_TRY_IT_OUT_PRESET = var11;
     var11 = function arg0() {
         var0 = arg0;
         var4 = var0.primaryGuildId;
@@ -1057,7 +1057,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = undefined;
         return var0;
     };
-    var1.USER_SETTINGS_ACCOUNT_SET_PENDING_PRIMARY_GUILD_ID = var11;
+    var1.USER_PROFILE_SETTINGS_SET_PENDING_PRIMARY_GUILD_ID = var11;
     var11 = function arg0() {
         _fun49827: for (var _fun49827_ip = 0;;) switch (_fun49827_ip) {
             case 0:
@@ -1093,14 +1093,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
         }
     };
-    var1.USER_SETTINGS_ACCOUNT_SET_PENDING_DISPLAY_NAME_STYLES = var11;
+    var1.USER_PROFILE_SETTINGS_SET_PENDING_DISPLAY_NAME_STYLES = var11;
     var11 = function() {
         var0 = {};
         _closure1_slot18 = var0;
         var0 = undefined;
         return var0;
     };
-    var1.USER_SETTINGS_ACCOUNT_CLEAR_ERRORS = var11;
+    var1.USER_PROFILE_SETTINGS_CLEAR_ERRORS = var11;
     var11 = function() {
         var0 = global;
         var3 = var0.Object;
@@ -1182,7 +1182,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = undefined;
         return var0;
     };
-    var1.USER_SETTINGS_ACCOUNT_RESET_PENDING_ACCOUNT_CHANGES = var11;
+    var1.USER_PROFILE_SETTINGS_RESET_PENDING_ACCOUNT_CHANGES = var11;
     var11 = function() {
         var0 = global;
         var3 = var0.Object;
@@ -1264,9 +1264,9 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = undefined;
         return var0;
     };
-    var1.USER_SETTINGS_ACCOUNT_RESET_PENDING_PROFILE_CHANGES = var11;
-    var1.USER_SETTINGS_ACCOUNT_RESET_PENDING_CHANGES = var10;
-    var1.USER_SETTINGS_ACCOUNT_RESET_TRY_IT_OUT_CHANGES = var9;
+    var1.USER_PROFILE_SETTINGS_RESET_PENDING_PROFILE_CHANGES = var11;
+    var1.USER_PROFILE_SETTINGS_RESET_PENDING_CHANGES = var10;
+    var1.USER_PROFILE_SETTINGS_RESET_TRY_IT_OUT_CHANGES = var9;
     var9 = function() {
         _fun49833: for (var _fun49833_ip = 0;;) switch (_fun49833_ip) {
             case 0:
@@ -1311,7 +1311,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
         }
     };
-    var1.USER_SETTINGS_ACCOUNT_RESET_PENDING_LEGACY_USERNAME_DISABLED = var9;
+    var1.USER_PROFILE_SETTINGS_RESET_PENDING_LEGACY_USERNAME_DISABLED = var9;
     var9 = function() {
         _fun49834: for (var _fun49834_ip = 0;;) switch (_fun49834_ip) {
             case 0:
@@ -1356,7 +1356,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
         }
     };
-    var1.USER_SETTINGS_ACCOUNT_RESET_PENDING_PRIMARY_GUILD_CHANGES = var9;
+    var1.USER_PROFILE_SETTINGS_RESET_PENDING_PRIMARY_GUILD_CHANGES = var9;
     var8 = function arg0() {
         _fun49835: for (var _fun49835_ip = 0;;) switch (_fun49835_ip) {
             case 0:

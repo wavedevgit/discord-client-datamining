@@ -91,18 +91,18 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = var0 == var2;
                 var5 = undefined;
                 if (var0) {
-                    _fun9812_ip = 204;
+                    _fun9812_ip = 208;
                     continue _fun9812
                 }
-            case 194:
+            case 198:
                 var0 = var2.getClient;
                 var5 = var0.bind(var2)();
-            case 204:
+            case 208:
                 if (var5) {
-                    _fun9812_ip = 239;
+                    _fun9812_ip = 243;
                     continue _fun9812
                 }
-            case 207:
+            case 211:
                 var4 = _closure1_slot0;
                 var7 = _closure1_slot1;
                 var0 = 0;
@@ -110,16 +110,16 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var4 = var4.bind(var6)(var0);
                 var0 = var4.getClient;
                 var5 = var0.bind(var4)();
-            case 239:
+            case 243:
                 if (!var5) {
-                    _fun9812_ip = 261;
+                    _fun9812_ip = 265;
                     continue _fun9812
                 }
-            case 242:
+            case 246:
                 var4 = var5.emit;
                 var0 = 'beforeSendFeedback';
                 var0 = var4.bind(var5)(var0, var1, var3);
-            case 261:
+            case 265:
                 var0 = var2.captureEvent;
                 var0 = var0.bind(var2)(var1, var3);
                 return var0;

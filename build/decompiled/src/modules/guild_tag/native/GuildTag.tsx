@@ -519,4 +519,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2.BaseGuildTagChiplet = var1;
             return var0;
     }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1621, 6715, 33, 1297, 671, 478, 1235, 3938, 4909, 566, 6893, 3282, 7439, 1307, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1621, 6717, 33, 1297, 671, 478, 1235, 3940, 4911, 566, 6895, 3284, 7441, 1307, 2]);

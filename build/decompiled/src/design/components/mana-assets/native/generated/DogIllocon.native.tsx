@@ -73,4 +73,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.DogIllocon = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 4709, 6179, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 4711, 6181, 2]);

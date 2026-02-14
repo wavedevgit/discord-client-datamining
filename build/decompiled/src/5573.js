@@ -10,7 +10,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = '__esModule';
     var0 = var4.bind(var5)(var2, var0, var1);
     var1 = {};
-    var6 = 'RNSVGFeOffset';
+    var6 = 'RNSVGFeGaussianBlur';
     var1.uiViewClassName = var6;
     var0 = {
         'x': true,
@@ -19,8 +19,9 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'height': true,
         'result': true,
         'in1': true,
-        'dx': true,
-        'dy': true
+        'stdDeviationX': true,
+        'stdDeviationY': true,
+        'edgeMode': true
     };
     var1.validAttributes = var0;
     var _closure1_slot0 = var1;

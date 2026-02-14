@@ -75,7 +75,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/premium/powerups/native/GuildPowerupsDeactivateAlert.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun103039: for (var _fun103039_ip = 0;;) switch (_fun103039_ip) {
+        _fun103080: for (var _fun103080_ip = 0;;) switch (_fun103080_ip) {
             case 0:
                 var0 = arg0;
                 var6 = var0.guildId;
@@ -175,10 +175,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = null;
                 var7 = var8 != var20;
                 if (!var7) {
-                    _fun103039_ip = 499;
-                    continue _fun103039
+                    _fun103080_ip = 503;
+                    continue _fun103080
                 }
-            case 434:
+            case 438:
                 var14 = _closure1_slot4;
                 var11 = _closure1_slot0;
                 var21 = _closure1_slot2;
@@ -195,7 +195,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10.style = var21;
                 var10.children = var20;
                 var7 = var14.bind(var3)(var11, var10);
-            case 499:
+            case 503:
                 var14 = new Array(3);
                 var14[0] = var7;
                 var11 = _closure1_slot4;
@@ -277,10 +277,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7[0] = var10;
                 var8 = var8 != var12;
                 if (!var8) {
-                    _fun103039_ip = 881;
-                    continue _fun103039
+                    _fun103080_ip = 885;
+                    continue _fun103080
                 }
-            case 819:
+            case 823:
                 var11 = _closure1_slot4;
                 var10 = _closure1_slot0;
                 var9 = _closure1_slot2;
@@ -296,7 +296,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9.style = var13;
                 var9.children = var12;
                 var8 = var11.bind(var3)(var10, var9);
-            case 881:
+            case 885:
                 var7[1] = var8;
                 var4.children = var7;
                 var4 = var6.bind(var3)(var5, var4);
@@ -307,4 +307,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 33, 1297, 671, 13424, 13425, 13426, 4022, 5451, 1235, 1895, 4022, 3938, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 33, 1297, 671, 13429, 13430, 13431, 4024, 5453, 1235, 1895, 4024, 3940, 2]);

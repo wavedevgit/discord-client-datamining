@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var6;
     var3 = function arg0, arg1() {
-        _fun67542: for (var _fun67542_ip = 0;;) switch (_fun67542_ip) {
+        _fun67337: for (var _fun67337_ip = 0;;) switch (_fun67337_ip) {
             case 0:
                 var1 = arg1;
                 var6 = _closure1_slot0;
@@ -27,14 +27,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var4.bind(var5)(var2);
                 var2 = var1.twoWayLink;
                 if (!var2) {
-                    _fun67542_ip = 123;
-                    continue _fun67542
+                    _fun67337_ip = 123;
+                    continue _fun67337
                 }
             case 72:
                 var2 = var1.revoked;
                 if (var2) {
-                    _fun67542_ip = 123;
-                    continue _fun67542
+                    _fun67337_ip = 123;
+                    continue _fun67337
                 }
             case 81:
                 var4 = _closure1_slot0;
@@ -52,22 +52,22 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = _closure1_slot5;
                 var2 = var2.XBOX;
                 if (!(var2 !== var4)) {
-                    _fun67542_ip = 229;
-                    continue _fun67542
+                    _fun67337_ip = 229;
+                    continue _fun67337
                 }
             case 142:
                 var2 = _closure1_slot5;
                 var2 = var2.PLAYSTATION;
                 if (!(var2 !== var4)) {
-                    _fun67542_ip = 172;
-                    continue _fun67542
+                    _fun67337_ip = 172;
+                    continue _fun67337
                 }
             case 156:
                 var2 = _closure1_slot5;
                 var2 = var2.PLAYSTATION_STAGING;
                 if (!(var2 !== var4)) {
-                    _fun67542_ip = 172;
-                    continue _fun67542
+                    _fun67337_ip = 172;
+                    continue _fun67337
                 }
             case 170:
                 return var3;
@@ -152,4 +152,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useOnConnectToConsole = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 660, 3216, 1358, 5377, 5915, 8355, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 660, 3218, 1358, 5379, 5917, 8325, 2]);

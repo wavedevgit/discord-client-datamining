@@ -305,4 +305,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2.showDoubleTapEmojiUpdatedToast = var1;
             return var0;
     }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1298, 1624, 33, 1297, 671, 478, 566, 1417, 5828, 3938, 1235, 3153, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1298, 1624, 33, 1297, 671, 478, 566, 1417, 5830, 3940, 1235, 3155, 2]);

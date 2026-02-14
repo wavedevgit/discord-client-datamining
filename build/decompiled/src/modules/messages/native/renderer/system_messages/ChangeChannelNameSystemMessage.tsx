@@ -189,4 +189,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.createChangeChannelNameSystemMessage = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1372, 6745, 3978, 1235, 6755, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1372, 6747, 3980, 1235, 6757, 2]);

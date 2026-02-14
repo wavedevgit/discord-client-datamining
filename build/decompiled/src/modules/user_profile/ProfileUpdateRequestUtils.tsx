@@ -317,4 +317,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getPrimaryGuildChangesForUpdateRequest = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5783, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5785, 2]);

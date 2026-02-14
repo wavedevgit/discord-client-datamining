@@ -81,7 +81,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/main_tabs_v2/native/tabs/settings/Settings.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function() {
-        _fun105009: for (var _fun105009_ip = 0;;) switch (_fun105009_ip) {
+        _fun105064: for (var _fun105064_ip = 0;;) switch (_fun105064_ip) {
             case 0:
                 var5 = _closure1_slot0;
                 var9 = _closure1_slot1;
@@ -107,18 +107,18 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1[1] = var7;
                 var1[2] = var10;
                 var0 = function() { // Environment: var0
-                    _fun105010: for (var _fun105010_ip = 0;;) switch (_fun105010_ip) {
+                    _fun105065: for (var _fun105065_ip = 0;;) switch (_fun105065_ip) {
                         case 0:
                             var0 = _closure2_slot1;
                             var1 = _closure2_slot2;
                             if (var0) {
-                                _fun105010_ip = 22;
-                                continue _fun105010
+                                _fun105065_ip = 22;
+                                continue _fun105065
                             }
                         case 14:
                             var0 = var1.containerOuter;
-                            _fun105010_ip = 54;
-                            continue _fun105010;
+                            _fun105065_ip = 54;
+                            continue _fun105065;
                         case 22:
                             var2 = var1.containerOuterTablet;
                             var1 = new Array(2);
@@ -143,13 +143,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var4.View;
                 var4 = {};
                 if (var7) {
-                    _fun105009_ip = 153;
-                    continue _fun105009
+                    _fun105064_ip = 153;
+                    continue _fun105064
                 }
             case 146:
                 var7 = var8.container;
-                _fun105009_ip = 159;
-                continue _fun105009;
+                _fun105064_ip = 159;
+                continue _fun105064;
             case 153:
                 var7 = var8.containerTablet;
             case 159:
@@ -171,4 +171,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 1568, 7746, 3717, 13660, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 1568, 7714, 3719, 13665, 2]);

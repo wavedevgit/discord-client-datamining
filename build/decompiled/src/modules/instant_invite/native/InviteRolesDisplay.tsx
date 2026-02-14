@@ -63,7 +63,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/instant_invite/native/InviteRolesDisplay.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun73538: for (var _fun73538_ip = 0;;) switch (_fun73538_ip) {
+        _fun73338: for (var _fun73338_ip = 0;;) switch (_fun73338_ip) {
             case 0:
                 var0 = arg0;
                 var7 = var0.roleIds;
@@ -112,8 +112,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = 0;
                 var0 = null;
                 if (!(var1 !== var2)) {
-                    _fun73538_ip = 306;
-                    continue _fun73538
+                    _fun73338_ip = 306;
+                    continue _fun73338
                 }
             case 117:
                 var3 = _closure1_slot6;
@@ -181,4 +181,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1679, 33, 1297, 566, 3938, 1235, 9215, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1679, 33, 1297, 566, 3940, 1235, 9187, 2]);

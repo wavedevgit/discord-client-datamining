@@ -547,4 +547,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.useTieredTenureBadgeData = var3;
     var2.useTieredTenureBadgeDataForUser = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [4664, 1621, 3122, 1623, 566, 7383, 1640, 3050, 7384, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [4666, 1621, 3124, 1623, 566, 7385, 1640, 3052, 7386, 2]);

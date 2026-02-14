@@ -222,4 +222,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.createUserJoinSystemMessage = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1372, 1410, 660, 6753, 6766, 6773, 6776, 6779, 6754, 1235, 6755, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1372, 1410, 660, 6755, 6768, 6775, 6778, 6781, 6756, 1235, 6757, 2]);

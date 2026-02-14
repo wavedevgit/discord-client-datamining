@@ -542,4 +542,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.EditCollectiblesListItemProduct = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1621, 3287, 33, 1297, 671, 4909, 3283, 3284, 4092, 5804, 3938, 1235, 5785, 4603, 3282, 5805, 5806, 566, 3114, 5638, 4605, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1621, 3289, 33, 1297, 671, 4911, 3285, 3286, 4094, 5806, 3940, 1235, 5787, 4605, 3284, 5807, 5808, 566, 3116, 5640, 4607, 2]);

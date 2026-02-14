@@ -27,7 +27,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/applications/isSocialLayerApplication.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun82909: for (var _fun82909_ip = 0;;) switch (_fun82909_ip) {
+        _fun82915: for (var _fun82915_ip = 0;;) switch (_fun82915_ip) {
             case 0:
                 var4 = arg0;
                 var2 = _closure1_slot0;
@@ -41,8 +41,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.SOCIAL_LAYER_INTEGRATION_LIMITED;
                 var0 = var2.bind(var3)(var4, var0);
                 if (var0) {
-                    _fun82909_ip = 92;
-                    continue _fun82909
+                    _fun82915_ip = 92;
+                    continue _fun82915
                 }
             case 53:
                 var3 = _closure1_slot0;
@@ -59,4 +59,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 5405, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 5407, 2]);

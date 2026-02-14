@@ -22,7 +22,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/premium/powerups/hooks/useGuildPowerupRollbackEnabled.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function arg0, arg1, arg2() {
-        _fun102839: for (var _fun102839_ip = 0;;) switch (_fun102839_ip) {
+        _fun102880: for (var _fun102880_ip = 0;;) switch (_fun102880_ip) {
             case 0:
                 var4 = _closure1_slot0;
                 var5 = _closure1_slot1;
@@ -42,8 +42,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.VANITY_URL_POWERUP_SKU_ID;
                 var0 = var2 === var0;
                 if (!var0) {
-                    _fun102839_ip = 79;
-                    continue _fun102839
+                    _fun102880_ip = 79;
+                    continue _fun102880
                 }
             case 76:
                 var0 = var1;
@@ -53,7 +53,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var3;
     var1 = function arg0, arg1, arg2() {
-        _fun102840: for (var _fun102840_ip = 0;;) switch (_fun102840_ip) {
+        _fun102881: for (var _fun102881_ip = 0;;) switch (_fun102881_ip) {
             case 0:
                 var0 = arg1;
                 var2 = var0.skuId;
@@ -66,8 +66,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.VANITY_URL_POWERUP_SKU_ID;
                 var0 = var2 === var0;
                 if (!var0) {
-                    _fun102840_ip = 84;
-                    continue _fun102840
+                    _fun102881_ip = 84;
+                    continue _fun102881
                 }
             case 47:
                 var2 = _closure1_slot0;
@@ -85,4 +85,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.isGuildPowerupRollbackEnabled = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [13384, 6716, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [13389, 6718, 2]);

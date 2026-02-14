@@ -288,4 +288,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useCustomStatusActivity = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 4744, 660, 3109, 1348, 566, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 4746, 660, 3111, 1348, 566, 2]);

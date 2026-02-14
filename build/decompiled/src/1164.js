@@ -883,24 +883,24 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var4 = var5 == var4;
                 var3 = undefined;
                 if (var4) {
-                    _fun12692_ip = 226;
+                    _fun12692_ip = 230;
                     continue _fun12692
                 }
-            case 216:
+            case 220:
                 var4 = _closure1_slot3;
                 var3 = var4.isAvailable;
-            case 226:
+            case 230:
                 if (!var3) {
-                    _fun12692_ip = 255;
+                    _fun12692_ip = 259;
                     continue _fun12692
                 }
-            case 229:
+            case 233:
                 var5 = _closure1_slot3;
                 var4 = var5.addEventListener;
                 var3 = var1.backgroundEventListener;
                 var0 = 'change';
                 var0 = var4.bind(var5)(var0, var3);
-            case 255:
+            case 259:
                 var0 = {};
                 var3 = 'StallTracking';
                 var0.name = var3;

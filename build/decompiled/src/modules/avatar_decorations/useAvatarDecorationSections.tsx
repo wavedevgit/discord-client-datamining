@@ -274,4 +274,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.NONE_ITEM = var3;
     var2.SHOP_ITEM = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 4604, 4619, 632, 4605, 1235, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 4606, 4621, 632, 4607, 1235, 2]);

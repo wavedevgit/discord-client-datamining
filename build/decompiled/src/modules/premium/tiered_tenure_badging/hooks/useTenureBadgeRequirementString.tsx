@@ -164,4 +164,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.useTenureBadgeRequirementString = var3;
     var2.getTenureBadgeRequirementString = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1623, 7382, 7384, 1235, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1623, 7384, 7386, 1235, 2]);

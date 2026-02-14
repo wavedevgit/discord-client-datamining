@@ -5,142 +5,273 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var0;
     var0 = dependencyMap;
     var _closure1_slot1 = var0;
-    var0 = function arg0, arg1, arg2, arg3() {
-        _fun100295: for (var _fun100295_ip = 0;;) switch (_fun100295_ip) {
+    var0 = function arg0() {
+        _fun100281: for (var _fun100281_ip = 0;;) switch (_fun100281_ip) {
             case 0:
-                var2 = arg1;
-                var4 = arg2;
-                var0 = arg3;
-                var3 = {};
-                var1 = global;
-                var1 = var1.Date;
-                var5 = var1.prototype;
-                var5 = Object.create(var5, {
-                    constructor: {
-                        value: var1
-                    }
-                });
-                var9 = var5;
-                var1 = new var9[var1](var8);
-                var5 = var1 instanceof Object ? var1 : var5;
-                var1 = var5.toISOString;
-                var1 = var1.bind(var5)();
-                var3.sent_at = var1;
-                var1 = var4;
-                if (!var1) {
-                    _fun100295_ip = 66;
-                    continue _fun100295
+                var1 = arg0;
+                var2 = !var1;
+                var0 = !var2;
+                if (var2) {
+                    _fun100281_ip = 24;
+                    continue _fun100281
                 }
-            case 60:
-                var1 = var4.sdk;
-            case 66:
-                if (!var1) {
-                    _fun100295_ip = 109;
-                    continue _fun100295
-                }
-            case 69:
-                var1 = {};
-                var5 = var4.sdk;
-                var5 = var5.name;
-                var1.name = var5;
-                var4 = var4.sdk;
-                var4 = var4.version;
-                var1.version = var4;
-                var3.sdk = var1;
-            case 109:
+            case 12:
+                var3 = var1._profiler;
+                var2 = undefined;
+                var0 = var2 !== var3;
+            case 24:
                 if (!var0) {
-                    _fun100295_ip = 115;
-                    continue _fun100295
+                    _fun100281_ip = 49;
+                    continue _fun100281
                 }
-            case 112:
-                var0 = var2;
-            case 115:
+            case 27:
+                var2 = var1._profiler;
+                var2 = var2.start;
+                var3 = 'function';
+                var2 = typeof var2;
+                var0 = var3 === var2;
+            case 49:
                 if (!var0) {
-                    _fun100295_ip = 159;
-                    continue _fun100295
+                    _fun100281_ip = 75;
+                    continue _fun100281
                 }
-            case 118:
-                var4 = _closure1_slot0;
-                var1 = _closure1_slot1;
-                var0 = 0;
-                var1 = var1[var0];
-                var0 = undefined;
-                var1 = var4.bind(var0)(var1);
-                var0 = var1.dsnToString;
-                var0 = var0.bind(var1)(var2);
-                var3.dsn = var0;
-            case 159:
-                var2 = _closure1_slot0;
-                var5 = _closure1_slot1;
-                var0 = 1;
-                var0 = var5[var0];
-                var1 = undefined;
-                var6 = var2.bind(var1)(var0);
-                var4 = var6.serializeMetricBuckets;
-                var0 = arg0;
-                var0 = var4.bind(var6)(var0);
-                var6 = {};
-                var4 = 'statsd';
-                var6.type = var4;
-                var4 = var0.length;
-                var6.length = var4;
-                var4 = new Array(2);
-                var4[0] = var6;
-                var4[1] = var0;
-                var0 = 0;
-                var0 = var5[var0];
-                var2 = var2.bind(var1)(var0);
-                var1 = var2.createEnvelope;
-                var0 = new Array(1);
-                var0[0] = var4;
-                var0 = var1.bind(var2)(var3, var0);
+            case 52:
+                var1 = var1._profiler;
+                var1 = var1.stop;
+                var2 = 'function';
+                var1 = typeof var1;
+                var0 = var2 === var1;
+            case 75:
                 return var0;
         }
     };
     var _closure1_slot2 = var0;
-    var3 = global;
-    var6 = var3.Object;
-    var5 = var6.defineProperty;
-    var4 = {};
-    var3 = true;
-    var4.value = var3;
-    var3 = '__esModule';
-    var3 = var5.bind(var6)(var1, var3, var4);
-    var2 = function arg0, arg1() {
-        var3 = arg0;
-        var6 = arg1;
-        var4 = _closure1_slot0;
-        var2 = _closure1_slot1;
-        var0 = 0;
-        var2 = var2[var0];
-        var0 = undefined;
-        var2 = var4.bind(var0)(var2);
-        var5 = var2.logger;
-        var4 = var5.log;
-        var8 = var6.length;
-        var2 = global;
-        var2 = var2.HermesInternal;
-        var7 = var2.concat;
-        var2 = 'Flushing aggregated metrics, number of metrics: ';
-        var2 = var7.bind(var2)(var8);
-        var2 = var4.bind(var5)(var2);
-        var5 = _closure1_slot2;
-        var1 = var3.getDsn;
-        var11 = var1.bind(var3)();
-        var1 = var3.getSdkMetadata;
-        var10 = var1.bind(var3)();
-        var1 = var3.getOptions;
-        var1 = var1.bind(var3)();
-        var9 = var1.tunnel;
-        var13 = undefined;
-        var12 = var6;
-        var2 = var13[var5](var12, var11, var10, var9, var8);
-        var1 = var3.sendEnvelope;
-        var1 = var1.bind(var3)(var2);
-        return var0;
+    var0 = global;
+    var5 = var0.Object;
+    var4 = var5.defineProperty;
+    var3 = {};
+    var0 = true;
+    var3.value = var0;
+    var0 = '__esModule';
+    var0 = var4.bind(var5)(var1, var0, var3);
+    var0 = {};
+    var3 = function() {
+        _fun100282: for (var _fun100282_ip = 0;;) switch (_fun100282_ip) {
+            case 0:
+                var3 = _closure1_slot0;
+                var1 = _closure1_slot1;
+                var0 = 0;
+                var1 = var1[var0];
+                var0 = undefined;
+                var3 = var3.bind(var0)(var1);
+                var1 = var3.getClient;
+                var4 = var1.bind(var3)();
+                if (var4) {
+                    _fun100282_ip = 116;
+                    continue _fun100282
+                }
+            case 37:
+                var3 = _closure1_slot0;
+                var5 = _closure1_slot1;
+                var1 = 1;
+                var1 = var5[var1];
+                var1 = var3.bind(var0)(var1);
+                var1 = var1.DEBUG_BUILD;
+                if (!var1) {
+                    _fun100282_ip = 312;
+                    continue _fun100282
+                }
+            case 69:
+                var3 = _closure1_slot0;
+                var5 = _closure1_slot1;
+                var1 = 2;
+                var1 = var5[var1];
+                var1 = var3.bind(var0)(var1);
+                var5 = var1.logger;
+                var3 = var5.warn;
+                var1 = 'No Sentry client available, profiling is not started';
+                var1 = var3.bind(var5)(var1);
+                _fun100282_ip = 312;
+                continue _fun100282;
+            case 116:
+                var3 = var4.getIntegrationByName;
+                var1 = 'ProfilingIntegration';
+                var1 = var3.bind(var4)(var1);
+                if (var1) {
+                    _fun100282_ip = 212;
+                    continue _fun100282
+                }
+            case 136:
+                var4 = _closure1_slot0;
+                var5 = _closure1_slot1;
+                var3 = 1;
+                var3 = var5[var3];
+                var3 = var4.bind(var0)(var3);
+                var3 = var3.DEBUG_BUILD;
+                if (!var3) {
+                    _fun100282_ip = 312;
+                    continue _fun100282
+                }
+            case 168:
+                var4 = _closure1_slot0;
+                var5 = _closure1_slot1;
+                var3 = 2;
+                var3 = var5[var3];
+                var3 = var4.bind(var0)(var3);
+                var5 = var3.logger;
+                var4 = var5.warn;
+                var3 = 'ProfilingIntegration is not available';
+                var3 = var4.bind(var5)(var3);
+                _fun100282_ip = 312;
+                continue _fun100282;
+            case 212:
+                var3 = _closure1_slot2;
+                var3 = var3.bind(var0)(var1);
+                if (var3) {
+                    _fun100282_ip = 297;
+                    continue _fun100282
+                }
+            case 224:
+                var4 = _closure1_slot0;
+                var5 = _closure1_slot1;
+                var3 = 1;
+                var3 = var5[var3];
+                var3 = var4.bind(var0)(var3);
+                var3 = var3.DEBUG_BUILD;
+                if (!var3) {
+                    _fun100282_ip = 312;
+                    continue _fun100282
+                }
+            case 253:
+                var3 = _closure1_slot0;
+                var4 = _closure1_slot1;
+                var2 = 2;
+                var2 = var4[var2];
+                var2 = var3.bind(var0)(var2);
+                var4 = var2.logger;
+                var3 = var4.warn;
+                var2 = 'Profiler is not available on profiling integration.';
+                var2 = var3.bind(var4)(var2);
+                _fun100282_ip = 312;
+                continue _fun100282;
+            case 297:
+                var2 = var1._profiler;
+                var1 = var2.start;
+                var1 = var1.bind(var2)();
+            case 312:
+                return var0;
+        }
     };
-    var1.captureAggregateMetrics = var2;
-    var1.createMetricEnvelope = var0;
+    var0.startProfiler = var3;
+    var2 = function() {
+        _fun100283: for (var _fun100283_ip = 0;;) switch (_fun100283_ip) {
+            case 0:
+                var3 = _closure1_slot0;
+                var1 = _closure1_slot1;
+                var0 = 0;
+                var1 = var1[var0];
+                var0 = undefined;
+                var3 = var3.bind(var0)(var1);
+                var1 = var3.getClient;
+                var4 = var1.bind(var3)();
+                if (var4) {
+                    _fun100283_ip = 116;
+                    continue _fun100283
+                }
+            case 37:
+                var3 = _closure1_slot0;
+                var5 = _closure1_slot1;
+                var1 = 1;
+                var1 = var5[var1];
+                var1 = var3.bind(var0)(var1);
+                var1 = var1.DEBUG_BUILD;
+                if (!var1) {
+                    _fun100283_ip = 313;
+                    continue _fun100283
+                }
+            case 69:
+                var3 = _closure1_slot0;
+                var5 = _closure1_slot1;
+                var1 = 2;
+                var1 = var5[var1];
+                var1 = var3.bind(var0)(var1);
+                var5 = var1.logger;
+                var3 = var5.warn;
+                var1 = 'No Sentry client available, profiling is not started';
+                var1 = var3.bind(var5)(var1);
+                _fun100283_ip = 313;
+                continue _fun100283;
+            case 116:
+                var3 = var4.getIntegrationByName;
+                var1 = 'ProfilingIntegration';
+                var1 = var3.bind(var4)(var1);
+                if (var1) {
+                    _fun100283_ip = 212;
+                    continue _fun100283
+                }
+            case 136:
+                var4 = _closure1_slot0;
+                var5 = _closure1_slot1;
+                var3 = 1;
+                var3 = var5[var3];
+                var3 = var4.bind(var0)(var3);
+                var3 = var3.DEBUG_BUILD;
+                if (!var3) {
+                    _fun100283_ip = 313;
+                    continue _fun100283
+                }
+            case 168:
+                var4 = _closure1_slot0;
+                var5 = _closure1_slot1;
+                var3 = 2;
+                var3 = var5[var3];
+                var3 = var4.bind(var0)(var3);
+                var5 = var3.logger;
+                var4 = var5.warn;
+                var3 = 'ProfilingIntegration is not available';
+                var3 = var4.bind(var5)(var3);
+                _fun100283_ip = 313;
+                continue _fun100283;
+            case 212:
+                var3 = _closure1_slot2;
+                var3 = var3.bind(var0)(var1);
+                if (var3) {
+                    _fun100283_ip = 297;
+                    continue _fun100283
+                }
+            case 224:
+                var4 = _closure1_slot0;
+                var5 = _closure1_slot1;
+                var3 = 1;
+                var3 = var5[var3];
+                var3 = var4.bind(var0)(var3);
+                var3 = var3.DEBUG_BUILD;
+                if (!var3) {
+                    _fun100283_ip = 313;
+                    continue _fun100283
+                }
+            case 253:
+                var3 = _closure1_slot0;
+                var4 = _closure1_slot1;
+                var2 = 2;
+                var2 = var4[var2];
+                var2 = var3.bind(var0)(var2);
+                var4 = var2.logger;
+                var3 = var4.warn;
+                var2 = 'Profiler is not available on profiling integration.';
+                var2 = var3.bind(var4)(var2);
+                _fun100283_ip = 313;
+                continue _fun100283;
+            case 297:
+                var2 = var1._profiler;
+                var1 = var2.stop;
+                var1 = var1.bind(var2)();
+            case 313:
+                return var0;
+        }
+    };
+    var0.stopProfiler = var2;
+    var1.profiler = var0;
     var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [12915, 13036]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [12985, 12986, 12920]);

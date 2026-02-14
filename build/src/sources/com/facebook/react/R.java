@@ -26,11 +26,11 @@ public final class R {
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class drawable {
-        public static int ic_resume = 0x7f0802ac;
-        public static int paused_in_debugger_background = 0x7f0806e2;
-        public static int paused_in_debugger_dialog_background = 0x7f0806e3;
-        public static int redbox_top_border_background = 0x7f080731;
-        public static int ripple_effect = 0x7f080732;
+        public static int ic_resume = 0x7f0802ad;
+        public static int paused_in_debugger_background = 0x7f0806e3;
+        public static int paused_in_debugger_dialog_background = 0x7f0806e4;
+        public static int redbox_top_border_background = 0x7f080732;
+        public static int ripple_effect = 0x7f080733;
 
         private drawable() {
         }

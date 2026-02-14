@@ -9,7 +9,7 @@ import kotlinx.coroutines.CompletableDeferred;
 import kotlinx.coroutines.CoroutineScope;
 /* JADX INFO: Access modifiers changed from: package-private */
 @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n"}, d2 = {"<anonymous>", "Lcom/discord/billing/BillingManager$ClientReadyState;", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {2, 1, 0}, xi = 48)
-@kotlin.coroutines.jvm.internal.e(c = "com.discord.billing.BillingManager$suspendUntilReady$3", f = "BillingManager.kt", l = {267}, m = "invokeSuspend")
+@kotlin.coroutines.jvm.internal.e(c = "com.discord.billing.BillingManager$suspendUntilReady$3", f = "BillingManager.kt", l = {272}, m = "invokeSuspend")
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 public final class BillingManager$suspendUntilReady$3 extends kotlin.coroutines.jvm.internal.k implements Function2<CoroutineScope, Continuation<? super BillingManager.ClientReadyState>, Object> {
     final /* synthetic */ CompletableDeferred $deferred;

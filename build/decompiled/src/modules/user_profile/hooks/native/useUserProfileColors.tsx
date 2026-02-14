@@ -21,7 +21,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = undefined;
     var3 = var6.bind(var0)(var3);
     var _closure1_slot3 = var3;
-    var3 = 8;
+    var3 = 1;
+    var3 = var5[var3];
+    var3 = var4.bind(var0)(var3);
+    var3 = var3.ThemeTypes;
+    var _closure1_slot4 = var3;
+    var3 = 9;
     var3 = var5[var3];
     var5 = var4.bind(var0)(var3);
     var4 = var5.fileFinishedImporting;
@@ -31,26 +36,26 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         _fun57828: for (var _fun57828_ip = 0;;) switch (_fun57828_ip) {
             case 0:
                 var0 = arg0;
-                var3 = var0.theme;
-                var5 = var0.primaryColor;
+                var7 = var0.theme;
+                var6 = var0.primaryColor;
                 var14 = var0.secondaryColor;
-                var9 = _closure1_slot1;
-                var11 = _closure1_slot2;
-                var0 = 1;
-                var0 = var11[var0];
-                var8 = undefined;
-                var0 = var9.bind(var8)(var0);
-                var7 = var0.bind(var8)();
-                var6 = _closure1_slot0;
+                var5 = _closure1_slot1;
+                var9 = _closure1_slot2;
                 var0 = 2;
-                var0 = var11[var0];
-                var1 = var6.bind(var8)(var0);
-                var0 = var1.useProfileThemeValues;
-                var1 = var0.bind(var1)(var3);
+                var0 = var9[var0];
+                var8 = undefined;
+                var0 = var5.bind(var8)(var0);
+                var16 = var0.bind(var8)();
+                var10 = _closure1_slot0;
                 var0 = 3;
-                var0 = var11[var0];
-                var10 = var6.bind(var8)(var0);
-                var4 = var10.useStateFromStores;
+                var0 = var9[var0];
+                var1 = var10.bind(var8)(var0);
+                var0 = var1.useProfileThemeValues;
+                var1 = var0.bind(var1)(var7);
+                var0 = 4;
+                var0 = var9[var0];
+                var11 = var10.bind(var8)(var0);
+                var4 = var11.useStateFromStores;
                 var0 = _closure1_slot3;
                 var3 = new Array(1);
                 var3[0] = var0;
@@ -59,98 +64,119 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = var0.syncProfileThemeWithUserTheme;
                     return var0;
                 };
-                var10 = var4.bind(var10)(var3, var0);
+                var11 = var4.bind(var11)(var3, var0);
                 var0 = {};
-                var4 = 4;
-                var3 = var11[var4];
-                var15 = var6.bind(var8)(var3);
+                var4 = 5;
+                var3 = var9[var4];
+                var15 = var10.bind(var8)(var3);
                 var13 = var15.useToken;
-                var3 = 5;
-                var12 = var11[var3];
-                var12 = var9.bind(var8)(var12);
+                var3 = 6;
+                var12 = var9[var3];
+                var12 = var5.bind(var8)(var12);
                 var12 = var12.colors;
                 var12 = var12.BACKGROUND_BASE_LOWER;
-                var12 = var13.bind(var15)(var12, var7);
+                var12 = var13.bind(var15)(var12, var16);
                 var0.gradientFallbackBackground = var12;
-                var12 = var11[var4];
-                var15 = var6.bind(var8)(var12);
+                var12 = var9[var4];
+                var15 = var10.bind(var8)(var12);
                 var13 = var15.useToken;
-                var12 = var11[var3];
-                var12 = var9.bind(var8)(var12);
+                var12 = var9[var3];
+                var12 = var5.bind(var8)(var12);
                 var12 = var12.colors;
                 var12 = var12.BACKGROUND_BASE_LOWER;
-                var12 = var13.bind(var15)(var12, var7);
+                var12 = var13.bind(var15)(var12, var16);
                 var0.gradientSecondaryBackground = var12;
-                var12 = var11[var4];
-                var15 = var6.bind(var8)(var12);
+                var12 = var9[var4];
+                var15 = var10.bind(var8)(var12);
                 var13 = var15.useToken;
-                var12 = var11[var3];
-                var12 = var9.bind(var8)(var12);
+                var12 = var9[var3];
+                var12 = var5.bind(var8)(var12);
                 var12 = var12.colors;
                 var12 = var12.BACKGROUND_SURFACE_HIGH;
-                var12 = var13.bind(var15)(var12, var7);
+                var12 = var13.bind(var15)(var12, var16);
                 var0.containerBackground = var12;
-                var12 = var11[var4];
-                var15 = var6.bind(var8)(var12);
+                var12 = var9[var4];
+                var15 = var10.bind(var8)(var12);
                 var13 = var15.useToken;
-                var12 = var11[var3];
-                var12 = var9.bind(var8)(var12);
+                var12 = var9[var3];
+                var12 = var5.bind(var8)(var12);
                 var12 = var12.colors;
                 var12 = var12.BACKGROUND_BASE_LOWER;
-                var12 = var13.bind(var15)(var12, var7);
+                var12 = var13.bind(var15)(var12, var16);
                 var0.avatarBackground = var12;
-                var4 = var11[var4];
-                var6 = var6.bind(var8)(var4);
-                var4 = var6.useToken;
-                var3 = var11[var3];
-                var3 = var9.bind(var8)(var3);
-                var3 = var3.colors;
-                var3 = var3.BACKGROUND_SURFACE_HIGH;
-                var3 = var4.bind(var6)(var3, var7);
-                var0.statusBackground = var3;
+                var12 = var9[var4];
+                var15 = var10.bind(var8)(var12);
+                var13 = var15.useToken;
+                var12 = var9[var3];
+                var12 = var5.bind(var8)(var12);
+                var12 = var12.colors;
+                var12 = var12.BACKGROUND_SURFACE_HIGH;
+                var12 = var13.bind(var15)(var12, var16);
+                var0.statusBackground = var12;
+                var4 = var9[var4];
+                var12 = var10.bind(var8)(var4);
+                var10 = var12.useToken;
+                var4 = var9[var3];
+                var4 = var5.bind(var8)(var4);
+                var4 = var4.colors;
+                var4 = var4.BACKGROUND_MOD_NORMAL;
+                var4 = var10.bind(var12)(var4, var7);
+                var3 = var9[var3];
+                var3 = var5.bind(var8)(var3);
+                var3 = var3.unsafe_rawColors;
+                var3 = var3.OPACITY_WHITE_24;
+                var5 = _closure1_slot4;
+                var5 = var5.LIGHT;
+                if (!(var7 === var5)) {
+                    _fun57828_ip = 435;
+                    continue _fun57828
+                }
+            case 432:
+                var4 = var3;
+            case 435:
                 var3 = null;
-                if (!(var3 != var5)) {
-                    _fun57828_ip = 602;
+                if (!(var3 != var6)) {
+                    _fun57828_ip = 680;
                     continue _fun57828
                 }
-            case 366:
+            case 444:
                 if (!(var3 != var14)) {
-                    _fun57828_ip = 602;
+                    _fun57828_ip = 680;
                     continue _fun57828
                 }
-            case 373:
+            case 451:
                 if (!(var3 != var1)) {
-                    _fun57828_ip = 602;
+                    _fun57828_ip = 680;
                     continue _fun57828
                 }
-            case 380:
+            case 458:
                 var7 = var1.sectionBox;
                 var13 = var1.overlay;
-                var6 = var1.overlaySyncedWithUserTheme;
+                var10 = var1.overlaySyncedWithUserTheme;
                 var3 = _closure1_slot0;
                 var1 = _closure1_slot2;
-                var9 = 6;
+                var9 = 7;
                 var1 = var1[var9];
-                var4 = var3.bind(var8)(var1);
-                var3 = var4.calculateOverlayedColor;
+                var5 = var3.bind(var8)(var1);
+                var3 = var5.calculateOverlayedColor;
                 var1 = var13;
-                if (!var10) {
-                    _fun57828_ip = 433;
+                if (!var11) {
+                    _fun57828_ip = 511;
                     continue _fun57828
                 }
-            case 430:
-                var1 = var6;
-            case 433:
-                var6 = var3.bind(var4)(var5, var1);
+            case 508:
+                var1 = var10;
+            case 511:
+                var6 = var3.bind(var5)(var6, var1);
                 var1 = {};
-                var17 = var1;
-                var16 = var0;
-                var3 = copyDataProperties(var17, var16);
+                var18 = var1;
+                var17 = var0;
+                var3 = copyDataProperties(var18, var17);
                 var3 = 'containerBackground';
-                var1[var3] = var7;
+                var1[var3] = var4;
                 var5 = _closure1_slot0;
                 var2 = _closure1_slot2;
-                var3 = 7;
+                var3 = 8;
                 var4 = var2[var3];
                 var11 = var5.bind(var8)(var4);
                 var10 = var11.int2hex;
@@ -178,10 +204,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = 'statusBackground';
                 var1[var2] = var3;
                 return var1;
-            case 602:
+            case 680:
                 return var0;
         }
     };
     var2.useUserProfileColors = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1298, 3250, 5445, 566, 3156, 671, 7050, 668, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1298, 483, 3252, 5447, 566, 3158, 671, 7052, 668, 2]);

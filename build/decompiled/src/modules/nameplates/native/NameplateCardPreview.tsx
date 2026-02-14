@@ -82,7 +82,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/nameplates/native/NameplateCardPreview.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun75833: for (var _fun75833_ip = 0;;) switch (_fun75833_ip) {
+        _fun75633: for (var _fun75633_ip = 0;;) switch (_fun75633_ip) {
             case 0:
                 var0 = arg0;
                 var2 = var0.item;
@@ -90,8 +90,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var16 = var0.animate;
                 var3 = undefined;
                 if (!(var16 === var3)) {
-                    _fun75833_ip = 28;
-                    continue _fun75833
+                    _fun75633_ip = 28;
+                    continue _fun75633
                 }
             case 26:
                 var16 = false;
@@ -125,8 +125,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = new Array(2);
                 var4[0] = var7;
                 if (!var5) {
-                    _fun75833_ip = 164;
-                    continue _fun75833
+                    _fun75633_ip = 164;
+                    continue _fun75633
                 }
             case 158:
                 var5 = var17.purchased;
@@ -251,4 +251,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 33, 1297, 671, 44, 1644, 1641, 6997, 5512, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 33, 1297, 671, 44, 1644, 1641, 6999, 5514, 2]);

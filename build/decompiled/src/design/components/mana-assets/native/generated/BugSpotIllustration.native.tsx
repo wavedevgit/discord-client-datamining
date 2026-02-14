@@ -81,4 +81,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.BugSpotIllustration = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 4709, 6079, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 4711, 6081, 2]);

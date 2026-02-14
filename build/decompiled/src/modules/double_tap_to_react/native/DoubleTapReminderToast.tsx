@@ -270,4 +270,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.maybeShowDoubleTapReminderToast = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1310, 1369, 33, 1297, 671, 3938, 1235, 3216, 1358, 7087, 3153, 7096, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1310, 1369, 33, 1297, 671, 3940, 1235, 3218, 1358, 7089, 3155, 7098, 2]);
