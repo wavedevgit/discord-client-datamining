@@ -17,11 +17,6 @@ public final class mf {
     /* renamed from: e  reason: collision with root package name */
     private fe f40062e;
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public static /* bridge */ /* synthetic */ i1 a(mf mfVar) {
-        return mfVar.f40060c;
-    }
-
     public final mf e(i1 i1Var) {
         this.f40060c = i1Var;
         return this;
