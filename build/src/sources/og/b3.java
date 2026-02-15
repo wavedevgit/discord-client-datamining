@@ -2,13 +2,13 @@ package og;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public final class b3 {
 
-    /* renamed from: a  reason: collision with root package name */
+    /* renamed from: a */
     private e3 f39679a;
 
-    /* renamed from: b  reason: collision with root package name */
+    /* renamed from: b */
     private Integer f39680b;
 
-    /* renamed from: c  reason: collision with root package name */
+    /* renamed from: c */
     private yd f39681c;
 
     public final b3 a(Integer num) {
