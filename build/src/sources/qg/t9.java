@@ -4,20 +4,28 @@ import kotlin.jvm.internal.LongCompanionObject;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public final class t9 {
 
-    /* renamed from: a  reason: collision with root package name */
+    /* renamed from: a */
     private Long f45556a;
 
-    /* renamed from: b  reason: collision with root package name */
+    /* renamed from: b */
     private ca f45557b;
 
-    /* renamed from: c  reason: collision with root package name */
+    /* renamed from: c */
     private Boolean f45558c;
 
-    /* renamed from: d  reason: collision with root package name */
+    /* renamed from: d */
     private Boolean f45559d;
 
-    /* renamed from: e  reason: collision with root package name */
+    /* renamed from: e */
     private Boolean f45560e;
+
+    public static /* bridge */ /* synthetic */ Boolean j(t9 t9Var) {
+        return t9Var.f45558c;
+    }
+
+    public static /* bridge */ /* synthetic */ Long k(t9 t9Var) {
+        return t9Var.f45556a;
+    }
 
     public final t9 a(Boolean bool) {
         this.f45559d = bool;
