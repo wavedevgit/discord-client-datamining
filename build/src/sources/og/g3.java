@@ -13,9 +13,15 @@ public final class g3 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public /* synthetic */ g3(b3 b3Var, f3 f3Var) {
-        this.f39784a = b3.d(b3Var);
-        this.f39785b = b3.g(b3Var);
-        this.f39786c = b3.f(b3Var);
+        e3 e3Var;
+        Integer num;
+        yd ydVar;
+        e3Var = b3Var.f39679a;
+        this.f39784a = e3Var;
+        num = b3Var.f39680b;
+        this.f39785b = num;
+        ydVar = b3Var.f39681c;
+        this.f39786c = ydVar;
     }
 
     public final e3 a() {
