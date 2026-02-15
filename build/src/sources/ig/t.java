@@ -1,4 +1,5 @@
 package ig;
+/* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-abstract class t extends x {
+public abstract class t extends x {
 }
