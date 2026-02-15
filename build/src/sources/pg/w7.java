@@ -4,26 +4,54 @@ import kotlin.jvm.internal.LongCompanionObject;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public final class w7 {
 
-    /* renamed from: a  reason: collision with root package name */
+    /* renamed from: a */
     private Long f43173a;
 
-    /* renamed from: b  reason: collision with root package name */
+    /* renamed from: b */
     private x7 f43174b;
 
-    /* renamed from: c  reason: collision with root package name */
+    /* renamed from: c */
     private r7 f43175c;
 
-    /* renamed from: d  reason: collision with root package name */
+    /* renamed from: d */
     private Integer f43176d;
 
-    /* renamed from: e  reason: collision with root package name */
+    /* renamed from: e */
     private Integer f43177e;
 
-    /* renamed from: f  reason: collision with root package name */
+    /* renamed from: f */
     private Integer f43178f;
 
-    /* renamed from: g  reason: collision with root package name */
+    /* renamed from: g */
     private Integer f43179g;
+
+    public static /* bridge */ /* synthetic */ r7 a(w7 w7Var) {
+        return w7Var.f43175c;
+    }
+
+    public static /* bridge */ /* synthetic */ x7 i(w7 w7Var) {
+        return w7Var.f43174b;
+    }
+
+    public static /* bridge */ /* synthetic */ Integer k(w7 w7Var) {
+        return w7Var.f43176d;
+    }
+
+    public static /* bridge */ /* synthetic */ Integer l(w7 w7Var) {
+        return w7Var.f43178f;
+    }
+
+    public static /* bridge */ /* synthetic */ Integer m(w7 w7Var) {
+        return w7Var.f43177e;
+    }
+
+    public static /* bridge */ /* synthetic */ Integer n(w7 w7Var) {
+        return w7Var.f43179g;
+    }
+
+    public static /* bridge */ /* synthetic */ Long o(w7 w7Var) {
+        return w7Var.f43173a;
+    }
 
     public final w7 b(Long l10) {
         this.f43173a = Long.valueOf(l10.longValue() & LongCompanionObject.MAX_VALUE);

@@ -25,13 +25,13 @@ public final class z7 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public /* synthetic */ z7(w7 w7Var, y7 y7Var) {
-        this.f43282a = w7Var.f43173a;
-        this.f43283b = w7Var.f43174b;
-        this.f43284c = w7Var.f43175c;
-        this.f43285d = w7Var.f43176d;
-        this.f43286e = w7Var.f43177e;
-        this.f43287f = w7Var.f43178f;
-        this.f43288g = w7Var.f43179g;
+        this.f43282a = w7.o(w7Var);
+        this.f43283b = w7.i(w7Var);
+        this.f43284c = w7.a(w7Var);
+        this.f43285d = w7.k(w7Var);
+        this.f43286e = w7.m(w7Var);
+        this.f43287f = w7.l(w7Var);
+        this.f43288g = w7.n(w7Var);
     }
 
     public final r7 a() {
