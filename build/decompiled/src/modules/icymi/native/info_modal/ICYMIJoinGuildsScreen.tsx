@@ -680,10 +680,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12.disabled = var15;
                 var20 = undefined;
                 if (!var16) {
-                    _fun104540_ip = 511;
+                    _fun104540_ip = 515;
                     continue _fun104540
                 }
-            case 434:
+            case 438:
                 var23 = _closure1_slot12;
                 var22 = _closure1_slot0;
                 var26 = _closure1_slot2;
@@ -702,18 +702,18 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var24 = var24.CONTROL_CONNECTED_TEXT_DEFAULT;
                 var21.color = var24;
                 var20 = var23.bind(var3)(var22, var21);
-            case 511:
+            case 515:
                 var12.icon = var20;
                 if (!var15) {
-                    _fun104540_ip = 578;
+                    _fun104540_ip = 582;
                     continue _fun104540
                 }
-            case 518:
+            case 522:
                 if (var18) {
-                    _fun104540_ip = 578;
+                    _fun104540_ip = 582;
                     continue _fun104540
                 }
-            case 521:
+            case 525:
                 var22 = _closure1_slot0;
                 var23 = _closure1_slot2;
                 var18 = 24;
@@ -726,9 +726,9 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var18 = var18.t;
                 var18 = var18.cEnaWx;
                 var18 = var20.bind(var21)(var18);
-                _fun104540_ip = 654;
+                _fun104540_ip = 658;
                 continue _fun104540;
-            case 578:
+            case 582:
                 var20 = _closure1_slot0;
                 var23 = _closure1_slot2;
                 var19 = 24;
@@ -740,37 +740,37 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var19 = var20.bind(var3)(var19);
                 var20 = var19.t;
                 if (var16) {
-                    _fun104540_ip = 638;
+                    _fun104540_ip = 642;
                     continue _fun104540
                 }
-            case 625:
+            case 629:
                 var19 = var20.XqMe3N;
                 var19 = var21.bind(var22)(var19);
-                _fun104540_ip = 651;
+                _fun104540_ip = 655;
                 continue _fun104540;
-            case 638:
+            case 642:
                 var20 = var20["TwueC+"];
                 var19 = var21.bind(var22)(var20);
-            case 651:
+            case 655:
                 var18 = var19;
-            case 654:
+            case 658:
                 var12.text = var18;
                 var18 = 'sm';
                 var12.size = var18;
                 var12.onPress = var17;
                 if (var15) {
-                    _fun104540_ip = 680;
-                    continue _fun104540
-                }
-            case 673:
-                var15 = 'active';
-                if (var16) {
                     _fun104540_ip = 684;
                     continue _fun104540
                 }
-            case 680:
-                var15 = 'secondary';
+            case 677:
+                var15 = 'active';
+                if (var16) {
+                    _fun104540_ip = 688;
+                    continue _fun104540
+                }
             case 684:
+                var15 = 'secondary';
+            case 688:
                 var12.variant = var15;
                 var15 = true;
                 var12.grow = var15;

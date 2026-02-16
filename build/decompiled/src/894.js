@@ -262,7 +262,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                         StartGenerator();
                                         ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
                                         if (var1) {
-                                            _fun9440_ip = 685;
+                                            _fun9440_ip = 683;
                                             continue _fun9440
                                         }
                                     case 10:
@@ -486,75 +486,75 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                         var1 = var7.bind(var8)(var11, var1);
                                         var1 = !var1;
                                         if (!var1) {
-                                            _fun9440_ip = 572;
+                                            _fun9440_ip = 570;
                                             continue _fun9440
                                         }
-                                    case 536:
+                                    case 534:
                                         var7 = _closure3_slot0;
                                         var7 = var7.shouldStore;
                                         var7 = !var7;
                                         if (var7) {
-                                            _fun9440_ip = 569;
+                                            _fun9440_ip = 567;
                                             continue _fun9440
                                         }
-                                    case 552:
+                                    case 550:
                                         var9 = _closure3_slot0;
                                         var8 = var9.shouldStore;
                                         var7 = var8.bind(var9)(var11, var12, var10);
-                                    case 569:
+                                    case 567:
                                         var1 = var7;
+                                    case 570:
+                                        SaveGenerator(address = 574);
                                     case 572:
-                                        SaveGenerator(address = 576);
-                                    case 574:
                                         return var1;
-                                    case 576:
+                                    case 574:
                                         ResumeGenerator(result_out_reg = 1, return_bool_out_reg = 7);
                                         if (var7) {
-                                            _fun9440_ip = 682;
+                                            _fun9440_ip = 680;
                                             continue _fun9440
                                         }
-                                    case 582:
+                                    case 580:
                                         if (var1) {
-                                            _fun9440_ip = 590;
+                                            _fun9440_ip = 588;
                                             continue _fun9440
                                         }
-                                    case 585:
+                                    case 583:
                                         var7 = var3;
                                         throw var7;
-                                    case 590:
+                                    case 588:
                                         var7 = _closure3_slot3;
                                         if (var5) {
-                                            _fun9440_ip = 623;
+                                            _fun9440_ip = 621;
                                             continue _fun9440
                                         }
-                                    case 597:
+                                    case 595:
                                         var8 = var7.push;
                                         var5 = var2;
                                         var5 = var8.bind(var7)(var5);
-                                        SaveGenerator(address = 614);
-                                    case 612:
+                                        SaveGenerator(address = 612);
+                                    case 610:
                                         return var5;
-                                    case 614:
+                                    case 612:
                                         ResumeGenerator(result_out_reg = 5, return_bool_out_reg = 8);
                                         if (!var8) {
-                                            _fun9440_ip = 644;
+                                            _fun9440_ip = 642;
                                             continue _fun9440
                                         }
-                                    case 620:
+                                    case 618:
                                         return var5;
-                                    case 623:
+                                    case 621:
                                         var5 = var7.unshift;
                                         var2 = var5.bind(var7)(var2);
-                                        SaveGenerator(address = 638);
-                                    case 636:
+                                        SaveGenerator(address = 636);
+                                    case 634:
                                         return var2;
-                                    case 638:
+                                    case 636:
                                         ResumeGenerator(result_out_reg = 2, return_bool_out_reg = 5);
                                         if (var5) {
-                                            _fun9440_ip = 679;
+                                            _fun9440_ip = 677;
                                             continue _fun9440
                                         }
-                                    case 644:
+                                    case 642:
                                         var4 = _closure3_slot6;
                                         var4 = var4.bind(var6)();
                                         var5 = _closure2_slot1;
@@ -563,11 +563,11 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                         var3 = var5.bind(var6)(var3, var4);
                                         var3 = {};
                                         return var3;
-                                    case 679:
+                                    case 677:
                                         return var2;
-                                    case 682:
+                                    case 680:
                                         return var1;
-                                    case 685:
+                                    case 683:
                                         return var0;
                                 }
                             };

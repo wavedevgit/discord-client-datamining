@@ -141,23 +141,23 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var8 = var4().next;
             var7 = 'channels';
             var6 = 'labels';
-        case 524:
+        case 528:
             var10 = var8().value;
             var9 = var4;
             if (!(var9 !== var0)) {
-                _fun51996_ip = 838;
+                _fun51996_ip = 842;
                 continue _fun51996
             }
-        case 538: // try_start_1
+        case 542: // try_start_1
             var3 = var10;
             var9 = var2;
             var9 = var9[var10];
             var9 = var7 in var9;
             if (var9) {
-                _fun51996_ip = 596;
+                _fun51996_ip = 600;
                 continue _fun51996
             }
-        case 555:
+        case 559:
             var11 = var5.Error;
             var10 = var3;
             var9 = 'missing channels property: ';
@@ -172,16 +172,16 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var9 = new var20[var11](var19, var18);
             var9 = var9 instanceof Object ? var9 : var10;
             throw var9;
-        case 596:
+        case 600:
             var10 = var2;
             var9 = var3;
             var9 = var10[var9];
             var9 = var6 in var9;
             if (var9) {
-                _fun51996_ip = 654;
+                _fun51996_ip = 658;
                 continue _fun51996
             }
-        case 613:
+        case 617:
             var11 = var5.Error;
             var10 = var3;
             var9 = 'missing channel labels property: ';
@@ -196,7 +196,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var9 = new var20[var11](var19, var18);
             var9 = var9 instanceof Object ? var9 : var10;
             throw var9;
-        case 654:
+        case 658:
             var11 = var2;
             var9 = var3;
             var10 = var11[var9];
@@ -205,10 +205,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var9 = var11[var9];
             var9 = var9.channels;
             if (!(var10 === var9)) {
-                _fun51996_ip = 790;
+                _fun51996_ip = 794;
                 continue _fun51996
             }
-        case 689:
+        case 693:
             var10 = var2;
             var9 = var3;
             var11 = var10[var9];
@@ -230,10 +230,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var9 = {};
             var9.value = var13;
             var9 = var11.bind(var12)(var10, var6, var9);
-        case 785: // try_end1
-            _fun51996_ip = 524;
+        case 789: // try_end1
+            _fun51996_ip = 528;
             continue _fun51996;
-        case 790: // try_start_2
+        case 794: // try_start_2
             var6 = var5.Error;
             var5 = var3;
             var3 = 'channel and label counts mismatch: ';
@@ -248,11 +248,11 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var3 = new var20[var6](var19, var18);
             var3 = var3 instanceof Object ? var3 : var5;
             throw var3;
-        case 831: // try_end2 // catch_target1 // catch_target2
+        case 835: // try_end2 // catch_target1 // catch_target2
             CatchBlockStart(arg_register = 3);
             var4.return();
             throw var3;
-        case 838:
+        case 842:
             var4 = var2.rgb;
             var3 = function(arg0) { // Environment: var1
                 _fun51997: for (var _fun51997_ip = 0;;) switch (_fun51997_ip) {

@@ -372,16 +372,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var16 = var12.bind(var0)(var16);
             var16 = var16.spacing;
             if (var15) {
-                _fun69533_ip = 429;
+                _fun69533_ip = 433;
                 continue _fun69533
             }
-        case 422:
+        case 426:
             var15 = var16.PX_16;
-            _fun69533_ip = 435;
+            _fun69533_ip = 439;
             continue _fun69533;
-        case 429:
+        case 433:
             var15 = var16.PX_12;
-        case 435:
+        case 439:
             var10.lineHeight = var15;
             var14 = var14.PRIMARY_BOLD;
             var10.fontFamily = var14;

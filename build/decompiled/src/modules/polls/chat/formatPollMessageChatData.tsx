@@ -1322,24 +1322,24 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var0.isSelected = var10;
                             var10 = _closure2_slot7;
                             if (!var10) {
-                                _fun56876_ip = 634;
+                                _fun56876_ip = 626;
                                 continue _fun56876
                             }
-                        case 631:
+                        case 623:
                             var10 = var11;
-                        case 634:
+                        case 626:
                             var0.isVictor = var10;
                             var0.didSelfVote = var8;
                             var0.style = var7;
                             var7 = _closure2_slot10;
                             if (!var7) {
-                                _fun56876_ip = 664;
+                                _fun56876_ip = 656;
                                 continue _fun56876
                             }
-                        case 657:
+                        case 649:
                             var8 = _closure2_slot1;
                             var7 = !var8;
-                        case 664:
+                        case 656:
                             var0.shouldAnimateTransition = var7;
                             var8 = var3.Math;
                             var7 = var8.round;

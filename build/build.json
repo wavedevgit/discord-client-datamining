@@ -1,11 +1,11 @@
 {
     "channel": 2,
-    "versionCode": 317208,
-    "buildNumber": 5170,
-    "userAgent": "Discord-Android/317208;RNA",
-    "versionHash": "c6687d10421e1dd6d9c763e7f4b80bf8ace7a55d",
+    "versionCode": 318200,
+    "buildNumber": 5175,
+    "userAgent": "Discord-Android/318200;RNA",
+    "versionHash": "3f2f9e9c3fd4e3d418b3215eca06559c67a50ec7",
     "assets": {
-        "app/src/main/assets/index.android.bundle": "c086bb15bb1d2d2d6d30a5ab240bd881",
+        "app/src/main/assets/index.android.bundle": "2cc28891c0328c5c1454b7d9759a663c",
         "app/src/main/res/drawable-hdpi/_node_modules_pnpm_reactnavigationelements1330_patch_hashx6y77xpsvirc6p4el4z6ye2qk4_dlbpzznhhbsmsmfflkupqy5cva_node_modules_reactnavigation_elements_src_assets_backicon.png": "376d6a4c7f622917c39feb23671ef71d",
         "app/src/main/res/drawable-hdpi/_node_modules_pnpm_reactnavigationelements1331_dlbpzznhhbsmsmfflkupqy5cva_node_modules_reactnavigation_elements_src_assets_backicon.png": "376d6a4c7f622917c39feb23671ef71d",
         "app/src/main/res/drawable-mdpi/_discord_common_js_shared_images_flags_bg.png": "d24e290703f8b31b56744a69df613fcb",

@@ -261,7 +261,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                         StartGenerator();
                                         ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
                                         if (var1) {
-                                            _fun100130_ip = 597;
+                                            _fun100130_ip = 595;
                                             continue _fun100130
                                         }
                                     case 10:
@@ -441,75 +441,75 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                         var1 = var7.bind(var8)(var11, var1);
                                         var1 = !var1;
                                         if (!var1) {
-                                            _fun100130_ip = 484;
+                                            _fun100130_ip = 482;
                                             continue _fun100130
                                         }
-                                    case 448:
+                                    case 446:
                                         var7 = _closure3_slot0;
                                         var7 = var7.shouldStore;
                                         var7 = !var7;
                                         if (var7) {
-                                            _fun100130_ip = 481;
+                                            _fun100130_ip = 479;
                                             continue _fun100130
                                         }
-                                    case 464:
+                                    case 462:
                                         var9 = _closure3_slot0;
                                         var8 = var9.shouldStore;
                                         var7 = var8.bind(var9)(var11, var12, var10);
-                                    case 481:
+                                    case 479:
                                         var1 = var7;
+                                    case 482:
+                                        SaveGenerator(address = 486);
                                     case 484:
-                                        SaveGenerator(address = 488);
-                                    case 486:
                                         return var1;
-                                    case 488:
+                                    case 486:
                                         ResumeGenerator(result_out_reg = 1, return_bool_out_reg = 7);
                                         if (var7) {
-                                            _fun100130_ip = 594;
+                                            _fun100130_ip = 592;
                                             continue _fun100130
                                         }
-                                    case 494:
+                                    case 492:
                                         if (var1) {
-                                            _fun100130_ip = 502;
+                                            _fun100130_ip = 500;
                                             continue _fun100130
                                         }
-                                    case 497:
+                                    case 495:
                                         var7 = var3;
                                         throw var7;
-                                    case 502:
+                                    case 500:
                                         var7 = _closure3_slot3;
                                         if (var5) {
-                                            _fun100130_ip = 535;
+                                            _fun100130_ip = 533;
                                             continue _fun100130
                                         }
-                                    case 509:
+                                    case 507:
                                         var8 = var7.push;
                                         var5 = var2;
                                         var5 = var8.bind(var7)(var5);
-                                        SaveGenerator(address = 526);
-                                    case 524:
+                                        SaveGenerator(address = 524);
+                                    case 522:
                                         return var5;
-                                    case 526:
+                                    case 524:
                                         ResumeGenerator(result_out_reg = 5, return_bool_out_reg = 8);
                                         if (!var8) {
-                                            _fun100130_ip = 556;
+                                            _fun100130_ip = 554;
                                             continue _fun100130
                                         }
-                                    case 532:
+                                    case 530:
                                         return var5;
-                                    case 535:
+                                    case 533:
                                         var5 = var7.unshift;
                                         var2 = var5.bind(var7)(var2);
-                                        SaveGenerator(address = 550);
-                                    case 548:
+                                        SaveGenerator(address = 548);
+                                    case 546:
                                         return var2;
-                                    case 550:
+                                    case 548:
                                         ResumeGenerator(result_out_reg = 2, return_bool_out_reg = 5);
                                         if (var5) {
-                                            _fun100130_ip = 591;
+                                            _fun100130_ip = 589;
                                             continue _fun100130
                                         }
-                                    case 556:
+                                    case 554:
                                         var4 = _closure3_slot6;
                                         var4 = var4.bind(var6)();
                                         var5 = _closure2_slot1;
@@ -518,11 +518,11 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                         var3 = var5.bind(var6)(var3, var4);
                                         var3 = {};
                                         return var3;
-                                    case 591:
+                                    case 589:
                                         return var2;
-                                    case 594:
+                                    case 592:
                                         return var1;
-                                    case 597:
+                                    case 595:
                                         return var0;
                                 }
                             };

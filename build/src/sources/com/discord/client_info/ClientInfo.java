@@ -15,13 +15,13 @@ import org.jetbrains.annotations.NotNull;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 public final class ClientInfo {
     @NotNull
-    public static final String PROGUARD_UUID = "e384c046-51d9-4b60-ac3a-787a90fc2e2b";
+    public static final String PROGUARD_UUID = "9a1010c6-7e86-488e-a924-5ea80e6b5dd3";
     @NotNull
     public static final String SENTRY_ALPHA_BETA_DSN = "https://9a42ef460144a03b30c8b2d5321cfe11@o64374.ingest.sentry.io/5992375";
     @NotNull
     public static final String SENTRY_DSN = "https://70545531dfe34835bf4dd0996821e8b6@o64374.ingest.sentry.io/5992375";
     @NotNull
-    public static final String SENTRY_RELEASE = "discord_android@317.8.0-2+317208";
+    public static final String SENTRY_RELEASE = "discord_android@318.0.0-2+318200";
     @NotNull
     public static final String SENTRY_STAFF_DSN = "https://90509cba01573ee4e14a2f5e15aee5ca@o64374.ingest.sentry.io/5992375";
     private static String buildType;
