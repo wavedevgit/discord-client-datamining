@@ -4,9 +4,8 @@ import android.content.Context;
 import android.util.DisplayMetrics;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-/* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class r extends LinearLayoutManager {
+abstract class r extends LinearLayoutManager {
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     class a extends androidx.recyclerview.widget.l {
