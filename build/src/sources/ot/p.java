@@ -9,17 +9,16 @@ import kotlin.text.StringsKt;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public abstract class p {
 
-    /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a extends Lambda implements Function0 {
 
-        /* renamed from: d  reason: collision with root package name */
+        /* renamed from: d */
         final /* synthetic */ Object f41790d;
 
-        /* renamed from: e  reason: collision with root package name */
+        /* renamed from: e */
         final /* synthetic */ Object f41791e;
 
-        /* renamed from: i  reason: collision with root package name */
+        /* renamed from: i */
         final /* synthetic */ ot.a f41792i;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
@@ -49,7 +48,6 @@ public abstract class p {
         return new q(CollectionsKt.l(), r10);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
     public static final Object c(ot.a aVar, Object obj, Object obj2, int i10, int i11) {
         Object c10 = aVar.c(obj, obj2);
         if (c10 == null) {
