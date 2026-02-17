@@ -25,6 +25,11 @@ public final class w7 {
     /* renamed from: g  reason: collision with root package name */
     private Integer f43179g;
 
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public static /* bridge */ /* synthetic */ Integer m(w7 w7Var) {
+        return w7Var.f43177e;
+    }
+
     public final w7 b(Long l10) {
         this.f43173a = Long.valueOf(l10.longValue() & LongCompanionObject.MAX_VALUE);
         return this;
