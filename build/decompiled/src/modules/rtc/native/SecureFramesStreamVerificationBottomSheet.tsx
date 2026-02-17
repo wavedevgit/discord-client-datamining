@@ -59,7 +59,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = new Array(1);
         var4[0] = var2;
         var2 = function() { // Environment: var1
-            _fun67290: for (var _fun67290_ip = 0;;) switch (_fun67290_ip) {
+            _fun67291: for (var _fun67291_ip = 0;;) switch (_fun67291_ip) {
                 case 0:
                     var2 = _closure1_slot4;
                     var1 = var2.getSecureFramesState;
@@ -69,8 +69,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = var0 == var1;
                     var0 = undefined;
                     if (var2) {
-                        _fun67290_ip = 42;
-                        continue _fun67290
+                        _fun67291_ip = 42;
+                        continue _fun67291
                     }
                 case 36:
                     var0 = var1.epochAuthenticator;
@@ -159,4 +159,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 3608, 660, 33, 566, 8302, 8303, 8311, 1235, 8294, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 3608, 660, 33, 566, 8303, 8304, 8312, 1235, 8295, 2]);

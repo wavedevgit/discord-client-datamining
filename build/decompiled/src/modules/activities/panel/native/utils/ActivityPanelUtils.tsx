@@ -44,7 +44,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = new Array(1);
         var1[0] = var0;
         var0 = function() { // Environment: var0
-            _fun110946: for (var _fun110946_ip = 0;;) switch (_fun110946_ip) {
+            _fun110947: for (var _fun110947_ip = 0;;) switch (_fun110947_ip) {
                 case 0:
                     var2 = _closure1_slot0;
                     var3 = _closure1_slot2;
@@ -63,8 +63,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = var0.PANEL;
                     var0 = var4 === var0;
                     if (!var0) {
-                        _fun110946_ip = 105;
-                        continue _fun110946
+                        _fun110947_ip = 105;
+                        continue _fun110947
                     }
                 case 77:
                     var4 = _closure1_slot1;
@@ -83,4 +83,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useIsActivityPanelFullscreen = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1371, 7943, 566, 3088, 7985, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1371, 7944, 566, 3088, 7986, 2]);

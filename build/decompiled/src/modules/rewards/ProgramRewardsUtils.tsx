@@ -7,13 +7,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var7;
     var4 = function arg0() {
-        _fun96406: for (var _fun96406_ip = 0;;) switch (_fun96406_ip) {
+        _fun96407: for (var _fun96407_ip = 0;;) switch (_fun96407_ip) {
             case 0:
                 var4 = arguments[1];
                 var3 = undefined;
                 if (!(var4 === var3)) {
-                    _fun96406_ip = 15;
-                    continue _fun96406
+                    _fun96407_ip = 15;
+                    continue _fun96407
                 }
             case 9:
                 var4 = 'ProgramRewardsUtils';
@@ -27,8 +27,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var1.NITRO;
                 var1 = arg0;
                 if (!(var1 !== var2)) {
-                    _fun96406_ip = 61;
-                    continue _fun96406
+                    _fun96407_ip = 61;
+                    continue _fun96407
                 }
             case 57:
                 var1 = false;
@@ -51,8 +51,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var2.bind(var3)(var1);
                 var1 = var1.enabled;
                 if (!var0) {
-                    _fun96406_ip = 138;
-                    continue _fun96406
+                    _fun96407_ip = 138;
+                    continue _fun96407
                 }
             case 135:
                 var0 = var1;
@@ -62,13 +62,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot4 = var4;
     var3 = function arg0() {
-        _fun96407: for (var _fun96407_ip = 0;;) switch (_fun96407_ip) {
+        _fun96408: for (var _fun96408_ip = 0;;) switch (_fun96408_ip) {
             case 0:
                 var7 = arguments[1];
                 var4 = undefined;
                 if (!(var7 === var4)) {
-                    _fun96407_ip = 15;
-                    continue _fun96407
+                    _fun96408_ip = 15;
+                    continue _fun96408
                 }
             case 9:
                 var7 = 'ProgramRewardsUtils';
@@ -97,13 +97,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = arg0;
                 var0 = var0 === var3;
                 if (!var0) {
-                    _fun96407_ip = 132;
-                    continue _fun96407
+                    _fun96408_ip = 132;
+                    continue _fun96408
                 }
             case 123:
                 if (!var1) {
-                    _fun96407_ip = 129;
-                    continue _fun96407
+                    _fun96408_ip = 129;
+                    continue _fun96408
                 }
             case 126:
                 var1 = var2;
@@ -142,13 +142,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.isEligibleForProgramReward = var4;
     var2.useIsEligibleForProgramReward = var3;
     var3 = function() {
-        _fun96408: for (var _fun96408_ip = 0;;) switch (_fun96408_ip) {
+        _fun96409: for (var _fun96409_ip = 0;;) switch (_fun96409_ip) {
             case 0:
                 var3 = arguments[0];
                 var2 = undefined;
                 if (!(var3 === var2)) {
-                    _fun96408_ip = 15;
-                    continue _fun96408
+                    _fun96409_ip = 15;
+                    continue _fun96409
                 }
             case 9:
                 var3 = 'ProgramRewardsUtils';
@@ -167,13 +167,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.isEligibleForAnyProgramReward = var3;
     var3 = function() {
-        _fun96409: for (var _fun96409_ip = 0;;) switch (_fun96409_ip) {
+        _fun96410: for (var _fun96410_ip = 0;;) switch (_fun96410_ip) {
             case 0:
                 var3 = arguments[0];
                 var2 = undefined;
                 if (!(var3 === var2)) {
-                    _fun96409_ip = 15;
-                    continue _fun96409
+                    _fun96410_ip = 15;
+                    continue _fun96410
                 }
             case 9:
                 var3 = 'ProgramRewardsUtils';
@@ -192,13 +192,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useIsEligibleForAnyProgramReward = var3;
     var1 = function arg0() {
-        _fun96410: for (var _fun96410_ip = 0;;) switch (_fun96410_ip) {
+        _fun96411: for (var _fun96411_ip = 0;;) switch (_fun96411_ip) {
             case 0:
                 var3 = arg0;
                 var0 = null;
                 if (!(var0 == var3)) {
-                    _fun96410_ip = 25;
-                    continue _fun96410
+                    _fun96411_ip = 25;
+                    continue _fun96411
                 }
             case 9:
                 var1 = _closure1_slot2;
@@ -220,4 +220,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.hasNecessaryPremiumSubscriptionStatus = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1621, 1623, 12542, 12543, 12544, 1640, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1621, 1623, 12543, 12544, 12545, 1640, 2]);

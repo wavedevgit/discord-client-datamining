@@ -104,4 +104,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.getControlsDefaultWidth = var3;
     var2.getControlsDrawerOpenWidth = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [11870, 11873, 11868, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [11871, 11874, 11869, 2]);

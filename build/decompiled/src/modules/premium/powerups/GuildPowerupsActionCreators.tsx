@@ -68,15 +68,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.guildPowerupsResetNotifications = var3;
     var3 = function arg0, arg1() {
-        _fun78826: for (var _fun78826_ip = 0;;) switch (_fun78826_ip) {
+        _fun78827: for (var _fun78827_ip = 0;;) switch (_fun78827_ip) {
             case 0:
                 var5 = arg0;
                 var _closure2_slot0 = var5;
                 var3 = true;
                 var0 = arg1;
                 if (!(var3 !== var0)) {
-                    _fun78826_ip = 120;
-                    continue _fun78826
+                    _fun78827_ip = 120;
+                    continue _fun78827
                 }
             case 18:
                 var2 = _closure1_slot0;
@@ -130,7 +130,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var7 = var5.bind(var7)(var4);
                     var5 = var7.sort;
                     var4 = function(arg0, arg1) { // Environment: var2
-                        _fun78831: for (var _fun78831_ip = 0;;) switch (_fun78831_ip) {
+                        _fun78832: for (var _fun78832_ip = 0;;) switch (_fun78832_ip) {
                             case 0:
                                 var0 = arg0;
                                 var1 = var0.skuId;
@@ -139,8 +139,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var1 = var1 >= var0;
                                 var0 = -1;
                                 if (!var1) {
-                                    _fun78831_ip = 34;
-                                    continue _fun78831
+                                    _fun78832_ip = 34;
+                                    continue _fun78832
                                 }
                             case 31:
                                 var0 = 1;
@@ -156,7 +156,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var8 = {};
                     var4.powerupCatalog = var8;
                     var2 = function(arg0, arg1) { // Environment: var2
-                        _fun78832: for (var _fun78832_ip = 0;;) switch (_fun78832_ip) {
+                        _fun78833: for (var _fun78833_ip = 0;;) switch (_fun78833_ip) {
                             case 0:
                                 var0 = arg0;
                                 var3 = arg1;
@@ -168,8 +168,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var1 = var2[var1];
                                 var5 = null;
                                 if (!(var5 == var1)) {
-                                    _fun78832_ip = 56;
-                                    continue _fun78832
+                                    _fun78833_ip = 56;
+                                    continue _fun78833
                                 }
                             case 43:
                                 var4 = var3.type;
@@ -180,16 +180,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var2 = var2[var1];
                                 var1 = var5 == var2;
                                 if (var1) {
-                                    _fun78832_ip = 81;
-                                    continue _fun78832
+                                    _fun78833_ip = 81;
+                                    continue _fun78833
                                 }
                             case 72:
                                 var4 = var2.push;
                                 var1 = var5 == var4;
                             case 81:
                                 if (var1) {
-                                    _fun78832_ip = 94;
-                                    continue _fun78832
+                                    _fun78833_ip = 94;
+                                    continue _fun78833
                                 }
                             case 84:
                                 var1 = var2.push;
@@ -255,7 +255,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.guildId = var5;
                 var6 = var7.sort;
                 var5 = function(arg0, arg1) { // Environment: var4
-                    _fun78827: for (var _fun78827_ip = 0;;) switch (_fun78827_ip) {
+                    _fun78828: for (var _fun78828_ip = 0;;) switch (_fun78828_ip) {
                         case 0:
                             var0 = arg0;
                             var1 = var0.skuId;
@@ -264,8 +264,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1 = var1 >= var0;
                             var0 = -1;
                             if (!var1) {
-                                _fun78827_ip = 34;
-                                continue _fun78827
+                                _fun78828_ip = 34;
+                                continue _fun78828
                             }
                         case 31:
                             var0 = 1;
@@ -293,15 +293,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.fetchPowerupCatalogForGuild = var3;
     var3 = function arg0() {
-        _fun78833: for (var _fun78833_ip = 0;;) switch (_fun78833_ip) {
+        _fun78834: for (var _fun78834_ip = 0;;) switch (_fun78834_ip) {
             case 0:
                 var7 = arg0;
                 var5 = arguments[1];
                 var _closure2_slot0 = var7;
                 var3 = undefined;
                 if (!(var5 === var3)) {
-                    _fun78833_ip = 20;
-                    continue _fun78833
+                    _fun78834_ip = 20;
+                    continue _fun78834
                 }
             case 18:
                 var5 = true;
@@ -335,7 +335,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = var1.body;
                     var1 = var2.forEach;
                     var0 = function(arg0) { // Environment: var0
-                        _fun78835: for (var _fun78835_ip = 0;;) switch (_fun78835_ip) {
+                        _fun78836: for (var _fun78836_ip = 0;;) switch (_fun78836_ip) {
                             case 0:
                                 var3 = arg0;
                                 var4 = var3.sku;
@@ -344,91 +344,91 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var0 = undefined;
                                 var1 = undefined;
                                 if (var5) {
-                                    _fun78835_ip = 58;
-                                    continue _fun78835
+                                    _fun78836_ip = 58;
+                                    continue _fun78836
                                 }
                             case 22:
                                 var4 = var4.tenant_metadata;
                                 var5 = var2 == var4;
                                 var1 = undefined;
                                 if (var5) {
-                                    _fun78835_ip = 58;
-                                    continue _fun78835
+                                    _fun78836_ip = 58;
+                                    continue _fun78836
                                 }
                             case 37:
                                 var4 = var4.guild_monetization;
                                 var5 = var2 == var4;
                                 var1 = undefined;
                                 if (var5) {
-                                    _fun78835_ip = 58;
-                                    continue _fun78835
+                                    _fun78836_ip = 58;
+                                    continue _fun78836
                                 }
                             case 52:
                                 var1 = var4.powerup;
                             case 58:
                                 if (!(var2 == var1)) {
-                                    _fun78835_ip = 169;
-                                    continue _fun78835
+                                    _fun78836_ip = 169;
+                                    continue _fun78836
                                 }
                             case 62:
                                 var4 = var2 == var3;
                                 var1 = undefined;
                                 if (var4) {
-                                    _fun78835_ip = 92;
-                                    continue _fun78835
+                                    _fun78836_ip = 92;
+                                    continue _fun78836
                                 }
                             case 71:
                                 var4 = var3.sku;
                                 var5 = var2 == var4;
                                 var1 = undefined;
                                 if (var5) {
-                                    _fun78835_ip = 92;
-                                    continue _fun78835
+                                    _fun78836_ip = 92;
+                                    continue _fun78836
                                 }
                             case 86:
                                 var1 = var4.powerup_metadata;
                             case 92:
                                 if (!(var2 == var1)) {
-                                    _fun78835_ip = 169;
-                                    continue _fun78835
+                                    _fun78836_ip = 169;
+                                    continue _fun78836
                                 }
                             case 96:
                                 var4 = var3.sku;
                                 var5 = var2 == var4;
                                 var1 = undefined;
                                 if (var5) {
-                                    _fun78835_ip = 147;
-                                    continue _fun78835
+                                    _fun78836_ip = 147;
+                                    continue _fun78836
                                 }
                             case 111:
                                 var4 = var4.tenant_metadata;
                                 var5 = var2 == var4;
                                 var1 = undefined;
                                 if (var5) {
-                                    _fun78835_ip = 147;
-                                    continue _fun78835
+                                    _fun78836_ip = 147;
+                                    continue _fun78836
                                 }
                             case 126:
                                 var4 = var4.guild_monetization;
                                 var5 = var2 == var4;
                                 var1 = undefined;
                                 if (var5) {
-                                    _fun78835_ip = 147;
-                                    continue _fun78835
+                                    _fun78836_ip = 147;
+                                    continue _fun78836
                                 }
                             case 141:
                                 var1 = var4.game_server;
                             case 147:
                                 if (!(var2 != var1)) {
-                                    _fun78835_ip = 186;
-                                    continue _fun78835
+                                    _fun78836_ip = 186;
+                                    continue _fun78836
                                 }
                             case 151:
                                 var2 = _closure3_slot1;
                                 var1 = var3.id;
                                 var2[var1] = var3;
-                                _fun78835_ip = 186;
-                                continue _fun78835;
+                                _fun78836_ip = 186;
+                                continue _fun78836;
                             case 169:
                                 var2 = _closure3_slot0;
                                 var1 = var3.sku_id;
@@ -505,4 +505,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.disablePowerupForGuild = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6796, 660, 807, 9982, 3363, 9983, 1304, 507, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6797, 660, 807, 9983, 3363, 9984, 1304, 507, 2]);

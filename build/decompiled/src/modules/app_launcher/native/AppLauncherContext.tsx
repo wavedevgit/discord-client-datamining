@@ -14,34 +14,6 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = var2.useRef;
         var0 = {};
         var4 = function() {
-            _fun62223: for (var _fun62223_ip = 0;;) switch (_fun62223_ip) {
-                case 0:
-                    var0 = _closure2_slot0;
-                    if (var0) {
-                        _fun62223_ip = 46;
-                        continue _fun62223
-                    }
-                case 10:
-                    var0 = global;
-                    var2 = var0.Error;
-                    var0 = var2.prototype;
-                    var1 = Object.create(var0, {
-                        constructor: {
-                            value: var2
-                        }
-                    });
-                    var3 = 'use useRequiredAppLauncherContext and provide a ChatInputRef';
-                    var4 = var1;
-                    var0 = new var4[var2](var3, var2);
-                    var0 = var0 instanceof Object ? var0 : var1;
-                    throw var0;
-                case 46:
-                    var0 = undefined;
-                    return var0;
-            }
-        };
-        var0.getApplicationCommandManager = var4;
-        var4 = function() {
             _fun62224: for (var _fun62224_ip = 0;;) switch (_fun62224_ip) {
                 case 0:
                     var0 = _closure2_slot0;
@@ -68,14 +40,42 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
             }
         };
-        var0.openCustomKeyboard = var4;
-        var3 = function() {
+        var0.getApplicationCommandManager = var4;
+        var4 = function() {
             _fun62225: for (var _fun62225_ip = 0;;) switch (_fun62225_ip) {
                 case 0:
                     var0 = _closure2_slot0;
                     if (var0) {
                         _fun62225_ip = 46;
                         continue _fun62225
+                    }
+                case 10:
+                    var0 = global;
+                    var2 = var0.Error;
+                    var0 = var2.prototype;
+                    var1 = Object.create(var0, {
+                        constructor: {
+                            value: var2
+                        }
+                    });
+                    var3 = 'use useRequiredAppLauncherContext and provide a ChatInputRef';
+                    var4 = var1;
+                    var0 = new var4[var2](var3, var2);
+                    var0 = var0 instanceof Object ? var0 : var1;
+                    throw var0;
+                case 46:
+                    var0 = undefined;
+                    return var0;
+            }
+        };
+        var0.openCustomKeyboard = var4;
+        var3 = function() {
+            _fun62226: for (var _fun62226_ip = 0;;) switch (_fun62226_ip) {
+                case 0:
+                    var0 = _closure2_slot0;
+                    if (var0) {
+                        _fun62226_ip = 46;
+                        continue _fun62226
                     }
                 case 10:
                     var0 = global;
@@ -165,7 +165,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.AppLauncherContext = var4;
     var2.useAppLauncherChatInputRefDummy = var3;
     var3 = function() {
-        _fun62226: for (var _fun62226_ip = 0;;) switch (_fun62226_ip) {
+        _fun62227: for (var _fun62227_ip = 0;;) switch (_fun62227_ip) {
             case 0:
                 var2 = _closure1_slot2;
                 var1 = var2.useContext;
@@ -173,8 +173,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var1.bind(var2)(var0);
                 var1 = null;
                 if (!(var1 != var0)) {
-                    _fun62226_ip = 30;
-                    continue _fun62226
+                    _fun62227_ip = 30;
+                    continue _fun62227
                 }
             case 28:
                 return var0;
@@ -196,7 +196,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useRequiredAppLauncherContext = var3;
     var1 = function() {
-        _fun62227: for (var _fun62227_ip = 0;;) switch (_fun62227_ip) {
+        _fun62228: for (var _fun62228_ip = 0;;) switch (_fun62228_ip) {
             case 0:
                 var4 = _closure1_slot2;
                 var3 = var4.useRef;
@@ -277,8 +277,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var2.bind(var3)(var1);
                 var2 = null;
                 if (!(var2 != var1)) {
-                    _fun62227_ip = 269;
-                    continue _fun62227
+                    _fun62228_ip = 269;
+                    continue _fun62228
                 }
             case 266:
                 var0 = var1;
@@ -288,4 +288,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useAppLauncherContext = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 3719, 7763, 7764, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 3719, 7764, 7765, 2]);

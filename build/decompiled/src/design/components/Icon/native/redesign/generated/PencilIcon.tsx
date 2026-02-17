@@ -33,15 +33,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/Icon/native/redesign/generated/PencilIcon.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Environment: var1
-        _fun71885: for (var _fun71885_ip = 0;;) switch (_fun71885_ip) {
+        _fun71886: for (var _fun71886_ip = 0;;) switch (_fun71886_ip) {
             case 0:
                 var2 = arg0;
                 var5 = var2.style;
                 var6 = var2.color;
                 var3 = undefined;
                 if (!(var6 === var3)) {
-                    _fun71885_ip = 53;
-                    continue _fun71885
+                    _fun71886_ip = 53;
+                    continue _fun71886
                 }
             case 19:
                 var1 = _closure1_slot1;
@@ -83,4 +83,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.PencilIcon = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 671, 3157, 6759, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 671, 3157, 6760, 2]);

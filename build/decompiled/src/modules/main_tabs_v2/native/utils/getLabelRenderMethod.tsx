@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
     var0 = function arg0() {
-        _fun105249: for (var _fun105249_ip = 0;;) switch (_fun105249_ip) {
+        _fun105250: for (var _fun105250_ip = 0;;) switch (_fun105250_ip) {
             case 0:
                 var0 = arg0;
                 var9 = var0.focused;
@@ -33,8 +33,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var6 = 'interactive-text-default';
                 if (!var9) {
-                    _fun105249_ip = 95;
-                    continue _fun105249
+                    _fun105250_ip = 95;
+                    continue _fun105250
                 }
             case 89:
                 var6 = 'interactive-text-active';
@@ -42,13 +42,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.color = var6;
                 var6 = 'beside-icon';
                 if (!(var6 !== var8)) {
-                    _fun105249_ip = 119;
-                    continue _fun105249
+                    _fun105250_ip = 119;
+                    continue _fun105250
                 }
             case 111:
                 var6 = var5.titleBelow;
-                _fun105249_ip = 125;
-                continue _fun105249;
+                _fun105250_ip = 125;
+                continue _fun105250;
             case 119:
                 var6 = var5.titleBeside;
             case 125:

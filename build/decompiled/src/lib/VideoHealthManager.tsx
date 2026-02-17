@@ -115,7 +115,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = 'calculateFps';
         var0.key = var1;
         var1 = function arg0, arg1, arg2() {
-            _fun94544: for (var _fun94544_ip = 0;;) switch (_fun94544_ip) {
+            _fun94545: for (var _fun94545_ip = 0;;) switch (_fun94545_ip) {
                 case 0:
                     var2 = arg0;
                     var4 = arg1;
@@ -125,22 +125,22 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var5 = var1[var2];
                     var1 = -1;
                     if (!(var1 !== var5)) {
-                        _fun94544_ip = 199;
-                        continue _fun94544
+                        _fun94545_ip = 199;
+                        continue _fun94545
                     }
                 case 35:
                     var1 = var0.prevFramesCodec;
                     var1 = var1[var2];
                     if (!(!(var4 < var1))) {
-                        _fun94544_ip = 199;
-                        continue _fun94544
+                        _fun94545_ip = 199;
+                        continue _fun94545
                     }
                 case 52:
                     var1 = var0.prevTimestamp;
                     var1 = var1[var2];
                     if (!(!(var3 < var1))) {
-                        _fun94544_ip = 199;
-                        continue _fun94544
+                        _fun94545_ip = 199;
+                        continue _fun94545
                     }
                 case 69:
                     var1 = var0.prevTimestamp;
@@ -150,8 +150,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = var1 * var6;
                     var1 = var5 + var1;
                     if (!(!(var3 > var1))) {
-                        _fun94544_ip = 199;
-                        continue _fun94544
+                        _fun94545_ip = 199;
+                        continue _fun94545
                     }
                 case 103:
                     var1 = var0.prevTimestamp;
@@ -159,8 +159,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = 900;
                     var1 = var5 + var1;
                     if (!(!(var3 < var1))) {
-                        _fun94544_ip = 189;
-                        continue _fun94544
+                        _fun94545_ip = 189;
+                        continue _fun94545
                     }
                 case 127:
                     var5 = var0.elapsedSeconds;
@@ -200,23 +200,23 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = 'updateFps';
         var0.key = var5;
         var5 = function arg0, arg1, arg2() {
-            _fun94545: for (var _fun94545_ip = 0;;) switch (_fun94545_ip) {
+            _fun94546: for (var _fun94546_ip = 0;;) switch (_fun94546_ip) {
                 case 0:
                     var2 = arg0;
                     var1 = this;
                     var _closure3_slot0 = var1;
                     var0 = var1.disabled;
                     if (var0) {
-                        _fun94545_ip = 534;
-                        continue _fun94545
+                        _fun94546_ip = 534;
+                        continue _fun94546
                     }
                 case 23:
                     var4 = var1.streamDisabledUsers;
                     var0 = var4.has;
                     var0 = var0.bind(var4)(var2);
                     if (var0) {
-                        _fun94545_ip = 534;
-                        continue _fun94545
+                        _fun94546_ip = 534;
+                        continue _fun94546
                     }
                 case 45:
                     var5 = var1.calculateFps;
@@ -225,8 +225,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var6 = var5.bind(var1)(var2, var4, var0);
                     var0 = 0;
                     if (!(!(var6 < var0))) {
-                        _fun94545_ip = 530;
-                        continue _fun94545
+                        _fun94546_ip = 530;
+                        continue _fun94546
                     }
                 case 75:
                     var0 = global;
@@ -234,8 +234,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var4 = var5.isFinite;
                     var4 = var4.bind(var5)(var6);
                     if (!var4) {
-                        _fun94545_ip = 530;
-                        continue _fun94545
+                        _fun94546_ip = 530;
+                        continue _fun94546
                     }
                 case 100:
                     var4 = var1.perUserFpsWindow;
@@ -247,8 +247,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var5 = var4.length;
                     var4 = var1.windowLength;
                     if (!(!(var5 < var4))) {
-                        _fun94545_ip = 526;
-                        continue _fun94545
+                        _fun94546_ip = 526;
+                        continue _fun94546
                     }
                 case 148:
                     var4 = var1.perUserFpsWindow;
@@ -256,8 +256,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var5 = var4.length;
                     var4 = var1.windowLength;
                     if (!(var5 > var4)) {
-                        _fun94545_ip = 193;
-                        continue _fun94545
+                        _fun94546_ip = 193;
+                        continue _fun94546
                     }
                 case 173:
                     var4 = var1.perUserFpsWindow;
@@ -279,8 +279,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var4 = var3.length;
                     var3 = var1.fpsWindowBorderlineCount;
                     if (!(!(var4 >= var3))) {
-                        _fun94545_ip = 366;
-                        continue _fun94545
+                        _fun94546_ip = 366;
+                        continue _fun94546
                     }
                 case 238:
                     var3 = var1.currentVideoAutoToggleState;
@@ -288,8 +288,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var3 = _closure1_slot5;
                     var3 = var3.AUTO_PROBING;
                     if (!(var5 === var3)) {
-                        _fun94545_ip = 496;
-                        continue _fun94545
+                        _fun94546_ip = 496;
+                        continue _fun94546
                     }
                 case 268:
                     var6 = var1.currentVideoAutoToggleState;
@@ -311,8 +311,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var4 = var6.bind(var5)(var4);
                     var3 = var3.AUTO_ENABLED;
                     var3 = var4.bind(var5)(var2, var3);
-                    _fun94545_ip = 496;
-                    continue _fun94545;
+                    _fun94546_ip = 496;
+                    continue _fun94546;
                 case 366:
                     var4 = var1.logger;
                     var3 = var4.info;
@@ -342,16 +342,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 case 496:
                     var0 = var1.probingUserId;
                     if (!(var0 === var2)) {
-                        _fun94545_ip = 534;
-                        continue _fun94545
+                        _fun94546_ip = 534;
+                        continue _fun94546
                     }
                 case 506:
                     var0 = undefined;
                     var1.probingUserId = var0;
                     var0 = var1.tryReenableQueue;
                     var0 = var0.bind(var1)();
-                    _fun94545_ip = 534;
-                    continue _fun94545;
+                    _fun94546_ip = 534;
+                    continue _fun94546;
                 case 526:
                     var0 = undefined;
                     return var0;
@@ -369,7 +369,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = 'startReenableBackoffTimer';
         var0.key = var5;
         var5 = function arg0() {
-            _fun94547: for (var _fun94547_ip = 0;;) switch (_fun94547_ip) {
+            _fun94548: for (var _fun94548_ip = 0;;) switch (_fun94548_ip) {
                 case 0:
                     var2 = arg0;
                     var1 = this;
@@ -377,8 +377,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var _closure3_slot1 = var2;
                     var3 = var1.disabled;
                     if (var3) {
-                        _fun94547_ip = 357;
-                        continue _fun94547
+                        _fun94548_ip = 357;
+                        continue _fun94548
                     }
                 case 27:
                     var6 = var1.logger;
@@ -397,16 +397,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var4 = null;
                     var7 = var6;
                     if (!(var4 !== var9)) {
-                        _fun94547_ip = 184;
-                        continue _fun94547
+                        _fun94548_ip = 184;
+                        continue _fun94548
                     }
                 case 102:
                     var4 = 16;
                     var4 = var5 > var4;
                     var7 = var6;
                     if (var4) {
-                        _fun94547_ip = 184;
-                        continue _fun94547
+                        _fun94548_ip = 184;
+                        continue _fun94548
                     }
                 case 115:
                     var8 = var1.elapsedSeconds;
@@ -423,8 +423,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var4 = var8 > var4;
                     var7 = var6;
                     if (var4) {
-                        _fun94547_ip = 184;
-                        continue _fun94547
+                        _fun94548_ip = 184;
+                        continue _fun94548
                     }
                 case 177:
                     var4 = 2;
@@ -499,55 +499,55 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = 'tryReenableQueue';
         var0.key = var5;
         var5 = function() {
-            _fun94550: for (var _fun94550_ip = 0;;) switch (_fun94550_ip) {
+            _fun94551: for (var _fun94551_ip = 0;;) switch (_fun94551_ip) {
                 case 0:
                     var3 = this;
                     var0 = var3.disabled;
                     if (var0) {
-                        _fun94550_ip = 94;
-                        continue _fun94550
+                        _fun94551_ip = 94;
+                        continue _fun94551
                     }
                 case 11:
                     var0 = var3.probingUserId;
                     var2 = null;
                     if (!(var2 != var0)) {
-                        _fun94550_ip = 42;
-                        continue _fun94550
+                        _fun94551_ip = 42;
+                        continue _fun94551
                     }
                 case 23:
                     var1 = var3.probingUserId;
                     var0 = var3.perUserFpsWindow;
                     var0 = var1 in var0;
                     if (var0) {
-                        _fun94550_ip = 94;
-                        continue _fun94550
+                        _fun94551_ip = 94;
+                        continue _fun94551
                     }
                 case 42:
                     var1 = var3.enableQueue;
                     var0 = var1.shift;
                     var1 = var0.bind(var1)();
                     if (!(var2 != var1)) {
-                        _fun94550_ip = 94;
-                        continue _fun94550
+                        _fun94551_ip = 94;
+                        continue _fun94551
                     }
                 case 62:
                     var0 = var3.reenableVideo;
                     var0 = var0.bind(var3)(var1);
                     if (var0) {
-                        _fun94550_ip = 94;
-                        continue _fun94550
+                        _fun94551_ip = 94;
+                        continue _fun94551
                     }
                 case 76:
                     if (!(var2 != var1)) {
-                        _fun94550_ip = 94;
-                        continue _fun94550
+                        _fun94551_ip = 94;
+                        continue _fun94551
                     }
                 case 80:
                     var0 = var3.reenableVideo;
                     var0 = var0.bind(var3)(var1);
                     if (!var0) {
-                        _fun94550_ip = 76;
-                        continue _fun94550
+                        _fun94551_ip = 76;
+                        continue _fun94551
                     }
                 case 94:
                     var0 = undefined;
@@ -560,15 +560,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = 'reenableVideo';
         var0.key = var5;
         var5 = function arg0() {
-            _fun94551: for (var _fun94551_ip = 0;;) switch (_fun94551_ip) {
+            _fun94552: for (var _fun94552_ip = 0;;) switch (_fun94552_ip) {
                 case 0:
                     var4 = arg0;
                     var5 = this;
                     var0 = var5.perUserFpsWindow;
                     var0 = var4 in var0;
                     if (!var0) {
-                        _fun94551_ip = 174;
-                        continue _fun94551
+                        _fun94552_ip = 174;
+                        continue _fun94552
                     }
                 case 22:
                     var8 = var5.logger;
@@ -661,7 +661,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = 'createUser';
         var0.key = var5;
         var5 = function arg0() {
-            _fun94555: for (var _fun94555_ip = 0;;) switch (_fun94555_ip) {
+            _fun94556: for (var _fun94556_ip = 0;;) switch (_fun94556_ip) {
                 case 0:
                     var2 = arg0;
                     var0 = this;
@@ -676,8 +676,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = var0.perUserFpsWindow;
                     var1 = var2 in var1;
                     if (var1) {
-                        _fun94555_ip = 137;
-                        continue _fun94555
+                        _fun94556_ip = 137;
+                        continue _fun94556
                     }
                 case 60:
                     var3 = var0.perUserFpsWindow;
@@ -707,7 +707,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = 'deleteUser';
         var0.key = var5;
         var5 = function arg0() {
-            _fun94556: for (var _fun94556_ip = 0;;) switch (_fun94556_ip) {
+            _fun94557: for (var _fun94557_ip = 0;;) switch (_fun94557_ip) {
                 case 0:
                     var2 = arg0;
                     var1 = this;
@@ -732,8 +732,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var3 = var3.bind(var4)(var2);
                     var3 = var1.probingUserId;
                     if (!(var2 === var3)) {
-                        _fun94556_ip = 131;
-                        continue _fun94556
+                        _fun94557_ip = 131;
+                        continue _fun94557
                     }
                 case 113:
                     var3 = undefined;
@@ -757,7 +757,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = 'disable';
         var0.key = var5;
         var4 = function() {
-            _fun94557: for (var _fun94557_ip = 0;;) switch (_fun94557_ip) {
+            _fun94558: for (var _fun94558_ip = 0;;) switch (_fun94558_ip) {
                 case 0:
                     var5 = this;
                     var0 = true;
@@ -768,8 +768,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             case 34: var7 = var0;
                             var6 = var5.deleteUser;
                             var6 = var6.bind(var5)(var7);
-                            _fun94557_ip = 25;
-                            continue _fun94557;
+                            _fun94558_ip = 25;
+                            continue _fun94558;
                         }
                 case 50:
                     var0 = undefined;
@@ -804,4 +804,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.VideoHealthManager = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 660, 3, 12331, 3528, 667, 3362, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 660, 3, 12332, 3528, 667, 3362, 2]);

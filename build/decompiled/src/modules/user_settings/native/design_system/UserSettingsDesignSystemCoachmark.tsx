@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
     var0 = function() {
-        _fun88800: for (var _fun88800_ip = 0;;) switch (_fun88800_ip) {
+        _fun88801: for (var _fun88801_ip = 0;;) switch (_fun88801_ip) {
             case 0:
                 var0 = _closure1_slot10;
                 var3 = undefined;
@@ -74,8 +74,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var19 = var1[var2];
                 var4 = 'Show tooltip';
                 if (!var0) {
-                    _fun88800_ip = 278;
-                    continue _fun88800
+                    _fun88801_ip = 278;
+                    continue _fun88801
                 }
             case 272:
                 var4 = 'Hide tooltip';
@@ -93,7 +93,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1[3] = var16;
                 var1[4] = var21;
                 var0 = function() { // Environment: var18
-                    _fun88801: for (var _fun88801_ip = 0;;) switch (_fun88801_ip) {
+                    _fun88802: for (var _fun88802_ip = 0;;) switch (_fun88802_ip) {
                         case 0:
                             var0 = {
                                 'title': 'Introducing Coachmark!',
@@ -102,8 +102,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var4 = _closure2_slot3;
                             var3 = 'top';
                             if (!var4) {
-                                _fun88801_ip = 34;
-                                continue _fun88801
+                                _fun88802_ip = 34;
+                                continue _fun88802
                             }
                         case 30:
                             var3 = 'bottom';
@@ -130,8 +130,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var0.experimental_withBlurBackground = var4;
                             var4 = _closure2_slot4;
                             if (!var4) {
-                                _fun88801_ip = 111;
-                                continue _fun88801
+                                _fun88802_ip = 111;
+                                continue _fun88802
                             }
                         case 105:
                             var3 = 'Got it!';
@@ -185,8 +185,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = {};
                 var9 = _closure1_slot7;
                 if (var16) {
-                    _fun88800_ip = 505;
-                    continue _fun88800
+                    _fun88801_ip = 505;
+                    continue _fun88801
                 }
             case 454:
                 var5 = _closure1_slot5;
@@ -201,8 +201,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4.style = var6;
                 var4.children = var10;
                 var5 = var9.bind(var3)(var5, var4);
-                _fun88800_ip = 612;
-                continue _fun88800;
+                _fun88801_ip = 612;
+                continue _fun88801;
             case 505:
                 var6 = _closure1_slot1;
                 var14 = _closure1_slot2;
@@ -277,8 +277,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11.title = var23;
                 var22 = var22 != var21;
                 if (!var22) {
-                    _fun88800_ip = 799;
-                    continue _fun88800
+                    _fun88801_ip = 799;
+                    continue _fun88801
                 }
             case 796:
                 var20 = var21;
@@ -441,4 +441,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 33, 1297, 11475, 9629, 7106, 4092, 4106, 5478, 5484, 5483, 4743, 5263, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 33, 1297, 11476, 9630, 7107, 4092, 4106, 5479, 5485, 5484, 4743, 5263, 2]);

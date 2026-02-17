@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/webauthn/native/WebAuthnScreens.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun80381: for (var _fun80381_ip = 0;;) switch (_fun80381_ip) {
+        _fun80382: for (var _fun80382_ip = 0;;) switch (_fun80382_ip) {
             case 0:
                 var0 = arg0;
                 var6 = var0.isModal;
@@ -89,8 +89,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1.render = var5;
                 var5 = undefined;
                 if (!var6) {
-                    _fun80381_ip = 194;
-                    continue _fun80381
+                    _fun80382_ip = 194;
+                    continue _fun80382
                 }
             case 141:
                 var10 = _closure1_slot0;
@@ -196,8 +196,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1.title = var5;
                 var5 = undefined;
                 if (!var6) {
-                    _fun80381_ip = 494;
-                    continue _fun80381
+                    _fun80382_ip = 494;
+                    continue _fun80382
                 }
             case 441:
                 var9 = _closure1_slot0;
@@ -249,4 +249,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getScreens = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [10192, 33, 10196, 1235, 10207, 4712, 10201, 10212, 10213, 10216, 10217, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [10193, 33, 10197, 1235, 10208, 4712, 10202, 10213, 10214, 10217, 10218, 2]);

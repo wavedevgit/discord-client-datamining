@@ -1,7 +1,7 @@
 // uikit-native/LiveTag.tsx
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun64715: for (var _fun64715_ip = 0;;) switch (_fun64715_ip) {
+    _fun64716: for (var _fun64716_ip = 0;;) switch (_fun64716_ip) {
         case 0:
             var4 = require;
             var11 = metroImportDefault;
@@ -71,8 +71,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var10 = var11.isAndroid;
             var10 = var10.bind(var11)();
             if (!var10) {
-                _fun64715_ip = 266;
-                continue _fun64715
+                _fun64716_ip = 266;
+                continue _fun64716
             }
         case 260:
             var9 = -2;

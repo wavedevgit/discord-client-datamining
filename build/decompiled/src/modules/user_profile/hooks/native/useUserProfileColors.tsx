@@ -33,7 +33,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/user_profile/hooks/native/useUserProfileColors.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun57828: for (var _fun57828_ip = 0;;) switch (_fun57828_ip) {
+        _fun57829: for (var _fun57829_ip = 0;;) switch (_fun57829_ip) {
             case 0:
                 var0 = arg0;
                 var7 = var0.theme;
@@ -128,26 +128,26 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = _closure1_slot4;
                 var5 = var5.LIGHT;
                 if (!(var7 === var5)) {
-                    _fun57828_ip = 435;
-                    continue _fun57828
+                    _fun57829_ip = 435;
+                    continue _fun57829
                 }
             case 432:
                 var4 = var3;
             case 435:
                 var3 = null;
                 if (!(var3 != var6)) {
-                    _fun57828_ip = 680;
-                    continue _fun57828
+                    _fun57829_ip = 680;
+                    continue _fun57829
                 }
             case 444:
                 if (!(var3 != var14)) {
-                    _fun57828_ip = 680;
-                    continue _fun57828
+                    _fun57829_ip = 680;
+                    continue _fun57829
                 }
             case 451:
                 if (!(var3 != var1)) {
-                    _fun57828_ip = 680;
-                    continue _fun57828
+                    _fun57829_ip = 680;
+                    continue _fun57829
                 }
             case 458:
                 var7 = var1.sectionBox;
@@ -161,8 +161,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var5.calculateOverlayedColor;
                 var1 = var13;
                 if (!var11) {
-                    _fun57828_ip = 511;
-                    continue _fun57828
+                    _fun57829_ip = 511;
+                    continue _fun57829
                 }
             case 508:
                 var1 = var10;
@@ -210,4 +210,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useUserProfileColors = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1298, 483, 3252, 5447, 566, 3158, 671, 7052, 668, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1298, 483, 3252, 5448, 566, 3158, 671, 7053, 668, 2]);

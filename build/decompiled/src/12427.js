@@ -1,101 +1,93 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = require;
-    var _closure1_slot0 = var1;
-    var1 = dependencyMap;
-    var _closure1_slot1 = var1;
-    var1 = function(arg0, arg1) { // Environment: var0
-        _fun94977: for (var _fun94977_ip = 0;;) switch (_fun94977_ip) {
+    var1 = function(arg0, arg1, arg2, arg3, arg4) { // Environment: var0
+        _fun94976: for (var _fun94976_ip = 0;;) switch (_fun94976_ip) {
             case 0:
+                var6 = arg0;
                 var5 = arg1;
-                var4 = this;
-                var3 = new Array(0);
-                var1 = _closure1_slot0;
-                var2 = _closure1_slot1;
-                var12 = 0;
-                var0 = var2[var12];
-                var11 = undefined;
-                var6 = var1.bind(var11)(var0);
-                var0 = arg0;
-                var10 = var6.bind(var11)(var0);
+                var4 = arg2;
+                var9 = arg3;
+                var8 = arg4;
+                var3 = this;
+                var1 = var3.directMap;
+                var0 = ':';
+                var0 = var6 + var0;
+                var0 = var0 + var4;
+                var1[var0] = var5;
+                var2 = var6.replace;
+                var0 = /\s+/g;
+                var1 = ' ';
+                var2 = var2.bind(var6)(var0, var1);
+                var0 = var2.split;
+                var1 = var0.bind(var2)(var1);
+                var6 = var1.length;
                 var0 = 1;
-                var0 = var2[var0];
-                var9 = var1.bind(var11)(var0);
-                var0 = 2;
-                var0 = var2[var0];
-                var8 = var1.bind(var11)(var0);
-                var0 = 3;
-                var0 = var2[var0];
-                var7 = var1.bind(var11)(var0);
-                var0 = var10.length;
-                var0 = var12 < var0;
-                var6 = 'shift';
-                var1 = 'keypress';
-                var1 = var1 !== var5;
-                var2 = undefined;
-                if (!var0) {
-                    _fun94977_ip = 191;
-                    continue _fun94977
+                if (!(!(var6 > var0))) {
+                    _fun94976_ip = 271;
+                    continue _fun94976
                 }
-            case 104:
-                var13 = var10[var12];
-                var14 = var9[var13];
-                var0 = var13;
-                if (!var14) {
-                    _fun94977_ip = 122;
-                    continue _fun94977
+            case 96:
+                var0 = var3.getKeyInfo;
+                var10 = var0.bind(var3)(var2, var4);
+                var7 = var3.callbacks;
+                var6 = var10.key;
+                var11 = var3.callbacks;
+                var0 = var10.key;
+                var0 = var11[var0];
+                if (var0) {
+                    _fun94976_ip = 141;
+                    continue _fun94976
                 }
-            case 118:
-                var0 = var9[var13];
-            case 122:
-                var14 = var5;
-                if (!var14) {
-                    _fun94977_ip = 131;
-                    continue _fun94977
-                }
-            case 128:
-                var14 = var1;
-            case 131:
-                if (!var14) {
-                    _fun94977_ip = 138;
-                    continue _fun94977
-                }
-            case 134:
-                var14 = var8[var0];
-            case 138:
-                var13 = var0;
-                if (!var14) {
-                    _fun94977_ip = 158;
-                    continue _fun94977
-                }
-            case 144:
-                var13 = var8[var0];
-                var14 = var3.push;
-                var14 = var14.bind(var3)(var6);
-            case 158:
-                var0 = var7.bind(var11)(var13);
-                if (!var0) {
-                    _fun94977_ip = 176;
-                    continue _fun94977
-                }
-            case 166:
-                var0 = var3.push;
-                var0 = var0.bind(var3)(var13);
-            case 176:
-                var12 = var12 + 1;
-                var0 = var10.length;
-                var2 = var13;
-                if (var12 < var0) {
-                    _fun94977_ip = 104;
-                    continue _fun94977
-                }
-            case 191:
+            case 137:
+                var0 = new Array(0);
+            case 141:
+                var7[var6] = var0;
+                var11 = var3.getMatches;
+                var18 = var10.key;
+                var17 = var10.modifiers;
                 var0 = {};
-                var0.key = var2;
-                var0.modifiers = var3;
-                var1 = var4.pickBestAction;
-                var1 = var1.bind(var4)(var2, var3, var5);
-                var0.action = var1;
+                var12 = var10.action;
+                var0.type = var12;
+                var19 = var3;
+                var16 = var0;
+                var15 = var9;
+                var14 = var2;
+                var13 = var8;
+                var0 = var19[var11](var18, var17, var16, var15, var14, var13, var12);
+                var6 = var3.callbacks;
+                var0 = var10.key;
+                var7 = var6[var0];
+                var0 = 'push';
+                if (!var9) {
+                    _fun94976_ip = 218;
+                    continue _fun94976
+                }
+            case 214:
+                var0 = 'unshift';
+            case 218:
+                var6 = var7[var0];
+                var0 = {};
+                var0.callback = var5;
+                var11 = var10.modifiers;
+                var0.modifiers = var11;
+                var10 = var10.action;
+                var0.action = var10;
+                var0.seq = var9;
+                var0.level = var8;
+                var0.combo = var2;
+                var0 = var6.bind(var7)(var0);
+                _fun94976_ip = 296;
+                continue _fun94976;
+            case 271:
+                var0 = var3.bindSequence;
+                var19 = var3;
+                var18 = var2;
+                var17 = var1;
+                var16 = var5;
+                var15 = var4;
+                var0 = var19[var0](var18, var17, var16, var15, var14);
+            case 296:
+                var0 = undefined;
                 return var0;
         }
     };
@@ -103,4 +95,4 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0.exports = var1;
     var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [12428, 12429, 12430, 12418]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, []);

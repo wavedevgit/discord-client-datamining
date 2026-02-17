@@ -29,14 +29,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/channel_permissions/native/ChannelPermissionsUtils.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function arg0() {
-        _fun91362: for (var _fun91362_ip = 0;;) switch (_fun91362_ip) {
+        _fun91363: for (var _fun91363_ip = 0;;) switch (_fun91363_ip) {
             case 0:
                 var7 = arg0;
                 var6 = arguments[1];
                 var0 = undefined;
                 if (!(var6 === var0)) {
-                    _fun91362_ip = 14;
-                    continue _fun91362
+                    _fun91363_ip = 14;
+                    continue _fun91363
                 }
             case 12:
                 var6 = false;
@@ -120,4 +120,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.openChannelMembersActionSheet = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 796, 3284, 8168, 1307, 11843, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 796, 3284, 8169, 1307, 11844, 2]);

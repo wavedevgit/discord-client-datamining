@@ -37,7 +37,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/messages/native/renderer/system_messages/UserJoinSystemMessage.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun56191: for (var _fun56191_ip = 0;;) switch (_fun56191_ip) {
+        _fun56192: for (var _fun56192_ip = 0;;) switch (_fun56192_ip) {
             case 0:
                 var3 = arg0;
                 var11 = var3.message;
@@ -70,8 +70,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var13 == var8;
                 var7 = undefined;
                 if (var0) {
-                    _fun56191_ip = 150;
-                    continue _fun56191
+                    _fun56192_ip = 150;
+                    continue _fun56192
                 }
             case 140:
                 var0 = var8.getGuildId;
@@ -80,15 +80,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var13 != var7;
                 var5 = undefined;
                 if (!var0) {
-                    _fun56191_ip = 327;
-                    continue _fun56191
+                    _fun56192_ip = 327;
+                    continue _fun56192
                 }
             case 162:
                 var0 = var13 != var8;
                 var5 = undefined;
                 if (!var0) {
-                    _fun56191_ip = 327;
-                    continue _fun56191
+                    _fun56192_ip = 327;
+                    continue _fun56192
                 }
             case 174:
                 var4 = _closure1_slot4;
@@ -96,8 +96,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.bind(var4)(var7);
                 var6 = var13 != var0;
                 if (!var6) {
-                    _fun56191_ip = 218;
-                    continue _fun56191
+                    _fun56192_ip = 218;
+                    continue _fun56192
                 }
             case 195:
                 var4 = var0.systemChannelFlags;
@@ -120,8 +120,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var23[var0](var22, var21, var20, var19, var18);
                 var5 = undefined;
                 if (!var0) {
-                    _fun56191_ip = 327;
-                    continue _fun56191
+                    _fun56192_ip = 327;
+                    continue _fun56192
                 }
             case 268:
                 var7 = _closure1_slot0;
@@ -164,8 +164,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var18 = 'username';
                 var12 = null;
                 if (!(var18 === var15)) {
-                    _fun56191_ip = 443;
-                    continue _fun56191
+                    _fun56192_ip = 443;
+                    continue _fun56192
                 }
             case 440:
                 var12 = var14;
@@ -173,8 +173,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10.linkColor = var12;
                 var12 = null;
                 if (!var17) {
-                    _fun56191_ip = 456;
-                    continue _fun56191
+                    _fun56192_ip = 456;
+                    continue _fun56192
                 }
             case 453:
                 var12 = var16;
@@ -183,8 +183,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12 = 'dot';
                 var12 = var12 === var15;
                 if (!var12) {
-                    _fun56191_ip = 476;
-                    continue _fun56191
+                    _fun56192_ip = 476;
+                    continue _fun56192
                 }
             case 472:
                 var12 = var13 != var14;
@@ -222,4 +222,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.createUserJoinSystemMessage = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1372, 1410, 660, 6755, 6768, 6775, 6778, 6781, 6756, 1235, 6757, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1372, 1410, 660, 6756, 6769, 6776, 6779, 6782, 6757, 1235, 6758, 2]);

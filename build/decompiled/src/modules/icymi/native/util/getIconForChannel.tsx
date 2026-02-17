@@ -27,50 +27,50 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/icymi/native/util/getIconForChannel.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun104665: for (var _fun104665_ip = 0;;) switch (_fun104665_ip) {
+        _fun104666: for (var _fun104666_ip = 0;;) switch (_fun104666_ip) {
             case 0:
                 var0 = arg0;
                 var2 = var0.type;
                 var1 = _closure1_slot2;
                 var1 = var1.GUILD_ANNOUNCEMENT;
                 if (!(var1 !== var2)) {
-                    _fun104665_ip = 284;
-                    continue _fun104665
+                    _fun104666_ip = 284;
+                    continue _fun104666
                 }
             case 28:
                 var1 = _closure1_slot2;
                 var1 = var1.GUILD_VOICE;
                 if (!(var1 !== var2)) {
-                    _fun104665_ip = 254;
-                    continue _fun104665
+                    _fun104666_ip = 254;
+                    continue _fun104666
                 }
             case 45:
                 var1 = _closure1_slot2;
                 var1 = var1.GUILD_STAGE_VOICE;
                 if (!(var1 !== var2)) {
-                    _fun104665_ip = 224;
-                    continue _fun104665
+                    _fun104666_ip = 224;
+                    continue _fun104666
                 }
             case 62:
                 var1 = _closure1_slot2;
                 var1 = var1.GUILD_TEXT;
                 if (!(var1 !== var2)) {
-                    _fun104665_ip = 194;
-                    continue _fun104665
+                    _fun104666_ip = 194;
+                    continue _fun104666
                 }
             case 76:
                 var1 = _closure1_slot2;
                 var1 = var1.GUILD_FORUM;
                 if (!(var1 !== var2)) {
-                    _fun104665_ip = 164;
-                    continue _fun104665
+                    _fun104666_ip = 164;
+                    continue _fun104666
                 }
             case 90:
                 var1 = _closure1_slot2;
                 var1 = var1.GUILD_MEDIA;
                 if (!(var1 !== var2)) {
-                    _fun104665_ip = 134;
-                    continue _fun104665
+                    _fun104666_ip = 134;
+                    continue _fun104666
                 }
             case 104:
                 var3 = _closure1_slot0;

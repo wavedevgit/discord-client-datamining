@@ -72,7 +72,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/channel_list_v2/native/components/StaticChannelIndicator.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun70424: for (var _fun70424_ip = 0;;) switch (_fun70424_ip) {
+        _fun70425: for (var _fun70425_ip = 0;;) switch (_fun70425_ip) {
             case 0:
                 var0 = arg0;
                 var2 = var0.unread;
@@ -90,8 +90,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = _closure1_slot4;
                 var0 = var0.ALL_MESSAGES;
                 if (!(var8 !== var0)) {
-                    _fun70424_ip = 106;
-                    continue _fun70424
+                    _fun70425_ip = 106;
+                    continue _fun70425
                 }
             case 73:
                 var8 = _closure1_slot1;
@@ -101,8 +101,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var8.bind(var4)(var0);
                 var0 = var0.colors;
                 var0 = var0.CHANNELS_DEFAULT;
-                _fun70424_ip = 137;
-                continue _fun70424;
+                _fun70425_ip = 137;
+                continue _fun70425;
             case 106:
                 var9 = _closure1_slot1;
                 var10 = _closure1_slot2;
@@ -115,8 +115,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var3.bind(var5)(var0);
                 var0 = null;
                 if (!var2) {
-                    _fun70424_ip = 217;
-                    continue _fun70424
+                    _fun70425_ip = 217;
+                    continue _fun70425
                 }
             case 147:
                 var3 = _closure1_slot5;

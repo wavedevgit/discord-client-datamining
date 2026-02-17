@@ -1252,4 +1252,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.isAppAvailableInAppLauncher = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [29, 5, 4680, 3457, 12256, 660, 4553, 1346, 1235, 5407, 7979, 478, 1650, 4555, 8013, 5649, 6603, 4000, 1417, 7763, 12257, 4552, 7839, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [29, 5, 4680, 3457, 12257, 660, 4553, 1346, 1235, 5408, 7980, 478, 1650, 4555, 8014, 5650, 6604, 4000, 1417, 7764, 12258, 4552, 7840, 2]);

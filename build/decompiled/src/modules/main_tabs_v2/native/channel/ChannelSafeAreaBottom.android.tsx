@@ -1,7 +1,7 @@
 // modules/main_tabs_v2/native/channel/ChannelSafeAreaBottom.android.tsx
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun91573: for (var _fun91573_ip = 0;;) switch (_fun91573_ip) {
+    _fun91574: for (var _fun91574_ip = 0;;) switch (_fun91574_ip) {
         case 0:
             var4 = require;
             var6 = metroImportDefault;
@@ -22,15 +22,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var1 = var3.isAnimatedAndroidKeyboard;
             var1 = var1.bind(var3)();
             if (var1) {
-                _fun91573_ip = 84;
-                continue _fun91573
+                _fun91574_ip = 84;
+                continue _fun91574
             }
         case 70:
             var1 = 2;
             var1 = var5[var1];
             var1 = var6.bind(var0)(var1);
-            _fun91573_ip = 96;
-            continue _fun91573;
+            _fun91574_ip = 96;
+            continue _fun91574;
         case 84:
             var3 = 1;
             var3 = var5[var3];
@@ -45,4 +45,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2.default = var1;
             return var0;
     }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [9806, 11884, 11885, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [9807, 11885, 11886, 2]);

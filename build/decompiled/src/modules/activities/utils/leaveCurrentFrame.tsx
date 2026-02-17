@@ -27,15 +27,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/activities/utils/leaveCurrentFrame.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function() {
-        _fun63436: for (var _fun63436_ip = 0;;) switch (_fun63436_ip) {
+        _fun63437: for (var _fun63437_ip = 0;;) switch (_fun63437_ip) {
             case 0:
                 var2 = _closure1_slot2;
                 var1 = var2.getConnectedFrame;
                 var3 = var1.bind(var2)();
                 var1 = null;
                 if (!(var1 != var3)) {
-                    _fun63436_ip = 71;
-                    continue _fun63436
+                    _fun63437_ip = 71;
+                    continue _fun63437
                 }
             case 23:
                 var2 = _closure1_slot0;
@@ -57,4 +57,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.leaveCurrentFrame = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [7945, 7948, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [7946, 7949, 2]);

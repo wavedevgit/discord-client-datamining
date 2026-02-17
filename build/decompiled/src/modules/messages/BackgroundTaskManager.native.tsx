@@ -1,7 +1,7 @@
 // modules/messages/BackgroundTaskManager.native.tsx
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun55017: for (var _fun55017_ip = 0;;) switch (_fun55017_ip) {
+    _fun55018: for (var _fun55018_ip = 0;;) switch (_fun55018_ip) {
         case 0:
             var8 = require;
             var4 = metroImportDefault;
@@ -19,13 +19,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = undefined;
                 var0 = function*() { // Environment: var0
                     var0 = function*() { // Original name: ?anon_0_, environment: var0
-                        _fun55020: for (var _fun55020_ip = 0;;) switch (_fun55020_ip) {
+                        _fun55021: for (var _fun55021_ip = 0;;) switch (_fun55021_ip) {
                             case 0:
                                 StartGenerator();
                                 ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
                                 if (var1) {
-                                    _fun55020_ip = 100;
-                                    continue _fun55020
+                                    _fun55021_ip = 100;
+                                    continue _fun55021
                                 }
                             case 9:
                                 var3 = _closure1_slot5;
@@ -41,8 +41,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             case 42:
                                 ResumeGenerator(result_out_reg = 1, return_bool_out_reg = 5);
                                 if (var5) {
-                                    _fun55020_ip = 79;
-                                    continue _fun55020
+                                    _fun55021_ip = 79;
+                                    continue _fun55021
                                 }
                             case 48:
                                 _closure4_slot0 = var1;
@@ -101,8 +101,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var4 = var4.bind(var5)();
             var5 = -1;
             if (var4) {
-                _fun55017_ip = 145;
-                continue _fun55017
+                _fun55018_ip = 145;
+                continue _fun55018
             }
         case 133:
             var3 = var3.DCDBackgroundTaskManager;
@@ -110,7 +110,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         case 145:
             var _closure1_slot5 = var5;
             var4 = function arg0() {
-                _fun55022: for (var _fun55022_ip = 0;;) switch (_fun55022_ip) {
+                _fun55023: for (var _fun55023_ip = 0;;) switch (_fun55023_ip) {
                     case 0:
                         var0 = arg0;
                         var2 = _closure1_slot0;
@@ -122,8 +122,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var1 = var2.isAndroid;
                         var1 = var1.bind(var2)();
                         if (var1) {
-                            _fun55022_ip = 63;
-                            continue _fun55022
+                            _fun55023_ip = 63;
+                            continue _fun55023
                         }
                     case 41:
                         var1 = _closure1_slot4;
@@ -134,8 +134,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     case 63:
                         var1 = null;
                         if (!(var1 != var0)) {
-                            _fun55022_ip = 187;
-                            continue _fun55022
+                            _fun55023_ip = 187;
+                            continue _fun55023
                         }
                     case 69:
                         var7 = var0.title;
@@ -189,13 +189,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             };
             var _closure1_slot6 = var4;
             var3 = function arg0() {
-                _fun55024: for (var _fun55024_ip = 0;;) switch (_fun55024_ip) {
+                _fun55025: for (var _fun55025_ip = 0;;) switch (_fun55025_ip) {
                     case 0:
                         var2 = arg0;
                         var1 = _closure1_slot5;
                         if (!(var2 !== var1)) {
-                            _fun55024_ip = 103;
-                            continue _fun55024
+                            _fun55025_ip = 103;
+                            continue _fun55025
                         }
                     case 14:
                         var4 = _closure1_slot0;
@@ -207,16 +207,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var1 = var4.isAndroid;
                         var1 = var1.bind(var4)();
                         if (var1) {
-                            _fun55024_ip = 72;
-                            continue _fun55024
+                            _fun55025_ip = 72;
+                            continue _fun55025
                         }
                     case 49:
                         var1 = _closure1_slot4;
                         var4 = var1.DCDBackgroundTaskManager;
                         var1 = var4.endBackgroundTask;
                         var1 = var1.bind(var4)(var2);
-                        _fun55024_ip = 103;
-                        continue _fun55024;
+                        _fun55025_ip = 103;
+                        continue _fun55025;
                     case 72:
                         var1 = _closure1_slot1;
                         var4 = _closure1_slot2;
@@ -249,4 +249,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2.backgroundify = var1;
             return var0;
     }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 27, 478, 6624, 6625, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 27, 478, 6625, 6626, 2]);

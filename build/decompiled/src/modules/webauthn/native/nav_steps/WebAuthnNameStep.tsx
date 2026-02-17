@@ -60,7 +60,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/webauthn/native/nav_steps/WebAuthnNameStep.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun80497: for (var _fun80497_ip = 0;;) switch (_fun80497_ip) {
+        _fun80498: for (var _fun80498_ip = 0;;) switch (_fun80498_ip) {
             case 0:
                 var1 = arg0;
                 var2 = var1.ticket;
@@ -104,8 +104,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12 = '';
                 var1 = var12;
                 if (!var10) {
-                    _fun80497_ip = 179;
-                    continue _fun80497
+                    _fun80498_ip = 179;
+                    continue _fun80498
                 }
             case 176:
                 var1 = var9;
@@ -121,13 +121,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = undefined;
                     var1 = function*() { // Environment: var0
                         var0 = function*() { // Original name: ?anon_0_, environment: var0
-                            _fun80500: for (var _fun80500_ip = 0;;) switch (_fun80500_ip) {
+                            _fun80501: for (var _fun80501_ip = 0;;) switch (_fun80501_ip) {
                                 case 0:
                                     StartGenerator();
                                     ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
                                     if (var1) {
-                                        _fun80500_ip = 353;
-                                        continue _fun80500
+                                        _fun80501_ip = 353;
+                                        continue _fun80501
                                     }
                                 case 10: // try_start_0 // try_start_1
                                     var3 = _closure2_slot3;
@@ -150,8 +150,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 case 78:
                                     ResumeGenerator(result_out_reg = 1, return_bool_out_reg = 5);
                                     if (var5) {
-                                        _fun80500_ip = 277;
-                                        continue _fun80500
+                                        _fun80501_ip = 277;
+                                        continue _fun80501
                                     }
                                 case 87: // try_end0 // try_end1
                                     var6 = _closure2_slot3;
@@ -338,4 +338,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 57, 31, 10192, 33, 1297, 1469, 4573, 3155, 1235, 9629, 3277, 5440, 5469, 4882, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 57, 31, 10193, 33, 1297, 1469, 4573, 3155, 1235, 9630, 3277, 5441, 5470, 4882, 2]);

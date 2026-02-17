@@ -155,7 +155,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/stage_channels/native/components/StageAudienceNotificationSheet.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun53748: for (var _fun53748_ip = 0;;) switch (_fun53748_ip) {
+        _fun53749: for (var _fun53749_ip = 0;;) switch (_fun53749_ip) {
             case 0:
                 var1 = arg0;
                 var1 = var1.channelId;
@@ -184,8 +184,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var15 == var0;
                 var18 = undefined;
                 if (var1) {
-                    _fun53748_ip = 92;
-                    continue _fun53748
+                    _fun53749_ip = 92;
+                    continue _fun53749
                 }
             case 86:
                 var18 = var0.privacy_level;
@@ -372,8 +372,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13[2] = var21;
                 var15 = null;
                 if (!(var18 === var17)) {
-                    _fun53748_ip = 1054;
-                    continue _fun53748
+                    _fun53749_ip = 1054;
+                    continue _fun53749
                 }
             case 874:
                 var18 = _closure1_slot7;
@@ -464,4 +464,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1377, 4243, 1378, 33, 1297, 671, 3284, 4094, 566, 6524, 4711, 6525, 3940, 1235, 5440, 6526, 6527, 6528, 6529, 4882, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1377, 4243, 1378, 33, 1297, 671, 3284, 4094, 566, 6525, 4711, 6526, 3940, 1235, 5441, 6527, 6528, 6529, 6530, 4882, 2]);

@@ -33,7 +33,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/app_launcher/native/onboarding/banner/AppLauncherOnboardingBanner.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun107908: for (var _fun107908_ip = 0;;) switch (_fun107908_ip) {
+        _fun107909: for (var _fun107909_ip = 0;;) switch (_fun107909_ip) {
             case 0:
                 var0 = arg0;
                 var4 = var0.context;
@@ -47,8 +47,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.DismissibleContent;
                 var1 = var1.APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER;
                 if (!(var1 !== var2)) {
-                    _fun107908_ip = 200;
-                    continue _fun107908
+                    _fun107909_ip = 200;
+                    continue _fun107909
                 }
             case 58:
                 var5 = _closure1_slot0;
@@ -58,8 +58,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.DismissibleContent;
                 var1 = var1.APP_LAUNCHER_ONBOARDING_APPS_BANNER;
                 if (!(var1 !== var2)) {
-                    _fun107908_ip = 166;
-                    continue _fun107908
+                    _fun107909_ip = 166;
+                    continue _fun107909
                 }
             case 91:
                 var5 = _closure1_slot0;
@@ -69,8 +69,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.DismissibleContent;
                 var1 = var1.APP_LAUNCHER_ONBOARDING_BOTS_BANNER;
                 if (!(var1 !== var2)) {
-                    _fun107908_ip = 128;
-                    continue _fun107908
+                    _fun107909_ip = 128;
+                    continue _fun107909
                 }
             case 124:
                 var1 = null;
@@ -111,4 +111,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 1358, 13912, 13923, 13925, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 1358, 13913, 13924, 13926, 2]);

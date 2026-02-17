@@ -2008,4 +2008,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.isMessageComponentsV2 = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 15, 17, 18, 1629, 660, 1384, 3109, 4290, 6631, 5412, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 15, 17, 18, 1629, 660, 1384, 3109, 4290, 6632, 5413, 2]);

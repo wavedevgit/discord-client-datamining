@@ -14,13 +14,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var3 = _closure1_slot3;
         var2 = function*(arg0) { // Environment: var2
             var0 = function*(arg0) { // Original name: ?anon_0_, environment: var0
-                _fun64240: for (var _fun64240_ip = 0;;) switch (_fun64240_ip) {
+                _fun64241: for (var _fun64241_ip = 0;;) switch (_fun64241_ip) {
                     case 0:
                         StartGenerator();
                         ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
                         if (var1) {
-                            _fun64240_ip = 103;
-                            continue _fun64240
+                            _fun64241_ip = 103;
+                            continue _fun64241
                         }
                     case 7:
                         var4 = _closure1_slot1;
@@ -38,16 +38,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     case 50:
                         ResumeGenerator(result_out_reg = 1, return_bool_out_reg = 4);
                         if (var4) {
-                            _fun64240_ip = 100;
-                            continue _fun64240
+                            _fun64241_ip = 100;
+                            continue _fun64241
                         }
                     case 56:
                         var5 = _closure1_slot4;
                         var4 = var5.isCurrentClientInVoiceChannel;
                         var4 = var4.bind(var5)();
                         if (!var4) {
-                            _fun64240_ip = 97;
-                            continue _fun64240
+                            _fun64241_ip = 97;
+                            continue _fun64241
                         }
                     case 73:
                         var4 = _closure1_slot0;
@@ -120,4 +120,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 3520, 7968, 7969, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 3520, 7969, 7970, 2]);

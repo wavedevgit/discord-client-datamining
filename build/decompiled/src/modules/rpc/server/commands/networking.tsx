@@ -94,7 +94,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2 = var2.bind(var3)(var1);
         var1 = var2.then;
         var0 = function(arg0) { // Environment: var0
-            _fun98714: for (var _fun98714_ip = 0;;) switch (_fun98714_ip) {
+            _fun98715: for (var _fun98715_ip = 0;;) switch (_fun98715_ip) {
                 case 0:
                     var4 = arg0;
                     var0 = var4[Symbol.iterator];
@@ -105,16 +105,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var3 = var2 === var6;
                     var2 = undefined;
                     if (var3) {
-                        _fun98714_ip = 27;
-                        continue _fun98714
+                        _fun98715_ip = 27;
+                        continue _fun98715
                     }
                 case 24:
                     var2 = var1;
                 case 27:
                     var1 = undefined;
                     if (var3) {
-                        _fun98714_ip = 57;
-                        continue _fun98714
+                        _fun98715_ip = 57;
+                        continue _fun98715
                     }
                 case 32:
                     var5 = var4().value;
@@ -123,16 +123,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = undefined;
                     var3 = var4;
                     if (var4) {
-                        _fun98714_ip = 57;
-                        continue _fun98714
+                        _fun98715_ip = 57;
+                        continue _fun98715
                     }
                 case 51:
                     var1 = var5;
                     var3 = var4;
                 case 57:
                     if (var3) {
-                        _fun98714_ip = 63;
-                        continue _fun98714
+                        _fun98715_ip = 63;
+                        continue _fun98715
                     }
                 case 60:
                     var0.return();

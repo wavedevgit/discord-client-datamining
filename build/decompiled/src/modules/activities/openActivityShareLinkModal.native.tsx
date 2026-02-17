@@ -83,4 +83,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.closeActivityShareLinkModal = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3717, 4569, 12855, 1307, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3717, 4569, 12856, 1307, 2]);

@@ -29,7 +29,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var3.jsx;
     var _closure1_slot4 = var3;
     var1 = function arg0() {
-        _fun68917: for (var _fun68917_ip = 0;;) switch (_fun68917_ip) {
+        _fun68915: for (var _fun68915_ip = 0;;) switch (_fun68915_ip) {
             case 0:
                 var5 = arg0;
                 var4 = var5.children;
@@ -41,8 +41,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var3 = var5.button;
                 var2 = undefined;
                 if (!(var2 === var3)) {
-                    _fun68917_ip = 70;
-                    continue _fun68917
+                    _fun68915_ip = 70;
+                    continue _fun68915
                 }
             case 47:
                 var7 = _closure1_slot1;
@@ -53,8 +53,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             case 70:
                 var7 = var5.icon;
                 if (!(var2 === var7)) {
-                    _fun68917_ip = 102;
-                    continue _fun68917
+                    _fun68915_ip = 102;
+                    continue _fun68915
                 }
             case 79:
                 var6 = _closure1_slot1;
@@ -71,11 +71,11 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var6 = var8.useToolbarContext;
                 var6 = var6.bind(var8)();
                 var8 = var6.theme;
-                var9 = var6.isPrevDisabled;
+                var9 = var6.isNextDisabled;
                 var6 = null;
                 if (!(var6 != var1)) {
-                    _fun68917_ip = 156;
-                    continue _fun68917
+                    _fun68915_ip = 156;
+                    continue _fun68915
                 }
             case 153:
                 var9 = var1;
@@ -84,14 +84,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = new Array(1);
                 var1[0] = var13;
                 var0 = function(arg0) { // Environment: var0
-                    _fun68918: for (var _fun68918_ip = 0;;) switch (_fun68918_ip) {
+                    _fun68916: for (var _fun68916_ip = 0;;) switch (_fun68916_ip) {
                         case 0:
                             var1 = arg0;
                             var3 = _closure2_slot0;
                             var2 = null;
                             if (!(var2 != var3)) {
-                                _fun68918_ip = 27;
-                                continue _fun68918
+                                _fun68916_ip = 27;
+                                continue _fun68916
                             }
                         case 16:
                             var2 = _closure2_slot0;
@@ -101,8 +101,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var0 = var1.isDefaultPrevented;
                             var0 = var0.bind(var1)();
                             if (var0) {
-                                _fun68918_ip = 86;
-                                continue _fun68918
+                                _fun68916_ip = 86;
+                                continue _fun68916
                             }
                         case 40:
                             var2 = _closure1_slot0;
@@ -113,7 +113,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var0 = var2.bind(var0)(var1);
                             var2 = var0.KeyboardController;
                             var1 = var2.setFocusTo;
-                            var0 = 'prev';
+                            var0 = 'next';
                             var0 = var1.bind(var2)(var0);
                         case 86:
                             var0 = undefined;
@@ -123,8 +123,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var10 = var10.bind(var2)(var0, var1);
                 var1 = _closure1_slot4;
                 var0 = {
-                    'accessibilityHint': 'Moves focus to the previous field',
-                    'accessibilityLabel': 'Previous'
+                    'accessibilityHint': 'Moves focus to the next field',
+                    'accessibilityLabel': 'Next'
                 };
                 var0.disabled = var9;
                 var0.rippleRadius = var12;
@@ -134,20 +134,20 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var11 = 6;
                 var11 = var13[var11];
                 var11 = var12.bind(var2)(var11);
-                var11 = var11.TEST_ID_KEYBOARD_TOOLBAR_PREVIOUS;
+                var11 = var11.TEST_ID_KEYBOARD_TOOLBAR_NEXT;
                 var0.testID = var11;
                 var0.theme = var8;
                 var0.onPress = var10;
                 if (!(var6 == var4)) {
-                    _fun68917_ip = 285;
-                    continue _fun68917
+                    _fun68915_ip = 285;
+                    continue _fun68915
                 }
             case 256:
                 var6 = _closure1_slot4;
                 var5 = {};
                 var5.disabled = var9;
                 var5.theme = var8;
-                var8 = 'prev';
+                var8 = 'next';
                 var5.type = var8;
                 var4 = var6.bind(var2)(var7, var5);
             case 285:
@@ -158,4 +158,4 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 8586, 8587, 8592, 8562, 8585]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 8587, 8588, 8593, 8563, 8586]);

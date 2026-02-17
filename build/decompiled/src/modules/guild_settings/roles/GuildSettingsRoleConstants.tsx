@@ -549,4 +549,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.PermissionTemplates = var3;
     var2.STYLE_CONFIGS = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [14839, 660, 14841, 484, 3103, 809, 1235, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [14840, 660, 14842, 484, 3103, 809, 1235, 2]);

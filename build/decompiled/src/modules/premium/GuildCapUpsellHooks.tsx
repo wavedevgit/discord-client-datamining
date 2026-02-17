@@ -37,7 +37,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/premium/GuildCapUpsellHooks.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function() {
-        _fun79541: for (var _fun79541_ip = 0;;) switch (_fun79541_ip) {
+        _fun79542: for (var _fun79542_ip = 0;;) switch (_fun79542_ip) {
             case 0:
                 var6 = _closure1_slot0;
                 var7 = _closure1_slot2;
@@ -107,15 +107,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var1 = var4.bind(var5)(var3, var1);
                 if (!var0) {
-                    _fun79541_ip = 156;
-                    continue _fun79541
+                    _fun79542_ip = 156;
+                    continue _fun79542
                 }
             case 153:
                 var0 = var2;
             case 156:
                 if (!var0) {
-                    _fun79541_ip = 162;
-                    continue _fun79541
+                    _fun79542_ip = 162;
+                    continue _fun79542
                 }
             case 159:
                 var0 = var1;
@@ -141,7 +141,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.hideInlineGuildCapUpsell = var3;
     var1 = function() {
-        _fun79546: for (var _fun79546_ip = 0;;) switch (_fun79546_ip) {
+        _fun79547: for (var _fun79547_ip = 0;;) switch (_fun79547_ip) {
             case 0:
                 var2 = _closure1_slot3;
                 var0 = var2.getGuildCount;
@@ -160,8 +160,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.bind(var4)();
                 var1 = var2.bind(var3)(var1);
                 if (!var0) {
-                    _fun79546_ip = 77;
-                    continue _fun79546
+                    _fun79547_ip = 77;
+                    continue _fun79547
                 }
             case 74:
                 var0 = !var1;
@@ -171,4 +171,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.isAtGuildCapAndNonPremium = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1410, 1621, 660, 566, 8351, 3116, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1410, 1621, 660, 566, 8352, 3116, 2]);

@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/messages/MessageUtils.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function arg0() {
-        _fun70113: for (var _fun70113_ip = 0;;) switch (_fun70113_ip) {
+        _fun70114: for (var _fun70114_ip = 0;;) switch (_fun70114_ip) {
             case 0:
                 var2 = _closure1_slot3;
                 var0 = var2.getCurrentUser;
@@ -43,15 +43,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = null;
                 var0 = var2 != var0;
                 if (!var0) {
-                    _fun70113_ip = 46;
-                    continue _fun70113
+                    _fun70114_ip = 46;
+                    continue _fun70114
                 }
             case 42:
                 var0 = var2 != var3;
             case 46:
                 if (!var0) {
-                    _fun70113_ip = 85;
-                    continue _fun70113
+                    _fun70114_ip = 85;
+                    continue _fun70114
                 }
             case 49:
                 var4 = _closure1_slot0;
@@ -69,7 +69,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.canViewPotentiallyNSFWChannel = var3;
     var1 = function arg0() {
-        _fun70114: for (var _fun70114_ip = 0;;) switch (_fun70114_ip) {
+        _fun70115: for (var _fun70115_ip = 0;;) switch (_fun70115_ip) {
             case 0:
                 var2 = _closure1_slot2;
                 var1 = var2.getChannel;
@@ -80,8 +80,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var2 == var3;
                 var1 = undefined;
                 if (var4) {
-                    _fun70114_ip = 41;
-                    continue _fun70114
+                    _fun70115_ip = 41;
+                    continue _fun70115
                 }
             case 36:
                 var1 = var3.guild_id;
@@ -89,8 +89,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2 != var1;
                 var0 = undefined;
                 if (!var2) {
-                    _fun70114_ip = 53;
-                    continue _fun70114
+                    _fun70115_ip = 53;
+                    continue _fun70115
                 }
             case 50:
                 var0 = var1;

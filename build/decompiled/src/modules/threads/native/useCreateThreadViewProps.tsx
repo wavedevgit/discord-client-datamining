@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/threads/native/useCreateThreadViewProps.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun77230: for (var _fun77230_ip = 0;;) switch (_fun77230_ip) {
+        _fun77231: for (var _fun77231_ip = 0;;) switch (_fun77231_ip) {
             case 0:
                 var3 = _closure1_slot1;
                 var6 = _closure1_slot2;
@@ -50,7 +50,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = new Array(1);
                 var1[0] = var3;
                 var0 = function() { // Environment: var0
-                    _fun77231: for (var _fun77231_ip = 0;;) switch (_fun77231_ip) {
+                    _fun77232: for (var _fun77232_ip = 0;;) switch (_fun77232_ip) {
                         case 0:
                             var2 = _closure1_slot3;
                             var1 = var2.getChannel;
@@ -59,8 +59,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var4 = var0 == var4;
                             var0 = undefined;
                             if (var4) {
-                                _fun77231_ip = 40;
-                                continue _fun77231
+                                _fun77232_ip = 40;
+                                continue _fun77232
                             }
                         case 30:
                             var3 = _closure2_slot0;
@@ -75,15 +75,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var4 == var3;
                 var0 = null;
                 if (var1) {
-                    _fun77230_ip = 129;
-                    continue _fun77230
+                    _fun77231_ip = 129;
+                    continue _fun77231
                 }
             case 105:
                 var1 = var4 == var2;
                 var0 = null;
                 if (var1) {
-                    _fun77230_ip = 129;
-                    continue _fun77230
+                    _fun77231_ip = 129;
+                    continue _fun77231
                 }
             case 114:
                 var1 = {};
@@ -96,4 +96,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1372, 9084, 632, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1372, 9085, 632, 2]);

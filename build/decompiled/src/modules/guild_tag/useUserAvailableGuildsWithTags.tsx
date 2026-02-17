@@ -49,7 +49,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2 = var0.bind(var1)();
             var1 = var2.filter;
             var0 = function(arg0) { // Environment: var0
-                _fun80907: for (var _fun80907_ip = 0;;) switch (_fun80907_ip) {
+                _fun80908: for (var _fun80908_ip = 0;;) switch (_fun80908_ip) {
                     case 0:
                         var2 = arg0;
                         var4 = _closure1_slot0;
@@ -61,8 +61,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var0 = var4.guildSupportsTags;
                         var0 = var0.bind(var4)(var2);
                         if (!var0) {
-                            _fun80907_ip = 83;
-                            continue _fun80907
+                            _fun80908_ip = 83;
+                            continue _fun80908
                         }
                     case 42:
                         var5 = _closure1_slot2;
@@ -73,8 +73,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var6 = var4 == var5;
                         var3 = undefined;
                         if (var6) {
-                            _fun80907_ip = 79;
-                            continue _fun80907
+                            _fun80908_ip = 79;
+                            continue _fun80908
                         }
                     case 73:
                         var3 = var5.joinedAt;
@@ -82,8 +82,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var0 = var4 != var3;
                     case 83:
                         if (!var0) {
-                            _fun80907_ip = 112;
-                            continue _fun80907
+                            _fun80908_ip = 112;
+                            continue _fun80908
                         }
                     case 86:
                         var3 = var2.profile;
@@ -91,8 +91,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var4 = var2 == var3;
                         var1 = undefined;
                         if (var4) {
-                            _fun80907_ip = 108;
-                            continue _fun80907
+                            _fun80908_ip = 108;
+                            continue _fun80908
                         }
                     case 103:
                         var1 = var3.tag;
@@ -110,4 +110,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useUserAvailableGuildsWithTags = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1686, 1410, 566, 6895, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1686, 1410, 566, 6896, 2]);

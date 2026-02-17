@@ -29,7 +29,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/premium/native/referrals/ReferralMessageUtils.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function() {
-        _fun79548: for (var _fun79548_ip = 0;;) switch (_fun79548_ip) {
+        _fun79549: for (var _fun79549_ip = 0;;) switch (_fun79549_ip) {
             case 0:
                 var2 = _closure1_slot0;
                 var3 = var2.getPremiumTypeSubscription;
@@ -41,16 +41,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var2.isFetchingOffer;
                 var1 = var1.bind(var2)();
                 if (!var0) {
-                    _fun79548_ip = 53;
-                    continue _fun79548
+                    _fun79549_ip = 53;
+                    continue _fun79549
                 }
             case 47:
                 var2 = null;
                 var0 = var2 == var3;
             case 53:
                 if (!var0) {
-                    _fun79548_ip = 59;
-                    continue _fun79548
+                    _fun79549_ip = 59;
+                    continue _fun79549
                 }
             case 56:
                 var0 = !var1;
@@ -60,4 +60,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.canOpenPremiumPlanDirectlyForReferralTrial = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3124, 6722, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3124, 6723, 2]);

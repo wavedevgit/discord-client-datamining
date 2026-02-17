@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
     var0 = function() {
-        _fun115018: for (var _fun115018_ip = 0;;) switch (_fun115018_ip) {
+        _fun115019: for (var _fun115019_ip = 0;;) switch (_fun115019_ip) {
             case 0:
             case 2: // try_start_0
                 var1 = global;
@@ -30,8 +30,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = !var1;
                 var _closure2_slot0 = var1;
             case 72: // try_end0
-                _fun115018_ip = 76;
-                continue _fun115018;
+                _fun115019_ip = 76;
+                continue _fun115019;
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
@@ -41,13 +41,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = !var0;
                     return var0;
                 };
-                _closure1_slot18 = var1;
+                _closure1_slot17 = var1;
                 var0 = undefined;
                 var0 = var1.bind(var0)();
                 return var0;
         }
     };
-    var _closure1_slot18 = var0;
+    var _closure1_slot17 = var0;
     var0 = global;
     var8 = var0.Object;
     var7 = var8.defineProperty;
@@ -105,10 +105,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 11;
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
-    var7 = var3.ApplicationStreamStates;
-    var _closure1_slot14 = var7;
-    var3 = var3.RTCConnectionStates;
-    var _closure1_slot15 = var3;
+    var3 = var3.ApplicationStreamStates;
+    var _closure1_slot14 = var3;
     var3 = 12;
     var3 = var5[var3];
     var10 = var6.bind(var0)(var3);
@@ -122,7 +120,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var14 = var7;
     var3 = new var14[var10](var13, var12);
     var3 = var3 instanceof Object ? var3 : var7;
-    var _closure1_slot16 = var3;
+    var _closure1_slot15 = var3;
     var3 = {};
     var3.Connecting = var9;
     var7 = 'Connecting';
@@ -130,128 +128,104 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.Connected = var8;
     var7 = 'Connected';
     var3[var8] = var7;
-    var _closure1_slot17 = var3;
+    var _closure1_slot16 = var3;
     var3 = 20;
     var3 = var5[var3];
     var3 = var6.bind(var0)(var3);
     var1 = function(arg0) { // Environment: var1
         var3 = function arg0() {
-            _fun115022: for (var _fun115022_ip = 0;;) switch (_fun115022_ip) {
+            _fun115023: for (var _fun115023_ip = 0;;) switch (_fun115023_ip) {
                 case 0:
                     var5 = this;
                     var13 = 0;
                     var0 = copyRestArgs(var13);
                     var7 = _closure1_slot4;
-                    var4 = _closure2_slot1;
-                    var3 = undefined;
-                    var7 = var7.bind(var3)(var5, var4);
+                    var3 = _closure2_slot2;
+                    var4 = undefined;
+                    var7 = var7.bind(var4)(var5, var3);
                     var10 = new Array(0);
                     var13 = var10;
                     var12 = var0;
                     var11 = 0;
                     var0 = arraySpread(var13, var12, var11);
                     var0 = _closure1_slot7;
-                    var9 = var0.bind(var3)(var4);
-                    var4 = _closure1_slot6;
-                    var0 = _closure1_slot18;
-                    var0 = var0.bind(var3)();
+                    var9 = var0.bind(var4)(var3);
+                    var3 = _closure1_slot6;
+                    var0 = _closure1_slot17;
+                    var0 = var0.bind(var4)();
                     if (var0) {
-                        _fun115022_ip = 86;
-                        continue _fun115022
+                        _fun115023_ip = 86;
+                        continue _fun115023
                     }
                 case 73:
                     var0 = var9.apply;
                     var0 = var0.bind(var9)(var5, var10);
-                    _fun115022_ip = 120;
-                    continue _fun115022;
+                    _fun115023_ip = 120;
+                    continue _fun115023;
                 case 86:
                     var6 = global;
                     var8 = var6.Reflect;
                     var7 = var8.construct;
                     var6 = _closure1_slot7;
-                    var6 = var6.bind(var3)(var5);
+                    var6 = var6.bind(var4)(var5);
                     var6 = var6.constructor;
                     var0 = var7.bind(var8)(var9, var10, var6);
                 case 120:
-                    var0 = var4.bind(var3)(var5, var0);
+                    var0 = var3.bind(var4)(var5, var0);
                     var _closure3_slot0 = var0;
-                    var4 = {};
-                    var5 = function arg0() {
-                        var2 = _closure3_slot0;
-                        var1 = var2.handleCallDelete;
-                        var0 = arg0;
-                        var0 = var1.bind(var2)(var0);
-                        return var0;
-                    };
-                    var4.CALL_DELETE = var5;
-                    var5 = function arg0() {
-                        var2 = _closure3_slot0;
-                        var1 = var2.handleChannelDelete;
-                        var0 = arg0;
-                        var0 = var1.bind(var2)(var0);
-                        return var0;
-                    };
-                    var4.CHANNEL_DELETE = var5;
-                    var5 = function arg0() {
-                        var2 = _closure3_slot0;
-                        var1 = var2.handleVoiceChannelSelect;
-                        var0 = arg0;
-                        var0 = var1.bind(var2)(var0);
-                        return var0;
-                    };
-                    var4.VOICE_CHANNEL_SELECT = var5;
-                    var5 = function arg0() {
-                        var2 = _closure3_slot0;
-                        var1 = var2.handleRTCConnectionState;
-                        var0 = arg0;
-                        var0 = var1.bind(var2)(var0);
-                        return var0;
-                    };
-                    var4.RTC_CONNECTION_STATE = var5;
-                    var0.actions = var4;
-                    var4 = global;
-                    var4 = var4.Map;
-                    var5 = var4.prototype;
-                    var5 = Object.create(var5, {
+                    var3 = global;
+                    var3 = var3.Map;
+                    var4 = var3.prototype;
+                    var4 = Object.create(var4, {
                         constructor: {
-                            value: var4
+                            value: var3
                         }
                     });
-                    var14 = var5;
-                    var4 = new var14[var4](var13);
-                    var7 = var4 instanceof Object ? var4 : var5;
-                    var6 = var7.set;
-                    var5 = _closure1_slot13;
-                    var4 = function() { // Environment: var1
+                    var14 = var4;
+                    var3 = new var14[var3](var13);
+                    var6 = var3 instanceof Object ? var3 : var4;
+                    var5 = var6.set;
+                    var4 = _closure1_slot13;
+                    var3 = function() { // Environment: var1
+                        var1 = _closure3_slot0;
+                        var0 = var1.reconcileTelecomState;
+                        var0 = var0.bind(var1)();
+                        return var0;
+                    };
+                    var6 = var5.bind(var6)(var4, var3);
+                    var5 = var6.set;
+                    var4 = _closure1_slot12;
+                    var3 = function() { // Environment: var1
                         var1 = _closure3_slot0;
                         var0 = var1.handleMuteStoreChange;
                         var0 = var0.bind(var1)();
                         return var0;
                     };
-                    var6 = var6.bind(var7)(var5, var4);
-                    var5 = var6.set;
-                    var4 = _closure1_slot10;
+                    var5 = var5.bind(var6)(var4, var3);
+                    var4 = var5.set;
+                    var3 = _closure1_slot10;
                     var2 = function() { // Environment: var1
                         var1 = _closure3_slot0;
                         var0 = var1.handleScreenShareStoreChange;
                         var0 = var0.bind(var1)();
                         return var0;
                     };
-                    var2 = var5.bind(var6)(var4, var2);
+                    var2 = var4.bind(var5)(var3, var2);
                     var0.stores = var2;
-                    var2 = null;
-                    var0.currentCall = var2;
-                    var0.rtcConnectedStartCallPromise = var2;
-                    var4 = false;
-                    var0.isInitialized = var4;
-                    var0.lastMuteState = var2;
-                    var0.lastScreenShareActive = var2;
-                    var0.pendingScreenShareOffSyncTimeout = var2;
+                    var3 = null;
+                    var0.currentCall = var3;
+                    var2 = false;
+                    var0.isInitialized = var2;
+                    var0.lastMuteState = var3;
+                    var0.lastScreenShareActive = var3;
+                    var0.pendingScreenShareOffSyncTimeout = var3;
+                    var0.reconcilePromise = var3;
+                    var0.needsReconcile = var2;
                     var2 = function(arg0) { // Environment: var1
-                        _fun115029: for (var _fun115029_ip = 0;;) switch (_fun115029_ip) {
+                        _fun115027: for (var _fun115027_ip = 0;;) switch (_fun115027_ip) {
                             case 0:
                                 var3 = arg0;
-                                var5 = _closure1_slot16;
+                                var5 = _closure1_slot15;
                                 var4 = var5.info;
                                 var2 = var3.callId;
                                 var1 = 'Received end call request from Call Bar:';
@@ -261,8 +235,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var1 = null;
                                 var1 = var1 != var4;
                                 if (!var1) {
-                                    _fun115029_ip = 81;
-                                    continue _fun115029
+                                    _fun115027_ip = 81;
+                                    continue _fun115027
                                 }
                             case 56:
                                 var3 = var3.callId;
@@ -272,8 +246,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var1 = var3 === var2;
                             case 81:
                                 if (!var1) {
-                                    _fun115029_ip = 116;
-                                    continue _fun115029
+                                    _fun115027_ip = 116;
+                                    continue _fun115027
                                 }
                             case 84:
                                 var2 = _closure1_slot1;
@@ -291,9 +265,9 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     };
                     var0.handleEndCallRequested = var2;
                     var2 = function(arg0) { // Environment: var1
-                        _fun115030: for (var _fun115030_ip = 0;;) switch (_fun115030_ip) {
+                        _fun115028: for (var _fun115028_ip = 0;;) switch (_fun115028_ip) {
                             case 0:
-                                var3 = _closure1_slot16;
+                                var3 = _closure1_slot15;
                                 var2 = var3.info;
                                 var1 = 'Received set foreground request from Call Bar';
                                 var1 = var2.bind(var3)(var1);
@@ -301,8 +275,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var3 = var1.currentCall;
                                 var1 = null;
                                 if (!(var1 != var3)) {
-                                    _fun115030_ip = 144;
-                                    continue _fun115030
+                                    _fun115028_ip = 144;
+                                    continue _fun115028
                                 }
                             case 43:
                                 var3 = arg0;
@@ -311,8 +285,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var3 = var3.currentCall;
                                 var3 = var3.channelId;
                                 if (!(var4 === var3)) {
-                                    _fun115030_ip = 144;
-                                    continue _fun115030
+                                    _fun115028_ip = 144;
+                                    continue _fun115028
                                 }
                             case 71:
                                 var4 = _closure1_slot11;
@@ -322,8 +296,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var2 = var2.channelId;
                                 var3 = var3.bind(var4)(var2);
                                 if (!(var1 != var3)) {
-                                    _fun115030_ip = 144;
-                                    continue _fun115030
+                                    _fun115028_ip = 144;
+                                    continue _fun115028
                                 }
                             case 104:
                                 var2 = _closure1_slot0;
@@ -342,10 +316,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     };
                     var0.handleSetForegroundRequested = var2;
                     var2 = function(arg0) { // Environment: var1
-                        _fun115031: for (var _fun115031_ip = 0;;) switch (_fun115031_ip) {
+                        _fun115029: for (var _fun115029_ip = 0;;) switch (_fun115029_ip) {
                             case 0:
                                 var1 = arg0;
-                                var7 = _closure1_slot16;
+                                var7 = _closure1_slot15;
                                 var6 = var7.info;
                                 var10 = var1.callId;
                                 var8 = var1.isMuted;
@@ -358,8 +332,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var2 = null;
                                 var2 = var2 != var4;
                                 if (!var2) {
-                                    _fun115031_ip = 94;
-                                    continue _fun115031
+                                    _fun115029_ip = 94;
+                                    continue _fun115029
                                 }
                             case 69:
                                 var4 = var1.callId;
@@ -369,22 +343,22 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var2 = var4 === var3;
                             case 94:
                                 if (!var2) {
-                                    _fun115031_ip = 121;
-                                    continue _fun115031
+                                    _fun115029_ip = 121;
+                                    continue _fun115029
                                 }
                             case 97:
-                                var4 = _closure1_slot13;
+                                var4 = _closure1_slot12;
                                 var3 = var4.isSelfMute;
                                 var4 = var3.bind(var4)();
                                 var3 = var1.isMuted;
                                 var2 = var4 !== var3;
                             case 121:
                                 if (!var2) {
-                                    _fun115031_ip = 184;
-                                    continue _fun115031
+                                    _fun115029_ip = 184;
+                                    continue _fun115029
                                 }
                             case 124:
-                                var4 = _closure1_slot16;
+                                var4 = _closure1_slot15;
                                 var3 = var4.info;
                                 var2 = var1.isMuted;
                                 var1 = 'Updating Call Bar -> Discord mute state:';
@@ -403,11 +377,11 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         }
                     };
                     var0.handleMicMuteRequested = var2;
-                    var2 = function(arg0) { // Environment: var1
-                        _fun115032: for (var _fun115032_ip = 0;;) switch (_fun115032_ip) {
+                    var1 = function(arg0) { // Environment: var1
+                        _fun115030: for (var _fun115030_ip = 0;;) switch (_fun115030_ip) {
                             case 0:
                                 var1 = arg0;
-                                var7 = _closure1_slot16;
+                                var7 = _closure1_slot15;
                                 var6 = var7.info;
                                 var11 = var1.callId;
                                 var9 = var1.isEnabled;
@@ -419,8 +393,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var4 = var2.currentCall;
                                 var2 = null;
                                 if (!(var2 != var4)) {
-                                    _fun115032_ip = 413;
-                                    continue _fun115032
+                                    _fun115030_ip = 413;
+                                    continue _fun115030
                                 }
                             case 69:
                                 var5 = var1.callId;
@@ -428,8 +402,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var4 = var4.currentCall;
                                 var4 = var4.channelId;
                                 if (!(var5 === var4)) {
-                                    _fun115032_ip = 413;
-                                    continue _fun115032
+                                    _fun115030_ip = 413;
+                                    continue _fun115030
                                 }
                             case 97:
                                 var5 = _closure1_slot11;
@@ -439,8 +413,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var3 = var3.channelId;
                                 var8 = var4.bind(var5)(var3);
                                 if (!(var2 != var8)) {
-                                    _fun115032_ip = 413;
-                                    continue _fun115032
+                                    _fun115030_ip = 413;
+                                    continue _fun115030
                                 }
                             case 133:
                                 var4 = _closure1_slot10;
@@ -448,8 +422,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var3 = var3.bind(var4)();
                                 var2 = var2 != var3;
                                 if (!var2) {
-                                    _fun115032_ip = 173;
-                                    continue _fun115032
+                                    _fun115030_ip = 173;
+                                    continue _fun115030
                                 }
                             case 154:
                                 var4 = var3.state;
@@ -459,13 +433,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             case 173:
                                 var3 = var1.isEnabled;
                                 if (!var3) {
-                                    _fun115032_ip = 342;
-                                    continue _fun115032
+                                    _fun115030_ip = 342;
+                                    continue _fun115030
                                 }
                             case 185:
                                 if (var2) {
-                                    _fun115032_ip = 342;
-                                    continue _fun115032
+                                    _fun115030_ip = 342;
+                                    continue _fun115030
                                 }
                             case 191:
                                 var7 = _closure1_slot0;
@@ -481,10 +455,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var7 = var7.bind(var5)(var4);
                                 var4 = var7.getOSRequirement;
                                 var4 = var4.bind(var7)();
-                                var7 = _closure1_slot16;
+                                var7 = _closure1_slot15;
                                 if (var4) {
-                                    _fun115032_ip = 273;
-                                    continue _fun115032
+                                    _fun115030_ip = 273;
+                                    continue _fun115030
                                 }
                             case 253:
                                 var8 = var7.warn;
@@ -494,8 +468,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 return var4;
                             case 273:
                                 if (var3) {
-                                    _fun115032_ip = 296;
-                                    continue _fun115032
+                                    _fun115030_ip = 296;
+                                    continue _fun115030
                                 }
                             case 276:
                                 var4 = var7.warn;
@@ -513,24 +487,24 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var4 = var4.bind(var5)(var3);
                                 var3 = var4.startStream;
                                 var3 = var3.bind(var4)();
-                                _fun115032_ip = 413;
-                                continue _fun115032;
+                                _fun115030_ip = 413;
+                                continue _fun115030;
                             case 342:
                                 var1 = var1.isEnabled;
                                 var1 = !var1;
                                 if (!var1) {
-                                    _fun115032_ip = 357;
-                                    continue _fun115032
+                                    _fun115030_ip = 357;
+                                    continue _fun115030
                                 }
                             case 354:
                                 var1 = var2;
                             case 357:
                                 if (!var1) {
-                                    _fun115032_ip = 413;
-                                    continue _fun115032
+                                    _fun115030_ip = 413;
+                                    continue _fun115030
                                 }
                             case 360:
-                                var3 = _closure1_slot16;
+                                var3 = _closure1_slot15;
                                 var2 = var3.info;
                                 var1 = 'Stopping screen share from Call Bar';
                                 var1 = var2.bind(var3)(var1);
@@ -547,675 +521,11 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 return var0;
                         }
                     };
-                    var0.handleScreenShareRequested = var2;
-                    var2 = function() { // Environment: var1
-                        var3 = _closure1_slot3;
-                        var2 = undefined;
-                        var1 = function*(arg0) { // Environment: var0
-                            var0 = function*(arg0) { // Original name: ?anon_0_, environment: var0
-                                _fun115035: for (var _fun115035_ip = 0;;) switch (_fun115035_ip) {
-                                    case 0:
-                                        StartGenerator();
-                                        var1 = arg0;
-                                        ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 2);
-                                        if (var2) {
-                                            _fun115035_ip = 387;
-                                            continue _fun115035
-                                        }
-                                    case 13:
-                                        var9 = var1.guildId;
-                                        var5 = var1.channelId;
-                                        var3 = undefined;
-                                        SaveGenerator(address = 29);
-                                    case 27:
-                                        return var3;
-                                    case 29:
-                                        ResumeGenerator(result_out_reg = 1, return_bool_out_reg = 2);
-                                        if (var2) {
-                                            _fun115035_ip = 384;
-                                            continue _fun115035
-                                        }
-                                    case 38:
-                                        var6 = _closure3_slot0;
-                                        var2 = var6.isEnabled;
-                                        var2 = var2.bind(var6)();
-                                        if (!var2) {
-                                            _fun115035_ip = 348;
-                                            continue _fun115035
-                                        }
-                                    case 61:
-                                        var8 = _closure1_slot16;
-                                        var7 = var8.info;
-                                        var6 = 'Voice channel select:';
-                                        var6 = var7.bind(var8)(var6, var9, var5);
-                                        var6 = null;
-                                        if (!(var6 == var5)) {
-                                            _fun115035_ip = 112;
-                                            continue _fun115035
-                                        }
-                                    case 93:
-                                        var8 = _closure3_slot0;
-                                        var7 = var8.reportCallEnded;
-                                        var7 = var7.bind(var8)();
-                                        _fun115035_ip = 348;
-                                        continue _fun115035;
-                                    case 112:
-                                        var7 = _closure3_slot0;
-                                        var8 = var7.currentCall;
-                                        var10 = var6 == var8;
-                                        var7 = undefined;
-                                        if (var10) {
-                                            _fun115035_ip = 136;
-                                            continue _fun115035
-                                        }
-                                    case 131:
-                                        var7 = var8.channelId;
-                                    case 136:
-                                        if (!(var7 !== var5)) {
-                                            _fun115035_ip = 357;
-                                            continue _fun115035
-                                        }
-                                    case 143:
-                                        var8 = _closure1_slot11;
-                                        var7 = var8.getChannel;
-                                        var10 = var7.bind(var8)(var5);
-                                        if (!(var6 != var10)) {
-                                            _fun115035_ip = 354;
-                                            continue _fun115035
-                                        }
-                                    case 164:
-                                        var7 = var6 != var9;
-                                        var11 = null;
-                                        if (!var7) {
-                                            _fun115035_ip = 187;
-                                            continue _fun115035
-                                        }
-                                    case 173:
-                                        var8 = _closure1_slot12;
-                                        var7 = var8.getGuild;
-                                        var11 = var7.bind(var8)(var9);
-                                    case 187:
-                                        var7 = _closure3_slot0;
-                                        var7 = var7.currentCall;
-                                        var8 = var6 != var7;
-                                        var7 = null;
-                                        if (!var8) {
-                                            _fun115035_ip = 237;
-                                            continue _fun115035
-                                        }
-                                    case 206:
-                                        var8 = _closure3_slot0;
-                                        var8 = var8.currentCall;
-                                        var8 = var8.channelId;
-                                        var7 = null;
-                                        if (!(var8 !== var5)) {
-                                            _fun115035_ip = 237;
-                                            continue _fun115035
-                                        }
-                                    case 227:
-                                        var8 = _closure3_slot0;
-                                        var7 = var8.currentCall;
-                                    case 237:
-                                        var9 = _closure3_slot0;
-                                        var8 = {};
-                                        var8.channelId = var5;
-                                        var13 = var6 == var11;
-                                        var12 = undefined;
-                                        if (var13) {
-                                            _fun115035_ip = 261;
-                                            continue _fun115035
-                                        }
-                                    case 256:
-                                        var12 = var11.id;
-                                    case 261:
-                                        var13 = var6 != var12;
-                                        var11 = null;
-                                        if (!var13) {
-                                            _fun115035_ip = 273;
-                                            continue _fun115035
-                                        }
-                                    case 270:
-                                        var11 = var12;
-                                    case 273:
-                                        var8.guildId = var11;
-                                        var11 = var10.name;
-                                        var12 = var6 != var11;
-                                        var10 = null;
-                                        if (!var12) {
-                                            _fun115035_ip = 294;
-                                            continue _fun115035
-                                        }
-                                    case 291:
-                                        var10 = var11;
-                                    case 294:
-                                        var8.channelName = var10;
-                                        var10 = _closure1_slot17;
-                                        var10 = var10.Connecting;
-                                        var8.state = var10;
-                                        var9.currentCall = var8;
-                                        if (!(var6 != var7)) {
-                                            _fun115035_ip = 348;
-                                            continue _fun115035
-                                        }
-                                    case 323:
-                                        var6 = _closure3_slot0;
-                                        var4 = var6.endCall;
-                                        var4 = var4.bind(var6)(var7);
-                                        SaveGenerator(address = 342);
-                                    case 340:
-                                        return var4;
-                                    case 342:
-                                        ResumeGenerator(result_out_reg = 4, return_bool_out_reg = 6);
-                                        if (var6) {
-                                            _fun115035_ip = 351;
-                                            continue _fun115035
-                                        }
-                                    case 348:
-                                        return var3;
-                                    case 351:
-                                        return var4;
-                                    case 354:
-                                        return var3;
-                                    case 357:
-                                        var4 = _closure1_slot16;
-                                        var3 = var4.info;
-                                        var2 = 'Call already in progress for channel:';
-                                        var2 = var3.bind(var4)(var2, var5);
-                                        var2 = undefined;
-                                        return var2;
-                                    case 384:
-                                        return var1;
-                                    case 387:
-                                        return var0;
-                                }
-                            };
-                            var1 = var0.next;
-                            var1 = var1.bind(var0)();
-                            return var0;
-                        };
-                        var1 = var3.bind(var2)(var1);
-                        var _closure4_slot0 = var1;
-                        var0 = function() { // Environment: var0
-                            var0 = undefined;
-                            var3 = _closure4_slot0;
-                            var2 = var3.apply;
-                            var0 = arguments;
-                            var1 = var0;
-                            var0 = this;
-                            var0 = var2.bind(var3)(var0, var1);
-                            return var0;
-                        };
-                        return var0;
-                    };
-                    var2 = var2.bind(var3)();
-                    var0.handleVoiceChannelSelect = var2;
-                    var2 = function() { // Environment: var1
-                        var3 = _closure1_slot3;
-                        var2 = undefined;
-                        var1 = function*(arg0) { // Environment: var0
-                            var0 = function*(arg0) { // Original name: ?anon_0_, environment: var0
-                                _fun115039: for (var _fun115039_ip = 0;;) switch (_fun115039_ip) {
-                                    case 0:
-                                        StartGenerator();
-                                        var1 = arg0;
-                                        ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 2);
-                                        if (var2) {
-                                            _fun115039_ip = 821;
-                                            continue _fun115039
-                                        }
-                                    case 13:
-                                        var11 = var1.state;
-                                        var3 = var1.channelId;
-                                        var5 = undefined;
-                                        var6 = undefined;
-                                        var9 = undefined;
-                                        var7 = undefined;
-                                        SaveGenerator(address = 35);
-                                    case 33:
-                                        return var5;
-                                    case 35:
-                                        ResumeGenerator(result_out_reg = 1, return_bool_out_reg = 2);
-                                        if (var2) {
-                                            _fun115039_ip = 818;
-                                            continue _fun115039
-                                        }
-                                    case 44:
-                                        var8 = _closure3_slot0;
-                                        var4 = var8.isEnabled;
-                                        var4 = var4.bind(var8)();
-                                        if (!var4) {
-                                            _fun115039_ip = 505;
-                                            continue _fun115039
-                                        }
-                                    case 67:
-                                        var13 = _closure1_slot16;
-                                        var12 = var13.info;
-                                        var10 = var3;
-                                        var8 = 'RTC connection state:';
-                                        var8 = var12.bind(var13)(var8, var11, var10);
-                                        var8 = _closure1_slot15;
-                                        var8 = var8.RTC_CONNECTED;
-                                        if (!(var11 === var8)) {
-                                            _fun115039_ip = 126;
-                                            continue _fun115039
-                                        }
-                                    case 110:
-                                        var8 = _closure3_slot0;
-                                        var8 = var8.currentCall;
-                                        var10 = null;
-                                        if (!(var10 == var8)) {
-                                            _fun115039_ip = 201;
-                                            continue _fun115039
-                                        }
-                                    case 126:
-                                        var8 = _closure1_slot15;
-                                        var8 = var8.DISCONNECTED;
-                                        var8 = var11 === var8;
-                                        if (!var8) {
-                                            _fun115039_ip = 176;
-                                            continue _fun115039
-                                        }
-                                    case 143:
-                                        var11 = _closure3_slot0;
-                                        var11 = var11.currentCall;
-                                        var12 = null;
-                                        var13 = var12 == var11;
-                                        var12 = undefined;
-                                        if (var13) {
-                                            _fun115039_ip = 169;
-                                            continue _fun115039
-                                        }
-                                    case 164:
-                                        var12 = var11.channelId;
-                                    case 169:
-                                        var11 = var3;
-                                        var8 = var12 === var11;
-                                    case 176:
-                                        if (!var8) {
-                                            _fun115039_ip = 505;
-                                            continue _fun115039
-                                        }
-                                    case 182:
-                                        var11 = _closure3_slot0;
-                                        var8 = var11.reportCallEnded;
-                                        var8 = var8.bind(var11)();
-                                        _fun115039_ip = 505;
-                                        continue _fun115039;
-                                    case 201:
-                                        var8 = _closure3_slot0;
-                                        var8 = var8.currentCall;
-                                        var11 = var8.channelId;
-                                        var8 = var3;
-                                        if (!(var11 === var8)) {
-                                            _fun115039_ip = 767;
-                                            continue _fun115039
-                                        }
-                                    case 226:
-                                        var8 = _closure3_slot0;
-                                        var8 = var8.currentCall;
-                                        var11 = var8.state;
-                                        var8 = _closure1_slot17;
-                                        var8 = var8.Connected;
-                                        if (!(var11 !== var8)) {
-                                            _fun115039_ip = 764;
-                                            continue _fun115039
-                                        }
-                                    case 258:
-                                        var8 = _closure3_slot0;
-                                        var8 = var8.rtcConnectedStartCallPromise;
-                                        var12 = var10 == var8;
-                                        var11 = undefined;
-                                        if (var12) {
-                                            _fun115039_ip = 282;
-                                            continue _fun115039
-                                        }
-                                    case 277:
-                                        var11 = var8.channelId;
-                                    case 282:
-                                        var8 = var3;
-                                        if (!(var11 !== var8)) {
-                                            _fun115039_ip = 606;
-                                            continue _fun115039
-                                        }
-                                    case 292:
-                                        var11 = _closure3_slot0;
-                                        var12 = var11.startCall;
-                                        var8 = {};
-                                        var13 = var11.currentCall;
-                                        var13 = var13.channelId;
-                                        var8.channelId = var13;
-                                        var13 = var11.currentCall;
-                                        var13 = var13.guildId;
-                                        var8.guildId = var13;
-                                        var12 = var12.bind(var11)(var8);
-                                        var6 = var12;
-                                        var8 = {};
-                                        var13 = var3;
-                                        var8.channelId = var13;
-                                        var8.promise = var12;
-                                        var11.rtcConnectedStartCallPromise = var8;
-                                    case 362: // try_start_0
-                                        SaveGenerator(address = 366);
-                                    case 364:
-                                        return var6;
-                                    case 366:
-                                        ResumeGenerator(result_out_reg = 6, return_bool_out_reg = 11);
-                                        if (var11) {
-                                            _fun115039_ip = 508;
-                                            continue _fun115039
-                                        }
-                                    case 375:
-                                        var8 = var6;
-                                        if (!var6) {
-                                            _fun115039_ip = 415;
-                                            continue _fun115039
-                                        }
-                                    case 381:
-                                        var11 = _closure3_slot0;
-                                        var11 = var11.currentCall;
-                                        var9 = var11;
-                                        var12 = var10 == var11;
-                                        var11 = undefined;
-                                        if (var12) {
-                                            _fun115039_ip = 408;
-                                            continue _fun115039
-                                        }
-                                    case 403:
-                                        var11 = var9.channelId;
-                                    case 408:
-                                        var9 = var3;
-                                        var8 = var11 === var9;
-                                    case 415:
-                                        if (!var8) {
-                                            _fun115039_ip = 458;
-                                            continue _fun115039
-                                        }
-                                    case 418:
-                                        var11 = _closure3_slot0;
-                                        var9 = var11.currentCall;
-                                        var8 = _closure1_slot17;
-                                        var8 = var8.Connected;
-                                        var9.state = var8;
-                                        var9 = var11.setCallActive;
-                                        var8 = var3;
-                                        var8 = var9.bind(var11)(var8);
-                                    case 458: // try_end0
-                                        var8 = _closure3_slot0;
-                                        var8 = var8.rtcConnectedStartCallPromise;
-                                        var7 = var8;
-                                        var8 = var10 == var8;
-                                        var9 = undefined;
-                                        if (var8) {
-                                            _fun115039_ip = 488;
-                                            continue _fun115039
-                                        }
-                                    case 480:
-                                        var8 = var7;
-                                        var9 = var8.channelId;
-                                    case 488:
-                                        var8 = var3;
-                                        if (!(var9 === var8)) {
-                                            _fun115039_ip = 505;
-                                            continue _fun115039
-                                        }
-                                    case 495:
-                                        var8 = _closure3_slot0;
-                                        var8.rtcConnectedStartCallPromise = var10;
-                                    case 505:
-                                        return var5;
-                                    case 508:
-                                        var8 = _closure3_slot0;
-                                        var8 = var8.rtcConnectedStartCallPromise;
-                                        var7 = var8;
-                                        var8 = var10 == var8;
-                                        var9 = undefined;
-                                        if (var8) {
-                                            _fun115039_ip = 538;
-                                            continue _fun115039
-                                        }
-                                    case 530:
-                                        var8 = var7;
-                                        var9 = var8.channelId;
-                                    case 538:
-                                        var8 = var3;
-                                        if (!(var9 === var8)) {
-                                            _fun115039_ip = 555;
-                                            continue _fun115039
-                                        }
-                                    case 545:
-                                        var8 = _closure3_slot0;
-                                        var8.rtcConnectedStartCallPromise = var10;
-                                    case 555:
-                                        return var6;
-                                    case 558: // catch_target0
-                                        CatchBlockStart(arg_register = 6);
-                                        var8 = _closure3_slot0;
-                                        var8 = var8.rtcConnectedStartCallPromise;
-                                        var7 = var8;
-                                        var9 = var10 == var8;
-                                        var8 = undefined;
-                                        if (var9) {
-                                            _fun115039_ip = 587;
-                                            continue _fun115039
-                                        }
-                                    case 582:
-                                        var8 = var7.channelId;
-                                    case 587:
-                                        var7 = var3;
-                                        if (!(var8 === var7)) {
-                                            _fun115039_ip = 604;
-                                            continue _fun115039
-                                        }
-                                    case 594:
-                                        var7 = _closure3_slot0;
-                                        var7.rtcConnectedStartCallPromise = var10;
-                                    case 604:
-                                        throw var6;
-                                    case 606:
-                                        var6 = _closure3_slot0;
-                                        var6 = var6.rtcConnectedStartCallPromise;
-                                        var6 = var6.promise;
-                                        SaveGenerator(address = 626);
-                                    case 624:
-                                        return var6;
-                                    case 626:
-                                        ResumeGenerator(result_out_reg = 6, return_bool_out_reg = 7);
-                                        if (var7) {
-                                            _fun115039_ip = 761;
-                                            continue _fun115039
-                                        }
-                                    case 635:
-                                        var7 = _closure3_slot0;
-                                        var7 = var7.currentCall;
-                                        var8 = var10 == var7;
-                                        var9 = undefined;
-                                        if (var8) {
-                                            _fun115039_ip = 659;
-                                            continue _fun115039
-                                        }
-                                    case 654:
-                                        var9 = var7.state;
-                                    case 659:
-                                        var7 = var6;
-                                        if (!var7) {
-                                            _fun115039_ip = 696;
-                                            continue _fun115039
-                                        }
-                                    case 665:
-                                        var8 = _closure3_slot0;
-                                        var8 = var8.currentCall;
-                                        var11 = var10 == var8;
-                                        var10 = undefined;
-                                        if (var11) {
-                                            _fun115039_ip = 689;
-                                            continue _fun115039
-                                        }
-                                    case 684:
-                                        var10 = var8.channelId;
-                                    case 689:
-                                        var8 = var3;
-                                        var7 = var10 === var8;
-                                    case 696:
-                                        if (!var7) {
-                                            _fun115039_ip = 713;
-                                            continue _fun115039
-                                        }
-                                    case 699:
-                                        var8 = _closure1_slot17;
-                                        var8 = var8.Connected;
-                                        var7 = var9 !== var8;
-                                    case 713:
-                                        if (!var7) {
-                                            _fun115039_ip = 756;
-                                            continue _fun115039
-                                        }
-                                    case 716:
-                                        var10 = _closure3_slot0;
-                                        var9 = var10.currentCall;
-                                        var8 = _closure1_slot17;
-                                        var8 = var8.Connected;
-                                        var9.state = var8;
-                                        var9 = var10.setCallActive;
-                                        var8 = var3;
-                                        var7 = var9.bind(var10)(var8);
-                                    case 756:
-                                        var7 = undefined;
-                                        return var7;
-                                    case 761:
-                                        return var6;
-                                    case 764:
-                                        return var5;
-                                    case 767:
-                                        var7 = _closure1_slot16;
-                                        var6 = var7.warn;
-                                        var16 = var3;
-                                        var2 = _closure3_slot0;
-                                        var2 = var2.currentCall;
-                                        var14 = var2.channelId;
-                                        var17 = 'RTC connected for different channel:';
-                                        var15 = 'current:';
-                                        var18 = var7;
-                                        var2 = var18[var6](var17, var16, var15, var14, var13);
-                                        var2 = undefined;
-                                        return var2;
-                                    case 818:
-                                        return var1;
-                                    case 821:
-                                        return var0;
-                                }
-                            };
-                            var1 = var0.next;
-                            var1 = var1.bind(var0)();
-                            return var0;
-                        };
-                        var1 = var3.bind(var2)(var1);
-                        var _closure4_slot0 = var1;
-                        var0 = function() { // Environment: var0
-                            var0 = undefined;
-                            var3 = _closure4_slot0;
-                            var2 = var3.apply;
-                            var0 = arguments;
-                            var1 = var0;
-                            var0 = this;
-                            var0 = var2.bind(var3)(var0, var1);
-                            return var0;
-                        };
-                        return var0;
-                    };
-                    var2 = var2.bind(var3)();
-                    var0.handleRTCConnectionState = var2;
-                    var2 = function(arg0) { // Environment: var1
-                        _fun115041: for (var _fun115041_ip = 0;;) switch (_fun115041_ip) {
-                            case 0:
-                                var0 = arg0;
-                                var2 = var0.channelId;
-                                var3 = _closure3_slot0;
-                                var1 = var3.isEnabled;
-                                var1 = var1.bind(var3)();
-                                if (!var1) {
-                                    _fun115041_ip = 97;
-                                    continue _fun115041
-                                }
-                            case 28:
-                                var4 = _closure1_slot16;
-                                var3 = var4.info;
-                                var1 = 'Call deleted:';
-                                var1 = var3.bind(var4)(var1, var2);
-                                var1 = _closure3_slot0;
-                                var3 = var1.currentCall;
-                                var1 = null;
-                                var4 = var1 == var3;
-                                var1 = undefined;
-                                if (var4) {
-                                    _fun115041_ip = 79;
-                                    continue _fun115041
-                                }
-                            case 74:
-                                var1 = var3.channelId;
-                            case 79:
-                                if (!(var1 === var2)) {
-                                    _fun115041_ip = 97;
-                                    continue _fun115041
-                                }
-                            case 83:
-                                var1 = _closure3_slot0;
-                                var0 = var1.reportCallEnded;
-                                var0 = var0.bind(var1)();
-                            case 97:
-                                var0 = undefined;
-                                return var0;
-                        }
-                    };
-                    var0.handleCallDelete = var2;
-                    var1 = function(arg0) { // Environment: var1
-                        _fun115042: for (var _fun115042_ip = 0;;) switch (_fun115042_ip) {
-                            case 0:
-                                var0 = arg0;
-                                var1 = var0.channel;
-                                var3 = _closure3_slot0;
-                                var2 = var3.isEnabled;
-                                var2 = var2.bind(var3)();
-                                if (!var2) {
-                                    _fun115042_ip = 107;
-                                    continue _fun115042
-                                }
-                            case 28:
-                                var5 = _closure1_slot16;
-                                var4 = var5.info;
-                                var3 = var1.id;
-                                var2 = 'Channel deleted:';
-                                var2 = var4.bind(var5)(var2, var3);
-                                var2 = _closure3_slot0;
-                                var3 = var2.currentCall;
-                                var2 = null;
-                                var4 = var2 == var3;
-                                var2 = undefined;
-                                if (var4) {
-                                    _fun115042_ip = 84;
-                                    continue _fun115042
-                                }
-                            case 79:
-                                var2 = var3.channelId;
-                            case 84:
-                                var1 = var1.id;
-                                if (!(var2 === var1)) {
-                                    _fun115042_ip = 107;
-                                    continue _fun115042
-                                }
-                            case 93:
-                                var1 = _closure3_slot0;
-                                var0 = var1.reportCallEnded;
-                                var0 = var0.bind(var1)();
-                            case 107:
-                                var0 = undefined;
-                                return var0;
-                        }
-                    };
-                    var0.handleChannelDelete = var1;
+                    var0.handleScreenShareRequested = var1;
                     return var0;
             }
         };
-        var _closure2_slot1 = var3;
+        var _closure2_slot2 = var3;
         var1 = _closure1_slot8;
         var2 = undefined;
         var0 = arg0;
@@ -1225,25 +535,25 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = '_initialize';
         var4.key = var0;
         var0 = function() {
-            _fun115043: for (var _fun115043_ip = 0;;) switch (_fun115043_ip) {
+            _fun115031: for (var _fun115031_ip = 0;;) switch (_fun115031_ip) {
                 case 0:
                     var1 = this;
                     var0 = var1.isInitialized;
                     var0 = !var0;
                     if (!var0) {
-                        _fun115043_ip = 25;
-                        continue _fun115043
+                        _fun115031_ip = 25;
+                        continue _fun115031
                     }
                 case 15:
                     var2 = var1.isSupported;
                     var0 = var2.bind(var1)();
                 case 25:
                     if (!var0) {
-                        _fun115043_ip = 163;
-                        continue _fun115043
+                        _fun115031_ip = 163;
+                        continue _fun115031
                     }
                 case 31:
-                    var4 = _closure1_slot16;
+                    var4 = _closure1_slot15;
                     var3 = var4.info;
                     var2 = 'Initializing CallKitManager using Telecom framework';
                     var2 = var3.bind(var4)(var2);
@@ -1272,19 +582,19 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             }
         };
         var4.value = var0;
-        var0 = new Array(13);
+        var0 = new Array(15);
         var0[0] = var4;
         var4 = {};
         var7 = '_terminate';
         var4.key = var7;
         var7 = function() {
-            _fun115044: for (var _fun115044_ip = 0;;) switch (_fun115044_ip) {
+            _fun115032: for (var _fun115032_ip = 0;;) switch (_fun115032_ip) {
                 case 0:
                     var1 = this;
                     var0 = var1.isInitialized;
                     if (!var0) {
-                        _fun115044_ip = 123;
-                        continue _fun115044
+                        _fun115032_ip = 129;
+                        continue _fun115032
                     }
                 case 12:
                     var3 = _closure1_slot9;
@@ -1305,10 +615,11 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = var1.reportCallEnded;
                     var0 = var0.bind(var1)();
                     var0 = null;
-                    var1.rtcConnectedStartCallPromise = var0;
+                    var1.reconcilePromise = var0;
                     var0 = false;
+                    var1.needsReconcile = var0;
                     var1.isInitialized = var0;
-                case 123:
+                case 129:
                     var0 = undefined;
                     return var0;
             }
@@ -1319,7 +630,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var7 = 'isSupported';
         var4.key = var7;
         var7 = function() {
-            _fun115045: for (var _fun115045_ip = 0;;) switch (_fun115045_ip) {
+            _fun115033: for (var _fun115033_ip = 0;;) switch (_fun115033_ip) {
                 case 0:
                     var2 = _closure1_slot0;
                     var3 = _closure1_slot2;
@@ -1330,8 +641,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = var2.isMetaQuest;
                     var0 = var0.bind(var2)();
                     if (!var0) {
-                        _fun115045_ip = 64;
-                        continue _fun115045
+                        _fun115033_ip = 64;
+                        continue _fun115033
                     }
                 case 38:
                     var2 = _closure1_slot1;
@@ -1351,14 +662,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var7 = 'isEnabled';
         var4.key = var7;
         var7 = function() {
-            _fun115046: for (var _fun115046_ip = 0;;) switch (_fun115046_ip) {
+            _fun115034: for (var _fun115034_ip = 0;;) switch (_fun115034_ip) {
                 case 0:
                     var1 = this;
                     var0 = var1.isSupported;
                     var0 = var0.bind(var1)();
                     if (!var0) {
-                        _fun115046_ip = 22;
-                        continue _fun115046
+                        _fun115034_ip = 22;
+                        continue _fun115034
                     }
                 case 16:
                     var0 = var1.isInitialized;
@@ -1369,20 +680,418 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4.value = var7;
         var0[3] = var4;
         var4 = {};
-        var7 = 'startCall';
+        var7 = 'reconcileTelecomState';
+        var4.key = var7;
+        var7 = function() {
+            _fun115035: for (var _fun115035_ip = 0;;) switch (_fun115035_ip) {
+                case 0:
+                    var1 = this;
+                    var _closure3_slot0 = var1;
+                    var2 = var1.isEnabled;
+                    var2 = var2.bind(var1)();
+                    if (!var2) {
+                        _fun115035_ip = 80;
+                        continue _fun115035
+                    }
+                case 22:
+                    var3 = var1.reconcilePromise;
+                    var2 = null;
+                    if (!(var2 != var3)) {
+                        _fun115035_ip = 44;
+                        continue _fun115035
+                    }
+                case 34:
+                    var2 = true;
+                    var1.needsReconcile = var2;
+                    _fun115035_ip = 80;
+                    continue _fun115035;
+                case 44:
+                    var2 = var1.doReconcile;
+                    var3 = var2.bind(var1)();
+                    var2 = var3.finally;
+                    var0 = function() { // Environment: var0
+                        _fun115036: for (var _fun115036_ip = 0;;) switch (_fun115036_ip) {
+                            case 0:
+                                var1 = _closure3_slot0;
+                                var2 = null;
+                                var1.reconcilePromise = var2;
+                                var1 = var1.needsReconcile;
+                                if (!var1) {
+                                    _fun115036_ip = 46;
+                                    continue _fun115036
+                                }
+                            case 24:
+                                var1 = _closure3_slot0;
+                                var0 = false;
+                                var1.needsReconcile = var0;
+                                var0 = var1.reconcileTelecomState;
+                                var0 = var0.bind(var1)();
+                            case 46:
+                                var0 = undefined;
+                                return var0;
+                        }
+                    };
+                    var0 = var2.bind(var3)(var0);
+                    var1.reconcilePromise = var0;
+                case 80:
+                    var0 = undefined;
+                    return var0;
+            }
+        };
+        var4.value = var7;
+        var0[4] = var4;
+        var4 = {};
+        var7 = 'doReconcile';
         var4.key = var7;
         var7 = _closure1_slot3;
+        var6 = function*() { // Environment: var5
+            var0 = function*() { // Original name: ?anon_0_, environment: var0
+                _fun115038: for (var _fun115038_ip = 0;;) switch (_fun115038_ip) {
+                    case 0:
+                        StartGenerator();
+                        var7 = this;
+                        ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
+                        if (var1) {
+                            _fun115038_ip = 746;
+                            continue _fun115038
+                        }
+                    case 13:
+                        var2 = _closure1_slot13;
+                        var1 = var2.getChannelId;
+                        var14 = var1.bind(var2)();
+                        var1 = var2.isConnected;
+                        var13 = var1.bind(var2)();
+                        var5 = null;
+                        var8 = null;
+                        if (!var13) {
+                            _fun115038_ip = 59;
+                            continue _fun115038
+                        }
+                    case 47:
+                        var1 = var5 != var14;
+                        var8 = null;
+                        if (!var1) {
+                            _fun115038_ip = 59;
+                            continue _fun115038
+                        }
+                    case 56:
+                        var8 = var14;
+                    case 59:
+                        var12 = _closure1_slot15;
+                        var11 = var12.info;
+                        var1 = var7.currentCall;
+                        var3 = var5 == var1;
+                        var2 = undefined;
+                        var10 = undefined;
+                        if (var3) {
+                            _fun115038_ip = 91;
+                            continue _fun115038
+                        }
+                    case 86:
+                        var10 = var1.channelId;
+                    case 91:
+                        var22 = 'Reconcile: rtc=';
+                        var20 = 'connected=';
+                        var18 = 'target=';
+                        var16 = 'current=';
+                        var23 = var12;
+                        var21 = var14;
+                        var19 = var13;
+                        var17 = var8;
+                        var15 = var10;
+                        var1 = var23[var11](var22, var21, var20, var19, var18, var17, var16, var15, var14);
+                        if (!(var5 == var8)) {
+                            _fun115038_ip = 177;
+                            continue _fun115038
+                        }
+                    case 138:
+                        var1 = var7.currentCall;
+                        if (!(var5 != var1)) {
+                            _fun115038_ip = 606;
+                            continue _fun115038
+                        }
+                    case 151:
+                        var1 = var7.reportCallEnded;
+                        var1 = var1.bind(var7)();
+                        SaveGenerator(address = 165);
+                    case 163:
+                        return var1;
+                    case 165:
+                        ResumeGenerator(result_out_reg = 1, return_bool_out_reg = 3);
+                        if (!var3) {
+                            _fun115038_ip = 606;
+                            continue _fun115038
+                        }
+                    case 174:
+                        return var1;
+                    case 177:
+                        var3 = var7.currentCall;
+                        var6 = var5 == var3;
+                        var1 = undefined;
+                        if (var6) {
+                            _fun115038_ip = 197;
+                            continue _fun115038
+                        }
+                    case 192:
+                        var1 = var3.channelId;
+                    case 197:
+                        if (!(var1 === var8)) {
+                            _fun115038_ip = 229;
+                            continue _fun115038
+                        }
+                    case 201:
+                        var1 = var7.currentCall;
+                        var3 = var1.state;
+                        var1 = _closure1_slot16;
+                        var1 = var1.Connected;
+                        if (!(var3 !== var1)) {
+                            _fun115038_ip = 606;
+                            continue _fun115038
+                        }
+                    case 229:
+                        var1 = var7.currentCall;
+                        var1 = var5 != var1;
+                        if (!var1) {
+                            _fun115038_ip = 257;
+                            continue _fun115038
+                        }
+                    case 242:
+                        var3 = var7.currentCall;
+                        var3 = var3.channelId;
+                        var1 = var3 !== var8;
+                    case 257:
+                        if (!var1) {
+                            _fun115038_ip = 290;
+                            continue _fun115038
+                        }
+                    case 260:
+                        var3 = var7.endCall;
+                        var1 = var7.currentCall;
+                        var1 = var3.bind(var7)(var1);
+                        SaveGenerator(address = 281);
+                    case 279:
+                        return var1;
+                    case 281:
+                        ResumeGenerator(result_out_reg = 1, return_bool_out_reg = 3);
+                        if (var3) {
+                            _fun115038_ip = 743;
+                            continue _fun115038
+                        }
+                    case 290:
+                        var6 = var7.currentCall;
+                        var9 = var5 == var6;
+                        var3 = undefined;
+                        if (var9) {
+                            _fun115038_ip = 310;
+                            continue _fun115038
+                        }
+                    case 305:
+                        var3 = var6.channelId;
+                    case 310:
+                        if (!(var3 !== var8)) {
+                            _fun115038_ip = 413;
+                            continue _fun115038
+                        }
+                    case 314:
+                        var6 = _closure1_slot11;
+                        var3 = var6.getChannel;
+                        var6 = var3.bind(var6)(var8);
+                        if (!(var5 != var6)) {
+                            _fun115038_ip = 740;
+                            continue _fun115038
+                        }
+                    case 335:
+                        var3 = {};
+                        var3.channelId = var8;
+                        var9 = _closure1_slot13;
+                        var8 = var9.getGuildId;
+                        var9 = var8.bind(var9)();
+                        var10 = var5 != var9;
+                        var8 = null;
+                        if (!var10) {
+                            _fun115038_ip = 367;
+                            continue _fun115038
+                        }
+                    case 364:
+                        var8 = var9;
+                    case 367:
+                        var3.guildId = var8;
+                        var8 = var6.name;
+                        var9 = var5 != var8;
+                        var6 = null;
+                        if (!var9) {
+                            _fun115038_ip = 388;
+                            continue _fun115038
+                        }
+                    case 385:
+                        var6 = var8;
+                    case 388:
+                        var3.channelName = var6;
+                        var6 = _closure1_slot16;
+                        var6 = var6.Connecting;
+                        var3.state = var6;
+                        var7.currentCall = var3;
+                    case 413:
+                        var3 = var7.currentCall;
+                        var6 = var3.state;
+                        var3 = _closure1_slot16;
+                        var3 = var3.Connecting;
+                        if (!(var6 === var3)) {
+                            _fun115038_ip = 606;
+                            continue _fun115038
+                        }
+                    case 441:
+                        var3 = var7.currentCall;
+                        var6 = var3.channelId;
+                        var8 = var7.startCall;
+                        var3 = {};
+                        var9 = var7.currentCall;
+                        var9 = var9.channelId;
+                        var3.channelId = var9;
+                        var9 = var7.currentCall;
+                        var9 = var9.guildId;
+                        var3.guildId = var9;
+                        var3 = var8.bind(var7)(var3);
+                        SaveGenerator(address = 499);
+                    case 497:
+                        return var3;
+                    case 499:
+                        ResumeGenerator(result_out_reg = 3, return_bool_out_reg = 8);
+                        if (var8) {
+                            _fun115038_ip = 737;
+                            continue _fun115038
+                        }
+                    case 508:
+                        if (!var3) {
+                            _fun115038_ip = 606;
+                            continue _fun115038
+                        }
+                    case 511:
+                        var8 = var7.currentCall;
+                        var9 = var5 == var8;
+                        var5 = undefined;
+                        if (var9) {
+                            _fun115038_ip = 531;
+                            continue _fun115038
+                        }
+                    case 526:
+                        var5 = var8.channelId;
+                    case 531:
+                        if (!(var5 === var6)) {
+                            _fun115038_ip = 659;
+                            continue _fun115038
+                        }
+                    case 538:
+                        var8 = _closure1_slot13;
+                        var5 = var8.isConnected;
+                        var5 = var5.bind(var8)();
+                        if (!var5) {
+                            _fun115038_ip = 609;
+                            continue _fun115038
+                        }
+                    case 555:
+                        var8 = _closure1_slot13;
+                        var5 = var8.getChannelId;
+                        var5 = var5.bind(var8)();
+                        if (!(var5 === var6)) {
+                            _fun115038_ip = 609;
+                            continue _fun115038
+                        }
+                    case 573:
+                        var8 = var7.currentCall;
+                        var5 = _closure1_slot16;
+                        var5 = var5.Connected;
+                        var8.state = var5;
+                        var5 = var7.setCallActive;
+                        var5 = var5.bind(var7)(var6);
+                    case 606:
+                        return var2;
+                    case 609:
+                        var9 = _closure1_slot15;
+                        var8 = var9.info;
+                        var5 = 'RTCConnectionStore indicates disconnect after startCall, ending call:';
+                        var5 = var8.bind(var9)(var5, var6);
+                        var5 = var7.reportCallEnded;
+                        var5 = var5.bind(var7)();
+                        SaveGenerator(address = 645);
+                    case 643:
+                        return var5;
+                    case 645:
+                        ResumeGenerator(result_out_reg = 5, return_bool_out_reg = 7);
+                        if (var7) {
+                            _fun115038_ip = 656;
+                            continue _fun115038
+                        }
+                    case 651:
+                        var7 = undefined;
+                        return var7;
+                    case 656:
+                        return var5;
+                    case 659:
+                        var8 = _closure1_slot15;
+                        var7 = var8.info;
+                        var5 = 'Call state changed during startCall, ending orphaned native call:';
+                        var5 = var7.bind(var8)(var5, var6);
+                        var5 = _closure1_slot1;
+                        var7 = _closure1_slot2;
+                        var4 = 19;
+                        var4 = var7[var4];
+                        var5 = var5.bind(var2)(var4);
+                        var4 = var5.endCall;
+                        var6 = var4.bind(var5)(var6);
+                        var5 = var6.catch;
+                        var4 = function(arg0) { // Environment: var4
+                            var3 = _closure1_slot15;
+                            var2 = var3.warn;
+                            var1 = 'Failed to end orphaned call:';
+                            var0 = arg0;
+                            var0 = var2.bind(var3)(var1, var0);
+                            var0 = undefined;
+                            return var0;
+                        };
+                        var4 = var5.bind(var6)(var4);
+                        var4 = undefined;
+                        return var4;
+                    case 737:
+                        return var3;
+                    case 740:
+                        return var2;
+                    case 743:
+                        return var1;
+                    case 746:
+                        return var0;
+                }
+            };
+            return var0;
+        };
+        var6 = var7.bind(var2)(var6);
+        var _closure2_slot1 = var6;
+        var6 = function() {
+            var0 = undefined;
+            var3 = _closure2_slot1;
+            var2 = var3.apply;
+            var0 = arguments;
+            var1 = var0;
+            var0 = this;
+            var0 = var2.bind(var3)(var0, var1);
+            return var0;
+        };
+        var4.value = var6;
+        var0[5] = var4;
+        var4 = {};
+        var6 = 'startCall';
+        var4.key = var6;
         var6 = function*(arg0) { // Environment: var5
             var0 = function*(arg0) { // Original name: ?anon_0_, environment: var0
-                _fun115048: for (var _fun115048_ip = 0;;) switch (_fun115048_ip) {
+                _fun115042: for (var _fun115042_ip = 0;;) switch (_fun115042_ip) {
                     case 0:
                         StartGenerator();
                         var2 = arg0;
                         var5 = this;
                         ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 3);
                         if (var3) {
-                            _fun115048_ip = 306;
-                            continue _fun115048
+                            _fun115042_ip = 306;
+                            continue _fun115042
                         }
                     case 16:
                         var8 = undefined;
@@ -1396,28 +1105,28 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var4 = var9 == var2;
                         var3 = undefined;
                         if (var4) {
-                            _fun115048_ip = 56;
-                            continue _fun115048
+                            _fun115042_ip = 56;
+                            continue _fun115042
                         }
                     case 51:
                         var3 = var2.channelId;
                     case 56:
                         var2 = var1;
                         if (!(var3 === var2)) {
-                            _fun115048_ip = 94;
-                            continue _fun115048
+                            _fun115042_ip = 94;
+                            continue _fun115042
                         }
                     case 63:
                         var2 = var5.currentCall;
                         var4 = var2.state;
-                        var3 = _closure1_slot17;
+                        var3 = _closure1_slot16;
                         var3 = var3.Connected;
                         if (!(var4 !== var3)) {
-                            _fun115048_ip = 276;
-                            continue _fun115048
+                            _fun115042_ip = 276;
+                            continue _fun115042
                         }
                     case 94:
-                        var12 = _closure1_slot16;
+                        var12 = _closure1_slot15;
                         var10 = var12.info;
                         var7 = var1;
                         var4 = 'Starting Telecom call:';
@@ -1434,8 +1143,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var10 = var9 != var10;
                         var9 = null;
                         if (!var10) {
-                            _fun115048_ip = 172;
-                            continue _fun115048
+                            _fun115042_ip = 172;
+                            continue _fun115042
                         }
                     case 163:
                         var10 = {};
@@ -1449,17 +1158,17 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     case 182:
                         ResumeGenerator(result_out_reg = 4, return_bool_out_reg = 7);
                         if (var7) {
-                            _fun115048_ip = 231;
-                            continue _fun115048
+                            _fun115042_ip = 231;
+                            continue _fun115042
                         }
                     case 188:
                         var6 = var4;
                         if (var4) {
-                            _fun115048_ip = 228;
-                            continue _fun115048
+                            _fun115042_ip = 228;
+                            continue _fun115042
                         }
                     case 194:
-                        var9 = _closure1_slot16;
+                        var9 = _closure1_slot15;
                         var8 = var9.warn;
                         var7 = 'Native startCall returned false, clearing call state';
                         var7 = var8.bind(var9)(var7);
@@ -1472,7 +1181,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var4;
                     case 234: // catch_target0
                         CatchBlockStart(arg_register = 7);
-                        var6 = _closure1_slot16;
+                        var6 = _closure1_slot15;
                         var4 = var6.warn;
                         var3 = 'Failed to register call with Telecom:';
                         var3 = var4.bind(var6)(var3, var7);
@@ -1482,7 +1191,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var3 = false;
                         return var3;
                     case 276:
-                        var4 = _closure1_slot16;
+                        var4 = _closure1_slot15;
                         var3 = var4.info;
                         var2 = var1;
                         var1 = 'Call already active for channel:';
@@ -1508,7 +1217,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             return var0;
         };
         var4.value = var6;
-        var0[4] = var4;
+        var0[6] = var4;
         var4 = {};
         var6 = 'endCall';
         var4.key = var6;
@@ -1517,7 +1226,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2 = this;
             var _closure3_slot0 = var2;
             var _closure3_slot1 = var1;
-            var6 = _closure1_slot16;
+            var6 = _closure1_slot15;
             var5 = var6.info;
             var4 = var1.channelId;
             var3 = 'Ending call:';
@@ -1544,7 +1253,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2 = var2.bind(var3)(var1);
             var1 = var2.catch;
             var0 = function(arg0) { // Environment: var0
-                var3 = _closure1_slot16;
+                var3 = _closure1_slot15;
                 var2 = var3.warn;
                 var1 = 'Failed to end call:';
                 var0 = arg0;
@@ -1561,30 +1270,30 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             return var0;
         };
         var4.value = var6;
-        var0[5] = var4;
+        var0[7] = var4;
         var4 = {};
         var6 = 'reportCallEnded';
         var4.key = var6;
         var6 = function() {
-            _fun115053: for (var _fun115053_ip = 0;;) switch (_fun115053_ip) {
+            _fun115047: for (var _fun115047_ip = 0;;) switch (_fun115047_ip) {
                 case 0:
                     var2 = this;
-                    var3 = _closure1_slot16;
+                    var3 = _closure1_slot15;
                     var1 = var3.info;
                     var0 = 'Reporting call ended';
                     var0 = var1.bind(var3)(var0);
                     var1 = var2.currentCall;
                     var0 = null;
                     if (!(var0 != var1)) {
-                        _fun115053_ip = 58;
-                        continue _fun115053
+                        _fun115047_ip = 58;
+                        continue _fun115047
                     }
                 case 39:
                     var1 = var2.endCall;
                     var0 = var2.currentCall;
                     var0 = var1.bind(var2)(var0);
-                    _fun115053_ip = 79;
-                    continue _fun115053;
+                    _fun115047_ip = 79;
+                    continue _fun115047;
                 case 58:
                     var1 = global;
                     var3 = var1.Promise;
@@ -1596,12 +1305,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             }
         };
         var4.value = var6;
-        var0[6] = var4;
+        var0[8] = var4;
         var4 = {};
         var6 = 'setCallActive';
         var4.key = var6;
         var6 = function arg0() {
-            _fun115054: for (var _fun115054_ip = 0;;) switch (_fun115054_ip) {
+            _fun115048: for (var _fun115048_ip = 0;;) switch (_fun115048_ip) {
                 case 0:
                     var5 = arg0;
                     var2 = this;
@@ -1611,29 +1320,29 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = undefined;
                     var1 = undefined;
                     if (var4) {
-                        _fun115054_ip = 30;
-                        continue _fun115054
+                        _fun115048_ip = 30;
+                        continue _fun115048
                     }
                 case 25:
                     var1 = var3.channelId;
                 case 30:
                     if (!(var1 !== var5)) {
-                        _fun115054_ip = 60;
-                        continue _fun115054
+                        _fun115048_ip = 60;
+                        continue _fun115048
                     }
                 case 34:
-                    var4 = _closure1_slot16;
+                    var4 = _closure1_slot15;
                     var3 = var4.warn;
                     var1 = 'setCallActive called for unknown channel:';
                     var1 = var3.bind(var4)(var1, var5);
-                    _fun115054_ip = 145;
-                    continue _fun115054;
+                    _fun115048_ip = 145;
+                    continue _fun115048;
                 case 60:
-                    var6 = _closure1_slot16;
+                    var6 = _closure1_slot15;
                     var4 = var6.info;
                     var1 = 'Setting call active:';
                     var1 = var4.bind(var6)(var1, var5);
-                    var4 = _closure1_slot13;
+                    var4 = _closure1_slot12;
                     var1 = var4.isSelfMute;
                     var1 = var1.bind(var4)();
                     var4 = _closure1_slot1;
@@ -1651,7 +1360,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             }
         };
         var4.value = var6;
-        var0[7] = var4;
+        var0[9] = var4;
         var4 = {};
         var6 = 'clearScreenShareState';
         var4.key = var6;
@@ -1663,19 +1372,19 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             return var0;
         };
         var4.value = var6;
-        var0[8] = var4;
+        var0[10] = var4;
         var4 = {};
         var6 = 'clearPendingScreenShareOffSync';
         var4.key = var6;
         var6 = function() {
-            _fun115056: for (var _fun115056_ip = 0;;) switch (_fun115056_ip) {
+            _fun115050: for (var _fun115050_ip = 0;;) switch (_fun115050_ip) {
                 case 0:
                     var1 = this;
                     var2 = var1.pendingScreenShareOffSyncTimeout;
                     var0 = null;
                     if (!(var0 != var2)) {
-                        _fun115056_ip = 42;
-                        continue _fun115056
+                        _fun115050_ip = 42;
+                        continue _fun115050
                     }
                 case 15:
                     var2 = global;
@@ -1690,12 +1399,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             }
         };
         var4.value = var6;
-        var0[9] = var4;
+        var0[11] = var4;
         var4 = {};
         var6 = 'clearCall';
         var4.key = var6;
         var6 = function arg0() {
-            _fun115057: for (var _fun115057_ip = 0;;) switch (_fun115057_ip) {
+            _fun115051: for (var _fun115051_ip = 0;;) switch (_fun115051_ip) {
                 case 0:
                     var2 = this;
                     var3 = var2.currentCall;
@@ -1704,72 +1413,71 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = undefined;
                     var4 = undefined;
                     if (var5) {
-                        _fun115057_ip = 27;
-                        continue _fun115057
+                        _fun115051_ip = 27;
+                        continue _fun115051
                     }
                 case 22:
                     var4 = var3.channelId;
                 case 27:
                     var3 = arg0;
                     if (!(var4 === var3)) {
-                        _fun115057_ip = 74;
-                        continue _fun115057
+                        _fun115051_ip = 68;
+                        continue _fun115051
                     }
                 case 34:
                     var2.currentCall = var1;
-                    var2.rtcConnectedStartCallPromise = var1;
                     var2.lastMuteState = var1;
                     var1 = var2.clearScreenShareState;
                     var1 = var1.bind(var2)();
                     var1 = var2.clearPendingScreenShareOffSync;
                     var1 = var1.bind(var2)();
-                case 74:
+                case 68:
                     return var0;
             }
         };
         var4.value = var6;
-        var0[10] = var4;
+        var0[12] = var4;
         var4 = {};
         var6 = 'handleMuteStoreChange';
         var4.key = var6;
         var6 = function() {
-            _fun115058: for (var _fun115058_ip = 0;;) switch (_fun115058_ip) {
+            _fun115052: for (var _fun115052_ip = 0;;) switch (_fun115052_ip) {
                 case 0:
                     var0 = this;
                     var1 = var0.isEnabled;
                     var1 = var1.bind(var0)();
                     if (!var1) {
-                        _fun115058_ip = 161;
-                        continue _fun115058
+                        _fun115052_ip = 161;
+                        continue _fun115052
                     }
                 case 19:
                     var2 = var0.currentCall;
                     var1 = null;
                     if (!(var1 != var2)) {
-                        _fun115058_ip = 161;
-                        continue _fun115058
+                        _fun115052_ip = 161;
+                        continue _fun115052
                     }
                 case 34:
                     var1 = var0.currentCall;
                     var3 = var1.state;
-                    var2 = _closure1_slot17;
+                    var2 = _closure1_slot16;
                     var2 = var2.Connected;
                     if (!(var3 === var2)) {
-                        _fun115058_ip = 161;
-                        continue _fun115058
+                        _fun115052_ip = 161;
+                        continue _fun115052
                     }
                 case 62:
-                    var3 = _closure1_slot13;
+                    var3 = _closure1_slot12;
                     var2 = var3.isSelfMute;
                     var3 = var2.bind(var3)();
                     var2 = var0.lastMuteState;
                     if (!(var2 !== var3)) {
-                        _fun115058_ip = 161;
-                        continue _fun115058
+                        _fun115052_ip = 161;
+                        continue _fun115052
                     }
                 case 86:
                     var0.lastMuteState = var3;
-                    var5 = _closure1_slot16;
+                    var5 = _closure1_slot15;
                     var4 = var5.info;
                     var2 = 'Syncing Discord -> Call Bar mute state:';
                     var2 = var4.bind(var5)(var2, var3);
@@ -1789,36 +1497,36 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             }
         };
         var4.value = var6;
-        var0[11] = var4;
+        var0[13] = var4;
         var4 = {};
         var6 = 'handleScreenShareStoreChange';
         var4.key = var6;
         var5 = function() {
-            _fun115059: for (var _fun115059_ip = 0;;) switch (_fun115059_ip) {
+            _fun115053: for (var _fun115053_ip = 0;;) switch (_fun115053_ip) {
                 case 0:
                     var0 = this;
                     var _closure3_slot0 = var0;
                     var1 = var0.isEnabled;
                     var1 = var1.bind(var0)();
                     if (!var1) {
-                        _fun115059_ip = 264;
-                        continue _fun115059
+                        _fun115053_ip = 264;
+                        continue _fun115053
                     }
                 case 25:
                     var1 = var0.currentCall;
                     var3 = null;
                     if (!(var3 != var1)) {
-                        _fun115059_ip = 264;
-                        continue _fun115059
+                        _fun115053_ip = 264;
+                        continue _fun115053
                     }
                 case 40:
                     var1 = var0.currentCall;
                     var5 = var1.state;
-                    var4 = _closure1_slot17;
+                    var4 = _closure1_slot16;
                     var4 = var4.Connected;
                     if (!(var5 === var4)) {
-                        _fun115059_ip = 264;
-                        continue _fun115059
+                        _fun115053_ip = 264;
+                        continue _fun115053
                     }
                 case 71:
                     var5 = _closure1_slot10;
@@ -1826,8 +1534,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var4 = var4.bind(var5)();
                     var3 = var3 != var4;
                     if (!var3) {
-                        _fun115059_ip = 111;
-                        continue _fun115059
+                        _fun115053_ip = 111;
+                        continue _fun115053
                     }
                 case 92:
                     var5 = var4.state;
@@ -1837,16 +1545,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 case 111:
                     var4 = var0.lastScreenShareActive;
                     if (!(var4 !== var3)) {
-                        _fun115059_ip = 264;
-                        continue _fun115059
+                        _fun115053_ip = 264;
+                        continue _fun115053
                     }
                 case 124:
                     var0.lastScreenShareActive = var3;
                     var4 = var0.clearPendingScreenShareOffSync;
                     var4 = var4.bind(var0)();
                     if (var3) {
-                        _fun115059_ip = 195;
-                        continue _fun115059
+                        _fun115053_ip = 195;
+                        continue _fun115053
                     }
                 case 143:
                     var3 = var0.currentCall;
@@ -1856,7 +1564,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var5 = var3.setTimeout;
                     var4 = undefined;
                     var3 = function() { // Environment: var2
-                        _fun115060: for (var _fun115060_ip = 0;;) switch (_fun115060_ip) {
+                        _fun115054: for (var _fun115054_ip = 0;;) switch (_fun115054_ip) {
                             case 0:
                                 var2 = _closure3_slot0;
                                 var3 = null;
@@ -1864,8 +1572,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var1 = var2.isEnabled;
                                 var1 = var1.bind(var2)();
                                 if (!var1) {
-                                    _fun115060_ip = 60;
-                                    continue _fun115060
+                                    _fun115054_ip = 60;
+                                    continue _fun115054
                                 }
                             case 28:
                                 var2 = _closure3_slot0;
@@ -1873,8 +1581,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var4 = var3 == var2;
                                 var3 = undefined;
                                 if (var4) {
-                                    _fun115060_ip = 52;
-                                    continue _fun115060
+                                    _fun115054_ip = 52;
+                                    continue _fun115054
                                 }
                             case 47:
                                 var3 = var2.channelId;
@@ -1883,11 +1591,11 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var1 = var3 === var2;
                             case 60:
                                 if (!var1) {
-                                    _fun115060_ip = 130;
-                                    continue _fun115060
+                                    _fun115054_ip = 130;
+                                    continue _fun115054
                                 }
                             case 63:
-                                var4 = _closure1_slot16;
+                                var4 = _closure1_slot15;
                                 var3 = var4.info;
                                 var2 = 'Syncing Discord -> Call Bar screen share state: false (delayed)';
                                 var2 = var3.bind(var4)(var2);
@@ -1910,10 +1618,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = 400;
                     var2 = var5.bind(var4)(var3, var2);
                     var0.pendingScreenShareOffSyncTimeout = var2;
-                    _fun115059_ip = 264;
-                    continue _fun115059;
+                    _fun115053_ip = 264;
+                    continue _fun115053;
                 case 195:
-                    var4 = _closure1_slot16;
+                    var4 = _closure1_slot15;
                     var3 = var4.info;
                     var2 = 'Syncing Discord -> Call Bar screen share state: true';
                     var2 = var3.bind(var4)(var2);
@@ -1934,7 +1642,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             }
         };
         var4.value = var5;
-        var0[12] = var4;
+        var0[14] = var4;
         var0 = var1.bind(var2)(var3, var0);
         return var0;
     };
@@ -1956,4 +1664,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 6, 7, 15, 17, 18, 27, 3713, 1372, 1410, 3476, 660, 3, 4239, 7905, 8240, 8485, 8490, 4114, 14719, 4307, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 6, 7, 15, 17, 18, 27, 3713, 1372, 3476, 3517, 660, 3, 4239, 7906, 8241, 8486, 8491, 4114, 14720, 4307, 2]);

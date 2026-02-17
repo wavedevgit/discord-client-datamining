@@ -265,7 +265,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/channel_following/native/components/ChannelFollowSuccessAlert.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun77142: for (var _fun77142_ip = 0;;) switch (_fun77142_ip) {
+        _fun77143: for (var _fun77143_ip = 0;;) switch (_fun77143_ip) {
             case 0:
                 var1 = _closure1_slot9;
                 var3 = undefined;
@@ -283,13 +283,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var2.isThemeDark;
                 var1 = var1.bind(var2)(var5);
                 if (var1) {
-                    _fun77142_ip = 75;
-                    continue _fun77142
+                    _fun77143_ip = 75;
+                    continue _fun77143
                 }
             case 69:
                 var2 = _closure1_slot6;
-                _fun77142_ip = 79;
-                continue _fun77142;
+                _fun77143_ip = 79;
+                continue _fun77143;
             case 75:
                 var2 = _closure1_slot7;
             case 79:
@@ -407,4 +407,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 9795, 9796, 9797, 9798, 9799, 9800, 1235, 1297, 3252, 3212, 7150, 22, 3936, 3940, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 9796, 9797, 9798, 9799, 9800, 9801, 1235, 1297, 3252, 3212, 7151, 22, 3936, 3940, 2]);

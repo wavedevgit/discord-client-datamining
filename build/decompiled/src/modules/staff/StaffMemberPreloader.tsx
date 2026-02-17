@@ -36,7 +36,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/staff/StaffMemberPreloader.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function() {
-        _fun115001: for (var _fun115001_ip = 0;;) switch (_fun115001_ip) {
+        _fun115002: for (var _fun115002_ip = 0;;) switch (_fun115002_ip) {
             case 0:
                 var2 = _closure1_slot3;
                 var1 = var2.getCurrentUser;
@@ -44,16 +44,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = null;
                 var1 = var3 != var4;
                 if (!var1) {
-                    _fun115001_ip = 35;
-                    continue _fun115001
+                    _fun115002_ip = 35;
+                    continue _fun115002
                 }
             case 25:
                 var2 = var4.isStaff;
                 var1 = var2.bind(var4)();
             case 35:
                 if (!var1) {
-                    _fun115001_ip = 60;
-                    continue _fun115001
+                    _fun115002_ip = 60;
+                    continue _fun115002
                 }
             case 38:
                 var5 = _closure1_slot2;
@@ -63,8 +63,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var3 != var2;
             case 60:
                 if (!var1) {
-                    _fun115001_ip = 110;
-                    continue _fun115001
+                    _fun115002_ip = 110;
+                    continue _fun115002
                 }
             case 63:
                 var3 = _closure1_slot0;
@@ -87,4 +87,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.preloadStaffMembers = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1410, 1621, 14716, 4685, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1410, 1621, 14717, 4685, 2]);

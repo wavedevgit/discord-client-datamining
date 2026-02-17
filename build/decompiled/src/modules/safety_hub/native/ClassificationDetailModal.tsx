@@ -59,7 +59,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/safety_hub/native/ClassificationDetailModal.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun80057: for (var _fun80057_ip = 0;;) switch (_fun80057_ip) {
+        _fun80058: for (var _fun80058_ip = 0;;) switch (_fun80058_ip) {
             case 0:
                 var1 = arg0;
                 var11 = var1.classificationId;
@@ -69,8 +69,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var1.shouldRedirectToAccountStanding;
                 var3 = undefined;
                 if (!(var10 === var3)) {
-                    _fun80057_ip = 38;
-                    continue _fun80057
+                    _fun80058_ip = 38;
+                    continue _fun80058
                 }
             case 36:
                 var10 = false;
@@ -94,12 +94,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = new Array(1);
                 var2[0] = var1;
                 var1 = function() { // Environment: var0
-                    _fun80058: for (var _fun80058_ip = 0;;) switch (_fun80058_ip) {
+                    _fun80059: for (var _fun80059_ip = 0;;) switch (_fun80059_ip) {
                         case 0:
                             var0 = _closure2_slot4;
                             if (var0) {
-                                _fun80058_ip = 45;
-                                continue _fun80058
+                                _fun80059_ip = 45;
+                                continue _fun80059
                             }
                         case 10:
                             var2 = _closure1_slot2;
@@ -186,15 +186,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var5 = _closure4_slot2;
                             var0.source = var5;
                             var5 = function() {
-                                _fun80064: for (var _fun80064_ip = 0;;) switch (_fun80064_ip) {
+                                _fun80065: for (var _fun80065_ip = 0;;) switch (_fun80065_ip) {
                                     case 0:
                                         var2 = _closure4_slot3;
                                         var0 = undefined;
                                         var2 = var2.bind(var0)();
                                         var1 = _closure4_slot1;
                                         if (!var1) {
-                                            _fun80064_ip = 100;
-                                            continue _fun80064
+                                            _fun80065_ip = 100;
+                                            continue _fun80065
                                         }
                                     case 20:
                                         var5 = _closure1_slot0;
@@ -282,4 +282,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 660, 33, 1297, 671, 4569, 4712, 10159, 5983, 10190, 11621, 10167, 1470, 5847, 1235, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 660, 33, 1297, 671, 4569, 4712, 10160, 5984, 10191, 11622, 10168, 1470, 5848, 1235, 2]);

@@ -1,70 +1,63 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun97470: for (var _fun97470_ip = 0;;) switch (_fun97470_ip) {
+    _fun97468: for (var _fun97468_ip = 0;;) switch (_fun97468_ip) {
         case 0:
-            var3 = require;
-            var2 = dependencyMap;
-            var _closure1_slot0 = var3;
-            var _closure1_slot1 = var2;
             var0 = global;
-            var0 = var0.Object;
-            var _closure1_slot2 = var0;
-            var0 = 0;
-            var2 = var2[var0];
-            var0 = undefined;
-            var2 = var3.bind(var0)(var2);
-            if (var2) {
-                _fun97470_ip = 53;
-                continue _fun97470
+            var2 = var0.document;
+            var3 = 'object';
+            var2 = typeof var2;
+            var2 = var3 === var2;
+            if (!var2) {
+                _fun97468_ip = 36;
+                continue _fun97468
             }
-        case 44:
+        case 24:
+            var0 = var0.document;
+            var2 = var0.all;
+        case 36:
+            var _closure1_slot0 = var2;
+            var0 = undefined;
+            if (!(var0 === var2)) {
+                _fun97468_ip = 50;
+                continue _fun97468
+            }
+        case 46:
+            if (!(var0 === var2)) {
+                _fun97468_ip = 59;
+                continue _fun97468
+            }
+        case 50:
             var2 = function(arg0) { // Environment: var1
-                _fun97472: for (var _fun97472_ip = 0;;) switch (_fun97472_ip) {
-                    case 0:
-                        var3 = _closure1_slot0;
-                        var5 = _closure1_slot1;
-                        var0 = 1;
-                        var0 = var5[var0];
-                        var4 = undefined;
-                        var2 = var3.bind(var4)(var0);
-                        var0 = 'Symbol';
-                        var2 = var2.bind(var4)(var0);
-                        var0 = 2;
-                        var0 = var5[var0];
-                        var0 = var3.bind(var4)(var0);
-                        var0 = var0.bind(var4)(var2);
-                        if (!var0) {
-                            _fun97472_ip = 97;
-                            continue _fun97472
-                        }
-                    case 54:
-                        var5 = _closure1_slot0;
-                        var6 = _closure1_slot1;
-                        var3 = 3;
-                        var3 = var6[var3];
-                        var3 = var5.bind(var4)(var3);
-                        var2 = var2.prototype;
-                        var5 = _closure1_slot2;
-                        var1 = arg0;
-                        var1 = var5.bind(var4)(var1);
-                        var0 = var3.bind(var4)(var2, var1);
-                    case 97:
-                        return var0;
-                }
-            };
-            _fun97470_ip = 60;
-            continue _fun97470;
-        case 53:
-            var2 = function(arg0) { // Environment: var1
-                var1 = 'symbol';
+                var1 = 'function';
                 var0 = arg0;
                 var0 = typeof var0;
                 var0 = var1 === var0;
                 return var0;
             };
-        case 60:
+            _fun97468_ip = 66;
+            continue _fun97468;
+        case 59:
+            var2 = function(arg0) { // Environment: var1
+                _fun97469: for (var _fun97469_ip = 0;;) switch (_fun97469_ip) {
+                    case 0:
+                        var2 = arg0;
+                        var1 = 'function';
+                        var0 = typeof var2;
+                        var0 = var1 === var0;
+                        if (var0) {
+                            _fun97469_ip = 28;
+                            continue _fun97469
+                        }
+                    case 17:
+                        var1 = _closure1_slot0;
+                        var0 = var2 === var1;
+                    case 28:
+                        return var0;
+                }
+            };
+        case 66:
             var1 = arg4;
             var1.exports = var2;
             return var0;
     }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [12710, 12720, 12718, 12721]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, []);

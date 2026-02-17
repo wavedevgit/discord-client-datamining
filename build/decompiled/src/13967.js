@@ -13,8 +13,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'width': 336.5,
         'height': 254,
         'scales': null,
-        'hash': 'cf5af7ee8f65a0fdeb96ff3d4448bdc8',
-        'name': 'app_dock_no_search_results_dark',
+        'hash': '6d32e4ea361c0f6306b8cf86df2131fe',
+        'name': 'app_dock_no_search_results_light',
         'type': 'png'
     };
     var4 = [2, 3];

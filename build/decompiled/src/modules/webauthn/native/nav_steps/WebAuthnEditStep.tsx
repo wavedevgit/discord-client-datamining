@@ -62,7 +62,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/webauthn/native/nav_steps/WebAuthnEditStep.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun80478: for (var _fun80478_ip = 0;;) switch (_fun80478_ip) {
+        _fun80479: for (var _fun80479_ip = 0;;) switch (_fun80479_ip) {
             case 0:
                 var0 = arg0;
                 var8 = var0.credential;
@@ -274,8 +274,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5.onPress = var11;
                 var11 = var10;
                 if (var11) {
-                    _fun80478_ip = 478;
-                    continue _fun80478
+                    _fun80479_ip = 478;
+                    continue _fun80479
                 }
             case 474:
                 var11 = var14 === var12;
@@ -306,4 +306,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 33, 1297, 671, 1469, 4712, 5440, 1235, 5469, 4092, 4573, 3155, 9629, 3277, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 33, 1297, 671, 1469, 4712, 5441, 1235, 5470, 4092, 4573, 3155, 9630, 3277, 2]);

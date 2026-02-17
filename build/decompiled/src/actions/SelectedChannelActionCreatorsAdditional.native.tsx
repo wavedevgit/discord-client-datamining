@@ -301,4 +301,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.selectVoiceChannelAdditional = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1372, 1410, 4242, 3098, 1675, 1621, 3520, 4243, 4244, 4250, 3154, 4251, 4252, 3284, 12286, 1307, 12288, 491, 807, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1372, 1410, 4242, 3098, 1675, 1621, 3520, 4243, 4244, 4250, 3154, 4251, 4252, 3284, 12287, 1307, 12289, 491, 807, 2]);

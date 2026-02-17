@@ -46,7 +46,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var4.bind(var0)(var3);
     var6 = var7.createStyles;
     var3 = function(arg0) { // Environment: var1
-        _fun92891: for (var _fun92891_ip = 0;;) switch (_fun92891_ip) {
+        _fun92892: for (var _fun92892_ip = 0;;) switch (_fun92892_ip) {
             case 0:
                 var4 = arg0;
                 var0 = {};
@@ -63,8 +63,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = 1;
                 var3 = var2;
                 if (!var4) {
-                    _fun92891_ip = 30;
-                    continue _fun92891
+                    _fun92892_ip = 30;
+                    continue _fun92892
                 }
             case 28:
                 var3 = undefined;
@@ -78,13 +78,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var8.bind(var5)(var7);
                 var7 = var7.colors;
                 if (var4) {
-                    _fun92891_ip = 77;
-                    continue _fun92891
+                    _fun92892_ip = 77;
+                    continue _fun92892
                 }
             case 69:
                 var4 = var7.BACKGROUND_SURFACE_HIGH;
-                _fun92891_ip = 83;
-                continue _fun92891;
+                _fun92892_ip = 83;
+                continue _fun92892;
             case 77:
                 var4 = var7.BORDER_MUTED;
             case 83:
@@ -113,7 +113,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/custom_status/native/CustomStatusPreview.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun92892: for (var _fun92892_ip = 0;;) switch (_fun92892_ip) {
+        _fun92893: for (var _fun92893_ip = 0;;) switch (_fun92893_ip) {
             case 0:
                 var1 = arg0;
                 var22 = var1.user;
@@ -263,23 +263,23 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var17 = '';
                 var18 = var17 !== var25;
                 if (var18) {
-                    _fun92892_ip = 499;
-                    continue _fun92892
+                    _fun92893_ip = 499;
+                    continue _fun92893
                 }
             case 495:
                 var18 = var13 !== var26;
             case 499:
                 if (var18) {
-                    _fun92892_ip = 506;
-                    continue _fun92892
+                    _fun92893_ip = 506;
+                    continue _fun92893
                 }
             case 502:
                 var18 = var17 !== var24;
             case 506:
                 var17 = !var18;
                 if (var18) {
-                    _fun92892_ip = 526;
-                    continue _fun92892
+                    _fun92893_ip = 526;
+                    continue _fun92893
                 }
             case 512:
                 var18 = {};
@@ -319,8 +319,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var23 = var13 == var14;
                 var22 = undefined;
                 if (var23) {
-                    _fun92892_ip = 669;
-                    continue _fun92892
+                    _fun92893_ip = 669;
+                    continue _fun92893
                 }
             case 663:
                 var22 = var14.pronouns;
@@ -341,16 +341,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var13 == var14;
                 var8 = undefined;
                 if (var10) {
-                    _fun92892_ip = 744;
-                    continue _fun92892
+                    _fun92893_ip = 744;
+                    continue _fun92893
                 }
             case 738:
                 var8 = var14.profileEffect;
             case 744:
                 var8 = var13 != var8;
                 if (!var8) {
-                    _fun92892_ip = 819;
-                    continue _fun92892
+                    _fun92893_ip = 819;
+                    continue _fun92893
                 }
             case 751:
                 var11 = _closure1_slot7;
@@ -363,8 +363,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var15 = var13 == var14;
                 var13 = undefined;
                 if (var15) {
-                    _fun92892_ip = 798;
-                    continue _fun92892
+                    _fun92893_ip = 798;
+                    continue _fun92893
                 }
             case 786:
                 var14 = var14.profileEffect;
@@ -385,4 +385,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 7049, 33, 1297, 671, 7042, 7055, 7050, 7053, 7054, 3717, 3284, 7775, 1307, 3166, 7056, 7059, 7060, 7062, 7430, 6988, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 7050, 33, 1297, 671, 7043, 7056, 7051, 7054, 7055, 3717, 3284, 7776, 1307, 3166, 7057, 7060, 7061, 7063, 7431, 6989, 2]);

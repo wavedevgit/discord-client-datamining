@@ -49,18 +49,18 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1[1] = var5;
         var1[2] = var4;
         var0 = function() { // Environment: var0
-            _fun48760: for (var _fun48760_ip = 0;;) switch (_fun48760_ip) {
+            _fun48761: for (var _fun48761_ip = 0;;) switch (_fun48761_ip) {
                 case 0:
                     var3 = _closure2_slot2;
                     var0 = null;
                     if (!(var0 != var3)) {
-                        _fun48760_ip = 39;
-                        continue _fun48760
+                        _fun48761_ip = 39;
+                        continue _fun48761
                     }
                 case 15:
                     var0 = {};
                     var3 = function arg0() {
-                        _fun48761: for (var _fun48761_ip = 0;;) switch (_fun48761_ip) {
+                        _fun48762: for (var _fun48762_ip = 0;;) switch (_fun48762_ip) {
                             case 0:
                                 var1 = _closure2_slot2;
                                 var3 = var1.shouldHandleKeyboardEvents;
@@ -70,8 +70,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var2 = _closure2_slot0;
                                 var1 = null;
                                 if (!(var1 != var2)) {
-                                    _fun48761_ip = 49;
-                                    continue _fun48761
+                                    _fun48762_ip = 49;
+                                    continue _fun48762
                                 }
                             case 35:
                                 var2 = _closure2_slot0;
@@ -85,7 +85,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     };
                     var0.onFocus = var3;
                     var1 = function arg0() {
-                        _fun48762: for (var _fun48762_ip = 0;;) switch (_fun48762_ip) {
+                        _fun48763: for (var _fun48763_ip = 0;;) switch (_fun48763_ip) {
                             case 0:
                                 var1 = _closure2_slot2;
                                 var3 = var1.shouldHandleKeyboardEvents;
@@ -95,8 +95,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var2 = _closure2_slot1;
                                 var1 = null;
                                 if (!(var1 != var2)) {
-                                    _fun48762_ip = 49;
-                                    continue _fun48762
+                                    _fun48763_ip = 49;
+                                    continue _fun48763
                                 }
                             case 35:
                                 var2 = _closure2_slot1;
@@ -109,8 +109,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         }
                     };
                     var0.onBlur = var1;
-                    _fun48760_ip = 62;
-                    continue _fun48760;
+                    _fun48761_ip = 62;
+                    continue _fun48761;
                 case 39:
                     var1 = {};
                     var3 = _closure2_slot0;

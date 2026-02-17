@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/guild_scheduled_events/useGuildsUserCanStartStageIn.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun65814: for (var _fun65814_ip = 0;;) switch (_fun65814_ip) {
+        _fun65815: for (var _fun65815_ip = 0;;) switch (_fun65815_ip) {
             case 0:
                 var2 = arg0;
                 var5 = null;
@@ -43,8 +43,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = undefined;
                 var1 = undefined;
                 if (var3) {
-                    _fun65814_ip = 23;
-                    continue _fun65814
+                    _fun65815_ip = 23;
+                    continue _fun65815
                 }
             case 18:
                 var1 = var2.id;
@@ -52,8 +52,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var5 != var1;
                 var5 = null;
                 if (!var2) {
-                    _fun65814_ip = 35;
-                    continue _fun65814
+                    _fun65815_ip = 35;
+                    continue _fun65815
                 }
             case 32:
                 var5 = var1;
@@ -81,7 +81,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var3 = var1[var0];
                     var2 = var3.reduce;
                     var1 = function(arg0, arg1) { // Environment: var0
-                        _fun65816: for (var _fun65816_ip = 0;;) switch (_fun65816_ip) {
+                        _fun65817: for (var _fun65817_ip = 0;;) switch (_fun65817_ip) {
                             case 0:
                                 var0 = arg0;
                                 var1 = arg1;
@@ -89,16 +89,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var3 = var2.isGuildStageVoice;
                                 var3 = var3.bind(var2)();
                                 if (!var3) {
-                                    _fun65816_ip = 116;
-                                    continue _fun65816
+                                    _fun65817_ip = 116;
+                                    continue _fun65817
                                 }
                             case 24:
                                 var6 = var1.channel;
                                 var5 = _closure1_slot4;
                                 var8 = undefined;
                                 if (!(var5 === var8)) {
-                                    _fun65816_ip = 46;
-                                    continue _fun65816
+                                    _fun65817_ip = 46;
+                                    continue _fun65817
                                 }
                             case 42:
                                 var5 = _closure1_slot4;
@@ -108,8 +108,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var4 = !var1;
                                 var1 = !var4;
                                 if (var4) {
-                                    _fun65816_ip = 103;
-                                    continue _fun65816
+                                    _fun65817_ip = 103;
+                                    continue _fun65817
                                 }
                             case 65:
                                 var4 = var5.can;
@@ -122,8 +122,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var1 = var4.bind(var5)(var3, var6);
                             case 103:
                                 if (!var1) {
-                                    _fun65816_ip = 116;
-                                    continue _fun65816
+                                    _fun65817_ip = 116;
+                                    continue _fun65817
                                 }
                             case 106:
                                 var1 = var0.push;

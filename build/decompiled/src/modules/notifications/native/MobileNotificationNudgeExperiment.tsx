@@ -186,15 +186,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.NotificationNudgeUI = var4;
     var2.NotificationNudgeTimingVariant = var3;
     var3 = function arg0() {
-        _fun86105: for (var _fun86105_ip = 0;;) switch (_fun86105_ip) {
+        _fun86106: for (var _fun86106_ip = 0;;) switch (_fun86106_ip) {
             case 0:
                 var0 = _closure1_slot2;
                 var2 = var0.AGGRESSIVE;
                 var0 = 604800000;
                 var1 = arg0;
                 if (!(var1 === var2)) {
-                    _fun86105_ip = 32;
-                    continue _fun86105
+                    _fun86106_ip = 32;
+                    continue _fun86106
                 }
             case 26:
                 var0 = 259200000;
@@ -288,4 +288,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getMobileNotificationChannelNudgeExperiment = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3122, 7544, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3122, 7545, 2]);

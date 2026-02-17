@@ -22,40 +22,6 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/stage_channels/StageChannelHeightHooks.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function arg0() {
-        _fun68574: for (var _fun68574_ip = 0;;) switch (_fun68574_ip) {
-            case 0:
-                var4 = arg0;
-                var5 = _closure1_slot0;
-                var0 = _closure1_slot1;
-                var1 = 0;
-                var2 = var0[var1];
-                var3 = undefined;
-                var6 = var5.bind(var3)(var2);
-                var2 = var6.useStageBlockedUsersCount;
-                var2 = var2.bind(var6)(var4);
-                var0 = var0[var1];
-                var3 = var5.bind(var3)(var0);
-                var0 = var3.useStageIgnoredUsersCount;
-                var0 = var0.bind(var3)(var4);
-                if (!(!(var2 > var1))) {
-                    _fun68574_ip = 72;
-                    continue _fun68574
-                }
-            case 62:
-                var1 = var0 > var1;
-                var0 = 68;
-                if (!var1) {
-                    _fun68574_ip = 75;
-                    continue _fun68574
-                }
-            case 72:
-                var0 = 88;
-            case 75:
-                return var0;
-        }
-    };
-    var2.useGetStageRTCPanelHeight = var3;
-    var1 = function arg0() {
         _fun68575: for (var _fun68575_ip = 0;;) switch (_fun68575_ip) {
             case 0:
                 var4 = arg0;
@@ -77,10 +43,44 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             case 62:
                 var1 = var0 > var1;
-                var0 = 112;
+                var0 = 68;
                 if (!var1) {
                     _fun68575_ip = 75;
                     continue _fun68575
+                }
+            case 72:
+                var0 = 88;
+            case 75:
+                return var0;
+        }
+    };
+    var2.useGetStageRTCPanelHeight = var3;
+    var1 = function arg0() {
+        _fun68576: for (var _fun68576_ip = 0;;) switch (_fun68576_ip) {
+            case 0:
+                var4 = arg0;
+                var5 = _closure1_slot0;
+                var0 = _closure1_slot1;
+                var1 = 0;
+                var2 = var0[var1];
+                var3 = undefined;
+                var6 = var5.bind(var3)(var2);
+                var2 = var6.useStageBlockedUsersCount;
+                var2 = var2.bind(var6)(var4);
+                var0 = var0[var1];
+                var3 = var5.bind(var3)(var0);
+                var0 = var3.useStageIgnoredUsersCount;
+                var0 = var0.bind(var3)(var4);
+                if (!(!(var2 > var1))) {
+                    _fun68576_ip = 72;
+                    continue _fun68576
+                }
+            case 62:
+                var1 = var0 > var1;
+                var0 = 112;
+                if (!var1) {
+                    _fun68576_ip = 75;
+                    continue _fun68576
                 }
             case 72:
                 var0 = 132;
@@ -90,4 +90,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useGetActionBarHeight = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6532, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6533, 2]);

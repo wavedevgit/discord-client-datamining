@@ -50,4 +50,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var3.bind(var0)(var1);
     var2.GuildSearchAndInvite = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [2, 11718, 11719, 11721, 11722, 11723]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [2, 11719, 11720, 11722, 11723, 11724]);

@@ -54,7 +54,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2 = new Array(1);
         var2[0] = var5;
         var1 = function() { // Environment: var1
-            _fun101126: for (var _fun101126_ip = 0;;) switch (_fun101126_ip) {
+            _fun101127: for (var _fun101127_ip = 0;;) switch (_fun101127_ip) {
                 case 0:
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot1;
@@ -68,15 +68,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var4 = var2 == var3;
                     var1 = undefined;
                     if (var4) {
-                        _fun101126_ip = 51;
-                        continue _fun101126
+                        _fun101127_ip = 51;
+                        continue _fun101127
                     }
                 case 46:
                     var1 = var3.current;
                 case 51:
                     if (!(var2 == var1)) {
-                        _fun101126_ip = 57;
-                        continue _fun101126
+                        _fun101127_ip = 57;
+                        continue _fun101127
                     }
                 case 55:
                     return var0;
@@ -84,7 +84,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = var3.addListener;
                     var1 = 'state';
                     var0 = function() { // Environment: var0
-                        _fun101127: for (var _fun101127_ip = 0;;) switch (_fun101127_ip) {
+                        _fun101128: for (var _fun101128_ip = 0;;) switch (_fun101128_ip) {
                             case 0:
                                 var2 = _closure1_slot0;
                                 var1 = _closure1_slot1;
@@ -96,16 +96,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var1 = 'hcaptcha';
                                 var1 = var2.bind(var4)(var1);
                                 if (!var1) {
-                                    _fun101127_ip = 53;
-                                    continue _fun101127
+                                    _fun101128_ip = 53;
+                                    continue _fun101128
                                 }
                             case 45:
                                 var2 = _closure1_slot3;
                                 var1 = var2.bind(var0)();
                             case 53:
                                 if (!var1) {
-                                    _fun101127_ip = 100;
-                                    continue _fun101127
+                                    _fun101128_ip = 100;
+                                    continue _fun101128
                                 }
                             case 56:
                                 var2 = _closure2_slot0;
@@ -130,4 +130,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useIsHCaptchaModalOpenTracking = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 13101, 13102, 13099, 3919, 3918, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 13102, 13103, 13100, 3919, 3918, 2]);

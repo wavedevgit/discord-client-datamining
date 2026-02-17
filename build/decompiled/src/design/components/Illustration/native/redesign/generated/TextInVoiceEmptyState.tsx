@@ -113,4 +113,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.TextInVoiceEmptyState = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 7342, 8521, 8522, 8523, 3212, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 7343, 8522, 8523, 8524, 3212, 2]);

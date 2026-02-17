@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/mana-assets/native/generated/NitroWumpusThumbsUp3dIllustration.native.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun53404: for (var _fun53404_ip = 0;;) switch (_fun53404_ip) {
+        _fun53405: for (var _fun53405_ip = 0;;) switch (_fun53405_ip) {
             case 0:
                 var0 = arg0;
                 var6 = var0.accessible;
@@ -37,16 +37,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var0.width;
                 var3 = undefined;
                 if (!(var9 === var3)) {
-                    _fun53404_ip = 35;
-                    continue _fun53404
+                    _fun53405_ip = 35;
+                    continue _fun53405
                 }
             case 29:
                 var9 = 288;
             case 35:
                 var7 = var0.height;
                 if (!(var7 === var3)) {
-                    _fun53404_ip = 47;
-                    continue _fun53404
+                    _fun53405_ip = 47;
+                    continue _fun53405
                 }
             case 44:
                 var7 = 192;
@@ -81,4 +81,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.NitroWumpusThumbsUp3dIllustration = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 4711, 6341, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 4711, 6342, 2]);

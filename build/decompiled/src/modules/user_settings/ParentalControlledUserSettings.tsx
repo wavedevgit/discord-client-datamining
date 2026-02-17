@@ -53,22 +53,22 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = var9.defineParentalControlledSetting;
     var22 = 'explicitContentFilter';
     var21 = function(arg0) { // Environment: var1
-        _fun82079: for (var _fun82079_ip = 0;;) switch (_fun82079_ip) {
+        _fun82080: for (var _fun82080_ip = 0;;) switch (_fun82080_ip) {
             case 0:
                 var2 = arg0;
                 var1 = null;
                 var3 = var1 == var2;
                 var0 = undefined;
                 if (var3) {
-                    _fun82079_ip = 19;
-                    continue _fun82079
+                    _fun82080_ip = 19;
+                    continue _fun82080
                 }
             case 14:
                 var0 = var2.value;
             case 19:
                 if (!(var1 == var0)) {
-                    _fun82079_ip = 36;
-                    continue _fun82079
+                    _fun82080_ip = 36;
+                    continue _fun82080
                 }
             case 23:
                 var1 = _closure1_slot2;
@@ -119,15 +119,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var17 = 'privacy';
     var22 = 'defaultMessageRequestRestricted';
     var21 = function(arg0) { // Environment: var1
-        _fun82081: for (var _fun82081_ip = 0;;) switch (_fun82081_ip) {
+        _fun82082: for (var _fun82082_ip = 0;;) switch (_fun82082_ip) {
             case 0:
                 var1 = arg0;
                 var0 = null;
                 var2 = var0 == var1;
                 var0 = undefined;
                 if (var2) {
-                    _fun82081_ip = 19;
-                    continue _fun82081
+                    _fun82082_ip = 19;
+                    continue _fun82082
                 }
             case 14:
                 var0 = var1.value;
@@ -158,14 +158,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var14.defineParentalControlledSetting;
     var22 = 'defaultGuildsRestricted';
     var21 = function(arg0) { // Environment: var1
-        _fun82083: for (var _fun82083_ip = 0;;) switch (_fun82083_ip) {
+        _fun82084: for (var _fun82084_ip = 0;;) switch (_fun82084_ip) {
             case 0:
                 var1 = arg0;
                 var0 = null;
                 var0 = var0 != var1;
                 if (!var0) {
-                    _fun82083_ip = 15;
-                    continue _fun82083
+                    _fun82084_ip = 15;
+                    continue _fun82084
                 }
             case 12:
                 var0 = var1;
@@ -185,15 +185,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var14 = var15.defineParentalControlledSetting;
     var22 = 'defaultGuildsRestrictedV2';
     var21 = function(arg0) { // Environment: var1
-        _fun82085: for (var _fun82085_ip = 0;;) switch (_fun82085_ip) {
+        _fun82086: for (var _fun82086_ip = 0;;) switch (_fun82086_ip) {
             case 0:
                 var1 = arg0;
                 var0 = null;
                 var2 = var0 == var1;
                 var0 = undefined;
                 if (var2) {
-                    _fun82085_ip = 19;
-                    continue _fun82085
+                    _fun82086_ip = 19;
+                    continue _fun82086
                 }
             case 14:
                 var0 = var1.value;
@@ -224,22 +224,22 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var15 = var16.defineParentalControlledSetting;
     var22 = 'friendSourceFlags';
     var21 = function(arg0) { // Environment: var1
-        _fun82087: for (var _fun82087_ip = 0;;) switch (_fun82087_ip) {
+        _fun82088: for (var _fun82088_ip = 0;;) switch (_fun82088_ip) {
             case 0:
                 var2 = arg0;
                 var1 = null;
                 var3 = var1 == var2;
                 var0 = undefined;
                 if (var3) {
-                    _fun82087_ip = 19;
-                    continue _fun82087
+                    _fun82088_ip = 19;
+                    continue _fun82088
                 }
             case 14:
                 var0 = var2.value;
             case 19:
                 if (!(var1 == var0)) {
-                    _fun82087_ip = 30;
-                    continue _fun82087
+                    _fun82088_ip = 30;
+                    continue _fun82088
                 }
             case 23:
                 var0 = _closure1_slot3;
@@ -270,23 +270,23 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var16 = var18.defineParentalControlledSetting;
     var22 = 'dropsOptedOut';
     var21 = function(arg0) { // Environment: var1
-        _fun82089: for (var _fun82089_ip = 0;;) switch (_fun82089_ip) {
+        _fun82090: for (var _fun82090_ip = 0;;) switch (_fun82090_ip) {
             case 0:
                 var2 = arg0;
                 var0 = null;
                 var3 = var0 == var2;
                 var1 = undefined;
                 if (var3) {
-                    _fun82089_ip = 19;
-                    continue _fun82089
+                    _fun82090_ip = 19;
+                    continue _fun82090
                 }
             case 14:
                 var1 = var2.value;
             case 19:
                 var0 = var0 != var1;
                 if (!var0) {
-                    _fun82089_ip = 29;
-                    continue _fun82089
+                    _fun82090_ip = 29;
+                    continue _fun82090
                 }
             case 26:
                 var0 = var1;
@@ -317,23 +317,23 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var15 = var16.defineParentalControlledSetting;
     var22 = 'quests3PDataOptedOut';
     var21 = function(arg0) { // Environment: var1
-        _fun82091: for (var _fun82091_ip = 0;;) switch (_fun82091_ip) {
+        _fun82092: for (var _fun82092_ip = 0;;) switch (_fun82092_ip) {
             case 0:
                 var2 = arg0;
                 var0 = null;
                 var3 = var0 == var2;
                 var1 = undefined;
                 if (var3) {
-                    _fun82091_ip = 19;
-                    continue _fun82091
+                    _fun82092_ip = 19;
+                    continue _fun82092
                 }
             case 14:
                 var1 = var2.value;
             case 19:
                 var0 = var0 != var1;
                 if (!var0) {
-                    _fun82091_ip = 29;
-                    continue _fun82091
+                    _fun82092_ip = 29;
+                    continue _fun82092
                 }
             case 26:
                 var0 = var1;
@@ -375,4 +375,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.ParentalControlledDropsOptedOut = var3;
     var2.ParentalControlledQuests3PDataOptedOut = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1350, 660, 10438, 1348, 628, 1342, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1350, 660, 10439, 1348, 628, 1342, 2]);

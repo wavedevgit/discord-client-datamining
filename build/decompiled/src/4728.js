@@ -135,12 +135,12 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var9 = var9.bind(var10)();
             var9 = var9.isRTL;
             if (!var9) {
-                _fun43780_ip = 495;
+                _fun43780_ip = 491;
                 continue _fun43780
             }
-        case 489:
+        case 485:
             var7 = -1;
-        case 495:
+        case 491:
             var8.scaleX = var7;
             var7 = new Array(1);
             var7[0] = var8;

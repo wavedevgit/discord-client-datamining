@@ -46,4 +46,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.openGuildSettingsPickerModal = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3284, 12608, 1307, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3284, 12609, 1307, 2]);

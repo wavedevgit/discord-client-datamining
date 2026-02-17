@@ -47,4 +47,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var1.TelemetryChannel;
     var2.TelemetryChannel = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [2, 1211, 12674, 12679, 12680, 12675, 12672]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [2, 1211, 12675, 12680, 12681, 12676, 12673]);

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
     var1 = function arg0, arg1() {
-        _fun114009: for (var _fun114009_ip = 0;;) switch (_fun114009_ip) {
+        _fun114010: for (var _fun114010_ip = 0;;) switch (_fun114010_ip) {
             case 0:
                 var3 = arg1;
                 var4 = _closure1_slot0;
@@ -25,16 +25,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = null;
                 var4 = var2 == var3;
                 if (var4) {
-                    _fun114009_ip = 68;
-                    continue _fun114009
+                    _fun114010_ip = 68;
+                    continue _fun114010
                 }
             case 62:
                 var1 = var3.premiumSince;
             case 68:
                 var1 = var2 != var1;
                 if (var0) {
-                    _fun114009_ip = 78;
-                    continue _fun114009
+                    _fun114010_ip = 78;
+                    continue _fun114010
                 }
             case 75:
                 var0 = var1;
@@ -72,7 +72,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/premium/powerups/hooks/useIsEligibleForPowerupUpsells.tsx';
     var4 = var5.bind(var6)(var4);
     var3 = function arg0() {
-        _fun114010: for (var _fun114010_ip = 0;;) switch (_fun114010_ip) {
+        _fun114011: for (var _fun114011_ip = 0;;) switch (_fun114011_ip) {
             case 0:
                 var8 = arg0;
                 var _closure2_slot0 = var8;
@@ -97,8 +97,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1 == var2;
                 var9 = undefined;
                 if (var1) {
-                    _fun114010_ip = 80;
-                    continue _fun114010
+                    _fun114011_ip = 80;
+                    continue _fun114011
                 }
             case 75:
                 var9 = var2.id;
@@ -117,15 +117,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4[0] = var9;
                 var4[1] = var8;
                 var0 = function() { // Environment: var0
-                    _fun114012: for (var _fun114012_ip = 0;;) switch (_fun114012_ip) {
+                    _fun114013: for (var _fun114013_ip = 0;;) switch (_fun114013_ip) {
                         case 0:
                             var2 = _closure2_slot1;
                             var0 = null;
                             var2 = var0 != var2;
                             var0 = undefined;
                             if (!var2) {
-                                _fun114012_ip = 45;
-                                continue _fun114012
+                                _fun114013_ip = 45;
+                                continue _fun114013
                             }
                         case 18:
                             var4 = _closure1_slot2;

@@ -1,7 +1,7 @@
 // modules/freeze/native/SuspenseVisibleView.tsx
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun105317: for (var _fun105317_ip = 0;;) switch (_fun105317_ip) {
+    _fun105318: for (var _fun105318_ip = 0;;) switch (_fun105318_ip) {
         case 0:
             var4 = require;
             var6 = metroImportDefault;
@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = _closure1_slot3;
                 var6 = var7.useCallback;
                 var5 = function(arg0) { // Environment: var1
-                    _fun105319: for (var _fun105319_ip = 0;;) switch (_fun105319_ip) {
+                    _fun105320: for (var _fun105320_ip = 0;;) switch (_fun105320_ip) {
                         case 0:
                             var2 = arg0;
                             var5 = null;
@@ -43,91 +43,91 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var0 = undefined;
                             var1 = undefined;
                             if (var3) {
-                                _fun105319_ip = 51;
-                                continue _fun105319
+                                _fun105320_ip = 51;
+                                continue _fun105320
                             }
                         case 16:
                             var3 = var2.viewConfig;
                             var4 = var5 == var3;
                             var1 = undefined;
                             if (var4) {
-                                _fun105319_ip = 51;
-                                continue _fun105319
+                                _fun105320_ip = 51;
+                                continue _fun105320
                             }
                         case 31:
                             var3 = var3.validAttributes;
                             var4 = var5 == var3;
                             var1 = undefined;
                             if (var4) {
-                                _fun105319_ip = 51;
-                                continue _fun105319
+                                _fun105320_ip = 51;
+                                continue _fun105320
                             }
                         case 46:
                             var1 = var3.style;
                         case 51:
                             if (!(var5 == var1)) {
-                                _fun105319_ip = 267;
-                                continue _fun105319
+                                _fun105320_ip = 267;
+                                continue _fun105320
                             }
                         case 58:
                             var3 = var5 == var2;
                             var1 = undefined;
                             if (var3) {
-                                _fun105319_ip = 102;
-                                continue _fun105319
+                                _fun105320_ip = 102;
+                                continue _fun105320
                             }
                         case 67:
                             var3 = var2._viewConfig;
                             var4 = var5 == var3;
                             var1 = undefined;
                             if (var4) {
-                                _fun105319_ip = 102;
-                                continue _fun105319
+                                _fun105320_ip = 102;
+                                continue _fun105320
                             }
                         case 82:
                             var3 = var3.validAttributes;
                             var4 = var5 == var3;
                             var1 = undefined;
                             if (var4) {
-                                _fun105319_ip = 102;
-                                continue _fun105319
+                                _fun105320_ip = 102;
+                                continue _fun105320
                             }
                         case 97:
                             var1 = var3.style;
                         case 102:
                             if (!(var5 == var1)) {
-                                _fun105319_ip = 212;
-                                continue _fun105319
+                                _fun105320_ip = 212;
+                                continue _fun105320
                             }
                         case 106:
                             var3 = var5 == var2;
                             var1 = undefined;
                             if (var3) {
-                                _fun105319_ip = 150;
-                                continue _fun105319
+                                _fun105320_ip = 150;
+                                continue _fun105320
                             }
                         case 115:
                             var3 = var2.__viewConfig;
                             var4 = var5 == var3;
                             var1 = undefined;
                             if (var4) {
-                                _fun105319_ip = 150;
-                                continue _fun105319
+                                _fun105320_ip = 150;
+                                continue _fun105320
                             }
                         case 130:
                             var3 = var3.validAttributes;
                             var4 = var5 == var3;
                             var1 = undefined;
                             if (var4) {
-                                _fun105319_ip = 150;
-                                continue _fun105319
+                                _fun105320_ip = 150;
+                                continue _fun105320
                             }
                         case 145:
                             var1 = var3.style;
                         case 150:
                             if (!(var5 != var1)) {
-                                _fun105319_ip = 320;
-                                continue _fun105319
+                                _fun105320_ip = 320;
+                                continue _fun105320
                             }
                         case 157:
                             var1 = var2.__viewConfig;
@@ -141,8 +141,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var4 = 'display';
                             var1[var4] = var5;
                             var3.style = var1;
-                            _fun105319_ip = 320;
-                            continue _fun105319;
+                            _fun105320_ip = 320;
+                            continue _fun105320;
                         case 212:
                             var1 = var2._viewConfig;
                             var3 = var1.validAttributes;
@@ -155,8 +155,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var4 = 'display';
                             var1[var4] = var5;
                             var3.style = var1;
-                            _fun105319_ip = 320;
-                            continue _fun105319;
+                            _fun105320_ip = 320;
+                            continue _fun105320;
                         case 267:
                             var1 = var2.viewConfig;
                             var3 = var1.validAttributes;
@@ -235,8 +235,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var3 = var7.isIOS;
             var3 = var3.bind(var7)();
             if (!var3) {
-                _fun105317_ip = 193;
-                continue _fun105317
+                _fun105318_ip = 193;
+                continue _fun105318
             }
         case 168:
             var7 = 5;
@@ -249,15 +249,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var _closure1_slot6 = var3;
             var3 = var6.forwardRef;
             var1 = function(arg0, arg1) { // Environment: var1
-                _fun105321: for (var _fun105321_ip = 0;;) switch (_fun105321_ip) {
+                _fun105322: for (var _fun105322_ip = 0;;) switch (_fun105322_ip) {
                     case 0:
                         var1 = arg0;
                         var5 = arg1;
                         var0 = _closure1_slot6;
                         var4 = _closure1_slot5;
                         if (var0) {
-                            _fun105321_ip = 51;
-                            continue _fun105321
+                            _fun105322_ip = 51;
+                            continue _fun105322
                         }
                     case 20:
                         var6 = _closure1_slot7;
@@ -268,8 +268,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var0 = copyDataProperties(var8, var7);
                         var0 = undefined;
                         var0 = var4.bind(var0)(var6, var3);
-                        _fun105321_ip = 79;
-                        continue _fun105321;
+                        _fun105322_ip = 79;
+                        continue _fun105322;
                     case 51:
                         var3 = _closure1_slot4;
                         var2 = {};
@@ -293,4 +293,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2.default = var1;
             return var0;
     }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 33, 479, 3910, 13698, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 33, 479, 3910, 13699, 2]);

@@ -172,4 +172,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.useObscuredContentNonFriendsDmSettingValue = var3;
     var2.onObscuredContentNonFriendsDmOnPress = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [7095, 10432, 4266, 4284, 1235, 10433, 9031, 10435, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [7096, 10433, 4266, 4284, 1235, 10434, 9032, 10436, 2]);

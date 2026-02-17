@@ -27,7 +27,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/messages/native/renderer/system_messages/useAuthorWithProcessedColor.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function arg0() {
-        _fun56154: for (var _fun56154_ip = 0;;) switch (_fun56154_ip) {
+        _fun56155: for (var _fun56155_ip = 0;;) switch (_fun56155_ip) {
             case 0:
                 var1 = _closure1_slot0;
                 var3 = _closure1_slot1;
@@ -48,8 +48,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var3 != var7;
                 var3 = undefined;
                 if (!var6) {
-                    _fun56154_ip = 89;
-                    continue _fun56154
+                    _fun56155_ip = 89;
+                    continue _fun56155
                 }
             case 80:
                 var6 = _closure1_slot2;
@@ -70,7 +70,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getMessageAuthorWithProcessedColor = var3;
     var1 = function arg0, arg1() {
-        _fun56155: for (var _fun56155_ip = 0;;) switch (_fun56155_ip) {
+        _fun56156: for (var _fun56156_ip = 0;;) switch (_fun56156_ip) {
             case 0:
                 var1 = _closure1_slot0;
                 var3 = _closure1_slot1;
@@ -92,8 +92,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var3 != var7;
                 var3 = undefined;
                 if (!var6) {
-                    _fun56155_ip = 93;
-                    continue _fun56155
+                    _fun56156_ip = 93;
+                    continue _fun56156
                 }
             case 84:
                 var6 = _closure1_slot2;
@@ -114,4 +114,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getUserAuthorWithProcessedColor = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 3980, 6756, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 3980, 6757, 2]);

@@ -27,36 +27,6 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/guild_products/GuildProductsExperimentUtils.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function arg0, arg1() {
-        _fun50554: for (var _fun50554_ip = 0;;) switch (_fun50554_ip) {
-            case 0:
-                var3 = arg0;
-                var2 = _closure1_slot0;
-                var1 = _closure1_slot1;
-                var0 = 1;
-                var1 = var1[var0];
-                var0 = undefined;
-                var0 = var2.bind(var0)(var1);
-                var2 = var0.GuildProductsExperiment;
-                var1 = var2.useExperiment;
-                var0 = {};
-                var5 = null;
-                if (!(var5 == var3)) {
-                    _fun50554_ip = 52;
-                    continue _fun50554
-                }
-            case 48:
-                var3 = _closure1_slot2;
-            case 52:
-                var0.guildId = var3;
-                var3 = arg1;
-                var0.location = var3;
-                var0 = var1.bind(var2)(var0);
-                var0 = var0.enabled;
-                return var0;
-        }
-    };
-    var2.useGuildEligibleForGuildProducts = var3;
-    var1 = function arg0, arg1() {
         _fun50555: for (var _fun50555_ip = 0;;) switch (_fun50555_ip) {
             case 0:
                 var3 = arg0;
@@ -67,7 +37,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = undefined;
                 var0 = var2.bind(var0)(var1);
                 var2 = var0.GuildProductsExperiment;
-                var1 = var2.getCurrentConfig;
+                var1 = var2.useExperiment;
                 var0 = {};
                 var5 = null;
                 if (!(var5 == var3)) {
@@ -85,6 +55,36 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
         }
     };
+    var2.useGuildEligibleForGuildProducts = var3;
+    var1 = function arg0, arg1() {
+        _fun50556: for (var _fun50556_ip = 0;;) switch (_fun50556_ip) {
+            case 0:
+                var3 = arg0;
+                var2 = _closure1_slot0;
+                var1 = _closure1_slot1;
+                var0 = 1;
+                var1 = var1[var0];
+                var0 = undefined;
+                var0 = var2.bind(var0)(var1);
+                var2 = var0.GuildProductsExperiment;
+                var1 = var2.getCurrentConfig;
+                var0 = {};
+                var5 = null;
+                if (!(var5 == var3)) {
+                    _fun50556_ip = 52;
+                    continue _fun50556
+                }
+            case 48:
+                var3 = _closure1_slot2;
+            case 52:
+                var0.guildId = var3;
+                var3 = arg1;
+                var0.location = var3;
+                var0 = var1.bind(var2)(var0);
+                var0 = var0.enabled;
+                return var0;
+        }
+    };
     var2.isGuildEligibleForGuildProducts = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 5691, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 5692, 2]);

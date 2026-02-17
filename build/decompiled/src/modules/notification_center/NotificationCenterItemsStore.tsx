@@ -111,17 +111,17 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var4 instanceof Object ? var4 : var5;
                 var2.notifCenterIds = var4;
                 if (var3) {
-                    _fun36561_ip = 95;
+                    _fun36561_ip = 99;
                     continue _fun36561
                 }
-            case 89:
+            case 93:
                 var3 = new Array(0);
-                _fun36561_ip = 108;
+                _fun36561_ip = 112;
                 continue _fun36561;
-            case 95:
+            case 99:
                 var4 = _closure1_slot14;
                 var3 = var4.notifCenterLocalItems;
-            case 108:
+            case 112:
                 var2.notifCenterLocalItems = var3;
                 var3 = true;
                 var2.paginationHasMore = var3;

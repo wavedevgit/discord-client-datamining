@@ -287,4 +287,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.transitionToStaticChannelRoute = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1372, 660, 3943, 3944, 1221, 7907, 44, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1372, 660, 3943, 3944, 1221, 7908, 44, 2]);

@@ -156,4 +156,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.onRoleColorSettingValueChange = var3;
     var2.useRoleColorSettingOptions = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1298, 7095, 566, 10962, 1235, 9031, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1298, 7096, 566, 10963, 1235, 9032, 2]);

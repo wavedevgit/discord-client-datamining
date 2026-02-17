@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/activities/utils/tryLaunchAsFrame.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun64370: for (var _fun64370_ip = 0;;) switch (_fun64370_ip) {
+        _fun64371: for (var _fun64371_ip = 0;;) switch (_fun64371_ip) {
             case 0:
                 var0 = arg0;
                 var4 = var0.applicationId;
@@ -38,8 +38,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = null;
                 var2 = var0 == var5;
                 if (var2) {
-                    _fun64370_ip = 71;
-                    continue _fun64370
+                    _fun64371_ip = 71;
+                    continue _fun64371
                 }
             case 35:
                 var6 = _closure1_slot0;
@@ -54,8 +54,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 71:
                 var0 = !var2;
                 if (var2) {
-                    _fun64370_ip = 118;
-                    continue _fun64370
+                    _fun64371_ip = 118;
+                    continue _fun64371
                 }
             case 77:
                 var3 = _closure1_slot1;
@@ -75,4 +75,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.tryLaunchAsFrame = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3456, 4678, 7967, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3456, 4678, 7968, 2]);

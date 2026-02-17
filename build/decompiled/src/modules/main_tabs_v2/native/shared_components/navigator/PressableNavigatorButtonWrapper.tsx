@@ -60,15 +60,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/main_tabs_v2/native/shared_components/navigator/PressableNavigatorButtonWrapper.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun71460: for (var _fun71460_ip = 0;;) switch (_fun71460_ip) {
+        _fun71461: for (var _fun71461_ip = 0;;) switch (_fun71461_ip) {
             case 0:
                 var0 = arg0;
                 var4 = var0.children;
                 var5 = var0.isModal;
                 var3 = undefined;
                 if (!(var5 === var3)) {
-                    _fun71460_ip = 22;
-                    continue _fun71460
+                    _fun71461_ip = 22;
+                    continue _fun71461
                 }
             case 20:
                 var5 = false;
@@ -83,13 +83,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     'importantForAccessibility': 'yes'
                 };
                 if (var5) {
-                    _fun71460_ip = 66;
-                    continue _fun71460
+                    _fun71461_ip = 66;
+                    continue _fun71461
                 }
             case 58:
                 var5 = var6.buttonWrapper;
-                _fun71460_ip = 72;
-                continue _fun71460;
+                _fun71461_ip = 72;
+                continue _fun71461;
             case 66:
                 var5 = var6.buttonWrapperModal;
             case 72:
@@ -101,4 +101,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 8936, 33, 1297, 671, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 8937, 33, 1297, 671, 2]);

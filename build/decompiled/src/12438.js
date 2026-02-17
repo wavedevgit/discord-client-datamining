@@ -1,21 +1,21 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var1 = function(arg0) { // Environment: var0
-        _fun94998: for (var _fun94998_ip = 0;;) switch (_fun94998_ip) {
+        _fun94997: for (var _fun94997_ip = 0;;) switch (_fun94997_ip) {
             case 0:
                 var1 = arg0;
-                var0 = var1.stopPropagation;
+                var0 = var1.preventDefault;
                 if (var0) {
-                    _fun94998_ip = 22;
-                    continue _fun94998
+                    _fun94997_ip = 22;
+                    continue _fun94997
                 }
             case 12:
-                var0 = true;
-                var1.cancelBubble = var0;
-                _fun94998_ip = 32;
-                continue _fun94998;
+                var0 = false;
+                var1.returnValue = var0;
+                _fun94997_ip = 32;
+                continue _fun94997;
             case 22:
-                var0 = var1.stopPropagation;
+                var0 = var1.preventDefault;
                 var0 = var0.bind(var1)();
             case 32:
                 var0 = undefined;

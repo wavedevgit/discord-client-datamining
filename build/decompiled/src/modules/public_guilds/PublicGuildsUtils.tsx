@@ -38,7 +38,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/public_guilds/PublicGuildsUtils.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function arg0() {
-        _fun56570: for (var _fun56570_ip = 0;;) switch (_fun56570_ip) {
+        _fun56571: for (var _fun56571_ip = 0;;) switch (_fun56571_ip) {
             case 0:
                 var3 = arg0;
                 var4 = _closure1_slot1;
@@ -49,8 +49,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var4.bind(var1)(var0);
                 var0 = var0.bind(var1)(var3);
                 if (!var0) {
-                    _fun56570_ip = 55;
-                    continue _fun56570
+                    _fun56571_ip = 55;
+                    continue _fun56571
                 }
             case 36:
                 var1 = var3.messageReference;
@@ -59,16 +59,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var4 === var1;
             case 55:
                 if (var0) {
-                    _fun56570_ip = 95;
-                    continue _fun56570
+                    _fun56571_ip = 95;
+                    continue _fun56571
                 }
             case 58:
                 var4 = var3.author;
                 var1 = null;
                 var1 = var1 != var4;
                 if (!var1) {
-                    _fun56570_ip = 92;
-                    continue _fun56570
+                    _fun56571_ip = 92;
+                    continue _fun56571
                 }
             case 73:
                 var3 = var3.author;
@@ -124,4 +124,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.trackEnableCommunityFlow = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6832, 660, 6833, 6834, 796, 4310, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6833, 660, 6834, 6835, 796, 4310, 2]);

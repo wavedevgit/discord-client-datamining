@@ -33,15 +33,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/Icon/native/redesign/generated/ServerIcon.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Environment: var1
-        _fun48591: for (var _fun48591_ip = 0;;) switch (_fun48591_ip) {
+        _fun48592: for (var _fun48592_ip = 0;;) switch (_fun48592_ip) {
             case 0:
                 var2 = arg0;
                 var5 = var2.style;
                 var6 = var2.color;
                 var3 = undefined;
                 if (!(var6 === var3)) {
-                    _fun48591_ip = 53;
-                    continue _fun48591
+                    _fun48592_ip = 53;
+                    continue _fun48592
                 }
             case 19:
                 var1 = _closure1_slot1;
@@ -83,4 +83,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.ServerIcon = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 671, 3157, 5421, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 671, 3157, 5422, 2]);

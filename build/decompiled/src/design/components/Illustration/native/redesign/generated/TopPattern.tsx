@@ -113,4 +113,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.TopPattern = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 7342, 10671, 10672, 10673, 3212, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 7343, 10672, 10673, 10674, 3212, 2]);

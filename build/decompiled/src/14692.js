@@ -1,202 +1,287 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
+    var4 = metroImportDefault;
     var2 = exports;
-    var3 = dependencyMap;
-    var0 = require;
-    var _closure1_slot0 = var0;
-    var _closure1_slot1 = var3;
+    var5 = dependencyMap;
     var0 = global;
-    var6 = var0.Object;
-    var5 = var6.defineProperty;
-    var4 = {};
+    var7 = var0.Object;
+    var6 = var7.defineProperty;
+    var3 = {};
     var0 = true;
-    var4.value = var0;
+    var3.value = var0;
     var0 = '__esModule';
-    var0 = var5.bind(var6)(var2, var0, var4);
+    var0 = var6.bind(var7)(var2, var0, var3);
     var0 = 0;
-    var4 = var3[var0];
-    var3 = metroImportDefault;
+    var3 = var5[var0];
     var0 = undefined;
-    var3 = var3.bind(var0)(var4);
-    var _closure1_slot2 = var3;
-    var3 = function() { // Environment: var1
-        var3 = _closure1_slot2;
-        var2 = undefined;
-        var1 = function*(arg0, arg1) { // Environment: var0
-            var0 = function*(arg0, arg1) { // Original name: ?anon_0_, environment: var0
-                _fun114821: for (var _fun114821_ip = 0;;) switch (_fun114821_ip) {
-                    case 0:
-                        StartGenerator();
-                        var2 = arg0;
-                        ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
-                        if (var1) {
-                            _fun114821_ip = 62;
-                            continue _fun114821
-                        }
-                    case 10:
-                        var1 = var2.isEligible;
-                        var1 = !var1;
-                        if (var1) {
-                            _fun114821_ip = 59;
-                            continue _fun114821
-                        }
-                    case 22:
-                        var3 = global;
-                        var4 = var3.Boolean;
-                        var3 = var2.lowerBound;
-                        if (!var3) {
-                            _fun114821_ip = 52;
-                            continue _fun114821
-                        }
-                    case 39:
-                        var5 = var2.lowerBound;
-                        var2 = arg1;
-                        var3 = var5 >= var2;
-                    case 52:
-                        var2 = undefined;
-                        var1 = var4.bind(var2)(var3);
-                    case 59:
-                        return var1;
-                    case 62:
-                        return var0;
-                }
-            };
-            return var0;
-        };
-        var1 = var3.bind(var2)(var1);
-        var _closure2_slot0 = var1;
-        var0 = function arg0, arg1() {
-            var0 = undefined;
-            var3 = _closure2_slot0;
-            var2 = var3.apply;
-            var0 = arguments;
-            var1 = var0;
-            var0 = this;
-            var0 = var2.bind(var3)(var0, var1);
-            return var0;
-        };
-        return var0;
-    };
-    var3 = var3.bind(var0)();
+    var3 = var4.bind(var0)(var3);
+    var _closure1_slot0 = var3;
+    var3 = 1;
+    var3 = var5[var3];
+    var3 = var4.bind(var0)(var3);
+    var _closure1_slot1 = var3;
     var1 = function() { // Environment: var1
-        var3 = _closure1_slot2;
-        var2 = undefined;
-        var1 = function*(arg0, arg1) { // Environment: var0
-            var0 = function*(arg0, arg1) { // Original name: ?anon_0_, environment: var0
-                _fun114825: for (var _fun114825_ip = 0;;) switch (_fun114825_ip) {
-                    case 0:
-                        StartGenerator();
-                        var4 = arg0;
-                        ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
-                        if (var1) {
-                            _fun114825_ip = 253;
-                            continue _fun114825
-                        }
-                    case 13:
-                        var1 = var4.isEligible;
-                        if (var1) {
-                            _fun114825_ip = 27;
-                            continue _fun114825
-                        }
-                    case 22:
-                        var1 = true;
-                        return var1;
-                    case 27:
-                        var6 = var4.userStatus;
-                        var7 = _closure1_slot0;
-                        var2 = _closure1_slot1;
-                        var5 = 1;
-                        var2 = var2[var5];
-                        var3 = undefined;
-                        var2 = var7.bind(var3)(var2);
-                        var2 = var2.PlayAgeRangeDeclarationUserStatus;
-                        var2 = var2.VERIFIED;
-                        if (!(var2 !== var6)) {
-                            _fun114825_ip = 248;
-                            continue _fun114825
-                        }
-                    case 77:
-                        var7 = _closure1_slot0;
-                        var2 = _closure1_slot1;
-                        var2 = var2[var5];
-                        var2 = var7.bind(var3)(var2);
-                        var2 = var2.PlayAgeRangeDeclarationUserStatus;
-                        var2 = var2.SUPERVISED;
-                        if (!(var2 !== var6)) {
-                            _fun114825_ip = 210;
-                            continue _fun114825
-                        }
-                    case 110:
-                        var7 = _closure1_slot0;
-                        var2 = _closure1_slot1;
-                        var2 = var2[var5];
-                        var2 = var7.bind(var3)(var2);
-                        var2 = var2.PlayAgeRangeDeclarationUserStatus;
-                        var2 = var2.SUPERVISED_APPROVAL_PENDING;
-                        if (!(var2 !== var6)) {
-                            _fun114825_ip = 210;
-                            continue _fun114825
-                        }
-                    case 143:
-                        var7 = _closure1_slot0;
-                        var2 = _closure1_slot1;
-                        var2 = var2[var5];
-                        var2 = var7.bind(var3)(var2);
-                        var2 = var2.PlayAgeRangeDeclarationUserStatus;
-                        var2 = var2.SUPERVISED_APPROVAL_DENIED;
-                        if (!(var2 !== var6)) {
-                            _fun114825_ip = 210;
-                            continue _fun114825
-                        }
-                    case 176:
-                        var2 = _closure1_slot0;
-                        var1 = _closure1_slot1;
-                        var1 = var1[var5];
-                        var1 = var2.bind(var3)(var1);
-                        var1 = var1.PlayAgeRangeDeclarationUserStatus;
-                        var1 = var1.UNKNOWN;
-                        var1 = false;
-                        return var1;
-                    case 210:
-                        var1 = global;
-                        var2 = var1.Boolean;
-                        var1 = var4.ageLower;
-                        if (!var1) {
-                            _fun114825_ip = 240;
-                            continue _fun114825
-                        }
-                    case 227:
-                        var5 = var4.ageLower;
-                        var4 = arg1;
-                        var1 = var5 >= var4;
-                    case 240:
-                        var1 = var2.bind(var3)(var1);
-                        return var1;
-                    case 248:
-                        var1 = true;
-                        return var1;
-                    case 253:
-                        return var0;
-                }
-            };
-            return var0;
-        };
-        var1 = var3.bind(var2)(var1);
-        var _closure2_slot0 = var1;
-        var0 = function arg0, arg1() {
+        var4 = function() {
+            var2 = this;
+            var3 = _closure1_slot0;
+            var1 = _closure2_slot0;
             var0 = undefined;
-            var3 = _closure2_slot0;
-            var2 = var3.apply;
-            var0 = arguments;
-            var1 = var0;
-            var0 = this;
-            var0 = var2.bind(var3)(var0, var1);
+            var1 = var3.bind(var0)(var2, var1);
+            var1 = null;
+            var2.thresholds = var1;
             return var0;
         };
+        var _closure2_slot0 = var4;
+        var3 = _closure1_slot1;
+        var0 = {};
+        var2 = 'setAgeRangeThresholds';
+        var0.key = var2;
+        var2 = function arg0() {
+            _fun114816: for (var _fun114816_ip = 0;;) switch (_fun114816_ip) {
+                case 0:
+                    var3 = arg0;
+                    var2 = 0;
+                    var1 = var3[var2];
+                    var0 = undefined;
+                    if (!(var0 !== var1)) {
+                        _fun114816_ip = 318;
+                        continue _fun114816
+                    }
+                case 18:
+                    var4 = var3[var2];
+                    var1 = null;
+                    if (!(var1 !== var4)) {
+                        _fun114816_ip = 318;
+                        continue _fun114816
+                    }
+                case 31:
+                    var1 = var3[var2];
+                    var4 = 1;
+                    if (!(!(var1 < var4))) {
+                        _fun114816_ip = 282;
+                        continue _fun114816
+                    }
+                case 45:
+                    var5 = var3[var2];
+                    var1 = 18;
+                    if (!(!(var5 > var1))) {
+                        _fun114816_ip = 282;
+                        continue _fun114816
+                    }
+                case 59:
+                    var1 = var3.length;
+                    var1 = var4 < var1;
+                    var5 = var4;
+                    if (!var1) {
+                        _fun114816_ip = 113;
+                        continue _fun114816
+                    }
+                case 74:
+                    var6 = var3[var5];
+                    var1 = var5 - var4;
+                    var1 = var3[var1];
+                    if (!(var0 !== var6)) {
+                        _fun114816_ip = 101;
+                        continue _fun114816
+                    }
+                case 90:
+                    if (!(var0 !== var1)) {
+                        _fun114816_ip = 101;
+                        continue _fun114816
+                    }
+                case 94:
+                    if (!(!(var6 <= var1))) {
+                        _fun114816_ip = 246;
+                        continue _fun114816
+                    }
+                case 101:
+                    var5 = var5 + 1;
+                    var1 = var3.length;
+                    if (var5 < var1) {
+                        _fun114816_ip = 74;
+                        continue _fun114816
+                    }
+                case 113:
+                    var1 = var3.length;
+                    var5 = var4 < var1;
+                    var1 = 2;
+                    var6 = var4;
+                    if (!var5) {
+                        _fun114816_ip = 171;
+                        continue _fun114816
+                    }
+                case 131:
+                    var7 = var3[var6];
+                    var5 = var6 - var4;
+                    var5 = var3[var5];
+                    if (!(var0 !== var7)) {
+                        _fun114816_ip = 159;
+                        continue _fun114816
+                    }
+                case 147:
+                    if (!(var0 !== var5)) {
+                        _fun114816_ip = 159;
+                        continue _fun114816
+                    }
+                case 151:
+                    var5 = var7 - var5;
+                    if (!(!(var5 < var1))) {
+                        _fun114816_ip = 210;
+                        continue _fun114816
+                    }
+                case 159:
+                    var6 = var6 + 1;
+                    var5 = var3.length;
+                    if (var6 < var5) {
+                        _fun114816_ip = 131;
+                        continue _fun114816
+                    }
+                case 171:
+                    var5 = var3[var2];
+                    var2 = new Array(3);
+                    var2[0] = var5;
+                    var4 = var3[var4];
+                    var2[1] = var4;
+                    var1 = var3[var1];
+                    var2[2] = var1;
+                    var1 = this;
+                    var1.thresholds = var2;
+                    return var0;
+                case 210:
+                    var0 = global;
+                    var2 = var0.Error;
+                    var0 = var2.prototype;
+                    var1 = Object.create(var0, {
+                        constructor: {
+                            value: var2
+                        }
+                    });
+                    var9 = 'PlayAgeRangeDeclaration: Age range thresholds must be at least 2 years apart';
+                    var10 = var1;
+                    var0 = new var10[var2](var9, var8);
+                    var0 = var0 instanceof Object ? var0 : var1;
+                    throw var0;
+                case 246:
+                    var0 = global;
+                    var2 = var0.Error;
+                    var0 = var2.prototype;
+                    var1 = Object.create(var0, {
+                        constructor: {
+                            value: var2
+                        }
+                    });
+                    var9 = 'PlayAgeRangeDeclaration: Age range thresholds must be in ascending order';
+                    var10 = var1;
+                    var0 = new var10[var2](var9, var8);
+                    var0 = var0 instanceof Object ? var0 : var1;
+                    throw var0;
+                case 282:
+                    var0 = global;
+                    var2 = var0.Error;
+                    var0 = var2.prototype;
+                    var1 = Object.create(var0, {
+                        constructor: {
+                            value: var2
+                        }
+                    });
+                    var9 = 'PlayAgeRangeDeclaration: setAgeRangeThresholds: Age range thresholds must be between 1 and 18 (inclusive)';
+                    var10 = var1;
+                    var0 = new var10[var2](var9, var8);
+                    var0 = var0 instanceof Object ? var0 : var1;
+                    throw var0;
+                case 318:
+                    var0 = global;
+                    var2 = var0.Error;
+                    var0 = var2.prototype;
+                    var1 = Object.create(var0, {
+                        constructor: {
+                            value: var2
+                        }
+                    });
+                    var9 = 'PlayAgeRangeDeclaration: First threshold age is required';
+                    var10 = var1;
+                    var0 = new var10[var2](var9, var8);
+                    var0 = var0 instanceof Object ? var0 : var1;
+                    throw var0;
+            }
+        };
+        var0.value = var2;
+        var2 = new Array(2);
+        var2[0] = var0;
+        var0 = {};
+        var5 = 'getThresholds';
+        var0.key = var5;
+        var5 = function() {
+            _fun114817: for (var _fun114817_ip = 0;;) switch (_fun114817_ip) {
+                case 0:
+                    var0 = this;
+                    var2 = var0.thresholds;
+                    var1 = null;
+                    if (!(var1 !== var2)) {
+                        _fun114817_ip = 23;
+                        continue _fun114817
+                    }
+                case 15:
+                    var0 = var0.thresholds;
+                    return var0;
+                case 23:
+                    var0 = global;
+                    var2 = var0.Error;
+                    var0 = var2.prototype;
+                    var1 = Object.create(var0, {
+                        constructor: {
+                            value: var2
+                        }
+                    });
+                    var3 = 'PlayAgeRangeDeclaration: ageRangeThresholds not set';
+                    var4 = var1;
+                    var0 = new var4[var2](var3, var2);
+                    var0 = var0 instanceof Object ? var0 : var1;
+                    throw var0;
+            }
+        };
+        var0.value = var5;
+        var2[1] = var0;
+        var0 = {};
+        var5 = 'getInstance';
+        var0.key = var5;
+        var1 = function() {
+            _fun114818: for (var _fun114818_ip = 0;;) switch (_fun114818_ip) {
+                case 0:
+                    var1 = _closure2_slot0;
+                    var1 = var1.instance;
+                    if (var1) {
+                        _fun114818_ip = 46;
+                        continue _fun114818
+                    }
+                case 16:
+                    var2 = _closure2_slot0;
+                    var1 = var2.prototype;
+                    var3 = Object.create(var1, {
+                        constructor: {
+                            value: var2
+                        }
+                    });
+                    var4 = var3;
+                    var1 = new var4[var2](var3);
+                    var1 = var1 instanceof Object ? var1 : var3;
+                    var2.instance = var1;
+                case 46:
+                    var0 = _closure2_slot0;
+                    var0 = var0.instance;
+                    return var0;
+            }
+        };
+        var0.value = var1;
+        var1 = new Array(1);
+        var1[0] = var0;
+        var0 = undefined;
+        var0 = var3.bind(var0)(var4, var2, var1);
         return var0;
     };
-    var1 = var1.bind(var0)();
-    var2.getIsConsideredOlderThaniOS = var3;
-    var2.getIsConsideredOlderThanAndroid = var1;
+    var3 = var1.bind(var0)();
+    var1 = var3.getInstance;
+    var1 = var1.bind(var3)();
+    var2.ageRangeThresholdManager = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 14693]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7]);

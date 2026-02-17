@@ -50,7 +50,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var9 = var9.ACCOUNT;
     var1.parent = var9;
     var9 = function() {
-        _fun81837: for (var _fun81837_ip = 0;;) switch (_fun81837_ip) {
+        _fun81838: for (var _fun81838_ip = 0;;) switch (_fun81838_ip) {
             case 0:
                 var2 = _closure1_slot3;
                 var0 = var2.getCurrentUser;
@@ -60,20 +60,20 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = undefined;
                 var2 = undefined;
                 if (var5) {
-                    _fun81837_ip = 35;
-                    continue _fun81837
+                    _fun81838_ip = 35;
+                    continue _fun81838
                 }
             case 29:
                 var2 = var4.verified;
             case 35:
                 if (!(var3 != var2)) {
-                    _fun81837_ip = 45;
-                    continue _fun81837
+                    _fun81838_ip = 45;
+                    continue _fun81838
                 }
             case 39:
                 if (var2) {
-                    _fun81837_ip = 183;
-                    continue _fun81837
+                    _fun81838_ip = 183;
+                    continue _fun81838
                 }
             case 45:
                 var3 = _closure1_slot1;
@@ -106,8 +106,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var6.bind(var7)(var5);
                 var2.body = var5;
                 var2 = var3.bind(var4)(var2);
-                _fun81837_ip = 213;
-                continue _fun81837;
+                _fun81838_ip = 213;
+                continue _fun81838;
             case 183:
                 var2 = _closure1_slot1;
                 var3 = _closure1_slot2;
@@ -144,4 +144,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1621, 7095, 10221, 10393, 4000, 1235, 9031, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1621, 7096, 10222, 10394, 4000, 1235, 9032, 2]);

@@ -56,7 +56,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/collectibles/native/CollectiblesShopFeaturedPage.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun89158: for (var _fun89158_ip = 0;;) switch (_fun89158_ip) {
+        _fun89159: for (var _fun89159_ip = 0;;) switch (_fun89159_ip) {
             case 0:
                 var0 = arg0;
                 var3 = var0.shopBlock;
@@ -66,13 +66,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var0.bind(var4)();
                 var0 = null;
                 if (!(var0 === var1)) {
-                    _fun89158_ip = 95;
-                    continue _fun89158
+                    _fun89159_ip = 95;
+                    continue _fun89159
                 }
             case 34:
                 if (!(var4 !== var3)) {
-                    _fun89158_ip = 95;
-                    continue _fun89158
+                    _fun89159_ip = 95;
+                    continue _fun89159
                 }
             case 38:
                 var2 = _closure1_slot5;
@@ -87,8 +87,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var3.FEATURED_PAGE;
                 var0.screen = var3;
                 var0 = var2.bind(var4)(var1, var0);
-                _fun89158_ip = 243;
-                continue _fun89158;
+                _fun89159_ip = 243;
+                continue _fun89159;
             case 95:
                 var3 = _closure1_slot5;
                 var2 = _closure1_slot3;
@@ -131,4 +131,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 3289, 33, 1297, 7422, 7423, 1235, 11525, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 3289, 33, 1297, 7423, 7424, 1235, 11526, 2]);

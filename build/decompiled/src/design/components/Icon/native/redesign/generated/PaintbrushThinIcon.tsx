@@ -33,15 +33,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/Icon/native/redesign/generated/PaintbrushThinIcon.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Environment: var1
-        _fun104514: for (var _fun104514_ip = 0;;) switch (_fun104514_ip) {
+        _fun104515: for (var _fun104515_ip = 0;;) switch (_fun104515_ip) {
             case 0:
                 var2 = arg0;
                 var5 = var2.style;
                 var6 = var2.color;
                 var3 = undefined;
                 if (!(var6 === var3)) {
-                    _fun104514_ip = 53;
-                    continue _fun104514
+                    _fun104515_ip = 53;
+                    continue _fun104515
                 }
             case 19:
                 var1 = _closure1_slot1;
@@ -83,4 +83,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.PaintbrushThinIcon = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 671, 3157, 13614, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 671, 3157, 13615, 2]);

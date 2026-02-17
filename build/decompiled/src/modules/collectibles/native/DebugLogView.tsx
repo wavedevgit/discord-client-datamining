@@ -108,7 +108,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/collectibles/native/DebugLogView.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function() {
-        _fun89160: for (var _fun89160_ip = 0;;) switch (_fun89160_ip) {
+        _fun89161: for (var _fun89161_ip = 0;;) switch (_fun89161_ip) {
             case 0:
                 var1 = _closure1_slot7;
                 var3 = undefined;
@@ -154,22 +154,22 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2[0] = var1;
                 var2[1] = var0;
                 var1 = function() { // Environment: var8
-                    _fun89164: for (var _fun89164_ip = 0;;) switch (_fun89164_ip) {
+                    _fun89165: for (var _fun89165_ip = 0;;) switch (_fun89165_ip) {
                         case 0:
                             var0 = _closure2_slot0;
                             var2 = var0.length;
                             var0 = 0;
                             var0 = var0 === var2;
                             if (!var0) {
-                                _fun89164_ip = 25;
-                                continue _fun89164
+                                _fun89165_ip = 25;
+                                continue _fun89165
                             }
                         case 21:
                             var0 = _closure2_slot3;
                         case 25:
                             if (!var0) {
-                                _fun89164_ip = 48;
-                                continue _fun89164
+                                _fun89165_ip = 48;
+                                continue _fun89165
                             }
                         case 28:
                             var2 = _closure1_slot8;
@@ -183,15 +183,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var1 = var4.bind(var6)(var1, var2);
                 if (!var0) {
-                    _fun89160_ip = 517;
-                    continue _fun89160
+                    _fun89161_ip = 517;
+                    continue _fun89161
                 }
             case 154:
                 var0 = var9.length;
                 var6 = 0;
                 if (!(var6 !== var0)) {
-                    _fun89160_ip = 517;
-                    continue _fun89160
+                    _fun89161_ip = 517;
+                    continue _fun89161
                 }
             case 168:
                 var1 = var9.slice;

@@ -53,7 +53,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = new Array(1);
         var1[0] = var7;
         var0 = function() { // Environment: var0
-            _fun112303: for (var _fun112303_ip = 0;;) switch (_fun112303_ip) {
+            _fun112304: for (var _fun112304_ip = 0;;) switch (_fun112304_ip) {
                 case 0:
                     var2 = _closure1_slot3;
                     var1 = var2.getChannel;
@@ -63,8 +63,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var3 = var0 == var2;
                     var1 = undefined;
                     if (var3) {
-                        _fun112303_ip = 41;
-                        continue _fun112303
+                        _fun112304_ip = 41;
+                        continue _fun112304
                     }
                 case 35:
                     var1 = var2.userLimit;
@@ -72,8 +72,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = var0 != var1;
                     var0 = 0;
                     if (!var2) {
-                        _fun112303_ip = 53;
-                        continue _fun112303
+                        _fun112304_ip = 53;
+                        continue _fun112304
                     }
                 case 50:
                     var0 = var1;
@@ -149,4 +149,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = 'voice-panel-max-capacity';
     var2.VOICE_PANEL_MAX_CAPACITY_KEY = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1372, 33, 632, 4024, 4024, 14412, 1235, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1372, 33, 632, 4024, 4024, 14413, 1235, 2]);

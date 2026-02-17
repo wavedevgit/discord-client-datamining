@@ -52,13 +52,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.bind(var6)(var4);
     var2.GameProfileRolloutExperiment = var3;
     var3 = function arg0() {
-        _fun79222: for (var _fun79222_ip = 0;;) switch (_fun79222_ip) {
+        _fun79223: for (var _fun79223_ip = 0;;) switch (_fun79223_ip) {
             case 0:
                 var4 = arguments[1];
                 var0 = undefined;
                 if (!(var4 === var0)) {
-                    _fun79222_ip = 11;
-                    continue _fun79222
+                    _fun79223_ip = 11;
+                    continue _fun79223
                 }
             case 9:
                 var4 = true;
@@ -77,13 +77,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.canSeeGameProfile = var3;
     var1 = function arg0() {
-        _fun79223: for (var _fun79223_ip = 0;;) switch (_fun79223_ip) {
+        _fun79224: for (var _fun79224_ip = 0;;) switch (_fun79224_ip) {
             case 0:
                 var4 = arguments[1];
                 var0 = undefined;
                 if (!(var4 === var0)) {
-                    _fun79223_ip = 11;
-                    continue _fun79223
+                    _fun79224_ip = 11;
+                    continue _fun79224
                 }
             case 9:
                 var4 = true;

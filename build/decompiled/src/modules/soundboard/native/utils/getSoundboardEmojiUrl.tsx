@@ -23,7 +23,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/soundboard/native/utils/getSoundboardEmojiUrl.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0, arg1() {
-        _fun68971: for (var _fun68971_ip = 0;;) switch (_fun68971_ip) {
+        _fun68972: for (var _fun68972_ip = 0;;) switch (_fun68972_ip) {
             case 0:
                 var0 = arg0;
                 var4 = var0.emojiId;
@@ -32,8 +32,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = undefined;
                 var0 = undefined;
                 if (var1) {
-                    _fun68971_ip = 75;
-                    continue _fun68971
+                    _fun68972_ip = 75;
+                    continue _fun68972
                 }
             case 22:
                 var2 = _closure1_slot0;

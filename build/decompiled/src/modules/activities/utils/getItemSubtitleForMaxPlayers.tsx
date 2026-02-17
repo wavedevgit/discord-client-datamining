@@ -22,13 +22,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/activities/utils/getItemSubtitleForMaxPlayers.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function arg0() {
-        _fun108626: for (var _fun108626_ip = 0;;) switch (_fun108626_ip) {
+        _fun108627: for (var _fun108627_ip = 0;;) switch (_fun108627_ip) {
             case 0:
                 var5 = arg0;
                 var7 = 0;
                 if (!(!(var5 > var7))) {
-                    _fun108626_ip = 70;
-                    continue _fun108626
+                    _fun108627_ip = 70;
+                    continue _fun108627
                 }
             case 9:
                 var4 = _closure1_slot0;
@@ -43,8 +43,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.t;
                 var0 = var0.s1vQIL;
                 var0 = var1.bind(var2)(var0);
-                _fun108626_ip = 137;
-                continue _fun108626;
+                _fun108627_ip = 137;
+                continue _fun108627;
             case 70:
                 var6 = _closure1_slot0;
                 var1 = _closure1_slot1;
@@ -66,41 +66,6 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var3;
     var3 = function arg0() {
-        _fun108627: for (var _fun108627_ip = 0;;) switch (_fun108627_ip) {
-            case 0:
-                var3 = arg0;
-                var6 = 0;
-                if (!(!(var3 > var6))) {
-                    _fun108627_ip = 68;
-                    continue _fun108627
-                }
-            case 9:
-                var5 = _closure1_slot0;
-                var0 = _closure1_slot1;
-                var1 = var0[var6];
-                var4 = undefined;
-                var1 = var5.bind(var4)(var1);
-                var2 = var1.intl;
-                var1 = var2.string;
-                var0 = var0[var6];
-                var0 = var5.bind(var4)(var0);
-                var0 = var0.t;
-                var0 = var0.zMNEiF;
-                var0 = var1.bind(var2)(var0);
-                _fun108627_ip = 92;
-                continue _fun108627;
-            case 68:
-                var1 = global;
-                var1 = var1.HermesInternal;
-                var2 = var1.concat;
-                var1 = '1 - ';
-                var0 = var2.bind(var1)(var3);
-            case 92:
-                return var0;
-        }
-    };
-    var2.getItemSubtitleForMaxPlayersShort = var3;
-    var1 = function arg0() {
         _fun108628: for (var _fun108628_ip = 0;;) switch (_fun108628_ip) {
             case 0:
                 var3 = arg0;
@@ -124,6 +89,41 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var1.bind(var2)(var0);
                 _fun108628_ip = 92;
                 continue _fun108628;
+            case 68:
+                var1 = global;
+                var1 = var1.HermesInternal;
+                var2 = var1.concat;
+                var1 = '1 - ';
+                var0 = var2.bind(var1)(var3);
+            case 92:
+                return var0;
+        }
+    };
+    var2.getItemSubtitleForMaxPlayersShort = var3;
+    var1 = function arg0() {
+        _fun108629: for (var _fun108629_ip = 0;;) switch (_fun108629_ip) {
+            case 0:
+                var3 = arg0;
+                var6 = 0;
+                if (!(!(var3 > var6))) {
+                    _fun108629_ip = 68;
+                    continue _fun108629
+                }
+            case 9:
+                var5 = _closure1_slot0;
+                var0 = _closure1_slot1;
+                var1 = var0[var6];
+                var4 = undefined;
+                var1 = var5.bind(var4)(var1);
+                var2 = var1.intl;
+                var1 = var2.string;
+                var0 = var0[var6];
+                var0 = var5.bind(var4)(var0);
+                var0 = var0.t;
+                var0 = var0.zMNEiF;
+                var0 = var1.bind(var2)(var0);
+                _fun108629_ip = 92;
+                continue _fun108629;
             case 68:
                 var1 = global;
                 var1 = var1.HermesInternal;

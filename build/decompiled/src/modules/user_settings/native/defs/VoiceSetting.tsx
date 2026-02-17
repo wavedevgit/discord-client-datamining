@@ -56,7 +56,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = var8.MicrophoneIcon;
     var1.IconComponent = var8;
     var8 = function() {
-        _fun85223: for (var _fun85223_ip = 0;;) switch (_fun85223_ip) {
+        _fun85224: for (var _fun85224_ip = 0;;) switch (_fun85224_ip) {
             case 0:
                 var2 = _closure1_slot0;
                 var3 = _closure1_slot1;
@@ -78,8 +78,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = _closure1_slot3;
                 var0 = var0.PUSH_TO_TALK;
                 if (!(var2 !== var0)) {
-                    _fun85223_ip = 128;
-                    continue _fun85223
+                    _fun85224_ip = 128;
+                    continue _fun85224
                 }
             case 71:
                 var4 = _closure1_slot0;
@@ -94,8 +94,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.t;
                 var0 = var0.cHCEOJ;
                 var0 = var2.bind(var3)(var0);
-                _fun85223_ip = 183;
-                continue _fun85223;
+                _fun85224_ip = 183;
+                continue _fun85224;
             case 128:
                 var4 = _closure1_slot0;
                 var6 = _closure1_slot1;
@@ -157,4 +157,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3476, 660, 566, 1235, 9031, 10872, 10874, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3476, 660, 566, 1235, 9032, 10873, 10875, 2]);

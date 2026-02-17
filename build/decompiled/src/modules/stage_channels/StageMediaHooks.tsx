@@ -275,4 +275,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.isStageVideoEnabled = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1410, 3520, 4253, 566, 5723, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1410, 3520, 4253, 566, 5724, 2]);

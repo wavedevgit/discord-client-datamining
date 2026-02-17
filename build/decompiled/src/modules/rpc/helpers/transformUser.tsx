@@ -22,7 +22,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/rpc/helpers/transformUser.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun64211: for (var _fun64211_ip = 0;;) switch (_fun64211_ip) {
+        _fun64212: for (var _fun64212_ip = 0;;) switch (_fun64212_ip) {
             case 0:
                 var0 = arg0;
                 var9 = var0.id;
@@ -54,8 +54,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = null;
                 var3 = var3 != var2;
                 if (!var3) {
-                    _fun64211_ip = 142;
-                    continue _fun64211
+                    _fun64212_ip = 142;
+                    continue _fun64212
                 }
             case 139:
                 var1 = var2;

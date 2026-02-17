@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/go_live/utils/transitionToStream.native.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun64822: for (var _fun64822_ip = 0;;) switch (_fun64822_ip) {
+        _fun64823: for (var _fun64823_ip = 0;;) switch (_fun64823_ip) {
             case 0:
                 var3 = _closure1_slot3;
                 var2 = var3.getChannel;
@@ -37,8 +37,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var2.bind(var3)(var1);
                 var1 = null;
                 if (!(var1 != var3)) {
-                    _fun64822_ip = 119;
-                    continue _fun64822
+                    _fun64823_ip = 119;
+                    continue _fun64823
                 }
             case 31:
                 var5 = _closure1_slot1;
@@ -68,4 +68,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1372, 3284, 4569, 7905, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1372, 3284, 4569, 7906, 2]);

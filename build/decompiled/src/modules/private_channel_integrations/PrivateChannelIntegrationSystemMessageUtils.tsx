@@ -31,94 +31,6 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/private_channel_integrations/PrivateChannelIntegrationSystemMessageUtils.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function arg0() {
-        _fun56224: for (var _fun56224_ip = 0;;) switch (_fun56224_ip) {
-            case 0:
-                var0 = arg0;
-                var10 = var0.application;
-                var11 = var0.username;
-                var7 = var0.usernameHook;
-                var8 = undefined;
-                if (!(var7 === var8)) {
-                    _fun56224_ip = 33;
-                    continue _fun56224
-                }
-            case 26:
-                var7 = _closure1_slot4;
-            case 33:
-                var6 = var0.applicationNameHook;
-                if (!(var6 === var8)) {
-                    _fun56224_ip = 50;
-                    continue _fun56224
-                }
-            case 43:
-                var6 = _closure1_slot4;
-            case 50:
-                var0 = null;
-                if (!(var0 == var10)) {
-                    _fun56224_ip = 176;
-                    continue _fun56224
-                }
-            case 56:
-                var1 = _closure1_slot0;
-                var12 = _closure1_slot2;
-                var0 = 1;
-                var2 = var12[var0];
-                var2 = var1.bind(var8)(var2);
-                var3 = var2.intl;
-                var2 = var3.format;
-                var0 = var12[var0];
-                var0 = var1.bind(var8)(var0);
-                var0 = var0.t;
-                var1 = var0["+6V2sd"];
-                var0 = {};
-                var0.username = var11;
-                var0.usernameHook = var7;
-                var9 = _closure1_slot1;
-                var5 = 2;
-                var5 = var12[var5];
-                var9 = var9.bind(var8)(var5);
-                var5 = var9.getArticleURL;
-                var4 = _closure1_slot3;
-                var4 = var4.PRIVATE_CHANNEL_INTEGRATIONS;
-                var4 = var5.bind(var9)(var4);
-                var0.helpCenterLink = var4;
-                var0 = var2.bind(var3)(var1, var0);
-                _fun56224_ip = 306;
-                continue _fun56224;
-            case 176:
-                var2 = _closure1_slot0;
-                var9 = _closure1_slot2;
-                var1 = 1;
-                var3 = var9[var1];
-                var3 = var2.bind(var8)(var3);
-                var4 = var3.intl;
-                var3 = var4.format;
-                var1 = var9[var1];
-                var1 = var2.bind(var8)(var1);
-                var1 = var1.t;
-                var2 = var1.J8SaGy;
-                var1 = {};
-                var1.username = var11;
-                var10 = var10.name;
-                var1.otherUsername = var10;
-                var1.usernameHook = var7;
-                var1.otherUsernameHook = var6;
-                var7 = _closure1_slot1;
-                var6 = 2;
-                var6 = var9[var6];
-                var7 = var7.bind(var8)(var6);
-                var6 = var7.getArticleURL;
-                var5 = _closure1_slot3;
-                var5 = var5.PRIVATE_CHANNEL_INTEGRATIONS;
-                var5 = var6.bind(var7)(var5);
-                var1.helpCenterLink = var5;
-                var0 = var3.bind(var4)(var2, var1);
-            case 306:
-                return var0;
-        }
-    };
-    var2.getPrivateChannelIntegrationAddedSystemMessageContent = var3;
-    var3 = function arg0() {
         _fun56225: for (var _fun56225_ip = 0;;) switch (_fun56225_ip) {
             case 0:
                 var0 = arg0;
@@ -157,7 +69,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var12[var0];
                 var0 = var1.bind(var8)(var0);
                 var0 = var0.t;
-                var1 = var0.sAX6rs;
+                var1 = var0["+6V2sd"];
                 var0 = {};
                 var0.username = var11;
                 var0.usernameHook = var7;
@@ -173,6 +85,94 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var2.bind(var3)(var1, var0);
                 _fun56225_ip = 306;
                 continue _fun56225;
+            case 176:
+                var2 = _closure1_slot0;
+                var9 = _closure1_slot2;
+                var1 = 1;
+                var3 = var9[var1];
+                var3 = var2.bind(var8)(var3);
+                var4 = var3.intl;
+                var3 = var4.format;
+                var1 = var9[var1];
+                var1 = var2.bind(var8)(var1);
+                var1 = var1.t;
+                var2 = var1.J8SaGy;
+                var1 = {};
+                var1.username = var11;
+                var10 = var10.name;
+                var1.otherUsername = var10;
+                var1.usernameHook = var7;
+                var1.otherUsernameHook = var6;
+                var7 = _closure1_slot1;
+                var6 = 2;
+                var6 = var9[var6];
+                var7 = var7.bind(var8)(var6);
+                var6 = var7.getArticleURL;
+                var5 = _closure1_slot3;
+                var5 = var5.PRIVATE_CHANNEL_INTEGRATIONS;
+                var5 = var6.bind(var7)(var5);
+                var1.helpCenterLink = var5;
+                var0 = var3.bind(var4)(var2, var1);
+            case 306:
+                return var0;
+        }
+    };
+    var2.getPrivateChannelIntegrationAddedSystemMessageContent = var3;
+    var3 = function arg0() {
+        _fun56226: for (var _fun56226_ip = 0;;) switch (_fun56226_ip) {
+            case 0:
+                var0 = arg0;
+                var10 = var0.application;
+                var11 = var0.username;
+                var7 = var0.usernameHook;
+                var8 = undefined;
+                if (!(var7 === var8)) {
+                    _fun56226_ip = 33;
+                    continue _fun56226
+                }
+            case 26:
+                var7 = _closure1_slot4;
+            case 33:
+                var6 = var0.applicationNameHook;
+                if (!(var6 === var8)) {
+                    _fun56226_ip = 50;
+                    continue _fun56226
+                }
+            case 43:
+                var6 = _closure1_slot4;
+            case 50:
+                var0 = null;
+                if (!(var0 == var10)) {
+                    _fun56226_ip = 176;
+                    continue _fun56226
+                }
+            case 56:
+                var1 = _closure1_slot0;
+                var12 = _closure1_slot2;
+                var0 = 1;
+                var2 = var12[var0];
+                var2 = var1.bind(var8)(var2);
+                var3 = var2.intl;
+                var2 = var3.format;
+                var0 = var12[var0];
+                var0 = var1.bind(var8)(var0);
+                var0 = var0.t;
+                var1 = var0.sAX6rs;
+                var0 = {};
+                var0.username = var11;
+                var0.usernameHook = var7;
+                var9 = _closure1_slot1;
+                var5 = 2;
+                var5 = var12[var5];
+                var9 = var9.bind(var8)(var5);
+                var5 = var9.getArticleURL;
+                var4 = _closure1_slot3;
+                var4 = var4.PRIVATE_CHANNEL_INTEGRATIONS;
+                var4 = var5.bind(var9)(var4);
+                var0.helpCenterLink = var4;
+                var0 = var2.bind(var3)(var1, var0);
+                _fun56226_ip = 306;
+                continue _fun56226;
             case 176:
                 var2 = _closure1_slot0;
                 var9 = _closure1_slot2;
@@ -207,7 +207,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getPrivateChannelIntegrationRemovedSystemMessageContent = var3;
     var3 = function arg0() {
-        _fun56226: for (var _fun56226_ip = 0;;) switch (_fun56226_ip) {
+        _fun56227: for (var _fun56227_ip = 0;;) switch (_fun56227_ip) {
             case 0:
                 var0 = arg0;
                 var11 = var0.application;
@@ -217,8 +217,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var0.medium;
                 var0 = null;
                 if (!(var0 == var11)) {
-                    _fun56226_ip = 175;
-                    continue _fun56226
+                    _fun56227_ip = 175;
+                    continue _fun56227
                 }
             case 41:
                 var1 = _closure1_slot0;
@@ -249,8 +249,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4.url = var6;
                 var0.helpCenterLink = var4;
                 var0 = var2.bind(var3)(var1, var0);
-                _fun56226_ip = 319;
-                continue _fun56226;
+                _fun56227_ip = 319;
+                continue _fun56227;
             case 175:
                 var2 = _closure1_slot0;
                 var10 = _closure1_slot2;
@@ -289,7 +289,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getPrivateChannelIntegrationAddedSystemMessageASTContent = var3;
     var1 = function arg0() {
-        _fun56227: for (var _fun56227_ip = 0;;) switch (_fun56227_ip) {
+        _fun56228: for (var _fun56228_ip = 0;;) switch (_fun56228_ip) {
             case 0:
                 var0 = arg0;
                 var11 = var0.application;
@@ -299,8 +299,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var0.medium;
                 var0 = null;
                 if (!(var0 == var11)) {
-                    _fun56227_ip = 175;
-                    continue _fun56227
+                    _fun56228_ip = 175;
+                    continue _fun56228
                 }
             case 41:
                 var1 = _closure1_slot0;
@@ -331,8 +331,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4.url = var6;
                 var0.helpCenterLink = var4;
                 var0 = var2.bind(var3)(var1, var0);
-                _fun56227_ip = 319;
-                continue _fun56227;
+                _fun56228_ip = 319;
+                continue _fun56228;
             case 175:
                 var2 = _closure1_slot0;
                 var10 = _closure1_slot2;

@@ -35,4 +35,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var1.bind(var0)(var3);
     var2.BalanceWidgetActionSheet = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [2, 9589, 9595, 9597]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [2, 9590, 9596, 9598]);

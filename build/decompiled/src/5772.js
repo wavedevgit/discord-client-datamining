@@ -8,7 +8,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'op': 110,
         'w': 1280,
         'h': 720,
-        'nm': 'FrameEffect_07-6_Out',
+        'nm': 'FrameEffect_07-5_Out',
         'ddd': 0
     };
     var0 = {
@@ -19,7 +19,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'tc': ''
     };
     var1.meta = var0;
-    var38 = 1;
+    var5 = 1;
     var0 = new Array(2);
     var2 = {
         'id': 'image_0',
@@ -48,43 +48,43 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'bm': 0
     };
     var3 = {};
-    var5 = {
+    var6 = {
         'a': 0,
         'k': 100,
         'ix': 11
     };
-    var3.o = var5;
-    var30 = 10;
-    var5 = {
+    var3.o = var6;
+    var36 = 10;
+    var6 = {
         'a': 0,
         'k': 0,
         'ix': 10
     };
-    var3.r = var5;
-    var5 = {
+    var3.r = var6;
+    var6 = {
         'a': 0,
         'k': null,
         'ix': 2
     };
-    var6 = [19.875, 20.125, 0];
-    var5.k = var6;
-    var3.p = var5;
-    var5 = {
+    var7 = [19.875, 20.125, 0];
+    var6.k = var7;
+    var3.p = var6;
+    var6 = {
         'a': 0,
         'k': null,
         'ix': 1
     };
-    var6 = [17.25, 17.25, 0];
-    var5.k = var6;
-    var3.a = var5;
-    var5 = {
+    var7 = [17.25, 17.25, 0];
+    var6.k = var7;
+    var3.a = var6;
+    var6 = {
         'a': 0,
         'k': null,
         'ix': 6
     };
-    var6 = [108.7, 108.7, 100];
-    var5.k = var6;
-    var3.s = var5;
+    var7 = [108.7, 108.7, 100];
+    var6.k = var7;
+    var3.s = var6;
     var4.ks = var3;
     var3 = new Array(1);
     var3[0] = var4;
@@ -125,7 +125,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'k': null,
         'ix': 2
     };
-    var4 = [1185.086, 274.563, 0];
+    var4 = [638.82, 93.949, 0];
     var3.k = var4;
     var0.p = var3;
     var3 = {
@@ -141,53 +141,53 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'k': null,
         'ix': 6
     };
-    var5 = {};
+    var6 = {};
     var4 = {};
-    var6 = [0, 0, 0.667];
-    var4.x = var6;
-    var6 = [1, 1, 1];
-    var4.y = var6;
-    var5.i = var4;
+    var7 = [0, 0, 0.667];
+    var4.x = var7;
+    var7 = [1, 1, 1];
+    var4.y = var7;
+    var6.i = var4;
     var4 = {};
-    var6 = [0.167, 0.167, 0.167];
-    var4.x = var6;
-    var6 = [0.167, 0.167, 0];
-    var4.y = var6;
-    var5.o = var4;
-    var40 = -2;
-    var5.t = var40;
+    var7 = [0.167, 0.167, 0.167];
+    var4.x = var7;
+    var7 = [0.167, 0.167, 0];
+    var4.y = var7;
+    var6.o = var4;
+    var4 = -2;
+    var6.t = var4;
     var4 = [0, 0, 100];
-    var5.s = var4;
+    var6.s = var4;
     var4 = new Array(3);
-    var4[0] = var5;
-    var5 = {};
+    var4[0] = var6;
     var6 = {};
-    var7 = [1, 1, 0.833];
-    var6.x = var7;
-    var7 = [1, 1, 17.667];
-    var6.y = var7;
-    var5.i = var6;
+    var7 = {};
+    var8 = [1, 1, 0.833];
+    var7.x = var8;
+    var8 = [1, 1, 17.667];
+    var7.y = var8;
+    var6.i = var7;
+    var7 = {};
+    var8 = [0.727, 0.727, 0.333];
+    var7.x = var8;
+    var8 = [0, 0, 0];
+    var7.y = var8;
+    var6.o = var7;
+    var7 = 9.053;
+    var6.t = var7;
+    var7 = [447.217, 447.217, 100];
+    var6.s = var7;
+    var4[1] = var6;
     var6 = {};
-    var7 = [0.727, 0.727, 0.333];
-    var6.x = var7;
-    var7 = [0, 0, 0];
-    var6.y = var7;
-    var5.o = var6;
-    var43 = 9.053;
-    var5.t = var43;
-    var6 = [447.217, 447.217, 100];
-    var5.s = var6;
-    var4[1] = var5;
-    var5 = {};
-    var12 = 28;
-    var5.t = var12;
-    var6 = [0, 0, 100];
-    var5.s = var6;
-    var4[2] = var5;
+    var18 = 28;
+    var6.t = var18;
+    var7 = [0, 0, 100];
+    var6.s = var7;
+    var4[2] = var6;
     var3.k = var4;
     var0.s = var3;
     var2.ks = var0;
-    var34 = 40;
+    var6 = 40;
     var0 = new Array(28);
     var0[0] = var2;
     var2 = {
@@ -224,64 +224,64 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'k': null,
         'ix': 2
     };
-    var5 = [1002.02, 274.563, 0];
-    var4.k = var5;
+    var7 = [638.82, 274.563, 0];
+    var4.k = var7;
     var3.p = var4;
     var4 = {
         'a': 0,
         'k': null,
         'ix': 1
     };
-    var5 = [20, 20, 0];
-    var4.k = var5;
+    var7 = [20, 20, 0];
+    var4.k = var7;
     var3.a = var4;
     var4 = {
         'a': 1,
         'k': null,
         'ix': 6
     };
-    var6 = {};
-    var5 = {};
-    var7 = [0, 0, 0.667];
-    var5.x = var7;
-    var7 = [1, 1, 1];
-    var5.y = var7;
-    var6.i = var5;
-    var5 = {};
-    var7 = [0.167, 0.167, 0.167];
-    var5.x = var7;
-    var7 = [0.167, 0.167, 0];
-    var5.y = var7;
-    var6.o = var5;
-    var6.t = var38;
+    var7 = {};
+    var8 = {};
+    var9 = [0, 0, 0.667];
+    var8.x = var9;
+    var9 = [1, 1, 1];
+    var8.y = var9;
+    var7.i = var8;
+    var8 = {};
+    var9 = [0.167, 0.167, 0.167];
+    var8.x = var9;
+    var9 = [0.167, 0.167, 0];
+    var8.y = var9;
+    var7.o = var8;
+    var7.t = var5;
     var5 = [0, 0, 100];
-    var6.s = var5;
+    var7.s = var5;
     var5 = new Array(3);
-    var5[0] = var6;
-    var6 = {};
+    var5[0] = var7;
     var7 = {};
-    var8 = [1, 1, 0.833];
-    var7.x = var8;
-    var8 = [1, 1, 17.667];
-    var7.y = var8;
-    var6.i = var7;
+    var8 = {};
+    var9 = [1, 1, 0.833];
+    var8.x = var9;
+    var9 = [1, 1, 17.667];
+    var8.y = var9;
+    var7.i = var8;
+    var8 = {};
+    var9 = [0.727, 0.727, 0.333];
+    var8.x = var9;
+    var9 = [0, 0, 0];
+    var8.y = var9;
+    var7.o = var8;
+    var8 = 12.053;
+    var7.t = var8;
+    var8 = [447.217, 447.217, 100];
+    var7.s = var8;
+    var5[1] = var7;
     var7 = {};
-    var8 = [0.727, 0.727, 0.333];
-    var7.x = var8;
-    var8 = [0, 0, 0];
-    var7.y = var8;
-    var6.o = var7;
-    var41 = 12.053;
-    var6.t = var41;
-    var7 = [447.217, 447.217, 100];
-    var6.s = var7;
-    var5[1] = var6;
-    var6 = {};
-    var9 = 31;
-    var6.t = var9;
-    var7 = [0, 0, 100];
-    var6.s = var7;
-    var5[2] = var6;
+    var15 = 31;
+    var7.t = var15;
+    var8 = [0, 0, 100];
+    var7.s = var8;
+    var5[2] = var7;
     var4.k = var5;
     var3.s = var4;
     var2.ks = var3;
@@ -320,7 +320,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'k': null,
         'ix': 2
     };
-    var5 = [820.42, 274.563, 0];
+    var5 = [638.82, 452.56, 0];
     var4.k = var5;
     var3.p = var4;
     var4 = {
@@ -336,46 +336,46 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'k': null,
         'ix': 6
     };
-    var6 = {};
+    var7 = {};
     var5 = {};
-    var7 = [0, 0, 0.667];
-    var5.x = var7;
-    var7 = [1, 1, 1];
-    var5.y = var7;
-    var6.i = var5;
+    var8 = [0, 0, 0.667];
+    var5.x = var8;
+    var8 = [1, 1, 1];
+    var5.y = var8;
+    var7.i = var5;
     var5 = {};
-    var7 = [0.167, 0.167, 0.167];
-    var5.x = var7;
-    var7 = [0.167, 0.167, 0];
-    var5.y = var7;
-    var6.o = var5;
-    var36 = 4;
-    var6.t = var36;
+    var8 = [0.167, 0.167, 0.167];
+    var5.x = var8;
+    var8 = [0.167, 0.167, 0];
+    var5.y = var8;
+    var7.o = var5;
+    var5 = 4;
+    var7.t = var5;
     var5 = [0, 0, 100];
-    var6.s = var5;
+    var7.s = var5;
     var5 = new Array(3);
-    var5[0] = var6;
-    var6 = {};
+    var5[0] = var7;
     var7 = {};
-    var8 = [1, 1, 0.833];
-    var7.x = var8;
-    var8 = [1, 1, 17.667];
-    var7.y = var8;
-    var6.i = var7;
+    var8 = {};
+    var9 = [1, 1, 0.833];
+    var8.x = var9;
+    var9 = [1, 1, 17.667];
+    var8.y = var9;
+    var7.i = var8;
+    var8 = {};
+    var9 = [0.727, 0.727, 0.333];
+    var8.x = var9;
+    var9 = [0, 0, 0];
+    var8.y = var9;
+    var7.o = var8;
+    var8 = 15.053;
+    var7.t = var8;
+    var8 = [447.217, 447.217, 100];
+    var7.s = var8;
+    var5[1] = var7;
     var7 = {};
-    var8 = [0.727, 0.727, 0.333];
-    var7.x = var8;
-    var8 = [0, 0, 0];
-    var7.y = var8;
-    var6.o = var7;
-    var39 = 15.053;
-    var6.t = var39;
-    var7 = [447.217, 447.217, 100];
-    var6.s = var7;
-    var5[1] = var6;
-    var7 = {};
-    var6 = 34;
-    var7.t = var6;
+    var12 = 34;
+    var7.t = var12;
     var8 = [0, 0, 100];
     var7.s = var8;
     var5[2] = var7;
@@ -417,7 +417,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'k': null,
         'ix': 2
     };
-    var5 = [638.82, 274.563, 0];
+    var5 = [638.82, 630.557, 0];
     var4.k = var5;
     var3.p = var4;
     var4 = {
@@ -433,50 +433,50 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'k': null,
         'ix': 6
     };
-    var5 = {};
     var7 = {};
+    var5 = {};
     var8 = [0, 0, 0.667];
-    var7.x = var8;
+    var5.x = var8;
     var8 = [1, 1, 1];
-    var7.y = var8;
-    var5.i = var7;
-    var7 = {};
-    var8 = [0.167, 0.167, 0.167];
-    var7.x = var8;
-    var8 = [0.167, 0.167, 0];
-    var7.y = var8;
-    var5.o = var7;
-    var33 = 7;
-    var5.t = var33;
-    var7 = [0, 0, 100];
-    var5.s = var7;
-    var7 = new Array(3);
-    var7[0] = var5;
+    var5.y = var8;
+    var7.i = var5;
     var5 = {};
+    var8 = [0.167, 0.167, 0.167];
+    var5.x = var8;
+    var8 = [0.167, 0.167, 0];
+    var5.y = var8;
+    var7.o = var5;
+    var5 = 7;
+    var7.t = var5;
+    var5 = [0, 0, 100];
+    var7.s = var5;
+    var5 = new Array(3);
+    var5[0] = var7;
+    var7 = {};
     var8 = {};
-    var10 = [1, 1, 0.833];
-    var8.x = var10;
-    var10 = [1, 1, 17.667];
-    var8.y = var10;
-    var5.i = var8;
+    var9 = [1, 1, 0.833];
+    var8.x = var9;
+    var9 = [1, 1, 17.667];
+    var8.y = var9;
+    var7.i = var8;
     var8 = {};
-    var10 = [0.727, 0.727, 0.333];
-    var8.x = var10;
-    var10 = [0, 0, 0];
-    var8.y = var10;
-    var5.o = var8;
-    var37 = 18.053;
-    var5.t = var37;
+    var9 = [0.727, 0.727, 0.333];
+    var8.x = var9;
+    var9 = [0, 0, 0];
+    var8.y = var9;
+    var7.o = var8;
+    var8 = 18.053;
+    var7.t = var8;
     var8 = [447.217, 447.217, 100];
-    var5.s = var8;
-    var7[1] = var5;
-    var8 = {};
-    var5 = 37;
-    var8.t = var5;
-    var10 = [0, 0, 100];
-    var8.s = var10;
-    var7[2] = var8;
-    var4.k = var7;
+    var7.s = var8;
+    var5[1] = var7;
+    var7 = {};
+    var9 = 37;
+    var7.t = var9;
+    var8 = [0, 0, 100];
+    var7.s = var8;
+    var5[2] = var7;
+    var4.k = var5;
     var3.s = var4;
     var2.ks = var3;
     var0[3] = var2;
@@ -514,7 +514,199 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'k': null,
         'ix': 2
     };
-    var7 = [458.02, 274.563, 0];
+    var5 = [458.02, 93.949, 0];
+    var4.k = var5;
+    var3.p = var4;
+    var4 = {
+        'a': 0,
+        'k': null,
+        'ix': 1
+    };
+    var5 = [20, 20, 0];
+    var4.k = var5;
+    var3.a = var4;
+    var4 = {
+        'a': 1,
+        'k': null,
+        'ix': 6
+    };
+    var7 = {};
+    var5 = {};
+    var8 = [0, 0, 0.667];
+    var5.x = var8;
+    var8 = [1, 1, 1];
+    var5.y = var8;
+    var7.i = var5;
+    var5 = {};
+    var8 = [0.167, 0.167, 0.167];
+    var5.x = var8;
+    var8 = [0.167, 0.167, 0];
+    var5.y = var8;
+    var7.o = var5;
+    var7.t = var36;
+    var5 = [0, 0, 100];
+    var7.s = var5;
+    var5 = new Array(3);
+    var5[0] = var7;
+    var7 = {};
+    var8 = {};
+    var10 = [1, 1, 0.833];
+    var8.x = var10;
+    var10 = [1, 1, 17.667];
+    var8.y = var10;
+    var7.i = var8;
+    var8 = {};
+    var10 = [0.727, 0.727, 0.333];
+    var8.x = var10;
+    var10 = [0, 0, 0];
+    var8.y = var10;
+    var7.o = var8;
+    var39 = 21.053;
+    var7.t = var39;
+    var8 = [447.217, 447.217, 100];
+    var7.s = var8;
+    var5[1] = var7;
+    var7 = {};
+    var7.t = var6;
+    var8 = [0, 0, 100];
+    var7.s = var8;
+    var5[2] = var7;
+    var4.k = var5;
+    var3.s = var4;
+    var2.ks = var3;
+    var0[4] = var2;
+    var2 = {
+        'ddd': 0,
+        'ind': 6,
+        'ty': 0,
+        'nm': 'particle',
+        'refId': 'comp_0',
+        'sr': 1,
+        'ks': null,
+        'ao': 0,
+        'w': 40,
+        'h': 40,
+        'ip': 15,
+        'op': 41,
+        'st': 13,
+        'bm': 0
+    };
+    var3 = {};
+    var4 = {
+        'a': 0,
+        'k': 100,
+        'ix': 11
+    };
+    var3.o = var4;
+    var4 = {
+        'a': 0,
+        'k': 0,
+        'ix': 10
+    };
+    var3.r = var4;
+    var4 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var5 = [458.02, 274.563, 0];
+    var4.k = var5;
+    var3.p = var4;
+    var4 = {
+        'a': 0,
+        'k': null,
+        'ix': 1
+    };
+    var5 = [20, 20, 0];
+    var4.k = var5;
+    var3.a = var4;
+    var4 = {
+        'a': 1,
+        'k': null,
+        'ix': 6
+    };
+    var5 = {};
+    var7 = {};
+    var8 = [0, 0, 0.667];
+    var7.x = var8;
+    var8 = [1, 1, 1];
+    var7.y = var8;
+    var5.i = var7;
+    var7 = {};
+    var8 = [0.167, 0.167, 0.167];
+    var7.x = var8;
+    var8 = [0.167, 0.167, 0];
+    var7.y = var8;
+    var5.o = var7;
+    var33 = 13;
+    var5.t = var33;
+    var7 = [0, 0, 100];
+    var5.s = var7;
+    var7 = new Array(3);
+    var7[0] = var5;
+    var5 = {};
+    var8 = {};
+    var10 = [1, 1, 0.833];
+    var8.x = var10;
+    var10 = [1, 1, 17.667];
+    var8.y = var10;
+    var5.i = var8;
+    var8 = {};
+    var10 = [0.727, 0.727, 0.333];
+    var8.x = var10;
+    var10 = [0, 0, 0];
+    var8.y = var10;
+    var5.o = var8;
+    var37 = 24.053;
+    var5.t = var37;
+    var8 = [447.217, 447.217, 100];
+    var5.s = var8;
+    var7[1] = var5;
+    var8 = {};
+    var5 = 43;
+    var8.t = var5;
+    var10 = [0, 0, 100];
+    var8.s = var10;
+    var7[2] = var8;
+    var4.k = var7;
+    var3.s = var4;
+    var2.ks = var3;
+    var0[5] = var2;
+    var2 = {
+        'ddd': 0,
+        'ind': 7,
+        'ty': 0,
+        'nm': 'particle',
+        'refId': 'comp_0',
+        'sr': 1,
+        'ks': null,
+        'ao': 0,
+        'w': 40,
+        'h': 40,
+        'ip': 18,
+        'op': 44,
+        'st': 16,
+        'bm': 0
+    };
+    var3 = {};
+    var4 = {
+        'a': 0,
+        'k': 100,
+        'ix': 11
+    };
+    var3.o = var4;
+    var4 = {
+        'a': 0,
+        'k': 0,
+        'ix': 10
+    };
+    var3.r = var4;
+    var4 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var7 = [458.02, 452.56, 0];
     var4.k = var7;
     var3.p = var4;
     var4 = {
@@ -543,6 +735,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var10 = [0.167, 0.167, 0];
     var7.y = var10;
     var8.o = var7;
+    var30 = 16;
     var8.t = var30;
     var7 = [0, 0, 100];
     var8.s = var7;
@@ -561,12 +754,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var11 = [0, 0, 0];
     var10.y = var11;
     var8.o = var10;
-    var35 = 21.053;
+    var35 = 27.053;
     var8.t = var35;
     var10 = [447.217, 447.217, 100];
     var8.s = var10;
     var7[1] = var8;
     var8 = {};
+    var34 = 46;
     var8.t = var34;
     var10 = [0, 0, 100];
     var8.s = var10;
@@ -574,10 +768,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4.k = var7;
     var3.s = var4;
     var2.ks = var3;
-    var0[4] = var2;
+    var0[6] = var2;
     var2 = {
         'ddd': 0,
-        'ind': 6,
+        'ind': 8,
         'ty': 0,
         'nm': 'particle',
         'refId': 'comp_0',
@@ -586,9 +780,203 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'ao': 0,
         'w': 40,
         'h': 40,
-        'ip': 15,
-        'op': 41,
-        'st': 13,
+        'ip': 21,
+        'op': 47,
+        'st': 19,
+        'bm': 0
+    };
+    var3 = {};
+    var4 = {
+        'a': 0,
+        'k': 100,
+        'ix': 11
+    };
+    var3.o = var4;
+    var4 = {
+        'a': 0,
+        'k': 0,
+        'ix': 10
+    };
+    var3.r = var4;
+    var4 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var7 = [458.02, 630.557, 0];
+    var4.k = var7;
+    var3.p = var4;
+    var4 = {
+        'a': 0,
+        'k': null,
+        'ix': 1
+    };
+    var7 = [20, 20, 0];
+    var4.k = var7;
+    var3.a = var4;
+    var4 = {
+        'a': 1,
+        'k': null,
+        'ix': 6
+    };
+    var8 = {};
+    var7 = {};
+    var10 = [0, 0, 0.667];
+    var7.x = var10;
+    var10 = [1, 1, 1];
+    var7.y = var10;
+    var8.i = var7;
+    var7 = {};
+    var10 = [0.167, 0.167, 0.167];
+    var7.x = var10;
+    var10 = [0.167, 0.167, 0];
+    var7.y = var10;
+    var8.o = var7;
+    var27 = 19;
+    var8.t = var27;
+    var7 = [0, 0, 100];
+    var8.s = var7;
+    var7 = new Array(3);
+    var7[0] = var8;
+    var8 = {};
+    var10 = {};
+    var11 = [1, 1, 0.833];
+    var10.x = var11;
+    var11 = [1, 1, 17.667];
+    var10.y = var11;
+    var8.i = var10;
+    var10 = {};
+    var11 = [0.727, 0.727, 0.333];
+    var10.x = var11;
+    var11 = [0, 0, 0];
+    var10.y = var11;
+    var8.o = var10;
+    var32 = 30.053;
+    var8.t = var32;
+    var10 = [447.217, 447.217, 100];
+    var8.s = var10;
+    var7[1] = var8;
+    var8 = {};
+    var31 = 49;
+    var8.t = var31;
+    var10 = [0, 0, 100];
+    var8.s = var10;
+    var7[2] = var8;
+    var4.k = var7;
+    var3.s = var4;
+    var2.ks = var3;
+    var0[7] = var2;
+    var2 = {
+        'ddd': 0,
+        'ind': 9,
+        'ty': 0,
+        'nm': 'particle',
+        'refId': 'comp_0',
+        'sr': 1,
+        'ks': null,
+        'ao': 0,
+        'w': 40,
+        'h': 40,
+        'ip': 24,
+        'op': 50,
+        'st': 22,
+        'bm': 0
+    };
+    var3 = {};
+    var4 = {
+        'a': 0,
+        'k': 100,
+        'ix': 11
+    };
+    var3.o = var4;
+    var4 = {
+        'a': 0,
+        'k': 0,
+        'ix': 10
+    };
+    var3.r = var4;
+    var4 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var7 = [278.02, 93.949, 0];
+    var4.k = var7;
+    var3.p = var4;
+    var4 = {
+        'a': 0,
+        'k': null,
+        'ix': 1
+    };
+    var7 = [20, 20, 0];
+    var4.k = var7;
+    var3.a = var4;
+    var4 = {
+        'a': 1,
+        'k': null,
+        'ix': 6
+    };
+    var8 = {};
+    var7 = {};
+    var10 = [0, 0, 0.667];
+    var7.x = var10;
+    var10 = [1, 1, 1];
+    var7.y = var10;
+    var8.i = var7;
+    var7 = {};
+    var10 = [0.167, 0.167, 0.167];
+    var7.x = var10;
+    var10 = [0.167, 0.167, 0];
+    var7.y = var10;
+    var8.o = var7;
+    var24 = 22;
+    var8.t = var24;
+    var7 = [0, 0, 100];
+    var8.s = var7;
+    var7 = new Array(3);
+    var7[0] = var8;
+    var8 = {};
+    var10 = {};
+    var11 = [1, 1, 0.833];
+    var10.x = var11;
+    var11 = [1, 1, 17.667];
+    var10.y = var11;
+    var8.i = var10;
+    var10 = {};
+    var11 = [0.727, 0.727, 0.333];
+    var10.x = var11;
+    var11 = [0, 0, 0];
+    var10.y = var11;
+    var8.o = var10;
+    var29 = 33.053;
+    var8.t = var29;
+    var10 = [447.217, 447.217, 100];
+    var8.s = var10;
+    var7[1] = var8;
+    var8 = {};
+    var28 = 52;
+    var8.t = var28;
+    var10 = [0, 0, 100];
+    var8.s = var10;
+    var7[2] = var8;
+    var4.k = var7;
+    var3.s = var4;
+    var2.ks = var3;
+    var0[8] = var2;
+    var2 = {
+        'ddd': 0,
+        'ind': 10,
+        'ty': 0,
+        'nm': 'particle',
+        'refId': 'comp_0',
+        'sr': 1,
+        'ks': null,
+        'ao': 0,
+        'w': 40,
+        'h': 40,
+        'ip': 27,
+        'op': 53,
+        'st': 25,
         'bm': 0
     };
     var3 = {};
@@ -638,8 +1026,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var10 = [0.167, 0.167, 0];
     var7.y = var10;
     var8.o = var7;
-    var27 = 13;
-    var8.t = var27;
+    var21 = 25;
+    var8.t = var21;
     var7 = [0, 0, 100];
     var8.s = var7;
     var7 = new Array(3);
@@ -657,24 +1045,24 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var11 = [0, 0, 0];
     var10.y = var11;
     var8.o = var10;
-    var32 = 24.053;
-    var8.t = var32;
+    var26 = 36.053;
+    var8.t = var26;
     var10 = [447.217, 447.217, 100];
     var8.s = var10;
     var7[1] = var8;
     var8 = {};
-    var31 = 43;
-    var8.t = var31;
+    var25 = 55;
+    var8.t = var25;
     var10 = [0, 0, 100];
     var8.s = var10;
     var7[2] = var8;
     var4.k = var7;
     var3.s = var4;
     var2.ks = var3;
-    var0[5] = var2;
+    var0[9] = var2;
     var2 = {
         'ddd': 0,
-        'ind': 7,
+        'ind': 11,
         'ty': 0,
         'nm': 'particle',
         'refId': 'comp_0',
@@ -683,9 +1071,297 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'ao': 0,
         'w': 40,
         'h': 40,
-        'ip': 18,
-        'op': 44,
-        'st': 16,
+        'ip': 30,
+        'op': 56,
+        'st': 28,
+        'bm': 0
+    };
+    var3 = {};
+    var4 = {
+        'a': 0,
+        'k': 100,
+        'ix': 11
+    };
+    var3.o = var4;
+    var4 = {
+        'a': 0,
+        'k': 0,
+        'ix': 10
+    };
+    var3.r = var4;
+    var4 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var7 = [278.02, 452.56, 0];
+    var4.k = var7;
+    var3.p = var4;
+    var4 = {
+        'a': 0,
+        'k': null,
+        'ix': 1
+    };
+    var7 = [20, 20, 0];
+    var4.k = var7;
+    var3.a = var4;
+    var4 = {
+        'a': 1,
+        'k': null,
+        'ix': 6
+    };
+    var8 = {};
+    var7 = {};
+    var10 = [0, 0, 0.667];
+    var7.x = var10;
+    var10 = [1, 1, 1];
+    var7.y = var10;
+    var8.i = var7;
+    var7 = {};
+    var10 = [0.167, 0.167, 0.167];
+    var7.x = var10;
+    var10 = [0.167, 0.167, 0];
+    var7.y = var10;
+    var8.o = var7;
+    var8.t = var18;
+    var7 = [0, 0, 100];
+    var8.s = var7;
+    var7 = new Array(3);
+    var7[0] = var8;
+    var8 = {};
+    var10 = {};
+    var11 = [1, 1, 0.833];
+    var10.x = var11;
+    var11 = [1, 1, 17.667];
+    var10.y = var11;
+    var8.i = var10;
+    var10 = {};
+    var11 = [0.727, 0.727, 0.333];
+    var10.x = var11;
+    var11 = [0, 0, 0];
+    var10.y = var11;
+    var8.o = var10;
+    var23 = 39.053;
+    var8.t = var23;
+    var10 = [447.217, 447.217, 100];
+    var8.s = var10;
+    var7[1] = var8;
+    var8 = {};
+    var22 = 58;
+    var8.t = var22;
+    var10 = [0, 0, 100];
+    var8.s = var10;
+    var7[2] = var8;
+    var4.k = var7;
+    var3.s = var4;
+    var2.ks = var3;
+    var0[10] = var2;
+    var2 = {
+        'ddd': 0,
+        'ind': 12,
+        'ty': 0,
+        'nm': 'particle',
+        'refId': 'comp_0',
+        'sr': 1,
+        'ks': null,
+        'ao': 0,
+        'w': 40,
+        'h': 40,
+        'ip': 33,
+        'op': 59,
+        'st': 31,
+        'bm': 0
+    };
+    var3 = {};
+    var4 = {
+        'a': 0,
+        'k': 100,
+        'ix': 11
+    };
+    var3.o = var4;
+    var4 = {
+        'a': 0,
+        'k': 0,
+        'ix': 10
+    };
+    var3.r = var4;
+    var4 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var7 = [278.02, 630.557, 0];
+    var4.k = var7;
+    var3.p = var4;
+    var4 = {
+        'a': 0,
+        'k': null,
+        'ix': 1
+    };
+    var7 = [20, 20, 0];
+    var4.k = var7;
+    var3.a = var4;
+    var4 = {
+        'a': 1,
+        'k': null,
+        'ix': 6
+    };
+    var8 = {};
+    var7 = {};
+    var10 = [0, 0, 0.667];
+    var7.x = var10;
+    var10 = [1, 1, 1];
+    var7.y = var10;
+    var8.i = var7;
+    var7 = {};
+    var10 = [0.167, 0.167, 0.167];
+    var7.x = var10;
+    var10 = [0.167, 0.167, 0];
+    var7.y = var10;
+    var8.o = var7;
+    var8.t = var15;
+    var7 = [0, 0, 100];
+    var8.s = var7;
+    var7 = new Array(3);
+    var7[0] = var8;
+    var8 = {};
+    var10 = {};
+    var11 = [1, 1, 0.833];
+    var10.x = var11;
+    var11 = [1, 1, 17.667];
+    var10.y = var11;
+    var8.i = var10;
+    var10 = {};
+    var11 = [0.727, 0.727, 0.333];
+    var10.x = var11;
+    var11 = [0, 0, 0];
+    var10.y = var11;
+    var8.o = var10;
+    var20 = 42.053;
+    var8.t = var20;
+    var10 = [447.217, 447.217, 100];
+    var8.s = var10;
+    var7[1] = var8;
+    var8 = {};
+    var19 = 61;
+    var8.t = var19;
+    var10 = [0, 0, 100];
+    var8.s = var10;
+    var7[2] = var8;
+    var4.k = var7;
+    var3.s = var4;
+    var2.ks = var3;
+    var0[11] = var2;
+    var2 = {
+        'ddd': 0,
+        'ind': 13,
+        'ty': 0,
+        'nm': 'particle',
+        'refId': 'comp_0',
+        'sr': 1,
+        'ks': null,
+        'ao': 0,
+        'w': 40,
+        'h': 40,
+        'ip': 36,
+        'op': 62,
+        'st': 34,
+        'bm': 0
+    };
+    var3 = {};
+    var4 = {
+        'a': 0,
+        'k': 100,
+        'ix': 11
+    };
+    var3.o = var4;
+    var4 = {
+        'a': 0,
+        'k': 0,
+        'ix': 10
+    };
+    var3.r = var4;
+    var4 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var7 = [94.82, 93.949, 0];
+    var4.k = var7;
+    var3.p = var4;
+    var4 = {
+        'a': 0,
+        'k': null,
+        'ix': 1
+    };
+    var7 = [20, 20, 0];
+    var4.k = var7;
+    var3.a = var4;
+    var4 = {
+        'a': 1,
+        'k': null,
+        'ix': 6
+    };
+    var8 = {};
+    var7 = {};
+    var10 = [0, 0, 0.667];
+    var7.x = var10;
+    var10 = [1, 1, 1];
+    var7.y = var10;
+    var8.i = var7;
+    var7 = {};
+    var10 = [0.167, 0.167, 0.167];
+    var7.x = var10;
+    var10 = [0.167, 0.167, 0];
+    var7.y = var10;
+    var8.o = var7;
+    var8.t = var12;
+    var7 = [0, 0, 100];
+    var8.s = var7;
+    var7 = new Array(3);
+    var7[0] = var8;
+    var8 = {};
+    var10 = {};
+    var11 = [1, 1, 0.833];
+    var10.x = var11;
+    var11 = [1, 1, 17.667];
+    var10.y = var11;
+    var8.i = var10;
+    var10 = {};
+    var11 = [0.727, 0.727, 0.333];
+    var10.x = var11;
+    var11 = [0, 0, 0];
+    var10.y = var11;
+    var8.o = var10;
+    var17 = 45.053;
+    var8.t = var17;
+    var10 = [447.217, 447.217, 100];
+    var8.s = var10;
+    var7[1] = var8;
+    var8 = {};
+    var16 = 64;
+    var8.t = var16;
+    var10 = [0, 0, 100];
+    var8.s = var10;
+    var7[2] = var8;
+    var4.k = var7;
+    var3.s = var4;
+    var2.ks = var3;
+    var0[12] = var2;
+    var2 = {
+        'ddd': 0,
+        'ind': 14,
+        'ty': 0,
+        'nm': 'particle',
+        'refId': 'comp_0',
+        'sr': 1,
+        'ks': null,
+        'ao': 0,
+        'w': 40,
+        'h': 40,
+        'ip': 39,
+        'op': 65,
+        'st': 37,
         'bm': 0
     };
     var3 = {};
@@ -735,8 +1411,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var10 = [0.167, 0.167, 0];
     var7.y = var10;
     var8.o = var7;
-    var24 = 16;
-    var8.t = var24;
+    var8.t = var9;
     var7 = [0, 0, 100];
     var8.s = var7;
     var7 = new Array(3);
@@ -754,24 +1429,24 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var11 = [0, 0, 0];
     var10.y = var11;
     var8.o = var10;
-    var29 = 27.053;
-    var8.t = var29;
+    var14 = 48.053;
+    var8.t = var14;
     var10 = [447.217, 447.217, 100];
     var8.s = var10;
     var7[1] = var8;
     var8 = {};
-    var28 = 46;
-    var8.t = var28;
+    var13 = 67;
+    var8.t = var13;
     var10 = [0, 0, 100];
     var8.s = var10;
     var7[2] = var8;
     var4.k = var7;
     var3.s = var4;
     var2.ks = var3;
-    var0[6] = var2;
+    var0[13] = var2;
     var2 = {
         'ddd': 0,
-        'ind': 8,
+        'ind': 15,
         'ty': 0,
         'nm': 'particle',
         'refId': 'comp_0',
@@ -780,9 +1455,9 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'ao': 0,
         'w': 40,
         'h': 40,
-        'ip': 39,
-        'op': 65,
-        'st': 37,
+        'ip': 42,
+        'op': 68,
+        'st': 40,
         'bm': 0
     };
     var3 = {};
@@ -803,7 +1478,103 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'k': null,
         'ix': 2
     };
-    var7 = [1185.086, 93.949, 0];
+    var7 = [94.82, 452.56, 0];
+    var4.k = var7;
+    var3.p = var4;
+    var4 = {
+        'a': 0,
+        'k': null,
+        'ix': 1
+    };
+    var7 = [20, 20, 0];
+    var4.k = var7;
+    var3.a = var4;
+    var4 = {
+        'a': 1,
+        'k': null,
+        'ix': 6
+    };
+    var8 = {};
+    var7 = {};
+    var10 = [0, 0, 0.667];
+    var7.x = var10;
+    var10 = [1, 1, 1];
+    var7.y = var10;
+    var8.i = var7;
+    var7 = {};
+    var10 = [0.167, 0.167, 0.167];
+    var7.x = var10;
+    var10 = [0.167, 0.167, 0];
+    var7.y = var10;
+    var8.o = var7;
+    var8.t = var6;
+    var7 = [0, 0, 100];
+    var8.s = var7;
+    var7 = new Array(3);
+    var7[0] = var8;
+    var8 = {};
+    var10 = {};
+    var11 = [1, 1, 0.833];
+    var10.x = var11;
+    var11 = [1, 1, 17.667];
+    var10.y = var11;
+    var8.i = var10;
+    var10 = {};
+    var11 = [0.727, 0.727, 0.333];
+    var10.x = var11;
+    var11 = [0, 0, 0];
+    var10.y = var11;
+    var8.o = var10;
+    var11 = 51.053;
+    var8.t = var11;
+    var10 = [447.217, 447.217, 100];
+    var8.s = var10;
+    var7[1] = var8;
+    var8 = {};
+    var10 = 70;
+    var8.t = var10;
+    var38 = [0, 0, 100];
+    var8.s = var38;
+    var7[2] = var8;
+    var4.k = var7;
+    var3.s = var4;
+    var2.ks = var3;
+    var0[14] = var2;
+    var2 = {
+        'ddd': 0,
+        'ind': 16,
+        'ty': 0,
+        'nm': 'particle',
+        'refId': 'comp_0',
+        'sr': 1,
+        'ks': null,
+        'ao': 0,
+        'w': 40,
+        'h': 40,
+        'ip': 45,
+        'op': 71,
+        'st': 43,
+        'bm': 0
+    };
+    var3 = {};
+    var4 = {
+        'a': 0,
+        'k': 100,
+        'ix': 11
+    };
+    var3.o = var4;
+    var4 = {
+        'a': 0,
+        'k': 0,
+        'ix': 10
+    };
+    var3.r = var4;
+    var4 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var7 = [94.82, 630.557, 0];
     var4.k = var7;
     var3.p = var4;
     var4 = {
@@ -821,810 +1592,43 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var7 = {};
     var8 = {};
-    var10 = [0, 0, 0.667];
-    var8.x = var10;
-    var10 = [1, 1, 1];
-    var8.y = var10;
+    var38 = [0, 0, 0.667];
+    var8.x = var38;
+    var38 = [1, 1, 1];
+    var8.y = var38;
     var7.i = var8;
     var8 = {};
-    var10 = [0.167, 0.167, 0.167];
-    var8.x = var10;
-    var10 = [0.167, 0.167, 0];
-    var8.y = var10;
+    var38 = [0.167, 0.167, 0.167];
+    var8.x = var38;
+    var38 = [0.167, 0.167, 0];
+    var8.y = var38;
     var7.o = var8;
     var7.t = var5;
     var8 = [0, 0, 100];
     var7.s = var8;
-    var10 = new Array(3);
-    var10[0] = var7;
+    var38 = new Array(3);
+    var38[0] = var7;
     var7 = {};
     var8 = {};
-    var11 = [1, 1, 0.833];
-    var8.x = var11;
-    var11 = [1, 1, 17.667];
-    var8.y = var11;
+    var40 = [1, 1, 0.833];
+    var8.x = var40;
+    var40 = [1, 1, 17.667];
+    var8.y = var40;
     var7.i = var8;
     var8 = {};
-    var11 = [0.727, 0.727, 0.333];
-    var8.x = var11;
-    var11 = [0, 0, 0];
-    var8.y = var11;
+    var40 = [0.727, 0.727, 0.333];
+    var8.x = var40;
+    var40 = [0, 0, 0];
+    var8.y = var40;
     var7.o = var8;
-    var8 = 48.053;
+    var8 = 54.053;
     var7.t = var8;
-    var11 = [447.217, 447.217, 100];
-    var7.s = var11;
-    var10[1] = var7;
-    var11 = {};
-    var7 = 67;
-    var11.t = var7;
-    var13 = [0, 0, 100];
-    var11.s = var13;
-    var10[2] = var11;
-    var4.k = var10;
-    var3.s = var4;
-    var2.ks = var3;
-    var0[7] = var2;
-    var2 = {
-        'ddd': 0,
-        'ind': 9,
-        'ty': 0,
-        'nm': 'particle',
-        'refId': 'comp_0',
-        'sr': 1,
-        'ks': null,
-        'ao': 0,
-        'w': 40,
-        'h': 40,
-        'ip': 36,
-        'op': 62,
-        'st': 34,
-        'bm': 0
-    };
-    var3 = {};
-    var4 = {
-        'a': 0,
-        'k': 100,
-        'ix': 11
-    };
-    var3.o = var4;
-    var4 = {
-        'a': 0,
-        'k': 0,
-        'ix': 10
-    };
-    var3.r = var4;
-    var4 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var10 = [1002.02, 93.949, 0];
-    var4.k = var10;
-    var3.p = var4;
-    var4 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var10 = [20, 20, 0];
-    var4.k = var10;
-    var3.a = var4;
-    var4 = {
-        'a': 1,
-        'k': null,
-        'ix': 6
-    };
-    var10 = {};
-    var11 = {};
-    var13 = [0, 0, 0.667];
-    var11.x = var13;
-    var13 = [1, 1, 1];
-    var11.y = var13;
-    var10.i = var11;
-    var11 = {};
-    var13 = [0.167, 0.167, 0.167];
-    var11.x = var13;
-    var13 = [0.167, 0.167, 0];
-    var11.y = var13;
-    var10.o = var11;
-    var10.t = var6;
-    var11 = [0, 0, 100];
-    var10.s = var11;
-    var13 = new Array(3);
-    var13[0] = var10;
-    var10 = {};
-    var11 = {};
-    var14 = [1, 1, 0.833];
-    var11.x = var14;
-    var14 = [1, 1, 17.667];
-    var11.y = var14;
-    var10.i = var11;
-    var11 = {};
-    var14 = [0.727, 0.727, 0.333];
-    var11.x = var14;
-    var14 = [0, 0, 0];
-    var11.y = var14;
-    var10.o = var11;
-    var11 = 45.053;
-    var10.t = var11;
-    var14 = [447.217, 447.217, 100];
-    var10.s = var14;
-    var13[1] = var10;
-    var14 = {};
-    var10 = 64;
-    var14.t = var10;
-    var15 = [0, 0, 100];
-    var14.s = var15;
-    var13[2] = var14;
-    var4.k = var13;
-    var3.s = var4;
-    var2.ks = var3;
-    var0[8] = var2;
-    var2 = {
-        'ddd': 0,
-        'ind': 10,
-        'ty': 0,
-        'nm': 'particle',
-        'refId': 'comp_0',
-        'sr': 1,
-        'ks': null,
-        'ao': 0,
-        'w': 40,
-        'h': 40,
-        'ip': 33,
-        'op': 59,
-        'st': 31,
-        'bm': 0
-    };
-    var3 = {};
-    var4 = {
-        'a': 0,
-        'k': 100,
-        'ix': 11
-    };
-    var3.o = var4;
-    var4 = {
-        'a': 0,
-        'k': 0,
-        'ix': 10
-    };
-    var3.r = var4;
-    var4 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var13 = [820.42, 93.949, 0];
-    var4.k = var13;
-    var3.p = var4;
-    var4 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var13 = [20, 20, 0];
-    var4.k = var13;
-    var3.a = var4;
-    var4 = {
-        'a': 1,
-        'k': null,
-        'ix': 6
-    };
-    var13 = {};
-    var14 = {};
-    var15 = [0, 0, 0.667];
-    var14.x = var15;
-    var15 = [1, 1, 1];
-    var14.y = var15;
-    var13.i = var14;
-    var14 = {};
-    var15 = [0.167, 0.167, 0.167];
-    var14.x = var15;
-    var15 = [0.167, 0.167, 0];
-    var14.y = var15;
-    var13.o = var14;
-    var13.t = var9;
-    var14 = [0, 0, 100];
-    var13.s = var14;
-    var15 = new Array(3);
-    var15[0] = var13;
-    var13 = {};
-    var14 = {};
-    var16 = [1, 1, 0.833];
-    var14.x = var16;
-    var16 = [1, 1, 17.667];
-    var14.y = var16;
-    var13.i = var14;
-    var14 = {};
-    var16 = [0.727, 0.727, 0.333];
-    var14.x = var16;
-    var16 = [0, 0, 0];
-    var14.y = var16;
-    var13.o = var14;
-    var14 = 42.053;
-    var13.t = var14;
-    var16 = [447.217, 447.217, 100];
-    var13.s = var16;
-    var15[1] = var13;
-    var16 = {};
-    var13 = 61;
-    var16.t = var13;
-    var17 = [0, 0, 100];
-    var16.s = var17;
-    var15[2] = var16;
-    var4.k = var15;
-    var3.s = var4;
-    var2.ks = var3;
-    var0[9] = var2;
-    var2 = {
-        'ddd': 0,
-        'ind': 11,
-        'ty': 0,
-        'nm': 'particle',
-        'refId': 'comp_0',
-        'sr': 1,
-        'ks': null,
-        'ao': 0,
-        'w': 40,
-        'h': 40,
-        'ip': 30,
-        'op': 56,
-        'st': 28,
-        'bm': 0
-    };
-    var3 = {};
-    var4 = {
-        'a': 0,
-        'k': 100,
-        'ix': 11
-    };
-    var3.o = var4;
-    var4 = {
-        'a': 0,
-        'k': 0,
-        'ix': 10
-    };
-    var3.r = var4;
-    var4 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var15 = [638.82, 93.949, 0];
-    var4.k = var15;
-    var3.p = var4;
-    var4 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var15 = [20, 20, 0];
-    var4.k = var15;
-    var3.a = var4;
-    var4 = {
-        'a': 1,
-        'k': null,
-        'ix': 6
-    };
-    var16 = {};
-    var15 = {};
-    var17 = [0, 0, 0.667];
-    var15.x = var17;
-    var17 = [1, 1, 1];
-    var15.y = var17;
-    var16.i = var15;
-    var15 = {};
-    var17 = [0.167, 0.167, 0.167];
-    var15.x = var17;
-    var17 = [0.167, 0.167, 0];
-    var15.y = var17;
-    var16.o = var15;
-    var16.t = var12;
-    var15 = [0, 0, 100];
-    var16.s = var15;
-    var15 = new Array(3);
-    var15[0] = var16;
-    var16 = {};
-    var17 = {};
-    var18 = [1, 1, 0.833];
-    var17.x = var18;
-    var18 = [1, 1, 17.667];
-    var17.y = var18;
-    var16.i = var17;
-    var17 = {};
-    var18 = [0.727, 0.727, 0.333];
-    var17.x = var18;
-    var18 = [0, 0, 0];
-    var17.y = var18;
-    var16.o = var17;
-    var17 = 39.053;
-    var16.t = var17;
-    var18 = [447.217, 447.217, 100];
-    var16.s = var18;
-    var15[1] = var16;
-    var18 = {};
-    var16 = 58;
-    var18.t = var16;
-    var19 = [0, 0, 100];
-    var18.s = var19;
-    var15[2] = var18;
-    var4.k = var15;
-    var3.s = var4;
-    var2.ks = var3;
-    var0[10] = var2;
-    var2 = {
-        'ddd': 0,
-        'ind': 12,
-        'ty': 0,
-        'nm': 'particle',
-        'refId': 'comp_0',
-        'sr': 1,
-        'ks': null,
-        'ao': 0,
-        'w': 40,
-        'h': 40,
-        'ip': 27,
-        'op': 53,
-        'st': 25,
-        'bm': 0
-    };
-    var3 = {};
-    var4 = {
-        'a': 0,
-        'k': 100,
-        'ix': 11
-    };
-    var3.o = var4;
-    var4 = {
-        'a': 0,
-        'k': 0,
-        'ix': 10
-    };
-    var3.r = var4;
-    var4 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var15 = [458.02, 93.949, 0];
-    var4.k = var15;
-    var3.p = var4;
-    var4 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var15 = [20, 20, 0];
-    var4.k = var15;
-    var3.a = var4;
-    var4 = {
-        'a': 1,
-        'k': null,
-        'ix': 6
-    };
-    var19 = {};
-    var15 = {};
-    var18 = [0, 0, 0.667];
-    var15.x = var18;
-    var18 = [1, 1, 1];
-    var15.y = var18;
-    var19.i = var15;
-    var15 = {};
-    var18 = [0.167, 0.167, 0.167];
-    var15.x = var18;
-    var18 = [0.167, 0.167, 0];
-    var15.y = var18;
-    var19.o = var15;
-    var15 = 25;
-    var19.t = var15;
-    var18 = [0, 0, 100];
-    var19.s = var18;
-    var18 = new Array(3);
-    var18[0] = var19;
-    var19 = {};
-    var20 = {};
-    var21 = [1, 1, 0.833];
-    var20.x = var21;
-    var21 = [1, 1, 17.667];
-    var20.y = var21;
-    var19.i = var20;
-    var20 = {};
-    var21 = [0.727, 0.727, 0.333];
-    var20.x = var21;
-    var21 = [0, 0, 0];
-    var20.y = var21;
-    var19.o = var20;
-    var20 = 36.053;
-    var19.t = var20;
-    var21 = [447.217, 447.217, 100];
-    var19.s = var21;
-    var18[1] = var19;
-    var21 = {};
-    var19 = 55;
-    var21.t = var19;
-    var22 = [0, 0, 100];
-    var21.s = var22;
-    var18[2] = var21;
-    var4.k = var18;
-    var3.s = var4;
-    var2.ks = var3;
-    var0[11] = var2;
-    var2 = {
-        'ddd': 0,
-        'ind': 13,
-        'ty': 0,
-        'nm': 'particle',
-        'refId': 'comp_0',
-        'sr': 1,
-        'ks': null,
-        'ao': 0,
-        'w': 40,
-        'h': 40,
-        'ip': 24,
-        'op': 50,
-        'st': 22,
-        'bm': 0
-    };
-    var3 = {};
-    var4 = {
-        'a': 0,
-        'k': 100,
-        'ix': 11
-    };
-    var3.o = var4;
-    var4 = {
-        'a': 0,
-        'k': 0,
-        'ix': 10
-    };
-    var3.r = var4;
-    var4 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var18 = [278.02, 93.949, 0];
-    var4.k = var18;
-    var3.p = var4;
-    var4 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var18 = [20, 20, 0];
-    var4.k = var18;
-    var3.a = var4;
-    var4 = {
-        'a': 1,
-        'k': null,
-        'ix': 6
-    };
-    var22 = {};
-    var18 = {};
-    var21 = [0, 0, 0.667];
-    var18.x = var21;
-    var21 = [1, 1, 1];
-    var18.y = var21;
-    var22.i = var18;
-    var18 = {};
-    var21 = [0.167, 0.167, 0.167];
-    var18.x = var21;
-    var21 = [0.167, 0.167, 0];
-    var18.y = var21;
-    var22.o = var18;
-    var18 = 22;
-    var22.t = var18;
-    var21 = [0, 0, 100];
-    var22.s = var21;
-    var21 = new Array(3);
-    var21[0] = var22;
-    var22 = {};
-    var23 = {};
-    var25 = [1, 1, 0.833];
-    var23.x = var25;
-    var25 = [1, 1, 17.667];
-    var23.y = var25;
-    var22.i = var23;
-    var23 = {};
-    var25 = [0.727, 0.727, 0.333];
-    var23.x = var25;
-    var25 = [0, 0, 0];
-    var23.y = var25;
-    var22.o = var23;
-    var23 = 33.053;
-    var22.t = var23;
-    var25 = [447.217, 447.217, 100];
-    var22.s = var25;
-    var21[1] = var22;
-    var25 = {};
-    var22 = 52;
-    var25.t = var22;
-    var26 = [0, 0, 100];
-    var25.s = var26;
-    var21[2] = var25;
-    var4.k = var21;
-    var3.s = var4;
-    var2.ks = var3;
-    var0[12] = var2;
-    var2 = {
-        'ddd': 0,
-        'ind': 14,
-        'ty': 0,
-        'nm': 'particle',
-        'refId': 'comp_0',
-        'sr': 1,
-        'ks': null,
-        'ao': 0,
-        'w': 40,
-        'h': 40,
-        'ip': 21,
-        'op': 47,
-        'st': 19,
-        'bm': 0
-    };
-    var3 = {};
-    var4 = {
-        'a': 0,
-        'k': 100,
-        'ix': 11
-    };
-    var3.o = var4;
-    var4 = {
-        'a': 0,
-        'k': 0,
-        'ix': 10
-    };
-    var3.r = var4;
-    var4 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var21 = [94.82, 93.949, 0];
-    var4.k = var21;
-    var3.p = var4;
-    var4 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var21 = [20, 20, 0];
-    var4.k = var21;
-    var3.a = var4;
-    var4 = {
-        'a': 1,
-        'k': null,
-        'ix': 6
-    };
-    var25 = {};
-    var21 = {};
-    var26 = [0, 0, 0.667];
-    var21.x = var26;
-    var26 = [1, 1, 1];
-    var21.y = var26;
-    var25.i = var21;
-    var21 = {};
-    var26 = [0.167, 0.167, 0.167];
-    var21.x = var26;
-    var26 = [0.167, 0.167, 0];
-    var21.y = var26;
-    var25.o = var21;
-    var21 = 19;
-    var25.t = var21;
-    var26 = [0, 0, 100];
-    var25.s = var26;
-    var42 = new Array(3);
-    var42[0] = var25;
-    var25 = {};
-    var26 = {};
-    var44 = [1, 1, 0.833];
-    var26.x = var44;
-    var44 = [1, 1, 17.667];
-    var26.y = var44;
-    var25.i = var26;
-    var26 = {};
-    var44 = [0.727, 0.727, 0.333];
-    var26.x = var44;
-    var44 = [0, 0, 0];
-    var26.y = var44;
-    var25.o = var26;
-    var26 = 30.053;
-    var25.t = var26;
-    var44 = [447.217, 447.217, 100];
-    var25.s = var44;
-    var42[1] = var25;
-    var44 = {};
-    var25 = 49;
-    var44.t = var25;
-    var45 = [0, 0, 100];
-    var44.s = var45;
-    var42[2] = var44;
-    var4.k = var42;
-    var3.s = var4;
-    var2.ks = var3;
-    var0[13] = var2;
-    var2 = {
-        'ddd': 0,
-        'ind': 15,
-        'ty': 0,
-        'nm': 'particle',
-        'refId': 'comp_0',
-        'sr': 1,
-        'ks': null,
-        'ao': 0,
-        'w': 40,
-        'h': 40,
-        'ip': 0,
-        'op': 26,
-        'st': 4294967294,
-        'bm': 0
-    };
-    var3 = {};
-    var4 = {
-        'a': 0,
-        'k': 100,
-        'ix': 11
-    };
-    var3.o = var4;
-    var4 = {
-        'a': 0,
-        'k': 0,
-        'ix': 10
-    };
-    var3.r = var4;
-    var4 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var42 = [94.82, 452.56, 0];
-    var4.k = var42;
-    var3.p = var4;
-    var4 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var42 = [20, 20, 0];
-    var4.k = var42;
-    var3.a = var4;
-    var4 = {
-        'a': 1,
-        'k': null,
-        'ix': 6
-    };
-    var42 = {};
-    var44 = {};
-    var45 = [0, 0, 0.667];
-    var44.x = var45;
-    var45 = [1, 1, 1];
-    var44.y = var45;
-    var42.i = var44;
-    var44 = {};
-    var45 = [0.167, 0.167, 0.167];
-    var44.x = var45;
-    var45 = [0.167, 0.167, 0];
-    var44.y = var45;
-    var42.o = var44;
-    var42.t = var40;
-    var40 = [0, 0, 100];
-    var42.s = var40;
-    var40 = new Array(3);
-    var40[0] = var42;
-    var42 = {};
-    var44 = {};
-    var45 = [1, 1, 0.833];
-    var44.x = var45;
-    var45 = [1, 1, 17.667];
-    var44.y = var45;
-    var42.i = var44;
-    var44 = {};
-    var45 = [0.727, 0.727, 0.333];
-    var44.x = var45;
-    var45 = [0, 0, 0];
-    var44.y = var45;
-    var42.o = var44;
-    var42.t = var43;
-    var43 = [447.217, 447.217, 100];
-    var42.s = var43;
-    var40[1] = var42;
-    var42 = {};
-    var42.t = var12;
-    var43 = [0, 0, 100];
-    var42.s = var43;
-    var40[2] = var42;
-    var4.k = var40;
-    var3.s = var4;
-    var2.ks = var3;
-    var0[14] = var2;
-    var2 = {
-        'ddd': 0,
-        'ind': 16,
-        'ty': 0,
-        'nm': 'particle',
-        'refId': 'comp_0',
-        'sr': 1,
-        'ks': null,
-        'ao': 0,
-        'w': 40,
-        'h': 40,
-        'ip': 3,
-        'op': 29,
-        'st': 1,
-        'bm': 0
-    };
-    var3 = {};
-    var4 = {
-        'a': 0,
-        'k': 100,
-        'ix': 11
-    };
-    var3.o = var4;
-    var4 = {
-        'a': 0,
-        'k': 0,
-        'ix': 10
-    };
-    var3.r = var4;
-    var4 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var40 = [278.02, 452.56, 0];
-    var4.k = var40;
-    var3.p = var4;
-    var4 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var40 = [20, 20, 0];
-    var4.k = var40;
-    var3.a = var4;
-    var4 = {
-        'a': 1,
-        'k': null,
-        'ix': 6
-    };
+    var40 = [447.217, 447.217, 100];
+    var7.s = var40;
+    var38[1] = var7;
     var40 = {};
-    var42 = {};
-    var43 = [0, 0, 0.667];
-    var42.x = var43;
-    var43 = [1, 1, 1];
-    var42.y = var43;
-    var40.i = var42;
-    var42 = {};
-    var43 = [0.167, 0.167, 0.167];
-    var42.x = var43;
-    var43 = [0.167, 0.167, 0];
-    var42.y = var43;
-    var40.o = var42;
-    var40.t = var38;
-    var38 = [0, 0, 100];
-    var40.s = var38;
-    var38 = new Array(3);
-    var38[0] = var40;
-    var40 = {};
-    var42 = {};
-    var43 = [1, 1, 0.833];
-    var42.x = var43;
-    var43 = [1, 1, 17.667];
-    var42.y = var43;
-    var40.i = var42;
-    var42 = {};
-    var43 = [0.727, 0.727, 0.333];
-    var42.x = var43;
-    var43 = [0, 0, 0];
-    var42.y = var43;
-    var40.o = var42;
-    var40.t = var41;
-    var41 = [447.217, 447.217, 100];
-    var40.s = var41;
-    var38[1] = var40;
-    var40 = {};
-    var40.t = var9;
+    var7 = 73;
+    var40.t = var7;
     var41 = [0, 0, 100];
     var40.s = var41;
     var38[2] = var40;
@@ -1643,9 +1647,9 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'ao': 0,
         'w': 40,
         'h': 40,
-        'ip': 6,
-        'op': 32,
-        'st': 4,
+        'ip': 12,
+        'op': 38,
+        'st': 10,
         'bm': 0
     };
     var3 = {};
@@ -1666,7 +1670,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'k': null,
         'ix': 2
     };
-    var38 = [458.02, 452.56, 0];
+    var38 = [820.42, 93.949, 0];
     var4.k = var38;
     var3.p = var4;
     var4 = {
@@ -1737,9 +1741,9 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'ao': 0,
         'w': 40,
         'h': 40,
-        'ip': 9,
-        'op': 35,
-        'st': 7,
+        'ip': 15,
+        'op': 41,
+        'st': 13,
         'bm': 0
     };
     var3 = {};
@@ -1760,7 +1764,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'k': null,
         'ix': 2
     };
-    var36 = [638.82, 452.56, 0];
+    var36 = [820.42, 274.563, 0];
     var4.k = var36;
     var3.p = var4;
     var4 = {
@@ -1831,9 +1835,9 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'ao': 0,
         'w': 40,
         'h': 40,
-        'ip': 12,
-        'op': 38,
-        'st': 10,
+        'ip': 18,
+        'op': 44,
+        'st': 16,
         'bm': 0
     };
     var3 = {};
@@ -1925,9 +1929,9 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'ao': 0,
         'w': 40,
         'h': 40,
-        'ip': 15,
-        'op': 41,
-        'st': 13,
+        'ip': 21,
+        'op': 47,
+        'st': 19,
         'bm': 0
     };
     var3 = {};
@@ -1948,7 +1952,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'k': null,
         'ix': 2
     };
-    var30 = [1002.02, 452.56, 0];
+    var30 = [820.42, 630.557, 0];
     var4.k = var30;
     var3.p = var4;
     var4 = {
@@ -2019,9 +2023,9 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'ao': 0,
         'w': 40,
         'h': 40,
-        'ip': 18,
-        'op': 44,
-        'st': 16,
+        'ip': 24,
+        'op': 50,
+        'st': 22,
         'bm': 0
     };
     var3 = {};
@@ -2042,7 +2046,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'k': null,
         'ix': 2
     };
-    var27 = [1185.086, 452.56, 0];
+    var27 = [1002.02, 93.949, 0];
     var4.k = var27;
     var3.p = var4;
     var4 = {
@@ -2113,9 +2117,9 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'ao': 0,
         'w': 40,
         'h': 40,
-        'ip': 21,
-        'op': 47,
-        'st': 19,
+        'ip': 27,
+        'op': 53,
+        'st': 25,
         'bm': 0
     };
     var3 = {};
@@ -2136,7 +2140,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'k': null,
         'ix': 2
     };
-    var24 = [1185.086, 630.557, 0];
+    var24 = [1002.02, 274.563, 0];
     var4.k = var24;
     var3.p = var4;
     var4 = {
@@ -2207,9 +2211,9 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'ao': 0,
         'w': 40,
         'h': 40,
-        'ip': 24,
-        'op': 50,
-        'st': 22,
+        'ip': 30,
+        'op': 56,
+        'st': 28,
         'bm': 0
     };
     var3 = {};
@@ -2230,7 +2234,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'k': null,
         'ix': 2
     };
-    var21 = [1002.02, 630.557, 0];
+    var21 = [1002.02, 452.56, 0];
     var4.k = var21;
     var3.p = var4;
     var4 = {
@@ -2301,9 +2305,9 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'ao': 0,
         'w': 40,
         'h': 40,
-        'ip': 27,
-        'op': 53,
-        'st': 25,
+        'ip': 33,
+        'op': 59,
+        'st': 31,
         'bm': 0
     };
     var3 = {};
@@ -2324,7 +2328,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'k': null,
         'ix': 2
     };
-    var18 = [820.42, 630.557, 0];
+    var18 = [1002.02, 630.557, 0];
     var4.k = var18;
     var3.p = var4;
     var4 = {
@@ -2395,9 +2399,9 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'ao': 0,
         'w': 40,
         'h': 40,
-        'ip': 30,
-        'op': 56,
-        'st': 28,
+        'ip': 36,
+        'op': 62,
+        'st': 34,
         'bm': 0
     };
     var3 = {};
@@ -2418,7 +2422,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'k': null,
         'ix': 2
     };
-    var15 = [638.82, 630.557, 0];
+    var15 = [1185.086, 93.949, 0];
     var4.k = var15;
     var3.p = var4;
     var4 = {
@@ -2489,9 +2493,9 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'ao': 0,
         'w': 40,
         'h': 40,
-        'ip': 33,
-        'op': 59,
-        'st': 31,
+        'ip': 39,
+        'op': 65,
+        'st': 37,
         'bm': 0
     };
     var3 = {};
@@ -2512,7 +2516,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'k': null,
         'ix': 2
     };
-    var12 = [458.02, 630.557, 0];
+    var12 = [1185.086, 274.563, 0];
     var4.k = var12;
     var3.p = var4;
     var4 = {
@@ -2583,9 +2587,9 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'ao': 0,
         'w': 40,
         'h': 40,
-        'ip': 36,
-        'op': 62,
-        'st': 34,
+        'ip': 42,
+        'op': 68,
+        'st': 40,
         'bm': 0
     };
     var3 = {};
@@ -2606,7 +2610,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'k': null,
         'ix': 2
     };
-    var9 = [278.02, 630.557, 0];
+    var9 = [1185.086, 452.56, 0];
     var4.k = var9;
     var3.p = var4;
     var4 = {
@@ -2677,9 +2681,9 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'ao': 0,
         'w': 40,
         'h': 40,
-        'ip': 39,
-        'op': 65,
-        'st': 37,
+        'ip': 45,
+        'op': 71,
+        'st': 43,
         'bm': 0
     };
     var3 = {};
@@ -2700,7 +2704,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'k': null,
         'ix': 2
     };
-    var6 = [94.82, 630.557, 0];
+    var6 = [1185.086, 630.557, 0];
     var4.k = var6;
     var3.p = var4;
     var4 = {
