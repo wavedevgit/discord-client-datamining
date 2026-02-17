@@ -1,6 +1,7 @@
 package ng;
+/* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class d extends v0 {
+public final class d extends v0 {
 
     /* renamed from: i  reason: collision with root package name */
     private final f f38405i;
