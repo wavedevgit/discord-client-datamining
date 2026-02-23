@@ -123,8 +123,8 @@ function j(e, t) {
         canRemoveVote: R,
         canShowVoteCounts: P,
         canSubmitVote: M,
-        expirationLabel: w = T.intl.string(T.t["e+J3JZ"]),
-        hasSelectedAnswer: D,
+        expirationLabel: D = T.intl.string(T.t["e+J3JZ"]),
+        hasSelectedAnswer: w,
         hasVoted: k,
         isEditingVote: O,
         isExpired: U,
@@ -236,7 +236,7 @@ function j(e, t) {
     }, () => ({
         label: T.intl.string(T.t.JwkNU4),
         presentation: "button",
-        enabled: D,
+        enabled: w,
         type: "submit"
     })).with({
         canRemoveVote: !0
@@ -278,7 +278,7 @@ function j(e, t) {
         type: "cancel"
     })).otherwise(() => ({
         label: Y,
-        secondaryLabel: w,
+        secondaryLabel: D,
         accessibilityHint: J,
         presentation: "text",
         enabled: !0,
@@ -327,7 +327,7 @@ function j(e, t) {
         isInteractive: G,
         canTapAnswers: L,
         canSelectMultipleAnswers: $,
-        hasSelectedAnswer: D,
+        hasSelectedAnswer: w,
         canShowVoteCounts: P,
         hasVoted: k,
         isExpired: U,

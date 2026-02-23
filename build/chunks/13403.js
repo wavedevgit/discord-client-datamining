@@ -35,8 +35,8 @@ var i = n(627968),
 
 function M(e) {
     var t, n;
-    let M, w, {
-            analyticsLocations: D,
+    let M, D, {
+            analyticsLocations: w,
             application: k,
             channel: O,
             currentUserId: U,
@@ -72,13 +72,13 @@ function M(e) {
         {
             openGameProfileModal: Q,
             launchableAppId: J
-        } = (t = k.id, n = F.author.id, M = (0, f.d)(t), w = (0, r.bG)([m.A, C.A], () => {
+        } = (t = k.id, n = F.author.id, M = (0, f.d)(t), D = (0, r.bG)([m.A, C.A], () => {
             let e = m.A.getApplication(t);
             return null != e ? C.A.getGameByApplication(e) : null
         }, [t]), {
             openGameProfileModal: (0, x.A)({
                 location: "Rich Presence Activity Invite Embed",
-                applicationId: w?.id ?? void 0,
+                applicationId: D?.id ?? void 0,
                 source: A.Ob.Embed,
                 trackEntryPointImpression: !0,
                 sourceUserId: n
@@ -87,7 +87,7 @@ function M(e) {
         }),
         X = (0, y.A)({
             application: k,
-            analyticsLocations: D
+            analyticsLocations: w
         }),
         Z = l.useMemo(() => {
             if (null != X) return {
@@ -159,7 +159,7 @@ function M(e) {
         iconSrc: Y,
         onView: H,
         presenceActivity: W,
-        analyticsLocations: D,
+        analyticsLocations: w,
         showAuthButton: en && !ei && et.enabled,
         startAuthorization: er,
         accountLinkButtonRef: eo,
@@ -182,7 +182,7 @@ function M(e) {
         currentUserPresenceActivity: G,
         hideParty: B,
         partyStatusElement: V,
-        analyticsLocations: D,
+        analyticsLocations: w,
         showAuthButton: en && !ei && et.enabled,
         startAuthorization: er,
         accountLinkButtonRef: eo,

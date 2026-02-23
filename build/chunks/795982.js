@@ -1,6 +1,6 @@
 /** chunk id: 795982, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => w
+    A: () => D
 });
 var i = n(627968),
     l = n(64700),
@@ -138,7 +138,7 @@ function M(e) {
     }, r)
 }
 
-function w(e) {
+function D(e) {
     let {
         message: t
     } = e;

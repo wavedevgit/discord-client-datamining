@@ -50,17 +50,17 @@ function N(e) {
         {
             analyticsLocations: M
         } = (0, o.Ay)(),
-        w = (0, r.bG)([p.A], () => j?.guild != null ? p.A.getGuild(j.guild.id) : null, [j]),
-        D = (0, r.bG)([h.default], () => h.default.getId()),
+        D = (0, r.bG)([p.A], () => j?.guild != null ? p.A.getGuild(j.guild.id) : null, [j]),
+        w = (0, r.bG)([h.default], () => h.default.getId()),
         k = (0, r.bG)([c.Ay], () => c.Ay.getGuildScheduledEvent(P.guild_scheduled_event?.id), [P]),
         O = () => {
             null != P.channel && a.Ay.transitionToInviteSync(P)
         },
         U = () => {
-            let e = null == w && j?.guild != null ? A.DY(j.guild) : w;
+            let e = null == D && j?.guild != null ? A.DY(j.guild) : D;
             (0, m.g)({
                 guild: e,
-                isMember: null != w,
+                isMember: null != D,
                 analyticsLocations: M
             }) === m.W.PROCEED && a.Ay.acceptInviteAndTransitionToInviteChannel({
                 inviteKey: t,
@@ -70,8 +70,8 @@ function N(e) {
         G = (0, i.jsx)(I.A, {
             onTransitionToInviteChannel: O,
             onAcceptInstantInvite: U,
-            currentUserId: D,
-            guild: w,
+            currentUserId: w,
+            guild: D,
             invite: P,
             message: n
         });
@@ -99,7 +99,7 @@ function N(e) {
                     G = (0, i.jsx)(E.A, {
                         onTransitionToInviteChannel: O,
                         onAcceptInstantInvite: U,
-                        currentUserId: D,
+                        currentUserId: w,
                         invite: P,
                         message: n
                     });
@@ -116,9 +116,9 @@ function N(e) {
                         G = (0, i.jsx)(S.A, {
                             onTransitionToInviteChannel: O,
                             onAcceptInstantInvite: U,
-                            currentUserId: D,
+                            currentUserId: w,
                             message: n,
-                            guild: w,
+                            guild: D,
                             invite: P
                         });
                         break
@@ -128,7 +128,7 @@ function N(e) {
                             guildScheduledEvent: k,
                             guild: P.guild,
                             channel: P.channel,
-                            isMember: null != w,
+                            isMember: null != D,
                             onAcceptInstantInvite: U,
                             onTransitionToInviteChannel: O
                         });
@@ -144,7 +144,7 @@ function N(e) {
                     }(0, d.v)(P) && (G = (0, i.jsx)(b.A, {
                         onTransitionToInviteChannel: O,
                         onAcceptInstantInvite: U,
-                        isMemberOfGuild: null != w,
+                        isMemberOfGuild: null != D,
                         invite: P,
                         message: n
                     }))

@@ -33,8 +33,8 @@ var i = n(627968),
     R = n(878831),
     P = n(652215),
     M = n(768349),
-    w = n(985018),
-    D = n(609653);
+    D = n(985018),
+    w = n(609653);
 
 function k(e) {
     let {
@@ -81,19 +81,19 @@ function k(e) {
         }
     }).filter(C.Vq), [r]);
     if (!(null != n || o.length > 0)) return null;
-    let c = null != n ? (0, S.C)(n) : w.intl.string(w.t["4dGUP0"]);
+    let c = null != n ? (0, S.C)(n) : D.intl.string(D.t["4dGUP0"]);
     return (0, i.jsxs)("div", {
-        className: D.qr,
+        className: w.qr,
         children: [(0, i.jsx)("div", {
-            className: D.E6,
+            className: w.E6,
             children: o.map((e, t) => (0, i.jsx)("div", {
-                className: D.F2,
+                className: w.F2,
                 children: e
             }, t))
         }), (0, i.jsx)(d.Text, {
             variant: "text-sm/medium",
             color: "currentColor",
-            className: D.kB,
+            className: w.kB,
             children: c
         })]
     })
@@ -124,7 +124,7 @@ function O(e) {
         accountLinkButtonRef: Q,
         renderAccountLinkUpsell: J
     } = e, X = H?.timestamps?.start ?? H?.created_at, Z = l.useMemo(() => null != X ? (0, i.jsxs)("div", {
-        className: D.Ym,
+        className: w.Ym,
         children: [(0, i.jsx)(d._xR, {
             size: "xxs",
             color: "currentColor"
@@ -141,15 +141,15 @@ function O(e) {
         children: [(0, i.jsx)(d.Y3C, {
             size: "xxs",
             color: "currentColor"
-        }), w.intl.string(w.t.TsWCdW)]
+        }), D.intl.string(D.t.TsWCdW)]
     }) : null, [ee]), en = l.useMemo(() => (0, i.jsxs)(d.Text, {
         variant: "text-xs/normal",
-        className: D.dS,
+        className: w.dS,
         color: "none",
         lineClamp: 2,
         children: [$ ? (0, E.YC)(t, a, s, S, !1) : Z, $ ? null : et]
     }), [$, t, a, s, S, Z, et]), ei = l.useMemo(() => (0, i.jsxs)("div", {
-        className: D.pq,
+        className: w.pq,
         children: [en, W || $ ? null : q]
     }), [en, W, $, q]), el = (0, A.e)(n), {
         canJoin: er,
@@ -171,7 +171,7 @@ function O(e) {
             n = !0,
             i = !1;
         er ? e = {
-            label: w.intl.string(w.t.VJlc0S),
+            label: D.intl.string(D.t.VJlc0S),
             trackingArea: h.kY.JOIN,
             submitting: ec,
             onClick: () => {
@@ -199,13 +199,13 @@ function O(e) {
                 })
             }
         } : es ? (e = {
-            label: w.intl.string(w.t.VJlc0S),
+            label: D.intl.string(D.t.VJlc0S),
             trackingArea: h.kY.SYNC,
             onClick: () => {
                 null != H && _.OH(H, t.author.id)
             }
         }, n = !1) : eo ? e = {
-            label: w.intl.string(w.t["hC/Zey"]),
+            label: D.intl.string(D.t["hC/Zey"]),
             trackingArea: h.kY.INVITE,
             onClick: () => {
                 null != H && c.A.sendActivityInvite({
@@ -216,16 +216,16 @@ function O(e) {
                 })
             },
             disabled: t.author.id === S,
-            disabledReason: t.author.id === S ? w.intl.string(w.t.IBl8ID) : void 0
+            disabledReason: t.author.id === S ? D.intl.string(D.t.IBl8ID) : void 0
         } : ed ? e = {
-            label: w.intl.string(w.t.KC26NR),
+            label: D.intl.string(D.t.KC26NR),
             trackingArea: h.kY.PLAY,
             onClick: () => {},
             disabled: !0
         } : null != O && (e = O, n = !1);
         let l = [];
         return null != e && (l.push(e), z && n && (l.push({
-            label: w.intl.string(w.t.lw71Nf),
+            label: D.intl.string(D.t.lw71Nf),
             trackingArea: h.kY.CONNECT_ACCOUNT,
             onClick: () => {
                 K({

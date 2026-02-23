@@ -17,9 +17,9 @@ var n = s(627968),
     m = s(665171),
     _ = s(522055),
     h = s(500897),
-    A = s(117265),
-    N = s(294726),
-    g = s(985018),
+    g = s(117265),
+    A = s(294726),
+    N = s(985018),
     j = s(889801);
 
 function v(t) {
@@ -28,21 +28,21 @@ function v(t) {
         instance: s,
         onClose: a,
         transitionState: v
-    } = t, S = (0, c.bG)([_.A], () => _.A.getStateForGuild(e)?.instructions[s.planId]);
+    } = t, I = (0, c.bG)([_.A], () => _.A.getStateForGuild(e)?.instructions[s.planId]);
     i.useEffect(() => {
-        null == S && (0, m.tT)(e, s.planId)
-    }, [e, s.planId, S]);
-    let C = (0, A.A)(s),
+        null == I && (0, m.tT)(e, s.planId)
+    }, [e, s.planId, I]);
+    let S = (0, g.A)(s),
         {
-            handleCopyServerIp: T,
-            animateCopyIcon: I
-        } = (0, h.A)(e, s.id, u.A.GAME_SERVER_INSTRUCTIONS_MODAL, C ?? ""),
+            handleCopyServerIp: C,
+            animateCopyIcon: T
+        } = (0, h.A)(e, s.id, u.A.GAME_SERVER_INSTRUCTIONS_MODAL, S ?? ""),
         E = i.useMemo(() => {
             switch (s.status) {
                 case r.M.STARTING:
-                    return g.intl.string(N.default.ud4hxY);
+                    return N.intl.string(A.default.ud4hxY);
                 case r.M.OFFLINE:
-                    return g.intl.string(N.default.ABAm7x);
+                    return N.intl.string(A.default.ABAm7x);
                 default:
                     return
             }
@@ -58,27 +58,27 @@ function v(t) {
                 type: "dynamic",
                 component: o.DynamicGraphicComponent.GAME_SERVER_GAME_INSTRUCTIONS_ASSET,
                 props: {
-                    instance: s
+                    gameId: s.gameId
                 }
             },
             alignCenter: !0,
             title: s.name,
-            subtitle: g.intl.string(N.default["4HqfaU"])
-        }), null == S ? (0, n.jsx)(f.y$y, {}) : (0, n.jsxs)("div", {
+            subtitle: N.intl.string(A.default["4HqfaU"])
+        }), null == I ? (0, n.jsx)(f.y$y, {}) : (0, n.jsxs)("div", {
             className: j.Qs,
             children: [null != E && (0, n.jsx)(x.A, {
                 className: j.et,
                 children: E
             }), (0, n.jsx)("div", {
                 className: j.$6,
-                children: S.map((t, e) => (0, n.jsxs)("div", {
+                children: I.map((t, e) => (0, n.jsxs)("div", {
                     className: j.PM,
                     children: [(0, n.jsx)("div", {
                         className: j.CD,
                         children: (0, n.jsx)(f.Text, {
                             variant: "text-xs/semibold",
                             color: "text-subtle",
-                            children: g.intl.formatToPlainString(N.default.oSU1fF, {
+                            children: N.intl.formatToPlainString(A.default.oSU1fF, {
                                 step: e + 1
                             })
                         })
@@ -90,19 +90,19 @@ function v(t) {
                         })
                     })]
                 }, e))
-            }), null != C && (0, n.jsxs)("div", {
+            }), null != S && (0, n.jsxs)("div", {
                 className: j.i7,
                 children: [(0, n.jsx)("div", {
-                    className: l()(j.Nk, I && j.i0),
+                    className: l()(j.Nk, T && j.i0),
                     children: (0, n.jsx)(f.Text, {
                         variant: "text-md/medium",
                         color: "text-strong",
-                        children: C
+                        children: S
                     })
                 }), (0, n.jsx)(f.Button, {
-                    variant: I ? "active" : "primary",
-                    text: I ? g.intl.string(g.t.t5VZ88) : g.intl.string(g.t.OpuAlK),
-                    onClick: T,
+                    variant: T ? "active" : "primary",
+                    text: T ? N.intl.string(N.t.t5VZ88) : N.intl.string(N.t.OpuAlK),
+                    onClick: C,
                     icon: f.TdU
                 })]
             })]

@@ -36,7 +36,7 @@ function R(e) {
         guildId: t,
         skuId: n,
         channel: r
-    } = e, R = (0, o.bG)([f.A], () => f.A.isFetchingForSKU(n)), P = (0, o.bG)([x.A], () => x.A.get(n)), M = P?.applicationId, w = (0, o.bG)([m.A], () => null != M && m.A.isFetchingApplication(M)), D = (0, o.bG)([m.A], () => null != M && m.A.didFetchingApplicationFail(M)), k = (0, p.h)(M), {
+    } = e, R = (0, o.bG)([f.A], () => f.A.isFetchingForSKU(n)), P = (0, o.bG)([x.A], () => x.A.get(n)), M = P?.applicationId, D = (0, o.bG)([m.A], () => null != M && m.A.isFetchingApplication(M)), w = (0, o.bG)([m.A], () => null != M && m.A.didFetchingApplicationFail(M)), k = (0, p.h)(M), {
         analyticsLocations: O
     } = (0, _.Ay)(u.A.SLAYER_STOREFRONT_PRODUCT_DETAILS_EMBED);
     (0, g.pE)();
@@ -74,8 +74,8 @@ function R(e) {
                 analyticsLocations: [u.A.SLAYER_STOREFRONT_PRODUCT_DETAILS_EMBED_GIFT_BUTTON]
             })
         }, [P, U]),
-        q = null != M && null == k && !D;
-    return (R || w || q) && (null == P || null == k) ? (0, i.jsx)("div", {
+        q = null != M && null == k && !w;
+    return (R || D || q) && (null == P || null == k) ? (0, i.jsx)("div", {
         className: L.kL,
         children: (0, i.jsx)(c.y$y, {
             className: L.u1

@@ -1,6 +1,6 @@
 /** chunk id: 485724, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    J: () => D.J,
+    J: () => w.J,
     W: () => U
 }), n(321073), n(134528), n(947204);
 var i = n(627968),
@@ -34,8 +34,8 @@ var i = n(627968),
     R = n(354287),
     P = n(138175),
     M = n(112150),
-    w = n(574660),
-    D = n(768349),
+    D = n(574660),
+    w = n(768349),
     k = n(985018),
     O = n(22658);
 
@@ -57,7 +57,7 @@ function U(e) {
     }), {
         staticBannerSrc: y,
         videoBannerSrc: L,
-        bannerAspectRatio: D
+        bannerAspectRatio: w
     } = (0, M.f)(t), O = (0, s.bG)([E.default], () => a ?? E.default.getId(), [a]), {
         analyticsLocations: U
     } = (0, _.Ay)(u.A.APP_MESSAGE_EMBED), {
@@ -71,7 +71,7 @@ function U(e) {
         },
         applicationId: t.id,
         botUserId: C?.id
-    }), z = null != b && T && Y, K = W && T, Q = (0, x.e)(t), J = (0, w.F)(t), X = (0, w.t)(t), Z = l.useMemo(() => {
+    }), z = null != b && T && Y, K = W && T, Q = (0, x.e)(t), J = (0, D.F)(t), X = (0, D.t)(t), Z = l.useMemo(() => {
         let e = [];
         return T ? Q ? e.push({
             label: k.intl.string(k.t.RscU7I),
@@ -119,7 +119,7 @@ function U(e) {
         staticBannerSrc: y,
         videoBannerSrc: L,
         onClickBanner: J,
-        bannerAspectRatio: D,
+        bannerAspectRatio: w,
         iconSrc: v,
         info: $,
         actions: Z,

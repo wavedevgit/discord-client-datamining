@@ -33,8 +33,8 @@ var i = n(627968),
     R = n(652215),
     P = n(788868),
     M = n(985018),
-    w = n(986785),
-    D = n(767419);
+    D = n(986785),
+    w = n(767419);
 
 function k(e) {
     T.default.track(R.HAw.PREMIUM_PROMOTION_OPENED, {
@@ -56,7 +56,7 @@ function O(e) {
         }), (0, i.jsxs)(p.A, {
             direction: p.A.Direction.VERTICAL,
             justify: p.A.Justify.CENTER,
-            className: D.bM,
+            className: w.bM,
             children: [(0, i.jsx)(u.Text, {
                 variant: "text-md/semibold",
                 children: (0, i.jsx)(o.A, {
@@ -110,9 +110,9 @@ let U = e => {
                 ...(0, h.dI)(e)
             })
         }, [n.pack_id]), d || null == o) ? (0, i.jsx)(f.Y0, {
-            className: w.v0
+            className: D.v0
         }) : (0, i.jsxs)(f.Uq, {
-            className: w.Bm,
+            className: D.Bm,
             children: [(0, i.jsx)(u.Heading, {
                 variant: "heading-md/semibold",
                 children: n.name
@@ -124,14 +124,14 @@ let U = e => {
                     stickerPackName: o.name
                 })
             }), (0, i.jsx)("ul", {
-                className: w.pQ,
+                className: D.pQ,
                 children: _.map(e => (0, i.jsx)(j.A, {
                     isInteracting: !0,
                     size: 80,
                     sticker: e
                 }, e.id))
             }), c && (0, i.jsx)("div", {
-                className: w.j0,
+                className: D.j0,
                 children: (0, i.jsx)(u.Button, {
                     variant: "secondary",
                     size: "sm",
@@ -207,12 +207,12 @@ let U = e => {
                     ...z
                 })
             }), !N) return (0, i.jsx)(f.Y0, {
-            className: w.v0
+            className: D.v0
         });
         {
             let e;
             return (0, i.jsxs)(f.Uq, {
-                className: D.Bm,
+                className: w.Bm,
                 children: [(e = async () => {
                     if (null == S || F) return;
                     o();
@@ -221,12 +221,12 @@ let U = e => {
                         await _.A.joinGuild(e), _.A.transitionToGuildSync(e)
                     } catch {}
                 }, (0, i.jsxs)("div", {
-                    className: D.gH,
+                    className: w.gH,
                     children: [(0, i.jsx)(O, {
                         description: t,
                         sticker: n
                     }), Z && (0, i.jsx)(E.A, {
-                        className: D.lI,
+                        className: w.lI,
                         subscriptionTier: P.pe.TIER_2,
                         size: c.$n.Sizes.SMALL,
                         fullWidth: !0,
@@ -238,7 +238,7 @@ let U = e => {
                         premiumModalAnalyticsLocation: Y
                     }), ee && (0, i.jsx)("div", {
                         "data-button-hoisted-classname-wrapper": !0,
-                        className: D.lI,
+                        className: w.lI,
                         children: (0, i.jsx)(u.Button, {
                             variant: "primary",
                             size: "sm",
@@ -252,11 +252,11 @@ let U = e => {
                     let e = (S?.stickers ?? []).slice(0, 13).filter(e => e.id !== n.id).slice(0, 12),
                         t = null != S ? g.GO.createFromDiscoverableGuild(S) : g.GO.createFromGuildRecord(B);
                     return (0, i.jsxs)("div", {
-                        className: D.tl,
+                        className: w.tl,
                         children: [(0, i.jsx)(u.Text, {
                             variant: "text-sm/normal",
                             color: "text-subtle",
-                            className: D.YW,
+                            className: w.YW,
                             children: F ? M.intl.string(M.t.kx6pEG) : M.intl.string(M.t.pDE7Gb)
                         }), (0, i.jsx)(x.G7, {
                             expressionSourceGuild: t,
@@ -267,18 +267,18 @@ let U = e => {
                                 onClick: () => {
                                     C(), V(!H)
                                 },
-                                className: D.wK,
+                                className: w.wK,
                                 children: (0, i.jsxs)(p.A, {
                                     children: [(0, i.jsx)(u.Text, {
-                                        className: D.__invalid_showMoreEmojisLabel,
+                                        className: w.__invalid_showMoreEmojisLabel,
                                         variant: "text-xs/normal",
                                         color: "none",
                                         children: M.intl.string(M.t.vtH5hn)
                                     }), (0, i.jsx)(u.abt, {
                                         size: "md",
                                         color: "currentColor",
-                                        className: a()(D.ZB, {
-                                            [D.cP]: !H
+                                        className: a()(w.ZB, {
+                                            [w.cP]: !H
                                         })
                                     })]
                                 })
@@ -286,13 +286,13 @@ let U = e => {
                                 wrap: p.A.Wrap.WRAP,
                                 align: p.A.Align.START,
                                 justify: p.A.Justify.START,
-                                className: D.LX,
+                                className: w.LX,
                                 children: e.map(e => (0, i.jsx)(d.m, {
                                     text: e.name,
                                     ...f.Uk,
                                     children: (0, i.jsx)("div", {
-                                        className: a()(D.Th, {
-                                            [w.vT]: null != W && W !== e.id
+                                        className: a()(w.Th, {
+                                            [D.vT]: null != W && W !== e.id
                                         }),
                                         onMouseEnter: () => {
                                             q(e.id)
@@ -325,7 +325,7 @@ function B(e) {
         sticker: l
     } = e;
     return (0, i.jsx)(f.Uq, {
-        className: w.Bm,
+        className: D.Bm,
         children: (0, i.jsx)(O, {
             sticker: l,
             description: M.intl.format(M.t.hGWuxU, {

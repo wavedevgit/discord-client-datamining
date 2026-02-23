@@ -1,7 +1,7 @@
 /** chunk id: 180662, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => F,
-    e: () => w
+    e: () => D
 });
 var i = n(284009),
     l = n.n(i),
@@ -67,7 +67,7 @@ function M(e) {
     })
 }
 
-function w(e) {
+function D(e) {
     let {
         channelId: t,
         messageId: n,
@@ -88,7 +88,7 @@ function w(e) {
     })
 }
 
-function D(e) {
+function w(e) {
     let {
         channelId: t,
         messageId: n,
@@ -239,7 +239,7 @@ async function B(e) {
             });
             break;
         case "cancel":
-            D({
+            w({
                 channelId: t,
                 messageId: n,
                 isEditing: !1
@@ -274,7 +274,7 @@ async function B(e) {
             });
             break;
         case "showVoterDetails":
-            w({
+            D({
                 channelId: t,
                 messageId: n
             });
@@ -312,7 +312,7 @@ let F = {
         }(n), {
             tapShouldOpenVotersModal: s
         } = (0, j.j8)(a) ?? {};
-        if (!0 === s) return void w({
+        if (!0 === s) return void D({
             channelId: i,
             messageId: r,
             answerId: t
@@ -365,7 +365,7 @@ let F = {
         })
     },
     handlePollSubmitVote: U,
-    handleUpdateVoteEditingState: D,
+    handleUpdateVoteEditingState: w,
     handlePollActionTapped: B,
     createPoll: async function(e) {
         let {

@@ -36,12 +36,12 @@ function v(e) {
         } = e,
         M = P === R.author.id,
         {
-            channel: w,
-            approximate_member_count: D,
+            channel: D,
+            approximate_member_count: w,
             approximate_presence_count: k
         } = L,
         O = L.state === I.elq.ACCEPTING,
-        U = null != w ? (0, A.OY)(w) : null,
+        U = null != D ? (0, A.OY)(D) : null,
         G = null != j,
         B = null != U,
         F = null != U && U.isGuildStageVoice(),
@@ -121,8 +121,8 @@ function v(e) {
                 isBannerVisible: !1
             })
         })]
-    })) : null != D && D >= 5 || null != k && k > 0 ? t = (0, i.jsx)(g.A.Data, {
-        members: D,
+    })) : null != w && w >= 5 || null != k && k > 0 ? t = (0, i.jsx)(g.A.Data, {
+        members: w,
         membersOnline: k
     }) : B && (t = (0, i.jsx)(g.A.Channel, {
         channel: U,
